@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
+    var11 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var0 = metroImportDefault;
-    var _closure1_slot1 = var0;
+    var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -22,76 +22,97 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = undefined;
     var6 = var3.bind(var0)(var6);
     var _closure1_slot3 = var6;
-    var3 = 1;
-    var3 = var5[var3];
+    var10 = 1;
+    var3 = var5[var10];
     var3 = var4.bind(var0)(var3);
-    var3 = var3.SearchEntrypointAnalyticsLocations;
+    var3 = var3.View;
     var _closure1_slot4 = var3;
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var3 = var3.SearchNavigatorScreens;
+    var3 = var3.SearchEntrypointAnalyticsLocations;
     var _closure1_slot5 = var3;
     var3 = 3;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var3 = var3.SearchTypes;
+    var3 = var3.SearchNavigatorScreens;
     var _closure1_slot6 = var3;
     var3 = 4;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var _closure1_slot7 = var7;
-    var3 = var3.jsxs;
-    var _closure1_slot8 = var3;
+    var3 = var3.SearchTypes;
+    var _closure1_slot7 = var3;
     var3 = 5;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var7 = var3.jsx;
+    var _closure1_slot8 = var7;
+    var3 = var3.jsxs;
+    var _closure1_slot9 = var3;
+    var3 = 6;
+    var3 = var5[var3];
+    var8 = var4.bind(var0)(var3);
+    var7 = var8.createStyles;
+    var3 = {};
+    var9 = {};
+    var9.flex = var10;
+    var10 = 7;
+    var10 = var5[var10];
+    var10 = var11.bind(var0)(var10);
+    var10 = var10.colors;
+    var10 = var10.BACKGROUND_BASE_LOWEST;
+    var9.backgroundColor = var10;
+    var3.container = var9;
+    var3 = var7.bind(var8)(var3);
+    var _closure1_slot10 = var3;
+    var3 = 8;
     var3 = var5[var3];
     var7 = var4.bind(var0)(var3);
     var3 = var7.createNativeStackNavigator;
     var3 = var3.bind(var7)();
-    var _closure1_slot9 = var3;
+    var _closure1_slot11 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Environment: var1
         var0 = arg0;
         var0 = var0.route;
         var0 = var0.params;
-        var11 = var0.searchContext;
-        var _closure2_slot0 = var11;
+        var13 = var0.searchContext;
+        var _closure2_slot0 = var13;
         var1 = _closure1_slot0;
         var2 = _closure1_slot2;
-        var0 = 6;
+        var0 = 9;
         var0 = var2[var0];
         var3 = undefined;
-        var1 = var1.bind(var3)(var0);
-        var0 = var1.useAccessibilityNativeStackOptions;
-        var6 = var0.bind(var1)();
-        var4 = _closure1_slot3;
-        var2 = var4.useEffect;
-        var1 = new Array(1);
-        var1[0] = var11;
-        var0 = function() { // Environment: var8
-            _fun109998: for (var _fun109998_ip = 0;;) switch (_fun109998_ip) {
+        var4 = var1.bind(var3)(var0);
+        var0 = var4.useAccessibilityNativeStackOptions;
+        var9 = var0.bind(var4)();
+        var6 = _closure1_slot3;
+        var5 = var6.useEffect;
+        var4 = new Array(1);
+        var4[0] = var13;
+        var0 = function() { // Environment: var10
+            _fun110062: for (var _fun110062_ip = 0;;) switch (_fun110062_ip) {
                 case 0:
                     var0 = _closure2_slot0;
                     var2 = var0.type;
-                    var1 = _closure1_slot6;
+                    var1 = _closure1_slot7;
                     var1 = var1.GUILD;
                     if (!(var2 !== var1)) {
-                        _fun109998_ip = 41;
-                        continue _fun109998
+                        _fun110062_ip = 41;
+                        continue _fun110062
                     }
                 case 29:
-                    var1 = _closure1_slot4;
+                    var1 = _closure1_slot5;
                     var3 = var1.DM_LIST;
-                    _fun109998_ip = 51;
-                    continue _fun109998;
+                    _fun110062_ip = 51;
+                    continue _fun110062;
                 case 41:
-                    var1 = _closure1_slot4;
+                    var1 = _closure1_slot5;
                     var3 = var1.GUILD;
                 case 51:
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
-                    var0 = 7;
+                    var0 = 10;
                     var1 = var1[var0];
                     var0 = undefined;
                     var2 = var2.bind(var0)(var1);
@@ -104,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = function() { // Environment: var0
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
-                        var0 = 7;
+                        var0 = 10;
                         var1 = var1[var0];
                         var0 = undefined;
                         var3 = var2.bind(var0)(var1);
@@ -118,51 +139,70 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
             }
         };
-        var0 = var2.bind(var4)(var0, var1);
+        var0 = var5.bind(var6)(var0, var4);
+        var0 = _closure1_slot10;
+        var4 = var0.bind(var3)();
+        var0 = 11;
+        var0 = var2[var0];
+        var1 = var1.bind(var3)(var0);
+        var0 = var1.useLocalHorizontalSafeArea;
+        var0 = var0.bind(var1)();
+        var7 = var0.left;
+        var6 = var0.right;
         var2 = _closure1_slot8;
-        var5 = _closure1_slot9;
-        var1 = var5.Navigator;
+        var1 = _closure1_slot4;
         var0 = {};
-        var4 = 'search-navigator';
-        var0.id = var4;
+        var5 = var4.container;
+        var4 = new Array(2);
+        var4[0] = var5;
+        var5 = {};
+        var5.paddingLeft = var7;
+        var5.paddingRight = var6;
+        var4[1] = var5;
+        var0.style = var4;
+        var6 = _closure1_slot9;
+        var8 = _closure1_slot11;
+        var5 = var8.Navigator;
         var4 = {};
-        var13 = var4;
-        var12 = var6;
-        var6 = copyDataProperties(var13, var12);
-        var0.screenOptions = var4;
-        var7 = _closure1_slot7;
-        var6 = var5.Screen;
-        var4 = {};
-        var10 = {};
-        var10.searchContext = var11;
-        var4.initialParams = var10;
-        var9 = _closure1_slot5;
-        var10 = var9.SEARCH_TABS;
-        var4.name = var10;
-        var10 = {
+        var7 = 'search-navigator';
+        var4.id = var7;
+        var7 = {};
+        var15 = var7;
+        var14 = var9;
+        var9 = copyDataProperties(var15, var14);
+        var4.screenOptions = var7;
+        var9 = var8.Screen;
+        var7 = {};
+        var12 = {};
+        var12.searchContext = var13;
+        var7.initialParams = var12;
+        var11 = _closure1_slot6;
+        var12 = var11.SEARCH_TABS;
+        var7.name = var12;
+        var12 = {
             'headerShown': false,
             'fullScreenGestureEnabled': true
         };
-        var4.options = var10;
-        var10 = function() {
+        var7.options = var12;
+        var12 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
-            var0 = 8;
+            var0 = 12;
             var1 = var1[var0];
             var0 = undefined;
             var0 = var2.bind(var0)(var1);
             var0 = var0.default;
             return var0;
         };
-        var4.getComponent = var10;
-        var6 = var7.bind(var3)(var6, var4);
-        var4 = new Array(2);
-        var4[0] = var6;
-        var6 = var5.Screen;
-        var5 = {};
-        var9 = var9.SEARCH_CHAT_PREVIEW;
-        var5.name = var9;
-        var9 = function arg0() {
+        var7.getComponent = var12;
+        var9 = var2.bind(var3)(var9, var7);
+        var7 = new Array(2);
+        var7[0] = var9;
+        var9 = var8.Screen;
+        var8 = {};
+        var11 = var11.SEARCH_CHAT_PREVIEW;
+        var8.name = var11;
+        var11 = function arg0() {
             var0 = arg0;
             var1 = var0.route;
             var _closure3_slot0 = var1;
@@ -172,7 +212,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0.headerShown = var1;
             var6 = _closure1_slot0;
             var7 = _closure1_slot2;
-            var3 = 9;
+            var3 = 13;
             var8 = var7[var3];
             var4 = undefined;
             var8 = var6.bind(var4)(var8);
@@ -184,10 +224,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var3.bind(var4)(var5);
             var0.headerLeft = var3;
             var2 = function() {
-                var3 = _closure1_slot7;
+                var3 = _closure1_slot8;
                 var1 = _closure1_slot1;
                 var2 = _closure1_slot2;
-                var0 = 10;
+                var0 = 14;
                 var0 = var2[var0];
                 var2 = undefined;
                 var1 = var1.bind(var2)(var0);
@@ -203,26 +243,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0.fullScreenGestureEnabled = var1;
             return var0;
         };
-        var5.options = var9;
-        var8 = function() {
+        var8.options = var11;
+        var10 = function() {
             var2 = _closure1_slot0;
             var1 = _closure1_slot2;
-            var0 = 11;
+            var0 = 15;
             var1 = var1[var0];
             var0 = undefined;
             var0 = var2.bind(var0)(var1);
             var0 = var0.default;
             return var0;
         };
-        var5.getComponent = var8;
-        var5 = var7.bind(var3)(var6, var5);
-        var4[1] = var5;
+        var8.getComponent = var10;
+        var8 = var2.bind(var3)(var9, var8);
+        var7[1] = var8;
+        var4.children = var7;
+        var4 = var6.bind(var3)(var5, var4);
         var0.children = var4;
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
     var1 = var3.bind(var6)(var1);
-    var3 = 12;
+    var3 = 16;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -230,4 +272,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8973, 13770, 660, 33, 9181, 5847, 9037, 14125, 8961, 14120, 14121, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7721, 13782, 660, 33, 1297, 671, 8681, 5834, 11449, 13098, 14137, 7704, 14132, 14133, 2]);

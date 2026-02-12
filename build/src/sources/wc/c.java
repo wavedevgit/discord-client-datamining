@@ -5,22 +5,22 @@ import oe.h0;
 final class c implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f52509a;
+    public final int f52510a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f52510b;
+    public final int f52511b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f52511c;
+    public final int f52512c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f52512d;
+    public final int f52513d;
 
     private c(int i10, int i11, int i12, int i13) {
-        this.f52509a = i10;
-        this.f52510b = i11;
-        this.f52511c = i12;
-        this.f52512d = i13;
+        this.f52510a = i10;
+        this.f52511b = i11;
+        this.f52512c = i12;
+        this.f52513d = i13;
     }
 
     public static c b(h0 h0Var) {
@@ -35,7 +35,7 @@ final class c implements a {
     }
 
     public boolean a() {
-        if ((this.f52510b & 16) == 16) {
+        if ((this.f52511b & 16) == 16) {
             return true;
         }
         return false;

@@ -17,7 +17,7 @@ public class DiscordVideoEncoderFactory implements VideoEncoderFactory {
     private HardwareVideoEncoderFactory fwd;
 
     public DiscordVideoEncoderFactory(@NonNull EglBase.Context context) {
-        this.fwd = new HardwareVideoEncoderFactory(context, false, true, new Predicate() { // from class: co.discord.media_engine.a
+        this.fwd = new HardwareVideoEncoderFactory(context, false, true, new Predicate() { // from class: co.discord.media_engine.d
             @Override // org.webrtc.Predicate
             public final boolean test(Object obj) {
                 return DiscordVideoEncoderFactory.a((MediaCodecInfo) obj);

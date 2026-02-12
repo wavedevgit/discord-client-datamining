@@ -10,13 +10,13 @@ import org.jetbrains.annotations.NotNull;
 public final class a implements Parcelable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f21237d;
+    private final int f21238d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Intent f21238e;
+    private final Intent f21239e;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final b f21236i = new b(null);
+    public static final b f21237i = new b(null);
     @NotNull
     public static final Parcelable.Creator<a> CREATOR = new C0284a();
 
@@ -61,16 +61,16 @@ public final class a implements Parcelable {
     }
 
     public a(int i10, Intent intent) {
-        this.f21237d = i10;
-        this.f21238e = intent;
+        this.f21238d = i10;
+        this.f21239e = intent;
     }
 
     public final Intent a() {
-        return this.f21238e;
+        return this.f21239e;
     }
 
     public final int b() {
-        return this.f21237d;
+        return this.f21238d;
     }
 
     @Override // android.os.Parcelable
@@ -79,21 +79,21 @@ public final class a implements Parcelable {
     }
 
     public String toString() {
-        return "ActivityResult{resultCode=" + f21236i.a(this.f21237d) + ", data=" + this.f21238e + '}';
+        return "ActivityResult{resultCode=" + f21237i.a(this.f21238d) + ", data=" + this.f21239e + '}';
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel dest, int i10) {
         int i11;
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeInt(this.f21237d);
-        if (this.f21238e == null) {
+        dest.writeInt(this.f21238d);
+        if (this.f21239e == null) {
             i11 = 0;
         } else {
             i11 = 1;
         }
         dest.writeInt(i11);
-        Intent intent = this.f21238e;
+        Intent intent = this.f21239e;
         if (intent != null) {
             intent.writeToParcel(dest, i10);
         }

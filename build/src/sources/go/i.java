@@ -21,7 +21,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class i implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Lazy f25938a = as.l.b(new Function0() { // from class: go.g
+    private final Lazy f25939a = as.l.b(new Function0() { // from class: go.g
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             ek.d d10;
@@ -31,7 +31,7 @@ public final class i implements e {
     });
 
     /* renamed from: b  reason: collision with root package name */
-    private final Lazy f25939b = as.l.b(new Function0() { // from class: go.h
+    private final Lazy f25940b = as.l.b(new Function0() { // from class: go.h
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             gk.c g10;
@@ -48,16 +48,16 @@ public final class i implements e {
     }
 
     private final ek.d e() {
-        return (ek.d) this.f25938a.getValue();
+        return (ek.d) this.f25939a.getValue();
     }
 
     private final gk.c f() {
-        return (gk.c) this.f25939b.getValue();
+        return (gk.c) this.f25940b.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final gk.c g() {
-        gk.c a10 = gk.b.a(ik.a.f27972d);
+        gk.c a10 = gk.b.a(ik.a.f27973d);
         Intrinsics.checkNotNullExpressionValue(a10, "getClient(...)");
         return a10;
     }
@@ -75,8 +75,8 @@ public final class i implements e {
             Intrinsics.checkNotNullExpressionValue(l10, "getResult(...)");
             ek.a aVar = (ek.a) CollectionsKt.q0((List) l10, 0);
             if (aVar == null) {
-                Result.a aVar2 = Result.f31984e;
-                return Result.b(a.b.f25918a);
+                Result.a aVar2 = Result.f31985e;
+                return Result.b(a.b.f25919a);
             }
             List b10 = ((gk.a) e11.l()).b();
             Intrinsics.checkNotNullExpressionValue(b10, "getTextBlocks(...)");
@@ -93,21 +93,21 @@ public final class i implements e {
                 arrayList.add(arrayList2);
             }
             if (CollectionsKt.y(arrayList).size() < 5) {
-                Result.a aVar3 = Result.f31984e;
-                return Result.b(a.b.f25918a);
+                Result.a aVar3 = Result.f31985e;
+                return Result.b(a.b.f25919a);
             }
             Rect rect2 = new Rect(0, 0, f10.l(), f10.h());
             rect2.inset(1, 1);
             if (rect2.contains(aVar.a())) {
-                Result.a aVar4 = Result.f31984e;
+                Result.a aVar4 = Result.f31985e;
                 String a10 = ((gk.a) e11.l()).a();
                 Intrinsics.checkNotNullExpressionValue(a10, "getText(...)");
                 return Result.b(new a.d(new h0(a10)));
             }
-            Result.a aVar5 = Result.f31984e;
-            return Result.b(a.b.f25918a);
+            Result.a aVar5 = Result.f31985e;
+            return Result.b(a.b.f25919a);
         } catch (ExecutionException unused) {
-            Result.a aVar6 = Result.f31984e;
+            Result.a aVar6 = Result.f31985e;
             return Result.b(kotlin.c.a(new b.a()));
         }
     }

@@ -6,10 +6,10 @@ import me.r;
 public class c implements f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r f8928a;
+    private final r f8929a;
 
     public c(Context context) {
-        this.f8928a = new r.b(context).a();
+        this.f8929a = new r.b(context).a();
     }
 
     @Override // com.brentvatne.exoplayer.f
@@ -19,6 +19,6 @@ public class c implements f {
 
     @Override // com.brentvatne.exoplayer.f
     public r b() {
-        return this.f8928a;
+        return this.f8929a;
     }
 }

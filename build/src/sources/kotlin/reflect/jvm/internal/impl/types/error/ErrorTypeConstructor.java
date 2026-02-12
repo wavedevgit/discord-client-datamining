@@ -17,19 +17,19 @@ import org.jetbrains.annotations.NotNull;
 public final class ErrorTypeConstructor implements TypeConstructor {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ErrorTypeKind f34695a;
+    private final ErrorTypeKind f34696a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String[] f34696b;
+    private final String[] f34697b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f34697c;
+    private final String f34698c;
 
     public ErrorTypeConstructor(@NotNull ErrorTypeKind kind, @NotNull String... formatParams) {
         Intrinsics.checkNotNullParameter(kind, "kind");
         Intrinsics.checkNotNullParameter(formatParams, "formatParams");
-        this.f34695a = kind;
-        this.f34696b = formatParams;
+        this.f34696a = kind;
+        this.f34697b = formatParams;
         String debugText = ErrorEntity.ERROR_TYPE.getDebugText();
         String debugMessage = kind.getDebugMessage();
         Object[] copyOf = Arrays.copyOf(formatParams, formatParams.length);
@@ -37,7 +37,7 @@ public final class ErrorTypeConstructor implements TypeConstructor {
         Intrinsics.checkNotNullExpressionValue(format, "format(...)");
         String format2 = String.format(debugText, Arrays.copyOf(new Object[]{format}, 1));
         Intrinsics.checkNotNullExpressionValue(format2, "format(...)");
-        this.f34697c = format2;
+        this.f34698c = format2;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
@@ -49,18 +49,18 @@ public final class ErrorTypeConstructor implements TypeConstructor {
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
     @NotNull
     /* renamed from: getDeclarationDescriptor */
-    public ClassifierDescriptor mo1202getDeclarationDescriptor() {
+    public ClassifierDescriptor mo1201getDeclarationDescriptor() {
         return ErrorUtils.INSTANCE.getErrorClass();
     }
 
     @NotNull
     public final ErrorTypeKind getKind() {
-        return this.f34695a;
+        return this.f34696a;
     }
 
     @NotNull
     public final String getParam(int i10) {
-        return this.f34696b[i10];
+        return this.f34697b[i10];
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
@@ -89,6 +89,6 @@ public final class ErrorTypeConstructor implements TypeConstructor {
 
     @NotNull
     public String toString() {
-        return this.f34697c;
+        return this.f34698c;
     }
 }

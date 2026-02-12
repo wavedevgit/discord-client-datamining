@@ -13,40 +13,40 @@ import org.jetbrains.annotations.NotNull;
 public final class VideoCaptureConfig {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f19670a;
+    private final long f19671a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f19671b;
+    private final List f19672b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f19672c;
+    private final List f19673c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f19673d;
+    private final String f19674d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f19674e;
+    private final boolean f19675e;
 
     public VideoCaptureConfig(long j10, @NotNull List<? extends NextStep.GovernmentId.CaptureFileType> enabledCaptureFileTypes, @NotNull List<? extends a> videoCaptureMethods, @g(name = "webRTCJwt") String str, boolean z10) {
         Intrinsics.checkNotNullParameter(enabledCaptureFileTypes, "enabledCaptureFileTypes");
         Intrinsics.checkNotNullParameter(videoCaptureMethods, "videoCaptureMethods");
-        this.f19670a = j10;
-        this.f19671b = enabledCaptureFileTypes;
-        this.f19672c = videoCaptureMethods;
-        this.f19673d = str;
-        this.f19674e = z10;
+        this.f19671a = j10;
+        this.f19672b = enabledCaptureFileTypes;
+        this.f19673c = videoCaptureMethods;
+        this.f19674d = str;
+        this.f19675e = z10;
     }
 
     public final long a() {
-        return this.f19670a;
+        return this.f19671a;
     }
 
     public final boolean b() {
-        return this.f19674e;
+        return this.f19675e;
     }
 
     public final List c() {
-        return this.f19672c;
+        return this.f19673c;
     }
 
     @NotNull
@@ -57,11 +57,11 @@ public final class VideoCaptureConfig {
     }
 
     public final String d() {
-        return this.f19673d;
+        return this.f19674d;
     }
 
     public final boolean e() {
-        return this.f19671b.contains(NextStep.GovernmentId.CaptureFileType.Video);
+        return this.f19672b.contains(NextStep.GovernmentId.CaptureFileType.Video);
     }
 
     public boolean equals(Object obj) {
@@ -70,23 +70,23 @@ public final class VideoCaptureConfig {
         }
         if (obj instanceof VideoCaptureConfig) {
             VideoCaptureConfig videoCaptureConfig = (VideoCaptureConfig) obj;
-            return this.f19670a == videoCaptureConfig.f19670a && Intrinsics.areEqual(this.f19671b, videoCaptureConfig.f19671b) && Intrinsics.areEqual(this.f19672c, videoCaptureConfig.f19672c) && Intrinsics.areEqual(this.f19673d, videoCaptureConfig.f19673d) && this.f19674e == videoCaptureConfig.f19674e;
+            return this.f19671a == videoCaptureConfig.f19671a && Intrinsics.areEqual(this.f19672b, videoCaptureConfig.f19672b) && Intrinsics.areEqual(this.f19673c, videoCaptureConfig.f19673c) && Intrinsics.areEqual(this.f19674d, videoCaptureConfig.f19674d) && this.f19675e == videoCaptureConfig.f19675e;
         }
         return false;
     }
 
     public int hashCode() {
-        int hashCode = ((((Long.hashCode(this.f19670a) * 31) + this.f19671b.hashCode()) * 31) + this.f19672c.hashCode()) * 31;
-        String str = this.f19673d;
-        return ((hashCode + (str == null ? 0 : str.hashCode())) * 31) + Boolean.hashCode(this.f19674e);
+        int hashCode = ((((Long.hashCode(this.f19671a) * 31) + this.f19672b.hashCode()) * 31) + this.f19673c.hashCode()) * 31;
+        String str = this.f19674d;
+        return ((hashCode + (str == null ? 0 : str.hashCode())) * 31) + Boolean.hashCode(this.f19675e);
     }
 
     public String toString() {
-        long j10 = this.f19670a;
-        List list = this.f19671b;
-        List list2 = this.f19672c;
-        String str = this.f19673d;
-        boolean z10 = this.f19674e;
+        long j10 = this.f19671a;
+        List list = this.f19672b;
+        List list2 = this.f19673c;
+        String str = this.f19674d;
+        boolean z10 = this.f19675e;
         return "VideoCaptureConfig(maxRecordingLengthMs=" + j10 + ", enabledCaptureFileTypes=" + list + ", videoCaptureMethods=" + list2 + ", webRtcJwt=" + str + ", recordAudio=" + z10 + ")";
     }
 

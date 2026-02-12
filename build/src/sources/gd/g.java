@@ -11,66 +11,66 @@ import oe.w0;
 public final class g extends MediaCodec.Callback {
 
     /* renamed from: b  reason: collision with root package name */
-    private final HandlerThread f25464b;
+    private final HandlerThread f25465b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Handler f25465c;
+    private Handler f25466c;
 
     /* renamed from: h  reason: collision with root package name */
-    private MediaFormat f25470h;
+    private MediaFormat f25471h;
 
     /* renamed from: i  reason: collision with root package name */
-    private MediaFormat f25471i;
+    private MediaFormat f25472i;
 
     /* renamed from: j  reason: collision with root package name */
-    private MediaCodec.CodecException f25472j;
+    private MediaCodec.CodecException f25473j;
 
     /* renamed from: k  reason: collision with root package name */
-    private long f25473k;
+    private long f25474k;
 
     /* renamed from: l  reason: collision with root package name */
-    private boolean f25474l;
+    private boolean f25475l;
 
     /* renamed from: m  reason: collision with root package name */
-    private IllegalStateException f25475m;
+    private IllegalStateException f25476m;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f25463a = new Object();
+    private final Object f25464a = new Object();
 
     /* renamed from: d  reason: collision with root package name */
-    private final k f25466d = new k();
+    private final k f25467d = new k();
 
     /* renamed from: e  reason: collision with root package name */
-    private final k f25467e = new k();
+    private final k f25468e = new k();
 
     /* renamed from: f  reason: collision with root package name */
-    private final ArrayDeque f25468f = new ArrayDeque();
+    private final ArrayDeque f25469f = new ArrayDeque();
 
     /* renamed from: g  reason: collision with root package name */
-    private final ArrayDeque f25469g = new ArrayDeque();
+    private final ArrayDeque f25470g = new ArrayDeque();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g(HandlerThread handlerThread) {
-        this.f25464b = handlerThread;
+        this.f25465b = handlerThread;
     }
 
     private void b(MediaFormat mediaFormat) {
-        this.f25467e.a(-2);
-        this.f25469g.add(mediaFormat);
+        this.f25468e.a(-2);
+        this.f25470g.add(mediaFormat);
     }
 
     private void f() {
-        if (!this.f25469g.isEmpty()) {
-            this.f25471i = (MediaFormat) this.f25469g.getLast();
+        if (!this.f25470g.isEmpty()) {
+            this.f25472i = (MediaFormat) this.f25470g.getLast();
         }
-        this.f25466d.b();
-        this.f25467e.b();
-        this.f25468f.clear();
-        this.f25469g.clear();
+        this.f25467d.b();
+        this.f25468e.b();
+        this.f25469f.clear();
+        this.f25470g.clear();
     }
 
     private boolean i() {
-        if (this.f25473k <= 0 && !this.f25474l) {
+        if (this.f25474k <= 0 && !this.f25475l) {
             return false;
         }
         return true;
@@ -82,32 +82,32 @@ public final class g extends MediaCodec.Callback {
     }
 
     private void k() {
-        IllegalStateException illegalStateException = this.f25475m;
+        IllegalStateException illegalStateException = this.f25476m;
         if (illegalStateException == null) {
             return;
         }
-        this.f25475m = null;
+        this.f25476m = null;
         throw illegalStateException;
     }
 
     private void l() {
-        MediaCodec.CodecException codecException = this.f25472j;
+        MediaCodec.CodecException codecException = this.f25473j;
         if (codecException == null) {
             return;
         }
-        this.f25472j = null;
+        this.f25473j = null;
         throw codecException;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void m() {
-        synchronized (this.f25463a) {
+        synchronized (this.f25464a) {
             try {
-                if (this.f25474l) {
+                if (this.f25475l) {
                     return;
                 }
-                long j10 = this.f25473k - 1;
-                this.f25473k = j10;
+                long j10 = this.f25474k - 1;
+                this.f25474k = j10;
                 if (j10 > 0) {
                     return;
                 }
@@ -123,21 +123,21 @@ public final class g extends MediaCodec.Callback {
     }
 
     private void n(IllegalStateException illegalStateException) {
-        synchronized (this.f25463a) {
-            this.f25475m = illegalStateException;
+        synchronized (this.f25464a) {
+            this.f25476m = illegalStateException;
         }
     }
 
     public int c() {
-        synchronized (this.f25463a) {
+        synchronized (this.f25464a) {
             try {
                 j();
                 int i10 = -1;
                 if (i()) {
                     return -1;
                 }
-                if (!this.f25466d.d()) {
-                    i10 = this.f25466d.e();
+                if (!this.f25467d.d()) {
+                    i10 = this.f25467d.e();
                 }
                 return i10;
             } finally {
@@ -146,22 +146,22 @@ public final class g extends MediaCodec.Callback {
     }
 
     public int d(MediaCodec.BufferInfo bufferInfo) {
-        synchronized (this.f25463a) {
+        synchronized (this.f25464a) {
             try {
                 j();
                 if (i()) {
                     return -1;
                 }
-                if (this.f25467e.d()) {
+                if (this.f25468e.d()) {
                     return -1;
                 }
-                int e10 = this.f25467e.e();
+                int e10 = this.f25468e.e();
                 if (e10 >= 0) {
-                    oe.a.i(this.f25470h);
-                    MediaCodec.BufferInfo bufferInfo2 = (MediaCodec.BufferInfo) this.f25468f.remove();
+                    oe.a.i(this.f25471h);
+                    MediaCodec.BufferInfo bufferInfo2 = (MediaCodec.BufferInfo) this.f25469f.remove();
                     bufferInfo.set(bufferInfo2.offset, bufferInfo2.size, bufferInfo2.presentationTimeUs, bufferInfo2.flags);
                 } else if (e10 == -2) {
-                    this.f25470h = (MediaFormat) this.f25469g.remove();
+                    this.f25471h = (MediaFormat) this.f25470g.remove();
                 }
                 return e10;
             } catch (Throwable th2) {
@@ -171,9 +171,9 @@ public final class g extends MediaCodec.Callback {
     }
 
     public void e() {
-        synchronized (this.f25463a) {
-            this.f25473k++;
-            ((Handler) w0.j(this.f25465c)).post(new Runnable() { // from class: gd.f
+        synchronized (this.f25464a) {
+            this.f25474k++;
+            ((Handler) w0.j(this.f25466c)).post(new Runnable() { // from class: gd.f
                 @Override // java.lang.Runnable
                 public final void run() {
                     g.this.m();
@@ -184,9 +184,9 @@ public final class g extends MediaCodec.Callback {
 
     public MediaFormat g() {
         MediaFormat mediaFormat;
-        synchronized (this.f25463a) {
+        synchronized (this.f25464a) {
             try {
-                mediaFormat = this.f25470h;
+                mediaFormat = this.f25471h;
                 if (mediaFormat == null) {
                     throw new IllegalStateException();
                 }
@@ -199,51 +199,51 @@ public final class g extends MediaCodec.Callback {
 
     public void h(MediaCodec mediaCodec) {
         boolean z10;
-        if (this.f25465c == null) {
+        if (this.f25466c == null) {
             z10 = true;
         } else {
             z10 = false;
         }
         oe.a.g(z10);
-        this.f25464b.start();
-        Handler handler = new Handler(this.f25464b.getLooper());
+        this.f25465b.start();
+        Handler handler = new Handler(this.f25465b.getLooper());
         mediaCodec.setCallback(this, handler);
-        this.f25465c = handler;
+        this.f25466c = handler;
     }
 
     public void o() {
-        synchronized (this.f25463a) {
-            this.f25474l = true;
-            this.f25464b.quit();
+        synchronized (this.f25464a) {
+            this.f25475l = true;
+            this.f25465b.quit();
             f();
         }
     }
 
     @Override // android.media.MediaCodec.Callback
     public void onError(MediaCodec mediaCodec, MediaCodec.CodecException codecException) {
-        synchronized (this.f25463a) {
-            this.f25472j = codecException;
+        synchronized (this.f25464a) {
+            this.f25473j = codecException;
         }
     }
 
     @Override // android.media.MediaCodec.Callback
     public void onInputBufferAvailable(MediaCodec mediaCodec, int i10) {
-        synchronized (this.f25463a) {
-            this.f25466d.a(i10);
+        synchronized (this.f25464a) {
+            this.f25467d.a(i10);
         }
     }
 
     @Override // android.media.MediaCodec.Callback
     public void onOutputBufferAvailable(MediaCodec mediaCodec, int i10, MediaCodec.BufferInfo bufferInfo) {
-        synchronized (this.f25463a) {
+        synchronized (this.f25464a) {
             try {
-                MediaFormat mediaFormat = this.f25471i;
+                MediaFormat mediaFormat = this.f25472i;
                 if (mediaFormat != null) {
                     b(mediaFormat);
-                    this.f25471i = null;
+                    this.f25472i = null;
                 }
-                this.f25467e.a(i10);
-                this.f25468f.add(bufferInfo);
+                this.f25468e.a(i10);
+                this.f25469f.add(bufferInfo);
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -252,9 +252,9 @@ public final class g extends MediaCodec.Callback {
 
     @Override // android.media.MediaCodec.Callback
     public void onOutputFormatChanged(MediaCodec mediaCodec, MediaFormat mediaFormat) {
-        synchronized (this.f25463a) {
+        synchronized (this.f25464a) {
             b(mediaFormat);
-            this.f25471i = null;
+            this.f25472i = null;
         }
     }
 }

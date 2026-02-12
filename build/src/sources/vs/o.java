@@ -163,9 +163,9 @@ public abstract class o {
         while (it.hasNext()) {
             arrayList.add("unbox-impl-" + ((String) it.next()));
         }
-        ClassifierDescriptor mo1202getDeclarationDescriptor = type.getConstructor().mo1202getDeclarationDescriptor();
-        Intrinsics.checkNotNull(mo1202getDeclarationDescriptor, "null cannot be cast to non-null type org.jetbrains.kotlin.descriptors.ClassDescriptor");
-        Class q10 = j3.q((ClassDescriptor) mo1202getDeclarationDescriptor);
+        ClassifierDescriptor mo1201getDeclarationDescriptor = type.getConstructor().mo1201getDeclarationDescriptor();
+        Intrinsics.checkNotNull(mo1201getDeclarationDescriptor, "null cannot be cast to non-null type org.jetbrains.kotlin.descriptors.ClassDescriptor");
+        Class q10 = j3.q((ClassDescriptor) mo1201getDeclarationDescriptor);
         Intrinsics.checkNotNull(q10);
         ArrayList arrayList2 = new ArrayList(CollectionsKt.w(arrayList, 10));
         for (String str : arrayList) {
@@ -177,9 +177,9 @@ public abstract class o {
     private static final List o(SimpleType simpleType) {
         Collection e10;
         if (InlineClassesUtilsKt.needsMfvcFlattening(simpleType)) {
-            ClassifierDescriptor mo1202getDeclarationDescriptor = simpleType.getConstructor().mo1202getDeclarationDescriptor();
-            Intrinsics.checkNotNull(mo1202getDeclarationDescriptor, "null cannot be cast to non-null type org.jetbrains.kotlin.descriptors.ClassDescriptor");
-            MultiFieldValueClassRepresentation<SimpleType> multiFieldValueClassRepresentation = DescriptorUtilsKt.getMultiFieldValueClassRepresentation((ClassDescriptor) mo1202getDeclarationDescriptor);
+            ClassifierDescriptor mo1201getDeclarationDescriptor = simpleType.getConstructor().mo1201getDeclarationDescriptor();
+            Intrinsics.checkNotNull(mo1201getDeclarationDescriptor, "null cannot be cast to non-null type org.jetbrains.kotlin.descriptors.ClassDescriptor");
+            MultiFieldValueClassRepresentation<SimpleType> multiFieldValueClassRepresentation = DescriptorUtilsKt.getMultiFieldValueClassRepresentation((ClassDescriptor) mo1201getDeclarationDescriptor);
             Intrinsics.checkNotNull(multiFieldValueClassRepresentation);
             ArrayList arrayList = new ArrayList();
             Iterator<T> it = multiFieldValueClassRepresentation.getUnderlyingPropertyNamesToTypes().iterator();
@@ -279,7 +279,7 @@ public abstract class o {
 
     public static final Class t(KotlinType kotlinType) {
         KotlinType unsubstitutedUnderlyingType;
-        Class s10 = s(kotlinType.getConstructor().mo1202getDeclarationDescriptor());
+        Class s10 = s(kotlinType.getConstructor().mo1201getDeclarationDescriptor());
         if (s10 == null) {
             return null;
         }

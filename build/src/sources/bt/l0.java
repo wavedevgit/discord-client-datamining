@@ -14,7 +14,7 @@ public abstract class l0 {
 
     public static final MutableStateFlow a(Object obj) {
         if (obj == null) {
-            obj = ct.t.f21097a;
+            obj = ct.t.f21098a;
         }
         return new k0(obj);
     }

@@ -8,10 +8,10 @@ import java.util.Map;
 public final class i extends k {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final k[] f52878b = new k[0];
+    private static final k[] f52879b = new k[0];
 
     /* renamed from: a  reason: collision with root package name */
-    private final k[] f52879a;
+    private final k[] f52880a;
 
     public i(Map map) {
         Collection collection;
@@ -63,12 +63,12 @@ public final class i extends k {
             arrayList.add(new xk.e());
             arrayList.add(new yk.d());
         }
-        this.f52879a = (k[]) arrayList.toArray(f52878b);
+        this.f52880a = (k[]) arrayList.toArray(f52879b);
     }
 
     @Override // wk.k
     public Result b(int i10, ok.a aVar, Map map) {
-        for (k kVar : this.f52879a) {
+        for (k kVar : this.f52880a) {
             try {
                 return kVar.b(i10, aVar, map);
             } catch (kk.n unused) {
@@ -79,7 +79,7 @@ public final class i extends k {
 
     @Override // wk.k, kk.m
     public void reset() {
-        for (k kVar : this.f52879a) {
+        for (k kVar : this.f52880a) {
             kVar.reset();
         }
     }

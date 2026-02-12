@@ -3,7 +3,7 @@ package ft;
 public final class e extends g {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f24365a = new e();
+    public static final e f24366a = new e();
 
     private e() {
     }

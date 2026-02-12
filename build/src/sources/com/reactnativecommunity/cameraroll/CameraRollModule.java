@@ -53,36 +53,36 @@ public class CameraRollModule extends ReactContextBaseJavaModule {
     private static class a extends GuardedAsyncTask {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Context f18261a;
+        private final Context f18262a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final ReadableArray f18262b;
+        private final ReadableArray f18263b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Promise f18263c;
+        private final Promise f18264c;
 
         public a(ReactContext reactContext, ReadableArray readableArray, Promise promise) {
             super(reactContext);
-            this.f18261a = reactContext;
-            this.f18262b = readableArray;
-            this.f18263c = promise;
+            this.f18262a = reactContext;
+            this.f18263b = readableArray;
+            this.f18264c = promise;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // com.facebook.react.bridge.GuardedAsyncTask
         public void doInBackgroundGuarded(Void... voidArr) {
-            ContentResolver contentResolver = this.f18261a.getContentResolver();
+            ContentResolver contentResolver = this.f18262a.getContentResolver();
             String[] strArr = {"_id"};
             String str = "?";
-            for (int i10 = 1; i10 < this.f18262b.size(); i10++) {
+            for (int i10 = 1; i10 < this.f18263b.size(); i10++) {
                 str = str + ", ?";
             }
             String str2 = "_data IN (" + str + ")";
             Uri uri = MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
-            String[] strArr2 = new String[this.f18262b.size()];
+            String[] strArr2 = new String[this.f18263b.size()];
             int i11 = 0;
-            for (int i12 = 0; i12 < this.f18262b.size(); i12++) {
-                strArr2[i12] = Uri.parse(this.f18262b.getString(i12)).getPath();
+            for (int i12 = 0; i12 < this.f18263b.size(); i12++) {
+                strArr2[i12] = Uri.parse(this.f18263b.getString(i12)).getPath();
             }
             Cursor query = contentResolver.query(uri, strArr, str2, strArr2, null);
             while (query.moveToNext()) {
@@ -91,11 +91,11 @@ public class CameraRollModule extends ReactContextBaseJavaModule {
                 }
             }
             query.close();
-            if (i11 == this.f18262b.size()) {
-                this.f18263c.resolve(null);
+            if (i11 == this.f18263b.size()) {
+                this.f18264c.resolve(null);
                 return;
             }
-            this.f18263c.reject(CameraRollModule.ERROR_UNABLE_TO_DELETE, "Could not delete all media, only deleted " + i11 + " photos.");
+            this.f18264c.reject(CameraRollModule.ERROR_UNABLE_TO_DELETE, "Could not delete all media, only deleted " + i11 + " photos.");
         }
     }
 
@@ -103,35 +103,35 @@ public class CameraRollModule extends ReactContextBaseJavaModule {
     private static class b extends GuardedAsyncTask {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Context f18264a;
+        private final Context f18265a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f18265b;
+        private final int f18266b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f18266c;
+        private final String f18267c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f18267d;
+        private final String f18268d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ReadableArray f18268e;
+        private final ReadableArray f18269e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final Promise f18269f;
+        private final Promise f18270f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final String f18270g;
+        private final String f18271g;
 
         private b(ReactContext reactContext, int i10, String str, String str2, ReadableArray readableArray, String str3, Promise promise) {
             super(reactContext);
-            this.f18264a = reactContext;
-            this.f18265b = i10;
-            this.f18266c = str;
-            this.f18267d = str2;
-            this.f18268e = readableArray;
-            this.f18269f = promise;
-            this.f18270g = str3;
+            this.f18265a = reactContext;
+            this.f18266b = i10;
+            this.f18267c = str;
+            this.f18268d = str2;
+            this.f18269e = readableArray;
+            this.f18270f = promise;
+            this.f18271g = str3;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -139,47 +139,47 @@ public class CameraRollModule extends ReactContextBaseJavaModule {
         public void doInBackgroundGuarded(Void... voidArr) {
             StringBuilder sb2 = new StringBuilder("1");
             ArrayList arrayList = new ArrayList();
-            if (!TextUtils.isEmpty(this.f18267d)) {
+            if (!TextUtils.isEmpty(this.f18268d)) {
                 sb2.append(" AND bucket_display_name = ?");
-                arrayList.add(this.f18267d);
+                arrayList.add(this.f18268d);
             }
-            if (this.f18270g.equals(CameraRollModule.ASSET_TYPE_PHOTOS)) {
+            if (this.f18271g.equals(CameraRollModule.ASSET_TYPE_PHOTOS)) {
                 sb2.append(" AND media_type = 1");
-            } else if (this.f18270g.equals(CameraRollModule.ASSET_TYPE_VIDEOS)) {
+            } else if (this.f18271g.equals(CameraRollModule.ASSET_TYPE_VIDEOS)) {
                 sb2.append(" AND media_type = 3");
-            } else if (this.f18270g.equals(CameraRollModule.ASSET_TYPE_ALL)) {
+            } else if (this.f18271g.equals(CameraRollModule.ASSET_TYPE_ALL)) {
                 sb2.append(" AND media_type IN (3,1)");
             } else {
-                this.f18269f.reject(CameraRollModule.ERROR_UNABLE_TO_FILTER, "Invalid filter option: '" + this.f18270g + "'. Expected one of '" + CameraRollModule.ASSET_TYPE_PHOTOS + "', '" + CameraRollModule.ASSET_TYPE_VIDEOS + "' or '" + CameraRollModule.ASSET_TYPE_ALL + "'.");
+                this.f18270f.reject(CameraRollModule.ERROR_UNABLE_TO_FILTER, "Invalid filter option: '" + this.f18271g + "'. Expected one of '" + CameraRollModule.ASSET_TYPE_PHOTOS + "', '" + CameraRollModule.ASSET_TYPE_VIDEOS + "' or '" + CameraRollModule.ASSET_TYPE_ALL + "'.");
                 return;
             }
-            ReadableArray readableArray = this.f18268e;
+            ReadableArray readableArray = this.f18269e;
             if (readableArray != null && readableArray.size() > 0) {
                 sb2.append(" AND mime_type IN (");
-                for (int i10 = 0; i10 < this.f18268e.size(); i10++) {
+                for (int i10 = 0; i10 < this.f18269e.size(); i10++) {
                     sb2.append("?,");
-                    arrayList.add(this.f18268e.getString(i10));
+                    arrayList.add(this.f18269e.getString(i10));
                 }
                 sb2.replace(sb2.length() - 1, sb2.length(), ")");
             }
             WritableNativeMap writableNativeMap = new WritableNativeMap();
-            ContentResolver contentResolver = this.f18264a.getContentResolver();
+            ContentResolver contentResolver = this.f18265a.getContentResolver();
             try {
-                String str = "limit=" + (this.f18265b + 1);
-                if (!TextUtils.isEmpty(this.f18266c)) {
-                    str = "limit=" + this.f18266c + "," + (this.f18265b + 1);
+                String str = "limit=" + (this.f18266b + 1);
+                if (!TextUtils.isEmpty(this.f18267c)) {
+                    str = "limit=" + this.f18267c + "," + (this.f18266b + 1);
                 }
                 Cursor query = contentResolver.query(MediaStore.Files.getContentUri("external").buildUpon().encodedQuery(str).build(), CameraRollModule.PROJECTION, sb2.toString(), (String[]) arrayList.toArray(new String[arrayList.size()]), "date_added DESC, date_modified DESC");
                 if (query != null) {
-                    CameraRollModule.putEdges(contentResolver, query, writableNativeMap, this.f18265b);
-                    CameraRollModule.putPageInfo(query, writableNativeMap, this.f18265b, TextUtils.isEmpty(this.f18266c) ? 0 : Integer.parseInt(this.f18266c));
+                    CameraRollModule.putEdges(contentResolver, query, writableNativeMap, this.f18266b);
+                    CameraRollModule.putPageInfo(query, writableNativeMap, this.f18266b, TextUtils.isEmpty(this.f18267c) ? 0 : Integer.parseInt(this.f18267c));
                     query.close();
-                    this.f18269f.resolve(writableNativeMap);
+                    this.f18270f.resolve(writableNativeMap);
                     return;
                 }
-                this.f18269f.reject("E_UNABLE_TO_LOAD", "Could not get media");
+                this.f18270f.reject("E_UNABLE_TO_LOAD", "Could not get media");
             } catch (SecurityException e10) {
-                this.f18269f.reject(CameraRollModule.ERROR_UNABLE_TO_LOAD_PERMISSION, "Could not get media: need READ_EXTERNAL_STORAGE permission", e10);
+                this.f18270f.reject(CameraRollModule.ERROR_UNABLE_TO_LOAD_PERMISSION, "Could not get media: need READ_EXTERNAL_STORAGE permission", e10);
             }
         }
     }
@@ -188,16 +188,16 @@ public class CameraRollModule extends ReactContextBaseJavaModule {
     private static class c extends GuardedAsyncTask {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Context f18271a;
+        private final Context f18272a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Uri f18272b;
+        private final Uri f18273b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Promise f18273c;
+        private final Promise f18274c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final ReadableMap f18274d;
+        private final ReadableMap f18275d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -208,19 +208,19 @@ public class CameraRollModule extends ReactContextBaseJavaModule {
             @Override // android.media.MediaScannerConnection.OnScanCompletedListener
             public void onScanCompleted(String str, Uri uri) {
                 if (uri != null) {
-                    c.this.f18273c.resolve(uri.toString());
+                    c.this.f18274c.resolve(uri.toString());
                 } else {
-                    c.this.f18273c.reject(CameraRollModule.ERROR_UNABLE_TO_SAVE, "Could not add image to gallery");
+                    c.this.f18274c.reject(CameraRollModule.ERROR_UNABLE_TO_SAVE, "Could not add image to gallery");
                 }
             }
         }
 
         public c(ReactContext reactContext, Uri uri, ReadableMap readableMap, Promise promise) {
             super(reactContext);
-            this.f18271a = reactContext;
-            this.f18272b = uri;
-            this.f18273c = promise;
-            this.f18274d = readableMap;
+            this.f18272a = reactContext;
+            this.f18273b = uri;
+            this.f18274c = promise;
+            this.f18275d = readableMap;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -231,18 +231,18 @@ public class CameraRollModule extends ReactContextBaseJavaModule {
             IOException iOException;
             File externalStoragePublicDirectory;
             String str = "";
-            File file = new File(this.f18272b.getPath());
+            File file = new File(this.f18273b.getPath());
             FileChannel fileChannel2 = null;
             try {
-                if ("mov".equals(this.f18274d.getString("type"))) {
+                if ("mov".equals(this.f18275d.getString("type"))) {
                     externalStoragePublicDirectory = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MOVIES);
                 } else {
                     externalStoragePublicDirectory = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
                 }
-                if (!"".equals(this.f18274d.getString("album"))) {
-                    File file2 = new File(externalStoragePublicDirectory, this.f18274d.getString("album"));
+                if (!"".equals(this.f18275d.getString("album"))) {
+                    File file2 = new File(externalStoragePublicDirectory, this.f18275d.getString("album"));
                     if (!file2.exists() && !file2.mkdirs()) {
-                        this.f18273c.reject("E_UNABLE_TO_LOAD", "Album Directory not created. Did you request WRITE_EXTERNAL_STORAGE?");
+                        this.f18274c.reject("E_UNABLE_TO_LOAD", "Album Directory not created. Did you request WRITE_EXTERNAL_STORAGE?");
                         return;
                     }
                     externalStoragePublicDirectory = file2;
@@ -255,7 +255,7 @@ public class CameraRollModule extends ReactContextBaseJavaModule {
                 fileChannel = null;
             }
             if (!externalStoragePublicDirectory.isDirectory()) {
-                this.f18273c.reject("E_UNABLE_TO_LOAD", "External media storage directory not available");
+                this.f18274c.reject("E_UNABLE_TO_LOAD", "External media storage directory not available");
                 return;
             }
             File file3 = new File(externalStoragePublicDirectory, file.getName());
@@ -286,7 +286,7 @@ public class CameraRollModule extends ReactContextBaseJavaModule {
                     fileChannel.transferFrom(channel, 0L, channel.size());
                     channel.close();
                     fileChannel.close();
-                    MediaScannerConnection.scanFile(this.f18271a, new String[]{file3.getAbsolutePath()}, null, new a());
+                    MediaScannerConnection.scanFile(this.f18272a, new String[]{file3.getAbsolutePath()}, null, new a());
                     if (channel.isOpen()) {
                         try {
                             channel.close();
@@ -301,7 +301,7 @@ public class CameraRollModule extends ReactContextBaseJavaModule {
                     iOException = e13;
                     fileChannel2 = channel;
                     try {
-                        this.f18273c.reject(iOException);
+                        this.f18274c.reject(iOException);
                         if (fileChannel2 != null && fileChannel2.isOpen()) {
                             try {
                                 fileChannel2.close();

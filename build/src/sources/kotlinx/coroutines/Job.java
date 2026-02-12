@@ -11,7 +11,7 @@ import ys.n0;
 public interface Job extends CoroutineContext.Element {
 
     /* renamed from: k  reason: collision with root package name */
-    public static final b f34996k = b.f34997d;
+    public static final b f34997k = b.f34998d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -47,7 +47,7 @@ public interface Job extends CoroutineContext.Element {
     public static final class b implements CoroutineContext.b {
 
         /* renamed from: d  reason: collision with root package name */
-        static final /* synthetic */ b f34997d = new b();
+        static final /* synthetic */ b f34998d = new b();
 
         private b() {
         }

@@ -8,16 +8,16 @@ import ys.c1;
 public final class t {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final t f21921a;
+    public static final t f21922a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final c1 f21922b;
+    public static final c1 f21923b;
 
     static {
         t tVar = new t();
-        f21921a = tVar;
+        f21922a = tVar;
         f0.f("kotlinx.coroutines.fast.service.loader", true);
-        f21922b = tVar.a();
+        f21923b = tVar.a();
     }
 
     private t() {

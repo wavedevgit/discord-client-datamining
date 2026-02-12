@@ -5,10 +5,10 @@ import android.content.Context;
 public final class n implements lr.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final l f23195a;
+    private final l f23196a;
 
     public n(l lVar) {
-        this.f23195a = lVar;
+        this.f23196a = lVar;
     }
 
     public static Context a(l lVar) {
@@ -22,6 +22,6 @@ public final class n implements lr.d {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public Context get() {
-        return a(this.f23195a);
+        return a(this.f23196a);
     }
 }

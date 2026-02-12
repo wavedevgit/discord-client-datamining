@@ -7,10 +7,10 @@ import ys.z0;
 public final class e0 extends z0 {
 
     /* renamed from: p  reason: collision with root package name */
-    private final e f35031p;
+    private final e f35032p;
 
     public e0(e eVar) {
-        this.f35031p = eVar;
+        this.f35032p = eVar;
     }
 
     @Override // ys.z0
@@ -22,13 +22,13 @@ public final class e0 extends z0 {
     public void w(Throwable th2) {
         Object f02 = u().f0();
         if (f02 instanceof ys.r) {
-            e eVar = this.f35031p;
-            Result.a aVar = Result.f31984e;
-            eVar.resumeWith(Result.b(kotlin.c.a(((ys.r) f02).f55816a)));
+            e eVar = this.f35032p;
+            Result.a aVar = Result.f31985e;
+            eVar.resumeWith(Result.b(kotlin.c.a(((ys.r) f02).f55817a)));
             return;
         }
-        e eVar2 = this.f35031p;
-        Result.a aVar2 = Result.f31984e;
+        e eVar2 = this.f35032p;
+        Result.a aVar2 = Result.f31985e;
         eVar2.resumeWith(Result.b(c0.h(f02)));
     }
 }

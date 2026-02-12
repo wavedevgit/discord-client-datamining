@@ -11,57 +11,57 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b implements ko.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final SensorManager f31974a;
+    private final SensorManager f31975a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Sensor f31975b;
+    private final Sensor f31976b;
 
     /* renamed from: c  reason: collision with root package name */
-    private long f31976c;
+    private long f31977c;
 
     /* renamed from: d  reason: collision with root package name */
-    private double f31977d;
+    private double f31978d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f31978e;
+    private boolean f31979e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final a f31979f;
+    private final a f31980f;
 
     public b(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
         Object systemService = context.getSystemService("sensor");
         Intrinsics.checkNotNull(systemService, "null cannot be cast to non-null type android.hardware.SensorManager");
         SensorManager sensorManager = (SensorManager) systemService;
-        this.f31974a = sensorManager;
-        this.f31975b = sensorManager.getDefaultSensor(4);
-        this.f31979f = new a();
+        this.f31975a = sensorManager;
+        this.f31976b = sensorManager.getDefaultSensor(4);
+        this.f31980f = new a();
     }
 
     @Override // ko.a
     public a.C0451a a() {
         double d10;
-        long j10 = this.f31976c;
+        long j10 = this.f31977c;
         if (j10 == 0) {
             d10 = 0.0d;
         } else {
-            d10 = this.f31977d / j10;
+            d10 = this.f31978d / j10;
         }
         return new a.C0451a(d10);
     }
 
     @Override // ko.a
     public void b() {
-        this.f31974a.unregisterListener(this.f31979f);
+        this.f31975a.unregisterListener(this.f31980f);
     }
 
     @Override // ko.a
     public void c() {
-        if (!this.f31978e) {
-            this.f31978e = true;
-            Sensor sensor = this.f31975b;
+        if (!this.f31979e) {
+            this.f31979e = true;
+            Sensor sensor = this.f31976b;
             if (sensor != null) {
-                this.f31974a.registerListener(this.f31979f, sensor, 100000);
+                this.f31975a.registerListener(this.f31980f, sensor, 100000);
             }
         }
     }
@@ -79,8 +79,8 @@ public final class b implements ko.a {
                 float f11 = fArr[1];
                 float f12 = fArr[2];
                 b bVar = b.this;
-                bVar.f31977d = ((bVar.f31977d * b.this.f31976c) + (((Math.abs(f10) + Math.abs(f11)) + Math.abs(f12)) / 3.0d)) / (b.this.f31976c + 1);
-                b.this.f31976c++;
+                bVar.f31978d = ((bVar.f31978d * b.this.f31977c) + (((Math.abs(f10) + Math.abs(f11)) + Math.abs(f12)) / 3.0d)) / (b.this.f31977c + 1);
+                b.this.f31977c++;
             }
         }
 

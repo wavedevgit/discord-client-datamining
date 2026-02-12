@@ -14,20 +14,20 @@ abstract class o implements ListenableFuture {
     static class a extends o {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Throwable f21303d;
+        private final Throwable f21304d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public a(Throwable th2) {
-            this.f21303d = th2;
+            this.f21304d = th2;
         }
 
         @Override // d0.o, java.util.concurrent.Future
         public Object get() {
-            throw new ExecutionException(this.f21303d);
+            throw new ExecutionException(this.f21304d);
         }
 
         public String toString() {
-            return super.toString() + "[status=FAILURE, cause=[" + this.f21303d + "]]";
+            return super.toString() + "[status=FAILURE, cause=[" + this.f21304d + "]]";
         }
     }
 
@@ -54,23 +54,23 @@ abstract class o implements ListenableFuture {
     static final class c extends o {
 
         /* renamed from: e  reason: collision with root package name */
-        static final o f21304e = new c(null);
+        static final o f21305e = new c(null);
 
         /* renamed from: d  reason: collision with root package name */
-        private final Object f21305d;
+        private final Object f21306d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public c(Object obj) {
-            this.f21305d = obj;
+            this.f21306d = obj;
         }
 
         @Override // d0.o, java.util.concurrent.Future
         public Object get() {
-            return this.f21305d;
+            return this.f21306d;
         }
 
         public String toString() {
-            return super.toString() + "[status=SUCCESS, result=[" + this.f21305d + "]]";
+            return super.toString() + "[status=SUCCESS, result=[" + this.f21306d + "]]";
         }
     }
 
@@ -78,7 +78,7 @@ abstract class o implements ListenableFuture {
     }
 
     public static ListenableFuture d() {
-        return c.f21304e;
+        return c.f21305e;
     }
 
     @Override // com.google.common.util.concurrent.ListenableFuture

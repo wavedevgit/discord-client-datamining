@@ -11,25 +11,25 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private SearchView f19172a;
+    private SearchView f19173a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Integer f19173b;
+    private Integer f19174b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Drawable f19174c;
+    private Drawable f19175c;
 
     public g1(SearchView searchView) {
         Intrinsics.checkNotNullParameter(searchView, "searchView");
-        this.f19172a = searchView;
+        this.f19173a = searchView;
     }
 
     private final ImageView a() {
-        return (ImageView) this.f19172a.findViewById(f.f.f23375z);
+        return (ImageView) this.f19173a.findViewById(f.f.f23376z);
     }
 
     private final EditText b() {
-        View findViewById = this.f19172a.findViewById(f.f.E);
+        View findViewById = this.f19173a.findViewById(f.f.E);
         if (findViewById instanceof EditText) {
             return (EditText) findViewById;
         }
@@ -37,11 +37,11 @@ public final class g1 {
     }
 
     private final ImageView c() {
-        return (ImageView) this.f19172a.findViewById(f.f.f23374y);
+        return (ImageView) this.f19173a.findViewById(f.f.f23375y);
     }
 
     private final View d() {
-        return this.f19172a.findViewById(f.f.D);
+        return this.f19173a.findViewById(f.f.D);
     }
 
     public final void e(Integer num) {
@@ -65,7 +65,7 @@ public final class g1 {
     public final void g(String placeholder, boolean z10) {
         Intrinsics.checkNotNullParameter(placeholder, "placeholder");
         if (z10) {
-            this.f19172a.setQueryHint(placeholder);
+            this.f19173a.setQueryHint(placeholder);
             return;
         }
         EditText b10 = b();
@@ -78,7 +78,7 @@ public final class g1 {
         EditText b10;
         Integer num2;
         ColorStateList textColors;
-        Integer num3 = this.f19173b;
+        Integer num3 = this.f19174b;
         if (num != null) {
             if (num3 == null) {
                 EditText b11 = b();
@@ -87,7 +87,7 @@ public final class g1 {
                 } else {
                     num2 = null;
                 }
-                this.f19173b = num2;
+                this.f19174b = num2;
             }
             EditText b12 = b();
             if (b12 != null) {
@@ -99,10 +99,10 @@ public final class g1 {
     }
 
     public final void i(Integer num) {
-        Drawable drawable = this.f19174c;
+        Drawable drawable = this.f19175c;
         if (num != null) {
             if (drawable == null) {
-                this.f19174c = d().getBackground();
+                this.f19175c = d().getBackground();
             }
             d().setBackgroundColor(num.intValue());
         } else if (drawable != null) {

@@ -19,32 +19,32 @@ import okhttp3.RequestBody;
 public final class d implements ip.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final FallbackModeService f19857a;
+    private final FallbackModeService f19858a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final w f19858b;
+    private final w f19859b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final i.a f19859c;
+    private final i.a f19860c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f19860d;
+    private int f19861d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f19861d;
+        Object f19862d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f19862e;
+        Object f19863e;
 
         /* renamed from: i  reason: collision with root package name */
-        /* synthetic */ Object f19863i;
+        /* synthetic */ Object f19864i;
 
         /* renamed from: p  reason: collision with root package name */
-        int f19865p;
+        int f19866p;
 
         a(Continuation continuation) {
             super(continuation);
@@ -52,8 +52,8 @@ public final class d implements ip.a {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f19863i = obj;
-            this.f19865p |= Integer.MIN_VALUE;
+            this.f19864i = obj;
+            this.f19866p |= Integer.MIN_VALUE;
             Object a10 = d.this.a(null, this);
             return a10 == gs.b.f() ? a10 : Result.a(a10);
         }
@@ -64,44 +64,44 @@ public final class d implements ip.a {
     public static final class b extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f19866d;
+        int f19867d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ kp.d f19867e;
+        final /* synthetic */ kp.d f19868e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ d f19868i;
+        final /* synthetic */ d f19869i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a extends k implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f19869d;
+            int f19870d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ kp.d f19870e;
+            final /* synthetic */ kp.d f19871e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ d f19871i;
+            final /* synthetic */ d f19872i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(kp.d dVar, d dVar2, Continuation continuation) {
                 super(1, continuation);
-                this.f19870e = dVar;
-                this.f19871i = dVar2;
+                this.f19871e = dVar;
+                this.f19872i = dVar2;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Continuation continuation) {
-                return new a(this.f19870e, this.f19871i, continuation);
+                return new a(this.f19871e, this.f19872i, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 String str;
                 Object f10 = gs.b.f();
-                int i10 = this.f19869d;
+                int i10 = this.f19870d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -110,15 +110,15 @@ public final class d implements ip.a {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 kotlin.c.b(obj);
-                String g10 = this.f19870e.g();
+                String g10 = this.f19871e.g();
                 if (g10 != null && g10.length() != 0) {
-                    str = "Bearer " + com.withpersona.sdk2.inquiry.internal.h.f19918b.a(this.f19870e.g());
+                    str = "Bearer " + com.withpersona.sdk2.inquiry.internal.h.f19919b.a(this.f19871e.g());
                 } else {
                     str = null;
                 }
-                FallbackModeService g11 = this.f19871i.g();
-                FallbackModeService.StatusRequest statusRequest = new FallbackModeService.StatusRequest(this.f19870e.h());
-                this.f19869d = 1;
+                FallbackModeService g11 = this.f19872i.g();
+                FallbackModeService.StatusRequest statusRequest = new FallbackModeService.StatusRequest(this.f19871e.h());
+                this.f19870d = 1;
                 Object a10 = g11.a(str, statusRequest, this);
                 if (a10 == f10) {
                     return f10;
@@ -128,26 +128,26 @@ public final class d implements ip.a {
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Continuation continuation) {
-                return ((a) create(continuation)).invokeSuspend(Unit.f31987a);
+                return ((a) create(continuation)).invokeSuspend(Unit.f31988a);
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(kp.d dVar, d dVar2, Continuation continuation) {
             super(2, continuation);
-            this.f19867e = dVar;
-            this.f19868i = dVar2;
+            this.f19868e = dVar;
+            this.f19869i = dVar2;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new b(this.f19867e, this.f19868i, continuation);
+            return new b(this.f19868e, this.f19869i, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = gs.b.f();
-            int i10 = this.f19866d;
+            int i10 = this.f19867d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -156,8 +156,8 @@ public final class d implements ip.a {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             kotlin.c.b(obj);
-            a aVar = new a(this.f19867e, this.f19868i, null);
-            this.f19866d = 1;
+            a aVar = new a(this.f19868e, this.f19869i, null);
+            this.f19867d = 1;
             Object enqueueRetriableRequestWithRetry = NetworkUtilsKt.enqueueRetriableRequestWithRetry(aVar, this);
             if (enqueueRetriableRequestWithRetry == f10) {
                 return f10;
@@ -167,7 +167,7 @@ public final class d implements ip.a {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -176,41 +176,41 @@ public final class d implements ip.a {
     public static final class c extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f19872d;
+        int f19873d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ kp.d f19874i;
+        final /* synthetic */ kp.d f19875i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a extends k implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f19875d;
+            int f19876d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ d f19876e;
+            final /* synthetic */ d f19877e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ kp.d f19877i;
+            final /* synthetic */ kp.d f19878i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(d dVar, kp.d dVar2, Continuation continuation) {
                 super(1, continuation);
-                this.f19876e = dVar;
-                this.f19877i = dVar2;
+                this.f19877e = dVar;
+                this.f19878i = dVar2;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Continuation continuation) {
-                return new a(this.f19876e, this.f19877i, continuation);
+                return new a(this.f19877e, this.f19878i, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 InquiryFieldMap inquiryFieldMap;
                 Object f10 = gs.b.f();
-                int i10 = this.f19875d;
+                int i10 = this.f19876d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -219,21 +219,21 @@ public final class d implements ip.a {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 kotlin.c.b(obj);
-                FallbackModeService g10 = this.f19876e.g();
-                String h10 = this.f19877i.h();
-                String i11 = this.f19877i.i();
-                String e10 = this.f19877i.e();
-                String f11 = this.f19877i.f();
-                String a10 = this.f19877i.a();
-                String a11 = kp.b.a(this.f19877i.b());
-                String c10 = this.f19877i.c();
-                if (this.f19877i.d() != null) {
-                    inquiryFieldMap = new InquiryFieldMap(this.f19877i.d());
+                FallbackModeService g10 = this.f19877e.g();
+                String h10 = this.f19878i.h();
+                String i11 = this.f19878i.i();
+                String e10 = this.f19878i.e();
+                String f11 = this.f19878i.f();
+                String a10 = this.f19878i.a();
+                String a11 = kp.b.a(this.f19878i.b());
+                String c10 = this.f19878i.c();
+                if (this.f19878i.d() != null) {
+                    inquiryFieldMap = new InquiryFieldMap(this.f19878i.d());
                 } else {
                     inquiryFieldMap = null;
                 }
-                FallbackModeService.SessionIdRequest sessionIdRequest = new FallbackModeService.SessionIdRequest(h10, i11, e10, f11, a10, a11, c10, inquiryFieldMap, this.f19877i.j());
-                this.f19875d = 1;
+                FallbackModeService.SessionIdRequest sessionIdRequest = new FallbackModeService.SessionIdRequest(h10, i11, e10, f11, a10, a11, c10, inquiryFieldMap, this.f19878i.j());
+                this.f19876d = 1;
                 Object c11 = g10.c(sessionIdRequest, this);
                 if (c11 == f10) {
                     return f10;
@@ -243,25 +243,25 @@ public final class d implements ip.a {
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Continuation continuation) {
-                return ((a) create(continuation)).invokeSuspend(Unit.f31987a);
+                return ((a) create(continuation)).invokeSuspend(Unit.f31988a);
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(kp.d dVar, Continuation continuation) {
             super(2, continuation);
-            this.f19874i = dVar;
+            this.f19875i = dVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new c(this.f19874i, continuation);
+            return new c(this.f19875i, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = gs.b.f();
-            int i10 = this.f19872d;
+            int i10 = this.f19873d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -270,8 +270,8 @@ public final class d implements ip.a {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             kotlin.c.b(obj);
-            a aVar = new a(d.this, this.f19874i, null);
-            this.f19872d = 1;
+            a aVar = new a(d.this, this.f19875i, null);
+            this.f19873d = 1;
             Object enqueueRetriableRequestWithRetry = NetworkUtilsKt.enqueueRetriableRequestWithRetry(aVar, this);
             if (enqueueRetriableRequestWithRetry == f10) {
                 return f10;
@@ -281,7 +281,7 @@ public final class d implements ip.a {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -291,16 +291,16 @@ public final class d implements ip.a {
     public static final class C0248d extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f19878d;
+        Object f19879d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f19879e;
+        Object f19880e;
 
         /* renamed from: i  reason: collision with root package name */
-        /* synthetic */ Object f19880i;
+        /* synthetic */ Object f19881i;
 
         /* renamed from: p  reason: collision with root package name */
-        int f19882p;
+        int f19883p;
 
         C0248d(Continuation continuation) {
             super(continuation);
@@ -308,8 +308,8 @@ public final class d implements ip.a {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f19880i = obj;
-            this.f19882p |= Integer.MIN_VALUE;
+            this.f19881i = obj;
+            this.f19883p |= Integer.MIN_VALUE;
             return d.this.h(null, null, null, this);
         }
     }
@@ -319,54 +319,54 @@ public final class d implements ip.a {
     public static final class e extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f19883d;
+        int f19884d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ String f19885i;
+        final /* synthetic */ String f19886i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ ip.h f19886o;
+        final /* synthetic */ ip.h f19887o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ RequestBody f19887p;
+        final /* synthetic */ RequestBody f19888p;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a extends k implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f19888d;
+            int f19889d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ d f19889e;
+            final /* synthetic */ d f19890e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ String f19890i;
+            final /* synthetic */ String f19891i;
 
             /* renamed from: o  reason: collision with root package name */
-            final /* synthetic */ ip.h f19891o;
+            final /* synthetic */ ip.h f19892o;
 
             /* renamed from: p  reason: collision with root package name */
-            final /* synthetic */ RequestBody f19892p;
+            final /* synthetic */ RequestBody f19893p;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(d dVar, String str, ip.h hVar, RequestBody requestBody, Continuation continuation) {
                 super(1, continuation);
-                this.f19889e = dVar;
-                this.f19890i = str;
-                this.f19891o = hVar;
-                this.f19892p = requestBody;
+                this.f19890e = dVar;
+                this.f19891i = str;
+                this.f19892o = hVar;
+                this.f19893p = requestBody;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Continuation continuation) {
-                return new a(this.f19889e, this.f19890i, this.f19891o, this.f19892p, continuation);
+                return new a(this.f19890e, this.f19891i, this.f19892o, this.f19893p, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 Object f10 = gs.b.f();
-                int i10 = this.f19888d;
+                int i10 = this.f19889d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -375,14 +375,14 @@ public final class d implements ip.a {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 kotlin.c.b(obj);
-                FallbackModeService g10 = this.f19889e.g();
-                String str = this.f19890i;
-                ip.h hVar = this.f19891o;
-                int f11 = this.f19889e.f();
-                long contentLength = this.f19892p.contentLength();
-                MediaType contentType = this.f19892p.contentType();
+                FallbackModeService g10 = this.f19890e.g();
+                String str = this.f19891i;
+                ip.h hVar = this.f19892o;
+                int f11 = this.f19890e.f();
+                long contentLength = this.f19893p.contentLength();
+                MediaType contentType = this.f19893p.contentType();
                 FallbackModeService.UploadUrlRequest uploadUrlRequest = new FallbackModeService.UploadUrlRequest(contentLength, (contentType == null || (r11 = contentType.toString()) == null) ? "application/json" : "application/json");
-                this.f19888d = 1;
+                this.f19889d = 1;
                 Object d10 = g10.d(str, hVar, f11, uploadUrlRequest, this);
                 if (d10 == f10) {
                     return f10;
@@ -392,27 +392,27 @@ public final class d implements ip.a {
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Continuation continuation) {
-                return ((a) create(continuation)).invokeSuspend(Unit.f31987a);
+                return ((a) create(continuation)).invokeSuspend(Unit.f31988a);
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         e(String str, ip.h hVar, RequestBody requestBody, Continuation continuation) {
             super(2, continuation);
-            this.f19885i = str;
-            this.f19886o = hVar;
-            this.f19887p = requestBody;
+            this.f19886i = str;
+            this.f19887o = hVar;
+            this.f19888p = requestBody;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new e(this.f19885i, this.f19886o, this.f19887p, continuation);
+            return new e(this.f19886i, this.f19887o, this.f19888p, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = gs.b.f();
-            int i10 = this.f19883d;
+            int i10 = this.f19884d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -421,8 +421,8 @@ public final class d implements ip.a {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             kotlin.c.b(obj);
-            a aVar = new a(d.this, this.f19885i, this.f19886o, this.f19887p, null);
-            this.f19883d = 1;
+            a aVar = new a(d.this, this.f19886i, this.f19887o, this.f19888p, null);
+            this.f19884d = 1;
             Object enqueueRetriableRequestWithRetry = NetworkUtilsKt.enqueueRetriableRequestWithRetry(aVar, this);
             if (enqueueRetriableRequestWithRetry == f10) {
                 return f10;
@@ -432,7 +432,7 @@ public final class d implements ip.a {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -441,47 +441,47 @@ public final class d implements ip.a {
     public static final class f extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f19893d;
+        int f19894d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ String f19895i;
+        final /* synthetic */ String f19896i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ RequestBody f19896o;
+        final /* synthetic */ RequestBody f19897o;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a extends k implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f19897d;
+            int f19898d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ d f19898e;
+            final /* synthetic */ d f19899e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ String f19899i;
+            final /* synthetic */ String f19900i;
 
             /* renamed from: o  reason: collision with root package name */
-            final /* synthetic */ RequestBody f19900o;
+            final /* synthetic */ RequestBody f19901o;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(d dVar, String str, RequestBody requestBody, Continuation continuation) {
                 super(1, continuation);
-                this.f19898e = dVar;
-                this.f19899i = str;
-                this.f19900o = requestBody;
+                this.f19899e = dVar;
+                this.f19900i = str;
+                this.f19901o = requestBody;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Continuation continuation) {
-                return new a(this.f19898e, this.f19899i, this.f19900o, continuation);
+                return new a(this.f19899e, this.f19900i, this.f19901o, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 Object f10 = gs.b.f();
-                int i10 = this.f19897d;
+                int i10 = this.f19898d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -490,10 +490,10 @@ public final class d implements ip.a {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 kotlin.c.b(obj);
-                FallbackModeService g10 = this.f19898e.g();
-                String str = this.f19899i;
-                RequestBody requestBody = this.f19900o;
-                this.f19897d = 1;
+                FallbackModeService g10 = this.f19899e.g();
+                String str = this.f19900i;
+                RequestBody requestBody = this.f19901o;
+                this.f19898d = 1;
                 Object b10 = g10.b(str, requestBody, this);
                 if (b10 == f10) {
                     return f10;
@@ -503,26 +503,26 @@ public final class d implements ip.a {
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Continuation continuation) {
-                return ((a) create(continuation)).invokeSuspend(Unit.f31987a);
+                return ((a) create(continuation)).invokeSuspend(Unit.f31988a);
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         f(String str, RequestBody requestBody, Continuation continuation) {
             super(2, continuation);
-            this.f19895i = str;
-            this.f19896o = requestBody;
+            this.f19896i = str;
+            this.f19897o = requestBody;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new f(this.f19895i, this.f19896o, continuation);
+            return new f(this.f19896i, this.f19897o, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = gs.b.f();
-            int i10 = this.f19893d;
+            int i10 = this.f19894d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -531,8 +531,8 @@ public final class d implements ip.a {
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             kotlin.c.b(obj);
-            a aVar = new a(d.this, this.f19895i, this.f19896o, null);
-            this.f19893d = 1;
+            a aVar = new a(d.this, this.f19896i, this.f19897o, null);
+            this.f19894d = 1;
             Object enqueueRetriableRequestWithRetry = NetworkUtilsKt.enqueueRetriableRequestWithRetry(aVar, this);
             if (enqueueRetriableRequestWithRetry == f10) {
                 return f10;
@@ -542,7 +542,7 @@ public final class d implements ip.a {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((f) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((f) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -550,15 +550,15 @@ public final class d implements ip.a {
         Intrinsics.checkNotNullParameter(service, "service");
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         Intrinsics.checkNotNullParameter(staticTemplateSessionFactory, "staticTemplateSessionFactory");
-        this.f19857a = service;
-        this.f19858b = moshi;
-        this.f19859c = staticTemplateSessionFactory;
+        this.f19858a = service;
+        this.f19859b = moshi;
+        this.f19860c = staticTemplateSessionFactory;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final int f() {
-        int i10 = this.f19860d + 1;
-        this.f19860d = i10;
+        int i10 = this.f19861d + 1;
+        this.f19861d = i10;
         return i10;
     }
 
@@ -603,15 +603,15 @@ public final class d implements ip.a {
 
     @Override // ip.a
     public Object b(String str, RequestBody requestBody, Continuation continuation) {
-        return h(str, requestBody, ip.h.f30356d, continuation);
+        return h(str, requestBody, ip.h.f30357d, continuation);
     }
 
     @Override // ip.a
     public Object c(String str, RequestBody requestBody, Continuation continuation) {
-        return h(str, requestBody, ip.h.f30357e, continuation);
+        return h(str, requestBody, ip.h.f30358e, continuation);
     }
 
     public final FallbackModeService g() {
-        return this.f19857a;
+        return this.f19858a;
     }
 }

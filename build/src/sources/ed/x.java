@@ -11,10 +11,10 @@ public final class x extends uc.a {
     private static final class b implements a.f {
 
         /* renamed from: a  reason: collision with root package name */
-        private final s0 f22755a;
+        private final s0 f22756a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final oe.h0 f22756b;
+        private final oe.h0 f22757b;
 
         private a.e c(oe.h0 h0Var, long j10, long j11) {
             int i10 = -1;
@@ -27,7 +27,7 @@ public final class x extends uc.a {
                     h0Var.V(4);
                     long l10 = y.l(h0Var);
                     if (l10 != -9223372036854775807L) {
-                        long b10 = this.f22755a.b(l10);
+                        long b10 = this.f22756a.b(l10);
                         if (b10 > j10) {
                             if (j12 == -9223372036854775807L) {
                                 return a.e.d(b10, j11);
@@ -47,7 +47,7 @@ public final class x extends uc.a {
             if (j12 != -9223372036854775807L) {
                 return a.e.f(j12, j11 + i10);
             }
-            return a.e.f50606d;
+            return a.e.f50607d;
         }
 
         private static void d(oe.h0 h0Var) {
@@ -91,19 +91,19 @@ public final class x extends uc.a {
         public a.e a(uc.l lVar, long j10) {
             long position = lVar.getPosition();
             int min = (int) Math.min(20000L, lVar.getLength() - position);
-            this.f22756b.Q(min);
-            lVar.n(this.f22756b.e(), 0, min);
-            return c(this.f22756b, j10, position);
+            this.f22757b.Q(min);
+            lVar.n(this.f22757b.e(), 0, min);
+            return c(this.f22757b, j10, position);
         }
 
         @Override // uc.a.f
         public void b() {
-            this.f22756b.R(w0.f39042f);
+            this.f22757b.R(w0.f39043f);
         }
 
         private b(s0 s0Var) {
-            this.f22755a = s0Var;
-            this.f22756b = new oe.h0();
+            this.f22756a = s0Var;
+            this.f22757b = new oe.h0();
         }
     }
 

@@ -13,15 +13,15 @@ public abstract class n0 {
     public static final class a implements h0 {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ KSerializer f50030a;
+        final /* synthetic */ KSerializer f50031a;
 
         a(KSerializer kSerializer) {
-            this.f50030a = kSerializer;
+            this.f50031a = kSerializer;
         }
 
         @Override // tt.h0
         public KSerializer[] childSerializers() {
-            return new KSerializer[]{this.f50030a};
+            return new KSerializer[]{this.f50031a};
         }
 
         @Override // kotlinx.serialization.DeserializationStrategy

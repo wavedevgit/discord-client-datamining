@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor;
 public class m implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final TypeDeserializer f34482d;
+    private final TypeDeserializer f34483d;
 
     public m(TypeDeserializer typeDeserializer) {
-        this.f34482d = typeDeserializer;
+        this.f34483d = typeDeserializer;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         ClassifierDescriptor f10;
-        f10 = TypeDeserializer.f(this.f34482d, ((Number) obj).intValue());
+        f10 = TypeDeserializer.f(this.f34483d, ((Number) obj).intValue());
         return f10;
     }
 }

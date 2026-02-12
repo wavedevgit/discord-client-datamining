@@ -152,19 +152,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = undefined;
                 var1 = function*() { // Environment: var0
                     var0 = function*() { // Original name: ?anon_0_, environment: var0
-                        _fun69131: for (var _fun69131_ip = 0;;) switch (_fun69131_ip) {
+                        _fun91253: for (var _fun91253_ip = 0;;) switch (_fun91253_ip) {
                             case 0:
                                 StartGenerator();
                                 ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                 if (var1) {
-                                    _fun69131_ip = 98;
-                                    continue _fun69131
+                                    _fun91253_ip = 98;
+                                    continue _fun91253
                                 }
                             case 7:
                                 var1 = _closure2_slot0;
                                 if (!var1) {
-                                    _fun69131_ip = 90;
-                                    continue _fun69131
+                                    _fun91253_ip = 90;
+                                    continue _fun91253
                                 }
                             case 17:
                                 var3 = _closure1_slot0;
@@ -187,8 +187,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             case 84:
                                 ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                                 if (var2) {
-                                    _fun69131_ip = 95;
-                                    continue _fun69131
+                                    _fun91253_ip = 95;
+                                    continue _fun91253
                                 }
                             case 90:
                                 var2 = undefined;
@@ -225,4 +225,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useMaybeFetchSoundboardSounds = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 1298, 3198, 8568, 4942, 7873, 1464, 566, 3207, 1355, 5673, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 1298, 3198, 11794, 4908, 7616, 1464, 566, 3207, 1355, 5671, 2]);

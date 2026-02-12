@@ -56,7 +56,7 @@ public final class InternalErrorInfo_NoDiskSpaceErrorInfoJsonAdapter extends h {
         }
         Constructor<InternalErrorInfo.NoDiskSpaceErrorInfo> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InternalErrorInfo.NoDiskSpaceErrorInfo.class.getDeclaredConstructor(String.class, Integer.TYPE, dn.c.f21827c);
+            constructor = InternalErrorInfo.NoDiskSpaceErrorInfo.class.getDeclaredConstructor(String.class, Integer.TYPE, dn.c.f21828c);
             this.constructorRef = constructor;
         }
         return constructor.newInstance(str, Integer.valueOf(i10), null);

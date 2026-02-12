@@ -14,22 +14,22 @@ import org.jetbrains.annotations.NotNull;
 public final class VerifyDeviceIntegrityRequestJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20258a;
+    private final m.b f20259a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f20259b;
+    private final com.squareup.moshi.h f20260b;
 
     /* renamed from: c  reason: collision with root package name */
-    private volatile Constructor f20260c;
+    private volatile Constructor f20261c;
 
     public VerifyDeviceIntegrityRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("meta");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20258a = a10;
+        this.f20259a = a10;
         com.squareup.moshi.h f10 = moshi.f(VerifyDeviceIntegrityRequest.Meta.class, x0.d(), "meta");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20259b = f10;
+        this.f20260b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -40,10 +40,10 @@ public final class VerifyDeviceIntegrityRequestJsonAdapter extends com.squareup.
         VerifyDeviceIntegrityRequest.Meta meta = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20258a);
+            int J = reader.J(this.f20259a);
             if (J != -1) {
                 if (J == 0) {
-                    meta = (VerifyDeviceIntegrityRequest.Meta) this.f20259b.fromJson(reader);
+                    meta = (VerifyDeviceIntegrityRequest.Meta) this.f20260b.fromJson(reader);
                     i10 = -2;
                 }
             } else {
@@ -55,10 +55,10 @@ public final class VerifyDeviceIntegrityRequestJsonAdapter extends com.squareup.
         if (i10 == -2) {
             return new VerifyDeviceIntegrityRequest(meta);
         }
-        Constructor constructor = this.f20260c;
+        Constructor constructor = this.f20261c;
         if (constructor == null) {
-            constructor = VerifyDeviceIntegrityRequest.class.getDeclaredConstructor(VerifyDeviceIntegrityRequest.Meta.class, Integer.TYPE, dn.c.f21827c);
-            this.f20260c = constructor;
+            constructor = VerifyDeviceIntegrityRequest.class.getDeclaredConstructor(VerifyDeviceIntegrityRequest.Meta.class, Integer.TYPE, dn.c.f21828c);
+            this.f20261c = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
         Object newInstance = constructor.newInstance(meta, Integer.valueOf(i10), null);
@@ -73,7 +73,7 @@ public final class VerifyDeviceIntegrityRequestJsonAdapter extends com.squareup.
         if (verifyDeviceIntegrityRequest != null) {
             writer.i();
             writer.J("meta");
-            this.f20259b.toJson(writer, verifyDeviceIntegrityRequest.a());
+            this.f20260b.toJson(writer, verifyDeviceIntegrityRequest.a());
             writer.s();
             return;
         }

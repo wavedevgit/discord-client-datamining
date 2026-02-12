@@ -16,17 +16,17 @@ import androidx.appcompat.widget.AppCompatEditText;
 public class TextInputEditText extends AppCompatEditText {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Rect f16281d;
+    private final Rect f16282d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f16282e;
+    private boolean f16283e;
 
     public TextInputEditText(@NonNull Context context, AttributeSet attributeSet) {
         this(context, attributeSet, f.a.A);
     }
 
     private boolean a(TextInputLayout textInputLayout) {
-        if (textInputLayout != null && this.f16282e) {
+        if (textInputLayout != null && this.f16283e) {
             return true;
         }
         return false;
@@ -54,8 +54,8 @@ public class TextInputEditText extends AppCompatEditText {
         super.getFocusedRect(rect);
         TextInputLayout textInputLayout = getTextInputLayout();
         if (a(textInputLayout) && rect != null) {
-            textInputLayout.getFocusedRect(this.f16281d);
-            rect.bottom = this.f16281d.bottom;
+            textInputLayout.getFocusedRect(this.f16282d);
+            rect.bottom = this.f16282d.bottom;
         }
     }
 
@@ -109,19 +109,19 @@ public class TextInputEditText extends AppCompatEditText {
     public boolean requestRectangleOnScreen(Rect rect) {
         TextInputLayout textInputLayout = getTextInputLayout();
         if (a(textInputLayout) && rect != null) {
-            this.f16281d.set(rect.left, rect.top, rect.right, rect.bottom + (textInputLayout.getHeight() - getHeight()));
-            return super.requestRectangleOnScreen(this.f16281d);
+            this.f16282d.set(rect.left, rect.top, rect.right, rect.bottom + (textInputLayout.getHeight() - getHeight()));
+            return super.requestRectangleOnScreen(this.f16282d);
         }
         return super.requestRectangleOnScreen(rect);
     }
 
     public void setTextInputLayoutFocusedRectEnabled(boolean z10) {
-        this.f16282e = z10;
+        this.f16283e = z10;
     }
 
     public TextInputEditText(Context context, AttributeSet attributeSet, int i10) {
         super(wh.a.d(context, attributeSet, i10, 0), attributeSet, i10);
-        this.f16281d = new Rect();
+        this.f16282d = new Rect();
         TypedArray i11 = com.google.android.material.internal.m.i(context, attributeSet, bh.l.M6, i10, bh.k.f6938m, new int[0]);
         setTextInputLayoutFocusedRectEnabled(i11.getBoolean(bh.l.N6, false));
         i11.recycle();

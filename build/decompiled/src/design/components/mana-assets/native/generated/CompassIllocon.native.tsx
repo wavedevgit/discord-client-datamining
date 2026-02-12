@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/CompassIllocon.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun53023: for (var _fun53023_ip = 0;;) switch (_fun53023_ip) {
+        _fun52969: for (var _fun52969_ip = 0;;) switch (_fun52969_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.size;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun53023_ip = 32;
-                    continue _fun53023
+                    _fun52969_ip = 32;
+                    continue _fun52969
                 }
             case 29:
                 var7 = 64;
@@ -73,4 +73,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.CompassIllocon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4712, 6125, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 5426, 6132, 2]);

@@ -5,38 +5,38 @@ import kotlin.Result;
 public abstract class d0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final StackTraceElement f21873a = new a.a().a();
+    private static final StackTraceElement f21874a = new a.a().a();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final String f21874b;
+    private static final String f21875b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final String f21875c;
+    private static final String f21876c;
 
     static {
         Object b10;
         Object b11;
         try {
-            Result.a aVar = Result.f31984e;
+            Result.a aVar = Result.f31985e;
             b10 = Result.b(kotlin.coroutines.jvm.internal.a.class.getCanonicalName());
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f31984e;
+            Result.a aVar2 = Result.f31985e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         if (Result.e(b10) != null) {
             b10 = "kotlin.coroutines.jvm.internal.BaseContinuationImpl";
         }
-        f21874b = (String) b10;
+        f21875b = (String) b10;
         try {
             b11 = Result.b(d0.class.getCanonicalName());
         } catch (Throwable th3) {
-            Result.a aVar3 = Result.f31984e;
+            Result.a aVar3 = Result.f31985e;
             b11 = Result.b(kotlin.c.a(th3));
         }
         if (Result.e(b11) != null) {
             b11 = "kotlinx.coroutines.internal.StackTraceRecoveryKt";
         }
-        f21875c = (String) b11;
+        f21876c = (String) b11;
     }
 
     public static final Throwable a(Throwable th2) {

@@ -71,9 +71,9 @@ public final class StackScreenViewManager extends ViewGroupManager<com.swmansion
     public void setActivityMode(@NotNull com.swmansion.rnscreens.gamma.stack.screen.a view, String str) {
         Intrinsics.checkNotNullParameter(view, "view");
         if (Intrinsics.areEqual(str, "attached")) {
-            view.setActivityMode(a.EnumC0229a.f19199e);
+            view.setActivityMode(a.EnumC0229a.f19200e);
         } else if (Intrinsics.areEqual(str, "detached")) {
-            view.setActivityMode(a.EnumC0229a.f19198d);
+            view.setActivityMode(a.EnumC0229a.f19199d);
         } else {
             throw new JSApplicationIllegalArgumentException("[RNScreens] Invalid activity mode: " + str + ".");
         }

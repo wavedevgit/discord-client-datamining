@@ -55,10 +55,10 @@ public /* synthetic */ class Sticker$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        KSerializer u10 = a.u(z0.f50106a);
+        KSerializer u10 = a.u(z0.f50107a);
         KSerializer u11 = a.u(GuildId$$serializer.INSTANCE);
-        KSerializer u12 = a.u(h.f49996a);
-        n2 n2Var = n2.f50032a;
+        KSerializer u12 = a.u(h.f49997a);
+        n2 n2Var = n2.f50033a;
         return new KSerializer[]{StickerId$$serializer.INSTANCE, n2Var, u10, u11, n2Var, StickerFormatType.Serializer.INSTANCE, n2Var, StickerType.Serializer.INSTANCE, u12};
     }
 
@@ -90,9 +90,9 @@ public /* synthetic */ class Sticker$$serializer implements h0 {
             str3 = m12;
             stickerFormatType = (StickerFormatType) b10.y(serialDescriptor, 5, StickerFormatType.Serializer.INSTANCE, null);
             guildId = (GuildId) b10.n(serialDescriptor, 3, GuildId$$serializer.INSTANCE, null);
-            bool = (Boolean) b10.n(serialDescriptor, 8, h.f49996a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 8, h.f49997a, null);
             str2 = m11;
-            l10 = (Long) b10.n(serialDescriptor, 2, z0.f50106a, null);
+            l10 = (Long) b10.n(serialDescriptor, 2, z0.f50107a, null);
             str = m10;
             i10 = 511;
         } else {
@@ -125,7 +125,7 @@ public /* synthetic */ class Sticker$$serializer implements h0 {
                         i11 = 7;
                         break;
                     case 2:
-                        l11 = (Long) b10.n(serialDescriptor, 2, z0.f50106a, l11);
+                        l11 = (Long) b10.n(serialDescriptor, 2, z0.f50107a, l11);
                         i13 |= 4;
                         i11 = 7;
                         break;
@@ -151,7 +151,7 @@ public /* synthetic */ class Sticker$$serializer implements h0 {
                         i13 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         break;
                     case 8:
-                        bool2 = (Boolean) b10.n(serialDescriptor, 8, h.f49996a, bool2);
+                        bool2 = (Boolean) b10.n(serialDescriptor, 8, h.f49997a, bool2);
                         i13 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                         break;
                     default:

@@ -10,10 +10,10 @@ public final class IntRange extends kotlin.ranges.a implements rs.a {
     @NotNull
 
     /* renamed from: p  reason: collision with root package name */
-    public static final a f32079p = new a(null);
+    public static final a f32080p = new a(null);
 
     /* renamed from: q  reason: collision with root package name */
-    private static final IntRange f32080q = new IntRange(1, 0);
+    private static final IntRange f32081q = new IntRange(1, 0);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -22,7 +22,7 @@ public final class IntRange extends kotlin.ranges.a implements rs.a {
         }
 
         public final IntRange a() {
-            return IntRange.f32080q;
+            return IntRange.f32081q;
         }
 
         private a() {

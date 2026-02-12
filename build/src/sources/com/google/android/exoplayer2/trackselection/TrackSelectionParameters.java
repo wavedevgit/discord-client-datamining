@@ -35,46 +35,46 @@ public class TrackSelectionParameters implements com.google.android.exoplayer2.g
     private static final String Z;
 
     /* renamed from: a0  reason: collision with root package name */
-    private static final String f13737a0;
+    private static final String f13738a0;
 
     /* renamed from: b0  reason: collision with root package name */
-    private static final String f13738b0;
+    private static final String f13739b0;
 
     /* renamed from: c0  reason: collision with root package name */
-    private static final String f13739c0;
+    private static final String f13740c0;
 
     /* renamed from: d0  reason: collision with root package name */
-    private static final String f13740d0;
+    private static final String f13741d0;
 
     /* renamed from: e0  reason: collision with root package name */
-    private static final String f13741e0;
+    private static final String f13742e0;
 
     /* renamed from: f0  reason: collision with root package name */
-    private static final String f13742f0;
+    private static final String f13743f0;
 
     /* renamed from: g0  reason: collision with root package name */
-    private static final String f13743g0;
+    private static final String f13744g0;
 
     /* renamed from: h0  reason: collision with root package name */
-    private static final String f13744h0;
+    private static final String f13745h0;
 
     /* renamed from: i0  reason: collision with root package name */
-    private static final String f13745i0;
+    private static final String f13746i0;
 
     /* renamed from: j0  reason: collision with root package name */
-    private static final String f13746j0;
+    private static final String f13747j0;
 
     /* renamed from: k0  reason: collision with root package name */
-    private static final String f13747k0;
+    private static final String f13748k0;
 
     /* renamed from: l0  reason: collision with root package name */
-    private static final String f13748l0;
+    private static final String f13749l0;
 
     /* renamed from: m0  reason: collision with root package name */
-    private static final String f13749m0;
+    private static final String f13750m0;
 
     /* renamed from: n0  reason: collision with root package name */
-    public static final g.a f13750n0;
+    public static final g.a f13751n0;
     public final int A;
     public final int B;
     public final s C;
@@ -88,49 +88,49 @@ public class TrackSelectionParameters implements com.google.android.exoplayer2.g
     public final u K;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f13751d;
+    public final int f13752d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f13752e;
+    public final int f13753e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final int f13753i;
+    public final int f13754i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final int f13754o;
+    public final int f13755o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final int f13755p;
+    public final int f13756p;
 
     /* renamed from: q  reason: collision with root package name */
-    public final int f13756q;
+    public final int f13757q;
 
     /* renamed from: r  reason: collision with root package name */
-    public final int f13757r;
+    public final int f13758r;
 
     /* renamed from: s  reason: collision with root package name */
-    public final int f13758s;
+    public final int f13759s;
 
     /* renamed from: t  reason: collision with root package name */
-    public final int f13759t;
+    public final int f13760t;
 
     /* renamed from: u  reason: collision with root package name */
-    public final int f13760u;
+    public final int f13761u;
 
     /* renamed from: v  reason: collision with root package name */
-    public final boolean f13761v;
+    public final boolean f13762v;
 
     /* renamed from: w  reason: collision with root package name */
-    public final s f13762w;
+    public final s f13763w;
 
     /* renamed from: x  reason: collision with root package name */
-    public final int f13763x;
+    public final int f13764x;
 
     /* renamed from: y  reason: collision with root package name */
-    public final s f13764y;
+    public final s f13765y;
 
     /* renamed from: z  reason: collision with root package name */
-    public final int f13765z;
+    public final int f13766z;
 
     static {
         TrackSelectionParameters A = new a().A();
@@ -149,20 +149,20 @@ public class TrackSelectionParameters implements com.google.android.exoplayer2.g
         X = w0.B0(11);
         Y = w0.B0(12);
         Z = w0.B0(13);
-        f13737a0 = w0.B0(14);
-        f13738b0 = w0.B0(15);
-        f13739c0 = w0.B0(16);
-        f13740d0 = w0.B0(17);
-        f13741e0 = w0.B0(18);
-        f13742f0 = w0.B0(19);
-        f13743g0 = w0.B0(20);
-        f13744h0 = w0.B0(21);
-        f13745i0 = w0.B0(22);
-        f13746j0 = w0.B0(23);
-        f13747k0 = w0.B0(24);
-        f13748l0 = w0.B0(25);
-        f13749m0 = w0.B0(26);
-        f13750n0 = new g.a() { // from class: ke.p
+        f13738a0 = w0.B0(14);
+        f13739b0 = w0.B0(15);
+        f13740c0 = w0.B0(16);
+        f13741d0 = w0.B0(17);
+        f13742e0 = w0.B0(18);
+        f13743f0 = w0.B0(19);
+        f13744g0 = w0.B0(20);
+        f13745h0 = w0.B0(21);
+        f13746i0 = w0.B0(22);
+        f13747j0 = w0.B0(23);
+        f13748k0 = w0.B0(24);
+        f13749l0 = w0.B0(25);
+        f13750m0 = w0.B0(26);
+        f13751n0 = new g.a() { // from class: ke.p
             @Override // com.google.android.exoplayer2.g.a
             public final com.google.android.exoplayer2.g a(Bundle bundle) {
                 return TrackSelectionParameters.A(bundle);
@@ -172,32 +172,32 @@ public class TrackSelectionParameters implements com.google.android.exoplayer2.g
 
     /* JADX INFO: Access modifiers changed from: protected */
     public TrackSelectionParameters(a aVar) {
-        this.f13751d = aVar.f13766a;
-        this.f13752e = aVar.f13767b;
-        this.f13753i = aVar.f13768c;
-        this.f13754o = aVar.f13769d;
-        this.f13755p = aVar.f13770e;
-        this.f13756q = aVar.f13771f;
-        this.f13757r = aVar.f13772g;
-        this.f13758s = aVar.f13773h;
-        this.f13759t = aVar.f13774i;
-        this.f13760u = aVar.f13775j;
-        this.f13761v = aVar.f13776k;
-        this.f13762w = aVar.f13777l;
-        this.f13763x = aVar.f13778m;
-        this.f13764y = aVar.f13779n;
-        this.f13765z = aVar.f13780o;
-        this.A = aVar.f13781p;
-        this.B = aVar.f13782q;
-        this.C = aVar.f13783r;
-        this.D = aVar.f13784s;
-        this.E = aVar.f13785t;
-        this.F = aVar.f13786u;
-        this.G = aVar.f13787v;
-        this.H = aVar.f13788w;
-        this.I = aVar.f13789x;
-        this.J = t.c(aVar.f13790y);
-        this.K = u.o(aVar.f13791z);
+        this.f13752d = aVar.f13767a;
+        this.f13753e = aVar.f13768b;
+        this.f13754i = aVar.f13769c;
+        this.f13755o = aVar.f13770d;
+        this.f13756p = aVar.f13771e;
+        this.f13757q = aVar.f13772f;
+        this.f13758r = aVar.f13773g;
+        this.f13759s = aVar.f13774h;
+        this.f13760t = aVar.f13775i;
+        this.f13761u = aVar.f13776j;
+        this.f13762v = aVar.f13777k;
+        this.f13763w = aVar.f13778l;
+        this.f13764x = aVar.f13779m;
+        this.f13765y = aVar.f13780n;
+        this.f13766z = aVar.f13781o;
+        this.A = aVar.f13782p;
+        this.B = aVar.f13783q;
+        this.C = aVar.f13784r;
+        this.D = aVar.f13785s;
+        this.E = aVar.f13786t;
+        this.F = aVar.f13787u;
+        this.G = aVar.f13788v;
+        this.H = aVar.f13789w;
+        this.I = aVar.f13790x;
+        this.J = t.c(aVar.f13791y);
+        this.K = u.o(aVar.f13792z);
     }
 
     public static TrackSelectionParameters A(Bundle bundle) {
@@ -210,7 +210,7 @@ public class TrackSelectionParameters implements com.google.android.exoplayer2.g
         }
         if (obj != null && getClass() == obj.getClass()) {
             TrackSelectionParameters trackSelectionParameters = (TrackSelectionParameters) obj;
-            if (this.f13751d == trackSelectionParameters.f13751d && this.f13752e == trackSelectionParameters.f13752e && this.f13753i == trackSelectionParameters.f13753i && this.f13754o == trackSelectionParameters.f13754o && this.f13755p == trackSelectionParameters.f13755p && this.f13756q == trackSelectionParameters.f13756q && this.f13757r == trackSelectionParameters.f13757r && this.f13758s == trackSelectionParameters.f13758s && this.f13761v == trackSelectionParameters.f13761v && this.f13759t == trackSelectionParameters.f13759t && this.f13760u == trackSelectionParameters.f13760u && this.f13762w.equals(trackSelectionParameters.f13762w) && this.f13763x == trackSelectionParameters.f13763x && this.f13764y.equals(trackSelectionParameters.f13764y) && this.f13765z == trackSelectionParameters.f13765z && this.A == trackSelectionParameters.A && this.B == trackSelectionParameters.B && this.C.equals(trackSelectionParameters.C) && this.D.equals(trackSelectionParameters.D) && this.E == trackSelectionParameters.E && this.F == trackSelectionParameters.F && this.G == trackSelectionParameters.G && this.H == trackSelectionParameters.H && this.I == trackSelectionParameters.I && this.J.equals(trackSelectionParameters.J) && this.K.equals(trackSelectionParameters.K)) {
+            if (this.f13752d == trackSelectionParameters.f13752d && this.f13753e == trackSelectionParameters.f13753e && this.f13754i == trackSelectionParameters.f13754i && this.f13755o == trackSelectionParameters.f13755o && this.f13756p == trackSelectionParameters.f13756p && this.f13757q == trackSelectionParameters.f13757q && this.f13758r == trackSelectionParameters.f13758r && this.f13759s == trackSelectionParameters.f13759s && this.f13762v == trackSelectionParameters.f13762v && this.f13760t == trackSelectionParameters.f13760t && this.f13761u == trackSelectionParameters.f13761u && this.f13763w.equals(trackSelectionParameters.f13763w) && this.f13764x == trackSelectionParameters.f13764x && this.f13765y.equals(trackSelectionParameters.f13765y) && this.f13766z == trackSelectionParameters.f13766z && this.A == trackSelectionParameters.A && this.B == trackSelectionParameters.B && this.C.equals(trackSelectionParameters.C) && this.D.equals(trackSelectionParameters.D) && this.E == trackSelectionParameters.E && this.F == trackSelectionParameters.F && this.G == trackSelectionParameters.G && this.H == trackSelectionParameters.H && this.I == trackSelectionParameters.I && this.J.equals(trackSelectionParameters.J) && this.K.equals(trackSelectionParameters.K)) {
                 return true;
             }
         }
@@ -218,142 +218,142 @@ public class TrackSelectionParameters implements com.google.android.exoplayer2.g
     }
 
     public int hashCode() {
-        return ((((((((((((((((((((((((((((((((((((((((((((((((((this.f13751d + 31) * 31) + this.f13752e) * 31) + this.f13753i) * 31) + this.f13754o) * 31) + this.f13755p) * 31) + this.f13756q) * 31) + this.f13757r) * 31) + this.f13758s) * 31) + (this.f13761v ? 1 : 0)) * 31) + this.f13759t) * 31) + this.f13760u) * 31) + this.f13762w.hashCode()) * 31) + this.f13763x) * 31) + this.f13764y.hashCode()) * 31) + this.f13765z) * 31) + this.A) * 31) + this.B) * 31) + this.C.hashCode()) * 31) + this.D.hashCode()) * 31) + this.E) * 31) + this.F) * 31) + (this.G ? 1 : 0)) * 31) + (this.H ? 1 : 0)) * 31) + (this.I ? 1 : 0)) * 31) + this.J.hashCode()) * 31) + this.K.hashCode();
+        return ((((((((((((((((((((((((((((((((((((((((((((((((((this.f13752d + 31) * 31) + this.f13753e) * 31) + this.f13754i) * 31) + this.f13755o) * 31) + this.f13756p) * 31) + this.f13757q) * 31) + this.f13758r) * 31) + this.f13759s) * 31) + (this.f13762v ? 1 : 0)) * 31) + this.f13760t) * 31) + this.f13761u) * 31) + this.f13763w.hashCode()) * 31) + this.f13764x) * 31) + this.f13765y.hashCode()) * 31) + this.f13766z) * 31) + this.A) * 31) + this.B) * 31) + this.C.hashCode()) * 31) + this.D.hashCode()) * 31) + this.E) * 31) + this.F) * 31) + (this.G ? 1 : 0)) * 31) + (this.H ? 1 : 0)) * 31) + (this.I ? 1 : 0)) * 31) + this.J.hashCode()) * 31) + this.K.hashCode();
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f13766a;
+        private int f13767a;
 
         /* renamed from: b  reason: collision with root package name */
-        private int f13767b;
+        private int f13768b;
 
         /* renamed from: c  reason: collision with root package name */
-        private int f13768c;
+        private int f13769c;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f13769d;
+        private int f13770d;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f13770e;
+        private int f13771e;
 
         /* renamed from: f  reason: collision with root package name */
-        private int f13771f;
+        private int f13772f;
 
         /* renamed from: g  reason: collision with root package name */
-        private int f13772g;
+        private int f13773g;
 
         /* renamed from: h  reason: collision with root package name */
-        private int f13773h;
+        private int f13774h;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f13774i;
+        private int f13775i;
 
         /* renamed from: j  reason: collision with root package name */
-        private int f13775j;
+        private int f13776j;
 
         /* renamed from: k  reason: collision with root package name */
-        private boolean f13776k;
+        private boolean f13777k;
 
         /* renamed from: l  reason: collision with root package name */
-        private s f13777l;
+        private s f13778l;
 
         /* renamed from: m  reason: collision with root package name */
-        private int f13778m;
+        private int f13779m;
 
         /* renamed from: n  reason: collision with root package name */
-        private s f13779n;
+        private s f13780n;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f13780o;
+        private int f13781o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f13781p;
+        private int f13782p;
 
         /* renamed from: q  reason: collision with root package name */
-        private int f13782q;
+        private int f13783q;
 
         /* renamed from: r  reason: collision with root package name */
-        private s f13783r;
+        private s f13784r;
 
         /* renamed from: s  reason: collision with root package name */
-        private s f13784s;
+        private s f13785s;
 
         /* renamed from: t  reason: collision with root package name */
-        private int f13785t;
+        private int f13786t;
 
         /* renamed from: u  reason: collision with root package name */
-        private int f13786u;
+        private int f13787u;
 
         /* renamed from: v  reason: collision with root package name */
-        private boolean f13787v;
+        private boolean f13788v;
 
         /* renamed from: w  reason: collision with root package name */
-        private boolean f13788w;
+        private boolean f13789w;
 
         /* renamed from: x  reason: collision with root package name */
-        private boolean f13789x;
+        private boolean f13790x;
 
         /* renamed from: y  reason: collision with root package name */
-        private HashMap f13790y;
+        private HashMap f13791y;
 
         /* renamed from: z  reason: collision with root package name */
-        private HashSet f13791z;
+        private HashSet f13792z;
 
         public a() {
-            this.f13766a = Integer.MAX_VALUE;
-            this.f13767b = Integer.MAX_VALUE;
-            this.f13768c = Integer.MAX_VALUE;
-            this.f13769d = Integer.MAX_VALUE;
-            this.f13774i = Integer.MAX_VALUE;
-            this.f13775j = Integer.MAX_VALUE;
-            this.f13776k = true;
-            this.f13777l = s.t();
-            this.f13778m = 0;
-            this.f13779n = s.t();
-            this.f13780o = 0;
-            this.f13781p = Integer.MAX_VALUE;
-            this.f13782q = Integer.MAX_VALUE;
-            this.f13783r = s.t();
-            this.f13784s = s.t();
-            this.f13785t = 0;
-            this.f13786u = 0;
-            this.f13787v = false;
-            this.f13788w = false;
-            this.f13789x = false;
-            this.f13790y = new HashMap();
-            this.f13791z = new HashSet();
+            this.f13767a = Integer.MAX_VALUE;
+            this.f13768b = Integer.MAX_VALUE;
+            this.f13769c = Integer.MAX_VALUE;
+            this.f13770d = Integer.MAX_VALUE;
+            this.f13775i = Integer.MAX_VALUE;
+            this.f13776j = Integer.MAX_VALUE;
+            this.f13777k = true;
+            this.f13778l = s.t();
+            this.f13779m = 0;
+            this.f13780n = s.t();
+            this.f13781o = 0;
+            this.f13782p = Integer.MAX_VALUE;
+            this.f13783q = Integer.MAX_VALUE;
+            this.f13784r = s.t();
+            this.f13785s = s.t();
+            this.f13786t = 0;
+            this.f13787u = 0;
+            this.f13788v = false;
+            this.f13789w = false;
+            this.f13790x = false;
+            this.f13791y = new HashMap();
+            this.f13792z = new HashSet();
         }
 
         private void B(TrackSelectionParameters trackSelectionParameters) {
-            this.f13766a = trackSelectionParameters.f13751d;
-            this.f13767b = trackSelectionParameters.f13752e;
-            this.f13768c = trackSelectionParameters.f13753i;
-            this.f13769d = trackSelectionParameters.f13754o;
-            this.f13770e = trackSelectionParameters.f13755p;
-            this.f13771f = trackSelectionParameters.f13756q;
-            this.f13772g = trackSelectionParameters.f13757r;
-            this.f13773h = trackSelectionParameters.f13758s;
-            this.f13774i = trackSelectionParameters.f13759t;
-            this.f13775j = trackSelectionParameters.f13760u;
-            this.f13776k = trackSelectionParameters.f13761v;
-            this.f13777l = trackSelectionParameters.f13762w;
-            this.f13778m = trackSelectionParameters.f13763x;
-            this.f13779n = trackSelectionParameters.f13764y;
-            this.f13780o = trackSelectionParameters.f13765z;
-            this.f13781p = trackSelectionParameters.A;
-            this.f13782q = trackSelectionParameters.B;
-            this.f13783r = trackSelectionParameters.C;
-            this.f13784s = trackSelectionParameters.D;
-            this.f13785t = trackSelectionParameters.E;
-            this.f13786u = trackSelectionParameters.F;
-            this.f13787v = trackSelectionParameters.G;
-            this.f13788w = trackSelectionParameters.H;
-            this.f13789x = trackSelectionParameters.I;
-            this.f13791z = new HashSet(trackSelectionParameters.K);
-            this.f13790y = new HashMap(trackSelectionParameters.J);
+            this.f13767a = trackSelectionParameters.f13752d;
+            this.f13768b = trackSelectionParameters.f13753e;
+            this.f13769c = trackSelectionParameters.f13754i;
+            this.f13770d = trackSelectionParameters.f13755o;
+            this.f13771e = trackSelectionParameters.f13756p;
+            this.f13772f = trackSelectionParameters.f13757q;
+            this.f13773g = trackSelectionParameters.f13758r;
+            this.f13774h = trackSelectionParameters.f13759s;
+            this.f13775i = trackSelectionParameters.f13760t;
+            this.f13776j = trackSelectionParameters.f13761u;
+            this.f13777k = trackSelectionParameters.f13762v;
+            this.f13778l = trackSelectionParameters.f13763w;
+            this.f13779m = trackSelectionParameters.f13764x;
+            this.f13780n = trackSelectionParameters.f13765y;
+            this.f13781o = trackSelectionParameters.f13766z;
+            this.f13782p = trackSelectionParameters.A;
+            this.f13783q = trackSelectionParameters.B;
+            this.f13784r = trackSelectionParameters.C;
+            this.f13785s = trackSelectionParameters.D;
+            this.f13786t = trackSelectionParameters.E;
+            this.f13787u = trackSelectionParameters.F;
+            this.f13788v = trackSelectionParameters.G;
+            this.f13789w = trackSelectionParameters.H;
+            this.f13790x = trackSelectionParameters.I;
+            this.f13792z = new HashSet(trackSelectionParameters.K);
+            this.f13791y = new HashMap(trackSelectionParameters.J);
         }
 
         private static s C(String[] strArr) {
@@ -366,11 +366,11 @@ public class TrackSelectionParameters implements com.google.android.exoplayer2.g
 
         private void H(Context context) {
             CaptioningManager captioningManager;
-            if ((w0.f39037a >= 23 || Looper.myLooper() != null) && (captioningManager = (CaptioningManager) context.getSystemService("captioning")) != null && captioningManager.isEnabled()) {
-                this.f13785t = 1088;
+            if ((w0.f39038a >= 23 || Looper.myLooper() != null) && (captioningManager = (CaptioningManager) context.getSystemService("captioning")) != null && captioningManager.isEnabled()) {
+                this.f13786t = 1088;
                 Locale locale = captioningManager.getLocale();
                 if (locale != null) {
-                    this.f13784s = s.u(w0.b0(locale));
+                    this.f13785s = s.u(w0.b0(locale));
                 }
             }
         }
@@ -386,26 +386,26 @@ public class TrackSelectionParameters implements com.google.android.exoplayer2.g
         }
 
         public a E(boolean z10) {
-            this.f13789x = z10;
+            this.f13790x = z10;
             return this;
         }
 
         public a F(int i10) {
-            this.f13769d = i10;
+            this.f13770d = i10;
             return this;
         }
 
         public a G(Context context) {
-            if (w0.f39037a >= 19) {
+            if (w0.f39038a >= 19) {
                 H(context);
             }
             return this;
         }
 
         public a I(int i10, int i11, boolean z10) {
-            this.f13774i = i10;
-            this.f13775j = i11;
-            this.f13776k = z10;
+            this.f13775i = i10;
+            this.f13776j = i11;
+            this.f13777k = z10;
             return this;
         }
 
@@ -430,45 +430,45 @@ public class TrackSelectionParameters implements com.google.android.exoplayer2.g
             s d10;
             String str = TrackSelectionParameters.S;
             TrackSelectionParameters trackSelectionParameters = TrackSelectionParameters.L;
-            this.f13766a = bundle.getInt(str, trackSelectionParameters.f13751d);
-            this.f13767b = bundle.getInt(TrackSelectionParameters.T, trackSelectionParameters.f13752e);
-            this.f13768c = bundle.getInt(TrackSelectionParameters.U, trackSelectionParameters.f13753i);
-            this.f13769d = bundle.getInt(TrackSelectionParameters.V, trackSelectionParameters.f13754o);
-            this.f13770e = bundle.getInt(TrackSelectionParameters.W, trackSelectionParameters.f13755p);
-            this.f13771f = bundle.getInt(TrackSelectionParameters.X, trackSelectionParameters.f13756q);
-            this.f13772g = bundle.getInt(TrackSelectionParameters.Y, trackSelectionParameters.f13757r);
-            this.f13773h = bundle.getInt(TrackSelectionParameters.Z, trackSelectionParameters.f13758s);
-            this.f13774i = bundle.getInt(TrackSelectionParameters.f13737a0, trackSelectionParameters.f13759t);
-            this.f13775j = bundle.getInt(TrackSelectionParameters.f13738b0, trackSelectionParameters.f13760u);
-            this.f13776k = bundle.getBoolean(TrackSelectionParameters.f13739c0, trackSelectionParameters.f13761v);
-            this.f13777l = s.p((String[]) pi.h.a(bundle.getStringArray(TrackSelectionParameters.f13740d0), new String[0]));
-            this.f13778m = bundle.getInt(TrackSelectionParameters.f13748l0, trackSelectionParameters.f13763x);
-            this.f13779n = C((String[]) pi.h.a(bundle.getStringArray(TrackSelectionParameters.N), new String[0]));
-            this.f13780o = bundle.getInt(TrackSelectionParameters.O, trackSelectionParameters.f13765z);
-            this.f13781p = bundle.getInt(TrackSelectionParameters.f13741e0, trackSelectionParameters.A);
-            this.f13782q = bundle.getInt(TrackSelectionParameters.f13742f0, trackSelectionParameters.B);
-            this.f13783r = s.p((String[]) pi.h.a(bundle.getStringArray(TrackSelectionParameters.f13743g0), new String[0]));
-            this.f13784s = C((String[]) pi.h.a(bundle.getStringArray(TrackSelectionParameters.P), new String[0]));
-            this.f13785t = bundle.getInt(TrackSelectionParameters.Q, trackSelectionParameters.E);
-            this.f13786u = bundle.getInt(TrackSelectionParameters.f13749m0, trackSelectionParameters.F);
-            this.f13787v = bundle.getBoolean(TrackSelectionParameters.R, trackSelectionParameters.G);
-            this.f13788w = bundle.getBoolean(TrackSelectionParameters.f13744h0, trackSelectionParameters.H);
-            this.f13789x = bundle.getBoolean(TrackSelectionParameters.f13745i0, trackSelectionParameters.I);
-            ArrayList parcelableArrayList = bundle.getParcelableArrayList(TrackSelectionParameters.f13746j0);
+            this.f13767a = bundle.getInt(str, trackSelectionParameters.f13752d);
+            this.f13768b = bundle.getInt(TrackSelectionParameters.T, trackSelectionParameters.f13753e);
+            this.f13769c = bundle.getInt(TrackSelectionParameters.U, trackSelectionParameters.f13754i);
+            this.f13770d = bundle.getInt(TrackSelectionParameters.V, trackSelectionParameters.f13755o);
+            this.f13771e = bundle.getInt(TrackSelectionParameters.W, trackSelectionParameters.f13756p);
+            this.f13772f = bundle.getInt(TrackSelectionParameters.X, trackSelectionParameters.f13757q);
+            this.f13773g = bundle.getInt(TrackSelectionParameters.Y, trackSelectionParameters.f13758r);
+            this.f13774h = bundle.getInt(TrackSelectionParameters.Z, trackSelectionParameters.f13759s);
+            this.f13775i = bundle.getInt(TrackSelectionParameters.f13738a0, trackSelectionParameters.f13760t);
+            this.f13776j = bundle.getInt(TrackSelectionParameters.f13739b0, trackSelectionParameters.f13761u);
+            this.f13777k = bundle.getBoolean(TrackSelectionParameters.f13740c0, trackSelectionParameters.f13762v);
+            this.f13778l = s.p((String[]) pi.h.a(bundle.getStringArray(TrackSelectionParameters.f13741d0), new String[0]));
+            this.f13779m = bundle.getInt(TrackSelectionParameters.f13749l0, trackSelectionParameters.f13764x);
+            this.f13780n = C((String[]) pi.h.a(bundle.getStringArray(TrackSelectionParameters.N), new String[0]));
+            this.f13781o = bundle.getInt(TrackSelectionParameters.O, trackSelectionParameters.f13766z);
+            this.f13782p = bundle.getInt(TrackSelectionParameters.f13742e0, trackSelectionParameters.A);
+            this.f13783q = bundle.getInt(TrackSelectionParameters.f13743f0, trackSelectionParameters.B);
+            this.f13784r = s.p((String[]) pi.h.a(bundle.getStringArray(TrackSelectionParameters.f13744g0), new String[0]));
+            this.f13785s = C((String[]) pi.h.a(bundle.getStringArray(TrackSelectionParameters.P), new String[0]));
+            this.f13786t = bundle.getInt(TrackSelectionParameters.Q, trackSelectionParameters.E);
+            this.f13787u = bundle.getInt(TrackSelectionParameters.f13750m0, trackSelectionParameters.F);
+            this.f13788v = bundle.getBoolean(TrackSelectionParameters.R, trackSelectionParameters.G);
+            this.f13789w = bundle.getBoolean(TrackSelectionParameters.f13745h0, trackSelectionParameters.H);
+            this.f13790x = bundle.getBoolean(TrackSelectionParameters.f13746i0, trackSelectionParameters.I);
+            ArrayList parcelableArrayList = bundle.getParcelableArrayList(TrackSelectionParameters.f13747j0);
             if (parcelableArrayList == null) {
                 d10 = s.t();
             } else {
-                d10 = oe.d.d(o.f31717p, parcelableArrayList);
+                d10 = oe.d.d(o.f31718p, parcelableArrayList);
             }
-            this.f13790y = new HashMap();
+            this.f13791y = new HashMap();
             for (int i10 = 0; i10 < d10.size(); i10++) {
                 o oVar = (o) d10.get(i10);
-                this.f13790y.put(oVar.f31718d, oVar);
+                this.f13791y.put(oVar.f31719d, oVar);
             }
-            int[] iArr = (int[]) pi.h.a(bundle.getIntArray(TrackSelectionParameters.f13747k0), new int[0]);
-            this.f13791z = new HashSet();
+            int[] iArr = (int[]) pi.h.a(bundle.getIntArray(TrackSelectionParameters.f13748k0), new int[0]);
+            this.f13792z = new HashSet();
             for (int i11 : iArr) {
-                this.f13791z.add(Integer.valueOf(i11));
+                this.f13792z.add(Integer.valueOf(i11));
             }
         }
     }

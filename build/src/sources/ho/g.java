@@ -7,31 +7,31 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f27567a;
+    private final Context f27568a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ko.a f27568b;
+    private final ko.a f27569b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final gq.c f27569c;
+    private final gq.c f27570c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final m f27570d;
+    private final m f27571d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Camera2PreviewView f27571e;
+    private final Camera2PreviewView f27572e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final b f27572f;
+    private final b f27573f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final lo.a f27573g;
+    private final lo.a f27574g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final boolean f27574h;
+    private final boolean f27575h;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f27575i;
+    private int f27576i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -46,25 +46,25 @@ public final class g {
         Intrinsics.checkNotNullParameter(previewView, "previewView");
         Intrinsics.checkNotNullParameter(analyzer, "analyzer");
         Intrinsics.checkNotNullParameter(videoCaptureMethod, "videoCaptureMethod");
-        this.f27567a = context;
-        this.f27568b = cameraStatsManager;
-        this.f27569c = sdkFilesManager;
-        this.f27570d = cameraChoices;
-        this.f27571e = previewView;
-        this.f27572f = analyzer;
-        this.f27573g = videoCaptureMethod;
-        this.f27574h = z10;
+        this.f27568a = context;
+        this.f27569b = cameraStatsManager;
+        this.f27570c = sdkFilesManager;
+        this.f27571d = cameraChoices;
+        this.f27572e = previewView;
+        this.f27573f = analyzer;
+        this.f27574g = videoCaptureMethod;
+        this.f27575h = z10;
     }
 
     public final e a() {
-        return new e(this.f27567a, (l) this.f27570d.a().get(this.f27575i), this.f27571e, this.f27572f, this.f27573g, null, this.f27574h, this.f27568b, this.f27569c);
+        return new e(this.f27568a, (l) this.f27571d.a().get(this.f27576i), this.f27572e, this.f27573f, this.f27574g, null, this.f27575h, this.f27569b, this.f27570c);
     }
 
     public final boolean b() {
-        if (this.f27575i + 1 >= this.f27570d.a().size()) {
+        if (this.f27576i + 1 >= this.f27571d.a().size()) {
             return false;
         }
-        this.f27575i++;
+        this.f27576i++;
         return true;
     }
 }

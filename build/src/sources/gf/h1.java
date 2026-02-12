@@ -6,46 +6,46 @@ import java.util.Objects;
 final class h1 implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ g f25625d;
+    final /* synthetic */ g f25626d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ String f25626e;
+    final /* synthetic */ String f25627e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ i1 f25627i;
+    final /* synthetic */ i1 f25628i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h1(i1 i1Var, g gVar, String str) {
-        this.f25625d = gVar;
-        this.f25626e = str;
+        this.f25626d = gVar;
+        this.f25627e = str;
         Objects.requireNonNull(i1Var);
-        this.f25627i = i1Var;
+        this.f25628i = i1Var;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
         Bundle bundle;
-        i1 i1Var = this.f25627i;
+        i1 i1Var = this.f25628i;
         if (i1Var.k() > 0) {
-            g gVar = this.f25625d;
+            g gVar = this.f25626d;
             if (i1Var.l() != null) {
-                bundle = i1Var.l().getBundle(this.f25626e);
+                bundle = i1Var.l().getBundle(this.f25627e);
             } else {
                 bundle = null;
             }
             gVar.f(bundle);
         }
         if (i1Var.k() >= 2) {
-            this.f25625d.j();
+            this.f25626d.j();
         }
         if (i1Var.k() >= 3) {
-            this.f25625d.h();
+            this.f25626d.h();
         }
         if (i1Var.k() >= 4) {
-            this.f25625d.k();
+            this.f25626d.k();
         }
         if (i1Var.k() >= 5) {
-            this.f25625d.g();
+            this.f25626d.g();
         }
     }
 }

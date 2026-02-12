@@ -35,55 +35,55 @@ public final class y implements gn.b {
     private final gn.c0 B;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f49718d;
+    private final List f49719d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f49719e;
+    private final String f49720e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f49720i;
+    private final String f49721i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f49721o;
+    private final String f49722o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final String f49722p;
+    private final String f49723p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final jq.a f49723q;
+    private final jq.a f49724q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final Function0 f49724r;
+    private final Function0 f49725r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final Function0 f49725s;
+    private final Function0 f49726s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final Function0 f49726t;
+    private final Function0 f49727t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final Function0 f49727u;
+    private final Function0 f49728u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final String f49728v;
+    private final String f49729v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final Function0 f49729w;
+    private final Function0 f49730w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final StepStyles.GovernmentIdStepStyle f49730x;
+    private final StepStyles.GovernmentIdStepStyle f49731x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final RemoteImage f49731y;
+    private final RemoteImage f49732y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final int f49732z;
+    private final int f49733z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     /* synthetic */ class a extends FunctionReferenceImpl implements Function3 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f49733d = new a();
+        public static final a f49734d = new a();
 
         a() {
             super(3, xo.d.class, "inflate", "inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/withpersona/sdk2/inquiry/governmentid/databinding/Pi2GovernmentidChooseCaptureMethodBinding;", 0);
@@ -112,23 +112,23 @@ public final class y implements gn.b {
         Intrinsics.checkNotNullParameter(onBack, "onBack");
         Intrinsics.checkNotNullParameter(onCancel, "onCancel");
         Intrinsics.checkNotNullParameter(onErrorDismissed, "onErrorDismissed");
-        this.f49718d = captureOptions;
-        this.f49719e = title;
-        this.f49720i = body;
-        this.f49721o = cameraText;
-        this.f49722p = uploadButtonText;
-        this.f49723q = navigationState;
-        this.f49724r = onCameraCaptureClick;
-        this.f49725s = onUploadClick;
-        this.f49726t = onBack;
-        this.f49727u = onCancel;
-        this.f49728v = str;
-        this.f49729w = onErrorDismissed;
-        this.f49730x = governmentIdStepStyle;
-        this.f49731y = remoteImage;
-        this.f49732z = i10;
-        k.a aVar = gn.k.f25848a;
-        this.B = new gn.z(Reflection.getOrCreateKotlinClass(y.class), a.f49733d, new Function1() { // from class: to.s
+        this.f49719d = captureOptions;
+        this.f49720e = title;
+        this.f49721i = body;
+        this.f49722o = cameraText;
+        this.f49723p = uploadButtonText;
+        this.f49724q = navigationState;
+        this.f49725r = onCameraCaptureClick;
+        this.f49726s = onUploadClick;
+        this.f49727t = onBack;
+        this.f49728u = onCancel;
+        this.f49729v = str;
+        this.f49730w = onErrorDismissed;
+        this.f49731x = governmentIdStepStyle;
+        this.f49732y = remoteImage;
+        this.f49733z = i10;
+        k.a aVar = gn.k.f25849a;
+        this.B = new gn.z(Reflection.getOrCreateKotlinClass(y.class), a.f49734d, new Function1() { // from class: to.s
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 gn.k i11;
@@ -197,33 +197,33 @@ public final class y implements gn.b {
         Intrinsics.checkNotNullParameter(rendering, "rendering");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
         Context context = dVar.getRoot().getContext();
-        dVar.f54998i.setText(rendering.f49719e);
-        dVar.f54991b.setText(rendering.f49720i);
-        if (yVar.f49718d.contains(CaptureOptionNativeMobile.MOBILE_CAMERA)) {
-            if (!StringsKt.k0(yVar.f49721o)) {
-                dVar.f54992c.setText(yVar.f49721o);
-                dVar.f54992c.setIcon(null);
+        dVar.f54999i.setText(rendering.f49720e);
+        dVar.f54992b.setText(rendering.f49721i);
+        if (yVar.f49719d.contains(CaptureOptionNativeMobile.MOBILE_CAMERA)) {
+            if (!StringsKt.k0(yVar.f49722o)) {
+                dVar.f54993c.setText(yVar.f49722o);
+                dVar.f54993c.setIcon(null);
             } else {
-                dVar.f54992c.setText((CharSequence) null);
-                dVar.f54992c.setIcon(g.a.b(context, l4.f49348c));
+                dVar.f54993c.setText((CharSequence) null);
+                dVar.f54993c.setIcon(g.a.b(context, l4.f49349c));
             }
-            dVar.f54992c.setOnClickListener(new View.OnClickListener() { // from class: to.u
+            dVar.f54993c.setOnClickListener(new View.OnClickListener() { // from class: to.u
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     y.k(y.this, view);
                 }
             });
         }
-        if (yVar.f49718d.contains(CaptureOptionNativeMobile.UPLOAD)) {
-            dVar.f54999j.setText(rendering.f49722p);
-            dVar.f54999j.setOnClickListener(new View.OnClickListener() { // from class: to.v
+        if (yVar.f49719d.contains(CaptureOptionNativeMobile.UPLOAD)) {
+            dVar.f55000j.setText(rendering.f49723p);
+            dVar.f55000j.setOnClickListener(new View.OnClickListener() { // from class: to.v
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     y.l(y.this, view);
                 }
             });
         }
-        jq.a aVar = rendering.f49723q;
+        jq.a aVar = rendering.f49724q;
         Function0 function0 = new Function0() { // from class: to.w
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -240,42 +240,42 @@ public final class y implements gn.b {
                 return n10;
             }
         };
-        Pi2NavigationBar navigationBar = dVar.f54997h;
+        Pi2NavigationBar navigationBar = dVar.f54998h;
         Intrinsics.checkNotNullExpressionValue(navigationBar, "navigationBar");
         CoordinatorLayout root = dVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         jq.e.b(aVar, function0, function02, navigationBar, root);
         CoordinatorLayout root2 = dVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root2, "getRoot(...)");
-        bq.z.b(root2, rendering.f49728v, rendering.f49729w, null, 0, 0, 56, null);
-        RemoteImage remoteImage = yVar.f49731y;
+        bq.z.b(root2, rendering.f49729v, rendering.f49730w, null, 0, 0, 56, null);
+        RemoteImage remoteImage = yVar.f49732y;
         if (remoteImage != null) {
             if (yVar.A == null) {
-                ConstraintLayout imageViewContainer = dVar.f54995f;
+                ConstraintLayout imageViewContainer = dVar.f54996f;
                 Intrinsics.checkNotNullExpressionValue(imageViewContainer, "imageViewContainer");
                 yVar.A = wq.b.c(remoteImage, imageViewContainer, false, 2, null);
-                dVar.f54996g.setVisibility(8);
+                dVar.f54997g.setVisibility(8);
             }
         } else {
-            dVar.f54993d.setAnimation(yVar.f49732z);
+            dVar.f54994d.setAnimation(yVar.f49733z);
         }
-        StepStyles.GovernmentIdStepStyle governmentIdStepStyle = yVar.f49730x;
+        StepStyles.GovernmentIdStepStyle governmentIdStepStyle = yVar.f49731x;
         if (governmentIdStepStyle != null) {
             CoordinatorLayout root3 = dVar.getRoot();
             Intrinsics.checkNotNullExpressionValue(root3, "getRoot(...)");
-            Pi2NavigationBar navigationBar2 = dVar.f54997h;
+            Pi2NavigationBar navigationBar2 = dVar.f54998h;
             Intrinsics.checkNotNullExpressionValue(navigationBar2, "navigationBar");
-            TextView title = dVar.f54998i;
+            TextView title = dVar.f54999i;
             Intrinsics.checkNotNullExpressionValue(title, "title");
-            TextView body = dVar.f54991b;
+            TextView body = dVar.f54992b;
             Intrinsics.checkNotNullExpressionValue(body, "body");
-            MaterialButton cameraButton = dVar.f54992c;
+            MaterialButton cameraButton = dVar.f54993c;
             Intrinsics.checkNotNullExpressionValue(cameraButton, "cameraButton");
-            Button uploadButton = dVar.f54999j;
+            Button uploadButton = dVar.f55000j;
             Intrinsics.checkNotNullExpressionValue(uploadButton, "uploadButton");
-            ThemeableLottieAnimationView idImage = dVar.f54993d;
+            ThemeableLottieAnimationView idImage = dVar.f54994d;
             Intrinsics.checkNotNullExpressionValue(idImage, "idImage");
-            View idImageContainer = dVar.f54994e;
+            View idImageContainer = dVar.f54995e;
             Intrinsics.checkNotNullExpressionValue(idImageContainer, "idImageContainer");
             yVar.h(governmentIdStepStyle, root3, navigationBar2, title, body, cameraButton, uploadButton, idImage, idImageContainer, viewEnvironment);
         }
@@ -283,24 +283,24 @@ public final class y implements gn.b {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void k(y yVar, View view) {
-        yVar.f49724r.invoke();
+        yVar.f49725r.invoke();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void l(y yVar, View view) {
-        yVar.f49725s.invoke();
+        yVar.f49726s.invoke();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit m(y yVar) {
-        yVar.f49726t.invoke();
-        return Unit.f31987a;
+        yVar.f49727t.invoke();
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit n(y yVar) {
-        yVar.f49727u.invoke();
-        return Unit.f31987a;
+        yVar.f49728u.invoke();
+        return Unit.f31988a;
     }
 
     @Override // gn.b
@@ -316,7 +316,7 @@ public final class y implements gn.b {
             return false;
         }
         y yVar = (y) obj;
-        if (Intrinsics.areEqual(this.f49718d, yVar.f49718d) && Intrinsics.areEqual(this.f49719e, yVar.f49719e) && Intrinsics.areEqual(this.f49720i, yVar.f49720i) && Intrinsics.areEqual(this.f49721o, yVar.f49721o) && Intrinsics.areEqual(this.f49722p, yVar.f49722p) && Intrinsics.areEqual(this.f49723q, yVar.f49723q) && Intrinsics.areEqual(this.f49724r, yVar.f49724r) && Intrinsics.areEqual(this.f49725s, yVar.f49725s) && Intrinsics.areEqual(this.f49726t, yVar.f49726t) && Intrinsics.areEqual(this.f49727u, yVar.f49727u) && Intrinsics.areEqual(this.f49728v, yVar.f49728v) && Intrinsics.areEqual(this.f49729w, yVar.f49729w) && Intrinsics.areEqual(this.f49730x, yVar.f49730x) && Intrinsics.areEqual(this.f49731y, yVar.f49731y) && this.f49732z == yVar.f49732z) {
+        if (Intrinsics.areEqual(this.f49719d, yVar.f49719d) && Intrinsics.areEqual(this.f49720e, yVar.f49720e) && Intrinsics.areEqual(this.f49721i, yVar.f49721i) && Intrinsics.areEqual(this.f49722o, yVar.f49722o) && Intrinsics.areEqual(this.f49723p, yVar.f49723p) && Intrinsics.areEqual(this.f49724q, yVar.f49724q) && Intrinsics.areEqual(this.f49725r, yVar.f49725r) && Intrinsics.areEqual(this.f49726s, yVar.f49726s) && Intrinsics.areEqual(this.f49727t, yVar.f49727t) && Intrinsics.areEqual(this.f49728u, yVar.f49728u) && Intrinsics.areEqual(this.f49729v, yVar.f49729v) && Intrinsics.areEqual(this.f49730w, yVar.f49730w) && Intrinsics.areEqual(this.f49731x, yVar.f49731x) && Intrinsics.areEqual(this.f49732y, yVar.f49732y) && this.f49733z == yVar.f49733z) {
             return true;
         }
         return false;
@@ -325,45 +325,45 @@ public final class y implements gn.b {
     public int hashCode() {
         int hashCode;
         int hashCode2;
-        int hashCode3 = ((((((((((((((((((this.f49718d.hashCode() * 31) + this.f49719e.hashCode()) * 31) + this.f49720i.hashCode()) * 31) + this.f49721o.hashCode()) * 31) + this.f49722p.hashCode()) * 31) + this.f49723q.hashCode()) * 31) + this.f49724r.hashCode()) * 31) + this.f49725s.hashCode()) * 31) + this.f49726t.hashCode()) * 31) + this.f49727u.hashCode()) * 31;
-        String str = this.f49728v;
+        int hashCode3 = ((((((((((((((((((this.f49719d.hashCode() * 31) + this.f49720e.hashCode()) * 31) + this.f49721i.hashCode()) * 31) + this.f49722o.hashCode()) * 31) + this.f49723p.hashCode()) * 31) + this.f49724q.hashCode()) * 31) + this.f49725r.hashCode()) * 31) + this.f49726s.hashCode()) * 31) + this.f49727t.hashCode()) * 31) + this.f49728u.hashCode()) * 31;
+        String str = this.f49729v;
         int i10 = 0;
         if (str == null) {
             hashCode = 0;
         } else {
             hashCode = str.hashCode();
         }
-        int hashCode4 = (((hashCode3 + hashCode) * 31) + this.f49729w.hashCode()) * 31;
-        StepStyles.GovernmentIdStepStyle governmentIdStepStyle = this.f49730x;
+        int hashCode4 = (((hashCode3 + hashCode) * 31) + this.f49730w.hashCode()) * 31;
+        StepStyles.GovernmentIdStepStyle governmentIdStepStyle = this.f49731x;
         if (governmentIdStepStyle == null) {
             hashCode2 = 0;
         } else {
             hashCode2 = governmentIdStepStyle.hashCode();
         }
         int i11 = (hashCode4 + hashCode2) * 31;
-        RemoteImage remoteImage = this.f49731y;
+        RemoteImage remoteImage = this.f49732y;
         if (remoteImage != null) {
             i10 = remoteImage.hashCode();
         }
-        return ((i11 + i10) * 31) + Integer.hashCode(this.f49732z);
+        return ((i11 + i10) * 31) + Integer.hashCode(this.f49733z);
     }
 
     public String toString() {
-        List list = this.f49718d;
-        String str = this.f49719e;
-        String str2 = this.f49720i;
-        String str3 = this.f49721o;
-        String str4 = this.f49722p;
-        jq.a aVar = this.f49723q;
-        Function0 function0 = this.f49724r;
-        Function0 function02 = this.f49725s;
-        Function0 function03 = this.f49726t;
-        Function0 function04 = this.f49727u;
-        String str5 = this.f49728v;
-        Function0 function05 = this.f49729w;
-        StepStyles.GovernmentIdStepStyle governmentIdStepStyle = this.f49730x;
-        RemoteImage remoteImage = this.f49731y;
-        int i10 = this.f49732z;
+        List list = this.f49719d;
+        String str = this.f49720e;
+        String str2 = this.f49721i;
+        String str3 = this.f49722o;
+        String str4 = this.f49723p;
+        jq.a aVar = this.f49724q;
+        Function0 function0 = this.f49725r;
+        Function0 function02 = this.f49726s;
+        Function0 function03 = this.f49727t;
+        Function0 function04 = this.f49728u;
+        String str5 = this.f49729v;
+        Function0 function05 = this.f49730w;
+        StepStyles.GovernmentIdStepStyle governmentIdStepStyle = this.f49731x;
+        RemoteImage remoteImage = this.f49732y;
+        int i10 = this.f49733z;
         return "ChooseCaptureMethodView(captureOptions=" + list + ", title=" + str + ", body=" + str2 + ", cameraText=" + str3 + ", uploadButtonText=" + str4 + ", navigationState=" + aVar + ", onCameraCaptureClick=" + function0 + ", onUploadClick=" + function02 + ", onBack=" + function03 + ", onCancel=" + function04 + ", error=" + str5 + ", onErrorDismissed=" + function05 + ", styles=" + governmentIdStepStyle + ", pictographAsset=" + remoteImage + ", localAsset=" + i10 + ")";
     }
 }

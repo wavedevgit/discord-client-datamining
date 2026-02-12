@@ -10,31 +10,31 @@ import sr.e;
 class h extends e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final TextView.BufferType f48319a;
+    private final TextView.BufferType f48320a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final bw.d f48320b;
+    private final bw.d f48321b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final m f48321c;
+    private final m f48322c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final g f48322d;
+    private final g f48323d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f48323e;
+    private final List f48324e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean f48324f;
+    private final boolean f48325f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h(TextView.BufferType bufferType, e.b bVar, bw.d dVar, m mVar, g gVar, List list, boolean z10) {
-        this.f48319a = bufferType;
-        this.f48320b = dVar;
-        this.f48321c = mVar;
-        this.f48322d = gVar;
-        this.f48323e = list;
-        this.f48324f = z10;
+        this.f48320a = bufferType;
+        this.f48321b = dVar;
+        this.f48322c = mVar;
+        this.f48323d = gVar;
+        this.f48324e = list;
+        this.f48325f = z10;
     }
 
     @Override // sr.e
@@ -44,11 +44,11 @@ class h extends e {
 
     @Override // sr.e
     public void d(TextView textView, Spanned spanned) {
-        for (i iVar : this.f48323e) {
+        for (i iVar : this.f48324e) {
             iVar.j(textView, spanned);
         }
-        textView.setText(spanned, this.f48319a);
-        for (i iVar2 : this.f48323e) {
+        textView.setText(spanned, this.f48320a);
+        for (i iVar2 : this.f48324e) {
             iVar2.d(textView);
         }
     }
@@ -56,26 +56,26 @@ class h extends e {
     @Override // sr.e
     public Spanned e(String str) {
         Spanned g10 = g(f(str));
-        if (TextUtils.isEmpty(g10) && this.f48324f && !TextUtils.isEmpty(str)) {
+        if (TextUtils.isEmpty(g10) && this.f48325f && !TextUtils.isEmpty(str)) {
             return new SpannableStringBuilder(str);
         }
         return g10;
     }
 
     public aw.r f(String str) {
-        for (i iVar : this.f48323e) {
+        for (i iVar : this.f48324e) {
             str = iVar.f(str);
         }
-        return this.f48320b.b(str);
+        return this.f48321b.b(str);
     }
 
     public Spanned g(aw.r rVar) {
-        for (i iVar : this.f48323e) {
+        for (i iVar : this.f48324e) {
             iVar.b(rVar);
         }
-        l a10 = this.f48321c.a();
+        l a10 = this.f48322c.a();
         rVar.a(a10);
-        for (i iVar2 : this.f48323e) {
+        for (i iVar2 : this.f48324e) {
             iVar2.e(rVar, a10);
         }
         return a10.builder().l();

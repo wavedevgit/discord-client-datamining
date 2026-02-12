@@ -13,23 +13,23 @@ final class b extends uc.a {
     private static final class C0762b implements a.f {
 
         /* renamed from: a  reason: collision with root package name */
-        private final t f54460a;
+        private final t f54461a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f54461b;
+        private final int f54462b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final q.a f54462c;
+        private final q.a f54463c;
 
         private long c(l lVar) {
-            while (lVar.g() < lVar.getLength() - 6 && !q.h(lVar, this.f54460a, this.f54461b, this.f54462c)) {
+            while (lVar.g() < lVar.getLength() - 6 && !q.h(lVar, this.f54461a, this.f54462b, this.f54463c)) {
                 lVar.h(1);
             }
             if (lVar.g() >= lVar.getLength() - 6) {
                 lVar.h((int) (lVar.getLength() - lVar.g()));
-                return this.f54460a.f50700j;
+                return this.f54461a.f50701j;
             }
-            return this.f54462c.f50687a;
+            return this.f54463c.f50688a;
         }
 
         @Override // uc.a.f
@@ -37,7 +37,7 @@ final class b extends uc.a {
             long position = lVar.getPosition();
             long c10 = c(lVar);
             long g10 = lVar.g();
-            lVar.h(Math.max(6, this.f54460a.f50693c));
+            lVar.h(Math.max(6, this.f54461a.f50694c));
             long c11 = c(lVar);
             long g11 = lVar.g();
             if (c10 <= j10 && c11 > j10) {
@@ -50,9 +50,9 @@ final class b extends uc.a {
         }
 
         private C0762b(t tVar, int i10) {
-            this.f54460a = tVar;
-            this.f54461b = i10;
-            this.f54462c = new q.a();
+            this.f54461a = tVar;
+            this.f54462b = i10;
+            this.f54463c = new q.a();
         }
     }
 
@@ -63,7 +63,7 @@ final class b extends uc.a {
             public final long a(long j12) {
                 return t.this.i(j12);
             }
-        }, new C0762b(tVar, i10), tVar.f(), 0L, tVar.f50700j, j10, j11, tVar.d(), Math.max(6, tVar.f50693c));
+        }, new C0762b(tVar, i10), tVar.f(), 0L, tVar.f50701j, j10, j11, tVar.d(), Math.max(6, tVar.f50694c));
         Objects.requireNonNull(tVar);
     }
 }

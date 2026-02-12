@@ -11,14 +11,14 @@ import com.google.android.play.core.review.ReviewManager;
 public final class g implements ReviewManager {
 
     /* renamed from: a  reason: collision with root package name */
-    private final l f25706a;
+    private final l f25707a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Handler f25707b = new Handler(Looper.getMainLooper());
+    private final Handler f25708b = new Handler(Looper.getMainLooper());
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g(l lVar) {
-        this.f25706a = lVar;
+        this.f25707a = lVar;
     }
 
     @Override // com.google.android.play.core.review.ReviewManager
@@ -30,13 +30,13 @@ public final class g implements ReviewManager {
         intent.putExtra("confirmation_intent", bVar.a());
         intent.putExtra("window_flags", activity.getWindow().getDecorView().getWindowSystemUiVisibility());
         zg.k kVar = new zg.k();
-        intent.putExtra("result_receiver", new f(this, this.f25707b, kVar));
+        intent.putExtra("result_receiver", new f(this, this.f25708b, kVar));
         activity.startActivity(intent);
         return kVar.a();
     }
 
     @Override // com.google.android.play.core.review.ReviewManager
     public final Task b() {
-        return this.f25706a.a();
+        return this.f25707a.a();
     }
 }

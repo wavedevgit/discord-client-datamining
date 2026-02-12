@@ -3,14 +3,14 @@ package no;
 public final class d implements lr.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f38179a;
+    private final c f38180a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final lr.h f38180b;
+    private final lr.h f38181b;
 
     public d(c cVar, lr.h hVar) {
-        this.f38179a = cVar;
-        this.f38180b = hVar;
+        this.f38180a = cVar;
+        this.f38181b = hVar;
     }
 
     public static g a(c cVar, r rVar) {
@@ -24,6 +24,6 @@ public final class d implements lr.d {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public g get() {
-        return a(this.f38179a, (r) this.f38180b.get());
+        return a(this.f38180a, (r) this.f38181b.get());
     }
 }

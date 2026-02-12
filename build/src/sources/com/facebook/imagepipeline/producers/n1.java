@@ -5,7 +5,7 @@ import com.facebook.imagepipeline.common.ResizeOptions;
 public final class n1 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final n1 f11462a = new n1();
+    public static final n1 f11463a = new n1();
 
     private n1() {
     }
@@ -20,7 +20,7 @@ public final class n1 {
                 return false;
             }
             return true;
-        } else if (a(i10) < resizeOptions.f11063a || a(i11) < resizeOptions.f11064b) {
+        } else if (a(i10) < resizeOptions.f11064a || a(i11) < resizeOptions.f11065b) {
             return false;
         } else {
             return true;

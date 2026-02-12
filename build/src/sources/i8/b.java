@@ -9,10 +9,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b implements i8.a {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f27792b = new a(null);
+    public static final a f27793b = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final File f27793a;
+    private final File f27794a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -41,39 +41,39 @@ public final class b implements i8.a {
     }
 
     public static final b b(File file) {
-        return f27792b.a(file);
+        return f27793b.a(file);
     }
 
     public static final b c(File file) {
-        return f27792b.b(file);
+        return f27793b.b(file);
     }
 
     @Override // i8.a
     public InputStream a() {
-        return new FileInputStream(this.f27793a);
+        return new FileInputStream(this.f27794a);
     }
 
     public final File d() {
-        return this.f27793a;
+        return this.f27794a;
     }
 
     public boolean equals(Object obj) {
         if (obj != null && (obj instanceof b)) {
-            return Intrinsics.areEqual(this.f27793a, ((b) obj).f27793a);
+            return Intrinsics.areEqual(this.f27794a, ((b) obj).f27794a);
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f27793a.hashCode();
+        return this.f27794a.hashCode();
     }
 
     @Override // i8.a
     public long size() {
-        return this.f27793a.length();
+        return this.f27794a.length();
     }
 
     private b(File file) {
-        this.f27793a = file;
+        this.f27794a = file;
     }
 }

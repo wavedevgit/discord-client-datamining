@@ -25,61 +25,61 @@ import th.l;
 public class a extends Drawable implements j.b {
 
     /* renamed from: y  reason: collision with root package name */
-    private static final int f21690y = k.f6943r;
+    private static final int f21691y = k.f6943r;
 
     /* renamed from: z  reason: collision with root package name */
-    private static final int f21691z = bh.b.f6725b;
+    private static final int f21692z = bh.b.f6725b;
 
     /* renamed from: d  reason: collision with root package name */
-    private final WeakReference f21692d;
+    private final WeakReference f21693d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final h f21693e;
+    private final h f21694e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final j f21694i;
+    private final j f21695i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Rect f21695o;
+    private final Rect f21696o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final b f21696p;
+    private final b f21697p;
 
     /* renamed from: q  reason: collision with root package name */
-    private float f21697q;
+    private float f21698q;
 
     /* renamed from: r  reason: collision with root package name */
-    private float f21698r;
+    private float f21699r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f21699s;
+    private int f21700s;
 
     /* renamed from: t  reason: collision with root package name */
-    private float f21700t;
+    private float f21701t;
 
     /* renamed from: u  reason: collision with root package name */
-    private float f21701u;
+    private float f21702u;
 
     /* renamed from: v  reason: collision with root package name */
-    private float f21702v;
+    private float f21703v;
 
     /* renamed from: w  reason: collision with root package name */
-    private WeakReference f21703w;
+    private WeakReference f21704w;
 
     /* renamed from: x  reason: collision with root package name */
-    private WeakReference f21704x;
+    private WeakReference f21705x;
 
     private a(Context context, int i10, int i11, int i12, b.a aVar) {
         int k10;
         int j10;
-        this.f21692d = new WeakReference(context);
+        this.f21693d = new WeakReference(context);
         m.c(context);
-        this.f21695o = new Rect();
+        this.f21696o = new Rect();
         j jVar = new j(this);
-        this.f21694i = jVar;
+        this.f21695i = jVar;
         jVar.g().setTextAlign(Paint.Align.CENTER);
         b bVar = new b(context, i10, i11, i12, aVar);
-        this.f21696p = bVar;
+        this.f21697p = bVar;
         if (D()) {
             k10 = bVar.o();
         } else {
@@ -90,46 +90,46 @@ public class a extends Drawable implements j.b {
         } else {
             j10 = bVar.j();
         }
-        this.f21693e = new h(l.b(context, k10, j10).m());
+        this.f21694e = new h(l.b(context, k10, j10).m());
         R();
     }
 
     private float A(float f10) {
-        return (this.f21698r - this.f21702v) + f10;
+        return (this.f21699r - this.f21703v) + f10;
     }
 
     private int B() {
         int u10;
         int i10;
         if (D()) {
-            u10 = this.f21696p.t();
+            u10 = this.f21697p.t();
         } else {
-            u10 = this.f21696p.u();
+            u10 = this.f21697p.u();
         }
-        if (this.f21696p.f21715k == 1) {
+        if (this.f21697p.f21716k == 1) {
             if (D()) {
-                i10 = this.f21696p.f21714j;
+                i10 = this.f21697p.f21715j;
             } else {
-                i10 = this.f21696p.f21713i;
+                i10 = this.f21697p.f21714i;
             }
             u10 += i10;
         }
-        return u10 + this.f21696p.d();
+        return u10 + this.f21697p.d();
     }
 
     private int C() {
-        int E = this.f21696p.E();
+        int E = this.f21697p.E();
         if (D()) {
-            E = this.f21696p.D();
-            Context context = (Context) this.f21692d.get();
+            E = this.f21697p.D();
+            Context context = (Context) this.f21693d.get();
             if (context != null) {
-                E = ch.a.c(E, E - this.f21696p.v(), ch.a.b(0.0f, 1.0f, 0.3f, 1.0f, qh.c.f(context) - 1.0f));
+                E = ch.a.c(E, E - this.f21697p.v(), ch.a.b(0.0f, 1.0f, 0.3f, 1.0f, qh.c.f(context) - 1.0f));
             }
         }
-        if (this.f21696p.f21715k == 0) {
-            E -= Math.round(this.f21702v);
+        if (this.f21697p.f21716k == 0) {
+            E -= Math.round(this.f21703v);
         }
-        return E + this.f21696p.e();
+        return E + this.f21697p.e();
     }
 
     private boolean D() {
@@ -140,20 +140,20 @@ public class a extends Drawable implements j.b {
     }
 
     private void G() {
-        this.f21694i.g().setAlpha(getAlpha());
+        this.f21695i.g().setAlpha(getAlpha());
         invalidateSelf();
     }
 
     private void H() {
-        ColorStateList valueOf = ColorStateList.valueOf(this.f21696p.g());
-        if (this.f21693e.D() != valueOf) {
-            this.f21693e.f0(valueOf);
+        ColorStateList valueOf = ColorStateList.valueOf(this.f21697p.g());
+        if (this.f21694e.D() != valueOf) {
+            this.f21694e.f0(valueOf);
             invalidateSelf();
         }
     }
 
     private void I() {
-        this.f21694i.l(true);
+        this.f21695i.l(true);
         K();
         a0();
         invalidateSelf();
@@ -161,10 +161,10 @@ public class a extends Drawable implements j.b {
 
     private void J() {
         FrameLayout frameLayout;
-        WeakReference weakReference = this.f21703w;
+        WeakReference weakReference = this.f21704w;
         if (weakReference != null && weakReference.get() != null) {
-            View view = (View) this.f21703w.get();
-            WeakReference weakReference2 = this.f21704x;
+            View view = (View) this.f21704w.get();
+            WeakReference weakReference2 = this.f21705x;
             if (weakReference2 != null) {
                 frameLayout = (FrameLayout) weakReference2.get();
             } else {
@@ -177,20 +177,20 @@ public class a extends Drawable implements j.b {
     private void K() {
         int k10;
         int j10;
-        Context context = (Context) this.f21692d.get();
+        Context context = (Context) this.f21693d.get();
         if (context == null) {
             return;
         }
-        h hVar = this.f21693e;
+        h hVar = this.f21694e;
         if (D()) {
-            k10 = this.f21696p.o();
+            k10 = this.f21697p.o();
         } else {
-            k10 = this.f21696p.k();
+            k10 = this.f21697p.k();
         }
         if (D()) {
-            j10 = this.f21696p.n();
+            j10 = this.f21697p.n();
         } else {
-            j10 = this.f21696p.j();
+            j10 = this.f21697p.j();
         }
         hVar.setShapeAppearanceModel(l.b(context, k10, j10).m());
         invalidateSelf();
@@ -198,24 +198,24 @@ public class a extends Drawable implements j.b {
 
     private void L() {
         d dVar;
-        Context context = (Context) this.f21692d.get();
-        if (context == null || this.f21694i.e() == (dVar = new d(context, this.f21696p.C()))) {
+        Context context = (Context) this.f21693d.get();
+        if (context == null || this.f21695i.e() == (dVar = new d(context, this.f21697p.C()))) {
             return;
         }
-        this.f21694i.k(dVar, context);
+        this.f21695i.k(dVar, context);
         M();
         a0();
         invalidateSelf();
     }
 
     private void M() {
-        this.f21694i.g().setColor(this.f21696p.l());
+        this.f21695i.g().setColor(this.f21697p.l());
         invalidateSelf();
     }
 
     private void N() {
         b0();
-        this.f21694i.l(true);
+        this.f21695i.l(true);
         a0();
         invalidateSelf();
     }
@@ -231,7 +231,7 @@ public class a extends Drawable implements j.b {
     }
 
     private void Q() {
-        setVisible(this.f21696p.I(), false);
+        setVisible(this.f21697p.I(), false);
     }
 
     private void R() {
@@ -255,8 +255,8 @@ public class a extends Drawable implements j.b {
 
     private void a0() {
         View view;
-        Context context = (Context) this.f21692d.get();
-        WeakReference weakReference = this.f21703w;
+        Context context = (Context) this.f21693d.get();
+        WeakReference weakReference = this.f21704w;
         ViewGroup viewGroup = null;
         if (weakReference != null) {
             view = (View) weakReference.get();
@@ -265,10 +265,10 @@ public class a extends Drawable implements j.b {
         }
         if (context != null && view != null) {
             Rect rect = new Rect();
-            rect.set(this.f21695o);
+            rect.set(this.f21696o);
             Rect rect2 = new Rect();
             view.getDrawingRect(rect2);
-            WeakReference weakReference2 = this.f21704x;
+            WeakReference weakReference2 = this.f21705x;
             if (weakReference2 != null) {
                 viewGroup = (ViewGroup) weakReference2.get();
             }
@@ -276,13 +276,13 @@ public class a extends Drawable implements j.b {
                 viewGroup.offsetDescendantRectToMyCoords(view, rect2);
             }
             d(rect2, view);
-            c.g(this.f21695o, this.f21697q, this.f21698r, this.f21701u, this.f21702v);
-            float f10 = this.f21700t;
+            c.g(this.f21696o, this.f21698q, this.f21699r, this.f21702u, this.f21703v);
+            float f10 = this.f21701t;
             if (f10 != -1.0f) {
-                this.f21693e.b0(f10);
+                this.f21694e.b0(f10);
             }
-            if (!rect.equals(this.f21695o)) {
-                this.f21693e.setBounds(this.f21695o);
+            if (!rect.equals(this.f21696o)) {
+                this.f21694e.setBounds(this.f21696o);
             }
         }
     }
@@ -299,9 +299,9 @@ public class a extends Drawable implements j.b {
 
     private void b0() {
         if (q() != -2) {
-            this.f21699s = ((int) Math.pow(10.0d, q() - 1.0d)) - 1;
+            this.f21700s = ((int) Math.pow(10.0d, q() - 1.0d)) - 1;
         } else {
-            this.f21699s = r();
+            this.f21700s = r();
         }
     }
 
@@ -340,16 +340,16 @@ public class a extends Drawable implements j.b {
             float k10 = k(view4.getHeight(), f10);
             float v10 = v(view4.getWidth(), f11);
             if (A < 0.0f) {
-                this.f21698r += Math.abs(A);
+                this.f21699r += Math.abs(A);
             }
             if (p10 < 0.0f) {
-                this.f21697q += Math.abs(p10);
+                this.f21698q += Math.abs(p10);
             }
             if (k10 > 0.0f) {
-                this.f21698r -= Math.abs(k10);
+                this.f21699r -= Math.abs(k10);
             }
             if (v10 > 0.0f) {
-                this.f21697q -= Math.abs(v10);
+                this.f21698q -= Math.abs(v10);
             }
         }
     }
@@ -361,72 +361,72 @@ public class a extends Drawable implements j.b {
         float f13;
         float f14;
         if (D()) {
-            f10 = this.f21696p.f21708d;
+            f10 = this.f21697p.f21709d;
         } else {
-            f10 = this.f21696p.f21707c;
+            f10 = this.f21697p.f21708c;
         }
-        this.f21700t = f10;
+        this.f21701t = f10;
         if (f10 != -1.0f) {
-            this.f21701u = f10;
-            this.f21702v = f10;
+            this.f21702u = f10;
+            this.f21703v = f10;
         } else {
             if (D()) {
-                f11 = this.f21696p.f21711g;
+                f11 = this.f21697p.f21712g;
             } else {
-                f11 = this.f21696p.f21709e;
+                f11 = this.f21697p.f21710e;
             }
-            this.f21701u = Math.round(f11 / 2.0f);
+            this.f21702u = Math.round(f11 / 2.0f);
             if (D()) {
-                f12 = this.f21696p.f21712h;
+                f12 = this.f21697p.f21713h;
             } else {
-                f12 = this.f21696p.f21710f;
+                f12 = this.f21697p.f21711f;
             }
-            this.f21702v = Math.round(f12 / 2.0f);
+            this.f21703v = Math.round(f12 / 2.0f);
         }
         if (D()) {
             String j10 = j();
-            this.f21701u = Math.max(this.f21701u, (this.f21694i.h(j10) / 2.0f) + this.f21696p.i());
-            float max = Math.max(this.f21702v, (this.f21694i.f(j10) / 2.0f) + this.f21696p.m());
-            this.f21702v = max;
-            this.f21701u = Math.max(this.f21701u, max);
+            this.f21702u = Math.max(this.f21702u, (this.f21695i.h(j10) / 2.0f) + this.f21697p.i());
+            float max = Math.max(this.f21703v, (this.f21695i.f(j10) / 2.0f) + this.f21697p.m());
+            this.f21703v = max;
+            this.f21702u = Math.max(this.f21702u, max);
         }
         int C = C();
-        int h10 = this.f21696p.h();
+        int h10 = this.f21697p.h();
         if (h10 != 8388691 && h10 != 8388693) {
-            this.f21698r = rect.top + C;
+            this.f21699r = rect.top + C;
         } else {
-            this.f21698r = rect.bottom - C;
+            this.f21699r = rect.bottom - C;
         }
         int B = B();
-        int h11 = this.f21696p.h();
+        int h11 = this.f21697p.h();
         if (h11 != 8388659 && h11 != 8388691) {
-            if (this.f21696p.f21716l == 0) {
+            if (this.f21697p.f21717l == 0) {
                 if (view.getLayoutDirection() == 0) {
-                    f14 = (rect.right + this.f21701u) - B;
+                    f14 = (rect.right + this.f21702u) - B;
                 } else {
-                    f14 = (rect.left - this.f21701u) + B;
+                    f14 = (rect.left - this.f21702u) + B;
                 }
             } else if (view.getLayoutDirection() == 0) {
-                f14 = (rect.right - this.f21701u) + ((this.f21702v * 2.0f) - B);
+                f14 = (rect.right - this.f21702u) + ((this.f21703v * 2.0f) - B);
             } else {
-                f14 = (rect.left + this.f21701u) - ((this.f21702v * 2.0f) - B);
+                f14 = (rect.left + this.f21702u) - ((this.f21703v * 2.0f) - B);
             }
-            this.f21697q = f14;
+            this.f21698q = f14;
         } else {
-            if (this.f21696p.f21716l == 0) {
+            if (this.f21697p.f21717l == 0) {
                 if (view.getLayoutDirection() == 0) {
-                    f13 = (rect.left + this.f21701u) - ((this.f21702v * 2.0f) - B);
+                    f13 = (rect.left + this.f21702u) - ((this.f21703v * 2.0f) - B);
                 } else {
-                    f13 = (rect.right - this.f21701u) + ((this.f21702v * 2.0f) - B);
+                    f13 = (rect.right - this.f21702u) + ((this.f21703v * 2.0f) - B);
                 }
             } else if (view.getLayoutDirection() == 0) {
-                f13 = (rect.left - this.f21701u) + B;
+                f13 = (rect.left - this.f21702u) + B;
             } else {
-                f13 = (rect.right + this.f21701u) - B;
+                f13 = (rect.right + this.f21702u) - B;
             }
-            this.f21697q = f13;
+            this.f21698q = f13;
         }
-        if (this.f21696p.H()) {
+        if (this.f21697p.H()) {
             b(view);
         } else {
             c(view, null);
@@ -434,12 +434,12 @@ public class a extends Drawable implements j.b {
     }
 
     public static a g(Context context) {
-        return new a(context, 0, f21691z, f21690y, null);
+        return new a(context, 0, f21692z, f21691y, null);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static a h(Context context, b.a aVar) {
-        return new a(context, 0, f21691z, f21690y, aVar);
+        return new a(context, 0, f21692z, f21691y, aVar);
     }
 
     private void i(Canvas canvas) {
@@ -447,15 +447,15 @@ public class a extends Drawable implements j.b {
         String j10 = j();
         if (j10 != null) {
             Rect rect = new Rect();
-            this.f21694i.g().getTextBounds(j10, 0, j10.length(), rect);
-            float exactCenterY = this.f21698r - rect.exactCenterY();
-            float f10 = this.f21697q;
+            this.f21695i.g().getTextBounds(j10, 0, j10.length(), rect);
+            float exactCenterY = this.f21699r - rect.exactCenterY();
+            float f10 = this.f21698q;
             if (rect.bottom <= 0) {
                 round = (int) exactCenterY;
             } else {
                 round = Math.round(exactCenterY);
             }
-            canvas.drawText(j10, f10, round, this.f21694i.g());
+            canvas.drawText(j10, f10, round, this.f21695i.g());
         }
     }
 
@@ -470,48 +470,48 @@ public class a extends Drawable implements j.b {
     }
 
     private float k(float f10, float f11) {
-        return ((this.f21698r + this.f21702v) - f10) + f11;
+        return ((this.f21699r + this.f21703v) - f10) + f11;
     }
 
     private CharSequence n() {
-        return this.f21696p.r();
+        return this.f21697p.r();
     }
 
     private float p(float f10) {
-        return (this.f21697q - this.f21701u) + f10;
+        return (this.f21698q - this.f21702u) + f10;
     }
 
     private String t() {
-        if (this.f21699s != -2 && s() > this.f21699s) {
-            Context context = (Context) this.f21692d.get();
+        if (this.f21700s != -2 && s() > this.f21700s) {
+            Context context = (Context) this.f21693d.get();
             if (context == null) {
                 return "";
             }
-            return String.format(this.f21696p.z(), context.getString(bh.j.f6915p), Integer.valueOf(this.f21699s), "+");
+            return String.format(this.f21697p.z(), context.getString(bh.j.f6915p), Integer.valueOf(this.f21700s), "+");
         }
-        return NumberFormat.getInstance(this.f21696p.z()).format(s());
+        return NumberFormat.getInstance(this.f21697p.z()).format(s());
     }
 
     private String u() {
         Context context;
-        if (this.f21696p.s() == 0 || (context = (Context) this.f21692d.get()) == null) {
+        if (this.f21697p.s() == 0 || (context = (Context) this.f21693d.get()) == null) {
             return null;
         }
-        if (this.f21699s != -2 && s() > this.f21699s) {
-            return context.getString(this.f21696p.p(), Integer.valueOf(this.f21699s));
+        if (this.f21700s != -2 && s() > this.f21700s) {
+            return context.getString(this.f21697p.p(), Integer.valueOf(this.f21700s));
         }
-        return context.getResources().getQuantityString(this.f21696p.s(), s(), Integer.valueOf(s()));
+        return context.getResources().getQuantityString(this.f21697p.s(), s(), Integer.valueOf(s()));
     }
 
     private float v(float f10, float f11) {
-        return ((this.f21697q + this.f21701u) - f10) + f11;
+        return ((this.f21698q + this.f21702u) - f10) + f11;
     }
 
     private String y() {
         String x10 = x();
         int q10 = q();
         if (q10 != -2 && x10 != null && x10.length() > q10) {
-            Context context = (Context) this.f21692d.get();
+            Context context = (Context) this.f21693d.get();
             if (context == null) {
                 return "";
             }
@@ -521,7 +521,7 @@ public class a extends Drawable implements j.b {
     }
 
     private CharSequence z() {
-        CharSequence q10 = this.f21696p.q();
+        CharSequence q10 = this.f21697p.q();
         if (q10 != null) {
             return q10;
         }
@@ -529,59 +529,59 @@ public class a extends Drawable implements j.b {
     }
 
     public boolean E() {
-        if (!this.f21696p.G() && this.f21696p.F()) {
+        if (!this.f21697p.G() && this.f21697p.F()) {
             return true;
         }
         return false;
     }
 
     public boolean F() {
-        return this.f21696p.G();
+        return this.f21697p.G();
     }
 
     public void S(int i10) {
-        this.f21696p.L(i10);
+        this.f21697p.L(i10);
         H();
     }
 
     public void T(int i10) {
-        b bVar = this.f21696p;
-        if (bVar.f21716l != i10) {
-            bVar.f21716l = i10;
+        b bVar = this.f21697p;
+        if (bVar.f21717l != i10) {
+            bVar.f21717l = i10;
             a0();
         }
     }
 
     public void U(int i10) {
-        if (this.f21694i.g().getColor() != i10) {
-            this.f21696p.M(i10);
+        if (this.f21695i.g().getColor() != i10) {
+            this.f21697p.M(i10);
             M();
         }
     }
 
     public void V(int i10) {
         int max = Math.max(0, i10);
-        if (this.f21696p.y() != max) {
-            this.f21696p.N(max);
+        if (this.f21697p.y() != max) {
+            this.f21697p.N(max);
             O();
         }
     }
 
     public void W(String str) {
-        if (!TextUtils.equals(this.f21696p.B(), str)) {
-            this.f21696p.O(str);
+        if (!TextUtils.equals(this.f21697p.B(), str)) {
+            this.f21697p.O(str);
             P();
         }
     }
 
     public void X(boolean z10) {
-        this.f21696p.P(z10);
+        this.f21697p.P(z10);
         Q();
     }
 
     public void Z(View view, FrameLayout frameLayout) {
-        this.f21703w = new WeakReference(view);
-        this.f21704x = new WeakReference(frameLayout);
+        this.f21704w = new WeakReference(view);
+        this.f21705x = new WeakReference(frameLayout);
         Y(view);
         a0();
         invalidateSelf();
@@ -595,7 +595,7 @@ public class a extends Drawable implements j.b {
     @Override // android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
         if (!getBounds().isEmpty() && getAlpha() != 0 && isVisible()) {
-            this.f21693e.draw(canvas);
+            this.f21694e.draw(canvas);
             if (D()) {
                 i(canvas);
             }
@@ -603,32 +603,32 @@ public class a extends Drawable implements j.b {
     }
 
     public void e() {
-        if (this.f21696p.F()) {
-            this.f21696p.a();
+        if (this.f21697p.F()) {
+            this.f21697p.a();
             O();
         }
     }
 
     public void f() {
-        if (this.f21696p.G()) {
-            this.f21696p.b();
+        if (this.f21697p.G()) {
+            this.f21697p.b();
             P();
         }
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getAlpha() {
-        return this.f21696p.f();
+        return this.f21697p.f();
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicHeight() {
-        return this.f21695o.height();
+        return this.f21696o.height();
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicWidth() {
-        return this.f21695o.width();
+        return this.f21696o.width();
     }
 
     @Override // android.graphics.drawable.Drawable
@@ -655,7 +655,7 @@ public class a extends Drawable implements j.b {
     }
 
     public FrameLayout m() {
-        WeakReference weakReference = this.f21704x;
+        WeakReference weakReference = this.f21705x;
         if (weakReference != null) {
             return (FrameLayout) weakReference.get();
         }
@@ -663,7 +663,7 @@ public class a extends Drawable implements j.b {
     }
 
     public int o() {
-        return this.f21696p.u();
+        return this.f21697p.u();
     }
 
     @Override // android.graphics.drawable.Drawable, com.google.android.material.internal.j.b
@@ -672,33 +672,33 @@ public class a extends Drawable implements j.b {
     }
 
     public int q() {
-        return this.f21696p.w();
+        return this.f21697p.w();
     }
 
     public int r() {
-        return this.f21696p.x();
+        return this.f21697p.x();
     }
 
     public int s() {
-        if (this.f21696p.F()) {
-            return this.f21696p.y();
+        if (this.f21697p.F()) {
+            return this.f21697p.y();
         }
         return 0;
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setAlpha(int i10) {
-        this.f21696p.K(i10);
+        this.f21697p.K(i10);
         G();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b.a w() {
-        return this.f21696p.A();
+        return this.f21697p.A();
     }
 
     public String x() {
-        return this.f21696p.B();
+        return this.f21697p.B();
     }
 
     @Override // android.graphics.drawable.Drawable

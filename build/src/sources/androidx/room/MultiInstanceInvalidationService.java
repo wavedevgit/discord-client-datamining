@@ -88,7 +88,7 @@ public final class MultiInstanceInvalidationService extends Service {
                     }
                 }
                 multiInstanceInvalidationService.a().finishBroadcast();
-                Unit unit = Unit.f31987a;
+                Unit unit = Unit.f31988a;
             }
         }
 

@@ -41,7 +41,7 @@ import th.l;
 public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c implements oh.b {
 
     /* renamed from: w0  reason: collision with root package name */
-    private static final int f15297w0 = k.f6936k;
+    private static final int f15298w0 = k.f6936k;
     private boolean A;
     private boolean B;
     private boolean C;
@@ -70,134 +70,134 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
     int Z;
 
     /* renamed from: a0  reason: collision with root package name */
-    int f15298a0;
+    int f15299a0;
 
     /* renamed from: b0  reason: collision with root package name */
-    ViewDragHelper f15299b0;
+    ViewDragHelper f15300b0;
 
     /* renamed from: c0  reason: collision with root package name */
-    private boolean f15300c0;
+    private boolean f15301c0;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f15301d;
+    private int f15302d;
 
     /* renamed from: d0  reason: collision with root package name */
-    private int f15302d0;
+    private int f15303d0;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f15303e;
+    private boolean f15304e;
 
     /* renamed from: e0  reason: collision with root package name */
-    private boolean f15304e0;
+    private boolean f15305e0;
 
     /* renamed from: f0  reason: collision with root package name */
-    private float f15305f0;
+    private float f15306f0;
 
     /* renamed from: g0  reason: collision with root package name */
-    private int f15306g0;
+    private int f15307g0;
 
     /* renamed from: h0  reason: collision with root package name */
-    int f15307h0;
+    int f15308h0;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f15308i;
+    private boolean f15309i;
 
     /* renamed from: i0  reason: collision with root package name */
-    int f15309i0;
+    int f15310i0;
 
     /* renamed from: j0  reason: collision with root package name */
-    WeakReference f15310j0;
+    WeakReference f15311j0;
 
     /* renamed from: k0  reason: collision with root package name */
-    WeakReference f15311k0;
+    WeakReference f15312k0;
 
     /* renamed from: l0  reason: collision with root package name */
-    WeakReference f15312l0;
+    WeakReference f15313l0;
 
     /* renamed from: m0  reason: collision with root package name */
-    WeakReference f15313m0;
+    WeakReference f15314m0;
 
     /* renamed from: n0  reason: collision with root package name */
-    private final ArrayList f15314n0;
+    private final ArrayList f15315n0;
 
     /* renamed from: o  reason: collision with root package name */
-    private float f15315o;
+    private float f15316o;
 
     /* renamed from: o0  reason: collision with root package name */
-    private VelocityTracker f15316o0;
+    private VelocityTracker f15317o0;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f15317p;
+    private int f15318p;
 
     /* renamed from: p0  reason: collision with root package name */
-    oh.e f15318p0;
+    oh.e f15319p0;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f15319q;
+    private int f15320q;
 
     /* renamed from: q0  reason: collision with root package name */
-    int f15320q0;
+    int f15321q0;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f15321r;
+    private boolean f15322r;
 
     /* renamed from: r0  reason: collision with root package name */
-    private int f15322r0;
+    private int f15323r0;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f15323s;
+    private int f15324s;
 
     /* renamed from: s0  reason: collision with root package name */
-    boolean f15324s0;
+    boolean f15325s0;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f15325t;
+    private int f15326t;
 
     /* renamed from: t0  reason: collision with root package name */
-    private Map f15326t0;
+    private Map f15327t0;
 
     /* renamed from: u  reason: collision with root package name */
-    private th.h f15327u;
+    private th.h f15328u;
 
     /* renamed from: u0  reason: collision with root package name */
-    final SparseIntArray f15328u0;
+    final SparseIntArray f15329u0;
 
     /* renamed from: v  reason: collision with root package name */
-    private ColorStateList f15329v;
+    private ColorStateList f15330v;
 
     /* renamed from: v0  reason: collision with root package name */
-    private final ViewDragHelper.c f15330v0;
+    private final ViewDragHelper.c f15331v0;
 
     /* renamed from: w  reason: collision with root package name */
-    private int f15331w;
+    private int f15332w;
 
     /* renamed from: x  reason: collision with root package name */
-    private int f15332x;
+    private int f15333x;
 
     /* renamed from: y  reason: collision with root package name */
-    private int f15333y;
+    private int f15334y;
 
     /* renamed from: z  reason: collision with root package name */
-    private boolean f15334z;
+    private boolean f15335z;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ View f15335d;
+        final /* synthetic */ View f15336d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ int f15336e;
+        final /* synthetic */ int f15337e;
 
         a(View view, int i10) {
-            this.f15335d = view;
-            this.f15336e = i10;
+            this.f15336d = view;
+            this.f15337e = i10;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            BottomSheetBehavior.this.l1(this.f15335d, this.f15336e, false);
+            BottomSheetBehavior.this.l1(this.f15336d, this.f15337e, false);
         }
     }
 
@@ -209,9 +209,9 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
             BottomSheetBehavior.this.d1(5);
-            WeakReference weakReference = BottomSheetBehavior.this.f15310j0;
+            WeakReference weakReference = BottomSheetBehavior.this.f15311j0;
             if (weakReference != null && weakReference.get() != null) {
-                ((View) BottomSheetBehavior.this.f15310j0.get()).requestLayout();
+                ((View) BottomSheetBehavior.this.f15311j0.get()).requestLayout();
             }
         }
     }
@@ -225,8 +225,8 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
         @Override // android.animation.ValueAnimator.AnimatorUpdateListener
         public void onAnimationUpdate(ValueAnimator valueAnimator) {
             float floatValue = ((Float) valueAnimator.getAnimatedValue()).floatValue();
-            if (BottomSheetBehavior.this.f15327u != null) {
-                BottomSheetBehavior.this.f15327u.g0(floatValue);
+            if (BottomSheetBehavior.this.f15328u != null) {
+                BottomSheetBehavior.this.f15328u.g0(floatValue);
             }
         }
     }
@@ -236,10 +236,10 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
     public class d implements p.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ boolean f15340a;
+        final /* synthetic */ boolean f15341a;
 
         d(boolean z10) {
-            this.f15340a = z10;
+            this.f15341a = z10;
         }
 
         /* JADX WARN: Removed duplicated region for block: B:25:0x0089  */
@@ -272,7 +272,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
                 com.google.android.material.bottomsheet.BottomSheetBehavior r3 = com.google.android.material.bottomsheet.BottomSheetBehavior.this
                 int r6 = r12.n()
                 com.google.android.material.bottomsheet.BottomSheetBehavior.W(r3, r6)
-                int r3 = r13.f15938d
+                int r3 = r13.f15939d
                 com.google.android.material.bottomsheet.BottomSheetBehavior r6 = com.google.android.material.bottomsheet.BottomSheetBehavior.this
                 int r6 = com.google.android.material.bottomsheet.BottomSheetBehavior.V(r6)
                 int r3 = r3 + r6
@@ -281,10 +281,10 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
                 boolean r6 = com.google.android.material.bottomsheet.BottomSheetBehavior.X(r6)
                 if (r6 == 0) goto L53
                 if (r2 == 0) goto L4e
-                int r4 = r13.f15937c
+                int r4 = r13.f15938c
                 goto L50
             L4e:
-                int r4 = r13.f15935a
+                int r4 = r13.f15936a
             L50:
                 int r6 = r0.f3304a
                 int r4 = r4 + r6
@@ -293,10 +293,10 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
                 boolean r6 = com.google.android.material.bottomsheet.BottomSheetBehavior.Y(r6)
                 if (r6 == 0) goto L66
                 if (r2 == 0) goto L60
-                int r13 = r13.f15935a
+                int r13 = r13.f15936a
                 goto L62
             L60:
-                int r13 = r13.f15937c
+                int r13 = r13.f15938c
             L62:
                 int r2 = r0.f3306c
                 int r5 = r13 + r2
@@ -342,7 +342,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
             La9:
                 int r13 = r11.getPaddingTop()
                 r11.setPadding(r4, r13, r5, r3)
-                boolean r11 = r10.f15340a
+                boolean r11 = r10.f15341a
                 if (r11 == 0) goto Lbb
                 com.google.android.material.bottomsheet.BottomSheetBehavior r11 = com.google.android.material.bottomsheet.BottomSheetBehavior.this
                 int r13 = r1.f3307d
@@ -351,7 +351,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
                 com.google.android.material.bottomsheet.BottomSheetBehavior r11 = com.google.android.material.bottomsheet.BottomSheetBehavior.this
                 boolean r11 = com.google.android.material.bottomsheet.BottomSheetBehavior.U(r11)
                 if (r11 != 0) goto Lc9
-                boolean r11 = r10.f15340a
+                boolean r11 = r10.f15341a
                 if (r11 == 0) goto Lc8
                 goto Lc9
             Lc8:
@@ -369,7 +369,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
     class e extends ViewDragHelper.c {
 
         /* renamed from: a  reason: collision with root package name */
-        private long f15342a;
+        private long f15343a;
 
         e() {
         }
@@ -377,7 +377,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
         private boolean n(View view) {
             int top = view.getTop();
             BottomSheetBehavior bottomSheetBehavior = BottomSheetBehavior.this;
-            if (top > (bottomSheetBehavior.f15309i0 + bottomSheetBehavior.s0()) / 2) {
+            if (top > (bottomSheetBehavior.f15310i0 + bottomSheetBehavior.s0()) / 2) {
                 return true;
             }
             return false;
@@ -396,7 +396,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
         @Override // androidx.customview.widget.ViewDragHelper.c
         public int e(View view) {
             if (BottomSheetBehavior.this.j0()) {
-                return BottomSheetBehavior.this.f15309i0;
+                return BottomSheetBehavior.this.f15310i0;
             }
             return BottomSheetBehavior.this.S;
         }
@@ -414,25 +414,25 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:10:0x0034, code lost:
-            if (r7.f15343b.g1(r0, (r9 * 100.0f) / r10.f15309i0) != false) goto L5;
+            if (r7.f15344b.g1(r0, (r9 * 100.0f) / r10.f15310i0) != false) goto L5;
          */
         /* JADX WARN: Code restructure failed: missing block: B:13:0x003b, code lost:
-            if (r9 > r7.f15343b.Q) goto L6;
+            if (r9 > r7.f15344b.Q) goto L6;
          */
         /* JADX WARN: Code restructure failed: missing block: B:30:0x0090, code lost:
-            if (java.lang.Math.abs(r8.getTop() - r7.f15343b.s0()) < java.lang.Math.abs(r8.getTop() - r7.f15343b.Q)) goto L5;
+            if (java.lang.Math.abs(r8.getTop() - r7.f15344b.s0()) < java.lang.Math.abs(r8.getTop() - r7.f15344b.Q)) goto L5;
          */
         /* JADX WARN: Code restructure failed: missing block: B:43:0x00cf, code lost:
-            if (r7.f15343b.j1() == false) goto L6;
+            if (r7.f15344b.j1() == false) goto L6;
          */
         /* JADX WARN: Code restructure failed: missing block: B:48:0x00f1, code lost:
-            if (java.lang.Math.abs(r9 - r7.f15343b.P) < java.lang.Math.abs(r9 - r7.f15343b.S)) goto L5;
+            if (java.lang.Math.abs(r9 - r7.f15344b.P) < java.lang.Math.abs(r9 - r7.f15344b.S)) goto L5;
          */
         /* JADX WARN: Code restructure failed: missing block: B:56:0x010d, code lost:
-            if (r7.f15343b.j1() != false) goto L13;
+            if (r7.f15344b.j1() != false) goto L13;
          */
         /* JADX WARN: Code restructure failed: missing block: B:61:0x0127, code lost:
-            if (r7.f15343b.j1() == false) goto L6;
+            if (r7.f15344b.j1() == false) goto L6;
          */
         @Override // androidx.customview.widget.ViewDragHelper.c
         /*
@@ -452,11 +452,11 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
             View view2;
             BottomSheetBehavior bottomSheetBehavior = BottomSheetBehavior.this;
             int i11 = bottomSheetBehavior.Z;
-            if (i11 == 1 || bottomSheetBehavior.f15324s0) {
+            if (i11 == 1 || bottomSheetBehavior.f15325s0) {
                 return false;
             }
-            if (i11 == 3 && bottomSheetBehavior.f15320q0 == i10) {
-                WeakReference weakReference = bottomSheetBehavior.f15313m0;
+            if (i11 == 3 && bottomSheetBehavior.f15321q0 == i10) {
+                WeakReference weakReference = bottomSheetBehavior.f15314m0;
                 if (weakReference != null) {
                     view2 = (View) weakReference.get();
                 } else {
@@ -466,8 +466,8 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
                     return false;
                 }
             }
-            this.f15342a = SystemClock.uptimeMillis();
-            WeakReference weakReference2 = BottomSheetBehavior.this.f15310j0;
+            this.f15343a = SystemClock.uptimeMillis();
+            WeakReference weakReference2 = BottomSheetBehavior.this.f15311j0;
             if (weakReference2 == null || weakReference2.get() != view) {
                 return false;
             }
@@ -480,15 +480,15 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
     public class f implements AccessibilityViewCommand {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ int f15344a;
+        final /* synthetic */ int f15345a;
 
         f(int i10) {
-            this.f15344a = i10;
+            this.f15345a = i10;
         }
 
         @Override // androidx.core.view.accessibility.AccessibilityViewCommand
         public boolean a(View view, AccessibilityViewCommand.a aVar) {
-            BottomSheetBehavior.this.c1(this.f15344a);
+            BottomSheetBehavior.this.c1(this.f15345a);
             return true;
         }
     }
@@ -504,30 +504,30 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
     }
 
     public BottomSheetBehavior() {
-        this.f15301d = 0;
-        this.f15303e = true;
-        this.f15308i = false;
-        this.f15331w = -1;
-        this.f15332x = -1;
+        this.f15302d = 0;
+        this.f15304e = true;
+        this.f15309i = false;
+        this.f15332w = -1;
+        this.f15333x = -1;
         this.M = new i(this, null);
         this.R = 0.5f;
         this.T = -1.0f;
         this.W = true;
         this.X = true;
         this.Z = 4;
-        this.f15298a0 = 4;
-        this.f15305f0 = 0.1f;
-        this.f15314n0 = new ArrayList();
-        this.f15322r0 = -1;
-        this.f15328u0 = new SparseIntArray();
-        this.f15330v0 = new e();
+        this.f15299a0 = 4;
+        this.f15306f0 = 0.1f;
+        this.f15315n0 = new ArrayList();
+        this.f15323r0 = -1;
+        this.f15329u0 = new SparseIntArray();
+        this.f15331v0 = new e();
     }
 
     private boolean A0() {
-        WeakReference weakReference = this.f15310j0;
+        WeakReference weakReference = this.f15311j0;
         if (weakReference != null && weakReference.get() != null) {
             int[] iArr = new int[2];
-            ((View) this.f15310j0.get()).getLocationOnScreen(iArr);
+            ((View) this.f15311j0.get()).getLocationOnScreen(iArr);
             if (iArr[1] == 0) {
                 return true;
             }
@@ -555,7 +555,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
 
     private boolean H0(CoordinatorLayout coordinatorLayout, int i10, int i11) {
         View view;
-        WeakReference weakReference = this.f15312l0;
+        WeakReference weakReference = this.f15313l0;
         if (weakReference != null) {
             view = (View) weakReference.get();
         } else {
@@ -569,7 +569,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
 
     private boolean I0(CoordinatorLayout coordinatorLayout, int i10, int i11) {
         View view;
-        WeakReference weakReference = this.f15313m0;
+        WeakReference weakReference = this.f15314m0;
         if (weakReference != null) {
             view = (View) weakReference.get();
         } else {
@@ -586,31 +586,31 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
     }
 
     private void L0() {
-        this.f15320q0 = -1;
-        this.f15322r0 = -1;
-        VelocityTracker velocityTracker = this.f15316o0;
+        this.f15321q0 = -1;
+        this.f15323r0 = -1;
+        VelocityTracker velocityTracker = this.f15317o0;
         if (velocityTracker != null) {
             velocityTracker.recycle();
-            this.f15316o0 = null;
+            this.f15317o0 = null;
         }
     }
 
     private void M0(h hVar) {
-        int i10 = this.f15301d;
+        int i10 = this.f15302d;
         if (i10 != 0) {
             if (i10 == -1 || (i10 & 1) == 1) {
-                this.f15319q = hVar.f15347o;
+                this.f15320q = hVar.f15348o;
             }
             if (i10 == -1 || (i10 & 2) == 2) {
-                this.f15303e = hVar.f15348p;
+                this.f15304e = hVar.f15349p;
             }
             if (i10 == -1 || (i10 & 4) == 4) {
-                this.U = hVar.f15349q;
+                this.U = hVar.f15350q;
             }
             if (i10 != -1 && (i10 & 8) != 8) {
                 return;
             }
-            this.V = hVar.f15350r;
+            this.V = hVar.f15351r;
         }
     }
 
@@ -628,10 +628,10 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
 
     private void d0() {
         int h02 = h0();
-        if (this.f15303e) {
-            this.S = Math.max(this.f15309i0 - h02, this.P);
+        if (this.f15304e) {
+            this.S = Math.max(this.f15310i0 - h02, this.P);
         } else {
-            this.S = this.f15309i0 - h02;
+            this.S = this.f15310i0 - h02;
         }
     }
 
@@ -646,12 +646,12 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
     }
 
     private void f0() {
-        this.Q = (int) (this.f15309i0 * (1.0f - this.R));
+        this.Q = (int) (this.f15310i0 * (1.0f - this.R));
     }
 
     private void f1(View view) {
         boolean z10;
-        if (Build.VERSION.SDK_INT >= 29 && !C0() && !this.f15321r) {
+        if (Build.VERSION.SDK_INT >= 29 && !C0() && !this.f15322r) {
             z10 = true;
         } else {
             z10 = false;
@@ -665,10 +665,10 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
     private float g0() {
         WeakReference weakReference;
         WindowInsets rootWindowInsets;
-        if (this.f15327u != null && (weakReference = this.f15310j0) != null && weakReference.get() != null && Build.VERSION.SDK_INT >= 31) {
-            View view = (View) this.f15310j0.get();
+        if (this.f15328u != null && (weakReference = this.f15311j0) != null && weakReference.get() != null && Build.VERSION.SDK_INT >= 31) {
+            View view = (View) this.f15311j0.get();
             if (A0() && (rootWindowInsets = view.getRootWindowInsets()) != null) {
-                return Math.max(e0(this.f15327u.M(), rootWindowInsets.getRoundedCorner(0)), e0(this.f15327u.N(), rootWindowInsets.getRoundedCorner(1)));
+                return Math.max(e0(this.f15328u.M(), rootWindowInsets.getRoundedCorner(0)), e0(this.f15328u.N(), rootWindowInsets.getRoundedCorner(1)));
             }
             return 0.0f;
         }
@@ -677,17 +677,17 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
 
     private int h0() {
         int i10;
-        if (this.f15321r) {
-            return Math.min(Math.max(this.f15323s, this.f15309i0 - ((this.f15307h0 * 9) / 16)), this.f15306g0) + this.H;
+        if (this.f15322r) {
+            return Math.min(Math.max(this.f15324s, this.f15310i0 - ((this.f15308h0 * 9) / 16)), this.f15307g0) + this.H;
         }
-        if (!this.f15334z && !this.A && (i10 = this.f15333y) > 0) {
-            return Math.max(this.f15319q, i10 + this.f15325t);
+        if (!this.f15335z && !this.A && (i10 = this.f15334y) > 0) {
+            return Math.max(this.f15320q, i10 + this.f15326t);
         }
-        return this.f15319q + this.H;
+        return this.f15320q + this.H;
     }
 
     private boolean h1() {
-        if (this.f15299b0 != null) {
+        if (this.f15300b0 != null) {
             if (this.W || this.Z == 1) {
                 return true;
             }
@@ -707,7 +707,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
         } else {
             int i13 = this.S;
             f10 = i13 - i10;
-            f11 = this.f15309i0 - i13;
+            f11 = this.f15310i0 - i13;
         }
         return f10 / f11;
     }
@@ -725,10 +725,10 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
             i0.e0(view, 524288);
             i0.e0(view, 262144);
             i0.e0(view, 1048576);
-            int i11 = this.f15328u0.get(i10, -1);
+            int i11 = this.f15329u0.get(i10, -1);
             if (i11 != -1) {
                 i0.e0(view, i11);
-                this.f15328u0.delete(i10);
+                this.f15329u0.delete(i10);
             }
         }
     }
@@ -740,7 +740,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
     /* JADX INFO: Access modifiers changed from: private */
     public void l1(View view, int i10, boolean z10) {
         int y02 = y0(i10);
-        ViewDragHelper viewDragHelper = this.f15299b0;
+        ViewDragHelper viewDragHelper = this.f15300b0;
         if (viewDragHelper != null && (!z10 ? viewDragHelper.Q(view, view.getLeft(), y02) : viewDragHelper.O(view.getLeft(), y02))) {
             d1(2);
             o1(i10, true);
@@ -755,24 +755,24 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
             return;
         }
         th.h hVar = new th.h(this.K);
-        this.f15327u = hVar;
+        this.f15328u = hVar;
         hVar.T(context);
-        ColorStateList colorStateList = this.f15329v;
+        ColorStateList colorStateList = this.f15330v;
         if (colorStateList != null) {
-            this.f15327u.f0(colorStateList);
+            this.f15328u.f0(colorStateList);
             return;
         }
         TypedValue typedValue = new TypedValue();
         context.getTheme().resolveAttribute(16842801, typedValue, true);
-        this.f15327u.setTint(typedValue.data);
+        this.f15328u.setTint(typedValue.data);
     }
 
     private void m1() {
-        WeakReference weakReference = this.f15310j0;
+        WeakReference weakReference = this.f15311j0;
         if (weakReference != null) {
             n1((View) weakReference.get(), 0);
         }
-        WeakReference weakReference2 = this.f15311k0;
+        WeakReference weakReference2 = this.f15312k0;
         if (weakReference2 != null) {
             n1((View) weakReference2.get(), 1);
         }
@@ -789,8 +789,8 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
         if (view != null) {
             k0(view, i10);
             int i11 = 6;
-            if (!this.f15303e && this.Z != 6) {
-                this.f15328u0.put(i10, b0(view, j.f6900a, 6));
+            if (!this.f15304e && this.Z != 6) {
+                this.f15329u0.put(i10, b0(view, j.f6900a, 6));
             }
             if (this.U && E0() && this.Z != 5) {
                 K0(view, AccessibilityNodeInfoCompat.a.f3474y, 5);
@@ -805,13 +805,13 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
                     K0(view, AccessibilityNodeInfoCompat.a.f3472w, 3);
                     return;
                 }
-                if (this.f15303e) {
+                if (this.f15304e) {
                     i11 = 3;
                 }
                 K0(view, AccessibilityNodeInfoCompat.a.f3472w, i11);
                 return;
             }
-            if (this.f15303e) {
+            if (this.f15304e) {
                 i11 = 4;
             }
             K0(view, AccessibilityNodeInfoCompat.a.f3473x, i11);
@@ -821,7 +821,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
     private void o1(int i10, boolean z10) {
         boolean B0;
         ValueAnimator valueAnimator;
-        if (i10 != 2 && this.L != (B0 = B0()) && this.f15327u != null) {
+        if (i10 != 2 && this.L != (B0 = B0()) && this.f15328u != null) {
             this.L = B0;
             float f10 = 1.0f;
             if (z10 && (valueAnimator = this.N) != null) {
@@ -829,7 +829,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
                     this.N.reverse();
                     return;
                 }
-                float E = this.f15327u.E();
+                float E = this.f15328u.E();
                 if (B0) {
                     f10 = g0();
                 }
@@ -841,7 +841,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
             if (valueAnimator2 != null && valueAnimator2.isRunning()) {
                 this.N.cancel();
             }
-            th.h hVar = this.f15327u;
+            th.h hVar = this.f15328u;
             if (this.L) {
                 f10 = g0();
             }
@@ -851,36 +851,36 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
 
     private void p1(boolean z10) {
         Map map;
-        WeakReference weakReference = this.f15310j0;
+        WeakReference weakReference = this.f15311j0;
         if (weakReference != null) {
             ViewParent parent = ((View) weakReference.get()).getParent();
             if (parent instanceof CoordinatorLayout) {
                 CoordinatorLayout coordinatorLayout = (CoordinatorLayout) parent;
                 int childCount = coordinatorLayout.getChildCount();
                 if (z10) {
-                    if (this.f15326t0 == null) {
-                        this.f15326t0 = new HashMap(childCount);
+                    if (this.f15327t0 == null) {
+                        this.f15327t0 = new HashMap(childCount);
                     } else {
                         return;
                     }
                 }
                 for (int i10 = 0; i10 < childCount; i10++) {
                     View childAt = coordinatorLayout.getChildAt(i10);
-                    if (childAt != this.f15310j0.get()) {
+                    if (childAt != this.f15311j0.get()) {
                         if (z10) {
-                            this.f15326t0.put(childAt, Integer.valueOf(childAt.getImportantForAccessibility()));
-                            if (this.f15308i) {
+                            this.f15327t0.put(childAt, Integer.valueOf(childAt.getImportantForAccessibility()));
+                            if (this.f15309i) {
                                 childAt.setImportantForAccessibility(4);
                             }
-                        } else if (this.f15308i && (map = this.f15326t0) != null && map.containsKey(childAt)) {
-                            childAt.setImportantForAccessibility(((Integer) this.f15326t0.get(childAt)).intValue());
+                        } else if (this.f15309i && (map = this.f15327t0) != null && map.containsKey(childAt)) {
+                            childAt.setImportantForAccessibility(((Integer) this.f15327t0.get(childAt)).intValue());
                         }
                     }
                 }
                 if (!z10) {
-                    this.f15326t0 = null;
-                } else if (this.f15308i) {
-                    ((View) this.f15310j0.get()).sendAccessibilityEvent(8);
+                    this.f15327t0 = null;
+                } else if (this.f15309i) {
+                    ((View) this.f15311j0.get()).sendAccessibilityEvent(8);
                 }
             }
         }
@@ -901,9 +901,9 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
     /* JADX INFO: Access modifiers changed from: private */
     public void q1(boolean z10) {
         View view;
-        if (this.f15310j0 != null) {
+        if (this.f15311j0 != null) {
             d0();
-            if (this.Z == 4 && (view = (View) this.f15310j0.get()) != null) {
+            if (this.Z == 4 && (view = (View) this.f15311j0.get()) != null) {
                 if (z10) {
                     c1(4);
                 } else {
@@ -938,7 +938,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
                     }
                     throw new IllegalArgumentException("Invalid state to get top offset: " + i10);
                 }
-                return this.f15309i0;
+                return this.f15310i0;
             }
             return this.S;
         }
@@ -946,12 +946,12 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
     }
 
     private float z0() {
-        VelocityTracker velocityTracker = this.f15316o0;
+        VelocityTracker velocityTracker = this.f15317o0;
         if (velocityTracker == null) {
             return 0.0f;
         }
-        velocityTracker.computeCurrentVelocity(1000, this.f15315o);
-        return this.f15316o0.getYVelocity(this.f15320q0);
+        velocityTracker.computeCurrentVelocity(1000, this.f15316o);
+        return this.f15317o0.getYVelocity(this.f15321q0);
     }
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
@@ -959,14 +959,14 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
         h hVar = (h) parcelable;
         super.B(coordinatorLayout, view, hVar.a());
         M0(hVar);
-        int i10 = hVar.f15346i;
+        int i10 = hVar.f15347i;
         if (i10 != 1 && i10 != 2) {
             this.Z = i10;
-            this.f15298a0 = i10;
+            this.f15299a0 = i10;
             return;
         }
         this.Z = 4;
-        this.f15298a0 = 4;
+        this.f15299a0 = 4;
     }
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
@@ -975,7 +975,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
     }
 
     public boolean C0() {
-        return this.f15334z;
+        return this.f15335z;
     }
 
     public boolean D0() {
@@ -984,8 +984,8 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
     public boolean E(CoordinatorLayout coordinatorLayout, View view, View view2, View view3, int i10, int i11) {
-        this.f15302d0 = 0;
-        this.f15304e0 = false;
+        this.f15303d0 = 0;
+        this.f15305e0 = false;
         if ((i10 & 2) == 0) {
             return false;
         }
@@ -1031,19 +1031,19 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
         Lf:
             boolean r3 = r2.G0()
             if (r3 == 0) goto L24
-            java.lang.ref.WeakReference r3 = r2.f15313m0
+            java.lang.ref.WeakReference r3 = r2.f15314m0
             if (r3 == 0) goto L23
             java.lang.Object r3 = r3.get()
             if (r5 != r3) goto L23
-            boolean r3 = r2.f15304e0
+            boolean r3 = r2.f15305e0
             if (r3 != 0) goto L24
         L23:
             return
         L24:
-            int r3 = r2.f15302d0
+            int r3 = r2.f15303d0
             r5 = 6
             if (r3 <= 0) goto L39
-            boolean r3 = r2.f15303e
+            boolean r3 = r2.f15304e
             if (r3 == 0) goto L2f
             goto Laa
         L2f:
@@ -1060,11 +1060,11 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
             r0 = 5
             goto Laa
         L49:
-            int r3 = r2.f15302d0
+            int r3 = r2.f15303d0
             r6 = 4
             if (r3 != 0) goto L8e
             int r3 = r4.getTop()
-            boolean r1 = r2.f15303e
+            boolean r1 = r2.f15304e
             if (r1 == 0) goto L68
             int r5 = r2.P
             int r5 = r3 - r5
@@ -1095,7 +1095,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
             if (r0 >= r3) goto L92
             goto La9
         L8e:
-            boolean r3 = r2.f15303e
+            boolean r3 = r2.f15304e
             if (r3 == 0) goto L94
         L92:
             r0 = r6
@@ -1114,7 +1114,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
         Laa:
             r3 = 0
             r2.l1(r4, r0, r3)
-            r2.f15304e0 = r3
+            r2.f15305e0 = r3
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: com.google.android.material.bottomsheet.BottomSheetBehavior.G(androidx.coordinatorlayout.widget.CoordinatorLayout, android.view.View, android.view.View, int):void");
@@ -1134,23 +1134,23 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
             return true;
         }
         if (h1()) {
-            this.f15299b0.F(motionEvent);
+            this.f15300b0.F(motionEvent);
         }
         if (actionMasked == 0) {
             L0();
         }
-        if (this.f15316o0 == null) {
-            this.f15316o0 = VelocityTracker.obtain();
+        if (this.f15317o0 == null) {
+            this.f15317o0 = VelocityTracker.obtain();
         }
-        this.f15316o0.addMovement(motionEvent);
-        if (h1() && actionMasked == 2 && !this.f15300c0 && Math.abs(this.f15322r0 - motionEvent.getY()) > this.f15299b0.z()) {
-            this.f15299b0.b(view, motionEvent.getPointerId(motionEvent.getActionIndex()));
+        this.f15317o0.addMovement(motionEvent);
+        if (h1() && actionMasked == 2 && !this.f15301c0 && Math.abs(this.f15323r0 - motionEvent.getY()) > this.f15300b0.z()) {
+            this.f15300b0.b(view, motionEvent.getPointerId(motionEvent.getActionIndex()));
         }
-        return !this.f15300c0;
+        return !this.f15301c0;
     }
 
     public void J0(g gVar) {
-        this.f15314n0.remove(gVar);
+        this.f15315n0.remove(gVar);
     }
 
     public void O0(boolean z10) {
@@ -1172,14 +1172,14 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
 
     public void R0(boolean z10) {
         int i10;
-        if (this.f15303e == z10) {
+        if (this.f15304e == z10) {
             return;
         }
-        this.f15303e = z10;
-        if (this.f15310j0 != null) {
+        this.f15304e = z10;
+        if (this.f15311j0 != null) {
             d0();
         }
-        if (this.f15303e && this.Z == 6) {
+        if (this.f15304e && this.Z == 6) {
             i10 = 3;
         } else {
             i10 = this.Z;
@@ -1190,13 +1190,13 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
     }
 
     public void S0(boolean z10) {
-        this.f15334z = z10;
+        this.f15335z = z10;
     }
 
     public void T0(float f10) {
         if (f10 > 0.0f && f10 < 1.0f) {
             this.R = f10;
-            if (this.f15310j0 != null) {
+            if (this.f15311j0 != null) {
                 f0();
                 return;
             }
@@ -1216,11 +1216,11 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
     }
 
     public void V0(int i10) {
-        this.f15332x = i10;
+        this.f15333x = i10;
     }
 
     public void W0(int i10) {
-        this.f15331w = i10;
+        this.f15332w = i10;
     }
 
     public void X0(int i10) {
@@ -1229,27 +1229,27 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
 
     public final void Y0(int i10, boolean z10) {
         if (i10 == -1) {
-            if (!this.f15321r) {
-                this.f15321r = true;
+            if (!this.f15322r) {
+                this.f15322r = true;
             } else {
                 return;
             }
-        } else if (!this.f15321r && this.f15319q == i10) {
+        } else if (!this.f15322r && this.f15320q == i10) {
             return;
         } else {
-            this.f15321r = false;
-            this.f15319q = Math.max(0, i10);
+            this.f15322r = false;
+            this.f15320q = Math.max(0, i10);
         }
         q1(z10);
     }
 
     public void Z0(int i10) {
-        this.f15301d = i10;
+        this.f15302d = i10;
     }
 
     @Override // oh.b
     public void a() {
-        oh.e eVar = this.f15318p0;
+        oh.e eVar = this.f15319p0;
         if (eVar == null) {
             return;
         }
@@ -1257,12 +1257,12 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
     }
 
     public void a1(int i10) {
-        this.f15317p = i10;
+        this.f15318p = i10;
     }
 
     @Override // oh.b
     public void b(BackEventCompat backEventCompat) {
-        oh.e eVar = this.f15318p0;
+        oh.e eVar = this.f15319p0;
         if (eVar == null) {
             return;
         }
@@ -1275,7 +1275,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
 
     @Override // oh.b
     public void c(BackEventCompat backEventCompat) {
-        oh.e eVar = this.f15318p0;
+        oh.e eVar = this.f15319p0;
         if (eVar == null) {
             return;
         }
@@ -1283,8 +1283,8 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
     }
 
     public void c0(g gVar) {
-        if (!this.f15314n0.contains(gVar)) {
-            this.f15314n0.add(gVar);
+        if (!this.f15315n0.contains(gVar)) {
+            this.f15315n0.add(gVar);
         }
     }
 
@@ -1296,14 +1296,14 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
                 Log.w("BottomSheetBehavior", "Cannot set state: " + i10);
                 return;
             }
-            if (i10 == 6 && this.f15303e && y0(i10) <= this.P) {
+            if (i10 == 6 && this.f15304e && y0(i10) <= this.P) {
                 i11 = 3;
             } else {
                 i11 = i10;
             }
-            WeakReference weakReference = this.f15310j0;
+            WeakReference weakReference = this.f15311j0;
             if (weakReference != null && weakReference.get() != null) {
-                View view = (View) this.f15310j0.get();
+                View view = (View) this.f15311j0.get();
                 N0(view, new a(view, i11));
                 return;
             }
@@ -1324,7 +1324,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
 
     @Override // oh.b
     public void d() {
-        oh.e eVar = this.f15318p0;
+        oh.e eVar = this.f15319p0;
         if (eVar == null) {
             return;
         }
@@ -1332,10 +1332,10 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
         int i10 = 4;
         if (c10 != null && Build.VERSION.SDK_INT >= 34) {
             if (this.U) {
-                this.f15318p0.h(c10, new b());
+                this.f15319p0.h(c10, new b());
                 return;
             }
-            this.f15318p0.i(c10, null);
+            this.f15319p0.i(c10, null);
             c1(4);
             return;
         }
@@ -1350,9 +1350,9 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
         if (this.Z != i10) {
             this.Z = i10;
             if (i10 == 4 || i10 == 3 || i10 == 6 || (this.U && i10 == 5)) {
-                this.f15298a0 = i10;
+                this.f15299a0 = i10;
             }
-            WeakReference weakReference = this.f15310j0;
+            WeakReference weakReference = this.f15311j0;
             if (weakReference == null || (view = (View) weakReference.get()) == null) {
                 return;
             }
@@ -1362,15 +1362,15 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
                 p1(false);
             }
             o1(i10, true);
-            for (int i11 = 0; i11 < this.f15314n0.size(); i11++) {
-                ((g) this.f15314n0.get(i11)).c(view, i10);
+            for (int i11 = 0; i11 < this.f15315n0.size(); i11++) {
+                ((g) this.f15315n0.get(i11)).c(view, i10);
             }
             m1();
         }
     }
 
     public void e1(boolean z10) {
-        this.f15308i = z10;
+        this.f15309i = z10;
     }
 
     public boolean g1(long j10, float f10) {
@@ -1384,7 +1384,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
         if (!E0() || view.getTop() < this.S) {
             return false;
         }
-        if (Math.abs((view.getTop() + (f10 * this.f15305f0)) - this.S) / h0() > 0.5f) {
+        if (Math.abs((view.getTop() + (f10 * this.f15306f0)) - this.S) / h0() > 0.5f) {
             return true;
         }
         return false;
@@ -1397,9 +1397,9 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
     public void k(CoordinatorLayout.f fVar) {
         super.k(fVar);
-        this.f15310j0 = null;
-        this.f15299b0 = null;
-        this.f15318p0 = null;
+        this.f15311j0 = null;
+        this.f15300b0 = null;
+        this.f15319p0 = null;
     }
 
     public boolean k1() {
@@ -1409,9 +1409,9 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
     public void n() {
         super.n();
-        this.f15310j0 = null;
-        this.f15299b0 = null;
-        this.f15318p0 = null;
+        this.f15311j0 = null;
+        this.f15300b0 = null;
+        this.f15319p0 = null;
     }
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
@@ -1425,60 +1425,60 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
             if (actionMasked == 0) {
                 L0();
             }
-            if (this.f15316o0 == null) {
-                this.f15316o0 = VelocityTracker.obtain();
+            if (this.f15317o0 == null) {
+                this.f15317o0 = VelocityTracker.obtain();
             }
-            this.f15316o0.addMovement(motionEvent);
+            this.f15317o0.addMovement(motionEvent);
             if (actionMasked != 0) {
                 if (actionMasked == 1 || actionMasked == 3) {
-                    this.f15324s0 = false;
-                    this.f15320q0 = -1;
-                    if (this.f15300c0) {
-                        this.f15300c0 = false;
+                    this.f15325s0 = false;
+                    this.f15321q0 = -1;
+                    if (this.f15301c0) {
+                        this.f15301c0 = false;
                         return false;
                     }
                 }
             } else {
                 int x10 = (int) motionEvent.getX();
                 int y10 = (int) motionEvent.getY();
-                this.f15322r0 = y10;
+                this.f15323r0 = y10;
                 if (this.Z != 2 && I0(coordinatorLayout, x10, y10)) {
-                    this.f15320q0 = motionEvent.getPointerId(motionEvent.getActionIndex());
-                    if (!H0(coordinatorLayout, x10, this.f15322r0)) {
-                        this.f15324s0 = true;
+                    this.f15321q0 = motionEvent.getPointerId(motionEvent.getActionIndex());
+                    if (!H0(coordinatorLayout, x10, this.f15323r0)) {
+                        this.f15325s0 = true;
                     }
                 }
-                if (this.f15320q0 == -1 && !coordinatorLayout.A(view, x10, this.f15322r0)) {
+                if (this.f15321q0 == -1 && !coordinatorLayout.A(view, x10, this.f15323r0)) {
                     z10 = true;
                 } else {
                     z10 = false;
                 }
-                this.f15300c0 = z10;
+                this.f15301c0 = z10;
             }
-            if (!this.f15300c0 && (viewDragHelper = this.f15299b0) != null && viewDragHelper.P(motionEvent)) {
+            if (!this.f15301c0 && (viewDragHelper = this.f15300b0) != null && viewDragHelper.P(motionEvent)) {
                 return true;
             }
-            WeakReference weakReference = this.f15313m0;
+            WeakReference weakReference = this.f15314m0;
             if (weakReference != null) {
                 view2 = (View) weakReference.get();
             } else {
                 view2 = null;
             }
-            if (actionMasked != 2 || view2 == null || this.f15300c0 || this.Z == 1 || coordinatorLayout.A(view2, (int) motionEvent.getX(), (int) motionEvent.getY()) || this.f15299b0 == null || (i10 = this.f15322r0) == -1 || Math.abs(i10 - motionEvent.getY()) <= this.f15299b0.z()) {
+            if (actionMasked != 2 || view2 == null || this.f15301c0 || this.Z == 1 || coordinatorLayout.A(view2, (int) motionEvent.getX(), (int) motionEvent.getY()) || this.f15300b0 == null || (i10 = this.f15323r0) == -1 || Math.abs(i10 - motionEvent.getY()) <= this.f15300b0.z()) {
                 return false;
             }
             return true;
         }
-        this.f15300c0 = true;
+        this.f15301c0 = true;
         return false;
     }
 
     void o0(int i10) {
-        View view = (View) this.f15310j0.get();
-        if (view != null && !this.f15314n0.isEmpty()) {
+        View view = (View) this.f15311j0.get();
+        if (view != null && !this.f15315n0.isEmpty()) {
             float i02 = i0(i10);
-            for (int i11 = 0; i11 < this.f15314n0.size(); i11++) {
-                ((g) this.f15314n0.get(i11)).b(view, i02);
+            for (int i11 = 0; i11 < this.f15315n0.size(); i11++) {
+                ((g) this.f15315n0.get(i11)).b(view, i02);
             }
         }
     }
@@ -1488,23 +1488,23 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
         if (coordinatorLayout.getFitsSystemWindows() && !view.getFitsSystemWindows()) {
             view.setFitsSystemWindows(true);
         }
-        if (this.f15310j0 == null) {
-            this.f15323s = coordinatorLayout.getResources().getDimensionPixelSize(bh.d.f6792j);
+        if (this.f15311j0 == null) {
+            this.f15324s = coordinatorLayout.getResources().getDimensionPixelSize(bh.d.f6792j);
             f1(view);
             i0.E0(view, new com.google.android.material.bottomsheet.c(view));
-            this.f15310j0 = new WeakReference(view);
-            this.f15318p0 = new oh.e(view);
-            th.h hVar = this.f15327u;
+            this.f15311j0 = new WeakReference(view);
+            this.f15319p0 = new oh.e(view);
+            th.h hVar = this.f15328u;
             if (hVar != null) {
                 view.setBackground(hVar);
-                th.h hVar2 = this.f15327u;
+                th.h hVar2 = this.f15328u;
                 float f10 = this.T;
                 if (f10 == -1.0f) {
                     f10 = view.getElevation();
                 }
                 hVar2.e0(f10);
             } else {
-                ColorStateList colorStateList = this.f15329v;
+                ColorStateList colorStateList = this.f15330v;
                 if (colorStateList != null) {
                     i0.p0(view, colorStateList);
                 }
@@ -1514,35 +1514,35 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
                 view.setImportantForAccessibility(1);
             }
         }
-        if (this.f15299b0 == null) {
-            this.f15299b0 = ViewDragHelper.o(coordinatorLayout, this.f15330v0);
+        if (this.f15300b0 == null) {
+            this.f15300b0 = ViewDragHelper.o(coordinatorLayout, this.f15331v0);
         }
         int top = view.getTop();
         coordinatorLayout.I(view, i10);
-        this.f15307h0 = coordinatorLayout.getWidth();
-        this.f15309i0 = coordinatorLayout.getHeight();
+        this.f15308h0 = coordinatorLayout.getWidth();
+        this.f15310i0 = coordinatorLayout.getHeight();
         int height = view.getHeight();
-        this.f15306g0 = height;
-        int i11 = this.f15309i0;
+        this.f15307g0 = height;
+        int i11 = this.f15310i0;
         int i12 = i11 - height;
         int i13 = this.I;
         if (i12 < i13) {
             if (this.D) {
-                int i14 = this.f15332x;
+                int i14 = this.f15333x;
                 if (i14 != -1) {
                     i11 = Math.min(i11, i14);
                 }
-                this.f15306g0 = i11;
+                this.f15307g0 = i11;
             } else {
                 int i15 = i11 - i13;
-                int i16 = this.f15332x;
+                int i16 = this.f15333x;
                 if (i16 != -1) {
                     i15 = Math.min(i15, i16);
                 }
-                this.f15306g0 = i15;
+                this.f15307g0 = i15;
             }
         }
-        this.P = Math.max(0, this.f15309i0 - this.f15306g0);
+        this.P = Math.max(0, this.f15310i0 - this.f15307g0);
         f0();
         d0();
         int i17 = this.Z;
@@ -1551,16 +1551,16 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
         } else if (i17 == 6) {
             i0.V(view, this.Q);
         } else if (this.U && i17 == 5) {
-            i0.V(view, this.f15309i0);
+            i0.V(view, this.f15310i0);
         } else if (i17 == 4) {
             i0.V(view, this.S);
         } else if (i17 == 1 || i17 == 2) {
             i0.V(view, top - view.getTop());
         }
         o1(this.Z, false);
-        this.f15313m0 = new WeakReference(p0(view));
-        for (int i18 = 0; i18 < this.f15314n0.size(); i18++) {
-            ((g) this.f15314n0.get(i18)).a(view);
+        this.f15314m0 = new WeakReference(p0(view));
+        for (int i18 = 0; i18 < this.f15315n0.size(); i18++) {
+            ((g) this.f15315n0.get(i18)).a(view);
         }
         return true;
     }
@@ -1588,14 +1588,14 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
     public boolean q(CoordinatorLayout coordinatorLayout, View view, int i10, int i11, int i12, int i13) {
         ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) view.getLayoutParams();
-        view.measure(r0(i10, coordinatorLayout.getPaddingLeft() + coordinatorLayout.getPaddingRight() + marginLayoutParams.leftMargin + marginLayoutParams.rightMargin + i11, this.f15331w, marginLayoutParams.width), r0(i12, coordinatorLayout.getPaddingTop() + coordinatorLayout.getPaddingBottom() + marginLayoutParams.topMargin + marginLayoutParams.bottomMargin + i13, this.f15332x, marginLayoutParams.height));
+        view.measure(r0(i10, coordinatorLayout.getPaddingLeft() + coordinatorLayout.getPaddingRight() + marginLayoutParams.leftMargin + marginLayoutParams.rightMargin + i11, this.f15332w, marginLayoutParams.width), r0(i12, coordinatorLayout.getPaddingTop() + coordinatorLayout.getPaddingBottom() + marginLayoutParams.topMargin + marginLayoutParams.bottomMargin + i13, this.f15333x, marginLayoutParams.height));
         return true;
     }
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
     public boolean s(CoordinatorLayout coordinatorLayout, View view, View view2, float f10, float f11) {
         WeakReference weakReference;
-        if (!G0() || (weakReference = this.f15313m0) == null || view2 != weakReference.get() || ((this.Z == 3 || this.Y) && !super.s(coordinatorLayout, view, view2, f10, f11))) {
+        if (!G0() || (weakReference = this.f15314m0) == null || view2 != weakReference.get() || ((this.Z == 3 || this.Y) && !super.s(coordinatorLayout, view, view2, f10, f11))) {
             return false;
         }
         return true;
@@ -1603,7 +1603,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
 
     public int s0() {
         int i10;
-        if (this.f15303e) {
+        if (this.f15304e) {
             return this.P;
         }
         int i11 = this.O;
@@ -1623,7 +1623,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
     public void u(CoordinatorLayout coordinatorLayout, View view, View view2, int i10, int i11, int[] iArr, int i12) {
         View view3;
         if (i12 != 1) {
-            WeakReference weakReference = this.f15313m0;
+            WeakReference weakReference = this.f15314m0;
             if (weakReference != null) {
                 view3 = (View) weakReference.get();
             } else {
@@ -1633,7 +1633,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
                 int top = view.getTop();
                 int i13 = top - i11;
                 if (i11 > 0) {
-                    if (!this.f15304e0 && !this.X && view2 == view3 && view2.canScrollVertically(1)) {
+                    if (!this.f15305e0 && !this.X && view2 == view3 && view2.canScrollVertically(1)) {
                         this.Y = true;
                         return;
                     } else if (i13 < s0()) {
@@ -1650,7 +1650,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
                     }
                 } else if (i11 < 0) {
                     boolean canScrollVertically = view2.canScrollVertically(-1);
-                    if (!this.f15304e0 && !this.X && view2 == view3 && canScrollVertically) {
+                    if (!this.f15305e0 && !this.X && view2 == view3 && canScrollVertically) {
                         this.Y = true;
                         return;
                     } else if (!canScrollVertically) {
@@ -1669,8 +1669,8 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
                     }
                 }
                 o0(view.getTop());
-                this.f15302d0 = i11;
-                this.f15304e0 = true;
+                this.f15303d0 = i11;
+                this.f15305e0 = true;
                 this.Y = false;
             }
         }
@@ -1678,18 +1678,18 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public th.h u0() {
-        return this.f15327u;
+        return this.f15328u;
     }
 
     public int v0() {
-        return this.f15332x;
+        return this.f15333x;
     }
 
     public int w0() {
-        if (this.f15321r) {
+        if (this.f15322r) {
             return -1;
         }
-        return this.f15319q;
+        return this.f15320q;
     }
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
@@ -1705,13 +1705,13 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
     public class i {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f15351a;
+        private int f15352a;
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f15352b;
+        private boolean f15353b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Runnable f15353c;
+        private final Runnable f15354c;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         class a implements Runnable {
@@ -1720,32 +1720,32 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
 
             @Override // java.lang.Runnable
             public void run() {
-                i.this.f15352b = false;
-                ViewDragHelper viewDragHelper = BottomSheetBehavior.this.f15299b0;
+                i.this.f15353b = false;
+                ViewDragHelper viewDragHelper = BottomSheetBehavior.this.f15300b0;
                 if (viewDragHelper != null && viewDragHelper.m(true)) {
                     i iVar = i.this;
-                    iVar.c(iVar.f15351a);
+                    iVar.c(iVar.f15352a);
                     return;
                 }
                 i iVar2 = i.this;
                 BottomSheetBehavior bottomSheetBehavior = BottomSheetBehavior.this;
                 if (bottomSheetBehavior.Z == 2) {
-                    bottomSheetBehavior.d1(iVar2.f15351a);
+                    bottomSheetBehavior.d1(iVar2.f15352a);
                 }
             }
         }
 
         private i() {
-            this.f15353c = new a();
+            this.f15354c = new a();
         }
 
         void c(int i10) {
-            WeakReference weakReference = BottomSheetBehavior.this.f15310j0;
+            WeakReference weakReference = BottomSheetBehavior.this.f15311j0;
             if (weakReference != null && weakReference.get() != null) {
-                this.f15351a = i10;
-                if (!this.f15352b) {
-                    ((View) BottomSheetBehavior.this.f15310j0.get()).postOnAnimation(this.f15353c);
-                    this.f15352b = true;
+                this.f15352a = i10;
+                if (!this.f15353b) {
+                    ((View) BottomSheetBehavior.this.f15311j0.get()).postOnAnimation(this.f15354c);
+                    this.f15353b = true;
                 }
             }
         }
@@ -1761,19 +1761,19 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
         public static final Parcelable.Creator<h> CREATOR = new a();
 
         /* renamed from: i  reason: collision with root package name */
-        final int f15346i;
+        final int f15347i;
 
         /* renamed from: o  reason: collision with root package name */
-        int f15347o;
+        int f15348o;
 
         /* renamed from: p  reason: collision with root package name */
-        boolean f15348p;
+        boolean f15349p;
 
         /* renamed from: q  reason: collision with root package name */
-        boolean f15349q;
+        boolean f15350q;
 
         /* renamed from: r  reason: collision with root package name */
-        boolean f15350r;
+        boolean f15351r;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         class a implements Parcelable.ClassLoaderCreator {
@@ -1801,60 +1801,60 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
 
         public h(Parcel parcel, ClassLoader classLoader) {
             super(parcel, classLoader);
-            this.f15346i = parcel.readInt();
-            this.f15347o = parcel.readInt();
-            this.f15348p = parcel.readInt() == 1;
-            this.f15349q = parcel.readInt() == 1;
-            this.f15350r = parcel.readInt() == 1;
+            this.f15347i = parcel.readInt();
+            this.f15348o = parcel.readInt();
+            this.f15349p = parcel.readInt() == 1;
+            this.f15350q = parcel.readInt() == 1;
+            this.f15351r = parcel.readInt() == 1;
         }
 
         @Override // u2.a, android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
             super.writeToParcel(parcel, i10);
-            parcel.writeInt(this.f15346i);
-            parcel.writeInt(this.f15347o);
-            parcel.writeInt(this.f15348p ? 1 : 0);
-            parcel.writeInt(this.f15349q ? 1 : 0);
-            parcel.writeInt(this.f15350r ? 1 : 0);
+            parcel.writeInt(this.f15347i);
+            parcel.writeInt(this.f15348o);
+            parcel.writeInt(this.f15349p ? 1 : 0);
+            parcel.writeInt(this.f15350q ? 1 : 0);
+            parcel.writeInt(this.f15351r ? 1 : 0);
         }
 
         public h(Parcelable parcelable, BottomSheetBehavior bottomSheetBehavior) {
             super(parcelable);
-            this.f15346i = bottomSheetBehavior.Z;
-            this.f15347o = bottomSheetBehavior.f15319q;
-            this.f15348p = bottomSheetBehavior.f15303e;
-            this.f15349q = bottomSheetBehavior.U;
-            this.f15350r = bottomSheetBehavior.V;
+            this.f15347i = bottomSheetBehavior.Z;
+            this.f15348o = bottomSheetBehavior.f15320q;
+            this.f15349p = bottomSheetBehavior.f15304e;
+            this.f15350q = bottomSheetBehavior.U;
+            this.f15351r = bottomSheetBehavior.V;
         }
     }
 
     public BottomSheetBehavior(@NonNull Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         int i10;
-        this.f15301d = 0;
-        this.f15303e = true;
-        this.f15308i = false;
-        this.f15331w = -1;
-        this.f15332x = -1;
+        this.f15302d = 0;
+        this.f15304e = true;
+        this.f15309i = false;
+        this.f15332w = -1;
+        this.f15333x = -1;
         this.M = new i(this, null);
         this.R = 0.5f;
         this.T = -1.0f;
         this.W = true;
         this.X = true;
         this.Z = 4;
-        this.f15298a0 = 4;
-        this.f15305f0 = 0.1f;
-        this.f15314n0 = new ArrayList();
-        this.f15322r0 = -1;
-        this.f15328u0 = new SparseIntArray();
-        this.f15330v0 = new e();
-        this.f15325t = context.getResources().getDimensionPixelSize(bh.d.f6805p0);
+        this.f15299a0 = 4;
+        this.f15306f0 = 0.1f;
+        this.f15315n0 = new ArrayList();
+        this.f15323r0 = -1;
+        this.f15329u0 = new SparseIntArray();
+        this.f15331v0 = new e();
+        this.f15326t = context.getResources().getDimensionPixelSize(bh.d.f6805p0);
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, bh.l.f7073m0);
         if (obtainStyledAttributes.hasValue(bh.l.f7112q0)) {
-            this.f15329v = qh.c.a(context, obtainStyledAttributes, bh.l.f7112q0);
+            this.f15330v = qh.c.a(context, obtainStyledAttributes, bh.l.f7112q0);
         }
         if (obtainStyledAttributes.hasValue(bh.l.J0)) {
-            this.K = l.e(context, attributeSet, bh.b.f6731e, f15297w0).m();
+            this.K = l.e(context, attributeSet, bh.b.f6731e, f15298w0).m();
         }
         m0(context);
         n0();
@@ -1895,6 +1895,6 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.c imp
         this.G = obtainStyledAttributes.getBoolean(bh.l.E0, false);
         this.J = obtainStyledAttributes.getBoolean(bh.l.K0, true);
         obtainStyledAttributes.recycle();
-        this.f15315o = ViewConfiguration.get(context).getScaledMaximumFlingVelocity();
+        this.f15316o = ViewConfiguration.get(context).getScaledMaximumFlingVelocity();
     }
 }

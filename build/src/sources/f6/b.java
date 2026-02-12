@@ -3,7 +3,7 @@ package f6;
 public interface b {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final b f23604f = new a();
+    public static final b f23605f = new a();
 
     void g();
 

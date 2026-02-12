@@ -23,22 +23,22 @@ public final class InputNumberComponent implements k5, v4, v, e0 {
     public static final Parcelable.Creator<InputNumberComponent> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f20670d;
+    private final String f20671d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Number f20671e;
+    private final Number f20672e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f20672i;
+    private final JsonLogicBoolean f20673i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final JsonLogicBoolean f20673o;
+    private final JsonLogicBoolean f20674o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final List f20674p;
+    private final List f20675p;
 
     /* renamed from: q  reason: collision with root package name */
-    private i f20675q;
+    private i f20676q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -58,26 +58,26 @@ public final class InputNumberComponent implements k5, v4, v, e0 {
 
     public InputNumberComponent(String name, Number number, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2) {
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f20670d = name;
-        this.f20671e = number;
-        this.f20672i = jsonLogicBoolean;
-        this.f20673o = jsonLogicBoolean2;
-        this.f20674p = new ArrayList();
-        this.f20675q = new i(number);
+        this.f20671d = name;
+        this.f20672e = number;
+        this.f20673i = jsonLogicBoolean;
+        this.f20674o = jsonLogicBoolean2;
+        this.f20675p = new ArrayList();
+        this.f20676q = new i(number);
     }
 
     public static /* synthetic */ InputNumberComponent e(InputNumberComponent inputNumberComponent, String str, Number number, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = inputNumberComponent.f20670d;
+            str = inputNumberComponent.f20671d;
         }
         if ((i10 & 2) != 0) {
-            number = inputNumberComponent.f20671e;
+            number = inputNumberComponent.f20672e;
         }
         if ((i10 & 4) != 0) {
-            jsonLogicBoolean = inputNumberComponent.f20672i;
+            jsonLogicBoolean = inputNumberComponent.f20673i;
         }
         if ((i10 & 8) != 0) {
-            jsonLogicBoolean2 = inputNumberComponent.f20673o;
+            jsonLogicBoolean2 = inputNumberComponent.f20674o;
         }
         return inputNumberComponent.c(str, number, jsonLogicBoolean, jsonLogicBoolean2);
     }
@@ -88,7 +88,7 @@ public final class InputNumberComponent implements k5, v4, v, e0 {
 
     @Override // pq.v4
     public i b() {
-        return this.f20675q;
+        return this.f20676q;
     }
 
     public final InputNumberComponent c(String name, Number number, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2) {
@@ -98,7 +98,7 @@ public final class InputNumberComponent implements k5, v4, v, e0 {
 
     @Override // pq.e0
     public List d() {
-        return this.f20674p;
+        return this.f20675p;
     }
 
     @Override // android.os.Parcelable
@@ -112,14 +112,14 @@ public final class InputNumberComponent implements k5, v4, v, e0 {
         }
         if (obj instanceof InputNumberComponent) {
             InputNumberComponent inputNumberComponent = (InputNumberComponent) obj;
-            return Intrinsics.areEqual(this.f20670d, inputNumberComponent.f20670d) && Intrinsics.areEqual(this.f20671e, inputNumberComponent.f20671e) && Intrinsics.areEqual(this.f20672i, inputNumberComponent.f20672i) && Intrinsics.areEqual(this.f20673o, inputNumberComponent.f20673o);
+            return Intrinsics.areEqual(this.f20671d, inputNumberComponent.f20671d) && Intrinsics.areEqual(this.f20672e, inputNumberComponent.f20672e) && Intrinsics.areEqual(this.f20673i, inputNumberComponent.f20673i) && Intrinsics.areEqual(this.f20674o, inputNumberComponent.f20674o);
         }
         return false;
     }
 
     public void f(i iVar) {
         Intrinsics.checkNotNullParameter(iVar, "<set-?>");
-        this.f20675q = iVar;
+        this.f20676q = iVar;
     }
 
     @Override // pq.v4
@@ -132,44 +132,44 @@ public final class InputNumberComponent implements k5, v4, v, e0 {
 
     @Override // pq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f20673o;
+        return this.f20674o;
     }
 
     @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f20672i;
+        return this.f20673i;
     }
 
     @Override // pq.k5
     public String getName() {
-        return this.f20670d;
+        return this.f20671d;
     }
 
     public int hashCode() {
-        int hashCode = this.f20670d.hashCode() * 31;
-        Number number = this.f20671e;
+        int hashCode = this.f20671d.hashCode() * 31;
+        Number number = this.f20672e;
         int hashCode2 = (hashCode + (number == null ? 0 : number.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f20672i;
+        JsonLogicBoolean jsonLogicBoolean = this.f20673i;
         int hashCode3 = (hashCode2 + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20673o;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20674o;
         return hashCode3 + (jsonLogicBoolean2 != null ? jsonLogicBoolean2.hashCode() : 0);
     }
 
     public String toString() {
-        String str = this.f20670d;
-        Number number = this.f20671e;
-        JsonLogicBoolean jsonLogicBoolean = this.f20672i;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20673o;
+        String str = this.f20671d;
+        Number number = this.f20672e;
+        JsonLogicBoolean jsonLogicBoolean = this.f20673i;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20674o;
         return "InputNumberComponent(name=" + str + ", value=" + number + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f20670d);
-        dest.writeSerializable(this.f20671e);
-        dest.writeParcelable(this.f20672i, i10);
-        dest.writeParcelable(this.f20673o, i10);
+        dest.writeString(this.f20671d);
+        dest.writeSerializable(this.f20672e);
+        dest.writeParcelable(this.f20673i, i10);
+        dest.writeParcelable(this.f20674o, i10);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

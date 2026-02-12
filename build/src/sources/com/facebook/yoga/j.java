@@ -14,9 +14,9 @@ public class j extends YogaNodeJNIBase {
     }
 
     public void u0() {
-        long j10 = this.f12149q;
+        long j10 = this.f12150q;
         if (j10 != 0) {
-            this.f12149q = 0L;
+            this.f12150q = 0L;
             YogaNative.jni_YGNodeFinalizeJNI(j10);
         }
     }

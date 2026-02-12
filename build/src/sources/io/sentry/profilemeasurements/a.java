@@ -16,13 +16,13 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class a implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private Map f29580d;
+    private Map f29581d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f29581e;
+    private String f29582e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Collection f29582i;
+    private Collection f29583i;
 
     /* renamed from: io.sentry.profilemeasurements.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -45,13 +45,13 @@ public final class a implements w1 {
                     } else {
                         String r12 = e3Var.r1();
                         if (r12 != null) {
-                            aVar.f29581e = r12;
+                            aVar.f29582e = r12;
                         }
                     }
                 } else {
                     List k22 = e3Var.k2(iLogger, new b.a());
                     if (k22 != null) {
-                        aVar.f29582i = k22;
+                        aVar.f29583i = k22;
                     }
                 }
             }
@@ -66,7 +66,7 @@ public final class a implements w1 {
     }
 
     public void c(Map map) {
-        this.f29580d = map;
+        this.f29581d = map;
     }
 
     public boolean equals(Object obj) {
@@ -75,7 +75,7 @@ public final class a implements w1 {
         }
         if (obj != null && a.class == obj.getClass()) {
             a aVar = (a) obj;
-            if (y.a(this.f29580d, aVar.f29580d) && this.f29581e.equals(aVar.f29581e) && new ArrayList(this.f29582i).equals(new ArrayList(aVar.f29582i))) {
+            if (y.a(this.f29581d, aVar.f29581d) && this.f29582e.equals(aVar.f29582e) && new ArrayList(this.f29583i).equals(new ArrayList(aVar.f29583i))) {
                 return true;
             }
         }
@@ -83,18 +83,18 @@ public final class a implements w1 {
     }
 
     public int hashCode() {
-        return y.b(this.f29580d, this.f29581e, this.f29582i);
+        return y.b(this.f29581d, this.f29582e, this.f29583i);
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("unit").j(iLogger, this.f29581e);
-        f3Var.e("values").j(iLogger, this.f29582i);
-        Map map = this.f29580d;
+        f3Var.e("unit").j(iLogger, this.f29582e);
+        f3Var.e("values").j(iLogger, this.f29583i);
+        Map map = this.f29581d;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29580d.get(str);
+                Object obj = this.f29581d.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -103,7 +103,7 @@ public final class a implements w1 {
     }
 
     public a(String str, Collection collection) {
-        this.f29581e = str;
-        this.f29582i = collection;
+        this.f29582e = str;
+        this.f29583i = collection;
     }
 }

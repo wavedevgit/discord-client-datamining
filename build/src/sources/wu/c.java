@@ -14,13 +14,13 @@ import okhttp3.OkHttpClient;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f53985a = new c();
+    public static final c f53986a = new c();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final CopyOnWriteArraySet f53986b = new CopyOnWriteArraySet();
+    private static final CopyOnWriteArraySet f53987b = new CopyOnWriteArraySet();
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Map f53987c;
+    private static final Map f53988c;
 
     static {
         String str;
@@ -44,7 +44,7 @@ public final class c {
         Intrinsics.checkNotNullExpressionValue(name3, "TaskRunner::class.java.name");
         linkedHashMap.put(name3, "okhttp.TaskRunner");
         linkedHashMap.put("okhttp3.mockwebserver.MockWebServer", "okhttp.MockWebServer");
-        f53987c = o0.w(linkedHashMap);
+        f53988c = o0.w(linkedHashMap);
     }
 
     private c() {
@@ -53,7 +53,7 @@ public final class c {
     private final void c(String str, String str2) {
         Level level;
         Logger logger = Logger.getLogger(str);
-        if (f53986b.add(logger)) {
+        if (f53987b.add(logger)) {
             logger.setUseParentHandlers(false);
             if (Log.isLoggable(str2, 3)) {
                 level = Level.FINE;
@@ -63,12 +63,12 @@ public final class c {
                 level = Level.WARNING;
             }
             logger.setLevel(level);
-            logger.addHandler(d.f53988a);
+            logger.addHandler(d.f53989a);
         }
     }
 
     private final String d(String str) {
-        String str2 = (String) f53987c.get(str);
+        String str2 = (String) f53988c.get(str);
         if (str2 == null) {
             return StringsKt.x1(str, 23);
         }
@@ -108,7 +108,7 @@ public final class c {
     }
 
     public final void b() {
-        for (Map.Entry entry : f53987c.entrySet()) {
+        for (Map.Entry entry : f53988c.entrySet()) {
             c((String) entry.getKey(), (String) entry.getValue());
         }
     }

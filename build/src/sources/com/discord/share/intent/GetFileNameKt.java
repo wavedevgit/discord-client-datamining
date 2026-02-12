@@ -19,10 +19,10 @@ public final class GetFileNameKt {
         Intrinsics.checkNotNullParameter(uri, "uri");
         String[] strArr = {"_display_name"};
         try {
-            Result.a aVar = Result.f31984e;
+            Result.a aVar = Result.f31985e;
             b10 = Result.b(contentResolver.query(uri, strArr, null, null, null));
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f31984e;
+            Result.a aVar2 = Result.f31985e;
             b10 = Result.b(c.a(th2));
         }
         if (Result.g(b10)) {

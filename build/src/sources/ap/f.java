@@ -169,21 +169,21 @@ public final class f implements o<b> {
         static {
             int[] iArr = new int[v.b.values().length];
             try {
-                iArr[v.b.f24137i.ordinal()] = 1;
+                iArr[v.b.f24138i.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             f5974a = iArr;
             int[] iArr2 = new int[d0.d.values().length];
             try {
-                iArr2[d0.d.f49037d.ordinal()] = 1;
+                iArr2[d0.d.f49038d.ordinal()] = 1;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr2[d0.d.f49038e.ordinal()] = 2;
+                iArr2[d0.d.f49039e.ordinal()] = 2;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr2[d0.d.f49039i.ordinal()] = 3;
+                iArr2[d0.d.f49040i.ordinal()] = 3;
             } catch (NoSuchFieldError unused4) {
             }
             f5975b = iArr2;
@@ -298,7 +298,7 @@ public final class f implements o<b> {
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Continuation continuation) {
-                return ((a) create(continuation)).invokeSuspend(Unit.f31987a);
+                return ((a) create(continuation)).invokeSuspend(Unit.f31988a);
             }
         }
 
@@ -343,7 +343,7 @@ public final class f implements o<b> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f31987a);
+            return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -381,7 +381,7 @@ public final class f implements o<b> {
         String str2;
         String w12;
         this.f5965i.b(new ap.d(this.f5961e, cVar.c()));
-        MultipartBody.b.a aVar = MultipartBody.b.f40321c;
+        MultipartBody.b.a aVar = MultipartBody.b.f40322c;
         MultipartBody.b b10 = aVar.b("data[attributes][fields][" + cVar.a() + "][cameraProperties][label]", vVar.d());
         String str3 = "data[attributes][fields][" + cVar.a() + "][cameraProperties][facing_mode]";
         if (c.f5974a[vVar.b().ordinal()] == 1) {
@@ -423,7 +423,7 @@ public final class f implements o<b> {
         }
         d0 d0Var2 = (d0) CollectionsKt.firstOrNull(cVar.c());
         if (d0Var2 != null && (w12 = d0Var2.w1()) != null) {
-            list.add(MultipartBody.b.f40321c.b("data[attributes][fields][" + cVar.b() + "]", w12));
+            list.add(MultipartBody.b.f40322c.b("data[attributes][fields][" + cVar.b() + "]", w12));
         }
         Iterator it = cVar.c().iterator();
         while (true) {
@@ -446,7 +446,7 @@ public final class f implements o<b> {
                 } else if (i10 != 3) {
                     throw new p();
                 }
-                MultipartBody.b.a aVar2 = MultipartBody.b.f40321c;
+                MultipartBody.b.a aVar2 = MultipartBody.b.f40322c;
                 list.addAll(CollectionsKt.o(aVar2.b("data[attributes][fields][" + cVar.a() + "][files][][page]", str6), aVar2.b("data[attributes][fields][" + cVar.a() + "][files][][capture_method]", d0Var3.g2().toString())));
                 list.addAll(m(cVar, d0Var3.m2()));
                 if (d0Var3 instanceof d0.b) {
@@ -464,9 +464,9 @@ public final class f implements o<b> {
                 }
                 it = it3;
             } else if (this.f5968l != null) {
-                MultipartBody.b.a aVar3 = MultipartBody.b.f40321c;
+                MultipartBody.b.a aVar3 = MultipartBody.b.f40322c;
                 MultipartBody.b b21 = aVar3.b("data[attributes][fields][" + cVar.a() + "][files][][name]", MediaStreamTrack.VIDEO_TRACK_KIND);
-                String lowerCase2 = e.a.f55742e.toString().toLowerCase(Locale.ROOT);
+                String lowerCase2 = e.a.f55743e.toString().toLowerCase(Locale.ROOT);
                 Intrinsics.checkNotNullExpressionValue(lowerCase2, "toLowerCase(...)");
                 list.addAll(CollectionsKt.o(b21, aVar3.b("data[attributes][fields][" + cVar.a() + "][files][][capture-method]", lowerCase2), aVar3.b("data[attributes][fields][" + cVar.a() + "][files][][type]", MediaStreamTrack.VIDEO_TRACK_KIND), aVar3.b("data[attributes][fields][" + cVar.a() + "][files][][page]", "front_and_back"), aVar3.b("data[attributes][fields][" + cVar.a() + "][files][][objectId]", this.f5968l)));
                 return;
@@ -481,9 +481,9 @@ public final class f implements o<b> {
         Iterator it = list.iterator();
         while (it.hasNext()) {
             c0 c0Var = (c0) it.next();
-            MultipartBody.b.a aVar = MultipartBody.b.f40321c;
+            MultipartBody.b.a aVar = MultipartBody.b.f40322c;
             String a10 = cVar.a();
-            CollectionsKt.B(arrayList, CollectionsKt.e(aVar.c("data[attributes][fields][" + a10 + "][files][][frames][]", new File(c0Var.a()).getName(), RequestBody.Companion.a(new File(c0Var.a()), MediaType.f40297e.c(c0Var.b())))));
+            CollectionsKt.B(arrayList, CollectionsKt.e(aVar.c("data[attributes][fields][" + a10 + "][files][][frames][]", new File(c0Var.a()).getName(), RequestBody.Companion.a(new File(c0Var.a()), MediaType.f40298e.c(c0Var.b())))));
         }
         return arrayList;
     }

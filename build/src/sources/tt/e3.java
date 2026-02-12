@@ -10,10 +10,10 @@ import st.e;
 public final class e3 implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e3 f49984a = new e3();
+    public static final e3 f49985a = new e3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f49985b = new g2("kotlin.uuid.Uuid", e.i.f48368a);
+    private static final SerialDescriptor f49986b = new g2("kotlin.uuid.Uuid", e.i.f48369a);
 
     private e3() {
     }
@@ -22,7 +22,7 @@ public final class e3 implements KSerializer {
     /* renamed from: a */
     public xs.a deserialize(Decoder decoder) {
         Intrinsics.checkNotNullParameter(decoder, "decoder");
-        return xs.a.f55148i.c(decoder.z());
+        return xs.a.f55149i.c(decoder.z());
     }
 
     @Override // qt.o
@@ -35,6 +35,6 @@ public final class e3 implements KSerializer {
 
     @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return f49985b;
+        return f49986b;
     }
 }

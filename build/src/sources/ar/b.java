@@ -65,31 +65,31 @@ public final class b implements ViewBinding {
 
     public static b a(View view) {
         View a10;
-        int i10 = f1.f56652a;
+        int i10 = f1.f56653a;
         FrameLayout frameLayout = (FrameLayout) e4.a.a(view, i10);
         if (frameLayout != null) {
-            i10 = f1.f56653b;
+            i10 = f1.f56654b;
             Button button = (Button) e4.a.a(view, i10);
             if (button != null) {
-                i10 = f1.f56654c;
+                i10 = f1.f56655c;
                 ImageView imageView = (ImageView) e4.a.a(view, i10);
                 if (imageView != null) {
-                    i10 = f1.f56656e;
+                    i10 = f1.f56657e;
                     Flow flow = (Flow) e4.a.a(view, i10);
                     if (flow != null) {
-                        i10 = f1.f56667p;
+                        i10 = f1.f56668p;
                         Button button2 = (Button) e4.a.a(view, i10);
-                        if (button2 != null && (a10 = e4.a.a(view, (i10 = f1.f56668q))) != null) {
-                            i10 = f1.f56669r;
+                        if (button2 != null && (a10 = e4.a.a(view, (i10 = f1.f56669q))) != null) {
+                            i10 = f1.f56670r;
                             SignatureView signatureView = (SignatureView) e4.a.a(view, i10);
                             if (signatureView != null) {
-                                i10 = f1.f56670s;
+                                i10 = f1.f56671s;
                                 TextView textView = (TextView) e4.a.a(view, i10);
                                 if (textView != null) {
-                                    i10 = f1.f56671t;
+                                    i10 = f1.f56672t;
                                     TextView textView2 = (TextView) e4.a.a(view, i10);
                                     if (textView2 != null) {
-                                        i10 = f1.f56672u;
+                                        i10 = f1.f56673u;
                                         ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
                                         if (constraintLayout != null) {
                                             return new b((FrameLayout) view, frameLayout, button, imageView, flow, button2, a10, signatureView, textView, textView2, constraintLayout);
@@ -106,7 +106,7 @@ public final class b implements ViewBinding {
     }
 
     public static b c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(g1.f56702b, viewGroup, false);
+        View inflate = layoutInflater.inflate(g1.f56703b, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }

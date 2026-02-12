@@ -27,13 +27,13 @@ import op.b;
 public final class b extends j {
 
     /* renamed from: q  reason: collision with root package name */
-    public static final a f41076q = new a(null);
+    public static final a f41077q = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ gn.f f41077a;
+        private final /* synthetic */ gn.f f41078a;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: op.b$a$a  reason: collision with other inner class name */
@@ -52,7 +52,7 @@ public final class b extends j {
             @Override // kotlin.jvm.functions.Function2
             public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
                 a((kn.f) obj, (a0) obj2);
-                return Unit.f31987a;
+                return Unit.f31988a;
             }
         }
 
@@ -66,7 +66,7 @@ public final class b extends j {
             Intrinsics.checkNotNullParameter(initialEnv, "initialEnv");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
             b bVar = new b(contextForNewView, null, 0, 0, 14, null);
-            bVar.setId(g.f41085b);
+            bVar.setId(g.f41086b);
             bVar.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
             g0.a(bVar, initialRendering, initialEnv, new C0576a(bVar));
             return bVar;
@@ -78,16 +78,16 @@ public final class b extends j {
             Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
             Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f41077a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+            return this.f41078a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
         }
 
         @Override // gn.c0
         public KClass getType() {
-            return this.f41077a.getType();
+            return this.f41078a.getType();
         }
 
         private a() {
-            this.f41077a = new gn.f(Reflection.getOrCreateKotlinClass(c.class), new Function4() { // from class: op.a
+            this.f41078a = new gn.f(Reflection.getOrCreateKotlinClass(c.class), new Function4() { // from class: op.a
                 @Override // kotlin.jvm.functions.Function4
                 public final Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
                     View c10;
@@ -108,12 +108,12 @@ public final class b extends j {
         Object obj2;
         Integer num;
         Intrinsics.checkNotNullParameter(view, "view");
-        Dialog dialog = new Dialog(getContext(), tp.f.f49809a);
+        Dialog dialog = new Dialog(getContext(), tp.f.f49810a);
         Iterator it = s.d(view).iterator();
         while (true) {
             if (it.hasNext()) {
                 obj = it.next();
-                if (((View) obj).getTag(g.f41084a) instanceof Integer) {
+                if (((View) obj).getTag(g.f41085a) instanceof Integer) {
                     break;
                 }
             } else {
@@ -123,7 +123,7 @@ public final class b extends j {
         }
         View view2 = (View) obj;
         if (view2 != null) {
-            obj2 = view2.getTag(g.f41084a);
+            obj2 = view2.getTag(g.f41085a);
         } else {
             obj2 = null;
         }

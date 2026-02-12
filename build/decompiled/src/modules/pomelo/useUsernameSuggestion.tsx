@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var6[var3];
         var3 = var5.bind(var4)(var3);
         var0 = function() { // Environment: var0
-            _fun81839: for (var _fun81839_ip = 0;;) switch (_fun81839_ip) {
+            _fun80821: for (var _fun80821_ip = 0;;) switch (_fun80821_ip) {
                 case 0:
                     var3 = _closure1_slot4;
                     var1 = var3.wasSuggestionsFetched;
@@ -75,8 +75,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
                     if (var1) {
-                        _fun81839_ip = 84;
-                        continue _fun81839
+                        _fun80821_ip = 84;
+                        continue _fun80821
                     }
                 case 32:
                     var1 = 4;
@@ -103,8 +103,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var1 = var4.bind(var5)(var1);
-                    _fun81839_ip = 122;
-                    continue _fun81839;
+                    _fun80821_ip = 122;
+                    continue _fun80821;
                 case 84:
                     var1 = 5;
                     var2 = var2[var1];
@@ -139,4 +139,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useUsernameSuggestion = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 10376, 632, 4109, 10380, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 10194, 632, 4109, 10198, 806, 2]);

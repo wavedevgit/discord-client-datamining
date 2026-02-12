@@ -10,26 +10,26 @@ import kotlin.jvm.internal.Intrinsics;
 public final class n {
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.google.android.material.bottomnavigation.c f19275a;
+    private final com.google.android.material.bottomnavigation.c f19276a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f19276b;
+    private final List f19277b;
 
     public n(com.google.android.material.bottomnavigation.c bottomNavigationView, List tabScreenFragments) {
         Intrinsics.checkNotNullParameter(bottomNavigationView, "bottomNavigationView");
         Intrinsics.checkNotNullParameter(tabScreenFragments, "tabScreenFragments");
-        this.f19275a = bottomNavigationView;
-        this.f19276b = tabScreenFragments;
+        this.f19276a = bottomNavigationView;
+        this.f19277b = tabScreenFragments;
     }
 
     public final void a() {
         int i10 = 0;
-        for (Object obj : this.f19276b) {
+        for (Object obj : this.f19277b) {
             int i11 = i10 + 1;
             if (i10 < 0) {
                 CollectionsKt.v();
             }
-            Menu menu = this.f19275a.getMenu();
+            Menu menu = this.f19276a.getMenu();
             Intrinsics.checkNotNullExpressionValue(menu, "getMenu(...)");
             b(menu.getItem(i10), ((e) obj).x());
             i10 = i11;
@@ -39,7 +39,7 @@ public final class n {
     public final void b(MenuItem menuItem, a tabScreen) {
         Intrinsics.checkNotNullParameter(menuItem, "menuItem");
         Intrinsics.checkNotNullParameter(tabScreen, "tabScreen");
-        com.google.android.material.navigation.d dVar = (com.google.android.material.navigation.d) this.f19275a.findViewById(menuItem.getItemId());
+        com.google.android.material.navigation.d dVar = (com.google.android.material.navigation.d) this.f19276a.findViewById(menuItem.getItemId());
         if (Build.VERSION.SDK_INT >= 26) {
             menuItem.setContentDescription(tabScreen.getTabBarItemAccessibilityLabel());
         }

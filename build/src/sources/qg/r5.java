@@ -5,58 +5,58 @@ import bj.c;
 final class r5 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final r5 f44900a = new r5();
+    static final r5 f44901a = new r5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f44901b;
+    private static final bj.c f44902b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f44902c;
+    private static final bj.c f44903c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f44903d;
+    private static final bj.c f44904d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final bj.c f44904e;
+    private static final bj.c f44905e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final bj.c f44905f;
+    private static final bj.c f44906f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final bj.c f44906g;
+    private static final bj.c f44907g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final bj.c f44907h;
+    private static final bj.c f44908h;
 
     static {
         c.b a10 = bj.c.a("durationMs");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44901b = a10.b(s1Var.b()).a();
+        f44902b = a10.b(s1Var.b()).a();
         c.b a11 = bj.c.a("imageSource");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44902c = a11.b(s1Var2.b()).a();
+        f44903c = a11.b(s1Var2.b()).a();
         c.b a12 = bj.c.a("imageFormat");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44903d = a12.b(s1Var3.b()).a();
+        f44904d = a12.b(s1Var3.b()).a();
         c.b a13 = bj.c.a("imageByteSize");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f44904e = a13.b(s1Var4.b()).a();
+        f44905e = a13.b(s1Var4.b()).a();
         c.b a14 = bj.c.a("imageWidth");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f44905f = a14.b(s1Var5.b()).a();
+        f44906f = a14.b(s1Var5.b()).a();
         c.b a15 = bj.c.a("imageHeight");
         s1 s1Var6 = new s1();
         s1Var6.a(6);
-        f44906g = a15.b(s1Var6.b()).a();
+        f44907g = a15.b(s1Var6.b()).a();
         c.b a16 = bj.c.a("rotationDegrees");
         s1 s1Var7 = new s1();
         s1Var7.a(7);
-        f44907h = a16.b(s1Var7.b()).a();
+        f44908h = a16.b(s1Var7.b()).a();
     }
 
     private r5() {

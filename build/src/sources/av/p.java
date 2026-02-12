@@ -42,7 +42,7 @@ public class p implements Source {
                 int read = this.f6302d.read(S0.f6262a, S0.f6264c, (int) Math.min(j10, 8192 - S0.f6264c));
                 if (read == -1) {
                     if (S0.f6263b == S0.f6264c) {
-                        sink.f40580d = S0.b();
+                        sink.f40581d = S0.b();
                         h0.b(S0);
                         return -1L;
                     }

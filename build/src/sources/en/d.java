@@ -14,10 +14,10 @@ import kotlinx.coroutines.CoroutineScope;
 public final class d implements en.a, h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final en.a f22962a;
+    private final en.a f22963a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final t.b f22963b;
+    private final t.b f22964b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class a extends Lambda implements Function4 {
@@ -31,7 +31,7 @@ public final class d implements en.a, h {
             Intrinsics.checkNotNullParameter(iChild, "iChild");
             Intrinsics.checkNotNullParameter(iKey, "iKey");
             Intrinsics.checkNotNullParameter(iHandler, "iHandler");
-            return d.this.f22962a.b(iChild, obj, iKey, iHandler);
+            return d.this.f22963a.b(iChild, obj, iKey, iHandler);
         }
     }
 
@@ -43,26 +43,26 @@ public final class d implements en.a, h {
         public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f22966d;
+            int f22967d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ Function1 f22967e;
+            final /* synthetic */ Function1 f22968e;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(Function1 function1, Continuation continuation) {
                 super(2, continuation);
-                this.f22967e = function1;
+                this.f22968e = function1;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                return new a(this.f22967e, continuation);
+                return new a(this.f22968e, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 Object f10 = gs.b.f();
-                int i10 = this.f22966d;
+                int i10 = this.f22967d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -71,18 +71,18 @@ public final class d implements en.a, h {
                     }
                 } else {
                     kotlin.c.b(obj);
-                    Function1 function1 = this.f22967e;
-                    this.f22966d = 1;
+                    Function1 function1 = this.f22968e;
+                    this.f22967d = 1;
                     if (function1.invoke(this) == f10) {
                         return f10;
                     }
                 }
-                return Unit.f31987a;
+                return Unit.f31988a;
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
             }
         }
 
@@ -93,13 +93,13 @@ public final class d implements en.a, h {
         public final void a(String iKey, Function1 iSideEffect) {
             Intrinsics.checkNotNullParameter(iKey, "iKey");
             Intrinsics.checkNotNullParameter(iSideEffect, "iSideEffect");
-            d.this.f22962a.a(iKey, new a(iSideEffect, null));
+            d.this.f22963a.a(iKey, new a(iSideEffect, null));
         }
 
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a((String) obj, (Function1) obj2);
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
     }
 
@@ -107,30 +107,30 @@ public final class d implements en.a, h {
     static final class c extends kotlin.coroutines.jvm.internal.k implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f22968d;
+        int f22969d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Function2 f22969e;
+        final /* synthetic */ Function2 f22970e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ d f22970i;
+        final /* synthetic */ d f22971i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(Function2 function2, d dVar, Continuation continuation) {
             super(1, continuation);
-            this.f22969e = function2;
-            this.f22970i = dVar;
+            this.f22970e = function2;
+            this.f22971i = dVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Continuation continuation) {
-            return new c(this.f22969e, this.f22970i, continuation);
+            return new c(this.f22970e, this.f22971i, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = gs.b.f();
-            int i10 = this.f22968d;
+            int i10 = this.f22969d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -139,19 +139,19 @@ public final class d implements en.a, h {
                 }
             } else {
                 kotlin.c.b(obj);
-                Function2 function2 = this.f22969e;
+                Function2 function2 = this.f22970e;
                 CoroutineScope a10 = kotlinx.coroutines.i.a(getContext());
-                this.f22968d = 1;
+                this.f22969d = 1;
                 if (function2.invoke(a10, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
 
         @Override // kotlin.jvm.functions.Function1
         public final Object invoke(Continuation continuation) {
-            return ((c) create(continuation)).invokeSuspend(Unit.f31987a);
+            return ((c) create(continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -165,28 +165,28 @@ public final class d implements en.a, h {
 
         public final void a(r interceptedAction) {
             Intrinsics.checkNotNullParameter(interceptedAction, "interceptedAction");
-            d.this.f22962a.c().d(interceptedAction);
+            d.this.f22963a.c().d(interceptedAction);
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((r) obj);
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
     }
 
     public d(en.a baseRenderContext, t.b interceptor) {
         Intrinsics.checkNotNullParameter(baseRenderContext, "baseRenderContext");
         Intrinsics.checkNotNullParameter(interceptor, "interceptor");
-        this.f22962a = baseRenderContext;
-        this.f22963b = interceptor;
+        this.f22963a = baseRenderContext;
+        this.f22964b = interceptor;
     }
 
     @Override // en.a
     public void a(String key, Function2 sideEffect) {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(sideEffect, "sideEffect");
-        this.f22963b.b(key, new c(sideEffect, this, null), new b());
+        this.f22964b.b(key, new c(sideEffect, this, null), new b());
     }
 
     @Override // en.a
@@ -194,14 +194,14 @@ public final class d implements en.a, h {
         Intrinsics.checkNotNullParameter(child, "child");
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(handler, "handler");
-        return this.f22963b.a(child, obj, key, handler, new a());
+        return this.f22964b.a(child, obj, key, handler, new a());
     }
 
     @Override // en.h
     /* renamed from: f */
     public void d(r value) {
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f22963b.c(value, new C0307d());
+        this.f22964b.c(value, new C0307d());
     }
 
     @Override // en.a

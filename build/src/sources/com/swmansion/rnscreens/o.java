@@ -3,14 +3,14 @@ package com.swmansion.rnscreens;
 public final class o extends n {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f19301a;
+    private final int f19302a;
 
     public o(int i10) {
         super(null);
-        this.f19301a = i10;
+        this.f19302a = i10;
     }
 
     public final int a() {
-        return this.f19301a;
+        return this.f19302a;
     }
 }

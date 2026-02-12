@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/welcome_cta/WelcomeCTAUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function() {
-        _fun56226: for (var _fun56226_ip = 0;;) switch (_fun56226_ip) {
+        _fun56248: for (var _fun56248_ip = 0;;) switch (_fun56248_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var1 = var2.getCurrentUser;
@@ -47,8 +47,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = undefined;
                 var4 = undefined;
                 if (var3) {
-                    _fun56226_ip = 34;
-                    continue _fun56226
+                    _fun56248_ip = 34;
+                    continue _fun56248
                 }
             case 29:
                 var4 = var2.id;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1 != var4;
                 var2 = 0;
                 if (!var1) {
-                    _fun56226_ip = 74;
-                    continue _fun56226
+                    _fun56248_ip = 74;
+                    continue _fun56248
                 }
             case 43:
                 var3 = _closure1_slot0;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.pickHelloSticker = var3;
     var3 = function(arg0) { // Environment: var1
-        _fun56227: for (var _fun56227_ip = 0;;) switch (_fun56227_ip) {
+        _fun56249: for (var _fun56249_ip = 0;;) switch (_fun56249_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var1 = var2.getCurrentUser;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = undefined;
                 var5 = undefined;
                 if (var3) {
-                    _fun56227_ip = 34;
-                    continue _fun56227
+                    _fun56249_ip = 34;
+                    continue _fun56249
                 }
             case 29:
                 var5 = var2.id;
@@ -96,8 +96,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1 != var5;
                 var2 = 0;
                 if (!var1) {
-                    _fun56227_ip = 74;
-                    continue _fun56227
+                    _fun56249_ip = 74;
+                    continue _fun56249
                 }
             case 43:
                 var3 = _closure1_slot0;
@@ -126,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.pickWelcomeSticker = var3;
     var1 = function(arg0, arg1, arg2) { // Environment: var1
-        _fun56228: for (var _fun56228_ip = 0;;) switch (_fun56228_ip) {
+        _fun56250: for (var _fun56250_ip = 0;;) switch (_fun56250_ip) {
             case 0:
                 var8 = arg0;
                 var6 = arg1;
@@ -169,8 +169,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var5 == var6;
                 var5 = undefined;
                 if (var7) {
-                    _fun56228_ip = 180;
-                    continue _fun56228
+                    _fun56250_ip = 180;
+                    continue _fun56250
                 }
             case 175:
                 var5 = var6.id;
@@ -182,4 +182,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.handleWelcomeCtaClicked = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 6781, 660, 21, 6603, 795, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 6797, 660, 21, 6619, 795, 2]);

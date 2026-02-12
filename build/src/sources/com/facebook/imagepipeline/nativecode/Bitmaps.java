@@ -7,7 +7,7 @@ import p8.j;
 public class Bitmaps {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ int f11255a = 0;
+    public static final /* synthetic */ int f11256a = 0;
 
     static {
         b.a();

@@ -3,29 +3,29 @@ package xv;
 public class b extends cw.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f55168a;
+    private final int f55169a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f55169b;
+    private final int f55170b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f55170c;
+    private final boolean f55171c;
 
     public b(int i10, int i11, boolean z10) {
-        this.f55168a = i10;
-        this.f55169b = i11;
-        this.f55170c = z10;
+        this.f55169a = i10;
+        this.f55170b = i11;
+        this.f55171c = z10;
     }
 
     public int e() {
-        return this.f55169b;
+        return this.f55170b;
     }
 
     public int f() {
-        return this.f55168a;
+        return this.f55169a;
     }
 
     public boolean g() {
-        return this.f55170c;
+        return this.f55171c;
     }
 }

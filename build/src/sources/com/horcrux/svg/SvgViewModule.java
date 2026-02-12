@@ -16,16 +16,16 @@ class SvgViewModule extends NativeSvgViewModuleSpec {
     public class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ int f17637d;
+        final /* synthetic */ int f17638d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ ReadableMap f17638e;
+        final /* synthetic */ ReadableMap f17639e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Callback f17639i;
+        final /* synthetic */ Callback f17640i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ int f17640o;
+        final /* synthetic */ int f17641o;
 
         /* renamed from: com.horcrux.svg.SvgViewModule$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -40,7 +40,7 @@ class SvgViewModule extends NativeSvgViewModuleSpec {
                 @Override // java.lang.Runnable
                 public void run() {
                     a aVar = a.this;
-                    SvgViewModule.toDataURL(aVar.f17637d, aVar.f17638e, aVar.f17639i, aVar.f17640o + 1);
+                    SvgViewModule.toDataURL(aVar.f17638d, aVar.f17639e, aVar.f17640i, aVar.f17641o + 1);
                 }
             }
 
@@ -49,7 +49,7 @@ class SvgViewModule extends NativeSvgViewModuleSpec {
 
             @Override // java.lang.Runnable
             public void run() {
-                SvgView svgViewByTag = SvgViewManager.getSvgViewByTag(a.this.f17637d);
+                SvgView svgViewByTag = SvgViewManager.getSvgViewByTag(a.this.f17638d);
                 if (svgViewByTag == null) {
                     return;
                 }
@@ -65,30 +65,30 @@ class SvgViewModule extends NativeSvgViewModuleSpec {
             @Override // java.lang.Runnable
             public void run() {
                 a aVar = a.this;
-                SvgViewModule.toDataURL(aVar.f17637d, aVar.f17638e, aVar.f17639i, aVar.f17640o + 1);
+                SvgViewModule.toDataURL(aVar.f17638d, aVar.f17639e, aVar.f17640i, aVar.f17641o + 1);
             }
         }
 
         a(int i10, ReadableMap readableMap, Callback callback, int i11) {
-            this.f17637d = i10;
-            this.f17638e = readableMap;
-            this.f17639i = callback;
-            this.f17640o = i11;
+            this.f17638d = i10;
+            this.f17639e = readableMap;
+            this.f17640i = callback;
+            this.f17641o = i11;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            SvgView svgViewByTag = SvgViewManager.getSvgViewByTag(this.f17637d);
+            SvgView svgViewByTag = SvgViewManager.getSvgViewByTag(this.f17638d);
             if (svgViewByTag == null) {
-                SvgViewManager.runWhenViewIsAvailable(this.f17637d, new RunnableC0201a());
+                SvgViewManager.runWhenViewIsAvailable(this.f17638d, new RunnableC0201a());
             } else if (svgViewByTag.notRendered()) {
                 svgViewByTag.setToDataUrlTask(new b());
             } else {
-                ReadableMap readableMap = this.f17638e;
+                ReadableMap readableMap = this.f17639e;
                 if (readableMap != null) {
-                    this.f17639i.invoke(svgViewByTag.toDataURL(readableMap.getInt("width"), this.f17638e.getInt("height")));
+                    this.f17640i.invoke(svgViewByTag.toDataURL(readableMap.getInt("width"), this.f17639e.getInt("height")));
                 } else {
-                    this.f17639i.invoke(svgViewByTag.toDataURL());
+                    this.f17640i.invoke(svgViewByTag.toDataURL());
                 }
             }
         }

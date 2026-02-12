@@ -5,7 +5,7 @@ import bj.c;
 final class zb implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final zb f47390a = new zb();
+    static final zb f47391a = new zb();
 
     static {
         c.b a10 = bj.c.a("metric");

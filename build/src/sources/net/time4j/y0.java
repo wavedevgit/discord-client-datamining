@@ -11,11 +11,11 @@ public enum y0 implements bu.n, bu.v {
     
 
     /* renamed from: s  reason: collision with root package name */
-    private static final y0[] f37811s = values();
+    private static final y0[] f37812s = values();
 
     public static y0 h(int i10) {
         if (i10 >= 1 && i10 <= 7) {
-            return f37811s[i10 - 1];
+            return f37812s[i10 - 1];
         }
         throw new IllegalArgumentException("Out of range: " + i10);
     }

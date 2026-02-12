@@ -10,14 +10,14 @@ import java.util.List;
 public class q {
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f12079a;
+    public final String f12080a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final List f12080b;
+    public final List f12081b;
 
     q(String str, List list) {
-        this.f12079a = str;
-        this.f12080b = Collections.unmodifiableList(list);
+        this.f12080a = str;
+        this.f12081b = Collections.unmodifiableList(list);
     }
 
     public static q a(DataInputStream dataInputStream) {

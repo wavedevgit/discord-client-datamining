@@ -17,71 +17,71 @@ import to.n4;
 public final class c implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final FrameLayout f54978a;
+    private final FrameLayout f54979a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final Space f54979b;
+    public final Space f54980b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final FrameLayout f54980c;
+    public final FrameLayout f54981c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final LinearLayout f54981d;
+    public final LinearLayout f54982d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Button f54982e;
+    public final Button f54983e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final ConstraintLayout f54983f;
+    public final ConstraintLayout f54984f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final ThemeableLottieAnimationView f54984g;
+    public final ThemeableLottieAnimationView f54985g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final ConstraintLayout f54985h;
+    public final ConstraintLayout f54986h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final TextView f54986i;
+    public final TextView f54987i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final View f54987j;
+    public final View f54988j;
 
     /* renamed from: k  reason: collision with root package name */
-    public final TextView f54988k;
+    public final TextView f54989k;
 
     /* renamed from: l  reason: collision with root package name */
-    public final TextView f54989l;
+    public final TextView f54990l;
 
     private c(FrameLayout frameLayout, Space space, FrameLayout frameLayout2, LinearLayout linearLayout, Button button, ConstraintLayout constraintLayout, ThemeableLottieAnimationView themeableLottieAnimationView, ConstraintLayout constraintLayout2, TextView textView, View view, TextView textView2, TextView textView3) {
-        this.f54978a = frameLayout;
-        this.f54979b = space;
-        this.f54980c = frameLayout2;
-        this.f54981d = linearLayout;
-        this.f54982e = button;
-        this.f54983f = constraintLayout;
-        this.f54984g = themeableLottieAnimationView;
-        this.f54985h = constraintLayout2;
-        this.f54986i = textView;
-        this.f54987j = view;
-        this.f54988k = textView2;
-        this.f54989l = textView3;
+        this.f54979a = frameLayout;
+        this.f54980b = space;
+        this.f54981c = frameLayout2;
+        this.f54982d = linearLayout;
+        this.f54983e = button;
+        this.f54984f = constraintLayout;
+        this.f54985g = themeableLottieAnimationView;
+        this.f54986h = constraintLayout2;
+        this.f54987i = textView;
+        this.f54988j = view;
+        this.f54989k = textView2;
+        this.f54990l = textView3;
     }
 
     public static c a(View view) {
         View a10;
-        int i10 = m4.f49374e;
+        int i10 = m4.f49375e;
         Space space = (Space) e4.a.a(view, i10);
         if (space != null) {
-            i10 = m4.f49376f;
+            i10 = m4.f49377f;
             FrameLayout frameLayout = (FrameLayout) e4.a.a(view, i10);
             if (frameLayout != null) {
-                i10 = m4.f49378g;
+                i10 = m4.f49379g;
                 LinearLayout linearLayout = (LinearLayout) e4.a.a(view, i10);
                 if (linearLayout != null) {
-                    i10 = m4.f49392n;
+                    i10 = m4.f49393n;
                     Button button = (Button) e4.a.a(view, i10);
                     if (button != null) {
-                        i10 = m4.f49402s;
+                        i10 = m4.f49403s;
                         ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
                         if (constraintLayout != null) {
                             i10 = m4.P;
@@ -90,9 +90,9 @@ public final class c implements ViewBinding {
                                 i10 = m4.Q;
                                 ConstraintLayout constraintLayout2 = (ConstraintLayout) e4.a.a(view, i10);
                                 if (constraintLayout2 != null) {
-                                    i10 = m4.f49397p0;
+                                    i10 = m4.f49398p0;
                                     TextView textView = (TextView) e4.a.a(view, i10);
-                                    if (textView != null && (a10 = e4.a.a(view, (i10 = m4.f49409v0))) != null) {
+                                    if (textView != null && (a10 = e4.a.a(view, (i10 = m4.f49410v0))) != null) {
                                         i10 = m4.C0;
                                         TextView textView2 = (TextView) e4.a.a(view, i10);
                                         if (textView2 != null) {
@@ -114,7 +114,7 @@ public final class c implements ViewBinding {
     }
 
     public static c c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n4.f49538c, viewGroup, false);
+        View inflate = layoutInflater.inflate(n4.f49539c, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -124,6 +124,6 @@ public final class c implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public FrameLayout getRoot() {
-        return this.f54978a;
+        return this.f54979a;
     }
 }

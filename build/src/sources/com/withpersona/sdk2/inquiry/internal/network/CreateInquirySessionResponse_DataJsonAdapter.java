@@ -14,25 +14,25 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateInquirySessionResponse_DataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20187a;
+    private final m.b f20188a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f20188b;
+    private final com.squareup.moshi.h f20189b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.squareup.moshi.h f20189c;
+    private final com.squareup.moshi.h f20190c;
 
     public CreateInquirySessionResponse_DataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a(StackTraceHelper.ID_KEY, "attributes");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20187a = a10;
+        this.f20188a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), StackTraceHelper.ID_KEY);
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20188b = f10;
+        this.f20189b = f10;
         com.squareup.moshi.h f11 = moshi.f(CreateInquirySessionResponse.Attributes.class, x0.d(), "attributes");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f20189c = f11;
+        this.f20190c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -43,14 +43,14 @@ public final class CreateInquirySessionResponse_DataJsonAdapter extends com.squa
         String str = null;
         CreateInquirySessionResponse.Attributes attributes = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20187a);
+            int J = reader.J(this.f20188a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (attributes = (CreateInquirySessionResponse.Attributes) this.f20189c.fromJson(reader)) == null) {
+                    if (J == 1 && (attributes = (CreateInquirySessionResponse.Attributes) this.f20190c.fromJson(reader)) == null) {
                         throw dn.c.x("attributes", "attributes", reader);
                     }
                 } else {
-                    str = (String) this.f20188b.fromJson(reader);
+                    str = (String) this.f20189b.fromJson(reader);
                     if (str == null) {
                         throw dn.c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
                     }
@@ -77,9 +77,9 @@ public final class CreateInquirySessionResponse_DataJsonAdapter extends com.squa
         if (data != null) {
             writer.i();
             writer.J(StackTraceHelper.ID_KEY);
-            this.f20188b.toJson(writer, data.b());
+            this.f20189b.toJson(writer, data.b());
             writer.J("attributes");
-            this.f20189c.toJson(writer, data.a());
+            this.f20190c.toJson(writer, data.a());
             writer.s();
             return;
         }

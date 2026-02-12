@@ -5,21 +5,21 @@ import java.util.ListIterator;
 final class z3 implements ListIterator {
 
     /* renamed from: d  reason: collision with root package name */
-    final ListIterator f15110d;
+    final ListIterator f15111d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ int f15111e;
+    final /* synthetic */ int f15112e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ b4 f15112i;
+    final /* synthetic */ b4 f15113i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public z3(b4 b4Var, int i10) {
         e2 e2Var;
-        this.f15111e = i10;
-        this.f15112i = b4Var;
-        e2Var = b4Var.f14873d;
-        this.f15110d = e2Var.listIterator(i10);
+        this.f15112e = i10;
+        this.f15113i = b4Var;
+        e2Var = b4Var.f14874d;
+        this.f15111d = e2Var.listIterator(i10);
     }
 
     @Override // java.util.ListIterator
@@ -30,32 +30,32 @@ final class z3 implements ListIterator {
 
     @Override // java.util.ListIterator, java.util.Iterator
     public final boolean hasNext() {
-        return this.f15110d.hasNext();
+        return this.f15111d.hasNext();
     }
 
     @Override // java.util.ListIterator
     public final boolean hasPrevious() {
-        return this.f15110d.hasPrevious();
+        return this.f15111d.hasPrevious();
     }
 
     @Override // java.util.ListIterator, java.util.Iterator
     public final /* bridge */ /* synthetic */ Object next() {
-        return (String) this.f15110d.next();
+        return (String) this.f15111d.next();
     }
 
     @Override // java.util.ListIterator
     public final int nextIndex() {
-        return this.f15110d.nextIndex();
+        return this.f15111d.nextIndex();
     }
 
     @Override // java.util.ListIterator
     public final /* bridge */ /* synthetic */ Object previous() {
-        return (String) this.f15110d.previous();
+        return (String) this.f15111d.previous();
     }
 
     @Override // java.util.ListIterator
     public final int previousIndex() {
-        return this.f15110d.previousIndex();
+        return this.f15111d.previousIndex();
     }
 
     @Override // java.util.ListIterator, java.util.Iterator

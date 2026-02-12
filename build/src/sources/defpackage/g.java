@@ -15,7 +15,7 @@ public abstract class g {
         public static final class C0334a extends a {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final C0334a f24603a = new C0334a();
+            public static final C0334a f24604a = new C0334a();
 
             private C0334a() {
                 super(null);
@@ -27,7 +27,7 @@ public abstract class g {
         public static final class b extends a {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final b f24604a = new b();
+            public static final b f24605a = new b();
 
             private b() {
                 super(null);
@@ -39,7 +39,7 @@ public abstract class g {
         public static final class c extends a {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final c f24605a = new c();
+            public static final c f24606a = new c();
 
             private c() {
                 super(null);
@@ -60,32 +60,32 @@ public abstract class g {
     public static final class b extends g {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Object f24606a;
+        private final Object f24607a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public b(Object value) {
             super(null);
             Intrinsics.checkNotNullParameter(value, "value");
-            this.f24606a = value;
+            this.f24607a = value;
         }
 
         public final Object a() {
-            return this.f24606a;
+            return this.f24607a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof b) && Intrinsics.areEqual(this.f24606a, ((b) obj).f24606a);
+            return (obj instanceof b) && Intrinsics.areEqual(this.f24607a, ((b) obj).f24607a);
         }
 
         public int hashCode() {
-            return this.f24606a.hashCode();
+            return this.f24607a.hashCode();
         }
 
         public String toString() {
-            Object obj = this.f24606a;
+            Object obj = this.f24607a;
             return "Success(value=" + obj + ")";
         }
     }

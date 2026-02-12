@@ -4,10 +4,10 @@ package com.google.android.gms.internal.play_billing;
 public abstract class k2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final k2 f14974a = new g2(null);
+    private static final k2 f14975a = new g2(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final k2 f14975b = new i2(null);
+    private static final k2 f14976b = new i2(null);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ k2(j2 j2Var) {
@@ -15,12 +15,12 @@ public abstract class k2 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static k2 c() {
-        return f14974a;
+        return f14975a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static k2 d() {
-        return f14975b;
+        return f14976b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

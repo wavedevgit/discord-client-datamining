@@ -283,7 +283,7 @@ public final class AbstractTypeChecker {
                 if (substitutionSupertypePolicy != null) {
                     TypeSystemContext typeSystemContext2 = typeCheckerState.getTypeSystemContext();
                     for (KotlinTypeMarker kotlinTypeMarker : typeSystemContext2.supertypes(typeSystemContext2.typeConstructor(pop))) {
-                        supertypesDeque.add(substitutionSupertypePolicy.mo1204transformType(typeCheckerState, kotlinTypeMarker));
+                        supertypesDeque.add(substitutionSupertypePolicy.mo1203transformType(typeCheckerState, kotlinTypeMarker));
                     }
                 }
             }
@@ -396,12 +396,12 @@ public final class AbstractTypeChecker {
                 } else {
                     TypeSystemContext typeSystemContext2 = typeCheckerState.getTypeSystemContext();
                     for (KotlinTypeMarker kotlinTypeMarker : typeSystemContext2.supertypes(typeSystemContext2.typeConstructor(pop))) {
-                        RigidTypeMarker mo1204transformType = supertypesPolicy.mo1204transformType(typeCheckerState, kotlinTypeMarker);
-                        if (typeSystemContext.isNothingConstructor(typeSystemContext.typeConstructor(mo1204transformType))) {
+                        RigidTypeMarker mo1203transformType = supertypesPolicy.mo1203transformType(typeCheckerState, kotlinTypeMarker);
+                        if (typeSystemContext.isNothingConstructor(typeSystemContext.typeConstructor(mo1203transformType))) {
                             typeCheckerState.clear();
                             return true;
                         }
-                        supertypesDeque.add(mo1204transformType);
+                        supertypesDeque.add(mo1203transformType);
                     }
                     continue;
                 }
@@ -451,7 +451,7 @@ public final class AbstractTypeChecker {
         while (it.hasNext()) {
             runForkingPoint.fork(new b(typeCheckerState, typeSystemContext, (RigidTypeMarker) it.next(), rigidTypeMarker));
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final boolean r(TypeCheckerState typeCheckerState, TypeSystemContext typeSystemContext, RigidTypeMarker rigidTypeMarker, RigidTypeMarker rigidTypeMarker2) {
@@ -591,7 +591,7 @@ public final class AbstractTypeChecker {
                 if (supertypesPolicy != null) {
                     TypeSystemContext typeSystemContext2 = state.getTypeSystemContext();
                     for (KotlinTypeMarker kotlinTypeMarker : typeSystemContext2.supertypes(typeSystemContext2.typeConstructor(pop))) {
-                        supertypesDeque.add(supertypesPolicy.mo1204transformType(state, kotlinTypeMarker));
+                        supertypesDeque.add(supertypesPolicy.mo1203transformType(state, kotlinTypeMarker));
                     }
                 }
             }
@@ -637,10 +637,10 @@ public final class AbstractTypeChecker {
                     return typeCheckerState2.isErrorTypeEqualsToAnything();
                 }
                 if (effectiveVariance != typeVariance || (!abstractTypeChecker.s(typeSystemContext, type2, type, typeConstructor) && !abstractTypeChecker.s(typeSystemContext, type, type2, typeConstructor))) {
-                    i10 = typeCheckerState2.f34590h;
+                    i10 = typeCheckerState2.f34591h;
                     if (i10 <= 100) {
-                        i11 = typeCheckerState2.f34590h;
-                        typeCheckerState2.f34590h = i11 + 1;
+                        i11 = typeCheckerState2.f34591h;
+                        typeCheckerState2.f34591h = i11 + 1;
                         int i14 = WhenMappings.$EnumSwitchMapping$0[effectiveVariance.ordinal()];
                         if (i14 != 1) {
                             if (i14 != 2) {
@@ -657,8 +657,8 @@ public final class AbstractTypeChecker {
                         } else {
                             equalTypes = abstractTypeChecker.equalTypes(typeCheckerState2, type2, type);
                         }
-                        i12 = typeCheckerState2.f34590h;
-                        typeCheckerState2.f34590h = i12 - 1;
+                        i12 = typeCheckerState2.f34591h;
+                        typeCheckerState2.f34591h = i12 - 1;
                         if (!equalTypes) {
                             return false;
                         }

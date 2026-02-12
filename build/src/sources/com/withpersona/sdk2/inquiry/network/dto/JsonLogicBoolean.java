@@ -178,7 +178,7 @@ public final class JsonLogicBoolean implements Parcelable {
                     return null;
                 }
                 return (Boolean) a11;
-            } else if (Intrinsics.areEqual(a10, g.a.c.f24605a) || Intrinsics.areEqual(a10, g.a.C0334a.f24603a) || Intrinsics.areEqual(a10, g.a.b.f24604a)) {
+            } else if (Intrinsics.areEqual(a10, g.a.c.f24606a) || Intrinsics.areEqual(a10, g.a.C0334a.f24604a) || Intrinsics.areEqual(a10, g.a.b.f24605a)) {
                 return null;
             } else {
                 throw new p();

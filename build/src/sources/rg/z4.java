@@ -5,7 +5,7 @@ import bj.c;
 final class z4 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final z4 f47380a = new z4();
+    static final z4 f47381a = new z4();
 
     static {
         c.b a10 = bj.c.a("errorCode");

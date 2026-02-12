@@ -16,34 +16,34 @@ import org.jetbrains.annotations.NotNull;
 public final class ScreenFooter extends ReactViewGroup {
 
     /* renamed from: u  reason: collision with root package name */
-    public static final a f19068u = new a(null);
+    public static final a f19069u = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final ReactContext f19069d;
+    private final ReactContext f19070d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f19070e;
+    private int f19071e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f19071i;
+    private int f19072i;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f19072o;
+    private boolean f19073o;
 
     /* renamed from: p  reason: collision with root package name */
-    private float f19073p;
+    private float f19074p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f19074q;
+    private int f19075q;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f19075r;
+    private boolean f19076r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final c f19076s;
+    private final c f19077s;
 
     /* renamed from: t  reason: collision with root package name */
-    private b f19077t;
+    private b f19078t;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -63,27 +63,27 @@ public final class ScreenFooter extends ReactViewGroup {
         @Override // com.google.android.material.bottomsheet.BottomSheetBehavior.g
         public void b(View bottomSheet, float f10) {
             Intrinsics.checkNotNullParameter(bottomSheet, "bottomSheet");
-            ScreenFooter.this.f19073p = Math.max(f10, 0.0f);
-            if (!ScreenFooter.this.f19072o) {
+            ScreenFooter.this.f19074p = Math.max(f10, 0.0f);
+            if (!ScreenFooter.this.f19073o) {
                 ScreenFooter screenFooter = ScreenFooter.this;
-                int i10 = screenFooter.f19070e;
+                int i10 = screenFooter.f19071e;
                 int reactHeight = ScreenFooter.this.getReactHeight();
                 ScreenFooter screenFooter2 = ScreenFooter.this;
-                screenFooter.o(i10, reactHeight, screenFooter2.v(screenFooter2.f19073p), ScreenFooter.this.f19074q);
+                screenFooter.o(i10, reactHeight, screenFooter2.v(screenFooter2.f19074p), ScreenFooter.this.f19075q);
             }
         }
 
         @Override // com.google.android.material.bottomsheet.BottomSheetBehavior.g
         public void c(View bottomSheet, int i10) {
             Intrinsics.checkNotNullParameter(bottomSheet, "bottomSheet");
-            if (!pn.p.f42843a.b(i10)) {
+            if (!pn.p.f42844a.b(i10)) {
                 return;
             }
             if (i10 == 3 || i10 == 4 || i10 == 6) {
                 ScreenFooter screenFooter = ScreenFooter.this;
-                screenFooter.o(screenFooter.f19070e, ScreenFooter.this.getReactHeight(), ScreenFooter.this.u(i10), ScreenFooter.this.f19074q);
+                screenFooter.o(screenFooter.f19071e, ScreenFooter.this.getReactHeight(), ScreenFooter.this.u(i10), ScreenFooter.this.f19075q);
             }
-            ScreenFooter.this.f19071i = i10;
+            ScreenFooter.this.f19072i = i10;
         }
     }
 
@@ -96,19 +96,19 @@ public final class ScreenFooter extends ReactViewGroup {
         @Override // androidx.core.view.y0.b
         public void onEnd(androidx.core.view.y0 animation) {
             Intrinsics.checkNotNullParameter(animation, "animation");
-            ScreenFooter.this.f19072o = false;
+            ScreenFooter.this.f19073o = false;
         }
 
         @Override // androidx.core.view.y0.b
         public WindowInsetsCompat onProgress(WindowInsetsCompat insets, List runningAnimations) {
             Intrinsics.checkNotNullParameter(insets, "insets");
             Intrinsics.checkNotNullParameter(runningAnimations, "runningAnimations");
-            ScreenFooter.this.f19074q = insets.f(WindowInsetsCompat.p.c()).f3307d - insets.f(WindowInsetsCompat.p.f()).f3307d;
+            ScreenFooter.this.f19075q = insets.f(WindowInsetsCompat.p.c()).f3307d - insets.f(WindowInsetsCompat.p.f()).f3307d;
             ScreenFooter screenFooter = ScreenFooter.this;
-            int i10 = screenFooter.f19070e;
+            int i10 = screenFooter.f19071e;
             int reactHeight = ScreenFooter.this.getReactHeight();
             ScreenFooter screenFooter2 = ScreenFooter.this;
-            screenFooter.o(i10, reactHeight, screenFooter2.v(screenFooter2.f19073p), ScreenFooter.this.f19074q);
+            screenFooter.o(i10, reactHeight, screenFooter2.v(screenFooter2.f19074p), ScreenFooter.this.f19075q);
             return insets;
         }
 
@@ -116,7 +116,7 @@ public final class ScreenFooter extends ReactViewGroup {
         public y0.a onStart(androidx.core.view.y0 animation, y0.a bounds) {
             Intrinsics.checkNotNullParameter(animation, "animation");
             Intrinsics.checkNotNullParameter(bounds, "bounds");
-            ScreenFooter.this.f19072o = true;
+            ScreenFooter.this.f19073o = true;
             y0.a onStart = super.onStart(animation, bounds);
             Intrinsics.checkNotNullExpressionValue(onStart, "onStart(...)");
             return onStart;
@@ -127,23 +127,23 @@ public final class ScreenFooter extends ReactViewGroup {
     public ScreenFooter(ReactContext reactContext) {
         super(reactContext);
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
-        this.f19069d = reactContext;
-        this.f19071i = 5;
+        this.f19070d = reactContext;
+        this.f19072i = 5;
         c cVar = new c();
-        this.f19076s = cVar;
+        this.f19077s = cVar;
         Activity currentActivity = reactContext.getCurrentActivity();
         if (currentActivity != null) {
             View decorView = currentActivity.getWindow().getDecorView();
             Intrinsics.checkNotNullExpressionValue(decorView, "getDecorView(...)");
             androidx.core.view.i0.E0(decorView, cVar);
-            this.f19077t = new b();
+            this.f19078t = new b();
             return;
         }
         throw new IllegalStateException("[RNScreens] Context detached from activity while creating ScreenFooter");
     }
 
     private final boolean getHasReceivedInitialLayoutFromParent() {
-        if (this.f19070e > 0) {
+        if (this.f19071e > 0) {
             return true;
         }
         return false;
@@ -200,13 +200,13 @@ public final class ScreenFooter extends ReactViewGroup {
             if (i10 != 4) {
                 if (i10 != 5) {
                     if (i10 == 6) {
-                        return (int) (this.f19070e * (1 - t10.t0()));
+                        return (int) (this.f19071e * (1 - t10.t0()));
                     }
                     throw new IllegalArgumentException("[RNScreens] use of stable-state method for unstable state");
                 }
-                return this.f19070e;
+                return this.f19071e;
             }
-            return this.f19070e - t10.w0();
+            return this.f19071e - t10.w0();
         }
         return t10.s0();
     }
@@ -222,7 +222,7 @@ public final class ScreenFooter extends ReactViewGroup {
 
     @NotNull
     public final ReactContext getReactContext() {
-        return this.f19069d;
+        return this.f19070d;
     }
 
     public final void o(int i10, int i11, int i12, int i13) {
@@ -258,27 +258,27 @@ public final class ScreenFooter extends ReactViewGroup {
         if (!getHasReceivedInitialLayoutFromParent()) {
             return;
         }
-        o(this.f19070e, i13 - i11, u(t().x0()), this.f19074q);
+        o(this.f19071e, i13 - i11, u(t().x0()), this.f19075q);
     }
 
     public final void q(boolean z10, int i10, int i11, int i12, int i13, int i14) {
-        this.f19070e = i14;
+        this.f19071e = i14;
         p(this, i14, getReactHeight(), u(t().x0()), 0, 8, null);
     }
 
     public final void r(BottomSheetBehavior behavior) {
         Intrinsics.checkNotNullParameter(behavior, "behavior");
-        if (!this.f19075r) {
-            behavior.c0(this.f19077t);
-            this.f19075r = true;
+        if (!this.f19076r) {
+            behavior.c0(this.f19078t);
+            this.f19076r = true;
         }
     }
 
     public final void w(BottomSheetBehavior behavior) {
         Intrinsics.checkNotNullParameter(behavior, "behavior");
-        if (this.f19075r) {
-            behavior.J0(this.f19077t);
-            this.f19075r = false;
+        if (this.f19076r) {
+            behavior.J0(this.f19078t);
+            this.f19076r = false;
         }
     }
 }

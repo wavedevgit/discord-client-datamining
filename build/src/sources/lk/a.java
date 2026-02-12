@@ -6,38 +6,38 @@ import ok.g;
 public final class a extends g {
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f35889c;
+    private final boolean f35890c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f35890d;
+    private final int f35891d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f35891e;
+    private final int f35892e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f35892f;
+    private final int f35893f;
 
     public a(ok.b bVar, p[] pVarArr, boolean z10, int i10, int i11, int i12) {
         super(bVar, pVarArr);
-        this.f35889c = z10;
-        this.f35890d = i10;
-        this.f35891e = i11;
-        this.f35892f = i12;
+        this.f35890c = z10;
+        this.f35891d = i10;
+        this.f35892e = i11;
+        this.f35893f = i12;
     }
 
     public int c() {
-        return this.f35892f;
+        return this.f35893f;
     }
 
     public int d() {
-        return this.f35890d;
+        return this.f35891d;
     }
 
     public int e() {
-        return this.f35891e;
+        return this.f35892e;
     }
 
     public boolean f() {
-        return this.f35889c;
+        return this.f35890c;
     }
 }

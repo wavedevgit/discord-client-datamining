@@ -10,14 +10,14 @@ import bq.n;
 public final class f implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ImageView f21860a;
+    private final ImageView f21861a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ImageView f21861b;
+    public final ImageView f21862b;
 
     private f(ImageView imageView, ImageView imageView2) {
-        this.f21860a = imageView;
-        this.f21861b = imageView2;
+        this.f21861a = imageView;
+        this.f21862b = imageView2;
     }
 
     public static f a(View view) {
@@ -43,6 +43,6 @@ public final class f implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ImageView getRoot() {
-        return this.f21860a;
+        return this.f21861a;
     }
 }

@@ -45,32 +45,32 @@ import to.f5;
 public final class g1 implements gn.k {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f49199f = new a(null);
+    public static final a f49200f = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final xo.g f49200b;
+    private final xo.g f49201b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ConstraintSet f49201c;
+    private final ConstraintSet f49202c;
 
     /* renamed from: d  reason: collision with root package name */
-    private View f49202d;
+    private View f49203d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f49203e;
+    private boolean f49204e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements gn.c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ gn.c0 f49204a;
+        private final /* synthetic */ gn.c0 f49205a;
 
         /* renamed from: to.g1$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         /* synthetic */ class C0671a extends FunctionReferenceImpl implements Function3 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0671a f49205d = new C0671a();
+            public static final C0671a f49206d = new C0671a();
 
             C0671a() {
                 super(3, xo.g.class, "inflate", "inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/withpersona/sdk2/inquiry/governmentid/databinding/Pi2GovernmentidReviewBinding;", 0);
@@ -91,7 +91,7 @@ public final class g1 implements gn.k {
         /* synthetic */ class b extends FunctionReferenceImpl implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final b f49206d = new b();
+            public static final b f49207d = new b();
 
             b() {
                 super(1, g1.class, "<init>", "<init>(Lcom/withpersona/sdk2/inquiry/governmentid/databinding/Pi2GovernmentidReviewBinding;)V", 0);
@@ -115,32 +115,32 @@ public final class g1 implements gn.k {
             Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
             Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f49204a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+            return this.f49205a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
         }
 
         @Override // gn.c0
         public KClass getType() {
-            return this.f49204a.getType();
+            return this.f49205a.getType();
         }
 
         private a() {
-            k.a aVar = gn.k.f25848a;
-            this.f49204a = new gn.z(Reflection.getOrCreateKotlinClass(f5.e.class), C0671a.f49205d, b.f49206d);
+            k.a aVar = gn.k.f25849a;
+            this.f49205a = new gn.z(Reflection.getOrCreateKotlinClass(f5.e.class), C0671a.f49206d, b.f49207d);
         }
     }
 
     public g1(xo.g binding) {
         Intrinsics.checkNotNullParameter(binding, "binding");
-        this.f49200b = binding;
-        this.f49201c = new ConstraintSet();
-        CoordinatorLayout cameraScreenContent = binding.f55020d;
+        this.f49201b = binding;
+        this.f49202c = new ConstraintSet();
+        CoordinatorLayout cameraScreenContent = binding.f55021d;
         Intrinsics.checkNotNullExpressionValue(cameraScreenContent, "cameraScreenContent");
         lq.f.d(cameraScreenContent, false, false, false, false, 15, null);
-        ThemeableLottieAnimationView themeableLottieAnimationView = binding.f55031o;
+        ThemeableLottieAnimationView themeableLottieAnimationView = binding.f55032o;
         int parseColor = Color.parseColor("#43957D");
         Context context = binding.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        themeableLottieAnimationView.I(parseColor, bq.s.d(context, f.a.f23298w, null, false, 6, null));
+        themeableLottieAnimationView.I(parseColor, bq.s.d(context, f.a.f23299w, null, false, 6, null));
     }
 
     private final Unit k(StepStyles.GovernmentIdStepStyle governmentIdStepStyle) {
@@ -151,30 +151,30 @@ public final class g1 implements gn.k {
         TextBasedComponentStyle base2;
         StepStyles.StepTextBasedComponentStyleContainer base3;
         TextBasedComponentStyle base4;
-        xo.g gVar = this.f49200b;
+        xo.g gVar = this.f49201b;
         float a10 = (float) bq.h.a(8.0d);
         int a11 = (int) bq.h.a(3.0d);
         TextBasedComponentStyle titleStyleValue = governmentIdStepStyle.getTitleStyleValue();
         if (titleStyleValue != null) {
-            TextView title = this.f49200b.f55040x;
+            TextView title = this.f49201b.f55041x;
             Intrinsics.checkNotNullExpressionValue(title, "title");
             uq.f0.n(title, titleStyleValue, null, 2, null);
-            this.f49200b.f55040x.setTextColor(-1);
+            this.f49201b.f55041x.setTextColor(-1);
         }
         TextBasedComponentStyle governmentIdCaptureHintTextStyle = governmentIdStepStyle.getGovernmentIdCaptureHintTextStyle();
         if (governmentIdCaptureHintTextStyle != null) {
-            TextView overlayText = this.f49200b.f55033q;
+            TextView overlayText = this.f49201b.f55034q;
             Intrinsics.checkNotNullExpressionValue(overlayText, "overlayText");
-            uq.f0.m(overlayText, governmentIdCaptureHintTextStyle, kotlin.collections.x0.c(uq.b0.f50918d));
+            uq.f0.m(overlayText, governmentIdCaptureHintTextStyle, kotlin.collections.x0.c(uq.b0.f50919d));
         }
         Integer governmentIdReviewImageBoxBorderColorValue = governmentIdStepStyle.getGovernmentIdReviewImageBoxBorderColorValue();
         if (governmentIdReviewImageBoxBorderColorValue != null) {
             i10 = governmentIdReviewImageBoxBorderColorValue.intValue();
-            gVar.f55035s.setIndeterminateTintList(new ColorStateList(new int[][]{new int[0]}, new int[]{i10}));
+            gVar.f55036s.setIndeterminateTintList(new ColorStateList(new int[][]{new int[0]}, new int[]{i10}));
         } else {
             i10 = -1;
         }
-        TextView disclaimer = this.f49200b.f55022f;
+        TextView disclaimer = this.f49201b.f55023f;
         Intrinsics.checkNotNullExpressionValue(disclaimer, "disclaimer");
         StepStyles.GovernmentIdStepTextBasedComponentStyle textStyle = governmentIdStepStyle.getTextStyle();
         if (textStyle != null && (base3 = textStyle.getBase()) != null && (base4 = base3.getBase()) != null) {
@@ -195,57 +195,57 @@ public final class g1 implements gn.k {
         if (governmentIdReviewImageBoxBorderWidthValue != null) {
             a11 = (int) Math.ceil(bq.h.a(governmentIdReviewImageBoxBorderWidthValue.doubleValue()));
         }
-        gVar.f55038v.setRadius(a11 + a10);
-        View view = gVar.f55028l;
+        gVar.f55039v.setRadius(a11 + a10);
+        View view = gVar.f55029l;
         GradientDrawable gradientDrawable = new GradientDrawable();
         gradientDrawable.setCornerRadius(a10);
         gradientDrawable.setStroke(a11, i10);
         view.setBackground(gradientDrawable);
-        ConstraintLayout constraintLayout = gVar.f55030n;
+        ConstraintLayout constraintLayout = gVar.f55031n;
         GradientDrawable gradientDrawable2 = new GradientDrawable();
         gradientDrawable2.setColor(-1);
         gradientDrawable2.setCornerRadii(new float[]{0.0f, 0.0f, 0.0f, 0.0f, a10, a10, a10, a10});
         constraintLayout.setBackground(new InsetDrawable((Drawable) gradientDrawable2, (int) bq.h.a(6.0d)));
         ButtonSubmitComponentStyle submitPhotoButtonStyleValue = governmentIdStepStyle.getSubmitPhotoButtonStyleValue();
         if (submitPhotoButtonStyleValue != null) {
-            Button acceptButton = gVar.f55018b;
+            Button acceptButton = gVar.f55019b;
             Intrinsics.checkNotNullExpressionValue(acceptButton, "acceptButton");
             uq.e.f(acceptButton, submitPhotoButtonStyleValue, false, false, 2, null);
         }
         ButtonCancelComponentStyle retakePhotoButtonStyleValue = governmentIdStepStyle.getRetakePhotoButtonStyleValue();
         if (retakePhotoButtonStyleValue != null) {
-            Button retryButton = gVar.f55036t;
+            Button retryButton = gVar.f55037t;
             Intrinsics.checkNotNullExpressionValue(retryButton, "retryButton");
             uq.e.f(retryButton, retakePhotoButtonStyleValue, false, false, 2, null);
         }
         Integer captureHintIconStrokeColor = governmentIdStepStyle.getCaptureHintIconStrokeColor();
         if (captureHintIconStrokeColor != null) {
-            this.f49200b.f55031o.I(Color.parseColor("#000000"), captureHintIconStrokeColor.intValue());
+            this.f49201b.f55032o.I(Color.parseColor("#000000"), captureHintIconStrokeColor.intValue());
         }
         Integer captureHintIconFillColor = governmentIdStepStyle.getCaptureHintIconFillColor();
         if (captureHintIconFillColor != null) {
-            this.f49200b.f55031o.I(Color.parseColor("#43957D"), captureHintIconFillColor.intValue());
+            this.f49201b.f55032o.I(Color.parseColor("#43957D"), captureHintIconFillColor.intValue());
         }
         Integer capturePageHeaderIconColorValue = governmentIdStepStyle.getCapturePageHeaderIconColorValue();
         if (capturePageHeaderIconColorValue == null) {
             return null;
         }
-        this.f49200b.f55027k.setControlsColor(capturePageHeaderIconColorValue.intValue());
-        return Unit.f31987a;
+        this.f49201b.f55028k.setControlsColor(capturePageHeaderIconColorValue.intValue());
+        return Unit.f31988a;
     }
 
     private final void l() {
-        xo.g gVar = this.f49200b;
-        if (gVar.f55018b.getTop() < gVar.f55024h.getBottom() + gVar.getRoot().getContext().getResources().getDimensionPixelOffset(k4.f49338a)) {
-            this.f49201c.e(gVar.getRoot().getContext(), n4.f49543h);
-            androidx.transition.x.a(this.f49200b.f55020d, new androidx.transition.a());
-            this.f49201c.c(this.f49200b.f55021e);
+        xo.g gVar = this.f49201b;
+        if (gVar.f55019b.getTop() < gVar.f55025h.getBottom() + gVar.getRoot().getContext().getResources().getDimensionPixelOffset(k4.f49339a)) {
+            this.f49202c.e(gVar.getRoot().getContext(), n4.f49544h);
+            androidx.transition.x.a(this.f49201b.f55021d, new androidx.transition.a());
+            this.f49202c.c(this.f49201b.f55022e);
         }
     }
 
     private final void m(final StyleElements.Axis axis, final long j10) {
-        final xo.g gVar = this.f49200b;
-        Button acceptButton = gVar.f55018b;
+        final xo.g gVar = this.f49201b;
+        Button acceptButton = gVar.f55019b;
         Intrinsics.checkNotNullExpressionValue(acceptButton, "acceptButton");
         lq.s.b(acceptButton, new Function0() { // from class: to.e1
             @Override // kotlin.jvm.functions.Function0
@@ -268,7 +268,7 @@ public final class g1 implements gn.k {
     public static final Unit o(xo.g gVar, long j10, final g1 g1Var, StyleElements.Axis axis) {
         boolean z10;
         boolean z11 = false;
-        if (gVar.f55018b.getLineCount() != 0 && gVar.f55036t.getLineCount() != 0) {
+        if (gVar.f55019b.getLineCount() != 0 && gVar.f55037t.getLineCount() != 0) {
             z10 = true;
         } else {
             z10 = false;
@@ -278,23 +278,23 @@ public final class g1 implements gn.k {
         }
         if (!z10 && !z11) {
             g1Var.m(axis, j10);
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
-        if (z10 && (gVar.f55018b.getLineCount() > 1 || gVar.f55036t.getLineCount() > 1 || axis == StyleElements.Axis.VERTICAL)) {
-            Button acceptButton = gVar.f55018b;
+        if (z10 && (gVar.f55019b.getLineCount() > 1 || gVar.f55037t.getLineCount() > 1 || axis == StyleElements.Axis.VERTICAL)) {
+            Button acceptButton = gVar.f55019b;
             Intrinsics.checkNotNullExpressionValue(acceptButton, "acceptButton");
             ViewGroup.LayoutParams layoutParams = acceptButton.getLayoutParams();
             if (layoutParams != null) {
-                layoutParams.width = gVar.f55026j.getWidth();
+                layoutParams.width = gVar.f55027j.getWidth();
                 acceptButton.setLayoutParams(layoutParams);
-                Button retryButton = gVar.f55036t;
+                Button retryButton = gVar.f55037t;
                 Intrinsics.checkNotNullExpressionValue(retryButton, "retryButton");
                 ViewGroup.LayoutParams layoutParams2 = retryButton.getLayoutParams();
                 if (layoutParams2 != null) {
-                    layoutParams2.width = gVar.f55026j.getWidth();
+                    layoutParams2.width = gVar.f55027j.getWidth();
                     retryButton.setLayoutParams(layoutParams2);
-                    gVar.f55026j.setReferencedIds(new int[]{gVar.f55018b.getId(), gVar.f55036t.getId()});
-                    g1Var.f49200b.f55027k.setAccessibilityTraversalAfter(m4.f49401r0);
+                    gVar.f55027j.setReferencedIds(new int[]{gVar.f55019b.getId(), gVar.f55037t.getId()});
+                    g1Var.f49201b.f55028k.setAccessibilityTraversalAfter(m4.f49402r0);
                 } else {
                     throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
                 }
@@ -302,13 +302,13 @@ public final class g1 implements gn.k {
                 throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
             }
         }
-        androidx.core.view.z.a(gVar.f55018b, new Runnable() { // from class: to.f1
+        androidx.core.view.z.a(gVar.f55019b, new Runnable() { // from class: to.f1
             @Override // java.lang.Runnable
             public final void run() {
                 g1.p(g1.this);
             }
         });
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -317,32 +317,32 @@ public final class g1 implements gn.k {
     }
 
     private final void q(boolean z10) {
-        if (this.f49203e == z10) {
+        if (this.f49204e == z10) {
             return;
         }
-        this.f49203e = z10;
-        xo.g gVar = this.f49200b;
+        this.f49204e = z10;
+        xo.g gVar = this.f49201b;
         androidx.transition.a0 o02 = new androidx.transition.a0().y0(new androidx.transition.e(3)).y0(new androidx.transition.b()).y0(new androidx.transition.c()).y0(new androidx.transition.d()).H0(0).o0(300L);
         Intrinsics.checkNotNullExpressionValue(o02, "setDuration(...)");
         androidx.transition.x.a(gVar.getRoot(), o02);
         if (z10) {
-            gVar.f55034r.setVisibility(0);
-            gVar.f55024h.setVisibility(4);
-            gVar.f55018b.setVisibility(4);
-            gVar.f55036t.setVisibility(4);
-            gVar.f55030n.setVisibility(4);
+            gVar.f55035r.setVisibility(0);
+            gVar.f55025h.setVisibility(4);
+            gVar.f55019b.setVisibility(4);
+            gVar.f55037t.setVisibility(4);
+            gVar.f55031n.setVisibility(4);
             return;
         }
-        gVar.f55034r.setVisibility(4);
-        gVar.f55024h.setVisibility(0);
-        gVar.f55018b.setVisibility(0);
-        gVar.f55036t.setVisibility(0);
-        gVar.f55030n.setVisibility(0);
+        gVar.f55035r.setVisibility(4);
+        gVar.f55025h.setVisibility(0);
+        gVar.f55019b.setVisibility(0);
+        gVar.f55037t.setVisibility(0);
+        gVar.f55031n.setVisibility(0);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void s(xo.g gVar) {
-        ObjectAnimator duration = ObjectAnimator.ofFloat(gVar.f55025i, "alpha", 0.9f, 0.0f).setDuration(500L);
+        ObjectAnimator duration = ObjectAnimator.ofFloat(gVar.f55026i, "alpha", 0.9f, 0.0f).setDuration(500L);
         duration.setInterpolator(new LinearInterpolator());
         duration.start();
         gVar.getRoot().setHapticFeedbackEnabled(true);
@@ -351,15 +351,15 @@ public final class g1 implements gn.k {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void t(xo.g gVar, l5.i iVar) {
-        gVar.f55031o.setProgress(1.0f);
+        gVar.f55032o.setProgress(1.0f);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit u(xo.g gVar, f5.e eVar) {
-        int i10 = kotlin.ranges.d.i(gVar.f55037u.getMeasuredWidth(), 2000);
+        int i10 = kotlin.ranges.d.i(gVar.f55038u.getMeasuredWidth(), 2000);
         if (i10 > 0) {
-            gVar.f55037u.setTag(m4.f49379g0, eVar.k());
-            ImageView reviewImage = gVar.f55037u;
+            gVar.f55038u.setTag(m4.f49380g0, eVar.k());
+            ImageView reviewImage = gVar.f55038u;
             Intrinsics.checkNotNullExpressionValue(reviewImage, "reviewImage");
             File file = new File(eVar.k());
             v4.h j10 = eVar.j();
@@ -368,19 +368,19 @@ public final class g1 implements gn.k {
             r10.h(eVar.k());
             j10.a(r10.a());
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit v(f5.e eVar) {
         eVar.p().invoke();
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit w(f5.e eVar) {
         eVar.e().invoke();
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -403,9 +403,9 @@ public final class g1 implements gn.k {
         RemoteImage remoteImage;
         Intrinsics.checkNotNullParameter(rendering, "rendering");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-        final xo.g gVar = this.f49200b;
-        if (!gVar.f55019c.isChecked()) {
-            gVar.f55019c.setChecked(true);
+        final xo.g gVar = this.f49201b;
+        if (!gVar.f55020c.isChecked()) {
+            gVar.f55020c.setChecked(true);
             gVar.getRoot().post(new Runnable() { // from class: to.x0
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -413,21 +413,21 @@ public final class g1 implements gn.k {
                 }
             });
         } else {
-            gVar.f55031o.j(new l5.a0() { // from class: to.y0
+            gVar.f55032o.j(new l5.a0() { // from class: to.y0
                 @Override // l5.a0
                 public final void a(l5.i iVar) {
                     g1.t(xo.g.this, iVar);
                 }
             });
         }
-        Object tag = gVar.f55037u.getTag(m4.f49379g0);
+        Object tag = gVar.f55038u.getTag(m4.f49380g0);
         if (tag instanceof String) {
             str = (String) tag;
         } else {
             str = null;
         }
         if (!Intrinsics.areEqual(str, rendering.k())) {
-            ImageView reviewImage = gVar.f55037u;
+            ImageView reviewImage = gVar.f55038u;
             Intrinsics.checkNotNullExpressionValue(reviewImage, "reviewImage");
             lq.s.b(reviewImage, new Function0() { // from class: to.z0
                 @Override // kotlin.jvm.functions.Function0
@@ -438,26 +438,26 @@ public final class g1 implements gn.k {
                 }
             });
         }
-        gVar.f55033q.setText(rendering.l());
-        ImageView imageView = gVar.f55023g;
+        gVar.f55034q.setText(rendering.l());
+        ImageView imageView = gVar.f55024g;
         if (StringsKt.k0(rendering.g())) {
             i10 = 8;
         } else {
             i10 = 0;
         }
         imageView.setVisibility(i10);
-        TextView textView = gVar.f55022f;
+        TextView textView = gVar.f55023f;
         if (StringsKt.k0(rendering.g())) {
             i11 = 8;
         } else {
             i11 = 0;
         }
         textView.setVisibility(i11);
-        gVar.f55022f.setText(rendering.g());
-        gVar.f55018b.setText(rendering.b());
-        gVar.f55036t.setText(rendering.q());
-        gVar.f55040x.setText(rendering.f());
-        TextView textView2 = gVar.f55040x;
+        gVar.f55023f.setText(rendering.g());
+        gVar.f55019b.setText(rendering.b());
+        gVar.f55037t.setText(rendering.q());
+        gVar.f55041x.setText(rendering.f());
+        TextView textView2 = gVar.f55041x;
         CharSequence text = textView2.getText();
         Intrinsics.checkNotNullExpressionValue(text, "getText(...)");
         if (text.length() == 0) {
@@ -467,12 +467,12 @@ public final class g1 implements gn.k {
         }
         textView2.setVisibility(i12);
         Context context = gVar.getRoot().getContext();
-        View view = gVar.f55028l;
+        View view = gVar.f55029l;
         Intrinsics.checkNotNull(context);
-        view.setBackground(f4.a(context, tp.a.f49762k));
-        if (bq.s.b(context, tp.a.f49759h, null, false, false, 14, null)) {
-            gVar.f55033q.setGravity(17);
-            TextView overlayText = gVar.f55033q;
+        view.setBackground(f4.a(context, tp.a.f49763k));
+        if (bq.s.b(context, tp.a.f49760h, null, false, false, 14, null)) {
+            gVar.f55034q.setGravity(17);
+            TextView overlayText = gVar.f55034q;
             Intrinsics.checkNotNullExpressionValue(overlayText, "overlayText");
             ViewGroup.LayoutParams layoutParams = overlayText.getLayoutParams();
             if (layoutParams != null) {
@@ -483,12 +483,12 @@ public final class g1 implements gn.k {
                 throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams");
             }
         }
-        Integer f10 = bq.s.f(context, tp.a.f49767p, null, false, 6, null);
+        Integer f10 = bq.s.f(context, tp.a.f49768p, null, false, 6, null);
         if (f10 != null) {
-            gVar.f55023g.setImageResource(f10.intValue());
+            gVar.f55024g.setImageResource(f10.intValue());
         }
         i4 b10 = f4.b(context, rendering.o());
-        gVar.f55029m.setImageResource(b10.a());
+        gVar.f55030m.setImageResource(b10.a());
         NextStep.GovernmentId.AssetConfig.CapturePage c10 = rendering.c();
         if (c10 != null) {
             remoteImage = to.a.a(c10, rendering.i(), rendering.d());
@@ -496,14 +496,14 @@ public final class g1 implements gn.k {
             remoteImage = null;
         }
         if (remoteImage != null) {
-            if (this.f49202d == null) {
-                ConstraintLayout overlayIconContainer = gVar.f55032p;
+            if (this.f49203d == null) {
+                ConstraintLayout overlayIconContainer = gVar.f55033p;
                 Intrinsics.checkNotNullExpressionValue(overlayIconContainer, "overlayIconContainer");
-                this.f49202d = wq.b.c(remoteImage, overlayIconContainer, false, 2, null);
-                gVar.f55031o.setVisibility(8);
+                this.f49203d = wq.b.c(remoteImage, overlayIconContainer, false, 2, null);
+                gVar.f55032o.setVisibility(8);
             }
         } else {
-            gVar.f55031o.setAnimation(b10.b());
+            gVar.f55032o.setAnimation(b10.b());
         }
         jq.a m10 = rendering.m();
         Function0 function0 = new Function0() { // from class: to.a1
@@ -522,25 +522,25 @@ public final class g1 implements gn.k {
                 return w10;
             }
         };
-        Pi2NavigationBar navigationBar = gVar.f55027k;
+        Pi2NavigationBar navigationBar = gVar.f55028k;
         Intrinsics.checkNotNullExpressionValue(navigationBar, "navigationBar");
         FrameLayout root = gVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         jq.e.b(m10, function0, function02, navigationBar, root);
-        gVar.f55018b.setOnClickListener(new View.OnClickListener() { // from class: to.c1
+        gVar.f55019b.setOnClickListener(new View.OnClickListener() { // from class: to.c1
             @Override // android.view.View.OnClickListener
             public final void onClick(View view2) {
                 g1.x(f5.e.this, view2);
             }
         });
-        gVar.f55036t.setOnClickListener(new View.OnClickListener() { // from class: to.d1
+        gVar.f55037t.setOnClickListener(new View.OnClickListener() { // from class: to.d1
             @Override // android.view.View.OnClickListener
             public final void onClick(View view2) {
                 g1.y(f5.e.this, view2);
             }
         });
-        gVar.f55018b.setEnabled(rendering.u());
-        gVar.f55036t.setEnabled(rendering.u());
+        gVar.f55019b.setEnabled(rendering.u());
+        gVar.f55037t.setEnabled(rendering.u());
         if (rendering.t()) {
             q(true);
         } else {
@@ -549,10 +549,10 @@ public final class g1 implements gn.k {
         StepStyles.GovernmentIdStepStyle s10 = rendering.s();
         if (s10 != null) {
             k(s10);
-            kq.c.a(viewEnvironment, androidx.core.content.a.c(this.f49200b.getRoot().getContext(), bq.j.f7365a));
+            kq.c.a(viewEnvironment, androidx.core.content.a.c(this.f49201b.getRoot().getContext(), bq.j.f7365a));
         }
         n(this, rendering.r(), 0L, 2, null);
-        CoordinatorLayout cameraScreenContent = this.f49200b.f55020d;
+        CoordinatorLayout cameraScreenContent = this.f49201b.f55021d;
         Intrinsics.checkNotNullExpressionValue(cameraScreenContent, "cameraScreenContent");
         bq.z.b(cameraScreenContent, rendering.h(), rendering.n(), null, 0, 0, 56, null);
     }

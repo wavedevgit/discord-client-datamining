@@ -3,17 +3,17 @@ package nq;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f38243a = 2131232507;
+    public static int f38244a = 2131232506;
 
     /* renamed from: b  reason: collision with root package name */
-    public static int f38244b = 2131232541;
+    public static int f38245b = 2131232540;
 
     /* renamed from: c  reason: collision with root package name */
-    public static int f38245c = 2131232545;
+    public static int f38246c = 2131232544;
 
     /* renamed from: d  reason: collision with root package name */
-    public static int f38246d = 2131232546;
+    public static int f38247d = 2131232545;
 
     /* renamed from: e  reason: collision with root package name */
-    public static int f38247e = 2131232550;
+    public static int f38248e = 2131232549;
 }

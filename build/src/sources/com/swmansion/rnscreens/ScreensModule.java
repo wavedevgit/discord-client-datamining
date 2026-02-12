@@ -136,7 +136,7 @@ public final class ScreensModule extends NativeScreensModuleSpec implements Life
         UiThreadUtil.assertOnUiThread();
         if (this.topScreenId != -1) {
             float f10 = (float) d10;
-            short a10 = b0.f19099s.a(f10);
+            short a10 = b0.f19100s.a(f10);
             EventDispatcher eventDispatcherForReactTag = UIManagerHelper.getEventDispatcherForReactTag(this.reactContext, this.topScreenId);
             if (eventDispatcherForReactTag != null) {
                 eventDispatcherForReactTag.dispatchEvent(new qn.j(UIManagerHelper.getSurfaceId(this.reactContext), this.topScreenId, f10, true, true, a10));

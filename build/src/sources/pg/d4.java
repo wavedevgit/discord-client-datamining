@@ -5,44 +5,44 @@ import bj.c;
 final class d4 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final d4 f41833a = new d4();
+    static final d4 f41834a = new d4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f41834b;
+    private static final bj.c f41835b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f41835c;
+    private static final bj.c f41836c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f41836d;
+    private static final bj.c f41837d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final bj.c f41837e;
+    private static final bj.c f41838e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final bj.c f41838f;
+    private static final bj.c f41839f;
 
     static {
         c.b a10 = bj.c.a("inferenceCommonLogEvent");
         f fVar = new f();
         fVar.a(1);
-        f41834b = a10.b(fVar.b()).a();
+        f41835b = a10.b(fVar.b()).a();
         c.b a11 = bj.c.a("options");
         f fVar2 = new f();
         fVar2.a(2);
-        f41835c = a11.b(fVar2.b()).a();
+        f41836c = a11.b(fVar2.b()).a();
         c.b a12 = bj.c.a("detectedBarcodeFormats");
         f fVar3 = new f();
         fVar3.a(3);
-        f41836d = a12.b(fVar3.b()).a();
+        f41837d = a12.b(fVar3.b()).a();
         c.b a13 = bj.c.a("detectedBarcodeValueTypes");
         f fVar4 = new f();
         fVar4.a(4);
-        f41837e = a13.b(fVar4.b()).a();
+        f41838e = a13.b(fVar4.b()).a();
         c.b a14 = bj.c.a("imageInfo");
         f fVar5 = new f();
         fVar5.a(5);
-        f41838f = a14.b(fVar5.b()).a();
+        f41839f = a14.b(fVar5.b()).a();
     }
 
     private d4() {

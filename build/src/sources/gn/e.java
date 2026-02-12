@@ -6,7 +6,7 @@ import kotlin.jvm.internal.Intrinsics;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public abstract class e {
     private static final j a(View view) {
-        return (j) view.getTag(q.f25863c);
+        return (j) view.getTag(q.f25864c);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:7:0x000c  */
@@ -56,6 +56,6 @@ public abstract class e {
             jVar2.start();
             jVar = jVar2;
         }
-        view.setTag(q.f25863c, jVar);
+        view.setTag(q.f25864c, jVar);
     }
 }

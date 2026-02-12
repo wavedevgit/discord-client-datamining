@@ -11,7 +11,7 @@ public final class DefaultBuiltIns extends KotlinBuiltIns {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Lazy f32114g = l.b(b.f32165d);
+    private static final Lazy f32115g = l.b(b.f32166d);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -21,7 +21,7 @@ public final class DefaultBuiltIns extends KotlinBuiltIns {
 
         @NotNull
         public final DefaultBuiltIns getInstance() {
-            return (DefaultBuiltIns) DefaultBuiltIns.f32114g.getValue();
+            return (DefaultBuiltIns) DefaultBuiltIns.f32115g.getValue();
         }
 
         private Companion() {

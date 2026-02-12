@@ -3,10 +3,10 @@ package k4;
 public interface q {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b.c f31526a = new b.c();
+    public static final b.c f31527a = new b.c();
 
     /* renamed from: b  reason: collision with root package name */
-    public static final b.C0441b f31527b = new b.C0441b();
+    public static final b.C0441b f31528b = new b.C0441b();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static abstract class b {
@@ -15,18 +15,18 @@ public interface q {
         public static final class a extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final Throwable f31528a;
+            private final Throwable f31529a;
 
             public a(Throwable th2) {
-                this.f31528a = th2;
+                this.f31529a = th2;
             }
 
             public Throwable a() {
-                return this.f31528a;
+                return this.f31529a;
             }
 
             public String toString() {
-                return "FAILURE (" + this.f31528a.getMessage() + ")";
+                return "FAILURE (" + this.f31529a.getMessage() + ")";
             }
         }
 

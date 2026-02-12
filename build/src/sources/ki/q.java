@@ -4,10 +4,10 @@ package ki;
 public final class q implements li.i {
 
     /* renamed from: a  reason: collision with root package name */
-    final /* synthetic */ a f31771a;
+    final /* synthetic */ a f31772a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q(a aVar) {
-        this.f31771a = aVar;
+        this.f31772a = aVar;
     }
 }

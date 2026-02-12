@@ -5,37 +5,37 @@ import bj.c;
 final class g7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final g7 f46676a = new g7();
+    static final g7 f46677a = new g7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f46677b;
+    private static final bj.c f46678b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f46678c;
+    private static final bj.c f46679c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f46679d;
+    private static final bj.c f46680d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final bj.c f46680e;
+    private static final bj.c f46681e;
 
     static {
         c.b a10 = bj.c.a("imageFormat");
         v1 v1Var = new v1();
         v1Var.a(1);
-        f46677b = a10.b(v1Var.b()).a();
+        f46678b = a10.b(v1Var.b()).a();
         c.b a11 = bj.c.a("originalImageSize");
         v1 v1Var2 = new v1();
         v1Var2.a(2);
-        f46678c = a11.b(v1Var2.b()).a();
+        f46679c = a11.b(v1Var2.b()).a();
         c.b a12 = bj.c.a("compressedImageSize");
         v1 v1Var3 = new v1();
         v1Var3.a(3);
-        f46679d = a12.b(v1Var3.b()).a();
+        f46680d = a12.b(v1Var3.b()).a();
         c.b a13 = bj.c.a("isOdmlImage");
         v1 v1Var4 = new v1();
         v1Var4.a(4);
-        f46680e = a13.b(v1Var4.b()).a();
+        f46681e = a13.b(v1Var4.b()).a();
     }
 
     private g7() {
@@ -45,9 +45,9 @@ final class g7 implements bj.d {
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         rd rdVar = (rd) obj;
         bj.e eVar = (bj.e) obj2;
-        eVar.e(f46677b, rdVar.a());
-        eVar.e(f46678c, rdVar.b());
-        eVar.e(f46679d, null);
-        eVar.e(f46680e, null);
+        eVar.e(f46678b, rdVar.a());
+        eVar.e(f46679c, rdVar.b());
+        eVar.e(f46680d, null);
+        eVar.e(f46681e, null);
     }
 }

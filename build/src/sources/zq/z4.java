@@ -18,28 +18,28 @@ import kotlinx.coroutines.flow.FlowCollector;
 public final class z4 implements en.o<b> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final ActivityResultLauncher f57097b;
+    private final ActivityResultLauncher f57098b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final br.b f57098c;
+    private final br.b f57099c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final com.squareup.moshi.w f57099d;
+    private final com.squareup.moshi.w f57100d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f57100e;
+    private final String f57101e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f57101f;
+    private final String f57102f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f57102g;
+    private final String f57103g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f57103h;
+    private final String f57104h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Map f57104i;
+    private final Map f57105i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -53,7 +53,7 @@ public final class z4 implements en.o<b> {
         public static final class a implements b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final a f57105a = new a();
+            public static final a f57106a = new a();
 
             private a() {
             }
@@ -79,33 +79,33 @@ public final class z4 implements en.o<b> {
         public static final class C0816b implements b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final InternalErrorInfo f57106a;
+            private final InternalErrorInfo f57107a;
 
             public C0816b(InternalErrorInfo errorInfo) {
                 Intrinsics.checkNotNullParameter(errorInfo, "errorInfo");
-                this.f57106a = errorInfo;
+                this.f57107a = errorInfo;
             }
 
             public final InternalErrorInfo a() {
-                return this.f57106a;
+                return this.f57107a;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                if ((obj instanceof C0816b) && Intrinsics.areEqual(this.f57106a, ((C0816b) obj).f57106a)) {
+                if ((obj instanceof C0816b) && Intrinsics.areEqual(this.f57107a, ((C0816b) obj).f57107a)) {
                     return true;
                 }
                 return false;
             }
 
             public int hashCode() {
-                return this.f57106a.hashCode();
+                return this.f57107a.hashCode();
             }
 
             public String toString() {
-                InternalErrorInfo internalErrorInfo = this.f57106a;
+                InternalErrorInfo internalErrorInfo = this.f57107a;
                 return "Error(errorInfo=" + internalErrorInfo + ")";
             }
         }
@@ -115,53 +115,53 @@ public final class z4 implements en.o<b> {
     static final class c extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f57107d;
+        int f57108d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f57108e;
+        private /* synthetic */ Object f57109e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f57110d;
+            int f57111d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ z4 f57111e;
+            final /* synthetic */ z4 f57112e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ String f57112i;
+            final /* synthetic */ String f57113i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(z4 z4Var, String str, Continuation continuation) {
                 super(2, continuation);
-                this.f57111e = z4Var;
-                this.f57112i = str;
+                this.f57112e = z4Var;
+                this.f57113i = str;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                return new a(this.f57111e, this.f57112i, continuation);
+                return new a(this.f57112e, this.f57113i, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 gs.b.f();
-                if (this.f57110d == 0) {
+                if (this.f57111d == 0) {
                     kotlin.c.b(obj);
-                    ActivityResultLauncher activityResultLauncher = this.f57111e.f57097b;
+                    ActivityResultLauncher activityResultLauncher = this.f57112e.f57098b;
                     androidx.browser.customtabs.b a10 = new b.d().a();
                     Intrinsics.checkNotNullExpressionValue(a10, "build(...)");
-                    activityResultLauncher.b(new mp.a(a10, h1.a(this.f57111e.f57102g, this.f57112i, this.f57111e.f57103h)));
-                    return Unit.f31987a;
+                    activityResultLauncher.b(new mp.a(a10, h1.a(this.f57112e.f57103g, this.f57113i, this.f57112e.f57104h)));
+                    return Unit.f31988a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
             }
         }
 
@@ -172,7 +172,7 @@ public final class z4 implements en.o<b> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             c cVar = new c(continuation);
-            cVar.f57108e = obj;
+            cVar.f57109e = obj;
             return cVar;
         }
 
@@ -217,7 +217,7 @@ public final class z4 implements en.o<b> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f31987a);
+            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -230,20 +230,20 @@ public final class z4 implements en.o<b> {
         Intrinsics.checkNotNullParameter(url, "url");
         Intrinsics.checkNotNullParameter(componentName, "componentName");
         Intrinsics.checkNotNullParameter(componentParams, "componentParams");
-        this.f57097b = customTabsLauncher;
-        this.f57098c = uiService;
-        this.f57099d = moshi;
-        this.f57100e = sessionToken;
-        this.f57101f = inquiryId;
-        this.f57102g = url;
-        this.f57103h = componentName;
-        this.f57104i = componentParams;
+        this.f57098b = customTabsLauncher;
+        this.f57099c = uiService;
+        this.f57100d = moshi;
+        this.f57101e = sessionToken;
+        this.f57102f = inquiryId;
+        this.f57103g = url;
+        this.f57104h = componentName;
+        this.f57105i = componentParams;
     }
 
     @Override // en.o
     public boolean a(en.o otherWorker) {
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
-        if (o.b.a(this, otherWorker) && Intrinsics.areEqual(((z4) otherWorker).f57102g, this.f57102g)) {
+        if (o.b.a(this, otherWorker) && Intrinsics.areEqual(((z4) otherWorker).f57103g, this.f57103g)) {
             return true;
         }
         return false;

@@ -5,15 +5,15 @@ import com.google.android.gms.internal.gtm.zzbv;
 public abstract class d extends h {
 
     /* renamed from: d  reason: collision with root package name */
-    private final zzbv f48759d;
+    private final zzbv f48760d;
 
     public d(zzbv zzbvVar) {
         super(zzbvVar.zzd(), zzbvVar.zzr());
-        this.f48759d = zzbvVar;
+        this.f48760d = zzbvVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final zzbv a() {
-        return this.f48759d;
+        return this.f48760d;
     }
 }

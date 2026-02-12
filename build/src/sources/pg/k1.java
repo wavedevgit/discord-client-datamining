@@ -5,30 +5,30 @@ import bj.c;
 final class k1 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k1 f42151a = new k1();
+    static final k1 f42152a = new k1();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f42152b;
+    private static final bj.c f42153b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f42153c;
+    private static final bj.c f42154c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f42154d;
+    private static final bj.c f42155d;
 
     static {
         c.b a10 = bj.c.a("errorCode");
         f fVar = new f();
         fVar.a(1);
-        f42152b = a10.b(fVar.b()).a();
+        f42153b = a10.b(fVar.b()).a();
         c.b a11 = bj.c.a("isColdCall");
         f fVar2 = new f();
         fVar2.a(2);
-        f42153c = a11.b(fVar2.b()).a();
+        f42154c = a11.b(fVar2.b()).a();
         c.b a12 = bj.c.a("imageInfo");
         f fVar3 = new f();
         fVar3.a(3);
-        f42154d = a12.b(fVar3.b()).a();
+        f42155d = a12.b(fVar3.b()).a();
     }
 
     private k1() {

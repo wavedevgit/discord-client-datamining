@@ -7,17 +7,17 @@ import android.os.RemoteException;
 public final class i extends hi.j {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ zg.k f25709e;
+    final /* synthetic */ zg.k f25710e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ l f25710i;
+    final /* synthetic */ l f25711i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public i(l lVar, zg.k kVar, zg.k kVar2) {
         super(kVar);
-        this.f25710i = lVar;
-        this.f25709e = kVar2;
+        this.f25711i = lVar;
+        this.f25710e = kVar2;
     }
 
     /* JADX WARN: Type inference failed for: r0v3, types: [android.os.IInterface, hi.f] */
@@ -28,18 +28,18 @@ public final class i extends hi.j {
         String str2;
         String str3;
         try {
-            ?? e10 = this.f25710i.f25716a.e();
-            str2 = this.f25710i.f25717b;
+            ?? e10 = this.f25711i.f25717a.e();
+            str2 = this.f25711i.f25718b;
             Bundle a10 = m.a();
-            l lVar = this.f25710i;
-            zg.k kVar = this.f25709e;
-            str3 = lVar.f25717b;
+            l lVar = this.f25711i;
+            zg.k kVar = this.f25710e;
+            str3 = lVar.f25718b;
             e10.m(str2, a10, new k(lVar, kVar, str3));
         } catch (RemoteException e11) {
-            iVar = l.f25715c;
-            str = this.f25710i.f25717b;
+            iVar = l.f25716c;
+            str = this.f25711i.f25718b;
             iVar.c(e11, "error requesting in-app review for %s", str);
-            this.f25709e.d(new RuntimeException(e11));
+            this.f25710e.d(new RuntimeException(e11));
         }
     }
 }

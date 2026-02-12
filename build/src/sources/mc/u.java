@@ -5,15 +5,15 @@ import java.util.HashSet;
 public abstract class u {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final HashSet f36278a = new HashSet();
+    private static final HashSet f36279a = new HashSet();
 
     /* renamed from: b  reason: collision with root package name */
-    private static String f36279b = "goog.exo.core";
+    private static String f36280b = "goog.exo.core";
 
     public static synchronized void a(String str) {
         synchronized (u.class) {
-            if (f36278a.add(str)) {
-                f36279b += ", " + str;
+            if (f36279a.add(str)) {
+                f36280b += ", " + str;
             }
         }
     }
@@ -21,7 +21,7 @@ public abstract class u {
     public static synchronized String b() {
         String str;
         synchronized (u.class) {
-            str = f36279b;
+            str = f36280b;
         }
         return str;
     }

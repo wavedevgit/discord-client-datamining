@@ -6,7 +6,7 @@ import com.facebook.react.devsupport.StackTraceHelper;
 final class db implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final db f46626a = new db();
+    static final db f46627a = new db();
 
     static {
         c.b a10 = bj.c.a("pipelineNamespace");

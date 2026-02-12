@@ -12,7 +12,7 @@ public final class s implements Parcelable {
     public static final Parcelable.Creator<s> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f23214d;
+    private final Map f23215d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -37,11 +37,11 @@ public final class s implements Parcelable {
 
     public s(Map fields) {
         Intrinsics.checkNotNullParameter(fields, "fields");
-        this.f23214d = fields;
+        this.f23215d = fields;
     }
 
     public final Map a() {
-        return this.f23214d;
+        return this.f23215d;
     }
 
     @Override // android.os.Parcelable
@@ -52,7 +52,7 @@ public final class s implements Parcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        Map map = this.f23214d;
+        Map map = this.f23215d;
         dest.writeInt(map.size());
         for (Map.Entry entry : map.entrySet()) {
             dest.writeString((String) entry.getKey());

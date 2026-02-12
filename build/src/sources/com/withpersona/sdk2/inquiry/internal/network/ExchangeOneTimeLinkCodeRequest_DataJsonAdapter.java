@@ -14,28 +14,28 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeRequest_DataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20205a;
+    private final m.b f20206a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f20206b;
+    private final com.squareup.moshi.h f20207b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.squareup.moshi.h f20207c;
+    private final com.squareup.moshi.h f20208c;
 
     /* renamed from: d  reason: collision with root package name */
-    private volatile Constructor f20208d;
+    private volatile Constructor f20209d;
 
     public ExchangeOneTimeLinkCodeRequest_DataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("attributes", "type");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20205a = a10;
+        this.f20206a = a10;
         com.squareup.moshi.h f10 = moshi.f(ExchangeOneTimeLinkCodeRequest.Attributes.class, x0.d(), "attributes");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20206b = f10;
+        this.f20207b = f10;
         com.squareup.moshi.h f11 = moshi.f(String.class, x0.d(), "type");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f20207c = f11;
+        this.f20208c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -47,11 +47,11 @@ public final class ExchangeOneTimeLinkCodeRequest_DataJsonAdapter extends com.sq
         String str = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20205a);
+            int J = reader.J(this.f20206a);
             if (J != -1) {
                 if (J != 0) {
                     if (J == 1) {
-                        str = (String) this.f20207c.fromJson(reader);
+                        str = (String) this.f20208c.fromJson(reader);
                         if (str != null) {
                             i10 = -3;
                         } else {
@@ -61,7 +61,7 @@ public final class ExchangeOneTimeLinkCodeRequest_DataJsonAdapter extends com.sq
                         continue;
                     }
                 } else {
-                    attributes = (ExchangeOneTimeLinkCodeRequest.Attributes) this.f20206b.fromJson(reader);
+                    attributes = (ExchangeOneTimeLinkCodeRequest.Attributes) this.f20207b.fromJson(reader);
                     if (attributes == null) {
                         throw dn.c.x("attributes", "attributes", reader);
                     }
@@ -79,10 +79,10 @@ public final class ExchangeOneTimeLinkCodeRequest_DataJsonAdapter extends com.sq
             }
             throw dn.c.o("attributes", "attributes", reader);
         }
-        Constructor constructor = this.f20208d;
+        Constructor constructor = this.f20209d;
         if (constructor == null) {
-            constructor = ExchangeOneTimeLinkCodeRequest.Data.class.getDeclaredConstructor(ExchangeOneTimeLinkCodeRequest.Attributes.class, String.class, Integer.TYPE, dn.c.f21827c);
-            this.f20208d = constructor;
+            constructor = ExchangeOneTimeLinkCodeRequest.Data.class.getDeclaredConstructor(ExchangeOneTimeLinkCodeRequest.Attributes.class, String.class, Integer.TYPE, dn.c.f21828c);
+            this.f20209d = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
         if (attributes != null) {
@@ -100,9 +100,9 @@ public final class ExchangeOneTimeLinkCodeRequest_DataJsonAdapter extends com.sq
         if (data != null) {
             writer.i();
             writer.J("attributes");
-            this.f20206b.toJson(writer, data.a());
+            this.f20207b.toJson(writer, data.a());
             writer.J("type");
-            this.f20207c.toJson(writer, data.b());
+            this.f20208c.toJson(writer, data.b());
             writer.s();
             return;
         }

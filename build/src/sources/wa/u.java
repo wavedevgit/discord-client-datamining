@@ -3,7 +3,7 @@ package wa;
 public class u implements a0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static u f52429a;
+    private static u f52430a;
 
     private u() {
     }
@@ -12,10 +12,10 @@ public class u implements a0 {
         u uVar;
         synchronized (u.class) {
             try {
-                if (f52429a == null) {
-                    f52429a = new u();
+                if (f52430a == null) {
+                    f52430a = new u();
                 }
-                uVar = f52429a;
+                uVar = f52430a;
             } catch (Throwable th2) {
                 throw th2;
             }

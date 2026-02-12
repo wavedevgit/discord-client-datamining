@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeRequestJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20201a;
+    private final m.b f20202a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f20202b;
+    private final com.squareup.moshi.h f20203b;
 
     public ExchangeOneTimeLinkCodeRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("data");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20201a = a10;
+        this.f20202a = a10;
         com.squareup.moshi.h f10 = moshi.f(ExchangeOneTimeLinkCodeRequest.Data.class, x0.d(), "data");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20202b = f10;
+        this.f20203b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -35,9 +35,9 @@ public final class ExchangeOneTimeLinkCodeRequestJsonAdapter extends com.squareu
         reader.u();
         ExchangeOneTimeLinkCodeRequest.Data data = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20201a);
+            int J = reader.J(this.f20202a);
             if (J != -1) {
-                if (J == 0 && (data = (ExchangeOneTimeLinkCodeRequest.Data) this.f20202b.fromJson(reader)) == null) {
+                if (J == 0 && (data = (ExchangeOneTimeLinkCodeRequest.Data) this.f20203b.fromJson(reader)) == null) {
                     throw dn.c.x("data_", "data", reader);
                 }
             } else {
@@ -59,7 +59,7 @@ public final class ExchangeOneTimeLinkCodeRequestJsonAdapter extends com.squareu
         if (exchangeOneTimeLinkCodeRequest != null) {
             writer.i();
             writer.J("data");
-            this.f20202b.toJson(writer, exchangeOneTimeLinkCodeRequest.a());
+            this.f20203b.toJson(writer, exchangeOneTimeLinkCodeRequest.a());
             writer.s();
             return;
         }

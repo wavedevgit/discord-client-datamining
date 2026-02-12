@@ -7,14 +7,14 @@ import ys.z0;
 final class w extends z0 {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f35065q = AtomicIntegerFieldUpdater.newUpdater(w.class, "_invoked$volatile");
+    private static final /* synthetic */ AtomicIntegerFieldUpdater f35066q = AtomicIntegerFieldUpdater.newUpdater(w.class, "_invoked$volatile");
     private volatile /* synthetic */ int _invoked$volatile;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Function1 f35066p;
+    private final Function1 f35067p;
 
     public w(Function1 function1) {
-        this.f35066p = function1;
+        this.f35067p = function1;
     }
 
     @Override // ys.z0
@@ -24,8 +24,8 @@ final class w extends z0 {
 
     @Override // ys.z0
     public void w(Throwable th2) {
-        if (f35065q.compareAndSet(this, 0, 1)) {
-            this.f35066p.invoke(th2);
+        if (f35066q.compareAndSet(this, 0, 1)) {
+            this.f35067p.invoke(th2);
         }
     }
 }

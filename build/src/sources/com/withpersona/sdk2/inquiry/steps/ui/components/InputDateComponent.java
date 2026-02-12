@@ -22,28 +22,28 @@ public final class InputDateComponent implements k5, s, v, e0 {
     public static final Parcelable.Creator<InputDateComponent> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f20655d;
+    private final String f20656d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f20656e;
+    private final String f20657e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f20657i;
+    private final JsonLogicBoolean f20658i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final JsonLogicBoolean f20658o;
+    private final JsonLogicBoolean f20659o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final String f20659p;
+    private final String f20660p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final List f20660q;
+    private final List f20661q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final List f20661r;
+    private final List f20662r;
 
     /* renamed from: s  reason: collision with root package name */
-    private qq.e f20662s;
+    private qq.e f20663s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -64,34 +64,34 @@ public final class InputDateComponent implements k5, s, v, e0 {
     public InputDateComponent(String name, String str, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, String str2, List monthList) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(monthList, "monthList");
-        this.f20655d = name;
-        this.f20656e = str;
-        this.f20657i = jsonLogicBoolean;
-        this.f20658o = jsonLogicBoolean2;
-        this.f20659p = str2;
-        this.f20660q = monthList;
-        this.f20661r = new ArrayList();
-        this.f20662s = new qq.e(str, str2, monthList);
+        this.f20656d = name;
+        this.f20657e = str;
+        this.f20658i = jsonLogicBoolean;
+        this.f20659o = jsonLogicBoolean2;
+        this.f20660p = str2;
+        this.f20661q = monthList;
+        this.f20662r = new ArrayList();
+        this.f20663s = new qq.e(str, str2, monthList);
     }
 
     public static /* synthetic */ InputDateComponent e(InputDateComponent inputDateComponent, String str, String str2, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, String str3, List list, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = inputDateComponent.f20655d;
+            str = inputDateComponent.f20656d;
         }
         if ((i10 & 2) != 0) {
-            str2 = inputDateComponent.f20656e;
+            str2 = inputDateComponent.f20657e;
         }
         if ((i10 & 4) != 0) {
-            jsonLogicBoolean = inputDateComponent.f20657i;
+            jsonLogicBoolean = inputDateComponent.f20658i;
         }
         if ((i10 & 8) != 0) {
-            jsonLogicBoolean2 = inputDateComponent.f20658o;
+            jsonLogicBoolean2 = inputDateComponent.f20659o;
         }
         if ((i10 & 16) != 0) {
-            str3 = inputDateComponent.f20659p;
+            str3 = inputDateComponent.f20660p;
         }
         if ((i10 & 32) != 0) {
-            list = inputDateComponent.f20660q;
+            list = inputDateComponent.f20661q;
         }
         String str4 = str3;
         List list2 = list;
@@ -104,7 +104,7 @@ public final class InputDateComponent implements k5, s, v, e0 {
 
     @Override // pq.s
     public qq.e b() {
-        return this.f20662s;
+        return this.f20663s;
     }
 
     public final InputDateComponent c(String name, String str, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, String str2, List monthList) {
@@ -115,7 +115,7 @@ public final class InputDateComponent implements k5, s, v, e0 {
 
     @Override // pq.e0
     public List d() {
-        return this.f20661r;
+        return this.f20662r;
     }
 
     @Override // android.os.Parcelable
@@ -129,14 +129,14 @@ public final class InputDateComponent implements k5, s, v, e0 {
         }
         if (obj instanceof InputDateComponent) {
             InputDateComponent inputDateComponent = (InputDateComponent) obj;
-            return Intrinsics.areEqual(this.f20655d, inputDateComponent.f20655d) && Intrinsics.areEqual(this.f20656e, inputDateComponent.f20656e) && Intrinsics.areEqual(this.f20657i, inputDateComponent.f20657i) && Intrinsics.areEqual(this.f20658o, inputDateComponent.f20658o) && Intrinsics.areEqual(this.f20659p, inputDateComponent.f20659p) && Intrinsics.areEqual(this.f20660q, inputDateComponent.f20660q);
+            return Intrinsics.areEqual(this.f20656d, inputDateComponent.f20656d) && Intrinsics.areEqual(this.f20657e, inputDateComponent.f20657e) && Intrinsics.areEqual(this.f20658i, inputDateComponent.f20658i) && Intrinsics.areEqual(this.f20659o, inputDateComponent.f20659o) && Intrinsics.areEqual(this.f20660p, inputDateComponent.f20660p) && Intrinsics.areEqual(this.f20661q, inputDateComponent.f20661q);
         }
         return false;
     }
 
     public void f(qq.e eVar) {
         Intrinsics.checkNotNullParameter(eVar, "<set-?>");
-        this.f20662s = eVar;
+        this.f20663s = eVar;
     }
 
     @Override // pq.s
@@ -149,50 +149,50 @@ public final class InputDateComponent implements k5, s, v, e0 {
 
     @Override // pq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f20658o;
+        return this.f20659o;
     }
 
     @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f20657i;
+        return this.f20658i;
     }
 
     @Override // pq.k5
     public String getName() {
-        return this.f20655d;
+        return this.f20656d;
     }
 
     public int hashCode() {
-        int hashCode = this.f20655d.hashCode() * 31;
-        String str = this.f20656e;
+        int hashCode = this.f20656d.hashCode() * 31;
+        String str = this.f20657e;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f20657i;
+        JsonLogicBoolean jsonLogicBoolean = this.f20658i;
         int hashCode3 = (hashCode2 + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20658o;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20659o;
         int hashCode4 = (hashCode3 + (jsonLogicBoolean2 == null ? 0 : jsonLogicBoolean2.hashCode())) * 31;
-        String str2 = this.f20659p;
-        return ((hashCode4 + (str2 != null ? str2.hashCode() : 0)) * 31) + this.f20660q.hashCode();
+        String str2 = this.f20660p;
+        return ((hashCode4 + (str2 != null ? str2.hashCode() : 0)) * 31) + this.f20661q.hashCode();
     }
 
     public String toString() {
-        String str = this.f20655d;
-        String str2 = this.f20656e;
-        JsonLogicBoolean jsonLogicBoolean = this.f20657i;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20658o;
-        String str3 = this.f20659p;
-        List list = this.f20660q;
+        String str = this.f20656d;
+        String str2 = this.f20657e;
+        JsonLogicBoolean jsonLogicBoolean = this.f20658i;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20659o;
+        String str3 = this.f20660p;
+        List list = this.f20661q;
         return "InputDateComponent(name=" + str + ", value=" + str2 + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ", monthPlaceholder=" + str3 + ", monthList=" + list + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f20655d);
-        dest.writeString(this.f20656e);
-        dest.writeParcelable(this.f20657i, i10);
-        dest.writeParcelable(this.f20658o, i10);
-        dest.writeString(this.f20659p);
-        dest.writeStringList(this.f20660q);
+        dest.writeString(this.f20656d);
+        dest.writeString(this.f20657e);
+        dest.writeParcelable(this.f20658i, i10);
+        dest.writeParcelable(this.f20659o, i10);
+        dest.writeString(this.f20660p);
+        dest.writeStringList(this.f20661q);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

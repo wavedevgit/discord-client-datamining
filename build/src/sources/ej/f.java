@@ -13,16 +13,16 @@ import java.util.Map;
 public final class f implements bj.e {
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Charset f22871f = Charset.forName("UTF-8");
+    private static final Charset f22872f = Charset.forName("UTF-8");
 
     /* renamed from: g  reason: collision with root package name */
-    private static final bj.c f22872g = bj.c.a("key").b(ej.a.b().c(1).a()).a();
+    private static final bj.c f22873g = bj.c.a("key").b(ej.a.b().c(1).a()).a();
 
     /* renamed from: h  reason: collision with root package name */
-    private static final bj.c f22873h = bj.c.a("value").b(ej.a.b().c(2).a()).a();
+    private static final bj.c f22874h = bj.c.a("value").b(ej.a.b().c(2).a()).a();
 
     /* renamed from: i  reason: collision with root package name */
-    private static final bj.d f22874i = new bj.d() { // from class: ej.e
+    private static final bj.d f22875i = new bj.d() { // from class: ej.e
         @Override // bj.d
         public final void a(Object obj, Object obj2) {
             f.a((Map.Entry) obj, (bj.e) obj2);
@@ -30,40 +30,40 @@ public final class f implements bj.e {
     };
 
     /* renamed from: a  reason: collision with root package name */
-    private OutputStream f22875a;
+    private OutputStream f22876a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f22876b;
+    private final Map f22877b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f22877c;
+    private final Map f22878c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final bj.d f22878d;
+    private final bj.d f22879d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final i f22879e = new i(this);
+    private final i f22880e = new i(this);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f22880a;
+        static final /* synthetic */ int[] f22881a;
 
         static {
             int[] iArr = new int[d.a.values().length];
-            f22880a = iArr;
+            f22881a = iArr;
             try {
                 iArr[d.a.DEFAULT.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f22880a[d.a.SIGNED.ordinal()] = 2;
+                f22881a[d.a.SIGNED.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f22880a[d.a.FIXED.ordinal()] = 3;
+                f22881a[d.a.FIXED.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -71,15 +71,15 @@ public final class f implements bj.e {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(OutputStream outputStream, Map map, Map map2, bj.d dVar) {
-        this.f22875a = outputStream;
-        this.f22876b = map;
-        this.f22877c = map2;
-        this.f22878d = dVar;
+        this.f22876a = outputStream;
+        this.f22877b = map;
+        this.f22878c = map2;
+        this.f22879d = dVar;
     }
 
     public static /* synthetic */ void a(Map.Entry entry, bj.e eVar) {
-        eVar.e(f22872g, entry.getKey());
-        eVar.e(f22873h, entry.getValue());
+        eVar.e(f22873g, entry.getKey());
+        eVar.e(f22874h, entry.getValue());
     }
 
     private static ByteBuffer m(int i10) {
@@ -89,10 +89,10 @@ public final class f implements bj.e {
     private long n(bj.d dVar, Object obj) {
         b bVar = new b();
         try {
-            OutputStream outputStream = this.f22875a;
-            this.f22875a = bVar;
+            OutputStream outputStream = this.f22876a;
+            this.f22876a = bVar;
             dVar.a(obj, this);
-            this.f22875a = outputStream;
+            this.f22876a = outputStream;
             long a10 = bVar.a();
             bVar.close();
             return a10;
@@ -118,8 +118,8 @@ public final class f implements bj.e {
     }
 
     private f p(bj.f fVar, bj.c cVar, Object obj, boolean z10) {
-        this.f22879e.c(cVar, z10);
-        fVar.a(obj, this.f22879e);
+        this.f22880e.c(cVar, z10);
+        fVar.a(obj, this.f22880e);
         return this;
     }
 
@@ -141,18 +141,18 @@ public final class f implements bj.e {
 
     private void t(int i10) {
         while ((i10 & (-128)) != 0) {
-            this.f22875a.write((i10 & 127) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+            this.f22876a.write((i10 & 127) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
             i10 >>>= 7;
         }
-        this.f22875a.write(i10 & 127);
+        this.f22876a.write(i10 & 127);
     }
 
     private void u(long j10) {
         while (((-128) & j10) != 0) {
-            this.f22875a.write((((int) j10) & 127) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+            this.f22876a.write((((int) j10) & 127) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
             j10 >>>= 7;
         }
-        this.f22875a.write(((int) j10) & 127);
+        this.f22876a.write(((int) j10) & 127);
     }
 
     bj.e d(bj.c cVar, double d10, boolean z10) {
@@ -160,7 +160,7 @@ public final class f implements bj.e {
             return this;
         }
         t((s(cVar) << 3) | 1);
-        this.f22875a.write(m(8).putDouble(d10).array());
+        this.f22876a.write(m(8).putDouble(d10).array());
         return this;
     }
 
@@ -174,7 +174,7 @@ public final class f implements bj.e {
             return this;
         }
         t((s(cVar) << 3) | 5);
-        this.f22875a.write(m(4).putFloat(f10).array());
+        this.f22876a.write(m(4).putFloat(f10).array());
         return this;
     }
 
@@ -185,9 +185,9 @@ public final class f implements bj.e {
                 CharSequence charSequence = (CharSequence) obj;
                 if (!z10 || charSequence.length() != 0) {
                     t((s(cVar) << 3) | 2);
-                    byte[] bytes = charSequence.toString().getBytes(f22871f);
+                    byte[] bytes = charSequence.toString().getBytes(f22872f);
                     t(bytes.length);
-                    this.f22875a.write(bytes);
+                    this.f22876a.write(bytes);
                     return this;
                 }
             } else if (obj instanceof Collection) {
@@ -196,7 +196,7 @@ public final class f implements bj.e {
                 }
             } else if (obj instanceof Map) {
                 for (Map.Entry entry : ((Map) obj).entrySet()) {
-                    o(f22874i, cVar, entry, false);
+                    o(f22875i, cVar, entry, false);
                 }
             } else if (obj instanceof Double) {
                 return d(cVar, ((Double) obj).doubleValue(), z10);
@@ -215,15 +215,15 @@ public final class f implements bj.e {
                     if (!z10 || bArr.length != 0) {
                         t((s(cVar) << 3) | 2);
                         t(bArr.length);
-                        this.f22875a.write(bArr);
+                        this.f22876a.write(bArr);
                         return this;
                     }
                 } else {
-                    bj.d dVar = (bj.d) this.f22876b.get(obj.getClass());
+                    bj.d dVar = (bj.d) this.f22877b.get(obj.getClass());
                     if (dVar != null) {
                         return o(dVar, cVar, obj, z10);
                     }
-                    bj.f fVar = (bj.f) this.f22877c.get(obj.getClass());
+                    bj.f fVar = (bj.f) this.f22878c.get(obj.getClass());
                     if (fVar != null) {
                         return p(fVar, cVar, obj, z10);
                     }
@@ -233,7 +233,7 @@ public final class f implements bj.e {
                     if (obj instanceof Enum) {
                         return b(cVar, ((Enum) obj).ordinal());
                     }
-                    return o(this.f22878d, cVar, obj, z10);
+                    return o(this.f22879d, cVar, obj, z10);
                 }
             }
         }
@@ -249,12 +249,12 @@ public final class f implements bj.e {
     f i(bj.c cVar, int i10, boolean z10) {
         if (!z10 || i10 != 0) {
             d r10 = r(cVar);
-            int i11 = a.f22880a[r10.intEncoding().ordinal()];
+            int i11 = a.f22881a[r10.intEncoding().ordinal()];
             if (i11 != 1) {
                 if (i11 != 2) {
                     if (i11 == 3) {
                         t((r10.tag() << 3) | 5);
-                        this.f22875a.write(m(4).putInt(i10).array());
+                        this.f22876a.write(m(4).putInt(i10).array());
                         return this;
                     }
                 } else {
@@ -280,12 +280,12 @@ public final class f implements bj.e {
     f k(bj.c cVar, long j10, boolean z10) {
         if (!z10 || j10 != 0) {
             d r10 = r(cVar);
-            int i10 = a.f22880a[r10.intEncoding().ordinal()];
+            int i10 = a.f22881a[r10.intEncoding().ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 == 3) {
                         t((r10.tag() << 3) | 1);
-                        this.f22875a.write(m(8).putLong(j10).array());
+                        this.f22876a.write(m(8).putLong(j10).array());
                         return this;
                     }
                 } else {
@@ -312,7 +312,7 @@ public final class f implements bj.e {
         if (obj == null) {
             return this;
         }
-        bj.d dVar = (bj.d) this.f22876b.get(obj.getClass());
+        bj.d dVar = (bj.d) this.f22877b.get(obj.getClass());
         if (dVar != null) {
             dVar.a(obj, this);
             return this;

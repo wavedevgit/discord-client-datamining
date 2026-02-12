@@ -49,11 +49,11 @@ final class MediaEngineModule$connectionInstanceSetPingInterval$1 extends kotlin
             }
         }
         this.this$0.getMediaEngine().connectionInstanceSetPingInterval$media_engine_release((int) this.$connectionId, (int) this.$pingInterval);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$connectionInstanceSetPingInterval$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+        return ((MediaEngineModule$connectionInstanceSetPingInterval$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

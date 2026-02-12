@@ -455,10 +455,10 @@ public final class MediaPlayer {
                 log.e(simpleName, "Playback error for feature: " + str, error);
                 if (error instanceof j) {
                     j jVar = (j) error;
-                    if (jVar.f13282t == 1) {
+                    if (jVar.f13283t == 1) {
                         String simpleName2 = AnonymousClass1.class.getSimpleName();
                         Intrinsics.checkNotNullExpressionValue(simpleName2, "getSimpleName(...)");
-                        int i10 = jVar.f13284v;
+                        int i10 = jVar.f13285v;
                         MediaSource mediaSource2 = MediaPlayer.this.getMediaSource();
                         if (mediaSource2 != null) {
                             str2 = mediaSource2.getFeatureTag();
@@ -473,7 +473,7 @@ public final class MediaPlayer {
                         if (defaultTrackSelector != null) {
                             DefaultTrackSelector.d.a E = defaultTrackSelector.E();
                             Intrinsics.checkNotNullExpressionValue(E, "buildUponParameters(...)");
-                            E.v0(jVar.f13284v, true);
+                            E.v0(jVar.f13285v, true);
                             defaultTrackSelector.b0(E.A());
                             MediaPlayer.this.exoPlayer.d();
                             MediaPlayer.this.exoPlayer.e();
@@ -731,11 +731,11 @@ public final class MediaPlayer {
                 Intrinsics.checkNotNullParameter(eventTime, "eventTime");
                 Intrinsics.checkNotNullParameter(loadEventInfo, "loadEventInfo");
                 Intrinsics.checkNotNullParameter(mediaLoadData, "mediaLoadData");
-                if (loadEventInfo.f13418d.isEmpty()) {
+                if (loadEventInfo.f13419d.isEmpty()) {
                     return;
                 }
                 DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;
-                companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f13421g);
+                companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f13422g);
             }
 
             @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
@@ -743,11 +743,11 @@ public final class MediaPlayer {
                 Intrinsics.checkNotNullParameter(eventTime, "eventTime");
                 Intrinsics.checkNotNullParameter(loadEventInfo, "loadEventInfo");
                 Intrinsics.checkNotNullParameter(mediaLoadData, "mediaLoadData");
-                if (loadEventInfo.f13418d.isEmpty()) {
+                if (loadEventInfo.f13419d.isEmpty()) {
                     return;
                 }
                 DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;
-                companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f13421g);
+                companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f13422g);
             }
 
             @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
@@ -756,11 +756,11 @@ public final class MediaPlayer {
                 Intrinsics.checkNotNullParameter(loadEventInfo, "loadEventInfo");
                 Intrinsics.checkNotNullParameter(mediaLoadData, "mediaLoadData");
                 Intrinsics.checkNotNullParameter(error, "error");
-                if (loadEventInfo.f13418d.isEmpty()) {
+                if (loadEventInfo.f13419d.isEmpty()) {
                     return;
                 }
                 DeviceResourceUsageRecorder.Companion companion = DeviceResourceUsageRecorder.Companion;
-                companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f13421g);
+                companion.setMediaPlayerBytesReceived(companion.getMediaPlayerBytesReceived() + loadEventInfo.f13422g);
             }
 
             @Override // com.google.android.exoplayer2.analytics.AnalyticsListener
@@ -1006,33 +1006,33 @@ public final class MediaPlayer {
             return;
         }
         Timeline.d dVar = new Timeline.d();
-        eventTime.f12642b.r(eventTime.f12643c, dVar);
+        eventTime.f12643b.r(eventTime.f12644c, dVar);
         long c10 = si.g.c(dVar.f(), mediaPlayer.exoPlayer.getDuration(), mediaPlayer.exoPlayer.d0());
         Function1<? super MediaPlayFinishedAnalytics, Unit> function1 = mediaPlayer.analyticsListener;
         long b10 = playbackStats.b();
         long c11 = playbackStats.c();
-        int i10 = playbackStats.f12666n;
-        int i11 = playbackStats.f12665m;
-        long j10 = playbackStats.f12661i;
-        MediaItem.h hVar = dVar.f12605i.f12343i;
+        int i10 = playbackStats.f12667n;
+        int i11 = playbackStats.f12666m;
+        long j10 = playbackStats.f12662i;
+        MediaItem.h hVar = dVar.f12606i.f12344i;
         String str = null;
         if (hVar != null) {
-            uri = hVar.f12432d;
+            uri = hVar.f12433d;
         } else {
             uri = null;
         }
         String valueOf = String.valueOf(uri);
         float f10 = ((float) c10) / 1000.0f;
-        MediaItem.h hVar2 = dVar.f12605i.f12343i;
+        MediaItem.h hVar2 = dVar.f12606i.f12344i;
         if (hVar2 != null) {
-            str = hVar2.f12433e;
+            str = hVar2.f12434e;
         }
         function1.invoke(new MediaPlayFinishedAnalytics(b10, c11, i10, i11, j10, valueOf, f10, str, playbackStats.J, playbackStats.K, playbackStats.G, playbackStats.F));
     }
 
     public static final Unit analyticsListener$lambda$2(MediaPlayFinishedAnalytics it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public final void configureDefaultAudioTrackOverride(DefaultTrackSelector defaultTrackSelector) {
@@ -1233,7 +1233,7 @@ public final class MediaPlayer {
                 }
                 int i10 = 0;
                 for (Tracks.a aVar : arrayList) {
-                    i10 += aVar.f12627d;
+                    i10 += aVar.f12628d;
                 }
                 if (i10 > 1) {
                     try {
@@ -1279,7 +1279,7 @@ public final class MediaPlayer {
 
     public static final Unit eventListener$lambda$0(Event it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     private final boolean findAndConfigureAudioRenderer(DefaultTrackSelector defaultTrackSelector, MappingTrackSelector.MappedTrackInfo mappedTrackInfo, int i10) {
@@ -1288,8 +1288,8 @@ public final class MediaPlayer {
         }
         w0 f10 = mappedTrackInfo.f(i10);
         Intrinsics.checkNotNullExpressionValue(f10, "getTrackGroups(...)");
-        int i11 = f10.f46512d;
-        if (i11 > 1 && i11 != 0 && f10.b(0).f46496d != 0) {
+        int i11 = f10.f46513d;
+        if (i11 > 1 && i11 != 0 && f10.b(0).f46497d != 0) {
             DefaultTrackSelector.d.a E = defaultTrackSelector.E();
             Intrinsics.checkNotNullExpressionValue(E, "buildUponParameters(...)");
             E.s0(false);
@@ -1324,7 +1324,7 @@ public final class MediaPlayer {
     }
 
     public static final Unit volumeListener$lambda$1(float f10) {
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public final float bufferedPercentage() {

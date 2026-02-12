@@ -15,34 +15,34 @@ public class g0 extends c0 {
     Matrix C;
 
     /* renamed from: q  reason: collision with root package name */
-    private SVGLength f17766q;
+    private SVGLength f17767q;
 
     /* renamed from: r  reason: collision with root package name */
-    private SVGLength f17767r;
+    private SVGLength f17768r;
 
     /* renamed from: s  reason: collision with root package name */
-    private SVGLength f17768s;
+    private SVGLength f17769s;
 
     /* renamed from: t  reason: collision with root package name */
-    private SVGLength f17769t;
+    private SVGLength f17770t;
 
     /* renamed from: u  reason: collision with root package name */
-    private String f17770u;
+    private String f17771u;
 
     /* renamed from: v  reason: collision with root package name */
-    private String f17771v;
+    private String f17772v;
 
     /* renamed from: w  reason: collision with root package name */
-    private float f17772w;
+    private float f17773w;
 
     /* renamed from: x  reason: collision with root package name */
-    private float f17773x;
+    private float f17774x;
 
     /* renamed from: y  reason: collision with root package name */
-    private float f17774y;
+    private float f17775y;
 
     /* renamed from: z  reason: collision with root package name */
-    private float f17775z;
+    private float f17776z;
 
     public g0(ReactContext reactContext) {
         super(reactContext);
@@ -54,55 +54,55 @@ public class g0 extends c0 {
         double parseDouble;
         int saveAndSetupCanvas = saveAndSetupCanvas(canvas, this.mCTM);
         this.C.reset();
-        m0 m0Var = o0Var.f17875b;
-        this.C.setTranslate((float) m0Var.f17859a, (float) m0Var.f17860b);
-        if ("auto".equals(this.f17771v)) {
+        m0 m0Var = o0Var.f17876b;
+        this.C.setTranslate((float) m0Var.f17860a, (float) m0Var.f17861b);
+        if ("auto".equals(this.f17772v)) {
             parseDouble = -1.0d;
         } else {
-            parseDouble = Double.parseDouble(this.f17771v);
+            parseDouble = Double.parseDouble(this.f17772v);
         }
         if (parseDouble == -1.0d) {
-            parseDouble = o0Var.f17876c;
+            parseDouble = o0Var.f17877c;
         }
         this.C.preRotate(((float) parseDouble) + 180.0f);
-        if ("strokeWidth".equals(this.f17770u)) {
+        if ("strokeWidth".equals(this.f17771u)) {
             Matrix matrix = this.C;
             float f12 = this.mScale;
             matrix.preScale(f11 / f12, f11 / f12);
         }
-        RectF rectF = new RectF(0.0f, 0.0f, (float) relativeOnWidth(this.f17768s), (float) relativeOnHeight(this.f17769t));
+        RectF rectF = new RectF(0.0f, 0.0f, (float) relativeOnWidth(this.f17769s), (float) relativeOnHeight(this.f17770t));
         if (this.A != null) {
-            float f13 = this.f17772w;
+            float f13 = this.f17773w;
             float f14 = this.mScale;
-            float f15 = this.f17773x;
-            Matrix a10 = l1.a(new RectF(f13 * f14, f15 * f14, (f13 + this.f17774y) * f14, (f15 + this.f17775z) * f14), rectF, this.A, this.B);
+            float f15 = this.f17774x;
+            Matrix a10 = l1.a(new RectF(f13 * f14, f15 * f14, (f13 + this.f17775y) * f14, (f15 + this.f17776z) * f14), rectF, this.A, this.B);
             float[] fArr = new float[9];
             a10.getValues(fArr);
             this.C.preScale(fArr[0], fArr[4]);
         }
-        this.C.preTranslate((float) (-relativeOnWidth(this.f17766q)), (float) (-relativeOnHeight(this.f17767r)));
+        this.C.preTranslate((float) (-relativeOnWidth(this.f17767q)), (float) (-relativeOnHeight(this.f17768r)));
         canvas.concat(this.C);
         d(canvas, paint, f10);
         restoreCanvas(canvas, saveAndSetupCanvas);
     }
 
     public void p(Dynamic dynamic) {
-        this.f17769t = SVGLength.b(dynamic);
+        this.f17770t = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void q(String str) {
-        this.f17770u = str;
+        this.f17771u = str;
         invalidate();
     }
 
     public void r(Dynamic dynamic) {
-        this.f17768s = SVGLength.b(dynamic);
+        this.f17769s = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void s(String str) {
-        this.f17771v = str;
+        this.f17772v = str;
         invalidate();
     }
 
@@ -131,32 +131,32 @@ public class g0 extends c0 {
     }
 
     public void setMinX(float f10) {
-        this.f17772w = f10;
+        this.f17773w = f10;
         invalidate();
     }
 
     public void setMinY(float f10) {
-        this.f17773x = f10;
+        this.f17774x = f10;
         invalidate();
     }
 
     public void setVbHeight(float f10) {
-        this.f17775z = f10;
+        this.f17776z = f10;
         invalidate();
     }
 
     public void setVbWidth(float f10) {
-        this.f17774y = f10;
+        this.f17775y = f10;
         invalidate();
     }
 
     public void t(Dynamic dynamic) {
-        this.f17766q = SVGLength.b(dynamic);
+        this.f17767q = SVGLength.b(dynamic);
         invalidate();
     }
 
     public void u(Dynamic dynamic) {
-        this.f17767r = SVGLength.b(dynamic);
+        this.f17768r = SVGLength.b(dynamic);
         invalidate();
     }
 }

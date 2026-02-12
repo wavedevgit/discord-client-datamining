@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_onboarding_home/native/ResourcesRow.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun105395: for (var _fun105395_ip = 0;;) switch (_fun105395_ip) {
+        _fun105462: for (var _fun105462_ip = 0;;) switch (_fun105462_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.guildId;
@@ -161,8 +161,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[0] = var5;
                 var5 = null;
                 if (!var7) {
-                    _fun105395_ip = 310;
-                    continue _fun105395
+                    _fun105462_ip = 310;
+                    continue _fun105462
                 }
             case 140:
                 var8 = _closure1_slot5;
@@ -234,4 +234,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 13718, 33, 1297, 671, 13719, 11711, 3279, 13720, 1307, 4912, 3938, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 13730, 33, 1297, 671, 13731, 11513, 3279, 13732, 1307, 4880, 3938, 1234, 2]);

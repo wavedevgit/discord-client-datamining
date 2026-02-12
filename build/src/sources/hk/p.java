@@ -13,13 +13,13 @@ import rg.xj;
 public final class p extends dk.e implements gk.c {
 
     /* renamed from: s  reason: collision with root package name */
-    private final gk.d f27400s;
+    private final gk.d f27401s;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(d dVar, Executor executor, xj xjVar, gk.d dVar2) {
         super(dVar, executor);
         he heVar;
-        this.f27400s = dVar2;
+        this.f27401s = dVar2;
         ke keVar = new ke();
         if (dVar2.d()) {
             heVar = he.TYPE_THICK;
@@ -37,7 +37,7 @@ public final class p extends dk.e implements gk.c {
 
     @Override // ff.f
     public final com.google.android.gms.common.d[] a() {
-        return b.a(this.f27400s);
+        return b.a(this.f27401s);
     }
 
     @Override // gk.c

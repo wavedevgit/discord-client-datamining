@@ -9,13 +9,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b implements m {
 
     /* renamed from: d  reason: collision with root package name */
-    private final tn.c f19203d;
+    private final tn.c f19204d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f19204a;
+        public static final /* synthetic */ int[] f19205a;
 
         static {
             int[] iArr = new int[Lifecycle.a.values().length];
@@ -47,14 +47,14 @@ public final class b implements m {
                 iArr[Lifecycle.a.ON_ANY.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
-            f19204a = iArr;
+            f19205a = iArr;
         }
     }
 
     public b(Lifecycle screenLifecycle, tn.c appearanceEventEmitter) {
         Intrinsics.checkNotNullParameter(screenLifecycle, "screenLifecycle");
         Intrinsics.checkNotNullParameter(appearanceEventEmitter, "appearanceEventEmitter");
-        this.f19203d = appearanceEventEmitter;
+        this.f19204d = appearanceEventEmitter;
         screenLifecycle.a(this);
     }
 
@@ -66,18 +66,18 @@ public final class b implements m {
     public void i(LifecycleOwner source, Lifecycle.a event) {
         Intrinsics.checkNotNullParameter(source, "source");
         Intrinsics.checkNotNullParameter(event, "event");
-        switch (a.f19204a[event.ordinal()]) {
+        switch (a.f19205a[event.ordinal()]) {
             case 1:
-                this.f19203d.d();
+                this.f19204d.d();
                 return;
             case 2:
-                this.f19203d.c();
+                this.f19204d.c();
                 return;
             case 3:
-                this.f19203d.a();
+                this.f19204d.a();
                 return;
             case 4:
-                this.f19203d.b();
+                this.f19204d.b();
                 return;
             case 5:
                 a(source);

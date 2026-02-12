@@ -17,84 +17,84 @@ import java.util.concurrent.ConcurrentMap;
 public final class c implements Serializable {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final long[] f30633i = new long[0];
+    public static final long[] f30634i = new long[0];
 
     /* renamed from: j  reason: collision with root package name */
-    public static final b[] f30634j = new b[0];
+    public static final b[] f30635j = new b[0];
 
     /* renamed from: k  reason: collision with root package name */
-    public static final LocalDateTime[] f30635k = new LocalDateTime[0];
+    public static final LocalDateTime[] f30636k = new LocalDateTime[0];
 
     /* renamed from: l  reason: collision with root package name */
-    public static final a[] f30636l = new a[0];
+    public static final a[] f30637l = new a[0];
 
     /* renamed from: a  reason: collision with root package name */
-    public final long[] f30637a;
+    public final long[] f30638a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ZoneOffset[] f30638b;
+    public final ZoneOffset[] f30639b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final long[] f30639c;
+    public final long[] f30640c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final LocalDateTime[] f30640d;
+    public final LocalDateTime[] f30641d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final ZoneOffset[] f30641e;
+    public final ZoneOffset[] f30642e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final b[] f30642f;
+    public final b[] f30643f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final TimeZone f30643g;
+    public final TimeZone f30644g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final transient ConcurrentMap f30644h = new ConcurrentHashMap();
+    public final transient ConcurrentMap f30645h = new ConcurrentHashMap();
 
     public static Object a(LocalDateTime localDateTime, a aVar) {
-        LocalDateTime localDateTime2 = aVar.f30630a;
-        if (aVar.f30632c.getTotalSeconds() > aVar.f30631b.getTotalSeconds()) {
+        LocalDateTime localDateTime2 = aVar.f30631a;
+        if (aVar.f30633c.getTotalSeconds() > aVar.f30632b.getTotalSeconds()) {
             if (localDateTime.w(localDateTime2)) {
-                return aVar.f30631b;
+                return aVar.f30632b;
             }
-            LocalDateTime localDateTime3 = aVar.f30630a;
-            if (!localDateTime.w(localDateTime3.E(localDateTime3.f30487a, 0L, 0L, aVar.f30632c.getTotalSeconds() - aVar.f30631b.getTotalSeconds(), 0L))) {
-                return aVar.f30632c;
+            LocalDateTime localDateTime3 = aVar.f30631a;
+            if (!localDateTime.w(localDateTime3.E(localDateTime3.f30488a, 0L, 0L, aVar.f30633c.getTotalSeconds() - aVar.f30632b.getTotalSeconds(), 0L))) {
+                return aVar.f30633c;
             }
         } else if (!localDateTime.w(localDateTime2)) {
-            return aVar.f30632c;
+            return aVar.f30633c;
         } else {
-            LocalDateTime localDateTime4 = aVar.f30630a;
-            if (localDateTime.w(localDateTime4.E(localDateTime4.f30487a, 0L, 0L, aVar.f30632c.getTotalSeconds() - aVar.f30631b.getTotalSeconds(), 0L))) {
-                return aVar.f30631b;
+            LocalDateTime localDateTime4 = aVar.f30631a;
+            if (localDateTime.w(localDateTime4.E(localDateTime4.f30488a, 0L, 0L, aVar.f30633c.getTotalSeconds() - aVar.f30632b.getTotalSeconds(), 0L))) {
+                return aVar.f30632b;
             }
         }
         return aVar;
     }
 
     public c(ZoneOffset zoneOffset) {
-        this.f30638b = r0;
+        this.f30639b = r0;
         ZoneOffset[] zoneOffsetArr = {zoneOffset};
-        long[] jArr = f30633i;
-        this.f30637a = jArr;
-        this.f30639c = jArr;
-        this.f30640d = f30635k;
-        this.f30641e = zoneOffsetArr;
-        this.f30642f = f30634j;
-        this.f30643g = null;
+        long[] jArr = f30634i;
+        this.f30638a = jArr;
+        this.f30640c = jArr;
+        this.f30641d = f30636k;
+        this.f30642e = zoneOffsetArr;
+        this.f30643f = f30635j;
+        this.f30644g = null;
     }
 
     public c(TimeZone timeZone) {
-        this.f30638b = r0;
+        this.f30639b = r0;
         ZoneOffset[] zoneOffsetArr = {g(timeZone.getRawOffset())};
-        long[] jArr = f30633i;
-        this.f30637a = jArr;
-        this.f30639c = jArr;
-        this.f30640d = f30635k;
-        this.f30641e = zoneOffsetArr;
-        this.f30642f = f30634j;
-        this.f30643g = timeZone;
+        long[] jArr = f30634i;
+        this.f30638a = jArr;
+        this.f30640c = jArr;
+        this.f30641d = f30636k;
+        this.f30642e = zoneOffsetArr;
+        this.f30643f = f30635j;
+        this.f30644g = timeZone;
     }
 
     public static ZoneOffset g(int i10) {
@@ -105,36 +105,36 @@ public final class c implements Serializable {
         long[] jArr;
         ZoneOffset[] zoneOffsetArr;
         long addExact;
-        TimeZone timeZone = this.f30643g;
+        TimeZone timeZone = this.f30644g;
         if (timeZone == null) {
-            if (this.f30639c.length == 0) {
-                return this.f30638b[0];
+            if (this.f30640c.length == 0) {
+                return this.f30639b[0];
             }
             long epochSecond = instant.getEpochSecond();
-            if (this.f30642f.length > 0) {
-                if (epochSecond > this.f30639c[jArr.length - 1]) {
-                    a[] b10 = b(c(epochSecond, this.f30641e[zoneOffsetArr.length - 1]));
+            if (this.f30643f.length > 0) {
+                if (epochSecond > this.f30640c[jArr.length - 1]) {
+                    a[] b10 = b(c(epochSecond, this.f30642e[zoneOffsetArr.length - 1]));
                     a aVar = null;
                     for (int i10 = 0; i10 < b10.length; i10++) {
                         aVar = b10[i10];
-                        if (epochSecond < aVar.f30630a.q(aVar.f30631b)) {
-                            return aVar.f30631b;
+                        if (epochSecond < aVar.f30631a.q(aVar.f30632b)) {
+                            return aVar.f30632b;
                         }
                     }
-                    return aVar.f30632c;
+                    return aVar.f30633c;
                 }
             }
-            int binarySearch = Arrays.binarySearch(this.f30639c, epochSecond);
+            int binarySearch = Arrays.binarySearch(this.f30640c, epochSecond);
             if (binarySearch < 0) {
                 binarySearch = (-binarySearch) - 2;
             }
-            return this.f30641e[binarySearch + 1];
+            return this.f30642e[binarySearch + 1];
         }
-        long j10 = instant.f30480a;
-        if (j10 < 0 && instant.f30481b > 0) {
-            addExact = Math.addExact(Math.multiplyExact(j10 + 1, 1000L), (instant.f30481b / 1000000) - 1000);
+        long j10 = instant.f30481a;
+        if (j10 < 0 && instant.f30482b > 0) {
+            addExact = Math.addExact(Math.multiplyExact(j10 + 1, 1000L), (instant.f30482b / 1000000) - 1000);
         } else {
-            addExact = Math.addExact(Math.multiplyExact(j10, 1000L), instant.f30481b / 1000000);
+            addExact = Math.addExact(Math.multiplyExact(j10, 1000L), instant.f30482b / 1000000);
         }
         return g(timeZone.getOffset(addExact));
     }
@@ -143,10 +143,10 @@ public final class c implements Serializable {
         Object e10 = e(localDateTime);
         if (e10 instanceof a) {
             a aVar = (a) e10;
-            if (aVar.f30632c.getTotalSeconds() > aVar.f30631b.getTotalSeconds()) {
+            if (aVar.f30633c.getTotalSeconds() > aVar.f30632b.getTotalSeconds()) {
                 return Collections.EMPTY_LIST;
             }
-            return Arrays.asList(aVar.f30631b, aVar.f30632c);
+            return Arrays.asList(aVar.f30632b, aVar.f30633c);
         }
         return Collections.singletonList((ZoneOffset) e10);
     }
@@ -155,7 +155,7 @@ public final class c implements Serializable {
         if (r8.r(r0) > 0) goto L30;
      */
     /* JADX WARN: Code restructure failed: missing block: B:33:0x0087, code lost:
-        if (r8.f30488b.G() <= r0.f30488b.G()) goto L47;
+        if (r8.f30489b.G() <= r0.f30489b.G()) goto L47;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -170,42 +170,42 @@ public final class c implements Serializable {
     }
 
     public final a[] b(int i10) {
-        a[] aVarArr = f30636l;
+        a[] aVarArr = f30637l;
         Integer valueOf = Integer.valueOf(i10);
-        a[] aVarArr2 = (a[]) ((ConcurrentHashMap) this.f30644h).get(valueOf);
+        a[] aVarArr2 = (a[]) ((ConcurrentHashMap) this.f30645h).get(valueOf);
         if (aVarArr2 != null) {
             return aVarArr2;
         }
-        if (this.f30643g == null) {
-            b[] bVarArr = this.f30642f;
+        if (this.f30644g == null) {
+            b[] bVarArr = this.f30643f;
             a[] aVarArr3 = new a[bVarArr.length];
             if (bVarArr.length > 0) {
                 b bVar = bVarArr[0];
                 throw null;
             }
             if (i10 < 2100) {
-                ((ConcurrentHashMap) this.f30644h).putIfAbsent(valueOf, aVarArr3);
+                ((ConcurrentHashMap) this.f30645h).putIfAbsent(valueOf, aVarArr3);
             }
             return aVarArr3;
         } else if (i10 < 1800) {
             return aVarArr;
         } else {
-            LocalDateTime localDateTime = LocalDateTime.f30485c;
+            LocalDateTime localDateTime = LocalDateTime.f30486c;
             LocalDate of2 = LocalDate.of(i10 - 1, 12, 31);
             LocalTime localTime = LocalTime.MIN;
             j$.time.temporal.a.HOUR_OF_DAY.E(0);
-            long q10 = new LocalDateTime(of2, LocalTime.f30490f[0]).q(this.f30638b[0]);
+            long q10 = new LocalDateTime(of2, LocalTime.f30491f[0]).q(this.f30639b[0]);
             long j10 = 1000;
-            int offset = this.f30643g.getOffset(q10 * 1000);
+            int offset = this.f30644g.getOffset(q10 * 1000);
             long j11 = 31968000 + q10;
             while (q10 < j11) {
                 long j12 = 7776000 + q10;
                 long j13 = j10;
-                if (offset != this.f30643g.getOffset(j12 * j13)) {
+                if (offset != this.f30644g.getOffset(j12 * j13)) {
                     while (j12 - q10 > 1) {
                         long j14 = q10;
                         long floorDiv = Math.floorDiv(j12 + q10, 2L);
-                        if (this.f30643g.getOffset(floorDiv * j13) == offset) {
+                        if (this.f30644g.getOffset(floorDiv * j13) == offset) {
                             q10 = floorDiv;
                         } else {
                             j12 = floorDiv;
@@ -213,9 +213,9 @@ public final class c implements Serializable {
                         }
                     }
                     long j15 = q10;
-                    q10 = this.f30643g.getOffset(j15 * j13) != offset ? j15 : j12;
+                    q10 = this.f30644g.getOffset(j15 * j13) != offset ? j15 : j12;
                     ZoneOffset g10 = g(offset);
-                    int offset2 = this.f30643g.getOffset(q10 * j13);
+                    int offset2 = this.f30644g.getOffset(q10 * j13);
                     ZoneOffset g11 = g(offset2);
                     if (c(q10, g11) == i10) {
                         aVarArr = (a[]) Arrays.copyOf(aVarArr, aVarArr.length + 1);
@@ -228,7 +228,7 @@ public final class c implements Serializable {
                 j10 = j13;
             }
             if (1916 <= i10 && i10 < 2100) {
-                ((ConcurrentHashMap) this.f30644h).putIfAbsent(valueOf, aVarArr);
+                ((ConcurrentHashMap) this.f30645h).putIfAbsent(valueOf, aVarArr);
             }
             return aVarArr;
         }
@@ -244,7 +244,7 @@ public final class c implements Serializable {
         }
         if (obj instanceof c) {
             c cVar = (c) obj;
-            if (Objects.equals(this.f30643g, cVar.f30643g) && Arrays.equals(this.f30637a, cVar.f30637a) && Arrays.equals(this.f30638b, cVar.f30638b) && Arrays.equals(this.f30639c, cVar.f30639c) && Arrays.equals(this.f30641e, cVar.f30641e) && Arrays.equals(this.f30642f, cVar.f30642f)) {
+            if (Objects.equals(this.f30644g, cVar.f30644g) && Arrays.equals(this.f30638a, cVar.f30638a) && Arrays.equals(this.f30639b, cVar.f30639b) && Arrays.equals(this.f30640c, cVar.f30640c) && Arrays.equals(this.f30642e, cVar.f30642e) && Arrays.equals(this.f30643f, cVar.f30643f)) {
                 return true;
             }
         }
@@ -252,15 +252,15 @@ public final class c implements Serializable {
     }
 
     public final int hashCode() {
-        return ((((Objects.hashCode(this.f30643g) ^ Arrays.hashCode(this.f30637a)) ^ Arrays.hashCode(this.f30638b)) ^ Arrays.hashCode(this.f30639c)) ^ Arrays.hashCode(this.f30641e)) ^ Arrays.hashCode(this.f30642f);
+        return ((((Objects.hashCode(this.f30644g) ^ Arrays.hashCode(this.f30638a)) ^ Arrays.hashCode(this.f30639b)) ^ Arrays.hashCode(this.f30640c)) ^ Arrays.hashCode(this.f30642e)) ^ Arrays.hashCode(this.f30643f);
     }
 
     public final String toString() {
-        if (this.f30643g != null) {
-            return "ZoneRules[timeZone=" + this.f30643g.getID() + "]";
+        if (this.f30644g != null) {
+            return "ZoneRules[timeZone=" + this.f30644g.getID() + "]";
         }
         StringBuilder sb2 = new StringBuilder("ZoneRules[currentStandardOffset=");
-        ZoneOffset[] zoneOffsetArr = this.f30638b;
+        ZoneOffset[] zoneOffsetArr = this.f30639b;
         sb2.append(zoneOffsetArr[zoneOffsetArr.length - 1]);
         sb2.append("]");
         return sb2.toString();

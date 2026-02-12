@@ -285,7 +285,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         case 27:
                             var2 = _closure2_slot1;
                             if (!(var3 != var2)) {
-                                _fun5828_ip = 56;
+                                _fun5828_ip = 57;
                                 continue _fun5828
                             }
                         case 35:
@@ -294,7 +294,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = var2.value;
                             var2 = undefined;
                             var2 = var4.bind(var2)(var3);
-                        case 56:
+                        case 57:
                             var2 = _closure2_slot5;
                             var1 = {};
                             var0 = var0.nativeEvent;

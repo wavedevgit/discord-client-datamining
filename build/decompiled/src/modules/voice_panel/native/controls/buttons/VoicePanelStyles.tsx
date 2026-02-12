@@ -137,4 +137,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useVoicePanelButtonStyles = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1297, 671, 8247, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1297, 671, 7643, 2]);

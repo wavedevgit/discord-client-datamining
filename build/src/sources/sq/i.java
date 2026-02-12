@@ -11,39 +11,39 @@ import com.google.android.material.checkbox.MaterialCheckBox;
 public final class i implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f48245a;
+    private final ConstraintLayout f48246a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final MaterialCheckBox f48246b;
+    public final MaterialCheckBox f48247b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final TextView f48247c;
+    public final TextView f48248c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final TextView f48248d;
+    public final TextView f48249d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final TextView f48249e;
+    public final TextView f48250e;
 
     private i(ConstraintLayout constraintLayout, MaterialCheckBox materialCheckBox, TextView textView, TextView textView2, TextView textView3) {
-        this.f48245a = constraintLayout;
-        this.f48246b = materialCheckBox;
-        this.f48247c = textView;
-        this.f48248d = textView2;
-        this.f48249e = textView3;
+        this.f48246a = constraintLayout;
+        this.f48247b = materialCheckBox;
+        this.f48248c = textView;
+        this.f48249d = textView2;
+        this.f48250e = textView3;
     }
 
     public static i a(View view) {
-        int i10 = nq.e.f38276o;
+        int i10 = nq.e.f38277o;
         MaterialCheckBox materialCheckBox = (MaterialCheckBox) e4.a.a(view, i10);
         if (materialCheckBox != null) {
-            i10 = nq.e.f38278p;
+            i10 = nq.e.f38279p;
             TextView textView = (TextView) e4.a.a(view, i10);
             if (textView != null) {
-                i10 = nq.e.f38280q;
+                i10 = nq.e.f38281q;
                 TextView textView2 = (TextView) e4.a.a(view, i10);
                 if (textView2 != null) {
-                    i10 = nq.e.f38288u;
+                    i10 = nq.e.f38289u;
                     TextView textView3 = (TextView) e4.a.a(view, i10);
                     if (textView3 != null) {
                         return new i((ConstraintLayout) view, materialCheckBox, textView, textView2, textView3);
@@ -59,7 +59,7 @@ public final class i implements ViewBinding {
     }
 
     public static i d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(nq.f.f38309j, viewGroup, false);
+        View inflate = layoutInflater.inflate(nq.f.f38310j, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -69,6 +69,6 @@ public final class i implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f48245a;
+        return this.f48246a;
     }
 }

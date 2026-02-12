@@ -15,7 +15,7 @@ public abstract class s {
     public static final void b(View view, final Function0 onPreDraw) {
         Intrinsics.checkNotNullParameter(view, "<this>");
         Intrinsics.checkNotNullParameter(onPreDraw, "onPreDraw");
-        g.f35974o.a(view, new Runnable() { // from class: lq.r
+        g.f35975o.a(view, new Runnable() { // from class: lq.r
             @Override // java.lang.Runnable
             public final void run() {
                 s.c(Function0.this);

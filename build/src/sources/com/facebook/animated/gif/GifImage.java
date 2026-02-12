@@ -13,10 +13,10 @@ import p8.j;
 public class GifImage implements c, ia.c {
 
     /* renamed from: b  reason: collision with root package name */
-    private static volatile boolean f10526b;
+    private static volatile boolean f10527b;
 
     /* renamed from: a  reason: collision with root package name */
-    private Bitmap.Config f10527a = null;
+    private Bitmap.Config f10528a = null;
     @d
     private long mNativeContext;
 
@@ -27,8 +27,8 @@ public class GifImage implements c, ia.c {
     public static GifImage f(ByteBuffer byteBuffer, ImageDecodeOptions imageDecodeOptions) {
         h();
         byteBuffer.rewind();
-        GifImage nativeCreateFromDirectByteBuffer = nativeCreateFromDirectByteBuffer(byteBuffer, imageDecodeOptions.f11045b, imageDecodeOptions.f11050g);
-        nativeCreateFromDirectByteBuffer.f10527a = imageDecodeOptions.f11052i;
+        GifImage nativeCreateFromDirectByteBuffer = nativeCreateFromDirectByteBuffer(byteBuffer, imageDecodeOptions.f11046b, imageDecodeOptions.f11051g);
+        nativeCreateFromDirectByteBuffer.f10528a = imageDecodeOptions.f11053i;
         return nativeCreateFromDirectByteBuffer;
     }
 
@@ -41,15 +41,15 @@ public class GifImage implements c, ia.c {
             z10 = false;
         }
         j.b(Boolean.valueOf(z10));
-        GifImage nativeCreateFromNativeMemory = nativeCreateFromNativeMemory(j10, i10, imageDecodeOptions.f11045b, imageDecodeOptions.f11050g);
-        nativeCreateFromNativeMemory.f10527a = imageDecodeOptions.f11052i;
+        GifImage nativeCreateFromNativeMemory = nativeCreateFromNativeMemory(j10, i10, imageDecodeOptions.f11046b, imageDecodeOptions.f11051g);
+        nativeCreateFromNativeMemory.f10528a = imageDecodeOptions.f11053i;
         return nativeCreateFromNativeMemory;
     }
 
     private static synchronized void h() {
         synchronized (GifImage.class) {
-            if (!f10526b) {
-                f10526b = true;
+            if (!f10527b) {
+                f10527b = true;
                 a.d("gifimage");
             }
         }
@@ -187,7 +187,7 @@ public class GifImage implements c, ia.c {
 
     @Override // ha.c
     public Bitmap.Config y() {
-        return this.f10527a;
+        return this.f10528a;
     }
 
     @d

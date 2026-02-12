@@ -5,13 +5,13 @@ import android.graphics.Typeface;
 public final class a extends f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Typeface f45239a;
+    private final Typeface f45240a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final InterfaceC0604a f45240b;
+    private final InterfaceC0604a f45241b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f45241c;
+    private boolean f45242c;
 
     /* renamed from: qh.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -20,19 +20,19 @@ public final class a extends f {
     }
 
     public a(InterfaceC0604a interfaceC0604a, Typeface typeface) {
-        this.f45239a = typeface;
-        this.f45240b = interfaceC0604a;
+        this.f45240a = typeface;
+        this.f45241b = interfaceC0604a;
     }
 
     private void d(Typeface typeface) {
-        if (!this.f45241c) {
-            this.f45240b.a(typeface);
+        if (!this.f45242c) {
+            this.f45241b.a(typeface);
         }
     }
 
     @Override // qh.f
     public void a(int i10) {
-        d(this.f45239a);
+        d(this.f45240a);
     }
 
     @Override // qh.f
@@ -41,6 +41,6 @@ public final class a extends f {
     }
 
     public void c() {
-        this.f45241c = true;
+        this.f45242c = true;
     }
 }

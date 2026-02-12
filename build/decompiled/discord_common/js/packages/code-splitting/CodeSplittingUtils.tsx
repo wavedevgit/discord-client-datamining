@@ -1,7 +1,7 @@
 // ../discord_common/js/packages/code-splitting/CodeSplittingUtils.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun25627: for (var _fun25627_ip = 0;;) switch (_fun25627_ip) {
+    _fun25643: for (var _fun25643_ip = 0;;) switch (_fun25643_ip) {
         case 0:
             var11 = require;
             var2 = exports;
@@ -35,13 +35,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var3.Fragment;
             var _closure1_slot5 = var3;
             var3 = function() {
-                _fun25628: for (var _fun25628_ip = 0;;) switch (_fun25628_ip) {
+                _fun25644: for (var _fun25644_ip = 0;;) switch (_fun25644_ip) {
                     case 0:
                         var1 = arguments[0];
                         var2 = undefined;
                         if (!(var1 === var2)) {
-                            _fun25628_ip = 15;
-                            continue _fun25628
+                            _fun25644_ip = 15;
+                            continue _fun25644
                         }
                     case 11:
                         var1 = 'transparent';
@@ -83,13 +83,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var12 = var11.bind(var0)(var12);
                     var12 = var12[var13];
                     var2[var13] = var12;
-                    _fun25627_ip = 178;
-                    continue _fun25627;
+                    _fun25643_ip = 178;
+                    continue _fun25643;
                 }
         case 209:
             var2.loaderMaker = var3;
             var3 = function arg0() {
-                _fun25630: for (var _fun25630_ip = 0;;) switch (_fun25630_ip) {
+                _fun25646: for (var _fun25646_ip = 0;;) switch (_fun25646_ip) {
                     case 0:
                         var1 = arg0;
                         var2 = var1.createPromise;
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var1.memo;
                         var1 = undefined;
                         if (!(var2 === var1)) {
-                            _fun25630_ip = 55;
-                            continue _fun25630
+                            _fun25646_ip = 55;
+                            continue _fun25646
                         }
                     case 53:
                         var2 = false;
@@ -130,7 +130,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var5.bind(var6)(var3);
                         _closure2_slot3 = var3;
                         var3 = function arg0() {
-                            _fun25632: for (var _fun25632_ip = 0;;) switch (_fun25632_ip) {
+                            _fun25648: for (var _fun25648_ip = 0;;) switch (_fun25648_ip) {
                                 case 0:
                                     var3 = _closure1_slot4;
                                     var0 = _closure1_slot3;
@@ -139,16 +139,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var6 = _closure2_slot2;
                                     var5 = null;
                                     if (!(var5 == var6)) {
-                                        _fun25632_ip = 48;
-                                        continue _fun25632
+                                        _fun25648_ip = 48;
+                                        continue _fun25648
                                     }
                                 case 32:
                                     var5 = _closure1_slot6;
                                     var6 = undefined;
                                     var5 = var5.bind(var6)();
                                     var5 = var5.bind(var6)();
-                                    _fun25632_ip = 58;
-                                    continue _fun25632;
+                                    _fun25648_ip = 58;
+                                    continue _fun25648;
                                 case 48:
                                     var7 = _closure2_slot2;
                                     var6 = undefined;
@@ -170,8 +170,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         };
                         var0 = var3;
                         if (!var2) {
-                            _fun25630_ip = 111;
-                            continue _fun25630
+                            _fun25646_ip = 111;
+                            continue _fun25646
                         }
                     case 97:
                         var2 = _closure1_slot3;
@@ -179,8 +179,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = var1.bind(var2)(var3);
                     case 111:
                         if (var4) {
-                            _fun25630_ip = 118;
-                            continue _fun25630
+                            _fun25646_ip = 118;
+                            continue _fun25646
                         }
                     case 114:
                         var4 = 'Unknown';
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.makeLazy = var3;
             var1 = function arg0() {
-                _fun25633: for (var _fun25633_ip = 0;;) switch (_fun25633_ip) {
+                _fun25649: for (var _fun25649_ip = 0;;) switch (_fun25649_ip) {
                     case 0:
                         var0 = arg0;
                         var2 = var0.createPromise;
@@ -252,13 +252,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = _closure1_slot5;
                         var0 = {};
                         if (!(var7 != var4)) {
-                            _fun25633_ip = 129;
-                            continue _fun25633
+                            _fun25649_ip = 129;
+                            continue _fun25649
                         }
                     case 122:
                         var4 = var6.bind(var3)(var4);
-                        _fun25633_ip = 133;
-                        continue _fun25633;
+                        _fun25649_ip = 133;
+                        continue _fun25649;
                     case 129:
                         var4 = var5.bind(var3)();
                     case 133:

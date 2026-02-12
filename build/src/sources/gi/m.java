@@ -10,13 +10,13 @@ import java.util.Set;
 public abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Set f25718a = new HashSet(Arrays.asList("native", "unity"));
+    private static final Set f25719a = new HashSet(Arrays.asList("native", "unity"));
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Map f25719b = new HashMap();
+    private static final Map f25720b = new HashMap();
 
     /* renamed from: c  reason: collision with root package name */
-    private static final hi.i f25720c = new hi.i("PlayCoreVersion");
+    private static final hi.i f25721c = new hi.i("PlayCoreVersion");
 
     public static Bundle a() {
         Bundle bundle = new Bundle();
@@ -34,7 +34,7 @@ public abstract class m {
     public static synchronized Map b() {
         Map map;
         synchronized (m.class) {
-            map = f25719b;
+            map = f25720b;
             map.put("java", 11004);
         }
         return map;

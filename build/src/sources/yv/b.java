@@ -8,16 +8,16 @@ import aw.w;
 public abstract class b implements dw.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final char f55845a;
+    private final char f55846a;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public b(char c10) {
-        this.f55845a = c10;
+        this.f55846a = c10;
     }
 
     @Override // dw.a
     public char a() {
-        return this.f55845a;
+        return this.f55846a;
     }
 
     @Override // dw.a
@@ -27,7 +27,7 @@ public abstract class b implements dw.a {
 
     @Override // dw.a
     public char c() {
-        return this.f55845a;
+        return this.f55846a;
     }
 
     @Override // dw.a

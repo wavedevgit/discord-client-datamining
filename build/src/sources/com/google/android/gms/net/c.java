@@ -16,49 +16,49 @@ import zg.f;
 public final class c {
 
     /* renamed from: c  reason: collision with root package name */
-    private static volatile c f15149c;
+    private static volatile c f15150c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Object f15150d = new Object();
+    private static final Object f15151d = new Object();
 
     /* renamed from: a  reason: collision with root package name */
-    private final w f15151a;
+    private final w f15152a;
 
     /* renamed from: b  reason: collision with root package name */
-    final AtomicLong f15152b = new AtomicLong(-1);
+    final AtomicLong f15153b = new AtomicLong(-1);
 
     private c(Context context) {
         w b10 = v.b(context, x.a().b("module:cronet_dynamite").a());
         Objects.requireNonNull(b10);
-        this.f15151a = b10;
+        this.f15152a = b10;
     }
 
     public static c a(Context context) {
-        if (f15149c == null) {
-            synchronized (f15150d) {
+        if (f15150c == null) {
+            synchronized (f15151d) {
                 try {
-                    if (f15149c == null) {
-                        f15149c = new c(context);
+                    if (f15150c == null) {
+                        f15150c = new c(context);
                     }
                 } finally {
                 }
             }
         }
-        return f15149c;
+        return f15150c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final synchronized void b(int i10, int i11, long j10, long j11, int i12) {
-        AtomicLong atomicLong = this.f15152b;
+        AtomicLong atomicLong = this.f15153b;
         if (atomicLong.get() != -1 && SystemClock.uptimeMillis() - atomicLong.get() <= 1800000) {
             return;
         }
-        this.f15151a.k(new u(0, Arrays.asList(new n(i10, i11, -1, j10, j11, null, null, 368, i12)))).e(new f() { // from class: com.google.android.gms.net.b
+        this.f15152a.k(new u(0, Arrays.asList(new n(i10, i11, -1, j10, j11, null, null, 368, i12)))).e(new f() { // from class: com.google.android.gms.net.b
             @Override // zg.f
             public final /* synthetic */ void onFailure(Exception exc) {
                 com.google.android.gms.common.b b10;
                 if ((exc instanceof ff.b) && (b10 = ((ff.b) exc).a().b()) != null && b10.c() == 24) {
-                    c.this.f15152b.set(SystemClock.elapsedRealtime());
+                    c.this.f15153b.set(SystemClock.elapsedRealtime());
                 }
             }
         });

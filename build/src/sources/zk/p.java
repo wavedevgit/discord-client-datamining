@@ -3,17 +3,17 @@ package zk;
 final class p extends q {
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f56508b;
+    private final int f56509b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f56509c;
+    private final int f56510c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(int i10, int i11, int i12) {
         super(i10);
         if (i11 >= 0 && i11 <= 10 && i12 >= 0 && i12 <= 10) {
-            this.f56508b = i11;
-            this.f56509c = i12;
+            this.f56509b = i11;
+            this.f56510c = i12;
             return;
         }
         throw kk.g.a();
@@ -21,17 +21,17 @@ final class p extends q {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int b() {
-        return this.f56508b;
+        return this.f56509b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int c() {
-        return this.f56509c;
+        return this.f56510c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean d() {
-        if (this.f56508b == 10) {
+        if (this.f56509b == 10) {
             return true;
         }
         return false;
@@ -39,7 +39,7 @@ final class p extends q {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean e() {
-        if (this.f56509c == 10) {
+        if (this.f56510c == 10) {
             return true;
         }
         return false;

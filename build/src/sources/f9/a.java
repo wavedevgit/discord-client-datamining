@@ -8,18 +8,18 @@ import com.facebook.drawee.drawable.g;
 public class a implements sa.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Resources f23608a;
+    private final Resources f23609a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final sa.a f23609b;
+    private final sa.a f23610b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final sa.a f23610c;
+    private final sa.a f23611c;
 
     public a(Resources resources, sa.a aVar, sa.a aVar2) {
-        this.f23608a = resources;
-        this.f23609b = aVar;
-        this.f23610c = aVar2;
+        this.f23609a = resources;
+        this.f23610b = aVar;
+        this.f23611c = aVar2;
     }
 
     private static boolean c(ta.f fVar) {
@@ -49,7 +49,7 @@ public class a implements sa.a {
             }
             if (eVar instanceof ta.f) {
                 ta.f fVar = (ta.f) eVar;
-                BitmapDrawable bitmapDrawable = new BitmapDrawable(this.f23608a, fVar.Q1());
+                BitmapDrawable bitmapDrawable = new BitmapDrawable(this.f23609a, fVar.Q1());
                 if (!d(fVar) && !c(fVar)) {
                     if (za.b.d()) {
                         za.b.b();
@@ -62,17 +62,17 @@ public class a implements sa.a {
                 }
                 return gVar;
             }
-            sa.a aVar = this.f23609b;
+            sa.a aVar = this.f23610b;
             if (aVar != null && aVar.a(eVar)) {
-                Drawable b10 = this.f23609b.b(eVar);
+                Drawable b10 = this.f23610b.b(eVar);
                 if (za.b.d()) {
                     za.b.b();
                 }
                 return b10;
             }
-            sa.a aVar2 = this.f23610c;
+            sa.a aVar2 = this.f23611c;
             if (aVar2 != null && aVar2.a(eVar)) {
-                Drawable b11 = this.f23610c.b(eVar);
+                Drawable b11 = this.f23611c.b(eVar);
                 if (za.b.d()) {
                     za.b.b();
                 }

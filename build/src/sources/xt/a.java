@@ -21,10 +21,10 @@ import tt.h1;
 public abstract class a implements l {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final C0767a f55152b = new C0767a(null);
+    public static final C0767a f55153b = new C0767a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final wt.b f55153a;
+    private final wt.b f55154a;
 
     /* renamed from: xt.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -43,43 +43,43 @@ public abstract class a implements l {
     public abstract class b extends g1 {
 
         /* renamed from: c  reason: collision with root package name */
-        private final Map f55154c;
+        private final Map f55155c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final wt.b f55155d;
+        private final wt.b f55156d;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f55156e;
+        private int f55157e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final boolean f55157f;
+        private final boolean f55158f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final int f55158g;
+        private final int f55159g;
 
         /* renamed from: h  reason: collision with root package name */
-        final /* synthetic */ a f55159h;
+        final /* synthetic */ a f55160h;
 
         public b(a aVar, Map map, SerialDescriptor descriptor) {
             boolean z10;
             int d10;
             Intrinsics.checkNotNullParameter(map, "map");
             Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-            this.f55159h = aVar;
-            this.f55154c = map;
-            this.f55155d = aVar.a();
-            if (!Intrinsics.areEqual(descriptor.getKind(), l.b.f48380a) && !Intrinsics.areEqual(descriptor.getKind(), l.c.f48381a)) {
+            this.f55160h = aVar;
+            this.f55155c = map;
+            this.f55156d = aVar.a();
+            if (!Intrinsics.areEqual(descriptor.getKind(), l.b.f48381a) && !Intrinsics.areEqual(descriptor.getKind(), l.c.f48382a)) {
                 z10 = false;
             } else {
                 z10 = true;
             }
-            this.f55157f = z10;
+            this.f55158f = z10;
             if (z10) {
                 d10 = Integer.MAX_VALUE;
             } else {
                 d10 = descriptor.d();
             }
-            this.f55158g = d10;
+            this.f55159g = d10;
         }
 
         @Override // tt.q2, kotlinx.serialization.encoding.Decoder
@@ -87,7 +87,7 @@ public abstract class a implements l {
             String str;
             Intrinsics.checkNotNullParameter(deserializer, "deserializer");
             if (deserializer instanceof tt.b) {
-                Object obj = this.f55154c.get(k0("type"));
+                Object obj = this.f55155c.get(k0("type"));
                 if (obj != null) {
                     str = obj.toString();
                 } else {
@@ -100,7 +100,7 @@ public abstract class a implements l {
 
         @Override // kotlinx.serialization.encoding.Decoder, kotlinx.serialization.encoding.c
         public wt.b a() {
-            return this.f55155d;
+            return this.f55156d;
         }
 
         @Override // kotlinx.serialization.encoding.Decoder
@@ -117,7 +117,7 @@ public abstract class a implements l {
         public final int S(String tag, SerialDescriptor enumDescriptor) {
             Intrinsics.checkNotNullParameter(tag, "tag");
             Intrinsics.checkNotNullParameter(enumDescriptor, "enumDescriptor");
-            Object j10 = o0.j(this.f55154c, tag);
+            Object j10 = o0.j(this.f55155c, tag);
             if (j10 instanceof Integer) {
                 return ((Number) j10).intValue();
             }
@@ -136,34 +136,34 @@ public abstract class a implements l {
         /* renamed from: n0 */
         public final Object a0(String tag) {
             Intrinsics.checkNotNullParameter(tag, "tag");
-            return o0.j(this.f55154c, tag);
+            return o0.j(this.f55155c, tag);
         }
 
         @Override // kotlinx.serialization.encoding.c
         public final int o(SerialDescriptor descriptor) {
             Intrinsics.checkNotNullParameter(descriptor, "descriptor");
             do {
-                int i10 = this.f55156e;
-                if (i10 < this.f55158g) {
-                    this.f55156e = i10 + 1;
+                int i10 = this.f55157e;
+                if (i10 < this.f55159g) {
+                    this.f55157e = i10 + 1;
                     String c02 = c0(descriptor, i10);
-                    Set<String> keySet = this.f55154c.keySet();
+                    Set<String> keySet = this.f55155c.keySet();
                     if (!(keySet instanceof Collection) || !keySet.isEmpty()) {
                         for (String str : keySet) {
                             if (StringsKt.P(str, c02, false, 2, null) && (str.length() == c02.length() || str.charAt(c02.length()) == '.')) {
-                                return this.f55156e - 1;
+                                return this.f55157e - 1;
                             }
                         }
                     }
                 } else {
                     return -1;
                 }
-            } while (!this.f55157f);
+            } while (!this.f55158f);
             return -1;
         }
 
         protected final Map o0() {
-            return this.f55154c;
+            return this.f55155c;
         }
 
         protected abstract b p0(SerialDescriptor serialDescriptor);
@@ -174,14 +174,14 @@ public abstract class a implements l {
     public final class c extends b {
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ a f55160i;
+        final /* synthetic */ a f55161i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public c(a aVar, Map map, SerialDescriptor descriptor) {
             super(aVar, map, descriptor);
             Intrinsics.checkNotNullParameter(map, "map");
             Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-            this.f55160i = aVar;
+            this.f55161i = aVar;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -253,7 +253,7 @@ public abstract class a implements l {
         /* renamed from: y0 */
         public c p0(SerialDescriptor descriptor) {
             Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-            return new c(this.f55160i, o0(), descriptor);
+            return new c(this.f55161i, o0(), descriptor);
         }
     }
 
@@ -276,13 +276,13 @@ public abstract class a implements l {
     public abstract class e extends h1 {
 
         /* renamed from: b  reason: collision with root package name */
-        private final wt.b f55162b;
+        private final wt.b f55163b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Map f55163c = new LinkedHashMap();
+        private final Map f55164c = new LinkedHashMap();
 
         public e() {
-            this.f55162b = a.this.a();
+            this.f55163b = a.this.a();
         }
 
         @Override // tt.r2, kotlinx.serialization.encoding.Encoder
@@ -300,7 +300,7 @@ public abstract class a implements l {
 
         @Override // kotlinx.serialization.encoding.Encoder
         public wt.b a() {
-            return this.f55162b;
+            return this.f55163b;
         }
 
         protected abstract Object g0(Object obj);
@@ -311,7 +311,7 @@ public abstract class a implements l {
         public void M(String tag, SerialDescriptor enumDescriptor, int i10) {
             Intrinsics.checkNotNullParameter(tag, "tag");
             Intrinsics.checkNotNullParameter(enumDescriptor, "enumDescriptor");
-            this.f55163c.put(tag, g0(enumDescriptor.e(i10)));
+            this.f55164c.put(tag, g0(enumDescriptor.e(i10)));
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -327,11 +327,11 @@ public abstract class a implements l {
         public void V(String tag, Object value) {
             Intrinsics.checkNotNullParameter(tag, "tag");
             Intrinsics.checkNotNullParameter(value, "value");
-            this.f55163c.put(tag, g0(value));
+            this.f55164c.put(tag, g0(value));
         }
 
         public final Map k0() {
-            return this.f55163c;
+            return this.f55164c;
         }
     }
 
@@ -341,7 +341,7 @@ public abstract class a implements l {
 
     @Override // qt.l
     public wt.b a() {
-        return this.f55153a;
+        return this.f55154a;
     }
 
     public final Object d(DeserializationStrategy deserializer, Map map) {
@@ -358,6 +358,6 @@ public abstract class a implements l {
     }
 
     private a(wt.b bVar, Void r22) {
-        this.f55153a = bVar;
+        this.f55154a = bVar;
     }
 }

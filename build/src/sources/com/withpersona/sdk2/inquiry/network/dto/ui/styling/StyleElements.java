@@ -366,7 +366,7 @@ public final class StyleElements {
     public static final class DPSize implements Parcelable, Size {
 
         /* renamed from: dp  reason: collision with root package name */
-        private final Double f20428dp;
+        private final Double f20429dp;
         @NotNull
         public static final Companion Companion = new Companion(null);
         @NotNull
@@ -445,7 +445,7 @@ public final class StyleElements {
         }
 
         public DPSize(Double d10) {
-            this.f20428dp = d10;
+            this.f20429dp = d10;
         }
 
         @Override // android.os.Parcelable
@@ -455,13 +455,13 @@ public final class StyleElements {
 
         @Override // com.withpersona.sdk2.inquiry.network.dto.ui.styling.StyleElements.Size
         public Double getDp() {
-            return this.f20428dp;
+            return this.f20429dp;
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(@NotNull Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            Double d10 = this.f20428dp;
+            Double d10 = this.f20429dp;
             if (d10 == null) {
                 dest.writeInt(0);
                 return;

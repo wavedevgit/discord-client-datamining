@@ -173,7 +173,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         }
 
         public SearchAutoComplete(Context context, AttributeSet attributeSet) {
-            this(context, attributeSet, f.a.f23288m);
+            this(context, attributeSet, f.a.f23289m);
         }
 
         private int getSearchViewTextMinWidthDp() {
@@ -1037,11 +1037,11 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
     }
 
     private int getPreferredHeight() {
-        return getContext().getResources().getDimensionPixelSize(f.d.f23315e);
+        return getContext().getResources().getDimensionPixelSize(f.d.f23316e);
     }
 
     private int getPreferredWidth() {
-        return getContext().getResources().getDimensionPixelSize(f.d.f23316f);
+        return getContext().getResources().getDimensionPixelSize(f.d.f23317f);
     }
 
     private void h0(boolean z10) {
@@ -1560,7 +1560,7 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
             Rect rect = new Rect();
             boolean b10 = g1.b(this);
             if (this.f1631c0) {
-                i10 = resources.getDimensionPixelSize(f.d.f23313c) + resources.getDimensionPixelSize(f.d.f23314d);
+                i10 = resources.getDimensionPixelSize(f.d.f23314c) + resources.getDimensionPixelSize(f.d.f23315d);
             } else {
                 i10 = 0;
             }
@@ -1598,9 +1598,9 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         j jVar = new j();
         this.f1653y0 = jVar;
         this.f1654z0 = new a();
-        v0 v10 = v0.v(context, attributeSet, f.j.f23444f2, i10, 0);
-        androidx.core.view.i0.i0(this, context, f.j.f23444f2, attributeSet, v10.r(), i10, 0);
-        LayoutInflater.from(context).inflate(v10.n(f.j.f23494p2, f.g.f23393r), (ViewGroup) this, true);
+        v0 v10 = v0.v(context, attributeSet, f.j.f23445f2, i10, 0);
+        androidx.core.view.i0.i0(this, context, f.j.f23445f2, attributeSet, v10.r(), i10, 0);
+        LayoutInflater.from(context).inflate(v10.n(f.j.f23495p2, f.g.f23394r), (ViewGroup) this, true);
         SearchAutoComplete searchAutoComplete = (SearchAutoComplete) findViewById(f.f.E);
         this.A = searchAutoComplete;
         searchAutoComplete.setSearchView(this);
@@ -1609,27 +1609,27 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         this.C = findViewById;
         View findViewById2 = findViewById(f.f.K);
         this.D = findViewById2;
-        ImageView imageView = (ImageView) findViewById(f.f.f23374y);
+        ImageView imageView = (ImageView) findViewById(f.f.f23375y);
         this.E = imageView;
         ImageView imageView2 = (ImageView) findViewById(f.f.B);
         this.F = imageView2;
-        ImageView imageView3 = (ImageView) findViewById(f.f.f23375z);
+        ImageView imageView3 = (ImageView) findViewById(f.f.f23376z);
         this.G = imageView3;
         ImageView imageView4 = (ImageView) findViewById(f.f.F);
         this.H = imageView4;
         ImageView imageView5 = (ImageView) findViewById(f.f.C);
         this.O = imageView5;
-        androidx.core.view.i0.o0(findViewById, v10.g(f.j.f23499q2));
-        androidx.core.view.i0.o0(findViewById2, v10.g(f.j.f23519u2));
-        imageView.setImageDrawable(v10.g(f.j.f23514t2));
-        imageView2.setImageDrawable(v10.g(f.j.f23484n2));
-        imageView3.setImageDrawable(v10.g(f.j.f23469k2));
-        imageView4.setImageDrawable(v10.g(f.j.f23529w2));
-        imageView5.setImageDrawable(v10.g(f.j.f23514t2));
-        this.P = v10.g(f.j.f23509s2);
-        a1.a(imageView, getResources().getString(f.h.f23409n));
-        this.Q = v10.n(f.j.f23524v2, f.g.f23392q);
-        this.R = v10.n(f.j.f23474l2, 0);
+        androidx.core.view.i0.o0(findViewById, v10.g(f.j.f23500q2));
+        androidx.core.view.i0.o0(findViewById2, v10.g(f.j.f23520u2));
+        imageView.setImageDrawable(v10.g(f.j.f23515t2));
+        imageView2.setImageDrawable(v10.g(f.j.f23485n2));
+        imageView3.setImageDrawable(v10.g(f.j.f23470k2));
+        imageView4.setImageDrawable(v10.g(f.j.f23530w2));
+        imageView5.setImageDrawable(v10.g(f.j.f23515t2));
+        this.P = v10.g(f.j.f23510s2);
+        a1.a(imageView, getResources().getString(f.h.f23410n));
+        this.Q = v10.n(f.j.f23525v2, f.g.f23393q);
+        this.R = v10.n(f.j.f23475l2, 0);
         imageView.setOnClickListener(fVar);
         imageView3.setOnClickListener(fVar);
         imageView2.setOnClickListener(fVar);
@@ -1641,22 +1641,22 @@ public abstract class SearchView extends i0 implements androidx.appcompat.view.b
         searchAutoComplete.setOnItemSelectedListener(jVar);
         searchAutoComplete.setOnKeyListener(this.f1650v0);
         searchAutoComplete.setOnFocusChangeListener(new d());
-        setIconifiedByDefault(v10.a(f.j.f23489o2, true));
-        int f10 = v10.f(f.j.f23454h2, -1);
+        setIconifiedByDefault(v10.a(f.j.f23490o2, true));
+        int f10 = v10.f(f.j.f23455h2, -1);
         if (f10 != -1) {
             setMaxWidth(f10);
         }
-        this.U = v10.p(f.j.f23479m2);
-        this.f1635g0 = v10.p(f.j.f23504r2);
-        int k10 = v10.k(f.j.f23464j2, -1);
+        this.U = v10.p(f.j.f23480m2);
+        this.f1635g0 = v10.p(f.j.f23505r2);
+        int k10 = v10.k(f.j.f23465j2, -1);
         if (k10 != -1) {
             setImeOptions(k10);
         }
-        int k11 = v10.k(f.j.f23459i2, -1);
+        int k11 = v10.k(f.j.f23460i2, -1);
         if (k11 != -1) {
             setInputType(k11);
         }
-        setFocusable(v10.a(f.j.f23449g2, true));
+        setFocusable(v10.a(f.j.f23450g2, true));
         v10.x();
         Intent intent = new Intent("android.speech.action.WEB_SEARCH");
         this.S = intent;

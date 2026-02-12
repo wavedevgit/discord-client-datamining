@@ -3,18 +3,18 @@ package ep;
 public final class h implements lr.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final lr.h f23133a;
+    private final lr.h f23134a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final lr.h f23134b;
+    private final lr.h f23135b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final lr.h f23135c;
+    private final lr.h f23136c;
 
     public h(lr.h hVar, lr.h hVar2, lr.h hVar3) {
-        this.f23133a = hVar;
-        this.f23134b = hVar2;
-        this.f23135c = hVar3;
+        this.f23134a = hVar;
+        this.f23135b = hVar2;
+        this.f23136c = hVar3;
     }
 
     public static h a(lr.h hVar, lr.h hVar2, lr.h hVar3) {
@@ -28,6 +28,6 @@ public final class h implements lr.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public g get() {
-        return c((kp.r) this.f23133a.get(), (com.squareup.moshi.w) this.f23134b.get(), (np.b) this.f23135c.get());
+        return c((kp.r) this.f23134a.get(), (com.squareup.moshi.w) this.f23135b.get(), (np.b) this.f23136c.get());
     }
 }

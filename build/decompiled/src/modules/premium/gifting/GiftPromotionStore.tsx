@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var4 = dependencyMap;
     var0 = function() {
-        _fun58297: for (var _fun58297_ip = 0;;) switch (_fun58297_ip) {
+        _fun59261: for (var _fun59261_ip = 0;;) switch (_fun59261_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -26,8 +26,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun58297_ip = 74;
-                continue _fun58297;
+                _fun59261_ip = 74;
+                continue _fun59261;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var1.PersistedStore;
     var1 = function(arg0) { // Environment: var3
         var3 = function() {
-            _fun58301: for (var _fun58301_ip = 0;;) switch (_fun58301_ip) {
+            _fun59265: for (var _fun59265_ip = 0;;) switch (_fun59265_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -97,16 +97,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot6;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun58301_ip = 69;
-                        continue _fun58301
+                        _fun59265_ip = 69;
+                        continue _fun59265
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun58301_ip = 105;
-                    continue _fun58301;
+                    _fun59265_ip = 105;
+                    continue _fun59265;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -131,13 +131,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = 'initialize';
         var4.key = var0;
         var0 = function arg0() {
-            _fun58302: for (var _fun58302_ip = 0;;) switch (_fun58302_ip) {
+            _fun59266: for (var _fun59266_ip = 0;;) switch (_fun59266_ip) {
                 case 0:
                     var2 = arg0;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun58302_ip = 37;
-                        continue _fun58302
+                        _fun59266_ip = 37;
+                        continue _fun59266
                     }
                 case 9:
                     var1 = _closure1_slot5;
@@ -184,14 +184,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6.persistKey = var1;
     var1 = new Array(1);
     var7 = function(arg0) { // Environment: var3
-        _fun58305: for (var _fun58305_ip = 0;;) switch (_fun58305_ip) {
+        _fun59269: for (var _fun59269_ip = 0;;) switch (_fun59269_ip) {
             case 0:
                 var3 = arg0;
                 var2 = null;
                 var0 = var3;
                 if (!(var2 != var0)) {
-                    _fun58305_ip = 40;
-                    continue _fun58305
+                    _fun59269_ip = 40;
+                    continue _fun59269
                 }
             case 12:
                 var1 = {};
@@ -199,8 +199,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 != var3;
                 var2 = null;
                 if (!var4) {
-                    _fun58305_ip = 32;
-                    continue _fun58305
+                    _fun59269_ip = 32;
+                    continue _fun59269
                 }
             case 29:
                 var2 = var3;

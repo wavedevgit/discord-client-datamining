@@ -36,7 +36,7 @@ public /* synthetic */ class Component$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{p0.f50048a};
+        return new KSerializer[]{p0.f50049a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

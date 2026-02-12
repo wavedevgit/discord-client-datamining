@@ -8,7 +8,7 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 public final class x {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f51971a = w.a(16);
+    private final Map f51972a = w.a(16);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -18,7 +18,7 @@ public final class x {
         Object obj;
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         Intrinsics.checkNotNullParameter(key, "key");
-        Map map = (Map) this.f51971a.get(descriptor);
+        Map map = (Map) this.f51972a.get(descriptor);
         if (map != null) {
             obj = map.get(key);
         } else {
@@ -47,7 +47,7 @@ public final class x {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(value, "value");
-        Map map = this.f51971a;
+        Map map = this.f51972a;
         Object obj = map.get(descriptor);
         if (obj == null) {
             obj = w.a(2);

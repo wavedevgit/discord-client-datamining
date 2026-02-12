@@ -74,7 +74,7 @@ public class CardView extends FrameLayout {
     }
 
     public CardView(@NonNull Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, t0.a.f48417a);
+        this(context, attributeSet, t0.a.f48418a);
     }
 
     @NonNull
@@ -201,9 +201,9 @@ public class CardView extends FrameLayout {
         this.mShadowBounds = new Rect();
         a aVar = new a();
         this.mCardViewDelegate = aVar;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, d.f48421a, i10, t0.c.f48420a);
-        if (obtainStyledAttributes.hasValue(d.f48424d)) {
-            valueOf = obtainStyledAttributes.getColorStateList(d.f48424d);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, d.f48422a, i10, t0.c.f48421a);
+        if (obtainStyledAttributes.hasValue(d.f48425d)) {
+            valueOf = obtainStyledAttributes.getColorStateList(d.f48425d);
         } else {
             TypedArray obtainStyledAttributes2 = getContext().obtainStyledAttributes(COLOR_BACKGROUND_ATTR);
             int color2 = obtainStyledAttributes2.getColor(0, 0);
@@ -211,26 +211,26 @@ public class CardView extends FrameLayout {
             float[] fArr = new float[3];
             Color.colorToHSV(color2, fArr);
             if (fArr[2] > 0.5f) {
-                color = getResources().getColor(t0.b.f48419b);
+                color = getResources().getColor(t0.b.f48420b);
             } else {
-                color = getResources().getColor(t0.b.f48418a);
+                color = getResources().getColor(t0.b.f48419a);
             }
             valueOf = ColorStateList.valueOf(color);
         }
         ColorStateList colorStateList = valueOf;
-        float dimension = obtainStyledAttributes.getDimension(d.f48425e, 0.0f);
-        float dimension2 = obtainStyledAttributes.getDimension(d.f48426f, 0.0f);
-        float dimension3 = obtainStyledAttributes.getDimension(d.f48427g, 0.0f);
-        this.mCompatPadding = obtainStyledAttributes.getBoolean(d.f48429i, false);
-        this.mPreventCornerOverlap = obtainStyledAttributes.getBoolean(d.f48428h, true);
-        int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(d.f48430j, 0);
-        rect.left = obtainStyledAttributes.getDimensionPixelSize(d.f48432l, dimensionPixelSize);
-        rect.top = obtainStyledAttributes.getDimensionPixelSize(d.f48434n, dimensionPixelSize);
-        rect.right = obtainStyledAttributes.getDimensionPixelSize(d.f48433m, dimensionPixelSize);
-        rect.bottom = obtainStyledAttributes.getDimensionPixelSize(d.f48431k, dimensionPixelSize);
+        float dimension = obtainStyledAttributes.getDimension(d.f48426e, 0.0f);
+        float dimension2 = obtainStyledAttributes.getDimension(d.f48427f, 0.0f);
+        float dimension3 = obtainStyledAttributes.getDimension(d.f48428g, 0.0f);
+        this.mCompatPadding = obtainStyledAttributes.getBoolean(d.f48430i, false);
+        this.mPreventCornerOverlap = obtainStyledAttributes.getBoolean(d.f48429h, true);
+        int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(d.f48431j, 0);
+        rect.left = obtainStyledAttributes.getDimensionPixelSize(d.f48433l, dimensionPixelSize);
+        rect.top = obtainStyledAttributes.getDimensionPixelSize(d.f48435n, dimensionPixelSize);
+        rect.right = obtainStyledAttributes.getDimensionPixelSize(d.f48434m, dimensionPixelSize);
+        rect.bottom = obtainStyledAttributes.getDimensionPixelSize(d.f48432k, dimensionPixelSize);
         float f10 = dimension2 > dimension3 ? dimension2 : dimension3;
-        this.mUserSetMinWidth = obtainStyledAttributes.getDimensionPixelSize(d.f48422b, 0);
-        this.mUserSetMinHeight = obtainStyledAttributes.getDimensionPixelSize(d.f48423c, 0);
+        this.mUserSetMinWidth = obtainStyledAttributes.getDimensionPixelSize(d.f48423b, 0);
+        this.mUserSetMinHeight = obtainStyledAttributes.getDimensionPixelSize(d.f48424c, 0);
         obtainStyledAttributes.recycle();
         IMPL.h(aVar, context, colorStateList, dimension, dimension2, f10);
     }

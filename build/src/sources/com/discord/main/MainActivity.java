@@ -21,7 +21,7 @@ import org.jetbrains.annotations.NotNull;
 public final class MainActivity extends ReactActivity {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final /* synthetic */ int f10065d = 0;
+    public static final /* synthetic */ int f10066d = 0;
 
     @SuppressLint({"VisibleForTests"})
     private final ReactContext currentReactContext() {

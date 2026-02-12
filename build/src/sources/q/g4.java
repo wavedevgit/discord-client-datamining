@@ -29,36 +29,36 @@ public interface g4 {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Executor f43369a;
+        private final Executor f43370a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final ScheduledExecutorService f43370b;
+        private final ScheduledExecutorService f43371b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Handler f43371c;
+        private final Handler f43372c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final c3 f43372d;
+        private final c3 f43373d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final a0.d2 f43373e;
+        private final a0.d2 f43374e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final a0.d2 f43374f;
+        private final a0.d2 f43375f;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public b(Executor executor, ScheduledExecutorService scheduledExecutorService, Handler handler, c3 c3Var, a0.d2 d2Var, a0.d2 d2Var2) {
-            this.f43369a = executor;
-            this.f43370b = scheduledExecutorService;
-            this.f43371c = handler;
-            this.f43372d = c3Var;
-            this.f43373e = d2Var;
-            this.f43374f = d2Var2;
+            this.f43370a = executor;
+            this.f43371b = scheduledExecutorService;
+            this.f43372c = handler;
+            this.f43373d = c3Var;
+            this.f43374e = d2Var;
+            this.f43375f = d2Var2;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public a a() {
-            return new q4(this.f43373e, this.f43374f, this.f43372d, this.f43369a, this.f43370b, this.f43371c);
+            return new q4(this.f43374e, this.f43375f, this.f43373d, this.f43370a, this.f43371b, this.f43372c);
         }
     }
 

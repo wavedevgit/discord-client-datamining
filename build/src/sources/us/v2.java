@@ -26,22 +26,22 @@ import us.z2;
 public final class v2 implements kotlin.reflect.l, x0 {
 
     /* renamed from: o  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f51172o = {Reflection.property1(new PropertyReference1Impl(v2.class, "upperBounds", "getUpperBounds()Ljava/util/List;", 0))};
+    static final /* synthetic */ KProperty[] f51173o = {Reflection.property1(new PropertyReference1Impl(v2.class, "upperBounds", "getUpperBounds()Ljava/util/List;", 0))};
 
     /* renamed from: d  reason: collision with root package name */
-    private final TypeParameterDescriptor f51173d;
+    private final TypeParameterDescriptor f51174d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final z2.a f51174e;
+    private final z2.a f51175e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final w2 f51175i;
+    private final w2 f51176i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f51176a;
+        public static final /* synthetic */ int[] f51177a;
 
         static {
             int[] iArr = new int[Variance.values().length];
@@ -57,7 +57,7 @@ public final class v2 implements kotlin.reflect.l, x0 {
                 iArr[Variance.OUT_VARIANCE.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f51176a = iArr;
+            f51177a = iArr;
         }
     }
 
@@ -66,8 +66,8 @@ public final class v2 implements kotlin.reflect.l, x0 {
         w0 w0Var;
         Object accept;
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        this.f51173d = descriptor;
-        this.f51174e = z2.c(new u2(this));
+        this.f51174d = descriptor;
+        this.f51175e = z2.c(new u2(this));
         if (w2Var == null) {
             DeclarationDescriptor containingDeclaration = getDescriptor().getContainingDeclaration();
             Intrinsics.checkNotNullExpressionValue(containingDeclaration, "getContainingDeclaration(...)");
@@ -92,13 +92,13 @@ public final class v2 implements kotlin.reflect.l, x0 {
                         throw new x2("Non-class callable descriptor must be deserialized: " + containingDeclaration);
                     }
                 }
-                accept = containingDeclaration.accept(new j(w0Var), Unit.f31987a);
+                accept = containingDeclaration.accept(new j(w0Var), Unit.f31988a);
             } else {
                 throw new x2("Unknown type parameter container: " + containingDeclaration);
             }
             w2Var = (w2) accept;
         }
-        this.f51175i = w2Var;
+        this.f51176i = w2Var;
     }
 
     private final Class b(DeserializedMemberDescriptor deserializedMemberDescriptor) {
@@ -156,13 +156,13 @@ public final class v2 implements kotlin.reflect.l, x0 {
     @Override // us.x0
     /* renamed from: c */
     public TypeParameterDescriptor getDescriptor() {
-        return this.f51173d;
+        return this.f51174d;
     }
 
     public boolean equals(Object obj) {
         if (obj instanceof v2) {
             v2 v2Var = (v2) obj;
-            if (Intrinsics.areEqual(this.f51175i, v2Var.f51175i) && Intrinsics.areEqual(getName(), v2Var.getName())) {
+            if (Intrinsics.areEqual(this.f51176i, v2Var.f51176i) && Intrinsics.areEqual(getName(), v2Var.getName())) {
                 return true;
             }
             return false;
@@ -179,28 +179,28 @@ public final class v2 implements kotlin.reflect.l, x0 {
 
     @Override // kotlin.reflect.l
     public List getUpperBounds() {
-        Object b10 = this.f51174e.b(this, f51172o[0]);
+        Object b10 = this.f51175e.b(this, f51173o[0]);
         Intrinsics.checkNotNullExpressionValue(b10, "getValue(...)");
         return (List) b10;
     }
 
     @Override // kotlin.reflect.l
     public kotlin.reflect.m getVariance() {
-        int i10 = a.f51176a[getDescriptor().getVariance().ordinal()];
+        int i10 = a.f51177a[getDescriptor().getVariance().ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
-                    return kotlin.reflect.m.f34828i;
+                    return kotlin.reflect.m.f34829i;
                 }
                 throw new as.p();
             }
-            return kotlin.reflect.m.f34827e;
+            return kotlin.reflect.m.f34828e;
         }
-        return kotlin.reflect.m.f34826d;
+        return kotlin.reflect.m.f34827d;
     }
 
     public int hashCode() {
-        return (this.f51175i.hashCode() * 31) + getName().hashCode();
+        return (this.f51176i.hashCode() * 31) + getName().hashCode();
     }
 
     public String toString() {

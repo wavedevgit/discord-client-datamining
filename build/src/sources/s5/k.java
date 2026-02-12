@@ -3,13 +3,13 @@ package s5;
 public class k {
 
     /* renamed from: a  reason: collision with root package name */
-    public final m f47835a;
+    public final m f47836a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final l f47836b;
+    public final l f47837b;
 
     public k(m mVar, l lVar) {
-        this.f47835a = mVar;
-        this.f47836b = lVar;
+        this.f47836a = mVar;
+        this.f47837b = lVar;
     }
 }

@@ -7,7 +7,7 @@ import ov.a;
 public final class h implements cv.b, ov.a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final h f36675a = new h();
+    public static final h f36676a = new h();
 
     private h() {
     }
@@ -26,7 +26,7 @@ public final class h implements cv.b, ov.a {
         int size = c10.size();
         if (size != 0) {
             if (size != 1) {
-                return f36675a.b((Double) CollectionsKt.o0(c10), (Double) c10.get(1));
+                return f36676a.b((Double) CollectionsKt.o0(c10), (Double) c10.get(1));
             }
             Double d10 = (Double) CollectionsKt.o0(c10);
             if (d10 != null) {

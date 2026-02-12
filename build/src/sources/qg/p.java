@@ -8,21 +8,21 @@ import java.util.ListIterator;
 public class p extends n implements List {
 
     /* renamed from: q  reason: collision with root package name */
-    final /* synthetic */ q f44798q;
+    final /* synthetic */ q f44799q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public p(q qVar, Object obj, List list, n nVar) {
         super(qVar, obj, list, nVar);
-        this.f44798q = qVar;
+        this.f44799q = qVar;
     }
 
     @Override // java.util.List
     public final void add(int i10, Object obj) {
         zzb();
-        boolean isEmpty = this.f44724e.isEmpty();
-        ((List) this.f44724e).add(i10, obj);
-        q.i(this.f44798q);
+        boolean isEmpty = this.f44725e.isEmpty();
+        ((List) this.f44725e).add(i10, obj);
+        q.i(this.f44799q);
         if (isEmpty) {
             b();
         }
@@ -34,9 +34,9 @@ public class p extends n implements List {
             return false;
         }
         int size = size();
-        boolean addAll = ((List) this.f44724e).addAll(i10, collection);
+        boolean addAll = ((List) this.f44725e).addAll(i10, collection);
         if (addAll) {
-            q.k(this.f44798q, this.f44724e.size() - size);
+            q.k(this.f44799q, this.f44725e.size() - size);
             if (size == 0) {
                 b();
                 return true;
@@ -49,19 +49,19 @@ public class p extends n implements List {
     @Override // java.util.List
     public final Object get(int i10) {
         zzb();
-        return ((List) this.f44724e).get(i10);
+        return ((List) this.f44725e).get(i10);
     }
 
     @Override // java.util.List
     public final int indexOf(Object obj) {
         zzb();
-        return ((List) this.f44724e).indexOf(obj);
+        return ((List) this.f44725e).indexOf(obj);
     }
 
     @Override // java.util.List
     public final int lastIndexOf(Object obj) {
         zzb();
-        return ((List) this.f44724e).lastIndexOf(obj);
+        return ((List) this.f44725e).lastIndexOf(obj);
     }
 
     @Override // java.util.List
@@ -73,8 +73,8 @@ public class p extends n implements List {
     @Override // java.util.List
     public final Object remove(int i10) {
         zzb();
-        Object remove = ((List) this.f44724e).remove(i10);
-        q.j(this.f44798q);
+        Object remove = ((List) this.f44725e).remove(i10);
+        q.j(this.f44799q);
         c();
         return remove;
     }
@@ -82,16 +82,16 @@ public class p extends n implements List {
     @Override // java.util.List
     public final Object set(int i10, Object obj) {
         zzb();
-        return ((List) this.f44724e).set(i10, obj);
+        return ((List) this.f44725e).set(i10, obj);
     }
 
     @Override // java.util.List
     public final List subList(int i10, int i11) {
         zzb();
-        q qVar = this.f44798q;
-        Object obj = this.f44723d;
-        List subList = ((List) this.f44724e).subList(i10, i11);
-        n nVar = this.f44725i;
+        q qVar = this.f44799q;
+        Object obj = this.f44724d;
+        List subList = ((List) this.f44725e).subList(i10, i11);
+        n nVar = this.f44726i;
         if (nVar == null) {
             nVar = this;
         }

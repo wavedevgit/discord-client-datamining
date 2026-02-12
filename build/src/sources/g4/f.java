@@ -13,7 +13,7 @@ public abstract class f {
     private static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final i f24758a = new i(f.d().getWebkitToCompatConverter());
+        static final i f24759a = new i(f.d().getWebkitToCompatConverter());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -21,7 +21,7 @@ public abstract class f {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        static final g f24759a = f.a();
+        static final g f24760a = f.a();
     }
 
     static g a() {
@@ -43,11 +43,11 @@ public abstract class f {
     }
 
     public static i c() {
-        return a.f24758a;
+        return a.f24759a;
     }
 
     public static g d() {
-        return b.f24759a;
+        return b.f24760a;
     }
 
     public static ClassLoader e() {

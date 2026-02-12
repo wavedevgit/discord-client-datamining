@@ -5,7 +5,7 @@ import bj.c;
 final class n7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final n7 f39510a = new n7();
+    static final n7 f39511a = new n7();
 
     static {
         c.b a10 = bj.c.a("source");

@@ -12,46 +12,46 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d extends Fragment {
 
     /* renamed from: d  reason: collision with root package name */
-    private final a f19206d;
+    private final a f19207d;
 
     /* renamed from: e  reason: collision with root package name */
-    private b f19207e;
+    private b f19208e;
 
     public d(a stackScreen) {
         Intrinsics.checkNotNullParameter(stackScreen, "stackScreen");
-        this.f19206d = stackScreen;
+        this.f19207d = stackScreen;
     }
 
     @Override // androidx.fragment.app.Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup viewGroup, Bundle bundle) {
         Intrinsics.checkNotNullParameter(inflater, "inflater");
-        return this.f19206d;
+        return this.f19207d;
     }
 
     @Override // androidx.fragment.app.Fragment
     public void onDestroy() {
         super.onDestroy();
         Log.i("StackScreenFragment", "onDestroy");
-        this.f19206d.c();
+        this.f19207d.c();
     }
 
     @Override // androidx.fragment.app.Fragment
     public void onDestroyView() {
         super.onDestroyView();
-        this.f19207e = null;
+        this.f19208e = null;
     }
 
     @Override // androidx.fragment.app.Fragment
     public void onViewCreated(View view, Bundle bundle) {
         Intrinsics.checkNotNullParameter(view, "view");
         super.onViewCreated(view, bundle);
-        a aVar = this.f19206d;
+        a aVar = this.f19207d;
         LifecycleOwner viewLifecycleOwner = getViewLifecycleOwner();
         Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner, "getViewLifecycleOwner(...)");
-        this.f19207e = aVar.a(viewLifecycleOwner);
+        this.f19208e = aVar.a(viewLifecycleOwner);
     }
 
     public final a x() {
-        return this.f19206d;
+        return this.f19207d;
     }
 }

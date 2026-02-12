@@ -102,13 +102,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = 0;
                 var8 = var5[var2];
                 if (!var8) {
-                    _fun5616_ip = 79;
+                    _fun5616_ip = 80;
                     continue _fun5616
                 }
             case 70:
                 var7 = var5[var2];
                 var8 = var7.nativeEvent;
-            case 79:
+            case 80:
                 var7 = 'Native driven events only support animated values contained inside `nativeEvent`.';
                 var7 = var9.bind(var4)(var8, var7);
                 var2 = var5[var2];
@@ -126,10 +126,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var _closure2_slot4 = var2;
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun5616_ip = 169;
+                    _fun5616_ip = 171;
                     continue _fun5616
                 }
-            case 154:
+            case 156:
                 var2 = var3.forEach;
                 var0 = function(arg0) { // Environment: var1
                     var2 = _closure1_slot1;
@@ -147,7 +147,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var0 = var2.bind(var3)(var0);
-            case 169:
+            case 171:
                 var0 = {};
                 var1 = function() {
                     _fun5619: for (var _fun5619_ip = 0;;) switch (_fun5619_ip) {

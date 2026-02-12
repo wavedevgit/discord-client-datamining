@@ -11,10 +11,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f10464a = new c();
+    public static final c f10465a = new c();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final HashMap f10465b = new HashMap();
+    private static final HashMap f10466b = new HashMap();
 
     private c() {
     }
@@ -22,7 +22,7 @@ public final class c {
     public final void a(String key, Promise promise) {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(promise, "promise");
-        HashMap hashMap = f10465b;
+        HashMap hashMap = f10466b;
         Object obj = hashMap.get(key);
         if (obj == null) {
             obj = new ArrayList();
@@ -32,7 +32,7 @@ public final class c {
     }
 
     public final void b() {
-        HashMap hashMap = f10465b;
+        HashMap hashMap = f10466b;
         ArrayList<Promise> arrayList = new ArrayList();
         for (Map.Entry entry : hashMap.entrySet()) {
             CollectionsKt.B(arrayList, (Iterable) entry.getValue());
@@ -40,29 +40,29 @@ public final class c {
         for (Promise promise : arrayList) {
             d.c(promise, "E_CONNECTION_CLOSED", "Connection has been closed", null);
         }
-        f10465b.clear();
+        f10466b.clear();
     }
 
     public final void c(String key, String code, String str, Exception exc) {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(code, "code");
-        List<Promise> list = (List) f10465b.get(key);
+        List<Promise> list = (List) f10466b.get(key);
         if (list != null) {
             for (Promise promise : list) {
                 d.c(promise, code, str, exc);
             }
         }
-        f10465b.remove(key);
+        f10466b.remove(key);
     }
 
     public final void d(String key, Object obj) {
         Intrinsics.checkNotNullParameter(key, "key");
-        List<Promise> list = (List) f10465b.get(key);
+        List<Promise> list = (List) f10466b.get(key);
         if (list != null) {
             for (Promise promise : list) {
                 d.d(promise, obj);
             }
         }
-        f10465b.remove(key);
+        f10466b.remove(key);
     }
 }

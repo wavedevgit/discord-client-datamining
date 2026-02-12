@@ -17,74 +17,74 @@ import g.a;
 public class MaterialSwitch extends SwitchCompat {
 
     /* renamed from: y  reason: collision with root package name */
-    private static final int f15940y = k.f6940o;
+    private static final int f15941y = k.f6940o;
 
     /* renamed from: z  reason: collision with root package name */
-    private static final int[] f15941z = {b.f6746l0};
+    private static final int[] f15942z = {b.f6746l0};
 
     /* renamed from: d  reason: collision with root package name */
-    private Drawable f15942d;
+    private Drawable f15943d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Drawable f15943e;
+    private Drawable f15944e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f15944i;
+    private int f15945i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Drawable f15945o;
+    private Drawable f15946o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Drawable f15946p;
+    private Drawable f15947p;
 
     /* renamed from: q  reason: collision with root package name */
-    private ColorStateList f15947q;
+    private ColorStateList f15948q;
 
     /* renamed from: r  reason: collision with root package name */
-    private ColorStateList f15948r;
+    private ColorStateList f15949r;
 
     /* renamed from: s  reason: collision with root package name */
-    private PorterDuff.Mode f15949s;
+    private PorterDuff.Mode f15950s;
 
     /* renamed from: t  reason: collision with root package name */
-    private ColorStateList f15950t;
+    private ColorStateList f15951t;
 
     /* renamed from: u  reason: collision with root package name */
-    private ColorStateList f15951u;
+    private ColorStateList f15952u;
 
     /* renamed from: v  reason: collision with root package name */
-    private PorterDuff.Mode f15952v;
+    private PorterDuff.Mode f15953v;
 
     /* renamed from: w  reason: collision with root package name */
-    private int[] f15953w;
+    private int[] f15954w;
 
     /* renamed from: x  reason: collision with root package name */
-    private int[] f15954x;
+    private int[] f15955x;
 
     public MaterialSwitch(@NonNull Context context, AttributeSet attributeSet) {
         this(context, attributeSet, b.G);
     }
 
     private void o() {
-        this.f15942d = c.c(this.f15942d, this.f15947q, getThumbTintMode());
-        this.f15943e = c.c(this.f15943e, this.f15948r, this.f15949s);
+        this.f15943d = c.c(this.f15943d, this.f15948q, getThumbTintMode());
+        this.f15944e = c.c(this.f15944e, this.f15949r, this.f15950s);
         r();
-        Drawable drawable = this.f15942d;
-        Drawable drawable2 = this.f15943e;
-        int i10 = this.f15944i;
+        Drawable drawable = this.f15943d;
+        Drawable drawable2 = this.f15944e;
+        int i10 = this.f15945i;
         super.setThumbDrawable(c.b(drawable, drawable2, i10, i10));
         refreshDrawableState();
     }
 
     private void p() {
-        this.f15945o = c.c(this.f15945o, this.f15950t, getTrackTintMode());
-        this.f15946p = c.c(this.f15946p, this.f15951u, this.f15952v);
+        this.f15946o = c.c(this.f15946o, this.f15951t, getTrackTintMode());
+        this.f15947p = c.c(this.f15947p, this.f15952u, this.f15953v);
         r();
-        Drawable drawable = this.f15945o;
-        if (drawable != null && this.f15946p != null) {
-            drawable = new LayerDrawable(new Drawable[]{this.f15945o, this.f15946p});
+        Drawable drawable = this.f15946o;
+        if (drawable != null && this.f15947p != null) {
+            drawable = new LayerDrawable(new Drawable[]{this.f15946o, this.f15947p});
         } else if (drawable == null) {
-            drawable = this.f15946p;
+            drawable = this.f15947p;
         }
         if (drawable != null) {
             setSwitchMinWidth(drawable.getIntrinsicWidth());
@@ -99,75 +99,75 @@ public class MaterialSwitch extends SwitchCompat {
     }
 
     private void r() {
-        if (this.f15947q != null || this.f15948r != null || this.f15950t != null || this.f15951u != null) {
+        if (this.f15948q != null || this.f15949r != null || this.f15951t != null || this.f15952u != null) {
             float thumbPosition = getThumbPosition();
-            ColorStateList colorStateList = this.f15947q;
+            ColorStateList colorStateList = this.f15948q;
             if (colorStateList != null) {
-                q(this.f15942d, colorStateList, this.f15953w, this.f15954x, thumbPosition);
+                q(this.f15943d, colorStateList, this.f15954w, this.f15955x, thumbPosition);
             }
-            ColorStateList colorStateList2 = this.f15948r;
+            ColorStateList colorStateList2 = this.f15949r;
             if (colorStateList2 != null) {
-                q(this.f15943e, colorStateList2, this.f15953w, this.f15954x, thumbPosition);
+                q(this.f15944e, colorStateList2, this.f15954w, this.f15955x, thumbPosition);
             }
-            ColorStateList colorStateList3 = this.f15950t;
+            ColorStateList colorStateList3 = this.f15951t;
             if (colorStateList3 != null) {
-                q(this.f15945o, colorStateList3, this.f15953w, this.f15954x, thumbPosition);
+                q(this.f15946o, colorStateList3, this.f15954w, this.f15955x, thumbPosition);
             }
-            ColorStateList colorStateList4 = this.f15951u;
+            ColorStateList colorStateList4 = this.f15952u;
             if (colorStateList4 != null) {
-                q(this.f15946p, colorStateList4, this.f15953w, this.f15954x, thumbPosition);
+                q(this.f15947p, colorStateList4, this.f15954w, this.f15955x, thumbPosition);
             }
         }
     }
 
     @Override // androidx.appcompat.widget.SwitchCompat
     public Drawable getThumbDrawable() {
-        return this.f15942d;
+        return this.f15943d;
     }
 
     public Drawable getThumbIconDrawable() {
-        return this.f15943e;
+        return this.f15944e;
     }
 
     public int getThumbIconSize() {
-        return this.f15944i;
+        return this.f15945i;
     }
 
     public ColorStateList getThumbIconTintList() {
-        return this.f15948r;
+        return this.f15949r;
     }
 
     @NonNull
     public PorterDuff.Mode getThumbIconTintMode() {
-        return this.f15949s;
+        return this.f15950s;
     }
 
     @Override // androidx.appcompat.widget.SwitchCompat
     public ColorStateList getThumbTintList() {
-        return this.f15947q;
+        return this.f15948q;
     }
 
     public Drawable getTrackDecorationDrawable() {
-        return this.f15946p;
+        return this.f15947p;
     }
 
     public ColorStateList getTrackDecorationTintList() {
-        return this.f15951u;
+        return this.f15952u;
     }
 
     @NonNull
     public PorterDuff.Mode getTrackDecorationTintMode() {
-        return this.f15952v;
+        return this.f15953v;
     }
 
     @Override // androidx.appcompat.widget.SwitchCompat
     public Drawable getTrackDrawable() {
-        return this.f15945o;
+        return this.f15946o;
     }
 
     @Override // androidx.appcompat.widget.SwitchCompat
     public ColorStateList getTrackTintList() {
-        return this.f15950t;
+        return this.f15951t;
     }
 
     @Override // android.view.View
@@ -180,22 +180,22 @@ public class MaterialSwitch extends SwitchCompat {
     @Override // androidx.appcompat.widget.SwitchCompat, android.widget.CompoundButton, android.widget.TextView, android.view.View
     public int[] onCreateDrawableState(int i10) {
         int[] onCreateDrawableState = super.onCreateDrawableState(i10 + 1);
-        if (this.f15943e != null) {
-            View.mergeDrawableStates(onCreateDrawableState, f15941z);
+        if (this.f15944e != null) {
+            View.mergeDrawableStates(onCreateDrawableState, f15942z);
         }
-        this.f15953w = c.j(onCreateDrawableState);
-        this.f15954x = c.f(onCreateDrawableState);
+        this.f15954w = c.j(onCreateDrawableState);
+        this.f15955x = c.f(onCreateDrawableState);
         return onCreateDrawableState;
     }
 
     @Override // androidx.appcompat.widget.SwitchCompat
     public void setThumbDrawable(Drawable drawable) {
-        this.f15942d = drawable;
+        this.f15943d = drawable;
         o();
     }
 
     public void setThumbIconDrawable(Drawable drawable) {
-        this.f15943e = drawable;
+        this.f15944e = drawable;
         o();
     }
 
@@ -204,25 +204,25 @@ public class MaterialSwitch extends SwitchCompat {
     }
 
     public void setThumbIconSize(int i10) {
-        if (this.f15944i != i10) {
-            this.f15944i = i10;
+        if (this.f15945i != i10) {
+            this.f15945i = i10;
             o();
         }
     }
 
     public void setThumbIconTintList(ColorStateList colorStateList) {
-        this.f15948r = colorStateList;
+        this.f15949r = colorStateList;
         o();
     }
 
     public void setThumbIconTintMode(@NonNull PorterDuff.Mode mode) {
-        this.f15949s = mode;
+        this.f15950s = mode;
         o();
     }
 
     @Override // androidx.appcompat.widget.SwitchCompat
     public void setThumbTintList(ColorStateList colorStateList) {
-        this.f15947q = colorStateList;
+        this.f15948q = colorStateList;
         o();
     }
 
@@ -233,7 +233,7 @@ public class MaterialSwitch extends SwitchCompat {
     }
 
     public void setTrackDecorationDrawable(Drawable drawable) {
-        this.f15946p = drawable;
+        this.f15947p = drawable;
         p();
     }
 
@@ -242,24 +242,24 @@ public class MaterialSwitch extends SwitchCompat {
     }
 
     public void setTrackDecorationTintList(ColorStateList colorStateList) {
-        this.f15951u = colorStateList;
+        this.f15952u = colorStateList;
         p();
     }
 
     public void setTrackDecorationTintMode(@NonNull PorterDuff.Mode mode) {
-        this.f15952v = mode;
+        this.f15953v = mode;
         p();
     }
 
     @Override // androidx.appcompat.widget.SwitchCompat
     public void setTrackDrawable(Drawable drawable) {
-        this.f15945o = drawable;
+        this.f15946o = drawable;
         p();
     }
 
     @Override // androidx.appcompat.widget.SwitchCompat
     public void setTrackTintList(ColorStateList colorStateList) {
-        this.f15950t = colorStateList;
+        this.f15951t = colorStateList;
         p();
     }
 
@@ -277,22 +277,22 @@ public class MaterialSwitch extends SwitchCompat {
     public MaterialSwitch(android.content.Context r8, android.util.AttributeSet r9, int r10) {
         /*
             r7 = this;
-            int r4 = com.google.android.material.materialswitch.MaterialSwitch.f15940y
+            int r4 = com.google.android.material.materialswitch.MaterialSwitch.f15941y
             android.content.Context r8 = wh.a.d(r8, r9, r10, r4)
             r7.<init>(r8, r9, r10)
             r8 = -1
-            r7.f15944i = r8
+            r7.f15945i = r8
             android.content.Context r0 = r7.getContext()
             android.graphics.drawable.Drawable r1 = super.getThumbDrawable()
-            r7.f15942d = r1
+            r7.f15943d = r1
             android.content.res.ColorStateList r1 = super.getThumbTintList()
-            r7.f15947q = r1
+            r7.f15948q = r1
             r1 = 0
             super.setThumbTintList(r1)
             android.graphics.drawable.Drawable r2 = super.getTrackDrawable()
-            r7.f15945o = r2
+            r7.f15946o = r2
             android.content.res.ColorStateList r2 = super.getTrackTintList()
-            r7.f15950t = r2
+            r7.f15951t = r2
             super.setTrackTintList(r1)
             int[] r2 = bh.l.f7188y4
             r6 = 0
@@ -302,28 +302,28 @@ public class MaterialSwitch extends SwitchCompat {
             androidx.appcompat.widget.v0 r9 = com.google.android.material.internal.m.j(r0, r1, r2, r3, r4, r5)
             int r10 = bh.l.f7197z4
             android.graphics.drawable.Drawable r10 = r9.g(r10)
-            r7.f15943e = r10
+            r7.f15944e = r10
             int r10 = bh.l.A4
             int r10 = r9.f(r10, r8)
-            r7.f15944i = r10
+            r7.f15945i = r10
             int r10 = bh.l.B4
             android.content.res.ColorStateList r10 = r9.c(r10)
-            r7.f15948r = r10
+            r7.f15949r = r10
             int r10 = bh.l.C4
             int r10 = r9.k(r10, r8)
             android.graphics.PorterDuff$Mode r0 = android.graphics.PorterDuff.Mode.SRC_IN
             android.graphics.PorterDuff$Mode r10 = com.google.android.material.internal.p.i(r10, r0)
-            r7.f15949s = r10
+            r7.f15950s = r10
             int r10 = bh.l.D4
             android.graphics.drawable.Drawable r10 = r9.g(r10)
-            r7.f15946p = r10
+            r7.f15947p = r10
             int r10 = bh.l.E4
             android.content.res.ColorStateList r10 = r9.c(r10)
-            r7.f15951u = r10
+            r7.f15952u = r10
             int r10 = bh.l.F4
             int r8 = r9.k(r10, r8)
             android.graphics.PorterDuff$Mode r8 = com.google.android.material.internal.p.i(r8, r0)
-            r7.f15952v = r8
+            r7.f15953v = r8
             r9.x()
             r7.setEnforceSwitchWidth(r6)
             r7.o()

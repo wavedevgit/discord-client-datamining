@@ -5,7 +5,7 @@ import android.os.Looper;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final long f54299a;
+    private static final long f54300a;
 
     static {
         long j10;
@@ -14,10 +14,10 @@ public abstract class e {
         } catch (Exception unused) {
             j10 = -1;
         }
-        f54299a = j10;
+        f54300a = j10;
     }
 
     public static final long a() {
-        return f54299a;
+        return f54300a;
     }
 }

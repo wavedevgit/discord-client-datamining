@@ -92,50 +92,51 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[1] = var5;
         var1[2] = var4;
         var0 = function(arg0) { // Environment: var0
-            var2 = arg0;
-            var1 = var2.filter;
-            var0 = function(arg0) { // Environment: var0
-                _fun89123: for (var _fun89123_ip = 0;;) switch (_fun89123_ip) {
-                    case 0:
-                        var0 = _closure2_slot0;
-                        if (var0) {
-                            _fun89123_ip = 14;
-                            continue _fun89123
-                        }
-                    case 10:
-                        var0 = _closure2_slot2;
-                    case 14:
-                        if (var0) {
-                            _fun89123_ip = 21;
-                            continue _fun89123
-                        }
-                    case 17:
-                        var0 = _closure2_slot1;
-                    case 21:
-                        if (var0) {
-                            _fun89123_ip = 63;
-                            continue _fun89123
-                        }
-                    case 24:
-                        var3 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var1 = 5;
-                        var2 = var2[var1];
-                        var1 = undefined;
-                        var3 = var3.bind(var1)(var2);
-                        var2 = var3.isGPlaySynced;
-                        var1 = arg0;
-                        var0 = var2.bind(var3)(var1);
-                    case 63:
+            _fun87464: for (var _fun87464_ip = 0;;) switch (_fun87464_ip) {
+                case 0:
+                    var3 = arg0;
+                    var2 = _closure2_slot0;
+                    var0 = var3;
+                    if (var2) {
+                        _fun87464_ip = 55;
+                        continue _fun87464
+                    }
+                case 16:
+                    var2 = _closure2_slot2;
+                    var0 = var3;
+                    if (var2) {
+                        _fun87464_ip = 55;
+                        continue _fun87464
+                    }
+                case 26:
+                    var1 = _closure2_slot1;
+                    var0 = var3;
+                    if (var1) {
+                        _fun87464_ip = 55;
+                        continue _fun87464
+                    }
+                case 36:
+                    var2 = var3.filter;
+                    var1 = function(arg0) { // Environment: var1
+                        var2 = _closure1_slot0;
+                        var1 = _closure1_slot1;
+                        var0 = 5;
+                        var1 = var1[var0];
+                        var0 = undefined;
+                        var2 = var2.bind(var0)(var1);
+                        var1 = var2.isGPlaySynced;
+                        var0 = arg0;
+                        var0 = var1.bind(var2)(var0);
                         return var0;
-                }
-            };
-            var0 = var1.bind(var2)(var0);
-            return var0;
+                    };
+                    var0 = var2.bind(var3)(var1);
+                case 55:
+                    return var0;
+            }
         };
         var0 = var2.bind(var3)(var0, var1);
         return var0;
     };
     var2.useAndroidUnsyncedFilter = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4000, 4617, 478, 566, 11310, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4000, 4617, 478, 566, 8848, 2]);

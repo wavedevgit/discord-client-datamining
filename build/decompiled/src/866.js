@@ -127,12 +127,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var6.parseSampleRate;
                 var5 = var5.bind(var6)(var3);
                 if (!(var2 !== var5)) {
-                    _fun9141_ip = 466;
+                    _fun9141_ip = 464;
                     continue _fun9141
                 }
             case 208:
                 if (var5) {
-                    _fun9141_ip = 332;
+                    _fun9141_ip = 331;
                     continue _fun9141
                 }
             case 211:
@@ -143,7 +143,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var7.bind(var2)(var6);
                 var6 = var6.DEBUG_BUILD;
                 if (!var6) {
-                    _fun9141_ip = 312;
+                    _fun9141_ip = 311;
                     continue _fun9141
                 }
             case 240:
@@ -158,30 +158,30 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = 'a negative sampling decision was inherited or tracesSampleRate is set to 0';
                 var1 = typeof var1;
                 if (!(var9 === var1)) {
-                    _fun9141_ip = 297;
+                    _fun9141_ip = 296;
                     continue _fun9141
                 }
-            case 291:
+            case 290:
                 var8 = 'tracesSampler returned 0 or false';
-            case 297:
+            case 296:
                 var1 = '[Tracing] Discarding transaction because ';
                 var1 = var1 + var8;
                 var1 = var6.bind(var7)(var1);
-            case 312:
+            case 311:
                 var1 = new Array(3);
                 var6 = false;
                 var1[0] = var6;
                 var1[1] = var5;
                 var1[2] = var4;
                 return var1;
-            case 332:
+            case 331:
                 var1 = arg2;
                 var6 = var1 < var5;
                 if (var6) {
-                    _fun9141_ip = 448;
+                    _fun9141_ip = 446;
                     continue _fun9141
                 }
-            case 342:
+            case 341:
                 var7 = _closure1_slot0;
                 var8 = _closure1_slot1;
                 var1 = 2;
@@ -189,10 +189,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var7.bind(var2)(var1);
                 var1 = var1.DEBUG_BUILD;
                 if (!var1) {
-                    _fun9141_ip = 448;
+                    _fun9141_ip = 446;
                     continue _fun9141
                 }
-            case 371:
+            case 370:
                 var7 = _closure1_slot0;
                 var8 = _closure1_slot1;
                 var1 = 3;
@@ -209,13 +209,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = ')';
                 var1 = var10.bind(var9)(var11, var1);
                 var1 = var7.bind(var8)(var1);
-            case 448:
+            case 446:
                 var1 = new Array(3);
                 var1[0] = var6;
                 var1[1] = var5;
                 var1[2] = var4;
                 return var1;
-            case 466:
+            case 464:
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot1;
                 var1 = 2;
@@ -223,10 +223,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var4.bind(var2)(var1);
                 var1 = var1.DEBUG_BUILD;
                 if (!var1) {
-                    _fun9141_ip = 604;
+                    _fun9141_ip = 602;
                     continue _fun9141
                 }
-            case 495:
+            case 493:
                 var1 = _closure1_slot0;
                 var4 = _closure1_slot1;
                 var0 = 3;
@@ -250,7 +250,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var15 = var7;
                 var0 = var16[var5](var15, var14, var13, var12, var11);
                 var0 = var1.bind(var2)(var0);
-            case 604:
+            case 602:
                 var0 = new Array(1);
                 var1 = false;
                 var0[0] = var1;

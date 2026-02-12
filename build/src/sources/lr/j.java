@@ -10,40 +10,40 @@ import java.util.Set;
 public final class j implements d {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final d f36004c = e.a(Collections.EMPTY_SET);
+    private static final d f36005c = e.a(Collections.EMPTY_SET);
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f36005a;
+    private final List f36006a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f36006b;
+    private final List f36007b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f36007a;
+        private final List f36008a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final List f36008b;
+        private final List f36009b;
 
         public b a(h hVar) {
-            this.f36008b.add(hVar);
+            this.f36009b.add(hVar);
             return this;
         }
 
         public b b(h hVar) {
-            this.f36007a.add(hVar);
+            this.f36008a.add(hVar);
             return this;
         }
 
         public j c() {
-            return new j(this.f36007a, this.f36008b);
+            return new j(this.f36008a, this.f36009b);
         }
 
         private b(int i10, int i11) {
-            this.f36007a = lr.b.d(i10);
-            this.f36008b = lr.b.d(i11);
+            this.f36008a = lr.b.d(i10);
+            this.f36009b = lr.b.d(i11);
         }
     }
 
@@ -54,18 +54,18 @@ public final class j implements d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public Set get() {
-        int size = this.f36005a.size();
-        ArrayList arrayList = new ArrayList(this.f36006b.size());
-        int size2 = this.f36006b.size();
+        int size = this.f36006a.size();
+        ArrayList arrayList = new ArrayList(this.f36007b.size());
+        int size2 = this.f36007b.size();
         for (int i10 = 0; i10 < size2; i10++) {
-            Collection collection = (Collection) ((h) this.f36006b.get(i10)).get();
+            Collection collection = (Collection) ((h) this.f36007b.get(i10)).get();
             size += collection.size();
             arrayList.add(collection);
         }
         HashSet b10 = lr.b.b(size);
-        int size3 = this.f36005a.size();
+        int size3 = this.f36006a.size();
         for (int i11 = 0; i11 < size3; i11++) {
-            b10.add(g.b(((h) this.f36005a.get(i11)).get()));
+            b10.add(g.b(((h) this.f36006a.get(i11)).get()));
         }
         int size4 = arrayList.size();
         for (int i12 = 0; i12 < size4; i12++) {
@@ -77,7 +77,7 @@ public final class j implements d {
     }
 
     private j(List list, List list2) {
-        this.f36005a = list;
-        this.f36006b = list2;
+        this.f36006a = list;
+        this.f36007b = list2;
     }
 }

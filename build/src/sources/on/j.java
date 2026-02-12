@@ -8,34 +8,34 @@ import nn.b0;
 public final class j extends b {
 
     /* renamed from: e  reason: collision with root package name */
-    private final float f40665e;
+    private final float f40666e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final float f40666f;
+    private final float f40667f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final float f40667g;
+    private final float f40668g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final float f40668h;
+    private final float f40669h;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public j(b0 handler) {
         super(handler);
         Intrinsics.checkNotNullParameter(handler, "handler");
-        this.f40665e = handler.L();
-        this.f40666f = handler.M();
-        this.f40667g = handler.J();
-        this.f40668h = handler.K();
+        this.f40666e = handler.L();
+        this.f40667f = handler.M();
+        this.f40668g = handler.J();
+        this.f40669h = handler.K();
     }
 
     @Override // on.b
     public void a(WritableMap eventData) {
         Intrinsics.checkNotNullParameter(eventData, "eventData");
         super.a(eventData);
-        eventData.putDouble("x", PixelUtil.toDIPFromPixel(this.f40665e));
-        eventData.putDouble("y", PixelUtil.toDIPFromPixel(this.f40666f));
-        eventData.putDouble("absoluteX", PixelUtil.toDIPFromPixel(this.f40667g));
-        eventData.putDouble("absoluteY", PixelUtil.toDIPFromPixel(this.f40668h));
+        eventData.putDouble("x", PixelUtil.toDIPFromPixel(this.f40666e));
+        eventData.putDouble("y", PixelUtil.toDIPFromPixel(this.f40667f));
+        eventData.putDouble("absoluteX", PixelUtil.toDIPFromPixel(this.f40668g));
+        eventData.putDouble("absoluteY", PixelUtil.toDIPFromPixel(this.f40669h));
     }
 }

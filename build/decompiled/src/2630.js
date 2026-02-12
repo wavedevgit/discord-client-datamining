@@ -20,27 +20,27 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'other': 'P'
     };
     var4 = function arg0() {
-        _fun22111: for (var _fun22111_ip = 0;;) switch (_fun22111_ip) {
+        _fun22127: for (var _fun22127_ip = 0;;) switch (_fun22127_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.getUTCDay;
                 var1 = var0.bind(var1)();
                 var0 = 0;
                 if (!(var0 !== var1)) {
-                    _fun22111_ip = 57;
-                    continue _fun22111
+                    _fun22127_ip = 57;
+                    continue _fun22127
                 }
             case 19:
                 var0 = 3;
                 if (!(var0 !== var1)) {
-                    _fun22111_ip = 49;
-                    continue _fun22111
+                    _fun22127_ip = 49;
+                    continue _fun22127
                 }
             case 26:
                 var0 = 6;
                 if (!(var0 !== var1)) {
-                    _fun22111_ip = 41;
-                    continue _fun22111
+                    _fun22127_ip = 41;
+                    continue _fun22127
                 }
             case 33:
                 var0 = "'prošli' EEEE 'u' p";
@@ -58,27 +58,27 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3.lastWeek = var4;
     var4 = function arg0() {
-        _fun22112: for (var _fun22112_ip = 0;;) switch (_fun22112_ip) {
+        _fun22128: for (var _fun22128_ip = 0;;) switch (_fun22128_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.getUTCDay;
                 var1 = var0.bind(var1)();
                 var0 = 0;
                 if (!(var0 !== var1)) {
-                    _fun22112_ip = 57;
-                    continue _fun22112
+                    _fun22128_ip = 57;
+                    continue _fun22128
                 }
             case 19:
                 var0 = 3;
                 if (!(var0 !== var1)) {
-                    _fun22112_ip = 49;
-                    continue _fun22112
+                    _fun22128_ip = 49;
+                    continue _fun22128
                 }
             case 26:
                 var0 = 6;
                 if (!(var0 !== var1)) {
-                    _fun22112_ip = 41;
-                    continue _fun22112
+                    _fun22128_ip = 41;
+                    continue _fun22128
                 }
             case 33:
                 var0 = "'prošli' EEEE 'u' p";
@@ -97,7 +97,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.nextWeek = var4;
     var _closure1_slot0 = var3;
     var2 = function arg0, arg1, arg2, arg3() {
-        _fun22113: for (var _fun22113_ip = 0;;) switch (_fun22113_ip) {
+        _fun22129: for (var _fun22129_ip = 0;;) switch (_fun22129_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var0 = arg0;
@@ -106,8 +106,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = typeof var3;
                 var0 = var3;
                 if (!(var2 === var1)) {
-                    _fun22113_ip = 38;
-                    continue _fun22113
+                    _fun22129_ip = 38;
+                    continue _fun22129
                 }
             case 28:
                 var2 = undefined;

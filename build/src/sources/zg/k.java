@@ -5,29 +5,29 @@ import com.google.android.gms.tasks.Task;
 public class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m0 f56447a = new m0();
+    private final m0 f56448a = new m0();
 
     public k() {
     }
 
     public Task a() {
-        return this.f56447a;
+        return this.f56448a;
     }
 
     public void b(Exception exc) {
-        this.f56447a.s(exc);
+        this.f56448a.s(exc);
     }
 
     public void c(Object obj) {
-        this.f56447a.t(obj);
+        this.f56448a.t(obj);
     }
 
     public boolean d(Exception exc) {
-        return this.f56447a.v(exc);
+        return this.f56448a.v(exc);
     }
 
     public boolean e(Object obj) {
-        return this.f56447a.w(obj);
+        return this.f56448a.w(obj);
     }
 
     public k(a aVar) {

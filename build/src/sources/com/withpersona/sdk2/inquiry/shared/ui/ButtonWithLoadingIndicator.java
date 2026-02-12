@@ -18,13 +18,13 @@ import org.jetbrains.annotations.NotNull;
 public final class ButtonWithLoadingIndicator extends FrameLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    private final d f20566d;
+    private final d f20567d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f20567e;
+    private boolean f20568e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final MaterialButton f20568i;
+    private final MaterialButton f20569i;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ButtonWithLoadingIndicator(Context context, int i10) {
@@ -32,8 +32,8 @@ public final class ButtonWithLoadingIndicator extends FrameLayout {
         Intrinsics.checkNotNullParameter(context, "context");
         d b10 = d.b(LayoutInflater.from(getContext()), this);
         Intrinsics.checkNotNullExpressionValue(b10, "inflate(...)");
-        this.f20566d = b10;
-        this.f20568i = a(Integer.valueOf(i10));
+        this.f20567d = b10;
+        this.f20569i = a(Integer.valueOf(i10));
         b();
     }
 
@@ -49,34 +49,34 @@ public final class ButtonWithLoadingIndicator extends FrameLayout {
     }
 
     private final void b() {
-        getProgressBar().setIndeterminateTintList(ColorStateList.valueOf(this.f20568i.getCurrentTextColor()));
+        getProgressBar().setIndeterminateTintList(ColorStateList.valueOf(this.f20569i.getCurrentTextColor()));
     }
 
     private final void c() {
-        if (this.f20567e) {
-            this.f20568i.setTextScaleX(0.0f);
+        if (this.f20568e) {
+            this.f20569i.setTextScaleX(0.0f);
             getProgressBar().setVisibility(0);
             return;
         }
-        this.f20568i.setTextScaleX(1.0f);
+        this.f20569i.setTextScaleX(1.0f);
         getProgressBar().setVisibility(8);
     }
 
     @NotNull
     public final MaterialButton getButton() {
-        return this.f20568i;
+        return this.f20569i;
     }
 
     @NotNull
     public final ProgressBar getProgressBar() {
-        ProgressBar progressBar = this.f20566d.f21857b;
+        ProgressBar progressBar = this.f20567d.f21858b;
         Intrinsics.checkNotNullExpressionValue(progressBar, "progressBar");
         return progressBar;
     }
 
     @NotNull
     public final CharSequence getText() {
-        CharSequence text = this.f20568i.getText();
+        CharSequence text = this.f20569i.getText();
         Intrinsics.checkNotNullExpressionValue(text, "getText(...)");
         return text;
     }
@@ -87,27 +87,27 @@ public final class ButtonWithLoadingIndicator extends FrameLayout {
             return;
         }
         super.setEnabled(z10);
-        this.f20568i.setEnabled(z10);
+        this.f20569i.setEnabled(z10);
         c();
     }
 
     public final void setIsLoading(boolean z10) {
-        if (this.f20567e == z10) {
+        if (this.f20568e == z10) {
             return;
         }
-        this.f20567e = z10;
-        this.f20568i.setActivated(z10);
+        this.f20568e = z10;
+        this.f20569i.setActivated(z10);
         c();
     }
 
     @Override // android.view.View
     public void setOnClickListener(View.OnClickListener onClickListener) {
-        this.f20568i.setOnClickListener(onClickListener);
+        this.f20569i.setOnClickListener(onClickListener);
     }
 
     public final void setText(@NotNull CharSequence value) {
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f20568i.setText(value);
+        this.f20569i.setText(value);
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -116,8 +116,8 @@ public final class ButtonWithLoadingIndicator extends FrameLayout {
         Intrinsics.checkNotNullParameter(context, "context");
         d b10 = d.b(LayoutInflater.from(getContext()), this);
         Intrinsics.checkNotNullExpressionValue(b10, "inflate(...)");
-        this.f20566d = b10;
-        this.f20568i = a(0);
+        this.f20567d = b10;
+        this.f20569i = a(0);
         b();
     }
 }

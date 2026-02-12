@@ -41,58 +41,58 @@ import zu.d;
 public final class f extends f.c implements lu.e {
 
     /* renamed from: t  reason: collision with root package name */
-    public static final a f45726t = new a(null);
+    public static final a f45727t = new a(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private final g f45727c;
+    private final g f45728c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final k f45728d;
+    private final k f45729d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Socket f45729e;
+    private Socket f45730e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Socket f45730f;
+    private Socket f45731f;
 
     /* renamed from: g  reason: collision with root package name */
-    private okhttp3.g f45731g;
+    private okhttp3.g f45732g;
 
     /* renamed from: h  reason: collision with root package name */
-    private lu.j f45732h;
+    private lu.j f45733h;
 
     /* renamed from: i  reason: collision with root package name */
-    private tu.f f45733i;
+    private tu.f f45734i;
 
     /* renamed from: j  reason: collision with root package name */
-    private BufferedSource f45734j;
+    private BufferedSource f45735j;
 
     /* renamed from: k  reason: collision with root package name */
-    private BufferedSink f45735k;
+    private BufferedSink f45736k;
 
     /* renamed from: l  reason: collision with root package name */
-    private boolean f45736l;
+    private boolean f45737l;
 
     /* renamed from: m  reason: collision with root package name */
-    private boolean f45737m;
+    private boolean f45738m;
 
     /* renamed from: n  reason: collision with root package name */
-    private int f45738n;
+    private int f45739n;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f45739o;
+    private int f45740o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f45740p;
+    private int f45741p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f45741q;
+    private int f45742q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final List f45742r;
+    private final List f45743r;
 
     /* renamed from: s  reason: collision with root package name */
-    private long f45743s;
+    private long f45744s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -108,7 +108,7 @@ public final class f extends f.c implements lu.e {
     public /* synthetic */ class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f45744a;
+        public static final /* synthetic */ int[] f45745a;
 
         static {
             int[] iArr = new int[Proxy.Type.values().length];
@@ -120,7 +120,7 @@ public final class f extends f.c implements lu.e {
                 iArr[Proxy.Type.HTTP.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f45744a = iArr;
+            f45745a = iArr;
         }
     }
 
@@ -129,27 +129,27 @@ public final class f extends f.c implements lu.e {
     public static final class c extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ lu.c f45745d;
+        final /* synthetic */ lu.c f45746d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ okhttp3.g f45746e;
+        final /* synthetic */ okhttp3.g f45747e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ okhttp3.a f45747i;
+        final /* synthetic */ okhttp3.a f45748i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(lu.c cVar, okhttp3.g gVar, okhttp3.a aVar) {
             super(0);
-            this.f45745d = cVar;
-            this.f45746e = gVar;
-            this.f45747i = aVar;
+            this.f45746d = cVar;
+            this.f45747e = gVar;
+            this.f45748i = aVar;
         }
 
         @Override // kotlin.jvm.functions.Function0
         public final List invoke() {
-            yu.c d10 = this.f45745d.d();
+            yu.c d10 = this.f45746d.d();
             Intrinsics.checkNotNull(d10);
-            return d10.a(this.f45746e.d(), this.f45747i.l().i());
+            return d10.a(this.f45747e.d(), this.f45748i.l().i());
         }
     }
 
@@ -162,7 +162,7 @@ public final class f extends f.c implements lu.e {
 
         @Override // kotlin.jvm.functions.Function0
         public final List invoke() {
-            okhttp3.g gVar = f.this.f45731g;
+            okhttp3.g gVar = f.this.f45732g;
             Intrinsics.checkNotNull(gVar);
             List<Certificate> d10 = gVar.d();
             ArrayList arrayList = new ArrayList(CollectionsKt.w(d10, 10));
@@ -178,28 +178,28 @@ public final class f extends f.c implements lu.e {
     public static final class e extends d.AbstractC0817d {
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ qu.c f45749o;
+        final /* synthetic */ qu.c f45750o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         e(BufferedSource bufferedSource, BufferedSink bufferedSink, qu.c cVar) {
             super(true, bufferedSource, bufferedSink);
-            this.f45749o = cVar;
+            this.f45750o = cVar;
         }
 
         @Override // java.io.Closeable, java.lang.AutoCloseable
         public void close() {
-            this.f45749o.a(-1L, true, true, null);
+            this.f45750o.a(-1L, true, true, null);
         }
     }
 
     public f(g connectionPool, k route) {
         Intrinsics.checkNotNullParameter(connectionPool, "connectionPool");
         Intrinsics.checkNotNullParameter(route, "route");
-        this.f45727c = connectionPool;
-        this.f45728d = route;
-        this.f45741q = 1;
-        this.f45742r = new ArrayList();
-        this.f45743s = LongCompanionObject.MAX_VALUE;
+        this.f45728c = connectionPool;
+        this.f45729d = route;
+        this.f45742q = 1;
+        this.f45743r = new ArrayList();
+        this.f45744s = LongCompanionObject.MAX_VALUE;
     }
 
     private final boolean B(List list) {
@@ -210,7 +210,7 @@ public final class f extends f.c implements lu.e {
         for (k kVar : list2) {
             Proxy.Type type = kVar.b().type();
             Proxy.Type type2 = Proxy.Type.DIRECT;
-            if (type == type2 && this.f45728d.b().type() == type2 && Intrinsics.areEqual(this.f45728d.d(), kVar.d())) {
+            if (type == type2 && this.f45729d.b().type() == type2 && Intrinsics.areEqual(this.f45729d.d(), kVar.d())) {
                 return true;
             }
         }
@@ -218,32 +218,32 @@ public final class f extends f.c implements lu.e {
     }
 
     private final void F(int i10) {
-        Socket socket = this.f45730f;
+        Socket socket = this.f45731f;
         Intrinsics.checkNotNull(socket);
-        BufferedSource bufferedSource = this.f45734j;
+        BufferedSource bufferedSource = this.f45735j;
         Intrinsics.checkNotNull(bufferedSource);
-        BufferedSink bufferedSink = this.f45735k;
+        BufferedSink bufferedSink = this.f45736k;
         Intrinsics.checkNotNull(bufferedSink);
         socket.setSoTimeout(0);
-        tu.f a10 = new f.a(true, pu.e.f43215i).q(socket, this.f45728d.a().l().i(), bufferedSource, bufferedSink).k(this).l(i10).a();
-        this.f45733i = a10;
-        this.f45741q = tu.f.N.a().d();
+        tu.f a10 = new f.a(true, pu.e.f43216i).q(socket, this.f45729d.a().l().i(), bufferedSource, bufferedSink).k(this).l(i10).a();
+        this.f45734i = a10;
+        this.f45742q = tu.f.N.a().d();
         tu.f.v2(a10, false, null, 3, null);
     }
 
     private final boolean G(HttpUrl httpUrl) {
         okhttp3.g gVar;
-        if (mu.e.f36663h && !Thread.holdsLock(this)) {
+        if (mu.e.f36664h && !Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
         }
-        HttpUrl l10 = this.f45728d.a().l();
+        HttpUrl l10 = this.f45729d.a().l();
         if (httpUrl.o() != l10.o()) {
             return false;
         }
         if (Intrinsics.areEqual(httpUrl.i(), l10.i())) {
             return true;
         }
-        if (!this.f45737m && (gVar = this.f45731g) != null) {
+        if (!this.f45738m && (gVar = this.f45732g) != null) {
             Intrinsics.checkNotNull(gVar);
             if (e(httpUrl, gVar)) {
                 return true;
@@ -255,7 +255,7 @@ public final class f extends f.c implements lu.e {
     private final boolean e(HttpUrl httpUrl, okhttp3.g gVar) {
         List d10 = gVar.d();
         if (!d10.isEmpty()) {
-            yu.d dVar = yu.d.f55844a;
+            yu.d dVar = yu.d.f55845a;
             String i10 = httpUrl.i();
             Object obj = d10.get(0);
             Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type java.security.cert.X509Certificate");
@@ -269,13 +269,13 @@ public final class f extends f.c implements lu.e {
     private final void h(int i10, int i11, Call call, okhttp3.e eVar) {
         int i12;
         Socket createSocket;
-        Proxy b10 = this.f45728d.b();
-        okhttp3.a a10 = this.f45728d.a();
+        Proxy b10 = this.f45729d.b();
+        okhttp3.a a10 = this.f45729d.a();
         Proxy.Type type = b10.type();
         if (type == null) {
             i12 = -1;
         } else {
-            i12 = b.f45744a[type.ordinal()];
+            i12 = b.f45745a[type.ordinal()];
         }
         if (i12 != 1 && i12 != 2) {
             createSocket = new Socket(b10);
@@ -283,14 +283,14 @@ public final class f extends f.c implements lu.e {
             createSocket = a10.j().createSocket();
             Intrinsics.checkNotNull(createSocket);
         }
-        this.f45729e = createSocket;
-        eVar.j(call, this.f45728d.d(), b10);
+        this.f45730e = createSocket;
+        eVar.j(call, this.f45729d.d(), b10);
         createSocket.setSoTimeout(i11);
         try {
-            vu.h.f52015a.g().f(createSocket, this.f45728d.d(), i10);
+            vu.h.f52016a.g().f(createSocket, this.f45729d.d(), i10);
             try {
-                this.f45734j = x.d(x.l(createSocket));
-                this.f45735k = x.c(x.h(createSocket));
+                this.f45735j = x.d(x.l(createSocket));
+                this.f45736k = x.c(x.h(createSocket));
             } catch (NullPointerException e10) {
                 if (!Intrinsics.areEqual(e10.getMessage(), "throw with null exception")) {
                     return;
@@ -298,7 +298,7 @@ public final class f extends f.c implements lu.e {
                 throw new IOException(e10);
             }
         } catch (ConnectException e11) {
-            ConnectException connectException = new ConnectException("Failed to connect to " + this.f45728d.d());
+            ConnectException connectException = new ConnectException("Failed to connect to " + this.f45729d.d());
             connectException.initCause(e11);
             throw connectException;
         }
@@ -307,13 +307,13 @@ public final class f extends f.c implements lu.e {
     private final void i(qu.b bVar) {
         SSLSocket sSLSocket;
         lu.j jVar;
-        okhttp3.a a10 = this.f45728d.a();
+        okhttp3.a a10 = this.f45729d.a();
         SSLSocketFactory k10 = a10.k();
         SSLSocket sSLSocket2 = null;
         String str = null;
         try {
             Intrinsics.checkNotNull(k10);
-            Socket createSocket = k10.createSocket(this.f45729e, a10.l().i(), a10.l().o(), true);
+            Socket createSocket = k10.createSocket(this.f45730e, a10.l().i(), a10.l().o(), true);
             Intrinsics.checkNotNull(createSocket, "null cannot be cast to non-null type javax.net.ssl.SSLSocket");
             sSLSocket = (SSLSocket) createSocket;
         } catch (Throwable th2) {
@@ -322,11 +322,11 @@ public final class f extends f.c implements lu.e {
         try {
             okhttp3.d a11 = bVar.a(sSLSocket);
             if (a11.h()) {
-                vu.h.f52015a.g().e(sSLSocket, a10.l().i(), a10.f());
+                vu.h.f52016a.g().e(sSLSocket, a10.l().i(), a10.f());
             }
             sSLSocket.startHandshake();
             SSLSession sslSocketSession = sSLSocket.getSession();
-            g.a aVar = okhttp3.g.f40556e;
+            g.a aVar = okhttp3.g.f40557e;
             Intrinsics.checkNotNullExpressionValue(sslSocketSession, "sslSocketSession");
             okhttp3.g a12 = aVar.a(sslSocketSession);
             HostnameVerifier e10 = a10.e();
@@ -337,32 +337,32 @@ public final class f extends f.c implements lu.e {
                     Object obj = d10.get(0);
                     Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type java.security.cert.X509Certificate");
                     X509Certificate x509Certificate = (X509Certificate) obj;
-                    throw new SSLPeerUnverifiedException(StringsKt.l("\n              |Hostname " + a10.l().i() + " not verified:\n              |    certificate: " + lu.c.f36047c.a(x509Certificate) + "\n              |    DN: " + x509Certificate.getSubjectDN().getName() + "\n              |    subjectAltNames: " + yu.d.f55844a.a(x509Certificate) + "\n              ", null, 1, null));
+                    throw new SSLPeerUnverifiedException(StringsKt.l("\n              |Hostname " + a10.l().i() + " not verified:\n              |    certificate: " + lu.c.f36048c.a(x509Certificate) + "\n              |    DN: " + x509Certificate.getSubjectDN().getName() + "\n              |    subjectAltNames: " + yu.d.f55845a.a(x509Certificate) + "\n              ", null, 1, null));
                 }
                 throw new SSLPeerUnverifiedException("Hostname " + a10.l().i() + " not verified (no certificates)");
             }
             lu.c a13 = a10.a();
             Intrinsics.checkNotNull(a13);
-            this.f45731g = new okhttp3.g(a12.e(), a12.a(), a12.c(), new c(a13, a12, a10));
+            this.f45732g = new okhttp3.g(a12.e(), a12.a(), a12.c(), new c(a13, a12, a10));
             a13.b(a10.l().i(), new d());
             if (a11.h()) {
-                str = vu.h.f52015a.g().h(sSLSocket);
+                str = vu.h.f52016a.g().h(sSLSocket);
             }
-            this.f45730f = sSLSocket;
-            this.f45734j = x.d(x.l(sSLSocket));
-            this.f45735k = x.c(x.h(sSLSocket));
+            this.f45731f = sSLSocket;
+            this.f45735j = x.d(x.l(sSLSocket));
+            this.f45736k = x.c(x.h(sSLSocket));
             if (str != null) {
-                jVar = lu.j.f36063e.a(str);
+                jVar = lu.j.f36064e.a(str);
             } else {
                 jVar = lu.j.HTTP_1_1;
             }
-            this.f45732h = jVar;
-            vu.h.f52015a.g().b(sSLSocket);
+            this.f45733h = jVar;
+            vu.h.f52016a.g().b(sSLSocket);
         } catch (Throwable th3) {
             th = th3;
             sSLSocket2 = sSLSocket;
             if (sSLSocket2 != null) {
-                vu.h.f52015a.g().b(sSLSocket2);
+                vu.h.f52016a.g().b(sSLSocket2);
             }
             if (sSLSocket2 != null) {
                 mu.e.n(sSLSocket2);
@@ -378,14 +378,14 @@ public final class f extends f.c implements lu.e {
             h(i10, i11, call, eVar);
             l10 = k(i11, i12, l10, n10);
             if (l10 != null) {
-                Socket socket = this.f45729e;
+                Socket socket = this.f45730e;
                 if (socket != null) {
                     mu.e.n(socket);
                 }
-                this.f45729e = null;
-                this.f45735k = null;
-                this.f45734j = null;
-                eVar.h(call, this.f45728d.d(), this.f45728d.b(), null);
+                this.f45730e = null;
+                this.f45736k = null;
+                this.f45735j = null;
+                eVar.h(call, this.f45729d.d(), this.f45729d.b(), null);
             } else {
                 return;
             }
@@ -395,9 +395,9 @@ public final class f extends f.c implements lu.e {
     private final Request k(int i10, int i11, Request request, HttpUrl httpUrl) {
         String str = "CONNECT " + mu.e.T(httpUrl, true) + " HTTP/1.1";
         while (true) {
-            BufferedSource bufferedSource = this.f45734j;
+            BufferedSource bufferedSource = this.f45735j;
             Intrinsics.checkNotNull(bufferedSource);
-            BufferedSink bufferedSink = this.f45735k;
+            BufferedSink bufferedSink = this.f45736k;
             Intrinsics.checkNotNull(bufferedSink);
             su.b bVar = new su.b(null, this, bufferedSource, bufferedSink);
             TimeUnit timeUnit = TimeUnit.MILLISECONDS;
@@ -412,7 +412,7 @@ public final class f extends f.c implements lu.e {
             int z10 = c10.z();
             if (z10 != 200) {
                 if (z10 == 407) {
-                    Request a10 = this.f45728d.a().h().a(this.f45728d, c10);
+                    Request a10 = this.f45729d.a().h().a(this.f45729d, c10);
                     if (a10 != null) {
                         if (StringsKt.A("close", Response.Z(c10, "Connection", null, 2, null), true)) {
                             return a10;
@@ -433,8 +433,8 @@ public final class f extends f.c implements lu.e {
     }
 
     private final Request l() {
-        Request b10 = new Request.Builder().m(this.f45728d.a().l()).g("CONNECT", null).e("Host", mu.e.T(this.f45728d.a().l(), true)).e("Proxy-Connection", "Keep-Alive").e("User-Agent", "okhttp/4.12.0").b();
-        Request a10 = this.f45728d.a().h().a(this.f45728d, new Response.a().r(b10).p(lu.j.HTTP_1_1).g(407).m("Preemptive Authenticate").b(mu.e.f36658c).s(-1L).q(-1L).j("Proxy-Authenticate", "OkHttp-Preemptive").c());
+        Request b10 = new Request.Builder().m(this.f45729d.a().l()).g("CONNECT", null).e("Host", mu.e.T(this.f45729d.a().l(), true)).e("Proxy-Connection", "Keep-Alive").e("User-Agent", "okhttp/4.12.0").b();
+        Request a10 = this.f45729d.a().h().a(this.f45729d, new Response.a().r(b10).p(lu.j.HTTP_1_1).g(407).m("Preemptive Authenticate").b(mu.e.f36659c).s(-1L).q(-1L).j("Proxy-Authenticate", "OkHttp-Preemptive").c());
         if (a10 == null) {
             return b10;
         }
@@ -442,41 +442,41 @@ public final class f extends f.c implements lu.e {
     }
 
     private final void m(qu.b bVar, int i10, Call call, okhttp3.e eVar) {
-        if (this.f45728d.a().k() == null) {
-            List f10 = this.f45728d.a().f();
+        if (this.f45729d.a().k() == null) {
+            List f10 = this.f45729d.a().f();
             lu.j jVar = lu.j.H2_PRIOR_KNOWLEDGE;
             if (f10.contains(jVar)) {
-                this.f45730f = this.f45729e;
-                this.f45732h = jVar;
+                this.f45731f = this.f45730e;
+                this.f45733h = jVar;
                 F(i10);
                 return;
             }
-            this.f45730f = this.f45729e;
-            this.f45732h = lu.j.HTTP_1_1;
+            this.f45731f = this.f45730e;
+            this.f45733h = lu.j.HTTP_1_1;
             return;
         }
         eVar.C(call);
         i(bVar);
-        eVar.B(call, this.f45731g);
-        if (this.f45732h == lu.j.HTTP_2) {
+        eVar.B(call, this.f45732g);
+        if (this.f45733h == lu.j.HTTP_2) {
             F(i10);
         }
     }
 
     public k A() {
-        return this.f45728d;
+        return this.f45729d;
     }
 
     public final void C(long j10) {
-        this.f45743s = j10;
+        this.f45744s = j10;
     }
 
     public final void D(boolean z10) {
-        this.f45736l = z10;
+        this.f45737l = z10;
     }
 
     public Socket E() {
-        Socket socket = this.f45730f;
+        Socket socket = this.f45731f;
         Intrinsics.checkNotNull(socket);
         return socket;
     }
@@ -485,24 +485,24 @@ public final class f extends f.c implements lu.e {
         try {
             Intrinsics.checkNotNullParameter(call, "call");
             if (iOException instanceof n) {
-                if (((n) iOException).f50294d == tu.b.REFUSED_STREAM) {
-                    int i10 = this.f45740p + 1;
-                    this.f45740p = i10;
+                if (((n) iOException).f50295d == tu.b.REFUSED_STREAM) {
+                    int i10 = this.f45741p + 1;
+                    this.f45741p = i10;
                     if (i10 > 1) {
-                        this.f45736l = true;
-                        this.f45738n++;
+                        this.f45737l = true;
+                        this.f45739n++;
                     }
-                } else if (((n) iOException).f50294d != tu.b.CANCEL || !call.C()) {
-                    this.f45736l = true;
-                    this.f45738n++;
+                } else if (((n) iOException).f50295d != tu.b.CANCEL || !call.C()) {
+                    this.f45737l = true;
+                    this.f45739n++;
                 }
             } else if (!v() || (iOException instanceof tu.a)) {
-                this.f45736l = true;
-                if (this.f45739o == 0) {
+                this.f45737l = true;
+                if (this.f45740o == 0) {
                     if (iOException != null) {
-                        g(call.k(), this.f45728d, iOException);
+                        g(call.k(), this.f45729d, iOException);
                     }
-                    this.f45738n++;
+                    this.f45739n++;
                 }
             }
         } catch (Throwable th2) {
@@ -514,7 +514,7 @@ public final class f extends f.c implements lu.e {
     public synchronized void a(tu.f connection, m settings) {
         Intrinsics.checkNotNullParameter(connection, "connection");
         Intrinsics.checkNotNullParameter(settings, "settings");
-        this.f45741q = settings.d();
+        this.f45742q = settings.d();
     }
 
     @Override // tu.f.c
@@ -524,7 +524,7 @@ public final class f extends f.c implements lu.e {
     }
 
     public final void d() {
-        Socket socket = this.f45729e;
+        Socket socket = this.f45730e;
         if (socket != null) {
             mu.e.n(socket);
         }
@@ -558,40 +558,40 @@ public final class f extends f.c implements lu.e {
     }
 
     public final List n() {
-        return this.f45742r;
+        return this.f45743r;
     }
 
     public final long o() {
-        return this.f45743s;
+        return this.f45744s;
     }
 
     public final boolean p() {
-        return this.f45736l;
+        return this.f45737l;
     }
 
     public final int q() {
-        return this.f45738n;
+        return this.f45739n;
     }
 
     public okhttp3.g r() {
-        return this.f45731g;
+        return this.f45732g;
     }
 
     public final synchronized void s() {
-        this.f45739o++;
+        this.f45740o++;
     }
 
     public final boolean t(okhttp3.a address, List list) {
         Intrinsics.checkNotNullParameter(address, "address");
-        if (mu.e.f36663h && !Thread.holdsLock(this)) {
+        if (mu.e.f36664h && !Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + this);
-        } else if (this.f45742r.size() >= this.f45741q || this.f45736l || !this.f45728d.a().d(address)) {
+        } else if (this.f45743r.size() >= this.f45742q || this.f45737l || !this.f45729d.a().d(address)) {
             return false;
         } else {
             if (Intrinsics.areEqual(address.l().i(), A().a().l().i())) {
                 return true;
             }
-            if (this.f45733i == null || list == null || !B(list) || address.e() != yu.d.f55844a || !G(address.l())) {
+            if (this.f45734i == null || list == null || !B(list) || address.e() != yu.d.f55845a || !G(address.l())) {
                 return false;
             }
             try {
@@ -612,44 +612,44 @@ public final class f extends f.c implements lu.e {
         Object obj;
         StringBuilder sb2 = new StringBuilder();
         sb2.append("Connection{");
-        sb2.append(this.f45728d.a().l().i());
+        sb2.append(this.f45729d.a().l().i());
         sb2.append(':');
-        sb2.append(this.f45728d.a().l().o());
+        sb2.append(this.f45729d.a().l().o());
         sb2.append(", proxy=");
-        sb2.append(this.f45728d.b());
+        sb2.append(this.f45729d.b());
         sb2.append(" hostAddress=");
-        sb2.append(this.f45728d.d());
+        sb2.append(this.f45729d.d());
         sb2.append(" cipherSuite=");
-        okhttp3.g gVar = this.f45731g;
+        okhttp3.g gVar = this.f45732g;
         if (gVar == null || (obj = gVar.a()) == null) {
             obj = ViewProps.NONE;
         }
         sb2.append(obj);
         sb2.append(" protocol=");
-        sb2.append(this.f45732h);
+        sb2.append(this.f45733h);
         sb2.append('}');
         return sb2.toString();
     }
 
     public final boolean u(boolean z10) {
         long j10;
-        if (mu.e.f36663h && Thread.holdsLock(this)) {
+        if (mu.e.f36664h && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         long nanoTime = System.nanoTime();
-        Socket socket = this.f45729e;
+        Socket socket = this.f45730e;
         Intrinsics.checkNotNull(socket);
-        Socket socket2 = this.f45730f;
+        Socket socket2 = this.f45731f;
         Intrinsics.checkNotNull(socket2);
-        BufferedSource bufferedSource = this.f45734j;
+        BufferedSource bufferedSource = this.f45735j;
         Intrinsics.checkNotNull(bufferedSource);
         if (!socket.isClosed() && !socket2.isClosed() && !socket2.isInputShutdown() && !socket2.isOutputShutdown()) {
-            tu.f fVar = this.f45733i;
+            tu.f fVar = this.f45734i;
             if (fVar != null) {
                 return fVar.z1(nanoTime);
             }
             synchronized (this) {
-                j10 = nanoTime - this.f45743s;
+                j10 = nanoTime - this.f45744s;
             }
             if (j10 >= 10000000000L && z10) {
                 return mu.e.G(socket2, bufferedSource);
@@ -660,7 +660,7 @@ public final class f extends f.c implements lu.e {
     }
 
     public final boolean v() {
-        if (this.f45733i != null) {
+        if (this.f45734i != null) {
             return true;
         }
         return false;
@@ -669,13 +669,13 @@ public final class f extends f.c implements lu.e {
     public final ru.d w(OkHttpClient client, ru.g chain) {
         Intrinsics.checkNotNullParameter(client, "client");
         Intrinsics.checkNotNullParameter(chain, "chain");
-        Socket socket = this.f45730f;
+        Socket socket = this.f45731f;
         Intrinsics.checkNotNull(socket);
-        BufferedSource bufferedSource = this.f45734j;
+        BufferedSource bufferedSource = this.f45735j;
         Intrinsics.checkNotNull(bufferedSource);
-        BufferedSink bufferedSink = this.f45735k;
+        BufferedSink bufferedSink = this.f45736k;
         Intrinsics.checkNotNull(bufferedSink);
-        tu.f fVar = this.f45733i;
+        tu.f fVar = this.f45734i;
         if (fVar != null) {
             return new tu.g(client, this, chain, fVar);
         }
@@ -688,11 +688,11 @@ public final class f extends f.c implements lu.e {
 
     public final d.AbstractC0817d x(qu.c exchange) {
         Intrinsics.checkNotNullParameter(exchange, "exchange");
-        Socket socket = this.f45730f;
+        Socket socket = this.f45731f;
         Intrinsics.checkNotNull(socket);
-        BufferedSource bufferedSource = this.f45734j;
+        BufferedSource bufferedSource = this.f45735j;
         Intrinsics.checkNotNull(bufferedSource);
-        BufferedSink bufferedSink = this.f45735k;
+        BufferedSink bufferedSink = this.f45736k;
         Intrinsics.checkNotNull(bufferedSink);
         socket.setSoTimeout(0);
         z();
@@ -700,10 +700,10 @@ public final class f extends f.c implements lu.e {
     }
 
     public final synchronized void y() {
-        this.f45737m = true;
+        this.f45738m = true;
     }
 
     public final synchronized void z() {
-        this.f45736l = true;
+        this.f45737l = true;
     }
 }

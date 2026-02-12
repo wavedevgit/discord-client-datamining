@@ -9,22 +9,22 @@ import kotlin.jvm.internal.LongCompanionObject;
 public final class e extends kotlinx.coroutines.a {
 
     /* renamed from: o  reason: collision with root package name */
-    private final Thread f55789o;
+    private final Thread f55790o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final p0 f55790p;
+    private final p0 f55791p;
 
     public e(CoroutineContext coroutineContext, Thread thread, p0 p0Var) {
         super(coroutineContext, true, true);
-        this.f55789o = thread;
-        this.f55790p = p0Var;
+        this.f55790o = thread;
+        this.f55791p = p0Var;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // kotlinx.coroutines.b0
     public void F(Object obj) {
-        if (!Intrinsics.areEqual(Thread.currentThread(), this.f55789o)) {
-            Thread thread = this.f55789o;
+        if (!Intrinsics.areEqual(Thread.currentThread(), this.f55790o)) {
+            Thread thread = this.f55790o;
             b.a();
             LockSupport.unpark(thread);
         }
@@ -34,13 +34,13 @@ public final class e extends kotlinx.coroutines.a {
         long j10;
         b.a();
         try {
-            p0 p0Var = this.f55790p;
+            p0 p0Var = this.f55791p;
             r rVar = null;
             if (p0Var != null) {
                 p0.l2(p0Var, false, 1, null);
             }
             while (true) {
-                p0 p0Var2 = this.f55790p;
+                p0 p0Var2 = this.f55791p;
                 if (p0Var2 != null) {
                     j10 = p0Var2.t2();
                 } else {
@@ -55,7 +55,7 @@ public final class e extends kotlinx.coroutines.a {
                     K(new InterruptedException());
                 }
             }
-            p0 p0Var3 = this.f55790p;
+            p0 p0Var3 = this.f55791p;
             if (p0Var3 != null) {
                 p0.Y1(p0Var3, false, 1, null);
             }
@@ -67,7 +67,7 @@ public final class e extends kotlinx.coroutines.a {
             if (rVar == null) {
                 return h10;
             }
-            throw rVar.f55816a;
+            throw rVar.f55817a;
         } catch (Throwable th2) {
             b.a();
             throw th2;

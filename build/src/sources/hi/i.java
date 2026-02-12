@@ -9,12 +9,12 @@ import java.util.Locale;
 public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f27349a;
+    private final String f27350a;
 
     public i(String str) {
         int myUid = Process.myUid();
         int myPid = Process.myPid();
-        this.f27349a = ("UID: [" + myUid + "]  PID: [" + myPid + "] ").concat(str);
+        this.f27350a = ("UID: [" + myUid + "]  PID: [" + myPid + "] ").concat(str);
     }
 
     private static String f(String str, String str2, Object... objArr) {
@@ -31,35 +31,35 @@ public final class i {
 
     public final int a(String str, Object... objArr) {
         if (Log.isLoggable("PlayCore", 3)) {
-            return Log.d("PlayCore", f(this.f27349a, "Already connected to the service.", objArr));
+            return Log.d("PlayCore", f(this.f27350a, "Already connected to the service.", objArr));
         }
         return 0;
     }
 
     public final int b(String str, Object... objArr) {
         if (Log.isLoggable("PlayCore", 6)) {
-            return Log.e("PlayCore", f(this.f27349a, "Play Store app is either not installed or not the official version", objArr));
+            return Log.e("PlayCore", f(this.f27350a, "Play Store app is either not installed or not the official version", objArr));
         }
         return 0;
     }
 
     public final int c(Throwable th2, String str, Object... objArr) {
         if (Log.isLoggable("PlayCore", 6)) {
-            return Log.e("PlayCore", f(this.f27349a, str, objArr), th2);
+            return Log.e("PlayCore", f(this.f27350a, str, objArr), th2);
         }
         return 0;
     }
 
     public final int d(String str, Object... objArr) {
         if (Log.isLoggable("PlayCore", 4)) {
-            return Log.i("PlayCore", f(this.f27349a, str, objArr));
+            return Log.i("PlayCore", f(this.f27350a, str, objArr));
         }
         return 0;
     }
 
     public final int e(String str, Object... objArr) {
         if (Log.isLoggable("PlayCore", 5)) {
-            return Log.w("PlayCore", f(this.f27349a, "Phonesky package is not signed -- possibly self-built package. Could not verify.", objArr));
+            return Log.w("PlayCore", f(this.f27350a, "Phonesky package is not signed -- possibly self-built package. Could not verify.", objArr));
         }
         return 0;
     }

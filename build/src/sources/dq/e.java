@@ -10,14 +10,14 @@ import com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView;
 public final class e implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ThemeableLottieAnimationView f21858a;
+    private final ThemeableLottieAnimationView f21859a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ThemeableLottieAnimationView f21859b;
+    public final ThemeableLottieAnimationView f21860b;
 
     private e(ThemeableLottieAnimationView themeableLottieAnimationView, ThemeableLottieAnimationView themeableLottieAnimationView2) {
-        this.f21858a = themeableLottieAnimationView;
-        this.f21859b = themeableLottieAnimationView2;
+        this.f21859a = themeableLottieAnimationView;
+        this.f21860b = themeableLottieAnimationView2;
     }
 
     public static e a(View view) {
@@ -43,6 +43,6 @@ public final class e implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ThemeableLottieAnimationView getRoot() {
-        return this.f21858a;
+        return this.f21859a;
     }
 }

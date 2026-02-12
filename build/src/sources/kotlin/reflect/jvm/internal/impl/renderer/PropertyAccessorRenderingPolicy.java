@@ -7,18 +7,18 @@ import kotlin.enums.EnumEntries;
 public final class PropertyAccessorRenderingPolicy {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ PropertyAccessorRenderingPolicy[] f34048d;
+    private static final /* synthetic */ PropertyAccessorRenderingPolicy[] f34049d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f34049e;
+    private static final /* synthetic */ EnumEntries f34050e;
     public static final PropertyAccessorRenderingPolicy PRETTY = new PropertyAccessorRenderingPolicy("PRETTY", 0);
     public static final PropertyAccessorRenderingPolicy DEBUG = new PropertyAccessorRenderingPolicy("DEBUG", 1);
     public static final PropertyAccessorRenderingPolicy NONE = new PropertyAccessorRenderingPolicy("NONE", 2);
 
     static {
         PropertyAccessorRenderingPolicy[] a10 = a();
-        f34048d = a10;
-        f34049e = hs.a.a(a10);
+        f34049d = a10;
+        f34050e = hs.a.a(a10);
     }
 
     private PropertyAccessorRenderingPolicy(String str, int i10) {
@@ -33,6 +33,6 @@ public final class PropertyAccessorRenderingPolicy {
     }
 
     public static PropertyAccessorRenderingPolicy[] values() {
-        return (PropertyAccessorRenderingPolicy[]) f34048d.clone();
+        return (PropertyAccessorRenderingPolicy[]) f34049d.clone();
     }
 }

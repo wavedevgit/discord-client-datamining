@@ -22,7 +22,7 @@ public final class BuildOverrideCookieBuild {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9207id;
+    private final String f9208id;
     @NotNull
     private final String type;
 
@@ -47,7 +47,7 @@ public final class BuildOverrideCookieBuild {
             v1.b(i10, 3, BuildOverrideCookieBuild$$serializer.INSTANCE.getDescriptor());
         }
         this.type = str;
-        this.f9207id = str2;
+        this.f9208id = str2;
     }
 
     public static /* synthetic */ BuildOverrideCookieBuild copy$default(BuildOverrideCookieBuild buildOverrideCookieBuild, String str, String str2, int i10, Object obj) {
@@ -55,14 +55,14 @@ public final class BuildOverrideCookieBuild {
             str = buildOverrideCookieBuild.type;
         }
         if ((i10 & 2) != 0) {
-            str2 = buildOverrideCookieBuild.f9207id;
+            str2 = buildOverrideCookieBuild.f9208id;
         }
         return buildOverrideCookieBuild.copy(str, str2);
     }
 
     public static final /* synthetic */ void write$Self$bundle_updater_release(BuildOverrideCookieBuild buildOverrideCookieBuild, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         compositeEncoder.y(serialDescriptor, 0, buildOverrideCookieBuild.type);
-        compositeEncoder.y(serialDescriptor, 1, buildOverrideCookieBuild.f9207id);
+        compositeEncoder.y(serialDescriptor, 1, buildOverrideCookieBuild.f9208id);
     }
 
     @NotNull
@@ -72,7 +72,7 @@ public final class BuildOverrideCookieBuild {
 
     @NotNull
     public final String component2() {
-        return this.f9207id;
+        return this.f9208id;
     }
 
     @NotNull
@@ -88,14 +88,14 @@ public final class BuildOverrideCookieBuild {
         }
         if (obj instanceof BuildOverrideCookieBuild) {
             BuildOverrideCookieBuild buildOverrideCookieBuild = (BuildOverrideCookieBuild) obj;
-            return Intrinsics.areEqual(this.type, buildOverrideCookieBuild.type) && Intrinsics.areEqual(this.f9207id, buildOverrideCookieBuild.f9207id);
+            return Intrinsics.areEqual(this.type, buildOverrideCookieBuild.type) && Intrinsics.areEqual(this.f9208id, buildOverrideCookieBuild.f9208id);
         }
         return false;
     }
 
     @NotNull
     public final String getId() {
-        return this.f9207id;
+        return this.f9208id;
     }
 
     @NotNull
@@ -104,18 +104,18 @@ public final class BuildOverrideCookieBuild {
     }
 
     public int hashCode() {
-        return (this.type.hashCode() * 31) + this.f9207id.hashCode();
+        return (this.type.hashCode() * 31) + this.f9208id.hashCode();
     }
 
     @NotNull
     public final WritableNativeMap toNativeMap() {
-        return NativeMapExtensionsKt.nativeMapOf(v.a("type", this.type), v.a(StackTraceHelper.ID_KEY, this.f9207id));
+        return NativeMapExtensionsKt.nativeMapOf(v.a("type", this.type), v.a(StackTraceHelper.ID_KEY, this.f9208id));
     }
 
     @NotNull
     public String toString() {
         String str = this.type;
-        String str2 = this.f9207id;
+        String str2 = this.f9208id;
         return "BuildOverrideCookieBuild(type=" + str + ", id=" + str2 + ")";
     }
 
@@ -123,6 +123,6 @@ public final class BuildOverrideCookieBuild {
         Intrinsics.checkNotNullParameter(type, "type");
         Intrinsics.checkNotNullParameter(id2, "id");
         this.type = type;
-        this.f9207id = id2;
+        this.f9208id = id2;
     }
 }

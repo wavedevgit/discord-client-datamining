@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var5 = dependencyMap;
     var0 = function arg0() {
-        _fun51503: for (var _fun51503_ip = 0;;) switch (_fun51503_ip) {
+        _fun51453: for (var _fun51453_ip = 0;;) switch (_fun51453_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.type;
@@ -13,16 +13,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.STREAMING;
                 var0 = var1 === var0;
                 if (!var0) {
-                    _fun51503_ip = 64;
-                    continue _fun51503
+                    _fun51453_ip = 64;
+                    continue _fun51453
                 }
             case 28:
                 var4 = var2.url;
                 var1 = null;
                 var1 = var1 != var4;
                 if (!var1) {
-                    _fun51503_ip = 61;
-                    continue _fun51503
+                    _fun51453_ip = 61;
+                    continue _fun51453
                 }
             case 42:
                 var4 = _closure1_slot0;
@@ -62,14 +62,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/isStreaming.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun51504: for (var _fun51504_ip = 0;;) switch (_fun51504_ip) {
+        _fun51454: for (var _fun51454_ip = 0;;) switch (_fun51454_ip) {
             case 0:
                 var4 = arg0;
                 var0 = null;
                 var0 = var0 != var4;
                 if (!var0) {
-                    _fun51504_ip = 67;
-                    continue _fun51504
+                    _fun51454_ip = 67;
+                    continue _fun51454
                 }
             case 12:
                 var1 = global;
@@ -77,15 +77,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.isArray;
                 var1 = var1.bind(var2)(var4);
                 if (var1) {
-                    _fun51504_ip = 49;
-                    continue _fun51504
+                    _fun51454_ip = 49;
+                    continue _fun51454
                 }
             case 36:
                 var3 = _closure1_slot2;
                 var1 = undefined;
                 var1 = var3.bind(var1)(var4);
-                _fun51504_ip = 64;
-                continue _fun51504;
+                _fun51454_ip = 64;
+                continue _fun51454;
             case 49:
                 var3 = var4.some;
                 var2 = _closure1_slot2;

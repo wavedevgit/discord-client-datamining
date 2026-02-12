@@ -5,35 +5,35 @@ import java.util.NoSuchElementException;
 abstract class d extends x {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f14877d;
+    private final int f14878d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f14878e;
+    private int f14879e;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public d(int i10, int i11) {
         b.b(i11, i10, "index");
-        this.f14877d = i10;
-        this.f14878e = i11;
+        this.f14878d = i10;
+        this.f14879e = i11;
     }
 
     protected abstract Object a(int i10);
 
     @Override // java.util.Iterator, java.util.ListIterator
     public final boolean hasNext() {
-        return this.f14878e < this.f14877d;
+        return this.f14879e < this.f14878d;
     }
 
     @Override // java.util.ListIterator
     public final boolean hasPrevious() {
-        return this.f14878e > 0;
+        return this.f14879e > 0;
     }
 
     @Override // java.util.Iterator, java.util.ListIterator
     public final Object next() {
         if (hasNext()) {
-            int i10 = this.f14878e;
-            this.f14878e = i10 + 1;
+            int i10 = this.f14879e;
+            this.f14879e = i10 + 1;
             return a(i10);
         }
         throw new NoSuchElementException();
@@ -41,14 +41,14 @@ abstract class d extends x {
 
     @Override // java.util.ListIterator
     public final int nextIndex() {
-        return this.f14878e;
+        return this.f14879e;
     }
 
     @Override // java.util.ListIterator
     public final Object previous() {
         if (hasPrevious()) {
-            int i10 = this.f14878e - 1;
-            this.f14878e = i10;
+            int i10 = this.f14879e - 1;
+            this.f14879e = i10;
             return a(i10);
         }
         throw new NoSuchElementException();
@@ -56,6 +56,6 @@ abstract class d extends x {
 
     @Override // java.util.ListIterator
     public final int previousIndex() {
-        return this.f14878e - 1;
+        return this.f14879e - 1;
     }
 }

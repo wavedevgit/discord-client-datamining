@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var11 = metroImportDefault;
+    var12 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var11;
+    var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
         var0 = arg0;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var _closure1_slot9 = var0;
+    var _closure1_slot10 = var0;
     var0 = global;
     var7 = var0.Object;
     var6 = var7.defineProperty;
@@ -93,76 +93,83 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var6 = var3.jsx;
-    var _closure1_slot5 = var6;
+    var7 = var3.jsx;
+    var _closure1_slot5 = var7;
     var6 = var3.jsxs;
     var _closure1_slot6 = var6;
     var3 = var3.Fragment;
     var _closure1_slot7 = var3;
     var3 = 3;
     var3 = var5[var3];
-    var7 = var4.bind(var0)(var3);
-    var6 = var7.createStyles;
+    var8 = var4.bind(var0)(var3);
+    var6 = var8.createStyles;
     var3 = {};
-    var8 = {
+    var9 = {
         'padding': 16,
         'flexDirection': 'column',
         'justifyContent': 'space-between'
     };
-    var9 = 16;
-    var10 = 4;
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.colors;
-    var12 = var12.CARD_BACKGROUND_DEFAULT;
-    var8.backgroundColor = var12;
-    var3.termsContainer = var8;
-    var8 = {};
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.radii;
-    var12 = var12.sm;
-    var8.borderTopLeftRadius = var12;
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.radii;
-    var12 = var12.sm;
-    var8.borderTopRightRadius = var12;
-    var3.firstItem = var8;
-    var8 = {};
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.radii;
-    var12 = var12.sm;
-    var8.borderBottomLeftRadius = var12;
-    var10 = var5[var10];
-    var10 = var11.bind(var0)(var10);
-    var10 = var10.radii;
-    var10 = var10.sm;
-    var8.borderBottomRightRadius = var10;
-    var10 = 12;
-    var8.marginBottom = var10;
-    var3.lastItem = var8;
-    var8 = {};
-    var10 = 'row';
-    var8.flexDirection = var10;
-    var3.termsRow = var8;
-    var8 = {
+    var10 = 16;
+    var11 = 4;
+    var13 = var5[var11];
+    var13 = var12.bind(var0)(var13);
+    var13 = var13.colors;
+    var13 = var13.CARD_BACKGROUND_DEFAULT;
+    var9.backgroundColor = var13;
+    var3.termsContainer = var9;
+    var9 = {};
+    var13 = var5[var11];
+    var13 = var12.bind(var0)(var13);
+    var13 = var13.radii;
+    var13 = var13.sm;
+    var9.borderTopLeftRadius = var13;
+    var13 = var5[var11];
+    var13 = var12.bind(var0)(var13);
+    var13 = var13.radii;
+    var13 = var13.sm;
+    var9.borderTopRightRadius = var13;
+    var3.firstItem = var9;
+    var9 = {};
+    var13 = var5[var11];
+    var13 = var12.bind(var0)(var13);
+    var13 = var13.radii;
+    var13 = var13.sm;
+    var9.borderBottomLeftRadius = var13;
+    var11 = var5[var11];
+    var11 = var12.bind(var0)(var11);
+    var11 = var11.radii;
+    var11 = var11.sm;
+    var9.borderBottomRightRadius = var11;
+    var11 = 12;
+    var9.marginBottom = var11;
+    var3.lastItem = var9;
+    var9 = {};
+    var11 = 'row';
+    var9.flexDirection = var11;
+    var3.termsRow = var9;
+    var9 = {
         'flex': 1,
         'lineHeight': 20
     };
-    var3.termsRowContent = var8;
-    var8 = {
+    var3.termsRowContent = var9;
+    var9 = {
         'paddingRight': 8,
         'width': 20,
         'height': 20
     };
-    var3.termsRowNumber = var8;
-    var8 = {};
-    var8.marginBottom = var9;
-    var3.title = var8;
-    var3 = var6.bind(var7)(var3);
+    var3.termsRowNumber = var9;
+    var9 = {};
+    var9.marginBottom = var10;
+    var3.title = var9;
+    var3 = var6.bind(var8)(var3);
     var _closure1_slot8 = var3;
+    var3 = 7;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.TableRowDivider;
+    var3 = {};
+    var3 = var7.bind(var0)(var6, var3);
+    var _closure1_slot9 = var3;
     var3 = 9;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -197,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var9 = var9.title;
         var4.style = var9;
-        var9 = 7;
+        var9 = 8;
         var10 = var13[var9];
         var10 = var12.bind(var3)(var10);
         var11 = var10.intl;
@@ -213,7 +220,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4[0] = var6;
         var6 = var7.map;
         var5 = function(arg0, arg1) { // Environment: var5
-            _fun44134: for (var _fun44134_ip = 0;;) switch (_fun44134_ip) {
+            _fun44013: for (var _fun44013_ip = 0;;) switch (_fun44013_ip) {
                 case 0:
                     var8 = arg0;
                     var7 = arg1;
@@ -231,8 +238,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var13 = 0;
                     var10 = null;
                     if (!(var13 === var7)) {
-                        _fun44134_ip = 74;
-                        continue _fun44134
+                        _fun44013_ip = 74;
+                        continue _fun44013
                     }
                 case 64:
                     var13 = _closure2_slot2;
@@ -245,8 +252,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var14 = var13 - var10;
                     var13 = null;
                     if (!(var7 === var14)) {
-                        _fun44134_ip = 110;
-                        continue _fun44134
+                        _fun44013_ip = 110;
+                        continue _fun44013
                     }
                 case 100:
                     var14 = _closure2_slot2;
@@ -255,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1[2] = var13;
                     var0.style = var1;
                     var15 = _closure1_slot5;
-                    var14 = _closure1_slot9;
+                    var14 = _closure1_slot10;
                     var13 = {};
                     var13.rule = var8;
                     var1 = var7 + var10;
@@ -273,20 +280,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var9 = var9 - var10;
                     var5 = null;
                     if (!(var7 !== var9)) {
-                        _fun44134_ip = 234;
-                        continue _fun44134
+                        _fun44013_ip = 200;
+                        continue _fun44013
                     }
                 case 196:
-                    var10 = _closure1_slot5;
-                    var9 = _closure1_slot0;
-                    var11 = _closure1_slot2;
-                    var6 = 8;
-                    var6 = var11[var6];
-                    var6 = var9.bind(var1)(var6);
-                    var9 = var6.TableRowDivider;
-                    var6 = {};
-                    var5 = var10.bind(var1)(var9, var6);
-                case 234:
+                    var5 = _closure1_slot9;
+                case 200:
                     var0[1] = var5;
                     var2.children = var0;
                     var0 = global;
@@ -307,4 +306,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3938, 4791, 1234, 4879, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3938, 4757, 4845, 1234, 2]);

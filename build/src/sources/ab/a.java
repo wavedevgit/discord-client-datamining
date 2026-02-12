@@ -20,7 +20,7 @@ public final class a {
         Intrinsics.checkNotNullParameter(rotationOptions, "rotationOptions");
         Intrinsics.checkNotNullParameter(encodedImage, "encodedImage");
         if (k.F0(encodedImage)) {
-            if (resizeOptions != null && resizeOptions.f11064b > 0 && resizeOptions.f11063a > 0 && encodedImage.getWidth() != 0 && encodedImage.getHeight() != 0) {
+            if (resizeOptions != null && resizeOptions.f11065b > 0 && resizeOptions.f11064a > 0 && encodedImage.getWidth() != 0 && encodedImage.getHeight() != 0) {
                 int d10 = f527a.d(rotationOptions, encodedImage);
                 if (d10 != 90 && d10 != 270) {
                     z10 = false;
@@ -37,10 +37,10 @@ public final class a {
                 } else {
                     height = encodedImage.getHeight();
                 }
-                float f10 = resizeOptions.f11063a / width;
-                float f11 = resizeOptions.f11064b / height;
+                float f10 = resizeOptions.f11064a / width;
+                float f11 = resizeOptions.f11065b / height;
                 float c10 = kotlin.ranges.d.c(f10, f11);
-                q8.a.E("DownsampleUtil", "Downsample - Specified size: %dx%d, image size: %dx%d ratio: %.1f x %.1f, ratio: %.3f", Integer.valueOf(resizeOptions.f11063a), Integer.valueOf(resizeOptions.f11064b), Integer.valueOf(width), Integer.valueOf(height), Float.valueOf(f10), Float.valueOf(f11), Float.valueOf(c10));
+                q8.a.E("DownsampleUtil", "Downsample - Specified size: %dx%d, image size: %dx%d ratio: %.1f x %.1f, ratio: %.3f", Integer.valueOf(resizeOptions.f11064a), Integer.valueOf(resizeOptions.f11065b), Integer.valueOf(width), Integer.valueOf(height), Float.valueOf(f10), Float.valueOf(f11), Float.valueOf(c10));
                 return c10;
             }
             return 1.0f;
@@ -57,19 +57,19 @@ public final class a {
             return 1;
         }
         float a10 = a(rotationOptions, resizeOptions, encodedImage);
-        if (encodedImage.z() == ga.b.f25382b) {
+        if (encodedImage.z() == ga.b.f25383b) {
             e10 = f(a10);
         } else {
             e10 = e(a10);
         }
         int max = Math.max(encodedImage.getHeight(), encodedImage.getWidth());
         if (resizeOptions != null) {
-            f10 = resizeOptions.f11065c;
+            f10 = resizeOptions.f11066c;
         } else {
             f10 = i10;
         }
         while (max / e10 > f10) {
-            if (encodedImage.z() == ga.b.f25382b) {
+            if (encodedImage.z() == ga.b.f25383b) {
                 e10 *= 2;
             } else {
                 e10++;

@@ -5,7 +5,7 @@ import java.io.Serializable;
 final class n0 extends i0 implements Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    static final n0 f45386d = new n0();
+    static final n0 f45387d = new n0();
 
     private n0() {
     }

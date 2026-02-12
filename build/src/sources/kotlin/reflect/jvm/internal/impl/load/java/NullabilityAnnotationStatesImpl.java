@@ -11,33 +11,33 @@ import org.jetbrains.annotations.NotNull;
 public final class NullabilityAnnotationStatesImpl<T> implements NullabilityAnnotationStates<T> {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f32738a;
+    private final Map f32739a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final LockBasedStorageManager f32739b;
+    private final LockBasedStorageManager f32740b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final MemoizedFunctionToNullable f32740c;
+    private final MemoizedFunctionToNullable f32741c;
 
     public NullabilityAnnotationStatesImpl(@NotNull Map<FqName, ? extends T> states) {
         Intrinsics.checkNotNullParameter(states, "states");
-        this.f32738a = states;
+        this.f32739a = states;
         LockBasedStorageManager lockBasedStorageManager = new LockBasedStorageManager("Java nullability annotation states");
-        this.f32739b = lockBasedStorageManager;
+        this.f32740b = lockBasedStorageManager;
         MemoizedFunctionToNullable createMemoizedFunctionWithNullableValues = lockBasedStorageManager.createMemoizedFunctionWithNullableValues(new h(this));
         Intrinsics.checkNotNullExpressionValue(createMemoizedFunctionWithNullableValues, "createMemoizedFunctionWithNullableValues(...)");
-        this.f32740c = createMemoizedFunctionWithNullableValues;
+        this.f32741c = createMemoizedFunctionWithNullableValues;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Object b(NullabilityAnnotationStatesImpl nullabilityAnnotationStatesImpl, FqName fqName) {
         Intrinsics.checkNotNull(fqName);
-        return FqNamesUtilKt.findValueForMostSpecificFqname(fqName, nullabilityAnnotationStatesImpl.f32738a);
+        return FqNamesUtilKt.findValueForMostSpecificFqname(fqName, nullabilityAnnotationStatesImpl.f32739a);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.NullabilityAnnotationStates
     public T get(@NotNull FqName fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        return (T) this.f32740c.invoke(fqName);
+        return (T) this.f32741c.invoke(fqName);
     }
 }

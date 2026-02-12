@@ -5,7 +5,7 @@ import bj.c;
 final class i7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final i7 f39280a = new i7();
+    static final i7 f39281a = new i7();
 
     static {
         c.b a10 = bj.c.a("useCases");

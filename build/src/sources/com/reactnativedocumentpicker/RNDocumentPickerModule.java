@@ -136,34 +136,34 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
     static final class c extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f18439d;
+        int f18440d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ ReadableArray f18441i;
+        final /* synthetic */ ReadableArray f18442i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ String f18442o;
+        final /* synthetic */ String f18443o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ Promise f18443p;
+        final /* synthetic */ Promise f18444p;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(ReadableArray readableArray, String str, Promise promise, Continuation continuation) {
             super(2, continuation);
-            this.f18441i = readableArray;
-            this.f18442o = str;
-            this.f18443p = promise;
+            this.f18442i = readableArray;
+            this.f18443o = str;
+            this.f18444p = promise;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new c(this.f18441i, this.f18442o, this.f18443p, continuation);
+            return new c(this.f18442i, this.f18443o, this.f18444p, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = gs.b.f();
-            int i10 = this.f18439d;
+            int i10 = this.f18440d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -175,21 +175,21 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
                 lm.c cVar = RNDocumentPickerModule.this.fileOps;
                 ReactApplicationContext reactApplicationContext = RNDocumentPickerModule.this.getReactApplicationContext();
                 Intrinsics.checkNotNullExpressionValue(reactApplicationContext, "access$getReactApplicationContext(...)");
-                ReadableArray readableArray = this.f18441i;
-                com.reactnativedocumentpicker.a a10 = com.reactnativedocumentpicker.a.f18451e.a(this.f18442o);
-                this.f18439d = 1;
+                ReadableArray readableArray = this.f18442i;
+                com.reactnativedocumentpicker.a a10 = com.reactnativedocumentpicker.a.f18452e.a(this.f18443o);
+                this.f18440d = 1;
                 obj = cVar.f(reactApplicationContext, readableArray, a10, this);
                 if (obj == f10) {
                     return f10;
                 }
             }
-            this.f18443p.resolve((ReadableArray) obj);
-            return Unit.f31987a;
+            this.f18444p.resolve((ReadableArray) obj);
+            return Unit.f31988a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -198,26 +198,26 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
     public static final class d extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f18444d;
+        int f18445d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ List f18446i;
+        final /* synthetic */ List f18447i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         d(List list, Continuation continuation) {
             super(2, continuation);
-            this.f18446i = list;
+            this.f18447i = list;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new d(this.f18446i, continuation);
+            return new d(this.f18447i, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = gs.b.f();
-            int i10 = this.f18444d;
+            int i10 = this.f18445d;
             try {
                 if (i10 != 0) {
                     if (i10 == 1) {
@@ -232,8 +232,8 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
                         lm.e eVar = RNDocumentPickerModule.this.metadataGetter;
                         ReactApplicationContext reactApplicationContext = RNDocumentPickerModule.this.getReactApplicationContext();
                         Intrinsics.checkNotNullExpressionValue(reactApplicationContext, "access$getReactApplicationContext(...)");
-                        List list = this.f18446i;
-                        this.f18444d = 1;
+                        List list = this.f18447i;
+                        this.f18445d = 1;
                         obj = eVar.e(reactApplicationContext, list, fVar, this);
                         if (obj == f10) {
                             return f10;
@@ -246,12 +246,12 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
             } catch (Exception e10) {
                 RNDocumentPickerModule.this.promiseWrapper.b(e10);
             }
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -259,66 +259,66 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
     static final class e extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f18447d;
+        int f18448d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ ReadableMap f18448e;
+        final /* synthetic */ ReadableMap f18449e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ RNDocumentPickerModule f18449i;
+        final /* synthetic */ RNDocumentPickerModule f18450i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ Promise f18450o;
+        final /* synthetic */ Promise f18451o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         e(ReadableMap readableMap, RNDocumentPickerModule rNDocumentPickerModule, Promise promise, Continuation continuation) {
             super(2, continuation);
-            this.f18448e = readableMap;
-            this.f18449i = rNDocumentPickerModule;
-            this.f18450o = promise;
+            this.f18449e = readableMap;
+            this.f18450i = rNDocumentPickerModule;
+            this.f18451o = promise;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new e(this.f18448e, this.f18449i, this.f18450o, continuation);
+            return new e(this.f18449e, this.f18450i, this.f18451o, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             String str;
             gs.b.f();
-            if (this.f18447d == 0) {
+            if (this.f18448d == 0) {
                 kotlin.c.b(obj);
                 try {
-                    if (this.f18448e.hasKey("uri")) {
-                        str = this.f18448e.getString("uri");
+                    if (this.f18449e.hasKey("uri")) {
+                        str = this.f18449e.getString("uri");
                     } else {
                         str = null;
                     }
-                    lm.c cVar = this.f18449i.fileOps;
-                    Uri uri = this.f18449i.currentUriOfFileBeingExported;
-                    ReactApplicationContext reactApplicationContext = this.f18449i.getReactApplicationContext();
+                    lm.c cVar = this.f18450i.fileOps;
+                    Uri uri = this.f18450i.currentUriOfFileBeingExported;
+                    ReactApplicationContext reactApplicationContext = this.f18450i.getReactApplicationContext();
                     Intrinsics.checkNotNullExpressionValue(reactApplicationContext, "access$getReactApplicationContext(...)");
                     lm.a k10 = cVar.k(uri, str, reactApplicationContext);
-                    lm.e eVar = this.f18449i.metadataGetter;
-                    ContentResolver contentResolver = this.f18449i.getReactApplicationContext().getContentResolver();
+                    lm.e eVar = this.f18450i.metadataGetter;
+                    ContentResolver contentResolver = this.f18450i.getReactApplicationContext().getContentResolver();
                     Intrinsics.checkNotNullExpressionValue(contentResolver, "getContentResolver(...)");
                     eVar.f(contentResolver, k10, false);
                     WritableArray createArray = Arguments.createArray();
                     createArray.pushMap(k10.c());
                     Intrinsics.checkNotNullExpressionValue(createArray, "apply(...)");
-                    this.f18450o.resolve(createArray);
+                    this.f18451o.resolve(createArray);
                 } catch (Exception e10) {
-                    this.f18450o.reject(e10);
+                    this.f18451o.reject(e10);
                 }
-                return Unit.f31987a;
+                return Unit.f31988a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -397,7 +397,7 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
     public WritableMap isKnownType(@NotNull String kind, @NotNull String value) {
         Intrinsics.checkNotNullParameter(kind, "kind");
         Intrinsics.checkNotNullParameter(value, "value");
-        return com.reactnativedocumentpicker.b.f18457a.b(kind, value);
+        return com.reactnativedocumentpicker.b.f18458a.b(kind, value);
     }
 
     @Override // com.reactnativedocumentpicker.NativeDocumentPickerSpec
@@ -440,7 +440,7 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
             f a10 = g.a(opts);
             this.currentPickOptions = a10;
             try {
-                currentActivity.startActivityForResult(lm.d.f35923a.a(a10), 41);
+                currentActivity.startActivityForResult(lm.d.f35924a.a(a10), 41);
             } catch (ActivityNotFoundException e10) {
                 promise.reject(UNABLE_TO_OPEN_FILE_TYPE, e10);
             } catch (Exception e11) {

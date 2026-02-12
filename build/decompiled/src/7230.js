@@ -1,89 +1,76 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = metroImportDefault;
-    var2 = exports;
-    var6 = dependencyMap;
+    var1 = exports;
     var0 = global;
-    var7 = var0.Object;
-    var4 = var7.defineProperty;
-    var1 = {};
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
     var0 = true;
-    var1.value = var0;
+    var2.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var7)(var2, var0, var1);
-    var0 = 0;
-    var1 = var6[var0];
-    var0 = undefined;
-    var4 = var3.bind(var0)(var1);
-    var1 = 1;
-    var1 = var6[var1];
-    var1 = var3.bind(var0)(var1);
-    var _closure1_slot0 = var1;
-    var3 = {};
-    var1 = 'E_UNKNOWN';
-    var3.E_UNKNOWN = var1;
-    var1 = 'E_USER_CANCELLED';
-    var3.E_USER_CANCELLED = var1;
-    var1 = 'E_USER_ERROR';
-    var3.E_USER_ERROR = var1;
-    var1 = 'E_ITEM_UNAVAILABLE';
-    var3.E_ITEM_UNAVAILABLE = var1;
-    var1 = 'E_REMOTE_ERROR';
-    var3.E_REMOTE_ERROR = var1;
-    var1 = 'E_NETWORK_ERROR';
-    var3.E_NETWORK_ERROR = var1;
-    var1 = 'E_SERVICE_ERROR';
-    var3.E_SERVICE_ERROR = var1;
-    var1 = 'E_RECEIPT_FAILED';
-    var3.E_RECEIPT_FAILED = var1;
-    var1 = 'E_RECEIPT_FINISHED_FAILED';
-    var3.E_RECEIPT_FINISHED_FAILED = var1;
-    var1 = 'E_NOT_PREPARED';
-    var3.E_NOT_PREPARED = var1;
-    var1 = 'E_NOT_ENDED';
-    var3.E_NOT_ENDED = var1;
-    var1 = 'E_ALREADY_OWNED';
-    var3.E_ALREADY_OWNED = var1;
-    var1 = 'E_DEVELOPER_ERROR';
-    var3.E_DEVELOPER_ERROR = var1;
-    var1 = 'E_BILLING_RESPONSE_JSON_PARSE_ERROR';
-    var3.E_BILLING_RESPONSE_JSON_PARSE_ERROR = var1;
-    var1 = 'E_DEFERRED_PAYMENT';
-    var3.E_DEFERRED_PAYMENT = var1;
-    var1 = 'E_INTERRUPTED';
-    var3.E_INTERRUPTED = var1;
-    var1 = 'E_IAP_NOT_AVAILABLE';
-    var3.E_IAP_NOT_AVAILABLE = var1;
-    var1 = function arg0, arg1, arg2, arg3, arg4, arg5() {
-        var6 = arg1;
-        var5 = arg2;
-        var4 = arg3;
-        var3 = arg4;
-        var2 = arg5;
-        var1 = this;
-        var8 = _closure1_slot0;
-        var7 = _closure1_slot1;
-        var0 = undefined;
-        var7 = var8.bind(var0)(var1, var7);
-        var7 = arg0;
-        var1.name = var7;
-        var1.message = var6;
-        var1.responseCode = var5;
-        var1.debugMessage = var4;
-        var1.code = var3;
-        var1.productId = var2;
-        var7 = '[react-native-iap]: PurchaseError';
-        var1.name = var7;
-        var1.message = var6;
-        var1.responseCode = var5;
-        var1.debugMessage = var4;
-        var1.code = var3;
-        var1.productId = var2;
-        return var0;
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = function arg0, arg1() {
+        _fun58670: for (var _fun58670_ip = 0;;) switch (_fun58670_ip) {
+            case 0:
+                var4 = arg0;
+                var3 = arg1;
+                var1 = var4.length;
+                var0 = var3.length;
+                if (!(var1 === var0)) {
+                    _fun58670_ip = 105;
+                    continue _fun58670
+                }
+            case 20:
+                var0 = var3.length;
+                var2 = 0;
+                if (!(var2 < var0)) {
+                    _fun58670_ip = 101;
+                    continue _fun58670
+                }
+            case 31:
+                var0 = var4.length;
+                var0 = var2 < var0;
+                var1 = global;
+                var2 = 0;
+                if (!var0) {
+                    _fun58670_ip = 101;
+                    continue _fun58670
+                }
+            case 47:
+                var7 = var1.Object;
+                var6 = var7.is;
+                var5 = var4[var2];
+                var0 = var3[var2];
+                var0 = var6.bind(var7)(var5, var0);
+                if (var0) {
+                    _fun58670_ip = 80;
+                    continue _fun58670
+                }
+            case 76:
+                var0 = false;
+                return var0;
+            case 80:
+                var2 = var2 + 1;
+                var0 = var3.length;
+                if (!(var2 < var0)) {
+                    _fun58670_ip = 101;
+                    continue _fun58670
+                }
+            case 92:
+                var0 = var4.length;
+                if (var2 < var0) {
+                    _fun58670_ip = 47;
+                    continue _fun58670
+                }
+            case 101:
+                var0 = true;
+                return var0;
+            case 105:
+                var0 = false;
+                return var0;
+        }
     };
-    var _closure1_slot1 = var1;
-    var1 = var4.bind(var0)(var1);
-    var2.ErrorCode = var3;
-    var2.PurchaseError = var1;
+    var1.default = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

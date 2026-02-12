@@ -18,21 +18,21 @@ import kotlin.text.StringsKt;
 public final class r implements g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f38195a;
+    private final Context f38196a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Lazy f38196b;
+    private final Lazy f38197b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f38197c;
+    private final String f38198c;
 
     /* renamed from: d  reason: collision with root package name */
-    private String f38198d;
+    private String f38199d;
 
     public r(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f38195a = context;
-        this.f38196b = as.l.b(new Function0() { // from class: no.n
+        this.f38196a = context;
+        this.f38197b = as.l.b(new Function0() { // from class: no.n
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 SharedPreferences j10;
@@ -40,8 +40,8 @@ public final class r implements g {
                 return j10;
             }
         });
-        this.f38197c = g();
-        this.f38198d = "";
+        this.f38198c = g();
+        this.f38199d = "";
     }
 
     private final String g() {
@@ -52,7 +52,7 @@ public final class r implements g {
         if (string != null && !StringsKt.k0(string)) {
             return string;
         }
-        String string2 = Settings.Secure.getString(this.f38195a.getContentResolver(), "android_id");
+        String string2 = Settings.Secure.getString(this.f38196a.getContentResolver(), "android_id");
         if (string2 == null || StringsKt.k0(string2)) {
             return "";
         }
@@ -83,18 +83,18 @@ public final class r implements g {
     }
 
     private final SharedPreferences i() {
-        return (SharedPreferences) this.f38196b.getValue();
+        return (SharedPreferences) this.f38197b.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final SharedPreferences j(r rVar) {
-        return rVar.f38195a.getSharedPreferences("com.withpersona.sdk2.prefs", 0);
+        return rVar.f38196a.getSharedPreferences("com.withpersona.sdk2.prefs", 0);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit k(r rVar, ue.c cVar) {
-        rVar.f38198d = cVar.a();
-        return Unit.f31987a;
+        rVar.f38199d = cVar.a();
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -104,10 +104,10 @@ public final class r implements g {
 
     @Override // no.g
     public void a() {
-        if (!StringsKt.k0(this.f38197c)) {
+        if (!StringsKt.k0(this.f38198c)) {
             return;
         }
-        ue.b a10 = ue.a.a(this.f38195a);
+        ue.b a10 = ue.a.a(this.f38196a);
         Intrinsics.checkNotNullExpressionValue(a10, "getClient(...)");
         Task g10 = a10.g();
         Intrinsics.checkNotNullExpressionValue(g10, "getAppSetIdInfo(...)");
@@ -129,12 +129,12 @@ public final class r implements g {
 
     @Override // no.g
     public String b() {
-        if (!StringsKt.k0(this.f38197c)) {
-            return this.f38197c;
+        if (!StringsKt.k0(this.f38198c)) {
+            return this.f38198c;
         }
-        if (this.f38198d.length() == 0) {
+        if (this.f38199d.length() == 0) {
             a();
         }
-        return this.f38198d;
+        return this.f38199d;
     }
 }

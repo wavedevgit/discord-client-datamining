@@ -12,22 +12,22 @@ import oa.w;
 public final class DefaultExecutorSupplier implements n {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f11073f = new a(null);
+    public static final a f11074f = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Executor f11074a;
+    private final Executor f11075a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Executor f11075b;
+    private final Executor f11076b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Executor f11076c;
+    private final Executor f11077c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Executor f11077d;
+    private final Executor f11078d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ScheduledExecutorService f11078e;
+    private final ScheduledExecutorService f11079e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -42,53 +42,53 @@ public final class DefaultExecutorSupplier implements n {
     public DefaultExecutorSupplier(int i10) {
         ExecutorService newFixedThreadPool = Executors.newFixedThreadPool(2, new w(10, "FrescoIoBoundExecutor", true));
         Intrinsics.checkNotNullExpressionValue(newFixedThreadPool, "newFixedThreadPool(...)");
-        this.f11074a = newFixedThreadPool;
+        this.f11075a = newFixedThreadPool;
         ExecutorService newFixedThreadPool2 = Executors.newFixedThreadPool(i10, new w(10, "FrescoDecodeExecutor", true));
         Intrinsics.checkNotNullExpressionValue(newFixedThreadPool2, "newFixedThreadPool(...)");
-        this.f11075b = newFixedThreadPool2;
+        this.f11076b = newFixedThreadPool2;
         ExecutorService newFixedThreadPool3 = Executors.newFixedThreadPool(i10, new w(10, "FrescoBackgroundExecutor", true));
         Intrinsics.checkNotNullExpressionValue(newFixedThreadPool3, "newFixedThreadPool(...)");
-        this.f11076c = newFixedThreadPool3;
+        this.f11077c = newFixedThreadPool3;
         ExecutorService newFixedThreadPool4 = Executors.newFixedThreadPool(1, new w(10, "FrescoLightWeightBackgroundExecutor", true));
         Intrinsics.checkNotNullExpressionValue(newFixedThreadPool4, "newFixedThreadPool(...)");
-        this.f11077d = newFixedThreadPool4;
+        this.f11078d = newFixedThreadPool4;
         ScheduledExecutorService newScheduledThreadPool = Executors.newScheduledThreadPool(i10, new w(10, "FrescoBackgroundExecutor", true));
         Intrinsics.checkNotNullExpressionValue(newScheduledThreadPool, "newScheduledThreadPool(...)");
-        this.f11078e = newScheduledThreadPool;
+        this.f11079e = newScheduledThreadPool;
     }
 
     @Override // oa.n
     public Executor a() {
-        return this.f11077d;
+        return this.f11078d;
     }
 
     @Override // oa.n
     public Executor b() {
-        return this.f11074a;
+        return this.f11075a;
     }
 
     @Override // oa.n
     public ScheduledExecutorService c() {
-        return this.f11078e;
+        return this.f11079e;
     }
 
     @Override // oa.n
     public Executor d() {
-        return this.f11075b;
+        return this.f11076b;
     }
 
     @Override // oa.n
     public Executor e() {
-        return this.f11076c;
+        return this.f11077c;
     }
 
     @Override // oa.n
     public Executor f() {
-        return this.f11074a;
+        return this.f11075a;
     }
 
     @Override // oa.n
     public Executor g() {
-        return this.f11074a;
+        return this.f11075a;
     }
 }

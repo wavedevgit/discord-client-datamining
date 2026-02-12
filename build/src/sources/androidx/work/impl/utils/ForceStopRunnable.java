@@ -119,9 +119,9 @@ public class ForceStopRunnable implements Runnable {
             }
             if (z10) {
                 for (u uVar : t10) {
-                    H.d(x.ENQUEUED, uVar.f41446a);
-                    H.e(uVar.f41446a, -512);
-                    H.o(uVar.f41446a, -1L);
+                    H.d(x.ENQUEUED, uVar.f41447a);
+                    H.e(uVar.f41447a, -512);
+                    H.o(uVar.f41447a, -1L);
                 }
             }
             G.b();

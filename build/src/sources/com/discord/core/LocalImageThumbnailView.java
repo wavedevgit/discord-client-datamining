@@ -56,7 +56,7 @@ public final class LocalImageThumbnailView extends FrameLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void loadDefaultBitmap(SimpleDraweeView simpleDraweeView, Uri uri) {
-        simpleDraweeView.setController(((PipelineDraweeControllerBuilder) d.g().E(ImageRequestBuilder.x(uri).N(ResizeOptions.f11062e.a(simpleDraweeView.getWidth(), simpleDraweeView.getHeight())).a())).build());
+        simpleDraweeView.setController(((PipelineDraweeControllerBuilder) d.g().E(ImageRequestBuilder.x(uri).N(ResizeOptions.f11063e.a(simpleDraweeView.getWidth(), simpleDraweeView.getHeight())).a())).build());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -102,7 +102,7 @@ public final class LocalImageThumbnailView extends FrameLayout {
         this.imageView = imageView;
         SimpleDraweeView simpleDraweeView = new SimpleDraweeView(context);
         addToParent(simpleDraweeView);
-        ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).t(ScalingUtils$ScaleType.f10639i);
+        ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).t(ScalingUtils$ScaleType.f10640i);
         this.simpleDraweeView = simpleDraweeView;
     }
 }

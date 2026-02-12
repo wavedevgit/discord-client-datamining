@@ -8,13 +8,13 @@ import java.util.Locale;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final hf.i f52777a = new hf.i("CommonUtils", "");
+    private static final hf.i f52778a = new hf.i("CommonUtils", "");
 
     public static String a(Context context) {
         try {
             return String.valueOf(context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode);
         } catch (PackageManager.NameNotFoundException e10) {
-            f52777a.c("CommonUtils", "Exception thrown when trying to get app version ".concat(e10.toString()));
+            f52778a.c("CommonUtils", "Exception thrown when trying to get app version ".concat(e10.toString()));
             return "";
         }
     }

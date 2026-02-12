@@ -16,7 +16,7 @@ public final class i0 extends ByteString {
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public i0(byte[][] segments, int[] directory) {
-        super(ByteString.f40592p.l());
+        super(ByteString.f40593p.l());
         Intrinsics.checkNotNullParameter(segments, "segments");
         Intrinsics.checkNotNullParameter(directory, "directory");
         this.f6279q = segments;
@@ -92,7 +92,7 @@ public final class i0 extends ByteString {
                         return this;
                     }
                     if (i10 == e10) {
-                        return ByteString.f40592p;
+                        return ByteString.f40593p;
                     }
                     int b10 = bv.e.b(this, i10);
                     int b11 = bv.e.b(this, e10 - 1);
@@ -182,11 +182,11 @@ public final class i0 extends ByteString {
             int min = Math.min(i13, (P()[b10] - i12) + i12) - i10;
             int i15 = i14 + (i10 - i12);
             g0 g0Var = new g0(Q()[b10], i15, i15 + min, true, false);
-            g0 g0Var2 = buffer.f40580d;
+            g0 g0Var2 = buffer.f40581d;
             if (g0Var2 == null) {
                 g0Var.f6268g = g0Var;
                 g0Var.f6267f = g0Var;
-                buffer.f40580d = g0Var;
+                buffer.f40581d = g0Var;
             } else {
                 Intrinsics.checkNotNull(g0Var2);
                 g0 g0Var3 = g0Var2.f6268g;

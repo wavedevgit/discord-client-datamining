@@ -7,34 +7,34 @@ import kotlin.enums.EnumEntries;
 public final class h {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final h f30356d = new h("Transition", 0);
+    public static final h f30357d = new h("Transition", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final h f30357e = new h("TransitionBack", 1);
+    public static final h f30358e = new h("TransitionBack", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final h f30358i = new h("DocumentFilesPost", 2);
+    public static final h f30359i = new h("DocumentFilesPost", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    public static final h f30359o = new h("DocumentFilesDelete", 3);
+    public static final h f30360o = new h("DocumentFilesDelete", 3);
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ h[] f30360p;
+    private static final /* synthetic */ h[] f30361p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f30361q;
+    private static final /* synthetic */ EnumEntries f30362q;
 
     static {
         h[] a10 = a();
-        f30360p = a10;
-        f30361q = hs.a.a(a10);
+        f30361p = a10;
+        f30362q = hs.a.a(a10);
     }
 
     private h(String str, int i10) {
     }
 
     private static final /* synthetic */ h[] a() {
-        return new h[]{f30356d, f30357e, f30358i, f30359o};
+        return new h[]{f30357d, f30358e, f30359i, f30360o};
     }
 
     public static h valueOf(String str) {
@@ -42,6 +42,6 @@ public final class h {
     }
 
     public static h[] values() {
-        return (h[]) f30360p.clone();
+        return (h[]) f30361p.clone();
     }
 }

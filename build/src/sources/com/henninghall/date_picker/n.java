@@ -13,70 +13,70 @@ import java.util.TimeZone;
 public class n {
 
     /* renamed from: a  reason: collision with root package name */
-    private Calendar f17572a = null;
+    private Calendar f17573a = null;
 
     /* renamed from: b  reason: collision with root package name */
-    private final jl.a f17573b = new jl.a();
+    private final jl.a f17574b = new jl.a();
 
     /* renamed from: c  reason: collision with root package name */
-    private final jl.j f17574c = new jl.j();
+    private final jl.j f17575c = new jl.j();
 
     /* renamed from: d  reason: collision with root package name */
-    private final jl.f f17575d = new jl.f();
+    private final jl.f f17576d = new jl.f();
 
     /* renamed from: e  reason: collision with root package name */
-    private final jl.l f17576e = new jl.l();
+    private final jl.l f17577e = new jl.l();
 
     /* renamed from: f  reason: collision with root package name */
-    private final jl.i f17577f = new jl.i();
+    private final jl.i f17578f = new jl.i();
 
     /* renamed from: g  reason: collision with root package name */
-    private final jl.h f17578g = new jl.h();
+    private final jl.h f17579g = new jl.h();
 
     /* renamed from: h  reason: collision with root package name */
-    private final jl.g f17579h = new jl.g();
+    private final jl.g f17580h = new jl.g();
 
     /* renamed from: i  reason: collision with root package name */
-    private final jl.m f17580i = new jl.m();
+    private final jl.m f17581i = new jl.m();
 
     /* renamed from: j  reason: collision with root package name */
-    private final jl.c f17581j = new jl.c();
+    private final jl.c f17582j = new jl.c();
 
     /* renamed from: k  reason: collision with root package name */
-    private final jl.e f17582k = new jl.e();
+    private final jl.e f17583k = new jl.e();
 
     /* renamed from: l  reason: collision with root package name */
-    private final jl.d f17583l = new jl.d();
+    private final jl.d f17584l = new jl.d();
 
     /* renamed from: m  reason: collision with root package name */
-    private final jl.b f17584m = new jl.b();
+    private final jl.b f17585m = new jl.b();
 
     /* renamed from: n  reason: collision with root package name */
-    private final HashMap f17585n = new a();
+    private final HashMap f17586n = new a();
 
     /* renamed from: o  reason: collision with root package name */
-    public d f17586o = new d(this);
+    public d f17587o = new d(this);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends HashMap {
         a() {
-            put(InquiryField.DateField.TYPE, n.this.f17573b);
-            put("mode", n.this.f17574c);
-            put("locale", n.this.f17575d);
-            put("textColor", n.this.f17576e);
-            put("minuteInterval", n.this.f17577f);
-            put("minimumDate", n.this.f17578g);
-            put("maximumDate", n.this.f17579h);
-            put("timezoneOffsetInMinutes", n.this.f17580i);
-            put("height", n.this.f17581j);
-            put("is24hourSource", n.this.f17582k);
-            put(StackTraceHelper.ID_KEY, n.this.f17583l);
-            put("dividerColor", n.this.f17584m);
+            put(InquiryField.DateField.TYPE, n.this.f17574b);
+            put("mode", n.this.f17575c);
+            put("locale", n.this.f17576d);
+            put("textColor", n.this.f17577e);
+            put("minuteInterval", n.this.f17578f);
+            put("minimumDate", n.this.f17579g);
+            put("maximumDate", n.this.f17580h);
+            put("timezoneOffsetInMinutes", n.this.f17581i);
+            put("height", n.this.f17582j);
+            put("is24hourSource", n.this.f17583k);
+            put(StackTraceHelper.ID_KEY, n.this.f17584l);
+            put("dividerColor", n.this.f17585m);
         }
     }
 
     private jl.k B(String str) {
-        return (jl.k) this.f17585n.get(str);
+        return (jl.k) this.f17586n.get(str);
     }
 
     private Calendar m(jl.k kVar) {
@@ -108,13 +108,13 @@ public class n {
     }
 
     public String C() {
-        return (String) this.f17576e.a();
+        return (String) this.f17577e.a();
     }
 
     public TimeZone D() {
         char c10;
         try {
-            String str = (String) this.f17580i.a();
+            String str = (String) this.f17581i.a();
             if (str != null && !str.equals("")) {
                 int parseInt = Integer.parseInt(str);
                 int abs = Math.abs(parseInt);
@@ -134,7 +134,7 @@ public class n {
     }
 
     public void E(Calendar calendar) {
-        this.f17572a = calendar;
+        this.f17573a = calendar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -143,46 +143,46 @@ public class n {
     }
 
     public String p() {
-        return (String) this.f17584m.a();
+        return (String) this.f17585m.a();
     }
 
     public String q() {
-        return (String) this.f17583l.a();
+        return (String) this.f17584l.a();
     }
 
     public il.a r() {
-        return (il.a) this.f17582k.a();
+        return (il.a) this.f17583k.a();
     }
 
     public String s() {
-        return (String) this.f17573b.a();
+        return (String) this.f17574b.a();
     }
 
     public Calendar t() {
-        return this.f17572a;
+        return this.f17573a;
     }
 
     public Locale u() {
-        return (Locale) this.f17575d.a();
+        return (Locale) this.f17576d.a();
     }
 
     public String v() {
-        return this.f17575d.f();
+        return this.f17576d.f();
     }
 
     public Calendar w() {
-        return m(this.f17579h);
+        return m(this.f17580h);
     }
 
     public Calendar x() {
-        return m(this.f17578g);
+        return m(this.f17579g);
     }
 
     public int y() {
-        return ((Integer) this.f17577f.a()).intValue();
+        return ((Integer) this.f17578f.a()).intValue();
     }
 
     public il.b z() {
-        return (il.b) this.f17574c.a();
+        return (il.b) this.f17575c.a();
     }
 }

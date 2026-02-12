@@ -38,10 +38,10 @@ import l5.y;
 public class LottieAnimationView extends androidx.appcompat.widget.m {
 
     /* renamed from: y  reason: collision with root package name */
-    private static final String f8418y = "LottieAnimationView";
+    private static final String f8419y = "LottieAnimationView";
 
     /* renamed from: z  reason: collision with root package name */
-    private static final y f8419z = new y() { // from class: l5.g
+    private static final y f8420z = new y() { // from class: l5.g
         @Override // l5.y
         public final void onResult(Object obj) {
             LottieAnimationView.d((Throwable) obj);
@@ -49,58 +49,58 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
     };
 
     /* renamed from: d  reason: collision with root package name */
-    private final y f8420d;
+    private final y f8421d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final y f8421e;
+    private final y f8422e;
 
     /* renamed from: i  reason: collision with root package name */
-    private y f8422i;
+    private y f8423i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f8423o;
+    private int f8424o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final n f8424p;
+    private final n f8425p;
 
     /* renamed from: q  reason: collision with root package name */
-    private String f8425q;
+    private String f8426q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f8426r;
+    private int f8427r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f8427s;
+    private boolean f8428s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f8428t;
+    private boolean f8429t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f8429u;
+    private boolean f8430u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final Set f8430v;
+    private final Set f8431v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final Set f8431w;
+    private final Set f8432w;
 
     /* renamed from: x  reason: collision with root package name */
-    private p f8432x;
+    private p f8433x;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a extends z5.c {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ z5.e f8433d;
+        final /* synthetic */ z5.e f8434d;
 
         a(z5.e eVar) {
-            this.f8433d = eVar;
+            this.f8434d = eVar;
         }
 
         @Override // z5.c
         public Object a(z5.b bVar) {
-            return this.f8433d.a(bVar);
+            return this.f8434d.a(bVar);
         }
     }
 
@@ -110,25 +110,25 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
         public static final Parcelable.Creator<b> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        String f8435d;
+        String f8436d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f8436e;
+        int f8437e;
 
         /* renamed from: i  reason: collision with root package name */
-        float f8437i;
+        float f8438i;
 
         /* renamed from: o  reason: collision with root package name */
-        boolean f8438o;
+        boolean f8439o;
 
         /* renamed from: p  reason: collision with root package name */
-        String f8439p;
+        String f8440p;
 
         /* renamed from: q  reason: collision with root package name */
-        int f8440q;
+        int f8441q;
 
         /* renamed from: r  reason: collision with root package name */
-        int f8441r;
+        int f8442r;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         class a implements Parcelable.Creator {
@@ -155,12 +155,12 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
         @Override // android.view.View.BaseSavedState, android.view.AbsSavedState, android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
             super.writeToParcel(parcel, i10);
-            parcel.writeString(this.f8435d);
-            parcel.writeFloat(this.f8437i);
-            parcel.writeInt(this.f8438o ? 1 : 0);
-            parcel.writeString(this.f8439p);
-            parcel.writeInt(this.f8440q);
-            parcel.writeInt(this.f8441r);
+            parcel.writeString(this.f8436d);
+            parcel.writeFloat(this.f8438i);
+            parcel.writeInt(this.f8439o ? 1 : 0);
+            parcel.writeString(this.f8440p);
+            parcel.writeInt(this.f8441q);
+            parcel.writeInt(this.f8442r);
         }
 
         b(Parcelable parcelable) {
@@ -169,12 +169,12 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
 
         private b(Parcel parcel) {
             super(parcel);
-            this.f8435d = parcel.readString();
-            this.f8437i = parcel.readFloat();
-            this.f8438o = parcel.readInt() == 1;
-            this.f8439p = parcel.readString();
-            this.f8440q = parcel.readInt();
-            this.f8441r = parcel.readInt();
+            this.f8436d = parcel.readString();
+            this.f8438i = parcel.readFloat();
+            this.f8439o = parcel.readInt() == 1;
+            this.f8440p = parcel.readString();
+            this.f8441q = parcel.readInt();
+            this.f8442r = parcel.readInt();
         }
     }
 
@@ -193,23 +193,23 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
     private static class d implements y {
 
         /* renamed from: a  reason: collision with root package name */
-        private final WeakReference f8449a;
+        private final WeakReference f8450a;
 
         public d(LottieAnimationView lottieAnimationView) {
-            this.f8449a = new WeakReference(lottieAnimationView);
+            this.f8450a = new WeakReference(lottieAnimationView);
         }
 
         @Override // l5.y
         /* renamed from: a */
         public void onResult(Throwable th2) {
-            LottieAnimationView lottieAnimationView = (LottieAnimationView) this.f8449a.get();
+            LottieAnimationView lottieAnimationView = (LottieAnimationView) this.f8450a.get();
             if (lottieAnimationView == null) {
                 return;
             }
-            if (lottieAnimationView.f8423o != 0) {
-                lottieAnimationView.setImageResource(lottieAnimationView.f8423o);
+            if (lottieAnimationView.f8424o != 0) {
+                lottieAnimationView.setImageResource(lottieAnimationView.f8424o);
             }
-            (lottieAnimationView.f8422i == null ? LottieAnimationView.f8419z : lottieAnimationView.f8422i).onResult(th2);
+            (lottieAnimationView.f8423i == null ? LottieAnimationView.f8420z : lottieAnimationView.f8423i).onResult(th2);
         }
     }
 
@@ -217,16 +217,16 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
     private static class e implements y {
 
         /* renamed from: a  reason: collision with root package name */
-        private final WeakReference f8450a;
+        private final WeakReference f8451a;
 
         public e(LottieAnimationView lottieAnimationView) {
-            this.f8450a = new WeakReference(lottieAnimationView);
+            this.f8451a = new WeakReference(lottieAnimationView);
         }
 
         @Override // l5.y
         /* renamed from: a */
         public void onResult(l5.i iVar) {
-            LottieAnimationView lottieAnimationView = (LottieAnimationView) this.f8450a.get();
+            LottieAnimationView lottieAnimationView = (LottieAnimationView) this.f8451a.get();
             if (lottieAnimationView == null) {
                 return;
             }
@@ -236,36 +236,36 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
 
     public LottieAnimationView(Context context) {
         super(context);
-        this.f8420d = new e(this);
-        this.f8421e = new d(this);
-        this.f8423o = 0;
-        this.f8424p = new n();
-        this.f8427s = false;
-        this.f8428t = false;
-        this.f8429u = true;
-        this.f8430v = new HashSet();
-        this.f8431w = new HashSet();
-        s(null, f0.f35593a);
+        this.f8421d = new e(this);
+        this.f8422e = new d(this);
+        this.f8424o = 0;
+        this.f8425p = new n();
+        this.f8428s = false;
+        this.f8429t = false;
+        this.f8430u = true;
+        this.f8431v = new HashSet();
+        this.f8432w = new HashSet();
+        s(null, f0.f35594a);
     }
 
     private void C() {
         boolean t10 = t();
         setImageDrawable(null);
-        setImageDrawable(this.f8424p);
+        setImageDrawable(this.f8425p);
         if (t10) {
-            this.f8424p.n0();
+            this.f8425p.n0();
         }
     }
 
     private void E(float f10, boolean z10) {
         if (z10) {
-            this.f8430v.add(c.SET_PROGRESS);
+            this.f8431v.add(c.SET_PROGRESS);
         }
-        this.f8424p.N0(f10);
+        this.f8425p.N0(f10);
     }
 
     public static /* synthetic */ c0 c(LottieAnimationView lottieAnimationView, String str) {
-        if (lottieAnimationView.f8429u) {
+        if (lottieAnimationView.f8430u) {
             return s.n(lottieAnimationView.getContext(), str);
         }
         return s.o(lottieAnimationView.getContext(), str, null);
@@ -280,22 +280,22 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
     }
 
     public static /* synthetic */ c0 e(LottieAnimationView lottieAnimationView, int i10) {
-        if (lottieAnimationView.f8429u) {
+        if (lottieAnimationView.f8430u) {
             return s.y(lottieAnimationView.getContext(), i10);
         }
         return s.z(lottieAnimationView.getContext(), i10, null);
     }
 
     private void n() {
-        p pVar = this.f8432x;
+        p pVar = this.f8433x;
         if (pVar != null) {
-            pVar.k(this.f8420d);
-            this.f8432x.j(this.f8421e);
+            pVar.k(this.f8421d);
+            this.f8433x.j(this.f8422e);
         }
     }
 
     private void o() {
-        this.f8424p.v();
+        this.f8425p.v();
     }
 
     private p q(final String str) {
@@ -307,7 +307,7 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
                 }
             }, true);
         }
-        if (this.f8429u) {
+        if (this.f8430u) {
             return s.l(getContext(), str);
         }
         return s.m(getContext(), str, null);
@@ -322,7 +322,7 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
                 }
             }, true);
         }
-        if (this.f8429u) {
+        if (this.f8430u) {
             return s.w(getContext(), i10);
         }
         return s.x(getContext(), i10, null);
@@ -330,60 +330,60 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
 
     private void s(AttributeSet attributeSet, int i10) {
         String string;
-        TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, g0.f35594a, i10, 0);
-        this.f8429u = obtainStyledAttributes.getBoolean(g0.f35597d, true);
-        boolean hasValue = obtainStyledAttributes.hasValue(g0.f35609p);
-        boolean hasValue2 = obtainStyledAttributes.hasValue(g0.f35604k);
-        boolean hasValue3 = obtainStyledAttributes.hasValue(g0.f35614u);
+        TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, g0.f35595a, i10, 0);
+        this.f8430u = obtainStyledAttributes.getBoolean(g0.f35598d, true);
+        boolean hasValue = obtainStyledAttributes.hasValue(g0.f35610p);
+        boolean hasValue2 = obtainStyledAttributes.hasValue(g0.f35605k);
+        boolean hasValue3 = obtainStyledAttributes.hasValue(g0.f35615u);
         if (hasValue && hasValue2) {
             throw new IllegalArgumentException("lottie_rawRes and lottie_fileName cannot be used at the same time. Please use only one at once.");
         }
         if (hasValue) {
-            int resourceId = obtainStyledAttributes.getResourceId(g0.f35609p, 0);
+            int resourceId = obtainStyledAttributes.getResourceId(g0.f35610p, 0);
             if (resourceId != 0) {
                 setAnimation(resourceId);
             }
         } else if (hasValue2) {
-            String string2 = obtainStyledAttributes.getString(g0.f35604k);
+            String string2 = obtainStyledAttributes.getString(g0.f35605k);
             if (string2 != null) {
                 setAnimation(string2);
             }
-        } else if (hasValue3 && (string = obtainStyledAttributes.getString(g0.f35614u)) != null) {
+        } else if (hasValue3 && (string = obtainStyledAttributes.getString(g0.f35615u)) != null) {
             setAnimationFromUrl(string);
         }
-        setFallbackResource(obtainStyledAttributes.getResourceId(g0.f35603j, 0));
-        if (obtainStyledAttributes.getBoolean(g0.f35596c, false)) {
-            this.f8428t = true;
+        setFallbackResource(obtainStyledAttributes.getResourceId(g0.f35604j, 0));
+        if (obtainStyledAttributes.getBoolean(g0.f35597c, false)) {
+            this.f8429t = true;
         }
-        if (obtainStyledAttributes.getBoolean(g0.f35607n, false)) {
-            this.f8424p.P0(-1);
+        if (obtainStyledAttributes.getBoolean(g0.f35608n, false)) {
+            this.f8425p.P0(-1);
         }
-        if (obtainStyledAttributes.hasValue(g0.f35612s)) {
-            setRepeatMode(obtainStyledAttributes.getInt(g0.f35612s, 1));
+        if (obtainStyledAttributes.hasValue(g0.f35613s)) {
+            setRepeatMode(obtainStyledAttributes.getInt(g0.f35613s, 1));
         }
-        if (obtainStyledAttributes.hasValue(g0.f35611r)) {
-            setRepeatCount(obtainStyledAttributes.getInt(g0.f35611r, -1));
+        if (obtainStyledAttributes.hasValue(g0.f35612r)) {
+            setRepeatCount(obtainStyledAttributes.getInt(g0.f35612r, -1));
         }
-        if (obtainStyledAttributes.hasValue(g0.f35613t)) {
-            setSpeed(obtainStyledAttributes.getFloat(g0.f35613t, 1.0f));
+        if (obtainStyledAttributes.hasValue(g0.f35614t)) {
+            setSpeed(obtainStyledAttributes.getFloat(g0.f35614t, 1.0f));
         }
-        if (obtainStyledAttributes.hasValue(g0.f35599f)) {
-            setClipToCompositionBounds(obtainStyledAttributes.getBoolean(g0.f35599f, true));
+        if (obtainStyledAttributes.hasValue(g0.f35600f)) {
+            setClipToCompositionBounds(obtainStyledAttributes.getBoolean(g0.f35600f, true));
         }
-        if (obtainStyledAttributes.hasValue(g0.f35598e)) {
-            setClipTextToBoundingBox(obtainStyledAttributes.getBoolean(g0.f35598e, false));
+        if (obtainStyledAttributes.hasValue(g0.f35599e)) {
+            setClipTextToBoundingBox(obtainStyledAttributes.getBoolean(g0.f35599e, false));
         }
-        if (obtainStyledAttributes.hasValue(g0.f35601h)) {
-            setDefaultFontFileExtension(obtainStyledAttributes.getString(g0.f35601h));
+        if (obtainStyledAttributes.hasValue(g0.f35602h)) {
+            setDefaultFontFileExtension(obtainStyledAttributes.getString(g0.f35602h));
         }
-        setImageAssetsFolder(obtainStyledAttributes.getString(g0.f35606m));
-        E(obtainStyledAttributes.getFloat(g0.f35608o, 0.0f), obtainStyledAttributes.hasValue(g0.f35608o));
-        p(obtainStyledAttributes.getBoolean(g0.f35602i, false));
-        if (obtainStyledAttributes.hasValue(g0.f35600g)) {
-            k(new r5.e("**"), b0.K, new z5.c(new i0(g.a.a(getContext(), obtainStyledAttributes.getResourceId(g0.f35600g, -1)).getDefaultColor())));
+        setImageAssetsFolder(obtainStyledAttributes.getString(g0.f35607m));
+        E(obtainStyledAttributes.getFloat(g0.f35609o, 0.0f), obtainStyledAttributes.hasValue(g0.f35609o));
+        p(obtainStyledAttributes.getBoolean(g0.f35603i, false));
+        if (obtainStyledAttributes.hasValue(g0.f35601g)) {
+            k(new r5.e("**"), b0.K, new z5.c(new i0(g.a.a(getContext(), obtainStyledAttributes.getResourceId(g0.f35601g, -1)).getDefaultColor())));
         }
-        if (obtainStyledAttributes.hasValue(g0.f35610q)) {
-            int i11 = g0.f35610q;
+        if (obtainStyledAttributes.hasValue(g0.f35611q)) {
+            int i11 = g0.f35611q;
             h0 h0Var = h0.AUTOMATIC;
             int i12 = obtainStyledAttributes.getInt(i11, h0Var.ordinal());
             if (i12 >= h0.values().length) {
@@ -391,8 +391,8 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
             }
             setRenderMode(h0.values()[i12]);
         }
-        if (obtainStyledAttributes.hasValue(g0.f35595b)) {
-            int i13 = g0.f35595b;
+        if (obtainStyledAttributes.hasValue(g0.f35596b)) {
+            int i13 = g0.f35596b;
             l5.a aVar = l5.a.AUTOMATIC;
             int i14 = obtainStyledAttributes.getInt(i13, aVar.ordinal());
             if (i14 >= h0.values().length) {
@@ -400,23 +400,23 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
             }
             setAsyncUpdates(l5.a.values()[i14]);
         }
-        setIgnoreDisabledSystemAnimations(obtainStyledAttributes.getBoolean(g0.f35605l, false));
-        if (obtainStyledAttributes.hasValue(g0.f35615v)) {
-            setUseCompositionFrameRate(obtainStyledAttributes.getBoolean(g0.f35615v, false));
+        setIgnoreDisabledSystemAnimations(obtainStyledAttributes.getBoolean(g0.f35606l, false));
+        if (obtainStyledAttributes.hasValue(g0.f35616v)) {
+            setUseCompositionFrameRate(obtainStyledAttributes.getBoolean(g0.f35616v, false));
         }
         obtainStyledAttributes.recycle();
     }
 
     private void setCompositionTask(p pVar) {
         c0 e10 = pVar.e();
-        n nVar = this.f8424p;
+        n nVar = this.f8425p;
         if (e10 != null && nVar == getDrawable() && nVar.J() == e10.b()) {
             return;
         }
-        this.f8430v.add(c.SET_ANIMATION);
+        this.f8431v.add(c.SET_ANIMATION);
         o();
         n();
-        this.f8432x = pVar.d(this.f8420d).c(this.f8421e);
+        this.f8433x = pVar.d(this.f8421d).c(this.f8422e);
     }
 
     public void A(String str, String str2) {
@@ -428,28 +428,28 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
     }
 
     public void D(int i10, int i11) {
-        this.f8424p.G0(i10, i11);
+        this.f8425p.G0(i10, i11);
     }
 
     public l5.a getAsyncUpdates() {
-        return this.f8424p.E();
+        return this.f8425p.E();
     }
 
     public boolean getAsyncUpdatesEnabled() {
-        return this.f8424p.F();
+        return this.f8425p.F();
     }
 
     public boolean getClipTextToBoundingBox() {
-        return this.f8424p.H();
+        return this.f8425p.H();
     }
 
     public boolean getClipToCompositionBounds() {
-        return this.f8424p.I();
+        return this.f8425p.I();
     }
 
     public l5.i getComposition() {
         Drawable drawable = getDrawable();
-        n nVar = this.f8424p;
+        n nVar = this.f8425p;
         if (drawable == nVar) {
             return nVar.J();
         }
@@ -465,51 +465,51 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
     }
 
     public int getFrame() {
-        return this.f8424p.M();
+        return this.f8425p.M();
     }
 
     public String getImageAssetsFolder() {
-        return this.f8424p.O();
+        return this.f8425p.O();
     }
 
     public boolean getMaintainOriginalImageBounds() {
-        return this.f8424p.Q();
+        return this.f8425p.Q();
     }
 
     public float getMaxFrame() {
-        return this.f8424p.S();
+        return this.f8425p.S();
     }
 
     public float getMinFrame() {
-        return this.f8424p.T();
+        return this.f8425p.T();
     }
 
     public e0 getPerformanceTracker() {
-        return this.f8424p.U();
+        return this.f8425p.U();
     }
 
     public float getProgress() {
-        return this.f8424p.V();
+        return this.f8425p.V();
     }
 
     public h0 getRenderMode() {
-        return this.f8424p.W();
+        return this.f8425p.W();
     }
 
     public int getRepeatCount() {
-        return this.f8424p.X();
+        return this.f8425p.X();
     }
 
     public int getRepeatMode() {
-        return this.f8424p.Y();
+        return this.f8425p.Y();
     }
 
     public float getSpeed() {
-        return this.f8424p.Z();
+        return this.f8425p.Z();
     }
 
     public void i(Animator.AnimatorListener animatorListener) {
-        this.f8424p.q(animatorListener);
+        this.f8425p.q(animatorListener);
     }
 
     @Override // android.view.View
@@ -517,14 +517,14 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
         super.invalidate();
         Drawable drawable = getDrawable();
         if ((drawable instanceof n) && ((n) drawable).W() == h0.SOFTWARE) {
-            this.f8424p.invalidateSelf();
+            this.f8425p.invalidateSelf();
         }
     }
 
     @Override // android.widget.ImageView, android.view.View, android.graphics.drawable.Drawable.Callback
     public void invalidateDrawable(Drawable drawable) {
         Drawable drawable2 = getDrawable();
-        n nVar = this.f8424p;
+        n nVar = this.f8425p;
         if (drawable2 == nVar) {
             super.invalidateDrawable(nVar);
         } else {
@@ -537,28 +537,28 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
         if (composition != null) {
             a0Var.a(composition);
         }
-        return this.f8431w.add(a0Var);
+        return this.f8432w.add(a0Var);
     }
 
     public void k(r5.e eVar, Object obj, z5.c cVar) {
-        this.f8424p.r(eVar, obj, cVar);
+        this.f8425p.r(eVar, obj, cVar);
     }
 
     public void l(r5.e eVar, Object obj, z5.e eVar2) {
-        this.f8424p.r(eVar, obj, new a(eVar2));
+        this.f8425p.r(eVar, obj, new a(eVar2));
     }
 
     public void m() {
-        this.f8428t = false;
-        this.f8430v.add(c.PLAY_OPTION);
-        this.f8424p.u();
+        this.f8429t = false;
+        this.f8431v.add(c.PLAY_OPTION);
+        this.f8425p.u();
     }
 
     @Override // android.widget.ImageView, android.view.View
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
-        if (!isInEditMode() && this.f8428t) {
-            this.f8424p.i0();
+        if (!isInEditMode() && this.f8429t) {
+            this.f8425p.i0();
         }
     }
 
@@ -571,63 +571,63 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
         }
         b bVar = (b) parcelable;
         super.onRestoreInstanceState(bVar.getSuperState());
-        this.f8425q = bVar.f8435d;
-        Set set = this.f8430v;
+        this.f8426q = bVar.f8436d;
+        Set set = this.f8431v;
         c cVar = c.SET_ANIMATION;
-        if (!set.contains(cVar) && !TextUtils.isEmpty(this.f8425q)) {
-            setAnimation(this.f8425q);
+        if (!set.contains(cVar) && !TextUtils.isEmpty(this.f8426q)) {
+            setAnimation(this.f8426q);
         }
-        this.f8426r = bVar.f8436e;
-        if (!this.f8430v.contains(cVar) && (i10 = this.f8426r) != 0) {
+        this.f8427r = bVar.f8437e;
+        if (!this.f8431v.contains(cVar) && (i10 = this.f8427r) != 0) {
             setAnimation(i10);
         }
-        if (!this.f8430v.contains(c.SET_PROGRESS)) {
-            E(bVar.f8437i, false);
+        if (!this.f8431v.contains(c.SET_PROGRESS)) {
+            E(bVar.f8438i, false);
         }
-        if (!this.f8430v.contains(c.PLAY_OPTION) && bVar.f8438o) {
+        if (!this.f8431v.contains(c.PLAY_OPTION) && bVar.f8439o) {
             playAnimation();
         }
-        if (!this.f8430v.contains(c.SET_IMAGE_ASSETS)) {
-            setImageAssetsFolder(bVar.f8439p);
+        if (!this.f8431v.contains(c.SET_IMAGE_ASSETS)) {
+            setImageAssetsFolder(bVar.f8440p);
         }
-        if (!this.f8430v.contains(c.SET_REPEAT_MODE)) {
-            setRepeatMode(bVar.f8440q);
+        if (!this.f8431v.contains(c.SET_REPEAT_MODE)) {
+            setRepeatMode(bVar.f8441q);
         }
-        if (!this.f8430v.contains(c.SET_REPEAT_COUNT)) {
-            setRepeatCount(bVar.f8441r);
+        if (!this.f8431v.contains(c.SET_REPEAT_COUNT)) {
+            setRepeatCount(bVar.f8442r);
         }
     }
 
     @Override // android.view.View
     protected Parcelable onSaveInstanceState() {
         b bVar = new b(super.onSaveInstanceState());
-        bVar.f8435d = this.f8425q;
-        bVar.f8436e = this.f8426r;
-        bVar.f8437i = this.f8424p.V();
-        bVar.f8438o = this.f8424p.e0();
-        bVar.f8439p = this.f8424p.O();
-        bVar.f8440q = this.f8424p.Y();
-        bVar.f8441r = this.f8424p.X();
+        bVar.f8436d = this.f8426q;
+        bVar.f8437e = this.f8427r;
+        bVar.f8438i = this.f8425p.V();
+        bVar.f8439o = this.f8425p.e0();
+        bVar.f8440p = this.f8425p.O();
+        bVar.f8441q = this.f8425p.Y();
+        bVar.f8442r = this.f8425p.X();
         return bVar;
     }
 
     public void p(boolean z10) {
-        this.f8424p.A(w.MergePathsApi19, z10);
+        this.f8425p.A(w.MergePathsApi19, z10);
     }
 
     public void pauseAnimation() {
-        this.f8428t = false;
-        this.f8424p.h0();
+        this.f8429t = false;
+        this.f8425p.h0();
     }
 
     public void playAnimation() {
-        this.f8430v.add(c.PLAY_OPTION);
-        this.f8424p.i0();
+        this.f8431v.add(c.PLAY_OPTION);
+        this.f8425p.i0();
     }
 
     public void setAnimation(int i10) {
-        this.f8426r = i10;
-        this.f8425q = null;
+        this.f8427r = i10;
+        this.f8426q = null;
         setCompositionTask(r(i10));
     }
 
@@ -638,7 +638,7 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
 
     public void setAnimationFromUrl(String str) {
         p B;
-        if (this.f8429u) {
+        if (this.f8430u) {
             B = s.A(getContext(), str);
         } else {
             B = s.B(getContext(), str, null);
@@ -647,140 +647,140 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
     }
 
     public void setApplyingOpacityToLayersEnabled(boolean z10) {
-        this.f8424p.q0(z10);
+        this.f8425p.q0(z10);
     }
 
     public void setAsyncUpdates(l5.a aVar) {
-        this.f8424p.r0(aVar);
+        this.f8425p.r0(aVar);
     }
 
     public void setCacheComposition(boolean z10) {
-        this.f8429u = z10;
+        this.f8430u = z10;
     }
 
     public void setClipTextToBoundingBox(boolean z10) {
-        this.f8424p.s0(z10);
+        this.f8425p.s0(z10);
     }
 
     public void setClipToCompositionBounds(boolean z10) {
-        this.f8424p.t0(z10);
+        this.f8425p.t0(z10);
     }
 
     public void setComposition(@NonNull l5.i iVar) {
-        if (l5.e.f35575a) {
-            String str = f8418y;
+        if (l5.e.f35576a) {
+            String str = f8419y;
             Log.v(str, "Set Composition \n" + iVar);
         }
-        this.f8424p.setCallback(this);
-        this.f8427s = true;
-        boolean u02 = this.f8424p.u0(iVar);
-        if (this.f8428t) {
-            this.f8424p.i0();
+        this.f8425p.setCallback(this);
+        this.f8428s = true;
+        boolean u02 = this.f8425p.u0(iVar);
+        if (this.f8429t) {
+            this.f8425p.i0();
         }
-        this.f8427s = false;
-        if (getDrawable() != this.f8424p || u02) {
+        this.f8428s = false;
+        if (getDrawable() != this.f8425p || u02) {
             if (!u02) {
                 C();
             }
             onVisibilityChanged(this, getVisibility());
             requestLayout();
-            for (a0 a0Var : this.f8431w) {
+            for (a0 a0Var : this.f8432w) {
                 a0Var.a(iVar);
             }
         }
     }
 
     public void setDefaultFontFileExtension(String str) {
-        this.f8424p.v0(str);
+        this.f8425p.v0(str);
     }
 
     public void setFailureListener(y yVar) {
-        this.f8422i = yVar;
+        this.f8423i = yVar;
     }
 
     public void setFallbackResource(int i10) {
-        this.f8423o = i10;
+        this.f8424o = i10;
     }
 
     public void setFontAssetDelegate(l5.b bVar) {
-        this.f8424p.w0(bVar);
+        this.f8425p.w0(bVar);
     }
 
     public void setFontMap(Map<String, Typeface> map) {
-        this.f8424p.x0(map);
+        this.f8425p.x0(map);
     }
 
     public void setFrame(int i10) {
-        this.f8424p.y0(i10);
+        this.f8425p.y0(i10);
     }
 
     @Deprecated
     public void setIgnoreDisabledSystemAnimations(boolean z10) {
-        this.f8424p.z0(z10);
+        this.f8425p.z0(z10);
     }
 
     public void setImageAssetDelegate(l5.c cVar) {
-        this.f8424p.A0(cVar);
+        this.f8425p.A0(cVar);
     }
 
     public void setImageAssetsFolder(String str) {
-        this.f8424p.B0(str);
+        this.f8425p.B0(str);
     }
 
     @Override // androidx.appcompat.widget.m, android.widget.ImageView
     public void setImageBitmap(Bitmap bitmap) {
-        this.f8426r = 0;
-        this.f8425q = null;
+        this.f8427r = 0;
+        this.f8426q = null;
         n();
         super.setImageBitmap(bitmap);
     }
 
     @Override // androidx.appcompat.widget.m, android.widget.ImageView
     public void setImageDrawable(Drawable drawable) {
-        this.f8426r = 0;
-        this.f8425q = null;
+        this.f8427r = 0;
+        this.f8426q = null;
         n();
         super.setImageDrawable(drawable);
     }
 
     @Override // androidx.appcompat.widget.m, android.widget.ImageView
     public void setImageResource(int i10) {
-        this.f8426r = 0;
-        this.f8425q = null;
+        this.f8427r = 0;
+        this.f8426q = null;
         n();
         super.setImageResource(i10);
     }
 
     public void setMaintainOriginalImageBounds(boolean z10) {
-        this.f8424p.C0(z10);
+        this.f8425p.C0(z10);
     }
 
     public void setMaxFrame(int i10) {
-        this.f8424p.D0(i10);
+        this.f8425p.D0(i10);
     }
 
     public void setMaxProgress(float f10) {
-        this.f8424p.F0(f10);
+        this.f8425p.F0(f10);
     }
 
     public void setMinAndMaxFrame(String str) {
-        this.f8424p.H0(str);
+        this.f8425p.H0(str);
     }
 
     public void setMinFrame(int i10) {
-        this.f8424p.I0(i10);
+        this.f8425p.I0(i10);
     }
 
     public void setMinProgress(float f10) {
-        this.f8424p.K0(f10);
+        this.f8425p.K0(f10);
     }
 
     public void setOutlineMasksAndMattes(boolean z10) {
-        this.f8424p.L0(z10);
+        this.f8425p.L0(z10);
     }
 
     public void setPerformanceTrackingEnabled(boolean z10) {
-        this.f8424p.M0(z10);
+        this.f8425p.M0(z10);
     }
 
     public void setProgress(float f10) {
@@ -788,49 +788,49 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
     }
 
     public void setRenderMode(h0 h0Var) {
-        this.f8424p.O0(h0Var);
+        this.f8425p.O0(h0Var);
     }
 
     public void setRepeatCount(int i10) {
-        this.f8430v.add(c.SET_REPEAT_COUNT);
-        this.f8424p.P0(i10);
+        this.f8431v.add(c.SET_REPEAT_COUNT);
+        this.f8425p.P0(i10);
     }
 
     public void setRepeatMode(int i10) {
-        this.f8430v.add(c.SET_REPEAT_MODE);
-        this.f8424p.Q0(i10);
+        this.f8431v.add(c.SET_REPEAT_MODE);
+        this.f8425p.Q0(i10);
     }
 
     public void setSafeMode(boolean z10) {
-        this.f8424p.R0(z10);
+        this.f8425p.R0(z10);
     }
 
     public void setSpeed(float f10) {
-        this.f8424p.S0(f10);
+        this.f8425p.S0(f10);
     }
 
     public void setTextDelegate(j0 j0Var) {
-        this.f8424p.T0(j0Var);
+        this.f8425p.T0(j0Var);
     }
 
     public void setUseCompositionFrameRate(boolean z10) {
-        this.f8424p.U0(z10);
+        this.f8425p.U0(z10);
     }
 
     public boolean t() {
-        return this.f8424p.d0();
+        return this.f8425p.d0();
     }
 
     public void u() {
-        this.f8424p.j0();
+        this.f8425p.j0();
     }
 
     @Override // android.view.View
     public void unscheduleDrawable(Drawable drawable) {
         n nVar;
-        if (!this.f8427s && drawable == (nVar = this.f8424p) && nVar.d0()) {
+        if (!this.f8428s && drawable == (nVar = this.f8425p) && nVar.d0()) {
             pauseAnimation();
-        } else if (!this.f8427s && (drawable instanceof n)) {
+        } else if (!this.f8428s && (drawable instanceof n)) {
             n nVar2 = (n) drawable;
             if (nVar2.d0()) {
                 nVar2.h0();
@@ -840,16 +840,16 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
     }
 
     public void v() {
-        this.f8424p.k0();
+        this.f8425p.k0();
     }
 
     public void w() {
-        this.f8430v.add(c.PLAY_OPTION);
-        this.f8424p.n0();
+        this.f8431v.add(c.PLAY_OPTION);
+        this.f8425p.n0();
     }
 
     public void x() {
-        this.f8424p.o0();
+        this.f8425p.o0();
     }
 
     public void y(InputStream inputStream, String str) {
@@ -861,30 +861,30 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
     }
 
     public void setMaxFrame(String str) {
-        this.f8424p.E0(str);
+        this.f8425p.E0(str);
     }
 
     public void setMinFrame(String str) {
-        this.f8424p.J0(str);
+        this.f8425p.J0(str);
     }
 
     public void setAnimation(String str) {
-        this.f8425q = str;
-        this.f8426r = 0;
+        this.f8426q = str;
+        this.f8427r = 0;
         setCompositionTask(q(str));
     }
 
     public LottieAnimationView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f8420d = new e(this);
-        this.f8421e = new d(this);
-        this.f8423o = 0;
-        this.f8424p = new n();
-        this.f8427s = false;
-        this.f8428t = false;
-        this.f8429u = true;
-        this.f8430v = new HashSet();
-        this.f8431w = new HashSet();
-        s(attributeSet, f0.f35593a);
+        this.f8421d = new e(this);
+        this.f8422e = new d(this);
+        this.f8424o = 0;
+        this.f8425p = new n();
+        this.f8428s = false;
+        this.f8429t = false;
+        this.f8430u = true;
+        this.f8431v = new HashSet();
+        this.f8432w = new HashSet();
+        s(attributeSet, f0.f35594a);
     }
 }

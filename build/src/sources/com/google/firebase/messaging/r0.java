@@ -5,12 +5,12 @@ import java.util.Locale;
 public final class r0 extends Exception {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f17389d;
+    private final int f17390d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public r0(String str) {
         super(str);
-        this.f17389d = a(str);
+        this.f17390d = a(str);
     }
 
     private int a(String str) {

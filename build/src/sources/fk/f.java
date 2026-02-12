@@ -7,17 +7,17 @@ import qg.qd;
 public final class f extends wj.e {
 
     /* renamed from: b  reason: collision with root package name */
-    private final wj.i f23771b;
+    private final wj.i f23772b;
 
     public f(wj.i iVar) {
-        this.f23771b = iVar;
+        this.f23772b = iVar;
     }
 
     @Override // wj.e
     protected final /* bridge */ /* synthetic */ Object a(Object obj) {
         c bVar;
         ek.e eVar = (ek.e) obj;
-        Context b10 = this.f23771b.b();
+        Context b10 = this.f23772b.b();
         qd b11 = be.b(k.b());
         if (!b.a(b10) && com.google.android.gms.common.g.f().a(b10) < 204500000) {
             bVar = new n(b10, eVar, b11);

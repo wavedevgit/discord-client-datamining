@@ -5,13 +5,13 @@ import io.sentry.a1;
 public final class r {
 
     /* renamed from: b  reason: collision with root package name */
-    private final a f30144b;
+    private final a f30145b;
 
     /* renamed from: a  reason: collision with root package name */
-    private volatile Object f30143a = null;
+    private volatile Object f30144a = null;
 
     /* renamed from: c  reason: collision with root package name */
-    private final io.sentry.util.a f30145c = new io.sentry.util.a();
+    private final io.sentry.util.a f30146c = new io.sentry.util.a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -19,15 +19,15 @@ public final class r {
     }
 
     public r(a aVar) {
-        this.f30144b = aVar;
+        this.f30145b = aVar;
     }
 
     public Object a() {
-        if (this.f30143a == null) {
-            a1 a10 = this.f30145c.a();
+        if (this.f30144a == null) {
+            a1 a10 = this.f30146c.a();
             try {
-                if (this.f30143a == null) {
-                    this.f30143a = this.f30144b.a();
+                if (this.f30144a == null) {
+                    this.f30144a = this.f30145b.a();
                 }
                 if (a10 != null) {
                     a10.close();
@@ -43,13 +43,13 @@ public final class r {
                 throw th2;
             }
         }
-        return this.f30143a;
+        return this.f30144a;
     }
 
     public void b() {
-        a1 a10 = this.f30145c.a();
+        a1 a10 = this.f30146c.a();
         try {
-            this.f30143a = null;
+            this.f30144a = null;
             if (a10 != null) {
                 a10.close();
             }
@@ -66,9 +66,9 @@ public final class r {
     }
 
     public void c(Object obj) {
-        a1 a10 = this.f30145c.a();
+        a1 a10 = this.f30146c.a();
         try {
-            this.f30143a = obj;
+            this.f30144a = obj;
             if (a10 != null) {
                 a10.close();
             }

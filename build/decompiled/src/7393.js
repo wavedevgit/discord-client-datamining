@@ -1,26 +1,29 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = dependencyMap;
-    var0 = 0;
-    var2 = var1[var0];
-    var1 = require;
-    var0 = undefined;
-    var3 = var1.bind(var0)(var2);
-    var2 = var3.registerAsset;
-    var1 = {
-        '__packager_asset': true,
-        'httpServerLocation': '/assets/modules/premium/tiered_tenure_badging/native/images',
-        'width': 66.66666666666667,
-        'height': 59,
-        'scales': null,
-        'hash': 'ebeff25c9c1d6559128af4dec63d3c8d',
-        'name': 'asset_diamond_badge_small',
-        'type': 'png'
-    };
-    var4 = [3];
-    var1.scales = var4;
-    var2 = var2.bind(var3)(var1);
-    var1 = module;
-    var1.exports = var2;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);
+    _fun59923: for (var _fun59923_ip = 0;;) switch (_fun59923_ip) {
+        case 0:
+            var1 = exports;
+            var2 = global;
+            var5 = var2.Object;
+            var4 = var5.defineProperty;
+            var3 = {};
+            var0 = true;
+            var3.value = var0;
+            var0 = '__esModule';
+            var0 = var4.bind(var5)(var1, var0, var3);
+            var0 = var2.__SENTRY_DEBUG__;
+            var3 = 'undefined';
+            var0 = typeof var0;
+            var0 = var3 === var0;
+            if (var0) {
+                _fun59923_ip = 61;
+                continue _fun59923
+            }
+        case 55:
+            var0 = var2.__SENTRY_DEBUG__;
+        case 61:
+            var1.DEBUG_BUILD = var0;
+            var0 = undefined;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

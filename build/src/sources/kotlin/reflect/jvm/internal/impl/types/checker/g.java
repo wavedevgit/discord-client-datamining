@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class g implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Set f34670d;
+    private final Set f34671d;
 
     public g(Set set) {
-        this.f34670d = set;
+        this.f34671d = set;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         String d10;
-        d10 = TypeIntersector.d(this.f34670d);
+        d10 = TypeIntersector.d(this.f34671d);
         return d10;
     }
 }

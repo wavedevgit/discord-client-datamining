@@ -24,22 +24,22 @@ public final class InputRadioGroupComponent implements k5, w4, v, e0 {
     public static final Parcelable.Creator<InputRadioGroupComponent> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f20689d;
+    private final String f20690d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f20690e;
+    private final String f20691e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f20691i;
+    private final JsonLogicBoolean f20692i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final JsonLogicBoolean f20692o;
+    private final JsonLogicBoolean f20693o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final List f20693p;
+    private final List f20694p;
 
     /* renamed from: q  reason: collision with root package name */
-    private t f20694q;
+    private t f20695q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -60,26 +60,26 @@ public final class InputRadioGroupComponent implements k5, w4, v, e0 {
     public InputRadioGroupComponent(String name, String value, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f20689d = name;
-        this.f20690e = value;
-        this.f20691i = jsonLogicBoolean;
-        this.f20692o = jsonLogicBoolean2;
-        this.f20693p = new ArrayList();
-        this.f20694q = w.a(value);
+        this.f20690d = name;
+        this.f20691e = value;
+        this.f20692i = jsonLogicBoolean;
+        this.f20693o = jsonLogicBoolean2;
+        this.f20694p = new ArrayList();
+        this.f20695q = w.a(value);
     }
 
     public static /* synthetic */ InputRadioGroupComponent e(InputRadioGroupComponent inputRadioGroupComponent, String str, String str2, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = inputRadioGroupComponent.f20689d;
+            str = inputRadioGroupComponent.f20690d;
         }
         if ((i10 & 2) != 0) {
-            str2 = inputRadioGroupComponent.f20690e;
+            str2 = inputRadioGroupComponent.f20691e;
         }
         if ((i10 & 4) != 0) {
-            jsonLogicBoolean = inputRadioGroupComponent.f20691i;
+            jsonLogicBoolean = inputRadioGroupComponent.f20692i;
         }
         if ((i10 & 8) != 0) {
-            jsonLogicBoolean2 = inputRadioGroupComponent.f20692o;
+            jsonLogicBoolean2 = inputRadioGroupComponent.f20693o;
         }
         return inputRadioGroupComponent.c(str, str2, jsonLogicBoolean, jsonLogicBoolean2);
     }
@@ -90,7 +90,7 @@ public final class InputRadioGroupComponent implements k5, w4, v, e0 {
 
     @Override // pq.w4
     public t b() {
-        return this.f20694q;
+        return this.f20695q;
     }
 
     public final InputRadioGroupComponent c(String name, String value, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2) {
@@ -101,7 +101,7 @@ public final class InputRadioGroupComponent implements k5, w4, v, e0 {
 
     @Override // pq.e0
     public List d() {
-        return this.f20693p;
+        return this.f20694p;
     }
 
     @Override // android.os.Parcelable
@@ -115,14 +115,14 @@ public final class InputRadioGroupComponent implements k5, w4, v, e0 {
         }
         if (obj instanceof InputRadioGroupComponent) {
             InputRadioGroupComponent inputRadioGroupComponent = (InputRadioGroupComponent) obj;
-            return Intrinsics.areEqual(this.f20689d, inputRadioGroupComponent.f20689d) && Intrinsics.areEqual(this.f20690e, inputRadioGroupComponent.f20690e) && Intrinsics.areEqual(this.f20691i, inputRadioGroupComponent.f20691i) && Intrinsics.areEqual(this.f20692o, inputRadioGroupComponent.f20692o);
+            return Intrinsics.areEqual(this.f20690d, inputRadioGroupComponent.f20690d) && Intrinsics.areEqual(this.f20691e, inputRadioGroupComponent.f20691e) && Intrinsics.areEqual(this.f20692i, inputRadioGroupComponent.f20692i) && Intrinsics.areEqual(this.f20693o, inputRadioGroupComponent.f20693o);
         }
         return false;
     }
 
     public void f(t tVar) {
         Intrinsics.checkNotNullParameter(tVar, "<set-?>");
-        this.f20694q = tVar;
+        this.f20695q = tVar;
     }
 
     @Override // pq.w4
@@ -136,42 +136,42 @@ public final class InputRadioGroupComponent implements k5, w4, v, e0 {
 
     @Override // pq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f20692o;
+        return this.f20693o;
     }
 
     @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f20691i;
+        return this.f20692i;
     }
 
     @Override // pq.k5
     public String getName() {
-        return this.f20689d;
+        return this.f20690d;
     }
 
     public int hashCode() {
-        int hashCode = ((this.f20689d.hashCode() * 31) + this.f20690e.hashCode()) * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f20691i;
+        int hashCode = ((this.f20690d.hashCode() * 31) + this.f20691e.hashCode()) * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f20692i;
         int hashCode2 = (hashCode + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20692o;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20693o;
         return hashCode2 + (jsonLogicBoolean2 != null ? jsonLogicBoolean2.hashCode() : 0);
     }
 
     public String toString() {
-        String str = this.f20689d;
-        String str2 = this.f20690e;
-        JsonLogicBoolean jsonLogicBoolean = this.f20691i;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20692o;
+        String str = this.f20690d;
+        String str2 = this.f20691e;
+        JsonLogicBoolean jsonLogicBoolean = this.f20692i;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20693o;
         return "InputRadioGroupComponent(name=" + str + ", value=" + str2 + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f20689d);
-        dest.writeString(this.f20690e);
-        dest.writeParcelable(this.f20691i, i10);
-        dest.writeParcelable(this.f20692o, i10);
+        dest.writeString(this.f20690d);
+        dest.writeString(this.f20691e);
+        dest.writeParcelable(this.f20692i, i10);
+        dest.writeParcelable(this.f20693o, i10);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

@@ -20,7 +20,7 @@ public interface b extends dv.c, lv.a, lv.c {
             List c10 = mw.a.c(obj);
             Object e10 = bVar.e(CollectionsKt.firstOrNull(c10));
             Object e11 = bVar.e(mw.c.b(c10));
-            c cVar = c.f31375a;
+            c cVar = c.f31376a;
             List a10 = cVar.a(e10);
             List a11 = cVar.a(e11);
             if (a10 == null && a11 == null) {

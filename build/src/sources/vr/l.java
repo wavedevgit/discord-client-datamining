@@ -9,33 +9,33 @@ import android.text.style.LeadingMarginSpan;
 public class l implements LeadingMarginSpan {
 
     /* renamed from: d  reason: collision with root package name */
-    private final tr.c f51808d;
+    private final tr.c f51809d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Rect f51809e = h.b();
+    private final Rect f51810e = h.b();
 
     /* renamed from: i  reason: collision with root package name */
-    private final Paint f51810i = h.a();
+    private final Paint f51811i = h.a();
 
     public l(tr.c cVar) {
-        this.f51808d = cVar;
+        this.f51809d = cVar;
     }
 
     @Override // android.text.style.LeadingMarginSpan
     public void drawLeadingMargin(Canvas canvas, Paint paint, int i10, int i11, int i12, int i13, int i14, CharSequence charSequence, int i15, int i16, boolean z10, Layout layout) {
         int i17;
         int i18 = i12 + ((i14 - i12) / 2);
-        this.f51810i.set(paint);
-        this.f51808d.h(this.f51810i);
-        int strokeWidth = (int) ((((int) (this.f51810i.getStrokeWidth() + 0.5f)) / 2.0f) + 0.5f);
+        this.f51811i.set(paint);
+        this.f51809d.h(this.f51811i);
+        int strokeWidth = (int) ((((int) (this.f51811i.getStrokeWidth() + 0.5f)) / 2.0f) + 0.5f);
         if (i11 > 0) {
             i17 = canvas.getWidth();
         } else {
             i17 = i10;
             i10 -= canvas.getWidth();
         }
-        this.f51809e.set(i10, i18 - strokeWidth, i17, i18 + strokeWidth);
-        canvas.drawRect(this.f51809e, this.f51810i);
+        this.f51810e.set(i10, i18 - strokeWidth, i17, i18 + strokeWidth);
+        canvas.drawRect(this.f51810e, this.f51811i);
     }
 
     @Override // android.text.style.LeadingMarginSpan

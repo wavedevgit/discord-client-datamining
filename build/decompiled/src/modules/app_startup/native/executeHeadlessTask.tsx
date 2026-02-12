@@ -16,14 +16,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot4;
         var2 = function*(arg0, arg1, arg2) { // Environment: var2
             var0 = function*(arg0, arg1, arg2) { // Original name: ?anon_0_, environment: var0
-                _fun118898: for (var _fun118898_ip = 0;;) switch (_fun118898_ip) {
+                _fun118959: for (var _fun118959_ip = 0;;) switch (_fun118959_ip) {
                     case 0:
                         StartGenerator();
                         var17 = arg0;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun118898_ip = 2285;
-                            continue _fun118898
+                            _fun118959_ip = 2274;
+                            continue _fun118959
                         }
                     case 13:
                         var13 = var17;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var9.bind(var8)(var1);
                         var1 = var1.wasEverActive;
                         if (var1) {
-                            _fun118898_ip = 275;
-                            continue _fun118898
+                            _fun118959_ip = 275;
+                            continue _fun118959
                         }
                     case 244:
                         var9 = _closure1_slot1;
@@ -105,8 +105,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var9 = var1.currentState;
                         var1 = 'active';
                         if (!(var1 !== var9)) {
-                            _fun118898_ip = 346;
-                            continue _fun118898
+                            _fun118959_ip = 345;
+                            continue _fun118959
                         }
                     case 293:
                         var15 = var2;
@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var9 = var15.setIsPaused;
                         var1 = true;
                         var1 = var9.bind(var15)(var1);
-                    case 346:
+                    case 345:
                         var9 = _closure1_slot1;
                         var1 = _closure1_slot3;
                         var15 = 11;
@@ -139,32 +139,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var16.bind(var17)(var9, var1);
                         var1 = _closure1_slot7;
                         var1 = var1.bind(var8)();
-                        SaveGenerator(address = 423);
-                    case 421:
+                        SaveGenerator(address = 422);
+                    case 420:
                         return var1;
-                    case 423:
+                    case 422:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 9);
                         if (var9) {
-                            _fun118898_ip = 1646;
-                            continue _fun118898
+                            _fun118959_ip = 1637;
+                            continue _fun118959
                         }
-                    case 432:
+                    case 431:
                         var17 = var2;
                         var16 = var17.log;
                         var9 = 'initHeadlessTask completed';
                         var9 = var16.bind(var17)(var9);
                         var9 = _closure1_slot8;
                         var9 = var9.promise;
-                        SaveGenerator(address = 466);
-                    case 464:
+                        SaveGenerator(address = 464);
+                    case 462:
                         return var9;
-                    case 466:
+                    case 464:
                         ResumeGenerator(result_out_reg = 9, return_bool_out_reg = 16);
                         if (var16) {
-                            _fun118898_ip = 1324;
-                            continue _fun118898
+                            _fun118959_ip = 1316;
+                            continue _fun118959
                         }
-                    case 475:
+                    case 473:
                         var18 = var2;
                         var17 = var18.log;
                         var16 = 'Flux Initialized';
@@ -173,17 +173,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var16 = var17.isAuthenticated;
                         var16 = var16.bind(var17)();
                         if (var16) {
-                            _fun118898_ip = 534;
-                            continue _fun118898
+                            _fun118959_ip = 530;
+                            continue _fun118959
                         }
-                    case 512:
+                    case 509:
                         var18 = var2;
                         var17 = var18.log;
                         var16 = 'Analytics Init skipped; not authenticated';
                         var16 = var17.bind(var18)(var16);
-                        _fun118898_ip = 636;
-                        continue _fun118898;
-                    case 534:
+                        _fun118959_ip = 631;
+                        continue _fun118959;
+                    case 530:
                         var17 = _closure1_slot0;
                         var18 = _closure1_slot3;
                         var16 = 12;
@@ -207,26 +207,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var17 = var18.log;
                         var16 = 'Analytics Initialized';
                         var16 = var17.bind(var18)(var16);
-                    case 636:
+                    case 631:
                         var11 = var11.bind(var8)();
                         var10 = var11.bind(var8)(var10);
-                        SaveGenerator(address = 649);
-                    case 647:
+                        SaveGenerator(address = 644);
+                    case 642:
                         return var10;
-                    case 649:
+                    case 644:
                         ResumeGenerator(result_out_reg = 10, return_bool_out_reg = 11);
                         if (var11) {
-                            _fun118898_ip = 1002;
-                            continue _fun118898
+                            _fun118959_ip = 995;
+                            continue _fun118959
                         }
-                    case 658:
+                    case 653:
                         var20 = true;
                         var12 = true;
                         var17 = var2;
                         var16 = var17.log;
                         var11 = 'Task completed successfully';
                         var11 = var16.bind(var17)(var11);
-                    case 682: // try_end0
+                    case 676: // try_end0
                         var16 = var4.Date;
                         var11 = var16.now;
                         var16 = var11.bind(var16)();
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var11 = {};
                         var11.flush = var20;
                         var3 = var18.bind(var19)(var17, var16, var11);
-                    case 893: // try_start_1
+                    case 886: // try_start_1
                         var17 = var4.Promise;
                         var16 = var17.race;
                         var18 = var3;
@@ -291,29 +291,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var18 = var19.bind(var20)(var18);
                         var11[1] = var18;
                         var11 = var16.bind(var17)(var11);
-                        SaveGenerator(address = 966);
-                    case 964:
+                        SaveGenerator(address = 959);
+                    case 957:
                         return var11;
-                    case 966:
+                    case 959:
                         ResumeGenerator(result_out_reg = 11, return_bool_out_reg = 16);
                         if (var16) {
-                            _fun118898_ip = 974;
-                            continue _fun118898
+                            _fun118959_ip = 967;
+                            continue _fun118959
                         }
-                    case 972: // try_end1
-                        _fun118898_ip = 999;
-                        continue _fun118898;
-                    case 974:
+                    case 965: // try_end1
+                        _fun118959_ip = 992;
+                        continue _fun118959;
+                    case 967:
                         return var11;
-                    case 977: // catch_target1
+                    case 970: // catch_target1
                         CatchBlockStart(arg_register = 18);
                         var17 = var2;
                         var16 = var17.warn;
                         var11 = 'Failed to submit analytics';
                         var11 = var16.bind(var17)(var11, var18);
-                    case 999:
+                    case 992:
                         return var8;
-                    case 1002:
+                    case 995:
                         var16 = var4.Date;
                         var11 = var16.now;
                         var16 = var11.bind(var16)();
@@ -363,7 +363,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var20 = true;
                         var11.flush = var20;
                         var3 = var18.bind(var19)(var17, var16, var11);
-                    case 1215: // try_start_2
+                    case 1207: // try_start_2
                         var17 = var4.Promise;
                         var16 = var17.race;
                         var18 = var3;
@@ -379,29 +379,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var18 = var19.bind(var20)(var18);
                         var11[1] = var18;
                         var11 = var16.bind(var17)(var11);
-                        SaveGenerator(address = 1288);
-                    case 1286:
+                        SaveGenerator(address = 1280);
+                    case 1278:
                         return var11;
-                    case 1288:
+                    case 1280:
                         ResumeGenerator(result_out_reg = 11, return_bool_out_reg = 16);
                         if (var16) {
-                            _fun118898_ip = 1296;
-                            continue _fun118898
+                            _fun118959_ip = 1288;
+                            continue _fun118959
                         }
-                    case 1294: // try_end2
-                        _fun118898_ip = 1321;
-                        continue _fun118898;
-                    case 1296:
+                    case 1286: // try_end2
+                        _fun118959_ip = 1313;
+                        continue _fun118959;
+                    case 1288:
                         return var11;
-                    case 1299: // catch_target2
+                    case 1291: // catch_target2
                         CatchBlockStart(arg_register = 18);
                         var17 = var2;
                         var16 = var17.warn;
                         var11 = 'Failed to submit analytics';
                         var11 = var16.bind(var17)(var11, var18);
-                    case 1321:
+                    case 1313:
                         return var10;
-                    case 1324:
+                    case 1316:
                         var11 = var4.Date;
                         var10 = var11.now;
                         var11 = var10.bind(var11)();
@@ -451,7 +451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var19 = true;
                         var10.flush = var19;
                         var3 = var17.bind(var18)(var16, var11, var10);
-                    case 1537: // try_start_3
+                    case 1528: // try_start_3
                         var16 = var4.Promise;
                         var11 = var16.race;
                         var17 = var3;
@@ -467,29 +467,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var17 = var18.bind(var19)(var17);
                         var10[1] = var17;
                         var10 = var11.bind(var16)(var10);
-                        SaveGenerator(address = 1610);
-                    case 1608:
+                        SaveGenerator(address = 1601);
+                    case 1599:
                         return var10;
-                    case 1610:
+                    case 1601:
                         ResumeGenerator(result_out_reg = 10, return_bool_out_reg = 11);
                         if (var11) {
-                            _fun118898_ip = 1618;
-                            continue _fun118898
+                            _fun118959_ip = 1609;
+                            continue _fun118959
                         }
-                    case 1616: // try_end3
-                        _fun118898_ip = 1643;
-                        continue _fun118898;
-                    case 1618:
+                    case 1607: // try_end3
+                        _fun118959_ip = 1634;
+                        continue _fun118959;
+                    case 1609:
                         return var10;
-                    case 1621: // catch_target3
+                    case 1612: // catch_target3
                         CatchBlockStart(arg_register = 17);
                         var16 = var2;
                         var11 = var16.warn;
                         var10 = 'Failed to submit analytics';
                         var10 = var11.bind(var16)(var10, var17);
-                    case 1643:
+                    case 1634:
                         return var9;
-                    case 1646:
+                    case 1637:
                         var10 = var4.Date;
                         var9 = var10.now;
                         var10 = var9.bind(var10)();
@@ -539,7 +539,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var17 = true;
                         var9.flush = var17;
                         var3 = var15.bind(var16)(var11, var10, var9);
-                    case 1859: // try_start_4
+                    case 1849: // try_start_4
                         var11 = var4.Promise;
                         var10 = var11.race;
                         var15 = var3;
@@ -555,29 +555,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var15 = var16.bind(var17)(var15);
                         var9[1] = var15;
                         var9 = var10.bind(var11)(var9);
-                        SaveGenerator(address = 1932);
-                    case 1930:
+                        SaveGenerator(address = 1922);
+                    case 1920:
                         return var9;
-                    case 1932:
+                    case 1922:
                         ResumeGenerator(result_out_reg = 9, return_bool_out_reg = 10);
                         if (var10) {
-                            _fun118898_ip = 1940;
-                            continue _fun118898
+                            _fun118959_ip = 1930;
+                            continue _fun118959
                         }
-                    case 1938: // try_end4
-                        _fun118898_ip = 1965;
-                        continue _fun118898;
-                    case 1940:
+                    case 1928: // try_end4
+                        _fun118959_ip = 1955;
+                        continue _fun118959;
+                    case 1930:
                         return var9;
-                    case 1943: // catch_target4
+                    case 1933: // catch_target4
                         CatchBlockStart(arg_register = 15);
                         var11 = var2;
                         var10 = var11.warn;
                         var9 = 'Failed to submit analytics';
                         var9 = var10.bind(var11)(var9, var15);
-                    case 1965:
+                    case 1955:
                         return var1;
-                    case 1968: // catch_target0
+                    case 1958: // catch_target0
                         CatchBlockStart(arg_register = 1);
                         var10 = var4.Date;
                         var9 = var10.now;
@@ -626,7 +626,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var12 = true;
                         var5.flush = var12;
                         var3 = var10.bind(var11)(var9, var7, var5);
-                    case 2177: // try_start_5
+                    case 2166: // try_start_5
                         var5 = var4.Promise;
                         var4 = var5.race;
                         var7 = var3;
@@ -642,29 +642,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6 = var7.bind(var8)(var6);
                         var3[1] = var6;
                         var3 = var4.bind(var5)(var3);
-                        SaveGenerator(address = 2250);
-                    case 2248:
+                        SaveGenerator(address = 2239);
+                    case 2237:
                         return var3;
-                    case 2250:
+                    case 2239:
                         ResumeGenerator(result_out_reg = 3, return_bool_out_reg = 4);
                         if (var4) {
-                            _fun118898_ip = 2258;
-                            continue _fun118898
+                            _fun118959_ip = 2247;
+                            continue _fun118959
                         }
-                    case 2256: // try_end5
-                        _fun118898_ip = 2283;
-                        continue _fun118898;
-                    case 2258:
+                    case 2245: // try_end5
+                        _fun118959_ip = 2272;
+                        continue _fun118959;
+                    case 2247:
                         return var3;
-                    case 2261: // catch_target5
+                    case 2250: // catch_target5
                         CatchBlockStart(arg_register = 5);
                         var4 = var2;
                         var3 = var4.warn;
                         var2 = 'Failed to submit analytics';
                         var2 = var3.bind(var4)(var2, var5);
-                    case 2283:
+                    case 2272:
                         throw var1;
-                    case 2285:
+                    case 2274:
                         return var0;
                 }
             };
@@ -732,4 +732,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 27, 1216, 14436, 660, 3, 1207, 659, 25, 14, 12455, 795, 481, 3627, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 27, 1216, 14448, 660, 3, 1207, 659, 25, 14, 12468, 795, 481, 3627, 2]);

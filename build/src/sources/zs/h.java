@@ -10,23 +10,23 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f57124a;
+    public static final g f57125a;
     private static volatile Choreographer choreographer;
 
     static {
         Object b10;
         g gVar = null;
         try {
-            Result.a aVar = Result.f31984e;
+            Result.a aVar = Result.f31985e;
             b10 = Result.b(new f(a(Looper.getMainLooper(), true), null, 2, null));
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f31984e;
+            Result.a aVar2 = Result.f31985e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         if (!Result.g(b10)) {
             gVar = b10;
         }
-        f57124a = gVar;
+        f57125a = gVar;
     }
 
     public static final Handler a(Looper looper, boolean z10) {

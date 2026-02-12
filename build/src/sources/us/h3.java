@@ -21,9 +21,9 @@ public abstract class h3 {
         Intrinsics.checkNotNullParameter(type, "type");
         KotlinType l10 = ((t2) type).l();
         if (l10 instanceof SimpleType) {
-            ClassifierDescriptor mo1202getDeclarationDescriptor = l10.getConstructor().mo1202getDeclarationDescriptor();
-            if (mo1202getDeclarationDescriptor instanceof ClassDescriptor) {
-                classDescriptor = (ClassDescriptor) mo1202getDeclarationDescriptor;
+            ClassifierDescriptor mo1201getDeclarationDescriptor = l10.getConstructor().mo1201getDeclarationDescriptor();
+            if (mo1201getDeclarationDescriptor instanceof ClassDescriptor) {
+                classDescriptor = (ClassDescriptor) mo1201getDeclarationDescriptor;
             } else {
                 classDescriptor = null;
             }

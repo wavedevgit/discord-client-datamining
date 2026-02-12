@@ -3,32 +3,32 @@ package hf;
 public final class m1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f27287a;
+    private final String f27288a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f27288b;
+    private final String f27289b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f27289c;
+    private final boolean f27290c;
 
     public m1(String str, String str2, boolean z10, int i10, boolean z11) {
-        this.f27288b = str;
-        this.f27287a = str2;
-        this.f27289c = z11;
+        this.f27289b = str;
+        this.f27288a = str2;
+        this.f27290c = z11;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final String a() {
-        return this.f27287a;
+        return this.f27288a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final String b() {
-        return this.f27288b;
+        return this.f27289b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final boolean c() {
-        return this.f27289c;
+        return this.f27290c;
     }
 }

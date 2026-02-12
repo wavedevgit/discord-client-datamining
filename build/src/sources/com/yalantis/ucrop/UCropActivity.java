@@ -57,49 +57,49 @@ public class UCropActivity extends AppCompatActivity {
     private Transition I;
 
     /* renamed from: d  reason: collision with root package name */
-    private String f20878d;
+    private String f20879d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f20879e;
+    private int f20880e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f20880i;
+    private int f20881i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f20881o;
+    private int f20882o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f20882p;
+    private int f20883p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f20883q;
+    private int f20884q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f20884r;
+    private int f20885r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f20885s;
+    private int f20886s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f20886t;
+    private boolean f20887t;
 
     /* renamed from: v  reason: collision with root package name */
-    private UCropView f20888v;
+    private UCropView f20889v;
 
     /* renamed from: w  reason: collision with root package name */
-    private GestureCropImageView f20889w;
+    private GestureCropImageView f20890w;
 
     /* renamed from: x  reason: collision with root package name */
-    private OverlayView f20890x;
+    private OverlayView f20891x;
 
     /* renamed from: y  reason: collision with root package name */
-    private ViewGroup f20891y;
+    private ViewGroup f20892y;
 
     /* renamed from: z  reason: collision with root package name */
-    private ViewGroup f20892z;
+    private ViewGroup f20893z;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f20887u = true;
+    private boolean f20888u = true;
     private List E = new ArrayList();
     private Bitmap.CompressFormat J = O;
     private int K = 90;
@@ -114,9 +114,9 @@ public class UCropActivity extends AppCompatActivity {
 
         @Override // com.yalantis.ucrop.view.b.InterfaceC0273b
         public void a() {
-            UCropActivity.this.f20888v.animate().alpha(1.0f).setDuration(300L).setInterpolator(new AccelerateInterpolator());
+            UCropActivity.this.f20889v.animate().alpha(1.0f).setDuration(300L).setInterpolator(new AccelerateInterpolator());
             UCropActivity.this.H.setClickable(false);
-            UCropActivity.this.f20887u = false;
+            UCropActivity.this.f20888u = false;
             UCropActivity.this.supportInvalidateOptionsMenu();
         }
 
@@ -146,8 +146,8 @@ public class UCropActivity extends AppCompatActivity {
         @Override // android.view.View.OnClickListener
         public void onClick(View view) {
             boolean z10;
-            UCropActivity.this.f20889w.setTargetAspectRatio(((AspectRatioTextView) ((ViewGroup) view).getChildAt(0)).g(view.isSelected()));
-            UCropActivity.this.f20889w.z();
+            UCropActivity.this.f20890w.setTargetAspectRatio(((AspectRatioTextView) ((ViewGroup) view).getChildAt(0)).g(view.isSelected()));
+            UCropActivity.this.f20890w.z();
             if (!view.isSelected()) {
                 for (ViewGroup viewGroup : UCropActivity.this.E) {
                     if (viewGroup == view) {
@@ -169,17 +169,17 @@ public class UCropActivity extends AppCompatActivity {
 
         @Override // com.yalantis.ucrop.view.widget.HorizontalProgressWheelView.a
         public void a() {
-            UCropActivity.this.f20889w.z();
+            UCropActivity.this.f20890w.z();
         }
 
         @Override // com.yalantis.ucrop.view.widget.HorizontalProgressWheelView.a
         public void b() {
-            UCropActivity.this.f20889w.t();
+            UCropActivity.this.f20890w.t();
         }
 
         @Override // com.yalantis.ucrop.view.widget.HorizontalProgressWheelView.a
         public void c(float f10, float f11) {
-            UCropActivity.this.f20889w.x(f10 / 42.0f);
+            UCropActivity.this.f20890w.x(f10 / 42.0f);
         }
     }
 
@@ -215,20 +215,20 @@ public class UCropActivity extends AppCompatActivity {
 
         @Override // com.yalantis.ucrop.view.widget.HorizontalProgressWheelView.a
         public void a() {
-            UCropActivity.this.f20889w.z();
+            UCropActivity.this.f20890w.z();
         }
 
         @Override // com.yalantis.ucrop.view.widget.HorizontalProgressWheelView.a
         public void b() {
-            UCropActivity.this.f20889w.t();
+            UCropActivity.this.f20890w.t();
         }
 
         @Override // com.yalantis.ucrop.view.widget.HorizontalProgressWheelView.a
         public void c(float f10, float f11) {
             if (f10 > 0.0f) {
-                UCropActivity.this.f20889w.C(UCropActivity.this.f20889w.getCurrentScale() + (f10 * ((UCropActivity.this.f20889w.getMaxScale() - UCropActivity.this.f20889w.getMinScale()) / 15000.0f)));
+                UCropActivity.this.f20890w.C(UCropActivity.this.f20890w.getCurrentScale() + (f10 * ((UCropActivity.this.f20890w.getMaxScale() - UCropActivity.this.f20890w.getMinScale()) / 15000.0f)));
             } else {
-                UCropActivity.this.f20889w.E(UCropActivity.this.f20889w.getCurrentScale() + (f10 * ((UCropActivity.this.f20889w.getMaxScale() - UCropActivity.this.f20889w.getMinScale()) / 15000.0f)));
+                UCropActivity.this.f20890w.E(UCropActivity.this.f20890w.getCurrentScale() + (f10 * ((UCropActivity.this.f20890w.getMaxScale() - UCropActivity.this.f20890w.getMinScale()) / 15000.0f)));
             }
         }
     }
@@ -255,7 +255,7 @@ public class UCropActivity extends AppCompatActivity {
         @Override // gr.a
         public void a(Uri uri, int i10, int i11, int i12, int i13) {
             UCropActivity uCropActivity = UCropActivity.this;
-            uCropActivity.Z(uri, uCropActivity.f20889w.getTargetAspectRatio(), i10, i11, i12, i13);
+            uCropActivity.Z(uri, uCropActivity.f20890w.getTargetAspectRatio(), i10, i11, i12, i13);
             UCropActivity.this.finish();
         }
 
@@ -292,50 +292,50 @@ public class UCropActivity extends AppCompatActivity {
         if (this.H == null) {
             this.H = new View(this);
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, -1);
-            layoutParams.addRule(3, fr.d.f24264t);
+            layoutParams.addRule(3, fr.d.f24265t);
             this.H.setLayoutParams(layoutParams);
             this.H.setClickable(true);
         }
-        ((RelativeLayout) findViewById(fr.d.f24268x)).addView(this.H);
+        ((RelativeLayout) findViewById(fr.d.f24269x)).addView(this.H);
     }
 
     private void N(int i10) {
         int i11;
         int i12;
-        x.a((ViewGroup) findViewById(fr.d.f24268x), this.I);
-        View findViewById = this.A.findViewById(fr.d.f24263s);
+        x.a((ViewGroup) findViewById(fr.d.f24269x), this.I);
+        View findViewById = this.A.findViewById(fr.d.f24264s);
         int i13 = 8;
-        if (i10 == fr.d.f24260p) {
+        if (i10 == fr.d.f24261p) {
             i11 = 0;
         } else {
             i11 = 8;
         }
         findViewById.setVisibility(i11);
-        View findViewById2 = this.f20891y.findViewById(fr.d.f24261q);
-        if (i10 == fr.d.f24258n) {
+        View findViewById2 = this.f20892y.findViewById(fr.d.f24262q);
+        if (i10 == fr.d.f24259n) {
             i12 = 0;
         } else {
             i12 = 8;
         }
         findViewById2.setVisibility(i12);
-        View findViewById3 = this.f20892z.findViewById(fr.d.f24262r);
-        if (i10 == fr.d.f24259o) {
+        View findViewById3 = this.f20893z.findViewById(fr.d.f24263r);
+        if (i10 == fr.d.f24260o) {
             i13 = 0;
         }
         findViewById3.setVisibility(i13);
     }
 
     private void P() {
-        UCropView uCropView = (UCropView) findViewById(fr.d.f24266v);
-        this.f20888v = uCropView;
-        this.f20889w = uCropView.getCropImageView();
-        this.f20890x = this.f20888v.getOverlayView();
-        this.f20889w.setTransformImageListener(this.M);
-        ((ImageView) findViewById(fr.d.f24247c)).setColorFilter(this.f20885s, PorterDuff.Mode.SRC_ATOP);
-        findViewById(fr.d.f24267w).setBackgroundColor(this.f20882p);
-        if (!this.f20886t) {
-            ((RelativeLayout.LayoutParams) findViewById(fr.d.f24267w).getLayoutParams()).bottomMargin = 0;
-            findViewById(fr.d.f24267w).requestLayout();
+        UCropView uCropView = (UCropView) findViewById(fr.d.f24267v);
+        this.f20889v = uCropView;
+        this.f20890w = uCropView.getCropImageView();
+        this.f20891x = this.f20889v.getOverlayView();
+        this.f20890w.setTransformImageListener(this.M);
+        ((ImageView) findViewById(fr.d.f24248c)).setColorFilter(this.f20886s, PorterDuff.Mode.SRC_ATOP);
+        findViewById(fr.d.f24268w).setBackgroundColor(this.f20883p);
+        if (!this.f20887t) {
+            ((RelativeLayout.LayoutParams) findViewById(fr.d.f24268w).getLayoutParams()).bottomMargin = 0;
+            findViewById(fr.d.f24268w).requestLayout();
         }
     }
 
@@ -356,71 +356,71 @@ public class UCropActivity extends AppCompatActivity {
         if (intArrayExtra != null && intArrayExtra.length == 3) {
             this.L = intArrayExtra;
         }
-        this.f20889w.setMaxBitmapSize(intent.getIntExtra("com.yalantis.ucrop.MaxBitmapSize", 0));
-        this.f20889w.setMaxScaleMultiplier(intent.getFloatExtra("com.yalantis.ucrop.MaxScaleMultiplier", 10.0f));
-        this.f20889w.setImageToWrapCropBoundsAnimDuration(intent.getIntExtra("com.yalantis.ucrop.ImageToCropBoundsAnimDuration", 500));
-        this.f20890x.setFreestyleCropEnabled(intent.getBooleanExtra("com.yalantis.ucrop.FreeStyleCrop", false));
-        this.f20890x.setDimmedColor(intent.getIntExtra("com.yalantis.ucrop.DimmedLayerColor", getResources().getColor(fr.a.f24224e)));
-        this.f20890x.setCircleDimmedLayer(intent.getBooleanExtra("com.yalantis.ucrop.CircleDimmedLayer", false));
-        this.f20890x.setShowCropFrame(intent.getBooleanExtra("com.yalantis.ucrop.ShowCropFrame", true));
-        this.f20890x.setCropFrameColor(intent.getIntExtra("com.yalantis.ucrop.CropFrameColor", getResources().getColor(fr.a.f24222c)));
-        this.f20890x.setCropFrameStrokeWidth(intent.getIntExtra("com.yalantis.ucrop.CropFrameStrokeWidth", getResources().getDimensionPixelSize(fr.b.f24232a)));
-        this.f20890x.setShowCropGrid(intent.getBooleanExtra("com.yalantis.ucrop.ShowCropGrid", true));
-        this.f20890x.setCropGridRowCount(intent.getIntExtra("com.yalantis.ucrop.CropGridRowCount", 2));
-        this.f20890x.setCropGridColumnCount(intent.getIntExtra("com.yalantis.ucrop.CropGridColumnCount", 2));
-        this.f20890x.setCropGridColor(intent.getIntExtra("com.yalantis.ucrop.CropGridColor", getResources().getColor(fr.a.f24223d)));
-        this.f20890x.setCropGridCornerColor(intent.getIntExtra("com.yalantis.ucrop.CropGridCornerColor", getResources().getColor(fr.a.f24223d)));
-        this.f20890x.setCropGridStrokeWidth(intent.getIntExtra("com.yalantis.ucrop.CropGridStrokeWidth", getResources().getDimensionPixelSize(fr.b.f24233b)));
+        this.f20890w.setMaxBitmapSize(intent.getIntExtra("com.yalantis.ucrop.MaxBitmapSize", 0));
+        this.f20890w.setMaxScaleMultiplier(intent.getFloatExtra("com.yalantis.ucrop.MaxScaleMultiplier", 10.0f));
+        this.f20890w.setImageToWrapCropBoundsAnimDuration(intent.getIntExtra("com.yalantis.ucrop.ImageToCropBoundsAnimDuration", 500));
+        this.f20891x.setFreestyleCropEnabled(intent.getBooleanExtra("com.yalantis.ucrop.FreeStyleCrop", false));
+        this.f20891x.setDimmedColor(intent.getIntExtra("com.yalantis.ucrop.DimmedLayerColor", getResources().getColor(fr.a.f24225e)));
+        this.f20891x.setCircleDimmedLayer(intent.getBooleanExtra("com.yalantis.ucrop.CircleDimmedLayer", false));
+        this.f20891x.setShowCropFrame(intent.getBooleanExtra("com.yalantis.ucrop.ShowCropFrame", true));
+        this.f20891x.setCropFrameColor(intent.getIntExtra("com.yalantis.ucrop.CropFrameColor", getResources().getColor(fr.a.f24223c)));
+        this.f20891x.setCropFrameStrokeWidth(intent.getIntExtra("com.yalantis.ucrop.CropFrameStrokeWidth", getResources().getDimensionPixelSize(fr.b.f24233a)));
+        this.f20891x.setShowCropGrid(intent.getBooleanExtra("com.yalantis.ucrop.ShowCropGrid", true));
+        this.f20891x.setCropGridRowCount(intent.getIntExtra("com.yalantis.ucrop.CropGridRowCount", 2));
+        this.f20891x.setCropGridColumnCount(intent.getIntExtra("com.yalantis.ucrop.CropGridColumnCount", 2));
+        this.f20891x.setCropGridColor(intent.getIntExtra("com.yalantis.ucrop.CropGridColor", getResources().getColor(fr.a.f24224d)));
+        this.f20891x.setCropGridCornerColor(intent.getIntExtra("com.yalantis.ucrop.CropGridCornerColor", getResources().getColor(fr.a.f24224d)));
+        this.f20891x.setCropGridStrokeWidth(intent.getIntExtra("com.yalantis.ucrop.CropGridStrokeWidth", getResources().getDimensionPixelSize(fr.b.f24234b)));
         float floatExtra = intent.getFloatExtra("com.yalantis.ucrop.AspectRatioX", -1.0f);
         float floatExtra2 = intent.getFloatExtra("com.yalantis.ucrop.AspectRatioY", -1.0f);
         int intExtra = intent.getIntExtra("com.yalantis.ucrop.AspectRatioSelectedByDefault", 0);
         ArrayList parcelableArrayListExtra = intent.getParcelableArrayListExtra("com.yalantis.ucrop.AspectRatioOptions");
         float f10 = 0.0f;
         if (floatExtra >= 0.0f && floatExtra2 >= 0.0f) {
-            ViewGroup viewGroup = this.f20891y;
+            ViewGroup viewGroup = this.f20892y;
             if (viewGroup != null) {
                 viewGroup.setVisibility(8);
             }
             float f11 = floatExtra / floatExtra2;
-            GestureCropImageView gestureCropImageView = this.f20889w;
+            GestureCropImageView gestureCropImageView = this.f20890w;
             if (!Float.isNaN(f11)) {
                 f10 = f11;
             }
             gestureCropImageView.setTargetAspectRatio(f10);
         } else if (parcelableArrayListExtra != null && intExtra < parcelableArrayListExtra.size()) {
             float b10 = ((hr.a) parcelableArrayListExtra.get(intExtra)).b() / ((hr.a) parcelableArrayListExtra.get(intExtra)).c();
-            GestureCropImageView gestureCropImageView2 = this.f20889w;
+            GestureCropImageView gestureCropImageView2 = this.f20890w;
             if (!Float.isNaN(b10)) {
                 f10 = b10;
             }
             gestureCropImageView2.setTargetAspectRatio(f10);
         } else {
-            this.f20889w.setTargetAspectRatio(0.0f);
+            this.f20890w.setTargetAspectRatio(0.0f);
         }
         int intExtra2 = intent.getIntExtra("com.yalantis.ucrop.MaxSizeX", 0);
         int intExtra3 = intent.getIntExtra("com.yalantis.ucrop.MaxSizeY", 0);
         if (intExtra2 > 0 && intExtra3 > 0) {
-            this.f20889w.setMaxResultImageSizeX(intExtra2);
-            this.f20889w.setMaxResultImageSizeY(intExtra3);
+            this.f20890w.setMaxResultImageSizeX(intExtra2);
+            this.f20890w.setMaxResultImageSizeY(intExtra3);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void R() {
-        GestureCropImageView gestureCropImageView = this.f20889w;
+        GestureCropImageView gestureCropImageView = this.f20890w;
         gestureCropImageView.x(-gestureCropImageView.getCurrentAngle());
-        this.f20889w.z();
+        this.f20890w.z();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void S(int i10) {
-        this.f20889w.x(i10);
-        this.f20889w.z();
+        this.f20890w.x(i10);
+        this.f20890w.z();
     }
 
     private void T(int i10) {
         boolean z10;
-        GestureCropImageView gestureCropImageView = this.f20889w;
+        GestureCropImageView gestureCropImageView = this.f20890w;
         int i11 = this.L[i10];
         boolean z11 = false;
         if (i11 != 3 && i11 != 1) {
@@ -429,7 +429,7 @@ public class UCropActivity extends AppCompatActivity {
             z10 = true;
         }
         gestureCropImageView.setScaleEnabled(z10);
-        GestureCropImageView gestureCropImageView2 = this.f20889w;
+        GestureCropImageView gestureCropImageView2 = this.f20890w;
         int i12 = this.L[i10];
         if (i12 == 3 || i12 == 2) {
             z11 = true;
@@ -458,7 +458,7 @@ public class UCropActivity extends AppCompatActivity {
         Q(intent);
         if (uri != null && uri2 != null) {
             try {
-                this.f20889w.n(uri, uri2);
+                this.f20890w.n(uri, uri2);
                 return;
             } catch (Exception e10) {
                 Y(e10);
@@ -466,17 +466,17 @@ public class UCropActivity extends AppCompatActivity {
                 return;
             }
         }
-        Y(new NullPointerException(getString(fr.g.f24276a)));
+        Y(new NullPointerException(getString(fr.g.f24277a)));
         finish();
     }
 
     private void X() {
-        if (this.f20886t) {
-            if (this.f20891y.getVisibility() == 0) {
-                c0(fr.d.f24258n);
+        if (this.f20887t) {
+            if (this.f20892y.getVisibility() == 0) {
+                c0(fr.d.f24259n);
                 return;
             } else {
-                c0(fr.d.f24260p);
+                c0(fr.d.f24261p);
                 return;
             }
         }
@@ -505,25 +505,25 @@ public class UCropActivity extends AppCompatActivity {
         boolean z12;
         int i11;
         int i12;
-        if (!this.f20886t) {
+        if (!this.f20887t) {
             return;
         }
-        ViewGroup viewGroup = this.f20891y;
-        if (i10 == fr.d.f24258n) {
+        ViewGroup viewGroup = this.f20892y;
+        if (i10 == fr.d.f24259n) {
             z10 = true;
         } else {
             z10 = false;
         }
         viewGroup.setSelected(z10);
-        ViewGroup viewGroup2 = this.f20892z;
-        if (i10 == fr.d.f24259o) {
+        ViewGroup viewGroup2 = this.f20893z;
+        if (i10 == fr.d.f24260o) {
             z11 = true;
         } else {
             z11 = false;
         }
         viewGroup2.setSelected(z11);
         ViewGroup viewGroup3 = this.A;
-        if (i10 == fr.d.f24260p) {
+        if (i10 == fr.d.f24261p) {
             z12 = true;
         } else {
             z12 = false;
@@ -531,28 +531,28 @@ public class UCropActivity extends AppCompatActivity {
         viewGroup3.setSelected(z12);
         ViewGroup viewGroup4 = this.B;
         int i13 = 8;
-        if (i10 == fr.d.f24258n) {
+        if (i10 == fr.d.f24259n) {
             i11 = 0;
         } else {
             i11 = 8;
         }
         viewGroup4.setVisibility(i11);
         ViewGroup viewGroup5 = this.C;
-        if (i10 == fr.d.f24259o) {
+        if (i10 == fr.d.f24260o) {
             i12 = 0;
         } else {
             i12 = 8;
         }
         viewGroup5.setVisibility(i12);
         ViewGroup viewGroup6 = this.D;
-        if (i10 == fr.d.f24260p) {
+        if (i10 == fr.d.f24261p) {
             i13 = 0;
         }
         viewGroup6.setVisibility(i13);
         N(i10);
-        if (i10 == fr.d.f24260p) {
+        if (i10 == fr.d.f24261p) {
             T(0);
-        } else if (i10 == fr.d.f24259o) {
+        } else if (i10 == fr.d.f24260o) {
             T(1);
         } else {
             T(2);
@@ -560,20 +560,20 @@ public class UCropActivity extends AppCompatActivity {
     }
 
     private void d0() {
-        Toolbar toolbar = (Toolbar) findViewById(fr.d.f24264t);
+        Toolbar toolbar = (Toolbar) findViewById(fr.d.f24265t);
         i0.x0(toolbar, new w() { // from class: fr.j
             @Override // androidx.core.view.w
             public final WindowInsetsCompat a(View view, WindowInsetsCompat windowInsetsCompat) {
                 return UCropActivity.A(view, windowInsetsCompat);
             }
         });
-        toolbar.setBackgroundColor(this.f20879e);
-        toolbar.setTitleTextColor(this.f20881o);
-        TextView textView = (TextView) toolbar.findViewById(fr.d.f24265u);
-        textView.setTextColor(this.f20881o);
-        textView.setText(this.f20878d);
-        Drawable mutate = androidx.core.content.a.e(this, this.f20883q).mutate();
-        mutate.setColorFilter(this.f20881o, PorterDuff.Mode.SRC_ATOP);
+        toolbar.setBackgroundColor(this.f20880e);
+        toolbar.setTitleTextColor(this.f20882o);
+        TextView textView = (TextView) toolbar.findViewById(fr.d.f24266u);
+        textView.setTextColor(this.f20882o);
+        textView.setText(this.f20879d);
+        Drawable mutate = androidx.core.content.a.e(this, this.f20884q).mutate();
+        mutate.setColorFilter(this.f20882o, PorterDuff.Mode.SRC_ATOP);
         toolbar.setNavigationIcon(mutate);
         setSupportActionBar(toolbar);
         ActionBar supportActionBar = getSupportActionBar();
@@ -589,20 +589,20 @@ public class UCropActivity extends AppCompatActivity {
             parcelableArrayListExtra = new ArrayList();
             parcelableArrayListExtra.add(new hr.a(null, 1.0f, 1.0f));
             parcelableArrayListExtra.add(new hr.a(null, 3.0f, 4.0f));
-            parcelableArrayListExtra.add(new hr.a(getString(fr.g.f24278c).toUpperCase(), 0.0f, 0.0f));
+            parcelableArrayListExtra.add(new hr.a(getString(fr.g.f24279c).toUpperCase(), 0.0f, 0.0f));
             parcelableArrayListExtra.add(new hr.a(null, 3.0f, 2.0f));
             parcelableArrayListExtra.add(new hr.a(null, 16.0f, 9.0f));
             intExtra = 2;
         }
-        LinearLayout linearLayout = (LinearLayout) findViewById(fr.d.f24251g);
+        LinearLayout linearLayout = (LinearLayout) findViewById(fr.d.f24252g);
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(0, -1);
         layoutParams.weight = 1.0f;
         Iterator it = parcelableArrayListExtra.iterator();
         while (it.hasNext()) {
-            FrameLayout frameLayout = (FrameLayout) getLayoutInflater().inflate(fr.e.f24272b, (ViewGroup) null);
+            FrameLayout frameLayout = (FrameLayout) getLayoutInflater().inflate(fr.e.f24273b, (ViewGroup) null);
             frameLayout.setLayoutParams(layoutParams);
             AspectRatioTextView aspectRatioTextView = (AspectRatioTextView) frameLayout.getChildAt(0);
-            aspectRatioTextView.setActiveColor(this.f20880i);
+            aspectRatioTextView.setActiveColor(this.f20881i);
             aspectRatioTextView.setAspectRatio((hr.a) it.next());
             linearLayout.addView(frameLayout);
             this.E.add(frameLayout);
@@ -614,28 +614,28 @@ public class UCropActivity extends AppCompatActivity {
     }
 
     private void f0() {
-        this.F = (TextView) findViewById(fr.d.f24262r);
-        ((HorizontalProgressWheelView) findViewById(fr.d.f24256l)).setScrollingListener(new c());
-        ((HorizontalProgressWheelView) findViewById(fr.d.f24256l)).setMiddleLineColor(this.f20880i);
+        this.F = (TextView) findViewById(fr.d.f24263r);
+        ((HorizontalProgressWheelView) findViewById(fr.d.f24257l)).setScrollingListener(new c());
+        ((HorizontalProgressWheelView) findViewById(fr.d.f24257l)).setMiddleLineColor(this.f20881i);
         findViewById(fr.d.A).setOnClickListener(new d());
         findViewById(fr.d.B).setOnClickListener(new e());
-        V(this.f20880i);
+        V(this.f20881i);
     }
 
     private void g0() {
-        this.G = (TextView) findViewById(fr.d.f24263s);
-        ((HorizontalProgressWheelView) findViewById(fr.d.f24257m)).setScrollingListener(new f());
-        ((HorizontalProgressWheelView) findViewById(fr.d.f24257m)).setMiddleLineColor(this.f20880i);
-        b0(this.f20880i);
+        this.G = (TextView) findViewById(fr.d.f24264s);
+        ((HorizontalProgressWheelView) findViewById(fr.d.f24258m)).setScrollingListener(new f());
+        ((HorizontalProgressWheelView) findViewById(fr.d.f24258m)).setMiddleLineColor(this.f20881i);
+        b0(this.f20881i);
     }
 
     private void h0() {
-        ImageView imageView = (ImageView) findViewById(fr.d.f24250f);
-        ImageView imageView2 = (ImageView) findViewById(fr.d.f24249e);
-        ImageView imageView3 = (ImageView) findViewById(fr.d.f24248d);
-        imageView.setImageDrawable(new i(imageView.getDrawable(), this.f20880i));
-        imageView2.setImageDrawable(new i(imageView2.getDrawable(), this.f20880i));
-        imageView3.setImageDrawable(new i(imageView3.getDrawable(), this.f20880i));
+        ImageView imageView = (ImageView) findViewById(fr.d.f24251f);
+        ImageView imageView2 = (ImageView) findViewById(fr.d.f24250e);
+        ImageView imageView3 = (ImageView) findViewById(fr.d.f24249d);
+        imageView.setImageDrawable(new i(imageView.getDrawable(), this.f20881i));
+        imageView2.setImageDrawable(new i(imageView2.getDrawable(), this.f20881i));
+        imageView3.setImageDrawable(new i(imageView3.getDrawable(), this.f20881i));
     }
 
     private void i0(Intent intent) {
@@ -657,43 +657,43 @@ public class UCropActivity extends AppCompatActivity {
     }
 
     private void j0(Intent intent) {
-        this.f20879e = intent.getIntExtra("com.yalantis.ucrop.ToolbarColor", androidx.core.content.a.c(this, fr.a.f24227h));
-        this.f20880i = intent.getIntExtra("com.yalantis.ucrop.UcropColorControlsWidgetActive", androidx.core.content.a.c(this, fr.a.f24220a));
-        this.f20881o = intent.getIntExtra("com.yalantis.ucrop.UcropToolbarWidgetColor", androidx.core.content.a.c(this, fr.a.f24228i));
-        this.f20883q = intent.getIntExtra("com.yalantis.ucrop.UcropToolbarCancelDrawable", fr.c.f24243a);
-        this.f20884r = intent.getIntExtra("com.yalantis.ucrop.UcropToolbarCropDrawable", fr.c.f24244b);
+        this.f20880e = intent.getIntExtra("com.yalantis.ucrop.ToolbarColor", androidx.core.content.a.c(this, fr.a.f24228h));
+        this.f20881i = intent.getIntExtra("com.yalantis.ucrop.UcropColorControlsWidgetActive", androidx.core.content.a.c(this, fr.a.f24221a));
+        this.f20882o = intent.getIntExtra("com.yalantis.ucrop.UcropToolbarWidgetColor", androidx.core.content.a.c(this, fr.a.f24229i));
+        this.f20884q = intent.getIntExtra("com.yalantis.ucrop.UcropToolbarCancelDrawable", fr.c.f24244a);
+        this.f20885r = intent.getIntExtra("com.yalantis.ucrop.UcropToolbarCropDrawable", fr.c.f24245b);
         String stringExtra = intent.getStringExtra("com.yalantis.ucrop.UcropToolbarTitleText");
-        this.f20878d = stringExtra;
+        this.f20879d = stringExtra;
         if (stringExtra == null) {
-            stringExtra = getResources().getString(fr.g.f24277b);
+            stringExtra = getResources().getString(fr.g.f24278b);
         }
-        this.f20878d = stringExtra;
-        this.f20885s = intent.getIntExtra("com.yalantis.ucrop.UcropLogoColor", androidx.core.content.a.c(this, fr.a.f24225f));
-        this.f20886t = !intent.getBooleanExtra("com.yalantis.ucrop.HideBottomControls", false);
-        this.f20882p = intent.getIntExtra("com.yalantis.ucrop.UcropRootViewBackgroundColor", androidx.core.content.a.c(this, fr.a.f24221b));
+        this.f20879d = stringExtra;
+        this.f20886s = intent.getIntExtra("com.yalantis.ucrop.UcropLogoColor", androidx.core.content.a.c(this, fr.a.f24226f));
+        this.f20887t = !intent.getBooleanExtra("com.yalantis.ucrop.HideBottomControls", false);
+        this.f20883p = intent.getIntExtra("com.yalantis.ucrop.UcropRootViewBackgroundColor", androidx.core.content.a.c(this, fr.a.f24222b));
         d0();
         P();
-        if (this.f20886t) {
-            ViewGroup viewGroup = (ViewGroup) ((ViewGroup) findViewById(fr.d.f24268x)).findViewById(fr.d.f24245a);
+        if (this.f20887t) {
+            ViewGroup viewGroup = (ViewGroup) ((ViewGroup) findViewById(fr.d.f24269x)).findViewById(fr.d.f24246a);
             viewGroup.setVisibility(0);
-            LayoutInflater.from(this).inflate(fr.e.f24273c, viewGroup, true);
+            LayoutInflater.from(this).inflate(fr.e.f24274c, viewGroup, true);
             androidx.transition.a aVar = new androidx.transition.a();
             this.I = aVar;
             aVar.o0(50L);
-            ViewGroup viewGroup2 = (ViewGroup) findViewById(fr.d.f24258n);
-            this.f20891y = viewGroup2;
+            ViewGroup viewGroup2 = (ViewGroup) findViewById(fr.d.f24259n);
+            this.f20892y = viewGroup2;
             viewGroup2.setOnClickListener(this.N);
-            ViewGroup viewGroup3 = (ViewGroup) findViewById(fr.d.f24259o);
-            this.f20892z = viewGroup3;
+            ViewGroup viewGroup3 = (ViewGroup) findViewById(fr.d.f24260o);
+            this.f20893z = viewGroup3;
             viewGroup3.setOnClickListener(this.N);
-            ViewGroup viewGroup4 = (ViewGroup) findViewById(fr.d.f24260p);
+            ViewGroup viewGroup4 = (ViewGroup) findViewById(fr.d.f24261p);
             this.A = viewGroup4;
             viewGroup4.setOnClickListener(this.N);
-            this.B = (ViewGroup) findViewById(fr.d.f24251g);
-            this.C = (ViewGroup) findViewById(fr.d.f24252h);
-            this.D = (ViewGroup) findViewById(fr.d.f24253i);
-            View findViewById = findViewById(fr.d.f24245a);
-            final int dimensionPixelSize = getResources().getDimensionPixelSize(fr.b.f24238g);
+            this.B = (ViewGroup) findViewById(fr.d.f24252g);
+            this.C = (ViewGroup) findViewById(fr.d.f24253h);
+            this.D = (ViewGroup) findViewById(fr.d.f24254i);
+            View findViewById = findViewById(fr.d.f24246a);
+            final int dimensionPixelSize = getResources().getDimensionPixelSize(fr.b.f24239g);
             i0.x0(findViewById.findViewById(fr.d.C), new w() { // from class: fr.i
                 @Override // androidx.core.view.w
                 public final WindowInsetsCompat a(View view, WindowInsetsCompat windowInsetsCompat) {
@@ -709,9 +709,9 @@ public class UCropActivity extends AppCompatActivity {
 
     protected void O() {
         this.H.setClickable(true);
-        this.f20887u = true;
+        this.f20888u = true;
         supportInvalidateOptionsMenu();
-        this.f20889w.u(this.J, this.K, new h());
+        this.f20890w.u(this.J, this.K, new h());
     }
 
     protected void Y(Throwable th2) {
@@ -727,7 +727,7 @@ public class UCropActivity extends AppCompatActivity {
         super.onCreate(bundle);
         Intent intent = getIntent();
         i0(intent);
-        setContentView(fr.e.f24271a);
+        setContentView(fr.e.f24272a);
         j0(intent);
         W(intent);
         X();
@@ -736,24 +736,24 @@ public class UCropActivity extends AppCompatActivity {
 
     @Override // android.app.Activity
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(fr.f.f24275a, menu);
-        MenuItem findItem = menu.findItem(fr.d.f24255k);
+        getMenuInflater().inflate(fr.f.f24276a, menu);
+        MenuItem findItem = menu.findItem(fr.d.f24256k);
         Drawable icon = findItem.getIcon();
         if (icon != null) {
             try {
                 icon.mutate();
-                icon.setColorFilter(this.f20881o, PorterDuff.Mode.SRC_ATOP);
+                icon.setColorFilter(this.f20882o, PorterDuff.Mode.SRC_ATOP);
                 findItem.setIcon(icon);
             } catch (IllegalStateException e10) {
-                Log.i("UCropActivity", String.format("%s - %s", e10.getMessage(), getString(fr.g.f24279d)));
+                Log.i("UCropActivity", String.format("%s - %s", e10.getMessage(), getString(fr.g.f24280d)));
             }
             ((Animatable) findItem.getIcon()).start();
         }
-        MenuItem findItem2 = menu.findItem(fr.d.f24254j);
-        Drawable e11 = androidx.core.content.a.e(this, this.f20884r);
+        MenuItem findItem2 = menu.findItem(fr.d.f24255j);
+        Drawable e11 = androidx.core.content.a.e(this, this.f20885r);
         if (e11 != null) {
             e11.mutate();
-            e11.setColorFilter(this.f20881o, PorterDuff.Mode.SRC_ATOP);
+            e11.setColorFilter(this.f20882o, PorterDuff.Mode.SRC_ATOP);
             findItem2.setIcon(e11);
             return true;
         }
@@ -762,7 +762,7 @@ public class UCropActivity extends AppCompatActivity {
 
     @Override // android.app.Activity
     public boolean onOptionsItemSelected(MenuItem menuItem) {
-        if (menuItem.getItemId() == fr.d.f24254j) {
+        if (menuItem.getItemId() == fr.d.f24255j) {
             O();
             return true;
         } else if (menuItem.getItemId() == 16908332) {
@@ -775,8 +775,8 @@ public class UCropActivity extends AppCompatActivity {
 
     @Override // android.app.Activity
     public boolean onPrepareOptionsMenu(Menu menu) {
-        menu.findItem(fr.d.f24254j).setVisible(!this.f20887u);
-        menu.findItem(fr.d.f24255k).setVisible(this.f20887u);
+        menu.findItem(fr.d.f24255j).setVisible(!this.f20888u);
+        menu.findItem(fr.d.f24256k).setVisible(this.f20888u);
         return super.onPrepareOptionsMenu(menu);
     }
 
@@ -784,7 +784,7 @@ public class UCropActivity extends AppCompatActivity {
     @Override // androidx.appcompat.app.AppCompatActivity, androidx.fragment.app.FragmentActivity, android.app.Activity
     public void onStop() {
         super.onStop();
-        GestureCropImageView gestureCropImageView = this.f20889w;
+        GestureCropImageView gestureCropImageView = this.f20890w;
         if (gestureCropImageView != null) {
             gestureCropImageView.t();
         }

@@ -5,7 +5,7 @@ import bj.c;
 final class t7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final t7 f39676a = new t7();
+    static final t7 f39677a = new t7();
 
     static {
         c.b a10 = bj.c.a("renderer");

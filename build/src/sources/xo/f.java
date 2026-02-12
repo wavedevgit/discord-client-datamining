@@ -17,50 +17,50 @@ import to.n4;
 public final class f implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CoordinatorLayout f55006a;
+    private final CoordinatorLayout f55007a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final Barrier f55007b;
+    public final Barrier f55008b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final ConstraintLayout f55008c;
+    public final ConstraintLayout f55009c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final ImageView f55009d;
+    public final ImageView f55010d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final View f55010e;
+    public final View f55011e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final Pi2NavigationBar f55011f;
+    public final Pi2NavigationBar f55012f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final RecyclerView f55012g;
+    public final RecyclerView f55013g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final TextView f55013h;
+    public final TextView f55014h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final TextView f55014i;
+    public final TextView f55015i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final TextView f55015j;
+    public final TextView f55016j;
 
     /* renamed from: k  reason: collision with root package name */
-    public final TextView f55016k;
+    public final TextView f55017k;
 
     private f(CoordinatorLayout coordinatorLayout, Barrier barrier, ConstraintLayout constraintLayout, ImageView imageView, View view, Pi2NavigationBar pi2NavigationBar, RecyclerView recyclerView, TextView textView, TextView textView2, TextView textView3, TextView textView4) {
-        this.f55006a = coordinatorLayout;
-        this.f55007b = barrier;
-        this.f55008c = constraintLayout;
-        this.f55009d = imageView;
-        this.f55010e = view;
-        this.f55011f = pi2NavigationBar;
-        this.f55012g = recyclerView;
-        this.f55013h = textView;
-        this.f55014i = textView2;
-        this.f55015j = textView3;
-        this.f55016k = textView4;
+        this.f55007a = coordinatorLayout;
+        this.f55008b = barrier;
+        this.f55009c = constraintLayout;
+        this.f55010d = imageView;
+        this.f55011e = view;
+        this.f55012f = pi2NavigationBar;
+        this.f55013g = recyclerView;
+        this.f55014h = textView;
+        this.f55015i = textView2;
+        this.f55016j = textView3;
+        this.f55017k = textView4;
     }
 
     public static f a(View view) {
@@ -77,13 +77,13 @@ public final class f implements ViewBinding {
                     i10 = m4.Y;
                     Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
                     if (pi2NavigationBar != null) {
-                        i10 = m4.f49399q0;
+                        i10 = m4.f49400q0;
                         RecyclerView recyclerView = (RecyclerView) e4.a.a(view, i10);
                         if (recyclerView != null) {
-                            i10 = m4.f49415y0;
+                            i10 = m4.f49416y0;
                             TextView textView = (TextView) e4.a.a(view, i10);
                             if (textView != null) {
-                                i10 = m4.f49417z0;
+                                i10 = m4.f49418z0;
                                 TextView textView2 = (TextView) e4.a.a(view, i10);
                                 if (textView2 != null) {
                                     i10 = m4.A0;
@@ -106,7 +106,7 @@ public final class f implements ViewBinding {
     }
 
     public static f c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n4.f49541f, viewGroup, false);
+        View inflate = layoutInflater.inflate(n4.f49542f, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -116,6 +116,6 @@ public final class f implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public CoordinatorLayout getRoot() {
-        return this.f55006a;
+        return this.f55007a;
     }
 }

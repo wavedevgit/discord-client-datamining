@@ -36,7 +36,7 @@ public /* synthetic */ class OnPipModeChangedEvent$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{h.f49996a};
+        return new KSerializer[]{h.f49997a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

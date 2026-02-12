@@ -28,40 +28,40 @@ import xi.w;
 public class e {
 
     /* renamed from: k  reason: collision with root package name */
-    private static final Object f50752k = new Object();
+    private static final Object f50753k = new Object();
 
     /* renamed from: l  reason: collision with root package name */
-    static final Map f50753l = new u0.a();
+    static final Map f50754l = new u0.a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f50754a;
+    private final Context f50755a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f50755b;
+    private final String f50756b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final k f50756c;
+    private final k f50757c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final n f50757d;
+    private final n f50758d;
 
     /* renamed from: g  reason: collision with root package name */
-    private final w f50760g;
+    private final w f50761g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final ij.b f50761h;
+    private final ij.b f50762h;
 
     /* renamed from: e  reason: collision with root package name */
-    private final AtomicBoolean f50758e = new AtomicBoolean(false);
+    private final AtomicBoolean f50759e = new AtomicBoolean(false);
 
     /* renamed from: f  reason: collision with root package name */
-    private final AtomicBoolean f50759f = new AtomicBoolean();
+    private final AtomicBoolean f50760f = new AtomicBoolean();
 
     /* renamed from: i  reason: collision with root package name */
-    private final List f50762i = new CopyOnWriteArrayList();
+    private final List f50763i = new CopyOnWriteArrayList();
 
     /* renamed from: j  reason: collision with root package name */
-    private final List f50763j = new CopyOnWriteArrayList();
+    private final List f50764j = new CopyOnWriteArrayList();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -73,7 +73,7 @@ public class e {
     public static class b implements c.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private static AtomicReference f50764a = new AtomicReference();
+        private static AtomicReference f50765a = new AtomicReference();
 
         private b() {
         }
@@ -82,9 +82,9 @@ public class e {
         public static void c(Context context) {
             if (com.google.android.gms.common.util.k.a() && (context.getApplicationContext() instanceof Application)) {
                 Application application = (Application) context.getApplicationContext();
-                if (f50764a.get() == null) {
+                if (f50765a.get() == null) {
                     b bVar = new b();
-                    if (p0.d.a(f50764a, null, bVar)) {
+                    if (p0.d.a(f50765a, null, bVar)) {
                         gf.c.c(application);
                         gf.c.b().a(bVar);
                     }
@@ -94,12 +94,12 @@ public class e {
 
         @Override // gf.c.a
         public void a(boolean z10) {
-            synchronized (e.f50752k) {
+            synchronized (e.f50753k) {
                 try {
-                    Iterator it = new ArrayList(e.f50753l.values()).iterator();
+                    Iterator it = new ArrayList(e.f50754l.values()).iterator();
                     while (it.hasNext()) {
                         e eVar = (e) it.next();
-                        if (eVar.f50758e.get()) {
+                        if (eVar.f50759e.get()) {
                             eVar.v(z10);
                         }
                     }
@@ -115,34 +115,34 @@ public class e {
     public static class c extends BroadcastReceiver {
 
         /* renamed from: b  reason: collision with root package name */
-        private static AtomicReference f50765b = new AtomicReference();
+        private static AtomicReference f50766b = new AtomicReference();
 
         /* renamed from: a  reason: collision with root package name */
-        private final Context f50766a;
+        private final Context f50767a;
 
         public c(Context context) {
-            this.f50766a = context;
+            this.f50767a = context;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static void b(Context context) {
-            if (f50765b.get() == null) {
+            if (f50766b.get() == null) {
                 c cVar = new c(context);
-                if (p0.d.a(f50765b, null, cVar)) {
+                if (p0.d.a(f50766b, null, cVar)) {
                     context.registerReceiver(cVar, new IntentFilter("android.intent.action.USER_UNLOCKED"));
                 }
             }
         }
 
         public void c() {
-            this.f50766a.unregisterReceiver(this);
+            this.f50767a.unregisterReceiver(this);
         }
 
         @Override // android.content.BroadcastReceiver
         public void onReceive(Context context, Intent intent) {
-            synchronized (e.f50752k) {
+            synchronized (e.f50753k) {
                 try {
-                    for (e eVar : e.f50753l.values()) {
+                    for (e eVar : e.f50754l.values()) {
                         eVar.o();
                     }
                 } catch (Throwable th2) {
@@ -154,9 +154,9 @@ public class e {
     }
 
     protected e(final Context context, String str, k kVar) {
-        this.f50754a = (Context) q.l(context);
-        this.f50755b = q.f(str);
-        this.f50756c = (k) q.l(kVar);
+        this.f50755a = (Context) q.l(context);
+        this.f50756b = q.f(str);
+        this.f50757c = (k) q.l(kVar);
         l b10 = FirebaseInitProvider.b();
         rj.c.b("Firebase");
         rj.c.b("ComponentDiscovery");
@@ -168,15 +168,15 @@ public class e {
             f10.b(xi.c.q(b10, l.class, new Class[0]));
         }
         n e10 = f10.e();
-        this.f50757d = e10;
+        this.f50758d = e10;
         rj.c.a();
-        this.f50760g = new w(new ij.b() { // from class: ui.c
+        this.f50761g = new w(new ij.b() { // from class: ui.c
             @Override // ij.b
             public final Object get() {
                 return e.b(e.this, context);
             }
         });
-        this.f50761h = e10.g(gj.f.class);
+        this.f50762h = e10.g(gj.f.class);
         g(new a() { // from class: ui.d
             @Override // ui.e.a
             public final void a(boolean z10) {
@@ -188,27 +188,27 @@ public class e {
 
     public static /* synthetic */ void a(e eVar, boolean z10) {
         if (!z10) {
-            ((gj.f) eVar.f50761h.get()).h();
+            ((gj.f) eVar.f50762h.get()).h();
         } else {
             eVar.getClass();
         }
     }
 
     public static /* synthetic */ nj.a b(e eVar, Context context) {
-        return new nj.a(context, eVar.n(), (fj.c) eVar.f50757d.a(fj.c.class));
+        return new nj.a(context, eVar.n(), (fj.c) eVar.f50758d.a(fj.c.class));
     }
 
     private void h() {
-        q.o(!this.f50759f.get(), "FirebaseApp was deleted");
+        q.o(!this.f50760f.get(), "FirebaseApp was deleted");
     }
 
     public static e k() {
         e eVar;
-        synchronized (f50752k) {
+        synchronized (f50753k) {
             try {
-                eVar = (e) f50753l.get("[DEFAULT]");
+                eVar = (e) f50754l.get("[DEFAULT]");
                 if (eVar != null) {
-                    ((gj.f) eVar.f50761h.get()).h();
+                    ((gj.f) eVar.f50762h.get()).h();
                 } else {
                     throw new IllegalStateException("Default FirebaseApp is not initialized in this process " + com.google.android.gms.common.util.l.a() + ". Make sure to call FirebaseApp.initializeApp(Context) first.");
                 }
@@ -221,20 +221,20 @@ public class e {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void o() {
-        if (!w1.j.a(this.f50754a)) {
+        if (!w1.j.a(this.f50755a)) {
             Log.i("FirebaseApp", "Device in Direct Boot Mode: postponing initialization of Firebase APIs for app " + l());
-            c.b(this.f50754a);
+            c.b(this.f50755a);
             return;
         }
         Log.i("FirebaseApp", "Device unlocked: initializing all Firebase APIs for app " + l());
-        this.f50757d.n(t());
-        ((gj.f) this.f50761h.get()).h();
+        this.f50758d.n(t());
+        ((gj.f) this.f50762h.get()).h();
     }
 
     public static e p(Context context) {
-        synchronized (f50752k) {
+        synchronized (f50753k) {
             try {
-                if (f50753l.containsKey("[DEFAULT]")) {
+                if (f50754l.containsKey("[DEFAULT]")) {
                     return k();
                 }
                 k a10 = k.a(context);
@@ -260,8 +260,8 @@ public class e {
         if (context.getApplicationContext() != null) {
             context = context.getApplicationContext();
         }
-        synchronized (f50752k) {
-            Map map = f50753l;
+        synchronized (f50753k) {
+            Map map = f50754l;
             q.o(!map.containsKey(u10), "FirebaseApp name " + u10 + " already exists!");
             q.m(context, "Application context cannot be null.");
             eVar = new e(context, u10, kVar);
@@ -278,7 +278,7 @@ public class e {
     /* JADX INFO: Access modifiers changed from: private */
     public void v(boolean z10) {
         Log.d("FirebaseApp", "Notifying background state change listeners.");
-        for (a aVar : this.f50762i) {
+        for (a aVar : this.f50763i) {
             aVar.a(z10);
         }
     }
@@ -287,39 +287,39 @@ public class e {
         if (!(obj instanceof e)) {
             return false;
         }
-        return this.f50755b.equals(((e) obj).l());
+        return this.f50756b.equals(((e) obj).l());
     }
 
     public void g(a aVar) {
         h();
-        if (this.f50758e.get() && gf.c.b().d()) {
+        if (this.f50759e.get() && gf.c.b().d()) {
             aVar.a(true);
         }
-        this.f50762i.add(aVar);
+        this.f50763i.add(aVar);
     }
 
     public int hashCode() {
-        return this.f50755b.hashCode();
+        return this.f50756b.hashCode();
     }
 
     public Object i(Class cls) {
         h();
-        return this.f50757d.a(cls);
+        return this.f50758d.a(cls);
     }
 
     public Context j() {
         h();
-        return this.f50754a;
+        return this.f50755a;
     }
 
     public String l() {
         h();
-        return this.f50755b;
+        return this.f50756b;
     }
 
     public k m() {
         h();
-        return this.f50756c;
+        return this.f50757c;
     }
 
     public String n() {
@@ -328,7 +328,7 @@ public class e {
 
     public boolean s() {
         h();
-        return ((nj.a) this.f50760g.get()).b();
+        return ((nj.a) this.f50761g.get()).b();
     }
 
     public boolean t() {
@@ -336,6 +336,6 @@ public class e {
     }
 
     public String toString() {
-        return o.c(this).a(StackTraceHelper.NAME_KEY, this.f50755b).a("options", this.f50756c).toString();
+        return o.c(this).a(StackTraceHelper.NAME_KEY, this.f50756b).a("options", this.f50757c).toString();
     }
 }

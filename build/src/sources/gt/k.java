@@ -21,74 +21,74 @@ import ys.w1;
 public class k implements kotlinx.coroutines.d, d, l, w1 {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f25993q = AtomicReferenceFieldUpdater.newUpdater(k.class, Object.class, "state$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f25994q = AtomicReferenceFieldUpdater.newUpdater(k.class, Object.class, "state$volatile");
 
     /* renamed from: d  reason: collision with root package name */
-    private final CoroutineContext f25994d;
+    private final CoroutineContext f25995d;
 
     /* renamed from: e  reason: collision with root package name */
-    private List f25995e;
+    private List f25996e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Object f25996i;
+    private Object f25997i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f25997o;
+    private int f25998o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Object f25998p;
+    private Object f25999p;
     private volatile /* synthetic */ Object state$volatile;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final Object f25999a;
+        public final Object f26000a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Function3 f26000b;
+        private final Function3 f26001b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Function3 f26001c;
+        private final Function3 f26002c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final Object f26002d;
+        private final Object f26003d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Object f26003e;
+        private final Object f26004e;
 
         /* renamed from: f  reason: collision with root package name */
-        public final Function3 f26004f;
+        public final Function3 f26005f;
 
         /* renamed from: g  reason: collision with root package name */
-        public Object f26005g;
+        public Object f26006g;
 
         /* renamed from: h  reason: collision with root package name */
-        public int f26006h = -1;
+        public int f26007h = -1;
 
         public a(Object obj, Function3 function3, Function3 function32, Object obj2, Object obj3, Function3 function33) {
-            this.f25999a = obj;
-            this.f26000b = function3;
-            this.f26001c = function32;
-            this.f26002d = obj2;
-            this.f26003e = obj3;
-            this.f26004f = function33;
+            this.f26000a = obj;
+            this.f26001b = function3;
+            this.f26002c = function32;
+            this.f26003d = obj2;
+            this.f26004e = obj3;
+            this.f26005f = function33;
         }
 
         public final Function3 a(l lVar, Object obj) {
-            Function3 function3 = this.f26004f;
+            Function3 function3 = this.f26005f;
             if (function3 != null) {
-                return (Function3) function3.invoke(lVar, this.f26002d, obj);
+                return (Function3) function3.invoke(lVar, this.f26003d, obj);
             }
             return null;
         }
 
         public final void b() {
-            Object obj = this.f26005g;
+            Object obj = this.f26006g;
             k kVar = k.this;
             n0 n0Var = null;
             if (obj instanceof b0) {
-                ((b0) obj).s(this.f26006h, null, kVar.getContext());
+                ((b0) obj).s(this.f26007h, null, kVar.getContext());
                 return;
             }
             if (obj instanceof n0) {
@@ -100,8 +100,8 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
         }
 
         public final Object c(Object obj, Continuation continuation) {
-            Object obj2 = this.f26003e;
-            if (this.f26002d == m.i()) {
+            Object obj2 = this.f26004e;
+            if (this.f26003d == m.i()) {
                 Intrinsics.checkNotNull(obj2, "null cannot be cast to non-null type kotlin.coroutines.SuspendFunction0<R of kotlinx.coroutines.selects.SelectImplementation>");
                 return ((Function1) obj2).invoke(continuation);
             }
@@ -110,14 +110,14 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
         }
 
         public final Object d(Object obj) {
-            return this.f26001c.invoke(this.f25999a, this.f26002d, obj);
+            return this.f26002c.invoke(this.f26000a, this.f26003d, obj);
         }
 
         public final boolean e(k kVar) {
             e0 e0Var;
-            this.f26000b.invoke(this.f25999a, kVar, this.f26002d);
-            Object obj = kVar.f25998p;
-            e0Var = m.f26016e;
+            this.f26001b.invoke(this.f26000a, kVar, this.f26003d);
+            Object obj = kVar.f25999p;
+            e0Var = m.f26017e;
             if (obj == e0Var) {
                 return true;
             }
@@ -130,13 +130,13 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
     public static final class b extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f26008d;
+        Object f26009d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f26009e;
+        /* synthetic */ Object f26010e;
 
         /* renamed from: o  reason: collision with root package name */
-        int f26011o;
+        int f26012o;
 
         b(Continuation continuation) {
             super(continuation);
@@ -144,8 +144,8 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f26009e = obj;
-            this.f26011o |= Integer.MIN_VALUE;
+            this.f26010e = obj;
+            this.f26012o |= Integer.MIN_VALUE;
             return k.this.q(this);
         }
     }
@@ -153,24 +153,24 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
     public k(CoroutineContext coroutineContext) {
         e0 e0Var;
         e0 e0Var2;
-        this.f25994d = coroutineContext;
-        e0Var = m.f26013b;
+        this.f25995d = coroutineContext;
+        e0Var = m.f26014b;
         this.state$volatile = e0Var;
-        this.f25995e = new ArrayList(2);
-        this.f25997o = -1;
-        e0Var2 = m.f26016e;
-        this.f25998p = e0Var2;
+        this.f25996e = new ArrayList(2);
+        this.f25998o = -1;
+        e0Var2 = m.f26017e;
+        this.f25999p = e0Var2;
     }
 
     private final void k(Object obj) {
-        List list = this.f25995e;
+        List list = this.f25996e;
         Intrinsics.checkNotNull(list);
         List<a> list2 = list;
         if ((list2 instanceof Collection) && list2.isEmpty()) {
             return;
         }
         for (a aVar : list2) {
-            if (aVar.f25999a == obj) {
+            if (aVar.f26000a == obj) {
                 throw new IllegalStateException(("Cannot use select clauses on the same object: " + obj).toString());
             }
         }
@@ -179,7 +179,7 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
     private final void l(a aVar) {
         e0 e0Var;
         e0 e0Var2;
-        List<a> list = this.f25995e;
+        List<a> list = this.f25996e;
         if (list == null) {
             return;
         }
@@ -188,19 +188,19 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
                 aVar2.b();
             }
         }
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f25993q;
-        e0Var = m.f26014c;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f25994q;
+        e0Var = m.f26015c;
         atomicReferenceFieldUpdater.set(this, e0Var);
-        e0Var2 = m.f26016e;
-        this.f25998p = e0Var2;
-        this.f25995e = null;
+        e0Var2 = m.f26017e;
+        this.f25999p = e0Var2;
+        this.f25996e = null;
     }
 
     private final Object m(Continuation continuation) {
-        Object obj = f25993q.get(this);
+        Object obj = f25994q.get(this);
         Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlinx.coroutines.selects.SelectImplementation.ClauseData<R of kotlinx.coroutines.selects.SelectImplementation>");
         a aVar = (a) obj;
-        Object obj2 = this.f25998p;
+        Object obj2 = this.f25999p;
         l(aVar);
         return aVar.c(aVar.d(obj2), continuation);
     }
@@ -228,20 +228,20 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
             if (r0 == 0) goto L13
             r0 = r6
             gt.k$b r0 = (gt.k.b) r0
-            int r1 = r0.f26011o
+            int r1 = r0.f26012o
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f26011o = r1
+            r0.f26012o = r1
             goto L18
         L13:
             gt.k$b r0 = new gt.k$b
             r0.<init>(r6)
         L18:
-            java.lang.Object r6 = r0.f26009e
+            java.lang.Object r6 = r0.f26010e
             java.lang.Object r1 = gs.b.f()
-            int r2 = r0.f26011o
+            int r2 = r0.f26012o
             r3 = 2
             r4 = 1
             if (r2 == 0) goto L3c
@@ -255,14 +255,14 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
             r6.<init>(r0)
             throw r6
         L34:
-            java.lang.Object r2 = r0.f26008d
+            java.lang.Object r2 = r0.f26009d
             gt.k r2 = (gt.k) r2
             kotlin.c.b(r6)
             goto L4b
         L3c:
             kotlin.c.b(r6)
-            r0.f26008d = r5
-            r0.f26011o = r4
+            r0.f26009d = r5
+            r0.f26012o = r4
             java.lang.Object r6 = r5.z(r0)
             if (r6 != r1) goto L4a
             goto L56
@@ -270,8 +270,8 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
             r2 = r5
         L4b:
             r6 = 0
-            r0.f26008d = r6
-            r0.f26011o = r3
+            r0.f26009d = r6
+            r0.f26012o = r3
             java.lang.Object r6 = r2.m(r0)
             if (r6 != r1) goto L57
         L56:
@@ -283,7 +283,7 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
     }
 
     private final a r(Object obj) {
-        List list = this.f25995e;
+        List list = this.f25996e;
         Object obj2 = null;
         if (list == null) {
             return null;
@@ -294,7 +294,7 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
                 break;
             }
             Object next = it.next();
-            if (((a) next).f25999a == obj) {
+            if (((a) next).f26000a == obj) {
                 obj2 = next;
                 break;
             }
@@ -307,7 +307,7 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
     }
 
     private final boolean t() {
-        return f25993q.get(this) instanceof a;
+        return f25994q.get(this) instanceof a;
     }
 
     public static /* synthetic */ void v(k kVar, a aVar, boolean z10, int i10, Object obj) {
@@ -325,8 +325,8 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
     public final void w(Object obj) {
         a r10 = r(obj);
         Intrinsics.checkNotNull(r10);
-        r10.f26005g = null;
-        r10.f26006h = -1;
+        r10.f26006g = null;
+        r10.f26007h = -1;
         u(r10, true);
     }
 
@@ -337,19 +337,19 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
         e0 e0Var3;
         e0 e0Var4;
         while (true) {
-            Object obj3 = f25993q.get(this);
+            Object obj3 = f25994q.get(this);
             if (!(obj3 instanceof CancellableContinuation)) {
-                e0Var2 = m.f26014c;
+                e0Var2 = m.f26015c;
                 if (!Intrinsics.areEqual(obj3, e0Var2) && !(obj3 instanceof a)) {
-                    e0Var3 = m.f26015d;
+                    e0Var3 = m.f26016d;
                     if (!Intrinsics.areEqual(obj3, e0Var3)) {
-                        e0Var4 = m.f26013b;
+                        e0Var4 = m.f26014b;
                         if (Intrinsics.areEqual(obj3, e0Var4)) {
-                            if (androidx.concurrent.futures.b.a(f25993q, this, obj3, CollectionsKt.e(obj))) {
+                            if (androidx.concurrent.futures.b.a(f25994q, this, obj3, CollectionsKt.e(obj))) {
                                 return 1;
                             }
                         } else if (obj3 instanceof List) {
-                            if (androidx.concurrent.futures.b.a(f25993q, this, obj3, CollectionsKt.M0((Collection) obj3, obj))) {
+                            if (androidx.concurrent.futures.b.a(f25994q, this, obj3, CollectionsKt.M0((Collection) obj3, obj))) {
                                 return 1;
                             }
                         } else {
@@ -367,12 +367,12 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
                     continue;
                 } else {
                     Function3 a10 = r10.a(this, obj2);
-                    if (androidx.concurrent.futures.b.a(f25993q, this, obj3, r10)) {
-                        this.f25998p = obj2;
+                    if (androidx.concurrent.futures.b.a(f25994q, this, obj3, r10)) {
+                        this.f25999p = obj2;
                         j10 = m.j((CancellableContinuation) obj3, a10);
                         if (!j10) {
-                            e0Var = m.f26016e;
-                            this.f25998p = e0Var;
+                            e0Var = m.f26017e;
+                            this.f25999p = e0Var;
                             return 2;
                         }
                         return 0;
@@ -398,7 +398,7 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
         return r0;
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x0078, code lost:
-        return kotlin.Unit.f31987a;
+        return kotlin.Unit.f31988a;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -440,7 +440,7 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
         L4f:
             boolean r1 = r2 instanceof gt.k.a
             if (r1 == 0) goto L79
-            kotlin.Unit r1 = kotlin.Unit.f31987a
+            kotlin.Unit r1 = kotlin.Unit.f31988a
             gt.k$a r2 = (gt.k.a) r2
             java.lang.Object r3 = h(r5)
             kotlin.jvm.functions.Function3 r2 = r2.a(r5, r3)
@@ -455,7 +455,7 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
             if (r0 != r6) goto L76
             return r0
         L76:
-            kotlin.Unit r6 = kotlin.Unit.f31987a
+            kotlin.Unit r6 = kotlin.Unit.f31988a
             return r6
         L79:
             java.lang.IllegalStateException r6 = new java.lang.IllegalStateException
@@ -479,8 +479,8 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
 
     @Override // ys.w1
     public void b(b0 b0Var, int i10) {
-        this.f25996i = b0Var;
-        this.f25997o = i10;
+        this.f25997i = b0Var;
+        this.f25998o = i10;
     }
 
     @Override // kotlinx.coroutines.d
@@ -489,31 +489,31 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
         e0 e0Var;
         e0 e0Var2;
         e0 e0Var3;
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f25993q;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f25994q;
         do {
             obj = atomicReferenceFieldUpdater.get(this);
-            e0Var = m.f26014c;
+            e0Var = m.f26015c;
             if (obj != e0Var) {
-                e0Var2 = m.f26015d;
+                e0Var2 = m.f26016d;
             } else {
                 return;
             }
         } while (!androidx.concurrent.futures.b.a(atomicReferenceFieldUpdater, this, obj, e0Var2));
-        List<a> list = this.f25995e;
+        List<a> list = this.f25996e;
         if (list == null) {
             return;
         }
         for (a aVar : list) {
             aVar.b();
         }
-        e0Var3 = m.f26016e;
-        this.f25998p = e0Var3;
-        this.f25995e = null;
+        e0Var3 = m.f26017e;
+        this.f25999p = e0Var3;
+        this.f25996e = null;
     }
 
     @Override // gt.l
     public void d(Object obj) {
-        this.f25998p = obj;
+        this.f25999p = obj;
     }
 
     @Override // gt.l
@@ -531,11 +531,11 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
 
     @Override // gt.l
     public CoroutineContext getContext() {
-        return this.f25994d;
+        return this.f25995d;
     }
 
     public void n(n0 n0Var) {
-        this.f25996i = n0Var;
+        this.f25997i = n0Var;
     }
 
     public Object o(Continuation continuation) {
@@ -543,25 +543,25 @@ public class k implements kotlinx.coroutines.d, d, l, w1 {
     }
 
     public final void u(a aVar, boolean z10) {
-        if (f25993q.get(this) instanceof a) {
+        if (f25994q.get(this) instanceof a) {
             return;
         }
         if (!z10) {
-            k(aVar.f25999a);
+            k(aVar.f26000a);
         }
         if (aVar.e(this)) {
             if (!z10) {
-                List list = this.f25995e;
+                List list = this.f25996e;
                 Intrinsics.checkNotNull(list);
                 list.add(aVar);
             }
-            aVar.f26005g = this.f25996i;
-            aVar.f26006h = this.f25997o;
-            this.f25996i = null;
-            this.f25997o = -1;
+            aVar.f26006g = this.f25997i;
+            aVar.f26007h = this.f25998o;
+            this.f25997i = null;
+            this.f25998o = -1;
             return;
         }
-        f25993q.set(this, aVar);
+        f25994q.set(this, aVar);
     }
 
     public final o x(Object obj, Object obj2) {

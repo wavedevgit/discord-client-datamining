@@ -35,7 +35,7 @@ public final class Sticker implements Parcelable {
     private final GuildId guildId;
 
     /* renamed from: id  reason: collision with root package name */
-    private final long f10247id;
+    private final long f10248id;
     @NotNull
     private final String name;
     private final Long packId;
@@ -131,7 +131,7 @@ public final class Sticker implements Parcelable {
     /* renamed from: copy-fJhvhH4$default  reason: not valid java name */
     public static /* synthetic */ Sticker m1027copyfJhvhH4$default(Sticker sticker, long j10, String str, Long l10, GuildId guildId, String str2, StickerFormatType stickerFormatType, String str3, StickerType stickerType, Boolean bool, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            j10 = sticker.f10247id;
+            j10 = sticker.f10248id;
         }
         long j11 = j10;
         if ((i10 & 2) != 0) {
@@ -174,12 +174,12 @@ public final class Sticker implements Parcelable {
     }
 
     public static final /* synthetic */ void write$Self$notification_api_release(Sticker sticker, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        if (compositeEncoder.z(serialDescriptor, 0) || !StickerId.m1127equalsimpl0(sticker.f10247id, StickerId.m1124constructorimpl(0L))) {
-            compositeEncoder.k(serialDescriptor, 0, StickerId$$serializer.INSTANCE, StickerId.m1123boximpl(sticker.f10247id));
+        if (compositeEncoder.z(serialDescriptor, 0) || !StickerId.m1127equalsimpl0(sticker.f10248id, StickerId.m1124constructorimpl(0L))) {
+            compositeEncoder.k(serialDescriptor, 0, StickerId$$serializer.INSTANCE, StickerId.m1123boximpl(sticker.f10248id));
         }
         compositeEncoder.y(serialDescriptor, 1, sticker.name);
         if (compositeEncoder.z(serialDescriptor, 2) || sticker.packId != null) {
-            compositeEncoder.o(serialDescriptor, 2, z0.f50106a, sticker.packId);
+            compositeEncoder.o(serialDescriptor, 2, z0.f50107a, sticker.packId);
         }
         if (compositeEncoder.z(serialDescriptor, 3) || sticker.guildId != null) {
             compositeEncoder.o(serialDescriptor, 3, GuildId$$serializer.INSTANCE, sticker.guildId);
@@ -197,13 +197,13 @@ public final class Sticker implements Parcelable {
             compositeEncoder.k(serialDescriptor, 7, StickerType.Serializer.INSTANCE, sticker.type);
         }
         if (compositeEncoder.z(serialDescriptor, 8) || sticker.available != null) {
-            compositeEncoder.o(serialDescriptor, 8, h.f49996a, sticker.available);
+            compositeEncoder.o(serialDescriptor, 8, h.f49997a, sticker.available);
         }
     }
 
     /* renamed from: component1-e_wqtJY  reason: not valid java name */
     public final long m1030component1e_wqtJY() {
-        return this.f10247id;
+        return this.f10248id;
     }
 
     @NotNull
@@ -266,7 +266,7 @@ public final class Sticker implements Parcelable {
         }
         if (obj instanceof Sticker) {
             Sticker sticker = (Sticker) obj;
-            return StickerId.m1127equalsimpl0(this.f10247id, sticker.f10247id) && Intrinsics.areEqual(this.name, sticker.name) && Intrinsics.areEqual(this.packId, sticker.packId) && Intrinsics.areEqual(this.guildId, sticker.guildId) && Intrinsics.areEqual(this.description, sticker.description) && this.formatType == sticker.formatType && Intrinsics.areEqual(this.tags, sticker.tags) && this.type == sticker.type && Intrinsics.areEqual(this.available, sticker.available);
+            return StickerId.m1127equalsimpl0(this.f10248id, sticker.f10248id) && Intrinsics.areEqual(this.name, sticker.name) && Intrinsics.areEqual(this.packId, sticker.packId) && Intrinsics.areEqual(this.guildId, sticker.guildId) && Intrinsics.areEqual(this.description, sticker.description) && this.formatType == sticker.formatType && Intrinsics.areEqual(this.tags, sticker.tags) && this.type == sticker.type && Intrinsics.areEqual(this.available, sticker.available);
         }
         return false;
     }
@@ -310,7 +310,7 @@ public final class Sticker implements Parcelable {
 
     /* renamed from: getId-e_wqtJY  reason: not valid java name */
     public final long m1034getIde_wqtJY() {
-        return this.f10247id;
+        return this.f10248id;
     }
 
     @NotNull
@@ -333,7 +333,7 @@ public final class Sticker implements Parcelable {
     }
 
     public int hashCode() {
-        int m1128hashCodeimpl = ((StickerId.m1128hashCodeimpl(this.f10247id) * 31) + this.name.hashCode()) * 31;
+        int m1128hashCodeimpl = ((StickerId.m1128hashCodeimpl(this.f10248id) * 31) + this.name.hashCode()) * 31;
         Long l10 = this.packId;
         int hashCode = (m1128hashCodeimpl + (l10 == null ? 0 : l10.hashCode())) * 31;
         GuildId guildId = this.guildId;
@@ -352,7 +352,7 @@ public final class Sticker implements Parcelable {
 
     @NotNull
     public String toString() {
-        String m1130toStringimpl = StickerId.m1130toStringimpl(this.f10247id);
+        String m1130toStringimpl = StickerId.m1130toStringimpl(this.f10248id);
         String str = this.name;
         Long l10 = this.packId;
         GuildId guildId = this.guildId;
@@ -367,7 +367,7 @@ public final class Sticker implements Parcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(@NotNull Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeParcelable(StickerId.m1123boximpl(this.f10247id), i10);
+        dest.writeParcelable(StickerId.m1123boximpl(this.f10248id), i10);
         dest.writeString(this.name);
         Long l10 = this.packId;
         if (l10 == null) {
@@ -398,7 +398,7 @@ public final class Sticker implements Parcelable {
         if (2 != (i10 & 2)) {
             v1.b(i10, 2, Sticker$$serializer.INSTANCE.getDescriptor());
         }
-        this.f10247id = (i10 & 1) == 0 ? StickerId.m1124constructorimpl(0L) : stickerId.m1132unboximpl();
+        this.f10248id = (i10 & 1) == 0 ? StickerId.m1124constructorimpl(0L) : stickerId.m1132unboximpl();
         this.name = str;
         if ((i10 & 4) == 0) {
             this.packId = null;
@@ -443,7 +443,7 @@ public final class Sticker implements Parcelable {
         Intrinsics.checkNotNullParameter(formatType, "formatType");
         Intrinsics.checkNotNullParameter(tags, "tags");
         Intrinsics.checkNotNullParameter(type, "type");
-        this.f10247id = j10;
+        this.f10248id = j10;
         this.name = name;
         this.packId = l10;
         this.guildId = guildId;

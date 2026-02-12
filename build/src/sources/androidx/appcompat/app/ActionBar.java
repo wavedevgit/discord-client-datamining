@@ -83,8 +83,8 @@ public abstract class ActionBar {
         public a(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
             this.f1045a = 0;
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.j.f23511t);
-            this.f1045a = obtainStyledAttributes.getInt(f.j.f23516u, 0);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.j.f23512t);
+            this.f1045a = obtainStyledAttributes.getInt(f.j.f23517u, 0);
             obtainStyledAttributes.recycle();
         }
 

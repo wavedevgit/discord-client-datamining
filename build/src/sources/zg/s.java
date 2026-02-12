@@ -3,20 +3,20 @@ package zg;
 final class s extends a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m0 f56469a = new m0();
+    private final m0 f56470a = new m0();
 
     @Override // zg.a
     public final boolean a() {
-        return this.f56469a.o();
+        return this.f56470a.o();
     }
 
     @Override // zg.a
     public final a b(h hVar) {
-        this.f56469a.f(l.f56448a, new n(this, hVar));
+        this.f56470a.f(l.f56449a, new n(this, hVar));
         return this;
     }
 
     public final void c() {
-        this.f56469a.w(null);
+        this.f56470a.w(null);
     }
 }

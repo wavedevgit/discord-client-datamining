@@ -72,7 +72,7 @@ public final class PollResources {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new u0(n2.f50032a, PollStyleSet$$serializer.INSTANCE);
+        return new u0(n2.f50033a, PollStyleSet$$serializer.INSTANCE);
     }
 
     /* JADX WARN: Multi-variable type inference failed */

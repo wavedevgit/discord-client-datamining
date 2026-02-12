@@ -76,7 +76,7 @@ public final class UiComponentError_UiGovernmentIdNfcScanComponentErrorJsonAdapt
         }
         Constructor<UiComponentError.UiGovernmentIdNfcScanComponentError> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = UiComponentError.UiGovernmentIdNfcScanComponentError.class.getDeclaredConstructor(String.class, String.class, Map.class, Integer.TYPE, c.f21827c);
+            constructor = UiComponentError.UiGovernmentIdNfcScanComponentError.class.getDeclaredConstructor(String.class, String.class, Map.class, Integer.TYPE, c.f21828c);
             this.constructorRef = constructor;
         }
         if (str != null) {

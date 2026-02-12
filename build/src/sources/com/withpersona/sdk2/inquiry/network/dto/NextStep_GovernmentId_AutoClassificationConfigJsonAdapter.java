@@ -75,7 +75,7 @@ public final class NextStep_GovernmentId_AutoClassificationConfigJsonAdapter ext
         }
         Constructor<NextStep.GovernmentId.AutoClassificationConfig> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.GovernmentId.AutoClassificationConfig.class.getDeclaredConstructor(Boolean.class, Boolean.class, CapturePageConfig.class, Integer.TYPE, dn.c.f21827c);
+            constructor = NextStep.GovernmentId.AutoClassificationConfig.class.getDeclaredConstructor(Boolean.class, Boolean.class, CapturePageConfig.class, Integer.TYPE, dn.c.f21828c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

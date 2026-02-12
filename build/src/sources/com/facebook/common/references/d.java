@@ -12,7 +12,7 @@ public class d extends CloseableReference {
     /* renamed from: h */
     public CloseableReference clone() {
         j.i(z0());
-        return new d(this.f10559e, this.f10560i, this.f10561o);
+        return new d(this.f10560e, this.f10561i, this.f10562o);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

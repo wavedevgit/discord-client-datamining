@@ -13,10 +13,10 @@ public enum k implements bu.i {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient bu.p f37339d = new b();
+    private final transient bu.p f37340d = new b();
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient bu.p f37340e = new e();
+    private final transient bu.p f37341e = new e();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static class b extends cu.d implements t {
@@ -56,12 +56,12 @@ public enum k implements bu.i {
         @Override // cu.t
         /* renamed from: H */
         public k l(CharSequence charSequence, ParsePosition parsePosition, bu.d dVar) {
-            Locale locale = (Locale) dVar.b(cu.a.f21110c, Locale.ROOT);
-            boolean booleanValue = ((Boolean) dVar.b(cu.a.f21116i, Boolean.TRUE)).booleanValue();
-            boolean booleanValue2 = ((Boolean) dVar.b(cu.a.f21117j, Boolean.FALSE)).booleanValue();
+            Locale locale = (Locale) dVar.b(cu.a.f21111c, Locale.ROOT);
+            boolean booleanValue = ((Boolean) dVar.b(cu.a.f21117i, Boolean.TRUE)).booleanValue();
+            boolean booleanValue2 = ((Boolean) dVar.b(cu.a.f21118j, Boolean.FALSE)).booleanValue();
             int index = parsePosition.getIndex();
             k kVar = k.DANGI;
-            String d10 = kVar.d(locale, (v) dVar.b(cu.a.f21114g, v.WIDE));
+            String d10 = kVar.d(locale, (v) dVar.b(cu.a.f21115g, v.WIDE));
             int max = Math.max(Math.min(d10.length() + index, charSequence.length()), index);
             if (max > index) {
                 String charSequence2 = charSequence.subSequence(index, max).toString();
@@ -81,7 +81,7 @@ public enum k implements bu.i {
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // bu.e
         public z c(x xVar) {
-            if (!xVar.E(f0.f37450z)) {
+            if (!xVar.E(f0.f37451z)) {
                 return null;
             }
             return new c();
@@ -99,7 +99,7 @@ public enum k implements bu.i {
 
         @Override // cu.t
         public void w(bu.o oVar, Appendable appendable, bu.d dVar) {
-            appendable.append(k.DANGI.d((Locale) dVar.b(cu.a.f21110c, Locale.ROOT), (v) dVar.b(cu.a.f21114g, v.WIDE)));
+            appendable.append(k.DANGI.d((Locale) dVar.b(cu.a.f21111c, Locale.ROOT), (v) dVar.b(cu.a.f21115g, v.WIDE)));
         }
 
         private b() {
@@ -167,7 +167,7 @@ public enum k implements bu.i {
         }
 
         private int d(bu.q qVar) {
-            return ((f0) qVar.k(f0.f37450z)).f() + 2333;
+            return ((f0) qVar.k(f0.f37451z)).f() + 2333;
         }
 
         @Override // bu.z
@@ -220,8 +220,8 @@ public enum k implements bu.i {
             if (num != null) {
                 if (o(qVar, num)) {
                     int d10 = d(qVar);
-                    net.time4j.e eVar = f0.f37450z;
-                    return qVar.E(eVar, (f0) ((f0) qVar.k(eVar)).K(num.intValue() - d10, net.time4j.f.f37428o));
+                    net.time4j.e eVar = f0.f37451z;
+                    return qVar.E(eVar, (f0) ((f0) qVar.k(eVar)).K(num.intValue() - d10, net.time4j.f.f37429o));
                 }
                 throw new IllegalArgumentException("Invalid year of era: " + num);
             }
@@ -267,7 +267,7 @@ public enum k implements bu.i {
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // bu.e
         public z c(x xVar) {
-            if (!xVar.E(f0.f37450z)) {
+            if (!xVar.E(f0.f37451z)) {
                 return null;
             }
             return new d();
@@ -293,7 +293,7 @@ public enum k implements bu.i {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public bu.p a() {
-        return this.f37339d;
+        return this.f37340d;
     }
 
     public String d(Locale locale, v vVar) {
@@ -302,6 +302,6 @@ public enum k implements bu.i {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public bu.p e() {
-        return this.f37340e;
+        return this.f37341e;
     }
 }

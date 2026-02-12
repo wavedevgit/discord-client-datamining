@@ -6,25 +6,25 @@ import x.q;
 public final class c extends q.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f54026a;
+    private final int f54027a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Throwable f54027b;
+    private final Throwable f54028b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(int i10, Throwable th2) {
-        this.f54026a = i10;
-        this.f54027b = th2;
+        this.f54027a = i10;
+        this.f54028b = th2;
     }
 
     @Override // x.q.a
     public Throwable c() {
-        return this.f54027b;
+        return this.f54028b;
     }
 
     @Override // x.q.a
     public int d() {
-        return this.f54026a;
+        return this.f54027a;
     }
 
     public boolean equals(Object obj) {
@@ -34,7 +34,7 @@ public final class c extends q.a {
         }
         if (obj instanceof q.a) {
             q.a aVar = (q.a) obj;
-            if (this.f54026a == aVar.d() && ((th2 = this.f54027b) != null ? th2.equals(aVar.c()) : aVar.c() == null)) {
+            if (this.f54027a == aVar.d() && ((th2 = this.f54028b) != null ? th2.equals(aVar.c()) : aVar.c() == null)) {
                 return true;
             }
         }
@@ -43,8 +43,8 @@ public final class c extends q.a {
 
     public int hashCode() {
         int hashCode;
-        int i10 = (this.f54026a ^ 1000003) * 1000003;
-        Throwable th2 = this.f54027b;
+        int i10 = (this.f54027a ^ 1000003) * 1000003;
+        Throwable th2 = this.f54028b;
         if (th2 == null) {
             hashCode = 0;
         } else {
@@ -54,6 +54,6 @@ public final class c extends q.a {
     }
 
     public String toString() {
-        return "StateError{code=" + this.f54026a + ", cause=" + this.f54027b + "}";
+        return "StateError{code=" + this.f54027a + ", cause=" + this.f54028b + "}";
     }
 }

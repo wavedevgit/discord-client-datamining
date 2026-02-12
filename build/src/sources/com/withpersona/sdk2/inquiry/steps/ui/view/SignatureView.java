@@ -20,37 +20,37 @@ public final class SignatureView extends MaterialCardView {
     private float A;
 
     /* renamed from: t  reason: collision with root package name */
-    private Bitmap f20777t;
+    private Bitmap f20778t;
 
     /* renamed from: u  reason: collision with root package name */
-    private Canvas f20778u;
+    private Canvas f20779u;
 
     /* renamed from: v  reason: collision with root package name */
-    private RectF f20779v;
+    private RectF f20780v;
 
     /* renamed from: w  reason: collision with root package name */
-    private Path f20780w;
+    private Path f20781w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final Paint f20781x;
+    private final Paint f20782x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final Paint f20782y;
+    private final Paint f20783y;
 
     /* renamed from: z  reason: collision with root package name */
-    private float f20783z;
+    private float f20784z;
 
     public SignatureView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f20779v = new RectF();
-        this.f20780w = new Path();
-        this.f20781x = new Paint(4);
-        this.f20782y = new Paint();
+        this.f20780v = new RectF();
+        this.f20781w = new Path();
+        this.f20782x = new Paint(4);
+        this.f20783y = new Paint();
         j(context, attributeSet);
     }
 
     private final Rect g() {
-        RectF rectF = new RectF(this.f20779v.left - this.f20782y.getStrokeWidth(), this.f20779v.top - this.f20782y.getStrokeWidth(), this.f20779v.right + this.f20782y.getStrokeWidth(), this.f20779v.bottom + this.f20782y.getStrokeWidth());
+        RectF rectF = new RectF(this.f20780v.left - this.f20783y.getStrokeWidth(), this.f20780v.top - this.f20783y.getStrokeWidth(), this.f20780v.right + this.f20783y.getStrokeWidth(), this.f20780v.bottom + this.f20783y.getStrokeWidth());
         Rect rect = new Rect();
         rectF.roundOut(rect);
         return rect;
@@ -68,74 +68,74 @@ public final class SignatureView extends MaterialCardView {
     }
 
     private final void j(Context context, AttributeSet attributeSet) {
-        this.f20782y.setAntiAlias(true);
-        this.f20782y.setDither(true);
-        this.f20782y.setColor(-16777216);
-        this.f20782y.setStyle(Paint.Style.STROKE);
-        this.f20782y.setStrokeJoin(Paint.Join.ROUND);
-        this.f20782y.setStrokeCap(Paint.Cap.ROUND);
-        this.f20782y.setStrokeWidth(5.0f);
+        this.f20783y.setAntiAlias(true);
+        this.f20783y.setDither(true);
+        this.f20783y.setColor(-16777216);
+        this.f20783y.setStyle(Paint.Style.STROKE);
+        this.f20783y.setStrokeJoin(Paint.Join.ROUND);
+        this.f20783y.setStrokeCap(Paint.Cap.ROUND);
+        this.f20783y.setStrokeWidth(5.0f);
     }
 
     private final boolean k() {
-        return this.f20779v.isEmpty();
+        return this.f20780v.isEmpty();
     }
 
     private final void l(float f10, float f11) {
-        this.f20780w.lineTo(f10, f11);
-        this.f20783z = f10;
+        this.f20781w.lineTo(f10, f11);
+        this.f20784z = f10;
         this.A = f11;
     }
 
     private final void m(float f10, float f11) {
-        this.f20780w.reset();
-        this.f20780w.moveTo(f10, f11);
-        this.f20783z = f10;
+        this.f20781w.reset();
+        this.f20781w.moveTo(f10, f11);
+        this.f20784z = f10;
         this.A = f11;
     }
 
     private final void n() {
-        Canvas canvas = this.f20778u;
+        Canvas canvas = this.f20779u;
         if (canvas == null) {
             return;
         }
-        if (!this.f20780w.isEmpty()) {
-            this.f20780w.lineTo(this.f20783z, this.A);
-            canvas.drawPath(this.f20780w, this.f20782y);
+        if (!this.f20781w.isEmpty()) {
+            this.f20781w.lineTo(this.f20784z, this.A);
+            canvas.drawPath(this.f20781w, this.f20783y);
         } else {
-            this.f20780w.moveTo(this.f20783z - 0.5f, this.A - 0.5f);
-            this.f20780w.lineTo(this.f20783z, this.A);
-            canvas.drawPoint(this.f20783z, this.A, this.f20782y);
+            this.f20781w.moveTo(this.f20784z - 0.5f, this.A - 0.5f);
+            this.f20781w.lineTo(this.f20784z, this.A);
+            canvas.drawPoint(this.f20784z, this.A, this.f20783y);
         }
         o();
-        this.f20780w.reset();
+        this.f20781w.reset();
     }
 
     private final void o() {
         RectF rectF = new RectF();
-        this.f20780w.computeBounds(rectF, true);
-        if (!this.f20780w.isEmpty()) {
+        this.f20781w.computeBounds(rectF, true);
+        if (!this.f20781w.isEmpty()) {
             float f10 = 2;
-            rectF.inset((-this.f20782y.getStrokeWidth()) / f10, (-this.f20782y.getStrokeWidth()) / f10);
+            rectF.inset((-this.f20783y.getStrokeWidth()) / f10, (-this.f20783y.getStrokeWidth()) / f10);
         }
         rectF.sort();
-        this.f20779v.union(rectF);
-        this.f20779v.sort();
+        this.f20780v.union(rectF);
+        this.f20780v.sort();
     }
 
     public final void f() {
-        Canvas canvas = this.f20778u;
+        Canvas canvas = this.f20779u;
         if (canvas == null) {
             return;
         }
-        this.f20780w.reset();
-        this.f20779v = new RectF();
+        this.f20781w.reset();
+        this.f20780v = new RectF();
         canvas.drawColor(0, PorterDuff.Mode.CLEAR);
         invalidate();
     }
 
     public final Bitmap i() {
-        Bitmap bitmap = this.f20777t;
+        Bitmap bitmap = this.f20778t;
         if (k() || bitmap == null) {
             return null;
         }
@@ -155,12 +155,12 @@ public final class SignatureView extends MaterialCardView {
         Intrinsics.checkNotNullParameter(canvas, "canvas");
         super.onDraw(canvas);
         canvas.drawColor(0);
-        Bitmap bitmap = this.f20777t;
+        Bitmap bitmap = this.f20778t;
         if (bitmap != null) {
-            canvas.drawBitmap(bitmap, 0.0f, 0.0f, this.f20781x);
+            canvas.drawBitmap(bitmap, 0.0f, 0.0f, this.f20782x);
         }
         h(canvas);
-        canvas.drawPath(this.f20780w, this.f20782y);
+        canvas.drawPath(this.f20781w, this.f20783y);
     }
 
     @Override // android.view.View
@@ -168,9 +168,9 @@ public final class SignatureView extends MaterialCardView {
         super.onSizeChanged(i10, i11, i12, i13);
         if (i10 > 0 && i11 > 0) {
             Bitmap createBitmap = Bitmap.createBitmap(i10, i11, Bitmap.Config.ARGB_8888);
-            this.f20777t = createBitmap;
+            this.f20778t = createBitmap;
             Intrinsics.checkNotNullExpressionValue(createBitmap, "also(...)");
-            this.f20778u = new Canvas(createBitmap);
+            this.f20779u = new Canvas(createBitmap);
         }
     }
 

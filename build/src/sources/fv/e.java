@@ -9,7 +9,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class e implements cv.a, d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f24396a = new e();
+    public static final e f24397a = new e();
 
     private e() {
     }
@@ -24,7 +24,7 @@ public final class e implements cv.a, d {
         Intrinsics.checkNotNullParameter(data, "data");
         Intrinsics.checkNotNullParameter(evaluator, "evaluator");
         for (Object obj : data.b()) {
-            if (f24396a.i(evaluator.a(data.a(), obj))) {
+            if (f24397a.i(evaluator.a(data.a(), obj))) {
                 return Boolean.TRUE;
             }
         }

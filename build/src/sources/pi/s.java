@@ -6,29 +6,29 @@ import java.lang.reflect.Method;
 public abstract class s {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Object f42764a;
+    private static final Object f42765a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Method f42765b;
+    private static final Method f42766b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Method f42766c;
+    private static final Method f42767c;
 
     static {
         Method a10;
         Object b10 = b();
-        f42764a = b10;
+        f42765a = b10;
         Method method = null;
         if (b10 == null) {
             a10 = null;
         } else {
             a10 = a();
         }
-        f42765b = a10;
+        f42766b = a10;
         if (b10 != null) {
             method = d(b10);
         }
-        f42766c = method;
+        f42767c = method;
     }
 
     private static Method a() {

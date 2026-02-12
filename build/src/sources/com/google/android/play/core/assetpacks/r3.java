@@ -3,14 +3,14 @@ package com.google.android.play.core.assetpacks;
 public final class r3 implements ai.t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ai.w f16858a;
+    private final ai.w f16859a;
 
     public r3(ai.w wVar) {
-        this.f16858a = wVar;
+        this.f16859a = wVar;
     }
 
     @Override // ai.w
     public final /* bridge */ /* synthetic */ Object a() {
-        return new q3(((q4) this.f16858a).b());
+        return new q3(((q4) this.f16859a).b());
     }
 }

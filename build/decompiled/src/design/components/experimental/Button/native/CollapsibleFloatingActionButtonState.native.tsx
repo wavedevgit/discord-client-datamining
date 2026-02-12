@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useCollapsibleFloatingActionButtonState = var3;
     var1 = function arg0() {
-        _fun58160: for (var _fun58160_ip = 0;;) switch (_fun58160_ip) {
+        _fun58181: for (var _fun58181_ip = 0;;) switch (_fun58181_ip) {
             case 0:
                 var6 = arguments[1];
                 var0 = arg0;
@@ -54,8 +54,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot0 = var4;
                 var5 = undefined;
                 if (!(var6 === var5)) {
-                    _fun58160_ip = 26;
-                    continue _fun58160
+                    _fun58181_ip = 26;
+                    continue _fun58181
                 }
             case 24:
                 var6 = 0;
@@ -73,16 +73,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = _closure1_slot2;
                 var2 = var3.useCallback;
                 var1 = function arg0() {
-                    _fun58161: for (var _fun58161_ip = 0;;) switch (_fun58161_ip) {
+                    _fun58182: for (var _fun58182_ip = 0;;) switch (_fun58182_ip) {
                         case 0:
                             var0 = arg0;
                             var0 = var0.nativeEvent;
                             var1 = null;
                             if (!(var1 != var0)) {
-                                _fun58161_ip = 173;
-                                continue _fun58161
+                                _fun58182_ip = 174;
+                                continue _fun58182
                             }
-                        case 17:
+                        case 18:
                             var1 = var0.contentOffset;
                             var2 = var1.y;
                             var1 = var0.contentSize;
@@ -91,59 +91,59 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var0.height;
                             var4 = _closure2_slot1;
                             if (!(!(var2 < var4))) {
-                                _fun58161_ip = 173;
-                                continue _fun58161
+                                _fun58182_ip = 174;
+                                continue _fun58182
                             }
-                        case 61:
+                        case 62:
                             var1 = var2 + var1;
                             if (!(!(var1 > var3))) {
-                                _fun58161_ip = 173;
-                                continue _fun58161
+                                _fun58182_ip = 174;
+                                continue _fun58182
                             }
-                        case 69:
+                        case 70:
                             var3 = _closure2_slot2;
                             var1 = var3.get;
                             var1 = var1.bind(var3)();
                             var6 = var2 - var1;
                             var3 = 10;
                             if (!(!(var2 < var3))) {
-                                _fun58161_ip = 143;
-                                continue _fun58161
+                                _fun58182_ip = 144;
+                                continue _fun58182
                             }
-                        case 93:
+                        case 94:
                             var1 = global;
                             var4 = var1.Math;
                             var1 = var4.abs;
                             var1 = var1.bind(var4)(var6);
                             if (!(var1 > var3)) {
-                                _fun58161_ip = 159;
-                                continue _fun58161
+                                _fun58182_ip = 160;
+                                continue _fun58182
                             }
-                        case 116:
+                        case 117:
                             var4 = _closure2_slot0;
                             var3 = var4.set;
                             var1 = 1;
                             var5 = 0;
                             if (!(var6 < var5)) {
-                                _fun58161_ip = 136;
-                                continue _fun58161
+                                _fun58182_ip = 137;
+                                continue _fun58182
                             }
-                        case 134:
+                        case 135:
                             var1 = 0;
-                        case 136:
+                        case 137:
                             var1 = var3.bind(var4)(var1);
-                            _fun58161_ip = 159;
-                            continue _fun58161;
-                        case 143:
+                            _fun58182_ip = 160;
+                            continue _fun58182;
+                        case 144:
                             var4 = _closure2_slot0;
                             var3 = var4.set;
                             var1 = 0;
                             var1 = var3.bind(var4)(var1);
-                        case 159:
+                        case 160:
                             var1 = _closure2_slot2;
                             var0 = var1.set;
                             var0 = var0.bind(var1)(var2);
-                        case 173:
+                        case 174:
                             var0 = undefined;
                             return var0;
                     }

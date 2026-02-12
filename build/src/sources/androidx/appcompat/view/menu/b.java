@@ -27,7 +27,7 @@ import java.util.List;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnDismissListener {
-    private static final int M = f.g.f23380e;
+    private static final int M = f.g.f23381e;
     View A;
     private boolean C;
     private boolean D;
@@ -229,7 +229,7 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
         this.f1403p = i11;
         this.f1404q = z10;
         Resources resources = context.getResources();
-        this.f1401i = Math.max(resources.getDisplayMetrics().widthPixels / 2, resources.getDimensionPixelSize(f.d.f23312b));
+        this.f1401i = Math.max(resources.getDisplayMetrics().widthPixels / 2, resources.getDimensionPixelSize(f.d.f23313b));
         this.f1405r = new Handler();
     }
 
@@ -400,7 +400,7 @@ public final class b extends h implements j, View.OnKeyListener, PopupWindow.OnD
         ListView n10 = z11.n();
         n10.setOnKeyListener(this);
         if (dVar == null && this.H && eVar.z() != null) {
-            FrameLayout frameLayout = (FrameLayout) from.inflate(f.g.f23387l, (ViewGroup) n10, false);
+            FrameLayout frameLayout = (FrameLayout) from.inflate(f.g.f23388l, (ViewGroup) n10, false);
             frameLayout.setEnabled(false);
             ((TextView) frameLayout.findViewById(16908310)).setText(eVar.z());
             n10.addHeaderView(frameLayout, null, false);

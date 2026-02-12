@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class AddressAutocompleteRequestJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20788a;
+    private final m.b f20789a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f20789b;
+    private final h f20790b;
 
     public AddressAutocompleteRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("meta");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20788a = a10;
+        this.f20789a = a10;
         h f10 = moshi.f(AddressAutocompleteRequest.Meta.class, x0.d(), "meta");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20789b = f10;
+        this.f20790b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -36,9 +36,9 @@ public final class AddressAutocompleteRequestJsonAdapter extends h {
         reader.u();
         AddressAutocompleteRequest.Meta meta = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20788a);
+            int J = reader.J(this.f20789a);
             if (J != -1) {
-                if (J == 0 && (meta = (AddressAutocompleteRequest.Meta) this.f20789b.fromJson(reader)) == null) {
+                if (J == 0 && (meta = (AddressAutocompleteRequest.Meta) this.f20790b.fromJson(reader)) == null) {
                     throw c.x("meta", "meta", reader);
                 }
             } else {
@@ -60,7 +60,7 @@ public final class AddressAutocompleteRequestJsonAdapter extends h {
         if (addressAutocompleteRequest != null) {
             writer.i();
             writer.J("meta");
-            this.f20789b.toJson(writer, addressAutocompleteRequest.a());
+            this.f20790b.toJson(writer, addressAutocompleteRequest.a());
             writer.s();
             return;
         }

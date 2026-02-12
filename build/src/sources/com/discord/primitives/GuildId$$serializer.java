@@ -34,7 +34,7 @@ public /* synthetic */ class GuildId$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{z0.f50106a};
+        return new KSerializer[]{z0.f50107a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

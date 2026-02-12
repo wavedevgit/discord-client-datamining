@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/threads/native/showThreadBrowserModal.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun72585: for (var _fun72585_ip = 0;;) switch (_fun72585_ip) {
+        _fun72598: for (var _fun72598_ip = 0;;) switch (_fun72598_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var4 = _closure1_slot1;
@@ -45,16 +45,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var2 = var2 != var4;
                 if (!var2) {
-                    _fun72585_ip = 76;
-                    continue _fun72585
+                    _fun72598_ip = 76;
+                    continue _fun72598
                 }
             case 66:
                 var3 = var4.isReady;
                 var2 = var3.bind(var4)();
             case 76:
                 if (!var2) {
-                    _fun72585_ip = 126;
-                    continue _fun72585
+                    _fun72598_ip = 126;
+                    continue _fun72598
                 }
             case 79:
                 var3 = var4.navigate;
@@ -73,4 +73,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [9060, 6562, 3917, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8974, 6578, 3917, 2]);

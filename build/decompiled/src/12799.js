@@ -1,307 +1,106 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var2 = exports;
+    var1 = exports;
     var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
     var0 = true;
-    var3.value = var0;
+    var2.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var5)(var2, var0, var3);
-    var0 = undefined;
-    var2.assertHasStateResponsePlugin = var0;
-    var2.default = var0;
-    var2.hasStateResponsePlugin = var0;
-    var3 = function() {
-        var0 = function(arg0) { // Environment: var0
-            var0 = arg0;
-            var _closure3_slot0 = var0;
-            var0 = {};
-            var1 = {};
-            var3 = function arg0, arg1() {
-                _fun98188: for (var _fun98188_ip = 0;;) switch (_fun98188_ip) {
-                    case 0:
-                        var4 = undefined;
-                        var2 = undefined;
-                        var0 = arguments.length;
-                        var1 = 2;
-                        var0 = var0 > var1;
-                        if (!var0) {
-                            _fun98188_ip = 25;
-                            continue _fun98188
-                        }
-                    case 17:
-                        var3 = arguments[var1];
-                        var0 = var4 !== var3;
-                    case 25:
-                        if (!var0) {
-                            _fun98188_ip = 32;
-                            continue _fun98188
-                        }
-                    case 28:
-                        var0 = arguments[var1];
-                    case 32:
-                        var4 = _closure3_slot0;
-                        var3 = var4.send;
-                        var2 = {};
-                        var1 = arg0;
-                        var2.name = var1;
-                        var1 = arg1;
-                        var2.action = var1;
-                        var0 = !var0;
-                        var1 = 'state.action.complete';
-                        var0 = !var0;
-                        var0 = var3.bind(var4)(var1, var2, var0);
-                        return var0;
-                }
-            };
-            var1.stateActionComplete = var3;
-            var3 = function arg0, arg1() {
-                _fun98189: for (var _fun98189_ip = 0;;) switch (_fun98189_ip) {
-                    case 0:
-                        var4 = undefined;
-                        var2 = undefined;
-                        var0 = arguments.length;
-                        var1 = 2;
-                        var3 = var0 > var1;
-                        if (!var3) {
-                            _fun98189_ip = 25;
-                            continue _fun98189
-                        }
-                    case 17:
-                        var0 = arguments[var1];
-                        var3 = var4 !== var0;
-                    case 25:
-                        var0 = !var3;
-                        if (!var3) {
-                            _fun98189_ip = 35;
-                            continue _fun98189
-                        }
-                    case 31:
-                        var0 = arguments[var1];
-                    case 35:
-                        var3 = _closure3_slot0;
-                        var2 = var3.send;
-                        var1 = {};
-                        var4 = arg0;
-                        var1.path = var4;
-                        var4 = arg1;
-                        var1.value = var4;
-                        var1.valid = var0;
-                        var0 = 'state.values.response';
-                        var0 = var2.bind(var3)(var0, var1);
-                        return var0;
-                }
-            };
-            var1.stateValuesResponse = var3;
-            var3 = function arg0, arg1() {
-                _fun98190: for (var _fun98190_ip = 0;;) switch (_fun98190_ip) {
-                    case 0:
-                        var4 = undefined;
-                        var2 = undefined;
-                        var0 = arguments.length;
-                        var1 = 2;
-                        var3 = var0 > var1;
-                        if (!var3) {
-                            _fun98190_ip = 25;
-                            continue _fun98190
-                        }
-                    case 17:
-                        var0 = arguments[var1];
-                        var3 = var4 !== var0;
-                    case 25:
-                        var0 = !var3;
-                        if (!var3) {
-                            _fun98190_ip = 35;
-                            continue _fun98190
-                        }
-                    case 31:
-                        var0 = arguments[var1];
-                    case 35:
-                        var3 = _closure3_slot0;
-                        var2 = var3.send;
-                        var1 = {};
-                        var4 = arg0;
-                        var1.path = var4;
-                        var4 = arg1;
-                        var1.keys = var4;
-                        var1.valid = var0;
-                        var0 = 'state.keys.response';
-                        var0 = var2.bind(var3)(var0, var1);
-                        return var0;
-                }
-            };
-            var1.stateKeysResponse = var3;
-            var3 = function arg0() {
-                _fun98191: for (var _fun98191_ip = 0;;) switch (_fun98191_ip) {
-                    case 0:
-                        var1 = arg0;
-                        var2 = var1.length;
-                        var0 = 0;
-                        var0 = var2 > var0;
-                        if (!var0) {
-                            _fun98191_ip = 49;
-                            continue _fun98191
-                        }
-                    case 17:
-                        var4 = _closure3_slot0;
-                        var3 = var4.send;
-                        var2 = {};
-                        var2.changes = var1;
-                        var1 = 'state.values.change';
-                        var0 = var3.bind(var4)(var1, var2);
-                    case 49:
-                        return var0;
-                }
-            };
-            var1.stateValuesChange = var3;
-            var2 = function arg0() {
-                var3 = _closure3_slot0;
-                var2 = var3.send;
-                var1 = {};
-                var0 = arg0;
-                var1.state = var0;
-                var0 = 'state.backup.response';
-                var0 = var2.bind(var3)(var0, var1);
-                return var0;
-            };
-            var1.stateBackupResponse = var2;
-            var0.features = var1;
-            return var0;
-        };
-        return var0;
-    };
-    var2.default = var3;
-    var3 = function arg0() {
-        _fun98193: for (var _fun98193_ip = 0;;) switch (_fun98193_ip) {
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = function arg0() {
+        _fun98118: for (var _fun98118_ip = 0;;) switch (_fun98118_ip) {
             case 0:
-                var1 = arg0;
-                var0 = var1;
-                if (!var0) {
-                    _fun98193_ip = 17;
-                    continue _fun98193
-                }
-            case 9:
-                var2 = 'stateActionComplete';
-                var0 = var2 in var1;
-            case 17:
-                if (!var0) {
-                    _fun98193_ip = 37;
-                    continue _fun98193
-                }
-            case 20:
-                var2 = var1.stateActionComplete;
-                var3 = 'function';
-                var2 = typeof var2;
-                var0 = var3 === var2;
-            case 37:
-                if (!var0) {
-                    _fun98193_ip = 48;
-                    continue _fun98193
-                }
-            case 40:
-                var2 = 'stateValuesResponse';
-                var0 = var2 in var1;
-            case 48:
-                if (!var0) {
-                    _fun98193_ip = 68;
-                    continue _fun98193
-                }
-            case 51:
-                var2 = var1.stateValuesResponse;
-                var3 = 'function';
-                var2 = typeof var2;
-                var0 = var3 === var2;
-            case 68:
-                if (!var0) {
-                    _fun98193_ip = 79;
-                    continue _fun98193
-                }
-            case 71:
-                var2 = 'stateKeysResponse';
-                var0 = var2 in var1;
-            case 79:
-                if (!var0) {
-                    _fun98193_ip = 99;
-                    continue _fun98193
-                }
-            case 82:
-                var2 = var1.stateKeysResponse;
-                var3 = 'function';
-                var2 = typeof var2;
-                var0 = var3 === var2;
-            case 99:
-                if (!var0) {
-                    _fun98193_ip = 110;
-                    continue _fun98193
-                }
-            case 102:
-                var2 = 'stateValuesChange';
-                var0 = var2 in var1;
-            case 110:
-                if (!var0) {
-                    _fun98193_ip = 130;
-                    continue _fun98193
-                }
-            case 113:
-                var2 = var1.stateValuesChange;
-                var3 = 'function';
-                var2 = typeof var2;
-                var0 = var3 === var2;
-            case 130:
-                if (!var0) {
-                    _fun98193_ip = 141;
-                    continue _fun98193
-                }
-            case 133:
-                var2 = 'stateBackupResponse';
-                var0 = var2 in var1;
-            case 141:
-                if (!var0) {
-                    _fun98193_ip = 161;
-                    continue _fun98193
-                }
-            case 144:
-                var1 = var1.stateBackupResponse;
-                var2 = 'function';
-                var1 = typeof var1;
-                var0 = var2 === var1;
-            case 161:
-                return var0;
-        }
-    };
-    var _closure1_slot0 = var3;
-    var2.hasStateResponsePlugin = var3;
-    var1 = function arg0() {
-        _fun98194: for (var _fun98194_ip = 0;;) switch (_fun98194_ip) {
-            case 0:
-                var2 = _closure1_slot0;
+                var4 = arg0;
+                var3 = undefined;
+                var2 = undefined;
+                var1 = undefined;
+                var5 = undefined;
                 var0 = undefined;
-                var1 = arg0;
-                var1 = var2.bind(var0)(var1);
-                if (var1) {
-                    _fun98194_ip = 56;
-                    continue _fun98194
+            case 13: // try_start_0
+                var6 = var4;
+                if (var6) {
+                    _fun98118_ip = 23;
+                    continue _fun98118
                 }
-            case 20:
+            case 19: // try_end0
+                var6 = null;
+                return var6;
+            case 23: // try_start_1
+                var6 = var4;
+                var6 = var6.reactNativeVersion;
+                if (var6) {
+                    _fun98118_ip = 39;
+                    continue _fun98118
+                }
+            case 35: // try_end1
+                var6 = null;
+                return var6;
+            case 39: // try_start_2
+                var6 = var4;
+                var4 = var6.reactNativeVersion;
+                var4 = var4.major;
+                var3 = var4;
+                var7 = var6.reactNativeVersion;
+                var2 = var7.minor;
+                var7 = var6.reactNativeVersion;
+                var1 = var7.patch;
+                var6 = var6.reactNativeVersion;
+                var5 = var6.prerelease;
+                var6 = 'number';
+                var4 = typeof var4;
+                if (!(var6 === var4)) {
+                    _fun98118_ip = 221;
+                    continue _fun98118
+                }
+            case 104:
+                var6 = new Array(0);
+                var0 = var6;
+                var4 = var6.push;
+                var15 = var3;
+                var13 = var2;
+                var11 = var1;
                 var1 = global;
-                var3 = var1.Error;
-                var1 = var3.prototype;
-                var2 = Object.create(var1, {
-                    constructor: {
-                        value: var3
-                    }
-                });
-                var4 = 'This Reactotron client has not had the state responses plugin applied to it. Make sure that you add `use(stateResponse())` before adding this plugin.';
-                var5 = var2;
-                var1 = new var5[var3](var4, var3);
-                var1 = var1 instanceof Object ? var1 : var2;
-                throw var1;
-            case 56:
+                var2 = var1.HermesInternal;
+                var7 = var2.concat;
+                var2 = '';
+                var3 = '.';
+                var16 = var2;
+                var14 = var3;
+                var12 = var3;
+                var3 = var16[var7](var15, var14, var13, var12, var11, var10);
+                var3 = var4.bind(var6)(var3);
+                var3 = var5;
+                if (!var3) {
+                    _fun98118_ip = 206;
+                    continue _fun98118
+                }
+            case 170:
+                var4 = var0;
+                var3 = var4.push;
+                var6 = var5;
+                var1 = var1.HermesInternal;
+                var5 = var1.concat;
+                var1 = '-';
+                var1 = var5.bind(var1)(var6);
+                var1 = var3.bind(var4)(var1);
+            case 206:
+                var1 = var0;
+                var0 = var1.join;
+                var0 = var0.bind(var1)(var2);
+            case 219: // try_end2
+                return var0;
+            case 221:
+                var0 = null;
+                return var0;
+            case 225: // catch_target0 // catch_target1 // catch_target2
+                CatchBlockStart(arg_register = 0);
+                var0 = null;
                 return var0;
         }
     };
-    var2.assertHasStateResponsePlugin = var1;
+    var1.getReactNativeVersionWithModules = var0;
+    var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

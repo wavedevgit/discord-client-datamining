@@ -19,19 +19,19 @@ public final class q4 extends o1 implements w2 {
 
     public final q4 l(x4 x4Var) {
         h();
-        r4.C((r4) this.f15023e, (b5) x4Var.f());
+        r4.C((r4) this.f15024e, (b5) x4Var.f());
         return this;
     }
 
     public final q4 m(s5 s5Var) {
         h();
-        r4.D((r4) this.f15023e, s5Var);
+        r4.D((r4) this.f15024e, s5Var);
         return this;
     }
 
     public final q4 o(int i10) {
         h();
-        r4.E((r4) this.f15023e, i10);
+        r4.E((r4) this.f15024e, i10);
         return this;
     }
 }

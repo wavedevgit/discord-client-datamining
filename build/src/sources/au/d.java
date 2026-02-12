@@ -136,7 +136,7 @@ public enum d {
         for (int i11 = 0; i11 < 28; i11 += 2) {
             sin += dArr[i11 + 1] * Math.sin(Math.toRadians(dArr[i11]));
         }
-        return (a0) c.f(sin).h().E(a0.f37207z, TimeUnit.SECONDS);
+        return (a0) c.f(sin).h().E(a0.f37208z, TimeUnit.SECONDS);
     }
 
     public a0 d(a0 a0Var) {

@@ -7,15 +7,15 @@ public enum n4 {
     DOUBLE(Double.valueOf(0.0d)),
     BOOLEAN(Boolean.FALSE),
     STRING(""),
-    BYTE_STRING(r0.f15039e),
+    BYTE_STRING(r0.f15040e),
     ENUM(null),
     MESSAGE(null);
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object f15019d;
+    private final Object f15020d;
 
     n4(Object obj) {
-        this.f15019d = obj;
+        this.f15020d = obj;
     }
 }

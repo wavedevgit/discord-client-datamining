@@ -18,7 +18,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.WebSocket;
                 var0 = null;
                 if (!(var0 == var1)) {
-                    _fun1092_ip = 46;
+                    _fun1092_ip = 45;
                     continue _fun1092
                 }
             case 20:
@@ -26,9 +26,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.log;
                 var0 = 'Skipping fast_connect because `window.WebSocket` does not exist.';
                 var0 = var1.bind(var2)(var0);
-                _fun1092_ip = 59;
+                _fun1092_ip = 58;
                 continue _fun1092;
-            case 46:
+            case 45:
                 var1 = function() {
                     _fun1093: for (var _fun1093_ip = 0;;) switch (_fun1093_ip) {
                         case 0:
@@ -103,10 +103,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var3.isNaN;
                             var5 = var5.bind(var0)(var8);
                             if (var5) {
-                                _fun1093_ip = 569;
+                                _fun1093_ip = 568;
                                 continue _fun1093
                             }
-                        case 284:
+                        case 283:
                             var9 = _closure1_slot0;
                             var5 = _closure1_slot3;
                             var5 = var5[var10];
@@ -114,22 +114,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var9.isAndroid;
                             var5 = var5.bind(var9)();
                             if (var7) {
-                                _fun1093_ip = 373;
+                                _fun1093_ip = 372;
                                 continue _fun1093
                             }
-                        case 314:
+                        case 313:
                             if (var5) {
-                                _fun1093_ip = 340;
+                                _fun1093_ip = 339;
                                 continue _fun1093
                             }
-                        case 317:
+                        case 316:
                             var7 = _closure1_slot4;
                             var9 = var7.DCDCompressionManager;
                             var7 = var9.enableZlibStreamSupport;
                             var7 = var7.bind(var9)(var8);
-                            _fun1093_ip = 433;
+                            _fun1093_ip = 432;
                             continue _fun1093;
-                        case 340:
+                        case 339:
                             var9 = _closure1_slot1;
                             var10 = _closure1_slot3;
                             var7 = 10;
@@ -137,22 +137,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var9 = var9.bind(var0)(var7);
                             var7 = var9.enableZlibStreamSupport;
                             var7 = var7.bind(var9)(var8);
-                            _fun1093_ip = 433;
+                            _fun1093_ip = 432;
                             continue _fun1093;
-                        case 373:
+                        case 372:
                             if (var5) {
-                                _fun1093_ip = 402;
+                                _fun1093_ip = 401;
                                 continue _fun1093
                             }
-                        case 376:
+                        case 375:
                             var5 = _closure1_slot4;
                             var9 = var5.DCDCompressionManager;
                             var7 = var9.enableZstdStreamSupport;
                             var5 = 0;
                             var5 = var7.bind(var9)(var8, var5);
-                            _fun1093_ip = 433;
+                            _fun1093_ip = 432;
                             continue _fun1093;
-                        case 402:
+                        case 401:
                             var7 = _closure1_slot1;
                             var9 = _closure1_slot3;
                             var5 = 10;
@@ -160,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = var7.bind(var0)(var5);
                             var5 = var7.enableZstdStreamSupport;
                             var5 = var5.bind(var7)(var8);
-                        case 433:
+                        case 432:
                             var5 = {
                                 'open': false,
                                 'gateway': null,
@@ -257,21 +257,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = '🌐';
                             var3 = 'Fastconnect socket created';
                             var3 = var5.bind(var6)(var4, var3);
-                            _fun1093_ip = 597;
+                            _fun1093_ip = 595;
                             continue _fun1093;
-                        case 569:
+                        case 568:
                             var4 = _closure1_slot7;
                             var3 = var4.log;
                             var2 = var1._socketId;
                             var1 = '[FAST CONNECT] Unable to create socketId from NaN value ';
                             var1 = var3.bind(var4)(var1, var2);
-                        case 597:
+                        case 595:
                             return var0;
                     }
                 };
                 var0 = undefined;
                 var0 = var1.bind(var0)();
-            case 59:
+            case 58:
                 var0 = undefined;
                 return var0;
         }
@@ -360,7 +360,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0._ws;
                 var0 = null;
                 if (!(var0 == var1)) {
-                    _fun1098_ip = 46;
+                    _fun1098_ip = 45;
                     continue _fun1098
                 }
             case 20:
@@ -368,9 +368,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.log;
                 var0 = 'Skipping identifyWebSocket because socket is null';
                 var0 = var1.bind(var2)(var0);
-                _fun1098_ip = 95;
+                _fun1098_ip = 94;
                 continue _fun1098;
-            case 46:
+            case 45:
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot3;
                 var0 = 13;
@@ -443,7 +443,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 55:
                             var1 = '';
                             if (!(var1 === var6)) {
-                                _fun1099_ip = 89;
+                                _fun1099_ip = 88;
                                 continue _fun1099
                             }
                         case 63:
@@ -451,9 +451,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var3.log;
                             var1 = 'Skipping fast_connect because we could not find a token to connect with.';
                             var1 = var2.bind(var3)(var1);
-                            _fun1099_ip = 784;
+                            _fun1099_ip = 783;
                             continue _fun1099;
-                        case 89:
+                        case 88:
                             var4 = global;
                             var1 = var4.window;
                             var2 = var1._ws;
@@ -468,16 +468,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var3.isAndroid;
                             var1 = var1.bind(var3)();
                             if (var1) {
-                                _fun1099_ip = 170;
+                                _fun1099_ip = 169;
                                 continue _fun1099
                             }
-                        case 153:
+                        case 152:
                             var1 = _closure1_slot4;
                             var1 = var1.DCDFastConnectManager;
                             var1 = var1.userId;
-                            _fun1099_ip = 205;
+                            _fun1099_ip = 204;
                             continue _fun1099;
-                        case 170:
+                        case 169:
                             var7 = _closure1_slot1;
                             var8 = _closure1_slot3;
                             var3 = 5;
@@ -486,16 +486,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var7.getConstants;
                             var3 = var3.bind(var7)();
                             var1 = var3.userId;
-                        case 205:
+                        case 204:
                             var3 = var9 != var1;
                             var11 = null;
                             if (!var3) {
-                                _fun1099_ip = 217;
+                                _fun1099_ip = 216;
                                 continue _fun1099
                             }
-                        case 214:
+                        case 213:
                             var11 = var1;
-                        case 217:
+                        case 216:
                             var13 = _closure1_slot7;
                             var8 = var13.info;
                             var3 = _closure1_slot5;
@@ -539,24 +539,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var13 = var14.isAndroid;
                             var13 = var13.bind(var14)();
                             if (var13) {
-                                _fun1099_ip = 431;
+                                _fun1099_ip = 430;
                                 continue _fun1099
                             }
-                        case 403:
+                        case 402:
                             var13 = _closure1_slot4;
                             var13 = var13.DCDFastConnectManager;
                             var14 = var13.useChannelObfuscation;
                             var13 = var9 != var14;
                             if (!var13) {
-                                _fun1099_ip = 429;
+                                _fun1099_ip = 428;
                                 continue _fun1099
                             }
-                        case 426:
+                        case 425:
                             var13 = var14;
-                        case 429:
-                            _fun1099_ip = 480;
+                        case 428:
+                            _fun1099_ip = 479;
                             continue _fun1099;
-                        case 431:
+                        case 430:
                             var15 = _closure1_slot1;
                             var16 = _closure1_slot3;
                             var14 = 5;
@@ -567,14 +567,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var15 = var14.useChannelObfuscation;
                             var14 = var9 != var15;
                             if (!var14) {
-                                _fun1099_ip = 477;
+                                _fun1099_ip = 476;
                                 continue _fun1099
                             }
-                        case 474:
+                        case 473:
                             var14 = var15;
-                        case 477:
+                        case 476:
                             var13 = var14;
-                        case 480:
+                        case 479:
                             var6.useChannelObfuscation = var13;
                             var6 = var7.bind(var8)(var6);
                             var1.capabilities = var6;
@@ -596,10 +596,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var7.isAndroid;
                             var6 = var6.bind(var7)();
                             if (var6) {
-                                _fun1099_ip = 645;
+                                _fun1099_ip = 644;
                                 continue _fun1099
                             }
-                        case 569:
+                        case 568:
                             var6 = _closure1_slot4;
                             var12 = var6.DCDFastConnectManager;
                             var7 = var12.prepareIdentify;
@@ -612,40 +612,40 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var13 = var6.bind(var13)();
                             var6 = null;
                             if (!var13) {
-                                _fun1099_ip = 624;
+                                _fun1099_ip = 623;
                                 continue _fun1099
                             }
-                        case 620:
+                        case 619:
                             var6 = _closure1_slot6;
-                        case 624:
+                        case 623:
                             var21 = var12;
                             var20 = var11;
                             var19 = var8;
                             var18 = var5;
                             var17 = var6;
                             var6 = var21[var7](var20, var19, var18, var17, var16);
-                            _fun1099_ip = 766;
+                            _fun1099_ip = 765;
                             continue _fun1099;
-                        case 645:
+                        case 644:
                             var7 = var9 == var11;
                             var6 = undefined;
                             if (var7) {
-                                _fun1099_ip = 663;
+                                _fun1099_ip = 662;
                                 continue _fun1099
                             }
-                        case 654:
+                        case 653:
                             var7 = var11.toString;
                             var6 = var7.bind(var11)();
-                        case 663:
+                        case 662:
                             var7 = var9 != var6;
                             var9 = null;
                             if (!var7) {
-                                _fun1099_ip = 675;
+                                _fun1099_ip = 674;
                                 continue _fun1099
                             }
-                        case 672:
+                        case 671:
                             var9 = var6;
-                        case 675:
+                        case 674:
                             var7 = _closure1_slot1;
                             var12 = _closure1_slot3;
                             var6 = 5;
@@ -662,32 +662,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var11 = var4.bind(var11)();
                             var4 = undefined;
                             if (!var11) {
-                                _fun1099_ip = 747;
+                                _fun1099_ip = 746;
                                 continue _fun1099
                             }
-                        case 743:
+                        case 742:
                             var4 = _closure1_slot6;
-                        case 747:
+                        case 746:
                             var21 = var7;
                             var20 = var9;
                             var19 = var8;
                             var18 = var5;
                             var17 = var4;
                             var4 = var21[var6](var20, var19, var18, var17, var16);
-                        case 766:
+                        case 765:
                             var1 = var1.client_state;
                             var2.identify = var3;
                             var2.clientState = var1;
-                        case 784:
+                        case 783:
                             return var0;
                     }
                 };
                 var0 = var1.bind(var2)(var0);
-            case 95:
+            case 94:
                 var0 = undefined;
                 return var0;
         }
     };
     var2.identifyWebSocket = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [26, 27, 477, 3, 478, 480, 481, 659, 12486, 12259, 12467, 12456, 20, 14, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [26, 27, 477, 3, 478, 480, 481, 659, 12499, 12272, 12480, 12469, 20, 14, 2]);

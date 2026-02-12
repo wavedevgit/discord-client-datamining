@@ -7,7 +7,7 @@ import ff.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class l extends ff.d implements vg.i {
     public l(Context context) {
-        super(context, g.f36458l, a.d.f23723g, d.a.f23735c);
+        super(context, g.f36459l, a.d.f23724g, d.a.f23736c);
     }
 
     @Override // vg.i

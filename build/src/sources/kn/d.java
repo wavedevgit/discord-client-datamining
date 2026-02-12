@@ -8,26 +8,26 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d implements f {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f31937b;
+    private final Object f31938b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f31938c;
+    private final List f31939c;
 
     public d(Object beneathModals, List modals) {
         Intrinsics.checkNotNullParameter(beneathModals, "beneathModals");
         Intrinsics.checkNotNullParameter(modals, "modals");
-        this.f31937b = beneathModals;
-        this.f31938c = modals;
+        this.f31938b = beneathModals;
+        this.f31939c = modals;
     }
 
     @Override // kn.f
     public List a() {
-        return this.f31938c;
+        return this.f31939c;
     }
 
     @Override // kn.f
     public Object b() {
-        return this.f31937b;
+        return this.f31938b;
     }
 
     public boolean equals(Object obj) {

@@ -11,36 +11,36 @@ import java.util.Set;
 public final class u0 extends xg.d implements e.a, e.b {
 
     /* renamed from: j  reason: collision with root package name */
-    private static final a.AbstractC0316a f25671j = wg.d.f52765c;
+    private static final a.AbstractC0316a f25672j = wg.d.f52766c;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Context f25672c;
+    private final Context f25673c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Handler f25673d;
+    private final Handler f25674d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final a.AbstractC0316a f25674e;
+    private final a.AbstractC0316a f25675e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Set f25675f;
+    private final Set f25676f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final hf.d f25676g;
+    private final hf.d f25677g;
 
     /* renamed from: h  reason: collision with root package name */
-    private wg.e f25677h;
+    private wg.e f25678h;
 
     /* renamed from: i  reason: collision with root package name */
-    private t0 f25678i;
+    private t0 f25679i;
 
     public u0(Context context, Handler handler, hf.d dVar) {
-        a.AbstractC0316a abstractC0316a = f25671j;
-        this.f25672c = context;
-        this.f25673d = handler;
-        this.f25676g = (hf.d) hf.q.m(dVar, "ClientSettings must not be null");
-        this.f25675f = dVar.g();
-        this.f25674e = abstractC0316a;
+        a.AbstractC0316a abstractC0316a = f25672j;
+        this.f25673c = context;
+        this.f25674d = handler;
+        this.f25677g = (hf.d) hf.q.m(dVar, "ClientSettings must not be null");
+        this.f25676f = dVar.g();
+        this.f25675e = abstractC0316a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -52,45 +52,45 @@ public final class u0 extends xg.d implements e.a, e.b {
             if (!b11.g()) {
                 String valueOf = String.valueOf(b11);
                 Log.wtf("SignInCoordinator", "Sign-in succeeded with resolve account failure: ".concat(valueOf), new Exception());
-                u0Var.f25678i.c(b11);
-                u0Var.f25677h.l();
+                u0Var.f25679i.c(b11);
+                u0Var.f25678h.l();
                 return;
             }
-            u0Var.f25678i.b(p0Var.c(), u0Var.f25675f);
+            u0Var.f25679i.b(p0Var.c(), u0Var.f25676f);
         } else {
-            u0Var.f25678i.c(b10);
+            u0Var.f25679i.c(b10);
         }
-        u0Var.f25677h.l();
+        u0Var.f25678h.l();
     }
 
     @Override // xg.f
     public final void P(xg.l lVar) {
-        this.f25673d.post(new s0(this, lVar));
+        this.f25674d.post(new s0(this, lVar));
     }
 
     /* JADX WARN: Type inference failed for: r0v3, types: [wg.e, ff.a$f] */
     public final void Z0(t0 t0Var) {
-        wg.e eVar = this.f25677h;
+        wg.e eVar = this.f25678h;
         if (eVar != null) {
             eVar.l();
         }
-        this.f25676g.k(Integer.valueOf(System.identityHashCode(this)));
-        a.AbstractC0316a abstractC0316a = this.f25674e;
-        Context context = this.f25672c;
-        Handler handler = this.f25673d;
-        hf.d dVar = this.f25676g;
-        this.f25677h = abstractC0316a.a(context, handler.getLooper(), dVar, dVar.h(), this, this);
-        this.f25678i = t0Var;
-        Set set = this.f25675f;
+        this.f25677g.k(Integer.valueOf(System.identityHashCode(this)));
+        a.AbstractC0316a abstractC0316a = this.f25675e;
+        Context context = this.f25673c;
+        Handler handler = this.f25674d;
+        hf.d dVar = this.f25677g;
+        this.f25678h = abstractC0316a.a(context, handler.getLooper(), dVar, dVar.h(), this, this);
+        this.f25679i = t0Var;
+        Set set = this.f25676f;
         if (set != null && !set.isEmpty()) {
-            this.f25677h.i();
+            this.f25678h.i();
         } else {
-            this.f25673d.post(new r0(this));
+            this.f25674d.post(new r0(this));
         }
     }
 
     public final void a1() {
-        wg.e eVar = this.f25677h;
+        wg.e eVar = this.f25678h;
         if (eVar != null) {
             eVar.l();
         }
@@ -98,16 +98,16 @@ public final class u0 extends xg.d implements e.a, e.b {
 
     @Override // gf.d
     public final void e(Bundle bundle) {
-        this.f25677h.k(this);
+        this.f25678h.k(this);
     }
 
     @Override // gf.d
     public final void f(int i10) {
-        this.f25678i.d(i10);
+        this.f25679i.d(i10);
     }
 
     @Override // gf.k
     public final void i(com.google.android.gms.common.b bVar) {
-        this.f25678i.c(bVar);
+        this.f25679i.c(bVar);
     }
 }

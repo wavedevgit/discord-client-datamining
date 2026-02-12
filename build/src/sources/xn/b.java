@@ -11,10 +11,10 @@ import kotlin.text.StringsKt;
 final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f54938a = new b();
+    public static final b f54939a = new b();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Map f54939b = new LinkedHashMap();
+    private static final Map f54940b = new LinkedHashMap();
 
     private b() {
     }
@@ -30,7 +30,7 @@ final class b {
         String J = StringsKt.J(lowerCase, "-", "_", false, 4, null);
         String str3 = str2 + "/" + J;
         synchronized (this) {
-            Map map = f54939b;
+            Map map = f54940b;
             Integer num = (Integer) map.get(str3);
             if (num != null) {
                 return num.intValue();

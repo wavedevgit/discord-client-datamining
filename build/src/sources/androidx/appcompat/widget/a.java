@@ -83,7 +83,7 @@ public abstract class a extends ViewGroup {
         super(context, attributeSet, i10);
         this.f1718d = new C0018a();
         TypedValue typedValue = new TypedValue();
-        if (context.getTheme().resolveAttribute(f.a.f23276a, typedValue, true) && typedValue.resourceId != 0) {
+        if (context.getTheme().resolveAttribute(f.a.f23277a, typedValue, true) && typedValue.resourceId != 0) {
             this.f1719e = new ContextThemeWrapper(context, typedValue.resourceId);
         } else {
             this.f1719e = context;
@@ -151,8 +151,8 @@ public abstract class a extends ViewGroup {
     @Override // android.view.View
     protected void onConfigurationChanged(Configuration configuration) {
         super.onConfigurationChanged(configuration);
-        TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(null, f.j.f23416a, f.a.f23278c, 0);
-        setContentHeight(obtainStyledAttributes.getLayoutDimension(f.j.f23461j, 0));
+        TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(null, f.j.f23417a, f.a.f23279c, 0);
+        setContentHeight(obtainStyledAttributes.getLayoutDimension(f.j.f23462j, 0));
         obtainStyledAttributes.recycle();
         c cVar = this.f1721o;
         if (cVar != null) {

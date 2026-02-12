@@ -55,10 +55,10 @@ public final class DeviceResourceUsageManager {
         Long b11;
         Integer b12;
         try {
-            Result.a aVar = Result.f31984e;
+            Result.a aVar = Result.f31985e;
             b10 = Result.b(Long.valueOf(Os.sysconf(OsConstants._SC_CLK_TCK)));
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f31984e;
+            Result.a aVar2 = Result.f31985e;
             b10 = Result.b(c.a(th2));
         }
         if (Result.g(b10)) {
@@ -68,7 +68,7 @@ public final class DeviceResourceUsageManager {
         try {
             b11 = Result.b(Long.valueOf(Os.sysconf(OsConstants._SC_PAGE_SIZE)));
         } catch (Throwable th3) {
-            Result.a aVar3 = Result.f31984e;
+            Result.a aVar3 = Result.f31985e;
             b11 = Result.b(c.a(th3));
         }
         if (Result.g(b11)) {
@@ -78,7 +78,7 @@ public final class DeviceResourceUsageManager {
         try {
             b12 = Result.b(Integer.valueOf(Runtime.getRuntime().availableProcessors()));
         } catch (Throwable th4) {
-            Result.a aVar4 = Result.f31984e;
+            Result.a aVar4 = Result.f31985e;
             b12 = Result.b(c.a(th4));
         }
         if (Result.g(b12)) {
@@ -106,7 +106,7 @@ public final class DeviceResourceUsageManager {
                     if (this.thread != Thread.currentThread()) {
                         return;
                     }
-                    Unit unit = Unit.f31987a;
+                    Unit unit = Unit.f31988a;
                     if (!Thread.interrupted()) {
                         ActivityManager.MemoryInfo memoryInfo = this.memoryInfo;
                         this.activityManager.getMemoryInfo(memoryInfo);
@@ -153,7 +153,7 @@ public final class DeviceResourceUsageManager {
             deviceResourceUsageManager.monitor();
         } catch (InterruptedException unused) {
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public final int getCpuCoreCount() {

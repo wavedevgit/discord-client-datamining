@@ -10,28 +10,28 @@ public interface b {
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public byte[] f8756a;
+        public byte[] f8757a;
 
         /* renamed from: b  reason: collision with root package name */
-        public String f8757b;
+        public String f8758b;
 
         /* renamed from: c  reason: collision with root package name */
-        public long f8758c;
+        public long f8759c;
 
         /* renamed from: d  reason: collision with root package name */
-        public long f8759d;
+        public long f8760d;
 
         /* renamed from: e  reason: collision with root package name */
-        public long f8760e;
+        public long f8761e;
 
         /* renamed from: f  reason: collision with root package name */
-        public long f8761f;
+        public long f8762f;
 
         /* renamed from: g  reason: collision with root package name */
-        public Map f8762g = Collections.EMPTY_MAP;
+        public Map f8763g = Collections.EMPTY_MAP;
 
         /* renamed from: h  reason: collision with root package name */
-        public List f8763h;
+        public List f8764h;
 
         public boolean a() {
             return b(System.currentTimeMillis());
@@ -39,7 +39,7 @@ public interface b {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public boolean b(long j10) {
-            if (this.f8760e < j10) {
+            if (this.f8761e < j10) {
                 return true;
             }
             return false;
@@ -47,7 +47,7 @@ public interface b {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public boolean c(long j10) {
-            if (this.f8761f < j10) {
+            if (this.f8762f < j10) {
                 return true;
             }
             return false;

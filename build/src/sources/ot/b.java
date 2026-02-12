@@ -6,7 +6,7 @@ import ot.g;
 public final class b extends e {
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f41192c;
+    private final String f41193c;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -28,7 +28,7 @@ public final class b extends e {
             java.lang.String r1 = r1.toString()
             r2 = 0
             r3.<init>(r0, r1, r2)
-            r3.f41192c = r4
+            r3.f41193c = r4
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: ot.b.<init>(java.lang.String):void");
@@ -37,9 +37,9 @@ public final class b extends e {
     @Override // ot.e
     public g a(Object obj, CharSequence input, int i10, int i11) {
         Intrinsics.checkNotNullParameter(input, "input");
-        if (Intrinsics.areEqual(input.subSequence(i10, i11).toString(), this.f41192c)) {
+        if (Intrinsics.areEqual(input.subSequence(i10, i11).toString(), this.f41193c)) {
             return null;
         }
-        return new g.e(this.f41192c);
+        return new g.e(this.f41193c);
     }
 }

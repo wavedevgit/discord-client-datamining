@@ -145,9 +145,9 @@ public class AlertController {
 
         public RecycleListView(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.j.f23429c2);
-            this.f1073e = obtainStyledAttributes.getDimensionPixelOffset(f.j.f23434d2, -1);
-            this.f1072d = obtainStyledAttributes.getDimensionPixelOffset(f.j.f23439e2, -1);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.j.f23430c2);
+            this.f1073e = obtainStyledAttributes.getDimensionPixelOffset(f.j.f23435d2, -1);
+            this.f1072d = obtainStyledAttributes.getDimensionPixelOffset(f.j.f23440e2, -1);
         }
 
         public void a(boolean z10, boolean z11) {
@@ -579,7 +579,7 @@ public class AlertController {
         this.f1047b = lVar;
         this.f1048c = window;
         this.R = new c(lVar);
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(null, f.j.F, f.a.f23286k, 0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(null, f.j.F, f.a.f23287k, 0);
         this.J = obtainStyledAttributes.getResourceId(f.j.G, 0);
         this.K = obtainStyledAttributes.getResourceId(f.j.I, 0);
         this.L = obtainStyledAttributes.getResourceId(f.j.K, 0);
@@ -648,8 +648,8 @@ public class AlertController {
     }
 
     private void p(ViewGroup viewGroup, View view, int i10, int i11) {
-        View findViewById = this.f1048c.findViewById(f.f.f23372w);
-        View findViewById2 = this.f1048c.findViewById(f.f.f23371v);
+        View findViewById = this.f1048c.findViewById(f.f.f23373w);
+        View findViewById2 = this.f1048c.findViewById(f.f.f23372v);
         i0.A0(view, i10, i11);
         if (findViewById != null) {
             viewGroup.removeView(findViewById);
@@ -726,7 +726,7 @@ public class AlertController {
     }
 
     private void v(ViewGroup viewGroup) {
-        NestedScrollView nestedScrollView = (NestedScrollView) this.f1048c.findViewById(f.f.f23373x);
+        NestedScrollView nestedScrollView = (NestedScrollView) this.f1048c.findViewById(f.f.f23374x);
         this.A = nestedScrollView;
         nestedScrollView.setFocusable(false);
         this.A.setNestedScrollingEnabled(false);
@@ -769,7 +769,7 @@ public class AlertController {
             this.f1048c.setFlags(131072, 131072);
         }
         if (z10) {
-            FrameLayout frameLayout = (FrameLayout) this.f1048c.findViewById(f.f.f23364o);
+            FrameLayout frameLayout = (FrameLayout) this.f1048c.findViewById(f.f.f23365o);
             frameLayout.addView(view, new ViewGroup.LayoutParams(-1, -1));
             if (this.f1059n) {
                 frameLayout.setPadding(this.f1055j, this.f1056k, this.f1057l, this.f1058m);
@@ -791,7 +791,7 @@ public class AlertController {
         }
         this.D = (ImageView) this.f1048c.findViewById(16908294);
         if (!TextUtils.isEmpty(this.f1050e) && this.P) {
-            TextView textView = (TextView) this.f1048c.findViewById(f.f.f23360k);
+            TextView textView = (TextView) this.f1048c.findViewById(f.f.f23361k);
             this.E = textView;
             textView.setText(this.f1050e);
             int i10 = this.B;
@@ -822,15 +822,15 @@ public class AlertController {
         ListAdapter listAdapter;
         View findViewById2;
         View findViewById3;
-        View findViewById4 = this.f1048c.findViewById(f.f.f23370u);
+        View findViewById4 = this.f1048c.findViewById(f.f.f23371u);
         View findViewById5 = findViewById4.findViewById(f.f.Q);
-        View findViewById6 = findViewById4.findViewById(f.f.f23363n);
-        View findViewById7 = findViewById4.findViewById(f.f.f23361l);
-        ViewGroup viewGroup = (ViewGroup) findViewById4.findViewById(f.f.f23365p);
+        View findViewById6 = findViewById4.findViewById(f.f.f23364n);
+        View findViewById7 = findViewById4.findViewById(f.f.f23362l);
+        ViewGroup viewGroup = (ViewGroup) findViewById4.findViewById(f.f.f23366p);
         w(viewGroup);
         View findViewById8 = viewGroup.findViewById(f.f.Q);
-        View findViewById9 = viewGroup.findViewById(f.f.f23363n);
-        View findViewById10 = viewGroup.findViewById(f.f.f23361l);
+        View findViewById9 = viewGroup.findViewById(f.f.f23364n);
+        View findViewById10 = viewGroup.findViewById(f.f.f23362l);
         ViewGroup i10 = i(findViewById8, findViewById5);
         ViewGroup i11 = i(findViewById9, findViewById6);
         ViewGroup i12 = i(findViewById10, findViewById7);
@@ -901,7 +901,7 @@ public class AlertController {
 
     private static boolean z(Context context) {
         TypedValue typedValue = new TypedValue();
-        context.getTheme().resolveAttribute(f.a.f23285j, typedValue, true);
+        context.getTheme().resolveAttribute(f.a.f23286j, typedValue, true);
         if (typedValue.data != 0) {
             return true;
         }

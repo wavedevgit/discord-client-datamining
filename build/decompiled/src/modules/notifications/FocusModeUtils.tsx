@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/notifications/FocusModeUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function() {
-        _fun70296: for (var _fun70296_ip = 0;;) switch (_fun70296_ip) {
+        _fun72735: for (var _fun72735_ip = 0;;) switch (_fun72735_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
@@ -57,15 +57,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.useSetting;
                 var4 = var1.bind(var2)();
                 if (!var0) {
-                    _fun70296_ip = 180;
-                    continue _fun70296
+                    _fun72735_ip = 180;
+                    continue _fun72735
                 }
             case 69:
                 var1 = '0';
                 var1 = var1 === var4;
                 if (var1) {
-                    _fun70296_ip = 177;
-                    continue _fun70296
+                    _fun72735_ip = 177;
+                    continue _fun72735
                 }
             case 82:
                 var2 = global;
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useFocusModeEnabled = var3;
     var3 = function() {
-        _fun70297: for (var _fun70297_ip = 0;;) switch (_fun70297_ip) {
+        _fun72736: for (var _fun72736_ip = 0;;) switch (_fun72736_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
@@ -123,16 +123,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.getSetting;
                 var3 = var1.bind(var2)();
                 if (!var0) {
-                    _fun70297_ip = 75;
-                    continue _fun70297
+                    _fun72736_ip = 75;
+                    continue _fun72736
                 }
             case 69:
                 var1 = null;
                 var0 = var1 != var3;
             case 75:
                 if (!var0) {
-                    _fun70297_ip = 173;
-                    continue _fun70297
+                    _fun72736_ip = 173;
+                    continue _fun72736
                 }
             case 78:
                 var1 = global;
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getFocusModeEnabled = var3;
     var1 = function arg0, arg1() {
-        _fun70298: for (var _fun70298_ip = 0;;) switch (_fun70298_ip) {
+        _fun72737: for (var _fun72737_ip = 0;;) switch (_fun72737_ip) {
             case 0:
                 var2 = arg0;
                 var3 = arg1;
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var1.INFREQUENT_USER_ACTION;
                 var6 = 'notifications';
                 var1 = function(arg0) { // Environment: var4
-                    _fun70299: for (var _fun70299_ip = 0;;) switch (_fun70299_ip) {
+                    _fun72738: for (var _fun72738_ip = 0;;) switch (_fun72738_ip) {
                         case 0:
                             var2 = arg0;
                             var3 = _closure1_slot0;
@@ -216,8 +216,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = '0';
                             var1 = var5;
                             if (!var3) {
-                                _fun70299_ip = 136;
-                                continue _fun70299
+                                _fun72738_ip = 136;
+                                continue _fun72738
                             }
                         case 75:
                             var6 = _closure2_slot1;
@@ -225,8 +225,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var3 != var6;
                             var1 = var5;
                             if (!var3) {
-                                _fun70299_ip = 136;
-                                continue _fun70299
+                                _fun72738_ip = 136;
+                                continue _fun72738
                             }
                         case 91:
                             var3 = global;
@@ -266,23 +266,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.DND;
                 var1 = var6 === var1;
                 if (!var1) {
-                    _fun70298_ip = 218;
-                    continue _fun70298
+                    _fun72737_ip = 218;
+                    continue _fun72737
                 }
             case 215:
                 var1 = var2;
             case 218:
                 if (!var1) {
-                    _fun70298_ip = 227;
-                    continue _fun70298
+                    _fun72737_ip = 227;
+                    continue _fun72737
                 }
             case 221:
                 var2 = null;
                 var1 = var2 == var3;
             case 227:
                 if (!var1) {
-                    _fun70298_ip = 483;
-                    continue _fun70298
+                    _fun72737_ip = 483;
+                    continue _fun72737
                 }
             case 233:
                 var2 = _closure1_slot1;
@@ -356,4 +356,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setFocusMode = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5718, 3105, 660, 1348, 1355, 1342, 795, 3998, 1234, 8797, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5716, 3105, 660, 1348, 1355, 1342, 795, 3998, 1234, 9097, 2]);

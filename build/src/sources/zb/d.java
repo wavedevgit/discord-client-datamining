@@ -5,12 +5,12 @@ import java.util.List;
 final class d extends j {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f56254a;
+    private final List f56255a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d(List list) {
         if (list != null) {
-            this.f56254a = list;
+            this.f56255a = list;
             return;
         }
         throw new NullPointerException("Null logRequests");
@@ -18,7 +18,7 @@ final class d extends j {
 
     @Override // zb.j
     public List c() {
-        return this.f56254a;
+        return this.f56255a;
     }
 
     public boolean equals(Object obj) {
@@ -26,16 +26,16 @@ final class d extends j {
             return true;
         }
         if (obj instanceof j) {
-            return this.f56254a.equals(((j) obj).c());
+            return this.f56255a.equals(((j) obj).c());
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f56254a.hashCode() ^ 1000003;
+        return this.f56255a.hashCode() ^ 1000003;
     }
 
     public String toString() {
-        return "BatchedLogRequest{logRequests=" + this.f56254a + "}";
+        return "BatchedLogRequest{logRequests=" + this.f56255a + "}";
     }
 }

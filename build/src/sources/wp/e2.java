@@ -10,7 +10,7 @@ public abstract class e2 {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f53071a;
+        public static final /* synthetic */ int[] f53072a;
 
         static {
             int[] iArr = new int[NextStep.Selfie.CaptureMethod.values().length];
@@ -26,22 +26,22 @@ public abstract class e2 {
                 iArr[NextStep.Selfie.CaptureMethod.CONFIGURABLE_POSES.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f53071a = iArr;
+            f53072a = iArr;
         }
     }
 
     public static final d2 a(NextStep.Selfie.CaptureMethod captureMethod) {
         Intrinsics.checkNotNullParameter(captureMethod, "<this>");
-        int i10 = a.f53071a[captureMethod.ordinal()];
+        int i10 = a.f53072a[captureMethod.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
-                    return d2.b.f53058a;
+                    return d2.b.f53059a;
                 }
                 throw new as.p();
             }
-            return d2.c.f53059a;
+            return d2.c.f53060a;
         }
-        return d2.a.f53057a;
+        return d2.a.f53058a;
     }
 }

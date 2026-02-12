@@ -10,8 +10,47 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var4;
     var _closure1_slot3 = var6;
-    var0 = function() {
-        _fun117609: for (var _fun117609_ip = 0;;) switch (_fun117609_ip) {
+    var0 = global;
+    var9 = var0.Object;
+    var8 = var9.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var8.bind(var9)(var2, var0, var1);
+    var0 = 0;
+    var1 = var6[var0];
+    var0 = undefined;
+    var1 = var7.bind(var0)(var1);
+    var _closure1_slot4 = var1;
+    var1 = 1;
+    var1 = var6[var1];
+    var8 = var4.bind(var0)(var1);
+    var1 = 2;
+    var1 = var6[var1];
+    var1 = var5.bind(var0)(var1);
+    var4 = var1.GuildRoleSubscriptionsTierScenes;
+    var _closure1_slot5 = var4;
+    var4 = var1.MAX_SUBSCRIPTION_TIER_DESCRIPTION_LENGTH;
+    var _closure1_slot6 = var4;
+    var1 = var1.MAX_SUBSCRIPTION_TIER_NAME_LENGTH;
+    var _closure1_slot7 = var1;
+    var1 = 3;
+    var1 = var6[var1];
+    var1 = var5.bind(var0)(var1);
+    var1 = var1.UPLOAD_MEDIUM_SIZE;
+    var _closure1_slot8 = var1;
+    var1 = 4;
+    var1 = var6[var1];
+    var1 = var5.bind(var0)(var1);
+    var7 = var1.jsx;
+    var _closure1_slot9 = var7;
+    var4 = var1.Fragment;
+    var _closure1_slot10 = var4;
+    var1 = var1.jsxs;
+    var _closure1_slot11 = var1;
+    var4 = function() {
+        _fun115829: for (var _fun115829_ip = 0;;) switch (_fun115829_ip) {
             case 0:
                 var1 = _closure1_slot1;
                 var12 = _closure1_slot3;
@@ -70,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var9 != var1;
                 var28 = null;
                 if (!var0) {
-                    _fun117609_ip = 259;
-                    continue _fun117609
+                    _fun115829_ip = 259;
+                    continue _fun115829
                 }
             case 250:
                 var0 = {};
@@ -88,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var9 == var1;
                 var0 = undefined;
                 if (var2) {
-                    _fun117609_ip = 305;
-                    continue _fun117609
+                    _fun115829_ip = 305;
+                    continue _fun115829
                 }
             case 299:
                 var0 = var1.published;
@@ -289,8 +328,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.bind(var3)(var5);
                 var5 = {};
                 if (var12) {
-                    _fun117609_ip = 1149;
-                    continue _fun117609
+                    _fun115829_ip = 1149;
+                    continue _fun115829
                 }
             case 1146:
                 var12 = var13;
@@ -300,8 +339,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var9 != var10;
                 var9 = null;
                 if (!var11) {
-                    _fun117609_ip = 1169;
-                    continue _fun117609
+                    _fun115829_ip = 1169;
+                    continue _fun115829
                 }
             case 1166:
                 var9 = var10;
@@ -315,57 +354,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var _closure1_slot13 = var0;
-    var0 = global;
-    var9 = var0.Object;
-    var8 = var9.defineProperty;
     var1 = {};
-    var0 = true;
-    var1.value = var0;
-    var0 = '__esModule';
-    var0 = var8.bind(var9)(var2, var0, var1);
-    var0 = 0;
-    var1 = var6[var0];
-    var0 = undefined;
-    var1 = var7.bind(var0)(var1);
-    var _closure1_slot4 = var1;
-    var1 = 1;
-    var1 = var6[var1];
-    var7 = var4.bind(var0)(var1);
-    var1 = 2;
-    var1 = var6[var1];
-    var1 = var5.bind(var0)(var1);
-    var4 = var1.GuildRoleSubscriptionsTierScenes;
-    var _closure1_slot5 = var4;
-    var4 = var1.MAX_SUBSCRIPTION_TIER_DESCRIPTION_LENGTH;
-    var _closure1_slot6 = var4;
-    var1 = var1.MAX_SUBSCRIPTION_TIER_NAME_LENGTH;
-    var _closure1_slot7 = var1;
-    var1 = 3;
-    var1 = var6[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.UPLOAD_MEDIUM_SIZE;
-    var _closure1_slot8 = var1;
-    var1 = 4;
-    var1 = var6[var1];
-    var1 = var5.bind(var0)(var1);
-    var4 = var1.jsx;
-    var _closure1_slot9 = var4;
-    var4 = var1.Fragment;
-    var _closure1_slot10 = var4;
-    var1 = var1.jsxs;
-    var _closure1_slot11 = var1;
-    var4 = var7.memo;
+    var1 = var7.bind(var0)(var4, var1);
+    var _closure1_slot12 = var1;
+    var4 = var8.memo;
     var1 = function() { // Environment: var3
-        var3 = _closure1_slot9;
-        var2 = _closure1_slot13;
-        var1 = undefined;
-        var0 = {};
-        var0 = var3.bind(var1)(var2, var0);
+        var0 = _closure1_slot12;
         return var0;
     };
-    var1 = var4.bind(var7)(var1);
-    var _closure1_slot12 = var1;
+    var1 = var4.bind(var8)(var1);
+    var4 = {};
+    var4 = var7.bind(var0)(var1, var4);
+    var _closure1_slot13 = var4;
     var4 = 17;
     var4 = var6[var4];
     var6 = var5.bind(var0)(var4);
@@ -373,7 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionTierDetailsModal.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun117612: for (var _fun117612_ip = 0;;) switch (_fun117612_ip) {
+        _fun115832: for (var _fun115832_ip = 0;;) switch (_fun115832_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var10 = _closure1_slot3;
@@ -419,24 +419,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.length;
                 var5 = var5 > var2;
                 if (!var5) {
-                    _fun117612_ip = 207;
-                    continue _fun117612
+                    _fun115832_ip = 207;
+                    continue _fun115832
                 }
             case 201:
                 var6 = null;
                 var5 = var6 != var7;
             case 207:
                 if (!var5) {
-                    _fun117612_ip = 219;
-                    continue _fun117612
+                    _fun115832_ip = 219;
+                    continue _fun115832
                 }
             case 210:
                 var0 = var0.length;
                 var5 = var0 > var2;
             case 219:
                 if (!var5) {
-                    _fun117612_ip = 228;
-                    continue _fun117612
+                    _fun115832_ip = 228;
+                    continue _fun115832
                 }
             case 222:
                 var0 = null;
@@ -480,10 +480,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = arg0;
                 var13 = var0;
                 var5 = copyDataProperties(var13, var12);
-                var6 = _closure1_slot9;
-                var5 = _closure1_slot12;
-                var4 = {};
-                var5 = var6.bind(var3)(var5, var4);
+                var5 = _closure1_slot13;
                 var4 = 'children';
                 var0[var4] = var5;
                 var0 = var2.bind(var3)(var1, var0);
@@ -493,4 +490,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.GuildRoleSubscriptionTierDetailsTab = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 5696, 660, 33, 12610, 14967, 10865, 10848, 14943, 5991, 1234, 14956, 5440, 5469, 14996, 14959, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 5694, 660, 33, 12625, 14788, 10678, 10663, 14765, 6007, 1234, 14796, 5441, 5470, 14827, 14791, 2]);

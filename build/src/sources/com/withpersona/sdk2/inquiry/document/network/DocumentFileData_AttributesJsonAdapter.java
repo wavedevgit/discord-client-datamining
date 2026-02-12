@@ -16,19 +16,19 @@ import org.jetbrains.annotations.NotNull;
 public final class DocumentFileData_AttributesJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19516a;
+    private final m.b f19517a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19517b;
+    private final h f19518b;
 
     public DocumentFileData_AttributesJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("originals");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19516a = a10;
+        this.f19517a = a10;
         h f10 = moshi.f(a0.j(List.class, DocumentFileData.RemoteDocumentFile.class), x0.d(), "originals");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19517b = f10;
+        this.f19518b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -38,10 +38,10 @@ public final class DocumentFileData_AttributesJsonAdapter extends h {
         reader.u();
         List list = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19516a);
+            int J = reader.J(this.f19517a);
             if (J != -1) {
                 if (J == 0) {
-                    list = (List) this.f19517b.fromJson(reader);
+                    list = (List) this.f19518b.fromJson(reader);
                 }
             } else {
                 reader.z0();
@@ -59,7 +59,7 @@ public final class DocumentFileData_AttributesJsonAdapter extends h {
         if (attributes != null) {
             writer.i();
             writer.J("originals");
-            this.f19517b.toJson(writer, attributes.a());
+            this.f19518b.toJson(writer, attributes.a());
             writer.s();
             return;
         }

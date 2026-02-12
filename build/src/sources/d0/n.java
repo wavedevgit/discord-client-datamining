@@ -18,22 +18,22 @@ import java.util.concurrent.TimeoutException;
 public abstract class n {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Function f21296a = new b();
+    private static final Function f21297a = new b();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a implements d0.a {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Function f21297a;
+        final /* synthetic */ Function f21298a;
 
         a(Function function) {
-            this.f21297a = function;
+            this.f21298a = function;
         }
 
         @Override // d0.a
         public ListenableFuture apply(Object obj) {
-            return n.p(this.f21297a.apply(obj));
+            return n.p(this.f21298a.apply(obj));
         }
     }
 
@@ -42,27 +42,27 @@ public abstract class n {
     public class c implements d0.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ c.a f21298a;
+        final /* synthetic */ c.a f21299a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Function f21299b;
+        final /* synthetic */ Function f21300b;
 
         c(c.a aVar, Function function) {
-            this.f21298a = aVar;
-            this.f21299b = function;
+            this.f21299a = aVar;
+            this.f21300b = function;
         }
 
         @Override // d0.c
         public void onFailure(Throwable th2) {
-            this.f21298a.f(th2);
+            this.f21299a.f(th2);
         }
 
         @Override // d0.c
         public void onSuccess(Object obj) {
             try {
-                this.f21298a.c(this.f21299b.apply(obj));
+                this.f21299a.c(this.f21300b.apply(obj));
             } catch (Throwable th2) {
-                this.f21298a.f(th2);
+                this.f21299a.f(th2);
             }
         }
     }
@@ -72,15 +72,15 @@ public abstract class n {
     public class d implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ ListenableFuture f21300d;
+        final /* synthetic */ ListenableFuture f21301d;
 
         d(ListenableFuture listenableFuture) {
-            this.f21300d = listenableFuture;
+            this.f21301d = listenableFuture;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            this.f21300d.cancel(true);
+            this.f21301d.cancel(true);
         }
     }
 
@@ -89,38 +89,38 @@ public abstract class n {
     public static final class e implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final Future f21301d;
+        final Future f21302d;
 
         /* renamed from: e  reason: collision with root package name */
-        final d0.c f21302e;
+        final d0.c f21303e;
 
         e(Future future, d0.c cVar) {
-            this.f21301d = future;
-            this.f21302e = cVar;
+            this.f21302d = future;
+            this.f21303e = cVar;
         }
 
         @Override // java.lang.Runnable
         public void run() {
             try {
-                this.f21302e.onSuccess(n.l(this.f21301d));
+                this.f21303e.onSuccess(n.l(this.f21302d));
             } catch (Error e10) {
                 e = e10;
-                this.f21302e.onFailure(e);
+                this.f21303e.onFailure(e);
             } catch (RuntimeException e11) {
                 e = e11;
-                this.f21302e.onFailure(e);
+                this.f21303e.onFailure(e);
             } catch (ExecutionException e12) {
                 Throwable cause = e12.getCause();
                 if (cause == null) {
-                    this.f21302e.onFailure(e12);
+                    this.f21303e.onFailure(e12);
                 } else {
-                    this.f21302e.onFailure(cause);
+                    this.f21303e.onFailure(cause);
                 }
             }
         }
 
         public String toString() {
-            return e.class.getSimpleName() + "," + this.f21302e;
+            return e.class.getSimpleName() + "," + this.f21303e;
         }
     }
 
@@ -144,7 +144,7 @@ public abstract class n {
     }
 
     public static /* synthetic */ Object c(ListenableFuture listenableFuture, c.a aVar) {
-        v(false, listenableFuture, f21296a, aVar, c0.a.a());
+        v(false, listenableFuture, f21297a, aVar, c0.a.a());
         return "nonCancellationPropagating[" + listenableFuture + "]";
     }
 
@@ -270,7 +270,7 @@ public abstract class n {
     }
 
     public static void t(ListenableFuture listenableFuture, c.a aVar) {
-        u(listenableFuture, f21296a, aVar, c0.a.a());
+        u(listenableFuture, f21297a, aVar, c0.a.a());
     }
 
     public static void u(ListenableFuture listenableFuture, Function function, c.a aVar, Executor executor) {

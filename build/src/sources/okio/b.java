@@ -8,10 +8,10 @@ import okio.Buffer;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Buffer.a f40603a = new Buffer.a();
+    private static final Buffer.a f40604a = new Buffer.a();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int f40604b = -1234567890;
+    private static final int f40605b = -1234567890;
 
     public static final boolean a(byte[] a10, int i10, byte[] b10, int i11, int i12) {
         Intrinsics.checkNotNullParameter(a10, "a");
@@ -32,16 +32,16 @@ public abstract class b {
     }
 
     public static final int c() {
-        return f40604b;
+        return f40605b;
     }
 
     public static final Buffer.a d() {
-        return f40603a;
+        return f40604a;
     }
 
     public static final int e(ByteString byteString, int i10) {
         Intrinsics.checkNotNullParameter(byteString, "<this>");
-        if (i10 == f40604b) {
+        if (i10 == f40605b) {
             return byteString.G();
         }
         return i10;
@@ -49,7 +49,7 @@ public abstract class b {
 
     public static final int f(byte[] bArr, int i10) {
         Intrinsics.checkNotNullParameter(bArr, "<this>");
-        if (i10 == f40604b) {
+        if (i10 == f40605b) {
             return bArr.length;
         }
         return i10;
@@ -57,7 +57,7 @@ public abstract class b {
 
     public static final Buffer.a g(Buffer.a unsafeCursor) {
         Intrinsics.checkNotNullParameter(unsafeCursor, "unsafeCursor");
-        if (unsafeCursor == f40603a) {
+        if (unsafeCursor == f40604a) {
             return new Buffer.a();
         }
         return unsafeCursor;

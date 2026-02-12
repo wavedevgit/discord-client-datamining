@@ -6,33 +6,33 @@ import oe.w0;
 public final class c0 implements rc.b {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final boolean f47920d;
+    public static final boolean f47921d;
 
     /* renamed from: a  reason: collision with root package name */
-    public final UUID f47921a;
+    public final UUID f47922a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final byte[] f47922b;
+    public final byte[] f47923b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final boolean f47923c;
+    public final boolean f47924c;
 
     static {
         boolean z10;
-        if ("Amazon".equals(w0.f39039c)) {
-            String str = w0.f39040d;
+        if ("Amazon".equals(w0.f39040c)) {
+            String str = w0.f39041d;
             if ("AFTM".equals(str) || "AFTB".equals(str)) {
                 z10 = true;
-                f47920d = z10;
+                f47921d = z10;
             }
         }
         z10 = false;
-        f47920d = z10;
+        f47921d = z10;
     }
 
     public c0(UUID uuid, byte[] bArr, boolean z10) {
-        this.f47921a = uuid;
-        this.f47922b = bArr;
-        this.f47923c = z10;
+        this.f47922a = uuid;
+        this.f47923b = bArr;
+        this.f47924c = z10;
     }
 }

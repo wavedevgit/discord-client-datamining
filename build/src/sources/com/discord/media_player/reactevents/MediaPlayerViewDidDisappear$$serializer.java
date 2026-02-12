@@ -43,7 +43,7 @@ public /* synthetic */ class MediaPlayerViewDidDisappear$$serializer implements 
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = MediaPlayerViewDidDisappear.$childSerializers;
-        return new KSerializer[]{n2.f50032a, lazyArr[1].getValue()};
+        return new KSerializer[]{n2.f50033a, lazyArr[1].getValue()};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

@@ -18,21 +18,21 @@ import pi.d;
 public final class a extends f {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final Pattern f25557q = Pattern.compile("\\s*((?:(\\d+):)?(\\d+):(\\d+)(?:,(\\d+))?)\\s*-->\\s*((?:(\\d+):)?(\\d+):(\\d+)(?:,(\\d+))?)\\s*");
+    private static final Pattern f25558q = Pattern.compile("\\s*((?:(\\d+):)?(\\d+):(\\d+)(?:,(\\d+))?)\\s*-->\\s*((?:(\\d+):)?(\\d+):(\\d+)(?:,(\\d+))?)\\s*");
 
     /* renamed from: r  reason: collision with root package name */
-    private static final Pattern f25558r = Pattern.compile("\\{\\\\.*?\\}");
+    private static final Pattern f25559r = Pattern.compile("\\{\\\\.*?\\}");
 
     /* renamed from: o  reason: collision with root package name */
-    private final StringBuilder f25559o;
+    private final StringBuilder f25560o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final ArrayList f25560p;
+    private final ArrayList f25561p;
 
     public a() {
         super("SubripDecoder");
-        this.f25559o = new StringBuilder();
-        this.f25560p = new ArrayList();
+        this.f25560o = new StringBuilder();
+        this.f25561p = new ArrayList();
     }
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
@@ -237,7 +237,7 @@ public final class a extends f {
         if (P != null) {
             return P;
         }
-        return d.f42737c;
+        return d.f42738c;
     }
 
     static float D(int i10) {
@@ -272,7 +272,7 @@ public final class a extends f {
     private String F(String str, ArrayList arrayList) {
         String trim = str.trim();
         StringBuilder sb2 = new StringBuilder(trim);
-        Matcher matcher = f25558r.matcher(trim);
+        Matcher matcher = f25559r.matcher(trim);
         int i10 = 0;
         while (matcher.find()) {
             String group = matcher.group();
@@ -305,22 +305,22 @@ public final class a extends f {
                         y.i("SubripDecoder", "Unexpected end");
                         break;
                     }
-                    Matcher matcher = f25557q.matcher(t11);
+                    Matcher matcher = f25558q.matcher(t11);
                     if (matcher.matches()) {
                         zVar.a(E(matcher, 1));
                         zVar.a(E(matcher, 6));
-                        this.f25559o.setLength(0);
-                        this.f25560p.clear();
+                        this.f25560o.setLength(0);
+                        this.f25561p.clear();
                         for (String t12 = h0Var.t(C); !TextUtils.isEmpty(t12); t12 = h0Var.t(C)) {
-                            if (this.f25559o.length() > 0) {
-                                this.f25559o.append("<br>");
+                            if (this.f25560o.length() > 0) {
+                                this.f25560o.append("<br>");
                             }
-                            this.f25559o.append(F(t12, this.f25560p));
+                            this.f25560o.append(F(t12, this.f25561p));
                         }
-                        Spanned fromHtml = Html.fromHtml(this.f25559o.toString());
+                        Spanned fromHtml = Html.fromHtml(this.f25560o.toString());
                         while (true) {
-                            if (i11 < this.f25560p.size()) {
-                                str = (String) this.f25560p.get(i11);
+                            if (i11 < this.f25561p.size()) {
+                                str = (String) this.f25561p.get(i11);
                                 if (str.matches("\\{\\\\an[1-9]\\}")) {
                                     break;
                                 }

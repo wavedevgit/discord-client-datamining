@@ -7,11 +7,11 @@ import android.os.Vibrator;
 public class d implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    int f18137a;
+    int f18138a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d(int i10) {
-        this.f18137a = i10;
+        this.f18138a = i10;
     }
 
     @Override // com.mkuczera.b
@@ -19,7 +19,7 @@ public class d implements b {
         if (Build.VERSION.SDK_INT >= 29) {
             try {
                 if (vibrator.hasVibrator()) {
-                    vibrator.vibrate(VibrationEffect.createPredefined(this.f18137a));
+                    vibrator.vibrate(VibrationEffect.createPredefined(this.f18138a));
                 }
             } catch (Exception unused) {
             }

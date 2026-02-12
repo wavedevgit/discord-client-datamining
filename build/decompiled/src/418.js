@@ -433,7 +433,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var0.touchable;
                 var0 = var0.positionOnActivate;
                 if (!var0) {
-                    _fun5863_ip = 503;
+                    _fun5863_ip = 504;
                     continue _fun5863
                 }
             case 29:
@@ -530,26 +530,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var7.bind(var2)(var6);
                 var7 = var6;
                 if (!var6) {
-                    _fun5863_ip = 246;
+                    _fun5863_ip = 247;
                     continue _fun5863
                 }
-            case 240:
+            case 241:
                 var7 = var6.pageX;
-            case 246:
+            case 247:
                 var2 = var6;
                 if (!var2) {
-                    _fun5863_ip = 258;
+                    _fun5863_ip = 259;
                     continue _fun5863
                 }
-            case 252:
+            case 253:
                 var2 = var6.pageY;
-            case 258:
+            case 259:
                 var6 = var1.pressInLocation;
                 if (!var6) {
-                    _fun5863_ip = 327;
+                    _fun5863_ip = 328;
                     continue _fun5863
                 }
-            case 267:
+            case 268:
                 var12 = var1._getDistanceBetweenPoints;
                 var6 = var1.pressInLocation;
                 var16 = var6.pageX;
@@ -561,53 +561,53 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var11 = var19[var12](var18, var17, var16, var15, var14);
                 var6 = 10;
                 if (!(var11 > var6)) {
-                    _fun5863_ip = 327;
+                    _fun5863_ip = 328;
                     continue _fun5863
                 }
-            case 317:
+            case 318:
                 var6 = var1._cancelLongPressDelayTimeout;
                 var6 = var6.bind(var1)();
-            case 327:
+            case 328:
                 var6 = var5.left;
                 var6 = var6 - var10;
                 if (!(var7 > var6)) {
-                    _fun5863_ip = 397;
+                    _fun5863_ip = 398;
                     continue _fun5863
                 }
-            case 340:
+            case 341:
                 var6 = var5.top;
                 var6 = var6 - var9;
                 if (!(var2 > var6)) {
-                    _fun5863_ip = 397;
+                    _fun5863_ip = 398;
                     continue _fun5863
                 }
-            case 353:
+            case 354:
                 var9 = var5.left;
                 var6 = var0.width;
                 var6 = var9 + var6;
                 var6 = var6 + var8;
                 if (!(var7 < var6)) {
-                    _fun5863_ip = 397;
+                    _fun5863_ip = 398;
                     continue _fun5863
                 }
-            case 375:
+            case 376:
                 var5 = var5.top;
                 var0 = var0.height;
                 var0 = var5 + var0;
                 var0 = var0 + var3;
                 if (!(!(var2 < var0))) {
-                    _fun5863_ip = 425;
+                    _fun5863_ip = 426;
                     continue _fun5863
                 }
-            case 397:
+            case 398:
                 var0 = var1._cancelLongPressDelayTimeout;
                 var0 = var0.bind(var1)();
                 var2 = var1._receiveSignal;
                 var0 = 'LEAVE_PRESS_RECT';
                 var0 = var2.bind(var1)(var0, var4);
-                _fun5863_ip = 503;
+                _fun5863_ip = 504;
                 continue _fun5863;
-            case 425:
+            case 426:
                 var0 = var1.state;
                 var0 = var0.touchable;
                 var3 = var0.touchState;
@@ -620,20 +620,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = 'RESPONDER_INACTIVE_PRESS_IN';
                 var0 = var0 === var2;
                 if (!var0) {
-                    _fun5863_ip = 490;
+                    _fun5863_ip = 491;
                     continue _fun5863
                 }
-            case 486:
+            case 487:
                 var0 = var3 !== var2;
-            case 490:
+            case 491:
                 if (!var0) {
-                    _fun5863_ip = 503;
+                    _fun5863_ip = 504;
                     continue _fun5863
                 }
-            case 493:
+            case 494:
                 var0 = var1._cancelLongPressDelayTimeout;
                 var0 = var0.bind(var1)();
-            case 503:
+            case 504:
                 var0 = undefined;
                 return var0;
         }
@@ -1073,36 +1073,36 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2.bind(var0)(var1);
                 var5 = var2;
                 if (!var2) {
-                    _fun5873_ip = 34;
+                    _fun5873_ip = 35;
                     continue _fun5873
                 }
-            case 28:
+            case 29:
                 var5 = var2.pageX;
-            case 34:
+            case 35:
                 var4 = var2;
                 if (!var2) {
-                    _fun5873_ip = 46;
+                    _fun5873_ip = 47;
                     continue _fun5873
                 }
-            case 40:
+            case 41:
                 var4 = var2.pageY;
-            case 46:
+            case 47:
                 var3 = var2;
                 if (!var2) {
-                    _fun5873_ip = 58;
+                    _fun5873_ip = 59;
                     continue _fun5873
                 }
-            case 52:
+            case 53:
                 var3 = var2.locationX;
-            case 58:
+            case 59:
                 var1 = var2;
                 if (!var1) {
-                    _fun5873_ip = 70;
+                    _fun5873_ip = 71;
                     continue _fun5873
                 }
-            case 64:
+            case 65:
                 var1 = var2.locationY;
-            case 70:
+            case 71:
                 var2 = {};
                 var2.pageX = var5;
                 var2.pageY = var4;

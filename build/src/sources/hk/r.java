@@ -7,10 +7,10 @@ import rg.xj;
 public final class r extends wj.e {
 
     /* renamed from: b  reason: collision with root package name */
-    private final wj.i f27403b;
+    private final wj.i f27404b;
 
     public r(wj.i iVar) {
-        this.f27403b = iVar;
+        this.f27404b = iVar;
     }
 
     @Override // wj.e
@@ -18,7 +18,7 @@ public final class r extends wj.e {
         o fVar;
         gk.d dVar = (gk.d) obj;
         xj b10 = ik.b(dVar.b());
-        Context b11 = this.f27403b.b();
+        Context b11 = this.f27404b.b();
         if (com.google.android.gms.common.g.f().a(b11) < 204700000 && !dVar.d()) {
             fVar = new g(b11);
         } else {

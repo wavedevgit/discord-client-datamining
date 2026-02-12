@@ -8,13 +8,13 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class c extends AsyncTask {
 
     /* renamed from: a  reason: collision with root package name */
-    private com.rnfs.a f18689a;
+    private com.rnfs.a f18690a;
 
     /* renamed from: b  reason: collision with root package name */
-    private AtomicBoolean f18690b = new AtomicBoolean(false);
+    private AtomicBoolean f18691b = new AtomicBoolean(false);
 
     /* renamed from: c  reason: collision with root package name */
-    b f18691c;
+    b f18692c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -26,12 +26,12 @@ public class c extends AsyncTask {
         public void run() {
             try {
                 c cVar = c.this;
-                cVar.d(cVar.f18689a, c.this.f18691c);
-                c.this.f18689a.f18683h.a(c.this.f18691c);
+                cVar.d(cVar.f18690a, c.this.f18692c);
+                c.this.f18690a.f18684h.a(c.this.f18692c);
             } catch (Exception e10) {
                 c cVar2 = c.this;
-                cVar2.f18691c.f18688c = e10;
-                cVar2.f18689a.f18683h.a(c.this.f18691c);
+                cVar2.f18692c.f18689c = e10;
+                cVar2.f18690a.f18684h.a(c.this.f18692c);
             }
         }
     }
@@ -60,10 +60,10 @@ public class c extends AsyncTask {
     @Override // android.os.AsyncTask
     /* renamed from: c */
     public b doInBackground(com.rnfs.a... aVarArr) {
-        this.f18689a = aVarArr[0];
-        this.f18691c = new b();
+        this.f18690a = aVarArr[0];
+        this.f18692c = new b();
         new Thread(new a()).start();
-        return this.f18691c;
+        return this.f18692c;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -71,7 +71,7 @@ public class c extends AsyncTask {
     /* renamed from: f */
     public void onProgressUpdate(long[]... jArr) {
         super.onProgressUpdate(jArr);
-        a.b bVar = this.f18689a.f18685j;
+        a.b bVar = this.f18690a.f18686j;
         if (bVar != null) {
             long[] jArr2 = jArr[0];
             bVar.a(jArr2[0], jArr2[1]);
@@ -80,6 +80,6 @@ public class c extends AsyncTask {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void g() {
-        this.f18690b.set(true);
+        this.f18691b.set(true);
     }
 }

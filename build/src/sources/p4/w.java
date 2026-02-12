@@ -10,58 +10,58 @@ import p4.u;
 public final class w implements v {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r3.u f41471a;
+    private final r3.u f41472a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r3.i f41472b;
+    private final r3.i f41473b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final r3.h f41473c;
+    private final r3.h f41474c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final r3.a0 f41474d;
+    private final r3.a0 f41475d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final r3.a0 f41475e;
+    private final r3.a0 f41476e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final r3.a0 f41476f;
+    private final r3.a0 f41477f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final r3.a0 f41477g;
+    private final r3.a0 f41478g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final r3.a0 f41478h;
+    private final r3.a0 f41479h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final r3.a0 f41479i;
+    private final r3.a0 f41480i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final r3.a0 f41480j;
+    private final r3.a0 f41481j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final r3.a0 f41481k;
+    private final r3.a0 f41482k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final r3.a0 f41482l;
+    private final r3.a0 f41483l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final r3.a0 f41483m;
+    private final r3.a0 f41484m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final r3.a0 f41484n;
+    private final r3.a0 f41485n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final r3.a0 f41485o;
+    private final r3.a0 f41486o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final r3.a0 f41486p;
+    private final r3.a0 f41487p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final r3.a0 f41487q;
+    private final r3.a0 f41488q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final r3.a0 f41488r;
+    private final r3.a0 f41489r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends r3.a0 {
@@ -173,55 +173,55 @@ public final class w implements v {
         @Override // r3.i
         /* renamed from: k */
         public void i(x3.k kVar, u uVar) {
-            String str = uVar.f41446a;
+            String str = uVar.f41447a;
             if (str == null) {
                 kVar.S1(1);
             } else {
                 kVar.i1(1, str);
             }
-            b0 b0Var = b0.f41406a;
-            kVar.v1(2, b0.j(uVar.f41447b));
-            String str2 = uVar.f41448c;
+            b0 b0Var = b0.f41407a;
+            kVar.v1(2, b0.j(uVar.f41448b));
+            String str2 = uVar.f41449c;
             if (str2 == null) {
                 kVar.S1(3);
             } else {
                 kVar.i1(3, str2);
             }
-            String str3 = uVar.f41449d;
+            String str3 = uVar.f41450d;
             if (str3 == null) {
                 kVar.S1(4);
             } else {
                 kVar.i1(4, str3);
             }
-            byte[] o10 = androidx.work.b.o(uVar.f41450e);
+            byte[] o10 = androidx.work.b.o(uVar.f41451e);
             if (o10 == null) {
                 kVar.S1(5);
             } else {
                 kVar.D1(5, o10);
             }
-            byte[] o11 = androidx.work.b.o(uVar.f41451f);
+            byte[] o11 = androidx.work.b.o(uVar.f41452f);
             if (o11 == null) {
                 kVar.S1(6);
             } else {
                 kVar.D1(6, o11);
             }
-            kVar.v1(7, uVar.f41452g);
-            kVar.v1(8, uVar.f41453h);
-            kVar.v1(9, uVar.f41454i);
-            kVar.v1(10, uVar.f41456k);
-            kVar.v1(11, b0.a(uVar.f41457l));
-            kVar.v1(12, uVar.f41458m);
-            kVar.v1(13, uVar.f41459n);
-            kVar.v1(14, uVar.f41460o);
-            kVar.v1(15, uVar.f41461p);
-            kVar.v1(16, uVar.f41462q ? 1L : 0L);
-            kVar.v1(17, b0.h(uVar.f41463r));
+            kVar.v1(7, uVar.f41453g);
+            kVar.v1(8, uVar.f41454h);
+            kVar.v1(9, uVar.f41455i);
+            kVar.v1(10, uVar.f41457k);
+            kVar.v1(11, b0.a(uVar.f41458l));
+            kVar.v1(12, uVar.f41459m);
+            kVar.v1(13, uVar.f41460n);
+            kVar.v1(14, uVar.f41461o);
+            kVar.v1(15, uVar.f41462p);
+            kVar.v1(16, uVar.f41463q ? 1L : 0L);
+            kVar.v1(17, b0.h(uVar.f41464r));
             kVar.v1(18, uVar.i());
             kVar.v1(19, uVar.f());
             kVar.v1(20, uVar.g());
             kVar.v1(21, uVar.h());
             kVar.v1(22, uVar.j());
-            k4.d dVar = uVar.f41455j;
+            k4.d dVar = uVar.f41456j;
             if (dVar != null) {
                 kVar.v1(23, b0.g(dVar.d()));
                 kVar.v1(24, dVar.g() ? 1L : 0L);
@@ -347,24 +347,24 @@ public final class w implements v {
     }
 
     public w(r3.u uVar) {
-        this.f41471a = uVar;
-        this.f41472b = new i(uVar);
-        this.f41473c = new j(uVar);
-        this.f41474d = new k(uVar);
-        this.f41475e = new l(uVar);
-        this.f41476f = new m(uVar);
-        this.f41477g = new n(uVar);
-        this.f41478h = new o(uVar);
-        this.f41479i = new p(uVar);
-        this.f41480j = new q(uVar);
-        this.f41481k = new a(uVar);
-        this.f41482l = new b(uVar);
-        this.f41483m = new c(uVar);
-        this.f41484n = new d(uVar);
-        this.f41485o = new e(uVar);
-        this.f41486p = new f(uVar);
-        this.f41487q = new g(uVar);
-        this.f41488r = new h(uVar);
+        this.f41472a = uVar;
+        this.f41473b = new i(uVar);
+        this.f41474c = new j(uVar);
+        this.f41475d = new k(uVar);
+        this.f41476e = new l(uVar);
+        this.f41477f = new m(uVar);
+        this.f41478g = new n(uVar);
+        this.f41479h = new o(uVar);
+        this.f41480i = new p(uVar);
+        this.f41481j = new q(uVar);
+        this.f41482k = new a(uVar);
+        this.f41483l = new b(uVar);
+        this.f41484m = new c(uVar);
+        this.f41485n = new d(uVar);
+        this.f41486o = new e(uVar);
+        this.f41487p = new f(uVar);
+        this.f41488q = new g(uVar);
+        this.f41489r = new h(uVar);
     }
 
     public static List A() {
@@ -373,39 +373,39 @@ public final class w implements v {
 
     @Override // p4.v
     public void a(String str) {
-        this.f41471a.d();
-        x3.k b10 = this.f41474d.b();
+        this.f41472a.d();
+        x3.k b10 = this.f41475d.b();
         if (str == null) {
             b10.S1(1);
         } else {
             b10.i1(1, str);
         }
-        this.f41471a.e();
+        this.f41472a.e();
         try {
             b10.V();
-            this.f41471a.A();
+            this.f41472a.A();
         } finally {
-            this.f41471a.i();
-            this.f41474d.h(b10);
+            this.f41472a.i();
+            this.f41475d.h(b10);
         }
     }
 
     @Override // p4.v
     public void b(String str) {
-        this.f41471a.d();
-        x3.k b10 = this.f41477g.b();
+        this.f41472a.d();
+        x3.k b10 = this.f41478g.b();
         if (str == null) {
             b10.S1(1);
         } else {
             b10.i1(1, str);
         }
-        this.f41471a.e();
+        this.f41472a.e();
         try {
             b10.V();
-            this.f41471a.A();
+            this.f41472a.A();
         } finally {
-            this.f41471a.i();
-            this.f41477g.h(b10);
+            this.f41472a.i();
+            this.f41478g.h(b10);
         }
     }
 
@@ -425,8 +425,8 @@ public final class w implements v {
         byte[] blob3;
         r3.x i10 = r3.x.i("SELECT * FROM workspec WHERE last_enqueue_time >= ? AND state IN (2, 3, 5) ORDER BY last_enqueue_time DESC", 1);
         i10.v1(1, j10);
-        this.f41471a.d();
-        Cursor b10 = t3.b.b(this.f41471a, i10, false, null);
+        this.f41472a.d();
+        Cursor b10 = t3.b.b(this.f41472a, i10, false, null);
         try {
             int e10 = t3.a.e(b10, StackTraceHelper.ID_KEY);
             int e11 = t3.a.e(b10, "state");
@@ -594,42 +594,42 @@ public final class w implements v {
 
     @Override // p4.v
     public int d(k4.x xVar, String str) {
-        this.f41471a.d();
-        x3.k b10 = this.f41475e.b();
+        this.f41472a.d();
+        x3.k b10 = this.f41476e.b();
         b10.v1(1, b0.j(xVar));
         if (str == null) {
             b10.S1(2);
         } else {
             b10.i1(2, str);
         }
-        this.f41471a.e();
+        this.f41472a.e();
         try {
             int V = b10.V();
-            this.f41471a.A();
+            this.f41472a.A();
             return V;
         } finally {
-            this.f41471a.i();
-            this.f41475e.h(b10);
+            this.f41472a.i();
+            this.f41476e.h(b10);
         }
     }
 
     @Override // p4.v
     public void e(String str, int i10) {
-        this.f41471a.d();
-        x3.k b10 = this.f41488r.b();
+        this.f41472a.d();
+        x3.k b10 = this.f41489r.b();
         b10.v1(1, i10);
         if (str == null) {
             b10.S1(2);
         } else {
             b10.i1(2, str);
         }
-        this.f41471a.e();
+        this.f41472a.e();
         try {
             b10.V();
-            this.f41471a.A();
+            this.f41472a.A();
         } finally {
-            this.f41471a.i();
-            this.f41488r.h(b10);
+            this.f41472a.i();
+            this.f41489r.h(b10);
         }
     }
 
@@ -648,8 +648,8 @@ public final class w implements v {
         boolean z14;
         byte[] blob3;
         r3.x i10 = r3.x.i("SELECT * FROM workspec WHERE state=0 AND schedule_requested_at<>-1", 0);
-        this.f41471a.d();
-        Cursor b10 = t3.b.b(this.f41471a, i10, false, null);
+        this.f41472a.d();
+        Cursor b10 = t3.b.b(this.f41472a, i10, false, null);
         try {
             int e10 = t3.a.e(b10, StackTraceHelper.ID_KEY);
             int e11 = t3.a.e(b10, "state");
@@ -824,8 +824,8 @@ public final class w implements v {
         } else {
             i10.i1(1, str);
         }
-        this.f41471a.d();
-        Cursor b10 = t3.b.b(this.f41471a, i10, false, null);
+        this.f41472a.d();
+        Cursor b10 = t3.b.b(this.f41472a, i10, false, null);
         try {
             ArrayList arrayList = new ArrayList(b10.getCount());
             while (b10.moveToNext()) {
@@ -852,9 +852,9 @@ public final class w implements v {
         } else {
             i10.i1(1, str);
         }
-        this.f41471a.d();
+        this.f41472a.d();
         k4.x xVar = null;
-        Cursor b10 = t3.b.b(this.f41471a, i10, false, null);
+        Cursor b10 = t3.b.b(this.f41472a, i10, false, null);
         try {
             if (b10.moveToFirst()) {
                 if (b10.isNull(0)) {
@@ -863,7 +863,7 @@ public final class w implements v {
                     valueOf = Integer.valueOf(b10.getInt(0));
                 }
                 if (valueOf != null) {
-                    b0 b0Var = b0.f41406a;
+                    b0 b0Var = b0.f41407a;
                     xVar = b0.f(valueOf.intValue());
                 }
             }
@@ -909,8 +909,8 @@ public final class w implements v {
         } else {
             i10.i1(1, str);
         }
-        this.f41471a.d();
-        Cursor b10 = t3.b.b(this.f41471a, i10, false, null);
+        this.f41472a.d();
+        Cursor b10 = t3.b.b(this.f41472a, i10, false, null);
         try {
             e10 = t3.a.e(b10, StackTraceHelper.ID_KEY);
             e11 = t3.a.e(b10, "state");
@@ -1042,21 +1042,21 @@ public final class w implements v {
 
     @Override // p4.v
     public int j(String str) {
-        this.f41471a.d();
-        x3.k b10 = this.f41476f.b();
+        this.f41472a.d();
+        x3.k b10 = this.f41477f.b();
         if (str == null) {
             b10.S1(1);
         } else {
             b10.i1(1, str);
         }
-        this.f41471a.e();
+        this.f41472a.e();
         try {
             int V = b10.V();
-            this.f41471a.A();
+            this.f41472a.A();
             return V;
         } finally {
-            this.f41471a.i();
-            this.f41476f.h(b10);
+            this.f41472a.i();
+            this.f41477f.h(b10);
         }
     }
 
@@ -1069,8 +1069,8 @@ public final class w implements v {
         } else {
             i10.i1(1, str);
         }
-        this.f41471a.d();
-        Cursor b10 = t3.b.b(this.f41471a, i10, false, null);
+        this.f41472a.d();
+        Cursor b10 = t3.b.b(this.f41472a, i10, false, null);
         try {
             ArrayList arrayList = new ArrayList(b10.getCount());
             while (b10.moveToNext()) {
@@ -1104,8 +1104,8 @@ public final class w implements v {
         byte[] blob3;
         r3.x i11 = r3.x.i("SELECT * FROM workspec WHERE state=0 ORDER BY last_enqueue_time LIMIT ?", 1);
         i11.v1(1, i10);
-        this.f41471a.d();
-        Cursor b10 = t3.b.b(this.f41471a, i11, false, null);
+        this.f41472a.d();
+        Cursor b10 = t3.b.b(this.f41472a, i11, false, null);
         try {
             int e10 = t3.a.e(b10, StackTraceHelper.ID_KEY);
             int e11 = t3.a.e(b10, "state");
@@ -1273,49 +1273,49 @@ public final class w implements v {
 
     @Override // p4.v
     public int m() {
-        this.f41471a.d();
-        x3.k b10 = this.f41485o.b();
-        this.f41471a.e();
+        this.f41472a.d();
+        x3.k b10 = this.f41486o.b();
+        this.f41472a.e();
         try {
             int V = b10.V();
-            this.f41471a.A();
+            this.f41472a.A();
             return V;
         } finally {
-            this.f41471a.i();
-            this.f41485o.h(b10);
+            this.f41472a.i();
+            this.f41486o.h(b10);
         }
     }
 
     @Override // p4.v
     public void n(u uVar) {
-        this.f41471a.d();
-        this.f41471a.e();
+        this.f41472a.d();
+        this.f41472a.e();
         try {
-            this.f41472b.j(uVar);
-            this.f41471a.A();
+            this.f41473b.j(uVar);
+            this.f41472a.A();
         } finally {
-            this.f41471a.i();
+            this.f41472a.i();
         }
     }
 
     @Override // p4.v
     public int o(String str, long j10) {
-        this.f41471a.d();
-        x3.k b10 = this.f41484n.b();
+        this.f41472a.d();
+        x3.k b10 = this.f41485n.b();
         b10.v1(1, j10);
         if (str == null) {
             b10.S1(2);
         } else {
             b10.i1(2, str);
         }
-        this.f41471a.e();
+        this.f41472a.e();
         try {
             int V = b10.V();
-            this.f41471a.A();
+            this.f41472a.A();
             return V;
         } finally {
-            this.f41471a.i();
-            this.f41484n.h(b10);
+            this.f41472a.i();
+            this.f41485n.h(b10);
         }
     }
 
@@ -1328,8 +1328,8 @@ public final class w implements v {
         } else {
             i10.i1(1, str);
         }
-        this.f41471a.d();
-        Cursor b10 = t3.b.b(this.f41471a, i10, false, null);
+        this.f41472a.d();
+        Cursor b10 = t3.b.b(this.f41472a, i10, false, null);
         try {
             ArrayList arrayList = new ArrayList(b10.getCount());
             while (b10.moveToNext()) {
@@ -1363,8 +1363,8 @@ public final class w implements v {
         byte[] blob3;
         r3.x i11 = r3.x.i("SELECT * FROM workspec WHERE state=0 AND schedule_requested_at=-1 ORDER BY last_enqueue_time LIMIT (SELECT MAX(?-COUNT(*), 0) FROM workspec WHERE schedule_requested_at<>-1 AND LENGTH(content_uri_triggers)=0 AND state NOT IN (2, 3, 5))", 1);
         i11.v1(1, i10);
-        this.f41471a.d();
-        Cursor b10 = t3.b.b(this.f41471a, i11, false, null);
+        this.f41472a.d();
+        Cursor b10 = t3.b.b(this.f41472a, i11, false, null);
         try {
             int e10 = t3.a.e(b10, StackTraceHelper.ID_KEY);
             int e11 = t3.a.e(b10, "state");
@@ -1532,8 +1532,8 @@ public final class w implements v {
 
     @Override // p4.v
     public void r(String str, androidx.work.b bVar) {
-        this.f41471a.d();
-        x3.k b10 = this.f41478h.b();
+        this.f41472a.d();
+        x3.k b10 = this.f41479h.b();
         byte[] o10 = androidx.work.b.o(bVar);
         if (o10 == null) {
             b10.S1(1);
@@ -1545,33 +1545,33 @@ public final class w implements v {
         } else {
             b10.i1(2, str);
         }
-        this.f41471a.e();
+        this.f41472a.e();
         try {
             b10.V();
-            this.f41471a.A();
+            this.f41472a.A();
         } finally {
-            this.f41471a.i();
-            this.f41478h.h(b10);
+            this.f41472a.i();
+            this.f41479h.h(b10);
         }
     }
 
     @Override // p4.v
     public void s(String str, long j10) {
-        this.f41471a.d();
-        x3.k b10 = this.f41479i.b();
+        this.f41472a.d();
+        x3.k b10 = this.f41480i.b();
         b10.v1(1, j10);
         if (str == null) {
             b10.S1(2);
         } else {
             b10.i1(2, str);
         }
-        this.f41471a.e();
+        this.f41472a.e();
         try {
             b10.V();
-            this.f41471a.A();
+            this.f41472a.A();
         } finally {
-            this.f41471a.i();
-            this.f41479i.h(b10);
+            this.f41472a.i();
+            this.f41480i.h(b10);
         }
     }
 
@@ -1590,8 +1590,8 @@ public final class w implements v {
         boolean z14;
         byte[] blob3;
         r3.x i10 = r3.x.i("SELECT * FROM workspec WHERE state=1", 0);
-        this.f41471a.d();
-        Cursor b10 = t3.b.b(this.f41471a, i10, false, null);
+        this.f41472a.d();
+        Cursor b10 = t3.b.b(this.f41472a, i10, false, null);
         try {
             int e10 = t3.a.e(b10, StackTraceHelper.ID_KEY);
             int e11 = t3.a.e(b10, "state");
@@ -1761,8 +1761,8 @@ public final class w implements v {
     public boolean u() {
         boolean z10 = false;
         r3.x i10 = r3.x.i("SELECT COUNT(*) > 0 FROM workspec WHERE state NOT IN (2, 3, 5) LIMIT 1", 0);
-        this.f41471a.d();
-        Cursor b10 = t3.b.b(this.f41471a, i10, false, null);
+        this.f41472a.d();
+        Cursor b10 = t3.b.b(this.f41472a, i10, false, null);
         try {
             if (b10.moveToFirst()) {
                 if (b10.getInt(0) != 0) {
@@ -1791,8 +1791,8 @@ public final class w implements v {
         boolean z14;
         byte[] blob3;
         r3.x i10 = r3.x.i("SELECT * FROM workspec WHERE state=0 AND schedule_requested_at=-1 AND LENGTH(content_uri_triggers)<>0 ORDER BY last_enqueue_time", 0);
-        this.f41471a.d();
-        Cursor b10 = t3.b.b(this.f41471a, i10, false, null);
+        this.f41472a.d();
+        Cursor b10 = t3.b.b(this.f41472a, i10, false, null);
         try {
             int e10 = t3.a.e(b10, StackTraceHelper.ID_KEY);
             int e11 = t3.a.e(b10, "state");
@@ -1960,41 +1960,41 @@ public final class w implements v {
 
     @Override // p4.v
     public int w(String str) {
-        this.f41471a.d();
-        x3.k b10 = this.f41481k.b();
+        this.f41472a.d();
+        x3.k b10 = this.f41482k.b();
         if (str == null) {
             b10.S1(1);
         } else {
             b10.i1(1, str);
         }
-        this.f41471a.e();
+        this.f41472a.e();
         try {
             int V = b10.V();
-            this.f41471a.A();
+            this.f41472a.A();
             return V;
         } finally {
-            this.f41471a.i();
-            this.f41481k.h(b10);
+            this.f41472a.i();
+            this.f41482k.h(b10);
         }
     }
 
     @Override // p4.v
     public int x(String str) {
-        this.f41471a.d();
-        x3.k b10 = this.f41480j.b();
+        this.f41472a.d();
+        x3.k b10 = this.f41481j.b();
         if (str == null) {
             b10.S1(1);
         } else {
             b10.i1(1, str);
         }
-        this.f41471a.e();
+        this.f41472a.e();
         try {
             int V = b10.V();
-            this.f41471a.A();
+            this.f41472a.A();
             return V;
         } finally {
-            this.f41471a.i();
-            this.f41480j.h(b10);
+            this.f41472a.i();
+            this.f41481j.h(b10);
         }
     }
 
@@ -2002,8 +2002,8 @@ public final class w implements v {
     public int y() {
         int i10 = 0;
         r3.x i11 = r3.x.i("Select COUNT(*) FROM workspec WHERE LENGTH(content_uri_triggers)<>0 AND state NOT IN (2, 3, 5)", 0);
-        this.f41471a.d();
-        Cursor b10 = t3.b.b(this.f41471a, i11, false, null);
+        this.f41472a.d();
+        Cursor b10 = t3.b.b(this.f41472a, i11, false, null);
         try {
             if (b10.moveToFirst()) {
                 i10 = b10.getInt(0);
@@ -2017,21 +2017,21 @@ public final class w implements v {
 
     @Override // p4.v
     public void z(String str, int i10) {
-        this.f41471a.d();
-        x3.k b10 = this.f41483m.b();
+        this.f41472a.d();
+        x3.k b10 = this.f41484m.b();
         if (str == null) {
             b10.S1(1);
         } else {
             b10.i1(1, str);
         }
         b10.v1(2, i10);
-        this.f41471a.e();
+        this.f41472a.e();
         try {
             b10.V();
-            this.f41471a.A();
+            this.f41472a.A();
         } finally {
-            this.f41471a.i();
-            this.f41483m.h(b10);
+            this.f41472a.i();
+            this.f41484m.h(b10);
         }
     }
 }

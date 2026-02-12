@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot0 = var1;
         var2 = var3.useEffect;
         var1 = function() { // Environment: var0
-            _fun89005: for (var _fun89005_ip = 0;;) switch (_fun89005_ip) {
+            _fun87344: for (var _fun87344_ip = 0;;) switch (_fun87344_ip) {
                 case 0:
                     var3 = _closure1_slot0;
                     var1 = _closure1_slot1;
@@ -46,15 +46,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var3.isMetaQuest;
                     var1 = var1.bind(var3)();
                     if (var1) {
-                        _fun89005_ip = 123;
-                        continue _fun89005
+                        _fun87344_ip = 123;
+                        continue _fun87344
                     }
                 case 38:
                     var3 = _closure1_slot3;
                     var1 = 0;
                     if (!(var1 === var3)) {
-                        _fun89005_ip = 86;
-                        continue _fun89005
+                        _fun87344_ip = 86;
+                        continue _fun87344
                     }
                 case 48:
                     var3 = _closure1_slot0;
@@ -74,13 +74,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1 + 1;
                     _closure1_slot3 = var1;
                     var1 = function() { // Environment: var1
-                        _fun89006: for (var _fun89006_ip = 0;;) switch (_fun89006_ip) {
+                        _fun87345: for (var _fun87345_ip = 0;;) switch (_fun87345_ip) {
                             case 0:
                                 var1 = _closure2_slot0;
                                 var1 = var1.current;
                                 if (!var1) {
-                                    _fun89006_ip = 89;
-                                    continue _fun89006
+                                    _fun87345_ip = 89;
+                                    continue _fun87345
                                 }
                             case 15:
                                 var2 = _closure1_slot3;
@@ -88,8 +88,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 _closure1_slot3 = var3;
                                 var2 = 0;
                                 if (!(var2 === var3)) {
-                                    _fun89006_ip = 77;
-                                    continue _fun89006
+                                    _fun87345_ip = 77;
+                                    continue _fun87345
                                 }
                             case 35:
                                 var3 = _closure1_slot0;
@@ -124,4 +124,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useShopOrientationLock = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4112, 7873, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4112, 7616, 2]);

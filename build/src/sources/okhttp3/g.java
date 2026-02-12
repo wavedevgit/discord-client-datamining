@@ -19,19 +19,19 @@ import kotlin.jvm.internal.Lambda;
 public final class g {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f40556e = new a(null);
+    public static final a f40557e = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f40557a;
+    private final h f40558a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final c f40558b;
+    private final c f40559b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f40559c;
+    private final List f40560c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Lazy f40560d;
+    private final Lazy f40561d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -41,28 +41,10 @@ public final class g {
         static final class C0558a extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ List f40561d;
-
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            C0558a(List list) {
-                super(0);
-                this.f40561d = list;
-            }
-
-            @Override // kotlin.jvm.functions.Function0
-            public final List invoke() {
-                return this.f40561d;
-            }
-        }
-
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-        static final class b extends Lambda implements Function0 {
-
-            /* renamed from: d  reason: collision with root package name */
             final /* synthetic */ List f40562d;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            b(List list) {
+            C0558a(List list) {
                 super(0);
                 this.f40562d = list;
             }
@@ -70,6 +52,24 @@ public final class g {
             @Override // kotlin.jvm.functions.Function0
             public final List invoke() {
                 return this.f40562d;
+            }
+        }
+
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+        static final class b extends Lambda implements Function0 {
+
+            /* renamed from: d  reason: collision with root package name */
+            final /* synthetic */ List f40563d;
+
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            b(List list) {
+                super(0);
+                this.f40563d = list;
+            }
+
+            @Override // kotlin.jvm.functions.Function0
+            public final List invoke() {
+                return this.f40563d;
             }
         }
 
@@ -96,11 +96,11 @@ public final class g {
                     areEqual = Intrinsics.areEqual(cipherSuite, "SSL_NULL_WITH_NULL_NULL");
                 }
                 if (!areEqual) {
-                    c b10 = c.f40463b.b(cipherSuite);
+                    c b10 = c.f40464b.b(cipherSuite);
                     String protocol = sSLSession.getProtocol();
                     if (protocol != null) {
                         if (!Intrinsics.areEqual("NONE", protocol)) {
-                            h a10 = h.f40564e.a(protocol);
+                            h a10 = h.f40565e.a(protocol);
                             try {
                                 l10 = c(sSLSession.getPeerCertificates());
                             } catch (SSLPeerUnverifiedException unused) {
@@ -133,18 +133,18 @@ public final class g {
     static final class b extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Function0 f40563d;
+        final /* synthetic */ Function0 f40564d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(Function0 function0) {
             super(0);
-            this.f40563d = function0;
+            this.f40564d = function0;
         }
 
         @Override // kotlin.jvm.functions.Function0
         public final List invoke() {
             try {
-                return (List) this.f40563d.invoke();
+                return (List) this.f40564d.invoke();
             } catch (SSLPeerUnverifiedException unused) {
                 return CollectionsKt.l();
             }
@@ -156,10 +156,10 @@ public final class g {
         Intrinsics.checkNotNullParameter(cipherSuite, "cipherSuite");
         Intrinsics.checkNotNullParameter(localCertificates, "localCertificates");
         Intrinsics.checkNotNullParameter(peerCertificatesFn, "peerCertificatesFn");
-        this.f40557a = tlsVersion;
-        this.f40558b = cipherSuite;
-        this.f40559c = localCertificates;
-        this.f40560d = l.b(new b(peerCertificatesFn));
+        this.f40558a = tlsVersion;
+        this.f40559b = cipherSuite;
+        this.f40560c = localCertificates;
+        this.f40561d = l.b(new b(peerCertificatesFn));
     }
 
     private final String b(Certificate certificate) {
@@ -172,25 +172,25 @@ public final class g {
     }
 
     public final c a() {
-        return this.f40558b;
+        return this.f40559b;
     }
 
     public final List c() {
-        return this.f40559c;
+        return this.f40560c;
     }
 
     public final List d() {
-        return (List) this.f40560d.getValue();
+        return (List) this.f40561d.getValue();
     }
 
     public final h e() {
-        return this.f40557a;
+        return this.f40558a;
     }
 
     public boolean equals(Object obj) {
         if (obj instanceof g) {
             g gVar = (g) obj;
-            if (gVar.f40557a == this.f40557a && Intrinsics.areEqual(gVar.f40558b, this.f40558b) && Intrinsics.areEqual(gVar.d(), d()) && Intrinsics.areEqual(gVar.f40559c, this.f40559c)) {
+            if (gVar.f40558a == this.f40558a && Intrinsics.areEqual(gVar.f40559b, this.f40559b) && Intrinsics.areEqual(gVar.d(), d()) && Intrinsics.areEqual(gVar.f40560c, this.f40560c)) {
                 return true;
             }
             return false;
@@ -199,7 +199,7 @@ public final class g {
     }
 
     public int hashCode() {
-        return ((((((527 + this.f40557a.hashCode()) * 31) + this.f40558b.hashCode()) * 31) + d().hashCode()) * 31) + this.f40559c.hashCode();
+        return ((((((527 + this.f40558a.hashCode()) * 31) + this.f40559b.hashCode()) * 31) + d().hashCode()) * 31) + this.f40560c.hashCode();
     }
 
     public String toString() {
@@ -211,13 +211,13 @@ public final class g {
         String obj = arrayList.toString();
         StringBuilder sb2 = new StringBuilder();
         sb2.append("Handshake{tlsVersion=");
-        sb2.append(this.f40557a);
+        sb2.append(this.f40558a);
         sb2.append(" cipherSuite=");
-        sb2.append(this.f40558b);
+        sb2.append(this.f40559b);
         sb2.append(" peerCertificates=");
         sb2.append(obj);
         sb2.append(" localCertificates=");
-        List<Certificate> list = this.f40559c;
+        List<Certificate> list = this.f40560c;
         ArrayList arrayList2 = new ArrayList(CollectionsKt.w(list, 10));
         for (Certificate certificate2 : list) {
             arrayList2.add(b(certificate2));

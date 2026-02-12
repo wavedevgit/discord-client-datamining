@@ -5,16 +5,16 @@ import bj.c;
 final class i7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final i7 f44568a = new i7();
+    static final i7 f44569a = new i7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f44569b;
+    private static final bj.c f44570b;
 
     static {
         c.b a10 = bj.c.a("isFaceMeshEnabled");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44569b = a10.b(s1Var.b()).a();
+        f44570b = a10.b(s1Var.b()).a();
     }
 
     private i7() {

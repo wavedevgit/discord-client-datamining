@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
-        _fun84658: for (var _fun84658_ip = 0;;) switch (_fun84658_ip) {
+        _fun83457: for (var _fun83457_ip = 0;;) switch (_fun83457_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.questEnrollmentBlockedUntil;
@@ -24,8 +24,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var2 = var1;
                 if (!(var0 == var2)) {
-                    _fun84658_ip = 79;
-                    continue _fun84658
+                    _fun83457_ip = 79;
+                    continue _fun83457
                 }
             case 51:
                 var5 = global;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0 == var1;
                 var0 = null;
                 if (var1) {
-                    _fun84658_ip = 539;
-                    continue _fun84658
+                    _fun83457_ip = 539;
+                    continue _fun83457
                 }
             case 194:
                 var3 = _closure1_slot5;
@@ -229,21 +229,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/quests/native/QuestEnrollmentBlockedBottomSheet/QuestEnrollmentBlockedBottomSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun84659: for (var _fun84659_ip = 0;;) switch (_fun84659_ip) {
+        _fun83458: for (var _fun83458_ip = 0;;) switch (_fun83458_ip) {
             case 0:
                 var0 = arg0;
-                var1 = var0.questId;
-                var _closure2_slot0 = var1;
-                var1 = var0.questEnrollmentBlockedUntil;
-                var _closure2_slot1 = var1;
+                var8 = var0.questId;
+                var _closure2_slot0 = var8;
+                var4 = var0.questEnrollmentBlockedUntil;
                 var7 = var0.questContentPosition;
                 var6 = var0.sourceQuestContent;
-                var _closure2_slot2 = var6;
+                var3 = _closure1_slot5;
+                var2 = _closure1_slot7;
+                var0 = {};
+                var0.questId = var8;
+                var0.questEnrollmentBlockedUntil = var4;
+                var0.sourceQuestContent = var6;
+                var4 = undefined;
+                var0 = var3.bind(var4)(var2, var0);
+                var _closure2_slot1 = var0;
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
                 var0 = 6;
                 var0 = var3[var0];
-                var4 = undefined;
                 var8 = var2.bind(var4)(var0);
                 var3 = var8.useStateFromStores;
                 var0 = _closure1_slot4;
@@ -260,10 +266,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var2 = var0 == var8;
                 if (var2) {
-                    _fun84659_ip = 205;
-                    continue _fun84659
+                    _fun83458_ip = 232;
+                    continue _fun83458
                 }
-            case 105:
+            case 132:
                 var3 = _closure1_slot5;
                 var9 = _closure1_slot0;
                 var10 = _closure1_slot2;
@@ -284,25 +290,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.questContentPosition = var7;
                 var1.sourceQuestContent = var6;
                 var5 = function() {
-                    var3 = _closure1_slot5;
-                    var2 = _closure1_slot7;
-                    var1 = {};
-                    var4 = _closure2_slot0;
-                    var1.questId = var4;
-                    var4 = _closure2_slot1;
-                    var1.questEnrollmentBlockedUntil = var4;
-                    var0 = _closure2_slot2;
-                    var1.sourceQuestContent = var0;
-                    var0 = undefined;
-                    var0 = var3.bind(var0)(var2, var1);
+                    var0 = _closure2_slot1;
                     return var0;
                 };
                 var1.children = var5;
                 var0 = var3.bind(var4)(var2, var1);
-            case 205:
+            case 232:
                 return var0;
         }
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 5286, 33, 1297, 671, 566, 10082, 5291, 7142, 4941, 3938, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 5254, 33, 1297, 671, 566, 10011, 5259, 7226, 4907, 3938, 1234, 2]);

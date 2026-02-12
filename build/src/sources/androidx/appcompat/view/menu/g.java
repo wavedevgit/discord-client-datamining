@@ -358,31 +358,31 @@ public final class g implements t1.b {
         Resources resources = this.f1485n.w().getResources();
         StringBuilder sb2 = new StringBuilder();
         if (ViewConfiguration.get(this.f1485n.w()).hasPermanentMenuKey()) {
-            sb2.append(resources.getString(f.h.f23408m));
+            sb2.append(resources.getString(f.h.f23409m));
         }
         if (this.f1485n.J()) {
             i10 = this.f1482k;
         } else {
             i10 = this.f1480i;
         }
-        d(sb2, i10, 65536, resources.getString(f.h.f23404i));
-        d(sb2, i10, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, resources.getString(f.h.f23400e));
-        d(sb2, i10, 2, resources.getString(f.h.f23399d));
-        d(sb2, i10, 1, resources.getString(f.h.f23405j));
-        d(sb2, i10, 4, resources.getString(f.h.f23407l));
-        d(sb2, i10, 8, resources.getString(f.h.f23403h));
+        d(sb2, i10, 65536, resources.getString(f.h.f23405i));
+        d(sb2, i10, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, resources.getString(f.h.f23401e));
+        d(sb2, i10, 2, resources.getString(f.h.f23400d));
+        d(sb2, i10, 1, resources.getString(f.h.f23406j));
+        d(sb2, i10, 4, resources.getString(f.h.f23408l));
+        d(sb2, i10, 8, resources.getString(f.h.f23404h));
         if (g10 != '\b') {
             if (g10 != '\n') {
                 if (g10 != ' ') {
                     sb2.append(g10);
                 } else {
-                    sb2.append(resources.getString(f.h.f23406k));
+                    sb2.append(resources.getString(f.h.f23407k));
                 }
             } else {
-                sb2.append(resources.getString(f.h.f23402g));
+                sb2.append(resources.getString(f.h.f23403g));
             }
         } else {
-            sb2.append(resources.getString(f.h.f23401f));
+            sb2.append(resources.getString(f.h.f23402f));
         }
         return sb2.toString();
     }

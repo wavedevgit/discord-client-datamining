@@ -7,7 +7,7 @@ import kotlinx.coroutines.CoroutineDispatcher;
 final class k extends CoroutineDispatcher {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final k f24380i = new k();
+    public static final k f24381i = new k();
 
     private k() {
     }
@@ -15,7 +15,7 @@ final class k extends CoroutineDispatcher {
     @Override // kotlinx.coroutines.CoroutineDispatcher
     public CoroutineDispatcher B1(int i10, String str) {
         m.a(i10);
-        if (i10 >= j.f24377d) {
+        if (i10 >= j.f24378d) {
             return m.b(this, str);
         }
         return super.B1(i10, str);
@@ -23,7 +23,7 @@ final class k extends CoroutineDispatcher {
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
     public void b1(CoroutineContext coroutineContext, Runnable runnable) {
-        c.f24364t.a2(runnable, true, false);
+        c.f24365t.a2(runnable, true, false);
     }
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
@@ -33,6 +33,6 @@ final class k extends CoroutineDispatcher {
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
     public void w1(CoroutineContext coroutineContext, Runnable runnable) {
-        c.f24364t.a2(runnable, true, true);
+        c.f24365t.a2(runnable, true, true);
     }
 }

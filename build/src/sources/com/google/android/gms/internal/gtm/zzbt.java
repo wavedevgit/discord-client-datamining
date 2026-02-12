@@ -8,7 +8,7 @@ public abstract class zzbt {
 
     static {
         String str;
-        String replaceAll = String.valueOf(g.f14492a / 1000).replaceAll("(\\d+)(\\d)(\\d\\d)", "$1.$2.$3");
+        String replaceAll = String.valueOf(g.f14493a / 1000).replaceAll("(\\d+)(\\d)(\\d\\d)", "$1.$2.$3");
         zza = replaceAll;
         String valueOf = String.valueOf(replaceAll);
         if (valueOf.length() != 0) {

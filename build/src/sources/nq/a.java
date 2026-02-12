@@ -7,32 +7,32 @@ import pq.k5;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final k5 f38240a;
+    private final k5 f38241a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final View f38241b;
+    private final View f38242b;
 
     public a(k5 component, View view) {
         Intrinsics.checkNotNullParameter(component, "component");
         Intrinsics.checkNotNullParameter(view, "view");
-        this.f38240a = component;
-        this.f38241b = view;
+        this.f38241a = component;
+        this.f38242b = view;
     }
 
     public final k5 a() {
-        return this.f38240a;
+        return this.f38241a;
     }
 
     public final View b() {
-        return this.f38241b;
+        return this.f38242b;
     }
 
     public final k5 c() {
-        return this.f38240a;
+        return this.f38241a;
     }
 
     public final View d() {
-        return this.f38241b;
+        return this.f38242b;
     }
 
     public boolean equals(Object obj) {
@@ -43,19 +43,19 @@ public final class a {
             return false;
         }
         a aVar = (a) obj;
-        if (Intrinsics.areEqual(this.f38240a, aVar.f38240a) && Intrinsics.areEqual(this.f38241b, aVar.f38241b)) {
+        if (Intrinsics.areEqual(this.f38241a, aVar.f38241a) && Intrinsics.areEqual(this.f38242b, aVar.f38242b)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f38240a.hashCode() * 31) + this.f38241b.hashCode();
+        return (this.f38241a.hashCode() * 31) + this.f38242b.hashCode();
     }
 
     public String toString() {
-        k5 k5Var = this.f38240a;
-        View view = this.f38241b;
+        k5 k5Var = this.f38241a;
+        View view = this.f38242b;
         return "ComponentView(component=" + k5Var + ", view=" + view + ")";
     }
 }

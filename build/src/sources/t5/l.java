@@ -3,26 +3,26 @@ package t5;
 public class l implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f48566a;
+    private final String f48567a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final s5.o f48567b;
+    private final s5.o f48568b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final s5.o f48568c;
+    private final s5.o f48569c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final s5.b f48569d;
+    private final s5.b f48570d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f48570e;
+    private final boolean f48571e;
 
     public l(String str, s5.o oVar, s5.o oVar2, s5.b bVar, boolean z10) {
-        this.f48566a = str;
-        this.f48567b = oVar;
-        this.f48568c = oVar2;
-        this.f48569d = bVar;
-        this.f48570e = z10;
+        this.f48567a = str;
+        this.f48568b = oVar;
+        this.f48569c = oVar2;
+        this.f48570d = bVar;
+        this.f48571e = z10;
     }
 
     @Override // t5.c
@@ -31,26 +31,26 @@ public class l implements c {
     }
 
     public s5.b b() {
-        return this.f48569d;
+        return this.f48570d;
     }
 
     public String c() {
-        return this.f48566a;
+        return this.f48567a;
     }
 
     public s5.o d() {
-        return this.f48567b;
+        return this.f48568b;
     }
 
     public s5.o e() {
-        return this.f48568c;
+        return this.f48569c;
     }
 
     public boolean f() {
-        return this.f48570e;
+        return this.f48571e;
     }
 
     public String toString() {
-        return "RectangleShape{position=" + this.f48567b + ", size=" + this.f48568c + '}';
+        return "RectangleShape{position=" + this.f48568b + ", size=" + this.f48569c + '}';
     }
 }

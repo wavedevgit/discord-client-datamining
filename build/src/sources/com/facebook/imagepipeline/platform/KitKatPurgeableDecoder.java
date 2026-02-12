@@ -15,11 +15,11 @@ import s8.h;
 public class KitKatPurgeableDecoder extends DalvikPurgeableDecoder {
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.facebook.imagepipeline.memory.d f11270c;
+    private final com.facebook.imagepipeline.memory.d f11271c;
 
     @d
     public KitKatPurgeableDecoder(com.facebook.imagepipeline.memory.d dVar) {
-        this.f11270c = dVar;
+        this.f11271c = dVar;
     }
 
     private static void h(byte[] bArr, int i10) {
@@ -31,7 +31,7 @@ public class KitKatPurgeableDecoder extends DalvikPurgeableDecoder {
     protected Bitmap c(CloseableReference closeableReference, BitmapFactory.Options options) {
         h hVar = (h) closeableReference.J();
         int size = hVar.size();
-        CloseableReference a10 = this.f11270c.a(size);
+        CloseableReference a10 = this.f11271c.a(size);
         try {
             byte[] bArr = (byte[]) a10.J();
             hVar.q(0, bArr, 0, size);
@@ -48,7 +48,7 @@ public class KitKatPurgeableDecoder extends DalvikPurgeableDecoder {
         if (DalvikPurgeableDecoder.e(closeableReference, i10)) {
             bArr = null;
         } else {
-            bArr = DalvikPurgeableDecoder.f11256b;
+            bArr = DalvikPurgeableDecoder.f11257b;
         }
         h hVar = (h) closeableReference.J();
         if (i10 <= hVar.size()) {
@@ -58,7 +58,7 @@ public class KitKatPurgeableDecoder extends DalvikPurgeableDecoder {
         }
         j.b(Boolean.valueOf(z10));
         int i11 = i10 + 2;
-        CloseableReference a10 = this.f11270c.a(i11);
+        CloseableReference a10 = this.f11271c.a(i11);
         try {
             byte[] bArr2 = (byte[]) a10.J();
             hVar.q(0, bArr2, 0, i10);

@@ -26,28 +26,28 @@ public final class ErrorModuleDescriptor implements ModuleDescriptor {
     public static final ErrorModuleDescriptor INSTANCE = new ErrorModuleDescriptor();
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Name f34677d;
+    private static final Name f34678d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final List f34678e;
+    private static final List f34679e;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final List f34679i;
+    private static final List f34680i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final Set f34680o;
+    private static final Set f34681o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Lazy f34681p;
+    private static final Lazy f34682p;
 
     static {
         Name special = Name.special(ErrorEntity.ERROR_MODULE.getDebugText());
         Intrinsics.checkNotNullExpressionValue(special, "special(...)");
-        f34677d = special;
-        f34678e = CollectionsKt.l();
-        f34679i = CollectionsKt.l();
-        f34680o = x0.d();
-        f34681p = l.b(a.f34708d);
+        f34678d = special;
+        f34679e = CollectionsKt.l();
+        f34680i = CollectionsKt.l();
+        f34681o = x0.d();
+        f34682p = l.b(a.f34709d);
     }
 
     private ErrorModuleDescriptor() {
@@ -73,7 +73,7 @@ public final class ErrorModuleDescriptor implements ModuleDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ModuleDescriptor
     @NotNull
     public KotlinBuiltIns getBuiltIns() {
-        return (KotlinBuiltIns) f34681p.getValue();
+        return (KotlinBuiltIns) f34682p.getValue();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ModuleDescriptor
@@ -90,7 +90,7 @@ public final class ErrorModuleDescriptor implements ModuleDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ModuleDescriptor
     @NotNull
     public List<ModuleDescriptor> getExpectedByModules() {
-        return f34679i;
+        return f34680i;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.Named
@@ -114,7 +114,7 @@ public final class ErrorModuleDescriptor implements ModuleDescriptor {
 
     @NotNull
     public Name getStableName() {
-        return f34677d;
+        return f34678d;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ModuleDescriptor

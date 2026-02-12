@@ -8,18 +8,18 @@ public enum e implements bu.y {
     
 
     /* renamed from: q  reason: collision with root package name */
-    private static e[] f21160q = values();
+    private static e[] f21161q = values();
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient int f21162d;
+    private final transient int f21163d;
 
     e(int i10) {
-        this.f21162d = i10;
+        this.f21163d = i10;
     }
 
     public static e d(int i10) {
         e[] eVarArr;
-        for (e eVar : f21160q) {
+        for (e eVar : f21161q) {
             if (eVar.a() == i10) {
                 return eVar;
             }
@@ -29,6 +29,6 @@ public enum e implements bu.y {
 
     @Override // bu.y
     public int a() {
-        return this.f21162d;
+        return this.f21163d;
     }
 }

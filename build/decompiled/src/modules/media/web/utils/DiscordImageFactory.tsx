@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = 'create';
         var0.key = var2;
         var1 = function arg0() {
-            _fun37870: for (var _fun37870_ip = 0;;) switch (_fun37870_ip) {
+            _fun37892: for (var _fun37892_ip = 0;;) switch (_fun37892_ip) {
                 case 0:
                     var3 = arg0;
                     var0 = global;
@@ -72,8 +72,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var0 == var2;
                     var5 = undefined;
                     if (var6) {
-                        _fun37870_ip = 115;
-                        continue _fun37870
+                        _fun37892_ip = 115;
+                        continue _fun37892
                     }
                 case 109:
                     var5 = var2.mimeType;
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = 'image/png';
                     var0 = null;
                     if (!(var2 === var5)) {
-                        _fun37870_ip = 163;
-                        continue _fun37870
+                        _fun37892_ip = 163;
+                        continue _fun37892
                     }
                 case 127:
                     var2 = _closure1_slot0;

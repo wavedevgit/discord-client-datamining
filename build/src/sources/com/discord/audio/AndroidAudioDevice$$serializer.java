@@ -44,8 +44,8 @@ public /* synthetic */ class AndroidAudioDevice$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = AndroidAudioDevice.$childSerializers;
-        p0 p0Var = p0.f50048a;
-        return new KSerializer[]{p0Var, lazyArr[1].getValue(), p0Var, n2.f50032a};
+        p0 p0Var = p0.f50049a;
+        return new KSerializer[]{p0Var, lazyArr[1].getValue(), p0Var, n2.f50033a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

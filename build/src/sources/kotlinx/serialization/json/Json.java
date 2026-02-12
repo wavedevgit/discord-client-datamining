@@ -19,16 +19,16 @@ import wt.c;
 public abstract class Json implements a0 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f35099d = new a(null);
+    public static final a f35100d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final d f35100a;
+    private final d f35101a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final wt.b f35101b;
+    private final wt.b f35102b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final x f35102c;
+    private final x f35103c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends Json {
@@ -47,7 +47,7 @@ public abstract class Json implements a0 {
 
     @Override // qt.l
     public wt.b a() {
-        return this.f35101b;
+        return this.f35102b;
     }
 
     @Override // qt.a0
@@ -55,7 +55,7 @@ public abstract class Json implements a0 {
         Intrinsics.checkNotNullParameter(deserializer, "deserializer");
         Intrinsics.checkNotNullParameter(string, "string");
         z0 a10 = a1.a(this, string);
-        Object G = new w0(this, e1.f51888i, a10, deserializer.getDescriptor(), null).G(deserializer);
+        Object G = new w0(this, e1.f51889i, a10, deserializer.getDescriptor(), null).G(deserializer);
         a10.v();
         return G;
     }
@@ -79,21 +79,21 @@ public abstract class Json implements a0 {
     }
 
     public final d e() {
-        return this.f35100a;
+        return this.f35101a;
     }
 
     public final x f() {
-        return this.f35102c;
+        return this.f35103c;
     }
 
     public final JsonElement g(String string) {
         Intrinsics.checkNotNullParameter(string, "string");
-        return (JsonElement) b(ut.o.f51250a, string);
+        return (JsonElement) b(ut.o.f51251a, string);
     }
 
     private Json(d dVar, wt.b bVar) {
-        this.f35100a = dVar;
-        this.f35101b = bVar;
-        this.f35102c = new x();
+        this.f35101a = dVar;
+        this.f35102b = bVar;
+        this.f35103c = new x();
     }
 }

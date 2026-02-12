@@ -21,7 +21,7 @@ public abstract class JsonElement {
 
         @NotNull
         public final KSerializer serializer() {
-            return o.f51250a;
+            return o.f51251a;
         }
 
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {

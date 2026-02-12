@@ -12,46 +12,46 @@ public class g extends i {
     public static final Parcelable.Creator<g> CREATOR = new n1();
 
     /* renamed from: d  reason: collision with root package name */
-    private final v4 f54641d;
+    private final v4 f54642d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final v4 f54642e;
+    private final v4 f54643e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final v4 f54643i;
+    private final v4 f54644i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String[] f54644o;
+    private final String[] f54645o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g(byte[] bArr, byte[] bArr2, byte[] bArr3, String[] strArr) {
         byte[] bArr4 = (byte[]) hf.q.l(bArr);
-        v4 v4Var = v4.f14816e;
+        v4 v4Var = v4.f14817e;
         v4 o10 = v4.o(bArr4, 0, bArr4.length);
         byte[] bArr5 = (byte[]) hf.q.l(bArr2);
         v4 o11 = v4.o(bArr5, 0, bArr5.length);
         byte[] bArr6 = (byte[]) hf.q.l(bArr3);
         v4 o12 = v4.o(bArr6, 0, bArr6.length);
-        this.f54641d = (v4) hf.q.l(o10);
-        this.f54642e = (v4) hf.q.l(o11);
-        this.f54643i = (v4) hf.q.l(o12);
-        this.f54644o = (String[]) hf.q.l(strArr);
+        this.f54642d = (v4) hf.q.l(o10);
+        this.f54643e = (v4) hf.q.l(o11);
+        this.f54644i = (v4) hf.q.l(o12);
+        this.f54645o = (String[]) hf.q.l(strArr);
     }
 
     public byte[] b() {
-        return this.f54643i.p();
+        return this.f54644i.p();
     }
 
     public byte[] c() {
-        return this.f54642e.p();
+        return this.f54643e.p();
     }
 
     public byte[] d() {
-        return this.f54641d.p();
+        return this.f54642d.p();
     }
 
     public String[] e() {
-        return this.f54644o;
+        return this.f54645o;
     }
 
     public boolean equals(Object obj) {
@@ -59,7 +59,7 @@ public class g extends i {
             return false;
         }
         g gVar = (g) obj;
-        if (!hf.o.a(this.f54641d, gVar.f54641d) || !hf.o.a(this.f54642e, gVar.f54642e) || !hf.o.a(this.f54643i, gVar.f54643i)) {
+        if (!hf.o.a(this.f54642d, gVar.f54642d) || !hf.o.a(this.f54643e, gVar.f54643e) || !hf.o.a(this.f54644i, gVar.f54644i)) {
             return false;
         }
         return true;
@@ -79,7 +79,7 @@ public class g extends i {
     }
 
     public int hashCode() {
-        return hf.o.b(Integer.valueOf(hf.o.b(this.f54641d)), Integer.valueOf(hf.o.b(this.f54642e)), Integer.valueOf(hf.o.b(this.f54643i)));
+        return hf.o.b(Integer.valueOf(hf.o.b(this.f54642d)), Integer.valueOf(hf.o.b(this.f54643e)), Integer.valueOf(hf.o.b(this.f54644i)));
     }
 
     public String toString() {
@@ -93,7 +93,7 @@ public class g extends i {
         u2 d13 = u2.d();
         byte[] b10 = b();
         a10.b("attestationObject", d13.e(b10, 0, b10.length));
-        a10.b("transports", Arrays.toString(this.f54644o));
+        a10.b("transports", Arrays.toString(this.f54645o));
         return a10.toString();
     }
 

@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/interaction_components/content_inventory_entry/utils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56748: for (var _fun56748_ip = 0;;) switch (_fun56748_ip) {
+        _fun56770: for (var _fun56770_ip = 0;;) switch (_fun56770_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -42,8 +42,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var2 != var0;
                 var2 = 0;
                 if (!var6) {
-                    _fun56748_ip = 53;
-                    continue _fun56748
+                    _fun56770_ip = 53;
+                    continue _fun56770
                 }
             case 50:
                 var2 = var0;
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.IS_CONTENT_INVENTORY_ENTRY;
                 var0 = var4.bind(var5)(var2, var0);
                 if (!var0) {
-                    _fun56748_ip = 107;
-                    continue _fun56748
+                    _fun56770_ip = 107;
+                    continue _fun56770
                 }
             case 72:
                 var2 = _closure1_slot0;

@@ -17,28 +17,28 @@ import org.jetbrains.annotations.NotNull;
 public final class LocationDataJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20822a;
+    private final m.b f20823a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f20823b;
+    private final h f20824b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f20824c;
+    private final h f20825c;
 
     /* renamed from: d  reason: collision with root package name */
-    private volatile Constructor f20825d;
+    private volatile Constructor f20826d;
 
     public LocationDataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a(StackTraceHelper.ID_KEY, "address_street_1", "address_street_2", "address_city", "address_subdivision", "address_postal_code", "address_country_code", "address_business_name");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20822a = a10;
+        this.f20823a = a10;
         h f10 = moshi.f(String.class, x0.d(), StackTraceHelper.ID_KEY);
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20823b = f10;
+        this.f20824b = f10;
         h f11 = moshi.f(String.class, x0.d(), "addressStreet1");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f20824c = f11;
+        this.f20825c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -56,44 +56,44 @@ public final class LocationDataJsonAdapter extends h {
         String str7 = null;
         String str8 = null;
         while (reader.hasNext()) {
-            switch (reader.J(this.f20822a)) {
+            switch (reader.J(this.f20823a)) {
                 case -1:
                     reader.z0();
                     reader.T();
                     break;
                 case 0:
-                    str = (String) this.f20823b.fromJson(reader);
+                    str = (String) this.f20824b.fromJson(reader);
                     if (str != null) {
                         break;
                     } else {
                         throw c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
                     }
                 case 1:
-                    str2 = (String) this.f20824c.fromJson(reader);
+                    str2 = (String) this.f20825c.fromJson(reader);
                     i10 &= -3;
                     break;
                 case 2:
-                    str3 = (String) this.f20824c.fromJson(reader);
+                    str3 = (String) this.f20825c.fromJson(reader);
                     i10 &= -5;
                     break;
                 case 3:
-                    str4 = (String) this.f20824c.fromJson(reader);
+                    str4 = (String) this.f20825c.fromJson(reader);
                     i10 &= -9;
                     break;
                 case 4:
-                    str5 = (String) this.f20824c.fromJson(reader);
+                    str5 = (String) this.f20825c.fromJson(reader);
                     i10 &= -17;
                     break;
                 case 5:
-                    str6 = (String) this.f20824c.fromJson(reader);
+                    str6 = (String) this.f20825c.fromJson(reader);
                     i10 &= -33;
                     break;
                 case 6:
-                    str7 = (String) this.f20824c.fromJson(reader);
+                    str7 = (String) this.f20825c.fromJson(reader);
                     i10 &= -65;
                     break;
                 case 7:
-                    str8 = (String) this.f20824c.fromJson(reader);
+                    str8 = (String) this.f20825c.fromJson(reader);
                     i10 &= -129;
                     break;
             }
@@ -121,10 +121,10 @@ public final class LocationDataJsonAdapter extends h {
         String str22 = str3;
         String str23 = str2;
         String str24 = str;
-        Constructor constructor = this.f20825d;
+        Constructor constructor = this.f20826d;
         if (constructor == null) {
-            constructor = LocationData.class.getDeclaredConstructor(String.class, String.class, String.class, String.class, String.class, String.class, String.class, String.class, Integer.TYPE, c.f21827c);
-            this.f20825d = constructor;
+            constructor = LocationData.class.getDeclaredConstructor(String.class, String.class, String.class, String.class, String.class, String.class, String.class, String.class, Integer.TYPE, c.f21828c);
+            this.f20826d = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
         if (str24 != null) {
@@ -142,21 +142,21 @@ public final class LocationDataJsonAdapter extends h {
         if (locationData != null) {
             writer.i();
             writer.J(StackTraceHelper.ID_KEY);
-            this.f20823b.toJson(writer, locationData.h());
+            this.f20824b.toJson(writer, locationData.h());
             writer.J("address_street_1");
-            this.f20824c.toJson(writer, locationData.e());
+            this.f20825c.toJson(writer, locationData.e());
             writer.J("address_street_2");
-            this.f20824c.toJson(writer, locationData.f());
+            this.f20825c.toJson(writer, locationData.f());
             writer.J("address_city");
-            this.f20824c.toJson(writer, locationData.b());
+            this.f20825c.toJson(writer, locationData.b());
             writer.J("address_subdivision");
-            this.f20824c.toJson(writer, locationData.g());
+            this.f20825c.toJson(writer, locationData.g());
             writer.J("address_postal_code");
-            this.f20824c.toJson(writer, locationData.d());
+            this.f20825c.toJson(writer, locationData.d());
             writer.J("address_country_code");
-            this.f20824c.toJson(writer, locationData.c());
+            this.f20825c.toJson(writer, locationData.c());
             writer.J("address_business_name");
-            this.f20824c.toJson(writer, locationData.a());
+            this.f20825c.toJson(writer, locationData.a());
             writer.s();
             return;
         }

@@ -20,30 +20,30 @@ import l5.h0;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f8388a = new g();
+    public static final g f8389a = new g();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a implements View.OnAttachStateChangeListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ boolean f8389d;
+        final /* synthetic */ boolean f8390d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ LottieAnimationView f8390e;
+        final /* synthetic */ LottieAnimationView f8391e;
 
         a(boolean z10, LottieAnimationView lottieAnimationView) {
-            this.f8389d = z10;
-            this.f8390e = lottieAnimationView;
+            this.f8390d = z10;
+            this.f8391e = lottieAnimationView;
         }
 
         @Override // android.view.View.OnAttachStateChangeListener
         public void onViewAttachedToWindow(View v10) {
             Intrinsics.checkNotNullParameter(v10, "v");
             LottieAnimationView lottieAnimationView = (LottieAnimationView) v10;
-            if (this.f8389d) {
-                this.f8390e.playAnimation();
+            if (this.f8390d) {
+                this.f8391e.playAnimation();
             } else {
-                this.f8390e.w();
+                this.f8391e.w();
             }
             lottieAnimationView.removeOnAttachStateChangeListener(this);
         }

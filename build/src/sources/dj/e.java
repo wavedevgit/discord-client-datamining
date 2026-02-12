@@ -13,33 +13,33 @@ import java.util.Map;
 public final class e implements bj.e, g {
 
     /* renamed from: a  reason: collision with root package name */
-    private e f21742a = null;
+    private e f21743a = null;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f21743b = true;
+    private boolean f21744b = true;
 
     /* renamed from: c  reason: collision with root package name */
-    private final JsonWriter f21744c;
+    private final JsonWriter f21745c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f21745d;
+    private final Map f21746d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f21746e;
+    private final Map f21747e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final bj.d f21747f;
+    private final bj.d f21748f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f21748g;
+    private final boolean f21749g;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e(Writer writer, Map map, Map map2, bj.d dVar, boolean z10) {
-        this.f21744c = new JsonWriter(writer);
-        this.f21745d = map;
-        this.f21746e = map2;
-        this.f21747f = dVar;
-        this.f21748g = z10;
+        this.f21745c = new JsonWriter(writer);
+        this.f21746d = map;
+        this.f21747e = map2;
+        this.f21748f = dVar;
+        this.f21749g = z10;
     }
 
     private boolean o(Object obj) {
@@ -51,9 +51,9 @@ public final class e implements bj.e, g {
 
     private e r(String str, Object obj) {
         t();
-        this.f21744c.name(str);
+        this.f21745c.name(str);
         if (obj == null) {
-            this.f21744c.nullValue();
+            this.f21745c.nullValue();
             return this;
         }
         return h(obj, false);
@@ -64,18 +64,18 @@ public final class e implements bj.e, g {
             return this;
         }
         t();
-        this.f21744c.name(str);
+        this.f21745c.name(str);
         return h(obj, false);
     }
 
     private void t() {
-        if (this.f21743b) {
-            e eVar = this.f21742a;
+        if (this.f21744b) {
+            e eVar = this.f21743a;
             if (eVar != null) {
                 eVar.t();
-                this.f21742a.f21743b = false;
-                this.f21742a = null;
-                this.f21744c.endObject();
+                this.f21743a.f21744b = false;
+                this.f21743a = null;
+                this.f21745c.endObject();
                 return;
             }
             return;
@@ -100,13 +100,13 @@ public final class e implements bj.e, g {
 
     public e f(int i10) {
         t();
-        this.f21744c.value(i10);
+        this.f21745c.value(i10);
         return this;
     }
 
     public e g(long j10) {
         t();
-        this.f21744c.value(j10);
+        this.f21745c.value(j10);
         return this;
     }
 
@@ -122,10 +122,10 @@ public final class e implements bj.e, g {
             }
             throw new bj.b(String.format("%s cannot be encoded inline", cls));
         } else if (obj == null) {
-            this.f21744c.nullValue();
+            this.f21745c.nullValue();
             return this;
         } else if (obj instanceof Number) {
-            this.f21744c.value((Number) obj);
+            this.f21745c.value((Number) obj);
             return this;
         } else {
             int i10 = 0;
@@ -133,11 +133,11 @@ public final class e implements bj.e, g {
                 if (obj instanceof byte[]) {
                     return n((byte[]) obj);
                 }
-                this.f21744c.beginArray();
+                this.f21745c.beginArray();
                 if (obj instanceof int[]) {
                     int length = ((int[]) obj).length;
                     while (i10 < length) {
-                        this.f21744c.value(iArr[i10]);
+                        this.f21745c.value(iArr[i10]);
                         i10++;
                     }
                 } else if (obj instanceof long[]) {
@@ -151,14 +151,14 @@ public final class e implements bj.e, g {
                     double[] dArr = (double[]) obj;
                     int length3 = dArr.length;
                     while (i10 < length3) {
-                        this.f21744c.value(dArr[i10]);
+                        this.f21745c.value(dArr[i10]);
                         i10++;
                     }
                 } else if (obj instanceof boolean[]) {
                     boolean[] zArr = (boolean[]) obj;
                     int length4 = zArr.length;
                     while (i10 < length4) {
-                        this.f21744c.value(zArr[i10]);
+                        this.f21745c.value(zArr[i10]);
                         i10++;
                     }
                 } else if (obj instanceof Number[]) {
@@ -170,17 +170,17 @@ public final class e implements bj.e, g {
                         h(obj2, false);
                     }
                 }
-                this.f21744c.endArray();
+                this.f21745c.endArray();
                 return this;
             } else if (obj instanceof Collection) {
-                this.f21744c.beginArray();
+                this.f21745c.beginArray();
                 for (Object obj3 : (Collection) obj) {
                     h(obj3, false);
                 }
-                this.f21744c.endArray();
+                this.f21745c.endArray();
                 return this;
             } else if (obj instanceof Map) {
-                this.f21744c.beginObject();
+                this.f21745c.beginObject();
                 for (Map.Entry entry : ((Map) obj).entrySet()) {
                     Object key = entry.getKey();
                     try {
@@ -189,14 +189,14 @@ public final class e implements bj.e, g {
                         throw new bj.b(String.format("Only String keys are currently supported in maps, got %s of type %s instead.", key, key.getClass()), e10);
                     }
                 }
-                this.f21744c.endObject();
+                this.f21745c.endObject();
                 return this;
             } else {
-                bj.d dVar = (bj.d) this.f21745d.get(obj.getClass());
+                bj.d dVar = (bj.d) this.f21746d.get(obj.getClass());
                 if (dVar != null) {
                     return q(dVar, obj, z10);
                 }
-                f fVar = (f) this.f21746e.get(obj.getClass());
+                f fVar = (f) this.f21747e.get(obj.getClass());
                 if (fVar != null) {
                     fVar.a(obj, this);
                     return this;
@@ -204,7 +204,7 @@ public final class e implements bj.e, g {
                     a(((Enum) obj).name());
                     return this;
                 } else {
-                    return q(this.f21747f, obj, z10);
+                    return q(this.f21748f, obj, z10);
                 }
             }
         }
@@ -214,24 +214,24 @@ public final class e implements bj.e, g {
     /* renamed from: i */
     public e a(String str) {
         t();
-        this.f21744c.value(str);
+        this.f21745c.value(str);
         return this;
     }
 
     public e j(String str, int i10) {
         t();
-        this.f21744c.name(str);
+        this.f21745c.name(str);
         return f(i10);
     }
 
     public e k(String str, long j10) {
         t();
-        this.f21744c.name(str);
+        this.f21745c.name(str);
         return g(j10);
     }
 
     public e l(String str, Object obj) {
-        if (this.f21748g) {
+        if (this.f21749g) {
             return s(str, obj);
         }
         return r(str, obj);
@@ -241,33 +241,33 @@ public final class e implements bj.e, g {
     /* renamed from: m */
     public e d(boolean z10) {
         t();
-        this.f21744c.value(z10);
+        this.f21745c.value(z10);
         return this;
     }
 
     public e n(byte[] bArr) {
         t();
         if (bArr == null) {
-            this.f21744c.nullValue();
+            this.f21745c.nullValue();
             return this;
         }
-        this.f21744c.value(Base64.encodeToString(bArr, 2));
+        this.f21745c.value(Base64.encodeToString(bArr, 2));
         return this;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void p() {
         t();
-        this.f21744c.flush();
+        this.f21745c.flush();
     }
 
     e q(bj.d dVar, Object obj, boolean z10) {
         if (!z10) {
-            this.f21744c.beginObject();
+            this.f21745c.beginObject();
         }
         dVar.a(obj, this);
         if (!z10) {
-            this.f21744c.endObject();
+            this.f21745c.endObject();
         }
         return this;
     }

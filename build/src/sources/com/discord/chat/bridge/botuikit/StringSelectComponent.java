@@ -38,7 +38,7 @@ public final class StringSelectComponent extends SelectComponent {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9253id;
+    private final String f9254id;
     private final int maxValues;
     private final int minValues;
     @NotNull
@@ -92,7 +92,7 @@ public final class StringSelectComponent extends SelectComponent {
             v1.b(i10, 1743, StringSelectComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f9253id = str;
+        this.f9254id = str;
         this.state = actionComponentState;
         this.customId = str2;
         if ((i10 & 16) == 0) {
@@ -123,7 +123,7 @@ public final class StringSelectComponent extends SelectComponent {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$1() {
-        return new tt.f(p0.f50048a);
+        return new tt.f(p0.f50049a);
     }
 
     public static /* synthetic */ StringSelectComponent copy$default(StringSelectComponent stringSelectComponent, int i10, String str, ActionComponentState actionComponentState, String str2, String str3, String str4, int i11, int i12, boolean z10, List list, List list2, int i13, Object obj) {
@@ -131,7 +131,7 @@ public final class StringSelectComponent extends SelectComponent {
             i10 = stringSelectComponent.type;
         }
         if ((i13 & 2) != 0) {
-            str = stringSelectComponent.f9253id;
+            str = stringSelectComponent.f9254id;
         }
         if ((i13 & 4) != 0) {
             actionComponentState = stringSelectComponent.state;
@@ -181,10 +181,10 @@ public final class StringSelectComponent extends SelectComponent {
         compositeEncoder.k(serialDescriptor, 2, ActionComponentState.Serializer.INSTANCE, stringSelectComponent.getState());
         compositeEncoder.y(serialDescriptor, 3, stringSelectComponent.getCustomId());
         if (compositeEncoder.z(serialDescriptor, 4) || stringSelectComponent.getPlaceholder() != null) {
-            compositeEncoder.o(serialDescriptor, 4, n2.f50032a, stringSelectComponent.getPlaceholder());
+            compositeEncoder.o(serialDescriptor, 4, n2.f50033a, stringSelectComponent.getPlaceholder());
         }
         if (compositeEncoder.z(serialDescriptor, 5) || stringSelectComponent.getAccessibilityLabel() != null) {
-            compositeEncoder.o(serialDescriptor, 5, n2.f50032a, stringSelectComponent.getAccessibilityLabel());
+            compositeEncoder.o(serialDescriptor, 5, n2.f50033a, stringSelectComponent.getAccessibilityLabel());
         }
         compositeEncoder.w(serialDescriptor, 6, stringSelectComponent.getMinValues());
         compositeEncoder.w(serialDescriptor, 7, stringSelectComponent.getMaxValues());
@@ -211,7 +211,7 @@ public final class StringSelectComponent extends SelectComponent {
 
     @NotNull
     public final String component2() {
-        return this.f9253id;
+        return this.f9254id;
     }
 
     @NotNull
@@ -260,7 +260,7 @@ public final class StringSelectComponent extends SelectComponent {
         }
         if (obj instanceof StringSelectComponent) {
             StringSelectComponent stringSelectComponent = (StringSelectComponent) obj;
-            return this.type == stringSelectComponent.type && Intrinsics.areEqual(this.f9253id, stringSelectComponent.f9253id) && this.state == stringSelectComponent.state && Intrinsics.areEqual(this.customId, stringSelectComponent.customId) && Intrinsics.areEqual(this.placeholder, stringSelectComponent.placeholder) && Intrinsics.areEqual(this.accessibilityLabel, stringSelectComponent.accessibilityLabel) && this.minValues == stringSelectComponent.minValues && this.maxValues == stringSelectComponent.maxValues && this.disabled == stringSelectComponent.disabled && Intrinsics.areEqual(this.options, stringSelectComponent.options) && Intrinsics.areEqual(this.selectedOptions, stringSelectComponent.selectedOptions);
+            return this.type == stringSelectComponent.type && Intrinsics.areEqual(this.f9254id, stringSelectComponent.f9254id) && this.state == stringSelectComponent.state && Intrinsics.areEqual(this.customId, stringSelectComponent.customId) && Intrinsics.areEqual(this.placeholder, stringSelectComponent.placeholder) && Intrinsics.areEqual(this.accessibilityLabel, stringSelectComponent.accessibilityLabel) && this.minValues == stringSelectComponent.minValues && this.maxValues == stringSelectComponent.maxValues && this.disabled == stringSelectComponent.disabled && Intrinsics.areEqual(this.options, stringSelectComponent.options) && Intrinsics.areEqual(this.selectedOptions, stringSelectComponent.selectedOptions);
         }
         return false;
     }
@@ -284,7 +284,7 @@ public final class StringSelectComponent extends SelectComponent {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f9253id;
+        return this.f9254id;
     }
 
     @Override // com.discord.chat.bridge.botuikit.SelectComponent
@@ -335,7 +335,7 @@ public final class StringSelectComponent extends SelectComponent {
     }
 
     public int hashCode() {
-        int hashCode = ((((((Integer.hashCode(this.type) * 31) + this.f9253id.hashCode()) * 31) + this.state.hashCode()) * 31) + this.customId.hashCode()) * 31;
+        int hashCode = ((((((Integer.hashCode(this.type) * 31) + this.f9254id.hashCode()) * 31) + this.state.hashCode()) * 31) + this.customId.hashCode()) * 31;
         String str = this.placeholder;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
         String str2 = this.accessibilityLabel;
@@ -345,7 +345,7 @@ public final class StringSelectComponent extends SelectComponent {
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f9253id;
+        String str = this.f9254id;
         ActionComponentState actionComponentState = this.state;
         String str2 = this.customId;
         String str3 = this.placeholder;
@@ -371,7 +371,7 @@ public final class StringSelectComponent extends SelectComponent {
         Intrinsics.checkNotNullParameter(options, "options");
         Intrinsics.checkNotNullParameter(selectedOptions, "selectedOptions");
         this.type = i10;
-        this.f9253id = id2;
+        this.f9254id = id2;
         this.state = state;
         this.customId = customId;
         this.placeholder = str;

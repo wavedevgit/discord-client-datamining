@@ -7,30 +7,30 @@ import java.math.RoundingMode;
 public final class m0 implements bu.t {
 
     /* renamed from: a  reason: collision with root package name */
-    private final bu.p f37626a;
+    private final bu.p f37627a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f37627b;
+    private final boolean f37628b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m0(bu.p pVar, boolean z10) {
-        this.f37626a = pVar;
-        this.f37627b = z10;
+        this.f37627a = pVar;
+        this.f37628b = z10;
     }
 
     @Override // bu.t
     /* renamed from: a */
     public BigDecimal apply(bu.q qVar) {
-        long longValue = ((Number) qVar.k(this.f37626a)).longValue();
-        long longValue2 = ((Number) qVar.t(this.f37626a)).longValue();
-        long longValue3 = ((Number) qVar.v(this.f37626a)).longValue();
+        long longValue = ((Number) qVar.k(this.f37627a)).longValue();
+        long longValue2 = ((Number) qVar.t(this.f37627a)).longValue();
+        long longValue3 = ((Number) qVar.v(this.f37627a)).longValue();
         if (longValue > longValue3) {
             longValue = longValue3;
         }
         if (longValue == longValue2) {
             return BigDecimal.ZERO;
         }
-        if (this.f37627b && (qVar instanceof g0) && !((g0) g0.class.cast(qVar)).w0(this.f37626a)) {
+        if (this.f37628b && (qVar instanceof g0) && !((g0) g0.class.cast(qVar)).w0(this.f37627a)) {
             if (longValue == longValue3) {
                 return BigDecimal.ONE;
             }

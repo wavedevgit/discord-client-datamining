@@ -15,7 +15,7 @@ public abstract class g5 {
         final sq.w c10 = sq.w.c(uiComponentHelper.b());
         Text.Attributes attributes = config.getAttributes();
         if (attributes != null) {
-            TextView textView = c10.f48298b;
+            TextView textView = c10.f48299b;
             Intrinsics.checkNotNullExpressionValue(textView, "textView");
             qq.f.d(textView, attributes.getText());
             uiComponentHelper.d(new Function0() { // from class: pq.f5
@@ -36,10 +36,10 @@ public abstract class g5 {
     public static final Unit c(Text text, sq.w wVar) {
         TextBasedComponentStyle styles = text.getStyles();
         if (styles != null) {
-            TextView textView = wVar.f48298b;
+            TextView textView = wVar.f48299b;
             Intrinsics.checkNotNullExpressionValue(textView, "textView");
             uq.f0.n(textView, styles, null, 2, null);
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 }

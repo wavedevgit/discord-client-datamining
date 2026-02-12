@@ -3,29 +3,29 @@ package xk;
 final class d extends b {
 
     /* renamed from: c  reason: collision with root package name */
-    private final c f54883c;
+    private final c f54884c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f54884d;
+    private int f54885d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d(int i10, int i11, c cVar) {
         super(i10, i11);
-        this.f54883c = cVar;
+        this.f54884c = cVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int c() {
-        return this.f54884d;
+        return this.f54885d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c d() {
-        return this.f54883c;
+        return this.f54884c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void e() {
-        this.f54884d++;
+        this.f54885d++;
     }
 }

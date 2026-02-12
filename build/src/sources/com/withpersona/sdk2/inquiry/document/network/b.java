@@ -33,44 +33,44 @@ import ys.m0;
 public final class b implements o<AbstractC0237b> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f19549b;
+    private final String f19550b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final qo.b f19550c;
+    private final qo.b f19551c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f19551d;
+    private final String f19552d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final d.a f19552e;
+    private final d.a f19553e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final i f19553f;
+    private final i f19554f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final CoroutineScope f19554g;
+    private final CoroutineScope f19555g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final qo.b f19555a;
+        private final qo.b f19556a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final i f19556b;
+        private final i f19557b;
 
         public a(qo.b service, i fileHelper) {
             Intrinsics.checkNotNullParameter(service, "service");
             Intrinsics.checkNotNullParameter(fileHelper, "fileHelper");
-            this.f19555a = service;
-            this.f19556b = fileHelper;
+            this.f19556a = service;
+            this.f19557b = fileHelper;
         }
 
         public final b a(String sessionToken, String documentId, d.a localDocument) {
             Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
             Intrinsics.checkNotNullParameter(documentId, "documentId");
             Intrinsics.checkNotNullParameter(localDocument, "localDocument");
-            return new b(sessionToken, this.f19555a, documentId, localDocument, this.f19556b, null);
+            return new b(sessionToken, this.f19556a, documentId, localDocument, this.f19557b, null);
         }
     }
 
@@ -83,17 +83,17 @@ public final class b implements o<AbstractC0237b> {
         public static final class a extends AbstractC0237b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final GenericFileUploadErrorResponse.DocumentErrorResponse f19557a;
+            private final GenericFileUploadErrorResponse.DocumentErrorResponse f19558a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(GenericFileUploadErrorResponse.DocumentErrorResponse cause) {
                 super(null);
                 Intrinsics.checkNotNullParameter(cause, "cause");
-                this.f19557a = cause;
+                this.f19558a = cause;
             }
 
             public final GenericFileUploadErrorResponse.DocumentErrorResponse a() {
-                return this.f19557a;
+                return this.f19558a;
             }
         }
 
@@ -102,17 +102,17 @@ public final class b implements o<AbstractC0237b> {
         public static final class C0238b extends AbstractC0237b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final InternalErrorInfo f19558a;
+            private final InternalErrorInfo f19559a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public C0238b(InternalErrorInfo cause) {
                 super(null);
                 Intrinsics.checkNotNullParameter(cause, "cause");
-                this.f19558a = cause;
+                this.f19559a = cause;
             }
 
             public final InternalErrorInfo a() {
-                return this.f19558a;
+                return this.f19559a;
             }
         }
 
@@ -121,15 +121,15 @@ public final class b implements o<AbstractC0237b> {
         public static final class c extends AbstractC0237b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final int f19559a;
+            private final int f19560a;
 
             public c(int i10) {
                 super(null);
-                this.f19559a = i10;
+                this.f19560a = i10;
             }
 
             public final int a() {
-                return this.f19559a;
+                return this.f19560a;
             }
         }
 
@@ -138,26 +138,26 @@ public final class b implements o<AbstractC0237b> {
         public static final class d extends AbstractC0237b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final d.a f19560a;
+            private final d.a f19561a;
 
             /* renamed from: b  reason: collision with root package name */
-            private final d.b f19561b;
+            private final d.b f19562b;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public d(d.a oldLocalDocument, d.b newRemoteDocument) {
                 super(null);
                 Intrinsics.checkNotNullParameter(oldLocalDocument, "oldLocalDocument");
                 Intrinsics.checkNotNullParameter(newRemoteDocument, "newRemoteDocument");
-                this.f19560a = oldLocalDocument;
-                this.f19561b = newRemoteDocument;
+                this.f19561a = oldLocalDocument;
+                this.f19562b = newRemoteDocument;
             }
 
             public final d.b a() {
-                return this.f19561b;
+                return this.f19562b;
             }
 
             public final d.a b() {
-                return this.f19560a;
+                return this.f19561a;
             }
         }
 
@@ -173,17 +173,17 @@ public final class b implements o<AbstractC0237b> {
     static final class c extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f19562d;
+        int f19563d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f19563e;
+        private /* synthetic */ Object f19564e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ FlowCollector f19565d;
+            final /* synthetic */ FlowCollector f19566d;
 
             /* JADX INFO: Access modifiers changed from: package-private */
             /* renamed from: com.withpersona.sdk2.inquiry.document.network.b$c$a$a  reason: collision with other inner class name */
@@ -191,13 +191,13 @@ public final class b implements o<AbstractC0237b> {
             public static final class C0239a extends kotlin.coroutines.jvm.internal.d {
 
                 /* renamed from: d  reason: collision with root package name */
-                Object f19566d;
+                Object f19567d;
 
                 /* renamed from: e  reason: collision with root package name */
-                /* synthetic */ Object f19567e;
+                /* synthetic */ Object f19568e;
 
                 /* renamed from: o  reason: collision with root package name */
-                int f19569o;
+                int f19570o;
 
                 C0239a(Continuation continuation) {
                     super(continuation);
@@ -205,14 +205,14 @@ public final class b implements o<AbstractC0237b> {
 
                 @Override // kotlin.coroutines.jvm.internal.a
                 public final Object invokeSuspend(Object obj) {
-                    this.f19567e = obj;
-                    this.f19569o |= Integer.MIN_VALUE;
+                    this.f19568e = obj;
+                    this.f19570o |= Integer.MIN_VALUE;
                     return a.this.emit(null, this);
                 }
             }
 
             a(FlowCollector flowCollector) {
-                this.f19565d = flowCollector;
+                this.f19566d = flowCollector;
             }
 
             /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
@@ -230,24 +230,24 @@ public final class b implements o<AbstractC0237b> {
                     if (r0 == 0) goto L13
                     r0 = r6
                     com.withpersona.sdk2.inquiry.document.network.b$c$a$a r0 = (com.withpersona.sdk2.inquiry.document.network.b.c.a.C0239a) r0
-                    int r1 = r0.f19569o
+                    int r1 = r0.f19570o
                     r2 = -2147483648(0xffffffff80000000, float:-0.0)
                     r3 = r1 & r2
                     if (r3 == 0) goto L13
                     int r1 = r1 - r2
-                    r0.f19569o = r1
+                    r0.f19570o = r1
                     goto L18
                 L13:
                     com.withpersona.sdk2.inquiry.document.network.b$c$a$a r0 = new com.withpersona.sdk2.inquiry.document.network.b$c$a$a
                     r0.<init>(r6)
                 L18:
-                    java.lang.Object r6 = r0.f19567e
+                    java.lang.Object r6 = r0.f19568e
                     java.lang.Object r1 = gs.b.f()
-                    int r2 = r0.f19569o
+                    int r2 = r0.f19570o
                     r3 = 1
                     if (r2 == 0) goto L35
                     if (r2 != r3) goto L2d
-                    java.lang.Object r5 = r0.f19566d
+                    java.lang.Object r5 = r0.f19567d
                     com.withpersona.sdk2.inquiry.document.network.b$b r5 = (com.withpersona.sdk2.inquiry.document.network.b.AbstractC0237b) r5
                     kotlin.c.b(r6)
                     goto L45
@@ -258,9 +258,9 @@ public final class b implements o<AbstractC0237b> {
                     throw r5
                 L35:
                     kotlin.c.b(r6)
-                    kotlinx.coroutines.flow.FlowCollector r6 = r4.f19565d
-                    r0.f19566d = r5
-                    r0.f19569o = r3
+                    kotlinx.coroutines.flow.FlowCollector r6 = r4.f19566d
+                    r0.f19567d = r5
+                    r0.f19570o = r3
                     java.lang.Object r6 = r6.emit(r5, r0)
                     if (r6 != r1) goto L45
                     return r1
@@ -274,7 +274,7 @@ public final class b implements o<AbstractC0237b> {
                     r6 = 0
                     kotlinx.coroutines.z.e(r5, r6, r3, r6)
                 L55:
-                    kotlin.Unit r5 = kotlin.Unit.f31987a
+                    kotlin.Unit r5 = kotlin.Unit.f31988a
                     return r5
                 */
                 throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.document.network.b.c.a.emit(com.withpersona.sdk2.inquiry.document.network.b$b, kotlin.coroutines.Continuation):java.lang.Object");
@@ -287,13 +287,13 @@ public final class b implements o<AbstractC0237b> {
         public static final class C0240b extends k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f19570d;
+            int f19571d;
 
             /* renamed from: e  reason: collision with root package name */
-            private /* synthetic */ Object f19571e;
+            private /* synthetic */ Object f19572e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ qo.d f19572i;
+            final /* synthetic */ qo.d f19573i;
 
             /* JADX INFO: Access modifiers changed from: package-private */
             /* renamed from: com.withpersona.sdk2.inquiry.document.network.b$c$b$a */
@@ -301,10 +301,10 @@ public final class b implements o<AbstractC0237b> {
             public static final class a extends k implements Function2 {
 
                 /* renamed from: d  reason: collision with root package name */
-                int f19573d;
+                int f19574d;
 
                 /* renamed from: e  reason: collision with root package name */
-                /* synthetic */ int f19574e;
+                /* synthetic */ int f19575e;
 
                 a(Continuation continuation) {
                     super(2, continuation);
@@ -313,21 +313,21 @@ public final class b implements o<AbstractC0237b> {
                 @Override // kotlin.coroutines.jvm.internal.a
                 public final Continuation create(Object obj, Continuation continuation) {
                     a aVar = new a(continuation);
-                    aVar.f19574e = ((Number) obj).intValue();
+                    aVar.f19575e = ((Number) obj).intValue();
                     return aVar;
                 }
 
                 public final Object invoke(int i10, Continuation continuation) {
-                    return ((a) create(Integer.valueOf(i10), continuation)).invokeSuspend(Unit.f31987a);
+                    return ((a) create(Integer.valueOf(i10), continuation)).invokeSuspend(Unit.f31988a);
                 }
 
                 @Override // kotlin.coroutines.jvm.internal.a
                 public final Object invokeSuspend(Object obj) {
                     boolean z10;
                     gs.b.f();
-                    if (this.f19573d == 0) {
+                    if (this.f19574d == 0) {
                         kotlin.c.b(obj);
-                        if (this.f19574e < 100) {
+                        if (this.f19575e < 100) {
                             z10 = true;
                         } else {
                             z10 = false;
@@ -349,18 +349,18 @@ public final class b implements o<AbstractC0237b> {
             public static final class C0241b implements FlowCollector {
 
                 /* renamed from: d  reason: collision with root package name */
-                final /* synthetic */ FlowCollector f19575d;
+                final /* synthetic */ FlowCollector f19576d;
 
                 C0241b(FlowCollector flowCollector) {
-                    this.f19575d = flowCollector;
+                    this.f19576d = flowCollector;
                 }
 
                 public final Object a(int i10, Continuation continuation) {
-                    Object emit = this.f19575d.emit(new AbstractC0237b.c(i10), continuation);
+                    Object emit = this.f19576d.emit(new AbstractC0237b.c(i10), continuation);
                     if (emit == gs.b.f()) {
                         return emit;
                     }
-                    return Unit.f31987a;
+                    return Unit.f31988a;
                 }
 
                 @Override // kotlinx.coroutines.flow.FlowCollector
@@ -372,13 +372,13 @@ public final class b implements o<AbstractC0237b> {
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             C0240b(qo.d dVar, Continuation continuation) {
                 super(2, continuation);
-                this.f19572i = dVar;
+                this.f19573i = dVar;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                C0240b c0240b = new C0240b(this.f19572i, continuation);
-                c0240b.f19571e = obj;
+                C0240b c0240b = new C0240b(this.f19573i, continuation);
+                c0240b.f19572e = obj;
                 return c0240b;
             }
 
@@ -400,7 +400,7 @@ public final class b implements o<AbstractC0237b> {
                 /*
                     r6 = this;
                     java.lang.Object r0 = gs.b.f()
-                    int r1 = r6.f19570d
+                    int r1 = r6.f19571d
                     r2 = 0
                     r3 = 2
                     r4 = 1
@@ -415,24 +415,24 @@ public final class b implements o<AbstractC0237b> {
                     r7.<init>(r0)
                     throw r7
                 L1b:
-                    java.lang.Object r1 = r6.f19571e
+                    java.lang.Object r1 = r6.f19572e
                     kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                     kotlin.c.b(r7)
                     goto L4a
                 L23:
                     kotlin.c.b(r7)
-                    java.lang.Object r7 = r6.f19571e
+                    java.lang.Object r7 = r6.f19572e
                     r1 = r7
                     kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
-                    qo.d r7 = r6.f19572i
+                    qo.d r7 = r6.f19573i
                     bt.j0 r7 = r7.a()
                     com.withpersona.sdk2.inquiry.document.network.b$c$b$a r5 = new com.withpersona.sdk2.inquiry.document.network.b$c$b$a
                     r5.<init>(r2)
                     kotlinx.coroutines.flow.Flow r7 = bt.g.H(r7, r5)
                     com.withpersona.sdk2.inquiry.document.network.b$c$b$b r5 = new com.withpersona.sdk2.inquiry.document.network.b$c$b$b
                     r5.<init>(r1)
-                    r6.f19571e = r1
-                    r6.f19570d = r4
+                    r6.f19572e = r1
+                    r6.f19571d = r4
                     java.lang.Object r7 = r7.collect(r5, r6)
                     if (r7 != r0) goto L4a
                     goto L5b
@@ -440,14 +440,14 @@ public final class b implements o<AbstractC0237b> {
                     com.withpersona.sdk2.inquiry.document.network.b$b$c r7 = new com.withpersona.sdk2.inquiry.document.network.b$b$c
                     r4 = 100
                     r7.<init>(r4)
-                    r6.f19571e = r2
-                    r6.f19570d = r3
+                    r6.f19572e = r2
+                    r6.f19571d = r3
                     java.lang.Object r7 = r1.emit(r7, r6)
                     if (r7 != r0) goto L5c
                 L5b:
                     return r0
                 L5c:
-                    kotlin.Unit r7 = kotlin.Unit.f31987a
+                    kotlin.Unit r7 = kotlin.Unit.f31988a
                     return r7
                 */
                 throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.document.network.b.c.C0240b.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -455,7 +455,7 @@ public final class b implements o<AbstractC0237b> {
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-                return ((C0240b) create(flowCollector, continuation)).invokeSuspend(Unit.f31987a);
+                return ((C0240b) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
             }
         }
 
@@ -465,13 +465,13 @@ public final class b implements o<AbstractC0237b> {
         public static final class C0242c extends k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f19576d;
+            int f19577d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ b f19577e;
+            final /* synthetic */ b f19578e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ qo.d f19578i;
+            final /* synthetic */ qo.d f19579i;
 
             /* JADX INFO: Access modifiers changed from: package-private */
             /* renamed from: com.withpersona.sdk2.inquiry.document.network.b$c$c$a */
@@ -479,30 +479,30 @@ public final class b implements o<AbstractC0237b> {
             public static final class a extends k implements Function1 {
 
                 /* renamed from: d  reason: collision with root package name */
-                int f19579d;
+                int f19580d;
 
                 /* renamed from: e  reason: collision with root package name */
-                final /* synthetic */ b f19580e;
+                final /* synthetic */ b f19581e;
 
                 /* renamed from: i  reason: collision with root package name */
-                final /* synthetic */ qo.d f19581i;
+                final /* synthetic */ qo.d f19582i;
 
                 /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
                 a(b bVar, qo.d dVar, Continuation continuation) {
                     super(1, continuation);
-                    this.f19580e = bVar;
-                    this.f19581i = dVar;
+                    this.f19581e = bVar;
+                    this.f19582i = dVar;
                 }
 
                 @Override // kotlin.coroutines.jvm.internal.a
                 public final Continuation create(Continuation continuation) {
-                    return new a(this.f19580e, this.f19581i, continuation);
+                    return new a(this.f19581e, this.f19582i, continuation);
                 }
 
                 @Override // kotlin.coroutines.jvm.internal.a
                 public final Object invokeSuspend(Object obj) {
                     Object f10 = gs.b.f();
-                    int i10 = this.f19579d;
+                    int i10 = this.f19580d;
                     if (i10 != 0) {
                         if (i10 == 1) {
                             kotlin.c.b(obj);
@@ -511,17 +511,17 @@ public final class b implements o<AbstractC0237b> {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     kotlin.c.b(obj);
-                    qo.b bVar = this.f19580e.f19550c;
-                    String str = this.f19580e.f19549b;
-                    MultipartBody.b.a aVar = MultipartBody.b.f40321c;
+                    qo.b bVar = this.f19581e.f19551c;
+                    String str = this.f19581e.f19550b;
+                    MultipartBody.b.a aVar = MultipartBody.b.f40322c;
                     MultipartBody.b b10 = aVar.b("data[type]", "document-file");
-                    MultipartBody.b b11 = aVar.b("data[attributes][document-id]", this.f19580e.f19551d);
-                    MultipartBody.b b12 = aVar.b("data[attributes][capture-method]", this.f19580e.f19552e.d().d());
-                    MultipartBody.b c10 = aVar.c("data[attributes][originals][]", this.f19580e.f19552e.c(), this.f19581i);
-                    String name = new File(this.f19580e.f19552e.c()).getName();
+                    MultipartBody.b b11 = aVar.b("data[attributes][document-id]", this.f19581e.f19552d);
+                    MultipartBody.b b12 = aVar.b("data[attributes][capture-method]", this.f19581e.f19553e.d().d());
+                    MultipartBody.b c10 = aVar.c("data[attributes][originals][]", this.f19581e.f19553e.c(), this.f19582i);
+                    String name = new File(this.f19581e.f19553e.c()).getName();
                     Intrinsics.checkNotNullExpressionValue(name, "getName(...)");
                     List<MultipartBody.b> o10 = CollectionsKt.o(b10, b11, b12, c10, aVar.b("data[attributes][name]", name));
-                    this.f19579d = 1;
+                    this.f19580d = 1;
                     Object c11 = bVar.c(str, o10, this);
                     if (c11 == f10) {
                         return f10;
@@ -531,26 +531,26 @@ public final class b implements o<AbstractC0237b> {
 
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Continuation continuation) {
-                    return ((a) create(continuation)).invokeSuspend(Unit.f31987a);
+                    return ((a) create(continuation)).invokeSuspend(Unit.f31988a);
                 }
             }
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             C0242c(b bVar, qo.d dVar, Continuation continuation) {
                 super(2, continuation);
-                this.f19577e = bVar;
-                this.f19578i = dVar;
+                this.f19578e = bVar;
+                this.f19579i = dVar;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                return new C0242c(this.f19577e, this.f19578i, continuation);
+                return new C0242c(this.f19578e, this.f19579i, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 Object f10 = gs.b.f();
-                int i10 = this.f19576d;
+                int i10 = this.f19577d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -559,8 +559,8 @@ public final class b implements o<AbstractC0237b> {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 kotlin.c.b(obj);
-                a aVar = new a(this.f19577e, this.f19578i, null);
-                this.f19576d = 1;
+                a aVar = new a(this.f19578e, this.f19579i, null);
+                this.f19577d = 1;
                 Object enqueueVerificationRequestWithRetry = NetworkUtilsKt.enqueueVerificationRequestWithRetry(aVar, this);
                 if (enqueueVerificationRequestWithRetry == f10) {
                     return f10;
@@ -570,7 +570,7 @@ public final class b implements o<AbstractC0237b> {
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((C0242c) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+                return ((C0242c) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
             }
         }
 
@@ -579,31 +579,31 @@ public final class b implements o<AbstractC0237b> {
         public static final class d extends k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            Object f19582d;
+            Object f19583d;
 
             /* renamed from: e  reason: collision with root package name */
-            int f19583e;
+            int f19584e;
 
             /* renamed from: i  reason: collision with root package name */
-            private /* synthetic */ Object f19584i;
+            private /* synthetic */ Object f19585i;
 
             /* renamed from: o  reason: collision with root package name */
-            final /* synthetic */ g0 f19585o;
+            final /* synthetic */ g0 f19586o;
 
             /* renamed from: p  reason: collision with root package name */
-            final /* synthetic */ b f19586p;
+            final /* synthetic */ b f19587p;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             d(g0 g0Var, b bVar, Continuation continuation) {
                 super(2, continuation);
-                this.f19585o = g0Var;
-                this.f19586p = bVar;
+                this.f19586o = g0Var;
+                this.f19587p = bVar;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                d dVar = new d(this.f19585o, this.f19586p, continuation);
-                dVar.f19584i = obj;
+                d dVar = new d(this.f19586o, this.f19587p, continuation);
+                dVar.f19585i = obj;
                 return dVar;
             }
 
@@ -644,7 +644,7 @@ public final class b implements o<AbstractC0237b> {
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-                return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f31987a);
+                return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
             }
         }
 
@@ -655,7 +655,7 @@ public final class b implements o<AbstractC0237b> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             c cVar = new c(continuation);
-            cVar.f19563e = obj;
+            cVar.f19564e = obj;
             return cVar;
         }
 
@@ -663,7 +663,7 @@ public final class b implements o<AbstractC0237b> {
         public final Object invokeSuspend(Object obj) {
             g0 b10;
             Object f10 = gs.b.f();
-            int i10 = this.f19562d;
+            int i10 = this.f19563d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -672,21 +672,21 @@ public final class b implements o<AbstractC0237b> {
                 }
             } else {
                 kotlin.c.b(obj);
-                qo.d dVar = new qo.d(new File(b.this.f19552e.c()), MediaType.f40297e.c(b.this.f19553f.a(b.this.f19552e.c())));
-                b10 = ys.i.b(b.this.f19554g, m0.b(), null, new C0242c(b.this, dVar, null), 2, null);
+                qo.d dVar = new qo.d(new File(b.this.f19553e.c()), MediaType.f40298e.c(b.this.f19554f.a(b.this.f19553e.c())));
+                b10 = ys.i.b(b.this.f19555g, m0.b(), null, new C0242c(b.this, dVar, null), 2, null);
                 Flow B = g.B(g.v(new d(b10, b.this, null)), g.v(new C0240b(dVar, null)));
-                a aVar = new a((FlowCollector) this.f19563e);
-                this.f19562d = 1;
+                a aVar = new a((FlowCollector) this.f19564e);
+                this.f19563d = 1;
                 if (B.collect(aVar, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f31987a);
+            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -699,7 +699,7 @@ public final class b implements o<AbstractC0237b> {
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
         if (otherWorker instanceof b) {
             b bVar = (b) otherWorker;
-            if (Intrinsics.areEqual(this.f19549b, bVar.f19549b) && Intrinsics.areEqual(this.f19552e, bVar.f19552e)) {
+            if (Intrinsics.areEqual(this.f19550b, bVar.f19550b) && Intrinsics.areEqual(this.f19553e, bVar.f19553e)) {
                 return true;
             }
             return false;
@@ -714,13 +714,13 @@ public final class b implements o<AbstractC0237b> {
 
     private b(String str, qo.b bVar, String str2, d.a aVar, i iVar) {
         CompletableJob b10;
-        this.f19549b = str;
-        this.f19550c = bVar;
-        this.f19551d = str2;
-        this.f19552e = aVar;
-        this.f19553f = iVar;
+        this.f19550b = str;
+        this.f19551c = bVar;
+        this.f19552d = str2;
+        this.f19553e = aVar;
+        this.f19554f = iVar;
         CoroutineDispatcher a10 = m0.a();
         b10 = a0.b(null, 1, null);
-        this.f19554g = kotlinx.coroutines.i.a(a10.O0(b10));
+        this.f19555g = kotlinx.coroutines.i.a(a10.O0(b10));
     }
 }

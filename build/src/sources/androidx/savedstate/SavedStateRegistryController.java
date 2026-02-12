@@ -29,7 +29,7 @@ public final class SavedStateRegistryController {
         /* JADX INFO: Access modifiers changed from: private */
         public static final Unit c(f fVar) {
             fVar.getLifecycle().a(new androidx.savedstate.a(fVar));
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
 
         public final SavedStateRegistryController b(final f owner) {

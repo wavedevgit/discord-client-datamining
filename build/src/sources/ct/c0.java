@@ -10,43 +10,43 @@ import kotlinx.coroutines.flow.FlowCollector;
 final class c0 implements FlowCollector {
 
     /* renamed from: d  reason: collision with root package name */
-    private final CoroutineContext f21024d;
+    private final CoroutineContext f21025d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Object f21025e;
+    private final Object f21026e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Function2 f21026i;
+    private final Function2 f21027i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f21027d;
+        int f21028d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f21028e;
+        /* synthetic */ Object f21029e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ FlowCollector f21029i;
+        final /* synthetic */ FlowCollector f21030i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(FlowCollector flowCollector, Continuation continuation) {
             super(2, continuation);
-            this.f21029i = flowCollector;
+            this.f21030i = flowCollector;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            a aVar = new a(this.f21029i, continuation);
-            aVar.f21028e = obj;
+            a aVar = new a(this.f21030i, continuation);
+            aVar.f21029e = obj;
             return aVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = gs.b.f();
-            int i10 = this.f21027d;
+            int i10 = this.f21028d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -55,35 +55,35 @@ final class c0 implements FlowCollector {
                 }
             } else {
                 kotlin.c.b(obj);
-                Object obj2 = this.f21028e;
-                FlowCollector flowCollector = this.f21029i;
-                this.f21027d = 1;
+                Object obj2 = this.f21029e;
+                FlowCollector flowCollector = this.f21030i;
+                this.f21028d = 1;
                 if (flowCollector.emit(obj2, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         /* renamed from: j */
         public final Object invoke(Object obj, Continuation continuation) {
-            return ((a) create(obj, continuation)).invokeSuspend(Unit.f31987a);
+            return ((a) create(obj, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
     public c0(FlowCollector flowCollector, CoroutineContext coroutineContext) {
-        this.f21024d = coroutineContext;
-        this.f21025e = l0.g(coroutineContext);
-        this.f21026i = new a(flowCollector, null);
+        this.f21025d = coroutineContext;
+        this.f21026e = l0.g(coroutineContext);
+        this.f21027i = new a(flowCollector, null);
     }
 
     @Override // kotlinx.coroutines.flow.FlowCollector
     public Object emit(Object obj, Continuation continuation) {
-        Object c10 = f.c(this.f21024d, obj, this.f21025e, this.f21026i, continuation);
+        Object c10 = f.c(this.f21025d, obj, this.f21026e, this.f21027i, continuation);
         if (c10 == gs.b.f()) {
             return c10;
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 }

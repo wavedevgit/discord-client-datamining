@@ -10,32 +10,32 @@ import androidx.viewbinding.ViewBinding;
 public final class m implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final LinearLayout f48259a;
+    private final LinearLayout f48260a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final LinearLayout f48260b;
+    public final LinearLayout f48261b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final TextView f48261c;
+    public final TextView f48262c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final TextView f48262d;
+    public final TextView f48263d;
 
     private m(LinearLayout linearLayout, LinearLayout linearLayout2, TextView textView, TextView textView2) {
-        this.f48259a = linearLayout;
-        this.f48260b = linearLayout2;
-        this.f48261c = textView;
-        this.f48262d = textView2;
+        this.f48260a = linearLayout;
+        this.f48261b = linearLayout2;
+        this.f48262c = textView;
+        this.f48263d = textView2;
     }
 
     public static m a(View view) {
-        int i10 = nq.e.f38271l0;
+        int i10 = nq.e.f38272l0;
         LinearLayout linearLayout = (LinearLayout) e4.a.a(view, i10);
         if (linearLayout != null) {
-            i10 = nq.e.f38277o0;
+            i10 = nq.e.f38278o0;
             TextView textView = (TextView) e4.a.a(view, i10);
             if (textView != null) {
-                i10 = nq.e.f38279p0;
+                i10 = nq.e.f38280p0;
                 TextView textView2 = (TextView) e4.a.a(view, i10);
                 if (textView2 != null) {
                     return new m((LinearLayout) view, linearLayout, textView, textView2);
@@ -50,7 +50,7 @@ public final class m implements ViewBinding {
     }
 
     public static m d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(nq.f.f38313n, viewGroup, false);
+        View inflate = layoutInflater.inflate(nq.f.f38314n, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -60,6 +60,6 @@ public final class m implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public LinearLayout getRoot() {
-        return this.f48259a;
+        return this.f48260a;
     }
 }

@@ -5,10 +5,10 @@ import com.withpersona.sdk2.inquiry.internal.f;
 public final class g implements f.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ep.i f19917a;
+    private final ep.i f19918a;
 
     g(ep.i iVar) {
-        this.f19917a = iVar;
+        this.f19918a = iVar;
     }
 
     public static lr.h b(ep.i iVar) {
@@ -17,6 +17,6 @@ public final class g implements f.a {
 
     @Override // com.withpersona.sdk2.inquiry.internal.f.a
     public f a(String str) {
-        return this.f19917a.b(str);
+        return this.f19918a.b(str);
     }
 }

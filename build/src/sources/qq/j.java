@@ -5,24 +5,24 @@ import kotlin.jvm.internal.Intrinsics;
 public final class j {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f45634a;
+    private final String f45635a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f45635b;
+    private final String f45636b;
 
     public j(String countryCode, String localPhoneNumber) {
         Intrinsics.checkNotNullParameter(countryCode, "countryCode");
         Intrinsics.checkNotNullParameter(localPhoneNumber, "localPhoneNumber");
-        this.f45634a = countryCode;
-        this.f45635b = localPhoneNumber;
+        this.f45635a = countryCode;
+        this.f45636b = localPhoneNumber;
     }
 
     public final String a() {
-        return this.f45634a;
+        return this.f45635a;
     }
 
     public final String b() {
-        return this.f45635b;
+        return this.f45636b;
     }
 
     public boolean equals(Object obj) {
@@ -33,19 +33,19 @@ public final class j {
             return false;
         }
         j jVar = (j) obj;
-        if (Intrinsics.areEqual(this.f45634a, jVar.f45634a) && Intrinsics.areEqual(this.f45635b, jVar.f45635b)) {
+        if (Intrinsics.areEqual(this.f45635a, jVar.f45635a) && Intrinsics.areEqual(this.f45636b, jVar.f45636b)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f45634a.hashCode() * 31) + this.f45635b.hashCode();
+        return (this.f45635a.hashCode() * 31) + this.f45636b.hashCode();
     }
 
     public String toString() {
-        String str = this.f45634a;
-        String str2 = this.f45635b;
+        String str = this.f45635a;
+        String str2 = this.f45636b;
         return "PhoneNumberInfo(countryCode=" + str + ", localPhoneNumber=" + str2 + ")";
     }
 }

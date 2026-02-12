@@ -9,14 +9,14 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final long f31348a = LocalDate.MIN.toEpochDay();
+    private static final long f31349a = LocalDate.MIN.toEpochDay();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final long f31349b = LocalDate.MAX.toEpochDay();
+    private static final long f31350b = LocalDate.MAX.toEpochDay();
 
     private static final LocalDate a(long j10) {
-        long j11 = f31348a;
-        if (j10 <= f31349b && j11 <= j10) {
+        long j11 = f31349a;
+        if (j10 <= f31350b && j11 <= j10) {
             LocalDate ofEpochDay = LocalDate.ofEpochDay(j10);
             Intrinsics.checkNotNullExpressionValue(ofEpochDay, "ofEpochDay(...)");
             return ofEpochDay;

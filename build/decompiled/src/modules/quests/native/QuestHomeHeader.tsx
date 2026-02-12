@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var5 = require;
-    var11 = metroImportDefault;
+    var12 = metroImportDefault;
     var2 = exports;
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
-    var _closure1_slot1 = var11;
+    var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
     var0 = global;
     var7 = var0.Object;
@@ -39,36 +39,46 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 4;
     var1 = var6[var1];
     var1 = var5.bind(var0)(var1);
-    var4 = var1.jsx;
-    var _closure1_slot6 = var4;
+    var8 = var1.jsx;
+    var _closure1_slot6 = var8;
     var1 = var1.jsxs;
     var _closure1_slot7 = var1;
     var1 = 5;
     var4 = var6[var1];
-    var8 = var5.bind(var0)(var4);
-    var7 = var8.createStyles;
+    var9 = var5.bind(var0)(var4);
+    var7 = var9.createStyles;
     var4 = {};
-    var9 = {
+    var10 = {
         'paddingHorizontal': 15,
         'paddingVertical': 8,
         'zIndex': 5
     };
-    var10 = 6;
-    var10 = var6[var10];
-    var10 = var11.bind(var0)(var10);
-    var10 = var10.colors;
-    var10 = var10.BACKGROUND_BASE_LOW;
-    var9.backgroundColor = var10;
-    var4.headerContainer = var9;
-    var9 = {
+    var11 = 6;
+    var11 = var6[var11];
+    var11 = var12.bind(var0)(var11);
+    var11 = var11.colors;
+    var11 = var11.BACKGROUND_BASE_LOW;
+    var10.backgroundColor = var11;
+    var4.headerContainer = var10;
+    var10 = {
         'flexDirection': 'row',
         'alignItems': 'center',
         'gap': 8,
         'paddingRight': 5
     };
-    var4.headerTitle = var9;
-    var4 = var7.bind(var8)(var4);
+    var4.headerTitle = var10;
+    var4 = var7.bind(var9)(var4);
     var _closure1_slot8 = var4;
+    var4 = 7;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var7 = var4.QuestsIcon;
+    var4 = {
+        'size': 'md',
+        'color': 'icon-strong'
+    };
+    var4 = var8.bind(var0)(var7, var4);
+    var _closure1_slot9 = var4;
     var4 = 20;
     var4 = var6[var4];
     var6 = var5.bind(var0)(var4);
@@ -78,20 +88,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = function arg0() {
         var0 = arg0;
         var9 = var0.headerRight;
-        var14 = var0.navigation;
-        var8 = var0.onClose;
+        var16 = var0.navigation;
+        var14 = var0.onClose;
         var0 = _closure1_slot8;
         var3 = undefined;
         var6 = var0.bind(var3)();
         var15 = _closure1_slot1;
         var13 = _closure1_slot2;
-        var0 = 7;
+        var0 = 8;
         var0 = var13[var0];
         var0 = var15.bind(var3)(var0);
         var0 = var0.bind(var3)();
-        var16 = var0.top;
+        var8 = var0.top;
         var10 = _closure1_slot0;
-        var0 = 8;
+        var0 = 9;
         var0 = var13[var0];
         var1 = var10.bind(var3)(var0);
         var0 = var1.useFetchVirtualCurrencyBalance;
@@ -101,35 +111,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = _closure1_slot6;
         var1 = _closure1_slot3;
         var0 = {};
-        var5 = {};
+        var4 = {};
         var19 = var6.headerContainer;
-        var20 = var5;
-        var7 = copyDataProperties(var20, var19);
-        var7 = 'paddingTop';
-        var5[var7] = var16;
-        var0.style = var5;
+        var20 = var4;
+        var5 = copyDataProperties(var20, var19);
+        var5 = 'paddingTop';
+        var4[var5] = var8;
+        var0.style = var4;
         var5 = _closure1_slot7;
         var4 = {};
         var6 = var6.headerTitle;
         var4.style = var6;
-        var6 = 9;
+        var6 = 10;
         var6 = var13[var6];
-        var7 = var15.bind(var3)(var6);
+        var8 = var15.bind(var3)(var6);
         var6 = {};
-        var6.navigation = var14;
-        var6.onPress = var8;
-        var7 = var2.bind(var3)(var7, var6);
+        var6.navigation = var16;
+        var6.onPress = var14;
+        var8 = var2.bind(var3)(var8, var6);
         var6 = new Array(4);
-        var6[0] = var7;
-        var7 = 10;
-        var7 = var13[var7];
-        var7 = var10.bind(var3)(var7);
-        var8 = var7.QuestsIcon;
-        var7 = {
-            'size': 'md',
-            'color': 'icon-strong'
-        };
-        var7 = var2.bind(var3)(var8, var7);
+        var6[0] = var8;
+        var7 = _closure1_slot9;
         var6[1] = var7;
         var7 = 11;
         var7 = var13[var7];
@@ -349,4 +351,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.HEADER_Z_INDEX = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 3284, 33, 1297, 671, 1568, 9609, 8968, 10738, 4886, 1234, 9613, 3279, 9622, 1307, 795, 5641, 4603, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 3284, 33, 1297, 671, 10549, 1568, 7613, 7716, 4852, 1234, 7619, 3279, 7629, 1307, 795, 5639, 4603, 2]);

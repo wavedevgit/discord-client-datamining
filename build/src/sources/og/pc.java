@@ -5,7 +5,7 @@ import bj.c;
 final class pc implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final pc f39582a = new pc();
+    static final pc f39583a = new pc();
 
     static {
         c.b a10 = bj.c.a("numSamples");

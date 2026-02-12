@@ -56,9 +56,9 @@ public /* synthetic */ class Summary$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = Summary.$childSerializers;
-        n2 n2Var = n2.f50032a;
+        n2 n2Var = n2.f50033a;
         MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
-        return new KSerializer[]{n2Var, n2Var, n2Var, lazyArr[3].getValue(), messageId$$serializer, messageId$$serializer, p0.f50048a, ChannelId$$serializer.INSTANCE};
+        return new KSerializer[]{n2Var, n2Var, n2Var, lazyArr[3].getValue(), messageId$$serializer, messageId$$serializer, p0.f50049a, ChannelId$$serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

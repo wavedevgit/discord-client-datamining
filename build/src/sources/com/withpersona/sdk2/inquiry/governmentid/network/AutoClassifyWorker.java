@@ -36,37 +36,37 @@ import ys.m0;
 public final class AutoClassifyWorker implements o<c> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f19643b;
+    private final String f19644b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f19644c;
+    private final String f19645c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f19645d;
+    private final String f19646d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f19646e;
+    private final String f19647e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final com.withpersona.sdk2.inquiry.governmentid.network.a f19647f;
+    private final com.withpersona.sdk2.inquiry.governmentid.network.a f19648f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final d0 f19648g;
+    private final d0 f19649g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final hq.a f19649h;
+    private final hq.a f19650h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final SupplementaryData f19650i;
+    private final SupplementaryData f19651i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final long f19651j;
+    private final long f19652j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final boolean f19652k;
+    private final boolean f19653k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final d1 f19653l;
+    private final d1 f19654l;
 
     @i(generateAdapter = true)
     @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\b\u0007\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, d2 = {"Lcom/withpersona/sdk2/inquiry/governmentid/network/AutoClassifyWorker$SupplementaryData;", "", "<init>", "()V", "government-id_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -82,20 +82,20 @@ public final class AutoClassifyWorker implements o<c> {
         public static final class C0246a implements a {
 
             /* renamed from: a  reason: collision with root package name */
-            private final String f19654a;
+            private final String f19655a;
 
             /* renamed from: b  reason: collision with root package name */
-            private final c4 f19655b;
+            private final c4 f19656b;
 
             public C0246a(String countryCode, c4 idConfig) {
                 Intrinsics.checkNotNullParameter(countryCode, "countryCode");
                 Intrinsics.checkNotNullParameter(idConfig, "idConfig");
-                this.f19654a = countryCode;
-                this.f19655b = idConfig;
+                this.f19655a = countryCode;
+                this.f19656b = idConfig;
             }
 
             public final c4 a() {
-                return this.f19655b;
+                return this.f19656b;
             }
         }
 
@@ -103,25 +103,9 @@ public final class AutoClassifyWorker implements o<c> {
         public static final class b implements a {
 
             /* renamed from: a  reason: collision with root package name */
-            private final List f19656a;
-
-            public b(List idClassesPerCountry) {
-                Intrinsics.checkNotNullParameter(idClassesPerCountry, "idClassesPerCountry");
-                this.f19656a = idClassesPerCountry;
-            }
-
-            public final List a() {
-                return this.f19656a;
-            }
-        }
-
-        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-        public static final class c implements a {
-
-            /* renamed from: a  reason: collision with root package name */
             private final List f19657a;
 
-            public c(List idClassesPerCountry) {
+            public b(List idClassesPerCountry) {
                 Intrinsics.checkNotNullParameter(idClassesPerCountry, "idClassesPerCountry");
                 this.f19657a = idClassesPerCountry;
             }
@@ -130,22 +114,38 @@ public final class AutoClassifyWorker implements o<c> {
                 return this.f19657a;
             }
         }
+
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+        public static final class c implements a {
+
+            /* renamed from: a  reason: collision with root package name */
+            private final List f19658a;
+
+            public c(List idClassesPerCountry) {
+                Intrinsics.checkNotNullParameter(idClassesPerCountry, "idClassesPerCountry");
+                this.f19658a = idClassesPerCountry;
+            }
+
+            public final List a() {
+                return this.f19658a;
+            }
+        }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final com.withpersona.sdk2.inquiry.governmentid.network.a f19658a;
+        private final com.withpersona.sdk2.inquiry.governmentid.network.a f19659a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final hq.a f19659b;
+        private final hq.a f19660b;
 
         public b(com.withpersona.sdk2.inquiry.governmentid.network.a service, hq.a imageHelper) {
             Intrinsics.checkNotNullParameter(service, "service");
             Intrinsics.checkNotNullParameter(imageHelper, "imageHelper");
-            this.f19658a = service;
-            this.f19659b = imageHelper;
+            this.f19659a = service;
+            this.f19660b = imageHelper;
         }
 
         public final AutoClassifyWorker a(String sessionToken, String inquiryId, String fromStep, String fromComponent, d0 governmentId, SupplementaryData supplementaryData, long j10, boolean z10) {
@@ -155,7 +155,7 @@ public final class AutoClassifyWorker implements o<c> {
             Intrinsics.checkNotNullParameter(fromComponent, "fromComponent");
             Intrinsics.checkNotNullParameter(governmentId, "governmentId");
             Intrinsics.checkNotNullParameter(supplementaryData, "supplementaryData");
-            return new AutoClassifyWorker(sessionToken, inquiryId, fromStep, fromComponent, this.f19658a, governmentId, this.f19659b, supplementaryData, j10, z10);
+            return new AutoClassifyWorker(sessionToken, inquiryId, fromStep, fromComponent, this.f19659a, governmentId, this.f19660b, supplementaryData, j10, z10);
         }
     }
 
@@ -166,15 +166,15 @@ public final class AutoClassifyWorker implements o<c> {
         public static final class a implements c {
 
             /* renamed from: a  reason: collision with root package name */
-            private final InternalErrorInfo f19660a;
+            private final InternalErrorInfo f19661a;
 
             public a(InternalErrorInfo cause) {
                 Intrinsics.checkNotNullParameter(cause, "cause");
-                this.f19660a = cause;
+                this.f19661a = cause;
             }
 
             public final InternalErrorInfo a() {
-                return this.f19660a;
+                return this.f19661a;
             }
         }
 
@@ -182,15 +182,15 @@ public final class AutoClassifyWorker implements o<c> {
         public static final class b implements c {
 
             /* renamed from: a  reason: collision with root package name */
-            private final a f19661a;
+            private final a f19662a;
 
             public b(a autoClassificationResult) {
                 Intrinsics.checkNotNullParameter(autoClassificationResult, "autoClassificationResult");
-                this.f19661a = autoClassificationResult;
+                this.f19662a = autoClassificationResult;
             }
 
             public final a a() {
-                return this.f19661a;
+                return this.f19662a;
             }
         }
     }
@@ -199,43 +199,43 @@ public final class AutoClassifyWorker implements o<c> {
     static final class d extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f19662d;
+        Object f19663d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f19663e;
+        int f19664e;
 
         /* renamed from: i  reason: collision with root package name */
-        private /* synthetic */ Object f19664i;
+        private /* synthetic */ Object f19665i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a extends k implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f19666d;
+            int f19667d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ AutoClassifyWorker f19667e;
+            final /* synthetic */ AutoClassifyWorker f19668e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ List f19668i;
+            final /* synthetic */ List f19669i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(AutoClassifyWorker autoClassifyWorker, List list, Continuation continuation) {
                 super(1, continuation);
-                this.f19667e = autoClassifyWorker;
-                this.f19668i = list;
+                this.f19668e = autoClassifyWorker;
+                this.f19669i = list;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Continuation continuation) {
-                return new a(this.f19667e, this.f19668i, continuation);
+                return new a(this.f19668e, this.f19669i, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 Object f10 = gs.b.f();
-                int i10 = this.f19666d;
+                int i10 = this.f19667d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -244,12 +244,12 @@ public final class AutoClassifyWorker implements o<c> {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 kotlin.c.b(obj);
-                com.withpersona.sdk2.inquiry.governmentid.network.a aVar = this.f19667e.f19647f;
-                String str = this.f19667e.f19643b;
-                String str2 = this.f19667e.f19644c;
-                List<MultipartBody.b> list = this.f19668i;
-                SupplementaryData supplementaryData = this.f19667e.f19650i;
-                this.f19666d = 1;
+                com.withpersona.sdk2.inquiry.governmentid.network.a aVar = this.f19668e.f19648f;
+                String str = this.f19668e.f19644b;
+                String str2 = this.f19668e.f19645c;
+                List<MultipartBody.b> list = this.f19669i;
+                SupplementaryData supplementaryData = this.f19668e.f19651i;
+                this.f19667d = 1;
                 Object a10 = aVar.a(str, str2, list, supplementaryData, this);
                 if (a10 == f10) {
                     return f10;
@@ -259,7 +259,7 @@ public final class AutoClassifyWorker implements o<c> {
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Continuation continuation) {
-                return ((a) create(continuation)).invokeSuspend(Unit.f31987a);
+                return ((a) create(continuation)).invokeSuspend(Unit.f31988a);
             }
         }
 
@@ -269,9 +269,9 @@ public final class AutoClassifyWorker implements o<c> {
 
         private static final void j(List list, AutoClassifyWorker autoClassifyWorker, c0 c0Var) {
             String b10;
-            MultipartBody.b.a aVar = MultipartBody.b.f40321c;
-            list.add(aVar.c("data[attributes][image]", new File(c0Var.a()).getName(), RequestBody.Companion.a(new File(c0Var.a()), MediaType.f40297e.c(c0Var.b()))));
-            if (autoClassifyWorker.f19652k && (b10 = autoClassifyWorker.f19653l.b(c0Var.a())) != null) {
+            MultipartBody.b.a aVar = MultipartBody.b.f40322c;
+            list.add(aVar.c("data[attributes][image]", new File(c0Var.a()).getName(), RequestBody.Companion.a(new File(c0Var.a()), MediaType.f40298e.c(c0Var.b()))));
+            if (autoClassifyWorker.f19653k && (b10 = autoClassifyWorker.f19654l.b(c0Var.a())) != null) {
                 list.add(aVar.b("data[attributes][client_extracted_text]", b10));
             }
         }
@@ -279,7 +279,7 @@ public final class AutoClassifyWorker implements o<c> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             d dVar = new d(continuation);
-            dVar.f19664i = obj;
+            dVar.f19665i = obj;
             return dVar;
         }
 
@@ -325,7 +325,7 @@ public final class AutoClassifyWorker implements o<c> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f31987a);
+            return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -338,17 +338,17 @@ public final class AutoClassifyWorker implements o<c> {
         Intrinsics.checkNotNullParameter(governmentId, "governmentId");
         Intrinsics.checkNotNullParameter(imageHelper, "imageHelper");
         Intrinsics.checkNotNullParameter(supplementaryData, "supplementaryData");
-        this.f19643b = sessionToken;
-        this.f19644c = inquiryId;
-        this.f19645d = fromStep;
-        this.f19646e = fromComponent;
-        this.f19647f = service;
-        this.f19648g = governmentId;
-        this.f19649h = imageHelper;
-        this.f19650i = supplementaryData;
-        this.f19651j = j10;
-        this.f19652k = z10;
-        this.f19653l = new d1();
+        this.f19644b = sessionToken;
+        this.f19645c = inquiryId;
+        this.f19646d = fromStep;
+        this.f19647e = fromComponent;
+        this.f19648f = service;
+        this.f19649g = governmentId;
+        this.f19650h = imageHelper;
+        this.f19651i = supplementaryData;
+        this.f19652j = j10;
+        this.f19653k = z10;
+        this.f19654l = new d1();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -360,7 +360,7 @@ public final class AutoClassifyWorker implements o<c> {
             String a10 = idClassesForCountry.a();
             ArrayList arrayList2 = new ArrayList();
             for (Id id2 : idClassesForCountry.c()) {
-                c4 o10 = z.o(id2, idClassesForCountry.a(), this.f19651j);
+                c4 o10 = z.o(id2, idClassesForCountry.a(), this.f19652j);
                 if (o10 != null) {
                     arrayList2.add(o10);
                 }
@@ -373,7 +373,7 @@ public final class AutoClassifyWorker implements o<c> {
     @Override // en.o
     public boolean a(o otherWorker) {
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
-        if ((otherWorker instanceof AutoClassifyWorker) && Intrinsics.areEqual(this.f19643b, ((AutoClassifyWorker) otherWorker).f19643b)) {
+        if ((otherWorker instanceof AutoClassifyWorker) && Intrinsics.areEqual(this.f19644b, ((AutoClassifyWorker) otherWorker).f19644b)) {
             return true;
         }
         return false;

@@ -34,25 +34,25 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.executeNativeBackPress = var3;
     var1 = function arg0() {
-        _fun37399: for (var _fun37399_ip = 0;;) switch (_fun37399_ip) {
+        _fun37421: for (var _fun37421_ip = 0;;) switch (_fun37421_ip) {
             case 0:
                 var2 = arg0;
                 var0 = undefined;
                 if (!(var0 !== var2)) {
-                    _fun37399_ip = 35;
-                    continue _fun37399
+                    _fun37421_ip = 35;
+                    continue _fun37421
                 }
             case 9:
                 var1 = true;
                 if (!(var1 !== var2)) {
-                    _fun37399_ip = 29;
-                    continue _fun37399
+                    _fun37421_ip = 29;
+                    continue _fun37421
                 }
             case 15:
                 var1 = false;
                 if (!(var1 !== var2)) {
-                    _fun37399_ip = 23;
-                    continue _fun37399
+                    _fun37421_ip = 23;
+                    continue _fun37421
                 }
             case 21:
                 return var0;

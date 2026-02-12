@@ -11,49 +11,49 @@ import x.j;
 public class g3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final u f43363a;
+    private final u f43364a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h3 f43364b;
+    private final h3 f43365b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Executor f43365c;
+    private final Executor f43366c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f43366d = false;
+    private boolean f43367d = false;
 
     /* renamed from: e  reason: collision with root package name */
-    private c.a f43367e;
+    private c.a f43368e;
 
     /* renamed from: f  reason: collision with root package name */
-    private u.c f43368f;
+    private u.c f43369f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g3(u uVar, r.a0 a0Var, Executor executor) {
-        this.f43363a = uVar;
-        this.f43364b = new h3(a0Var, 0);
-        this.f43365c = executor;
+        this.f43364a = uVar;
+        this.f43365b = new h3(a0Var, 0);
+        this.f43366c = executor;
     }
 
     private void a() {
-        c.a aVar = this.f43367e;
+        c.a aVar = this.f43368e;
         if (aVar != null) {
             aVar.f(new j.a("Cancelled by another setExposureCompensationIndex()"));
-            this.f43367e = null;
+            this.f43368e = null;
         }
-        u.c cVar = this.f43368f;
+        u.c cVar = this.f43369f;
         if (cVar != null) {
-            this.f43363a.W(cVar);
-            this.f43368f = null;
+            this.f43364a.W(cVar);
+            this.f43369f = null;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void b(boolean z10) {
-        if (z10 != this.f43366d) {
-            this.f43366d = z10;
+        if (z10 != this.f43367d) {
+            this.f43367d = z10;
             if (!z10) {
-                this.f43364b.b(0);
+                this.f43365b.b(0);
                 a();
             }
         }
@@ -61,6 +61,6 @@ public class g3 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void c(a.C0582a c0582a) {
-        c0582a.g(CaptureRequest.CONTROL_AE_EXPOSURE_COMPENSATION, Integer.valueOf(this.f43364b.a()), r0.c.REQUIRED);
+        c0582a.g(CaptureRequest.CONTROL_AE_EXPOSURE_COMPENSATION, Integer.valueOf(this.f43365b.a()), r0.c.REQUIRED);
     }
 }

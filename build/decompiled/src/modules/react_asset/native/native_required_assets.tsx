@@ -34,4 +34,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.NATIVE_REQUIRED_ASSETS = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [15144, 15152, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [15155, 15163, 2]);

@@ -15,28 +15,28 @@ import org.chromium.net.ApiVersion;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f15142a = "a";
+    private static final String f15143a = "a";
 
     /* renamed from: b  reason: collision with root package name */
-    private static final g f15143b = g.f();
+    private static final g f15144b = g.f();
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Object f15144c = new Object();
+    private static final Object f15145c = new Object();
 
     /* renamed from: d  reason: collision with root package name */
-    private static DynamiteModule f15145d = null;
+    private static DynamiteModule f15146d = null;
 
     /* renamed from: e  reason: collision with root package name */
-    private static String f15146e = "0";
+    private static String f15147e = "0";
 
     /* renamed from: f  reason: collision with root package name */
-    private static boolean f15147f;
+    private static boolean f15148f;
 
     public static boolean a() {
-        synchronized (f15144c) {
+        synchronized (f15145c) {
             try {
                 boolean z10 = true;
-                if (f15147f) {
+                if (f15148f) {
                     return true;
                 }
                 if (c() == null) {
@@ -49,7 +49,7 @@ public abstract class a {
     }
 
     public static void b(Context context) {
-        synchronized (f15144c) {
+        synchronized (f15145c) {
             try {
                 if (a()) {
                     return;
@@ -58,7 +58,7 @@ public abstract class a {
                 new e("PlayServices CronetProviderInstaller#installIfNeeded");
                 q.m(context, "Context must not be null");
                 if (HttpEngineProviderSingleton.getInstance(context).shouldUseHttpEngine()) {
-                    f15147f = true;
+                    f15148f = true;
                     dVar.a();
                     Trace.endSection();
                     dVar.close();
@@ -69,13 +69,13 @@ public abstract class a {
                     int apiLevel = ApiVersion.getApiLevel();
                     new e("PlayServices CronetProviderInstaller#installIfNeeded verifyGooglePlayServicesIsAvailable");
                     try {
-                        g gVar = f15143b;
+                        g gVar = f15144b;
                         gVar.k(context, 11925000);
                         Trace.endSection();
                         try {
                             new e("CronetProviderInstaller#installIfNeeded DynamiteModule#load");
                             try {
-                                DynamiteModule e10 = DynamiteModule.e(context, DynamiteModule.f14540b, "com.google.android.gms.cronet_dynamite");
+                                DynamiteModule e10 = DynamiteModule.e(context, DynamiteModule.f14541b, "com.google.android.gms.cronet_dynamite");
                                 Trace.endSection();
                                 try {
                                     new e("PlayServices CronetProviderInstaller#installIfNeeded loading class");
@@ -85,15 +85,15 @@ public abstract class a {
                                             Method method = loadClass.getMethod("getApiLevel", null);
                                             Method method2 = loadClass.getMethod("getCronetVersion", null);
                                             int intValue = ((Integer) q.l((Integer) method.invoke(null, null))).intValue();
-                                            f15146e = (String) q.l((String) method2.invoke(null, null));
+                                            f15147e = (String) q.l((String) method2.invoke(null, null));
                                             Trace.endSection();
                                             if (apiLevel > intValue) {
                                                 Intent b10 = gVar.b(context, 2, "cr");
                                                 if (b10 == null) {
-                                                    Log.e(f15142a, "Unable to fetch error resolution intent");
+                                                    Log.e(f15143a, "Unable to fetch error resolution intent");
                                                     throw new h(2);
                                                 }
-                                                String str = f15146e;
+                                                String str = f15147e;
                                                 StringBuilder sb2 = new StringBuilder(String.valueOf(apiLevel).length() + 113 + String.valueOf(intValue).length() + 39 + String.valueOf(str).length());
                                                 sb2.append("Google Play Services update is required. The API Level of the client is ");
                                                 sb2.append(apiLevel);
@@ -103,19 +103,19 @@ public abstract class a {
                                                 sb2.append(str);
                                                 throw new i(2, sb2.toString(), b10);
                                             }
-                                            f15145d = e10;
+                                            f15146d = e10;
                                             dVar.a();
                                             Trace.endSection();
                                             dVar.close();
                                             return;
                                         }
-                                        Log.e(f15142a, "ImplVersion class is missing from Cronet module.");
+                                        Log.e(f15143a, "ImplVersion class is missing from Cronet module.");
                                         throw new h(8);
                                     } catch (Throwable th2) {
                                         throw th2;
                                     }
                                 } catch (Exception e11) {
-                                    Log.e(f15142a, "Unable to read Cronet version from the Cronet module ", e11);
+                                    Log.e(f15143a, "Unable to read Cronet version from the Cronet module ", e11);
                                     throw ((h) new h(8).initCause(e11));
                                 }
                             } finally {
@@ -126,7 +126,7 @@ public abstract class a {
                                 }
                             }
                         } catch (DynamiteModule.a e12) {
-                            Log.e(f15142a, "Unable to load Cronet module", e12);
+                            Log.e(f15143a, "Unable to load Cronet module", e12);
                             throw ((h) new h(8).initCause(e12));
                         }
                     } catch (Throwable th4) {
@@ -138,7 +138,7 @@ public abstract class a {
                         throw th4;
                     }
                 } catch (ClassNotFoundException e13) {
-                    Log.e(f15142a, "Cronet API is not available. Have you included all required dependencies?");
+                    Log.e(f15143a, "Cronet API is not available. Have you included all required dependencies?");
                     throw ((h) new h(10).initCause(e13));
                 }
             } catch (Throwable th6) {
@@ -150,8 +150,8 @@ public abstract class a {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static DynamiteModule c() {
         DynamiteModule dynamiteModule;
-        synchronized (f15144c) {
-            dynamiteModule = f15145d;
+        synchronized (f15145c) {
+            dynamiteModule = f15146d;
         }
         return dynamiteModule;
     }
@@ -159,8 +159,8 @@ public abstract class a {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static String d() {
         String str;
-        synchronized (f15144c) {
-            str = f15146e;
+        synchronized (f15145c) {
+            str = f15147e;
         }
         return str;
     }

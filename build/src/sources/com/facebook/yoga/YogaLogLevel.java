@@ -11,10 +11,10 @@ public enum YogaLogLevel {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f12138d;
+    private final int f12139d;
 
     YogaLogLevel(int i10) {
-        this.f12138d = i10;
+        this.f12139d = i10;
     }
 
     @tb.a

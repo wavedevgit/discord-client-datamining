@@ -13,7 +13,7 @@ import lv.d;
 public final class c implements cv.a, f, lv.d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f23271a = new c();
+    public static final c f23272a = new c();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
@@ -41,7 +41,7 @@ public final class c implements cv.a, f, lv.d {
         }
         ArrayList arrayList = new ArrayList();
         for (Object obj : b10) {
-            if (f23271a.i(hVar, obj, bVar.a(), bVar.c())) {
+            if (f23272a.i(hVar, obj, bVar.a(), bVar.c())) {
                 arrayList.add(obj);
             }
         }

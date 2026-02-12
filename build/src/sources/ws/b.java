@@ -8,47 +8,47 @@ import kotlin.enums.EnumEntries;
 public final class b {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final b f53964e = new b("NANOSECONDS", 0, TimeUnit.NANOSECONDS);
+    public static final b f53965e = new b("NANOSECONDS", 0, TimeUnit.NANOSECONDS);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final b f53965i = new b("MICROSECONDS", 1, TimeUnit.MICROSECONDS);
+    public static final b f53966i = new b("MICROSECONDS", 1, TimeUnit.MICROSECONDS);
 
     /* renamed from: o  reason: collision with root package name */
-    public static final b f53966o = new b("MILLISECONDS", 2, TimeUnit.MILLISECONDS);
+    public static final b f53967o = new b("MILLISECONDS", 2, TimeUnit.MILLISECONDS);
 
     /* renamed from: p  reason: collision with root package name */
-    public static final b f53967p = new b("SECONDS", 3, TimeUnit.SECONDS);
+    public static final b f53968p = new b("SECONDS", 3, TimeUnit.SECONDS);
 
     /* renamed from: q  reason: collision with root package name */
-    public static final b f53968q = new b("MINUTES", 4, TimeUnit.MINUTES);
+    public static final b f53969q = new b("MINUTES", 4, TimeUnit.MINUTES);
 
     /* renamed from: r  reason: collision with root package name */
-    public static final b f53969r = new b("HOURS", 5, TimeUnit.HOURS);
+    public static final b f53970r = new b("HOURS", 5, TimeUnit.HOURS);
 
     /* renamed from: s  reason: collision with root package name */
-    public static final b f53970s = new b("DAYS", 6, TimeUnit.DAYS);
+    public static final b f53971s = new b("DAYS", 6, TimeUnit.DAYS);
 
     /* renamed from: t  reason: collision with root package name */
-    private static final /* synthetic */ b[] f53971t;
+    private static final /* synthetic */ b[] f53972t;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f53972u;
+    private static final /* synthetic */ EnumEntries f53973u;
 
     /* renamed from: d  reason: collision with root package name */
-    private final TimeUnit f53973d;
+    private final TimeUnit f53974d;
 
     static {
         b[] a10 = a();
-        f53971t = a10;
-        f53972u = hs.a.a(a10);
+        f53972t = a10;
+        f53973u = hs.a.a(a10);
     }
 
     private b(String str, int i10, TimeUnit timeUnit) {
-        this.f53973d = timeUnit;
+        this.f53974d = timeUnit;
     }
 
     private static final /* synthetic */ b[] a() {
-        return new b[]{f53964e, f53965i, f53966o, f53967p, f53968q, f53969r, f53970s};
+        return new b[]{f53965e, f53966i, f53967o, f53968p, f53969q, f53970r, f53971s};
     }
 
     public static b valueOf(String str) {
@@ -56,10 +56,10 @@ public final class b {
     }
 
     public static b[] values() {
-        return (b[]) f53971t.clone();
+        return (b[]) f53972t.clone();
     }
 
     public final TimeUnit d() {
-        return this.f53973d;
+        return this.f53974d;
     }
 }

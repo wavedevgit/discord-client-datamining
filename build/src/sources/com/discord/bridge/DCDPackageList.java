@@ -62,7 +62,7 @@ import com.discord.segmented.control.SegmentedControlViewManager;
 import com.discord.self_measured_view.SelfMeasuredViewManager;
 import com.discord.sticker.react.StickerPackage;
 import com.discord.sticker_picker.react.StickerPickerPackage;
-import com.discord.suspense_visible_view.SuspenseVisibleViewPackage;
+import com.discord.suspense_visible_view.SuspenseVisibleViewManager;
 import com.discord.thumbhash.ThumbhashPackage;
 import com.discord.tti_measurement_view.TTIMeasurementViewPackage;
 import com.discord.view.ReactScrollViewManagerOverride;
@@ -106,37 +106,43 @@ public final class DCDPackageList extends PackageList {
     /* JADX INFO: Access modifiers changed from: private */
     public static final ViewManager getPackages$lambda$10(ReactApplicationContext it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return new ReanimatedViewManager();
+        return new SuspenseVisibleViewManager();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final ViewManager getPackages$lambda$11(ReactApplicationContext it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return new ScreenStackViewManagerOverride();
+        return new ReanimatedViewManager();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final ViewManager getPackages$lambda$12(ReactApplicationContext it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return new ScreenViewManagerOverride();
+        return new ScreenStackViewManagerOverride();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final ViewManager getPackages$lambda$13(ReactApplicationContext it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return new ReactViewManagerOverride();
+        return new ScreenViewManagerOverride();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final ViewManager getPackages$lambda$14(ReactApplicationContext it) {
         Intrinsics.checkNotNullParameter(it, "it");
+        return new ReactViewManagerOverride();
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final ViewManager getPackages$lambda$15(ReactApplicationContext it) {
+        Intrinsics.checkNotNullParameter(it, "it");
         return new ReactScrollViewManagerOverride(null, 1, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public static final NativeModule getPackages$lambda$15(final ReactApplicationContext it) {
+    public static final NativeModule getPackages$lambda$16(final ReactApplicationContext it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return new NativeArchitectureProviderSpec(it) { // from class: com.discord.bridge.DCDPackageList$getPackages$80$1
+        return new NativeArchitectureProviderSpec(it) { // from class: com.discord.bridge.DCDPackageList$getPackages$81$1
             @Override // com.discord.codegen.NativeArchitectureProviderSpec
             public boolean isFabric() {
                 return true;
@@ -235,149 +241,156 @@ public final class DCDPackageList extends PackageList {
                 return packages$lambda$0;
             }
         }, 1, null));
-        packages.add(dCDModuleProvider.getViewManagers(new Function1() { // from class: com.discord.bridge.n
+        packages.add(dCDModuleProvider.getViewManagers(new Function1() { // from class: com.discord.bridge.p
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 ViewManager packages$lambda$1;
                 packages$lambda$1 = DCDPackageList.getPackages$lambda$1((ReactApplicationContext) obj);
                 return packages$lambda$1;
             }
-        }, new Function1() { // from class: com.discord.bridge.o
+        }, new Function1() { // from class: com.discord.bridge.q
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 ViewManager packages$lambda$2;
                 packages$lambda$2 = DCDPackageList.getPackages$lambda$2((ReactApplicationContext) obj);
                 return packages$lambda$2;
             }
-        }, new Function1() { // from class: com.discord.bridge.p
+        }, new Function1() { // from class: com.discord.bridge.b
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 ViewManager packages$lambda$3;
                 packages$lambda$3 = DCDPackageList.getPackages$lambda$3((ReactApplicationContext) obj);
                 return packages$lambda$3;
             }
-        }, new Function1() { // from class: com.discord.bridge.b
+        }, new Function1() { // from class: com.discord.bridge.c
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 ViewManager packages$lambda$4;
                 packages$lambda$4 = DCDPackageList.getPackages$lambda$4((ReactApplicationContext) obj);
                 return packages$lambda$4;
             }
-        }, new Function1() { // from class: com.discord.bridge.c
+        }, new Function1() { // from class: com.discord.bridge.d
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 ViewManager packages$lambda$5;
                 packages$lambda$5 = DCDPackageList.getPackages$lambda$5((ReactApplicationContext) obj);
                 return packages$lambda$5;
             }
-        }, new Function1() { // from class: com.discord.bridge.d
+        }, new Function1() { // from class: com.discord.bridge.e
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 ViewManager packages$lambda$6;
                 packages$lambda$6 = DCDPackageList.getPackages$lambda$6((ReactApplicationContext) obj);
                 return packages$lambda$6;
             }
-        }, new Function1() { // from class: com.discord.bridge.e
+        }, new Function1() { // from class: com.discord.bridge.f
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 ViewManager packages$lambda$7;
                 packages$lambda$7 = DCDPackageList.getPackages$lambda$7((ReactApplicationContext) obj);
                 return packages$lambda$7;
             }
-        }, new Function1() { // from class: com.discord.bridge.f
+        }, new Function1() { // from class: com.discord.bridge.g
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 ViewManager packages$lambda$8;
                 packages$lambda$8 = DCDPackageList.getPackages$lambda$8((ReactApplicationContext) obj);
                 return packages$lambda$8;
             }
-        }, new Function1() { // from class: com.discord.bridge.g
+        }, new Function1() { // from class: com.discord.bridge.h
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 ViewManager packages$lambda$9;
                 packages$lambda$9 = DCDPackageList.getPackages$lambda$9((ReactApplicationContext) obj);
                 return packages$lambda$9;
             }
-        }, new Function1() { // from class: com.discord.bridge.h
+        }, new Function1() { // from class: com.discord.bridge.i
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 ViewManager packages$lambda$10;
                 packages$lambda$10 = DCDPackageList.getPackages$lambda$10((ReactApplicationContext) obj);
                 return packages$lambda$10;
             }
-        }, new Function1() { // from class: com.discord.bridge.i
+        }, new Function1() { // from class: com.discord.bridge.j
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 ViewManager packages$lambda$11;
                 packages$lambda$11 = DCDPackageList.getPackages$lambda$11((ReactApplicationContext) obj);
                 return packages$lambda$11;
             }
-        }, new Function1() { // from class: com.discord.bridge.j
+        }, new Function1() { // from class: com.discord.bridge.k
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 ViewManager packages$lambda$12;
                 packages$lambda$12 = DCDPackageList.getPackages$lambda$12((ReactApplicationContext) obj);
                 return packages$lambda$12;
             }
-        }, new Function1() { // from class: com.discord.bridge.k
+        }, new Function1() { // from class: com.discord.bridge.l
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 ViewManager packages$lambda$13;
                 packages$lambda$13 = DCDPackageList.getPackages$lambda$13((ReactApplicationContext) obj);
                 return packages$lambda$13;
             }
-        }, new Function1() { // from class: com.discord.bridge.l
+        }, new Function1() { // from class: com.discord.bridge.m
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 ViewManager packages$lambda$14;
                 packages$lambda$14 = DCDPackageList.getPackages$lambda$14((ReactApplicationContext) obj);
                 return packages$lambda$14;
             }
-        }));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeAdsModuleSpec.NAME, DCDPackageList$getPackages$46.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeAppDatabaseModuleSpec.NAME, DCDPackageList$getPackages$47.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeAppIconModuleSpec.NAME, DCDPackageList$getPackages$48.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeAppLifecycleModuleSpec.NAME, DCDPackageList$getPackages$49.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeAppRatingRequestModuleSpec.NAME, DCDPackageList$getPackages$50.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeAudioManagerModuleSpec.NAME, new DCDPackageList$getPackages$51(AudioManagerModule.Companion)));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeAudioPlayerModuleSpec.NAME, DCDPackageList$getPackages$52.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeAudioRouteEmitterModuleSpec.NAME, DCDPackageList$getPackages$53.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeBrowserManagerModuleSpec.NAME, DCDPackageList$getPackages$54.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeCacheModuleSpec.NAME, DCDPackageList$getPackages$55.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeClientInfoModuleSpec.NAME, DCDPackageList$getPackages$56.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeCommandClipboardModuleSpec.NAME, DCDPackageList$getPackages$57.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeCompressionModuleSpec.NAME, DCDPackageList$getPackages$58.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeDateFormatUtilsModuleSpec.NAME, DCDPackageList$getPackages$59.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeFileModuleSpec.NAME, DCDPackageList$getPackages$60.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeI18nModuleSpec.NAME, DCDPackageList$getPackages$61.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeJankStatsModuleSpec.NAME, DCDPackageList$getPackages$62.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeJSWatchdogModuleSpec.NAME, DCDPackageList$getPackages$63.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeKeyCommandsModuleSpec.NAME, DCDPackageList$getPackages$64.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeKeyboardModuleSpec.NAME, DCDPackageList$getPackages$65.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeMetricMonitorModuleSpec.NAME, DCDPackageList$getPackages$66.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeMobileVoiceOverlayModuleSpec.NAME, DCDPackageList$getPackages$67.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeOnDemandResourceModuleSpec.NAME, DCDPackageList$getPackages$68.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativePushNotificationMonitorModuleSpec.NAME, DCDPackageList$getPackages$69.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeReactAssetModuleSpec.NAME, DCDPackageList$getPackages$70.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeStartupFlagsModuleSpec.NAME, DCDPackageList$getPackages$71.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeSystraceModuleSpec.NAME, DCDPackageList$getPackages$72.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeThemeModuleSpec.NAME, DCDPackageList$getPackages$73.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeTimersModuleSpec.NAME, DCDPackageList$getPackages$74.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeTTIModuleSpec.NAME, DCDPackageList$getPackages$75.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeTelemetryRingModuleSpec.NAME, DCDPackageList$getPackages$76.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeMediaEngineModuleSpec.NAME, DCDPackageList$getPackages$77.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeTelecomModuleSpec.NAME, DCDPackageList$getPackages$78.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeTouchEventAnalyticsModuleSpec.NAME, DCDPackageList$getPackages$79.INSTANCE));
-        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeArchitectureProviderSpec.NAME, new Function1() { // from class: com.discord.bridge.m
+        }, new Function1() { // from class: com.discord.bridge.n
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
-                NativeModule packages$lambda$15;
+                ViewManager packages$lambda$15;
                 packages$lambda$15 = DCDPackageList.getPackages$lambda$15((ReactApplicationContext) obj);
                 return packages$lambda$15;
             }
         }));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeAdsModuleSpec.NAME, DCDPackageList$getPackages$47.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeAppDatabaseModuleSpec.NAME, DCDPackageList$getPackages$48.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeAppIconModuleSpec.NAME, DCDPackageList$getPackages$49.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeAppLifecycleModuleSpec.NAME, DCDPackageList$getPackages$50.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeAppRatingRequestModuleSpec.NAME, DCDPackageList$getPackages$51.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeAudioManagerModuleSpec.NAME, new DCDPackageList$getPackages$52(AudioManagerModule.Companion)));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeAudioPlayerModuleSpec.NAME, DCDPackageList$getPackages$53.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeAudioRouteEmitterModuleSpec.NAME, DCDPackageList$getPackages$54.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeBrowserManagerModuleSpec.NAME, DCDPackageList$getPackages$55.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeCacheModuleSpec.NAME, DCDPackageList$getPackages$56.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeClientInfoModuleSpec.NAME, DCDPackageList$getPackages$57.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeCommandClipboardModuleSpec.NAME, DCDPackageList$getPackages$58.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeCompressionModuleSpec.NAME, DCDPackageList$getPackages$59.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeDateFormatUtilsModuleSpec.NAME, DCDPackageList$getPackages$60.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeFileModuleSpec.NAME, DCDPackageList$getPackages$61.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeI18nModuleSpec.NAME, DCDPackageList$getPackages$62.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeJankStatsModuleSpec.NAME, DCDPackageList$getPackages$63.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeJSWatchdogModuleSpec.NAME, DCDPackageList$getPackages$64.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeKeyCommandsModuleSpec.NAME, DCDPackageList$getPackages$65.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeKeyboardModuleSpec.NAME, DCDPackageList$getPackages$66.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeMetricMonitorModuleSpec.NAME, DCDPackageList$getPackages$67.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeMobileVoiceOverlayModuleSpec.NAME, DCDPackageList$getPackages$68.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeOnDemandResourceModuleSpec.NAME, DCDPackageList$getPackages$69.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativePushNotificationMonitorModuleSpec.NAME, DCDPackageList$getPackages$70.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeReactAssetModuleSpec.NAME, DCDPackageList$getPackages$71.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeStartupFlagsModuleSpec.NAME, DCDPackageList$getPackages$72.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeSystraceModuleSpec.NAME, DCDPackageList$getPackages$73.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeThemeModuleSpec.NAME, DCDPackageList$getPackages$74.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeTimersModuleSpec.NAME, DCDPackageList$getPackages$75.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeTTIModuleSpec.NAME, DCDPackageList$getPackages$76.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeTelemetryRingModuleSpec.NAME, DCDPackageList$getPackages$77.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeMediaEngineModuleSpec.NAME, DCDPackageList$getPackages$78.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeTelecomModuleSpec.NAME, DCDPackageList$getPackages$79.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeTouchEventAnalyticsModuleSpec.NAME, DCDPackageList$getPackages$80.INSTANCE));
+        packages.add(dCDModuleProvider.getTurboPackageForModule(NativeArchitectureProviderSpec.NAME, new Function1() { // from class: com.discord.bridge.o
+            @Override // kotlin.jvm.functions.Function1
+            public final Object invoke(Object obj) {
+                NativeModule packages$lambda$16;
+                packages$lambda$16 = DCDPackageList.getPackages$lambda$16((ReactApplicationContext) obj);
+                return packages$lambda$16;
+            }
+        }));
         Intrinsics.checkNotNull(packages);
-        dCDModuleProvider.addTurboPackages(packages, new APNGPackage(), new AvatarPackage(), new BlurViewPackage(), new ChatPackage(), new DevicePackage(), new DiscordGestureHandlerPackage(), new EmojiPickerPackage(), new FastConnectPackage(), new FastestListPackage(), new FontPackage(), new IntentsPackage(), new PortalsPackage(), new SafeAreaPackage(), new SuspenseVisibleViewPackage(), new StickerPackage(), new StickerPickerPackage(), new ThumbhashPackage(), new TTIMeasurementViewPackage(), new WakelockPackage(), new ZoomLayoutPackage());
+        dCDModuleProvider.addTurboPackages(packages, new APNGPackage(), new AvatarPackage(), new BlurViewPackage(), new ChatPackage(), new DevicePackage(), new DiscordGestureHandlerPackage(), new EmojiPickerPackage(), new FastConnectPackage(), new FastestListPackage(), new FontPackage(), new IntentsPackage(), new PortalsPackage(), new SafeAreaPackage(), new StickerPackage(), new StickerPickerPackage(), new ThumbhashPackage(), new TTIMeasurementViewPackage(), new WakelockPackage(), new ZoomLayoutPackage());
         return packages;
     }
 }

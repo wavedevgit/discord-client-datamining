@@ -14,25 +14,25 @@ import org.jetbrains.annotations.NotNull;
 public final class TransitionInquiryRequestJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20854a;
+    private final m.b f20855a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f20855b;
+    private final h f20856b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f20856c;
+    private final h f20857c;
 
     public TransitionInquiryRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("data", "meta");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20854a = a10;
+        this.f20855a = a10;
         h f10 = moshi.f(TransitionInquiryRequest.Data.class, x0.d(), "data");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20855b = f10;
+        this.f20856b = f10;
         h f11 = moshi.f(TransitionInquiryRequest.Meta.class, x0.d(), "meta");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f20856c = f11;
+        this.f20857c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -43,14 +43,14 @@ public final class TransitionInquiryRequestJsonAdapter extends h {
         TransitionInquiryRequest.Data data = null;
         TransitionInquiryRequest.Meta meta = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20854a);
+            int J = reader.J(this.f20855a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (meta = (TransitionInquiryRequest.Meta) this.f20856c.fromJson(reader)) == null) {
+                    if (J == 1 && (meta = (TransitionInquiryRequest.Meta) this.f20857c.fromJson(reader)) == null) {
                         throw c.x("meta", "meta", reader);
                     }
                 } else {
-                    data = (TransitionInquiryRequest.Data) this.f20855b.fromJson(reader);
+                    data = (TransitionInquiryRequest.Data) this.f20856b.fromJson(reader);
                     if (data == null) {
                         throw c.x("data_", "data", reader);
                     }
@@ -77,9 +77,9 @@ public final class TransitionInquiryRequestJsonAdapter extends h {
         if (transitionInquiryRequest != null) {
             writer.i();
             writer.J("data");
-            this.f20855b.toJson(writer, transitionInquiryRequest.a());
+            this.f20856b.toJson(writer, transitionInquiryRequest.a());
             writer.J("meta");
-            this.f20856c.toJson(writer, transitionInquiryRequest.b());
+            this.f20857c.toJson(writer, transitionInquiryRequest.b());
             writer.s();
             return;
         }

@@ -37,7 +37,7 @@ public /* synthetic */ class TimerEvent$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{p0.f50048a};
+        return new KSerializer[]{p0.f50049a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -83,7 +83,7 @@ public /* synthetic */ class TimerEvent$$serializer implements h0 {
         Intrinsics.checkNotNullParameter(value, "value");
         SerialDescriptor serialDescriptor = descriptor;
         CompositeEncoder b10 = encoder.b(serialDescriptor);
-        b10.w(serialDescriptor, 0, value.f10441id);
+        b10.w(serialDescriptor, 0, value.f10442id);
         b10.c(serialDescriptor);
     }
 

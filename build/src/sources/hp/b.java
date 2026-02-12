@@ -11,22 +11,22 @@ import ls.j;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f27638a;
+    private boolean f27639a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f27639b;
+    private boolean f27640b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ro.a f27640c;
+    private final ro.a f27641c;
 
     /* renamed from: d  reason: collision with root package name */
-    private List f27641d;
+    private List f27642d;
 
     public b(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f27639b = true;
-        this.f27640c = new ro.a(context);
-        this.f27641d = CollectionsKt.l();
+        this.f27640b = true;
+        this.f27641c = new ro.a(context);
+        this.f27642d = CollectionsKt.l();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -42,18 +42,18 @@ public final class b {
     }
 
     public final void b() {
-        this.f27640c.a();
+        this.f27641c.a();
     }
 
     public final void c(Throwable e10) {
         Intrinsics.checkNotNullParameter(e10, "e");
-        if (this.f27639b) {
+        if (this.f27640b) {
             try {
-                this.f27640c.g(e10);
+                this.f27641c.g(e10);
             } catch (Exception unused) {
             }
             try {
-                for (File file : this.f27641d) {
+                for (File file : this.f27642d) {
                     j.r(file);
                 }
             } catch (Exception unused2) {
@@ -62,10 +62,10 @@ public final class b {
     }
 
     public final synchronized void d() {
-        if (this.f27638a) {
+        if (this.f27639a) {
             return;
         }
-        this.f27638a = true;
+        this.f27639a = true;
         final Thread.UncaughtExceptionHandler defaultUncaughtExceptionHandler = Thread.getDefaultUncaughtExceptionHandler();
         Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() { // from class: hp.a
             @Override // java.lang.Thread.UncaughtExceptionHandler
@@ -77,12 +77,12 @@ public final class b {
 
     public final void f(List list) {
         Intrinsics.checkNotNullParameter(list, "<set-?>");
-        this.f27641d = list;
+        this.f27642d = list;
     }
 
     public final synchronized void g() {
-        if (this.f27638a) {
-            this.f27639b = false;
+        if (this.f27639a) {
+            this.f27640b = false;
         }
     }
 }

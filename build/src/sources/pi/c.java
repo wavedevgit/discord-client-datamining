@@ -17,22 +17,22 @@ public abstract class c implements n {
     private static final class b extends a {
 
         /* renamed from: d  reason: collision with root package name */
-        private final char f42732d;
+        private final char f42733d;
 
         b(char c10) {
-            this.f42732d = c10;
+            this.f42733d = c10;
         }
 
         @Override // pi.c
         public boolean e(char c10) {
-            if (c10 == this.f42732d) {
+            if (c10 == this.f42733d) {
                 return true;
             }
             return false;
         }
 
         public String toString() {
-            String g10 = c.g(this.f42732d);
+            String g10 = c.g(this.f42733d);
             StringBuilder sb2 = new StringBuilder(String.valueOf(g10).length() + 18);
             sb2.append("CharMatcher.is('");
             sb2.append(g10);
@@ -46,14 +46,14 @@ public abstract class c implements n {
     static abstract class AbstractC0591c extends a {
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f42733d;
+        private final String f42734d;
 
         AbstractC0591c(String str) {
-            this.f42733d = (String) m.j(str);
+            this.f42734d = (String) m.j(str);
         }
 
         public final String toString() {
-            return this.f42733d;
+            return this.f42734d;
         }
     }
 
@@ -61,7 +61,7 @@ public abstract class c implements n {
     private static final class d extends AbstractC0591c {
 
         /* renamed from: e  reason: collision with root package name */
-        static final d f42734e = new d();
+        static final d f42735e = new d();
 
         private d() {
             super("CharMatcher.none()");
@@ -87,7 +87,7 @@ public abstract class c implements n {
     }
 
     public static c f() {
-        return d.f42734e;
+        return d.f42735e;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

@@ -8,19 +8,19 @@ abstract class m {
     class a extends m {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ l.b f48327a;
+        final /* synthetic */ l.b f48328a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ g f48328b;
+        final /* synthetic */ g f48329b;
 
         a(l.b bVar, g gVar) {
-            this.f48327a = bVar;
-            this.f48328b = gVar;
+            this.f48328a = bVar;
+            this.f48329b = gVar;
         }
 
         @Override // sr.m
         l a() {
-            return this.f48327a.a(this.f48328b, new r());
+            return this.f48328a.a(this.f48329b, new r());
         }
     }
 

@@ -7,23 +7,23 @@ import java.util.SortedSet;
 public abstract class m1 extends h1 implements NavigableSet, a2 {
 
     /* renamed from: i  reason: collision with root package name */
-    final transient Comparator f14737i;
+    final transient Comparator f14738i;
 
     /* renamed from: o  reason: collision with root package name */
-    transient m1 f14738o;
+    transient m1 f14739o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m1(Comparator comparator) {
-        this.f14737i = comparator;
+        this.f14738i = comparator;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static v1 x(Comparator comparator) {
-        if (q1.f14769d.equals(comparator)) {
-            return v1.f14813q;
+        if (q1.f14770d.equals(comparator)) {
+            return v1.f14814q;
         }
-        int i10 = e1.f14667i;
-        return new v1(t1.f14795q, comparator);
+        int i10 = e1.f14668i;
+        return new v1(t1.f14796q, comparator);
     }
 
     public final void addFirst(Object obj) {
@@ -36,7 +36,7 @@ public abstract class m1 extends h1 implements NavigableSet, a2 {
 
     @Override // java.util.SortedSet, com.google.android.gms.internal.fido.a2
     public final Comparator comparator() {
-        return this.f14737i;
+        return this.f14738i;
     }
 
     @Override // java.util.SortedSet
@@ -82,11 +82,11 @@ public abstract class m1 extends h1 implements NavigableSet, a2 {
     @Override // java.util.NavigableSet
     /* renamed from: s */
     public final m1 descendingSet() {
-        m1 m1Var = this.f14738o;
+        m1 m1Var = this.f14739o;
         if (m1Var == null) {
             m1 r10 = r();
-            this.f14738o = r10;
-            r10.f14738o = this;
+            this.f14739o = r10;
+            r10.f14739o = this;
             return r10;
         }
         return m1Var;
@@ -112,7 +112,7 @@ public abstract class m1 extends h1 implements NavigableSet, a2 {
         boolean z12;
         obj.getClass();
         obj2.getClass();
-        if (this.f14737i.compare(obj, obj2) <= 0) {
+        if (this.f14738i.compare(obj, obj2) <= 0) {
             z12 = true;
         } else {
             z12 = false;

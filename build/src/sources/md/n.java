@@ -8,10 +8,10 @@ public final class n extends i {
     public static final Parcelable.Creator<n> CREATOR = new a();
 
     /* renamed from: e  reason: collision with root package name */
-    public final String f36328e;
+    public final String f36329e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final String f36329i;
+    public final String f36330i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -33,8 +33,8 @@ public final class n extends i {
 
     public n(String str, String str2, String str3) {
         super(str);
-        this.f36328e = str2;
-        this.f36329i = str3;
+        this.f36329e = str2;
+        this.f36330i = str3;
     }
 
     public boolean equals(Object obj) {
@@ -43,7 +43,7 @@ public final class n extends i {
         }
         if (obj != null && n.class == obj.getClass()) {
             n nVar = (n) obj;
-            if (this.f36314d.equals(nVar.f36314d) && w0.c(this.f36328e, nVar.f36328e) && w0.c(this.f36329i, nVar.f36329i)) {
+            if (this.f36315d.equals(nVar.f36315d) && w0.c(this.f36329e, nVar.f36329e) && w0.c(this.f36330i, nVar.f36330i)) {
                 return true;
             }
         }
@@ -52,8 +52,8 @@ public final class n extends i {
 
     public int hashCode() {
         int i10;
-        int hashCode = (527 + this.f36314d.hashCode()) * 31;
-        String str = this.f36328e;
+        int hashCode = (527 + this.f36315d.hashCode()) * 31;
+        String str = this.f36329e;
         int i11 = 0;
         if (str != null) {
             i10 = str.hashCode();
@@ -61,7 +61,7 @@ public final class n extends i {
             i10 = 0;
         }
         int i12 = (hashCode + i10) * 31;
-        String str2 = this.f36329i;
+        String str2 = this.f36330i;
         if (str2 != null) {
             i11 = str2.hashCode();
         }
@@ -70,19 +70,19 @@ public final class n extends i {
 
     @Override // md.i
     public String toString() {
-        return this.f36314d + ": url=" + this.f36329i;
+        return this.f36315d + ": url=" + this.f36330i;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f36314d);
-        parcel.writeString(this.f36328e);
-        parcel.writeString(this.f36329i);
+        parcel.writeString(this.f36315d);
+        parcel.writeString(this.f36329e);
+        parcel.writeString(this.f36330i);
     }
 
     n(Parcel parcel) {
         super((String) w0.j(parcel.readString()));
-        this.f36328e = parcel.readString();
-        this.f36329i = (String) w0.j(parcel.readString());
+        this.f36329e = parcel.readString();
+        this.f36330i = (String) w0.j(parcel.readString());
     }
 }

@@ -78,7 +78,7 @@ public final class CommandQueue$getStateMachineNamesb88yb0A$$inlined$suspendNati
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj2) {
                 invoke((Throwable) obj2);
-                return Unit.f31987a;
+                return Unit.f31988a;
             }
 
             public final void invoke(Throwable th2) {
@@ -102,6 +102,6 @@ public final class CommandQueue$getStateMachineNamesb88yb0A$$inlined$suspendNati
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super List<? extends String>> continuation) {
-        return ((CommandQueue$getStateMachineNamesb88yb0A$$inlined$suspendNativeRequest$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+        return ((CommandQueue$getStateMachineNamesb88yb0A$$inlined$suspendNativeRequest$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

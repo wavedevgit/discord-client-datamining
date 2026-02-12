@@ -6,17 +6,17 @@ import ys.g0;
 public final class t implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final View f24893a;
+    private final View f24894a;
 
     /* renamed from: b  reason: collision with root package name */
-    private volatile g0 f24894b;
+    private volatile g0 f24895b;
 
     public t(View view, g0 g0Var) {
-        this.f24893a = view;
-        this.f24894b = g0Var;
+        this.f24894a = view;
+        this.f24895b = g0Var;
     }
 
     public void a(g0 g0Var) {
-        this.f24894b = g0Var;
+        this.f24895b = g0Var;
     }
 }

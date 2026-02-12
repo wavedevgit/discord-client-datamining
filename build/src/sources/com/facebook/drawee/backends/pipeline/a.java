@@ -46,11 +46,11 @@ public class a extends com.facebook.drawee.controller.a {
     private ImageRequest L;
 
     /* renamed from: z  reason: collision with root package name */
-    private final Resources f10567z;
+    private final Resources f10568z;
 
     public a(Resources resources, i9.a aVar, sa.a aVar2, sa.a aVar3, Executor executor, w wVar, e eVar) {
         super(aVar, executor, null, null);
-        this.f10567z = resources;
+        this.f10568z = resources;
         this.A = new f9.a(resources, aVar2, aVar3);
         this.B = eVar;
         this.C = wVar;

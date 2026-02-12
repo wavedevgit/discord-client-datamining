@@ -7,10 +7,10 @@ import lr.h;
 public final class c implements d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f31981a;
+    private final h f31982a;
 
     public c(h hVar) {
-        this.f31981a = hVar;
+        this.f31982a = hVar;
     }
 
     public static c a(h hVar) {
@@ -24,6 +24,6 @@ public final class c implements d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public b get() {
-        return c((Context) this.f31981a.get());
+        return c((Context) this.f31982a.get());
     }
 }

@@ -5,10 +5,10 @@ import android.content.Context;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f57113a;
+    private final float f57114a;
 
     public b(float f10) {
-        this.f57113a = f10;
+        this.f57114a = f10;
     }
 
     public static b a(Context context) {
@@ -16,6 +16,6 @@ public class b {
     }
 
     public int b(int i10) {
-        return (int) ((i10 * this.f57113a) + 0.5f);
+        return (int) ((i10 * this.f57114a) + 0.5f);
     }
 }

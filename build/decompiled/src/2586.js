@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.nextWeek = var4;
     var _closure1_slot1 = var3;
     var2 = function arg0, arg1() {
-        _fun22001: for (var _fun22001_ip = 0;;) switch (_fun22001_ip) {
+        _fun22017: for (var _fun22017_ip = 0;;) switch (_fun22017_ip) {
             case 0:
                 var1 = _closure1_slot1;
                 var0 = arg0;
@@ -45,8 +45,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = typeof var3;
                 var0 = var3;
                 if (!(var2 === var1)) {
-                    _fun22001_ip = 38;
-                    continue _fun22001
+                    _fun22017_ip = 38;
+                    continue _fun22017
                 }
             case 28:
                 var2 = undefined;

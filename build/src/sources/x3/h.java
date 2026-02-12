@@ -18,10 +18,10 @@ public interface h extends Closeable {
     public static abstract class a {
 
         /* renamed from: b  reason: collision with root package name */
-        public static final C0760a f54314b = new C0760a(null);
+        public static final C0760a f54315b = new C0760a(null);
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f54315a;
+        public final int f54316a;
 
         /* renamed from: x3.h$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -35,7 +35,7 @@ public interface h extends Closeable {
         }
 
         public a(int i10) {
-            this.f54315a = i10;
+            this.f54316a = i10;
         }
 
         private final void a(String str) {
@@ -136,76 +136,76 @@ public interface h extends Closeable {
     public static final class b {
 
         /* renamed from: f  reason: collision with root package name */
-        public static final C0761b f54316f = new C0761b(null);
+        public static final C0761b f54317f = new C0761b(null);
 
         /* renamed from: a  reason: collision with root package name */
-        public final Context f54317a;
+        public final Context f54318a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final String f54318b;
+        public final String f54319b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final a f54319c;
+        public final a f54320c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final boolean f54320d;
+        public final boolean f54321d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final boolean f54321e;
+        public final boolean f54322e;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         public static class a {
 
             /* renamed from: a  reason: collision with root package name */
-            private final Context f54322a;
+            private final Context f54323a;
 
             /* renamed from: b  reason: collision with root package name */
-            private String f54323b;
+            private String f54324b;
 
             /* renamed from: c  reason: collision with root package name */
-            private a f54324c;
+            private a f54325c;
 
             /* renamed from: d  reason: collision with root package name */
-            private boolean f54325d;
+            private boolean f54326d;
 
             /* renamed from: e  reason: collision with root package name */
-            private boolean f54326e;
+            private boolean f54327e;
 
             public a(Context context) {
                 Intrinsics.checkNotNullParameter(context, "context");
-                this.f54322a = context;
+                this.f54323a = context;
             }
 
             public a a(boolean z10) {
-                this.f54326e = z10;
+                this.f54327e = z10;
                 return this;
             }
 
             public b b() {
                 String str;
-                a aVar = this.f54324c;
+                a aVar = this.f54325c;
                 if (aVar != null) {
-                    if (this.f54325d && ((str = this.f54323b) == null || str.length() == 0)) {
+                    if (this.f54326d && ((str = this.f54324b) == null || str.length() == 0)) {
                         throw new IllegalArgumentException("Must set a non-null database name to a configuration that uses the no backup directory.");
                     }
-                    return new b(this.f54322a, this.f54323b, aVar, this.f54325d, this.f54326e);
+                    return new b(this.f54323a, this.f54324b, aVar, this.f54326d, this.f54327e);
                 }
                 throw new IllegalArgumentException("Must set a callback to create the configuration.");
             }
 
             public a c(a callback) {
                 Intrinsics.checkNotNullParameter(callback, "callback");
-                this.f54324c = callback;
+                this.f54325c = callback;
                 return this;
             }
 
             public a d(String str) {
-                this.f54323b = str;
+                this.f54324b = str;
                 return this;
             }
 
             public a e(boolean z10) {
-                this.f54325d = z10;
+                this.f54326d = z10;
                 return this;
             }
         }
@@ -229,15 +229,15 @@ public interface h extends Closeable {
         public b(Context context, String str, a callback, boolean z10, boolean z11) {
             Intrinsics.checkNotNullParameter(context, "context");
             Intrinsics.checkNotNullParameter(callback, "callback");
-            this.f54317a = context;
-            this.f54318b = str;
-            this.f54319c = callback;
-            this.f54320d = z10;
-            this.f54321e = z11;
+            this.f54318a = context;
+            this.f54319b = str;
+            this.f54320c = callback;
+            this.f54321d = z10;
+            this.f54322e = z11;
         }
 
         public static final a a(Context context) {
-            return f54316f.a(context);
+            return f54317f.a(context);
         }
     }
 

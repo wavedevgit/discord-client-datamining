@@ -6,32 +6,32 @@ import kotlin.jvm.internal.CharCompanionObject;
 public class k {
 
     /* renamed from: a  reason: collision with root package name */
-    public String f30559a;
+    public String f30560a;
 
     /* renamed from: b  reason: collision with root package name */
-    public String f30560b;
+    public String f30561b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final char f30561c;
+    public final char f30562c;
 
     /* renamed from: d  reason: collision with root package name */
-    public k f30562d;
+    public k f30563d;
 
     /* renamed from: e  reason: collision with root package name */
-    public k f30563e;
+    public k f30564e;
 
     public boolean b(char c10, char c11) {
         return c10 == c11;
     }
 
     public k(String str, String str2, k kVar) {
-        this.f30559a = str;
-        this.f30560b = str2;
-        this.f30562d = kVar;
+        this.f30560a = str;
+        this.f30561b = str2;
+        this.f30563d = kVar;
         if (str.length() == 0) {
-            this.f30561c = CharCompanionObject.MAX_VALUE;
+            this.f30562c = CharCompanionObject.MAX_VALUE;
         } else {
-            this.f30561c = this.f30559a.charAt(0);
+            this.f30562c = this.f30560a.charAt(0);
         }
     }
 
@@ -39,18 +39,18 @@ public class k {
         int index = parsePosition.getIndex();
         int length = charSequence.length();
         if (e(charSequence, index, length)) {
-            int length2 = this.f30559a.length() + index;
-            k kVar = this.f30562d;
+            int length2 = this.f30560a.length() + index;
+            k kVar = this.f30563d;
             if (kVar != null && length2 != length) {
                 while (true) {
-                    if (b(kVar.f30561c, charSequence.charAt(length2))) {
+                    if (b(kVar.f30562c, charSequence.charAt(length2))) {
                         parsePosition.setIndex(length2);
                         String c10 = kVar.c(charSequence, parsePosition);
                         if (c10 != null) {
                             return c10;
                         }
                     } else {
-                        kVar = kVar.f30563e;
+                        kVar = kVar.f30564e;
                         if (kVar == null) {
                             break;
                         }
@@ -58,7 +58,7 @@ public class k {
                 }
             }
             parsePosition.setIndex(length2);
-            return this.f30560b;
+            return this.f30561b;
         }
         return null;
     }
@@ -69,9 +69,9 @@ public class k {
 
     public boolean e(CharSequence charSequence, int i10, int i11) {
         if (charSequence instanceof String) {
-            return ((String) charSequence).startsWith(this.f30559a, i10);
+            return ((String) charSequence).startsWith(this.f30560a, i10);
         }
-        int length = this.f30559a.length();
+        int length = this.f30560a.length();
         if (length > i11 - i10) {
             return false;
         }
@@ -83,7 +83,7 @@ public class k {
             }
             int i14 = i12 + 1;
             int i15 = i10 + 1;
-            if (!b(this.f30559a.charAt(i12), charSequence.charAt(i10))) {
+            if (!b(this.f30560a.charAt(i12), charSequence.charAt(i10))) {
                 return false;
             }
             i10 = i15;
@@ -94,34 +94,34 @@ public class k {
 
     public final boolean a(String str, String str2) {
         int i10 = 0;
-        while (i10 < str.length() && i10 < this.f30559a.length() && b(str.charAt(i10), this.f30559a.charAt(i10))) {
+        while (i10 < str.length() && i10 < this.f30560a.length() && b(str.charAt(i10), this.f30560a.charAt(i10))) {
             i10++;
         }
-        if (i10 == this.f30559a.length()) {
+        if (i10 == this.f30560a.length()) {
             if (i10 < str.length()) {
                 String substring = str.substring(i10);
-                for (k kVar = this.f30562d; kVar != null; kVar = kVar.f30563e) {
-                    if (b(kVar.f30561c, substring.charAt(0))) {
+                for (k kVar = this.f30563d; kVar != null; kVar = kVar.f30564e) {
+                    if (b(kVar.f30562c, substring.charAt(0))) {
                         return kVar.a(substring, str2);
                     }
                 }
                 k d10 = d(substring, str2, null);
-                d10.f30563e = this.f30562d;
-                this.f30562d = d10;
+                d10.f30564e = this.f30563d;
+                this.f30563d = d10;
                 return true;
             }
-            this.f30560b = str2;
+            this.f30561b = str2;
             return true;
         }
-        k d11 = d(this.f30559a.substring(i10), this.f30560b, this.f30562d);
-        this.f30559a = str.substring(0, i10);
-        this.f30562d = d11;
+        k d11 = d(this.f30560a.substring(i10), this.f30561b, this.f30563d);
+        this.f30560a = str.substring(0, i10);
+        this.f30563d = d11;
         if (i10 < str.length()) {
-            this.f30562d.f30563e = d(str.substring(i10), str2, null);
-            this.f30560b = null;
+            this.f30563d.f30564e = d(str.substring(i10), str2, null);
+            this.f30561b = null;
             return true;
         }
-        this.f30560b = str2;
+        this.f30561b = str2;
         return true;
     }
 }

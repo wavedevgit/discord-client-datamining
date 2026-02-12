@@ -20,25 +20,25 @@ import org.webrtc.PeerConnection;
 public final class a1 {
 
     /* renamed from: g  reason: collision with root package name */
-    public static final a f23963g = new a(null);
+    public static final a f23964g = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private io.c f23965b;
+    private io.c f23966b;
 
     /* renamed from: a  reason: collision with root package name */
-    private double f23964a = 0.35d;
+    private double f23965a = 0.35d;
 
     /* renamed from: c  reason: collision with root package name */
-    private c f23966c = c.f23978o;
+    private c f23967c = c.f23979o;
 
     /* renamed from: d  reason: collision with root package name */
-    private Rect f23967d = new Rect();
+    private Rect f23968d = new Rect();
 
     /* renamed from: e  reason: collision with root package name */
-    private final byte[] f23968e = new byte[PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS];
+    private final byte[] f23969e = new byte[PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS];
 
     /* renamed from: f  reason: collision with root package name */
-    private final Lazy f23969f = as.l.b(new Function0() { // from class: fo.z0
+    private final Lazy f23970f = as.l.b(new Function0() { // from class: fo.z0
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             ek.d g10;
@@ -63,31 +63,31 @@ public final class a1 {
     public static final class b {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f23970d = new b("Center", 0);
+        public static final b f23971d = new b("Center", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final b f23971e = new b("Left", 1);
+        public static final b f23972e = new b("Left", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final b f23972i = new b("Right", 2);
+        public static final b f23973i = new b("Right", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ b[] f23973o;
+        private static final /* synthetic */ b[] f23974o;
 
         /* renamed from: p  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f23974p;
+        private static final /* synthetic */ EnumEntries f23975p;
 
         static {
             b[] a10 = a();
-            f23973o = a10;
-            f23974p = hs.a.a(a10);
+            f23974o = a10;
+            f23975p = hs.a.a(a10);
         }
 
         private b(String str, int i10) {
         }
 
         private static final /* synthetic */ b[] a() {
-            return new b[]{f23970d, f23971e, f23972i};
+            return new b[]{f23971d, f23972e, f23973i};
         }
 
         public static b valueOf(String str) {
@@ -95,7 +95,7 @@ public final class a1 {
         }
 
         public static b[] values() {
-            return (b[]) f23973o.clone();
+            return (b[]) f23974o.clone();
         }
     }
 
@@ -105,37 +105,37 @@ public final class a1 {
     public static final class c {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final c f23975d = new c("Center", 0);
+        public static final c f23976d = new c("Center", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final c f23976e = new c("Left", 1);
+        public static final c f23977e = new c("Left", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final c f23977i = new c("Right", 2);
+        public static final c f23978i = new c("Right", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        public static final c f23978o = new c("All", 3);
+        public static final c f23979o = new c("All", 3);
 
         /* renamed from: p  reason: collision with root package name */
-        public static final c f23979p = new c("None", 4);
+        public static final c f23980p = new c("None", 4);
 
         /* renamed from: q  reason: collision with root package name */
-        private static final /* synthetic */ c[] f23980q;
+        private static final /* synthetic */ c[] f23981q;
 
         /* renamed from: r  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f23981r;
+        private static final /* synthetic */ EnumEntries f23982r;
 
         static {
             c[] a10 = a();
-            f23980q = a10;
-            f23981r = hs.a.a(a10);
+            f23981q = a10;
+            f23982r = hs.a.a(a10);
         }
 
         private c(String str, int i10) {
         }
 
         private static final /* synthetic */ c[] a() {
-            return new c[]{f23975d, f23976e, f23977i, f23978o, f23979p};
+            return new c[]{f23976d, f23977e, f23978i, f23979o, f23980p};
         }
 
         public static c valueOf(String str) {
@@ -143,7 +143,7 @@ public final class a1 {
         }
 
         public static c[] values() {
-            return (c[]) f23980q.clone();
+            return (c[]) f23981q.clone();
         }
     }
 
@@ -151,23 +151,23 @@ public final class a1 {
     public /* synthetic */ class d {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f23982a;
+        public static final /* synthetic */ int[] f23983a;
 
         static {
             int[] iArr = new int[b.values().length];
             try {
-                iArr[b.f23970d.ordinal()] = 1;
+                iArr[b.f23971d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[b.f23971e.ordinal()] = 2;
+                iArr[b.f23972e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[b.f23972i.ordinal()] = 3;
+                iArr[b.f23973i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f23982a = iArr;
+            f23983a = iArr;
         }
     }
 
@@ -235,7 +235,7 @@ public final class a1 {
         rect.width();
         int width2 = rect.width() / 3;
         int height2 = rect.height() / 3;
-        Rect rect2 = this.f23967d;
+        Rect rect2 = this.f23968d;
         int i10 = rect.left;
         int i11 = rect.top;
         rect2.set(i10, i11, i10 + width2, i11 + height2);
@@ -247,12 +247,12 @@ public final class a1 {
             for (int i14 = 0; i14 < 3; i14++) {
                 int b10 = b(i14, i13, j0Var.d());
                 Intrinsics.checkNotNull(buffer);
-                fArr[b10] = Float.valueOf(n(buffer, width, height, this.f23967d));
-                Rect rect3 = this.f23967d;
+                fArr[b10] = Float.valueOf(n(buffer, width, height, this.f23968d));
+                Rect rect3 = this.f23968d;
                 rect3.left += width2;
                 rect3.right += width2;
             }
-            Rect rect4 = this.f23967d;
+            Rect rect4 = this.f23968d;
             rect4.left = rect.left;
             rect4.right = rect.left + width2;
             rect4.top += height2;
@@ -263,11 +263,11 @@ public final class a1 {
     }
 
     private final ek.d l() {
-        return (ek.d) this.f23969f.getValue();
+        return (ek.d) this.f23970f.getValue();
     }
 
     private final y0 m(b bVar, Bitmap bitmap) {
-        int i10 = d.f23982a[bVar.ordinal()];
+        int i10 = d.f23983a[bVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
@@ -295,9 +295,9 @@ public final class a1 {
         if ((f10 > 0 && d10 <= e10) || (f10 < 0 && e10 <= d10)) {
             while (true) {
                 byteBuffer.position((d10 * i10) + rect.left);
-                byteBuffer.get(this.f23968e, 0, width);
+                byteBuffer.get(this.f23969e, 0, width);
                 for (int i12 = 0; i12 < width; i12++) {
-                    j10 += this.f23968e[i12] & 255;
+                    j10 += this.f23969e[i12] & 255;
                 }
                 if (d10 == e10) {
                     break;
@@ -347,7 +347,7 @@ public final class a1 {
     private final boolean r(Rect rect, Rect rect2) {
         int width = rect2.width();
         int height = rect2.height();
-        if (Math.max(rect.width(), rect.height()) < Math.min(width, height) * this.f23964a) {
+        if (Math.max(rect.width(), rect.height()) < Math.min(width, height) * this.f23965a) {
             return true;
         }
         return false;
@@ -362,7 +362,7 @@ public final class a1 {
         Intrinsics.checkNotNullParameter(image, "image");
         j0 e10 = m0.e(image);
         if (e10 == null) {
-            return new jo.c(null, jo.b.f31215t, 0, false, false, false, 0.0f, null);
+            return new jo.c(null, jo.b.f31216t, 0, false, false, false, 0.0f, null);
         }
         return f(e10);
     }
@@ -374,7 +374,7 @@ public final class a1 {
         y0 y0Var;
         jo.b bVar2;
         Intrinsics.checkNotNullParameter(imageToAnalyze, "imageToAnalyze");
-        io.c cVar = this.f23965b;
+        io.c cVar = this.f23966b;
         if (cVar != null) {
             rect = io.d.a(cVar, imageToAnalyze);
         } else {
@@ -389,10 +389,10 @@ public final class a1 {
             List list = (List) zg.m.a(e10);
             List list2 = (List) e10.l();
             if (list2.isEmpty()) {
-                return new jo.c(null, jo.b.f31212q, list2.size(), false, false, false, 0.0f, k10);
+                return new jo.c(null, jo.b.f31213q, list2.size(), false, false, false, 0.0f, k10);
             }
             if (list2.size() > 1) {
-                return new jo.c(null, jo.b.f31210o, list2.size(), false, false, false, 0.0f, k10);
+                return new jo.c(null, jo.b.f31211o, list2.size(), false, false, false, 0.0f, k10);
             }
             Intrinsics.checkNotNull(list2);
             ek.a aVar = (ek.a) CollectionsKt.o0(list2);
@@ -407,46 +407,46 @@ public final class a1 {
             boolean p10 = p(a12, j10);
             float c11 = aVar.c();
             if (q10) {
-                bVar = jo.b.f31208e;
+                bVar = jo.b.f31209e;
             } else if (r10) {
-                bVar = jo.b.f31209i;
+                bVar = jo.b.f31210i;
             } else if (!p10) {
-                bVar = jo.b.f31207d;
+                bVar = jo.b.f31208d;
             } else {
                 if (-10.0f < c11 && c11 < 10.0f) {
                     Intrinsics.checkNotNull(aVar);
                     if (!o(aVar, j10)) {
-                        bVar = jo.b.f31207d;
+                        bVar = jo.b.f31208d;
                     } else {
-                        c cVar2 = this.f23966c;
-                        if (cVar2 != c.f23975d && cVar2 != c.f23978o) {
-                            bVar = jo.b.f31213r;
+                        c cVar2 = this.f23967c;
+                        if (cVar2 != c.f23976d && cVar2 != c.f23979o) {
+                            bVar = jo.b.f31214r;
                         } else {
-                            c10 = c(imageToAnalyze, b.f23970d);
+                            c10 = c(imageToAnalyze, b.f23971d);
                             y0Var = c10;
                             bVar2 = null;
                         }
                     }
                 } else if (c11 < -15.0f) {
-                    c cVar3 = this.f23966c;
-                    if (cVar3 != c.f23977i && cVar3 != c.f23978o) {
-                        bVar = jo.b.f31213r;
+                    c cVar3 = this.f23967c;
+                    if (cVar3 != c.f23978i && cVar3 != c.f23979o) {
+                        bVar = jo.b.f31214r;
                     } else {
-                        c10 = c(imageToAnalyze, b.f23972i);
+                        c10 = c(imageToAnalyze, b.f23973i);
                         y0Var = c10;
                         bVar2 = null;
                     }
                 } else if (15.0f < c11) {
-                    c cVar4 = this.f23966c;
-                    if (cVar4 != c.f23976e && cVar4 != c.f23978o) {
-                        bVar = jo.b.f31213r;
+                    c cVar4 = this.f23967c;
+                    if (cVar4 != c.f23977e && cVar4 != c.f23979o) {
+                        bVar = jo.b.f31214r;
                     } else {
-                        c10 = c(imageToAnalyze, b.f23971e);
+                        c10 = c(imageToAnalyze, b.f23972e);
                         y0Var = c10;
                         bVar2 = null;
                     }
                 } else {
-                    bVar = jo.b.f31213r;
+                    bVar = jo.b.f31214r;
                 }
                 return new jo.c(y0Var, bVar2, list2.size(), q10, r10, p10, c11, k10);
             }
@@ -454,7 +454,7 @@ public final class a1 {
             y0Var = null;
             return new jo.c(y0Var, bVar2, list2.size(), q10, r10, p10, c11, k10);
         } catch (ExecutionException unused) {
-            return new jo.c(null, jo.b.f31214s, 0, false, false, false, 0.0f, k10);
+            return new jo.c(null, jo.b.f31215s, 0, false, false, false, 0.0f, k10);
         }
     }
 
@@ -465,17 +465,17 @@ public final class a1 {
         } else {
             d10 = 0.35d;
         }
-        this.f23964a = d10;
+        this.f23965a = d10;
     }
 
     public final void t(c pose) {
         Intrinsics.checkNotNullParameter(pose, "pose");
-        this.f23966c = pose;
+        this.f23967c = pose;
     }
 
     public final void u(Rect rect, Rect previewRect) {
         Intrinsics.checkNotNullParameter(rect, "rect");
         Intrinsics.checkNotNullParameter(previewRect, "previewRect");
-        this.f23965b = new io.c(rect, previewRect);
+        this.f23966b = new io.c(rect, previewRect);
     }
 }

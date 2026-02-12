@@ -42,8 +42,8 @@ public /* synthetic */ class TapInlineForwardData$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50032a;
-        return new KSerializer[]{n2Var, n2Var, n2Var, rt.a.u(p0.f50048a), rt.a.u(h.f49996a), rt.a.u(n2Var)};
+        n2 n2Var = n2.f50033a;
+        return new KSerializer[]{n2Var, n2Var, n2Var, rt.a.u(p0.f50049a), rt.a.u(h.f49997a), rt.a.u(n2Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -65,9 +65,9 @@ public /* synthetic */ class TapInlineForwardData$$serializer implements h0 {
             String m11 = b10.m(serialDescriptor, 1);
             String m12 = b10.m(serialDescriptor, 2);
             str = m10;
-            str4 = (String) b10.n(serialDescriptor, 5, n2.f50032a, null);
-            num = (Integer) b10.n(serialDescriptor, 3, p0.f50048a, null);
-            bool = (Boolean) b10.n(serialDescriptor, 4, h.f49996a, null);
+            str4 = (String) b10.n(serialDescriptor, 5, n2.f50033a, null);
+            num = (Integer) b10.n(serialDescriptor, 3, p0.f50049a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 4, h.f49997a, null);
             str3 = m12;
             str2 = m11;
             i10 = 63;
@@ -98,15 +98,15 @@ public /* synthetic */ class TapInlineForwardData$$serializer implements h0 {
                         i11 |= 4;
                         break;
                     case 3:
-                        num2 = (Integer) b10.n(serialDescriptor, 3, p0.f50048a, num2);
+                        num2 = (Integer) b10.n(serialDescriptor, 3, p0.f50049a, num2);
                         i11 |= 8;
                         break;
                     case 4:
-                        bool2 = (Boolean) b10.n(serialDescriptor, 4, h.f49996a, bool2);
+                        bool2 = (Boolean) b10.n(serialDescriptor, 4, h.f49997a, bool2);
                         i11 |= 16;
                         break;
                     case 5:
-                        str8 = (String) b10.n(serialDescriptor, 5, n2.f50032a, str8);
+                        str8 = (String) b10.n(serialDescriptor, 5, n2.f50033a, str8);
                         i11 |= 32;
                         break;
                     default:

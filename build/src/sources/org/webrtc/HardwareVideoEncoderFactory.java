@@ -3,12 +3,14 @@ package org.webrtc;
 import android.media.MediaCodecInfo;
 import android.media.MediaCodecList;
 import android.os.Build;
-import com.discord.DiscordMediaCodec;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import org.webrtc.EglBase;
 import org.webrtc.EglBase14;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public class HardwareVideoEncoderFactory implements VideoEncoderFactory {
+    private static final List<String> H264_HW_EXCEPTION_MODELS = Arrays.asList("SAMSUNG-SGH-I337", "Nexus 7", "Nexus 4");
     private static final int PERIODIC_KEY_FRAME_INTERVAL_S = 3600;
     private static final int QCOM_VP8_KEY_FRAME_INTERVAL_ANDROID_L_MS = 15000;
     private static final int QCOM_VP8_KEY_FRAME_INTERVAL_ANDROID_M_MS = 20000;
@@ -106,10 +108,7 @@ public class HardwareVideoEncoderFactory implements VideoEncoderFactory {
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
-                    if (i10 != 4) {
-                        return false;
-                    }
-                    return isHardwareSupportedInCurrentSdkH265(mediaCodecInfo);
+                    return false;
                 }
                 return isHardwareSupportedInCurrentSdkH264(mediaCodecInfo);
             }
@@ -119,14 +118,14 @@ public class HardwareVideoEncoderFactory implements VideoEncoderFactory {
     }
 
     private boolean isHardwareSupportedInCurrentSdkH264(MediaCodecInfo mediaCodecInfo) {
-        return DiscordMediaCodec.supportsHardwareEncoding(mediaCodecInfo);
-    }
-
-    private boolean isHardwareSupportedInCurrentSdkH265(MediaCodecInfo mediaCodecInfo) {
-        if (Build.VERSION.SDK_INT >= 29 && DiscordMediaCodec.supportsHardwareEncoding(mediaCodecInfo)) {
-            return true;
+        if (H264_HW_EXCEPTION_MODELS.contains(Build.MODEL)) {
+            return false;
         }
-        return false;
+        String name = mediaCodecInfo.getName();
+        if (!name.startsWith("OMX.qcom.") && !name.startsWith("OMX.Exynos.")) {
+            return false;
+        }
+        return true;
     }
 
     private boolean isHardwareSupportedInCurrentSdkVp8(MediaCodecInfo mediaCodecInfo) {

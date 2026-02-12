@@ -10,10 +10,10 @@ import java.util.concurrent.TimeUnit;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final pj.a f42767a;
+    private static final pj.a f42768a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static volatile pj.a f42768b;
+    private static volatile pj.a f42769b;
 
     /* renamed from: pj.b$b  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -35,11 +35,11 @@ public abstract class b {
 
     static {
         C0593b c0593b = new C0593b();
-        f42767a = c0593b;
-        f42768b = c0593b;
+        f42768a = c0593b;
+        f42769b = c0593b;
     }
 
     public static pj.a a() {
-        return f42768b;
+        return f42769b;
     }
 }

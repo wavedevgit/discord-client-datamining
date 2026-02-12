@@ -5,18 +5,18 @@ import ff.a;
 public abstract class g extends ff.d {
 
     /* renamed from: k  reason: collision with root package name */
-    static final a.g f36457k;
+    static final a.g f36458k;
 
     /* renamed from: l  reason: collision with root package name */
-    public static final ff.a f36458l;
+    public static final ff.a f36459l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final Object f36459m;
+    private static final Object f36460m;
 
     static {
         a.g gVar = new a.g();
-        f36457k = gVar;
-        f36458l = new ff.a("LocationServices.API", new f(), gVar);
-        f36459m = new Object();
+        f36458k = gVar;
+        f36459l = new ff.a("LocationServices.API", new f(), gVar);
+        f36460m = new Object();
     }
 }

@@ -35,17 +35,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 2;
     var1 = var5[var1];
     var1 = var4.bind(var0)(var1);
-    var3 = var1.jsx;
-    var _closure1_slot6 = var3;
+    var7 = var1.jsx;
+    var _closure1_slot6 = var7;
     var1 = var1.jsxs;
     var _closure1_slot7 = var1;
+    var1 = 3;
+    var1 = var5[var1];
+    var1 = var4.bind(var0)(var1);
+    var3 = var1.OrbsIcon;
+    var1 = {};
+    var8 = 'sm';
+    var1.size = var8;
+    var1 = var7.bind(var0)(var3, var1);
+    var _closure1_slot8 = var1;
     var1 = function arg0() {
         var1 = arg0;
         var5 = var1.onPress;
         var _closure2_slot0 = var5;
-        var8 = var1.disabled;
-        var _closure2_slot1 = var8;
-        var1 = _closure1_slot8;
+        var7 = var1.disabled;
+        var _closure2_slot1 = var7;
+        var1 = _closure1_slot9;
         var3 = undefined;
         var13 = var1.bind(var3)();
         var4 = _closure1_slot2;
@@ -54,15 +63,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var2.bind(var4)(var1);
         var2 = _closure1_slot3;
         var1 = new Array(2);
-        var1[0] = var8;
+        var1[0] = var7;
         var1[1] = var5;
         var0 = function() { // Environment: var0
-            _fun87554: for (var _fun87554_ip = 0;;) switch (_fun87554_ip) {
+            _fun86522: for (var _fun86522_ip = 0;;) switch (_fun86522_ip) {
                 case 0:
                     var1 = _closure2_slot1;
                     if (var1) {
-                        _fun87554_ip = 20;
-                        continue _fun87554
+                        _fun86522_ip = 20;
+                        continue _fun86522
                     }
                 case 10:
                     var1 = _closure2_slot0;
@@ -73,52 +82,45 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
             }
         };
-        var7 = var2.bind(var3)(var0, var1);
+        var6 = var2.bind(var3)(var0, var1);
         var2 = _closure1_slot6;
         var1 = _closure1_slot5;
         var0 = {};
         var0.ref = var4;
         var5 = _closure1_slot4;
         var4 = {};
-        var4.onPress = var7;
-        var4.disabled = var8;
-        var7 = 0.8;
-        var4.activeOpacity = var7;
-        var7 = var13.clickable;
-        var4.style = var7;
-        var7 = 'button';
-        var4.accessibilityRole = var7;
+        var4.onPress = var6;
+        var4.disabled = var7;
+        var6 = 0.8;
+        var4.activeOpacity = var6;
+        var6 = var13.clickable;
+        var4.style = var6;
+        var6 = 'button';
+        var4.accessibilityRole = var6;
         var15 = _closure1_slot0;
         var16 = _closure1_slot1;
-        var12 = 3;
-        var7 = var16[var12];
-        var7 = var15.bind(var3)(var7);
-        var10 = var7.intl;
-        var9 = var10.string;
-        var7 = var16[var12];
-        var7 = var15.bind(var3)(var7);
-        var7 = var7.t;
-        var7 = var7["9JpRfC"];
-        var7 = var9.bind(var10)(var7);
-        var4.accessibilityLabel = var7;
-        var7 = {};
-        var7.disabled = var8;
-        var4.accessibilityState = var7;
+        var12 = 4;
+        var6 = var16[var12];
+        var6 = var15.bind(var3)(var6);
+        var10 = var6.intl;
+        var8 = var10.string;
+        var6 = var16[var12];
+        var6 = var15.bind(var3)(var6);
+        var6 = var6.t;
+        var6 = var6["9JpRfC"];
+        var6 = var8.bind(var10)(var6);
+        var4.accessibilityLabel = var6;
+        var6 = {};
+        var6.disabled = var7;
+        var4.accessibilityState = var6;
         var7 = _closure1_slot7;
         var6 = {};
         var8 = var13.container;
         var6.style = var8;
         var8 = {};
-        var9 = var13.orbsIconContainer;
-        var8.style = var9;
-        var9 = 4;
-        var9 = var16[var9];
-        var9 = var15.bind(var3)(var9);
-        var10 = var9.OrbsIcon;
-        var9 = {};
-        var11 = 'sm';
-        var9.size = var11;
-        var9 = var2.bind(var3)(var10, var9);
+        var10 = var13.orbsIconContainer;
+        var8.style = var10;
+        var9 = _closure1_slot8;
         var8.children = var9;
         var9 = var2.bind(var3)(var1, var8);
         var8 = new Array(2);
@@ -227,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9.textAlign = var10;
     var3.pillText = var9;
     var3 = var7.bind(var8)(var3);
-    var _closure1_slot8 = var3;
+    var _closure1_slot9 = var3;
     var3 = 8;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -237,4 +239,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var1;
     var2.OrbOnboardingPill = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1234, 9629, 3938, 1297, 671, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 8856, 1234, 3938, 1297, 671, 2]);

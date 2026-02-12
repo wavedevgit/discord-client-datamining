@@ -63,11 +63,11 @@ public class ActionBarContextView extends androidx.appcompat.widget.a {
     private void i() {
         int i10;
         if (this.f1544y == null) {
-            LayoutInflater.from(getContext()).inflate(f.g.f23376a, this);
+            LayoutInflater.from(getContext()).inflate(f.g.f23377a, this);
             LinearLayout linearLayout = (LinearLayout) getChildAt(getChildCount() - 1);
             this.f1544y = linearLayout;
-            this.f1545z = (TextView) linearLayout.findViewById(f.f.f23355f);
-            this.A = (TextView) this.f1544y.findViewById(f.f.f23354e);
+            this.f1545z = (TextView) linearLayout.findViewById(f.f.f23356f);
+            this.A = (TextView) this.f1544y.findViewById(f.f.f23355e);
             if (this.B != 0) {
                 this.f1545z.setTextAppearance(getContext(), this.B);
             }
@@ -145,7 +145,7 @@ public class ActionBarContextView extends androidx.appcompat.widget.a {
         } else if (view.getParent() == null) {
             addView(this.f1541v);
         }
-        View findViewById = this.f1541v.findViewById(f.f.f23359j);
+        View findViewById = this.f1541v.findViewById(f.f.f23360j);
         this.f1542w = findViewById;
         findViewById.setOnClickListener(new a(actionMode));
         androidx.appcompat.view.menu.e eVar = (androidx.appcompat.view.menu.e) actionMode.e();
@@ -402,17 +402,17 @@ public class ActionBarContextView extends androidx.appcompat.widget.a {
     }
 
     public ActionBarContextView(@NonNull Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, f.a.f23282g);
+        this(context, attributeSet, f.a.f23283g);
     }
 
     public ActionBarContextView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        v0 v10 = v0.v(context, attributeSet, f.j.f23536y, i10, 0);
-        setBackground(v10.g(f.j.f23541z));
+        v0 v10 = v0.v(context, attributeSet, f.j.f23537y, i10, 0);
+        setBackground(v10.g(f.j.f23542z));
         this.B = v10.n(f.j.D, 0);
         this.C = v10.n(f.j.C, 0);
         this.f1722p = v10.m(f.j.B, 0);
-        this.E = v10.n(f.j.A, f.g.f23379d);
+        this.E = v10.n(f.j.A, f.g.f23380d);
         v10.x();
     }
 }

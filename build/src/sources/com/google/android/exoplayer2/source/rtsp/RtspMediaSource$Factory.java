@@ -6,11 +6,11 @@ import rd.r;
 public final class RtspMediaSource$Factory implements r.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private long f13556a = 8000;
+    private long f13557a = 8000;
 
     /* renamed from: b  reason: collision with root package name */
-    private String f13557b = "ExoPlayerLib/2.19.1";
+    private String f13558b = "ExoPlayerLib/2.19.1";
 
     /* renamed from: c  reason: collision with root package name */
-    private SocketFactory f13558c = SocketFactory.getDefault();
+    private SocketFactory f13559c = SocketFactory.getDefault();
 }

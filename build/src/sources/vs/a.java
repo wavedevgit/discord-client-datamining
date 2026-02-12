@@ -15,25 +15,25 @@ import vs.h;
 public final class a implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Class f51811a;
+    private final Class f51812a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f51812b;
+    private final List f51813b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final EnumC0714a f51813c;
+    private final EnumC0714a f51814c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f51814d;
+    private final List f51815d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f51815e;
+    private final List f51816e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final List f51816f;
+    private final List f51817f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final List f51817g;
+    private final List f51818g;
 
     /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
     /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -42,28 +42,28 @@ public final class a implements h {
     public static final class EnumC0714a {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final EnumC0714a f51818d = new EnumC0714a("CALL_BY_NAME", 0);
+        public static final EnumC0714a f51819d = new EnumC0714a("CALL_BY_NAME", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final EnumC0714a f51819e = new EnumC0714a("POSITIONAL_CALL", 1);
+        public static final EnumC0714a f51820e = new EnumC0714a("POSITIONAL_CALL", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        private static final /* synthetic */ EnumC0714a[] f51820i;
+        private static final /* synthetic */ EnumC0714a[] f51821i;
 
         /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f51821o;
+        private static final /* synthetic */ EnumEntries f51822o;
 
         static {
             EnumC0714a[] a10 = a();
-            f51820i = a10;
-            f51821o = hs.a.a(a10);
+            f51821i = a10;
+            f51822o = hs.a.a(a10);
         }
 
         private EnumC0714a(String str, int i10) {
         }
 
         private static final /* synthetic */ EnumC0714a[] a() {
-            return new EnumC0714a[]{f51818d, f51819e};
+            return new EnumC0714a[]{f51819d, f51820e};
         }
 
         public static EnumC0714a valueOf(String str) {
@@ -71,7 +71,7 @@ public final class a implements h {
         }
 
         public static EnumC0714a[] values() {
-            return (EnumC0714a[]) f51820i.clone();
+            return (EnumC0714a[]) f51821i.clone();
         }
     }
 
@@ -81,28 +81,28 @@ public final class a implements h {
     public static final class b {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f51822d = new b("JAVA", 0);
+        public static final b f51823d = new b("JAVA", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final b f51823e = new b("KOTLIN", 1);
+        public static final b f51824e = new b("KOTLIN", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        private static final /* synthetic */ b[] f51824i;
+        private static final /* synthetic */ b[] f51825i;
 
         /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f51825o;
+        private static final /* synthetic */ EnumEntries f51826o;
 
         static {
             b[] a10 = a();
-            f51824i = a10;
-            f51825o = hs.a.a(a10);
+            f51825i = a10;
+            f51826o = hs.a.a(a10);
         }
 
         private b(String str, int i10) {
         }
 
         private static final /* synthetic */ b[] a() {
-            return new b[]{f51822d, f51823e};
+            return new b[]{f51823d, f51824e};
         }
 
         public static b valueOf(String str) {
@@ -110,7 +110,7 @@ public final class a implements h {
         }
 
         public static b[] values() {
-            return (b[]) f51824i.clone();
+            return (b[]) f51825i.clone();
         }
     }
 
@@ -120,17 +120,17 @@ public final class a implements h {
         Intrinsics.checkNotNullParameter(callMode, "callMode");
         Intrinsics.checkNotNullParameter(origin, "origin");
         Intrinsics.checkNotNullParameter(methods, "methods");
-        this.f51811a = jClass;
-        this.f51812b = parameterNames;
-        this.f51813c = callMode;
-        this.f51814d = methods;
+        this.f51812a = jClass;
+        this.f51813b = parameterNames;
+        this.f51814c = callMode;
+        this.f51815d = methods;
         List<Method> list = methods;
         ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
         for (Method method : list) {
             arrayList.add(method.getGenericReturnType());
         }
-        this.f51815e = arrayList;
-        List<Method> list2 = this.f51814d;
+        this.f51816e = arrayList;
+        List<Method> list2 = this.f51815d;
         ArrayList arrayList2 = new ArrayList(CollectionsKt.w(list2, 10));
         for (Method method2 : list2) {
             Class<?> returnType = method2.getReturnType();
@@ -141,21 +141,21 @@ public final class a implements h {
             }
             arrayList2.add(returnType);
         }
-        this.f51816f = arrayList2;
-        List<Method> list3 = this.f51814d;
+        this.f51817f = arrayList2;
+        List<Method> list3 = this.f51815d;
         ArrayList arrayList3 = new ArrayList(CollectionsKt.w(list3, 10));
         for (Method method3 : list3) {
             arrayList3.add(method3.getDefaultValue());
         }
-        this.f51817g = arrayList3;
-        if (this.f51813c == EnumC0714a.f51819e && origin == b.f51822d && !CollectionsKt.I0(this.f51812b, "value").isEmpty()) {
+        this.f51818g = arrayList3;
+        if (this.f51814c == EnumC0714a.f51820e && origin == b.f51823d && !CollectionsKt.I0(this.f51813b, "value").isEmpty()) {
             throw new UnsupportedOperationException("Positional call of a Java annotation constructor is allowed only if there are no parameters or one parameter named \"value\". This restriction exists because Java annotations (in contrast to Kotlin)do not impose any order on their arguments. Use KCallable#callBy instead.");
         }
     }
 
     @Override // vs.h
     public List a() {
-        return this.f51815e;
+        return this.f51816e;
     }
 
     @Override // vs.h
@@ -180,20 +180,20 @@ public final class a implements h {
         while (i10 < length) {
             Object obj = args[i10];
             int i12 = i11 + 1;
-            if (obj != null || this.f51813c != EnumC0714a.f51818d) {
-                q10 = f.q(obj, (Class) this.f51816f.get(i11));
+            if (obj != null || this.f51814c != EnumC0714a.f51819d) {
+                q10 = f.q(obj, (Class) this.f51817f.get(i11));
             } else {
-                q10 = this.f51817g.get(i11);
+                q10 = this.f51818g.get(i11);
             }
             if (q10 == null) {
-                f.p(i11, (String) this.f51812b.get(i11), (Class) this.f51816f.get(i11));
+                f.p(i11, (String) this.f51813b.get(i11), (Class) this.f51817f.get(i11));
                 throw new as.h();
             }
             arrayList.add(q10);
             i10++;
             i11 = i12;
         }
-        return f.g(this.f51811a, o0.u(CollectionsKt.p1(this.f51812b, arrayList)), this.f51814d);
+        return f.g(this.f51812a, o0.u(CollectionsKt.p1(this.f51813b, arrayList)), this.f51815d);
     }
 
     public void d(Object[] objArr) {
@@ -206,7 +206,7 @@ public final class a implements h {
 
     @Override // vs.h
     public Type getReturnType() {
-        return this.f51811a;
+        return this.f51812a;
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = false;
     var6.trailing = var1;
     var5 = function(arg0) { // Environment: var3
-        _fun93278: for (var _fun93278_ip = 0;;) switch (_fun93278_ip) {
+        _fun93343: for (var _fun93343_ip = 0;;) switch (_fun93343_ip) {
             case 0:
                 var3 = _closure1_slot2;
                 var2 = var3.getInvite;
@@ -46,8 +46,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var4 != var5;
                 var4 = undefined;
                 if (!var6) {
-                    _fun93278_ip = 70;
-                    continue _fun93278
+                    _fun93343_ip = 70;
+                    continue _fun93343
                 }
             case 67:
                 var4 = var5;
@@ -78,4 +78,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3320, 22, 10336, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3320, 22, 9644, 2]);

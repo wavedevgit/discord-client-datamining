@@ -98,7 +98,7 @@ public final class NotificationMessage {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$0() {
-        return new f(y.f51261a);
+        return new f(y.f51262a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -163,7 +163,7 @@ public final class NotificationMessage {
             compositeEncoder.k(serialDescriptor, 0, (qt.o) lazyArr[0].getValue(), notificationMessage.stickerItems);
         }
         if (compositeEncoder.z(serialDescriptor, 1) || notificationMessage.author != null) {
-            compositeEncoder.o(serialDescriptor, 1, y.f51261a, notificationMessage.author);
+            compositeEncoder.o(serialDescriptor, 1, y.f51262a, notificationMessage.author);
         }
         if (compositeEncoder.z(serialDescriptor, 2) || !Intrinsics.areEqual(notificationMessage.mentions, CollectionsKt.l())) {
             compositeEncoder.k(serialDescriptor, 2, (qt.o) lazyArr[2].getValue(), notificationMessage.mentions);

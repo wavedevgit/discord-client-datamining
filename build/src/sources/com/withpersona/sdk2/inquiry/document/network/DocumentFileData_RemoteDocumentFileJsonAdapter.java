@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class DocumentFileData_RemoteDocumentFileJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19518a;
+    private final m.b f19519a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19519b;
+    private final h f19520b;
 
     public DocumentFileData_RemoteDocumentFileJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("url", "filename");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19518a = a10;
+        this.f19519a = a10;
         h f10 = moshi.f(String.class, x0.d(), "url");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19519b = f10;
+        this.f19520b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,14 +37,14 @@ public final class DocumentFileData_RemoteDocumentFileJsonAdapter extends h {
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19518a);
+            int J = reader.J(this.f19519a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (str2 = (String) this.f19519b.fromJson(reader)) == null) {
+                    if (J == 1 && (str2 = (String) this.f19520b.fromJson(reader)) == null) {
                         throw dn.c.x("filename", "filename", reader);
                     }
                 } else {
-                    str = (String) this.f19519b.fromJson(reader);
+                    str = (String) this.f19520b.fromJson(reader);
                     if (str == null) {
                         throw dn.c.x("url", "url", reader);
                     }
@@ -71,9 +71,9 @@ public final class DocumentFileData_RemoteDocumentFileJsonAdapter extends h {
         if (remoteDocumentFile != null) {
             writer.i();
             writer.J("url");
-            this.f19519b.toJson(writer, remoteDocumentFile.b());
+            this.f19520b.toJson(writer, remoteDocumentFile.b());
             writer.J("filename");
-            this.f19519b.toJson(writer, remoteDocumentFile.a());
+            this.f19520b.toJson(writer, remoteDocumentFile.a());
             writer.s();
             return;
         }

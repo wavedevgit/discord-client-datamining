@@ -737,9 +737,9 @@ public class j0 implements k.e {
         this.N = new Rect();
         this.f1862d = context;
         this.M = new Handler(context.getMainLooper());
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.j.f23473l1, i10, i11);
-        this.f1867q = obtainStyledAttributes.getDimensionPixelOffset(f.j.f23478m1, 0);
-        int dimensionPixelOffset = obtainStyledAttributes.getDimensionPixelOffset(f.j.f23483n1, 0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.j.f23474l1, i10, i11);
+        this.f1867q = obtainStyledAttributes.getDimensionPixelOffset(f.j.f23479m1, 0);
+        int dimensionPixelOffset = obtainStyledAttributes.getDimensionPixelOffset(f.j.f23484n1, 0);
         this.f1868r = dimensionPixelOffset;
         if (dimensionPixelOffset != 0) {
             this.f1870t = true;

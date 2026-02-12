@@ -15,13 +15,13 @@ import okhttp3.Response;
 public final class d {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f23583c = new a(null);
+    public static final a f23584c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Request f23584a;
+    private final Request f23585a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final c f23585b;
+    private final c f23586b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -85,95 +85,95 @@ public final class d {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Request f23586a;
+        private final Request f23587a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final c f23587b;
+        private final c f23588b;
 
         /* renamed from: c  reason: collision with root package name */
-        private Date f23588c;
+        private Date f23589c;
 
         /* renamed from: d  reason: collision with root package name */
-        private String f23589d;
+        private String f23590d;
 
         /* renamed from: e  reason: collision with root package name */
-        private Date f23590e;
+        private Date f23591e;
 
         /* renamed from: f  reason: collision with root package name */
-        private String f23591f;
+        private String f23592f;
 
         /* renamed from: g  reason: collision with root package name */
-        private Date f23592g;
+        private Date f23593g;
 
         /* renamed from: h  reason: collision with root package name */
-        private long f23593h;
+        private long f23594h;
 
         /* renamed from: i  reason: collision with root package name */
-        private long f23594i;
+        private long f23595i;
 
         /* renamed from: j  reason: collision with root package name */
-        private String f23595j;
+        private String f23596j;
 
         /* renamed from: k  reason: collision with root package name */
-        private int f23596k;
+        private int f23597k;
 
         public b(Request request, c cVar) {
-            this.f23586a = request;
-            this.f23587b = cVar;
-            this.f23596k = -1;
+            this.f23587a = request;
+            this.f23588b = cVar;
+            this.f23597k = -1;
             if (cVar != null) {
-                this.f23593h = cVar.i();
-                this.f23594i = cVar.g();
+                this.f23594h = cVar.i();
+                this.f23595i = cVar.g();
                 Headers h10 = cVar.h();
                 int size = h10.size();
                 for (int i10 = 0; i10 < size; i10++) {
                     String e10 = h10.e(i10);
                     if (StringsKt.A(e10, "Date", true)) {
-                        this.f23588c = h10.d("Date");
-                        this.f23589d = h10.k(i10);
+                        this.f23589c = h10.d("Date");
+                        this.f23590d = h10.k(i10);
                     } else if (StringsKt.A(e10, "Expires", true)) {
-                        this.f23592g = h10.d("Expires");
+                        this.f23593g = h10.d("Expires");
                     } else if (StringsKt.A(e10, "Last-Modified", true)) {
-                        this.f23590e = h10.d("Last-Modified");
-                        this.f23591f = h10.k(i10);
+                        this.f23591e = h10.d("Last-Modified");
+                        this.f23592f = h10.k(i10);
                     } else if (StringsKt.A(e10, "ETag", true)) {
-                        this.f23595j = h10.k(i10);
+                        this.f23596j = h10.k(i10);
                     } else if (StringsKt.A(e10, "Age", true)) {
-                        this.f23596k = k.z(h10.k(i10), -1);
+                        this.f23597k = k.z(h10.k(i10), -1);
                     }
                 }
             }
         }
 
         private final long a() {
-            Date date = this.f23588c;
+            Date date = this.f23589c;
             long j10 = 0;
             if (date != null) {
-                j10 = Math.max(0L, this.f23594i - date.getTime());
+                j10 = Math.max(0L, this.f23595i - date.getTime());
             }
-            int i10 = this.f23596k;
+            int i10 = this.f23597k;
             if (i10 != -1) {
                 j10 = Math.max(j10, TimeUnit.SECONDS.toMillis(i10));
             }
-            return j10 + (this.f23594i - this.f23593h) + (w.f31588a.a() - this.f23594i);
+            return j10 + (this.f23595i - this.f23594h) + (w.f31589a.a() - this.f23595i);
         }
 
         private final long c() {
             long j10;
             long j11;
-            c cVar = this.f23587b;
+            c cVar = this.f23588b;
             Intrinsics.checkNotNull(cVar);
             CacheControl e10 = cVar.e();
             if (e10.c() != -1) {
                 return TimeUnit.SECONDS.toMillis(e10.c());
             }
-            Date date = this.f23592g;
+            Date date = this.f23593g;
             if (date != null) {
-                Date date2 = this.f23588c;
+                Date date2 = this.f23589c;
                 if (date2 != null) {
                     j11 = date2.getTime();
                 } else {
-                    j11 = this.f23594i;
+                    j11 = this.f23595i;
                 }
                 long time = date.getTime() - j11;
                 if (time <= 0) {
@@ -181,14 +181,14 @@ public final class d {
                 }
                 return time;
             }
-            if (this.f23590e != null && this.f23586a.n().p() == null) {
-                Date date3 = this.f23588c;
+            if (this.f23591e != null && this.f23587a.n().p() == null) {
+                Date date3 = this.f23589c;
                 if (date3 != null) {
                     j10 = date3.getTime();
                 } else {
-                    j10 = this.f23593h;
+                    j10 = this.f23594h;
                 }
-                Date date4 = this.f23590e;
+                Date date4 = this.f23591e;
                 Intrinsics.checkNotNull(date4);
                 long time2 = j10 - date4.getTime();
                 if (time2 > 0) {
@@ -208,18 +208,18 @@ public final class d {
         public final d b() {
             long j10;
             String str;
-            if (this.f23587b == null) {
-                return new d(this.f23586a, null, null);
+            if (this.f23588b == null) {
+                return new d(this.f23587a, null, null);
             }
-            if (this.f23586a.i() && !this.f23587b.j()) {
-                return new d(this.f23586a, null, null);
+            if (this.f23587a.i() && !this.f23588b.j()) {
+                return new d(this.f23587a, null, null);
             }
-            CacheControl e10 = this.f23587b.e();
-            if (!d.f23583c.b(this.f23586a, this.f23587b)) {
-                return new d(this.f23586a, null, null);
+            CacheControl e10 = this.f23588b.e();
+            if (!d.f23584c.b(this.f23587a, this.f23588b)) {
+                return new d(this.f23587a, null, null);
             }
-            CacheControl d10 = this.f23586a.d();
-            if (!d10.g() && !d(this.f23586a)) {
+            CacheControl d10 = this.f23587a.d();
+            if (!d10.g() && !d(this.f23587a)) {
                 long a10 = a();
                 long c10 = c();
                 if (d10.c() != -1) {
@@ -235,27 +235,27 @@ public final class d {
                     j11 = TimeUnit.SECONDS.toMillis(d10.d());
                 }
                 if (!e10.g() && a10 + j10 < c10 + j11) {
-                    return new d(null, this.f23587b, null);
+                    return new d(null, this.f23588b, null);
                 }
-                String str2 = this.f23595j;
+                String str2 = this.f23596j;
                 if (str2 != null) {
                     Intrinsics.checkNotNull(str2);
                     str = "If-None-Match";
                 } else {
                     str = "If-Modified-Since";
-                    if (this.f23590e != null) {
-                        str2 = this.f23591f;
+                    if (this.f23591e != null) {
+                        str2 = this.f23592f;
                         Intrinsics.checkNotNull(str2);
-                    } else if (this.f23588c != null) {
-                        str2 = this.f23589d;
+                    } else if (this.f23589c != null) {
+                        str2 = this.f23590d;
                         Intrinsics.checkNotNull(str2);
                     } else {
-                        return new d(this.f23586a, null, null);
+                        return new d(this.f23587a, null, null);
                     }
                 }
-                return new d(this.f23586a.k().a(str, str2).b(), this.f23587b, null);
+                return new d(this.f23587a.k().a(str, str2).b(), this.f23588b, null);
             }
-            return new d(this.f23586a, null, null);
+            return new d(this.f23587a, null, null);
         }
     }
 
@@ -264,15 +264,15 @@ public final class d {
     }
 
     public final c a() {
-        return this.f23585b;
+        return this.f23586b;
     }
 
     public final Request b() {
-        return this.f23584a;
+        return this.f23585a;
     }
 
     private d(Request request, c cVar) {
-        this.f23584a = request;
-        this.f23585b = cVar;
+        this.f23585a = request;
+        this.f23586b = cVar;
     }
 }

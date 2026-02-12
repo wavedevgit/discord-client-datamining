@@ -172,7 +172,7 @@ public final class NativeMapExtensionsKt {
     public static final Unit json$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @NotNull

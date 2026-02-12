@@ -10,11 +10,11 @@ import q.g4;
 final class r4 extends g4.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f43563a;
+    private final List f43564a;
 
     r4(List list) {
         ArrayList arrayList = new ArrayList();
-        this.f43563a = arrayList;
+        this.f43564a = arrayList;
         arrayList.addAll(list);
     }
 
@@ -25,42 +25,42 @@ final class r4 extends g4.c {
 
     @Override // q.g4.c
     public void o(g4 g4Var) {
-        for (g4.c cVar : this.f43563a) {
+        for (g4.c cVar : this.f43564a) {
             cVar.o(g4Var);
         }
     }
 
     @Override // q.g4.c
     public void p(g4 g4Var) {
-        for (g4.c cVar : this.f43563a) {
+        for (g4.c cVar : this.f43564a) {
             cVar.p(g4Var);
         }
     }
 
     @Override // q.g4.c
     public void q(g4 g4Var) {
-        for (g4.c cVar : this.f43563a) {
+        for (g4.c cVar : this.f43564a) {
             cVar.q(g4Var);
         }
     }
 
     @Override // q.g4.c
     public void r(g4 g4Var) {
-        for (g4.c cVar : this.f43563a) {
+        for (g4.c cVar : this.f43564a) {
             cVar.r(g4Var);
         }
     }
 
     @Override // q.g4.c
     public void s(g4 g4Var) {
-        for (g4.c cVar : this.f43563a) {
+        for (g4.c cVar : this.f43564a) {
             cVar.s(g4Var);
         }
     }
 
     @Override // q.g4.c
     public void t(g4 g4Var) {
-        for (g4.c cVar : this.f43563a) {
+        for (g4.c cVar : this.f43564a) {
             cVar.t(g4Var);
         }
     }
@@ -68,14 +68,14 @@ final class r4 extends g4.c {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // q.g4.c
     public void u(g4 g4Var) {
-        for (g4.c cVar : this.f43563a) {
+        for (g4.c cVar : this.f43564a) {
             cVar.u(g4Var);
         }
     }
 
     @Override // q.g4.c
     public void v(g4 g4Var, Surface surface) {
-        for (g4.c cVar : this.f43563a) {
+        for (g4.c cVar : this.f43564a) {
             cVar.v(g4Var, surface);
         }
     }
@@ -84,45 +84,45 @@ final class r4 extends g4.c {
     static class a extends g4.c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final CameraCaptureSession.StateCallback f43564a;
+        private final CameraCaptureSession.StateCallback f43565a;
 
         a(CameraCaptureSession.StateCallback stateCallback) {
-            this.f43564a = stateCallback;
+            this.f43565a = stateCallback;
         }
 
         @Override // q.g4.c
         public void o(g4 g4Var) {
-            this.f43564a.onActive(g4Var.k().c());
+            this.f43565a.onActive(g4Var.k().c());
         }
 
         @Override // q.g4.c
         public void p(g4 g4Var) {
-            r.d.a(this.f43564a, g4Var.k().c());
+            r.d.a(this.f43565a, g4Var.k().c());
         }
 
         @Override // q.g4.c
         public void q(g4 g4Var) {
-            this.f43564a.onClosed(g4Var.k().c());
+            this.f43565a.onClosed(g4Var.k().c());
         }
 
         @Override // q.g4.c
         public void r(g4 g4Var) {
-            this.f43564a.onConfigureFailed(g4Var.k().c());
+            this.f43565a.onConfigureFailed(g4Var.k().c());
         }
 
         @Override // q.g4.c
         public void s(g4 g4Var) {
-            this.f43564a.onConfigured(g4Var.k().c());
+            this.f43565a.onConfigured(g4Var.k().c());
         }
 
         @Override // q.g4.c
         public void t(g4 g4Var) {
-            this.f43564a.onReady(g4Var.k().c());
+            this.f43565a.onReady(g4Var.k().c());
         }
 
         @Override // q.g4.c
         public void v(g4 g4Var, Surface surface) {
-            r.b.a(this.f43564a, g4Var.k().c(), surface);
+            r.b.a(this.f43565a, g4Var.k().c(), surface);
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */

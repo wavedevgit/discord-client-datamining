@@ -41,22 +41,22 @@ import org.jetbrains.annotations.NotNull;
 public class LazySubstitutingClassDescriptor extends ModuleAwareClassDescriptor {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ModuleAwareClassDescriptor f32481d;
+    private final ModuleAwareClassDescriptor f32482d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final TypeSubstitutor f32482e;
+    private final TypeSubstitutor f32483e;
 
     /* renamed from: i  reason: collision with root package name */
-    private TypeSubstitutor f32483i;
+    private TypeSubstitutor f32484i;
 
     /* renamed from: o  reason: collision with root package name */
-    private List f32484o;
+    private List f32485o;
 
     /* renamed from: p  reason: collision with root package name */
-    private List f32485p;
+    private List f32486p;
 
     /* renamed from: q  reason: collision with root package name */
-    private TypeConstructor f32486q;
+    private TypeConstructor f32487q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -84,8 +84,8 @@ public class LazySubstitutingClassDescriptor extends ModuleAwareClassDescriptor 
     }
 
     public LazySubstitutingClassDescriptor(ModuleAwareClassDescriptor moduleAwareClassDescriptor, TypeSubstitutor typeSubstitutor) {
-        this.f32481d = moduleAwareClassDescriptor;
-        this.f32482e = typeSubstitutor;
+        this.f32482d = moduleAwareClassDescriptor;
+        this.f32483e = typeSubstitutor;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:39:0x0069  */
@@ -123,22 +123,22 @@ public class LazySubstitutingClassDescriptor extends ModuleAwareClassDescriptor 
     }
 
     private TypeSubstitutor c() {
-        if (this.f32483i == null) {
-            if (this.f32482e.isEmpty()) {
-                this.f32483i = this.f32482e;
+        if (this.f32484i == null) {
+            if (this.f32483e.isEmpty()) {
+                this.f32484i = this.f32483e;
             } else {
-                List<TypeParameterDescriptor> parameters = this.f32481d.getTypeConstructor().getParameters();
-                this.f32484o = new ArrayList(parameters.size());
-                this.f32483i = DescriptorSubstitutor.substituteTypeParameters(parameters, this.f32482e.getSubstitution(), this, this.f32484o);
-                this.f32485p = CollectionsKt.k0(this.f32484o, new a());
+                List<TypeParameterDescriptor> parameters = this.f32482d.getTypeConstructor().getParameters();
+                this.f32485o = new ArrayList(parameters.size());
+                this.f32484i = DescriptorSubstitutor.substituteTypeParameters(parameters, this.f32483e.getSubstitution(), this, this.f32485o);
+                this.f32486p = CollectionsKt.k0(this.f32485o, new a());
             }
         }
-        return this.f32483i;
+        return this.f32484i;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public SimpleType d(SimpleType simpleType) {
-        if (simpleType != null && !this.f32482e.isEmpty()) {
+        if (simpleType != null && !this.f32483e.isEmpty()) {
             return (SimpleType) c().substitute(simpleType, Variance.INVARIANT);
         }
         return simpleType;
@@ -152,7 +152,7 @@ public class LazySubstitutingClassDescriptor extends ModuleAwareClassDescriptor 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotated
     @NotNull
     public Annotations getAnnotations() {
-        Annotations annotations = this.f32481d.getAnnotations();
+        Annotations annotations = this.f32482d.getAnnotations();
         if (annotations == null) {
             a(19);
         }
@@ -161,14 +161,14 @@ public class LazySubstitutingClassDescriptor extends ModuleAwareClassDescriptor 
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     /* renamed from: getCompanionObjectDescriptor */
-    public ClassDescriptor mo1196getCompanionObjectDescriptor() {
-        return this.f32481d.mo1196getCompanionObjectDescriptor();
+    public ClassDescriptor mo1195getCompanionObjectDescriptor() {
+        return this.f32482d.mo1195getCompanionObjectDescriptor();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     @NotNull
     public Collection<ClassConstructorDescriptor> getConstructors() {
-        Collection<ClassConstructorDescriptor> constructors = this.f32481d.getConstructors();
+        Collection<ClassConstructorDescriptor> constructors = this.f32482d.getConstructors();
         ArrayList arrayList = new ArrayList(constructors.size());
         for (ClassConstructorDescriptor classConstructorDescriptor : constructors) {
             arrayList.add(((ClassConstructorDescriptor) classConstructorDescriptor.newCopyBuilder().setOriginal(classConstructorDescriptor.getOriginal()).setModality(classConstructorDescriptor.getModality()).setVisibility(classConstructorDescriptor.getVisibility()).setKind(classConstructorDescriptor.getKind()).setCopyOverrides(false).build()).substitute(c()));
@@ -179,7 +179,7 @@ public class LazySubstitutingClassDescriptor extends ModuleAwareClassDescriptor 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorNonRoot, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor
     @NotNull
     public DeclarationDescriptor getContainingDeclaration() {
-        DeclarationDescriptor containingDeclaration = this.f32481d.getContainingDeclaration();
+        DeclarationDescriptor containingDeclaration = this.f32482d.getContainingDeclaration();
         if (containingDeclaration == null) {
             a(22);
         }
@@ -200,7 +200,7 @@ public class LazySubstitutingClassDescriptor extends ModuleAwareClassDescriptor 
     @NotNull
     public List<TypeParameterDescriptor> getDeclaredTypeParameters() {
         c();
-        List<TypeParameterDescriptor> list = this.f32485p;
+        List<TypeParameterDescriptor> list = this.f32486p;
         if (list == null) {
             a(30);
         }
@@ -220,7 +220,7 @@ public class LazySubstitutingClassDescriptor extends ModuleAwareClassDescriptor 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     @NotNull
     public ClassKind getKind() {
-        ClassKind kind = this.f32481d.getKind();
+        ClassKind kind = this.f32482d.getKind();
         if (kind == null) {
             a(25);
         }
@@ -236,8 +236,8 @@ public class LazySubstitutingClassDescriptor extends ModuleAwareClassDescriptor 
         if (kotlinTypeRefiner == null) {
             a(6);
         }
-        MemberScope memberScope = this.f32481d.getMemberScope(typeSubstitution, kotlinTypeRefiner);
-        if (this.f32482e.isEmpty()) {
+        MemberScope memberScope = this.f32482d.getMemberScope(typeSubstitution, kotlinTypeRefiner);
+        if (this.f32483e.isEmpty()) {
             if (memberScope == null) {
                 a(7);
             }
@@ -249,7 +249,7 @@ public class LazySubstitutingClassDescriptor extends ModuleAwareClassDescriptor 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
     @NotNull
     public Modality getModality() {
-        Modality modality = this.f32481d.getModality();
+        Modality modality = this.f32482d.getModality();
         if (modality == null) {
             a(26);
         }
@@ -259,7 +259,7 @@ public class LazySubstitutingClassDescriptor extends ModuleAwareClassDescriptor 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.Named
     @NotNull
     public Name getName() {
-        Name name = this.f32481d.getName();
+        Name name = this.f32482d.getName();
         if (name == null) {
             a(20);
         }
@@ -269,7 +269,7 @@ public class LazySubstitutingClassDescriptor extends ModuleAwareClassDescriptor 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     @NotNull
     public Collection<ClassDescriptor> getSealedSubclasses() {
-        Collection<ClassDescriptor> sealedSubclasses = this.f32481d.getSealedSubclasses();
+        Collection<ClassDescriptor> sealedSubclasses = this.f32482d.getSealedSubclasses();
         if (sealedSubclasses == null) {
             a(31);
         }
@@ -289,7 +289,7 @@ public class LazySubstitutingClassDescriptor extends ModuleAwareClassDescriptor 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     @NotNull
     public MemberScope getStaticScope() {
-        MemberScope staticScope = this.f32481d.getStaticScope();
+        MemberScope staticScope = this.f32482d.getStaticScope();
         if (staticScope == null) {
             a(15);
         }
@@ -305,23 +305,23 @@ public class LazySubstitutingClassDescriptor extends ModuleAwareClassDescriptor 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor
     @NotNull
     public TypeConstructor getTypeConstructor() {
-        TypeConstructor typeConstructor = this.f32481d.getTypeConstructor();
-        if (this.f32482e.isEmpty()) {
+        TypeConstructor typeConstructor = this.f32482d.getTypeConstructor();
+        if (this.f32483e.isEmpty()) {
             if (typeConstructor == null) {
                 a(0);
             }
             return typeConstructor;
         }
-        if (this.f32486q == null) {
+        if (this.f32487q == null) {
             TypeSubstitutor c10 = c();
             Collection<KotlinType> supertypes = typeConstructor.getSupertypes();
             ArrayList arrayList = new ArrayList(supertypes.size());
             for (KotlinType kotlinType : supertypes) {
                 arrayList.add(c10.substitute(kotlinType, Variance.INVARIANT));
             }
-            this.f32486q = new ClassTypeConstructorImpl(this, this.f32484o, arrayList, LockBasedStorageManager.NO_LOCKS);
+            this.f32487q = new ClassTypeConstructorImpl(this, this.f32485o, arrayList, LockBasedStorageManager.NO_LOCKS);
         }
-        TypeConstructor typeConstructor2 = this.f32486q;
+        TypeConstructor typeConstructor2 = this.f32487q;
         if (typeConstructor2 == null) {
             a(1);
         }
@@ -331,7 +331,7 @@ public class LazySubstitutingClassDescriptor extends ModuleAwareClassDescriptor 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     @NotNull
     public MemberScope getUnsubstitutedInnerClassesScope() {
-        MemberScope unsubstitutedInnerClassesScope = this.f32481d.getUnsubstitutedInnerClassesScope();
+        MemberScope unsubstitutedInnerClassesScope = this.f32482d.getUnsubstitutedInnerClassesScope();
         if (unsubstitutedInnerClassesScope == null) {
             a(28);
         }
@@ -341,7 +341,7 @@ public class LazySubstitutingClassDescriptor extends ModuleAwareClassDescriptor 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     @NotNull
     public MemberScope getUnsubstitutedMemberScope() {
-        MemberScope unsubstitutedMemberScope = getUnsubstitutedMemberScope(DescriptorUtilsKt.getKotlinTypeRefiner(DescriptorUtils.getContainingModule(this.f32481d)));
+        MemberScope unsubstitutedMemberScope = getUnsubstitutedMemberScope(DescriptorUtilsKt.getKotlinTypeRefiner(DescriptorUtils.getContainingModule(this.f32482d)));
         if (unsubstitutedMemberScope == null) {
             a(12);
         }
@@ -350,13 +350,13 @@ public class LazySubstitutingClassDescriptor extends ModuleAwareClassDescriptor 
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     /* renamed from: getUnsubstitutedPrimaryConstructor */
-    public ClassConstructorDescriptor mo1197getUnsubstitutedPrimaryConstructor() {
-        return this.f32481d.mo1197getUnsubstitutedPrimaryConstructor();
+    public ClassConstructorDescriptor mo1196getUnsubstitutedPrimaryConstructor() {
+        return this.f32482d.mo1196getUnsubstitutedPrimaryConstructor();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     public ValueClassRepresentation<SimpleType> getValueClassRepresentation() {
-        ValueClassRepresentation<SimpleType> valueClassRepresentation = this.f32481d.getValueClassRepresentation();
+        ValueClassRepresentation<SimpleType> valueClassRepresentation = this.f32482d.getValueClassRepresentation();
         if (valueClassRepresentation == null) {
             return null;
         }
@@ -366,7 +366,7 @@ public class LazySubstitutingClassDescriptor extends ModuleAwareClassDescriptor 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorWithVisibility
     @NotNull
     public DescriptorVisibility getVisibility() {
-        DescriptorVisibility visibility = this.f32481d.getVisibility();
+        DescriptorVisibility visibility = this.f32482d.getVisibility();
         if (visibility == null) {
             a(27);
         }
@@ -375,47 +375,47 @@ public class LazySubstitutingClassDescriptor extends ModuleAwareClassDescriptor 
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
     public boolean isActual() {
-        return this.f32481d.isActual();
+        return this.f32482d.isActual();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     public boolean isCompanionObject() {
-        return this.f32481d.isCompanionObject();
+        return this.f32482d.isCompanionObject();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     public boolean isData() {
-        return this.f32481d.isData();
+        return this.f32482d.isData();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
     public boolean isExpect() {
-        return this.f32481d.isExpect();
+        return this.f32482d.isExpect();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
     public boolean isExternal() {
-        return this.f32481d.isExternal();
+        return this.f32482d.isExternal();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     public boolean isFun() {
-        return this.f32481d.isFun();
+        return this.f32482d.isFun();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     public boolean isInline() {
-        return this.f32481d.isInline();
+        return this.f32482d.isInline();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptorWithTypeParameters
     public boolean isInner() {
-        return this.f32481d.isInner();
+        return this.f32482d.isInner();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     public boolean isValue() {
-        return this.f32481d.isValue();
+        return this.f32482d.isValue();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.ModuleAwareClassDescriptor
@@ -424,8 +424,8 @@ public class LazySubstitutingClassDescriptor extends ModuleAwareClassDescriptor 
         if (kotlinTypeRefiner == null) {
             a(13);
         }
-        MemberScope unsubstitutedMemberScope = this.f32481d.getUnsubstitutedMemberScope(kotlinTypeRefiner);
-        if (this.f32482e.isEmpty()) {
+        MemberScope unsubstitutedMemberScope = this.f32482d.getUnsubstitutedMemberScope(kotlinTypeRefiner);
+        if (this.f32483e.isEmpty()) {
             if (unsubstitutedMemberScope == null) {
                 a(14);
             }
@@ -446,7 +446,7 @@ public class LazySubstitutingClassDescriptor extends ModuleAwareClassDescriptor 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.ModuleAwareClassDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor
     @NotNull
     public ClassDescriptor getOriginal() {
-        ClassDescriptor original = this.f32481d.getOriginal();
+        ClassDescriptor original = this.f32482d.getOriginal();
         if (original == null) {
             a(21);
         }

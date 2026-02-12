@@ -8,14 +8,14 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class VerifyDeviceIntegrityRequest {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Meta f20255a;
+    private final Meta f20256a;
 
     public VerifyDeviceIntegrityRequest(Meta meta) {
-        this.f20255a = meta;
+        this.f20256a = meta;
     }
 
     public final Meta a() {
-        return this.f20255a;
+        return this.f20256a;
     }
 
     public /* synthetic */ VerifyDeviceIntegrityRequest(Meta meta, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -28,22 +28,22 @@ public final class VerifyDeviceIntegrityRequest {
     public static final class Meta {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f20256a;
+        private final String f20257a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f20257b;
+        private final String f20258b;
 
         public Meta(String str, String str2) {
-            this.f20256a = str;
-            this.f20257b = str2;
+            this.f20257a = str;
+            this.f20258b = str2;
         }
 
         public final String a() {
-            return this.f20257b;
+            return this.f20258b;
         }
 
         public final String b() {
-            return this.f20256a;
+            return this.f20257a;
         }
 
         public /* synthetic */ Meta(String str, String str2, int i10, DefaultConstructorMarker defaultConstructorMarker) {

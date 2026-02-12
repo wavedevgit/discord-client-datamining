@@ -10,13 +10,13 @@ public final class h implements a {
         ByteBuffer byteBuffer;
         Intrinsics.checkNotNullParameter(sourceFrame, "sourceFrame");
         Intrinsics.checkNotNullParameter(targetFrame, "targetFrame");
-        ByteBuffer byteBuffer2 = sourceFrame.f45455b;
-        if (byteBuffer2 != null && (byteBuffer = targetFrame.f45455b) != null) {
+        ByteBuffer byteBuffer2 = sourceFrame.f45456b;
+        if (byteBuffer2 != null && (byteBuffer = targetFrame.f45456b) != null) {
             byteBuffer.put(byteBuffer2);
-            targetFrame.f45455b.flip();
-            MediaCodec.BufferInfo bufferInfo = targetFrame.f45456c;
+            targetFrame.f45456b.flip();
+            MediaCodec.BufferInfo bufferInfo = targetFrame.f45457c;
             bufferInfo.offset = 0;
-            MediaCodec.BufferInfo bufferInfo2 = sourceFrame.f45456c;
+            MediaCodec.BufferInfo bufferInfo2 = sourceFrame.f45457c;
             bufferInfo.size = bufferInfo2.size;
             bufferInfo.presentationTimeUs = bufferInfo2.presentationTimeUs;
             bufferInfo.flags = bufferInfo2.flags;

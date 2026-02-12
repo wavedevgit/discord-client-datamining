@@ -4,19 +4,19 @@ package gf;
 public final class b0 implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ int f25569d;
+    final /* synthetic */ int f25570d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ e0 f25570e;
+    final /* synthetic */ e0 f25571e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b0(e0 e0Var, int i10) {
-        this.f25570e = e0Var;
-        this.f25569d = i10;
+        this.f25571e = e0Var;
+        this.f25570d = i10;
     }
 
     @Override // java.lang.Runnable
     public final void run() {
-        this.f25570e.l(this.f25569d);
+        this.f25571e.l(this.f25570d);
     }
 }

@@ -3,21 +3,21 @@ package com.google.android.gms.internal.fido;
 public final class h5 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final l5 f14693a;
+    private final l5 f14694a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final l5 f14694b;
+    private final l5 f14695b;
 
     public h5(l5 l5Var, l5 l5Var2) {
-        this.f14693a = l5Var;
-        this.f14694b = l5Var2;
+        this.f14694a = l5Var;
+        this.f14695b = l5Var2;
     }
 
     public final l5 a() {
-        return this.f14693a;
+        return this.f14694a;
     }
 
     public final l5 b() {
-        return this.f14694b;
+        return this.f14695b;
     }
 }

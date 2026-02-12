@@ -9,19 +9,19 @@ import x8.b;
 public final class ResizeOptions {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f11062e = new a(null);
+    public static final a f11063e = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f11063a;
+    public final int f11064a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f11064b;
+    public final int f11065b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final float f11065c;
+    public final float f11066c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final float f11066d;
+    public final float f11067d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -41,10 +41,10 @@ public final class ResizeOptions {
     }
 
     public ResizeOptions(int i10, int i11, float f10, float f11) {
-        this.f11063a = i10;
-        this.f11064b = i11;
-        this.f11065c = f10;
-        this.f11066d = f11;
+        this.f11064a = i10;
+        this.f11065b = i11;
+        this.f11066c = f10;
+        this.f11067d = f11;
         if (i10 <= 0) {
             throw new IllegalStateException("Check failed.");
         }
@@ -59,7 +59,7 @@ public final class ResizeOptions {
         }
         if (obj instanceof ResizeOptions) {
             ResizeOptions resizeOptions = (ResizeOptions) obj;
-            if (this.f11063a == resizeOptions.f11063a && this.f11064b == resizeOptions.f11064b) {
+            if (this.f11064a == resizeOptions.f11064a && this.f11065b == resizeOptions.f11065b) {
                 return true;
             }
             return false;
@@ -68,12 +68,12 @@ public final class ResizeOptions {
     }
 
     public int hashCode() {
-        return b.a(this.f11063a, this.f11064b);
+        return b.a(this.f11064a, this.f11065b);
     }
 
     public String toString() {
         StringCompanionObject stringCompanionObject = StringCompanionObject.INSTANCE;
-        String format = String.format(null, "%dx%d", Arrays.copyOf(new Object[]{Integer.valueOf(this.f11063a), Integer.valueOf(this.f11064b)}, 2));
+        String format = String.format(null, "%dx%d", Arrays.copyOf(new Object[]{Integer.valueOf(this.f11064a), Integer.valueOf(this.f11065b)}, 2));
         Intrinsics.checkNotNullExpressionValue(format, "format(...)");
         return format;
     }

@@ -13,13 +13,13 @@ import kotlin.jvm.internal.markers.KMutableSet;
 public final class b implements Collection, Set, KMutableCollection, KMutableSet {
 
     /* renamed from: d  reason: collision with root package name */
-    private int[] f50357d;
+    private int[] f50358d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Object[] f50358e;
+    private Object[] f50359e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f50359i;
+    private int f50360i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private final class a extends f {
@@ -125,14 +125,14 @@ public final class b implements Collection, Set, KMutableCollection, KMutableSet
     }
 
     public final Object[] c() {
-        return this.f50358e;
+        return this.f50359e;
     }
 
     @Override // java.util.Collection, java.util.Set
     public void clear() {
         if (f() != 0) {
-            j(v0.a.f51312a);
-            i(v0.a.f51314c);
+            j(v0.a.f51313a);
+            i(v0.a.f51315c);
             k(0);
         }
         if (f() == 0) {
@@ -161,11 +161,11 @@ public final class b implements Collection, Set, KMutableCollection, KMutableSet
     }
 
     public final int[] d() {
-        return this.f50357d;
+        return this.f50358d;
     }
 
     public int e() {
-        return this.f50359i;
+        return this.f50360i;
     }
 
     @Override // java.util.Collection, java.util.Set
@@ -190,7 +190,7 @@ public final class b implements Collection, Set, KMutableCollection, KMutableSet
     }
 
     public final int f() {
-        return this.f50359i;
+        return this.f50360i;
     }
 
     public final Object g(int i10) {
@@ -253,7 +253,7 @@ public final class b implements Collection, Set, KMutableCollection, KMutableSet
 
     public final void i(Object[] objArr) {
         Intrinsics.checkNotNullParameter(objArr, "<set-?>");
-        this.f50358e = objArr;
+        this.f50359e = objArr;
     }
 
     public final int indexOf(Object obj) {
@@ -278,11 +278,11 @@ public final class b implements Collection, Set, KMutableCollection, KMutableSet
 
     public final void j(int[] iArr) {
         Intrinsics.checkNotNullParameter(iArr, "<set-?>");
-        this.f50357d = iArr;
+        this.f50358d = iArr;
     }
 
     public final void k(int i10) {
-        this.f50359i = i10;
+        this.f50360i = i10;
     }
 
     public final Object l(int i10) {
@@ -329,7 +329,7 @@ public final class b implements Collection, Set, KMutableCollection, KMutableSet
 
     @Override // java.util.Collection, java.util.Set
     public final Object[] toArray() {
-        return kotlin.collections.i.r(this.f50358e, 0, this.f50359i);
+        return kotlin.collections.i.r(this.f50359e, 0, this.f50360i);
     }
 
     public String toString() {
@@ -357,8 +357,8 @@ public final class b implements Collection, Set, KMutableCollection, KMutableSet
     }
 
     public b(int i10) {
-        this.f50357d = v0.a.f51312a;
-        this.f50358e = v0.a.f51314c;
+        this.f50358d = v0.a.f51313a;
+        this.f50359e = v0.a.f51315c;
         if (i10 > 0) {
             d.a(this, i10);
         }
@@ -367,8 +367,8 @@ public final class b implements Collection, Set, KMutableCollection, KMutableSet
     @Override // java.util.Collection, java.util.Set
     public final Object[] toArray(Object[] array) {
         Intrinsics.checkNotNullParameter(array, "array");
-        Object[] a10 = c.a(array, this.f50359i);
-        kotlin.collections.i.k(this.f50358e, a10, 0, 0, this.f50359i);
+        Object[] a10 = c.a(array, this.f50360i);
+        kotlin.collections.i.k(this.f50359e, a10, 0, 0, this.f50360i);
         Intrinsics.checkNotNull(a10);
         return a10;
     }

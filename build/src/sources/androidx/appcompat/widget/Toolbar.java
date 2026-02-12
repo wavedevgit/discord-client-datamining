@@ -1716,12 +1716,12 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
         this.S = new ArrayList();
         this.U = new a();
         this.f1690h0 = new b();
-        v0 v10 = v0.v(getContext(), attributeSet, f.j.f23465j3, i10, 0);
-        androidx.core.view.i0.i0(this, context, f.j.f23465j3, attributeSet, v10.r(), i10, 0);
+        v0 v10 = v0.v(getContext(), attributeSet, f.j.f23466j3, i10, 0);
+        androidx.core.view.i0.i0(this, context, f.j.f23466j3, attributeSet, v10.r(), i10, 0);
         this.f1700w = v10.n(f.j.L3, 0);
         this.f1701x = v10.n(f.j.C3, 0);
-        this.H = v10.l(f.j.f23470k3, this.H);
-        this.f1702y = v10.l(f.j.f23475l3, 48);
+        this.H = v10.l(f.j.f23471k3, this.H);
+        this.f1702y = v10.l(f.j.f23476l3, 48);
         int e10 = v10.e(f.j.F3, 0);
         e10 = v10.s(f.j.K3) ? v10.e(f.j.K3, e10) : e10;
         this.D = e10;
@@ -1744,20 +1744,20 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
         if (e14 >= 0) {
             this.D = e14;
         }
-        this.f1703z = v10.f(f.j.f23530w3, -1);
-        int e15 = v10.e(f.j.f23510s3, Integer.MIN_VALUE);
-        int e16 = v10.e(f.j.f23490o3, Integer.MIN_VALUE);
-        int f10 = v10.f(f.j.f23500q3, 0);
-        int f11 = v10.f(f.j.f23505r3, 0);
+        this.f1703z = v10.f(f.j.f23531w3, -1);
+        int e15 = v10.e(f.j.f23511s3, Integer.MIN_VALUE);
+        int e16 = v10.e(f.j.f23491o3, Integer.MIN_VALUE);
+        int f10 = v10.f(f.j.f23501q3, 0);
+        int f11 = v10.f(f.j.f23506r3, 0);
         h();
         this.E.e(f10, f11);
         if (e15 != Integer.MIN_VALUE || e16 != Integer.MIN_VALUE) {
             this.E.g(e15, e16);
         }
-        this.F = v10.e(f.j.f23515t3, Integer.MIN_VALUE);
-        this.G = v10.e(f.j.f23495p3, Integer.MIN_VALUE);
-        this.f1694q = v10.g(f.j.f23485n3);
-        this.f1695r = v10.p(f.j.f23480m3);
+        this.F = v10.e(f.j.f23516t3, Integer.MIN_VALUE);
+        this.G = v10.e(f.j.f23496p3, Integer.MIN_VALUE);
+        this.f1694q = v10.g(f.j.f23486n3);
+        this.f1695r = v10.p(f.j.f23481m3);
         CharSequence p10 = v10.p(f.j.E3);
         if (!TextUtils.isEmpty(p10)) {
             setTitle(p10);
@@ -1768,19 +1768,19 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
         }
         this.f1698u = getContext();
         setPopupTheme(v10.n(f.j.A3, 0));
-        Drawable g10 = v10.g(f.j.f23545z3);
+        Drawable g10 = v10.g(f.j.f23546z3);
         if (g10 != null) {
             setNavigationIcon(g10);
         }
-        CharSequence p12 = v10.p(f.j.f23540y3);
+        CharSequence p12 = v10.p(f.j.f23541y3);
         if (!TextUtils.isEmpty(p12)) {
             setNavigationContentDescription(p12);
         }
-        Drawable g11 = v10.g(f.j.f23520u3);
+        Drawable g11 = v10.g(f.j.f23521u3);
         if (g11 != null) {
             setLogo(g11);
         }
-        CharSequence p13 = v10.p(f.j.f23525v3);
+        CharSequence p13 = v10.p(f.j.f23526v3);
         if (!TextUtils.isEmpty(p13)) {
             setLogoDescription(p13);
         }
@@ -1790,8 +1790,8 @@ public class Toolbar extends ViewGroup implements androidx.core.view.n {
         if (v10.s(f.j.D3)) {
             setSubtitleTextColor(v10.c(f.j.D3));
         }
-        if (v10.s(f.j.f23535x3)) {
-            x(v10.n(f.j.f23535x3, 0));
+        if (v10.s(f.j.f23536x3)) {
+            x(v10.n(f.j.f23536x3, 0));
         }
         v10.x();
     }

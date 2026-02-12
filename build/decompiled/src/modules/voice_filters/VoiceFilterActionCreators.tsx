@@ -39,14 +39,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         return var0;
     };
     var2.setVoiceFilterLoopback = var3;
-    var3 = function arg0() {
-        _fun95033: for (var _fun95033_ip = 0;;) switch (_fun95033_ip) {
+    var1 = function arg0() {
+        _fun95113: for (var _fun95113_ip = 0;;) switch (_fun95113_ip) {
             case 0:
                 var3 = arguments[1];
                 var2 = undefined;
                 if (!(var3 === var2)) {
-                    _fun95033_ip = 11;
-                    continue _fun95033
+                    _fun95113_ip = 11;
+                    continue _fun95113
                 }
             case 9:
                 var3 = null;
@@ -67,21 +67,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var2.requestVoiceFilterSwitch = var3;
-    var1 = function() {
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot1;
-        var0 = 0;
-        var1 = var1[var0];
-        var0 = undefined;
-        var3 = var2.bind(var0)(var1);
-        var2 = var3.dispatch;
-        var1 = {};
-        var4 = 'VOICE_FILTER_PREFETCH';
-        var1.type = var4;
-        var1 = var2.bind(var3)(var1);
-        return var0;
-    };
-    var2.prefetchVoiceFilters = var1;
+    var2.requestVoiceFilterSwitch = var1;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, [806, 2]);

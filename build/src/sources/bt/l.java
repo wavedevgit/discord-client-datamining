@@ -44,7 +44,7 @@ public abstract /* synthetic */ class l {
     }
 
     private static final void d(CoroutineContext coroutineContext) {
-        if (coroutineContext.m(Job.f34996k) == null) {
+        if (coroutineContext.m(Job.f34997k) == null) {
             return;
         }
         throw new IllegalArgumentException(("Flow context cannot contain job in it. Had " + coroutineContext).toString());
@@ -58,7 +58,7 @@ public abstract /* synthetic */ class l {
 
     public static final Flow f(Flow flow, CoroutineContext coroutineContext) {
         d(coroutineContext);
-        if (Intrinsics.areEqual(coroutineContext, kotlin.coroutines.e.f32061d)) {
+        if (Intrinsics.areEqual(coroutineContext, kotlin.coroutines.e.f32062d)) {
             return flow;
         }
         if (flow instanceof ct.q) {

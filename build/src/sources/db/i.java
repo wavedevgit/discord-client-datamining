@@ -6,46 +6,46 @@ import kotlin.jvm.internal.Intrinsics;
 public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final i f21516a = new i();
+    public static final i f21517a = new i();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Class f21517b = i.class;
+    private static final Class f21518b = i.class;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private boolean f21518a;
+        private boolean f21519a;
 
         /* renamed from: b  reason: collision with root package name */
-        private int f21519b;
+        private int f21520b;
 
         /* renamed from: c  reason: collision with root package name */
-        private int f21520c;
+        private int f21521c;
 
         public final int a() {
-            return this.f21519b;
+            return this.f21520b;
         }
 
         public final int b() {
-            return this.f21520c;
+            return this.f21521c;
         }
 
         public final boolean c() {
-            return this.f21518a;
+            return this.f21519a;
         }
 
         public final void d(int i10) {
-            this.f21519b = i10;
+            this.f21520b = i10;
         }
 
         public final void e(int i10) {
-            this.f21520c = i10;
+            this.f21521c = i10;
         }
 
         public final void f(boolean z10) {
-            this.f21518a = z10;
+            this.f21519a = z10;
         }
     }
 
@@ -100,7 +100,7 @@ public final class i {
     public static final int d(InputStream stream, int i10) {
         Intrinsics.checkNotNullParameter(stream, "stream");
         a aVar = new a();
-        i iVar = f21516a;
+        i iVar = f21517a;
         int e10 = iVar.e(stream, i10, aVar);
         int b10 = aVar.b() - 8;
         if (e10 != 0 && b10 <= e10) {
@@ -117,7 +117,7 @@ public final class i {
         }
         aVar.d(h.a(inputStream, 4, false));
         if (aVar.a() != 1229531648 && aVar.a() != 1296891946) {
-            q8.a.i(f21517b, "Invalid TIFF header");
+            q8.a.i(f21518b, "Invalid TIFF header");
             return 0;
         }
         if (aVar.a() == 1229531648) {
@@ -131,7 +131,7 @@ public final class i {
         if (aVar.b() >= 8 && aVar.b() - 8 <= i11) {
             return i11;
         }
-        q8.a.i(f21517b, "Invalid offset");
+        q8.a.i(f21518b, "Invalid offset");
         return 0;
     }
 }

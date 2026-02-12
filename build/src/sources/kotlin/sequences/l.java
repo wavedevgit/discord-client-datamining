@@ -11,15 +11,15 @@ public class l {
     public static final class a implements Sequence {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Function2 f34877a;
+        final /* synthetic */ Function2 f34878a;
 
         public a(Function2 function2) {
-            this.f34877a = function2;
+            this.f34878a = function2;
         }
 
         @Override // kotlin.sequences.Sequence
         public Iterator iterator() {
-            return l.a(this.f34877a);
+            return l.a(this.f34878a);
         }
     }
 

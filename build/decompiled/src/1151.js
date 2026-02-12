@@ -21,7 +21,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 StartGenerator();
                                 ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                 if (var1) {
-                                    _fun12549_ip = 397;
+                                    _fun12549_ip = 395;
                                     continue _fun12549
                                 }
                             case 10:
@@ -47,7 +47,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var4 = var5.warn;
                                 var3 = '[AppStart] Could not capture App Start, missing client.';
                                 var3 = var4.bind(var5)(var3);
-                                _fun12549_ip = 391;
+                                _fun12549_ip = 389;
                                 continue _fun12549;
                             case 94:
                                 var4 = _closure2_slot1;
@@ -68,7 +68,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var4 = var4.NATIVE;
                                 var4 = var4.enableNative;
                                 if (!var4) {
-                                    _fun12549_ip = 311;
+                                    _fun12549_ip = 309;
                                     continue _fun12549
                                 }
                             case 176: // try_start_0
@@ -85,7 +85,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             case 213:
                                 ResumeGenerator(result_out_reg = 4, return_bool_out_reg = 7);
                                 if (var7) {
-                                    _fun12549_ip = 265;
+                                    _fun12549_ip = 264;
                                     continue _fun12549
                                 }
                             case 219:
@@ -98,12 +98,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var11 = var12.log;
                                 var7 = '[AppStart] Captured end frames for app start.';
                                 var7 = var11.bind(var12)(var7, var4);
-                            case 263: // try_end0
-                                _fun12549_ip = 311;
+                            case 262: // try_end0
+                                _fun12549_ip = 309;
                                 continue _fun12549;
-                            case 265:
+                            case 264:
                                 return var4;
-                            case 268: // catch_target0
+                            case 267: // catch_target0
                                 CatchBlockStart(arg_register = 11);
                                 var7 = _closure1_slot0;
                                 var4 = _closure1_slot1;
@@ -113,7 +113,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var7 = var10.log;
                                 var4 = '[AppStart] Failed to capture end frames for app start.';
                                 var4 = var7.bind(var10)(var4, var11);
-                            case 311:
+                            case 309:
                                 var7 = _closure1_slot9;
                                 var4 = {};
                                 var4.timestampMs = var9;
@@ -125,35 +125,35 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var _closure2_slot0 = var4;
                                 var1 = undefined;
                                 if (!(var5 !== var4)) {
-                                    _fun12549_ip = 381;
+                                    _fun12549_ip = 379;
                                     continue _fun12549
                                 }
-                            case 357:
+                            case 355:
                                 var4 = _closure2_slot0;
                                 var1 = undefined;
                                 if (!(var1 !== var4)) {
-                                    _fun12549_ip = 381;
+                                    _fun12549_ip = 379;
                                     continue _fun12549
                                 }
-                            case 367:
+                            case 365:
                                 var4 = _closure2_slot0;
                                 var3 = var4.captureStandaloneAppStart;
                                 var1 = var3.bind(var4)();
+                            case 379:
+                                SaveGenerator(address = 383);
                             case 381:
-                                SaveGenerator(address = 385);
-                            case 383:
                                 return var1;
-                            case 385:
+                            case 383:
                                 ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                                 if (var3) {
-                                    _fun12549_ip = 394;
+                                    _fun12549_ip = 392;
                                     continue _fun12549
                                 }
-                            case 391:
+                            case 389:
                                 return var2;
-                            case 394:
+                            case 392:
                                 return var1;
-                            case 397:
+                            case 395:
                                 return var0;
                         }
                     };
@@ -560,13 +560,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             StartGenerator();
                                             ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                             if (var1) {
-                                                _fun12566_ip = 2401;
+                                                _fun12566_ip = 2397;
                                                 continue _fun12566
                                             }
                                         case 12:
                                             var1 = _closure2_slot3;
                                             if (var1) {
-                                                _fun12566_ip = 2396;
+                                                _fun12566_ip = 2392;
                                                 continue _fun12566
                                             }
                                         case 25:
@@ -586,7 +586,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var2 = var3.warn;
                                             var1 = '[AppStart] No first started active root span id recorded. Can not attach app start.';
                                             var1 = var2.bind(var3)(var1);
-                                            _fun12566_ip = 2396;
+                                            _fun12566_ip = 2392;
                                             continue _fun12566;
                                         case 84:
                                             var1 = _closure3_slot0;
@@ -624,7 +624,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var2 = var3.warn;
                                             var1 = '[AppStart] Transaction event is missing trace context. Can not attach app start.';
                                             var1 = var2.bind(var3)(var1);
-                                            _fun12566_ip = 2396;
+                                            _fun12566_ip = 2392;
                                             continue _fun12566;
                                         case 184:
                                             var2 = _closure2_slot5;
@@ -646,7 +646,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var2 = var3.warn;
                                             var1 = '[AppStart] First started active root span id does not match the transaction event span id. Can not attached app start.';
                                             var1 = var2.bind(var3)(var1);
-                                            _fun12566_ip = 2396;
+                                            _fun12566_ip = 2392;
                                             continue _fun12566;
                                         case 264:
                                             var3 = _closure1_slot0;
@@ -663,7 +663,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         case 307:
                                             ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                                             if (var3) {
-                                                _fun12566_ip = 2393;
+                                                _fun12566_ip = 2389;
                                                 continue _fun12566
                                             }
                                         case 316:
@@ -681,12 +681,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var7 = var8.warn;
                                             var3 = '[AppStart] Failed to retrieve the app start metrics from the native layer.';
                                             var3 = var7.bind(var8)(var3);
-                                            _fun12566_ip = 2396;
+                                            _fun12566_ip = 2392;
                                             continue _fun12566;
                                         case 366:
                                             var3 = var1.has_fetched;
                                             if (var3) {
-                                                _fun12566_ip = 2349;
+                                                _fun12566_ip = 2345;
                                                 continue _fun12566
                                             }
                                         case 378:
@@ -705,7 +705,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var7 = var10.warn;
                                             var3 = '[AppStart] App start timestamp could not be loaded from the native layer.';
                                             var3 = var7.bind(var10)(var3);
-                                            _fun12566_ip = 2396;
+                                            _fun12566_ip = 2392;
                                             continue _fun12566;
                                         case 434:
                                             var3 = _closure1_slot5;
@@ -746,7 +746,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var10 = var11.warn;
                                             var7 = '[AppStart] Javascript failed to record app start end. `_setAppStartEndData` was not called nor could the bundle start be found.';
                                             var7 = var10.bind(var11)(var7);
-                                            _fun12566_ip = 2396;
+                                            _fun12566_ip = 2392;
                                             continue _fun12566;
                                         case 540:
                                             var7 = _closure3_slot0;
@@ -776,18 +776,18 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var11 = var13.warn;
                                             var10 = '[AppStart] App start timestamp is too far in the past to be used for app start span.';
                                             var10 = var11.bind(var13)(var10);
-                                            _fun12566_ip = 2396;
+                                            _fun12566_ip = 2392;
                                             continue _fun12566;
                                         case 634:
                                             var10 = var3 - var8;
                                             if (!(!(var10 >= var7))) {
-                                                _fun12566_ip = 2305;
+                                                _fun12566_ip = 2301;
                                                 continue _fun12566
                                             }
                                         case 645:
                                             var11 = 0;
                                             if (!(!(var10 < var11))) {
-                                                _fun12566_ip = 2254;
+                                                _fun12566_ip = 2250;
                                                 continue _fun12566
                                             }
                                         case 654:
@@ -925,7 +925,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var3 = var8 < var20;
                                         case 1072:
                                             if (!var3) {
-                                                _fun12566_ip = 1125;
+                                                _fun12566_ip = 1124;
                                                 continue _fun12566
                                             }
                                         case 1075:
@@ -939,28 +939,28 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var3 = var8.bind(var13)(var3);
                                             var3 = _closure3_slot0;
                                             var3.timestamp = var20;
-                                        case 1125:
+                                        case 1124:
                                             var3 = var1.type;
                                             var8 = 'cold';
                                             if (!(var8 !== var3)) {
-                                                _fun12566_ip = 1165;
+                                                _fun12566_ip = 1164;
                                                 continue _fun12566
                                             }
-                                        case 1140:
+                                        case 1139:
                                             var13 = _closure1_slot0;
                                             var3 = _closure1_slot1;
                                             var3 = var3[var16];
                                             var3 = var13.bind(var4)(var3);
                                             var22 = var3.APP_START_WARM;
-                                            _fun12566_ip = 1188;
+                                            _fun12566_ip = 1187;
                                             continue _fun12566;
-                                        case 1165:
+                                        case 1164:
                                             var13 = _closure1_slot0;
                                             var3 = _closure1_slot1;
                                             var3 = var3[var16];
                                             var3 = var13.bind(var4)(var3);
                                             var22 = var3.APP_START_COLD;
-                                        case 1188:
+                                        case 1187:
                                             var16 = _closure1_slot0;
                                             var3 = _closure1_slot1;
                                             var13 = 6;
@@ -972,12 +972,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var23 = var1.type;
                                             var22 = 'Warm Start';
                                             if (!(var8 === var23)) {
-                                                _fun12566_ip = 1241;
+                                                _fun12566_ip = 1240;
                                                 continue _fun12566
                                             }
-                                        case 1235:
+                                        case 1234:
                                             var22 = 'Cold Start';
-                                        case 1241:
+                                        case 1240:
                                             var3.description = var22;
                                             var3.start_timestamp = var21;
                                             var3.timestamp = var20;
@@ -996,46 +996,46 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var14 = var14 == var3;
                                             var3 = undefined;
                                             if (var14) {
-                                                _fun12566_ip = 1338;
+                                                _fun12566_ip = 1337;
                                                 continue _fun12566
                                             }
-                                        case 1328:
+                                        case 1327:
                                             var14 = _closure1_slot5;
                                             var3 = var14.endFrames;
-                                        case 1338:
+                                        case 1337:
                                             if (!var3) {
-                                                _fun12566_ip = 1620;
+                                                _fun12566_ip = 1618;
                                                 continue _fun12566
                                             }
-                                        case 1344:
+                                        case 1343:
                                             var3 = _closure1_slot5;
                                             var18 = var3.endFrames;
                                             var3 = var18.totalFrames;
                                             if (!(var3 <= var11)) {
-                                                _fun12566_ip = 1387;
+                                                _fun12566_ip = 1386;
                                                 continue _fun12566
                                             }
-                                        case 1364:
+                                        case 1363:
                                             var3 = var18.slowFrames;
                                             if (!(var3 <= var11)) {
-                                                _fun12566_ip = 1387;
+                                                _fun12566_ip = 1386;
                                                 continue _fun12566
                                             }
-                                        case 1374:
+                                        case 1373:
                                             var3 = var18.totalFrames;
                                             if (!(!(var3 <= var11))) {
-                                                _fun12566_ip = 1550;
+                                                _fun12566_ip = 1548;
                                                 continue _fun12566
                                             }
-                                        case 1387:
+                                        case 1386:
                                             var3 = var16.data;
                                             if (var3) {
-                                                _fun12566_ip = 1397;
+                                                _fun12566_ip = 1396;
                                                 continue _fun12566
                                             }
-                                        case 1395:
+                                        case 1394:
                                             var3 = {};
-                                        case 1397:
+                                        case 1396:
                                             var16.data = var3;
                                             var11 = var16.data;
                                             var3 = var18.totalFrames;
@@ -1065,9 +1065,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var11.frameData = var3;
                                             var3 = '[AppStart] Attached frame data to span.';
                                             var3 = var14.bind(var17)(var3, var11);
-                                            _fun12566_ip = 1620;
+                                            _fun12566_ip = 1618;
                                             continue _fun12566;
-                                        case 1550:
+                                        case 1548:
                                             var11 = _closure1_slot0;
                                             var3 = _closure1_slot1;
                                             var3 = var3[var7];
@@ -1082,7 +1082,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var3 = ').';
                                             var3 = var18.bind(var17)(var20, var3);
                                             var3 = var11.bind(var14)(var3);
-                                        case 1620:
+                                        case 1618:
                                             var14 = _closure1_slot7;
                                             var11 = _closure1_slot0;
                                             var3 = _closure1_slot1;
@@ -1092,24 +1092,24 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var3 = var3.bind(var11)();
                                             var17 = undefined;
                                             if (!var3) {
-                                                _fun12566_ip = 1919;
+                                                _fun12566_ip = 1917;
                                                 continue _fun12566
                                             }
-                                        case 1659:
+                                        case 1657:
                                             var18 = var3 / var15;
                                             var3 = var16.start_timestamp;
                                             if (!(!(var18 < var3))) {
-                                                _fun12566_ip = 1878;
+                                                _fun12566_ip = 1876;
                                                 continue _fun12566
                                             }
-                                        case 1676:
+                                        case 1674:
                                             var11 = _closure1_slot0;
                                             var3 = _closure1_slot1;
                                             if (var14) {
-                                                _fun12566_ip = 1786;
+                                                _fun12566_ip = 1784;
                                                 continue _fun12566
                                             }
-                                        case 1687:
+                                        case 1685:
                                             var20 = var3[var7];
                                             var20 = var11.bind(var4)(var20);
                                             var22 = var20.debug;
@@ -1129,9 +1129,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var23 = var23.SPAN_ORIGIN_AUTO_APP_START;
                                             var20.origin = var23;
                                             var17 = var21.bind(var22)(var16, var20);
-                                            _fun12566_ip = 1919;
+                                            _fun12566_ip = 1917;
                                             continue _fun12566;
-                                        case 1786:
+                                        case 1784:
                                             var3 = var3[var13];
                                             var13 = var11.bind(var4)(var3);
                                             var11 = var13.createChildSpanJSON;
@@ -1147,21 +1147,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var15 = var15[var19];
                                             var15 = var18.bind(var4)(var15);
                                             if (var14) {
-                                                _fun12566_ip = 1859;
+                                                _fun12566_ip = 1857;
                                                 continue _fun12566
                                             }
-                                        case 1851:
+                                        case 1849:
                                             var14 = var15.SPAN_ORIGIN_AUTO_APP_START;
-                                            _fun12566_ip = 1865;
+                                            _fun12566_ip = 1863;
                                             continue _fun12566;
-                                        case 1859:
+                                        case 1857:
                                             var14 = var15.SPAN_ORIGIN_MANUAL_APP_START;
-                                        case 1865:
+                                        case 1863:
                                             var3.origin = var14;
                                             var17 = var11.bind(var13)(var16, var3);
-                                            _fun12566_ip = 1919;
+                                            _fun12566_ip = 1917;
                                             continue _fun12566;
-                                        case 1878:
+                                        case 1876:
                                             var11 = _closure1_slot0;
                                             var3 = _closure1_slot1;
                                             var3 = var3[var7];
@@ -1171,24 +1171,24 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var3 = 'Bundle start timestamp is before the app start span start timestamp. Skipping JS execution span.';
                                             var3 = var11.bind(var13)(var3);
                                             var17 = undefined;
-                                        case 1919:
+                                        case 1917:
                                             var14 = new Array(1);
                                             var14[0] = var16;
                                             var13 = var14.concat;
                                             var11 = _closure1_slot2;
                                             if (var17) {
-                                                _fun12566_ip = 1945;
+                                                _fun12566_ip = 1943;
                                                 continue _fun12566
                                             }
-                                        case 1939:
+                                        case 1937:
                                             var3 = new Array(0);
-                                            _fun12566_ip = 1956;
+                                            _fun12566_ip = 1954;
                                             continue _fun12566;
-                                        case 1945:
+                                        case 1943:
                                             var15 = new Array(1);
                                             var15[0] = var17;
                                             var3 = var15;
-                                        case 1956:
+                                        case 1954:
                                             var11 = var11.bind(var4)(var3);
                                             var3 = _closure1_slot2;
                                             var15 = var1.spans;
@@ -1350,26 +1350,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var6 = var12.bind(var13)(var6, var11);
                                             var6 = var1.type;
                                             if (!(var8 !== var6)) {
-                                                _fun12566_ip = 2113;
+                                                _fun12566_ip = 2110;
                                                 continue _fun12566
                                             }
-                                        case 2085:
+                                        case 2082:
                                             var8 = _closure1_slot0;
                                             var11 = _closure1_slot1;
                                             var6 = 9;
                                             var6 = var11[var6];
                                             var6 = var8.bind(var4)(var6);
                                             var6 = var6.APP_START_WARM;
-                                            _fun12566_ip = 2139;
+                                            _fun12566_ip = 2136;
                                             continue _fun12566;
-                                        case 2113:
+                                        case 2110:
                                             var11 = _closure1_slot0;
                                             var12 = _closure1_slot1;
                                             var8 = 9;
                                             var8 = var12[var8];
                                             var8 = var11.bind(var4)(var8);
                                             var6 = var8.APP_START_COLD;
-                                        case 2139:
+                                        case 2136:
                                             var8 = {};
                                             var8.value = var10;
                                             var10 = 'millisecond';
@@ -1377,12 +1377,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var11 = _closure3_slot0;
                                             var10 = var11.measurements;
                                             if (var10) {
-                                                _fun12566_ip = 2169;
+                                                _fun12566_ip = 2166;
                                                 continue _fun12566
                                             }
-                                        case 2167:
+                                        case 2164:
                                             var10 = {};
-                                        case 2169:
+                                        case 2166:
                                             var11.measurements = var10;
                                             var5 = _closure3_slot0;
                                             var5 = var5.measurements;
@@ -1398,9 +1398,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var5 = var3.bind(var5)(var8, var4, var9);
                                             var3 = '[AppStart] Added app start measurement to transaction event.';
                                             var3 = var6.bind(var7)(var3, var5);
-                                            _fun12566_ip = 2396;
+                                            _fun12566_ip = 2392;
                                             continue _fun12566;
-                                        case 2254:
+                                        case 2250:
                                             var5 = _closure1_slot0;
                                             var6 = _closure1_slot1;
                                             var3 = 1;
@@ -1411,9 +1411,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var5 = '[AppStart] Last recorded app start end timestamp is before the app start timestamp.';
                                             var3 = 'This is usually caused by missing `Sentry.wrap(RootComponent)` call.';
                                             var3 = var6.bind(var7)(var5, var3);
-                                            _fun12566_ip = 2396;
+                                            _fun12566_ip = 2392;
                                             continue _fun12566;
-                                        case 2305:
+                                        case 2301:
                                             var5 = _closure1_slot0;
                                             var6 = _closure1_slot1;
                                             var3 = 1;
@@ -1423,9 +1423,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var5 = var6.warn;
                                             var3 = '[AppStart] App start duration is over a minute long, not adding app start span.';
                                             var3 = var5.bind(var6)(var3);
-                                            _fun12566_ip = 2396;
+                                            _fun12566_ip = 2392;
                                             continue _fun12566;
-                                        case 2349:
+                                        case 2345:
                                             var3 = _closure1_slot0;
                                             var5 = _closure1_slot1;
                                             var2 = 1;
@@ -1435,14 +1435,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var3 = var4.warn;
                                             var2 = '[AppStart] Measured app start metrics were already reported from the native layer.';
                                             var2 = var3.bind(var4)(var2);
-                                            _fun12566_ip = 2396;
+                                            _fun12566_ip = 2392;
                                             continue _fun12566;
-                                        case 2393:
+                                        case 2389:
                                             return var1;
-                                        case 2396:
+                                        case 2392:
                                             var1 = undefined;
                                             return var1;
-                                        case 2401:
+                                        case 2397:
                                             return var0;
                                     }
                                 };
@@ -1628,21 +1628,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 var4 = var3.debug;
                                                 var3 = var4.log;
                                                 if (var2) {
-                                                    _fun12576_ip = 60;
+                                                    _fun12576_ip = 59;
                                                     continue _fun12576
                                                 }
-                                            case 47:
+                                            case 46:
                                                 var2 = '[AppStartIntegration] Waiting for initial app start was flush, before updating based on runApplication call.';
                                                 var2 = var3.bind(var4)(var2);
-                                                _fun12576_ip = 81;
+                                                _fun12576_ip = 80;
                                                 continue _fun12576;
-                                            case 60:
+                                            case 59:
                                                 var2 = '[AppStartIntegration] Resetting app start data flushed flag based on runApplication call.';
                                                 var2 = var3.bind(var4)(var2);
                                                 var2 = false;
                                                 _closure2_slot3 = var2;
                                                 _closure2_slot5 = var0;
-                                            case 81:
+                                            case 80:
                                                 return var0;
                                         }
                                     };
@@ -1734,7 +1734,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             StartGenerator();
                                             ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                             if (var1) {
-                                                _fun12582_ip = 772;
+                                                _fun12582_ip = 769;
                                                 continue _fun12582
                                             }
                                         case 10:
@@ -1751,7 +1751,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var4 = var5.warn;
                                             var3 = '[AppStart] Could not capture App Start, missing client, call `Sentry.init` first.';
                                             var3 = var4.bind(var5)(var3);
-                                            _fun12582_ip = 769;
+                                            _fun12582_ip = 766;
                                             continue _fun12582;
                                         case 53:
                                             var4 = _closure2_slot0;
@@ -1763,15 +1763,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var6 = var5.debug;
                                             var5 = var6.log;
                                             if (var4) {
-                                                _fun12582_ip = 111;
+                                                _fun12582_ip = 110;
                                                 continue _fun12582
                                             }
-                                        case 95:
+                                        case 94:
                                             var4 = '[AppStart] App start tracking is enabled. App start will be added to the first transaction as a child span.';
                                             var4 = var5.bind(var6)(var4);
-                                            _fun12582_ip = 769;
+                                            _fun12582_ip = 766;
                                             continue _fun12582;
-                                        case 111:
+                                        case 110:
                                             var4 = '[AppStart] App start tracking standalone root span (transaction).';
                                             var4 = var5.bind(var6)(var4);
                                             var4 = _closure1_slot5;
@@ -1779,18 +1779,18 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var5 = var9 == var4;
                                             var4 = undefined;
                                             if (var5) {
-                                                _fun12582_ip = 147;
+                                                _fun12582_ip = 146;
                                                 continue _fun12582
                                             }
-                                        case 137:
+                                        case 136:
                                             var5 = _closure1_slot5;
                                             var4 = var5.endFrames;
-                                        case 147:
+                                        case 146:
                                             if (var4) {
-                                                _fun12582_ip = 419;
+                                                _fun12582_ip = 416;
                                                 continue _fun12582
                                             }
-                                        case 153:
+                                        case 152:
                                             var5 = _closure1_slot0;
                                             var4 = _closure1_slot1;
                                             var6 = 2;
@@ -1799,10 +1799,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var4 = var4.NATIVE;
                                             var4 = var4.enableNative;
                                             if (!var4) {
-                                                _fun12582_ip = 419;
+                                                _fun12582_ip = 416;
                                                 continue _fun12582
                                             }
-                                        case 191: // try_start_0
+                                        case 190: // try_start_0
                                             var5 = _closure1_slot0;
                                             var4 = _closure1_slot1;
                                             var4 = var4[var6];
@@ -1810,16 +1810,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var5 = var4.NATIVE;
                                             var4 = var5.fetchNativeFrames;
                                             var4 = var4.bind(var5)();
-                                            SaveGenerator(address = 228);
-                                        case 226:
+                                            SaveGenerator(address = 227);
+                                        case 225:
                                             return var4;
-                                        case 228:
+                                        case 227:
                                             ResumeGenerator(result_out_reg = 4, return_bool_out_reg = 5);
                                             if (var5) {
-                                                _fun12582_ip = 373;
+                                                _fun12582_ip = 371;
                                                 continue _fun12582
                                             }
-                                        case 237:
+                                        case 236:
                                             var8 = var4;
                                             var6 = _closure1_slot0;
                                             var5 = _closure1_slot1;
@@ -1833,19 +1833,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var9 = var9 == var6;
                                             var6 = undefined;
                                             if (var9) {
-                                                _fun12582_ip = 304;
+                                                _fun12582_ip = 302;
                                                 continue _fun12582
                                             }
-                                        case 294:
+                                        case 292:
                                             var9 = _closure1_slot5;
                                             var6 = var9.timestampMs;
-                                        case 304:
+                                        case 302:
                                             var5 = var6;
                                             if (var6) {
-                                                _fun12582_ip = 347;
+                                                _fun12582_ip = 345;
                                                 continue _fun12582
                                             }
-                                        case 310:
+                                        case 308:
                                             var9 = _closure1_slot0;
                                             var6 = _closure1_slot1;
                                             var6 = var6[var7];
@@ -1854,19 +1854,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var9 = var6.bind(var9)();
                                             var6 = 1000;
                                             var5 = var6 * var9;
-                                        case 347:
+                                        case 345:
                                             var9 = var5;
                                             var6 = _closure1_slot9;
                                             var5 = {};
                                             var5.timestampMs = var9;
                                             var5.endFrames = var8;
                                             var5 = var6.bind(var1)(var5);
-                                        case 371: // try_end0
-                                            _fun12582_ip = 419;
+                                        case 369: // try_end0
+                                            _fun12582_ip = 416;
                                             continue _fun12582;
-                                        case 373:
+                                        case 371:
                                             return var4;
-                                        case 376: // catch_target0
+                                        case 374: // catch_target0
                                             CatchBlockStart(arg_register = 8);
                                             var5 = _closure1_slot0;
                                             var4 = _closure1_slot1;
@@ -1876,7 +1876,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var5 = var6.log;
                                             var4 = '[AppStart] Failed to capture frames for standalone app start.';
                                             var4 = var5.bind(var6)(var4, var8);
-                                        case 419:
+                                        case 416:
                                             var5 = _closure1_slot0;
                                             var4 = _closure1_slot1;
                                             var6 = var4[var7];
@@ -1897,10 +1897,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var4 = var4.SentryNonRecordingSpan;
                                             var4 = var8 instanceof var4;
                                             if (var4) {
-                                                _fun12582_ip = 769;
+                                                _fun12582_ip = 766;
                                                 continue _fun12582
                                             }
-                                        case 504:
+                                        case 501:
                                             var5 = _closure1_slot0;
                                             var6 = _closure1_slot1;
                                             var4 = 4;
@@ -1921,10 +1921,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var4 = var5.convertSpanToTransaction;
                                             var5 = var4.bind(var5)(var8);
                                             if (var5) {
-                                                _fun12582_ip = 644;
+                                                _fun12582_ip = 641;
                                                 continue _fun12582
                                             }
-                                        case 600:
+                                        case 597:
                                             var6 = _closure1_slot0;
                                             var4 = _closure1_slot1;
                                             var4 = var4[var7];
@@ -1933,35 +1933,35 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var6 = var9.warn;
                                             var4 = '[AppStart] Failed to convert App Start span to transaction.';
                                             var4 = var6.bind(var9)(var4);
-                                            _fun12582_ip = 769;
+                                            _fun12582_ip = 766;
                                             continue _fun12582;
-                                        case 644:
+                                        case 641:
                                             var2 = _closure2_slot8;
                                             var2 = var2.bind(var1)(var5);
-                                            SaveGenerator(address = 657);
-                                        case 655:
+                                            SaveGenerator(address = 654);
+                                        case 652:
                                             return var2;
-                                        case 657:
+                                        case 654:
                                             ResumeGenerator(result_out_reg = 2, return_bool_out_reg = 4);
                                             if (var4) {
+                                                _fun12582_ip = 763;
+                                                continue _fun12582
+                                            }
+                                        case 660:
+                                            var4 = var5.spans;
+                                            if (!var4) {
                                                 _fun12582_ip = 766;
                                                 continue _fun12582
                                             }
-                                        case 663:
-                                            var4 = var5.spans;
-                                            if (!var4) {
-                                                _fun12582_ip = 769;
-                                                continue _fun12582
-                                            }
-                                        case 672:
+                                        case 669:
                                             var4 = var5.spans;
                                             var6 = var4.length;
                                             var4 = 0;
                                             if (!(var4 !== var6)) {
-                                                _fun12582_ip = 769;
+                                                _fun12582_ip = 766;
                                                 continue _fun12582
                                             }
-                                        case 689:
+                                        case 686:
                                             var6 = _closure1_slot0;
                                             var4 = _closure1_slot1;
                                             var4 = var4[var7];
@@ -1970,26 +1970,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var4 = var4.bind(var6)(var8);
                                             var4 = var4.scope;
                                             if (var4) {
-                                                _fun12582_ip = 753;
+                                                _fun12582_ip = 750;
                                                 continue _fun12582
                                             }
-                                        case 726:
+                                        case 723:
                                             var6 = _closure1_slot0;
                                             var3 = _closure1_slot1;
                                             var3 = var3[var7];
                                             var6 = var6.bind(var1)(var3);
                                             var3 = var6.getCurrentScope;
                                             var4 = var3.bind(var6)();
-                                        case 753:
+                                        case 750:
                                             var3 = var4.captureEvent;
                                             var3 = var3.bind(var4)(var5);
-                                            _fun12582_ip = 769;
+                                            _fun12582_ip = 766;
                                             continue _fun12582;
-                                        case 766:
+                                        case 763:
                                             return var2;
-                                        case 769:
+                                        case 766:
                                             return var1;
-                                        case 772:
+                                        case 769:
                                             return var0;
                                     }
                                 };

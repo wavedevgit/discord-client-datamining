@@ -13,46 +13,46 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class a implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f29602d;
+    private String f29603d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Date f29603e;
+    private Date f29604e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f29604i;
+    private String f29605i;
 
     /* renamed from: o  reason: collision with root package name */
-    private String f29605o;
+    private String f29606o;
 
     /* renamed from: p  reason: collision with root package name */
-    private String f29606p;
+    private String f29607p;
 
     /* renamed from: q  reason: collision with root package name */
-    private String f29607q;
+    private String f29608q;
 
     /* renamed from: r  reason: collision with root package name */
-    private String f29608r;
+    private String f29609r;
 
     /* renamed from: s  reason: collision with root package name */
-    private Map f29609s;
+    private Map f29610s;
 
     /* renamed from: t  reason: collision with root package name */
-    private List f29610t;
+    private List f29611t;
 
     /* renamed from: u  reason: collision with root package name */
-    private String f29611u;
+    private String f29612u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Boolean f29612v;
+    private Boolean f29613v;
 
     /* renamed from: w  reason: collision with root package name */
-    private Boolean f29613w;
+    private Boolean f29614w;
 
     /* renamed from: x  reason: collision with root package name */
-    private List f29614x;
+    private List f29615x;
 
     /* renamed from: y  reason: collision with root package name */
-    private Map f29615y;
+    private Map f29616y;
 
     /* renamed from: io.sentry.protocol.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -157,10 +157,10 @@ public final class a implements w1 {
                             break;
                         }
                     case 1:
-                        aVar.f29604i = e3Var.r1();
+                        aVar.f29605i = e3Var.r1();
                         break;
                     case 2:
-                        aVar.f29611u = e3Var.r1();
+                        aVar.f29612u = e3Var.r1();
                         break;
                     case 3:
                         List list2 = (List) e3Var.Z1();
@@ -171,31 +171,31 @@ public final class a implements w1 {
                             break;
                         }
                     case 4:
-                        aVar.f29607q = e3Var.r1();
+                        aVar.f29608q = e3Var.r1();
                         break;
                     case 5:
-                        aVar.f29612v = e3Var.w0();
+                        aVar.f29613v = e3Var.w0();
                         break;
                     case 6:
-                        aVar.f29605o = e3Var.r1();
+                        aVar.f29606o = e3Var.r1();
                         break;
                     case 7:
-                        aVar.f29602d = e3Var.r1();
+                        aVar.f29603d = e3Var.r1();
                         break;
                     case '\b':
-                        aVar.f29603e = e3Var.s0(iLogger);
+                        aVar.f29604e = e3Var.s0(iLogger);
                         break;
                     case '\t':
-                        aVar.f29609s = io.sentry.util.c.b((Map) e3Var.Z1());
+                        aVar.f29610s = io.sentry.util.c.b((Map) e3Var.Z1());
                         break;
                     case '\n':
-                        aVar.f29606p = e3Var.r1();
+                        aVar.f29607p = e3Var.r1();
                         break;
                     case 11:
-                        aVar.f29608r = e3Var.r1();
+                        aVar.f29609r = e3Var.r1();
                         break;
                     case '\f':
-                        aVar.f29613w = e3Var.w0();
+                        aVar.f29614w = e3Var.w0();
                         break;
                     default:
                         if (concurrentHashMap == null) {
@@ -220,7 +220,7 @@ public final class a implements w1 {
         }
         if (obj != null && a.class == obj.getClass()) {
             a aVar = (a) obj;
-            if (io.sentry.util.y.a(this.f29602d, aVar.f29602d) && io.sentry.util.y.a(this.f29603e, aVar.f29603e) && io.sentry.util.y.a(this.f29604i, aVar.f29604i) && io.sentry.util.y.a(this.f29605o, aVar.f29605o) && io.sentry.util.y.a(this.f29606p, aVar.f29606p) && io.sentry.util.y.a(this.f29607q, aVar.f29607q) && io.sentry.util.y.a(this.f29608r, aVar.f29608r) && io.sentry.util.y.a(this.f29609s, aVar.f29609s) && io.sentry.util.y.a(this.f29612v, aVar.f29612v) && io.sentry.util.y.a(this.f29610t, aVar.f29610t) && io.sentry.util.y.a(this.f29611u, aVar.f29611u) && io.sentry.util.y.a(this.f29613w, aVar.f29613w) && io.sentry.util.y.a(this.f29614x, aVar.f29614x)) {
+            if (io.sentry.util.y.a(this.f29603d, aVar.f29603d) && io.sentry.util.y.a(this.f29604e, aVar.f29604e) && io.sentry.util.y.a(this.f29605i, aVar.f29605i) && io.sentry.util.y.a(this.f29606o, aVar.f29606o) && io.sentry.util.y.a(this.f29607p, aVar.f29607p) && io.sentry.util.y.a(this.f29608q, aVar.f29608q) && io.sentry.util.y.a(this.f29609r, aVar.f29609r) && io.sentry.util.y.a(this.f29610s, aVar.f29610s) && io.sentry.util.y.a(this.f29613v, aVar.f29613v) && io.sentry.util.y.a(this.f29611t, aVar.f29611t) && io.sentry.util.y.a(this.f29612u, aVar.f29612u) && io.sentry.util.y.a(this.f29614w, aVar.f29614w) && io.sentry.util.y.a(this.f29615x, aVar.f29615x)) {
                 return true;
             }
         }
@@ -228,129 +228,129 @@ public final class a implements w1 {
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f29602d, this.f29603e, this.f29604i, this.f29605o, this.f29606p, this.f29607q, this.f29608r, this.f29609s, this.f29612v, this.f29610t, this.f29611u, this.f29613w, this.f29614x);
+        return io.sentry.util.y.b(this.f29603d, this.f29604e, this.f29605i, this.f29606o, this.f29607p, this.f29608q, this.f29609r, this.f29610s, this.f29613v, this.f29611t, this.f29612u, this.f29614w, this.f29615x);
     }
 
     public Boolean l() {
-        return this.f29612v;
+        return this.f29613v;
     }
 
     public void m(String str) {
-        this.f29608r = str;
+        this.f29609r = str;
     }
 
     public void n(String str) {
-        this.f29602d = str;
+        this.f29603d = str;
     }
 
     public void o(String str) {
-        this.f29606p = str;
+        this.f29607p = str;
     }
 
     public void p(Date date) {
-        this.f29603e = date;
+        this.f29604e = date;
     }
 
     public void q(String str) {
-        this.f29607q = str;
+        this.f29608q = str;
     }
 
     public void r(Boolean bool) {
-        this.f29612v = bool;
+        this.f29613v = bool;
     }
 
     public void s(Map map) {
-        this.f29609s = map;
+        this.f29610s = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        if (this.f29602d != null) {
-            f3Var.e("app_identifier").f(this.f29602d);
+        if (this.f29603d != null) {
+            f3Var.e("app_identifier").f(this.f29603d);
         }
-        if (this.f29603e != null) {
-            f3Var.e("app_start_time").j(iLogger, this.f29603e);
+        if (this.f29604e != null) {
+            f3Var.e("app_start_time").j(iLogger, this.f29604e);
         }
-        if (this.f29604i != null) {
-            f3Var.e("device_app_hash").f(this.f29604i);
+        if (this.f29605i != null) {
+            f3Var.e("device_app_hash").f(this.f29605i);
         }
-        if (this.f29605o != null) {
-            f3Var.e("build_type").f(this.f29605o);
+        if (this.f29606o != null) {
+            f3Var.e("build_type").f(this.f29606o);
         }
-        if (this.f29606p != null) {
-            f3Var.e("app_name").f(this.f29606p);
+        if (this.f29607p != null) {
+            f3Var.e("app_name").f(this.f29607p);
         }
-        if (this.f29607q != null) {
-            f3Var.e("app_version").f(this.f29607q);
+        if (this.f29608q != null) {
+            f3Var.e("app_version").f(this.f29608q);
         }
-        if (this.f29608r != null) {
-            f3Var.e("app_build").f(this.f29608r);
+        if (this.f29609r != null) {
+            f3Var.e("app_build").f(this.f29609r);
         }
-        Map map = this.f29609s;
+        Map map = this.f29610s;
         if (map != null && !map.isEmpty()) {
-            f3Var.e("permissions").j(iLogger, this.f29609s);
+            f3Var.e("permissions").j(iLogger, this.f29610s);
         }
-        if (this.f29612v != null) {
-            f3Var.e("in_foreground").k(this.f29612v);
+        if (this.f29613v != null) {
+            f3Var.e("in_foreground").k(this.f29613v);
         }
-        if (this.f29610t != null) {
-            f3Var.e("view_names").j(iLogger, this.f29610t);
+        if (this.f29611t != null) {
+            f3Var.e("view_names").j(iLogger, this.f29611t);
         }
-        if (this.f29611u != null) {
-            f3Var.e("start_type").f(this.f29611u);
+        if (this.f29612u != null) {
+            f3Var.e("start_type").f(this.f29612u);
         }
-        if (this.f29613w != null) {
-            f3Var.e("is_split_apks").k(this.f29613w);
+        if (this.f29614w != null) {
+            f3Var.e("is_split_apks").k(this.f29614w);
         }
-        List list = this.f29614x;
+        List list = this.f29615x;
         if (list != null && !list.isEmpty()) {
-            f3Var.e("split_names").j(iLogger, this.f29614x);
+            f3Var.e("split_names").j(iLogger, this.f29615x);
         }
-        Map map2 = this.f29615y;
+        Map map2 = this.f29616y;
         if (map2 != null) {
             for (String str : map2.keySet()) {
-                f3Var.e(str).j(iLogger, this.f29615y.get(str));
+                f3Var.e(str).j(iLogger, this.f29616y.get(str));
             }
         }
         f3Var.D();
     }
 
     public void t(Boolean bool) {
-        this.f29613w = bool;
+        this.f29614w = bool;
     }
 
     public void u(List list) {
-        this.f29614x = list;
+        this.f29615x = list;
     }
 
     public void v(String str) {
-        this.f29611u = str;
+        this.f29612u = str;
     }
 
     public void w(Map map) {
-        this.f29615y = map;
+        this.f29616y = map;
     }
 
     public void x(List list) {
-        this.f29610t = list;
+        this.f29611t = list;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(a aVar) {
-        this.f29608r = aVar.f29608r;
-        this.f29602d = aVar.f29602d;
-        this.f29606p = aVar.f29606p;
-        this.f29603e = aVar.f29603e;
-        this.f29607q = aVar.f29607q;
-        this.f29605o = aVar.f29605o;
-        this.f29604i = aVar.f29604i;
-        this.f29609s = io.sentry.util.c.b(aVar.f29609s);
-        this.f29612v = aVar.f29612v;
-        this.f29610t = io.sentry.util.c.a(aVar.f29610t);
-        this.f29611u = aVar.f29611u;
-        this.f29613w = aVar.f29613w;
-        this.f29614x = aVar.f29614x;
-        this.f29615y = io.sentry.util.c.b(aVar.f29615y);
+        this.f29609r = aVar.f29609r;
+        this.f29603d = aVar.f29603d;
+        this.f29607p = aVar.f29607p;
+        this.f29604e = aVar.f29604e;
+        this.f29608q = aVar.f29608q;
+        this.f29606o = aVar.f29606o;
+        this.f29605i = aVar.f29605i;
+        this.f29610s = io.sentry.util.c.b(aVar.f29610s);
+        this.f29613v = aVar.f29613v;
+        this.f29611t = io.sentry.util.c.a(aVar.f29611t);
+        this.f29612u = aVar.f29612u;
+        this.f29614w = aVar.f29614w;
+        this.f29615x = aVar.f29615x;
+        this.f29616y = io.sentry.util.c.b(aVar.f29616y);
     }
 }

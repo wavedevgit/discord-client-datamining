@@ -8,7 +8,7 @@ import java.util.Set;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f17440a = new HashMap();
+    private final Map f17441a = new HashMap();
 
     /* renamed from: com.google.mlkit.vision.common.internal.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */

@@ -73,13 +73,13 @@ import kotlin.text.StringsKt;
 public abstract class j3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final FqName f51080a = new FqName("kotlin.jvm.JvmStatic");
+    private static final FqName f51081a = new FqName("kotlin.jvm.JvmStatic");
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f51081a;
+        public static final /* synthetic */ int[] f51082a;
 
         static {
             int[] iArr = new int[PrimitiveType.values().length];
@@ -115,7 +115,7 @@ public abstract class j3 {
                 iArr[PrimitiveType.DOUBLE.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
-            f51081a = iArr;
+            f51082a = iArr;
         }
     }
 
@@ -135,13 +135,13 @@ public abstract class j3 {
         }
         PrimitiveType primitiveArrayElementType = KotlinBuiltIns.getPrimitiveArrayElementType(type);
         int i10 = 0;
-        switch (primitiveArrayElementType == null ? -1 : a.f51081a[primitiveArrayElementType.ordinal()]) {
+        switch (primitiveArrayElementType == null ? -1 : a.f51082a[primitiveArrayElementType.ordinal()]) {
             case -1:
                 if (KotlinBuiltIns.isArray(type)) {
                     KotlinType type2 = ((TypeProjection) CollectionsKt.Q0(type.getArguments())).getType();
                     Intrinsics.checkNotNullExpressionValue(type2, "getType(...)");
-                    ClassifierDescriptor mo1202getDeclarationDescriptor = type2.getConstructor().mo1202getDeclarationDescriptor();
-                    ClassDescriptor classDescriptor = mo1202getDeclarationDescriptor instanceof ClassDescriptor ? (ClassDescriptor) mo1202getDeclarationDescriptor : null;
+                    ClassifierDescriptor mo1201getDeclarationDescriptor = type2.getConstructor().mo1201getDeclarationDescriptor();
+                    ClassDescriptor classDescriptor = mo1201getDeclarationDescriptor instanceof ClassDescriptor ? (ClassDescriptor) mo1201getDeclarationDescriptor : null;
                     if (classDescriptor != null) {
                         if (KotlinBuiltIns.isString(type2)) {
                             int size = arrayValue.getValue().size();
@@ -452,7 +452,7 @@ public abstract class j3 {
     }
 
     public static final FqName j() {
-        return f51080a;
+        return f51081a;
     }
 
     public static final boolean k(KType kType) {
@@ -626,18 +626,18 @@ public abstract class j3 {
     public static final KVisibility r(DescriptorVisibility descriptorVisibility) {
         Intrinsics.checkNotNullParameter(descriptorVisibility, "<this>");
         if (Intrinsics.areEqual(descriptorVisibility, DescriptorVisibilities.PUBLIC)) {
-            return KVisibility.f32096d;
+            return KVisibility.f32097d;
         }
         if (Intrinsics.areEqual(descriptorVisibility, DescriptorVisibilities.PROTECTED)) {
-            return KVisibility.f32097e;
+            return KVisibility.f32098e;
         }
         if (Intrinsics.areEqual(descriptorVisibility, DescriptorVisibilities.INTERNAL)) {
-            return KVisibility.f32098i;
+            return KVisibility.f32099i;
         }
         if (!Intrinsics.areEqual(descriptorVisibility, DescriptorVisibilities.PRIVATE) && !Intrinsics.areEqual(descriptorVisibility, DescriptorVisibilities.PRIVATE_TO_THIS)) {
             return null;
         }
-        return KVisibility.f32099o;
+        return KVisibility.f32100o;
     }
 
     private static final Object s(ConstantValue constantValue, ClassLoader classLoader) {
@@ -662,9 +662,9 @@ public abstract class j3 {
                 KClassValue.Value.NormalClass normalClass = (KClassValue.Value.NormalClass) value2;
                 return n(classLoader, normalClass.getClassId(), normalClass.getArrayDimensions());
             } else if (value2 instanceof KClassValue.Value.LocalClass) {
-                ClassifierDescriptor mo1202getDeclarationDescriptor = ((KClassValue.Value.LocalClass) value2).getType().getConstructor().mo1202getDeclarationDescriptor();
-                if (mo1202getDeclarationDescriptor instanceof ClassDescriptor) {
-                    classDescriptor = (ClassDescriptor) mo1202getDeclarationDescriptor;
+                ClassifierDescriptor mo1201getDeclarationDescriptor = ((KClassValue.Value.LocalClass) value2).getType().getConstructor().mo1201getDeclarationDescriptor();
+                if (mo1201getDeclarationDescriptor instanceof ClassDescriptor) {
+                    classDescriptor = (ClassDescriptor) mo1201getDeclarationDescriptor;
                 } else {
                     classDescriptor = null;
                 }

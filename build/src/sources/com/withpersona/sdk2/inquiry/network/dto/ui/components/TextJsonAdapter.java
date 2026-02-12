@@ -88,7 +88,7 @@ public final class TextJsonAdapter extends h {
         }
         Constructor<Text> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = Text.class.getDeclaredConstructor(String.class, Text.Attributes.class, TextBasedComponentStyle.class, Integer.TYPE, c.f21827c);
+            constructor = Text.class.getDeclaredConstructor(String.class, Text.Attributes.class, TextBasedComponentStyle.class, Integer.TYPE, c.f21828c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

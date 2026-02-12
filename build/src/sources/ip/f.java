@@ -3,14 +3,14 @@ package ip;
 public final class f implements lr.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f30353a;
+    private final c f30354a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final lr.h f30354b;
+    private final lr.h f30355b;
 
     public f(c cVar, lr.h hVar) {
-        this.f30353a = cVar;
-        this.f30354b = hVar;
+        this.f30354a = cVar;
+        this.f30355b = hVar;
     }
 
     public static f a(c cVar, lr.h hVar) {
@@ -24,6 +24,6 @@ public final class f implements lr.d {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public so.a get() {
-        return b(this.f30353a, (i) this.f30354b.get());
+        return b(this.f30354a, (i) this.f30355b.get());
     }
 }

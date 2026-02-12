@@ -3,11 +3,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = metroImportDefault;
     var2 = exports;
     var6 = dependencyMap;
-    var0 = require;
-    var _closure1_slot0 = var0;
+    var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var0 = function() {
-        _fun49285: for (var _fun49285_ip = 0;;) switch (_fun49285_ip) {
+        _fun49248: for (var _fun49248_ip = 0;;) switch (_fun49248_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -28,8 +27,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun49285_ip = 74;
-                continue _fun49285;
+                _fun49248_ip = 74;
+                continue _fun49248;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -39,13 +38,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = !var0;
                     return var0;
                 };
-                _closure1_slot7 = var1;
+                _closure1_slot10 = var1;
                 var0 = undefined;
                 var0 = var1.bind(var0)();
                 return var0;
         }
     };
-    var _closure1_slot7 = var0;
+    var _closure1_slot10 = var0;
     var3 = global;
     var8 = var3.Object;
     var7 = var8.defineProperty;
@@ -75,12 +74,24 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = var6[var4];
     var4 = var5.bind(var0)(var4);
     var _closure1_slot6 = var4;
+    var4 = 5;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var _closure1_slot7 = var4;
     var4 = 6;
+    var7 = var6[var4];
+    var4 = arg1;
+    var4 = var4.bind(var0)(var7);
+    var7 = var4.jsx;
+    var _closure1_slot8 = var7;
+    var4 = var4.jsxs;
+    var _closure1_slot9 = var4;
+    var4 = 13;
     var4 = var6[var4];
     var4 = var5.bind(var0)(var4);
     var1 = function(arg0) { // Environment: var1
         var3 = function() {
-            _fun49289: for (var _fun49289_ip = 0;;) switch (_fun49289_ip) {
+            _fun49252: for (var _fun49252_ip = 0;;) switch (_fun49252_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -91,19 +102,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = _closure1_slot5;
                     var8 = var0.bind(var2)(var1);
                     var1 = _closure1_slot4;
-                    var0 = _closure1_slot7;
+                    var0 = _closure1_slot10;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun49289_ip = 69;
-                        continue _fun49289
+                        _fun49252_ip = 69;
+                        continue _fun49252
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun49289_ip = 105;
-                    continue _fun49289;
+                    _fun49252_ip = 105;
+                    continue _fun49252;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -128,16 +139,96 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'render';
         var4.key = var5;
         var0 = function() {
-            var2 = _closure1_slot0;
-            var1 = _closure1_slot1;
-            var0 = 5;
-            var1 = var1[var0];
-            var0 = undefined;
-            var1 = var2.bind(var0)(var1);
-            var0 = var1.warnUnimplementedFilter;
-            var0 = var0.bind(var1)();
-            var0 = null;
-            return var0;
+            _fun49253: for (var _fun49253_ip = 0;;) switch (_fun49253_ip) {
+                case 0:
+                    var8 = this;
+                    var0 = var8.props;
+                    var6 = var0.stdDeviation;
+                    var1 = var0.in;
+                    var11 = 'SourceGraphic';
+                    var3 = undefined;
+                    if (!(var3 !== var1)) {
+                        _fun49253_ip = 35;
+                        continue _fun49253
+                    }
+                case 32:
+                    var11 = var1;
+                case 35:
+                    var14 = var0.dx;
+                    var13 = var0.dy;
+                    var7 = var0.result;
+                    var2 = _closure1_slot9;
+                    var0 = _closure1_slot7;
+                    var1 = var0.Fragment;
+                    var0 = {};
+                    var10 = _closure1_slot8;
+                    var9 = _closure1_slot0;
+                    var12 = _closure1_slot1;
+                    var4 = 7;
+                    var4 = var12[var4];
+                    var5 = var9.bind(var3)(var4);
+                    var4 = {};
+                    var4.in = var11;
+                    var4.stdDeviation = var6;
+                    var5 = var10.bind(var3)(var5, var4);
+                    var4 = new Array(5);
+                    var4[0] = var5;
+                    var5 = 8;
+                    var5 = var12[var5];
+                    var6 = var9.bind(var3)(var5);
+                    var5 = {};
+                    var5.dx = var14;
+                    var5.dy = var13;
+                    var13 = 'offsetblur';
+                    var5.result = var13;
+                    var5 = var10.bind(var3)(var6, var5);
+                    var4[1] = var5;
+                    var5 = 9;
+                    var5 = var12[var5];
+                    var6 = var9.bind(var3)(var5);
+                    var5 = {};
+                    var13 = var8.props;
+                    var13 = var13.floodColor;
+                    var5.floodColor = var13;
+                    var8 = var8.props;
+                    var8 = var8.floodOpacity;
+                    var5.floodOpacity = var8;
+                    var5 = var10.bind(var3)(var6, var5);
+                    var4[2] = var5;
+                    var5 = 10;
+                    var5 = var12[var5];
+                    var6 = var9.bind(var3)(var5);
+                    var5 = {
+                        'in2': 'offsetblur',
+                        'operator': 'in'
+                    };
+                    var5 = var10.bind(var3)(var6, var5);
+                    var4[3] = var5;
+                    var5 = 11;
+                    var5 = var12[var5];
+                    var6 = var9.bind(var3)(var5);
+                    var5 = {};
+                    var5.result = var7;
+                    var8 = 12;
+                    var7 = var12[var8];
+                    var13 = var9.bind(var3)(var7);
+                    var7 = {};
+                    var13 = var10.bind(var3)(var13, var7);
+                    var7 = new Array(2);
+                    var7[0] = var13;
+                    var8 = var12[var8];
+                    var9 = var9.bind(var3)(var8);
+                    var8 = {};
+                    var8.in = var11;
+                    var8 = var10.bind(var3)(var9, var8);
+                    var7[1] = var8;
+                    var5.children = var7;
+                    var5 = var2.bind(var3)(var6, var5);
+                    var4[4] = var5;
+                    var0.children = var4;
+                    var0 = var2.bind(var3)(var1, var0);
+                    return var0;
+            }
         };
         var4.value = var0;
         var0 = new Array(1);
@@ -146,7 +237,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         return var0;
     };
     var1 = var1.bind(var0)(var4);
-    var4 = 'FeDisplacementMap';
+    var4 = 'FeDropShadow';
     var1.displayName = var4;
     var6 = var3.Object;
     var5 = var6.assign;
@@ -156,4 +247,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.defaultProps = var3;
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 5538, 5561]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 33, 5570, 5572, 5574, 5563, 5576, 5578, 5559]);

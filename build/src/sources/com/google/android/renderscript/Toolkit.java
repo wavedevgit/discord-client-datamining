@@ -9,17 +9,17 @@ import oi.a;
 public final class Toolkit {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final Toolkit f17120a;
+    public static final Toolkit f17121a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static long f17121b;
+    private static long f17122b;
 
     static {
         Toolkit toolkit = new Toolkit();
-        f17120a = toolkit;
+        f17121a = toolkit;
         try {
             System.loadLibrary("renderscript-toolkit");
-            f17121b = toolkit.createNative();
+            f17122b = toolkit.createNative();
         } catch (UnsatisfiedLinkError unused) {
         }
     }
@@ -52,7 +52,7 @@ public final class Toolkit {
         }
         a.e("convolve", inputBitmap, range2d);
         Bitmap a10 = a.a(inputBitmap);
-        nativeConvolveBitmap(f17121b, inputBitmap, a10, coefficients, range2d);
+        nativeConvolveBitmap(f17122b, inputBitmap, a10, coefficients, range2d);
         return a10;
     }
 }

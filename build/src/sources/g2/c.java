@@ -7,13 +7,13 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class c {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f24648c = new a(null);
+    public static final a f24649c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f24649a;
+    private final String f24650a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Bundle f24650b;
+    private final Bundle f24651b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -26,10 +26,10 @@ public abstract class c {
             Intrinsics.checkNotNullParameter(data, "data");
             try {
                 if (Intrinsics.areEqual(type, "android.credentials.TYPE_PASSWORD_CREDENTIAL")) {
-                    return e.f24659d.a(data);
+                    return e.f24660d.a(data);
                 }
                 if (Intrinsics.areEqual(type, "androidx.credentials.TYPE_PUBLIC_KEY_CREDENTIAL")) {
-                    return g.f24669e.a(data);
+                    return g.f24670e.a(data);
                 }
                 throw new k2.b();
             } catch (k2.b unused) {
@@ -44,11 +44,11 @@ public abstract class c {
     public c(String type, Bundle data) {
         Intrinsics.checkNotNullParameter(type, "type");
         Intrinsics.checkNotNullParameter(data, "data");
-        this.f24649a = type;
-        this.f24650b = data;
+        this.f24650a = type;
+        this.f24651b = data;
     }
 
     public final String a() {
-        return this.f24649a;
+        return this.f24650a;
     }
 }

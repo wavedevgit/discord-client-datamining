@@ -10,20 +10,20 @@ public final class h implements Parcelable {
     public static final Parcelable.Creator<h> CREATOR = new f();
 
     /* renamed from: d  reason: collision with root package name */
-    Messenger f22776d;
+    Messenger f22777d;
 
     public h(IBinder iBinder) {
-        this.f22776d = new Messenger(iBinder);
+        this.f22777d = new Messenger(iBinder);
     }
 
     public final IBinder a() {
-        Messenger messenger = this.f22776d;
+        Messenger messenger = this.f22777d;
         messenger.getClass();
         return messenger.getBinder();
     }
 
     public final void b(Message message) {
-        Messenger messenger = this.f22776d;
+        Messenger messenger = this.f22777d;
         messenger.getClass();
         messenger.send(message);
     }
@@ -50,7 +50,7 @@ public final class h implements Parcelable {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
-        Messenger messenger = this.f22776d;
+        Messenger messenger = this.f22777d;
         messenger.getClass();
         parcel.writeStrongBinder(messenger.getBinder());
     }

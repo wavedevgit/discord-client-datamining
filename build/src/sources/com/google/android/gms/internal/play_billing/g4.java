@@ -11,28 +11,28 @@ import sun.misc.Unsafe;
 abstract class g4 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Unsafe f14912a;
+    private static final Unsafe f14913a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Class f14913b;
+    private static final Class f14914b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final boolean f14914c;
+    private static final boolean f14915c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final f4 f14915d;
+    private static final f4 f14916d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final boolean f14916e;
+    private static final boolean f14917e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final boolean f14917f;
+    private static final boolean f14918f;
 
     /* renamed from: g  reason: collision with root package name */
-    static final long f14918g;
+    static final long f14919g;
 
     /* renamed from: h  reason: collision with root package name */
-    static final boolean f14919h;
+    static final boolean f14920h;
 
     /* JADX WARN: Removed duplicated region for block: B:22:0x0069  */
     /* JADX WARN: Removed duplicated region for block: B:29:0x0104  */
@@ -46,9 +46,9 @@ abstract class g4 {
     }
 
     static boolean A(Class cls) {
-        int i10 = c0.f14875a;
+        int i10 = c0.f14876a;
         try {
-            Class cls2 = f14913b;
+            Class cls2 = f14914b;
             Class cls3 = Boolean.TYPE;
             cls2.getMethod("peekLong", cls, cls3);
             cls2.getMethod("pokeLong", cls, Long.TYPE, cls3);
@@ -67,35 +67,35 @@ abstract class g4 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean B(Object obj, long j10) {
-        return f14915d.g(obj, j10);
+        return f14916d.g(obj, j10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean C() {
-        return f14917f;
+        return f14918f;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean D() {
-        return f14916e;
+        return f14917e;
     }
 
     private static int E(Class cls) {
-        if (f14917f) {
-            return f14915d.f14902a.arrayBaseOffset(cls);
+        if (f14918f) {
+            return f14916d.f14903a.arrayBaseOffset(cls);
         }
         return -1;
     }
 
     private static int a(Class cls) {
-        if (f14917f) {
-            return f14915d.f14902a.arrayIndexScale(cls);
+        if (f14918f) {
+            return f14916d.f14903a.arrayIndexScale(cls);
         }
         return -1;
     }
 
     private static Field b() {
-        int i10 = c0.f14875a;
+        int i10 = c0.f14876a;
         Field c10 = c(Buffer.class, "effectiveDirectAddress");
         if (c10 == null) {
             Field c11 = c(Buffer.class, "address");
@@ -117,45 +117,45 @@ abstract class g4 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static void d(Object obj, long j10, byte b10) {
-        f4 f4Var = f14915d;
+        f4 f4Var = f14916d;
         long j11 = (-4) & j10;
-        int i10 = f4Var.f14902a.getInt(obj, j11);
+        int i10 = f4Var.f14903a.getInt(obj, j11);
         int i11 = ((~((int) j10)) & 3) << 3;
-        f4Var.f14902a.putInt(obj, j11, ((255 & b10) << i11) | (i10 & (~(SetSpanOperation.SPAN_MAX_PRIORITY << i11))));
+        f4Var.f14903a.putInt(obj, j11, ((255 & b10) << i11) | (i10 & (~(SetSpanOperation.SPAN_MAX_PRIORITY << i11))));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static void e(Object obj, long j10, byte b10) {
-        f4 f4Var = f14915d;
+        f4 f4Var = f14916d;
         long j11 = (-4) & j10;
         int i10 = (((int) j10) & 3) << 3;
-        f4Var.f14902a.putInt(obj, j11, ((255 & b10) << i10) | (f4Var.f14902a.getInt(obj, j11) & (~(SetSpanOperation.SPAN_MAX_PRIORITY << i10))));
+        f4Var.f14903a.putInt(obj, j11, ((255 & b10) << i10) | (f4Var.f14903a.getInt(obj, j11) & (~(SetSpanOperation.SPAN_MAX_PRIORITY << i10))));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static double f(Object obj, long j10) {
-        return f14915d.a(obj, j10);
+        return f14916d.a(obj, j10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static float g(Object obj, long j10) {
-        return f14915d.b(obj, j10);
+        return f14916d.b(obj, j10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static int h(Object obj, long j10) {
-        return f14915d.f14902a.getInt(obj, j10);
+        return f14916d.f14903a.getInt(obj, j10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static long i(Object obj, long j10) {
-        return f14915d.f14902a.getLong(obj, j10);
+        return f14916d.f14903a.getLong(obj, j10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Object j(Class cls) {
         try {
-            return f14912a.allocateInstance(cls);
+            return f14913a.allocateInstance(cls);
         } catch (InstantiationException e10) {
             throw new IllegalStateException(e10);
         }
@@ -163,7 +163,7 @@ abstract class g4 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Object k(Object obj, long j10) {
-        return f14915d.f14902a.getObject(obj, j10);
+        return f14916d.f14903a.getObject(obj, j10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -181,42 +181,42 @@ abstract class g4 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void r(Object obj, long j10, boolean z10) {
-        f14915d.c(obj, j10, z10);
+        f14916d.c(obj, j10, z10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void s(byte[] bArr, long j10, byte b10) {
-        f14915d.d(bArr, f14918g + j10, b10);
+        f14916d.d(bArr, f14919g + j10, b10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void t(Object obj, long j10, double d10) {
-        f14915d.e(obj, j10, d10);
+        f14916d.e(obj, j10, d10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void u(Object obj, long j10, float f10) {
-        f14915d.f(obj, j10, f10);
+        f14916d.f(obj, j10, f10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void v(Object obj, long j10, int i10) {
-        f14915d.f14902a.putInt(obj, j10, i10);
+        f14916d.f14903a.putInt(obj, j10, i10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void w(Object obj, long j10, long j11) {
-        f14915d.f14902a.putLong(obj, j10, j11);
+        f14916d.f14903a.putLong(obj, j10, j11);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void x(Object obj, long j10, Object obj2) {
-        f14915d.f14902a.putObject(obj, j10, obj2);
+        f14916d.f14903a.putObject(obj, j10, obj2);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static /* bridge */ /* synthetic */ boolean y(Object obj, long j10) {
-        if (((byte) ((f14915d.f14902a.getInt(obj, (-4) & j10) >>> ((int) (((~j10) & 3) << 3))) & SetSpanOperation.SPAN_MAX_PRIORITY)) != 0) {
+        if (((byte) ((f14916d.f14903a.getInt(obj, (-4) & j10) >>> ((int) (((~j10) & 3) << 3))) & SetSpanOperation.SPAN_MAX_PRIORITY)) != 0) {
             return true;
         }
         return false;
@@ -224,7 +224,7 @@ abstract class g4 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static /* bridge */ /* synthetic */ boolean z(Object obj, long j10) {
-        if (((byte) ((f14915d.f14902a.getInt(obj, (-4) & j10) >>> ((int) ((j10 & 3) << 3))) & SetSpanOperation.SPAN_MAX_PRIORITY)) != 0) {
+        if (((byte) ((f14916d.f14903a.getInt(obj, (-4) & j10) >>> ((int) ((j10 & 3) << 3))) & SetSpanOperation.SPAN_MAX_PRIORITY)) != 0) {
             return true;
         }
         return false;

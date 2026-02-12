@@ -31,22 +31,22 @@ public final class i implements gn.b, Parcelable {
     public static final Parcelable.Creator<i> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final nq.g f40750d;
+    private final nq.g f40751d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f40751e;
+    private final List f40752e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final jq.a f40752i;
+    private final jq.a f40753i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Function0 f40753o;
+    private final Function0 f40754o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Function0 f40754p;
+    private final Function0 f40755p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final gn.c0 f40755q;
+    private final gn.c0 f40756q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -74,7 +74,7 @@ public final class i implements gn.b, Parcelable {
     public /* synthetic */ class b extends FunctionReferenceImpl implements Function3 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f40756d = new b();
+        public static final b f40757d = new b();
 
         public b() {
             super(3, dq.b.class, "inflate", "inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/withpersona/sdk2/inquiry/shared/databinding/Pi2GenericUiStepScreenBinding;", 0);
@@ -95,78 +95,78 @@ public final class i implements gn.b, Parcelable {
     public static final class c implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ nq.g f40757d;
+        final /* synthetic */ nq.g f40758d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Function2 f40758e;
+        final /* synthetic */ Function2 f40759e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ boolean f40759i;
+        final /* synthetic */ boolean f40760i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ Function4 f40760o;
+        final /* synthetic */ Function4 f40761o;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements gn.k {
 
             /* renamed from: b  reason: collision with root package name */
-            final /* synthetic */ nq.g f40761b;
+            final /* synthetic */ nq.g f40762b;
 
             /* renamed from: c  reason: collision with root package name */
-            final /* synthetic */ dq.b f40762c;
+            final /* synthetic */ dq.b f40763c;
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Function4 f40763d;
+            final /* synthetic */ Function4 f40764d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ nq.h f40764e;
+            final /* synthetic */ nq.h f40765e;
 
             public a(nq.g gVar, dq.b bVar, Function4 function4, nq.h hVar) {
-                this.f40761b = gVar;
-                this.f40762c = bVar;
-                this.f40763d = function4;
-                this.f40764e = hVar;
+                this.f40762b = gVar;
+                this.f40763c = bVar;
+                this.f40764d = function4;
+                this.f40765e = hVar;
             }
 
             @Override // gn.k
             public final void a(Object rendering, gn.a0 viewEnvironment) {
                 Intrinsics.checkNotNullParameter(rendering, "rendering");
                 Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-                Integer d10 = this.f40761b.d();
+                Integer d10 = this.f40762b.d();
                 if (d10 != null) {
-                    dq.b bVar = this.f40762c;
+                    dq.b bVar = this.f40763c;
                     int intValue = d10.intValue();
                     bVar.getRoot().setBackgroundColor(intValue);
                     kq.c.a(viewEnvironment, intValue);
                 }
-                nq.g gVar = this.f40761b;
-                Context context = this.f40762c.getRoot().getContext();
+                nq.g gVar = this.f40762b;
+                Context context = this.f40763c.getRoot().getContext();
                 Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
                 Drawable a10 = gVar.a(context);
                 if (a10 != null) {
-                    dq.b bVar2 = this.f40762c;
+                    dq.b bVar2 = this.f40763c;
                     bVar2.getRoot().setBackground(a10);
-                    bVar2.f21851d.setBackgroundColor(0);
+                    bVar2.f21852d.setBackgroundColor(0);
                 }
-                Function4 function4 = this.f40763d;
-                dq.b bVar3 = this.f40762c;
+                Function4 function4 = this.f40764d;
+                dq.b bVar3 = this.f40763c;
                 Intrinsics.checkNotNull(bVar3);
-                function4.invoke(bVar3, rendering, viewEnvironment, this.f40764e.c().a());
+                function4.invoke(bVar3, rendering, viewEnvironment, this.f40765e.c().a());
             }
         }
 
         public c(nq.g gVar, Function2 function2, boolean z10, Function4 function4) {
-            this.f40757d = gVar;
-            this.f40758e = function2;
-            this.f40759i = z10;
-            this.f40760o = function4;
+            this.f40758d = gVar;
+            this.f40759e = function2;
+            this.f40760i = z10;
+            this.f40761o = function4;
         }
 
         @Override // kotlin.jvm.functions.Function1
         /* renamed from: a */
         public final gn.k invoke(dq.b binding) {
             Intrinsics.checkNotNullParameter(binding, "binding");
-            return new a(this.f40757d, binding, this.f40760o, nq.m.f38354a.l(binding, this.f40757d, this.f40758e, this.f40759i));
+            return new a(this.f40758d, binding, this.f40761o, nq.m.f38355a.l(binding, this.f40758d, this.f40759e, this.f40760i));
         }
     }
 
@@ -187,7 +187,7 @@ public final class i implements gn.b, Parcelable {
         @Override // kotlin.jvm.functions.Function4
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
             a((dq.b) obj, (i) obj2, (gn.a0) obj3, (Map) obj4);
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
     }
 
@@ -197,12 +197,12 @@ public final class i implements gn.b, Parcelable {
         Intrinsics.checkNotNullParameter(navigationState, "navigationState");
         Intrinsics.checkNotNullParameter(onBack, "onBack");
         Intrinsics.checkNotNullParameter(onCancel, "onCancel");
-        this.f40750d = uiScreen;
-        this.f40751e = componentNamesToActions;
-        this.f40752i = navigationState;
-        this.f40753o = onBack;
-        this.f40754p = onCancel;
-        nq.m mVar = nq.m.f38354a;
+        this.f40751d = uiScreen;
+        this.f40752e = componentNamesToActions;
+        this.f40753i = navigationState;
+        this.f40754o = onBack;
+        this.f40755p = onCancel;
+        nq.m mVar = nq.m.f38355a;
         Function2 function2 = new Function2() { // from class: oo.e
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(Object obj, Object obj2) {
@@ -212,13 +212,13 @@ public final class i implements gn.b, Parcelable {
             }
         };
         d dVar = new d(this);
-        k.a aVar = gn.k.f25848a;
-        this.f40755q = new gn.z(Reflection.getOrCreateKotlinClass(i.class), b.f40756d, new c(uiScreen, function2, true, dVar));
+        k.a aVar = gn.k.f25849a;
+        this.f40756q = new gn.z(Reflection.getOrCreateKotlinClass(i.class), b.f40757d, new c(uiScreen, function2, true, dVar));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void g(dq.b bVar, final i iVar, gn.a0 a0Var, Map map) {
-        for (Pair pair : this.f40751e) {
+        for (Pair pair : this.f40752e) {
             final Function1 function1 = (Function1) pair.d();
             final nq.a aVar = (nq.a) map.get((String) pair.c());
             if (aVar != null) {
@@ -230,7 +230,7 @@ public final class i implements gn.b, Parcelable {
                 });
             }
         }
-        jq.a aVar2 = iVar.f40752i;
+        jq.a aVar2 = iVar.f40753i;
         Function0 function0 = new Function0() { // from class: oo.g
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -247,7 +247,7 @@ public final class i implements gn.b, Parcelable {
                 return k10;
             }
         };
-        Pi2NavigationBar navigationBar = bVar.f21852e;
+        Pi2NavigationBar navigationBar = bVar.f21853e;
         Intrinsics.checkNotNullExpressionValue(navigationBar, "navigationBar");
         ConstraintLayout root = bVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
@@ -261,14 +261,14 @@ public final class i implements gn.b, Parcelable {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit j(i iVar) {
-        iVar.f40753o.invoke();
-        return Unit.f31987a;
+        iVar.f40754o.invoke();
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit k(i iVar) {
-        iVar.f40754p.invoke();
-        return Unit.f31987a;
+        iVar.f40755p.invoke();
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -278,12 +278,12 @@ public final class i implements gn.b, Parcelable {
         ConstraintLayout root = binding.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         lq.f.d(root, false, false, false, false, 15, null);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @Override // gn.b
     public gn.c0 a() {
-        return this.f40755q;
+        return this.f40756q;
     }
 
     @Override // android.os.Parcelable
@@ -294,14 +294,14 @@ public final class i implements gn.b, Parcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeParcelable(this.f40750d, i10);
-        List<Serializable> list = this.f40751e;
+        dest.writeParcelable(this.f40751d, i10);
+        List<Serializable> list = this.f40752e;
         dest.writeInt(list.size());
         for (Serializable serializable : list) {
             dest.writeSerializable(serializable);
         }
-        dest.writeParcelable(this.f40752i, i10);
-        dest.writeSerializable((Serializable) this.f40753o);
-        dest.writeSerializable((Serializable) this.f40754p);
+        dest.writeParcelable(this.f40753i, i10);
+        dest.writeSerializable((Serializable) this.f40754o);
+        dest.writeSerializable((Serializable) this.f40755p);
     }
 }

@@ -7,20 +7,20 @@ import kotlin.jvm.functions.Function0;
 public class q2 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final t2 f51130d;
+    private final t2 f51131d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function0 f51131e;
+    private final Function0 f51132e;
 
     public q2(t2 t2Var, Function0 function0) {
-        this.f51130d = t2Var;
-        this.f51131e = function0;
+        this.f51131d = t2Var;
+        this.f51132e = function0;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         List f10;
-        f10 = t2.f(this.f51130d, this.f51131e);
+        f10 = t2.f(this.f51131d, this.f51132e);
         return f10;
     }
 }

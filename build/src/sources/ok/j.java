@@ -3,18 +3,18 @@ package ok;
 public abstract class j extends kk.b {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final byte[] f40197d = new byte[0];
+    private static final byte[] f40198d = new byte[0];
 
     /* renamed from: b  reason: collision with root package name */
-    private byte[] f40198b;
+    private byte[] f40199b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int[] f40199c;
+    private final int[] f40200c;
 
     public j(kk.i iVar) {
         super(iVar);
-        this.f40198b = f40197d;
-        this.f40199c = new int[32];
+        this.f40199b = f40198d;
+        this.f40200c = new int[32];
     }
 
     private static int g(int[] iArr) {
@@ -66,11 +66,11 @@ public abstract class j extends kk.b {
     }
 
     private void h(int i10) {
-        if (this.f40198b.length < i10) {
-            this.f40198b = new byte[i10];
+        if (this.f40199b.length < i10) {
+            this.f40199b = new byte[i10];
         }
         for (int i11 = 0; i11 < 32; i11++) {
-            this.f40199c[i11] = 0;
+            this.f40200c[i11] = 0;
         }
     }
 
@@ -81,9 +81,9 @@ public abstract class j extends kk.b {
         int a10 = e10.a();
         b bVar = new b(d10, a10);
         h(d10);
-        int[] iArr = this.f40199c;
+        int[] iArr = this.f40200c;
         for (int i10 = 1; i10 < 5; i10++) {
-            byte[] c10 = e10.c((a10 * i10) / 5, this.f40198b);
+            byte[] c10 = e10.c((a10 * i10) / 5, this.f40199b);
             int i11 = (d10 * 4) / 5;
             for (int i12 = d10 / 5; i12 < i11; i12++) {
                 int i13 = (c10[i12] & 255) >> 3;
@@ -113,8 +113,8 @@ public abstract class j extends kk.b {
             aVar = new a(d10);
         }
         h(d10);
-        byte[] c10 = e10.c(i10, this.f40198b);
-        int[] iArr = this.f40199c;
+        byte[] c10 = e10.c(i10, this.f40199b);
+        int[] iArr = this.f40200c;
         for (int i11 = 0; i11 < d10; i11++) {
             int i12 = (c10[i11] & 255) >> 3;
             iArr[i12] = iArr[i12] + 1;

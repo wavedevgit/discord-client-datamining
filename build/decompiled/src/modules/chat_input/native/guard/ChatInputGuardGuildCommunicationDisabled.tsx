@@ -29,17 +29,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var3 = var3.jsx;
-    var _closure1_slot4 = var3;
+    var8 = var3.jsx;
+    var _closure1_slot4 = var8;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var7 = var3.ClockWarningIcon;
+    var3 = {};
+    var3 = var8.bind(var0)(var7, var3);
+    var _closure1_slot5 = var3;
     var3 = var6.memo;
     var1 = function arg0() {
-        _fun91263: for (var _fun91263_ip = 0;;) switch (_fun91263_ip) {
+        _fun89975: for (var _fun89975_ip = 0;;) switch (_fun89975_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.guildMember;
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
-                var1 = 3;
+                var1 = 4;
                 var1 = var3[var1];
                 var3 = undefined;
                 var2 = var2.bind(var3)(var1);
@@ -48,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.communicationDisabledUntil;
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun91263_ip = 90;
-                    continue _fun91263
+                    _fun89975_ip = 90;
+                    continue _fun89975
                 }
             case 57:
                 var0 = global;
@@ -64,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var2;
                 var0 = new var14[var0](var13, var12);
                 var4 = var0 instanceof Object ? var0 : var1;
-                _fun91263_ip = 118;
-                continue _fun91263;
+                _fun89975_ip = 118;
+                continue _fun89975;
             case 90:
                 var0 = global;
                 var0 = var0.Date;
@@ -82,20 +89,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot4;
                 var1 = _closure1_slot1;
                 var10 = _closure1_slot2;
-                var0 = 4;
+                var0 = 5;
                 var0 = var10[var0];
                 var1 = var1.bind(var3)(var0);
                 var0 = {};
                 var5 = 'simple-action';
                 var0.type = var5;
-                var6 = _closure1_slot0;
-                var5 = 5;
-                var5 = var10[var5];
-                var5 = var6.bind(var3)(var5);
-                var7 = var5.ClockWarningIcon;
-                var5 = {};
-                var5 = var2.bind(var3)(var7, var5);
+                var5 = _closure1_slot5;
                 var0.icon = var5;
+                var6 = _closure1_slot0;
                 var5 = 6;
                 var7 = var10[var5];
                 var7 = var6.bind(var3)(var7);
@@ -134,4 +136,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1685, 33, 11838, 11825, 10151, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1685, 33, 8704, 11603, 11582, 1234, 2]);

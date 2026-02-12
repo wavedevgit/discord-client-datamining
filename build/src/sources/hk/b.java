@@ -4,23 +4,23 @@ public abstract class b {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static com.google.android.gms.common.d[] a(gk.d dVar) {
         if (dVar.d()) {
-            return wj.l.f52797a;
+            return wj.l.f52798a;
         }
         switch (dVar.h()) {
             case 2:
-                return new com.google.android.gms.common.d[]{wj.l.f52803g};
+                return new com.google.android.gms.common.d[]{wj.l.f52804g};
             case 3:
-                return new com.google.android.gms.common.d[]{wj.l.f52805i};
+                return new com.google.android.gms.common.d[]{wj.l.f52806i};
             case 4:
-                return new com.google.android.gms.common.d[]{wj.l.f52806j};
+                return new com.google.android.gms.common.d[]{wj.l.f52807j};
             case 5:
-                return new com.google.android.gms.common.d[]{wj.l.f52807k};
+                return new com.google.android.gms.common.d[]{wj.l.f52808k};
             case 6:
             case 7:
             case 8:
-                return new com.google.android.gms.common.d[]{wj.l.f52804h};
+                return new com.google.android.gms.common.d[]{wj.l.f52805h};
             default:
-                return new com.google.android.gms.common.d[]{wj.l.f52802f};
+                return new com.google.android.gms.common.d[]{wj.l.f52803f};
         }
     }
 }

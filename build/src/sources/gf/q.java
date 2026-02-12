@@ -5,73 +5,73 @@ import ff.a;
 public abstract class q {
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.google.android.gms.common.d[] f25654a;
+    private final com.google.android.gms.common.d[] f25655a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f25655b;
+    private final boolean f25656b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f25656c;
+    private final int f25657c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private m f25657a;
+        private m f25658a;
 
         /* renamed from: c  reason: collision with root package name */
-        private com.google.android.gms.common.d[] f25659c;
+        private com.google.android.gms.common.d[] f25660c;
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f25658b = true;
+        private boolean f25659b = true;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f25660d = 0;
+        private int f25661d = 0;
 
         /* synthetic */ a(w0 w0Var) {
         }
 
         public q a() {
             boolean z10;
-            if (this.f25657a != null) {
+            if (this.f25658a != null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             hf.q.b(z10, "execute parameter required");
-            return new v0(this, this.f25659c, this.f25658b, this.f25660d);
+            return new v0(this, this.f25660c, this.f25659b, this.f25661d);
         }
 
         public a b(m mVar) {
-            this.f25657a = mVar;
+            this.f25658a = mVar;
             return this;
         }
 
         public a c(boolean z10) {
-            this.f25658b = z10;
+            this.f25659b = z10;
             return this;
         }
 
         public a d(com.google.android.gms.common.d... dVarArr) {
-            this.f25659c = dVarArr;
+            this.f25660c = dVarArr;
             return this;
         }
 
         public a e(int i10) {
-            this.f25660d = i10;
+            this.f25661d = i10;
             return this;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public q(com.google.android.gms.common.d[] dVarArr, boolean z10, int i10) {
-        this.f25654a = dVarArr;
+        this.f25655a = dVarArr;
         boolean z11 = false;
         if (dVarArr != null && z10) {
             z11 = true;
         }
-        this.f25655b = z11;
-        this.f25656c = i10;
+        this.f25656b = z11;
+        this.f25657c = i10;
     }
 
     public static a a() {
@@ -82,14 +82,14 @@ public abstract class q {
     public abstract void b(a.b bVar, zg.k kVar);
 
     public boolean c() {
-        return this.f25655b;
+        return this.f25656b;
     }
 
     public final int d() {
-        return this.f25656c;
+        return this.f25657c;
     }
 
     public final com.google.android.gms.common.d[] e() {
-        return this.f25654a;
+        return this.f25655a;
     }
 }

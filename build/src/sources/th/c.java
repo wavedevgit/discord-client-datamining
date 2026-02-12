@@ -6,10 +6,10 @@ import java.util.Arrays;
 public final class c implements d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f48789a;
+    private final float f48790a;
 
     public c(float f10) {
-        this.f48789a = f10;
+        this.f48790a = f10;
     }
 
     private static float b(RectF rectF) {
@@ -18,20 +18,20 @@ public final class c implements d {
 
     @Override // th.d
     public float a(RectF rectF) {
-        return u1.a.a(this.f48789a, 0.0f, b(rectF));
+        return u1.a.a(this.f48790a, 0.0f, b(rectF));
     }
 
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof c) && this.f48789a == ((c) obj).f48789a) {
+        if ((obj instanceof c) && this.f48790a == ((c) obj).f48790a) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return Arrays.hashCode(new Object[]{Float.valueOf(this.f48789a)});
+        return Arrays.hashCode(new Object[]{Float.valueOf(this.f48790a)});
     }
 }

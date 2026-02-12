@@ -10,16 +10,16 @@ import kotlinx.coroutines.flow.Flow;
 public interface o<OutputT> {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f23000a = a.f23001a;
+    public static final a f23001a = a.f23002a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ a f23001a = new a();
+        static final /* synthetic */ a f23002a = new a();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final KType f23002b = Reflection.typeOf(Void.class);
+        private static final KType f23003b = Reflection.typeOf(Void.class);
 
         private a() {
         }

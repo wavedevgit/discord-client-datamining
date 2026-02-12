@@ -5,29 +5,29 @@ import android.util.Size;
 public final class d {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final d f36102c = new d();
+    public static final d f36103c = new d();
 
     /* renamed from: a  reason: collision with root package name */
-    private Size f36103a;
+    private Size f36104a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f36104b;
+    private int f36105b;
 
     private d() {
-        this.f36103a = null;
-        this.f36104b = 0;
+        this.f36104a = null;
+        this.f36105b = 0;
     }
 
     public Size a() {
-        return this.f36103a;
+        return this.f36104a;
     }
 
     public int b() {
-        return this.f36104b;
+        return this.f36105b;
     }
 
     public d(Size size, int i10) {
-        this.f36103a = size;
-        this.f36104b = i10;
+        this.f36104a = size;
+        this.f36105b = i10;
     }
 }

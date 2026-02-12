@@ -22,25 +22,25 @@ import to.n1;
 public final class o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final jq.b f50848a;
+    private final jq.b f50849a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f50849a;
+        public static final /* synthetic */ int[] f50850a;
 
         static {
             int[] iArr = new int[to.c.values().length];
             try {
-                iArr[to.c.f48986d.ordinal()] = 1;
+                iArr[to.c.f48987d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[to.c.f48987e.ordinal()] = 2;
+                iArr[to.c.f48988e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f50849a = iArr;
+            f50850a = iArr;
         }
     }
 
@@ -48,14 +48,14 @@ public final class o {
     public static final class b implements c2 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ g3.a f50850d;
+        final /* synthetic */ g3.a f50851d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ n1.b f50851e;
+        final /* synthetic */ n1.b f50852e;
 
         b(g3.a aVar, n1.b bVar) {
-            this.f50850d = aVar;
-            this.f50851e = bVar;
+            this.f50851d = aVar;
+            this.f50852e = bVar;
         }
 
         @Override // pq.c2
@@ -63,7 +63,7 @@ public final class o {
         public InputSelectComponentStyle getStyles() {
             StepStyles.GovernmentIdStepInputSelectStyle inputSelectStyle;
             StepStyles.InputSelectStyleContainer base;
-            StepStyles.GovernmentIdStepStyle u10 = this.f50850d.u();
+            StepStyles.GovernmentIdStepStyle u10 = this.f50851d.u();
             if (u10 != null && (inputSelectStyle = u10.getInputSelectStyle()) != null && (base = inputSelectStyle.getBase()) != null) {
                 return base.getBase();
             }
@@ -72,7 +72,7 @@ public final class o {
 
         @Override // pq.c2
         public List b() {
-            List<e4> t10 = this.f50851e.t();
+            List<e4> t10 = this.f50852e.t();
             ArrayList arrayList = new ArrayList(CollectionsKt.w(t10, 10));
             for (e4 e4Var : t10) {
                 arrayList.add(new b4(e4Var.b(), e4Var.a()));
@@ -89,8 +89,8 @@ public final class o {
         public List f() {
             Object obj;
             List e10;
-            n1.b bVar = this.f50851e;
-            Iterator it = this.f50851e.t().iterator();
+            n1.b bVar = this.f50852e;
+            Iterator it = this.f50852e.t().iterator();
             while (true) {
                 if (it.hasNext()) {
                     obj = it.next();
@@ -119,18 +119,18 @@ public final class o {
     public static final class c implements c2 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ g3.a f50852d;
+        final /* synthetic */ g3.a f50853d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ List f50853e;
+        final /* synthetic */ List f50854e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ n1.b f50854i;
+        final /* synthetic */ n1.b f50855i;
 
         c(g3.a aVar, List list, n1.b bVar) {
-            this.f50852d = aVar;
-            this.f50853e = list;
-            this.f50854i = bVar;
+            this.f50853d = aVar;
+            this.f50854e = list;
+            this.f50855i = bVar;
         }
 
         @Override // pq.c2
@@ -138,7 +138,7 @@ public final class o {
         public InputSelectComponentStyle getStyles() {
             StepStyles.GovernmentIdStepInputSelectStyle inputSelectStyle;
             StepStyles.InputSelectStyleContainer base;
-            StepStyles.GovernmentIdStepStyle u10 = this.f50852d.u();
+            StepStyles.GovernmentIdStepStyle u10 = this.f50853d.u();
             if (u10 != null && (inputSelectStyle = u10.getInputSelectStyle()) != null && (base = inputSelectStyle.getBase()) != null) {
                 return base.getBase();
             }
@@ -147,7 +147,7 @@ public final class o {
 
         @Override // pq.c2
         public List b() {
-            return this.f50853e;
+            return this.f50854e;
         }
 
         @Override // pq.c2
@@ -157,9 +157,9 @@ public final class o {
 
         @Override // pq.c2
         public List f() {
-            n1.b bVar = this.f50854i;
+            n1.b bVar = this.f50855i;
             ArrayList arrayList = new ArrayList();
-            for (Object obj : this.f50853e) {
+            for (Object obj : this.f50854e) {
                 if (Intrinsics.areEqual(((b4) obj).a(), bVar.v())) {
                     arrayList.add(obj);
                 }
@@ -175,7 +175,7 @@ public final class o {
 
     public o(jq.b navigationStateManager) {
         Intrinsics.checkNotNullParameter(navigationStateManager, "navigationStateManager");
-        this.f50848a = navigationStateManager;
+        this.f50849a = navigationStateManager;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -192,7 +192,7 @@ public final class o {
             }
         }, 1, null);
         c11.d(c10);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -207,10 +207,10 @@ public final class o {
         }
         n1.b bVar2 = bVar;
         if (bVar2 == null) {
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
         action.e(n1.b.q(bVar2, null, null, null, 0, null, null, null, null, null, b4Var.a(), null, 1535, null));
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -226,7 +226,7 @@ public final class o {
             }
         }, 1, null);
         c11.d(c10);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -243,7 +243,7 @@ public final class o {
             aVar = null;
         }
         if (aVar == null) {
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
         if (aVar.s().size() == 1) {
             e4 e4Var = (e4) CollectionsKt.o0(aVar.s());
@@ -257,13 +257,13 @@ public final class o {
             str2 = null;
         }
         action.e(new n1.b(aVar.g(), aVar.l(), aVar.k(), aVar.j(), to.b4.v(action, true), aVar.f(), aVar.p(), new fo.v(null, null, null, 0, 15, null), aVar.s(), str, str2));
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit q(k.a aVar, bp.k kVar) {
         to.b4.L(aVar, kVar);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -279,14 +279,14 @@ public final class o {
             }
         }, 1, null);
         c11.d(c10);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit s(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        action.d(g3.b.C0673b.f49278a);
-        return Unit.f31987a;
+        action.d(g3.b.C0673b.f49279a);
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -303,7 +303,7 @@ public final class o {
             }
         }, 1, null);
         c11.d(c10);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -318,25 +318,25 @@ public final class o {
         }
         n1.b bVar2 = bVar;
         if (bVar2 == null) {
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
         action.e(n1.b.q(bVar2, null, null, null, 0, null, null, null, null, null, null, b4Var.a(), 1023, null));
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit w(c4 c4Var, n1.b bVar, k.a aVar, g3.a aVar2, bp.k kVar) {
         if (c4Var == null) {
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
         to.b4.Q(bVar, aVar, aVar2, null, c4Var, kVar, bVar.r(), false, c4Var.b(), -1, null, bVar.u(), 1152, null);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit x(k.a aVar, bp.k kVar) {
         to.b4.L(aVar, kVar);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -352,14 +352,14 @@ public final class o {
             }
         }, 1, null);
         c11.d(c10);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit z(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        action.d(g3.b.C0673b.f49278a);
-        return Unit.f31987a;
+        action.d(g3.b.C0673b.f49279a);
+        return Unit.f31988a;
     }
 
     public final w n(g3.a renderProps, n1.a renderState, final k.a context, final bp.k videoCaptureHelper) {
@@ -370,7 +370,7 @@ public final class o {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(videoCaptureHelper, "videoCaptureHelper");
         to.c r10 = renderState.r();
-        int[] iArr = a.f50849a;
+        int[] iArr = a.f50850a;
         int i10 = iArr[r10.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
@@ -391,7 +391,7 @@ public final class o {
         } else {
             E = renderProps.t().E();
         }
-        return new w(F, E, renderProps.u(), this.f50848a.b(), new Function0() { // from class: uo.b
+        return new w(F, E, renderProps.u(), this.f50849a.b(), new Function0() { // from class: uo.b
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit o10;

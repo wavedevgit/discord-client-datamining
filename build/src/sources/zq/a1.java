@@ -5,10 +5,10 @@ import zq.y0;
 public final class a1 implements y0.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final z0 f56582a;
+    private final z0 f56583a;
 
     a1(z0 z0Var) {
-        this.f56582a = z0Var;
+        this.f56583a = z0Var;
     }
 
     public static lr.h b(z0 z0Var) {
@@ -17,6 +17,6 @@ public final class a1 implements y0.a {
 
     @Override // zq.y0.a
     public y0 a(String str, String str2, String str3, String str4) {
-        return this.f56582a.b(str, str2, str3, str4);
+        return this.f56583a.b(str, str2, str3, str4);
     }
 }

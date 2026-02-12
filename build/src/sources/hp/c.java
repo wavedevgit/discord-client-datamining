@@ -7,7 +7,7 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static b f27642a;
+    private static b f27643a;
 
     public static final void a(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
@@ -16,19 +16,19 @@ public abstract class c {
 
     private static final synchronized b b(Context context) {
         synchronized (c.class) {
-            b bVar = f27642a;
+            b bVar = f27643a;
             if (bVar != null) {
                 return bVar;
             }
             b bVar2 = new b(context);
-            f27642a = bVar2;
+            f27643a = bVar2;
             return bVar2;
         }
     }
 
     public static final b c(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        b bVar = f27642a;
+        b bVar = f27643a;
         if (bVar == null) {
             return b(context);
         }

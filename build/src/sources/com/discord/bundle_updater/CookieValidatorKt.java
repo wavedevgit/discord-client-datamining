@@ -25,7 +25,7 @@ public final class CookieValidatorKt {
         }
         ArrayList arrayList = new ArrayList();
         for (String str : StringsKt.split$default(cookie, new String[]{"; "}, false, 0, 6, null)) {
-            Cookie c10 = Cookie.f40240j.c(HttpUrl.f40276k.d(url), str);
+            Cookie c10 = Cookie.f40241j.c(HttpUrl.f40277k.d(url), str);
             if (c10 != null) {
                 arrayList.add(c10);
             }

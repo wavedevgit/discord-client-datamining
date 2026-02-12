@@ -3,16 +3,16 @@ package qg;
 final class n0 extends e {
 
     /* renamed from: i  reason: collision with root package name */
-    private final p0 f44728i;
+    private final p0 f44729i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n0(p0 p0Var, int i10) {
         super(p0Var.size(), i10);
-        this.f44728i = p0Var;
+        this.f44729i = p0Var;
     }
 
     @Override // qg.e
     protected final Object a(int i10) {
-        return this.f44728i.get(i10);
+        return this.f44729i.get(i10);
     }
 }

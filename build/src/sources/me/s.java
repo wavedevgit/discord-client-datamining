@@ -12,16 +12,16 @@ import oe.w0;
 public final class s extends f {
 
     /* renamed from: e  reason: collision with root package name */
-    private RandomAccessFile f36418e;
+    private RandomAccessFile f36419e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Uri f36419f;
+    private Uri f36420f;
 
     /* renamed from: g  reason: collision with root package name */
-    private long f36420g;
+    private long f36421g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f36421h;
+    private boolean f36422h;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -56,7 +56,7 @@ public final class s extends f {
             return new RandomAccessFile((String) oe.a.e(uri.getPath()), "r");
         } catch (FileNotFoundException e10) {
             if (TextUtils.isEmpty(uri.getQuery()) && TextUtils.isEmpty(uri.getFragment())) {
-                throw new b(e10, (w0.f39037a < 21 || !a.b(e10.getCause())) ? 2005 : 2005);
+                throw new b(e10, (w0.f39038a < 21 || !a.b(e10.getCause())) ? 2005 : 2005);
             }
             throw new b(String.format("uri has query and/or fragment, which are not supported. Did you call Uri.parse() on a string containing '?' or '#'? Use Uri.fromFile(new File(path)) to avoid this. path=%s,query=%s,fragment=%s", uri.getPath(), uri.getQuery(), uri.getFragment()), e10, 1004);
         } catch (SecurityException e11) {
@@ -68,22 +68,22 @@ public final class s extends f {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public long b(com.google.android.exoplayer2.upstream.a aVar) {
-        Uri uri = aVar.f13982a;
-        this.f36419f = uri;
+        Uri uri = aVar.f13983a;
+        this.f36420f = uri;
         q(aVar);
         RandomAccessFile s10 = s(uri);
-        this.f36418e = s10;
+        this.f36419e = s10;
         try {
-            s10.seek(aVar.f13988g);
-            long j10 = aVar.f13989h;
+            s10.seek(aVar.f13989g);
+            long j10 = aVar.f13990h;
             if (j10 == -1) {
-                j10 = this.f36418e.length() - aVar.f13988g;
+                j10 = this.f36419e.length() - aVar.f13989g;
             }
-            this.f36420g = j10;
+            this.f36421g = j10;
             if (j10 >= 0) {
-                this.f36421h = true;
+                this.f36422h = true;
                 r(aVar);
-                return this.f36420g;
+                return this.f36421g;
             }
             throw new b(null, null, 2008);
         } catch (IOException e10) {
@@ -93,10 +93,10 @@ public final class s extends f {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public void close() {
-        this.f36419f = null;
+        this.f36420f = null;
         try {
             try {
-                RandomAccessFile randomAccessFile = this.f36418e;
+                RandomAccessFile randomAccessFile = this.f36419e;
                 if (randomAccessFile != null) {
                     randomAccessFile.close();
                 }
@@ -104,9 +104,9 @@ public final class s extends f {
                 throw new b(e10, 2000);
             }
         } finally {
-            this.f36418e = null;
-            if (this.f36421h) {
-                this.f36421h = false;
+            this.f36419e = null;
+            if (this.f36422h) {
+                this.f36422h = false;
                 p();
             }
         }
@@ -114,7 +114,7 @@ public final class s extends f {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public Uri m() {
-        return this.f36419f;
+        return this.f36420f;
     }
 
     @Override // me.j
@@ -122,13 +122,13 @@ public final class s extends f {
         if (i11 == 0) {
             return 0;
         }
-        if (this.f36420g == 0) {
+        if (this.f36421g == 0) {
             return -1;
         }
         try {
-            int read = ((RandomAccessFile) w0.j(this.f36418e)).read(bArr, i10, (int) Math.min(this.f36420g, i11));
+            int read = ((RandomAccessFile) w0.j(this.f36419e)).read(bArr, i10, (int) Math.min(this.f36421g, i11));
             if (read > 0) {
-                this.f36420g -= read;
+                this.f36421g -= read;
                 o(read);
             }
             return read;

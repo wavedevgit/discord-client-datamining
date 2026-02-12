@@ -6,41 +6,41 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f52395a;
+    public static final c f52396a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final int f52396b;
+    public static final int f52397b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static int f52397c;
+    private static int f52398c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static volatile b f52398d;
+    private static volatile b f52399d;
 
     static {
         c cVar = new c();
-        f52395a = cVar;
-        f52396b = cVar.b();
-        f52397c = 384;
+        f52396a = cVar;
+        f52397b = cVar.b();
+        f52398c = 384;
     }
 
     private c() {
     }
 
     public static final b a() {
-        if (f52398d == null) {
+        if (f52399d == null) {
             synchronized (c.class) {
                 try {
-                    if (f52398d == null) {
-                        f52398d = new b(f52397c, f52396b);
+                    if (f52399d == null) {
+                        f52399d = new b(f52398c, f52397b);
                     }
-                    Unit unit = Unit.f31987a;
+                    Unit unit = Unit.f31988a;
                 } catch (Throwable th2) {
                     throw th2;
                 }
             }
         }
-        b bVar = f52398d;
+        b bVar = f52399d;
         Intrinsics.checkNotNull(bVar);
         return bVar;
     }

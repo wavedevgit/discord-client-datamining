@@ -19,7 +19,7 @@ import androidx.appcompat.widget.l0;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class l extends h implements PopupWindow.OnDismissListener, AdapterView.OnItemClickListener, j, View.OnKeyListener {
-    private static final int G = f.g.f23388m;
+    private static final int G = f.g.f23389m;
     ViewTreeObserver A;
     private boolean B;
     private boolean C;
@@ -118,7 +118,7 @@ public final class l extends h implements PopupWindow.OnDismissListener, Adapter
         this.f1518r = i10;
         this.f1519s = i11;
         Resources resources = context.getResources();
-        this.f1517q = Math.max(resources.getDisplayMetrics().widthPixels / 2, resources.getDimensionPixelSize(f.d.f23312b));
+        this.f1517q = Math.max(resources.getDisplayMetrics().widthPixels / 2, resources.getDimensionPixelSize(f.d.f23313b));
         this.f1524x = view;
         this.f1520t = new l0(context, null, i10, i11);
         eVar.c(this, context);
@@ -162,7 +162,7 @@ public final class l extends h implements PopupWindow.OnDismissListener, Adapter
         ListView n10 = this.f1520t.n();
         n10.setOnKeyListener(this);
         if (this.F && this.f1514i.z() != null) {
-            FrameLayout frameLayout = (FrameLayout) LayoutInflater.from(this.f1513e).inflate(f.g.f23387l, (ViewGroup) n10, false);
+            FrameLayout frameLayout = (FrameLayout) LayoutInflater.from(this.f1513e).inflate(f.g.f23388l, (ViewGroup) n10, false);
             TextView textView = (TextView) frameLayout.findViewById(16908310);
             if (textView != null) {
                 textView.setText(this.f1514i.z());

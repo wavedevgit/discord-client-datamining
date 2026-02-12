@@ -26,22 +26,22 @@ import jc.b;
 public class m0 implements ic.d, jc.b, ic.c {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final yb.c f27876q = yb.c.b("proto");
+    private static final yb.c f27877q = yb.c.b("proto");
 
     /* renamed from: d  reason: collision with root package name */
-    private final t0 f27877d;
+    private final t0 f27878d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final kc.a f27878e;
+    private final kc.a f27879e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final kc.a f27879i;
+    private final kc.a f27880i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final e f27880o;
+    private final e f27881o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Provider f27881p;
+    private final Provider f27882p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -54,14 +54,14 @@ public class m0 implements ic.d, jc.b, ic.c {
     public static class c {
 
         /* renamed from: a  reason: collision with root package name */
-        final String f27882a;
+        final String f27883a;
 
         /* renamed from: b  reason: collision with root package name */
-        final String f27883b;
+        final String f27884b;
 
         private c(String str, String str2) {
-            this.f27882a = str;
-            this.f27883b = str2;
+            this.f27883a = str;
+            this.f27884b = str2;
         }
     }
 
@@ -73,11 +73,11 @@ public class m0 implements ic.d, jc.b, ic.c {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m0(kc.a aVar, kc.a aVar2, e eVar, t0 t0Var, Provider provider) {
-        this.f27877d = t0Var;
-        this.f27878e = aVar;
-        this.f27879i = aVar2;
-        this.f27880o = eVar;
-        this.f27881p = provider;
+        this.f27878d = t0Var;
+        this.f27879e = aVar;
+        this.f27880i = aVar2;
+        this.f27881o = eVar;
+        this.f27882p = provider;
     }
 
     static Object A2(Cursor cursor, b bVar) {
@@ -111,7 +111,7 @@ public class m0 implements ic.d, jc.b, ic.c {
         m0Var.v2(c0289a, map);
         c0289a.e(m0Var.c2());
         c0289a.d(m0Var.P1());
-        c0289a.c((String) m0Var.f27881p.get());
+        c0289a.c((String) m0Var.f27882p.get());
         return c0289a.b();
     }
 
@@ -133,7 +133,7 @@ public class m0 implements ic.d, jc.b, ic.c {
             return -1L;
         }
         long z12 = m0Var.z1(sQLiteDatabase, oVar);
-        int e10 = m0Var.f27880o.e();
+        int e10 = m0Var.f27881o.e();
         byte[] a10 = iVar.e().a();
         if (a10.length <= e10) {
             z10 = true;
@@ -251,7 +251,7 @@ public class m0 implements ic.d, jc.b, ic.c {
     }
 
     private dc.b P1() {
-        return dc.b.b().b(dc.e.c().b(B1()).c(e.f27859a.f()).a()).a();
+        return dc.b.b().b(dc.e.c().b(B1()).c(e.f27860a.f()).a()).a();
     }
 
     public static /* synthetic */ Object Q(long j10, ac.o oVar, SQLiteDatabase sQLiteDatabase) {
@@ -324,7 +324,7 @@ public class m0 implements ic.d, jc.b, ic.c {
     public static /* synthetic */ Object Z0(m0 m0Var, SQLiteDatabase sQLiteDatabase) {
         m0Var.getClass();
         sQLiteDatabase.compileStatement("DELETE FROM log_event_dropped").execute();
-        sQLiteDatabase.compileStatement("UPDATE global_log_event_state SET last_metrics_upload_ms=" + m0Var.f27878e.a()).execute();
+        sQLiteDatabase.compileStatement("UPDATE global_log_event_state SET last_metrics_upload_ms=" + m0Var.f27879e.a()).execute();
         return null;
     }
 
@@ -350,7 +350,7 @@ public class m0 implements ic.d, jc.b, ic.c {
     }
 
     private dc.f c2() {
-        final long a10 = this.f27878e.a();
+        final long a10 = this.f27879e.a();
         return (dc.f) g2(new b() { // from class: ic.c0
             @Override // ic.m0.b
             public final Object apply(Object obj) {
@@ -386,7 +386,7 @@ public class m0 implements ic.d, jc.b, ic.c {
     }
 
     private boolean l2() {
-        if (Y1() * a2() >= this.f27880o.f()) {
+        if (Y1() * a2() >= this.f27881o.f()) {
             return true;
         }
         return false;
@@ -399,7 +399,7 @@ public class m0 implements ic.d, jc.b, ic.c {
             if (map.containsKey(Long.valueOf(kVar.c()))) {
                 i.a l10 = kVar.b().l();
                 for (c cVar : (Set) map.get(Long.valueOf(kVar.c()))) {
-                    l10.c(cVar.f27882a, cVar.f27883b);
+                    l10.c(cVar.f27883a, cVar.f27884b);
                 }
                 listIterator.set(k.a(kVar.c(), kVar.d(), l10.d()));
             }
@@ -429,10 +429,10 @@ public class m0 implements ic.d, jc.b, ic.c {
 
     public static /* synthetic */ List p(m0 m0Var, ac.o oVar, SQLiteDatabase sQLiteDatabase) {
         yb.e[] values;
-        List o22 = m0Var.o2(sQLiteDatabase, oVar, m0Var.f27880o.d());
+        List o22 = m0Var.o2(sQLiteDatabase, oVar, m0Var.f27881o.d());
         for (yb.e eVar : yb.e.values()) {
             if (eVar != oVar.d()) {
-                int d10 = m0Var.f27880o.d() - o22.size();
+                int d10 = m0Var.f27881o.d() - o22.size();
                 if (d10 <= 0) {
                     break;
                 }
@@ -539,12 +539,12 @@ public class m0 implements ic.d, jc.b, ic.c {
     }
 
     private Object x2(d dVar, b bVar) {
-        long a10 = this.f27879i.a();
+        long a10 = this.f27880i.a();
         while (true) {
             try {
                 return dVar.a();
             } catch (SQLiteDatabaseLockedException e10) {
-                if (this.f27879i.a() >= this.f27880o.b() + a10) {
+                if (this.f27880i.a() >= this.f27881o.b() + a10) {
                     return bVar.apply(e10);
                 }
                 SystemClock.sleep(50L);
@@ -563,7 +563,7 @@ public class m0 implements ic.d, jc.b, ic.c {
 
     private static yb.c y2(String str) {
         if (str == null) {
-            return f27876q;
+            return f27877q;
         }
         return yb.c.b(str);
     }
@@ -629,7 +629,7 @@ public class m0 implements ic.d, jc.b, ic.c {
     }
 
     SQLiteDatabase E1() {
-        final t0 t0Var = this.f27877d;
+        final t0 t0Var = this.f27878d;
         Objects.requireNonNull(t0Var);
         return (SQLiteDatabase) x2(new d() { // from class: ic.e0
             @Override // ic.m0.d
@@ -718,7 +718,7 @@ public class m0 implements ic.d, jc.b, ic.c {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f27877d.close();
+        this.f27878d.close();
     }
 
     Object g2(b bVar) {
@@ -757,7 +757,7 @@ public class m0 implements ic.d, jc.b, ic.c {
 
     @Override // ic.d
     public int l() {
-        final long a10 = this.f27878e.a() - this.f27880o.c();
+        final long a10 = this.f27879e.a() - this.f27881o.c();
         return ((Integer) g2(new b() { // from class: ic.j0
             @Override // ic.m0.b
             public final Object apply(Object obj) {

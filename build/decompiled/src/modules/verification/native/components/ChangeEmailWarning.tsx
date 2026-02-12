@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var10 = metroImportDefault;
+    var11 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var10;
+    var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var3 = 2;
     var3 = var5[var3];
-    var3 = var10.bind(var0)(var3);
+    var3 = var11.bind(var0)(var3);
     var _closure1_slot6 = var3;
     var3 = 3;
     var3 = var5[var3];
@@ -46,60 +46,67 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 5;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var6 = var3.jsx;
-    var _closure1_slot9 = var6;
+    var7 = var3.jsx;
+    var _closure1_slot9 = var7;
     var3 = var3.jsxs;
     var _closure1_slot10 = var3;
     var3 = 6;
     var3 = var5[var3];
-    var7 = var4.bind(var0)(var3);
-    var6 = var7.createStyles;
+    var8 = var4.bind(var0)(var3);
+    var6 = var8.createStyles;
     var3 = {};
-    var8 = {
+    var9 = {
         'flex': 1,
         'padding': null,
         'alignItems': 'center',
         'justifyContent': 'center'
     };
-    var9 = 7;
-    var11 = var5[var9];
-    var11 = var10.bind(var0)(var11);
-    var11 = var11.spacing;
-    var11 = var11.PX_16;
-    var8.padding = var11;
-    var11 = 'center';
-    var3.container = var8;
-    var8 = {};
-    var12 = var5[var9];
-    var12 = var10.bind(var0)(var12);
+    var10 = 7;
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
     var12 = var12.spacing;
     var12 = var12.PX_16;
-    var8.marginTop = var12;
-    var3.title = var8;
-    var8 = {};
-    var12 = var5[var9];
-    var12 = var10.bind(var0)(var12);
+    var9.padding = var12;
+    var12 = 'center';
+    var3.container = var9;
+    var9 = {};
+    var13 = var5[var10];
+    var13 = var11.bind(var0)(var13);
+    var13 = var13.spacing;
+    var13 = var13.PX_16;
+    var9.marginTop = var13;
+    var3.title = var9;
+    var9 = {};
+    var13 = var5[var10];
+    var13 = var11.bind(var0)(var13);
+    var13 = var13.spacing;
+    var13 = var13.PX_8;
+    var9.marginTop = var13;
+    var9.textAlign = var12;
+    var3.body = var9;
+    var9 = {};
+    var12 = 'row';
+    var9.flexDirection = var12;
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
     var12 = var12.spacing;
     var12 = var12.PX_8;
-    var8.marginTop = var12;
-    var8.textAlign = var11;
-    var3.body = var8;
-    var8 = {};
-    var11 = 'row';
-    var8.flexDirection = var11;
-    var11 = var5[var9];
-    var11 = var10.bind(var0)(var11);
-    var11 = var11.spacing;
-    var11 = var11.PX_8;
-    var8.gap = var11;
-    var9 = var5[var9];
-    var9 = var10.bind(var0)(var9);
-    var9 = var9.spacing;
-    var9 = var9.PX_16;
-    var8.marginTop = var9;
-    var3.buttonContainer = var8;
-    var3 = var6.bind(var7)(var3);
+    var9.gap = var12;
+    var10 = var5[var10];
+    var10 = var11.bind(var0)(var10);
+    var10 = var10.spacing;
+    var10 = var10.PX_16;
+    var9.marginTop = var10;
+    var3.buttonContainer = var9;
+    var3 = var6.bind(var8)(var3);
     var _closure1_slot11 = var3;
+    var3 = 8;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.TrafficConeSpotIllustration;
+    var3 = {};
+    var3 = var7.bind(var0)(var6, var3);
+    var _closure1_slot12 = var3;
     var3 = 19;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -107,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/verification/native/components/ChangeEmailWarning.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun61006: for (var _fun61006_ip = 0;;) switch (_fun61006_ip) {
+        _fun63781: for (var _fun63781_ip = 0;;) switch (_fun63781_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.changeEmailReason;
@@ -117,13 +124,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var1.bind(var4)();
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
-                var1 = 8;
+                var1 = 9;
                 var1 = var3[var1];
                 var5 = var2.bind(var4)(var1);
                 var1 = var5.useNavigation;
                 var6 = var1.bind(var5)();
                 var _closure2_slot1 = var6;
-                var1 = 9;
+                var1 = 10;
                 var1 = var3[var1];
                 var5 = var2.bind(var4)(var1);
                 var3 = var5.useStateFromStores;
@@ -145,7 +152,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = function() { // Environment: var15
                     var3 = _closure1_slot1;
                     var5 = _closure1_slot2;
-                    var0 = 10;
+                    var0 = 11;
                     var2 = var5[var0];
                     var0 = undefined;
                     var7 = var3.bind(var0)(var2);
@@ -159,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure2_slot1;
                     var2 = var3.push;
                     var4 = _closure1_slot0;
-                    var1 = 11;
+                    var1 = 12;
                     var1 = var5[var1];
                     var1 = var4.bind(var0)(var1);
                     var1 = var1.VerificationModalScenes;
@@ -171,14 +178,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var1 = var0 == var1;
                 if (var1) {
-                    _fun61006_ip = 799;
-                    continue _fun61006
+                    _fun63781_ip = 777;
+                    continue _fun63781
                 }
             case 146:
                 var3 = _closure1_slot9;
                 var19 = _closure1_slot0;
                 var20 = _closure1_slot2;
-                var1 = 12;
+                var1 = 13;
                 var1 = var20[var1];
                 var1 = var19.bind(var4)(var1);
                 var2 = var1.RedesignCompat;
@@ -193,12 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = {};
                 var10 = var12.container;
                 var7.style = var10;
-                var10 = 13;
-                var10 = var20[var10];
-                var10 = var19.bind(var4)(var10);
-                var11 = var10.TrafficConeSpotIllustration;
-                var10 = {};
-                var11 = var3.bind(var4)(var11, var10);
+                var11 = _closure1_slot12;
                 var10 = new Array(4);
                 var10[0] = var11;
                 var11 = 14;
@@ -338,10 +340,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3.bind(var4)(var6, var5);
                 var1.children = var5;
                 var0 = var3.bind(var4)(var2, var1);
-            case 799:
+            case 777:
                 return var0;
         }
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 7524, 660, 33, 1297, 671, 1469, 566, 795, 670, 4907, 6023, 3938, 1234, 5393, 4090, 7520, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 7872, 660, 33, 1297, 671, 6030, 1469, 566, 795, 670, 4875, 3938, 1234, 5384, 4090, 7793, 2]);

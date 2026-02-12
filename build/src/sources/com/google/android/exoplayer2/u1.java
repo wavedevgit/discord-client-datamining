@@ -7,10 +7,10 @@ import com.google.android.exoplayer2.u1;
 public abstract class u1 implements g {
 
     /* renamed from: d  reason: collision with root package name */
-    static final String f13827d = oe.w0.B0(0);
+    static final String f13828d = oe.w0.B0(0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final g.a f13828e = new g.a() { // from class: mc.q0
+    public static final g.a f13829e = new g.a() { // from class: mc.q0
         @Override // com.google.android.exoplayer2.g.a
         public final com.google.android.exoplayer2.g a(Bundle bundle) {
             u1 b10;
@@ -21,19 +21,19 @@ public abstract class u1 implements g {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static u1 b(Bundle bundle) {
-        int i10 = bundle.getInt(f13827d, -1);
+        int i10 = bundle.getInt(f13828d, -1);
         if (i10 != 0) {
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 == 3) {
-                        return (u1) a2.f12638r.a(bundle);
+                        return (u1) a2.f12639r.a(bundle);
                     }
                     throw new IllegalArgumentException("Unknown RatingType: " + i10);
                 }
-                return (u1) x1.f14212r.a(bundle);
+                return (u1) x1.f14213r.a(bundle);
             }
-            return (u1) p1.f13372p.a(bundle);
+            return (u1) p1.f13373p.a(bundle);
         }
-        return (u1) u0.f13824r.a(bundle);
+        return (u1) u0.f13825r.a(bundle);
     }
 }

@@ -9,20 +9,20 @@ import java.util.RandomAccess;
 public class g1 extends AbstractList implements x, RandomAccess {
 
     /* renamed from: d  reason: collision with root package name */
-    private final x f31038d;
+    private final x f31039d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements ListIterator {
 
         /* renamed from: d  reason: collision with root package name */
-        ListIterator f31039d;
+        ListIterator f31040d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ int f31040e;
+        final /* synthetic */ int f31041e;
 
         a(int i10) {
-            this.f31040e = i10;
-            this.f31039d = g1.this.f31038d.listIterator(i10);
+            this.f31041e = i10;
+            this.f31040d = g1.this.f31039d.listIterator(i10);
         }
 
         @Override // java.util.ListIterator
@@ -34,13 +34,13 @@ public class g1 extends AbstractList implements x, RandomAccess {
         @Override // java.util.ListIterator, java.util.Iterator
         /* renamed from: b */
         public String next() {
-            return (String) this.f31039d.next();
+            return (String) this.f31040d.next();
         }
 
         @Override // java.util.ListIterator
         /* renamed from: c */
         public String previous() {
-            return (String) this.f31039d.previous();
+            return (String) this.f31040d.previous();
         }
 
         @Override // java.util.ListIterator
@@ -51,22 +51,22 @@ public class g1 extends AbstractList implements x, RandomAccess {
 
         @Override // java.util.ListIterator, java.util.Iterator
         public boolean hasNext() {
-            return this.f31039d.hasNext();
+            return this.f31040d.hasNext();
         }
 
         @Override // java.util.ListIterator
         public boolean hasPrevious() {
-            return this.f31039d.hasPrevious();
+            return this.f31040d.hasPrevious();
         }
 
         @Override // java.util.ListIterator
         public int nextIndex() {
-            return this.f31039d.nextIndex();
+            return this.f31040d.nextIndex();
         }
 
         @Override // java.util.ListIterator
         public int previousIndex() {
-            return this.f31039d.previousIndex();
+            return this.f31040d.previousIndex();
         }
 
         @Override // java.util.ListIterator, java.util.Iterator
@@ -79,21 +79,21 @@ public class g1 extends AbstractList implements x, RandomAccess {
     class b implements Iterator {
 
         /* renamed from: d  reason: collision with root package name */
-        Iterator f31042d;
+        Iterator f31043d;
 
         b() {
-            this.f31042d = g1.this.f31038d.iterator();
+            this.f31043d = g1.this.f31039d.iterator();
         }
 
         @Override // java.util.Iterator
         /* renamed from: a */
         public String next() {
-            return (String) this.f31042d.next();
+            return (String) this.f31043d.next();
         }
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            return this.f31042d.hasNext();
+            return this.f31043d.hasNext();
         }
 
         @Override // java.util.Iterator
@@ -103,7 +103,7 @@ public class g1 extends AbstractList implements x, RandomAccess {
     }
 
     public g1(x xVar) {
-        this.f31038d = xVar;
+        this.f31039d = xVar;
     }
 
     @Override // jk.x
@@ -114,12 +114,12 @@ public class g1 extends AbstractList implements x, RandomAccess {
     @Override // java.util.AbstractList, java.util.List
     /* renamed from: c */
     public String get(int i10) {
-        return (String) this.f31038d.get(i10);
+        return (String) this.f31039d.get(i10);
     }
 
     @Override // jk.x
     public List getUnderlyingElements() {
-        return this.f31038d.getUnderlyingElements();
+        return this.f31039d.getUnderlyingElements();
     }
 
     @Override // java.util.AbstractList, java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.List
@@ -134,7 +134,7 @@ public class g1 extends AbstractList implements x, RandomAccess {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public int size() {
-        return this.f31038d.size();
+        return this.f31039d.size();
     }
 
     @Override // jk.x

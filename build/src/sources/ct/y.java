@@ -14,17 +14,17 @@ public abstract class y {
                 c10 = y.c(v.this, ((Integer) obj).intValue(), (CoroutineContext.Element) obj2);
                 return Integer.valueOf(c10);
             }
-        })).intValue() == vVar.f21102i) {
+        })).intValue() == vVar.f21103i) {
             return;
         }
-        throw new IllegalStateException(("Flow invariant is violated:\n\t\tFlow was collected in " + vVar.f21101e + ",\n\t\tbut emission happened in " + coroutineContext + ".\n\t\tPlease refer to 'flow' documentation or use 'flowOn' instead").toString());
+        throw new IllegalStateException(("Flow invariant is violated:\n\t\tFlow was collected in " + vVar.f21102e + ",\n\t\tbut emission happened in " + coroutineContext + ".\n\t\tPlease refer to 'flow' documentation or use 'flowOn' instead").toString());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final int c(v vVar, int i10, CoroutineContext.Element element) {
         CoroutineContext.b key = element.getKey();
-        CoroutineContext.Element m10 = vVar.f21101e.m(key);
-        if (key != Job.f34996k) {
+        CoroutineContext.Element m10 = vVar.f21102e.m(key);
+        if (key != Job.f34997k) {
             if (element != m10) {
                 return Integer.MIN_VALUE;
             }

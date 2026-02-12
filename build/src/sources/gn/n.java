@@ -6,33 +6,33 @@ import kotlin.text.StringsKt;
 public final class n implements g {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f25854b;
+    private final Object f25855b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f25855c;
+    private final String f25856c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f25856d;
+    private final String f25857d;
 
     public n(Object wrapped, String name) {
         Intrinsics.checkNotNullParameter(wrapped, "wrapped");
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f25854b = wrapped;
-        this.f25855c = name;
+        this.f25855b = wrapped;
+        this.f25856c = name;
         if (!StringsKt.k0(name)) {
-            this.f25856d = g.f25810a.a(wrapped, name);
+            this.f25857d = g.f25811a.a(wrapped, name);
             return;
         }
         throw new IllegalArgumentException("name must not be blank.");
     }
 
     public final Object a() {
-        return this.f25854b;
+        return this.f25855b;
     }
 
     @Override // gn.g
     public String c() {
-        return this.f25856d;
+        return this.f25857d;
     }
 
     public boolean equals(Object obj) {
@@ -43,14 +43,14 @@ public final class n implements g {
             return false;
         }
         n nVar = (n) obj;
-        if (Intrinsics.areEqual(this.f25854b, nVar.f25854b) && Intrinsics.areEqual(this.f25855c, nVar.f25855c)) {
+        if (Intrinsics.areEqual(this.f25855b, nVar.f25855b) && Intrinsics.areEqual(this.f25856c, nVar.f25856c)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f25854b.hashCode() * 31) + this.f25855c.hashCode();
+        return (this.f25855b.hashCode() * 31) + this.f25856c.hashCode();
     }
 
     public String toString() {

@@ -22,140 +22,140 @@ import wp.x0;
 public final class c implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f55088a;
+    private final ConstraintLayout f55089a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final TextView f55089b;
+    public final TextView f55090b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final CircularProgressIndicator f55090c;
+    public final CircularProgressIndicator f55091c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final ImageView f55091d;
+    public final ImageView f55092d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Camera2PreviewView f55092e;
+    public final Camera2PreviewView f55093e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final View f55093f;
+    public final View f55094f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final TextView f55094g;
+    public final TextView f55095g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final TextView f55095h;
+    public final TextView f55096h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final View f55096i;
+    public final View f55097i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final FrameLayout f55097j;
+    public final FrameLayout f55098j;
 
     /* renamed from: k  reason: collision with root package name */
-    public final TextView f55098k;
+    public final TextView f55099k;
 
     /* renamed from: l  reason: collision with root package name */
-    public final TextView f55099l;
+    public final TextView f55100l;
 
     /* renamed from: m  reason: collision with root package name */
-    public final ProgressBar f55100m;
+    public final ProgressBar f55101m;
 
     /* renamed from: n  reason: collision with root package name */
-    public final Pi2NavigationBar f55101n;
+    public final Pi2NavigationBar f55102n;
 
     /* renamed from: o  reason: collision with root package name */
-    public final ImageView f55102o;
+    public final ImageView f55103o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final Barrier f55103p;
+    public final Barrier f55104p;
 
     /* renamed from: q  reason: collision with root package name */
-    public final FrameLayout f55104q;
+    public final FrameLayout f55105q;
 
     /* renamed from: r  reason: collision with root package name */
-    public final PreviewView f55105r;
+    public final PreviewView f55106r;
 
     /* renamed from: s  reason: collision with root package name */
-    public final CircularProgressIndicator f55106s;
+    public final CircularProgressIndicator f55107s;
 
     /* renamed from: t  reason: collision with root package name */
-    public final TextView f55107t;
+    public final TextView f55108t;
 
     /* renamed from: u  reason: collision with root package name */
-    public final ConstraintLayout f55108u;
+    public final ConstraintLayout f55109u;
 
     /* renamed from: v  reason: collision with root package name */
-    public final View f55109v;
+    public final View f55110v;
 
     /* renamed from: w  reason: collision with root package name */
-    public final SelfieOverlayView f55110w;
+    public final SelfieOverlayView f55111w;
 
     /* renamed from: x  reason: collision with root package name */
-    public final TextView f55111x;
+    public final TextView f55112x;
 
     /* renamed from: y  reason: collision with root package name */
-    public final Space f55112y;
+    public final Space f55113y;
 
     /* renamed from: z  reason: collision with root package name */
-    public final ImageView f55113z;
+    public final ImageView f55114z;
 
     private c(ConstraintLayout constraintLayout, TextView textView, CircularProgressIndicator circularProgressIndicator, ImageView imageView, Camera2PreviewView camera2PreviewView, View view, TextView textView2, TextView textView3, View view2, FrameLayout frameLayout, TextView textView4, TextView textView5, ProgressBar progressBar, Pi2NavigationBar pi2NavigationBar, ImageView imageView2, Barrier barrier, FrameLayout frameLayout2, PreviewView previewView, CircularProgressIndicator circularProgressIndicator2, TextView textView6, ConstraintLayout constraintLayout2, View view3, SelfieOverlayView selfieOverlayView, TextView textView7, Space space, ImageView imageView3) {
-        this.f55088a = constraintLayout;
-        this.f55089b = textView;
-        this.f55090c = circularProgressIndicator;
-        this.f55091d = imageView;
-        this.f55092e = camera2PreviewView;
-        this.f55093f = view;
-        this.f55094g = textView2;
-        this.f55095h = textView3;
-        this.f55096i = view2;
-        this.f55097j = frameLayout;
-        this.f55098k = textView4;
-        this.f55099l = textView5;
-        this.f55100m = progressBar;
-        this.f55101n = pi2NavigationBar;
-        this.f55102o = imageView2;
-        this.f55103p = barrier;
-        this.f55104q = frameLayout2;
-        this.f55105r = previewView;
-        this.f55106s = circularProgressIndicator2;
-        this.f55107t = textView6;
-        this.f55108u = constraintLayout2;
-        this.f55109v = view3;
-        this.f55110w = selfieOverlayView;
-        this.f55111x = textView7;
-        this.f55112y = space;
-        this.f55113z = imageView3;
+        this.f55089a = constraintLayout;
+        this.f55090b = textView;
+        this.f55091c = circularProgressIndicator;
+        this.f55092d = imageView;
+        this.f55093e = camera2PreviewView;
+        this.f55094f = view;
+        this.f55095g = textView2;
+        this.f55096h = textView3;
+        this.f55097i = view2;
+        this.f55098j = frameLayout;
+        this.f55099k = textView4;
+        this.f55100l = textView5;
+        this.f55101m = progressBar;
+        this.f55102n = pi2NavigationBar;
+        this.f55103o = imageView2;
+        this.f55104p = barrier;
+        this.f55105q = frameLayout2;
+        this.f55106r = previewView;
+        this.f55107s = circularProgressIndicator2;
+        this.f55108t = textView6;
+        this.f55109u = constraintLayout2;
+        this.f55110v = view3;
+        this.f55111w = selfieOverlayView;
+        this.f55112x = textView7;
+        this.f55113y = space;
+        this.f55114z = imageView3;
     }
 
     public static c a(View view) {
         View a10;
         View a11;
-        int i10 = w0.f53474b;
+        int i10 = w0.f53475b;
         TextView textView = (TextView) e4.a.a(view, i10);
         if (textView != null) {
-            i10 = w0.f53476c;
+            i10 = w0.f53477c;
             CircularProgressIndicator circularProgressIndicator = (CircularProgressIndicator) e4.a.a(view, i10);
             if (circularProgressIndicator != null) {
-                i10 = w0.f53480g;
+                i10 = w0.f53481g;
                 ImageView imageView = (ImageView) e4.a.a(view, i10);
                 if (imageView != null) {
-                    i10 = w0.f53481h;
+                    i10 = w0.f53482h;
                     Camera2PreviewView camera2PreviewView = (Camera2PreviewView) e4.a.a(view, i10);
-                    if (camera2PreviewView != null && (a10 = e4.a.a(view, (i10 = w0.f53482i))) != null) {
-                        i10 = w0.f53483j;
+                    if (camera2PreviewView != null && (a10 = e4.a.a(view, (i10 = w0.f53483i))) != null) {
+                        i10 = w0.f53484j;
                         TextView textView2 = (TextView) e4.a.a(view, i10);
                         if (textView2 != null) {
-                            i10 = w0.f53487n;
+                            i10 = w0.f53488n;
                             TextView textView3 = (TextView) e4.a.a(view, i10);
-                            if (textView3 != null && (a11 = e4.a.a(view, (i10 = w0.f53488o))) != null) {
-                                i10 = w0.f53489p;
+                            if (textView3 != null && (a11 = e4.a.a(view, (i10 = w0.f53489o))) != null) {
+                                i10 = w0.f53490p;
                                 FrameLayout frameLayout = (FrameLayout) e4.a.a(view, i10);
                                 if (frameLayout != null) {
-                                    i10 = w0.f53494u;
+                                    i10 = w0.f53495u;
                                     TextView textView4 = (TextView) e4.a.a(view, i10);
                                     if (textView4 != null) {
-                                        i10 = w0.f53495v;
+                                        i10 = w0.f53496v;
                                         TextView textView5 = (TextView) e4.a.a(view, i10);
                                         if (textView5 != null) {
                                             i10 = w0.A;
@@ -195,7 +195,7 @@ public final class c implements ViewBinding {
                                                                                         i10 = w0.Z;
                                                                                         Space space = (Space) e4.a.a(view, i10);
                                                                                         if (space != null) {
-                                                                                            i10 = w0.f53473a0;
+                                                                                            i10 = w0.f53474a0;
                                                                                             ImageView imageView3 = (ImageView) e4.a.a(view, i10);
                                                                                             if (imageView3 != null) {
                                                                                                 return new c(constraintLayout, textView, circularProgressIndicator, imageView, camera2PreviewView, a10, textView2, textView3, a11, frameLayout, textView4, textView5, progressBar, pi2NavigationBar, imageView2, barrier, frameLayout2, previewView, circularProgressIndicator2, textView6, constraintLayout, a12, selfieOverlayView, textView7, space, imageView3);
@@ -229,7 +229,7 @@ public final class c implements ViewBinding {
     }
 
     public static c d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(x0.f53514c, viewGroup, false);
+        View inflate = layoutInflater.inflate(x0.f53515c, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -239,6 +239,6 @@ public final class c implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f55088a;
+        return this.f55089a;
     }
 }

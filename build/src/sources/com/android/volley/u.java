@@ -3,26 +3,26 @@ package com.android.volley;
 public class u extends Exception {
 
     /* renamed from: d  reason: collision with root package name */
-    public final k f8819d;
+    public final k f8820d;
 
     /* renamed from: e  reason: collision with root package name */
-    private long f8820e;
+    private long f8821e;
 
     public u() {
-        this.f8819d = null;
+        this.f8820d = null;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void a(long j10) {
-        this.f8820e = j10;
+        this.f8821e = j10;
     }
 
     public u(k kVar) {
-        this.f8819d = kVar;
+        this.f8820d = kVar;
     }
 
     public u(Throwable th2) {
         super(th2);
-        this.f8819d = null;
+        this.f8820d = null;
     }
 }

@@ -8,7 +8,7 @@ import java.util.Locale;
 class e implements t, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    static final e f37318d = new e();
+    static final e f37319d = new e();
     private static final long serialVersionUID = -4211396220263977858L;
 
     e() {
@@ -55,7 +55,7 @@ class e implements t, Serializable {
     @Override // cu.t
     /* renamed from: h */
     public c l(CharSequence charSequence, ParsePosition parsePosition, bu.d dVar) {
-        return c.s(charSequence, parsePosition, (Locale) dVar.b(cu.a.f21110c, Locale.ROOT), !((cu.g) dVar.b(cu.a.f21113f, cu.g.SMART)).e());
+        return c.s(charSequence, parsePosition, (Locale) dVar.b(cu.a.f21111c, Locale.ROOT), !((cu.g) dVar.b(cu.a.f21114f, cu.g.SMART)).e());
     }
 
     @Override // bu.p
@@ -69,11 +69,11 @@ class e implements t, Serializable {
     }
 
     protected Object readResolve() {
-        return f37318d;
+        return f37319d;
     }
 
     @Override // cu.t
     public void w(bu.o oVar, Appendable appendable, bu.d dVar) {
-        appendable.append(((c) oVar.k(this)).i((Locale) dVar.b(cu.a.f21110c, Locale.ROOT)));
+        appendable.append(((c) oVar.k(this)).i((Locale) dVar.b(cu.a.f21111c, Locale.ROOT)));
     }
 }

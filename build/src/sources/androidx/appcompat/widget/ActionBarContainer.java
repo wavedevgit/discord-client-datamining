@@ -51,14 +51,14 @@ public class ActionBarContainer extends FrameLayout {
     public ActionBarContainer(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         setBackground(new b(this));
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.j.f23416a);
-        this.f1533p = obtainStyledAttributes.getDrawable(f.j.f23421b);
-        this.f1534q = obtainStyledAttributes.getDrawable(f.j.f23431d);
-        this.f1538u = obtainStyledAttributes.getDimensionPixelSize(f.j.f23461j, -1);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.j.f23417a);
+        this.f1533p = obtainStyledAttributes.getDrawable(f.j.f23422b);
+        this.f1534q = obtainStyledAttributes.getDrawable(f.j.f23432d);
+        this.f1538u = obtainStyledAttributes.getDimensionPixelSize(f.j.f23462j, -1);
         boolean z10 = true;
         if (getId() == f.f.I) {
             this.f1536s = true;
-            this.f1535r = obtainStyledAttributes.getDrawable(f.j.f23426c);
+            this.f1535r = obtainStyledAttributes.getDrawable(f.j.f23427c);
         }
         obtainStyledAttributes.recycle();
         if (!this.f1536s ? this.f1533p != null || this.f1534q != null : this.f1535r != null) {
@@ -120,8 +120,8 @@ public class ActionBarContainer extends FrameLayout {
     @Override // android.view.View
     public void onFinishInflate() {
         super.onFinishInflate();
-        this.f1531i = findViewById(f.f.f23350a);
-        this.f1532o = findViewById(f.f.f23356g);
+        this.f1531i = findViewById(f.f.f23351a);
+        this.f1532o = findViewById(f.f.f23357g);
     }
 
     @Override // android.view.View

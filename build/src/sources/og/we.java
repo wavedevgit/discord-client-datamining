@@ -8,14 +8,14 @@ public enum we implements n2 {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f39779d;
+    private final int f39780d;
 
     we(int i10) {
-        this.f39779d = i10;
+        this.f39780d = i10;
     }
 
     @Override // og.n2
     public final int zza() {
-        return this.f39779d;
+        return this.f39780d;
     }
 }

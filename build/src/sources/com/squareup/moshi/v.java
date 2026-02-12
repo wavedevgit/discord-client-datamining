@@ -8,13 +8,13 @@ import java.util.Set;
 final class v extends h {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final h.e f18892c = new a();
+    public static final h.e f18893c = new a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f18893a;
+    private final h f18894a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f18894b;
+    private final h f18895b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements h.e {
@@ -33,8 +33,8 @@ final class v extends h {
     }
 
     v(w wVar, Type type, Type type2) {
-        this.f18893a = wVar.d(type);
-        this.f18894b = wVar.d(type2);
+        this.f18894a = wVar.d(type);
+        this.f18895b = wVar.d(type2);
     }
 
     @Override // com.squareup.moshi.h
@@ -44,8 +44,8 @@ final class v extends h {
         mVar.u();
         while (mVar.hasNext()) {
             mVar.z();
-            Object fromJson = this.f18893a.fromJson(mVar);
-            Object fromJson2 = this.f18894b.fromJson(mVar);
+            Object fromJson = this.f18894a.fromJson(mVar);
+            Object fromJson2 = this.f18895b.fromJson(mVar);
             Object put = uVar.put(fromJson, fromJson2);
             if (put != null) {
                 throw new j("Map key '" + fromJson + "' has multiple values at path " + mVar.t() + ": " + put + " and " + fromJson2);
@@ -62,8 +62,8 @@ final class v extends h {
         for (Map.Entry entry : map.entrySet()) {
             if (entry.getKey() != null) {
                 tVar.C0();
-                this.f18893a.toJson(tVar, entry.getKey());
-                this.f18894b.toJson(tVar, entry.getValue());
+                this.f18894a.toJson(tVar, entry.getKey());
+                this.f18895b.toJson(tVar, entry.getValue());
             } else {
                 throw new j("Map key is null at " + tVar.t());
             }
@@ -72,6 +72,6 @@ final class v extends h {
     }
 
     public String toString() {
-        return "JsonAdapter(" + this.f18893a + "=" + this.f18894b + ")";
+        return "JsonAdapter(" + this.f18894a + "=" + this.f18895b + ")";
     }
 }

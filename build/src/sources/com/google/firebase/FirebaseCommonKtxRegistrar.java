@@ -24,7 +24,7 @@ public final class FirebaseCommonKtxRegistrar implements ComponentRegistrar {
     public static final class a implements g {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final a f17155a = new a();
+        public static final a f17156a = new a();
 
         @Override // xi.g
         /* renamed from: b */
@@ -39,7 +39,7 @@ public final class FirebaseCommonKtxRegistrar implements ComponentRegistrar {
     public static final class b implements g {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f17156a = new b();
+        public static final b f17157a = new b();
 
         @Override // xi.g
         /* renamed from: b */
@@ -54,7 +54,7 @@ public final class FirebaseCommonKtxRegistrar implements ComponentRegistrar {
     public static final class c implements g {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final c f17157a = new c();
+        public static final c f17158a = new c();
 
         @Override // xi.g
         /* renamed from: b */
@@ -69,7 +69,7 @@ public final class FirebaseCommonKtxRegistrar implements ComponentRegistrar {
     public static final class d implements g {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final d f17158a = new d();
+        public static final d f17159a = new d();
 
         @Override // xi.g
         /* renamed from: b */
@@ -83,13 +83,13 @@ public final class FirebaseCommonKtxRegistrar implements ComponentRegistrar {
     @Override // com.google.firebase.components.ComponentRegistrar
     @NotNull
     public List<xi.c> getComponents() {
-        xi.c d10 = xi.c.e(d0.a(wi.a.class, CoroutineDispatcher.class)).b(q.k(d0.a(wi.a.class, Executor.class))).e(a.f17155a).d();
+        xi.c d10 = xi.c.e(d0.a(wi.a.class, CoroutineDispatcher.class)).b(q.k(d0.a(wi.a.class, Executor.class))).e(a.f17156a).d();
         Intrinsics.checkNotNullExpressionValue(d10, "builder(Qualified.qualif…cher()\n    }\n    .build()");
-        xi.c d11 = xi.c.e(d0.a(wi.c.class, CoroutineDispatcher.class)).b(q.k(d0.a(wi.c.class, Executor.class))).e(b.f17156a).d();
+        xi.c d11 = xi.c.e(d0.a(wi.c.class, CoroutineDispatcher.class)).b(q.k(d0.a(wi.c.class, Executor.class))).e(b.f17157a).d();
         Intrinsics.checkNotNullExpressionValue(d11, "builder(Qualified.qualif…cher()\n    }\n    .build()");
-        xi.c d12 = xi.c.e(d0.a(wi.b.class, CoroutineDispatcher.class)).b(q.k(d0.a(wi.b.class, Executor.class))).e(c.f17157a).d();
+        xi.c d12 = xi.c.e(d0.a(wi.b.class, CoroutineDispatcher.class)).b(q.k(d0.a(wi.b.class, Executor.class))).e(c.f17158a).d();
         Intrinsics.checkNotNullExpressionValue(d12, "builder(Qualified.qualif…cher()\n    }\n    .build()");
-        xi.c d13 = xi.c.e(d0.a(wi.d.class, CoroutineDispatcher.class)).b(q.k(d0.a(wi.d.class, Executor.class))).e(d.f17158a).d();
+        xi.c d13 = xi.c.e(d0.a(wi.d.class, CoroutineDispatcher.class)).b(q.k(d0.a(wi.d.class, Executor.class))).e(d.f17159a).d();
         Intrinsics.checkNotNullExpressionValue(d13, "builder(Qualified.qualif…cher()\n    }\n    .build()");
         return CollectionsKt.o(d10, d11, d12, d13);
     }

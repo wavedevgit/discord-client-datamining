@@ -9,11 +9,11 @@ import kotlin.jvm.internal.Intrinsics;
 public final class r0 implements i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final View f24095a;
+    private final View f24096a;
 
     public r0(View previewView) {
         Intrinsics.checkNotNullParameter(previewView, "previewView");
-        this.f24095a = previewView;
+        this.f24096a = previewView;
     }
 
     @Override // fo.i
@@ -23,29 +23,29 @@ public final class r0 implements i {
 
     @Override // fo.i
     public bt.j0 c() {
-        return bt.l0.a(x.c.f24154a);
+        return bt.l0.a(x.c.f24155a);
     }
 
     @Override // fo.i
     public View e() {
-        return this.f24095a;
+        return this.f24096a;
     }
 
     @Override // fo.i
     public Object g(Continuation continuation) {
-        Result.a aVar = Result.f31984e;
+        Result.a aVar = Result.f31985e;
         return Result.b(kotlin.coroutines.jvm.internal.b.a(false));
     }
 
     @Override // fo.i
     public Object i(Continuation continuation) {
-        Result.a aVar = Result.f31984e;
+        Result.a aVar = Result.f31985e;
         return Result.b(kotlin.c.a(new s0()));
     }
 
     @Override // fo.i
     public Object j(Continuation continuation) {
-        Result.a aVar = Result.f31984e;
+        Result.a aVar = Result.f31985e;
         return Result.b(kotlin.c.a(new s0()));
     }
 

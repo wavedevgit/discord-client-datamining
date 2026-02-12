@@ -5,9 +5,9 @@ import kotlinx.serialization.KSerializer;
 final class k {
 
     /* renamed from: a  reason: collision with root package name */
-    public final KSerializer f50014a;
+    public final KSerializer f50015a;
 
     public k(KSerializer kSerializer) {
-        this.f50014a = kSerializer;
+        this.f50015a = kSerializer;
     }
 }

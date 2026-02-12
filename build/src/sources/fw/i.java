@@ -13,31 +13,31 @@ import okhttp3.Request;
 final class i extends e.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Executor f24438a;
+    private final Executor f24439a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     class a implements e {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Type f24439a;
+        final /* synthetic */ Type f24440a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Executor f24440b;
+        final /* synthetic */ Executor f24441b;
 
         a(Type type, Executor executor) {
-            this.f24439a = type;
-            this.f24440b = executor;
+            this.f24440a = type;
+            this.f24441b = executor;
         }
 
         @Override // fw.e
         public Type a() {
-            return this.f24439a;
+            return this.f24440a;
         }
 
         @Override // fw.e
         /* renamed from: c */
         public d b(d dVar) {
-            Executor executor = this.f24440b;
+            Executor executor = this.f24441b;
             if (executor == null) {
                 return dVar;
             }
@@ -50,24 +50,24 @@ final class i extends e.a {
     public static final class b implements d {
 
         /* renamed from: d  reason: collision with root package name */
-        final Executor f24442d;
+        final Executor f24443d;
 
         /* renamed from: e  reason: collision with root package name */
-        final d f24443e;
+        final d f24444e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public class a implements f {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ f f24444a;
+            final /* synthetic */ f f24445a;
 
             a(f fVar) {
-                this.f24444a = fVar;
+                this.f24445a = fVar;
             }
 
             public static /* synthetic */ void d(a aVar, f fVar, z zVar) {
-                if (b.this.f24443e.C()) {
+                if (b.this.f24444e.C()) {
                     fVar.a(b.this, new IOException("Canceled"));
                 } else {
                     fVar.b(b.this, zVar);
@@ -76,8 +76,8 @@ final class i extends e.a {
 
             @Override // fw.f
             public void a(d dVar, final Throwable th2) {
-                Executor executor = b.this.f24442d;
-                final f fVar = this.f24444a;
+                Executor executor = b.this.f24443d;
+                final f fVar = this.f24445a;
                 executor.execute(new Runnable() { // from class: fw.k
                     @Override // java.lang.Runnable
                     public final void run() {
@@ -88,8 +88,8 @@ final class i extends e.a {
 
             @Override // fw.f
             public void b(d dVar, final z zVar) {
-                Executor executor = b.this.f24442d;
-                final f fVar = this.f24444a;
+                Executor executor = b.this.f24443d;
+                final f fVar = this.f24445a;
                 executor.execute(new Runnable() { // from class: fw.j
                     @Override // java.lang.Runnable
                     public final void run() {
@@ -100,41 +100,41 @@ final class i extends e.a {
         }
 
         b(Executor executor, d dVar) {
-            this.f24442d = executor;
-            this.f24443e = dVar;
+            this.f24443d = executor;
+            this.f24444e = dVar;
         }
 
         @Override // fw.d
         public boolean C() {
-            return this.f24443e.C();
+            return this.f24444e.C();
         }
 
         @Override // fw.d
         public void P1(f fVar) {
             Objects.requireNonNull(fVar, "callback == null");
-            this.f24443e.P1(new a(fVar));
+            this.f24444e.P1(new a(fVar));
         }
 
         @Override // fw.d
         public void cancel() {
-            this.f24443e.cancel();
+            this.f24444e.cancel();
         }
 
         @Override // fw.d
         public Request i() {
-            return this.f24443e.i();
+            return this.f24444e.i();
         }
 
         @Override // fw.d
         /* renamed from: clone */
-        public d m1171clone() {
-            return new b(this.f24442d, this.f24443e.clone());
+        public d m1170clone() {
+            return new b(this.f24443d, this.f24444e.clone());
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i(Executor executor) {
-        this.f24438a = executor;
+        this.f24439a = executor;
     }
 
     @Override // fw.e.a
@@ -146,7 +146,7 @@ final class i extends e.a {
         if (type instanceof ParameterizedType) {
             Type g10 = e0.g(0, (ParameterizedType) type);
             if (!e0.l(annotationArr, c0.class)) {
-                executor = this.f24438a;
+                executor = this.f24439a;
             }
             return new a(g10, executor);
         }

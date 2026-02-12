@@ -34,7 +34,7 @@ public final class FrameTickerKt {
                 @Override // kotlin.jvm.functions.Function1
                 public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                     invoke(((Number) obj).longValue());
-                    return Unit.f31987a;
+                    return Unit.f31988a;
                 }
 
                 public final void invoke(long j10) {
@@ -44,7 +44,7 @@ public final class FrameTickerKt {
             if (withFrameNanosChoreo == b.f()) {
                 return withFrameNanosChoreo;
             }
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
     };
     @NotNull
@@ -94,7 +94,7 @@ public final class FrameTickerKt {
                         @Override // kotlin.jvm.functions.Function1
                         public /* bridge */ /* synthetic */ Object invoke(Object obj2) {
                             invoke(((Number) obj2).longValue());
-                            return Unit.f31987a;
+                            return Unit.f31988a;
                         }
 
                         public final void invoke(long j10) {
@@ -106,22 +106,22 @@ public final class FrameTickerKt {
                         return f10;
                     }
                 }
-                return Unit.f31987a;
+                return Unit.f31988a;
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-                return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+                return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
             }
         }
 
         @Override // app.rive.core.FrameTicker
         public final Object withFrame(@NotNull Function1<? super Long, Unit> function1, @NotNull Continuation<? super Unit> continuation) {
-            Object g10 = g.g(a.f24607x.a(), new AnonymousClass1(function1, null), continuation);
+            Object g10 = g.g(a.f24608x.a(), new AnonymousClass1(function1, null), continuation);
             if (g10 == b.f()) {
                 return g10;
             }
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
     };
 

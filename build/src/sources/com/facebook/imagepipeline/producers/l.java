@@ -5,27 +5,27 @@ import com.facebook.imagepipeline.request.ImageRequest;
 public class l implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final w0 f11434a;
+    private final w0 f11435a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final w0 f11435b;
+    private final w0 f11436b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private class a extends s {
 
         /* renamed from: c  reason: collision with root package name */
-        private ProducerContext f11436c;
+        private ProducerContext f11437c;
 
         @Override // com.facebook.imagepipeline.producers.s, com.facebook.imagepipeline.producers.c
         protected void g(Throwable th2) {
-            l.this.f11435b.b(o(), this.f11436c);
+            l.this.f11436b.b(o(), this.f11437c);
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // com.facebook.imagepipeline.producers.c
         /* renamed from: p */
         public void h(ta.k kVar, int i10) {
-            ImageRequest I = this.f11436c.I();
+            ImageRequest I = this.f11437c.I();
             boolean d10 = c.d(i10);
             boolean c10 = n1.c(kVar, I.getResizeOptions());
             if (kVar != null && (c10 || I.getLocalThumbnailPreviewsEnabled())) {
@@ -37,23 +37,23 @@ public class l implements w0 {
             }
             if (d10 && !c10 && !I.getLoadThumbnailOnlyForAndroidSdkAboveQ()) {
                 ta.k.i(kVar);
-                l.this.f11435b.b(o(), this.f11436c);
+                l.this.f11436b.b(o(), this.f11437c);
             }
         }
 
         private a(Consumer consumer, ProducerContext producerContext) {
             super(consumer);
-            this.f11436c = producerContext;
+            this.f11437c = producerContext;
         }
     }
 
     public l(w0 w0Var, w0 w0Var2) {
-        this.f11434a = w0Var;
-        this.f11435b = w0Var2;
+        this.f11435a = w0Var;
+        this.f11436b = w0Var2;
     }
 
     @Override // com.facebook.imagepipeline.producers.w0
     public void b(Consumer consumer, ProducerContext producerContext) {
-        this.f11434a.b(new a(consumer, producerContext), producerContext);
+        this.f11435a.b(new a(consumer, producerContext), producerContext);
     }
 }

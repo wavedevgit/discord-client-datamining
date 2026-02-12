@@ -26,13 +26,13 @@ import com.google.android.material.internal.BaselineLayout;
 public abstract class d extends FrameLayout implements g {
 
     /* renamed from: u0  reason: collision with root package name */
-    private static final int[] f15959u0 = {16842912};
+    private static final int[] f15960u0 = {16842912};
 
     /* renamed from: v0  reason: collision with root package name */
-    private static final c f15960v0 = new c(null);
+    private static final c f15961v0 = new c(null);
 
     /* renamed from: w0  reason: collision with root package name */
-    private static final c f15961w0 = new C0185d(null);
+    private static final c f15962w0 = new C0185d(null);
     private final LinearLayout A;
     private final LinearLayout B;
     private final View C;
@@ -58,123 +58,123 @@ public abstract class d extends FrameLayout implements g {
     private Drawable W;
 
     /* renamed from: a0  reason: collision with root package name */
-    private ValueAnimator f15962a0;
+    private ValueAnimator f15963a0;
 
     /* renamed from: b0  reason: collision with root package name */
-    private c f15963b0;
+    private c f15964b0;
 
     /* renamed from: c0  reason: collision with root package name */
-    private float f15964c0;
+    private float f15965c0;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f15965d;
+    private boolean f15966d;
 
     /* renamed from: d0  reason: collision with root package name */
-    private boolean f15966d0;
+    private boolean f15967d0;
 
     /* renamed from: e  reason: collision with root package name */
-    private ColorStateList f15967e;
+    private ColorStateList f15968e;
 
     /* renamed from: e0  reason: collision with root package name */
-    private int f15968e0;
+    private int f15969e0;
 
     /* renamed from: f0  reason: collision with root package name */
-    private int f15969f0;
+    private int f15970f0;
 
     /* renamed from: g0  reason: collision with root package name */
-    private int f15970g0;
+    private int f15971g0;
 
     /* renamed from: h0  reason: collision with root package name */
-    private int f15971h0;
+    private int f15972h0;
 
     /* renamed from: i  reason: collision with root package name */
-    Drawable f15972i;
+    Drawable f15973i;
 
     /* renamed from: i0  reason: collision with root package name */
-    private boolean f15973i0;
+    private boolean f15974i0;
 
     /* renamed from: j0  reason: collision with root package name */
-    private int f15974j0;
+    private int f15975j0;
 
     /* renamed from: k0  reason: collision with root package name */
-    private int f15975k0;
+    private int f15976k0;
 
     /* renamed from: l0  reason: collision with root package name */
-    private dh.a f15976l0;
+    private dh.a f15977l0;
 
     /* renamed from: m0  reason: collision with root package name */
-    private int f15977m0;
+    private int f15978m0;
 
     /* renamed from: n0  reason: collision with root package name */
-    private int f15978n0;
+    private int f15979n0;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f15979o;
+    private int f15980o;
 
     /* renamed from: o0  reason: collision with root package name */
-    private int f15980o0;
+    private int f15981o0;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f15981p;
+    private int f15982p;
 
     /* renamed from: p0  reason: collision with root package name */
-    private boolean f15982p0;
+    private boolean f15983p0;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f15983q;
+    private int f15984q;
 
     /* renamed from: q0  reason: collision with root package name */
-    private boolean f15984q0;
+    private boolean f15985q0;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f15985r;
+    private int f15986r;
 
     /* renamed from: r0  reason: collision with root package name */
-    private boolean f15986r0;
+    private boolean f15987r0;
 
     /* renamed from: s  reason: collision with root package name */
-    private float f15987s;
+    private float f15988s;
 
     /* renamed from: s0  reason: collision with root package name */
-    private boolean f15988s0;
+    private boolean f15989s0;
 
     /* renamed from: t  reason: collision with root package name */
-    private float f15989t;
+    private float f15990t;
 
     /* renamed from: t0  reason: collision with root package name */
-    private Rect f15990t0;
+    private Rect f15991t0;
 
     /* renamed from: u  reason: collision with root package name */
-    private float f15991u;
+    private float f15992u;
 
     /* renamed from: v  reason: collision with root package name */
-    private float f15992v;
+    private float f15993v;
 
     /* renamed from: w  reason: collision with root package name */
-    private float f15993w;
+    private float f15994w;
 
     /* renamed from: x  reason: collision with root package name */
-    private float f15994x;
+    private float f15995x;
 
     /* renamed from: y  reason: collision with root package name */
-    private int f15995y;
+    private int f15996y;
 
     /* renamed from: z  reason: collision with root package name */
-    private boolean f15996z;
+    private boolean f15997z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ int f15997d;
+        final /* synthetic */ int f15998d;
 
         a(int i10) {
-            this.f15997d = i10;
+            this.f15998d = i10;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            d.this.A(this.f15997d);
+            d.this.A(this.f15998d);
         }
     }
 
@@ -183,15 +183,15 @@ public abstract class d extends FrameLayout implements g {
     public class b implements ValueAnimator.AnimatorUpdateListener {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ float f15999a;
+        final /* synthetic */ float f16000a;
 
         b(float f10) {
-            this.f15999a = f10;
+            this.f16000a = f10;
         }
 
         @Override // android.animation.ValueAnimator.AnimatorUpdateListener
         public void onAnimationUpdate(ValueAnimator valueAnimator) {
-            d.this.p(((Float) valueAnimator.getAnimatedValue()).floatValue(), this.f15999a);
+            d.this.p(((Float) valueAnimator.getAnimatedValue()).floatValue(), this.f16000a);
         }
     }
 
@@ -256,30 +256,30 @@ public abstract class d extends FrameLayout implements g {
 
     public d(Context context) {
         super(context);
-        this.f15965d = false;
+        this.f15966d = false;
         this.M = -1;
         this.N = 0;
         this.O = 0;
         this.P = 0;
         this.Q = 0;
         this.S = false;
-        this.f15963b0 = f15960v0;
-        this.f15964c0 = 0.0f;
-        this.f15966d0 = false;
-        this.f15968e0 = 0;
-        this.f15969f0 = 0;
-        this.f15970g0 = -2;
-        this.f15971h0 = 0;
-        this.f15973i0 = false;
-        this.f15974j0 = 0;
-        this.f15975k0 = 0;
-        this.f15978n0 = 0;
-        this.f15980o0 = 49;
-        this.f15982p0 = false;
-        this.f15984q0 = false;
-        this.f15986r0 = false;
-        this.f15988s0 = false;
-        this.f15990t0 = new Rect();
+        this.f15964b0 = f15961v0;
+        this.f15965c0 = 0.0f;
+        this.f15967d0 = false;
+        this.f15969e0 = 0;
+        this.f15970f0 = 0;
+        this.f15971g0 = -2;
+        this.f15972h0 = 0;
+        this.f15974i0 = false;
+        this.f15975j0 = 0;
+        this.f15976k0 = 0;
+        this.f15979n0 = 0;
+        this.f15981o0 = 49;
+        this.f15983p0 = false;
+        this.f15985q0 = false;
+        this.f15987r0 = false;
+        this.f15989s0 = false;
+        this.f15991t0 = new Rect();
         LayoutInflater.from(context).inflate(getItemLayoutResId(), (ViewGroup) this, true);
         this.A = (LinearLayout) findViewById(bh.f.K);
         LinearLayout linearLayout = (LinearLayout) findViewById(bh.f.N);
@@ -296,17 +296,17 @@ public abstract class d extends FrameLayout implements g {
         j();
         this.L = baselineLayout;
         setBackgroundResource(getItemBackgroundResId());
-        this.f15979o = getResources().getDimensionPixelSize(getItemDefaultMarginResId());
-        this.f15981p = baselineLayout.getPaddingBottom();
-        this.f15983q = 0;
-        this.f15985r = 0;
+        this.f15980o = getResources().getDimensionPixelSize(getItemDefaultMarginResId());
+        this.f15982p = baselineLayout.getPaddingBottom();
+        this.f15984q = 0;
+        this.f15986r = 0;
         textView.setImportantForAccessibility(2);
         textView2.setImportantForAccessibility(2);
         this.J.setImportantForAccessibility(2);
         this.K.setImportantForAccessibility(2);
         setFocusable(true);
         f();
-        this.f15971h0 = getResources().getDimensionPixelSize(bh.d.E);
+        this.f15972h0 = getResources().getDimensionPixelSize(bh.d.E);
         linearLayout.addOnLayoutChangeListener(new View.OnLayoutChangeListener() { // from class: com.google.android.material.navigation.c
             @Override // android.view.View.OnLayoutChangeListener
             public final void onLayoutChange(View view, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
@@ -317,9 +317,9 @@ public abstract class d extends FrameLayout implements g {
 
     private void B() {
         if (k()) {
-            this.f15963b0 = f15961w0;
+            this.f15964b0 = f15962w0;
         } else {
-            this.f15963b0 = f15960v0;
+            this.f15964b0 = f15961v0;
         }
     }
 
@@ -363,20 +363,20 @@ public abstract class d extends FrameLayout implements g {
         int i13;
         int i14;
         int i15;
-        this.f15978n0 = 0;
+        this.f15979n0 = 0;
         this.L = this.F;
         int i16 = 8;
-        if (this.f15977m0 == 1) {
+        if (this.f15978m0 == 1) {
             if (this.I.getParent() == null) {
                 e();
             }
-            Rect rect = this.f15990t0;
+            Rect rect = this.f15991t0;
             int i17 = rect.left;
             int i18 = rect.right;
             int i19 = rect.top;
             i10 = rect.bottom;
-            this.f15978n0 = 1;
-            int i20 = this.f15975k0;
+            this.f15979n0 = 1;
+            int i20 = this.f15976k0;
             this.L = this.I;
             i14 = i19;
             i13 = i18;
@@ -394,7 +394,7 @@ public abstract class d extends FrameLayout implements g {
         }
         this.F.setVisibility(i16);
         this.I.setVisibility(i15);
-        ((FrameLayout.LayoutParams) this.A.getLayoutParams()).gravity = this.f15980o0;
+        ((FrameLayout.LayoutParams) this.A.getLayoutParams()).gravity = this.f15981o0;
         FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) this.B.getLayoutParams();
         layoutParams.leftMargin = i12;
         layoutParams.rightMargin = i13;
@@ -412,7 +412,7 @@ public abstract class d extends FrameLayout implements g {
         int i10;
         androidx.appcompat.view.menu.g gVar = this.T;
         if (gVar != null) {
-            if (gVar.isVisible() && (this.f15982p0 || !this.f15984q0)) {
+            if (gVar.isVisible() && (this.f15983p0 || !this.f15985q0)) {
                 i10 = 0;
             } else {
                 i10 = 8;
@@ -430,10 +430,10 @@ public abstract class d extends FrameLayout implements g {
         int i18 = (i12 - i10) + layoutParams.rightMargin + layoutParams.leftMargin;
         int i19 = (i13 - i11) + layoutParams.topMargin + layoutParams.bottomMargin;
         boolean z11 = true;
-        if (dVar.f15977m0 == 1 && dVar.f15970g0 == -2) {
+        if (dVar.f15978m0 == 1 && dVar.f15971g0 == -2) {
             FrameLayout.LayoutParams layoutParams2 = (FrameLayout.LayoutParams) dVar.C.getLayoutParams();
-            if (dVar.f15970g0 == -2 && dVar.C.getMeasuredWidth() != i18) {
-                layoutParams2.width = Math.max(i18, Math.min(dVar.f15968e0, dVar.getMeasuredWidth() - (dVar.f15974j0 * 2)));
+            if (dVar.f15971g0 == -2 && dVar.C.getMeasuredWidth() != i18) {
+                layoutParams2.width = Math.max(i18, Math.min(dVar.f15969e0, dVar.getMeasuredWidth() - (dVar.f15975j0 * 2)));
                 z10 = true;
             } else {
                 z10 = false;
@@ -459,14 +459,14 @@ public abstract class d extends FrameLayout implements g {
     private void f() {
         float textSize = this.G.getTextSize();
         float textSize2 = this.H.getTextSize();
-        this.f15987s = textSize - textSize2;
-        this.f15989t = (textSize2 * 1.0f) / textSize;
-        this.f15991u = (textSize * 1.0f) / textSize2;
+        this.f15988s = textSize - textSize2;
+        this.f15990t = (textSize2 * 1.0f) / textSize;
+        this.f15992u = (textSize * 1.0f) / textSize2;
         float textSize3 = this.J.getTextSize();
         float textSize4 = this.K.getTextSize();
-        this.f15992v = textSize3 - textSize4;
-        this.f15993w = (textSize4 * 1.0f) / textSize3;
-        this.f15994x = (textSize3 * 1.0f) / textSize4;
+        this.f15993v = textSize3 - textSize4;
+        this.f15994w = (textSize4 * 1.0f) / textSize3;
+        this.f15995x = (textSize3 * 1.0f) / textSize4;
     }
 
     private int getItemVisiblePosition() {
@@ -484,11 +484,11 @@ public abstract class d extends FrameLayout implements g {
 
     private int getSuggestedIconWidth() {
         int minimumWidth;
-        dh.a aVar = this.f15976l0;
+        dh.a aVar = this.f15977l0;
         if (aVar == null) {
             minimumWidth = 0;
         } else {
-            minimumWidth = aVar.getMinimumWidth() - this.f15976l0.o();
+            minimumWidth = aVar.getMinimumWidth() - this.f15977l0.o();
         }
         LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) this.D.getLayoutParams();
         return Math.max(minimumWidth, layoutParams.leftMargin) + this.E.getMeasuredWidth() + Math.max(minimumWidth, layoutParams.rightMargin);
@@ -499,7 +499,7 @@ public abstract class d extends FrameLayout implements g {
     }
 
     private boolean i() {
-        if (this.f15976l0 != null) {
+        if (this.f15977l0 != null) {
             return true;
         }
         return false;
@@ -512,7 +512,7 @@ public abstract class d extends FrameLayout implements g {
         this.I = baselineLayout;
         baselineLayout.setVisibility(8);
         this.I.setDuplicateParentStateEnabled(true);
-        this.I.setMeasurePaddingFromBaseline(this.f15986r0);
+        this.I.setMeasurePaddingFromBaseline(this.f15987r0);
         TextView textView = new TextView(getContext());
         this.J = textView;
         textView.setMaxLines(1);
@@ -537,25 +537,25 @@ public abstract class d extends FrameLayout implements g {
     }
 
     private boolean k() {
-        if (this.f15973i0 && this.f15995y == 2) {
+        if (this.f15974i0 && this.f15996y == 2) {
             return true;
         }
         return false;
     }
 
     private void l(float f10) {
-        if (this.f15966d0 && this.f15965d && isAttachedToWindow()) {
-            ValueAnimator valueAnimator = this.f15962a0;
+        if (this.f15967d0 && this.f15966d && isAttachedToWindow()) {
+            ValueAnimator valueAnimator = this.f15963a0;
             if (valueAnimator != null) {
                 valueAnimator.cancel();
-                this.f15962a0 = null;
+                this.f15963a0 = null;
             }
-            ValueAnimator ofFloat = ValueAnimator.ofFloat(this.f15964c0, f10);
-            this.f15962a0 = ofFloat;
+            ValueAnimator ofFloat = ValueAnimator.ofFloat(this.f15965c0, f10);
+            this.f15963a0 = ofFloat;
             ofFloat.addUpdateListener(new b(f10));
-            this.f15962a0.setInterpolator(oh.g.g(getContext(), bh.b.T, ch.a.f8277b));
-            this.f15962a0.setDuration(oh.g.f(getContext(), bh.b.J, getResources().getInteger(bh.g.f6869b)));
-            this.f15962a0.start();
+            this.f15963a0.setInterpolator(oh.g.g(getContext(), bh.b.T, ch.a.f8277b));
+            this.f15963a0.setDuration(oh.g.f(getContext(), bh.b.J, getResources().getInteger(bh.g.f6869b)));
+            this.f15963a0.start();
             return;
         }
         p(f10, f10);
@@ -569,16 +569,16 @@ public abstract class d extends FrameLayout implements g {
     }
 
     private void n() {
-        Drawable drawable = this.f15972i;
+        Drawable drawable = this.f15973i;
         RippleDrawable rippleDrawable = null;
         boolean z10 = true;
-        if (this.f15967e != null) {
+        if (this.f15968e != null) {
             Drawable activeIndicatorDrawable = getActiveIndicatorDrawable();
-            if (this.f15966d0 && getActiveIndicatorDrawable() != null && activeIndicatorDrawable != null) {
-                rippleDrawable = new RippleDrawable(rh.a.d(this.f15967e), null, activeIndicatorDrawable);
+            if (this.f15967d0 && getActiveIndicatorDrawable() != null && activeIndicatorDrawable != null) {
+                rippleDrawable = new RippleDrawable(rh.a.d(this.f15968e), null, activeIndicatorDrawable);
                 z10 = false;
             } else if (drawable == null) {
-                drawable = h(this.f15967e);
+                drawable = h(this.f15968e);
             }
         }
         this.D.setPadding(0, 0, 0, 0);
@@ -591,8 +591,8 @@ public abstract class d extends FrameLayout implements g {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void p(float f10, float f11) {
-        this.f15963b0.d(f10, f11, this.C);
-        this.f15964c0 = f10;
+        this.f15964b0.d(f10, f11, this.C);
+        this.f15965c0 = f10;
     }
 
     private void q() {
@@ -600,7 +600,7 @@ public abstract class d extends FrameLayout implements g {
         int i11;
         int i12 = 0;
         if (this.E.getLayoutParams().width > 0) {
-            i10 = this.f15985r;
+            i10 = this.f15986r;
         } else {
             i10 = 0;
         }
@@ -625,23 +625,23 @@ public abstract class d extends FrameLayout implements g {
         int i12;
         int i13;
         LinearLayout linearLayout = this.A;
-        if (this.f15977m0 == 0) {
-            i10 = (int) (this.f15979o + f11);
+        if (this.f15978m0 == 0) {
+            i10 = (int) (this.f15980o + f11);
         } else {
             i10 = 0;
         }
-        v(linearLayout, i10, 0, this.f15980o0);
+        v(linearLayout, i10, 0, this.f15981o0);
         LinearLayout linearLayout2 = this.B;
-        int i14 = this.f15977m0;
+        int i14 = this.f15978m0;
         if (i14 == 0) {
             i11 = 0;
         } else {
-            i11 = this.f15990t0.top;
+            i11 = this.f15991t0.top;
         }
         if (i14 == 0) {
             i12 = 0;
         } else {
-            i12 = this.f15990t0.bottom;
+            i12 = this.f15991t0.bottom;
         }
         if (i14 == 0) {
             i13 = 17;
@@ -649,7 +649,7 @@ public abstract class d extends FrameLayout implements g {
             i13 = 8388627;
         }
         v(linearLayout2, i11, i12, i13);
-        G(this.F, this.f15981p);
+        G(this.F, this.f15982p);
         this.L.setVisibility(0);
         w(view, 1.0f, 1.0f, 0);
         w(view2, f10, f10, 4);
@@ -658,11 +658,11 @@ public abstract class d extends FrameLayout implements g {
     private void s() {
         int i10;
         LinearLayout linearLayout = this.A;
-        int i11 = this.f15979o;
-        if (this.f15977m0 == 0) {
+        int i11 = this.f15980o;
+        if (this.f15978m0 == 0) {
             i10 = 17;
         } else {
-            i10 = this.f15980o0;
+            i10 = this.f15981o0;
         }
         v(linearLayout, i11, i11, i10);
         v(this.B, 0, 0, 17);
@@ -676,7 +676,7 @@ public abstract class d extends FrameLayout implements g {
     }
 
     private void t(TextView textView, int i10) {
-        if (this.f15988s0) {
+        if (this.f15989s0) {
             androidx.core.widget.j.q(textView, i10);
         } else {
             u(textView, i10);
@@ -709,7 +709,7 @@ public abstract class d extends FrameLayout implements g {
         if (i() && view != null) {
             setClipChildren(false);
             setClipToPadding(false);
-            dh.c.a(this.f15976l0, view);
+            dh.c.a(this.f15977l0, view);
         }
     }
 
@@ -720,27 +720,27 @@ public abstract class d extends FrameLayout implements g {
         if (view != null) {
             setClipChildren(true);
             setClipToPadding(true);
-            dh.c.e(this.f15976l0, view);
+            dh.c.e(this.f15977l0, view);
         }
-        this.f15976l0 = null;
+        this.f15977l0 = null;
     }
 
     private void z(View view) {
         if (!i()) {
             return;
         }
-        dh.c.f(this.f15976l0, view, null);
+        dh.c.f(this.f15977l0, view, null);
     }
 
     public void A(int i10) {
         if (i10 <= 0 && getVisibility() == 0) {
             return;
         }
-        int min = Math.min(this.f15968e0, i10 - (this.f15974j0 * 2));
-        int i11 = this.f15969f0;
-        if (this.f15977m0 == 1) {
-            int i12 = i10 - (this.f15975k0 * 2);
-            int i13 = this.f15970g0;
+        int min = Math.min(this.f15969e0, i10 - (this.f15975j0 * 2));
+        int i11 = this.f15970f0;
+        if (this.f15978m0 == 1) {
+            int i12 = i10 - (this.f15976k0 * 2);
+            int i13 = this.f15971g0;
             if (i13 != -1) {
                 if (i13 == -2) {
                     i12 = this.A.getMeasuredWidth();
@@ -749,7 +749,7 @@ public abstract class d extends FrameLayout implements g {
                 }
             }
             min = i12;
-            i11 = Math.max(this.f15971h0, this.B.getMeasuredHeight());
+            i11 = Math.max(this.f15972h0, this.B.getMeasuredHeight());
         }
         FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) this.C.getLayoutParams();
         if (k()) {
@@ -780,7 +780,7 @@ public abstract class d extends FrameLayout implements g {
         }
         a1.a(this, title);
         H();
-        this.f15965d = true;
+        this.f15966d = true;
     }
 
     @Override // androidx.appcompat.view.menu.k.a
@@ -790,7 +790,7 @@ public abstract class d extends FrameLayout implements g {
 
     @Override // android.view.ViewGroup, android.view.View
     public boolean dispatchTouchEvent(MotionEvent motionEvent) {
-        if (this.f15966d0) {
+        if (this.f15967d0) {
             this.D.dispatchTouchEvent(motionEvent);
         }
         return super.dispatchTouchEvent(motionEvent);
@@ -800,8 +800,8 @@ public abstract class d extends FrameLayout implements g {
     public void g() {
         o();
         this.T = null;
-        this.f15964c0 = 0.0f;
-        this.f15965d = false;
+        this.f15965c0 = 0.0f;
+        this.f15966d = false;
     }
 
     public Drawable getActiveIndicatorDrawable() {
@@ -809,7 +809,7 @@ public abstract class d extends FrameLayout implements g {
     }
 
     public dh.a getBadge() {
-        return this.f15976l0;
+        return this.f15977l0;
     }
 
     @NonNull
@@ -849,7 +849,7 @@ public abstract class d extends FrameLayout implements g {
 
     @Override // android.view.View
     protected int getSuggestedMinimumWidth() {
-        if (this.f15977m0 == 1) {
+        if (this.f15978m0 == 1) {
             FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) this.B.getLayoutParams();
             return this.B.getMeasuredWidth() + layoutParams.leftMargin + layoutParams.rightMargin;
         }
@@ -866,7 +866,7 @@ public abstract class d extends FrameLayout implements g {
         int[] onCreateDrawableState = super.onCreateDrawableState(i10 + 1);
         androidx.appcompat.view.menu.g gVar = this.T;
         if (gVar != null && gVar.isCheckable() && this.T.isChecked()) {
-            View.mergeDrawableStates(onCreateDrawableState, f15959u0);
+            View.mergeDrawableStates(onCreateDrawableState, f15960u0);
         }
         return onCreateDrawableState;
     }
@@ -874,13 +874,13 @@ public abstract class d extends FrameLayout implements g {
     @Override // android.view.View
     public void onInitializeAccessibilityNodeInfo(AccessibilityNodeInfo accessibilityNodeInfo) {
         super.onInitializeAccessibilityNodeInfo(accessibilityNodeInfo);
-        dh.a aVar = this.f15976l0;
+        dh.a aVar = this.f15977l0;
         if (aVar != null && aVar.isVisible()) {
             CharSequence title = this.T.getTitle();
             if (!TextUtils.isEmpty(this.T.getContentDescription())) {
                 title = this.T.getContentDescription();
             }
-            accessibilityNodeInfo.setContentDescription(((Object) title) + ", " + ((Object) this.f15976l0.l()));
+            accessibilityNodeInfo.setContentDescription(((Object) title) + ", " + ((Object) this.f15977l0.l()));
         }
         AccessibilityNodeInfoCompat h12 = AccessibilityNodeInfoCompat.h1(accessibilityNodeInfo);
         h12.z0(AccessibilityNodeInfoCompat.g.b(0, 1, getItemVisiblePosition(), 1, false, isSelected()));
@@ -904,7 +904,7 @@ public abstract class d extends FrameLayout implements g {
 
     public void setActiveIndicatorEnabled(boolean z10) {
         int i10;
-        this.f15966d0 = z10;
+        this.f15967d0 = z10;
         n();
         View view = this.C;
         if (z10) {
@@ -917,36 +917,36 @@ public abstract class d extends FrameLayout implements g {
     }
 
     public void setActiveIndicatorExpandedHeight(int i10) {
-        this.f15971h0 = i10;
+        this.f15972h0 = i10;
         A(getWidth());
     }
 
     public void setActiveIndicatorExpandedMarginHorizontal(int i10) {
-        this.f15975k0 = i10;
-        if (this.f15977m0 == 1) {
+        this.f15976k0 = i10;
+        if (this.f15978m0 == 1) {
             setPadding(i10, 0, i10, 0);
         }
         A(getWidth());
     }
 
     public void setActiveIndicatorExpandedPadding(@NonNull Rect rect) {
-        this.f15990t0 = rect;
+        this.f15991t0 = rect;
     }
 
     public void setActiveIndicatorExpandedWidth(int i10) {
-        this.f15970g0 = i10;
+        this.f15971g0 = i10;
         A(getWidth());
     }
 
     public void setActiveIndicatorHeight(int i10) {
-        this.f15969f0 = i10;
+        this.f15970f0 = i10;
         A(getWidth());
     }
 
     public void setActiveIndicatorLabelPadding(int i10) {
         int i11;
-        if (this.f15983q != i10) {
-            this.f15983q = i10;
+        if (this.f15984q != i10) {
+            this.f15984q = i10;
             ((LinearLayout.LayoutParams) this.F.getLayoutParams()).topMargin = i10;
             if (this.I.getLayoutParams() != null) {
                 LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) this.I.getLayoutParams();
@@ -966,28 +966,28 @@ public abstract class d extends FrameLayout implements g {
     }
 
     public void setActiveIndicatorMarginHorizontal(int i10) {
-        this.f15974j0 = i10;
+        this.f15975j0 = i10;
         A(getWidth());
     }
 
     public void setActiveIndicatorResizeable(boolean z10) {
-        this.f15973i0 = z10;
+        this.f15974i0 = z10;
     }
 
     public void setActiveIndicatorWidth(int i10) {
-        this.f15968e0 = i10;
+        this.f15969e0 = i10;
         A(getWidth());
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void setBadge(@NonNull dh.a aVar) {
-        if (this.f15976l0 != aVar) {
+        if (this.f15977l0 != aVar) {
             if (i() && this.E != null) {
                 Log.w("NavigationBar", "Multiple badges shouldn't be attached to one item.");
                 y(this.E);
             }
-            this.f15976l0 = aVar;
-            aVar.T(this.f15978n0);
+            this.f15977l0 = aVar;
+            aVar.T(this.f15979n0);
             ImageView imageView = this.E;
             if (imageView != null) {
                 x(imageView);
@@ -1013,17 +1013,17 @@ public abstract class d extends FrameLayout implements g {
         l(f10);
         TextView textView = this.H;
         TextView textView2 = this.G;
-        float f11 = this.f15987s;
-        float f12 = this.f15989t;
-        float f13 = this.f15991u;
-        if (this.f15977m0 == 1) {
+        float f11 = this.f15988s;
+        float f12 = this.f15990t;
+        float f13 = this.f15992u;
+        if (this.f15978m0 == 1) {
             textView = this.K;
             textView2 = this.J;
-            f11 = this.f15992v;
-            f12 = this.f15993w;
-            f13 = this.f15994x;
+            f11 = this.f15993v;
+            f12 = this.f15994w;
+            f13 = this.f15995x;
         }
-        int i10 = this.f15995y;
+        int i10 = this.f15996y;
         if (i10 != -1) {
             if (i10 != 0) {
                 if (i10 != 1) {
@@ -1040,7 +1040,7 @@ public abstract class d extends FrameLayout implements g {
             } else {
                 s();
             }
-        } else if (this.f15996z) {
+        } else if (this.f15997z) {
             if (z10) {
                 r(textView, textView2, f12, 0.0f);
             } else {
@@ -1067,7 +1067,7 @@ public abstract class d extends FrameLayout implements g {
 
     @Override // com.google.android.material.navigation.g
     public void setExpanded(boolean z10) {
-        this.f15982p0 = z10;
+        this.f15983p0 = z10;
         H();
     }
 
@@ -1110,8 +1110,8 @@ public abstract class d extends FrameLayout implements g {
     }
 
     public void setIconLabelHorizontalSpacing(int i10) {
-        if (this.f15985r != i10) {
-            this.f15985r = i10;
+        if (this.f15986r != i10) {
+            this.f15986r = i10;
             q();
             requestLayout();
         }
@@ -1139,28 +1139,28 @@ public abstract class d extends FrameLayout implements g {
     }
 
     public void setItemGravity(int i10) {
-        this.f15980o0 = i10;
+        this.f15981o0 = i10;
         requestLayout();
     }
 
     public void setItemIconGravity(int i10) {
-        if (this.f15977m0 != i10) {
-            this.f15977m0 = i10;
+        if (this.f15978m0 != i10) {
+            this.f15978m0 = i10;
             F();
             n();
         }
     }
 
     public void setItemPaddingBottom(int i10) {
-        if (this.f15981p != i10) {
-            this.f15981p = i10;
+        if (this.f15982p != i10) {
+            this.f15982p = i10;
             m();
         }
     }
 
     public void setItemPaddingTop(int i10) {
-        if (this.f15979o != i10) {
-            this.f15979o = i10;
+        if (this.f15980o != i10) {
+            this.f15980o = i10;
             m();
         }
     }
@@ -1170,12 +1170,12 @@ public abstract class d extends FrameLayout implements g {
     }
 
     public void setItemRippleColor(ColorStateList colorStateList) {
-        this.f15967e = colorStateList;
+        this.f15968e = colorStateList;
         n();
     }
 
     public void setLabelFontScalingEnabled(boolean z10) {
-        this.f15988s0 = z10;
+        this.f15989s0 = z10;
         setTextAppearanceActive(this.N);
         setTextAppearanceInactive(this.O);
         setHorizontalTextAppearanceActive(this.P);
@@ -1203,8 +1203,8 @@ public abstract class d extends FrameLayout implements g {
     }
 
     public void setLabelVisibilityMode(int i10) {
-        if (this.f15995y != i10) {
-            this.f15995y = i10;
+        if (this.f15996y != i10) {
+            this.f15996y = i10;
             B();
             A(getWidth());
             m();
@@ -1212,7 +1212,7 @@ public abstract class d extends FrameLayout implements g {
     }
 
     public void setMeasureBottomPaddingFromLabelBaseline(boolean z10) {
-        this.f15986r0 = z10;
+        this.f15987r0 = z10;
         this.F.setMeasurePaddingFromBaseline(z10);
         this.G.setIncludeFontPadding(z10);
         this.H.setIncludeFontPadding(z10);
@@ -1224,13 +1224,13 @@ public abstract class d extends FrameLayout implements g {
 
     @Override // com.google.android.material.navigation.g
     public void setOnlyShowWhenExpanded(boolean z10) {
-        this.f15984q0 = z10;
+        this.f15985q0 = z10;
         H();
     }
 
     public void setShifting(boolean z10) {
-        if (this.f15996z != z10) {
-            this.f15996z = z10;
+        if (this.f15997z != z10) {
+            this.f15997z = z10;
             m();
         }
     }
@@ -1282,7 +1282,7 @@ public abstract class d extends FrameLayout implements g {
         if (drawable != null && drawable.getConstantState() != null) {
             drawable = drawable.getConstantState().newDrawable().mutate();
         }
-        this.f15972i = drawable;
+        this.f15973i = drawable;
         n();
     }
 }

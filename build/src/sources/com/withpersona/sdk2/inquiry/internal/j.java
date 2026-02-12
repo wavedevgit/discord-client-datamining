@@ -54,10 +54,10 @@ import vq.a;
 public final class j extends Fragment {
 
     /* renamed from: r  reason: collision with root package name */
-    public static final /* synthetic */ int f19924r = 0;
+    public static final /* synthetic */ int f19925r = 0;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Lazy f19925d = as.l.b(new Function0() { // from class: ep.t
+    private final Lazy f19926d = as.l.b(new Function0() { // from class: ep.t
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             com.withpersona.sdk2.inquiry.internal.h C;
@@ -67,29 +67,29 @@ public final class j extends Fragment {
     });
 
     /* renamed from: e  reason: collision with root package name */
-    private final Lazy f19926e;
+    private final Lazy f19927e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Lazy f19927i;
+    private final Lazy f19928i;
 
     /* renamed from: o  reason: collision with root package name */
-    private gp.d f19928o;
+    private gp.d f19929o;
 
     /* renamed from: p  reason: collision with root package name */
-    private ep.q f19929p;
+    private ep.q f19930p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Context f19930q;
+    private Context f19931q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f19931d;
+        int f19932d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ ep.q f19933i;
+        final /* synthetic */ ep.q f19934i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: com.withpersona.sdk2.inquiry.internal.j$a$a  reason: collision with other inner class name */
@@ -97,14 +97,14 @@ public final class j extends Fragment {
         public static final class C0250a implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ j f19934d;
+            final /* synthetic */ j f19935d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ ep.q f19935e;
+            final /* synthetic */ ep.q f19936e;
 
             C0250a(j jVar, ep.q qVar) {
-                this.f19934d = jVar;
-                this.f19935e = qVar;
+                this.f19935d = jVar;
+                this.f19936e = qVar;
             }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
@@ -113,14 +113,14 @@ public final class j extends Fragment {
                 String str;
                 String m10 = bVar.m();
                 if (m10 != null) {
-                    this.f19935e.d().h(m10);
+                    this.f19936e.d().h(m10);
                 }
-                this.f19934d.G().v().a();
+                this.f19935d.G().v().a();
                 if (bVar instanceof n.b.C0256b) {
-                    j jVar = this.f19934d;
+                    j jVar = this.f19935d;
                     String p10 = jVar.E().p();
                     Bundle bundle = new Bundle();
-                    j jVar2 = this.f19934d;
+                    j jVar2 = this.f19935d;
                     bundle.putString("PERSONA_ACTIVITY_RESULT", "INQUIRY_COMPLETE");
                     n.b.C0256b c0256b = (n.b.C0256b) bVar;
                     bundle.putString("INQUIRY_ID_KEY", c0256b.b());
@@ -129,64 +129,64 @@ public final class j extends Fragment {
                     bundle.putParcelable("COLLECTED_DATA", ep.a.d(jVar2.G().j().c()));
                     String m11 = c0256b.m();
                     if (m11 != null) {
-                        str = com.withpersona.sdk2.inquiry.internal.h.f19918b.a(m11);
+                        str = com.withpersona.sdk2.inquiry.internal.h.f19919b.a(m11);
                     } else {
                         str = null;
                     }
                     bundle.putString("SESSION_TOKEN_KEY", str);
-                    Unit unit = Unit.f31987a;
+                    Unit unit = Unit.f31988a;
                     androidx.fragment.app.v.a(jVar, p10, bundle);
                 } else if (bVar instanceof n.b.d) {
                     n.b.d dVar = (n.b.d) bVar;
-                    this.f19934d.G().o().o(dVar.a());
-                    this.f19934d.G().x().o(dVar.m());
-                    this.f19934d.G().D(true);
+                    this.f19935d.G().o().o(dVar.a());
+                    this.f19935d.G().x().o(dVar.m());
+                    this.f19935d.G().D(true);
                 } else if (bVar instanceof n.b.a) {
                     n.b.a aVar = (n.b.a) bVar;
                     if (aVar.b()) {
-                        this.f19934d.J(aVar);
+                        this.f19935d.J(aVar);
                     } else {
-                        e.a aVar2 = fp.e.f24180i;
-                        FragmentManager childFragmentManager = this.f19934d.getChildFragmentManager();
+                        e.a aVar2 = fp.e.f24181i;
+                        FragmentManager childFragmentManager = this.f19935d.getChildFragmentManager();
                         Intrinsics.checkNotNullExpressionValue(childFragmentManager, "getChildFragmentManager(...)");
-                        aVar2.a(childFragmentManager, this.f19934d.getTheme(), aVar);
+                        aVar2.a(childFragmentManager, this.f19935d.getTheme(), aVar);
                     }
                 } else if (bVar instanceof n.b.c) {
                     n.b.c cVar = (n.b.c) bVar;
                     String m12 = cVar.m();
                     if (m12 != null) {
-                        this.f19935e.d().f(m12, cVar.a());
+                        this.f19936e.d().f(m12, cVar.a());
                     }
-                    j jVar3 = this.f19934d;
+                    j jVar3 = this.f19935d;
                     String p11 = jVar3.E().p();
                     Bundle bundle2 = new Bundle();
                     bundle2.putString("PERSONA_ACTIVITY_RESULT", "INQUIRY_ERROR");
                     bundle2.putString("ERROR_DEBUG_MESSAGE_KEY", cVar.b());
                     bundle2.putParcelable("ERROR_CODE_KEY", cVar.c());
-                    Unit unit2 = Unit.f31987a;
+                    Unit unit2 = Unit.f31988a;
                     androidx.fragment.app.v.a(jVar3, p11, bundle2);
                 } else {
                     throw new as.p();
                 }
-                return Unit.f31987a;
+                return Unit.f31988a;
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(ep.q qVar, Continuation continuation) {
             super(2, continuation);
-            this.f19933i = qVar;
+            this.f19934i = qVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new a(this.f19933i, continuation);
+            return new a(this.f19934i, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = gs.b.f();
-            int i10 = this.f19931d;
+            int i10 = this.f19932d;
             if (i10 != 0) {
                 if (i10 != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
@@ -195,8 +195,8 @@ public final class j extends Fragment {
             } else {
                 kotlin.c.b(obj);
                 bt.a0 t10 = j.this.G().t();
-                C0250a c0250a = new C0250a(j.this, this.f19933i);
-                this.f19931d = 1;
+                C0250a c0250a = new C0250a(j.this, this.f19934i);
+                this.f19932d = 1;
                 if (t10.collect(c0250a, this) == f10) {
                     return f10;
                 }
@@ -206,7 +206,7 @@ public final class j extends Fragment {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -214,51 +214,51 @@ public final class j extends Fragment {
     public static final class b implements fq.e {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Flow f19936a;
+        private final Flow f19937a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final MutableStateFlow f19937b;
+        private final MutableStateFlow f19938b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final MutableSharedFlow f19938c;
+        private final MutableSharedFlow f19939c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final boolean f19939d;
+        private final boolean f19940d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final boolean f19940e;
+        private final boolean f19941e;
 
         b(j jVar) {
-            this.f19936a = jVar.G().h();
-            this.f19937b = jVar.G().u();
-            this.f19938c = jVar.G().m();
-            this.f19939d = jVar.E().A();
-            this.f19940e = jVar.E().k();
+            this.f19937a = jVar.G().h();
+            this.f19938b = jVar.G().u();
+            this.f19939c = jVar.G().m();
+            this.f19940d = jVar.E().A();
+            this.f19941e = jVar.E().k();
         }
 
         @Override // fq.e
         public MutableSharedFlow a() {
-            return this.f19938c;
+            return this.f19939c;
         }
 
         @Override // fq.e
         public MutableStateFlow b() {
-            return this.f19937b;
+            return this.f19938b;
         }
 
         @Override // fq.e
         public Flow c() {
-            return this.f19936a;
+            return this.f19937a;
         }
 
         @Override // fq.e
         public boolean d() {
-            return this.f19939d;
+            return this.f19940d;
         }
 
         @Override // fq.e
         public boolean e() {
-            return this.f19940e;
+            return this.f19941e;
         }
     }
 
@@ -266,29 +266,29 @@ public final class j extends Fragment {
     static final class c extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f19941d;
+        int f19942d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Bundle f19943i;
+        final /* synthetic */ Bundle f19944i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ j f19944d;
+            final /* synthetic */ j f19945d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ Bundle f19945e;
+            final /* synthetic */ Bundle f19946e;
 
             a(j jVar, Bundle bundle) {
-                this.f19944d = jVar;
-                this.f19945e = bundle;
+                this.f19945d = jVar;
+                this.f19946e = bundle;
             }
 
             public final Object a(boolean z10, Continuation continuation) {
-                this.f19944d.D(true, this.f19945e);
-                return Unit.f31987a;
+                this.f19945d.D(true, this.f19946e);
+                return Unit.f31988a;
             }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
@@ -300,18 +300,18 @@ public final class j extends Fragment {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(Bundle bundle, Continuation continuation) {
             super(2, continuation);
-            this.f19943i = bundle;
+            this.f19944i = bundle;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new c(this.f19943i, continuation);
+            return new c(this.f19944i, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = gs.b.f();
-            int i10 = this.f19941d;
+            int i10 = this.f19942d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -321,18 +321,18 @@ public final class j extends Fragment {
             } else {
                 kotlin.c.b(obj);
                 Flow m10 = bt.g.m(j.this.G().n(), 1);
-                a aVar = new a(j.this, this.f19943i);
-                this.f19941d = 1;
+                a aVar = new a(j.this, this.f19944i);
+                this.f19942d = 1;
                 if (m10.collect(aVar, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -340,16 +340,16 @@ public final class j extends Fragment {
     public static final class d extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Fragment f19946d;
+        final /* synthetic */ Fragment f19947d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Lazy f19947e;
+        final /* synthetic */ Lazy f19948e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public d(Fragment fragment, Lazy lazy) {
             super(0);
-            this.f19946d = fragment;
-            this.f19947e = lazy;
+            this.f19947d = fragment;
+            this.f19948e = lazy;
         }
 
         @Override // kotlin.jvm.functions.Function0
@@ -357,7 +357,7 @@ public final class j extends Fragment {
         public final ViewModelProvider.Factory invoke() {
             androidx.lifecycle.h hVar;
             ViewModelProvider.Factory defaultViewModelProviderFactory;
-            q0 a10 = p0.a(this.f19947e);
+            q0 a10 = p0.a(this.f19948e);
             if (a10 instanceof androidx.lifecycle.h) {
                 hVar = (androidx.lifecycle.h) a10;
             } else {
@@ -366,7 +366,7 @@ public final class j extends Fragment {
             if (hVar != null && (defaultViewModelProviderFactory = hVar.getDefaultViewModelProviderFactory()) != null) {
                 return defaultViewModelProviderFactory;
             }
-            return this.f19946d.getDefaultViewModelProviderFactory();
+            return this.f19947d.getDefaultViewModelProviderFactory();
         }
     }
 
@@ -374,18 +374,18 @@ public final class j extends Fragment {
     public static final class e extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Fragment f19948d;
+        final /* synthetic */ Fragment f19949d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public e(Fragment fragment) {
             super(0);
-            this.f19948d = fragment;
+            this.f19949d = fragment;
         }
 
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final Fragment invoke() {
-            return this.f19948d;
+            return this.f19949d;
         }
     }
 
@@ -393,18 +393,18 @@ public final class j extends Fragment {
     public static final class f extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Function0 f19949d;
+        final /* synthetic */ Function0 f19950d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public f(Function0 function0) {
             super(0);
-            this.f19949d = function0;
+            this.f19950d = function0;
         }
 
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final q0 invoke() {
-            return (q0) this.f19949d.invoke();
+            return (q0) this.f19950d.invoke();
         }
     }
 
@@ -412,18 +412,18 @@ public final class j extends Fragment {
     public static final class g extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Lazy f19950d;
+        final /* synthetic */ Lazy f19951d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public g(Lazy lazy) {
             super(0);
-            this.f19950d = lazy;
+            this.f19951d = lazy;
         }
 
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final ViewModelStore invoke() {
-            return p0.a(this.f19950d).getViewModelStore();
+            return p0.a(this.f19951d).getViewModelStore();
         }
     }
 
@@ -431,16 +431,16 @@ public final class j extends Fragment {
     public static final class h extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Function0 f19951d;
+        final /* synthetic */ Function0 f19952d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Lazy f19952e;
+        final /* synthetic */ Lazy f19953e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public h(Function0 function0, Lazy lazy) {
             super(0);
-            this.f19951d = function0;
-            this.f19952e = lazy;
+            this.f19952d = function0;
+            this.f19953e = lazy;
         }
 
         @Override // kotlin.jvm.functions.Function0
@@ -448,11 +448,11 @@ public final class j extends Fragment {
         public final CreationExtras invoke() {
             androidx.lifecycle.h hVar;
             CreationExtras creationExtras;
-            Function0 function0 = this.f19951d;
+            Function0 function0 = this.f19952d;
             if (function0 != null && (creationExtras = (CreationExtras) function0.invoke()) != null) {
                 return creationExtras;
             }
-            q0 a10 = p0.a(this.f19952e);
+            q0 a10 = p0.a(this.f19953e);
             if (a10 instanceof androidx.lifecycle.h) {
                 hVar = (androidx.lifecycle.h) a10;
             } else {
@@ -469,16 +469,16 @@ public final class j extends Fragment {
     public static final class i extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Fragment f19953d;
+        final /* synthetic */ Fragment f19954d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Lazy f19954e;
+        final /* synthetic */ Lazy f19955e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public i(Fragment fragment, Lazy lazy) {
             super(0);
-            this.f19953d = fragment;
-            this.f19954e = lazy;
+            this.f19954d = fragment;
+            this.f19955e = lazy;
         }
 
         @Override // kotlin.jvm.functions.Function0
@@ -486,7 +486,7 @@ public final class j extends Fragment {
         public final ViewModelProvider.Factory invoke() {
             androidx.lifecycle.h hVar;
             ViewModelProvider.Factory defaultViewModelProviderFactory;
-            q0 a10 = p0.a(this.f19954e);
+            q0 a10 = p0.a(this.f19955e);
             if (a10 instanceof androidx.lifecycle.h) {
                 hVar = (androidx.lifecycle.h) a10;
             } else {
@@ -495,7 +495,7 @@ public final class j extends Fragment {
             if (hVar != null && (defaultViewModelProviderFactory = hVar.getDefaultViewModelProviderFactory()) != null) {
                 return defaultViewModelProviderFactory;
             }
-            return this.f19953d.getDefaultViewModelProviderFactory();
+            return this.f19954d.getDefaultViewModelProviderFactory();
         }
     }
 
@@ -504,18 +504,18 @@ public final class j extends Fragment {
     public static final class C0251j extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Fragment f19955d;
+        final /* synthetic */ Fragment f19956d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public C0251j(Fragment fragment) {
             super(0);
-            this.f19955d = fragment;
+            this.f19956d = fragment;
         }
 
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final Fragment invoke() {
-            return this.f19955d;
+            return this.f19956d;
         }
     }
 
@@ -523,18 +523,18 @@ public final class j extends Fragment {
     public static final class k extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Function0 f19956d;
+        final /* synthetic */ Function0 f19957d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public k(Function0 function0) {
             super(0);
-            this.f19956d = function0;
+            this.f19957d = function0;
         }
 
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final q0 invoke() {
-            return (q0) this.f19956d.invoke();
+            return (q0) this.f19957d.invoke();
         }
     }
 
@@ -542,18 +542,18 @@ public final class j extends Fragment {
     public static final class l extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Lazy f19957d;
+        final /* synthetic */ Lazy f19958d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public l(Lazy lazy) {
             super(0);
-            this.f19957d = lazy;
+            this.f19958d = lazy;
         }
 
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final ViewModelStore invoke() {
-            return p0.a(this.f19957d).getViewModelStore();
+            return p0.a(this.f19958d).getViewModelStore();
         }
     }
 
@@ -561,16 +561,16 @@ public final class j extends Fragment {
     public static final class m extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Function0 f19958d;
+        final /* synthetic */ Function0 f19959d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Lazy f19959e;
+        final /* synthetic */ Lazy f19960e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public m(Function0 function0, Lazy lazy) {
             super(0);
-            this.f19958d = function0;
-            this.f19959e = lazy;
+            this.f19959d = function0;
+            this.f19960e = lazy;
         }
 
         @Override // kotlin.jvm.functions.Function0
@@ -578,11 +578,11 @@ public final class j extends Fragment {
         public final CreationExtras invoke() {
             androidx.lifecycle.h hVar;
             CreationExtras creationExtras;
-            Function0 function0 = this.f19958d;
+            Function0 function0 = this.f19959d;
             if (function0 != null && (creationExtras = (CreationExtras) function0.invoke()) != null) {
                 return creationExtras;
             }
-            q0 a10 = p0.a(this.f19959e);
+            q0 a10 = p0.a(this.f19960e);
             if (a10 instanceof androidx.lifecycle.h) {
                 hVar = (androidx.lifecycle.h) a10;
             } else {
@@ -599,9 +599,9 @@ public final class j extends Fragment {
         e eVar = new e(this);
         as.o oVar = as.o.f6083i;
         Lazy a10 = as.l.a(oVar, new f(eVar));
-        this.f19926e = p0.b(this, Reflection.getOrCreateKotlinClass(com.withpersona.sdk2.inquiry.internal.m.class), new g(a10), new h(null, a10), new i(this, a10));
+        this.f19927e = p0.b(this, Reflection.getOrCreateKotlinClass(com.withpersona.sdk2.inquiry.internal.m.class), new g(a10), new h(null, a10), new i(this, a10));
         Lazy a11 = as.l.a(oVar, new k(new C0251j(this)));
-        this.f19927i = p0.b(this, Reflection.getOrCreateKotlinClass(o2.class), new l(a11), new m(null, a11), new d(this, a11));
+        this.f19928i = p0.b(this, Reflection.getOrCreateKotlinClass(o2.class), new l(a11), new m(null, a11), new d(this, a11));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -654,7 +654,7 @@ public final class j extends Fragment {
             fallbackMode = FallbackMode.ALWAYS;
         }
         if (fallbackMode == FallbackMode.ALWAYS) {
-            aVar = new com.withpersona.sdk2.inquiry.internal.fallbackmode.a(c.a.f19855a);
+            aVar = new com.withpersona.sdk2.inquiry.internal.fallbackmode.a(c.a.f19856a);
         } else {
             StaticInquiryTemplate t10 = E().t();
             if (t10 instanceof LocalStaticInquiryTemplate) {
@@ -665,7 +665,7 @@ public final class j extends Fragment {
             if (localStaticInquiryTemplate != null) {
                 aVar = new com.withpersona.sdk2.inquiry.internal.fallbackmode.a(new c.b(localStaticInquiryTemplate.getResourceId()));
             } else {
-                aVar = new com.withpersona.sdk2.inquiry.internal.fallbackmode.a(c.a.f19855a);
+                aVar = new com.withpersona.sdk2.inquiry.internal.fallbackmode.a(c.a.f19856a);
             }
         }
         b bVar = new b(this);
@@ -673,8 +673,8 @@ public final class j extends Fragment {
         FragmentActivity requireActivity = requireActivity();
         Intrinsics.checkNotNullExpressionValue(requireActivity, "requireActivity(...)");
         ep.q b10 = a10.j(new ep.l(requireActivity)).e(new mp.g(G().q(), G().l(), G().w())).f(new mp.o(G().k())).n(new mp.u(G().r())).m(new qp.g(G().p())).c(new mp.b(G().i())).l(new NetworkCoreModule(E().y(), E().g(), E().m())).d(new cq.b(dVar)).k(new com.withpersona.sdk2.inquiry.internal.network.f(str, str2, str3)).a(aVar).g(new fq.f(bVar)).p(new bq.v(E().c(), E().d())).o(new mp.a0(G().s())).h(new ip.c(fallbackMode, E().f(), H().e())).i(new gq.a(G().v())).b();
-        this.f19929p = b10;
-        a.C0712a c0712a = vq.a.f51742a;
+        this.f19930p = b10;
+        a.C0712a c0712a = vq.a.f51743a;
         c0712a.b(b10.g());
         c0712a.a().b(bundle);
         String str4 = (String) G().o().f();
@@ -705,14 +705,14 @@ public final class j extends Fragment {
         i0 i0Var = new i0(requireContext2, null, 2, null);
         Lifecycle lifecycle = getLifecycle();
         Intrinsics.checkNotNullExpressionValue(lifecycle, "<get-lifecycle>(...)");
-        i0.b(i0Var, lifecycle, G().C(H()), null, new gn.a0(o0.m(as.v.a(e0.f25802a, G().E()), as.v.a(kq.b.f35164b, b10.f()))), 4, null);
-        gp.d dVar2 = this.f19928o;
+        i0.b(i0Var, lifecycle, G().C(H()), null, new gn.a0(o0.m(as.v.a(e0.f25803a, G().E()), as.v.a(kq.b.f35165b, b10.f()))), 4, null);
+        gp.d dVar2 = this.f19929o;
         if (dVar2 == null) {
             Intrinsics.throwUninitializedPropertyAccessException("binding");
             dVar2 = null;
         }
         dVar2.getRoot().removeAllViews();
-        gp.d dVar3 = this.f19928o;
+        gp.d dVar3 = this.f19929o;
         if (dVar3 == null) {
             Intrinsics.throwUninitializedPropertyAccessException("binding");
             dVar3 = null;
@@ -725,7 +725,7 @@ public final class j extends Fragment {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final com.withpersona.sdk2.inquiry.internal.h E() {
-        return (com.withpersona.sdk2.inquiry.internal.h) this.f19925d.getValue();
+        return (com.withpersona.sdk2.inquiry.internal.h) this.f19926d.getValue();
     }
 
     private final dp.a F() {
@@ -736,11 +736,11 @@ public final class j extends Fragment {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final com.withpersona.sdk2.inquiry.internal.m G() {
-        return (com.withpersona.sdk2.inquiry.internal.m) this.f19926e.getValue();
+        return (com.withpersona.sdk2.inquiry.internal.m) this.f19927e.getValue();
     }
 
     private final o2 H() {
-        return (o2) this.f19927i.getValue();
+        return (o2) this.f19928i.getValue();
     }
 
     private final boolean I() {
@@ -757,8 +757,8 @@ public final class j extends Fragment {
             Bundle bundle = new Bundle();
             bundle.putString("PERSONA_ACTIVITY_RESULT", "INQUIRY_ERROR");
             bundle.putString("ERROR_DEBUG_MESSAGE_KEY", "Invalid session token.");
-            bundle.putParcelable("ERROR_CODE_KEY", yq.d.f55728q);
-            Unit unit = Unit.f31987a;
+            bundle.putParcelable("ERROR_CODE_KEY", yq.d.f55729q);
+            Unit unit = Unit.f31988a;
             androidx.fragment.app.v.a(this, p10, bundle);
             getParentFragmentManager().e1();
             return false;
@@ -773,7 +773,7 @@ public final class j extends Fragment {
             if (w10 != null && w10.intValue() != 0) {
                 return w10.intValue();
             }
-            return tp.f.f49810b;
+            return tp.f.f49811b;
         }
         return 0;
     }
@@ -784,7 +784,7 @@ public final class j extends Fragment {
         ep.g d10;
         Intrinsics.checkNotNullParameter(cancelOutput, "cancelOutput");
         String m10 = cancelOutput.m();
-        if (m10 != null && (qVar = this.f19929p) != null && (d10 = qVar.d()) != null) {
+        if (m10 != null && (qVar = this.f19930p) != null && (d10 = qVar.d()) != null) {
             d10.i(m10);
         }
         String p10 = E().p();
@@ -794,19 +794,19 @@ public final class j extends Fragment {
             bundle.putString("INQUIRY_ID_KEY", cancelOutput.c());
             String m11 = cancelOutput.m();
             if (m11 != null) {
-                str = com.withpersona.sdk2.inquiry.internal.h.f19918b.a(m11);
+                str = com.withpersona.sdk2.inquiry.internal.h.f19919b.a(m11);
             } else {
                 str = null;
             }
             bundle.putString("SESSION_TOKEN_KEY", str);
         }
-        Unit unit = Unit.f31987a;
+        Unit unit = Unit.f31988a;
         androidx.fragment.app.v.a(this, p10, bundle);
     }
 
     @Override // androidx.fragment.app.Fragment
     public Context getContext() {
-        Context context = this.f19930q;
+        Context context = this.f19931q;
         if (context == null) {
             return super.getContext();
         }
@@ -823,12 +823,12 @@ public final class j extends Fragment {
             if (w10 != null && w10.intValue() != 0) {
                 i10 = w10.intValue();
             } else {
-                i10 = tp.f.f49810b;
+                i10 = tp.f.f49811b;
             }
-            this.f19930q = new ContextThemeWrapper(context, i10);
+            this.f19931q = new ContextThemeWrapper(context, i10);
             return;
         }
-        this.f19930q = context;
+        this.f19931q = context;
     }
 
     @Override // androidx.fragment.app.Fragment
@@ -848,7 +848,7 @@ public final class j extends Fragment {
         Intrinsics.checkNotNullParameter(inflater, "inflater");
         super.onCreateView(inflater, viewGroup, bundle);
         gp.d c10 = gp.d.c(inflater, viewGroup, false);
-        this.f19928o = c10;
+        this.f19929o = c10;
         if (c10 == null) {
             Intrinsics.throwUninitializedPropertyAccessException("binding");
             c10 = null;
@@ -871,7 +871,7 @@ public final class j extends Fragment {
     @Override // androidx.fragment.app.Fragment
     public void onDetach() {
         super.onDetach();
-        this.f19930q = null;
+        this.f19931q = null;
     }
 
     @Override // androidx.fragment.app.Fragment
@@ -884,7 +884,7 @@ public final class j extends Fragment {
     public void onSaveInstanceState(Bundle outState) {
         Intrinsics.checkNotNullParameter(outState, "outState");
         super.onSaveInstanceState(outState);
-        vq.a.f51742a.a().e(outState);
+        vq.a.f51743a.a().e(outState);
     }
 
     @Override // androidx.fragment.app.Fragment
@@ -930,8 +930,8 @@ public final class j extends Fragment {
                 Bundle bundle2 = new Bundle();
                 bundle2.putString("PERSONA_ACTIVITY_RESULT", "INQUIRY_ERROR");
                 bundle2.putString("ERROR_DEBUG_MESSAGE_KEY", "A fatal exception occurred.");
-                bundle2.putParcelable("ERROR_CODE_KEY", yq.d.f55734w);
-                Unit unit = Unit.f31987a;
+                bundle2.putParcelable("ERROR_CODE_KEY", yq.d.f55735w);
+                Unit unit = Unit.f31988a;
                 androidx.fragment.app.v.a(this, p10, bundle2);
                 return;
             }

@@ -5,14 +5,14 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f27760a;
+    private final String f27761a;
 
     public e(String type) {
         Intrinsics.checkNotNullParameter(type, "type");
-        this.f27760a = type;
+        this.f27761a = type;
     }
 
     public String a() {
-        return this.f27760a;
+        return this.f27761a;
     }
 }

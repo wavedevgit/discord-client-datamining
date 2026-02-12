@@ -7,10 +7,10 @@ import com.squareup.moshi.t;
 public final class b extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f21824a;
+    private final h f21825a;
 
     public b(h hVar) {
-        this.f21824a = hVar;
+        this.f21825a = hVar;
     }
 
     @Override // com.squareup.moshi.h
@@ -18,7 +18,7 @@ public final class b extends h {
         if (mVar.s() == m.c.NULL) {
             return mVar.m();
         }
-        return this.f21824a.fromJson(mVar);
+        return this.f21825a.fromJson(mVar);
     }
 
     @Override // com.squareup.moshi.h
@@ -26,11 +26,11 @@ public final class b extends h {
         if (obj == null) {
             tVar.Q();
         } else {
-            this.f21824a.toJson(tVar, obj);
+            this.f21825a.toJson(tVar, obj);
         }
     }
 
     public String toString() {
-        return this.f21824a + ".nullSafe()";
+        return this.f21825a + ".nullSafe()";
     }
 }

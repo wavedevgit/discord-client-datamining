@@ -163,22 +163,22 @@ public final class SafetySystemNotificationEmbed {
         compositeEncoder.y(serialDescriptor, 2, safetySystemNotificationEmbed.subtitleText);
         compositeEncoder.y(serialDescriptor, 3, safetySystemNotificationEmbed.descriptionText);
         if (compositeEncoder.z(serialDescriptor, 4) || safetySystemNotificationEmbed.primaryCtaText != null) {
-            compositeEncoder.o(serialDescriptor, 4, n2.f50032a, safetySystemNotificationEmbed.primaryCtaText);
+            compositeEncoder.o(serialDescriptor, 4, n2.f50033a, safetySystemNotificationEmbed.primaryCtaText);
         }
         if (compositeEncoder.z(serialDescriptor, 5) || safetySystemNotificationEmbed.primaryCtaType != null) {
-            compositeEncoder.o(serialDescriptor, 5, n2.f50032a, safetySystemNotificationEmbed.primaryCtaType);
+            compositeEncoder.o(serialDescriptor, 5, n2.f50033a, safetySystemNotificationEmbed.primaryCtaType);
         }
         if (compositeEncoder.z(serialDescriptor, 6) || safetySystemNotificationEmbed.primaryCtaKey != null) {
-            compositeEncoder.o(serialDescriptor, 6, n2.f50032a, safetySystemNotificationEmbed.primaryCtaKey);
+            compositeEncoder.o(serialDescriptor, 6, n2.f50033a, safetySystemNotificationEmbed.primaryCtaKey);
         }
         if (compositeEncoder.z(serialDescriptor, 7) || safetySystemNotificationEmbed.secondaryCtaText != null) {
-            compositeEncoder.o(serialDescriptor, 7, n2.f50032a, safetySystemNotificationEmbed.secondaryCtaText);
+            compositeEncoder.o(serialDescriptor, 7, n2.f50033a, safetySystemNotificationEmbed.secondaryCtaText);
         }
         if (compositeEncoder.z(serialDescriptor, 8) || safetySystemNotificationEmbed.secondaryCtaType != null) {
-            compositeEncoder.o(serialDescriptor, 8, n2.f50032a, safetySystemNotificationEmbed.secondaryCtaType);
+            compositeEncoder.o(serialDescriptor, 8, n2.f50033a, safetySystemNotificationEmbed.secondaryCtaType);
         }
         if (compositeEncoder.z(serialDescriptor, 9) || safetySystemNotificationEmbed.secondaryCtaKey != null) {
-            compositeEncoder.o(serialDescriptor, 9, n2.f50032a, safetySystemNotificationEmbed.secondaryCtaKey);
+            compositeEncoder.o(serialDescriptor, 9, n2.f50033a, safetySystemNotificationEmbed.secondaryCtaKey);
         }
         compositeEncoder.k(serialDescriptor, 10, (qt.o) lazyArr[10].getValue(), safetySystemNotificationEmbed.footerTheme);
     }

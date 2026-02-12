@@ -8,23 +8,23 @@ import kotlin.jvm.internal.Intrinsics;
 public final class w implements ThreadFactory {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f38735a;
+    private final int f38736a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f38736b;
+    private final String f38737b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f38737c;
+    private final boolean f38738c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final AtomicInteger f38738d;
+    private final AtomicInteger f38739d;
 
     public w(int i10, String prefix, boolean z10) {
         Intrinsics.checkNotNullParameter(prefix, "prefix");
-        this.f38735a = i10;
-        this.f38736b = prefix;
-        this.f38737c = z10;
-        this.f38738d = new AtomicInteger(1);
+        this.f38736a = i10;
+        this.f38737b = prefix;
+        this.f38738c = z10;
+        this.f38739d = new AtomicInteger(1);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -32,7 +32,7 @@ public final class w implements ThreadFactory {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(runnable, "$runnable");
         try {
-            Process.setThreadPriority(this$0.f38735a);
+            Process.setThreadPriority(this$0.f38736a);
         } catch (Throwable unused) {
         }
         runnable.run();
@@ -48,10 +48,10 @@ public final class w implements ThreadFactory {
                 w.b(w.this, runnable);
             }
         };
-        if (this.f38737c) {
-            str = this.f38736b + "-" + this.f38738d.getAndIncrement();
+        if (this.f38738c) {
+            str = this.f38737b + "-" + this.f38739d.getAndIncrement();
         } else {
-            str = this.f38736b;
+            str = this.f38737b;
         }
         return new Thread(runnable2, str);
     }

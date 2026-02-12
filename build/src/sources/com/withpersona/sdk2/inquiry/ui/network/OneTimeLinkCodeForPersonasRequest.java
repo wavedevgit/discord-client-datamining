@@ -13,10 +13,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class OneTimeLinkCodeForPersonasRequest {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f20829b = new a(null);
+    public static final a f20830b = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Meta f20830a;
+    private final Meta f20831a;
 
     @i(generateAdapter = true)
     @kotlin.Metadata(d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\b\u0007\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005R\u0017\u0010\u0003\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0006\u0010\u0007\u001a\u0004\b\u0006\u0010\b¨\u0006\t"}, d2 = {"Lcom/withpersona/sdk2/inquiry/ui/network/OneTimeLinkCodeForPersonasRequest$Meta;", "", "Lcom/withpersona/sdk2/inquiry/ui/network/OneTimeLinkCodeForPersonasRequest$TransitionParams;", "transitionParams", "<init>", "(Lcom/withpersona/sdk2/inquiry/ui/network/OneTimeLinkCodeForPersonasRequest$TransitionParams;)V", "a", "Lcom/withpersona/sdk2/inquiry/ui/network/OneTimeLinkCodeForPersonasRequest$TransitionParams;", "()Lcom/withpersona/sdk2/inquiry/ui/network/OneTimeLinkCodeForPersonasRequest$TransitionParams;", "ui_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -24,15 +24,15 @@ public final class OneTimeLinkCodeForPersonasRequest {
     public static final class Meta {
 
         /* renamed from: a  reason: collision with root package name */
-        private final TransitionParams f20831a;
+        private final TransitionParams f20832a;
 
         public Meta(TransitionParams transitionParams) {
             Intrinsics.checkNotNullParameter(transitionParams, "transitionParams");
-            this.f20831a = transitionParams;
+            this.f20832a = transitionParams;
         }
 
         public final TransitionParams a() {
-            return this.f20831a;
+            return this.f20832a;
         }
     }
 
@@ -42,24 +42,24 @@ public final class OneTimeLinkCodeForPersonasRequest {
     public static final class NamedComponentParam {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f20832a;
+        private final String f20833a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final ComponentParam f20833b;
+        private final ComponentParam f20834b;
 
         public NamedComponentParam(String name, ComponentParam value) {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(value, "value");
-            this.f20832a = name;
-            this.f20833b = value;
+            this.f20833a = name;
+            this.f20834b = value;
         }
 
         public final String a() {
-            return this.f20832a;
+            return this.f20833a;
         }
 
         public final ComponentParam b() {
-            return this.f20833b;
+            return this.f20834b;
         }
 
         public boolean equals(Object obj) {
@@ -68,18 +68,18 @@ public final class OneTimeLinkCodeForPersonasRequest {
             }
             if (obj instanceof NamedComponentParam) {
                 NamedComponentParam namedComponentParam = (NamedComponentParam) obj;
-                return Intrinsics.areEqual(this.f20832a, namedComponentParam.f20832a) && Intrinsics.areEqual(this.f20833b, namedComponentParam.f20833b);
+                return Intrinsics.areEqual(this.f20833a, namedComponentParam.f20833a) && Intrinsics.areEqual(this.f20834b, namedComponentParam.f20834b);
             }
             return false;
         }
 
         public int hashCode() {
-            return (this.f20832a.hashCode() * 31) + this.f20833b.hashCode();
+            return (this.f20833a.hashCode() * 31) + this.f20834b.hashCode();
         }
 
         public String toString() {
-            String str = this.f20832a;
-            ComponentParam componentParam = this.f20833b;
+            String str = this.f20833a;
+            ComponentParam componentParam = this.f20834b;
             return "NamedComponentParam(name=" + str + ", value=" + componentParam + ")";
         }
     }
@@ -90,14 +90,14 @@ public final class OneTimeLinkCodeForPersonasRequest {
     public static final class TransitionParams {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f20834a;
+        private final List f20835a;
 
         public TransitionParams(List list) {
-            this.f20834a = list;
+            this.f20835a = list;
         }
 
         public final List a() {
-            return this.f20834a;
+            return this.f20835a;
         }
     }
 
@@ -122,10 +122,10 @@ public final class OneTimeLinkCodeForPersonasRequest {
 
     public OneTimeLinkCodeForPersonasRequest(Meta meta) {
         Intrinsics.checkNotNullParameter(meta, "meta");
-        this.f20830a = meta;
+        this.f20831a = meta;
     }
 
     public final Meta a() {
-        return this.f20830a;
+        return this.f20831a;
     }
 }

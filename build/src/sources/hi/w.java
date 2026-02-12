@@ -8,7 +8,7 @@ import android.os.Build;
 public abstract class w {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final i f27376a = new i("PhoneskyVerificationUtils");
+    private static final i f27377a = new i("PhoneskyVerificationUtils");
 
     public static boolean a(Context context) {
         try {
@@ -27,7 +27,7 @@ public abstract class w {
                         }
                     }
                 } else {
-                    f27376a.e("Phonesky package is not signed -- possibly self-built package. Could not verify.", new Object[0]);
+                    f27377a.e("Phonesky package is not signed -- possibly self-built package. Could not verify.", new Object[0]);
                 }
             }
         } catch (PackageManager.NameNotFoundException unused) {

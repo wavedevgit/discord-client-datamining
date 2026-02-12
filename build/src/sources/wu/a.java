@@ -12,7 +12,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a implements k {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final C0757a f53981a = new C0757a(null);
+    public static final C0757a f53982a = new C0757a(null);
 
     /* renamed from: wu.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -29,7 +29,7 @@ public final class a implements k {
         }
 
         public final boolean b() {
-            if (vu.h.f52015a.h() && Build.VERSION.SDK_INT >= 29) {
+            if (vu.h.f52016a.h() && Build.VERSION.SDK_INT >= 29) {
                 return true;
             }
             return false;
@@ -41,7 +41,7 @@ public final class a implements k {
 
     @Override // wu.k
     public boolean a() {
-        return f53981a.b();
+        return f53982a.b();
     }
 
     @Override // wu.k
@@ -73,7 +73,7 @@ public final class a implements k {
         try {
             SSLSockets.setUseSessionTickets(sslSocket, true);
             SSLParameters sSLParameters = sslSocket.getSSLParameters();
-            sSLParameters.setApplicationProtocols((String[]) vu.h.f52015a.b(protocols).toArray(new String[0]));
+            sSLParameters.setApplicationProtocols((String[]) vu.h.f52016a.b(protocols).toArray(new String[0]));
             sslSocket.setSSLParameters(sSLParameters);
         } catch (IllegalArgumentException e10) {
             throw new IOException("Android internal error", e10);

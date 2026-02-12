@@ -9,14 +9,14 @@ import java.util.HashMap;
 public abstract class q extends e {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f17886d;
+    private String f17887d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final FilterRegion f17887e;
+    public final FilterRegion f17888e;
 
     public q(ReactContext reactContext) {
         super(reactContext);
-        this.f17887e = new FilterRegion();
+        this.f17888e = new FilterRegion();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -36,31 +36,31 @@ public abstract class q extends e {
     public abstract Bitmap d(HashMap hashMap, Bitmap bitmap);
 
     public String e() {
-        return this.f17886d;
+        return this.f17887d;
     }
 
     public void g(Dynamic dynamic) {
-        this.f17887e.setHeight(dynamic);
+        this.f17888e.setHeight(dynamic);
         invalidate();
     }
 
     public void h(String str) {
-        this.f17886d = str;
+        this.f17887d = str;
         invalidate();
     }
 
     public void i(Dynamic dynamic) {
-        this.f17887e.setWidth(dynamic);
+        this.f17888e.setWidth(dynamic);
         invalidate();
     }
 
     public void j(Dynamic dynamic) {
-        this.f17887e.setX(dynamic);
+        this.f17888e.setX(dynamic);
         invalidate();
     }
 
     public void k(Dynamic dynamic) {
-        this.f17887e.setY(dynamic);
+        this.f17888e.setY(dynamic);
         invalidate();
     }
 

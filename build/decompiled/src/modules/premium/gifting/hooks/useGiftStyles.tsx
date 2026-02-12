@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/gifting/hooks/useGiftStyles.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Environment: var1
-        _fun75362: for (var _fun75362_ip = 0;;) switch (_fun75362_ip) {
+        _fun60504: for (var _fun60504_ip = 0;;) switch (_fun60504_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var3)(var0);
                 var0 = _closure1_slot2;
                 if (!var2) {
-                    _fun75362_ip = 68;
-                    continue _fun75362
+                    _fun60504_ip = 68;
+                    continue _fun60504
                 }
             case 47:
                 var1 = _closure1_slot3;
@@ -59,4 +59,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGiftStyles = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1623, 9486, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1623, 7471, 2]);

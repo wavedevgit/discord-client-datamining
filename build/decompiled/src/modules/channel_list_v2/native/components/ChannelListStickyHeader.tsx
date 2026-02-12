@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/channel_list_v2/native/components/ChannelListStickyHeader.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun102395: for (var _fun102395_ip = 0;;) switch (_fun102395_ip) {
+        _fun102380: for (var _fun102380_ip = 0;;) switch (_fun102380_ip) {
             case 0:
                 var1 = arg0;
                 var9 = var1.guild;
@@ -148,8 +148,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var1.showExtraButtons;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun102395_ip = 28;
-                    continue _fun102395
+                    _fun102380_ip = 28;
+                    continue _fun102380
                 }
             case 26:
                 var7 = true;
@@ -284,16 +284,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var5 != var27;
                 var11 = null;
                 if (!var12) {
-                    _fun102395_ip = 802;
-                    continue _fun102395
+                    _fun102380_ip = 802;
+                    continue _fun102380
                 }
             case 540:
                 var12 = 0;
                 var12 = var27 > var12;
                 var11 = null;
                 if (!var12) {
-                    _fun102395_ip = 802;
-                    continue _fun102395
+                    _fun102380_ip = 802;
+                    continue _fun102380
                 }
             case 554:
                 var14 = _closure1_slot6;
@@ -364,8 +364,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[0] = var8;
                 var5 = null;
                 if (!var7) {
-                    _fun102395_ip = 879;
-                    continue _fun102395
+                    _fun102380_ip = 879;
+                    continue _fun102380
                 }
             case 829:
                 var8 = _closure1_slot5;
@@ -390,4 +390,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3717, 1297, 671, 12618, 13317, 4914, 1234, 3938, 7452, 4092, 7796, 13243, 11726, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3717, 1297, 671, 12633, 13313, 4882, 1234, 3938, 8398, 4092, 8440, 13247, 11419, 2]);

@@ -5,7 +5,7 @@ import bj.c;
 final class ga implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ga f39223a = new ga();
+    static final ga f39224a = new ga();
 
     static {
         c.b a10 = bj.c.a("errorCode");

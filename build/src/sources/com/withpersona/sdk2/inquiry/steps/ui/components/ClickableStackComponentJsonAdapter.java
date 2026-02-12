@@ -21,46 +21,46 @@ import pq.k5;
 public final class ClickableStackComponentJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20586a;
+    private final m.b f20587a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f20587b;
+    private final h f20588b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f20588c;
+    private final h f20589c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final h f20589d;
+    private final h f20590d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final h f20590e;
+    private final h f20591e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final h f20591f;
+    private final h f20592f;
 
     /* renamed from: g  reason: collision with root package name */
-    private volatile Constructor f20592g;
+    private volatile Constructor f20593g;
 
     public ClickableStackComponentJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a(StackTraceHelper.NAME_KEY, "children", ViewProps.HIDDEN, "disabled", "styles", "isActive");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20586a = a10;
+        this.f20587a = a10;
         h f10 = moshi.f(String.class, x0.d(), StackTraceHelper.NAME_KEY);
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20587b = f10;
+        this.f20588b = f10;
         h f11 = moshi.f(a0.j(List.class, k5.class), x0.d(), "children");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f20588c = f11;
+        this.f20589c = f11;
         h f12 = moshi.f(JsonLogicBoolean.class, x0.d(), ViewProps.HIDDEN);
         Intrinsics.checkNotNullExpressionValue(f12, "adapter(...)");
-        this.f20589d = f12;
+        this.f20590d = f12;
         h f13 = moshi.f(ClickableStack.ClickableStackComponentStyle.class, x0.d(), "styles");
         Intrinsics.checkNotNullExpressionValue(f13, "adapter(...)");
-        this.f20590e = f13;
+        this.f20591e = f13;
         h f14 = moshi.f(Boolean.TYPE, x0.d(), "isActive");
         Intrinsics.checkNotNullExpressionValue(f14, "adapter(...)");
-        this.f20591f = f14;
+        this.f20592f = f14;
     }
 
     @Override // com.squareup.moshi.h
@@ -77,36 +77,36 @@ public final class ClickableStackComponentJsonAdapter extends h {
         int i10 = -1;
         JsonLogicBoolean jsonLogicBoolean2 = null;
         while (reader.hasNext()) {
-            switch (reader.J(this.f20586a)) {
+            switch (reader.J(this.f20587a)) {
                 case -1:
                     reader.z0();
                     reader.T();
                     break;
                 case 0:
-                    str = (String) this.f20587b.fromJson(reader);
+                    str = (String) this.f20588b.fromJson(reader);
                     if (str != null) {
                         break;
                     } else {
                         throw dn.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
                     }
                 case 1:
-                    list = (List) this.f20588c.fromJson(reader);
+                    list = (List) this.f20589c.fromJson(reader);
                     if (list != null) {
                         break;
                     } else {
                         throw dn.c.x("children", "children", reader);
                     }
                 case 2:
-                    jsonLogicBoolean2 = (JsonLogicBoolean) this.f20589d.fromJson(reader);
+                    jsonLogicBoolean2 = (JsonLogicBoolean) this.f20590d.fromJson(reader);
                     break;
                 case 3:
-                    jsonLogicBoolean = (JsonLogicBoolean) this.f20589d.fromJson(reader);
+                    jsonLogicBoolean = (JsonLogicBoolean) this.f20590d.fromJson(reader);
                     break;
                 case 4:
-                    clickableStackComponentStyle = (ClickableStack.ClickableStackComponentStyle) this.f20590e.fromJson(reader);
+                    clickableStackComponentStyle = (ClickableStack.ClickableStackComponentStyle) this.f20591e.fromJson(reader);
                     break;
                 case 5:
-                    bool2 = (Boolean) this.f20591f.fromJson(reader);
+                    bool2 = (Boolean) this.f20592f.fromJson(reader);
                     if (bool2 != null) {
                         i10 = -33;
                         break;
@@ -125,10 +125,10 @@ public final class ClickableStackComponentJsonAdapter extends h {
             }
             throw dn.c.o(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
         }
-        Constructor constructor = this.f20592g;
+        Constructor constructor = this.f20593g;
         if (constructor == null) {
-            constructor = ClickableStackComponent.class.getDeclaredConstructor(String.class, List.class, JsonLogicBoolean.class, JsonLogicBoolean.class, ClickableStack.ClickableStackComponentStyle.class, Boolean.TYPE, Integer.TYPE, dn.c.f21827c);
-            this.f20592g = constructor;
+            constructor = ClickableStackComponent.class.getDeclaredConstructor(String.class, List.class, JsonLogicBoolean.class, JsonLogicBoolean.class, ClickableStack.ClickableStackComponentStyle.class, Boolean.TYPE, Integer.TYPE, dn.c.f21828c);
+            this.f20593g = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
         if (str != null) {
@@ -151,17 +151,17 @@ public final class ClickableStackComponentJsonAdapter extends h {
         if (clickableStackComponent != null) {
             writer.i();
             writer.J(StackTraceHelper.NAME_KEY);
-            this.f20587b.toJson(writer, clickableStackComponent.getName());
+            this.f20588b.toJson(writer, clickableStackComponent.getName());
             writer.J("children");
-            this.f20588c.toJson(writer, clickableStackComponent.getChildren());
+            this.f20589c.toJson(writer, clickableStackComponent.getChildren());
             writer.J(ViewProps.HIDDEN);
-            this.f20589d.toJson(writer, clickableStackComponent.getHidden());
+            this.f20590d.toJson(writer, clickableStackComponent.getHidden());
             writer.J("disabled");
-            this.f20589d.toJson(writer, clickableStackComponent.getDisabled());
+            this.f20590d.toJson(writer, clickableStackComponent.getDisabled());
             writer.J("styles");
-            this.f20590e.toJson(writer, clickableStackComponent.c());
+            this.f20591e.toJson(writer, clickableStackComponent.c());
             writer.J("isActive");
-            this.f20591f.toJson(writer, Boolean.valueOf(clickableStackComponent.e()));
+            this.f20592f.toJson(writer, Boolean.valueOf(clickableStackComponent.e()));
             writer.s();
             return;
         }

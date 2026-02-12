@@ -15,10 +15,10 @@ import kotlinx.serialization.KSerializer;
 final class q implements s1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Function2 f50055a;
+    private final Function2 f50056a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r f50056b;
+    private final r f50057b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements Function0 {
@@ -30,8 +30,8 @@ final class q implements s1 {
 
     public q(Function2 compute) {
         Intrinsics.checkNotNullParameter(compute, "compute");
-        this.f50055a = compute;
-        this.f50056b = new r();
+        this.f50056a = compute;
+        this.f50057b = new r();
     }
 
     @Override // tt.s1
@@ -40,10 +40,10 @@ final class q implements s1 {
         Object b10;
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(types, "types");
-        Object obj = this.f50056b.get(ns.a.b(key));
+        Object obj = this.f50057b.get(ns.a.b(key));
         Intrinsics.checkNotNullExpressionValue(obj, "get(...)");
         e1 e1Var = (e1) obj;
-        Object obj2 = e1Var.f49982a.get();
+        Object obj2 = e1Var.f49983a.get();
         if (obj2 == null) {
             obj2 = e1Var.a(new a());
         }
@@ -53,14 +53,14 @@ final class q implements s1 {
         for (KType kType : list) {
             arrayList.add(new r0(kType));
         }
-        concurrentHashMap = r1Var.f50061a;
+        concurrentHashMap = r1Var.f50062a;
         Object obj3 = concurrentHashMap.get(arrayList);
         if (obj3 == null) {
             try {
-                Result.a aVar = Result.f31984e;
-                b10 = Result.b((KSerializer) this.f50055a.invoke(key, types));
+                Result.a aVar = Result.f31985e;
+                b10 = Result.b((KSerializer) this.f50056a.invoke(key, types));
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f31984e;
+                Result.a aVar2 = Result.f31985e;
                 b10 = Result.b(kotlin.c.a(th2));
             }
             Result a10 = Result.a(b10);

@@ -27,7 +27,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9241id;
+    private final String f9242id;
     private final boolean isSpoiler;
     private final Void obscureOrNull;
     private final String spoilerDescription;
@@ -69,7 +69,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
             v1.b(i10, 107, ContainerComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f9241id = str;
+        this.f9242id = str;
         if ((i10 & 4) == 0) {
             this.errorText = null;
         } else {
@@ -110,7 +110,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
             i10 = containerComponent.type;
         }
         if ((i11 & 2) != 0) {
-            str = containerComponent.f9241id;
+            str = containerComponent.f9242id;
         }
         if ((i11 & 4) != 0) {
             str2 = containerComponent.errorText;
@@ -162,7 +162,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
             java.lang.String r4 = r7.getErrorText()
             if (r4 == 0) goto L29
         L20:
-            tt.n2 r4 = tt.n2.f50032a
+            tt.n2 r4 = tt.n2.f50033a
             java.lang.String r5 = r7.getErrorText()
             r8.o(r9, r1, r4, r5)
         L29:
@@ -180,14 +180,14 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
             java.lang.Integer r1 = r7.accentColor
             if (r1 == 0) goto L4a
         L43:
-            tt.p0 r1 = tt.p0.f50048a
+            tt.p0 r1 = tt.p0.f50049a
             java.lang.Integer r4 = r7.accentColor
             r8.o(r9, r0, r1, r4)
         L4a:
             r0 = 5
             boolean r1 = r7.isSpoiler
             r8.x(r9, r0, r1)
-            tt.n2 r0 = tt.n2.f50032a
+            tt.n2 r0 = tt.n2.f50033a
             java.lang.String r1 = r7.spoilerDescription
             r4 = 6
             r8.o(r9, r4, r0, r1)
@@ -199,7 +199,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
             java.lang.Integer r4 = r7.themedBackgroundColor
             if (r4 == 0) goto L6b
         L64:
-            tt.p0 r4 = tt.p0.f50048a
+            tt.p0 r4 = tt.p0.f50049a
             java.lang.Integer r5 = r7.themedBackgroundColor
             r8.o(r9, r1, r4, r5)
         L6b:
@@ -235,7 +235,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
             java.lang.Void r1 = r7.m266getObscureOrNull()
             if (r1 == 0) goto Lac
         La3:
-            tt.k1 r1 = tt.k1.f50015a
+            tt.k1 r1 = tt.k1.f50016a
             java.lang.Void r7 = r7.m266getObscureOrNull()
             r8.o(r9, r0, r1, r7)
         Lac:
@@ -250,7 +250,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
 
     @NotNull
     public final String component2() {
-        return this.f9241id;
+        return this.f9242id;
     }
 
     public final String component3() {
@@ -291,7 +291,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
         }
         if (obj instanceof ContainerComponent) {
             ContainerComponent containerComponent = (ContainerComponent) obj;
-            return this.type == containerComponent.type && Intrinsics.areEqual(this.f9241id, containerComponent.f9241id) && Intrinsics.areEqual(this.errorText, containerComponent.errorText) && Intrinsics.areEqual(this.components, containerComponent.components) && Intrinsics.areEqual(this.accentColor, containerComponent.accentColor) && this.isSpoiler == containerComponent.isSpoiler && Intrinsics.areEqual(this.spoilerDescription, containerComponent.spoilerDescription) && Intrinsics.areEqual(this.themedBackgroundColor, containerComponent.themedBackgroundColor);
+            return this.type == containerComponent.type && Intrinsics.areEqual(this.f9242id, containerComponent.f9242id) && Intrinsics.areEqual(this.errorText, containerComponent.errorText) && Intrinsics.areEqual(this.components, containerComponent.components) && Intrinsics.areEqual(this.accentColor, containerComponent.accentColor) && this.isSpoiler == containerComponent.isSpoiler && Intrinsics.areEqual(this.spoilerDescription, containerComponent.spoilerDescription) && Intrinsics.areEqual(this.themedBackgroundColor, containerComponent.themedBackgroundColor);
         }
         return false;
     }
@@ -313,7 +313,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f9241id;
+        return this.f9242id;
     }
 
     @Override // com.discord.chat.bridge.spoiler.SpoilerableData
@@ -340,7 +340,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
     }
 
     public int hashCode() {
-        int hashCode = ((Integer.hashCode(this.type) * 31) + this.f9241id.hashCode()) * 31;
+        int hashCode = ((Integer.hashCode(this.type) * 31) + this.f9242id.hashCode()) * 31;
         String str = this.errorText;
         int hashCode2 = (((hashCode + (str == null ? 0 : str.hashCode())) * 31) + this.components.hashCode()) * 31;
         Integer num = this.accentColor;
@@ -358,7 +358,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f9241id;
+        String str = this.f9242id;
         String str2 = this.errorText;
         List<Component> list = this.components;
         Integer num = this.accentColor;
@@ -384,7 +384,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(components, "components");
         this.type = i10;
-        this.f9241id = id2;
+        this.f9242id = id2;
         this.errorText = str;
         this.components = components;
         this.accentColor = num;

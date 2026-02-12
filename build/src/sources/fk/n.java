@@ -22,32 +22,32 @@ import qg.qd;
 final class n implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f23792a;
+    private boolean f23793a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Context f23793b;
+    private final Context f23794b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ek.e f23794c;
+    private final ek.e f23795c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f23795d;
+    private final int f23796d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final qd f23796e;
+    private final qd f23797e;
 
     /* renamed from: f  reason: collision with root package name */
-    private i8 f23797f;
+    private i8 f23798f;
 
     /* renamed from: g  reason: collision with root package name */
-    private i8 f23798g;
+    private i8 f23799g;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n(Context context, ek.e eVar, qd qdVar) {
-        this.f23793b = context;
-        this.f23794c = eVar;
-        this.f23795d = com.google.android.gms.common.g.f().a(context);
-        this.f23796e = qdVar;
+        this.f23794b = context;
+        this.f23795c = eVar;
+        this.f23796d = com.google.android.gms.common.g.f().a(context);
+        this.f23797e = qdVar;
     }
 
     static int a(int i10) {
@@ -84,7 +84,7 @@ final class n implements c {
         e4[] X0;
         try {
             ne neVar = new ne(aVar.l(), aVar.h(), 0, SystemClock.elapsedRealtime(), dk.b.a(aVar.k()));
-            if (aVar.g() == 35 && this.f23795d >= 201500000) {
+            if (aVar.g() == 35 && this.f23796d >= 201500000) {
                 Image.Plane[] planeArr = (Image.Plane[]) q.l(aVar.j());
                 X0 = i8Var.Y0(tf.b.W0(planeArr[0].getBuffer()), tf.b.W0(planeArr[1].getBuffer()), tf.b.W0(planeArr[2].getBuffer()), planeArr[0].getPixelStride(), planeArr[1].getPixelStride(), planeArr[2].getPixelStride(), planeArr[0].getRowStride(), planeArr[1].getRowStride(), planeArr[2].getRowStride(), neVar);
             } else {
@@ -102,28 +102,28 @@ final class n implements c {
 
     @Override // fk.c
     public final boolean b() {
-        if (this.f23797f != null || this.f23798g != null) {
+        if (this.f23798f != null || this.f23799g != null) {
             return false;
         }
         try {
-            lb e10 = ka.e(DynamiteModule.e(this.f23793b, DynamiteModule.f14540b, "com.google.android.gms.vision.dynamite").d("com.google.android.gms.vision.face.ChimeraNativeFaceDetectorCreator"));
-            tf.a W0 = tf.b.W0(this.f23793b);
-            if (this.f23794c.c() == 2) {
-                if (this.f23798g == null) {
-                    this.f23798g = e10.n0(W0, new g6(2, 2, 0, true, false, this.f23794c.a()));
+            lb e10 = ka.e(DynamiteModule.e(this.f23794b, DynamiteModule.f14541b, "com.google.android.gms.vision.dynamite").d("com.google.android.gms.vision.face.ChimeraNativeFaceDetectorCreator"));
+            tf.a W0 = tf.b.W0(this.f23794b);
+            if (this.f23795c.c() == 2) {
+                if (this.f23799g == null) {
+                    this.f23799g = e10.n0(W0, new g6(2, 2, 0, true, false, this.f23795c.a()));
                 }
-                if ((this.f23794c.d() == 2 || this.f23794c.b() == 2 || this.f23794c.e() == 2) && this.f23797f == null) {
-                    this.f23797f = e10.n0(W0, new g6(e(this.f23794c.e()), d(this.f23794c.d()), a(this.f23794c.b()), false, this.f23794c.g(), this.f23794c.a()));
+                if ((this.f23795c.d() == 2 || this.f23795c.b() == 2 || this.f23795c.e() == 2) && this.f23798f == null) {
+                    this.f23798f = e10.n0(W0, new g6(e(this.f23795c.e()), d(this.f23795c.d()), a(this.f23795c.b()), false, this.f23795c.g(), this.f23795c.a()));
                 }
-            } else if (this.f23797f == null) {
-                this.f23797f = e10.n0(W0, new g6(e(this.f23794c.e()), d(this.f23794c.d()), a(this.f23794c.b()), false, this.f23794c.g(), this.f23794c.a()));
+            } else if (this.f23798f == null) {
+                this.f23798f = e10.n0(W0, new g6(e(this.f23795c.e()), d(this.f23795c.d()), a(this.f23795c.b()), false, this.f23795c.g(), this.f23795c.a()));
             }
-            if (this.f23797f == null && this.f23798g == null && !this.f23792a) {
+            if (this.f23798f == null && this.f23799g == null && !this.f23793a) {
                 Log.d("LegacyFaceDelegate", "Request face optional module download.");
-                wj.l.c(this.f23793b, "barcode");
-                this.f23792a = true;
+                wj.l.c(this.f23794b, "barcode");
+                this.f23793a = true;
             }
-            k.c(this.f23796e, false, ca.NO_ERROR);
+            k.c(this.f23797e, false, ca.NO_ERROR);
             return false;
         } catch (RemoteException e11) {
             throw new sj.a("Failed to create legacy face detector.", 13, e11);
@@ -135,23 +135,23 @@ final class n implements c {
     @Override // fk.c
     public final Pair c(ck.a aVar) {
         List list;
-        if (this.f23797f == null && this.f23798g == null) {
+        if (this.f23798f == null && this.f23799g == null) {
             b();
         }
-        i8 i8Var = this.f23797f;
-        if (i8Var == null && this.f23798g == null) {
+        i8 i8Var = this.f23798f;
+        if (i8Var == null && this.f23799g == null) {
             throw new sj.a("Waiting for the face detection module to be downloaded. Please wait.", 14);
         }
         List list2 = null;
         if (i8Var != null) {
             list = f(i8Var, aVar);
-            if (!this.f23794c.g()) {
+            if (!this.f23795c.g()) {
                 i.m(list);
             }
         } else {
             list = null;
         }
-        i8 i8Var2 = this.f23798g;
+        i8 i8Var2 = this.f23799g;
         if (i8Var2 != null) {
             list2 = f(i8Var2, aVar);
             i.m(list2);
@@ -161,23 +161,23 @@ final class n implements c {
 
     @Override // fk.c
     public final void zzb() {
-        i8 i8Var = this.f23797f;
+        i8 i8Var = this.f23798f;
         if (i8Var != null) {
             try {
                 i8Var.W0();
             } catch (RemoteException e10) {
                 Log.e("LegacyFaceDelegate", "Failed to release legacy face detector.", e10);
             }
-            this.f23797f = null;
+            this.f23798f = null;
         }
-        i8 i8Var2 = this.f23798g;
+        i8 i8Var2 = this.f23799g;
         if (i8Var2 != null) {
             try {
                 i8Var2.W0();
             } catch (RemoteException e11) {
                 Log.e("LegacyFaceDelegate", "Failed to release legacy face detector.", e11);
             }
-            this.f23798g = null;
+            this.f23799g = null;
         }
     }
 }

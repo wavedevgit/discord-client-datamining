@@ -20,52 +20,52 @@ import pi.d;
 public final class a extends f {
 
     /* renamed from: o  reason: collision with root package name */
-    private final h0 f27923o;
+    private final h0 f27924o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final boolean f27924p;
+    private final boolean f27925p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final int f27925q;
+    private final int f27926q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final int f27926r;
+    private final int f27927r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final String f27927s;
+    private final String f27928s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final float f27928t;
+    private final float f27929t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final int f27929u;
+    private final int f27930u;
 
     public a(List list) {
         super("Tx3gDecoder");
-        this.f27923o = new h0();
+        this.f27924o = new h0();
         if (list.size() == 1 && (((byte[]) list.get(0)).length == 48 || ((byte[]) list.get(0)).length == 53)) {
             byte[] bArr = (byte[]) list.get(0);
-            this.f27925q = bArr[24];
-            this.f27926r = ((bArr[26] & 255) << 24) | ((bArr[27] & 255) << 16) | ((bArr[28] & 255) << 8) | (bArr[29] & 255);
-            this.f27927s = "Serif".equals(w0.F(bArr, 43, bArr.length - 43)) ? "serif" : "sans-serif";
+            this.f27926q = bArr[24];
+            this.f27927r = ((bArr[26] & 255) << 24) | ((bArr[27] & 255) << 16) | ((bArr[28] & 255) << 8) | (bArr[29] & 255);
+            this.f27928s = "Serif".equals(w0.F(bArr, 43, bArr.length - 43)) ? "serif" : "sans-serif";
             int i10 = bArr[25] * 20;
-            this.f27929u = i10;
+            this.f27930u = i10;
             boolean z10 = (bArr[0] & 32) != 0;
-            this.f27924p = z10;
+            this.f27925p = z10;
             if (z10) {
-                this.f27928t = w0.p(((bArr[11] & 255) | ((bArr[10] & 255) << 8)) / i10, 0.0f, 0.95f);
+                this.f27929t = w0.p(((bArr[11] & 255) | ((bArr[10] & 255) << 8)) / i10, 0.0f, 0.95f);
                 return;
             } else {
-                this.f27928t = 0.85f;
+                this.f27929t = 0.85f;
                 return;
             }
         }
-        this.f27925q = 0;
-        this.f27926r = -1;
-        this.f27927s = "sans-serif";
-        this.f27924p = false;
-        this.f27928t = 0.85f;
-        this.f27929u = -1;
+        this.f27926q = 0;
+        this.f27927r = -1;
+        this.f27928s = "sans-serif";
+        this.f27925p = false;
+        this.f27929t = 0.85f;
+        this.f27930u = -1;
     }
 
     private void B(h0 h0Var, SpannableStringBuilder spannableStringBuilder) {
@@ -91,8 +91,8 @@ public final class a extends f {
             y.i("Tx3gDecoder", "Ignoring styl with start (" + N + ") >= end (" + i10 + ").");
             return;
         }
-        E(spannableStringBuilder, H, this.f27925q, N, i10, 0);
-        D(spannableStringBuilder, q10, this.f27926r, N, i10, 0);
+        E(spannableStringBuilder, H, this.f27926q, N, i10, 0);
+        D(spannableStringBuilder, q10, this.f27927r, N, i10, 0);
     }
 
     private static void C(boolean z10) {
@@ -167,45 +167,45 @@ public final class a extends f {
         Charset P = h0Var.P();
         int f11 = N - (h0Var.f() - f10);
         if (P == null) {
-            P = d.f42737c;
+            P = d.f42738c;
         }
         return h0Var.F(f11, P);
     }
 
     @Override // ae.f
     protected g z(byte[] bArr, int i10, boolean z10) {
-        this.f27923o.S(bArr, i10);
-        String G = G(this.f27923o);
+        this.f27924o.S(bArr, i10);
+        String G = G(this.f27924o);
         if (G.isEmpty()) {
-            return b.f27930e;
+            return b.f27931e;
         }
         SpannableStringBuilder spannableStringBuilder = new SpannableStringBuilder(G);
-        E(spannableStringBuilder, this.f27925q, 0, 0, spannableStringBuilder.length(), 16711680);
-        D(spannableStringBuilder, this.f27926r, -1, 0, spannableStringBuilder.length(), 16711680);
-        F(spannableStringBuilder, this.f27927s, 0, spannableStringBuilder.length());
-        float f10 = this.f27928t;
-        while (this.f27923o.a() >= 8) {
-            int f11 = this.f27923o.f();
-            int q10 = this.f27923o.q();
-            int q11 = this.f27923o.q();
+        E(spannableStringBuilder, this.f27926q, 0, 0, spannableStringBuilder.length(), 16711680);
+        D(spannableStringBuilder, this.f27927r, -1, 0, spannableStringBuilder.length(), 16711680);
+        F(spannableStringBuilder, this.f27928s, 0, spannableStringBuilder.length());
+        float f10 = this.f27929t;
+        while (this.f27924o.a() >= 8) {
+            int f11 = this.f27924o.f();
+            int q10 = this.f27924o.q();
+            int q11 = this.f27924o.q();
             boolean z11 = true;
             if (q11 == 1937013100) {
-                if (this.f27923o.a() < 2) {
+                if (this.f27924o.a() < 2) {
                     z11 = false;
                 }
                 C(z11);
-                int N = this.f27923o.N();
+                int N = this.f27924o.N();
                 for (int i11 = 0; i11 < N; i11++) {
-                    B(this.f27923o, spannableStringBuilder);
+                    B(this.f27924o, spannableStringBuilder);
                 }
-            } else if (q11 == 1952608120 && this.f27924p) {
-                if (this.f27923o.a() < 2) {
+            } else if (q11 == 1952608120 && this.f27925p) {
+                if (this.f27924o.a() < 2) {
                     z11 = false;
                 }
                 C(z11);
-                f10 = w0.p(this.f27923o.N() / this.f27929u, 0.0f, 0.95f);
+                f10 = w0.p(this.f27924o.N() / this.f27930u, 0.0f, 0.95f);
             }
-            this.f27923o.U(f11 + q10);
+            this.f27924o.U(f11 + q10);
         }
         return new b(new b.C0009b().o(spannableStringBuilder).h(f10, 0).i(0).a());
     }

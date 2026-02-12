@@ -6,14 +6,14 @@ import kotlin.text.StringsKt;
 public final class a implements Comparable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f36040d;
+    private final int f36041d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f36041e;
+    private final int f36042e;
 
     public a(int i10, int i11) {
-        this.f36040d = i10;
-        this.f36041e = i11;
+        this.f36041d = i10;
+        this.f36042e = i11;
         if (i11 >= 0) {
             return;
         }
@@ -24,19 +24,19 @@ public final class a implements Comparable {
     /* renamed from: a */
     public int compareTo(a other) {
         Intrinsics.checkNotNullParameter(other, "other");
-        int max = Math.max(this.f36041e, other.f36041e);
+        int max = Math.max(this.f36042e, other.f36042e);
         return Intrinsics.compare(d(max), other.d(max));
     }
 
     public final int d(int i10) {
-        int i11 = this.f36041e;
+        int i11 = this.f36042e;
         if (i10 == i11) {
-            return this.f36040d;
+            return this.f36041d;
         }
         if (i10 > i11) {
-            return this.f36040d * c.b()[i10 - this.f36041e];
+            return this.f36041d * c.b()[i10 - this.f36042e];
         }
-        return this.f36040d / c.b()[this.f36041e - i10];
+        return this.f36041d / c.b()[this.f36042e - i10];
     }
 
     public boolean equals(Object obj) {
@@ -52,10 +52,10 @@ public final class a implements Comparable {
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder();
-        int i10 = c.b()[this.f36041e];
-        sb2.append(this.f36040d / i10);
+        int i10 = c.b()[this.f36042e];
+        sb2.append(this.f36041d / i10);
         sb2.append('.');
-        sb2.append(StringsKt.B0(String.valueOf(i10 + (this.f36040d % i10)), "1"));
+        sb2.append(StringsKt.B0(String.valueOf(i10 + (this.f36041d % i10)), "1"));
         String sb3 = sb2.toString();
         Intrinsics.checkNotNullExpressionValue(sb3, "toString(...)");
         return sb3;

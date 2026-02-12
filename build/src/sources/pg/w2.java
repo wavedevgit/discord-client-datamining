@@ -5,30 +5,30 @@ import bj.c;
 final class w2 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w2 f42579a = new w2();
+    static final w2 f42580a = new w2();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f42580b;
+    private static final bj.c f42581b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f42581c;
+    private static final bj.c f42582c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f42582d;
+    private static final bj.c f42583d;
 
     static {
         c.b a10 = bj.c.a("modelType");
         f fVar = new f();
         fVar.a(1);
-        f42580b = a10.b(fVar.b()).a();
+        f42581b = a10.b(fVar.b()).a();
         c.b a11 = bj.c.a("isSuccessful");
         f fVar2 = new f();
         fVar2.a(2);
-        f42581c = a11.b(fVar2.b()).a();
+        f42582c = a11.b(fVar2.b()).a();
         c.b a12 = bj.c.a("modelName");
         f fVar3 = new f();
         fVar3.a(3);
-        f42582d = a12.b(fVar3.b()).a();
+        f42583d = a12.b(fVar3.b()).a();
     }
 
     private w2() {

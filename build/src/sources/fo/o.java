@@ -3,14 +3,14 @@ package fo;
 public final class o implements lr.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final n f24061a;
+    private final n f24062a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final lr.h f24062b;
+    private final lr.h f24063b;
 
     public o(n nVar, lr.h hVar) {
-        this.f24061a = nVar;
-        this.f24062b = hVar;
+        this.f24062a = nVar;
+        this.f24063b = hVar;
     }
 
     public static ko.a a(n nVar, kr.a aVar) {
@@ -24,6 +24,6 @@ public final class o implements lr.d {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public ko.a get() {
-        return a(this.f24061a, lr.c.b(this.f24062b));
+        return a(this.f24062a, lr.c.b(this.f24063b));
     }
 }

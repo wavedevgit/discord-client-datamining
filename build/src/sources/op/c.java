@@ -6,39 +6,39 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c implements kn.f, gn.g {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f41078b;
+    private final Object f41079b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f41079c;
+    private final List f41080c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f41080d;
+    private final String f41081d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Object f41081e;
+    private final Object f41082e;
 
     public c(Object baseScreen, List modals, String compatibilityKey) {
         Intrinsics.checkNotNullParameter(baseScreen, "baseScreen");
         Intrinsics.checkNotNullParameter(modals, "modals");
         Intrinsics.checkNotNullParameter(compatibilityKey, "compatibilityKey");
-        this.f41078b = baseScreen;
-        this.f41079c = modals;
-        this.f41080d = compatibilityKey;
-        this.f41081e = baseScreen;
+        this.f41079b = baseScreen;
+        this.f41080c = modals;
+        this.f41081d = compatibilityKey;
+        this.f41082e = baseScreen;
     }
 
     @Override // kn.f
     public List a() {
-        return this.f41079c;
+        return this.f41080c;
     }
 
     @Override // kn.f
     public Object b() {
-        return this.f41081e;
+        return this.f41082e;
     }
 
     @Override // gn.g
     public String c() {
-        return this.f41080d;
+        return this.f41081d;
     }
 }

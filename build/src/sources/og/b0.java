@@ -7,29 +7,29 @@ import java.util.Map;
 final class b0 implements Iterator {
 
     /* renamed from: d  reason: collision with root package name */
-    Map.Entry f39101d;
+    Map.Entry f39102d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ Iterator f39102e;
+    final /* synthetic */ Iterator f39103e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ c0 f39103i;
+    final /* synthetic */ c0 f39104i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b0(c0 c0Var, Iterator it) {
-        this.f39102e = it;
-        this.f39103i = c0Var;
+        this.f39103e = it;
+        this.f39104i = c0Var;
     }
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        return this.f39102e.hasNext();
+        return this.f39103e.hasNext();
     }
 
     @Override // java.util.Iterator
     public final Object next() {
-        Map.Entry entry = (Map.Entry) this.f39102e.next();
-        this.f39101d = entry;
+        Map.Entry entry = (Map.Entry) this.f39103e.next();
+        this.f39102d = entry;
         return entry.getKey();
     }
 
@@ -37,18 +37,18 @@ final class b0 implements Iterator {
     public final void remove() {
         boolean z10;
         int i10;
-        if (this.f39101d != null) {
+        if (this.f39102d != null) {
             z10 = true;
         } else {
             z10 = false;
         }
         t.e(z10, "no calls to next() since the last call to remove()");
-        Collection collection = (Collection) this.f39101d.getValue();
-        this.f39102e.remove();
-        i0 i0Var = this.f39103i.f39135e;
-        i10 = i0Var.f39275o;
-        i0Var.f39275o = i10 - collection.size();
+        Collection collection = (Collection) this.f39102d.getValue();
+        this.f39103e.remove();
+        i0 i0Var = this.f39104i.f39136e;
+        i10 = i0Var.f39276o;
+        i0Var.f39276o = i10 - collection.size();
         collection.clear();
-        this.f39101d = null;
+        this.f39102d = null;
     }
 }

@@ -21,55 +21,55 @@ public interface FallbackModeService {
     public static final class SessionIdRequest {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f19818a;
+        private final String f19819a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f19819b;
+        private final String f19820b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f19820c;
+        private final String f19821c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f19821d;
+        private final String f19822d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f19822e;
+        private final String f19823e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final String f19823f;
+        private final String f19824f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final String f19824g;
+        private final String f19825g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final InquiryFieldMap f19825h;
+        private final InquiryFieldMap f19826h;
 
         /* renamed from: i  reason: collision with root package name */
-        private final String f19826i;
+        private final String f19827i;
 
         public SessionIdRequest(@com.squareup.moshi.g(name = "inquiry-template-id") @NotNull String inquiryTemplateId, @com.squareup.moshi.g(name = "inquiry-template-version-id") String str, @com.squareup.moshi.g(name = "inquiry-id") String str2, @com.squareup.moshi.g(name = "reference-id") String str3, @com.squareup.moshi.g(name = "account-id") String str4, String str5, @com.squareup.moshi.g(name = "environment-id") String str6, InquiryFieldMap inquiryFieldMap, @com.squareup.moshi.g(name = "theme-set-id") String str7) {
             Intrinsics.checkNotNullParameter(inquiryTemplateId, "inquiryTemplateId");
-            this.f19818a = inquiryTemplateId;
-            this.f19819b = str;
-            this.f19820c = str2;
-            this.f19821d = str3;
-            this.f19822e = str4;
-            this.f19823f = str5;
-            this.f19824g = str6;
-            this.f19825h = inquiryFieldMap;
-            this.f19826i = str7;
+            this.f19819a = inquiryTemplateId;
+            this.f19820b = str;
+            this.f19821c = str2;
+            this.f19822d = str3;
+            this.f19823e = str4;
+            this.f19824f = str5;
+            this.f19825g = str6;
+            this.f19826h = inquiryFieldMap;
+            this.f19827i = str7;
         }
 
         public final String a() {
-            return this.f19822e;
+            return this.f19823e;
         }
 
         public final String b() {
-            return this.f19823f;
+            return this.f19824f;
         }
 
         public final String c() {
-            return this.f19824g;
+            return this.f19825g;
         }
 
         @NotNull
@@ -79,11 +79,11 @@ public interface FallbackModeService {
         }
 
         public final InquiryFieldMap d() {
-            return this.f19825h;
+            return this.f19826h;
         }
 
         public final String e() {
-            return this.f19820c;
+            return this.f19821c;
         }
 
         public boolean equals(Object obj) {
@@ -92,57 +92,57 @@ public interface FallbackModeService {
             }
             if (obj instanceof SessionIdRequest) {
                 SessionIdRequest sessionIdRequest = (SessionIdRequest) obj;
-                return Intrinsics.areEqual(this.f19818a, sessionIdRequest.f19818a) && Intrinsics.areEqual(this.f19819b, sessionIdRequest.f19819b) && Intrinsics.areEqual(this.f19820c, sessionIdRequest.f19820c) && Intrinsics.areEqual(this.f19821d, sessionIdRequest.f19821d) && Intrinsics.areEqual(this.f19822e, sessionIdRequest.f19822e) && Intrinsics.areEqual(this.f19823f, sessionIdRequest.f19823f) && Intrinsics.areEqual(this.f19824g, sessionIdRequest.f19824g) && Intrinsics.areEqual(this.f19825h, sessionIdRequest.f19825h) && Intrinsics.areEqual(this.f19826i, sessionIdRequest.f19826i);
+                return Intrinsics.areEqual(this.f19819a, sessionIdRequest.f19819a) && Intrinsics.areEqual(this.f19820b, sessionIdRequest.f19820b) && Intrinsics.areEqual(this.f19821c, sessionIdRequest.f19821c) && Intrinsics.areEqual(this.f19822d, sessionIdRequest.f19822d) && Intrinsics.areEqual(this.f19823e, sessionIdRequest.f19823e) && Intrinsics.areEqual(this.f19824f, sessionIdRequest.f19824f) && Intrinsics.areEqual(this.f19825g, sessionIdRequest.f19825g) && Intrinsics.areEqual(this.f19826h, sessionIdRequest.f19826h) && Intrinsics.areEqual(this.f19827i, sessionIdRequest.f19827i);
             }
             return false;
         }
 
         public final String f() {
-            return this.f19818a;
+            return this.f19819a;
         }
 
         public final String g() {
-            return this.f19819b;
+            return this.f19820b;
         }
 
         public final String h() {
-            return this.f19821d;
+            return this.f19822d;
         }
 
         public int hashCode() {
-            int hashCode = this.f19818a.hashCode() * 31;
-            String str = this.f19819b;
+            int hashCode = this.f19819a.hashCode() * 31;
+            String str = this.f19820b;
             int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
-            String str2 = this.f19820c;
+            String str2 = this.f19821c;
             int hashCode3 = (hashCode2 + (str2 == null ? 0 : str2.hashCode())) * 31;
-            String str3 = this.f19821d;
+            String str3 = this.f19822d;
             int hashCode4 = (hashCode3 + (str3 == null ? 0 : str3.hashCode())) * 31;
-            String str4 = this.f19822e;
+            String str4 = this.f19823e;
             int hashCode5 = (hashCode4 + (str4 == null ? 0 : str4.hashCode())) * 31;
-            String str5 = this.f19823f;
+            String str5 = this.f19824f;
             int hashCode6 = (hashCode5 + (str5 == null ? 0 : str5.hashCode())) * 31;
-            String str6 = this.f19824g;
+            String str6 = this.f19825g;
             int hashCode7 = (hashCode6 + (str6 == null ? 0 : str6.hashCode())) * 31;
-            InquiryFieldMap inquiryFieldMap = this.f19825h;
+            InquiryFieldMap inquiryFieldMap = this.f19826h;
             int hashCode8 = (hashCode7 + (inquiryFieldMap == null ? 0 : inquiryFieldMap.hashCode())) * 31;
-            String str7 = this.f19826i;
+            String str7 = this.f19827i;
             return hashCode8 + (str7 != null ? str7.hashCode() : 0);
         }
 
         public final String i() {
-            return this.f19826i;
+            return this.f19827i;
         }
 
         public String toString() {
-            String str = this.f19818a;
-            String str2 = this.f19819b;
-            String str3 = this.f19820c;
-            String str4 = this.f19821d;
-            String str5 = this.f19822e;
-            String str6 = this.f19823f;
-            String str7 = this.f19824g;
-            InquiryFieldMap inquiryFieldMap = this.f19825h;
-            String str8 = this.f19826i;
+            String str = this.f19819a;
+            String str2 = this.f19820b;
+            String str3 = this.f19821c;
+            String str4 = this.f19822d;
+            String str5 = this.f19823e;
+            String str6 = this.f19824f;
+            String str7 = this.f19825g;
+            InquiryFieldMap inquiryFieldMap = this.f19826h;
+            String str8 = this.f19827i;
             return "SessionIdRequest(inquiryTemplateId=" + str + ", inquiryTemplateVersion=" + str2 + ", inquiryId=" + str3 + ", referenceId=" + str4 + ", accountId=" + str5 + ", environment=" + str6 + ", environmentId=" + str7 + ", fields=" + inquiryFieldMap + ", themeSetId=" + str8 + ")";
         }
     }
@@ -153,30 +153,30 @@ public interface FallbackModeService {
     public static final class SessionIdResponse {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f19827a;
+        private final String f19828a;
 
         public SessionIdResponse(String token) {
             Intrinsics.checkNotNullParameter(token, "token");
-            this.f19827a = token;
+            this.f19828a = token;
         }
 
         public final String a() {
-            return this.f19827a;
+            return this.f19828a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof SessionIdResponse) && Intrinsics.areEqual(this.f19827a, ((SessionIdResponse) obj).f19827a);
+            return (obj instanceof SessionIdResponse) && Intrinsics.areEqual(this.f19828a, ((SessionIdResponse) obj).f19828a);
         }
 
         public int hashCode() {
-            return this.f19827a.hashCode();
+            return this.f19828a.hashCode();
         }
 
         public String toString() {
-            String str = this.f19827a;
+            String str = this.f19828a;
             return "SessionIdResponse(token=" + str + ")";
         }
     }
@@ -187,30 +187,30 @@ public interface FallbackModeService {
     public static final class StaticTemplate {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f19828a;
+        private final List f19829a;
 
         public StaticTemplate(List steps) {
             Intrinsics.checkNotNullParameter(steps, "steps");
-            this.f19828a = steps;
+            this.f19829a = steps;
         }
 
         public final List a() {
-            return this.f19828a;
+            return this.f19829a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof StaticTemplate) && Intrinsics.areEqual(this.f19828a, ((StaticTemplate) obj).f19828a);
+            return (obj instanceof StaticTemplate) && Intrinsics.areEqual(this.f19829a, ((StaticTemplate) obj).f19829a);
         }
 
         public int hashCode() {
-            return this.f19828a.hashCode();
+            return this.f19829a.hashCode();
         }
 
         public String toString() {
-            List list = this.f19828a;
+            List list = this.f19829a;
             return "StaticTemplate(steps=" + list + ")";
         }
     }
@@ -221,14 +221,14 @@ public interface FallbackModeService {
     public static final class StatusRequest {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f19829a;
+        private final String f19830a;
 
         public StatusRequest(@com.squareup.moshi.g(name = "inquiry-template-id") String str) {
-            this.f19829a = str;
+            this.f19830a = str;
         }
 
         public final String a() {
-            return this.f19829a;
+            return this.f19830a;
         }
 
         @NotNull
@@ -240,11 +240,11 @@ public interface FallbackModeService {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof StatusRequest) && Intrinsics.areEqual(this.f19829a, ((StatusRequest) obj).f19829a);
+            return (obj instanceof StatusRequest) && Intrinsics.areEqual(this.f19830a, ((StatusRequest) obj).f19830a);
         }
 
         public int hashCode() {
-            String str = this.f19829a;
+            String str = this.f19830a;
             if (str == null) {
                 return 0;
             }
@@ -252,7 +252,7 @@ public interface FallbackModeService {
         }
 
         public String toString() {
-            String str = this.f19829a;
+            String str = this.f19830a;
             return "StatusRequest(inquiryTemplateId=" + str + ")";
         }
     }
@@ -263,14 +263,14 @@ public interface FallbackModeService {
     public static final class StatusResponse {
 
         /* renamed from: a  reason: collision with root package name */
-        private final StaticTemplate f19830a;
+        private final StaticTemplate f19831a;
 
         public StatusResponse(@com.squareup.moshi.g(name = "static-inquiry-template") StaticTemplate staticTemplate) {
-            this.f19830a = staticTemplate;
+            this.f19831a = staticTemplate;
         }
 
         public final StaticTemplate a() {
-            return this.f19830a;
+            return this.f19831a;
         }
 
         @NotNull
@@ -282,11 +282,11 @@ public interface FallbackModeService {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof StatusResponse) && Intrinsics.areEqual(this.f19830a, ((StatusResponse) obj).f19830a);
+            return (obj instanceof StatusResponse) && Intrinsics.areEqual(this.f19831a, ((StatusResponse) obj).f19831a);
         }
 
         public int hashCode() {
-            StaticTemplate staticTemplate = this.f19830a;
+            StaticTemplate staticTemplate = this.f19831a;
             if (staticTemplate == null) {
                 return 0;
             }
@@ -294,7 +294,7 @@ public interface FallbackModeService {
         }
 
         public String toString() {
-            StaticTemplate staticTemplate = this.f19830a;
+            StaticTemplate staticTemplate = this.f19831a;
             return "StatusResponse(staticInquiryTemplate=" + staticTemplate + ")";
         }
     }
@@ -305,23 +305,23 @@ public interface FallbackModeService {
     public static final class UploadUrlRequest {
 
         /* renamed from: a  reason: collision with root package name */
-        private final long f19831a;
+        private final long f19832a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f19832b;
+        private final String f19833b;
 
         public UploadUrlRequest(@com.squareup.moshi.g(name = "expected-content-length") long j10, @com.squareup.moshi.g(name = "expected-content-type") @NotNull String expectedContentType) {
             Intrinsics.checkNotNullParameter(expectedContentType, "expectedContentType");
-            this.f19831a = j10;
-            this.f19832b = expectedContentType;
+            this.f19832a = j10;
+            this.f19833b = expectedContentType;
         }
 
         public final long a() {
-            return this.f19831a;
+            return this.f19832a;
         }
 
         public final String b() {
-            return this.f19832b;
+            return this.f19833b;
         }
 
         @NotNull
@@ -336,18 +336,18 @@ public interface FallbackModeService {
             }
             if (obj instanceof UploadUrlRequest) {
                 UploadUrlRequest uploadUrlRequest = (UploadUrlRequest) obj;
-                return this.f19831a == uploadUrlRequest.f19831a && Intrinsics.areEqual(this.f19832b, uploadUrlRequest.f19832b);
+                return this.f19832a == uploadUrlRequest.f19832a && Intrinsics.areEqual(this.f19833b, uploadUrlRequest.f19833b);
             }
             return false;
         }
 
         public int hashCode() {
-            return (Long.hashCode(this.f19831a) * 31) + this.f19832b.hashCode();
+            return (Long.hashCode(this.f19832a) * 31) + this.f19833b.hashCode();
         }
 
         public String toString() {
-            long j10 = this.f19831a;
-            String str = this.f19832b;
+            long j10 = this.f19832a;
+            String str = this.f19833b;
             return "UploadUrlRequest(expectedContentLength=" + j10 + ", expectedContentType=" + str + ")";
         }
     }
@@ -358,30 +358,30 @@ public interface FallbackModeService {
     public static final class UploadUrlResponse {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f19833a;
+        private final String f19834a;
 
         public UploadUrlResponse(String location) {
             Intrinsics.checkNotNullParameter(location, "location");
-            this.f19833a = location;
+            this.f19834a = location;
         }
 
         public final String a() {
-            return this.f19833a;
+            return this.f19834a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof UploadUrlResponse) && Intrinsics.areEqual(this.f19833a, ((UploadUrlResponse) obj).f19833a);
+            return (obj instanceof UploadUrlResponse) && Intrinsics.areEqual(this.f19834a, ((UploadUrlResponse) obj).f19834a);
         }
 
         public int hashCode() {
-            return this.f19833a.hashCode();
+            return this.f19834a.hashCode();
         }
 
         public String toString() {
-            String str = this.f19833a;
+            String str = this.f19834a;
             return "UploadUrlResponse(location=" + str + ")";
         }
     }

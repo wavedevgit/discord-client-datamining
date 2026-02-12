@@ -5,15 +5,15 @@ import com.google.android.gms.common.api.Status;
 final class d extends z {
 
     /* renamed from: c  reason: collision with root package name */
-    final /* synthetic */ zg.k f21664c;
+    final /* synthetic */ zg.k f21665c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d(e eVar, zg.k kVar) {
-        this.f21664c = kVar;
+        this.f21665c = kVar;
     }
 
     @Override // dg.a0
     public final void O(Status status, we.g gVar) {
-        gf.r.a(status, gVar, this.f21664c);
+        gf.r.a(status, gVar, this.f21665c);
     }
 }

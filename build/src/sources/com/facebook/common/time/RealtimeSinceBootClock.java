@@ -9,14 +9,14 @@ import w8.b;
 public class RealtimeSinceBootClock implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final RealtimeSinceBootClock f10562a = new RealtimeSinceBootClock();
+    private static final RealtimeSinceBootClock f10563a = new RealtimeSinceBootClock();
 
     private RealtimeSinceBootClock() {
     }
 
     @d
     public static RealtimeSinceBootClock get() {
-        return f10562a;
+        return f10563a;
     }
 
     @Override // w8.b

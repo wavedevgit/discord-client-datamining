@@ -24,25 +24,25 @@ public final class InputConfirmationCodeComponent implements k5, w4, v, e0 {
     public static final Parcelable.Creator<InputConfirmationCodeComponent> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f20641d;
+    private final String f20642d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f20642e;
+    private final String f20643e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f20643i;
+    private final JsonLogicBoolean f20644i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final JsonLogicBoolean f20644o;
+    private final JsonLogicBoolean f20645o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final List f20645p;
+    private final List f20646p;
 
     /* renamed from: q  reason: collision with root package name */
-    private t f20646q;
+    private t f20647q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final rq.c f20647r;
+    private final rq.c f20648r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -63,27 +63,27 @@ public final class InputConfirmationCodeComponent implements k5, w4, v, e0 {
     public InputConfirmationCodeComponent(String name, String value, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f20641d = name;
-        this.f20642e = value;
-        this.f20643i = jsonLogicBoolean;
-        this.f20644o = jsonLogicBoolean2;
-        this.f20645p = new ArrayList();
-        this.f20646q = w.a(value);
-        this.f20647r = new rq.c();
+        this.f20642d = name;
+        this.f20643e = value;
+        this.f20644i = jsonLogicBoolean;
+        this.f20645o = jsonLogicBoolean2;
+        this.f20646p = new ArrayList();
+        this.f20647q = w.a(value);
+        this.f20648r = new rq.c();
     }
 
     public static /* synthetic */ InputConfirmationCodeComponent e(InputConfirmationCodeComponent inputConfirmationCodeComponent, String str, String str2, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = inputConfirmationCodeComponent.f20641d;
+            str = inputConfirmationCodeComponent.f20642d;
         }
         if ((i10 & 2) != 0) {
-            str2 = inputConfirmationCodeComponent.f20642e;
+            str2 = inputConfirmationCodeComponent.f20643e;
         }
         if ((i10 & 4) != 0) {
-            jsonLogicBoolean = inputConfirmationCodeComponent.f20643i;
+            jsonLogicBoolean = inputConfirmationCodeComponent.f20644i;
         }
         if ((i10 & 8) != 0) {
-            jsonLogicBoolean2 = inputConfirmationCodeComponent.f20644o;
+            jsonLogicBoolean2 = inputConfirmationCodeComponent.f20645o;
         }
         return inputConfirmationCodeComponent.c(str, str2, jsonLogicBoolean, jsonLogicBoolean2);
     }
@@ -94,7 +94,7 @@ public final class InputConfirmationCodeComponent implements k5, w4, v, e0 {
 
     @Override // pq.w4
     public t b() {
-        return this.f20646q;
+        return this.f20647q;
     }
 
     public final InputConfirmationCodeComponent c(String name, String value, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2) {
@@ -105,7 +105,7 @@ public final class InputConfirmationCodeComponent implements k5, w4, v, e0 {
 
     @Override // pq.e0
     public List d() {
-        return this.f20645p;
+        return this.f20646p;
     }
 
     @Override // android.os.Parcelable
@@ -119,40 +119,40 @@ public final class InputConfirmationCodeComponent implements k5, w4, v, e0 {
         }
         if (obj instanceof InputConfirmationCodeComponent) {
             InputConfirmationCodeComponent inputConfirmationCodeComponent = (InputConfirmationCodeComponent) obj;
-            return Intrinsics.areEqual(this.f20641d, inputConfirmationCodeComponent.f20641d) && Intrinsics.areEqual(this.f20642e, inputConfirmationCodeComponent.f20642e) && Intrinsics.areEqual(this.f20643i, inputConfirmationCodeComponent.f20643i) && Intrinsics.areEqual(this.f20644o, inputConfirmationCodeComponent.f20644o);
+            return Intrinsics.areEqual(this.f20642d, inputConfirmationCodeComponent.f20642d) && Intrinsics.areEqual(this.f20643e, inputConfirmationCodeComponent.f20643e) && Intrinsics.areEqual(this.f20644i, inputConfirmationCodeComponent.f20644i) && Intrinsics.areEqual(this.f20645o, inputConfirmationCodeComponent.f20645o);
         }
         return false;
     }
 
     public final rq.c f() {
-        return this.f20647r;
+        return this.f20648r;
     }
 
     public void g(t tVar) {
         Intrinsics.checkNotNullParameter(tVar, "<set-?>");
-        this.f20646q = tVar;
+        this.f20647q = tVar;
     }
 
     @Override // pq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f20644o;
+        return this.f20645o;
     }
 
     @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f20643i;
+        return this.f20644i;
     }
 
     @Override // pq.k5
     public String getName() {
-        return this.f20641d;
+        return this.f20642d;
     }
 
     public int hashCode() {
-        int hashCode = ((this.f20641d.hashCode() * 31) + this.f20642e.hashCode()) * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f20643i;
+        int hashCode = ((this.f20642d.hashCode() * 31) + this.f20643e.hashCode()) * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f20644i;
         int hashCode2 = (hashCode + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20644o;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20645o;
         return hashCode2 + (jsonLogicBoolean2 != null ? jsonLogicBoolean2.hashCode() : 0);
     }
 
@@ -166,20 +166,20 @@ public final class InputConfirmationCodeComponent implements k5, w4, v, e0 {
     }
 
     public String toString() {
-        String str = this.f20641d;
-        String str2 = this.f20642e;
-        JsonLogicBoolean jsonLogicBoolean = this.f20643i;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20644o;
+        String str = this.f20642d;
+        String str2 = this.f20643e;
+        JsonLogicBoolean jsonLogicBoolean = this.f20644i;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20645o;
         return "InputConfirmationCodeComponent(name=" + str + ", value=" + str2 + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f20641d);
-        dest.writeString(this.f20642e);
-        dest.writeParcelable(this.f20643i, i10);
-        dest.writeParcelable(this.f20644o, i10);
+        dest.writeString(this.f20642d);
+        dest.writeString(this.f20643e);
+        dest.writeParcelable(this.f20644i, i10);
+        dest.writeParcelable(this.f20645o, i10);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

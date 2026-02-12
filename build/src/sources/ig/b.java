@@ -5,13 +5,13 @@ import java.util.Arrays;
 abstract class b extends c {
 
     /* renamed from: a  reason: collision with root package name */
-    Object[] f27935a = new Object[4];
+    Object[] f27936a = new Object[4];
 
     /* renamed from: b  reason: collision with root package name */
-    int f27936b = 0;
+    int f27937b = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    boolean f27937c;
+    boolean f27938c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(int i10) {
@@ -20,8 +20,8 @@ abstract class b extends c {
     public final b a(Object obj) {
         int i10;
         obj.getClass();
-        int length = this.f27935a.length;
-        int i11 = this.f27936b;
+        int length = this.f27936a.length;
+        int i11 = this.f27937b;
         int i12 = i11 + 1;
         if (i12 >= 0) {
             if (i12 <= length) {
@@ -36,13 +36,13 @@ abstract class b extends c {
                     i10 = Integer.MAX_VALUE;
                 }
             }
-            if (i10 > length || this.f27937c) {
-                this.f27935a = Arrays.copyOf(this.f27935a, i10);
-                this.f27937c = false;
+            if (i10 > length || this.f27938c) {
+                this.f27936a = Arrays.copyOf(this.f27936a, i10);
+                this.f27938c = false;
             }
-            Object[] objArr = this.f27935a;
-            int i13 = this.f27936b;
-            this.f27936b = i13 + 1;
+            Object[] objArr = this.f27936a;
+            int i13 = this.f27937b;
+            this.f27937b = i13 + 1;
             objArr[i13] = obj;
             return this;
         }

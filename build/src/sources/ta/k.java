@@ -12,86 +12,86 @@ import kotlin.Pair;
 public class k implements Closeable {
 
     /* renamed from: y  reason: collision with root package name */
-    private static boolean f48652y;
+    private static boolean f48653y;
 
     /* renamed from: d  reason: collision with root package name */
-    private final CloseableReference f48653d;
+    private final CloseableReference f48654d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Supplier f48654e;
+    private final Supplier f48655e;
 
     /* renamed from: i  reason: collision with root package name */
-    private ga.c f48655i;
+    private ga.c f48656i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f48656o;
+    private int f48657o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f48657p;
+    private int f48658p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f48658q;
+    private int f48659q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f48659r;
+    private int f48660r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f48660s;
+    private int f48661s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f48661t;
+    private int f48662t;
 
     /* renamed from: u  reason: collision with root package name */
-    private BytesRange f48662u;
+    private BytesRange f48663u;
 
     /* renamed from: v  reason: collision with root package name */
-    private ColorSpace f48663v;
+    private ColorSpace f48664v;
 
     /* renamed from: w  reason: collision with root package name */
-    private String f48664w;
+    private String f48665w;
 
     /* renamed from: x  reason: collision with root package name */
-    private boolean f48665x;
+    private boolean f48666x;
 
     public k(CloseableReference closeableReference) {
-        this.f48655i = ga.c.f25398d;
-        this.f48656o = -1;
-        this.f48657p = 0;
-        this.f48658q = -1;
-        this.f48659r = -1;
-        this.f48660s = 1;
-        this.f48661t = -1;
+        this.f48656i = ga.c.f25399d;
+        this.f48657o = -1;
+        this.f48658p = 0;
+        this.f48659q = -1;
+        this.f48660r = -1;
+        this.f48661s = 1;
+        this.f48662t = -1;
         p8.j.b(Boolean.valueOf(CloseableReference.C0(closeableReference)));
-        this.f48653d = closeableReference.clone();
-        this.f48654e = null;
+        this.f48654d = closeableReference.clone();
+        this.f48655e = null;
     }
 
     private void C0() {
         Pair b10;
         ga.c d10 = ga.e.d(C());
-        this.f48655i = d10;
+        this.f48656i = d10;
         if (ga.b.b(d10)) {
             b10 = S0();
         } else {
             b10 = O0().b();
         }
-        if (d10 == ga.b.f25382b && this.f48656o == -1) {
+        if (d10 == ga.b.f25383b && this.f48657o == -1) {
             if (b10 != null) {
                 int b11 = db.g.b(C());
-                this.f48657p = b11;
-                this.f48656o = db.g.a(b11);
+                this.f48658p = b11;
+                this.f48657o = db.g.a(b11);
             }
-        } else if (d10 == ga.b.f25392l && this.f48656o == -1) {
+        } else if (d10 == ga.b.f25393l && this.f48657o == -1) {
             int a10 = db.e.a(C());
-            this.f48657p = a10;
-            this.f48656o = db.g.a(a10);
-        } else if (this.f48656o == -1) {
-            this.f48656o = 0;
+            this.f48658p = a10;
+            this.f48657o = db.g.a(a10);
+        } else if (this.f48657o == -1) {
+            this.f48657o = 0;
         }
     }
 
     public static boolean F0(k kVar) {
-        if (kVar.f48656o >= 0 && kVar.f48658q >= 0 && kVar.f48659r >= 0) {
+        if (kVar.f48657o >= 0 && kVar.f48659q >= 0 && kVar.f48660r >= 0) {
             return true;
         }
         return false;
@@ -105,7 +105,7 @@ public class k implements Closeable {
     }
 
     private void N0() {
-        if (this.f48658q >= 0 && this.f48659r >= 0) {
+        if (this.f48659q >= 0 && this.f48660r >= 0) {
             return;
         }
         L0();
@@ -121,11 +121,11 @@ public class k implements Closeable {
         }
         try {
             db.f e10 = db.d.e(inputStream);
-            this.f48663v = e10.a();
+            this.f48664v = e10.a();
             Pair b10 = e10.b();
             if (b10 != null) {
-                this.f48658q = ((Integer) b10.a()).intValue();
-                this.f48659r = ((Integer) b10.b()).intValue();
+                this.f48659q = ((Integer) b10.a()).intValue();
+                this.f48660r = ((Integer) b10.b()).intValue();
             }
             if (inputStream != null) {
                 try {
@@ -153,8 +153,8 @@ public class k implements Closeable {
         }
         Pair f10 = db.j.f(C);
         if (f10 != null) {
-            this.f48658q = ((Integer) f10.a()).intValue();
-            this.f48659r = ((Integer) f10.b()).intValue();
+            this.f48659q = ((Integer) f10.a()).intValue();
+            this.f48660r = ((Integer) f10.b()).intValue();
         }
         return f10;
     }
@@ -173,11 +173,11 @@ public class k implements Closeable {
     }
 
     public InputStream C() {
-        Supplier supplier = this.f48654e;
+        Supplier supplier = this.f48655e;
         if (supplier != null) {
             return (InputStream) supplier.get();
         }
-        CloseableReference n10 = CloseableReference.n(this.f48653d);
+        CloseableReference n10 = CloseableReference.n(this.f48654d);
         if (n10 != null) {
             try {
                 return new s8.j((s8.h) n10.J());
@@ -189,12 +189,12 @@ public class k implements Closeable {
     }
 
     public boolean E0(int i10) {
-        ga.c cVar = this.f48655i;
-        if ((cVar != ga.b.f25382b && cVar != ga.b.f25393m) || this.f48654e != null) {
+        ga.c cVar = this.f48656i;
+        if ((cVar != ga.b.f25383b && cVar != ga.b.f25394m) || this.f48655e != null) {
             return true;
         }
-        p8.j.g(this.f48653d);
-        s8.h hVar = (s8.h) this.f48653d.J();
+        p8.j.g(this.f48654d);
+        s8.h hVar = (s8.h) this.f48654d.J();
         if (i10 >= 2 && hVar.B(i10 - 2) == -1 && hVar.B(i10 - 1) == -39) {
             return true;
         }
@@ -203,8 +203,8 @@ public class k implements Closeable {
 
     public synchronized boolean G0() {
         boolean z10;
-        if (!CloseableReference.C0(this.f48653d)) {
-            if (this.f48654e == null) {
+        if (!CloseableReference.C0(this.f48654d)) {
+            if (this.f48655e == null) {
                 z10 = false;
             }
         }
@@ -217,46 +217,46 @@ public class k implements Closeable {
     }
 
     public int J() {
-        return this.f48660s;
+        return this.f48661s;
     }
 
     public void L0() {
-        if (!f48652y) {
+        if (!f48653y) {
             C0();
-        } else if (this.f48665x) {
+        } else if (this.f48666x) {
         } else {
             C0();
-            this.f48665x = true;
+            this.f48666x = true;
         }
     }
 
     public int Q() {
-        CloseableReference closeableReference = this.f48653d;
+        CloseableReference closeableReference = this.f48654d;
         if (closeableReference != null && closeableReference.J() != null) {
-            return ((s8.h) this.f48653d.J()).size();
+            return ((s8.h) this.f48654d.J()).size();
         }
-        return this.f48661t;
+        return this.f48662t;
     }
 
     public void V0(BytesRange bytesRange) {
-        this.f48662u = bytesRange;
+        this.f48663u = bytesRange;
     }
 
     public String Z() {
-        return this.f48664w;
+        return this.f48665w;
     }
 
     public void Z0(int i10) {
-        this.f48657p = i10;
+        this.f48658p = i10;
     }
 
     public k a() {
         k kVar;
-        Supplier supplier = this.f48654e;
+        Supplier supplier = this.f48655e;
         if (supplier != null) {
-            kVar = new k(supplier, this.f48661t);
+            kVar = new k(supplier, this.f48662t);
         } else {
-            CloseableReference n10 = CloseableReference.n(this.f48653d);
+            CloseableReference n10 = CloseableReference.n(this.f48654d);
             if (n10 == null) {
                 kVar = null;
             } else {
@@ -274,74 +274,74 @@ public class k implements Closeable {
     }
 
     public void a1(int i10) {
-        this.f48659r = i10;
+        this.f48660r = i10;
     }
 
     public void b1(ga.c cVar) {
-        this.f48655i = cVar;
+        this.f48656i = cVar;
     }
 
     public int c1() {
         N0();
-        return this.f48657p;
+        return this.f48658p;
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        CloseableReference.z(this.f48653d);
+        CloseableReference.z(this.f48654d);
     }
 
     public void f1(int i10) {
-        this.f48656o = i10;
+        this.f48657o = i10;
     }
 
     public int getHeight() {
         N0();
-        return this.f48659r;
+        return this.f48660r;
     }
 
     public int getWidth() {
         N0();
-        return this.f48658q;
+        return this.f48659q;
     }
 
     public void m(k kVar) {
-        this.f48655i = kVar.z();
-        this.f48658q = kVar.getWidth();
-        this.f48659r = kVar.getHeight();
-        this.f48656o = kVar.q1();
-        this.f48657p = kVar.c1();
-        this.f48660s = kVar.J();
-        this.f48661t = kVar.Q();
-        this.f48662u = kVar.p();
-        this.f48663v = kVar.s();
-        this.f48665x = kVar.z0();
+        this.f48656i = kVar.z();
+        this.f48659q = kVar.getWidth();
+        this.f48660r = kVar.getHeight();
+        this.f48657o = kVar.q1();
+        this.f48658p = kVar.c1();
+        this.f48661s = kVar.J();
+        this.f48662t = kVar.Q();
+        this.f48663u = kVar.p();
+        this.f48664v = kVar.s();
+        this.f48666x = kVar.z0();
     }
 
     public CloseableReference n() {
-        return CloseableReference.n(this.f48653d);
+        return CloseableReference.n(this.f48654d);
     }
 
     public BytesRange p() {
-        return this.f48662u;
+        return this.f48663u;
     }
 
     public int q1() {
         N0();
-        return this.f48656o;
+        return this.f48657o;
     }
 
     public ColorSpace s() {
         N0();
-        return this.f48663v;
+        return this.f48664v;
     }
 
     public void w1(int i10) {
-        this.f48660s = i10;
+        this.f48661s = i10;
     }
 
     public void x1(String str) {
-        this.f48664w = str;
+        this.f48665w = str;
     }
 
     public String y(int i10) {
@@ -370,32 +370,32 @@ public class k implements Closeable {
 
     public ga.c z() {
         N0();
-        return this.f48655i;
+        return this.f48656i;
     }
 
     protected boolean z0() {
-        return this.f48665x;
+        return this.f48666x;
     }
 
     public void z1(int i10) {
-        this.f48658q = i10;
+        this.f48659q = i10;
     }
 
     public k(Supplier supplier) {
-        this.f48655i = ga.c.f25398d;
-        this.f48656o = -1;
-        this.f48657p = 0;
-        this.f48658q = -1;
-        this.f48659r = -1;
-        this.f48660s = 1;
-        this.f48661t = -1;
+        this.f48656i = ga.c.f25399d;
+        this.f48657o = -1;
+        this.f48658p = 0;
+        this.f48659q = -1;
+        this.f48660r = -1;
+        this.f48661s = 1;
+        this.f48662t = -1;
         p8.j.g(supplier);
-        this.f48653d = null;
-        this.f48654e = supplier;
+        this.f48654d = null;
+        this.f48655e = supplier;
     }
 
     public k(Supplier supplier, int i10) {
         this(supplier);
-        this.f48661t = i10;
+        this.f48662t = i10;
     }
 }

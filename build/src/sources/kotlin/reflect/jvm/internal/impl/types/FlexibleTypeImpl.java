@@ -19,7 +19,7 @@ public final class FlexibleTypeImpl extends FlexibleType implements CustomTypePa
     public static boolean RUN_SLOW_ASSERTIONS;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f34549o;
+    private boolean f34550o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -39,8 +39,8 @@ public final class FlexibleTypeImpl extends FlexibleType implements CustomTypePa
     }
 
     private final void b() {
-        if (RUN_SLOW_ASSERTIONS && !this.f34549o) {
-            this.f34549o = true;
+        if (RUN_SLOW_ASSERTIONS && !this.f34550o) {
+            this.f34550o = true;
             FlexibleTypesKt.isFlexible(getLowerBound());
             FlexibleTypesKt.isFlexible(getUpperBound());
             Intrinsics.areEqual(getLowerBound(), getUpperBound());
@@ -57,7 +57,7 @@ public final class FlexibleTypeImpl extends FlexibleType implements CustomTypePa
 
     @Override // kotlin.reflect.jvm.internal.impl.types.CustomTypeParameter
     public boolean isTypeParameter() {
-        if ((getLowerBound().getConstructor().mo1202getDeclarationDescriptor() instanceof TypeParameterDescriptor) && Intrinsics.areEqual(getLowerBound().getConstructor(), getUpperBound().getConstructor())) {
+        if ((getLowerBound().getConstructor().mo1201getDeclarationDescriptor() instanceof TypeParameterDescriptor) && Intrinsics.areEqual(getLowerBound().getConstructor(), getUpperBound().getConstructor())) {
             return true;
         }
         return false;

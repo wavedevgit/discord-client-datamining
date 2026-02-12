@@ -15,61 +15,61 @@ import java.util.HashMap;
 public class i implements com.facebook.hermes.intl.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private DateFormat f11009a = null;
+    private DateFormat f11010a = null;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f11010a;
+        static final /* synthetic */ int[] f11011a;
 
         /* renamed from: b  reason: collision with root package name */
-        static final /* synthetic */ int[] f11011b;
+        static final /* synthetic */ int[] f11012b;
 
         static {
             int[] iArr = new int[b.k.values().length];
-            f11011b = iArr;
+            f11012b = iArr;
             try {
                 iArr[b.k.FULL.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f11011b[b.k.LONG.ordinal()] = 2;
+                f11012b[b.k.LONG.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f11011b[b.k.MEDIUM.ordinal()] = 3;
+                f11012b[b.k.MEDIUM.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f11011b[b.k.SHORT.ordinal()] = 4;
+                f11012b[b.k.SHORT.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f11011b[b.k.UNDEFINED.ordinal()] = 5;
+                f11012b[b.k.UNDEFINED.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             int[] iArr2 = new int[b.EnumC0152b.values().length];
-            f11010a = iArr2;
+            f11011a = iArr2;
             try {
                 iArr2[b.EnumC0152b.FULL.ordinal()] = 1;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f11010a[b.EnumC0152b.LONG.ordinal()] = 2;
+                f11011a[b.EnumC0152b.LONG.ordinal()] = 2;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f11010a[b.EnumC0152b.MEDIUM.ordinal()] = 3;
+                f11011a[b.EnumC0152b.MEDIUM.ordinal()] = 3;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f11010a[b.EnumC0152b.SHORT.ordinal()] = 4;
+                f11011a[b.EnumC0152b.SHORT.ordinal()] = 4;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f11010a[b.EnumC0152b.UNDEFINED.ordinal()] = 5;
+                f11011a[b.EnumC0152b.UNDEFINED.ordinal()] = 5;
             } catch (NoSuchFieldError unused10) {
             }
         }
@@ -166,7 +166,7 @@ public class i implements com.facebook.hermes.intl.b {
     }
 
     static int l(b.EnumC0152b enumC0152b) {
-        int i10 = a.f11010a[enumC0152b.ordinal()];
+        int i10 = a.f11011a[enumC0152b.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
                 return 1;
@@ -183,7 +183,7 @@ public class i implements com.facebook.hermes.intl.b {
     }
 
     static int m(b.k kVar) {
-        int i10 = a.f11011b[kVar.ordinal()];
+        int i10 = a.f11012b[kVar.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
                 return 1;
@@ -201,7 +201,7 @@ public class i implements com.facebook.hermes.intl.b {
 
     @Override // com.facebook.hermes.intl.b
     public AttributedCharacterIterator a(double d10) {
-        return this.f11009a.formatToCharacterIterator(Double.valueOf(d10));
+        return this.f11010a.formatToCharacterIterator(Double.valueOf(d10));
     }
 
     @Override // com.facebook.hermes.intl.b
@@ -211,7 +211,7 @@ public class i implements com.facebook.hermes.intl.b {
 
     @Override // com.facebook.hermes.intl.b
     public String c(double d10) {
-        return this.f11009a.format(new Date((long) d10));
+        return this.f11010a.format(new Date((long) d10));
     }
 
     @Override // com.facebook.hermes.intl.b
@@ -316,13 +316,13 @@ public class i implements com.facebook.hermes.intl.b {
             }
         }
         if (calendar != null) {
-            this.f11009a = DateFormat.getPatternInstance(calendar, j10, (ULocale) bVar2.h());
+            this.f11010a = DateFormat.getPatternInstance(calendar, j10, (ULocale) bVar2.h());
         } else {
-            this.f11009a = DateFormat.getPatternInstance(j10, (ULocale) bVar2.h());
+            this.f11010a = DateFormat.getPatternInstance(j10, (ULocale) bVar2.h());
         }
         if (ea.d.n(obj) || ea.d.j(obj)) {
             return;
         }
-        this.f11009a.setTimeZone(TimeZone.getTimeZone(ea.d.h(obj)));
+        this.f11010a.setTimeZone(TimeZone.getTimeZone(ea.d.h(obj)));
     }
 }

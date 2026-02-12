@@ -47,8 +47,8 @@ public /* synthetic */ class ChatInputNode$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         KSerializer u10 = a.u(ChatInputNodeStyle$$serializer.INSTANCE);
         KSerializer u11 = a.u(TapAction$$serializer.INSTANCE);
-        p0 p0Var = p0.f50048a;
-        h hVar = h.f49996a;
+        p0 p0Var = p0.f50049a;
+        h hVar = h.f49997a;
         return new KSerializer[]{p0Var, p0Var, p0Var, u10, hVar, u11, hVar};
     }
 

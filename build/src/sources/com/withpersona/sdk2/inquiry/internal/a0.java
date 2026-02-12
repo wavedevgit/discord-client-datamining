@@ -12,16 +12,16 @@ import kotlinx.coroutines.flow.FlowCollector;
 public final class a0 implements en.o<com.withpersona.sdk2.inquiry.internal.network.i> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f19705b;
+    private final String f19706b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f19706c;
+    private final String f19707c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final iq.g f19707d;
+    private final iq.g f19708d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final com.withpersona.sdk2.inquiry.internal.network.e f19708e;
+    private final com.withpersona.sdk2.inquiry.internal.network.e f19709e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -32,10 +32,10 @@ public final class a0 implements en.o<com.withpersona.sdk2.inquiry.internal.netw
     static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f19709d;
+        int f19710d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f19710e;
+        private /* synthetic */ Object f19711e;
 
         b(Continuation continuation) {
             super(2, continuation);
@@ -44,7 +44,7 @@ public final class a0 implements en.o<com.withpersona.sdk2.inquiry.internal.netw
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             b bVar = new b(continuation);
-            bVar.f19710e = obj;
+            bVar.f19711e = obj;
             return bVar;
         }
 
@@ -66,7 +66,7 @@ public final class a0 implements en.o<com.withpersona.sdk2.inquiry.internal.netw
             /*
                 r6 = this;
                 java.lang.Object r0 = gs.b.f()
-                int r1 = r6.f19709d
+                int r1 = r6.f19710d
                 r2 = 2
                 r3 = 1
                 if (r1 == 0) goto L22
@@ -80,13 +80,13 @@ public final class a0 implements en.o<com.withpersona.sdk2.inquiry.internal.netw
                 r7.<init>(r0)
                 throw r7
             L1a:
-                java.lang.Object r1 = r6.f19710e
+                java.lang.Object r1 = r6.f19711e
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 kotlin.c.b(r7)
                 goto L47
             L22:
                 kotlin.c.b(r7)
-                java.lang.Object r7 = r6.f19710e
+                java.lang.Object r7 = r6.f19711e
                 r1 = r7
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 com.withpersona.sdk2.inquiry.internal.a0 r7 = com.withpersona.sdk2.inquiry.internal.a0.this
@@ -95,21 +95,21 @@ public final class a0 implements en.o<com.withpersona.sdk2.inquiry.internal.netw
                 java.lang.String r4 = r4.d()
                 com.withpersona.sdk2.inquiry.internal.a0 r5 = com.withpersona.sdk2.inquiry.internal.a0.this
                 iq.g r5 = com.withpersona.sdk2.inquiry.internal.a0.c(r5)
-                r6.f19710e = r1
-                r6.f19709d = r3
+                r6.f19711e = r1
+                r6.f19710d = r3
                 java.lang.Object r7 = r7.o(r4, r5, r6)
                 if (r7 != r0) goto L47
                 goto L52
             L47:
                 r3 = 0
-                r6.f19710e = r3
-                r6.f19709d = r2
+                r6.f19711e = r3
+                r6.f19710d = r2
                 java.lang.Object r7 = r1.emit(r7, r6)
                 if (r7 != r0) goto L53
             L52:
                 return r0
             L53:
-                kotlin.Unit r7 = kotlin.Unit.f31987a
+                kotlin.Unit r7 = kotlin.Unit.f31988a
                 return r7
             */
             throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.internal.a0.b.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -117,7 +117,7 @@ public final class a0 implements en.o<com.withpersona.sdk2.inquiry.internal.netw
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((b) create(flowCollector, continuation)).invokeSuspend(Unit.f31987a);
+            return ((b) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -126,10 +126,10 @@ public final class a0 implements en.o<com.withpersona.sdk2.inquiry.internal.netw
         Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
         Intrinsics.checkNotNullParameter(inquirySessionConfig, "inquirySessionConfig");
         Intrinsics.checkNotNullParameter(inquiryApiHelper, "inquiryApiHelper");
-        this.f19705b = sessionToken;
-        this.f19706c = inquiryId;
-        this.f19707d = inquirySessionConfig;
-        this.f19708e = inquiryApiHelper;
+        this.f19706b = sessionToken;
+        this.f19707c = inquiryId;
+        this.f19708d = inquirySessionConfig;
+        this.f19709e = inquiryApiHelper;
     }
 
     @Override // en.o
@@ -137,7 +137,7 @@ public final class a0 implements en.o<com.withpersona.sdk2.inquiry.internal.netw
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
         if (otherWorker instanceof a0) {
             a0 a0Var = (a0) otherWorker;
-            if (Intrinsics.areEqual(this.f19705b, a0Var.f19705b) && Intrinsics.areEqual(this.f19706c, a0Var.f19706c)) {
+            if (Intrinsics.areEqual(this.f19706b, a0Var.f19706b) && Intrinsics.areEqual(this.f19707c, a0Var.f19707c)) {
                 return true;
             }
             return false;
@@ -146,7 +146,7 @@ public final class a0 implements en.o<com.withpersona.sdk2.inquiry.internal.netw
     }
 
     public final String d() {
-        return this.f19705b;
+        return this.f19706b;
     }
 
     @Override // en.o

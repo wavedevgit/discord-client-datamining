@@ -6,17 +6,17 @@ import kotlin.jvm.internal.Intrinsics;
 public final class o extends m {
 
     /* renamed from: e  reason: collision with root package name */
-    private final Fragment f24729e;
+    private final Fragment f24730e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f24730i;
+    private final int f24731i;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public o(Fragment fragment, Fragment expectedParentFragment, int i10) {
         super(fragment, "Attempting to nest fragment " + fragment + " within the view of parent fragment " + expectedParentFragment + " via container with ID " + i10 + " without using parent's childFragmentManager");
         Intrinsics.checkNotNullParameter(fragment, "fragment");
         Intrinsics.checkNotNullParameter(expectedParentFragment, "expectedParentFragment");
-        this.f24729e = expectedParentFragment;
-        this.f24730i = i10;
+        this.f24730e = expectedParentFragment;
+        this.f24731i = i10;
     }
 }

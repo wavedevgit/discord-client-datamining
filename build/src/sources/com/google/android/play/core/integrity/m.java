@@ -5,22 +5,22 @@ import android.content.Context;
 public final class m implements ni.z {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ni.e0 f17078a;
+    private final ni.e0 f17079a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ni.e0 f17079b;
+    private final ni.e0 f17080b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ni.e0 f17080c;
+    private final ni.e0 f17081c;
 
     public m(ni.e0 e0Var, ni.e0 e0Var2, ni.e0 e0Var3, ni.e0 e0Var4) {
-        this.f17078a = e0Var;
-        this.f17079b = e0Var2;
-        this.f17080c = e0Var3;
+        this.f17079a = e0Var;
+        this.f17080b = e0Var2;
+        this.f17081c = e0Var3;
     }
 
     @Override // ni.e0
     public final /* bridge */ /* synthetic */ Object a() {
-        return new k((Context) this.f17078a.a(), (ni.t0) this.f17079b.a(), ((s) this.f17080c).a(), new v0());
+        return new k((Context) this.f17079a.a(), (ni.t0) this.f17080b.a(), ((s) this.f17081c).a(), new v0());
     }
 }

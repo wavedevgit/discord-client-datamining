@@ -12,10 +12,10 @@ import kotlinx.coroutines.flow.FlowCollector;
 public final class f implements en.o<com.withpersona.sdk2.inquiry.internal.network.d> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f19813b;
+    private final String f19814b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.withpersona.sdk2.inquiry.internal.network.e f19814c;
+    private final com.withpersona.sdk2.inquiry.internal.network.e f19815c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -26,10 +26,10 @@ public final class f implements en.o<com.withpersona.sdk2.inquiry.internal.netwo
     static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f19815d;
+        int f19816d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f19816e;
+        private /* synthetic */ Object f19817e;
 
         b(Continuation continuation) {
             super(2, continuation);
@@ -38,7 +38,7 @@ public final class f implements en.o<com.withpersona.sdk2.inquiry.internal.netwo
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             b bVar = new b(continuation);
-            bVar.f19816e = obj;
+            bVar.f19817e = obj;
             return bVar;
         }
 
@@ -60,7 +60,7 @@ public final class f implements en.o<com.withpersona.sdk2.inquiry.internal.netwo
             /*
                 r5 = this;
                 java.lang.Object r0 = gs.b.f()
-                int r1 = r5.f19815d
+                int r1 = r5.f19816d
                 r2 = 2
                 r3 = 1
                 if (r1 == 0) goto L22
@@ -74,34 +74,34 @@ public final class f implements en.o<com.withpersona.sdk2.inquiry.internal.netwo
                 r6.<init>(r0)
                 throw r6
             L1a:
-                java.lang.Object r1 = r5.f19816e
+                java.lang.Object r1 = r5.f19817e
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 kotlin.c.b(r6)
                 goto L41
             L22:
                 kotlin.c.b(r6)
-                java.lang.Object r6 = r5.f19816e
+                java.lang.Object r6 = r5.f19817e
                 r1 = r6
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 com.withpersona.sdk2.inquiry.internal.f r6 = com.withpersona.sdk2.inquiry.internal.f.this
                 com.withpersona.sdk2.inquiry.internal.network.e r6 = com.withpersona.sdk2.inquiry.internal.f.b(r6)
                 com.withpersona.sdk2.inquiry.internal.f r4 = com.withpersona.sdk2.inquiry.internal.f.this
                 java.lang.String r4 = com.withpersona.sdk2.inquiry.internal.f.c(r4)
-                r5.f19816e = r1
-                r5.f19815d = r3
+                r5.f19817e = r1
+                r5.f19816d = r3
                 java.lang.Object r6 = r6.j(r4, r5)
                 if (r6 != r0) goto L41
                 goto L4c
             L41:
                 r3 = 0
-                r5.f19816e = r3
-                r5.f19815d = r2
+                r5.f19817e = r3
+                r5.f19816d = r2
                 java.lang.Object r6 = r1.emit(r6, r5)
                 if (r6 != r0) goto L4d
             L4c:
                 return r0
             L4d:
-                kotlin.Unit r6 = kotlin.Unit.f31987a
+                kotlin.Unit r6 = kotlin.Unit.f31988a
                 return r6
             */
             throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.internal.f.b.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -109,21 +109,21 @@ public final class f implements en.o<com.withpersona.sdk2.inquiry.internal.netwo
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((b) create(flowCollector, continuation)).invokeSuspend(Unit.f31987a);
+            return ((b) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
     public f(String oneTimeLinkCode, com.withpersona.sdk2.inquiry.internal.network.e inquiryApiHelper) {
         Intrinsics.checkNotNullParameter(oneTimeLinkCode, "oneTimeLinkCode");
         Intrinsics.checkNotNullParameter(inquiryApiHelper, "inquiryApiHelper");
-        this.f19813b = oneTimeLinkCode;
-        this.f19814c = inquiryApiHelper;
+        this.f19814b = oneTimeLinkCode;
+        this.f19815c = inquiryApiHelper;
     }
 
     @Override // en.o
     public boolean a(en.o otherWorker) {
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
-        if ((otherWorker instanceof f) && Intrinsics.areEqual(this.f19813b, ((f) otherWorker).f19813b)) {
+        if ((otherWorker instanceof f) && Intrinsics.areEqual(this.f19814b, ((f) otherWorker).f19814b)) {
             return true;
         }
         return false;

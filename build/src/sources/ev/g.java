@@ -10,7 +10,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g implements cv.a, a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f23274a = new g();
+    public static final g f23275a = new g();
 
     private g() {
     }
@@ -20,7 +20,7 @@ public final class g implements cv.a, a {
         if (b10 != null) {
             Object obj2 = obj;
             for (Object obj3 : b10) {
-                obj2 = f23274a.h(hVar, obj2, obj3, bVar.a());
+                obj2 = f23275a.h(hVar, obj2, obj3, bVar.a());
                 if (obj2 == null) {
                     return bVar.c();
                 }
@@ -34,7 +34,7 @@ public final class g implements cv.a, a {
 
     private final Object h(h hVar, Object obj, Object obj2, Map map) {
         if (map != null) {
-            return hVar.a(map, f23274a.i(obj, obj2));
+            return hVar.a(map, f23275a.i(obj, obj2));
         }
         return null;
     }
@@ -57,7 +57,7 @@ public final class g implements cv.a, a {
     public Object e(Object obj, Object obj2, h evaluator) {
         Intrinsics.checkNotNullParameter(evaluator, "evaluator");
         List c10 = mw.a.c(obj);
-        g gVar = f23274a;
+        g gVar = f23275a;
         return gVar.g(gVar.d(c10, obj2, evaluator), mw.c.c(c10), evaluator);
     }
 

@@ -697,7 +697,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var10 = var11.warn;
                 var4 = '[TimeToDisplay] No span found or created, possibly performance is disabled.';
                 var4 = var10.bind(var11)(var4);
-                _fun12916_ip = 694;
+                _fun12916_ip = 692;
                 continue _fun12916;
             case 150:
                 if (var7) {
@@ -709,7 +709,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var10 = var11.warn;
                 var4 = '[TimeToDisplay] No active span found to attach ui.load.initial_display to.';
                 var4 = var10.bind(var11)(var4);
-                _fun12916_ip = 694;
+                _fun12916_ip = 692;
                 continue _fun12916;
             case 180:
                 var4 = var9.spanToJSON;
@@ -733,7 +733,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var8.warn;
                 var2 = '[TimeToDisplay] Initial display span is not a child of current active span.';
                 var2 = var4.bind(var8)(var2);
-                _fun12916_ip = 694;
+                _fun12916_ip = 692;
                 continue _fun12916;
             case 271:
                 var4 = _closure1_slot0;
@@ -744,7 +744,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2.bind(var4)(var5);
                 var2 = var2.timestamp;
                 if (var2) {
-                    _fun12916_ip = 605;
+                    _fun12916_ip = 603;
                     continue _fun12916
                 }
             case 311:
@@ -779,10 +779,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var8.has;
                 var4 = var4.bind(var8)(var7);
                 if (!var4) {
-                    _fun12916_ip = 566;
+                    _fun12916_ip = 564;
                     continue _fun12916
                 }
-            case 460:
+            case 459:
                 var8 = _closure1_slot6;
                 var4 = var8.delete;
                 var4 = var4.bind(var8)(var7);
@@ -926,7 +926,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0 = var0.bind(var2)(var7);
                             var2 = var0.timestamp;
                             if (var2) {
-                                _fun12917_ip = 573;
+                                _fun12917_ip = 572;
                                 continue _fun12917
                             }
                         case 366:
@@ -981,7 +981,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = 'time_to_full_display';
                             var2 = var5.bind(var6)(var2, var7);
                             return var3;
-                        case 573:
+                        case 572:
                             var2 = _closure1_slot0;
                             var1 = _closure1_slot1;
                             var1 = var1[var4];
@@ -1003,7 +1003,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 };
                 var2 = var2.bind(var0)(var3, var5);
-            case 566:
+            case 564:
                 var3 = _closure1_slot0;
                 var4 = _closure1_slot1;
                 var2 = 5;
@@ -1012,9 +1012,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.setSpanDurationAsMeasurementOnSpan;
                 var2 = 'time_to_initial_display';
                 var2 = var3.bind(var4)(var2, var5, var7);
-                _fun12916_ip = 694;
+                _fun12916_ip = 692;
                 continue _fun12916;
-            case 605:
+            case 603:
                 var4 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 var2 = var1[var6];
@@ -1033,7 +1033,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = ' span already ended.';
                 var1 = var5.bind(var4)(var6, var1);
                 var1 = var2.bind(var3)(var1);
-            case 694:
+            case 692:
                 return var0;
         }
     };

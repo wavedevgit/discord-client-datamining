@@ -2,7 +2,6 @@ package org.webrtc;
 
 import android.media.MediaCodecInfo;
 import android.media.MediaCodecList;
-import android.os.Build;
 import java.util.ArrayList;
 import org.webrtc.EglBase;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -17,22 +16,22 @@ class MediaCodecVideoDecoderFactory implements VideoDecoderFactory {
     }
 
     private MediaCodecInfo findCodecForType(VideoCodecMimeType videoCodecMimeType) {
-        MediaCodecInfo mediaCodecInfo;
-        if (Build.VERSION.SDK_INT < 29 && videoCodecMimeType == VideoCodecMimeType.H265) {
-            return null;
-        }
-        for (int i10 = 0; i10 < MediaCodecList.getCodecCount(); i10++) {
+        int i10 = 0;
+        while (true) {
+            MediaCodecInfo mediaCodecInfo = null;
+            if (i10 >= MediaCodecList.getCodecCount()) {
+                return null;
+            }
             try {
                 mediaCodecInfo = MediaCodecList.getCodecInfoAt(i10);
             } catch (IllegalArgumentException e10) {
                 Logging.e(TAG, "Cannot retrieve decoder codec info", e10);
-                mediaCodecInfo = null;
             }
             if (mediaCodecInfo != null && !mediaCodecInfo.isEncoder() && isSupportedCodec(mediaCodecInfo, videoCodecMimeType)) {
                 return mediaCodecInfo;
             }
+            i10++;
         }
-        return null;
     }
 
     private boolean isCodecAllowed(MediaCodecInfo mediaCodecInfo) {

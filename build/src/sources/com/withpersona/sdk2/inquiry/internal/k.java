@@ -25,32 +25,32 @@ import kotlin.reflect.KClass;
 public final class k implements gn.k {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f19960f = new a(null);
+    public static final a f19961f = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final View f19961b;
+    private final View f19962b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final LottieAnimationView f19962c;
+    private final LottieAnimationView f19963c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Integer f19963d;
+    private final Integer f19964d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Integer f19964e;
+    private Integer f19965e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ c0 f19965a;
+        private final /* synthetic */ c0 f19966a;
 
         /* renamed from: com.withpersona.sdk2.inquiry.internal.k$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         /* synthetic */ class C0252a extends FunctionReferenceImpl implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0252a f19966d = new C0252a();
+            public static final C0252a f19967d = new C0252a();
 
             C0252a() {
                 super(1, k.class, "<init>", "<init>(Landroid/view/View;)V", 0);
@@ -74,37 +74,37 @@ public final class k implements gn.k {
             Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
             Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f19965a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+            return this.f19966a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
         }
 
         @Override // gn.c0
         public KClass getType() {
-            return this.f19965a.getType();
+            return this.f19966a.getType();
         }
 
         private a() {
-            k.a aVar = gn.k.f25848a;
-            this.f19965a = new gn.m(Reflection.getOrCreateKotlinClass(n.d.b.class), g2.f23132f, C0252a.f19966d);
+            k.a aVar = gn.k.f25849a;
+            this.f19966a = new gn.m(Reflection.getOrCreateKotlinClass(n.d.b.class), g2.f23133f, C0252a.f19967d);
         }
     }
 
     public k(View view) {
         Intrinsics.checkNotNullParameter(view, "view");
-        this.f19961b = view;
-        View findViewById = view.findViewById(f2.f23092a);
+        this.f19962b = view;
+        View findViewById = view.findViewById(f2.f23093a);
         Intrinsics.checkNotNullExpressionValue(findViewById, "findViewById(...)");
         LottieAnimationView lottieAnimationView = (LottieAnimationView) findViewById;
-        this.f19962c = lottieAnimationView;
+        this.f19963c = lottieAnimationView;
         Context context = view.getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        Integer f10 = bq.s.f(context, tp.a.f49765n, null, false, 6, null);
-        this.f19963d = f10;
+        Integer f10 = bq.s.f(context, tp.a.f49766n, null, false, 6, null);
+        this.f19964d = f10;
         if (f10 != null) {
             k(f10.intValue());
             lottieAnimationView.v();
             return;
         }
-        lottieAnimationView.l(new r5.e("**"), l5.b0.f35546b, new z5.e() { // from class: ep.x
+        lottieAnimationView.l(new r5.e("**"), l5.b0.f35547b, new z5.e() { // from class: ep.x
             @Override // z5.e
             public final Object a(z5.b bVar) {
                 Integer g10;
@@ -112,7 +112,7 @@ public final class k implements gn.k {
                 return g10;
             }
         });
-        lottieAnimationView.l(new r5.e("**"), l5.b0.f35545a, new z5.e() { // from class: ep.y
+        lottieAnimationView.l(new r5.e("**"), l5.b0.f35546a, new z5.e() { // from class: ep.y
             @Override // z5.e
             public final Object a(z5.b bVar) {
                 Integer h10;
@@ -124,16 +124,16 @@ public final class k implements gn.k {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Integer g(k kVar, z5.b bVar) {
-        Context context = kVar.f19961b.getContext();
+        Context context = kVar.f19962b.getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
         return Integer.valueOf(j(kVar, context, bh.b.f6745l, null, false, 6, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Integer h(k kVar, z5.b bVar) {
-        Context context = kVar.f19961b.getContext();
+        Context context = kVar.f19962b.getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        return Integer.valueOf(j(kVar, context, f.a.f23298w, null, false, 6, null));
+        return Integer.valueOf(j(kVar, context, f.a.f23299w, null, false, 6, null));
     }
 
     private final int i(Context context, int i10, TypedValue typedValue, boolean z10) {
@@ -152,21 +152,21 @@ public final class k implements gn.k {
     }
 
     private final void k(int i10) {
-        Integer num = this.f19964e;
+        Integer num = this.f19965e;
         if (num != null && num.intValue() == i10) {
             return;
         }
-        this.f19964e = Integer.valueOf(i10);
-        this.f19962c.m();
-        this.f19962c.setMinFrame(0);
-        this.f19962c.setAnimation(i10);
-        this.f19962c.playAnimation();
+        this.f19965e = Integer.valueOf(i10);
+        this.f19963c.m();
+        this.f19963c.setMinFrame(0);
+        this.f19963c.setAnimation(i10);
+        this.f19963c.playAnimation();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit m(n.d.b bVar) {
         bVar.a().invoke();
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -187,17 +187,17 @@ public final class k implements gn.k {
         Integer backgroundColorValue;
         Intrinsics.checkNotNullParameter(rendering, "rendering");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-        if (rendering.c() && this.f19963d == null) {
-            k(h2.f23140a);
-            this.f19962c.setScaleX(0.5f);
-            this.f19962c.setScaleY(0.5f);
+        if (rendering.c() && this.f19964d == null) {
+            k(h2.f23141a);
+            this.f19963c.setScaleX(0.5f);
+            this.f19963c.setScaleY(0.5f);
         }
         if (rendering.c()) {
-            Context context = this.f19961b.getContext();
+            Context context = this.f19962b.getContext();
             Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-            Integer f10 = bq.s.f(context, tp.a.f49764m, null, false, 6, null);
+            Integer f10 = bq.s.f(context, tp.a.f49765m, null, false, 6, null);
             if (f10 != null) {
-                this.f19961b.setBackground(androidx.core.content.a.e(this.f19961b.getContext(), f10.intValue()));
+                this.f19962b.setBackground(androidx.core.content.a.e(this.f19962b.getContext(), f10.intValue()));
             }
         }
         StepStyle b10 = rendering.b();
@@ -205,7 +205,7 @@ public final class k implements gn.k {
             j10 = backgroundColorValue.intValue();
             kVar = this;
         } else {
-            Context context2 = this.f19961b.getContext();
+            Context context2 = this.f19962b.getContext();
             Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
             kVar = this;
             j10 = j(kVar, context2, 16842801, null, false, 6, null);
@@ -215,19 +215,19 @@ public final class k implements gn.k {
         if (b11 != null) {
             Integer backgroundColorValue2 = b11.getBackgroundColorValue();
             if (backgroundColorValue2 != null) {
-                kVar.f19961b.setBackgroundColor(backgroundColorValue2.intValue());
+                kVar.f19962b.setBackgroundColor(backgroundColorValue2.intValue());
             }
-            Context context3 = kVar.f19961b.getContext();
+            Context context3 = kVar.f19962b.getContext();
             Intrinsics.checkNotNullExpressionValue(context3, "getContext(...)");
             Drawable a10 = wq.c.a(b11, context3);
             if (a10 != null) {
-                kVar.f19961b.setBackground(a10);
+                kVar.f19962b.setBackground(a10);
             }
-            if (kVar.f19963d == null) {
+            if (kVar.f19964d == null) {
                 Integer fillColorValue = b11.getFillColorValue();
                 if (fillColorValue != null) {
                     final int intValue = fillColorValue.intValue();
-                    kVar.f19962c.l(new r5.e("**"), l5.b0.f35545a, new z5.e() { // from class: ep.u
+                    kVar.f19963c.l(new r5.e("**"), l5.b0.f35546a, new z5.e() { // from class: ep.u
                         @Override // z5.e
                         public final Object a(z5.b bVar) {
                             Integer n10;
@@ -239,7 +239,7 @@ public final class k implements gn.k {
                 Integer strokeColorValue = b11.getStrokeColorValue();
                 if (strokeColorValue != null) {
                     final int intValue2 = strokeColorValue.intValue();
-                    kVar.f19962c.l(new r5.e("**"), l5.b0.f35546b, new z5.e() { // from class: ep.v
+                    kVar.f19963c.l(new r5.e("**"), l5.b0.f35547b, new z5.e() { // from class: ep.v
                         @Override // z5.e
                         public final Object a(z5.b bVar) {
                             Integer o10;
@@ -250,7 +250,7 @@ public final class k implements gn.k {
                 }
             }
         }
-        gn.e.c(kVar.f19961b, new Function0() { // from class: ep.w
+        gn.e.c(kVar.f19962b, new Function0() { // from class: ep.w
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit m10;

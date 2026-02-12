@@ -7,45 +7,45 @@ import java.io.Serializable;
 public final class y implements bu.l0, Comparable, Serializable {
 
     /* renamed from: o  reason: collision with root package name */
-    private static final y f37796o;
+    private static final y f37797o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final y f37797p;
+    private static final y f37798p;
 
     /* renamed from: q  reason: collision with root package name */
-    public static final bu.j0 f37798q;
+    public static final bu.j0 f37799q;
 
     /* renamed from: r  reason: collision with root package name */
-    public static final bu.j0 f37799r;
+    public static final bu.j0 f37800r;
     private static final long serialVersionUID = -4150291820807606229L;
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient long f37800d;
+    private final transient long f37801d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient int f37801e;
+    private final transient int f37802e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient iu.f f37802i;
+    private final transient iu.f f37803i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static class b implements bu.j0 {
 
         /* renamed from: d  reason: collision with root package name */
-        private final iu.f f37803d;
+        private final iu.f f37804d;
 
         private b(iu.f fVar) {
-            this.f37803d = fVar;
+            this.f37804d = fVar;
         }
     }
 
     static {
         iu.f fVar = iu.f.POSIX;
-        f37796o = new y(0L, 0, fVar);
+        f37797o = new y(0L, 0, fVar);
         iu.f fVar2 = iu.f.UTC;
-        f37797p = new y(0L, 0, fVar2);
-        f37798q = new b(fVar);
-        f37799r = new b(fVar2);
+        f37798p = new y(0L, 0, fVar2);
+        f37799q = new b(fVar);
+        f37800r = new b(fVar2);
     }
 
     private y(long j10, int i10, iu.f fVar) {
@@ -61,21 +61,21 @@ public final class y implements bu.l0, Comparable, Serializable {
             j10++;
             i10 -= 1000000000;
         }
-        this.f37800d = j10;
-        this.f37801e = i10;
-        this.f37802i = fVar;
+        this.f37801d = j10;
+        this.f37802e = i10;
+        this.f37803i = fVar;
     }
 
     private void e(StringBuilder sb2) {
         if (i()) {
             sb2.append('-');
-            sb2.append(Math.abs(this.f37800d));
+            sb2.append(Math.abs(this.f37801d));
         } else {
-            sb2.append(this.f37800d);
+            sb2.append(this.f37801d);
         }
-        if (this.f37801e != 0) {
+        if (this.f37802e != 0) {
             sb2.append('.');
-            String valueOf = String.valueOf(Math.abs(this.f37801e));
+            String valueOf = String.valueOf(Math.abs(this.f37802e));
             for (int length = 9 - valueOf.length(); length > 0; length--) {
                 sb2.append('0');
             }
@@ -85,14 +85,14 @@ public final class y implements bu.l0, Comparable, Serializable {
 
     public static y k(long j10, int i10) {
         if (j10 == 0 && i10 == 0) {
-            return f37796o;
+            return f37797o;
         }
         return new y(j10, i10, iu.f.POSIX);
     }
 
     public static y l(long j10, int i10) {
         if (j10 == 0 && i10 == 0) {
-            return f37797p;
+            return f37798p;
         }
         return new y(j10, i10, iu.f.UTC);
     }
@@ -108,16 +108,16 @@ public final class y implements bu.l0, Comparable, Serializable {
     @Override // java.lang.Comparable
     /* renamed from: d */
     public int compareTo(y yVar) {
-        if (this.f37802i == yVar.f37802i) {
-            long j10 = this.f37800d;
-            long j11 = yVar.f37800d;
+        if (this.f37803i == yVar.f37803i) {
+            long j10 = this.f37801d;
+            long j11 = yVar.f37801d;
             if (j10 < j11) {
                 return -1;
             }
             if (j10 > j11) {
                 return 1;
             }
-            return this.f37801e - yVar.f37801e;
+            return this.f37802e - yVar.f37802e;
         }
         throw new ClassCastException("Different time scales.");
     }
@@ -128,7 +128,7 @@ public final class y implements bu.l0, Comparable, Serializable {
         }
         if (obj instanceof y) {
             y yVar = (y) obj;
-            if (this.f37800d == yVar.f37800d && this.f37801e == yVar.f37801e && this.f37802i == yVar.f37802i) {
+            if (this.f37801d == yVar.f37801d && this.f37802e == yVar.f37802e && this.f37803i == yVar.f37803i) {
                 return true;
             }
         }
@@ -136,7 +136,7 @@ public final class y implements bu.l0, Comparable, Serializable {
     }
 
     public int f() {
-        int i10 = this.f37801e;
+        int i10 = this.f37802e;
         if (i10 < 0) {
             return i10 + 1000000000;
         }
@@ -144,24 +144,24 @@ public final class y implements bu.l0, Comparable, Serializable {
     }
 
     public iu.f g() {
-        return this.f37802i;
+        return this.f37803i;
     }
 
     public long h() {
-        long j10 = this.f37800d;
-        if (this.f37801e < 0) {
+        long j10 = this.f37801d;
+        if (this.f37802e < 0) {
             return j10 - 1;
         }
         return j10;
     }
 
     public int hashCode() {
-        long j10 = this.f37800d;
-        return ((((161 + ((int) (j10 ^ (j10 >>> 32)))) * 23) + this.f37801e) * 23) + this.f37802i.hashCode();
+        long j10 = this.f37801d;
+        return ((((161 + ((int) (j10 ^ (j10 >>> 32)))) * 23) + this.f37802e) * 23) + this.f37803i.hashCode();
     }
 
     public boolean i() {
-        if (this.f37800d >= 0 && this.f37801e >= 0) {
+        if (this.f37801d >= 0 && this.f37802e >= 0) {
             return false;
         }
         return true;
@@ -171,7 +171,7 @@ public final class y implements bu.l0, Comparable, Serializable {
         StringBuilder sb2 = new StringBuilder();
         e(sb2);
         sb2.append("s [");
-        sb2.append(this.f37802i.name());
+        sb2.append(this.f37803i.name());
         sb2.append(']');
         return sb2.toString();
     }

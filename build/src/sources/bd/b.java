@@ -60,7 +60,7 @@ final class b implements g {
     public z.a e(long j10) {
         int g10 = w0.g(this.f6570b, j10, true, true);
         a0 a0Var = new a0(this.f6570b.b(g10), this.f6571c.b(g10));
-        if (a0Var.f50611a != j10 && g10 != this.f6570b.c() - 1) {
+        if (a0Var.f50612a != j10 && g10 != this.f6570b.c() - 1) {
             int i10 = g10 + 1;
             return new z.a(a0Var, new a0(this.f6570b.b(i10), this.f6571c.b(i10)));
         }

@@ -24,7 +24,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9236id;
+    private final String f9237id;
     private final int type;
     @NotNull
     public static final Companion Companion = new Companion(null);
@@ -61,7 +61,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
             v1.b(i10, 11, ActionRowComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f9236id = str;
+        this.f9237id = str;
         if ((i10 & 4) == 0) {
             this.errorText = null;
         } else {
@@ -81,7 +81,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
             i10 = actionRowComponent.type;
         }
         if ((i11 & 2) != 0) {
-            str = actionRowComponent.f9236id;
+            str = actionRowComponent.f9237id;
         }
         if ((i11 & 4) != 0) {
             str2 = actionRowComponent.errorText;
@@ -97,7 +97,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
         compositeEncoder.w(serialDescriptor, 0, actionRowComponent.getType());
         compositeEncoder.y(serialDescriptor, 1, actionRowComponent.getId());
         if (compositeEncoder.z(serialDescriptor, 2) || actionRowComponent.getErrorText() != null) {
-            compositeEncoder.o(serialDescriptor, 2, n2.f50032a, actionRowComponent.getErrorText());
+            compositeEncoder.o(serialDescriptor, 2, n2.f50033a, actionRowComponent.getErrorText());
         }
         compositeEncoder.k(serialDescriptor, 3, (qt.o) lazyArr[3].getValue(), actionRowComponent.components);
     }
@@ -108,7 +108,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
 
     @NotNull
     public final String component2() {
-        return this.f9236id;
+        return this.f9237id;
     }
 
     public final String component3() {
@@ -133,7 +133,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
         }
         if (obj instanceof ActionRowComponent) {
             ActionRowComponent actionRowComponent = (ActionRowComponent) obj;
-            return this.type == actionRowComponent.type && Intrinsics.areEqual(this.f9236id, actionRowComponent.f9236id) && Intrinsics.areEqual(this.errorText, actionRowComponent.errorText) && Intrinsics.areEqual(this.components, actionRowComponent.components);
+            return this.type == actionRowComponent.type && Intrinsics.areEqual(this.f9237id, actionRowComponent.f9237id) && Intrinsics.areEqual(this.errorText, actionRowComponent.errorText) && Intrinsics.areEqual(this.components, actionRowComponent.components);
         }
         return false;
     }
@@ -151,7 +151,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f9236id;
+        return this.f9237id;
     }
 
     @Override // com.discord.chat.bridge.botuikit.Component
@@ -160,7 +160,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
     }
 
     public int hashCode() {
-        int hashCode = ((Integer.hashCode(this.type) * 31) + this.f9236id.hashCode()) * 31;
+        int hashCode = ((Integer.hashCode(this.type) * 31) + this.f9237id.hashCode()) * 31;
         String str = this.errorText;
         return ((hashCode + (str == null ? 0 : str.hashCode())) * 31) + this.components.hashCode();
     }
@@ -168,7 +168,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f9236id;
+        String str = this.f9237id;
         String str2 = this.errorText;
         List<Component> list = this.components;
         return "ActionRowComponent(type=" + i10 + ", id=" + str + ", errorText=" + str2 + ", components=" + list + ")";
@@ -185,7 +185,7 @@ public final class ActionRowComponent extends BaseLayoutComponent {
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(components, "components");
         this.type = i10;
-        this.f9236id = id2;
+        this.f9237id = id2;
         this.errorText = str;
         this.components = components;
     }

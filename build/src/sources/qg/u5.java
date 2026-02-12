@@ -5,30 +5,30 @@ import bj.c;
 final class u5 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final u5 f45003a = new u5();
+    static final u5 f45004a = new u5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f45004b;
+    private static final bj.c f45005b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f45005c;
+    private static final bj.c f45006c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f45006d;
+    private static final bj.c f45007d;
 
     static {
         c.b a10 = bj.c.a("identifyLanguageConfidenceThreshold");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f45004b = a10.b(s1Var.b()).a();
+        f45005b = a10.b(s1Var.b()).a();
         c.b a11 = bj.c.a("identifyAllLanguagesConfidenceThreshold");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f45005c = a11.b(s1Var2.b()).a();
+        f45006c = a11.b(s1Var2.b()).a();
         c.b a12 = bj.c.a("confidenceThreshold");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f45006d = a12.b(s1Var3.b()).a();
+        f45007d = a12.b(s1Var3.b()).a();
     }
 
     private u5() {

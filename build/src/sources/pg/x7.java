@@ -10,14 +10,14 @@ public enum x7 implements h {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f42663d;
+    private final int f42664d;
 
     x7(int i10) {
-        this.f42663d = i10;
+        this.f42664d = i10;
     }
 
     @Override // pg.h
     public final int zza() {
-        return this.f42663d;
+        return this.f42664d;
     }
 }

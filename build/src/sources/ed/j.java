@@ -10,10 +10,10 @@ import java.util.List;
 public final class j implements i0.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f22551a;
+    private final int f22552a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f22552b;
+    private final List f22553b;
 
     public j(int i10) {
         this(i10, qi.s.t());
@@ -33,10 +33,10 @@ public final class j implements i0.c {
         int i10;
         List list;
         if (f(32)) {
-            return this.f22552b;
+            return this.f22553b;
         }
-        oe.h0 h0Var = new oe.h0(bVar.f22545d);
-        List list2 = this.f22552b;
+        oe.h0 h0Var = new oe.h0(bVar.f22546d);
+        List list2 = this.f22553b;
         while (h0Var.a() > 0) {
             int H = h0Var.H();
             int f10 = h0Var.f() + h0Var.H();
@@ -78,7 +78,7 @@ public final class j implements i0.c {
     }
 
     private boolean f(int i10) {
-        if ((i10 & this.f22551a) != 0) {
+        if ((i10 & this.f22552a) != 0) {
             return true;
         }
         return false;
@@ -102,14 +102,14 @@ public final class j implements i0.c {
                                                             if (f(2)) {
                                                                 return null;
                                                             }
-                                                            return new w(new i(false, bVar.f22543b));
+                                                            return new w(new i(false, bVar.f22544b));
                                                         case 16:
                                                             return new w(new o(d(bVar)));
                                                         case 17:
                                                             if (f(2)) {
                                                                 return null;
                                                             }
-                                                            return new w(new s(bVar.f22543b));
+                                                            return new w(new s(bVar.f22544b));
                                                         default:
                                                             switch (i10) {
                                                                 case IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT /* 128 */:
@@ -126,7 +126,7 @@ public final class j implements i0.c {
                                                             }
                                                     }
                                                 }
-                                                return new w(new c(bVar.f22543b));
+                                                return new w(new c(bVar.f22544b));
                                             } else if (f(16)) {
                                                 return null;
                                             } else {
@@ -135,11 +135,11 @@ public final class j implements i0.c {
                                         }
                                         return new c0(new v("application/vnd.dvb.ait"));
                                     }
-                                    return new w(new f(bVar.f22543b));
+                                    return new w(new f(bVar.f22544b));
                                 }
-                                return new w(new k(bVar.f22543b));
+                                return new w(new k(bVar.f22544b));
                             }
-                            return new w(new l(bVar.f22544c));
+                            return new w(new l(bVar.f22545c));
                         }
                         return new w(new q(c(bVar)));
                     } else if (f(4)) {
@@ -150,7 +150,7 @@ public final class j implements i0.c {
                 }
                 return new w(new r());
             }
-            return new w(new t(bVar.f22543b));
+            return new w(new t(bVar.f22544b));
         }
         return new w(new n(d(bVar)));
     }
@@ -161,7 +161,7 @@ public final class j implements i0.c {
     }
 
     public j(int i10, List list) {
-        this.f22551a = i10;
-        this.f22552b = list;
+        this.f22552a = i10;
+        this.f22553b = list;
     }
 }

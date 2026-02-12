@@ -7,10 +7,10 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class n3 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private io.sentry.protocol.x f29559d;
+    private io.sentry.protocol.x f29560d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Map f29560e;
+    private Map f29561e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -31,7 +31,7 @@ public final class n3 implements w1 {
                 } else {
                     io.sentry.protocol.x xVar = (io.sentry.protocol.x) e3Var.I0(iLogger, new x.a());
                     if (xVar != null) {
-                        n3Var.f29559d = xVar;
+                        n3Var.f29560d = xVar;
                     }
                 }
             }
@@ -42,11 +42,11 @@ public final class n3 implements w1 {
     }
 
     public n3() {
-        this(io.sentry.protocol.x.f29798e);
+        this(io.sentry.protocol.x.f29799e);
     }
 
     public void b(Map map) {
-        this.f29560e = map;
+        this.f29561e = map;
     }
 
     public boolean equals(Object obj) {
@@ -56,35 +56,35 @@ public final class n3 implements w1 {
         if (!(obj instanceof n3)) {
             return false;
         }
-        return this.f29559d.equals(((n3) obj).f29559d);
+        return this.f29560d.equals(((n3) obj).f29560d);
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f29559d);
+        return io.sentry.util.y.b(this.f29560d);
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("profiler_id").j(iLogger, this.f29559d);
-        Map map = this.f29560e;
+        f3Var.e("profiler_id").j(iLogger, this.f29560d);
+        Map map = this.f29561e;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f29560e.get(str));
+                f3Var.e(str).j(iLogger, this.f29561e.get(str));
             }
         }
         f3Var.D();
     }
 
     public n3(io.sentry.protocol.x xVar) {
-        this.f29559d = xVar;
+        this.f29560d = xVar;
     }
 
     public n3(n3 n3Var) {
-        this.f29559d = n3Var.f29559d;
-        Map b10 = io.sentry.util.c.b(n3Var.f29560e);
+        this.f29560d = n3Var.f29560d;
+        Map b10 = io.sentry.util.c.b(n3Var.f29561e);
         if (b10 != null) {
-            this.f29560e = b10;
+            this.f29561e = b10;
         }
     }
 }

@@ -13,32 +13,32 @@ import rg.oe;
 final class g implements o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f27390a;
+    private final Context f27391a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final oe f27391b = new oe(null);
+    private final oe f27392b = new oe(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f27392c;
+    private boolean f27393c;
 
     /* renamed from: d  reason: collision with root package name */
-    private g6 f27393d;
+    private g6 f27394d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g(Context context) {
-        this.f27390a = context;
+        this.f27391a = context;
     }
 
     @Override // hk.o
     public final void a() {
-        g6 g6Var = this.f27393d;
+        g6 g6Var = this.f27394d;
         if (g6Var != null) {
             try {
                 g6Var.W0();
             } catch (RemoteException e10) {
                 Log.e("LegacyTextDelegate", "Failed to release legacy text recognizer.", e10);
             }
-            this.f27393d = null;
+            this.f27394d = null;
         }
     }
 
@@ -46,10 +46,10 @@ final class g implements o {
     public final gk.a c(ck.a aVar) {
         Bitmap e10;
         int i10;
-        if (this.f27393d == null) {
+        if (this.f27394d == null) {
             zzb();
         }
-        if (this.f27393d != null) {
+        if (this.f27394d != null) {
             if (aVar.g() == -1) {
                 e10 = aVar.d();
                 i10 = dk.b.a(aVar.k());
@@ -59,7 +59,7 @@ final class g implements o {
             }
             int i11 = i10;
             try {
-                return m.a(((g6) hf.q.l(this.f27393d)).X0(tf.b.W0(e10), new c2(aVar.l(), aVar.h(), 0, 0L, i11)), aVar.f());
+                return m.a(((g6) hf.q.l(this.f27394d)).X0(tf.b.W0(e10), new c2(aVar.l(), aVar.h(), 0, 0L, i11)), aVar.f());
             } catch (RemoteException e11) {
                 throw new sj.a("Failed to run legacy text recognizer.", 13, e11);
             }
@@ -69,14 +69,14 @@ final class g implements o {
 
     @Override // hk.o
     public final void zzb() {
-        if (this.f27393d == null) {
+        if (this.f27394d == null) {
             try {
-                g6 X = i8.e(DynamiteModule.e(this.f27390a, DynamiteModule.f14540b, "com.google.android.gms.vision.dynamite").d("com.google.android.gms.vision.text.ChimeraNativeTextRecognizerCreator")).X(tf.b.W0(this.f27390a), this.f27391b);
-                this.f27393d = X;
-                if (X == null && !this.f27392c) {
+                g6 X = i8.e(DynamiteModule.e(this.f27391a, DynamiteModule.f14541b, "com.google.android.gms.vision.dynamite").d("com.google.android.gms.vision.text.ChimeraNativeTextRecognizerCreator")).X(tf.b.W0(this.f27391a), this.f27392b);
+                this.f27394d = X;
+                if (X == null && !this.f27393c) {
                     Log.d("LegacyTextDelegate", "Request OCR optional module download.");
-                    wj.l.c(this.f27390a, "ocr");
-                    this.f27392c = true;
+                    wj.l.c(this.f27391a, "ocr");
+                    this.f27393c = true;
                 }
             } catch (RemoteException e10) {
                 throw new sj.a("Failed to create legacy text recognizer.", 13, e10);

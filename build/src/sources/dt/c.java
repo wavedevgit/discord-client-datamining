@@ -6,10 +6,10 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class c {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f21871d = AtomicReferenceFieldUpdater.newUpdater(c.class, Object.class, "_next$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f21872d = AtomicReferenceFieldUpdater.newUpdater(c.class, Object.class, "_next$volatile");
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f21872e = AtomicReferenceFieldUpdater.newUpdater(c.class, Object.class, "_prev$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f21873e = AtomicReferenceFieldUpdater.newUpdater(c.class, Object.class, "_prev$volatile");
     private volatile /* synthetic */ Object _next$volatile;
     private volatile /* synthetic */ Object _prev$volatile;
 
@@ -20,7 +20,7 @@ public abstract class c {
     private final c d() {
         c h10 = h();
         while (h10 != null && h10.k()) {
-            h10 = (c) f21872e.get(h10);
+            h10 = (c) f21873e.get(h10);
         }
         return h10;
     }
@@ -37,11 +37,11 @@ public abstract class c {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final Object g() {
-        return f21871d.get(this);
+        return f21872d.get(this);
     }
 
     public final void b() {
-        f21872e.set(this, null);
+        f21873e.set(this, null);
     }
 
     public final c f() {
@@ -53,7 +53,7 @@ public abstract class c {
     }
 
     public final c h() {
-        return (c) f21872e.get(this);
+        return (c) f21873e.get(this);
     }
 
     public abstract boolean k();
@@ -66,7 +66,7 @@ public abstract class c {
     }
 
     public final boolean m() {
-        return androidx.concurrent.futures.b.a(f21871d, this, null, b.a());
+        return androidx.concurrent.futures.b.a(f21872d, this, null, b.a());
     }
 
     public final void n() {
@@ -78,7 +78,7 @@ public abstract class c {
         while (true) {
             c d10 = d();
             c e10 = e();
-            AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f21872e;
+            AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f21873e;
             do {
                 obj = atomicReferenceFieldUpdater.get(e10);
                 if (((c) obj) == null) {
@@ -88,7 +88,7 @@ public abstract class c {
                 }
             } while (!androidx.concurrent.futures.b.a(atomicReferenceFieldUpdater, e10, obj, cVar));
             if (d10 != null) {
-                f21871d.set(d10, e10);
+                f21872d.set(d10, e10);
             }
             if (!e10.k() || e10.l()) {
                 if (d10 == null || !d10.k()) {
@@ -99,6 +99,6 @@ public abstract class c {
     }
 
     public final boolean o(c cVar) {
-        return androidx.concurrent.futures.b.a(f21871d, this, null, cVar);
+        return androidx.concurrent.futures.b.a(f21872d, this, null, cVar);
     }
 }

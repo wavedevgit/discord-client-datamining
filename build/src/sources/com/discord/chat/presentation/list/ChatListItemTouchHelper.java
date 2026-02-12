@@ -621,8 +621,8 @@ public class ChatListItemTouchHelper extends RecyclerView.ItemDecoration impleme
             this.mRecyclerView = recyclerView;
             if (recyclerView != null) {
                 Resources resources = recyclerView.getResources();
-                this.mSwipeEscapeVelocity = resources.getDimension(q3.b.f43898f);
-                this.mMaxSwipeVelocity = resources.getDimension(q3.b.f43897e);
+                this.mSwipeEscapeVelocity = resources.getDimension(q3.b.f43899f);
+                this.mMaxSwipeVelocity = resources.getDimension(q3.b.f43898e);
                 setupCallbacks();
             }
         }

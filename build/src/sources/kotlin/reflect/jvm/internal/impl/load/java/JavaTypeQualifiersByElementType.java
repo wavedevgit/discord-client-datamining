@@ -7,19 +7,19 @@ import org.jetbrains.annotations.NotNull;
 public final class JavaTypeQualifiersByElementType {
 
     /* renamed from: a  reason: collision with root package name */
-    private final EnumMap f32703a;
+    private final EnumMap f32704a;
 
     public JavaTypeQualifiersByElementType(@NotNull EnumMap<AnnotationQualifierApplicabilityType, JavaDefaultQualifiers> defaultQualifiers) {
         Intrinsics.checkNotNullParameter(defaultQualifiers, "defaultQualifiers");
-        this.f32703a = defaultQualifiers;
+        this.f32704a = defaultQualifiers;
     }
 
     public final JavaDefaultQualifiers get(AnnotationQualifierApplicabilityType annotationQualifierApplicabilityType) {
-        return (JavaDefaultQualifiers) this.f32703a.get(annotationQualifierApplicabilityType);
+        return (JavaDefaultQualifiers) this.f32704a.get(annotationQualifierApplicabilityType);
     }
 
     @NotNull
     public final EnumMap<AnnotationQualifierApplicabilityType, JavaDefaultQualifiers> getDefaultQualifiers() {
-        return this.f32703a;
+        return this.f32704a;
     }
 }

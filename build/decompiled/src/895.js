@@ -39,7 +39,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.bind(var0)(var2);
                 var2 = var2.DEBUG_BUILD;
                 if (!var2) {
-                    _fun9463_ip = 90;
+                    _fun9463_ip = 89;
                     continue _fun9463
                 }
             case 47:
@@ -52,7 +52,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.log;
                 var1 = 'Cleared AI provider skip registrations';
                 var1 = var2.bind(var3)(var1);
-            case 90:
+            case 89:
                 return var0;
         }
     };
@@ -83,7 +83,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var3.bind(var0)(var2);
                     var2 = var2.DEBUG_BUILD;
                     if (!var2) {
-                        _fun9466_ip = 118;
+                        _fun9466_ip = 117;
                         continue _fun9466
                     }
                 case 50:
@@ -101,7 +101,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = '" wrapping will be skipped';
                     var1 = var5.bind(var4)(var6, var1);
                     var1 = var2.bind(var3)(var1);
-                case 118:
+                case 117:
                     return var0;
             }
         };

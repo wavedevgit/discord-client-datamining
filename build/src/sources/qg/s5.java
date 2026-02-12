@@ -5,30 +5,30 @@ import bj.c;
 final class s5 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final s5 f44941a = new s5();
+    static final s5 f44942a = new s5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f44942b;
+    private static final bj.c f44943b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f44943c;
+    private static final bj.c f44944c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f44944d;
+    private static final bj.c f44945d;
 
     static {
         c.b a10 = bj.c.a("modelType");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44942b = a10.b(s1Var.b()).a();
+        f44943b = a10.b(s1Var.b()).a();
         c.b a11 = bj.c.a("isDownloaded");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44943c = a11.b(s1Var2.b()).a();
+        f44944c = a11.b(s1Var2.b()).a();
         c.b a12 = bj.c.a("modelName");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44944d = a12.b(s1Var3.b()).a();
+        f44945d = a12.b(s1Var3.b()).a();
     }
 
     private s5() {

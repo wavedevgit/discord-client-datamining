@@ -6,20 +6,20 @@ import org.jetbrains.annotations.NotNull;
 public final class o2 extends androidx.lifecycle.n0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private final androidx.lifecycle.b0 f23205b;
+    private final androidx.lifecycle.b0 f23206b;
 
     public o2(@NotNull androidx.lifecycle.b0 savedStateHandle) {
         Intrinsics.checkNotNullParameter(savedStateHandle, "savedStateHandle");
-        this.f23205b = savedStateHandle;
+        this.f23206b = savedStateHandle;
     }
 
     public final androidx.lifecycle.b0 e() {
-        return this.f23205b;
+        return this.f23206b;
     }
 
     public final void f() {
-        for (String str : this.f23205b.f()) {
-            this.f23205b.h(str, null);
+        for (String str : this.f23206b.f()) {
+            this.f23206b.h(str, null);
         }
     }
 }

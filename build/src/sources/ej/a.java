@@ -5,24 +5,24 @@ import ej.d;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f22862a;
+    private int f22863a;
 
     /* renamed from: b  reason: collision with root package name */
-    private d.a f22863b = d.a.DEFAULT;
+    private d.a f22864b = d.a.DEFAULT;
 
     /* renamed from: ej.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private static final class C0303a implements d {
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f22864b;
+        private final int f22865b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final d.a f22865c;
+        private final d.a f22866c;
 
         C0303a(int i10, d.a aVar) {
-            this.f22864b = i10;
-            this.f22865c = aVar;
+            this.f22865b = i10;
+            this.f22866c = aVar;
         }
 
         @Override // java.lang.annotation.Annotation
@@ -39,7 +39,7 @@ public final class a {
                 return false;
             }
             d dVar = (d) obj;
-            if (this.f22864b == dVar.tag() && this.f22865c.equals(dVar.intEncoding())) {
+            if (this.f22865b == dVar.tag() && this.f22866c.equals(dVar.intEncoding())) {
                 return true;
             }
             return false;
@@ -47,22 +47,22 @@ public final class a {
 
         @Override // java.lang.annotation.Annotation
         public int hashCode() {
-            return (14552422 ^ this.f22864b) + (this.f22865c.hashCode() ^ 2041407134);
+            return (14552422 ^ this.f22865b) + (this.f22866c.hashCode() ^ 2041407134);
         }
 
         @Override // ej.d
         public d.a intEncoding() {
-            return this.f22865c;
+            return this.f22866c;
         }
 
         @Override // ej.d
         public int tag() {
-            return this.f22864b;
+            return this.f22865b;
         }
 
         @Override // java.lang.annotation.Annotation
         public String toString() {
-            return "@com.google.firebase.encoders.proto.Protobuf(tag=" + this.f22864b + "intEncoding=" + this.f22865c + ')';
+            return "@com.google.firebase.encoders.proto.Protobuf(tag=" + this.f22865b + "intEncoding=" + this.f22866c + ')';
         }
     }
 
@@ -71,11 +71,11 @@ public final class a {
     }
 
     public d a() {
-        return new C0303a(this.f22862a, this.f22863b);
+        return new C0303a(this.f22863a, this.f22864b);
     }
 
     public a c(int i10) {
-        this.f22862a = i10;
+        this.f22863a = i10;
         return this;
     }
 }

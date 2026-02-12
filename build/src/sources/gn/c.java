@@ -15,13 +15,13 @@ import kotlinx.coroutines.CoroutineScope;
 public final class c implements View.OnAttachStateChangeListener {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f25789d;
+    private final List f25790d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CompletableJob f25790e;
+    private final CompletableJob f25791e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final CoroutineScope f25791i;
+    private final CoroutineScope f25792i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class a extends Lambda implements Function1 {
@@ -32,31 +32,31 @@ public final class c implements View.OnAttachStateChangeListener {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((Throwable) obj);
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
 
         public final void invoke(Throwable th2) {
-            c.this.f25789d.clear();
+            c.this.f25790d.clear();
         }
     }
 
     public c(CoroutineScope parentCoroutineScope) {
         Intrinsics.checkNotNullParameter(parentCoroutineScope, "parentCoroutineScope");
-        this.f25789d = new ArrayList();
+        this.f25790d = new ArrayList();
         CompletableJob a10 = kotlinx.coroutines.z.a(kotlinx.coroutines.z.m(parentCoroutineScope.getCoroutineContext()));
         a10.z0(new a());
-        this.f25790e = a10;
-        this.f25791i = kotlinx.coroutines.i.j(parentCoroutineScope, a10);
+        this.f25791e = a10;
+        this.f25792i = kotlinx.coroutines.i.j(parentCoroutineScope, a10);
     }
 
     public final CoroutineScope b() {
-        return this.f25791i;
+        return this.f25792i;
     }
 
     public final void c(Function0 block) {
         Intrinsics.checkNotNullParameter(block, "block");
-        if (kotlinx.coroutines.i.i(this.f25791i)) {
-            this.f25789d.add(block);
+        if (kotlinx.coroutines.i.i(this.f25792i)) {
+            this.f25790d.add(block);
             return;
         }
         throw new IllegalStateException("Expected AttachedScope to be active when adding attach handler.");
@@ -65,7 +65,7 @@ public final class c implements View.OnAttachStateChangeListener {
     @Override // android.view.View.OnAttachStateChangeListener
     public void onViewAttachedToWindow(View v10) {
         Intrinsics.checkNotNullParameter(v10, "v");
-        List<Function0> list = this.f25789d;
+        List<Function0> list = this.f25790d;
         for (Function0 function0 : list) {
             function0.invoke();
         }
@@ -75,7 +75,7 @@ public final class c implements View.OnAttachStateChangeListener {
     @Override // android.view.View.OnAttachStateChangeListener
     public void onViewDetachedFromWindow(View v10) {
         Intrinsics.checkNotNullParameter(v10, "v");
-        kotlinx.coroutines.i.e(this.f25791i, "View detached", null, 2, null);
+        kotlinx.coroutines.i.e(this.f25792i, "View detached", null, 2, null);
         v10.removeOnAttachStateChangeListener(this);
     }
 }

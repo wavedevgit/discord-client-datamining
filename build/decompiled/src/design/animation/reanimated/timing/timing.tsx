@@ -26,14 +26,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var3;
     var1 = function() { // Environment: var1
         var0 = function arg0, arg1() {
-            _fun37682: for (var _fun37682_ip = 0;;) switch (_fun37682_ip) {
+            _fun37704: for (var _fun37704_ip = 0;;) switch (_fun37704_ip) {
                 case 0:
                     var5 = arg1;
                     var7 = arguments[2];
                     var4 = undefined;
                     if (!(var7 === var4)) {
-                        _fun37682_ip = 18;
-                        continue _fun37682
+                        _fun37704_ip = 18;
+                        continue _fun37704
                     }
                 case 12:
                     var7 = 'respect-motion-settings';
@@ -54,20 +54,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = 'animate-always';
                     var2 = var5;
                     if (!(var6 !== var7)) {
-                        _fun37682_ip = 112;
-                        continue _fun37682
+                        _fun37704_ip = 112;
+                        continue _fun37704
                     }
                 case 92:
                     var6 = 'respect-motion-settings';
                     if (!(var6 === var7)) {
-                        _fun37682_ip = 108;
-                        continue _fun37682
+                        _fun37704_ip = 108;
+                        continue _fun37704
                     }
                 case 102:
                     var2 = var5;
                     if (!var1) {
-                        _fun37682_ip = 112;
-                        continue _fun37682
+                        _fun37704_ip = 112;
+                        continue _fun37704
                     }
                 case 108:
                     var2 = _closure1_slot2;

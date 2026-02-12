@@ -48,26 +48,26 @@ import org.jetbrains.annotations.NotNull;
 public class BackStackContainer extends FrameLayout {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f18939i = new a(null);
+    public static final a f18940i = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final e f18940d;
+    private final e f18941d;
 
     /* renamed from: e  reason: collision with root package name */
-    private in.c f18941e;
+    private in.c f18942e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ f f18942a;
+        private final /* synthetic */ f f18943a;
 
         /* renamed from: com.squareup.workflow1.ui.backstack.BackStackContainer$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         static final class C0225a extends Lambda implements Function4 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0225a f18943d = new C0225a();
+            public static final C0225a f18944d = new C0225a();
 
             /* JADX INFO: Access modifiers changed from: package-private */
             /* renamed from: com.squareup.workflow1.ui.backstack.BackStackContainer$a$a$a  reason: collision with other inner class name */
@@ -86,7 +86,7 @@ public class BackStackContainer extends FrameLayout {
                 @Override // kotlin.jvm.functions.Function2
                 public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
                     a((in.c) obj, (a0) obj2);
-                    return Unit.f31987a;
+                    return Unit.f31988a;
                 }
             }
 
@@ -101,7 +101,7 @@ public class BackStackContainer extends FrameLayout {
                 Intrinsics.checkNotNullParameter(initialEnv, "initialEnv");
                 Intrinsics.checkNotNullParameter(context, "context");
                 BackStackContainer backStackContainer = new BackStackContainer(context, null, 0, 0, 14, null);
-                backStackContainer.setId(jn.a.f31205c);
+                backStackContainer.setId(jn.a.f31206c);
                 backStackContainer.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
                 g0.a(backStackContainer, initialRendering, initialEnv, new C0226a(backStackContainer));
                 return backStackContainer;
@@ -118,16 +118,16 @@ public class BackStackContainer extends FrameLayout {
             Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
             Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f18942a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+            return this.f18943a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
         }
 
         @Override // gn.c0
         public KClass getType() {
-            return this.f18942a.getType();
+            return this.f18943a.getType();
         }
 
         private a() {
-            this.f18942a = new f(Reflection.getOrCreateKotlinClass(in.c.class), C0225a.f18943d);
+            this.f18943a = new f(Reflection.getOrCreateKotlinClass(in.c.class), C0225a.f18944d);
         }
     }
 
@@ -136,7 +136,7 @@ public class BackStackContainer extends FrameLayout {
     public static final class c extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final c f18945d = new c();
+        public static final c f18946d = new c();
 
         c() {
             super(1);
@@ -160,7 +160,7 @@ public class BackStackContainer extends FrameLayout {
     public static final void d(View view, Function0 doStart) {
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(doStart, "doStart");
-        d.a.e(d.f27463h, view, null, 2, null);
+        d.a.e(d.f27464h, view, null, 2, null);
         doStart.invoke();
     }
 
@@ -178,8 +178,8 @@ public class BackStackContainer extends FrameLayout {
             addView(newView);
             return;
         }
-        View findViewById = view.findViewById(jn.a.f31203a);
-        View findViewById2 = newView.findViewById(jn.a.f31203a);
+        View findViewById = view.findViewById(jn.a.f31204a);
+        View findViewById2 = newView.findViewById(jn.a.f31204a);
         if (findViewById != null && findViewById2 != null) {
             view = findViewById;
         } else {
@@ -210,8 +210,8 @@ public class BackStackContainer extends FrameLayout {
         } else {
             aVar = in.a.Other;
         }
-        a0 c11 = newViewEnvironment.c(v.a(in.a.f28006d, aVar));
-        in.c d10 = newRendering.d(c.f18945d);
+        a0 c11 = newViewEnvironment.c(v.a(in.a.f28007d, aVar));
+        in.c d10 = newRendering.d(c.f18946d);
         View currentView = getCurrentView();
         if (currentView != null) {
             if (g0.b(currentView, d10.c())) {
@@ -220,7 +220,7 @@ public class BackStackContainer extends FrameLayout {
                 view = null;
             }
             if (view != null) {
-                this.f18940d.d(d10.b());
+                this.f18941d.d(d10.b());
                 g0.g(view, d10.c(), c11);
                 return;
             }
@@ -228,15 +228,15 @@ public class BackStackContainer extends FrameLayout {
         Object c12 = d10.c();
         Context context = getContext();
         Intrinsics.checkNotNullExpressionValue(context, "this.context");
-        View c13 = f0.c((e0) c11.a(e0.f25802a), c12, c11, context, this, new h0() { // from class: in.b
+        View c13 = f0.c((e0) c11.a(e0.f25803a), c12, c11, context, this, new h0() { // from class: in.b
             @Override // gn.h0
             public final void a(View view2, Function0 function0) {
                 BackStackContainer.d(view2, function0);
             }
         });
         g0.h(c13);
-        this.f18940d.h(d10.a(), currentView, c13);
-        in.c cVar = this.f18941e;
+        this.f18941d.h(d10.a(), currentView, c13);
+        in.c cVar = this.f18942e;
         boolean z10 = false;
         if (cVar != null && (a10 = cVar.a()) != null) {
             List list = a10;
@@ -253,18 +253,18 @@ public class BackStackContainer extends FrameLayout {
             }
         }
         b(currentView, c13, z10);
-        if (currentView != null && (c10 = d.f27463h.c(currentView)) != null) {
+        if (currentView != null && (c10 = d.f27464h.c(currentView)) != null) {
             c10.f();
         }
-        this.f18941e = d10;
+        this.f18942e = d10;
     }
 
     @Override // android.view.ViewGroup, android.view.View
     protected void onAttachedToWindow() {
         Object c10;
         super.onAttachedToWindow();
-        u3.f c11 = hn.c.f27462a.c(this);
-        g.a aVar = g.f25810a;
+        u3.f c11 = hn.c.f27463a.c(this);
+        g.a aVar = g.f25811a;
         j0 d10 = k0.d(this);
         if (d10 == null) {
             c10 = null;
@@ -275,12 +275,12 @@ public class BackStackContainer extends FrameLayout {
             c10 = null;
         }
         Intrinsics.checkNotNull(c10);
-        this.f18940d.a(g.a.b(aVar, c10, null, 2, null), c11);
+        this.f18941d.a(g.a.b(aVar, c10, null, 2, null), c11);
     }
 
     @Override // android.view.ViewGroup, android.view.View
     protected void onDetachedFromWindow() {
-        this.f18940d.b();
+        this.f18941d.b();
         super.onDetachedFromWindow();
     }
 
@@ -295,9 +295,9 @@ public class BackStackContainer extends FrameLayout {
             bVar = null;
         }
         if (bVar != null) {
-            this.f18940d.f(bVar.a());
+            this.f18941d.f(bVar.a());
             super.onRestoreInstanceState(((b) state).getSuperState());
-            unit = Unit.f31987a;
+            unit = Unit.f31988a;
         }
         if (unit == null) {
             super.onRestoreInstanceState(super.onSaveInstanceState());
@@ -310,7 +310,7 @@ public class BackStackContainer extends FrameLayout {
         if (onSaveInstanceState == null) {
             return null;
         }
-        return new b(onSaveInstanceState, this.f18940d.g());
+        return new b(onSaveInstanceState, this.f18941d.g());
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -319,7 +319,7 @@ public class BackStackContainer extends FrameLayout {
         public static final a CREATOR = new a(null);
 
         /* renamed from: d  reason: collision with root package name */
-        private final e.a f18944d;
+        private final e.a f18945d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -349,18 +349,18 @@ public class BackStackContainer extends FrameLayout {
             super(superState);
             Intrinsics.checkNotNullParameter(superState, "superState");
             Intrinsics.checkNotNullParameter(savedViewState, "savedViewState");
-            this.f18944d = savedViewState;
+            this.f18945d = savedViewState;
         }
 
         public final e.a a() {
-            return this.f18944d;
+            return this.f18945d;
         }
 
         @Override // android.view.View.BaseSavedState, android.view.AbsSavedState, android.os.Parcelable
         public void writeToParcel(Parcel out, int i10) {
             Intrinsics.checkNotNullParameter(out, "out");
             super.writeToParcel(out, i10);
-            out.writeParcelable(this.f18944d, i10);
+            out.writeParcelable(this.f18945d, i10);
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -370,7 +370,7 @@ public class BackStackContainer extends FrameLayout {
             Parcelable readParcelable = source.readParcelable(e.a.class.getClassLoader());
             Intrinsics.checkNotNull(readParcelable);
             Intrinsics.checkNotNullExpressionValue(readParcelable, "source.readParcelable(Vi…class.java.classLoader)!!");
-            this.f18944d = (e.a) readParcelable;
+            this.f18945d = (e.a) readParcelable;
         }
     }
 
@@ -382,6 +382,6 @@ public class BackStackContainer extends FrameLayout {
     public BackStackContainer(Context context, AttributeSet attributeSet, int i10, int i11) {
         super(context, attributeSet, i10, i11);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f18940d = new e();
+        this.f18941d = new e();
     }
 }

@@ -12,10 +12,10 @@ import vt.c0;
 public final class v implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final v f51258a = new v();
+    public static final v f51259a = new v();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f51259b = st.j.e("kotlinx.serialization.json.JsonNull", k.b.f48378a, new SerialDescriptor[0], null, 8, null);
+    private static final SerialDescriptor f51260b = st.j.e("kotlinx.serialization.json.JsonNull", k.b.f48379a, new SerialDescriptor[0], null, 8, null);
 
     private v() {
     }
@@ -43,6 +43,6 @@ public final class v implements KSerializer {
 
     @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return f51259b;
+        return f51260b;
     }
 }

@@ -29,7 +29,7 @@ public final class SeparatorRow extends Row {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9274id;
+    private final String f9275id;
     private final int index;
     private final Boolean isBeforeContent;
     private final Boolean scrollTo;
@@ -62,7 +62,7 @@ public final class SeparatorRow extends Row {
         this.changeType = changeType;
         this.index = i11;
         this.text = str;
-        this.f9274id = str2;
+        this.f9275id = str2;
         this.color = i12;
         if ((i10 & 32) == 0) {
             this.scrollTo = null;
@@ -92,7 +92,7 @@ public final class SeparatorRow extends Row {
             str = separatorRow.text;
         }
         if ((i12 & 8) != 0) {
-            str2 = separatorRow.f9274id;
+            str2 = separatorRow.f9275id;
         }
         if ((i12 & 16) != 0) {
             i11 = separatorRow.color;
@@ -117,13 +117,13 @@ public final class SeparatorRow extends Row {
         compositeEncoder.k(serialDescriptor, 0, ChangeType.Serializer.INSTANCE, separatorRow.getChangeType());
         compositeEncoder.w(serialDescriptor, 1, separatorRow.getIndex());
         compositeEncoder.y(serialDescriptor, 2, separatorRow.text);
-        compositeEncoder.y(serialDescriptor, 3, separatorRow.f9274id);
+        compositeEncoder.y(serialDescriptor, 3, separatorRow.f9275id);
         compositeEncoder.w(serialDescriptor, 4, separatorRow.color);
         if (compositeEncoder.z(serialDescriptor, 5) || separatorRow.scrollTo != null) {
-            compositeEncoder.o(serialDescriptor, 5, h.f49996a, separatorRow.scrollTo);
+            compositeEncoder.o(serialDescriptor, 5, h.f49997a, separatorRow.scrollTo);
         }
         if (compositeEncoder.z(serialDescriptor, 6) || separatorRow.isBeforeContent != null) {
-            compositeEncoder.o(serialDescriptor, 6, h.f49996a, separatorRow.isBeforeContent);
+            compositeEncoder.o(serialDescriptor, 6, h.f49997a, separatorRow.isBeforeContent);
         }
         if (compositeEncoder.z(serialDescriptor, 7) || separatorRow.summary != null) {
             compositeEncoder.o(serialDescriptor, 7, Summary$$serializer.INSTANCE, separatorRow.summary);
@@ -146,7 +146,7 @@ public final class SeparatorRow extends Row {
 
     @NotNull
     public final String component4() {
-        return this.f9274id;
+        return this.f9275id;
     }
 
     public final int component5() {
@@ -179,7 +179,7 @@ public final class SeparatorRow extends Row {
         }
         if (obj instanceof SeparatorRow) {
             SeparatorRow separatorRow = (SeparatorRow) obj;
-            return this.changeType == separatorRow.changeType && this.index == separatorRow.index && Intrinsics.areEqual(this.text, separatorRow.text) && Intrinsics.areEqual(this.f9274id, separatorRow.f9274id) && this.color == separatorRow.color && Intrinsics.areEqual(this.scrollTo, separatorRow.scrollTo) && Intrinsics.areEqual(this.isBeforeContent, separatorRow.isBeforeContent) && Intrinsics.areEqual(this.summary, separatorRow.summary);
+            return this.changeType == separatorRow.changeType && this.index == separatorRow.index && Intrinsics.areEqual(this.text, separatorRow.text) && Intrinsics.areEqual(this.f9275id, separatorRow.f9275id) && this.color == separatorRow.color && Intrinsics.areEqual(this.scrollTo, separatorRow.scrollTo) && Intrinsics.areEqual(this.isBeforeContent, separatorRow.isBeforeContent) && Intrinsics.areEqual(this.summary, separatorRow.summary);
         }
         return false;
     }
@@ -196,7 +196,7 @@ public final class SeparatorRow extends Row {
 
     @NotNull
     public final String getId() {
-        return this.f9274id;
+        return this.f9275id;
     }
 
     @Override // com.discord.chat.bridge.row.Row
@@ -218,7 +218,7 @@ public final class SeparatorRow extends Row {
     }
 
     public int hashCode() {
-        int hashCode = ((((((((this.changeType.hashCode() * 31) + Integer.hashCode(this.index)) * 31) + this.text.hashCode()) * 31) + this.f9274id.hashCode()) * 31) + Integer.hashCode(this.color)) * 31;
+        int hashCode = ((((((((this.changeType.hashCode() * 31) + Integer.hashCode(this.index)) * 31) + this.text.hashCode()) * 31) + this.f9275id.hashCode()) * 31) + Integer.hashCode(this.color)) * 31;
         Boolean bool = this.scrollTo;
         int hashCode2 = (hashCode + (bool == null ? 0 : bool.hashCode())) * 31;
         Boolean bool2 = this.isBeforeContent;
@@ -236,7 +236,7 @@ public final class SeparatorRow extends Row {
         ChangeType changeType = this.changeType;
         int i10 = this.index;
         String str = this.text;
-        String str2 = this.f9274id;
+        String str2 = this.f9275id;
         int i11 = this.color;
         Boolean bool = this.scrollTo;
         Boolean bool2 = this.isBeforeContent;
@@ -257,7 +257,7 @@ public final class SeparatorRow extends Row {
         this.changeType = changeType;
         this.index = i10;
         this.text = text;
-        this.f9274id = id2;
+        this.f9275id = id2;
         this.color = i11;
         this.scrollTo = bool;
         this.isBeforeContent = bool2;

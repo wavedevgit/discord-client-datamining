@@ -7,29 +7,29 @@ import jk.s;
 public class l {
 
     /* renamed from: b  reason: collision with root package name */
-    private static boolean f31106b = true;
+    private static boolean f31107b = true;
 
     /* renamed from: c  reason: collision with root package name */
-    private static volatile l f31107c;
+    private static volatile l f31108c;
 
     /* renamed from: d  reason: collision with root package name */
-    static final l f31108d = new l(true);
+    static final l f31109d = new l(true);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f31109a = Collections.EMPTY_MAP;
+    private final Map f31110a = Collections.EMPTY_MAP;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Object f31110a;
+        private final Object f31111a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f31111b;
+        private final int f31112b;
 
         a(Object obj, int i10) {
-            this.f31110a = obj;
-            this.f31111b = i10;
+            this.f31111a = obj;
+            this.f31112b = i10;
         }
 
         public boolean equals(Object obj) {
@@ -37,14 +37,14 @@ public class l {
                 return false;
             }
             a aVar = (a) obj;
-            if (this.f31110a != aVar.f31110a || this.f31111b != aVar.f31111b) {
+            if (this.f31111a != aVar.f31111a || this.f31112b != aVar.f31112b) {
                 return false;
             }
             return true;
         }
 
         public int hashCode() {
-            return (System.identityHashCode(this.f31110a) * 65535) + this.f31111b;
+            return (System.identityHashCode(this.f31111a) * 65535) + this.f31112b;
         }
     }
 
@@ -53,17 +53,17 @@ public class l {
 
     public static l b() {
         l lVar;
-        if (!f31106b) {
-            return f31108d;
+        if (!f31107b) {
+            return f31109d;
         }
-        l lVar2 = f31107c;
+        l lVar2 = f31108c;
         if (lVar2 == null) {
             synchronized (l.class) {
                 try {
-                    lVar = f31107c;
+                    lVar = f31108c;
                     if (lVar == null) {
                         lVar = k.a();
-                        f31107c = lVar;
+                        f31108c = lVar;
                     }
                 } catch (Throwable th2) {
                     throw th2;
@@ -75,7 +75,7 @@ public class l {
     }
 
     public s.c a(i0 i0Var, int i10) {
-        android.support.v4.media.session.b.a(this.f31109a.get(new a(i0Var, i10)));
+        android.support.v4.media.session.b.a(this.f31110a.get(new a(i0Var, i10)));
         return null;
     }
 }

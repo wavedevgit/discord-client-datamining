@@ -11,32 +11,32 @@ import com.google.android.material.radiobutton.MaterialRadioButton;
 public final class b implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f48196a;
+    private final ConstraintLayout f48197a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final MaterialRadioButton f48197b;
+    public final MaterialRadioButton f48198b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final TextView f48198c;
+    public final TextView f48199c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final TextView f48199d;
+    public final TextView f48200d;
 
     private b(ConstraintLayout constraintLayout, MaterialRadioButton materialRadioButton, TextView textView, TextView textView2) {
-        this.f48196a = constraintLayout;
-        this.f48197b = materialRadioButton;
-        this.f48198c = textView;
-        this.f48199d = textView2;
+        this.f48197a = constraintLayout;
+        this.f48198b = materialRadioButton;
+        this.f48199c = textView;
+        this.f48200d = textView2;
     }
 
     public static b a(View view) {
-        int i10 = nq.e.f38269k0;
+        int i10 = nq.e.f38270k0;
         MaterialRadioButton materialRadioButton = (MaterialRadioButton) e4.a.a(view, i10);
         if (materialRadioButton != null) {
-            i10 = nq.e.f38273m0;
+            i10 = nq.e.f38274m0;
             TextView textView = (TextView) e4.a.a(view, i10);
             if (textView != null) {
-                i10 = nq.e.f38275n0;
+                i10 = nq.e.f38276n0;
                 TextView textView2 = (TextView) e4.a.a(view, i10);
                 if (textView2 != null) {
                     return new b((ConstraintLayout) view, materialRadioButton, textView, textView2);
@@ -47,7 +47,7 @@ public final class b implements ViewBinding {
     }
 
     public static b c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(nq.f.f38301b, viewGroup, false);
+        View inflate = layoutInflater.inflate(nq.f.f38302b, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -57,6 +57,6 @@ public final class b implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f48196a;
+        return this.f48197a;
     }
 }

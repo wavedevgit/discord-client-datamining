@@ -7,27 +7,27 @@ public final class s extends a implements l0 {
     private static final long serialVersionUID = -1337148214680014674L;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient int f37671o;
+    private final transient int f37672o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient Integer f37672p;
+    private final transient Integer f37673p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient Integer f37673q;
+    private final transient Integer f37674q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final transient char f37674r;
+    private final transient char f37675r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final transient bu.t f37675s;
+    private final transient bu.t f37676s;
 
     private s(String str, int i10, Integer num, Integer num2, char c10) {
         super(str);
-        this.f37671o = i10;
-        this.f37672p = num;
-        this.f37673q = num2;
-        this.f37674r = c10;
-        this.f37675s = new m0(this, false);
+        this.f37672o = i10;
+        this.f37673p = num;
+        this.f37674q = num2;
+        this.f37675r = c10;
+        this.f37676s = new m0(this, false);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -61,23 +61,23 @@ public final class s extends a implements l0 {
     @Override // bu.p
     /* renamed from: H */
     public Integer f() {
-        return this.f37673q;
+        return this.f37674q;
     }
 
     @Override // bu.p
     /* renamed from: I */
     public Integer B() {
-        return this.f37672p;
+        return this.f37673p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int J() {
-        return this.f37671o;
+        return this.f37672o;
     }
 
     @Override // bu.e, bu.p
     public char d() {
-        return this.f37674r;
+        return this.f37675r;
     }
 
     @Override // bu.p

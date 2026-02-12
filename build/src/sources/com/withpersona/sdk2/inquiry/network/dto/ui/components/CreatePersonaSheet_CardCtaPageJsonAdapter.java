@@ -77,7 +77,7 @@ public final class CreatePersonaSheet_CardCtaPageJsonAdapter extends h {
         }
         Constructor<CreatePersonaSheet.CardCtaPage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = CreatePersonaSheet.CardCtaPage.class.getDeclaredConstructor(NextStep.Ui.class, CreatePersonaSheet.CardCtaPage.ComponentNameMapping.class, Integer.TYPE, c.f21827c);
+            constructor = CreatePersonaSheet.CardCtaPage.class.getDeclaredConstructor(NextStep.Ui.class, CreatePersonaSheet.CardCtaPage.ComponentNameMapping.class, Integer.TYPE, c.f21828c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

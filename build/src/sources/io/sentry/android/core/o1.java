@@ -11,97 +11,97 @@ import java.util.concurrent.TimeUnit;
 final class o1 extends FileObserver {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f28481a;
+    private final String f28482a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final io.sentry.o0 f28482b;
+    private final io.sentry.o0 f28483b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ILogger f28483c;
+    private final ILogger f28484c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f28484d;
+    private final long f28485d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private static final class a implements io.sentry.hints.e, io.sentry.hints.k, io.sentry.hints.p, io.sentry.hints.i, io.sentry.hints.b, io.sentry.hints.j {
 
         /* renamed from: a  reason: collision with root package name */
-        boolean f28485a;
+        boolean f28486a;
 
         /* renamed from: b  reason: collision with root package name */
-        boolean f28486b;
+        boolean f28487b;
 
         /* renamed from: c  reason: collision with root package name */
-        private CountDownLatch f28487c;
+        private CountDownLatch f28488c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final long f28488d;
+        private final long f28489d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ILogger f28489e;
+        private final ILogger f28490e;
 
         public a(long j10, ILogger iLogger) {
             reset();
-            this.f28488d = j10;
-            this.f28489e = (ILogger) io.sentry.util.y.c(iLogger, "ILogger is required.");
+            this.f28489d = j10;
+            this.f28490e = (ILogger) io.sentry.util.y.c(iLogger, "ILogger is required.");
         }
 
         @Override // io.sentry.hints.k
         public boolean a() {
-            return this.f28485a;
+            return this.f28486a;
         }
 
         @Override // io.sentry.hints.p
         public void c(boolean z10) {
-            this.f28486b = z10;
-            this.f28487c.countDown();
+            this.f28487b = z10;
+            this.f28488c.countDown();
         }
 
         @Override // io.sentry.hints.k
         public void d(boolean z10) {
-            this.f28485a = z10;
+            this.f28486a = z10;
         }
 
         @Override // io.sentry.hints.p
         public boolean e() {
-            return this.f28486b;
+            return this.f28487b;
         }
 
         @Override // io.sentry.hints.i
         public boolean g() {
             try {
-                return this.f28487c.await(this.f28488d, TimeUnit.MILLISECONDS);
+                return this.f28488c.await(this.f28489d, TimeUnit.MILLISECONDS);
             } catch (InterruptedException e10) {
                 Thread.currentThread().interrupt();
-                this.f28489e.b(SentryLevel.ERROR, "Exception while awaiting on lock.", e10);
+                this.f28490e.b(SentryLevel.ERROR, "Exception while awaiting on lock.", e10);
                 return false;
             }
         }
 
         @Override // io.sentry.hints.j
         public void reset() {
-            this.f28487c = new CountDownLatch(1);
-            this.f28485a = false;
-            this.f28486b = false;
+            this.f28488c = new CountDownLatch(1);
+            this.f28486a = false;
+            this.f28487b = false;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o1(String str, io.sentry.o0 o0Var, ILogger iLogger, long j10) {
         super(str);
-        this.f28481a = str;
-        this.f28482b = (io.sentry.o0) io.sentry.util.y.c(o0Var, "Envelope sender is required.");
-        this.f28483c = (ILogger) io.sentry.util.y.c(iLogger, "Logger is required.");
-        this.f28484d = j10;
+        this.f28482a = str;
+        this.f28483b = (io.sentry.o0) io.sentry.util.y.c(o0Var, "Envelope sender is required.");
+        this.f28484c = (ILogger) io.sentry.util.y.c(iLogger, "Logger is required.");
+        this.f28485d = j10;
     }
 
     @Override // android.os.FileObserver
     public void onEvent(int i10, String str) {
         if (str != null && i10 == 8) {
-            this.f28483c.c(SentryLevel.DEBUG, "onEvent fired for EnvelopeFileObserver with event type %d on path: %s for file %s.", Integer.valueOf(i10), this.f28481a, str);
-            Hint e10 = io.sentry.util.n.e(new a(this.f28484d, this.f28483c));
-            io.sentry.o0 o0Var = this.f28482b;
-            o0Var.a(this.f28481a + File.separator + str, e10);
+            this.f28484c.c(SentryLevel.DEBUG, "onEvent fired for EnvelopeFileObserver with event type %d on path: %s for file %s.", Integer.valueOf(i10), this.f28482a, str);
+            Hint e10 = io.sentry.util.n.e(new a(this.f28485d, this.f28484c));
+            io.sentry.o0 o0Var = this.f28483b;
+            o0Var.a(this.f28482a + File.separator + str, e10);
         }
     }
 }

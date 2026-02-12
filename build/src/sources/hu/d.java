@@ -11,7 +11,7 @@ public enum d {
     
 
     /* renamed from: p  reason: collision with root package name */
-    static final d[] f27706p = values();
+    static final d[] f27707p = values();
     private final String alias;
 
     d(String str) {
@@ -24,7 +24,7 @@ public enum d {
         if (language.equals("no") && locale.getVariant().equals("NY") && locale.getCountry().equals("NO")) {
             return "nn";
         }
-        for (d dVar : f27706p) {
+        for (d dVar : f27707p) {
             if (language.equals(dVar.name())) {
                 return dVar.alias;
             }

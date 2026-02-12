@@ -83,35 +83,35 @@ public final class ScreenStackHeaderSubviewManager extends ViewGroupManager<v0> 
             switch (str.hashCode()) {
                 case -1364013995:
                     if (str.equals("center")) {
-                        aVar = v0.a.f19395e;
+                        aVar = v0.a.f19396e;
                         view.setType(aVar);
                         return;
                     }
                     break;
                 case 3015911:
                     if (str.equals("back")) {
-                        aVar = v0.a.f19397o;
+                        aVar = v0.a.f19398o;
                         view.setType(aVar);
                         return;
                     }
                     break;
                 case 3317767:
                     if (str.equals(ViewProps.LEFT)) {
-                        aVar = v0.a.f19394d;
+                        aVar = v0.a.f19395d;
                         view.setType(aVar);
                         return;
                     }
                     break;
                 case 108511772:
                     if (str.equals(ViewProps.RIGHT)) {
-                        aVar = v0.a.f19396i;
+                        aVar = v0.a.f19397i;
                         view.setType(aVar);
                         return;
                     }
                     break;
                 case 1778179403:
                     if (str.equals("searchBar")) {
-                        aVar = v0.a.f19398p;
+                        aVar = v0.a.f19399p;
                         view.setType(aVar);
                         return;
                     }

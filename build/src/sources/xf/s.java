@@ -17,25 +17,25 @@ public class s extends jf.a {
     public static final Parcelable.Creator<s> CREATOR;
 
     /* renamed from: d  reason: collision with root package name */
-    private final v f54731d;
+    private final v f54732d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final v4 f54732e;
+    private final v4 f54733e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final List f54733i;
+    private final List f54734i;
 
     static {
-        com.google.android.gms.internal.fido.h1.q(e4.f14672a, e4.f14673b);
+        com.google.android.gms.internal.fido.h1.q(e4.f14673a, e4.f14674b);
         CREATOR = new u0();
     }
 
     public s(String str, v4 v4Var, List list) {
         hf.q.l(str);
         try {
-            this.f54731d = v.a(str);
-            this.f54732e = (v4) hf.q.l(v4Var);
-            this.f54733i = list;
+            this.f54732d = v.a(str);
+            this.f54733e = (v4) hf.q.l(v4Var);
+            this.f54734i = list;
         } catch (v.a e10) {
             throw new IllegalArgumentException(e10);
         }
@@ -54,15 +54,15 @@ public class s extends jf.a {
     }
 
     public byte[] b() {
-        return this.f54732e.p();
+        return this.f54733e.p();
     }
 
     public List c() {
-        return this.f54733i;
+        return this.f54734i;
     }
 
     public String d() {
-        return this.f54731d.toString();
+        return this.f54732d.toString();
     }
 
     public boolean equals(Object obj) {
@@ -71,27 +71,27 @@ public class s extends jf.a {
             return false;
         }
         s sVar = (s) obj;
-        if (!this.f54731d.equals(sVar.f54731d) || !hf.o.a(this.f54732e, sVar.f54732e)) {
+        if (!this.f54732d.equals(sVar.f54732d) || !hf.o.a(this.f54733e, sVar.f54733e)) {
             return false;
         }
-        List list2 = this.f54733i;
-        if (list2 == null && sVar.f54733i == null) {
+        List list2 = this.f54734i;
+        if (list2 == null && sVar.f54734i == null) {
             return true;
         }
-        if (list2 == null || (list = sVar.f54733i) == null || !list2.containsAll(list) || !sVar.f54733i.containsAll(this.f54733i)) {
+        if (list2 == null || (list = sVar.f54734i) == null || !list2.containsAll(list) || !sVar.f54734i.containsAll(this.f54734i)) {
             return false;
         }
         return true;
     }
 
     public int hashCode() {
-        return hf.o.b(this.f54731d, this.f54732e, this.f54733i);
+        return hf.o.b(this.f54732d, this.f54733e, this.f54734i);
     }
 
     public final String toString() {
-        String valueOf = String.valueOf(this.f54731d);
+        String valueOf = String.valueOf(this.f54732d);
         String b10 = com.google.android.gms.common.util.c.b(b());
-        String valueOf2 = String.valueOf(this.f54733i);
+        String valueOf2 = String.valueOf(this.f54734i);
         return "PublicKeyCredentialDescriptor{\n type=" + valueOf + ", \n id=" + b10 + ", \n transports=" + valueOf2 + "}";
     }
 
@@ -107,6 +107,6 @@ public class s extends jf.a {
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public s(String str, byte[] bArr, List list) {
         this(str, v4.o(bArr, 0, bArr.length), list);
-        v4 v4Var = v4.f14816e;
+        v4 v4Var = v4.f14817e;
     }
 }

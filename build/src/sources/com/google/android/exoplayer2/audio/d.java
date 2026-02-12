@@ -7,37 +7,37 @@ import oe.w0;
 public interface d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final ByteBuffer f12835a = ByteBuffer.allocateDirect(0).order(ByteOrder.nativeOrder());
+    public static final ByteBuffer f12836a = ByteBuffer.allocateDirect(0).order(ByteOrder.nativeOrder());
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: e  reason: collision with root package name */
-        public static final a f12836e = new a(-1, -1, -1);
+        public static final a f12837e = new a(-1, -1, -1);
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f12837a;
+        public final int f12838a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f12838b;
+        public final int f12839b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f12839c;
+        public final int f12840c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f12840d;
+        public final int f12841d;
 
         public a(int i10, int i11, int i12) {
             int i13;
-            this.f12837a = i10;
-            this.f12838b = i11;
-            this.f12839c = i12;
+            this.f12838a = i10;
+            this.f12839b = i11;
+            this.f12840c = i12;
             if (w0.E0(i12)) {
                 i13 = w0.i0(i12, i11);
             } else {
                 i13 = -1;
             }
-            this.f12840d = i13;
+            this.f12841d = i13;
         }
 
         public boolean equals(Object obj) {
@@ -48,18 +48,18 @@ public interface d {
                 return false;
             }
             a aVar = (a) obj;
-            if (this.f12837a == aVar.f12837a && this.f12838b == aVar.f12838b && this.f12839c == aVar.f12839c) {
+            if (this.f12838a == aVar.f12838a && this.f12839b == aVar.f12839b && this.f12840c == aVar.f12840c) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return pi.j.b(Integer.valueOf(this.f12837a), Integer.valueOf(this.f12838b), Integer.valueOf(this.f12839c));
+            return pi.j.b(Integer.valueOf(this.f12838a), Integer.valueOf(this.f12839b), Integer.valueOf(this.f12840c));
         }
 
         public String toString() {
-            return "AudioFormat[sampleRate=" + this.f12837a + ", channelCount=" + this.f12838b + ", encoding=" + this.f12839c + ']';
+            return "AudioFormat[sampleRate=" + this.f12838a + ", channelCount=" + this.f12839b + ", encoding=" + this.f12840c + ']';
         }
     }
 

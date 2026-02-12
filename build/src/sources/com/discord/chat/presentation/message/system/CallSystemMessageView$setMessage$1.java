@@ -66,8 +66,8 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
                 }
             } else {
                 kotlin.c.b(obj);
-                Duration.a aVar = Duration.f34986e;
-                final Flow m955intervalFlowQTBD994 = IntervalFlowKt.m955intervalFlowQTBD994(kotlin.time.b.s(1, ws.b.f53967p), Duration.f34986e.c());
+                Duration.a aVar = Duration.f34987e;
+                final Flow m955intervalFlowQTBD994 = IntervalFlowKt.m955intervalFlowQTBD994(kotlin.time.b.s(1, ws.b.f53968p), Duration.f34987e.c());
                 final long j10 = this.$start;
                 Flow x10 = bt.g.x(new Flow() { // from class: com.discord.chat.presentation.message.system.CallSystemMessageView$setMessage$1$1$invokeSuspend$$inlined$map$1
 
@@ -147,14 +147,14 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
                                 kotlin.c.b(r10)
                                 kotlinx.coroutines.flow.FlowCollector r10 = r8.$this_unsafeFlow
                                 kotlin.Unit r9 = (kotlin.Unit) r9
-                                kotlin.time.Duration$a r9 = kotlin.time.Duration.f34986e
+                                kotlin.time.Duration$a r9 = kotlin.time.Duration.f34987e
                                 long r4 = java.lang.System.currentTimeMillis()
                                 long r6 = r8.$start$inlined
                                 long r4 = r4 - r6
-                                ws.b r9 = ws.b.f53966o
+                                ws.b r9 = ws.b.f53967o
                                 long r4 = kotlin.time.b.t(r4, r9)
                                 kotlin.time.Duration r9 = kotlin.time.Duration.h(r4)
-                                kotlin.time.Duration$a r2 = kotlin.time.Duration.f34986e
+                                kotlin.time.Duration$a r2 = kotlin.time.Duration.f34987e
                                 long r4 = r2.c()
                                 kotlin.time.Duration r2 = kotlin.time.Duration.h(r4)
                                 java.lang.Comparable r9 = kotlin.ranges.d.f(r9, r2)
@@ -163,7 +163,7 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
                                 if (r9 != r1) goto L62
                                 return r1
                             L62:
-                                kotlin.Unit r9 = kotlin.Unit.f31987a
+                                kotlin.Unit r9 = kotlin.Unit.f31988a
                                 return r9
                             */
                             throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.system.CallSystemMessageView$setMessage$1$1$invokeSuspend$$inlined$map$1.AnonymousClass2.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -176,7 +176,7 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
                         if (collect == gs.b.f()) {
                             return collect;
                         }
-                        return Unit.f31987a;
+                        return Unit.f31988a;
                     }
                 }, m0.a());
                 final CallSystemMessageView callSystemMessageView = this.this$0;
@@ -201,7 +201,7 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
                         String format = String.format("%02d:%02d:%02d%s", Arrays.copyOf(new Object[]{kotlin.coroutines.jvm.internal.b.f(s10), kotlin.coroutines.jvm.internal.b.e(w10), kotlin.coroutines.jvm.internal.b.e(y10), message2.getDescription()}, 4));
                         Intrinsics.checkNotNullExpressionValue(format, "format(...)");
                         textView.setText(format);
-                        return Unit.f31987a;
+                        return Unit.f31988a;
                     }
                 };
                 this.label = 1;
@@ -209,12 +209,12 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
                     return f10;
                 }
             }
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -252,11 +252,11 @@ public final class CallSystemMessageView$setMessage$1 extends k implements Funct
                 return f10;
             }
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((CallSystemMessageView$setMessage$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+        return ((CallSystemMessageView$setMessage$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

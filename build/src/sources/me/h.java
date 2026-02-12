@@ -9,9 +9,9 @@ public abstract class h {
             z10 = false;
         }
         oe.a.a(z10);
-        int k10 = oe.c0.k(gVar.q().f12304w);
+        int k10 = oe.c0.k(gVar.q().f12305w);
         if (k10 == -1) {
-            k10 = oe.c0.k(gVar.q().f12303v);
+            k10 = oe.c0.k(gVar.q().f12304v);
         }
         if (k10 == 1) {
             return "a";

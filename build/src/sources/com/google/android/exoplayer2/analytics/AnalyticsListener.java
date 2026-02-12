@@ -31,46 +31,46 @@ public interface AnalyticsListener {
     public static final class EventTime {
 
         /* renamed from: a  reason: collision with root package name */
-        public final long f12641a;
+        public final long f12642a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final Timeline f12642b;
+        public final Timeline f12643b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f12643c;
+        public final int f12644c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final r.b f12644d;
+        public final r.b f12645d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final long f12645e;
+        public final long f12646e;
 
         /* renamed from: f  reason: collision with root package name */
-        public final Timeline f12646f;
+        public final Timeline f12647f;
 
         /* renamed from: g  reason: collision with root package name */
-        public final int f12647g;
+        public final int f12648g;
 
         /* renamed from: h  reason: collision with root package name */
-        public final r.b f12648h;
+        public final r.b f12649h;
 
         /* renamed from: i  reason: collision with root package name */
-        public final long f12649i;
+        public final long f12650i;
 
         /* renamed from: j  reason: collision with root package name */
-        public final long f12650j;
+        public final long f12651j;
 
         public EventTime(long j10, Timeline timeline, int i10, r.b bVar, long j11, Timeline timeline2, int i11, r.b bVar2, long j12, long j13) {
-            this.f12641a = j10;
-            this.f12642b = timeline;
-            this.f12643c = i10;
-            this.f12644d = bVar;
-            this.f12645e = j11;
-            this.f12646f = timeline2;
-            this.f12647g = i11;
-            this.f12648h = bVar2;
-            this.f12649i = j12;
-            this.f12650j = j13;
+            this.f12642a = j10;
+            this.f12643b = timeline;
+            this.f12644c = i10;
+            this.f12645d = bVar;
+            this.f12646e = j11;
+            this.f12647f = timeline2;
+            this.f12648g = i11;
+            this.f12649h = bVar2;
+            this.f12650i = j12;
+            this.f12651j = j13;
         }
 
         public boolean equals(Object obj) {
@@ -79,7 +79,7 @@ public interface AnalyticsListener {
             }
             if (obj != null && EventTime.class == obj.getClass()) {
                 EventTime eventTime = (EventTime) obj;
-                if (this.f12641a == eventTime.f12641a && this.f12643c == eventTime.f12643c && this.f12645e == eventTime.f12645e && this.f12647g == eventTime.f12647g && this.f12649i == eventTime.f12649i && this.f12650j == eventTime.f12650j && j.a(this.f12642b, eventTime.f12642b) && j.a(this.f12644d, eventTime.f12644d) && j.a(this.f12646f, eventTime.f12646f) && j.a(this.f12648h, eventTime.f12648h)) {
+                if (this.f12642a == eventTime.f12642a && this.f12644c == eventTime.f12644c && this.f12646e == eventTime.f12646e && this.f12648g == eventTime.f12648g && this.f12650i == eventTime.f12650i && this.f12651j == eventTime.f12651j && j.a(this.f12643b, eventTime.f12643b) && j.a(this.f12645d, eventTime.f12645d) && j.a(this.f12647f, eventTime.f12647f) && j.a(this.f12649h, eventTime.f12649h)) {
                     return true;
                 }
             }
@@ -87,7 +87,7 @@ public interface AnalyticsListener {
         }
 
         public int hashCode() {
-            return j.b(Long.valueOf(this.f12641a), this.f12642b, Integer.valueOf(this.f12643c), this.f12644d, Long.valueOf(this.f12645e), this.f12646f, Integer.valueOf(this.f12647g), this.f12648h, Long.valueOf(this.f12649i), Long.valueOf(this.f12650j));
+            return j.b(Long.valueOf(this.f12642a), this.f12643b, Integer.valueOf(this.f12644c), this.f12645d, Long.valueOf(this.f12646e), this.f12647f, Integer.valueOf(this.f12648g), this.f12649h, Long.valueOf(this.f12650i), Long.valueOf(this.f12651j));
         }
     }
 
@@ -95,35 +95,35 @@ public interface AnalyticsListener {
     public static final class Events {
 
         /* renamed from: a  reason: collision with root package name */
-        private final q f12651a;
+        private final q f12652a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final SparseArray f12652b;
+        private final SparseArray f12653b;
 
         public Events(q qVar, SparseArray sparseArray) {
-            this.f12651a = qVar;
+            this.f12652a = qVar;
             SparseArray sparseArray2 = new SparseArray(qVar.d());
             for (int i10 = 0; i10 < qVar.d(); i10++) {
                 int c10 = qVar.c(i10);
                 sparseArray2.append(c10, (EventTime) oe.a.e((EventTime) sparseArray.get(c10)));
             }
-            this.f12652b = sparseArray2;
+            this.f12653b = sparseArray2;
         }
 
         public boolean a(int i10) {
-            return this.f12651a.a(i10);
+            return this.f12652a.a(i10);
         }
 
         public int b(int i10) {
-            return this.f12651a.c(i10);
+            return this.f12652a.c(i10);
         }
 
         public EventTime c(int i10) {
-            return (EventTime) oe.a.e((EventTime) this.f12652b.get(i10));
+            return (EventTime) oe.a.e((EventTime) this.f12653b.get(i10));
         }
 
         public int d() {
-            return this.f12651a.d();
+            return this.f12652a.d();
         }
     }
 

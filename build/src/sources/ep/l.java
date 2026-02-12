@@ -10,21 +10,21 @@ import v4.h;
 public final class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Activity f23155a;
+    private final Activity f23156a;
 
     public l(Activity activity) {
         Intrinsics.checkNotNullParameter(activity, "activity");
-        this.f23155a = activity;
+        this.f23156a = activity;
     }
 
     public final Application a() {
-        Application application = this.f23155a.getApplication();
+        Application application = this.f23156a.getApplication();
         Intrinsics.checkNotNullExpressionValue(application, "getApplication(...)");
         return application;
     }
 
     public final Context b() {
-        Context applicationContext = this.f23155a.getApplicationContext();
+        Context applicationContext = this.f23156a.getApplicationContext();
         Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
         return applicationContext;
     }
@@ -35,7 +35,7 @@ public final class l {
     }
 
     public final Window d() {
-        Window window = this.f23155a.getWindow();
+        Window window = this.f23156a.getWindow();
         Intrinsics.checkNotNullExpressionValue(window, "getWindow(...)");
         return window;
     }

@@ -3,52 +3,52 @@ package io.sentry.android.core;
 final class m2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f28464a;
+    private int f28465a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f28465b;
+    private int f28466b;
 
     /* renamed from: c  reason: collision with root package name */
-    private long f28466c;
+    private long f28467c;
 
     /* renamed from: d  reason: collision with root package name */
-    private long f28467d;
+    private long f28468d;
 
     /* renamed from: e  reason: collision with root package name */
-    private long f28468e;
+    private long f28469e;
 
     public void a(long j10, long j11, boolean z10, boolean z11) {
-        this.f28468e += j10;
+        this.f28469e += j10;
         if (z11) {
-            this.f28467d += j11;
-            this.f28465b++;
+            this.f28468d += j11;
+            this.f28466b++;
         } else if (z10) {
-            this.f28466c += j11;
-            this.f28464a++;
+            this.f28467c += j11;
+            this.f28465a++;
         }
     }
 
     public int b() {
-        return this.f28465b;
+        return this.f28466b;
     }
 
     public long c() {
-        return this.f28467d;
+        return this.f28468d;
     }
 
     public int d() {
-        return this.f28464a;
+        return this.f28465a;
     }
 
     public long e() {
-        return this.f28466c;
+        return this.f28467c;
     }
 
     public int f() {
-        return this.f28464a + this.f28465b;
+        return this.f28465a + this.f28466b;
     }
 
     public long g() {
-        return this.f28468e;
+        return this.f28469e;
     }
 }

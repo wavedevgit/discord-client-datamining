@@ -11,71 +11,71 @@ import kotlin.jvm.internal.Intrinsics;
 public final class LocationData {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f20814a;
+    private final String f20815a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f20815b;
+    private final String f20816b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f20816c;
+    private final String f20817c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f20817d;
+    private final String f20818d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f20818e;
+    private final String f20819e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f20819f;
+    private final String f20820f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f20820g;
+    private final String f20821g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f20821h;
+    private final String f20822h;
 
     public LocationData(String id2, String str, String str2, String str3, String str4, String str5, String str6, String str7) {
         Intrinsics.checkNotNullParameter(id2, "id");
-        this.f20814a = id2;
-        this.f20815b = str;
-        this.f20816c = str2;
-        this.f20817d = str3;
-        this.f20818e = str4;
-        this.f20819f = str5;
-        this.f20820g = str6;
-        this.f20821h = str7;
+        this.f20815a = id2;
+        this.f20816b = str;
+        this.f20817c = str2;
+        this.f20818d = str3;
+        this.f20819e = str4;
+        this.f20820f = str5;
+        this.f20821g = str6;
+        this.f20822h = str7;
     }
 
     public final String a() {
-        return this.f20821h;
+        return this.f20822h;
     }
 
     public final String b() {
-        return this.f20817d;
+        return this.f20818d;
     }
 
     public final String c() {
-        return this.f20820g;
+        return this.f20821g;
     }
 
     public final String d() {
-        return this.f20819f;
+        return this.f20820f;
     }
 
     public final String e() {
-        return this.f20815b;
+        return this.f20816b;
     }
 
     public final String f() {
-        return this.f20816c;
+        return this.f20817c;
     }
 
     public final String g() {
-        return this.f20818e;
+        return this.f20819e;
     }
 
     public final String h() {
-        return this.f20814a;
+        return this.f20815a;
     }
 
     public /* synthetic */ LocationData(String str, String str2, String str3, String str4, String str5, String str6, String str7, String str8, int i10, DefaultConstructorMarker defaultConstructorMarker) {

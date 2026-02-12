@@ -6,13 +6,13 @@ import kotlin.reflect.KClass;
 public interface e0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f25802a = a.f25803b;
+    public static final a f25803a = a.f25804b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends b0 {
 
         /* renamed from: b  reason: collision with root package name */
-        static final /* synthetic */ a f25803b = new a();
+        static final /* synthetic */ a f25804b = new a();
 
         private a() {
             super(Reflection.getOrCreateKotlinClass(e0.class));

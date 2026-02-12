@@ -6,13 +6,13 @@ import ot.g;
 public final class d extends e {
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f41193c;
+    private final int f41194c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f41194d;
+    private final int f41195d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final a f41195e;
+    private final a f41196e;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -34,9 +34,9 @@ public final class d extends e {
             r1 = r0
         L13:
             r2.<init>(r1, r6, r0)
-            r2.f41193c = r3
-            r2.f41194d = r4
-            r2.f41195e = r5
+            r2.f41194c = r3
+            r2.f41195d = r4
+            r2.f41196e = r5
             r5 = 1
             java.lang.String r6 = " for field "
             if (r5 > r3) goto L5c
@@ -90,15 +90,15 @@ public final class d extends e {
         g f10;
         Intrinsics.checkNotNullParameter(input, "input");
         int i12 = i11 - i10;
-        int i13 = this.f41193c;
+        int i13 = this.f41194c;
         if (i12 < i13) {
             return new g.c(i13);
         }
-        int i14 = this.f41194d;
+        int i14 = this.f41195d;
         if (i12 > i14) {
             return new g.d(i14);
         }
-        a aVar = this.f41195e;
+        a aVar = this.f41196e;
         d10 = f.d(input, i10, i11);
         f10 = f.f(aVar, obj, new lt.a(d10, i12));
         return f10;

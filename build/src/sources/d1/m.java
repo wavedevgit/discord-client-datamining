@@ -5,19 +5,19 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f21385a = new a(null);
+    public static final a f21386a = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int f21386b = d(0);
+    private static final int f21387b = d(0);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int f21387c = d(1);
+    private static final int f21388c = d(1);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final int f21388d = d(2);
+    private static final int f21389d = d(2);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final int f21389e = d(3);
+    private static final int f21390e = d(3);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -26,15 +26,15 @@ public abstract class m {
         }
 
         public final int a() {
-            return m.f21389e;
+            return m.f21390e;
         }
 
         public final int b() {
-            return m.f21386b;
+            return m.f21387b;
         }
 
         public final int c() {
-            return m.f21387c;
+            return m.f21388c;
         }
 
         private a() {

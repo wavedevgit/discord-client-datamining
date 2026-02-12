@@ -5,7 +5,7 @@ import bj.c;
 final class va implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final va f39744a = new va();
+    static final va f39745a = new va();
 
     static {
         c.b a10 = bj.c.a("detectorMode");

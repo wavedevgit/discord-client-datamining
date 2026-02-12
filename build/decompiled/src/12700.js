@@ -1,59 +1,55 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun97402: for (var _fun97402_ip = 0;;) switch (_fun97402_ip) {
-        case 0:
-            var5 = require;
-            var6 = dependencyMap;
-            var0 = 0;
-            var1 = var6[var0];
-            var0 = undefined;
-            var1 = var5.bind(var0)(var1);
-            var2 = var1["__core-js_shared__"];
-            if (var2) {
-                _fun97402_ip = 52;
-                continue _fun97402
-            }
-        case 28:
-            var1 = 1;
-            var1 = var6[var1];
-            var4 = var5.bind(var0)(var1);
-            var3 = '__core-js_shared__';
-            var1 = {};
-            var2 = var4.bind(var0)(var3, var1);
-        case 52:
-            var1 = module;
-            var1.exports = var2;
-            var3 = var2.versions;
-            if (var3) {
-                _fun97402_ip = 83;
-                continue _fun97402
-            }
-        case 70:
-            var1 = new Array(0);
-            var2.versions = var1;
-            var3 = var1;
-        case 83:
-            var2 = var3.push;
-            var1 = {
-                'version': '3.41.0',
-                'mode': null,
-                'copyright': '© 2014-2025 Denis Pushkarev (zloirock.ru)',
-                'license': 'https://github.com/zloirock/core-js/blob/v3.41.0/LICENSE',
-                'source': 'https://github.com/zloirock/core-js'
-            };
-            var4 = 2;
-            var4 = var6[var4];
-            var5 = var5.bind(var0)(var4);
-            var4 = 'global';
-            if (!var5) {
-                _fun97402_ip = 127;
-                continue _fun97402
-            }
-        case 121:
-            var4 = 'pure';
-        case 127:
-            var1.mode = var4;
-            var1 = var2.bind(var3)(var1);
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12684, 12685, 12701]);
+    var1 = require;
+    var _closure1_slot0 = var1;
+    var1 = dependencyMap;
+    var _closure1_slot1 = var1;
+    var1 = global;
+    var1 = var1.Object;
+    var1 = var1.defineProperty;
+    var _closure1_slot2 = var1;
+    var1 = function(arg0, arg1) { // Environment: var0
+        _fun97454: for (var _fun97454_ip = 0;;) switch (_fun97454_ip) {
+            case 0:
+                var1 = arg0;
+                var0 = arg1;
+            case 6: // try_start_0
+                var6 = _closure1_slot2;
+                var3 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var2 = 0;
+                var2 = var4[var2];
+                var5 = undefined;
+                var4 = var3.bind(var5)(var2);
+                var3 = var1;
+                var2 = {
+                    'value': null,
+                    'configurable': true,
+                    'writable': true
+                };
+                var7 = var0;
+                var2.value = var7;
+                var2 = var6.bind(var5)(var4, var3, var2);
+            case 63: // try_end0
+                _fun97454_ip = 101;
+                continue _fun97454;
+            case 65: // catch_target0
+                CatchBlockStart(arg_register = 2);
+                var4 = _closure1_slot0;
+                var3 = _closure1_slot1;
+                var2 = 0;
+                var3 = var3[var2];
+                var2 = undefined;
+                var3 = var4.bind(var2)(var3);
+                var2 = var1;
+                var1 = var0;
+                var3[var2] = var1;
+            case 101:
+                return var0;
+        }
+    };
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12699]);

@@ -5,7 +5,7 @@ import bj.c;
 final class mc implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final mc f39488a = new mc();
+    static final mc f39489a = new mc();
 
     static {
         c.b a10 = bj.c.a("sourceLanguage");

@@ -28,7 +28,7 @@ final class MediaEngineModule$connectionInstanceGetStats$1 extends kotlin.corout
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit invokeSuspend$lambda$0(Callback callback, String str) {
         callback.invoke(str);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -65,11 +65,11 @@ final class MediaEngineModule$connectionInstanceGetStats$1 extends kotlin.corout
                 return invokeSuspend$lambda$0;
             }
         });
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$connectionInstanceGetStats$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+        return ((MediaEngineModule$connectionInstanceGetStats$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

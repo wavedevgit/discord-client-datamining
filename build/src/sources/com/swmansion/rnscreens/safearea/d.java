@@ -24,31 +24,31 @@ import org.jetbrains.annotations.NotNull;
 public final class d extends ReactViewGroup implements w, ViewTreeObserver.OnPreDrawListener {
 
     /* renamed from: t  reason: collision with root package name */
-    public static final a f19356t = new a(null);
+    public static final a f19357t = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final ThemedReactContext f19357d;
+    private final ThemedReactContext f19358d;
 
     /* renamed from: e  reason: collision with root package name */
-    private WeakReference f19358e;
+    private WeakReference f19359e;
 
     /* renamed from: i  reason: collision with root package name */
-    private com.swmansion.rnscreens.safearea.a f19359i;
+    private com.swmansion.rnscreens.safearea.a f19360i;
 
     /* renamed from: o  reason: collision with root package name */
-    private com.swmansion.rnscreens.safearea.a f19360o;
+    private com.swmansion.rnscreens.safearea.a f19361o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f19361p;
+    private boolean f19362p;
 
     /* renamed from: q  reason: collision with root package name */
-    private StateWrapper f19362q;
+    private StateWrapper f19363q;
 
     /* renamed from: r  reason: collision with root package name */
-    private yn.a f19363r;
+    private yn.a f19364r;
 
     /* renamed from: s  reason: collision with root package name */
-    private b f19364s;
+    private b f19365s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -64,12 +64,12 @@ public final class d extends ReactViewGroup implements w, ViewTreeObserver.OnPre
     public d(ThemedReactContext reactContext) {
         super(reactContext);
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
-        this.f19357d = reactContext;
-        this.f19358e = new WeakReference(null);
-        a.C0232a c0232a = com.swmansion.rnscreens.safearea.a.f19345e;
-        this.f19359i = c0232a.b();
-        this.f19360o = c0232a.b();
-        this.f19364s = b.f19351d;
+        this.f19358d = reactContext;
+        this.f19359e = new WeakReference(null);
+        a.C0232a c0232a = com.swmansion.rnscreens.safearea.a.f19346e;
+        this.f19360i = c0232a.b();
+        this.f19361o = c0232a.b();
+        this.f19365s = b.f19352d;
         i0.x0(this, this);
     }
 
@@ -92,7 +92,7 @@ public final class d extends ReactViewGroup implements w, ViewTreeObserver.OnPre
         boolean z12;
         int i12;
         boolean z13;
-        yn.a aVar = this.f19363r;
+        yn.a aVar = this.f19364r;
         int i13 = 0;
         if (aVar != null) {
             z10 = aVar.b();
@@ -104,7 +104,7 @@ public final class d extends ReactViewGroup implements w, ViewTreeObserver.OnPre
         } else {
             i10 = insets.f3304a;
         }
-        yn.a aVar2 = this.f19363r;
+        yn.a aVar2 = this.f19364r;
         if (aVar2 != null) {
             z11 = aVar2.d();
         } else {
@@ -115,7 +115,7 @@ public final class d extends ReactViewGroup implements w, ViewTreeObserver.OnPre
         } else {
             i11 = insets.f3305b;
         }
-        yn.a aVar3 = this.f19363r;
+        yn.a aVar3 = this.f19364r;
         if (aVar3 != null) {
             z12 = aVar3.c();
         } else {
@@ -126,7 +126,7 @@ public final class d extends ReactViewGroup implements w, ViewTreeObserver.OnPre
         } else {
             i12 = insets.f3306c;
         }
-        yn.a aVar4 = this.f19363r;
+        yn.a aVar4 = this.f19364r;
         if (aVar4 != null) {
             z13 = aVar4.a();
         } else {
@@ -143,14 +143,14 @@ public final class d extends ReactViewGroup implements w, ViewTreeObserver.OnPre
     private final void g() {
         com.swmansion.rnscreens.safearea.a b10;
         com.swmansion.rnscreens.safearea.a b11;
-        a.C0232a c0232a = com.swmansion.rnscreens.safearea.a.f19345e;
-        if (this.f19364s.d()) {
-            b10 = this.f19359i;
+        a.C0232a c0232a = com.swmansion.rnscreens.safearea.a.f19346e;
+        if (this.f19365s.d()) {
+            b10 = this.f19360i;
         } else {
             b10 = c0232a.b();
         }
-        if (this.f19364s.e()) {
-            b11 = this.f19360o;
+        if (this.f19365s.e()) {
+            b11 = this.f19361o;
         } else {
             b11 = c0232a.b();
         }
@@ -171,10 +171,10 @@ public final class d extends ReactViewGroup implements w, ViewTreeObserver.OnPre
     }
 
     private final boolean h() {
-        if (!this.f19361p) {
+        if (!this.f19362p) {
             return false;
         }
-        this.f19361p = false;
+        this.f19362p = false;
         g();
         return true;
     }
@@ -186,14 +186,14 @@ public final class d extends ReactViewGroup implements w, ViewTreeObserver.OnPre
         Intrinsics.checkNotNullParameter(insets, "insets");
         Insets f10 = insets.f(WindowInsetsCompat.p.h() | WindowInsetsCompat.p.b());
         Intrinsics.checkNotNullExpressionValue(f10, "getInsets(...)");
-        if (!Intrinsics.areEqual(f10, this.f19360o)) {
-            this.f19360o = com.swmansion.rnscreens.safearea.a.f19345e.a(f10);
-            if (this.f19364s.e()) {
-                this.f19361p = true;
+        if (!Intrinsics.areEqual(f10, this.f19361o)) {
+            this.f19361o = com.swmansion.rnscreens.safearea.a.f19346e.a(f10);
+            if (this.f19365s.e()) {
+                this.f19362p = true;
             }
         }
         WindowInsetsCompat.a aVar = new WindowInsetsCompat.a(insets);
-        if (this.f19364s.e()) {
+        if (this.f19365s.e()) {
             Insets f11 = insets.f(WindowInsetsCompat.p.h());
             Intrinsics.checkNotNullExpressionValue(f11, "getInsets(...)");
             Insets e10 = e(f11);
@@ -218,16 +218,16 @@ public final class d extends ReactViewGroup implements w, ViewTreeObserver.OnPre
 
     public final void f(com.swmansion.rnscreens.safearea.a newInterfaceInsets) {
         Intrinsics.checkNotNullParameter(newInterfaceInsets, "newInterfaceInsets");
-        if (!Intrinsics.areEqual(newInterfaceInsets, this.f19359i)) {
-            this.f19359i = newInterfaceInsets;
-            if (this.f19364s.d()) {
-                this.f19361p = true;
+        if (!Intrinsics.areEqual(newInterfaceInsets, this.f19360i)) {
+            this.f19360i = newInterfaceInsets;
+            if (this.f19365s.d()) {
+                this.f19362p = true;
             }
         }
     }
 
     public final StateWrapper getStateWrapper() {
-        return this.f19362q;
+        return this.f19363q;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -240,15 +240,15 @@ public final class d extends ReactViewGroup implements w, ViewTreeObserver.OnPre
             return;
         }
         d10.setOnInterfaceInsetsChangeListener(this);
-        this.f19358e = new WeakReference(d10);
-        this.f19359i = d10.getInterfaceInsets();
+        this.f19359e = new WeakReference(d10);
+        this.f19360i = d10.getInterfaceInsets();
         g();
         super.onAttachedToWindow();
     }
 
     @Override // android.view.ViewGroup, android.view.View
     protected void onDetachedFromWindow() {
-        c cVar = (c) this.f19358e.get();
+        c cVar = (c) this.f19359e.get();
         if (cVar != null) {
             cVar.e(this);
         }
@@ -267,19 +267,19 @@ public final class d extends ReactViewGroup implements w, ViewTreeObserver.OnPre
 
     public final void setEdges(@NotNull yn.a edges) {
         Intrinsics.checkNotNullParameter(edges, "edges");
-        this.f19363r = edges;
+        this.f19364r = edges;
         requestApplyInsets();
-        this.f19361p = true;
+        this.f19362p = true;
     }
 
     public final void setInsetType(@NotNull b insetType) {
         Intrinsics.checkNotNullParameter(insetType, "insetType");
-        this.f19364s = insetType;
+        this.f19365s = insetType;
         requestApplyInsets();
-        this.f19361p = true;
+        this.f19362p = true;
     }
 
     public final void setStateWrapper(StateWrapper stateWrapper) {
-        this.f19362q = stateWrapper;
+        this.f19363q = stateWrapper;
     }
 }

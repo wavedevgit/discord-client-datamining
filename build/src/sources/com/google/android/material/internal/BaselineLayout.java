@@ -8,19 +8,19 @@ import android.view.ViewGroup;
 public class BaselineLayout extends ViewGroup {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f15839d;
+    private int f15840d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f15840e;
+    private boolean f15841e;
 
     public BaselineLayout(Context context) {
         super(context, null, 0);
-        this.f15839d = -1;
+        this.f15840d = -1;
     }
 
     @Override // android.view.View
     public int getBaseline() {
-        return this.f15839d;
+        return this.f15840d;
     }
 
     @Override // android.view.ViewGroup, android.view.View
@@ -36,8 +36,8 @@ public class BaselineLayout extends ViewGroup {
                 int measuredWidth = childAt.getMeasuredWidth();
                 int measuredHeight = childAt.getMeasuredHeight();
                 int i16 = ((paddingRight - measuredWidth) / 2) + paddingLeft;
-                if (this.f15839d != -1 && childAt.getBaseline() != -1) {
-                    i14 = (this.f15839d + paddingTop) - childAt.getBaseline();
+                if (this.f15840d != -1 && childAt.getBaseline() != -1) {
+                    i14 = (this.f15840d + paddingTop) - childAt.getBaseline();
                 } else {
                     i14 = paddingTop;
                 }
@@ -71,23 +71,23 @@ public class BaselineLayout extends ViewGroup {
             }
         }
         if (i16 != -1) {
-            if (this.f15840e) {
+            if (this.f15841e) {
                 i13 = Math.max(i13, Math.max(i17, getPaddingBottom()) + i16);
             }
-            this.f15839d = i16;
+            this.f15840d = i16;
         }
-        if (!this.f15840e) {
+        if (!this.f15841e) {
             i13 = i12 + getPaddingBottom();
         }
         setMeasuredDimension(View.resolveSizeAndState(Math.max(i14, getSuggestedMinimumWidth()), i10, i15), View.resolveSizeAndState(Math.max(i13, getSuggestedMinimumHeight()), i11, i15 << 16));
     }
 
     public void setMeasurePaddingFromBaseline(boolean z10) {
-        this.f15840e = z10;
+        this.f15841e = z10;
     }
 
     public BaselineLayout(Context context, AttributeSet attributeSet) {
         super(context, attributeSet, 0);
-        this.f15839d = -1;
+        this.f15840d = -1;
     }
 }

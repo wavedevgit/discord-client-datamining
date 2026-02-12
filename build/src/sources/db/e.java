@@ -6,7 +6,7 @@ import java.io.InputStream;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f21511a = new e();
+    public static final e f21512a = new e();
 
     private e() {
     }

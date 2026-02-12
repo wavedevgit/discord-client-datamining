@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var11 = metroImportDefault;
+    var12 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var11;
+    var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -29,16 +29,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var _closure1_slot4 = var7;
+    var8 = var3.jsx;
+    var _closure1_slot4 = var8;
     var3 = var3.jsxs;
     var _closure1_slot5 = var3;
     var3 = 3;
     var3 = var5[var3];
-    var8 = var4.bind(var0)(var3);
-    var7 = var8.createStyles;
+    var9 = var4.bind(var0)(var3);
+    var7 = var9.createStyles;
     var3 = {};
-    var9 = {
+    var10 = {
         'paddingHorizontal': 36,
         'paddingTop': 18,
         'paddingBottom': 36,
@@ -49,33 +49,43 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'flexDirection': 'column',
         'gap': 0
     };
-    var10 = 4;
-    var10 = var5[var10];
-    var10 = var11.bind(var0)(var10);
-    var10 = var10.colors;
-    var10 = var10.BACKGROUND_BASE_LOW;
-    var9.backgroundColor = var10;
-    var3.contentContainer = var9;
-    var9 = {
+    var11 = 4;
+    var11 = var5[var11];
+    var11 = var12.bind(var0)(var11);
+    var11 = var11.colors;
+    var11 = var11.BACKGROUND_BASE_LOW;
+    var10.backgroundColor = var11;
+    var3.contentContainer = var10;
+    var10 = {
         'marginVertical': 6,
         'width': '100%',
         'height': 48
     };
-    var3.buttonContainer = var9;
-    var9 = {
+    var3.buttonContainer = var10;
+    var10 = {
         'width': '100%',
         'textAlign': 'center'
     };
-    var3.title = var9;
-    var9 = {
+    var3.title = var10;
+    var10 = {
         'alignItems': 'center',
         'justifyContent': 'center',
         'height': 188,
         'width': '100%'
     };
-    var3.heroIllustrationContainer = var9;
-    var3 = var7.bind(var8)(var3);
+    var3.heroIllustrationContainer = var10;
+    var3 = var7.bind(var9)(var3);
     var _closure1_slot6 = var3;
+    var3 = 5;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var7 = var3.NitroWumpusFlightRight3dIllustration;
+    var3 = {
+        'width': 180,
+        'height': 180
+    };
+    var3 = var8.bind(var0)(var7, var3);
+    var _closure1_slot7 = var3;
     var3 = var6.memo;
     var1 = function arg0() {
         var1 = arg0;
@@ -87,12 +97,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = {};
         var10 = _closure1_slot0;
         var13 = _closure1_slot2;
-        var2 = 5;
+        var2 = 6;
         var2 = var13[var2];
         var2 = var10.bind(var3)(var2);
         var2 = var2.UserIcon;
         var1.IconComponent = var2;
-        var11 = 6;
+        var11 = 7;
         var2 = var13[var11];
         var2 = var10.bind(var3)(var2);
         var6 = var2.intl;
@@ -116,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var14 = new Array(3);
         var14[0] = var1;
         var1 = {};
-        var2 = 7;
+        var2 = 8;
         var2 = var13[var2];
         var2 = var10.bind(var3)(var2);
         var2 = var2.ChatSmileIcon;
@@ -143,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1.description = var2;
         var14[1] = var1;
         var1 = {};
-        var2 = 8;
+        var2 = 9;
         var2 = var13[var2];
         var2 = var10.bind(var3)(var2);
         var2 = var2.FolderIcon;
@@ -180,15 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = {};
         var8 = var7.heroIllustrationContainer;
         var4.style = var8;
-        var8 = 9;
-        var8 = var13[var8];
-        var8 = var10.bind(var3)(var8);
-        var12 = var8.NitroWumpusFlightRight3dIllustration;
-        var8 = {
-            'width': 180,
-            'height': 180
-        };
-        var8 = var6.bind(var3)(var12, var8);
+        var8 = _closure1_slot7;
         var4.children = var8;
         var8 = var6.bind(var3)(var1, var4);
         var4 = new Array(4);
@@ -282,4 +284,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 10123, 1234, 5429, 4851, 6023, 3938, 14183, 4090, 5810, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 6030, 10050, 1234, 5432, 4817, 3938, 14195, 4090, 5808, 2]);

@@ -32,13 +32,13 @@ public final class ThemeableLottieAnimationView extends LottieAnimationView {
     static final class a extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f20570d;
+        int f20571d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ String f20571e;
+        final /* synthetic */ String f20572e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ ThemeableLottieAnimationView f20572i;
+        final /* synthetic */ ThemeableLottieAnimationView f20573i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView$a$a  reason: collision with other inner class name */
@@ -46,48 +46,48 @@ public final class ThemeableLottieAnimationView extends LottieAnimationView {
         public static final class C0265a extends k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f20573d;
+            int f20574d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ ThemeableLottieAnimationView f20574e;
+            final /* synthetic */ ThemeableLottieAnimationView f20575e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ String f20575i;
+            final /* synthetic */ String f20576i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             C0265a(ThemeableLottieAnimationView themeableLottieAnimationView, String str, Continuation continuation) {
                 super(2, continuation);
-                this.f20574e = themeableLottieAnimationView;
-                this.f20575i = str;
+                this.f20575e = themeableLottieAnimationView;
+                this.f20576i = str;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                return new C0265a(this.f20574e, this.f20575i, continuation);
+                return new C0265a(this.f20575e, this.f20576i, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 gs.b.f();
-                if (this.f20573d == 0) {
+                if (this.f20574d == 0) {
                     kotlin.c.b(obj);
-                    this.f20574e.A(this.f20575i, null);
-                    return Unit.f31987a;
+                    this.f20575e.A(this.f20576i, null);
+                    return Unit.f31988a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((C0265a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+                return ((C0265a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(String str, ThemeableLottieAnimationView themeableLottieAnimationView, Continuation continuation) {
             super(2, continuation);
-            this.f20571e = str;
-            this.f20572i = themeableLottieAnimationView;
+            this.f20572e = str;
+            this.f20573i = themeableLottieAnimationView;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -105,7 +105,7 @@ public final class ThemeableLottieAnimationView extends LottieAnimationView {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new a(this.f20571e, this.f20572i, continuation);
+            return new a(this.f20572e, this.f20573i, continuation);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:11:0x0032, code lost:
@@ -126,7 +126,7 @@ public final class ThemeableLottieAnimationView extends LottieAnimationView {
             /*
                 r6 = this;
                 java.lang.Object r0 = gs.b.f()
-                int r1 = r6.f20570d
+                int r1 = r6.f20571d
                 r2 = 2
                 r3 = 1
                 if (r1 == 0) goto L1e
@@ -145,10 +145,10 @@ public final class ThemeableLottieAnimationView extends LottieAnimationView {
             L1e:
                 kotlin.c.b(r7)
                 kotlinx.coroutines.CoroutineDispatcher r7 = ys.m0.b()
-                java.lang.String r1 = r6.f20571e
+                java.lang.String r1 = r6.f20572e
                 com.withpersona.sdk2.inquiry.shared.ui.c r4 = new com.withpersona.sdk2.inquiry.shared.ui.c
                 r4.<init>()
-                r6.f20570d = r3
+                r6.f20571d = r3
                 java.lang.Object r7 = ys.x0.b(r7, r4, r6)
                 if (r7 != r0) goto L35
                 goto L4d
@@ -157,16 +157,16 @@ public final class ThemeableLottieAnimationView extends LottieAnimationView {
                 if (r7 == 0) goto L4e
                 ys.c1 r1 = ys.m0.c()
                 com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView$a$a r3 = new com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView$a$a
-                com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView r4 = r6.f20572i
+                com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView r4 = r6.f20573i
                 r5 = 0
                 r3.<init>(r4, r7, r5)
-                r6.f20570d = r2
+                r6.f20571d = r2
                 java.lang.Object r7 = ys.g.g(r1, r3, r6)
                 if (r7 != r0) goto L4e
             L4d:
                 return r0
             L4e:
-                kotlin.Unit r7 = kotlin.Unit.f31987a
+                kotlin.Unit r7 = kotlin.Unit.f31988a
                 return r7
             */
             throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.shared.ui.ThemeableLottieAnimationView.a.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -174,7 +174,7 @@ public final class ThemeableLottieAnimationView extends LottieAnimationView {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -192,8 +192,8 @@ public final class ThemeableLottieAnimationView extends LottieAnimationView {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void G(ThemeableLottieAnimationView themeableLottieAnimationView, l5.i iVar) {
-        themeableLottieAnimationView.k(new e("**"), b0.f35545a, new com.withpersona.sdk2.inquiry.shared.ui.a(themeableLottieAnimationView));
-        themeableLottieAnimationView.k(new e("**"), b0.f35546b, new b(themeableLottieAnimationView));
+        themeableLottieAnimationView.k(new e("**"), b0.f35546a, new com.withpersona.sdk2.inquiry.shared.ui.a(themeableLottieAnimationView));
+        themeableLottieAnimationView.k(new e("**"), b0.f35547b, new b(themeableLottieAnimationView));
     }
 
     public final void I(int i10, int i11) {

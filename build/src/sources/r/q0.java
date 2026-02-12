@@ -14,7 +14,7 @@ public class q0 extends p0 {
     @Override // r.r0, r.n0.b
     public Set c() {
         try {
-            return this.f45850a.getConcurrentCameraIds();
+            return this.f45851a.getConcurrentCameraIds();
         } catch (CameraAccessException e10) {
             throw f.e(e10);
         }

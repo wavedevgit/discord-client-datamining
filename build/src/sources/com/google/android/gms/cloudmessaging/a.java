@@ -10,28 +10,28 @@ public final class a extends jf.a {
     public static final Parcelable.Creator<a> CREATOR = new ef.b();
 
     /* renamed from: d  reason: collision with root package name */
-    final Intent f14431d;
+    final Intent f14432d;
 
     public a(Intent intent) {
-        this.f14431d = intent;
+        this.f14432d = intent;
     }
 
     public Intent b() {
-        return this.f14431d;
+        return this.f14432d;
     }
 
     public String c() {
-        String stringExtra = this.f14431d.getStringExtra("google.message_id");
+        String stringExtra = this.f14432d.getStringExtra("google.message_id");
         if (stringExtra == null) {
-            return this.f14431d.getStringExtra("message_id");
+            return this.f14432d.getStringExtra("message_id");
         }
         return stringExtra;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final Integer d() {
-        if (this.f14431d.hasExtra("google.product_id")) {
-            return Integer.valueOf(this.f14431d.getIntExtra("google.product_id", 0));
+        if (this.f14432d.hasExtra("google.product_id")) {
+            return Integer.valueOf(this.f14432d.getIntExtra("google.product_id", 0));
         }
         return null;
     }
@@ -39,7 +39,7 @@ public final class a extends jf.a {
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
         int a10 = jf.c.a(parcel);
-        jf.c.q(parcel, 1, this.f14431d, i10, false);
+        jf.c.q(parcel, 1, this.f14432d, i10, false);
         jf.c.b(parcel, a10);
     }
 }

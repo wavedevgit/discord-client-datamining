@@ -12,7 +12,7 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 public abstract class u1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final SerialDescriptor[] f50074a = new SerialDescriptor[0];
+    private static final SerialDescriptor[] f50075a = new SerialDescriptor[0];
 
     public static final Set a(SerialDescriptor serialDescriptor) {
         Intrinsics.checkNotNullParameter(serialDescriptor, "<this>");
@@ -34,7 +34,7 @@ public abstract class u1 {
         if (list != null && (serialDescriptorArr = (SerialDescriptor[]) list.toArray(new SerialDescriptor[0])) != null) {
             return serialDescriptorArr;
         }
-        return f50074a;
+        return f50075a;
     }
 
     public static final KClass c(KType kType) {

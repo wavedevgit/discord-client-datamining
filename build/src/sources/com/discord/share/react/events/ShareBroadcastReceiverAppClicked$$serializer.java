@@ -38,7 +38,7 @@ public /* synthetic */ class ShareBroadcastReceiverAppClicked$$serializer implem
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50032a;
+        n2 n2Var = n2.f50033a;
         return new KSerializer[]{n2Var, a.u(n2Var)};
     }
 
@@ -53,7 +53,7 @@ public /* synthetic */ class ShareBroadcastReceiverAppClicked$$serializer implem
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         if (b10.p()) {
             str = b10.m(serialDescriptor, 0);
-            str2 = (String) b10.n(serialDescriptor, 1, n2.f50032a, null);
+            str2 = (String) b10.n(serialDescriptor, 1, n2.f50033a, null);
             i10 = 3;
         } else {
             boolean z10 = true;
@@ -70,7 +70,7 @@ public /* synthetic */ class ShareBroadcastReceiverAppClicked$$serializer implem
                 } else if (o10 != 1) {
                     throw new b0(o10);
                 } else {
-                    str3 = (String) b10.n(serialDescriptor, 1, n2.f50032a, str3);
+                    str3 = (String) b10.n(serialDescriptor, 1, n2.f50033a, str3);
                     i11 |= 2;
                 }
             }

@@ -16,13 +16,13 @@ import org.bouncycastle.jsse.provider.BouncyCastleJsseProvider;
 public final class c extends h {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f51994e;
+    public static final a f51995e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final boolean f51995f;
+    private static final boolean f51996f;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Provider f51996d;
+    private final Provider f51997d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -38,7 +38,7 @@ public final class c extends h {
         }
 
         public final boolean b() {
-            return c.f51995f;
+            return c.f51996f;
         }
 
         private a() {
@@ -47,14 +47,14 @@ public final class c extends h {
 
     static {
         a aVar = new a(null);
-        f51994e = aVar;
+        f51995e = aVar;
         boolean z10 = false;
         try {
             Class.forName("org.bouncycastle.jsse.provider.BouncyCastleJsseProvider", false, aVar.getClass().getClassLoader());
             z10 = true;
         } catch (ClassNotFoundException unused) {
         }
-        f51995f = z10;
+        f51996f = z10;
     }
 
     public /* synthetic */ c(DefaultConstructorMarker defaultConstructorMarker) {
@@ -76,7 +76,7 @@ public final class c extends h {
 
     @Override // vu.h
     public SSLContext n() {
-        SSLContext sSLContext = SSLContext.getInstance("TLS", this.f51996d);
+        SSLContext sSLContext = SSLContext.getInstance("TLS", this.f51997d);
         Intrinsics.checkNotNullExpressionValue(sSLContext, "getInstance(\"TLS\", provider)");
         return sSLContext;
     }
@@ -103,6 +103,6 @@ public final class c extends h {
     }
 
     private c() {
-        this.f51996d = new BouncyCastleJsseProvider();
+        this.f51997d = new BouncyCastleJsseProvider();
     }
 }

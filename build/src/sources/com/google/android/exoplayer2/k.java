@@ -13,82 +13,82 @@ public final class k {
     boolean C;
 
     /* renamed from: a  reason: collision with root package name */
-    final Context f13293a;
+    final Context f13294a;
 
     /* renamed from: b  reason: collision with root package name */
-    oe.e f13294b;
+    oe.e f13295b;
 
     /* renamed from: c  reason: collision with root package name */
-    long f13295c;
+    long f13296c;
 
     /* renamed from: d  reason: collision with root package name */
-    pi.r f13296d;
+    pi.r f13297d;
 
     /* renamed from: e  reason: collision with root package name */
-    pi.r f13297e;
+    pi.r f13298e;
 
     /* renamed from: f  reason: collision with root package name */
-    pi.r f13298f;
+    pi.r f13299f;
 
     /* renamed from: g  reason: collision with root package name */
-    pi.r f13299g;
+    pi.r f13300g;
 
     /* renamed from: h  reason: collision with root package name */
-    pi.r f13300h;
+    pi.r f13301h;
 
     /* renamed from: i  reason: collision with root package name */
-    pi.f f13301i;
+    pi.f f13302i;
 
     /* renamed from: j  reason: collision with root package name */
-    Looper f13302j;
+    Looper f13303j;
 
     /* renamed from: k  reason: collision with root package name */
-    AudioAttributes f13303k;
+    AudioAttributes f13304k;
 
     /* renamed from: l  reason: collision with root package name */
-    boolean f13304l;
+    boolean f13305l;
 
     /* renamed from: m  reason: collision with root package name */
-    int f13305m;
+    int f13306m;
 
     /* renamed from: n  reason: collision with root package name */
-    boolean f13306n;
+    boolean f13307n;
 
     /* renamed from: o  reason: collision with root package name */
-    boolean f13307o;
+    boolean f13308o;
 
     /* renamed from: p  reason: collision with root package name */
-    boolean f13308p;
+    boolean f13309p;
 
     /* renamed from: q  reason: collision with root package name */
-    int f13309q;
+    int f13310q;
 
     /* renamed from: r  reason: collision with root package name */
-    int f13310r;
+    int f13311r;
 
     /* renamed from: s  reason: collision with root package name */
-    boolean f13311s;
+    boolean f13312s;
 
     /* renamed from: t  reason: collision with root package name */
-    mc.t0 f13312t;
+    mc.t0 f13313t;
 
     /* renamed from: u  reason: collision with root package name */
-    long f13313u;
+    long f13314u;
 
     /* renamed from: v  reason: collision with root package name */
-    long f13314v;
+    long f13315v;
 
     /* renamed from: w  reason: collision with root package name */
-    v0 f13315w;
+    v0 f13316w;
 
     /* renamed from: x  reason: collision with root package name */
-    long f13316x;
+    long f13317x;
 
     /* renamed from: y  reason: collision with root package name */
-    long f13317y;
+    long f13318y;
 
     /* renamed from: z  reason: collision with root package name */
-    boolean f13318z;
+    boolean f13319z;
 
     public k(final Context context, final mc.s0 s0Var) {
         this(context, new pi.r() { // from class: mc.l
@@ -139,7 +139,7 @@ public final class k {
     public k i(final me.e eVar) {
         oe.a.g(!this.C);
         oe.a.e(eVar);
-        this.f13300h = new pi.r() { // from class: mc.n
+        this.f13301h = new pi.r() { // from class: mc.n
             @Override // pi.r
             public final Object get() {
                 return com.google.android.exoplayer2.k.e(me.e.this);
@@ -151,7 +151,7 @@ public final class k {
     public k j(final mc.a0 a0Var) {
         oe.a.g(!this.C);
         oe.a.e(a0Var);
-        this.f13299g = new pi.r() { // from class: mc.j
+        this.f13300g = new pi.r() { // from class: mc.j
             @Override // pi.r
             public final Object get() {
                 return com.google.android.exoplayer2.k.g(a0.this);
@@ -163,7 +163,7 @@ public final class k {
     public k k(final ke.q qVar) {
         oe.a.g(!this.C);
         oe.a.e(qVar);
-        this.f13298f = new pi.r() { // from class: mc.k
+        this.f13299f = new pi.r() { // from class: mc.k
             @Override // pi.r
             public final Object get() {
                 return com.google.android.exoplayer2.k.a(ke.q.this);
@@ -199,26 +199,26 @@ public final class k {
     }
 
     private k(Context context, pi.r rVar, pi.r rVar2, pi.r rVar3, pi.r rVar4, pi.r rVar5, pi.f fVar) {
-        this.f13293a = (Context) oe.a.e(context);
-        this.f13296d = rVar;
-        this.f13297e = rVar2;
-        this.f13298f = rVar3;
-        this.f13299g = rVar4;
-        this.f13300h = rVar5;
-        this.f13301i = fVar;
-        this.f13302j = oe.w0.R();
-        this.f13303k = AudioAttributes.f12791r;
-        this.f13305m = 0;
-        this.f13309q = 1;
-        this.f13310r = 0;
-        this.f13311s = true;
-        this.f13312t = mc.t0.f36275g;
-        this.f13313u = 5000L;
-        this.f13314v = 15000L;
-        this.f13315w = new h.b().a();
-        this.f13294b = oe.e.f38930a;
-        this.f13316x = 500L;
-        this.f13317y = 2000L;
+        this.f13294a = (Context) oe.a.e(context);
+        this.f13297d = rVar;
+        this.f13298e = rVar2;
+        this.f13299f = rVar3;
+        this.f13300g = rVar4;
+        this.f13301h = rVar5;
+        this.f13302i = fVar;
+        this.f13303j = oe.w0.R();
+        this.f13304k = AudioAttributes.f12792r;
+        this.f13306m = 0;
+        this.f13310q = 1;
+        this.f13311r = 0;
+        this.f13312s = true;
+        this.f13313t = mc.t0.f36276g;
+        this.f13314u = 5000L;
+        this.f13315v = 15000L;
+        this.f13316w = new h.b().a();
+        this.f13295b = oe.e.f38931a;
+        this.f13317x = 500L;
+        this.f13318y = 2000L;
         this.A = true;
     }
 }

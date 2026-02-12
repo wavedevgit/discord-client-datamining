@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function arg0, arg1() {
-        _fun29206: for (var _fun29206_ip = 0;;) switch (_fun29206_ip) {
+        _fun29222: for (var _fun29222_ip = 0;;) switch (_fun29222_ip) {
             case 0:
                 var4 = arg0;
                 var3 = arg1;
@@ -17,31 +17,31 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2.bind(var1)(var0);
                 var0 = var0.bind(var1)(var3);
                 if (!var0) {
-                    _fun29206_ip = 46;
-                    continue _fun29206
+                    _fun29222_ip = 46;
+                    continue _fun29222
                 }
             case 38:
                 var1 = '[[Enumerable]]';
                 var0 = var1 in var3;
             case 46:
                 if (!var0) {
-                    _fun29206_ip = 57;
-                    continue _fun29206
+                    _fun29222_ip = 57;
+                    continue _fun29222
                 }
             case 49:
                 var1 = '[[Configurable]]';
                 var0 = var1 in var3;
             case 57:
                 if (!var0) {
-                    _fun29206_ip = 88;
-                    continue _fun29206
+                    _fun29222_ip = 88;
+                    continue _fun29222
                 }
             case 60:
                 var1 = var4.IsAccessorDescriptor;
                 var1 = var1.bind(var4)(var3);
                 if (var1) {
-                    _fun29206_ip = 85;
-                    continue _fun29206
+                    _fun29222_ip = 85;
+                    continue _fun29222
                 }
             case 74:
                 var2 = var4.IsDataDescriptor;

@@ -1,46 +1,56 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var7 = require;
-    var2 = exports;
-    var8 = dependencyMap;
-    var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var1 = {};
-    var0 = true;
-    var1.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var4)(var2, var0, var1);
-    var0 = 0;
-    var1 = var8[var0];
+    var0 = module;
+    var1 = function arg0, arg1() {
+        _fun45573: for (var _fun45573_ip = 0;;) switch (_fun45573_ip) {
+            case 0:
+                var8 = arg0;
+                var7 = arg1;
+                var0 = null;
+                if (!(var0 != var8)) {
+                    _fun45573_ip = 92;
+                    continue _fun45573
+                }
+            case 12:
+                var0 = {};
+                var5 = var8;
+                var1 = -1;
+                for (var2 in var5)
+                    case 31: {
+                        case 40: var10 = var2;
+                        var9 = {};
+                        var11 = var9.hasOwnProperty;
+                        var9 = var11.call;
+                        var9 = var9.bind(var11)(var8, var10);
+                        if (!var9) {
+                            _fun45573_ip = 31;
+                            continue _fun45573
+                        }
+                        case 65: var9 = var7.indexOf;
+                        var9 = var9.bind(var7)(var10);
+                        if (var1 !== var9) {
+                            _fun45573_ip = 31;
+                            continue _fun45573
+                        }
+                        case 80: var9 = var8[var10];
+                        var0[var10] = var9;
+                        _fun45573_ip = 31;
+                        continue _fun45573;
+                    }
+            case 90:
+                return var0;
+            case 92:
+                var0 = {};
+                return var0;
+        }
+    };
+    var0.exports = var1;
+    var2 = var0.exports;
+    var1 = true;
+    var2.__esModule = var1;
+    var1 = var0.exports;
+    var0 = var0.exports;
+    var1.default = var0;
     var0 = undefined;
-    var1 = var7.bind(var0)(var1);
-    var4 = var1.StyleSheet;
-    var3 = var4.create;
-    var1 = {};
-    var5 = {
-        'padding': 10,
-        'cursor': 'grab'
-    };
-    var1.container = var5;
-    var5 = {
-        'alignSelf': 'center',
-        'width': null,
-        'height': 4,
-        'borderRadius': 4,
-        'backgroundColor': 'rgba(0, 0, 0, 0.75)'
-    };
-    var6 = 1;
-    var6 = var8[var6];
-    var6 = var7.bind(var0)(var6);
-    var7 = var6.WINDOW_WIDTH;
-    var6 = 7.5;
-    var7 = var6 * var7;
-    var6 = 100;
-    var6 = var7 / var6;
-    var5.width = var6;
-    var1.indicator = var5;
-    var1 = var3.bind(var4)(var1);
-    var2.styles = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 4944]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

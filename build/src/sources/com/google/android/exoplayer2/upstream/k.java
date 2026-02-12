@@ -13,22 +13,22 @@ import oe.w0;
 public final class k implements j.e {
 
     /* renamed from: a  reason: collision with root package name */
-    public final long f14163a;
+    public final long f14164a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final com.google.android.exoplayer2.upstream.a f14164b;
+    public final com.google.android.exoplayer2.upstream.a f14165b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f14165c;
+    public final int f14166c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final a0 f14166d;
+    private final a0 f14167d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final a f14167e;
+    private final a f14168e;
 
     /* renamed from: f  reason: collision with root package name */
-    private volatile Object f14168f;
+    private volatile Object f14169f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface a {
@@ -41,18 +41,18 @@ public final class k implements j.e {
 
     @Override // com.google.android.exoplayer2.upstream.j.e
     public final void a() {
-        this.f14166d.r();
-        n nVar = new n(this.f14166d, this.f14164b);
+        this.f14167d.r();
+        n nVar = new n(this.f14167d, this.f14165b);
         try {
             nVar.h();
-            this.f14168f = this.f14167e.a((Uri) oe.a.e(this.f14166d.m()), nVar);
+            this.f14169f = this.f14168e.a((Uri) oe.a.e(this.f14167d.m()), nVar);
         } finally {
             w0.n(nVar);
         }
     }
 
     public long b() {
-        return this.f14166d.o();
+        return this.f14167d.o();
     }
 
     @Override // com.google.android.exoplayer2.upstream.j.e
@@ -60,22 +60,22 @@ public final class k implements j.e {
     }
 
     public Map d() {
-        return this.f14166d.q();
+        return this.f14167d.q();
     }
 
     public final Object e() {
-        return this.f14168f;
+        return this.f14169f;
     }
 
     public Uri f() {
-        return this.f14166d.p();
+        return this.f14167d.p();
     }
 
     public k(DataSource dataSource, com.google.android.exoplayer2.upstream.a aVar, int i10, a aVar2) {
-        this.f14166d = new a0(dataSource);
-        this.f14164b = aVar;
-        this.f14165c = i10;
-        this.f14167e = aVar2;
-        this.f14163a = LoadEventInfo.a();
+        this.f14167d = new a0(dataSource);
+        this.f14165b = aVar;
+        this.f14166c = i10;
+        this.f14168e = aVar2;
+        this.f14164a = LoadEventInfo.a();
     }
 }

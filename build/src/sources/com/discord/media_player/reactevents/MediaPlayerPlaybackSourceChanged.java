@@ -87,7 +87,7 @@ public final class MediaPlayerPlaybackSourceChanged implements ReactEvent {
         if (this.source == null) {
             return NativeMapExtensionsKt.toNativeMap(o0.i());
         }
-        return NativeMapExtensionsKt.nativeMapOf(v.a("source", NativeMapExtensionsKt.toNativeMap(a.f55152b.e(w.b(MediaPlayerPlaybackSource.class), this.source))));
+        return NativeMapExtensionsKt.nativeMapOf(v.a("source", NativeMapExtensionsKt.toNativeMap(a.f55153b.e(w.b(MediaPlayerPlaybackSource.class), this.source))));
     }
 
     @NotNull

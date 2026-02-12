@@ -24,16 +24,16 @@ import kotlinx.coroutines.flow.FlowCollector;
 public final class c implements en.o<b> {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f40693e = new a(null);
+    public static final a f40694e = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final ActivityResultLauncher f40694b;
+    private final ActivityResultLauncher f40695b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Context f40695c;
+    private final Context f40696c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final gq.c f40696d;
+    private final gq.c f40697d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -52,7 +52,7 @@ public final class c implements en.o<b> {
         public static final class a extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final a f40697a = new a();
+            public static final a f40698a = new a();
 
             private a() {
                 super(null);
@@ -64,17 +64,17 @@ public final class c implements en.o<b> {
         public static final class C0561b extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final String f40698a;
+            private final String f40699a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public C0561b(String absoluteFilePath) {
                 super(null);
                 Intrinsics.checkNotNullParameter(absoluteFilePath, "absoluteFilePath");
-                this.f40698a = absoluteFilePath;
+                this.f40699a = absoluteFilePath;
             }
 
             public final String a() {
-                return this.f40698a;
+                return this.f40699a;
             }
         }
 
@@ -91,7 +91,7 @@ public final class c implements en.o<b> {
     static final class C0562c extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f40699d;
+        int f40700d;
 
         C0562c(Continuation continuation) {
             super(2, continuation);
@@ -105,7 +105,7 @@ public final class c implements en.o<b> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = gs.b.f();
-            int i10 = this.f40699d;
+            int i10 = this.f40700d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -114,25 +114,25 @@ public final class c implements en.o<b> {
                 }
             } else {
                 kotlin.c.b(obj);
-                this.f40699d = 1;
+                this.f40700d = 1;
                 if (ys.i0.a(500L, this) == f10) {
                     return f10;
                 }
             }
             Bitmap createBitmap = Bitmap.createBitmap(10, 10, Bitmap.Config.ARGB_8888);
-            FileOutputStream fileOutputStream = new FileOutputStream(c.this.f40696d.d("document_camera_photo.jpg"));
+            FileOutputStream fileOutputStream = new FileOutputStream(c.this.f40697d.d("document_camera_photo.jpg"));
             try {
                 createBitmap.compress(Bitmap.CompressFormat.JPEG, 80, fileOutputStream);
                 ls.c.a(fileOutputStream, null);
                 new mp.y().a(true);
-                return Unit.f31987a;
+                return Unit.f31988a;
             } finally {
             }
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((C0562c) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((C0562c) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -140,29 +140,29 @@ public final class c implements en.o<b> {
     public static final class d implements Flow {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Flow f40701d;
+        final /* synthetic */ Flow f40702d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ c f40702e;
+        final /* synthetic */ c f40703e;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ FlowCollector f40703d;
+            final /* synthetic */ FlowCollector f40704d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ c f40704e;
+            final /* synthetic */ c f40705e;
 
             /* renamed from: oo.c$d$a$a  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
             public static final class C0563a extends kotlin.coroutines.jvm.internal.d {
 
                 /* renamed from: d  reason: collision with root package name */
-                /* synthetic */ Object f40705d;
+                /* synthetic */ Object f40706d;
 
                 /* renamed from: e  reason: collision with root package name */
-                int f40706e;
+                int f40707e;
 
                 public C0563a(Continuation continuation) {
                     super(continuation);
@@ -170,15 +170,15 @@ public final class c implements en.o<b> {
 
                 @Override // kotlin.coroutines.jvm.internal.a
                 public final Object invokeSuspend(Object obj) {
-                    this.f40705d = obj;
-                    this.f40706e |= Integer.MIN_VALUE;
+                    this.f40706d = obj;
+                    this.f40707e |= Integer.MIN_VALUE;
                     return a.this.emit(null, this);
                 }
             }
 
             public a(FlowCollector flowCollector, c cVar) {
-                this.f40703d = flowCollector;
-                this.f40704e = cVar;
+                this.f40704d = flowCollector;
+                this.f40705e = cVar;
             }
 
             /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
@@ -195,20 +195,20 @@ public final class c implements en.o<b> {
                     if (r0 == 0) goto L13
                     r0 = r7
                     oo.c$d$a$a r0 = (oo.c.d.a.C0563a) r0
-                    int r1 = r0.f40706e
+                    int r1 = r0.f40707e
                     r2 = -2147483648(0xffffffff80000000, float:-0.0)
                     r3 = r1 & r2
                     if (r3 == 0) goto L13
                     int r1 = r1 - r2
-                    r0.f40706e = r1
+                    r0.f40707e = r1
                     goto L18
                 L13:
                     oo.c$d$a$a r0 = new oo.c$d$a$a
                     r0.<init>(r7)
                 L18:
-                    java.lang.Object r7 = r0.f40705d
+                    java.lang.Object r7 = r0.f40706d
                     java.lang.Object r1 = gs.b.f()
-                    int r2 = r0.f40706e
+                    int r2 = r0.f40707e
                     r3 = 1
                     if (r2 == 0) goto L31
                     if (r2 != r3) goto L29
@@ -221,15 +221,15 @@ public final class c implements en.o<b> {
                     throw r6
                 L31:
                     kotlin.c.b(r7)
-                    kotlinx.coroutines.flow.FlowCollector r7 = r5.f40703d
+                    kotlinx.coroutines.flow.FlowCollector r7 = r5.f40704d
                     java.lang.Boolean r6 = (java.lang.Boolean) r6
                     boolean r6 = r6.booleanValue()
                     if (r6 == 0) goto L6e
-                    oo.c r6 = r5.f40704e
+                    oo.c r6 = r5.f40705e
                     gq.c r6 = oo.c.b(r6)
                     java.lang.String r2 = "document_camera_photo.jpg"
                     java.io.File r6 = r6.d(r2)
-                    oo.c r2 = r5.f40704e
+                    oo.c r2 = r5.f40705e
                     gq.c r2 = oo.c.b(r2)
                     java.lang.String r4 = "jpg"
                     java.io.File r2 = r2.c(r4)
@@ -242,17 +242,17 @@ public final class c implements en.o<b> {
                     r6.<init>(r2)
                     goto L70
                 L6b:
-                    oo.c$b$a r6 = oo.c.b.a.f40697a
+                    oo.c$b$a r6 = oo.c.b.a.f40698a
                     goto L70
                 L6e:
-                    oo.c$b$a r6 = oo.c.b.a.f40697a
+                    oo.c$b$a r6 = oo.c.b.a.f40698a
                 L70:
-                    r0.f40706e = r3
+                    r0.f40707e = r3
                     java.lang.Object r6 = r7.emit(r6, r0)
                     if (r6 != r1) goto L79
                     return r1
                 L79:
-                    kotlin.Unit r6 = kotlin.Unit.f31987a
+                    kotlin.Unit r6 = kotlin.Unit.f31988a
                     return r6
                 */
                 throw new UnsupportedOperationException("Method not decompiled: oo.c.d.a.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -260,17 +260,17 @@ public final class c implements en.o<b> {
         }
 
         public d(Flow flow, c cVar) {
-            this.f40701d = flow;
-            this.f40702e = cVar;
+            this.f40702d = flow;
+            this.f40703e = cVar;
         }
 
         @Override // kotlinx.coroutines.flow.Flow
         public Object collect(FlowCollector flowCollector, Continuation continuation) {
-            Object collect = this.f40701d.collect(new a(flowCollector, this.f40702e), continuation);
+            Object collect = this.f40702d.collect(new a(flowCollector, this.f40703e), continuation);
             if (collect == gs.b.f()) {
                 return collect;
             }
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
     }
 
@@ -278,9 +278,9 @@ public final class c implements en.o<b> {
         Intrinsics.checkNotNullParameter(pictureLauncher, "pictureLauncher");
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(sdkFilesManager, "sdkFilesManager");
-        this.f40694b = pictureLauncher;
-        this.f40695c = context;
-        this.f40696d = sdkFilesManager;
+        this.f40695b = pictureLauncher;
+        this.f40696c = context;
+        this.f40697d = sdkFilesManager;
     }
 
     @Override // en.o
@@ -292,18 +292,18 @@ public final class c implements en.o<b> {
         Intrinsics.checkNotNullParameter(errorMessage, "errorMessage");
         try {
             if (mq.b.b()) {
-                ys.i.d(ys.v0.f55829d, null, null, new C0562c(null), 3, null);
+                ys.i.d(ys.v0.f55830d, null, null, new C0562c(null), 3, null);
                 return true;
             }
-            Context context = this.f40695c;
+            Context context = this.f40696c;
             String packageName = context.getPackageName();
-            Uri uriForFile = FileProvider.getUriForFile(context, packageName + ".persona.provider", this.f40696d.d("document_camera_photo.jpg"));
-            ActivityResultLauncher activityResultLauncher = this.f40694b;
+            Uri uriForFile = FileProvider.getUriForFile(context, packageName + ".persona.provider", this.f40697d.d("document_camera_photo.jpg"));
+            ActivityResultLauncher activityResultLauncher = this.f40695b;
             Intrinsics.checkNotNull(uriForFile);
             activityResultLauncher.b(uriForFile);
             return true;
         } catch (IllegalArgumentException unused) {
-            Toast.makeText(this.f40695c, errorMessage, 0).show();
+            Toast.makeText(this.f40696c, errorMessage, 0).show();
             return false;
         }
     }

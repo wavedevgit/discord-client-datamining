@@ -8,7 +8,58 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
-    var0 = function() {
+    var0 = global;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var3 = 1;
+    var6 = var5[var3];
+    var3 = metroImportAll;
+    var3 = var3.bind(var0)(var6);
+    var _closure1_slot4 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.Image;
+    var _closure1_slot5 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.ContentDismissActionType;
+    var _closure1_slot6 = var3;
+    var3 = 4;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var7 = var3.jsx;
+    var _closure1_slot7 = var7;
+    var3 = 5;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.DismissibleContent;
+    var3 = var3.FOR_LATER_NOTIFICATIONS_COACHMARK;
+    var _closure1_slot8 = var3;
+    var3 = 6;
+    var3 = var5[var3];
+    var8 = var4.bind(var0)(var3);
+    var6 = var8.createStyles;
+    var3 = {};
+    var9 = {
+        'width': 100,
+        'height': 80
+    };
+    var3.imageContainer = var9;
+    var3 = var6.bind(var8)(var3);
+    var _closure1_slot9 = var3;
+    var6 = function() {
         var0 = _closure1_slot9;
         var3 = undefined;
         var4 = var0.bind(var3)();
@@ -26,58 +77,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var _closure1_slot10 = var0;
-    var0 = global;
-    var8 = var0.Object;
-    var7 = var8.defineProperty;
     var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var7.bind(var8)(var2, var0, var3);
-    var0 = 0;
-    var3 = var5[var0];
-    var0 = undefined;
-    var3 = var6.bind(var0)(var3);
-    var _closure1_slot3 = var3;
-    var3 = 1;
-    var6 = var5[var3];
-    var3 = arg3;
-    var3 = var3.bind(var0)(var6);
-    var _closure1_slot4 = var3;
-    var3 = 2;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.Image;
-    var _closure1_slot5 = var3;
-    var3 = 3;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.ContentDismissActionType;
-    var _closure1_slot6 = var3;
-    var3 = 4;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.jsx;
-    var _closure1_slot7 = var3;
-    var3 = 5;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.DismissibleContent;
-    var3 = var3.FOR_LATER_NOTIFICATIONS_COACHMARK;
-    var _closure1_slot8 = var3;
-    var3 = 6;
-    var3 = var5[var3];
-    var7 = var4.bind(var0)(var3);
-    var6 = var7.createStyles;
-    var3 = {};
-    var8 = {
-        'width': 100,
-        'height': 80
-    };
-    var3.imageContainer = var8;
-    var3 = var6.bind(var7)(var3);
-    var _closure1_slot9 = var3;
+    var3 = var7.bind(var0)(var6, var3);
+    var _closure1_slot10 = var3;
     var3 = 12;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -85,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/saved_messages/native/useForLaterCoachmark.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun103787: for (var _fun103787_ip = 0;;) switch (_fun103787_ip) {
+        _fun103774: for (var _fun103774_ip = 0;;) switch (_fun103774_ip) {
             case 0:
                 var2 = _closure1_slot1;
                 var3 = _closure1_slot2;
@@ -100,13 +102,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var5)(var0);
                 var0 = var0.enabled;
                 if (var0) {
-                    _fun103787_ip = 64;
-                    continue _fun103787
+                    _fun103774_ip = 64;
+                    continue _fun103774
                 }
             case 58:
                 var8 = new Array(0);
-                _fun103787_ip = 79;
-                continue _fun103787;
+                _fun103774_ip = 79;
+                continue _fun103774;
             case 64:
                 var2 = _closure1_slot8;
                 var0 = new Array(1);
@@ -177,11 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var0.onDismiss = var2;
                     var1 = function() {
-                        var3 = _closure1_slot7;
-                        var2 = _closure1_slot10;
-                        var1 = undefined;
-                        var0 = {};
-                        var0 = var3.bind(var1)(var2, var0);
+                        var0 = _closure1_slot10;
                         return var0;
                     };
                     var0.renderImgComponent = var1;
@@ -199,4 +197,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1369, 33, 1358, 1297, 7680, 8809, 6018, 1234, 7099, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1369, 33, 1358, 1297, 8061, 9109, 6517, 1234, 7114, 2]);

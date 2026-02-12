@@ -13,19 +13,19 @@ public final class x4 implements k5, e0 {
     public static final Parcelable.Creator<x4> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f43150d;
+    private final String f43151d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final JsonLogicBoolean f43151e;
+    private final JsonLogicBoolean f43152e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f43152i;
+    private final int f43153i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f43153o;
+    private final int f43154o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final List f43154p;
+    private final List f43155p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -45,16 +45,16 @@ public final class x4 implements k5, e0 {
 
     public x4(String name, JsonLogicBoolean jsonLogicBoolean, int i10, int i11) {
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f43150d = name;
-        this.f43151e = jsonLogicBoolean;
-        this.f43152i = i10;
-        this.f43153o = i11;
-        this.f43154p = new ArrayList();
+        this.f43151d = name;
+        this.f43152e = jsonLogicBoolean;
+        this.f43153i = i10;
+        this.f43154o = i11;
+        this.f43155p = new ArrayList();
     }
 
     @Override // pq.e0
     public List d() {
-        return this.f43154p;
+        return this.f43155p;
     }
 
     @Override // android.os.Parcelable
@@ -70,53 +70,53 @@ public final class x4 implements k5, e0 {
             return false;
         }
         x4 x4Var = (x4) obj;
-        if (Intrinsics.areEqual(this.f43150d, x4Var.f43150d) && Intrinsics.areEqual(this.f43151e, x4Var.f43151e) && this.f43152i == x4Var.f43152i && this.f43153o == x4Var.f43153o) {
+        if (Intrinsics.areEqual(this.f43151d, x4Var.f43151d) && Intrinsics.areEqual(this.f43152e, x4Var.f43152e) && this.f43153i == x4Var.f43153i && this.f43154o == x4Var.f43154o) {
             return true;
         }
         return false;
     }
 
     public final int getHeight() {
-        return this.f43152i;
+        return this.f43153i;
     }
 
     @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f43151e;
+        return this.f43152e;
     }
 
     @Override // pq.k5
     public String getName() {
-        return this.f43150d;
+        return this.f43151d;
     }
 
     public int hashCode() {
         int hashCode;
-        int hashCode2 = this.f43150d.hashCode() * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f43151e;
+        int hashCode2 = this.f43151d.hashCode() * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f43152e;
         if (jsonLogicBoolean == null) {
             hashCode = 0;
         } else {
             hashCode = jsonLogicBoolean.hashCode();
         }
-        return ((((hashCode2 + hashCode) * 31) + Integer.hashCode(this.f43152i)) * 31) + Integer.hashCode(this.f43153o);
+        return ((((hashCode2 + hashCode) * 31) + Integer.hashCode(this.f43153i)) * 31) + Integer.hashCode(this.f43154o);
     }
 
     public String toString() {
-        String str = this.f43150d;
-        JsonLogicBoolean jsonLogicBoolean = this.f43151e;
-        int i10 = this.f43152i;
-        int i11 = this.f43153o;
+        String str = this.f43151d;
+        JsonLogicBoolean jsonLogicBoolean = this.f43152e;
+        int i10 = this.f43153i;
+        int i11 = this.f43154o;
         return "SpacerComponent(name=" + str + ", hidden=" + jsonLogicBoolean + ", height=" + i10 + ", width=" + i11 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f43150d);
-        dest.writeParcelable(this.f43151e, i10);
-        dest.writeInt(this.f43152i);
-        dest.writeInt(this.f43153o);
+        dest.writeString(this.f43151d);
+        dest.writeParcelable(this.f43152e, i10);
+        dest.writeInt(this.f43153i);
+        dest.writeInt(this.f43154o);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

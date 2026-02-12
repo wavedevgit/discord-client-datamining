@@ -5,30 +5,30 @@ import bj.c;
 final class m7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final m7 f44712a = new m7();
+    static final m7 f44713a = new m7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f44713b;
+    private static final bj.c f44714b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f44714c;
+    private static final bj.c f44715c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f44715d;
+    private static final bj.c f44716d;
 
     static {
         c.b a10 = bj.c.a("inferenceCommonLogEvent");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44713b = a10.b(s1Var.b()).a();
+        f44714b = a10.b(s1Var.b()).a();
         c.b a11 = bj.c.a("imageInfo");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44714c = a11.b(s1Var2.b()).a();
+        f44715c = a11.b(s1Var2.b()).a();
         c.b a12 = bj.c.a("recognizerOptions");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44715d = a12.b(s1Var3.b()).a();
+        f44716d = a12.b(s1Var3.b()).a();
     }
 
     private m7() {

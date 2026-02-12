@@ -17,23 +17,23 @@ import kotlin.reflect.KClass;
 public final class i implements gn.k {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f19920c = new a(null);
+    public static final a f19921c = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final View f19921b;
+    private final View f19922b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ c0 f19922a;
+        private final /* synthetic */ c0 f19923a;
 
         /* renamed from: com.withpersona.sdk2.inquiry.internal.i$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         /* synthetic */ class C0249a extends FunctionReferenceImpl implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0249a f19923d = new C0249a();
+            public static final C0249a f19924d = new C0249a();
 
             C0249a() {
                 super(1, i.class, "<init>", "<init>(Landroid/view/View;)V", 0);
@@ -57,23 +57,23 @@ public final class i implements gn.k {
             Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
             Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f19922a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+            return this.f19923a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
         }
 
         @Override // gn.c0
         public KClass getType() {
-            return this.f19922a.getType();
+            return this.f19923a.getType();
         }
 
         private a() {
-            k.a aVar = gn.k.f25848a;
-            this.f19922a = new gn.m(Reflection.getOrCreateKotlinClass(n.d.a.class), g2.f23130d, C0249a.f19923d);
+            k.a aVar = gn.k.f25849a;
+            this.f19923a = new gn.m(Reflection.getOrCreateKotlinClass(n.d.a.class), g2.f23131d, C0249a.f19924d);
         }
     }
 
     public i(View view) {
         Intrinsics.checkNotNullParameter(view, "view");
-        this.f19921b = view;
+        this.f19922b = view;
     }
 
     @Override // gn.k

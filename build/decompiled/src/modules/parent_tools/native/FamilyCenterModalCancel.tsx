@@ -302,17 +302,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = function() { // Environment: var1
             var2 = _closure2_slot0;
             var1 = function arg0() {
-                var0 = arg0;
+                var4 = _closure1_slot5;
+                var1 = _closure1_slot8;
+                var0 = {};
+                var5 = arg0;
+                var0.otherUser = var5;
+                var7 = undefined;
+                var0 = var4.bind(var7)(var1, var0);
                 var _closure4_slot0 = var0;
                 var0 = {};
                 var1 = {};
-                var3 = true;
-                var1.headerShown = var3;
+                var4 = true;
+                var1.headerShown = var4;
                 var5 = _closure1_slot0;
                 var8 = _closure1_slot2;
                 var4 = 21;
                 var4 = var8[var4];
-                var7 = undefined;
                 var5 = var5.bind(var7)(var4);
                 var4 = var5.getHeaderCloseButton;
                 var6 = _closure1_slot1;
@@ -328,13 +333,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1.headerTitle = var3;
                 var2 = function() {
-                    var3 = _closure1_slot5;
-                    var2 = _closure1_slot8;
-                    var1 = {};
                     var0 = _closure4_slot0;
-                    var1.otherUser = var0;
-                    var0 = undefined;
-                    var0 = var3.bind(var0)(var2, var1);
                     return var0;
                 };
                 var1.render = var2;
@@ -374,4 +373,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 6587, 4567, 3149, 1234, 10509, 44, 6516, 6517, 10567, 5384, 3938, 1860, 10542, 10511, 6520, 4090, 4713, 7559, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 6603, 4567, 3149, 1234, 10316, 44, 6528, 6529, 10377, 5375, 3938, 1860, 10351, 10318, 6532, 4090, 5836, 7834, 2]);

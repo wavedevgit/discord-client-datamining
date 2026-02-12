@@ -253,7 +253,7 @@ public class f0 extends ListView {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f0(Context context, boolean z10) {
-        super(context, null, f.a.f23301z);
+        super(context, null, f.a.f23302z);
         this.f1786d = new Rect();
         this.f1787e = 0;
         this.f1788i = 0;

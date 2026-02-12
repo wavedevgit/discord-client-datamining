@@ -50,7 +50,7 @@ public final class g extends h {
         H(iVar);
         i.a aVar = new i.a();
         this.F = aVar;
-        aVar.f16160h = true;
+        aVar.f16161h = true;
         androidx.dynamicanimation.animation.d dVar = new androidx.dynamicanimation.animation.d();
         this.D = dVar;
         dVar.f(1.0f);
@@ -69,7 +69,7 @@ public final class g extends h {
                 g.v(g.this, bVar, valueAnimator2);
             }
         });
-        if (bVar.b(true) && bVar.f16082m != 0) {
+        if (bVar.b(true) && bVar.f16083m != 0) {
             valueAnimator.start();
         }
         p(1.0f);
@@ -87,18 +87,18 @@ public final class g extends h {
 
     /* JADX INFO: Access modifiers changed from: private */
     public float D() {
-        return this.F.f16154b;
+        return this.F.f16155b;
     }
 
     private void E() {
         if (this.J != null) {
             return;
         }
-        Context context = this.f16131d;
+        Context context = this.f16132d;
         int i10 = bh.b.W;
         TimeInterpolator timeInterpolator = ch.a.f8276a;
         this.L = oh.g.g(context, i10, timeInterpolator);
-        this.M = oh.g.g(this.f16131d, bh.b.R, timeInterpolator);
+        this.M = oh.g.g(this.f16132d, bh.b.R, timeInterpolator);
         ValueAnimator valueAnimator = new ValueAnimator();
         this.J = valueAnimator;
         valueAnimator.setDuration(500L);
@@ -107,14 +107,14 @@ public final class g extends h {
         this.J.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: ph.c
             @Override // android.animation.ValueAnimator.AnimatorUpdateListener
             public final void onAnimationUpdate(ValueAnimator valueAnimator2) {
-                g.this.F.f16157e = r0.K.getInterpolation(r0.J.getAnimatedFraction());
+                g.this.F.f16158e = r0.K.getInterpolation(r0.J.getAnimatedFraction());
             }
         });
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void F(int i10) {
-        if (this.f16132e.b(true)) {
+        if (this.f16133e.b(true)) {
             E();
             float B = B(i10);
             if (B != this.G) {
@@ -136,19 +136,19 @@ public final class g extends h {
     }
 
     private void G(float f10) {
-        this.F.f16157e = f10;
+        this.F.f16158e = f10;
         invalidateSelf();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void J(float f10) {
-        this.F.f16154b = f10;
+        this.F.f16155b = f10;
         invalidateSelf();
     }
 
     public static /* synthetic */ void v(g gVar, b bVar, ValueAnimator valueAnimator) {
         gVar.getClass();
-        if (bVar.b(true) && bVar.f16082m != 0 && gVar.isVisible()) {
+        if (bVar.b(true) && bVar.f16083m != 0 && gVar.isVisible()) {
             gVar.invalidateSelf();
         }
     }
@@ -181,20 +181,20 @@ public final class g extends h {
         if (!getBounds().isEmpty() && isVisible() && canvas.getClipBounds(this.A)) {
             canvas.save();
             this.C.h(canvas, getBounds(), h(), m(), l());
-            this.F.f16158f = i();
-            this.f16144y.setStyle(Paint.Style.FILL);
-            this.f16144y.setAntiAlias(true);
+            this.F.f16159f = i();
+            this.f16145y.setStyle(Paint.Style.FILL);
+            this.f16145y.setAntiAlias(true);
             i.a aVar = this.F;
-            b bVar = this.f16132e;
-            aVar.f16155c = bVar.f16074e[0];
-            int i10 = bVar.f16078i;
+            b bVar = this.f16133e;
+            aVar.f16156c = bVar.f16075e[0];
+            int i10 = bVar.f16079i;
             if (i10 > 0) {
-                this.C.d(canvas, this.f16144y, D(), 1.0f, this.f16132e.f16075f, getAlpha(), (int) ((i10 * u1.a.a(D(), 0.0f, 0.01f)) / 0.01f));
+                this.C.d(canvas, this.f16145y, D(), 1.0f, this.f16133e.f16076f, getAlpha(), (int) ((i10 * u1.a.a(D(), 0.0f, 0.01f)) / 0.01f));
             } else {
-                this.C.d(canvas, this.f16144y, 0.0f, 1.0f, bVar.f16075f, getAlpha(), 0);
+                this.C.d(canvas, this.f16145y, 0.0f, 1.0f, bVar.f16076f, getAlpha(), 0);
             }
-            this.C.c(canvas, this.f16144y, this.F, getAlpha());
-            this.C.b(canvas, this.f16144y, this.f16132e.f16074e[0], getAlpha());
+            this.C.c(canvas, this.f16145y, this.F, getAlpha());
+            this.C.b(canvas, this.f16145y, this.f16133e.f16075e[0], getAlpha());
             canvas.restore();
         }
     }
@@ -298,7 +298,7 @@ public final class g extends h {
     @Override // com.google.android.material.progressindicator.h
     public boolean t(boolean z10, boolean z11, boolean z12) {
         boolean t10 = super.t(z10, z11, z12);
-        float a10 = this.f16133i.a(this.f16131d.getContentResolver());
+        float a10 = this.f16134i.a(this.f16132d.getContentResolver());
         if (a10 == 0.0f) {
             this.H = true;
             return t10;

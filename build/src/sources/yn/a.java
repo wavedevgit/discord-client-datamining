@@ -7,22 +7,22 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class a {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final C0778a f55666e = new C0778a(null);
+    public static final C0778a f55667e = new C0778a(null);
 
     /* renamed from: f  reason: collision with root package name */
-    private static final a f55667f = new a(false, false, false, false);
+    private static final a f55668f = new a(false, false, false, false);
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f55668a;
+    private final boolean f55669a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f55669b;
+    private final boolean f55670b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f55670c;
+    private final boolean f55671c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f55671d;
+    private final boolean f55672d;
 
     /* renamed from: yn.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -43,26 +43,26 @@ public final class a {
     }
 
     public a(boolean z10, boolean z11, boolean z12, boolean z13) {
-        this.f55668a = z10;
-        this.f55669b = z11;
-        this.f55670c = z12;
-        this.f55671d = z13;
+        this.f55669a = z10;
+        this.f55670b = z11;
+        this.f55671c = z12;
+        this.f55672d = z13;
     }
 
     public final boolean a() {
-        return this.f55671d;
+        return this.f55672d;
     }
 
     public final boolean b() {
-        return this.f55668a;
+        return this.f55669a;
     }
 
     public final boolean c() {
-        return this.f55670c;
+        return this.f55671c;
     }
 
     public final boolean d() {
-        return this.f55669b;
+        return this.f55670b;
     }
 
     public boolean equals(Object obj) {
@@ -73,21 +73,21 @@ public final class a {
             return false;
         }
         a aVar = (a) obj;
-        if (this.f55668a == aVar.f55668a && this.f55669b == aVar.f55669b && this.f55670c == aVar.f55670c && this.f55671d == aVar.f55671d) {
+        if (this.f55669a == aVar.f55669a && this.f55670b == aVar.f55670b && this.f55671c == aVar.f55671c && this.f55672d == aVar.f55672d) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((((Boolean.hashCode(this.f55668a) * 31) + Boolean.hashCode(this.f55669b)) * 31) + Boolean.hashCode(this.f55670c)) * 31) + Boolean.hashCode(this.f55671d);
+        return (((((Boolean.hashCode(this.f55669a) * 31) + Boolean.hashCode(this.f55670b)) * 31) + Boolean.hashCode(this.f55671c)) * 31) + Boolean.hashCode(this.f55672d);
     }
 
     public String toString() {
-        boolean z10 = this.f55668a;
-        boolean z11 = this.f55669b;
-        boolean z12 = this.f55670c;
-        boolean z13 = this.f55671d;
+        boolean z10 = this.f55669a;
+        boolean z11 = this.f55670b;
+        boolean z12 = this.f55671c;
+        boolean z13 = this.f55672d;
         return "SafeAreaViewEdges(left=" + z10 + ", top=" + z11 + ", right=" + z12 + ", bottom=" + z13 + ")";
     }
 }

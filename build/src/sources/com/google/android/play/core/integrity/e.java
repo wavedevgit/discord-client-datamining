@@ -5,15 +5,15 @@ import com.google.android.gms.tasks.Task;
 final class e implements IntegrityManager {
 
     /* renamed from: a  reason: collision with root package name */
-    private final k f17027a;
+    private final k f17028a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e(k kVar) {
-        this.f17027a = kVar;
+        this.f17028a = kVar;
     }
 
     @Override // com.google.android.play.core.integrity.IntegrityManager
     public final Task requestIntegrityToken(IntegrityTokenRequest integrityTokenRequest) {
-        return this.f17027a.b(integrityTokenRequest);
+        return this.f17028a.b(integrityTokenRequest);
     }
 }

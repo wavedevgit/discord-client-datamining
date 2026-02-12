@@ -7,19 +7,19 @@ import java.util.regex.Pattern;
 public final class i {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final long f17245b = TimeUnit.HOURS.toSeconds(1);
+    public static final long f17246b = TimeUnit.HOURS.toSeconds(1);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Pattern f17246c = Pattern.compile("\\AA[\\w-]{38}\\z");
+    private static final Pattern f17247c = Pattern.compile("\\AA[\\w-]{38}\\z");
 
     /* renamed from: d  reason: collision with root package name */
-    private static i f17247d;
+    private static i f17248d;
 
     /* renamed from: a  reason: collision with root package name */
-    private final mj.a f17248a;
+    private final mj.a f17249a;
 
     private i(mj.a aVar) {
-        this.f17248a = aVar;
+        this.f17249a = aVar;
     }
 
     public static i c() {
@@ -27,15 +27,15 @@ public final class i {
     }
 
     public static i d(mj.a aVar) {
-        if (f17247d == null) {
-            f17247d = new i(aVar);
+        if (f17248d == null) {
+            f17248d = new i(aVar);
         }
-        return f17247d;
+        return f17248d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean g(String str) {
-        return f17246c.matcher(str).matches();
+        return f17247c.matcher(str).matches();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -44,7 +44,7 @@ public final class i {
     }
 
     public long a() {
-        return this.f17248a.a();
+        return this.f17249a.a();
     }
 
     public long b() {
@@ -56,7 +56,7 @@ public final class i {
     }
 
     public boolean f(kj.d dVar) {
-        if (TextUtils.isEmpty(dVar.b()) || dVar.h() + dVar.c() < b() + f17245b) {
+        if (TextUtils.isEmpty(dVar.b()) || dVar.h() + dVar.c() < b() + f17246b) {
             return true;
         }
         return false;

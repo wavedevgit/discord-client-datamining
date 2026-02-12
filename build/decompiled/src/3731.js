@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun33277: for (var _fun33277_ip = 0;;) switch (_fun33277_ip) {
+    _fun33299: for (var _fun33299_ip = 0;;) switch (_fun33299_ip) {
         case 0:
             var5 = global;
             var2 = exports;
@@ -17,8 +17,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = undefined;
             var1 = undefined;
             if (var6) {
-                _fun33277_ip = 57;
-                continue _fun33277
+                _fun33299_ip = 57;
+                continue _fun33299
             }
         case 51:
             var1 = var5.nativeFabricUIManager;
@@ -46,20 +46,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var11 = var12.assign;
             var10 = var6;
             if (var3) {
-                _fun33277_ip = 110;
-                continue _fun33277
+                _fun33299_ip = 106;
+                continue _fun33299
             }
-        case 108:
+        case 104:
             var10 = {};
-        case 110:
+        case 106:
             var9 = var7;
             if (var3) {
-                _fun33277_ip = 118;
-                continue _fun33277
+                _fun33299_ip = 114;
+                continue _fun33299
             }
-        case 116:
+        case 112:
             var9 = {};
-        case 118:
+        case 114:
             var16 = {
                 'opacity': true,
                 'transform': true,
@@ -88,19 +88,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5 = var4.Object;
             var4 = var5.assign;
             if (!var3) {
-                _fun33277_ip = 180;
-                continue _fun33277
+                _fun33299_ip = 176;
+                continue _fun33299
             }
-        case 178:
+        case 174:
             var7 = {};
-        case 180:
+        case 176:
             if (!var3) {
-                _fun33277_ip = 185;
-                continue _fun33277
+                _fun33299_ip = 181;
+                continue _fun33299
             }
-        case 183:
+        case 179:
             var6 = {};
-        case 185:
+        case 181:
             var3 = {
                 'borderBottomWidth': true,
                 'borderEndWidth': true,

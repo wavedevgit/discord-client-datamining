@@ -21,28 +21,28 @@ public final class JavaAnnotationMapper {
     public static final JavaAnnotationMapper INSTANCE = new JavaAnnotationMapper();
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Name f32782a;
+    private static final Name f32783a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Name f32783b;
+    private static final Name f32784b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Name f32784c;
+    private static final Name f32785c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Map f32785d;
+    private static final Map f32786d;
 
     static {
         Name identifier = Name.identifier("message");
         Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");
-        f32782a = identifier;
+        f32783a = identifier;
         Name identifier2 = Name.identifier("allowedTargets");
         Intrinsics.checkNotNullExpressionValue(identifier2, "identifier(...)");
-        f32783b = identifier2;
+        f32784b = identifier2;
         Name identifier3 = Name.identifier("value");
         Intrinsics.checkNotNullExpressionValue(identifier3, "identifier(...)");
-        f32784c = identifier3;
-        f32785d = o0.m(v.a(StandardNames.FqNames.target, JvmAnnotationNames.TARGET_ANNOTATION), v.a(StandardNames.FqNames.retention, JvmAnnotationNames.RETENTION_ANNOTATION), v.a(StandardNames.FqNames.mustBeDocumented, JvmAnnotationNames.DOCUMENTED_ANNOTATION));
+        f32785c = identifier3;
+        f32786d = o0.m(v.a(StandardNames.FqNames.target, JvmAnnotationNames.TARGET_ANNOTATION), v.a(StandardNames.FqNames.retention, JvmAnnotationNames.RETENTION_ANNOTATION), v.a(StandardNames.FqNames.mustBeDocumented, JvmAnnotationNames.DOCUMENTED_ANNOTATION));
     }
 
     private JavaAnnotationMapper() {
@@ -68,7 +68,7 @@ public final class JavaAnnotationMapper {
                 return new JavaDeprecatedAnnotationDescriptor(findAnnotation2, c10);
             }
         }
-        FqName fqName = (FqName) f32785d.get(kotlinName);
+        FqName fqName = (FqName) f32786d.get(kotlinName);
         if (fqName == null || (findAnnotation = annotationOwner.findAnnotation(fqName)) == null) {
             return null;
         }
@@ -77,17 +77,17 @@ public final class JavaAnnotationMapper {
 
     @NotNull
     public final Name getDEPRECATED_ANNOTATION_MESSAGE$descriptors_jvm() {
-        return f32782a;
+        return f32783a;
     }
 
     @NotNull
     public final Name getRETENTION_ANNOTATION_VALUE$descriptors_jvm() {
-        return f32784c;
+        return f32785c;
     }
 
     @NotNull
     public final Name getTARGET_ANNOTATION_ALLOWED_TARGETS$descriptors_jvm() {
-        return f32783b;
+        return f32784b;
     }
 
     public final AnnotationDescriptor mapOrResolveJavaAnnotation(@NotNull JavaAnnotation annotation, @NotNull LazyJavaResolverContext c10, boolean z10) {

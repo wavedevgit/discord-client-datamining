@@ -7,10 +7,10 @@ import ep.d2;
 public final class r implements q.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final d2 f20368a;
+    private final d2 f20369a;
 
     r(d2 d2Var) {
-        this.f20368a = d2Var;
+        this.f20369a = d2Var;
     }
 
     public static lr.h b(d2 d2Var) {
@@ -19,6 +19,6 @@ public final class r implements q.b {
 
     @Override // com.withpersona.sdk2.inquiry.internal.q.b
     public q a(String str, String str2, b2 b2Var, iq.g gVar) {
-        return this.f20368a.b(str, str2, b2Var, gVar);
+        return this.f20369a.b(str, str2, b2Var, gVar);
     }
 }

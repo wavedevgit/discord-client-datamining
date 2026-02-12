@@ -5,7 +5,7 @@ import bj.c;
 final class q8 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final q8 f47087a = new q8();
+    static final q8 f47088a = new q8();
 
     static {
         c.b a10 = bj.c.a("totalStrokeCount");

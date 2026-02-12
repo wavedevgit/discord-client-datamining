@@ -12,42 +12,42 @@ import java.util.concurrent.BlockingQueue;
 public class w implements n.b {
 
     /* renamed from: b  reason: collision with root package name */
-    private final q f8831b;
+    private final q f8832b;
 
     /* renamed from: d  reason: collision with root package name */
-    private final c f8833d;
+    private final c f8834d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final BlockingQueue f8834e;
+    private final BlockingQueue f8835e;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f8830a = new HashMap();
+    private final Map f8831a = new HashMap();
 
     /* renamed from: c  reason: collision with root package name */
-    private final o f8832c = null;
+    private final o f8833c = null;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public w(c cVar, BlockingQueue blockingQueue, q qVar) {
-        this.f8831b = qVar;
-        this.f8833d = cVar;
-        this.f8834e = blockingQueue;
+        this.f8832b = qVar;
+        this.f8834d = cVar;
+        this.f8835e = blockingQueue;
     }
 
     @Override // com.android.volley.n.b
     public void a(n nVar, p pVar) {
         List<n> list;
-        b.a aVar = pVar.f8816b;
+        b.a aVar = pVar.f8817b;
         if (aVar != null && !aVar.a()) {
             String cacheKey = nVar.getCacheKey();
             synchronized (this) {
-                list = (List) this.f8830a.remove(cacheKey);
+                list = (List) this.f8831a.remove(cacheKey);
             }
             if (list != null) {
-                if (v.f8822b) {
+                if (v.f8823b) {
                     v.e("Releasing %d waiting requests for cacheKey=%s.", Integer.valueOf(list.size()), cacheKey);
                 }
                 for (n nVar2 : list) {
-                    this.f8831b.a(nVar2, pVar);
+                    this.f8832b.a(nVar2, pVar);
                 }
                 return;
             }
@@ -61,24 +61,24 @@ public class w implements n.b {
         BlockingQueue blockingQueue;
         try {
             String cacheKey = nVar.getCacheKey();
-            List list = (List) this.f8830a.remove(cacheKey);
+            List list = (List) this.f8831a.remove(cacheKey);
             if (list != null && !list.isEmpty()) {
-                if (v.f8822b) {
+                if (v.f8823b) {
                     v.e("%d waiting requests for cacheKey=%s; resend to network", Integer.valueOf(list.size()), cacheKey);
                 }
                 n nVar2 = (n) list.remove(0);
-                this.f8830a.put(cacheKey, list);
+                this.f8831a.put(cacheKey, list);
                 nVar2.setNetworkRequestCompleteListener(this);
-                o oVar = this.f8832c;
+                o oVar = this.f8833c;
                 if (oVar != null) {
                     oVar.g(nVar2);
-                } else if (this.f8833d != null && (blockingQueue = this.f8834e) != null) {
+                } else if (this.f8834d != null && (blockingQueue = this.f8835e) != null) {
                     try {
                         blockingQueue.put(nVar2);
                     } catch (InterruptedException e10) {
                         v.c("Couldn't add request to queue. %s", e10.toString());
                         Thread.currentThread().interrupt();
-                        this.f8833d.d();
+                        this.f8834d.d();
                     }
                 }
             }
@@ -91,22 +91,22 @@ public class w implements n.b {
     public synchronized boolean c(n nVar) {
         try {
             String cacheKey = nVar.getCacheKey();
-            if (this.f8830a.containsKey(cacheKey)) {
-                List list = (List) this.f8830a.get(cacheKey);
+            if (this.f8831a.containsKey(cacheKey)) {
+                List list = (List) this.f8831a.get(cacheKey);
                 if (list == null) {
                     list = new ArrayList();
                 }
                 nVar.addMarker("waiting-for-response");
                 list.add(nVar);
-                this.f8830a.put(cacheKey, list);
-                if (v.f8822b) {
+                this.f8831a.put(cacheKey, list);
+                if (v.f8823b) {
                     v.b("Request for cacheKey=%s is in flight, putting on hold.", cacheKey);
                 }
                 return true;
             }
-            this.f8830a.put(cacheKey, null);
+            this.f8831a.put(cacheKey, null);
             nVar.setNetworkRequestCompleteListener(this);
-            if (v.f8822b) {
+            if (v.f8823b) {
                 v.b("new request, sending to network %s", cacheKey);
             }
             return false;

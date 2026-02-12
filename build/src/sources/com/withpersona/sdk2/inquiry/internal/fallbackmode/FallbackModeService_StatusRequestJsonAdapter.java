@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class FallbackModeService_StatusRequestJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19842a;
+    private final m.b f19843a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19843b;
+    private final com.squareup.moshi.h f19844b;
 
     public FallbackModeService_StatusRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("inquiry-template-id");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19842a = a10;
+        this.f19843a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "inquiryTemplateId");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19843b = f10;
+        this.f19844b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -35,10 +35,10 @@ public final class FallbackModeService_StatusRequestJsonAdapter extends com.squa
         reader.u();
         String str = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19842a);
+            int J = reader.J(this.f19843a);
             if (J != -1) {
                 if (J == 0) {
-                    str = (String) this.f19843b.fromJson(reader);
+                    str = (String) this.f19844b.fromJson(reader);
                 }
             } else {
                 reader.z0();
@@ -56,7 +56,7 @@ public final class FallbackModeService_StatusRequestJsonAdapter extends com.squa
         if (statusRequest != null) {
             writer.i();
             writer.J("inquiry-template-id");
-            this.f19843b.toJson(writer, statusRequest.a());
+            this.f19844b.toJson(writer, statusRequest.a());
             writer.s();
             return;
         }

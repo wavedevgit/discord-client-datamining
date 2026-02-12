@@ -12,33 +12,33 @@ import x.j;
 public final class g {
 
     /* renamed from: c  reason: collision with root package name */
-    private final u f52043c;
+    private final u f52044c;
 
     /* renamed from: d  reason: collision with root package name */
-    final Executor f52044d;
+    final Executor f52045d;
 
     /* renamed from: g  reason: collision with root package name */
-    c.a f52047g;
+    c.a f52048g;
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f52041a = false;
+    private boolean f52042a = false;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f52042b = false;
+    private boolean f52043b = false;
 
     /* renamed from: e  reason: collision with root package name */
-    final Object f52045e = new Object();
+    final Object f52046e = new Object();
 
     /* renamed from: f  reason: collision with root package name */
-    private a.C0582a f52046f = new a.C0582a();
+    private a.C0582a f52047f = new a.C0582a();
 
     public g(u uVar, Executor executor) {
-        this.f52043c = uVar;
-        this.f52044d = executor;
+        this.f52044c = uVar;
+        this.f52045d = executor;
     }
 
     public static /* synthetic */ Object a(final g gVar, final c.a aVar) {
-        gVar.f52044d.execute(new Runnable() { // from class: w.f
+        gVar.f52045d.execute(new Runnable() { // from class: w.f
             @Override // java.lang.Runnable
             public final void run() {
                 g.this.q(aVar);
@@ -48,7 +48,7 @@ public final class g {
     }
 
     public static /* synthetic */ Object b(final g gVar, final c.a aVar) {
-        gVar.f52044d.execute(new Runnable() { // from class: w.d
+        gVar.f52045d.execute(new Runnable() { // from class: w.d
             @Override // java.lang.Runnable
             public final void run() {
                 g.this.q(aVar);
@@ -58,43 +58,43 @@ public final class g {
     }
 
     private void h(j jVar) {
-        synchronized (this.f52045e) {
-            this.f52046f.d(jVar);
+        synchronized (this.f52046e) {
+            this.f52047f.d(jVar);
         }
     }
 
     private void k() {
-        synchronized (this.f52045e) {
-            this.f52046f = new a.C0582a();
+        synchronized (this.f52046e) {
+            this.f52047f = new a.C0582a();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void l() {
-        c.a aVar = this.f52047g;
+        c.a aVar = this.f52048g;
         if (aVar != null) {
             aVar.c(null);
-            this.f52047g = null;
+            this.f52048g = null;
         }
     }
 
     private void m(Exception exc) {
-        c.a aVar = this.f52047g;
+        c.a aVar = this.f52048g;
         if (aVar != null) {
             if (exc == null) {
                 exc = new Exception("Camera2CameraControl failed with unknown error.");
             }
             aVar.f(exc);
-            this.f52047g = null;
+            this.f52048g = null;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void p(boolean z10) {
-        if (this.f52041a != z10) {
-            this.f52041a = z10;
+        if (this.f52042a != z10) {
+            this.f52042a = z10;
             if (z10) {
-                if (this.f52042b) {
+                if (this.f52043b) {
                     r();
                     return;
                 }
@@ -106,22 +106,22 @@ public final class g {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void q(c.a aVar) {
-        this.f52042b = true;
+        this.f52043b = true;
         m(new j.a("Camera2CameraControl was updated with new options."));
-        this.f52047g = aVar;
-        if (this.f52041a) {
+        this.f52048g = aVar;
+        if (this.f52042a) {
             r();
         }
     }
 
     private void r() {
-        this.f52043c.e0().a(new Runnable() { // from class: w.e
+        this.f52044c.e0().a(new Runnable() { // from class: w.e
             @Override // java.lang.Runnable
             public final void run() {
                 g.this.l();
             }
-        }, this.f52044d);
-        this.f52042b = false;
+        }, this.f52045d);
+        this.f52043b = false;
     }
 
     public ListenableFuture g(j jVar) {
@@ -135,8 +135,8 @@ public final class g {
     }
 
     public void i(a.C0582a c0582a) {
-        synchronized (this.f52045e) {
-            c0582a.e(this.f52046f.a(), r0.c.ALWAYS_OVERRIDE);
+        synchronized (this.f52046e) {
+            c0582a.e(this.f52047f.a(), r0.c.ALWAYS_OVERRIDE);
         }
     }
 
@@ -152,14 +152,14 @@ public final class g {
 
     public p.a n() {
         p.a c10;
-        synchronized (this.f52045e) {
-            c10 = this.f52046f.c();
+        synchronized (this.f52046e) {
+            c10 = this.f52047f.c();
         }
         return c10;
     }
 
     public void o(final boolean z10) {
-        this.f52044d.execute(new Runnable() { // from class: w.b
+        this.f52045d.execute(new Runnable() { // from class: w.b
             @Override // java.lang.Runnable
             public final void run() {
                 g.this.p(z10);

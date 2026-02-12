@@ -17,10 +17,10 @@ import ta.k;
 public abstract class DalvikPurgeableDecoder implements xa.d {
 
     /* renamed from: b  reason: collision with root package name */
-    protected static final byte[] f11256b;
+    protected static final byte[] f11257b;
 
     /* renamed from: a  reason: collision with root package name */
-    private final wa.b f11257a = wa.c.a();
+    private final wa.b f11258a = wa.c.a();
 
     @g
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -40,7 +40,7 @@ public abstract class DalvikPurgeableDecoder implements xa.d {
 
     static {
         b.a();
-        f11256b = new byte[]{-1, -39};
+        f11257b = new byte[]{-1, -39};
     }
 
     public static boolean e(CloseableReference closeableReference, int i10) {
@@ -103,12 +103,12 @@ public abstract class DalvikPurgeableDecoder implements xa.d {
         j.g(bitmap);
         try {
             nativePinBitmap(bitmap);
-            if (this.f11257a.g(bitmap)) {
-                return CloseableReference.G0(bitmap, this.f11257a.e());
+            if (this.f11258a.g(bitmap)) {
+                return CloseableReference.G0(bitmap, this.f11258a.e());
             }
             int j10 = db.d.j(bitmap);
             bitmap.recycle();
-            throw new na.c(String.format(Locale.US, "Attempted to pin a bitmap of size %d bytes. The current pool count is %d, the current pool size is %d bytes. The current pool max count is %d, the current pool max size is %d bytes.", Integer.valueOf(j10), Integer.valueOf(this.f11257a.b()), Long.valueOf(this.f11257a.f()), Integer.valueOf(this.f11257a.c()), Integer.valueOf(this.f11257a.d())));
+            throw new na.c(String.format(Locale.US, "Attempted to pin a bitmap of size %d bytes. The current pool count is %d, the current pool size is %d bytes. The current pool max count is %d, the current pool max size is %d bytes.", Integer.valueOf(j10), Integer.valueOf(this.f11258a.b()), Long.valueOf(this.f11258a.f()), Integer.valueOf(this.f11258a.c()), Integer.valueOf(this.f11258a.d())));
         } catch (Exception e10) {
             bitmap.recycle();
             throw n.a(e10);

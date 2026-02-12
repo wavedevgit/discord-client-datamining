@@ -16,22 +16,22 @@ import com.facebook.react.bridge.ReadableMapKeySetIterator;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private AlertDialog f17452a;
+    private AlertDialog f17453a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public class a implements Callback {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ i f17453d;
+        final /* synthetic */ i f17454d;
 
         a(i iVar) {
-            this.f17453d = iVar;
+            this.f17454d = iVar;
         }
 
         @Override // com.facebook.react.bridge.Callback
         public void invoke(Object... objArr) {
-            com.henninghall.date_picker.e.c(this.f17453d.getDate(), this.f17453d.getPickerId());
+            com.henninghall.date_picker.e.c(this.f17454d.getDate(), this.f17454d.getPickerId());
         }
     }
 
@@ -41,15 +41,15 @@ public class b {
     public class C0198b implements Callback {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ i f17455d;
+        final /* synthetic */ i f17456d;
 
         C0198b(i iVar) {
-            this.f17455d = iVar;
+            this.f17456d = iVar;
         }
 
         @Override // com.facebook.react.bridge.Callback
         public void invoke(Object... objArr) {
-            com.henninghall.date_picker.e.b(this.f17455d.getPickerId());
+            com.henninghall.date_picker.e.b(this.f17456d.getPickerId());
         }
     }
 
@@ -58,15 +58,15 @@ public class b {
     public class c implements DialogInterface.OnCancelListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Callback f17457d;
+        final /* synthetic */ Callback f17458d;
 
         c(Callback callback) {
-            this.f17457d = callback;
+            this.f17458d = callback;
         }
 
         @Override // android.content.DialogInterface.OnCancelListener
         public void onCancel(DialogInterface dialogInterface) {
-            this.f17457d.invoke(new Object[0]);
+            this.f17458d.invoke(new Object[0]);
         }
     }
 
@@ -75,15 +75,15 @@ public class b {
     public class d implements DialogInterface.OnClickListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Callback f17459d;
+        final /* synthetic */ Callback f17460d;
 
         d(Callback callback) {
-            this.f17459d = callback;
+            this.f17460d = callback;
         }
 
         @Override // android.content.DialogInterface.OnClickListener
         public void onClick(DialogInterface dialogInterface, int i10) {
-            this.f17459d.invoke(new Object[0]);
+            this.f17460d.invoke(new Object[0]);
             dialogInterface.dismiss();
         }
     }
@@ -93,19 +93,19 @@ public class b {
     public class e implements DialogInterface.OnClickListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Callback f17461d;
+        final /* synthetic */ Callback f17462d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ i f17462e;
+        final /* synthetic */ i f17463e;
 
         e(Callback callback, i iVar) {
-            this.f17461d = callback;
-            this.f17462e = iVar;
+            this.f17462d = callback;
+            this.f17463e = iVar;
         }
 
         @Override // android.content.DialogInterface.OnClickListener
         public void onClick(DialogInterface dialogInterface, int i10) {
-            this.f17461d.invoke(this.f17462e.getDate());
+            this.f17462d.invoke(this.f17463e.getDate());
             dialogInterface.dismiss();
         }
     }
@@ -115,23 +115,23 @@ public class b {
     public class f implements DialogInterface.OnShowListener {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ String f17464a;
+        final /* synthetic */ String f17465a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ AlertDialog f17465b;
+        final /* synthetic */ AlertDialog f17466b;
 
         f(String str, AlertDialog alertDialog) {
-            this.f17464a = str;
-            this.f17465b = alertDialog;
+            this.f17465a = str;
+            this.f17466b = alertDialog;
         }
 
         @Override // android.content.DialogInterface.OnShowListener
         public void onShow(DialogInterface dialogInterface) {
-            String str = this.f17464a;
+            String str = this.f17465a;
             if (str != null) {
                 int parseColor = Color.parseColor(str);
-                this.f17465b.getButton(-1).setTextColor(parseColor);
-                this.f17465b.getButton(-2).setTextColor(parseColor);
+                this.f17466b.getButton(-1).setTextColor(parseColor);
+                this.f17466b.getButton(-2).setTextColor(parseColor);
             }
         }
     }
@@ -169,11 +169,11 @@ public class b {
                 setTitle(string2);
                 return this;
             }
-            TextView textView = new TextView(com.henninghall.date_picker.c.f17468a.getCurrentActivity());
+            TextView textView = new TextView(com.henninghall.date_picker.c.f17469a.getCurrentActivity());
             textView.setText(string2);
             TypedValue typedValue = new TypedValue();
-            com.henninghall.date_picker.c.f17468a.getCurrentActivity().getTheme().resolveAttribute(16843987, typedValue, true);
-            int complexToDimensionPixelSize = TypedValue.complexToDimensionPixelSize(typedValue.data, com.henninghall.date_picker.c.f17468a.getResources().getDisplayMetrics());
+            com.henninghall.date_picker.c.f17469a.getCurrentActivity().getTheme().resolveAttribute(16843987, typedValue, true);
+            int complexToDimensionPixelSize = TypedValue.complexToDimensionPixelSize(typedValue.data, com.henninghall.date_picker.c.f17469a.getResources().getDisplayMetrics());
             textView.setPadding(complexToDimensionPixelSize, complexToDimensionPixelSize, complexToDimensionPixelSize, 0);
             textView.setTextSize(20.0f);
             textView.setTextColor(Color.parseColor(string));
@@ -191,7 +191,7 @@ public class b {
         String string = readableMap.getString("confirmText");
         String string2 = readableMap.getString("cancelText");
         String string3 = readableMap.getString("buttonColor");
-        AlertDialog create = new h(com.henninghall.date_picker.c.f17468a.getCurrentActivity(), e(readableMap)).a(readableMap).setCancelable(true).setView(h(iVar)).setPositiveButton(string, new e(callback, iVar)).setNegativeButton(string2, new d(callback2)).setOnCancelListener(new c(callback2)).create();
+        AlertDialog create = new h(com.henninghall.date_picker.c.f17469a.getCurrentActivity(), e(readableMap)).a(readableMap).setCancelable(true).setView(h(iVar)).setPositiveButton(string, new e(callback, iVar)).setNegativeButton(string2, new d(callback2)).setOnCancelListener(new c(callback2)).create();
         create.setOnShowListener(new f(string3, create));
         return create;
     }
@@ -230,11 +230,11 @@ public class b {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void g(boolean z10) {
-        this.f17452a.getButton(-1).setEnabled(z10);
+        this.f17453a.getButton(-1).setEnabled(z10);
     }
 
     private View h(i iVar) {
-        LinearLayout linearLayout = new LinearLayout(com.henninghall.date_picker.c.f17468a);
+        LinearLayout linearLayout = new LinearLayout(com.henninghall.date_picker.c.f17469a);
         linearLayout.setLayoutParams(new LinearLayout.LayoutParams(-1, -2));
         linearLayout.addView(iVar);
         linearLayout.setPadding(0, o.j(20), 0, 0);
@@ -242,13 +242,13 @@ public class b {
     }
 
     public void b() {
-        this.f17452a.dismiss();
+        this.f17453a.dismiss();
     }
 
     public void f(ReadableMap readableMap) {
         i d10 = d(readableMap);
         AlertDialog c10 = c(readableMap, d10, new a(d10), new C0198b(d10));
-        this.f17452a = c10;
+        this.f17453a = c10;
         c10.show();
     }
 }

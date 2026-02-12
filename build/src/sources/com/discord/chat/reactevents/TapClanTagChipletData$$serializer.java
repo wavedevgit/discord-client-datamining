@@ -35,7 +35,7 @@ public /* synthetic */ class TapClanTagChipletData$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{n2.f50032a};
+        return new KSerializer[]{n2.f50033a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

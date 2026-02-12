@@ -60,7 +60,7 @@ public final class RNGestureHandlerModule extends NativeRNGestureHandlerModuleSp
 
     private final <T extends nn.d> void createGestureHandlerHelper(String str, int i10, ReadableMap readableMap) {
         if (this.registry.h(i10) == null) {
-            d.c b10 = e.f18975a.b(str);
+            d.c b10 = e.f18976a.b(str);
             if (b10 != null) {
                 nn.d b11 = b10.b(getReactApplicationContext(), i10);
                 b11.E0(this.eventDispatcher);
@@ -122,7 +122,7 @@ public final class RNGestureHandlerModule extends NativeRNGestureHandlerModuleSp
     private final <T extends nn.d> void updateGestureHandlerHelper(int i10, ReadableMap readableMap) {
         d.c a10;
         nn.d h10 = this.registry.h(i10);
-        if (h10 == null || (a10 = e.f18975a.a(h10)) == null) {
+        if (h10 == null || (a10 = e.f18976a.a(h10)) == null) {
             return;
         }
         this.interactionManager.g(i10);
@@ -213,7 +213,7 @@ public final class RNGestureHandlerModule extends NativeRNGestureHandlerModuleSp
                     throw th2;
                 }
             }
-            Unit unit = Unit.f31987a;
+            Unit unit = Unit.f31988a;
         }
         super.invalidate();
     }

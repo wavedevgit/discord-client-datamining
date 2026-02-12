@@ -3,22 +3,22 @@ package fl;
 final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ok.b f23799a;
+    private final ok.b f23800a;
 
     /* renamed from: b  reason: collision with root package name */
-    private j f23800b;
+    private j f23801b;
 
     /* renamed from: c  reason: collision with root package name */
-    private g f23801c;
+    private g f23802c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f23802d;
+    private boolean f23803d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(ok.b bVar) {
         int h10 = bVar.h();
         if (h10 >= 21 && (h10 & 3) == 1) {
-            this.f23799a = bVar;
+            this.f23800a = bVar;
             return;
         }
         throw kk.g.a();
@@ -26,10 +26,10 @@ final class a {
 
     private int a(int i10, int i11, int i12) {
         boolean e10;
-        if (this.f23802d) {
-            e10 = this.f23799a.e(i11, i10);
+        if (this.f23803d) {
+            e10 = this.f23800a.e(i11, i10);
         } else {
-            e10 = this.f23799a.e(i10, i11);
+            e10 = this.f23800a.e(i10, i11);
         }
         if (e10) {
             return (i12 << 1) | 1;
@@ -40,12 +40,12 @@ final class a {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void b() {
         int i10 = 0;
-        while (i10 < this.f23799a.l()) {
+        while (i10 < this.f23800a.l()) {
             int i11 = i10 + 1;
-            for (int i12 = i11; i12 < this.f23799a.h(); i12++) {
-                if (this.f23799a.e(i10, i12) != this.f23799a.e(i12, i10)) {
-                    this.f23799a.d(i12, i10);
-                    this.f23799a.d(i10, i12);
+            for (int i12 = i11; i12 < this.f23800a.h(); i12++) {
+                if (this.f23800a.e(i10, i12) != this.f23800a.e(i12, i10)) {
+                    this.f23800a.d(i12, i10);
+                    this.f23800a.d(i10, i12);
                 }
             }
             i10 = i11;
@@ -58,8 +58,8 @@ final class a {
         g d10 = d();
         j e10 = e();
         c cVar = c.values()[d10.c()];
-        int h10 = this.f23799a.h();
-        cVar.d(this.f23799a, h10);
+        int h10 = this.f23800a.h();
+        cVar.d(this.f23800a, h10);
         ok.b a10 = e10.a();
         byte[] bArr = new byte[e10.h()];
         int i11 = h10 - 1;
@@ -83,7 +83,7 @@ final class a {
                     if (!a10.e(i18, i10)) {
                         i14++;
                         i15 <<= 1;
-                        if (this.f23799a.e(i18, i10)) {
+                        if (this.f23800a.e(i18, i10)) {
                             i15 |= 1;
                         }
                         if (i14 == 8) {
@@ -106,7 +106,7 @@ final class a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g d() {
-        g gVar = this.f23801c;
+        g gVar = this.f23802c;
         if (gVar != null) {
             return gVar;
         }
@@ -119,7 +119,7 @@ final class a {
         for (int i13 = 5; i13 >= 0; i13--) {
             a10 = a(8, i13, a10);
         }
-        int h10 = this.f23799a.h();
+        int h10 = this.f23800a.h();
         int i14 = h10 - 7;
         for (int i15 = h10 - 1; i15 >= i14; i15--) {
             i10 = a(8, i15, i10);
@@ -128,7 +128,7 @@ final class a {
             i10 = a(i16, 8, i10);
         }
         g a11 = g.a(a10, i10);
-        this.f23801c = a11;
+        this.f23802c = a11;
         if (a11 != null) {
             return a11;
         }
@@ -137,11 +137,11 @@ final class a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j e() {
-        j jVar = this.f23800b;
+        j jVar = this.f23801b;
         if (jVar != null) {
             return jVar;
         }
-        int h10 = this.f23799a.h();
+        int h10 = this.f23800a.h();
         int i10 = (h10 - 17) / 4;
         if (i10 <= 6) {
             return j.i(i10);
@@ -156,7 +156,7 @@ final class a {
         }
         j c10 = j.c(i13);
         if (c10 != null && c10.e() == h10) {
-            this.f23800b = c10;
+            this.f23801b = c10;
             return c10;
         }
         for (int i16 = 5; i16 >= 0; i16--) {
@@ -166,7 +166,7 @@ final class a {
         }
         j c11 = j.c(i12);
         if (c11 != null && c11.e() == h10) {
-            this.f23800b = c11;
+            this.f23801b = c11;
             return c11;
         }
         throw kk.g.a();
@@ -174,16 +174,16 @@ final class a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f() {
-        if (this.f23801c == null) {
+        if (this.f23802c == null) {
             return;
         }
-        c.values()[this.f23801c.c()].d(this.f23799a, this.f23799a.h());
+        c.values()[this.f23802c.c()].d(this.f23800a, this.f23800a.h());
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void g(boolean z10) {
-        this.f23800b = null;
-        this.f23801c = null;
-        this.f23802d = z10;
+        this.f23801b = null;
+        this.f23802c = null;
+        this.f23803d = z10;
     }
 }

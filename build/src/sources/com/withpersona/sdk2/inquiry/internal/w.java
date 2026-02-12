@@ -16,7 +16,7 @@ public abstract class w implements Parcelable {
         public static final Parcelable.Creator<b> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final x.c f20389d;
+        private final x.c f20390d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -38,11 +38,11 @@ public abstract class w implements Parcelable {
         public b(x.c transitionData) {
             super(null);
             Intrinsics.checkNotNullParameter(transitionData, "transitionData");
-            this.f20389d = transitionData;
+            this.f20390d = transitionData;
         }
 
         public final x.c a() {
-            return this.f20389d;
+            return this.f20390d;
         }
 
         @Override // android.os.Parcelable
@@ -54,22 +54,22 @@ public abstract class w implements Parcelable {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof b) && Intrinsics.areEqual(this.f20389d, ((b) obj).f20389d);
+            return (obj instanceof b) && Intrinsics.areEqual(this.f20390d, ((b) obj).f20390d);
         }
 
         public int hashCode() {
-            return this.f20389d.hashCode();
+            return this.f20390d.hashCode();
         }
 
         public String toString() {
-            x.c cVar = this.f20389d;
+            x.c cVar = this.f20390d;
             return "Transitioning(transitionData=" + cVar + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            this.f20389d.writeToParcel(dest, i10);
+            this.f20390d.writeToParcel(dest, i10);
         }
     }
 
@@ -77,7 +77,7 @@ public abstract class w implements Parcelable {
     public static final class c extends w {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final c f20390d = new c();
+        public static final c f20391d = new c();
         @NotNull
         public static final Parcelable.Creator<c> CREATOR = new a();
 
@@ -88,7 +88,7 @@ public abstract class w implements Parcelable {
             public final c createFromParcel(Parcel parcel) {
                 Intrinsics.checkNotNullParameter(parcel, "parcel");
                 parcel.readInt();
-                return c.f20390d;
+                return c.f20391d;
             }
 
             @Override // android.os.Parcelable.Creator
@@ -132,7 +132,7 @@ public abstract class w implements Parcelable {
         public static final Parcelable.Creator<d> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final l f20391d;
+        private final l f20392d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -152,11 +152,11 @@ public abstract class w implements Parcelable {
 
         public d(l lVar) {
             super(null);
-            this.f20391d = lVar;
+            this.f20392d = lVar;
         }
 
         public final l a() {
-            return this.f20391d;
+            return this.f20392d;
         }
 
         @Override // android.os.Parcelable
@@ -168,11 +168,11 @@ public abstract class w implements Parcelable {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof d) && Intrinsics.areEqual(this.f20391d, ((d) obj).f20391d);
+            return (obj instanceof d) && Intrinsics.areEqual(this.f20392d, ((d) obj).f20392d);
         }
 
         public int hashCode() {
-            l lVar = this.f20391d;
+            l lVar = this.f20392d;
             if (lVar == null) {
                 return 0;
             }
@@ -180,14 +180,14 @@ public abstract class w implements Parcelable {
         }
 
         public String toString() {
-            l lVar = this.f20391d;
+            l lVar = this.f20392d;
             return "UpdateInquirySession(nextStep=" + lVar + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeParcelable(this.f20391d, i10);
+            dest.writeParcelable(this.f20392d, i10);
         }
     }
 
@@ -201,7 +201,7 @@ public abstract class w implements Parcelable {
         public static final Parcelable.Creator<a> CREATOR = new C0262a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final b2 f20388d;
+        private final b2 f20389d;
 
         /* renamed from: com.withpersona.sdk2.inquiry.internal.w$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -221,11 +221,11 @@ public abstract class w implements Parcelable {
         }
 
         public /* synthetic */ a(b2 b2Var, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-            this((i10 & 1) != 0 ? b2.f23062e : b2Var);
+            this((i10 & 1) != 0 ? b2.f23063e : b2Var);
         }
 
         public final b2 a() {
-            return this.f20388d;
+            return this.f20389d;
         }
 
         @Override // android.os.Parcelable
@@ -237,29 +237,29 @@ public abstract class w implements Parcelable {
             if (this == obj) {
                 return true;
             }
-            return (obj instanceof a) && this.f20388d == ((a) obj).f20388d;
+            return (obj instanceof a) && this.f20389d == ((a) obj).f20389d;
         }
 
         public int hashCode() {
-            return this.f20388d.hashCode();
+            return this.f20389d.hashCode();
         }
 
         public String toString() {
-            b2 b2Var = this.f20388d;
+            b2 b2Var = this.f20389d;
             return "CheckingForNextState(pollingMode=" + b2Var + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f20388d.name());
+            dest.writeString(this.f20389d.name());
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public a(b2 pollingMode) {
             super(null);
             Intrinsics.checkNotNullParameter(pollingMode, "pollingMode");
-            this.f20388d = pollingMode;
+            this.f20389d = pollingMode;
         }
     }
 

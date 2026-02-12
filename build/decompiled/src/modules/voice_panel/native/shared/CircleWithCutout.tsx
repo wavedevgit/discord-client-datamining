@@ -214,4 +214,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.getBadgeTop;
     var2.getBadgeTop = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 7963, 5522, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 7945, 5520, 2]);

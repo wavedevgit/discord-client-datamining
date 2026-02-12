@@ -27,7 +27,7 @@ public final class MediaPlayerPlaybackSource {
     private final String channelId;
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f10183id;
+    private final String f10184id;
     private final String messageId;
 
     @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u000e\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007J\n\u0010\b\u001a\u00020\t*\u00020\u0007J\f\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00050\u000b¨\u0006\f"}, d2 = {"Lcom/discord/media_player/reactevents/MediaPlayerPlaybackSource$Companion;", "", "<init>", "()V", "fromMediaSource", "Lcom/discord/media_player/reactevents/MediaPlayerPlaybackSource;", "mediaSource", "Lcom/discord/media_player/MediaSource;", "createId", "", "serializer", "Lkotlinx/serialization/KSerializer;", "media_player_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
@@ -80,7 +80,7 @@ public final class MediaPlayerPlaybackSource {
     /* renamed from: copy-ElQ7df0$default  reason: not valid java name */
     public static /* synthetic */ MediaPlayerPlaybackSource m951copyElQ7df0$default(MediaPlayerPlaybackSource mediaPlayerPlaybackSource, String str, String str2, String str3, String str4, Integer num, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = mediaPlayerPlaybackSource.f10183id;
+            str = mediaPlayerPlaybackSource.f10184id;
         }
         if ((i10 & 2) != 0) {
             str2 = mediaPlayerPlaybackSource.assetUrl;
@@ -101,8 +101,8 @@ public final class MediaPlayerPlaybackSource {
 
     public static final /* synthetic */ void write$Self$media_player_release(MediaPlayerPlaybackSource mediaPlayerPlaybackSource, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         MessageId messageId;
-        n2 n2Var = n2.f50032a;
-        compositeEncoder.o(serialDescriptor, 0, n2Var, mediaPlayerPlaybackSource.f10183id);
+        n2 n2Var = n2.f50033a;
+        compositeEncoder.o(serialDescriptor, 0, n2Var, mediaPlayerPlaybackSource.f10184id);
         compositeEncoder.o(serialDescriptor, 1, n2Var, mediaPlayerPlaybackSource.assetUrl);
         compositeEncoder.o(serialDescriptor, 2, n2Var, mediaPlayerPlaybackSource.channelId);
         MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
@@ -113,11 +113,11 @@ public final class MediaPlayerPlaybackSource {
             messageId = null;
         }
         compositeEncoder.o(serialDescriptor, 3, messageId$$serializer, messageId);
-        compositeEncoder.o(serialDescriptor, 4, p0.f50048a, mediaPlayerPlaybackSource.attachmentIndex);
+        compositeEncoder.o(serialDescriptor, 4, p0.f50049a, mediaPlayerPlaybackSource.attachmentIndex);
     }
 
     public final String component1() {
-        return this.f10183id;
+        return this.f10184id;
     }
 
     public final String component2() {
@@ -150,7 +150,7 @@ public final class MediaPlayerPlaybackSource {
         }
         if (obj instanceof MediaPlayerPlaybackSource) {
             MediaPlayerPlaybackSource mediaPlayerPlaybackSource = (MediaPlayerPlaybackSource) obj;
-            if (Intrinsics.areEqual(this.f10183id, mediaPlayerPlaybackSource.f10183id) && Intrinsics.areEqual(this.assetUrl, mediaPlayerPlaybackSource.assetUrl) && Intrinsics.areEqual(this.channelId, mediaPlayerPlaybackSource.channelId)) {
+            if (Intrinsics.areEqual(this.f10184id, mediaPlayerPlaybackSource.f10184id) && Intrinsics.areEqual(this.assetUrl, mediaPlayerPlaybackSource.assetUrl) && Intrinsics.areEqual(this.channelId, mediaPlayerPlaybackSource.channelId)) {
                 String str = this.messageId;
                 String str2 = mediaPlayerPlaybackSource.messageId;
                 if (str == null) {
@@ -184,7 +184,7 @@ public final class MediaPlayerPlaybackSource {
     }
 
     public final String getId() {
-        return this.f10183id;
+        return this.f10184id;
     }
 
     /* renamed from: getMessageId-N_6c4I0  reason: not valid java name */
@@ -193,7 +193,7 @@ public final class MediaPlayerPlaybackSource {
     }
 
     public int hashCode() {
-        String str = this.f10183id;
+        String str = this.f10184id;
         int hashCode = (str == null ? 0 : str.hashCode()) * 31;
         String str2 = this.assetUrl;
         int hashCode2 = (hashCode + (str2 == null ? 0 : str2.hashCode())) * 31;
@@ -207,7 +207,7 @@ public final class MediaPlayerPlaybackSource {
 
     @NotNull
     public String toString() {
-        String str = this.f10183id;
+        String str = this.f10184id;
         String str2 = this.assetUrl;
         String str3 = this.channelId;
         String str4 = this.messageId;
@@ -224,7 +224,7 @@ public final class MediaPlayerPlaybackSource {
         if (31 != (i10 & 31)) {
             v1.b(i10, 31, MediaPlayerPlaybackSource$$serializer.INSTANCE.getDescriptor());
         }
-        this.f10183id = str;
+        this.f10184id = str;
         this.assetUrl = str2;
         this.channelId = str3;
         this.messageId = str4;
@@ -232,7 +232,7 @@ public final class MediaPlayerPlaybackSource {
     }
 
     private MediaPlayerPlaybackSource(String str, String str2, String str3, String str4, Integer num) {
-        this.f10183id = str;
+        this.f10184id = str;
         this.assetUrl = str2;
         this.channelId = str3;
         this.messageId = str4;

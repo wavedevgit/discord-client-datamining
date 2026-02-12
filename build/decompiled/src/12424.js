@@ -1,46 +1,35 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0, arg1, arg2) { // Environment: var0
-        _fun94936: for (var _fun94936_ip = 0;;) switch (_fun94936_ip) {
+    var1 = function(arg0) { // Environment: var0
+        _fun94993: for (var _fun94993_ip = 0;;) switch (_fun94993_ip) {
             case 0:
-                var0 = arg2;
-                var2 = this;
+                var2 = arg0;
+                var0 = 'shift';
+                var0 = var0 === var2;
                 if (var0) {
-                    _fun94936_ip = 40;
-                    continue _fun94936
+                    _fun94993_ip = 22;
+                    continue _fun94993
                 }
-            case 9:
-                var1 = var2.getReverseMap;
-                var2 = var1.bind(var2)();
-                var1 = arg0;
-                var2 = var2[var1];
-                var1 = 'keypress';
-                if (!var2) {
-                    _fun94936_ip = 37;
-                    continue _fun94936
+            case 14:
+                var1 = 'ctrl';
+                var0 = var1 === var2;
+            case 22:
+                if (var0) {
+                    _fun94993_ip = 33;
+                    continue _fun94993
                 }
+            case 25:
+                var1 = 'alt';
+                var0 = var1 === var2;
             case 33:
-                var1 = 'keydown';
-            case 37:
-                var0 = var1;
-            case 40:
-                var1 = 'keypress';
-                var1 = var1 === var0;
-                if (!var1) {
-                    _fun94936_ip = 59;
-                    continue _fun94936
+                if (var0) {
+                    _fun94993_ip = 44;
+                    continue _fun94993
                 }
-            case 51:
-                var2 = arg1;
-                var1 = var2.length;
-            case 59:
-                if (!var1) {
-                    _fun94936_ip = 66;
-                    continue _fun94936
-                }
-            case 62:
-                var0 = 'keydown';
-            case 66:
+            case 36:
+                var1 = 'meta';
+                var0 = var1 === var2;
+            case 44:
                 return var0;
         }
     };

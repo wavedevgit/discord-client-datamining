@@ -7,23 +7,23 @@ final class h implements DynamiteModule.b {
     @Override // com.google.android.gms.dynamite.DynamiteModule.b
     public final DynamiteModule.b.C0173b a(Context context, String str, DynamiteModule.b.a aVar) {
         DynamiteModule.b.C0173b c0173b = new DynamiteModule.b.C0173b();
-        c0173b.f14559a = aVar.b(context, str);
+        c0173b.f14560a = aVar.b(context, str);
         int i10 = 1;
         int a10 = aVar.a(context, str, true);
-        c0173b.f14560b = a10;
-        int i11 = c0173b.f14559a;
+        c0173b.f14561b = a10;
+        int i11 = c0173b.f14560a;
         if (i11 == 0) {
             i11 = 0;
             if (a10 == 0) {
                 i10 = 0;
-                c0173b.f14561c = i10;
+                c0173b.f14562c = i10;
                 return c0173b;
             }
         }
         if (i11 >= a10) {
             i10 = -1;
         }
-        c0173b.f14561c = i10;
+        c0173b.f14562c = i10;
         return c0173b;
     }
 }

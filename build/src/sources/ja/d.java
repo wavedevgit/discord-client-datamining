@@ -12,41 +12,41 @@ import ha.e;
 public class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ha.a f30889a;
+    private final ha.a f30890a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b f30890b;
+    private final b f30891b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Paint f30891c;
+    private final Paint f30892c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f30892d;
+    private final boolean f30893d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f30893a;
+        static final /* synthetic */ int[] f30894a;
 
         static {
             int[] iArr = new int[c.values().length];
-            f30893a = iArr;
+            f30894a = iArr;
             try {
                 iArr[c.REQUIRED.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f30893a[c.NOT_REQUIRED.ordinal()] = 2;
+                f30894a[c.NOT_REQUIRED.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f30893a[c.ABORT.ordinal()] = 3;
+                f30894a[c.ABORT.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f30893a[c.SKIP.ordinal()] = 4;
+                f30894a[c.SKIP.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
         }
@@ -69,25 +69,25 @@ public class d {
     }
 
     public d(ha.a aVar, boolean z10, b bVar) {
-        this.f30889a = aVar;
-        this.f30890b = bVar;
-        this.f30892d = z10;
+        this.f30890a = aVar;
+        this.f30891b = bVar;
+        this.f30893d = z10;
         Paint paint = new Paint();
-        this.f30891c = paint;
+        this.f30892c = paint;
         paint.setColor(0);
         paint.setStyle(Paint.Style.FILL);
         paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC));
     }
 
     private void a(Canvas canvas, ha.b bVar) {
-        int i10 = bVar.f27010b;
-        int i11 = bVar.f27011c;
-        canvas.drawRect(i10, i11, i10 + bVar.f27012d, i11 + bVar.f27013e, this.f30891c);
+        int i10 = bVar.f27011b;
+        int i11 = bVar.f27012c;
+        canvas.drawRect(i10, i11, i10 + bVar.f27013d, i11 + bVar.f27014e, this.f30892c);
     }
 
     private c b(int i10) {
-        ha.b c10 = this.f30889a.c(i10);
-        b.EnumC0359b enumC0359b = c10.f27015g;
+        ha.b c10 = this.f30890a.c(i10);
+        b.EnumC0359b enumC0359b = c10.f27016g;
         if (enumC0359b == b.EnumC0359b.DISPOSE_DO_NOT) {
             return c.REQUIRED;
         }
@@ -104,7 +104,7 @@ public class d {
     }
 
     private boolean c(ha.b bVar) {
-        if (bVar.f27010b == 0 && bVar.f27011c == 0 && bVar.f27012d == this.f30889a.j() && bVar.f27013e == this.f30889a.h()) {
+        if (bVar.f27011b == 0 && bVar.f27012c == 0 && bVar.f27013d == this.f30890a.j() && bVar.f27014e == this.f30890a.h()) {
             return true;
         }
         return false;
@@ -114,19 +114,19 @@ public class d {
         if (i10 == 0) {
             return true;
         }
-        ha.b c10 = this.f30889a.c(i10);
-        ha.b c11 = this.f30889a.c(i10 - 1);
-        if (c10.f27014f == b.a.NO_BLEND && c(c10)) {
+        ha.b c10 = this.f30890a.c(i10);
+        ha.b c11 = this.f30890a.c(i10 - 1);
+        if (c10.f27015f == b.a.NO_BLEND && c(c10)) {
             return true;
         }
-        if (c11.f27015g == b.EnumC0359b.DISPOSE_TO_BACKGROUND && c(c11)) {
+        if (c11.f27016g == b.EnumC0359b.DISPOSE_TO_BACKGROUND && c(c11)) {
             return true;
         }
         return false;
     }
 
     private void e(Bitmap bitmap) {
-        e k10 = this.f30889a.k();
+        e k10 = this.f30890a.k();
         if (k10 == null) {
             return;
         }
@@ -135,7 +135,7 @@ public class d {
 
     private int f(int i10, Canvas canvas) {
         while (i10 >= 0) {
-            int i11 = a.f30893a[b(i10).ordinal()];
+            int i11 = a.f30894a[b(i10).ordinal()];
             if (i11 != 1) {
                 if (i11 != 2) {
                     if (i11 == 3) {
@@ -146,17 +146,17 @@ public class d {
                     return i10 + 1;
                 }
             } else {
-                ha.b c10 = this.f30889a.c(i10);
-                CloseableReference b10 = this.f30890b.b(i10);
+                ha.b c10 = this.f30890a.c(i10);
+                CloseableReference b10 = this.f30891b.b(i10);
                 if (b10 != null) {
                     try {
                         canvas.drawBitmap((Bitmap) b10.J(), 0.0f, 0.0f, (Paint) null);
-                        if (c10.f27015g == b.EnumC0359b.DISPOSE_TO_BACKGROUND) {
+                        if (c10.f27016g == b.EnumC0359b.DISPOSE_TO_BACKGROUND) {
                             a(canvas, c10);
                         }
                         return i10 + 1;
                     } finally {
-                        if (!this.f30892d) {
+                        if (!this.f30893d) {
                             b10.close();
                         }
                     }
@@ -171,12 +171,12 @@ public class d {
     }
 
     public void g(int i10, Bitmap bitmap) {
-        this.f30889a.i(i10, new Canvas(bitmap));
+        this.f30890a.i(i10, new Canvas(bitmap));
     }
 
     public void h(int i10, Bitmap bitmap) {
         int i11;
-        if (this.f30892d) {
+        if (this.f30893d) {
             g(i10, bitmap);
             return;
         }
@@ -188,25 +188,25 @@ public class d {
             i11 = i10;
         }
         while (i11 < i10) {
-            ha.b c10 = this.f30889a.c(i11);
-            b.EnumC0359b enumC0359b = c10.f27015g;
+            ha.b c10 = this.f30890a.c(i11);
+            b.EnumC0359b enumC0359b = c10.f27016g;
             if (enumC0359b != b.EnumC0359b.DISPOSE_TO_PREVIOUS) {
-                if (c10.f27014f == b.a.NO_BLEND) {
+                if (c10.f27015f == b.a.NO_BLEND) {
                     a(canvas, c10);
                 }
-                this.f30889a.e(i11, canvas);
-                this.f30890b.a(i11, bitmap);
+                this.f30890a.e(i11, canvas);
+                this.f30891b.a(i11, bitmap);
                 if (enumC0359b == b.EnumC0359b.DISPOSE_TO_BACKGROUND) {
                     a(canvas, c10);
                 }
             }
             i11++;
         }
-        ha.b c11 = this.f30889a.c(i10);
-        if (c11.f27014f == b.a.NO_BLEND) {
+        ha.b c11 = this.f30890a.c(i10);
+        if (c11.f27015f == b.a.NO_BLEND) {
             a(canvas, c11);
         }
-        this.f30889a.e(i10, canvas);
+        this.f30890a.e(i10, canvas);
         e(bitmap);
     }
 }

@@ -17,39 +17,39 @@ public abstract class c {
         static {
             int[] iArr = new int[Screen.StackAnimation.values().length];
             try {
-                iArr[Screen.StackAnimation.f19041d.ordinal()] = 1;
+                iArr[Screen.StackAnimation.f19042d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[Screen.StackAnimation.f19042e.ordinal()] = 2;
+                iArr[Screen.StackAnimation.f19043e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[Screen.StackAnimation.f19043i.ordinal()] = 3;
+                iArr[Screen.StackAnimation.f19044i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr[Screen.StackAnimation.f19045p.ordinal()] = 4;
+                iArr[Screen.StackAnimation.f19046p.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                iArr[Screen.StackAnimation.f19046q.ordinal()] = 5;
+                iArr[Screen.StackAnimation.f19047q.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                iArr[Screen.StackAnimation.f19044o.ordinal()] = 6;
+                iArr[Screen.StackAnimation.f19045o.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                iArr[Screen.StackAnimation.f19047r.ordinal()] = 7;
+                iArr[Screen.StackAnimation.f19048r.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                iArr[Screen.StackAnimation.f19048s.ordinal()] = 8;
+                iArr[Screen.StackAnimation.f19049s.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                iArr[Screen.StackAnimation.f19049t.ordinal()] = 9;
+                iArr[Screen.StackAnimation.f19050t.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
             f8376a = iArr;
@@ -62,32 +62,32 @@ public abstract class c {
         if (z10) {
             switch (a.f8376a[stackAnimation.ordinal()]) {
                 case 1:
-                    fragmentTransaction.s(r.f19309a, r.f19310b);
+                    fragmentTransaction.s(r.f19310a, r.f19311b);
                     return;
                 case 2:
-                    int i10 = r.f19325q;
+                    int i10 = r.f19326q;
                     fragmentTransaction.s(i10, i10);
                     return;
                 case 3:
-                    fragmentTransaction.s(r.f19314f, r.f19315g);
+                    fragmentTransaction.s(r.f19315f, r.f19316g);
                     return;
                 case 4:
-                    fragmentTransaction.s(r.f19331w, r.f19333y);
+                    fragmentTransaction.s(r.f19332w, r.f19334y);
                     return;
                 case 5:
-                    fragmentTransaction.s(r.f19330v, r.f19334z);
+                    fragmentTransaction.s(r.f19331v, r.f19335z);
                     return;
                 case 6:
-                    fragmentTransaction.s(r.f19329u, r.f19328t);
+                    fragmentTransaction.s(r.f19330u, r.f19329t);
                     return;
                 case 7:
-                    fragmentTransaction.s(r.f19313e, r.f19327s);
+                    fragmentTransaction.s(r.f19314e, r.f19328s);
                     return;
                 case 8:
-                    fragmentTransaction.s(r.f19324p, r.f19322n);
+                    fragmentTransaction.s(r.f19325p, r.f19323n);
                     return;
                 case 9:
-                    fragmentTransaction.s(r.f19320l, r.f19318j);
+                    fragmentTransaction.s(r.f19321l, r.f19319j);
                     return;
                 default:
                     throw new p();
@@ -95,32 +95,32 @@ public abstract class c {
         }
         switch (a.f8376a[stackAnimation.ordinal()]) {
             case 1:
-                fragmentTransaction.s(r.f19311c, r.f19312d);
+                fragmentTransaction.s(r.f19312c, r.f19313d);
                 return;
             case 2:
-                int i11 = r.f19325q;
+                int i11 = r.f19326q;
                 fragmentTransaction.s(i11, i11);
                 return;
             case 3:
-                fragmentTransaction.s(r.f19314f, r.f19315g);
+                fragmentTransaction.s(r.f19315f, r.f19316g);
                 return;
             case 4:
-                fragmentTransaction.s(r.f19330v, r.f19334z);
+                fragmentTransaction.s(r.f19331v, r.f19335z);
                 return;
             case 5:
-                fragmentTransaction.s(r.f19331w, r.f19333y);
+                fragmentTransaction.s(r.f19332w, r.f19334y);
                 return;
             case 6:
-                fragmentTransaction.s(r.f19328t, r.f19332x);
+                fragmentTransaction.s(r.f19329t, r.f19333x);
                 return;
             case 7:
-                fragmentTransaction.s(r.f19326r, r.f19316h);
+                fragmentTransaction.s(r.f19327r, r.f19317h);
                 return;
             case 8:
-                fragmentTransaction.s(r.f19321m, r.f19323o);
+                fragmentTransaction.s(r.f19322m, r.f19324o);
                 return;
             case 9:
-                fragmentTransaction.s(r.f19317i, r.f19319k);
+                fragmentTransaction.s(r.f19318i, r.f19320k);
                 return;
             default:
                 throw new p();

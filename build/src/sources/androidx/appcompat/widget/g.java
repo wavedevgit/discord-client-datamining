@@ -26,7 +26,7 @@ public class g extends CheckedTextView {
     private AppCompatEmojiTextHelper f1811o;
 
     public g(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, f.a.f23291p);
+        this(context, attributeSet, f.a.f23292p);
     }
 
     @NonNull

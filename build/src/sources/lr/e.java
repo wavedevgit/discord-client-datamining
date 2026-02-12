@@ -3,13 +3,13 @@ package lr;
 public final class e implements d, kr.a {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final e f36000b = new e(null);
+    private static final e f36001b = new e(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f36001a;
+    private final Object f36002a;
 
     private e(Object obj) {
-        this.f36001a = obj;
+        this.f36002a = obj;
     }
 
     public static d a(Object obj) {
@@ -18,6 +18,6 @@ public final class e implements d, kr.a {
 
     @Override // javax.inject.Provider
     public Object get() {
-        return this.f36001a;
+        return this.f36002a;
     }
 }

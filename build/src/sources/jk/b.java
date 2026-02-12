@@ -3,5 +3,5 @@ package jk;
 public abstract class b implements q0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final l f30981a = l.b();
+    private static final l f30982a = l.b();
 }

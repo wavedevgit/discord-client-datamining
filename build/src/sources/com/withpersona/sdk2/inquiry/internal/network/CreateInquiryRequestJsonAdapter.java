@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateInquiryRequestJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20156a;
+    private final m.b f20157a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f20157b;
+    private final com.squareup.moshi.h f20158b;
 
     public CreateInquiryRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("data");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20156a = a10;
+        this.f20157a = a10;
         com.squareup.moshi.h f10 = moshi.f(CreateInquiryRequest.Data.class, x0.d(), "data");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20157b = f10;
+        this.f20158b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -35,9 +35,9 @@ public final class CreateInquiryRequestJsonAdapter extends com.squareup.moshi.h 
         reader.u();
         CreateInquiryRequest.Data data = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20156a);
+            int J = reader.J(this.f20157a);
             if (J != -1) {
-                if (J == 0 && (data = (CreateInquiryRequest.Data) this.f20157b.fromJson(reader)) == null) {
+                if (J == 0 && (data = (CreateInquiryRequest.Data) this.f20158b.fromJson(reader)) == null) {
                     throw dn.c.x("data_", "data", reader);
                 }
             } else {
@@ -59,7 +59,7 @@ public final class CreateInquiryRequestJsonAdapter extends com.squareup.moshi.h 
         if (createInquiryRequest != null) {
             writer.i();
             writer.J("data");
-            this.f20157b.toJson(writer, createInquiryRequest.a());
+            this.f20158b.toJson(writer, createInquiryRequest.a());
             writer.s();
             return;
         }

@@ -9,13 +9,13 @@ import java.util.Set;
 final class b extends h {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final h.e f18768c = new a();
+    public static final h.e f18769c = new a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final Class f18769a;
+    private final Class f18770a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f18770b;
+    private final h f18771b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements h.e {
@@ -33,8 +33,8 @@ final class b extends h {
     }
 
     b(Class cls, h hVar) {
-        this.f18769a = cls;
-        this.f18770b = hVar;
+        this.f18770a = cls;
+        this.f18771b = hVar;
     }
 
     @Override // com.squareup.moshi.h
@@ -42,10 +42,10 @@ final class b extends h {
         ArrayList arrayList = new ArrayList();
         mVar.x();
         while (mVar.hasNext()) {
-            arrayList.add(this.f18770b.fromJson(mVar));
+            arrayList.add(this.f18771b.fromJson(mVar));
         }
         mVar.v();
-        Object newInstance = Array.newInstance(this.f18769a, arrayList.size());
+        Object newInstance = Array.newInstance(this.f18770a, arrayList.size());
         for (int i10 = 0; i10 < arrayList.size(); i10++) {
             Array.set(newInstance, i10, arrayList.get(i10));
         }
@@ -57,12 +57,12 @@ final class b extends h {
         tVar.a();
         int length = Array.getLength(obj);
         for (int i10 = 0; i10 < length; i10++) {
-            this.f18770b.toJson(tVar, Array.get(obj, i10));
+            this.f18771b.toJson(tVar, Array.get(obj, i10));
         }
         tVar.n();
     }
 
     public String toString() {
-        return this.f18770b + ".array()";
+        return this.f18771b + ".array()";
     }
 }

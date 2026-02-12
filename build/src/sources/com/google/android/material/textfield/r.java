@@ -35,49 +35,49 @@ public class r extends LinearLayout {
     private final TextInputLayout.g H;
 
     /* renamed from: d  reason: collision with root package name */
-    final TextInputLayout f16373d;
+    final TextInputLayout f16374d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final FrameLayout f16374e;
+    private final FrameLayout f16375e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final CheckableImageButton f16375i;
+    private final CheckableImageButton f16376i;
 
     /* renamed from: o  reason: collision with root package name */
-    private ColorStateList f16376o;
+    private ColorStateList f16377o;
 
     /* renamed from: p  reason: collision with root package name */
-    private PorterDuff.Mode f16377p;
+    private PorterDuff.Mode f16378p;
 
     /* renamed from: q  reason: collision with root package name */
-    private View.OnLongClickListener f16378q;
+    private View.OnLongClickListener f16379q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final CheckableImageButton f16379r;
+    private final CheckableImageButton f16380r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final d f16380s;
+    private final d f16381s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f16381t;
+    private int f16382t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final LinkedHashSet f16382u;
+    private final LinkedHashSet f16383u;
 
     /* renamed from: v  reason: collision with root package name */
-    private ColorStateList f16383v;
+    private ColorStateList f16384v;
 
     /* renamed from: w  reason: collision with root package name */
-    private PorterDuff.Mode f16384w;
+    private PorterDuff.Mode f16385w;
 
     /* renamed from: x  reason: collision with root package name */
-    private int f16385x;
+    private int f16386x;
 
     /* renamed from: y  reason: collision with root package name */
-    private ImageView.ScaleType f16386y;
+    private ImageView.ScaleType f16387y;
 
     /* renamed from: z  reason: collision with root package name */
-    private View.OnLongClickListener f16387z;
+    private View.OnLongClickListener f16388z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends com.google.android.material.internal.l {
@@ -142,21 +142,21 @@ public class r extends LinearLayout {
     public static class d {
 
         /* renamed from: a  reason: collision with root package name */
-        private final SparseArray f16391a = new SparseArray();
+        private final SparseArray f16392a = new SparseArray();
 
         /* renamed from: b  reason: collision with root package name */
-        private final r f16392b;
+        private final r f16393b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f16393c;
+        private final int f16394c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f16394d;
+        private final int f16395d;
 
         d(r rVar, v0 v0Var) {
-            this.f16392b = rVar;
-            this.f16393c = v0Var.n(bh.l.f7128r7, 0);
-            this.f16394d = v0Var.n(bh.l.Q7, 0);
+            this.f16393b = rVar;
+            this.f16394c = v0Var.n(bh.l.f7128r7, 0);
+            this.f16395d = v0Var.n(bh.l.Q7, 0);
         }
 
         private s b(int i10) {
@@ -165,24 +165,24 @@ public class r extends LinearLayout {
                     if (i10 != 1) {
                         if (i10 != 2) {
                             if (i10 == 3) {
-                                return new p(this.f16392b);
+                                return new p(this.f16393b);
                             }
                             throw new IllegalArgumentException("Invalid end icon mode: " + i10);
                         }
-                        return new f(this.f16392b);
+                        return new f(this.f16393b);
                     }
-                    return new x(this.f16392b, this.f16394d);
+                    return new x(this.f16393b, this.f16395d);
                 }
-                return new v(this.f16392b);
+                return new v(this.f16393b);
             }
-            return new g(this.f16392b);
+            return new g(this.f16393b);
         }
 
         s c(int i10) {
-            s sVar = (s) this.f16391a.get(i10);
+            s sVar = (s) this.f16392a.get(i10);
             if (sVar == null) {
                 s b10 = b(i10);
-                this.f16391a.append(i10, b10);
+                this.f16392a.append(i10, b10);
                 return b10;
             }
             return sVar;
@@ -192,26 +192,26 @@ public class r extends LinearLayout {
     /* JADX INFO: Access modifiers changed from: package-private */
     public r(TextInputLayout textInputLayout, v0 v0Var) {
         super(textInputLayout.getContext());
-        this.f16381t = 0;
-        this.f16382u = new LinkedHashSet();
+        this.f16382t = 0;
+        this.f16383u = new LinkedHashSet();
         this.G = new a();
         b bVar = new b();
         this.H = bVar;
         this.E = (AccessibilityManager) getContext().getSystemService("accessibility");
-        this.f16373d = textInputLayout;
+        this.f16374d = textInputLayout;
         setVisibility(8);
         setOrientation(0);
         setLayoutParams(new FrameLayout.LayoutParams(-2, -1, 8388613));
         FrameLayout frameLayout = new FrameLayout(getContext());
-        this.f16374e = frameLayout;
+        this.f16375e = frameLayout;
         frameLayout.setVisibility(8);
         frameLayout.setLayoutParams(new LinearLayout.LayoutParams(-2, -1));
         LayoutInflater from = LayoutInflater.from(getContext());
         CheckableImageButton i10 = i(this, from, bh.f.W);
-        this.f16375i = i10;
+        this.f16376i = i10;
         CheckableImageButton i11 = i(frameLayout, from, bh.f.V);
-        this.f16379r = i11;
-        this.f16380s = new d(this, v0Var);
+        this.f16380r = i11;
+        this.f16381s = new d(this, v0Var);
         AppCompatTextView appCompatTextView = new AppCompatTextView(getContext());
         this.B = appCompatTextView;
         C(v0Var);
@@ -228,10 +228,10 @@ public class r extends LinearLayout {
     private void B(v0 v0Var) {
         if (!v0Var.s(bh.l.R7)) {
             if (v0Var.s(bh.l.f7164v7)) {
-                this.f16383v = qh.c.b(getContext(), v0Var, bh.l.f7164v7);
+                this.f16384v = qh.c.b(getContext(), v0Var, bh.l.f7164v7);
             }
             if (v0Var.s(bh.l.f7173w7)) {
-                this.f16384w = com.google.android.material.internal.p.i(v0Var.k(bh.l.f7173w7, -1), null);
+                this.f16385w = com.google.android.material.internal.p.i(v0Var.k(bh.l.f7173w7, -1), null);
             }
         }
         if (v0Var.s(bh.l.f7146t7)) {
@@ -242,10 +242,10 @@ public class r extends LinearLayout {
             O(v0Var.a(bh.l.f7110p7, true));
         } else if (v0Var.s(bh.l.R7)) {
             if (v0Var.s(bh.l.S7)) {
-                this.f16383v = qh.c.b(getContext(), v0Var, bh.l.S7);
+                this.f16384v = qh.c.b(getContext(), v0Var, bh.l.S7);
             }
             if (v0Var.s(bh.l.T7)) {
-                this.f16384w = com.google.android.material.internal.p.i(v0Var.k(bh.l.T7, -1), null);
+                this.f16385w = com.google.android.material.internal.p.i(v0Var.k(bh.l.T7, -1), null);
             }
             U(v0Var.a(bh.l.R7, false) ? 1 : 0);
             Q(v0Var.p(bh.l.P7));
@@ -258,20 +258,20 @@ public class r extends LinearLayout {
 
     private void C(v0 v0Var) {
         if (v0Var.s(bh.l.B7)) {
-            this.f16376o = qh.c.b(getContext(), v0Var, bh.l.B7);
+            this.f16377o = qh.c.b(getContext(), v0Var, bh.l.B7);
         }
         if (v0Var.s(bh.l.C7)) {
-            this.f16377p = com.google.android.material.internal.p.i(v0Var.k(bh.l.C7, -1), null);
+            this.f16378p = com.google.android.material.internal.p.i(v0Var.k(bh.l.C7, -1), null);
         }
         if (v0Var.s(bh.l.A7)) {
             c0(v0Var.g(bh.l.A7));
         }
-        this.f16375i.setContentDescription(getResources().getText(bh.j.f6905f));
-        this.f16375i.setImportantForAccessibility(2);
-        this.f16375i.setClickable(false);
-        this.f16375i.setPressable(false);
-        this.f16375i.setCheckable(false);
-        this.f16375i.setFocusable(false);
+        this.f16376i.setContentDescription(getResources().getText(bh.j.f6905f));
+        this.f16376i.setImportantForAccessibility(2);
+        this.f16376i.setClickable(false);
+        this.f16376i.setPressable(false);
+        this.f16376i.setCheckable(false);
+        this.f16376i.setFocusable(false);
     }
 
     private void D(v0 v0Var) {
@@ -309,7 +309,7 @@ public class r extends LinearLayout {
                 this.D.setOnFocusChangeListener(sVar.e());
             }
             if (sVar.g() != null) {
-                this.f16379r.setOnFocusChangeListener(sVar.g());
+                this.f16380r.setOnFocusChangeListener(sVar.g());
             }
         }
     }
@@ -325,7 +325,7 @@ public class r extends LinearLayout {
     }
 
     private void j(int i10) {
-        Iterator it = this.f16382u.iterator();
+        Iterator it = this.f16383u.iterator();
         if (!it.hasNext()) {
             return;
         }
@@ -340,7 +340,7 @@ public class r extends LinearLayout {
     }
 
     private int t(s sVar) {
-        int i10 = this.f16380s.f16393c;
+        int i10 = this.f16381s.f16394c;
         if (i10 == 0) {
             return sVar.d();
         }
@@ -356,19 +356,19 @@ public class r extends LinearLayout {
     private void u0(boolean z10) {
         if (z10 && n() != null) {
             Drawable mutate = s1.a.r(n()).mutate();
-            mutate.setTint(this.f16373d.getErrorCurrentTextColors());
-            this.f16379r.setImageDrawable(mutate);
+            mutate.setTint(this.f16374d.getErrorCurrentTextColors());
+            this.f16380r.setImageDrawable(mutate);
             return;
         }
-        t.a(this.f16373d, this.f16379r, this.f16383v, this.f16384w);
+        t.a(this.f16374d, this.f16380r, this.f16384v, this.f16385w);
     }
 
     private void v0() {
         int i10;
         boolean z10;
-        FrameLayout frameLayout = this.f16374e;
+        FrameLayout frameLayout = this.f16375e;
         int i11 = 8;
-        if (this.f16379r.getVisibility() == 0 && !G()) {
+        if (this.f16380r.getVisibility() == 0 && !G()) {
             i10 = 0;
         } else {
             i10 = 8;
@@ -388,12 +388,12 @@ public class r extends LinearLayout {
     private void w0() {
         boolean z10;
         int i10 = 0;
-        if (s() != null && this.f16373d.O() && this.f16373d.e0()) {
+        if (s() != null && this.f16374d.O() && this.f16374d.e0()) {
             z10 = true;
         } else {
             z10 = false;
         }
-        CheckableImageButton checkableImageButton = this.f16375i;
+        CheckableImageButton checkableImageButton = this.f16376i;
         if (!z10) {
             i10 = 8;
         }
@@ -401,7 +401,7 @@ public class r extends LinearLayout {
         v0();
         x0();
         if (!A()) {
-            this.f16373d.q0();
+            this.f16374d.q0();
         }
     }
 
@@ -423,12 +423,12 @@ public class r extends LinearLayout {
         }
         v0();
         this.B.setVisibility(i10);
-        this.f16373d.q0();
+        this.f16374d.q0();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean A() {
-        if (this.f16381t != 0) {
+        if (this.f16382t != 0) {
             return true;
         }
         return false;
@@ -436,7 +436,7 @@ public class r extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean E() {
-        if (A() && this.f16379r.isChecked()) {
+        if (A() && this.f16380r.isChecked()) {
             return true;
         }
         return false;
@@ -444,7 +444,7 @@ public class r extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean F() {
-        if (this.f16374e.getVisibility() == 0 && this.f16379r.getVisibility() == 0) {
+        if (this.f16375e.getVisibility() == 0 && this.f16380r.getVisibility() == 0) {
             return true;
         }
         return false;
@@ -452,7 +452,7 @@ public class r extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean G() {
-        if (this.f16375i.getVisibility() == 0) {
+        if (this.f16376i.getVisibility() == 0) {
             return true;
         }
         return false;
@@ -470,16 +470,16 @@ public class r extends LinearLayout {
         K();
         J();
         if (m().t()) {
-            u0(this.f16373d.e0());
+            u0(this.f16374d.e0());
         }
     }
 
     void J() {
-        t.d(this.f16373d, this.f16379r, this.f16383v);
+        t.d(this.f16374d, this.f16380r, this.f16384v);
     }
 
     void K() {
-        t.d(this.f16373d, this.f16375i, this.f16376o);
+        t.d(this.f16374d, this.f16376i, this.f16377o);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -489,13 +489,13 @@ public class r extends LinearLayout {
         boolean isChecked;
         s m10 = m();
         boolean z12 = true;
-        if (m10.l() && (isChecked = this.f16379r.isChecked()) != m10.m()) {
-            this.f16379r.setChecked(!isChecked);
+        if (m10.l() && (isChecked = this.f16380r.isChecked()) != m10.m()) {
+            this.f16380r.setChecked(!isChecked);
             z11 = true;
         } else {
             z11 = false;
         }
-        if (m10.j() && (isActivated = this.f16379r.isActivated()) != m10.k()) {
+        if (m10.j() && (isActivated = this.f16380r.isActivated()) != m10.k()) {
             N(!isActivated);
         } else {
             z12 = z11;
@@ -508,12 +508,12 @@ public class r extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void N(boolean z10) {
-        this.f16379r.setActivated(z10);
+        this.f16380r.setActivated(z10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void O(boolean z10) {
-        this.f16379r.setCheckable(z10);
+        this.f16380r.setCheckable(z10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -530,7 +530,7 @@ public class r extends LinearLayout {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void Q(CharSequence charSequence) {
         if (l() != charSequence) {
-            this.f16379r.setContentDescription(charSequence);
+            this.f16380r.setContentDescription(charSequence);
         }
     }
 
@@ -547,9 +547,9 @@ public class r extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void S(Drawable drawable) {
-        this.f16379r.setImageDrawable(drawable);
+        this.f16380r.setImageDrawable(drawable);
         if (drawable != null) {
-            t.a(this.f16373d, this.f16379r, this.f16383v, this.f16384w);
+            t.a(this.f16374d, this.f16380r, this.f16384v, this.f16385w);
             J();
         }
     }
@@ -557,10 +557,10 @@ public class r extends LinearLayout {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void T(int i10) {
         if (i10 >= 0) {
-            if (i10 != this.f16385x) {
-                this.f16385x = i10;
-                t.g(this.f16379r, i10);
-                t.g(this.f16375i, i10);
+            if (i10 != this.f16386x) {
+                this.f16386x = i10;
+                t.g(this.f16380r, i10);
+                t.g(this.f16376i, i10);
                 return;
             }
             return;
@@ -571,12 +571,12 @@ public class r extends LinearLayout {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void U(int i10) {
         boolean z10;
-        if (this.f16381t == i10) {
+        if (this.f16382t == i10) {
             return;
         }
         t0(m());
-        int i11 = this.f16381t;
-        this.f16381t = i10;
+        int i11 = this.f16382t;
+        this.f16382t = i10;
         j(i11);
         if (i10 != 0) {
             z10 = true;
@@ -588,7 +588,7 @@ public class r extends LinearLayout {
         R(t(m10));
         P(m10.c());
         O(m10.l());
-        if (m10.i(this.f16373d.getBoxBackgroundMode())) {
+        if (m10.i(this.f16374d.getBoxBackgroundMode())) {
             s0(m10);
             V(m10.f());
             EditText editText = this.D;
@@ -596,44 +596,44 @@ public class r extends LinearLayout {
                 m10.n(editText);
                 h0(m10);
             }
-            t.a(this.f16373d, this.f16379r, this.f16383v, this.f16384w);
+            t.a(this.f16374d, this.f16380r, this.f16384v, this.f16385w);
             L(true);
             return;
         }
-        throw new IllegalStateException("The current box background mode " + this.f16373d.getBoxBackgroundMode() + " is not supported by the end icon mode " + i10);
+        throw new IllegalStateException("The current box background mode " + this.f16374d.getBoxBackgroundMode() + " is not supported by the end icon mode " + i10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void V(View.OnClickListener onClickListener) {
-        t.h(this.f16379r, onClickListener, this.f16387z);
+        t.h(this.f16380r, onClickListener, this.f16388z);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void W(View.OnLongClickListener onLongClickListener) {
-        this.f16387z = onLongClickListener;
-        t.i(this.f16379r, onLongClickListener);
+        this.f16388z = onLongClickListener;
+        t.i(this.f16380r, onLongClickListener);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void X(ImageView.ScaleType scaleType) {
-        this.f16386y = scaleType;
-        t.j(this.f16379r, scaleType);
-        t.j(this.f16375i, scaleType);
+        this.f16387y = scaleType;
+        t.j(this.f16380r, scaleType);
+        t.j(this.f16376i, scaleType);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void Y(ColorStateList colorStateList) {
-        if (this.f16383v != colorStateList) {
-            this.f16383v = colorStateList;
-            t.a(this.f16373d, this.f16379r, colorStateList, this.f16384w);
+        if (this.f16384v != colorStateList) {
+            this.f16384v = colorStateList;
+            t.a(this.f16374d, this.f16380r, colorStateList, this.f16385w);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void Z(PorterDuff.Mode mode) {
-        if (this.f16384w != mode) {
-            this.f16384w = mode;
-            t.a(this.f16373d, this.f16379r, this.f16383v, mode);
+        if (this.f16385w != mode) {
+            this.f16385w = mode;
+            t.a(this.f16374d, this.f16380r, this.f16384v, mode);
         }
     }
 
@@ -641,7 +641,7 @@ public class r extends LinearLayout {
     public void a0(boolean z10) {
         int i10;
         if (F() != z10) {
-            CheckableImageButton checkableImageButton = this.f16379r;
+            CheckableImageButton checkableImageButton = this.f16380r;
             if (z10) {
                 i10 = 0;
             } else {
@@ -650,7 +650,7 @@ public class r extends LinearLayout {
             checkableImageButton.setVisibility(i10);
             v0();
             x0();
-            this.f16373d.q0();
+            this.f16374d.q0();
         }
     }
 
@@ -668,42 +668,42 @@ public class r extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void c0(Drawable drawable) {
-        this.f16375i.setImageDrawable(drawable);
+        this.f16376i.setImageDrawable(drawable);
         w0();
-        t.a(this.f16373d, this.f16375i, this.f16376o, this.f16377p);
+        t.a(this.f16374d, this.f16376i, this.f16377o, this.f16378p);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void d0(View.OnClickListener onClickListener) {
-        t.h(this.f16375i, onClickListener, this.f16378q);
+        t.h(this.f16376i, onClickListener, this.f16379q);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void e0(View.OnLongClickListener onLongClickListener) {
-        this.f16378q = onLongClickListener;
-        t.i(this.f16375i, onLongClickListener);
+        this.f16379q = onLongClickListener;
+        t.i(this.f16376i, onLongClickListener);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f0(ColorStateList colorStateList) {
-        if (this.f16376o != colorStateList) {
-            this.f16376o = colorStateList;
-            t.a(this.f16373d, this.f16375i, colorStateList, this.f16377p);
+        if (this.f16377o != colorStateList) {
+            this.f16377o = colorStateList;
+            t.a(this.f16374d, this.f16376i, colorStateList, this.f16378p);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void g0(PorterDuff.Mode mode) {
-        if (this.f16377p != mode) {
-            this.f16377p = mode;
-            t.a(this.f16373d, this.f16375i, this.f16376o, mode);
+        if (this.f16378p != mode) {
+            this.f16378p = mode;
+            t.a(this.f16374d, this.f16376i, this.f16377o, mode);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void h() {
-        this.f16379r.performClick();
-        this.f16379r.jumpDrawablesToCurrentState();
+        this.f16380r.performClick();
+        this.f16380r.jumpDrawablesToCurrentState();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -719,16 +719,16 @@ public class r extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void j0(CharSequence charSequence) {
-        this.f16379r.setContentDescription(charSequence);
+        this.f16380r.setContentDescription(charSequence);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public CheckableImageButton k() {
         if (G()) {
-            return this.f16375i;
+            return this.f16376i;
         }
         if (A() && F()) {
-            return this.f16379r;
+            return this.f16380r;
         }
         return null;
     }
@@ -746,22 +746,22 @@ public class r extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public CharSequence l() {
-        return this.f16379r.getContentDescription();
+        return this.f16380r.getContentDescription();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void l0(Drawable drawable) {
-        this.f16379r.setImageDrawable(drawable);
+        this.f16380r.setImageDrawable(drawable);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public s m() {
-        return this.f16380s.c(this.f16381t);
+        return this.f16381s.c(this.f16382t);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void m0(boolean z10) {
-        if (z10 && this.f16381t != 1) {
+        if (z10 && this.f16382t != 1) {
             U(1);
         } else if (!z10) {
             U(0);
@@ -770,29 +770,29 @@ public class r extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Drawable n() {
-        return this.f16379r.getDrawable();
+        return this.f16380r.getDrawable();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void n0(ColorStateList colorStateList) {
-        this.f16383v = colorStateList;
-        t.a(this.f16373d, this.f16379r, colorStateList, this.f16384w);
+        this.f16384v = colorStateList;
+        t.a(this.f16374d, this.f16380r, colorStateList, this.f16385w);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int o() {
-        return this.f16385x;
+        return this.f16386x;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void o0(PorterDuff.Mode mode) {
-        this.f16384w = mode;
-        t.a(this.f16373d, this.f16379r, this.f16383v, mode);
+        this.f16385w = mode;
+        t.a(this.f16374d, this.f16380r, this.f16384v, mode);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int p() {
-        return this.f16381t;
+        return this.f16382t;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -810,7 +810,7 @@ public class r extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ImageView.ScaleType q() {
-        return this.f16386y;
+        return this.f16387y;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -820,7 +820,7 @@ public class r extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public CheckableImageButton r() {
-        return this.f16379r;
+        return this.f16380r;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -830,17 +830,17 @@ public class r extends LinearLayout {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Drawable s() {
-        return this.f16375i.getDrawable();
+        return this.f16376i.getDrawable();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public CharSequence u() {
-        return this.f16379r.getContentDescription();
+        return this.f16380r.getContentDescription();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Drawable v() {
-        return this.f16379r.getDrawable();
+        return this.f16380r.getDrawable();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -856,15 +856,15 @@ public class r extends LinearLayout {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void x0() {
         int i10;
-        if (this.f16373d.f16302p == null) {
+        if (this.f16374d.f16303p == null) {
             return;
         }
         if (!F() && !G()) {
-            i10 = this.f16373d.f16302p.getPaddingEnd();
+            i10 = this.f16374d.f16303p.getPaddingEnd();
         } else {
             i10 = 0;
         }
-        this.B.setPaddingRelative(getContext().getResources().getDimensionPixelSize(bh.d.V), this.f16373d.f16302p.getPaddingTop(), i10, this.f16373d.f16302p.getPaddingBottom());
+        this.B.setPaddingRelative(getContext().getResources().getDimensionPixelSize(bh.d.V), this.f16374d.f16303p.getPaddingTop(), i10, this.f16374d.f16303p.getPaddingBottom());
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -873,7 +873,7 @@ public class r extends LinearLayout {
         if (!F() && !G()) {
             measuredWidth = 0;
         } else {
-            measuredWidth = this.f16379r.getMeasuredWidth() + ((ViewGroup.MarginLayoutParams) this.f16379r.getLayoutParams()).getMarginStart();
+            measuredWidth = this.f16380r.getMeasuredWidth() + ((ViewGroup.MarginLayoutParams) this.f16380r.getLayoutParams()).getMarginStart();
         }
         return getPaddingEnd() + this.B.getPaddingEnd() + measuredWidth;
     }

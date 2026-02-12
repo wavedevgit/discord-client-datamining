@@ -25,7 +25,7 @@ public abstract class m2 {
     }
 
     public static a a(Size size) {
-        return new h.b().e(size).c(f165a).b(x.z.f54274d).f(false);
+        return new h.b().e(size).c(f165a).b(x.z.f54275d).f(false);
     }
 
     public abstract x.z b();

@@ -7,31 +7,31 @@ import kotlin.enums.EnumEntries;
 public final class c0 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final c0 f47536d = new c0("Success", 0);
+    public static final c0 f47537d = new c0("Success", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final c0 f47537e = new c0("Failure", 1);
+    public static final c0 f47538e = new c0("Failure", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final c0 f47538i = new c0("SettingsLaunched", 2);
+    public static final c0 f47539i = new c0("SettingsLaunched", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ c0[] f47539o;
+    private static final /* synthetic */ c0[] f47540o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f47540p;
+    private static final /* synthetic */ EnumEntries f47541p;
 
     static {
         c0[] a10 = a();
-        f47539o = a10;
-        f47540p = hs.a.a(a10);
+        f47540o = a10;
+        f47541p = hs.a.a(a10);
     }
 
     private c0(String str, int i10) {
     }
 
     private static final /* synthetic */ c0[] a() {
-        return new c0[]{f47536d, f47537e, f47538i};
+        return new c0[]{f47537d, f47538e, f47539i};
     }
 
     public static c0 valueOf(String str) {
@@ -39,6 +39,6 @@ public final class c0 {
     }
 
     public static c0[] values() {
-        return (c0[]) f47539o.clone();
+        return (c0[]) f47540o.clone();
     }
 }

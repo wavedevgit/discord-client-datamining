@@ -6,23 +6,23 @@ import kotlinx.coroutines.Job;
 final class x {
 
     /* renamed from: a  reason: collision with root package name */
-    private final t f25910a;
+    private final t f25911a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Job f25911b;
+    private final Job f25912b;
 
     public x(t controller, Job subscription) {
         Intrinsics.checkNotNullParameter(controller, "controller");
         Intrinsics.checkNotNullParameter(subscription, "subscription");
-        this.f25910a = controller;
-        this.f25911b = subscription;
+        this.f25911a = controller;
+        this.f25912b = subscription;
     }
 
     public final t a() {
-        return this.f25910a;
+        return this.f25911a;
     }
 
     public final Job b() {
-        return this.f25911b;
+        return this.f25912b;
     }
 }

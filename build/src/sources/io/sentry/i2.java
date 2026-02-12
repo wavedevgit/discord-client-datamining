@@ -3,13 +3,13 @@ package io.sentry;
 public final class i2 implements ILogger {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final i2 f29367a = new i2();
+    private static final i2 f29368a = new i2();
 
     private i2() {
     }
 
     public static i2 e() {
-        return f29367a;
+        return f29368a;
     }
 
     @Override // io.sentry.ILogger

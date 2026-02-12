@@ -5,37 +5,37 @@ import bj.c;
 final class y6 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final y6 f45199a = new y6();
+    static final y6 f45200a = new y6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f45200b;
+    private static final bj.c f45201b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f45201c;
+    private static final bj.c f45202c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f45202d;
+    private static final bj.c f45203d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final bj.c f45203e;
+    private static final bj.c f45204e;
 
     static {
         c.b a10 = bj.c.a("inferenceCommonLogEvent");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f45200b = a10.b(s1Var.b()).a();
+        f45201b = a10.b(s1Var.b()).a();
         c.b a11 = bj.c.a("imageInfo");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f45201c = a11.b(s1Var2.b()).a();
+        f45202c = a11.b(s1Var2.b()).a();
         c.b a12 = bj.c.a("detectorOptions");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f45202d = a12.b(s1Var3.b()).a();
+        f45203d = a12.b(s1Var3.b()).a();
         c.b a13 = bj.c.a("objectInfos");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f45203e = a13.b(s1Var4.b()).a();
+        f45204e = a13.b(s1Var4.b()).a();
     }
 
     private y6() {

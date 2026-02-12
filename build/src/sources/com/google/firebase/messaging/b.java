@@ -80,36 +80,36 @@ abstract class b {
     private static final class a extends FilterInputStream {
 
         /* renamed from: d  reason: collision with root package name */
-        private long f17307d;
+        private long f17308d;
 
         /* renamed from: e  reason: collision with root package name */
-        private long f17308e;
+        private long f17309e;
 
         a(InputStream inputStream, long j10) {
             super(inputStream);
-            this.f17308e = -1L;
-            this.f17307d = j10;
+            this.f17309e = -1L;
+            this.f17308d = j10;
         }
 
         @Override // java.io.FilterInputStream, java.io.InputStream
         public int available() {
-            return (int) Math.min(((FilterInputStream) this).in.available(), this.f17307d);
+            return (int) Math.min(((FilterInputStream) this).in.available(), this.f17308d);
         }
 
         @Override // java.io.FilterInputStream, java.io.InputStream
         public synchronized void mark(int i10) {
             ((FilterInputStream) this).in.mark(i10);
-            this.f17308e = this.f17307d;
+            this.f17309e = this.f17308d;
         }
 
         @Override // java.io.FilterInputStream, java.io.InputStream
         public int read() {
-            if (this.f17307d == 0) {
+            if (this.f17308d == 0) {
                 return -1;
             }
             int read = ((FilterInputStream) this).in.read();
             if (read != -1) {
-                this.f17307d--;
+                this.f17308d--;
             }
             return read;
         }
@@ -117,9 +117,9 @@ abstract class b {
         @Override // java.io.FilterInputStream, java.io.InputStream
         public synchronized void reset() {
             if (((FilterInputStream) this).in.markSupported()) {
-                if (this.f17308e != -1) {
+                if (this.f17309e != -1) {
                     ((FilterInputStream) this).in.reset();
-                    this.f17307d = this.f17308e;
+                    this.f17308d = this.f17309e;
                 } else {
                     throw new IOException("Mark not set");
                 }
@@ -130,20 +130,20 @@ abstract class b {
 
         @Override // java.io.FilterInputStream, java.io.InputStream
         public long skip(long j10) {
-            long skip = ((FilterInputStream) this).in.skip(Math.min(j10, this.f17307d));
-            this.f17307d -= skip;
+            long skip = ((FilterInputStream) this).in.skip(Math.min(j10, this.f17308d));
+            this.f17308d -= skip;
             return skip;
         }
 
         @Override // java.io.FilterInputStream, java.io.InputStream
         public int read(byte[] bArr, int i10, int i11) {
-            long j10 = this.f17307d;
+            long j10 = this.f17308d;
             if (j10 == 0) {
                 return -1;
             }
             int read = ((FilterInputStream) this).in.read(bArr, i10, (int) Math.min(i11, j10));
             if (read != -1) {
-                this.f17307d -= read;
+                this.f17308d -= read;
             }
             return read;
         }

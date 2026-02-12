@@ -7,31 +7,31 @@ import java.util.RandomAccess;
 final class e3 extends b0 implements RandomAccess {
 
     /* renamed from: o  reason: collision with root package name */
-    private static final e3 f14894o = new e3(new Object[0], 0, false);
+    private static final e3 f14895o = new e3(new Object[0], 0, false);
 
     /* renamed from: e  reason: collision with root package name */
-    private Object[] f14895e;
+    private Object[] f14896e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f14896i;
+    private int f14897i;
 
     private e3(Object[] objArr, int i10, boolean z10) {
         super(z10);
-        this.f14895e = objArr;
-        this.f14896i = i10;
+        this.f14896e = objArr;
+        this.f14897i = i10;
     }
 
     public static e3 c() {
-        return f14894o;
+        return f14895o;
     }
 
     private final String d(int i10) {
-        int i11 = this.f14896i;
+        int i11 = this.f14897i;
         return "Index:" + i10 + ", Size:" + i11;
     }
 
     private final void e(int i10) {
-        if (i10 >= 0 && i10 < this.f14896i) {
+        if (i10 >= 0 && i10 < this.f14897i) {
             return;
         }
         throw new IndexOutOfBoundsException(d(i10));
@@ -39,8 +39,8 @@ final class e3 extends b0 implements RandomAccess {
 
     @Override // com.google.android.gms.internal.play_billing.x1
     public final /* bridge */ /* synthetic */ x1 J(int i10) {
-        if (i10 >= this.f14896i) {
-            return new e3(Arrays.copyOf(this.f14895e, i10), this.f14896i, true);
+        if (i10 >= this.f14897i) {
+            return new e3(Arrays.copyOf(this.f14896e, i10), this.f14897i, true);
         }
         throw new IllegalArgumentException();
     }
@@ -49,19 +49,19 @@ final class e3 extends b0 implements RandomAccess {
     public final void add(int i10, Object obj) {
         int i11;
         b();
-        if (i10 >= 0 && i10 <= (i11 = this.f14896i)) {
+        if (i10 >= 0 && i10 <= (i11 = this.f14897i)) {
             int i12 = i10 + 1;
-            Object[] objArr = this.f14895e;
+            Object[] objArr = this.f14896e;
             if (i11 < objArr.length) {
                 System.arraycopy(objArr, i10, objArr, i12, i11 - i10);
             } else {
                 Object[] objArr2 = new Object[((i11 * 3) / 2) + 1];
                 System.arraycopy(objArr, 0, objArr2, 0, i10);
-                System.arraycopy(this.f14895e, i10, objArr2, i12, this.f14896i - i10);
-                this.f14895e = objArr2;
+                System.arraycopy(this.f14896e, i10, objArr2, i12, this.f14897i - i10);
+                this.f14896e = objArr2;
             }
-            this.f14895e[i10] = obj;
-            this.f14896i++;
+            this.f14896e[i10] = obj;
+            this.f14897i++;
             ((AbstractList) this).modCount++;
             return;
         }
@@ -71,7 +71,7 @@ final class e3 extends b0 implements RandomAccess {
     @Override // java.util.AbstractList, java.util.List
     public final Object get(int i10) {
         e(i10);
-        return this.f14895e[i10];
+        return this.f14896e[i10];
     }
 
     @Override // com.google.android.gms.internal.play_billing.b0, java.util.AbstractList, java.util.List
@@ -79,12 +79,12 @@ final class e3 extends b0 implements RandomAccess {
         int i11;
         b();
         e(i10);
-        Object[] objArr = this.f14895e;
+        Object[] objArr = this.f14896e;
         Object obj = objArr[i10];
-        if (i10 < this.f14896i - 1) {
+        if (i10 < this.f14897i - 1) {
             System.arraycopy(objArr, i10 + 1, objArr, i10, (i11 - i10) - 1);
         }
-        this.f14896i--;
+        this.f14897i--;
         ((AbstractList) this).modCount++;
         return obj;
     }
@@ -93,7 +93,7 @@ final class e3 extends b0 implements RandomAccess {
     public final Object set(int i10, Object obj) {
         b();
         e(i10);
-        Object[] objArr = this.f14895e;
+        Object[] objArr = this.f14896e;
         Object obj2 = objArr[i10];
         objArr[i10] = obj;
         ((AbstractList) this).modCount++;
@@ -102,20 +102,20 @@ final class e3 extends b0 implements RandomAccess {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public final int size() {
-        return this.f14896i;
+        return this.f14897i;
     }
 
     @Override // com.google.android.gms.internal.play_billing.b0, java.util.AbstractList, java.util.AbstractCollection, java.util.Collection, java.util.List
     public final boolean add(Object obj) {
         b();
-        int i10 = this.f14896i;
-        Object[] objArr = this.f14895e;
+        int i10 = this.f14897i;
+        Object[] objArr = this.f14896e;
         if (i10 == objArr.length) {
-            this.f14895e = Arrays.copyOf(objArr, ((i10 * 3) / 2) + 1);
+            this.f14896e = Arrays.copyOf(objArr, ((i10 * 3) / 2) + 1);
         }
-        Object[] objArr2 = this.f14895e;
-        int i11 = this.f14896i;
-        this.f14896i = i11 + 1;
+        Object[] objArr2 = this.f14896e;
+        int i11 = this.f14897i;
+        this.f14897i = i11 + 1;
         objArr2[i11] = obj;
         ((AbstractList) this).modCount++;
         return true;

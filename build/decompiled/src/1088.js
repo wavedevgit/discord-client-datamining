@@ -656,7 +656,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var3 = !var4;
                                     case 67:
                                         if (!var3) {
-                                            _fun11973_ip = 239;
+                                            _fun11973_ip = 238;
                                             continue _fun11973
                                         }
                                     case 73:
@@ -667,7 +667,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var3 = var4.bind(var0)(var3);
                                         var3 = var3.DEBUG_BUILD;
                                         if (!var3) {
-                                            _fun11973_ip = 188;
+                                            _fun11973_ip = 187;
                                             continue _fun11973
                                         }
                                     case 102:
@@ -689,7 +689,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var3 = '[Tracing] Finishing current active span with op: ';
                                         var3 = var6.bind(var3)(var7);
                                         var3 = var4.bind(var5)(var3);
-                                    case 188:
+                                    case 187:
                                         var4 = var2.setAttribute;
                                         var3 = _closure1_slot0;
                                         var5 = _closure1_slot1;
@@ -701,7 +701,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var1 = var4.bind(var2)(var3, var1);
                                         var1 = var2.end;
                                         var1 = var1.bind(var2)();
-                                    case 239:
+                                    case 238:
                                         return var0;
                                 }
                             };

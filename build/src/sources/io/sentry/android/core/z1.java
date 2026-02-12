@@ -16,31 +16,31 @@ import java.util.concurrent.atomic.AtomicLong;
 public final class z1 implements w0.a {
 
     /* renamed from: d  reason: collision with root package name */
-    private final AtomicLong f28633d;
+    private final AtomicLong f28634d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final long f28634e;
+    private final long f28635e;
 
     /* renamed from: i  reason: collision with root package name */
-    private TimerTask f28635i;
+    private TimerTask f28636i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final io.sentry.util.r f28636o;
+    private final io.sentry.util.r f28637o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final io.sentry.util.a f28637p;
+    private final io.sentry.util.a f28638p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final io.sentry.w0 f28638q;
+    private final io.sentry.w0 f28639q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final boolean f28639r;
+    private final boolean f28640r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final boolean f28640s;
+    private final boolean f28641s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final io.sentry.transport.p f28641t;
+    private final io.sentry.transport.p f28642t;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -50,11 +50,11 @@ public final class z1 implements w0.a {
 
         @Override // java.util.TimerTask, java.lang.Runnable
         public void run() {
-            if (z1.this.f28639r) {
-                z1.this.f28638q.m();
+            if (z1.this.f28640r) {
+                z1.this.f28639q.m();
             }
-            z1.this.f28638q.b().getReplayController().stop();
-            z1.this.f28638q.b().getContinuousProfiler().c(false);
+            z1.this.f28639q.b().getReplayController().stop();
+            z1.this.f28639q.b().getContinuousProfiler().c(false);
         }
     }
 
@@ -65,8 +65,8 @@ public final class z1 implements w0.a {
 
     public static /* synthetic */ void b(z1 z1Var, IScope iScope) {
         z7 J;
-        if (z1Var.f28633d.get() == 0 && (J = iScope.J()) != null && J.k() != null) {
-            z1Var.f28633d.set(J.k().getTime());
+        if (z1Var.f28634d.get() == 0 && (J = iScope.J()) != null && J.k() != null) {
+            z1Var.f28634d.set(J.k().getTime());
         }
     }
 
@@ -75,23 +75,23 @@ public final class z1 implements w0.a {
     }
 
     private void f(String str) {
-        if (this.f28640s) {
+        if (this.f28641s) {
             Breadcrumb breadcrumb = new Breadcrumb();
             breadcrumb.E("navigation");
             breadcrumb.A("state", str);
             breadcrumb.z("app.lifecycle");
             breadcrumb.B(SentryLevel.INFO);
-            this.f28638q.e(breadcrumb);
+            this.f28639q.e(breadcrumb);
         }
     }
 
     private void g() {
-        io.sentry.a1 a10 = this.f28637p.a();
+        io.sentry.a1 a10 = this.f28638p.a();
         try {
-            TimerTask timerTask = this.f28635i;
+            TimerTask timerTask = this.f28636i;
             if (timerTask != null) {
                 timerTask.cancel();
-                this.f28635i = null;
+                this.f28636i = null;
             }
             if (a10 != null) {
                 a10.close();
@@ -109,11 +109,11 @@ public final class z1 implements w0.a {
     }
 
     private void h() {
-        io.sentry.a1 a10 = this.f28637p.a();
+        io.sentry.a1 a10 = this.f28638p.a();
         try {
             g();
-            this.f28635i = new a();
-            ((Timer) this.f28636o.a()).schedule(this.f28635i, this.f28634e);
+            this.f28636i = new a();
+            ((Timer) this.f28637o.a()).schedule(this.f28636i, this.f28635e);
             if (a10 != null) {
                 a10.close();
             }
@@ -131,22 +131,22 @@ public final class z1 implements w0.a {
 
     private void j() {
         g();
-        long a10 = this.f28641t.a();
-        this.f28638q.p(new b4() { // from class: io.sentry.android.core.y1
+        long a10 = this.f28642t.a();
+        this.f28639q.p(new b4() { // from class: io.sentry.android.core.y1
             @Override // io.sentry.b4
             public final void a(IScope iScope) {
                 z1.b(z1.this, iScope);
             }
         });
-        long j10 = this.f28633d.get();
-        if (j10 == 0 || j10 + this.f28634e <= a10) {
-            if (this.f28639r) {
-                this.f28638q.q();
+        long j10 = this.f28634d.get();
+        if (j10 == 0 || j10 + this.f28635e <= a10) {
+            if (this.f28640r) {
+                this.f28639q.q();
             }
-            this.f28638q.b().getReplayController().start();
+            this.f28639q.b().getReplayController().start();
         }
-        this.f28638q.b().getReplayController().j();
-        this.f28633d.set(a10);
+        this.f28639q.b().getReplayController().j();
+        this.f28634d.set(a10);
     }
 
     @Override // io.sentry.android.core.w0.a
@@ -157,25 +157,25 @@ public final class z1 implements w0.a {
 
     @Override // io.sentry.android.core.w0.a
     public void i() {
-        this.f28633d.set(this.f28641t.a());
-        this.f28638q.b().getReplayController().b();
+        this.f28634d.set(this.f28642t.a());
+        this.f28639q.b().getReplayController().b();
         h();
         f(AppStateModule.APP_STATE_BACKGROUND);
     }
 
     z1(io.sentry.w0 w0Var, long j10, boolean z10, boolean z11, io.sentry.transport.p pVar) {
-        this.f28633d = new AtomicLong(0L);
-        this.f28636o = new io.sentry.util.r(new r.a() { // from class: io.sentry.android.core.x1
+        this.f28634d = new AtomicLong(0L);
+        this.f28637o = new io.sentry.util.r(new r.a() { // from class: io.sentry.android.core.x1
             @Override // io.sentry.util.r.a
             public final Object a() {
                 return z1.c();
             }
         });
-        this.f28637p = new io.sentry.util.a();
-        this.f28634e = j10;
-        this.f28639r = z10;
-        this.f28640s = z11;
-        this.f28638q = w0Var;
-        this.f28641t = pVar;
+        this.f28638p = new io.sentry.util.a();
+        this.f28635e = j10;
+        this.f28640r = z10;
+        this.f28641s = z11;
+        this.f28639q = w0Var;
+        this.f28642t = pVar;
     }
 }

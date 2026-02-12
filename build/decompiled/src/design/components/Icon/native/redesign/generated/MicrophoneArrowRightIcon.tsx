@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/MicrophoneArrowRightIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun68338: for (var _fun68338_ip = 0;;) switch (_fun68338_ip) {
+        _fun69958: for (var _fun69958_ip = 0;;) switch (_fun69958_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun68338_ip = 53;
-                    continue _fun68338
+                    _fun69958_ip = 53;
+                    continue _fun69958
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.MicrophoneArrowRightIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3152, 8482, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3152, 8667, 2]);

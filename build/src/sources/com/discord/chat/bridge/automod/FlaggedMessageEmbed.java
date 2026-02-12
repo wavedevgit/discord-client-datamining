@@ -42,7 +42,7 @@ public final class FlaggedMessageEmbed {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9235id;
+    private final String f9236id;
     private final Integer roleColor;
     private final boolean shouldShowRoleDot;
     private final UserId userId;
@@ -72,13 +72,13 @@ public final class FlaggedMessageEmbed {
     /* renamed from: copy-Yv-vreA$default  reason: not valid java name */
     public static /* synthetic */ FlaggedMessageEmbed m244copyYvvreA$default(FlaggedMessageEmbed flaggedMessageEmbed, String str, long j10, GuildId guildId, UserId userId, StructurableText structurableText, String str2, String str3, int i10, Integer num, boolean z10, String str4, Boolean bool, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            str = flaggedMessageEmbed.f9235id;
+            str = flaggedMessageEmbed.f9236id;
         }
         return flaggedMessageEmbed.m249copyYvvreA(str, (i11 & 2) != 0 ? flaggedMessageEmbed.channelId : j10, (i11 & 4) != 0 ? flaggedMessageEmbed.guildId : guildId, (i11 & 8) != 0 ? flaggedMessageEmbed.userId : userId, (i11 & 16) != 0 ? flaggedMessageEmbed.content : structurableText, (i11 & 32) != 0 ? flaggedMessageEmbed.channelName : str2, (i11 & 64) != 0 ? flaggedMessageEmbed.username : str3, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? flaggedMessageEmbed.usernameColor : i10, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? flaggedMessageEmbed.roleColor : num, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? flaggedMessageEmbed.shouldShowRoleDot : z10, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0 ? flaggedMessageEmbed.avatarURL : str4, (i11 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? flaggedMessageEmbed.communicationDisabled : bool);
     }
 
     public static final /* synthetic */ void write$Self$chat_release(FlaggedMessageEmbed flaggedMessageEmbed, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        compositeEncoder.k(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1084boximpl(flaggedMessageEmbed.f9235id));
+        compositeEncoder.k(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1084boximpl(flaggedMessageEmbed.f9236id));
         compositeEncoder.k(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1058boximpl(flaggedMessageEmbed.channelId));
         if (compositeEncoder.z(serialDescriptor, 2) || flaggedMessageEmbed.guildId != null) {
             compositeEncoder.o(serialDescriptor, 2, GuildId$$serializer.INSTANCE, flaggedMessageEmbed.guildId);
@@ -90,28 +90,28 @@ public final class FlaggedMessageEmbed {
             compositeEncoder.o(serialDescriptor, 4, StructurableTextSerializer.INSTANCE, flaggedMessageEmbed.content);
         }
         if (compositeEncoder.z(serialDescriptor, 5) || flaggedMessageEmbed.channelName != null) {
-            compositeEncoder.o(serialDescriptor, 5, n2.f50032a, flaggedMessageEmbed.channelName);
+            compositeEncoder.o(serialDescriptor, 5, n2.f50033a, flaggedMessageEmbed.channelName);
         }
         if (compositeEncoder.z(serialDescriptor, 6) || flaggedMessageEmbed.username != null) {
-            compositeEncoder.o(serialDescriptor, 6, n2.f50032a, flaggedMessageEmbed.username);
+            compositeEncoder.o(serialDescriptor, 6, n2.f50033a, flaggedMessageEmbed.username);
         }
         compositeEncoder.w(serialDescriptor, 7, flaggedMessageEmbed.usernameColor);
         if (compositeEncoder.z(serialDescriptor, 8) || flaggedMessageEmbed.roleColor != null) {
-            compositeEncoder.o(serialDescriptor, 8, p0.f50048a, flaggedMessageEmbed.roleColor);
+            compositeEncoder.o(serialDescriptor, 8, p0.f50049a, flaggedMessageEmbed.roleColor);
         }
         compositeEncoder.x(serialDescriptor, 9, flaggedMessageEmbed.shouldShowRoleDot);
         if (compositeEncoder.z(serialDescriptor, 10) || flaggedMessageEmbed.avatarURL != null) {
-            compositeEncoder.o(serialDescriptor, 10, n2.f50032a, flaggedMessageEmbed.avatarURL);
+            compositeEncoder.o(serialDescriptor, 10, n2.f50033a, flaggedMessageEmbed.avatarURL);
         }
         if (compositeEncoder.z(serialDescriptor, 11) || !Intrinsics.areEqual(flaggedMessageEmbed.communicationDisabled, Boolean.FALSE)) {
-            compositeEncoder.o(serialDescriptor, 11, h.f49996a, flaggedMessageEmbed.communicationDisabled);
+            compositeEncoder.o(serialDescriptor, 11, h.f49997a, flaggedMessageEmbed.communicationDisabled);
         }
     }
 
     @NotNull
     /* renamed from: component1-3Eiw7ao  reason: not valid java name */
     public final String m245component13Eiw7ao() {
-        return this.f9235id;
+        return this.f9236id;
     }
 
     public final boolean component10() {
@@ -174,7 +174,7 @@ public final class FlaggedMessageEmbed {
         }
         if (obj instanceof FlaggedMessageEmbed) {
             FlaggedMessageEmbed flaggedMessageEmbed = (FlaggedMessageEmbed) obj;
-            return MessageId.m1088equalsimpl0(this.f9235id, flaggedMessageEmbed.f9235id) && ChannelId.m1062equalsimpl0(this.channelId, flaggedMessageEmbed.channelId) && Intrinsics.areEqual(this.guildId, flaggedMessageEmbed.guildId) && Intrinsics.areEqual(this.userId, flaggedMessageEmbed.userId) && Intrinsics.areEqual(this.content, flaggedMessageEmbed.content) && Intrinsics.areEqual(this.channelName, flaggedMessageEmbed.channelName) && Intrinsics.areEqual(this.username, flaggedMessageEmbed.username) && this.usernameColor == flaggedMessageEmbed.usernameColor && Intrinsics.areEqual(this.roleColor, flaggedMessageEmbed.roleColor) && this.shouldShowRoleDot == flaggedMessageEmbed.shouldShowRoleDot && Intrinsics.areEqual(this.avatarURL, flaggedMessageEmbed.avatarURL) && Intrinsics.areEqual(this.communicationDisabled, flaggedMessageEmbed.communicationDisabled);
+            return MessageId.m1088equalsimpl0(this.f9236id, flaggedMessageEmbed.f9236id) && ChannelId.m1062equalsimpl0(this.channelId, flaggedMessageEmbed.channelId) && Intrinsics.areEqual(this.guildId, flaggedMessageEmbed.guildId) && Intrinsics.areEqual(this.userId, flaggedMessageEmbed.userId) && Intrinsics.areEqual(this.content, flaggedMessageEmbed.content) && Intrinsics.areEqual(this.channelName, flaggedMessageEmbed.channelName) && Intrinsics.areEqual(this.username, flaggedMessageEmbed.username) && this.usernameColor == flaggedMessageEmbed.usernameColor && Intrinsics.areEqual(this.roleColor, flaggedMessageEmbed.roleColor) && this.shouldShowRoleDot == flaggedMessageEmbed.shouldShowRoleDot && Intrinsics.areEqual(this.avatarURL, flaggedMessageEmbed.avatarURL) && Intrinsics.areEqual(this.communicationDisabled, flaggedMessageEmbed.communicationDisabled);
         }
         return false;
     }
@@ -208,7 +208,7 @@ public final class FlaggedMessageEmbed {
     @NotNull
     /* renamed from: getId-3Eiw7ao  reason: not valid java name */
     public final String m252getId3Eiw7ao() {
-        return this.f9235id;
+        return this.f9236id;
     }
 
     public final Integer getRoleColor() {
@@ -233,7 +233,7 @@ public final class FlaggedMessageEmbed {
     }
 
     public int hashCode() {
-        int m1089hashCodeimpl = ((MessageId.m1089hashCodeimpl(this.f9235id) * 31) + ChannelId.m1063hashCodeimpl(this.channelId)) * 31;
+        int m1089hashCodeimpl = ((MessageId.m1089hashCodeimpl(this.f9236id) * 31) + ChannelId.m1063hashCodeimpl(this.channelId)) * 31;
         GuildId guildId = this.guildId;
         int m1076hashCodeimpl = (m1089hashCodeimpl + (guildId == null ? 0 : GuildId.m1076hashCodeimpl(guildId.m1080unboximpl()))) * 31;
         UserId userId = this.userId;
@@ -254,7 +254,7 @@ public final class FlaggedMessageEmbed {
 
     @NotNull
     public String toString() {
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.f9235id);
+        String m1091toStringimpl = MessageId.m1091toStringimpl(this.f9236id);
         String m1065toStringimpl = ChannelId.m1065toStringimpl(this.channelId);
         GuildId guildId = this.guildId;
         UserId userId = this.userId;
@@ -277,7 +277,7 @@ public final class FlaggedMessageEmbed {
         if (643 != (i10 & 643)) {
             v1.b(i10, 643, FlaggedMessageEmbed$$serializer.INSTANCE.getDescriptor());
         }
-        this.f9235id = str;
+        this.f9236id = str;
         this.channelId = channelId.m1067unboximpl();
         if ((i10 & 4) == 0) {
             this.guildId = null;
@@ -325,7 +325,7 @@ public final class FlaggedMessageEmbed {
 
     private FlaggedMessageEmbed(String id2, long j10, GuildId guildId, UserId userId, StructurableText structurableText, String str, String str2, int i10, Integer num, boolean z10, String str3, Boolean bool) {
         Intrinsics.checkNotNullParameter(id2, "id");
-        this.f9235id = id2;
+        this.f9236id = id2;
         this.channelId = j10;
         this.guildId = guildId;
         this.userId = userId;

@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/channel/canJoinVoiceChannel.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun38866: for (var _fun38866_ip = 0;;) switch (_fun38866_ip) {
+        _fun38888: for (var _fun38888_ip = 0;;) switch (_fun38888_ip) {
             case 0:
                 var4 = arg0;
                 var3 = arg1;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var0 = var5.bind(var0)(var2);
                 if (var0) {
-                    _fun38866_ip = 60;
-                    continue _fun38866
+                    _fun38888_ip = 60;
+                    continue _fun38888
                 }
             case 28:
                 var2 = var3.canBasicChannel;

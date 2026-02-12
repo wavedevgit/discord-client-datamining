@@ -9,7 +9,7 @@ public class a extends u2.a {
     public static final Parcelable.Creator<a> CREATOR = new C0710a();
 
     /* renamed from: i  reason: collision with root package name */
-    public final SimpleArrayMap f51618i;
+    public final SimpleArrayMap f51619i;
 
     /* renamed from: vh.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -41,19 +41,19 @@ public class a extends u2.a {
     }
 
     public String toString() {
-        return "ExtendableSavedState{" + Integer.toHexString(System.identityHashCode(this)) + " states=" + this.f51618i + "}";
+        return "ExtendableSavedState{" + Integer.toHexString(System.identityHashCode(this)) + " states=" + this.f51619i + "}";
     }
 
     @Override // u2.a, android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
         super.writeToParcel(parcel, i10);
-        int size = this.f51618i.size();
+        int size = this.f51619i.size();
         parcel.writeInt(size);
         String[] strArr = new String[size];
         Bundle[] bundleArr = new Bundle[size];
         for (int i11 = 0; i11 < size; i11++) {
-            strArr[i11] = (String) this.f51618i.f(i11);
-            bundleArr[i11] = (Bundle) this.f51618i.j(i11);
+            strArr[i11] = (String) this.f51619i.f(i11);
+            bundleArr[i11] = (Bundle) this.f51619i.j(i11);
         }
         parcel.writeStringArray(strArr);
         parcel.writeTypedArray(bundleArr, 0);
@@ -61,7 +61,7 @@ public class a extends u2.a {
 
     public a(Parcelable parcelable) {
         super(parcelable);
-        this.f51618i = new SimpleArrayMap();
+        this.f51619i = new SimpleArrayMap();
     }
 
     private a(Parcel parcel, ClassLoader classLoader) {
@@ -71,9 +71,9 @@ public class a extends u2.a {
         parcel.readStringArray(strArr);
         Bundle[] bundleArr = new Bundle[readInt];
         parcel.readTypedArray(bundleArr, Bundle.CREATOR);
-        this.f51618i = new SimpleArrayMap(readInt);
+        this.f51619i = new SimpleArrayMap(readInt);
         for (int i10 = 0; i10 < readInt; i10++) {
-            this.f51618i.put(strArr[i10], bundleArr[i10]);
+            this.f51619i.put(strArr[i10], bundleArr[i10]);
         }
     }
 }

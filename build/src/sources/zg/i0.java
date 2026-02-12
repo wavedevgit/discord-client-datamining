@@ -8,21 +8,21 @@ import java.util.Queue;
 public final class i0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f56443a = new Object();
+    private final Object f56444a = new Object();
 
     /* renamed from: b  reason: collision with root package name */
-    private Queue f56444b;
+    private Queue f56445b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f56445c;
+    private boolean f56446c;
 
     public final void a(h0 h0Var) {
-        synchronized (this.f56443a) {
+        synchronized (this.f56444a) {
             try {
-                if (this.f56444b == null) {
-                    this.f56444b = new ArrayDeque();
+                if (this.f56445b == null) {
+                    this.f56445b = new ArrayDeque();
                 }
-                this.f56444b.add(h0Var);
+                this.f56445b.add(h0Var);
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -31,15 +31,15 @@ public final class i0 {
 
     public final void b(Task task) {
         h0 h0Var;
-        synchronized (this.f56443a) {
-            if (this.f56444b != null && !this.f56445c) {
-                this.f56445c = true;
+        synchronized (this.f56444a) {
+            if (this.f56445b != null && !this.f56446c) {
+                this.f56446c = true;
                 while (true) {
-                    synchronized (this.f56443a) {
+                    synchronized (this.f56444a) {
                         try {
-                            h0Var = (h0) this.f56444b.poll();
+                            h0Var = (h0) this.f56445b.poll();
                             if (h0Var == null) {
-                                this.f56445c = false;
+                                this.f56446c = false;
                                 return;
                             }
                         } finally {

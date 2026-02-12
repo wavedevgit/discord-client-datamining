@@ -6,15 +6,15 @@ import android.util.LogPrinter;
 public final class e {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Uri f48760b;
+    private static final Uri f48761b;
 
     /* renamed from: a  reason: collision with root package name */
-    private final LogPrinter f48761a = new LogPrinter(4, "GA/LogCatTransport");
+    private final LogPrinter f48762a = new LogPrinter(4, "GA/LogCatTransport");
 
     static {
         Uri.Builder builder = new Uri.Builder();
         builder.scheme("uri");
         builder.authority("local");
-        f48760b = builder.build();
+        f48761b = builder.build();
     }
 }

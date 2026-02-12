@@ -3,16 +3,16 @@ package net.time4j;
 abstract class b extends cu.d implements c {
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient o f37256e;
+    private final transient o f37257e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient o f37257i;
+    private final transient o f37258i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(String str) {
         super(str);
-        this.f37256e = new s0(this, 0);
-        this.f37257i = new s0(this, 1);
+        this.f37257e = new s0(this, 0);
+        this.f37258i = new s0(this, 1);
     }
 
     public o F(Comparable comparable) {

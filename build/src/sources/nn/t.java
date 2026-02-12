@@ -15,41 +15,41 @@ import nn.d;
 public final class t extends d {
 
     /* renamed from: r0  reason: collision with root package name */
-    public static final a f38105r0 = new a(null);
+    public static final a f38106r0 = new a(null);
     private float O;
     private float P;
     private final float Q;
     private float R;
 
     /* renamed from: f0  reason: collision with root package name */
-    private float f38111f0;
+    private float f38112f0;
 
     /* renamed from: g0  reason: collision with root package name */
-    private float f38112g0;
+    private float f38113g0;
 
     /* renamed from: h0  reason: collision with root package name */
-    private float f38113h0;
+    private float f38114h0;
 
     /* renamed from: i0  reason: collision with root package name */
-    private float f38114i0;
+    private float f38115i0;
 
     /* renamed from: j0  reason: collision with root package name */
-    private float f38115j0;
+    private float f38116j0;
 
     /* renamed from: k0  reason: collision with root package name */
-    private float f38116k0;
+    private float f38117k0;
 
     /* renamed from: l0  reason: collision with root package name */
-    private VelocityTracker f38117l0;
+    private VelocityTracker f38118l0;
 
     /* renamed from: m0  reason: collision with root package name */
-    private boolean f38118m0;
+    private boolean f38119m0;
 
     /* renamed from: n0  reason: collision with root package name */
-    private long f38119n0;
+    private long f38120n0;
 
     /* renamed from: p0  reason: collision with root package name */
-    private Handler f38121p0;
+    private Handler f38122p0;
     private float S = Float.MAX_VALUE;
     private float T = Float.MIN_VALUE;
     private float U = Float.MIN_VALUE;
@@ -60,22 +60,22 @@ public final class t extends d {
     private float Z = Float.MAX_VALUE;
 
     /* renamed from: a0  reason: collision with root package name */
-    private float f38106a0 = Float.MAX_VALUE;
+    private float f38107a0 = Float.MAX_VALUE;
 
     /* renamed from: b0  reason: collision with root package name */
-    private float f38107b0 = Float.MAX_VALUE;
+    private float f38108b0 = Float.MAX_VALUE;
 
     /* renamed from: c0  reason: collision with root package name */
-    private float f38108c0 = Float.MAX_VALUE;
+    private float f38109c0 = Float.MAX_VALUE;
 
     /* renamed from: d0  reason: collision with root package name */
-    private int f38109d0 = 1;
+    private int f38110d0 = 1;
 
     /* renamed from: e0  reason: collision with root package name */
-    private int f38110e0 = 10;
+    private int f38111e0 = 10;
 
     /* renamed from: o0  reason: collision with root package name */
-    private final Runnable f38120o0 = new Runnable() { // from class: nn.s
+    private final Runnable f38121o0 = new Runnable() { // from class: nn.s
         @Override // java.lang.Runnable
         public final void run() {
             t.l1(t.this);
@@ -83,7 +83,7 @@ public final class t extends d {
     };
 
     /* renamed from: q0  reason: collision with root package name */
-    private z f38122q0 = new z(0.0d, 0.0d, 0.0d, 0.0d, 0.0d, 31, null);
+    private z f38123q0 = new z(0.0d, 0.0d, 0.0d, 0.0d, 0.0d, 31, null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -109,13 +109,13 @@ public final class t extends d {
     public static final class b extends d.c {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f38123d = new a(null);
+        public static final a f38124d = new a(null);
 
         /* renamed from: b  reason: collision with root package name */
-        private final Class f38124b = t.class;
+        private final Class f38125b = t.class;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f38125c = "PanGestureHandler";
+        private final String f38126c = "PanGestureHandler";
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a {
@@ -129,12 +129,12 @@ public final class t extends d {
 
         @Override // nn.d.c
         public String d() {
-            return this.f38125c;
+            return this.f38126c;
         }
 
         @Override // nn.d.c
         public Class e() {
-            return this.f38124b;
+            return this.f38125b;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -194,15 +194,15 @@ public final class t extends d {
                 z10 = true;
             }
             if (config.hasKey("minVelocity")) {
-                handler.f38108c0 = PixelUtil.toPixelFromDIP(config.getDouble("minVelocity"));
+                handler.f38109c0 = PixelUtil.toPixelFromDIP(config.getDouble("minVelocity"));
                 z10 = true;
             }
             if (config.hasKey("minVelocityX")) {
-                handler.f38106a0 = PixelUtil.toPixelFromDIP(config.getDouble("minVelocityX"));
+                handler.f38107a0 = PixelUtil.toPixelFromDIP(config.getDouble("minVelocityX"));
                 z10 = true;
             }
             if (config.hasKey("minVelocityY")) {
-                handler.f38107b0 = PixelUtil.toPixelFromDIP(config.getDouble("minVelocityY"));
+                handler.f38108b0 = PixelUtil.toPixelFromDIP(config.getDouble("minVelocityY"));
             } else {
                 z11 = z10;
             }
@@ -212,16 +212,16 @@ public final class t extends d {
                 handler.R = Float.MAX_VALUE;
             }
             if (config.hasKey("minPointers")) {
-                handler.f38109d0 = config.getInt("minPointers");
+                handler.f38110d0 = config.getInt("minPointers");
             }
             if (config.hasKey("maxPointers")) {
-                handler.f38110e0 = config.getInt("maxPointers");
+                handler.f38111e0 = config.getInt("maxPointers");
             }
             if (config.hasKey("avgTouches")) {
-                handler.f38118m0 = config.getBoolean("avgTouches");
+                handler.f38119m0 = config.getBoolean("avgTouches");
             }
             if (config.hasKey("activateAfterLongPress")) {
-                handler.f38119n0 = config.getInt("activateAfterLongPress");
+                handler.f38120n0 = config.getInt("activateAfterLongPress");
             }
         }
     }
@@ -240,7 +240,7 @@ public final class t extends d {
     }
 
     private final boolean r1() {
-        float f10 = (this.f38115j0 - this.f38111f0) + this.f38113h0;
+        float f10 = (this.f38116j0 - this.f38112f0) + this.f38114h0;
         float f11 = this.S;
         if (f11 != Float.MAX_VALUE && f10 < f11) {
             return true;
@@ -249,7 +249,7 @@ public final class t extends d {
         if (f12 != Float.MIN_VALUE && f10 > f12) {
             return true;
         }
-        float f13 = (this.f38116k0 - this.f38112g0) + this.f38114i0;
+        float f13 = (this.f38117k0 - this.f38113g0) + this.f38115i0;
         float f14 = this.W;
         if (f14 != Float.MAX_VALUE && f13 < f14) {
             return true;
@@ -264,17 +264,17 @@ public final class t extends d {
             return true;
         }
         float f18 = this.O;
-        float f19 = this.f38106a0;
+        float f19 = this.f38107a0;
         if (f19 != Float.MAX_VALUE && ((f19 < 0.0f && f18 <= f19) || (0.0f <= f19 && f19 <= f18))) {
             return true;
         }
         float f20 = this.P;
-        float f21 = this.f38107b0;
+        float f21 = this.f38108b0;
         if (f21 != Float.MAX_VALUE && ((f21 < 0.0f && f18 <= f21) || (0.0f <= f21 && f21 <= f18))) {
             return true;
         }
         float f22 = (f18 * f18) + (f20 * f20);
-        float f23 = this.f38108c0;
+        float f23 = this.f38109c0;
         if (f23 != Float.MAX_VALUE && f22 >= f23 * f23) {
             return true;
         }
@@ -282,13 +282,13 @@ public final class t extends d {
     }
 
     private final boolean s1() {
-        float f10 = (this.f38115j0 - this.f38111f0) + this.f38113h0;
-        float f11 = (this.f38116k0 - this.f38112g0) + this.f38114i0;
-        if (this.f38119n0 > 0) {
+        float f10 = (this.f38116j0 - this.f38112f0) + this.f38114h0;
+        float f11 = (this.f38117k0 - this.f38113g0) + this.f38115i0;
+        if (this.f38120n0 > 0) {
             float f12 = (f10 * f10) + (f11 * f11);
             float f13 = this.Q;
             if (f12 > f13 * f13) {
-                Handler handler = this.f38121p0;
+                Handler handler = this.f38122p0;
                 if (handler != null) {
                     handler.removeCallbacksAndMessages(null);
                 }
@@ -316,7 +316,7 @@ public final class t extends d {
 
     @Override // nn.d
     protected void j0() {
-        Handler handler = this.f38121p0;
+        Handler handler = this.f38122p0;
         if (handler != null) {
             handler.removeCallbacksAndMessages(null);
         }
@@ -336,65 +336,65 @@ public final class t extends d {
         Intrinsics.checkNotNullParameter(sourceEvent, "sourceEvent");
         if (J0(sourceEvent)) {
             if (event.getToolType(0) == 2) {
-                this.f38122q0 = z.f38173f.a(event);
+                this.f38123q0 = z.f38174f.a(event);
             }
             int S = S();
             int actionMasked = sourceEvent.getActionMasked();
             if (actionMasked != 5 && actionMasked != 6) {
-                k kVar = k.f38084a;
-                this.f38115j0 = kVar.b(sourceEvent, this.f38118m0);
-                this.f38116k0 = kVar.c(sourceEvent, this.f38118m0);
+                k kVar = k.f38085a;
+                this.f38116j0 = kVar.b(sourceEvent, this.f38119m0);
+                this.f38117k0 = kVar.c(sourceEvent, this.f38119m0);
             } else {
-                this.f38113h0 += this.f38115j0 - this.f38111f0;
-                this.f38114i0 += this.f38116k0 - this.f38112g0;
-                k kVar2 = k.f38084a;
-                this.f38115j0 = kVar2.b(sourceEvent, this.f38118m0);
-                float c10 = kVar2.c(sourceEvent, this.f38118m0);
-                this.f38116k0 = c10;
-                this.f38111f0 = this.f38115j0;
-                this.f38112g0 = c10;
+                this.f38114h0 += this.f38116j0 - this.f38112f0;
+                this.f38115i0 += this.f38117k0 - this.f38113g0;
+                k kVar2 = k.f38085a;
+                this.f38116j0 = kVar2.b(sourceEvent, this.f38119m0);
+                float c10 = kVar2.c(sourceEvent, this.f38119m0);
+                this.f38117k0 = c10;
+                this.f38112f0 = this.f38116j0;
+                this.f38113g0 = c10;
             }
-            if (S == 0 && sourceEvent.getPointerCount() >= this.f38109d0) {
+            if (S == 0 && sourceEvent.getPointerCount() >= this.f38110d0) {
                 t0();
-                this.f38113h0 = 0.0f;
-                this.f38114i0 = 0.0f;
+                this.f38114h0 = 0.0f;
+                this.f38115i0 = 0.0f;
                 this.O = 0.0f;
                 this.P = 0.0f;
                 VelocityTracker obtain = VelocityTracker.obtain();
-                this.f38117l0 = obtain;
-                f38105r0.b(obtain, sourceEvent);
+                this.f38118l0 = obtain;
+                f38106r0.b(obtain, sourceEvent);
                 p();
-                if (this.f38119n0 > 0) {
-                    if (this.f38121p0 == null) {
-                        this.f38121p0 = new Handler(Looper.getMainLooper());
+                if (this.f38120n0 > 0) {
+                    if (this.f38122p0 == null) {
+                        this.f38122p0 = new Handler(Looper.getMainLooper());
                     }
-                    Handler handler = this.f38121p0;
+                    Handler handler = this.f38122p0;
                     Intrinsics.checkNotNull(handler);
-                    handler.postDelayed(this.f38120o0, this.f38119n0);
+                    handler.postDelayed(this.f38121o0, this.f38120n0);
                 }
             } else {
-                VelocityTracker velocityTracker = this.f38117l0;
+                VelocityTracker velocityTracker = this.f38118l0;
                 if (velocityTracker != null) {
-                    f38105r0.b(velocityTracker, sourceEvent);
-                    VelocityTracker velocityTracker2 = this.f38117l0;
+                    f38106r0.b(velocityTracker, sourceEvent);
+                    VelocityTracker velocityTracker2 = this.f38118l0;
                     Intrinsics.checkNotNull(velocityTracker2);
                     velocityTracker2.computeCurrentVelocity(1000);
-                    VelocityTracker velocityTracker3 = this.f38117l0;
+                    VelocityTracker velocityTracker3 = this.f38118l0;
                     Intrinsics.checkNotNull(velocityTracker3);
                     this.O = velocityTracker3.getXVelocity();
-                    VelocityTracker velocityTracker4 = this.f38117l0;
+                    VelocityTracker velocityTracker4 = this.f38118l0;
                     Intrinsics.checkNotNull(velocityTracker4);
                     this.P = velocityTracker4.getYVelocity();
                 }
             }
             if (actionMasked != 1 && actionMasked != 12) {
-                if (actionMasked == 5 && sourceEvent.getPointerCount() > this.f38110e0) {
+                if (actionMasked == 5 && sourceEvent.getPointerCount() > this.f38111e0) {
                     if (S == 4) {
                         q();
                     } else {
                         D();
                     }
-                } else if (actionMasked == 6 && S == 4 && sourceEvent.getPointerCount() < this.f38109d0) {
+                } else if (actionMasked == 6 && S == 4 && sourceEvent.getPointerCount() < this.f38110d0) {
                     D();
                 } else if (S == 2) {
                     if (s1()) {
@@ -412,30 +412,30 @@ public final class t extends d {
     }
 
     public final z m1() {
-        return this.f38122q0;
+        return this.f38123q0;
     }
 
     public final float n1() {
-        return (this.f38115j0 - this.f38111f0) + this.f38113h0;
+        return (this.f38116j0 - this.f38112f0) + this.f38114h0;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // nn.d
     public void o0() {
-        Handler handler = this.f38121p0;
+        Handler handler = this.f38122p0;
         if (handler != null) {
             handler.removeCallbacksAndMessages(null);
         }
-        VelocityTracker velocityTracker = this.f38117l0;
+        VelocityTracker velocityTracker = this.f38118l0;
         if (velocityTracker != null) {
             velocityTracker.recycle();
-            this.f38117l0 = null;
+            this.f38118l0 = null;
         }
-        this.f38122q0 = new z(0.0d, 0.0d, 0.0d, 0.0d, 0.0d, 31, null);
+        this.f38123q0 = new z(0.0d, 0.0d, 0.0d, 0.0d, 0.0d, 31, null);
     }
 
     public final float o1() {
-        return (this.f38116k0 - this.f38112g0) + this.f38114i0;
+        return (this.f38117k0 - this.f38113g0) + this.f38115i0;
     }
 
     public final float p1() {
@@ -457,19 +457,19 @@ public final class t extends d {
         this.X = Float.MIN_VALUE;
         this.Y = Float.MIN_VALUE;
         this.Z = Float.MAX_VALUE;
-        this.f38106a0 = Float.MAX_VALUE;
-        this.f38107b0 = Float.MAX_VALUE;
-        this.f38108c0 = Float.MAX_VALUE;
+        this.f38107a0 = Float.MAX_VALUE;
+        this.f38108b0 = Float.MAX_VALUE;
+        this.f38109c0 = Float.MAX_VALUE;
         this.R = this.Q;
-        this.f38109d0 = 1;
-        this.f38110e0 = 10;
-        this.f38119n0 = 0L;
-        this.f38118m0 = false;
+        this.f38110d0 = 1;
+        this.f38111e0 = 10;
+        this.f38120n0 = 0L;
+        this.f38119m0 = false;
     }
 
     @Override // nn.d
     public void t0() {
-        this.f38111f0 = this.f38115j0;
-        this.f38112g0 = this.f38116k0;
+        this.f38112f0 = this.f38116j0;
+        this.f38113g0 = this.f38117k0;
     }
 }

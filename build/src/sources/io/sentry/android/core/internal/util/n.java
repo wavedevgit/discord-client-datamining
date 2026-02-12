@@ -6,37 +6,37 @@ import java.util.concurrent.atomic.AtomicLong;
 public class n {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f28379a;
+    private final long f28380a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final io.sentry.transport.p f28380b;
+    private final io.sentry.transport.p f28381b;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f28382d;
+    private final int f28383d;
 
     /* renamed from: c  reason: collision with root package name */
-    private final AtomicInteger f28381c = new AtomicInteger(0);
+    private final AtomicInteger f28382c = new AtomicInteger(0);
 
     /* renamed from: e  reason: collision with root package name */
-    private final AtomicLong f28383e = new AtomicLong(0);
+    private final AtomicLong f28384e = new AtomicLong(0);
 
     public n(io.sentry.transport.p pVar, long j10, int i10) {
-        this.f28380b = pVar;
-        this.f28379a = j10;
-        this.f28382d = i10 <= 0 ? 1 : i10;
+        this.f28381b = pVar;
+        this.f28380a = j10;
+        this.f28383d = i10 <= 0 ? 1 : i10;
     }
 
     public boolean a() {
-        long a10 = this.f28380b.a();
-        if (this.f28383e.get() != 0 && this.f28383e.get() + this.f28379a > a10) {
-            if (this.f28381c.incrementAndGet() < this.f28382d) {
+        long a10 = this.f28381b.a();
+        if (this.f28384e.get() != 0 && this.f28384e.get() + this.f28380a > a10) {
+            if (this.f28382c.incrementAndGet() < this.f28383d) {
                 return false;
             }
-            this.f28381c.set(0);
+            this.f28382c.set(0);
             return true;
         }
-        this.f28381c.set(0);
-        this.f28383e.set(a10);
+        this.f28382c.set(0);
+        this.f28384e.set(a10);
         return false;
     }
 }

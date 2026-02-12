@@ -5,16 +5,16 @@ import java.util.List;
 abstract class i3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Class f14930a;
+    private static final Class f14931a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final w3 f14931b;
+    private static final w3 f14932b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final w3 f14932c;
+    private static final w3 f14933c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final /* synthetic */ int f14933d = 0;
+    public static final /* synthetic */ int f14934d = 0;
 
     static {
         Class<?> cls;
@@ -25,7 +25,7 @@ abstract class i3 {
         } catch (Throwable unused) {
             cls = null;
         }
-        f14930a = cls;
+        f14931a = cls;
         try {
             cls2 = Class.forName("com.google.protobuf.UnknownFieldSetSchema");
         } catch (Throwable unused2) {
@@ -37,8 +37,8 @@ abstract class i3 {
             } catch (Throwable unused3) {
             }
         }
-        f14931b = w3Var;
-        f14932c = new y3();
+        f14932b = w3Var;
+        f14933c = new y3();
     }
 
     public static void A(int i10, List list, o4 o4Var, boolean z10) {
@@ -323,11 +323,11 @@ abstract class i3 {
     }
 
     public static w3 t() {
-        return f14931b;
+        return f14932b;
     }
 
     public static w3 u() {
-        return f14932c;
+        return f14933c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -342,7 +342,7 @@ abstract class i3 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void w(f1 f1Var, Object obj, Object obj2) {
         j1 b10 = f1Var.b(obj2);
-        if (!b10.f14937a.isEmpty()) {
+        if (!b10.f14938a.isEmpty()) {
             f1Var.c(obj).f(b10);
         }
     }
@@ -354,7 +354,7 @@ abstract class i3 {
 
     public static void y(Class cls) {
         Class cls2;
-        if (!q1.class.isAssignableFrom(cls) && (cls2 = f14930a) != null && !cls2.isAssignableFrom(cls)) {
+        if (!q1.class.isAssignableFrom(cls) && (cls2 = f14931a) != null && !cls2.isAssignableFrom(cls)) {
             throw new IllegalArgumentException("Message classes must extend GeneratedMessage or GeneratedMessageLite");
         }
     }

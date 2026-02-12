@@ -19,45 +19,45 @@ final class l extends gu.c implements eu.a {
     private final d history;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient int f37561q;
+    private final transient int f37562q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static class a implements z {
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f37562d;
+        private final int f37563d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final d f37563e;
+        private final d f37564e;
 
         a(int i10, d dVar) {
-            this.f37562d = i10;
-            this.f37563e = dVar;
+            this.f37563d = i10;
+            this.f37564e = dVar;
         }
 
         /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
         private h b(q qVar, int i10) {
             fu.a aVar;
-            h e10 = this.f37563e.e((f0) qVar.k(f0.f37450z));
+            h e10 = this.f37564e.e((f0) qVar.k(f0.f37451z));
             fu.a aVar2 = fu.a.DUAL_DATING;
-            o v10 = this.f37563e.v();
-            int i11 = this.f37562d;
+            o v10 = this.f37564e.v();
+            int i11 = this.f37563d;
             switch (i11) {
                 case 2:
                     break;
                 case 3:
-                    return this.f37563e.a(h.i(e10.e(), e10.g(), i10, e10.d()));
+                    return this.f37564e.a(h.i(e10.e(), e10.g(), i10, e10.d()));
                 case 4:
                     return h.i(e10.e(), e10.g(), e10.f(), i10);
                 case 5:
-                    int h10 = e10.h(this.f37563e.v());
-                    h m10 = this.f37563e.m(e10.e(), h10);
-                    int u10 = this.f37563e.u(e10.e(), h10);
+                    int h10 = e10.h(this.f37564e.v());
+                    h m10 = this.f37564e.m(e10.e(), h10);
+                    int u10 = this.f37564e.u(e10.e(), h10);
                     if (i10 == 1) {
                         return m10;
                     }
                     if (i10 > 1 && i10 <= u10) {
-                        return this.f37563e.e((f0) this.f37563e.d(m10).R(bu.h.e(i10 - 1)));
+                        return this.f37564e.e((f0) this.f37564e.d(m10).R(bu.h.e(i10 - 1)));
                     }
                     throw new IllegalArgumentException("Out of range: " + i10);
                 case 6:
@@ -76,11 +76,11 @@ final class l extends gu.c implements eu.a {
                     if (g10 != 0) {
                         i12 = g10;
                     }
-                    return this.f37563e.a(h.k(e10.e(), i13 + i12, e10.f(), e10.d(), aVar2, v10));
+                    return this.f37564e.a(h.k(e10.e(), i13 + i12, e10.f(), e10.d(), aVar2, v10));
                 default:
-                    throw new UnsupportedOperationException("Unknown element index: " + this.f37562d);
+                    throw new UnsupportedOperationException("Unknown element index: " + this.f37563d);
             }
-            return this.f37563e.a(h.k(e10.e(), i10, e10.f(), e10.d(), aVar2, v10));
+            return this.f37564e.a(h.k(e10.e(), i10, e10.f(), e10.d(), aVar2, v10));
         }
 
         @Override // bu.z
@@ -103,15 +103,15 @@ final class l extends gu.c implements eu.a {
             int i11;
             int d10;
             try {
-                h e10 = this.f37563e.e((f0) qVar.k(f0.f37450z));
+                h e10 = this.f37564e.e((f0) qVar.k(f0.f37451z));
                 int i12 = 8;
                 int i13 = 999984973;
-                switch (this.f37562d) {
+                switch (this.f37563d) {
                     case 2:
                     case 6:
                     case 7:
                     case 8:
-                        d dVar = this.f37563e;
+                        d dVar = this.f37564e;
                         if (dVar != d.D) {
                             if (dVar == d.C) {
                                 if (e10.e() == j.BC) {
@@ -134,7 +134,7 @@ final class l extends gu.c implements eu.a {
                                 i13 = i10;
                             }
                         }
-                        if (this.f37562d == 8) {
+                        if (this.f37563d == 8) {
                             i13 = ((i13 - 1) / 100) + 1;
                         }
                         return Integer.valueOf(i13);
@@ -146,34 +146,34 @@ final class l extends gu.c implements eu.a {
                         i11 = i12;
                         break;
                     case 4:
-                        i11 = this.f37563e.k(e10).d(e10);
+                        i11 = this.f37564e.k(e10).d(e10);
                         b10 = b(qVar, i11);
                         break;
                     case 5:
-                        int u10 = this.f37563e.u(e10.e(), e10.h(this.f37563e.v()));
+                        int u10 = this.f37564e.u(e10.e(), e10.h(this.f37564e.v()));
                         if (u10 != -1) {
                             return Integer.valueOf(u10);
                         }
                         throw new r("Length of historic year undefined.");
                     default:
-                        throw new UnsupportedOperationException("Unknown element index: " + this.f37562d);
+                        throw new UnsupportedOperationException("Unknown element index: " + this.f37563d);
                 }
-                if (this.f37563e.B(b10)) {
+                if (this.f37564e.B(b10)) {
                     return Integer.valueOf(i11);
                 }
-                List p10 = this.f37563e.p();
+                List p10 = this.f37564e.p();
                 int size = p10.size() - 1;
                 while (true) {
                     if (size >= 0) {
                         f fVar = (f) p10.get(size);
-                        if (e10.compareTo(fVar.f37538c) < 0) {
-                            b10 = fVar.f37539d;
+                        if (e10.compareTo(fVar.f37539c) < 0) {
+                            b10 = fVar.f37540d;
                         } else {
                             size--;
                         }
                     }
                 }
-                if (this.f37562d == 3) {
+                if (this.f37563d == 3) {
                     d10 = b10.f();
                 } else {
                     d10 = b10.d();
@@ -189,28 +189,28 @@ final class l extends gu.c implements eu.a {
         public Integer q(q qVar) {
             int d10;
             try {
-                h e10 = this.f37563e.e((f0) qVar.k(f0.f37450z));
-                int i10 = this.f37562d;
+                h e10 = this.f37564e.e((f0) qVar.k(f0.f37451z));
+                int i10 = this.f37563d;
                 if (i10 != 2 && i10 != 6 && i10 != 7 && i10 != 8) {
                     h b10 = b(qVar, 1);
-                    if (this.f37563e.B(b10)) {
+                    if (this.f37564e.B(b10)) {
                         return 1;
                     }
-                    if (this.f37562d != 5) {
-                        List p10 = this.f37563e.p();
+                    if (this.f37563d != 5) {
+                        List p10 = this.f37564e.p();
                         int size = p10.size() - 1;
                         while (true) {
                             if (size < 0) {
                                 break;
                             }
                             f fVar = (f) p10.get(size);
-                            if (e10.compareTo(fVar.f37538c) >= 0) {
-                                b10 = fVar.f37538c;
+                            if (e10.compareTo(fVar.f37539c) >= 0) {
+                                b10 = fVar.f37539c;
                                 break;
                             }
                             size--;
                         }
-                        if (this.f37562d == 3) {
+                        if (this.f37563d == 3) {
                             d10 = b10.f();
                         } else {
                             d10 = b10.d();
@@ -233,9 +233,9 @@ final class l extends gu.c implements eu.a {
         public Integer y(q qVar) {
             int g10;
             try {
-                f0 f0Var = (f0) qVar.k(f0.f37450z);
-                h e10 = this.f37563e.e(f0Var);
-                switch (this.f37562d) {
+                f0 f0Var = (f0) qVar.k(f0.f37451z);
+                h e10 = this.f37564e.e(f0Var);
+                switch (this.f37563d) {
                     case 2:
                         g10 = e10.g();
                         break;
@@ -246,17 +246,17 @@ final class l extends gu.c implements eu.a {
                         g10 = e10.d();
                         break;
                     case 5:
-                        g10 = (int) ((f0Var.i() - this.f37563e.d(this.f37563e.m(e10.e(), e10.h(this.f37563e.v()))).i()) + 1);
+                        g10 = (int) ((f0Var.i() - this.f37564e.d(this.f37564e.m(e10.e(), e10.h(this.f37564e.v()))).i()) + 1);
                         break;
                     case 6:
                     case 7:
-                        g10 = e10.h(this.f37563e.v());
+                        g10 = e10.h(this.f37564e.v());
                         break;
                     case 8:
                         g10 = ((e10.g() - 1) / 100) + 1;
                         break;
                     default:
-                        throw new UnsupportedOperationException("Unknown element index: " + this.f37562d);
+                        throw new UnsupportedOperationException("Unknown element index: " + this.f37563d);
                 }
                 return Integer.valueOf(g10);
             } catch (IllegalArgumentException e11) {
@@ -271,7 +271,7 @@ final class l extends gu.c implements eu.a {
                 return false;
             }
             try {
-                return this.f37563e.B(b(qVar, num.intValue()));
+                return this.f37564e.B(b(qVar, num.intValue()));
             } catch (IllegalArgumentException unused) {
                 return false;
             }
@@ -281,7 +281,7 @@ final class l extends gu.c implements eu.a {
         /* renamed from: j */
         public q x(q qVar, Integer num, boolean z10) {
             if (num != null) {
-                return qVar.E(f0.f37450z, this.f37563e.d(b(qVar, num.intValue())));
+                return qVar.E(f0.f37451z, this.f37564e.d(b(qVar, num.intValue())));
             }
             throw new IllegalArgumentException("Missing historic element value.");
         }
@@ -291,7 +291,7 @@ final class l extends gu.c implements eu.a {
     public l(char c10, int i10, int i11, d dVar, int i12) {
         super(O(i12), c10, i10, i11);
         this.history = dVar;
-        this.f37561q = i12;
+        this.f37562q = i12;
     }
 
     private void H(String str, int i10) {
@@ -338,7 +338,7 @@ final class l extends gu.c implements eu.a {
     }
 
     private s K(bu.d dVar, cu.m mVar) {
-        return cu.b.d((Locale) dVar.b(cu.a.f21110c, Locale.ROOT)).l((v) dVar.b(cu.a.f21114g, v.WIDE), mVar);
+        return cu.b.d((Locale) dVar.b(cu.a.f21111c, Locale.ROOT)).l((v) dVar.b(cu.a.f21115g, v.WIDE), mVar);
     }
 
     private static String L(String str, int i10, char c10) {
@@ -362,7 +362,7 @@ final class l extends gu.c implements eu.a {
         int i12 = 0;
         long j10 = 0;
         if (jVar.o()) {
-            if (jVar == cu.j.f21168d && charSequence.charAt(i10) == '-') {
+            if (jVar == cu.j.f21169d && charSequence.charAt(i10) == '-') {
                 i11 = i10 + 1;
                 z10 = true;
             } else {
@@ -474,8 +474,8 @@ final class l extends gu.c implements eu.a {
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // bu.e
     public z c(x xVar) {
-        if (xVar.E(f0.f37450z)) {
-            return new a(this.f37561q, this.history);
+        if (xVar.E(f0.f37451z)) {
+            return new a(this.f37562q, this.history);
         }
         return null;
     }
@@ -489,15 +489,15 @@ final class l extends gu.c implements eu.a {
     public Integer r(CharSequence charSequence, ParsePosition parsePosition, bu.d dVar, q qVar) {
         char c10;
         cu.g gVar;
-        int i10 = this.f37561q;
+        int i10 = this.f37562q;
         if (i10 == 3) {
             int index = parsePosition.getIndex();
-            if (((Integer) dVar.b(eu.a.f23267c, 0)).intValue() == 0) {
-                bu.c cVar = cu.a.f21115h;
+            if (((Integer) dVar.b(eu.a.f23268c, 0)).intValue() == 0) {
+                bu.c cVar = cu.a.f21116h;
                 cu.m mVar = cu.m.FORMAT;
                 cu.m mVar2 = (cu.m) dVar.b(cVar, mVar);
                 b0 b0Var = (b0) K(dVar, mVar2).c(charSequence, parsePosition, b0.class, dVar);
-                if (b0Var == null && ((Boolean) dVar.b(cu.a.f21118k, Boolean.TRUE)).booleanValue()) {
+                if (b0Var == null && ((Boolean) dVar.b(cu.a.f21119k, Boolean.TRUE)).booleanValue()) {
                     parsePosition.setErrorIndex(-1);
                     parsePosition.setIndex(index);
                     if (mVar2 == mVar) {
@@ -513,8 +513,8 @@ final class l extends gu.c implements eu.a {
         } else if (i10 == 6 || i10 == 7 || i10 == 8) {
             throw new r("Not parseable as text element: " + name());
         }
-        cu.j jVar = (cu.j) dVar.b(cu.a.f21119l, cu.j.f21168d);
-        bu.c cVar2 = cu.a.f21120m;
+        cu.j jVar = (cu.j) dVar.b(cu.a.f21120l, cu.j.f21169d);
+        bu.c cVar2 = cu.a.f21121m;
         if (dVar.a(cVar2)) {
             c10 = ((Character) dVar.c(cVar2)).charValue();
         } else if (jVar.o()) {
@@ -526,14 +526,14 @@ final class l extends gu.c implements eu.a {
         if (jVar.o()) {
             gVar = cu.g.SMART;
         } else {
-            gVar = (cu.g) dVar.b(cu.a.f21113f, cu.g.SMART);
+            gVar = (cu.g) dVar.b(cu.a.f21114f, cu.g.SMART);
         }
         cu.g gVar2 = gVar;
         int index2 = parsePosition.getIndex();
         int N = N(jVar, c11, charSequence, index2, parsePosition, gVar2);
         int index3 = parsePosition.getIndex();
         int i11 = 2;
-        if (this.f37561q == 2 && index3 > index2 && !o.f37574d.equals(this.history.v()) && index3 < charSequence.length() && charSequence.charAt(index3) == '/') {
+        if (this.f37562q == 2 && index3 > index2 && !o.f37575d.equals(this.history.v()) && index3 < charSequence.length() && charSequence.charAt(index3) == '/') {
             bu.c cVar3 = d.A;
             fu.a aVar = fu.a.DUAL_DATING;
             if (dVar.b(cVar3, aVar) == aVar) {
@@ -543,19 +543,19 @@ final class l extends gu.c implements eu.a {
                 if (index4 == i12) {
                     parsePosition.setIndex(index3);
                 } else {
-                    if (this.history.v().f(j.AD, N) != n.f37571s) {
+                    if (this.history.v().f(j.AD, N) != n.f37572s) {
                         i11 = 1;
                     }
                     int J = J(N, N2, i11);
                     if (jVar.o() && J != Integer.MAX_VALUE) {
                         if (qVar != null) {
-                            qVar.C(gu.c.f26036p, N);
+                            qVar.C(gu.c.f26037p, N);
                         }
                         index3 = index4;
                         N = J;
                     } else if (Math.abs(N2 - N) <= i11) {
                         if (qVar != null) {
-                            qVar.C(gu.c.f26036p, N);
+                            qVar.C(gu.c.f26037p, N);
                         }
                         N = N2;
                         index3 = index4;
@@ -576,7 +576,7 @@ final class l extends gu.c implements eu.a {
     public void t(bu.o oVar, Appendable appendable, bu.d dVar, cu.j jVar, char c10, int i10, int i11) {
         h hVar;
         int h10;
-        if (this.f37561q == 5) {
+        if (this.f37562q == 5) {
             appendable.append(String.valueOf(oVar.k(this.history.h())));
             return;
         }
@@ -585,7 +585,7 @@ final class l extends gu.c implements eu.a {
         } else {
             hVar = (h) oVar.k(this.history.f());
         }
-        int i12 = this.f37561q;
+        int i12 = this.f37562q;
         if (i12 != 2) {
             if (i12 != 3) {
                 if (i12 == 4) {
@@ -594,10 +594,10 @@ final class l extends gu.c implements eu.a {
                 }
                 throw new r("Not printable as text: " + name());
             }
-            int intValue = ((Integer) dVar.b(eu.a.f23267c, 0)).intValue();
+            int intValue = ((Integer) dVar.b(eu.a.f23268c, 0)).intValue();
             int f10 = hVar.f();
             if (intValue == 0) {
-                appendable.append(K(dVar, (cu.m) dVar.b(cu.a.f21115h, cu.m.FORMAT)).f(b0.f(f10)));
+                appendable.append(K(dVar, (cu.m) dVar.b(cu.a.f21116h, cu.m.FORMAT)).f(b0.f(f10)));
                 return;
             }
             String t10 = jVar.t(f10);
@@ -610,7 +610,7 @@ final class l extends gu.c implements eu.a {
         o v10 = this.history.v();
         int g10 = hVar.g();
         String str = null;
-        if (!o.f37574d.equals(v10) && (h10 = hVar.h(v10)) != g10) {
+        if (!o.f37575d.equals(v10) && (h10 = hVar.h(v10)) != g10) {
             bu.c cVar = d.A;
             fu.a aVar = fu.a.DUAL_DATING;
             if (dVar.b(cVar, aVar) == aVar) {
@@ -649,8 +649,8 @@ final class l extends gu.c implements eu.a {
     @Override // cu.t
     public void w(bu.o oVar, Appendable appendable, bu.d dVar) {
         char c10;
-        cu.j jVar = (cu.j) dVar.b(cu.a.f21119l, cu.j.f21168d);
-        bu.c cVar = cu.a.f21120m;
+        cu.j jVar = (cu.j) dVar.b(cu.a.f21120l, cu.j.f21169d);
+        bu.c cVar = cu.a.f21121m;
         if (dVar.a(cVar)) {
             c10 = ((Character) dVar.c(cVar)).charValue();
         } else if (jVar.o()) {

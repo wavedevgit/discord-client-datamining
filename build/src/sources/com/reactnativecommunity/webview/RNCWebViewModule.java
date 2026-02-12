@@ -55,14 +55,14 @@ public class RNCWebViewModule extends ReactContextBaseJavaModule implements Acti
     public class a implements PermissionListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ String f18359d;
+        final /* synthetic */ String f18360d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ String f18360e;
+        final /* synthetic */ String f18361e;
 
         a(String str, String str2) {
-            this.f18359d = str;
-            this.f18360e = str2;
+            this.f18360d = str;
+            this.f18361e = str2;
         }
 
         @Override // com.facebook.react.modules.core.PermissionListener
@@ -72,10 +72,10 @@ public class RNCWebViewModule extends ReactContextBaseJavaModule implements Acti
             }
             if (iArr.length > 0 && iArr[0] == 0) {
                 if (RNCWebViewModule.this.downloadRequest != null) {
-                    RNCWebViewModule.this.downloadFile(this.f18359d);
+                    RNCWebViewModule.this.downloadFile(this.f18360d);
                 }
             } else {
-                Toast.makeText(RNCWebViewModule.this.getCurrentActivity().getApplicationContext(), this.f18360e, 1).show();
+                Toast.makeText(RNCWebViewModule.this.getCurrentActivity().getApplicationContext(), this.f18361e, 1).show();
             }
             return true;
         }
@@ -86,17 +86,17 @@ public class RNCWebViewModule extends ReactContextBaseJavaModule implements Acti
     public static /* synthetic */ class b {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f18362a;
+        static final /* synthetic */ int[] f18363a;
 
         static {
             int[] iArr = new int[c.values().length];
-            f18362a = iArr;
+            f18363a = iArr;
             try {
                 iArr[c.IMAGE.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f18362a[c.VIDEO.ordinal()] = 2;
+                f18363a[c.VIDEO.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
         }
@@ -111,10 +111,10 @@ public class RNCWebViewModule extends ReactContextBaseJavaModule implements Acti
         
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f18367d;
+        private final String f18368d;
 
         c(String str) {
-            this.f18367d = str;
+            this.f18368d = str;
         }
     }
 
@@ -122,10 +122,10 @@ public class RNCWebViewModule extends ReactContextBaseJavaModule implements Acti
     protected static class d {
 
         /* renamed from: a  reason: collision with root package name */
-        private int f18368a = 1;
+        private int f18369a = 1;
 
         /* renamed from: b  reason: collision with root package name */
-        private final HashMap f18369b = new HashMap();
+        private final HashMap f18370b = new HashMap();
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         protected enum a {
@@ -138,7 +138,7 @@ public class RNCWebViewModule extends ReactContextBaseJavaModule implements Acti
         }
 
         public synchronized AtomicReference a(Integer num) {
-            return (AtomicReference) this.f18369b.get(num);
+            return (AtomicReference) this.f18370b.get(num);
         }
     }
 
@@ -148,7 +148,7 @@ public class RNCWebViewModule extends ReactContextBaseJavaModule implements Acti
     }
 
     public static /* synthetic */ void a(String str, String str2, Promise promise) {
-        RNCWebViewManager.g gVar = (RNCWebViewManager.g) a1.f18377a.a().get(str);
+        RNCWebViewManager.g gVar = (RNCWebViewManager.g) a1.f18378a.a().get(str);
         if (gVar != null) {
             gVar.h(str2);
             promise.resolve(null);
@@ -161,14 +161,14 @@ public class RNCWebViewModule extends ReactContextBaseJavaModule implements Acti
         if (str.matches("\\.\\w+")) {
             str = getMimeTypeFromExtension(str.replace(".", ""));
         }
-        return Boolean.valueOf(str.isEmpty() || str.toLowerCase().contains(c.IMAGE.f18367d));
+        return Boolean.valueOf(str.isEmpty() || str.toLowerCase().contains(c.IMAGE.f18368d));
     }
 
     private Boolean acceptsVideo(String str) {
         if (str.matches("\\.\\w+")) {
             str = getMimeTypeFromExtension(str.replace(".", ""));
         }
-        return Boolean.valueOf(str.isEmpty() || str.toLowerCase().contains(c.VIDEO.f18367d));
+        return Boolean.valueOf(str.isEmpty() || str.toLowerCase().contains(c.VIDEO.f18368d));
     }
 
     private Boolean arrayContainsString(String[] strArr, String str) {
@@ -181,7 +181,7 @@ public class RNCWebViewModule extends ReactContextBaseJavaModule implements Acti
     }
 
     public static /* synthetic */ void b(String str) {
-        a1 a1Var = a1.f18377a;
+        a1 a1Var = a1.f18378a;
         RNCWebViewManager.g gVar = (RNCWebViewManager.g) a1Var.a().get(str);
         if (gVar == null) {
             q8.a.J(TAG, "Failed to release webview with webViewKey: " + str);
@@ -198,7 +198,7 @@ public class RNCWebViewModule extends ReactContextBaseJavaModule implements Acti
                 viewGroup.removeView(gVar);
             }
         }
-        if (gVar.f18337q != null) {
+        if (gVar.f18338q != null) {
             ((ThemedReactContext) gVar.getContext()).removeLifecycleEventListener(gVar);
             gVar.d();
         }
@@ -207,7 +207,7 @@ public class RNCWebViewModule extends ReactContextBaseJavaModule implements Acti
 
     private String[] getAcceptedMimeType(String[] strArr) {
         if (noAcceptTypesSet(strArr).booleanValue()) {
-            return new String[]{c.DEFAULT.f18367d};
+            return new String[]{c.DEFAULT.f18368d};
         }
         String[] strArr2 = new String[strArr.length];
         for (int i10 = 0; i10 < strArr.length; i10++) {
@@ -229,7 +229,7 @@ public class RNCWebViewModule extends ReactContextBaseJavaModule implements Acti
     private File getCapturedFile(c cVar) {
         String str;
         String str2;
-        int i10 = b.f18362a[cVar.ordinal()];
+        int i10 = b.f18363a[cVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 str = "";
@@ -252,7 +252,7 @@ public class RNCWebViewModule extends ReactContextBaseJavaModule implements Acti
     }
 
     private Intent getFileChooserIntent(String str) {
-        String str2 = str.isEmpty() ? c.DEFAULT.f18367d : str;
+        String str2 = str.isEmpty() ? c.DEFAULT.f18368d : str;
         if (str.matches("\\.\\w+")) {
             str2 = getMimeTypeFromExtension(str.replace(".", ""));
         }
@@ -550,18 +550,18 @@ public class RNCWebViewModule extends ReactContextBaseJavaModule implements Acti
 
     private Boolean acceptsImages(String[] strArr) {
         String[] acceptedMimeType = getAcceptedMimeType(strArr);
-        return Boolean.valueOf(arrayContainsString(acceptedMimeType, c.DEFAULT.f18367d).booleanValue() || arrayContainsString(acceptedMimeType, c.IMAGE.f18367d).booleanValue());
+        return Boolean.valueOf(arrayContainsString(acceptedMimeType, c.DEFAULT.f18368d).booleanValue() || arrayContainsString(acceptedMimeType, c.IMAGE.f18368d).booleanValue());
     }
 
     private Boolean acceptsVideo(String[] strArr) {
         String[] acceptedMimeType = getAcceptedMimeType(strArr);
-        return Boolean.valueOf(arrayContainsString(acceptedMimeType, c.DEFAULT.f18367d).booleanValue() || arrayContainsString(acceptedMimeType, c.VIDEO.f18367d).booleanValue());
+        return Boolean.valueOf(arrayContainsString(acceptedMimeType, c.DEFAULT.f18368d).booleanValue() || arrayContainsString(acceptedMimeType, c.VIDEO.f18368d).booleanValue());
     }
 
     private Intent getFileChooserIntent(String[] strArr, boolean z10) {
         Intent intent = new Intent("android.intent.action.GET_CONTENT");
         intent.addCategory("android.intent.category.OPENABLE");
-        intent.setType(c.DEFAULT.f18367d);
+        intent.setType(c.DEFAULT.f18368d);
         intent.putExtra("android.intent.extra.MIME_TYPES", getAcceptedMimeType(strArr));
         intent.putExtra("android.intent.extra.ALLOW_MULTIPLE", z10);
         return intent;

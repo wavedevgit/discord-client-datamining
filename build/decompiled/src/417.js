@@ -1078,33 +1078,33 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = _closure2_slot0;
                             var2 = var2.onChange;
                             if (!var2) {
-                                _fun5847_ip = 44;
+                                _fun5847_ip = 45;
                                 continue _fun5847
                             }
-                        case 29:
+                        case 30:
                             var3 = _closure2_slot0;
                             var2 = var3.onChange;
                             var2 = var2.bind(var3)(var0);
-                        case 44:
+                        case 45:
                             var2 = _closure2_slot0;
                             var2 = var2.onChangeText;
                             if (!var2) {
-                                _fun5847_ip = 72;
+                                _fun5847_ip = 73;
                                 continue _fun5847
                             }
-                        case 57:
+                        case 58:
                             var3 = _closure2_slot0;
                             var2 = var3.onChangeText;
                             var2 = var2.bind(var3)(var4);
-                        case 72:
+                        case 73:
                             var2 = _closure2_slot1;
                             var3 = var2.current;
                             var2 = null;
                             if (!(var2 != var3)) {
-                                _fun5847_ip = 118;
+                                _fun5847_ip = 120;
                                 continue _fun5847
                             }
-                        case 87:
+                        case 88:
                             var3 = _closure2_slot5;
                             var2 = undefined;
                             var3 = var3.bind(var2)(var4);
@@ -1112,7 +1112,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0 = var0.nativeEvent;
                             var0 = var0.eventCount;
                             var0 = var1.bind(var2)(var0);
-                        case 118:
+                        case 120:
                             var0 = undefined;
                             return var0;
                     }
@@ -1186,7 +1186,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var2 = var1.current;
                             var1 = null;
                             if (!(var1 != var2)) {
-                                _fun5850_ip = 87;
+                                _fun5850_ip = 88;
                                 continue _fun5850
                             }
                         case 49:
@@ -1199,7 +1199,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var1.mostRecentEventCount = var0;
                             var0 = undefined;
                             var0 = var2.bind(var0)(var1);
-                        case 87:
+                        case 88:
                             var0 = undefined;
                             return var0;
                     }

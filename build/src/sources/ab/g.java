@@ -37,10 +37,10 @@ public final class g implements c {
             if (cVar == null) {
                 return Bitmap.CompressFormat.JPEG;
             }
-            if (cVar == ga.b.f25382b) {
+            if (cVar == ga.b.f25383b) {
                 return Bitmap.CompressFormat.JPEG;
             }
-            if (cVar == ga.b.f25383c) {
+            if (cVar == ga.b.f25384c) {
                 return Bitmap.CompressFormat.PNG;
             }
             if (ga.b.a(cVar)) {
@@ -73,7 +73,7 @@ public final class g implements c {
     @Override // ab.c
     public boolean b(ga.c imageFormat) {
         Intrinsics.checkNotNullParameter(imageFormat, "imageFormat");
-        if (imageFormat != ga.b.f25392l && imageFormat != ga.b.f25382b) {
+        if (imageFormat != ga.b.f25393l && imageFormat != ga.b.f25383b) {
             return false;
         }
         return true;
@@ -92,7 +92,7 @@ public final class g implements c {
             num2 = num;
         }
         if (rotationOptions == null) {
-            rotationOptions2 = RotationOptions.f11067c.a();
+            rotationOptions2 = RotationOptions.f11068c.a();
         } else {
             rotationOptions2 = rotationOptions;
         }
@@ -165,7 +165,7 @@ public final class g implements c {
     public boolean d(k encodedImage, RotationOptions rotationOptions, ResizeOptions resizeOptions) {
         Intrinsics.checkNotNullParameter(encodedImage, "encodedImage");
         if (rotationOptions == null) {
-            rotationOptions = RotationOptions.f11067c.a();
+            rotationOptions = RotationOptions.f11068c.a();
         }
         if (this.f537a && ab.a.b(rotationOptions, resizeOptions, encodedImage, this.f538b) > 1) {
             return true;

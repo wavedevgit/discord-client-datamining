@@ -6,14 +6,14 @@ import java.util.concurrent.atomic.AtomicReference;
 final class j0 implements Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ n f52793d;
+    final /* synthetic */ n f52794d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ j0(n nVar, i0 i0Var) {
         AtomicReference atomicReference;
         boolean z10;
-        this.f52793d = nVar;
-        atomicReference = nVar.f52828d;
+        this.f52794d = nVar;
+        atomicReference = nVar.f52829d;
         if (((Thread) atomicReference.getAndSet(Thread.currentThread())) == null) {
             z10 = true;
         } else {
@@ -25,8 +25,8 @@ final class j0 implements Closeable {
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public final void close() {
         AtomicReference atomicReference;
-        atomicReference = this.f52793d.f52828d;
+        atomicReference = this.f52794d.f52829d;
         atomicReference.set(null);
-        this.f52793d.d();
+        this.f52794d.d();
     }
 }

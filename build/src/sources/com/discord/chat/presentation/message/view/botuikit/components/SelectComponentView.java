@@ -154,7 +154,7 @@ public final class SelectComponentView extends ConstraintLayout implements Compo
         }
         com.facebook.drawee.controller.a build = ((PipelineDraweeControllerBuilder) f9.d.g().E(I.a())).build();
         Intrinsics.checkNotNullExpressionValue(build, "build(...)");
-        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(getContext().getResources()).w(ScalingUtils$ScaleType.f10635e);
+        GenericDraweeHierarchyBuilder w10 = GenericDraweeHierarchyBuilder.u(getContext().getResources()).w(ScalingUtils$ScaleType.f10636e);
         Intrinsics.checkNotNullExpressionValue(w10, "setActualImageScaleType(...)");
         if (num != null) {
             w10.v(new PorterDuffColorFilter(num.intValue(), PorterDuff.Mode.SRC_IN));

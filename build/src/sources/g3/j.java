@@ -6,17 +6,17 @@ import kotlin.jvm.internal.Intrinsics;
 public final class j extends l {
 
     /* renamed from: e  reason: collision with root package name */
-    private final Fragment f24724e;
+    private final Fragment f24725e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f24725i;
+    private final int f24726i;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public j(Fragment fragment, Fragment targetFragment, int i10) {
         super(fragment, "Attempting to set target fragment " + targetFragment + " with request code " + i10 + " for fragment " + fragment);
         Intrinsics.checkNotNullParameter(fragment, "fragment");
         Intrinsics.checkNotNullParameter(targetFragment, "targetFragment");
-        this.f24724e = targetFragment;
-        this.f24725i = i10;
+        this.f24725e = targetFragment;
+        this.f24726i = i10;
     }
 }

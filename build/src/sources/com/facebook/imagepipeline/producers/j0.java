@@ -8,29 +8,29 @@ import java.util.concurrent.Executor;
 public abstract class j0 implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Executor f11405a;
+    private final Executor f11406a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final s8.i f11406b;
+    private final s8.i f11407b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a extends e1 {
 
         /* renamed from: q  reason: collision with root package name */
-        final /* synthetic */ ImageRequest f11407q;
+        final /* synthetic */ ImageRequest f11408q;
 
         /* renamed from: r  reason: collision with root package name */
-        final /* synthetic */ y0 f11408r;
+        final /* synthetic */ y0 f11409r;
 
         /* renamed from: s  reason: collision with root package name */
-        final /* synthetic */ ProducerContext f11409s;
+        final /* synthetic */ ProducerContext f11410s;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Consumer consumer, y0 y0Var, ProducerContext producerContext, String str, ImageRequest imageRequest, y0 y0Var2, ProducerContext producerContext2) {
             super(consumer, y0Var, producerContext, str);
-            this.f11407q = imageRequest;
-            this.f11408r = y0Var2;
-            this.f11409s = producerContext2;
+            this.f11408q = imageRequest;
+            this.f11409r = y0Var2;
+            this.f11410s = producerContext2;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -44,16 +44,16 @@ public abstract class j0 implements w0 {
         @Override // n8.h
         /* renamed from: k */
         public ta.k c() {
-            ta.k d10 = j0.this.d(this.f11407q);
+            ta.k d10 = j0.this.d(this.f11408q);
             if (d10 == null) {
-                this.f11408r.b(this.f11409s, j0.this.f(), false);
-                this.f11409s.m("local", "fetch");
+                this.f11409r.b(this.f11410s, j0.this.f(), false);
+                this.f11410s.m("local", "fetch");
                 return null;
             }
             d10.L0();
-            this.f11408r.b(this.f11409s, j0.this.f(), true);
-            this.f11409s.m("local", "fetch");
-            this.f11409s.p("image_color_space", d10.s());
+            this.f11409r.b(this.f11410s, j0.this.f(), true);
+            this.f11410s.m("local", "fetch");
+            this.f11410s.p("image_color_space", d10.s());
             return d10;
         }
     }
@@ -62,22 +62,22 @@ public abstract class j0 implements w0 {
     class b extends f {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ e1 f11411a;
+        final /* synthetic */ e1 f11412a;
 
         b(e1 e1Var) {
-            this.f11411a = e1Var;
+            this.f11412a = e1Var;
         }
 
         @Override // com.facebook.imagepipeline.producers.x0
         public void b() {
-            this.f11411a.a();
+            this.f11412a.a();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public j0(Executor executor, s8.i iVar) {
-        this.f11405a = executor;
-        this.f11406b = iVar;
+        this.f11406a = executor;
+        this.f11407b = iVar;
     }
 
     @Override // com.facebook.imagepipeline.producers.w0
@@ -87,7 +87,7 @@ public abstract class j0 implements w0 {
         producerContext.m("local", "fetch");
         a aVar = new a(consumer, y10, producerContext, f(), I, y10, producerContext);
         producerContext.h(new b(aVar));
-        this.f11405a.execute(aVar);
+        this.f11406a.execute(aVar);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -96,9 +96,9 @@ public abstract class j0 implements w0 {
         CloseableReference closeableReference = null;
         try {
             if (i10 <= 0) {
-                E0 = CloseableReference.E0(this.f11406b.a(inputStream));
+                E0 = CloseableReference.E0(this.f11407b.a(inputStream));
             } else {
-                E0 = CloseableReference.E0(this.f11406b.b(inputStream, i10));
+                E0 = CloseableReference.E0(this.f11407b.b(inputStream, i10));
             }
             closeableReference = E0;
             ta.k kVar = new ta.k(closeableReference);

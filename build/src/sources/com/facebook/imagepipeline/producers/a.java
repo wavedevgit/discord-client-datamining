@@ -3,7 +3,7 @@ package com.facebook.imagepipeline.producers;
 public class a implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final w0 f11287a;
+    private final w0 f11288a;
 
     /* renamed from: com.facebook.imagepipeline.producers.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -28,11 +28,11 @@ public class a implements w0 {
     }
 
     public a(w0 w0Var) {
-        this.f11287a = w0Var;
+        this.f11288a = w0Var;
     }
 
     @Override // com.facebook.imagepipeline.producers.w0
     public void b(Consumer consumer, ProducerContext producerContext) {
-        this.f11287a.b(new C0156a(consumer), producerContext);
+        this.f11288a.b(new C0156a(consumer), producerContext);
     }
 }

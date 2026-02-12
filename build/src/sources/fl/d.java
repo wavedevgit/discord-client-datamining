@@ -11,55 +11,55 @@ import ok.n;
 abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final char[] f23814a = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ $%*+-./:".toCharArray();
+    private static final char[] f23815a = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ $%*+-./:".toCharArray();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f23815a;
+        static final /* synthetic */ int[] f23816a;
 
         static {
             int[] iArr = new int[h.values().length];
-            f23815a = iArr;
+            f23816a = iArr;
             try {
                 iArr[h.NUMERIC.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f23815a[h.ALPHANUMERIC.ordinal()] = 2;
+                f23816a[h.ALPHANUMERIC.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f23815a[h.BYTE.ordinal()] = 3;
+                f23816a[h.BYTE.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f23815a[h.KANJI.ordinal()] = 4;
+                f23816a[h.KANJI.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f23815a[h.TERMINATOR.ordinal()] = 5;
+                f23816a[h.TERMINATOR.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f23815a[h.FNC1_FIRST_POSITION.ordinal()] = 6;
+                f23816a[h.FNC1_FIRST_POSITION.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f23815a[h.FNC1_SECOND_POSITION.ordinal()] = 7;
+                f23816a[h.FNC1_SECOND_POSITION.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f23815a[h.STRUCTURED_APPEND.ordinal()] = 8;
+                f23816a[h.STRUCTURED_APPEND.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f23815a[h.ECI.ordinal()] = 9;
+                f23816a[h.ECI.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f23815a[h.HANZI.ordinal()] = 10;
+                f23816a[h.HANZI.ordinal()] = 10;
             } catch (NoSuchFieldError unused10) {
             }
         }
@@ -92,7 +92,7 @@ abstract class d {
                 } else {
                     a10 = h.a(cVar.d(4));
                 }
-                int[] iArr = a.f23815a;
+                int[] iArr = a.f23816a;
                 switch (iArr[a10.ordinal()]) {
                     case 5:
                         hVar = a10;
@@ -261,7 +261,7 @@ abstract class d {
 
     private static void d(ok.c cVar, StringBuilder sb2, int i10) {
         int i11;
-        if (n.f40213c != null) {
+        if (n.f40214c != null) {
             if (i10 * 13 <= cVar.a()) {
                 byte[] bArr = new byte[i10 * 2];
                 int i12 = 0;
@@ -279,7 +279,7 @@ abstract class d {
                     i12 += 2;
                     i10--;
                 }
-                sb2.append(new String(bArr, n.f40213c));
+                sb2.append(new String(bArr, n.f40214c));
                 return;
             }
             throw kk.g.a();
@@ -289,7 +289,7 @@ abstract class d {
 
     private static void e(ok.c cVar, StringBuilder sb2, int i10) {
         int i11;
-        if (n.f40212b != null) {
+        if (n.f40213b != null) {
             if (i10 * 13 <= cVar.a()) {
                 byte[] bArr = new byte[i10 * 2];
                 int i12 = 0;
@@ -307,7 +307,7 @@ abstract class d {
                     i12 += 2;
                     i10--;
                 }
-                sb2.append(new String(bArr, n.f40212b));
+                sb2.append(new String(bArr, n.f40213b));
                 return;
             }
             throw kk.g.a();
@@ -370,7 +370,7 @@ abstract class d {
     }
 
     private static char h(int i10) {
-        char[] cArr = f23814a;
+        char[] cArr = f23815a;
         if (i10 < cArr.length) {
             return cArr[i10];
         }

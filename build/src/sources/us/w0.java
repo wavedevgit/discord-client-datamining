@@ -64,91 +64,91 @@ import us.z2;
 public final class w0 extends c1 implements KClass, x0, w2 {
 
     /* renamed from: o  reason: collision with root package name */
-    private final Class f51178o;
+    private final Class f51179o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Lazy f51179p;
+    private final Lazy f51180p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public final class a extends c1.b {
 
         /* renamed from: w  reason: collision with root package name */
-        static final /* synthetic */ KProperty[] f51180w = {Reflection.property1(new PropertyReference1Impl(a.class, "descriptor", "getDescriptor()Lorg/jetbrains/kotlin/descriptors/ClassDescriptor;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "annotations", "getAnnotations()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "simpleName", "getSimpleName()Ljava/lang/String;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "qualifiedName", "getQualifiedName()Ljava/lang/String;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "constructors", "getConstructors()Ljava/util/Collection;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "nestedClasses", "getNestedClasses()Ljava/util/Collection;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "typeParameters", "getTypeParameters()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "supertypes", "getSupertypes()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "sealedSubclasses", "getSealedSubclasses()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "declaredNonStaticMembers", "getDeclaredNonStaticMembers()Ljava/util/Collection;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "declaredStaticMembers", "getDeclaredStaticMembers()Ljava/util/Collection;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "inheritedNonStaticMembers", "getInheritedNonStaticMembers()Ljava/util/Collection;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "inheritedStaticMembers", "getInheritedStaticMembers()Ljava/util/Collection;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "allNonStaticMembers", "getAllNonStaticMembers()Ljava/util/Collection;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "allStaticMembers", "getAllStaticMembers()Ljava/util/Collection;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "declaredMembers", "getDeclaredMembers()Ljava/util/Collection;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "allMembers", "getAllMembers()Ljava/util/Collection;", 0))};
+        static final /* synthetic */ KProperty[] f51181w = {Reflection.property1(new PropertyReference1Impl(a.class, "descriptor", "getDescriptor()Lorg/jetbrains/kotlin/descriptors/ClassDescriptor;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "annotations", "getAnnotations()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "simpleName", "getSimpleName()Ljava/lang/String;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "qualifiedName", "getQualifiedName()Ljava/lang/String;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "constructors", "getConstructors()Ljava/util/Collection;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "nestedClasses", "getNestedClasses()Ljava/util/Collection;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "typeParameters", "getTypeParameters()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "supertypes", "getSupertypes()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "sealedSubclasses", "getSealedSubclasses()Ljava/util/List;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "declaredNonStaticMembers", "getDeclaredNonStaticMembers()Ljava/util/Collection;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "declaredStaticMembers", "getDeclaredStaticMembers()Ljava/util/Collection;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "inheritedNonStaticMembers", "getInheritedNonStaticMembers()Ljava/util/Collection;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "inheritedStaticMembers", "getInheritedStaticMembers()Ljava/util/Collection;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "allNonStaticMembers", "getAllNonStaticMembers()Ljava/util/Collection;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "allStaticMembers", "getAllStaticMembers()Ljava/util/Collection;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "declaredMembers", "getDeclaredMembers()Ljava/util/Collection;", 0)), Reflection.property1(new PropertyReference1Impl(a.class, "allMembers", "getAllMembers()Ljava/util/Collection;", 0))};
 
         /* renamed from: d  reason: collision with root package name */
-        private final z2.a f51181d;
+        private final z2.a f51182d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final z2.a f51182e;
+        private final z2.a f51183e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final z2.a f51183f;
+        private final z2.a f51184f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final z2.a f51184g;
+        private final z2.a f51185g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final z2.a f51185h;
+        private final z2.a f51186h;
 
         /* renamed from: i  reason: collision with root package name */
-        private final z2.a f51186i;
+        private final z2.a f51187i;
 
         /* renamed from: j  reason: collision with root package name */
-        private final Lazy f51187j;
+        private final Lazy f51188j;
 
         /* renamed from: k  reason: collision with root package name */
-        private final z2.a f51188k;
+        private final z2.a f51189k;
 
         /* renamed from: l  reason: collision with root package name */
-        private final z2.a f51189l;
+        private final z2.a f51190l;
 
         /* renamed from: m  reason: collision with root package name */
-        private final z2.a f51190m;
+        private final z2.a f51191m;
 
         /* renamed from: n  reason: collision with root package name */
-        private final z2.a f51191n;
+        private final z2.a f51192n;
 
         /* renamed from: o  reason: collision with root package name */
-        private final z2.a f51192o;
+        private final z2.a f51193o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final z2.a f51193p;
+        private final z2.a f51194p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final z2.a f51194q;
+        private final z2.a f51195q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final z2.a f51195r;
+        private final z2.a f51196r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final z2.a f51196s;
+        private final z2.a f51197s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final z2.a f51197t;
+        private final z2.a f51198t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final z2.a f51198u;
+        private final z2.a f51199u;
 
         public a() {
             super();
-            this.f51181d = z2.c(new c0(w0.this));
-            this.f51182e = z2.c(new n0(this));
-            this.f51183f = z2.c(new o0(w0.this, this));
-            this.f51184g = z2.c(new p0(w0.this));
-            this.f51185h = z2.c(new q0(w0.this));
-            this.f51186i = z2.c(new r0(this));
-            this.f51187j = as.l.a(as.o.f6082e, new s0(this, w0.this));
-            this.f51188k = z2.c(new t0(this, w0.this));
-            this.f51189l = z2.c(new u0(this, w0.this));
-            this.f51190m = z2.c(new v0(this));
-            this.f51191n = z2.c(new d0(w0.this));
-            this.f51192o = z2.c(new e0(w0.this));
-            this.f51193p = z2.c(new f0(w0.this));
-            this.f51194q = z2.c(new g0(w0.this));
-            this.f51195r = z2.c(new h0(this));
-            this.f51196s = z2.c(new i0(this));
-            this.f51197t = z2.c(new j0(this));
-            this.f51198u = z2.c(new k0(this));
+            this.f51182d = z2.c(new c0(w0.this));
+            this.f51183e = z2.c(new n0(this));
+            this.f51184f = z2.c(new o0(w0.this, this));
+            this.f51185g = z2.c(new p0(w0.this));
+            this.f51186h = z2.c(new q0(w0.this));
+            this.f51187i = z2.c(new r0(this));
+            this.f51188j = as.l.a(as.o.f6082e, new s0(this, w0.this));
+            this.f51189k = z2.c(new t0(this, w0.this));
+            this.f51190l = z2.c(new u0(this, w0.this));
+            this.f51191m = z2.c(new v0(this));
+            this.f51192n = z2.c(new d0(w0.this));
+            this.f51193o = z2.c(new e0(w0.this));
+            this.f51194p = z2.c(new f0(w0.this));
+            this.f51195q = z2.c(new g0(w0.this));
+            this.f51196r = z2.c(new h0(this));
+            this.f51197s = z2.c(new i0(this));
+            this.f51198t = z2.c(new j0(this));
+            this.f51199u = z2.c(new k0(this));
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -189,12 +189,12 @@ public final class w0 extends c1 implements KClass, x0, w2 {
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Collection E(w0 w0Var) {
-            return w0Var.u(w0Var.L(), c1.d.f51013d);
+            return w0Var.u(w0Var.L(), c1.d.f51014d);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Collection F(w0 w0Var) {
-            return w0Var.u(w0Var.M(), c1.d.f51013d);
+            return w0Var.u(w0Var.M(), c1.d.f51014d);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -215,31 +215,31 @@ public final class w0 extends c1 implements KClass, x0, w2 {
         }
 
         private final Collection M() {
-            Object b10 = this.f51192o.b(this, f51180w[10]);
+            Object b10 = this.f51193o.b(this, f51181w[10]);
             Intrinsics.checkNotNullExpressionValue(b10, "getValue(...)");
             return (Collection) b10;
         }
 
         private final Collection O() {
-            Object b10 = this.f51193p.b(this, f51180w[11]);
+            Object b10 = this.f51194p.b(this, f51181w[11]);
             Intrinsics.checkNotNullExpressionValue(b10, "getValue(...)");
             return (Collection) b10;
         }
 
         private final Collection P() {
-            Object b10 = this.f51194q.b(this, f51180w[12]);
+            Object b10 = this.f51195q.b(this, f51181w[12]);
             Intrinsics.checkNotNullExpressionValue(b10, "getValue(...)");
             return (Collection) b10;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Collection T(w0 w0Var) {
-            return w0Var.u(w0Var.L(), c1.d.f51014e);
+            return w0Var.u(w0Var.L(), c1.d.f51015e);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Collection U(w0 w0Var) {
-            return w0Var.u(w0Var.M(), c1.d.f51014e);
+            return w0Var.u(w0Var.M(), c1.d.f51015e);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -362,16 +362,16 @@ public final class w0 extends c1 implements KClass, x0, w2 {
                 }
                 SimpleType anyType = DescriptorUtilsKt.getBuiltIns(aVar.N()).getAnyType();
                 Intrinsics.checkNotNullExpressionValue(anyType, "getAnyType(...)");
-                arrayList.add(new t2(anyType, m0.f51095d));
+                arrayList.add(new t2(anyType, m0.f51096d));
             }
             return kotlin.reflect.jvm.internal.impl.utils.CollectionsKt.compact(arrayList);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Type b0(KotlinType kotlinType, a aVar, w0 w0Var) {
-            ClassifierDescriptor mo1202getDeclarationDescriptor = kotlinType.getConstructor().mo1202getDeclarationDescriptor();
-            if (mo1202getDeclarationDescriptor instanceof ClassDescriptor) {
-                Class q10 = j3.q((ClassDescriptor) mo1202getDeclarationDescriptor);
+            ClassifierDescriptor mo1201getDeclarationDescriptor = kotlinType.getConstructor().mo1201getDeclarationDescriptor();
+            if (mo1201getDeclarationDescriptor instanceof ClassDescriptor) {
+                Class q10 = j3.q((ClassDescriptor) mo1201getDeclarationDescriptor);
                 if (q10 != null) {
                     if (Intrinsics.areEqual(w0Var.getJClass().getSuperclass(), q10)) {
                         Type genericSuperclass = w0Var.getJClass().getGenericSuperclass();
@@ -386,11 +386,11 @@ public final class w0 extends c1 implements KClass, x0, w2 {
                         Intrinsics.checkNotNull(type);
                         return type;
                     }
-                    throw new x2("No superclass of " + aVar + " in Java reflection for " + mo1202getDeclarationDescriptor);
+                    throw new x2("No superclass of " + aVar + " in Java reflection for " + mo1201getDeclarationDescriptor);
                 }
-                throw new x2("Unsupported superclass of " + aVar + ": " + mo1202getDeclarationDescriptor);
+                throw new x2("Unsupported superclass of " + aVar + ": " + mo1201getDeclarationDescriptor);
             }
-            throw new x2("Supertype not a class: " + mo1202getDeclarationDescriptor);
+            throw new x2("Supertype not a class: " + mo1201getDeclarationDescriptor);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -427,51 +427,51 @@ public final class w0 extends c1 implements KClass, x0, w2 {
         }
 
         public final Collection H() {
-            Object b10 = this.f51198u.b(this, f51180w[16]);
+            Object b10 = this.f51199u.b(this, f51181w[16]);
             Intrinsics.checkNotNullExpressionValue(b10, "getValue(...)");
             return (Collection) b10;
         }
 
         public final Collection I() {
-            Object b10 = this.f51195r.b(this, f51180w[13]);
+            Object b10 = this.f51196r.b(this, f51181w[13]);
             Intrinsics.checkNotNullExpressionValue(b10, "getValue(...)");
             return (Collection) b10;
         }
 
         public final Collection J() {
-            Object b10 = this.f51196s.b(this, f51180w[14]);
+            Object b10 = this.f51197s.b(this, f51181w[14]);
             Intrinsics.checkNotNullExpressionValue(b10, "getValue(...)");
             return (Collection) b10;
         }
 
         public final List K() {
-            Object b10 = this.f51182e.b(this, f51180w[1]);
+            Object b10 = this.f51183e.b(this, f51181w[1]);
             Intrinsics.checkNotNullExpressionValue(b10, "getValue(...)");
             return (List) b10;
         }
 
         public final Collection L() {
-            Object b10 = this.f51191n.b(this, f51180w[9]);
+            Object b10 = this.f51192n.b(this, f51181w[9]);
             Intrinsics.checkNotNullExpressionValue(b10, "getValue(...)");
             return (Collection) b10;
         }
 
         public final ClassDescriptor N() {
-            Object b10 = this.f51181d.b(this, f51180w[0]);
+            Object b10 = this.f51182d.b(this, f51181w[0]);
             Intrinsics.checkNotNullExpressionValue(b10, "getValue(...)");
             return (ClassDescriptor) b10;
         }
 
         public final String Q() {
-            return (String) this.f51184g.b(this, f51180w[3]);
+            return (String) this.f51185g.b(this, f51181w[3]);
         }
 
         public final String R() {
-            return (String) this.f51183f.b(this, f51180w[2]);
+            return (String) this.f51184f.b(this, f51181w[2]);
         }
 
         public final List S() {
-            Object b10 = this.f51188k.b(this, f51180w[6]);
+            Object b10 = this.f51189k.b(this, f51181w[6]);
             Intrinsics.checkNotNullExpressionValue(b10, "getValue(...)");
             return (List) b10;
         }
@@ -481,7 +481,7 @@ public final class w0 extends c1 implements KClass, x0, w2 {
     public /* synthetic */ class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f51200a;
+        public static final /* synthetic */ int[] f51201a;
 
         static {
             int[] iArr = new int[KotlinClassHeader.Kind.values().length];
@@ -509,7 +509,7 @@ public final class w0 extends c1 implements KClass, x0, w2 {
                 iArr[KotlinClassHeader.Kind.CLASS.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
-            f51200a = iArr;
+            f51201a = iArr;
         }
     }
 
@@ -529,7 +529,7 @@ public final class w0 extends c1 implements KClass, x0, w2 {
     /* synthetic */ class d extends FunctionReferenceImpl implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final d f51201d = new d();
+        public static final d f51202d = new d();
 
         d() {
             super(2, MemberDeserializer.class, "loadProperty", "loadProperty(Lorg/jetbrains/kotlin/metadata/ProtoBuf$Property;)Lorg/jetbrains/kotlin/descriptors/PropertyDescriptor;", 0);
@@ -546,8 +546,8 @@ public final class w0 extends c1 implements KClass, x0, w2 {
 
     public w0(Class jClass) {
         Intrinsics.checkNotNullParameter(jClass, "jClass");
-        this.f51178o = jClass;
-        this.f51179p = as.l.a(as.o.f6082e, new b0(this));
+        this.f51179o = jClass;
+        this.f51180p = as.l.a(as.o.f6082e, new b0(this));
     }
 
     private final ClassDescriptor F(ClassId classId, RuntimeModuleData runtimeModuleData) {
@@ -573,7 +573,7 @@ public final class w0 extends c1 implements KClass, x0, w2 {
         if (kind == null) {
             i10 = -1;
         } else {
-            i10 = b.f51200a[kind.ordinal()];
+            i10 = b.f51201a[kind.ordinal()];
         }
         switch (i10) {
             case -1:
@@ -599,17 +599,17 @@ public final class w0 extends c1 implements KClass, x0, w2 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final ClassId I() {
-        return e3.f51032a.c(getJClass());
+        return e3.f51033a.c(getJClass());
     }
 
     public final Lazy J() {
-        return this.f51179p;
+        return this.f51180p;
     }
 
     @Override // us.x0
     /* renamed from: K */
     public ClassDescriptor getDescriptor() {
-        return ((a) this.f51179p.getValue()).N();
+        return ((a) this.f51180p.getValue()).N();
     }
 
     public final MemberScope L() {
@@ -631,32 +631,32 @@ public final class w0 extends c1 implements KClass, x0, w2 {
 
     @Override // kotlin.reflect.b
     public List getAnnotations() {
-        return ((a) this.f51179p.getValue()).K();
+        return ((a) this.f51180p.getValue()).K();
     }
 
     @Override // kotlin.jvm.internal.ClassBasedDeclarationContainer
     public Class getJClass() {
-        return this.f51178o;
+        return this.f51179o;
     }
 
     @Override // kotlin.jvm.internal.ClassBasedDeclarationContainer
     public Collection getMembers() {
-        return ((a) this.f51179p.getValue()).H();
+        return ((a) this.f51180p.getValue()).H();
     }
 
     @Override // kotlin.reflect.KClass
     public String getQualifiedName() {
-        return ((a) this.f51179p.getValue()).Q();
+        return ((a) this.f51180p.getValue()).Q();
     }
 
     @Override // kotlin.reflect.KClass
     public String getSimpleName() {
-        return ((a) this.f51179p.getValue()).R();
+        return ((a) this.f51180p.getValue()).R();
     }
 
     @Override // kotlin.reflect.KClass
     public List getTypeParameters() {
-        return ((a) this.f51179p.getValue()).S();
+        return ((a) this.f51180p.getValue()).S();
     }
 
     @Override // kotlin.reflect.KClass
@@ -722,7 +722,7 @@ public final class w0 extends c1 implements KClass, x0, w2 {
             Intrinsics.checkNotNullExpressionValue(classLocalVariable, "classLocalVariable");
             ProtoBuf.Property property = (ProtoBuf.Property) ProtoBufUtilKt.getExtensionOrNull(classProto, classLocalVariable, i10);
             if (property != null) {
-                return (PropertyDescriptor) j3.h(getJClass(), property, deserializedClassDescriptor.getC().getNameResolver(), deserializedClassDescriptor.getC().getTypeTable(), deserializedClassDescriptor.getMetadataVersion(), d.f51201d);
+                return (PropertyDescriptor) j3.h(getJClass(), property, deserializedClassDescriptor.getC().getNameResolver(), deserializedClassDescriptor.getC().getTypeTable(), deserializedClassDescriptor.getMetadataVersion(), d.f51202d);
             }
         }
         return null;

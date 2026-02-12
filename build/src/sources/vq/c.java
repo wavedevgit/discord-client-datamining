@@ -34,25 +34,25 @@ import ys.m0;
 public final class c implements vq.a {
 
     /* renamed from: h  reason: collision with root package name */
-    public static final a f51747h = new a(null);
+    public static final a f51748h = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final OkHttpClient f51748b;
+    private final OkHttpClient f51749b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Application f51749c;
+    private final Application f51750c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Map f51750d;
+    private Map f51751d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f51751e;
+    private final Map f51752e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final List f51752f;
+    private final List f51753f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final CoroutineScope f51753g;
+    private final CoroutineScope f51754g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -69,24 +69,24 @@ public final class c implements vq.a {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f51754a;
+        private final String f51755a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Function1 f51755b;
+        private final Function1 f51756b;
 
         public b(String url, Function1 onFontDownloaded) {
             Intrinsics.checkNotNullParameter(url, "url");
             Intrinsics.checkNotNullParameter(onFontDownloaded, "onFontDownloaded");
-            this.f51754a = url;
-            this.f51755b = onFontDownloaded;
+            this.f51755a = url;
+            this.f51756b = onFontDownloaded;
         }
 
         public final Function1 a() {
-            return this.f51755b;
+            return this.f51756b;
         }
 
         public final String b() {
-            return this.f51754a;
+            return this.f51755a;
         }
     }
 
@@ -98,7 +98,7 @@ public final class c implements vq.a {
         public static final Parcelable.Creator<C0713c> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final Map f51756d;
+        private final Map f51757d;
 
         /* renamed from: vq.c$c$a */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -130,11 +130,11 @@ public final class c implements vq.a {
 
         public C0713c(Map fontDownloaderMapping) {
             Intrinsics.checkNotNullParameter(fontDownloaderMapping, "fontDownloaderMapping");
-            this.f51756d = fontDownloaderMapping;
+            this.f51757d = fontDownloaderMapping;
         }
 
         public final Map a() {
-            return this.f51756d;
+            return this.f51757d;
         }
 
         @Override // android.os.Parcelable
@@ -145,7 +145,7 @@ public final class c implements vq.a {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            Map map = this.f51756d;
+            Map map = this.f51757d;
             dest.writeInt(map.size());
             for (Map.Entry entry : map.entrySet()) {
                 dest.writeString((String) entry.getKey());
@@ -166,33 +166,33 @@ public final class c implements vq.a {
         public static final class a implements d {
 
             /* renamed from: a  reason: collision with root package name */
-            private final Typeface f51757a;
+            private final Typeface f51758a;
 
             public a(Typeface typeface) {
                 Intrinsics.checkNotNullParameter(typeface, "typeface");
-                this.f51757a = typeface;
+                this.f51758a = typeface;
             }
 
             public final Typeface a() {
-                return this.f51757a;
+                return this.f51758a;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                if ((obj instanceof a) && Intrinsics.areEqual(this.f51757a, ((a) obj).f51757a)) {
+                if ((obj instanceof a) && Intrinsics.areEqual(this.f51758a, ((a) obj).f51758a)) {
                     return true;
                 }
                 return false;
             }
 
             public int hashCode() {
-                return this.f51757a.hashCode();
+                return this.f51758a.hashCode();
             }
 
             public String toString() {
-                Typeface typeface = this.f51757a;
+                Typeface typeface = this.f51758a;
                 return "Cached(typeface=" + typeface + ")";
             }
         }
@@ -201,7 +201,7 @@ public final class c implements vq.a {
         public static final class b implements d {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final b f51758a = new b();
+            public static final b f51759a = new b();
 
             private b() {
             }
@@ -227,43 +227,43 @@ public final class c implements vq.a {
     static final class e extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f51759d;
+        Object f51760d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f51760e;
+        int f51761e;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ String f51762o;
+        final /* synthetic */ String f51763o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ Function1 f51763p;
+        final /* synthetic */ Function1 f51764p;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a extends k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f51764d;
+            int f51765d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ Function1 f51765e;
+            final /* synthetic */ Function1 f51766e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ Typeface f51766i;
+            final /* synthetic */ Typeface f51767i;
 
             /* renamed from: o  reason: collision with root package name */
-            final /* synthetic */ c f51767o;
+            final /* synthetic */ c f51768o;
 
             /* renamed from: p  reason: collision with root package name */
-            final /* synthetic */ String f51768p;
+            final /* synthetic */ String f51769p;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(Function1 function1, Typeface typeface, c cVar, String str, Continuation continuation) {
                 super(2, continuation);
-                this.f51765e = function1;
-                this.f51766i = typeface;
-                this.f51767o = cVar;
-                this.f51768p = str;
+                this.f51766e = function1;
+                this.f51767i = typeface;
+                this.f51768o = cVar;
+                this.f51769p = str;
             }
 
             /* JADX INFO: Access modifiers changed from: private */
@@ -273,27 +273,27 @@ public final class c implements vq.a {
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                return new a(this.f51765e, this.f51766i, this.f51767o, this.f51768p, continuation);
+                return new a(this.f51766e, this.f51767i, this.f51768o, this.f51769p, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 gs.b.f();
-                if (this.f51764d == 0) {
+                if (this.f51765d == 0) {
                     kotlin.c.b(obj);
-                    Function1 function1 = this.f51765e;
-                    Typeface typeface = this.f51766i;
+                    Function1 function1 = this.f51766e;
+                    Typeface typeface = this.f51767i;
                     Intrinsics.checkNotNull(typeface);
                     function1.invoke(typeface);
-                    String str = this.f51768p;
+                    String str = this.f51769p;
                     ArrayList<b> arrayList = new ArrayList();
-                    for (Object obj2 : this.f51767o.f51752f) {
+                    for (Object obj2 : this.f51768o.f51753f) {
                         if (Intrinsics.areEqual(((b) obj2).b(), str)) {
                             arrayList.add(obj2);
                         }
                     }
-                    List list = this.f51767o.f51752f;
-                    final String str2 = this.f51768p;
+                    List list = this.f51768o.f51753f;
+                    final String str2 = this.f51769p;
                     CollectionsKt.J(list, new Function1() { // from class: vq.e
                         @Override // kotlin.jvm.functions.Function1
                         public final Object invoke(Object obj3) {
@@ -304,26 +304,26 @@ public final class c implements vq.a {
                     });
                     for (b bVar : arrayList) {
                         Function1 a10 = bVar.a();
-                        Typeface typeface2 = this.f51766i;
+                        Typeface typeface2 = this.f51767i;
                         Intrinsics.checkNotNull(typeface2);
                         a10.invoke(typeface2);
                     }
-                    return Unit.f31987a;
+                    return Unit.f31988a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         e(String str, Function1 function1, Continuation continuation) {
             super(2, continuation);
-            this.f51762o = str;
-            this.f51763p = function1;
+            this.f51763o = str;
+            this.f51764p = function1;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -333,7 +333,7 @@ public final class c implements vq.a {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new e(this.f51762o, this.f51763p, continuation);
+            return new e(this.f51763o, this.f51764p, continuation);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:18:0x006e, code lost:
@@ -348,7 +348,7 @@ public final class c implements vq.a {
             /*
                 r10 = this;
                 java.lang.Object r0 = gs.b.f()
-                int r1 = r10.f51760e
+                int r1 = r10.f51761e
                 r2 = 0
                 r3 = 2
                 r4 = 1
@@ -363,7 +363,7 @@ public final class c implements vq.a {
                 r11.<init>(r0)
                 throw r11
             L1c:
-                java.lang.Object r1 = r10.f51759d
+                java.lang.Object r1 = r10.f51760d
                 java.io.File r1 = (java.io.File) r1
                 kotlin.c.b(r11)     // Catch: java.lang.Exception -> L71
                 goto L3c
@@ -372,9 +372,9 @@ public final class c implements vq.a {
                 vq.c r11 = vq.c.this     // Catch: java.lang.Exception -> L71
                 java.io.File r1 = vq.c.i(r11)     // Catch: java.lang.Exception -> L71
                 vq.c r11 = vq.c.this     // Catch: java.lang.Exception -> L71
-                java.lang.String r5 = r10.f51762o     // Catch: java.lang.Exception -> L71
-                r10.f51759d = r1     // Catch: java.lang.Exception -> L71
-                r10.f51760e = r4     // Catch: java.lang.Exception -> L71
+                java.lang.String r5 = r10.f51763o     // Catch: java.lang.Exception -> L71
+                r10.f51760d = r1     // Catch: java.lang.Exception -> L71
+                r10.f51761e = r4     // Catch: java.lang.Exception -> L71
                 java.lang.Object r11 = vq.c.g(r11, r5, r1, r10)     // Catch: java.lang.Exception -> L71
                 if (r11 != r0) goto L3c
                 goto L70
@@ -382,7 +382,7 @@ public final class c implements vq.a {
                 android.graphics.Typeface r6 = android.graphics.Typeface.createFromFile(r1)     // Catch: java.lang.Exception -> L71
                 vq.c r11 = vq.c.this     // Catch: java.lang.Exception -> L71
                 java.util.Map r11 = vq.c.h(r11)     // Catch: java.lang.Exception -> L71
-                java.lang.String r4 = r10.f51762o     // Catch: java.lang.Exception -> L71
+                java.lang.String r4 = r10.f51763o     // Catch: java.lang.Exception -> L71
                 vq.c$d$a r5 = new vq.c$d$a     // Catch: java.lang.Exception -> L71
                 kotlin.jvm.internal.Intrinsics.checkNotNull(r6)     // Catch: java.lang.Exception -> L71
                 r5.<init>(r6)     // Catch: java.lang.Exception -> L71
@@ -390,13 +390,13 @@ public final class c implements vq.a {
                 r1.delete()     // Catch: java.lang.Exception -> L71
                 ys.c1 r11 = ys.m0.c()     // Catch: java.lang.Exception -> L71
                 vq.c$e$a r4 = new vq.c$e$a     // Catch: java.lang.Exception -> L71
-                kotlin.jvm.functions.Function1 r5 = r10.f51763p     // Catch: java.lang.Exception -> L71
+                kotlin.jvm.functions.Function1 r5 = r10.f51764p     // Catch: java.lang.Exception -> L71
                 vq.c r7 = vq.c.this     // Catch: java.lang.Exception -> L71
-                java.lang.String r8 = r10.f51762o     // Catch: java.lang.Exception -> L71
+                java.lang.String r8 = r10.f51763o     // Catch: java.lang.Exception -> L71
                 r9 = 0
                 r4.<init>(r5, r6, r7, r8, r9)     // Catch: java.lang.Exception -> L71
-                r10.f51759d = r2     // Catch: java.lang.Exception -> L71
-                r10.f51760e = r3     // Catch: java.lang.Exception -> L71
+                r10.f51760d = r2     // Catch: java.lang.Exception -> L71
+                r10.f51761e = r3     // Catch: java.lang.Exception -> L71
                 java.lang.Object r11 = ys.g.g(r11, r4, r10)     // Catch: java.lang.Exception -> L71
                 if (r11 != r0) goto L8c
             L70:
@@ -404,16 +404,16 @@ public final class c implements vq.a {
             L71:
                 vq.c r11 = vq.c.this
                 java.util.Map r11 = vq.c.h(r11)
-                java.lang.String r0 = r10.f51762o
+                java.lang.String r0 = r10.f51763o
                 r11.put(r0, r2)
                 vq.c r11 = vq.c.this
                 java.util.List r11 = vq.c.j(r11)
-                java.lang.String r0 = r10.f51762o
+                java.lang.String r0 = r10.f51763o
                 vq.d r1 = new vq.d
                 r1.<init>()
                 kotlin.collections.CollectionsKt.J(r11, r1)
             L8c:
-                kotlin.Unit r11 = kotlin.Unit.f31987a
+                kotlin.Unit r11 = kotlin.Unit.f31988a
                 return r11
             */
             throw new UnsupportedOperationException("Method not decompiled: vq.c.e.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -421,7 +421,7 @@ public final class c implements vq.a {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -430,13 +430,13 @@ public final class c implements vq.a {
     public static final class f extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f51769d;
+        Object f51770d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f51770e;
+        /* synthetic */ Object f51771e;
 
         /* renamed from: o  reason: collision with root package name */
-        int f51772o;
+        int f51773o;
 
         f(Continuation continuation) {
             super(continuation);
@@ -444,8 +444,8 @@ public final class c implements vq.a {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f51770e = obj;
-            this.f51772o |= Integer.MIN_VALUE;
+            this.f51771e = obj;
+            this.f51773o |= Integer.MIN_VALUE;
             return c.this.k(null, null, this);
         }
     }
@@ -453,12 +453,12 @@ public final class c implements vq.a {
     public c(OkHttpClient okHttpClient, Application context) {
         Intrinsics.checkNotNullParameter(okHttpClient, "okHttpClient");
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f51748b = okHttpClient;
-        this.f51749c = context;
-        this.f51750d = new LinkedHashMap();
-        this.f51751e = new LinkedHashMap();
-        this.f51752f = new ArrayList();
-        this.f51753g = i.a(m0.a().O0(j1.b(null, 1, null)));
+        this.f51749b = okHttpClient;
+        this.f51750c = context;
+        this.f51751d = new LinkedHashMap();
+        this.f51752e = new LinkedHashMap();
+        this.f51753f = new ArrayList();
+        this.f51754g = i.a(m0.a().O0(j1.b(null, 1, null)));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -478,24 +478,24 @@ public final class c implements vq.a {
             if (r0 == 0) goto L13
             r0 = r7
             vq.c$f r0 = (vq.c.f) r0
-            int r1 = r0.f51772o
+            int r1 = r0.f51773o
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f51772o = r1
+            r0.f51773o = r1
             goto L18
         L13:
             vq.c$f r0 = new vq.c$f
             r0.<init>(r7)
         L18:
-            java.lang.Object r7 = r0.f51770e
+            java.lang.Object r7 = r0.f51771e
             java.lang.Object r1 = gs.b.f()
-            int r2 = r0.f51772o
+            int r2 = r0.f51773o
             r3 = 1
             if (r2 == 0) goto L36
             if (r2 != r3) goto L2e
-            java.lang.Object r5 = r0.f51769d
+            java.lang.Object r5 = r0.f51770d
             r6 = r5
             java.io.File r6 = (java.io.File) r6
             kotlin.c.b(r7)
@@ -514,8 +514,8 @@ public final class c implements vq.a {
             kotlinx.coroutines.CoroutineDispatcher r7 = ys.m0.b()
             vq.b r2 = new vq.b
             r2.<init>()
-            r0.f51769d = r6
-            r0.f51772o = r3
+            r0.f51770d = r6
+            r0.f51773o = r3
             java.lang.Object r7 = ys.x0.b(r7, r2, r0)
             if (r7 != r1) goto L5a
             return r1
@@ -554,7 +554,7 @@ public final class c implements vq.a {
             ls.c.a(r1, r0)     // Catch: java.lang.Throwable -> L83
             ls.c.a(r5, r0)     // Catch: java.lang.Throwable -> L68
             ls.c.a(r7, r0)
-            kotlin.Unit r5 = kotlin.Unit.f31987a
+            kotlin.Unit r5 = kotlin.Unit.f31988a
             return r5
         L91:
             throw r6     // Catch: java.lang.Throwable -> L92
@@ -574,12 +574,12 @@ public final class c implements vq.a {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Response l(c cVar, Request request) {
-        return cVar.f51748b.a(request).execute();
+        return cVar.f51749b.a(request).execute();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final File m() {
-        File file = new File(new File(this.f51749c.getCacheDir(), ".com.withpersona.sdk2.inquiry"), "fonts");
+        File file = new File(new File(this.f51750c.getCacheDir(), ".com.withpersona.sdk2.inquiry"), "fonts");
         if (!file.exists()) {
             file.mkdirs();
         }
@@ -590,17 +590,17 @@ public final class c implements vq.a {
     public void a(String fontUrl, Function1 onSuccess) {
         Intrinsics.checkNotNullParameter(fontUrl, "fontUrl");
         Intrinsics.checkNotNullParameter(onSuccess, "onSuccess");
-        d dVar = (d) this.f51751e.get(fontUrl);
+        d dVar = (d) this.f51752e.get(fontUrl);
         if (dVar instanceof d.a) {
             onSuccess.invoke(((d.a) dVar).a());
             return;
         }
-        d.b bVar = d.b.f51758a;
+        d.b bVar = d.b.f51759a;
         if (Intrinsics.areEqual(dVar, bVar)) {
-            this.f51752f.add(new b(fontUrl, onSuccess));
+            this.f51753f.add(new b(fontUrl, onSuccess));
         } else if (dVar == null) {
-            this.f51751e.put(fontUrl, bVar);
-            ys.i.d(this.f51753g, null, null, new e(fontUrl, onSuccess, null), 3, null);
+            this.f51752e.put(fontUrl, bVar);
+            ys.i.d(this.f51754g, null, null, new e(fontUrl, onSuccess, null), 3, null);
         } else {
             throw new p();
         }
@@ -613,7 +613,7 @@ public final class c implements vq.a {
         if (bundle == null || (c0713c = (C0713c) w1.b.a(bundle, "font_downloader_mapping", C0713c.class)) == null || (linkedHashMap = c0713c.a()) == null) {
             linkedHashMap = new LinkedHashMap();
         }
-        this.f51750d = linkedHashMap;
+        this.f51751d = linkedHashMap;
     }
 
     @Override // vq.a
@@ -639,7 +639,7 @@ public final class c implements vq.a {
 
     @Override // vq.a
     public Map d() {
-        return this.f51750d;
+        return this.f51751d;
     }
 
     @Override // vq.a

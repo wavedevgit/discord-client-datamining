@@ -17,10 +17,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f21506a = new d();
+    public static final d f21507a = new d();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Lazy f21507b = l.b(new Function0() { // from class: db.b
+    private static final Lazy f21508b = l.b(new Function0() { // from class: db.b
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             Pools$SynchronizedPool b10;
@@ -30,16 +30,16 @@ public final class d {
     });
 
     /* renamed from: c  reason: collision with root package name */
-    private static boolean f21508c;
+    private static boolean f21509c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static boolean f21509d;
+    private static boolean f21510d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f21510a;
+        public static final /* synthetic */ int[] f21511a;
 
         static {
             Bitmap.Config config;
@@ -77,7 +77,7 @@ public final class d {
                 iArr[config.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
-            f21510a = iArr;
+            f21511a = iArr;
         }
     }
 
@@ -90,15 +90,15 @@ public final class d {
     }
 
     private final ByteBuffer c() {
-        if (f21508c) {
-            return s8.b.f47863a.acquire();
+        if (f21509c) {
+            return s8.b.f47864a.acquire();
         }
         return (ByteBuffer) g().acquire();
     }
 
     public static final Pair d(InputStream inputStream) {
         if (inputStream != null) {
-            d dVar = f21506a;
+            d dVar = f21507a;
             ByteBuffer k10 = dVar.k();
             BitmapFactory.Options options = new BitmapFactory.Options();
             options.inJustDecodeBounds = true;
@@ -112,7 +112,7 @@ public final class d {
                 dVar.l(k10);
                 return pair;
             } catch (Throwable th2) {
-                f21506a.l(k10);
+                f21507a.l(k10);
                 throw th2;
             }
         }
@@ -121,7 +121,7 @@ public final class d {
 
     public static final f e(InputStream inputStream) {
         if (inputStream != null) {
-            d dVar = f21506a;
+            d dVar = f21507a;
             ByteBuffer k10 = dVar.k();
             BitmapFactory.Options options = new BitmapFactory.Options();
             options.inJustDecodeBounds = true;
@@ -136,7 +136,7 @@ public final class d {
                 dVar.l(k10);
                 return fVar;
             } catch (Throwable th2) {
-                f21506a.l(k10);
+                f21507a.l(k10);
                 throw th2;
             }
         }
@@ -144,7 +144,7 @@ public final class d {
     }
 
     private final Pools$SynchronizedPool g() {
-        return (Pools$SynchronizedPool) f21507b.getValue();
+        return (Pools$SynchronizedPool) f21508b.getValue();
     }
 
     public static final int h(Bitmap.Config config) {
@@ -152,7 +152,7 @@ public final class d {
         if (config == null) {
             i10 = -1;
         } else {
-            i10 = a.f21510a[config.ordinal()];
+            i10 = a.f21511a[config.ordinal()];
         }
         switch (i10) {
             case 1:
@@ -209,13 +209,13 @@ public final class d {
     }
 
     private final void l(ByteBuffer byteBuffer) {
-        if (!f21508c) {
+        if (!f21509c) {
             g().release(byteBuffer);
         }
     }
 
     public final Bitmap f(InputStream inputStream, Rect rect, BitmapFactory.Options options) {
-        if (f21509d) {
+        if (f21510d) {
             try {
                 return BitmapFactory.decodeStream(inputStream, rect, options);
             } catch (IllegalArgumentException unused) {

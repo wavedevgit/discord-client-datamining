@@ -1,150 +1,201 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var6 = require;
+    var5 = metroImportDefault;
     var2 = exports;
-    var7 = dependencyMap;
-    var _closure1_slot0 = var6;
-    var _closure1_slot1 = var7;
-    var1 = global;
-    var5 = var1.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var1 = true;
-    var3.value = var1;
-    var1 = '__esModule';
-    var1 = var4.bind(var5)(var2, var1, var3);
-    var3 = {};
-    var1 = "function pnpm_animateTs1({point:point,configs:configs,velocity=0,overrideReduceMotion:overrideReduceMotion,onComplete:onComplete}){const{ANIMATION_CONFIGS,ANIMATION_METHOD,withTiming,withSpring}=this.__closure;if(!configs){configs=ANIMATION_CONFIGS;}if(overrideReduceMotion){configs.reduceMotion=overrideReduceMotion;}const type='duration'in configs||'easing'in configs?ANIMATION_METHOD.TIMING:ANIMATION_METHOD.SPRING;if(type===ANIMATION_METHOD.TIMING){return withTiming(point,configs,onComplete);}return withSpring(point,Object.assign({velocity:velocity},configs),onComplete);}";
-    var3.code = var1;
-    var1 = function arg0() {
-        _fun44821: for (var _fun44821_ip = 0;;) switch (_fun44821_ip) {
-            case 0:
-                var1 = arg0;
-                var5 = var1.point;
-                var4 = var1.configs;
-                var0 = var1.velocity;
-                var8 = 0;
-                var6 = undefined;
-                var10 = 0;
-                if (!(var6 !== var0)) {
-                    _fun44821_ip = 34;
-                    continue _fun44821
-                }
-            case 31:
-                var10 = var0;
-            case 34:
-                var0 = var1.overrideReduceMotion;
-                var3 = var1.onComplete;
-                if (var4) {
-                    _fun44821_ip = 75;
-                    continue _fun44821
-                }
-            case 49:
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var1 = var1[var8];
-                var1 = var2.bind(var6)(var1);
-                var4 = var1.ANIMATION_CONFIGS;
-            case 75:
-                if (!var0) {
-                    _fun44821_ip = 84;
-                    continue _fun44821
-                }
-            case 78:
-                var4.reduceMotion = var0;
-            case 84:
-                var0 = 'duration';
-                var0 = var0 in var4;
-                if (var0) {
-                    _fun44821_ip = 140;
-                    continue _fun44821
-                }
-            case 95:
-                var0 = 'easing';
-                var0 = var0 in var4;
-                if (var0) {
-                    _fun44821_ip = 140;
-                    continue _fun44821
-                }
-            case 106:
-                var1 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var0 = var0[var8];
-                var0 = var1.bind(var6)(var0);
-                var0 = var0.ANIMATION_METHOD;
-                var2 = var0.SPRING;
-                _fun44821_ip = 172;
-                continue _fun44821;
-            case 140:
-                var1 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var0 = var0[var8];
-                var0 = var1.bind(var6)(var0);
-                var0 = var0.ANIMATION_METHOD;
-                var2 = var0.TIMING;
-            case 172:
-                var7 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var0 = var0[var8];
-                var0 = var7.bind(var6)(var0);
-                var0 = var0.ANIMATION_METHOD;
-                var0 = var0.TIMING;
-                if (!(var2 !== var0)) {
-                    _fun44821_ip = 268;
-                    continue _fun44821
-                }
-            case 208:
-                var2 = _closure1_slot0;
-                var7 = _closure1_slot1;
-                var0 = 1;
-                var0 = var7[var0];
-                var7 = var2.bind(var6)(var0);
-                var2 = var7.withSpring;
-                var0 = global;
-                var9 = var0.Object;
-                var8 = var9.assign;
-                var0 = {};
-                var0.velocity = var10;
-                var0 = var8.bind(var9)(var0, var4);
-                var0 = var2.bind(var7)(var5, var0, var3);
-                _fun44821_ip = 300;
-                continue _fun44821;
-            case 268:
-                var2 = _closure1_slot0;
-                var7 = _closure1_slot1;
-                var1 = 1;
-                var1 = var7[var1];
-                var2 = var2.bind(var6)(var1);
-                var1 = var2.withTiming;
-                var0 = var1.bind(var2)(var5, var4, var3);
-            case 300:
-                return var0;
-        }
-    };
+    var6 = dependencyMap;
+    var3 = global;
+    var8 = var3.Object;
+    var7 = var8.defineProperty;
     var4 = {};
-    var5 = 0;
-    var8 = var7[var5];
+    var0 = true;
+    var4.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var2, var0, var4);
+    var0 = 0;
+    var4 = var6[var0];
     var0 = undefined;
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.ANIMATION_CONFIGS;
-    var4.ANIMATION_CONFIGS = var8;
-    var5 = var7[var5];
-    var5 = var6.bind(var0)(var5);
-    var5 = var5.ANIMATION_METHOD;
-    var4.ANIMATION_METHOD = var5;
-    var5 = 1;
-    var8 = var7[var5];
-    var8 = var6.bind(var0)(var8);
-    var8 = var8.withTiming;
-    var4.withTiming = var8;
-    var5 = var7[var5];
-    var5 = var6.bind(var0)(var5);
-    var5 = var5.withSpring;
-    var4.withSpring = var5;
-    var1.__closure = var4;
-    var4 = 17032227615993.0;
-    var1.__workletHash = var4;
-    var1.__initData = var3;
-    var2.animate = var1;
+    var4 = var5.bind(var0)(var4);
+    var _closure1_slot0 = var4;
+    var4 = 1;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var _closure1_slot1 = var4;
+    var1 = function() { // Environment: var1
+        var4 = _closure1_slot1;
+        var3 = function() {
+            var3 = _closure1_slot0;
+            var2 = _closure2_slot0;
+            var0 = undefined;
+            var1 = this;
+            var1 = var3.bind(var0)(var1, var2);
+            return var0;
+        };
+        var _closure2_slot0 = var3;
+        var0 = {};
+        var2 = 'addMountListener';
+        var0.key = var2;
+        var2 = function arg0() {
+            var3 = arg0;
+            var1 = this;
+            var _closure3_slot0 = var3;
+            var _closure3_slot1 = var1;
+            var2 = var1.mountListeners;
+            var1 = var2.add;
+            var1 = var1.bind(var2)(var3);
+            var0 = function() { // Environment: var0
+                var1 = _closure3_slot1;
+                var2 = var1.mountListeners;
+                var1 = var2.delete;
+                var0 = _closure3_slot0;
+                var0 = var1.bind(var2)(var0);
+                var0 = undefined;
+                return var0;
+            };
+            return var0;
+        };
+        var0.value = var2;
+        var2 = new Array(6);
+        var2[0] = var0;
+        var0 = {};
+        var5 = 'addUnmountListener';
+        var0.key = var5;
+        var5 = function arg0() {
+            var3 = arg0;
+            var1 = this;
+            var _closure3_slot0 = var3;
+            var _closure3_slot1 = var1;
+            var2 = var1.unmountListeners;
+            var1 = var2.add;
+            var1 = var1.bind(var2)(var3);
+            var0 = function() { // Environment: var0
+                var1 = _closure3_slot1;
+                var2 = var1.unmountListeners;
+                var1 = var2.delete;
+                var0 = _closure3_slot0;
+                var0 = var1.bind(var2)(var0);
+                var0 = undefined;
+                return var0;
+            };
+            return var0;
+        };
+        var0.value = var5;
+        var2[1] = var0;
+        var0 = {};
+        var5 = 'gestureHandlerWillMount';
+        var0.key = var5;
+        var5 = function arg0() {
+            var1 = arg0;
+            var _closure3_slot0 = var1;
+            var1 = this;
+            var2 = var1.mountListeners;
+            var1 = var2.forEach;
+            var0 = function(arg0) { // Environment: var0
+                var2 = _closure3_slot0;
+                var1 = arg0;
+                var0 = undefined;
+                var0 = var1.bind(var0)(var2);
+                return var0;
+            };
+            var0 = var1.bind(var2)(var0);
+            var0 = undefined;
+            return var0;
+        };
+        var0.value = var5;
+        var2[2] = var0;
+        var0 = {};
+        var5 = 'gestureHandlerWillUnmount';
+        var0.key = var5;
+        var5 = function arg0() {
+            var1 = arg0;
+            var _closure3_slot0 = var1;
+            var1 = this;
+            var2 = var1.unmountListeners;
+            var1 = var2.forEach;
+            var0 = function(arg0) { // Environment: var0
+                var2 = _closure3_slot0;
+                var1 = arg0;
+                var0 = undefined;
+                var0 = var1.bind(var0)(var2);
+                return var0;
+            };
+            var0 = var1.bind(var2)(var0);
+            var0 = undefined;
+            return var0;
+        };
+        var0.value = var5;
+        var2[3] = var0;
+        var0 = {};
+        var5 = 'gestureWillMount';
+        var0.key = var5;
+        var5 = function arg0() {
+            var1 = arg0;
+            var _closure3_slot0 = var1;
+            var1 = this;
+            var2 = var1.mountListeners;
+            var1 = var2.forEach;
+            var0 = function(arg0) { // Environment: var0
+                var2 = _closure3_slot0;
+                var1 = arg0;
+                var0 = undefined;
+                var0 = var1.bind(var0)(var2);
+                return var0;
+            };
+            var0 = var1.bind(var2)(var0);
+            var0 = undefined;
+            return var0;
+        };
+        var0.value = var5;
+        var2[4] = var0;
+        var0 = {};
+        var5 = 'gestureWillUnmount';
+        var0.key = var5;
+        var1 = function arg0() {
+            var1 = arg0;
+            var _closure3_slot0 = var1;
+            var1 = this;
+            var2 = var1.unmountListeners;
+            var1 = var2.forEach;
+            var0 = function(arg0) { // Environment: var0
+                var2 = _closure3_slot0;
+                var1 = arg0;
+                var0 = undefined;
+                var0 = var1.bind(var0)(var2);
+                return var0;
+            };
+            var0 = var1.bind(var2)(var0);
+            var0 = undefined;
+            return var0;
+        };
+        var0.value = var1;
+        var2[5] = var0;
+        var1 = undefined;
+        var0 = null;
+        var0 = var4.bind(var1)(var3, var0, var2);
+        return var0;
+    };
+    var1 = var1.bind(var0)();
+    var4 = var3.Set;
+    var5 = var4.prototype;
+    var5 = Object.create(var5, {
+        constructor: {
+            value: var4
+        }
+    });
+    var12 = var5;
+    var4 = new var12[var4](var11);
+    var4 = var4 instanceof Object ? var4 : var5;
+    var1.mountListeners = var4;
+    var3 = var3.Set;
+    var4 = var3.prototype;
+    var4 = Object.create(var4, {
+        constructor: {
+            value: var3
+        }
+    });
+    var12 = var4;
+    var3 = new var12[var3](var11);
+    var3 = var3 instanceof Object ? var3 : var4;
+    var1.unmountListeners = var3;
+    var2.MountRegistry = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4944, 3718]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7]);

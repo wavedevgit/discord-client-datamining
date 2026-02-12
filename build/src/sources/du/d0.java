@@ -15,69 +15,69 @@ import java.util.concurrent.ConcurrentMap;
 public final class d0 implements h {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final ConcurrentMap f21999r = new ConcurrentHashMap();
+    private static final ConcurrentMap f22000r = new ConcurrentHashMap();
 
     /* renamed from: s  reason: collision with root package name */
-    private static final ConcurrentMap f22000s = new ConcurrentHashMap();
+    private static final ConcurrentMap f22001s = new ConcurrentHashMap();
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f22001d;
+    private final boolean f22002d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final h f22002e;
+    private final h f22003e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Set f22003i;
+    private final Set f22004i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final cu.g f22004o;
+    private final cu.g f22005o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Locale f22005p;
+    private final Locale f22006p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final int f22006q;
+    private final int f22007q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final g0 f22007a;
+        private final g0 f22008a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final g0 f22008b;
+        private final g0 f22009b;
 
         a(g0 g0Var, g0 g0Var2) {
-            this.f22007a = g0Var;
-            this.f22008b = g0Var2;
+            this.f22008a = g0Var;
+            this.f22009b = g0Var2;
         }
 
         void a(CharSequence charSequence, int i10, List list, List list2, int[] iArr) {
-            String f10 = this.f22007a.f(charSequence, i10);
+            String f10 = this.f22008a.f(charSequence, i10);
             int length = f10.length();
             iArr[0] = i10 + length;
-            String f11 = this.f22008b.f(charSequence, i10);
+            String f11 = this.f22009b.f(charSequence, i10);
             int length2 = f11.length();
             iArr[1] = i10 + length2;
             if (length2 > length) {
-                list2.addAll(this.f22008b.c(f11));
+                list2.addAll(this.f22009b.c(f11));
             } else if (length2 < length) {
-                list.addAll(this.f22007a.c(f10));
+                list.addAll(this.f22008a.c(f10));
             } else if (length > 0) {
-                list.addAll(this.f22007a.c(f10));
-                list2.addAll(this.f22008b.c(f11));
+                list.addAll(this.f22008a.c(f10));
+                list2.addAll(this.f22009b.c(f11));
             }
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d0(boolean z10) {
-        this.f22001d = z10;
-        this.f22002e = new n(z10);
-        this.f22003i = null;
-        this.f22004o = cu.g.SMART;
-        this.f22005p = Locale.ROOT;
-        this.f22006q = 0;
+        this.f22002d = z10;
+        this.f22003e = new n(z10);
+        this.f22004i = null;
+        this.f22005o = cu.g.SMART;
+        this.f22006p = Locale.ROOT;
+        this.f22007q = 0;
     }
 
     private g0 b(Locale locale, boolean z10) {
@@ -113,7 +113,7 @@ public final class d0 implements h {
         StringBuilder sb2 = new StringBuilder();
         for (int i12 = i10; i12 < i11; i12++) {
             char charAt = charSequence.charAt(i12);
-            if (!Character.isLetter(charAt) && (this.f22001d || i12 <= i10 || Character.isDigit(charAt))) {
+            if (!Character.isLetter(charAt) && (this.f22002d || i12 <= i10 || Character.isDigit(charAt))) {
                 break;
             }
             sb2.append(charAt);
@@ -123,11 +123,11 @@ public final class d0 implements h {
 
     private net.time4j.tz.d i(boolean z10) {
         if (z10) {
-            if (this.f22001d) {
+            if (this.f22002d) {
                 return net.time4j.tz.d.SHORT_DAYLIGHT_TIME;
             }
             return net.time4j.tz.d.LONG_DAYLIGHT_TIME;
-        } else if (this.f22001d) {
+        } else if (this.f22002d) {
             return net.time4j.tz.d.SHORT_STANDARD_TIME;
         } else {
             return net.time4j.tz.d.LONG_STANDARD_TIME;
@@ -146,7 +146,7 @@ public final class d0 implements h {
                 break;
             }
             String a10 = ((net.time4j.tz.k) it.next()).a();
-            Set set = this.f22003i;
+            Set set = this.f22004i;
             int indexOf = a10.indexOf(126);
             if (indexOf < 0) {
                 str = "DEFAULT";
@@ -214,7 +214,7 @@ public final class d0 implements h {
 
     @Override // du.h
     public h a(c cVar, bu.d dVar, int i10) {
-        return new d0(this.f22001d, this.f22002e, this.f22003i, (cu.g) dVar.b(cu.a.f21113f, cu.g.SMART), (Locale) dVar.b(cu.a.f21110c, Locale.ROOT), ((Integer) dVar.b(cu.a.f21126s, 0)).intValue());
+        return new d0(this.f22002d, this.f22003e, this.f22004i, (cu.g) dVar.b(cu.a.f21114f, cu.g.SMART), (Locale) dVar.b(cu.a.f21111c, Locale.ROOT), ((Integer) dVar.b(cu.a.f21127s, 0)).intValue());
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:94:0x0215, code lost:
@@ -244,9 +244,9 @@ public final class d0 implements h {
         }
         if (obj instanceof d0) {
             d0 d0Var = (d0) obj;
-            if (this.f22001d == d0Var.f22001d) {
-                Set set = this.f22003i;
-                Set set2 = d0Var.f22003i;
+            if (this.f22002d == d0Var.f22002d) {
+                Set set = this.f22004i;
+                Set set2 = d0Var.f22004i;
                 if (set != null ? set.equals(set2) : set2 == null) {
                     return true;
                 }
@@ -267,15 +267,15 @@ public final class d0 implements h {
         if (oVar.l()) {
             net.time4j.tz.k r10 = oVar.r();
             if (r10 instanceof net.time4j.tz.p) {
-                return this.f22002e.g(oVar, appendable, dVar, set, z10);
+                return this.f22003e.g(oVar, appendable, dVar, set, z10);
             }
             if (oVar instanceof zt.f) {
                 net.time4j.tz.l N = net.time4j.tz.l.N(r10);
                 net.time4j.tz.d i11 = i(N.I((zt.f) zt.f.class.cast(oVar)));
                 if (z10) {
-                    locale = this.f22005p;
+                    locale = this.f22006p;
                 } else {
-                    locale = (Locale) dVar.b(cu.a.f21110c, Locale.ROOT);
+                    locale = (Locale) dVar.b(cu.a.f21111c, Locale.ROOT);
                 }
                 String w10 = N.w(i11, locale);
                 if (appendable instanceof CharSequence) {
@@ -302,33 +302,33 @@ public final class d0 implements h {
 
     public int hashCode() {
         int hashCode;
-        Set set = this.f22003i;
+        Set set = this.f22004i;
         if (set == null) {
             hashCode = 0;
         } else {
             hashCode = set.hashCode();
         }
-        return hashCode + (this.f22001d ? 1 : 0);
+        return hashCode + (this.f22002d ? 1 : 0);
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder(64);
         sb2.append(d0.class.getName());
         sb2.append("[abbreviated=");
-        sb2.append(this.f22001d);
+        sb2.append(this.f22002d);
         sb2.append(", preferredZones=");
-        sb2.append(this.f22003i);
+        sb2.append(this.f22004i);
         sb2.append(']');
         return sb2.toString();
     }
 
     private d0(boolean z10, h hVar, Set set, cu.g gVar, Locale locale, int i10) {
-        this.f22001d = z10;
-        this.f22002e = hVar;
-        this.f22003i = set;
-        this.f22004o = gVar;
-        this.f22005p = locale;
-        this.f22006q = i10;
+        this.f22002d = z10;
+        this.f22003e = hVar;
+        this.f22004i = set;
+        this.f22005o = gVar;
+        this.f22006p = locale;
+        this.f22007q = i10;
     }
 
     @Override // du.h

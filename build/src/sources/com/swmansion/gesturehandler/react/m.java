@@ -19,7 +19,7 @@ public final class m implements d0 {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f18996a;
+        public static final /* synthetic */ int[] f18997a;
 
         static {
             int[] iArr = new int[PointerEvents.values().length];
@@ -39,7 +39,7 @@ public final class m implements d0 {
                 iArr[PointerEvents.AUTO.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
-            f18996a = iArr;
+            f18997a = iArr;
         }
     }
 
@@ -54,26 +54,26 @@ public final class m implements d0 {
         }
         if (!view.isEnabled()) {
             if (pointerEvents == PointerEvents.AUTO) {
-                return v.f38130e;
+                return v.f38131e;
             }
             if (pointerEvents == PointerEvents.BOX_ONLY) {
-                return v.f38129d;
+                return v.f38130d;
             }
         }
-        int i10 = a.f18996a[pointerEvents.ordinal()];
+        int i10 = a.f18997a[pointerEvents.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
                     if (i10 == 4) {
-                        return v.f38132o;
+                        return v.f38133o;
                     }
                     throw new p();
                 }
-                return v.f38129d;
+                return v.f38130d;
             }
-            return v.f38130e;
+            return v.f38131e;
         }
-        return v.f38131i;
+        return v.f38132i;
     }
 
     @Override // nn.d0

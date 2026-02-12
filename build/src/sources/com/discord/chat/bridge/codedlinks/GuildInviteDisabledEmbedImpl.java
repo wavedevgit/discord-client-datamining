@@ -411,89 +411,89 @@ public final class GuildInviteDisabledEmbedImpl extends CodedLinkEmbed implement
         compositeEncoder.y(serialDescriptor, 7, guildInviteDisabledEmbedImpl.getHelpCenterArticleLabel());
         compositeEncoder.y(serialDescriptor, 8, guildInviteDisabledEmbedImpl.getHelpCenterArticleURL());
         if (compositeEncoder.z(serialDescriptor, 9) || guildInviteDisabledEmbedImpl.getAcceptLabelBackgroundColor() != null) {
-            compositeEncoder.o(serialDescriptor, 9, p0.f50048a, guildInviteDisabledEmbedImpl.getAcceptLabelBackgroundColor());
+            compositeEncoder.o(serialDescriptor, 9, p0.f50049a, guildInviteDisabledEmbedImpl.getAcceptLabelBackgroundColor());
         }
         if (compositeEncoder.z(serialDescriptor, 10) || guildInviteDisabledEmbedImpl.getAcceptLabelBorderColor() != null) {
-            compositeEncoder.o(serialDescriptor, 10, p0.f50048a, guildInviteDisabledEmbedImpl.getAcceptLabelBorderColor());
+            compositeEncoder.o(serialDescriptor, 10, p0.f50049a, guildInviteDisabledEmbedImpl.getAcceptLabelBorderColor());
         }
         if (compositeEncoder.z(serialDescriptor, 11) || guildInviteDisabledEmbedImpl.getAcceptLabelColor() != null) {
-            compositeEncoder.o(serialDescriptor, 11, p0.f50048a, guildInviteDisabledEmbedImpl.getAcceptLabelColor());
+            compositeEncoder.o(serialDescriptor, 11, p0.f50049a, guildInviteDisabledEmbedImpl.getAcceptLabelColor());
         }
         if (compositeEncoder.z(serialDescriptor, 12) || guildInviteDisabledEmbedImpl.getAcceptLabelText() != null) {
-            compositeEncoder.o(serialDescriptor, 12, n2.f50032a, guildInviteDisabledEmbedImpl.getAcceptLabelText());
+            compositeEncoder.o(serialDescriptor, 12, n2.f50033a, guildInviteDisabledEmbedImpl.getAcceptLabelText());
         }
         if (compositeEncoder.z(serialDescriptor, 13) || guildInviteDisabledEmbedImpl.getBodyText() != null) {
-            compositeEncoder.o(serialDescriptor, 13, n2.f50032a, guildInviteDisabledEmbedImpl.getBodyText());
+            compositeEncoder.o(serialDescriptor, 13, n2.f50033a, guildInviteDisabledEmbedImpl.getBodyText());
         }
         if (compositeEncoder.z(serialDescriptor, 14) || guildInviteDisabledEmbedImpl.getBodyTextColor() != null) {
-            compositeEncoder.o(serialDescriptor, 14, p0.f50048a, guildInviteDisabledEmbedImpl.getBodyTextColor());
+            compositeEncoder.o(serialDescriptor, 14, p0.f50049a, guildInviteDisabledEmbedImpl.getBodyTextColor());
         }
         if (compositeEncoder.z(serialDescriptor, 15) || guildInviteDisabledEmbedImpl.getCanBeAccepted() != null) {
-            compositeEncoder.o(serialDescriptor, 15, h.f49996a, guildInviteDisabledEmbedImpl.getCanBeAccepted());
+            compositeEncoder.o(serialDescriptor, 15, h.f49997a, guildInviteDisabledEmbedImpl.getCanBeAccepted());
         }
         if (compositeEncoder.z(serialDescriptor, 16) || guildInviteDisabledEmbedImpl.getChannelIcon() != null) {
-            compositeEncoder.o(serialDescriptor, 16, n2.f50032a, guildInviteDisabledEmbedImpl.getChannelIcon());
+            compositeEncoder.o(serialDescriptor, 16, n2.f50033a, guildInviteDisabledEmbedImpl.getChannelIcon());
         }
         if (compositeEncoder.z(serialDescriptor, 17) || guildInviteDisabledEmbedImpl.getChannelName() != null) {
-            compositeEncoder.o(serialDescriptor, 17, n2.f50032a, guildInviteDisabledEmbedImpl.getChannelName());
+            compositeEncoder.o(serialDescriptor, 17, n2.f50033a, guildInviteDisabledEmbedImpl.getChannelName());
         }
         if (compositeEncoder.z(serialDescriptor, 18) || guildInviteDisabledEmbedImpl.getEmbedCanBeTapped() != null) {
-            compositeEncoder.o(serialDescriptor, 18, h.f49996a, guildInviteDisabledEmbedImpl.getEmbedCanBeTapped());
+            compositeEncoder.o(serialDescriptor, 18, h.f49997a, guildInviteDisabledEmbedImpl.getEmbedCanBeTapped());
         }
         if (compositeEncoder.z(serialDescriptor, 19) || guildInviteDisabledEmbedImpl.getMemberText() != null) {
-            compositeEncoder.o(serialDescriptor, 19, n2.f50032a, guildInviteDisabledEmbedImpl.getMemberText());
+            compositeEncoder.o(serialDescriptor, 19, n2.f50033a, guildInviteDisabledEmbedImpl.getMemberText());
         }
         if (compositeEncoder.z(serialDescriptor, 20) || guildInviteDisabledEmbedImpl.getOnlineText() != null) {
-            compositeEncoder.o(serialDescriptor, 20, n2.f50032a, guildInviteDisabledEmbedImpl.getOnlineText());
+            compositeEncoder.o(serialDescriptor, 20, n2.f50033a, guildInviteDisabledEmbedImpl.getOnlineText());
         }
         if (compositeEncoder.z(serialDescriptor, 21) || guildInviteDisabledEmbedImpl.getResolvingGradientEnd() != null) {
-            compositeEncoder.o(serialDescriptor, 21, p0.f50048a, guildInviteDisabledEmbedImpl.getResolvingGradientEnd());
+            compositeEncoder.o(serialDescriptor, 21, p0.f50049a, guildInviteDisabledEmbedImpl.getResolvingGradientEnd());
         }
         if (compositeEncoder.z(serialDescriptor, 22) || guildInviteDisabledEmbedImpl.getResolvingGradientStart() != null) {
-            compositeEncoder.o(serialDescriptor, 22, p0.f50048a, guildInviteDisabledEmbedImpl.getResolvingGradientStart());
+            compositeEncoder.o(serialDescriptor, 22, p0.f50049a, guildInviteDisabledEmbedImpl.getResolvingGradientStart());
         }
         if (compositeEncoder.z(serialDescriptor, 23) || guildInviteDisabledEmbedImpl.getSplashHasRadialGradient() != null) {
-            compositeEncoder.o(serialDescriptor, 23, h.f49996a, guildInviteDisabledEmbedImpl.getSplashHasRadialGradient());
+            compositeEncoder.o(serialDescriptor, 23, h.f49997a, guildInviteDisabledEmbedImpl.getSplashHasRadialGradient());
         }
         if (compositeEncoder.z(serialDescriptor, 24) || guildInviteDisabledEmbedImpl.getSplashOpacity() != null) {
-            compositeEncoder.o(serialDescriptor, 24, p0.f50048a, guildInviteDisabledEmbedImpl.getSplashOpacity());
+            compositeEncoder.o(serialDescriptor, 24, p0.f50049a, guildInviteDisabledEmbedImpl.getSplashOpacity());
         }
         if (compositeEncoder.z(serialDescriptor, 25) || guildInviteDisabledEmbedImpl.getSplashUrl() != null) {
-            compositeEncoder.o(serialDescriptor, 25, n2.f50032a, guildInviteDisabledEmbedImpl.getSplashUrl());
+            compositeEncoder.o(serialDescriptor, 25, n2.f50033a, guildInviteDisabledEmbedImpl.getSplashUrl());
         }
         if (compositeEncoder.z(serialDescriptor, 26) || guildInviteDisabledEmbedImpl.getInviteSplash() != null) {
-            compositeEncoder.o(serialDescriptor, 26, n2.f50032a, guildInviteDisabledEmbedImpl.getInviteSplash());
+            compositeEncoder.o(serialDescriptor, 26, n2.f50033a, guildInviteDisabledEmbedImpl.getInviteSplash());
         }
         if (compositeEncoder.z(serialDescriptor, 27) || guildInviteDisabledEmbedImpl.getSubtitleColor() != null) {
-            compositeEncoder.o(serialDescriptor, 27, p0.f50048a, guildInviteDisabledEmbedImpl.getSubtitleColor());
+            compositeEncoder.o(serialDescriptor, 27, p0.f50049a, guildInviteDisabledEmbedImpl.getSubtitleColor());
         }
         if (compositeEncoder.z(serialDescriptor, 28) || guildInviteDisabledEmbedImpl.getThumbnailBackgroundColor() != null) {
-            compositeEncoder.o(serialDescriptor, 28, p0.f50048a, guildInviteDisabledEmbedImpl.getThumbnailBackgroundColor());
+            compositeEncoder.o(serialDescriptor, 28, p0.f50049a, guildInviteDisabledEmbedImpl.getThumbnailBackgroundColor());
         }
         if (compositeEncoder.z(serialDescriptor, 29) || guildInviteDisabledEmbedImpl.getThumbnailCornerRadius() != null) {
-            compositeEncoder.o(serialDescriptor, 29, p0.f50048a, guildInviteDisabledEmbedImpl.getThumbnailCornerRadius());
+            compositeEncoder.o(serialDescriptor, 29, p0.f50049a, guildInviteDisabledEmbedImpl.getThumbnailCornerRadius());
         }
         if (compositeEncoder.z(serialDescriptor, 30) || guildInviteDisabledEmbedImpl.getThumbnailText() != null) {
-            compositeEncoder.o(serialDescriptor, 30, n2.f50032a, guildInviteDisabledEmbedImpl.getThumbnailText());
+            compositeEncoder.o(serialDescriptor, 30, n2.f50033a, guildInviteDisabledEmbedImpl.getThumbnailText());
         }
         if (compositeEncoder.z(serialDescriptor, 31) || guildInviteDisabledEmbedImpl.getThumbnailUrl() != null) {
-            compositeEncoder.o(serialDescriptor, 31, n2.f50032a, guildInviteDisabledEmbedImpl.getThumbnailUrl());
+            compositeEncoder.o(serialDescriptor, 31, n2.f50033a, guildInviteDisabledEmbedImpl.getThumbnailUrl());
         }
         if (compositeEncoder.z(serialDescriptor, 32) || guildInviteDisabledEmbedImpl.getTitleColor() != null) {
-            compositeEncoder.o(serialDescriptor, 32, p0.f50048a, guildInviteDisabledEmbedImpl.getTitleColor());
+            compositeEncoder.o(serialDescriptor, 32, p0.f50049a, guildInviteDisabledEmbedImpl.getTitleColor());
         }
         if (compositeEncoder.z(serialDescriptor, 33) || guildInviteDisabledEmbedImpl.getExtendedType() != CodedLinkExtendedType.GUILD_INVITE_DISABLED) {
             compositeEncoder.k(serialDescriptor, 33, CodedLinkExtendedType.Serializer.INSTANCE, guildInviteDisabledEmbedImpl.getExtendedType());
         }
         compositeEncoder.y(serialDescriptor, 34, guildInviteDisabledEmbedImpl.getGuildName());
         if (compositeEncoder.z(serialDescriptor, 35) || guildInviteDisabledEmbedImpl.getGuildIcon() != null) {
-            compositeEncoder.o(serialDescriptor, 35, n2.f50032a, guildInviteDisabledEmbedImpl.getGuildIcon());
+            compositeEncoder.o(serialDescriptor, 35, n2.f50033a, guildInviteDisabledEmbedImpl.getGuildIcon());
         }
         if (compositeEncoder.z(serialDescriptor, 36) || guildInviteDisabledEmbedImpl.getHeaderIcon() != null) {
-            compositeEncoder.o(serialDescriptor, 36, n2.f50032a, guildInviteDisabledEmbedImpl.getHeaderIcon());
+            compositeEncoder.o(serialDescriptor, 36, n2.f50033a, guildInviteDisabledEmbedImpl.getHeaderIcon());
         }
         if (compositeEncoder.z(serialDescriptor, 37) || guildInviteDisabledEmbedImpl.getBadgeIconUrl() != null) {
-            compositeEncoder.o(serialDescriptor, 37, n2.f50032a, guildInviteDisabledEmbedImpl.getBadgeIconUrl());
+            compositeEncoder.o(serialDescriptor, 37, n2.f50033a, guildInviteDisabledEmbedImpl.getBadgeIconUrl());
         }
     }
 

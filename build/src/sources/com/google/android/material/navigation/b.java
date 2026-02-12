@@ -9,13 +9,13 @@ import android.widget.FrameLayout;
 public class b extends FrameLayout implements g {
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f15955d;
+    private boolean f15956d;
 
     /* renamed from: e  reason: collision with root package name */
-    boolean f15956e;
+    boolean f15957e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f15957i;
+    private boolean f15958i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(Context context) {
@@ -26,7 +26,7 @@ public class b extends FrameLayout implements g {
 
     public void a() {
         int i10;
-        if (this.f15957i && (this.f15955d || !this.f15956e)) {
+        if (this.f15958i && (this.f15956d || !this.f15957e)) {
             i10 = 0;
         } else {
             i10 = 8;
@@ -66,7 +66,7 @@ public class b extends FrameLayout implements g {
     }
 
     public void setDividersEnabled(boolean z10) {
-        this.f15957i = z10;
+        this.f15958i = z10;
         a();
     }
 
@@ -76,7 +76,7 @@ public class b extends FrameLayout implements g {
 
     @Override // com.google.android.material.navigation.g
     public void setExpanded(boolean z10) {
-        this.f15955d = z10;
+        this.f15956d = z10;
         a();
     }
 
@@ -85,7 +85,7 @@ public class b extends FrameLayout implements g {
 
     @Override // com.google.android.material.navigation.g
     public void setOnlyShowWhenExpanded(boolean z10) {
-        this.f15956e = z10;
+        this.f15957e = z10;
         a();
     }
 

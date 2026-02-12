@@ -7,17 +7,17 @@ import android.os.RemoteException;
 public final class n extends ai.l0 {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ zg.k f16785e;
+    final /* synthetic */ zg.k f16786e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ x f16786i;
+    final /* synthetic */ x f16787i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public n(x xVar, zg.k kVar, zg.k kVar2) {
         super(kVar);
-        this.f16785e = kVar2;
-        this.f16786i = xVar;
+        this.f16786e = kVar2;
+        this.f16787i = xVar;
     }
 
     @Override // ai.l0
@@ -27,12 +27,12 @@ public final class n extends ai.l0 {
         String str;
         Bundle h10;
         try {
-            v0Var = this.f16786i.f16956e;
-            str = this.f16786i.f16952a;
+            v0Var = this.f16787i.f16957e;
+            str = this.f16787i.f16953a;
             h10 = x.h();
-            ((ai.b0) v0Var.e()).J(str, h10, new s(this.f16786i, this.f16785e));
+            ((ai.b0) v0Var.e()).J(str, h10, new s(this.f16787i, this.f16786e));
         } catch (RemoteException e10) {
-            k0Var = x.f16950g;
+            k0Var = x.f16951g;
             k0Var.c(e10, "keepAlive", new Object[0]);
         }
     }

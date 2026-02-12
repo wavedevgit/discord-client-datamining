@@ -23,13 +23,13 @@ import to.p4;
 public final class SpotlightView extends View {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f19686d;
+    private int f19687d;
 
     /* renamed from: e  reason: collision with root package name */
-    private float f19687e;
+    private float f19688e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Path f19688i;
+    private Path f19689i;
 
     public SpotlightView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
@@ -39,10 +39,10 @@ public final class SpotlightView extends View {
     private final void c(Context context, AttributeSet attributeSet) {
         Resources.Theme theme;
         TypedArray obtainStyledAttributes;
-        if (context != null && (theme = context.getTheme()) != null && (obtainStyledAttributes = theme.obtainStyledAttributes(attributeSet, p4.f49623a, 0, 0)) != null) {
+        if (context != null && (theme = context.getTheme()) != null && (obtainStyledAttributes = theme.obtainStyledAttributes(attributeSet, p4.f49624a, 0, 0)) != null) {
             try {
-                this.f19686d = obtainStyledAttributes.getResourceId(p4.f49625c, 0);
-                this.f19687e = obtainStyledAttributes.getDimension(p4.f49624b, 0.0f);
+                this.f19687d = obtainStyledAttributes.getResourceId(p4.f49626c, 0);
+                this.f19688e = obtainStyledAttributes.getDimension(p4.f49625b, 0.0f);
             } finally {
                 obtainStyledAttributes.recycle();
             }
@@ -53,7 +53,7 @@ public final class SpotlightView extends View {
     public static final Unit d(final SpotlightView spotlightView) {
         View findViewById;
         ViewParent parent = spotlightView.getParent();
-        if ((parent instanceof View) && (findViewById = ((View) parent).findViewById(spotlightView.f19686d)) != null) {
+        if ((parent instanceof View) && (findViewById = ((View) parent).findViewById(spotlightView.f19687d)) != null) {
             findViewById.addOnLayoutChangeListener(new View.OnLayoutChangeListener() { // from class: cp.c
                 @Override // android.view.View.OnLayoutChangeListener
                 public final void onLayoutChange(View view, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
@@ -62,7 +62,7 @@ public final class SpotlightView extends View {
             });
             spotlightView.f(findViewById.getLeft(), findViewById.getTop(), findViewById.getRight(), findViewById.getBottom());
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -72,16 +72,16 @@ public final class SpotlightView extends View {
 
     private final void f(int i10, int i11, int i12, int i13) {
         Path path = new Path();
-        float f10 = this.f19687e;
+        float f10 = this.f19688e;
         path.addRoundRect(i10, i11, i12, i13, f10, f10, Path.Direction.CW);
-        this.f19688i = path;
+        this.f19689i = path;
         invalidate();
     }
 
     @Override // android.view.View
     public void draw(Canvas canvas) {
         Intrinsics.checkNotNullParameter(canvas, "canvas");
-        Path path = this.f19688i;
+        Path path = this.f19689i;
         if (path != null) {
             canvas.save();
             if (Build.VERSION.SDK_INT >= 26) {
@@ -97,7 +97,7 @@ public final class SpotlightView extends View {
     }
 
     public final float getRadius() {
-        return this.f19687e;
+        return this.f19688e;
     }
 
     @Override // android.view.View
@@ -114,6 +114,6 @@ public final class SpotlightView extends View {
     }
 
     public final void setRadius(float f10) {
-        this.f19687e = f10;
+        this.f19688e = f10;
     }
 }

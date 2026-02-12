@@ -13,25 +13,25 @@ import java.util.concurrent.TimeUnit;
 public abstract class b5 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static volatile x0 f29080a = r2.c();
+    private static volatile x0 f29081a = r2.c();
 
     /* renamed from: b  reason: collision with root package name */
-    private static volatile w0 f29081b = p2.h();
+    private static volatile w0 f29082b = p2.h();
 
     /* renamed from: c  reason: collision with root package name */
-    private static final IScope f29082c = new z3(k7.empty());
+    private static final IScope f29083c = new z3(k7.empty());
 
     /* renamed from: d  reason: collision with root package name */
-    private static volatile boolean f29083d = false;
+    private static volatile boolean f29084d = false;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Charset f29084e = Charset.forName("UTF-8");
+    private static final Charset f29085e = Charset.forName("UTF-8");
 
     /* renamed from: f  reason: collision with root package name */
-    private static final long f29085f = System.currentTimeMillis();
+    private static final long f29086f = System.currentTimeMillis();
 
     /* renamed from: g  reason: collision with root package name */
-    private static final io.sentry.util.a f29086g = new io.sentry.util.a();
+    private static final io.sentry.util.a f29087g = new io.sentry.util.a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -39,7 +39,7 @@ public abstract class b5 {
     }
 
     private static void A(final k7 k7Var, boolean z10) {
-        a1 a10 = f29086g.a();
+        a1 a10 = f29087g.a();
         try {
             if (!k7Var.getClass().getName().equals("io.sentry.android.core.SentryAndroidOptions") && io.sentry.util.a0.a()) {
                 throw new IllegalArgumentException("You are running Android. Please, use SentryAndroid.init. " + k7Var.getClass().getName());
@@ -56,19 +56,19 @@ public abstract class b5 {
                 z10 = isGlobalHubMode.booleanValue();
             }
             k7Var.getLogger().c(SentryLevel.INFO, "GlobalHubMode: '%s'", String.valueOf(z10));
-            f29083d = z10;
+            f29084d = z10;
             C(k7Var);
-            IScope iScope = f29082c;
+            IScope iScope = f29083c;
             if (io.sentry.util.o.d(iScope.b(), k7Var, I())) {
                 if (I()) {
                     k7Var.getLogger().c(SentryLevel.WARNING, "Sentry has been already initialized. Previous configuration will be overwritten.", new Object[0]);
                 }
                 v().c(true);
                 iScope.r(k7Var);
-                f29081b = new k4(new z3(k7Var), new z3(k7Var), iScope, "Sentry.init");
+                f29082b = new k4(new z3(k7Var), new z3(k7Var), iScope, "Sentry.init");
                 F(k7Var);
                 D(k7Var);
-                x().b(f29081b);
+                x().b(f29082b);
                 B(k7Var);
                 iScope.H(new h5(k7Var));
                 if (k7Var.getExecutorService().isClosed()) {
@@ -96,7 +96,7 @@ public abstract class b5 {
                 SentryLevel sentryLevel = SentryLevel.DEBUG;
                 logger.c(sentryLevel, "Using openTelemetryMode %s", k7Var.getOpenTelemetryMode());
                 k7Var.getLogger().c(sentryLevel, "Using span factory %s", k7Var.getSpanFactory().getClass().getName());
-                k7Var.getLogger().c(sentryLevel, "Using scopes storage %s", f29080a.getClass().getName());
+                k7Var.getLogger().c(sentryLevel, "Using scopes storage %s", f29081a.getClass().getName());
             } else {
                 k7Var.getLogger().c(SentryLevel.WARNING, "This init call has been ignored due to priority being too low.", new Object[0]);
             }
@@ -225,9 +225,9 @@ public abstract class b5 {
     private static void G(k7 k7Var) {
         x().close();
         if (e7.OFF == k7Var.getOpenTelemetryMode()) {
-            f29080a = new n();
+            f29081a = new n();
         } else {
-            f29080a = m4.a(new io.sentry.util.u(), i2.e());
+            f29081a = m4.a(new io.sentry.util.u(), i2.e());
         }
     }
 
@@ -328,7 +328,7 @@ public abstract class b5 {
                         }
                         c5 c5Var = new c5(k7Var, s8Var);
                         FileOutputStream fileOutputStream = new FileOutputStream(file);
-                        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(fileOutputStream, f29084e));
+                        BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(fileOutputStream, f29085e));
                         k7Var.getSerializer().a(c5Var, bufferedWriter);
                         bufferedWriter.close();
                         fileOutputStream.close();
@@ -360,7 +360,7 @@ public abstract class b5 {
         File[] listFiles = file.listFiles();
         if (listFiles != null) {
             for (File file2 : listFiles) {
-                if (file2.lastModified() < f29085f - TimeUnit.MINUTES.toMillis(5L)) {
+                if (file2.lastModified() < f29086f - TimeUnit.MINUTES.toMillis(5L)) {
                     io.sentry.util.i.a(file2);
                 }
             }
@@ -400,10 +400,10 @@ public abstract class b5 {
     }
 
     public static void o() {
-        a1 a10 = f29086g.a();
+        a1 a10 = f29087g.a();
         try {
             w0 v10 = v();
-            f29081b = p2.h();
+            f29082b = p2.h();
             x().close();
             v10.c(false);
             if (a10 != null) {
@@ -450,24 +450,24 @@ public abstract class b5 {
     }
 
     public static w0 v() {
-        if (f29083d) {
-            return f29081b;
+        if (f29084d) {
+            return f29082b;
         }
         w0 w0Var = x().get();
         if (w0Var != null && !w0Var.r()) {
             return w0Var;
         }
-        w0 I = f29081b.I("getCurrentScopes");
+        w0 I = f29082b.I("getCurrentScopes");
         x().b(I);
         return I;
     }
 
     public static IScope w() {
-        return f29082c;
+        return f29083c;
     }
 
     private static x0 x() {
-        return f29080a;
+        return f29081a;
     }
 
     private static void y(final k7 k7Var, z0 z0Var) {

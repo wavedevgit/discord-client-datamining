@@ -5,19 +5,19 @@ import kotlin.jvm.internal.ByteCompanionObject;
 public final class k {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final k f51911a;
+    public static final k f51912a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final char[] f51912b;
+    public static final char[] f51913b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final byte[] f51913c;
+    public static final byte[] f51914c;
 
     static {
         k kVar = new k();
-        f51911a = kVar;
-        f51912b = new char[117];
-        f51913c = new byte[126];
+        f51912a = kVar;
+        f51913b = new char[117];
+        f51914c = new byte[126];
         kVar.f();
         kVar.e();
     }
@@ -31,7 +31,7 @@ public final class k {
 
     private final void b(int i10, char c10) {
         if (c10 != 'u') {
-            f51912b[c10] = (char) i10;
+            f51913b[c10] = (char) i10;
         }
     }
 
@@ -40,7 +40,7 @@ public final class k {
     }
 
     private final void d(int i10, byte b10) {
-        f51913c[i10] = b10;
+        f51914c[i10] = b10;
     }
 
     private final void e() {

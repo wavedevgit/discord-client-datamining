@@ -5,14 +5,14 @@ import java.util.Calendar;
 public class b implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private Calendar f35896a;
+    private Calendar f35897a;
 
     public b(Calendar calendar) {
-        this.f35896a = calendar;
+        this.f35897a = calendar;
     }
 
     @Override // ll.h
     public void a(ml.g gVar) {
-        gVar.a(this.f35896a);
+        gVar.a(this.f35897a);
     }
 }

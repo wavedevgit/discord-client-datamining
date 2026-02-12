@@ -1,7 +1,7 @@
 // modules/user_settings/native/appearance/FontScaleStore.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun37654: for (var _fun37654_ip = 0;;) switch (_fun37654_ip) {
+    _fun37676: for (var _fun37676_ip = 0;;) switch (_fun37676_ip) {
         case 0:
             var5 = require;
             var2 = exports;
@@ -21,16 +21,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var4.isAndroid;
             var3 = var3.bind(var4)();
             if (var3) {
-                _fun37654_ip = 85;
-                continue _fun37654
+                _fun37676_ip = 85;
+                continue _fun37676
             }
         case 69:
             var4 = {
                 'fontScale': 1,
                 'isClassicChatFontScaleEnabled': false
             };
-            _fun37654_ip = 112;
-            continue _fun37654;
+            _fun37676_ip = 112;
+            continue _fun37676;
         case 85:
             var3 = 1;
             var7 = var6[var3];

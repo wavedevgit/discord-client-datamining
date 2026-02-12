@@ -10,13 +10,13 @@ public final class f extends g {
     private static final long serialVersionUID = 3957240859230862745L;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient byte f37756q;
+    private final transient byte f37757q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(b0 b0Var, int i10, int i11, i iVar, int i12) {
         super(b0Var, i11, iVar, i12);
         zt.b.a(2000, b0Var.d(), i10);
-        this.f37756q = (byte) i10;
+        this.f37757q = (byte) i10;
     }
 
     private void readObject(ObjectInputStream objectInputStream) {
@@ -33,7 +33,7 @@ public final class f extends g {
         }
         if (obj instanceof f) {
             f fVar = (f) obj;
-            if (this.f37756q == fVar.f37756q && super.l(fVar)) {
+            if (this.f37757q == fVar.f37757q && super.l(fVar)) {
                 return true;
             }
         }
@@ -47,17 +47,17 @@ public final class f extends g {
     }
 
     public int hashCode() {
-        return this.f37756q + (k() * 37);
+        return this.f37757q + (k() * 37);
     }
 
     @Override // net.time4j.tz.model.g
     protected f0 j(int i10) {
-        return f0.H0(i10, k(), this.f37756q);
+        return f0.H0(i10, k(), this.f37757q);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int m() {
-        return this.f37756q;
+        return this.f37757q;
     }
 
     public String toString() {
@@ -65,7 +65,7 @@ public final class f extends g {
         sb2.append("FixedDayPattern:[month=");
         sb2.append((int) k());
         sb2.append(",day-of-month=");
-        sb2.append((int) this.f37756q);
+        sb2.append((int) this.f37757q);
         sb2.append(",day-overflow=");
         sb2.append(c());
         sb2.append(",time-of-day=");

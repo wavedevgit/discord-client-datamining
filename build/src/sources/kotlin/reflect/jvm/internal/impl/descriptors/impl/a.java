@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class a implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final AbstractTypeAliasDescriptor f32566d;
+    private final AbstractTypeAliasDescriptor f32567d;
 
     public a(AbstractTypeAliasDescriptor abstractTypeAliasDescriptor) {
-        this.f32566d = abstractTypeAliasDescriptor;
+        this.f32567d = abstractTypeAliasDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         Collection g10;
-        g10 = AbstractTypeAliasDescriptor.g(this.f32566d);
+        g10 = AbstractTypeAliasDescriptor.g(this.f32567d);
         return g10;
     }
 }

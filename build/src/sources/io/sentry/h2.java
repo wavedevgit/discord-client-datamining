@@ -3,16 +3,16 @@ package io.sentry;
 public final class h2 implements p0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final h2 f29338b = new h2();
+    private static final h2 f29339b = new h2();
 
     /* renamed from: a  reason: collision with root package name */
-    private final k7 f29339a = k7.empty();
+    private final k7 f29340a = k7.empty();
 
     private h2() {
     }
 
     public static h2 f() {
-        return f29338b;
+        return f29339b;
     }
 
     @Override // io.sentry.w0
@@ -37,12 +37,12 @@ public final class h2 implements p0 {
 
     @Override // io.sentry.w0
     public io.sentry.protocol.x F(Throwable th2, Hint hint) {
-        return io.sentry.protocol.x.f29798e;
+        return io.sentry.protocol.x.f29799e;
     }
 
     @Override // io.sentry.w0
     public io.sentry.protocol.x H(io.sentry.protocol.d0 d0Var, q8 q8Var, Hint hint, q3 q3Var) {
-        return io.sentry.protocol.x.f29798e;
+        return io.sentry.protocol.x.f29799e;
     }
 
     @Override // io.sentry.w0
@@ -56,7 +56,7 @@ public final class h2 implements p0 {
 
     @Override // io.sentry.w0
     public k7 b() {
-        return this.f29339a;
+        return this.f29340a;
     }
 
     @Override // io.sentry.w0
@@ -110,7 +110,7 @@ public final class h2 implements p0 {
 
     @Override // io.sentry.w0
     public io.sentry.protocol.x n(l5 l5Var, Hint hint) {
-        return io.sentry.protocol.x.f29798e;
+        return io.sentry.protocol.x.f29799e;
     }
 
     @Override // io.sentry.w0
@@ -128,7 +128,7 @@ public final class h2 implements p0 {
 
     @Override // io.sentry.w0
     public io.sentry.protocol.x t(l7 l7Var, Hint hint) {
-        return io.sentry.protocol.x.f29798e;
+        return io.sentry.protocol.x.f29799e;
     }
 
     @Override // io.sentry.w0
@@ -138,22 +138,22 @@ public final class h2 implements p0 {
 
     @Override // io.sentry.w0
     public io.sentry.protocol.x v(String str, SentryLevel sentryLevel) {
-        return io.sentry.protocol.x.f29798e;
+        return io.sentry.protocol.x.f29799e;
     }
 
     @Override // io.sentry.w0
     public io.sentry.protocol.x w(m3 m3Var) {
-        return io.sentry.protocol.x.f29798e;
+        return io.sentry.protocol.x.f29799e;
     }
 
     @Override // io.sentry.w0
     public io.sentry.protocol.x y(SentryEvent sentryEvent, Hint hint) {
-        return io.sentry.protocol.x.f29798e;
+        return io.sentry.protocol.x.f29799e;
     }
 
     @Override // io.sentry.w0
     /* renamed from: clone */
-    public p0 m1187clone() {
-        return f29338b;
+    public p0 m1186clone() {
+        return f29339b;
     }
 }

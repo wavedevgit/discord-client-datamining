@@ -12,22 +12,22 @@ import md.m;
 public class i {
 
     /* renamed from: c  reason: collision with root package name */
-    static final String[] f8984c = {"onVideoLoadStart", "onVideoLoad", "onVideoError", "onVideoProgress", "onVideoSeek", "onVideoEnd", "onVideoFullscreenPlayerWillPresent", "onVideoFullscreenPlayerDidPresent", "onVideoFullscreenPlayerWillDismiss", "onVideoFullscreenPlayerDidDismiss", "onPlaybackStalled", "onPlaybackResume", "onReadyForDisplay", "onVideoBuffer", "onVideoIdle", "onTimedMetadata", "onVideoAudioBecomingNoisy", "onAudioFocusChanged", "onPlaybackRateChange", "onVideoBandwidthUpdate"};
+    static final String[] f8985c = {"onVideoLoadStart", "onVideoLoad", "onVideoError", "onVideoProgress", "onVideoSeek", "onVideoEnd", "onVideoFullscreenPlayerWillPresent", "onVideoFullscreenPlayerDidPresent", "onVideoFullscreenPlayerWillDismiss", "onVideoFullscreenPlayerDidDismiss", "onPlaybackStalled", "onPlaybackResume", "onReadyForDisplay", "onVideoBuffer", "onVideoIdle", "onTimedMetadata", "onVideoAudioBecomingNoisy", "onAudioFocusChanged", "onPlaybackRateChange", "onVideoBandwidthUpdate"};
 
     /* renamed from: a  reason: collision with root package name */
-    private final RCTEventEmitter f8985a;
+    private final RCTEventEmitter f8986a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f8986b = -1;
+    private int f8987b = -1;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i(ReactContext reactContext) {
-        this.f8985a = (RCTEventEmitter) reactContext.getJSModule(RCTEventEmitter.class);
+        this.f8986a = (RCTEventEmitter) reactContext.getJSModule(RCTEventEmitter.class);
     }
 
     private void q(String str, WritableMap writableMap) {
-        RCTEventEmitter rCTEventEmitter = this.f8985a;
-        int i10 = this.f8986b;
+        RCTEventEmitter rCTEventEmitter = this.f8986a;
+        int i10 = this.f8987b;
         if (writableMap == null) {
             writableMap = Arguments.createMap();
         }
@@ -168,7 +168,7 @@ public class i {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void s(int i10) {
-        this.f8986b = i10;
+        this.f8987b = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -180,11 +180,11 @@ public class i {
             if (d10 instanceof md.i) {
                 md.i iVar = (md.i) d10;
                 if (iVar instanceof m) {
-                    str = ((m) iVar).f36326i;
+                    str = ((m) iVar).f36327i;
                 } else {
                     str = "";
                 }
-                String str2 = iVar.f36314d;
+                String str2 = iVar.f36315d;
                 WritableMap createMap = Arguments.createMap();
                 createMap.putString("identifier", str2);
                 createMap.putString("value", str);
@@ -192,8 +192,8 @@ public class i {
             } else if (d10 instanceof jd.a) {
                 jd.a aVar = (jd.a) d10;
                 WritableMap createMap2 = Arguments.createMap();
-                createMap2.putString("identifier", aVar.f30902d);
-                createMap2.putString("value", aVar.f30903e);
+                createMap2.putString("identifier", aVar.f30903d);
+                createMap2.putString("value", aVar.f30904e);
                 createArray.pushMap(createMap2);
             }
         }

@@ -5,10 +5,10 @@ import mi.r0;
 public abstract class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final r0 f35842a = new r0("SplitInstallInfoProvider");
+    private static final r0 f35843a = new r0("SplitInstallInfoProvider");
 
     /* renamed from: b  reason: collision with root package name */
-    public static final /* synthetic */ int f35843b = 0;
+    public static final /* synthetic */ int f35844b = 0;
 
     public static String a(String str) {
         if (str.startsWith("config.")) {

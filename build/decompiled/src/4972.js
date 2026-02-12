@@ -1,72 +1,43 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = metroImportDefault;
-    var _closure1_slot1 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot2 = var2;
-    var2 = global;
-    var5 = var2.Object;
+    var3 = metroImportDefault;
+    var2 = exports;
+    var6 = dependencyMap;
+    var0 = global;
+    var5 = var0.Object;
     var4 = var5.defineProperty;
-    var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = false;
-    var _closure1_slot3 = var2;
-    var2 = function() {
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot2;
-        var0 = 0;
-        var1 = var1[var0];
-        var0 = undefined;
-        var2 = var2.bind(var0)(var1);
-        var1 = var2.startListening;
-        var1 = var1.bind(var2)();
-        return var0;
-    };
-    var1.initialize = var2;
-    var0 = function() {
-        _fun44853: for (var _fun44853_ip = 0;;) switch (_fun44853_ip) {
-            case 0:
-                var3 = _closure1_slot0;
-                var1 = _closure1_slot2;
-                var0 = 1;
-                var1 = var1[var0];
-                var0 = undefined;
-                var3 = var3.bind(var0)(var1);
-                var1 = var3.isFabric;
-                var1 = var1.bind(var3)();
-                if (!var1) {
-                    _fun44853_ip = 45;
-                    continue _fun44853
-                }
-            case 38:
-                var3 = _closure1_slot3;
-                var1 = !var3;
-            case 45:
-                if (!var1) {
-                    _fun44853_ip = 84;
-                    continue _fun44853
-                }
-            case 48:
-                var3 = _closure1_slot1;
-                var4 = _closure1_slot2;
-                var1 = 2;
-                var1 = var4[var1];
-                var3 = var3.bind(var0)(var1);
-                var1 = var3.install;
-                var1 = var1.bind(var3)();
-                var1 = true;
-                _closure1_slot3 = var1;
-            case 84:
-                return var0;
-        }
-    };
-    var1.maybeInitializeFabric = var0;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var2, var0, var1);
+    var0 = 0;
+    var1 = var6[var0];
     var0 = undefined;
+    var8 = var3.bind(var0)(var1);
+    var5 = ['shouldActivateOnStart', 'disallowInterruption'];
+    var7 = new Array(0);
+    var4 = var7.concat;
+    var1 = 1;
+    var9 = var6[var1];
+    var1 = require;
+    var1 = var1.bind(var0)(var9);
+    var1 = var1.baseGestureHandlerProps;
+    var1 = var8.bind(var0)(var1);
+    var4 = var4.bind(var7)(var1, var5);
+    var1 = 2;
+    var1 = var6[var1];
+    var6 = var3.bind(var0)(var1);
+    var1 = {};
+    var3 = 'NativeViewGestureHandler';
+    var1.name = var3;
+    var1.allowedProps = var4;
+    var7 = {};
+    var1.config = var7;
+    var1 = var6.bind(var0)(var1);
+    var2.nativeViewGestureHandlerProps = var5;
+    var2.nativeViewProps = var4;
+    var2.nativeViewHandlerName = var3;
+    var2.NativeViewGestureHandler = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4973, 4975, 4980]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [65, 4954, 4956]);

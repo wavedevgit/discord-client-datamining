@@ -11,51 +11,51 @@ import kotlin.jvm.internal.Intrinsics;
 public final class e extends Fragment {
 
     /* renamed from: d  reason: collision with root package name */
-    private final a f19232d;
+    private final a f19233d;
 
     public e(a tabScreen) {
         Intrinsics.checkNotNullParameter(tabScreen, "tabScreen");
-        this.f19232d = tabScreen;
+        this.f19233d = tabScreen;
     }
 
     @Override // androidx.fragment.app.Fragment, android.content.ComponentCallbacks
     public void onConfigurationChanged(Configuration newConfig) {
         Intrinsics.checkNotNullParameter(newConfig, "newConfig");
         super.onConfigurationChanged(newConfig);
-        this.f19232d.c(this, newConfig);
+        this.f19233d.c(this, newConfig);
     }
 
     @Override // androidx.fragment.app.Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup viewGroup, Bundle bundle) {
         Intrinsics.checkNotNullParameter(inflater, "inflater");
-        return this.f19232d;
+        return this.f19233d;
     }
 
     @Override // androidx.fragment.app.Fragment
     public void onPause() {
-        this.f19232d.getEventEmitter$react_native_screens_release().a();
+        this.f19233d.getEventEmitter$react_native_screens_release().a();
         super.onPause();
     }
 
     @Override // androidx.fragment.app.Fragment
     public void onResume() {
-        this.f19232d.getEventEmitter$react_native_screens_release().c();
+        this.f19233d.getEventEmitter$react_native_screens_release().c();
         super.onResume();
     }
 
     @Override // androidx.fragment.app.Fragment
     public void onStart() {
-        this.f19232d.getEventEmitter$react_native_screens_release().d();
+        this.f19233d.getEventEmitter$react_native_screens_release().d();
         super.onStart();
     }
 
     @Override // androidx.fragment.app.Fragment
     public void onStop() {
-        this.f19232d.getEventEmitter$react_native_screens_release().b();
+        this.f19233d.getEventEmitter$react_native_screens_release().b();
         super.onStop();
     }
 
     public final a x() {
-        return this.f19232d;
+        return this.f19233d;
     }
 }

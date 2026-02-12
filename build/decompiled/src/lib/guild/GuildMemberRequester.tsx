@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'flushRequests';
         var0.key = var5;
         var5 = function arg0() {
-            _fun51050: for (var _fun51050_ip = 0;;) switch (_fun51050_ip) {
+            _fun50999: for (var _fun50999_ip = 0;;) switch (_fun50999_ip) {
                 case 0:
                     var0 = this;
                     var _closure3_slot0 = var0;
@@ -114,8 +114,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var2.size;
                     var2 = 0;
                     if (!(var2 !== var3)) {
-                        _fun51050_ip = 97;
-                        continue _fun51050
+                        _fun50999_ip = 97;
+                        continue _fun50999
                     }
                 case 26:
                     var4 = new Array(0);
@@ -123,15 +123,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var0._pendingRequests;
                     var3 = var5.forEach;
                     var1 = function(arg0) { // Environment: var1
-                        _fun51051: for (var _fun51051_ip = 0;;) switch (_fun51051_ip) {
+                        _fun51000: for (var _fun51000_ip = 0;;) switch (_fun51000_ip) {
                             case 0:
                                 var2 = arg0;
                                 var3 = _closure3_slot0;
                                 var1 = var3._guildMemberExists;
                                 var1 = var1.bind(var3)(var2);
                                 if (var1) {
-                                    _fun51051_ip = 74;
-                                    continue _fun51051
+                                    _fun51000_ip = 74;
+                                    continue _fun51000
                                 }
                             case 24:
                                 var1 = _closure3_slot0;
@@ -152,8 +152,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var3.bind(var5)(var1);
                     var1 = var4.length;
                     if (!(var1 > var2)) {
-                        _fun51050_ip = 81;
-                        continue _fun51050
+                        _fun50999_ip = 81;
+                        continue _fun50999
                     }
                 case 64:
                     var3 = var0._guildId;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'requestUnacknowledged';
         var0.key = var5;
         var5 = function() {
-            _fun51052: for (var _fun51052_ip = 0;;) switch (_fun51052_ip) {
+            _fun51001: for (var _fun51001_ip = 0;;) switch (_fun51001_ip) {
                 case 0:
                     var1 = this;
                     var _closure3_slot0 = var1;
@@ -184,14 +184,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = 0;
                     var0 = var2 !== var0;
                     if (!var0) {
-                        _fun51052_ip = 73;
-                        continue _fun51052
+                        _fun51001_ip = 73;
+                        continue _fun51001
                     }
                 case 29:
                     var5 = var1._unacknowledgedRequests;
                     var4 = var5.forEach;
                     var3 = function(arg0) { // Environment: var3
-                        _fun51053: for (var _fun51053_ip = 0;;) switch (_fun51053_ip) {
+                        _fun51002: for (var _fun51002_ip = 0;;) switch (_fun51002_ip) {
                             case 0:
                                 var2 = arg0;
                                 var3 = _closure3_slot0;
@@ -199,15 +199,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = var1.bind(var3)(var2);
                                 var0 = _closure3_slot0;
                                 if (var1) {
-                                    _fun51053_ip = 46;
-                                    continue _fun51053
+                                    _fun51002_ip = 46;
+                                    continue _fun51002
                                 }
                             case 28:
                                 var3 = var0._pendingRequests;
                                 var1 = var3.add;
                                 var1 = var1.bind(var3)(var2);
-                                _fun51053_ip = 62;
-                                continue _fun51053;
+                                _fun51002_ip = 62;
+                                continue _fun51002;
                             case 46:
                                 var1 = var0._unacknowledgedRequests;
                                 var0 = var1.delete;
@@ -222,8 +222,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.size;
                     var1 = var2 !== var1;
                     if (!var1) {
-                        _fun51052_ip = 70;
-                        continue _fun51052
+                        _fun51001_ip = 70;
+                        continue _fun51001
                     }
                 case 68:
                     var1 = undefined;
@@ -239,31 +239,31 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'request';
         var0.key = var5;
         var4 = function arg0() {
-            _fun51054: for (var _fun51054_ip = 0;;) switch (_fun51054_ip) {
+            _fun51003: for (var _fun51003_ip = 0;;) switch (_fun51003_ip) {
                 case 0:
                     var2 = arg0;
                     var0 = this;
                     var1 = var0._guildMemberExists;
                     var1 = var1.bind(var0)(var2);
                     if (var1) {
-                        _fun51054_ip = 78;
-                        continue _fun51054
+                        _fun51003_ip = 78;
+                        continue _fun51003
                     }
                 case 20:
                     var3 = var0._sentRequests;
                     var1 = var3.has;
                     var1 = var1.bind(var3)(var2);
                     if (var1) {
-                        _fun51054_ip = 78;
-                        continue _fun51054
+                        _fun51003_ip = 78;
+                        continue _fun51003
                     }
                 case 39:
                     var3 = var0._pendingRequests;
                     var1 = var3.has;
                     var1 = var1.bind(var3)(var2);
                     if (var1) {
-                        _fun51054_ip = 78;
-                        continue _fun51054
+                        _fun51003_ip = 78;
+                        continue _fun51003
                     }
                 case 58:
                     var1 = var0._pendingRequests;
@@ -345,7 +345,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'request';
         var0.key = var5;
         var5 = function arg0, arg1() {
-            _fun51059: for (var _fun51059_ip = 0;;) switch (_fun51059_ip) {
+            _fun51008: for (var _fun51008_ip = 0;;) switch (_fun51008_ip) {
                 case 0:
                     var0 = this;
                     var2 = var0._getGuildState;
@@ -356,8 +356,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var2.bind(var3)(var1);
                     var2 = false;
                     if (!(var2 !== var1)) {
-                        _fun51059_ip = 54;
-                        continue _fun51059
+                        _fun51008_ip = 54;
+                        continue _fun51008
                     }
                 case 37:
                     var1 = var0._flush;
@@ -417,7 +417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'requestUnacknowledged';
         var0.key = var5;
         var5 = function() {
-            _fun51063: for (var _fun51063_ip = 0;;) switch (_fun51063_ip) {
+            _fun51012: for (var _fun51012_ip = 0;;) switch (_fun51012_ip) {
                 case 0:
                     var1 = this;
                     var3 = _closure1_slot1;
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var6.reduce;
                     var4 = var1._guildStates;
                     var3 = function(arg0, arg1) { // Environment: var2
-                        _fun51064: for (var _fun51064_ip = 0;;) switch (_fun51064_ip) {
+                        _fun51013: for (var _fun51013_ip = 0;;) switch (_fun51013_ip) {
                             case 0:
                                 var1 = arg1;
                                 var0 = var1.requestUnacknowledged;
@@ -437,8 +437,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var0 = false;
                                 var0 = var0 !== var2;
                                 if (var0) {
-                                    _fun51064_ip = 25;
-                                    continue _fun51064
+                                    _fun51013_ip = 25;
+                                    continue _fun51013
                                 }
                             case 22:
                                 var0 = var1;
@@ -449,8 +449,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = false;
                     var2 = var5.bind(var6)(var4, var3, var2);
                     if (!var2) {
-                        _fun51063_ip = 75;
-                        continue _fun51063
+                        _fun51012_ip = 75;
+                        continue _fun51012
                     }
                 case 59:
                     var2 = var1._flush;
@@ -466,7 +466,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = '_getGuildState';
         var0.key = var5;
         var5 = function arg0() {
-            _fun51065: for (var _fun51065_ip = 0;;) switch (_fun51065_ip) {
+            _fun51014: for (var _fun51014_ip = 0;;) switch (_fun51014_ip) {
                 case 0:
                     var3 = arg0;
                     var1 = this;
@@ -474,8 +474,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0[var3];
                     var2 = null;
                     if (!(var2 == var0)) {
-                        _fun51065_ip = 71;
-                        continue _fun51065
+                        _fun51014_ip = 71;
+                        continue _fun51014
                     }
                 case 22:
                     var2 = var1._guildStates;
@@ -521,7 +521,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = this;
             var4 = var4._guildStates;
             var0 = function(arg0) { // Environment: var0
-                _fun51067: for (var _fun51067_ip = 0;;) switch (_fun51067_ip) {
+                _fun51016: for (var _fun51016_ip = 0;;) switch (_fun51016_ip) {
                     case 0:
                         var0 = arg0;
                         var4 = var0._pendingRequests;
@@ -529,8 +529,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = _closure3_slot0;
                         var2 = var3.bind(var4)(var2);
                         if (!var2) {
-                            _fun51067_ip = 49;
-                            continue _fun51067
+                            _fun51016_ip = 49;
+                            continue _fun51016
                         }
                     case 29:
                         var4 = _closure3_slot1;
@@ -543,8 +543,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = _closure3_slot0;
                         var2 = var3.bind(var4)(var2);
                         if (!var2) {
-                            _fun51067_ip = 92;
-                            continue _fun51067
+                            _fun51016_ip = 92;
+                            continue _fun51016
                         }
                     case 72:
                         var4 = _closure3_slot2;
@@ -557,8 +557,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = _closure3_slot0;
                         var2 = var3.bind(var4)(var2);
                         if (!var2) {
-                            _fun51067_ip = 135;
-                            continue _fun51067
+                            _fun51016_ip = 135;
+                            continue _fun51016
                         }
                     case 115:
                         var2 = _closure3_slot3;

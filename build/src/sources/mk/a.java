@@ -10,25 +10,25 @@ import qk.e;
 public final class a {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final String[] f36522b = {"CTRL_PS", " ", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "CTRL_LL", "CTRL_ML", "CTRL_DL", "CTRL_BS"};
+    private static final String[] f36523b = {"CTRL_PS", " ", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "CTRL_LL", "CTRL_ML", "CTRL_DL", "CTRL_BS"};
 
     /* renamed from: c  reason: collision with root package name */
-    private static final String[] f36523c = {"CTRL_PS", " ", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "CTRL_US", "CTRL_ML", "CTRL_DL", "CTRL_BS"};
+    private static final String[] f36524c = {"CTRL_PS", " ", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "CTRL_US", "CTRL_ML", "CTRL_DL", "CTRL_BS"};
 
     /* renamed from: d  reason: collision with root package name */
-    private static final String[] f36524d = {"CTRL_PS", " ", "\u0001", "\u0002", "\u0003", "\u0004", "\u0005", "\u0006", "\u0007", "\b", "\t", ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, "\u000b", "\f", "\r", "\u001b", "\u001c", "\u001d", "\u001e", "\u001f", "@", "\\", "^", "_", "`", "|", "~", "\u007f", "CTRL_LL", "CTRL_UL", "CTRL_PL", "CTRL_BS"};
+    private static final String[] f36525d = {"CTRL_PS", " ", "\u0001", "\u0002", "\u0003", "\u0004", "\u0005", "\u0006", "\u0007", "\b", "\t", ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, "\u000b", "\f", "\r", "\u001b", "\u001c", "\u001d", "\u001e", "\u001f", "@", "\\", "^", "_", "`", "|", "~", "\u007f", "CTRL_LL", "CTRL_UL", "CTRL_PL", "CTRL_BS"};
 
     /* renamed from: e  reason: collision with root package name */
-    private static final String[] f36525e = {"FLG(n)", "\r", "\r\n", ". ", ", ", ": ", "!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "[", "]", "{", "}", "CTRL_UL"};
+    private static final String[] f36526e = {"FLG(n)", "\r", "\r\n", ". ", ", ", ": ", "!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "[", "]", "{", "}", "CTRL_UL"};
 
     /* renamed from: f  reason: collision with root package name */
-    private static final String[] f36526f = {"CTRL_PS", " ", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ",", ".", "CTRL_UL", "CTRL_US"};
+    private static final String[] f36527f = {"CTRL_PS", " ", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ",", ".", "CTRL_UL", "CTRL_US"};
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Charset f36527g = StandardCharsets.ISO_8859_1;
+    private static final Charset f36528g = StandardCharsets.ISO_8859_1;
 
     /* renamed from: a  reason: collision with root package name */
-    private lk.a f36528a;
+    private lk.a f36529a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: mk.a$a  reason: collision with other inner class name */
@@ -36,29 +36,29 @@ public final class a {
     public static /* synthetic */ class C0517a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f36529a;
+        static final /* synthetic */ int[] f36530a;
 
         static {
             int[] iArr = new int[c.values().length];
-            f36529a = iArr;
+            f36530a = iArr;
             try {
                 iArr[c.UPPER.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f36529a[c.LOWER.ordinal()] = 2;
+                f36530a[c.LOWER.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f36529a[c.MIXED.ordinal()] = 3;
+                f36530a[c.MIXED.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f36529a[c.PUNCT.ordinal()] = 4;
+                f36530a[c.PUNCT.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f36529a[c.DIGIT.ordinal()] = 5;
+                f36530a[c.DIGIT.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
         }
@@ -69,18 +69,18 @@ public final class a {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final boolean[] f36530a;
+        private final boolean[] f36531a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f36531b;
+        private final int f36532b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f36532c;
+        private final int f36533c;
 
         b(boolean[] zArr, int i10, int i11) {
-            this.f36530a = zArr;
-            this.f36531b = i10;
-            this.f36532c = i11;
+            this.f36531a = zArr;
+            this.f36532b = i10;
+            this.f36533c = i11;
         }
     }
 
@@ -109,22 +109,22 @@ public final class a {
         qk.a aVar;
         boolean z10;
         boolean z11;
-        if (this.f36528a.e() <= 2) {
-            aVar = qk.a.f45436j;
+        if (this.f36529a.e() <= 2) {
+            aVar = qk.a.f45437j;
             i10 = 6;
         } else {
             i10 = 8;
-            if (this.f36528a.e() <= 8) {
-                aVar = qk.a.f45440n;
-            } else if (this.f36528a.e() <= 22) {
-                aVar = qk.a.f45435i;
+            if (this.f36529a.e() <= 8) {
+                aVar = qk.a.f45441n;
+            } else if (this.f36529a.e() <= 22) {
+                aVar = qk.a.f45436i;
                 i10 = 10;
             } else {
-                aVar = qk.a.f45434h;
+                aVar = qk.a.f45435h;
                 i10 = 12;
             }
         }
-        int d10 = this.f36528a.d();
+        int d10 = this.f36529a.d();
         int length = zArr.length / i10;
         if (length >= d10) {
             int length2 = zArr.length % i10;
@@ -191,8 +191,8 @@ public final class a {
     private boolean[] d(ok.b bVar) {
         int i10;
         int i11;
-        boolean f10 = this.f36528a.f();
-        int e10 = this.f36528a.e();
+        boolean f10 = this.f36529a.f();
+        int e10 = this.f36529a.e();
         if (f10) {
             i10 = 11;
         } else {
@@ -255,23 +255,23 @@ public final class a {
     }
 
     private static String e(c cVar, int i10) {
-        int i11 = C0517a.f36529a[cVar.ordinal()];
+        int i11 = C0517a.f36530a[cVar.ordinal()];
         if (i11 != 1) {
             if (i11 != 2) {
                 if (i11 != 3) {
                     if (i11 != 4) {
                         if (i11 == 5) {
-                            return f36526f[i10];
+                            return f36527f[i10];
                         }
                         throw new IllegalStateException("Bad table");
                     }
-                    return f36525e[i10];
+                    return f36526e[i10];
                 }
-                return f36524d[i10];
+                return f36525d[i10];
             }
-            return f36523c[i10];
+            return f36524c[i10];
         }
-        return f36522b[i10];
+        return f36523b[i10];
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:52:0x00b7, code lost:
@@ -341,11 +341,11 @@ public final class a {
     }
 
     public ok.e c(lk.a aVar) {
-        this.f36528a = aVar;
+        this.f36529a = aVar;
         b b10 = b(d(aVar.a()));
-        ok.e eVar = new ok.e(a(b10.f36530a), f(b10.f36530a), null, String.format("%d%%", Integer.valueOf(b10.f36532c)));
-        eVar.o(b10.f36530a.length);
-        eVar.n(Integer.valueOf(b10.f36531b));
+        ok.e eVar = new ok.e(a(b10.f36531a), f(b10.f36531a), null, String.format("%d%%", Integer.valueOf(b10.f36533c)));
+        eVar.o(b10.f36531a.length);
+        eVar.n(Integer.valueOf(b10.f36532b));
         return eVar;
     }
 }

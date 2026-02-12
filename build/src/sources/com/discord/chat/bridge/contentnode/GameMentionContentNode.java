@@ -91,7 +91,7 @@ public final class GameMentionContentNode extends MentionContentNode {
         Lazy[] lazyArr = $childSerializers;
         compositeEncoder.k(serialDescriptor, 0, ChannelId$$serializer.INSTANCE, ChannelId.m1058boximpl(gameMentionContentNode.channelId));
         if (compositeEncoder.z(serialDescriptor, 1) || gameMentionContentNode.icon != null) {
-            compositeEncoder.o(serialDescriptor, 1, n2.f50032a, gameMentionContentNode.icon);
+            compositeEncoder.o(serialDescriptor, 1, n2.f50033a, gameMentionContentNode.icon);
         }
         compositeEncoder.y(serialDescriptor, 2, gameMentionContentNode.applicationId);
         compositeEncoder.k(serialDescriptor, 3, (qt.o) lazyArr[3].getValue(), gameMentionContentNode.getContent());

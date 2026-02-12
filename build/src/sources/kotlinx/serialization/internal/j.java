@@ -11,7 +11,7 @@ import tt.x2;
 public final class j extends f2 implements KSerializer {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final j f35096c = new j();
+    public static final j f35097c = new j();
 
     private j() {
         super(rt.a.w(z.f6102e));

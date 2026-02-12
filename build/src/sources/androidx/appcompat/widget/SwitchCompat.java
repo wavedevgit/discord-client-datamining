@@ -293,7 +293,7 @@ public abstract class SwitchCompat extends CompoundButton {
         if (Build.VERSION.SDK_INT >= 30) {
             CharSequence charSequence = this.mTextOff;
             if (charSequence == null) {
-                charSequence = getResources().getString(f.h.f23397b);
+                charSequence = getResources().getString(f.h.f23398b);
             }
             androidx.core.view.i0.B0(this, charSequence);
         }
@@ -303,7 +303,7 @@ public abstract class SwitchCompat extends CompoundButton {
         if (Build.VERSION.SDK_INT >= 30) {
             CharSequence charSequence = this.mTextOn;
             if (charSequence == null) {
-                charSequence = getResources().getString(f.h.f23398c);
+                charSequence = getResources().getString(f.h.f23399c);
             }
             androidx.core.view.i0.B0(this, charSequence);
         }
@@ -1037,7 +1037,7 @@ public abstract class SwitchCompat extends CompoundButton {
             }
         }
         l(t10.k(f.j.U2, -1), t10.k(f.j.V2, -1));
-        if (t10.a(f.j.f23455h3, false)) {
+        if (t10.a(f.j.f23456h3, false)) {
             this.mSwitchTransformationMethod = new j.a(getContext());
         } else {
             this.mSwitchTransformationMethod = null;

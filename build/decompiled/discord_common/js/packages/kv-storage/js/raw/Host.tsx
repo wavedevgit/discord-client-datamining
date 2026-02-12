@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = var3.executeAsync;
             var1 = 'database_open';
             var0 = function(arg0) { // Environment: var0
-                _fun18663: for (var _fun18663_ip = 0;;) switch (_fun18663_ip) {
+                _fun18679: for (var _fun18679_ip = 0;;) switch (_fun18679_ip) {
                     case 0:
                         var1 = _closure1_slot0;
                         var2 = _closure1_slot1;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = null;
                         var6 = var0 == var6;
                         if (var6) {
-                            _fun18663_ip = 74;
-                            continue _fun18663
+                            _fun18679_ip = 74;
+                            continue _fun18679
                         }
                     case 64:
                         var5 = _closure3_slot1;
@@ -83,8 +83,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 74:
                         var0 = var0 != var4;
                         if (!var0) {
-                            _fun18663_ip = 84;
-                            continue _fun18663
+                            _fun18679_ip = 84;
+                            continue _fun18679
                         }
                     case 81:
                         var0 = var4;
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'openSyncUnsafe';
         var0.key = var6;
         var6 = function arg0, arg1() {
-            _fun18664: for (var _fun18664_ip = 0;;) switch (_fun18664_ip) {
+            _fun18680: for (var _fun18680_ip = 0;;) switch (_fun18680_ip) {
                 case 0:
                     var0 = arg1;
                     var2 = _closure1_slot0;
@@ -122,16 +122,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = null;
                     var6 = var1 == var0;
                     if (var6) {
-                        _fun18664_ip = 65;
-                        continue _fun18664
+                        _fun18680_ip = 65;
+                        continue _fun18680
                     }
                 case 59:
                     var5 = var0.invalidateDisabledHandles;
                 case 65:
                     var0 = var1 != var5;
                     if (!var0) {
-                        _fun18664_ip = 75;
-                        continue _fun18664
+                        _fun18680_ip = 75;
+                        continue _fun18680
                     }
                 case 72:
                     var0 = var5;
@@ -189,13 +189,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = undefined;
         var6 = function*() { // Environment: var5
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun18668: for (var _fun18668_ip = 0;;) switch (_fun18668_ip) {
+                _fun18684: for (var _fun18684_ip = 0;;) switch (_fun18684_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun18668_ip = 94;
-                            continue _fun18668
+                            _fun18684_ip = 94;
+                            continue _fun18684
                         }
                     case 9:
                         var4 = _closure1_slot0;
@@ -227,8 +227,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 67:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun18668_ip = 91;
-                            continue _fun18668
+                            _fun18684_ip = 91;
+                            continue _fun18684
                         }
                     case 73:
                         var3 = var1.map;

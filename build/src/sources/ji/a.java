@@ -12,18 +12,18 @@ import zg.m;
 public class a implements ReviewManager {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f30966a;
+    private final Context f30967a;
 
     /* renamed from: b  reason: collision with root package name */
-    private b f30967b;
+    private b f30968b;
 
     public a(Context context) {
-        this.f30966a = context;
+        this.f30967a = context;
     }
 
     @Override // com.google.android.play.core.review.ReviewManager
     public Task a(Activity activity, b bVar) {
-        if (bVar != this.f30967b) {
+        if (bVar != this.f30968b) {
             return m.e(new gi.a(-2));
         }
         return m.f(null);
@@ -31,8 +31,8 @@ public class a implements ReviewManager {
 
     @Override // com.google.android.play.core.review.ReviewManager
     public Task b() {
-        b c10 = b.c(PendingIntent.getBroadcast(this.f30966a, 0, new Intent(), 67108864), false);
-        this.f30967b = c10;
+        b c10 = b.c(PendingIntent.getBroadcast(this.f30967a, 0, new Intent(), 67108864), false);
+        this.f30968b = c10;
         return m.f(c10);
     }
 }

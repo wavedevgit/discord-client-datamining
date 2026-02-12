@@ -6,7 +6,7 @@ import x5.c;
 public abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f52296a = c.a.a("ty", "d");
+    private static final c.a f52297a = c.a.a("ty", "d");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */

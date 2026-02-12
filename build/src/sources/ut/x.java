@@ -9,15 +9,15 @@ import kotlinx.serialization.json.JsonObject;
 public final class x {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f51260a = new LinkedHashMap();
+    private final Map f51261a = new LinkedHashMap();
 
     public final JsonObject a() {
-        return new JsonObject(this.f51260a);
+        return new JsonObject(this.f51261a);
     }
 
     public final JsonElement b(String key, JsonElement element) {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(element, "element");
-        return (JsonElement) this.f51260a.put(key, element);
+        return (JsonElement) this.f51261a.put(key, element);
     }
 }

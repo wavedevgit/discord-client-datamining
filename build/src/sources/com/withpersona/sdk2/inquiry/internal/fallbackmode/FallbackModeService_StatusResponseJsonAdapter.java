@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class FallbackModeService_StatusResponseJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19844a;
+    private final m.b f19845a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19845b;
+    private final com.squareup.moshi.h f19846b;
 
     public FallbackModeService_StatusResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("static-inquiry-template");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19844a = a10;
+        this.f19845a = a10;
         com.squareup.moshi.h f10 = moshi.f(FallbackModeService.StaticTemplate.class, x0.d(), "staticInquiryTemplate");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19845b = f10;
+        this.f19846b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -35,10 +35,10 @@ public final class FallbackModeService_StatusResponseJsonAdapter extends com.squ
         reader.u();
         FallbackModeService.StaticTemplate staticTemplate = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19844a);
+            int J = reader.J(this.f19845a);
             if (J != -1) {
                 if (J == 0) {
-                    staticTemplate = (FallbackModeService.StaticTemplate) this.f19845b.fromJson(reader);
+                    staticTemplate = (FallbackModeService.StaticTemplate) this.f19846b.fromJson(reader);
                 }
             } else {
                 reader.z0();
@@ -56,7 +56,7 @@ public final class FallbackModeService_StatusResponseJsonAdapter extends com.squ
         if (statusResponse != null) {
             writer.i();
             writer.J("static-inquiry-template");
-            this.f19845b.toJson(writer, statusResponse.a());
+            this.f19846b.toJson(writer, statusResponse.a());
             writer.s();
             return;
         }

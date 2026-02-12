@@ -5,7 +5,7 @@ import java.util.List;
 public final class e implements cv.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f48476a = new e();
+    public static final e f48477a = new e();
 
     private e() {
     }

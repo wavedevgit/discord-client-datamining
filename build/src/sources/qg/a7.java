@@ -5,51 +5,51 @@ import bj.c;
 final class a7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final a7 f44145a = new a7();
+    static final a7 f44146a = new a7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f44146b;
+    private static final bj.c f44147b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f44147c;
+    private static final bj.c f44148c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f44148d;
+    private static final bj.c f44149d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final bj.c f44149e;
+    private static final bj.c f44150e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final bj.c f44150f;
+    private static final bj.c f44151f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final bj.c f44151g;
+    private static final bj.c f44152g;
 
     static {
         c.b a10 = bj.c.a("inferenceCommonLogEvent");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44146b = a10.b(s1Var.b()).a();
+        f44147b = a10.b(s1Var.b()).a();
         c.b a11 = bj.c.a("imageInfo");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44147c = a11.b(s1Var2.b()).a();
+        f44148c = a11.b(s1Var2.b()).a();
         c.b a12 = bj.c.a("detectorOptions");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44148d = a12.b(s1Var3.b()).a();
+        f44149d = a12.b(s1Var3.b()).a();
         c.b a13 = bj.c.a("loadDurationMs");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f44149e = a13.b(s1Var4.b()).a();
+        f44150e = a13.b(s1Var4.b()).a();
         c.b a14 = bj.c.a("sessionDurationMs");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f44150f = a14.b(s1Var5.b()).a();
+        f44151f = a14.b(s1Var5.b()).a();
         c.b a15 = bj.c.a("sessionTotalInferenceDurationMs");
         s1 s1Var6 = new s1();
         s1Var6.a(6);
-        f44151g = a15.b(s1Var6.b()).a();
+        f44152g = a15.b(s1Var6.b()).a();
     }
 
     private a7() {

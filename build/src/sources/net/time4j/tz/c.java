@@ -13,7 +13,7 @@ public final class c extends l {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(k kVar, m mVar) {
-        this(kVar, mVar, l.f37723o);
+        this(kVar, mVar, l.f37724o);
     }
 
     private void readObject(ObjectInputStream objectInputStream) {

@@ -11,10 +11,10 @@ public final class d0 implements Parcelable {
     public static final Parcelable.Creator<d0> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Date f23992d;
+    private final Date f23993d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Date f23993e;
+    private final Date f23994e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -35,16 +35,16 @@ public final class d0 implements Parcelable {
     public d0(Date dateOfBirth, Date expirationDate) {
         Intrinsics.checkNotNullParameter(dateOfBirth, "dateOfBirth");
         Intrinsics.checkNotNullParameter(expirationDate, "expirationDate");
-        this.f23992d = dateOfBirth;
-        this.f23993e = expirationDate;
+        this.f23993d = dateOfBirth;
+        this.f23994e = expirationDate;
     }
 
     public final Date a() {
-        return this.f23992d;
+        return this.f23993d;
     }
 
     public final Date b() {
-        return this.f23993e;
+        return this.f23994e;
     }
 
     @Override // android.os.Parcelable
@@ -60,26 +60,26 @@ public final class d0 implements Parcelable {
             return false;
         }
         d0 d0Var = (d0) obj;
-        if (Intrinsics.areEqual(this.f23992d, d0Var.f23992d) && Intrinsics.areEqual(this.f23993e, d0Var.f23993e)) {
+        if (Intrinsics.areEqual(this.f23993d, d0Var.f23993d) && Intrinsics.areEqual(this.f23994e, d0Var.f23994e)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f23992d.hashCode() * 31) + this.f23993e.hashCode();
+        return (this.f23993d.hashCode() * 31) + this.f23994e.hashCode();
     }
 
     public String toString() {
-        Date date = this.f23992d;
-        Date date2 = this.f23993e;
+        Date date = this.f23993d;
+        Date date2 = this.f23994e;
         return "ExtractedTexts(dateOfBirth=" + date + ", expirationDate=" + date2 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeSerializable(this.f23992d);
-        dest.writeSerializable(this.f23993e);
+        dest.writeSerializable(this.f23993d);
+        dest.writeSerializable(this.f23994e);
     }
 }

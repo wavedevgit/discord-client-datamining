@@ -9,13 +9,13 @@ import bh.b;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int[] f52771a = {16842752, f.a.M};
+    private static final int[] f52772a = {16842752, f.a.M};
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int[] f52772b = {b.H};
+    private static final int[] f52773b = {b.H};
 
     private static int a(Context context, AttributeSet attributeSet) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f52771a);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f52772a);
         int resourceId = obtainStyledAttributes.getResourceId(0, 0);
         int resourceId2 = obtainStyledAttributes.getResourceId(1, 0);
         obtainStyledAttributes.recycle();
@@ -38,7 +38,7 @@ public abstract class a {
     }
 
     private static int c(Context context, AttributeSet attributeSet, int i10, int i11) {
-        return b(context, attributeSet, f52772b, i10, i11)[0];
+        return b(context, attributeSet, f52773b, i10, i11)[0];
     }
 
     public static Context d(Context context, AttributeSet attributeSet, int i10, int i11) {

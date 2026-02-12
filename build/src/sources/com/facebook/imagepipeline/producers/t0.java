@@ -9,35 +9,35 @@ import java.util.Map;
 public class t0 implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ma.w f11539a;
+    private final ma.w f11540a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ma.k f11540b;
+    private final ma.k f11541b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final w0 f11541c;
+    private final w0 f11542c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static class a extends s {
 
         /* renamed from: c  reason: collision with root package name */
-        private final CacheKey f11542c;
+        private final CacheKey f11543c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final boolean f11543d;
+        private final boolean f11544d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final ma.w f11544e;
+        private final ma.w f11545e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final boolean f11545f;
+        private final boolean f11546f;
 
         public a(Consumer consumer, CacheKey cacheKey, boolean z10, ma.w wVar, boolean z11) {
             super(consumer);
-            this.f11542c = cacheKey;
-            this.f11543d = z10;
-            this.f11544e = wVar;
-            this.f11545f = z11;
+            this.f11543c = cacheKey;
+            this.f11544d = z10;
+            this.f11545e = wVar;
+            this.f11546f = z11;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -49,10 +49,10 @@ public class t0 implements w0 {
                 if (c.d(i10)) {
                     o().b(null, i10);
                 }
-            } else if (c.e(i10) && !this.f11543d) {
+            } else if (c.e(i10) && !this.f11544d) {
             } else {
-                if (this.f11545f) {
-                    closeableReference2 = this.f11544e.c(this.f11542c, closeableReference);
+                if (this.f11546f) {
+                    closeableReference2 = this.f11545e.c(this.f11543c, closeableReference);
                 }
                 try {
                     o().c(1.0f);
@@ -69,9 +69,9 @@ public class t0 implements w0 {
     }
 
     public t0(ma.w wVar, ma.k kVar, w0 w0Var) {
-        this.f11539a = wVar;
-        this.f11540b = kVar;
-        this.f11541c = w0Var;
+        this.f11540a = wVar;
+        this.f11541b = kVar;
+        this.f11542c = w0Var;
     }
 
     @Override // com.facebook.imagepipeline.producers.w0
@@ -83,10 +83,10 @@ public class t0 implements w0 {
         Postprocessor postprocessor = I.getPostprocessor();
         if (postprocessor != null && postprocessor.getPostprocessorCacheKey() != null) {
             y10.d(producerContext, c());
-            CacheKey postprocessedBitmapCacheKey = this.f11540b.getPostprocessedBitmapCacheKey(I, a10);
+            CacheKey postprocessedBitmapCacheKey = this.f11541b.getPostprocessedBitmapCacheKey(I, a10);
             Map map = null;
             if (producerContext.I().isCacheEnabled(1)) {
-                closeableReference = this.f11539a.get(postprocessedBitmapCacheKey);
+                closeableReference = this.f11540a.get(postprocessedBitmapCacheKey);
             } else {
                 closeableReference = null;
             }
@@ -103,16 +103,16 @@ public class t0 implements w0 {
                 closeableReference.close();
                 return;
             }
-            a aVar = new a(consumer, postprocessedBitmapCacheKey, false, this.f11539a, producerContext.I().isCacheEnabled(2));
+            a aVar = new a(consumer, postprocessedBitmapCacheKey, false, this.f11540a, producerContext.I().isCacheEnabled(2));
             String c11 = c();
             if (y10.f(producerContext, c())) {
                 map = p8.f.of("cached_value_found", "false");
             }
             y10.j(producerContext, c11, map);
-            this.f11541c.b(aVar, producerContext);
+            this.f11542c.b(aVar, producerContext);
             return;
         }
-        this.f11541c.b(consumer, producerContext);
+        this.f11542c.b(consumer, producerContext);
     }
 
     protected String c() {

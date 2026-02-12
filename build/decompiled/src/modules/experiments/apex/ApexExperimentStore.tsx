@@ -106,9 +106,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = {};
                     var8 = function arg0() {
                         var2 = _closure3_slot0;
-                        var1 = var2.setExperimentAssignments;
+                        var1 = var2.handleConnectionOpen;
                         var0 = arg0;
-                        var0 = var0.apexExperiments;
                         var0 = var1.bind(var2)(var0);
                         return var0;
                     };
@@ -122,6 +121,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         return var0;
                     };
                     var6.CONNECTION_OPEN_STATE_UPDATE = var8;
+                    var8 = function arg0() {
+                        var2 = _closure3_slot0;
+                        var1 = var2.handleGuildCreate;
+                        var0 = arg0;
+                        var0 = var1.bind(var2)(var0);
+                        return var0;
+                    };
+                    var6.GUILD_CREATE = var8;
                     var8 = function arg0() {
                         var0 = arg0;
                         var3 = _closure3_slot0;
@@ -233,15 +240,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot9;
                     var0 = var0.bind(var3)();
                     if (var0) {
-                        _fun13213_ip = 257;
+                        _fun13213_ip = 267;
                         continue _fun13213
                     }
-                case 244:
+                case 254:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var4, var9);
-                    _fun13213_ip = 291;
+                    _fun13213_ip = 301;
                     continue _fun13213;
-                case 257:
+                case 267:
                     var6 = global;
                     var7 = var6.Reflect;
                     var6 = var7.construct;
@@ -249,7 +256,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var5.bind(var3)(var4);
                     var5 = var5.constructor;
                     var0 = var6.bind(var7)(var8, var9, var5);
-                case 291:
+                case 301:
                     var0 = var2.bind(var3)(var4, var0);
                     var _closure3_slot0 = var0;
                     var1 = function(arg0) { // Environment: var1
@@ -279,14 +286,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             }
         };
         var _closure2_slot0 = var3;
-        var5 = _closure1_slot7;
+        var4 = _closure1_slot7;
         var2 = undefined;
-        var4 = arg0;
-        var4 = var5.bind(var2)(var3, var4);
+        var1 = arg0;
+        var1 = var4.bind(var2)(var3, var1);
         var1 = _closure1_slot4;
         var4 = {};
-        var5 = 'initialize';
-        var4.key = var5;
+        var0 = 'initialize';
+        var4.key = var0;
         var0 = function arg0() {
             var4 = this;
             var2 = var4.waitFor;
@@ -306,8 +313,74 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             return var0;
         };
         var4.value = var0;
-        var0 = new Array(1);
+        var0 = new Array(3);
         var0[0] = var4;
+        var4 = {};
+        var6 = 'handleConnectionOpen';
+        var4.key = var6;
+        var6 = function arg0() {
+            var0 = arg0;
+            var3 = this;
+            var5 = var0.guilds;
+            var4 = var5.reduce;
+            var2 = function(arg0, arg1) { // Environment: var1
+                _fun13231: for (var _fun13231_ip = 0;;) switch (_fun13231_ip) {
+                    case 0:
+                        var0 = arg0;
+                        var1 = arg1;
+                        var3 = var1.experiments;
+                        var2 = null;
+                        if (!(var2 != var3)) {
+                            _fun13231_ip = 33;
+                            continue _fun13231
+                        }
+                    case 18:
+                        var2 = var1.id;
+                        var1 = var1.experiments;
+                        var0[var2] = var1;
+                    case 33:
+                        return var0;
+                }
+            };
+            var1 = {};
+            var2 = var4.bind(var5)(var2, var1);
+            var1 = var3.setExperimentAssignments;
+            var0 = var0.apexExperiments;
+            var0 = var1.bind(var3)(var0, var2);
+            return var0;
+        };
+        var4.value = var6;
+        var0[1] = var4;
+        var4 = {};
+        var6 = 'handleGuildCreate';
+        var4.key = var6;
+        var5 = function arg0() {
+            _fun13232: for (var _fun13232_ip = 0;;) switch (_fun13232_ip) {
+                case 0:
+                    var0 = arg0;
+                    var2 = this;
+                    var1 = var0.guild;
+                    var3 = var1.experiments;
+                    var1 = null;
+                    if (!(var1 != var3)) {
+                        _fun13232_ip = 53;
+                        continue _fun13232
+                    }
+                case 23:
+                    var1 = {};
+                    var0 = var0.guild;
+                    var0 = var0.id;
+                    var1[var0] = var3;
+                    var0 = var2.setGuildExperimentAssignments;
+                    var0 = var0.bind(var2)(var1);
+                    return var0;
+                case 53:
+                    var0 = true;
+                    return var0;
+            }
+        };
+        var4.value = var5;
+        var0[2] = var4;
         var0 = var1.bind(var2)(var3, var0);
         return var0;
     };

@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = function arg0() {
-        _fun29075: for (var _fun29075_ip = 0;;) switch (_fun29075_ip) {
+        _fun29091: for (var _fun29091_ip = 0;;) switch (_fun29091_ip) {
             case 0:
                 var5 = arg0;
                 var2 = var5;
@@ -13,8 +13,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = 'function';
                 var5 = typeof var5;
                 if (!(var6 !== var5)) {
-                    _fun29075_ip = 35;
-                    continue _fun29075
+                    _fun29091_ip = 35;
+                    continue _fun29091
                 }
             case 33:
                 return var4;
@@ -23,14 +23,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var7.call;
                 var4 = 'f';
                 var2 = function(arg0, arg1, arg2) { // Environment: var1
-                    _fun29076: for (var _fun29076_ip = 0;;) switch (_fun29076_ip) {
+                    _fun29092: for (var _fun29092_ip = 0;;) switch (_fun29092_ip) {
                         case 0:
                             var1 = 'object';
                             var0 = arg2;
                             var0 = typeof var0;
                             if (!(var1 !== var0)) {
-                                _fun29076_ip = 23;
-                                continue _fun29076
+                                _fun29092_ip = 23;
+                                continue _fun29092
                             }
                         case 14:
                             var0 = false;
@@ -55,24 +55,24 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = 'x';
                 var2 = var6.bind(var7)(var5, var4, var2);
             case 89: // try_end0
-                _fun29075_ip = 95;
-                continue _fun29075;
+                _fun29091_ip = 95;
+                continue _fun29091;
             case 91: // catch_target0
                 CatchBlockStart(arg_register = 2);
                 var3 = true;
             case 95:
                 var2 = !var3;
                 if (var3) {
-                    _fun29075_ip = 105;
-                    continue _fun29075
+                    _fun29091_ip = 105;
+                    continue _fun29091
                 }
             case 101:
                 var2 = _closure2_slot0;
             case 105:
                 var0 = var2;
                 if (!var2) {
-                    _fun29075_ip = 115;
-                    continue _fun29075
+                    _fun29091_ip = 115;
+                    continue _fun29091
                 }
             case 111:
                 var0 = _closure2_slot1;

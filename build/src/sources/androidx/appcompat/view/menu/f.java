@@ -57,7 +57,7 @@ class f implements DialogInterface.OnKeyListener, DialogInterface.OnClickListene
     public void d(IBinder iBinder) {
         e eVar = this.f1468d;
         a.C0015a c0015a = new a.C0015a(eVar.w());
-        c cVar = new c(c0015a.getContext(), f.g.f23385j);
+        c cVar = new c(c0015a.getContext(), f.g.f23386j);
         this.f1470i = cVar;
         cVar.c(this);
         this.f1468d.b(this.f1470i);

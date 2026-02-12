@@ -7,33 +7,33 @@ import sg.r;
 public final class l {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final sg.d f54780c = new sg.d("AgeSignalsService");
+    private static final sg.d f54781c = new sg.d("AgeSignalsService");
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f54781a;
+    private final Context f54782a;
 
     /* renamed from: b  reason: collision with root package name */
-    final sg.o f54782b;
+    final sg.o f54783b;
 
     /* JADX WARN: Type inference failed for: r6v0, types: [xh.i, java.lang.Object] */
     public l(Context context) {
-        this.f54781a = context;
+        this.f54782a = context;
         if (r.b(context)) {
-            this.f54782b = new sg.o(context, f54780c, "AgeSignalsService", f.f54772a, new Object(), null);
+            this.f54783b = new sg.o(context, f54781c, "AgeSignalsService", f.f54773a, new Object(), null);
         } else {
-            this.f54782b = null;
+            this.f54783b = null;
         }
     }
 
     private static Task d(int i10) {
-        f54780c.a("onError(%d)", Integer.valueOf(i10));
+        f54781c.a("onError(%d)", Integer.valueOf(i10));
         return zg.m.e(new a(i10));
     }
 
     public final Task b(d dVar) {
-        sg.o oVar = this.f54782b;
+        sg.o oVar = this.f54783b;
         if (oVar != null) {
-            if (r.a(this.f54781a) < 82380000) {
+            if (r.a(this.f54782a) < 82380000) {
                 return d(-6);
             }
             zg.k kVar = new zg.k();

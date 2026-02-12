@@ -5,16 +5,16 @@ import bj.c;
 final class p5 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final p5 f42333a = new p5();
+    static final p5 f42334a = new p5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f42334b;
+    private static final bj.c f42335b;
 
     static {
         c.b a10 = bj.c.a("errorCode");
         f fVar = new f();
         fVar.a(1);
-        f42334b = a10.b(fVar.b()).a();
+        f42335b = a10.b(fVar.b()).a();
     }
 
     private p5() {

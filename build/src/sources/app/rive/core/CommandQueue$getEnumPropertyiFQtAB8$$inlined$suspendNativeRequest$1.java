@@ -79,7 +79,7 @@ public final class CommandQueue$getEnumPropertyiFQtAB8$$inlined$suspendNativeReq
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj2) {
                 invoke((Throwable) obj2);
-                return Unit.f31987a;
+                return Unit.f31988a;
             }
 
             public final void invoke(Throwable th2) {
@@ -103,6 +103,6 @@ public final class CommandQueue$getEnumPropertyiFQtAB8$$inlined$suspendNativeReq
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super String> continuation) {
-        return ((CommandQueue$getEnumPropertyiFQtAB8$$inlined$suspendNativeRequest$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+        return ((CommandQueue$getEnumPropertyiFQtAB8$$inlined$suspendNativeRequest$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

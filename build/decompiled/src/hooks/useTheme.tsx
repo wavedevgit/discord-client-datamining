@@ -20,21 +20,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot3 = var4;
     var1 = function arg0() {
-        _fun28224: for (var _fun28224_ip = 0;;) switch (_fun28224_ip) {
+        _fun28240: for (var _fun28240_ip = 0;;) switch (_fun28240_ip) {
             case 0:
                 var1 = arg0;
                 var2 = _closure1_slot2;
                 var2 = var2.DARK;
                 if (!(var2 !== var1)) {
-                    _fun28224_ip = 43;
-                    continue _fun28224
+                    _fun28240_ip = 43;
+                    continue _fun28240
                 }
             case 20:
                 var0 = _closure1_slot2;
                 var0 = var0.LIGHT;
                 if (!(var0 !== var1)) {
-                    _fun28224_ip = 38;
-                    continue _fun28224
+                    _fun28240_ip = 38;
+                    continue _fun28240
                 }
             case 34:
                 var0 = undefined;

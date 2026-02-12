@@ -1,7 +1,6 @@
 package com.discord.bridge;
 
-import com.discord.audio.AudioManagerModule;
-import com.facebook.react.bridge.NativeModule;
+import com.discord.appreview.AppRatingRequestModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function1;
@@ -9,15 +8,16 @@ import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
 @Metadata(k = 3, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-/* synthetic */ class DCDPackageList$getPackages$51 extends FunctionReferenceImpl implements Function1<ReactApplicationContext, NativeModule> {
-    /* JADX INFO: Access modifiers changed from: package-private */
-    public DCDPackageList$getPackages$51(Object obj) {
-        super(1, obj, AudioManagerModule.Companion.class, "create", "create(Lcom/facebook/react/bridge/ReactApplicationContext;)Lcom/facebook/react/bridge/NativeModule;", 0);
+/* synthetic */ class DCDPackageList$getPackages$51 extends FunctionReferenceImpl implements Function1<ReactApplicationContext, AppRatingRequestModule> {
+    public static final DCDPackageList$getPackages$51 INSTANCE = new DCDPackageList$getPackages$51();
+
+    DCDPackageList$getPackages$51() {
+        super(1, AppRatingRequestModule.class, "<init>", "<init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V", 0);
     }
 
     @Override // kotlin.jvm.functions.Function1
-    public final NativeModule invoke(ReactApplicationContext p02) {
+    public final AppRatingRequestModule invoke(ReactApplicationContext p02) {
         Intrinsics.checkNotNullParameter(p02, "p0");
-        return ((AudioManagerModule.Companion) this.receiver).create(p02);
+        return new AppRatingRequestModule(p02);
     }
 }

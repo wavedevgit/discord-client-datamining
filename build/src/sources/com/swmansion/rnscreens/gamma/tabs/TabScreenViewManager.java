@@ -56,7 +56,7 @@ public final class TabScreenViewManager extends ViewGroupManager<com.swmansion.r
     @Override // com.facebook.react.uimanager.BaseViewManager, com.facebook.react.uimanager.ViewManager
     @NotNull
     public Map<String, Object> getExportedCustomDirectEventTypeConstants() {
-        return o0.n(un.a.a(wn.c.f52939a), un.a.a(wn.a.f52937a), un.a.a(wn.d.f52940a), un.a.a(wn.b.f52938a));
+        return o0.n(un.a.a(wn.c.f52940a), un.a.a(wn.a.f52938a), un.a.a(wn.d.f52941a), un.a.a(wn.b.f52939a));
     }
 
     @Override // com.facebook.react.uimanager.ViewManager, com.facebook.react.bridge.NativeModule
@@ -156,7 +156,7 @@ public final class TabScreenViewManager extends ViewGroupManager<com.swmansion.r
     @NotNull
     public com.swmansion.rnscreens.gamma.tabs.a createViewInstance(@NotNull ThemedReactContext reactContext) {
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
-        co.e.f8377a.a(REACT_CLASS, "createViewInstance");
+        co.e.f8378a.a(REACT_CLASS, "createViewInstance");
         return new com.swmansion.rnscreens.gamma.tabs.a(reactContext);
     }
 
@@ -190,7 +190,7 @@ public final class TabScreenViewManager extends ViewGroupManager<com.swmansion.r
     @ReactProp(name = "isFocused")
     public void setIsFocused(@NotNull com.swmansion.rnscreens.gamma.tabs.a view, boolean z10) {
         Intrinsics.checkNotNullParameter(view, "view");
-        co.e eVar = co.e.f8377a;
+        co.e eVar = co.e.f8378a;
         int id2 = view.getId();
         eVar.a(REACT_CLASS, "TabScreen [" + id2 + "] setIsFocused " + z10);
         view.setFocusedTab(z10);

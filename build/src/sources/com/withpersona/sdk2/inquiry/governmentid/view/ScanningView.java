@@ -22,37 +22,37 @@ import kotlin.jvm.internal.Intrinsics;
 public final class ScanningView extends View {
 
     /* renamed from: v  reason: collision with root package name */
-    public static final a f19675v = new a(null);
+    public static final a f19676v = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final Matrix f19676d;
+    private final Matrix f19677d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ValueAnimator f19677e;
+    private final ValueAnimator f19678e;
 
     /* renamed from: i  reason: collision with root package name */
-    private SweepGradient f19678i;
+    private SweepGradient f19679i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Paint f19679o;
+    private final Paint f19680o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Path f19680p;
+    private Path f19681p;
 
     /* renamed from: q  reason: collision with root package name */
-    private float f19681q;
+    private float f19682q;
 
     /* renamed from: r  reason: collision with root package name */
-    private float f19682r;
+    private float f19683r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f19683s;
+    private boolean f19684s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f19684t;
+    private int f19685t;
 
     /* renamed from: u  reason: collision with root package name */
-    private int f19685u;
+    private int f19686u;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -66,20 +66,20 @@ public final class ScanningView extends View {
 
     public ScanningView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f19676d = new Matrix();
-        this.f19682r = (float) h.a(8.0d);
-        this.f19683s = true;
+        this.f19677d = new Matrix();
+        this.f19683r = (float) h.a(8.0d);
+        this.f19684s = true;
         Context context2 = getContext();
         Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
-        this.f19684t = s.d(context2, f.a.f23298w, null, false, 6, null);
-        this.f19685u = -1;
-        this.f19678i = b();
+        this.f19685t = s.d(context2, f.a.f23299w, null, false, 6, null);
+        this.f19686u = -1;
+        this.f19679i = b();
         Paint paint = new Paint(1);
         paint.setStyle(Paint.Style.STROKE);
         paint.setStrokeWidth((float) h.a(3.0d));
-        paint.setShader(this.f19678i);
-        this.f19679o = paint;
-        this.f19680p = c();
+        paint.setShader(this.f19679i);
+        this.f19680o = paint;
+        this.f19681p = c();
         ValueAnimator ofFloat = ValueAnimator.ofFloat(0.0f, 1.0f);
         ofFloat.setDuration(4000L);
         ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: cp.a
@@ -91,7 +91,7 @@ public final class ScanningView extends View {
         ofFloat.setInterpolator(new LinearInterpolator());
         ofFloat.setRepeatCount(-1);
         ofFloat.start();
-        this.f19677e = ofFloat;
+        this.f19678e = ofFloat;
     }
 
     public static void a(ScanningView scanningView, ValueAnimator it) {
@@ -101,11 +101,11 @@ public final class ScanningView extends View {
 
     private final SweepGradient b() {
         int[] iArr;
-        if (this.f19683s) {
-            int i10 = this.f19685u;
-            iArr = new int[]{i10, i10, this.f19684t};
+        if (this.f19684s) {
+            int i10 = this.f19686u;
+            iArr = new int[]{i10, i10, this.f19685t};
         } else {
-            int i11 = this.f19685u;
+            int i11 = this.f19686u;
             iArr = new int[]{i11, i11, i11};
         }
         return new SweepGradient(0.5f, 0.5f, iArr, new float[]{0.0f, 0.5f, 1.0f});
@@ -113,12 +113,12 @@ public final class ScanningView extends View {
 
     private final Path c() {
         Path path = new Path();
-        float strokeWidth = this.f19679o.getStrokeWidth();
+        float strokeWidth = this.f19680o.getStrokeWidth();
         float f10 = strokeWidth / 2.0f;
         if (getMeasuredWidth() > strokeWidth && getMeasuredHeight() > strokeWidth) {
             float measuredWidth = getMeasuredWidth() - f10;
             float measuredHeight = getMeasuredHeight() - f10;
-            float f11 = this.f19682r;
+            float f11 = this.f19683r;
             path.addRoundRect(f10, f10, measuredWidth, measuredHeight, new float[]{f11, f11, f11, f11, f11, f11, f11, f11}, Path.Direction.CW);
         }
         return path;
@@ -126,8 +126,8 @@ public final class ScanningView extends View {
 
     private final void d() {
         SweepGradient b10 = b();
-        this.f19678i = b10;
-        this.f19679o.setShader(b10);
+        this.f19679i = b10;
+        this.f19680o.setShader(b10);
         e();
         invalidate();
     }
@@ -136,54 +136,54 @@ public final class ScanningView extends View {
         int measuredWidth;
         int measuredHeight;
         int max = Integer.max(getMeasuredWidth(), getMeasuredHeight());
-        this.f19676d.setRotate(this.f19681q, 0.5f, 0.5f);
+        this.f19677d.setRotate(this.f19682q, 0.5f, 0.5f);
         float f10 = max;
-        this.f19676d.postScale(f10, f10);
-        this.f19676d.postTranslate((measuredWidth - max) / 2.0f, (measuredHeight - max) / 2.0f);
-        this.f19678i.setLocalMatrix(this.f19676d);
+        this.f19677d.postScale(f10, f10);
+        this.f19677d.postTranslate((measuredWidth - max) / 2.0f, (measuredHeight - max) / 2.0f);
+        this.f19679i.setLocalMatrix(this.f19677d);
         invalidate();
     }
 
     private final void f() {
-        this.f19680p = c();
+        this.f19681p = c();
         invalidate();
     }
 
     private final void setAnimationRotation(float f10) {
-        if (this.f19681q == f10) {
+        if (this.f19682q == f10) {
             return;
         }
-        this.f19681q = f10;
+        this.f19682q = f10;
         e();
     }
 
     public final int getBorderColor() {
-        return this.f19685u;
+        return this.f19686u;
     }
 
     public final float getCornerRadius() {
-        return this.f19682r;
+        return this.f19683r;
     }
 
     public final int getHighlightColor() {
-        return this.f19684t;
+        return this.f19685t;
     }
 
     public final float getStrokeWidth() {
-        return this.f19679o.getStrokeWidth();
+        return this.f19680o.getStrokeWidth();
     }
 
     @Override // android.view.View
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        this.f19677e.cancel();
+        this.f19678e.cancel();
     }
 
     @Override // android.view.View
     protected void onDraw(Canvas canvas) {
         Intrinsics.checkNotNullParameter(canvas, "canvas");
         super.onDraw(canvas);
-        canvas.drawPath(this.f19680p, this.f19679o);
+        canvas.drawPath(this.f19681p, this.f19680o);
     }
 
     @Override // android.view.View
@@ -194,42 +194,42 @@ public final class ScanningView extends View {
     }
 
     public final void setBorderColor(int i10) {
-        if (this.f19685u == i10) {
+        if (this.f19686u == i10) {
             return;
         }
-        this.f19685u = i10;
+        this.f19686u = i10;
         d();
     }
 
     public final void setCornerRadius(float f10) {
-        if (this.f19682r == f10) {
+        if (this.f19683r == f10) {
             return;
         }
-        this.f19682r = f10;
+        this.f19683r = f10;
         f();
     }
 
     public final void setHighlightColor(int i10) {
-        if (this.f19684t == i10) {
+        if (this.f19685t == i10) {
             return;
         }
-        this.f19684t = i10;
+        this.f19685t = i10;
         d();
     }
 
     public final void setScanningAnimationEnabled(boolean z10) {
-        if (this.f19683s == z10) {
+        if (this.f19684s == z10) {
             return;
         }
-        this.f19683s = z10;
+        this.f19684s = z10;
         d();
     }
 
     public final void setStrokeWidth(float f10) {
-        if (this.f19679o.getStrokeWidth() == f10) {
+        if (this.f19680o.getStrokeWidth() == f10) {
             return;
         }
-        this.f19679o.setStrokeWidth(f10);
+        this.f19680o.setStrokeWidth(f10);
         invalidate();
     }
 }

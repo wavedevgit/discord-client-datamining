@@ -65,7 +65,7 @@ import sc.u;
 class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6.b, AudioManager.OnAudioFocusChangeListener, hd.d, u {
 
     /* renamed from: q0  reason: collision with root package name */
-    private static final CookieManager f8942q0;
+    private static final CookieManager f8943q0;
     private boolean A;
     private boolean B;
     private boolean C;
@@ -91,97 +91,97 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
     private String W;
 
     /* renamed from: a0  reason: collision with root package name */
-    private Dynamic f8943a0;
+    private Dynamic f8944a0;
 
     /* renamed from: b0  reason: collision with root package name */
-    private ReadableArray f8944b0;
+    private ReadableArray f8945b0;
 
     /* renamed from: c0  reason: collision with root package name */
-    private boolean f8945c0;
+    private boolean f8946c0;
 
     /* renamed from: d  reason: collision with root package name */
-    private final com.brentvatne.exoplayer.i f8946d;
+    private final com.brentvatne.exoplayer.i f8947d;
 
     /* renamed from: d0  reason: collision with root package name */
-    private boolean f8947d0;
+    private boolean f8948d0;
 
     /* renamed from: e  reason: collision with root package name */
-    private final com.brentvatne.exoplayer.f f8948e;
+    private final com.brentvatne.exoplayer.f f8949e;
 
     /* renamed from: e0  reason: collision with root package name */
-    private float f8949e0;
+    private float f8950e0;
 
     /* renamed from: f0  reason: collision with root package name */
-    private boolean f8950f0;
+    private boolean f8951f0;
 
     /* renamed from: g0  reason: collision with root package name */
-    private Map f8951g0;
+    private Map f8952g0;
 
     /* renamed from: h0  reason: collision with root package name */
-    private boolean f8952h0;
+    private boolean f8953h0;
 
     /* renamed from: i  reason: collision with root package name */
-    private final r f8953i;
+    private final r f8954i;
 
     /* renamed from: i0  reason: collision with root package name */
-    private UUID f8954i0;
+    private UUID f8955i0;
 
     /* renamed from: j0  reason: collision with root package name */
-    private String f8955j0;
+    private String f8956j0;
 
     /* renamed from: k0  reason: collision with root package name */
-    private String[] f8956k0;
+    private String[] f8957k0;
 
     /* renamed from: l0  reason: collision with root package name */
-    private boolean f8957l0;
+    private boolean f8958l0;
 
     /* renamed from: m0  reason: collision with root package name */
-    private final ThemedReactContext f8958m0;
+    private final ThemedReactContext f8959m0;
 
     /* renamed from: n0  reason: collision with root package name */
-    private final AudioManager f8959n0;
+    private final AudioManager f8960n0;
 
     /* renamed from: o  reason: collision with root package name */
-    private PlayerControlView f8960o;
+    private PlayerControlView f8961o;
 
     /* renamed from: o0  reason: collision with root package name */
-    private final f6.a f8961o0;
+    private final f6.a f8962o0;
 
     /* renamed from: p  reason: collision with root package name */
-    private View f8962p;
+    private View f8963p;
 
     /* renamed from: p0  reason: collision with root package name */
-    private final Handler f8963p0;
+    private final Handler f8964p0;
 
     /* renamed from: q  reason: collision with root package name */
-    private Player.b f8964q;
+    private Player.b f8965q;
 
     /* renamed from: r  reason: collision with root package name */
-    private com.brentvatne.exoplayer.d f8965r;
+    private com.brentvatne.exoplayer.d f8966r;
 
     /* renamed from: s  reason: collision with root package name */
-    private DataSource.Factory f8966s;
+    private DataSource.Factory f8967s;
 
     /* renamed from: t  reason: collision with root package name */
-    private SimpleExoPlayer f8967t;
+    private SimpleExoPlayer f8968t;
 
     /* renamed from: u  reason: collision with root package name */
-    private DefaultTrackSelector f8968u;
+    private DefaultTrackSelector f8969u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f8969v;
+    private boolean f8970v;
 
     /* renamed from: w  reason: collision with root package name */
-    private int f8970w;
+    private int f8971w;
 
     /* renamed from: x  reason: collision with root package name */
-    private long f8971x;
+    private long f8972x;
 
     /* renamed from: y  reason: collision with root package name */
-    private boolean f8972y;
+    private boolean f8973y;
 
     /* renamed from: z  reason: collision with root package name */
-    private boolean f8973z;
+    private boolean f8974z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends Handler {
@@ -190,10 +190,10 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
 
         @Override // android.os.Handler
         public void handleMessage(Message message) {
-            if (message.what == 1 && g.this.f8967t != null && g.this.f8967t.O() == 3 && g.this.f8967t.B()) {
-                long Z = g.this.f8967t.Z();
-                g.this.f8946d.o(Z, (g.this.f8967t.c0() * g.this.f8967t.getDuration()) / 100, g.this.f8967t.getDuration(), g.this.B0(Z));
-                sendMessageDelayed(obtainMessage(1), Math.round(g.this.f8949e0));
+            if (message.what == 1 && g.this.f8968t != null && g.this.f8968t.O() == 3 && g.this.f8968t.B()) {
+                long Z = g.this.f8968t.Z();
+                g.this.f8947d.o(Z, (g.this.f8968t.c0() * g.this.f8968t.getDuration()) / 100, g.this.f8968t.getDuration(), g.this.B0(Z));
+                sendMessageDelayed(obtainMessage(1), Math.round(g.this.f8950e0));
             }
         }
     }
@@ -218,8 +218,8 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
 
         @Override // android.view.View.OnClickListener
         public void onClick(View view) {
-            if (g.this.f8967t != null && g.this.f8967t.O() == 4) {
-                g.this.f8967t.l0(0L);
+            if (g.this.f8968t != null && g.this.f8968t.O() == 4) {
+                g.this.f8968t.l0(0L);
             }
             g.this.b1(false);
         }
@@ -246,8 +246,8 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
         @Override // com.google.android.exoplayer2.Player.b
         public void onPlaybackStateChanged(int i10) {
             g gVar = g.this;
-            gVar.L0(gVar.f8962p);
-            g.this.f8967t.h(g.this.f8964q);
+            gVar.L0(gVar.f8963p);
+            g.this.f8968t.h(g.this.f8965q);
         }
     }
 
@@ -256,10 +256,10 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
     public class f implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ g f8979d;
+        final /* synthetic */ g f8980d;
 
         f(g gVar) {
-            this.f8979d = gVar;
+            this.f8980d = gVar;
         }
 
         @Override // java.lang.Runnable
@@ -267,10 +267,10 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
             boolean z10;
             int i10;
             g gVar;
-            if (g.this.f8967t == null) {
-                g.this.f8968u = new DefaultTrackSelector(DefaultTrackSelector.d.E0, new a.b());
-                DefaultTrackSelector defaultTrackSelector = g.this.f8968u;
-                DefaultTrackSelector.d.a E = g.this.f8968u.E();
+            if (g.this.f8968t == null) {
+                g.this.f8969u = new DefaultTrackSelector(DefaultTrackSelector.d.E0, new a.b());
+                DefaultTrackSelector defaultTrackSelector = g.this.f8969u;
+                DefaultTrackSelector.d.a E = g.this.f8969u.E();
                 if (g.this.I != 0) {
                     i10 = g.this.I;
                 } else {
@@ -286,17 +286,17 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
                 mc.e a10 = aVar.a();
                 mc.f l10 = new mc.f(g.this.getContext()).l(0);
                 g gVar2 = g.this;
-                gVar2.f8967t = new SimpleExoPlayer.a(gVar2.getContext(), l10).d(g.this.f8968u).b(g.this.f8953i).c(a10).a();
-                g.this.f8967t.L(this.f8979d);
-                g.this.f8965r.setPlayer(g.this.f8967t);
-                g.this.f8961o0.b(this.f8979d);
-                g.this.f8953i.d(new Handler(), this.f8979d);
+                gVar2.f8968t = new SimpleExoPlayer.a(gVar2.getContext(), l10).d(g.this.f8969u).b(g.this.f8954i).c(a10).a();
+                g.this.f8968t.L(this.f8980d);
+                g.this.f8966r.setPlayer(g.this.f8968t);
+                g.this.f8962o0.b(this.f8980d);
+                g.this.f8954i.d(new Handler(), this.f8980d);
                 g.this.d1(!gVar.B);
-                g.this.f8969v = true;
-                g.this.f8967t.D0(new PlaybackParameters(g.this.F, 1.0f));
+                g.this.f8970v = true;
+                g.this.f8968t.D0(new PlaybackParameters(g.this.F, 1.0f));
             }
-            if (g.this.f8969v && g.this.P != null) {
-                g.this.f8965r.g();
+            if (g.this.f8970v && g.this.P != null) {
+                g.this.f8966r.g();
                 ArrayList t02 = g.this.t0();
                 g gVar3 = g.this;
                 rd.r r02 = gVar3.r0(gVar3.P, g.this.Q);
@@ -304,24 +304,24 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
                     t02.add(0, r02);
                     r02 = new a0((rd.r[]) t02.toArray(new rd.r[t02.size()]));
                 }
-                if (g.this.f8970w != -1) {
+                if (g.this.f8971w != -1) {
                     z10 = true;
                 } else {
                     z10 = false;
                 }
                 if (z10) {
-                    g.this.f8967t.z(g.this.f8970w, g.this.f8971x);
+                    g.this.f8968t.z(g.this.f8971w, g.this.f8972x);
                 }
-                g.this.f8967t.A0(r02, !z10, false);
-                g.this.f8969v = false;
+                g.this.f8968t.A0(r02, !z10, false);
+                g.this.f8970v = false;
                 g gVar4 = g.this;
-                gVar4.L0(gVar4.f8965r);
-                g.this.f8946d.m();
-                g.this.f8972y = true;
+                gVar4.L0(gVar4.f8966r);
+                g.this.f8947d.m();
+                g.this.f8973y = true;
             }
             g.this.G0();
             g gVar5 = g.this;
-            gVar5.R0(gVar5.f8957l0);
+            gVar5.R0(gVar5.f8958l0);
             g.this.p0();
         }
     }
@@ -345,8 +345,8 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
 
         @Override // java.lang.Runnable
         public void run() {
-            if (g.this.f8967t != null) {
-                g.this.f8967t.F0(g.this.G * 0.8f);
+            if (g.this.f8968t != null) {
+                g.this.f8968t.F0(g.this.G * 0.8f);
             }
         }
     }
@@ -358,15 +358,15 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
 
         @Override // java.lang.Runnable
         public void run() {
-            if (g.this.f8967t != null) {
-                g.this.f8967t.F0(g.this.G * 1.0f);
+            if (g.this.f8968t != null) {
+                g.this.f8968t.F0(g.this.G * 1.0f);
             }
         }
     }
 
     static {
         CookieManager cookieManager = new CookieManager();
-        f8942q0 = cookieManager;
+        f8943q0 = cookieManager;
         cookieManager.setCookiePolicy(CookiePolicy.ACCEPT_ORIGINAL_SERVER);
     }
 
@@ -383,32 +383,32 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
         this.L = 50000;
         this.M = 2500;
         this.N = 5000;
-        this.f8947d0 = true;
-        this.f8949e0 = 250.0f;
-        this.f8950f0 = false;
-        this.f8952h0 = false;
-        this.f8954i0 = null;
-        this.f8955j0 = null;
-        this.f8956k0 = null;
-        this.f8963p0 = new a();
-        this.f8958m0 = themedReactContext;
-        this.f8946d = new com.brentvatne.exoplayer.i(themedReactContext);
-        this.f8948e = fVar;
-        this.f8953i = fVar.b();
+        this.f8948d0 = true;
+        this.f8950e0 = 250.0f;
+        this.f8951f0 = false;
+        this.f8953h0 = false;
+        this.f8955i0 = null;
+        this.f8956j0 = null;
+        this.f8957k0 = null;
+        this.f8964p0 = new a();
+        this.f8959m0 = themedReactContext;
+        this.f8947d = new com.brentvatne.exoplayer.i(themedReactContext);
+        this.f8949e = fVar;
+        this.f8954i = fVar.b();
         y0();
-        this.f8959n0 = (AudioManager) themedReactContext.getSystemService(MediaStreamTrack.AUDIO_TRACK_KIND);
+        this.f8960n0 = (AudioManager) themedReactContext.getSystemService(MediaStreamTrack.AUDIO_TRACK_KIND);
         themedReactContext.addLifecycleEventListener(this);
-        this.f8961o0 = new f6.a(themedReactContext);
+        this.f8962o0 = new f6.a(themedReactContext);
     }
 
     private int A0(w0 w0Var) {
-        if (w0Var.f46512d == 0) {
+        if (w0Var.f46513d == 0) {
             return -1;
         }
         String language = Locale.getDefault().getLanguage();
         String iSO3Language = Locale.getDefault().getISO3Language();
-        for (int i10 = 0; i10 < w0Var.f46512d; i10++) {
-            String str = w0Var.b(i10).c(0).f12295i;
+        for (int i10 = 0; i10 < w0Var.f46513d; i10++) {
+            String str = w0Var.b(i10).c(0).f12296i;
             if (str != null && (str.equals(language) || str.equals(iSO3Language))) {
                 return i10;
             }
@@ -418,22 +418,22 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
 
     private WritableArray C0() {
         WritableArray createArray = Arguments.createArray();
-        MappingTrackSelector.MappedTrackInfo m10 = this.f8968u.m();
+        MappingTrackSelector.MappedTrackInfo m10 = this.f8969u.m();
         int D0 = D0(3);
         if (m10 != null && D0 != -1) {
             w0 f10 = m10.f(D0);
-            for (int i10 = 0; i10 < f10.f46512d; i10++) {
+            for (int i10 = 0; i10 < f10.f46513d; i10++) {
                 Format c10 = f10.b(i10).c(0);
                 WritableMap createMap = Arguments.createMap();
                 createMap.putInt("index", i10);
-                String str = c10.f12293d;
+                String str = c10.f12294d;
                 String str2 = "";
                 if (str == null) {
                     str = "";
                 }
                 createMap.putString("title", str);
-                createMap.putString("type", c10.f12304w);
-                String str3 = c10.f12295i;
+                createMap.putString("type", c10.f12305w);
+                String str3 = c10.f12296i;
                 if (str3 != null) {
                     str2 = str3;
                 }
@@ -446,13 +446,13 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
 
     private WritableArray E0() {
         WritableArray createArray = Arguments.createArray();
-        MappingTrackSelector.MappedTrackInfo m10 = this.f8968u.m();
+        MappingTrackSelector.MappedTrackInfo m10 = this.f8969u.m();
         int D0 = D0(2);
         if (m10 != null && D0 != -1) {
             w0 f10 = m10.f(D0);
-            for (int i10 = 0; i10 < f10.f46512d; i10++) {
+            for (int i10 = 0; i10 < f10.f46513d; i10++) {
                 u0 b10 = f10.b(i10);
-                for (int i11 = 0; i11 < b10.f46496d; i11++) {
+                for (int i11 = 0; i11 < b10.f46497d; i11++) {
                     Format c10 = b10.c(i11);
                     WritableMap createMap = Arguments.createMap();
                     int i12 = c10.B;
@@ -465,17 +465,17 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
                         i13 = 0;
                     }
                     createMap.putInt("height", i13);
-                    int i14 = c10.f12300s;
+                    int i14 = c10.f12301s;
                     if (i14 == -1) {
                         i14 = 0;
                     }
                     createMap.putInt("bitrate", i14);
-                    String str = c10.f12301t;
+                    String str = c10.f12302t;
                     if (str == null) {
                         str = "";
                     }
                     createMap.putString("codecs", str);
-                    String str2 = c10.f12293d;
+                    String str2 = c10.f12294d;
                     if (str2 == null) {
                         str2 = String.valueOf(i11);
                     }
@@ -493,23 +493,23 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
 
     /* JADX INFO: Access modifiers changed from: private */
     public void G0() {
-        if (this.f8960o == null) {
-            this.f8960o = new PlayerControlView(getContext());
+        if (this.f8961o == null) {
+            this.f8961o = new PlayerControlView(getContext());
         }
-        this.f8960o.setPlayer(this.f8967t);
-        this.f8960o.J();
-        this.f8962p = this.f8960o.findViewById(e6.a.f22333c);
-        this.f8965r.setOnClickListener(new b());
-        ((ImageButton) this.f8960o.findViewById(e6.a.f22332b)).setOnClickListener(new c());
-        ((ImageButton) this.f8960o.findViewById(e6.a.f22331a)).setOnClickListener(new d());
+        this.f8961o.setPlayer(this.f8968t);
+        this.f8961o.J();
+        this.f8963p = this.f8961o.findViewById(e6.a.f22334c);
+        this.f8966r.setOnClickListener(new b());
+        ((ImageButton) this.f8961o.findViewById(e6.a.f22333b)).setOnClickListener(new c());
+        ((ImageButton) this.f8961o.findViewById(e6.a.f22332a)).setOnClickListener(new d());
         e eVar = new e();
-        this.f8964q = eVar;
-        this.f8967t.L(eVar);
+        this.f8965q = eVar;
+        this.f8968t.L(eVar);
     }
 
     private static boolean H0(j jVar) {
         Log.e("ExoPlayer Exception", jVar.toString());
-        if (jVar.f13282t != 0) {
+        if (jVar.f13283t != 0) {
             return false;
         }
         for (Throwable l10 = jVar.l(); l10 != null; l10 = l10.getCause()) {
@@ -526,22 +526,22 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
         }
         this.C = z10;
         if (z10) {
-            this.f8946d.d(true);
+            this.f8947d.d(true);
         } else {
-            this.f8946d.d(false);
+            this.f8947d.d(false);
         }
     }
 
     private void J0() {
-        if (this.f8973z) {
+        if (this.f8974z) {
             W0(false);
         }
-        this.f8959n0.abandonAudioFocus(this);
+        this.f8960n0.abandonAudioFocus(this);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void K0() {
-        SimpleExoPlayer simpleExoPlayer = this.f8967t;
+        SimpleExoPlayer simpleExoPlayer = this.f8968t;
         if (simpleExoPlayer != null && simpleExoPlayer.B()) {
             d1(false);
         }
@@ -558,30 +558,30 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
     }
 
     private void M0() {
-        if (this.f8967t != null) {
+        if (this.f8968t != null) {
             x1();
             try {
-                this.f8967t.G0();
-                this.f8967t.B0();
+                this.f8968t.G0();
+                this.f8968t.B0();
             } catch (Exception unused) {
             }
-            this.f8967t.h(this);
-            this.f8968u = null;
-            this.f8967t = null;
+            this.f8968t.h(this);
+            this.f8969u = null;
+            this.f8968t = null;
         }
-        this.f8963p0.removeMessages(1);
-        this.f8958m0.removeLifecycleEventListener(this);
-        this.f8961o0.a();
-        this.f8953i.a(this);
+        this.f8964p0.removeMessages(1);
+        this.f8959m0.removeLifecycleEventListener(this);
+        this.f8962o0.a();
+        this.f8954i.a(this);
     }
 
     private void N0() {
-        this.f8969v = true;
+        this.f8970v = true;
         F0();
     }
 
     private boolean O0() {
-        if (this.f8945c0 || this.P == null || this.E || this.f8959n0.requestAudioFocus(this, 3, 1) == 1) {
+        if (this.f8946c0 || this.P == null || this.E || this.f8960n0.requestAudioFocus(this, 3, 1) == 1) {
             return true;
         }
         return false;
@@ -589,13 +589,13 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
 
     /* JADX INFO: Access modifiers changed from: private */
     public void d1(boolean z10) {
-        SimpleExoPlayer simpleExoPlayer = this.f8967t;
+        SimpleExoPlayer simpleExoPlayer = this.f8968t;
         if (simpleExoPlayer != null) {
             if (z10) {
                 boolean O0 = O0();
                 this.E = O0;
                 if (O0) {
-                    this.f8967t.n(true);
+                    this.f8968t.n(true);
                     return;
                 }
                 return;
@@ -605,16 +605,16 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
     }
 
     private void o0() {
-        if (this.f8967t == null) {
+        if (this.f8968t == null) {
             return;
         }
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-1, -1);
-        this.f8960o.setLayoutParams(layoutParams);
-        int indexOfChild = indexOfChild(this.f8960o);
+        this.f8961o.setLayoutParams(layoutParams);
+        int indexOfChild = indexOfChild(this.f8961o);
         if (indexOfChild != -1) {
             removeViewAt(indexOfChild);
         }
-        addView(this.f8960o, 1, layoutParams);
+        addView(this.f8961o, 1, layoutParams);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -625,13 +625,13 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
 
     private DataSource.Factory q0(boolean z10) {
         r rVar;
-        ThemedReactContext themedReactContext = this.f8958m0;
+        ThemedReactContext themedReactContext = this.f8959m0;
         if (z10) {
-            rVar = this.f8953i;
+            rVar = this.f8954i;
         } else {
             rVar = null;
         }
-        return com.brentvatne.exoplayer.b.c(themedReactContext, rVar, this.f8951g0);
+        return com.brentvatne.exoplayer.b.c(themedReactContext, rVar, this.f8952g0);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -648,28 +648,28 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
             if (x02 != 1) {
                 if (x02 != 2) {
                     if (x02 == 4) {
-                        return new h0.b(this.f8966s).c(this.f8948e.a(this.H)).b(a10);
+                        return new h0.b(this.f8967s).c(this.f8949e.a(this.H)).b(a10);
                     }
                     throw new IllegalStateException("Unsupported type: " + x02);
                 }
-                return new HlsMediaSource.Factory(this.f8966s).b(this.f8948e.a(this.H)).a(a10);
+                return new HlsMediaSource.Factory(this.f8967s).b(this.f8949e.a(this.H)).a(a10);
             }
-            return new SsMediaSource.Factory(new a.C0168a(this.f8966s), q0(false)).b(this.f8948e.a(this.H)).a(a10);
+            return new SsMediaSource.Factory(new a.C0168a(this.f8967s), q0(false)).b(this.f8949e.a(this.H)).a(a10);
         }
-        return new DashMediaSource.Factory(new c.a(this.f8966s), q0(false)).b(this.f8948e.a(this.H)).a(a10);
+        return new DashMediaSource.Factory(new c.a(this.f8967s), q0(false)).b(this.f8949e.a(this.H)).a(a10);
     }
 
     private rd.r s0(String str, Uri uri, String str2, String str3) {
-        return new r0.b(this.f8966s).a(new MediaItem.k.a(uri).n(str2).m(str3).p(-1).o(-1).l(str).i(), -9223372036854775807L);
+        return new r0.b(this.f8967s).a(new MediaItem.k.a(uri).n(str2).m(str3).p(-1).o(-1).l(str).i(), -9223372036854775807L);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public ArrayList t0() {
         String str;
         ArrayList arrayList = new ArrayList();
-        if (this.f8944b0 != null) {
-            for (int i10 = 0; i10 < this.f8944b0.size(); i10++) {
-                ReadableMap map = this.f8944b0.getMap(i10);
+        if (this.f8945b0 != null) {
+            for (int i10 = 0; i10 < this.f8945b0.size(); i10++) {
+                ReadableMap map = this.f8945b0.getMap(i10);
                 String string = map.getString("language");
                 if (map.hasKey("title")) {
                     str = map.getString("title");
@@ -695,7 +695,7 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
     private void t1() {
         /*
             r3 = this;
-            com.google.android.exoplayer2.SimpleExoPlayer r0 = r3.f8967t
+            com.google.android.exoplayer2.SimpleExoPlayer r0 = r3.f8968t
             if (r0 == 0) goto L25
             int r0 = r0.O()
             r1 = 1
@@ -708,7 +708,7 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
             if (r0 == r1) goto L21
             goto L28
         L15:
-            com.google.android.exoplayer2.SimpleExoPlayer r0 = r3.f8967t
+            com.google.android.exoplayer2.SimpleExoPlayer r0 = r3.f8968t
             boolean r0 = r0.B()
             if (r0 != 0) goto L28
             r3.d1(r1)
@@ -719,9 +719,9 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
         L25:
             r3.F0()
         L28:
-            boolean r0 = r3.f8945c0
+            boolean r0 = r3.f8946c0
             if (r0 != 0) goto L31
-            boolean r0 = r3.f8947d0
+            boolean r0 = r3.f8948d0
             r3.setKeepScreenOn(r0)
         L31:
             return
@@ -730,11 +730,11 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
     }
 
     private void u1() {
-        this.f8963p0.sendEmptyMessage(1);
+        this.f8964p0.sendEmptyMessage(1);
     }
 
     private void v0() {
-        this.f8963p0.removeMessages(1);
+        this.f8964p0.removeMessages(1);
     }
 
     private void v1() {
@@ -743,60 +743,60 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
     }
 
     private void w0() {
-        this.f8970w = -1;
-        this.f8971x = -9223372036854775807L;
+        this.f8971w = -1;
+        this.f8972x = -9223372036854775807L;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void w1() {
-        if (this.f8967t == null) {
+        if (this.f8968t == null) {
             return;
         }
-        L0(this.f8960o);
-        if (this.f8960o.D()) {
-            this.f8960o.A();
+        L0(this.f8961o);
+        if (this.f8961o.D()) {
+            this.f8961o.A();
         } else {
-            this.f8960o.J();
+            this.f8961o.J();
         }
     }
 
     private void x1() {
         long j10;
-        this.f8970w = this.f8967t.e0();
-        if (this.f8967t.i0()) {
-            j10 = Math.max(0L, this.f8967t.Z());
+        this.f8971w = this.f8968t.e0();
+        if (this.f8968t.i0()) {
+            j10 = Math.max(0L, this.f8968t.Z());
         } else {
             j10 = -9223372036854775807L;
         }
-        this.f8971x = j10;
+        this.f8972x = j10;
     }
 
     private void y0() {
         w0();
-        this.f8966s = q0(true);
+        this.f8967s = q0(true);
         CookieHandler cookieHandler = CookieHandler.getDefault();
-        CookieManager cookieManager = f8942q0;
+        CookieManager cookieManager = f8943q0;
         if (cookieHandler != cookieManager) {
             CookieHandler.setDefault(cookieManager);
         }
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-1, -1);
         com.brentvatne.exoplayer.d dVar = new com.brentvatne.exoplayer.d(getContext());
-        this.f8965r = dVar;
+        this.f8966r = dVar;
         dVar.setLayoutParams(layoutParams);
-        addView(this.f8965r, 0, layoutParams);
+        addView(this.f8966r, 0, layoutParams);
         this.O = new Handler();
     }
 
     private void y1() {
         int i10;
         String str;
-        if (this.f8972y) {
+        if (this.f8973y) {
             int i11 = 0;
-            this.f8972y = false;
+            this.f8973y = false;
             l1(this.S, this.T);
             o1(this.U, this.V);
-            m1(this.W, this.f8943a0);
-            Format y02 = this.f8967t.y0();
+            m1(this.W, this.f8944a0);
+            Format y02 = this.f8968t.y0();
             if (y02 != null) {
                 i10 = y02.B;
             } else {
@@ -807,37 +807,37 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
             }
             int i12 = i11;
             if (y02 != null) {
-                str = y02.f12293d;
+                str = y02.f12294d;
             } else {
                 str = "-1";
             }
-            this.f8946d.l(this.f8967t.getDuration(), this.f8967t.Z(), i10, i12, z0(), C0(), E0(), str);
+            this.f8947d.l(this.f8968t.getDuration(), this.f8968t.Z(), i10, i12, z0(), C0(), E0(), str);
         }
     }
 
     private WritableArray z0() {
         WritableArray createArray = Arguments.createArray();
-        MappingTrackSelector.MappedTrackInfo m10 = this.f8968u.m();
+        MappingTrackSelector.MappedTrackInfo m10 = this.f8969u.m();
         int D0 = D0(1);
         if (m10 != null && D0 != -1) {
             w0 f10 = m10.f(D0);
-            for (int i10 = 0; i10 < f10.f46512d; i10++) {
+            for (int i10 = 0; i10 < f10.f46513d; i10++) {
                 Format c10 = f10.b(i10).c(0);
                 WritableMap createMap = Arguments.createMap();
                 createMap.putInt("index", i10);
-                String str = c10.f12293d;
+                String str = c10.f12294d;
                 String str2 = "";
                 if (str == null) {
                     str = "";
                 }
                 createMap.putString("title", str);
-                createMap.putString("type", c10.f12304w);
-                String str3 = c10.f12295i;
+                createMap.putString("type", c10.f12305w);
+                String str3 = c10.f12296i;
                 if (str3 == null) {
                     str3 = "";
                 }
                 createMap.putString("language", str3);
-                int i11 = c10.f12300s;
+                int i11 = c10.f12301s;
                 if (i11 != -1) {
                     str2 = String.format(Locale.US, "%.2fMbps", Float.valueOf(i11 / 1000000.0f));
                 }
@@ -851,23 +851,23 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
     @Override // sc.u
     public void B(int i10, r.b bVar, Exception exc) {
         Log.d("DRM Info", "onDrmSessionManagerError");
-        this.f8946d.f("onDrmSessionManagerError", exc);
+        this.f8947d.f("onDrmSessionManagerError", exc);
     }
 
     public double B0(long j10) {
         Timeline.d dVar = new Timeline.d();
-        if (!this.f8967t.v().u()) {
-            this.f8967t.v().r(this.f8967t.e0(), dVar);
+        if (!this.f8968t.v().u()) {
+            this.f8968t.v().r(this.f8968t.e0(), dVar);
         }
-        return dVar.f12608q + j10;
+        return dVar.f12609q + j10;
     }
 
     public int D0(int i10) {
-        SimpleExoPlayer simpleExoPlayer = this.f8967t;
+        SimpleExoPlayer simpleExoPlayer = this.f8968t;
         if (simpleExoPlayer != null) {
             int v02 = simpleExoPlayer.v0();
             for (int i11 = 0; i11 < v02; i11++) {
-                if (this.f8967t.w0(i11) == i10) {
+                if (this.f8968t.w0(i11) == i10) {
                     return i11;
                 }
             }
@@ -887,7 +887,7 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
     }
 
     public void P0(long j10) {
-        SimpleExoPlayer simpleExoPlayer = this.f8967t;
+        SimpleExoPlayer simpleExoPlayer = this.f8968t;
         if (simpleExoPlayer != null) {
             simpleExoPlayer.l0(j10);
         }
@@ -903,13 +903,13 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
     }
 
     public void R0(boolean z10) {
-        this.f8957l0 = z10;
-        if (this.f8967t != null && this.f8965r != null) {
+        this.f8958l0 = z10;
+        if (this.f8968t != null && this.f8966r != null) {
             if (z10) {
                 o0();
                 return;
             }
-            int indexOfChild = indexOfChild(this.f8960o);
+            int indexOfChild = indexOfChild(this.f8961o);
             if (indexOfChild != -1) {
                 removeViewAt(indexOfChild);
             }
@@ -917,55 +917,55 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
     }
 
     public void S0(boolean z10) {
-        this.f8945c0 = z10;
+        this.f8946c0 = z10;
     }
 
     public void T0(String[] strArr) {
-        this.f8956k0 = strArr;
+        this.f8957k0 = strArr;
     }
 
     public void U0(String str) {
-        this.f8955j0 = str;
+        this.f8956j0 = str;
     }
 
     public void V0(UUID uuid) {
-        this.f8954i0 = uuid;
+        this.f8955i0 = uuid;
     }
 
     public void W0(boolean z10) {
         int i10;
-        if (z10 != this.f8973z) {
-            this.f8973z = z10;
-            Activity currentActivity = this.f8958m0.getCurrentActivity();
+        if (z10 != this.f8974z) {
+            this.f8974z = z10;
+            Activity currentActivity = this.f8959m0.getCurrentActivity();
             if (currentActivity == null) {
                 return;
             }
             View decorView = currentActivity.getWindow().getDecorView();
-            if (this.f8973z) {
-                if (oe.w0.f39037a >= 19) {
+            if (this.f8974z) {
+                if (oe.w0.f39038a >= 19) {
                     i10 = 4102;
                 } else {
                     i10 = 6;
                 }
-                this.f8946d.j();
+                this.f8947d.j();
                 decorView.setSystemUiVisibility(i10);
-                this.f8946d.h();
+                this.f8947d.h();
                 return;
             }
-            this.f8946d.i();
+            this.f8947d.i();
             decorView.setSystemUiVisibility(0);
-            this.f8946d.g();
+            this.f8947d.g();
         }
     }
 
     public void X0(boolean z10) {
-        this.f8965r.setHideShutterView(z10);
+        this.f8966r.setHideShutterView(z10);
     }
 
     public void Y0(int i10) {
         this.I = i10;
-        if (this.f8967t != null) {
-            DefaultTrackSelector defaultTrackSelector = this.f8968u;
+        if (this.f8968t != null) {
+            DefaultTrackSelector defaultTrackSelector = this.f8969u;
             DefaultTrackSelector.d.a E = defaultTrackSelector.E();
             int i11 = this.I;
             if (i11 == 0) {
@@ -990,7 +990,7 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
             f10 = 1.0f;
         }
         this.G = f10;
-        SimpleExoPlayer simpleExoPlayer = this.f8967t;
+        SimpleExoPlayer simpleExoPlayer = this.f8968t;
         if (simpleExoPlayer != null) {
             simpleExoPlayer.F0(f10);
         }
@@ -998,7 +998,7 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
 
     public void b1(boolean z10) {
         this.B = z10;
-        if (this.f8967t != null) {
+        if (this.f8968t != null) {
             if (!z10) {
                 t1();
             } else {
@@ -1008,26 +1008,26 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
     }
 
     public void c1(boolean z10) {
-        this.f8950f0 = z10;
+        this.f8951f0 = z10;
     }
 
     public void e1(boolean z10) {
-        this.f8947d0 = z10;
+        this.f8948d0 = z10;
     }
 
     public void f1(float f10) {
-        this.f8949e0 = f10;
+        this.f8950e0 = f10;
     }
 
     @Override // f6.b
     public void g() {
-        this.f8946d.a();
+        this.f8947d.a();
     }
 
     public void g1(float f10) {
         this.F = f10;
-        if (this.f8967t != null) {
-            this.f8967t.D0(new PlaybackParameters(this.F, 1.0f));
+        if (this.f8968t != null) {
+            this.f8968t.D0(new PlaybackParameters(this.F, 1.0f));
         }
     }
 
@@ -1036,7 +1036,7 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
             boolean equals = uri.equals(this.P);
             this.P = uri;
             this.Q = str;
-            this.f8966s = q0(true);
+            this.f8967s = q0(true);
             if (!equals) {
                 N0();
             }
@@ -1044,7 +1044,7 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
     }
 
     public void i1(boolean z10) {
-        SimpleExoPlayer simpleExoPlayer = this.f8967t;
+        SimpleExoPlayer simpleExoPlayer = this.f8968t;
         if (simpleExoPlayer != null) {
             if (z10) {
                 simpleExoPlayer.R(1);
@@ -1056,11 +1056,11 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
     }
 
     public void j1(boolean z10) {
-        this.f8952h0 = z10;
+        this.f8953h0 = z10;
     }
 
     public void k1(int i10) {
-        this.f8965r.setResizeMode(i10);
+        this.f8966r.setResizeMode(i10);
     }
 
     public void l1(String str, Dynamic dynamic) {
@@ -1071,7 +1071,7 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
 
     public void m1(String str, Dynamic dynamic) {
         this.W = str;
-        this.f8943a0 = dynamic;
+        this.f8944a0 = dynamic;
         n1(3, str, dynamic);
     }
 
@@ -1079,7 +1079,7 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
         int D0;
         MappingTrackSelector.MappedTrackInfo m10;
         int A0;
-        if (this.f8967t == null || (D0 = D0(i10)) == -1 || (m10 = this.f8968u.m()) == null) {
+        if (this.f8968t == null || (D0 = D0(i10)) == -1 || (m10 = this.f8969u.m()) == null) {
             return;
         }
         w0 f10 = m10.f(D0);
@@ -1087,15 +1087,15 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
         if (TextUtils.isEmpty(str)) {
             str = "default";
         }
-        DefaultTrackSelector.d A = this.f8968u.J().H().v0(D0, true).A();
+        DefaultTrackSelector.d A = this.f8969u.J().H().v0(D0, true).A();
         if (str.equals("disabled")) {
-            this.f8968u.b0(A);
+            this.f8969u.b0(A);
             return;
         }
         if (str.equals("language")) {
             A0 = 0;
-            while (A0 < f10.f46512d) {
-                String str2 = f10.b(A0).c(0).f12295i;
+            while (A0 < f10.f46513d) {
+                String str2 = f10.b(A0).c(0).f12296i;
                 if (str2 != null && str2.equals(dynamic.asString())) {
                     break;
                 }
@@ -1104,8 +1104,8 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
             A0 = -1;
         } else if (str.equals("title")) {
             A0 = 0;
-            while (A0 < f10.f46512d) {
-                String str3 = f10.b(A0).c(0).f12293d;
+            while (A0 < f10.f46513d) {
+                String str3 = f10.b(A0).c(0).f12294d;
                 if (str3 != null && str3.equals(dynamic.asString())) {
                     break;
                 }
@@ -1113,18 +1113,18 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
             }
             A0 = -1;
         } else if (str.equals("index")) {
-            if (dynamic.asInt() < f10.f46512d) {
+            if (dynamic.asInt() < f10.f46513d) {
                 A0 = dynamic.asInt();
             }
             A0 = -1;
         } else if (str.equals("resolution")) {
             int asInt = dynamic.asInt();
             int i11 = -1;
-            for (int i12 = 0; i12 < f10.f46512d; i12++) {
+            for (int i12 = 0; i12 < f10.f46513d; i12++) {
                 u0 b10 = f10.b(i12);
                 int i13 = 0;
                 while (true) {
-                    if (i13 >= b10.f46496d) {
+                    if (i13 >= b10.f46497d) {
                         break;
                     } else if (b10.c(i13).C == asInt) {
                         iArr[0] = i13;
@@ -1136,8 +1136,8 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
                 }
             }
             A0 = i11;
-        } else if (D0 == 3 && oe.w0.f39037a > 18) {
-            CaptioningManager captioningManager = (CaptioningManager) this.f8958m0.getSystemService("captioning");
+        } else if (D0 == 3 && oe.w0.f39038a > 18) {
+            CaptioningManager captioningManager = (CaptioningManager) this.f8959m0.getSystemService("captioning");
             if (captioningManager != null && captioningManager.isEnabled()) {
                 A0 = A0(f10);
             }
@@ -1148,18 +1148,18 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
             }
             A0 = -1;
         }
-        if (A0 == -1 && i10 == 2 && f10.f46512d != 0) {
+        if (A0 == -1 && i10 == 2 && f10.f46513d != 0) {
             u0 b11 = f10.b(0);
-            iArr = new int[b11.f46496d];
-            for (int i14 = 0; i14 < b11.f46496d; i14++) {
+            iArr = new int[b11.f46497d];
+            for (int i14 = 0; i14 < b11.f46497d; i14++) {
                 iArr[i14] = i14;
             }
             A0 = 0;
         }
         if (A0 == -1) {
-            this.f8968u.b0(A);
+            this.f8969u.b0(A);
         } else {
-            this.f8968u.b0(this.f8968u.J().H().v0(D0, false).w0(D0, f10, new DefaultTrackSelector.e(A0, iArr)).A());
+            this.f8969u.b0(this.f8969u.J().H().v0(D0, false).w0(D0, f10, new DefaultTrackSelector.e(A0, iArr)).A());
         }
     }
 
@@ -1181,18 +1181,18 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
             if (i10 != -1) {
                 if (i10 == 1) {
                     this.E = true;
-                    this.f8946d.b(true);
+                    this.f8947d.b(true);
                 }
             } else {
                 this.E = false;
-                this.f8946d.b(false);
+                this.f8947d.b(false);
                 this.O.post(new RunnableC0140g());
-                this.f8959n0.abandonAudioFocus(this);
+                this.f8960n0.abandonAudioFocus(this);
             }
         } else {
-            this.f8946d.b(false);
+            this.f8947d.b(false);
         }
-        if (this.f8967t != null) {
+        if (this.f8968t != null) {
             if (i10 == -3) {
                 if (!this.D) {
                     this.O.post(new h());
@@ -1216,9 +1216,9 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
     @Override // com.facebook.react.bridge.LifecycleEventListener
     public void onHostPause() {
         this.A = true;
-        if (!this.f8950f0) {
+        if (!this.f8951f0) {
             d1(false);
-            SimpleExoPlayer simpleExoPlayer = this.f8967t;
+            SimpleExoPlayer simpleExoPlayer = this.f8968t;
             if (simpleExoPlayer != null) {
                 try {
                     simpleExoPlayer.G0();
@@ -1230,7 +1230,7 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
 
     @Override // com.facebook.react.bridge.LifecycleEventListener
     public void onHostResume() {
-        if (!this.f8950f0 || !this.A) {
+        if (!this.f8951f0 || !this.A) {
             d1(!this.B);
         }
         this.A = false;
@@ -1242,24 +1242,24 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
 
     @Override // com.google.android.exoplayer2.Player.b, hd.d
     public void onMetadata(Metadata metadata) {
-        this.f8946d.t(metadata);
+        this.f8947d.t(metadata);
     }
 
     @Override // com.google.android.exoplayer2.Player.b
     public void onPlaybackParametersChanged(PlaybackParameters playbackParameters) {
-        this.f8946d.n(playbackParameters.f12553d);
+        this.f8947d.n(playbackParameters.f12554d);
     }
 
     @Override // com.google.android.exoplayer2.Player.b
     public void onPlayerError(PlaybackException playbackException) {
         if (!(playbackException instanceof j)) {
             Log.e("PlaybackException with unrecognized class type", playbackException.toString());
-            this.f8946d.f("PlaybackException with unrecognized class type", playbackException);
+            this.f8947d.f("PlaybackException with unrecognized class type", playbackException);
             return;
         }
         j jVar = (j) playbackException;
-        String str = "PlaybackException type : " + jVar.f13282t;
-        int i10 = jVar.f13282t;
+        String str = "PlaybackException type : " + jVar.f13283t;
+        int i10 = jVar.f13283t;
         if (i10 == 1) {
             Exception k10 = jVar.k();
             if (k10 != null && k10.getMessage() != null && k10.getMessage().contains("MediaCodecVideoRenderer")) {
@@ -1268,13 +1268,13 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
                 return;
             } else if (k10 instanceof r.b) {
                 r.b bVar = (r.b) k10;
-                str = bVar.f25536i.f25497a == null ? bVar.getCause() instanceof y.c ? getResources().getString(e6.b.f22337d) : bVar.f25535e ? getResources().getString(e6.b.f22336c, bVar.f25534d) : getResources().getString(e6.b.f22335b, bVar.f25534d) : getResources().getString(e6.b.f22334a, bVar.f25536i.f25497a);
+                str = bVar.f25537i.f25498a == null ? bVar.getCause() instanceof y.c ? getResources().getString(e6.b.f22338d) : bVar.f25536e ? getResources().getString(e6.b.f22337c, bVar.f25535d) : getResources().getString(e6.b.f22336b, bVar.f25535d) : getResources().getString(e6.b.f22335a, bVar.f25537i.f25498a);
             }
         } else if (i10 == 0) {
-            str = getResources().getString(e6.b.f22338e);
+            str = getResources().getString(e6.b.f22339e);
         }
-        this.f8946d.f(str, playbackException);
-        this.f8969v = true;
+        this.f8947d.f(str, playbackException);
+        this.f8970v = true;
         if (H0(jVar)) {
             w0();
             F0();
@@ -1294,31 +1294,31 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
                         str = str2 + "unknown";
                     } else {
                         str = str2 + "ended";
-                        this.f8946d.e();
+                        this.f8947d.e();
                         J0();
                         setKeepScreenOn(false);
                     }
                 } else {
                     str = str2 + "ready";
-                    this.f8946d.p();
+                    this.f8947d.p();
                     I0(false);
                     u1();
                     y1();
-                    PlayerControlView playerControlView = this.f8960o;
+                    PlayerControlView playerControlView = this.f8961o;
                     if (playerControlView != null) {
                         playerControlView.J();
                     }
-                    setKeepScreenOn(this.f8947d0);
+                    setKeepScreenOn(this.f8948d0);
                 }
             } else {
                 str = str2 + "buffering";
                 I0(true);
                 v0();
-                setKeepScreenOn(this.f8947d0);
+                setKeepScreenOn(this.f8948d0);
             }
         } else {
             String str3 = str2 + "idle";
-            this.f8946d.k();
+            this.f8947d.k();
             v0();
             if (!z10) {
                 setKeepScreenOn(false);
@@ -1331,19 +1331,19 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
     @Override // com.google.android.exoplayer2.Player.b
     public void onPositionDiscontinuity(Player.PositionInfo positionInfo, Player.PositionInfo positionInfo2, int i10) {
         if (i10 == 1) {
-            this.f8946d.r(this.f8967t.Z(), positionInfo2.f12574r % 1000);
+            this.f8947d.r(this.f8968t.Z(), positionInfo2.f12575r % 1000);
             if (this.J) {
                 n1(2, this.U, this.V);
             }
         }
-        if (this.f8969v) {
+        if (this.f8970v) {
             x1();
         }
         if (this.J) {
             n1(2, this.U, this.V);
         }
-        if (i10 == 0 && this.f8967t.T() == 1) {
-            this.f8946d.e();
+        if (i10 == 0 && this.f8968t.T() == 1) {
+            this.f8947d.e();
         }
     }
 
@@ -1368,8 +1368,8 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
             boolean equals = uri.equals(this.P);
             this.P = uri;
             this.Q = str;
-            this.f8951g0 = map;
-            this.f8966s = com.brentvatne.exoplayer.b.c(this.f8958m0, this.f8953i, map);
+            this.f8952g0 = map;
+            this.f8967s = com.brentvatne.exoplayer.b.c(this.f8959m0, this.f8954i, map);
             if (!equals) {
                 N0();
             }
@@ -1377,23 +1377,23 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
     }
 
     public void q1(ReadableArray readableArray) {
-        this.f8944b0 = readableArray;
+        this.f8945b0 = readableArray;
         N0();
     }
 
     public void r1(boolean z10) {
         boolean z11;
-        if (z10 && this.f8954i0 == null) {
+        if (z10 && this.f8955i0 == null) {
             z11 = true;
         } else {
             z11 = false;
         }
-        this.f8965r.setUseTextureView(z11);
+        this.f8966r.setUseTextureView(z11);
     }
 
     public void s1(float f10) {
         this.G = f10;
-        SimpleExoPlayer simpleExoPlayer = this.f8967t;
+        SimpleExoPlayer simpleExoPlayer = this.f8968t;
         if (simpleExoPlayer != null) {
             simpleExoPlayer.F0(f10);
         }
@@ -1402,7 +1402,7 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
     @Override // android.view.View
     public void setId(int i10) {
         super.setId(i10);
-        this.f8946d.s(i10);
+        this.f8947d.s(i10);
     }
 
     @Override // sc.u
@@ -1418,10 +1418,10 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
     public void w(int i10, long j10, long j11) {
         int i11;
         String str;
-        if (this.f8952h0) {
-            SimpleExoPlayer simpleExoPlayer = this.f8967t;
+        if (this.f8953h0) {
+            SimpleExoPlayer simpleExoPlayer = this.f8968t;
             if (simpleExoPlayer == null) {
-                this.f8946d.c(j11, 0, 0, "-1");
+                this.f8947d.c(j11, 0, 0, "-1");
                 return;
             }
             Format y02 = simpleExoPlayer.y0();
@@ -1436,22 +1436,22 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, f6
             }
             int i13 = i12;
             if (y02 != null) {
-                str = y02.f12293d;
+                str = y02.f12294d;
             } else {
                 str = "-1";
             }
-            this.f8946d.c(j11, i13, i11, str);
+            this.f8947d.c(j11, i13, i11, str);
         }
     }
 
     public void x0() {
         if (this.P != null) {
-            this.f8967t.G0();
-            this.f8967t.a();
+            this.f8968t.G0();
+            this.f8968t.a();
             this.P = null;
             this.Q = null;
-            this.f8951g0 = null;
-            this.f8966s = null;
+            this.f8952g0 = null;
+            this.f8967s = null;
             w0();
         }
     }

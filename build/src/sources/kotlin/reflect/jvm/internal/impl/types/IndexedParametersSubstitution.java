@@ -12,13 +12,13 @@ import org.jetbrains.annotations.NotNull;
 public final class IndexedParametersSubstitution extends TypeSubstitution {
 
     /* renamed from: a  reason: collision with root package name */
-    private final TypeParameterDescriptor[] f34552a;
+    private final TypeParameterDescriptor[] f34553a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final TypeProjection[] f34553b;
+    private final TypeProjection[] f34554b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f34554c;
+    private final boolean f34555c;
 
     public /* synthetic */ IndexedParametersSubstitution(TypeParameterDescriptor[] typeParameterDescriptorArr, TypeProjection[] typeProjectionArr, boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(typeParameterDescriptorArr, typeProjectionArr, (i10 & 4) != 0 ? false : z10);
@@ -26,17 +26,17 @@ public final class IndexedParametersSubstitution extends TypeSubstitution {
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeSubstitution
     public boolean approximateContravariantCapturedTypes() {
-        return this.f34554c;
+        return this.f34555c;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeSubstitution
     /* renamed from: get */
-    public TypeProjection mo1205get(@NotNull KotlinType key) {
+    public TypeProjection mo1204get(@NotNull KotlinType key) {
         TypeParameterDescriptor typeParameterDescriptor;
         Intrinsics.checkNotNullParameter(key, "key");
-        ClassifierDescriptor mo1202getDeclarationDescriptor = key.getConstructor().mo1202getDeclarationDescriptor();
-        if (mo1202getDeclarationDescriptor instanceof TypeParameterDescriptor) {
-            typeParameterDescriptor = (TypeParameterDescriptor) mo1202getDeclarationDescriptor;
+        ClassifierDescriptor mo1201getDeclarationDescriptor = key.getConstructor().mo1201getDeclarationDescriptor();
+        if (mo1201getDeclarationDescriptor instanceof TypeParameterDescriptor) {
+            typeParameterDescriptor = (TypeParameterDescriptor) mo1201getDeclarationDescriptor;
         } else {
             typeParameterDescriptor = null;
         }
@@ -44,26 +44,26 @@ public final class IndexedParametersSubstitution extends TypeSubstitution {
             return null;
         }
         int index = typeParameterDescriptor.getIndex();
-        TypeParameterDescriptor[] typeParameterDescriptorArr = this.f34552a;
+        TypeParameterDescriptor[] typeParameterDescriptorArr = this.f34553a;
         if (index >= typeParameterDescriptorArr.length || !Intrinsics.areEqual(typeParameterDescriptorArr[index].getTypeConstructor(), typeParameterDescriptor.getTypeConstructor())) {
             return null;
         }
-        return this.f34553b[index];
+        return this.f34554b[index];
     }
 
     @NotNull
     public final TypeProjection[] getArguments() {
-        return this.f34553b;
+        return this.f34554b;
     }
 
     @NotNull
     public final TypeParameterDescriptor[] getParameters() {
-        return this.f34552a;
+        return this.f34553a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeSubstitution
     public boolean isEmpty() {
-        if (this.f34553b.length == 0) {
+        if (this.f34554b.length == 0) {
             return true;
         }
         return false;
@@ -72,9 +72,9 @@ public final class IndexedParametersSubstitution extends TypeSubstitution {
     public IndexedParametersSubstitution(@NotNull TypeParameterDescriptor[] parameters, @NotNull TypeProjection[] arguments, boolean z10) {
         Intrinsics.checkNotNullParameter(parameters, "parameters");
         Intrinsics.checkNotNullParameter(arguments, "arguments");
-        this.f34552a = parameters;
-        this.f34553b = arguments;
-        this.f34554c = z10;
+        this.f34553a = parameters;
+        this.f34554b = arguments;
+        this.f34555c = z10;
         int length = parameters.length;
         int length2 = arguments.length;
     }

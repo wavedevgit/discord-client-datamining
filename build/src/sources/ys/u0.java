@@ -27,7 +27,7 @@ public abstract class u0 {
         } else {
             l0Var = null;
         }
-        if (l0Var != null && (coroutineDispatcher = l0Var.f55798d) != null) {
+        if (l0Var != null && (coroutineDispatcher = l0Var.f55799d) != null) {
             return coroutineDispatcher;
         }
         return new kotlinx.coroutines.t(executor);

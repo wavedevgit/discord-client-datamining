@@ -7,7 +7,7 @@ import android.os.Parcelable;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ int f35817a = 0;
+    public static final /* synthetic */ int f35818a = 0;
 
     static {
         c.class.getClassLoader();

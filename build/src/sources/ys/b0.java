@@ -7,10 +7,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b0 extends kotlin.coroutines.a {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f55771i = new a(null);
+    public static final a f55772i = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f55772e;
+    private final String f55773e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements CoroutineContext.b {
@@ -23,25 +23,25 @@ public final class b0 extends kotlin.coroutines.a {
     }
 
     public b0(String str) {
-        super(f55771i);
-        this.f55772e = str;
+        super(f55772i);
+        this.f55773e = str;
     }
 
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof b0) && Intrinsics.areEqual(this.f55772e, ((b0) obj).f55772e)) {
+        if ((obj instanceof b0) && Intrinsics.areEqual(this.f55773e, ((b0) obj).f55773e)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f55772e.hashCode();
+        return this.f55773e.hashCode();
     }
 
     public String toString() {
-        return "CoroutineName(" + this.f55772e + ')';
+        return "CoroutineName(" + this.f55773e + ')';
     }
 }

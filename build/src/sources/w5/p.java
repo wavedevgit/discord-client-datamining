@@ -8,10 +8,10 @@ import x5.c;
 public abstract class p {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f52324a = c.a.a("nm", "g", "o", "t", "s", "e", "r", "hd");
+    private static final c.a f52325a = c.a.a("nm", "g", "o", "t", "s", "e", "r", "hd");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f52325b = c.a.a("p", "k");
+    private static final c.a f52326b = c.a.a("p", "k");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static t5.e a(x5.c cVar, l5.i iVar) {
@@ -26,7 +26,7 @@ public abstract class p {
         s5.f fVar2 = null;
         boolean z10 = false;
         while (cVar.hasNext()) {
-            switch (cVar.p(f52324a)) {
+            switch (cVar.p(f52325a)) {
                 case 0:
                     str = cVar.g1();
                     break;
@@ -34,7 +34,7 @@ public abstract class p {
                     cVar.u();
                     int i10 = -1;
                     while (cVar.hasNext()) {
-                        int p10 = cVar.p(f52325b);
+                        int p10 = cVar.p(f52326b);
                         if (p10 != 0) {
                             if (p10 != 1) {
                                 cVar.s();

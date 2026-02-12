@@ -59,13 +59,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var5.hasLegacyProfiling;
                     var3 = var3.bind(var5)(var9);
                     if (!var3) {
-                        _fun12050_ip = 192;
+                        _fun12050_ip = 191;
                         continue _fun12050
                     }
                 case 103:
                     var3 = var9.profilesSampleRate;
                     if (var3) {
-                        _fun12050_ip = 192;
+                        _fun12050_ip = 191;
                         continue _fun12050
                     }
                 case 112:
@@ -76,7 +76,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var5.bind(var0)(var3);
                     var3 = var3.DEBUG_BUILD;
                     if (!var3) {
-                        _fun12050_ip = 882;
+                        _fun12050_ip = 880;
                         continue _fun12050
                     }
                 case 144:
@@ -89,9 +89,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = var6.log;
                     var3 = '[Profiling] Profiling disabled, no profiling options found.';
                     var3 = var5.bind(var6)(var3);
-                    _fun12050_ip = 882;
+                    _fun12050_ip = 880;
                     continue _fun12050;
-                case 192:
+                case 191:
                     var5 = _closure1_slot0;
                     var3 = _closure1_slot1;
                     var12 = 2;
@@ -101,17 +101,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var7 = var3.bind(var5)();
                     var5 = var7;
                     if (!var5) {
-                        _fun12050_ip = 256;
+                        _fun12050_ip = 255;
                         continue _fun12050
                     }
-                case 228:
+                case 227:
                     var6 = _closure1_slot0;
                     var3 = _closure1_slot1;
                     var3 = var3[var12];
                     var6 = var6.bind(var0)(var3);
                     var3 = var6.getRootSpan;
                     var5 = var3.bind(var6)(var7);
-                case 256:
+                case 255:
                     var6 = _closure1_slot0;
                     var3 = _closure1_slot1;
                     var3 = var3[var8];
@@ -119,30 +119,30 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var6.hasLegacyProfiling;
                     var3 = var3.bind(var6)(var9);
                     if (!var3) {
-                        _fun12050_ip = 297;
+                        _fun12050_ip = 296;
                         continue _fun12050
                     }
-                case 287:
+                case 286:
                     var6 = var9.profileSessionSampleRate;
                     var3 = var0 !== var6;
-                case 297:
+                case 296:
                     if (!var3) {
-                        _fun12050_ip = 326;
+                        _fun12050_ip = 325;
                         continue _fun12050
                     }
-                case 300:
+                case 299:
                     var7 = _closure1_slot0;
                     var10 = _closure1_slot1;
                     var6 = 1;
                     var6 = var10[var6];
                     var6 = var7.bind(var0)(var6);
                     var3 = var6.DEBUG_BUILD;
-                case 326:
+                case 325:
                     if (!var3) {
-                        _fun12050_ip = 368;
+                        _fun12050_ip = 367;
                         continue _fun12050
                     }
-                case 329:
+                case 328:
                     var6 = _closure1_slot0;
                     var3 = _closure1_slot1;
                     var3 = var3[var12];
@@ -151,7 +151,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var6 = var7.warn;
                     var3 = '[Profiling] Both legacy profiling (`profilesSampleRate`) and UI profiling settings are defined. `profileSessionSampleRate` has no effect when legacy profiling is enabled.';
                     var3 = var6.bind(var7)(var3);
-                case 368:
+                case 367:
                     var6 = _closure1_slot0;
                     var3 = _closure1_slot1;
                     var3 = var3[var8];
@@ -159,10 +159,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var6.hasLegacyProfiling;
                     var3 = var3.bind(var6)(var9);
                     if (var3) {
-                        _fun12050_ip = 737;
+                        _fun12050_ip = 735;
                         continue _fun12050
                     }
-                case 402:
+                case 401:
                     var6 = _closure1_slot0;
                     var3 = _closure1_slot1;
                     var3 = var3[var8];
@@ -170,10 +170,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var6.shouldProfileSession;
                     var7 = var3.bind(var6)(var9);
                     if (var7) {
-                        _fun12050_ip = 502;
+                        _fun12050_ip = 500;
                         continue _fun12050
                     }
-                case 433:
+                case 432:
                     var6 = _closure1_slot0;
                     var10 = _closure1_slot1;
                     var3 = 1;
@@ -181,10 +181,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var6.bind(var0)(var3);
                     var3 = var3.DEBUG_BUILD;
                     if (!var3) {
-                        _fun12050_ip = 502;
+                        _fun12050_ip = 500;
                         continue _fun12050
                     }
-                case 462:
+                case 461:
                     var6 = _closure1_slot0;
                     var3 = _closure1_slot1;
                     var3 = var3[var12];
@@ -193,14 +193,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var6 = var10.log;
                     var3 = '[Profiling] Session not sampled. Skipping lifecycle profiler initialization.';
                     var3 = var6.bind(var10)(var3);
-                case 502:
+                case 500:
                     var6 = var9.profileLifecycle;
                     var3 = 'trace';
                     if (!(var3 === var6)) {
-                        _fun12050_ip = 882;
+                        _fun12050_ip = 880;
                         continue _fun12050
                     }
-                case 519:
+                case 517:
                     var6 = _closure1_slot0;
                     var3 = _closure1_slot1;
                     var3 = var3[var12];
@@ -210,19 +210,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var6 = _closure1_slot0;
                     var9 = _closure1_slot1;
                     if (var3) {
-                        _fun12050_ip = 622;
+                        _fun12050_ip = 620;
                         continue _fun12050
                     }
-                case 558:
+                case 556:
                     var3 = 1;
                     var3 = var9[var3];
                     var3 = var6.bind(var0)(var3);
                     var3 = var3.DEBUG_BUILD;
                     if (!var3) {
-                        _fun12050_ip = 618;
+                        _fun12050_ip = 616;
                         continue _fun12050
                     }
-                case 579:
+                case 577:
                     var11 = _closure1_slot0;
                     var10 = _closure1_slot1;
                     var10 = var10[var12];
@@ -231,10 +231,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var11 = var12.warn;
                     var10 = "[Profiling] `profileLifecycle` is 'trace' but tracing is disabled. Set a `tracesSampleRate` or `tracesSampler` to enable span tracing.";
                     var3 = var11.bind(var12)(var10);
-                case 618:
+                case 616:
                     var3 = undefined;
                     return var3;
-                case 622:
+                case 620:
                     var3 = 3;
                     var3 = var9[var3];
                     var3 = var6.bind(var0)(var3);
@@ -252,13 +252,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var6.initialize;
                     var3 = var3.bind(var6)(var4, var7);
                     if (!var5) {
-                        _fun12050_ip = 690;
+                        _fun12050_ip = 688;
                         continue _fun12050
                     }
-                case 679:
+                case 677:
                     var3 = var6.notifyRootSpanActive;
                     var3 = var3.bind(var6)(var5);
-                case 690:
+                case 688:
                     var6 = _closure1_slot0;
                     var7 = _closure1_slot1;
                     var3 = 4;
@@ -303,39 +303,39 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var3 = var6.bind(var7)(var3, var8);
-                    _fun12050_ip = 882;
+                    _fun12050_ip = 880;
                     continue _fun12050;
-                case 737:
+                case 735:
                     var3 = var5;
                     if (!var3) {
-                        _fun12050_ip = 771;
+                        _fun12050_ip = 769;
                         continue _fun12050
                     }
-                case 743:
+                case 741:
                     var7 = _closure1_slot0;
                     var6 = _closure1_slot1;
                     var6 = var6[var8];
                     var7 = var7.bind(var0)(var6);
                     var6 = var7.isAutomatedPageLoadSpan;
                     var3 = var6.bind(var7)(var5);
-                case 771:
+                case 769:
                     if (!var3) {
-                        _fun12050_ip = 802;
+                        _fun12050_ip = 800;
                         continue _fun12050
                     }
-                case 774:
+                case 772:
                     var7 = _closure1_slot0;
                     var6 = _closure1_slot1;
                     var6 = var6[var8];
                     var7 = var7.bind(var0)(var6);
                     var6 = var7.shouldProfileSpanLegacy;
                     var3 = var6.bind(var7)(var5);
-                case 802:
+                case 800:
                     if (!var3) {
-                        _fun12050_ip = 836;
+                        _fun12050_ip = 834;
                         continue _fun12050
                     }
-                case 805:
+                case 803:
                     var3 = _closure1_slot0;
                     var6 = _closure1_slot1;
                     var2 = 5;
@@ -343,7 +343,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var3.bind(var0)(var2);
                     var2 = var3.startProfileForSpan;
                     var2 = var2.bind(var3)(var5);
-                case 836:
+                case 834:
                     var5 = var4.on;
                     var3 = 'spanStart';
                     var2 = function(arg0) { // Environment: var1
@@ -413,7 +413,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var3 = var6.getActiveProfilesCount;
                                 var3 = var3.bind(var6)();
                                 if (!var3) {
-                                    _fun12052_ip = 661;
+                                    _fun12052_ip = 658;
                                     continue _fun12052
                                 }
                             case 61:
@@ -425,7 +425,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var3 = var3.bind(var6)(var4);
                                 var6 = var3.length;
                                 if (!var6) {
-                                    _fun12052_ip = 661;
+                                    _fun12052_ip = 658;
                                     continue _fun12052
                                 }
                             case 100:
@@ -444,7 +444,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var22 = var13().value;
                                 var23 = var6;
                                 if (!(var23 !== var0)) {
-                                    _fun12052_ip = 632;
+                                    _fun12052_ip = 629;
                                     continue _fun12052
                                 }
                             case 150: // try_start_0
@@ -506,7 +506,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var22 = var18;
                                 var22 = typeof var22;
                                 if (!(var3 !== var22)) {
-                                    _fun12052_ip = 339;
+                                    _fun12052_ip = 338;
                                     continue _fun12052
                                 }
                             case 271:
@@ -516,7 +516,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var22 = var23.bind(var0)(var22);
                                 var22 = var22.DEBUG_BUILD;
                                 if (!var22) {
-                                    _fun12052_ip = 620;
+                                    _fun12052_ip = 617;
                                     continue _fun12052
                                 }
                             case 300:
@@ -527,25 +527,25 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var23 = var22.debug;
                                 var22 = var23.log;
                                 var22 = var22.bind(var23)(var7);
-                                _fun12052_ip = 620;
+                                _fun12052_ip = 617;
                                 continue _fun12052;
-                            case 339:
+                            case 338:
                                 var22 = var18;
                                 if (var22) {
-                                    _fun12052_ip = 413;
+                                    _fun12052_ip = 411;
                                     continue _fun12052
                                 }
-                            case 345:
+                            case 344:
                                 var23 = _closure1_slot0;
                                 var22 = _closure1_slot1;
                                 var22 = var22[var9];
                                 var22 = var23.bind(var0)(var22);
                                 var22 = var22.DEBUG_BUILD;
                                 if (!var22) {
-                                    _fun12052_ip = 620;
+                                    _fun12052_ip = 617;
                                     continue _fun12052
                                 }
-                            case 374:
+                            case 373:
                                 var23 = _closure1_slot0;
                                 var22 = _closure1_slot1;
                                 var22 = var22[var12];
@@ -553,28 +553,28 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var23 = var22.debug;
                                 var22 = var23.log;
                                 var22 = var22.bind(var23)(var7);
-                                _fun12052_ip = 620;
+                                _fun12052_ip = 617;
                                 continue _fun12052;
-                            case 413:
+                            case 411:
                                 var23 = var17;
                                 var23 = var8 != var23;
                                 var22 = var23;
                                 if (!var23) {
-                                    _fun12052_ip = 435;
+                                    _fun12052_ip = 433;
                                     continue _fun12052
                                 }
-                            case 426:
+                            case 424:
                                 var23 = var17;
                                 var22 = var23.profile;
-                            case 435:
+                            case 433:
                                 if (!var22) {
-                                    _fun12052_ip = 446;
+                                    _fun12052_ip = 444;
                                     continue _fun12052
                                 }
-                            case 438:
+                            case 436:
                                 var22 = var17;
                                 var22 = delete var22.profile;
-                            case 446:
+                            case 444:
                                 var23 = _closure1_slot0;
                                 var22 = _closure1_slot1;
                                 var22 = var22[var5];
@@ -586,18 +586,18 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var23 = _closure1_slot0;
                                 var22 = _closure1_slot1;
                                 if (var24) {
-                                    _fun12052_ip = 564;
+                                    _fun12052_ip = 561;
                                     continue _fun12052
                                 }
-                            case 491:
+                            case 489:
                                 var24 = var22[var9];
                                 var24 = var23.bind(var0)(var24);
                                 var24 = var24.DEBUG_BUILD;
                                 if (!var24) {
-                                    _fun12052_ip = 620;
+                                    _fun12052_ip = 617;
                                     continue _fun12052
                                 }
-                            case 509:
+                            case 507:
                                 var25 = _closure1_slot0;
                                 var24 = _closure1_slot1;
                                 var24 = var24[var12];
@@ -609,9 +609,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var24 = var24.concat;
                                 var24 = var24.bind(var10)(var27);
                                 var24 = var25.bind(var26)(var24);
-                                _fun12052_ip = 620;
+                                _fun12052_ip = 617;
                                 continue _fun12052;
-                            case 564:
+                            case 561:
                                 var22 = var22[var5];
                                 var27 = var23.bind(var0)(var22);
                                 var26 = var27.createProfilingEvent;
@@ -623,34 +623,34 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var22 = var32[var26](var31, var30, var29, var28, var27);
                                 var21 = var22;
                                 if (!var22) {
-                                    _fun12052_ip = 620;
+                                    _fun12052_ip = 617;
                                     continue _fun12052
                                 }
-                            case 604:
+                            case 601:
                                 var24 = var1;
                                 var23 = var24.push;
                                 var22 = var21;
                                 var22 = var23.bind(var24)(var22);
-                            case 620: // try_end0
+                            case 617: // try_end0
                                 _fun12052_ip = 136;
                                 continue _fun12052;
-                            case 625: // catch_target0
+                            case 622: // catch_target0
                                 CatchBlockStart(arg_register = 3);
                                 var6.return();
                                 throw var3;
-                            case 632:
+                            case 629:
                                 var3 = _closure1_slot0;
                                 var2 = _closure1_slot1;
                                 var2 = var2[var5];
                                 var3 = var3.bind(var0)(var2);
                                 var2 = var3.addProfilesToEnvelope;
                                 var1 = var2.bind(var3)(var4, var1);
-                            case 661:
+                            case 658:
                                 return var0;
                         }
                     };
                     var1 = var3.bind(var4)(var2, var1);
-                case 882:
+                case 880:
                     return var0;
             }
         };

@@ -9,10 +9,10 @@ import java.util.concurrent.Executor;
 public class q0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Executor f17386a;
+    private final Executor f17387a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f17387b = new u0.a();
+    private final Map f17388b = new u0.a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     interface a {
@@ -21,19 +21,19 @@ public class q0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q0(Executor executor) {
-        this.f17386a = executor;
+        this.f17387a = executor;
     }
 
     public static /* synthetic */ Task a(q0 q0Var, String str, Task task) {
         synchronized (q0Var) {
-            q0Var.f17387b.remove(str);
+            q0Var.f17388b.remove(str);
         }
         return task;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public synchronized Task b(final String str, a aVar) {
-        Task task = (Task) this.f17387b.get(str);
+        Task task = (Task) this.f17388b.get(str);
         if (task != null) {
             if (Log.isLoggable("FirebaseMessaging", 3)) {
                 Log.d("FirebaseMessaging", "Joining ongoing request for: " + str);
@@ -43,13 +43,13 @@ public class q0 {
         if (Log.isLoggable("FirebaseMessaging", 3)) {
             Log.d("FirebaseMessaging", "Making new request for: " + str);
         }
-        Task i10 = aVar.start().i(this.f17386a, new zg.c() { // from class: com.google.firebase.messaging.p0
+        Task i10 = aVar.start().i(this.f17387a, new zg.c() { // from class: com.google.firebase.messaging.p0
             @Override // zg.c
             public final Object a(Task task2) {
                 return q0.a(q0.this, str, task2);
             }
         });
-        this.f17387b.put(str, i10);
+        this.f17388b.put(str, i10);
         return i10;
     }
 }

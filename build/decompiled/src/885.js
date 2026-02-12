@@ -617,7 +617,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = var7.bind(var6)(var5);
                     var5 = var5.DEBUG_BUILD;
                     if (!var5) {
-                        _fun9376_ip = 548;
+                        _fun9376_ip = 547;
                         continue _fun9376
                     }
                 case 492:
@@ -632,7 +632,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var4 = var1.status;
                     var1 = 'Sending checkin:';
                     var1 = var6.bind(var7)(var1, var5, var4);
-                case 548:
+                case 547:
                     var1 = var3.sendEnvelope;
                     var1 = var1.bind(var3)(var2);
                     return var0;

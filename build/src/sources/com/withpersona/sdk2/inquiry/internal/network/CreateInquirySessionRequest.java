@@ -9,13 +9,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class CreateInquirySessionRequest {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f20158c = new a(null);
+    public static final a f20159c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Data f20159a;
+    private final Data f20160a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Meta f20160b;
+    private final Meta f20161b;
 
     @com.squareup.moshi.i(generateAdapter = true)
     @Metadata(d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0002\b\u0007\b\u0007\u0018\u00002\u00020\u0001B\u0011\u0012\b\b\u0002\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005R\u0017\u0010\u0003\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0006\u0010\u0007\u001a\u0004\b\u0006\u0010\b¨\u0006\t"}, d2 = {"Lcom/withpersona/sdk2/inquiry/internal/network/CreateInquirySessionRequest$Data;", "", "", "type", "<init>", "(Ljava/lang/String;)V", "a", "Ljava/lang/String;", "()Ljava/lang/String;", "inquiry-internal_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -23,15 +23,15 @@ public final class CreateInquirySessionRequest {
     public static final class Data {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f20161a;
+        private final String f20162a;
 
         public Data(String type) {
             Intrinsics.checkNotNullParameter(type, "type");
-            this.f20161a = type;
+            this.f20162a = type;
         }
 
         public final String a() {
-            return this.f20161a;
+            return this.f20162a;
         }
 
         public /* synthetic */ Data(String str, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -45,15 +45,15 @@ public final class CreateInquirySessionRequest {
     public static final class Meta {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f20162a;
+        private final String f20163a;
 
         public Meta(String inquiryId) {
             Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
-            this.f20162a = inquiryId;
+            this.f20163a = inquiryId;
         }
 
         public final String a() {
-            return this.f20162a;
+            return this.f20163a;
         }
     }
 
@@ -75,15 +75,15 @@ public final class CreateInquirySessionRequest {
     public CreateInquirySessionRequest(Data data, Meta meta) {
         Intrinsics.checkNotNullParameter(data, "data");
         Intrinsics.checkNotNullParameter(meta, "meta");
-        this.f20159a = data;
-        this.f20160b = meta;
+        this.f20160a = data;
+        this.f20161b = meta;
     }
 
     public final Data a() {
-        return this.f20159a;
+        return this.f20160a;
     }
 
     public final Meta b() {
-        return this.f20160b;
+        return this.f20161b;
     }
 }

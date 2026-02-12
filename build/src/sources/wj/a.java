@@ -8,10 +8,10 @@ import java.util.Set;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ReferenceQueue f52773a = new ReferenceQueue();
+    private final ReferenceQueue f52774a = new ReferenceQueue();
 
     /* renamed from: b  reason: collision with root package name */
-    private final Set f52774b = Collections.synchronizedSet(new HashSet());
+    private final Set f52775b = Collections.synchronizedSet(new HashSet());
 
     /* renamed from: wj.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -29,8 +29,8 @@ public class a {
             public final void run() {
             }
         });
-        final ReferenceQueue referenceQueue = aVar.f52773a;
-        final Set set = aVar.f52774b;
+        final ReferenceQueue referenceQueue = aVar.f52774a;
+        final Set set = aVar.f52775b;
         Thread thread = new Thread(new Runnable() { // from class: wj.p
             @Override // java.lang.Runnable
             public final void run() {
@@ -49,8 +49,8 @@ public class a {
     }
 
     public InterfaceC0737a b(Object obj, Runnable runnable) {
-        r rVar = new r(obj, this.f52773a, this.f52774b, runnable, null);
-        this.f52774b.add(rVar);
+        r rVar = new r(obj, this.f52774a, this.f52775b, runnable, null);
+        this.f52775b.add(rVar);
         return rVar;
     }
 }

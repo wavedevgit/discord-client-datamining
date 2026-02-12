@@ -6,20 +6,20 @@ import x5.c;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f52281a = c.a.a("s", "a");
+    private static final c.a f52282a = c.a.a("s", "a");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f52282b = c.a.a("s", "e", "o", "r");
+    private static final c.a f52283b = c.a.a("s", "e", "o", "r");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final c.a f52283c = c.a.a("fc", "sc", "sw", "t", "o");
+    private static final c.a f52284c = c.a.a("fc", "sc", "sw", "t", "o");
 
     public static s5.k a(x5.c cVar, l5.i iVar) {
         cVar.u();
         s5.m mVar = null;
         s5.l lVar = null;
         while (cVar.hasNext()) {
-            int p10 = cVar.p(f52281a);
+            int p10 = cVar.p(f52282a);
             if (p10 != 0) {
                 if (p10 != 1) {
                     cVar.s();
@@ -42,7 +42,7 @@ public abstract class b {
         s5.d dVar3 = null;
         t5.u uVar = null;
         while (cVar.hasNext()) {
-            int p10 = cVar.p(f52282b);
+            int p10 = cVar.p(f52283b);
             if (p10 != 0) {
                 if (p10 != 1) {
                     if (p10 != 2) {
@@ -85,7 +85,7 @@ public abstract class b {
         s5.b bVar2 = null;
         s5.d dVar = null;
         while (cVar.hasNext()) {
-            int p10 = cVar.p(f52283c);
+            int p10 = cVar.p(f52284c);
             if (p10 != 0) {
                 if (p10 != 1) {
                     if (p10 != 2) {

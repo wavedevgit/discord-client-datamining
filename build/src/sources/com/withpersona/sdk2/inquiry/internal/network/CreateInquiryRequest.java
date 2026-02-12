@@ -17,22 +17,22 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateInquiryRequest {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final b f20142b = new b(null);
+    public static final b f20143b = new b(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Data f20143a;
+    private final Data f20144a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class Data {
 
         /* renamed from: c  reason: collision with root package name */
-        public static final Adapter f20144c = new Adapter(null);
+        public static final Adapter f20145c = new Adapter(null);
 
         /* renamed from: a  reason: collision with root package name */
-        private final a f20145a;
+        private final a f20146a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f20146b;
+        private final String f20147b;
 
         @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u001f\u0010\t\u001a\u00020\b2\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0007\u001a\u00020\u0006H\u0007¢\u0006\u0004\b\t\u0010\nJ\u0017\u0010\r\u001a\u00020\u00062\u0006\u0010\f\u001a\u00020\u000bH\u0007¢\u0006\u0004\b\r\u0010\u000e¨\u0006\u000f"}, d2 = {"Lcom/withpersona/sdk2/inquiry/internal/network/CreateInquiryRequest$Data$Adapter;", "", "<init>", "()V", "Lcom/squareup/moshi/t;", "jsonWriter", "Lcom/withpersona/sdk2/inquiry/internal/network/CreateInquiryRequest$Data;", "data", "", "toJson", "(Lcom/squareup/moshi/t;Lcom/withpersona/sdk2/inquiry/internal/network/CreateInquiryRequest$Data;)V", "Lcom/squareup/moshi/m;", "reader", "fromJson", "(Lcom/squareup/moshi/m;)Lcom/withpersona/sdk2/inquiry/internal/network/CreateInquiryRequest$Data;", "inquiry-internal_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
         @SourceDebugExtension({"SMAP\nCreateInquiryRequest.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CreateInquiryRequest.kt\ncom/withpersona/sdk2/inquiry/internal/network/CreateInquiryRequest$Data$Adapter\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,113:1\n1#2:114\n*E\n"})
@@ -97,7 +97,7 @@ public final class CreateInquiryRequest {
                 }
                 if (data.a().d() != null) {
                     jsonWriter.J("fields");
-                    InquiryFieldMap.f19698b.toJson(jsonWriter, new InquiryFieldMap(data.a().d()));
+                    InquiryFieldMap.f19699b.toJson(jsonWriter, new InquiryFieldMap(data.a().d()));
                 }
                 if (data.a().i() != null) {
                     jsonWriter.J("themeSetId").V0(data.a().i());
@@ -113,12 +113,12 @@ public final class CreateInquiryRequest {
         public Data(a attributes, String type) {
             Intrinsics.checkNotNullParameter(attributes, "attributes");
             Intrinsics.checkNotNullParameter(type, "type");
-            this.f20145a = attributes;
-            this.f20146b = type;
+            this.f20146a = attributes;
+            this.f20147b = type;
         }
 
         public final a a() {
-            return this.f20145a;
+            return this.f20146a;
         }
 
         public /* synthetic */ Data(a aVar, String str, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -143,90 +143,90 @@ public final class CreateInquiryRequest {
 
     public CreateInquiryRequest(Data data) {
         Intrinsics.checkNotNullParameter(data, "data");
-        this.f20143a = data;
+        this.f20144a = data;
     }
 
     public final Data a() {
-        return this.f20143a;
+        return this.f20144a;
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f20147a;
+        private final String f20148a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f20148b;
+        private final String f20149b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f20149c;
+        private final String f20150c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f20150d;
+        private final String f20151d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f20151e;
+        private final String f20152e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final String f20152f;
+        private final String f20153f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final String f20153g;
+        private final String f20154g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final Map f20154h;
+        private final Map f20155h;
 
         /* renamed from: i  reason: collision with root package name */
-        private final String f20155i;
+        private final String f20156i;
 
         public a(String str, String str2, String environment, String str3, String str4, String str5, String str6, Map map, String str7) {
             Intrinsics.checkNotNullParameter(environment, "environment");
-            this.f20147a = str;
-            this.f20148b = str2;
-            this.f20149c = environment;
-            this.f20150d = str3;
-            this.f20151e = str4;
-            this.f20152f = str5;
-            this.f20153g = str6;
-            this.f20154h = map;
-            this.f20155i = str7;
+            this.f20148a = str;
+            this.f20149b = str2;
+            this.f20150c = environment;
+            this.f20151d = str3;
+            this.f20152e = str4;
+            this.f20153f = str5;
+            this.f20154g = str6;
+            this.f20155h = map;
+            this.f20156i = str7;
         }
 
         public final String a() {
-            return this.f20151e;
+            return this.f20152e;
         }
 
         public final String b() {
-            return this.f20149c;
+            return this.f20150c;
         }
 
         public final String c() {
-            return this.f20150d;
+            return this.f20151d;
         }
 
         public final Map d() {
-            return this.f20154h;
+            return this.f20155h;
         }
 
         public final String e() {
-            return this.f20153g;
+            return this.f20154g;
         }
 
         public final String f() {
-            return this.f20152f;
+            return this.f20153f;
         }
 
         public final String g() {
-            return this.f20147a;
+            return this.f20148a;
         }
 
         public final String h() {
-            return this.f20148b;
+            return this.f20149b;
         }
 
         public final String i() {
-            return this.f20155i;
+            return this.f20156i;
         }
 
         public /* synthetic */ a(String str, String str2, String str3, String str4, String str5, String str6, String str7, Map map, String str8, int i10, DefaultConstructorMarker defaultConstructorMarker) {

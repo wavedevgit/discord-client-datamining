@@ -10,15 +10,15 @@ public final class TypeComponentPosition {
     public static final TypeComponentPosition INFLEXIBLE = new TypeComponentPosition("INFLEXIBLE", 2);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ TypeComponentPosition[] f33068d;
+    private static final /* synthetic */ TypeComponentPosition[] f33069d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f33069e;
+    private static final /* synthetic */ EnumEntries f33070e;
 
     static {
         TypeComponentPosition[] a10 = a();
-        f33068d = a10;
-        f33069e = hs.a.a(a10);
+        f33069d = a10;
+        f33070e = hs.a.a(a10);
     }
 
     private TypeComponentPosition(String str, int i10) {
@@ -33,6 +33,6 @@ public final class TypeComponentPosition {
     }
 
     public static TypeComponentPosition[] values() {
-        return (TypeComponentPosition[]) f33068d.clone();
+        return (TypeComponentPosition[]) f33069d.clone();
     }
 }

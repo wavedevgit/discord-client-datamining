@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.bind(var0)(var3);
                 var3 = var3.DEBUG_BUILD;
                 if (!var3) {
-                    _fun10878_ip = 106;
+                    _fun10878_ip = 105;
                     continue _fun10878
                 }
             case 40:
@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = ')';
                 var3 = var8.bind(var6)(var7, var3);
                 var3 = var4.bind(var5)(var3);
-            case 106:
+            case 105:
                 var8 = _closure1_slot0;
                 var3 = _closure1_slot1;
                 var5 = 1;
@@ -49,29 +49,29 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var8.browserPerformanceTimeOrigin;
                 var8 = var3.bind(var8)();
                 if (var8) {
-                    _fun10878_ip = 159;
+                    _fun10878_ip = 158;
                     continue _fun10878
                 }
-            case 157:
+            case 156:
                 var8 = 0;
-            case 159:
+            case 158:
                 var11 = null;
                 var10 = var11 == var2;
                 var3 = undefined;
                 if (var10) {
-                    _fun10878_ip = 176;
+                    _fun10878_ip = 175;
                     continue _fun10878
                 }
-            case 170:
+            case 169:
                 var3 = var2.startTime;
-            case 176:
+            case 175:
                 if (var3) {
-                    _fun10878_ip = 181;
+                    _fun10878_ip = 180;
                     continue _fun10878
                 }
-            case 179:
+            case 178:
                 var3 = 0;
-            case 181:
+            case 180:
                 var3 = var8 + var3;
                 var3 = var4.bind(var6)(var3);
                 var6 = _closure1_slot0;
@@ -85,10 +85,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = var4.transactionName;
                 var10 = 'Largest contentful paint';
                 if (!var2) {
-                    _fun10878_ip = 276;
+                    _fun10878_ip = 275;
                     continue _fun10878
                 }
-            case 242:
+            case 241:
                 var6 = _closure1_slot0;
                 var4 = _closure1_slot1;
                 var4 = var4[var9];
@@ -96,7 +96,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var12.htmlTreeAsString;
                 var4 = var2.element;
                 var10 = var6.bind(var12)(var4);
-            case 276:
+            case 275:
                 var13 = _closure1_slot2;
                 var6 = _closure1_slot0;
                 var4 = _closure1_slot1;
@@ -123,16 +123,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = arg3;
                 var6 = var13.bind(var0)(var12, var6, var4);
                 if (!var2) {
-                    _fun10878_ip = 559;
+                    _fun10878_ip = 558;
                     continue _fun10878
                 }
-            case 408:
+            case 407:
                 var4 = var2.element;
                 if (!var4) {
-                    _fun10878_ip = 457;
+                    _fun10878_ip = 456;
                     continue _fun10878
                 }
-            case 417:
+            case 416:
                 var12 = _closure1_slot0;
                 var4 = _closure1_slot1;
                 var4 = var4[var9];
@@ -141,52 +141,52 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var2.element;
                 var4 = var12.bind(var13)(var4);
                 var6['lcp.element'] = var4;
-            case 457:
+            case 456:
                 var4 = var2.id;
                 if (!var4) {
-                    _fun10878_ip = 476;
+                    _fun10878_ip = 475;
                     continue _fun10878
                 }
-            case 465:
+            case 464:
                 var4 = var2.id;
                 var6['lcp.id'] = var4;
-            case 476:
+            case 475:
                 var4 = var2.url;
                 if (!var4) {
-                    _fun10878_ip = 495;
+                    _fun10878_ip = 494;
                     continue _fun10878
                 }
-            case 484:
+            case 483:
                 var4 = var2.url;
                 var6['lcp.url'] = var4;
-            case 495:
+            case 494:
                 var4 = var2.loadTime;
                 if (!(var11 != var4)) {
-                    _fun10878_ip = 517;
+                    _fun10878_ip = 516;
                     continue _fun10878
                 }
-            case 505:
+            case 504:
                 var4 = var2.loadTime;
                 var6['lcp.loadTime'] = var4;
-            case 517:
+            case 516:
                 var4 = var2.renderTime;
                 if (!(var11 != var4)) {
-                    _fun10878_ip = 539;
+                    _fun10878_ip = 538;
                     continue _fun10878
                 }
-            case 527:
+            case 526:
                 var4 = var2.renderTime;
                 var6['lcp.renderTime'] = var4;
-            case 539:
+            case 538:
                 var4 = var2.size;
                 if (!(var11 != var4)) {
-                    _fun10878_ip = 559;
+                    _fun10878_ip = 558;
                     continue _fun10878
                 }
-            case 548:
+            case 547:
                 var2 = var2.size;
                 var6['lcp.size'] = var2;
-            case 559:
+            case 558:
                 var4 = _closure1_slot0;
                 var2 = _closure1_slot1;
                 var2 = var2[var5];
@@ -199,10 +199,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2.startTime = var3;
                 var2 = var4.bind(var5)(var2);
                 if (!var2) {
-                    _fun10878_ip = 699;
+                    _fun10878_ip = 698;
                     continue _fun10878
                 }
-            case 611:
+            case 610:
                 var5 = var2.addEvent;
                 var6 = _closure1_slot2;
                 var8 = _closure1_slot0;
@@ -221,7 +221,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var5.bind(var2)(var1, var4);
                 var1 = var2.end;
                 var1 = var1.bind(var2)(var3);
-            case 699:
+            case 698:
                 return var0;
         }
     };

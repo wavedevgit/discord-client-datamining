@@ -15,17 +15,17 @@ public class k extends Transition {
     class a implements ValueAnimator.AnimatorUpdateListener {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ TextView f15926a;
+        final /* synthetic */ TextView f15927a;
 
         a(TextView textView) {
-            this.f15926a = textView;
+            this.f15927a = textView;
         }
 
         @Override // android.animation.ValueAnimator.AnimatorUpdateListener
         public void onAnimationUpdate(ValueAnimator valueAnimator) {
             float floatValue = ((Float) valueAnimator.getAnimatedValue()).floatValue();
-            this.f15926a.setScaleX(floatValue);
-            this.f15926a.setScaleY(floatValue);
+            this.f15927a.setScaleX(floatValue);
+            this.f15927a.setScaleY(floatValue);
         }
     }
 

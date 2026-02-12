@@ -12,25 +12,25 @@ import org.jetbrains.annotations.NotNull;
 public final class b extends LayoutShadowNode {
 
     /* renamed from: a  reason: collision with root package name */
-    private final float[] f55672a;
+    private final float[] f55673a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f55673b;
+    private boolean f55674b;
 
     public b() {
         int[] iArr = ViewProps.PADDING_MARGIN_SPACING_TYPES;
-        this.f55672a = new float[iArr.length];
+        this.f55673a = new float[iArr.length];
         int length = iArr.length;
         for (int i10 = 0; i10 < length; i10++) {
-            this.f55672a[i10] = Float.NaN;
+            this.f55673a[i10] = Float.NaN;
         }
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNodeImpl, com.facebook.react.uimanager.ReactShadowNode
     public void onBeforeLayout(NativeViewHierarchyOptimizer nativeViewHierarchyOptimizer) {
         Intrinsics.checkNotNullParameter(nativeViewHierarchyOptimizer, "nativeViewHierarchyOptimizer");
-        if (this.f55673b) {
-            this.f55673b = false;
+        if (this.f55674b) {
+            this.f55674b = false;
             a();
         }
     }
@@ -46,7 +46,7 @@ public final class b extends LayoutShadowNode {
         float f10;
         Intrinsics.checkNotNullParameter(margin, "margin");
         int i11 = ViewProps.PADDING_MARGIN_SPACING_TYPES[i10];
-        float[] fArr = this.f55672a;
+        float[] fArr = this.f55673a;
         if (margin.getType() == ReadableType.Number) {
             f10 = (float) margin.asDouble();
         } else {
@@ -54,7 +54,7 @@ public final class b extends LayoutShadowNode {
         }
         fArr[i11] = f10;
         super.setMargins(i10, margin);
-        this.f55673b = true;
+        this.f55674b = true;
     }
 
     private final void a() {

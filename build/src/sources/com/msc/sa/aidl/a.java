@@ -18,10 +18,10 @@ public interface a extends IInterface {
         private static class C0209a implements a {
 
             /* renamed from: c  reason: collision with root package name */
-            private IBinder f18141c;
+            private IBinder f18142c;
 
             C0209a(IBinder iBinder) {
-                this.f18141c = iBinder;
+                this.f18142c = iBinder;
             }
 
             @Override // com.msc.sa.aidl.a
@@ -34,7 +34,7 @@ public interface a extends IInterface {
                     obtain.writeString(str2);
                     obtain.writeString(str3);
                     obtain.writeStrongInterface(iSACallback);
-                    this.f18141c.transact(1, obtain, obtain2, 0);
+                    this.f18142c.transact(1, obtain, obtain2, 0);
                     obtain2.readException();
                     return obtain2.readString();
                 } finally {
@@ -53,7 +53,7 @@ public interface a extends IInterface {
                     obtain.writeString(str);
                     boolean z10 = false;
                     b.b(obtain, bundle, 0);
-                    this.f18141c.transact(6, obtain, obtain2, 0);
+                    this.f18142c.transact(6, obtain, obtain2, 0);
                     obtain2.readException();
                     if (obtain2.readInt() != 0) {
                         z10 = true;
@@ -67,7 +67,7 @@ public interface a extends IInterface {
 
             @Override // android.os.IInterface
             public IBinder asBinder() {
-                return this.f18141c;
+                return this.f18142c;
             }
         }
 

@@ -6,15 +6,15 @@ public final class g implements lr.d {
     private static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final g f20340a = new g();
+        static final g f20341a = new g();
     }
 
     public static g a() {
-        return a.f20340a;
+        return a.f20341a;
     }
 
     public static String c() {
-        return (String) lr.g.d(f.f20336d.e());
+        return (String) lr.g.d(f.f20337d.e());
     }
 
     @Override // javax.inject.Provider

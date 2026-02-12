@@ -49,7 +49,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
             }
             return this.L.e(a10 - 1);
         }
-        return this.L.f46237e;
+        return this.L.f46238e;
     }
 
     private long c0() {
@@ -91,7 +91,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
     }
 
     private void g0(CueGroup cueGroup) {
-        this.B.onCues(cueGroup.f13655d);
+        this.B.onCues(cueGroup.f13656d);
         this.B.onCues(cueGroup);
     }
 
@@ -177,7 +177,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
                 i10 = 2;
             }
             return w1.b(i10);
-        } else if (c0.r(format.f12304w)) {
+        } else if (c0.r(format.f12305w)) {
             return w1.b(1);
         } else {
             return w1.b(0);
@@ -257,7 +257,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
                                 this.F = true;
                             }
                         }
-                    } else if (lVar.f46237e <= j10) {
+                    } else if (lVar.f46238e <= j10) {
                         l lVar2 = this.L;
                         if (lVar2 != null) {
                             lVar2.t();
@@ -297,7 +297,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
                                     this.E = true;
                                     this.G = false;
                                 } else {
-                                    Format format = this.D.f36282b;
+                                    Format format = this.D.f36283b;
                                     if (format != null) {
                                         kVar.f749t = format.A;
                                         kVar.v();

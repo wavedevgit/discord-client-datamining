@@ -78,19 +78,19 @@ public final class CapturedTypeConstructorKt {
 
             @Override // kotlin.reflect.jvm.internal.impl.types.DelegatedTypeSubstitution, kotlin.reflect.jvm.internal.impl.types.TypeSubstitution
             /* renamed from: get */
-            public TypeProjection mo1205get(KotlinType key) {
+            public TypeProjection mo1204get(KotlinType key) {
                 TypeProjection b10;
                 Intrinsics.checkNotNullParameter(key, "key");
-                TypeProjection mo1205get = super.mo1205get(key);
+                TypeProjection mo1204get = super.mo1204get(key);
                 TypeParameterDescriptor typeParameterDescriptor = null;
-                if (mo1205get == null) {
+                if (mo1204get == null) {
                     return null;
                 }
-                ClassifierDescriptor mo1202getDeclarationDescriptor = key.getConstructor().mo1202getDeclarationDescriptor();
-                if (mo1202getDeclarationDescriptor instanceof TypeParameterDescriptor) {
-                    typeParameterDescriptor = (TypeParameterDescriptor) mo1202getDeclarationDescriptor;
+                ClassifierDescriptor mo1201getDeclarationDescriptor = key.getConstructor().mo1201getDeclarationDescriptor();
+                if (mo1201getDeclarationDescriptor instanceof TypeParameterDescriptor) {
+                    typeParameterDescriptor = (TypeParameterDescriptor) mo1201getDeclarationDescriptor;
                 }
-                b10 = CapturedTypeConstructorKt.b(mo1205get, typeParameterDescriptor);
+                b10 = CapturedTypeConstructorKt.b(mo1204get, typeParameterDescriptor);
                 return b10;
             }
         };

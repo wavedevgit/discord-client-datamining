@@ -34,7 +34,7 @@ public final class a {
     @NotNull
 
     /* renamed from: a */
-    public static final a f20418a = new a();
+    public static final a f20419a = new a();
 
     /* renamed from: com.withpersona.sdk2.inquiry.network.core.a$a */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -42,45 +42,45 @@ public final class a {
         @NotNull
 
         /* renamed from: a */
-        public final String f20419a;
+        public final String f20420a;
         @NotNull
 
         /* renamed from: b */
-        public final String f20420b;
+        public final String f20421b;
         @NotNull
 
         /* renamed from: c */
-        public final String f20421c;
+        public final String f20422c;
         @NotNull
 
         /* renamed from: d */
-        public final String f20422d;
+        public final String f20423d;
 
         public C0264a(@NotNull String str, @NotNull String str2, @NotNull String str3, @NotNull String str4) {
-            this.f20419a = str;
-            this.f20420b = str2;
-            this.f20421c = str3;
-            this.f20422d = str4;
+            this.f20420a = str;
+            this.f20421b = str2;
+            this.f20422c = str3;
+            this.f20423d = str4;
         }
 
         @NotNull
         public final String a() {
-            return this.f20421c;
+            return this.f20422c;
         }
 
         @NotNull
         public final String b() {
-            return this.f20419a;
+            return this.f20420a;
         }
 
         @NotNull
         public final String c() {
-            return this.f20422d;
+            return this.f20423d;
         }
 
         @NotNull
         public final String d() {
-            return this.f20420b;
+            return this.f20421b;
         }
     }
 
@@ -111,7 +111,7 @@ public final class a {
     @NotNull
     public final JSONArray c(@NotNull RequestBody requestBody) {
         Pair a10;
-        List<Pair<String, Object>> c10 = f20418a.c(a(requestBody));
+        List<Pair<String, Object>> c10 = f20419a.c(a(requestBody));
         ArrayList arrayList = new ArrayList(CollectionsKt.w(c10, 10));
         Iterator<T> it = c10.iterator();
         while (it.hasNext()) {
@@ -178,7 +178,7 @@ public final class a {
                 Collection values = n10.values();
                 String str = (String) CollectionsKt.B0(StringsKt.split$default(c10, new String[]{" "}, false, 0, 6, null));
                 if (str == null) {
-                    bVar.f(NetworkUtilsKt.SUBSYSTEM, np.a.f38208i, "Auth token is null.");
+                    bVar.f(NetworkUtilsKt.SUBSYSTEM, np.a.f38209i, "Auth token is null.");
                     return null;
                 }
                 String optString = new JSONObject(new String(Base64.decode((String) StringsKt.split$default(str, new String[]{"."}, false, 0, 6, null).get(1), 0), Charsets.UTF_8)).optString("sub");
@@ -186,13 +186,13 @@ public final class a {
                     String valueOf = String.valueOf(j10 / 1000);
                     return new C0264a(a(CollectionsKt.x0(CollectionsKt.o(optString, valueOf, StringsKt.J(c(c11).toString(), "\\/", "/", false, 4, null)), ":", null, null, 0, null, null, 62, null)), valueOf, a(CollectionsKt.x0(CollectionsKt.o(CollectionsKt.x0(values, "", null, null, 0, null, null, 62, null), valueOf, StringsKt.J(c(c11).toString(), "\\/", "/", false, 4, null)), ":", null, null, 0, null, null, 62, null)), CollectionsKt.x0(keySet, ", ", null, null, 0, null, null, 62, null));
                 }
-                bVar.f(NetworkUtilsKt.SUBSYSTEM, np.a.f38208i, "Session token is null.");
+                bVar.f(NetworkUtilsKt.SUBSYSTEM, np.a.f38209i, "Session token is null.");
                 return null;
             }
-            bVar.f(NetworkUtilsKt.SUBSYSTEM, np.a.f38208i, "User agent is null.");
+            bVar.f(NetworkUtilsKt.SUBSYSTEM, np.a.f38209i, "User agent is null.");
             return null;
         } catch (Exception e10) {
-            np.a aVar = np.a.f38208i;
+            np.a aVar = np.a.f38209i;
             String message = e10.getMessage();
             bVar.f(NetworkUtilsKt.SUBSYSTEM, aVar, "An unexpected error occurred: " + message + ".");
             return null;
@@ -283,7 +283,7 @@ public final class a {
                 } else {
                     l10 = CollectionsKt.l();
                 }
-                a aVar = f20418a;
+                a aVar = f20419a;
                 String a10 = aVar.a(l10);
                 if (a10 != null) {
                     if (aVar.b(l10)) {
@@ -330,7 +330,7 @@ public final class a {
             Iterator<String> keys = jSONObject.keys();
             while (keys.hasNext()) {
                 String next = keys.next();
-                a aVar = f20418a;
+                a aVar = f20419a;
                 Object opt = jSONObject.opt(next);
                 if (str != null) {
                     next = str + "[" + next + "]";

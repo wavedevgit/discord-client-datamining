@@ -8,16 +8,16 @@ import us.c1;
 public class d1 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final c1 f51021d;
+    private final c1 f51022d;
 
     public d1(c1 c1Var) {
-        this.f51021d = c1Var;
+        this.f51022d = c1Var;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         RuntimeModuleData c10;
-        c10 = c1.b.c(this.f51021d);
+        c10 = c1.b.c(this.f51022d);
         return c10;
     }
 }

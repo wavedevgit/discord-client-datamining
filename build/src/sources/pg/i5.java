@@ -5,44 +5,44 @@ import bj.c;
 final class i5 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final i5 f42087a = new i5();
+    static final i5 f42088a = new i5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f42088b;
+    private static final bj.c f42089b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f42089c;
+    private static final bj.c f42090c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f42090d;
+    private static final bj.c f42091d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final bj.c f42091e;
+    private static final bj.c f42092e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final bj.c f42092f;
+    private static final bj.c f42093f;
 
     static {
         c.b a10 = bj.c.a("detectorOptions");
         f fVar = new f();
         fVar.a(1);
-        f42088b = a10.b(fVar.b()).a();
+        f42089b = a10.b(fVar.b()).a();
         c.b a11 = bj.c.a("errorCode");
         f fVar2 = new f();
         fVar2.a(2);
-        f42089c = a11.b(fVar2.b()).a();
+        f42090c = a11.b(fVar2.b()).a();
         c.b a12 = bj.c.a("totalInitializationMs");
         f fVar3 = new f();
         fVar3.a(3);
-        f42090d = a12.b(fVar3.b()).a();
+        f42091d = a12.b(fVar3.b()).a();
         c.b a13 = bj.c.a("loggingInitializationMs");
         f fVar4 = new f();
         fVar4.a(4);
-        f42091e = a13.b(fVar4.b()).a();
+        f42092e = a13.b(fVar4.b()).a();
         c.b a14 = bj.c.a("otherErrors");
         f fVar5 = new f();
         fVar5.a(5);
-        f42092f = a14.b(fVar5.b()).a();
+        f42093f = a14.b(fVar5.b()).a();
     }
 
     private i5() {

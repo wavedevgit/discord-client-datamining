@@ -69,7 +69,7 @@ public abstract class b implements Encoder, CompositeEncoder {
         if (G(descriptor, i10)) {
             return j(descriptor.g(i10));
         }
-        return i1.f50001a;
+        return i1.f50002a;
     }
 
     @Override // kotlinx.serialization.encoding.Encoder

@@ -28,7 +28,7 @@ class VideoEncoderWrapper {
 
     @CalledByNative
     static boolean getScalingSettingsOn(VideoEncoder.ScalingSettings scalingSettings) {
-        return scalingSettings.f41110on;
+        return scalingSettings.f41111on;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

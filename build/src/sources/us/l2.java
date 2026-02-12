@@ -7,16 +7,16 @@ import us.j2;
 public class l2 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final j2.c f51093d;
+    private final j2.c f51094d;
 
     public l2(j2.c cVar) {
-        this.f51093d = cVar;
+        this.f51094d = cVar;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         vs.h M;
-        M = j2.c.M(this.f51093d);
+        M = j2.c.M(this.f51094d);
         return M;
     }
 }

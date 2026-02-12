@@ -367,14 +367,14 @@ public class v extends ActionBar implements ActionBarOverlayLayout.d {
     private void H(View view) {
         boolean z10;
         boolean z11;
-        ActionBarOverlayLayout actionBarOverlayLayout = (ActionBarOverlayLayout) view.findViewById(f.f.f23366q);
+        ActionBarOverlayLayout actionBarOverlayLayout = (ActionBarOverlayLayout) view.findViewById(f.f.f23367q);
         this.f1262d = actionBarOverlayLayout;
         if (actionBarOverlayLayout != null) {
             actionBarOverlayLayout.setActionBarVisibilityCallback(this);
         }
-        this.f1264f = E(view.findViewById(f.f.f23350a));
-        this.f1265g = (ActionBarContextView) view.findViewById(f.f.f23356g);
-        ActionBarContainer actionBarContainer = (ActionBarContainer) view.findViewById(f.f.f23352c);
+        this.f1264f = E(view.findViewById(f.f.f23351a));
+        this.f1265g = (ActionBarContextView) view.findViewById(f.f.f23357g);
+        ActionBarContainer actionBarContainer = (ActionBarContainer) view.findViewById(f.f.f23353c);
         this.f1263e = actionBarContainer;
         z zVar = this.f1264f;
         if (zVar != null && this.f1265g != null && actionBarContainer != null) {
@@ -395,11 +395,11 @@ public class v extends ActionBar implements ActionBarOverlayLayout.d {
             }
             M(z11);
             K(b10.e());
-            TypedArray obtainStyledAttributes = this.f1259a.obtainStyledAttributes(null, f.j.f23416a, f.a.f23278c, 0);
-            if (obtainStyledAttributes.getBoolean(f.j.f23466k, false)) {
+            TypedArray obtainStyledAttributes = this.f1259a.obtainStyledAttributes(null, f.j.f23417a, f.a.f23279c, 0);
+            if (obtainStyledAttributes.getBoolean(f.j.f23467k, false)) {
                 L(true);
             }
-            int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(f.j.f23456i, 0);
+            int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(f.j.f23457i, 0);
             if (dimensionPixelSize != 0) {
                 J(dimensionPixelSize);
             }
@@ -645,7 +645,7 @@ public class v extends ActionBar implements ActionBarOverlayLayout.d {
     public Context j() {
         if (this.f1260b == null) {
             TypedValue typedValue = new TypedValue();
-            this.f1259a.getTheme().resolveAttribute(f.a.f23280e, typedValue, true);
+            this.f1259a.getTheme().resolveAttribute(f.a.f23281e, typedValue, true);
             int i10 = typedValue.resourceId;
             if (i10 != 0) {
                 this.f1260b = new ContextThemeWrapper(this.f1259a, i10);

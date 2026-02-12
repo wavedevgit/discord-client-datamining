@@ -1,130 +1,76 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun97745: for (var _fun97745_ip = 0;;) switch (_fun97745_ip) {
-        case 0:
-            var3 = global;
-            var1 = dependencyMap;
-            var0 = 0;
-            var2 = var1[var0];
-            var1 = require;
-            var0 = undefined;
-            var4 = var1.bind(var0)(var2);
-            if (!var4) {
-                _fun97745_ip = 50;
-                continue _fun97745
-            }
-        case 25:
-            var2 = 'object';
-            var1 = typeof var4;
-            if (!(var2 === var1)) {
-                _fun97745_ip = 50;
-                continue _fun97745
-            }
-        case 36:
-            var1 = 'default';
-            var2 = var1 in var4;
-            var1 = var4;
-            if (var2) {
-                _fun97745_ip = 59;
-                continue _fun97745
-            }
-        case 50:
-            var2 = {};
-            var2.default = var4;
-            var1 = var2;
-        case 59:
-            var2 = global;
-            var4 = var2.Intl;
-            var5 = 'undefined';
-            var4 = typeof var4;
-            if (!(var5 !== var4)) {
-                _fun97745_ip = 241;
-                continue _fun97745
-            }
-        case 81:
-            var4 = var2.Intl;
-            var4 = var4.PluralRules;
-            if (!var4) {
-                _fun97745_ip = 124;
-                continue _fun97745
-            }
-        case 96:
-            var4 = var2.Intl;
-            var4 = var4.PluralRules;
-            var4 = var4.prototype;
-            var4 = var4.selectRange;
-            if (var4) {
-                _fun97745_ip = 159;
-                continue _fun97745
-            }
-        case 124:
-            var6 = var2.Intl;
-            var4 = var1.default;
-            var6.PluralRules = var4;
-            var6 = var1.default;
-            var4 = true;
-            var6.polyfill = var4;
-            _fun97745_ip = 337;
-            continue _fun97745;
-        case 159:
-            var4 = ['en', 'es', 'ru', 'zh'];
-            var6 = var2.Intl;
-            var7 = var6.PluralRules;
-            var6 = var7.supportedLocalesOf;
-            var6 = var6.bind(var7)(var4);
-            var6 = var6.length;
-            var4 = var4.length;
-            if (!(var6 < var4)) {
-                _fun97745_ip = 337;
-                continue _fun97745
-            }
-        case 209:
-            var6 = var2.Intl;
-            var4 = var1.default;
-            var6.PluralRules = var4;
-            var6 = var1.default;
-            var4 = true;
-            var6.polyfill = var4;
-            _fun97745_ip = 337;
-            continue _fun97745;
-        case 241:
-            if (!(var0 === var3)) {
-                _fun97745_ip = 306;
-                continue _fun97745
-            }
-        case 245:
-            var4 = var2.window;
-            var4 = typeof var4;
-            if (!(var5 === var4)) {
-                _fun97745_ip = 280;
-                continue _fun97745
-            }
-        case 257:
-            var5 = {};
-            var4 = var1.default;
-            var5.PluralRules = var4;
-            var4 = this;
-            var4.Intl = var5;
-            _fun97745_ip = 324;
-            continue _fun97745;
-        case 280:
-            var4 = var2.window;
-            var2 = {};
-            var5 = var1.default;
-            var2.PluralRules = var5;
-            var4.Intl = var2;
-            _fun97745_ip = 324;
-            continue _fun97745;
-        case 306:
-            var2 = {};
-            var4 = var1.default;
-            var2.PluralRules = var4;
-            var3.Intl = var2;
-        case 324:
-            var2 = var1.default;
-            var1 = true;
-            var2.polyfill = var1;
-        case 337:
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12770]);
+    var1 = {
+        'name': 'react-native-url-polyfill',
+        'version': '2.0.0',
+        'description': 'A lightweight and trustworthy URL polyfill for React Native',
+        'keywords': null,
+        'bugs': null,
+        'homepage': 'https://github.com/charpeni/react-native-url-polyfill',
+        'readme': 'https://github.com/charpeni/react-native-url-polyfill#readme',
+        'repository': null,
+        'main': 'index.js',
+        'types': 'index.d.ts'
+    };
+    var0 = ['URL', 'URLSearchParams', 'polyfill', 'react native', 'whatwg-url'];
+    var1.keywords = var0;
+    var0 = {};
+    var2 = 'https://github.com/charpeni/react-native-url-polyfill/issues';
+    var0.url = var2;
+    var1.bugs = var0;
+    var0 = {
+        'type': 'git',
+        'url': 'https://github.com/charpeni/react-native-url-polyfill.git'
+    };
+    var1.repository = var0;
+    var0 = {
+        'test': 'jest',
+        'lint': 'eslint .',
+        'prepare': 'husky install',
+        'bundle-size': 'node scripts/bundle-size'
+    };
+    var1.scripts = var0;
+    var0 = 'Nicolas Charpentier <nicolas.charpentier079@gmail.com>';
+    var1.author = var0;
+    var0 = 'MIT';
+    var1.license = var0;
+    var0 = {};
+    var2 = '8.0.0-3';
+    var0['whatwg-url-without-unicode'] = var2;
+    var1.dependencies = var0;
+    var0 = {
+        '@react-native-community/eslint-config': '3.2.0',
+        'detox': '20.9.1',
+        'eslint': '8.44.0',
+        'eslint-plugin-prettier': '4.2.1',
+        'husky': '8.0.3',
+        'jest': '29.5.0',
+        'lint-staged': '13.2.3',
+        'metro-react-native-babel-preset': '0.76.7',
+        'nanoid': '3.3.6',
+        'prettier': '2.8.8',
+        'react': '18.2.0',
+        'react-native': '0.72.1',
+        'react-native-bundle-scale': '1.1.0',
+        'typescript': '5.1.6'
+    };
+    var1.devDependencies = var0;
+    var0 = {};
+    var2 = '*';
+    var0['react-native'] = var2;
+    var1.peerDependencies = var0;
+    var0 = {};
+    var2 = 'react-native';
+    var0.preset = var2;
+    var2 = ['/node_modules/', './platforms/'];
+    var0.testPathIgnorePatterns = var2;
+    var1.jest = var0;
+    var0 = {};
+    var2 = ['eslint --fix'];
+    var0['*.js'] = var2;
+    var1['lint-staged'] = var0;
+    var0 = module;
+    var0.exports = var1;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

@@ -29,21 +29,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'components_native/chat/isAlertOrActionSheetOpen.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun76773: for (var _fun76773_ip = 0;;) switch (_fun76773_ip) {
+        _fun78116: for (var _fun78116_ip = 0;;) switch (_fun78116_ip) {
             case 0:
                 var1 = arguments[1];
                 var3 = arguments[2];
                 var0 = undefined;
                 if (!(var1 === var0)) {
-                    _fun76773_ip = 19;
-                    continue _fun76773
+                    _fun78116_ip = 19;
+                    continue _fun78116
                 }
             case 12:
                 var1 = _closure1_slot0;
             case 19:
                 if (!(var3 === var0)) {
-                    _fun76773_ip = 30;
-                    continue _fun76773
+                    _fun78116_ip = 30;
+                    continue _fun78116
                 }
             case 23:
                 var3 = _closure1_slot1;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var3)();
                 var1 = var2 != var1;
                 if (var0) {
-                    _fun76773_ip = 66;
-                    continue _fun76773
+                    _fun78116_ip = 66;
+                    continue _fun78116
                 }
             case 63:
                 var0 = var1;
@@ -67,4 +67,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isAlertOrActionSheetOpen = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3142, 9744, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3142, 9848, 2]);

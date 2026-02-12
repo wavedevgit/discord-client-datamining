@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/checkpoint/native/onTapCheckpointCard.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun89756: for (var _fun89756_ip = 0;;) switch (_fun89756_ip) {
+        _fun88106: for (var _fun88106_ip = 0;;) switch (_fun88106_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.message;
@@ -68,8 +68,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var5 == var8;
                 var5 = undefined;
                 if (var9) {
-                    _fun89756_ip = 145;
-                    continue _fun89756
+                    _fun88106_ip = 145;
+                    continue _fun88106
                 }
             case 140:
                 var5 = var8.guild_id;

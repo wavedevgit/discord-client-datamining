@@ -61,7 +61,7 @@ public class FrescoModule extends ReactContextBaseJavaModule implements ModuleDa
             ((CookieJarContainer) c10).setCookieJar(new i(new ForwardingCookieHandler()));
             Context applicationContext = context.getApplicationContext();
             Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
-            ImagePipelineConfig.Builder Y = a.a(applicationContext, createClient).W(new ReactOkHttpNetworkFetcher(createClient)).U(DownsampleMode.f11080e).Y(hashSet);
+            ImagePipelineConfig.Builder Y = a.a(applicationContext, createClient).W(new ReactOkHttpNetworkFetcher(createClient)).U(DownsampleMode.f11081e).Y(hashSet);
             Y.b().e(true);
             return Y;
         }

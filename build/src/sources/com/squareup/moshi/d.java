@@ -16,16 +16,16 @@ import java.util.TreeMap;
 final class d extends h {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final h.e f18781d = new a();
+    public static final h.e f18782d = new a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f18782a;
+    private final c f18783a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b[] f18783b;
+    private final b[] f18784b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final m.b f18784c;
+    private final m.b f18785c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements h.e {
@@ -48,7 +48,7 @@ final class d extends h {
                     field.setAccessible(true);
                     String m10 = dn.c.m(name, gVar);
                     if (((b) map.put(m10, new b(m10, field, f10))) != null) {
-                        throw new IllegalArgumentException("Conflicting fields:\n    " + bVar2.f18786b + "\n    " + bVar.f18786b);
+                        throw new IllegalArgumentException("Conflicting fields:\n    " + bVar2.f18787b + "\n    " + bVar.f18787b);
                     }
                 }
             }
@@ -122,48 +122,48 @@ final class d extends h {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        final String f18785a;
+        final String f18786a;
 
         /* renamed from: b  reason: collision with root package name */
-        final Field f18786b;
+        final Field f18787b;
 
         /* renamed from: c  reason: collision with root package name */
-        final h f18787c;
+        final h f18788c;
 
         b(String str, Field field, h hVar) {
-            this.f18785a = str;
-            this.f18786b = field;
-            this.f18787c = hVar;
+            this.f18786a = str;
+            this.f18787b = field;
+            this.f18788c = hVar;
         }
 
         void a(m mVar, Object obj) {
-            this.f18786b.set(obj, this.f18787c.fromJson(mVar));
+            this.f18787b.set(obj, this.f18788c.fromJson(mVar));
         }
 
         void b(t tVar, Object obj) {
-            this.f18787c.toJson(tVar, this.f18786b.get(obj));
+            this.f18788c.toJson(tVar, this.f18787b.get(obj));
         }
     }
 
     d(c cVar, Map map) {
-        this.f18782a = cVar;
-        this.f18783b = (b[]) map.values().toArray(new b[map.size()]);
-        this.f18784c = m.b.a((String[]) map.keySet().toArray(new String[map.size()]));
+        this.f18783a = cVar;
+        this.f18784b = (b[]) map.values().toArray(new b[map.size()]);
+        this.f18785c = m.b.a((String[]) map.keySet().toArray(new String[map.size()]));
     }
 
     @Override // com.squareup.moshi.h
     public Object fromJson(m mVar) {
         try {
-            Object b10 = this.f18782a.b();
+            Object b10 = this.f18783a.b();
             try {
                 mVar.u();
                 while (mVar.hasNext()) {
-                    int J = mVar.J(this.f18784c);
+                    int J = mVar.J(this.f18785c);
                     if (J == -1) {
                         mVar.z0();
                         mVar.T();
                     } else {
-                        this.f18783b[J].a(mVar, b10);
+                        this.f18784b[J].a(mVar, b10);
                     }
                 }
                 mVar.D();
@@ -185,8 +185,8 @@ final class d extends h {
         b[] bVarArr;
         try {
             tVar.i();
-            for (b bVar : this.f18783b) {
-                tVar.J(bVar.f18785a);
+            for (b bVar : this.f18784b) {
+                tVar.J(bVar.f18786a);
                 bVar.b(tVar, obj);
             }
             tVar.s();
@@ -196,6 +196,6 @@ final class d extends h {
     }
 
     public String toString() {
-        return "JsonAdapter(" + this.f18782a + ")";
+        return "JsonAdapter(" + this.f18783a + ")";
     }
 }

@@ -86,7 +86,7 @@ public final class SubmitButtonJsonAdapter extends h {
         }
         Constructor<SubmitButton> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = SubmitButton.class.getDeclaredConstructor(String.class, BasicButtonAttributes.class, ButtonSubmitComponentStyle.class, Integer.TYPE, c.f21827c);
+            constructor = SubmitButton.class.getDeclaredConstructor(String.class, BasicButtonAttributes.class, ButtonSubmitComponentStyle.class, Integer.TYPE, c.f21828c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

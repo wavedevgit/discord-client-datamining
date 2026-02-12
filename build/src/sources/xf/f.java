@@ -13,25 +13,25 @@ public class f extends i {
     public static final Parcelable.Creator<f> CREATOR = new m1();
 
     /* renamed from: d  reason: collision with root package name */
-    private final v4 f54636d;
+    private final v4 f54637d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final v4 f54637e;
+    private final v4 f54638e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final v4 f54638i;
+    private final v4 f54639i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final v4 f54639o;
+    private final v4 f54640o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final v4 f54640p;
+    private final v4 f54641p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(byte[] bArr, byte[] bArr2, byte[] bArr3, byte[] bArr4, byte[] bArr5) {
         v4 o10;
         byte[] bArr6 = (byte[]) hf.q.l(bArr);
-        v4 v4Var = v4.f14816e;
+        v4 v4Var = v4.f14817e;
         v4 o11 = v4.o(bArr6, 0, bArr6.length);
         byte[] bArr7 = (byte[]) hf.q.l(bArr2);
         v4 o12 = v4.o(bArr7, 0, bArr7.length);
@@ -44,27 +44,27 @@ public class f extends i {
         } else {
             o10 = v4.o(bArr5, 0, bArr5.length);
         }
-        this.f54636d = (v4) hf.q.l(o11);
-        this.f54637e = (v4) hf.q.l(o12);
-        this.f54638i = (v4) hf.q.l(o13);
-        this.f54639o = (v4) hf.q.l(o14);
-        this.f54640p = o10;
+        this.f54637d = (v4) hf.q.l(o11);
+        this.f54638e = (v4) hf.q.l(o12);
+        this.f54639i = (v4) hf.q.l(o13);
+        this.f54640o = (v4) hf.q.l(o14);
+        this.f54641p = o10;
     }
 
     public byte[] b() {
-        return this.f54638i.p();
+        return this.f54639i.p();
     }
 
     public byte[] c() {
-        return this.f54637e.p();
+        return this.f54638e.p();
     }
 
     public byte[] d() {
-        return this.f54636d.p();
+        return this.f54637d.p();
     }
 
     public byte[] e() {
-        return this.f54639o.p();
+        return this.f54640o.p();
     }
 
     public boolean equals(Object obj) {
@@ -72,14 +72,14 @@ public class f extends i {
             return false;
         }
         f fVar = (f) obj;
-        if (!hf.o.a(this.f54636d, fVar.f54636d) || !hf.o.a(this.f54637e, fVar.f54637e) || !hf.o.a(this.f54638i, fVar.f54638i) || !hf.o.a(this.f54639o, fVar.f54639o) || !hf.o.a(this.f54640p, fVar.f54640p)) {
+        if (!hf.o.a(this.f54637d, fVar.f54637d) || !hf.o.a(this.f54638e, fVar.f54638e) || !hf.o.a(this.f54639i, fVar.f54639i) || !hf.o.a(this.f54640o, fVar.f54640o) || !hf.o.a(this.f54641p, fVar.f54641p)) {
             return false;
         }
         return true;
     }
 
     public byte[] f() {
-        v4 v4Var = this.f54640p;
+        v4 v4Var = this.f54641p;
         if (v4Var == null) {
             return null;
         }
@@ -92,7 +92,7 @@ public class f extends i {
             jSONObject.put("clientDataJSON", com.google.android.gms.common.util.c.b(c()));
             jSONObject.put("authenticatorData", com.google.android.gms.common.util.c.b(b()));
             jSONObject.put("signature", com.google.android.gms.common.util.c.b(e()));
-            if (this.f54640p != null) {
+            if (this.f54641p != null) {
                 jSONObject.put("userHandle", com.google.android.gms.common.util.c.b(f()));
                 return jSONObject;
             }
@@ -103,7 +103,7 @@ public class f extends i {
     }
 
     public int hashCode() {
-        return hf.o.b(Integer.valueOf(hf.o.b(this.f54636d)), Integer.valueOf(hf.o.b(this.f54637e)), Integer.valueOf(hf.o.b(this.f54638i)), Integer.valueOf(hf.o.b(this.f54639o)), Integer.valueOf(hf.o.b(this.f54640p)));
+        return hf.o.b(Integer.valueOf(hf.o.b(this.f54637d)), Integer.valueOf(hf.o.b(this.f54638e)), Integer.valueOf(hf.o.b(this.f54639i)), Integer.valueOf(hf.o.b(this.f54640o)), Integer.valueOf(hf.o.b(this.f54641p)));
     }
 
     public String toString() {

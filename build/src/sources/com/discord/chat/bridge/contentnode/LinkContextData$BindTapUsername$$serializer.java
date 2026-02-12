@@ -44,7 +44,7 @@ public /* synthetic */ class LinkContextData$BindTapUsername$$serializer impleme
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{n2.f50032a, rt.a.u(tt.h.f49996a), UserId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE};
+        return new KSerializer[]{n2.f50033a, rt.a.u(tt.h.f49997a), UserId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -63,7 +63,7 @@ public /* synthetic */ class LinkContextData$BindTapUsername$$serializer impleme
             str = b10.m(serialDescriptor, 0);
             channelId = (ChannelId) b10.y(serialDescriptor, 3, ChannelId$$serializer.INSTANCE, null);
             userId = (UserId) b10.y(serialDescriptor, 2, UserId$$serializer.INSTANCE, null);
-            bool = (Boolean) b10.n(serialDescriptor, 1, tt.h.f49996a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 1, tt.h.f49997a, null);
             i10 = 15;
         } else {
             boolean z10 = true;
@@ -79,7 +79,7 @@ public /* synthetic */ class LinkContextData$BindTapUsername$$serializer impleme
                     str2 = b10.m(serialDescriptor, 0);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    bool2 = (Boolean) b10.n(serialDescriptor, 1, tt.h.f49996a, bool2);
+                    bool2 = (Boolean) b10.n(serialDescriptor, 1, tt.h.f49997a, bool2);
                     i11 |= 2;
                 } else if (o10 == 2) {
                     userId2 = (UserId) b10.y(serialDescriptor, 2, UserId$$serializer.INSTANCE, userId2);

@@ -10,37 +10,37 @@ public abstract class g {
     public static final class a extends g {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f24027a;
+        private final String f24028a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f24028b;
+        private final String f24029b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Date f24029c;
+        private final Date f24030c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final Date f24030d;
+        private final Date f24031d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public a(String extractionRawPayload, String str, Date date, Date date2) {
             super(null);
             Intrinsics.checkNotNullParameter(extractionRawPayload, "extractionRawPayload");
-            this.f24027a = extractionRawPayload;
-            this.f24028b = str;
-            this.f24029c = date;
-            this.f24030d = date2;
+            this.f24028a = extractionRawPayload;
+            this.f24029b = str;
+            this.f24030c = date;
+            this.f24031d = date2;
         }
 
         public final Date a() {
-            return this.f24029c;
+            return this.f24030c;
         }
 
         public final Date b() {
-            return this.f24030d;
+            return this.f24031d;
         }
 
         public String c() {
-            return this.f24027a;
+            return this.f24028a;
         }
 
         public boolean equals(Object obj) {
@@ -51,7 +51,7 @@ public abstract class g {
                 return false;
             }
             a aVar = (a) obj;
-            if (Intrinsics.areEqual(this.f24027a, aVar.f24027a) && Intrinsics.areEqual(this.f24028b, aVar.f24028b) && Intrinsics.areEqual(this.f24029c, aVar.f24029c) && Intrinsics.areEqual(this.f24030d, aVar.f24030d)) {
+            if (Intrinsics.areEqual(this.f24028a, aVar.f24028a) && Intrinsics.areEqual(this.f24029b, aVar.f24029b) && Intrinsics.areEqual(this.f24030c, aVar.f24030c) && Intrinsics.areEqual(this.f24031d, aVar.f24031d)) {
                 return true;
             }
             return false;
@@ -60,8 +60,8 @@ public abstract class g {
         public int hashCode() {
             int hashCode;
             int hashCode2;
-            int hashCode3 = this.f24027a.hashCode() * 31;
-            String str = this.f24028b;
+            int hashCode3 = this.f24028a.hashCode() * 31;
+            String str = this.f24029b;
             int i10 = 0;
             if (str == null) {
                 hashCode = 0;
@@ -69,14 +69,14 @@ public abstract class g {
                 hashCode = str.hashCode();
             }
             int i11 = (hashCode3 + hashCode) * 31;
-            Date date = this.f24029c;
+            Date date = this.f24030c;
             if (date == null) {
                 hashCode2 = 0;
             } else {
                 hashCode2 = date.hashCode();
             }
             int i12 = (i11 + hashCode2) * 31;
-            Date date2 = this.f24030d;
+            Date date2 = this.f24031d;
             if (date2 != null) {
                 i10 = date2.hashCode();
             }
@@ -84,10 +84,10 @@ public abstract class g {
         }
 
         public String toString() {
-            String str = this.f24027a;
-            String str2 = this.f24028b;
-            Date date = this.f24029c;
-            Date date2 = this.f24030d;
+            String str = this.f24028a;
+            String str2 = this.f24029b;
+            Date date = this.f24030c;
+            Date date2 = this.f24031d;
             return "MrzBarcodeInfo(extractionRawPayload=" + str + ", identificationNumber=" + str2 + ", birthdate=" + date + ", expirationDate=" + date2 + ")";
         }
     }
@@ -96,39 +96,39 @@ public abstract class g {
     public static final class b extends g {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f24031a;
+        private final String f24032a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public b(String extractionRawPayload) {
             super(null);
             Intrinsics.checkNotNullParameter(extractionRawPayload, "extractionRawPayload");
-            this.f24031a = extractionRawPayload;
+            this.f24032a = extractionRawPayload;
         }
 
         public String a() {
-            return this.f24031a;
+            return this.f24032a;
         }
 
         public final fo.a b() {
-            return fo.a.f23935o.d(a());
+            return fo.a.f23936o.d(a());
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof b) && Intrinsics.areEqual(this.f24031a, ((b) obj).f24031a)) {
+            if ((obj instanceof b) && Intrinsics.areEqual(this.f24032a, ((b) obj).f24032a)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return this.f24031a.hashCode();
+            return this.f24032a.hashCode();
         }
 
         public String toString() {
-            String str = this.f24031a;
+            String str = this.f24032a;
             return "Pdf417BarcodeInfo(extractionRawPayload=" + str + ")";
         }
     }

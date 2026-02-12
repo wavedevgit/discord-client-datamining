@@ -6,22 +6,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f41213a;
+    private final int f41214a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function0 f41214b;
+    private final Function0 f41215b;
 
     public i(int i10, Function0 message) {
         Intrinsics.checkNotNullParameter(message, "message");
-        this.f41213a = i10;
-        this.f41214b = message;
+        this.f41214a = i10;
+        this.f41215b = message;
     }
 
     public final Function0 a() {
-        return this.f41214b;
+        return this.f41215b;
     }
 
     public final int b() {
-        return this.f41213a;
+        return this.f41214a;
     }
 }

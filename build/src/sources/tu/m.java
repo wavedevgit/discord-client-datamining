@@ -7,13 +7,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class m {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f50291c = new a(null);
+    public static final a f50292c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private int f50292a;
+    private int f50293a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int[] f50293b = new int[10];
+    private final int[] f50294b = new int[10];
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -26,39 +26,39 @@ public final class m {
     }
 
     public final int a(int i10) {
-        return this.f50293b[i10];
+        return this.f50294b[i10];
     }
 
     public final int b() {
-        if ((this.f50292a & 2) != 0) {
-            return this.f50293b[1];
+        if ((this.f50293a & 2) != 0) {
+            return this.f50294b[1];
         }
         return -1;
     }
 
     public final int c() {
-        if ((this.f50292a & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-            return this.f50293b[7];
+        if ((this.f50293a & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
+            return this.f50294b[7];
         }
         return 65535;
     }
 
     public final int d() {
-        if ((this.f50292a & 16) != 0) {
-            return this.f50293b[4];
+        if ((this.f50293a & 16) != 0) {
+            return this.f50294b[4];
         }
         return Integer.MAX_VALUE;
     }
 
     public final int e(int i10) {
-        if ((this.f50292a & 32) != 0) {
-            return this.f50293b[5];
+        if ((this.f50293a & 32) != 0) {
+            return this.f50294b[5];
         }
         return i10;
     }
 
     public final boolean f(int i10) {
-        if (((1 << i10) & this.f50292a) != 0) {
+        if (((1 << i10) & this.f50293a) != 0) {
             return true;
         }
         return false;
@@ -75,9 +75,9 @@ public final class m {
 
     public final m h(int i10, int i11) {
         if (i10 >= 0) {
-            int[] iArr = this.f50293b;
+            int[] iArr = this.f50294b;
             if (i10 < iArr.length) {
-                this.f50292a = (1 << i10) | this.f50292a;
+                this.f50293a = (1 << i10) | this.f50293a;
                 iArr[i10] = i11;
             }
         }
@@ -85,6 +85,6 @@ public final class m {
     }
 
     public final int i() {
-        return Integer.bitCount(this.f50292a);
+        return Integer.bitCount(this.f50293a);
     }
 }

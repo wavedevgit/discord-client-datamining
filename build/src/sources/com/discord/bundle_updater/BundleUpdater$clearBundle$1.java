@@ -46,11 +46,11 @@ public final class BundleUpdater$clearBundle$1 extends kotlin.coroutines.jvm.int
             }
         }
         ProcessPhoenix.b(this.$context);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((BundleUpdater$clearBundle$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+        return ((BundleUpdater$clearBundle$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

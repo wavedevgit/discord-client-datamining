@@ -25,7 +25,7 @@ public final class InviteRole implements ItemDiffableType {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9259id;
+    private final String f9260id;
     @NotNull
     private final String name;
     private final RoleIcon roleIcon;
@@ -50,7 +50,7 @@ public final class InviteRole implements ItemDiffableType {
         if (7 != (i10 & 7)) {
             v1.b(i10, 7, InviteRole$$serializer.INSTANCE.getDescriptor());
         }
-        this.f9259id = str;
+        this.f9260id = str;
         this.name = str2;
         this.color = i11;
         if ((i10 & 8) == 0) {
@@ -62,7 +62,7 @@ public final class InviteRole implements ItemDiffableType {
 
     public static /* synthetic */ InviteRole copy$default(InviteRole inviteRole, String str, String str2, int i10, RoleIcon roleIcon, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            str = inviteRole.f9259id;
+            str = inviteRole.f9260id;
         }
         if ((i11 & 2) != 0) {
             str2 = inviteRole.name;
@@ -77,7 +77,7 @@ public final class InviteRole implements ItemDiffableType {
     }
 
     public static final /* synthetic */ void write$Self$chat_release(InviteRole inviteRole, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        compositeEncoder.y(serialDescriptor, 0, inviteRole.f9259id);
+        compositeEncoder.y(serialDescriptor, 0, inviteRole.f9260id);
         compositeEncoder.y(serialDescriptor, 1, inviteRole.name);
         compositeEncoder.w(serialDescriptor, 2, inviteRole.color);
         if (compositeEncoder.z(serialDescriptor, 3) || inviteRole.roleIcon != null) {
@@ -87,7 +87,7 @@ public final class InviteRole implements ItemDiffableType {
 
     @NotNull
     public final String component1() {
-        return this.f9259id;
+        return this.f9260id;
     }
 
     @NotNull
@@ -116,7 +116,7 @@ public final class InviteRole implements ItemDiffableType {
         }
         if (obj instanceof InviteRole) {
             InviteRole inviteRole = (InviteRole) obj;
-            return Intrinsics.areEqual(this.f9259id, inviteRole.f9259id) && Intrinsics.areEqual(this.name, inviteRole.name) && this.color == inviteRole.color && Intrinsics.areEqual(this.roleIcon, inviteRole.roleIcon);
+            return Intrinsics.areEqual(this.f9260id, inviteRole.f9260id) && Intrinsics.areEqual(this.name, inviteRole.name) && this.color == inviteRole.color && Intrinsics.areEqual(this.roleIcon, inviteRole.roleIcon);
         }
         return false;
     }
@@ -127,13 +127,13 @@ public final class InviteRole implements ItemDiffableType {
 
     @NotNull
     public final String getId() {
-        return this.f9259id;
+        return this.f9260id;
     }
 
     @Override // com.discord.recycler_view.utils.ItemDiffableType
     @NotNull
     public Object getItemId() {
-        return this.f9259id;
+        return this.f9260id;
     }
 
     @NotNull
@@ -146,14 +146,14 @@ public final class InviteRole implements ItemDiffableType {
     }
 
     public int hashCode() {
-        int hashCode = ((((this.f9259id.hashCode() * 31) + this.name.hashCode()) * 31) + Integer.hashCode(this.color)) * 31;
+        int hashCode = ((((this.f9260id.hashCode() * 31) + this.name.hashCode()) * 31) + Integer.hashCode(this.color)) * 31;
         RoleIcon roleIcon = this.roleIcon;
         return hashCode + (roleIcon == null ? 0 : roleIcon.hashCode());
     }
 
     @NotNull
     public String toString() {
-        String str = this.f9259id;
+        String str = this.f9260id;
         String str2 = this.name;
         int i10 = this.color;
         RoleIcon roleIcon = this.roleIcon;
@@ -163,7 +163,7 @@ public final class InviteRole implements ItemDiffableType {
     public InviteRole(@NotNull String id2, @NotNull String name, int i10, RoleIcon roleIcon) {
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f9259id = id2;
+        this.f9260id = id2;
         this.name = name;
         this.color = i10;
         this.roleIcon = roleIcon;

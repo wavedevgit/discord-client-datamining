@@ -9,25 +9,25 @@ import java.util.Map;
 final class g extends ai.l0 {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ List f16641e;
+    final /* synthetic */ List f16642e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ Map f16642i;
+    final /* synthetic */ Map f16643i;
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ zg.k f16643o;
+    final /* synthetic */ zg.k f16644o;
 
     /* renamed from: p  reason: collision with root package name */
-    final /* synthetic */ x f16644p;
+    final /* synthetic */ x f16645p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public g(x xVar, zg.k kVar, List list, Map map, zg.k kVar2) {
         super(kVar);
-        this.f16641e = list;
-        this.f16642i = map;
-        this.f16643o = kVar2;
-        this.f16644p = xVar;
+        this.f16642e = list;
+        this.f16643i = map;
+        this.f16644o = kVar2;
+        this.f16645p = xVar;
     }
 
     @Override // ai.l0
@@ -37,21 +37,21 @@ final class g extends ai.l0 {
         String str;
         b2 b2Var;
         o3 o3Var;
-        ArrayList w10 = x.w(this.f16641e);
+        ArrayList w10 = x.w(this.f16642e);
         try {
-            v0Var = this.f16644p.f16955d;
-            str = this.f16644p.f16952a;
-            Bundle o10 = x.o(this.f16642i);
-            x xVar = this.f16644p;
-            zg.k kVar = this.f16643o;
-            b2Var = xVar.f16953b;
-            o3Var = xVar.f16954c;
+            v0Var = this.f16645p.f16956d;
+            str = this.f16645p.f16953a;
+            Bundle o10 = x.o(this.f16643i);
+            x xVar = this.f16645p;
+            zg.k kVar = this.f16644o;
+            b2Var = xVar.f16954b;
+            o3Var = xVar.f16955c;
             ((ai.b0) v0Var.e()).z(str, w10, o10, new w(xVar, kVar, b2Var, o3Var));
         } catch (RemoteException e10) {
-            List list = this.f16641e;
-            k0Var = x.f16950g;
+            List list = this.f16642e;
+            k0Var = x.f16951g;
             k0Var.c(e10, "startDownload(%s)", list);
-            this.f16643o.d(new RuntimeException(e10));
+            this.f16644o.d(new RuntimeException(e10));
         }
     }
 }

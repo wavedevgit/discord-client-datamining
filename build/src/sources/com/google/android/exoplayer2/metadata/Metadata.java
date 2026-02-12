@@ -13,10 +13,10 @@ public final class Metadata implements Parcelable {
     public static final Parcelable.Creator<Metadata> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final b[] f13338d;
+    private final b[] f13339d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final long f13339e;
+    public final long f13340e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -58,25 +58,25 @@ public final class Metadata implements Parcelable {
         if (bVarArr.length == 0) {
             return this;
         }
-        return new Metadata(this.f13339e, (b[]) w0.O0(this.f13338d, bVarArr));
+        return new Metadata(this.f13340e, (b[]) w0.O0(this.f13339d, bVarArr));
     }
 
     public Metadata b(Metadata metadata) {
         if (metadata == null) {
             return this;
         }
-        return a(metadata.f13338d);
+        return a(metadata.f13339d);
     }
 
     public Metadata c(long j10) {
-        if (this.f13339e == j10) {
+        if (this.f13340e == j10) {
             return this;
         }
-        return new Metadata(j10, this.f13338d);
+        return new Metadata(j10, this.f13339d);
     }
 
     public b d(int i10) {
-        return this.f13338d[i10];
+        return this.f13339d[i10];
     }
 
     @Override // android.os.Parcelable
@@ -85,7 +85,7 @@ public final class Metadata implements Parcelable {
     }
 
     public int e() {
-        return this.f13338d.length;
+        return this.f13339d.length;
     }
 
     public boolean equals(Object obj) {
@@ -94,7 +94,7 @@ public final class Metadata implements Parcelable {
         }
         if (obj != null && Metadata.class == obj.getClass()) {
             Metadata metadata = (Metadata) obj;
-            if (Arrays.equals(this.f13338d, metadata.f13338d) && this.f13339e == metadata.f13339e) {
+            if (Arrays.equals(this.f13339d, metadata.f13339d) && this.f13340e == metadata.f13340e) {
                 return true;
             }
         }
@@ -102,18 +102,18 @@ public final class Metadata implements Parcelable {
     }
 
     public int hashCode() {
-        return (Arrays.hashCode(this.f13338d) * 31) + g.b(this.f13339e);
+        return (Arrays.hashCode(this.f13339d) * 31) + g.b(this.f13340e);
     }
 
     public String toString() {
         String str;
         StringBuilder sb2 = new StringBuilder();
         sb2.append("entries=");
-        sb2.append(Arrays.toString(this.f13338d));
-        if (this.f13339e == -9223372036854775807L) {
+        sb2.append(Arrays.toString(this.f13339d));
+        if (this.f13340e == -9223372036854775807L) {
             str = "";
         } else {
-            str = ", presentationTimeUs=" + this.f13339e;
+            str = ", presentationTimeUs=" + this.f13340e;
         }
         sb2.append(str);
         return sb2.toString();
@@ -121,16 +121,16 @@ public final class Metadata implements Parcelable {
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeInt(this.f13338d.length);
-        for (b bVar : this.f13338d) {
+        parcel.writeInt(this.f13339d.length);
+        for (b bVar : this.f13339d) {
             parcel.writeParcelable(bVar, 0);
         }
-        parcel.writeLong(this.f13339e);
+        parcel.writeLong(this.f13340e);
     }
 
     public Metadata(long j10, b... bVarArr) {
-        this.f13339e = j10;
-        this.f13338d = bVarArr;
+        this.f13340e = j10;
+        this.f13339d = bVarArr;
     }
 
     public Metadata(List list) {
@@ -142,15 +142,15 @@ public final class Metadata implements Parcelable {
     }
 
     Metadata(Parcel parcel) {
-        this.f13338d = new b[parcel.readInt()];
+        this.f13339d = new b[parcel.readInt()];
         int i10 = 0;
         while (true) {
-            b[] bVarArr = this.f13338d;
+            b[] bVarArr = this.f13339d;
             if (i10 < bVarArr.length) {
                 bVarArr[i10] = (b) parcel.readParcelable(b.class.getClassLoader());
                 i10++;
             } else {
-                this.f13339e = parcel.readLong();
+                this.f13340e = parcel.readLong();
                 return;
             }
         }

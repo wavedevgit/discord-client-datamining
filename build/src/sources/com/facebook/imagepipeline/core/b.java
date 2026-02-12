@@ -26,61 +26,61 @@ import ra.c;
 public class b {
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Class f11207p = b.class;
+    private static final Class f11208p = b.class;
 
     /* renamed from: q  reason: collision with root package name */
-    private static b f11208q;
+    private static b f11209q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static ImagePipeline f11209r;
+    private static ImagePipeline f11210r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static boolean f11210s;
+    private static boolean f11211s;
 
     /* renamed from: a  reason: collision with root package name */
-    private final h1 f11211a;
+    private final h1 f11212a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r f11212b;
+    private final r f11213b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final oa.a f11213c;
+    private final oa.a f11214c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Supplier f11214d;
+    private final Supplier f11215d;
 
     /* renamed from: e  reason: collision with root package name */
-    private n f11215e;
+    private n f11216e;
 
     /* renamed from: f  reason: collision with root package name */
-    private t f11216f;
+    private t f11217f;
 
     /* renamed from: g  reason: collision with root package name */
-    private n f11217g;
+    private n f11218g;
 
     /* renamed from: h  reason: collision with root package name */
-    private t f11218h;
+    private t f11219h;
 
     /* renamed from: i  reason: collision with root package name */
-    private c f11219i;
+    private c f11220i;
 
     /* renamed from: j  reason: collision with root package name */
-    private d f11220j;
+    private d f11221j;
 
     /* renamed from: k  reason: collision with root package name */
-    private x f11221k;
+    private x f11222k;
 
     /* renamed from: l  reason: collision with root package name */
-    private q0 f11222l;
+    private q0 f11223l;
 
     /* renamed from: m  reason: collision with root package name */
-    private PlatformBitmapFactory f11223m;
+    private PlatformBitmapFactory f11224m;
 
     /* renamed from: n  reason: collision with root package name */
-    private xa.d f11224n;
+    private xa.d f11225n;
 
     /* renamed from: o  reason: collision with root package name */
-    private ia.a f11225o;
+    private ia.a f11226o;
 
     public b(r rVar) {
         h1 i1Var;
@@ -88,18 +88,18 @@ public class b {
             za.b.a("ImagePipelineConfig()");
         }
         r rVar2 = (r) j.g(rVar);
-        this.f11212b = rVar2;
+        this.f11213b = rVar2;
         if (rVar2.G().G()) {
             i1Var = new a0(rVar.H().a());
         } else {
             i1Var = new i1(rVar.H().a());
         }
-        this.f11211a = i1Var;
-        this.f11213c = new oa.a(rVar.w());
+        this.f11212a = i1Var;
+        this.f11214c = new oa.a(rVar.w());
         if (za.b.d()) {
             za.b.b();
         }
-        this.f11214d = rVar2.v();
+        this.f11215d = rVar2.v();
         if (rVar2.G().A()) {
             e.e().g(true);
         }
@@ -107,33 +107,33 @@ public class b {
 
     private ImagePipeline a() {
         q0 p10 = p();
-        Set e10 = this.f11212b.e();
-        Set a10 = this.f11212b.a();
-        Supplier C = this.f11212b.C();
+        Set e10 = this.f11213b.e();
+        Set a10 = this.f11213b.a();
+        Supplier C = this.f11213b.C();
         t e11 = e();
         t h10 = h();
-        Supplier supplier = this.f11214d;
-        k y10 = this.f11212b.y();
-        h1 h1Var = this.f11211a;
-        Supplier t10 = this.f11212b.G().t();
-        Supplier I = this.f11212b.G().I();
-        this.f11212b.F();
-        return new ImagePipeline(p10, e10, a10, C, e11, h10, supplier, y10, h1Var, t10, I, null, this.f11212b);
+        Supplier supplier = this.f11215d;
+        k y10 = this.f11213b.y();
+        h1 h1Var = this.f11212a;
+        Supplier t10 = this.f11213b.G().t();
+        Supplier I = this.f11213b.G().I();
+        this.f11213b.F();
+        return new ImagePipeline(p10, e10, a10, C, e11, h10, supplier, y10, h1Var, t10, I, null, this.f11213b);
     }
 
     private ia.a c() {
-        if (this.f11225o == null) {
-            this.f11225o = ia.b.a(m(), this.f11212b.H(), d(), this.f11212b.G().j(), this.f11212b.G().v(), this.f11212b.G().c(), this.f11212b.G().d(), this.f11212b.l());
+        if (this.f11226o == null) {
+            this.f11226o = ia.b.a(m(), this.f11213b.H(), d(), this.f11213b.G().j(), this.f11213b.G().v(), this.f11213b.G().c(), this.f11213b.G().d(), this.f11213b.l());
         }
-        return this.f11225o;
+        return this.f11226o;
     }
 
     private c i() {
         c cVar;
         c cVar2;
-        if (this.f11219i == null) {
-            if (this.f11212b.r() != null) {
-                this.f11219i = this.f11212b.r();
+        if (this.f11220i == null) {
+            if (this.f11213b.r() != null) {
+                this.f11220i = this.f11213b.r();
             } else {
                 ia.a c10 = c();
                 if (c10 != null) {
@@ -144,41 +144,41 @@ public class b {
                     cVar2 = null;
                 }
                 c r10 = r();
-                this.f11212b.o();
-                this.f11219i = new ra.b(cVar, cVar2, r10, n());
+                this.f11213b.o();
+                this.f11220i = new ra.b(cVar, cVar2, r10, n());
             }
         }
-        return this.f11219i;
+        return this.f11220i;
     }
 
     private d k() {
-        if (this.f11220j == null) {
-            if (this.f11212b.n() == null && this.f11212b.m() == null && this.f11212b.G().J()) {
-                this.f11220j = new h(this.f11212b.G().m());
+        if (this.f11221j == null) {
+            if (this.f11213b.n() == null && this.f11213b.m() == null && this.f11213b.G().J()) {
+                this.f11221j = new h(this.f11213b.G().m());
             } else {
-                this.f11220j = new f(this.f11212b.G().m(), this.f11212b.G().x(), this.f11212b.n(), this.f11212b.m(), this.f11212b.G().F());
+                this.f11221j = new f(this.f11213b.G().m(), this.f11213b.G().x(), this.f11213b.n(), this.f11213b.m(), this.f11213b.G().F());
             }
         }
-        return this.f11220j;
+        return this.f11221j;
     }
 
     public static b l() {
-        return (b) j.h(f11208q, "ImagePipelineFactory was not initialized!");
+        return (b) j.h(f11209q, "ImagePipelineFactory was not initialized!");
     }
 
     private x o() {
-        if (this.f11221k == null) {
-            this.f11221k = this.f11212b.G().p().a(this.f11212b.getContext(), this.f11212b.t().k(), i(), this.f11212b.h(), this.f11212b.E(), this.f11212b.z(), this.f11212b.G().B(), this.f11212b.H(), this.f11212b.t().i(this.f11212b.u()), this.f11212b.t().j(), e(), h(), this.f11214d, this.f11212b.y(), m(), this.f11212b.G().g(), this.f11212b.G().f(), this.f11212b.G().e(), this.f11212b.G().m(), f(), this.f11212b.G().l(), this.f11212b.G().u());
+        if (this.f11222k == null) {
+            this.f11222k = this.f11213b.G().p().a(this.f11213b.getContext(), this.f11213b.t().k(), i(), this.f11213b.h(), this.f11213b.E(), this.f11213b.z(), this.f11213b.G().B(), this.f11213b.H(), this.f11213b.t().i(this.f11213b.u()), this.f11213b.t().j(), e(), h(), this.f11215d, this.f11213b.y(), m(), this.f11213b.G().g(), this.f11213b.G().f(), this.f11213b.G().e(), this.f11213b.G().m(), f(), this.f11213b.G().l(), this.f11213b.G().u());
         }
-        return this.f11221k;
+        return this.f11222k;
     }
 
     private q0 p() {
-        boolean w10 = this.f11212b.G().w();
-        if (this.f11222l == null) {
-            this.f11222l = new q0(this.f11212b.getContext().getApplicationContext().getContentResolver(), o(), this.f11212b.b(), this.f11212b.z(), this.f11212b.G().L(), this.f11211a, this.f11212b.E(), w10, this.f11212b.G().K(), this.f11212b.p(), k(), this.f11212b.G().E(), this.f11212b.G().C(), this.f11212b.G().a(), this.f11212b.A());
+        boolean w10 = this.f11213b.G().w();
+        if (this.f11223l == null) {
+            this.f11223l = new q0(this.f11213b.getContext().getApplicationContext().getContentResolver(), o(), this.f11213b.b(), this.f11213b.z(), this.f11213b.G().L(), this.f11212a, this.f11213b.E(), w10, this.f11213b.G().K(), this.f11213b.p(), k(), this.f11213b.G().E(), this.f11213b.G().C(), this.f11213b.G().a(), this.f11213b.A());
         }
-        return this.f11222l;
+        return this.f11223l;
     }
 
     public static synchronized void s(Context context) {
@@ -199,13 +199,13 @@ public class b {
 
     public static synchronized void t(r rVar) {
         synchronized (b.class) {
-            if (f11208q != null) {
-                q8.a.F(f11207p, "ImagePipelineFactory has already been initialized! `ImagePipelineFactory.initialize(...)` should only be called once to avoid unexpected behavior.");
-                if (f11210s) {
+            if (f11209q != null) {
+                q8.a.F(f11208p, "ImagePipelineFactory has already been initialized! `ImagePipelineFactory.initialize(...)` should only be called once to avoid unexpected behavior.");
+                if (f11211s) {
                     return;
                 }
             }
-            f11208q = new b(rVar);
+            f11209q = new b(rVar);
         }
     }
 
@@ -218,74 +218,74 @@ public class b {
     }
 
     public n d() {
-        if (this.f11215e == null) {
-            this.f11215e = this.f11212b.x().a(this.f11212b.q(), this.f11212b.D(), this.f11212b.g(), this.f11212b.G().r(), this.f11212b.G().q(), this.f11212b.k());
+        if (this.f11216e == null) {
+            this.f11216e = this.f11213b.x().a(this.f11213b.q(), this.f11213b.D(), this.f11213b.g(), this.f11213b.G().r(), this.f11213b.G().q(), this.f11213b.k());
         }
-        return this.f11215e;
+        return this.f11216e;
     }
 
     public t e() {
-        if (this.f11216f == null) {
-            this.f11216f = u.a(d(), this.f11212b.B());
+        if (this.f11217f == null) {
+            this.f11217f = u.a(d(), this.f11213b.B());
         }
-        return this.f11216f;
+        return this.f11217f;
     }
 
     public oa.a f() {
-        return this.f11213c;
+        return this.f11214c;
     }
 
     public n g() {
-        if (this.f11217g == null) {
-            this.f11217g = q.a(this.f11212b.s(), this.f11212b.D(), this.f11212b.f());
+        if (this.f11218g == null) {
+            this.f11218g = q.a(this.f11213b.s(), this.f11213b.D(), this.f11213b.f());
         }
-        return this.f11217g;
+        return this.f11218g;
     }
 
     public t h() {
         w g10;
-        if (this.f11218h == null) {
-            if (this.f11212b.c() != null) {
-                g10 = this.f11212b.c();
+        if (this.f11219h == null) {
+            if (this.f11213b.c() != null) {
+                g10 = this.f11213b.c();
             } else {
                 g10 = g();
             }
-            this.f11218h = ma.r.a(g10, this.f11212b.B());
+            this.f11219h = ma.r.a(g10, this.f11213b.B());
         }
-        return this.f11218h;
+        return this.f11219h;
     }
 
     public ImagePipeline j() {
-        if (f11209r == null) {
-            f11209r = a();
+        if (f11210r == null) {
+            f11210r = a();
         }
-        return f11209r;
+        return f11210r;
     }
 
     public PlatformBitmapFactory m() {
-        if (this.f11223m == null) {
-            this.f11223m = la.d.a(this.f11212b.t(), n(), f());
+        if (this.f11224m == null) {
+            this.f11224m = la.d.a(this.f11213b.t(), n(), f());
         }
-        return this.f11223m;
+        return this.f11224m;
     }
 
     public xa.d n() {
-        if (this.f11224n == null) {
-            this.f11224n = xa.e.a(this.f11212b.t(), this.f11212b.G().H(), this.f11212b.G().s(), this.f11212b.G().o());
+        if (this.f11225n == null) {
+            this.f11225n = xa.e.a(this.f11213b.t(), this.f11213b.G().H(), this.f11213b.G().s(), this.f11213b.G().o());
         }
-        return this.f11224n;
+        return this.f11225n;
     }
 
     public sa.a q() {
-        if (this.f11212b.G().A()) {
+        if (this.f11213b.G().A()) {
             return new cb.a();
         }
         return null;
     }
 
     public c r() {
-        if (this.f11212b.G().A()) {
-            return new cb.b(this.f11212b.getContext().getApplicationContext().getResources());
+        if (this.f11213b.G().A()) {
+            return new cb.b(this.f11213b.getContext().getApplicationContext().getResources());
         }
         return null;
     }

@@ -7,36 +7,36 @@ import java.util.Objects;
 public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f47786a;
+    private final c f47787a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static class a implements c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final InputConfiguration f47787a;
+        private final InputConfiguration f47788a;
 
         a(Object obj) {
-            this.f47787a = (InputConfiguration) obj;
+            this.f47788a = (InputConfiguration) obj;
         }
 
         @Override // s.i.c
         public Object b() {
-            return this.f47787a;
+            return this.f47788a;
         }
 
         public boolean equals(Object obj) {
             if (!(obj instanceof c)) {
                 return false;
             }
-            return Objects.equals(this.f47787a, ((c) obj).b());
+            return Objects.equals(this.f47788a, ((c) obj).b());
         }
 
         public int hashCode() {
-            return this.f47787a.hashCode();
+            return this.f47788a.hashCode();
         }
 
         public String toString() {
-            return this.f47787a.toString();
+            return this.f47788a.toString();
         }
     }
 
@@ -53,7 +53,7 @@ public final class i {
     }
 
     private i(c cVar) {
-        this.f47786a = cVar;
+        this.f47787a = cVar;
     }
 
     public static i b(Object obj) {
@@ -67,21 +67,21 @@ public final class i {
     }
 
     public Object a() {
-        return this.f47786a.b();
+        return this.f47787a.b();
     }
 
     public boolean equals(Object obj) {
         if (!(obj instanceof i)) {
             return false;
         }
-        return this.f47786a.equals(((i) obj).f47786a);
+        return this.f47787a.equals(((i) obj).f47787a);
     }
 
     public int hashCode() {
-        return this.f47786a.hashCode();
+        return this.f47787a.hashCode();
     }
 
     public String toString() {
-        return this.f47786a.toString();
+        return this.f47787a.toString();
     }
 }

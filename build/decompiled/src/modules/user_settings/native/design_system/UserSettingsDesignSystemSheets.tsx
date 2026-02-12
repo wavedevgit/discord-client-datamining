@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function() {
-        _fun88941: for (var _fun88941_ip = 0;;) switch (_fun88941_ip) {
+        _fun87280: for (var _fun87280_ip = 0;;) switch (_fun87280_ip) {
             case 0:
                 var1 = _closure1_slot4;
                 var0 = var1.useState;
@@ -59,13 +59,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot7;
                 var5 = _closure1_slot0;
                 var7 = _closure1_slot2;
-                var0 = 6;
+                var0 = 7;
                 var0 = var7[var0];
                 var0 = var5.bind(var3)(var0);
                 var1 = var0.ActionSheet;
                 var0 = {};
                 var6 = _closure1_slot7;
-                var4 = 7;
+                var4 = 8;
                 var4 = var7[var4];
                 var4 = var5.bind(var3)(var4);
                 var5 = var4.BottomSheetTitleHeader;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = '';
                 var7 = undefined;
                 if (!(var8 !== var23)) {
-                    _fun88941_ip = 274;
-                    continue _fun88941
+                    _fun87280_ip = 274;
+                    continue _fun87280
                 }
             case 271:
                 var7 = var23;
@@ -83,14 +83,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.subtitle = var7;
                 var7 = var13;
                 if (!var7) {
-                    _fun88941_ip = 335;
-                    continue _fun88941
+                    _fun87280_ip = 335;
+                    continue _fun87280
                 }
             case 285:
                 var16 = _closure1_slot7;
                 var9 = _closure1_slot0;
                 var17 = _closure1_slot2;
-                var8 = 8;
+                var8 = 9;
                 var8 = var17[var8];
                 var8 = var9.bind(var3)(var8);
                 var9 = var8.ActionSheetHeaderPressableText;
@@ -103,22 +103,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.trailing = var7;
                 var7 = var26;
                 if (!var7) {
-                    _fun88941_ip = 392;
-                    continue _fun88941
+                    _fun87280_ip = 350;
+                    continue _fun87280
                 }
             case 346:
-                var16 = _closure1_slot7;
-                var9 = _closure1_slot0;
-                var17 = _closure1_slot2;
-                var8 = 9;
-                var8 = var17[var8];
-                var8 = var9.bind(var3)(var8);
-                var9 = var8.ActionSheetCloseButton;
-                var8 = {};
-                var17 = _closure1_slot6;
-                var8.onPress = var17;
-                var7 = var16.bind(var3)(var9, var8);
-            case 392:
+                var7 = _closure1_slot10;
+            case 350:
                 var4.leading = var7;
                 var4 = var6.bind(var3)(var5, var4);
                 var0.header = var4;
@@ -240,12 +230,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var _closure1_slot11 = var0;
+    var _closure1_slot15 = var0;
     var0 = function() {
         var3 = _closure1_slot7;
         var10 = _closure1_slot0;
         var11 = _closure1_slot2;
-        var0 = 14;
+        var0 = 15;
         var0 = var11[var0];
         var2 = undefined;
         var0 = var10.bind(var2)(var0);
@@ -255,13 +245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'title': "Here's a Promo Sheet",
             'description': "You can use this to promote new features, products, or anything else you'd like!"
         };
-        var7 = _closure1_slot7;
-        var6 = _closure1_slot1;
-        var5 = 15;
-        var5 = var11[var5];
-        var6 = var6.bind(var2)(var5);
-        var5 = {};
-        var5 = var7.bind(var2)(var6, var5);
+        var5 = _closure1_slot11;
         var0.illustration = var5;
         var6 = _closure1_slot7;
         var4 = 16;
@@ -300,7 +284,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var3.bind(var2)(var1, var0);
         return var0;
     };
-    var _closure1_slot12 = var0;
+    var _closure1_slot16 = var0;
     var0 = global;
     var8 = var0.Object;
     var7 = var8.defineProperty;
@@ -315,9 +299,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var _closure1_slot3 = var3;
     var3 = 1;
-    var6 = var5[var3];
+    var7 = var5[var3];
     var3 = arg3;
-    var3 = var3.bind(var0)(var6);
+    var3 = var3.bind(var0)(var7);
     var _closure1_slot4 = var3;
     var3 = 2;
     var3 = var5[var3];
@@ -327,28 +311,97 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 3;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var3 = var3.NOOP;
-    var _closure1_slot6 = var3;
+    var9 = var3.NOOP;
+    var _closure1_slot6 = var9;
     var3 = 4;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var6 = var3.jsx;
-    var _closure1_slot7 = var6;
-    var3 = var3.jsxs;
-    var _closure1_slot8 = var3;
+    var7 = var3.jsx;
+    var _closure1_slot7 = var7;
+    var10 = var3.jsxs;
+    var _closure1_slot8 = var10;
     var3 = 5;
     var3 = var5[var3];
-    var7 = var4.bind(var0)(var3);
-    var6 = var7.createStyles;
+    var11 = var4.bind(var0)(var3);
+    var8 = var11.createStyles;
     var3 = {};
-    var8 = {
+    var12 = 16;
+    var13 = {
         'padding': 16,
         'alignItems': 'center'
     };
-    var3.container = var8;
-    var3 = var6.bind(var7)(var3);
+    var3.container = var13;
+    var3 = var8.bind(var11)(var3);
     var _closure1_slot9 = var3;
-    var3 = function() {
+    var3 = 6;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var8 = var3.ActionSheetCloseButton;
+    var3 = {};
+    var3.onPress = var9;
+    var3 = var7.bind(var0)(var8, var3);
+    var _closure1_slot10 = var3;
+    var3 = 14;
+    var3 = var5[var3];
+    var6 = var6.bind(var0)(var3);
+    var3 = {};
+    var3 = var7.bind(var0)(var6, var3);
+    var _closure1_slot11 = var3;
+    var13 = 18;
+    var3 = var5[var13];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.Text;
+    var3 = {
+        'variant': 'text-lg/bold',
+        'children': 'Action Sheet with Title Header'
+    };
+    var3 = var7.bind(var0)(var6, var3);
+    var _closure1_slot12 = var3;
+    var3 = var5[var13];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.Text;
+    var3 = {
+        'variant': 'text-md/medium',
+        'color': 'text-subtle',
+        'children': 'An action sheet with a centered title and subtitle, with optional leading and Trailing elements.'
+    };
+    var3 = var7.bind(var0)(var6, var3);
+    var _closure1_slot13 = var3;
+    var3 = 19;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.Card;
+    var3 = {};
+    var8 = 10;
+    var8 = var5[var8];
+    var8 = var4.bind(var0)(var8);
+    var9 = var8.Stack;
+    var8 = {};
+    var11 = var5[var13];
+    var11 = var4.bind(var0)(var11);
+    var14 = var11.Text;
+    var11 = {
+        'variant': 'text-lg/bold',
+        'children': 'Promo Sheet'
+    };
+    var14 = var7.bind(var0)(var14, var11);
+    var11 = new Array(3);
+    var11[0] = var14;
+    var13 = var5[var13];
+    var13 = var4.bind(var0)(var13);
+    var14 = var13.Text;
+    var13 = {
+        'variant': 'text-md/medium',
+        'color': 'text-subtle',
+        'children': 'A sheet with an illustration, title, description, and actions.'
+    };
+    var13 = var7.bind(var0)(var14, var13);
+    var11[1] = var13;
+    var12 = var5[var12];
+    var12 = var4.bind(var0)(var12);
+    var13 = var12.Button;
+    var12 = {};
+    var14 = function() {
         var2 = _closure1_slot1;
         var1 = _closure1_slot2;
         var0 = 13;
@@ -360,7 +413,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = global;
             var2 = var0.Promise;
             var1 = var2.resolve;
-            var0 = _closure1_slot12;
+            var0 = _closure1_slot16;
             var0 = var1.bind(var2)(var0);
             return var0;
         };
@@ -368,7 +421,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var3.bind(var4)(var2, var1);
         return var0;
     };
-    var _closure1_slot10 = var3;
+    var12.onPress = var14;
+    var14 = 'Show Promo Sheet';
+    var12.text = var14;
+    var12 = var7.bind(var0)(var13, var12);
+    var11[2] = var12;
+    var8.children = var11;
+    var8 = var10.bind(var0)(var9, var8);
+    var3.children = var8;
+    var3 = var7.bind(var0)(var6, var3);
+    var _closure1_slot14 = var3;
     var3 = 20;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -386,53 +448,35 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.contentContainerStyle = var4;
         var6 = _closure1_slot8;
         var16 = _closure1_slot0;
-        var19 = _closure1_slot2;
+        var18 = _closure1_slot2;
         var11 = 10;
-        var4 = var19[var11];
+        var4 = var18[var11];
         var4 = var16.bind(var3)(var4);
         var5 = var4.Stack;
         var4 = {};
         var10 = _closure1_slot7;
-        var8 = 18;
-        var7 = var19[var8];
+        var7 = 19;
+        var7 = var18[var7];
         var7 = var16.bind(var3)(var7);
         var9 = var7.Card;
         var7 = {};
-        var14 = _closure1_slot8;
-        var12 = var19[var11];
-        var12 = var16.bind(var3)(var12);
-        var13 = var12.Stack;
-        var12 = {};
-        var21 = _closure1_slot7;
-        var17 = 19;
-        var15 = var19[var17];
-        var15 = var16.bind(var3)(var15);
-        var20 = var15.Text;
-        var15 = {
-            'variant': 'text-lg/bold',
-            'children': 'Action Sheet with Title Header'
-        };
-        var15 = var21.bind(var3)(var20, var15);
-        var20 = new Array(3);
-        var20[0] = var15;
-        var22 = _closure1_slot7;
-        var15 = var19[var17];
-        var15 = var16.bind(var3)(var15);
-        var21 = var15.Text;
-        var15 = {
-            'variant': 'text-md/medium',
-            'color': 'text-subtle',
-            'children': 'An action sheet with a centered title and subtitle, with optional leading and Trailing elements.'
-        };
-        var15 = var22.bind(var3)(var21, var15);
-        var20[1] = var15;
-        var23 = _closure1_slot7;
+        var13 = _closure1_slot8;
+        var11 = var18[var11];
+        var11 = var16.bind(var3)(var11);
+        var12 = var11.Stack;
+        var11 = {};
+        var15 = _closure1_slot12;
+        var14 = new Array(3);
+        var14[0] = var15;
+        var15 = _closure1_slot13;
+        var14[1] = var15;
+        var17 = _closure1_slot7;
         var15 = 16;
-        var21 = var19[var15];
-        var21 = var16.bind(var3)(var21);
-        var22 = var21.Button;
-        var21 = {};
-        var24 = function() {
+        var15 = var18[var15];
+        var15 = var16.bind(var3)(var15);
+        var16 = var15.Button;
+        var15 = {};
+        var18 = function() {
             var2 = _closure1_slot1;
             var1 = _closure1_slot2;
             var0 = 13;
@@ -444,7 +488,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = global;
                 var2 = var0.Promise;
                 var1 = var2.resolve;
-                var0 = _closure1_slot11;
+                var0 = _closure1_slot15;
                 var0 = var1.bind(var2)(var0);
                 return var0;
             };
@@ -452,64 +496,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var3.bind(var4)(var2, var1);
             return var0;
         };
-        var21.onPress = var24;
-        var24 = 'Show Action Sheet';
-        var21.text = var24;
-        var21 = var23.bind(var3)(var22, var21);
-        var20[2] = var21;
-        var12.children = var20;
-        var12 = var14.bind(var3)(var13, var12);
-        var7.children = var12;
-        var9 = var10.bind(var3)(var9, var7);
-        var7 = new Array(2);
-        var7[0] = var9;
-        var10 = _closure1_slot7;
-        var8 = var19[var8];
-        var8 = var16.bind(var3)(var8);
-        var9 = var8.Card;
-        var8 = {};
-        var13 = _closure1_slot8;
-        var11 = var19[var11];
-        var11 = var16.bind(var3)(var11);
-        var12 = var11.Stack;
-        var11 = {};
-        var21 = _closure1_slot7;
-        var14 = var19[var17];
-        var14 = var16.bind(var3)(var14);
-        var20 = var14.Text;
-        var14 = {
-            'variant': 'text-lg/bold',
-            'children': 'Promo Sheet'
-        };
-        var20 = var21.bind(var3)(var20, var14);
-        var14 = new Array(3);
-        var14[0] = var20;
-        var21 = _closure1_slot7;
-        var17 = var19[var17];
-        var17 = var16.bind(var3)(var17);
-        var20 = var17.Text;
-        var17 = {
-            'variant': 'text-md/medium',
-            'color': 'text-subtle',
-            'children': 'A sheet with an illustration, title, description, and actions.'
-        };
-        var17 = var21.bind(var3)(var20, var17);
-        var14[1] = var17;
-        var17 = _closure1_slot7;
-        var15 = var19[var15];
-        var15 = var16.bind(var3)(var15);
-        var16 = var15.Button;
-        var15 = {};
-        var18 = _closure1_slot10;
         var15.onPress = var18;
-        var18 = 'Show Promo Sheet';
+        var18 = 'Show Action Sheet';
         var15.text = var18;
         var15 = var17.bind(var3)(var16, var15);
         var14[2] = var15;
         var11.children = var14;
         var11 = var13.bind(var3)(var12, var11);
-        var8.children = var11;
-        var8 = var10.bind(var3)(var9, var8);
+        var7.children = var11;
+        var9 = var10.bind(var3)(var9, var7);
+        var7 = new Array(2);
+        var7[0] = var9;
+        var8 = _closure1_slot14;
         var7[1] = var8;
         var4.children = var7;
         var4 = var6.bind(var3)(var5, var4);
@@ -519,4 +517,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 33, 1297, 5266, 5269, 5268, 5267, 4086, 5463, 7788, 3279, 5265, 11498, 4090, 1234, 4910, 3938, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 33, 1297, 5233, 5232, 5237, 5236, 4086, 5464, 5342, 3279, 11246, 5231, 4090, 1234, 3938, 4878, 2]);

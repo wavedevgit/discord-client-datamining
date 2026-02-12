@@ -3,32 +3,32 @@ package dc;
 public final class b {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final b f21531b = new a().a();
+    private static final b f21532b = new a().a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final e f21532a;
+    private final e f21533a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private e f21533a = null;
+        private e f21534a = null;
 
         a() {
         }
 
         public b a() {
-            return new b(this.f21533a);
+            return new b(this.f21534a);
         }
 
         public a b(e eVar) {
-            this.f21533a = eVar;
+            this.f21534a = eVar;
             return this;
         }
     }
 
     b(e eVar) {
-        this.f21532a = eVar;
+        this.f21533a = eVar;
     }
 
     public static a b() {
@@ -36,6 +36,6 @@ public final class b {
     }
 
     public e a() {
-        return this.f21532a;
+        return this.f21533a;
     }
 }

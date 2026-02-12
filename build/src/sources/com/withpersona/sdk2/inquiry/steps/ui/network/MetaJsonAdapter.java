@@ -16,19 +16,19 @@ import org.jetbrains.annotations.NotNull;
 public final class MetaJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20770a;
+    private final m.b f20771a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f20771b;
+    private final h f20772b;
 
     public MetaJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("predictions");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20770a = a10;
+        this.f20771a = a10;
         h f10 = moshi.f(a0.j(List.class, Suggestion.class), x0.d(), "predictions");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20771b = f10;
+        this.f20772b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -38,9 +38,9 @@ public final class MetaJsonAdapter extends h {
         reader.u();
         List list = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20770a);
+            int J = reader.J(this.f20771a);
             if (J != -1) {
-                if (J == 0 && (list = (List) this.f20771b.fromJson(reader)) == null) {
+                if (J == 0 && (list = (List) this.f20772b.fromJson(reader)) == null) {
                     throw c.x("predictions", "predictions", reader);
                 }
             } else {
@@ -62,7 +62,7 @@ public final class MetaJsonAdapter extends h {
         if (meta != null) {
             writer.i();
             writer.J("predictions");
-            this.f20771b.toJson(writer, meta.a());
+            this.f20772b.toJson(writer, meta.a());
             writer.s();
             return;
         }

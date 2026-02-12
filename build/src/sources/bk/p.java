@@ -34,7 +34,7 @@ final class p implements l {
         og.i iVar = new og.i();
         this.f7252c = iVar;
         this.f7251b = context;
-        iVar.f39272d = bVar.a();
+        iVar.f39273d = bVar.a();
         this.f7253d = nkVar;
     }
 
@@ -42,7 +42,7 @@ final class p implements l {
     public final boolean a() {
         if (this.f7254e == null) {
             try {
-                og.k k10 = og.m.e(DynamiteModule.e(this.f7251b, DynamiteModule.f14540b, "com.google.android.gms.vision.dynamite").d("com.google.android.gms.vision.barcode.ChimeraNativeBarcodeDetectorCreator")).k(tf.b.W0(this.f7251b), this.f7252c);
+                og.k k10 = og.m.e(DynamiteModule.e(this.f7251b, DynamiteModule.f14541b, "com.google.android.gms.vision.dynamite").d("com.google.android.gms.vision.barcode.ChimeraNativeBarcodeDetectorCreator")).k(tf.b.W0(this.f7251b), this.f7252c);
                 this.f7254e = k10;
                 if (k10 == null && !this.f7250a) {
                     Log.d("LegacyBarcodeScanner", "Request optional module download.");
@@ -84,7 +84,7 @@ final class p implements l {
                             }
                         } else {
                             Image.Plane[] planeArr = (Image.Plane[]) q.l(aVar.j());
-                            oVar.f39530d = planeArr[0].getRowStride();
+                            oVar.f39531d = planeArr[0].getRowStride();
                             Y0 = kVar2.X0(tf.b.W0(planeArr[0].getBuffer()), oVar);
                         }
                     } else {

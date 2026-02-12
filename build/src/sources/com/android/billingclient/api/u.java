@@ -12,187 +12,187 @@ public abstract class u {
     static final BillingResult F;
 
     /* renamed from: a  reason: collision with root package name */
-    static final BillingResult f8719a;
+    static final BillingResult f8720a;
 
     /* renamed from: b  reason: collision with root package name */
-    static final BillingResult f8720b;
+    static final BillingResult f8721b;
 
     /* renamed from: c  reason: collision with root package name */
-    static final BillingResult f8721c;
+    static final BillingResult f8722c;
 
     /* renamed from: d  reason: collision with root package name */
-    static final BillingResult f8722d;
+    static final BillingResult f8723d;
 
     /* renamed from: e  reason: collision with root package name */
-    static final BillingResult f8723e;
+    static final BillingResult f8724e;
 
     /* renamed from: f  reason: collision with root package name */
-    static final BillingResult f8724f;
+    static final BillingResult f8725f;
 
     /* renamed from: g  reason: collision with root package name */
-    static final BillingResult f8725g;
+    static final BillingResult f8726g;
 
     /* renamed from: h  reason: collision with root package name */
-    static final BillingResult f8726h;
+    static final BillingResult f8727h;
 
     /* renamed from: i  reason: collision with root package name */
-    static final BillingResult f8727i;
+    static final BillingResult f8728i;
 
     /* renamed from: j  reason: collision with root package name */
-    static final BillingResult f8728j;
+    static final BillingResult f8729j;
 
     /* renamed from: k  reason: collision with root package name */
-    static final BillingResult f8729k;
+    static final BillingResult f8730k;
 
     /* renamed from: l  reason: collision with root package name */
-    static final BillingResult f8730l;
+    static final BillingResult f8731l;
 
     /* renamed from: m  reason: collision with root package name */
-    static final BillingResult f8731m;
+    static final BillingResult f8732m;
 
     /* renamed from: n  reason: collision with root package name */
-    static final BillingResult f8732n;
+    static final BillingResult f8733n;
 
     /* renamed from: o  reason: collision with root package name */
-    static final BillingResult f8733o;
+    static final BillingResult f8734o;
 
     /* renamed from: p  reason: collision with root package name */
-    static final BillingResult f8734p;
+    static final BillingResult f8735p;
 
     /* renamed from: q  reason: collision with root package name */
-    static final BillingResult f8735q;
+    static final BillingResult f8736q;
 
     /* renamed from: r  reason: collision with root package name */
-    static final BillingResult f8736r;
+    static final BillingResult f8737r;
 
     /* renamed from: s  reason: collision with root package name */
-    static final BillingResult f8737s;
+    static final BillingResult f8738s;
 
     /* renamed from: t  reason: collision with root package name */
-    static final BillingResult f8738t;
+    static final BillingResult f8739t;
 
     /* renamed from: u  reason: collision with root package name */
-    static final BillingResult f8739u;
+    static final BillingResult f8740u;
 
     /* renamed from: v  reason: collision with root package name */
-    static final BillingResult f8740v;
+    static final BillingResult f8741v;
 
     /* renamed from: w  reason: collision with root package name */
-    static final BillingResult f8741w;
+    static final BillingResult f8742w;
 
     /* renamed from: x  reason: collision with root package name */
-    static final BillingResult f8742x;
+    static final BillingResult f8743x;
 
     /* renamed from: y  reason: collision with root package name */
-    static final BillingResult f8743y;
+    static final BillingResult f8744y;
 
     /* renamed from: z  reason: collision with root package name */
-    static final BillingResult f8744z;
+    static final BillingResult f8745z;
 
     static {
         BillingResult.a c10 = BillingResult.c();
         c10.c(3);
         c10.b("Google Play In-app Billing API version is less than 3");
-        f8719a = c10.a();
+        f8720a = c10.a();
         BillingResult.a c11 = BillingResult.c();
         c11.c(3);
         c11.b("Google Play In-app Billing API version is less than 9");
-        f8720b = c11.a();
+        f8721b = c11.a();
         BillingResult.a c12 = BillingResult.c();
         c12.c(3);
         c12.b("Billing service unavailable on device.");
-        f8721c = c12.a();
+        f8722c = c12.a();
         BillingResult.a c13 = BillingResult.c();
         c13.c(5);
         c13.b("Client is already in the process of connecting to billing service.");
-        f8722d = c13.a();
+        f8723d = c13.a();
         BillingResult.a c14 = BillingResult.c();
         c14.c(5);
         c14.b("The list of SKUs can't be empty.");
-        f8723e = c14.a();
+        f8724e = c14.a();
         BillingResult.a c15 = BillingResult.c();
         c15.c(5);
         c15.b("SKU type can't be empty.");
-        f8724f = c15.a();
+        f8725f = c15.a();
         BillingResult.a c16 = BillingResult.c();
         c16.c(5);
         c16.b("Product type can't be empty.");
-        f8725g = c16.a();
+        f8726g = c16.a();
         BillingResult.a c17 = BillingResult.c();
         c17.c(-2);
         c17.b("Client does not support extra params.");
-        f8726h = c17.a();
+        f8727h = c17.a();
         BillingResult.a c18 = BillingResult.c();
         c18.c(5);
         c18.b("Invalid purchase token.");
-        f8727i = c18.a();
+        f8728i = c18.a();
         BillingResult.a c19 = BillingResult.c();
         c19.c(6);
         c19.b("An internal error occurred.");
-        f8728j = c19.a();
+        f8729j = c19.a();
         BillingResult.a c20 = BillingResult.c();
         c20.c(5);
         c20.b("SKU can't be null.");
-        f8729k = c20.a();
+        f8730k = c20.a();
         BillingResult.a c21 = BillingResult.c();
         c21.c(0);
-        f8730l = c21.a();
+        f8731l = c21.a();
         BillingResult.a c22 = BillingResult.c();
         c22.c(-1);
         c22.b("Service connection is disconnected.");
-        f8731m = c22.a();
+        f8732m = c22.a();
         BillingResult.a c23 = BillingResult.c();
         c23.c(2);
         c23.b("Timeout communicating with service.");
-        f8732n = c23.a();
+        f8733n = c23.a();
         BillingResult.a c24 = BillingResult.c();
         c24.c(-2);
         c24.b("Client does not support subscriptions.");
-        f8733o = c24.a();
+        f8734o = c24.a();
         BillingResult.a c25 = BillingResult.c();
         c25.c(-2);
         c25.b("Client does not support subscriptions update.");
-        f8734p = c25.a();
+        f8735p = c25.a();
         BillingResult.a c26 = BillingResult.c();
         c26.c(-2);
         c26.b("Client does not support get purchase history.");
-        f8735q = c26.a();
+        f8736q = c26.a();
         BillingResult.a c27 = BillingResult.c();
         c27.c(-2);
         c27.b("Client does not support price change confirmation.");
-        f8736r = c27.a();
+        f8737r = c27.a();
         BillingResult.a c28 = BillingResult.c();
         c28.c(-2);
         c28.b("Play Store version installed does not support cross selling products.");
-        f8737s = c28.a();
+        f8738s = c28.a();
         BillingResult.a c29 = BillingResult.c();
         c29.c(-2);
         c29.b("Client does not support multi-item purchases.");
-        f8738t = c29.a();
+        f8739t = c29.a();
         BillingResult.a c30 = BillingResult.c();
         c30.c(-2);
         c30.b("Client does not support offer_id_token.");
-        f8739u = c30.a();
+        f8740u = c30.a();
         BillingResult.a c31 = BillingResult.c();
         c31.c(-2);
         c31.b("Client does not support ProductDetails.");
-        f8740v = c31.a();
+        f8741v = c31.a();
         BillingResult.a c32 = BillingResult.c();
         c32.c(-2);
         c32.b("Client does not support in-app messages.");
-        f8741w = c32.a();
+        f8742w = c32.a();
         BillingResult.a c33 = BillingResult.c();
         c33.c(-2);
         c33.b("Client does not support user choice billing.");
-        f8742x = c33.a();
+        f8743x = c33.a();
         BillingResult.a c34 = BillingResult.c();
         c34.c(-2);
         c34.b("Play Store version installed does not support external offer.");
-        f8743y = c34.a();
+        f8744y = c34.a();
         BillingResult.a c35 = BillingResult.c();
         c35.c(5);
         c35.b("Unknown feature");
-        f8744z = c35.a();
+        f8745z = c35.a();
         BillingResult.a c36 = BillingResult.c();
         c36.c(-2);
         c36.b("Play Store version installed does not support get billing config.");

@@ -45,15 +45,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/experiments/UserProfilePerformanceAnalyticsExperiment.tsx.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun57826: for (var _fun57826_ip = 0;;) switch (_fun57826_ip) {
+        _fun57847: for (var _fun57847_ip = 0;;) switch (_fun57847_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.location;
                 var4 = var1.autoTrackExposure;
                 var1 = undefined;
                 if (!(var4 === var1)) {
-                    _fun57826_ip = 22;
-                    continue _fun57826
+                    _fun57847_ip = 22;
+                    continue _fun57847
                 }
             case 20:
                 var4 = true;

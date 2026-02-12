@@ -16,16 +16,16 @@ public final class GradientColor {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f9244a;
+    private final float f9245a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f9245b;
+    private final int f9246b;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f9246g;
+    private final int f9247g;
 
     /* renamed from: r  reason: collision with root package name */
-    private final int f9247r;
+    private final int f9248r;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, d2 = {"Lcom/discord/chat/bridge/botuikit/GradientColor$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/chat/bridge/botuikit/GradientColor;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -47,49 +47,49 @@ public final class GradientColor {
         if (15 != (i10 & 15)) {
             v1.b(i10, 15, GradientColor$$serializer.INSTANCE.getDescriptor());
         }
-        this.f9247r = i11;
-        this.f9246g = i12;
-        this.f9245b = i13;
-        this.f9244a = f10;
+        this.f9248r = i11;
+        this.f9247g = i12;
+        this.f9246b = i13;
+        this.f9245a = f10;
     }
 
     public static /* synthetic */ GradientColor copy$default(GradientColor gradientColor, int i10, int i11, int i12, float f10, int i13, Object obj) {
         if ((i13 & 1) != 0) {
-            i10 = gradientColor.f9247r;
+            i10 = gradientColor.f9248r;
         }
         if ((i13 & 2) != 0) {
-            i11 = gradientColor.f9246g;
+            i11 = gradientColor.f9247g;
         }
         if ((i13 & 4) != 0) {
-            i12 = gradientColor.f9245b;
+            i12 = gradientColor.f9246b;
         }
         if ((i13 & 8) != 0) {
-            f10 = gradientColor.f9244a;
+            f10 = gradientColor.f9245a;
         }
         return gradientColor.copy(i10, i11, i12, f10);
     }
 
     public static final /* synthetic */ void write$Self$chat_release(GradientColor gradientColor, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        compositeEncoder.w(serialDescriptor, 0, gradientColor.f9247r);
-        compositeEncoder.w(serialDescriptor, 1, gradientColor.f9246g);
-        compositeEncoder.w(serialDescriptor, 2, gradientColor.f9245b);
-        compositeEncoder.s(serialDescriptor, 3, gradientColor.f9244a);
+        compositeEncoder.w(serialDescriptor, 0, gradientColor.f9248r);
+        compositeEncoder.w(serialDescriptor, 1, gradientColor.f9247g);
+        compositeEncoder.w(serialDescriptor, 2, gradientColor.f9246b);
+        compositeEncoder.s(serialDescriptor, 3, gradientColor.f9245a);
     }
 
     public final int component1() {
-        return this.f9247r;
+        return this.f9248r;
     }
 
     public final int component2() {
-        return this.f9246g;
+        return this.f9247g;
     }
 
     public final int component3() {
-        return this.f9245b;
+        return this.f9246b;
     }
 
     public final float component4() {
-        return this.f9244a;
+        return this.f9245a;
     }
 
     @NotNull
@@ -103,44 +103,44 @@ public final class GradientColor {
         }
         if (obj instanceof GradientColor) {
             GradientColor gradientColor = (GradientColor) obj;
-            return this.f9247r == gradientColor.f9247r && this.f9246g == gradientColor.f9246g && this.f9245b == gradientColor.f9245b && Float.compare(this.f9244a, gradientColor.f9244a) == 0;
+            return this.f9248r == gradientColor.f9248r && this.f9247g == gradientColor.f9247g && this.f9246b == gradientColor.f9246b && Float.compare(this.f9245a, gradientColor.f9245a) == 0;
         }
         return false;
     }
 
     public final float getA() {
-        return this.f9244a;
+        return this.f9245a;
     }
 
     public final int getB() {
-        return this.f9245b;
+        return this.f9246b;
     }
 
     public final int getG() {
-        return this.f9246g;
+        return this.f9247g;
     }
 
     public final int getR() {
-        return this.f9247r;
+        return this.f9248r;
     }
 
     public int hashCode() {
-        return (((((Integer.hashCode(this.f9247r) * 31) + Integer.hashCode(this.f9246g)) * 31) + Integer.hashCode(this.f9245b)) * 31) + Float.hashCode(this.f9244a);
+        return (((((Integer.hashCode(this.f9248r) * 31) + Integer.hashCode(this.f9247g)) * 31) + Integer.hashCode(this.f9246b)) * 31) + Float.hashCode(this.f9245a);
     }
 
     @NotNull
     public String toString() {
-        int i10 = this.f9247r;
-        int i11 = this.f9246g;
-        int i12 = this.f9245b;
-        float f10 = this.f9244a;
+        int i10 = this.f9248r;
+        int i11 = this.f9247g;
+        int i12 = this.f9246b;
+        float f10 = this.f9245a;
         return "GradientColor(r=" + i10 + ", g=" + i11 + ", b=" + i12 + ", a=" + f10 + ")";
     }
 
     public GradientColor(int i10, int i11, int i12, float f10) {
-        this.f9247r = i10;
-        this.f9246g = i11;
-        this.f9245b = i12;
-        this.f9244a = f10;
+        this.f9248r = i10;
+        this.f9247g = i11;
+        this.f9246b = i12;
+        this.f9245a = f10;
     }
 }

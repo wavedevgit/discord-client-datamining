@@ -8,18 +8,18 @@ import kotlin.enums.EnumEntries;
 public final class CaptureStatus {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ CaptureStatus[] f34719d;
+    private static final /* synthetic */ CaptureStatus[] f34720d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f34720e;
+    private static final /* synthetic */ EnumEntries f34721e;
     public static final CaptureStatus FOR_SUBTYPING = new CaptureStatus("FOR_SUBTYPING", 0);
     public static final CaptureStatus FOR_INCORPORATION = new CaptureStatus("FOR_INCORPORATION", 1);
     public static final CaptureStatus FROM_EXPRESSION = new CaptureStatus("FROM_EXPRESSION", 2);
 
     static {
         CaptureStatus[] a10 = a();
-        f34719d = a10;
-        f34720e = a.a(a10);
+        f34720d = a10;
+        f34721e = a.a(a10);
     }
 
     private CaptureStatus(String str, int i10) {
@@ -34,6 +34,6 @@ public final class CaptureStatus {
     }
 
     public static CaptureStatus[] values() {
-        return (CaptureStatus[]) f34719d.clone();
+        return (CaptureStatus[]) f34720d.clone();
     }
 }

@@ -14,25 +14,25 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateDocumentRequest_AttributesJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19492a;
+    private final m.b f19493a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19493b;
+    private final h f19494b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f19494c;
+    private final h f19495c;
 
     public CreateDocumentRequest_AttributesJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("kind", "fileLimit");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19492a = a10;
+        this.f19493a = a10;
         h f10 = moshi.f(String.class, x0.d(), "kind");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19493b = f10;
+        this.f19494b = f10;
         h f11 = moshi.f(Integer.TYPE, x0.d(), "fileLimit");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f19494c = f11;
+        this.f19495c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -43,14 +43,14 @@ public final class CreateDocumentRequest_AttributesJsonAdapter extends h {
         String str = null;
         Integer num = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19492a);
+            int J = reader.J(this.f19493a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (num = (Integer) this.f19494c.fromJson(reader)) == null) {
+                    if (J == 1 && (num = (Integer) this.f19495c.fromJson(reader)) == null) {
                         throw dn.c.x("fileLimit", "fileLimit", reader);
                     }
                 } else {
-                    str = (String) this.f19493b.fromJson(reader);
+                    str = (String) this.f19494b.fromJson(reader);
                     if (str == null) {
                         throw dn.c.x("kind", "kind", reader);
                     }
@@ -77,9 +77,9 @@ public final class CreateDocumentRequest_AttributesJsonAdapter extends h {
         if (attributes != null) {
             writer.i();
             writer.J("kind");
-            this.f19493b.toJson(writer, attributes.b());
+            this.f19494b.toJson(writer, attributes.b());
             writer.J("fileLimit");
-            this.f19494c.toJson(writer, Integer.valueOf(attributes.a()));
+            this.f19495c.toJson(writer, Integer.valueOf(attributes.a()));
             writer.s();
             return;
         }

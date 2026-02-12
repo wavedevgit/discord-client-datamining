@@ -8,10 +8,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c extends d {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f51648d = new a(null);
+    public static final a f51649d = new a(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f51649c;
+    private final boolean f51650c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements tn.b {
@@ -35,14 +35,14 @@ public final class c extends d {
 
     public c(int i10, int i11, boolean z10) {
         super(i10, i11, "topDismiss", "onDismiss");
-        this.f51649c = z10;
+        this.f51650c = z10;
     }
 
     @Override // vn.d, com.facebook.react.uimanager.events.Event
     protected WritableMap getEventData() {
         WritableMap createMap = Arguments.createMap();
         Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
-        createMap.putBoolean("isNativeDismiss", this.f51649c);
+        createMap.putBoolean("isNativeDismiss", this.f51650c);
         return createMap;
     }
 }

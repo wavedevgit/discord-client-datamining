@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun34900: for (var _fun34900_ip = 0;;) switch (_fun34900_ip) {
+    _fun34922: for (var _fun34922_ip = 0;;) switch (_fun34922_ip) {
         case 0:
             var4 = require;
             var2 = exports;
@@ -22,16 +22,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1 = var6.shouldBeUseWeb;
             var1 = var1.bind(var6)();
             if (var1) {
-                _fun34900_ip = 97;
-                continue _fun34900
+                _fun34922_ip = 97;
+                continue _fun34922
             }
         case 78:
             var1 = 0;
             var1 = var5[var1];
             var1 = var4.bind(var0)(var1);
             var1 = var1.useAnimatedStyle;
-            _fun34900_ip = 102;
-            continue _fun34900;
+            _fun34922_ip = 102;
+            continue _fun34922;
         case 97:
             var1 = function arg0, arg1, arg2() {
                 var2 = _closure1_slot0;

@@ -6,10 +6,10 @@ import java.util.List;
 final class b implements g {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f21643d;
+    private final List f21644d;
 
     public b(List list) {
-        this.f21643d = list;
+        this.f21644d = list;
     }
 
     @Override // ae.g
@@ -19,7 +19,7 @@ final class b implements g {
 
     @Override // ae.g
     public List d(long j10) {
-        return this.f21643d;
+        return this.f21644d;
     }
 
     @Override // ae.g

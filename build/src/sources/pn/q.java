@@ -15,7 +15,7 @@ public abstract class q {
 
     public static final boolean b(Screen screen) {
         Intrinsics.checkNotNullParameter(screen, "<this>");
-        if (screen.getStackPresentation() == Screen.StackPresentation.f19055o && screen.getSheetDetents().d() == 1 && screen.getSheetDetents().l() == -1.0d) {
+        if (screen.getStackPresentation() == Screen.StackPresentation.f19056o && screen.getSheetDetents().d() == 1 && screen.getSheetDetents().l() == -1.0d) {
             return true;
         }
         return false;
@@ -31,7 +31,7 @@ public abstract class q {
 
     public static final boolean d(Screen screen) {
         Intrinsics.checkNotNullParameter(screen, "<this>");
-        if (screen.getStackPresentation() == Screen.StackPresentation.f19055o) {
+        if (screen.getStackPresentation() == Screen.StackPresentation.f19056o) {
             return true;
         }
         return false;

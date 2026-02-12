@@ -17,7 +17,7 @@ public final class AppIcon {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9150id;
+    private final String f9151id;
     public static final AppIcon DEFAULT = new AppIcon("DEFAULT", 0, "AppIcon", "MainDefault");
     public static final AppIcon BRAND_INVERTED = new AppIcon("BRAND_INVERTED", 1, "BrandInvertedIcon", "MainBrandInverted");
     public static final AppIcon BRAND_DARK = new AppIcon("BRAND_DARK", 2, "BrandDarkIcon", "MainBrandDark");
@@ -57,7 +57,7 @@ public final class AppIcon {
     }
 
     private AppIcon(String str, int i10, String str2, String str3) {
-        this.f9150id = str2;
+        this.f9151id = str2;
         this.aliasSuffix = str3;
     }
 
@@ -82,6 +82,6 @@ public final class AppIcon {
 
     @NotNull
     public final String getId() {
-        return this.f9150id;
+        return this.f9151id;
     }
 }

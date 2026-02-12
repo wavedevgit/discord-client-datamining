@@ -5,11 +5,11 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f38572a;
+    private static final String f38573a;
 
     static {
         String i10 = k4.m.i("ConstraintTracker");
         Intrinsics.checkNotNullExpressionValue(i10, "tagWithPrefix(\"ConstraintTracker\")");
-        f38572a = i10;
+        f38573a = i10;
     }
 }

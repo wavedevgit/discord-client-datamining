@@ -8,7 +8,7 @@ import kotlin.text.Charsets;
 public final class a implements b, o {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f36599a = new a();
+    public static final a f36600a = new a();
 
     private a() {
     }

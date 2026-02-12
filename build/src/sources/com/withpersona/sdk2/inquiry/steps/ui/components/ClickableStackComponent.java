@@ -27,25 +27,25 @@ public final class ClickableStackComponent implements k5, l5, v, e0 {
     public static final Parcelable.Creator<ClickableStackComponent> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f20579d;
+    private final String f20580d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f20580e;
+    private final List f20581e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f20581i;
+    private final JsonLogicBoolean f20582i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final JsonLogicBoolean f20582o;
+    private final JsonLogicBoolean f20583o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final ClickableStack.ClickableStackComponentStyle f20583p;
+    private final ClickableStack.ClickableStackComponentStyle f20584p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f20584q;
+    private boolean f20585q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final List f20585r;
+    private final List f20586r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -72,33 +72,33 @@ public final class ClickableStackComponent implements k5, l5, v, e0 {
     public ClickableStackComponent(String name, List children, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, ClickableStack.ClickableStackComponentStyle clickableStackComponentStyle, boolean z10) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(children, "children");
-        this.f20579d = name;
-        this.f20580e = children;
-        this.f20581i = jsonLogicBoolean;
-        this.f20582o = jsonLogicBoolean2;
-        this.f20583p = clickableStackComponentStyle;
-        this.f20584q = z10;
-        this.f20585r = new ArrayList();
+        this.f20580d = name;
+        this.f20581e = children;
+        this.f20582i = jsonLogicBoolean;
+        this.f20583o = jsonLogicBoolean2;
+        this.f20584p = clickableStackComponentStyle;
+        this.f20585q = z10;
+        this.f20586r = new ArrayList();
     }
 
     public static /* synthetic */ ClickableStackComponent b(ClickableStackComponent clickableStackComponent, String str, List list, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, ClickableStack.ClickableStackComponentStyle clickableStackComponentStyle, boolean z10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = clickableStackComponent.f20579d;
+            str = clickableStackComponent.f20580d;
         }
         if ((i10 & 2) != 0) {
-            list = clickableStackComponent.f20580e;
+            list = clickableStackComponent.f20581e;
         }
         if ((i10 & 4) != 0) {
-            jsonLogicBoolean = clickableStackComponent.f20581i;
+            jsonLogicBoolean = clickableStackComponent.f20582i;
         }
         if ((i10 & 8) != 0) {
-            jsonLogicBoolean2 = clickableStackComponent.f20582o;
+            jsonLogicBoolean2 = clickableStackComponent.f20583o;
         }
         if ((i10 & 16) != 0) {
-            clickableStackComponentStyle = clickableStackComponent.f20583p;
+            clickableStackComponentStyle = clickableStackComponent.f20584p;
         }
         if ((i10 & 32) != 0) {
-            z10 = clickableStackComponent.f20584q;
+            z10 = clickableStackComponent.f20585q;
         }
         ClickableStack.ClickableStackComponentStyle clickableStackComponentStyle2 = clickableStackComponentStyle;
         boolean z11 = z10;
@@ -118,12 +118,12 @@ public final class ClickableStackComponent implements k5, l5, v, e0 {
     }
 
     public final ClickableStack.ClickableStackComponentStyle c() {
-        return this.f20583p;
+        return this.f20584p;
     }
 
     @Override // pq.e0
     public List d() {
-        return this.f20585r;
+        return this.f20586r;
     }
 
     @Override // android.os.Parcelable
@@ -132,7 +132,7 @@ public final class ClickableStackComponent implements k5, l5, v, e0 {
     }
 
     public final boolean e() {
-        return this.f20584q;
+        return this.f20585q;
     }
 
     public boolean equals(Object obj) {
@@ -141,68 +141,68 @@ public final class ClickableStackComponent implements k5, l5, v, e0 {
         }
         if (obj instanceof ClickableStackComponent) {
             ClickableStackComponent clickableStackComponent = (ClickableStackComponent) obj;
-            return Intrinsics.areEqual(this.f20579d, clickableStackComponent.f20579d) && Intrinsics.areEqual(this.f20580e, clickableStackComponent.f20580e) && Intrinsics.areEqual(this.f20581i, clickableStackComponent.f20581i) && Intrinsics.areEqual(this.f20582o, clickableStackComponent.f20582o) && Intrinsics.areEqual(this.f20583p, clickableStackComponent.f20583p) && this.f20584q == clickableStackComponent.f20584q;
+            return Intrinsics.areEqual(this.f20580d, clickableStackComponent.f20580d) && Intrinsics.areEqual(this.f20581e, clickableStackComponent.f20581e) && Intrinsics.areEqual(this.f20582i, clickableStackComponent.f20582i) && Intrinsics.areEqual(this.f20583o, clickableStackComponent.f20583o) && Intrinsics.areEqual(this.f20584p, clickableStackComponent.f20584p) && this.f20585q == clickableStackComponent.f20585q;
         }
         return false;
     }
 
     public final void f(boolean z10) {
-        this.f20584q = z10;
+        this.f20585q = z10;
     }
 
     @Override // pq.l5
     public List getChildren() {
-        return this.f20580e;
+        return this.f20581e;
     }
 
     @Override // pq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f20582o;
+        return this.f20583o;
     }
 
     @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f20581i;
+        return this.f20582i;
     }
 
     @Override // pq.k5
     public String getName() {
-        return this.f20579d;
+        return this.f20580d;
     }
 
     public int hashCode() {
-        int hashCode = ((this.f20579d.hashCode() * 31) + this.f20580e.hashCode()) * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f20581i;
+        int hashCode = ((this.f20580d.hashCode() * 31) + this.f20581e.hashCode()) * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f20582i;
         int hashCode2 = (hashCode + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20582o;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20583o;
         int hashCode3 = (hashCode2 + (jsonLogicBoolean2 == null ? 0 : jsonLogicBoolean2.hashCode())) * 31;
-        ClickableStack.ClickableStackComponentStyle clickableStackComponentStyle = this.f20583p;
-        return ((hashCode3 + (clickableStackComponentStyle != null ? clickableStackComponentStyle.hashCode() : 0)) * 31) + Boolean.hashCode(this.f20584q);
+        ClickableStack.ClickableStackComponentStyle clickableStackComponentStyle = this.f20584p;
+        return ((hashCode3 + (clickableStackComponentStyle != null ? clickableStackComponentStyle.hashCode() : 0)) * 31) + Boolean.hashCode(this.f20585q);
     }
 
     public String toString() {
-        String str = this.f20579d;
-        List list = this.f20580e;
-        JsonLogicBoolean jsonLogicBoolean = this.f20581i;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20582o;
-        ClickableStack.ClickableStackComponentStyle clickableStackComponentStyle = this.f20583p;
-        boolean z10 = this.f20584q;
+        String str = this.f20580d;
+        List list = this.f20581e;
+        JsonLogicBoolean jsonLogicBoolean = this.f20582i;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20583o;
+        ClickableStack.ClickableStackComponentStyle clickableStackComponentStyle = this.f20584p;
+        boolean z10 = this.f20585q;
         return "ClickableStackComponent(name=" + str + ", children=" + list + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ", styles=" + clickableStackComponentStyle + ", isActive=" + z10 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f20579d);
-        List<Parcelable> list = this.f20580e;
+        dest.writeString(this.f20580d);
+        List<Parcelable> list = this.f20581e;
         dest.writeInt(list.size());
         for (Parcelable parcelable : list) {
             dest.writeParcelable(parcelable, i10);
         }
-        dest.writeParcelable(this.f20581i, i10);
-        dest.writeParcelable(this.f20582o, i10);
-        dest.writeParcelable(this.f20583p, i10);
-        dest.writeInt(this.f20584q ? 1 : 0);
+        dest.writeParcelable(this.f20582i, i10);
+        dest.writeParcelable(this.f20583o, i10);
+        dest.writeParcelable(this.f20584p, i10);
+        dest.writeInt(this.f20585q ? 1 : 0);
     }
 
     public /* synthetic */ ClickableStackComponent(String str, List list, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, ClickableStack.ClickableStackComponentStyle clickableStackComponentStyle, boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {

@@ -5,7 +5,7 @@ import bj.c;
 final class w7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w7 f39762a = new w7();
+    static final w7 f39763a = new w7();
 
     static {
         c.b a10 = bj.c.a("detectorOptions");

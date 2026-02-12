@@ -21,7 +21,7 @@ public final class NonGuildVersion {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9148id;
+    private final String f9149id;
     private final long version;
     private final String versionString;
 
@@ -45,7 +45,7 @@ public final class NonGuildVersion {
         if (1 != (i10 & 1)) {
             v1.b(i10, 1, NonGuildVersion$$serializer.INSTANCE.getDescriptor());
         }
-        this.f9148id = str;
+        this.f9149id = str;
         if ((i10 & 2) == 0) {
             this.version = 0L;
         } else {
@@ -60,7 +60,7 @@ public final class NonGuildVersion {
 
     public static /* synthetic */ NonGuildVersion copy$default(NonGuildVersion nonGuildVersion, String str, long j10, String str2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = nonGuildVersion.f9148id;
+            str = nonGuildVersion.f9149id;
         }
         if ((i10 & 2) != 0) {
             j10 = nonGuildVersion.version;
@@ -72,18 +72,18 @@ public final class NonGuildVersion {
     }
 
     public static final /* synthetic */ void write$Self$app_database_release(NonGuildVersion nonGuildVersion, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        compositeEncoder.y(serialDescriptor, 0, nonGuildVersion.f9148id);
+        compositeEncoder.y(serialDescriptor, 0, nonGuildVersion.f9149id);
         if (compositeEncoder.z(serialDescriptor, 1) || nonGuildVersion.version != 0) {
             compositeEncoder.E(serialDescriptor, 1, nonGuildVersion.version);
         }
         if (compositeEncoder.z(serialDescriptor, 2) || nonGuildVersion.versionString != null) {
-            compositeEncoder.o(serialDescriptor, 2, n2.f50032a, nonGuildVersion.versionString);
+            compositeEncoder.o(serialDescriptor, 2, n2.f50033a, nonGuildVersion.versionString);
         }
     }
 
     @NotNull
     public final String component1() {
-        return this.f9148id;
+        return this.f9149id;
     }
 
     public final long component2() {
@@ -106,14 +106,14 @@ public final class NonGuildVersion {
         }
         if (obj instanceof NonGuildVersion) {
             NonGuildVersion nonGuildVersion = (NonGuildVersion) obj;
-            return Intrinsics.areEqual(this.f9148id, nonGuildVersion.f9148id) && this.version == nonGuildVersion.version && Intrinsics.areEqual(this.versionString, nonGuildVersion.versionString);
+            return Intrinsics.areEqual(this.f9149id, nonGuildVersion.f9149id) && this.version == nonGuildVersion.version && Intrinsics.areEqual(this.versionString, nonGuildVersion.versionString);
         }
         return false;
     }
 
     @NotNull
     public final String getId() {
-        return this.f9148id;
+        return this.f9149id;
     }
 
     public final long getVersion() {
@@ -125,14 +125,14 @@ public final class NonGuildVersion {
     }
 
     public int hashCode() {
-        int hashCode = ((this.f9148id.hashCode() * 31) + Long.hashCode(this.version)) * 31;
+        int hashCode = ((this.f9149id.hashCode() * 31) + Long.hashCode(this.version)) * 31;
         String str = this.versionString;
         return hashCode + (str == null ? 0 : str.hashCode());
     }
 
     @NotNull
     public String toString() {
-        String str = this.f9148id;
+        String str = this.f9149id;
         long j10 = this.version;
         String str2 = this.versionString;
         return "NonGuildVersion(id=" + str + ", version=" + j10 + ", versionString=" + str2 + ")";
@@ -140,7 +140,7 @@ public final class NonGuildVersion {
 
     public NonGuildVersion(@NotNull String id2, long j10, String str) {
         Intrinsics.checkNotNullParameter(id2, "id");
-        this.f9148id = id2;
+        this.f9149id = id2;
         this.version = j10;
         this.versionString = str;
     }

@@ -4,10 +4,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var0.IntlMessageFormat;
     var2 = var3.__addLocaleData;
     var1 = {};
-    var4 = 'nl';
+    var4 = 'de';
     var1.locale = var4;
     var4 = function arg0, arg1() {
-        _fun112796: for (var _fun112796_ip = 0;;) switch (_fun112796_ip) {
+        _fun112834: for (var _fun112834_ip = 0;;) switch (_fun112834_ip) {
             case 0:
                 var4 = arg0;
                 var0 = global;
@@ -24,21 +24,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = arg1;
                 var0 = var3;
                 if (var5) {
-                    _fun112796_ip = 78;
-                    continue _fun112796
+                    _fun112834_ip = 78;
+                    continue _fun112834
                 }
             case 55:
                 var4 = var1 == var4;
                 var1 = var3;
                 if (!var4) {
-                    _fun112796_ip = 75;
-                    continue _fun112796
+                    _fun112834_ip = 75;
+                    continue _fun112834
                 }
             case 65:
                 var1 = var3;
                 if (!var2) {
-                    _fun112796_ip = 75;
-                    continue _fun112796
+                    _fun112834_ip = 75;
+                    continue _fun112834
                 }
             case 71:
                 var1 = 'one';
@@ -53,43 +53,36 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var0.IntlMessageFormat;
     var2 = var3.__addLocaleData;
     var1 = {
-        'locale': 'nl-AW',
-        'parentLocale': 'nl'
+        'locale': 'de-AT',
+        'parentLocale': 'de'
     };
     var1 = var2.bind(var3)(var1);
     var3 = var0.IntlMessageFormat;
     var2 = var3.__addLocaleData;
     var1 = {
-        'locale': 'nl-BE',
-        'parentLocale': 'nl'
+        'locale': 'de-BE',
+        'parentLocale': 'de'
     };
     var1 = var2.bind(var3)(var1);
     var3 = var0.IntlMessageFormat;
     var2 = var3.__addLocaleData;
     var1 = {
-        'locale': 'nl-BQ',
-        'parentLocale': 'nl'
+        'locale': 'de-CH',
+        'parentLocale': 'de'
     };
     var1 = var2.bind(var3)(var1);
     var3 = var0.IntlMessageFormat;
     var2 = var3.__addLocaleData;
     var1 = {
-        'locale': 'nl-CW',
-        'parentLocale': 'nl'
-    };
-    var1 = var2.bind(var3)(var1);
-    var3 = var0.IntlMessageFormat;
-    var2 = var3.__addLocaleData;
-    var1 = {
-        'locale': 'nl-SR',
-        'parentLocale': 'nl'
+        'locale': 'de-LI',
+        'parentLocale': 'de'
     };
     var1 = var2.bind(var3)(var1);
     var2 = var0.IntlMessageFormat;
     var1 = var2.__addLocaleData;
     var0 = {
-        'locale': 'nl-SX',
-        'parentLocale': 'nl'
+        'locale': 'de-LU',
+        'parentLocale': 'de'
     };
     var0 = var1.bind(var2)(var0);
     var0 = undefined;

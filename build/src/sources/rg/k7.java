@@ -5,7 +5,7 @@ import bj.c;
 final class k7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k7 f46932a = new k7();
+    static final k7 f46933a = new k7();
 
     static {
         c.b a10 = bj.c.a("scoreType");

@@ -12,19 +12,19 @@ import kk.q;
 public class e {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final b f25771e = new b();
+    private static final b f25772e = new b();
 
     /* renamed from: a  reason: collision with root package name */
-    private final ok.b f25772a;
+    private final ok.b f25773a;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f25774c;
+    private boolean f25775c;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f25773b = new ArrayList();
+    private final List f25774b = new ArrayList();
 
     /* renamed from: d  reason: collision with root package name */
-    private final int[] f25775d = new int[5];
+    private final int[] f25776d = new int[5];
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -40,7 +40,7 @@ public class e {
     }
 
     public e(ok.b bVar, q qVar) {
-        this.f25772a = bVar;
+        this.f25773a = bVar;
     }
 
     private static float a(int[] iArr, int i10) {
@@ -53,33 +53,33 @@ public class e {
         int i14;
         int[] k10 = k();
         int i15 = 0;
-        while (i10 >= i15 && i11 >= i15 && this.f25772a.e(i11 - i15, i10 - i15)) {
+        while (i10 >= i15 && i11 >= i15 && this.f25773a.e(i11 - i15, i10 - i15)) {
             k10[2] = k10[2] + 1;
             i15++;
         }
         if (k10[2] == 0) {
             return false;
         }
-        while (i10 >= i15 && i11 >= i15 && !this.f25772a.e(i11 - i15, i10 - i15)) {
+        while (i10 >= i15 && i11 >= i15 && !this.f25773a.e(i11 - i15, i10 - i15)) {
             k10[1] = k10[1] + 1;
             i15++;
         }
         if (k10[1] == 0) {
             return false;
         }
-        while (i10 >= i15 && i11 >= i15 && this.f25772a.e(i11 - i15, i10 - i15)) {
+        while (i10 >= i15 && i11 >= i15 && this.f25773a.e(i11 - i15, i10 - i15)) {
             k10[0] = k10[0] + 1;
             i15++;
         }
         if (k10[0] == 0) {
             return false;
         }
-        int h10 = this.f25772a.h();
-        int l10 = this.f25772a.l();
+        int h10 = this.f25773a.h();
+        int l10 = this.f25773a.l();
         int i16 = 1;
         while (true) {
             int i17 = i10 + i16;
-            if (i17 >= h10 || (i14 = i11 + i16) >= l10 || !this.f25772a.e(i14, i17)) {
+            if (i17 >= h10 || (i14 = i11 + i16) >= l10 || !this.f25773a.e(i14, i17)) {
                 break;
             }
             k10[2] = k10[2] + 1;
@@ -87,7 +87,7 @@ public class e {
         }
         while (true) {
             int i18 = i10 + i16;
-            if (i18 >= h10 || (i13 = i11 + i16) >= l10 || this.f25772a.e(i13, i18)) {
+            if (i18 >= h10 || (i13 = i11 + i16) >= l10 || this.f25773a.e(i13, i18)) {
                 break;
             }
             k10[3] = k10[3] + 1;
@@ -98,7 +98,7 @@ public class e {
         }
         while (true) {
             int i19 = i10 + i16;
-            if (i19 >= h10 || (i12 = i11 + i16) >= l10 || !this.f25772a.e(i12, i19)) {
+            if (i19 >= h10 || (i12 = i11 + i16) >= l10 || !this.f25773a.e(i12, i19)) {
                 break;
             }
             k10[4] = k10[4] + 1;
@@ -157,7 +157,7 @@ public class e {
     private float c(int r11, int r12, int r13, int r14) {
         /*
             r10 = this;
-            ok.b r0 = r10.f25772a
+            ok.b r0 = r10.f25773a
             int r1 = r0.l()
             int[] r2 = r10.k()
             r3 = r11
@@ -323,7 +323,7 @@ public class e {
     private float d(int r11, int r12, int r13, int r14) {
         /*
             r10 = this;
-            ok.b r0 = r10.f25772a
+            ok.b r0 = r10.f25773a
             int r1 = r0.h()
             int[] r2 = r10.k()
             r3 = r11
@@ -456,16 +456,16 @@ public class e {
     }
 
     private int h() {
-        if (this.f25773b.size() <= 1) {
+        if (this.f25774b.size() <= 1) {
             return 0;
         }
         d dVar = null;
-        for (d dVar2 : this.f25773b) {
+        for (d dVar2 : this.f25774b) {
             if (dVar2.h() >= 2) {
                 if (dVar == null) {
                     dVar = dVar2;
                 } else {
-                    this.f25774c = true;
+                    this.f25775c = true;
                     return ((int) (Math.abs(dVar.c() - dVar2.c()) - Math.abs(dVar.d() - dVar2.d()))) / 2;
                 }
             }
@@ -514,16 +514,16 @@ public class e {
     }
 
     private int[] k() {
-        e(this.f25775d);
-        return this.f25775d;
+        e(this.f25776d);
+        return this.f25776d;
     }
 
     private boolean m() {
-        int size = this.f25773b.size();
+        int size = this.f25774b.size();
         float f10 = 0.0f;
         int i10 = 0;
         float f11 = 0.0f;
-        for (d dVar : this.f25773b) {
+        for (d dVar : this.f25774b) {
             if (dVar.h() >= 2) {
                 i10++;
                 f11 += dVar.i();
@@ -533,7 +533,7 @@ public class e {
             return false;
         }
         float f12 = f11 / size;
-        for (d dVar2 : this.f25773b) {
+        for (d dVar2 : this.f25774b) {
             f10 += Math.abs(dVar2.i() - f12);
         }
         if (f10 > f11 * 0.05f) {
@@ -570,8 +570,8 @@ public class e {
         } else {
             z10 = false;
         }
-        int h10 = this.f25772a.h();
-        int l10 = this.f25772a.l();
+        int h10 = this.f25773a.h();
+        int l10 = this.f25773a.l();
         int i10 = (h10 * 3) / 388;
         if (i10 < 3 || z10) {
             i10 = 3;
@@ -584,7 +584,7 @@ public class e {
             int i12 = 0;
             int i13 = 0;
             while (i12 < l10) {
-                if (this.f25772a.e(i12, i11)) {
+                if (this.f25773a.e(i12, i11)) {
                     if ((i13 & 1) == 1) {
                         i13++;
                     }
@@ -593,7 +593,7 @@ public class e {
                     if (i13 == 4) {
                         if (i(iArr)) {
                             if (l(iArr, i11, i12)) {
-                                if (this.f25774c) {
+                                if (this.f25775c) {
                                     z11 = m();
                                 } else {
                                     int h11 = h();
@@ -624,7 +624,7 @@ public class e {
             }
             if (i(iArr) && l(iArr, i11, l10)) {
                 i10 = iArr[0];
-                if (this.f25774c) {
+                if (this.f25775c) {
                     z11 = m();
                 }
             }
@@ -646,15 +646,15 @@ public class e {
             if (!Float.isNaN(c10) && b(i14, (int) c10)) {
                 float f10 = i13 / 7.0f;
                 while (true) {
-                    if (i12 < this.f25773b.size()) {
-                        d dVar = (d) this.f25773b.get(i12);
+                    if (i12 < this.f25774b.size()) {
+                        d dVar = (d) this.f25774b.get(i12);
                         if (dVar.f(f10, d10, c10)) {
-                            this.f25773b.set(i12, dVar.g(d10, c10, f10));
+                            this.f25774b.set(i12, dVar.g(d10, c10, f10));
                             break;
                         }
                         i12++;
                     } else {
-                        this.f25773b.add(new d(c10, d10, f10));
+                        this.f25774b.add(new d(c10, d10, f10));
                         break;
                     }
                 }

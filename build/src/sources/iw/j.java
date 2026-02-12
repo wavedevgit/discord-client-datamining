@@ -5,33 +5,33 @@ import kotlin.jvm.internal.Intrinsics;
 public final class j {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f30457a;
+    private final String f30458a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f30458b;
+    private final String f30459b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f30459c;
+    private final String f30460c;
 
     public j(String replaceCandidate, String oldString, String newString) {
         Intrinsics.checkNotNullParameter(replaceCandidate, "replaceCandidate");
         Intrinsics.checkNotNullParameter(oldString, "oldString");
         Intrinsics.checkNotNullParameter(newString, "newString");
-        this.f30457a = replaceCandidate;
-        this.f30458b = oldString;
-        this.f30459c = newString;
+        this.f30458a = replaceCandidate;
+        this.f30459b = oldString;
+        this.f30460c = newString;
     }
 
     public final String a() {
-        return this.f30459c;
+        return this.f30460c;
     }
 
     public final String b() {
-        return this.f30458b;
+        return this.f30459b;
     }
 
     public final String c() {
-        return this.f30457a;
+        return this.f30458a;
     }
 
     public boolean equals(Object obj) {
@@ -42,20 +42,20 @@ public final class j {
             return false;
         }
         j jVar = (j) obj;
-        if (Intrinsics.areEqual(this.f30457a, jVar.f30457a) && Intrinsics.areEqual(this.f30458b, jVar.f30458b) && Intrinsics.areEqual(this.f30459c, jVar.f30459c)) {
+        if (Intrinsics.areEqual(this.f30458a, jVar.f30458a) && Intrinsics.areEqual(this.f30459b, jVar.f30459b) && Intrinsics.areEqual(this.f30460c, jVar.f30460c)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((this.f30457a.hashCode() * 31) + this.f30458b.hashCode()) * 31) + this.f30459c.hashCode();
+        return (((this.f30458a.hashCode() * 31) + this.f30459b.hashCode()) * 31) + this.f30460c.hashCode();
     }
 
     public String toString() {
-        String str = this.f30457a;
-        String str2 = this.f30458b;
-        String str3 = this.f30459c;
+        String str = this.f30458a;
+        String str2 = this.f30459b;
+        String str3 = this.f30460c;
         return "ReplaceData(replaceCandidate=" + str + ", oldString=" + str2 + ", newString=" + str3 + ")";
     }
 }

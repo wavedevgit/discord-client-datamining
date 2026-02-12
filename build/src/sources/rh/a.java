@@ -11,26 +11,26 @@ import r1.c;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int[] f47400a = {16842919};
+    private static final int[] f47401a = {16842919};
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int[] f47401b = {16842908};
+    private static final int[] f47402b = {16842908};
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int[] f47402c = {16842913, 16842919};
+    private static final int[] f47403c = {16842913, 16842919};
 
     /* renamed from: d  reason: collision with root package name */
-    private static final int[] f47403d = {16842913};
+    private static final int[] f47404d = {16842913};
 
     /* renamed from: e  reason: collision with root package name */
-    private static final int[] f47404e = {16842910, 16842919};
+    private static final int[] f47405e = {16842910, 16842919};
 
     /* renamed from: f  reason: collision with root package name */
-    static final String f47405f = a.class.getSimpleName();
+    static final String f47406f = a.class.getSimpleName();
 
     public static ColorStateList a(ColorStateList colorStateList) {
-        int[] iArr = f47401b;
-        return new ColorStateList(new int[][]{f47403d, iArr, StateSet.NOTHING}, new int[]{c(colorStateList, f47402c), c(colorStateList, iArr), c(colorStateList, f47400a)});
+        int[] iArr = f47402b;
+        return new ColorStateList(new int[][]{f47404d, iArr, StateSet.NOTHING}, new int[]{c(colorStateList, f47403c), c(colorStateList, iArr), c(colorStateList, f47401a)});
     }
 
     private static int b(int i10) {
@@ -49,8 +49,8 @@ public abstract class a {
 
     public static ColorStateList d(ColorStateList colorStateList) {
         if (colorStateList != null) {
-            if (Build.VERSION.SDK_INT <= 27 && Color.alpha(colorStateList.getDefaultColor()) == 0 && Color.alpha(colorStateList.getColorForState(f47404e, 0)) != 0) {
-                Log.w(f47405f, "Use a non-transparent color for the default color as it will be used to finish ripple animations.");
+            if (Build.VERSION.SDK_INT <= 27 && Color.alpha(colorStateList.getDefaultColor()) == 0 && Color.alpha(colorStateList.getColorForState(f47405e, 0)) != 0) {
+                Log.w(f47406f, "Use a non-transparent color for the default color as it will be used to finish ripple animations.");
             }
             return colorStateList;
         }

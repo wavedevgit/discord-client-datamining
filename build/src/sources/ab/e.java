@@ -33,8 +33,8 @@ public final class e {
         }
         float f10 = i10;
         float f11 = i11;
-        float max = Math.max(resizeOptions.f11063a / f10, resizeOptions.f11064b / f11);
-        float f12 = resizeOptions.f11065c;
+        float max = Math.max(resizeOptions.f11064a / f10, resizeOptions.f11065b / f11);
+        float f12 = resizeOptions.f11066c;
         if (f10 * max > f12) {
             max = f12 / f10;
         }
@@ -114,7 +114,7 @@ public final class e {
         } else {
             height = encodedImage.getHeight();
         }
-        int k10 = k(b(resizeOptions, width, height), resizeOptions.f11066d);
+        int k10 = k(b(resizeOptions, width, height), resizeOptions.f11067d);
         if (k10 > 8) {
             return 8;
         }

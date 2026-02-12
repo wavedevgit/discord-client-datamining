@@ -10,74 +10,74 @@ import okio.Timeout;
 public final class r implements Source {
 
     /* renamed from: s  reason: collision with root package name */
-    static final ByteString f18837s = ByteString.h("[]{}\"'/#");
+    static final ByteString f18838s = ByteString.h("[]{}\"'/#");
 
     /* renamed from: t  reason: collision with root package name */
-    static final ByteString f18838t = ByteString.h("'\\");
+    static final ByteString f18839t = ByteString.h("'\\");
 
     /* renamed from: u  reason: collision with root package name */
-    static final ByteString f18839u = ByteString.h("\"\\");
+    static final ByteString f18840u = ByteString.h("\"\\");
 
     /* renamed from: v  reason: collision with root package name */
-    static final ByteString f18840v = ByteString.h("\r\n");
+    static final ByteString f18841v = ByteString.h("\r\n");
 
     /* renamed from: w  reason: collision with root package name */
-    static final ByteString f18841w = ByteString.h("*");
+    static final ByteString f18842w = ByteString.h("*");
 
     /* renamed from: x  reason: collision with root package name */
-    static final ByteString f18842x = ByteString.f40592p;
+    static final ByteString f18843x = ByteString.f40593p;
 
     /* renamed from: d  reason: collision with root package name */
-    private final BufferedSource f18843d;
+    private final BufferedSource f18844d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Buffer f18844e;
+    private final Buffer f18845e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Buffer f18845i;
+    private final Buffer f18846i;
 
     /* renamed from: o  reason: collision with root package name */
-    private ByteString f18846o;
+    private ByteString f18847o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f18847p;
+    private int f18848p;
 
     /* renamed from: q  reason: collision with root package name */
-    private long f18848q = 0;
+    private long f18849q = 0;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f18849r = false;
+    private boolean f18850r = false;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public r(BufferedSource bufferedSource, Buffer buffer, ByteString byteString, int i10) {
-        this.f18843d = bufferedSource;
-        this.f18844e = bufferedSource.f();
-        this.f18845i = buffer;
-        this.f18846o = byteString;
-        this.f18847p = i10;
+        this.f18844d = bufferedSource;
+        this.f18845e = bufferedSource.f();
+        this.f18846i = buffer;
+        this.f18847o = byteString;
+        this.f18848p = i10;
     }
 
     private void a(long j10) {
         while (true) {
-            long j11 = this.f18848q;
+            long j11 = this.f18849q;
             if (j11 < j10) {
-                ByteString byteString = this.f18846o;
-                ByteString byteString2 = f18842x;
+                ByteString byteString = this.f18847o;
+                ByteString byteString2 = f18843x;
                 if (byteString != byteString2) {
-                    if (j11 == this.f18844e.size()) {
-                        if (this.f18848q <= 0) {
-                            this.f18843d.U0(1L);
+                    if (j11 == this.f18845e.size()) {
+                        if (this.f18849q <= 0) {
+                            this.f18844d.U0(1L);
                         } else {
                             return;
                         }
                     }
-                    long C0 = this.f18844e.C0(this.f18846o, this.f18848q);
+                    long C0 = this.f18845e.C0(this.f18847o, this.f18849q);
                     if (C0 == -1) {
-                        this.f18848q = this.f18844e.size();
+                        this.f18849q = this.f18845e.size();
                     } else {
-                        byte Z = this.f18844e.Z(C0);
-                        ByteString byteString3 = this.f18846o;
-                        ByteString byteString4 = f18837s;
+                        byte Z = this.f18845e.Z(C0);
+                        ByteString byteString3 = this.f18847o;
+                        ByteString byteString4 = f18838s;
                         if (byteString3 == byteString4) {
                             if (Z != 34) {
                                 if (Z != 35) {
@@ -90,69 +90,69 @@ public final class r implements Source {
                                                         }
                                                     }
                                                 }
-                                                int i10 = this.f18847p - 1;
-                                                this.f18847p = i10;
+                                                int i10 = this.f18848p - 1;
+                                                this.f18848p = i10;
                                                 if (i10 == 0) {
-                                                    this.f18846o = byteString2;
+                                                    this.f18847o = byteString2;
                                                 }
-                                                this.f18848q = C0 + 1;
+                                                this.f18849q = C0 + 1;
                                             }
-                                            this.f18847p++;
-                                            this.f18848q = C0 + 1;
+                                            this.f18848p++;
+                                            this.f18849q = C0 + 1;
                                         } else {
                                             long j12 = 2 + C0;
-                                            this.f18843d.U0(j12);
+                                            this.f18844d.U0(j12);
                                             long j13 = C0 + 1;
-                                            byte Z2 = this.f18844e.Z(j13);
+                                            byte Z2 = this.f18845e.Z(j13);
                                             if (Z2 == 47) {
-                                                this.f18846o = f18840v;
-                                                this.f18848q = j12;
+                                                this.f18847o = f18841v;
+                                                this.f18849q = j12;
                                             } else if (Z2 == 42) {
-                                                this.f18846o = f18841w;
-                                                this.f18848q = j12;
+                                                this.f18847o = f18842w;
+                                                this.f18849q = j12;
                                             } else {
-                                                this.f18848q = j13;
+                                                this.f18849q = j13;
                                             }
                                         }
                                     } else {
-                                        this.f18846o = f18838t;
-                                        this.f18848q = C0 + 1;
+                                        this.f18847o = f18839t;
+                                        this.f18849q = C0 + 1;
                                     }
                                 } else {
-                                    this.f18846o = f18840v;
-                                    this.f18848q = C0 + 1;
+                                    this.f18847o = f18841v;
+                                    this.f18849q = C0 + 1;
                                 }
                             } else {
-                                this.f18846o = f18839u;
-                                this.f18848q = C0 + 1;
+                                this.f18847o = f18840u;
+                                this.f18849q = C0 + 1;
                             }
-                        } else if (byteString3 != f18838t && byteString3 != f18839u) {
-                            if (byteString3 == f18841w) {
+                        } else if (byteString3 != f18839t && byteString3 != f18840u) {
+                            if (byteString3 == f18842w) {
                                 long j14 = 2 + C0;
-                                this.f18843d.U0(j14);
+                                this.f18844d.U0(j14);
                                 long j15 = C0 + 1;
-                                if (this.f18844e.Z(j15) == 47) {
-                                    this.f18848q = j14;
-                                    this.f18846o = byteString4;
+                                if (this.f18845e.Z(j15) == 47) {
+                                    this.f18849q = j14;
+                                    this.f18847o = byteString4;
                                 } else {
-                                    this.f18848q = j15;
+                                    this.f18849q = j15;
                                 }
-                            } else if (byteString3 == f18840v) {
-                                this.f18848q = C0 + 1;
-                                this.f18846o = byteString4;
+                            } else if (byteString3 == f18841v) {
+                                this.f18849q = C0 + 1;
+                                this.f18847o = byteString4;
                             } else {
                                 throw new AssertionError();
                             }
                         } else if (Z == 92) {
                             long j16 = C0 + 2;
-                            this.f18843d.U0(j16);
-                            this.f18848q = j16;
+                            this.f18844d.U0(j16);
+                            this.f18849q = j16;
                         } else {
-                            if (this.f18847p > 0) {
+                            if (this.f18848p > 0) {
                                 byteString2 = byteString4;
                             }
-                            this.f18846o = byteString2;
-                            this.f18848q = C0 + 1;
+                            this.f18847o = byteString2;
+                            this.f18849q = C0 + 1;
                         }
                     }
                 } else {
@@ -166,27 +166,27 @@ public final class r implements Source {
 
     @Override // okio.Source, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f18849r = true;
+        this.f18850r = true;
     }
 
     public void h() {
-        this.f18849r = true;
-        while (this.f18846o != f18842x) {
+        this.f18850r = true;
+        while (this.f18847o != f18843x) {
             a(8192L);
-            this.f18843d.skip(this.f18848q);
+            this.f18844d.skip(this.f18849q);
         }
     }
 
     @Override // okio.Source
     public long read(Buffer buffer, long j10) {
-        if (!this.f18849r) {
+        if (!this.f18850r) {
             if (j10 == 0) {
                 return 0L;
             }
-            if (!this.f18845i.p1()) {
-                long read = this.f18845i.read(buffer, j10);
+            if (!this.f18846i.p1()) {
+                long read = this.f18846i.read(buffer, j10);
                 long j11 = j10 - read;
-                if (!this.f18844e.p1()) {
+                if (!this.f18845e.p1()) {
                     long read2 = read(buffer, j11);
                     if (read2 != -1) {
                         return read2 + read;
@@ -195,16 +195,16 @@ public final class r implements Source {
                 return read;
             }
             a(j10);
-            long j12 = this.f18848q;
+            long j12 = this.f18849q;
             if (j12 == 0) {
-                if (this.f18846o == f18842x) {
+                if (this.f18847o == f18843x) {
                     return -1L;
                 }
                 throw new AssertionError();
             }
             long min = Math.min(j10, j12);
-            buffer.u0(this.f18844e, min);
-            this.f18848q -= min;
+            buffer.u0(this.f18845e, min);
+            this.f18849q -= min;
             return min;
         }
         throw new IllegalStateException("closed");
@@ -212,6 +212,6 @@ public final class r implements Source {
 
     @Override // okio.Source
     public Timeout timeout() {
-        return this.f18843d.timeout();
+        return this.f18844d.timeout();
     }
 }

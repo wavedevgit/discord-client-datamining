@@ -14,22 +14,22 @@ import java.util.List;
 public final class a extends View implements SubtitleView.a {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f13930d;
+    private final List f13931d;
 
     /* renamed from: e  reason: collision with root package name */
-    private List f13931e;
+    private List f13932e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f13932i;
+    private int f13933i;
 
     /* renamed from: o  reason: collision with root package name */
-    private float f13933o;
+    private float f13934o;
 
     /* renamed from: p  reason: collision with root package name */
-    private le.b f13934p;
+    private le.b f13935p;
 
     /* renamed from: q  reason: collision with root package name */
-    private float f13935q;
+    private float f13936q;
 
     public a(Context context) {
         this(context, null);
@@ -55,20 +55,20 @@ public final class a extends View implements SubtitleView.a {
 
     @Override // com.google.android.exoplayer2.ui.SubtitleView.a
     public void a(List list, le.b bVar, float f10, int i10, float f11) {
-        this.f13931e = list;
-        this.f13934p = bVar;
-        this.f13933o = f10;
-        this.f13932i = i10;
-        this.f13935q = f11;
-        while (this.f13930d.size() < list.size()) {
-            this.f13930d.add(new f(getContext()));
+        this.f13932e = list;
+        this.f13935p = bVar;
+        this.f13934o = f10;
+        this.f13933i = i10;
+        this.f13936q = f11;
+        while (this.f13931d.size() < list.size()) {
+            this.f13931d.add(new f(getContext()));
         }
         invalidate();
     }
 
     @Override // android.view.View
     public void dispatchDraw(Canvas canvas) {
-        List list = this.f13931e;
+        List list = this.f13932e;
         if (!list.isEmpty()) {
             int height = getHeight();
             int paddingLeft = getPaddingLeft();
@@ -77,7 +77,7 @@ public final class a extends View implements SubtitleView.a {
             int paddingBottom = height - getPaddingBottom();
             if (paddingBottom > paddingTop && width > paddingLeft) {
                 int i10 = paddingBottom - paddingTop;
-                float f10 = i.f(this.f13932i, this.f13933o, height, i10);
+                float f10 = i.f(this.f13933i, this.f13934o, height, i10);
                 if (f10 > 0.0f) {
                     int size = list.size();
                     for (int i11 = 0; i11 < size; i11++) {
@@ -85,7 +85,7 @@ public final class a extends View implements SubtitleView.a {
                         if (bVar.A != Integer.MIN_VALUE) {
                             bVar = b(bVar);
                         }
-                        ((f) this.f13930d.get(i11)).b(bVar, this.f13934p, f10, i.f(bVar.f719y, bVar.f720z, height, i10), this.f13935q, canvas, paddingLeft, paddingTop, width, paddingBottom);
+                        ((f) this.f13931d.get(i11)).b(bVar, this.f13935p, f10, i.f(bVar.f719y, bVar.f720z, height, i10), this.f13936q, canvas, paddingLeft, paddingTop, width, paddingBottom);
                     }
                 }
             }
@@ -94,11 +94,11 @@ public final class a extends View implements SubtitleView.a {
 
     public a(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f13930d = new ArrayList();
-        this.f13931e = Collections.EMPTY_LIST;
-        this.f13932i = 0;
-        this.f13933o = 0.0533f;
-        this.f13934p = le.b.f35716g;
-        this.f13935q = 0.08f;
+        this.f13931d = new ArrayList();
+        this.f13932e = Collections.EMPTY_LIST;
+        this.f13933i = 0;
+        this.f13934o = 0.0533f;
+        this.f13935p = le.b.f35717g;
+        this.f13936q = 0.08f;
     }
 }

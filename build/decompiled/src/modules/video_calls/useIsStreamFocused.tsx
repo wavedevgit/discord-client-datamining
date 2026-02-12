@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/video_calls/useIsStreamFocused.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun65309: for (var _fun65309_ip = 0;;) switch (_fun65309_ip) {
+        _fun66684: for (var _fun66684_ip = 0;;) switch (_fun66684_ip) {
             case 0:
                 var1 = arg0;
                 var _closure2_slot0 = var1;
@@ -47,14 +47,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var6;
                 var0 = function() { // Environment: var0
-                    _fun65310: for (var _fun65310_ip = 0;;) switch (_fun65310_ip) {
+                    _fun66685: for (var _fun66685_ip = 0;;) switch (_fun66685_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var0 = null;
                             var2 = var0 != var2;
                             if (!var2) {
-                                _fun65310_ip = 38;
-                                continue _fun65310
+                                _fun66685_ip = 38;
+                                continue _fun66685
                             }
                         case 16:
                             var3 = _closure1_slot2;
@@ -69,13 +69,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun65309_ip = 80;
-                    continue _fun65309
+                    _fun66684_ip = 82;
+                    continue _fun66684
                 }
-            case 71:
+            case 73:
                 var1 = _closure1_slot3;
                 var0 = var1.bind(var3)(var2);
-            case 80:
+            case 82:
                 return var0;
         }
     };

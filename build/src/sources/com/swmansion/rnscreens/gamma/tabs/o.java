@@ -10,21 +10,21 @@ import kotlin.text.StringsKt;
 public final class o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ContextThemeWrapper f19277a;
+    private final ContextThemeWrapper f19278a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.google.android.material.bottomnavigation.c f19278b;
+    private final com.google.android.material.bottomnavigation.c f19279b;
 
     public o(ContextThemeWrapper context, com.google.android.material.bottomnavigation.c bottomNavigationView) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(bottomNavigationView, "bottomNavigationView");
-        this.f19277a = context;
-        this.f19278b = bottomNavigationView;
+        this.f19278a = context;
+        this.f19279b = bottomNavigationView;
     }
 
     private final int a(int i10) {
         TypedValue typedValue = new TypedValue();
-        this.f19277a.getTheme().resolveAttribute(i10, typedValue, true);
+        this.f19278a.getTheme().resolveAttribute(i10, typedValue, true);
         return typedValue.data;
     }
 
@@ -33,12 +33,12 @@ public final class o {
         int a11;
         Intrinsics.checkNotNullParameter(menuItem, "menuItem");
         Intrinsics.checkNotNullParameter(tabScreen, "tabScreen");
-        Menu menu = this.f19278b.getMenu();
+        Menu menu = this.f19279b.getMenu();
         Intrinsics.checkNotNullExpressionValue(menu, "getMenu(...)");
         int M = kotlin.sequences.k.M(androidx.core.view.r.a(menu), menuItem);
         String badgeValue = tabScreen.getBadgeValue();
         if (badgeValue == null) {
-            dh.a d10 = this.f19278b.d(M);
+            dh.a d10 = this.f19279b.d(M);
             if (d10 != null) {
                 d10.X(false);
                 return;
@@ -46,7 +46,7 @@ public final class o {
             return;
         }
         Integer intOrNull = StringsKt.toIntOrNull(badgeValue);
-        dh.a e10 = this.f19278b.e(M);
+        dh.a e10 = this.f19279b.e(M);
         Intrinsics.checkNotNullExpressionValue(e10, "getOrCreateBadge(...)");
         e10.X(true);
         e10.f();
@@ -67,7 +67,7 @@ public final class o {
         if (tabBarItemBadgeBackgroundColor != null) {
             a11 = tabBarItemBadgeBackgroundColor.intValue();
         } else {
-            a11 = a(f.a.f23297v);
+            a11 = a(f.a.f23298v);
         }
         e10.S(a11);
     }
@@ -82,7 +82,7 @@ public final class o {
             r11 = this;
             java.lang.String r0 = "tabsHost"
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r12, r0)
-            com.google.android.material.bottomnavigation.c r0 = r11.f19278b
+            com.google.android.material.bottomnavigation.c r0 = r11.f19279b
             r1 = 0
             android.view.View r0 = r0.getChildAt(r1)
             java.lang.String r2 = "null cannot be cast to non-null type android.view.ViewGroup"
@@ -126,7 +126,7 @@ public final class o {
             if (r7 != 0) goto L71
             java.lang.String r7 = ""
         L71:
-            androidx.appcompat.view.ContextThemeWrapper r8 = r11.f19277a
+            androidx.appcompat.view.ContextThemeWrapper r8 = r11.f19278a
             android.content.res.AssetManager r8 = r8.getAssets()
             java.lang.String r9 = "getAssets(...)"
             kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(r8, r9)
@@ -148,7 +148,7 @@ public final class o {
             float r5 = com.facebook.react.uimanager.PixelUtil.toPixelFromSP$default(r5, r8, r6, r7)
             goto Laa
         L9e:
-            androidx.appcompat.view.ContextThemeWrapper r5 = r11.f19277a
+            androidx.appcompat.view.ContextThemeWrapper r5 = r11.f19278a
             android.content.res.Resources r5 = r5.getResources()
             int r9 = bh.d.f6790i
             float r5 = r5.getDimension(r9)
@@ -167,7 +167,7 @@ public final class o {
             float r6 = com.facebook.react.uimanager.PixelUtil.toPixelFromSP$default(r9, r8, r6, r7)
             goto Ld1
         Lc5:
-            androidx.appcompat.view.ContextThemeWrapper r6 = r11.f19277a
+            androidx.appcompat.view.ContextThemeWrapper r6 = r11.f19278a
             android.content.res.Resources r6 = r6.getResources()
             int r7 = bh.d.f6790i
             float r6 = r6.getDimension(r7)

@@ -3,10 +3,10 @@ package og;
 public final class pf {
 
     /* renamed from: a  reason: collision with root package name */
-    private xe f39583a;
+    private xe f39584a;
 
     public final pf b(xe xeVar) {
-        this.f39583a = xeVar;
+        this.f39584a = xeVar;
         return this;
     }
 

@@ -10,13 +10,13 @@ import java.util.Set;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final AbstractC0316a f23720a;
+    private final AbstractC0316a f23721a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final g f23721b;
+    private final g f23722b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f23722c;
+    private final String f23723c;
 
     /* renamed from: ff.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -42,7 +42,7 @@ public final class a {
     public interface d {
 
         /* renamed from: g  reason: collision with root package name */
-        public static final C0317a f23723g = new C0317a(null);
+        public static final C0317a f23724g = new C0317a(null);
 
         /* renamed from: ff.a$d$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -94,20 +94,20 @@ public final class a {
     public a(String str, AbstractC0316a abstractC0316a, g gVar) {
         q.m(abstractC0316a, "Cannot construct an Api with a null ClientBuilder");
         q.m(gVar, "Cannot construct an Api with a null ClientKey");
-        this.f23722c = str;
-        this.f23720a = abstractC0316a;
-        this.f23721b = gVar;
+        this.f23723c = str;
+        this.f23721a = abstractC0316a;
+        this.f23722b = gVar;
     }
 
     public final AbstractC0316a a() {
-        return this.f23720a;
+        return this.f23721a;
     }
 
     public final c b() {
-        return this.f23721b;
+        return this.f23722b;
     }
 
     public final String c() {
-        return this.f23722c;
+        return this.f23723c;
     }
 }

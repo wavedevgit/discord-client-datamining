@@ -20,10 +20,10 @@ public abstract class k {
         
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f56295d;
+        private final int f56296d;
 
         b(int i10) {
-            this.f56295d = i10;
+            this.f56296d = i10;
         }
     }
 

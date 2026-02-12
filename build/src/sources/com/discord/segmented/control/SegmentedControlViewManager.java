@@ -58,7 +58,7 @@ public final class SegmentedControlViewManager extends SimpleViewManager<Segment
     public static final Unit createViewInstance$lambda$1$lambda$0(SegmentedControlViewManager segmentedControlViewManager, ThemedReactContext themedReactContext, SegmentedControlView segmentedControlView, int i10, String label) {
         Intrinsics.checkNotNullParameter(label, "label");
         segmentedControlViewManager.reactEvents.emitEvent(themedReactContext, segmentedControlView, new ValueChangeEvent(label, i10));
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @Override // com.facebook.react.uimanager.BaseViewManager, com.facebook.react.uimanager.ViewManager

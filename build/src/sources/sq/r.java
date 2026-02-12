@@ -10,23 +10,23 @@ import com.google.android.material.textfield.TextInputLayout;
 public final class r implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final TextInputLayout f48282a;
+    private final TextInputLayout f48283a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final TextInputLayout f48283b;
+    public final TextInputLayout f48284b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final AutoCompleteTextView f48284c;
+    public final AutoCompleteTextView f48285c;
 
     private r(TextInputLayout textInputLayout, TextInputLayout textInputLayout2, AutoCompleteTextView autoCompleteTextView) {
-        this.f48282a = textInputLayout;
-        this.f48283b = textInputLayout2;
-        this.f48284c = autoCompleteTextView;
+        this.f48283a = textInputLayout;
+        this.f48284b = textInputLayout2;
+        this.f48285c = autoCompleteTextView;
     }
 
     public static r a(View view) {
         TextInputLayout textInputLayout = (TextInputLayout) view;
-        int i10 = nq.e.f38299z0;
+        int i10 = nq.e.f38300z0;
         AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) e4.a.a(view, i10);
         if (autoCompleteTextView != null) {
             return new r(textInputLayout, textInputLayout, autoCompleteTextView);
@@ -39,7 +39,7 @@ public final class r implements ViewBinding {
     }
 
     public static r d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(nq.f.f38318s, viewGroup, false);
+        View inflate = layoutInflater.inflate(nq.f.f38319s, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -49,6 +49,6 @@ public final class r implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public TextInputLayout getRoot() {
-        return this.f48282a;
+        return this.f48283a;
     }
 }

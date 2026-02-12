@@ -5,7 +5,7 @@ import bj.c;
 final class c7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final c7 f46609a = new c7();
+    static final c7 f46610a = new c7();
 
     static {
         c.b a10 = bj.c.a("landmarkMode");

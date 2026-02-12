@@ -212,4 +212,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'voice-panel-nsfw';
     var2.VOICE_PANEL_NSFW_KEY = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1416, 1410, 33, 4022, 4022, 1234, 4687, 4237, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1416, 1410, 33, 4022, 4022, 1234, 4686, 4237, 2]);

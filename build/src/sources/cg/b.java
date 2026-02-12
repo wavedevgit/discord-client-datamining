@@ -36,7 +36,7 @@ public final class b extends g {
     @Override // hf.c, ff.a.f
     public final boolean h() {
         hf.d h02 = h0();
-        if (!TextUtils.isEmpty(h02.b()) && !h02.e(ve.b.f51569a).isEmpty()) {
+        if (!TextUtils.isEmpty(h02.b()) && !h02.e(ve.b.f51570a).isEmpty()) {
             return true;
         }
         return false;
@@ -44,7 +44,7 @@ public final class b extends g {
 
     @Override // hf.c, ff.a.f
     public final int n() {
-        return com.google.android.gms.common.k.f14497a;
+        return com.google.android.gms.common.k.f14498a;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

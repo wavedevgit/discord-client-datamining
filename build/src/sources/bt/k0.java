@@ -76,7 +76,7 @@ public final class k0 extends ct.b implements MutableStateFlow, c, ct.q {
                 int i12 = i11 + 1;
                 this.f7599p = i12;
                 ct.d[] m11 = m();
-                Unit unit = Unit.f31987a;
+                Unit unit = Unit.f31988a;
                 while (true) {
                     m0[] m0VarArr = (m0[]) m11;
                     if (m0VarArr != null) {
@@ -93,7 +93,7 @@ public final class k0 extends ct.b implements MutableStateFlow, c, ct.q {
                             return true;
                         }
                         m10 = m();
-                        Unit unit2 = Unit.f31987a;
+                        Unit unit2 = Unit.f31988a;
                     }
                     m11 = m10;
                     i12 = i10;
@@ -157,7 +157,7 @@ public final class k0 extends ct.b implements MutableStateFlow, c, ct.q {
     @Override // kotlinx.coroutines.flow.MutableSharedFlow, kotlinx.coroutines.flow.FlowCollector
     public Object emit(Object obj, Continuation continuation) {
         setValue(obj);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @Override // ct.q
@@ -167,7 +167,7 @@ public final class k0 extends ct.b implements MutableStateFlow, c, ct.q {
 
     @Override // kotlinx.coroutines.flow.MutableStateFlow, bt.j0
     public Object getValue() {
-        dt.e0 e0Var = ct.t.f21097a;
+        dt.e0 e0Var = ct.t.f21098a;
         Object obj = f7598q.get(this);
         if (obj == e0Var) {
             return null;
@@ -178,10 +178,10 @@ public final class k0 extends ct.b implements MutableStateFlow, c, ct.q {
     @Override // kotlinx.coroutines.flow.MutableStateFlow
     public boolean h(Object obj, Object obj2) {
         if (obj == null) {
-            obj = ct.t.f21097a;
+            obj = ct.t.f21098a;
         }
         if (obj2 == null) {
-            obj2 = ct.t.f21097a;
+            obj2 = ct.t.f21098a;
         }
         return q(obj, obj2);
     }
@@ -208,7 +208,7 @@ public final class k0 extends ct.b implements MutableStateFlow, c, ct.q {
     @Override // kotlinx.coroutines.flow.MutableStateFlow
     public void setValue(Object obj) {
         if (obj == null) {
-            obj = ct.t.f21097a;
+            obj = ct.t.f21098a;
         }
         q(null, obj);
     }

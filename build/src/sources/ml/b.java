@@ -12,7 +12,7 @@ public class b extends g {
 
     @Override // ml.g
     public String e() {
-        return com.henninghall.date_picker.h.a(this.f36544a.v());
+        return com.henninghall.date_picker.h.a(this.f36545a.v());
     }
 
     @Override // ml.g
@@ -35,7 +35,7 @@ public class b extends g {
 
     @Override // ml.g
     public boolean u() {
-        if (this.f36544a.z() == il.b.date) {
+        if (this.f36545a.z() == il.b.date) {
             return true;
         }
         return false;

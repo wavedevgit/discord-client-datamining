@@ -5,23 +5,23 @@ import bj.c;
 final class z3 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final z3 f42706a = new z3();
+    static final z3 f42707a = new z3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f42707b;
+    private static final bj.c f42708b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f42708c;
+    private static final bj.c f42709c;
 
     static {
         c.b a10 = bj.c.a("eventType");
         f fVar = new f();
         fVar.a(1);
-        f42707b = a10.b(fVar.b()).a();
+        f42708b = a10.b(fVar.b()).a();
         c.b a11 = bj.c.a("errorCode");
         f fVar2 = new f();
         fVar2.a(2);
-        f42708c = a11.b(fVar2.b()).a();
+        f42709c = a11.b(fVar2.b()).a();
     }
 
     private z3() {

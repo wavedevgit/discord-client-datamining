@@ -8,17 +8,17 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f19851a;
+    private final c f19852a;
 
     public a(c params) {
         Intrinsics.checkNotNullParameter(params, "params");
-        this.f19851a = params;
+        this.f19852a = params;
     }
 
     public final ip.a a(d fallbackModeApiController, f.a offlineModeApiController) {
         Intrinsics.checkNotNullParameter(fallbackModeApiController, "fallbackModeApiController");
         Intrinsics.checkNotNullParameter(offlineModeApiController, "offlineModeApiController");
-        c cVar = this.f19851a;
+        c cVar = this.f19852a;
         if (cVar instanceof c.b) {
             return offlineModeApiController.b(((c.b) cVar).a());
         }

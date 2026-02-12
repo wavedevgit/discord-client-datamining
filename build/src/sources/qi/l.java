@@ -6,16 +6,16 @@ import java.util.Comparator;
 final class l extends i0 implements Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    final Comparator f45360d;
+    final Comparator f45361d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public l(Comparator comparator) {
-        this.f45360d = (Comparator) pi.m.j(comparator);
+        this.f45361d = (Comparator) pi.m.j(comparator);
     }
 
     @Override // qi.i0, java.util.Comparator
     public int compare(Object obj, Object obj2) {
-        return this.f45360d.compare(obj, obj2);
+        return this.f45361d.compare(obj, obj2);
     }
 
     @Override // java.util.Comparator
@@ -24,16 +24,16 @@ final class l extends i0 implements Serializable {
             return true;
         }
         if (obj instanceof l) {
-            return this.f45360d.equals(((l) obj).f45360d);
+            return this.f45361d.equals(((l) obj).f45361d);
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f45360d.hashCode();
+        return this.f45361d.hashCode();
     }
 
     public String toString() {
-        return this.f45360d.toString();
+        return this.f45361d.toString();
     }
 }

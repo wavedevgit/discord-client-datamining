@@ -10,14 +10,14 @@ import okio.ByteString;
 final class c implements h {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ByteString f26049b = ByteString.f("EFBBBF");
+    private static final ByteString f26050b = ByteString.f("EFBBBF");
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.squareup.moshi.h f26050a;
+    private final com.squareup.moshi.h f26051a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(com.squareup.moshi.h hVar) {
-        this.f26050a = hVar;
+        this.f26051a = hVar;
     }
 
     @Override // fw.h
@@ -25,12 +25,12 @@ final class c implements h {
     public Object a(ResponseBody responseBody) {
         BufferedSource source = responseBody.source();
         try {
-            ByteString byteString = f26049b;
+            ByteString byteString = f26050b;
             if (source.r0(0L, byteString)) {
                 source.skip(byteString.G());
             }
             m p10 = m.p(source);
-            Object fromJson = this.f26050a.fromJson(p10);
+            Object fromJson = this.f26051a.fromJson(p10);
             if (p10.s() == m.c.END_DOCUMENT) {
                 responseBody.close();
                 return fromJson;

@@ -52,9 +52,9 @@ public final class JavaIncompatibilityRulesOverridabilityCondition implements Ex
             }
             List<ValueParameterDescriptor> valueParameters = functionDescriptor.getValueParameters();
             Intrinsics.checkNotNullExpressionValue(valueParameters, "getValueParameters(...)");
-            ClassifierDescriptor mo1202getDeclarationDescriptor = ((ValueParameterDescriptor) CollectionsKt.Q0(valueParameters)).getType().getConstructor().mo1202getDeclarationDescriptor();
-            if (mo1202getDeclarationDescriptor instanceof ClassDescriptor) {
-                classDescriptor2 = (ClassDescriptor) mo1202getDeclarationDescriptor;
+            ClassifierDescriptor mo1201getDeclarationDescriptor = ((ValueParameterDescriptor) CollectionsKt.Q0(valueParameters)).getType().getConstructor().mo1201getDeclarationDescriptor();
+            if (mo1201getDeclarationDescriptor instanceof ClassDescriptor) {
+                classDescriptor2 = (ClassDescriptor) mo1201getDeclarationDescriptor;
             }
             if (classDescriptor2 == null || !KotlinBuiltIns.isPrimitiveClass(classDescriptor) || !Intrinsics.areEqual(DescriptorUtilsKt.getFqNameSafe(classDescriptor), DescriptorUtilsKt.getFqNameSafe(classDescriptor2))) {
                 return false;

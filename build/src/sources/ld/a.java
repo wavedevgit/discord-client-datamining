@@ -12,34 +12,34 @@ import pi.d;
 public final class a extends e {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Pattern f35701c = Pattern.compile("(.+?)='(.*?)';", 32);
+    private static final Pattern f35702c = Pattern.compile("(.+?)='(.*?)';", 32);
 
     /* renamed from: a  reason: collision with root package name */
-    private final CharsetDecoder f35702a = d.f42737c.newDecoder();
+    private final CharsetDecoder f35703a = d.f42738c.newDecoder();
 
     /* renamed from: b  reason: collision with root package name */
-    private final CharsetDecoder f35703b = d.f42736b.newDecoder();
+    private final CharsetDecoder f35704b = d.f42737b.newDecoder();
 
     private String c(ByteBuffer byteBuffer) {
         try {
-            return this.f35702a.decode(byteBuffer).toString();
+            return this.f35703a.decode(byteBuffer).toString();
         } catch (CharacterCodingException unused) {
             try {
-                String charBuffer = this.f35703b.decode(byteBuffer).toString();
-                this.f35703b.reset();
+                String charBuffer = this.f35704b.decode(byteBuffer).toString();
+                this.f35704b.reset();
                 byteBuffer.rewind();
                 return charBuffer;
             } catch (CharacterCodingException unused2) {
-                this.f35703b.reset();
+                this.f35704b.reset();
                 byteBuffer.rewind();
                 return null;
             } catch (Throwable th2) {
-                this.f35703b.reset();
+                this.f35704b.reset();
                 byteBuffer.rewind();
                 throw th2;
             }
         } finally {
-            this.f35702a.reset();
+            this.f35703a.reset();
             byteBuffer.rewind();
         }
     }
@@ -53,7 +53,7 @@ public final class a extends e {
         if (c10 == null) {
             return new Metadata(new c(bArr, null, null));
         }
-        Matcher matcher = f35701c.matcher(c10);
+        Matcher matcher = f35702c.matcher(c10);
         String str2 = null;
         for (int i10 = 0; matcher.find(i10); i10 = matcher.end()) {
             String group = matcher.group(1);

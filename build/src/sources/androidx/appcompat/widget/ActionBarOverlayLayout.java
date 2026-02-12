@@ -26,7 +26,7 @@ import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 @SuppressLint({"UnknownNullness"})
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.core.view.u, androidx.core.view.v {
-    static final int[] R = {f.a.f23277b, 16842841};
+    static final int[] R = {f.a.f23278b, 16842841};
     private static final WindowInsetsCompat S = new WindowInsetsCompat.a().d(Insets.c(0, 1, 0, 1)).a();
     private static final Rect T = new Rect();
     private final Rect A;
@@ -708,9 +708,9 @@ public class ActionBarOverlayLayout extends ViewGroup implements y, androidx.cor
 
     void u() {
         if (this.f1550i == null) {
-            this.f1550i = (ContentFrameLayout) findViewById(f.f.f23351b);
-            this.f1551o = (ActionBarContainer) findViewById(f.f.f23352c);
-            this.f1552p = o(findViewById(f.f.f23350a));
+            this.f1550i = (ContentFrameLayout) findViewById(f.f.f23352b);
+            this.f1551o = (ActionBarContainer) findViewById(f.f.f23353c);
+            this.f1552p = o(findViewById(f.f.f23351a));
         }
     }
 

@@ -21,10 +21,10 @@ import y8.c;
 public class GingerbreadPurgeableDecoder extends DalvikPurgeableDecoder {
 
     /* renamed from: d  reason: collision with root package name */
-    private static Method f11268d;
+    private static Method f11269d;
 
     /* renamed from: c  reason: collision with root package name */
-    private final b f11269c = c.i();
+    private final b f11270c = c.i();
 
     private static MemoryFile h(CloseableReference closeableReference, int i10, byte[] bArr) {
         int length;
@@ -91,7 +91,7 @@ public class GingerbreadPurgeableDecoder extends DalvikPurgeableDecoder {
         }
         try {
             FileDescriptor k10 = k(h10);
-            b bVar = this.f11269c;
+            b bVar = this.f11270c;
             if (bVar != null) {
                 Bitmap bitmap = (Bitmap) p8.j.h(bVar.a(k10, null, options), "BitmapFactory returned null");
                 if (h10 != null) {
@@ -115,14 +115,14 @@ public class GingerbreadPurgeableDecoder extends DalvikPurgeableDecoder {
     }
 
     private synchronized Method j() {
-        if (f11268d == null) {
+        if (f11269d == null) {
             try {
-                f11268d = MemoryFile.class.getDeclaredMethod("getFileDescriptor", null);
+                f11269d = MemoryFile.class.getDeclaredMethod("getFileDescriptor", null);
             } catch (Exception e10) {
                 throw n.a(e10);
             }
         }
-        return f11268d;
+        return f11269d;
     }
 
     private FileDescriptor k(MemoryFile memoryFile) {
@@ -144,7 +144,7 @@ public class GingerbreadPurgeableDecoder extends DalvikPurgeableDecoder {
         if (DalvikPurgeableDecoder.e(closeableReference, i10)) {
             bArr = null;
         } else {
-            bArr = DalvikPurgeableDecoder.f11256b;
+            bArr = DalvikPurgeableDecoder.f11257b;
         }
         return i(closeableReference, i10, bArr, options);
     }

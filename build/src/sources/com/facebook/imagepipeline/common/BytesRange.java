@@ -14,10 +14,10 @@ import p8.j;
 public final class BytesRange {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f11039c = new a(null);
+    public static final a f11040c = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Lazy f11040d = l.b(new Function0() { // from class: na.a
+    private static final Lazy f11041d = l.b(new Function0() { // from class: na.a
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             Pattern e10;
@@ -27,10 +27,10 @@ public final class BytesRange {
     });
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f11041a;
+    public final int f11042a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f11042b;
+    public final int f11043b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -39,7 +39,7 @@ public final class BytesRange {
         }
 
         private final Pattern d() {
-            Object value = BytesRange.f11040d.getValue();
+            Object value = BytesRange.f11041d.getValue();
             Intrinsics.checkNotNullExpressionValue(value, "getValue(...)");
             return (Pattern) value;
         }
@@ -126,12 +126,12 @@ public final class BytesRange {
     }
 
     public BytesRange(int i10, int i11) {
-        this.f11041a = i10;
-        this.f11042b = i11;
+        this.f11042a = i10;
+        this.f11043b = i11;
     }
 
     public static final BytesRange d(int i10) {
-        return f11039c.b(i10);
+        return f11040c.b(i10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -140,11 +140,11 @@ public final class BytesRange {
     }
 
     public static final BytesRange g(int i10) {
-        return f11039c.e(i10);
+        return f11040c.e(i10);
     }
 
     public final boolean c(BytesRange bytesRange) {
-        if (bytesRange == null || this.f11041a > bytesRange.f11041a || bytesRange.f11042b > this.f11042b) {
+        if (bytesRange == null || this.f11042a > bytesRange.f11042a || bytesRange.f11043b > this.f11043b) {
             return false;
         }
         return true;
@@ -165,7 +165,7 @@ public final class BytesRange {
         }
         Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type com.facebook.imagepipeline.common.BytesRange");
         BytesRange bytesRange = (BytesRange) obj;
-        if (this.f11041a == bytesRange.f11041a && this.f11042b == bytesRange.f11042b) {
+        if (this.f11042a == bytesRange.f11042a && this.f11043b == bytesRange.f11043b) {
             return true;
         }
         return false;
@@ -173,20 +173,20 @@ public final class BytesRange {
 
     public final String f() {
         StringCompanionObject stringCompanionObject = StringCompanionObject.INSTANCE;
-        a aVar = f11039c;
-        String format = String.format(null, "bytes=%s-%s", Arrays.copyOf(new Object[]{aVar.f(this.f11041a), aVar.f(this.f11042b)}, 2));
+        a aVar = f11040c;
+        String format = String.format(null, "bytes=%s-%s", Arrays.copyOf(new Object[]{aVar.f(this.f11042a), aVar.f(this.f11043b)}, 2));
         Intrinsics.checkNotNullExpressionValue(format, "format(...)");
         return format;
     }
 
     public int hashCode() {
-        return (this.f11041a * 31) + this.f11042b;
+        return (this.f11042a * 31) + this.f11043b;
     }
 
     public String toString() {
         StringCompanionObject stringCompanionObject = StringCompanionObject.INSTANCE;
-        a aVar = f11039c;
-        String format = String.format(null, "%s-%s", Arrays.copyOf(new Object[]{aVar.f(this.f11041a), aVar.f(this.f11042b)}, 2));
+        a aVar = f11040c;
+        String format = String.format(null, "%s-%s", Arrays.copyOf(new Object[]{aVar.f(this.f11042a), aVar.f(this.f11043b)}, 2));
         Intrinsics.checkNotNullExpressionValue(format, "format(...)");
         return format;
     }

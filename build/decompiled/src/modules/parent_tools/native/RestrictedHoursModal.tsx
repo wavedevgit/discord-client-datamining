@@ -2,13 +2,79 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var11 = metroImportDefault;
+    var12 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var11;
+    var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
-    var0 = function() {
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var6 = var5[var0];
+    var3 = metroImportAll;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var6);
+    var _closure1_slot3 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.View;
+    var _closure1_slot4 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var7 = var3.jsx;
+    var _closure1_slot5 = var7;
+    var3 = var3.jsxs;
+    var _closure1_slot6 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var8 = var4.bind(var0)(var3);
+    var6 = var8.createStyles;
+    var3 = {};
+    var9 = {
+        'flex': 1,
+        'justifyContent': 'center',
+        'alignItems': 'center'
+    };
+    var10 = 'center';
+    var11 = 4;
+    var13 = var5[var11];
+    var13 = var12.bind(var0)(var13);
+    var13 = var13.spacing;
+    var13 = var13.PX_24;
+    var9.paddingHorizontal = var13;
+    var3.container = var9;
+    var9 = {
+        'alignItems': 'center',
+        'textAlign': 'center'
+    };
+    var11 = var5[var11];
+    var11 = var12.bind(var0)(var11);
+    var11 = var11.spacing;
+    var11 = var11.PX_16;
+    var9.gap = var11;
+    var3.content = var9;
+    var9 = {};
+    var9.textAlign = var10;
+    var3.title = var9;
+    var9 = {};
+    var9.textAlign = var10;
+    var3.description = var9;
+    var3 = var6.bind(var8)(var3);
+    var _closure1_slot7 = var3;
+    var3 = {};
+    var6 = 'main';
+    var3.MAIN = var6;
+    var _closure1_slot8 = var3;
+    var6 = function() {
         var0 = _closure1_slot7;
         var3 = undefined;
         var22 = var0.bind(var3)();
@@ -105,73 +171,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var _closure1_slot9 = var0;
-    var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
     var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var3);
-    var0 = 0;
-    var6 = var5[var0];
-    var3 = arg3;
-    var0 = undefined;
-    var3 = var3.bind(var0)(var6);
-    var _closure1_slot3 = var3;
-    var3 = 1;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.View;
-    var _closure1_slot4 = var3;
-    var3 = 2;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.jsx;
-    var _closure1_slot5 = var6;
-    var3 = var3.jsxs;
-    var _closure1_slot6 = var3;
-    var3 = 3;
-    var3 = var5[var3];
-    var7 = var4.bind(var0)(var3);
-    var6 = var7.createStyles;
-    var3 = {};
-    var8 = {
-        'flex': 1,
-        'justifyContent': 'center',
-        'alignItems': 'center'
-    };
-    var9 = 'center';
-    var10 = 4;
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.spacing;
-    var12 = var12.PX_24;
-    var8.paddingHorizontal = var12;
-    var3.container = var8;
-    var8 = {
-        'alignItems': 'center',
-        'textAlign': 'center'
-    };
-    var10 = var5[var10];
-    var10 = var11.bind(var0)(var10);
-    var10 = var10.spacing;
-    var10 = var10.PX_16;
-    var8.gap = var10;
-    var3.content = var8;
-    var8 = {};
-    var8.textAlign = var9;
-    var3.title = var8;
-    var8 = {};
-    var8.textAlign = var9;
-    var3.description = var8;
-    var3 = var6.bind(var7)(var3);
-    var _closure1_slot7 = var3;
-    var3 = {};
-    var6 = 'main';
-    var3.MAIN = var6;
-    var _closure1_slot8 = var3;
+    var3 = var7.bind(var0)(var6, var3);
+    var _closure1_slot9 = var3;
     var3 = 15;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -196,11 +198,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'gestureEnabled': false
                 };
                 var3 = function() {
-                    var3 = _closure1_slot5;
-                    var2 = _closure1_slot9;
-                    var1 = undefined;
-                    var0 = {};
-                    var0 = var3.bind(var1)(var2, var0);
+                    var0 = _closure1_slot9;
                     return var0;
                 };
                 var1.render = var3;
@@ -225,12 +223,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var8;
         var0 = function() { // Environment: var0
-            _fun118643: for (var _fun118643_ip = 0;;) switch (_fun118643_ip) {
+            _fun118704: for (var _fun118704_ip = 0;;) switch (_fun118704_ip) {
                 case 0:
                     var0 = _closure2_slot0;
                     if (var0) {
-                        _fun118643_ip = 45;
-                        continue _fun118643
+                        _fun118704_ip = 45;
+                        continue _fun118704
                     }
                 case 10:
                     var2 = _closure1_slot0;
@@ -263,4 +261,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 1568, 6516, 6517, 3938, 1234, 1860, 5847, 15110, 15108, 7559, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 1568, 6528, 6529, 3938, 1234, 1860, 5834, 15121, 15119, 7834, 2]);

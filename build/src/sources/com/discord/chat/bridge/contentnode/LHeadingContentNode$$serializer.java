@@ -44,7 +44,7 @@ public /* synthetic */ class LHeadingContentNode$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = LHeadingContentNode.$childSerializers;
-        return new KSerializer[]{p0.f50048a, n2.f50032a, lazyArr[2].getValue()};
+        return new KSerializer[]{p0.f50049a, n2.f50033a, lazyArr[2].getValue()};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

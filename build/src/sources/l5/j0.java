@@ -7,27 +7,27 @@ import java.util.Map;
 public class j0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private final LottieAnimationView f35645b;
+    private final LottieAnimationView f35646b;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f35644a = new HashMap();
+    private final Map f35645a = new HashMap();
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f35647d = true;
+    private boolean f35648d = true;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.airbnb.lottie.n f35646c = null;
+    private final com.airbnb.lottie.n f35647c = null;
 
     public j0(LottieAnimationView lottieAnimationView) {
-        this.f35645b = lottieAnimationView;
+        this.f35646b = lottieAnimationView;
     }
 
     private void d() {
-        LottieAnimationView lottieAnimationView = this.f35645b;
+        LottieAnimationView lottieAnimationView = this.f35646b;
         if (lottieAnimationView != null) {
             lottieAnimationView.invalidate();
         }
-        com.airbnb.lottie.n nVar = this.f35646c;
+        com.airbnb.lottie.n nVar = this.f35647c;
         if (nVar != null) {
             nVar.invalidateSelf();
         }
@@ -38,18 +38,18 @@ public class j0 {
     }
 
     public final String c(String str, String str2) {
-        if (this.f35647d && this.f35644a.containsKey(str2)) {
-            return (String) this.f35644a.get(str2);
+        if (this.f35648d && this.f35645a.containsKey(str2)) {
+            return (String) this.f35645a.get(str2);
         }
         String b10 = b(str, str2);
-        if (this.f35647d) {
-            this.f35644a.put(str2, b10);
+        if (this.f35648d) {
+            this.f35645a.put(str2, b10);
         }
         return b10;
     }
 
     public void e(String str, String str2) {
-        this.f35644a.put(str, str2);
+        this.f35645a.put(str, str2);
         d();
     }
 

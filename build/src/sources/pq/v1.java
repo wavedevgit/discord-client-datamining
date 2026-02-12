@@ -25,21 +25,21 @@ public abstract class v1 {
         InputPhoneNumber.Attributes attributes = config.getAttributes();
         if (attributes != null) {
             String prefill = attributes.getPrefill();
-            if (prefill != null && (editText = c10.f48258b.getEditText()) != null) {
+            if (prefill != null && (editText = c10.f48259b.getEditText()) != null) {
                 editText.setText(prefill);
             }
             String label = attributes.getLabel();
             if (label != null) {
-                c10.f48258b.setHint(label);
+                c10.f48259b.setHint(label);
             }
             String placeholder = attributes.getPlaceholder();
             if (placeholder != null) {
-                c10.f48258b.setPlaceholderText(placeholder);
-                TextInputLayout inputLayout = c10.f48258b;
+                c10.f48259b.setPlaceholderText(placeholder);
+                TextInputLayout inputLayout = c10.f48259b;
                 Intrinsics.checkNotNullExpressionValue(inputLayout, "inputLayout");
                 lq.o.a(inputLayout);
             }
-            EditText editText2 = c10.f48258b.getEditText();
+            EditText editText2 = c10.f48259b.getEditText();
             if (editText2 != null) {
                 gn.u.b(inputPhoneNumberComponent.b(), editText2);
                 bq.a0.a(editText2, new PhoneNumberFormattingTextWatcher(inputPhoneNumberComponent.k()));
@@ -63,37 +63,37 @@ public abstract class v1 {
     public static final Unit d(InputPhoneNumber inputPhoneNumber, sq.l lVar) {
         InputTextBasedComponentStyle styles = inputPhoneNumber.getStyles();
         if (styles != null) {
-            TextView prefixTextView = lVar.f48258b.getPrefixTextView();
+            TextView prefixTextView = lVar.f48259b.getPrefixTextView();
             Intrinsics.checkNotNullExpressionValue(prefixTextView, "getPrefixTextView(...)");
             uq.f0.n(prefixTextView, styles.getTextBasedStyle(), null, 2, null);
-            TextInputLayout inputLayout = lVar.f48258b;
+            TextInputLayout inputLayout = lVar.f48259b;
             Intrinsics.checkNotNullExpressionValue(inputLayout, "inputLayout");
             uq.a0.k(inputLayout, styles);
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final void e(InputPhoneNumberComponent inputPhoneNumberComponent, sq.l binding, final Function0 onCountryInputClick) {
         Intrinsics.checkNotNullParameter(inputPhoneNumberComponent, "<this>");
         Intrinsics.checkNotNullParameter(binding, "binding");
         Intrinsics.checkNotNullParameter(onCountryInputClick, "onCountryInputClick");
-        binding.f48258b.setPrefixText(qq.d.f45610a.i((b4) CollectionsKt.o0(inputPhoneNumberComponent.g().b())));
+        binding.f48259b.setPrefixText(qq.d.f45611a.i((b4) CollectionsKt.o0(inputPhoneNumberComponent.g().b())));
         String k10 = inputPhoneNumberComponent.k();
         List f10 = inputPhoneNumberComponent.f();
         if (k10 == null && f10.size() == 1) {
             inputPhoneNumberComponent.g().c(CollectionsKt.e(CollectionsKt.o0(f10)));
         }
-        binding.f48258b.getPrefixTextView().setOnClickListener(new View.OnClickListener() { // from class: pq.u1
+        binding.f48259b.getPrefixTextView().setOnClickListener(new View.OnClickListener() { // from class: pq.u1
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 v1.f(Function0.this, view);
             }
         });
-        TextView prefixTextView = binding.f48258b.getPrefixTextView();
+        TextView prefixTextView = binding.f48259b.getPrefixTextView();
         Context context = binding.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        prefixTextView.setBackground(qq.f.b(context, binding.f48258b.getPrefixTextView().getTextColors().getDefaultColor(), (int) binding.f48258b.getPrefixTextView().getPaint().measureText(String.valueOf(binding.f48258b.getPrefixText()))));
-        EditText editText = binding.f48258b.getEditText();
+        prefixTextView.setBackground(qq.f.b(context, binding.f48259b.getPrefixTextView().getTextColors().getDefaultColor(), (int) binding.f48259b.getPrefixTextView().getPaint().measureText(String.valueOf(binding.f48259b.getPrefixText()))));
+        EditText editText = binding.f48259b.getEditText();
         if (editText != null) {
             bq.a0.a(editText, new PhoneNumberFormattingTextWatcher(inputPhoneNumberComponent.k()));
         }

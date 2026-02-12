@@ -8,10 +8,10 @@ import kotlin.collections.CollectionsKt;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final List f23991a = CollectionsKt.o(48000, 44100, 22050, 16000, 11025, 8000);
+    private static final List f23992a = CollectionsKt.o(48000, 44100, 22050, 16000, 11025, 8000);
 
     public static final c a() {
-        Iterator it = f23991a.iterator();
+        Iterator it = f23992a.iterator();
         while (true) {
             AudioRecord audioRecord = null;
             if (!it.hasNext()) {

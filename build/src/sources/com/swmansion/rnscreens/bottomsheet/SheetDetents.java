@@ -12,10 +12,10 @@ import pn.q;
 public final class SheetDetents {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f19115b = new a(null);
+    public static final a f19116b = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f19116a;
+    private final List f19117a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -41,7 +41,7 @@ public final class SheetDetents {
             r0 = r11
             java.lang.Iterable r0 = (java.lang.Iterable) r0
             java.util.List r0 = kotlin.collections.CollectionsKt.h1(r0)
-            r10.f19116a = r0
+            r10.f19117a = r0
             r0 = r11
             java.util.Collection r0 = (java.util.Collection) r0
             boolean r0 = r0.isEmpty()
@@ -134,7 +134,7 @@ public final class SheetDetents {
     }
 
     public final double a(int i10) {
-        return ((Number) this.f19116a.get(i10)).doubleValue();
+        return ((Number) this.f19117a.get(i10)).doubleValue();
     }
 
     public final int b(int i10, int i11) {
@@ -149,7 +149,7 @@ public final class SheetDetents {
     }
 
     public final int d() {
-        return this.f19116a.size();
+        return this.f19117a.size();
     }
 
     public final float e() {
@@ -174,11 +174,11 @@ public final class SheetDetents {
     }
 
     public final double g() {
-        return ((Number) CollectionsKt.z0(this.f19116a)).doubleValue();
+        return ((Number) CollectionsKt.z0(this.f19117a)).doubleValue();
     }
 
     public final int h(int i10) {
-        return p.f42843a.a(i10, d());
+        return p.f42844a.a(i10, d());
     }
 
     public final int i(int i10) {
@@ -202,10 +202,10 @@ public final class SheetDetents {
     }
 
     public final int k(int i10) {
-        return p.f42843a.c(i10, d());
+        return p.f42844a.c(i10, d());
     }
 
     public final double l() {
-        return ((Number) CollectionsKt.o0(this.f19116a)).doubleValue();
+        return ((Number) CollectionsKt.o0(this.f19117a)).doubleValue();
     }
 }

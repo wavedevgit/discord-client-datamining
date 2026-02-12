@@ -6,13 +6,13 @@ import androidx.camera.camera2.internal.compat.quirk.UseTorchAsFlashQuirk;
 public class c0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f50313a;
+    private final boolean f50314a;
 
     public c0(d2 d2Var) {
-        this.f50313a = d2Var.a(UseTorchAsFlashQuirk.class);
+        this.f50314a = d2Var.a(UseTorchAsFlashQuirk.class);
     }
 
     public boolean a() {
-        return this.f50313a;
+        return this.f50314a;
     }
 }

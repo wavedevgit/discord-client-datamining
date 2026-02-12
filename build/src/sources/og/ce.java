@@ -3,18 +3,18 @@ package og;
 public final class ce {
 
     /* renamed from: a  reason: collision with root package name */
-    private de f39150a;
+    private de f39151a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Integer f39151b;
+    private Integer f39152b;
 
     public final ce a(de deVar) {
-        this.f39150a = deVar;
+        this.f39151a = deVar;
         return this;
     }
 
     public final ce b(Integer num) {
-        this.f39151b = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
+        this.f39152b = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
         return this;
     }
 

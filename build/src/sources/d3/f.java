@@ -9,35 +9,35 @@ import android.widget.TextView;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f21442a;
+    private final b f21443a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static class a extends b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final TextView f21443a;
+        private final TextView f21444a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final d f21444b;
+        private final d f21445b;
 
         /* renamed from: c  reason: collision with root package name */
-        private boolean f21445c = true;
+        private boolean f21446c = true;
 
         a(TextView textView) {
-            this.f21443a = textView;
-            this.f21444b = new d(textView);
+            this.f21444a = textView;
+            this.f21445b = new d(textView);
         }
 
         private InputFilter[] f(InputFilter[] inputFilterArr) {
             int length = inputFilterArr.length;
             for (InputFilter inputFilter : inputFilterArr) {
-                if (inputFilter == this.f21444b) {
+                if (inputFilter == this.f21445b) {
                     return inputFilterArr;
                 }
             }
             InputFilter[] inputFilterArr2 = new InputFilter[inputFilterArr.length + 1];
             System.arraycopy(inputFilterArr, 0, inputFilterArr2, 0, length);
-            inputFilterArr2[length] = this.f21444b;
+            inputFilterArr2[length] = this.f21445b;
             return inputFilterArr2;
         }
 
@@ -77,7 +77,7 @@ public final class f {
         }
 
         private void k() {
-            this.f21443a.setFilters(a(this.f21443a.getFilters()));
+            this.f21444a.setFilters(a(this.f21444a.getFilters()));
         }
 
         private TransformationMethod m(TransformationMethod transformationMethod) {
@@ -92,7 +92,7 @@ public final class f {
 
         @Override // d3.f.b
         InputFilter[] a(InputFilter[] inputFilterArr) {
-            if (!this.f21445c) {
+            if (!this.f21446c) {
                 return h(inputFilterArr);
             }
             return f(inputFilterArr);
@@ -100,7 +100,7 @@ public final class f {
 
         @Override // d3.f.b
         public boolean b() {
-            return this.f21445c;
+            return this.f21446c;
         }
 
         @Override // d3.f.b
@@ -112,25 +112,25 @@ public final class f {
 
         @Override // d3.f.b
         void d(boolean z10) {
-            this.f21445c = z10;
+            this.f21446c = z10;
             l();
             k();
         }
 
         @Override // d3.f.b
         TransformationMethod e(TransformationMethod transformationMethod) {
-            if (this.f21445c) {
+            if (this.f21446c) {
                 return m(transformationMethod);
             }
             return j(transformationMethod);
         }
 
         void i(boolean z10) {
-            this.f21445c = z10;
+            this.f21446c = z10;
         }
 
         void l() {
-            this.f21443a.setTransformationMethod(e(this.f21443a.getTransformationMethod()));
+            this.f21444a.setTransformationMethod(e(this.f21444a.getTransformationMethod()));
         }
     }
 
@@ -154,10 +154,10 @@ public final class f {
     private static class c extends b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final a f21446a;
+        private final a f21447a;
 
         c(TextView textView) {
-            this.f21446a = new a(textView);
+            this.f21447a = new a(textView);
         }
 
         private boolean f() {
@@ -169,12 +169,12 @@ public final class f {
             if (f()) {
                 return inputFilterArr;
             }
-            return this.f21446a.a(inputFilterArr);
+            return this.f21447a.a(inputFilterArr);
         }
 
         @Override // d3.f.b
         public boolean b() {
-            return this.f21446a.b();
+            return this.f21447a.b();
         }
 
         @Override // d3.f.b
@@ -182,15 +182,15 @@ public final class f {
             if (f()) {
                 return;
             }
-            this.f21446a.c(z10);
+            this.f21447a.c(z10);
         }
 
         @Override // d3.f.b
         void d(boolean z10) {
             if (f()) {
-                this.f21446a.i(z10);
+                this.f21447a.i(z10);
             } else {
-                this.f21446a.d(z10);
+                this.f21447a.d(z10);
             }
         }
 
@@ -199,36 +199,36 @@ public final class f {
             if (f()) {
                 return transformationMethod;
             }
-            return this.f21446a.e(transformationMethod);
+            return this.f21447a.e(transformationMethod);
         }
     }
 
     public f(TextView textView, boolean z10) {
         b2.e.h(textView, "textView cannot be null");
         if (!z10) {
-            this.f21442a = new c(textView);
+            this.f21443a = new c(textView);
         } else {
-            this.f21442a = new a(textView);
+            this.f21443a = new a(textView);
         }
     }
 
     public InputFilter[] a(InputFilter[] inputFilterArr) {
-        return this.f21442a.a(inputFilterArr);
+        return this.f21443a.a(inputFilterArr);
     }
 
     public boolean b() {
-        return this.f21442a.b();
+        return this.f21443a.b();
     }
 
     public void c(boolean z10) {
-        this.f21442a.c(z10);
+        this.f21443a.c(z10);
     }
 
     public void d(boolean z10) {
-        this.f21442a.d(z10);
+        this.f21443a.d(z10);
     }
 
     public TransformationMethod e(TransformationMethod transformationMethod) {
-        return this.f21442a.e(transformationMethod);
+        return this.f21443a.e(transformationMethod);
     }
 }

@@ -5,7 +5,7 @@ import bj.c;
 final class m6 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final m6 f39482a = new m6();
+    static final m6 f39483a = new m6();
 
     static {
         c.b a10 = bj.c.a("maxResults");

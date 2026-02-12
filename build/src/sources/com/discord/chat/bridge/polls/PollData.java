@@ -223,7 +223,7 @@ public final class PollData {
         compositeEncoder.k(serialDescriptor, 2, (qt.o) lazyArr[2].getValue(), pollData.answers);
         compositeEncoder.k(serialDescriptor, 3, PollChatAnswerInteractionType.Serializer.INSTANCE, pollData.answersInteraction);
         if (compositeEncoder.z(serialDescriptor, 4) || pollData.answerTapAccessibilityLabel != null) {
-            compositeEncoder.o(serialDescriptor, 4, n2.f50032a, pollData.answerTapAccessibilityLabel);
+            compositeEncoder.o(serialDescriptor, 4, n2.f50033a, pollData.answerTapAccessibilityLabel);
         }
         compositeEncoder.k(serialDescriptor, 5, PollLayoutType.Serializer.INSTANCE, pollData.layoutType);
         if (compositeEncoder.z(serialDescriptor, 6) || pollData.canSelectMultipleAnswers) {
@@ -237,7 +237,7 @@ public final class PollData {
             compositeEncoder.y(serialDescriptor, 11, pollData.containerStyle);
         }
         if (compositeEncoder.z(serialDescriptor, 12) || pollData.myAvatarUrl != null) {
-            compositeEncoder.o(serialDescriptor, 12, n2.f50032a, pollData.myAvatarUrl);
+            compositeEncoder.o(serialDescriptor, 12, n2.f50033a, pollData.myAvatarUrl);
         }
         if (compositeEncoder.z(serialDescriptor, 13) || pollData.secondaryAction != null) {
             compositeEncoder.o(serialDescriptor, 13, PollAction$$serializer.INSTANCE, pollData.secondaryAction);
@@ -249,7 +249,7 @@ public final class PollData {
             compositeEncoder.o(serialDescriptor, 15, PollAction$$serializer.INSTANCE, pollData.tertiaryAction);
         }
         if (compositeEncoder.z(serialDescriptor, 16) || pollData.promptLabel != null) {
-            compositeEncoder.o(serialDescriptor, 16, n2.f50032a, pollData.promptLabel);
+            compositeEncoder.o(serialDescriptor, 16, n2.f50033a, pollData.promptLabel);
         }
     }
 

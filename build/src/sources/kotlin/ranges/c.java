@@ -7,10 +7,10 @@ public final class c extends b implements rs.a {
     @NotNull
 
     /* renamed from: p  reason: collision with root package name */
-    public static final a f32089p = new a(null);
+    public static final a f32090p = new a(null);
 
     /* renamed from: q  reason: collision with root package name */
-    private static final c f32090q = new c(1, 0);
+    private static final c f32091q = new c(1, 0);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -19,7 +19,7 @@ public final class c extends b implements rs.a {
         }
 
         public final c a() {
-            return c.f32090q;
+            return c.f32091q;
         }
 
         private a() {

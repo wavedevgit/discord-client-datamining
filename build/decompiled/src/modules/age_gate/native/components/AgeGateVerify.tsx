@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var11 = metroImportDefault;
+    var12 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var11;
+    var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -24,47 +24,54 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 1;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var6 = var3.jsx;
-    var _closure1_slot3 = var6;
+    var7 = var3.jsx;
+    var _closure1_slot3 = var7;
     var3 = var3.jsxs;
     var _closure1_slot4 = var3;
     var3 = 2;
     var3 = var5[var3];
-    var7 = var4.bind(var0)(var3);
-    var6 = var7.createStyles;
+    var8 = var4.bind(var0)(var3);
+    var6 = var8.createStyles;
     var3 = {};
-    var8 = {
+    var9 = {
         'padding': null,
         'flex': 1,
         'alignItems': 'center',
         'justifyContent': 'center'
     };
-    var10 = 3;
-    var9 = var5[var10];
-    var9 = var11.bind(var0)(var9);
-    var9 = var9.spacing;
-    var9 = var9.PX_16;
-    var8.padding = var9;
-    var9 = 'center';
-    var10 = var5[var10];
-    var10 = var11.bind(var0)(var10);
+    var11 = 3;
+    var10 = var5[var11];
+    var10 = var12.bind(var0)(var10);
     var10 = var10.spacing;
     var10 = var10.PX_16;
-    var8.gap = var10;
-    var3.container = var8;
-    var8 = {};
-    var8.textAlign = var9;
-    var3.header = var8;
-    var8 = {};
-    var8.textAlign = var9;
-    var3.body = var8;
-    var8 = {
+    var9.padding = var10;
+    var10 = 'center';
+    var11 = var5[var11];
+    var11 = var12.bind(var0)(var11);
+    var11 = var11.spacing;
+    var11 = var11.PX_16;
+    var9.gap = var11;
+    var3.container = var9;
+    var9 = {};
+    var9.textAlign = var10;
+    var3.header = var9;
+    var9 = {};
+    var9.textAlign = var10;
+    var3.body = var9;
+    var9 = {
         'width': '100%',
         'flexGrow': 0
     };
-    var3.button = var8;
-    var3 = var6.bind(var7)(var3);
+    var3.button = var9;
+    var3 = var6.bind(var8)(var3);
     var _closure1_slot5 = var3;
+    var3 = 4;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.ShieldSpotIllustration;
+    var3 = {};
+    var3 = var7.bind(var0)(var6, var3);
+    var _closure1_slot6 = var3;
     var3 = 11;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -72,7 +79,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/age_gate/native/components/AgeGateVerify.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun113223: for (var _fun113223_ip = 0;;) switch (_fun113223_ip) {
+        _fun113257: for (var _fun113257_ip = 0;;) switch (_fun113257_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.source;
@@ -81,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var0.bind(var3)();
                 var7 = _closure1_slot0;
                 var12 = _closure1_slot2;
-                var0 = 4;
+                var0 = 5;
                 var0 = var12[var0];
                 var1 = var7.bind(var3)(var0);
                 var0 = var1.useAgeGateVerifyContent;
@@ -90,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var0.verifyGateDescription;
                 var15 = var0.verifyTitle;
                 var2 = _closure1_slot4;
-                var0 = 5;
+                var0 = 6;
                 var0 = var12[var0];
                 var0 = var7.bind(var3)(var0);
                 var1 = var0.SafeAreaPaddingView;
@@ -99,15 +106,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.top = var4;
                 var4 = var10.container;
                 var0.style = var4;
-                var8 = _closure1_slot3;
-                var4 = 6;
-                var4 = var12[var4];
-                var4 = var7.bind(var3)(var4);
-                var5 = var4.ShieldSpotIllustration;
-                var4 = {};
-                var5 = var8.bind(var3)(var5, var4);
+                var5 = _closure1_slot6;
                 var4 = new Array(4);
                 var4[0] = var5;
+                var8 = _closure1_slot3;
                 var5 = 7;
                 var13 = var12[var5];
                 var13 = var7.bind(var3)(var13);
@@ -138,10 +140,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = null;
                 var5 = var5 != var9;
                 if (!var5) {
-                    _fun113223_ip = 324;
-                    continue _fun113223
+                    _fun113257_ip = 302;
+                    continue _fun113257
                 }
-            case 265:
+            case 243:
                 var8 = _closure1_slot3;
                 var7 = _closure1_slot1;
                 var11 = _closure1_slot2;
@@ -173,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var6.onPress = var9;
                 var5 = var8.bind(var3)(var7, var6);
-            case 324:
+            case 302:
                 var4[3] = var5;
                 var0.children = var4;
                 var0 = var2.bind(var3)(var1, var0);
@@ -182,4 +184,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 4557, 4744, 6023, 3938, 4883, 5993, 4561, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 6030, 4557, 4754, 3938, 4849, 6009, 4561, 2]);

@@ -22,28 +22,28 @@ import org.jetbrains.annotations.NotNull;
 public final class VideoCaptureConfig {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f20432a;
+    private final long f20433a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f20433b;
+    private final List f20434b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f20434c;
+    private final List f20435c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f20435d;
+    private final String f20436d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f20436e;
+    private final boolean f20437e;
 
     public VideoCaptureConfig(long j10, @NotNull List<? extends NextStep.Selfie.CaptureFileType> enabledCaptureFileTypes, @NotNull List<? extends a> videoCaptureMethods, @g(name = "webRTCJwt") String str, boolean z10) {
         Intrinsics.checkNotNullParameter(enabledCaptureFileTypes, "enabledCaptureFileTypes");
         Intrinsics.checkNotNullParameter(videoCaptureMethods, "videoCaptureMethods");
-        this.f20432a = j10;
-        this.f20433b = enabledCaptureFileTypes;
-        this.f20434c = videoCaptureMethods;
-        this.f20435d = str;
-        this.f20436e = z10;
+        this.f20433a = j10;
+        this.f20434b = enabledCaptureFileTypes;
+        this.f20435c = videoCaptureMethods;
+        this.f20436d = str;
+        this.f20437e = z10;
     }
 
     private final Object e(Boolean bool, Boolean bool2, Context context) {
@@ -51,7 +51,7 @@ public final class VideoCaptureConfig {
         boolean z11;
         boolean z12 = false;
         boolean z13 = true;
-        if (this.f20433b.contains(NextStep.Selfie.CaptureFileType.Video) && CollectionsKt.firstOrNull(this.f20434c) == a.f35948d) {
+        if (this.f20434b.contains(NextStep.Selfie.CaptureFileType.Video) && CollectionsKt.firstOrNull(this.f20435c) == a.f35949d) {
             z10 = true;
         } else {
             z10 = false;
@@ -62,37 +62,37 @@ public final class VideoCaptureConfig {
             z11 = false;
         }
         if (z10 && !z11) {
-            List list = this.f20434c;
-            a aVar = a.f35949e;
+            List list = this.f20435c;
+            a aVar = a.f35950e;
             if (list.contains(aVar)) {
                 if (f.e(context)) {
-                    Result.a aVar2 = Result.f31984e;
+                    Result.a aVar2 = Result.f31985e;
                     return Result.b(c.a(new RuntimeException()));
                 }
                 return Result.b(aVar);
             }
-            List<NextStep.Selfie.CaptureFileType> list2 = this.f20433b;
+            List<NextStep.Selfie.CaptureFileType> list2 = this.f20434b;
             if (!(list2 instanceof Collection) || !list2.isEmpty()) {
                 for (NextStep.Selfie.CaptureFileType captureFileType : list2) {
                     if (captureFileType != NextStep.Selfie.CaptureFileType.Video && captureFileType != NextStep.Selfie.CaptureFileType.Unknown) {
                         if (f.e(context)) {
-                            Result.a aVar3 = Result.f31984e;
+                            Result.a aVar3 = Result.f31985e;
                             return Result.b(c.a(new RuntimeException()));
                         }
-                        Result.a aVar4 = Result.f31984e;
-                        return Result.b(a.f35950i);
+                        Result.a aVar4 = Result.f31985e;
+                        return Result.b(a.f35951i);
                     }
                 }
             }
-            Result.a aVar5 = Result.f31984e;
+            Result.a aVar5 = Result.f31985e;
             return Result.b(c.a(new RuntimeException()));
         }
         if (bool2 != null) {
             z13 = bool2.booleanValue();
         }
         if (z13) {
-            List list3 = this.f20434c;
-            a aVar6 = a.f35949e;
+            List list3 = this.f20435c;
+            a aVar6 = a.f35950e;
             if (list3.contains(aVar6)) {
                 return Result.b(aVar6);
             }
@@ -101,27 +101,27 @@ public final class VideoCaptureConfig {
             z12 = bool.booleanValue();
         }
         if (z12) {
-            Result.a aVar7 = Result.f31984e;
-            return Result.b(a.f35950i);
+            Result.a aVar7 = Result.f31985e;
+            return Result.b(a.f35951i);
         }
-        Result.a aVar8 = Result.f31984e;
-        a aVar9 = (a) CollectionsKt.firstOrNull(this.f20434c);
+        Result.a aVar8 = Result.f31985e;
+        a aVar9 = (a) CollectionsKt.firstOrNull(this.f20435c);
         if (aVar9 == null) {
-            aVar9 = a.f35950i;
+            aVar9 = a.f35951i;
         }
         return Result.b(aVar9);
     }
 
     public final long a() {
-        return this.f20432a;
+        return this.f20433a;
     }
 
     public final boolean b() {
-        return this.f20436e;
+        return this.f20437e;
     }
 
     public final String c() {
-        return this.f20435d;
+        return this.f20436d;
     }
 
     @NotNull
@@ -134,15 +134,15 @@ public final class VideoCaptureConfig {
     public final Object d(Boolean bool, Boolean bool2, Context applicationContext) {
         boolean z10;
         Intrinsics.checkNotNullParameter(applicationContext, "applicationContext");
-        if (!this.f20433b.contains(NextStep.Selfie.CaptureFileType.Video)) {
-            Result.a aVar = Result.f31984e;
+        if (!this.f20434b.contains(NextStep.Selfie.CaptureFileType.Video)) {
+            Result.a aVar = Result.f31985e;
             return Result.b(Boolean.FALSE);
         }
         Object f10 = f(bool, bool2, applicationContext);
         Throwable e10 = Result.e(f10);
         if (e10 == null) {
             a aVar2 = (a) f10;
-            if (aVar2 != a.f35948d && aVar2 != a.f35949e) {
+            if (aVar2 != a.f35949d && aVar2 != a.f35950e) {
                 z10 = false;
             } else {
                 z10 = true;
@@ -158,32 +158,32 @@ public final class VideoCaptureConfig {
         }
         if (obj instanceof VideoCaptureConfig) {
             VideoCaptureConfig videoCaptureConfig = (VideoCaptureConfig) obj;
-            return this.f20432a == videoCaptureConfig.f20432a && Intrinsics.areEqual(this.f20433b, videoCaptureConfig.f20433b) && Intrinsics.areEqual(this.f20434c, videoCaptureConfig.f20434c) && Intrinsics.areEqual(this.f20435d, videoCaptureConfig.f20435d) && this.f20436e == videoCaptureConfig.f20436e;
+            return this.f20433a == videoCaptureConfig.f20433a && Intrinsics.areEqual(this.f20434b, videoCaptureConfig.f20434b) && Intrinsics.areEqual(this.f20435c, videoCaptureConfig.f20435c) && Intrinsics.areEqual(this.f20436d, videoCaptureConfig.f20436d) && this.f20437e == videoCaptureConfig.f20437e;
         }
         return false;
     }
 
     public final Object f(Boolean bool, Boolean bool2, Context applicationContext) {
         Intrinsics.checkNotNullParameter(applicationContext, "applicationContext");
-        if (this.f20433b.contains(NextStep.Selfie.CaptureFileType.Video)) {
+        if (this.f20434b.contains(NextStep.Selfie.CaptureFileType.Video)) {
             return e(bool, bool2, applicationContext);
         }
-        Result.a aVar = Result.f31984e;
-        return Result.b(a.f35950i);
+        Result.a aVar = Result.f31985e;
+        return Result.b(a.f35951i);
     }
 
     public int hashCode() {
-        int hashCode = ((((Long.hashCode(this.f20432a) * 31) + this.f20433b.hashCode()) * 31) + this.f20434c.hashCode()) * 31;
-        String str = this.f20435d;
-        return ((hashCode + (str == null ? 0 : str.hashCode())) * 31) + Boolean.hashCode(this.f20436e);
+        int hashCode = ((((Long.hashCode(this.f20433a) * 31) + this.f20434b.hashCode()) * 31) + this.f20435c.hashCode()) * 31;
+        String str = this.f20436d;
+        return ((hashCode + (str == null ? 0 : str.hashCode())) * 31) + Boolean.hashCode(this.f20437e);
     }
 
     public String toString() {
-        long j10 = this.f20432a;
-        List list = this.f20433b;
-        List list2 = this.f20434c;
-        String str = this.f20435d;
-        boolean z10 = this.f20436e;
+        long j10 = this.f20433a;
+        List list = this.f20434b;
+        List list2 = this.f20435c;
+        String str = this.f20436d;
+        boolean z10 = this.f20437e;
         return "VideoCaptureConfig(maxRecordingLengthMs=" + j10 + ", enabledCaptureFileTypes=" + list + ", videoCaptureMethods=" + list2 + ", webRtcJwt=" + str + ", recordAudio=" + z10 + ")";
     }
 

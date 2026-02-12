@@ -16,16 +16,16 @@ import kotlin.jvm.internal.Reflection;
 public final class l implements gn.b {
 
     /* renamed from: d  reason: collision with root package name */
-    private final d0 f47630d;
+    private final d0 f47631d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f47631e;
+    private final boolean f47632e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Function1 f47632i;
+    private final Function1 f47633i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final gn.c0 f47633o;
+    private final gn.c0 f47634o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends Lambda implements Function1 {
@@ -35,14 +35,14 @@ public final class l implements gn.b {
         public static final class C0639a implements gn.k {
 
             /* renamed from: b  reason: collision with root package name */
-            final /* synthetic */ ViewBinding f47635b;
+            final /* synthetic */ ViewBinding f47636b;
 
             /* renamed from: c  reason: collision with root package name */
-            final /* synthetic */ l f47636c;
+            final /* synthetic */ l f47637c;
 
             public C0639a(ViewBinding viewBinding, l lVar) {
-                this.f47635b = viewBinding;
-                this.f47636c = lVar;
+                this.f47636b = viewBinding;
+                this.f47637c = lVar;
             }
 
             @Override // gn.k
@@ -50,12 +50,12 @@ public final class l implements gn.b {
                 Intrinsics.checkNotNullParameter(rendering, "rendering");
                 Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
                 l lVar = (l) rendering;
-                sp.a aVar = (sp.a) this.f47635b;
+                sp.a aVar = (sp.a) this.f47636b;
                 Context context = aVar.getRoot().getContext();
                 Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
                 AppCompatActivity h10 = bq.f.h(context);
-                if (lVar.f47632i != null) {
-                    aVar.getRoot().post(new c(aVar, this.f47636c, lVar, h10));
+                if (lVar.f47633i != null) {
+                    aVar.getRoot().post(new c(aVar, this.f47637c, lVar, h10));
                 }
             }
         }
@@ -76,7 +76,7 @@ public final class l implements gn.b {
     /* synthetic */ class b extends FunctionReferenceImpl implements Function3 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f47637d = new b();
+        public static final b f47638d = new b();
 
         b() {
             super(3, sp.a.class, "inflate", "inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/withpersona/sdk2/inquiry/permissions/databinding/Pi2CheckRequestPermissionRationaleStateBinding;", 0);
@@ -97,49 +97,49 @@ public final class l implements gn.b {
     static final class c implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ sp.a f47638d;
+        final /* synthetic */ sp.a f47639d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ l f47639e;
+        final /* synthetic */ l f47640e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ l f47640i;
+        final /* synthetic */ l f47641i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ AppCompatActivity f47641o;
+        final /* synthetic */ AppCompatActivity f47642o;
 
         c(sp.a aVar, l lVar, l lVar2, AppCompatActivity appCompatActivity) {
-            this.f47638d = aVar;
-            this.f47639e = lVar;
-            this.f47640i = lVar2;
-            this.f47641o = appCompatActivity;
+            this.f47639d = aVar;
+            this.f47640e = lVar;
+            this.f47641i = lVar2;
+            this.f47642o = appCompatActivity;
         }
 
         @Override // java.lang.Runnable
         public final void run() {
-            if (!this.f47638d.getRoot().isAttachedToWindow()) {
+            if (!this.f47639d.getRoot().isAttachedToWindow()) {
                 return;
             }
-            if (this.f47639e.f47630d == d0.f47575e && !this.f47639e.f47631e) {
-                this.f47640i.f47632i.invoke(Boolean.TRUE);
+            if (this.f47640e.f47631d == d0.f47576e && !this.f47640e.f47632e) {
+                this.f47641i.f47633i.invoke(Boolean.TRUE);
             } else {
-                this.f47640i.f47632i.invoke(Boolean.valueOf(androidx.core.app.b.y(this.f47641o, k1.b(this.f47640i.f47630d))));
+                this.f47641i.f47633i.invoke(Boolean.valueOf(androidx.core.app.b.y(this.f47642o, k1.b(this.f47641i.f47631d))));
             }
         }
     }
 
     public l(d0 permission, boolean z10, Function1 function1) {
         Intrinsics.checkNotNullParameter(permission, "permission");
-        this.f47630d = permission;
-        this.f47631e = z10;
-        this.f47632i = function1;
-        k.a aVar = gn.k.f25848a;
-        this.f47633o = new gn.z(Reflection.getOrCreateKotlinClass(l.class), b.f47637d, new a());
+        this.f47631d = permission;
+        this.f47632e = z10;
+        this.f47633i = function1;
+        k.a aVar = gn.k.f25849a;
+        this.f47634o = new gn.z(Reflection.getOrCreateKotlinClass(l.class), b.f47638d, new a());
     }
 
     @Override // gn.b
     public gn.c0 a() {
-        return this.f47633o;
+        return this.f47634o;
     }
 
     public boolean equals(Object obj) {
@@ -150,7 +150,7 @@ public final class l implements gn.b {
             return false;
         }
         l lVar = (l) obj;
-        if (this.f47630d == lVar.f47630d && this.f47631e == lVar.f47631e && Intrinsics.areEqual(this.f47632i, lVar.f47632i)) {
+        if (this.f47631d == lVar.f47631d && this.f47632e == lVar.f47632e && Intrinsics.areEqual(this.f47633i, lVar.f47633i)) {
             return true;
         }
         return false;
@@ -158,8 +158,8 @@ public final class l implements gn.b {
 
     public int hashCode() {
         int hashCode;
-        int hashCode2 = ((this.f47630d.hashCode() * 31) + Boolean.hashCode(this.f47631e)) * 31;
-        Function1 function1 = this.f47632i;
+        int hashCode2 = ((this.f47631d.hashCode() * 31) + Boolean.hashCode(this.f47632e)) * 31;
+        Function1 function1 = this.f47633i;
         if (function1 == null) {
             hashCode = 0;
         } else {
@@ -169,9 +169,9 @@ public final class l implements gn.b {
     }
 
     public String toString() {
-        d0 d0Var = this.f47630d;
-        boolean z10 = this.f47631e;
-        Function1 function1 = this.f47632i;
+        d0 d0Var = this.f47631d;
+        boolean z10 = this.f47632e;
+        Function1 function1 = this.f47633i;
         return "CheckRequestPermissionRationaleStateView(permission=" + d0Var + ", isPermanentPermissionRejectionCheck=" + z10 + ", callback=" + function1 + ")";
     }
 }

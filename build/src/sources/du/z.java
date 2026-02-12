@@ -8,13 +8,13 @@ import net.time4j.i0;
 public final class z implements h {
 
     /* renamed from: d  reason: collision with root package name */
-    private final c f22161d;
+    private final c f22162d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final bu.y f22162e;
+    private final bu.y f22163e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final bu.y f22163i;
+    private final bu.y f22164i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public z(bu.y yVar, bu.y yVar2) {
@@ -48,36 +48,36 @@ public final class z implements h {
 
     @Override // du.h
     public h a(c cVar, bu.d dVar, int i10) {
-        net.time4j.tz.o oVar = (net.time4j.tz.o) dVar.b(cu.a.f21112e, net.time4j.tz.l.f37723o);
+        net.time4j.tz.o oVar = (net.time4j.tz.o) dVar.b(cu.a.f21113e, net.time4j.tz.l.f37724o);
         net.time4j.tz.l lVar = null;
-        net.time4j.tz.k kVar = (net.time4j.tz.k) dVar.b(cu.a.f21111d, null);
-        Locale locale = (Locale) dVar.b(cu.a.f21110c, Locale.ROOT);
+        net.time4j.tz.k kVar = (net.time4j.tz.k) dVar.b(cu.a.f21112d, null);
+        Locale locale = (Locale) dVar.b(cu.a.f21111c, Locale.ROOT);
         bu.x q10 = cVar.q();
-        bu.y yVar = this.f22162e;
-        bu.y yVar2 = this.f22163i;
-        boolean booleanValue = ((Boolean) dVar.b(cu.a.f21129v, Boolean.FALSE)).booleanValue();
+        bu.y yVar = this.f22163e;
+        bu.y yVar2 = this.f22164i;
+        boolean booleanValue = ((Boolean) dVar.b(cu.a.f21130v, Boolean.FALSE)).booleanValue();
         if (kVar != null) {
             lVar = net.time4j.tz.l.N(kVar).Q(oVar);
         }
-        return new z(b(q10, yVar, yVar2, locale, booleanValue, lVar), this.f22162e, this.f22163i);
+        return new z(b(q10, yVar, yVar2, locale, booleanValue, lVar), this.f22163e, this.f22164i);
     }
 
     @Override // du.h
     public void d(CharSequence charSequence, s sVar, bu.d dVar, t tVar, boolean z10) {
         c b10;
         if (z10) {
-            b10 = this.f22161d;
+            b10 = this.f22162d;
         } else {
-            bu.d o10 = this.f22161d.o();
-            bu.c cVar = cu.a.f21112e;
-            net.time4j.tz.o oVar = (net.time4j.tz.o) dVar.b(cVar, o10.b(cVar, net.time4j.tz.l.f37723o));
-            bu.c cVar2 = cu.a.f21111d;
+            bu.d o10 = this.f22162d.o();
+            bu.c cVar = cu.a.f21113e;
+            net.time4j.tz.o oVar = (net.time4j.tz.o) dVar.b(cVar, o10.b(cVar, net.time4j.tz.l.f37724o));
+            bu.c cVar2 = cu.a.f21112d;
             net.time4j.tz.l lVar = null;
             net.time4j.tz.k kVar = (net.time4j.tz.k) dVar.b(cVar2, o10.b(cVar2, null));
             if (kVar != null) {
                 lVar = net.time4j.tz.l.N(kVar).Q(oVar);
             }
-            b10 = b(this.f22161d.q(), this.f22162e, this.f22163i, (Locale) dVar.b(cu.a.f21110c, this.f22161d.u()), ((Boolean) dVar.b(cu.a.f21129v, Boolean.FALSE)).booleanValue(), lVar);
+            b10 = b(this.f22162d.q(), this.f22163e, this.f22164i, (Locale) dVar.b(cu.a.f21111c, this.f22162d.u()), ((Boolean) dVar.b(cu.a.f21130v, Boolean.FALSE)).booleanValue(), lVar);
         }
         Object a10 = b10.a(charSequence, sVar, dVar);
         if (!sVar.i() && a10 != null) {
@@ -91,15 +91,15 @@ public final class z implements h {
         }
         if (obj instanceof z) {
             z zVar = (z) obj;
-            if (this.f22162e.equals(zVar.f22162e) && this.f22163i.equals(zVar.f22163i)) {
-                c cVar = this.f22161d;
+            if (this.f22163e.equals(zVar.f22163e) && this.f22164i.equals(zVar.f22164i)) {
+                c cVar = this.f22162d;
                 if (cVar == null) {
-                    if (zVar.f22161d == null) {
+                    if (zVar.f22162d == null) {
                         return true;
                     }
                     return false;
                 }
-                return cVar.equals(zVar.f22161d);
+                return cVar.equals(zVar.f22162d);
             }
         }
         return false;
@@ -113,7 +113,7 @@ public final class z implements h {
     @Override // du.h
     public int g(bu.o oVar, Appendable appendable, bu.d dVar, Set set, boolean z10) {
         boolean z11;
-        c cVar = this.f22161d;
+        c cVar = this.f22162d;
         if (set != null) {
             z11 = true;
         } else {
@@ -133,7 +133,7 @@ public final class z implements h {
     }
 
     public int hashCode() {
-        c cVar = this.f22161d;
+        c cVar = this.f22162d;
         if (cVar == null) {
             return 0;
         }
@@ -144,20 +144,20 @@ public final class z implements h {
         StringBuilder sb2 = new StringBuilder(64);
         sb2.append(z.class.getName());
         sb2.append("[date-style=");
-        sb2.append(this.f22162e);
+        sb2.append(this.f22163e);
         sb2.append(",time-style=");
-        sb2.append(this.f22163i);
+        sb2.append(this.f22164i);
         sb2.append(",delegate=");
-        sb2.append(this.f22161d);
+        sb2.append(this.f22162d);
         sb2.append(']');
         return sb2.toString();
     }
 
     private z(c cVar, bu.y yVar, bu.y yVar2) {
         if (yVar != null && yVar2 != null) {
-            this.f22162e = yVar;
-            this.f22163i = yVar2;
-            this.f22161d = cVar;
+            this.f22163e = yVar;
+            this.f22164i = yVar2;
+            this.f22162d = cVar;
             return;
         }
         throw new NullPointerException("Missing display style.");

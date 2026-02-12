@@ -32,7 +32,7 @@ final class MediaEngineModule$connectionInstancePrepareSecureFramesTransition$1 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit invokeSuspend$lambda$0(Callback callback) {
         callback.invoke(new Object[0]);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -69,11 +69,11 @@ final class MediaEngineModule$connectionInstancePrepareSecureFramesTransition$1 
                 return invokeSuspend$lambda$0;
             }
         });
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$connectionInstancePrepareSecureFramesTransition$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+        return ((MediaEngineModule$connectionInstancePrepareSecureFramesTransition$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

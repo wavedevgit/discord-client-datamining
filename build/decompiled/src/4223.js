@@ -17,21 +17,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var0;
     var0 = {};
     var2 = function arg0, arg1, arg2() {
-        _fun38563: for (var _fun38563_ip = 0;;) switch (_fun38563_ip) {
+        _fun38585: for (var _fun38585_ip = 0;;) switch (_fun38585_ip) {
             case 0:
                 var0 = arg1;
                 var1 = var0;
                 if (!var1) {
-                    _fun38563_ip = 55;
-                    continue _fun38563
+                    _fun38585_ip = 55;
+                    continue _fun38585
                 }
             case 9:
                 var3 = var0.Compression;
                 var2 = undefined;
                 var2 = var2 === var3;
                 if (var2) {
-                    _fun38563_ip = 52;
-                    continue _fun38563
+                    _fun38585_ip = 52;
+                    continue _fun38585
                 }
             case 24:
                 var5 = _closure1_slot2;
@@ -43,38 +43,38 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var2;
             case 55:
                 if (!var1) {
-                    _fun38563_ip = 64;
-                    continue _fun38563
+                    _fun38585_ip = 64;
+                    continue _fun38585
                 }
             case 58:
                 var1 = var0.JPEGInterchangeFormat;
             case 64:
                 if (!var1) {
-                    _fun38563_ip = 78;
-                    continue _fun38563
+                    _fun38585_ip = 78;
+                    continue _fun38585
                 }
             case 67:
                 var2 = var0.JPEGInterchangeFormat;
                 var1 = var2.value;
             case 78:
                 if (!var1) {
-                    _fun38563_ip = 87;
-                    continue _fun38563
+                    _fun38585_ip = 87;
+                    continue _fun38585
                 }
             case 81:
                 var1 = var0.JPEGInterchangeFormatLength;
             case 87:
                 if (!var1) {
-                    _fun38563_ip = 101;
-                    continue _fun38563
+                    _fun38585_ip = 101;
+                    continue _fun38585
                 }
             case 90:
                 var2 = var0.JPEGInterchangeFormatLength;
                 var1 = var2.value;
             case 101:
                 if (!var1) {
-                    _fun38563_ip = 223;
-                    continue _fun38563
+                    _fun38585_ip = 223;
+                    continue _fun38585
                 }
             case 104:
                 var1 = 'image/jpeg';

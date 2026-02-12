@@ -6,43 +6,43 @@ import java.util.List;
 public final class b1 extends e1 {
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient e1 f14645o;
+    private final transient e1 f14646o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b1(e1 e1Var) {
-        this.f14645o = e1Var;
+        this.f14646o = e1Var;
     }
 
     private final int p(int i10) {
-        return (this.f14645o.size() - 1) - i10;
+        return (this.f14646o.size() - 1) - i10;
     }
 
     @Override // com.google.android.gms.internal.fido.e1, com.google.android.gms.internal.fido.z0, java.util.AbstractCollection, java.util.Collection, java.util.List
     public final boolean contains(Object obj) {
-        return this.f14645o.contains(obj);
+        return this.f14646o.contains(obj);
     }
 
     @Override // com.google.android.gms.internal.fido.e1
     public final e1 g() {
-        return this.f14645o;
+        return this.f14646o;
     }
 
     @Override // java.util.List
     public final Object get(int i10) {
-        k0.a(i10, this.f14645o.size(), "index");
-        return this.f14645o.get(p(i10));
+        k0.a(i10, this.f14646o.size(), "index");
+        return this.f14646o.get(p(i10));
     }
 
     @Override // com.google.android.gms.internal.fido.e1
     public final e1 i(int i10, int i11) {
-        k0.e(i10, i11, this.f14645o.size());
-        e1 e1Var = this.f14645o;
-        return e1Var.subList(e1Var.size() - i11, this.f14645o.size() - i10).g();
+        k0.e(i10, i11, this.f14646o.size());
+        e1 e1Var = this.f14646o;
+        return e1Var.subList(e1Var.size() - i11, this.f14646o.size() - i10).g();
     }
 
     @Override // com.google.android.gms.internal.fido.e1, java.util.List
     public final int indexOf(Object obj) {
-        int lastIndexOf = this.f14645o.lastIndexOf(obj);
+        int lastIndexOf = this.f14646o.lastIndexOf(obj);
         if (lastIndexOf >= 0) {
             return p(lastIndexOf);
         }
@@ -51,7 +51,7 @@ public final class b1 extends e1 {
 
     @Override // com.google.android.gms.internal.fido.e1, java.util.List
     public final int lastIndexOf(Object obj) {
-        int indexOf = this.f14645o.indexOf(obj);
+        int indexOf = this.f14646o.indexOf(obj);
         if (indexOf >= 0) {
             return p(indexOf);
         }
@@ -60,7 +60,7 @@ public final class b1 extends e1 {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public final int size() {
-        return this.f14645o.size();
+        return this.f14646o.size();
     }
 
     @Override // com.google.android.gms.internal.fido.e1, java.util.List

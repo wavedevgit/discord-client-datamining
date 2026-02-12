@@ -40,8 +40,8 @@ public /* synthetic */ class TapObscuredMediaToggleData$$serializer implements h
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50032a;
-        return new KSerializer[]{n2Var, n2Var, n2Var, n2Var, h.f49996a};
+        n2 n2Var = n2.f50033a;
+        return new KSerializer[]{n2Var, n2Var, n2Var, n2Var, h.f49997a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

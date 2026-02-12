@@ -12,10 +12,10 @@ import java.util.Queue;
 public final class n2 implements IScope {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final n2 f29557b = new n2();
+    private static final n2 f29558b = new n2();
 
     /* renamed from: a  reason: collision with root package name */
-    private final io.sentry.util.r f29558a = new io.sentry.util.r(new r.a() { // from class: io.sentry.m2
+    private final io.sentry.util.r f29559a = new io.sentry.util.r(new r.a() { // from class: io.sentry.m2
         @Override // io.sentry.util.r.a
         public final Object a() {
             k7 empty;
@@ -28,7 +28,7 @@ public final class n2 implements IScope {
     }
 
     public static n2 g() {
-        return f29557b;
+        return f29558b;
     }
 
     @Override // io.sentry.IScope
@@ -78,7 +78,7 @@ public final class n2 implements IScope {
 
     @Override // io.sentry.IScope
     public io.sentry.protocol.x K() {
-        return io.sentry.protocol.x.f29798e;
+        return io.sentry.protocol.x.f29799e;
     }
 
     @Override // io.sentry.IScope
@@ -136,7 +136,7 @@ public final class n2 implements IScope {
 
     @Override // io.sentry.IScope
     public k7 b() {
-        return (k7) this.f29558a.a();
+        return (k7) this.f29559a.a();
     }
 
     @Override // io.sentry.IScope
@@ -251,7 +251,7 @@ public final class n2 implements IScope {
 
     @Override // io.sentry.IScope
     /* renamed from: clone */
-    public IScope m1191clone() {
+    public IScope m1190clone() {
         return g();
     }
 }

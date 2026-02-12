@@ -10,97 +10,97 @@ import org.json.JSONObject;
 public final class ProductDetails {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f8547a;
+    private final String f8548a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final JSONObject f8548b;
+    private final JSONObject f8549b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f8549c;
+    private final String f8550c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f8550d;
+    private final String f8551d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f8551e;
+    private final String f8552e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f8552f;
+    private final String f8553f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f8553g;
+    private final String f8554g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f8554h;
+    private final String f8555h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f8555i;
+    private final String f8556i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final String f8556j;
+    private final String f8557j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final String f8557k;
+    private final String f8558k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final List f8558l;
+    private final List f8559l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final List f8559m;
+    private final List f8560m;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class PricingPhase {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f8560a;
+        private final String f8561a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final long f8561b;
+        private final long f8562b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f8562c;
+        private final String f8563c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f8563d;
+        private final String f8564d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final int f8564e;
+        private final int f8565e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final int f8565f;
+        private final int f8566f;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public PricingPhase(JSONObject jSONObject) {
-            this.f8563d = jSONObject.optString("billingPeriod");
-            this.f8562c = jSONObject.optString("priceCurrencyCode");
-            this.f8560a = jSONObject.optString("formattedPrice");
-            this.f8561b = jSONObject.optLong("priceAmountMicros");
-            this.f8565f = jSONObject.optInt("recurrenceMode");
-            this.f8564e = jSONObject.optInt("billingCycleCount");
+            this.f8564d = jSONObject.optString("billingPeriod");
+            this.f8563c = jSONObject.optString("priceCurrencyCode");
+            this.f8561a = jSONObject.optString("formattedPrice");
+            this.f8562b = jSONObject.optLong("priceAmountMicros");
+            this.f8566f = jSONObject.optInt("recurrenceMode");
+            this.f8565e = jSONObject.optInt("billingCycleCount");
         }
 
         public int a() {
-            return this.f8564e;
+            return this.f8565e;
         }
 
         public String b() {
-            return this.f8563d;
+            return this.f8564d;
         }
 
         public String c() {
-            return this.f8560a;
+            return this.f8561a;
         }
 
         public long d() {
-            return this.f8561b;
+            return this.f8562b;
         }
 
         public String e() {
-            return this.f8562c;
+            return this.f8563c;
         }
 
         public int f() {
-            return this.f8565f;
+            return this.f8566f;
         }
     }
 
@@ -108,14 +108,14 @@ public final class ProductDetails {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f8566a;
+        private final int f8567a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f8567b;
+        private final int f8568b;
 
         a(JSONObject jSONObject) {
-            this.f8566a = jSONObject.getInt("commitmentPaymentsCount");
-            this.f8567b = jSONObject.optInt("subsequentCommitmentPaymentsCount");
+            this.f8567a = jSONObject.getInt("commitmentPaymentsCount");
+            this.f8568b = jSONObject.optInt("subsequentCommitmentPaymentsCount");
         }
     }
 
@@ -123,43 +123,43 @@ public final class ProductDetails {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f8568a;
+        private final String f8569a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final long f8569b;
+        private final long f8570b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f8570c;
+        private final String f8571c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f8571d;
+        private final String f8572d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f8572e;
+        private final String f8573e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final String f8573f;
+        private final String f8574f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final com.google.android.gms.internal.play_billing.j f8574g;
+        private final com.google.android.gms.internal.play_billing.j f8575g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final Long f8575h;
+        private final Long f8576h;
 
         /* renamed from: i  reason: collision with root package name */
-        private final x f8576i;
+        private final x f8577i;
 
         /* renamed from: j  reason: collision with root package name */
-        private final b0 f8577j;
+        private final b0 f8578j;
 
         /* renamed from: k  reason: collision with root package name */
-        private final y f8578k;
+        private final y f8579k;
 
         /* renamed from: l  reason: collision with root package name */
-        private final z f8579l;
+        private final z f8580l;
 
         /* renamed from: m  reason: collision with root package name */
-        private final a0 f8580m;
+        private final a0 f8581m;
 
         b(JSONObject jSONObject) {
             Long l10;
@@ -167,15 +167,15 @@ public final class ProductDetails {
             b0 b0Var;
             y yVar;
             z zVar;
-            this.f8568a = jSONObject.optString("formattedPrice");
-            this.f8569b = jSONObject.optLong("priceAmountMicros");
-            this.f8570c = jSONObject.optString("priceCurrencyCode");
+            this.f8569a = jSONObject.optString("formattedPrice");
+            this.f8570b = jSONObject.optLong("priceAmountMicros");
+            this.f8571c = jSONObject.optString("priceCurrencyCode");
             String optString = jSONObject.optString("offerIdToken");
-            this.f8571d = true == optString.isEmpty() ? null : optString;
+            this.f8572d = true == optString.isEmpty() ? null : optString;
             String optString2 = jSONObject.optString("offerId");
-            this.f8572e = true == optString2.isEmpty() ? null : optString2;
+            this.f8573e = true == optString2.isEmpty() ? null : optString2;
             String optString3 = jSONObject.optString("purchaseOptionId");
-            this.f8573f = true == optString3.isEmpty() ? null : optString3;
+            this.f8574f = true == optString3.isEmpty() ? null : optString3;
             jSONObject.optInt("offerType");
             JSONArray optJSONArray = jSONObject.optJSONArray("offerTags");
             ArrayList arrayList = new ArrayList();
@@ -184,59 +184,59 @@ public final class ProductDetails {
                     arrayList.add(optJSONArray.getString(i10));
                 }
             }
-            this.f8574g = com.google.android.gms.internal.play_billing.j.k(arrayList);
+            this.f8575g = com.google.android.gms.internal.play_billing.j.k(arrayList);
             if (jSONObject.has("fullPriceMicros")) {
                 l10 = Long.valueOf(jSONObject.optLong("fullPriceMicros"));
             } else {
                 l10 = null;
             }
-            this.f8575h = l10;
+            this.f8576h = l10;
             JSONObject optJSONObject = jSONObject.optJSONObject("discountDisplayInfo");
             if (optJSONObject == null) {
                 xVar = null;
             } else {
                 xVar = new x(optJSONObject);
             }
-            this.f8576i = xVar;
+            this.f8577i = xVar;
             JSONObject optJSONObject2 = jSONObject.optJSONObject("validTimeWindow");
             if (optJSONObject2 == null) {
                 b0Var = null;
             } else {
                 b0Var = new b0(optJSONObject2);
             }
-            this.f8577j = b0Var;
+            this.f8578j = b0Var;
             JSONObject optJSONObject3 = jSONObject.optJSONObject("limitedQuantityInfo");
             if (optJSONObject3 == null) {
                 yVar = null;
             } else {
                 yVar = new y(optJSONObject3);
             }
-            this.f8578k = yVar;
+            this.f8579k = yVar;
             JSONObject optJSONObject4 = jSONObject.optJSONObject("preorderDetails");
             if (optJSONObject4 == null) {
                 zVar = null;
             } else {
                 zVar = new z(optJSONObject4);
             }
-            this.f8579l = zVar;
+            this.f8580l = zVar;
             JSONObject optJSONObject5 = jSONObject.optJSONObject("rentalDetails");
-            this.f8580m = optJSONObject5 != null ? new a0(optJSONObject5) : null;
+            this.f8581m = optJSONObject5 != null ? new a0(optJSONObject5) : null;
         }
 
         public String a() {
-            return this.f8568a;
+            return this.f8569a;
         }
 
         public long b() {
-            return this.f8569b;
+            return this.f8570b;
         }
 
         public String c() {
-            return this.f8570c;
+            return this.f8571c;
         }
 
         public final String d() {
-            return this.f8571d;
+            return this.f8572d;
         }
     }
 
@@ -244,7 +244,7 @@ public final class ProductDetails {
     public static class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f8581a;
+        private final List f8582a;
 
         c(JSONArray jSONArray) {
             ArrayList arrayList = new ArrayList();
@@ -256,11 +256,11 @@ public final class ProductDetails {
                     }
                 }
             }
-            this.f8581a = arrayList;
+            this.f8582a = arrayList;
         }
 
         public List a() {
-            return this.f8581a;
+            return this.f8582a;
         }
     }
 
@@ -268,42 +268,42 @@ public final class ProductDetails {
     public static final class d {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f8582a;
+        private final String f8583a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f8583b;
+        private final String f8584b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f8584c;
+        private final String f8585c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final c f8585d;
+        private final c f8586d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final List f8586e;
+        private final List f8587e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final a f8587f;
+        private final a f8588f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final c0 f8588g;
+        private final c0 f8589g;
 
         d(JSONObject jSONObject) {
             a aVar;
-            this.f8582a = jSONObject.optString("basePlanId");
+            this.f8583a = jSONObject.optString("basePlanId");
             String optString = jSONObject.optString("offerId");
-            this.f8583b = true == optString.isEmpty() ? null : optString;
-            this.f8584c = jSONObject.getString("offerIdToken");
-            this.f8585d = new c(jSONObject.getJSONArray("pricingPhases"));
+            this.f8584b = true == optString.isEmpty() ? null : optString;
+            this.f8585c = jSONObject.getString("offerIdToken");
+            this.f8586d = new c(jSONObject.getJSONArray("pricingPhases"));
             JSONObject optJSONObject = jSONObject.optJSONObject("installmentPlanDetails");
             if (optJSONObject == null) {
                 aVar = null;
             } else {
                 aVar = new a(optJSONObject);
             }
-            this.f8587f = aVar;
+            this.f8588f = aVar;
             JSONObject optJSONObject2 = jSONObject.optJSONObject("transitionPlanDetails");
-            this.f8588g = optJSONObject2 != null ? new c0(optJSONObject2) : null;
+            this.f8589g = optJSONObject2 != null ? new c0(optJSONObject2) : null;
             ArrayList arrayList = new ArrayList();
             JSONArray optJSONArray = jSONObject.optJSONArray("offerTags");
             if (optJSONArray != null) {
@@ -311,79 +311,79 @@ public final class ProductDetails {
                     arrayList.add(optJSONArray.getString(i10));
                 }
             }
-            this.f8586e = arrayList;
+            this.f8587e = arrayList;
         }
 
         public String a() {
-            return this.f8582a;
+            return this.f8583a;
         }
 
         public String b() {
-            return this.f8583b;
+            return this.f8584b;
         }
 
         public List c() {
-            return this.f8586e;
+            return this.f8587e;
         }
 
         public String d() {
-            return this.f8584c;
+            return this.f8585c;
         }
 
         public c e() {
-            return this.f8585d;
+            return this.f8586d;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ProductDetails(String str) {
         ArrayList arrayList;
-        this.f8547a = str;
+        this.f8548a = str;
         JSONObject jSONObject = new JSONObject(str);
-        this.f8548b = jSONObject;
+        this.f8549b = jSONObject;
         String optString = jSONObject.optString("productId");
-        this.f8549c = optString;
+        this.f8550c = optString;
         String optString2 = jSONObject.optString("type");
-        this.f8550d = optString2;
+        this.f8551d = optString2;
         if (!TextUtils.isEmpty(optString)) {
             if (!TextUtils.isEmpty(optString2)) {
-                this.f8551e = jSONObject.optString("title");
-                this.f8552f = jSONObject.optString(StackTraceHelper.NAME_KEY);
-                this.f8553g = jSONObject.optString("description");
-                this.f8555i = jSONObject.optString("packageDisplayName");
-                this.f8556j = jSONObject.optString("iconUrl");
-                this.f8554h = jSONObject.optString("skuDetailsToken");
-                this.f8557k = jSONObject.optString("serializedDocid");
+                this.f8552e = jSONObject.optString("title");
+                this.f8553f = jSONObject.optString(StackTraceHelper.NAME_KEY);
+                this.f8554g = jSONObject.optString("description");
+                this.f8556i = jSONObject.optString("packageDisplayName");
+                this.f8557j = jSONObject.optString("iconUrl");
+                this.f8555h = jSONObject.optString("skuDetailsToken");
+                this.f8558k = jSONObject.optString("serializedDocid");
                 JSONArray optJSONArray = jSONObject.optJSONArray("subscriptionOfferDetails");
                 if (optJSONArray != null) {
                     ArrayList arrayList2 = new ArrayList();
                     for (int i10 = 0; i10 < optJSONArray.length(); i10++) {
                         arrayList2.add(new d(optJSONArray.getJSONObject(i10)));
                     }
-                    this.f8558l = arrayList2;
+                    this.f8559l = arrayList2;
                 } else {
                     if (!optString2.equals("subs") && !optString2.equals("play_pass_subs")) {
                         arrayList = null;
                     } else {
                         arrayList = new ArrayList();
                     }
-                    this.f8558l = arrayList;
+                    this.f8559l = arrayList;
                 }
-                JSONObject optJSONObject = this.f8548b.optJSONObject("oneTimePurchaseOfferDetails");
-                JSONArray optJSONArray2 = this.f8548b.optJSONArray("oneTimePurchaseOfferDetailsList");
+                JSONObject optJSONObject = this.f8549b.optJSONObject("oneTimePurchaseOfferDetails");
+                JSONArray optJSONArray2 = this.f8549b.optJSONArray("oneTimePurchaseOfferDetailsList");
                 ArrayList arrayList3 = new ArrayList();
                 if (optJSONArray2 != null) {
                     for (int i11 = 0; i11 < optJSONArray2.length(); i11++) {
                         arrayList3.add(new b(optJSONArray2.getJSONObject(i11)));
                     }
-                    this.f8559m = arrayList3;
+                    this.f8560m = arrayList3;
                     return;
                 } else if (optJSONObject != null) {
                     arrayList3.add(new b(optJSONObject));
-                    this.f8559m = arrayList3;
+                    this.f8560m = arrayList3;
                     return;
                 } else {
-                    this.f8559m = null;
+                    this.f8560m = null;
                     return;
                 }
             }
@@ -393,27 +393,27 @@ public final class ProductDetails {
     }
 
     public String a() {
-        return this.f8553g;
+        return this.f8554g;
     }
 
     public String b() {
-        return this.f8552f;
+        return this.f8553f;
     }
 
     public b c() {
-        List list = this.f8559m;
+        List list = this.f8560m;
         if (list != null && !list.isEmpty()) {
-            return (b) this.f8559m.get(0);
+            return (b) this.f8560m.get(0);
         }
         return null;
     }
 
     public String d() {
-        return this.f8549c;
+        return this.f8550c;
     }
 
     public String e() {
-        return this.f8550d;
+        return this.f8551d;
     }
 
     public boolean equals(Object obj) {
@@ -423,38 +423,38 @@ public final class ProductDetails {
         if (!(obj instanceof ProductDetails)) {
             return false;
         }
-        return TextUtils.equals(this.f8547a, ((ProductDetails) obj).f8547a);
+        return TextUtils.equals(this.f8548a, ((ProductDetails) obj).f8548a);
     }
 
     public List f() {
-        return this.f8558l;
+        return this.f8559l;
     }
 
     public String g() {
-        return this.f8551e;
+        return this.f8552e;
     }
 
     public final String h() {
-        return this.f8548b.optString("packageName");
+        return this.f8549b.optString("packageName");
     }
 
     public int hashCode() {
-        return this.f8547a.hashCode();
+        return this.f8548a.hashCode();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final String i() {
-        return this.f8554h;
+        return this.f8555h;
     }
 
     public String j() {
-        return this.f8557k;
+        return this.f8558k;
     }
 
     public String toString() {
-        List list = this.f8558l;
-        String obj = this.f8548b.toString();
+        List list = this.f8559l;
+        String obj = this.f8549b.toString();
         String valueOf = String.valueOf(list);
-        return "ProductDetails{jsonString='" + this.f8547a + "', parsedJson=" + obj + ", productId='" + this.f8549c + "', productType='" + this.f8550d + "', title='" + this.f8551e + "', productDetailsToken='" + this.f8554h + "', subscriptionOfferDetails=" + valueOf + "}";
+        return "ProductDetails{jsonString='" + this.f8548a + "', parsedJson=" + obj + ", productId='" + this.f8550c + "', productType='" + this.f8551d + "', title='" + this.f8552e + "', productDetailsToken='" + this.f8555h + "', subscriptionOfferDetails=" + valueOf + "}";
     }
 }

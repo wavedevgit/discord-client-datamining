@@ -34,49 +34,49 @@ public final class InputAddressComponent implements k5, pq.c, v, e0 {
     private t E;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f20614d;
+    private final String f20615d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f20615e;
+    private String f20616e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f20616i;
+    private String f20617i;
 
     /* renamed from: o  reason: collision with root package name */
-    private String f20617o;
+    private String f20618o;
 
     /* renamed from: p  reason: collision with root package name */
-    private String f20618p;
+    private String f20619p;
 
     /* renamed from: q  reason: collision with root package name */
-    private String f20619q;
+    private String f20620q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final JsonLogicBoolean f20620r;
+    private final JsonLogicBoolean f20621r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final JsonLogicBoolean f20621s;
+    private final JsonLogicBoolean f20622s;
 
     /* renamed from: t  reason: collision with root package name */
-    private String f20622t;
+    private String f20623t;
 
     /* renamed from: u  reason: collision with root package name */
-    private List f20623u;
+    private List f20624u;
 
     /* renamed from: v  reason: collision with root package name */
-    private String f20624v;
+    private String f20625v;
 
     /* renamed from: w  reason: collision with root package name */
-    private Boolean f20625w;
+    private Boolean f20626w;
 
     /* renamed from: x  reason: collision with root package name */
-    private Boolean f20626x;
+    private Boolean f20627x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final List f20627y;
+    private final List f20628y;
 
     /* renamed from: z  reason: collision with root package name */
-    private m f20628z;
+    private m f20629z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -131,26 +131,26 @@ public final class InputAddressComponent implements k5, pq.c, v, e0 {
         Intrinsics.checkNotNullParameter(city, "city");
         Intrinsics.checkNotNullParameter(subdivision, "subdivision");
         Intrinsics.checkNotNullParameter(postalCode, "postalCode");
-        this.f20614d = name;
-        this.f20615e = street1;
-        this.f20616i = street2;
-        this.f20617o = city;
-        this.f20618p = subdivision;
-        this.f20619q = postalCode;
-        this.f20620r = jsonLogicBoolean;
-        this.f20621s = jsonLogicBoolean2;
-        this.f20622t = str;
-        this.f20623u = list;
-        this.f20624v = str2;
-        this.f20625w = bool;
-        this.f20626x = bool2;
-        this.f20627y = new ArrayList();
-        this.f20628z = new m(true);
-        this.A = w.a(this.f20615e);
-        this.B = w.a(this.f20616i);
-        this.C = w.a(this.f20617o);
-        this.D = w.a(this.f20618p);
-        this.E = w.a(this.f20619q);
+        this.f20615d = name;
+        this.f20616e = street1;
+        this.f20617i = street2;
+        this.f20618o = city;
+        this.f20619p = subdivision;
+        this.f20620q = postalCode;
+        this.f20621r = jsonLogicBoolean;
+        this.f20622s = jsonLogicBoolean2;
+        this.f20623t = str;
+        this.f20624u = list;
+        this.f20625v = str2;
+        this.f20626w = bool;
+        this.f20627x = bool2;
+        this.f20628y = new ArrayList();
+        this.f20629z = new m(true);
+        this.A = w.a(this.f20616e);
+        this.B = w.a(this.f20617i);
+        this.C = w.a(this.f20618o);
+        this.D = w.a(this.f20619p);
+        this.E = w.a(this.f20620q);
     }
 
     @g(ignore = true)
@@ -175,34 +175,34 @@ public final class InputAddressComponent implements k5, pq.c, v, e0 {
 
     public static /* synthetic */ InputAddressComponent r(InputAddressComponent inputAddressComponent, String str, String str2, String str3, String str4, String str5, String str6, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, String str7, List list, String str8, Boolean bool, Boolean bool2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = inputAddressComponent.f20614d;
+            str = inputAddressComponent.f20615d;
         }
-        return inputAddressComponent.q(str, (i10 & 2) != 0 ? inputAddressComponent.f20615e : str2, (i10 & 4) != 0 ? inputAddressComponent.f20616i : str3, (i10 & 8) != 0 ? inputAddressComponent.f20617o : str4, (i10 & 16) != 0 ? inputAddressComponent.f20618p : str5, (i10 & 32) != 0 ? inputAddressComponent.f20619q : str6, (i10 & 64) != 0 ? inputAddressComponent.f20620r : jsonLogicBoolean, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? inputAddressComponent.f20621s : jsonLogicBoolean2, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? inputAddressComponent.f20622t : str7, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? inputAddressComponent.f20623u : list, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0 ? inputAddressComponent.f20624v : str8, (i10 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? inputAddressComponent.f20625w : bool, (i10 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? inputAddressComponent.f20626x : bool2);
+        return inputAddressComponent.q(str, (i10 & 2) != 0 ? inputAddressComponent.f20616e : str2, (i10 & 4) != 0 ? inputAddressComponent.f20617i : str3, (i10 & 8) != 0 ? inputAddressComponent.f20618o : str4, (i10 & 16) != 0 ? inputAddressComponent.f20619p : str5, (i10 & 32) != 0 ? inputAddressComponent.f20620q : str6, (i10 & 64) != 0 ? inputAddressComponent.f20621r : jsonLogicBoolean, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? inputAddressComponent.f20622s : jsonLogicBoolean2, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? inputAddressComponent.f20623t : str7, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? inputAddressComponent.f20624u : list, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0 ? inputAddressComponent.f20625v : str8, (i10 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? inputAddressComponent.f20626w : bool, (i10 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? inputAddressComponent.f20627x : bool2);
     }
 
     public final String A() {
-        return this.f20616i;
+        return this.f20617i;
     }
 
     public final String B() {
-        return this.f20618p;
+        return this.f20619p;
     }
 
     public final Boolean C() {
-        return this.f20625w;
+        return this.f20626w;
     }
 
     public final Boolean D() {
-        return this.f20626x;
+        return this.f20627x;
     }
 
     public final void E(Boolean bool) {
-        this.f20626x = bool;
+        this.f20627x = bool;
     }
 
     public void F(m mVar) {
         Intrinsics.checkNotNullParameter(mVar, "<set-?>");
-        this.f20628z = mVar;
+        this.f20629z = mVar;
     }
 
     public void G(t tVar) {
@@ -271,7 +271,7 @@ public final class InputAddressComponent implements k5, pq.c, v, e0 {
 
     @Override // pq.e0
     public List d() {
-        return this.f20627y;
+        return this.f20628y;
     }
 
     @Override // android.os.Parcelable
@@ -298,7 +298,7 @@ public final class InputAddressComponent implements k5, pq.c, v, e0 {
         }
         if (obj instanceof InputAddressComponent) {
             InputAddressComponent inputAddressComponent = (InputAddressComponent) obj;
-            return Intrinsics.areEqual(this.f20614d, inputAddressComponent.f20614d) && Intrinsics.areEqual(this.f20615e, inputAddressComponent.f20615e) && Intrinsics.areEqual(this.f20616i, inputAddressComponent.f20616i) && Intrinsics.areEqual(this.f20617o, inputAddressComponent.f20617o) && Intrinsics.areEqual(this.f20618p, inputAddressComponent.f20618p) && Intrinsics.areEqual(this.f20619q, inputAddressComponent.f20619q) && Intrinsics.areEqual(this.f20620r, inputAddressComponent.f20620r) && Intrinsics.areEqual(this.f20621s, inputAddressComponent.f20621s) && Intrinsics.areEqual(this.f20622t, inputAddressComponent.f20622t) && Intrinsics.areEqual(this.f20623u, inputAddressComponent.f20623u) && Intrinsics.areEqual(this.f20624v, inputAddressComponent.f20624v) && Intrinsics.areEqual(this.f20625w, inputAddressComponent.f20625w) && Intrinsics.areEqual(this.f20626x, inputAddressComponent.f20626x);
+            return Intrinsics.areEqual(this.f20615d, inputAddressComponent.f20615d) && Intrinsics.areEqual(this.f20616e, inputAddressComponent.f20616e) && Intrinsics.areEqual(this.f20617i, inputAddressComponent.f20617i) && Intrinsics.areEqual(this.f20618o, inputAddressComponent.f20618o) && Intrinsics.areEqual(this.f20619p, inputAddressComponent.f20619p) && Intrinsics.areEqual(this.f20620q, inputAddressComponent.f20620q) && Intrinsics.areEqual(this.f20621r, inputAddressComponent.f20621r) && Intrinsics.areEqual(this.f20622s, inputAddressComponent.f20622s) && Intrinsics.areEqual(this.f20623t, inputAddressComponent.f20623t) && Intrinsics.areEqual(this.f20624u, inputAddressComponent.f20624u) && Intrinsics.areEqual(this.f20625v, inputAddressComponent.f20625v) && Intrinsics.areEqual(this.f20626w, inputAddressComponent.f20626w) && Intrinsics.areEqual(this.f20627x, inputAddressComponent.f20627x);
         }
         return false;
     }
@@ -323,34 +323,34 @@ public final class InputAddressComponent implements k5, pq.c, v, e0 {
 
     @Override // pq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f20621s;
+        return this.f20622s;
     }
 
     @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f20620r;
+        return this.f20621r;
     }
 
     @Override // pq.k5
     public String getName() {
-        return this.f20614d;
+        return this.f20615d;
     }
 
     public int hashCode() {
-        int hashCode = ((((((((((this.f20614d.hashCode() * 31) + this.f20615e.hashCode()) * 31) + this.f20616i.hashCode()) * 31) + this.f20617o.hashCode()) * 31) + this.f20618p.hashCode()) * 31) + this.f20619q.hashCode()) * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f20620r;
+        int hashCode = ((((((((((this.f20615d.hashCode() * 31) + this.f20616e.hashCode()) * 31) + this.f20617i.hashCode()) * 31) + this.f20618o.hashCode()) * 31) + this.f20619p.hashCode()) * 31) + this.f20620q.hashCode()) * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f20621r;
         int hashCode2 = (hashCode + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20621s;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20622s;
         int hashCode3 = (hashCode2 + (jsonLogicBoolean2 == null ? 0 : jsonLogicBoolean2.hashCode())) * 31;
-        String str = this.f20622t;
+        String str = this.f20623t;
         int hashCode4 = (hashCode3 + (str == null ? 0 : str.hashCode())) * 31;
-        List list = this.f20623u;
+        List list = this.f20624u;
         int hashCode5 = (hashCode4 + (list == null ? 0 : list.hashCode())) * 31;
-        String str2 = this.f20624v;
+        String str2 = this.f20625v;
         int hashCode6 = (hashCode5 + (str2 == null ? 0 : str2.hashCode())) * 31;
-        Boolean bool = this.f20625w;
+        Boolean bool = this.f20626w;
         int hashCode7 = (hashCode6 + (bool == null ? 0 : bool.hashCode())) * 31;
-        Boolean bool2 = this.f20626x;
+        Boolean bool2 = this.f20627x;
         return hashCode7 + (bool2 != null ? bool2.hashCode() : 0);
     }
 
@@ -394,7 +394,7 @@ public final class InputAddressComponent implements k5, pq.c, v, e0 {
 
     @Override // pq.c
     public m o() {
-        return this.f20628z;
+        return this.f20629z;
     }
 
     @Override // pq.c
@@ -421,55 +421,55 @@ public final class InputAddressComponent implements k5, pq.c, v, e0 {
     }
 
     public final String s() {
-        return this.f20617o;
+        return this.f20618o;
     }
 
     public final String t() {
-        return this.f20619q;
+        return this.f20620q;
     }
 
     public String toString() {
-        String str = this.f20614d;
-        String str2 = this.f20615e;
-        String str3 = this.f20616i;
-        String str4 = this.f20617o;
-        String str5 = this.f20618p;
-        String str6 = this.f20619q;
-        JsonLogicBoolean jsonLogicBoolean = this.f20620r;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20621s;
-        String str7 = this.f20622t;
-        List list = this.f20623u;
-        String str8 = this.f20624v;
-        Boolean bool = this.f20625w;
-        Boolean bool2 = this.f20626x;
+        String str = this.f20615d;
+        String str2 = this.f20616e;
+        String str3 = this.f20617i;
+        String str4 = this.f20618o;
+        String str5 = this.f20619p;
+        String str6 = this.f20620q;
+        JsonLogicBoolean jsonLogicBoolean = this.f20621r;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20622s;
+        String str7 = this.f20623t;
+        List list = this.f20624u;
+        String str8 = this.f20625v;
+        Boolean bool = this.f20626w;
+        Boolean bool2 = this.f20627x;
         return "InputAddressComponent(name=" + str + ", street1=" + str2 + ", street2=" + str3 + ", city=" + str4 + ", subdivision=" + str5 + ", postalCode=" + str6 + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ", searchQuery=" + str7 + ", searchResults=" + list + ", selectedSearchResultId=" + str8 + ", isAddressAutocompleteLoading=" + bool + ", isAddressComponentsCollapsed=" + bool2 + ")";
     }
 
     public final String u() {
-        return this.f20622t;
+        return this.f20623t;
     }
 
     public final List v() {
-        return this.f20623u;
+        return this.f20624u;
     }
 
     public final String w() {
-        return this.f20624v;
+        return this.f20625v;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f20614d);
-        dest.writeString(this.f20615e);
-        dest.writeString(this.f20616i);
-        dest.writeString(this.f20617o);
-        dest.writeString(this.f20618p);
-        dest.writeString(this.f20619q);
-        dest.writeParcelable(this.f20620r, i10);
-        dest.writeParcelable(this.f20621s, i10);
-        dest.writeString(this.f20622t);
-        List<Suggestion> list = this.f20623u;
+        dest.writeString(this.f20615d);
+        dest.writeString(this.f20616e);
+        dest.writeString(this.f20617i);
+        dest.writeString(this.f20618o);
+        dest.writeString(this.f20619p);
+        dest.writeString(this.f20620q);
+        dest.writeParcelable(this.f20621r, i10);
+        dest.writeParcelable(this.f20622s, i10);
+        dest.writeString(this.f20623t);
+        List<Suggestion> list = this.f20624u;
         if (list == null) {
             dest.writeInt(0);
         } else {
@@ -479,15 +479,15 @@ public final class InputAddressComponent implements k5, pq.c, v, e0 {
                 suggestion.writeToParcel(dest, i10);
             }
         }
-        dest.writeString(this.f20624v);
-        Boolean bool = this.f20625w;
+        dest.writeString(this.f20625v);
+        Boolean bool = this.f20626w;
         if (bool == null) {
             dest.writeInt(0);
         } else {
             dest.writeInt(1);
             dest.writeInt(bool.booleanValue() ? 1 : 0);
         }
-        Boolean bool2 = this.f20626x;
+        Boolean bool2 = this.f20627x;
         if (bool2 == null) {
             dest.writeInt(0);
             return;
@@ -497,7 +497,7 @@ public final class InputAddressComponent implements k5, pq.c, v, e0 {
     }
 
     public final String x() {
-        return this.f20615e;
+        return this.f20616e;
     }
 
     public /* synthetic */ InputAddressComponent(String str, String str2, String str3, String str4, String str5, String str6, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, String str7, List list, String str8, Boolean bool, Boolean bool2, int i10, DefaultConstructorMarker defaultConstructorMarker) {

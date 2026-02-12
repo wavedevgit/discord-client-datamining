@@ -40,7 +40,7 @@ public /* synthetic */ class MediaPlayerDownloadProgress$$serializer implements 
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        x xVar = x.f50086a;
+        x xVar = x.f50087a;
         return new KSerializer[]{xVar, xVar, xVar, xVar};
     }
 

@@ -6,25 +6,25 @@ import kotlin.jvm.internal.Intrinsics;
 public final class e {
 
     /* renamed from: g  reason: collision with root package name */
-    public static final a f57177g = new a(null);
+    public static final a f57178g = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    public final boolean f57178a;
+    public final boolean f57179a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final Integer f57179b;
+    public final Integer f57180b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final boolean f57180c;
+    public final boolean f57181c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final Integer f57181d;
+    public final Integer f57182d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final boolean f57182e;
+    public final boolean f57183e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final boolean f57183f;
+    public final boolean f57184f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -166,19 +166,19 @@ public final class e {
     }
 
     public e(boolean z10, Integer num, boolean z11, Integer num2, boolean z12, boolean z13) {
-        this.f57178a = z10;
-        this.f57179b = num;
-        this.f57180c = z11;
-        this.f57181d = num2;
-        this.f57182e = z12;
-        this.f57183f = z13;
+        this.f57179a = z10;
+        this.f57180b = num;
+        this.f57181c = z11;
+        this.f57182d = num2;
+        this.f57183e = z12;
+        this.f57184f = z13;
     }
 
     public final boolean a(boolean z10) {
         if (z10) {
-            return this.f57180c;
+            return this.f57181c;
         }
-        return this.f57182e;
+        return this.f57183e;
     }
 
     public boolean equals(Object obj) {
@@ -189,7 +189,7 @@ public final class e {
             return false;
         }
         e eVar = (e) obj;
-        if (this.f57178a == eVar.f57178a && Intrinsics.areEqual(this.f57179b, eVar.f57179b) && this.f57180c == eVar.f57180c && Intrinsics.areEqual(this.f57181d, eVar.f57181d) && this.f57182e == eVar.f57182e && this.f57183f == eVar.f57183f) {
+        if (this.f57179a == eVar.f57179a && Intrinsics.areEqual(this.f57180b, eVar.f57180b) && this.f57181c == eVar.f57181c && Intrinsics.areEqual(this.f57182d, eVar.f57182d) && this.f57183e == eVar.f57183e && this.f57184f == eVar.f57184f) {
             return true;
         }
         return false;
@@ -203,14 +203,14 @@ public final class e {
     /* JADX WARN: Type inference failed for: r2v6, types: [boolean] */
     public int hashCode() {
         int hashCode;
-        boolean z10 = this.f57178a;
+        boolean z10 = this.f57179a;
         int i10 = 1;
         ?? r02 = z10;
         if (z10) {
             r02 = 1;
         }
         int i11 = r02 * 31;
-        Integer num = this.f57179b;
+        Integer num = this.f57180b;
         int i12 = 0;
         if (num == null) {
             hashCode = 0;
@@ -218,24 +218,24 @@ public final class e {
             hashCode = num.hashCode();
         }
         int i13 = (i11 + hashCode) * 31;
-        ?? r22 = this.f57180c;
+        ?? r22 = this.f57181c;
         int i14 = r22;
         if (r22 != 0) {
             i14 = 1;
         }
         int i15 = (i13 + i14) * 31;
-        Integer num2 = this.f57181d;
+        Integer num2 = this.f57182d;
         if (num2 != null) {
             i12 = num2.hashCode();
         }
         int i16 = (i15 + i12) * 31;
-        ?? r23 = this.f57182e;
+        ?? r23 = this.f57183e;
         int i17 = r23;
         if (r23 != 0) {
             i17 = 1;
         }
         int i18 = (i16 + i17) * 31;
-        boolean z11 = this.f57183f;
+        boolean z11 = this.f57184f;
         if (!z11) {
             i10 = z11 ? 1 : 0;
         }
@@ -243,6 +243,6 @@ public final class e {
     }
 
     public String toString() {
-        return "WebSocketExtensions(perMessageDeflate=" + this.f57178a + ", clientMaxWindowBits=" + this.f57179b + ", clientNoContextTakeover=" + this.f57180c + ", serverMaxWindowBits=" + this.f57181d + ", serverNoContextTakeover=" + this.f57182e + ", unknownValues=" + this.f57183f + ')';
+        return "WebSocketExtensions(perMessageDeflate=" + this.f57179a + ", clientMaxWindowBits=" + this.f57180b + ", clientNoContextTakeover=" + this.f57181c + ", serverMaxWindowBits=" + this.f57182d + ", serverNoContextTakeover=" + this.f57183e + ", unknownValues=" + this.f57184f + ')';
     }
 }

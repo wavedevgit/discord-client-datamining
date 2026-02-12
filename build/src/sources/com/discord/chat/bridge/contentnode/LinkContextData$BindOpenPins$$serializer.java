@@ -41,7 +41,7 @@ public /* synthetic */ class LinkContextData$BindOpenPins$$serializer implements
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{n2.f50032a, rt.a.u(tt.h.f49996a), ChannelId$$serializer.INSTANCE};
+        return new KSerializer[]{n2.f50033a, rt.a.u(tt.h.f49997a), ChannelId$$serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -58,7 +58,7 @@ public /* synthetic */ class LinkContextData$BindOpenPins$$serializer implements
         if (b10.p()) {
             str = b10.m(serialDescriptor, 0);
             channelId = (ChannelId) b10.y(serialDescriptor, 2, ChannelId$$serializer.INSTANCE, null);
-            bool = (Boolean) b10.n(serialDescriptor, 1, tt.h.f49996a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 1, tt.h.f49997a, null);
             i10 = 7;
         } else {
             boolean z10 = true;
@@ -73,7 +73,7 @@ public /* synthetic */ class LinkContextData$BindOpenPins$$serializer implements
                     str2 = b10.m(serialDescriptor, 0);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    bool2 = (Boolean) b10.n(serialDescriptor, 1, tt.h.f49996a, bool2);
+                    bool2 = (Boolean) b10.n(serialDescriptor, 1, tt.h.f49997a, bool2);
                     i11 |= 2;
                 } else if (o10 != 2) {
                     throw new b0(o10);

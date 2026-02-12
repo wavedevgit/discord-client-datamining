@@ -16,16 +16,16 @@ import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface BuiltInsLoader {
     @NotNull
-    public static final Companion Companion = Companion.f32111a;
+    public static final Companion Companion = Companion.f32112a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ Companion f32111a = new Companion();
+        static final /* synthetic */ Companion f32112a = new Companion();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final Lazy f32112b = l.a(o.f6082e, a.f32164d);
+        private static final Lazy f32113b = l.a(o.f6082e, a.f32165d);
 
         private Companion() {
         }
@@ -43,7 +43,7 @@ public interface BuiltInsLoader {
 
         @NotNull
         public final BuiltInsLoader getInstance() {
-            return (BuiltInsLoader) f32112b.getValue();
+            return (BuiltInsLoader) f32113b.getValue();
         }
     }
 

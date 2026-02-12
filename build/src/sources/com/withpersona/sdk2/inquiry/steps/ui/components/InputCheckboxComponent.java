@@ -23,22 +23,22 @@ public final class InputCheckboxComponent implements k5, u4, v, e0 {
     public static final Parcelable.Creator<InputCheckboxComponent> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f20629d;
+    private final String f20630d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f20630e;
+    private final boolean f20631e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f20631i;
+    private final JsonLogicBoolean f20632i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final JsonLogicBoolean f20632o;
+    private final JsonLogicBoolean f20633o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final List f20633p;
+    private final List f20634p;
 
     /* renamed from: q  reason: collision with root package name */
-    private m f20634q;
+    private m f20635q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -58,26 +58,26 @@ public final class InputCheckboxComponent implements k5, u4, v, e0 {
 
     public InputCheckboxComponent(String name, boolean z10, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2) {
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f20629d = name;
-        this.f20630e = z10;
-        this.f20631i = jsonLogicBoolean;
-        this.f20632o = jsonLogicBoolean2;
-        this.f20633p = new ArrayList();
-        this.f20634q = new m(z10);
+        this.f20630d = name;
+        this.f20631e = z10;
+        this.f20632i = jsonLogicBoolean;
+        this.f20633o = jsonLogicBoolean2;
+        this.f20634p = new ArrayList();
+        this.f20635q = new m(z10);
     }
 
     public static /* synthetic */ InputCheckboxComponent c(InputCheckboxComponent inputCheckboxComponent, String str, boolean z10, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = inputCheckboxComponent.f20629d;
+            str = inputCheckboxComponent.f20630d;
         }
         if ((i10 & 2) != 0) {
-            z10 = inputCheckboxComponent.f20630e;
+            z10 = inputCheckboxComponent.f20631e;
         }
         if ((i10 & 4) != 0) {
-            jsonLogicBoolean = inputCheckboxComponent.f20631i;
+            jsonLogicBoolean = inputCheckboxComponent.f20632i;
         }
         if ((i10 & 8) != 0) {
-            jsonLogicBoolean2 = inputCheckboxComponent.f20632o;
+            jsonLogicBoolean2 = inputCheckboxComponent.f20633o;
         }
         return inputCheckboxComponent.b(str, z10, jsonLogicBoolean, jsonLogicBoolean2);
     }
@@ -88,7 +88,7 @@ public final class InputCheckboxComponent implements k5, u4, v, e0 {
 
     @Override // pq.u4
     public m a() {
-        return this.f20634q;
+        return this.f20635q;
     }
 
     public final InputCheckboxComponent b(String name, boolean z10, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2) {
@@ -98,7 +98,7 @@ public final class InputCheckboxComponent implements k5, u4, v, e0 {
 
     @Override // pq.e0
     public List d() {
-        return this.f20633p;
+        return this.f20634p;
     }
 
     @Override // android.os.Parcelable
@@ -108,7 +108,7 @@ public final class InputCheckboxComponent implements k5, u4, v, e0 {
 
     public void e(m mVar) {
         Intrinsics.checkNotNullParameter(mVar, "<set-?>");
-        this.f20634q = mVar;
+        this.f20635q = mVar;
     }
 
     public boolean equals(Object obj) {
@@ -117,7 +117,7 @@ public final class InputCheckboxComponent implements k5, u4, v, e0 {
         }
         if (obj instanceof InputCheckboxComponent) {
             InputCheckboxComponent inputCheckboxComponent = (InputCheckboxComponent) obj;
-            return Intrinsics.areEqual(this.f20629d, inputCheckboxComponent.f20629d) && this.f20630e == inputCheckboxComponent.f20630e && Intrinsics.areEqual(this.f20631i, inputCheckboxComponent.f20631i) && Intrinsics.areEqual(this.f20632o, inputCheckboxComponent.f20632o);
+            return Intrinsics.areEqual(this.f20630d, inputCheckboxComponent.f20630d) && this.f20631e == inputCheckboxComponent.f20631e && Intrinsics.areEqual(this.f20632i, inputCheckboxComponent.f20632i) && Intrinsics.areEqual(this.f20633o, inputCheckboxComponent.f20633o);
         }
         return false;
     }
@@ -132,42 +132,42 @@ public final class InputCheckboxComponent implements k5, u4, v, e0 {
 
     @Override // pq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f20632o;
+        return this.f20633o;
     }
 
     @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f20631i;
+        return this.f20632i;
     }
 
     @Override // pq.k5
     public String getName() {
-        return this.f20629d;
+        return this.f20630d;
     }
 
     public int hashCode() {
-        int hashCode = ((this.f20629d.hashCode() * 31) + Boolean.hashCode(this.f20630e)) * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f20631i;
+        int hashCode = ((this.f20630d.hashCode() * 31) + Boolean.hashCode(this.f20631e)) * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f20632i;
         int hashCode2 = (hashCode + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20632o;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20633o;
         return hashCode2 + (jsonLogicBoolean2 != null ? jsonLogicBoolean2.hashCode() : 0);
     }
 
     public String toString() {
-        String str = this.f20629d;
-        boolean z10 = this.f20630e;
-        JsonLogicBoolean jsonLogicBoolean = this.f20631i;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20632o;
+        String str = this.f20630d;
+        boolean z10 = this.f20631e;
+        JsonLogicBoolean jsonLogicBoolean = this.f20632i;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20633o;
         return "InputCheckboxComponent(name=" + str + ", value=" + z10 + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f20629d);
-        dest.writeInt(this.f20630e ? 1 : 0);
-        dest.writeParcelable(this.f20631i, i10);
-        dest.writeParcelable(this.f20632o, i10);
+        dest.writeString(this.f20630d);
+        dest.writeInt(this.f20631e ? 1 : 0);
+        dest.writeParcelable(this.f20632i, i10);
+        dest.writeParcelable(this.f20633o, i10);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

@@ -13,16 +13,16 @@ public final class t extends h.a {
     static final class a implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        private final h f24496a;
+        private final h f24497a;
 
         a(h hVar) {
-            this.f24496a = hVar;
+            this.f24497a = hVar;
         }
 
         @Override // fw.h
         /* renamed from: b */
         public Optional a(ResponseBody responseBody) {
-            return Optional.ofNullable(this.f24496a.a(responseBody));
+            return Optional.ofNullable(this.f24497a.a(responseBody));
         }
     }
 

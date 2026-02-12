@@ -90,7 +90,7 @@ public final class ReactViewExtensionsKt {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Method viewOperationQueueMethod_delegate$lambda$1() {
-        int i10 = UIImplementation.f11949a;
+        int i10 = UIImplementation.f11950a;
         Method declaredMethod = UIImplementation.class.getDeclaredMethod("com.discord.react.utilities.getUIViewOperationQueue", null);
         declaredMethod.setAccessible(true);
         return declaredMethod;

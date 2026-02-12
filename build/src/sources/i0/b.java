@@ -21,7 +21,7 @@ public abstract class b {
     public static final class a extends Exception {
 
         /* renamed from: d  reason: collision with root package name */
-        private final EnumC0374a f27737d;
+        private final EnumC0374a f27738d;
 
         /* renamed from: i0.b$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -33,7 +33,7 @@ public abstract class b {
 
         a(String str, EnumC0374a enumC0374a) {
             super(str);
-            this.f27737d = enumC0374a;
+            this.f27738d = enumC0374a;
         }
     }
 

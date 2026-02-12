@@ -4,5 +4,5 @@ package com.google.android.play.core.integrity;
 public abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final di.a f17039a = new di.a();
+    private static final di.a f17040a = new di.a();
 }

@@ -1,28 +1,28 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var0 = global;
-    var2 = var0.IntlMessageFormat;
-    var1 = var2.__addLocaleData;
-    var0 = {};
-    var3 = 'no';
-    var0.locale = var3;
-    var3 = function arg0, arg1() {
-        _fun112798: for (var _fun112798_ip = 0;;) switch (_fun112798_ip) {
+    var3 = var0.IntlMessageFormat;
+    var2 = var3.__addLocaleData;
+    var1 = {};
+    var4 = 'el';
+    var1.locale = var4;
+    var4 = function arg0, arg1() {
+        _fun112836: for (var _fun112836_ip = 0;;) switch (_fun112836_ip) {
             case 0:
                 var1 = 'other';
                 var2 = arg1;
                 var0 = var1;
                 if (var2) {
-                    _fun112798_ip = 33;
-                    continue _fun112798
+                    _fun112836_ip = 33;
+                    continue _fun112836
                 }
             case 13:
                 var3 = 1;
                 var2 = arg0;
                 var2 = var3 == var2;
                 if (!var2) {
-                    _fun112798_ip = 30;
-                    continue _fun112798
+                    _fun112836_ip = 30;
+                    continue _fun112836
                 }
             case 26:
                 var1 = 'one';
@@ -32,7 +32,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
         }
     };
-    var0.pluralRuleFunction = var3;
+    var1.pluralRuleFunction = var4;
+    var1 = var2.bind(var3)(var1);
+    var2 = var0.IntlMessageFormat;
+    var1 = var2.__addLocaleData;
+    var0 = {
+        'locale': 'el-CY',
+        'parentLocale': 'el'
+    };
     var0 = var1.bind(var2)(var0);
     var0 = undefined;
     return var0;

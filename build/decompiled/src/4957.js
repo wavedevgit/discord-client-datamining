@@ -15,11 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = require;
     var0 = undefined;
     var1 = var1.bind(var0)(var3);
-    var3 = var1.createContext;
-    var1 = null;
-    var3 = var3.bind(var0)(var1);
-    var1 = var3.Provider;
-    var2.BottomSheetModalInternalContext = var3;
-    var2.BottomSheetModalInternalProvider = var1;
+    var1 = var1.customDirectEventTypes;
+    var2.customDirectEventTypes = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [43]);

@@ -255,9 +255,9 @@ public interface ClassicTypeSystemContext extends TypeSystemCommonBackendContext
         public static FqNameUnsafe getClassFqNameUnsafe(@NotNull ClassicTypeSystemContext classicTypeSystemContext, @NotNull TypeConstructorMarker receiver) {
             Intrinsics.checkNotNullParameter(receiver, "$receiver");
             if (receiver instanceof TypeConstructor) {
-                ClassifierDescriptor mo1202getDeclarationDescriptor = ((TypeConstructor) receiver).mo1202getDeclarationDescriptor();
-                Intrinsics.checkNotNull(mo1202getDeclarationDescriptor, "null cannot be cast to non-null type org.jetbrains.kotlin.descriptors.ClassDescriptor");
-                return DescriptorUtilsKt.getFqNameUnsafe((ClassDescriptor) mo1202getDeclarationDescriptor);
+                ClassifierDescriptor mo1201getDeclarationDescriptor = ((TypeConstructor) receiver).mo1201getDeclarationDescriptor();
+                Intrinsics.checkNotNull(mo1201getDeclarationDescriptor, "null cannot be cast to non-null type org.jetbrains.kotlin.descriptors.ClassDescriptor");
+                return DescriptorUtilsKt.getFqNameUnsafe((ClassDescriptor) mo1201getDeclarationDescriptor);
             }
             throw new IllegalArgumentException(("ClassicTypeSystemContext couldn't handle: " + receiver + ", " + Reflection.getOrCreateKotlinClass(receiver.getClass())).toString());
         }
@@ -287,9 +287,9 @@ public interface ClassicTypeSystemContext extends TypeSystemCommonBackendContext
         public static PrimitiveType getPrimitiveArrayType(@NotNull ClassicTypeSystemContext classicTypeSystemContext, @NotNull TypeConstructorMarker receiver) {
             Intrinsics.checkNotNullParameter(receiver, "$receiver");
             if (receiver instanceof TypeConstructor) {
-                ClassifierDescriptor mo1202getDeclarationDescriptor = ((TypeConstructor) receiver).mo1202getDeclarationDescriptor();
-                Intrinsics.checkNotNull(mo1202getDeclarationDescriptor, "null cannot be cast to non-null type org.jetbrains.kotlin.descriptors.ClassDescriptor");
-                return KotlinBuiltIns.getPrimitiveArrayType((ClassDescriptor) mo1202getDeclarationDescriptor);
+                ClassifierDescriptor mo1201getDeclarationDescriptor = ((TypeConstructor) receiver).mo1201getDeclarationDescriptor();
+                Intrinsics.checkNotNull(mo1201getDeclarationDescriptor, "null cannot be cast to non-null type org.jetbrains.kotlin.descriptors.ClassDescriptor");
+                return KotlinBuiltIns.getPrimitiveArrayType((ClassDescriptor) mo1201getDeclarationDescriptor);
             }
             throw new IllegalArgumentException(("ClassicTypeSystemContext couldn't handle: " + receiver + ", " + Reflection.getOrCreateKotlinClass(receiver.getClass())).toString());
         }
@@ -297,9 +297,9 @@ public interface ClassicTypeSystemContext extends TypeSystemCommonBackendContext
         public static PrimitiveType getPrimitiveType(@NotNull ClassicTypeSystemContext classicTypeSystemContext, @NotNull TypeConstructorMarker receiver) {
             Intrinsics.checkNotNullParameter(receiver, "$receiver");
             if (receiver instanceof TypeConstructor) {
-                ClassifierDescriptor mo1202getDeclarationDescriptor = ((TypeConstructor) receiver).mo1202getDeclarationDescriptor();
-                Intrinsics.checkNotNull(mo1202getDeclarationDescriptor, "null cannot be cast to non-null type org.jetbrains.kotlin.descriptors.ClassDescriptor");
-                return KotlinBuiltIns.getPrimitiveType((ClassDescriptor) mo1202getDeclarationDescriptor);
+                ClassifierDescriptor mo1201getDeclarationDescriptor = ((TypeConstructor) receiver).mo1201getDeclarationDescriptor();
+                Intrinsics.checkNotNull(mo1201getDeclarationDescriptor, "null cannot be cast to non-null type org.jetbrains.kotlin.descriptors.ClassDescriptor");
+                return KotlinBuiltIns.getPrimitiveType((ClassDescriptor) mo1201getDeclarationDescriptor);
             }
             throw new IllegalArgumentException(("ClassicTypeSystemContext couldn't handle: " + receiver + ", " + Reflection.getOrCreateKotlinClass(receiver.getClass())).toString());
         }
@@ -335,9 +335,9 @@ public interface ClassicTypeSystemContext extends TypeSystemCommonBackendContext
         public static TypeParameterMarker getTypeParameterClassifier(@NotNull ClassicTypeSystemContext classicTypeSystemContext, @NotNull TypeConstructorMarker receiver) {
             Intrinsics.checkNotNullParameter(receiver, "$receiver");
             if (receiver instanceof TypeConstructor) {
-                ClassifierDescriptor mo1202getDeclarationDescriptor = ((TypeConstructor) receiver).mo1202getDeclarationDescriptor();
-                if (mo1202getDeclarationDescriptor instanceof TypeParameterDescriptor) {
-                    return (TypeParameterDescriptor) mo1202getDeclarationDescriptor;
+                ClassifierDescriptor mo1201getDeclarationDescriptor = ((TypeConstructor) receiver).mo1201getDeclarationDescriptor();
+                if (mo1201getDeclarationDescriptor instanceof TypeParameterDescriptor) {
+                    return (TypeParameterDescriptor) mo1201getDeclarationDescriptor;
                 }
                 return null;
             }
@@ -433,7 +433,7 @@ public interface ClassicTypeSystemContext extends TypeSystemCommonBackendContext
         public static boolean isClassTypeConstructor(@NotNull ClassicTypeSystemContext classicTypeSystemContext, @NotNull TypeConstructorMarker receiver) {
             Intrinsics.checkNotNullParameter(receiver, "$receiver");
             if (receiver instanceof TypeConstructor) {
-                return ((TypeConstructor) receiver).mo1202getDeclarationDescriptor() instanceof ClassDescriptor;
+                return ((TypeConstructor) receiver).mo1201getDeclarationDescriptor() instanceof ClassDescriptor;
             }
             throw new IllegalArgumentException(("ClassicTypeSystemContext couldn't handle: " + receiver + ", " + Reflection.getOrCreateKotlinClass(receiver.getClass())).toString());
         }
@@ -442,9 +442,9 @@ public interface ClassicTypeSystemContext extends TypeSystemCommonBackendContext
             ClassDescriptor classDescriptor;
             Intrinsics.checkNotNullParameter(receiver, "$receiver");
             if (receiver instanceof TypeConstructor) {
-                ClassifierDescriptor mo1202getDeclarationDescriptor = ((TypeConstructor) receiver).mo1202getDeclarationDescriptor();
-                if (mo1202getDeclarationDescriptor instanceof ClassDescriptor) {
-                    classDescriptor = (ClassDescriptor) mo1202getDeclarationDescriptor;
+                ClassifierDescriptor mo1201getDeclarationDescriptor = ((TypeConstructor) receiver).mo1201getDeclarationDescriptor();
+                if (mo1201getDeclarationDescriptor instanceof ClassDescriptor) {
+                    classDescriptor = (ClassDescriptor) mo1201getDeclarationDescriptor;
                 } else {
                     classDescriptor = null;
                 }
@@ -476,10 +476,10 @@ public interface ClassicTypeSystemContext extends TypeSystemCommonBackendContext
             ClassDescriptor classDescriptor;
             Intrinsics.checkNotNullParameter(receiver, "$receiver");
             if (receiver instanceof TypeConstructor) {
-                ClassifierDescriptor mo1202getDeclarationDescriptor = ((TypeConstructor) receiver).mo1202getDeclarationDescriptor();
+                ClassifierDescriptor mo1201getDeclarationDescriptor = ((TypeConstructor) receiver).mo1201getDeclarationDescriptor();
                 ValueClassRepresentation<SimpleType> valueClassRepresentation = null;
-                if (mo1202getDeclarationDescriptor instanceof ClassDescriptor) {
-                    classDescriptor = (ClassDescriptor) mo1202getDeclarationDescriptor;
+                if (mo1201getDeclarationDescriptor instanceof ClassDescriptor) {
+                    classDescriptor = (ClassDescriptor) mo1201getDeclarationDescriptor;
                 } else {
                     classDescriptor = null;
                 }
@@ -574,8 +574,8 @@ public interface ClassicTypeSystemContext extends TypeSystemCommonBackendContext
             if (receiver instanceof SimpleType) {
                 if (!KotlinTypeKt.isError((KotlinType) receiver)) {
                     SimpleType simpleType = (SimpleType) receiver;
-                    if (!(simpleType.getConstructor().mo1202getDeclarationDescriptor() instanceof TypeAliasDescriptor)) {
-                        if (simpleType.getConstructor().mo1202getDeclarationDescriptor() != null || (receiver instanceof CapturedType) || (receiver instanceof NewCapturedType) || (receiver instanceof DefinitelyNotNullType) || (simpleType.getConstructor() instanceof IntegerLiteralTypeConstructor) || a(classicTypeSystemContext, (SimpleTypeMarker) receiver)) {
+                    if (!(simpleType.getConstructor().mo1201getDeclarationDescriptor() instanceof TypeAliasDescriptor)) {
+                        if (simpleType.getConstructor().mo1201getDeclarationDescriptor() != null || (receiver instanceof CapturedType) || (receiver instanceof NewCapturedType) || (receiver instanceof DefinitelyNotNullType) || (simpleType.getConstructor() instanceof IntegerLiteralTypeConstructor) || a(classicTypeSystemContext, (SimpleTypeMarker) receiver)) {
                             return true;
                         }
                         return false;
@@ -622,8 +622,8 @@ public interface ClassicTypeSystemContext extends TypeSystemCommonBackendContext
         public static boolean isUnderKotlinPackage(@NotNull ClassicTypeSystemContext classicTypeSystemContext, @NotNull TypeConstructorMarker receiver) {
             Intrinsics.checkNotNullParameter(receiver, "$receiver");
             if (receiver instanceof TypeConstructor) {
-                ClassifierDescriptor mo1202getDeclarationDescriptor = ((TypeConstructor) receiver).mo1202getDeclarationDescriptor();
-                if (mo1202getDeclarationDescriptor == null || !KotlinBuiltIns.isUnderKotlinPackage(mo1202getDeclarationDescriptor)) {
+                ClassifierDescriptor mo1201getDeclarationDescriptor = ((TypeConstructor) receiver).mo1201getDeclarationDescriptor();
+                if (mo1201getDeclarationDescriptor == null || !KotlinBuiltIns.isUnderKotlinPackage(mo1201getDeclarationDescriptor)) {
                     return false;
                 }
                 return true;
@@ -708,7 +708,7 @@ public interface ClassicTypeSystemContext extends TypeSystemCommonBackendContext
                 return new TypeCheckerState.SupertypesPolicy.DoCustomTransform() { // from class: kotlin.reflect.jvm.internal.impl.types.checker.ClassicTypeSystemContext$substitutionSupertypePolicy$2
                     @Override // kotlin.reflect.jvm.internal.impl.types.TypeCheckerState.SupertypesPolicy
                     /* renamed from: transformType */
-                    public SimpleTypeMarker mo1204transformType(TypeCheckerState state, KotlinTypeMarker type2) {
+                    public SimpleTypeMarker mo1203transformType(TypeCheckerState state, KotlinTypeMarker type2) {
                         Intrinsics.checkNotNullParameter(state, "state");
                         Intrinsics.checkNotNullParameter(type2, "type");
                         ClassicTypeSystemContext classicTypeSystemContext2 = ClassicTypeSystemContext.this;

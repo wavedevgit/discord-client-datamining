@@ -16,7 +16,7 @@ import java.util.Map;
 public class FabTransformationSheetBehavior extends FabTransformationBehavior {
 
     /* renamed from: t  reason: collision with root package name */
-    private Map f16530t;
+    private Map f16531t;
 
     public FabTransformationSheetBehavior() {
     }
@@ -28,7 +28,7 @@ public class FabTransformationSheetBehavior extends FabTransformationBehavior {
             CoordinatorLayout coordinatorLayout = (CoordinatorLayout) parent;
             int childCount = coordinatorLayout.getChildCount();
             if (z10) {
-                this.f16530t = new HashMap(childCount);
+                this.f16531t = new HashMap(childCount);
             }
             for (int i10 = 0; i10 < childCount; i10++) {
                 View childAt = coordinatorLayout.getChildAt(i10);
@@ -39,18 +39,18 @@ public class FabTransformationSheetBehavior extends FabTransformationBehavior {
                 }
                 if (childAt != view && !z11) {
                     if (!z10) {
-                        Map map = this.f16530t;
+                        Map map = this.f16531t;
                         if (map != null && map.containsKey(childAt)) {
-                            childAt.setImportantForAccessibility(((Integer) this.f16530t.get(childAt)).intValue());
+                            childAt.setImportantForAccessibility(((Integer) this.f16531t.get(childAt)).intValue());
                         }
                     } else {
-                        this.f16530t.put(childAt, Integer.valueOf(childAt.getImportantForAccessibility()));
+                        this.f16531t.put(childAt, Integer.valueOf(childAt.getImportantForAccessibility()));
                         childAt.setImportantForAccessibility(4);
                     }
                 }
             }
             if (!z10) {
-                this.f16530t = null;
+                this.f16531t = null;
             }
         }
     }
@@ -71,8 +71,8 @@ public class FabTransformationSheetBehavior extends FabTransformationBehavior {
             i10 = a.f6721c;
         }
         FabTransformationBehavior.b bVar = new FabTransformationBehavior.b();
-        bVar.f16523a = g.c(context, i10);
-        bVar.f16524b = new i(17, 0.0f, 0.0f);
+        bVar.f16524a = g.c(context, i10);
+        bVar.f16525b = new i(17, 0.0f, 0.0f);
         return bVar;
     }
 

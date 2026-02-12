@@ -41,7 +41,7 @@ public abstract class r0 {
     private static final int[] f1940j = new int[1];
 
     public static void a(View view, Context context) {
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(f.j.f23537y0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(f.j.f23538y0);
         try {
             if (!obtainStyledAttributes.hasValue(f.j.D0)) {
                 Log.e("ThemeUtils", "View " + view.getClass() + " is an AppCompat widget that can only be used with a Theme.AppCompat theme (or descendant).");

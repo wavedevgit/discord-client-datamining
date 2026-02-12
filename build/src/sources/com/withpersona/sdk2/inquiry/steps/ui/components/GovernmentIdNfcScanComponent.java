@@ -30,49 +30,49 @@ public final class GovernmentIdNfcScanComponent implements k5, v, e0, j2 {
     private h A;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f20599d;
+    private final String f20600d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final GovernmentIdNfcScan f20600e;
+    private final GovernmentIdNfcScan f20601e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f20601i;
+    private final String f20602i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f20602o;
+    private final String f20603o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final String f20603p;
+    private final String f20604p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final String f20604q;
+    private final String f20605q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final JsonLogicBoolean f20605r;
+    private final JsonLogicBoolean f20606r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final JsonLogicBoolean f20606s;
+    private final JsonLogicBoolean f20607s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final g f20607t;
+    private final g f20608t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final List f20608u;
+    private final List f20609u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f20609v;
+    private boolean f20610v;
 
     /* renamed from: w  reason: collision with root package name */
-    private t f20610w;
+    private t f20611w;
 
     /* renamed from: x  reason: collision with root package name */
-    private t f20611x;
+    private t f20612x;
 
     /* renamed from: y  reason: collision with root package name */
-    private qq.e f20612y;
+    private qq.e f20613y;
 
     /* renamed from: z  reason: collision with root package name */
-    private qq.e f20613z;
+    private qq.e f20614z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -95,51 +95,51 @@ public final class GovernmentIdNfcScanComponent implements k5, v, e0, j2 {
         Intrinsics.checkNotNullParameter(config, "config");
         Intrinsics.checkNotNullParameter(documentNumber, "documentNumber");
         Intrinsics.checkNotNullParameter(cardAccessNumber, "cardAccessNumber");
-        this.f20599d = name;
-        this.f20600e = config;
-        this.f20601i = documentNumber;
-        this.f20602o = str;
-        this.f20603p = str2;
-        this.f20604q = cardAccessNumber;
-        this.f20605r = jsonLogicBoolean;
-        this.f20606s = jsonLogicBoolean2;
-        this.f20607t = gVar;
-        this.f20608u = new ArrayList();
-        this.f20610w = w.a(cardAccessNumber);
-        this.f20611x = w.a(documentNumber);
+        this.f20600d = name;
+        this.f20601e = config;
+        this.f20602i = documentNumber;
+        this.f20603o = str;
+        this.f20604p = str2;
+        this.f20605q = cardAccessNumber;
+        this.f20606r = jsonLogicBoolean;
+        this.f20607s = jsonLogicBoolean2;
+        this.f20608t = gVar;
+        this.f20609u = new ArrayList();
+        this.f20611w = w.a(cardAccessNumber);
+        this.f20612x = w.a(documentNumber);
         GovernmentIdNfcScan.Companion companion = GovernmentIdNfcScan.Companion;
-        this.f20612y = new qq.e(str, null, companion.generateTextMonths());
-        this.f20613z = new qq.e(str2, null, companion.generateTextMonths());
+        this.f20613y = new qq.e(str, null, companion.generateTextMonths());
+        this.f20614z = new qq.e(str2, null, companion.generateTextMonths());
         this.A = new h(gVar);
     }
 
     public static /* synthetic */ GovernmentIdNfcScanComponent b(GovernmentIdNfcScanComponent governmentIdNfcScanComponent, String str, GovernmentIdNfcScan governmentIdNfcScan, String str2, String str3, String str4, String str5, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, g gVar, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = governmentIdNfcScanComponent.f20599d;
+            str = governmentIdNfcScanComponent.f20600d;
         }
         if ((i10 & 2) != 0) {
-            governmentIdNfcScan = governmentIdNfcScanComponent.f20600e;
+            governmentIdNfcScan = governmentIdNfcScanComponent.f20601e;
         }
         if ((i10 & 4) != 0) {
-            str2 = governmentIdNfcScanComponent.f20601i;
+            str2 = governmentIdNfcScanComponent.f20602i;
         }
         if ((i10 & 8) != 0) {
-            str3 = governmentIdNfcScanComponent.f20602o;
+            str3 = governmentIdNfcScanComponent.f20603o;
         }
         if ((i10 & 16) != 0) {
-            str4 = governmentIdNfcScanComponent.f20603p;
+            str4 = governmentIdNfcScanComponent.f20604p;
         }
         if ((i10 & 32) != 0) {
-            str5 = governmentIdNfcScanComponent.f20604q;
+            str5 = governmentIdNfcScanComponent.f20605q;
         }
         if ((i10 & 64) != 0) {
-            jsonLogicBoolean = governmentIdNfcScanComponent.f20605r;
+            jsonLogicBoolean = governmentIdNfcScanComponent.f20606r;
         }
         if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-            jsonLogicBoolean2 = governmentIdNfcScanComponent.f20606s;
+            jsonLogicBoolean2 = governmentIdNfcScanComponent.f20607s;
         }
         if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
-            gVar = governmentIdNfcScanComponent.f20607t;
+            gVar = governmentIdNfcScanComponent.f20608t;
         }
         JsonLogicBoolean jsonLogicBoolean3 = jsonLogicBoolean2;
         g gVar2 = gVar;
@@ -171,7 +171,7 @@ public final class GovernmentIdNfcScanComponent implements k5, v, e0, j2 {
     }
 
     public boolean G0() {
-        return this.f20609v;
+        return this.f20610v;
     }
 
     public final GovernmentIdNfcScanComponent a(String name, GovernmentIdNfcScan config, String documentNumber, String str, String str2, String cardAccessNumber, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, g gVar) {
@@ -183,12 +183,12 @@ public final class GovernmentIdNfcScanComponent implements k5, v, e0, j2 {
     }
 
     public final t c() {
-        return this.f20610w;
+        return this.f20611w;
     }
 
     @Override // pq.e0
     public List d() {
-        return this.f20608u;
+        return this.f20609u;
     }
 
     @Override // android.os.Parcelable
@@ -197,7 +197,7 @@ public final class GovernmentIdNfcScanComponent implements k5, v, e0, j2 {
     }
 
     public final GovernmentIdNfcScan e() {
-        return this.f20600e;
+        return this.f20601e;
     }
 
     public boolean equals(Object obj) {
@@ -206,50 +206,50 @@ public final class GovernmentIdNfcScanComponent implements k5, v, e0, j2 {
         }
         if (obj instanceof GovernmentIdNfcScanComponent) {
             GovernmentIdNfcScanComponent governmentIdNfcScanComponent = (GovernmentIdNfcScanComponent) obj;
-            return Intrinsics.areEqual(this.f20599d, governmentIdNfcScanComponent.f20599d) && Intrinsics.areEqual(this.f20600e, governmentIdNfcScanComponent.f20600e) && Intrinsics.areEqual(this.f20601i, governmentIdNfcScanComponent.f20601i) && Intrinsics.areEqual(this.f20602o, governmentIdNfcScanComponent.f20602o) && Intrinsics.areEqual(this.f20603p, governmentIdNfcScanComponent.f20603p) && Intrinsics.areEqual(this.f20604q, governmentIdNfcScanComponent.f20604q) && Intrinsics.areEqual(this.f20605r, governmentIdNfcScanComponent.f20605r) && Intrinsics.areEqual(this.f20606s, governmentIdNfcScanComponent.f20606s) && Intrinsics.areEqual(this.f20607t, governmentIdNfcScanComponent.f20607t);
+            return Intrinsics.areEqual(this.f20600d, governmentIdNfcScanComponent.f20600d) && Intrinsics.areEqual(this.f20601e, governmentIdNfcScanComponent.f20601e) && Intrinsics.areEqual(this.f20602i, governmentIdNfcScanComponent.f20602i) && Intrinsics.areEqual(this.f20603o, governmentIdNfcScanComponent.f20603o) && Intrinsics.areEqual(this.f20604p, governmentIdNfcScanComponent.f20604p) && Intrinsics.areEqual(this.f20605q, governmentIdNfcScanComponent.f20605q) && Intrinsics.areEqual(this.f20606r, governmentIdNfcScanComponent.f20606r) && Intrinsics.areEqual(this.f20607s, governmentIdNfcScanComponent.f20607s) && Intrinsics.areEqual(this.f20608t, governmentIdNfcScanComponent.f20608t);
         }
         return false;
     }
 
     public final qq.e f() {
-        return this.f20612y;
+        return this.f20613y;
     }
 
     public final t g() {
-        return this.f20611x;
+        return this.f20612x;
     }
 
     @Override // pq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f20606s;
+        return this.f20607s;
     }
 
     @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f20605r;
+        return this.f20606r;
     }
 
     @Override // pq.k5
     public String getName() {
-        return this.f20599d;
+        return this.f20600d;
     }
 
     public int hashCode() {
-        int hashCode = ((((this.f20599d.hashCode() * 31) + this.f20600e.hashCode()) * 31) + this.f20601i.hashCode()) * 31;
-        String str = this.f20602o;
+        int hashCode = ((((this.f20600d.hashCode() * 31) + this.f20601e.hashCode()) * 31) + this.f20602i.hashCode()) * 31;
+        String str = this.f20603o;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
-        String str2 = this.f20603p;
-        int hashCode3 = (((hashCode2 + (str2 == null ? 0 : str2.hashCode())) * 31) + this.f20604q.hashCode()) * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f20605r;
+        String str2 = this.f20604p;
+        int hashCode3 = (((hashCode2 + (str2 == null ? 0 : str2.hashCode())) * 31) + this.f20605q.hashCode()) * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f20606r;
         int hashCode4 = (hashCode3 + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20606s;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20607s;
         int hashCode5 = (hashCode4 + (jsonLogicBoolean2 == null ? 0 : jsonLogicBoolean2.hashCode())) * 31;
-        g gVar = this.f20607t;
+        g gVar = this.f20608t;
         return hashCode5 + (gVar != null ? gVar.hashCode() : 0);
     }
 
     public final qq.e i() {
-        return this.f20613z;
+        return this.f20614z;
     }
 
     public final h j() {
@@ -259,85 +259,85 @@ public final class GovernmentIdNfcScanComponent implements k5, v, e0, j2 {
     public final GovernmentIdNfcScanComponent k(String newValue) {
         Intrinsics.checkNotNullParameter(newValue, "newValue");
         GovernmentIdNfcScanComponent b10 = b(this, null, null, null, null, null, newValue, null, null, null, 479, null);
-        b10.f20610w = this.f20610w;
-        b10.f20611x = this.f20611x;
-        b10.f20612y = this.f20612y;
-        b10.f20613z = this.f20613z;
+        b10.f20611w = this.f20611w;
+        b10.f20612x = this.f20612x;
+        b10.f20613y = this.f20613y;
+        b10.f20614z = this.f20614z;
         b10.A = this.A;
         return b10;
     }
 
     public final GovernmentIdNfcScanComponent l(String str) {
         GovernmentIdNfcScanComponent b10 = b(this, null, null, null, str, null, null, null, null, null, 503, null);
-        b10.f20610w = this.f20610w;
-        b10.f20611x = this.f20611x;
-        b10.f20612y = this.f20612y;
-        b10.f20613z = this.f20613z;
+        b10.f20611w = this.f20611w;
+        b10.f20612x = this.f20612x;
+        b10.f20613y = this.f20613y;
+        b10.f20614z = this.f20614z;
         b10.A = this.A;
         return b10;
     }
 
     @Override // pq.j2
     public void n(boolean z10) {
-        this.f20609v = z10;
+        this.f20610v = z10;
     }
 
     public final GovernmentIdNfcScanComponent o(String newValue) {
         Intrinsics.checkNotNullParameter(newValue, "newValue");
         GovernmentIdNfcScanComponent b10 = b(this, null, null, newValue, null, null, null, null, null, null, 507, null);
-        b10.f20610w = this.f20610w;
-        b10.f20611x = this.f20611x;
-        b10.f20612y = this.f20612y;
-        b10.f20613z = this.f20613z;
+        b10.f20611w = this.f20611w;
+        b10.f20612x = this.f20612x;
+        b10.f20613y = this.f20613y;
+        b10.f20614z = this.f20614z;
         b10.A = this.A;
         return b10;
     }
 
     public final GovernmentIdNfcScanComponent p(String str) {
         GovernmentIdNfcScanComponent b10 = b(this, null, null, null, null, str, null, null, null, null, 495, null);
-        b10.f20610w = this.f20610w;
-        b10.f20611x = this.f20611x;
-        b10.f20612y = this.f20612y;
-        b10.f20613z = this.f20613z;
+        b10.f20611w = this.f20611w;
+        b10.f20612x = this.f20612x;
+        b10.f20613y = this.f20613y;
+        b10.f20614z = this.f20614z;
         b10.A = this.A;
         return b10;
     }
 
     public final GovernmentIdNfcScanComponent q(g gVar) {
         GovernmentIdNfcScanComponent b10 = b(this, null, null, null, null, null, null, null, null, gVar, SetSpanOperation.SPAN_MAX_PRIORITY, null);
-        b10.f20610w = this.f20610w;
-        b10.f20611x = this.f20611x;
-        b10.f20612y = this.f20612y;
-        b10.f20613z = this.f20613z;
+        b10.f20611w = this.f20611w;
+        b10.f20612x = this.f20612x;
+        b10.f20613y = this.f20613y;
+        b10.f20614z = this.f20614z;
         b10.A = this.A;
         return b10;
     }
 
     public String toString() {
-        String str = this.f20599d;
-        GovernmentIdNfcScan governmentIdNfcScan = this.f20600e;
-        String str2 = this.f20601i;
-        String str3 = this.f20602o;
-        String str4 = this.f20603p;
-        String str5 = this.f20604q;
-        JsonLogicBoolean jsonLogicBoolean = this.f20605r;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20606s;
-        g gVar = this.f20607t;
+        String str = this.f20600d;
+        GovernmentIdNfcScan governmentIdNfcScan = this.f20601e;
+        String str2 = this.f20602i;
+        String str3 = this.f20603o;
+        String str4 = this.f20604p;
+        String str5 = this.f20605q;
+        JsonLogicBoolean jsonLogicBoolean = this.f20606r;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20607s;
+        g gVar = this.f20608t;
         return "GovernmentIdNfcScanComponent(name=" + str + ", config=" + governmentIdNfcScan + ", documentNumber=" + str2 + ", dateOfBirth=" + str3 + ", expirationDate=" + str4 + ", cardAccessNumber=" + str5 + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ", governmentIdNfcData=" + gVar + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f20599d);
-        dest.writeParcelable(this.f20600e, i10);
-        dest.writeString(this.f20601i);
-        dest.writeString(this.f20602o);
-        dest.writeString(this.f20603p);
-        dest.writeString(this.f20604q);
-        dest.writeParcelable(this.f20605r, i10);
-        dest.writeParcelable(this.f20606s, i10);
-        g gVar = this.f20607t;
+        dest.writeString(this.f20600d);
+        dest.writeParcelable(this.f20601e, i10);
+        dest.writeString(this.f20602i);
+        dest.writeString(this.f20603o);
+        dest.writeString(this.f20604p);
+        dest.writeString(this.f20605q);
+        dest.writeParcelable(this.f20606r, i10);
+        dest.writeParcelable(this.f20607s, i10);
+        g gVar = this.f20608t;
         if (gVar == null) {
             dest.writeInt(0);
             return;

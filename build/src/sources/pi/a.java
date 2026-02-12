@@ -6,10 +6,10 @@ import java.util.NoSuchElementException;
 abstract class a implements Iterator {
 
     /* renamed from: d  reason: collision with root package name */
-    private b f42724d = b.NOT_READY;
+    private b f42725d = b.NOT_READY;
 
     /* renamed from: e  reason: collision with root package name */
-    private Object f42725e;
+    private Object f42726e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: pi.a$a  reason: collision with other inner class name */
@@ -17,17 +17,17 @@ abstract class a implements Iterator {
     public static /* synthetic */ class C0590a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f42726a;
+        static final /* synthetic */ int[] f42727a;
 
         static {
             int[] iArr = new int[b.values().length];
-            f42726a = iArr;
+            f42727a = iArr;
             try {
                 iArr[b.DONE.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f42726a[b.READY.ordinal()] = 2;
+                f42727a[b.READY.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
         }
@@ -43,10 +43,10 @@ abstract class a implements Iterator {
     }
 
     private boolean c() {
-        this.f42724d = b.FAILED;
-        this.f42725e = a();
-        if (this.f42724d != b.DONE) {
-            this.f42724d = b.READY;
+        this.f42725d = b.FAILED;
+        this.f42726e = a();
+        if (this.f42725d != b.DONE) {
+            this.f42725d = b.READY;
             return true;
         }
         return false;
@@ -56,20 +56,20 @@ abstract class a implements Iterator {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final Object b() {
-        this.f42724d = b.DONE;
+        this.f42725d = b.DONE;
         return null;
     }
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
         boolean z10;
-        if (this.f42724d != b.FAILED) {
+        if (this.f42725d != b.FAILED) {
             z10 = true;
         } else {
             z10 = false;
         }
         m.o(z10);
-        int i10 = C0590a.f42726a[this.f42724d.ordinal()];
+        int i10 = C0590a.f42727a[this.f42725d.ordinal()];
         if (i10 == 1) {
             return false;
         }
@@ -82,9 +82,9 @@ abstract class a implements Iterator {
     @Override // java.util.Iterator
     public final Object next() {
         if (hasNext()) {
-            this.f42724d = b.NOT_READY;
-            Object a10 = i.a(this.f42725e);
-            this.f42725e = null;
+            this.f42725d = b.NOT_READY;
+            Object a10 = i.a(this.f42726e);
+            this.f42726e = null;
             return a10;
         }
         throw new NoSuchElementException();

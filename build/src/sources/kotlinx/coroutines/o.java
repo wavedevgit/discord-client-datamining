@@ -6,10 +6,10 @@ import ys.z0;
 final class o extends z0 {
 
     /* renamed from: p  reason: collision with root package name */
-    private final n0 f35050p;
+    private final n0 f35051p;
 
     public o(n0 n0Var) {
-        this.f35050p = n0Var;
+        this.f35051p = n0Var;
     }
 
     @Override // ys.z0
@@ -19,6 +19,6 @@ final class o extends z0 {
 
     @Override // ys.z0
     public void w(Throwable th2) {
-        this.f35050p.dispose();
+        this.f35051p.dispose();
     }
 }

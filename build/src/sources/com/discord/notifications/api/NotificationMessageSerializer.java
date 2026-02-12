@@ -35,7 +35,7 @@ public final class NotificationMessageSerializer implements KSerializer {
     public static final Unit json$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy

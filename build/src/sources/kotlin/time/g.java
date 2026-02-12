@@ -8,16 +8,16 @@ public final class g {
     @NotNull
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f34993a = new g();
+    public static final g f34994a = new g();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements kotlin.time.a {
 
         /* renamed from: d  reason: collision with root package name */
-        private final long f34994d;
+        private final long f34995d;
 
         private /* synthetic */ a(long j10) {
-            this.f34994d = j10;
+            this.f34995d = j10;
         }
 
         public static final /* synthetic */ a d(long j10) {
@@ -29,7 +29,7 @@ public final class g {
         }
 
         public static long g(long j10) {
-            return f.f34991a.b(j10);
+            return f.f34992a.b(j10);
         }
 
         public static boolean h(long j10, Object obj) {
@@ -41,7 +41,7 @@ public final class g {
         }
 
         public static final long k(long j10, long j11) {
-            return f.f34991a.a(j10, j11);
+            return f.f34992a.a(j10, j11);
         }
 
         public static long l(long j10, kotlin.time.a other) {
@@ -58,7 +58,7 @@ public final class g {
 
         @Override // kotlin.time.TimeMark
         public long a() {
-            return g(this.f34994d);
+            return g(this.f34995d);
         }
 
         @Override // java.lang.Comparable
@@ -68,25 +68,25 @@ public final class g {
         }
 
         public boolean equals(Object obj) {
-            return h(this.f34994d, obj);
+            return h(this.f34995d, obj);
         }
 
         public int hashCode() {
-            return i(this.f34994d);
+            return i(this.f34995d);
         }
 
         @Override // kotlin.time.a
         public long j(kotlin.time.a other) {
             Intrinsics.checkNotNullParameter(other, "other");
-            return l(this.f34994d, other);
+            return l(this.f34995d, other);
         }
 
         public final /* synthetic */ long n() {
-            return this.f34994d;
+            return this.f34995d;
         }
 
         public String toString() {
-            return m(this.f34994d);
+            return m(this.f34995d);
         }
     }
 
@@ -94,10 +94,10 @@ public final class g {
     }
 
     public long a() {
-        return f.f34991a.c();
+        return f.f34992a.c();
     }
 
     public String toString() {
-        return f.f34991a.toString();
+        return f.f34992a.toString();
     }
 }

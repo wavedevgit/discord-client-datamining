@@ -11,10 +11,10 @@ import st.e;
 public final class f implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final f f43189a = new f();
+    public static final f f43190a = new f();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f43190b = st.j.b("kotlinx.datetime.LocalDate", e.i.f48368a);
+    private static final SerialDescriptor f43191b = st.j.b("kotlinx.datetime.LocalDate", e.i.f48369a);
 
     private f() {
     }
@@ -36,6 +36,6 @@ public final class f implements KSerializer {
 
     @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return f43190b;
+        return f43191b;
     }
 }

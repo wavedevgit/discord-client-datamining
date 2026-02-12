@@ -16,74 +16,74 @@ import oo.z2;
 public final class c implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CoordinatorLayout f42854a;
+    private final CoordinatorLayout f42855a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final TextView f42855b;
+    public final TextView f42856b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final Guideline f42856c;
+    public final Guideline f42857c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final TextView f42857d;
+    public final TextView f42858d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Guideline f42858e;
+    public final Guideline f42859e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final Pi2NavigationBar f42859f;
+    public final Pi2NavigationBar f42860f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final RecyclerView f42860g;
+    public final RecyclerView f42861g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final Guideline f42861h;
+    public final Guideline f42862h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final Button f42862i;
+    public final Button f42863i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final TextView f42863j;
+    public final TextView f42864j;
 
     private c(CoordinatorLayout coordinatorLayout, TextView textView, Guideline guideline, TextView textView2, Guideline guideline2, Pi2NavigationBar pi2NavigationBar, RecyclerView recyclerView, Guideline guideline3, Button button, TextView textView3) {
-        this.f42854a = coordinatorLayout;
-        this.f42855b = textView;
-        this.f42856c = guideline;
-        this.f42857d = textView2;
-        this.f42858e = guideline2;
-        this.f42859f = pi2NavigationBar;
-        this.f42860g = recyclerView;
-        this.f42861h = guideline3;
-        this.f42862i = button;
-        this.f42863j = textView3;
+        this.f42855a = coordinatorLayout;
+        this.f42856b = textView;
+        this.f42857c = guideline;
+        this.f42858d = textView2;
+        this.f42859e = guideline2;
+        this.f42860f = pi2NavigationBar;
+        this.f42861g = recyclerView;
+        this.f42862h = guideline3;
+        this.f42863i = button;
+        this.f42864j = textView3;
     }
 
     public static c a(View view) {
-        int i10 = y2.f41049c;
+        int i10 = y2.f41050c;
         TextView textView = (TextView) e4.a.a(view, i10);
         if (textView != null) {
-            i10 = y2.f41050d;
+            i10 = y2.f41051d;
             Guideline guideline = (Guideline) e4.a.a(view, i10);
             if (guideline != null) {
-                i10 = y2.f41053g;
+                i10 = y2.f41054g;
                 TextView textView2 = (TextView) e4.a.a(view, i10);
                 if (textView2 != null) {
-                    i10 = y2.f41057k;
+                    i10 = y2.f41058k;
                     Guideline guideline2 = (Guideline) e4.a.a(view, i10);
                     if (guideline2 != null) {
-                        i10 = y2.f41059m;
+                        i10 = y2.f41060m;
                         Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
                         if (pi2NavigationBar != null) {
-                            i10 = y2.f41062p;
+                            i10 = y2.f41063p;
                             RecyclerView recyclerView = (RecyclerView) e4.a.a(view, i10);
                             if (recyclerView != null) {
-                                i10 = y2.f41063q;
+                                i10 = y2.f41064q;
                                 Guideline guideline3 = (Guideline) e4.a.a(view, i10);
                                 if (guideline3 != null) {
-                                    i10 = y2.f41064r;
+                                    i10 = y2.f41065r;
                                     Button button = (Button) e4.a.a(view, i10);
                                     if (button != null) {
-                                        i10 = y2.f41065s;
+                                        i10 = y2.f41066s;
                                         TextView textView3 = (TextView) e4.a.a(view, i10);
                                         if (textView3 != null) {
                                             return new c((CoordinatorLayout) view, textView, guideline, textView2, guideline2, pi2NavigationBar, recyclerView, guideline3, button, textView3);
@@ -100,7 +100,7 @@ public final class c implements ViewBinding {
     }
 
     public static c c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(z2.f41073b, viewGroup, false);
+        View inflate = layoutInflater.inflate(z2.f41074b, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -110,6 +110,6 @@ public final class c implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public CoordinatorLayout getRoot() {
-        return this.f42854a;
+        return this.f42855a;
     }
 }

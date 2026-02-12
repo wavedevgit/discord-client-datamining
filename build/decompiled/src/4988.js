@@ -1,52 +1,360 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
+    var2 = exports;
+    var1 = dependencyMap;
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var _closure1_slot1 = var1;
     var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var2 = {};
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
     var0 = true;
-    var2.value = var0;
+    var4.value = var0;
     var0 = '__esModule';
-    var0 = var3.bind(var4)(var1, var0, var2);
-    var5 = ['id', 'enabled', 'shouldCancelWhenOutside', 'hitSlop', 'cancelsTouchesInView', 'userSelect', 'activeCursor', 'mouseButton', 'enableContextMenu', 'touchAction'];
-    var4 = new Array(0);
-    var3 = var4.concat;
-    var2 = ['waitFor', 'simultaneousHandlers', 'blocksHandlers'];
-    var0 = ['onBegan', 'onFailed', 'onCancelled', 'onActivated', 'onEnded', 'onGestureEvent', 'onHandlerStateChange'];
-    var3 = var3.bind(var4)(var5, var2, var0);
-    var4 = new Array(0);
-    var2 = var4.concat;
-    var0 = ['needsPointerData', 'manualActivation'];
-    var2 = var2.bind(var4)(var5, var0);
-    var0 = {};
-    var5 = 1;
-    var0.LEFT = var5;
-    var4 = 'LEFT';
-    var0[var5] = var4;
-    var5 = 2;
-    var0.RIGHT = var5;
-    var4 = 'RIGHT';
-    var0[var5] = var4;
-    var5 = 4;
-    var0.MIDDLE = var5;
-    var4 = 'MIDDLE';
-    var0[var5] = var4;
-    var5 = 8;
-    var0.BUTTON_4 = var5;
-    var4 = 'BUTTON_4';
-    var0[var5] = var4;
-    var5 = 16;
-    var0.BUTTON_5 = var5;
-    var4 = 'BUTTON_5';
-    var0[var5] = var4;
-    var5 = 31;
-    var0.ALL = var5;
-    var4 = 'ALL';
-    var0[var5] = var4;
-    var1.baseGestureHandlerProps = var3;
-    var1.baseGestureHandlerWithDetectorProps = var2;
-    var1.MouseButton = var0;
+    var0 = var5.bind(var6)(var2, var0, var4);
+    var0 = 0;
+    var4 = var1[var0];
+    var1 = metroImportDefault;
     var0 = undefined;
+    var1 = var1.bind(var0)(var4);
+    var _closure1_slot2 = var1;
+    var1 = {};
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 1;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.TapGesture;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var4 = var1;
+        var0 = new var4[var0](var3);
+        var0 = var0 instanceof Object ? var0 : var1;
+        return var0;
+    };
+    var1.Tap = var4;
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 2;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.PanGesture;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var4 = var1;
+        var0 = new var4[var0](var3);
+        var0 = var0 instanceof Object ? var0 : var1;
+        return var0;
+    };
+    var1.Pan = var4;
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 3;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.PinchGesture;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var4 = var1;
+        var0 = new var4[var0](var3);
+        var0 = var0 instanceof Object ? var0 : var1;
+        return var0;
+    };
+    var1.Pinch = var4;
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 4;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.RotationGesture;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var4 = var1;
+        var0 = new var4[var0](var3);
+        var0 = var0 instanceof Object ? var0 : var1;
+        return var0;
+    };
+    var1.Rotation = var4;
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 5;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.FlingGesture;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var4 = var1;
+        var0 = new var4[var0](var3);
+        var0 = var0 instanceof Object ? var0 : var1;
+        return var0;
+    };
+    var1.Fling = var4;
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 6;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.LongPressGesture;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var4 = var1;
+        var0 = new var4[var0](var3);
+        var0 = var0 instanceof Object ? var0 : var1;
+        return var0;
+    };
+    var1.LongPress = var4;
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 7;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.ForceTouchGesture;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var4 = var1;
+        var0 = new var4[var0](var3);
+        var0 = var0 instanceof Object ? var0 : var1;
+        return var0;
+    };
+    var1.ForceTouch = var4;
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 8;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.NativeGesture;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var4 = var1;
+        var0 = new var4[var0](var3);
+        var0 = var0 instanceof Object ? var0 : var1;
+        return var0;
+    };
+    var1.Native = var4;
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 9;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.ManualGesture;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var4 = var1;
+        var0 = new var4[var0](var3);
+        var0 = var0 instanceof Object ? var0 : var1;
+        return var0;
+    };
+    var1.Manual = var4;
+    var4 = function() {
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 10;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.HoverGesture;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var4 = var1;
+        var0 = new var4[var0](var3);
+        var0 = var0 instanceof Object ? var0 : var1;
+        return var0;
+    };
+    var1.Hover = var4;
+    var4 = function() {
+        _fun44993: for (var _fun44993_ip = 0;;) switch (_fun44993_ip) {
+            case 0:
+                var3 = undefined;
+                var4 = undefined;
+                var1 = arguments.length;
+                var0 = global;
+                var0 = var0.Array;
+                var2 = var0.prototype;
+                var2 = Object.create(var2, {
+                    constructor: {
+                        value: var0
+                    }
+                });
+                var8 = var2;
+                var7 = var1;
+                var0 = new var8[var0](var7, var6);
+                var2 = var0 instanceof Object ? var0 : var2;
+                var0 = 0;
+                var5 = var0 < var1;
+                if (!var5) {
+                    _fun44993_ip = 62;
+                    continue _fun44993
+                }
+            case 47:
+                var5 = arguments[var0];
+                var2[var0] = var5;
+                var0 = var0 + 1;
+                if (var0 < var1) {
+                    _fun44993_ip = 47;
+                    continue _fun44993
+                }
+            case 62:
+                var1 = _closure1_slot2;
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var0 = 11;
+                var0 = var5[var0];
+                var0 = var4.bind(var3)(var0);
+                var0 = var0.ComposedGesture;
+                var0 = var1.bind(var3)(var0, var2);
+                return var0;
+        }
+    };
+    var1.Race = var4;
+    var4 = function() {
+        _fun44994: for (var _fun44994_ip = 0;;) switch (_fun44994_ip) {
+            case 0:
+                var3 = undefined;
+                var4 = undefined;
+                var1 = arguments.length;
+                var0 = global;
+                var0 = var0.Array;
+                var2 = var0.prototype;
+                var2 = Object.create(var2, {
+                    constructor: {
+                        value: var0
+                    }
+                });
+                var8 = var2;
+                var7 = var1;
+                var0 = new var8[var0](var7, var6);
+                var2 = var0 instanceof Object ? var0 : var2;
+                var0 = 0;
+                var5 = var0 < var1;
+                if (!var5) {
+                    _fun44994_ip = 62;
+                    continue _fun44994
+                }
+            case 47:
+                var5 = arguments[var0];
+                var2[var0] = var5;
+                var0 = var0 + 1;
+                if (var0 < var1) {
+                    _fun44994_ip = 47;
+                    continue _fun44994
+                }
+            case 62:
+                var1 = _closure1_slot2;
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var0 = 11;
+                var0 = var5[var0];
+                var0 = var4.bind(var3)(var0);
+                var0 = var0.SimultaneousGesture;
+                var0 = var1.bind(var3)(var0, var2);
+                return var0;
+        }
+    };
+    var1.Simultaneous = var4;
+    var3 = function() {
+        _fun44995: for (var _fun44995_ip = 0;;) switch (_fun44995_ip) {
+            case 0:
+                var3 = undefined;
+                var4 = undefined;
+                var1 = arguments.length;
+                var0 = global;
+                var0 = var0.Array;
+                var2 = var0.prototype;
+                var2 = Object.create(var2, {
+                    constructor: {
+                        value: var0
+                    }
+                });
+                var8 = var2;
+                var7 = var1;
+                var0 = new var8[var0](var7, var6);
+                var2 = var0 instanceof Object ? var0 : var2;
+                var0 = 0;
+                var5 = var0 < var1;
+                if (!var5) {
+                    _fun44995_ip = 62;
+                    continue _fun44995
+                }
+            case 47:
+                var5 = arguments[var0];
+                var2[var0] = var5;
+                var0 = var0 + 1;
+                if (var0 < var1) {
+                    _fun44995_ip = 47;
+                    continue _fun44995
+                }
+            case 62:
+                var1 = _closure1_slot2;
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var0 = 11;
+                var0 = var5[var0];
+                var0 = var4.bind(var3)(var0);
+                var0 = var0.ExclusiveGesture;
+                var0 = var1.bind(var3)(var0, var2);
+                return var0;
+        }
+    };
+    var1.Exclusive = var3;
+    var2.GestureObjects = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [164, 4989, 4990, 4991, 4992, 4993, 4994, 4995, 4996, 4997, 4975, 4998]);

@@ -7,14 +7,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var3 = function arg0() {
-        _fun73441: for (var _fun73441_ip = 0;;) switch (_fun73441_ip) {
+        _fun72104: for (var _fun72104_ip = 0;;) switch (_fun72104_ip) {
             case 0:
                 var5 = arg0;
                 var4 = arguments[1];
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun73441_ip = 19;
-                    continue _fun73441
+                    _fun72104_ip = 19;
+                    continue _fun72104
                 }
             case 12:
                 var4 = _closure1_slot2;
@@ -22,15 +22,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var0 = var2 != var5;
                 if (!var0) {
-                    _fun73441_ip = 125;
-                    continue _fun73441
+                    _fun72104_ip = 125;
+                    continue _fun72104
                 }
             case 28:
                 var1 = var5.linkedLobby;
                 var1 = var2 != var1;
                 if (!var1) {
-                    _fun73441_ip = 66;
-                    continue _fun73441
+                    _fun72104_ip = 66;
+                    continue _fun72104
                 }
             case 41:
                 var3 = var4.can;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.bind(var4)(var2, var5);
             case 66:
                 if (!var1) {
-                    _fun73441_ip = 94;
-                    continue _fun73441
+                    _fun72104_ip = 94;
+                    continue _fun72104
                 }
             case 69:
                 var3 = var4.can;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.bind(var4)(var2, var5);
             case 94:
                 if (!var1) {
-                    _fun73441_ip = 122;
-                    continue _fun73441
+                    _fun72104_ip = 122;
+                    continue _fun72104
                 }
             case 97:
                 var3 = var4.can;

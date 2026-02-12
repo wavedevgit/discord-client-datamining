@@ -40,8 +40,8 @@ public /* synthetic */ class NonGuildVersion$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50032a;
-        return new KSerializer[]{n2Var, z0.f50106a, rt.a.u(n2Var)};
+        n2 n2Var = n2.f50033a;
+        return new KSerializer[]{n2Var, z0.f50107a, rt.a.u(n2Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -58,7 +58,7 @@ public /* synthetic */ class NonGuildVersion$$serializer implements h0 {
             str = b10.m(serialDescriptor, 0);
             long f10 = b10.f(serialDescriptor, 1);
             i10 = 7;
-            str2 = (String) b10.n(serialDescriptor, 2, n2.f50032a, null);
+            str2 = (String) b10.n(serialDescriptor, 2, n2.f50033a, null);
             j10 = f10;
         } else {
             long j11 = 0;
@@ -79,7 +79,7 @@ public /* synthetic */ class NonGuildVersion$$serializer implements h0 {
                 } else if (o10 != 2) {
                     throw new b0(o10);
                 } else {
-                    str3 = (String) b10.n(serialDescriptor, 2, n2.f50032a, str3);
+                    str3 = (String) b10.n(serialDescriptor, 2, n2.f50033a, str3);
                     i10 |= 4;
                 }
             }

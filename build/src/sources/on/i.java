@@ -9,34 +9,34 @@ import nn.x;
 public final class i extends b {
 
     /* renamed from: e  reason: collision with root package name */
-    private final double f40661e;
+    private final double f40662e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final float f40662f;
+    private final float f40663f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final float f40663g;
+    private final float f40664g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final double f40664h;
+    private final double f40665h;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public i(x handler) {
         super(handler);
         Intrinsics.checkNotNullParameter(handler, "handler");
-        this.f40661e = handler.Y0();
-        this.f40662f = handler.W0();
-        this.f40663g = handler.X0();
-        this.f40664h = handler.Z0();
+        this.f40662e = handler.Y0();
+        this.f40663f = handler.W0();
+        this.f40664g = handler.X0();
+        this.f40665h = handler.Z0();
     }
 
     @Override // on.b
     public void a(WritableMap eventData) {
         Intrinsics.checkNotNullParameter(eventData, "eventData");
         super.a(eventData);
-        eventData.putDouble(ViewProps.ROTATION, this.f40661e);
-        eventData.putDouble("anchorX", PixelUtil.toDIPFromPixel(this.f40662f));
-        eventData.putDouble("anchorY", PixelUtil.toDIPFromPixel(this.f40663g));
-        eventData.putDouble("velocity", this.f40664h);
+        eventData.putDouble(ViewProps.ROTATION, this.f40662e);
+        eventData.putDouble("anchorX", PixelUtil.toDIPFromPixel(this.f40663f));
+        eventData.putDouble("anchorY", PixelUtil.toDIPFromPixel(this.f40664g));
+        eventData.putDouble("velocity", this.f40665h);
     }
 }

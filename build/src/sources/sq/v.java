@@ -12,41 +12,41 @@ import com.google.android.material.card.MaterialCardView;
 public final class v implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f48290a;
+    private final ConstraintLayout f48291a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final TextView f48291b;
+    public final TextView f48292b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final ImageView f48292c;
+    public final ImageView f48293c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final TextView f48293d;
+    public final TextView f48294d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final TextView f48294e;
+    public final TextView f48295e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final MaterialCardView f48295f;
+    public final MaterialCardView f48296f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final ImageView f48296g;
+    public final ImageView f48297g;
 
     private v(ConstraintLayout constraintLayout, TextView textView, ImageView imageView, TextView textView2, TextView textView3, MaterialCardView materialCardView, ImageView imageView2) {
-        this.f48290a = constraintLayout;
-        this.f48291b = textView;
-        this.f48292c = imageView;
-        this.f48293d = textView2;
-        this.f48294e = textView3;
-        this.f48295f = materialCardView;
-        this.f48296g = imageView2;
+        this.f48291a = constraintLayout;
+        this.f48292b = textView;
+        this.f48293c = imageView;
+        this.f48294d = textView2;
+        this.f48295e = textView3;
+        this.f48296f = materialCardView;
+        this.f48297g = imageView2;
     }
 
     public static v a(View view) {
-        int i10 = nq.e.f38248a;
+        int i10 = nq.e.f38249a;
         TextView textView = (TextView) e4.a.a(view, i10);
         if (textView != null) {
-            i10 = nq.e.f38296y;
+            i10 = nq.e.f38297y;
             ImageView imageView = (ImageView) e4.a.a(view, i10);
             if (imageView != null) {
                 i10 = nq.e.E;
@@ -55,10 +55,10 @@ public final class v implements ViewBinding {
                     i10 = nq.e.V;
                     TextView textView3 = (TextView) e4.a.a(view, i10);
                     if (textView3 != null) {
-                        i10 = nq.e.f38295x0;
+                        i10 = nq.e.f38296x0;
                         MaterialCardView materialCardView = (MaterialCardView) e4.a.a(view, i10);
                         if (materialCardView != null) {
-                            i10 = nq.e.f38297y0;
+                            i10 = nq.e.f38298y0;
                             ImageView imageView2 = (ImageView) e4.a.a(view, i10);
                             if (imageView2 != null) {
                                 return new v((ConstraintLayout) view, textView, imageView, textView2, textView3, materialCardView, imageView2);
@@ -76,7 +76,7 @@ public final class v implements ViewBinding {
     }
 
     public static v d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(nq.f.f38322w, viewGroup, false);
+        View inflate = layoutInflater.inflate(nq.f.f38323w, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -86,6 +86,6 @@ public final class v implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f48290a;
+        return this.f48291a;
     }
 }

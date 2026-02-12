@@ -9,7 +9,7 @@ import tt.f2;
 public final class a extends f2 implements KSerializer {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f35087c = new a();
+    public static final a f35088c = new a();
 
     private a() {
         super(rt.a.A(BooleanCompanionObject.INSTANCE));

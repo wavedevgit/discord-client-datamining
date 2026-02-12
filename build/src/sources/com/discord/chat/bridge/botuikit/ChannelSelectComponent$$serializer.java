@@ -58,9 +58,9 @@ public /* synthetic */ class ChannelSelectComponent$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = ChannelSelectComponent.$childSerializers;
-        p0 p0Var = p0.f50048a;
-        n2 n2Var = n2.f50032a;
-        return new KSerializer[]{p0Var, n2Var, ActionComponentState.Serializer.INSTANCE, n2Var, rt.a.u(n2Var), rt.a.u(n2Var), p0Var, p0Var, tt.h.f49996a, lazyArr[9].getValue(), rt.a.u((KSerializer) lazyArr[10].getValue())};
+        p0 p0Var = p0.f50049a;
+        n2 n2Var = n2.f50033a;
+        return new KSerializer[]{p0Var, n2Var, ActionComponentState.Serializer.INSTANCE, n2Var, rt.a.u(n2Var), rt.a.u(n2Var), p0Var, p0Var, tt.h.f49997a, lazyArr[9].getValue(), rt.a.u((KSerializer) lazyArr[10].getValue())};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -89,7 +89,7 @@ public /* synthetic */ class ChannelSelectComponent$$serializer implements h0 {
             i10 = b10.i(serialDescriptor, 0);
             String m10 = b10.m(serialDescriptor, 1);
             String m11 = b10.m(serialDescriptor, 3);
-            n2 n2Var = n2.f50032a;
+            n2 n2Var = n2.f50033a;
             int i16 = b10.i(serialDescriptor, 6);
             int i17 = b10.i(serialDescriptor, 7);
             boolean C = b10.C(serialDescriptor, 8);
@@ -145,12 +145,12 @@ public /* synthetic */ class ChannelSelectComponent$$serializer implements h0 {
                         i14 = 7;
                         break;
                     case 4:
-                        str6 = (String) b10.n(serialDescriptor, 4, n2.f50032a, str6);
+                        str6 = (String) b10.n(serialDescriptor, 4, n2.f50033a, str6);
                         i15 |= 16;
                         i14 = 7;
                         break;
                     case 5:
-                        str5 = (String) b10.n(serialDescriptor, 5, n2.f50032a, str5);
+                        str5 = (String) b10.n(serialDescriptor, 5, n2.f50033a, str5);
                         i15 |= 32;
                         i14 = 7;
                         break;

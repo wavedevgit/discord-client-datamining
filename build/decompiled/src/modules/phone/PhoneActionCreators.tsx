@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.removePhone = var7;
     var7 = function arg0() {
-        _fun61498: for (var _fun61498_ip = 0;;) switch (_fun61498_ip) {
+        _fun63856: for (var _fun63856_ip = 0;;) switch (_fun63856_ip) {
             case 0:
                 var3 = {};
                 var1 = _closure1_slot4;
@@ -101,16 +101,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = null;
                 var1 = var1 != var0;
                 if (!var1) {
-                    _fun61498_ip = 36;
-                    continue _fun61498
+                    _fun63856_ip = 36;
+                    continue _fun63856
                 }
             case 28:
                 var2 = '';
                 var1 = var2 !== var0;
             case 36:
                 if (!var1) {
-                    _fun61498_ip = 45;
-                    continue _fun61498
+                    _fun63856_ip = 45;
+                    continue _fun63856
                 }
             case 39:
                 var3['X-Fingerprint'] = var0;
@@ -296,7 +296,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.validatePhoneForSupport = var7;
     var4 = function arg0, arg1() {
-        _fun61505: for (var _fun61505_ip = 0;;) switch (_fun61505_ip) {
+        _fun63863: for (var _fun63863_ip = 0;;) switch (_fun63863_ip) {
             case 0:
                 var3 = arguments[2];
                 var2 = arguments[3];
@@ -306,16 +306,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var1;
                 var1 = undefined;
                 if (!(var3 === var1)) {
-                    _fun61505_ip = 30;
-                    continue _fun61505
+                    _fun63863_ip = 30;
+                    continue _fun63863
                 }
             case 28:
                 var3 = true;
             case 30:
                 var _closure2_slot2 = var3;
                 if (!(var2 === var1)) {
-                    _fun61505_ip = 40;
-                    continue _fun61505
+                    _fun63863_ip = 40;
+                    continue _fun63863
                 }
             case 38:
                 var2 = false;
@@ -324,13 +324,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot3;
                 var0 = function*() { // Environment: var0
                     var0 = function*() { // Original name: ?anon_0_, environment: var0
-                        _fun61507: for (var _fun61507_ip = 0;;) switch (_fun61507_ip) {
+                        _fun63865: for (var _fun63865_ip = 0;;) switch (_fun63865_ip) {
                             case 0:
                                 StartGenerator();
                                 ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                 if (var1) {
-                                    _fun61507_ip = 283;
-                                    continue _fun61507
+                                    _fun63865_ip = 283;
+                                    continue _fun63865
                                 }
                             case 10:
                                 var7 = {};
@@ -340,24 +340,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2 = null;
                                 var2 = var2 != var1;
                                 if (!var2) {
-                                    _fun61507_ip = 46;
-                                    continue _fun61507
+                                    _fun63865_ip = 46;
+                                    continue _fun63865
                                 }
                             case 38:
                                 var3 = '';
                                 var2 = var3 !== var1;
                             case 46:
                                 if (!var2) {
-                                    _fun61507_ip = 55;
-                                    continue _fun61507
+                                    _fun63865_ip = 55;
+                                    continue _fun63865
                                 }
                             case 49:
                                 var7['X-Fingerprint'] = var1;
                             case 55:
                                 var1 = _closure2_slot3;
                                 if (!var1) {
-                                    _fun61507_ip = 75;
-                                    continue _fun61507
+                                    _fun63865_ip = 75;
+                                    continue _fun63865
                                 }
                             case 65:
                                 var1 = '';
@@ -401,14 +401,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             case 209:
                                 ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                                 if (var3) {
-                                    _fun61507_ip = 280;
-                                    continue _fun61507
+                                    _fun63865_ip = 280;
+                                    continue _fun63865
                                 }
                             case 215:
                                 var2 = _closure2_slot2;
                                 if (!var2) {
-                                    _fun61507_ip = 272;
-                                    continue _fun61507
+                                    _fun63865_ip = 272;
+                                    continue _fun63865
                                 }
                             case 222:
                                 var3 = _closure1_slot1;
@@ -449,4 +449,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.ChangePhoneReason = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 1216, 7610, 660, 806, 507, 4531, 481, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 1216, 7880, 660, 806, 507, 4531, 481, 2]);

@@ -9,10 +9,10 @@ import kotlinx.serialization.encoding.Encoder;
 public final class k1 implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final k1 f50015a = new k1();
+    public static final k1 f50016a = new k1();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f50016b = j1.f50008a;
+    private static final SerialDescriptor f50017b = j1.f50009a;
 
     private k1() {
     }
@@ -34,6 +34,6 @@ public final class k1 implements KSerializer {
 
     @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return f50016b;
+        return f50017b;
     }
 }

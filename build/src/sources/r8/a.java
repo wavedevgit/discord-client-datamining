@@ -10,10 +10,10 @@ import kotlin.text.StringsKt;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f46167a = new a();
+    public static final a f46168a = new a();
 
     /* renamed from: b  reason: collision with root package name */
-    public static final Map f46168b = o0.m(v.a("mkv", "video/x-matroska"), v.a("glb", "model/gltf-binary"));
+    public static final Map f46169b = o0.m(v.a("mkv", "video/x-matroska"), v.a("glb", "model/gltf-binary"));
 
     private a() {
     }
@@ -30,7 +30,7 @@ public final class a {
 
     public static final String b(String path) {
         Intrinsics.checkNotNullParameter(path, "path");
-        String a10 = f46167a.a(path);
+        String a10 = f46168a.a(path);
         if (a10 != null) {
             Locale US = Locale.US;
             Intrinsics.checkNotNullExpressionValue(US, "US");
@@ -39,7 +39,7 @@ public final class a {
             if (lowerCase != null) {
                 String a11 = b.a(lowerCase);
                 if (a11 == null) {
-                    return (String) f46168b.get(lowerCase);
+                    return (String) f46169b.get(lowerCase);
                 }
                 return a11;
             }

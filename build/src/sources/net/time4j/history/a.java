@@ -5,22 +5,22 @@ import java.util.Arrays;
 public final class a {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int[] f37504c;
+    private static final int[] f37505c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final h f37505d = h.i(j.AD, 8, 1, 1);
+    private static final h f37506d = h.i(j.AD, 8, 1, 1);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final h f37506e = h.i(j.BC, 45, 1, 1);
+    private static final h f37507e = h.i(j.BC, 45, 1, 1);
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f37507f;
+    public static final a f37508f;
 
     /* renamed from: a  reason: collision with root package name */
-    private final int[] f37508a;
+    private final int[] f37509a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b f37509b;
+    private final b f37510b;
 
     /* renamed from: net.time4j.history.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -58,7 +58,7 @@ public final class a {
         }
 
         private boolean g(int i10) {
-            if (Arrays.binarySearch(a.this.f37508a, i10) >= 0) {
+            if (Arrays.binarySearch(a.this.f37509a, i10) >= 0) {
                 return true;
             }
             return false;
@@ -67,10 +67,10 @@ public final class a {
         @Override // net.time4j.history.b
         public long a(h hVar) {
             long j10;
-            if (hVar.compareTo(a.f37505d) >= 0) {
-                return c.f37512e.a(hVar);
+            if (hVar.compareTo(a.f37506d) >= 0) {
+                return c.f37513e.a(hVar);
             }
-            if (hVar.compareTo(a.f37506e) >= 0) {
+            if (hVar.compareTo(a.f37507e) >= 0) {
                 int c10 = c(hVar);
                 long j11 = -676021;
                 for (int i10 = 7; i10 >= c10; i10--) {
@@ -91,10 +91,10 @@ public final class a {
 
         @Override // net.time4j.history.b
         public int d(h hVar) {
-            if (hVar.compareTo(a.f37505d) >= 0) {
-                return c.f37512e.d(hVar);
+            if (hVar.compareTo(a.f37506d) >= 0) {
+                return c.f37513e.d(hVar);
             }
-            if (hVar.compareTo(a.f37506e) >= 0) {
+            if (hVar.compareTo(a.f37507e) >= 0) {
                 return b(c(hVar), hVar.f());
             }
             throw new IllegalArgumentException("Not valid before 45 BC: " + hVar);
@@ -106,7 +106,7 @@ public final class a {
             j jVar;
             long j12 = -676021;
             if (j10 >= -676021) {
-                return c.f37512e.e(j10);
+                return c.f37513e.e(j10);
             }
             int i10 = 7;
             while (i10 >= -44) {
@@ -146,7 +146,7 @@ public final class a {
             int c10;
             if (hVar != null && (c10 = c(hVar)) >= -44) {
                 if (c10 >= 8) {
-                    return c.f37512e.f(hVar);
+                    return c.f37513e.f(hVar);
                 }
                 if (hVar.d() <= b(c10, hVar.f())) {
                     return true;
@@ -158,8 +158,8 @@ public final class a {
 
     static {
         int[] iArr = {42, 39, 36, 33, 30, 27, 24, 21, 18, 15, 12, 9};
-        f37504c = iArr;
-        f37507f = new a(iArr);
+        f37505c = iArr;
+        f37508f = new a(iArr);
     }
 
     private a(int... iArr) {
@@ -175,7 +175,7 @@ public final class a {
             i11++;
         }
         Arrays.sort(iArr2);
-        this.f37508a = iArr2;
+        this.f37509a = iArr2;
         if (iArr2.length != 0) {
             int i12 = iArr2[0];
             if (i12 >= -44 && iArr2[iArr2.length - 1] < 8) {
@@ -188,7 +188,7 @@ public final class a {
                         throw new IllegalArgumentException("Contains duplicates: " + Arrays.toString(iArr));
                     }
                 }
-                this.f37509b = new C0531a();
+                this.f37510b = new C0531a();
                 return;
             }
             throw new IllegalArgumentException("Out of range: " + Arrays.toString(iArr));
@@ -197,49 +197,49 @@ public final class a {
     }
 
     public static a f(int... iArr) {
-        if (Arrays.equals(iArr, f37504c)) {
-            return f37507f;
+        if (Arrays.equals(iArr, f37505c)) {
+            return f37508f;
         }
         return new a(iArr);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b d() {
-        return this.f37509b;
+        return this.f37510b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int[] e() {
-        return this.f37508a;
+        return this.f37509a;
     }
 
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof a) && this.f37508a == ((a) obj).f37508a) {
+        if ((obj instanceof a) && this.f37509a == ((a) obj).f37509a) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return Arrays.hashCode(this.f37508a);
+        return Arrays.hashCode(this.f37509a);
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder();
-        for (int i10 = 0; i10 < this.f37508a.length; i10++) {
+        for (int i10 = 0; i10 < this.f37509a.length; i10++) {
             if (i10 > 0) {
                 sb2.append(", ");
             }
-            int i11 = 1 - this.f37508a[i10];
+            int i11 = 1 - this.f37509a[i10];
             if (i11 > 0) {
                 sb2.append("BC ");
                 sb2.append(i11);
             } else {
                 sb2.append("AD ");
-                sb2.append(this.f37508a[i10]);
+                sb2.append(this.f37509a[i10]);
             }
         }
         return sb2.toString();

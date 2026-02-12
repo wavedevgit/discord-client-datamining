@@ -8,13 +8,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class s {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f24890b = new a(null);
+    public static final a f24891b = new a(null);
 
     /* renamed from: c  reason: collision with root package name */
-    public static final s f24891c = new s(o0.i());
+    public static final s f24892c = new s(o0.i());
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f24892a;
+    private final Map f24893a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -35,28 +35,28 @@ public final class s {
     }
 
     public final Map a() {
-        return this.f24892a;
+        return this.f24893a;
     }
 
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof s) && Intrinsics.areEqual(this.f24892a, ((s) obj).f24892a)) {
+        if ((obj instanceof s) && Intrinsics.areEqual(this.f24893a, ((s) obj).f24893a)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f24892a.hashCode();
+        return this.f24893a.hashCode();
     }
 
     public String toString() {
-        return "Tags(tags=" + this.f24892a + ')';
+        return "Tags(tags=" + this.f24893a + ')';
     }
 
     private s(Map map) {
-        this.f24892a = map;
+        this.f24893a = map;
     }
 }

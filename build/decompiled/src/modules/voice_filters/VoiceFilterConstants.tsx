@@ -378,13 +378,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4.previewSoundURLs = var6;
     var3.deepfried = var4;
     var7 = function arg0() {
-        _fun39957: for (var _fun39957_ip = 0;;) switch (_fun39957_ip) {
+        _fun39980: for (var _fun39980_ip = 0;;) switch (_fun39980_ip) {
             case 0:
                 var1 = arguments[1];
                 var0 = undefined;
                 if (!(var1 === var0)) {
-                    _fun39957_ip = 11;
-                    continue _fun39957
+                    _fun39980_ip = 11;
+                    continue _fun39980
                 }
             case 9:
                 var1 = {};

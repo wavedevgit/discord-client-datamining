@@ -9,10 +9,10 @@ import org.jetbrains.annotations.NotNull;
 public final class a extends jf.a {
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f55526d;
+    private final boolean f55527d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final C0775a f55525e = new C0775a(null);
+    public static final C0775a f55526e = new C0775a(null);
     @NotNull
     public static final Parcelable.Creator<a> CREATOR = new b();
 
@@ -28,11 +28,11 @@ public final class a extends jf.a {
     }
 
     public a(boolean z10) {
-        this.f55526d = z10;
+        this.f55527d = z10;
     }
 
     public final boolean b() {
-        return this.f55526d;
+        return this.f55527d;
     }
 
     @Override // android.os.Parcelable

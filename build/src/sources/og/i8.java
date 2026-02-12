@@ -5,7 +5,7 @@ import bj.c;
 final class i8 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final i8 f39281a = new i8();
+    static final i8 f39282a = new i8();
 
     static {
         c.b a10 = bj.c.a("cameraId");

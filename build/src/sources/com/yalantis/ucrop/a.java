@@ -10,84 +10,84 @@ import android.os.Bundle;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private Intent f20901a = new Intent();
+    private Intent f20902a = new Intent();
 
     /* renamed from: b  reason: collision with root package name */
-    private Bundle f20902b;
+    private Bundle f20903b;
 
     /* renamed from: com.yalantis.ucrop.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class C0271a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Bundle f20903a = new Bundle();
+        private final Bundle f20904a = new Bundle();
 
         public Bundle a() {
-            return this.f20903a;
+            return this.f20904a;
         }
 
         public void b(int i10) {
-            this.f20903a.putInt("com.yalantis.ucrop.UcropColorControlsWidgetActive", i10);
+            this.f20904a.putInt("com.yalantis.ucrop.UcropColorControlsWidgetActive", i10);
         }
 
         public void c(int i10, int i11, int i12) {
-            this.f20903a.putIntArray("com.yalantis.ucrop.AllowedGestures", new int[]{i10, i11, i12});
+            this.f20904a.putIntArray("com.yalantis.ucrop.AllowedGestures", new int[]{i10, i11, i12});
         }
 
         public void d(boolean z10) {
-            this.f20903a.putBoolean("com.yalantis.ucrop.CircleDimmedLayer", z10);
+            this.f20904a.putBoolean("com.yalantis.ucrop.CircleDimmedLayer", z10);
         }
 
         public void e(Bitmap.CompressFormat compressFormat) {
-            this.f20903a.putString("com.yalantis.ucrop.CompressionFormatName", compressFormat.name());
+            this.f20904a.putString("com.yalantis.ucrop.CompressionFormatName", compressFormat.name());
         }
 
         public void f(int i10) {
-            this.f20903a.putInt("com.yalantis.ucrop.CompressionQuality", i10);
+            this.f20904a.putInt("com.yalantis.ucrop.CompressionQuality", i10);
         }
 
         public void g(boolean z10) {
-            this.f20903a.putBoolean("com.yalantis.ucrop.FreeStyleCrop", z10);
+            this.f20904a.putBoolean("com.yalantis.ucrop.FreeStyleCrop", z10);
         }
 
         public void h(boolean z10) {
-            this.f20903a.putBoolean("com.yalantis.ucrop.HideBottomControls", z10);
+            this.f20904a.putBoolean("com.yalantis.ucrop.HideBottomControls", z10);
         }
 
         public void i(boolean z10) {
-            this.f20903a.putBoolean("com.yalantis.ucrop.NavigationBarLight", z10);
+            this.f20904a.putBoolean("com.yalantis.ucrop.NavigationBarLight", z10);
         }
 
         public void j(boolean z10) {
-            this.f20903a.putBoolean("com.yalantis.ucrop.ShowCropFrame", z10);
+            this.f20904a.putBoolean("com.yalantis.ucrop.ShowCropFrame", z10);
         }
 
         public void k(boolean z10) {
-            this.f20903a.putBoolean("com.yalantis.ucrop.ShowCropGrid", z10);
+            this.f20904a.putBoolean("com.yalantis.ucrop.ShowCropGrid", z10);
         }
 
         public void l(boolean z10) {
-            this.f20903a.putBoolean("com.yalantis.ucrop.StatusBarLight", z10);
+            this.f20904a.putBoolean("com.yalantis.ucrop.StatusBarLight", z10);
         }
 
         public void m(int i10) {
-            this.f20903a.putInt("com.yalantis.ucrop.ToolbarColor", i10);
+            this.f20904a.putInt("com.yalantis.ucrop.ToolbarColor", i10);
         }
 
         public void n(String str) {
-            this.f20903a.putString("com.yalantis.ucrop.UcropToolbarTitleText", str);
+            this.f20904a.putString("com.yalantis.ucrop.UcropToolbarTitleText", str);
         }
 
         public void o(int i10) {
-            this.f20903a.putInt("com.yalantis.ucrop.UcropToolbarWidgetColor", i10);
+            this.f20904a.putInt("com.yalantis.ucrop.UcropToolbarWidgetColor", i10);
         }
     }
 
     private a(Uri uri, Uri uri2) {
         Bundle bundle = new Bundle();
-        this.f20902b = bundle;
+        this.f20903b = bundle;
         bundle.putParcelable("com.yalantis.ucrop.InputUri", uri);
-        this.f20902b.putParcelable("com.yalantis.ucrop.OutputUri", uri2);
+        this.f20903b.putParcelable("com.yalantis.ucrop.OutputUri", uri2);
     }
 
     public static Uri b(Intent intent) {
@@ -99,9 +99,9 @@ public class a {
     }
 
     public Intent a(Context context) {
-        this.f20901a.setClass(context, UCropActivity.class);
-        this.f20901a.putExtras(this.f20902b);
-        return this.f20901a;
+        this.f20902a.setClass(context, UCropActivity.class);
+        this.f20902a.putExtras(this.f20903b);
+        return this.f20902a;
     }
 
     public void d(Activity activity) {
@@ -113,13 +113,13 @@ public class a {
     }
 
     public a f(float f10, float f11) {
-        this.f20902b.putFloat("com.yalantis.ucrop.AspectRatioX", f10);
-        this.f20902b.putFloat("com.yalantis.ucrop.AspectRatioY", f11);
+        this.f20903b.putFloat("com.yalantis.ucrop.AspectRatioX", f10);
+        this.f20903b.putFloat("com.yalantis.ucrop.AspectRatioY", f11);
         return this;
     }
 
     public a g(C0271a c0271a) {
-        this.f20902b.putAll(c0271a.a());
+        this.f20903b.putAll(c0271a.a());
         return this;
     }
 }

@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/native_menu/native/NativeMenuPresenter.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun110218: for (var _fun110218_ip = 0;;) switch (_fun110218_ip) {
+        _fun110282: for (var _fun110282_ip = 0;;) switch (_fun110282_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var6 = _closure1_slot2;
@@ -66,14 +66,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = new Array(1);
                 var5[0] = var0;
                 var3 = function() { // Environment: var3
-                    _fun110220: for (var _fun110220_ip = 0;;) switch (_fun110220_ip) {
+                    _fun110284: for (var _fun110284_ip = 0;;) switch (_fun110284_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var0 = null;
                             var0 = var0 != var2;
                             if (!var0) {
-                                _fun110220_ip = 56;
-                                continue _fun110220
+                                _fun110284_ip = 56;
+                                continue _fun110284
                             }
                         case 16:
                             var4 = _closure1_slot1;
@@ -99,15 +99,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3 != var0;
                 var0 = null;
                 if (!var2) {
-                    _fun110218_ip = 152;
-                    continue _fun110218
+                    _fun110282_ip = 152;
+                    continue _fun110282
                 }
             case 140:
                 var2 = var3 != var1;
                 var0 = null;
                 if (!var2) {
-                    _fun110218_ip = 152;
-                    continue _fun110218
+                    _fun110282_ip = 152;
+                    continue _fun110282
                 }
             case 149:
                 var0 = var1;
@@ -117,4 +117,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8682, 566, 4939, 4085, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 9112, 566, 4905, 4085, 2]);

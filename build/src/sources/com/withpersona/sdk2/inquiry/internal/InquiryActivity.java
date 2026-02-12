@@ -31,7 +31,7 @@ import kotlin.text.StringsKt;
 public final class InquiryActivity extends AppCompatActivity {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Lazy f19692d = as.l.b(new Function0() { // from class: ep.j
+    private final Lazy f19693d = as.l.b(new Function0() { // from class: ep.j
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             com.withpersona.sdk2.inquiry.internal.h C;
@@ -41,24 +41,24 @@ public final class InquiryActivity extends AppCompatActivity {
     });
 
     /* renamed from: e  reason: collision with root package name */
-    private final Lazy f19693e = new p0(Reflection.getOrCreateKotlinClass(m.class), new b(this), new a(this), new c(null, this));
+    private final Lazy f19694e = new p0(Reflection.getOrCreateKotlinClass(m.class), new b(this), new a(this), new c(null, this));
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ ComponentActivity f19694d;
+        final /* synthetic */ ComponentActivity f19695d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public a(ComponentActivity componentActivity) {
             super(0);
-            this.f19694d = componentActivity;
+            this.f19695d = componentActivity;
         }
 
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final ViewModelProvider.Factory invoke() {
-            return this.f19694d.getDefaultViewModelProviderFactory();
+            return this.f19695d.getDefaultViewModelProviderFactory();
         }
     }
 
@@ -66,18 +66,18 @@ public final class InquiryActivity extends AppCompatActivity {
     public static final class b extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ ComponentActivity f19695d;
+        final /* synthetic */ ComponentActivity f19696d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public b(ComponentActivity componentActivity) {
             super(0);
-            this.f19695d = componentActivity;
+            this.f19696d = componentActivity;
         }
 
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final ViewModelStore invoke() {
-            return this.f19695d.getViewModelStore();
+            return this.f19696d.getViewModelStore();
         }
     }
 
@@ -85,27 +85,27 @@ public final class InquiryActivity extends AppCompatActivity {
     public static final class c extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Function0 f19696d;
+        final /* synthetic */ Function0 f19697d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ ComponentActivity f19697e;
+        final /* synthetic */ ComponentActivity f19698e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public c(Function0 function0, ComponentActivity componentActivity) {
             super(0);
-            this.f19696d = function0;
-            this.f19697e = componentActivity;
+            this.f19697d = function0;
+            this.f19698e = componentActivity;
         }
 
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final CreationExtras invoke() {
             CreationExtras creationExtras;
-            Function0 function0 = this.f19696d;
+            Function0 function0 = this.f19697d;
             if (function0 != null && (creationExtras = (CreationExtras) function0.invoke()) != null) {
                 return creationExtras;
             }
-            return this.f19697e.getDefaultViewModelCreationExtras();
+            return this.f19698e.getDefaultViewModelCreationExtras();
         }
     }
 
@@ -115,11 +115,11 @@ public final class InquiryActivity extends AppCompatActivity {
     }
 
     private final h D() {
-        return (h) this.f19692d.getValue();
+        return (h) this.f19693d.getValue();
     }
 
     private final m E() {
-        return (m) this.f19693e.getValue();
+        return (m) this.f19694e.getValue();
     }
 
     private final void F(Bundle bundle) {
@@ -132,12 +132,12 @@ public final class InquiryActivity extends AppCompatActivity {
         intent.putExtra("INQUIRY_ID_KEY", D().l());
         String s10 = D().s();
         if (s10 != null) {
-            str = h.f19918b.a(s10);
+            str = h.f19919b.a(s10);
         } else {
             str = null;
         }
         intent.putExtra("SESSION_TOKEN_KEY", str);
-        Unit unit = Unit.f31987a;
+        Unit unit = Unit.f31988a;
         setResult(0, intent);
         Integer w10 = D().w();
         if (w10 != null) {
@@ -150,7 +150,7 @@ public final class InquiryActivity extends AppCompatActivity {
             FragmentManager supportFragmentManager = getSupportFragmentManager();
             Intrinsics.checkNotNullExpressionValue(supportFragmentManager, "getSupportFragmentManager(...)");
             FragmentTransaction s11 = supportFragmentManager.s();
-            int i10 = f2.f23095d;
+            int i10 = f2.f23096d;
             j jVar = new j();
             jVar.setArguments(getIntent().getExtras());
             s11.o(i10, jVar);
@@ -170,7 +170,7 @@ public final class InquiryActivity extends AppCompatActivity {
         Intrinsics.checkNotNullParameter(bundle, "bundle");
         Intent intent = new Intent();
         intent.putExtras(bundle);
-        Unit unit = Unit.f31987a;
+        Unit unit = Unit.f31988a;
         inquiryActivity.setResult(-1, intent);
         inquiryActivity.finish();
     }
@@ -181,10 +181,10 @@ public final class InquiryActivity extends AppCompatActivity {
             Intent intent = new Intent();
             intent.putExtra("PERSONA_ACTIVITY_RESULT", "INQUIRY_ERROR");
             intent.putExtra("ERROR_DEBUG_MESSAGE_KEY", "Invalid session token.");
-            yq.d dVar = yq.d.f55728q;
+            yq.d dVar = yq.d.f55729q;
             Intrinsics.checkNotNull(dVar, "null cannot be cast to non-null type android.os.Parcelable");
             intent.putExtra("ERROR_CODE_KEY", (Parcelable) dVar);
-            Unit unit = Unit.f31987a;
+            Unit unit = Unit.f31988a;
             setResult(0, intent);
             finish();
             return false;
@@ -215,10 +215,10 @@ public final class InquiryActivity extends AppCompatActivity {
                 Intent intent = new Intent();
                 intent.putExtra("PERSONA_ACTIVITY_RESULT", "INQUIRY_ERROR");
                 intent.putExtra("ERROR_DEBUG_MESSAGE_KEY", "A fatal exception occurred.");
-                yq.d dVar = yq.d.f55734w;
+                yq.d dVar = yq.d.f55735w;
                 Intrinsics.checkNotNull(dVar, "null cannot be cast to non-null type android.os.Parcelable");
                 intent.putExtra("ERROR_CODE_KEY", (Parcelable) dVar);
-                Unit unit = Unit.f31987a;
+                Unit unit = Unit.f31988a;
                 setResult(0, intent);
                 finish();
                 return;

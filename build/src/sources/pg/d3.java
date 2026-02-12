@@ -5,30 +5,30 @@ import bj.c;
 final class d3 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final d3 f41829a = new d3();
+    static final d3 f41830a = new d3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f41830b;
+    private static final bj.c f41831b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f41831c;
+    private static final bj.c f41832c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f41832d;
+    private static final bj.c f41833d;
 
     static {
         c.b a10 = bj.c.a("options");
         f fVar = new f();
         fVar.a(1);
-        f41830b = a10.b(fVar.b()).a();
+        f41831b = a10.b(fVar.b()).a();
         c.b a11 = bj.c.a("eventType");
         f fVar2 = new f();
         fVar2.a(2);
-        f41831c = a11.b(fVar2.b()).a();
+        f41832c = a11.b(fVar2.b()).a();
         c.b a12 = bj.c.a("errorCode");
         f fVar3 = new f();
         fVar3.a(3);
-        f41832d = a12.b(fVar3.b()).a();
+        f41833d = a12.b(fVar3.b()).a();
     }
 
     private d3() {

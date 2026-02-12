@@ -15,7 +15,7 @@ public abstract class AnimationDriver {
     public boolean hasFinished;
 
     /* renamed from: id  reason: collision with root package name */
-    public int f11626id;
+    public int f11627id;
 
     public void resetConfig(@NotNull ReadableMap config) {
         Intrinsics.checkNotNullParameter(config, "config");

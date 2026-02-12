@@ -2,7 +2,7 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var5 = require;
-    var11 = metroImportDefault;
+    var12 = metroImportDefault;
     var2 = exports;
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
@@ -28,14 +28,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 2;
     var3 = var6[var3];
     var3 = var5.bind(var0)(var3);
-    var4 = var3.jsx;
-    var _closure1_slot3 = var4;
+    var9 = var3.jsx;
+    var _closure1_slot3 = var9;
     var3 = var3.jsxs;
     var _closure1_slot4 = var3;
     var3 = 3;
     var3 = var6[var3];
-    var9 = var5.bind(var0)(var3);
-    var8 = var9.createStyles;
+    var10 = var5.bind(var0)(var3);
+    var8 = var10.createStyles;
     var7 = {};
     var4 = {
         'backgroundColor': null,
@@ -44,31 +44,40 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'flexDirection': 'row',
         'paddingHorizontal': 12
     };
-    var10 = 4;
-    var3 = var6[var10];
-    var3 = var11.bind(var0)(var3);
+    var11 = 4;
+    var3 = var6[var11];
+    var3 = var12.bind(var0)(var3);
     var3 = var3.colors;
     var3 = var3.INPUT_BACKGROUND_DEFAULT;
     var4.backgroundColor = var3;
     var3 = 40;
     var7.searchButton = var4;
     var4 = {};
-    var12 = 20;
-    var4.borderRadius = var12;
+    var13 = 20;
+    var4.borderRadius = var13;
     var7.roundedCorners = var4;
     var4 = {};
-    var10 = var6[var10];
-    var10 = var11.bind(var0)(var10);
-    var10 = var10.radii;
-    var10 = var10.round;
-    var4.borderRadius = var10;
+    var11 = var6[var11];
+    var11 = var12.bind(var0)(var11);
+    var11 = var11.radii;
+    var11 = var11.round;
+    var4.borderRadius = var11;
     var7.roundedCornersAlt = var4;
-    var10 = {};
+    var11 = {};
     var4 = 8;
-    var10.marginLeft = var4;
-    var7.text = var10;
-    var7 = var8.bind(var9)(var7);
+    var11.marginLeft = var4;
+    var7.text = var11;
+    var7 = var8.bind(var10)(var7);
     var _closure1_slot5 = var7;
+    var7 = 5;
+    var7 = var6[var7];
+    var7 = var5.bind(var0)(var7);
+    var8 = var7.MagnifyingGlassIcon;
+    var7 = {};
+    var10 = 'xs';
+    var7.size = var10;
+    var7 = var9.bind(var0)(var8, var7);
+    var _closure1_slot6 = var7;
     var4 = var6[var4];
     var6 = var5.bind(var0)(var4);
     var5 = var6.fileFinishedImporting;
@@ -76,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.SEARCH_BAR_HEIGHT = var3;
     var1 = function arg0() {
-        _fun90444: for (var _fun90444_ip = 0;;) switch (_fun90444_ip) {
+        _fun88757: for (var _fun88757_ip = 0;;) switch (_fun88757_ip) {
             case 0:
                 var2 = arg0;
                 var7 = var2.panelVariant;
@@ -101,13 +110,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = new Array(3);
                 var6[0] = var9;
                 if (var7) {
-                    _fun90444_ip = 91;
-                    continue _fun90444
+                    _fun88757_ip = 91;
+                    continue _fun88757
                 }
             case 83:
                 var7 = var8.roundedCorners;
-                _fun90444_ip = 97;
-                continue _fun90444;
+                _fun88757_ip = 97;
+                continue _fun88757;
             case 91:
                 var7 = var8.roundedCornersAlt;
             case 97:
@@ -116,19 +125,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6[2] = var5;
                 var5 = 'style';
                 var0[var5] = var6;
+                var6 = _closure1_slot6;
+                var5 = new Array(2);
+                var5[0] = var6;
                 var7 = _closure1_slot3;
                 var11 = _closure1_slot0;
                 var12 = _closure1_slot1;
-                var4 = 5;
-                var4 = var12[var4];
-                var4 = var11.bind(var3)(var4);
-                var5 = var4.MagnifyingGlassIcon;
-                var4 = {};
-                var6 = 'xs';
-                var4.size = var6;
-                var4 = var7.bind(var3)(var5, var4);
-                var5 = new Array(2);
-                var5[0] = var4;
                 var4 = 6;
                 var4 = var12[var4];
                 var4 = var11.bind(var3)(var4);
@@ -162,4 +164,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.SearchButtonContent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 7093, 3938, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 7108, 3938, 1234, 2]);

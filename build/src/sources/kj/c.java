@@ -12,10 +12,10 @@ import ui.e;
 public class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private File f31792a;
+    private File f31793a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final e f31793b;
+    private final e f31794b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public enum a {
@@ -27,22 +27,22 @@ public class c {
     }
 
     public c(e eVar) {
-        this.f31793b = eVar;
+        this.f31794b = eVar;
     }
 
     private File a() {
-        if (this.f31792a == null) {
+        if (this.f31793a == null) {
             synchronized (this) {
                 try {
-                    if (this.f31792a == null) {
-                        File filesDir = this.f31793b.j().getFilesDir();
-                        this.f31792a = new File(filesDir, "PersistedInstallation." + this.f31793b.n() + ".json");
+                    if (this.f31793a == null) {
+                        File filesDir = this.f31794b.j().getFilesDir();
+                        this.f31793a = new File(filesDir, "PersistedInstallation." + this.f31794b.n() + ".json");
                     }
                 } finally {
                 }
             }
         }
-        return this.f31792a;
+        return this.f31793a;
     }
 
     private JSONObject c() {
@@ -75,7 +75,7 @@ public class c {
             jSONObject.put("TokenCreationEpochInSecs", dVar.h());
             jSONObject.put("ExpiresInSecs", dVar.c());
             jSONObject.put("FisError", dVar.e());
-            createTempFile = File.createTempFile("PersistedInstallation", "tmp", this.f31793b.j().getFilesDir());
+            createTempFile = File.createTempFile("PersistedInstallation", "tmp", this.f31794b.j().getFilesDir());
             FileOutputStream fileOutputStream = new FileOutputStream(createTempFile);
             fileOutputStream.write(jSONObject.toString().getBytes("UTF-8"));
             fileOutputStream.close();

@@ -5,10 +5,10 @@ import lr.g;
 public final class c implements lr.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f20999a;
+    private final b f21000a;
 
     public c(b bVar) {
-        this.f20999a = bVar;
+        this.f21000a = bVar;
     }
 
     public static c a(b bVar) {
@@ -22,6 +22,6 @@ public final class c implements lr.d {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public a get() {
-        return b(this.f20999a);
+        return b(this.f21000a);
     }
 }

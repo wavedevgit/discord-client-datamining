@@ -2,14 +2,14 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var10 = metroImportDefault;
+    var11 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var10;
+    var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
-        _fun86765: for (var _fun86765_ip = 0;;) switch (_fun86765_ip) {
+        _fun85744: for (var _fun85744_ip = 0;;) switch (_fun85744_ip) {
             case 0:
                 var0 = arg0;
                 var12 = var0.entry;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = 'null';
                 var5 = var7;
                 if (!var1) {
-                    _fun86765_ip = 98;
-                    continue _fun86765
+                    _fun85744_ip = 98;
+                    continue _fun85744
                 }
             case 95:
                 var5 = var0;
@@ -46,8 +46,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var12.after;
                 var1 = var10 != var0;
                 if (!var1) {
-                    _fun86765_ip = 114;
-                    continue _fun86765
+                    _fun85744_ip = 114;
+                    continue _fun85744
                 }
             case 111:
                 var7 = var0;
@@ -65,8 +65,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var10 != var0;
                 var7 = 'Cache Missed';
                 if (!var0) {
-                    _fun86765_ip = 242;
-                    continue _fun86765
+                    _fun85744_ip = 242;
+                    continue _fun85744
                 }
             case 177:
                 var0 = var12.localMessageDetails;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var10 != var0;
                 var5 = 'No Network Fetch';
                 if (!var0) {
-                    _fun86765_ip = 326;
-                    continue _fun86765
+                    _fun85744_ip = 326;
+                    continue _fun85744
                 }
             case 261:
                 var0 = var12.networkMessageDetails;
@@ -107,16 +107,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var10 == var0;
                 var4 = 'Comparision unavailable (no local cache data)';
                 if (var0) {
-                    _fun86765_ip = 551;
-                    continue _fun86765
+                    _fun85744_ip = 551;
+                    continue _fun85744
                 }
             case 348:
                 var0 = var12.networkMessageDetails;
                 var1 = var10 == var0;
                 var0 = 'Comparision unavailable (no network data)';
                 if (var1) {
-                    _fun86765_ip = 548;
-                    continue _fun86765
+                    _fun85744_ip = 548;
+                    continue _fun85744
                 }
             case 370:
                 var1 = var12.localMessageDetails;
@@ -124,8 +124,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var12.networkMessageDetails;
                 var1 = var1.count;
                 if (!(var2 === var1)) {
-                    _fun86765_ip = 488;
-                    continue _fun86765
+                    _fun85744_ip = 488;
+                    continue _fun85744
                 }
             case 398:
                 var1 = var12.localMessageDetails;
@@ -134,8 +134,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.lastMessageId;
                 var1 = 'Cache was up-to-date';
                 if (!(var3 !== var2)) {
-                    _fun86765_ip = 486;
-                    continue _fun86765
+                    _fun85744_ip = 486;
+                    continue _fun85744
                 }
             case 432:
                 var2 = var12.localMessageDetails;
@@ -148,8 +148,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = ' differs from network last message ID ';
                 var1 = var13.bind(var3)(var15, var2, var14);
             case 486:
-                _fun86765_ip = 545;
-                continue _fun86765;
+                _fun85744_ip = 545;
+                continue _fun85744;
             case 488:
                 var2 = var12.localMessageDetails;
                 var21 = var2.count;
@@ -182,8 +182,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var10 == var12;
                 var10 = undefined;
                 if (var13) {
-                    _fun86765_ip = 621;
-                    continue _fun86765
+                    _fun85744_ip = 621;
+                    continue _fun85744
                 }
             case 616:
                 var10 = var12.name;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var _closure1_slot8 = var0;
+    var _closure1_slot9 = var0;
     var0 = global;
     var7 = var0.Object;
     var6 = var7.defineProperty;
@@ -221,40 +221,51 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var3 = var3.ScrollView;
     var _closure1_slot3 = var3;
-    var9 = 1;
-    var3 = var5[var9];
-    var3 = var10.bind(var0)(var3);
+    var10 = 1;
+    var3 = var5[var10];
+    var3 = var11.bind(var0)(var3);
     var _closure1_slot4 = var3;
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var6 = var3.jsx;
-    var _closure1_slot5 = var6;
+    var7 = var3.jsx;
+    var _closure1_slot5 = var7;
     var3 = var3.jsxs;
     var _closure1_slot6 = var3;
     var3 = 3;
     var3 = var5[var3];
-    var7 = var4.bind(var0)(var3);
-    var6 = var7.createStyles;
+    var8 = var4.bind(var0)(var3);
+    var6 = var8.createStyles;
     var3 = {};
-    var8 = {};
-    var8.flex = var9;
-    var9 = 4;
-    var11 = var5[var9];
-    var11 = var10.bind(var0)(var11);
-    var11 = var11.colors;
-    var11 = var11.BACKGROUND_BASE_LOW;
-    var8.backgroundColor = var11;
-    var3.container = var8;
-    var8 = {};
-    var9 = var5[var9];
-    var9 = var10.bind(var0)(var9);
-    var9 = var9.spacing;
-    var9 = var9.PX_16;
-    var8.padding = var9;
-    var3.contentContainer = var8;
-    var3 = var6.bind(var7)(var3);
+    var9 = {};
+    var9.flex = var10;
+    var10 = 4;
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
+    var12 = var12.colors;
+    var12 = var12.BACKGROUND_BASE_LOW;
+    var9.backgroundColor = var12;
+    var3.container = var9;
+    var9 = {};
+    var10 = var5[var10];
+    var10 = var11.bind(var0)(var10);
+    var10 = var10.spacing;
+    var10 = var10.PX_16;
+    var9.padding = var10;
+    var3.contentContainer = var9;
+    var3 = var6.bind(var8)(var3);
     var _closure1_slot7 = var3;
+    var3 = 6;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.Text;
+    var3 = {
+        'variant': 'text-sm/normal',
+        'color': 'text-muted',
+        'children': 'Cumulative since app launch. Does not update dynamically.'
+    };
+    var3 = var7.bind(var0)(var6, var3);
+    var _closure1_slot8 = var3;
     var3 = 10;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -275,29 +286,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = _closure1_slot6;
         var9 = _closure1_slot0;
         var15 = _closure1_slot2;
-        var4 = 6;
+        var4 = 7;
         var4 = var15[var4];
         var4 = var9.bind(var3)(var4);
         var5 = var4.Stack;
         var4 = {};
-        var11 = 8;
-        var4.spacing = var11;
-        var8 = 7;
+        var8 = 8;
+        var4.spacing = var8;
         var7 = var15[var8];
         var7 = var9.bind(var3)(var7);
         var12 = var7.TableRowGroup;
         var7 = {};
-        var13 = 'Local Message Cache Stats';
-        var7.title = var13;
+        var11 = 'Local Message Cache Stats';
+        var7.title = var11;
         var18 = _closure1_slot5;
         var16 = 5;
-        var13 = var15[var16];
-        var13 = var9.bind(var3)(var13);
-        var17 = var13.TableRow;
+        var11 = var15[var16];
+        var11 = var9.bind(var3)(var11);
+        var17 = var11.TableRow;
         var13 = {};
-        var14 = 'Channels Fetched';
-        var13.label = var14;
+        var11 = 'Channels Fetched';
+        var13.label = var11;
         var14 = _closure1_slot1;
+        var11 = 9;
         var19 = var15[var11];
         var19 = var14.bind(var3)(var19);
         var19 = var19.channelsFetchStarted;
@@ -362,17 +373,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var12 = var6.bind(var3)(var12, var7);
         var7 = new Array(3);
         var7[0] = var12;
-        var16 = _closure1_slot5;
-        var12 = 9;
-        var12 = var15[var12];
-        var12 = var9.bind(var3)(var12);
-        var13 = var12.Text;
-        var12 = {
-            'variant': 'text-sm/normal',
-            'color': 'text-muted',
-            'children': 'Cumulative since app launch. Does not update dynamically.'
-        };
-        var12 = var16.bind(var3)(var13, var12);
+        var12 = _closure1_slot8;
         var7[1] = var12;
         var10 = _closure1_slot5;
         var8 = var15[var8];
@@ -395,7 +396,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var12 = var13.map;
         var11 = function(arg0, arg1) { // Environment: var11
             var4 = _closure1_slot5;
-            var3 = _closure1_slot8;
+            var3 = _closure1_slot9;
             var2 = {};
             var0 = arg0;
             var2.entry = var0;
@@ -416,4 +417,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 1372, 33, 1297, 671, 4908, 4086, 5425, 4386, 3938, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 1372, 33, 1297, 671, 4876, 3938, 4086, 5343, 4386, 2]);

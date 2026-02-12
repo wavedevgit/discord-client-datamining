@@ -34,9 +34,9 @@ public abstract class b {
                 Object next = it.next();
                 KType kType = (KType) next;
                 Intrinsics.checkNotNull(kType, "null cannot be cast to non-null type kotlin.reflect.jvm.internal.KTypeImpl");
-                ClassifierDescriptor mo1202getDeclarationDescriptor = ((t2) kType).l().getConstructor().mo1202getDeclarationDescriptor();
-                if (mo1202getDeclarationDescriptor instanceof ClassDescriptor) {
-                    classDescriptor = (ClassDescriptor) mo1202getDeclarationDescriptor;
+                ClassifierDescriptor mo1201getDeclarationDescriptor = ((t2) kType).l().getConstructor().mo1201getDeclarationDescriptor();
+                if (mo1201getDeclarationDescriptor instanceof ClassDescriptor) {
+                    classDescriptor = (ClassDescriptor) mo1201getDeclarationDescriptor;
                 }
                 if (classDescriptor != null && classDescriptor.getKind() != ClassKind.INTERFACE && classDescriptor.getKind() != ClassKind.ANNOTATION_CLASS) {
                     classDescriptor = next;

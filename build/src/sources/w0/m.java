@@ -6,9 +6,9 @@ import kotlin.jvm.functions.Function0;
 public final class m implements j0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Lazy f52077a;
+    private final Lazy f52078a;
 
     public m(Function0 function0) {
-        this.f52077a = as.l.b(function0);
+        this.f52078a = as.l.b(function0);
     }
 }

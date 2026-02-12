@@ -6,29 +6,29 @@ import ys.e0;
 public final class i extends h {
 
     /* renamed from: i  reason: collision with root package name */
-    public final Runnable f24373i;
+    public final Runnable f24374i;
 
     public i(Runnable runnable, long j10, boolean z10) {
         super(j10, z10);
-        this.f24373i = runnable;
+        this.f24374i = runnable;
     }
 
     @Override // java.lang.Runnable
     public void run() {
-        this.f24373i.run();
+        this.f24374i.run();
     }
 
     public String toString() {
         String c10;
         StringBuilder sb2 = new StringBuilder();
         sb2.append("Task[");
-        sb2.append(e0.a(this.f24373i));
+        sb2.append(e0.a(this.f24374i));
         sb2.append('@');
-        sb2.append(e0.b(this.f24373i));
+        sb2.append(e0.b(this.f24374i));
         sb2.append(", ");
-        sb2.append(this.f24371d);
+        sb2.append(this.f24372d);
         sb2.append(", ");
-        c10 = j.c(this.f24372e);
+        c10 = j.c(this.f24373e);
         sb2.append(c10);
         sb2.append(']');
         return sb2.toString();

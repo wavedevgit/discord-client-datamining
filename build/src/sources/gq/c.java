@@ -11,37 +11,37 @@ import ls.j;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final File f25965a;
+    private final File f25966a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final File f25966b;
+    private final File f25967b;
 
     public c(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
         File file = new File(context.getFilesDir(), ".com.withpersona.sdk2.inquiry");
-        this.f25965a = file;
-        this.f25966b = new File(file, "sess");
+        this.f25966a = file;
+        this.f25967b = new File(file, "sess");
     }
 
     public final void a() {
-        j.r(this.f25966b);
+        j.r(this.f25967b);
     }
 
     public final List b() {
-        return CollectionsKt.e(this.f25966b);
+        return CollectionsKt.e(this.f25967b);
     }
 
     public final File c(String extension) {
         Intrinsics.checkNotNullParameter(extension, "extension");
-        this.f25966b.mkdirs();
-        File file = this.f25966b;
+        this.f25967b.mkdirs();
+        File file = this.f25967b;
         UUID randomUUID = UUID.randomUUID();
         return new File(file, randomUUID + "." + extension);
     }
 
     public final File d(String fileName) {
         Intrinsics.checkNotNullParameter(fileName, "fileName");
-        this.f25966b.mkdirs();
-        return new File(this.f25966b, fileName);
+        this.f25967b.mkdirs();
+        return new File(this.f25967b, fileName);
     }
 }

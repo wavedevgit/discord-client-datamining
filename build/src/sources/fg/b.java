@@ -3,64 +3,64 @@ package fg;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f23746a;
+    public static final com.google.android.gms.common.d f23747a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f23747b;
+    public static final com.google.android.gms.common.d f23748b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f23748c;
+    public static final com.google.android.gms.common.d f23749c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f23749d;
+    public static final com.google.android.gms.common.d f23750d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f23750e;
+    public static final com.google.android.gms.common.d f23751e;
 
     /* renamed from: f  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f23751f;
+    public static final com.google.android.gms.common.d f23752f;
 
     /* renamed from: g  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f23752g;
+    public static final com.google.android.gms.common.d f23753g;
 
     /* renamed from: h  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f23753h;
+    public static final com.google.android.gms.common.d f23754h;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f23754i;
+    public static final com.google.android.gms.common.d f23755i;
 
     /* renamed from: j  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f23755j;
+    public static final com.google.android.gms.common.d f23756j;
 
     /* renamed from: k  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f23756k;
+    public static final com.google.android.gms.common.d f23757k;
 
     /* renamed from: l  reason: collision with root package name */
-    public static final com.google.android.gms.common.d[] f23757l;
+    public static final com.google.android.gms.common.d[] f23758l;
 
     static {
         com.google.android.gms.common.d dVar = new com.google.android.gms.common.d("auth_blockstore", 3L);
-        f23746a = dVar;
+        f23747a = dVar;
         com.google.android.gms.common.d dVar2 = new com.google.android.gms.common.d("blockstore_data_transfer", 1L);
-        f23747b = dVar2;
+        f23748b = dVar2;
         com.google.android.gms.common.d dVar3 = new com.google.android.gms.common.d("blockstore_notify_app_restore", 1L);
-        f23748c = dVar3;
+        f23749c = dVar3;
         com.google.android.gms.common.d dVar4 = new com.google.android.gms.common.d("blockstore_store_bytes_with_options", 2L);
-        f23749d = dVar4;
+        f23750d = dVar4;
         com.google.android.gms.common.d dVar5 = new com.google.android.gms.common.d("blockstore_is_end_to_end_encryption_available", 1L);
-        f23750e = dVar5;
+        f23751e = dVar5;
         com.google.android.gms.common.d dVar6 = new com.google.android.gms.common.d("blockstore_enable_cloud_backup", 1L);
-        f23751f = dVar6;
+        f23752f = dVar6;
         com.google.android.gms.common.d dVar7 = new com.google.android.gms.common.d("blockstore_delete_bytes", 2L);
-        f23752g = dVar7;
+        f23753g = dVar7;
         com.google.android.gms.common.d dVar8 = new com.google.android.gms.common.d("blockstore_retrieve_bytes_with_options", 3L);
-        f23753h = dVar8;
+        f23754h = dVar8;
         com.google.android.gms.common.d dVar9 = new com.google.android.gms.common.d("auth_clear_restore_credential", 1L);
-        f23754i = dVar9;
+        f23755i = dVar9;
         com.google.android.gms.common.d dVar10 = new com.google.android.gms.common.d("auth_create_restore_credential", 1L);
-        f23755j = dVar10;
+        f23756j = dVar10;
         com.google.android.gms.common.d dVar11 = new com.google.android.gms.common.d("auth_get_restore_credential", 1L);
-        f23756k = dVar11;
-        f23757l = new com.google.android.gms.common.d[]{dVar, dVar2, dVar3, dVar4, dVar5, dVar6, dVar7, dVar8, dVar9, dVar10, dVar11};
+        f23757k = dVar11;
+        f23758l = new com.google.android.gms.common.d[]{dVar, dVar2, dVar3, dVar4, dVar5, dVar6, dVar7, dVar8, dVar9, dVar10, dVar11};
     }
 }

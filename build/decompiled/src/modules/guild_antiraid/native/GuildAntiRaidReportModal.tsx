@@ -346,15 +346,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure2_slot3;
                 var0 = undefined;
                 var1 = function(arg0) { // Environment: var1
-                    _fun97095: for (var _fun97095_ip = 0;;) switch (_fun97095_ip) {
+                    _fun97180: for (var _fun97180_ip = 0;;) switch (_fun97180_ip) {
                         case 0:
                             var3 = arg0;
                             var2 = var3.includes;
                             var0 = _closure4_slot0;
                             var0 = var2.bind(var3)(var0);
                             if (var0) {
-                                _fun97095_ip = 57;
-                                continue _fun97095
+                                _fun97180_ip = 57;
+                                continue _fun97180
                             }
                         case 23:
                             var0 = new Array(1);
@@ -366,8 +366,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0[var2] = var1;
                             var1 = 1;
                             var1 = var2 + var1;
-                            _fun97095_ip = 76;
-                            continue _fun97095;
+                            _fun97180_ip = 76;
+                            continue _fun97180;
                         case 57:
                             var2 = var3.filter;
                             var1 = function(arg0) { // Environment: var1
@@ -408,48 +408,43 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = function arg0() {
                 var0 = arg0;
                 var5 = var0.onCloseModal;
-                var2 = var0.raidTypes;
-                var _closure4_slot0 = var2;
-                var2 = var0.onChange;
-                var _closure4_slot1 = var2;
-                var0 = var0.onSubmit;
-                var _closure4_slot2 = var0;
+                var8 = var0.raidTypes;
+                var7 = var0.onChange;
+                var6 = var0.onSubmit;
+                var4 = _closure1_slot9;
+                var2 = _closure1_slot12;
+                var0 = {};
+                var0.raidTypes = var8;
+                var0.onChange = var7;
+                var0.onSubmit = var6;
+                var6 = undefined;
+                var0 = var4.bind(var6)(var2, var0);
+                var _closure4_slot0 = var0;
                 var0 = {};
                 var2 = {};
-                var3 = true;
-                var2.ignoreKeyboard = var3;
-                var6 = _closure1_slot0;
+                var4 = true;
+                var2.ignoreKeyboard = var4;
+                var4 = _closure1_slot0;
                 var7 = _closure1_slot2;
                 var3 = 11;
                 var8 = var7[var3];
-                var4 = undefined;
-                var8 = var6.bind(var4)(var8);
+                var8 = var4.bind(var6)(var8);
                 var9 = var8.intl;
                 var8 = var9.string;
                 var3 = var7[var3];
-                var3 = var6.bind(var4)(var3);
+                var3 = var4.bind(var6)(var3);
                 var3 = var3.t;
                 var3 = var3.uYPGsS;
                 var3 = var8.bind(var9)(var3);
                 var2.title = var3;
                 var3 = 15;
                 var3 = var7[var3];
-                var4 = var6.bind(var4)(var3);
+                var4 = var4.bind(var6)(var3);
                 var3 = var4.getHeaderCloseButton;
                 var3 = var3.bind(var4)(var5);
                 var2.headerLeft = var3;
                 var1 = function() {
-                    var3 = _closure1_slot9;
-                    var2 = _closure1_slot12;
-                    var1 = {};
-                    var4 = _closure4_slot0;
-                    var1.raidTypes = var4;
-                    var4 = _closure4_slot1;
-                    var1.onChange = var4;
-                    var0 = _closure4_slot2;
-                    var1.onSubmit = var0;
-                    var0 = undefined;
-                    var0 = var3.bind(var0)(var2, var1);
+                    var0 = _closure4_slot0;
                     return var0;
                 };
                 var2.render = var1;
@@ -478,4 +473,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 12626, 33, 1297, 671, 1568, 3938, 3146, 5393, 1234, 5425, 8845, 4883, 4713, 10129, 5847, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 12641, 33, 1297, 671, 1568, 3938, 3146, 5384, 1234, 5343, 8798, 4849, 5836, 10057, 5834, 2]);

@@ -14,73 +14,73 @@ import sun.misc.Unsafe;
 public abstract class h1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Unsafe f31049a = B();
+    private static final Unsafe f31050a = B();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Class f31050b = jk.d.b();
+    private static final Class f31051b = jk.d.b();
 
     /* renamed from: c  reason: collision with root package name */
-    private static final boolean f31051c = m(Long.TYPE);
+    private static final boolean f31052c = m(Long.TYPE);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final boolean f31052d = m(Integer.TYPE);
+    private static final boolean f31053d = m(Integer.TYPE);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final e f31053e = z();
+    private static final e f31054e = z();
 
     /* renamed from: f  reason: collision with root package name */
-    private static final boolean f31054f = Q();
+    private static final boolean f31055f = Q();
 
     /* renamed from: g  reason: collision with root package name */
-    private static final boolean f31055g = P();
+    private static final boolean f31056g = P();
 
     /* renamed from: h  reason: collision with root package name */
-    static final long f31056h;
+    static final long f31057h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final long f31057i;
+    private static final long f31058i;
 
     /* renamed from: j  reason: collision with root package name */
-    private static final long f31058j;
+    private static final long f31059j;
 
     /* renamed from: k  reason: collision with root package name */
-    private static final long f31059k;
+    private static final long f31060k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final long f31060l;
+    private static final long f31061l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final long f31061m;
+    private static final long f31062m;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final long f31062n;
+    private static final long f31063n;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final long f31063o;
+    private static final long f31064o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final long f31064p;
+    private static final long f31065p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final long f31065q;
+    private static final long f31066q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final long f31066r;
+    private static final long f31067r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final long f31067s;
+    private static final long f31068s;
 
     /* renamed from: t  reason: collision with root package name */
-    private static final long f31068t;
+    private static final long f31069t;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final long f31069u;
+    private static final long f31070u;
 
     /* renamed from: v  reason: collision with root package name */
-    private static final int f31070v;
+    private static final int f31071v;
 
     /* renamed from: w  reason: collision with root package name */
-    static final boolean f31071w;
+    static final boolean f31072w;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -112,12 +112,12 @@ public abstract class h1 {
 
         @Override // jk.h1.e
         public boolean c(Object obj, long j10) {
-            return h1.f31071w ? h1.q(obj, j10) : h1.r(obj, j10);
+            return h1.f31072w ? h1.q(obj, j10) : h1.r(obj, j10);
         }
 
         @Override // jk.h1.e
         public byte d(Object obj, long j10) {
-            return h1.f31071w ? h1.t(obj, j10) : h1.u(obj, j10);
+            return h1.f31072w ? h1.t(obj, j10) : h1.u(obj, j10);
         }
 
         @Override // jk.h1.e
@@ -132,7 +132,7 @@ public abstract class h1 {
 
         @Override // jk.h1.e
         public void k(Object obj, long j10, boolean z10) {
-            if (h1.f31071w) {
+            if (h1.f31072w) {
                 h1.G(obj, j10, z10);
             } else {
                 h1.H(obj, j10, z10);
@@ -164,12 +164,12 @@ public abstract class h1 {
 
         @Override // jk.h1.e
         public boolean c(Object obj, long j10) {
-            return h1.f31071w ? h1.q(obj, j10) : h1.r(obj, j10);
+            return h1.f31072w ? h1.q(obj, j10) : h1.r(obj, j10);
         }
 
         @Override // jk.h1.e
         public byte d(Object obj, long j10) {
-            return h1.f31071w ? h1.t(obj, j10) : h1.u(obj, j10);
+            return h1.f31072w ? h1.t(obj, j10) : h1.u(obj, j10);
         }
 
         @Override // jk.h1.e
@@ -184,7 +184,7 @@ public abstract class h1 {
 
         @Override // jk.h1.e
         public void k(Object obj, long j10, boolean z10) {
-            if (h1.f31071w) {
+            if (h1.f31072w) {
                 h1.G(obj, j10, z10);
             } else {
                 h1.H(obj, j10, z10);
@@ -216,37 +216,37 @@ public abstract class h1 {
 
         @Override // jk.h1.e
         public boolean c(Object obj, long j10) {
-            return this.f31072a.getBoolean(obj, j10);
+            return this.f31073a.getBoolean(obj, j10);
         }
 
         @Override // jk.h1.e
         public byte d(Object obj, long j10) {
-            return this.f31072a.getByte(obj, j10);
+            return this.f31073a.getByte(obj, j10);
         }
 
         @Override // jk.h1.e
         public double e(Object obj, long j10) {
-            return this.f31072a.getDouble(obj, j10);
+            return this.f31073a.getDouble(obj, j10);
         }
 
         @Override // jk.h1.e
         public float f(Object obj, long j10) {
-            return this.f31072a.getFloat(obj, j10);
+            return this.f31073a.getFloat(obj, j10);
         }
 
         @Override // jk.h1.e
         public void k(Object obj, long j10, boolean z10) {
-            this.f31072a.putBoolean(obj, j10, z10);
+            this.f31073a.putBoolean(obj, j10, z10);
         }
 
         @Override // jk.h1.e
         public void l(Object obj, long j10, double d10) {
-            this.f31072a.putDouble(obj, j10, d10);
+            this.f31073a.putDouble(obj, j10, d10);
         }
 
         @Override // jk.h1.e
         public void m(Object obj, long j10, float f10) {
-            this.f31072a.putFloat(obj, j10, f10);
+            this.f31073a.putFloat(obj, j10, f10);
         }
 
         @Override // jk.h1.e
@@ -255,7 +255,7 @@ public abstract class h1 {
                 return false;
             }
             try {
-                Class<?> cls = this.f31072a.getClass();
+                Class<?> cls = this.f31073a.getClass();
                 Class cls2 = Long.TYPE;
                 cls.getMethod("getByte", Object.class, cls2);
                 cls.getMethod("putByte", Object.class, cls2, Byte.TYPE);
@@ -278,7 +278,7 @@ public abstract class h1 {
                 return false;
             }
             try {
-                Class<?> cls = this.f31072a.getClass();
+                Class<?> cls = this.f31073a.getClass();
                 Class cls2 = Long.TYPE;
                 cls.getMethod("getByte", cls2);
                 cls.getMethod("putByte", cls2, Byte.TYPE);
@@ -301,18 +301,18 @@ public abstract class h1 {
     public static abstract class e {
 
         /* renamed from: a  reason: collision with root package name */
-        Unsafe f31072a;
+        Unsafe f31073a;
 
         e(Unsafe unsafe) {
-            this.f31072a = unsafe;
+            this.f31073a = unsafe;
         }
 
         public final int a(Class cls) {
-            return this.f31072a.arrayBaseOffset(cls);
+            return this.f31073a.arrayBaseOffset(cls);
         }
 
         public final int b(Class cls) {
-            return this.f31072a.arrayIndexScale(cls);
+            return this.f31073a.arrayIndexScale(cls);
         }
 
         public abstract boolean c(Object obj, long j10);
@@ -324,19 +324,19 @@ public abstract class h1 {
         public abstract float f(Object obj, long j10);
 
         public final int g(Object obj, long j10) {
-            return this.f31072a.getInt(obj, j10);
+            return this.f31073a.getInt(obj, j10);
         }
 
         public final long h(Object obj, long j10) {
-            return this.f31072a.getLong(obj, j10);
+            return this.f31073a.getLong(obj, j10);
         }
 
         public final Object i(Object obj, long j10) {
-            return this.f31072a.getObject(obj, j10);
+            return this.f31073a.getObject(obj, j10);
         }
 
         public final long j(Field field) {
-            return this.f31072a.objectFieldOffset(field);
+            return this.f31073a.objectFieldOffset(field);
         }
 
         public abstract void k(Object obj, long j10, boolean z10);
@@ -346,19 +346,19 @@ public abstract class h1 {
         public abstract void m(Object obj, long j10, float f10);
 
         public final void n(Object obj, long j10, int i10) {
-            this.f31072a.putInt(obj, j10, i10);
+            this.f31073a.putInt(obj, j10, i10);
         }
 
         public final void o(Object obj, long j10, long j11) {
-            this.f31072a.putLong(obj, j10, j11);
+            this.f31073a.putLong(obj, j10, j11);
         }
 
         public final void p(Object obj, long j10, Object obj2) {
-            this.f31072a.putObject(obj, j10, obj2);
+            this.f31073a.putObject(obj, j10, obj2);
         }
 
         public boolean q() {
-            Unsafe unsafe = this.f31072a;
+            Unsafe unsafe = this.f31073a;
             if (unsafe == null) {
                 return false;
             }
@@ -382,7 +382,7 @@ public abstract class h1 {
         }
 
         public boolean r() {
-            Unsafe unsafe = this.f31072a;
+            Unsafe unsafe = this.f31073a;
             if (unsafe == null) {
                 return false;
             }
@@ -404,32 +404,32 @@ public abstract class h1 {
     static {
         boolean z10;
         long j10 = j(byte[].class);
-        f31056h = j10;
-        f31057i = j(boolean[].class);
-        f31058j = k(boolean[].class);
-        f31059k = j(int[].class);
-        f31060l = k(int[].class);
-        f31061m = j(long[].class);
-        f31062n = k(long[].class);
-        f31063o = j(float[].class);
-        f31064p = k(float[].class);
-        f31065q = j(double[].class);
-        f31066r = k(double[].class);
-        f31067s = j(Object[].class);
-        f31068t = k(Object[].class);
-        f31069u = o(l());
-        f31070v = (int) (j10 & 7);
+        f31057h = j10;
+        f31058i = j(boolean[].class);
+        f31059j = k(boolean[].class);
+        f31060k = j(int[].class);
+        f31061l = k(int[].class);
+        f31062m = j(long[].class);
+        f31063n = k(long[].class);
+        f31064o = j(float[].class);
+        f31065p = k(float[].class);
+        f31066q = j(double[].class);
+        f31067r = k(double[].class);
+        f31068s = j(Object[].class);
+        f31069t = k(Object[].class);
+        f31070u = o(l());
+        f31071v = (int) (j10 & 7);
         if (ByteOrder.nativeOrder() == ByteOrder.BIG_ENDIAN) {
             z10 = true;
         } else {
             z10 = false;
         }
-        f31071w = z10;
+        f31072w = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Object A(Object obj, long j10) {
-        return f31053e.i(obj, j10);
+        return f31054e.i(obj, j10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -443,12 +443,12 @@ public abstract class h1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean C() {
-        return f31055g;
+        return f31056g;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean D() {
-        return f31054f;
+        return f31055f;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -460,7 +460,7 @@ public abstract class h1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void F(Object obj, long j10, boolean z10) {
-        f31053e.k(obj, j10, z10);
+        f31054e.k(obj, j10, z10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -488,31 +488,31 @@ public abstract class h1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void K(Object obj, long j10, double d10) {
-        f31053e.l(obj, j10, d10);
+        f31054e.l(obj, j10, d10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void L(Object obj, long j10, float f10) {
-        f31053e.m(obj, j10, f10);
+        f31054e.m(obj, j10, f10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void M(Object obj, long j10, int i10) {
-        f31053e.n(obj, j10, i10);
+        f31054e.n(obj, j10, i10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void N(Object obj, long j10, long j11) {
-        f31053e.o(obj, j10, j11);
+        f31054e.o(obj, j10, j11);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void O(Object obj, long j10, Object obj2) {
-        f31053e.p(obj, j10, obj2);
+        f31054e.p(obj, j10, obj2);
     }
 
     private static boolean P() {
-        e eVar = f31053e;
+        e eVar = f31054e;
         if (eVar == null) {
             return false;
         }
@@ -520,7 +520,7 @@ public abstract class h1 {
     }
 
     private static boolean Q() {
-        e eVar = f31053e;
+        e eVar = f31054e;
         if (eVar == null) {
             return false;
         }
@@ -534,22 +534,22 @@ public abstract class h1 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Object i(Class cls) {
         try {
-            return f31049a.allocateInstance(cls);
+            return f31050a.allocateInstance(cls);
         } catch (InstantiationException e10) {
             throw new IllegalStateException(e10);
         }
     }
 
     private static int j(Class cls) {
-        if (f31055g) {
-            return f31053e.a(cls);
+        if (f31056g) {
+            return f31054e.a(cls);
         }
         return -1;
     }
 
     private static int k(Class cls) {
-        if (f31055g) {
-            return f31053e.b(cls);
+        if (f31056g) {
+            return f31054e.b(cls);
         }
         return -1;
     }
@@ -571,7 +571,7 @@ public abstract class h1 {
             return false;
         }
         try {
-            Class cls2 = f31050b;
+            Class cls2 = f31051b;
             Class cls3 = Boolean.TYPE;
             cls2.getMethod("peekLong", cls, cls3);
             cls2.getMethod("pokeLong", cls, Long.TYPE, cls3);
@@ -598,7 +598,7 @@ public abstract class h1 {
 
     private static long o(Field field) {
         e eVar;
-        if (field != null && (eVar = f31053e) != null) {
+        if (field != null && (eVar = f31054e) != null) {
             return eVar.j(field);
         }
         return -1L;
@@ -606,7 +606,7 @@ public abstract class h1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean p(Object obj, long j10) {
-        return f31053e.c(obj, j10);
+        return f31054e.c(obj, j10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -627,7 +627,7 @@ public abstract class h1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static byte s(byte[] bArr, long j10) {
-        return f31053e.d(bArr, f31056h + j10);
+        return f31054e.d(bArr, f31057h + j10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -642,34 +642,34 @@ public abstract class h1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static double v(Object obj, long j10) {
-        return f31053e.e(obj, j10);
+        return f31054e.e(obj, j10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static float w(Object obj, long j10) {
-        return f31053e.f(obj, j10);
+        return f31054e.f(obj, j10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static int x(Object obj, long j10) {
-        return f31053e.g(obj, j10);
+        return f31054e.g(obj, j10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static long y(Object obj, long j10) {
-        return f31053e.h(obj, j10);
+        return f31054e.h(obj, j10);
     }
 
     private static e z() {
-        Unsafe unsafe = f31049a;
+        Unsafe unsafe = f31050a;
         if (unsafe == null) {
             return null;
         }
         if (jk.d.c()) {
-            if (f31051c) {
+            if (f31052c) {
                 return new c(unsafe);
             }
-            if (!f31052d) {
+            if (!f31053d) {
                 return null;
             }
             return new b(unsafe);

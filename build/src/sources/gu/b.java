@@ -12,36 +12,36 @@ public enum b {
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f26035a;
+        static final /* synthetic */ int[] f26036a;
 
         static {
             int[] iArr = new int[b.values().length];
-            f26035a = iArr;
+            f26036a = iArr;
             try {
                 iArr[b.PROLEPTIC_JULIAN.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f26035a[b.PROLEPTIC_GREGORIAN.ordinal()] = 2;
+                f26036a[b.PROLEPTIC_GREGORIAN.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f26035a[b.SWEDEN.ordinal()] = 3;
+                f26036a[b.SWEDEN.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f26035a[b.INTRODUCTION_ON_1582_10_15.ordinal()] = 4;
+                f26036a[b.INTRODUCTION_ON_1582_10_15.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f26035a[b.PROLEPTIC_BYZANTINE.ordinal()] = 5;
+                f26036a[b.PROLEPTIC_BYZANTINE.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
         }
     }
 
     public int a() {
-        int i10 = a.f26035a[ordinal()];
+        int i10 = a.f26036a[ordinal()];
         if (i10 == 1) {
             return 2;
         }

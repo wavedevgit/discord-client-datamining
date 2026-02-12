@@ -7,21 +7,21 @@ import java.util.regex.Pattern;
 final class x0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Pattern f17421d = Pattern.compile("[a-zA-Z0-9-_.~%]{1,900}");
+    private static final Pattern f17422d = Pattern.compile("[a-zA-Z0-9-_.~%]{1,900}");
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f17422a;
+    private final String f17423a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f17423b;
+    private final String f17424b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f17424c;
+    private final String f17425c;
 
     private x0(String str, String str2) {
-        this.f17422a = d(str2, str);
-        this.f17423b = str;
-        this.f17424c = str + "!" + str2;
+        this.f17423a = d(str2, str);
+        this.f17424b = str;
+        this.f17425c = str + "!" + str2;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -41,22 +41,22 @@ final class x0 {
             Log.w("FirebaseMessaging", String.format("Format /topics/topic-name is deprecated. Only 'topic-name' should be used in %s.", str2));
             str = str.substring(8);
         }
-        if (str != null && f17421d.matcher(str).matches()) {
+        if (str != null && f17422d.matcher(str).matches()) {
             return str;
         }
         throw new IllegalArgumentException(String.format("Invalid topic name: %s does not match the allowed format %s.", str, "[a-zA-Z0-9-_.~%]{1,900}"));
     }
 
     public String b() {
-        return this.f17423b;
+        return this.f17424b;
     }
 
     public String c() {
-        return this.f17422a;
+        return this.f17423a;
     }
 
     public String e() {
-        return this.f17424c;
+        return this.f17425c;
     }
 
     public boolean equals(Object obj) {
@@ -64,13 +64,13 @@ final class x0 {
             return false;
         }
         x0 x0Var = (x0) obj;
-        if (!this.f17422a.equals(x0Var.f17422a) || !this.f17423b.equals(x0Var.f17423b)) {
+        if (!this.f17423a.equals(x0Var.f17423a) || !this.f17424b.equals(x0Var.f17424b)) {
             return false;
         }
         return true;
     }
 
     public int hashCode() {
-        return hf.o.b(this.f17423b, this.f17422a);
+        return hf.o.b(this.f17424b, this.f17423a);
     }
 }

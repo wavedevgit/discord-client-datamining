@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/forums/native/posts/list/ForumPostListFooter.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun90193: for (var _fun90193_ip = 0;;) switch (_fun90193_ip) {
+        _fun89109: for (var _fun89109_ip = 0;;) switch (_fun89109_ip) {
             case 0:
                 var0 = arg0;
                 var12 = var0.thread;
@@ -113,8 +113,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(3);
                 var4[0] = var6;
                 if (!var5) {
-                    _fun90193_ip = 257;
-                    continue _fun90193
+                    _fun89109_ip = 257;
+                    continue _fun89109
                 }
             case 156:
                 var8 = _closure1_slot7;
@@ -146,8 +146,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = null;
                 var5 = var5 != var11;
                 if (!var5) {
-                    _fun90193_ip = 338;
-                    continue _fun90193
+                    _fun89109_ip = 338;
+                    continue _fun89109
                 }
             case 270:
                 var8 = _closure1_slot5;
@@ -174,4 +174,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 11689, 11691, 11692, 9864, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 11492, 11494, 11495, 9797, 2]);

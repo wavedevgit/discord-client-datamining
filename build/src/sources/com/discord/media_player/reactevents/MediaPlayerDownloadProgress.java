@@ -20,7 +20,7 @@ public final class MediaPlayerDownloadProgress implements ReactEvent {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: id  reason: collision with root package name */
-    private final double f10180id;
+    private final double f10181id;
     private final double progressPercent;
     private final double progressSeconds;
     private final double totalDurationSeconds;
@@ -45,7 +45,7 @@ public final class MediaPlayerDownloadProgress implements ReactEvent {
         if (15 != (i10 & 15)) {
             v1.b(i10, 15, MediaPlayerDownloadProgress$$serializer.INSTANCE.getDescriptor());
         }
-        this.f10180id = d10;
+        this.f10181id = d10;
         this.progressSeconds = d11;
         this.progressPercent = d12;
         this.totalDurationSeconds = d13;
@@ -53,7 +53,7 @@ public final class MediaPlayerDownloadProgress implements ReactEvent {
 
     public static /* synthetic */ MediaPlayerDownloadProgress copy$default(MediaPlayerDownloadProgress mediaPlayerDownloadProgress, double d10, double d11, double d12, double d13, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            d10 = mediaPlayerDownloadProgress.f10180id;
+            d10 = mediaPlayerDownloadProgress.f10181id;
         }
         double d14 = d10;
         if ((i10 & 2) != 0) {
@@ -67,14 +67,14 @@ public final class MediaPlayerDownloadProgress implements ReactEvent {
     }
 
     public static final /* synthetic */ void write$Self$media_player_release(MediaPlayerDownloadProgress mediaPlayerDownloadProgress, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        compositeEncoder.D(serialDescriptor, 0, mediaPlayerDownloadProgress.f10180id);
+        compositeEncoder.D(serialDescriptor, 0, mediaPlayerDownloadProgress.f10181id);
         compositeEncoder.D(serialDescriptor, 1, mediaPlayerDownloadProgress.progressSeconds);
         compositeEncoder.D(serialDescriptor, 2, mediaPlayerDownloadProgress.progressPercent);
         compositeEncoder.D(serialDescriptor, 3, mediaPlayerDownloadProgress.totalDurationSeconds);
     }
 
     public final double component1() {
-        return this.f10180id;
+        return this.f10181id;
     }
 
     public final double component2() {
@@ -100,13 +100,13 @@ public final class MediaPlayerDownloadProgress implements ReactEvent {
         }
         if (obj instanceof MediaPlayerDownloadProgress) {
             MediaPlayerDownloadProgress mediaPlayerDownloadProgress = (MediaPlayerDownloadProgress) obj;
-            return Double.compare(this.f10180id, mediaPlayerDownloadProgress.f10180id) == 0 && Double.compare(this.progressSeconds, mediaPlayerDownloadProgress.progressSeconds) == 0 && Double.compare(this.progressPercent, mediaPlayerDownloadProgress.progressPercent) == 0 && Double.compare(this.totalDurationSeconds, mediaPlayerDownloadProgress.totalDurationSeconds) == 0;
+            return Double.compare(this.f10181id, mediaPlayerDownloadProgress.f10181id) == 0 && Double.compare(this.progressSeconds, mediaPlayerDownloadProgress.progressSeconds) == 0 && Double.compare(this.progressPercent, mediaPlayerDownloadProgress.progressPercent) == 0 && Double.compare(this.totalDurationSeconds, mediaPlayerDownloadProgress.totalDurationSeconds) == 0;
         }
         return false;
     }
 
     public final double getId() {
-        return this.f10180id;
+        return this.f10181id;
     }
 
     public final double getProgressPercent() {
@@ -122,7 +122,7 @@ public final class MediaPlayerDownloadProgress implements ReactEvent {
     }
 
     public int hashCode() {
-        return (((((Double.hashCode(this.f10180id) * 31) + Double.hashCode(this.progressSeconds)) * 31) + Double.hashCode(this.progressPercent)) * 31) + Double.hashCode(this.totalDurationSeconds);
+        return (((((Double.hashCode(this.f10181id) * 31) + Double.hashCode(this.progressSeconds)) * 31) + Double.hashCode(this.progressPercent)) * 31) + Double.hashCode(this.totalDurationSeconds);
     }
 
     @Override // com.discord.reactevents.ReactEvent
@@ -133,7 +133,7 @@ public final class MediaPlayerDownloadProgress implements ReactEvent {
 
     @NotNull
     public String toString() {
-        double d10 = this.f10180id;
+        double d10 = this.f10181id;
         double d11 = this.progressSeconds;
         double d12 = this.progressPercent;
         double d13 = this.totalDurationSeconds;
@@ -141,7 +141,7 @@ public final class MediaPlayerDownloadProgress implements ReactEvent {
     }
 
     public MediaPlayerDownloadProgress(double d10, double d11, double d12, double d13) {
-        this.f10180id = d10;
+        this.f10181id = d10;
         this.progressSeconds = d11;
         this.progressPercent = d12;
         this.totalDurationSeconds = d13;

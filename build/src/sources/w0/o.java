@@ -6,7 +6,7 @@ import kotlin.jvm.functions.Function1;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public abstract class o {
     public static final n a(CoroutineContext coroutineContext) {
-        n nVar = (n) coroutineContext.m(n.f52078m);
+        n nVar = (n) coroutineContext.m(n.f52079m);
         if (nVar != null) {
             return nVar;
         }

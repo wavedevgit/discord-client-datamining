@@ -18,28 +18,28 @@ import com.horcrux.svg.SVGLength;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final EnumC0203a f17647a;
+    private final EnumC0203a f17648a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final SVGLength[] f17648b;
+    private final SVGLength[] f17649b;
 
     /* renamed from: c  reason: collision with root package name */
-    private ReadableArray f17649c;
+    private ReadableArray f17650c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f17650d;
+    private final boolean f17651d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f17651e;
+    private boolean f17652e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Matrix f17652f;
+    private Matrix f17653f;
 
     /* renamed from: g  reason: collision with root package name */
-    private Rect f17653g;
+    private Rect f17654g;
 
     /* renamed from: h  reason: collision with root package name */
-    private l0 f17654h;
+    private l0 f17655h;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: com.horcrux.svg.a$a  reason: collision with other inner class name */
@@ -60,25 +60,25 @@ public class a {
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(EnumC0203a enumC0203a, SVGLength[] sVGLengthArr, b bVar) {
         boolean z10;
-        this.f17647a = enumC0203a;
-        this.f17648b = sVGLengthArr;
+        this.f17648a = enumC0203a;
+        this.f17649b = sVGLengthArr;
         if (bVar == b.OBJECT_BOUNDING_BOX) {
             z10 = true;
         } else {
             z10 = false;
         }
-        this.f17650d = z10;
+        this.f17651d = z10;
     }
 
     private RectF a(RectF rectF) {
         float f10;
         float f11;
-        if (!this.f17650d) {
-            rectF = new RectF(this.f17653g);
+        if (!this.f17651d) {
+            rectF = new RectF(this.f17654g);
         }
         float width = rectF.width();
         float height = rectF.height();
-        if (this.f17650d) {
+        if (this.f17651d) {
             f10 = rectF.left;
             f11 = rectF.top;
         } else {
@@ -90,7 +90,7 @@ public class a {
 
     private double b(SVGLength sVGLength, double d10, float f10, float f11) {
         double d11;
-        if (this.f17650d && sVGLength.f17604b == SVGLength.UnitType.NUMBER) {
+        if (this.f17651d && sVGLength.f17605b == SVGLength.UnitType.NUMBER) {
             d11 = d10;
         } else {
             d11 = f10;
@@ -115,27 +115,27 @@ public class a {
         } else {
             z10 = false;
         }
-        this.f17651e = z10;
+        this.f17652e = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void e(ReadableArray readableArray) {
-        this.f17649c = readableArray;
+        this.f17650c = readableArray;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f(Matrix matrix) {
-        this.f17652f = matrix;
+        this.f17653f = matrix;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void g(l0 l0Var) {
-        this.f17654h = l0Var;
+        this.f17655h = l0Var;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void h(Rect rect) {
-        this.f17653g = rect;
+        this.f17654g = rect;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -152,31 +152,31 @@ public class a {
         float f13 = a10.left;
         float f14 = a10.top;
         float textSize = paint.getTextSize();
-        if (this.f17647a == EnumC0203a.PATTERN) {
+        if (this.f17648a == EnumC0203a.PATTERN) {
             double d11 = width;
-            double b10 = b(this.f17648b[0], d11, f10, textSize);
+            double b10 = b(this.f17649b[0], d11, f10, textSize);
             double d12 = height;
-            double b11 = b(this.f17648b[1], d12, f10, textSize);
-            double b12 = b(this.f17648b[2], d11, f10, textSize);
-            double b13 = b(this.f17648b[3], d12, f10, textSize);
+            double b11 = b(this.f17649b[1], d12, f10, textSize);
+            double b12 = b(this.f17649b[2], d11, f10, textSize);
+            double b13 = b(this.f17649b[3], d12, f10, textSize);
             if (b12 > 1.0d && b13 > 1.0d) {
                 Bitmap createBitmap = Bitmap.createBitmap((int) b12, (int) b13, Bitmap.Config.ARGB_8888);
                 Canvas canvas = new Canvas(createBitmap);
-                RectF viewBox = this.f17654h.getViewBox();
+                RectF viewBox = this.f17655h.getViewBox();
                 if (viewBox != null && viewBox.width() > 0.0f && viewBox.height() > 0.0f) {
                     f12 = height;
                     RectF rectF2 = new RectF((float) b10, (float) b11, (float) b12, (float) b13);
-                    l0 l0Var = this.f17654h;
+                    l0 l0Var = this.f17655h;
                     canvas.concat(l1.a(viewBox, rectF2, l0Var.A, l0Var.B));
                 } else {
                     f12 = height;
                 }
-                if (this.f17651e) {
+                if (this.f17652e) {
                     canvas.scale(width / f10, f12 / f10);
                 }
-                this.f17654h.draw(canvas, new Paint(), f11);
+                this.f17655h.draw(canvas, new Paint(), f11);
                 Matrix matrix = new Matrix();
-                Matrix matrix2 = this.f17652f;
+                Matrix matrix2 = this.f17653f;
                 if (matrix2 != null) {
                     matrix.preConcat(matrix2);
                 }
@@ -188,7 +188,7 @@ public class a {
             }
             return;
         }
-        int size = this.f17649c.size();
+        int size = this.f17650c.size();
         if (size == 0) {
             q8.a.J(ReactConstants.TAG, "Gradient contains no stops");
             return;
@@ -196,7 +196,7 @@ public class a {
         int i10 = size / 2;
         int[] iArr3 = new int[i10];
         float[] fArr3 = new float[i10];
-        c(this.f17649c, i10, fArr3, iArr3, f11);
+        c(this.f17650c, i10, fArr3, iArr3, f11);
         if (i10 == 1) {
             int[] iArr4 = {iArr3[0], iArr3[0]};
             float[] fArr4 = {fArr3[0], fArr3[0]};
@@ -207,17 +207,17 @@ public class a {
             iArr = iArr3;
             fArr = fArr3;
         }
-        EnumC0203a enumC0203a = this.f17647a;
+        EnumC0203a enumC0203a = this.f17648a;
         if (enumC0203a == EnumC0203a.LINEAR_GRADIENT) {
             double d13 = width;
             double d14 = f13;
-            double b14 = b(this.f17648b[0], d13, f10, textSize) + d14;
+            double b14 = b(this.f17649b[0], d13, f10, textSize) + d14;
             double d15 = height;
             double d16 = f14;
-            LinearGradient linearGradient = new LinearGradient((float) b14, (float) (b(this.f17648b[1], d15, f10, textSize) + d16), (float) (d14 + b(this.f17648b[2], d13, f10, textSize)), (float) (b(this.f17648b[3], d15, f10, textSize) + d16), iArr, fArr, Shader.TileMode.CLAMP);
-            if (this.f17652f != null) {
+            LinearGradient linearGradient = new LinearGradient((float) b14, (float) (b(this.f17649b[1], d15, f10, textSize) + d16), (float) (d14 + b(this.f17649b[2], d13, f10, textSize)), (float) (b(this.f17649b[3], d15, f10, textSize) + d16), iArr, fArr, Shader.TileMode.CLAMP);
+            if (this.f17653f != null) {
                 Matrix matrix3 = new Matrix();
-                matrix3.preConcat(this.f17652f);
+                matrix3.preConcat(this.f17653f);
                 linearGradient.setLocalMatrix(matrix3);
             }
             paint.setShader(linearGradient);
@@ -227,9 +227,9 @@ public class a {
         float[] fArr5 = fArr;
         if (enumC0203a == EnumC0203a.RADIAL_GRADIENT) {
             double d17 = width;
-            double b15 = b(this.f17648b[2], d17, f10, textSize);
+            double b15 = b(this.f17649b[2], d17, f10, textSize);
             double d18 = height;
-            double b16 = b(this.f17648b[3], d18, f10, textSize);
+            double b16 = b(this.f17649b[3], d18, f10, textSize);
             if (b15 > 0.0d && b16 > 0.0d) {
                 iArr2 = iArr5;
                 fArr2 = fArr5;
@@ -242,10 +242,10 @@ public class a {
                 d10 = d18;
             }
             double d19 = d10 / b15;
-            RadialGradient radialGradient = new RadialGradient((float) (b(this.f17648b[4], d17, f10, textSize) + f13), (float) (b(this.f17648b[5], d18 / d19, f10, textSize) + (f14 / d19)), (float) b15, iArr2, fArr2, Shader.TileMode.CLAMP);
+            RadialGradient radialGradient = new RadialGradient((float) (b(this.f17649b[4], d17, f10, textSize) + f13), (float) (b(this.f17649b[5], d18 / d19, f10, textSize) + (f14 / d19)), (float) b15, iArr2, fArr2, Shader.TileMode.CLAMP);
             Matrix matrix4 = new Matrix();
             matrix4.preScale(1.0f, (float) d19);
-            Matrix matrix5 = this.f17652f;
+            Matrix matrix5 = this.f17653f;
             if (matrix5 != null) {
                 matrix4.preConcat(matrix5);
             }

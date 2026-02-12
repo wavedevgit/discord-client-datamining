@@ -1,50 +1,31 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Environment: var0
-        _fun94926: for (var _fun94926_ip = 0;;) switch (_fun94926_ip) {
+    var1 = function(arg0, arg1, arg2) { // Environment: var0
+        _fun94980: for (var _fun94980_ip = 0;;) switch (_fun94980_ip) {
             case 0:
-                var1 = arg0;
-                var0 = new Array(0);
-                var2 = var1.shiftKey;
-                if (!var2) {
-                    _fun94926_ip = 30;
-                    continue _fun94926
+                var5 = arg0;
+                var4 = arg1;
+                var3 = arg2;
+                var2 = this;
+                var0 = var5.length;
+                var1 = 0;
+                var0 = var1 < var0;
+                if (!var0) {
+                    _fun94980_ip = 55;
+                    continue _fun94980
                 }
-            case 16:
-                var3 = var0.push;
-                var2 = 'shift';
-                var2 = var3.bind(var0)(var2);
-            case 30:
-                var2 = var1.altKey;
-                if (!var2) {
-                    _fun94926_ip = 53;
-                    continue _fun94926
+            case 26:
+                var6 = var2.bindSingle;
+                var0 = var5[var1];
+                var0 = var6.bind(var2)(var0, var4, var3);
+                var1 = var1 + 1;
+                var0 = var5.length;
+                if (var1 < var0) {
+                    _fun94980_ip = 26;
+                    continue _fun94980
                 }
-            case 39:
-                var3 = var0.push;
-                var2 = 'alt';
-                var2 = var3.bind(var0)(var2);
-            case 53:
-                var2 = var1.ctrlKey;
-                if (!var2) {
-                    _fun94926_ip = 76;
-                    continue _fun94926
-                }
-            case 62:
-                var3 = var0.push;
-                var2 = 'ctrl';
-                var2 = var3.bind(var0)(var2);
-            case 76:
-                var1 = var1.metaKey;
-                if (!var1) {
-                    _fun94926_ip = 99;
-                    continue _fun94926
-                }
-            case 85:
-                var2 = var0.push;
-                var1 = 'meta';
-                var1 = var2.bind(var0)(var1);
-            case 99:
+            case 55:
+                var0 = undefined;
                 return var0;
         }
     };

@@ -37,8 +37,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 4;
     var1 = var5[var1];
     var1 = var4.bind(var0)(var1);
-    var1 = var1.jsx;
+    var6 = var1.jsx;
+    var1 = 5;
+    var1 = var5[var1];
+    var1 = var4.bind(var0)(var1);
+    var3 = var1.CircleMinusIcon;
+    var1 = {};
+    var1 = var6.bind(var0)(var3, var1);
     var _closure1_slot5 = var1;
+    var1 = 6;
+    var1 = var5[var1];
+    var1 = var4.bind(var0)(var1);
+    var3 = var1.CirclePlusIcon;
+    var1 = {};
+    var1 = var6.bind(var0)(var3, var1);
+    var _closure1_slot6 = var1;
     var1 = 9;
     var1 = var5[var1];
     var6 = var4.bind(var0)(var1);
@@ -64,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.APPEARANCE;
     var1.parent = var8;
     var7 = function() {
-        _fun85593: for (var _fun85593_ip = 0;;) switch (_fun85593_ip) {
+        _fun84411: for (var _fun84411_ip = 0;;) switch (_fun84411_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var3 = undefined;
@@ -75,8 +88,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 != var5;
                 var6 = undefined;
                 if (!var2) {
-                    _fun85593_ip = 57;
-                    continue _fun85593
+                    _fun84411_ip = 57;
+                    continue _fun84411
                 }
             case 36:
                 var5 = _closure1_slot4;
@@ -92,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var _closure3_slot0 = var0;
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot1;
-                    var0 = 5;
+                    var0 = 7;
                     var2 = var2[var0];
                     var0 = undefined;
                     var3 = var3.bind(var0)(var2);
@@ -141,26 +154,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.step = var3;
                     var5 = _closure2_slot2;
                     var0.onValueChange = var5;
-                    var6 = _closure1_slot5;
+                    var5 = _closure1_slot5;
+                    var0.startIcon = var5;
+                    var5 = _closure1_slot6;
+                    var0.endIcon = var5;
                     var8 = _closure1_slot0;
                     var9 = _closure1_slot1;
-                    var4 = 6;
-                    var4 = var9[var4];
-                    var7 = undefined;
-                    var4 = var8.bind(var7)(var4);
-                    var5 = var4.CircleMinusIcon;
-                    var4 = {};
-                    var4 = var6.bind(var7)(var5, var4);
-                    var0.startIcon = var4;
-                    var4 = 7;
-                    var4 = var9[var4];
-                    var4 = var8.bind(var7)(var4);
-                    var5 = var4.CirclePlusIcon;
-                    var4 = {};
-                    var4 = var6.bind(var7)(var5, var4);
-                    var0.endIcon = var4;
                     var4 = 8;
                     var5 = var9[var4];
+                    var7 = undefined;
                     var5 = var8.bind(var7)(var5);
                     var6 = var5.intl;
                     var5 = var6.string;
@@ -198,4 +200,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4097, 7088, 1351, 33, 802, 10951, 10954, 1234, 9056, 478, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4097, 7103, 1351, 33, 10768, 10771, 802, 1234, 9818, 478, 2]);

@@ -54,4 +54,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.showVotesForAnswer = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3279, 9726, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3279, 9965, 1307, 2]);

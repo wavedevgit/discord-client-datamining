@@ -8,7 +8,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f31387a = new a(null);
+    public static final a f31388a = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -25,7 +25,7 @@ public final class b {
     public /* synthetic */ class C0439b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f31388a;
+        public static final /* synthetic */ int[] f31389a;
 
         static {
             int[] iArr = new int[jw.a.values().length];
@@ -57,12 +57,12 @@ public final class b {
                 iArr[jw.a.YEAR.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
-            f31388a = iArr;
+            f31389a = iArr;
         }
     }
 
     private final String b(jw.a aVar) {
-        switch (C0439b.f31388a[aVar.ordinal()]) {
+        switch (C0439b.f31389a[aVar.ordinal()]) {
             case 1:
                 return "";
             case 2:
@@ -83,7 +83,7 @@ public final class b {
     }
 
     private final int c(jw.a aVar) {
-        switch (C0439b.f31388a[aVar.ordinal()]) {
+        switch (C0439b.f31389a[aVar.ordinal()]) {
             case 1:
                 return 24;
             case 2:

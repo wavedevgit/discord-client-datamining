@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var10 = metroImportDefault;
+    var11 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var10;
+    var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -21,8 +21,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = metroImportAll;
     var0 = undefined;
     var3 = var3.bind(var0)(var6);
-    var12 = 1;
-    var3 = var5[var12];
+    var13 = 1;
+    var3 = var5[var13];
     var3 = var4.bind(var0)(var3);
     var6 = var3.View;
     var _closure1_slot3 = var6;
@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var11 = var3.PROFILE_SIDE_PADDING;
+    var12 = var3.PROFILE_SIDE_PADDING;
     var3 = 3;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
@@ -42,65 +42,75 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 4;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var6 = var3.jsx;
-    var _closure1_slot7 = var6;
+    var7 = var3.jsx;
+    var _closure1_slot7 = var7;
     var3 = var3.jsxs;
     var _closure1_slot8 = var3;
     var3 = 5;
     var3 = var5[var3];
-    var7 = var4.bind(var0)(var3);
-    var6 = var7.createStyles;
+    var8 = var4.bind(var0)(var3);
+    var6 = var8.createStyles;
     var3 = {};
-    var8 = {
+    var9 = {
         'marginTop': 8,
         'flexShrink': 0,
         'borderRadius': null,
         'gap': 4
     };
-    var9 = 6;
-    var13 = var5[var9];
-    var13 = var10.bind(var0)(var13);
-    var13 = var13.radii;
-    var13 = var13.round;
-    var8.borderRadius = var13;
-    var3.upsellButton = var8;
-    var8 = {
+    var10 = 6;
+    var14 = var5[var10];
+    var14 = var11.bind(var0)(var14);
+    var14 = var14.radii;
+    var14 = var14.round;
+    var9.borderRadius = var14;
+    var3.upsellButton = var9;
+    var9 = {
         'flexDirection': 'row',
         'alignItems': 'center',
         'gap': 4,
         'marginBottom': 4
     };
-    var3.titleContainer = var8;
-    var8 = {
+    var3.titleContainer = var9;
+    var9 = {
         'width': '100%',
         'height': '100%',
         'position': 'absolute',
         'overflow': 'hidden'
     };
-    var3.linearGradient = var8;
-    var8 = {};
-    var11 = var11 - var12;
-    var8.marginHorizontal = var11;
-    var3.outer = var8;
-    var8 = {};
-    var11 = var5[var9];
-    var11 = var10.bind(var0)(var11);
-    var11 = var11.radii;
-    var11 = var11.lg;
-    var8.borderRadius = var11;
-    var9 = var5[var9];
-    var9 = var10.bind(var0)(var9);
-    var9 = var9.colors;
-    var9 = var9.BACKGROUND_SURFACE_HIGH;
-    var8.backgroundColor = var9;
-    var3.scroll = var8;
-    var8 = {
+    var3.linearGradient = var9;
+    var9 = {};
+    var12 = var12 - var13;
+    var9.marginHorizontal = var12;
+    var3.outer = var9;
+    var9 = {};
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
+    var12 = var12.radii;
+    var12 = var12.lg;
+    var9.borderRadius = var12;
+    var10 = var5[var10];
+    var10 = var11.bind(var0)(var10);
+    var10 = var10.colors;
+    var10 = var10.BACKGROUND_SURFACE_HIGH;
+    var9.backgroundColor = var10;
+    var3.scroll = var9;
+    var9 = {
         'paddingVertical': 12,
         'paddingHorizontal': 14
     };
-    var3.inner = var8;
-    var3 = var6.bind(var7)(var3);
+    var3.inner = var9;
+    var3 = var6.bind(var8)(var3);
     var _closure1_slot9 = var3;
+    var3 = 7;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.NitroWheelIcon;
+    var3 = {
+        'color': 'white',
+        'size': 'xs'
+    };
+    var3 = var7.bind(var0)(var6, var3);
+    var _closure1_slot10 = var3;
     var3 = 13;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -108,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/UserProfileUpsellCard.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun80861: for (var _fun80861_ip = 0;;) switch (_fun80861_ip) {
+        _fun80519: for (var _fun80519_ip = 0;;) switch (_fun80519_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.style;
@@ -124,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot7;
                 var5 = _closure1_slot1;
                 var4 = _closure1_slot2;
-                var6 = 7;
+                var6 = 8;
                 var0 = var4[var6];
                 var1 = var5.bind(var3)(var0);
                 var0 = {};
@@ -161,8 +171,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = null;
                 var7 = var9 != var22;
                 if (!var7) {
-                    _fun80861_ip = 383;
-                    continue _fun80861
+                    _fun80519_ip = 383;
+                    continue _fun80519
                 }
             case 228:
                 var15 = _closure1_slot8;
@@ -173,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = _closure1_slot7;
                 var20 = _closure1_slot0;
                 var23 = _closure1_slot2;
-                var18 = 8;
+                var18 = 7;
                 var18 = var23[var18];
                 var18 = var20.bind(var3)(var18);
                 var19 = var18.NitroWheelIcon;
@@ -224,26 +234,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var11.GREEN;
                 var8.color = var11;
                 var11 = function() {
-                    var3 = _closure1_slot7;
-                    var1 = _closure1_slot0;
-                    var2 = _closure1_slot2;
-                    var0 = 8;
-                    var0 = var2[var0];
-                    var2 = undefined;
-                    var0 = var1.bind(var2)(var0);
-                    var1 = var0.NitroWheelIcon;
-                    var0 = {
-                        'color': 'white',
-                        'size': 'xs'
-                    };
-                    var0 = var3.bind(var2)(var1, var0);
+                    var0 = _closure1_slot10;
                     return var0;
                 };
                 var8.renderIcon = var11;
                 var11 = undefined;
                 if (!var13) {
-                    _fun80861_ip = 495;
-                    continue _fun80861
+                    _fun80519_ip = 495;
+                    continue _fun80519
                 }
             case 488:
                 var11 = function() { // Environment: var12
@@ -284,4 +282,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7043, 660, 33, 1297, 671, 10270, 5810, 3938, 7686, 4883, 4104, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7058, 660, 33, 1297, 671, 5808, 7348, 3938, 8068, 4849, 4104, 2]);

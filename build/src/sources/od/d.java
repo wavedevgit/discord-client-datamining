@@ -13,43 +13,43 @@ public final class d extends od.b {
     public static final Parcelable.Creator<d> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final long f38849d;
+    public final long f38850d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final boolean f38850e;
+    public final boolean f38851e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final boolean f38851i;
+    public final boolean f38852i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final boolean f38852o;
+    public final boolean f38853o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final boolean f38853p;
+    public final boolean f38854p;
 
     /* renamed from: q  reason: collision with root package name */
-    public final long f38854q;
+    public final long f38855q;
 
     /* renamed from: r  reason: collision with root package name */
-    public final long f38855r;
+    public final long f38856r;
 
     /* renamed from: s  reason: collision with root package name */
-    public final List f38856s;
+    public final List f38857s;
 
     /* renamed from: t  reason: collision with root package name */
-    public final boolean f38857t;
+    public final boolean f38858t;
 
     /* renamed from: u  reason: collision with root package name */
-    public final long f38858u;
+    public final long f38859u;
 
     /* renamed from: v  reason: collision with root package name */
-    public final int f38859v;
+    public final int f38860v;
 
     /* renamed from: w  reason: collision with root package name */
-    public final int f38860w;
+    public final int f38861w;
 
     /* renamed from: x  reason: collision with root package name */
-    public final int f38861x;
+    public final int f38862x;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -73,13 +73,13 @@ public final class d extends od.b {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f38862a;
+        public final int f38863a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final long f38863b;
+        public final long f38864b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final long f38864c;
+        public final long f38865c;
 
         /* synthetic */ b(int i10, long j10, long j11, a aVar) {
             this(i10, j10, j11);
@@ -90,15 +90,15 @@ public final class d extends od.b {
         }
 
         public void b(Parcel parcel) {
-            parcel.writeInt(this.f38862a);
-            parcel.writeLong(this.f38863b);
-            parcel.writeLong(this.f38864c);
+            parcel.writeInt(this.f38863a);
+            parcel.writeLong(this.f38864b);
+            parcel.writeLong(this.f38865c);
         }
 
         private b(int i10, long j10, long j11) {
-            this.f38862a = i10;
-            this.f38863b = j10;
-            this.f38864c = j11;
+            this.f38863a = i10;
+            this.f38864b = j10;
+            this.f38865c = j11;
         }
     }
 
@@ -221,64 +221,64 @@ public final class d extends od.b {
 
     @Override // od.b
     public String toString() {
-        return "SCTE-35 SpliceInsertCommand { programSplicePts=" + this.f38854q + ", programSplicePlaybackPositionUs= " + this.f38855r + " }";
+        return "SCTE-35 SpliceInsertCommand { programSplicePts=" + this.f38855q + ", programSplicePlaybackPositionUs= " + this.f38856r + " }";
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeLong(this.f38849d);
-        parcel.writeByte(this.f38850e ? (byte) 1 : (byte) 0);
-        parcel.writeByte(this.f38851i ? (byte) 1 : (byte) 0);
-        parcel.writeByte(this.f38852o ? (byte) 1 : (byte) 0);
-        parcel.writeByte(this.f38853p ? (byte) 1 : (byte) 0);
-        parcel.writeLong(this.f38854q);
-        parcel.writeLong(this.f38855r);
-        int size = this.f38856s.size();
+        parcel.writeLong(this.f38850d);
+        parcel.writeByte(this.f38851e ? (byte) 1 : (byte) 0);
+        parcel.writeByte(this.f38852i ? (byte) 1 : (byte) 0);
+        parcel.writeByte(this.f38853o ? (byte) 1 : (byte) 0);
+        parcel.writeByte(this.f38854p ? (byte) 1 : (byte) 0);
+        parcel.writeLong(this.f38855q);
+        parcel.writeLong(this.f38856r);
+        int size = this.f38857s.size();
         parcel.writeInt(size);
         for (int i11 = 0; i11 < size; i11++) {
-            ((b) this.f38856s.get(i11)).b(parcel);
+            ((b) this.f38857s.get(i11)).b(parcel);
         }
-        parcel.writeByte(this.f38857t ? (byte) 1 : (byte) 0);
-        parcel.writeLong(this.f38858u);
-        parcel.writeInt(this.f38859v);
-        parcel.writeInt(this.f38860w);
-        parcel.writeInt(this.f38861x);
+        parcel.writeByte(this.f38858t ? (byte) 1 : (byte) 0);
+        parcel.writeLong(this.f38859u);
+        parcel.writeInt(this.f38860v);
+        parcel.writeInt(this.f38861w);
+        parcel.writeInt(this.f38862x);
     }
 
     private d(long j10, boolean z10, boolean z11, boolean z12, boolean z13, long j11, long j12, List list, boolean z14, long j13, int i10, int i11, int i12) {
-        this.f38849d = j10;
-        this.f38850e = z10;
-        this.f38851i = z11;
-        this.f38852o = z12;
-        this.f38853p = z13;
-        this.f38854q = j11;
-        this.f38855r = j12;
-        this.f38856s = Collections.unmodifiableList(list);
-        this.f38857t = z14;
-        this.f38858u = j13;
-        this.f38859v = i10;
-        this.f38860w = i11;
-        this.f38861x = i12;
+        this.f38850d = j10;
+        this.f38851e = z10;
+        this.f38852i = z11;
+        this.f38853o = z12;
+        this.f38854p = z13;
+        this.f38855q = j11;
+        this.f38856r = j12;
+        this.f38857s = Collections.unmodifiableList(list);
+        this.f38858t = z14;
+        this.f38859u = j13;
+        this.f38860v = i10;
+        this.f38861w = i11;
+        this.f38862x = i12;
     }
 
     private d(Parcel parcel) {
-        this.f38849d = parcel.readLong();
-        this.f38850e = parcel.readByte() == 1;
-        this.f38851i = parcel.readByte() == 1;
-        this.f38852o = parcel.readByte() == 1;
-        this.f38853p = parcel.readByte() == 1;
-        this.f38854q = parcel.readLong();
-        this.f38855r = parcel.readLong();
+        this.f38850d = parcel.readLong();
+        this.f38851e = parcel.readByte() == 1;
+        this.f38852i = parcel.readByte() == 1;
+        this.f38853o = parcel.readByte() == 1;
+        this.f38854p = parcel.readByte() == 1;
+        this.f38855q = parcel.readLong();
+        this.f38856r = parcel.readLong();
         int readInt = parcel.readInt();
         ArrayList arrayList = new ArrayList(readInt);
         for (int i10 = 0; i10 < readInt; i10++) {
             arrayList.add(b.a(parcel));
         }
-        this.f38856s = Collections.unmodifiableList(arrayList);
-        this.f38857t = parcel.readByte() == 1;
-        this.f38858u = parcel.readLong();
-        this.f38859v = parcel.readInt();
-        this.f38860w = parcel.readInt();
-        this.f38861x = parcel.readInt();
+        this.f38857s = Collections.unmodifiableList(arrayList);
+        this.f38858t = parcel.readByte() == 1;
+        this.f38859u = parcel.readLong();
+        this.f38860v = parcel.readInt();
+        this.f38861w = parcel.readInt();
+        this.f38862x = parcel.readInt();
     }
 }

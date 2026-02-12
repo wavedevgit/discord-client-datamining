@@ -16,10 +16,10 @@ import gr.d;
 public class UCropView extends FrameLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    private GestureCropImageView f20939d;
+    private GestureCropImageView f20940d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final OverlayView f20940e;
+    private final OverlayView f20941e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -29,7 +29,7 @@ public class UCropView extends FrameLayout {
 
         @Override // gr.c
         public void a(float f10) {
-            UCropView.this.f20940e.setTargetAspectRatio(f10);
+            UCropView.this.f20941e.setTargetAspectRatio(f10);
         }
     }
 
@@ -41,7 +41,7 @@ public class UCropView extends FrameLayout {
 
         @Override // gr.d
         public void a(RectF rectF) {
-            UCropView.this.f20939d.setCropRect(rectF);
+            UCropView.this.f20940d.setCropRect(rectF);
         }
     }
 
@@ -50,18 +50,18 @@ public class UCropView extends FrameLayout {
     }
 
     private void c() {
-        this.f20939d.setCropBoundsChangeListener(new a());
-        this.f20940e.setOverlayViewChangeListener(new b());
+        this.f20940d.setCropBoundsChangeListener(new a());
+        this.f20941e.setOverlayViewChangeListener(new b());
     }
 
     @NonNull
     public GestureCropImageView getCropImageView() {
-        return this.f20939d;
+        return this.f20940d;
     }
 
     @NonNull
     public OverlayView getOverlayView() {
-        return this.f20940e;
+        return this.f20941e;
     }
 
     @Override // android.widget.FrameLayout, android.view.ViewGroup
@@ -71,13 +71,13 @@ public class UCropView extends FrameLayout {
 
     public UCropView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        LayoutInflater.from(context).inflate(e.f24274d, (ViewGroup) this, true);
-        this.f20939d = (GestureCropImageView) findViewById(fr.d.f24246b);
-        OverlayView overlayView = (OverlayView) findViewById(fr.d.f24269y);
-        this.f20940e = overlayView;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, h.f24314e);
+        LayoutInflater.from(context).inflate(e.f24275d, (ViewGroup) this, true);
+        this.f20940d = (GestureCropImageView) findViewById(fr.d.f24247b);
+        OverlayView overlayView = (OverlayView) findViewById(fr.d.f24270y);
+        this.f20941e = overlayView;
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, h.f24315e);
         overlayView.g(obtainStyledAttributes);
-        this.f20939d.y(obtainStyledAttributes);
+        this.f20940d.y(obtainStyledAttributes);
         obtainStyledAttributes.recycle();
         c();
     }

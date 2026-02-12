@@ -9,18 +9,18 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 public final class f extends t {
 
     /* renamed from: b  reason: collision with root package name */
-    private final SerialDescriptor f49986b;
+    private final SerialDescriptor f49987b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public f(KSerializer element) {
         super(element);
         Intrinsics.checkNotNullParameter(element, "element");
-        this.f49986b = new e(element.getDescriptor());
+        this.f49987b = new e(element.getDescriptor());
     }
 
     @Override // tt.s, kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return this.f49986b;
+        return this.f49987b;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

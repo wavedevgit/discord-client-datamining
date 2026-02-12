@@ -6,7 +6,7 @@ import zg.k;
 final class g implements m {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f48088a = new g();
+    public static final g f48089a = new g();
 
     g() {
     }

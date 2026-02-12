@@ -32,16 +32,16 @@ import u3.j;
 public final class WorkflowViewStub extends View {
 
     /* renamed from: d  reason: collision with root package name */
-    private View f18934d;
+    private View f18935d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f18935e;
+    private boolean f18936e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f18936i;
+    private int f18937i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Function2 f18937o;
+    private Function2 f18938o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class a extends Lambda implements Function2 {
@@ -60,7 +60,7 @@ public final class WorkflowViewStub extends View {
                 unit = null;
             } else {
                 parent.addView(newView, indexOfChild, layoutParams);
-                unit = Unit.f31987a;
+                unit = Unit.f31988a;
             }
             if (unit == null) {
                 parent.addView(newView, indexOfChild);
@@ -70,7 +70,7 @@ public final class WorkflowViewStub extends View {
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a((ViewGroup) obj, (View) obj2);
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
     }
 
@@ -102,7 +102,7 @@ public final class WorkflowViewStub extends View {
     public static final void d(View view, Function0 doStart) {
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(doStart, "doStart");
-        d.a.e(d.f27463h, view, null, 2, null);
+        d.a.e(d.f27464h, view, null, 2, null);
         doStart.invoke();
     }
 
@@ -110,25 +110,25 @@ public final class WorkflowViewStub extends View {
         d c10;
         Intrinsics.checkNotNullParameter(rendering, "rendering");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-        View view = this.f18934d;
+        View view = this.f18935d;
         ViewGroup viewGroup = null;
         if (!g0.b(view, rendering)) {
             view = null;
         }
         if (view == null) {
-            ViewParent parent = this.f18934d.getParent();
+            ViewParent parent = this.f18935d.getParent();
             if (parent instanceof ViewGroup) {
                 viewGroup = (ViewGroup) parent;
             }
             ViewGroup viewGroup2 = viewGroup;
             if (viewGroup2 != null) {
-                View view2 = this.f18934d;
-                if (view2 != this && (c10 = d.f27463h.c(view2)) != null) {
+                View view2 = this.f18935d;
+                if (view2 != this && (c10 = d.f27464h.c(view2)) != null) {
                     c10.f();
                 }
                 Context context = viewGroup2.getContext();
                 Intrinsics.checkNotNullExpressionValue(context, "parent.context");
-                View c11 = f0.c((e0) viewEnvironment.a(e0.f25802a), rendering, viewEnvironment, context, viewGroup2, new h0() { // from class: gn.l0
+                View c11 = f0.c((e0) viewEnvironment.a(e0.f25803a), rendering, viewEnvironment, context, viewGroup2, new h0() { // from class: gn.l0
                     @Override // gn.h0
                     public final void a(View view3, Function0 function0) {
                         WorkflowViewStub.d(view3, function0);
@@ -147,7 +147,7 @@ public final class WorkflowViewStub extends View {
                 }
                 b(c11);
                 getReplaceOldViewInParent().invoke(viewGroup2, c11);
-                this.f18934d = c11;
+                this.f18935d = c11;
                 return c11;
             }
             throw new IllegalStateException("WorkflowViewStub must have a non-null ViewGroup parent");
@@ -158,43 +158,43 @@ public final class WorkflowViewStub extends View {
 
     @NotNull
     public final View getActual() {
-        return this.f18934d;
+        return this.f18935d;
     }
 
     public final int getInflatedId() {
-        return this.f18936i;
+        return this.f18937i;
     }
 
     @NotNull
     public final Function2<ViewGroup, View, Unit> getReplaceOldViewInParent() {
-        return this.f18937o;
+        return this.f18938o;
     }
 
     public final boolean getUpdatesVisibility() {
-        return this.f18935e;
+        return this.f18936e;
     }
 
     @Override // android.view.View
     public int getVisibility() {
-        View view = this.f18934d;
+        View view = this.f18935d;
         if (Intrinsics.areEqual(view, this) || view == null) {
             return super.getVisibility();
         }
-        return this.f18934d.getVisibility();
+        return this.f18935d.getVisibility();
     }
 
     @Override // android.view.View
     public void setBackground(Drawable drawable) {
         View view;
         super.setBackground(drawable);
-        if (!Intrinsics.areEqual(this.f18934d, this) && (view = this.f18934d) != null && drawable != null) {
+        if (!Intrinsics.areEqual(this.f18935d, this) && (view = this.f18935d) != null && drawable != null) {
             view.setBackground(drawable);
         }
     }
 
     @Override // android.view.View
     public void setId(int i10) {
-        if (i10 != -1 && i10 == this.f18936i) {
+        if (i10 != -1 && i10 == this.f18937i) {
             throw new IllegalArgumentException(Intrinsics.stringPlus("id must be distinct from inflatedId: ", getResources().getResourceName(i10)).toString());
         }
         super.setId(i10);
@@ -204,23 +204,23 @@ public final class WorkflowViewStub extends View {
         if (i10 != -1 && i10 == getId()) {
             throw new IllegalArgumentException(Intrinsics.stringPlus("inflatedId must be distinct from id: ", getResources().getResourceName(getId())).toString());
         }
-        this.f18936i = i10;
+        this.f18937i = i10;
     }
 
     public final void setReplaceOldViewInParent(@NotNull Function2<? super ViewGroup, ? super View, Unit> function2) {
         Intrinsics.checkNotNullParameter(function2, "<set-?>");
-        this.f18937o = function2;
+        this.f18938o = function2;
     }
 
     public final void setUpdatesVisibility(boolean z10) {
-        this.f18935e = z10;
+        this.f18936e = z10;
     }
 
     @Override // android.view.View
     public void setVisibility(int i10) {
         View view;
         super.setVisibility(i10);
-        if (!Intrinsics.areEqual(this.f18934d, this) && (view = this.f18934d) != null) {
+        if (!Intrinsics.areEqual(this.f18935d, this) && (view = this.f18935d) != null) {
             view.setVisibility(i10);
         }
     }
@@ -233,15 +233,15 @@ public final class WorkflowViewStub extends View {
     public WorkflowViewStub(Context context, AttributeSet attributeSet, int i10, int i11) {
         super(context, attributeSet, i10, i11);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f18934d = this;
-        this.f18935e = true;
-        this.f18936i = -1;
+        this.f18935d = this;
+        this.f18936e = true;
+        this.f18937i = -1;
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, r.U, i10, i11);
         Intrinsics.checkNotNullExpressionValue(obtainStyledAttributes, "context.obtainStyledAttr…fStyle, defStyleRes\n    )");
         setInflatedId(obtainStyledAttributes.getResourceId(r.V, -1));
-        this.f18935e = obtainStyledAttributes.getBoolean(r.W, true);
+        this.f18936e = obtainStyledAttributes.getBoolean(r.W, true);
         obtainStyledAttributes.recycle();
         setWillNotDraw(true);
-        this.f18937o = new a();
+        this.f18938o = new a();
     }
 }

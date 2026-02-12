@@ -6,10 +6,10 @@ import kotlin.text.StringsKt;
 public abstract class c1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String[] f51881a;
+    private static final String[] f51882a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final byte[] f51882b;
+    private static final byte[] f51883b;
 
     static {
         String[] strArr = new String[93];
@@ -23,7 +23,7 @@ public abstract class c1 {
         strArr[10] = "\\n";
         strArr[13] = "\\r";
         strArr[12] = "\\f";
-        f51881a = strArr;
+        f51882a = strArr;
         byte[] bArr = new byte[93];
         for (int i11 = 0; i11 < 32; i11++) {
             bArr[i11] = 1;
@@ -35,15 +35,15 @@ public abstract class c1 {
         bArr[10] = 110;
         bArr[13] = 114;
         bArr[12] = 102;
-        f51882b = bArr;
+        f51883b = bArr;
     }
 
     public static final byte[] a() {
-        return f51882b;
+        return f51883b;
     }
 
     public static final String[] b() {
-        return f51881a;
+        return f51882a;
     }
 
     public static final void c(StringBuilder sb2, String value) {
@@ -54,7 +54,7 @@ public abstract class c1 {
         int i10 = 0;
         for (int i11 = 0; i11 < length; i11++) {
             char charAt = value.charAt(i11);
-            String[] strArr = f51881a;
+            String[] strArr = f51882a;
             if (charAt < strArr.length && strArr[charAt] != null) {
                 sb2.append((CharSequence) value, i10, i11);
                 sb2.append(strArr[charAt]);

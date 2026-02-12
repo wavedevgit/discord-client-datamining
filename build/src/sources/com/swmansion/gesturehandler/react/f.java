@@ -11,16 +11,16 @@ import nn.q;
 public final class f implements nn.e {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f18977d = new a(null);
+    public static final a f18978d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final SparseArray f18978a = new SparseArray();
+    private final SparseArray f18979a = new SparseArray();
 
     /* renamed from: b  reason: collision with root package name */
-    private final SparseArray f18979b = new SparseArray();
+    private final SparseArray f18980b = new SparseArray();
 
     /* renamed from: c  reason: collision with root package name */
-    private final SparseArray f18980c = new SparseArray();
+    private final SparseArray f18981c = new SparseArray();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -47,7 +47,7 @@ public final class f implements nn.e {
     public boolean a(nn.d handler, nn.d otherHandler) {
         Intrinsics.checkNotNullParameter(handler, "handler");
         Intrinsics.checkNotNullParameter(otherHandler, "otherHandler");
-        int[] iArr = (int[]) this.f18978a.get(handler.T());
+        int[] iArr = (int[]) this.f18979a.get(handler.T());
         if (iArr != null) {
             for (int i10 : iArr) {
                 if (i10 == otherHandler.T()) {
@@ -75,7 +75,7 @@ public final class f implements nn.e {
     public boolean c(nn.d handler, nn.d otherHandler) {
         Intrinsics.checkNotNullParameter(handler, "handler");
         Intrinsics.checkNotNullParameter(otherHandler, "otherHandler");
-        int[] iArr = (int[]) this.f18979b.get(handler.T());
+        int[] iArr = (int[]) this.f18980b.get(handler.T());
         if (iArr != null) {
             for (int i10 : iArr) {
                 if (i10 == otherHandler.T()) {
@@ -90,7 +90,7 @@ public final class f implements nn.e {
     public boolean d(nn.d handler, nn.d otherHandler) {
         Intrinsics.checkNotNullParameter(handler, "handler");
         Intrinsics.checkNotNullParameter(otherHandler, "otherHandler");
-        int[] iArr = (int[]) this.f18980c.get(handler.T());
+        int[] iArr = (int[]) this.f18981c.get(handler.T());
         if (iArr != null) {
             for (int i10 : iArr) {
                 if (i10 == otherHandler.T()) {
@@ -106,23 +106,23 @@ public final class f implements nn.e {
         Intrinsics.checkNotNullParameter(config, "config");
         handler.A0(this);
         if (config.hasKey("waitFor")) {
-            this.f18978a.put(handler.T(), f(config, "waitFor"));
+            this.f18979a.put(handler.T(), f(config, "waitFor"));
         }
         if (config.hasKey("simultaneousHandlers")) {
-            this.f18979b.put(handler.T(), f(config, "simultaneousHandlers"));
+            this.f18980b.put(handler.T(), f(config, "simultaneousHandlers"));
         }
         if (config.hasKey("blocksHandlers")) {
-            this.f18980c.put(handler.T(), f(config, "blocksHandlers"));
+            this.f18981c.put(handler.T(), f(config, "blocksHandlers"));
         }
     }
 
     public final void g(int i10) {
-        this.f18978a.remove(i10);
-        this.f18979b.remove(i10);
+        this.f18979a.remove(i10);
+        this.f18980b.remove(i10);
     }
 
     public final void h() {
-        this.f18978a.clear();
-        this.f18979b.clear();
+        this.f18979a.clear();
+        this.f18980b.clear();
     }
 }

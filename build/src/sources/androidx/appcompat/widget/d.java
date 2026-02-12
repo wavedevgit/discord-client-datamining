@@ -26,7 +26,7 @@ public class d extends AutoCompleteTextView {
     private final AppCompatEmojiEditTextHelper f1750i;
 
     public d(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, f.a.f23288m);
+        this(context, attributeSet, f.a.f23289m);
     }
 
     void a(AppCompatEmojiEditTextHelper appCompatEmojiEditTextHelper) {

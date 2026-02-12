@@ -1,7 +1,7 @@
 // ../discord_common/js/packages/kv-storage/js/implementation/index.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun18530: for (var _fun18530_ip = 0;;) switch (_fun18530_ip) {
+    _fun18546: for (var _fun18546_ip = 0;;) switch (_fun18546_ip) {
         case 0:
             var9 = require;
             var8 = exports;
@@ -31,8 +31,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var10 = var9.bind(var0)(var10);
                     var10 = var10[var11];
                     var8[var11] = var10;
-                    _fun18530_ip = 90;
-                    continue _fun18530;
+                    _fun18546_ip = 90;
+                    continue _fun18546;
                 }
         case 121:
             return var0;

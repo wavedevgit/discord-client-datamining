@@ -12,7 +12,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d implements cv.a, f {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f23272a = new d();
+    public static final d f23273a = new d();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
@@ -41,7 +41,7 @@ public final class d implements cv.a, f {
         List<Object> list = b10;
         ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
         for (Object obj : list) {
-            arrayList.add(f23272a.i(hVar, obj, bVar.a(), bVar.c()));
+            arrayList.add(f23273a.i(hVar, obj, bVar.a(), bVar.c()));
         }
         return arrayList;
     }

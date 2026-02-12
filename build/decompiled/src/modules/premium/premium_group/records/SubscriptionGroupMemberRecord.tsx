@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var5 = dependencyMap;
     var0 = function() {
-        _fun83348: for (var _fun83348_ip = 0;;) switch (_fun83348_ip) {
+        _fun59534: for (var _fun59534_ip = 0;;) switch (_fun59534_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -25,12 +25,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var3)(var1);
                 var1 = !var1;
                 var _closure2_slot0 = var1;
-            case 72: // try_end0
-                _fun83348_ip = 76;
-                continue _fun83348;
-            case 74: // catch_target0
+            case 70: // try_end0
+                _fun59534_ip = 74;
+                continue _fun59534;
+            case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
-            case 76:
+            case 74:
                 var1 = function() {
                     var0 = _closure2_slot0;
                     var0 = !var0;
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var1;
     var3 = function(arg0) { // Environment: var3
         var4 = function arg0() {
-            _fun83352: for (var _fun83352_ip = 0;;) switch (_fun83352_ip) {
+            _fun59538: for (var _fun59538_ip = 0;;) switch (_fun59538_ip) {
                 case 0:
                     var1 = arg0;
                     var5 = this;
@@ -104,14 +104,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot7;
                     var0 = var0.bind(var4)();
                     if (var0) {
-                        _fun83352_ip = 65;
-                        continue _fun83352
+                        _fun59538_ip = 65;
+                        continue _fun59538
                     }
                 case 52:
                     var0 = var10.apply;
                     var0 = var0.bind(var10)(var5, var4);
-                    _fun83352_ip = 103;
-                    continue _fun83352;
+                    _fun59538_ip = 103;
+                    continue _fun59538;
                 case 65:
                     var6 = global;
                     var9 = var6.Reflect;
@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'isMember';
         var5.key = var6;
         var6 = function() {
-            _fun83354: for (var _fun83354_ip = 0;;) switch (_fun83354_ip) {
+            _fun59540: for (var _fun59540_ip = 0;;) switch (_fun59540_ip) {
                 case 0:
                     var1 = this;
                     var2 = var1.member_type;
@@ -174,8 +174,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.MEMBER;
                     var0 = var2 === var0;
                     if (!var0) {
-                        _fun83354_ip = 41;
-                        continue _fun83354
+                        _fun59540_ip = 41;
+                        continue _fun59540
                     }
                 case 29:
                     var2 = var1.accepted_at;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'isInvited';
         var5.key = var6;
         var6 = function() {
-            _fun83355: for (var _fun83355_ip = 0;;) switch (_fun83355_ip) {
+            _fun59541: for (var _fun59541_ip = 0;;) switch (_fun59541_ip) {
                 case 0:
                     var1 = this;
                     var2 = var1.member_type;
@@ -199,8 +199,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.MEMBER;
                     var0 = var2 === var0;
                     if (!var0) {
-                        _fun83355_ip = 41;
-                        continue _fun83355
+                        _fun59541_ip = 41;
+                        continue _fun59541
                     }
                 case 29:
                     var2 = var1.accepted_at;

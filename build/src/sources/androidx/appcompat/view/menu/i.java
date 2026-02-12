@@ -67,7 +67,7 @@ public class i {
         Display defaultDisplay = ((WindowManager) this.f1500a.getSystemService("window")).getDefaultDisplay();
         Point point = new Point();
         defaultDisplay.getRealSize(point);
-        if (Math.min(point.x, point.y) >= this.f1500a.getResources().getDimensionPixelSize(f.d.f23311a)) {
+        if (Math.min(point.x, point.y) >= this.f1500a.getResources().getDimensionPixelSize(f.d.f23312a)) {
             lVar = new b(this.f1500a, this.f1505f, this.f1503d, this.f1504e, this.f1502c);
         } else {
             lVar = new l(this.f1500a, this.f1501b, this.f1505f, this.f1503d, this.f1504e, this.f1502c);

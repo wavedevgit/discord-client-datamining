@@ -10,16 +10,16 @@ import kotlinx.coroutines.flow.Flow;
 public final class n<OutputT> implements o<OutputT> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final KType f22998b;
+    private final KType f22999b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Flow f22999c;
+    private final Flow f23000c;
 
     public n(KType outputType, Flow work) {
         Intrinsics.checkNotNullParameter(outputType, "outputType");
         Intrinsics.checkNotNullParameter(work, "work");
-        this.f22998b = outputType;
-        this.f22999c = work;
+        this.f22999b = outputType;
+        this.f23000c = work;
     }
 
     @Override // en.o
@@ -29,10 +29,10 @@ public final class n<OutputT> implements o<OutputT> {
 
     @Override // en.o
     public Flow run() {
-        return this.f22999c;
+        return this.f23000c;
     }
 
     public String toString() {
-        return "TypedWorker(" + this.f22998b + ')';
+        return "TypedWorker(" + this.f22999b + ')';
     }
 }

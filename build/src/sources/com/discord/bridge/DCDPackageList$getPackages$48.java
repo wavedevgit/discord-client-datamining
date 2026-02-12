@@ -1,6 +1,6 @@
 package com.discord.bridge;
 
-import com.discord.app_icon.AppIconModule;
+import com.discord.app_database.AppDatabaseModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function1;
@@ -8,16 +8,16 @@ import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
 @Metadata(k = 3, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
-/* synthetic */ class DCDPackageList$getPackages$48 extends FunctionReferenceImpl implements Function1<ReactApplicationContext, AppIconModule> {
+/* synthetic */ class DCDPackageList$getPackages$48 extends FunctionReferenceImpl implements Function1<ReactApplicationContext, AppDatabaseModule> {
     public static final DCDPackageList$getPackages$48 INSTANCE = new DCDPackageList$getPackages$48();
 
     DCDPackageList$getPackages$48() {
-        super(1, AppIconModule.class, "<init>", "<init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V", 0);
+        super(1, AppDatabaseModule.class, "<init>", "<init>(Lcom/facebook/react/bridge/ReactApplicationContext;)V", 0);
     }
 
     @Override // kotlin.jvm.functions.Function1
-    public final AppIconModule invoke(ReactApplicationContext p02) {
+    public final AppDatabaseModule invoke(ReactApplicationContext p02) {
         Intrinsics.checkNotNullParameter(p02, "p0");
-        return new AppIconModule(p02);
+        return new AppDatabaseModule(p02);
     }
 }

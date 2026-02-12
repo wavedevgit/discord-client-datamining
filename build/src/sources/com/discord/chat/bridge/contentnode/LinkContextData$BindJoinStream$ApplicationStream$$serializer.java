@@ -46,7 +46,7 @@ public /* synthetic */ class LinkContextData$BindJoinStream$ApplicationStream$$s
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{UserId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, rt.a.u(GuildId$$serializer.INSTANCE), n2.f50032a, rt.a.u(tt.h.f49996a)};
+        return new KSerializer[]{UserId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, rt.a.u(GuildId$$serializer.INSTANCE), n2.f50033a, rt.a.u(tt.h.f49997a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -66,7 +66,7 @@ public /* synthetic */ class LinkContextData$BindJoinStream$ApplicationStream$$s
             String m10 = b10.m(serialDescriptor, 3);
             userId = (UserId) b10.y(serialDescriptor, 0, UserId$$serializer.INSTANCE, null);
             str = m10;
-            bool = (Boolean) b10.n(serialDescriptor, 4, tt.h.f49996a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 4, tt.h.f49997a, null);
             guildId = (GuildId) b10.n(serialDescriptor, 2, GuildId$$serializer.INSTANCE, null);
             channelId = (ChannelId) b10.y(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, null);
             i10 = 31;
@@ -96,7 +96,7 @@ public /* synthetic */ class LinkContextData$BindJoinStream$ApplicationStream$$s
                 } else if (o10 != 4) {
                     throw new b0(o10);
                 } else {
-                    bool2 = (Boolean) b10.n(serialDescriptor, 4, tt.h.f49996a, bool2);
+                    bool2 = (Boolean) b10.n(serialDescriptor, 4, tt.h.f49997a, bool2);
                     i11 |= 16;
                 }
             }

@@ -9,36 +9,36 @@ import org.jetbrains.annotations.NotNull;
 public final class AnnotationsContainerWithConstants<A, C> extends AbstractBinaryClassAnnotationLoader.AnnotationsContainer<A> {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f33159a;
+    private final Map f33160a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f33160b;
+    private final Map f33161b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f33161c;
+    private final Map f33162c;
 
     public AnnotationsContainerWithConstants(@NotNull Map<MemberSignature, ? extends List<? extends A>> memberAnnotations, @NotNull Map<MemberSignature, ? extends C> propertyConstants, @NotNull Map<MemberSignature, ? extends C> annotationParametersDefaultValues) {
         Intrinsics.checkNotNullParameter(memberAnnotations, "memberAnnotations");
         Intrinsics.checkNotNullParameter(propertyConstants, "propertyConstants");
         Intrinsics.checkNotNullParameter(annotationParametersDefaultValues, "annotationParametersDefaultValues");
-        this.f33159a = memberAnnotations;
-        this.f33160b = propertyConstants;
-        this.f33161c = annotationParametersDefaultValues;
+        this.f33160a = memberAnnotations;
+        this.f33161b = propertyConstants;
+        this.f33162c = annotationParametersDefaultValues;
     }
 
     @NotNull
     public final Map<MemberSignature, C> getAnnotationParametersDefaultValues() {
-        return this.f33161c;
+        return this.f33162c;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.kotlin.AbstractBinaryClassAnnotationLoader.AnnotationsContainer
     @NotNull
     public Map<MemberSignature, List<A>> getMemberAnnotations() {
-        return this.f33159a;
+        return this.f33160a;
     }
 
     @NotNull
     public final Map<MemberSignature, C> getPropertyConstants() {
-        return this.f33160b;
+        return this.f33161b;
     }
 }

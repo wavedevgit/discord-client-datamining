@@ -68,7 +68,7 @@ public final class g extends dk.e implements yj.a {
 
     @Override // ff.f
     public final com.google.android.gms.common.d[] a() {
-        return this.f7219s ? wj.l.f52797a : new com.google.android.gms.common.d[]{wj.l.f52798b};
+        return this.f7219s ? wj.l.f52798a : new com.google.android.gms.common.d[]{wj.l.f52799b};
     }
 
     @Override // dk.e, java.io.Closeable, java.lang.AutoCloseable, yj.a

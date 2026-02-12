@@ -5,7 +5,7 @@ import bj.c;
 final class ia implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ia f46721a = new ia();
+    static final ia f46722a = new ia();
 
     static {
         c.b a10 = bj.c.a("detectorOptions");

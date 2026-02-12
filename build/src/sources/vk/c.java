@@ -8,7 +8,7 @@ import qk.e;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final qk.c f51630a = new qk.c(qk.a.f45441o);
+    private final qk.c f51631a = new qk.c(qk.a.f45442o);
 
     private int a(byte[] bArr, int i10, int i11, int i12, int i13) {
         int i14;
@@ -25,7 +25,7 @@ public final class c {
             }
         }
         try {
-            int a10 = this.f51630a.a(iArr, i12 / i14);
+            int a10 = this.f51631a.a(iArr, i12 / i14);
             for (int i17 = 0; i17 < i11; i17++) {
                 if (i13 == 0 || i17 % 2 == i13 - 1) {
                     bArr[i17 + i10] = (byte) iArr[i17 / i14];

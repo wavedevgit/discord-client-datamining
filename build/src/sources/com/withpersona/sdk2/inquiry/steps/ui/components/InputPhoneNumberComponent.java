@@ -33,40 +33,40 @@ import qq.k;
 public final class InputPhoneNumberComponent implements k5, w4, v, e0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f20677d;
+    private final String f20678d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f20678e;
+    private final String f20679e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f20679i;
+    private final JsonLogicBoolean f20680i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final JsonLogicBoolean f20680o;
+    private final JsonLogicBoolean f20681o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final TextBasedComponentStyle f20681p;
+    private final TextBasedComponentStyle f20682p;
 
     /* renamed from: q  reason: collision with root package name */
-    private String f20682q;
+    private String f20683q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final List f20683r;
+    private final List f20684r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final c2 f20684s;
+    private final c2 f20685s;
 
     /* renamed from: t  reason: collision with root package name */
-    private k f20685t;
+    private k f20686t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final List f20686u;
+    private final List f20687u;
 
     /* renamed from: v  reason: collision with root package name */
-    private t f20687v;
+    private t f20688v;
 
     /* renamed from: w  reason: collision with root package name */
-    public static final b f20676w = new b(null);
+    public static final b f20677w = new b(null);
     @NotNull
     public static final Parcelable.Creator<InputPhoneNumberComponent> CREATOR = new c();
 
@@ -87,7 +87,7 @@ public final class InputPhoneNumberComponent implements k5, w4, v, e0 {
 
         @Override // pq.c2
         public List f() {
-            return CollectionsKt.e(qq.d.f45610a.g(InputPhoneNumberComponent.this.k()));
+            return CollectionsKt.e(qq.d.f45611a.g(InputPhoneNumberComponent.this.k()));
         }
 
         @Override // pq.c2
@@ -119,14 +119,14 @@ public final class InputPhoneNumberComponent implements k5, w4, v, e0 {
             String str3 = (attributes == null || (prefill = attributes.getPrefill()) == null || (str3 = StringsKt.k1(prefill).toString()) == null) ? "" : "";
             TextBasedComponentStyle textBasedComponentStyle = null;
             if (StringsKt.P(str3, "+", false, 2, null)) {
-                j k10 = qq.d.f45610a.k(str3);
+                j k10 = qq.d.f45611a.k(str3);
                 String b10 = k10.b();
                 str2 = k10.a();
                 str = b10;
             } else {
                 InputPhoneNumber.Attributes attributes2 = config.getAttributes();
                 if (attributes2 == null || (a10 = attributes2.getCountryCode()) == null) {
-                    a10 = qq.d.f45610a.j().a();
+                    a10 = qq.d.f45611a.j().a();
                 }
                 str = str3;
                 str2 = a10;
@@ -174,38 +174,38 @@ public final class InputPhoneNumberComponent implements k5, w4, v, e0 {
     public InputPhoneNumberComponent(String name, String value, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, TextBasedComponentStyle textBasedComponentStyle, String str) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f20677d = name;
-        this.f20678e = value;
-        this.f20679i = jsonLogicBoolean;
-        this.f20680o = jsonLogicBoolean2;
-        this.f20681p = textBasedComponentStyle;
-        this.f20682q = str;
-        this.f20683r = new ArrayList();
-        qq.d dVar = qq.d.f45610a;
-        this.f20686u = dVar.f();
-        this.f20684s = new a();
-        this.f20685t = new k(dVar.g(this.f20682q));
-        this.f20687v = w.a(value);
+        this.f20678d = name;
+        this.f20679e = value;
+        this.f20680i = jsonLogicBoolean;
+        this.f20681o = jsonLogicBoolean2;
+        this.f20682p = textBasedComponentStyle;
+        this.f20683q = str;
+        this.f20684r = new ArrayList();
+        qq.d dVar = qq.d.f45611a;
+        this.f20687u = dVar.f();
+        this.f20685s = new a();
+        this.f20686t = new k(dVar.g(this.f20683q));
+        this.f20688v = w.a(value);
     }
 
     public static /* synthetic */ InputPhoneNumberComponent e(InputPhoneNumberComponent inputPhoneNumberComponent, String str, String str2, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, TextBasedComponentStyle textBasedComponentStyle, String str3, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = inputPhoneNumberComponent.f20677d;
+            str = inputPhoneNumberComponent.f20678d;
         }
         if ((i10 & 2) != 0) {
-            str2 = inputPhoneNumberComponent.f20678e;
+            str2 = inputPhoneNumberComponent.f20679e;
         }
         if ((i10 & 4) != 0) {
-            jsonLogicBoolean = inputPhoneNumberComponent.f20679i;
+            jsonLogicBoolean = inputPhoneNumberComponent.f20680i;
         }
         if ((i10 & 8) != 0) {
-            jsonLogicBoolean2 = inputPhoneNumberComponent.f20680o;
+            jsonLogicBoolean2 = inputPhoneNumberComponent.f20681o;
         }
         if ((i10 & 16) != 0) {
-            textBasedComponentStyle = inputPhoneNumberComponent.f20681p;
+            textBasedComponentStyle = inputPhoneNumberComponent.f20682p;
         }
         if ((i10 & 32) != 0) {
-            str3 = inputPhoneNumberComponent.f20682q;
+            str3 = inputPhoneNumberComponent.f20683q;
         }
         TextBasedComponentStyle textBasedComponentStyle2 = textBasedComponentStyle;
         String str4 = str3;
@@ -218,7 +218,7 @@ public final class InputPhoneNumberComponent implements k5, w4, v, e0 {
 
     @Override // pq.w4
     public t b() {
-        return this.f20687v;
+        return this.f20688v;
     }
 
     public final InputPhoneNumberComponent c(String name, String value, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, TextBasedComponentStyle textBasedComponentStyle, String str) {
@@ -229,7 +229,7 @@ public final class InputPhoneNumberComponent implements k5, w4, v, e0 {
 
     @Override // pq.e0
     public List d() {
-        return this.f20683r;
+        return this.f20684r;
     }
 
     @Override // android.os.Parcelable
@@ -243,61 +243,61 @@ public final class InputPhoneNumberComponent implements k5, w4, v, e0 {
         }
         if (obj instanceof InputPhoneNumberComponent) {
             InputPhoneNumberComponent inputPhoneNumberComponent = (InputPhoneNumberComponent) obj;
-            return Intrinsics.areEqual(this.f20677d, inputPhoneNumberComponent.f20677d) && Intrinsics.areEqual(this.f20678e, inputPhoneNumberComponent.f20678e) && Intrinsics.areEqual(this.f20679i, inputPhoneNumberComponent.f20679i) && Intrinsics.areEqual(this.f20680o, inputPhoneNumberComponent.f20680o) && Intrinsics.areEqual(this.f20681p, inputPhoneNumberComponent.f20681p) && Intrinsics.areEqual(this.f20682q, inputPhoneNumberComponent.f20682q);
+            return Intrinsics.areEqual(this.f20678d, inputPhoneNumberComponent.f20678d) && Intrinsics.areEqual(this.f20679e, inputPhoneNumberComponent.f20679e) && Intrinsics.areEqual(this.f20680i, inputPhoneNumberComponent.f20680i) && Intrinsics.areEqual(this.f20681o, inputPhoneNumberComponent.f20681o) && Intrinsics.areEqual(this.f20682p, inputPhoneNumberComponent.f20682p) && Intrinsics.areEqual(this.f20683q, inputPhoneNumberComponent.f20683q);
         }
         return false;
     }
 
     public final List f() {
-        return this.f20686u;
+        return this.f20687u;
     }
 
     public final k g() {
-        return this.f20685t;
+        return this.f20686t;
     }
 
     @Override // pq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f20680o;
+        return this.f20681o;
     }
 
     @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f20679i;
+        return this.f20680i;
     }
 
     @Override // pq.k5
     public String getName() {
-        return this.f20677d;
+        return this.f20678d;
     }
 
     public int hashCode() {
-        int hashCode = ((this.f20677d.hashCode() * 31) + this.f20678e.hashCode()) * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f20679i;
+        int hashCode = ((this.f20678d.hashCode() * 31) + this.f20679e.hashCode()) * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f20680i;
         int hashCode2 = (hashCode + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20680o;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20681o;
         int hashCode3 = (hashCode2 + (jsonLogicBoolean2 == null ? 0 : jsonLogicBoolean2.hashCode())) * 31;
-        TextBasedComponentStyle textBasedComponentStyle = this.f20681p;
+        TextBasedComponentStyle textBasedComponentStyle = this.f20682p;
         int hashCode4 = (hashCode3 + (textBasedComponentStyle == null ? 0 : textBasedComponentStyle.hashCode())) * 31;
-        String str = this.f20682q;
+        String str = this.f20683q;
         return hashCode4 + (str != null ? str.hashCode() : 0);
     }
 
     public final c2 i() {
-        return this.f20684s;
+        return this.f20685s;
     }
 
     public final TextBasedComponentStyle j() {
-        return this.f20681p;
+        return this.f20682p;
     }
 
     public final String k() {
-        return this.f20682q;
+        return this.f20683q;
     }
 
     public void l(t tVar) {
         Intrinsics.checkNotNullParameter(tVar, "<set-?>");
-        this.f20687v = tVar;
+        this.f20688v = tVar;
     }
 
     @Override // pq.w4
@@ -306,41 +306,41 @@ public final class InputPhoneNumberComponent implements k5, w4, v, e0 {
         Intrinsics.checkNotNullParameter(newString, "newString");
         InputPhoneNumberComponent e10 = e(this, null, newString, null, null, null, null, 61, null);
         e10.l(b());
-        e10.f20685t = this.f20685t;
+        e10.f20686t = this.f20686t;
         return e10;
     }
 
     public final InputPhoneNumberComponent p(b4 b4Var) {
         String str;
         if (b4Var != null) {
-            str = qq.d.f45610a.e(b4Var);
+            str = qq.d.f45611a.e(b4Var);
         } else {
             str = null;
         }
         InputPhoneNumberComponent e10 = e(this, null, null, null, null, null, str, 31, null);
         e10.l(b());
-        e10.f20685t = this.f20685t;
+        e10.f20686t = this.f20686t;
         return e10;
     }
 
     public String toString() {
-        String str = this.f20677d;
-        String str2 = this.f20678e;
-        JsonLogicBoolean jsonLogicBoolean = this.f20679i;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20680o;
-        TextBasedComponentStyle textBasedComponentStyle = this.f20681p;
-        String str3 = this.f20682q;
+        String str = this.f20678d;
+        String str2 = this.f20679e;
+        JsonLogicBoolean jsonLogicBoolean = this.f20680i;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20681o;
+        TextBasedComponentStyle textBasedComponentStyle = this.f20682p;
+        String str3 = this.f20683q;
         return "InputPhoneNumberComponent(name=" + str + ", value=" + str2 + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ", errorTextStyle=" + textBasedComponentStyle + ", selectedCountryCode=" + str3 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f20677d);
-        dest.writeString(this.f20678e);
-        dest.writeParcelable(this.f20679i, i10);
-        dest.writeParcelable(this.f20680o, i10);
-        dest.writeParcelable(this.f20681p, i10);
-        dest.writeString(this.f20682q);
+        dest.writeString(this.f20678d);
+        dest.writeString(this.f20679e);
+        dest.writeParcelable(this.f20680i, i10);
+        dest.writeParcelable(this.f20681o, i10);
+        dest.writeParcelable(this.f20682p, i10);
+        dest.writeString(this.f20683q);
     }
 }

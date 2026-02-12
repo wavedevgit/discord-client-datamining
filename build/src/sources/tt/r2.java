@@ -10,7 +10,7 @@ import kotlinx.serialization.encoding.Encoder;
 public abstract class r2 implements Encoder, CompositeEncoder {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ArrayList f50062a = new ArrayList();
+    private final ArrayList f50063a = new ArrayList();
 
     private final boolean G(SerialDescriptor serialDescriptor, int i10) {
         b0(Z(serialDescriptor, i10));
@@ -108,19 +108,19 @@ public abstract class r2 implements Encoder, CompositeEncoder {
     }
 
     protected final Object X() {
-        return CollectionsKt.z0(this.f50062a);
+        return CollectionsKt.z0(this.f50063a);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final Object Y() {
-        return CollectionsKt.B0(this.f50062a);
+        return CollectionsKt.B0(this.f50063a);
     }
 
     protected abstract Object Z(SerialDescriptor serialDescriptor, int i10);
 
     protected final Object a0() {
-        if (!this.f50062a.isEmpty()) {
-            ArrayList arrayList = this.f50062a;
+        if (!this.f50063a.isEmpty()) {
+            ArrayList arrayList = this.f50063a;
             return arrayList.remove(CollectionsKt.n(arrayList));
         }
         throw new qt.n("No tag in stack for requested element");
@@ -133,13 +133,13 @@ public abstract class r2 implements Encoder, CompositeEncoder {
     }
 
     protected final void b0(Object obj) {
-        this.f50062a.add(obj);
+        this.f50063a.add(obj);
     }
 
     @Override // kotlinx.serialization.encoding.CompositeEncoder
     public final void c(SerialDescriptor descriptor) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        if (!this.f50062a.isEmpty()) {
+        if (!this.f50063a.isEmpty()) {
             a0();
         }
         W(descriptor);

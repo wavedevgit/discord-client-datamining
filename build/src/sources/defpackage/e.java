@@ -21,16 +21,16 @@ public interface e {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private Function1 f22166a;
+        private Function1 f22167a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Map f22167b = o0.n(v.a("var", c.f26042a), v.a("missing_some", b.f26041a), v.a("missing", gv.a.f26040a), v.a(">", nv.a.f38378a), v.a(">=", nv.b.f38380a), v.a("<", nv.c.f38382a), v.a("<=", d.f38384a), v.a("min", mv.e.f36670a), v.a("max", mv.d.f36668a), v.a("+", mv.a.f36665a), v.a("-", h.f36675a), v.a("*", g.f36673a), v.a("/", mv.b.f36667a), v.a("%", f.f36672a), v.a("==", jv.a.f31373a), v.a("!=", jv.d.f31377a), v.a("===", kv.b.f35351a), v.a("!==", kv.a.f35349a), v.a("!", iv.d.f30442a), v.a("!!", iv.b.f30440a), v.a("and", iv.a.f30439a), v.a("or", iv.e.f30443a), v.a("if", iv.c.f30441a), v.a("cat", pv.a.f43226a), v.a("substr", pv.c.f43227a), v.a("merge", ev.e.f23273a), v.a("in", dv.d.f22164a));
+        private final Map f22168b = o0.n(v.a("var", c.f26043a), v.a("missing_some", b.f26042a), v.a("missing", gv.a.f26041a), v.a(">", nv.a.f38379a), v.a(">=", nv.b.f38381a), v.a("<", nv.c.f38383a), v.a("<=", d.f38385a), v.a("min", mv.e.f36671a), v.a("max", mv.d.f36669a), v.a("+", mv.a.f36666a), v.a("-", h.f36676a), v.a("*", g.f36674a), v.a("/", mv.b.f36668a), v.a("%", f.f36673a), v.a("==", jv.a.f31374a), v.a("!=", jv.d.f31378a), v.a("===", kv.b.f35352a), v.a("!==", kv.a.f35350a), v.a("!", iv.d.f30443a), v.a("!!", iv.b.f30441a), v.a("and", iv.a.f30440a), v.a("or", iv.e.f30444a), v.a("if", iv.c.f30442a), v.a("cat", pv.a.f43227a), v.a("substr", pv.c.f43228a), v.a("merge", ev.e.f23274a), v.a("in", dv.d.f22165a));
 
         /* renamed from: c  reason: collision with root package name */
-        private final Map f22168c = o0.n(v.a("map", ev.d.f23272a), v.a(ViewProps.FILTER, ev.c.f23271a), v.a("reduce", ev.g.f23274a), v.a("all", fv.a.f24390a), v.a(ViewProps.NONE, fv.b.f24391a), v.a("some", fv.e.f24396a));
+        private final Map f22169c = o0.n(v.a("map", ev.d.f23273a), v.a(ViewProps.FILTER, ev.c.f23272a), v.a("reduce", ev.g.f23275a), v.a("all", fv.a.f24391a), v.a(ViewProps.NONE, fv.b.f24392a), v.a("some", fv.e.f24397a));
 
         private final boolean f(String str) {
-            if (!this.f22168c.containsKey(str) && !this.f22167b.containsKey(str)) {
+            if (!this.f22169c.containsKey(str) && !this.f22168b.containsKey(str)) {
                 return true;
             }
             return false;
@@ -40,7 +40,7 @@ public interface e {
             Intrinsics.checkNotNullParameter(operationName, "operationName");
             Intrinsics.checkNotNullParameter(operation, "operation");
             if (f(operationName)) {
-                this.f22168c.put(operationName, operation);
+                this.f22169c.put(operationName, operation);
             }
             return this;
         }
@@ -57,7 +57,7 @@ public interface e {
             Intrinsics.checkNotNullParameter(operationName, "operationName");
             Intrinsics.checkNotNullParameter(operation, "operation");
             if (f(operationName)) {
-                this.f22167b.put(operationName, operation);
+                this.f22168b.put(operationName, operation);
             }
             return this;
         }
@@ -71,8 +71,8 @@ public interface e {
         }
 
         public final e e() {
-            cv.b bVar = (cv.b) this.f22167b.put("log", new dv.e(this.f22166a));
-            return new defpackage.a(new nr.a(new nr.b(this.f22167b, this.f22168c)));
+            cv.b bVar = (cv.b) this.f22168b.put("log", new dv.e(this.f22167a));
+            return new defpackage.a(new nr.a(new nr.b(this.f22168b, this.f22169c)));
         }
     }
 

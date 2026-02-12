@@ -6,40 +6,40 @@ import java.util.List;
 public class f implements d {
 
     /* renamed from: d  reason: collision with root package name */
-    p f35436d;
+    p f35437d;
 
     /* renamed from: f  reason: collision with root package name */
-    int f35438f;
+    int f35439f;
 
     /* renamed from: g  reason: collision with root package name */
-    public int f35439g;
+    public int f35440g;
 
     /* renamed from: a  reason: collision with root package name */
-    public d f35433a = null;
+    public d f35434a = null;
 
     /* renamed from: b  reason: collision with root package name */
-    public boolean f35434b = false;
+    public boolean f35435b = false;
 
     /* renamed from: c  reason: collision with root package name */
-    public boolean f35435c = false;
+    public boolean f35436c = false;
 
     /* renamed from: e  reason: collision with root package name */
-    a f35437e = a.UNKNOWN;
+    a f35438e = a.UNKNOWN;
 
     /* renamed from: h  reason: collision with root package name */
-    int f35440h = 1;
+    int f35441h = 1;
 
     /* renamed from: i  reason: collision with root package name */
-    g f35441i = null;
+    g f35442i = null;
 
     /* renamed from: j  reason: collision with root package name */
-    public boolean f35442j = false;
+    public boolean f35443j = false;
 
     /* renamed from: k  reason: collision with root package name */
-    List f35443k = new ArrayList();
+    List f35444k = new ArrayList();
 
     /* renamed from: l  reason: collision with root package name */
-    List f35444l = new ArrayList();
+    List f35445l = new ArrayList();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     enum a {
@@ -54,71 +54,71 @@ public class f implements d {
     }
 
     public f(p pVar) {
-        this.f35436d = pVar;
+        this.f35437d = pVar;
     }
 
     @Override // l1.d
     public void a(d dVar) {
-        for (f fVar : this.f35444l) {
-            if (!fVar.f35442j) {
+        for (f fVar : this.f35445l) {
+            if (!fVar.f35443j) {
                 return;
             }
         }
-        this.f35435c = true;
-        d dVar2 = this.f35433a;
+        this.f35436c = true;
+        d dVar2 = this.f35434a;
         if (dVar2 != null) {
             dVar2.a(this);
         }
-        if (this.f35434b) {
-            this.f35436d.a(this);
+        if (this.f35435b) {
+            this.f35437d.a(this);
             return;
         }
         f fVar2 = null;
         int i10 = 0;
-        for (f fVar3 : this.f35444l) {
+        for (f fVar3 : this.f35445l) {
             if (!(fVar3 instanceof g)) {
                 i10++;
                 fVar2 = fVar3;
             }
         }
-        if (fVar2 != null && i10 == 1 && fVar2.f35442j) {
-            g gVar = this.f35441i;
+        if (fVar2 != null && i10 == 1 && fVar2.f35443j) {
+            g gVar = this.f35442i;
             if (gVar != null) {
-                if (gVar.f35442j) {
-                    this.f35438f = this.f35440h * gVar.f35439g;
+                if (gVar.f35443j) {
+                    this.f35439f = this.f35441h * gVar.f35440g;
                 } else {
                     return;
                 }
             }
-            d(fVar2.f35439g + this.f35438f);
+            d(fVar2.f35440g + this.f35439f);
         }
-        d dVar3 = this.f35433a;
+        d dVar3 = this.f35434a;
         if (dVar3 != null) {
             dVar3.a(this);
         }
     }
 
     public void b(d dVar) {
-        this.f35443k.add(dVar);
-        if (this.f35442j) {
+        this.f35444k.add(dVar);
+        if (this.f35443j) {
             dVar.a(dVar);
         }
     }
 
     public void c() {
-        this.f35444l.clear();
-        this.f35443k.clear();
-        this.f35442j = false;
-        this.f35439g = 0;
-        this.f35435c = false;
-        this.f35434b = false;
+        this.f35445l.clear();
+        this.f35444k.clear();
+        this.f35443j = false;
+        this.f35440g = 0;
+        this.f35436c = false;
+        this.f35435b = false;
     }
 
     public void d(int i10) {
-        if (!this.f35442j) {
-            this.f35442j = true;
-            this.f35439g = i10;
-            for (d dVar : this.f35443k) {
+        if (!this.f35443j) {
+            this.f35443j = true;
+            this.f35440g = i10;
+            for (d dVar : this.f35444k) {
                 dVar.a(dVar);
             }
         }
@@ -127,20 +127,20 @@ public class f implements d {
     public String toString() {
         Object obj;
         StringBuilder sb2 = new StringBuilder();
-        sb2.append(this.f35436d.f35486b.t());
+        sb2.append(this.f35437d.f35487b.t());
         sb2.append(":");
-        sb2.append(this.f35437e);
+        sb2.append(this.f35438e);
         sb2.append("(");
-        if (this.f35442j) {
-            obj = Integer.valueOf(this.f35439g);
+        if (this.f35443j) {
+            obj = Integer.valueOf(this.f35440g);
         } else {
             obj = "unresolved";
         }
         sb2.append(obj);
         sb2.append(") <t=");
-        sb2.append(this.f35444l.size());
+        sb2.append(this.f35445l.size());
         sb2.append(":d=");
-        sb2.append(this.f35443k.size());
+        sb2.append(this.f35444k.size());
         sb2.append(">");
         return sb2.toString();
     }

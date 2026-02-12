@@ -15,17 +15,17 @@ public abstract /* synthetic */ class b0 {
     public static final class a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ String f22959d;
+        final /* synthetic */ String f22960d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(String str) {
             super(0);
-            this.f22959d = str;
+            this.f22960d = str;
         }
 
         @Override // kotlin.jvm.functions.Function0
         public final String invoke() {
-            return this.f22959d;
+            return this.f22960d;
         }
     }
 
@@ -33,24 +33,24 @@ public abstract /* synthetic */ class b0 {
     public static final class b extends r {
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ Function1 f22960c;
+        final /* synthetic */ Function1 f22961c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Function0 f22961d;
+        final /* synthetic */ Function0 f22962d;
 
         b(Function1 function1, Function0 function0) {
-            this.f22960c = function1;
-            this.f22961d = function0;
+            this.f22961c = function1;
+            this.f22962d = function0;
         }
 
         @Override // en.r
         public void a(r.c cVar) {
             Intrinsics.checkNotNullParameter(cVar, "<this>");
-            this.f22960c.invoke(cVar);
+            this.f22961c.invoke(cVar);
         }
 
         public String toString() {
-            return "WorkflowAction(" + ((String) this.f22961d.invoke()) + ")@" + hashCode();
+            return "WorkflowAction(" + ((String) this.f22962d.invoke()) + ")@" + hashCode();
         }
     }
 

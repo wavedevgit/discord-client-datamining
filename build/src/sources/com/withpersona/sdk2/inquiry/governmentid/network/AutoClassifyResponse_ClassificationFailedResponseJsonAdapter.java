@@ -17,19 +17,19 @@ import org.jetbrains.annotations.NotNull;
 public final class AutoClassifyResponse_ClassificationFailedResponseJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19633a;
+    private final m.b f19634a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19634b;
+    private final h f19635b;
 
     public AutoClassifyResponse_ClassificationFailedResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("idClassesByCountries");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19633a = a10;
+        this.f19634a = a10;
         h f10 = moshi.f(a0.j(List.class, AutoClassifyResponse.IdClassesForCountry.class), x0.d(), "idClassesByCountries");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19634b = f10;
+        this.f19635b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -39,9 +39,9 @@ public final class AutoClassifyResponse_ClassificationFailedResponseJsonAdapter 
         reader.u();
         List list = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19633a);
+            int J = reader.J(this.f19634a);
             if (J != -1) {
-                if (J == 0 && (list = (List) this.f19634b.fromJson(reader)) == null) {
+                if (J == 0 && (list = (List) this.f19635b.fromJson(reader)) == null) {
                     throw c.x("idClassesByCountries", "idClassesByCountries", reader);
                 }
             } else {
@@ -63,7 +63,7 @@ public final class AutoClassifyResponse_ClassificationFailedResponseJsonAdapter 
         if (classificationFailedResponse != null) {
             writer.i();
             writer.J("idClassesByCountries");
-            this.f19634b.toJson(writer, classificationFailedResponse.a());
+            this.f19635b.toJson(writer, classificationFailedResponse.a());
             writer.s();
             return;
         }

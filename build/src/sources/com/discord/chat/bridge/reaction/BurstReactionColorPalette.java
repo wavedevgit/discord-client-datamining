@@ -67,7 +67,7 @@ public final class BurstReactionColorPalette implements ReactionView.BurstColorP
     }
 
     public static final /* synthetic */ void write$Self$chat_release(BurstReactionColorPalette burstReactionColorPalette, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        n2 n2Var = n2.f50032a;
+        n2 n2Var = n2.f50033a;
         compositeEncoder.o(serialDescriptor, 0, n2Var, burstReactionColorPalette.getBackgroundColor());
         compositeEncoder.o(serialDescriptor, 1, n2Var, burstReactionColorPalette.getAccentColor());
         compositeEncoder.o(serialDescriptor, 2, n2Var, burstReactionColorPalette.getHighlightColor());

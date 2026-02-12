@@ -60,17 +60,17 @@ public class ReactFragment extends Fragment implements PermissionAwareActivity {
         }
 
         /* renamed from: setComponentName  reason: collision with other method in class */
-        public final void m1156setComponentName(String str) {
+        public final void m1155setComponentName(String str) {
             this.componentName = str;
         }
 
         /* renamed from: setFabricEnabled  reason: collision with other method in class */
-        public final void m1157setFabricEnabled(boolean z10) {
+        public final void m1156setFabricEnabled(boolean z10) {
             this.fabricEnabled = z10;
         }
 
         /* renamed from: setLaunchOptions  reason: collision with other method in class */
-        public final void m1158setLaunchOptions(Bundle bundle) {
+        public final void m1157setLaunchOptions(Bundle bundle) {
             this.launchOptions = bundle;
         }
 

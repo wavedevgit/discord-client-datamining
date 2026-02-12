@@ -3,18 +3,18 @@ package xi;
 public final class d0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Class f54813a;
+    private final Class f54814a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Class f54814b;
+    private final Class f54815b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private @interface a {
     }
 
     public d0(Class cls, Class cls2) {
-        this.f54813a = cls;
-        this.f54814b = cls2;
+        this.f54814a = cls;
+        this.f54815b = cls2;
     }
 
     public static d0 a(Class cls, Class cls2) {
@@ -33,20 +33,20 @@ public final class d0 {
             return false;
         }
         d0 d0Var = (d0) obj;
-        if (!this.f54814b.equals(d0Var.f54814b)) {
+        if (!this.f54815b.equals(d0Var.f54815b)) {
             return false;
         }
-        return this.f54813a.equals(d0Var.f54813a);
+        return this.f54814a.equals(d0Var.f54814a);
     }
 
     public int hashCode() {
-        return (this.f54814b.hashCode() * 31) + this.f54813a.hashCode();
+        return (this.f54815b.hashCode() * 31) + this.f54814a.hashCode();
     }
 
     public String toString() {
-        if (this.f54813a == a.class) {
-            return this.f54814b.getName();
+        if (this.f54814a == a.class) {
+            return this.f54815b.getName();
         }
-        return "@" + this.f54813a.getName() + " " + this.f54814b.getName();
+        return "@" + this.f54814a.getName() + " " + this.f54815b.getName();
     }
 }

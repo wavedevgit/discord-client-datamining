@@ -51,7 +51,7 @@ public class c {
             }
         }
         for (u uVar2 : arrayList) {
-            String str = uVar2.f41446a;
+            String str = uVar2.f41447a;
             Intent c10 = b.c(this.f5699a, x.a(uVar2));
             m e10 = m.e();
             String str2 = f5698f;

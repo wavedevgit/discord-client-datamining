@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/applications/getApplicationInstallURL.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun62761: for (var _fun62761_ip = 0;;) switch (_fun62761_ip) {
+        _fun68865: for (var _fun68865_ip = 0;;) switch (_fun68865_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.applicationId;
@@ -59,8 +59,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var1.searchParams;
                 var0 = null;
                 if (!(var0 != var7)) {
-                    _fun62761_ip = 154;
-                    continue _fun62761
+                    _fun68865_ip = 154;
+                    continue _fun68865
                 }
             case 139:
                 var5 = var3.set;
@@ -68,8 +68,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5.bind(var3)(var2, var7);
             case 154:
                 if (!(var0 != var6)) {
-                    _fun62761_ip = 173;
-                    continue _fun62761
+                    _fun68865_ip = 173;
+                    continue _fun68865
                 }
             case 158:
                 var5 = var3.set;
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5.bind(var3)(var2, var6);
             case 173:
                 if (!(var0 != var4)) {
-                    _fun62761_ip = 192;
-                    continue _fun62761
+                    _fun68865_ip = 192;
+                    continue _fun68865
                 }
             case 177:
                 var2 = var3.set;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getActivityLaunchURL = var3;
     var1 = function arg0() {
-        _fun62762: for (var _fun62762_ip = 0;;) switch (_fun62762_ip) {
+        _fun68866: for (var _fun68866_ip = 0;;) switch (_fun68866_ip) {
             case 0:
                 var1 = arg0;
                 var7 = var1.id;
@@ -101,8 +101,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var1.integrationTypesConfig;
                 var2 = null;
                 if (!(var2 == var0)) {
-                    _fun62762_ip = 269;
-                    continue _fun62762
+                    _fun68866_ip = 271;
+                    continue _fun68866
                 }
             case 35:
                 var1 = global;
@@ -121,8 +121,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6.bind(var3)(var5, var7);
                 var5 = var2 != var8;
                 if (!var5) {
-                    _fun62762_ip = 119;
-                    continue _fun62762
+                    _fun68866_ip = 121;
+                    continue _fun68866
                 }
             case 85:
                 var7 = var1.Object;
@@ -130,30 +130,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var6.bind(var7)(var8);
                 var7 = var8.some;
                 var6 = function(arg0) { // Environment: var6
-                    _fun62763: for (var _fun62763_ip = 0;;) switch (_fun62763_ip) {
+                    _fun68867: for (var _fun68867_ip = 0;;) switch (_fun68867_ip) {
                         case 0:
                             var3 = arg0;
                             var2 = null;
                             var4 = var2 == var3;
                             var0 = undefined;
                             if (var4) {
-                                _fun62763_ip = 20;
-                                continue _fun62763
+                                _fun68867_ip = 20;
+                                continue _fun68867
                             }
                         case 14:
                             var0 = var3.oauth2_install_params;
                         case 20:
                             var0 = var2 != var0;
                             if (var0) {
-                                _fun62763_ip = 46;
-                                continue _fun62763
+                                _fun68867_ip = 46;
+                                continue _fun68867
                             }
                         case 27:
                             var4 = var2 == var3;
                             var1 = undefined;
                             if (var4) {
-                                _fun62763_ip = 42;
-                                continue _fun62763
+                                _fun68867_ip = 42;
+                                continue _fun68867
                             }
                         case 36:
                             var1 = var3.oauth2InstallParams;
@@ -164,40 +164,40 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     }
                 };
                 var5 = var7.bind(var8)(var6);
-            case 119:
+            case 121:
                 if (!(var2 != var4)) {
-                    _fun62762_ip = 192;
-                    continue _fun62762
+                    _fun68866_ip = 194;
+                    continue _fun68866
                 }
-            case 123:
+            case 125:
                 if (var5) {
-                    _fun62762_ip = 192;
-                    continue _fun62762
+                    _fun68866_ip = 194;
+                    continue _fun68866
                 }
-            case 126:
+            case 128:
                 var7 = var4.permissions;
                 var6 = var4.scopes;
                 if (!(var2 != var7)) {
-                    _fun62762_ip = 157;
-                    continue _fun62762
+                    _fun68866_ip = 159;
+                    continue _fun68866
                 }
-            case 142:
+            case 144:
                 var5 = var3.set;
                 var4 = 'permissions';
                 var4 = var5.bind(var3)(var4, var7);
-            case 157:
+            case 159:
                 if (!(var2 != var6)) {
-                    _fun62762_ip = 192;
-                    continue _fun62762
+                    _fun68866_ip = 194;
+                    continue _fun68866
                 }
-            case 161:
+            case 163:
                 var5 = var3.set;
                 var4 = var6.join;
                 var2 = ' ';
                 var4 = var4.bind(var6)(var2);
                 var2 = 'scope';
                 var2 = var5.bind(var3)(var2, var4);
-            case 192:
+            case 194:
                 var2 = var1.location;
                 var14 = var2.protocol;
                 var2 = var1.location;
@@ -213,7 +213,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = '?';
                 var1 = var15[var4](var14, var13, var12, var11, var10, var9, var8);
                 return var1;
-            case 269:
+            case 271:
                 return var0;
         }
     };

@@ -51,49 +51,49 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     private final Choreographer.FrameCallback P;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ThemedReactContext f19238d;
+    private final ThemedReactContext f19239d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final b f19239e;
+    private final b f19240e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final c f19240i;
+    private final c f19241i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final ContextThemeWrapper f19241o;
+    private final ContextThemeWrapper f19242o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final com.google.android.material.bottomnavigation.c f19242p;
+    private final com.google.android.material.bottomnavigation.c f19243p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final FrameLayout f19243q;
+    private final FrameLayout f19244q;
 
     /* renamed from: r  reason: collision with root package name */
-    public com.swmansion.rnscreens.gamma.tabs.r f19244r;
+    public com.swmansion.rnscreens.gamma.tabs.r f19245r;
 
     /* renamed from: s  reason: collision with root package name */
-    private FragmentManager f19245s;
+    private FragmentManager f19246s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final List f19246t;
+    private final List f19247t;
 
     /* renamed from: u  reason: collision with root package name */
-    private Integer f19247u;
+    private Integer f19248u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f19248v;
+    private boolean f19249v;
 
     /* renamed from: w  reason: collision with root package name */
-    private com.swmansion.rnscreens.safearea.d f19249w;
+    private com.swmansion.rnscreens.safearea.d f19250w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final com.swmansion.rnscreens.gamma.tabs.p f19250x;
+    private final com.swmansion.rnscreens.gamma.tabs.p f19251x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final com.swmansion.rnscreens.gamma.tabs.n f19251y;
+    private final com.swmansion.rnscreens.gamma.tabs.n f19252y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final ReadWriteProperty f19252z;
+    private final ReadWriteProperty f19253z;
     static final /* synthetic */ KProperty[] R = {Reflection.mutableProperty1(new MutablePropertyReference1Impl(l.class, "tabBarBackgroundColor", "getTabBarBackgroundColor()Ljava/lang/Integer;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(l.class, "tabBarItemActiveIndicatorColor", "getTabBarItemActiveIndicatorColor()Ljava/lang/Integer;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(l.class, "isTabBarItemActiveIndicatorEnabled", "isTabBarItemActiveIndicatorEnabled()Z", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(l.class, "tabBarItemIconColor", "getTabBarItemIconColor()Ljava/lang/Integer;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(l.class, "tabBarItemTitleFontFamily", "getTabBarItemTitleFontFamily()Ljava/lang/String;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(l.class, "tabBarItemIconColorActive", "getTabBarItemIconColorActive()Ljava/lang/Integer;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(l.class, "tabBarItemTitleFontColor", "getTabBarItemTitleFontColor()Ljava/lang/Integer;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(l.class, "tabBarItemTitleFontColorActive", "getTabBarItemTitleFontColorActive()Ljava/lang/Integer;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(l.class, "tabBarItemTitleFontSize", "getTabBarItemTitleFontSize()Ljava/lang/Float;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(l.class, "tabBarItemTitleFontSizeActive", "getTabBarItemTitleFontSizeActive()Ljava/lang/Float;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(l.class, "tabBarItemTitleFontWeight", "getTabBarItemTitleFontWeight()Ljava/lang/String;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(l.class, "tabBarItemTitleFontStyle", "getTabBarItemTitleFontStyle()Ljava/lang/String;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(l.class, "tabBarItemRippleColor", "getTabBarItemRippleColor()Ljava/lang/Integer;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(l.class, "tabBarItemLabelVisibilityMode", "getTabBarItemLabelVisibilityMode()Ljava/lang/String;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(l.class, "tabBarHidden", "getTabBarHidden()Z", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(l.class, "nativeContainerBackgroundColor", "getNativeContainerBackgroundColor()Ljava/lang/Integer;", 0))};
     public static final a Q = new a(null);
 
@@ -112,13 +112,13 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     public final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private boolean f19253a;
+        private boolean f19254a;
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f19254b;
+        private boolean f19255b;
 
         /* renamed from: c  reason: collision with root package name */
-        private boolean f19255c;
+        private boolean f19256c;
 
         public b() {
         }
@@ -129,7 +129,7 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
         }
 
         private final void i() {
-            if (this.f19253a) {
+            if (this.f19254a) {
                 h();
             }
         }
@@ -140,15 +140,15 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
         }
 
         public final void c() {
-            this.f19255c = true;
+            this.f19256c = true;
         }
 
         public final void d() {
-            this.f19254b = true;
+            this.f19255b = true;
         }
 
         public final void e() {
-            this.f19253a = true;
+            this.f19254a = true;
             l.this.post(new Runnable() { // from class: com.swmansion.rnscreens.gamma.tabs.m
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -158,22 +158,22 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
         }
 
         public final void g() {
-            if (this.f19253a) {
+            if (this.f19254a) {
                 return;
             }
             e();
         }
 
         public final void h() {
-            this.f19253a = false;
-            if (this.f19254b) {
-                this.f19254b = false;
+            this.f19254a = false;
+            if (this.f19255b) {
+                this.f19255b = false;
                 l.this.N();
             }
-            if (this.f19255c) {
-                this.f19255c = false;
+            if (this.f19256c) {
+                this.f19256c = false;
                 l.this.I();
-                l.this.f19251y.a();
+                l.this.f19252y.a();
             }
         }
     }
@@ -187,12 +187,12 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
         public final boolean a() {
             ScrollView b10;
             ScreenStack a10;
-            FrameLayout frameLayout = l.this.f19243q;
+            FrameLayout frameLayout = l.this.f19244q;
             com.swmansion.rnscreens.gamma.tabs.e currentFocusedTab = l.this.getCurrentFocusedTab();
-            if (currentFocusedTab.x().getShouldUseRepeatedTabSelectionPopToRootSpecialEffect() && (a10 = un.f.f50810a.a(frameLayout)) != null && a10.popToRoot()) {
+            if (currentFocusedTab.x().getShouldUseRepeatedTabSelectionPopToRootSpecialEffect() && (a10 = un.f.f50811a.a(frameLayout)) != null && a10.popToRoot()) {
                 return true;
             }
-            if (!currentFocusedTab.x().getShouldUseRepeatedTabSelectionScrollToTopSpecialEffect() || (b10 = un.f.f50810a.b(frameLayout)) == null || b10.getScrollY() <= 0) {
+            if (!currentFocusedTab.x().getShouldUseRepeatedTabSelectionScrollToTopSpecialEffect() || (b10 = un.f.f50811a.b(frameLayout)) == null || b10.getScrollY() <= 0) {
                 return false;
             }
             b10.smoothScrollTo(b10.getScrollX(), 0);
@@ -204,30 +204,10 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     public static final class d extends kotlin.properties.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ l f19258a;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public d(Object obj, l lVar) {
-            super(obj);
-            this.f19258a = lVar;
-        }
-
-        @Override // kotlin.properties.c
-        protected void afterChange(KProperty property, Object obj, Object obj2) {
-            Intrinsics.checkNotNullParameter(property, "property");
-            l lVar = this.f19258a;
-            lVar.M((Float) obj, (Float) obj2);
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class e extends kotlin.properties.c {
-
-        /* renamed from: a  reason: collision with root package name */
         final /* synthetic */ l f19259a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public e(Object obj, l lVar) {
+        public d(Object obj, l lVar) {
             super(obj);
             this.f19259a = lVar;
         }
@@ -236,18 +216,18 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
         protected void afterChange(KProperty property, Object obj, Object obj2) {
             Intrinsics.checkNotNullParameter(property, "property");
             l lVar = this.f19259a;
-            lVar.M((String) obj, (String) obj2);
+            lVar.M((Float) obj, (Float) obj2);
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class f extends kotlin.properties.c {
+    public static final class e extends kotlin.properties.c {
 
         /* renamed from: a  reason: collision with root package name */
         final /* synthetic */ l f19260a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public f(Object obj, l lVar) {
+        public e(Object obj, l lVar) {
             super(obj);
             this.f19260a = lVar;
         }
@@ -261,13 +241,13 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class g extends kotlin.properties.c {
+    public static final class f extends kotlin.properties.c {
 
         /* renamed from: a  reason: collision with root package name */
         final /* synthetic */ l f19261a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public g(Object obj, l lVar) {
+        public f(Object obj, l lVar) {
             super(obj);
             this.f19261a = lVar;
         }
@@ -276,18 +256,18 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
         protected void afterChange(KProperty property, Object obj, Object obj2) {
             Intrinsics.checkNotNullParameter(property, "property");
             l lVar = this.f19261a;
-            lVar.M((Integer) obj, (Integer) obj2);
+            lVar.M((String) obj, (String) obj2);
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class h extends kotlin.properties.c {
+    public static final class g extends kotlin.properties.c {
 
         /* renamed from: a  reason: collision with root package name */
         final /* synthetic */ l f19262a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public h(Object obj, l lVar) {
+        public g(Object obj, l lVar) {
             super(obj);
             this.f19262a = lVar;
         }
@@ -296,6 +276,26 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
         protected void afterChange(KProperty property, Object obj, Object obj2) {
             Intrinsics.checkNotNullParameter(property, "property");
             l lVar = this.f19262a;
+            lVar.M((Integer) obj, (Integer) obj2);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class h extends kotlin.properties.c {
+
+        /* renamed from: a  reason: collision with root package name */
+        final /* synthetic */ l f19263a;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public h(Object obj, l lVar) {
+            super(obj);
+            this.f19263a = lVar;
+        }
+
+        @Override // kotlin.properties.c
+        protected void afterChange(KProperty property, Object obj, Object obj2) {
+            Intrinsics.checkNotNullParameter(property, "property");
+            l lVar = this.f19263a;
             lVar.M((String) obj, (String) obj2);
         }
     }
@@ -304,12 +304,12 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     public static final class i extends kotlin.properties.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ l f19263a;
+        final /* synthetic */ l f19264a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public i(Object obj, l lVar) {
             super(obj);
-            this.f19263a = lVar;
+            this.f19264a = lVar;
         }
 
         @Override // kotlin.properties.c
@@ -318,8 +318,8 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
             Boolean bool = (Boolean) obj2;
             Boolean bool2 = (Boolean) obj;
             if (bool.booleanValue() != bool2.booleanValue()) {
-                l.L(this.f19263a, null, 1, null);
-                this.f19263a.M(bool2, bool);
+                l.L(this.f19264a, null, 1, null);
+                this.f19264a.M(bool2, bool);
             }
         }
     }
@@ -328,12 +328,12 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     public static final class j extends kotlin.properties.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ l f19264a;
+        final /* synthetic */ l f19265a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public j(Object obj, l lVar) {
             super(obj);
-            this.f19264a = lVar;
+            this.f19265a = lVar;
         }
 
         @Override // kotlin.properties.c
@@ -342,7 +342,7 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
             Intrinsics.checkNotNullParameter(property, "property");
             Integer num = (Integer) obj2;
             if (!Intrinsics.areEqual(num, (Integer) obj)) {
-                l lVar = this.f19264a;
+                l lVar = this.f19265a;
                 if (num != null) {
                     colorDrawable = new ColorDrawable(num.intValue());
                 } else {
@@ -357,31 +357,10 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     public static final class k extends kotlin.properties.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ l f19265a;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public k(Object obj, l lVar) {
-            super(obj);
-            this.f19265a = lVar;
-        }
-
-        @Override // kotlin.properties.c
-        protected void afterChange(KProperty property, Object obj, Object obj2) {
-            Intrinsics.checkNotNullParameter(property, "property");
-            l lVar = this.f19265a;
-            lVar.M((Integer) obj, (Integer) obj2);
-        }
-    }
-
-    /* renamed from: com.swmansion.rnscreens.gamma.tabs.l$l  reason: collision with other inner class name */
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class C0231l extends kotlin.properties.c {
-
-        /* renamed from: a  reason: collision with root package name */
         final /* synthetic */ l f19266a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public C0231l(Object obj, l lVar) {
+        public k(Object obj, l lVar) {
             super(obj);
             this.f19266a = lVar;
         }
@@ -394,16 +373,37 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
         }
     }
 
+    /* renamed from: com.swmansion.rnscreens.gamma.tabs.l$l  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class m extends kotlin.properties.c {
+    public static final class C0231l extends kotlin.properties.c {
 
         /* renamed from: a  reason: collision with root package name */
         final /* synthetic */ l f19267a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public m(Object obj, l lVar) {
+        public C0231l(Object obj, l lVar) {
             super(obj);
             this.f19267a = lVar;
+        }
+
+        @Override // kotlin.properties.c
+        protected void afterChange(KProperty property, Object obj, Object obj2) {
+            Intrinsics.checkNotNullParameter(property, "property");
+            l lVar = this.f19267a;
+            lVar.M((Integer) obj, (Integer) obj2);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class m extends kotlin.properties.c {
+
+        /* renamed from: a  reason: collision with root package name */
+        final /* synthetic */ l f19268a;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public m(Object obj, l lVar) {
+            super(obj);
+            this.f19268a = lVar;
         }
 
         @Override // kotlin.properties.c
@@ -413,7 +413,7 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
             bool.booleanValue();
             Boolean bool2 = (Boolean) obj;
             bool2.booleanValue();
-            this.f19267a.M(bool2, bool);
+            this.f19268a.M(bool2, bool);
         }
     }
 
@@ -421,30 +421,10 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     public static final class n extends kotlin.properties.c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ l f19268a;
-
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public n(Object obj, l lVar) {
-            super(obj);
-            this.f19268a = lVar;
-        }
-
-        @Override // kotlin.properties.c
-        protected void afterChange(KProperty property, Object obj, Object obj2) {
-            Intrinsics.checkNotNullParameter(property, "property");
-            l lVar = this.f19268a;
-            lVar.M((Integer) obj, (Integer) obj2);
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class o extends kotlin.properties.c {
-
-        /* renamed from: a  reason: collision with root package name */
         final /* synthetic */ l f19269a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public o(Object obj, l lVar) {
+        public n(Object obj, l lVar) {
             super(obj);
             this.f19269a = lVar;
         }
@@ -453,18 +433,18 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
         protected void afterChange(KProperty property, Object obj, Object obj2) {
             Intrinsics.checkNotNullParameter(property, "property");
             l lVar = this.f19269a;
-            lVar.M((String) obj, (String) obj2);
+            lVar.M((Integer) obj, (Integer) obj2);
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class p extends kotlin.properties.c {
+    public static final class o extends kotlin.properties.c {
 
         /* renamed from: a  reason: collision with root package name */
         final /* synthetic */ l f19270a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public p(Object obj, l lVar) {
+        public o(Object obj, l lVar) {
             super(obj);
             this.f19270a = lVar;
         }
@@ -473,18 +453,18 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
         protected void afterChange(KProperty property, Object obj, Object obj2) {
             Intrinsics.checkNotNullParameter(property, "property");
             l lVar = this.f19270a;
-            lVar.M((Integer) obj, (Integer) obj2);
+            lVar.M((String) obj, (String) obj2);
         }
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class q extends kotlin.properties.c {
+    public static final class p extends kotlin.properties.c {
 
         /* renamed from: a  reason: collision with root package name */
         final /* synthetic */ l f19271a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public q(Object obj, l lVar) {
+        public p(Object obj, l lVar) {
             super(obj);
             this.f19271a = lVar;
         }
@@ -498,13 +478,13 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class r extends kotlin.properties.c {
+    public static final class q extends kotlin.properties.c {
 
         /* renamed from: a  reason: collision with root package name */
         final /* synthetic */ l f19272a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public r(Object obj, l lVar) {
+        public q(Object obj, l lVar) {
             super(obj);
             this.f19272a = lVar;
         }
@@ -518,13 +498,13 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class s extends kotlin.properties.c {
+    public static final class r extends kotlin.properties.c {
 
         /* renamed from: a  reason: collision with root package name */
         final /* synthetic */ l f19273a;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        public s(Object obj, l lVar) {
+        public r(Object obj, l lVar) {
             super(obj);
             this.f19273a = lVar;
         }
@@ -533,6 +513,26 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
         protected void afterChange(KProperty property, Object obj, Object obj2) {
             Intrinsics.checkNotNullParameter(property, "property");
             l lVar = this.f19273a;
+            lVar.M((Integer) obj, (Integer) obj2);
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class s extends kotlin.properties.c {
+
+        /* renamed from: a  reason: collision with root package name */
+        final /* synthetic */ l f19274a;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public s(Object obj, l lVar) {
+            super(obj);
+            this.f19274a = lVar;
+        }
+
+        @Override // kotlin.properties.c
+        protected void afterChange(KProperty property, Object obj, Object obj2) {
+            Intrinsics.checkNotNullParameter(property, "property");
+            l lVar = this.f19274a;
             lVar.M((Float) obj, (Float) obj2);
         }
     }
@@ -541,24 +541,24 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     public l(ThemedReactContext reactContext) {
         super(reactContext);
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
-        this.f19238d = reactContext;
-        this.f19239e = new b();
-        this.f19240i = new c();
+        this.f19239d = reactContext;
+        this.f19240e = new b();
+        this.f19241i = new c();
         ContextThemeWrapper contextThemeWrapper = new ContextThemeWrapper(reactContext, bh.k.f6932g);
-        this.f19241o = contextThemeWrapper;
+        this.f19242o = contextThemeWrapper;
         com.google.android.material.bottomnavigation.c cVar = new com.google.android.material.bottomnavigation.c(contextThemeWrapper);
         cVar.setLayoutParams(new FrameLayout.LayoutParams(-1, -2, 80));
-        this.f19242p = cVar;
+        this.f19243p = cVar;
         FrameLayout frameLayout = new FrameLayout(reactContext);
         frameLayout.setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
-        frameLayout.setId(un.g.f50811a.a());
-        this.f19243q = frameLayout;
+        frameLayout.setId(un.g.f50812a.a());
+        this.f19244q = frameLayout;
         ArrayList arrayList = new ArrayList();
-        this.f19246t = arrayList;
-        this.f19250x = new com.swmansion.rnscreens.gamma.tabs.p(contextThemeWrapper, cVar, arrayList);
-        this.f19251y = new com.swmansion.rnscreens.gamma.tabs.n(cVar, arrayList);
-        kotlin.properties.a aVar = kotlin.properties.a.f32074a;
-        this.f19252z = new k(null, this);
+        this.f19247t = arrayList;
+        this.f19251x = new com.swmansion.rnscreens.gamma.tabs.p(contextThemeWrapper, cVar, arrayList);
+        this.f19252y = new com.swmansion.rnscreens.gamma.tabs.n(cVar, arrayList);
+        kotlin.properties.a aVar = kotlin.properties.a.f32075a;
+        this.f19253z = new k(null, this);
         this.A = new C0231l(null, this);
         this.B = new m(Boolean.TRUE, this);
         this.C = new n(null, this);
@@ -599,8 +599,8 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     }
 
     private final void C() {
-        if (!this.f19248v && this.P != null) {
-            this.f19248v = true;
+        if (!this.f19249v && this.P != null) {
+            this.f19249v = true;
             ReactChoreographer.Companion.getInstance().postFrameCallback(ReactChoreographer.CallbackType.NATIVE_ANIMATED_MODULE, this.P);
         }
     }
@@ -621,13 +621,13 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void I() {
-        co.e.f8377a.a("TabsHost", "updateBottomNavigationViewAppearance");
-        this.f19250x.c(this);
+        co.e.f8378a.a("TabsHost", "updateBottomNavigationViewAppearance");
+        this.f19251x.c(this);
         Integer selectedTabScreenFragmentId = getSelectedTabScreenFragmentId();
         if (selectedTabScreenFragmentId != null) {
             int intValue = selectedTabScreenFragmentId.intValue();
-            if (this.f19242p.getSelectedItemId() != intValue) {
-                this.f19242p.setSelectedItemId(intValue);
+            if (this.f19243p.getSelectedItemId() != intValue) {
+                this.f19243p.setSelectedItemId(intValue);
             }
             post(new Runnable() { // from class: com.swmansion.rnscreens.gamma.tabs.k
                 @Override // java.lang.Runnable
@@ -643,7 +643,7 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     /* JADX INFO: Access modifiers changed from: private */
     public static final void J(l lVar) {
         lVar.C();
-        co.e.f8377a.a("TabsHost", "BottomNavigationView request layout");
+        co.e.f8378a.a("TabsHost", "BottomNavigationView request layout");
     }
 
     private final void K(Integer num) {
@@ -653,9 +653,9 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
         } else if (num != null) {
             height = num.intValue();
         } else {
-            height = this.f19242p.getHeight();
+            height = this.f19243p.getHeight();
         }
-        com.swmansion.rnscreens.safearea.d dVar = this.f19249w;
+        com.swmansion.rnscreens.safearea.d dVar = this.f19250w;
         if (dVar != null) {
             dVar.f(new com.swmansion.rnscreens.safearea.a(0.0f, 0.0f, 0.0f, height));
         }
@@ -671,7 +671,7 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     /* JADX INFO: Access modifiers changed from: private */
     public final void M(Object obj, Object obj2) {
         if (!Intrinsics.areEqual(obj2, obj)) {
-            b bVar = this.f19239e;
+            b bVar = this.f19240e;
             bVar.c();
             bVar.g();
         }
@@ -697,7 +697,7 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
             if (eVar != null) {
                 v10.n(eVar);
             }
-            v10.b(this.f19243q.getId(), currentFocusedTab);
+            v10.b(this.f19244q.getId(), currentFocusedTab);
             v10.k();
             return;
         }
@@ -707,7 +707,7 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     /* JADX INFO: Access modifiers changed from: private */
     public final com.swmansion.rnscreens.gamma.tabs.e getCurrentFocusedTab() {
         Object obj;
-        Iterator it = this.f19246t.iterator();
+        Iterator it = this.f19247t.iterator();
         while (true) {
             if (it.hasNext()) {
                 obj = it.next();
@@ -726,7 +726,7 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     }
 
     private final FragmentManager getRequireFragmentManager() {
-        FragmentManager fragmentManager = this.f19245s;
+        FragmentManager fragmentManager = this.f19246s;
         if (fragmentManager != null) {
             return fragmentManager;
         }
@@ -734,10 +734,10 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     }
 
     private final Integer getSelectedTabScreenFragmentId() {
-        if (this.f19246t.isEmpty()) {
+        if (this.f19247t.isEmpty()) {
             return null;
         }
-        Iterator it = this.f19246t.iterator();
+        Iterator it = this.f19247t.iterator();
         int i10 = 0;
         while (true) {
             if (it.hasNext()) {
@@ -755,7 +755,7 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void l(View view, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
-        co.e eVar = co.e.f8377a;
+        co.e eVar = co.e.f8378a;
         eVar.a("TabsHost", "BottomNavigationView layout changed {" + i10 + ", " + i11 + "} {" + (i12 - i10) + ", " + (i13 - i11) + "}");
     }
 
@@ -764,11 +764,11 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
         boolean z10;
         com.swmansion.rnscreens.gamma.tabs.a x10;
         Intrinsics.checkNotNullParameter(item, "item");
-        co.e eVar = co.e.f8377a;
+        co.e eVar = co.e.f8378a;
         eVar.a("TabsHost", "Item selected " + item);
         com.swmansion.rnscreens.gamma.tabs.e v10 = lVar.v(item.getItemId());
         if (Intrinsics.areEqual(v10, lVar.getCurrentFocusedTab())) {
-            z10 = lVar.f19240i.a();
+            z10 = lVar.f19241i.a();
         } else {
             z10 = false;
         }
@@ -777,19 +777,19 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     }
 
     private final void t(int i10) {
-        Integer num = this.f19247u;
+        Integer num = this.f19248u;
         if (num == null || i10 != num.intValue()) {
             if (i10 != 16) {
                 if (i10 != 32) {
-                    this.f19241o.setTheme(bh.k.f6932g);
+                    this.f19242o.setTheme(bh.k.f6932g);
                 } else {
-                    this.f19241o.setTheme(bh.k.f6930e);
+                    this.f19242o.setTheme(bh.k.f6930e);
                 }
             } else {
-                this.f19241o.setTheme(bh.k.f6933h);
+                this.f19242o.setTheme(bh.k.f6933h);
             }
-            this.f19250x.c(this);
-            this.f19247u = Integer.valueOf(i10);
+            this.f19251x.c(this);
+            this.f19248u = Integer.valueOf(i10);
         }
     }
 
@@ -799,11 +799,11 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     }
 
     private final com.swmansion.rnscreens.gamma.tabs.e v(int i10) {
-        return (com.swmansion.rnscreens.gamma.tabs.e) CollectionsKt.q0(this.f19246t, i10);
+        return (com.swmansion.rnscreens.gamma.tabs.e) CollectionsKt.q0(this.f19247t, i10);
     }
 
     private final MenuItem x(com.swmansion.rnscreens.gamma.tabs.a aVar) {
-        Iterator it = this.f19246t.iterator();
+        Iterator it = this.f19247t.iterator();
         int i10 = 0;
         while (true) {
             if (it.hasNext()) {
@@ -823,50 +823,50 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
         if (valueOf == null) {
             return null;
         }
-        return this.f19242p.getMenu().findItem(valueOf.intValue());
+        return this.f19243p.getMenu().findItem(valueOf.intValue());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void z(l lVar, long j10) {
-        lVar.f19248v = false;
+        lVar.f19249v = false;
         lVar.u();
     }
 
     public final void A(com.swmansion.rnscreens.gamma.tabs.a tabScreen, int i10) {
         Intrinsics.checkNotNullParameter(tabScreen, "tabScreen");
-        if (i10 < this.f19242p.getMaxItemCount()) {
-            this.f19246t.add(i10, new com.swmansion.rnscreens.gamma.tabs.e(tabScreen));
+        if (i10 < this.f19243p.getMaxItemCount()) {
+            this.f19247t.add(i10, new com.swmansion.rnscreens.gamma.tabs.e(tabScreen));
             tabScreen.setTabScreenDelegate$react_native_screens_release(this);
-            b bVar = this.f19239e;
+            b bVar = this.f19240e;
             bVar.b();
             bVar.g();
             return;
         }
-        int maxItemCount = this.f19242p.getMaxItemCount();
+        int maxItemCount = this.f19243p.getMaxItemCount();
         throw new IllegalArgumentException(("[RNScreens] Attempt to insert TabScreen at index " + i10 + "; BottomNavigationView supports at most " + maxItemCount + " items").toString());
     }
 
     public final void B() {
         if (getId() != -1) {
-            setEventEmitter$react_native_screens_release(new com.swmansion.rnscreens.gamma.tabs.r(this.f19238d, getId()));
+            setEventEmitter$react_native_screens_release(new com.swmansion.rnscreens.gamma.tabs.r(this.f19239d, getId()));
             return;
         }
         throw new IllegalStateException("[RNScreens] TabsHost must have its tag set when registering event emitters");
     }
 
     public final void D() {
-        for (com.swmansion.rnscreens.gamma.tabs.e eVar : this.f19246t) {
+        for (com.swmansion.rnscreens.gamma.tabs.e eVar : this.f19247t) {
             eVar.x().setTabScreenDelegate$react_native_screens_release(null);
         }
-        this.f19246t.clear();
-        b bVar = this.f19239e;
+        this.f19247t.clear();
+        b bVar = this.f19240e;
         bVar.b();
         bVar.g();
     }
 
     public final void G(final com.swmansion.rnscreens.gamma.tabs.a reactSubview) {
         Intrinsics.checkNotNullParameter(reactSubview, "reactSubview");
-        List list = this.f19246t;
+        List list = this.f19247t;
         final Function1 function1 = new Function1() { // from class: com.swmansion.rnscreens.gamma.tabs.i
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
@@ -889,15 +889,15 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
         }
         if (valueOf != null) {
             reactSubview.setTabScreenDelegate$react_native_screens_release(null);
-            b bVar = this.f19239e;
+            b bVar = this.f19240e;
             bVar.b();
             bVar.g();
         }
     }
 
     public final void H(int i10) {
-        ((com.swmansion.rnscreens.gamma.tabs.e) this.f19246t.remove(i10)).x().setTabScreenDelegate$react_native_screens_release(null);
-        b bVar = this.f19239e;
+        ((com.swmansion.rnscreens.gamma.tabs.e) this.f19247t.remove(i10)).x().setTabScreenDelegate$react_native_screens_release(null);
+        b bVar = this.f19240e;
         bVar.b();
         bVar.g();
     }
@@ -914,15 +914,15 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
         Intrinsics.checkNotNullParameter(tabScreen, "tabScreen");
         MenuItem x10 = x(tabScreen);
         if (x10 != null) {
-            this.f19250x.a(x10, tabScreen);
-            this.f19251y.b(x10, tabScreen);
+            this.f19251x.a(x10, tabScreen);
+            this.f19252y.b(x10, tabScreen);
         }
     }
 
     @Override // com.swmansion.rnscreens.gamma.tabs.b
     public void d(com.swmansion.rnscreens.gamma.tabs.a tabScreen, boolean z10) {
         Intrinsics.checkNotNullParameter(tabScreen, "tabScreen");
-        b bVar = this.f19239e;
+        b bVar = this.f19240e;
         bVar.b();
         bVar.g();
     }
@@ -949,15 +949,15 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     @Override // com.swmansion.rnscreens.safearea.c
     public void e(com.swmansion.rnscreens.safearea.d listener) {
         Intrinsics.checkNotNullParameter(listener, "listener");
-        if (Intrinsics.areEqual(this.f19249w, listener)) {
-            this.f19249w = null;
-            this.f19242p.removeOnLayoutChangeListener(this);
+        if (Intrinsics.areEqual(this.f19250w, listener)) {
+            this.f19250w = null;
+            this.f19243p.removeOnLayoutChangeListener(this);
         }
     }
 
     @NotNull
     public final com.swmansion.rnscreens.gamma.tabs.r getEventEmitter$react_native_screens_release() {
-        com.swmansion.rnscreens.gamma.tabs.r rVar = this.f19244r;
+        com.swmansion.rnscreens.gamma.tabs.r rVar = this.f19245r;
         if (rVar != null) {
             return rVar;
         }
@@ -968,7 +968,7 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     @Override // com.swmansion.rnscreens.safearea.c
     @NotNull
     public com.swmansion.rnscreens.safearea.a getInterfaceInsets() {
-        return new com.swmansion.rnscreens.safearea.a(0.0f, 0.0f, 0.0f, this.f19242p.getHeight());
+        return new com.swmansion.rnscreens.safearea.a(0.0f, 0.0f, 0.0f, this.f19243p.getHeight());
     }
 
     public final Integer getNativeContainerBackgroundColor() {
@@ -977,11 +977,11 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
 
     @NotNull
     public final ThemedReactContext getReactContext() {
-        return this.f19238d;
+        return this.f19239d;
     }
 
     public final Integer getTabBarBackgroundColor() {
-        return (Integer) this.f19252z.getValue(this, R[0]);
+        return (Integer) this.f19253z.getValue(this, R[0]);
     }
 
     public final boolean getTabBarHidden() {
@@ -1038,14 +1038,14 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
 
     @Override // android.view.ViewGroup, android.view.View
     protected void onAttachedToWindow() {
-        co.e eVar = co.e.f8377a;
+        co.e eVar = co.e.f8378a;
         int id2 = getId();
         eVar.a("TabsHost", "TabsHost [" + id2 + "] attached to window");
         super.onAttachedToWindow();
-        FragmentManager a10 = un.b.f50808a.a(this);
+        FragmentManager a10 = un.b.f50809a.a(this);
         if (a10 != null) {
-            this.f19245s = a10;
-            b bVar = this.f19239e;
+            this.f19246s = a10;
+            b bVar = this.f19240e;
             bVar.b();
             bVar.h();
             return;
@@ -1082,7 +1082,7 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
 
     public final void setEventEmitter$react_native_screens_release(@NotNull com.swmansion.rnscreens.gamma.tabs.r rVar) {
         Intrinsics.checkNotNullParameter(rVar, "<set-?>");
-        this.f19244r = rVar;
+        this.f19245r = rVar;
     }
 
     public final void setNativeContainerBackgroundColor(Integer num) {
@@ -1092,14 +1092,14 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     @Override // com.swmansion.rnscreens.safearea.c
     public void setOnInterfaceInsetsChangeListener(@NotNull com.swmansion.rnscreens.safearea.d listener) {
         Intrinsics.checkNotNullParameter(listener, "listener");
-        if (this.f19249w == null) {
-            this.f19242p.addOnLayoutChangeListener(this);
+        if (this.f19250w == null) {
+            this.f19243p.addOnLayoutChangeListener(this);
         }
-        this.f19249w = listener;
+        this.f19250w = listener;
     }
 
     public final void setTabBarBackgroundColor(Integer num) {
-        this.f19252z.setValue(this, R[0], num);
+        this.f19253z.setValue(this, R[0], num);
     }
 
     public final void setTabBarHidden(boolean z10) {
@@ -1163,7 +1163,7 @@ public final class l extends FrameLayout implements com.swmansion.rnscreens.gamm
     public com.swmansion.rnscreens.gamma.tabs.e a(com.swmansion.rnscreens.gamma.tabs.a tabScreen) {
         Object obj;
         Intrinsics.checkNotNullParameter(tabScreen, "tabScreen");
-        Iterator it = this.f19246t.iterator();
+        Iterator it = this.f19247t.iterator();
         while (true) {
             if (it.hasNext()) {
                 obj = it.next();

@@ -17,37 +17,37 @@ import kotlinx.coroutines.flow.FlowCollector;
 public final class q implements en.o<c> {
 
     /* renamed from: l  reason: collision with root package name */
-    public static final a f20348l = new a(null);
+    public static final a f20349l = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f20349b;
+    private final String f20350b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f20350c;
+    private final String f20351c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final b2 f20351d;
+    private final b2 f20352d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final iq.g f20352e;
+    private final iq.g f20353e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Context f20353f;
+    private final Context f20354f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final kp.r f20354g;
+    private final kp.r f20355g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final no.a f20355h;
+    private final no.a f20356h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final up.c f20356i;
+    private final up.c f20357i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final ip.i f20357j;
+    private final ip.i f20358j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final vq.a f20358k;
+    private final vq.a f20359k;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -71,32 +71,32 @@ public final class q implements en.o<c> {
         public static final class a extends c {
 
             /* renamed from: a  reason: collision with root package name */
-            private final InternalErrorInfo f20359a;
+            private final InternalErrorInfo f20360a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(InternalErrorInfo cause) {
                 super(null);
                 Intrinsics.checkNotNullParameter(cause, "cause");
-                this.f20359a = cause;
+                this.f20360a = cause;
             }
 
             public final InternalErrorInfo a() {
-                return this.f20359a;
+                return this.f20360a;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                return (obj instanceof a) && Intrinsics.areEqual(this.f20359a, ((a) obj).f20359a);
+                return (obj instanceof a) && Intrinsics.areEqual(this.f20360a, ((a) obj).f20360a);
             }
 
             public int hashCode() {
-                return this.f20359a.hashCode();
+                return this.f20360a.hashCode();
             }
 
             public String toString() {
-                InternalErrorInfo internalErrorInfo = this.f20359a;
+                InternalErrorInfo internalErrorInfo = this.f20360a;
                 return "Error(cause=" + internalErrorInfo + ")";
             }
         }
@@ -105,32 +105,32 @@ public final class q implements en.o<c> {
         public static final class b extends c {
 
             /* renamed from: a  reason: collision with root package name */
-            private final l f20360a;
+            private final l f20361a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public b(l nextState) {
                 super(null);
                 Intrinsics.checkNotNullParameter(nextState, "nextState");
-                this.f20360a = nextState;
+                this.f20361a = nextState;
             }
 
             public final l a() {
-                return this.f20360a;
+                return this.f20361a;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                return (obj instanceof b) && Intrinsics.areEqual(this.f20360a, ((b) obj).f20360a);
+                return (obj instanceof b) && Intrinsics.areEqual(this.f20361a, ((b) obj).f20361a);
             }
 
             public int hashCode() {
-                return this.f20360a.hashCode();
+                return this.f20361a.hashCode();
             }
 
             public String toString() {
-                l lVar = this.f20360a;
+                l lVar = this.f20361a;
                 return "Success(nextState=" + lVar + ")";
             }
         }
@@ -147,25 +147,25 @@ public final class q implements en.o<c> {
     static final class d extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f20361d;
+        Object f20362d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f20362e;
+        Object f20363e;
 
         /* renamed from: i  reason: collision with root package name */
-        long f20363i;
+        long f20364i;
 
         /* renamed from: o  reason: collision with root package name */
-        int f20364o;
+        int f20365o;
 
         /* renamed from: p  reason: collision with root package name */
-        private /* synthetic */ Object f20365p;
+        private /* synthetic */ Object f20366p;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public /* synthetic */ class a {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final /* synthetic */ int[] f20367a;
+            public static final /* synthetic */ int[] f20368a;
 
             static {
                 int[] iArr = new int[CheckInquiryResponse.PollingMode.values().length];
@@ -181,7 +181,7 @@ public final class q implements en.o<c> {
                     iArr[CheckInquiryResponse.PollingMode.None.ordinal()] = 3;
                 } catch (NoSuchFieldError unused3) {
                 }
-                f20367a = iArr;
+                f20368a = iArr;
             }
         }
 
@@ -192,7 +192,7 @@ public final class q implements en.o<c> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             d dVar = new d(continuation);
-            dVar.f20365p = obj;
+            dVar.f20366p = obj;
             return dVar;
         }
 
@@ -236,7 +236,7 @@ public final class q implements en.o<c> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f31987a);
+            return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -251,16 +251,16 @@ public final class q implements en.o<c> {
         Intrinsics.checkNotNullParameter(sandboxFlags, "sandboxFlags");
         Intrinsics.checkNotNullParameter(fallbackModeManager, "fallbackModeManager");
         Intrinsics.checkNotNullParameter(fontDownloader, "fontDownloader");
-        this.f20349b = sessionToken;
-        this.f20350c = inquiryId;
-        this.f20351d = pollingMode;
-        this.f20352e = inquirySessionConfig;
-        this.f20353f = applicationContext;
-        this.f20354g = service;
-        this.f20355h = deviceIdProvider;
-        this.f20356i = sandboxFlags;
-        this.f20357j = fallbackModeManager;
-        this.f20358k = fontDownloader;
+        this.f20350b = sessionToken;
+        this.f20351c = inquiryId;
+        this.f20352d = pollingMode;
+        this.f20353e = inquirySessionConfig;
+        this.f20354f = applicationContext;
+        this.f20355g = service;
+        this.f20356h = deviceIdProvider;
+        this.f20357i = sandboxFlags;
+        this.f20358j = fallbackModeManager;
+        this.f20359k = fontDownloader;
     }
 
     @Override // en.o
@@ -268,7 +268,7 @@ public final class q implements en.o<c> {
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
         if (otherWorker instanceof q) {
             q qVar = (q) otherWorker;
-            if (Intrinsics.areEqual(this.f20349b, qVar.f20349b) && Intrinsics.areEqual(this.f20350c, qVar.f20350c) && this.f20351d == qVar.f20351d) {
+            if (Intrinsics.areEqual(this.f20350b, qVar.f20350b) && Intrinsics.areEqual(this.f20351c, qVar.f20351c) && this.f20352d == qVar.f20352d) {
                 return true;
             }
             return false;
@@ -277,11 +277,11 @@ public final class q implements en.o<c> {
     }
 
     public final String i() {
-        return this.f20350c;
+        return this.f20351c;
     }
 
     public final String j() {
-        return this.f20349b;
+        return this.f20350b;
     }
 
     @Override // en.o

@@ -8,7 +8,7 @@ import java.util.Locale;
 /* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class j extends l implements m {
-    private static final j G = new j(p.f37785v);
+    private static final j G = new j(p.f37786v);
     private static final long serialVersionUID = 7807230388259573234L;
     private final p offset;
 
@@ -49,7 +49,7 @@ public final class j extends l implements m {
 
     @Override // net.time4j.tz.l
     public o E() {
-        return l.f37723o;
+        return l.f37724o;
     }
 
     @Override // net.time4j.tz.l

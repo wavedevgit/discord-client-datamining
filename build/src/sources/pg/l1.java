@@ -5,30 +5,30 @@ import bj.c;
 final class l1 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final l1 f42188a = new l1();
+    static final l1 f42189a = new l1();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f42189b;
+    private static final bj.c f42190b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f42190c;
+    private static final bj.c f42191c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f42191d;
+    private static final bj.c f42192d;
 
     static {
         c.b a10 = bj.c.a("logEventKey");
         f fVar = new f();
         fVar.a(1);
-        f42189b = a10.b(fVar.b()).a();
+        f42190b = a10.b(fVar.b()).a();
         c.b a11 = bj.c.a("eventCount");
         f fVar2 = new f();
         fVar2.a(2);
-        f42190c = a11.b(fVar2.b()).a();
+        f42191c = a11.b(fVar2.b()).a();
         c.b a12 = bj.c.a("inferenceDurationStats");
         f fVar3 = new f();
         fVar3.a(3);
-        f42191d = a12.b(fVar3.b()).a();
+        f42192d = a12.b(fVar3.b()).a();
     }
 
     private l1() {

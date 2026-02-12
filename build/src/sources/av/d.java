@@ -9,7 +9,7 @@ import okio.Timeout;
 public final class d implements Sink {
     @Override // okio.Sink
     public Timeout timeout() {
-        return Timeout.f40597e;
+        return Timeout.f40598e;
     }
 
     @Override // okio.Sink

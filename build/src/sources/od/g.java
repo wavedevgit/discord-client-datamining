@@ -9,10 +9,10 @@ public final class g extends b {
     public static final Parcelable.Creator<g> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final long f38879d;
+    public final long f38880d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final long f38880e;
+    public final long f38881e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -53,17 +53,17 @@ public final class g extends b {
 
     @Override // od.b
     public String toString() {
-        return "SCTE-35 TimeSignalCommand { ptsTime=" + this.f38879d + ", playbackPositionUs= " + this.f38880e + " }";
+        return "SCTE-35 TimeSignalCommand { ptsTime=" + this.f38880d + ", playbackPositionUs= " + this.f38881e + " }";
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeLong(this.f38879d);
-        parcel.writeLong(this.f38880e);
+        parcel.writeLong(this.f38880d);
+        parcel.writeLong(this.f38881e);
     }
 
     private g(long j10, long j11) {
-        this.f38879d = j10;
-        this.f38880e = j11;
+        this.f38880d = j10;
+        this.f38881e = j11;
     }
 }

@@ -12,10 +12,10 @@ import androidx.activity.BackEventCompat;
 public class e extends oh.a {
 
     /* renamed from: g  reason: collision with root package name */
-    private final float f40092g;
+    private final float f40093g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final float f40093h;
+    private final float f40094h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends AnimatorListenerAdapter {
@@ -24,7 +24,7 @@ public class e extends oh.a {
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            e.this.f40080b.setTranslationY(0.0f);
+            e.this.f40081b.setTranslationY(0.0f);
             e.this.k(0.0f);
         }
     }
@@ -32,14 +32,14 @@ public class e extends oh.a {
     public e(View view) {
         super(view);
         Resources resources = view.getResources();
-        this.f40092g = resources.getDimension(bh.d.f6806q);
-        this.f40093h = resources.getDimension(bh.d.f6808r);
+        this.f40093g = resources.getDimension(bh.d.f6806q);
+        this.f40094h = resources.getDimension(bh.d.f6808r);
     }
 
     private Animator g() {
         AnimatorSet animatorSet = new AnimatorSet();
-        animatorSet.playTogether(ObjectAnimator.ofFloat(this.f40080b, View.SCALE_X, 1.0f), ObjectAnimator.ofFloat(this.f40080b, View.SCALE_Y, 1.0f));
-        View view = this.f40080b;
+        animatorSet.playTogether(ObjectAnimator.ofFloat(this.f40081b, View.SCALE_X, 1.0f), ObjectAnimator.ofFloat(this.f40081b, View.SCALE_Y, 1.0f));
+        View view = this.f40081b;
         if (view instanceof ViewGroup) {
             ViewGroup viewGroup = (ViewGroup) view;
             for (int i10 = 0; i10 < viewGroup.getChildCount(); i10++) {
@@ -55,14 +55,14 @@ public class e extends oh.a {
             return;
         }
         Animator g10 = g();
-        g10.setDuration(this.f40083e);
+        g10.setDuration(this.f40084e);
         g10.start();
     }
 
     public void h(BackEventCompat backEventCompat, Animator.AnimatorListener animatorListener) {
-        ObjectAnimator ofFloat = ObjectAnimator.ofFloat(this.f40080b, View.TRANSLATION_Y, this.f40080b.getHeight() * this.f40080b.getScaleY());
+        ObjectAnimator ofFloat = ObjectAnimator.ofFloat(this.f40081b, View.TRANSLATION_Y, this.f40081b.getHeight() * this.f40081b.getScaleY());
         ofFloat.setInterpolator(new h3.b());
-        ofFloat.setDuration(ch.a.c(this.f40081c, this.f40082d, backEventCompat.a()));
+        ofFloat.setDuration(ch.a.c(this.f40082c, this.f40083d, backEventCompat.a()));
         ofFloat.addListener(new a());
         if (animatorListener != null) {
             ofFloat.addListener(animatorListener);
@@ -72,7 +72,7 @@ public class e extends oh.a {
 
     public void i(BackEventCompat backEventCompat, Animator.AnimatorListener animatorListener) {
         Animator g10 = g();
-        g10.setDuration(ch.a.c(this.f40081c, this.f40082d, backEventCompat.a()));
+        g10.setDuration(ch.a.c(this.f40082c, this.f40083d, backEventCompat.a()));
         if (animatorListener != null) {
             g10.addListener(animatorListener);
         }
@@ -86,16 +86,16 @@ public class e extends oh.a {
     public void k(float f10) {
         float f11;
         float a10 = a(f10);
-        float width = this.f40080b.getWidth();
-        float height = this.f40080b.getHeight();
+        float width = this.f40081b.getWidth();
+        float height = this.f40081b.getHeight();
         if (width > 0.0f && height > 0.0f) {
-            float a11 = 1.0f - ch.a.a(0.0f, this.f40092g / width, a10);
-            float a12 = 1.0f - ch.a.a(0.0f, this.f40093h / height, a10);
+            float a11 = 1.0f - ch.a.a(0.0f, this.f40093g / width, a10);
+            float a12 = 1.0f - ch.a.a(0.0f, this.f40094h / height, a10);
             if (!Float.isNaN(a11) && !Float.isNaN(a12)) {
-                this.f40080b.setScaleX(a11);
-                this.f40080b.setPivotY(height);
-                this.f40080b.setScaleY(a12);
-                View view = this.f40080b;
+                this.f40081b.setScaleX(a11);
+                this.f40081b.setPivotY(height);
+                this.f40081b.setScaleY(a12);
+                View view = this.f40081b;
                 if (view instanceof ViewGroup) {
                     ViewGroup viewGroup = (ViewGroup) view;
                     for (int i10 = 0; i10 < viewGroup.getChildCount(); i10++) {

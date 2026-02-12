@@ -6,14 +6,14 @@ import java.util.Iterator;
 public final /* synthetic */ class c0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final /* synthetic */ x f27940a;
+    private final /* synthetic */ x f27941a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ c0(x xVar) {
-        this.f27940a = xVar;
+        this.f27941a = xVar;
     }
 
     public final /* synthetic */ Iterator a(e0 e0Var, CharSequence charSequence) {
-        return new a0(e0Var, charSequence, this.f27940a);
+        return new a0(e0Var, charSequence, this.f27941a);
     }
 }

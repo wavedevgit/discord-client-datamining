@@ -5,9 +5,9 @@ import kotlin.collections.o0;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final b f53980a = new a(o0.i(), o0.i(), o0.i(), o0.i(), o0.i(), false);
+    private static final b f53981a = new a(o0.i(), o0.i(), o0.i(), o0.i(), o0.i(), false);
 
     public static final b a() {
-        return f53980a;
+        return f53981a;
     }
 }

@@ -18,40 +18,40 @@ import java.util.Locale;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f21705a;
+    private final a f21706a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a f21706b;
+    private final a f21707b;
 
     /* renamed from: c  reason: collision with root package name */
-    final float f21707c;
+    final float f21708c;
 
     /* renamed from: d  reason: collision with root package name */
-    final float f21708d;
+    final float f21709d;
 
     /* renamed from: e  reason: collision with root package name */
-    final float f21709e;
+    final float f21710e;
 
     /* renamed from: f  reason: collision with root package name */
-    final float f21710f;
+    final float f21711f;
 
     /* renamed from: g  reason: collision with root package name */
-    final float f21711g;
+    final float f21712g;
 
     /* renamed from: h  reason: collision with root package name */
-    final float f21712h;
+    final float f21713h;
 
     /* renamed from: i  reason: collision with root package name */
-    final int f21713i;
+    final int f21714i;
 
     /* renamed from: j  reason: collision with root package name */
-    final int f21714j;
+    final int f21715j;
 
     /* renamed from: k  reason: collision with root package name */
-    int f21715k;
+    int f21716k;
 
     /* renamed from: l  reason: collision with root package name */
-    int f21716l;
+    int f21717l;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(Context context, int i10, int i11, int i12, a aVar) {
@@ -76,38 +76,38 @@ public final class b {
         int intValue14;
         boolean booleanValue;
         a aVar2 = new a();
-        this.f21706b = aVar2;
+        this.f21707b = aVar2;
         aVar = aVar == null ? new a() : aVar;
         if (i10 != 0) {
-            aVar.f21717d = i10;
+            aVar.f21718d = i10;
         }
-        TypedArray c10 = c(context, aVar.f21717d, i11, i12);
+        TypedArray c10 = c(context, aVar.f21718d, i11, i12);
         Resources resources = context.getResources();
-        this.f21707c = c10.getDimensionPixelSize(l.f7156v, -1);
-        this.f21713i = context.getResources().getDimensionPixelSize(d.Y);
-        this.f21714j = context.getResources().getDimensionPixelSize(d.f6775a0);
-        this.f21708d = c10.getDimensionPixelSize(l.F, -1);
-        this.f21709e = c10.getDimension(l.D, resources.getDimension(d.f6816v));
-        this.f21711g = c10.getDimension(l.I, resources.getDimension(d.f6818w));
-        this.f21710f = c10.getDimension(l.f7147u, resources.getDimension(d.f6816v));
-        this.f21712h = c10.getDimension(l.E, resources.getDimension(d.f6818w));
+        this.f21708c = c10.getDimensionPixelSize(l.f7156v, -1);
+        this.f21714i = context.getResources().getDimensionPixelSize(d.Y);
+        this.f21715j = context.getResources().getDimensionPixelSize(d.f6775a0);
+        this.f21709d = c10.getDimensionPixelSize(l.F, -1);
+        this.f21710e = c10.getDimension(l.D, resources.getDimension(d.f6816v));
+        this.f21712g = c10.getDimension(l.I, resources.getDimension(d.f6818w));
+        this.f21711f = c10.getDimension(l.f7147u, resources.getDimension(d.f6816v));
+        this.f21713h = c10.getDimension(l.E, resources.getDimension(d.f6818w));
         boolean z10 = true;
-        this.f21715k = c10.getInt(l.P, 1);
-        this.f21716l = c10.getInt(l.f7129s, 0);
-        aVar2.f21725t = aVar.f21725t == -2 ? SetSpanOperation.SPAN_MAX_PRIORITY : aVar.f21725t;
-        if (aVar.f21727v != -2) {
-            aVar2.f21727v = aVar.f21727v;
+        this.f21716k = c10.getInt(l.P, 1);
+        this.f21717l = c10.getInt(l.f7129s, 0);
+        aVar2.f21726t = aVar.f21726t == -2 ? SetSpanOperation.SPAN_MAX_PRIORITY : aVar.f21726t;
+        if (aVar.f21728v != -2) {
+            aVar2.f21728v = aVar.f21728v;
         } else if (c10.hasValue(l.O)) {
-            aVar2.f21727v = c10.getInt(l.O, 0);
+            aVar2.f21728v = c10.getInt(l.O, 0);
         } else {
-            aVar2.f21727v = -1;
+            aVar2.f21728v = -1;
         }
-        if (aVar.f21726u != null) {
-            aVar2.f21726u = aVar.f21726u;
+        if (aVar.f21727u != null) {
+            aVar2.f21727u = aVar.f21727u;
         } else if (c10.hasValue(l.f7183y)) {
-            aVar2.f21726u = c10.getString(l.f7183y);
+            aVar2.f21727u = c10.getString(l.f7183y);
         }
-        aVar2.f21731z = aVar.f21731z;
+        aVar2.f21732z = aVar.f21732z;
         if (aVar.A != null) {
             charSequence = aVar.A;
         } else {
@@ -130,60 +130,60 @@ public final class b {
             z10 = false;
         }
         aVar2.E = Boolean.valueOf(z10);
-        if (aVar.f21728w != -2) {
-            i15 = aVar.f21728w;
+        if (aVar.f21729w != -2) {
+            i15 = aVar.f21729w;
         } else {
             i15 = c10.getInt(l.M, -2);
         }
-        aVar2.f21728w = i15;
-        if (aVar.f21729x != -2) {
-            i16 = aVar.f21729x;
+        aVar2.f21729w = i15;
+        if (aVar.f21730x != -2) {
+            i16 = aVar.f21730x;
         } else {
             i16 = c10.getInt(l.N, -2);
         }
-        aVar2.f21729x = i16;
-        if (aVar.f21721p != null) {
-            intValue = aVar.f21721p.intValue();
+        aVar2.f21730x = i16;
+        if (aVar.f21722p != null) {
+            intValue = aVar.f21722p.intValue();
         } else {
             intValue = c10.getResourceId(l.f7165w, k.f6927b);
         }
-        aVar2.f21721p = Integer.valueOf(intValue);
-        if (aVar.f21722q != null) {
-            intValue2 = aVar.f21722q.intValue();
+        aVar2.f21722p = Integer.valueOf(intValue);
+        if (aVar.f21723q != null) {
+            intValue2 = aVar.f21723q.intValue();
         } else {
             intValue2 = c10.getResourceId(l.f7174x, 0);
         }
-        aVar2.f21722q = Integer.valueOf(intValue2);
-        if (aVar.f21723r != null) {
-            intValue3 = aVar.f21723r.intValue();
+        aVar2.f21723q = Integer.valueOf(intValue2);
+        if (aVar.f21724r != null) {
+            intValue3 = aVar.f21724r.intValue();
         } else {
             intValue3 = c10.getResourceId(l.G, k.f6927b);
         }
-        aVar2.f21723r = Integer.valueOf(intValue3);
-        if (aVar.f21724s != null) {
-            intValue4 = aVar.f21724s.intValue();
+        aVar2.f21724r = Integer.valueOf(intValue3);
+        if (aVar.f21725s != null) {
+            intValue4 = aVar.f21725s.intValue();
         } else {
             intValue4 = c10.getResourceId(l.H, 0);
         }
-        aVar2.f21724s = Integer.valueOf(intValue4);
-        if (aVar.f21718e != null) {
-            intValue5 = aVar.f21718e.intValue();
+        aVar2.f21725s = Integer.valueOf(intValue4);
+        if (aVar.f21719e != null) {
+            intValue5 = aVar.f21719e.intValue();
         } else {
             intValue5 = J(context, c10, l.f7120r);
         }
-        aVar2.f21718e = Integer.valueOf(intValue5);
-        if (aVar.f21720o != null) {
-            intValue6 = aVar.f21720o.intValue();
+        aVar2.f21719e = Integer.valueOf(intValue5);
+        if (aVar.f21721o != null) {
+            intValue6 = aVar.f21721o.intValue();
         } else {
             intValue6 = c10.getResourceId(l.f7192z, k.f6928c);
         }
-        aVar2.f21720o = Integer.valueOf(intValue6);
-        if (aVar.f21719i != null) {
-            aVar2.f21719i = aVar.f21719i;
+        aVar2.f21721o = Integer.valueOf(intValue6);
+        if (aVar.f21720i != null) {
+            aVar2.f21720i = aVar.f21720i;
         } else if (c10.hasValue(l.A)) {
-            aVar2.f21719i = Integer.valueOf(J(context, c10, l.A));
+            aVar2.f21720i = Integer.valueOf(J(context, c10, l.A));
         } else {
-            aVar2.f21719i = Integer.valueOf(new qh.d(context, aVar2.f21720o.intValue()).j().getDefaultColor());
+            aVar2.f21720i = Integer.valueOf(new qh.d(context, aVar2.f21721o.intValue()).j().getDefaultColor());
         }
         if (aVar.D != null) {
             intValue7 = aVar.D.intValue();
@@ -242,12 +242,12 @@ public final class b {
         }
         aVar2.O = Boolean.valueOf(booleanValue);
         c10.recycle();
-        if (aVar.f21730y == null) {
-            aVar2.f21730y = Locale.getDefault(Locale.Category.FORMAT);
+        if (aVar.f21731y == null) {
+            aVar2.f21731y = Locale.getDefault(Locale.Category.FORMAT);
         } else {
-            aVar2.f21730y = aVar.f21730y;
+            aVar2.f21731y = aVar.f21731y;
         }
-        this.f21705a = aVar;
+        this.f21706a = aVar;
     }
 
     private static int J(Context context, TypedArray typedArray, int i10) {
@@ -276,32 +276,32 @@ public final class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a A() {
-        return this.f21705a;
+        return this.f21706a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public String B() {
-        return this.f21706b.f21726u;
+        return this.f21707b.f21727u;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int C() {
-        return this.f21706b.f21720o.intValue();
+        return this.f21707b.f21721o.intValue();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int D() {
-        return this.f21706b.K.intValue();
+        return this.f21707b.K.intValue();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int E() {
-        return this.f21706b.I.intValue();
+        return this.f21707b.I.intValue();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean F() {
-        if (this.f21706b.f21727v != -1) {
+        if (this.f21707b.f21728v != -1) {
             return true;
         }
         return false;
@@ -309,7 +309,7 @@ public final class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean G() {
-        if (this.f21706b.f21726u != null) {
+        if (this.f21707b.f21727u != null) {
             return true;
         }
         return false;
@@ -317,48 +317,48 @@ public final class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean H() {
-        return this.f21706b.O.booleanValue();
+        return this.f21707b.O.booleanValue();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean I() {
-        return this.f21706b.E.booleanValue();
+        return this.f21707b.E.booleanValue();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void K(int i10) {
-        this.f21705a.f21725t = i10;
-        this.f21706b.f21725t = i10;
+        this.f21706a.f21726t = i10;
+        this.f21707b.f21726t = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void L(int i10) {
-        this.f21705a.f21718e = Integer.valueOf(i10);
-        this.f21706b.f21718e = Integer.valueOf(i10);
+        this.f21706a.f21719e = Integer.valueOf(i10);
+        this.f21707b.f21719e = Integer.valueOf(i10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void M(int i10) {
-        this.f21705a.f21719i = Integer.valueOf(i10);
-        this.f21706b.f21719i = Integer.valueOf(i10);
+        this.f21706a.f21720i = Integer.valueOf(i10);
+        this.f21707b.f21720i = Integer.valueOf(i10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void N(int i10) {
-        this.f21705a.f21727v = i10;
-        this.f21706b.f21727v = i10;
+        this.f21706a.f21728v = i10;
+        this.f21707b.f21728v = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void O(String str) {
-        this.f21705a.f21726u = str;
-        this.f21706b.f21726u = str;
+        this.f21706a.f21727u = str;
+        this.f21707b.f21727u = str;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void P(boolean z10) {
-        this.f21705a.E = Boolean.valueOf(z10);
-        this.f21706b.E = Boolean.valueOf(z10);
+        this.f21706a.E = Boolean.valueOf(z10);
+        this.f21707b.E = Boolean.valueOf(z10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -373,117 +373,117 @@ public final class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int d() {
-        return this.f21706b.L.intValue();
+        return this.f21707b.L.intValue();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int e() {
-        return this.f21706b.M.intValue();
+        return this.f21707b.M.intValue();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int f() {
-        return this.f21706b.f21725t;
+        return this.f21707b.f21726t;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int g() {
-        return this.f21706b.f21718e.intValue();
+        return this.f21707b.f21719e.intValue();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int h() {
-        return this.f21706b.D.intValue();
+        return this.f21707b.D.intValue();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int i() {
-        return this.f21706b.F.intValue();
+        return this.f21707b.F.intValue();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int j() {
-        return this.f21706b.f21722q.intValue();
+        return this.f21707b.f21723q.intValue();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int k() {
-        return this.f21706b.f21721p.intValue();
+        return this.f21707b.f21722p.intValue();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int l() {
-        return this.f21706b.f21719i.intValue();
+        return this.f21707b.f21720i.intValue();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int m() {
-        return this.f21706b.G.intValue();
+        return this.f21707b.G.intValue();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int n() {
-        return this.f21706b.f21724s.intValue();
+        return this.f21707b.f21725s.intValue();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int o() {
-        return this.f21706b.f21723r.intValue();
+        return this.f21707b.f21724r.intValue();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int p() {
-        return this.f21706b.C;
+        return this.f21707b.C;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public CharSequence q() {
-        return this.f21706b.f21731z;
+        return this.f21707b.f21732z;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public CharSequence r() {
-        return this.f21706b.A;
+        return this.f21707b.A;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int s() {
-        return this.f21706b.B;
+        return this.f21707b.B;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int t() {
-        return this.f21706b.J.intValue();
+        return this.f21707b.J.intValue();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int u() {
-        return this.f21706b.H.intValue();
+        return this.f21707b.H.intValue();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int v() {
-        return this.f21706b.N.intValue();
+        return this.f21707b.N.intValue();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int w() {
-        return this.f21706b.f21728w;
+        return this.f21707b.f21729w;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int x() {
-        return this.f21706b.f21729x;
+        return this.f21707b.f21730x;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int y() {
-        return this.f21706b.f21727v;
+        return this.f21707b.f21728v;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Locale z() {
-        return this.f21706b.f21730y;
+        return this.f21707b.f21731y;
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -507,49 +507,49 @@ public final class b {
         private Integer P;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f21717d;
+        private int f21718d;
 
         /* renamed from: e  reason: collision with root package name */
-        private Integer f21718e;
+        private Integer f21719e;
 
         /* renamed from: i  reason: collision with root package name */
-        private Integer f21719i;
+        private Integer f21720i;
 
         /* renamed from: o  reason: collision with root package name */
-        private Integer f21720o;
+        private Integer f21721o;
 
         /* renamed from: p  reason: collision with root package name */
-        private Integer f21721p;
+        private Integer f21722p;
 
         /* renamed from: q  reason: collision with root package name */
-        private Integer f21722q;
+        private Integer f21723q;
 
         /* renamed from: r  reason: collision with root package name */
-        private Integer f21723r;
+        private Integer f21724r;
 
         /* renamed from: s  reason: collision with root package name */
-        private Integer f21724s;
+        private Integer f21725s;
 
         /* renamed from: t  reason: collision with root package name */
-        private int f21725t;
+        private int f21726t;
 
         /* renamed from: u  reason: collision with root package name */
-        private String f21726u;
+        private String f21727u;
 
         /* renamed from: v  reason: collision with root package name */
-        private int f21727v;
+        private int f21728v;
 
         /* renamed from: w  reason: collision with root package name */
-        private int f21728w;
+        private int f21729w;
 
         /* renamed from: x  reason: collision with root package name */
-        private int f21729x;
+        private int f21730x;
 
         /* renamed from: y  reason: collision with root package name */
-        private Locale f21730y;
+        private Locale f21731y;
 
         /* renamed from: z  reason: collision with root package name */
-        private CharSequence f21731z;
+        private CharSequence f21732z;
 
         /* renamed from: dh.b$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -571,10 +571,10 @@ public final class b {
         }
 
         public a() {
-            this.f21725t = SetSpanOperation.SPAN_MAX_PRIORITY;
-            this.f21727v = -2;
-            this.f21728w = -2;
-            this.f21729x = -2;
+            this.f21726t = SetSpanOperation.SPAN_MAX_PRIORITY;
+            this.f21728v = -2;
+            this.f21729w = -2;
+            this.f21730x = -2;
             this.E = Boolean.TRUE;
         }
 
@@ -586,20 +586,20 @@ public final class b {
         @Override // android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
             String str;
-            parcel.writeInt(this.f21717d);
-            parcel.writeSerializable(this.f21718e);
-            parcel.writeSerializable(this.f21719i);
-            parcel.writeSerializable(this.f21720o);
-            parcel.writeSerializable(this.f21721p);
-            parcel.writeSerializable(this.f21722q);
-            parcel.writeSerializable(this.f21723r);
-            parcel.writeSerializable(this.f21724s);
-            parcel.writeInt(this.f21725t);
-            parcel.writeString(this.f21726u);
-            parcel.writeInt(this.f21727v);
-            parcel.writeInt(this.f21728w);
-            parcel.writeInt(this.f21729x);
-            CharSequence charSequence = this.f21731z;
+            parcel.writeInt(this.f21718d);
+            parcel.writeSerializable(this.f21719e);
+            parcel.writeSerializable(this.f21720i);
+            parcel.writeSerializable(this.f21721o);
+            parcel.writeSerializable(this.f21722p);
+            parcel.writeSerializable(this.f21723q);
+            parcel.writeSerializable(this.f21724r);
+            parcel.writeSerializable(this.f21725s);
+            parcel.writeInt(this.f21726t);
+            parcel.writeString(this.f21727u);
+            parcel.writeInt(this.f21728v);
+            parcel.writeInt(this.f21729w);
+            parcel.writeInt(this.f21730x);
+            CharSequence charSequence = this.f21732z;
             String str2 = null;
             if (charSequence != null) {
                 str = charSequence.toString();
@@ -624,31 +624,31 @@ public final class b {
             parcel.writeSerializable(this.L);
             parcel.writeSerializable(this.M);
             parcel.writeSerializable(this.E);
-            parcel.writeSerializable(this.f21730y);
+            parcel.writeSerializable(this.f21731y);
             parcel.writeSerializable(this.O);
             parcel.writeSerializable(this.P);
         }
 
         a(Parcel parcel) {
-            this.f21725t = SetSpanOperation.SPAN_MAX_PRIORITY;
-            this.f21727v = -2;
-            this.f21728w = -2;
-            this.f21729x = -2;
+            this.f21726t = SetSpanOperation.SPAN_MAX_PRIORITY;
+            this.f21728v = -2;
+            this.f21729w = -2;
+            this.f21730x = -2;
             this.E = Boolean.TRUE;
-            this.f21717d = parcel.readInt();
-            this.f21718e = (Integer) parcel.readSerializable();
-            this.f21719i = (Integer) parcel.readSerializable();
-            this.f21720o = (Integer) parcel.readSerializable();
-            this.f21721p = (Integer) parcel.readSerializable();
-            this.f21722q = (Integer) parcel.readSerializable();
-            this.f21723r = (Integer) parcel.readSerializable();
-            this.f21724s = (Integer) parcel.readSerializable();
-            this.f21725t = parcel.readInt();
-            this.f21726u = parcel.readString();
-            this.f21727v = parcel.readInt();
-            this.f21728w = parcel.readInt();
-            this.f21729x = parcel.readInt();
-            this.f21731z = parcel.readString();
+            this.f21718d = parcel.readInt();
+            this.f21719e = (Integer) parcel.readSerializable();
+            this.f21720i = (Integer) parcel.readSerializable();
+            this.f21721o = (Integer) parcel.readSerializable();
+            this.f21722p = (Integer) parcel.readSerializable();
+            this.f21723q = (Integer) parcel.readSerializable();
+            this.f21724r = (Integer) parcel.readSerializable();
+            this.f21725s = (Integer) parcel.readSerializable();
+            this.f21726t = parcel.readInt();
+            this.f21727u = parcel.readString();
+            this.f21728v = parcel.readInt();
+            this.f21729w = parcel.readInt();
+            this.f21730x = parcel.readInt();
+            this.f21732z = parcel.readString();
             this.A = parcel.readString();
             this.B = parcel.readInt();
             this.D = (Integer) parcel.readSerializable();
@@ -662,7 +662,7 @@ public final class b {
             this.L = (Integer) parcel.readSerializable();
             this.M = (Integer) parcel.readSerializable();
             this.E = (Boolean) parcel.readSerializable();
-            this.f21730y = (Locale) parcel.readSerializable();
+            this.f21731y = (Locale) parcel.readSerializable();
             this.O = (Boolean) parcel.readSerializable();
             this.P = (Integer) parcel.readSerializable();
         }

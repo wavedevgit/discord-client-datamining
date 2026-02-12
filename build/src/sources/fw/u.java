@@ -49,34 +49,34 @@ public abstract class u {
     static final class c extends u {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Method f24499a;
+        private final Method f24500a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f24500b;
+        private final int f24501b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final fw.h f24501c;
+        private final fw.h f24502c;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public c(Method method, int i10, fw.h hVar) {
-            this.f24499a = method;
-            this.f24500b = i10;
-            this.f24501c = hVar;
+            this.f24500a = method;
+            this.f24501b = i10;
+            this.f24502c = hVar;
         }
 
         @Override // fw.u
         void a(x xVar, Object obj) {
             if (obj != null) {
                 try {
-                    xVar.l((RequestBody) this.f24501c.a(obj));
+                    xVar.l((RequestBody) this.f24502c.a(obj));
                     return;
                 } catch (IOException e10) {
-                    Method method = this.f24499a;
-                    int i10 = this.f24500b;
+                    Method method = this.f24500a;
+                    int i10 = this.f24501b;
                     throw e0.q(method, e10, i10, "Unable to convert " + obj + " to RequestBody", new Object[0]);
                 }
             }
-            throw e0.p(this.f24499a, this.f24500b, "Body parameter value must not be null.", new Object[0]);
+            throw e0.p(this.f24500a, this.f24501b, "Body parameter value must not be null.", new Object[0]);
         }
     }
 
@@ -84,29 +84,29 @@ public abstract class u {
     static final class d extends u {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f24502a;
+        private final String f24503a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final fw.h f24503b;
+        private final fw.h f24504b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final boolean f24504c;
+        private final boolean f24505c;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public d(String str, fw.h hVar, boolean z10) {
             Objects.requireNonNull(str, "name == null");
-            this.f24502a = str;
-            this.f24503b = hVar;
-            this.f24504c = z10;
+            this.f24503a = str;
+            this.f24504b = hVar;
+            this.f24505c = z10;
         }
 
         @Override // fw.u
         void a(x xVar, Object obj) {
             String str;
-            if (obj == null || (str = (String) this.f24503b.a(obj)) == null) {
+            if (obj == null || (str = (String) this.f24504b.a(obj)) == null) {
                 return;
             }
-            xVar.a(this.f24502a, str, this.f24504c);
+            xVar.a(this.f24503a, str, this.f24505c);
         }
     }
 
@@ -114,23 +114,23 @@ public abstract class u {
     static final class e extends u {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Method f24505a;
+        private final Method f24506a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f24506b;
+        private final int f24507b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final fw.h f24507c;
+        private final fw.h f24508c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final boolean f24508d;
+        private final boolean f24509d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public e(Method method, int i10, fw.h hVar, boolean z10) {
-            this.f24505a = method;
-            this.f24506b = i10;
-            this.f24507c = hVar;
-            this.f24508d = z10;
+            this.f24506a = method;
+            this.f24507b = i10;
+            this.f24508c = hVar;
+            this.f24509d = z10;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
@@ -143,26 +143,26 @@ public abstract class u {
                     if (str != null) {
                         Object value = entry.getValue();
                         if (value != null) {
-                            String str2 = (String) this.f24507c.a(value);
+                            String str2 = (String) this.f24508c.a(value);
                             if (str2 != null) {
-                                xVar.a(str, str2, this.f24508d);
+                                xVar.a(str, str2, this.f24509d);
                             } else {
-                                Method method = this.f24505a;
-                                int i10 = this.f24506b;
-                                throw e0.p(method, i10, "Field map value '" + value + "' converted to null by " + this.f24507c.getClass().getName() + " for key '" + str + "'.", new Object[0]);
+                                Method method = this.f24506a;
+                                int i10 = this.f24507b;
+                                throw e0.p(method, i10, "Field map value '" + value + "' converted to null by " + this.f24508c.getClass().getName() + " for key '" + str + "'.", new Object[0]);
                             }
                         } else {
-                            Method method2 = this.f24505a;
-                            int i11 = this.f24506b;
+                            Method method2 = this.f24506a;
+                            int i11 = this.f24507b;
                             throw e0.p(method2, i11, "Field map contained null value for key '" + str + "'.", new Object[0]);
                         }
                     } else {
-                        throw e0.p(this.f24505a, this.f24506b, "Field map contained null key.", new Object[0]);
+                        throw e0.p(this.f24506a, this.f24507b, "Field map contained null key.", new Object[0]);
                     }
                 }
                 return;
             }
-            throw e0.p(this.f24505a, this.f24506b, "Field map was null.", new Object[0]);
+            throw e0.p(this.f24506a, this.f24507b, "Field map was null.", new Object[0]);
         }
     }
 
@@ -170,29 +170,29 @@ public abstract class u {
     static final class f extends u {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f24509a;
+        private final String f24510a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final fw.h f24510b;
+        private final fw.h f24511b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final boolean f24511c;
+        private final boolean f24512c;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public f(String str, fw.h hVar, boolean z10) {
             Objects.requireNonNull(str, "name == null");
-            this.f24509a = str;
-            this.f24510b = hVar;
-            this.f24511c = z10;
+            this.f24510a = str;
+            this.f24511b = hVar;
+            this.f24512c = z10;
         }
 
         @Override // fw.u
         void a(x xVar, Object obj) {
             String str;
-            if (obj == null || (str = (String) this.f24510b.a(obj)) == null) {
+            if (obj == null || (str = (String) this.f24511b.a(obj)) == null) {
                 return;
             }
-            xVar.b(this.f24509a, str, this.f24511c);
+            xVar.b(this.f24510a, str, this.f24512c);
         }
     }
 
@@ -200,23 +200,23 @@ public abstract class u {
     static final class g extends u {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Method f24512a;
+        private final Method f24513a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f24513b;
+        private final int f24514b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final fw.h f24514c;
+        private final fw.h f24515c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final boolean f24515d;
+        private final boolean f24516d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public g(Method method, int i10, fw.h hVar, boolean z10) {
-            this.f24512a = method;
-            this.f24513b = i10;
-            this.f24514c = hVar;
-            this.f24515d = z10;
+            this.f24513a = method;
+            this.f24514b = i10;
+            this.f24515c = hVar;
+            this.f24516d = z10;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
@@ -229,19 +229,19 @@ public abstract class u {
                     if (str != null) {
                         Object value = entry.getValue();
                         if (value != null) {
-                            xVar.b(str, (String) this.f24514c.a(value), this.f24515d);
+                            xVar.b(str, (String) this.f24515c.a(value), this.f24516d);
                         } else {
-                            Method method = this.f24512a;
-                            int i10 = this.f24513b;
+                            Method method = this.f24513a;
+                            int i10 = this.f24514b;
                             throw e0.p(method, i10, "Header map contained null value for key '" + str + "'.", new Object[0]);
                         }
                     } else {
-                        throw e0.p(this.f24512a, this.f24513b, "Header map contained null key.", new Object[0]);
+                        throw e0.p(this.f24513a, this.f24514b, "Header map contained null key.", new Object[0]);
                     }
                 }
                 return;
             }
-            throw e0.p(this.f24512a, this.f24513b, "Header map was null.", new Object[0]);
+            throw e0.p(this.f24513a, this.f24514b, "Header map was null.", new Object[0]);
         }
     }
 
@@ -249,15 +249,15 @@ public abstract class u {
     static final class h extends u {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Method f24516a;
+        private final Method f24517a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f24517b;
+        private final int f24518b;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public h(Method method, int i10) {
-            this.f24516a = method;
-            this.f24517b = i10;
+            this.f24517a = method;
+            this.f24518b = i10;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
@@ -268,7 +268,7 @@ public abstract class u {
                 xVar.c(headers);
                 return;
             }
-            throw e0.p(this.f24516a, this.f24517b, "Headers parameter must not be null.", new Object[0]);
+            throw e0.p(this.f24517a, this.f24518b, "Headers parameter must not be null.", new Object[0]);
         }
     }
 
@@ -276,23 +276,23 @@ public abstract class u {
     static final class i extends u {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Method f24518a;
+        private final Method f24519a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f24519b;
+        private final int f24520b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Headers f24520c;
+        private final Headers f24521c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final fw.h f24521d;
+        private final fw.h f24522d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public i(Method method, int i10, Headers headers, fw.h hVar) {
-            this.f24518a = method;
-            this.f24519b = i10;
-            this.f24520c = headers;
-            this.f24521d = hVar;
+            this.f24519a = method;
+            this.f24520b = i10;
+            this.f24521c = headers;
+            this.f24522d = hVar;
         }
 
         @Override // fw.u
@@ -301,10 +301,10 @@ public abstract class u {
                 return;
             }
             try {
-                xVar.d(this.f24520c, (RequestBody) this.f24521d.a(obj));
+                xVar.d(this.f24521c, (RequestBody) this.f24522d.a(obj));
             } catch (IOException e10) {
-                Method method = this.f24518a;
-                int i10 = this.f24519b;
+                Method method = this.f24519a;
+                int i10 = this.f24520b;
                 throw e0.p(method, i10, "Unable to convert " + obj + " to RequestBody", e10);
             }
         }
@@ -314,23 +314,23 @@ public abstract class u {
     static final class j extends u {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Method f24522a;
+        private final Method f24523a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f24523b;
+        private final int f24524b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final fw.h f24524c;
+        private final fw.h f24525c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f24525d;
+        private final String f24526d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public j(Method method, int i10, fw.h hVar, String str) {
-            this.f24522a = method;
-            this.f24523b = i10;
-            this.f24524c = hVar;
-            this.f24525d = str;
+            this.f24523a = method;
+            this.f24524b = i10;
+            this.f24525c = hVar;
+            this.f24526d = str;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
@@ -343,19 +343,19 @@ public abstract class u {
                     if (str != null) {
                         Object value = entry.getValue();
                         if (value != null) {
-                            xVar.d(Headers.i("Content-Disposition", "form-data; name=\"" + str + "\"", "Content-Transfer-Encoding", this.f24525d), (RequestBody) this.f24524c.a(value));
+                            xVar.d(Headers.i("Content-Disposition", "form-data; name=\"" + str + "\"", "Content-Transfer-Encoding", this.f24526d), (RequestBody) this.f24525c.a(value));
                         } else {
-                            Method method = this.f24522a;
-                            int i10 = this.f24523b;
+                            Method method = this.f24523a;
+                            int i10 = this.f24524b;
                             throw e0.p(method, i10, "Part map contained null value for key '" + str + "'.", new Object[0]);
                         }
                     } else {
-                        throw e0.p(this.f24522a, this.f24523b, "Part map contained null key.", new Object[0]);
+                        throw e0.p(this.f24523a, this.f24524b, "Part map contained null key.", new Object[0]);
                     }
                 }
                 return;
             }
-            throw e0.p(this.f24522a, this.f24523b, "Part map was null.", new Object[0]);
+            throw e0.p(this.f24523a, this.f24524b, "Part map was null.", new Object[0]);
         }
     }
 
@@ -363,39 +363,39 @@ public abstract class u {
     static final class k extends u {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Method f24526a;
+        private final Method f24527a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f24527b;
+        private final int f24528b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f24528c;
+        private final String f24529c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final fw.h f24529d;
+        private final fw.h f24530d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final boolean f24530e;
+        private final boolean f24531e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public k(Method method, int i10, String str, fw.h hVar, boolean z10) {
-            this.f24526a = method;
-            this.f24527b = i10;
+            this.f24527a = method;
+            this.f24528b = i10;
             Objects.requireNonNull(str, "name == null");
-            this.f24528c = str;
-            this.f24529d = hVar;
-            this.f24530e = z10;
+            this.f24529c = str;
+            this.f24530d = hVar;
+            this.f24531e = z10;
         }
 
         @Override // fw.u
         void a(x xVar, Object obj) {
             if (obj != null) {
-                xVar.f(this.f24528c, (String) this.f24529d.a(obj), this.f24530e);
+                xVar.f(this.f24529c, (String) this.f24530d.a(obj), this.f24531e);
                 return;
             }
-            Method method = this.f24526a;
-            int i10 = this.f24527b;
-            throw e0.p(method, i10, "Path parameter \"" + this.f24528c + "\" value must not be null.", new Object[0]);
+            Method method = this.f24527a;
+            int i10 = this.f24528b;
+            throw e0.p(method, i10, "Path parameter \"" + this.f24529c + "\" value must not be null.", new Object[0]);
         }
     }
 
@@ -403,29 +403,29 @@ public abstract class u {
     static final class l extends u {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f24531a;
+        private final String f24532a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final fw.h f24532b;
+        private final fw.h f24533b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final boolean f24533c;
+        private final boolean f24534c;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public l(String str, fw.h hVar, boolean z10) {
             Objects.requireNonNull(str, "name == null");
-            this.f24531a = str;
-            this.f24532b = hVar;
-            this.f24533c = z10;
+            this.f24532a = str;
+            this.f24533b = hVar;
+            this.f24534c = z10;
         }
 
         @Override // fw.u
         void a(x xVar, Object obj) {
             String str;
-            if (obj == null || (str = (String) this.f24532b.a(obj)) == null) {
+            if (obj == null || (str = (String) this.f24533b.a(obj)) == null) {
                 return;
             }
-            xVar.g(this.f24531a, str, this.f24533c);
+            xVar.g(this.f24532a, str, this.f24534c);
         }
     }
 
@@ -433,23 +433,23 @@ public abstract class u {
     static final class m extends u {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Method f24534a;
+        private final Method f24535a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f24535b;
+        private final int f24536b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final fw.h f24536c;
+        private final fw.h f24537c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final boolean f24537d;
+        private final boolean f24538d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public m(Method method, int i10, fw.h hVar, boolean z10) {
-            this.f24534a = method;
-            this.f24535b = i10;
-            this.f24536c = hVar;
-            this.f24537d = z10;
+            this.f24535a = method;
+            this.f24536b = i10;
+            this.f24537c = hVar;
+            this.f24538d = z10;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
@@ -462,26 +462,26 @@ public abstract class u {
                     if (str != null) {
                         Object value = entry.getValue();
                         if (value != null) {
-                            String str2 = (String) this.f24536c.a(value);
+                            String str2 = (String) this.f24537c.a(value);
                             if (str2 != null) {
-                                xVar.g(str, str2, this.f24537d);
+                                xVar.g(str, str2, this.f24538d);
                             } else {
-                                Method method = this.f24534a;
-                                int i10 = this.f24535b;
-                                throw e0.p(method, i10, "Query map value '" + value + "' converted to null by " + this.f24536c.getClass().getName() + " for key '" + str + "'.", new Object[0]);
+                                Method method = this.f24535a;
+                                int i10 = this.f24536b;
+                                throw e0.p(method, i10, "Query map value '" + value + "' converted to null by " + this.f24537c.getClass().getName() + " for key '" + str + "'.", new Object[0]);
                             }
                         } else {
-                            Method method2 = this.f24534a;
-                            int i11 = this.f24535b;
+                            Method method2 = this.f24535a;
+                            int i11 = this.f24536b;
                             throw e0.p(method2, i11, "Query map contained null value for key '" + str + "'.", new Object[0]);
                         }
                     } else {
-                        throw e0.p(this.f24534a, this.f24535b, "Query map contained null key.", new Object[0]);
+                        throw e0.p(this.f24535a, this.f24536b, "Query map contained null key.", new Object[0]);
                     }
                 }
                 return;
             }
-            throw e0.p(this.f24534a, this.f24535b, "Query map was null", new Object[0]);
+            throw e0.p(this.f24535a, this.f24536b, "Query map was null", new Object[0]);
         }
     }
 
@@ -489,15 +489,15 @@ public abstract class u {
     static final class n extends u {
 
         /* renamed from: a  reason: collision with root package name */
-        private final fw.h f24538a;
+        private final fw.h f24539a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final boolean f24539b;
+        private final boolean f24540b;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public n(fw.h hVar, boolean z10) {
-            this.f24538a = hVar;
-            this.f24539b = z10;
+            this.f24539a = hVar;
+            this.f24540b = z10;
         }
 
         @Override // fw.u
@@ -505,7 +505,7 @@ public abstract class u {
             if (obj == null) {
                 return;
             }
-            xVar.g((String) this.f24538a.a(obj), null, this.f24539b);
+            xVar.g((String) this.f24539a.a(obj), null, this.f24540b);
         }
     }
 
@@ -513,7 +513,7 @@ public abstract class u {
     static final class o extends u {
 
         /* renamed from: a  reason: collision with root package name */
-        static final o f24540a = new o();
+        static final o f24541a = new o();
 
         private o() {
         }
@@ -532,15 +532,15 @@ public abstract class u {
     static final class p extends u {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Method f24541a;
+        private final Method f24542a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f24542b;
+        private final int f24543b;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public p(Method method, int i10) {
-            this.f24541a = method;
-            this.f24542b = i10;
+            this.f24542a = method;
+            this.f24543b = i10;
         }
 
         @Override // fw.u
@@ -549,7 +549,7 @@ public abstract class u {
                 xVar.m(obj);
                 return;
             }
-            throw e0.p(this.f24541a, this.f24542b, "@Url parameter is null.", new Object[0]);
+            throw e0.p(this.f24542a, this.f24543b, "@Url parameter is null.", new Object[0]);
         }
     }
 
@@ -557,16 +557,16 @@ public abstract class u {
     static final class q extends u {
 
         /* renamed from: a  reason: collision with root package name */
-        final Class f24543a;
+        final Class f24544a;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public q(Class cls) {
-            this.f24543a = cls;
+            this.f24544a = cls;
         }
 
         @Override // fw.u
         void a(x xVar, Object obj) {
-            xVar.h(this.f24543a, obj);
+            xVar.h(this.f24544a, obj);
         }
     }
 

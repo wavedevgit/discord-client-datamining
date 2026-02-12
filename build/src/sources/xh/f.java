@@ -5,5 +5,5 @@ import android.content.Intent;
 abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    static final Intent f54772a = new Intent("com.google.android.finsky.ageverification.BIND").setPackage("com.android.vending");
+    static final Intent f54773a = new Intent("com.google.android.finsky.ageverification.BIND").setPackage("com.android.vending");
 }

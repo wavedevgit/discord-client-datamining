@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class AddressAutocompleteResponseJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20767a;
+    private final m.b f20768a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f20768b;
+    private final h f20769b;
 
     public AddressAutocompleteResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("meta");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20767a = a10;
+        this.f20768a = a10;
         h f10 = moshi.f(Meta.class, x0.d(), "meta");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20768b = f10;
+        this.f20769b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -36,9 +36,9 @@ public final class AddressAutocompleteResponseJsonAdapter extends h {
         reader.u();
         Meta meta = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20767a);
+            int J = reader.J(this.f20768a);
             if (J != -1) {
-                if (J == 0 && (meta = (Meta) this.f20768b.fromJson(reader)) == null) {
+                if (J == 0 && (meta = (Meta) this.f20769b.fromJson(reader)) == null) {
                     throw c.x("meta", "meta", reader);
                 }
             } else {
@@ -60,7 +60,7 @@ public final class AddressAutocompleteResponseJsonAdapter extends h {
         if (addressAutocompleteResponse != null) {
             writer.i();
             writer.J("meta");
-            this.f20768b.toJson(writer, addressAutocompleteResponse.a());
+            this.f20769b.toJson(writer, addressAutocompleteResponse.a());
             writer.s();
             return;
         }

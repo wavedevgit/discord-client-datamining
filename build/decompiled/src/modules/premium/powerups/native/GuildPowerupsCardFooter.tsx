@@ -185,33 +185,33 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot9 = var5;
     var4 = function arg0() {
-        _fun102975: for (var _fun102975_ip = 0;;) switch (_fun102975_ip) {
+        _fun102960: for (var _fun102960_ip = 0;;) switch (_fun102960_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.status;
                 var0 = null;
                 if (!(var0 != var1)) {
-                    _fun102975_ip = 155;
-                    continue _fun102975
+                    _fun102960_ip = 155;
+                    continue _fun102960
                 }
             case 17:
                 var3 = var1.type;
                 var2 = 'expiring';
                 if (!(var2 !== var3)) {
-                    _fun102975_ip = 121;
-                    continue _fun102975
+                    _fun102960_ip = 121;
+                    continue _fun102960
                 }
             case 32:
                 var2 = 'removing';
                 if (!(var2 !== var3)) {
-                    _fun102975_ip = 87;
-                    continue _fun102975
+                    _fun102960_ip = 87;
+                    continue _fun102960
                 }
             case 42:
                 var2 = 'active';
                 if (!(var2 !== var3)) {
-                    _fun102975_ip = 54;
-                    continue _fun102975
+                    _fun102960_ip = 54;
+                    continue _fun102960
                 }
             case 50:
                 var2 = undefined;
@@ -249,7 +249,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot10 = var4;
     var3 = function arg0() {
-        _fun102976: for (var _fun102976_ip = 0;;) switch (_fun102976_ip) {
+        _fun102961: for (var _fun102961_ip = 0;;) switch (_fun102961_ip) {
             case 0:
                 var0 = arg0;
                 var15 = var0.cost;
@@ -261,8 +261,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var13 == var15;
                 var0 = null;
                 if (var1) {
-                    _fun102976_ip = 280;
-                    continue _fun102976
+                    _fun102961_ip = 280;
+                    continue _fun102961
                 }
             case 42:
                 var3 = _closure1_slot5;
@@ -313,8 +313,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var13 != var14;
                 var13 = '';
                 if (!var15) {
-                    _fun102976_ip = 245;
-                    continue _fun102976
+                    _fun102961_ip = 245;
+                    continue _fun102961
                 }
             case 242:
                 var13 = var14;
@@ -419,4 +419,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.GuildPowerupsCardFooter = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 3272, 671, 3938, 5453, 1234, 1892, 13410, 13382, 7733, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 3272, 671, 3938, 5454, 1234, 1892, 13406, 13378, 7251, 2]);

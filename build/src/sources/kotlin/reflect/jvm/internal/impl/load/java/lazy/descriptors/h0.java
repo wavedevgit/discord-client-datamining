@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class h0 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaScope f32966d;
+    private final LazyJavaScope f32967d;
 
     public h0(LazyJavaScope lazyJavaScope) {
-        this.f32966d = lazyJavaScope;
+        this.f32967d = lazyJavaScope;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         Set n10;
-        n10 = LazyJavaScope.n(this.f32966d);
+        n10 = LazyJavaScope.n(this.f32967d);
         return n10;
     }
 }

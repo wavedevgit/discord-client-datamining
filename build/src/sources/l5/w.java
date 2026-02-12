@@ -5,9 +5,9 @@ public enum w {
     
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f35675d;
+    public final int f35676d;
 
     w(int i10) {
-        this.f35675d = i10;
+        this.f35676d = i10;
     }
 }

@@ -14,10 +14,10 @@ import okhttp3.OkHttpClient;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static DataSource.Factory f8926a;
+    private static DataSource.Factory f8927a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static String f8927b;
+    private static String f8928b;
 
     private static DataSource.Factory a(ReactContext reactContext, r rVar, Map map) {
         return new com.google.android.exoplayer2.upstream.c(reactContext, rVar, b(reactContext, rVar, map));
@@ -34,20 +34,20 @@ public abstract class b {
     }
 
     public static DataSource.Factory c(ReactContext reactContext, r rVar, Map map) {
-        if (f8926a == null || (map != null && !map.isEmpty())) {
-            f8926a = a(reactContext, rVar, map);
+        if (f8927a == null || (map != null && !map.isEmpty())) {
+            f8927a = a(reactContext, rVar, map);
         }
-        return f8926a;
+        return f8927a;
     }
 
     public static String d(ReactContext reactContext) {
-        if (f8927b == null) {
-            f8927b = w0.r0(reactContext, "ReactNativeVideo");
+        if (f8928b == null) {
+            f8928b = w0.r0(reactContext, "ReactNativeVideo");
         }
-        return f8927b;
+        return f8928b;
     }
 
     public static void e(DataSource.Factory factory) {
-        f8926a = factory;
+        f8927a = factory;
     }
 }

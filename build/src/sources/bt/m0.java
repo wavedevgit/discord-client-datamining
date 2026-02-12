@@ -32,8 +32,8 @@ public final class m0 extends ct.d {
         AtomicReference atomicReference = this.f7611a;
         e0Var = l0.f7608a;
         if (!p0.d.a(atomicReference, e0Var, eVar)) {
-            Result.a aVar = Result.f31984e;
-            eVar.resumeWith(Result.b(Unit.f31987a));
+            Result.a aVar = Result.f31985e;
+            eVar.resumeWith(Result.b(Unit.f31988a));
         }
         Object B = eVar.B();
         if (B == gs.b.f()) {
@@ -42,14 +42,14 @@ public final class m0 extends ct.d {
         if (B == gs.b.f()) {
             return B;
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @Override // ct.d
     /* renamed from: f */
     public Continuation[] b(k0 k0Var) {
         dt.d.b(this.f7611a, null);
-        return ct.c.f21023a;
+        return ct.c.f21024a;
     }
 
     public final void g() {
@@ -74,8 +74,8 @@ public final class m0 extends ct.d {
                         AtomicReference atomicReference3 = this.f7611a;
                         e0Var4 = l0.f7608a;
                         if (p0.d.a(atomicReference3, a10, e0Var4)) {
-                            Result.a aVar = Result.f31984e;
-                            ((kotlinx.coroutines.e) a10).resumeWith(Result.b(Unit.f31987a));
+                            Result.a aVar = Result.f31985e;
+                            ((kotlinx.coroutines.e) a10).resumeWith(Result.b(Unit.f31988a));
                             return;
                         }
                     }

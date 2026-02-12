@@ -1,154 +1,87 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
-    var3 = metroImportDefault;
     var2 = exports;
-    var4 = dependencyMap;
     var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
     var1 = {};
     var0 = true;
     var1.value = var0;
     var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var1);
-    var0 = 0;
-    var1 = var4[var0];
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var1 = function() { // Environment: var0
+        var0 = function() {
+            var0 = undefined;
+            return var0;
+        };
+        var2 = function(arg0) { // Environment: var1
+            _fun46312: for (var _fun46312_ip = 0;;) switch (_fun46312_ip) {
+                case 0:
+                    var2 = arg0;
+                    var0 = var2;
+                    if (var0) {
+                        _fun46312_ip = 15;
+                        continue _fun46312
+                    }
+                case 9:
+                    var1 = 0;
+                    var0 = var1 === var2;
+                case 15:
+                    if (var0) {
+                        _fun46312_ip = 24;
+                        continue _fun46312
+                    }
+                case 18:
+                    var1 = false;
+                    var0 = var1 === var2;
+                case 24:
+                    var0 = !var0;
+                    return var0;
+            }
+        };
+        var0.isNullOrUndefined = var2;
+        var2 = function(arg0) { // Environment: var1
+            var1 = null;
+            var0 = arg0;
+            var0 = var1 === var0;
+            return var0;
+        };
+        var0.isNull = var2;
+        var2 = function(arg0) { // Environment: var1
+            var1 = undefined;
+            var0 = arg0;
+            var0 = var1 === var0;
+            return var0;
+        };
+        var0.isUndefined = var2;
+        var2 = function(arg0) { // Environment: var1
+            var1 = 'number';
+            var0 = arg0;
+            var0 = typeof var0;
+            var0 = var1 === var0;
+            return var0;
+        };
+        var0.isNumber = var2;
+        var2 = function(arg0) { // Environment: var1
+            var1 = 'string';
+            var0 = arg0;
+            var0 = typeof var0;
+            var0 = var1 === var0;
+            return var0;
+        };
+        var0.isString = var2;
+        var1 = function(arg0) { // Environment: var1
+            var1 = 'object';
+            var0 = arg0;
+            var0 = typeof var0;
+            var0 = var1 === var0;
+            return var0;
+        };
+        var0.isObject = var1;
+        return var0;
+    };
     var0 = undefined;
-    var1 = var3.bind(var0)(var1);
-    var2.FlashList = var1;
-    var1 = 1;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.FlashListProps;
-    var2.FlashListProps = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.ContentStyle;
-    var2.ContentStyle = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.ListRenderItem;
-    var2.ListRenderItem = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.ListRenderItemInfo;
-    var2.ListRenderItemInfo = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.RenderTarget;
-    var2.RenderTarget = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.RenderTargetOptions;
-    var2.RenderTargetOptions = var1;
-    var1 = 2;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.useOnNativeBlankAreaEvents;
-    var2.useOnNativeBlankAreaEvents = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.BlankAreaEventHandler;
-    var2.BlankAreaEventHandler = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.BlankAreaEvent;
-    var2.BlankAreaEvent = var1;
-    var1 = 3;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.useBenchmark;
-    var2.useBenchmark = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.BenchmarkParams;
-    var2.BenchmarkParams = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.BenchmarkResult;
-    var2.BenchmarkResult = var1;
-    var1 = 4;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.useDataMultiplier;
-    var2.useDataMultiplier = var1;
-    var1 = 5;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.useFlatListBenchmark;
-    var2.useFlatListBenchmark = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.FlatListBenchmarkParams;
-    var2.FlatListBenchmarkParams = var1;
-    var1 = 6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.useBlankAreaTracker;
-    var2.useBlankAreaTracker = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.BlankAreaTrackerResult;
-    var2.BlankAreaTrackerResult = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.BlankAreaTrackerConfig;
-    var2.BlankAreaTrackerConfig = var1;
-    var1 = 7;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryFlashList;
-    var2.MasonryFlashList = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryFlashListProps;
-    var2.MasonryFlashListProps = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryFlashListScrollEvent;
-    var2.MasonryFlashListScrollEvent = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryFlashListRef;
-    var2.MasonryFlashListRef = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryListItem;
-    var2.MasonryListItem = var6;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.MasonryListRenderItem;
-    var2.MasonryListRenderItem = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.MasonryListRenderItemInfo;
-    var2.MasonryListRenderItemInfo = var1;
-    var1 = 8;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.JSFPSMonitor;
-    var2.JSFPSMonitor = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.JSFPSResult;
-    var2.JSFPSResult = var1;
-    var1 = 9;
-    var6 = var4[var1];
-    var6 = var5.bind(var0)(var6);
-    var6 = var6.autoScroll;
-    var2.autoScroll = var6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.Cancellable;
-    var2.Cancellable = var1;
-    var1 = 10;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.ViewToken = var1;
-    var1 = 11;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.CellContainer = var1;
+    var1 = var1.bind(var0)();
+    var2.ObjectUtil = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5171, 5177, 5174, 5229, 5234, 5235, 5230, 5236, 5232, 5231, 5237, 5176]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

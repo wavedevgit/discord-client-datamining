@@ -12,14 +12,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = false;
     var _closure1_slot0 = var2;
     var2 = function() {
-        _fun37505: for (var _fun37505_ip = 0;;) switch (_fun37505_ip) {
+        _fun37527: for (var _fun37527_ip = 0;;) switch (_fun37527_ip) {
             case 0:
                 var0 = undefined;
                 var1 = undefined;
                 var2 = _closure1_slot0;
                 if (!var2) {
-                    _fun37505_ip = 41;
-                    continue _fun37505
+                    _fun37527_ip = 40;
+                    continue _fun37527
                 }
             case 14:
                 var2 = global;
@@ -28,7 +28,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.apply;
                 var1 = arguments;
                 var1 = var2.bind(var3)(var4, var1);
-            case 41:
+            case 40:
                 return var0;
         }
     };

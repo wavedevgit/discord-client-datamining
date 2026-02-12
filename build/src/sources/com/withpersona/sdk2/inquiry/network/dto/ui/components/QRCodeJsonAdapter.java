@@ -85,7 +85,7 @@ public final class QRCodeJsonAdapter extends h {
         }
         Constructor<QRCode> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = QRCode.class.getDeclaredConstructor(String.class, QRCode.Attributes.class, QRCode.QRCodeComponentStyle.class, Integer.TYPE, c.f21827c);
+            constructor = QRCode.class.getDeclaredConstructor(String.class, QRCode.Attributes.class, QRCode.QRCodeComponentStyle.class, Integer.TYPE, c.f21828c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

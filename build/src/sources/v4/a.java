@@ -5,30 +5,30 @@ import android.content.Context;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f51326a = new a();
+    public static final a f51327a = new a();
 
     /* renamed from: b  reason: collision with root package name */
-    private static h f51327b;
+    private static h f51328b;
 
     private a() {
     }
 
     public static final h a(Context context) {
-        h hVar = f51327b;
+        h hVar = f51328b;
         if (hVar == null) {
-            return f51326a.b(context);
+            return f51327a.b(context);
         }
         return hVar;
     }
 
     private final synchronized h b(Context context) {
-        h hVar = f51327b;
+        h hVar = f51328b;
         if (hVar != null) {
             return hVar;
         }
         context.getApplicationContext();
         h a10 = i.a(context);
-        f51327b = a10;
+        f51328b = a10;
         return a10;
     }
 }

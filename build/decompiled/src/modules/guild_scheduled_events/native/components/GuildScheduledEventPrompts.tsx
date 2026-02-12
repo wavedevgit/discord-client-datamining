@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_scheduled_events/native/components/GuildScheduledEventPrompts.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun65789: for (var _fun65789_ip = 0;;) switch (_fun65789_ip) {
+        _fun67164: for (var _fun67164_ip = 0;;) switch (_fun67164_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.guild;
@@ -97,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.canCreateGuildEvent;
                 var0 = null;
                 if (!var1) {
-                    _fun65789_ip = 296;
-                    continue _fun65789
+                    _fun67164_ip = 296;
+                    continue _fun67164
                 }
             case 87:
                 var3 = _closure1_slot3;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ScheduleEventPrompt = var3;
     var1 = function arg0() {
-        _fun65791: for (var _fun65791_ip = 0;;) switch (_fun65791_ip) {
+        _fun67166: for (var _fun67166_ip = 0;;) switch (_fun67166_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.event;
@@ -190,8 +190,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.bind(var4)(var1);
                 var0 = null;
                 if (!var1) {
-                    _fun65791_ip = 395;
-                    continue _fun65791
+                    _fun67166_ip = 395;
+                    continue _fun67166
                 }
             case 110:
                 var3 = _closure1_slot3;
@@ -273,4 +273,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.StartEventPrompt = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 8146, 5440, 8152, 8235, 1234, 3134, 3047, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 8218, 5441, 8224, 8311, 1234, 3134, 3047, 2]);

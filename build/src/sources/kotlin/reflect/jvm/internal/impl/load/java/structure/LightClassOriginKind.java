@@ -8,17 +8,17 @@ import kotlin.enums.EnumEntries;
 public final class LightClassOriginKind {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ LightClassOriginKind[] f33028d;
+    private static final /* synthetic */ LightClassOriginKind[] f33029d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f33029e;
+    private static final /* synthetic */ EnumEntries f33030e;
     public static final LightClassOriginKind SOURCE = new LightClassOriginKind("SOURCE", 0);
     public static final LightClassOriginKind BINARY = new LightClassOriginKind("BINARY", 1);
 
     static {
         LightClassOriginKind[] a10 = a();
-        f33028d = a10;
-        f33029e = a.a(a10);
+        f33029d = a10;
+        f33030e = a.a(a10);
     }
 
     private LightClassOriginKind(String str, int i10) {
@@ -33,6 +33,6 @@ public final class LightClassOriginKind {
     }
 
     public static LightClassOriginKind[] values() {
-        return (LightClassOriginKind[]) f33028d.clone();
+        return (LightClassOriginKind[]) f33029d.clone();
     }
 }

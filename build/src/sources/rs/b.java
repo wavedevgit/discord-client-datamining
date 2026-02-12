@@ -6,44 +6,44 @@ import kotlin.collections.m0;
 public final class b extends m0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f47744d;
+    private final int f47745d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f47745e;
+    private final int f47746e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f47746i;
+    private boolean f47747i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f47747o;
+    private int f47748o;
 
     public b(int i10, int i11, int i12) {
-        this.f47744d = i12;
-        this.f47745e = i11;
+        this.f47745d = i12;
+        this.f47746e = i11;
         boolean z10 = false;
         if (i12 <= 0 ? i10 >= i11 : i10 <= i11) {
             z10 = true;
         }
-        this.f47746i = z10;
-        this.f47747o = z10 ? i10 : i11;
+        this.f47747i = z10;
+        this.f47748o = z10 ? i10 : i11;
     }
 
     @Override // java.util.Iterator
     public boolean hasNext() {
-        return this.f47746i;
+        return this.f47747i;
     }
 
     @Override // kotlin.collections.m0
     public int nextInt() {
-        int i10 = this.f47747o;
-        if (i10 == this.f47745e) {
-            if (this.f47746i) {
-                this.f47746i = false;
+        int i10 = this.f47748o;
+        if (i10 == this.f47746e) {
+            if (this.f47747i) {
+                this.f47747i = false;
                 return i10;
             }
             throw new NoSuchElementException();
         }
-        this.f47747o = this.f47744d + i10;
+        this.f47748o = this.f47745d + i10;
         return i10;
     }
 }

@@ -7,14 +7,14 @@ public enum h implements e {
     
 
     /* renamed from: e  reason: collision with root package name */
-    private static final AtomicReference f35839e = new AtomicReference(null);
+    private static final AtomicReference f35840e = new AtomicReference(null);
 
     public final void a(f fVar) {
-        f35839e.set(fVar);
+        f35840e.set(fVar);
     }
 
     @Override // li.e
     public final f zza() {
-        return (f) f35839e.get();
+        return (f) f35840e.get();
     }
 }

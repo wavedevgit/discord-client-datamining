@@ -5,7 +5,7 @@ import bj.c;
 final class db implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final db f39159a = new db();
+    static final db f39160a = new db();
 
     static {
         c.b a10 = bj.c.a("shadowRemovalType");

@@ -35,7 +35,7 @@ public final class ContentResolverMedia {
     private final int height;
 
     /* renamed from: id  reason: collision with root package name */
-    private final long f10160id;
+    private final long f10161id;
     @NotNull
     private final MediaType mediaType;
     private final String mimeType;
@@ -602,7 +602,7 @@ public final class ContentResolverMedia {
     public ContentResolverMedia(long j10, @NotNull Uri uri, @NotNull MediaType mediaType, String str, String str2, int i10, int i11, int i12, int i13) {
         Intrinsics.checkNotNullParameter(uri, "uri");
         Intrinsics.checkNotNullParameter(mediaType, "mediaType");
-        this.f10160id = j10;
+        this.f10161id = j10;
         this.uri = uri;
         this.mediaType = mediaType;
         this.mimeType = str;
@@ -615,7 +615,7 @@ public final class ContentResolverMedia {
 
     public static /* synthetic */ ContentResolverMedia copy$default(ContentResolverMedia contentResolverMedia, long j10, Uri uri, MediaType mediaType, String str, String str2, int i10, int i11, int i12, int i13, int i14, Object obj) {
         if ((i14 & 1) != 0) {
-            j10 = contentResolverMedia.f10160id;
+            j10 = contentResolverMedia.f10161id;
         }
         long j11 = j10;
         if ((i14 & 2) != 0) {
@@ -629,7 +629,7 @@ public final class ContentResolverMedia {
     }
 
     public final long component1() {
-        return this.f10160id;
+        return this.f10161id;
     }
 
     @NotNull
@@ -679,7 +679,7 @@ public final class ContentResolverMedia {
         }
         if (obj instanceof ContentResolverMedia) {
             ContentResolverMedia contentResolverMedia = (ContentResolverMedia) obj;
-            return this.f10160id == contentResolverMedia.f10160id && Intrinsics.areEqual(this.uri, contentResolverMedia.uri) && this.mediaType == contentResolverMedia.mediaType && Intrinsics.areEqual(this.mimeType, contentResolverMedia.mimeType) && Intrinsics.areEqual(this.name, contentResolverMedia.name) && this.duration == contentResolverMedia.duration && this.dateAdded == contentResolverMedia.dateAdded && this.width == contentResolverMedia.width && this.height == contentResolverMedia.height;
+            return this.f10161id == contentResolverMedia.f10161id && Intrinsics.areEqual(this.uri, contentResolverMedia.uri) && this.mediaType == contentResolverMedia.mediaType && Intrinsics.areEqual(this.mimeType, contentResolverMedia.mimeType) && Intrinsics.areEqual(this.name, contentResolverMedia.name) && this.duration == contentResolverMedia.duration && this.dateAdded == contentResolverMedia.dateAdded && this.width == contentResolverMedia.width && this.height == contentResolverMedia.height;
         }
         return false;
     }
@@ -697,7 +697,7 @@ public final class ContentResolverMedia {
     }
 
     public final long getId() {
-        return this.f10160id;
+        return this.f10161id;
     }
 
     @NotNull
@@ -723,7 +723,7 @@ public final class ContentResolverMedia {
     }
 
     public int hashCode() {
-        int hashCode = ((((Long.hashCode(this.f10160id) * 31) + this.uri.hashCode()) * 31) + this.mediaType.hashCode()) * 31;
+        int hashCode = ((((Long.hashCode(this.f10161id) * 31) + this.uri.hashCode()) * 31) + this.mediaType.hashCode()) * 31;
         String str = this.mimeType;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
         String str2 = this.name;
@@ -732,7 +732,7 @@ public final class ContentResolverMedia {
 
     @NotNull
     public String toString() {
-        long j10 = this.f10160id;
+        long j10 = this.f10161id;
         Uri uri = this.uri;
         MediaType mediaType = this.mediaType;
         String str = this.mimeType;

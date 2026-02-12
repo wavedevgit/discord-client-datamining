@@ -316,12 +316,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 }
             case 264:
                 if (var3) {
-                    _fun12615_ip = 417;
+                    _fun12615_ip = 416;
                     continue _fun12615
                 }
             case 270:
                 if (!var0) {
-                    _fun12615_ip = 507;
+                    _fun12615_ip = 505;
                     continue _fun12615
                 }
             case 276:
@@ -354,9 +354,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var3.bind(var10)(var0);
                 var0 = var10.end;
                 var0 = var0.bind(var10)();
-                _fun12615_ip = 507;
+                _fun12615_ip = 505;
                 continue _fun12615;
-            case 417:
+            case 416:
                 var9 = _closure1_slot0;
                 var0 = _closure1_slot1;
                 var3 = var0[var1];
@@ -375,7 +375,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = ' transaction because navigation is from app restart - preserving error context.';
                 var0 = var10.bind(var9)(var11, var0);
                 var0 = var3.bind(var4)(var0);
-            case 507:
+            case 505:
                 var3 = global;
                 var10 = var3.Object;
                 var9 = var10.assign;
@@ -400,12 +400,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var6.log;
                 var13 = var9.op;
                 if (var13) {
-                    _fun12615_ip = 621;
+                    _fun12615_ip = 618;
                     continue _fun12615
                 }
-            case 615:
+            case 612:
                 var13 = 'unknown op';
-            case 621:
+            case 618:
                 var16 = var9.name;
                 var3 = var3.HermesInternal;
                 var11 = var3.concat;

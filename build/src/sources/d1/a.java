@@ -5,19 +5,19 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public abstract class a {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final d f21317b = new d(null);
+    public static final d f21318b = new d(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final a f21318c = new C0285a(new float[]{0.8951f, -0.7502f, 0.0389f, 0.2664f, 1.7135f, -0.0685f, -0.1614f, 0.0367f, 1.0296f});
+    private static final a f21319c = new C0285a(new float[]{0.8951f, -0.7502f, 0.0389f, 0.2664f, 1.7135f, -0.0685f, -0.1614f, 0.0367f, 1.0296f});
 
     /* renamed from: d  reason: collision with root package name */
-    private static final a f21319d = new c(new float[]{0.40024f, -0.2263f, 0.0f, 0.7076f, 1.16532f, 0.0f, -0.08081f, 0.0457f, 0.91822f});
+    private static final a f21320d = new c(new float[]{0.40024f, -0.2263f, 0.0f, 0.7076f, 1.16532f, 0.0f, -0.08081f, 0.0457f, 0.91822f});
 
     /* renamed from: e  reason: collision with root package name */
-    private static final a f21320e = new b(new float[]{0.7328f, -0.7036f, 0.003f, 0.4296f, 1.6975f, 0.0136f, -0.1624f, 0.0061f, 0.9834f});
+    private static final a f21321e = new b(new float[]{0.7328f, -0.7036f, 0.003f, 0.4296f, 1.6975f, 0.0136f, -0.1624f, 0.0061f, 0.9834f});
 
     /* renamed from: a  reason: collision with root package name */
-    private final float[] f21321a;
+    private final float[] f21322a;
 
     /* renamed from: d1.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -60,7 +60,7 @@ public abstract class a {
         }
 
         public final a a() {
-            return a.f21318c;
+            return a.f21319c;
         }
 
         private d() {
@@ -72,10 +72,10 @@ public abstract class a {
     }
 
     public final float[] b() {
-        return this.f21321a;
+        return this.f21322a;
     }
 
     private a(float[] fArr) {
-        this.f21321a = fArr;
+        this.f21322a = fArr;
     }
 }

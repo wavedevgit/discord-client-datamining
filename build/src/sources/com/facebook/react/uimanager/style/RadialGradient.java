@@ -91,29 +91,29 @@ public final class RadialGradient implements Gradient {
             @NotNull
 
             /* renamed from: x  reason: collision with root package name */
-            private final LengthPercentage f11966x;
+            private final LengthPercentage f11967x;
             @NotNull
 
             /* renamed from: y  reason: collision with root package name */
-            private final LengthPercentage f11967y;
+            private final LengthPercentage f11968y;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public Dimensions(@NotNull LengthPercentage x10, @NotNull LengthPercentage y10) {
                 super(null);
                 Intrinsics.checkNotNullParameter(x10, "x");
                 Intrinsics.checkNotNullParameter(y10, "y");
-                this.f11966x = x10;
-                this.f11967y = y10;
+                this.f11967x = x10;
+                this.f11968y = y10;
             }
 
             @NotNull
             public final LengthPercentage getX() {
-                return this.f11966x;
+                return this.f11967x;
             }
 
             @NotNull
             public final LengthPercentage getY() {
-                return this.f11967y;
+                return this.f11968y;
             }
         }
 

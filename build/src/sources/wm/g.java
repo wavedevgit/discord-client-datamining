@@ -5,5 +5,5 @@ import kotlin.jvm.internal.Reflection;
 public abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f52929a = Reflection.getOrCreateKotlinClass(f.class).getQualifiedName();
+    private static final String f52930a = Reflection.getOrCreateKotlinClass(f.class).getQualifiedName();
 }

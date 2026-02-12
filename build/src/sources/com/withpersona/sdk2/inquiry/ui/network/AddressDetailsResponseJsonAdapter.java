@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class AddressDetailsResponseJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20793a;
+    private final m.b f20794a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f20794b;
+    private final h f20795b;
 
     public AddressDetailsResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("attributes");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20793a = a10;
+        this.f20794a = a10;
         h f10 = moshi.f(LocationData.class, x0.d(), "attributes");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20794b = f10;
+        this.f20795b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -35,9 +35,9 @@ public final class AddressDetailsResponseJsonAdapter extends h {
         reader.u();
         LocationData locationData = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20793a);
+            int J = reader.J(this.f20794a);
             if (J != -1) {
-                if (J == 0 && (locationData = (LocationData) this.f20794b.fromJson(reader)) == null) {
+                if (J == 0 && (locationData = (LocationData) this.f20795b.fromJson(reader)) == null) {
                     throw c.x("attributes", "attributes", reader);
                 }
             } else {
@@ -59,7 +59,7 @@ public final class AddressDetailsResponseJsonAdapter extends h {
         if (addressDetailsResponse != null) {
             writer.i();
             writer.J("attributes");
-            this.f20794b.toJson(writer, addressDetailsResponse.a());
+            this.f20795b.toJson(writer, addressDetailsResponse.a());
             writer.s();
             return;
         }

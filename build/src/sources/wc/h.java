@@ -5,10 +5,10 @@ import oe.h0;
 final class h implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f52534a;
+    public final String f52535a;
 
     private h(String str) {
-        this.f52534a = str;
+        this.f52535a = str;
     }
 
     public static h a(h0 h0Var) {

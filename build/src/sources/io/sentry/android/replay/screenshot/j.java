@@ -35,62 +35,62 @@ import kotlin.jvm.internal.Lambda;
 public final class j implements k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r f28938a;
+    private final r f28939a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final k7 f28939b;
+    private final k7 f28940b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final s f28940c;
+    private final s f28941c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final io.sentry.android.replay.util.c f28941d;
+    private final io.sentry.android.replay.util.c f28942d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ScheduledExecutorService f28942e;
+    private final ScheduledExecutorService f28943e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final io.sentry.android.replay.util.g f28943f;
+    private final io.sentry.android.replay.util.g f28944f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Lazy f28944g;
+    private final Lazy f28945g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Bitmap f28945h;
+    private final Bitmap f28946h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Lazy f28946i;
+    private final Lazy f28947i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final Lazy f28947j;
+    private final Lazy f28948j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final AtomicBoolean f28948k;
+    private final AtomicBoolean f28949k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final Lazy f28949l;
+    private final Lazy f28950l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final AtomicBoolean f28950m;
+    private final AtomicBoolean f28951m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final AtomicBoolean f28951n;
+    private final AtomicBoolean f28952n;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends Lambda implements Function1 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ List f28953e;
+        final /* synthetic */ List f28954e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Canvas f28954i;
+        final /* synthetic */ Canvas f28955i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(List list, Canvas canvas) {
             super(1);
-            this.f28953e = list;
-            this.f28954i = canvas;
+            this.f28954e = list;
+            this.f28955i = canvas;
         }
 
         @Override // kotlin.jvm.functions.Function1
@@ -106,7 +106,7 @@ public final class j implements k {
                 if (node instanceof b.c) {
                     List e10 = CollectionsKt.e(node.d());
                     j jVar = j.this;
-                    a10 = v.a(e10, Integer.valueOf(jVar.r(jVar.f28945h, node.d())));
+                    a10 = v.a(e10, Integer.valueOf(jVar.r(jVar.f28946h, node.d())));
                 } else {
                     int i11 = -16777216;
                     if (node instanceof b.d) {
@@ -122,13 +122,13 @@ public final class j implements k {
                 }
                 List<Rect> list = (List) a10.a();
                 j.this.s().setColor(((Number) a10.b()).intValue());
-                Canvas canvas = this.f28954i;
+                Canvas canvas = this.f28955i;
                 j jVar2 = j.this;
                 for (Rect rect : list) {
                     canvas.drawRoundRect(new RectF(rect), 10.0f, 10.0f, jVar2.s());
                 }
-                if (j.this.f28939b.getReplayController().y()) {
-                    this.f28953e.addAll(list);
+                if (j.this.f28940b.getReplayController().y()) {
+                    this.f28954e.addAll(list);
                 }
             }
             return Boolean.TRUE;
@@ -139,7 +139,7 @@ public final class j implements k {
     static final class b extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f28955d = new b();
+        public static final b f28956d = new b();
 
         b() {
             super(0);
@@ -163,7 +163,7 @@ public final class j implements k {
         public final Matrix invoke() {
             Matrix matrix = new Matrix();
             j jVar = j.this;
-            matrix.preScale(jVar.f28940c.e(), jVar.f28940c.f());
+            matrix.preScale(jVar.f28941c.e(), jVar.f28941c.f());
             return matrix;
         }
     }
@@ -172,7 +172,7 @@ public final class j implements k {
     static final class d extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final d f28957d = new d();
+        public static final d f28958d = new d();
 
         d() {
             super(0);
@@ -205,39 +205,39 @@ public final class j implements k {
         Intrinsics.checkNotNullParameter(options, "options");
         Intrinsics.checkNotNullParameter(config, "config");
         Intrinsics.checkNotNullParameter(debugOverlayDrawable, "debugOverlayDrawable");
-        this.f28938a = rVar;
-        this.f28939b = options;
-        this.f28940c = config;
-        this.f28941d = debugOverlayDrawable;
-        this.f28942e = executorProvider.a();
-        this.f28943f = executorProvider.i();
+        this.f28939a = rVar;
+        this.f28940b = options;
+        this.f28941c = config;
+        this.f28942d = debugOverlayDrawable;
+        this.f28943e = executorProvider.a();
+        this.f28944f = executorProvider.i();
         o oVar = o.f6083i;
-        this.f28944g = as.l.a(oVar, d.f28957d);
+        this.f28945g = as.l.a(oVar, d.f28958d);
         Bitmap createBitmap = Bitmap.createBitmap(config.d(), config.c(), Bitmap.Config.ARGB_8888);
         Intrinsics.checkNotNullExpressionValue(createBitmap, "createBitmap(...)");
-        this.f28945h = createBitmap;
-        this.f28946i = as.l.a(oVar, new e());
-        this.f28947j = as.l.a(oVar, new c());
-        this.f28948k = new AtomicBoolean(false);
-        this.f28949l = as.l.a(oVar, b.f28955d);
-        this.f28950m = new AtomicBoolean(false);
-        this.f28951n = new AtomicBoolean(false);
+        this.f28946h = createBitmap;
+        this.f28947i = as.l.a(oVar, new e());
+        this.f28948j = as.l.a(oVar, new c());
+        this.f28949k = new AtomicBoolean(false);
+        this.f28950l = as.l.a(oVar, b.f28956d);
+        this.f28951m = new AtomicBoolean(false);
+        this.f28952n = new AtomicBoolean(false);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void n(final j jVar, final View view, int i10) {
-        if (jVar.f28951n.get()) {
-            jVar.f28939b.getLogger().c(SentryLevel.DEBUG, "PixelCopyStrategy is closed, ignoring capture result", new Object[0]);
+        if (jVar.f28952n.get()) {
+            jVar.f28940b.getLogger().c(SentryLevel.DEBUG, "PixelCopyStrategy is closed, ignoring capture result", new Object[0]);
         } else if (i10 != 0) {
-            jVar.f28939b.getLogger().c(SentryLevel.INFO, "Failed to capture replay recording: %d", Integer.valueOf(i10));
-            jVar.f28948k.set(false);
-        } else if (jVar.f28950m.get()) {
-            jVar.f28939b.getLogger().c(SentryLevel.INFO, "Failed to determine view hierarchy, not capturing", new Object[0]);
-            jVar.f28948k.set(false);
+            jVar.f28940b.getLogger().c(SentryLevel.INFO, "Failed to capture replay recording: %d", Integer.valueOf(i10));
+            jVar.f28949k.set(false);
+        } else if (jVar.f28951m.get()) {
+            jVar.f28940b.getLogger().c(SentryLevel.INFO, "Failed to determine view hierarchy, not capturing", new Object[0]);
+            jVar.f28949k.set(false);
         } else {
-            final io.sentry.android.replay.viewhierarchy.b a10 = io.sentry.android.replay.viewhierarchy.b.f29046m.a(view, null, 0, jVar.f28939b);
-            n.k(view, a10, jVar.f28939b);
-            jVar.f28942e.submit(new io.sentry.android.replay.util.j("screenshot_recorder.mask", new Runnable() { // from class: io.sentry.android.replay.screenshot.h
+            final io.sentry.android.replay.viewhierarchy.b a10 = io.sentry.android.replay.viewhierarchy.b.f29047m.a(view, null, 0, jVar.f28940b);
+            n.k(view, a10, jVar.f28940b);
+            jVar.f28943e.submit(new io.sentry.android.replay.util.j("screenshot_recorder.mask", new Runnable() { // from class: io.sentry.android.replay.screenshot.h
                 @Override // java.lang.Runnable
                 public final void run() {
                     j.o(j.this, a10, view);
@@ -248,48 +248,48 @@ public final class j implements k {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void o(final j jVar, io.sentry.android.replay.viewhierarchy.b bVar, final View view) {
-        if (!jVar.f28951n.get() && !jVar.f28945h.isRecycled()) {
+        if (!jVar.f28952n.get() && !jVar.f28946h.isRecycled()) {
             final ArrayList arrayList = new ArrayList();
-            Canvas canvas = new Canvas(jVar.f28945h);
+            Canvas canvas = new Canvas(jVar.f28946h);
             canvas.setMatrix(jVar.t());
             bVar.h(new a(arrayList, canvas));
-            if (jVar.f28939b.getReplayController().y()) {
-                jVar.f28943f.b(new Runnable() { // from class: io.sentry.android.replay.screenshot.i
+            if (jVar.f28940b.getReplayController().y()) {
+                jVar.f28944f.b(new Runnable() { // from class: io.sentry.android.replay.screenshot.i
                     @Override // java.lang.Runnable
                     public final void run() {
                         j.p(j.this, view, arrayList);
                     }
                 });
             }
-            r rVar = jVar.f28938a;
+            r rVar = jVar.f28939a;
             if (rVar != null) {
-                rVar.m(jVar.f28945h);
+                rVar.m(jVar.f28946h);
             }
-            jVar.f28948k.set(true);
-            jVar.f28950m.set(false);
+            jVar.f28949k.set(true);
+            jVar.f28951m.set(false);
             return;
         }
-        jVar.f28939b.getLogger().c(SentryLevel.DEBUG, "PixelCopyStrategy is closed, skipping masking", new Object[0]);
+        jVar.f28940b.getLogger().c(SentryLevel.DEBUG, "PixelCopyStrategy is closed, skipping masking", new Object[0]);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void p(j jVar, View view, List list) {
-        if (jVar.f28941d.getCallback() == null) {
-            view.getOverlay().add(jVar.f28941d);
+        if (jVar.f28942d.getCallback() == null) {
+            view.getOverlay().add(jVar.f28942d);
         }
-        jVar.f28941d.b(list);
+        jVar.f28942d.b(list);
         view.postInvalidate();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void q(j jVar) {
-        if (!jVar.f28945h.isRecycled()) {
-            synchronized (jVar.f28945h) {
+        if (!jVar.f28946h.isRecycled()) {
+            synchronized (jVar.f28946h) {
                 try {
-                    if (!jVar.f28945h.isRecycled()) {
-                        jVar.f28945h.recycle();
+                    if (!jVar.f28946h.isRecycled()) {
+                        jVar.f28946h.recycle();
                     }
-                    Unit unit = Unit.f31987a;
+                    Unit unit = Unit.f31988a;
                 } catch (Throwable th2) {
                     throw th2;
                 }
@@ -302,7 +302,7 @@ public final class j implements k {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final int r(Bitmap bitmap, Rect rect) {
-        if (!this.f28951n.get() && !bitmap.isRecycled() && !u().isRecycled()) {
+        if (!this.f28952n.get() && !bitmap.isRecycled() && !u().isRecycled()) {
             Rect rect2 = new Rect(rect);
             RectF rectF = new RectF(rect2);
             t().mapRect(rectF);
@@ -315,32 +315,32 @@ public final class j implements k {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final Paint s() {
-        return (Paint) this.f28949l.getValue();
+        return (Paint) this.f28950l.getValue();
     }
 
     private final Matrix t() {
-        return (Matrix) this.f28947j.getValue();
+        return (Matrix) this.f28948j.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final Bitmap u() {
-        return (Bitmap) this.f28944g.getValue();
+        return (Bitmap) this.f28945g.getValue();
     }
 
     private final Canvas v() {
-        return (Canvas) this.f28946i.getValue();
+        return (Canvas) this.f28947i.getValue();
     }
 
     @Override // io.sentry.android.replay.screenshot.k
     public boolean a() {
-        return this.f28948k.get();
+        return this.f28949k.get();
     }
 
     @Override // io.sentry.android.replay.screenshot.k
     public void b() {
         r rVar;
-        if (a() && !this.f28945h.isRecycled() && (rVar = this.f28938a) != null) {
-            rVar.m(this.f28945h);
+        if (a() && !this.f28946h.isRecycled() && (rVar = this.f28939a) != null) {
+            rVar.m(this.f28946h);
         }
     }
 
@@ -349,29 +349,29 @@ public final class j implements k {
         Intrinsics.checkNotNullParameter(root, "root");
         Window a10 = x.a(root);
         if (a10 == null) {
-            this.f28939b.getLogger().c(SentryLevel.DEBUG, "Window is invalid, not capturing screenshot", new Object[0]);
-        } else if (this.f28951n.get()) {
-            this.f28939b.getLogger().c(SentryLevel.DEBUG, "PixelCopyStrategy is closed, not capturing screenshot", new Object[0]);
+            this.f28940b.getLogger().c(SentryLevel.DEBUG, "Window is invalid, not capturing screenshot", new Object[0]);
+        } else if (this.f28952n.get()) {
+            this.f28940b.getLogger().c(SentryLevel.DEBUG, "PixelCopyStrategy is closed, not capturing screenshot", new Object[0]);
         } else {
             try {
-                this.f28950m.set(false);
-                PixelCopy.request(a10, this.f28945h, new PixelCopy.OnPixelCopyFinishedListener() { // from class: io.sentry.android.replay.screenshot.f
+                this.f28951m.set(false);
+                PixelCopy.request(a10, this.f28946h, new PixelCopy.OnPixelCopyFinishedListener() { // from class: io.sentry.android.replay.screenshot.f
                     @Override // android.view.PixelCopy.OnPixelCopyFinishedListener
                     public final void onPixelCopyFinished(int i10) {
                         j.n(j.this, root, i10);
                     }
-                }, this.f28943f.a());
+                }, this.f28944f.a());
             } catch (Throwable th2) {
-                this.f28939b.getLogger().b(SentryLevel.WARNING, "Failed to capture replay recording", th2);
-                this.f28948k.set(false);
+                this.f28940b.getLogger().b(SentryLevel.WARNING, "Failed to capture replay recording", th2);
+                this.f28949k.set(false);
             }
         }
     }
 
     @Override // io.sentry.android.replay.screenshot.k
     public void close() {
-        this.f28951n.set(true);
-        this.f28942e.submit(new io.sentry.android.replay.util.j("PixelCopyStrategy.close", new Runnable() { // from class: io.sentry.android.replay.screenshot.g
+        this.f28952n.set(true);
+        this.f28943e.submit(new io.sentry.android.replay.util.j("PixelCopyStrategy.close", new Runnable() { // from class: io.sentry.android.replay.screenshot.g
             @Override // java.lang.Runnable
             public final void run() {
                 j.q(j.this);
@@ -381,6 +381,6 @@ public final class j implements k {
 
     @Override // io.sentry.android.replay.screenshot.k
     public void onContentChanged() {
-        this.f28950m.set(true);
+        this.f28951m.set(true);
     }
 }

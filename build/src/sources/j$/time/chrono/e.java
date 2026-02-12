@@ -12,15 +12,15 @@ import java.util.Objects;
 public final class e implements c, j$.time.temporal.k, l, Serializable {
 
     /* renamed from: a  reason: collision with root package name */
-    public final transient ChronoLocalDate f30511a;
+    public final transient ChronoLocalDate f30512a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final transient LocalTime f30512b;
+    public final transient LocalTime f30513b;
 
     public static e r(j jVar, j$.time.temporal.k kVar) {
         e eVar = (e) kVar;
         eVar.l().f();
-        if (((a) jVar).equals(k.f30518a)) {
+        if (((a) jVar).equals(k.f30519a)) {
             return eVar;
         }
         eVar.l().f();
@@ -29,31 +29,31 @@ public final class e implements c, j$.time.temporal.k, l, Serializable {
 
     public e(ChronoLocalDate chronoLocalDate, LocalTime localTime) {
         Objects.requireNonNull(localTime, "time");
-        this.f30511a = chronoLocalDate;
-        this.f30512b = localTime;
+        this.f30512a = chronoLocalDate;
+        this.f30513b = localTime;
     }
 
     public final e B(j$.time.temporal.k kVar, LocalTime localTime) {
-        ChronoLocalDate chronoLocalDate = this.f30511a;
-        if (chronoLocalDate == kVar && this.f30512b == localTime) {
+        ChronoLocalDate chronoLocalDate = this.f30512a;
+        if (chronoLocalDate == kVar && this.f30513b == localTime) {
             return this;
         }
         chronoLocalDate.f();
-        return new e(b.r(k.f30518a, kVar), localTime);
+        return new e(b.r(k.f30519a, kVar), localTime);
     }
 
     public final int hashCode() {
-        return this.f30511a.hashCode() ^ this.f30512b.hashCode();
+        return this.f30512a.hashCode() ^ this.f30513b.hashCode();
     }
 
     @Override // j$.time.chrono.c
     public final ChronoLocalDate l() {
-        return this.f30511a;
+        return this.f30512a;
     }
 
     @Override // j$.time.chrono.c
     public final LocalTime e() {
-        return this.f30512b;
+        return this.f30513b;
     }
 
     @Override // j$.time.temporal.TemporalAccessor
@@ -68,7 +68,7 @@ public final class e implements c, j$.time.temporal.k, l, Serializable {
     @Override // j$.time.temporal.TemporalAccessor
     public final r i(n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
-            return (((j$.time.temporal.a) nVar).F() ? this.f30512b : this.f30511a).i(nVar);
+            return (((j$.time.temporal.a) nVar).F() ? this.f30513b : this.f30512a).i(nVar);
         }
         return nVar.t(this);
     }
@@ -76,7 +76,7 @@ public final class e implements c, j$.time.temporal.k, l, Serializable {
     @Override // j$.time.temporal.TemporalAccessor
     public final int g(n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
-            return ((j$.time.temporal.a) nVar).F() ? this.f30512b.g(nVar) : this.f30511a.g(nVar);
+            return ((j$.time.temporal.a) nVar).F() ? this.f30513b.g(nVar) : this.f30512a.g(nVar);
         }
         return i(nVar).a(m(nVar), nVar);
     }
@@ -84,7 +84,7 @@ public final class e implements c, j$.time.temporal.k, l, Serializable {
     @Override // j$.time.temporal.TemporalAccessor
     public final long m(n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
-            return ((j$.time.temporal.a) nVar).F() ? this.f30512b.m(nVar) : this.f30511a.m(nVar);
+            return ((j$.time.temporal.a) nVar).F() ? this.f30513b.m(nVar) : this.f30512a.m(nVar);
         }
         return nVar.B(this);
     }
@@ -92,10 +92,10 @@ public final class e implements c, j$.time.temporal.k, l, Serializable {
     @Override // j$.time.temporal.k
     public final j$.time.temporal.k c(LocalDate localDate) {
         if (localDate != null) {
-            return B(localDate, this.f30512b);
+            return B(localDate, this.f30513b);
         }
-        this.f30511a.f();
-        return r(k.f30518a, (e) localDate.d(this));
+        this.f30512a.f();
+        return r(k.f30519a, (e) localDate.d(this));
     }
 
     @Override // j$.time.temporal.k
@@ -103,55 +103,55 @@ public final class e implements c, j$.time.temporal.k, l, Serializable {
     public final e b(long j10, n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
             if (((j$.time.temporal.a) nVar).F()) {
-                return B(this.f30511a, this.f30512b.b(j10, nVar));
+                return B(this.f30512a, this.f30513b.b(j10, nVar));
             }
-            return B(this.f30511a.b(j10, nVar), this.f30512b);
+            return B(this.f30512a.b(j10, nVar), this.f30513b);
         }
-        this.f30511a.f();
-        return r(k.f30518a, nVar.C(this, j10));
+        this.f30512a.f();
+        return r(k.f30519a, nVar.C(this, j10));
     }
 
     @Override // j$.time.temporal.k
     /* renamed from: t */
     public final e h(long j10, p pVar) {
         if (!(pVar instanceof j$.time.temporal.b)) {
-            this.f30511a.f();
-            return r(k.f30518a, pVar.r(this, j10));
+            this.f30512a.f();
+            return r(k.f30519a, pVar.r(this, j10));
         }
-        switch (d.f30510a[((j$.time.temporal.b) pVar).ordinal()]) {
+        switch (d.f30511a[((j$.time.temporal.b) pVar).ordinal()]) {
             case 1:
-                return w(this.f30511a, 0L, 0L, 0L, j10);
+                return w(this.f30512a, 0L, 0L, 0L, j10);
             case 2:
-                e B = B(this.f30511a.h(j10 / 86400000000L, j$.time.temporal.b.DAYS), this.f30512b);
-                return B.w(B.f30511a, 0L, 0L, 0L, (j10 % 86400000000L) * 1000);
+                e B = B(this.f30512a.h(j10 / 86400000000L, j$.time.temporal.b.DAYS), this.f30513b);
+                return B.w(B.f30512a, 0L, 0L, 0L, (j10 % 86400000000L) * 1000);
             case 3:
-                e B2 = B(this.f30511a.h(j10 / 86400000, j$.time.temporal.b.DAYS), this.f30512b);
-                return B2.w(B2.f30511a, 0L, 0L, 0L, (j10 % 86400000) * 1000000);
+                e B2 = B(this.f30512a.h(j10 / 86400000, j$.time.temporal.b.DAYS), this.f30513b);
+                return B2.w(B2.f30512a, 0L, 0L, 0L, (j10 % 86400000) * 1000000);
             case 4:
-                return w(this.f30511a, 0L, 0L, j10, 0L);
+                return w(this.f30512a, 0L, 0L, j10, 0L);
             case 5:
-                return w(this.f30511a, 0L, j10, 0L, 0L);
+                return w(this.f30512a, 0L, j10, 0L, 0L);
             case 6:
-                return w(this.f30511a, j10, 0L, 0L, 0L);
+                return w(this.f30512a, j10, 0L, 0L, 0L);
             case 7:
-                e B3 = B(this.f30511a.h(j10 / 256, j$.time.temporal.b.DAYS), this.f30512b);
-                return B3.w(B3.f30511a, (j10 % 256) * 12, 0L, 0L, 0L);
+                e B3 = B(this.f30512a.h(j10 / 256, j$.time.temporal.b.DAYS), this.f30513b);
+                return B3.w(B3.f30512a, (j10 % 256) * 12, 0L, 0L, 0L);
             default:
-                return B(this.f30511a.h(j10, pVar), this.f30512b);
+                return B(this.f30512a.h(j10, pVar), this.f30513b);
         }
     }
 
     public final e w(ChronoLocalDate chronoLocalDate, long j10, long j11, long j12, long j13) {
         if ((j10 | j11 | j12 | j13) == 0) {
-            return B(chronoLocalDate, this.f30512b);
+            return B(chronoLocalDate, this.f30513b);
         }
         long j14 = j10 / 24;
         long j15 = ((j10 % 24) * 3600000000000L) + ((j11 % 1440) * 60000000000L) + ((j12 % 86400) * 1000000000) + (j13 % 86400000000000L);
-        long G = this.f30512b.G();
+        long G = this.f30513b.G();
         long j16 = j15 + G;
         long floorDiv = Math.floorDiv(j16, 86400000000000L) + j14 + (j11 / 1440) + (j12 / 86400) + (j13 / 86400000000000L);
         long floorMod = Math.floorMod(j16, 86400000000000L);
-        return B(chronoLocalDate.h(floorDiv, j$.time.temporal.b.DAYS), floorMod == G ? this.f30512b : LocalTime.x(floorMod));
+        return B(chronoLocalDate.h(floorDiv, j$.time.temporal.b.DAYS), floorMod == G ? this.f30513b : LocalTime.x(floorMod));
     }
 
     @Override // j$.time.chrono.c
@@ -167,6 +167,6 @@ public final class e implements c, j$.time.temporal.k, l, Serializable {
     }
 
     public final String toString() {
-        return this.f30511a.toString() + 'T' + this.f30512b.toString();
+        return this.f30512a.toString() + 'T' + this.f30513b.toString();
     }
 }

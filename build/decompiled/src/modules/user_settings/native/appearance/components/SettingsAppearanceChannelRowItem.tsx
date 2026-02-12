@@ -1,7 +1,7 @@
 // modules/user_settings/native/appearance/components/SettingsAppearanceChannelRowItem.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun85548: for (var _fun85548_ip = 0;;) switch (_fun85548_ip) {
+    _fun84366: for (var _fun84366_ip = 0;;) switch (_fun84366_ip) {
         case 0:
             var4 = require;
             var13 = metroImportDefault;
@@ -151,8 +151,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var11 = null;
             var11 = var11 != var10;
             if (!var11) {
-                _fun85548_ip = 619;
-                continue _fun85548
+                _fun84366_ip = 619;
+                continue _fun84366
             }
         case 616:
             var9 = var10;
@@ -175,7 +175,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = 'modules/user_settings/native/appearance/components/SettingsAppearanceChannelRowItem.tsx';
             var3 = var4.bind(var5)(var3);
             var1 = function arg0() {
-                _fun85549: for (var _fun85549_ip = 0;;) switch (_fun85549_ip) {
+                _fun84367: for (var _fun84367_ip = 0;;) switch (_fun84367_ip) {
                     case 0:
                         var0 = arg0;
                         var15 = var0.animatedStyles;
@@ -187,8 +187,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var17 = var0.status;
                         var3 = undefined;
                         if (!(var17 === var3)) {
-                            _fun85549_ip = 62;
-                            continue _fun85549
+                            _fun84367_ip = 62;
+                            continue _fun84367
                         }
                     case 49:
                         var1 = _closure1_slot4;
@@ -196,8 +196,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 62:
                         var14 = var0.isUnread;
                         if (!(var14 === var3)) {
-                            _fun85549_ip = 74;
-                            continue _fun85549
+                            _fun84367_ip = 74;
+                            continue _fun84367
                         }
                     case 72:
                         var14 = false;
@@ -220,8 +220,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var8 = {};
                         var9 = 0;
                         if (!var14) {
-                            _fun85549_ip = 147;
-                            continue _fun85549
+                            _fun84367_ip = 147;
+                            continue _fun84367
                         }
                     case 144:
                         var9 = 1;
@@ -241,8 +241,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5.style = var8;
                         var9 = null;
                         if (!(var9 == var23)) {
-                            _fun85549_ip = 292;
-                            continue _fun85549
+                            _fun84367_ip = 292;
+                            continue _fun84367
                         }
                     case 209:
                         var16 = _closure1_slot5;
@@ -264,8 +264,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var17 = var17.LARGE_48;
                         var8.size = var17;
                         var8 = var16.bind(var3)(var12, var8);
-                        _fun85549_ip = 375;
-                        continue _fun85549;
+                        _fun84367_ip = 375;
+                        continue _fun84367;
                     case 292:
                         var17 = _closure1_slot5;
                         var21 = _closure1_slot0;
@@ -311,13 +311,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             'variant': 'redesign/channel-title/semibold'
                         };
                         if (var14) {
-                            _fun85549_ip = 475;
-                            continue _fun85549
+                            _fun84367_ip = 475;
+                            continue _fun84367
                         }
                     case 467:
                         var20 = var15.textMuted;
-                        _fun85549_ip = 481;
-                        continue _fun85549;
+                        _fun84367_ip = 481;
+                        continue _fun84367;
                     case 475:
                         var20 = var15.textNormal;
                     case 481:
@@ -349,8 +349,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var11 = var9 != var13;
                         var9 = null;
                         if (!var11) {
-                            _fun85549_ip = 671;
-                            continue _fun85549
+                            _fun84367_ip = 671;
+                            continue _fun84367
                         }
                     case 598:
                         var12 = _closure1_slot5;
@@ -366,13 +366,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             'lineClamp': 1
                         };
                         if (var14) {
-                            _fun85549_ip = 649;
-                            continue _fun85549
+                            _fun84367_ip = 649;
+                            continue _fun84367
                         }
                     case 641:
                         var14 = var15.textMuted;
-                        _fun85549_ip = 655;
-                        continue _fun85549;
+                        _fun84367_ip = 655;
+                        continue _fun84367;
                     case 649:
                         var14 = var15.textNormal;
                     case 655:
@@ -392,4 +392,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 5516, 5514, 9099, 3938, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 5514, 5512, 8964, 3938, 2]);

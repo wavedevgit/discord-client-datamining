@@ -60,13 +60,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/content_inventory/memberlist/useTimestampTickedNow.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun62986: for (var _fun62986_ip = 0;;) switch (_fun62986_ip) {
+        _fun69039: for (var _fun69039_ip = 0;;) switch (_fun69039_ip) {
             case 0:
                 var1 = arguments[0];
                 var6 = undefined;
                 if (!(var1 === var6)) {
-                    _fun62986_ip = 13;
-                    continue _fun62986
+                    _fun69039_ip = 13;
+                    continue _fun69039
                 }
             case 11:
                 var1 = {};
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var1.hovered;
                 var1 = var1.isAppFocused;
                 if (!(var1 === var6)) {
-                    _fun62986_ip = 35;
-                    continue _fun62986
+                    _fun69039_ip = 35;
+                    continue _fun69039
                 }
             case 33:
                 var1 = true;
@@ -120,19 +120,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var8.bind(var9)(var7, var4);
                 var1 = !var1;
                 if (var1) {
-                    _fun62986_ip = 158;
-                    continue _fun62986
+                    _fun69039_ip = 162;
+                    continue _fun69039
                 }
-            case 149:
+            case 153:
                 if (!var4) {
-                    _fun62986_ip = 155;
-                    continue _fun62986
+                    _fun69039_ip = 159;
+                    continue _fun69039
                 }
-            case 152:
+            case 156:
                 var4 = !var5;
-            case 155:
+            case 159:
                 var1 = var4;
-            case 158:
+            case 162:
                 var5 = _closure1_slot1;
                 var7 = _closure1_slot2;
                 var4 = 3;
@@ -141,17 +141,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.Millis;
                 var5 = var4.SECOND;
                 if (var1) {
-                    _fun62986_ip = 198;
-                    continue _fun62986
+                    _fun69039_ip = 202;
+                    continue _fun69039
                 }
-            case 193:
+            case 197:
                 var6 = var5;
-                _fun62986_ip = 205;
-                continue _fun62986;
-            case 198:
+                _fun69039_ip = 209;
+                continue _fun69039;
+            case 202:
                 var4 = 15;
                 var6 = var4 * var5;
-            case 205:
+            case 209:
                 _closure2_slot1 = var6;
                 var5 = _closure1_slot4;
                 var4 = var5.useEffect;

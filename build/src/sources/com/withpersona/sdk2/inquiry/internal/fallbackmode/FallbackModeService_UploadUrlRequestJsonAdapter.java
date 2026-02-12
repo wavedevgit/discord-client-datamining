@@ -13,25 +13,25 @@ import org.jetbrains.annotations.NotNull;
 public final class FallbackModeService_UploadUrlRequestJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19846a;
+    private final m.b f19847a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19847b;
+    private final com.squareup.moshi.h f19848b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.squareup.moshi.h f19848c;
+    private final com.squareup.moshi.h f19849c;
 
     public FallbackModeService_UploadUrlRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("expected-content-length", "expected-content-type");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19846a = a10;
+        this.f19847a = a10;
         com.squareup.moshi.h f10 = moshi.f(Long.TYPE, x0.d(), "expectedContentLength");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19847b = f10;
+        this.f19848b = f10;
         com.squareup.moshi.h f11 = moshi.f(String.class, x0.d(), "expectedContentType");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f19848c = f11;
+        this.f19849c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -42,14 +42,14 @@ public final class FallbackModeService_UploadUrlRequestJsonAdapter extends com.s
         Long l10 = null;
         String str = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19846a);
+            int J = reader.J(this.f19847a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (str = (String) this.f19848c.fromJson(reader)) == null) {
+                    if (J == 1 && (str = (String) this.f19849c.fromJson(reader)) == null) {
                         throw dn.c.x("expectedContentType", "expected-content-type", reader);
                     }
                 } else {
-                    l10 = (Long) this.f19847b.fromJson(reader);
+                    l10 = (Long) this.f19848b.fromJson(reader);
                     if (l10 == null) {
                         throw dn.c.x("expectedContentLength", "expected-content-length", reader);
                     }
@@ -77,9 +77,9 @@ public final class FallbackModeService_UploadUrlRequestJsonAdapter extends com.s
         if (uploadUrlRequest != null) {
             writer.i();
             writer.J("expected-content-length");
-            this.f19847b.toJson(writer, Long.valueOf(uploadUrlRequest.a()));
+            this.f19848b.toJson(writer, Long.valueOf(uploadUrlRequest.a()));
             writer.J("expected-content-type");
-            this.f19848c.toJson(writer, uploadUrlRequest.b());
+            this.f19849c.toJson(writer, uploadUrlRequest.b());
             writer.s();
             return;
         }

@@ -15,13 +15,13 @@ import pq.k5;
 public final class b extends View implements a {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f55146d;
+    private final List f55147d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public b(Context context) {
         super(context);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f55146d = new ArrayList();
+        this.f55147d = new ArrayList();
     }
 
     @Override // xq.a
@@ -37,7 +37,7 @@ public final class b extends View implements a {
         }
         loop0: while (true) {
             z11 = false;
-            for (WeakReference weakReference : this.f55146d) {
+            for (WeakReference weakReference : this.f55147d) {
                 k5 k5Var = (k5) weakReference.get();
                 JsonLogicBoolean jsonLogicBoolean = null;
                 if (k5Var instanceof e0) {
@@ -62,6 +62,6 @@ public final class b extends View implements a {
 
     @NotNull
     public final List<WeakReference<k5>> getAssociatedComponents() {
-        return this.f55146d;
+        return this.f55147d;
     }
 }

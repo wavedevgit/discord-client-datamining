@@ -5,12 +5,12 @@ import kotlin.jvm.functions.Function2;
 public abstract class b {
 
     /* renamed from: a */
-    private static final e0 f21868a = new e0("CLOSED");
+    private static final e0 f21869a = new e0("CLOSED");
 
     public static final c b(c cVar) {
         while (true) {
             Object g10 = cVar.g();
-            if (g10 == f21868a) {
+            if (g10 == f21869a) {
                 return cVar;
             }
             c cVar2 = (c) g10;
@@ -26,14 +26,14 @@ public abstract class b {
 
     public static final Object c(b0 b0Var, long j10, Function2 function2) {
         while (true) {
-            if (b0Var.f21870i < j10 || b0Var.k()) {
+            if (b0Var.f21871i < j10 || b0Var.k()) {
                 Object g10 = b0Var.g();
-                if (g10 == f21868a) {
-                    return c0.a(f21868a);
+                if (g10 == f21869a) {
+                    return c0.a(f21869a);
                 }
                 b0 b0Var2 = (b0) ((c) g10);
                 if (b0Var2 == null) {
-                    b0Var2 = (b0) function2.invoke(Long.valueOf(b0Var.f21870i + 1), b0Var);
+                    b0Var2 = (b0) function2.invoke(Long.valueOf(b0Var.f21871i + 1), b0Var);
                     if (b0Var.o(b0Var2)) {
                         if (b0Var.k()) {
                             b0Var.n();

@@ -6,27 +6,27 @@ import kotlin.text.StringsKt;
 public final class d implements CharSequence {
 
     /* renamed from: d  reason: collision with root package name */
-    private final char[] f51883d;
+    private final char[] f51884d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f51884e;
+    private int f51885e;
 
     public d(char[] buffer) {
         Intrinsics.checkNotNullParameter(buffer, "buffer");
-        this.f51883d = buffer;
-        this.f51884e = buffer.length;
+        this.f51884d = buffer;
+        this.f51885e = buffer.length;
     }
 
     public char a(int i10) {
-        return this.f51883d[i10];
+        return this.f51884d[i10];
     }
 
     public final char[] b() {
-        return this.f51883d;
+        return this.f51884d;
     }
 
     public int c() {
-        return this.f51884e;
+        return this.f51885e;
     }
 
     @Override // java.lang.CharSequence
@@ -35,15 +35,15 @@ public final class d implements CharSequence {
     }
 
     public void d(int i10) {
-        this.f51884e = i10;
+        this.f51885e = i10;
     }
 
     public final String e(int i10, int i11) {
-        return StringsKt.w(this.f51883d, i10, Math.min(i11, length()));
+        return StringsKt.w(this.f51884d, i10, Math.min(i11, length()));
     }
 
     public final void f(int i10) {
-        d(Math.min(this.f51883d.length, i10));
+        d(Math.min(this.f51884d.length, i10));
     }
 
     @Override // java.lang.CharSequence
@@ -53,7 +53,7 @@ public final class d implements CharSequence {
 
     @Override // java.lang.CharSequence
     public CharSequence subSequence(int i10, int i11) {
-        return StringsKt.w(this.f51883d, i10, Math.min(i11, length()));
+        return StringsKt.w(this.f51884d, i10, Math.min(i11, length()));
     }
 
     @Override // java.lang.CharSequence

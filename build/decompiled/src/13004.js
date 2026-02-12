@@ -1,110 +1,216 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var0 = require;
-    var _closure1_slot0 = var0;
-    var0 = dependencyMap;
-    var _closure1_slot1 = var0;
-    var0 = function arg0() {
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot1;
-        var0 = 2;
-        var1 = var1[var0];
-        var0 = undefined;
-        var2 = var2.bind(var0)(var1);
-        var1 = var2.getCurrentScope;
-        var3 = var1.bind(var2)();
-        var2 = var3.setClient;
-        var1 = arg0;
-        var1 = var2.bind(var3)(var1);
-        return var0;
-    };
-    var _closure1_slot2 = var0;
-    var3 = global;
-    var6 = var3.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
-    var3 = true;
-    var4.value = var3;
-    var3 = '__esModule';
-    var3 = var5.bind(var6)(var1, var3, var4);
-    var2 = function arg0, arg1() {
-        _fun100052: for (var _fun100052_ip = 0;;) switch (_fun100052_ip) {
+    var2 = require;
+    var _closure1_slot0 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot1 = var2;
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var0 = function arg0, arg1() {
+        _fun99930: for (var _fun99930_ip = 0;;) switch (_fun99930_ip) {
             case 0:
-                var4 = arg0;
-                var0 = arg1;
-                var2 = var0.debug;
-                var1 = true;
-                if (!(var1 === var2)) {
-                    _fun100052_ip = 109;
-                    continue _fun100052
-                }
-            case 18:
-                var3 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var2 = 0;
-                var2 = var5[var2];
-                var5 = undefined;
-                var2 = var3.bind(var5)(var2);
-                var2 = var2.DEBUG_BUILD;
-                var3 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var1 = 1;
-                var1 = var6[var1];
-                var1 = var3.bind(var5)(var1);
-                if (var2) {
-                    _fun100052_ip = 93;
-                    continue _fun100052
-                }
-            case 71:
-                var3 = var1.consoleSandbox;
-                var2 = function() { // Environment: var2
-                    var0 = global;
-                    var2 = var0.console;
-                    var1 = var2.warn;
-                    var0 = '[Sentry] Cannot initialize SDK with `debug` option using a non-debug bundle.';
-                    var0 = var1.bind(var2)(var0);
-                    var0 = undefined;
-                    return var0;
-                };
-                var2 = var3.bind(var1)(var2);
-                _fun100052_ip = 109;
-                continue _fun100052;
-            case 93:
-                var2 = var1.logger;
-                var1 = var2.enable;
-                var1 = var1.bind(var2)();
-            case 109:
-                var5 = _closure1_slot0;
+                var0 = arg0;
+                var5 = arg1;
+                var4 = _closure1_slot0;
                 var3 = _closure1_slot1;
+                var2 = 0;
+                var2 = var3[var2];
+                var3 = undefined;
+                var4 = var4.bind(var3)(var2);
+                var2 = var4.hasTracingEnabled;
+                var2 = var2.bind(var4)(var0);
+                if (var2) {
+                    _fun99930_ip = 56;
+                    continue _fun99930
+                }
+            case 44:
+                var2 = new Array(1);
+                var4 = false;
+                var2[0] = var4;
+                return var2;
+            case 56:
+                var2 = var0.tracesSampler;
+                var7 = 'function';
+                var2 = typeof var2;
+                if (!(var7 !== var2)) {
+                    _fun99930_ip = 112;
+                    continue _fun99930
+                }
+            case 73:
+                var2 = var5.parentSampled;
+                if (!(var3 === var2)) {
+                    _fun99930_ip = 104;
+                    continue _fun99930
+                }
+            case 83:
+                var4 = var0.tracesSampleRate;
+                var2 = 1;
+                if (!(var3 !== var4)) {
+                    _fun99930_ip = 102;
+                    continue _fun99930
+                }
+            case 96:
+                var2 = var0.tracesSampleRate;
+            case 102:
+                _fun99930_ip = 110;
+                continue _fun99930;
+            case 104:
+                var2 = var5.parentSampled;
+            case 110:
+                _fun99930_ip = 123;
+                continue _fun99930;
+            case 112:
+                var4 = var0.tracesSampler;
+                var2 = var4.bind(var0)(var5);
+            case 123:
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var4 = 1;
+                var4 = var6[var4];
+                var5 = var5.bind(var3)(var4);
+                var4 = var5.parseSampleRate;
+                var5 = var4.bind(var5)(var2);
+                var8 = var2;
+                if (!(var3 !== var5)) {
+                    _fun99930_ip = 449;
+                    continue _fun99930
+                }
+            case 164:
+                if (var5) {
+                    _fun99930_ip = 286;
+                    continue _fun99930
+                }
+            case 167:
+                var4 = _closure1_slot0;
+                var6 = _closure1_slot1;
                 var2 = 2;
-                var3 = var3[var2];
-                var2 = undefined;
-                var5 = var5.bind(var2)(var3);
-                var3 = var5.getCurrentScope;
-                var6 = var3.bind(var5)();
-                var5 = var6.update;
-                var3 = var0.initialScope;
-                var3 = var5.bind(var6)(var3);
-                var3 = var4.prototype;
-                var3 = Object.create(var3, {
-                    constructor: {
-                        value: var4
-                    }
-                });
-                var8 = var3;
-                var7 = var0;
-                var0 = new var8[var4](var7, var6);
-                var0 = var0 instanceof Object ? var0 : var3;
-                var1 = _closure1_slot2;
-                var1 = var1.bind(var2)(var0);
-                var1 = var0.init;
-                var1 = var1.bind(var0)();
+                var2 = var6[var2];
+                var2 = var4.bind(var3)(var2);
+                var2 = var2.DEBUG_BUILD;
+                if (!var2) {
+                    _fun99930_ip = 267;
+                    continue _fun99930
+                }
+            case 196:
+                var4 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var2 = 3;
+                var2 = var6[var2];
+                var2 = var4.bind(var3)(var2);
+                var4 = var2.logger;
+                var2 = var4.log;
+                var0 = var0.tracesSampler;
+                var6 = 'a negative sampling decision was inherited or tracesSampleRate is set to 0';
+                var0 = typeof var0;
+                if (!(var7 === var0)) {
+                    _fun99930_ip = 252;
+                    continue _fun99930
+                }
+            case 246:
+                var6 = 'tracesSampler returned 0 or false';
+            case 252:
+                var0 = '[Tracing] Discarding transaction because ';
+                var0 = var0 + var6;
+                var0 = var2.bind(var4)(var0);
+            case 267:
+                var0 = new Array(2);
+                var2 = false;
+                var0[0] = var2;
+                var0[1] = var5;
+                _fun99930_ip = 447;
+                continue _fun99930;
+            case 286:
+                var2 = global;
+                var6 = var2.Math;
+                var4 = var6.random;
+                var4 = var4.bind(var6)();
+                if (!(!(var4 < var5))) {
+                    _fun99930_ip = 427;
+                    continue _fun99930
+                }
+            case 308:
+                var6 = _closure1_slot0;
+                var7 = _closure1_slot1;
+                var4 = 2;
+                var4 = var7[var4];
+                var4 = var6.bind(var3)(var4);
+                var4 = var4.DEBUG_BUILD;
+                if (!var4) {
+                    _fun99930_ip = 411;
+                    continue _fun99930
+                }
+            case 337:
+                var6 = _closure1_slot0;
+                var7 = _closure1_slot1;
+                var4 = 3;
+                var4 = var7[var4];
+                var4 = var6.bind(var3)(var4);
+                var6 = var4.logger;
+                var4 = var6.log;
+                var7 = var2.Number;
+                var9 = var7.bind(var3)(var8);
+                var2 = var2.HermesInternal;
+                var8 = var2.concat;
+                var7 = "[Tracing] Discarding transaction because it's not included in the random sample (sampling rate = ";
+                var2 = ')';
+                var2 = var8.bind(var7)(var9, var2);
+                var2 = var4.bind(var6)(var2);
+            case 411:
+                var2 = new Array(2);
+                var4 = false;
+                var2[0] = var4;
+                var2[1] = var5;
+                _fun99930_ip = 444;
+                continue _fun99930;
+            case 427:
+                var4 = new Array(2);
+                var6 = true;
+                var4[0] = var6;
+                var4[1] = var5;
+                var2 = var4;
+            case 444:
+                var0 = var2;
+            case 447:
+                _fun99930_ip = 533;
+                continue _fun99930;
+            case 449:
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var2 = 2;
+                var2 = var5[var2];
+                var2 = var4.bind(var3)(var2);
+                var2 = var2.DEBUG_BUILD;
+                if (!var2) {
+                    _fun99930_ip = 520;
+                    continue _fun99930
+                }
+            case 478:
+                var2 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var1 = 3;
+                var1 = var4[var1];
+                var1 = var2.bind(var3)(var1);
+                var3 = var1.logger;
+                var2 = var3.warn;
+                var1 = '[Tracing] Discarding transaction because of invalid sample rate.';
+                var1 = var2.bind(var3)(var1);
+            case 520:
+                var1 = new Array(1);
+                var2 = false;
+                var1[0] = var2;
+                var0 = var1;
+            case 533:
                 return var0;
         }
     };
-    var1.initAndBind = var2;
-    var1.setCurrentClient = var0;
+    var1.sampleSpan = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12978, 12912, 12977]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12997, 13005, 12993, 12927]);

@@ -3,10 +3,10 @@ package com.google.android.gms.internal.play_billing;
 abstract class r2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final q2 f15046a;
+    private static final q2 f15047a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final q2 f15047b;
+    private static final q2 f15048b;
 
     static {
         q2 q2Var = null;
@@ -14,17 +14,17 @@ abstract class r2 {
             q2Var = (q2) Class.forName("com.google.protobuf.MapFieldSchemaFull").getDeclaredConstructor(null).newInstance(null);
         } catch (Exception unused) {
         }
-        f15046a = q2Var;
-        f15047b = new q2();
+        f15047a = q2Var;
+        f15048b = new q2();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static q2 a() {
-        return f15046a;
+        return f15047a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static q2 b() {
-        return f15047b;
+        return f15048b;
     }
 }

@@ -3,7 +3,7 @@ package xv;
 public class g extends cw.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final aw.e f55191a = new aw.e();
+    private final aw.e f55192a = new aw.e();
 
     @Override // cw.a, cw.d
     public boolean a(aw.a aVar) {
@@ -23,7 +23,7 @@ public class g extends cw.a {
     @Override // cw.d
     /* renamed from: i */
     public aw.e d() {
-        return this.f55191a;
+        return this.f55192a;
     }
 
     @Override // cw.a, cw.d

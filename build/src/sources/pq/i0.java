@@ -11,7 +11,7 @@ public final class i0 implements k5 {
     public static final Parcelable.Creator<i0> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f42969d;
+    private final String f42970d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -31,7 +31,7 @@ public final class i0 implements k5 {
 
     public i0(String name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f42969d = name;
+        this.f42970d = name;
     }
 
     @Override // android.os.Parcelable
@@ -43,7 +43,7 @@ public final class i0 implements k5 {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof i0) && Intrinsics.areEqual(this.f42969d, ((i0) obj).f42969d)) {
+        if ((obj instanceof i0) && Intrinsics.areEqual(this.f42970d, ((i0) obj).f42970d)) {
             return true;
         }
         return false;
@@ -51,22 +51,22 @@ public final class i0 implements k5 {
 
     @Override // pq.k5
     public String getName() {
-        return this.f42969d;
+        return this.f42970d;
     }
 
     public int hashCode() {
-        return this.f42969d.hashCode();
+        return this.f42970d.hashCode();
     }
 
     public String toString() {
-        String str = this.f42969d;
+        String str = this.f42970d;
         return "ImagePreviewComponent(name=" + str + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f42969d);
+        dest.writeString(this.f42970d);
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */

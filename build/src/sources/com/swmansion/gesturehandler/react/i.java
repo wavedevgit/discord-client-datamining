@@ -9,26 +9,26 @@ import kotlin.jvm.internal.Intrinsics;
 public final class i implements nn.j {
 
     /* renamed from: a  reason: collision with root package name */
-    private final SparseArray f18983a = new SparseArray();
+    private final SparseArray f18984a = new SparseArray();
 
     /* renamed from: b  reason: collision with root package name */
-    private final SparseArray f18984b = new SparseArray();
+    private final SparseArray f18985b = new SparseArray();
 
     /* renamed from: c  reason: collision with root package name */
-    private final SparseArray f18985c = new SparseArray();
+    private final SparseArray f18986c = new SparseArray();
 
     private final synchronized void d(final nn.d dVar) {
         try {
-            Integer num = (Integer) this.f18984b.get(dVar.T());
+            Integer num = (Integer) this.f18985b.get(dVar.T());
             if (num != null) {
-                this.f18984b.remove(dVar.T());
-                ArrayList arrayList = (ArrayList) this.f18985c.get(num.intValue());
+                this.f18985b.remove(dVar.T());
+                ArrayList arrayList = (ArrayList) this.f18986c.get(num.intValue());
                 if (arrayList != null) {
                     synchronized (arrayList) {
                         arrayList.remove(dVar);
                     }
                     if (arrayList.size() == 0) {
-                        this.f18985c.remove(num.intValue());
+                        this.f18986c.remove(num.intValue());
                     }
                 }
             }
@@ -52,13 +52,13 @@ public final class i implements nn.j {
 
     private final synchronized void k(int i10, nn.d dVar) {
         try {
-            if (this.f18984b.get(dVar.T()) == null) {
-                this.f18984b.put(dVar.T(), Integer.valueOf(i10));
-                Object obj = this.f18985c.get(i10);
+            if (this.f18985b.get(dVar.T()) == null) {
+                this.f18985b.put(dVar.T(), Integer.valueOf(i10));
+                Object obj = this.f18986c.get(i10);
                 if (obj == null) {
                     ArrayList arrayList = new ArrayList(1);
                     arrayList.add(dVar);
-                    this.f18985c.put(i10, arrayList);
+                    this.f18986c.put(i10, arrayList);
                 } else {
                     synchronized (obj) {
                         ((ArrayList) obj).add(dVar);
@@ -80,7 +80,7 @@ public final class i implements nn.j {
 
     public final synchronized boolean c(int i10, int i11, int i12) {
         boolean z10;
-        nn.d dVar = (nn.d) this.f18983a.get(i10);
+        nn.d dVar = (nn.d) this.f18984a.get(i10);
         if (dVar != null) {
             d(dVar);
             dVar.u0(i12);
@@ -93,29 +93,29 @@ public final class i implements nn.j {
     }
 
     public final synchronized void f() {
-        this.f18983a.clear();
-        this.f18984b.clear();
-        this.f18985c.clear();
+        this.f18984a.clear();
+        this.f18985b.clear();
+        this.f18986c.clear();
     }
 
     public final synchronized void g(int i10) {
-        nn.d dVar = (nn.d) this.f18983a.get(i10);
+        nn.d dVar = (nn.d) this.f18984a.get(i10);
         if (dVar != null) {
             d(dVar);
-            this.f18983a.remove(i10);
+            this.f18984a.remove(i10);
         }
     }
 
     public final synchronized nn.d h(int i10) {
-        return (nn.d) this.f18983a.get(i10);
+        return (nn.d) this.f18984a.get(i10);
     }
 
     public final synchronized ArrayList i(int i10) {
-        return (ArrayList) this.f18985c.get(i10);
+        return (ArrayList) this.f18986c.get(i10);
     }
 
     public final synchronized void j(nn.d handler) {
         Intrinsics.checkNotNullParameter(handler, "handler");
-        this.f18983a.put(handler.T(), handler);
+        this.f18984a.put(handler.T(), handler);
     }
 }

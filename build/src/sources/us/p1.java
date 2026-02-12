@@ -8,16 +8,16 @@ import us.u1;
 public class p1 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final u1 f51125d;
+    private final u1 f51126d;
 
     public p1(u1 u1Var) {
-        this.f51125d = u1Var;
+        this.f51126d = u1Var;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         ReflectKotlinClass n10;
-        n10 = u1.a.n(this.f51125d);
+        n10 = u1.a.n(this.f51126d);
         return n10;
     }
 }

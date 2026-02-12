@@ -1,92 +1,204 @@
 // modules/rewards/ProgramRewardsUtils.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
+    var6 = require;
     var2 = exports;
-    var5 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var5;
-    var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var3);
-    var0 = 0;
-    var6 = var5[var0];
-    var3 = metroImportDefault;
-    var0 = undefined;
-    var3 = var3.bind(var0)(var6);
-    var _closure1_slot2 = var3;
-    var3 = 1;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.PremiumTypes;
-    var _closure1_slot3 = var3;
-    var3 = 4;
-    var3 = var5[var3];
-    var5 = var4.bind(var0)(var3);
-    var4 = var5.fileFinishedImporting;
-    var3 = 'modules/rewards/ProgramRewardsUtils.tsx';
-    var3 = var4.bind(var5)(var3);
-    var3 = function() {
-        _fun96362: for (var _fun96362_ip = 0;;) switch (_fun96362_ip) {
+    var7 = dependencyMap;
+    var _closure1_slot0 = var6;
+    var _closure1_slot1 = var7;
+    var4 = function arg0() {
+        _fun96441: for (var _fun96441_ip = 0;;) switch (_fun96441_ip) {
             case 0:
-                var2 = arguments[0];
+                var4 = arguments[1];
                 var3 = undefined;
-                if (!(var2 === var3)) {
-                    _fun96362_ip = 15;
-                    continue _fun96362
+                if (!(var4 === var3)) {
+                    _fun96441_ip = 15;
+                    continue _fun96441
                 }
             case 9:
-                var2 = 'ProgramRewardsUtils';
+                var4 = 'ProgramRewardsUtils';
             case 15:
-                var1 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var0 = 2;
-                var0 = var4[var0];
-                var1 = var1.bind(var3)(var0);
+                var2 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var1 = 2;
+                var1 = var5[var1];
+                var1 = var2.bind(var3)(var1);
+                var1 = var1.RewardProgram;
+                var2 = var1.NITRO;
+                var1 = arg0;
+                if (!(var1 !== var2)) {
+                    _fun96441_ip = 61;
+                    continue _fun96441
+                }
+            case 57:
+                var1 = false;
+                return var1;
+            case 61:
+                var2 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var0 = 3;
+                var0 = var5[var0];
+                var1 = var2.bind(var3)(var0);
                 var0 = var1.getPremiumRewardsOrbsExperiment;
-                var0 = var0.bind(var1)(var2);
+                var0 = var0.bind(var1)(var4);
                 var0 = var0.isInTreatment;
+                var1 = 4;
+                var1 = var5[var1];
+                var3 = var2.bind(var3)(var1);
+                var2 = var3.isVirtualCurrencyEnabled;
+                var1 = {};
+                var1.location = var4;
+                var1 = var2.bind(var3)(var1);
+                var1 = var1.enabled;
+                if (!var0) {
+                    _fun96441_ip = 138;
+                    continue _fun96441
+                }
+            case 135:
+                var0 = var1;
+            case 138:
                 return var0;
         }
     };
-    var2.isInProgramRewardsTreatments = var3;
-    var3 = function() {
-        _fun96363: for (var _fun96363_ip = 0;;) switch (_fun96363_ip) {
+    var _closure1_slot4 = var4;
+    var3 = function arg0() {
+        _fun96442: for (var _fun96442_ip = 0;;) switch (_fun96442_ip) {
             case 0:
-                var2 = arguments[0];
-                var3 = undefined;
-                if (!(var2 === var3)) {
-                    _fun96363_ip = 15;
-                    continue _fun96363
+                var7 = arguments[1];
+                var4 = undefined;
+                if (!(var7 === var4)) {
+                    _fun96442_ip = 15;
+                    continue _fun96442
                 }
             case 9:
-                var2 = 'ProgramRewardsUtils';
+                var7 = 'ProgramRewardsUtils';
             case 15:
-                var1 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var0 = 2;
-                var0 = var4[var0];
-                var1 = var1.bind(var3)(var0);
+                var3 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var0 = 3;
+                var0 = var5[var0];
+                var1 = var3.bind(var4)(var0);
                 var0 = var1.usePremiumRewardsOrbsExperiment;
-                var0 = var0.bind(var1)(var2);
-                var0 = var0.isInTreatment;
+                var0 = var0.bind(var1)(var7);
+                var1 = var0.isInTreatment;
+                var0 = 4;
+                var0 = var5[var0];
+                var6 = var3.bind(var4)(var0);
+                var2 = var6.useVirtualCurrencyEnabled;
+                var0 = {};
+                var0.location = var7;
+                var0 = var2.bind(var6)(var0);
+                var2 = var0.enabled;
+                var0 = 2;
+                var0 = var5[var0];
+                var0 = var3.bind(var4)(var0);
+                var0 = var0.RewardProgram;
+                var3 = var0.NITRO;
+                var0 = arg0;
+                var0 = var0 === var3;
+                if (!var0) {
+                    _fun96442_ip = 132;
+                    continue _fun96442
+                }
+            case 123:
+                if (!var1) {
+                    _fun96442_ip = 129;
+                    continue _fun96442
+                }
+            case 126:
+                var1 = var2;
+            case 129:
+                var0 = var1;
+            case 132:
                 return var0;
         }
     };
-    var2.useIsInProgramRewardsTreatments = var3;
+    var _closure1_slot5 = var3;
+    var0 = global;
+    var9 = var0.Object;
+    var8 = var9.defineProperty;
+    var5 = {};
+    var0 = true;
+    var5.value = var0;
+    var0 = '__esModule';
+    var0 = var8.bind(var9)(var2, var0, var5);
+    var0 = 0;
+    var8 = var7[var0];
+    var5 = arg2;
+    var0 = undefined;
+    var5 = var5.bind(var0)(var8);
+    var _closure1_slot2 = var5;
+    var5 = 1;
+    var5 = var7[var5];
+    var5 = var6.bind(var0)(var5);
+    var5 = var5.PremiumTypes;
+    var _closure1_slot3 = var5;
+    var5 = 6;
+    var5 = var7[var5];
+    var7 = var6.bind(var0)(var5);
+    var6 = var7.fileFinishedImporting;
+    var5 = 'modules/rewards/ProgramRewardsUtils.tsx';
+    var5 = var6.bind(var7)(var5);
+    var2.isEligibleForProgramReward = var4;
+    var2.useIsEligibleForProgramReward = var3;
+    var3 = function() {
+        _fun96443: for (var _fun96443_ip = 0;;) switch (_fun96443_ip) {
+            case 0:
+                var3 = arguments[0];
+                var2 = undefined;
+                if (!(var3 === var2)) {
+                    _fun96443_ip = 15;
+                    continue _fun96443
+                }
+            case 9:
+                var3 = 'ProgramRewardsUtils';
+            case 15:
+                var1 = _closure1_slot4;
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var0 = 2;
+                var0 = var5[var0];
+                var0 = var4.bind(var2)(var0);
+                var0 = var0.RewardProgram;
+                var0 = var0.NITRO;
+                var0 = var1.bind(var2)(var0, var3);
+                return var0;
+        }
+    };
+    var2.isEligibleForAnyProgramReward = var3;
+    var3 = function() {
+        _fun96444: for (var _fun96444_ip = 0;;) switch (_fun96444_ip) {
+            case 0:
+                var3 = arguments[0];
+                var2 = undefined;
+                if (!(var3 === var2)) {
+                    _fun96444_ip = 15;
+                    continue _fun96444
+                }
+            case 9:
+                var3 = 'ProgramRewardsUtils';
+            case 15:
+                var1 = _closure1_slot5;
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var0 = 2;
+                var0 = var5[var0];
+                var0 = var4.bind(var2)(var0);
+                var0 = var0.RewardProgram;
+                var0 = var0.NITRO;
+                var0 = var1.bind(var2)(var0, var3);
+                return var0;
+        }
+    };
+    var2.useIsEligibleForAnyProgramReward = var3;
     var1 = function arg0() {
-        _fun96364: for (var _fun96364_ip = 0;;) switch (_fun96364_ip) {
+        _fun96445: for (var _fun96445_ip = 0;;) switch (_fun96445_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 if (!(var0 == var3)) {
-                    _fun96364_ip = 25;
-                    continue _fun96364
+                    _fun96445_ip = 25;
+                    continue _fun96445
                 }
             case 9:
                 var1 = _closure1_slot2;
@@ -95,7 +207,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 25:
                 var4 = _closure1_slot0;
                 var2 = _closure1_slot1;
-                var1 = 3;
+                var1 = 5;
                 var2 = var2[var1];
                 var1 = undefined;
                 var2 = var4.bind(var1)(var2);
@@ -108,4 +220,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.hasNecessaryPremiumSubscriptionStatus = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 1623, 12536, 1640, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1621, 1623, 12549, 12550, 12551, 1640, 2]);

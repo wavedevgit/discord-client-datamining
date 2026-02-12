@@ -12,7 +12,7 @@ public final class k extends g0 {
     private final class a extends g0.e {
 
         /* renamed from: d  reason: collision with root package name */
-        private final b[] f12065d;
+        private final b[] f12066d;
 
         /* JADX WARN: Code restructure failed: missing block: B:29:0x00f7, code lost:
             throw new java.lang.RuntimeException("illegal line in exopackage metadata: [" + r12 + "]");
@@ -31,15 +31,15 @@ public final class k extends g0 {
 
         @Override // com.facebook.soloader.g0.e
         public g0.c[] h() {
-            return this.f12065d;
+            return this.f12066d;
         }
 
         @Override // com.facebook.soloader.g0.e
         public void i(File file) {
             b[] bVarArr;
             byte[] bArr = new byte[PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS];
-            for (b bVar : this.f12065d) {
-                FileInputStream fileInputStream = new FileInputStream(bVar.f12067i);
+            for (b bVar : this.f12066d) {
+                FileInputStream fileInputStream = new FileInputStream(bVar.f12068i);
                 try {
                     g0.d dVar = new g0.d(bVar, fileInputStream);
                     a(dVar, bArr, file);
@@ -58,11 +58,11 @@ public final class k extends g0 {
     private static final class b extends g0.c {
 
         /* renamed from: i  reason: collision with root package name */
-        final File f12067i;
+        final File f12068i;
 
         b(String str, String str2, File file) {
             super(str, str2);
-            this.f12067i = file;
+            this.f12068i = file;
         }
     }
 

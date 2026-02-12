@@ -9,21 +9,21 @@ import java.util.Locale;
 public abstract class r0 implements Iterable, Serializable {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final r0 f15039e = new o0(y1.f15084d);
+    public static final r0 f15040e = new o0(y1.f15085d);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final Comparator f15040i;
+    private static final Comparator f15041i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final q0 f15041o;
+    private static final q0 f15042o;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f15042d = 0;
+    private int f15043d = 0;
 
     static {
-        int i10 = c0.f14875a;
-        f15041o = new q0(null);
-        f15040i = new i0();
+        int i10 = c0.f14876a;
+        f15042o = new q0(null);
+        f15041i = new i0();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -64,14 +64,14 @@ public abstract class r0 implements Iterable, Serializable {
     protected abstract String g(Charset charset);
 
     public final int hashCode() {
-        int i10 = this.f15042d;
+        int i10 = this.f15043d;
         if (i10 == 0) {
             int d10 = d();
             i10 = e(d10, 0, d10);
             if (i10 == 0) {
                 i10 = 1;
             }
-            this.f15042d = i10;
+            this.f15043d = i10;
         }
         return i10;
     }
@@ -88,7 +88,7 @@ public abstract class r0 implements Iterable, Serializable {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final int l() {
-        return this.f15042d;
+        return this.f15043d;
     }
 
     public final String p(Charset charset) {

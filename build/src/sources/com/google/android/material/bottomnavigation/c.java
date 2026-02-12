@@ -23,25 +23,25 @@ public class c extends l {
         @Override // com.google.android.material.internal.p.c
         public WindowInsetsCompat a(View view, WindowInsetsCompat windowInsetsCompat, p.d dVar) {
             int i10;
-            dVar.f15938d += windowInsetsCompat.n();
+            dVar.f15939d += windowInsetsCompat.n();
             boolean z10 = true;
             if (view.getLayoutDirection() != 1) {
                 z10 = false;
             }
             int o10 = windowInsetsCompat.o();
             int p10 = windowInsetsCompat.p();
-            int i11 = dVar.f15935a;
+            int i11 = dVar.f15936a;
             if (z10) {
                 i10 = p10;
             } else {
                 i10 = o10;
             }
-            dVar.f15935a = i11 + i10;
-            int i12 = dVar.f15937c;
+            dVar.f15936a = i11 + i10;
+            int i12 = dVar.f15938c;
             if (!z10) {
                 o10 = p10;
             }
-            dVar.f15937c = i12 + o10;
+            dVar.f15938c = i12 + o10;
             dVar.a(view);
             return windowInsetsCompat;
         }

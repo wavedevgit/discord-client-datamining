@@ -239,11 +239,11 @@ public final class FragmentContainerView extends FrameLayout {
         this.f4237o = true;
         if (attributeSet != null) {
             String classAttribute = attributeSet.getClassAttribute();
-            int[] FragmentContainerView = f3.c.f23560e;
+            int[] FragmentContainerView = f3.c.f23561e;
             Intrinsics.checkNotNullExpressionValue(FragmentContainerView, "FragmentContainerView");
             TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, FragmentContainerView, 0, 0);
             if (classAttribute == null) {
-                classAttribute = obtainStyledAttributes.getString(f3.c.f23561f);
+                classAttribute = obtainStyledAttributes.getString(f3.c.f23562f);
                 str = "android:name";
             } else {
                 str = "class";
@@ -267,11 +267,11 @@ public final class FragmentContainerView extends FrameLayout {
         this.f4235e = new ArrayList();
         this.f4237o = true;
         String classAttribute = attrs.getClassAttribute();
-        int[] FragmentContainerView = f3.c.f23560e;
+        int[] FragmentContainerView = f3.c.f23561e;
         Intrinsics.checkNotNullExpressionValue(FragmentContainerView, "FragmentContainerView");
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attrs, FragmentContainerView, 0, 0);
-        classAttribute = classAttribute == null ? obtainStyledAttributes.getString(f3.c.f23561f) : classAttribute;
-        String string = obtainStyledAttributes.getString(f3.c.f23562g);
+        classAttribute = classAttribute == null ? obtainStyledAttributes.getString(f3.c.f23562f) : classAttribute;
+        String string = obtainStyledAttributes.getString(f3.c.f23563g);
         obtainStyledAttributes.recycle();
         int id2 = getId();
         Fragment o02 = fm2.o0(id2);

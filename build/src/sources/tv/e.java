@@ -14,13 +14,13 @@ import tv.f;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static f f50304a;
+    private static f f50305a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static String f50305b;
+    private static String f50306b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Object f50306c = new Object();
+    private static final Object f50307c = new Object();
 
     private static File a(ApplicationInfo applicationInfo) {
         return new File(new File(new File(applicationInfo.deviceProtectedDataDir), "app_httpflags"), "flags.binarypb");
@@ -28,17 +28,17 @@ public abstract class e {
 
     public static f b(Context context, String str, boolean z10, boolean z11) {
         c d10;
-        synchronized (f50306c) {
+        synchronized (f50307c) {
             try {
-                String str2 = f50305b;
+                String str2 = f50306b;
                 if (str2 != null && !str.equals(str2)) {
                     throw new IllegalStateException("getHttpFlags() called multiple times with different versions");
                 }
-                f fVar = f50304a;
+                f fVar = f50305a;
                 if (fVar != null) {
                     return fVar;
                 }
-                f50305b = str;
+                f50306b = str;
                 rv.a a10 = rv.a.a("HttpFlagsLoader#getHttpFlags loading flags");
                 if (!uv.e.d(context)) {
                     Log.d("HttpFlagsLoader", "Not loading HTTP flags because they are disabled in the manifest");
@@ -50,9 +50,9 @@ public abstract class e {
                     d10 = (c) c.I().b();
                 }
                 f c10 = f.c(d10, context.getPackageName(), str, z11);
-                f50304a = c10;
+                f50305a = c10;
                 f.a aVar = (f.a) c10.a().get("Cronet_log_me");
-                f fVar2 = f50304a;
+                f fVar2 = f50305a;
                 if (a10 != null) {
                     a10.close();
                 }

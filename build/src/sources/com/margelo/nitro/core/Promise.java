@@ -62,31 +62,31 @@ public final class Promise<T> {
         public static final class C0206a extends k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f18120d;
+            int f18121d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ Function1 f18121e;
+            final /* synthetic */ Function1 f18122e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ Promise f18122i;
+            final /* synthetic */ Promise f18123i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             C0206a(Function1 function1, Promise promise, Continuation continuation) {
                 super(2, continuation);
-                this.f18121e = function1;
-                this.f18122i = promise;
+                this.f18122e = function1;
+                this.f18123i = promise;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                return new C0206a(this.f18121e, this.f18122i, continuation);
+                return new C0206a(this.f18122e, this.f18123i, continuation);
             }
 
             /* JADX WARN: Multi-variable type inference failed */
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 Object f10 = gs.b.f();
-                int i10 = this.f18120d;
+                int i10 = this.f18121d;
                 try {
                     if (i10 != 0) {
                         if (i10 == 1) {
@@ -96,23 +96,23 @@ public final class Promise<T> {
                         }
                     } else {
                         kotlin.c.b(obj);
-                        Function1 function1 = this.f18121e;
-                        this.f18120d = 1;
+                        Function1 function1 = this.f18122e;
+                        this.f18121d = 1;
                         obj = function1.invoke(this);
                         if (obj == f10) {
                             return f10;
                         }
                     }
-                    this.f18122i.resolve(obj);
+                    this.f18123i.resolve(obj);
                 } catch (Throwable th2) {
-                    this.f18122i.reject(th2);
+                    this.f18123i.reject(th2);
                 }
-                return Unit.f31987a;
+                return Unit.f31988a;
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((C0206a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+                return ((C0206a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
             }
         }
 
@@ -143,20 +143,20 @@ public final class Promise<T> {
     static final class b implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Continuation f18123d;
+        final /* synthetic */ Continuation f18124d;
 
         b(Continuation continuation) {
-            this.f18123d = continuation;
+            this.f18124d = continuation;
         }
 
         public final void a(Object obj) {
-            this.f18123d.resumeWith(Result.b(obj));
+            this.f18124d.resumeWith(Result.b(obj));
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a(obj);
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
     }
 
@@ -164,23 +164,23 @@ public final class Promise<T> {
     static final class c implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Continuation f18124d;
+        final /* synthetic */ Continuation f18125d;
 
         c(Continuation continuation) {
-            this.f18124d = continuation;
+            this.f18125d = continuation;
         }
 
         public final void a(Throwable error) {
             Intrinsics.checkNotNullParameter(error, "error");
-            Continuation continuation = this.f18124d;
-            Result.a aVar = Result.f31984e;
+            Continuation continuation = this.f18125d;
+            Result.a aVar = Result.f31985e;
             continuation.resumeWith(Result.b(kotlin.c.a(error)));
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((Throwable) obj);
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
     }
 
@@ -213,7 +213,7 @@ public final class Promise<T> {
     public final Object await(@NotNull Continuation<? super T> continuation) {
         d dVar = new d(gs.b.c(continuation));
         then(new b(dVar));
-        m1170catch(new c(dVar));
+        m1169catch(new c(dVar));
         Object b10 = dVar.b();
         if (b10 == gs.b.f()) {
             g.c(continuation);
@@ -223,7 +223,7 @@ public final class Promise<T> {
 
     @NotNull
     /* renamed from: catch  reason: not valid java name */
-    public final Promise<T> m1170catch(@NotNull Function1<? super Throwable, Unit> listener) {
+    public final Promise<T> m1169catch(@NotNull Function1<? super Throwable, Unit> listener) {
         Intrinsics.checkNotNullParameter(listener, "listener");
         addOnRejectedListener(new com.margelo.nitro.core.c(listener));
         return this;

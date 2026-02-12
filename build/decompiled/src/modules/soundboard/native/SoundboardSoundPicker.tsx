@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var11 = metroImportDefault;
+    var12 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var11;
+    var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -19,7 +19,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = 0;
     var3 = var5[var0];
     var0 = undefined;
-    var3 = var11.bind(var0)(var3);
+    var3 = var12.bind(var0)(var3);
     var _closure1_slot3 = var3;
     var3 = 1;
     var6 = var5[var3];
@@ -40,62 +40,71 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var3;
     var3 = 4;
     var3 = var5[var3];
-    var3 = var11.bind(var0)(var3);
+    var3 = var12.bind(var0)(var3);
     var _closure1_slot8 = var3;
     var3 = 5;
     var3 = var5[var3];
-    var3 = var11.bind(var0)(var3);
+    var3 = var12.bind(var0)(var3);
     var _closure1_slot9 = var3;
     var3 = 6;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var10 = var3.SOUND_ROW_HORIZONTAL_PADDING;
+    var11 = var3.SOUND_ROW_HORIZONTAL_PADDING;
     var3 = 7;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var3 = var3.EXPRESSION_FOOTER_HEIGHT;
     var _closure1_slot10 = var3;
-    var12 = 8;
-    var3 = var5[var12];
+    var13 = 8;
+    var3 = var5[var13];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var _closure1_slot11 = var7;
+    var8 = var3.jsx;
+    var _closure1_slot11 = var8;
     var3 = var3.jsxs;
     var _closure1_slot12 = var3;
     var3 = 9;
     var3 = var5[var3];
-    var8 = var4.bind(var0)(var3);
-    var7 = var8.createStyles;
+    var9 = var4.bind(var0)(var3);
+    var7 = var9.createStyles;
     var3 = {};
-    var9 = {};
-    var9.marginBottom = var12;
-    var3.title = var9;
-    var9 = {
+    var10 = {};
+    var10.marginBottom = var13;
+    var3.title = var10;
+    var10 = {
         'flex': 1,
         'alignItems': 'center'
     };
-    var3.container = var9;
-    var9 = {};
-    var9.paddingHorizontal = var10;
-    var10 = 10;
-    var10 = var5[var10];
-    var10 = var11.bind(var0)(var10);
-    var10 = var10.spacing;
-    var10 = var10.PX_8;
-    var9.padding = var10;
-    var10 = '100%';
-    var9.width = var10;
-    var3.header = var9;
-    var9 = {
+    var3.container = var10;
+    var10 = {};
+    var10.paddingHorizontal = var11;
+    var11 = 10;
+    var11 = var5[var11];
+    var11 = var12.bind(var0)(var11);
+    var11 = var11.spacing;
+    var11 = var11.PX_8;
+    var10.padding = var11;
+    var11 = '100%';
+    var10.width = var11;
+    var3.header = var10;
+    var10 = {
         'flex': 1,
         'width': '100%'
     };
-    var3.body = var9;
-    var3 = var7.bind(var8)(var3);
+    var3.body = var10;
+    var3 = var7.bind(var9)(var3);
     var _closure1_slot13 = var3;
+    var3 = 11;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var7 = var3.PortalHost;
+    var3 = {};
+    var9 = 'soundboard-footer';
+    var3.name = var9;
+    var3 = var8.bind(var0)(var7, var3);
+    var _closure1_slot14 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Environment: var1
-        _fun68756: for (var _fun68756_ip = 0;;) switch (_fun68756_ip) {
+        _fun91151: for (var _fun91151_ip = 0;;) switch (_fun91151_ip) {
             case 0:
                 var0 = arg0;
                 var15 = var0.channel;
@@ -119,12 +128,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var1.bind(var18)(var0);
                 var5 = _closure1_slot0;
                 var4 = _closure1_slot2;
-                var1 = 11;
+                var1 = 12;
                 var0 = var4[var1];
                 var6 = var5.bind(var3)(var0);
                 var0 = var6.useSharedValue;
                 var25 = var0.bind(var6)(var7);
-                var0 = 12;
+                var0 = 13;
                 var6 = var4[var0];
                 var11 = var5.bind(var3)(var6);
                 var9 = var11.useStateFromStores;
@@ -153,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var11 = var8.bind(var9)(var6, var0);
                 var8 = _closure1_slot1;
-                var0 = 13;
+                var0 = 14;
                 var6 = var4[var0];
                 var9 = var8.bind(var3)(var6);
                 var6 = {};
@@ -171,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var9 = var9.bind(var3)(var6);
                 var26 = var18.useState;
-                var6 = 14;
+                var6 = 15;
                 var6 = var4[var6];
                 var27 = var5.bind(var3)(var6);
                 var6 = var27.searchSounds;
@@ -190,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var5.bind(var3)(var0);
                 var0 = var6.useSearchCategories;
                 var23 = var0.bind(var6)(var13, var7, var9);
-                var0 = 15;
+                var0 = 16;
                 var0 = var4[var0];
                 var6 = var8.bind(var3)(var0);
                 var0 = {};
@@ -198,10 +207,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.isKeyboardAwareOnAndroid = var7;
                 var0 = var6.bind(var3)(var0);
                 var26 = var0.insets;
-                var0 = 16;
+                var0 = 17;
                 var6 = var4[var0];
                 var9 = var8.bind(var3)(var6);
-                var6 = 17;
+                var6 = 18;
                 var6 = var4[var6];
                 var6 = var8.bind(var3)(var6);
                 var6 = var6.SOUNDBOARD_ACTION_SHEET;
@@ -220,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot3;
                     var4 = _closure1_slot0;
                     var5 = _closure1_slot2;
-                    var3 = 14;
+                    var3 = 15;
                     var3 = var5[var3];
                     var6 = var4.bind(var0)(var3);
                     var5 = var6.searchSounds;
@@ -234,11 +243,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var29 = var17.bind(var18)(var2, var9);
-                var2 = 18;
+                var2 = 19;
                 var2 = var4[var2];
                 var8 = var8.bind(var3)(var2);
                 var2 = {};
-                var9 = 19;
+                var9 = 20;
                 var17 = var4[var9];
                 var17 = var5.bind(var3)(var17);
                 var17 = var17.ImpressionTypes;
@@ -271,20 +280,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.AnalyticsLocationProvider;
                 var0 = {};
                 var0.value = var6;
-                var11 = 20;
+                var11 = 21;
                 var4 = var4[var11];
                 var5 = var5.bind(var3)(var4);
                 var4 = var5.isIOS;
                 var5 = var4.bind(var5)();
                 if (!var5) {
-                    _fun68756_ip = 699;
-                    continue _fun68756
+                    _fun91151_ip = 699;
+                    continue _fun91151
                 }
             case 651:
                 var7 = _closure1_slot11;
                 var6 = _closure1_slot1;
                 var8 = _closure1_slot2;
-                var4 = 21;
+                var4 = 22;
                 var4 = var8[var4];
                 var6 = var6.bind(var3)(var4);
                 var4 = {};
@@ -298,7 +307,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = _closure1_slot12;
                 var9 = _closure1_slot0;
                 var8 = _closure1_slot2;
-                var5 = 22;
+                var5 = 23;
                 var5 = var8[var5];
                 var5 = var9.bind(var3)(var5);
                 var6 = var5.BottomSheet;
@@ -314,22 +323,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var8.bind(var9)();
                 var8 = undefined;
                 if (!var9) {
-                    _fun68756_ip = 829;
-                    continue _fun68756
+                    _fun91151_ip = 785;
+                    continue _fun91151
                 }
             case 781:
-                var16 = _closure1_slot11;
-                var11 = _closure1_slot0;
-                var17 = _closure1_slot2;
-                var9 = 23;
-                var9 = var17[var9];
-                var9 = var11.bind(var3)(var9);
-                var11 = var9.PortalHost;
-                var9 = {};
-                var17 = 'soundboard-footer';
-                var9.name = var17;
-                var8 = var16.bind(var3)(var11, var9);
-            case 829:
+                var8 = _closure1_slot14;
+            case 785:
                 var5.footer = var8;
                 var17 = _closure1_slot12;
                 var9 = _closure1_slot5;
@@ -456,4 +455,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 8567, 3515, 1621, 8568, 660, 33, 1297, 671, 3717, 632, 8569, 5747, 4903, 5787, 5641, 5272, 481, 478, 8574, 4941, 3923, 3938, 1234, 7092, 8623, 8644, 8648, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 11793, 3515, 1621, 11794, 660, 33, 1297, 671, 3923, 3717, 632, 11795, 5745, 4871, 5785, 5639, 5240, 481, 478, 9241, 4907, 3938, 1234, 7107, 11798, 11807, 11808, 2]);

@@ -12,19 +12,19 @@ import kotlinx.serialization.encoding.Encoder;
 public final class d0 implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Enum[] f49975a;
+    private final Enum[] f49976a;
 
     /* renamed from: b  reason: collision with root package name */
-    private SerialDescriptor f49976b;
+    private SerialDescriptor f49977b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Lazy f49977c;
+    private final Lazy f49978c;
 
     public d0(final String serialName, Enum[] values) {
         Intrinsics.checkNotNullParameter(serialName, "serialName");
         Intrinsics.checkNotNullParameter(values, "values");
-        this.f49975a = values;
-        this.f49977c = as.l.b(new Function0() { // from class: tt.c0
+        this.f49976a = values;
+        this.f49978c = as.l.b(new Function0() { // from class: tt.c0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 SerialDescriptor c10;
@@ -35,8 +35,8 @@ public final class d0 implements KSerializer {
     }
 
     private final SerialDescriptor b(String str) {
-        b0 b0Var = new b0(str, this.f49975a.length);
-        for (Enum r42 : this.f49975a) {
+        b0 b0Var = new b0(str, this.f49976a.length);
+        for (Enum r42 : this.f49976a) {
             a2.p(b0Var, r42.name(), false, 2, null);
         }
         return b0Var;
@@ -44,7 +44,7 @@ public final class d0 implements KSerializer {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final SerialDescriptor c(d0 d0Var, String str) {
-        SerialDescriptor serialDescriptor = d0Var.f49976b;
+        SerialDescriptor serialDescriptor = d0Var.f49977b;
         if (serialDescriptor == null) {
             return d0Var.b(str);
         }
@@ -57,12 +57,12 @@ public final class d0 implements KSerializer {
         Intrinsics.checkNotNullParameter(decoder, "decoder");
         int e10 = decoder.e(getDescriptor());
         if (e10 >= 0) {
-            Enum[] enumArr = this.f49975a;
+            Enum[] enumArr = this.f49976a;
             if (e10 < enumArr.length) {
                 return enumArr[e10];
             }
         }
-        throw new qt.n(e10 + " is not among valid " + getDescriptor().h() + " enum values, values size is " + this.f49975a.length);
+        throw new qt.n(e10 + " is not among valid " + getDescriptor().h() + " enum values, values size is " + this.f49976a.length);
     }
 
     @Override // qt.o
@@ -70,7 +70,7 @@ public final class d0 implements KSerializer {
     public void serialize(Encoder encoder, Enum value) {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
-        int h02 = kotlin.collections.i.h0(this.f49975a, value);
+        int h02 = kotlin.collections.i.h0(this.f49976a, value);
         if (h02 != -1) {
             encoder.i(getDescriptor(), h02);
             return;
@@ -80,7 +80,7 @@ public final class d0 implements KSerializer {
         sb2.append(" is not a valid enum ");
         sb2.append(getDescriptor().h());
         sb2.append(", must be one of ");
-        String arrays = Arrays.toString(this.f49975a);
+        String arrays = Arrays.toString(this.f49976a);
         Intrinsics.checkNotNullExpressionValue(arrays, "toString(...)");
         sb2.append(arrays);
         throw new qt.n(sb2.toString());
@@ -88,7 +88,7 @@ public final class d0 implements KSerializer {
 
     @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return (SerialDescriptor) this.f49977c.getValue();
+        return (SerialDescriptor) this.f49978c.getValue();
     }
 
     public String toString() {
@@ -101,6 +101,6 @@ public final class d0 implements KSerializer {
         Intrinsics.checkNotNullParameter(serialName, "serialName");
         Intrinsics.checkNotNullParameter(values, "values");
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        this.f49976b = descriptor;
+        this.f49977b = descriptor;
     }
 }

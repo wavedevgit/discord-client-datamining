@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/connections/two_way_link/playstation/PlayStationLinkError.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun52127: for (var _fun52127_ip = 0;;) switch (_fun52127_ip) {
+        _fun52149: for (var _fun52149_ip = 0;;) switch (_fun52149_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.onClose;
@@ -64,8 +64,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot3;
                 var1 = var1.UNDER_MINIMUM_AGE;
                 if (!(var2 !== var1)) {
-                    _fun52127_ip = 157;
-                    continue _fun52127
+                    _fun52149_ip = 157;
+                    continue _fun52149
                 }
             case 98:
                 var7 = _closure1_slot0;
@@ -80,8 +80,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.t;
                 var1 = var1.qE9nqE;
                 var6 = var2.bind(var6)(var1);
-                _fun52127_ip = 214;
-                continue _fun52127;
+                _fun52149_ip = 214;
+                continue _fun52149;
             case 157:
                 var8 = _closure1_slot0;
                 var9 = _closure1_slot1;
@@ -124,4 +124,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.PlayStationLinkError = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5919, 660, 33, 1469, 5843, 1234, 5844, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5935, 660, 33, 1469, 5399, 1234, 5400, 2]);

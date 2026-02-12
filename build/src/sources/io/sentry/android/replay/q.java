@@ -13,34 +13,34 @@ import kotlin.jvm.internal.Intrinsics;
 public final class q implements ViewTreeObserver.OnDrawListener {
 
     /* renamed from: d  reason: collision with root package name */
-    private final s f28895d;
+    private final s f28896d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final k7 f28896e;
+    private final k7 f28897e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final b f28897i;
+    private final b f28898i;
 
     /* renamed from: o  reason: collision with root package name */
-    private WeakReference f28898o;
+    private WeakReference f28899o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final AtomicBoolean f28899p;
+    private final AtomicBoolean f28900p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final io.sentry.android.replay.util.c f28900q;
+    private final io.sentry.android.replay.util.c f28901q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final AtomicBoolean f28901r;
+    private final AtomicBoolean f28902r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final io.sentry.android.replay.screenshot.k f28902s;
+    private final io.sentry.android.replay.screenshot.k f28903s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f28903a;
+        public static final /* synthetic */ int[] f28904a;
 
         static {
             int[] iArr = new int[n4.values().length];
@@ -52,7 +52,7 @@ public final class q implements ViewTreeObserver.OnDrawListener {
                 iArr[n4.PIXEL_COPY.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f28903a = iArr;
+            f28904a = iArr;
         }
     }
 
@@ -61,14 +61,14 @@ public final class q implements ViewTreeObserver.OnDrawListener {
         Intrinsics.checkNotNullParameter(config, "config");
         Intrinsics.checkNotNullParameter(options, "options");
         Intrinsics.checkNotNullParameter(executorProvider, "executorProvider");
-        this.f28895d = config;
-        this.f28896e = options;
-        this.f28897i = executorProvider;
-        this.f28899p = new AtomicBoolean(true);
+        this.f28896d = config;
+        this.f28897e = options;
+        this.f28898i = executorProvider;
+        this.f28900p = new AtomicBoolean(true);
         io.sentry.android.replay.util.c cVar = new io.sentry.android.replay.util.c();
-        this.f28900q = cVar;
-        this.f28901r = new AtomicBoolean(false);
-        int i10 = a.f28903a[options.getSessionReplay().n().ordinal()];
+        this.f28901q = cVar;
+        this.f28902r = new AtomicBoolean(false);
+        int i10 = a.f28904a[options.getSessionReplay().n().ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
                 eVar = new io.sentry.android.replay.screenshot.j(executorProvider, rVar, options, config, cVar);
@@ -78,49 +78,49 @@ public final class q implements ViewTreeObserver.OnDrawListener {
         } else {
             eVar = new io.sentry.android.replay.screenshot.e(executorProvider, rVar, options, config);
         }
-        this.f28902s = eVar;
+        this.f28903s = eVar;
     }
 
     public final void a(View root) {
         View view;
         Intrinsics.checkNotNullParameter(root, "root");
-        WeakReference weakReference = this.f28898o;
+        WeakReference weakReference = this.f28899o;
         if (weakReference != null) {
             view = (View) weakReference.get();
         } else {
             view = null;
         }
         f(view);
-        WeakReference weakReference2 = this.f28898o;
+        WeakReference weakReference2 = this.f28899o;
         if (weakReference2 != null) {
             weakReference2.clear();
         }
-        this.f28898o = new WeakReference(root);
+        this.f28899o = new WeakReference(root);
         io.sentry.android.replay.util.n.a(root, this);
-        this.f28901r.set(true);
-        this.f28902s.onContentChanged();
+        this.f28902r.set(true);
+        this.f28903s.onContentChanged();
     }
 
     public final void b() {
         View view;
-        if (this.f28896e.getSessionReplay().u()) {
-            this.f28896e.getLogger().c(SentryLevel.DEBUG, "Capturing screenshot, isCapturing: %s", Boolean.valueOf(this.f28899p.get()));
+        if (this.f28897e.getSessionReplay().u()) {
+            this.f28897e.getLogger().c(SentryLevel.DEBUG, "Capturing screenshot, isCapturing: %s", Boolean.valueOf(this.f28900p.get()));
         }
-        if (!this.f28899p.get()) {
-            if (this.f28896e.getSessionReplay().u()) {
-                this.f28896e.getLogger().c(SentryLevel.DEBUG, "ScreenshotRecorder is paused, not capturing screenshot", new Object[0]);
+        if (!this.f28900p.get()) {
+            if (this.f28897e.getSessionReplay().u()) {
+                this.f28897e.getLogger().c(SentryLevel.DEBUG, "ScreenshotRecorder is paused, not capturing screenshot", new Object[0]);
                 return;
             }
             return;
         }
-        if (this.f28896e.getSessionReplay().u()) {
-            this.f28896e.getLogger().c(SentryLevel.DEBUG, "Capturing screenshot, contentChanged: %s, lastCaptureSuccessful: %s", Boolean.valueOf(this.f28901r.get()), Boolean.valueOf(this.f28902s.a()));
+        if (this.f28897e.getSessionReplay().u()) {
+            this.f28897e.getLogger().c(SentryLevel.DEBUG, "Capturing screenshot, contentChanged: %s, lastCaptureSuccessful: %s", Boolean.valueOf(this.f28902r.get()), Boolean.valueOf(this.f28903s.a()));
         }
-        if (!this.f28901r.get()) {
-            this.f28902s.b();
+        if (!this.f28902r.get()) {
+            this.f28903s.b();
             return;
         }
-        WeakReference weakReference = this.f28898o;
+        WeakReference weakReference = this.f28899o;
         if (weakReference != null) {
             view = (View) weakReference.get();
         } else {
@@ -128,42 +128,42 @@ public final class q implements ViewTreeObserver.OnDrawListener {
         }
         if (view != null && view.getWidth() > 0 && view.getHeight() > 0 && view.isShown()) {
             if (x.a(view) == null) {
-                this.f28896e.getLogger().c(SentryLevel.DEBUG, "Window is invalid, not capturing screenshot", new Object[0]);
+                this.f28897e.getLogger().c(SentryLevel.DEBUG, "Window is invalid, not capturing screenshot", new Object[0]);
                 return;
             }
             try {
-                this.f28901r.set(false);
-                this.f28902s.c(view);
+                this.f28902r.set(false);
+                this.f28903s.c(view);
                 return;
             } catch (Throwable th2) {
-                this.f28896e.getLogger().b(SentryLevel.WARNING, "Failed to capture replay recording", th2);
+                this.f28897e.getLogger().b(SentryLevel.WARNING, "Failed to capture replay recording", th2);
                 return;
             }
         }
-        this.f28896e.getLogger().c(SentryLevel.DEBUG, "Root view is invalid, not capturing screenshot", new Object[0]);
+        this.f28897e.getLogger().c(SentryLevel.DEBUG, "Root view is invalid, not capturing screenshot", new Object[0]);
     }
 
     public final void c() {
         View view;
-        this.f28899p.set(false);
-        WeakReference weakReference = this.f28898o;
+        this.f28900p.set(false);
+        WeakReference weakReference = this.f28899o;
         if (weakReference != null) {
             view = (View) weakReference.get();
         } else {
             view = null;
         }
         f(view);
-        WeakReference weakReference2 = this.f28898o;
+        WeakReference weakReference2 = this.f28899o;
         if (weakReference2 != null) {
             weakReference2.clear();
         }
-        this.f28902s.close();
+        this.f28903s.close();
     }
 
     public final void d() {
         View view;
-        this.f28899p.set(false);
-        WeakReference weakReference = this.f28898o;
+        this.f28900p.set(false);
+        WeakReference weakReference = this.f28899o;
         if (weakReference != null) {
             view = (View) weakReference.get();
         } else {
@@ -174,17 +174,17 @@ public final class q implements ViewTreeObserver.OnDrawListener {
 
     public final void e() {
         View view;
-        WeakReference weakReference = this.f28898o;
+        WeakReference weakReference = this.f28899o;
         if (weakReference != null && (view = (View) weakReference.get()) != null) {
             io.sentry.android.replay.util.n.a(view, this);
         }
-        this.f28899p.set(true);
+        this.f28900p.set(true);
     }
 
     public final void f(View view) {
         ViewOverlay overlay;
-        if (this.f28896e.getReplayController().y() && view != null && (overlay = view.getOverlay()) != null) {
-            overlay.remove(this.f28900q);
+        if (this.f28897e.getReplayController().y() && view != null && (overlay = view.getOverlay()) != null) {
+            overlay.remove(this.f28901q);
         }
         if (view != null) {
             io.sentry.android.replay.util.n.h(view, this);
@@ -194,20 +194,20 @@ public final class q implements ViewTreeObserver.OnDrawListener {
     @Override // android.view.ViewTreeObserver.OnDrawListener
     public void onDraw() {
         View view;
-        if (!this.f28899p.get()) {
+        if (!this.f28900p.get()) {
             return;
         }
-        WeakReference weakReference = this.f28898o;
+        WeakReference weakReference = this.f28899o;
         if (weakReference != null) {
             view = (View) weakReference.get();
         } else {
             view = null;
         }
         if (view != null && view.getWidth() > 0 && view.getHeight() > 0 && view.isShown()) {
-            this.f28901r.set(true);
-            this.f28902s.onContentChanged();
+            this.f28902r.set(true);
+            this.f28903s.onContentChanged();
             return;
         }
-        this.f28896e.getLogger().c(SentryLevel.DEBUG, "Root view is invalid, not capturing screenshot", new Object[0]);
+        this.f28897e.getLogger().c(SentryLevel.DEBUG, "Root view is invalid, not capturing screenshot", new Object[0]);
     }
 }

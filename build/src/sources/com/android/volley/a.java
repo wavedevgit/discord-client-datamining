@@ -5,7 +5,7 @@ import android.content.Intent;
 public class a extends u {
 
     /* renamed from: i  reason: collision with root package name */
-    private Intent f8755i;
+    private Intent f8756i;
 
     public a(k kVar) {
         super(kVar);
@@ -13,7 +13,7 @@ public class a extends u {
 
     @Override // java.lang.Throwable
     public String getMessage() {
-        if (this.f8755i != null) {
+        if (this.f8756i != null) {
             return "User needs to (re)enter credentials.";
         }
         return super.getMessage();

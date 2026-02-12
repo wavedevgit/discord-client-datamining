@@ -7,7 +7,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class p extends s {
 
     /* renamed from: e  reason: collision with root package name */
-    private int f50380e;
+    private int f50381e;
 
     public p(int i10) {
         super(null);
@@ -29,11 +29,11 @@ public final class p extends s {
         int i13 = i12 ^ (i12 << 16);
         int i14 = i13 >>> 7;
         int i15 = i13 & 127;
-        int i16 = this.f50390c;
+        int i16 = this.f50391c;
         int i17 = i14 & i16;
         int i18 = 0;
         while (true) {
-            long[] jArr = this.f50388a;
+            long[] jArr = this.f50389a;
             int i19 = i17 >> 3;
             int i20 = (i17 & 7) << 3;
             long j10 = ((jArr[i19 + 1] << (64 - i20)) & ((-i20) >> 63)) | (jArr[i19] >>> i20);
@@ -42,19 +42,19 @@ public final class p extends s {
             long j12 = j10 ^ (j11 * 72340172838076673L);
             for (long j13 = (~j12) & (j12 - 72340172838076673L) & (-9187201950435737472L); j13 != 0; j13 &= j13 - 1) {
                 int numberOfTrailingZeros = (i17 + (Long.numberOfTrailingZeros(j13) >> 3)) & i16;
-                if (Intrinsics.areEqual(this.f50389b[numberOfTrailingZeros], obj)) {
+                if (Intrinsics.areEqual(this.f50390b[numberOfTrailingZeros], obj)) {
                     return numberOfTrailingZeros;
                 }
             }
             if ((((~j10) << 6) & j10 & (-9187201950435737472L)) != 0) {
                 int j14 = j(i14);
-                if (this.f50380e == 0 && ((this.f50388a[j14 >> 3] >> ((j14 & 7) << 3)) & 255) != 254) {
+                if (this.f50381e == 0 && ((this.f50389a[j14 >> 3] >> ((j14 & 7) << 3)) & 255) != 254) {
                     g();
                     j14 = j(i14);
                 }
-                this.f50391d++;
-                int i22 = this.f50380e;
-                long[] jArr2 = this.f50388a;
+                this.f50392d++;
+                int i22 = this.f50381e;
+                long[] jArr2 = this.f50389a;
                 int i23 = j14 >> 3;
                 long j15 = jArr2[i23];
                 int i24 = (j14 & 7) << 3;
@@ -63,8 +63,8 @@ public final class p extends s {
                 } else {
                     i11 = 0;
                 }
-                this.f50380e = i22 - i11;
-                int i25 = this.f50390c;
+                this.f50381e = i22 - i11;
+                int i25 = this.f50391c;
                 long j16 = ((~(255 << i24)) & j15) | (j11 << i24);
                 jArr2[i23] = j16;
                 jArr2[(((j14 - 7) & i25) + (i25 & 7)) >> 3] = j16;
@@ -77,11 +77,11 @@ public final class p extends s {
     }
 
     private final int j(int i10) {
-        int i11 = this.f50390c;
+        int i11 = this.f50391c;
         int i12 = i10 & i11;
         int i13 = 0;
         while (true) {
-            long[] jArr = this.f50388a;
+            long[] jArr = this.f50389a;
             int i14 = i12 >> 3;
             int i15 = (i12 & 7) << 3;
             long j10 = ((jArr[i14 + 1] << (64 - i15)) & ((-i15) >> 63)) | (jArr[i14] >>> i15);
@@ -95,19 +95,19 @@ public final class p extends s {
     }
 
     private final void k() {
-        this.f50380e = r.a(b()) - this.f50391d;
+        this.f50381e = r.a(b()) - this.f50392d;
     }
 
     private final void l(int i10) {
         long[] jArr;
         if (i10 == 0) {
-            jArr = r.f50386a;
+            jArr = r.f50387a;
         } else {
             long[] jArr2 = new long[((i10 + 15) & (-8)) >> 3];
             kotlin.collections.i.y(jArr2, -9187201950435737472L, 0, 0, 6, null);
             jArr = jArr2;
         }
-        this.f50388a = jArr;
+        this.f50389a = jArr;
         int i11 = i10 >> 3;
         long j10 = 255 << ((i10 & 7) << 3);
         jArr[i11] = (jArr[i11] & (~j10)) | j10;
@@ -122,19 +122,19 @@ public final class p extends s {
         } else {
             i11 = 0;
         }
-        this.f50390c = i11;
+        this.f50391c = i11;
         l(i11);
         if (i11 == 0) {
-            objArr = v0.a.f51314c;
+            objArr = v0.a.f51315c;
         } else {
             objArr = new Object[i11];
         }
-        this.f50389b = objArr;
+        this.f50390b = objArr;
     }
 
     public final boolean f(Object obj) {
         int c10 = c();
-        this.f50389b[i(obj)] = obj;
+        this.f50390b[i(obj)] = obj;
         if (c() != c10) {
             return true;
         }
@@ -143,23 +143,23 @@ public final class p extends s {
 
     public final void g() {
         int compare;
-        if (this.f50390c > 8) {
-            compare = Long.compare(b0.d(b0.d(this.f50391d) * 32) ^ Long.MIN_VALUE, b0.d(b0.d(this.f50390c) * 25) ^ Long.MIN_VALUE);
+        if (this.f50391c > 8) {
+            compare = Long.compare(b0.d(b0.d(this.f50392d) * 32) ^ Long.MIN_VALUE, b0.d(b0.d(this.f50391c) * 25) ^ Long.MIN_VALUE);
             if (compare <= 0) {
                 h();
                 return;
             }
         }
-        n(r.b(this.f50390c));
+        n(r.b(this.f50391c));
     }
 
     public final void h() {
         int i10;
         int i11;
         long j10;
-        long[] jArr = this.f50388a;
-        int i12 = this.f50390c;
-        Object[] objArr = this.f50389b;
+        long[] jArr = this.f50389a;
+        int i12 = this.f50391c;
+        Object[] objArr = this.f50390b;
         int i13 = (i12 + 7) >> 3;
         int i14 = 0;
         for (int i15 = 0; i15 < i13; i15++) {
@@ -225,13 +225,13 @@ public final class p extends s {
 
     public final void n(int i10) {
         int i11;
-        long[] jArr = this.f50388a;
-        Object[] objArr = this.f50389b;
-        int i12 = this.f50390c;
+        long[] jArr = this.f50389a;
+        Object[] objArr = this.f50390b;
+        int i12 = this.f50391c;
         m(i10);
-        long[] jArr2 = this.f50388a;
-        Object[] objArr2 = this.f50389b;
-        int i13 = this.f50390c;
+        long[] jArr2 = this.f50389a;
+        Object[] objArr2 = this.f50390b;
+        int i13 = this.f50391c;
         for (int i14 = 0; i14 < i12; i14++) {
             if (((jArr[i14 >> 3] >> ((i14 & 7) << 3)) & 255) < 128) {
                 Object obj = objArr[i14];

@@ -3,53 +3,53 @@ package og;
 public final class ze {
 
     /* renamed from: a */
-    private aj f40052a;
+    private aj f40053a;
 
     /* renamed from: b */
-    private ye f40053b;
+    private ye f40054b;
 
     /* renamed from: c */
-    private we f40054c;
+    private we f40055c;
 
     /* renamed from: d */
-    private of f40055d;
+    private of f40056d;
 
     /* renamed from: e */
-    private rf f40056e;
+    private rf f40057e;
 
     /* renamed from: f */
-    private g3 f40057f;
+    private g3 f40058f;
 
     /* renamed from: g */
-    private pi f40058g;
+    private pi f40059g;
 
     public final ze d(g3 g3Var) {
-        this.f40057f = g3Var;
+        this.f40058f = g3Var;
         return this;
     }
 
     public final ze e(we weVar) {
-        this.f40054c = weVar;
+        this.f40055c = weVar;
         return this;
     }
 
     public final ze f(ye yeVar) {
-        this.f40053b = yeVar;
+        this.f40054b = yeVar;
         return this;
     }
 
     public final ze g(of ofVar) {
-        this.f40055d = ofVar;
+        this.f40056d = ofVar;
         return this;
     }
 
     public final ze h(rf rfVar) {
-        this.f40056e = rfVar;
+        this.f40057e = rfVar;
         return this;
     }
 
     public final ze i(aj ajVar) {
-        this.f40052a = ajVar;
+        this.f40053a = ajVar;
         return this;
     }
 

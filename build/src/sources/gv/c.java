@@ -10,7 +10,7 @@ import mw.d;
 public final class c implements cv.b, hv.a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f26042a = new c();
+    public static final c f26043a = new c();
 
     private c() {
     }
@@ -65,7 +65,7 @@ public final class c implements cv.b, hv.a {
         if (str != null) {
             Object q02 = CollectionsKt.q0(list2, d.b(str));
             if (q02 instanceof List) {
-                return f26042a.c(list.subList(1, list.size()), (List) q02);
+                return f26043a.c(list.subList(1, list.size()), (List) q02);
             }
             return CollectionsKt.q0(list2, d.b(str));
         }

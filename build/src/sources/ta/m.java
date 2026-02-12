@@ -6,40 +6,40 @@ import java.util.Map;
 public class m implements ImageInfo {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f48666d;
+    private final int f48667d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f48667e;
+    private final int f48668e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f48668i;
+    private final int f48669i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final o f48669o;
+    private final o f48670o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Map f48670p;
+    private final Map f48671p;
 
     public m(int i10, int i11, int i12, o oVar, Map map) {
-        this.f48666d = i10;
-        this.f48667e = i11;
-        this.f48668i = i12;
-        this.f48669o = oVar;
-        this.f48670p = map;
+        this.f48667d = i10;
+        this.f48668e = i11;
+        this.f48669i = i12;
+        this.f48670o = oVar;
+        this.f48671p = map;
     }
 
     @Override // ta.l, z9.a
     public Map getExtras() {
-        return this.f48670p;
+        return this.f48671p;
     }
 
     @Override // com.facebook.imagepipeline.image.ImageInfo
     public int getHeight() {
-        return this.f48667e;
+        return this.f48668e;
     }
 
     @Override // com.facebook.imagepipeline.image.ImageInfo
     public int getWidth() {
-        return this.f48666d;
+        return this.f48667d;
     }
 }

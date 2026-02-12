@@ -19,49 +19,49 @@ import oh.g;
 public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorLayout.c {
 
     /* renamed from: x  reason: collision with root package name */
-    private static final int f15234x = bh.b.J;
+    private static final int f15235x = bh.b.J;
 
     /* renamed from: y  reason: collision with root package name */
-    private static final int f15235y = bh.b.M;
+    private static final int f15236y = bh.b.M;
 
     /* renamed from: z  reason: collision with root package name */
-    private static final int f15236z = bh.b.T;
+    private static final int f15237z = bh.b.T;
 
     /* renamed from: d  reason: collision with root package name */
-    private final LinkedHashSet f15237d;
+    private final LinkedHashSet f15238d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f15238e;
+    private int f15239e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f15239i;
+    private int f15240i;
 
     /* renamed from: o  reason: collision with root package name */
-    private TimeInterpolator f15240o;
+    private TimeInterpolator f15241o;
 
     /* renamed from: p  reason: collision with root package name */
-    private TimeInterpolator f15241p;
+    private TimeInterpolator f15242p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f15242q;
+    private int f15243q;
 
     /* renamed from: r  reason: collision with root package name */
-    private AccessibilityManager f15243r;
+    private AccessibilityManager f15244r;
 
     /* renamed from: s  reason: collision with root package name */
-    private AccessibilityManager.TouchExplorationStateChangeListener f15244s;
+    private AccessibilityManager.TouchExplorationStateChangeListener f15245s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f15245t;
+    private boolean f15246t;
 
     /* renamed from: u  reason: collision with root package name */
-    private int f15246u;
+    private int f15247u;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f15247v;
+    private int f15248v;
 
     /* renamed from: w  reason: collision with root package name */
-    private ViewPropertyAnimator f15248w;
+    private ViewPropertyAnimator f15249w;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -75,9 +75,9 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
 
         @Override // android.view.View.OnAttachStateChangeListener
         public void onViewDetachedFromWindow(View view) {
-            if (HideBottomViewOnScrollBehavior.this.f15244s != null && HideBottomViewOnScrollBehavior.this.f15243r != null) {
-                HideBottomViewOnScrollBehavior.this.f15243r.removeTouchExplorationStateChangeListener(HideBottomViewOnScrollBehavior.this.f15244s);
-                HideBottomViewOnScrollBehavior.this.f15244s = null;
+            if (HideBottomViewOnScrollBehavior.this.f15245s != null && HideBottomViewOnScrollBehavior.this.f15244r != null) {
+                HideBottomViewOnScrollBehavior.this.f15244r.removeTouchExplorationStateChangeListener(HideBottomViewOnScrollBehavior.this.f15245s);
+                HideBottomViewOnScrollBehavior.this.f15245s = null;
             }
         }
     }
@@ -90,16 +90,16 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
 
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            HideBottomViewOnScrollBehavior.this.f15248w = null;
+            HideBottomViewOnScrollBehavior.this.f15249w = null;
         }
     }
 
     public HideBottomViewOnScrollBehavior() {
-        this.f15237d = new LinkedHashSet();
-        this.f15242q = 0;
-        this.f15245t = true;
-        this.f15246u = 2;
-        this.f15247v = 0;
+        this.f15238d = new LinkedHashSet();
+        this.f15243q = 0;
+        this.f15246t = true;
+        this.f15247u = 2;
+        this.f15248v = 0;
     }
 
     public static /* synthetic */ void I(HideBottomViewOnScrollBehavior hideBottomViewOnScrollBehavior, View view, boolean z10) {
@@ -114,29 +114,29 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
     }
 
     private void N(View view, int i10, long j10, TimeInterpolator timeInterpolator) {
-        this.f15248w = view.animate().translationY(i10).setInterpolator(timeInterpolator).setDuration(j10).setListener(new b());
+        this.f15249w = view.animate().translationY(i10).setInterpolator(timeInterpolator).setDuration(j10).setListener(new b());
     }
 
     private void O(final View view) {
-        if (this.f15243r == null) {
-            this.f15243r = (AccessibilityManager) androidx.core.content.a.j(view.getContext(), AccessibilityManager.class);
+        if (this.f15244r == null) {
+            this.f15244r = (AccessibilityManager) androidx.core.content.a.j(view.getContext(), AccessibilityManager.class);
         }
-        if (this.f15243r != null && this.f15244s == null) {
+        if (this.f15244r != null && this.f15245s == null) {
             AccessibilityManager.TouchExplorationStateChangeListener touchExplorationStateChangeListener = new AccessibilityManager.TouchExplorationStateChangeListener() { // from class: eh.a
                 @Override // android.view.accessibility.AccessibilityManager.TouchExplorationStateChangeListener
                 public final void onTouchExplorationStateChanged(boolean z10) {
                     HideBottomViewOnScrollBehavior.I(HideBottomViewOnScrollBehavior.this, view, z10);
                 }
             };
-            this.f15244s = touchExplorationStateChangeListener;
-            this.f15243r.addTouchExplorationStateChangeListener(touchExplorationStateChangeListener);
+            this.f15245s = touchExplorationStateChangeListener;
+            this.f15244r.addTouchExplorationStateChangeListener(touchExplorationStateChangeListener);
             view.addOnAttachStateChangeListener(new a());
         }
     }
 
     private void V(View view, int i10) {
-        this.f15246u = i10;
-        Iterator it = this.f15237d.iterator();
+        this.f15247u = i10;
+        Iterator it = this.f15238d.iterator();
         if (!it.hasNext()) {
             return;
         }
@@ -150,14 +150,14 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
     }
 
     public boolean P() {
-        if (this.f15246u == 1) {
+        if (this.f15247u == 1) {
             return true;
         }
         return false;
     }
 
     public boolean Q() {
-        if (this.f15246u == 2) {
+        if (this.f15247u == 2) {
             return true;
         }
         return false;
@@ -170,18 +170,18 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
     public void S(View view, boolean z10) {
         AccessibilityManager accessibilityManager;
         if (!P()) {
-            if (this.f15245t && (accessibilityManager = this.f15243r) != null && accessibilityManager.isTouchExplorationEnabled()) {
+            if (this.f15246t && (accessibilityManager = this.f15244r) != null && accessibilityManager.isTouchExplorationEnabled()) {
                 return;
             }
-            ViewPropertyAnimator viewPropertyAnimator = this.f15248w;
+            ViewPropertyAnimator viewPropertyAnimator = this.f15249w;
             if (viewPropertyAnimator != null) {
                 viewPropertyAnimator.cancel();
                 view.clearAnimation();
             }
             V(view, 1);
-            int i10 = this.f15242q + this.f15247v;
+            int i10 = this.f15243q + this.f15248v;
             if (z10) {
-                N(view, i10, this.f15239i, this.f15241p);
+                N(view, i10, this.f15240i, this.f15242p);
             } else {
                 view.setTranslationY(i10);
             }
@@ -196,14 +196,14 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
         if (Q()) {
             return;
         }
-        ViewPropertyAnimator viewPropertyAnimator = this.f15248w;
+        ViewPropertyAnimator viewPropertyAnimator = this.f15249w;
         if (viewPropertyAnimator != null) {
             viewPropertyAnimator.cancel();
             view.clearAnimation();
         }
         V(view, 2);
         if (z10) {
-            N(view, 0, this.f15238e, this.f15240o);
+            N(view, 0, this.f15239e, this.f15241o);
         } else {
             view.setTranslationY(0);
         }
@@ -211,13 +211,13 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.c
     public boolean p(CoordinatorLayout coordinatorLayout, View view, int i10) {
-        this.f15242q = view.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) view.getLayoutParams()).bottomMargin;
-        this.f15238e = g.f(view.getContext(), f15234x, 225);
-        this.f15239i = g.f(view.getContext(), f15235y, 175);
+        this.f15243q = view.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) view.getLayoutParams()).bottomMargin;
+        this.f15239e = g.f(view.getContext(), f15235x, 225);
+        this.f15240i = g.f(view.getContext(), f15236y, 175);
         Context context = view.getContext();
-        int i11 = f15236z;
-        this.f15240o = g.g(context, i11, ch.a.f8279d);
-        this.f15241p = g.g(view.getContext(), i11, ch.a.f8278c);
+        int i11 = f15237z;
+        this.f15241o = g.g(context, i11, ch.a.f8279d);
+        this.f15242p = g.g(view.getContext(), i11, ch.a.f8278c);
         O(view);
         return super.p(coordinatorLayout, view, i10);
     }
@@ -233,10 +233,10 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
 
     public HideBottomViewOnScrollBehavior(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
-        this.f15237d = new LinkedHashSet();
-        this.f15242q = 0;
-        this.f15245t = true;
-        this.f15246u = 2;
-        this.f15247v = 0;
+        this.f15238d = new LinkedHashSet();
+        this.f15243q = 0;
+        this.f15246t = true;
+        this.f15247u = 2;
+        this.f15248v = 0;
     }
 }

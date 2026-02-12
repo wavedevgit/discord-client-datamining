@@ -25,8 +25,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 1;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var6 = var3.jsx;
-    var _closure1_slot4 = var6;
+    var7 = var3.jsx;
+    var _closure1_slot4 = var7;
     var3 = var3.jsxs;
     var _closure1_slot5 = var3;
     var3 = new Array(3);
@@ -58,6 +58,64 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3[1] = var6;
     var _closure1_slot7 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.BottomSheetTitleHeader;
+    var3 = {};
+    var8 = 'Button Settings';
+    var3.title = var8;
+    var3 = var7.bind(var0)(var6, var3);
+    var _closure1_slot8 = var3;
+    var3 = 3;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var8 = var6.FormDivider;
+    var6 = {};
+    var6 = var7.bind(var0)(var8, var6);
+    var _closure1_slot9 = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var8 = var6.FormHint;
+    var6 = {};
+    var9 = 'The amount in pixels that the button width will scale when pressed';
+    var6.children = var9;
+    var6 = var7.bind(var0)(var8, var6);
+    var _closure1_slot10 = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var8 = var6.FormDivider;
+    var6 = {};
+    var6 = var7.bind(var0)(var8, var6);
+    var _closure1_slot11 = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var8 = var6.FormHint;
+    var6 = {};
+    var9 = 'Whether to show the example icon on the left (default) or right.';
+    var6.children = var9;
+    var6 = var7.bind(var0)(var8, var6);
+    var _closure1_slot12 = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var8 = var6.FormDivider;
+    var6 = {};
+    var6 = var7.bind(var0)(var8, var6);
+    var _closure1_slot13 = var6;
+    var6 = var5[var3];
+    var6 = var4.bind(var0)(var6);
+    var8 = var6.FormHint;
+    var6 = {};
+    var9 = 'Whether or not to show a loading state when a button is pressed';
+    var6.children = var9;
+    var6 = var7.bind(var0)(var8, var6);
+    var _closure1_slot14 = var6;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.FormDivider;
+    var3 = {};
+    var3 = var7.bind(var0)(var6, var3);
+    var _closure1_slot15 = var3;
     var3 = 7;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -66,13 +124,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var1 = function() {
         var1 = _closure1_slot1;
-        var14 = _closure1_slot2;
-        var0 = 2;
-        var0 = var14[var0];
+        var12 = _closure1_slot2;
+        var0 = 4;
+        var0 = var12[var0];
         var3 = undefined;
         var0 = var1.bind(var3)(var0);
-        var17 = var0.bind(var3)();
-        var _closure2_slot0 = var17;
+        var18 = var0.bind(var3)();
+        var _closure2_slot0 = var18;
         var4 = _closure1_slot3;
         var2 = var4.useCallback;
         var1 = function(arg0) { // Environment: var11
@@ -80,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
             var2 = _closure1_slot2;
-            var0 = 3;
+            var0 = 5;
             var2 = var2[var0];
             var0 = undefined;
             var3 = var3.bind(var0)(var2);
@@ -88,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = function() { // Environment: var1
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
-                var0 = 2;
+                var0 = 4;
                 var1 = var1[var0];
                 var0 = undefined;
                 var2 = var2.bind(var0)(var1);
@@ -111,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
             var2 = _closure1_slot2;
-            var0 = 3;
+            var0 = 5;
             var2 = var2[var0];
             var0 = undefined;
             var3 = var3.bind(var0)(var2);
@@ -119,7 +177,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = function() { // Environment: var1
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
-                var0 = 2;
+                var0 = 4;
                 var1 = var1[var0];
                 var0 = undefined;
                 var2 = var2.bind(var0)(var1);
@@ -142,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
             var2 = _closure1_slot2;
-            var0 = 3;
+            var0 = 5;
             var2 = var2[var0];
             var0 = undefined;
             var3 = var3.bind(var0)(var2);
@@ -150,7 +208,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = function() { // Environment: var1
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
-                var0 = 2;
+                var0 = 4;
                 var1 = var1[var0];
                 var0 = undefined;
                 var2 = var2.bind(var0)(var1);
@@ -173,7 +231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
             var2 = _closure1_slot2;
-            var0 = 3;
+            var0 = 5;
             var2 = var2[var0];
             var0 = undefined;
             var3 = var3.bind(var0)(var2);
@@ -181,7 +239,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = function() { // Environment: var1
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
-                var0 = 2;
+                var0 = 4;
                 var1 = var1[var0];
                 var0 = undefined;
                 var2 = var2.bind(var0)(var1);
@@ -204,7 +262,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
             var2 = _closure1_slot2;
-            var0 = 3;
+            var0 = 5;
             var2 = var2[var0];
             var0 = undefined;
             var3 = var3.bind(var0)(var2);
@@ -212,7 +270,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = function() { // Environment: var1
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
-                var0 = 2;
+                var0 = 4;
                 var1 = var1[var0];
                 var0 = undefined;
                 var2 = var2.bind(var0)(var1);
@@ -235,7 +293,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure3_slot0 = var0;
             var3 = _closure1_slot0;
             var2 = _closure1_slot2;
-            var0 = 3;
+            var0 = 5;
             var2 = var2[var0];
             var0 = undefined;
             var3 = var3.bind(var0)(var2);
@@ -243,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = function() { // Environment: var1
                 var2 = _closure1_slot1;
                 var1 = _closure1_slot2;
-                var0 = 2;
+                var0 = 4;
                 var1 = var1[var0];
                 var0 = undefined;
                 var2 = var2.bind(var0)(var1);
@@ -261,231 +319,204 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var4)(var1, var0);
         var _closure2_slot6 = var0;
         var2 = _closure1_slot5;
-        var12 = _closure1_slot0;
-        var0 = 4;
-        var0 = var14[var0];
-        var0 = var12.bind(var3)(var0);
+        var9 = _closure1_slot0;
+        var0 = 6;
+        var0 = var12[var0];
+        var0 = var9.bind(var3)(var0);
         var1 = var0.BottomSheet;
         var0 = {};
-        var13 = _closure1_slot4;
-        var4 = 5;
-        var4 = var14[var4];
-        var4 = var12.bind(var3)(var4);
-        var5 = var4.BottomSheetTitleHeader;
-        var4 = {};
-        var6 = 'Button Settings';
-        var4.title = var6;
-        var5 = var13.bind(var3)(var5, var4);
+        var5 = _closure1_slot8;
         var4 = new Array(2);
         var4[0] = var5;
-        var10 = 6;
-        var5 = var14[var10];
-        var5 = var12.bind(var3)(var5);
+        var8 = 3;
+        var5 = var12[var8];
+        var5 = var9.bind(var3)(var5);
         var6 = var5.Form;
         var5 = {};
-        var7 = var14[var10];
-        var7 = var12.bind(var3)(var7);
-        var8 = var7.FormSection;
+        var15 = _closure1_slot4;
+        var7 = var12[var8];
+        var7 = var9.bind(var3)(var7);
+        var13 = var7.FormSection;
         var7 = {
             'title': 'Button Size',
             'accessibilityRole': 'radiogroup'
         };
-        var18 = _closure1_slot6;
-        var15 = var18.map;
-        var9 = function(arg0) { // Environment: var11
+        var17 = _closure1_slot6;
+        var16 = var17.map;
+        var14 = function(arg0) { // Environment: var11
             var0 = arg0;
-            var12 = var0.label;
+            var10 = var0.label;
             var4 = var0.value;
             var _closure3_slot0 = var4;
             var3 = _closure1_slot5;
-            var1 = _closure1_slot3;
-            var2 = var1.Fragment;
+            var0 = _closure1_slot3;
+            var2 = var0.Fragment;
             var1 = {};
             var8 = _closure1_slot4;
             var7 = _closure1_slot0;
-            var9 = _closure1_slot2;
-            var6 = 6;
-            var5 = var9[var6];
+            var5 = _closure1_slot2;
+            var0 = 3;
+            var5 = var5[var0];
             var0 = undefined;
             var5 = var7.bind(var0)(var5);
-            var10 = var5.FormRadioRow;
+            var7 = var5.FormRadioRow;
             var5 = {};
-            var13 = 'right';
-            var5.align = var13;
-            var13 = _closure2_slot0;
-            var13 = var13.buttonSize;
-            var13 = var13 === var4;
-            var5.selected = var13;
-            var5.label = var12;
-            var11 = function() {
+            var11 = 'right';
+            var5.align = var11;
+            var11 = _closure2_slot0;
+            var11 = var11.buttonSize;
+            var11 = var11 === var4;
+            var5.selected = var11;
+            var5.label = var10;
+            var9 = function() {
                 var2 = _closure2_slot1;
                 var1 = _closure3_slot0;
                 var0 = undefined;
                 var0 = var2.bind(var0)(var1);
                 return var0;
             };
-            var5.onPress = var11;
-            var11 = {};
-            var12 = true;
-            var11.selected = var12;
-            var5.accessibilityState = var11;
-            var11 = 'radio';
-            var5.accessibilityRole = var11;
-            var10 = var8.bind(var0)(var10, var5);
+            var5.onPress = var9;
+            var9 = {};
+            var10 = true;
+            var9.selected = var10;
+            var5.accessibilityState = var9;
+            var9 = 'radio';
+            var5.accessibilityRole = var9;
+            var7 = var8.bind(var0)(var7, var5);
             var5 = new Array(2);
-            var5[0] = var10;
-            var6 = var9[var6];
-            var6 = var7.bind(var0)(var6);
-            var7 = var6.FormDivider;
-            var6 = {};
-            var6 = var8.bind(var0)(var7, var6);
+            var5[0] = var7;
+            var6 = _closure1_slot9;
             var5[1] = var6;
             var1.children = var5;
             var0 = var3.bind(var0)(var2, var1, var4);
             return var0;
         };
-        var9 = var15.bind(var18)(var9);
-        var7.children = var9;
-        var8 = var13.bind(var3)(var8, var7);
+        var14 = var16.bind(var17)(var14);
+        var7.children = var14;
+        var13 = var15.bind(var3)(var13, var7);
         var7 = new Array(6);
-        var7[0] = var8;
-        var8 = var14[var10];
-        var8 = var12.bind(var3)(var8);
-        var9 = var8.FormSection;
-        var8 = {
+        var7[0] = var13;
+        var13 = var12[var8];
+        var13 = var9.bind(var3)(var13);
+        var14 = var13.FormSection;
+        var13 = {
             'title': 'Button Scale',
             'accessibilityRole': 'radiogroup'
         };
-        var15 = var14[var10];
-        var15 = var12.bind(var3)(var15);
-        var18 = var15.FormHint;
-        var15 = {};
-        var19 = 'The amount in pixels that the button width will scale when pressed';
-        var15.children = var19;
-        var18 = var13.bind(var3)(var18, var15);
-        var15 = new Array(2);
-        var15[0] = var18;
-        var19 = _closure1_slot7;
-        var18 = var19.map;
-        var16 = function(arg0) { // Environment: var11
+        var17 = _closure1_slot10;
+        var16 = new Array(2);
+        var16[0] = var17;
+        var20 = _closure1_slot7;
+        var19 = var20.map;
+        var17 = function(arg0) { // Environment: var11
             var0 = arg0;
-            var12 = var0.label;
+            var10 = var0.label;
             var4 = var0.value;
             var _closure3_slot0 = var4;
             var3 = _closure1_slot5;
-            var1 = _closure1_slot3;
-            var2 = var1.Fragment;
+            var0 = _closure1_slot3;
+            var2 = var0.Fragment;
             var1 = {};
             var8 = _closure1_slot4;
             var7 = _closure1_slot0;
-            var9 = _closure1_slot2;
-            var6 = 6;
-            var5 = var9[var6];
+            var5 = _closure1_slot2;
+            var0 = 3;
+            var5 = var5[var0];
             var0 = undefined;
             var5 = var7.bind(var0)(var5);
-            var10 = var5.FormRadioRow;
+            var7 = var5.FormRadioRow;
             var5 = {};
-            var13 = 'right';
-            var5.align = var13;
-            var13 = _closure2_slot0;
-            var13 = var13.buttonScale;
-            var13 = var13 === var4;
-            var5.selected = var13;
-            var5.label = var12;
-            var11 = function() {
+            var11 = 'right';
+            var5.align = var11;
+            var11 = _closure2_slot0;
+            var11 = var11.buttonScale;
+            var11 = var11 === var4;
+            var5.selected = var11;
+            var5.label = var10;
+            var9 = function() {
                 var2 = _closure2_slot2;
                 var1 = _closure3_slot0;
                 var0 = undefined;
                 var0 = var2.bind(var0)(var1);
                 return var0;
             };
-            var5.onPress = var11;
-            var11 = {};
-            var12 = true;
-            var11.selected = var12;
-            var5.accessibilityState = var11;
-            var11 = 'radio';
-            var5.accessibilityRole = var11;
-            var10 = var8.bind(var0)(var10, var5);
+            var5.onPress = var9;
+            var9 = {};
+            var10 = true;
+            var9.selected = var10;
+            var5.accessibilityState = var9;
+            var9 = 'radio';
+            var5.accessibilityRole = var9;
+            var7 = var8.bind(var0)(var7, var5);
             var5 = new Array(2);
-            var5[0] = var10;
-            var6 = var9[var6];
-            var6 = var7.bind(var0)(var6);
-            var7 = var6.FormDivider;
-            var6 = {};
-            var6 = var8.bind(var0)(var7, var6);
+            var5[0] = var7;
+            var6 = _closure1_slot11;
             var5[1] = var6;
             var1.children = var5;
             var0 = var3.bind(var0)(var2, var1, var4);
             return var0;
         };
-        var16 = var18.bind(var19)(var16);
-        var15[1] = var16;
-        var8.children = var15;
-        var8 = var2.bind(var3)(var9, var8);
-        var7[1] = var8;
-        var8 = var14[var10];
-        var8 = var12.bind(var3)(var8);
-        var9 = var8.FormSection;
-        var8 = {};
-        var15 = var14[var10];
-        var15 = var12.bind(var3)(var15);
-        var16 = var15.FormSwitchRow;
-        var15 = {};
-        var18 = 'Disabled';
-        var15.label = var18;
-        var18 = var17.showDisabled;
-        var15.value = var18;
-        var18 = function arg0() {
+        var17 = var19.bind(var20)(var17);
+        var16[1] = var17;
+        var13.children = var16;
+        var13 = var2.bind(var3)(var14, var13);
+        var7[1] = var13;
+        var13 = var12[var8];
+        var13 = var9.bind(var3)(var13);
+        var14 = var13.FormSection;
+        var13 = {};
+        var16 = var12[var8];
+        var16 = var9.bind(var3)(var16);
+        var17 = var16.FormSwitchRow;
+        var16 = {};
+        var19 = 'Disabled';
+        var16.label = var19;
+        var19 = var18.showDisabled;
+        var16.value = var19;
+        var19 = function arg0() {
             var2 = _closure2_slot3;
             var1 = undefined;
             var0 = arg0;
             var0 = var2.bind(var1)(var0);
             return var0;
         };
-        var15.onValueChange = var18;
-        var15 = var13.bind(var3)(var16, var15);
-        var8.children = var15;
-        var8 = var13.bind(var3)(var9, var8);
-        var7[2] = var8;
-        var8 = var14[var10];
-        var8 = var12.bind(var3)(var8);
-        var9 = var8.FormSection;
-        var8 = {};
-        var15 = var14[var10];
-        var15 = var12.bind(var3)(var15);
-        var16 = var15.FormSwitchRow;
-        var15 = {};
-        var18 = 'Show Icons';
-        var15.label = var18;
-        var17 = var17.showIcon;
-        var15.value = var17;
-        var17 = function arg0() {
+        var16.onValueChange = var19;
+        var16 = var15.bind(var3)(var17, var16);
+        var13.children = var16;
+        var13 = var15.bind(var3)(var14, var13);
+        var7[2] = var13;
+        var13 = var12[var8];
+        var13 = var9.bind(var3)(var13);
+        var14 = var13.FormSection;
+        var13 = {};
+        var16 = var12[var8];
+        var16 = var9.bind(var3)(var16);
+        var17 = var16.FormSwitchRow;
+        var16 = {};
+        var19 = 'Show Icons';
+        var16.label = var19;
+        var18 = var18.showIcon;
+        var16.value = var18;
+        var18 = function arg0() {
             var2 = _closure2_slot4;
             var1 = undefined;
             var0 = arg0;
             var0 = var2.bind(var1)(var0);
             return var0;
         };
-        var15.onValueChange = var17;
-        var15 = var13.bind(var3)(var16, var15);
-        var8.children = var15;
-        var8 = var13.bind(var3)(var9, var8);
-        var7[3] = var8;
-        var8 = var14[var10];
-        var8 = var12.bind(var3)(var8);
-        var9 = var8.FormSection;
-        var8 = {
+        var16.onValueChange = var18;
+        var16 = var15.bind(var3)(var17, var16);
+        var13.children = var16;
+        var13 = var15.bind(var3)(var14, var13);
+        var7[3] = var13;
+        var13 = var12[var8];
+        var13 = var9.bind(var3)(var13);
+        var14 = var13.FormSection;
+        var13 = {
             'title': 'Icon Position',
             'accessibilityRole': 'radiogroup'
         };
-        var15 = var14[var10];
-        var15 = var12.bind(var3)(var15);
-        var16 = var15.FormHint;
-        var15 = {};
-        var17 = 'Whether to show the example icon on the left (default) or right.';
-        var15.children = var17;
-        var16 = var13.bind(var3)(var16, var15);
+        var16 = _closure1_slot12;
         var15 = new Array(2);
         var15[0] = var16;
         var18 = ['start', 'end'];
@@ -494,48 +525,44 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = arg0;
             var _closure3_slot0 = var4;
             var3 = _closure1_slot5;
-            var1 = _closure1_slot3;
-            var2 = var1.Fragment;
+            var0 = _closure1_slot3;
+            var2 = var0.Fragment;
             var1 = {};
             var8 = _closure1_slot4;
             var7 = _closure1_slot0;
-            var9 = _closure1_slot2;
-            var6 = 6;
-            var5 = var9[var6];
+            var5 = _closure1_slot2;
+            var0 = 3;
+            var5 = var5[var0];
             var0 = undefined;
             var5 = var7.bind(var0)(var5);
-            var10 = var5.FormRadioRow;
+            var7 = var5.FormRadioRow;
             var5 = {};
-            var12 = 'right';
-            var5.align = var12;
-            var12 = _closure2_slot0;
-            var13 = var12.iconPosition;
-            var13 = var13 === var4;
-            var5.selected = var13;
+            var10 = 'right';
+            var5.align = var10;
+            var10 = _closure2_slot0;
+            var11 = var10.iconPosition;
+            var11 = var11 === var4;
+            var5.selected = var11;
             var5.label = var4;
-            var11 = function() {
+            var9 = function() {
                 var2 = _closure2_slot5;
                 var1 = _closure3_slot0;
                 var0 = undefined;
                 var0 = var2.bind(var0)(var1);
                 return var0;
             };
-            var5.onPress = var11;
-            var11 = {};
-            var12 = var12.iconPosition;
-            var12 = var12 === var4;
-            var11.selected = var12;
-            var5.accessibilityState = var11;
-            var11 = 'radio';
-            var5.accessibilityRole = var11;
-            var10 = var8.bind(var0)(var10, var5);
+            var5.onPress = var9;
+            var9 = {};
+            var10 = var10.iconPosition;
+            var10 = var10 === var4;
+            var9.selected = var10;
+            var5.accessibilityState = var9;
+            var9 = 'radio';
+            var5.accessibilityRole = var9;
+            var7 = var8.bind(var0)(var7, var5);
             var5 = new Array(2);
-            var5[0] = var10;
-            var6 = var9[var6];
-            var6 = var7.bind(var0)(var6);
-            var7 = var6.FormDivider;
-            var6 = {};
-            var6 = var8.bind(var0)(var7, var6);
+            var5[0] = var7;
+            var6 = _closure1_slot13;
             var5[1] = var6;
             var1.children = var5;
             var0 = var3.bind(var0)(var2, var1, var4);
@@ -543,23 +570,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var16 = var17.bind(var18)(var16);
         var15[1] = var16;
-        var8.children = var15;
-        var8 = var2.bind(var3)(var9, var8);
-        var7[4] = var8;
-        var8 = var14[var10];
-        var8 = var12.bind(var3)(var8);
+        var13.children = var15;
+        var13 = var2.bind(var3)(var14, var13);
+        var7[4] = var13;
+        var8 = var12[var8];
+        var8 = var9.bind(var3)(var8);
         var9 = var8.FormSection;
         var8 = {
             'title': 'Loading state',
             'accessibilityRole': 'radiogroup'
         };
-        var10 = var14[var10];
-        var10 = var12.bind(var3)(var10);
-        var12 = var10.FormHint;
-        var10 = {};
-        var14 = 'Whether or not to show a loading state when a button is pressed';
-        var10.children = var14;
-        var12 = var13.bind(var3)(var12, var10);
+        var12 = _closure1_slot14;
         var10 = new Array(2);
         var10[0] = var12;
         var13 = new Array(2);
@@ -569,19 +590,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var13[1] = var12;
         var12 = var13.map;
         var11 = function(arg0) { // Environment: var11
-            _fun88711: for (var _fun88711_ip = 0;;) switch (_fun88711_ip) {
+            _fun87054: for (var _fun87054_ip = 0;;) switch (_fun87054_ip) {
                 case 0:
-                    var12 = arg0;
-                    var _closure3_slot0 = var12;
+                    var11 = arg0;
+                    var _closure3_slot0 = var11;
                     var4 = _closure1_slot5;
                     var0 = _closure1_slot3;
                     var3 = var0.Fragment;
                     var2 = {};
                     var8 = _closure1_slot4;
                     var5 = _closure1_slot0;
-                    var0 = _closure1_slot2;
-                    var9 = 6;
-                    var0 = var0[var9];
+                    var1 = _closure1_slot2;
+                    var0 = 3;
+                    var0 = var1[var0];
                     var1 = undefined;
                     var0 = var5.bind(var1)(var0);
                     var7 = var0.FormRadioRow;
@@ -590,56 +611,49 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.align = var5;
                     var5 = _closure2_slot0;
                     var5 = var5.enableLoadingState;
-                    var5 = var5 === var12;
+                    var5 = var5 === var11;
                     var0.selected = var5;
                     var5 = true;
-                    var5 = var5 === var12;
-                    var13 = 'Disabled';
+                    var5 = var5 === var11;
+                    var12 = 'Disabled';
                     if (!var5) {
-                        _fun88711_ip = 110;
-                        continue _fun88711
+                        _fun87054_ip = 110;
+                        continue _fun87054
                     }
                 case 106:
-                    var13 = 'Enabled';
+                    var12 = 'Enabled';
                 case 110:
-                    var0.label = var13;
-                    var10 = function() {
+                    var0.label = var12;
+                    var9 = function() {
                         var2 = _closure2_slot6;
                         var1 = _closure3_slot0;
                         var0 = undefined;
                         var0 = var2.bind(var0)(var1);
                         return var0;
                     };
-                    var0.onPress = var10;
-                    var10 = {};
-                    var11 = _closure2_slot0;
-                    var11 = var11.enableLoadingState;
-                    var11 = var11 === var12;
-                    var10.selected = var11;
-                    var0.accessibilityState = var10;
-                    var10 = 'radio';
-                    var0.accessibilityRole = var10;
+                    var0.onPress = var9;
+                    var9 = {};
+                    var10 = _closure2_slot0;
+                    var10 = var10.enableLoadingState;
+                    var10 = var10 === var11;
+                    var9.selected = var10;
+                    var0.accessibilityState = var9;
+                    var9 = 'radio';
+                    var0.accessibilityRole = var9;
                     var7 = var8.bind(var1)(var7, var0);
                     var0 = new Array(2);
                     var0[0] = var7;
-                    var8 = _closure1_slot4;
-                    var7 = _closure1_slot0;
-                    var6 = _closure1_slot2;
-                    var6 = var6[var9];
-                    var6 = var7.bind(var1)(var6);
-                    var7 = var6.FormDivider;
-                    var6 = {};
-                    var6 = var8.bind(var1)(var7, var6);
+                    var6 = _closure1_slot15;
                     var0[1] = var6;
                     var2.children = var0;
                     var0 = 'disabled';
                     if (!var5) {
-                        _fun88711_ip = 227;
-                        continue _fun88711
+                        _fun87054_ip = 196;
+                        continue _fun87054
                     }
-                case 223:
+                case 192:
                     var0 = 'enabled';
-                case 227:
+                case 196:
                     var0 = var4.bind(var1)(var3, var2, var0);
                     return var0;
             }
@@ -658,4 +672,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 11448, 802, 4941, 5269, 5440, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 5237, 5441, 11196, 802, 4907, 2]);

@@ -45,15 +45,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activity_status/VoiceActivityStatusMobileExperiment.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun62494: for (var _fun62494_ip = 0;;) switch (_fun62494_ip) {
+        _fun68663: for (var _fun68663_ip = 0;;) switch (_fun68663_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.location;
                 var4 = var1.autoTrackExposure;
                 var1 = undefined;
                 if (!(var4 === var1)) {
-                    _fun62494_ip = 22;
-                    continue _fun62494
+                    _fun68663_ip = 22;
+                    continue _fun68663
                 }
             case 20:
                 var4 = true;

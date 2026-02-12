@@ -5,7 +5,7 @@ import ys.f1;
 final class b implements f1 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final b f34999d = new b();
+    public static final b f35000d = new b();
 
     private b() {
     }

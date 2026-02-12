@@ -7,33 +7,33 @@ import oe.w0;
 public final class r {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f31722a;
+    public final int f31723a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final r0[] f31723b;
+    public final r0[] f31724b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final com.google.android.exoplayer2.trackselection.g[] f31724c;
+    public final com.google.android.exoplayer2.trackselection.g[] f31725c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final Tracks f31725d;
+    public final Tracks f31726d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Object f31726e;
+    public final Object f31727e;
 
     public r(r0[] r0VarArr, com.google.android.exoplayer2.trackselection.g[] gVarArr, Tracks tracks, Object obj) {
-        this.f31723b = r0VarArr;
-        this.f31724c = (com.google.android.exoplayer2.trackselection.g[]) gVarArr.clone();
-        this.f31725d = tracks;
-        this.f31726e = obj;
-        this.f31722a = r0VarArr.length;
+        this.f31724b = r0VarArr;
+        this.f31725c = (com.google.android.exoplayer2.trackselection.g[]) gVarArr.clone();
+        this.f31726d = tracks;
+        this.f31727e = obj;
+        this.f31723a = r0VarArr.length;
     }
 
     public boolean a(r rVar) {
-        if (rVar == null || rVar.f31724c.length != this.f31724c.length) {
+        if (rVar == null || rVar.f31725c.length != this.f31725c.length) {
             return false;
         }
-        for (int i10 = 0; i10 < this.f31724c.length; i10++) {
+        for (int i10 = 0; i10 < this.f31725c.length; i10++) {
             if (!b(rVar, i10)) {
                 return false;
             }
@@ -42,14 +42,14 @@ public final class r {
     }
 
     public boolean b(r rVar, int i10) {
-        if (rVar == null || !w0.c(this.f31723b[i10], rVar.f31723b[i10]) || !w0.c(this.f31724c[i10], rVar.f31724c[i10])) {
+        if (rVar == null || !w0.c(this.f31724b[i10], rVar.f31724b[i10]) || !w0.c(this.f31725c[i10], rVar.f31725c[i10])) {
             return false;
         }
         return true;
     }
 
     public boolean c(int i10) {
-        if (this.f31723b[i10] != null) {
+        if (this.f31724b[i10] != null) {
             return true;
         }
         return false;

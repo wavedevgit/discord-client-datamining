@@ -11,22 +11,22 @@ import st.l;
 public final class s0 implements wt.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f51952a;
+    private final boolean f51953a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f51953b;
+    private final String f51954b;
 
     public s0(boolean z10, String discriminator) {
         Intrinsics.checkNotNullParameter(discriminator, "discriminator");
-        this.f51952a = z10;
-        this.f51953b = discriminator;
+        this.f51953a = z10;
+        this.f51954b = discriminator;
     }
 
     private final void d(SerialDescriptor serialDescriptor, KClass kClass) {
         int d10 = serialDescriptor.d();
         for (int i10 = 0; i10 < d10; i10++) {
             String e10 = serialDescriptor.e(i10);
-            if (Intrinsics.areEqual(e10, this.f51953b)) {
+            if (Intrinsics.areEqual(e10, this.f51954b)) {
                 throw new IllegalArgumentException("Polymorphic serializer for " + kClass + " has property '" + e10 + "' that conflicts with JSON class discriminator. You can either change class discriminator in JsonConfiguration, rename property with @SerialName annotation or fall back to array polymorphism");
             }
         }
@@ -34,9 +34,9 @@ public final class s0 implements wt.d {
 
     private final void e(SerialDescriptor serialDescriptor, KClass kClass) {
         st.k kind = serialDescriptor.getKind();
-        if (!(kind instanceof st.d) && !Intrinsics.areEqual(kind, k.a.f48377a)) {
-            if (!this.f51952a) {
-                if (!Intrinsics.areEqual(kind, l.b.f48380a) && !Intrinsics.areEqual(kind, l.c.f48381a) && !(kind instanceof st.e) && !(kind instanceof k.b)) {
+        if (!(kind instanceof st.d) && !Intrinsics.areEqual(kind, k.a.f48378a)) {
+            if (!this.f51953a) {
+                if (!Intrinsics.areEqual(kind, l.b.f48381a) && !Intrinsics.areEqual(kind, l.c.f48382a) && !(kind instanceof st.e) && !(kind instanceof k.b)) {
                     return;
                 }
                 throw new IllegalArgumentException("Serializer for " + kClass.getSimpleName() + " of kind " + kind + " cannot be serialized polymorphically with class discriminator.");
@@ -53,7 +53,7 @@ public final class s0 implements wt.d {
         Intrinsics.checkNotNullParameter(actualSerializer, "actualSerializer");
         SerialDescriptor descriptor = actualSerializer.getDescriptor();
         e(descriptor, actualClass);
-        if (!this.f51952a) {
+        if (!this.f51953a) {
             d(descriptor, actualClass);
         }
     }

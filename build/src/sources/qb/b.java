@@ -9,19 +9,19 @@ import java.io.File;
 public class b implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f44012a;
+    private final Context f44013a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a f44013b;
+    private final a f44014b;
 
     public b(Context context, a aVar) {
-        this.f44012a = context;
-        this.f44013b = aVar;
+        this.f44013a = context;
+        this.f44014b = aVar;
     }
 
     @Override // qb.h
     public boolean a(UnsatisfiedLinkError unsatisfiedLinkError, e0[] e0VarArr) {
-        String str = this.f44012a.getApplicationInfo().sourceDir;
+        String str = this.f44013a.getApplicationInfo().sourceDir;
         if (new File(str).exists()) {
             p.g("soloader.recovery.CheckBaseApkExists", "Base apk exists: " + str);
             return false;
@@ -29,7 +29,7 @@ public class b implements h {
         StringBuilder sb2 = new StringBuilder("Base apk does not exist: ");
         sb2.append(str);
         sb2.append(". ");
-        this.f44013b.b(sb2);
+        this.f44014b.b(sb2);
         throw new v(sb2.toString(), unsatisfiedLinkError);
     }
 }

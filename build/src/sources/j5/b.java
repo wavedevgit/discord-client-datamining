@@ -9,10 +9,10 @@ import j5.c;
 public final class b implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final d f30831a;
+    private final d f30832a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final i f30832b;
+    private final i f30833b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a implements c.a {
@@ -31,17 +31,17 @@ public final class b implements c {
     }
 
     public b(d dVar, i iVar) {
-        this.f30831a = dVar;
-        this.f30832b = iVar;
+        this.f30832a = dVar;
+        this.f30833b = iVar;
     }
 
     @Override // j5.c
     public void a() {
-        i iVar = this.f30832b;
+        i iVar = this.f30833b;
         if (iVar instanceof q) {
-            this.f30831a.a(((q) iVar).a());
+            this.f30832a.a(((q) iVar).a());
         } else if (iVar instanceof f) {
-            this.f30831a.c(((f) iVar).a());
+            this.f30832a.c(((f) iVar).a());
         } else {
             throw new p();
         }

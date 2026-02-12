@@ -16,19 +16,19 @@ import org.jetbrains.annotations.NotNull;
 public final class FallbackModeService_StaticTemplateJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19840a;
+    private final m.b f19841a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f19841b;
+    private final com.squareup.moshi.h f19842b;
 
     public FallbackModeService_StaticTemplateJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("steps");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19840a = a10;
+        this.f19841a = a10;
         com.squareup.moshi.h f10 = moshi.f(a0.j(List.class, NextStep.class), x0.d(), "steps");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19841b = f10;
+        this.f19842b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -38,9 +38,9 @@ public final class FallbackModeService_StaticTemplateJsonAdapter extends com.squ
         reader.u();
         List list = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19840a);
+            int J = reader.J(this.f19841a);
             if (J != -1) {
-                if (J == 0 && (list = (List) this.f19841b.fromJson(reader)) == null) {
+                if (J == 0 && (list = (List) this.f19842b.fromJson(reader)) == null) {
                     throw dn.c.x("steps", "steps", reader);
                 }
             } else {
@@ -62,7 +62,7 @@ public final class FallbackModeService_StaticTemplateJsonAdapter extends com.squ
         if (staticTemplate != null) {
             writer.i();
             writer.J("steps");
-            this.f19841b.toJson(writer, staticTemplate.a());
+            this.f19842b.toJson(writer, staticTemplate.a());
             writer.s();
             return;
         }

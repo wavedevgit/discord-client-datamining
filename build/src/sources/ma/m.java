@@ -8,43 +8,43 @@ import java.util.Map;
 public class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b0 f36193a;
+    private final b0 f36194a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final LinkedHashMap f36194b = new LinkedHashMap();
+    private final LinkedHashMap f36195b = new LinkedHashMap();
 
     /* renamed from: c  reason: collision with root package name */
-    private int f36195c = 0;
+    private int f36196c = 0;
 
     public m(b0 b0Var) {
-        this.f36193a = b0Var;
+        this.f36194a = b0Var;
     }
 
     private int g(Object obj) {
         if (obj == null) {
             return 0;
         }
-        return this.f36193a.a(obj);
+        return this.f36194a.a(obj);
     }
 
     public synchronized boolean a(Object obj) {
-        return this.f36194b.containsKey(obj);
+        return this.f36195b.containsKey(obj);
     }
 
     public synchronized Object b(Object obj) {
-        return this.f36194b.get(obj);
+        return this.f36195b.get(obj);
     }
 
     public synchronized int c() {
-        return this.f36194b.size();
+        return this.f36195b.size();
     }
 
     public synchronized Object d() {
         Object next;
-        if (this.f36194b.isEmpty()) {
+        if (this.f36195b.isEmpty()) {
             next = null;
         } else {
-            next = this.f36194b.keySet().iterator().next();
+            next = this.f36195b.keySet().iterator().next();
         }
         return next;
     }
@@ -52,8 +52,8 @@ public class m {
     public synchronized ArrayList e(p8.k kVar) {
         ArrayList arrayList;
         try {
-            arrayList = new ArrayList(this.f36194b.entrySet().size());
-            for (Map.Entry entry : this.f36194b.entrySet()) {
+            arrayList = new ArrayList(this.f36195b.entrySet().size());
+            for (Map.Entry entry : this.f36195b.entrySet()) {
                 if (kVar != null && !kVar.apply(entry.getKey())) {
                 }
                 arrayList.add(entry);
@@ -65,22 +65,22 @@ public class m {
     }
 
     public synchronized int f() {
-        return this.f36195c;
+        return this.f36196c;
     }
 
     public synchronized Object h(Object obj, Object obj2) {
         Object remove;
-        remove = this.f36194b.remove(obj);
-        this.f36195c -= g(remove);
-        this.f36194b.put(obj, obj2);
-        this.f36195c += g(obj2);
+        remove = this.f36195b.remove(obj);
+        this.f36196c -= g(remove);
+        this.f36195b.put(obj, obj2);
+        this.f36196c += g(obj2);
         return remove;
     }
 
     public synchronized Object i(Object obj) {
         Object remove;
-        remove = this.f36194b.remove(obj);
-        this.f36195c -= g(remove);
+        remove = this.f36195b.remove(obj);
+        this.f36196c -= g(remove);
         return remove;
     }
 
@@ -88,13 +88,13 @@ public class m {
         ArrayList arrayList;
         try {
             arrayList = new ArrayList();
-            Iterator it = this.f36194b.entrySet().iterator();
+            Iterator it = this.f36195b.entrySet().iterator();
             while (it.hasNext()) {
                 Map.Entry entry = (Map.Entry) it.next();
                 if (kVar != null && !kVar.apply(entry.getKey())) {
                 }
                 arrayList.add(entry.getValue());
-                this.f36195c -= g(entry.getValue());
+                this.f36196c -= g(entry.getValue());
                 it.remove();
             }
         } catch (Throwable th2) {
@@ -104,8 +104,8 @@ public class m {
     }
 
     public synchronized void k() {
-        if (this.f36194b.isEmpty()) {
-            this.f36195c = 0;
+        if (this.f36195b.isEmpty()) {
+            this.f36196c = 0;
         }
     }
 }

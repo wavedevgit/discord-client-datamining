@@ -34,7 +34,7 @@ public class d extends aa.a {
             try {
                 try {
                     ((b) this.f446i.get(i10)).a(id2, th2, aVar);
-                    Unit unit = Unit.f31987a;
+                    Unit unit = Unit.f31988a;
                 } catch (Exception e10) {
                     Log.e("FwdControllerListener2", "InternalListener exception in onFailure", e10);
                 }
@@ -52,7 +52,7 @@ public class d extends aa.a {
             try {
                 try {
                     ((b) this.f446i.get(i10)).h(id2, aVar);
-                    Unit unit = Unit.f31987a;
+                    Unit unit = Unit.f31988a;
                 } catch (Exception e10) {
                     Log.e("FwdControllerListener2", "InternalListener exception in onRelease", e10);
                 }
@@ -70,7 +70,7 @@ public class d extends aa.a {
             try {
                 try {
                     ((b) this.f446i.get(i10)).i(id2, obj, aVar);
-                    Unit unit = Unit.f31987a;
+                    Unit unit = Unit.f31988a;
                 } catch (Exception e10) {
                     Log.e("FwdControllerListener2", "InternalListener exception in onSubmit", e10);
                 }
@@ -88,7 +88,7 @@ public class d extends aa.a {
             try {
                 try {
                     ((b) this.f446i.get(i10)).m(id2);
-                    Unit unit = Unit.f31987a;
+                    Unit unit = Unit.f31988a;
                 } catch (Exception e10) {
                     Log.e("FwdControllerListener2", "InternalListener exception in onIntermediateImageFailed", e10);
                 }
@@ -106,7 +106,7 @@ public class d extends aa.a {
             try {
                 try {
                     ((b) this.f446i.get(i10)).onIntermediateImageSet(id2, obj);
-                    Unit unit = Unit.f31987a;
+                    Unit unit = Unit.f31988a;
                 } catch (Exception e10) {
                     Log.e("FwdControllerListener2", "InternalListener exception in onIntermediateImageSet", e10);
                 }
@@ -124,7 +124,7 @@ public class d extends aa.a {
             try {
                 try {
                     ((b) this.f446i.get(i10)).p(id2, obj, aVar);
-                    Unit unit = Unit.f31987a;
+                    Unit unit = Unit.f31988a;
                 } catch (Exception e10) {
                     Log.e("FwdControllerListener2", "InternalListener exception in onFinalImageSet", e10);
                 }

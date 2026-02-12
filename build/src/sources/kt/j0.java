@@ -5,10 +5,10 @@ import kotlin.jvm.internal.Intrinsics;
 final class j0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final kotlin.reflect.f f35246a;
+    private final kotlin.reflect.f f35247a;
 
     public j0(kotlin.reflect.f reference) {
         Intrinsics.checkNotNullParameter(reference, "reference");
-        this.f35246a = reference;
+        this.f35247a = reference;
     }
 }

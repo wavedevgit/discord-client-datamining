@@ -12,28 +12,28 @@ import org.webrtc.MediaStreamTrack;
 public final class y1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f14220a;
+    private final Context f14221a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Handler f14221b;
+    private final Handler f14222b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final b f14222c;
+    private final b f14223c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final AudioManager f14223d;
+    private final AudioManager f14224d;
 
     /* renamed from: e  reason: collision with root package name */
-    private c f14224e;
+    private c f14225e;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f14225f;
+    private int f14226f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f14226g;
+    private int f14227g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f14227h;
+    private boolean f14228h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface b {
@@ -49,7 +49,7 @@ public final class y1 {
 
         @Override // android.content.BroadcastReceiver
         public void onReceive(Context context, Intent intent) {
-            Handler handler = y1.this.f14221b;
+            Handler handler = y1.this.f14222b;
             final y1 y1Var = y1.this;
             handler.post(new Runnable() { // from class: com.google.android.exoplayer2.z1
                 @Override // java.lang.Runnable
@@ -62,25 +62,25 @@ public final class y1 {
 
     public y1(Context context, Handler handler, b bVar) {
         Context applicationContext = context.getApplicationContext();
-        this.f14220a = applicationContext;
-        this.f14221b = handler;
-        this.f14222c = bVar;
+        this.f14221a = applicationContext;
+        this.f14222b = handler;
+        this.f14223c = bVar;
         AudioManager audioManager = (AudioManager) oe.a.i((AudioManager) applicationContext.getSystemService(MediaStreamTrack.AUDIO_TRACK_KIND));
-        this.f14223d = audioManager;
-        this.f14225f = 3;
-        this.f14226g = f(audioManager, 3);
-        this.f14227h = e(audioManager, this.f14225f);
+        this.f14224d = audioManager;
+        this.f14226f = 3;
+        this.f14227g = f(audioManager, 3);
+        this.f14228h = e(audioManager, this.f14226f);
         c cVar = new c();
         try {
             applicationContext.registerReceiver(cVar, new IntentFilter("android.media.VOLUME_CHANGED_ACTION"));
-            this.f14224e = cVar;
+            this.f14225e = cVar;
         } catch (RuntimeException e10) {
             oe.y.j("StreamVolumeManager", "Error registering stream volume receiver", e10);
         }
     }
 
     private static boolean e(AudioManager audioManager, int i10) {
-        if (oe.w0.f39037a >= 23) {
+        if (oe.w0.f39038a >= 23) {
             return audioManager.isStreamMute(i10);
         }
         if (f(audioManager, i10) == 0) {
@@ -100,45 +100,45 @@ public final class y1 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void i() {
-        int f10 = f(this.f14223d, this.f14225f);
-        boolean e10 = e(this.f14223d, this.f14225f);
-        if (this.f14226g == f10 && this.f14227h == e10) {
+        int f10 = f(this.f14224d, this.f14226f);
+        boolean e10 = e(this.f14224d, this.f14226f);
+        if (this.f14227g == f10 && this.f14228h == e10) {
             return;
         }
-        this.f14226g = f10;
-        this.f14227h = e10;
-        this.f14222c.w(f10, e10);
+        this.f14227g = f10;
+        this.f14228h = e10;
+        this.f14223c.w(f10, e10);
     }
 
     public int c() {
-        return this.f14223d.getStreamMaxVolume(this.f14225f);
+        return this.f14224d.getStreamMaxVolume(this.f14226f);
     }
 
     public int d() {
-        if (oe.w0.f39037a >= 28) {
-            return this.f14223d.getStreamMinVolume(this.f14225f);
+        if (oe.w0.f39038a >= 28) {
+            return this.f14224d.getStreamMinVolume(this.f14226f);
         }
         return 0;
     }
 
     public void g() {
-        c cVar = this.f14224e;
+        c cVar = this.f14225e;
         if (cVar != null) {
             try {
-                this.f14220a.unregisterReceiver(cVar);
+                this.f14221a.unregisterReceiver(cVar);
             } catch (RuntimeException e10) {
                 oe.y.j("StreamVolumeManager", "Error unregistering stream volume receiver", e10);
             }
-            this.f14224e = null;
+            this.f14225e = null;
         }
     }
 
     public void h(int i10) {
-        if (this.f14225f == i10) {
+        if (this.f14226f == i10) {
             return;
         }
-        this.f14225f = i10;
+        this.f14226f = i10;
         i();
-        this.f14222c.t(i10);
+        this.f14223c.t(i10);
     }
 }

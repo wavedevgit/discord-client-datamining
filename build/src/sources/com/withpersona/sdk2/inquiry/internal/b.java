@@ -5,10 +5,10 @@ import com.withpersona.sdk2.inquiry.internal.a;
 public final class b implements a.InterfaceC0247a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ep.c f19712a;
+    private final ep.c f19713a;
 
     b(ep.c cVar) {
-        this.f19712a = cVar;
+        this.f19713a = cVar;
     }
 
     public static lr.h b(ep.c cVar) {
@@ -17,6 +17,6 @@ public final class b implements a.InterfaceC0247a {
 
     @Override // com.withpersona.sdk2.inquiry.internal.a.InterfaceC0247a
     public a a(String str) {
-        return this.f19712a.b(str);
+        return this.f19713a.b(str);
     }
 }

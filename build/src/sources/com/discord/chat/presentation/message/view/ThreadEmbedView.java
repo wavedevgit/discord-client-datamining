@@ -182,7 +182,7 @@ public final class ThreadEmbedView extends ConstraintLayout {
         DiscordFontUtilsKt.setDiscordFont(simpleDraweeSpanTextView, DiscordFont.PrimaryMedium);
         SetTextSizeSpKt.setTextSizeSp(simpleDraweeSpanTextView, 14.0f);
         simpleDraweeSpanTextView.setTextColor(ThemeManagerKt.getTheme().getTextDefault());
-        ViewBackgroundUtilsKt.setBackgroundRectangle$default(this, ThemeManagerKt.getTheme().getBackgroundSurfaceHigh(), SizeUtilsKt.getDpToPx(4), null, 0, 12, null);
+        ViewBackgroundUtilsKt.setBackgroundRectangle$default(this, ThemeManagerKt.getTheme().getBackgroundModStrong(), SizeUtilsKt.getDpToPx(4), null, 0, 12, null);
         RippleUtilsKt.addRipple(this, true, SizeUtilsKt.getDpToPx(4));
         setPadding(SizeUtilsKt.getDpToPx(12), SizeUtilsKt.getDpToPx(8), SizeUtilsKt.getDpToPx(12), SizeUtilsKt.getDpToPx(8));
     }

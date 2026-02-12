@@ -3,10 +3,10 @@ package com.swmansion.reanimated.keyboard;
 public final /* synthetic */ class a implements NotifyAboutKeyboardChangeFunction {
 
     /* renamed from: a  reason: collision with root package name */
-    public final /* synthetic */ KeyboardAnimationManager f19013a;
+    public final /* synthetic */ KeyboardAnimationManager f19014a;
 
     @Override // com.swmansion.reanimated.keyboard.NotifyAboutKeyboardChangeFunction
     public final void call() {
-        this.f19013a.notifyAboutKeyboardChange();
+        this.f19014a.notifyAboutKeyboardChange();
     }
 }

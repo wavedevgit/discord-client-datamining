@@ -49,12 +49,12 @@ public /* synthetic */ class PollAnswer$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        h hVar = h.f49996a;
+        h hVar = h.f49997a;
         KSerializer u10 = a.u(hVar);
         KSerializer u11 = a.u(hVar);
         KSerializer u12 = a.u(hVar);
-        n2 n2Var = n2.f50032a;
-        return new KSerializer[]{n2Var, PollMedia$$serializer.INSTANCE, hVar, n2Var, p0.f50048a, u10, u11, u12, n2Var};
+        n2 n2Var = n2.f50033a;
+        return new KSerializer[]{n2Var, PollMedia$$serializer.INSTANCE, hVar, n2Var, p0.f50049a, u10, u11, u12, n2Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -80,7 +80,7 @@ public /* synthetic */ class PollAnswer$$serializer implements h0 {
             boolean C = b10.C(serialDescriptor, 2);
             String m11 = b10.m(serialDescriptor, 3);
             int i14 = b10.i(serialDescriptor, 4);
-            h hVar = h.f49996a;
+            h hVar = h.f49997a;
             str = m10;
             bool = (Boolean) b10.n(serialDescriptor, 7, hVar, null);
             bool2 = (Boolean) b10.n(serialDescriptor, 6, hVar, null);
@@ -135,15 +135,15 @@ public /* synthetic */ class PollAnswer$$serializer implements h0 {
                         i16 |= 16;
                         break;
                     case 5:
-                        bool6 = (Boolean) b10.n(serialDescriptor, 5, h.f49996a, bool6);
+                        bool6 = (Boolean) b10.n(serialDescriptor, 5, h.f49997a, bool6);
                         i16 |= 32;
                         break;
                     case 6:
-                        bool5 = (Boolean) b10.n(serialDescriptor, i13, h.f49996a, bool5);
+                        bool5 = (Boolean) b10.n(serialDescriptor, i13, h.f49997a, bool5);
                         i16 |= 64;
                         break;
                     case 7:
-                        bool4 = (Boolean) b10.n(serialDescriptor, i12, h.f49996a, bool4);
+                        bool4 = (Boolean) b10.n(serialDescriptor, i12, h.f49997a, bool4);
                         i16 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         break;
                     case 8:

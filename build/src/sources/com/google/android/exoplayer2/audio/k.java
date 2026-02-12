@@ -38,16 +38,16 @@ import qi.t0;
 public final class k implements com.google.android.exoplayer2.audio.f {
 
     /* renamed from: h0  reason: collision with root package name */
-    public static boolean f12898h0 = false;
+    public static boolean f12899h0 = false;
 
     /* renamed from: i0  reason: collision with root package name */
-    private static final Object f12899i0 = new Object();
+    private static final Object f12900i0 = new Object();
 
     /* renamed from: j0  reason: collision with root package name */
-    private static ExecutorService f12900j0;
+    private static ExecutorService f12901j0;
 
     /* renamed from: k0  reason: collision with root package name */
-    private static int f12901k0;
+    private static int f12902k0;
     private j A;
     private j B;
     private PlaybackParameters C;
@@ -76,103 +76,103 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     private oc.p Z;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f12902a;
+    private final Context f12903a;
 
     /* renamed from: a0  reason: collision with root package name */
-    private d f12903a0;
+    private d f12904a0;
 
     /* renamed from: b  reason: collision with root package name */
-    private final oc.e f12904b;
+    private final oc.e f12905b;
 
     /* renamed from: b0  reason: collision with root package name */
-    private boolean f12905b0;
+    private boolean f12906b0;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f12906c;
+    private final boolean f12907c;
 
     /* renamed from: c0  reason: collision with root package name */
-    private long f12907c0;
+    private long f12908c0;
 
     /* renamed from: d  reason: collision with root package name */
-    private final com.google.android.exoplayer2.audio.j f12908d;
+    private final com.google.android.exoplayer2.audio.j f12909d;
 
     /* renamed from: d0  reason: collision with root package name */
-    private long f12909d0;
+    private long f12910d0;
 
     /* renamed from: e  reason: collision with root package name */
-    private final s f12910e;
+    private final s f12911e;
 
     /* renamed from: e0  reason: collision with root package name */
-    private boolean f12911e0;
+    private boolean f12912e0;
 
     /* renamed from: f  reason: collision with root package name */
-    private final qi.s f12912f;
+    private final qi.s f12913f;
 
     /* renamed from: f0  reason: collision with root package name */
-    private boolean f12913f0;
+    private boolean f12914f0;
 
     /* renamed from: g  reason: collision with root package name */
-    private final qi.s f12914g;
+    private final qi.s f12915g;
 
     /* renamed from: g0  reason: collision with root package name */
-    private Looper f12915g0;
+    private Looper f12916g0;
 
     /* renamed from: h  reason: collision with root package name */
-    private final oe.h f12916h;
+    private final oe.h f12917h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final com.google.android.exoplayer2.audio.h f12917i;
+    private final com.google.android.exoplayer2.audio.h f12918i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final ArrayDeque f12918j;
+    private final ArrayDeque f12919j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final boolean f12919k;
+    private final boolean f12920k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final int f12920l;
+    private final int f12921l;
 
     /* renamed from: m  reason: collision with root package name */
-    private m f12921m;
+    private m f12922m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final C0164k f12922n;
+    private final C0164k f12923n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final C0164k f12923o;
+    private final C0164k f12924o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final e f12924p;
+    private final e f12925p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final mc.i f12925q;
+    private final mc.i f12926q;
 
     /* renamed from: r  reason: collision with root package name */
-    private t1 f12926r;
+    private t1 f12927r;
 
     /* renamed from: s  reason: collision with root package name */
-    private f.c f12927s;
+    private f.c f12928s;
 
     /* renamed from: t  reason: collision with root package name */
-    private g f12928t;
+    private g f12929t;
 
     /* renamed from: u  reason: collision with root package name */
-    private g f12929u;
+    private g f12930u;
 
     /* renamed from: v  reason: collision with root package name */
-    private com.google.android.exoplayer2.audio.c f12930v;
+    private com.google.android.exoplayer2.audio.c f12931v;
 
     /* renamed from: w  reason: collision with root package name */
-    private AudioTrack f12931w;
+    private AudioTrack f12932w;
 
     /* renamed from: x  reason: collision with root package name */
-    private com.google.android.exoplayer2.audio.a f12932x;
+    private com.google.android.exoplayer2.audio.a f12933x;
 
     /* renamed from: y  reason: collision with root package name */
-    private com.google.android.exoplayer2.audio.b f12933y;
+    private com.google.android.exoplayer2.audio.b f12934y;
 
     /* renamed from: z  reason: collision with root package name */
-    private AudioAttributes f12934z;
+    private AudioAttributes f12935z;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -182,7 +182,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
             if (dVar == null) {
                 audioDeviceInfo = null;
             } else {
-                audioDeviceInfo = dVar.f12935a;
+                audioDeviceInfo = dVar.f12936a;
             }
             audioTrack.setPreferredDevice(audioDeviceInfo);
         }
@@ -206,10 +206,10 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     public static final class d {
 
         /* renamed from: a  reason: collision with root package name */
-        public final AudioDeviceInfo f12935a;
+        public final AudioDeviceInfo f12936a;
 
         public d(AudioDeviceInfo audioDeviceInfo) {
-            this.f12935a = audioDeviceInfo;
+            this.f12936a = audioDeviceInfo;
         }
     }
 
@@ -217,7 +217,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     public interface e {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final e f12936a = new l.a().g();
+        public static final e f12937a = new l.a().g();
 
         int a(int i10, int i11, int i12, int i13, int i14, int i15, double d10);
     }
@@ -226,52 +226,52 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     public static final class f {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Context f12937a;
+        private final Context f12938a;
 
         /* renamed from: c  reason: collision with root package name */
-        private oc.e f12939c;
+        private oc.e f12940c;
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f12940d;
+        private boolean f12941d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f12941e;
+        private boolean f12942e;
 
         /* renamed from: h  reason: collision with root package name */
-        mc.i f12944h;
+        mc.i f12945h;
 
         /* renamed from: b  reason: collision with root package name */
-        private com.google.android.exoplayer2.audio.a f12938b = com.google.android.exoplayer2.audio.a.f12810c;
+        private com.google.android.exoplayer2.audio.a f12939b = com.google.android.exoplayer2.audio.a.f12811c;
 
         /* renamed from: f  reason: collision with root package name */
-        private int f12942f = 0;
+        private int f12943f = 0;
 
         /* renamed from: g  reason: collision with root package name */
-        e f12943g = e.f12936a;
+        e f12944g = e.f12937a;
 
         public f(Context context) {
-            this.f12937a = context;
+            this.f12938a = context;
         }
 
         public k g() {
-            if (this.f12939c == null) {
-                this.f12939c = new h(new com.google.android.exoplayer2.audio.d[0]);
+            if (this.f12940c == null) {
+                this.f12940c = new h(new com.google.android.exoplayer2.audio.d[0]);
             }
             return new k(this);
         }
 
         public f h(boolean z10) {
-            this.f12941e = z10;
+            this.f12942e = z10;
             return this;
         }
 
         public f i(boolean z10) {
-            this.f12940d = z10;
+            this.f12941d = z10;
             return this;
         }
 
         public f j(int i10) {
-            this.f12942f = i10;
+            this.f12943f = i10;
             return this;
         }
     }
@@ -281,50 +281,50 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     public static final class g {
 
         /* renamed from: a  reason: collision with root package name */
-        public final Format f12945a;
+        public final Format f12946a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f12946b;
+        public final int f12947b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f12947c;
+        public final int f12948c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f12948d;
+        public final int f12949d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final int f12949e;
+        public final int f12950e;
 
         /* renamed from: f  reason: collision with root package name */
-        public final int f12950f;
+        public final int f12951f;
 
         /* renamed from: g  reason: collision with root package name */
-        public final int f12951g;
+        public final int f12952g;
 
         /* renamed from: h  reason: collision with root package name */
-        public final int f12952h;
+        public final int f12953h;
 
         /* renamed from: i  reason: collision with root package name */
-        public final com.google.android.exoplayer2.audio.c f12953i;
+        public final com.google.android.exoplayer2.audio.c f12954i;
 
         /* renamed from: j  reason: collision with root package name */
-        public final boolean f12954j;
+        public final boolean f12955j;
 
         public g(Format format, int i10, int i11, int i12, int i13, int i14, int i15, int i16, com.google.android.exoplayer2.audio.c cVar, boolean z10) {
-            this.f12945a = format;
-            this.f12946b = i10;
-            this.f12947c = i11;
-            this.f12948d = i12;
-            this.f12949e = i13;
-            this.f12950f = i14;
-            this.f12951g = i15;
-            this.f12952h = i16;
-            this.f12953i = cVar;
-            this.f12954j = z10;
+            this.f12946a = format;
+            this.f12947b = i10;
+            this.f12948c = i11;
+            this.f12949d = i12;
+            this.f12950e = i13;
+            this.f12951f = i14;
+            this.f12952g = i15;
+            this.f12953h = i16;
+            this.f12954i = cVar;
+            this.f12955j = z10;
         }
 
         private AudioTrack d(boolean z10, AudioAttributes audioAttributes, int i10) {
-            int i11 = w0.f39037a;
+            int i11 = w0.f39038a;
             if (i11 >= 29) {
                 return f(z10, audioAttributes, i10);
             }
@@ -335,33 +335,33 @@ public final class k implements com.google.android.exoplayer2.audio.f {
         }
 
         private AudioTrack e(boolean z10, AudioAttributes audioAttributes, int i10) {
-            return new AudioTrack(i(audioAttributes, z10), k.N(this.f12949e, this.f12950f, this.f12951g), this.f12952h, 1, i10);
+            return new AudioTrack(i(audioAttributes, z10), k.N(this.f12950e, this.f12951f, this.f12952g), this.f12953h, 1, i10);
         }
 
         private AudioTrack f(boolean z10, AudioAttributes audioAttributes, int i10) {
-            AudioFormat N = k.N(this.f12949e, this.f12950f, this.f12951g);
+            AudioFormat N = k.N(this.f12950e, this.f12951f, this.f12952g);
             android.media.AudioAttributes i11 = i(audioAttributes, z10);
             boolean z11 = true;
-            AudioTrack.Builder sessionId = new AudioTrack.Builder().setAudioAttributes(i11).setAudioFormat(N).setTransferMode(1).setBufferSizeInBytes(this.f12952h).setSessionId(i10);
-            if (this.f12947c != 1) {
+            AudioTrack.Builder sessionId = new AudioTrack.Builder().setAudioAttributes(i11).setAudioFormat(N).setTransferMode(1).setBufferSizeInBytes(this.f12953h).setSessionId(i10);
+            if (this.f12948c != 1) {
                 z11 = false;
             }
             return sessionId.setOffloadedPlayback(z11).build();
         }
 
         private AudioTrack g(AudioAttributes audioAttributes, int i10) {
-            int k02 = w0.k0(audioAttributes.f12800i);
+            int k02 = w0.k0(audioAttributes.f12801i);
             if (i10 == 0) {
-                return new AudioTrack(k02, this.f12949e, this.f12950f, this.f12951g, this.f12952h, 1);
+                return new AudioTrack(k02, this.f12950e, this.f12951f, this.f12952g, this.f12953h, 1);
             }
-            return new AudioTrack(k02, this.f12949e, this.f12950f, this.f12951g, this.f12952h, 1, i10);
+            return new AudioTrack(k02, this.f12950e, this.f12951f, this.f12952g, this.f12953h, 1, i10);
         }
 
         private static android.media.AudioAttributes i(AudioAttributes audioAttributes, boolean z10) {
             if (z10) {
                 return j();
             }
-            return audioAttributes.b().f12804a;
+            return audioAttributes.b().f12805a;
         }
 
         private static android.media.AudioAttributes j() {
@@ -379,33 +379,33 @@ public final class k implements com.google.android.exoplayer2.audio.f {
                     d10.release();
                 } catch (Exception unused) {
                 }
-                throw new f.b(state, this.f12949e, this.f12950f, this.f12952h, this.f12945a, l(), null);
+                throw new f.b(state, this.f12950e, this.f12951f, this.f12953h, this.f12946a, l(), null);
             } catch (IllegalArgumentException | UnsupportedOperationException e10) {
-                throw new f.b(0, this.f12949e, this.f12950f, this.f12952h, this.f12945a, l(), e10);
+                throw new f.b(0, this.f12950e, this.f12951f, this.f12953h, this.f12946a, l(), e10);
             }
         }
 
         public boolean b(g gVar) {
-            if (gVar.f12947c == this.f12947c && gVar.f12951g == this.f12951g && gVar.f12949e == this.f12949e && gVar.f12950f == this.f12950f && gVar.f12948d == this.f12948d && gVar.f12954j == this.f12954j) {
+            if (gVar.f12948c == this.f12948c && gVar.f12952g == this.f12952g && gVar.f12950e == this.f12950e && gVar.f12951f == this.f12951f && gVar.f12949d == this.f12949d && gVar.f12955j == this.f12955j) {
                 return true;
             }
             return false;
         }
 
         public g c(int i10) {
-            return new g(this.f12945a, this.f12946b, this.f12947c, this.f12948d, this.f12949e, this.f12950f, this.f12951g, i10, this.f12953i, this.f12954j);
+            return new g(this.f12946a, this.f12947b, this.f12948c, this.f12949d, this.f12950e, this.f12951f, this.f12952g, i10, this.f12954i, this.f12955j);
         }
 
         public long h(long j10) {
-            return w0.W0(j10, this.f12949e);
+            return w0.W0(j10, this.f12950e);
         }
 
         public long k(long j10) {
-            return w0.W0(j10, this.f12945a.K);
+            return w0.W0(j10, this.f12946a.K);
         }
 
         public boolean l() {
-            if (this.f12947c == 1) {
+            if (this.f12948c == 1) {
                 return true;
             }
             return false;
@@ -416,13 +416,13 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     public static class h implements oc.e {
 
         /* renamed from: a  reason: collision with root package name */
-        private final com.google.android.exoplayer2.audio.d[] f12955a;
+        private final com.google.android.exoplayer2.audio.d[] f12956a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final n f12956b;
+        private final n f12957b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final p f12957c;
+        private final p f12958c;
 
         public h(com.google.android.exoplayer2.audio.d... dVarArr) {
             this(dVarArr, new n(), new p());
@@ -430,38 +430,38 @@ public final class k implements com.google.android.exoplayer2.audio.f {
 
         @Override // oc.e
         public long a(long j10) {
-            return this.f12957c.g(j10);
+            return this.f12958c.g(j10);
         }
 
         @Override // oc.e
         public com.google.android.exoplayer2.audio.d[] b() {
-            return this.f12955a;
+            return this.f12956a;
         }
 
         @Override // oc.e
         public PlaybackParameters c(PlaybackParameters playbackParameters) {
-            this.f12957c.i(playbackParameters.f12553d);
-            this.f12957c.h(playbackParameters.f12554e);
+            this.f12958c.i(playbackParameters.f12554d);
+            this.f12958c.h(playbackParameters.f12555e);
             return playbackParameters;
         }
 
         @Override // oc.e
         public long d() {
-            return this.f12956b.p();
+            return this.f12957b.p();
         }
 
         @Override // oc.e
         public boolean e(boolean z10) {
-            this.f12956b.v(z10);
+            this.f12957b.v(z10);
             return z10;
         }
 
         public h(com.google.android.exoplayer2.audio.d[] dVarArr, n nVar, p pVar) {
             com.google.android.exoplayer2.audio.d[] dVarArr2 = new com.google.android.exoplayer2.audio.d[dVarArr.length + 2];
-            this.f12955a = dVarArr2;
+            this.f12956a = dVarArr2;
             System.arraycopy(dVarArr, 0, dVarArr2, 0, dVarArr.length);
-            this.f12956b = nVar;
-            this.f12957c = pVar;
+            this.f12957b = nVar;
+            this.f12958c = pVar;
             dVarArr2[dVarArr.length] = nVar;
             dVarArr2[dVarArr.length + 1] = pVar;
         }
@@ -479,18 +479,18 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     public static final class j {
 
         /* renamed from: a  reason: collision with root package name */
-        public final PlaybackParameters f12958a;
+        public final PlaybackParameters f12959a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final long f12959b;
+        public final long f12960b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final long f12960c;
+        public final long f12961c;
 
         private j(PlaybackParameters playbackParameters, long j10, long j11) {
-            this.f12958a = playbackParameters;
-            this.f12959b = j10;
-            this.f12960c = j11;
+            this.f12959a = playbackParameters;
+            this.f12960b = j10;
+            this.f12961c = j11;
         }
     }
 
@@ -500,34 +500,34 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     public static final class C0164k {
 
         /* renamed from: a  reason: collision with root package name */
-        private final long f12961a;
+        private final long f12962a;
 
         /* renamed from: b  reason: collision with root package name */
-        private Exception f12962b;
+        private Exception f12963b;
 
         /* renamed from: c  reason: collision with root package name */
-        private long f12963c;
+        private long f12964c;
 
         public C0164k(long j10) {
-            this.f12961a = j10;
+            this.f12962a = j10;
         }
 
         public void a() {
-            this.f12962b = null;
+            this.f12963b = null;
         }
 
         public void b(Exception exc) {
             long elapsedRealtime = SystemClock.elapsedRealtime();
-            if (this.f12962b == null) {
-                this.f12962b = exc;
-                this.f12963c = this.f12961a + elapsedRealtime;
+            if (this.f12963b == null) {
+                this.f12963b = exc;
+                this.f12964c = this.f12962a + elapsedRealtime;
             }
-            if (elapsedRealtime >= this.f12963c) {
-                Exception exc2 = this.f12962b;
+            if (elapsedRealtime >= this.f12964c) {
+                Exception exc2 = this.f12963b;
                 if (exc2 != exc) {
                     exc2.addSuppressed(exc);
                 }
-                Exception exc3 = this.f12962b;
+                Exception exc3 = this.f12963b;
                 a();
                 throw exc3;
             }
@@ -541,15 +541,15 @@ public final class k implements com.google.android.exoplayer2.audio.f {
 
         @Override // com.google.android.exoplayer2.audio.h.a
         public void a(int i10, long j10) {
-            if (k.this.f12927s != null) {
-                k.this.f12927s.d(i10, j10, SystemClock.elapsedRealtime() - k.this.f12909d0);
+            if (k.this.f12928s != null) {
+                k.this.f12928s.d(i10, j10, SystemClock.elapsedRealtime() - k.this.f12910d0);
             }
         }
 
         @Override // com.google.android.exoplayer2.audio.h.a
         public void b(long j10) {
-            if (k.this.f12927s != null) {
-                k.this.f12927s.b(j10);
+            if (k.this.f12928s != null) {
+                k.this.f12928s.b(j10);
             }
         }
 
@@ -561,7 +561,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
         @Override // com.google.android.exoplayer2.audio.h.a
         public void d(long j10, long j11, long j12, long j13) {
             String str = "Spurious audio timestamp (frame position mismatch): " + j10 + ", " + j11 + ", " + j12 + ", " + j13 + ", " + k.this.R() + ", " + k.this.S();
-            if (!k.f12898h0) {
+            if (!k.f12899h0) {
                 y.i("DefaultAudioSink", str);
                 return;
             }
@@ -571,7 +571,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
         @Override // com.google.android.exoplayer2.audio.h.a
         public void e(long j10, long j11, long j12, long j13) {
             String str = "Spurious audio timestamp (system clock mismatch): " + j10 + ", " + j11 + ", " + j12 + ", " + j13 + ", " + k.this.R() + ", " + k.this.S();
-            if (!k.f12898h0) {
+            if (!k.f12899h0) {
                 y.i("DefaultAudioSink", str);
                 return;
             }
@@ -584,47 +584,47 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     public final class m {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Handler f12965a = new Handler(Looper.myLooper());
+        private final Handler f12966a = new Handler(Looper.myLooper());
 
         /* renamed from: b  reason: collision with root package name */
-        private final AudioTrack$StreamEventCallback f12966b;
+        private final AudioTrack$StreamEventCallback f12967b;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
         class a extends AudioTrack$StreamEventCallback {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ k f12968a;
+            final /* synthetic */ k f12969a;
 
             a(k kVar) {
-                this.f12968a = kVar;
+                this.f12969a = kVar;
             }
 
             public void onDataRequest(AudioTrack audioTrack, int i10) {
-                if (audioTrack.equals(k.this.f12931w) && k.this.f12927s != null && k.this.W) {
-                    k.this.f12927s.g();
+                if (audioTrack.equals(k.this.f12932w) && k.this.f12928s != null && k.this.W) {
+                    k.this.f12928s.g();
                 }
             }
 
             public void onTearDown(AudioTrack audioTrack) {
-                if (audioTrack.equals(k.this.f12931w) && k.this.f12927s != null && k.this.W) {
-                    k.this.f12927s.g();
+                if (audioTrack.equals(k.this.f12932w) && k.this.f12928s != null && k.this.W) {
+                    k.this.f12928s.g();
                 }
             }
         }
 
         public m() {
-            this.f12966b = new a(k.this);
+            this.f12967b = new a(k.this);
         }
 
         public void a(AudioTrack audioTrack) {
-            Handler handler = this.f12965a;
+            Handler handler = this.f12966a;
             Objects.requireNonNull(handler);
-            audioTrack.registerStreamEventCallback(new oc.s(handler), this.f12966b);
+            audioTrack.registerStreamEventCallback(new oc.s(handler), this.f12967b);
         }
 
         public void b(AudioTrack audioTrack) {
-            audioTrack.unregisterStreamEventCallback(this.f12966b);
-            this.f12965a.removeCallbacksAndMessages(null);
+            audioTrack.unregisterStreamEventCallback(this.f12967b);
+            this.f12966a.removeCallbacksAndMessages(null);
         }
     }
 
@@ -633,60 +633,60 @@ public final class k implements com.google.android.exoplayer2.audio.f {
         boolean z10;
         if (!m0()) {
             if (k0()) {
-                playbackParameters = this.f12904b.c(this.C);
+                playbackParameters = this.f12905b.c(this.C);
             } else {
-                playbackParameters = PlaybackParameters.f12549o;
+                playbackParameters = PlaybackParameters.f12550o;
             }
             this.C = playbackParameters;
         } else {
-            playbackParameters = PlaybackParameters.f12549o;
+            playbackParameters = PlaybackParameters.f12550o;
         }
         PlaybackParameters playbackParameters2 = playbackParameters;
         if (k0()) {
-            z10 = this.f12904b.e(this.D);
+            z10 = this.f12905b.e(this.D);
         } else {
             z10 = false;
         }
         this.D = z10;
-        this.f12918j.add(new j(playbackParameters2, Math.max(0L, j10), this.f12929u.h(S())));
+        this.f12919j.add(new j(playbackParameters2, Math.max(0L, j10), this.f12930u.h(S())));
         j0();
-        f.c cVar = this.f12927s;
+        f.c cVar = this.f12928s;
         if (cVar != null) {
             cVar.onSkipSilenceEnabledChanged(this.D);
         }
     }
 
     private long H(long j10) {
-        while (!this.f12918j.isEmpty() && j10 >= ((j) this.f12918j.getFirst()).f12960c) {
-            this.B = (j) this.f12918j.remove();
+        while (!this.f12919j.isEmpty() && j10 >= ((j) this.f12919j.getFirst()).f12961c) {
+            this.B = (j) this.f12919j.remove();
         }
         j jVar = this.B;
-        long j11 = j10 - jVar.f12960c;
-        if (jVar.f12958a.equals(PlaybackParameters.f12549o)) {
-            return this.B.f12959b + j11;
+        long j11 = j10 - jVar.f12961c;
+        if (jVar.f12959a.equals(PlaybackParameters.f12550o)) {
+            return this.B.f12960b + j11;
         }
-        if (this.f12918j.isEmpty()) {
-            return this.B.f12959b + this.f12904b.a(j11);
+        if (this.f12919j.isEmpty()) {
+            return this.B.f12960b + this.f12905b.a(j11);
         }
-        j jVar2 = (j) this.f12918j.getFirst();
-        return jVar2.f12959b - w0.e0(jVar2.f12960c - j10, this.B.f12958a.f12553d);
+        j jVar2 = (j) this.f12919j.getFirst();
+        return jVar2.f12960b - w0.e0(jVar2.f12961c - j10, this.B.f12959a.f12554d);
     }
 
     private long I(long j10) {
-        return j10 + this.f12929u.h(this.f12904b.d());
+        return j10 + this.f12930u.h(this.f12905b.d());
     }
 
     private AudioTrack J(g gVar) {
         try {
-            AudioTrack a10 = gVar.a(this.f12905b0, this.f12934z, this.Y);
-            mc.i iVar = this.f12925q;
+            AudioTrack a10 = gVar.a(this.f12906b0, this.f12935z, this.Y);
+            mc.i iVar = this.f12926q;
             if (iVar != null) {
                 iVar.y(W(a10));
                 return a10;
             }
             return a10;
         } catch (f.b e10) {
-            f.c cVar = this.f12927s;
+            f.c cVar = this.f12928s;
             if (cVar != null) {
                 cVar.a(e10);
             }
@@ -696,14 +696,14 @@ public final class k implements com.google.android.exoplayer2.audio.f {
 
     private AudioTrack K() {
         try {
-            return J((g) oe.a.e(this.f12929u));
+            return J((g) oe.a.e(this.f12930u));
         } catch (f.b e10) {
-            g gVar = this.f12929u;
-            if (gVar.f12952h > 1000000) {
+            g gVar = this.f12930u;
+            if (gVar.f12953h > 1000000) {
                 g c10 = gVar.c(1000000);
                 try {
                     AudioTrack J = J(c10);
-                    this.f12929u = c10;
+                    this.f12930u = c10;
                     return J;
                 } catch (f.b e11) {
                     e10.addSuppressed(e11);
@@ -718,7 +718,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
 
     private boolean L() {
         ByteBuffer byteBuffer;
-        if (!this.f12930v.f()) {
+        if (!this.f12931v.f()) {
             ByteBuffer byteBuffer2 = this.R;
             if (byteBuffer2 == null) {
                 return true;
@@ -729,27 +729,27 @@ public final class k implements com.google.android.exoplayer2.audio.f {
             }
             return true;
         }
-        this.f12930v.h();
+        this.f12931v.h();
         a0(Long.MIN_VALUE);
-        if (!this.f12930v.e() || ((byteBuffer = this.R) != null && byteBuffer.hasRemaining())) {
+        if (!this.f12931v.e() || ((byteBuffer = this.R) != null && byteBuffer.hasRemaining())) {
             return false;
         }
         return true;
     }
 
     private com.google.android.exoplayer2.audio.a M() {
-        if (this.f12933y == null && this.f12902a != null) {
-            this.f12915g0 = Looper.myLooper();
-            com.google.android.exoplayer2.audio.b bVar = new com.google.android.exoplayer2.audio.b(this.f12902a, new b.f() { // from class: oc.q
+        if (this.f12934y == null && this.f12903a != null) {
+            this.f12916g0 = Looper.myLooper();
+            com.google.android.exoplayer2.audio.b bVar = new com.google.android.exoplayer2.audio.b(this.f12903a, new b.f() { // from class: oc.q
                 @Override // com.google.android.exoplayer2.audio.b.f
                 public final void a(com.google.android.exoplayer2.audio.a aVar) {
                     com.google.android.exoplayer2.audio.k.this.Y(aVar);
                 }
             });
-            this.f12933y = bVar;
-            this.f12932x = bVar.d();
+            this.f12934y = bVar;
+            this.f12933x = bVar.d();
         }
-        return this.f12932x;
+        return this.f12933x;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -811,14 +811,14 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     }
 
     private int Q(AudioFormat audioFormat, android.media.AudioAttributes audioAttributes) {
-        int i10 = w0.f39037a;
+        int i10 = w0.f39038a;
         if (i10 >= 31) {
             return AudioManager.getPlaybackOffloadSupport(audioFormat, audioAttributes);
         }
         if (!AudioManager.isOffloadedPlaybackSupported(audioFormat, audioAttributes)) {
             return 0;
         }
-        if (i10 == 30 && w0.f39040d.startsWith("Pixel")) {
+        if (i10 == 30 && w0.f39041d.startsWith("Pixel")) {
             return 2;
         }
         return 1;
@@ -826,18 +826,18 @@ public final class k implements com.google.android.exoplayer2.audio.f {
 
     /* JADX INFO: Access modifiers changed from: private */
     public long R() {
-        g gVar = this.f12929u;
-        if (gVar.f12947c == 0) {
-            return this.G / gVar.f12946b;
+        g gVar = this.f12930u;
+        if (gVar.f12948c == 0) {
+            return this.G / gVar.f12947b;
         }
         return this.H;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public long S() {
-        g gVar = this.f12929u;
-        if (gVar.f12947c == 0) {
-            return this.I / gVar.f12948d;
+        g gVar = this.f12930u;
+        if (gVar.f12948c == 0) {
+            return this.I / gVar.f12949d;
         }
         return this.J;
     }
@@ -845,80 +845,80 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     private boolean T() {
         boolean z10;
         t1 t1Var;
-        if (!this.f12916h.e()) {
+        if (!this.f12917h.e()) {
             return false;
         }
         AudioTrack K = K();
-        this.f12931w = K;
+        this.f12932w = K;
         if (W(K)) {
-            b0(this.f12931w);
-            if (this.f12920l != 3) {
-                AudioTrack audioTrack = this.f12931w;
-                Format format = this.f12929u.f12945a;
+            b0(this.f12932w);
+            if (this.f12921l != 3) {
+                AudioTrack audioTrack = this.f12932w;
+                Format format = this.f12930u.f12946a;
                 audioTrack.setOffloadDelayPadding(format.M, format.N);
             }
         }
-        int i10 = w0.f39037a;
-        if (i10 >= 31 && (t1Var = this.f12926r) != null) {
-            c.a(this.f12931w, t1Var);
+        int i10 = w0.f39038a;
+        if (i10 >= 31 && (t1Var = this.f12927r) != null) {
+            c.a(this.f12932w, t1Var);
         }
-        this.Y = this.f12931w.getAudioSessionId();
-        com.google.android.exoplayer2.audio.h hVar = this.f12917i;
-        AudioTrack audioTrack2 = this.f12931w;
-        g gVar = this.f12929u;
-        if (gVar.f12947c == 2) {
+        this.Y = this.f12932w.getAudioSessionId();
+        com.google.android.exoplayer2.audio.h hVar = this.f12918i;
+        AudioTrack audioTrack2 = this.f12932w;
+        g gVar = this.f12930u;
+        if (gVar.f12948c == 2) {
             z10 = true;
         } else {
             z10 = false;
         }
-        hVar.r(audioTrack2, z10, gVar.f12951g, gVar.f12948d, gVar.f12952h);
+        hVar.r(audioTrack2, z10, gVar.f12952g, gVar.f12949d, gVar.f12953h);
         g0();
-        int i11 = this.Z.f38815a;
+        int i11 = this.Z.f38816a;
         if (i11 != 0) {
-            this.f12931w.attachAuxEffect(i11);
-            this.f12931w.setAuxEffectSendLevel(this.Z.f38816b);
+            this.f12932w.attachAuxEffect(i11);
+            this.f12932w.setAuxEffectSendLevel(this.Z.f38817b);
         }
-        d dVar = this.f12903a0;
+        d dVar = this.f12904a0;
         if (dVar != null && i10 >= 23) {
-            b.a(this.f12931w, dVar);
+            b.a(this.f12932w, dVar);
         }
         this.M = true;
         return true;
     }
 
     private static boolean U(int i10) {
-        if ((w0.f39037a >= 24 && i10 == -6) || i10 == -32) {
+        if ((w0.f39038a >= 24 && i10 == -6) || i10 == -32) {
             return true;
         }
         return false;
     }
 
     private boolean V() {
-        if (this.f12931w != null) {
+        if (this.f12932w != null) {
             return true;
         }
         return false;
     }
 
     private static boolean W(AudioTrack audioTrack) {
-        if (w0.f39037a >= 29 && audioTrack.isOffloadedPlayback()) {
+        if (w0.f39038a >= 29 && audioTrack.isOffloadedPlayback()) {
             return true;
         }
         return false;
     }
 
     private void X() {
-        if (!this.f12929u.l()) {
+        if (!this.f12930u.l()) {
             return;
         }
-        this.f12911e0 = true;
+        this.f12912e0 = true;
     }
 
     private void Z() {
         if (!this.V) {
             this.V = true;
-            this.f12917i.f(S());
-            this.f12931w.stop();
+            this.f12918i.f(S());
+            this.f12932w.stop();
             this.F = 0;
         }
     }
@@ -933,7 +933,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
         if (r0.hasRemaining() != false) goto L22;
      */
     /* JADX WARN: Code restructure failed: missing block: B:22:0x003c, code lost:
-        r2.f12930v.i(r2.P);
+        r2.f12931v.i(r2.P);
      */
     /* JADX WARN: Code restructure failed: missing block: B:23:0x0044, code lost:
         return;
@@ -948,23 +948,23 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     private void a0(long r3) {
         /*
             r2 = this;
-            com.google.android.exoplayer2.audio.c r0 = r2.f12930v
+            com.google.android.exoplayer2.audio.c r0 = r2.f12931v
             boolean r0 = r0.f()
             if (r0 != 0) goto L13
             java.nio.ByteBuffer r0 = r2.P
             if (r0 == 0) goto Ld
             goto Lf
         Ld:
-            java.nio.ByteBuffer r0 = com.google.android.exoplayer2.audio.d.f12835a
+            java.nio.ByteBuffer r0 = com.google.android.exoplayer2.audio.d.f12836a
         Lf:
             r2.o0(r0, r3)
             return
         L13:
-            com.google.android.exoplayer2.audio.c r0 = r2.f12930v
+            com.google.android.exoplayer2.audio.c r0 = r2.f12931v
             boolean r0 = r0.e()
             if (r0 != 0) goto L44
         L1b:
-            com.google.android.exoplayer2.audio.c r0 = r2.f12930v
+            com.google.android.exoplayer2.audio.c r0 = r2.f12931v
             java.nio.ByteBuffer r0 = r0.d()
             boolean r1 = r0.hasRemaining()
             if (r1 == 0) goto L31
@@ -979,7 +979,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
             if (r0 != 0) goto L3c
             goto L44
         L3c:
-            com.google.android.exoplayer2.audio.c r0 = r2.f12930v
+            com.google.android.exoplayer2.audio.c r0 = r2.f12931v
             java.nio.ByteBuffer r1 = r2.P
             r0.i(r1)
             goto L13
@@ -990,21 +990,21 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     }
 
     private void b0(AudioTrack audioTrack) {
-        if (this.f12921m == null) {
-            this.f12921m = new m();
+        if (this.f12922m == null) {
+            this.f12922m = new m();
         }
-        this.f12921m.a(audioTrack);
+        this.f12922m.a(audioTrack);
     }
 
     private static void c0(final AudioTrack audioTrack, final oe.h hVar) {
         hVar.d();
-        synchronized (f12899i0) {
+        synchronized (f12900i0) {
             try {
-                if (f12900j0 == null) {
-                    f12900j0 = w0.L0("ExoPlayer:AudioTrackReleaseThread");
+                if (f12901j0 == null) {
+                    f12901j0 = w0.L0("ExoPlayer:AudioTrackReleaseThread");
                 }
-                f12901k0++;
-                f12900j0.execute(new Runnable() { // from class: oc.r
+                f12902k0++;
+                f12901j0.execute(new Runnable() { // from class: oc.r
                     @Override // java.lang.Runnable
                     public final void run() {
                         com.google.android.exoplayer2.audio.k.y(audioTrack, hVar);
@@ -1021,12 +1021,12 @@ public final class k implements com.google.android.exoplayer2.audio.f {
         this.H = 0L;
         this.I = 0L;
         this.J = 0L;
-        this.f12913f0 = false;
+        this.f12914f0 = false;
         this.K = 0;
         this.B = new j(this.C, 0L, 0L);
         this.N = 0L;
         this.A = null;
-        this.f12918j.clear();
+        this.f12919j.clear();
         this.P = null;
         this.Q = 0;
         this.R = null;
@@ -1034,7 +1034,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
         this.U = false;
         this.E = null;
         this.F = 0;
-        this.f12910e.n();
+        this.f12911e.n();
         j0();
     }
 
@@ -1050,13 +1050,13 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     private void f0() {
         if (V()) {
             try {
-                this.f12931w.setPlaybackParams(new PlaybackParams().allowDefaults().setSpeed(this.C.f12553d).setPitch(this.C.f12554e).setAudioFallbackMode(2));
+                this.f12932w.setPlaybackParams(new PlaybackParams().allowDefaults().setSpeed(this.C.f12554d).setPitch(this.C.f12555e).setAudioFallbackMode(2));
             } catch (IllegalArgumentException e10) {
                 y.j("DefaultAudioSink", "Failed to set playback params", e10);
             }
-            PlaybackParameters playbackParameters = new PlaybackParameters(this.f12931w.getPlaybackParams().getSpeed(), this.f12931w.getPlaybackParams().getPitch());
+            PlaybackParameters playbackParameters = new PlaybackParameters(this.f12932w.getPlaybackParams().getSpeed(), this.f12932w.getPlaybackParams().getPitch());
             this.C = playbackParameters;
-            this.f12917i.s(playbackParameters.f12553d);
+            this.f12918i.s(playbackParameters.f12554d);
         }
     }
 
@@ -1064,10 +1064,10 @@ public final class k implements com.google.android.exoplayer2.audio.f {
         if (!V()) {
             return;
         }
-        if (w0.f39037a >= 21) {
-            h0(this.f12931w, this.O);
+        if (w0.f39038a >= 21) {
+            h0(this.f12932w, this.O);
         } else {
-            i0(this.f12931w, this.O);
+            i0(this.f12932w, this.O);
         }
     }
 
@@ -1080,15 +1080,15 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     }
 
     private void j0() {
-        com.google.android.exoplayer2.audio.c cVar = this.f12929u.f12953i;
-        this.f12930v = cVar;
+        com.google.android.exoplayer2.audio.c cVar = this.f12930u.f12954i;
+        this.f12931v = cVar;
         cVar.b();
     }
 
     private boolean k0() {
-        if (!this.f12905b0) {
-            g gVar = this.f12929u;
-            if (gVar.f12947c == 0 && !l0(gVar.f12945a.L)) {
+        if (!this.f12906b0) {
+            g gVar = this.f12930u;
+            if (gVar.f12948c == 0 && !l0(gVar.f12946a.L)) {
                 return true;
             }
             return false;
@@ -1097,15 +1097,15 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     }
 
     private boolean l0(int i10) {
-        if (this.f12906c && w0.D0(i10)) {
+        if (this.f12907c && w0.D0(i10)) {
             return true;
         }
         return false;
     }
 
     private boolean m0() {
-        g gVar = this.f12929u;
-        if (gVar != null && gVar.f12954j && w0.f39037a >= 23) {
+        g gVar = this.f12930u;
+        if (gVar != null && gVar.f12955j && w0.f39038a >= 23) {
             return true;
         }
         return false;
@@ -1117,7 +1117,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
         int Q;
         boolean z10;
         boolean z11;
-        if (w0.f39037a < 29 || this.f12920l == 0 || (f10 = c0.f((String) oe.a.e(format.f12304w), format.f12301t)) == 0 || (H = w0.H(format.J)) == 0 || (Q = Q(N(format.K, H, f10), audioAttributes.b().f12804a)) == 0) {
+        if (w0.f39038a < 29 || this.f12921l == 0 || (f10 = c0.f((String) oe.a.e(format.f12305w), format.f12302t)) == 0 || (H = w0.H(format.J)) == 0 || (Q = Q(N(format.K, H, f10), audioAttributes.b().f12805a)) == 0) {
             return false;
         }
         if (Q != 1) {
@@ -1131,7 +1131,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
         } else {
             z10 = true;
         }
-        if (this.f12920l == 1) {
+        if (this.f12921l == 1) {
             z11 = true;
         } else {
             z11 = false;
@@ -1161,7 +1161,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
                 oe.a.a(z11);
             } else {
                 this.R = byteBuffer;
-                if (w0.f39037a < 21) {
+                if (w0.f39038a < 21) {
                     int remaining = byteBuffer.remaining();
                     byte[] bArr = this.S;
                     if (bArr == null || bArr.length < remaining) {
@@ -1174,10 +1174,10 @@ public final class k implements com.google.android.exoplayer2.audio.f {
                 }
             }
             int remaining2 = byteBuffer.remaining();
-            if (w0.f39037a < 21) {
-                int b10 = this.f12917i.b(this.I);
+            if (w0.f39038a < 21) {
+                int b10 = this.f12918i.b(this.I);
                 if (b10 > 0) {
-                    p02 = this.f12931w.write(this.S, this.T, Math.min(remaining2, b10));
+                    p02 = this.f12932w.write(this.S, this.T, Math.min(remaining2, b10));
                     if (p02 > 0) {
                         this.T += p02;
                         byteBuffer.position(byteBuffer.position() + p02);
@@ -1187,7 +1187,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
                 }
                 kVar = this;
                 byteBuffer2 = byteBuffer;
-            } else if (this.f12905b0) {
+            } else if (this.f12906b0) {
                 if (j10 != -9223372036854775807L) {
                     z10 = true;
                 } else {
@@ -1195,46 +1195,46 @@ public final class k implements com.google.android.exoplayer2.audio.f {
                 }
                 oe.a.g(z10);
                 if (j10 == Long.MIN_VALUE) {
-                    j10 = this.f12907c0;
+                    j10 = this.f12908c0;
                 } else {
-                    this.f12907c0 = j10;
+                    this.f12908c0 = j10;
                 }
                 kVar = this;
                 byteBuffer2 = byteBuffer;
-                p02 = kVar.q0(this.f12931w, byteBuffer2, remaining2, j10);
+                p02 = kVar.q0(this.f12932w, byteBuffer2, remaining2, j10);
             } else {
                 kVar = this;
                 byteBuffer2 = byteBuffer;
-                p02 = p0(kVar.f12931w, byteBuffer2, remaining2);
+                p02 = p0(kVar.f12932w, byteBuffer2, remaining2);
             }
-            kVar.f12909d0 = SystemClock.elapsedRealtime();
+            kVar.f12910d0 = SystemClock.elapsedRealtime();
             if (p02 < 0) {
                 if (!U(p02) || kVar.J <= 0) {
                     z12 = false;
                 }
-                f.e eVar = new f.e(p02, kVar.f12929u.f12945a, z12);
-                f.c cVar2 = kVar.f12927s;
+                f.e eVar = new f.e(p02, kVar.f12930u.f12946a, z12);
+                f.c cVar2 = kVar.f12928s;
                 if (cVar2 != null) {
                     cVar2.a(eVar);
                 }
-                if (!eVar.f12850e) {
-                    kVar.f12923o.b(eVar);
+                if (!eVar.f12851e) {
+                    kVar.f12924o.b(eVar);
                     return;
                 } else {
-                    kVar.f12932x = com.google.android.exoplayer2.audio.a.f12810c;
+                    kVar.f12933x = com.google.android.exoplayer2.audio.a.f12811c;
                     throw eVar;
                 }
             }
-            kVar.f12923o.a();
-            if (W(kVar.f12931w)) {
+            kVar.f12924o.a();
+            if (W(kVar.f12932w)) {
                 if (kVar.J > 0) {
-                    kVar.f12913f0 = false;
+                    kVar.f12914f0 = false;
                 }
-                if (kVar.W && (cVar = kVar.f12927s) != null && p02 < remaining2 && !kVar.f12913f0) {
+                if (kVar.W && (cVar = kVar.f12928s) != null && p02 < remaining2 && !kVar.f12914f0) {
                     cVar.c();
                 }
             }
-            int i10 = kVar.f12929u.f12947c;
+            int i10 = kVar.f12930u.f12948c;
             if (i10 == 0) {
                 kVar.I += p02;
             }
@@ -1256,7 +1256,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     }
 
     private int q0(AudioTrack audioTrack, ByteBuffer byteBuffer, int i10, long j10) {
-        if (w0.f39037a >= 26) {
+        if (w0.f39038a >= 26) {
             return audioTrack.write(byteBuffer, i10, 1, j10 * 1000);
         }
         if (this.E == null) {
@@ -1295,26 +1295,26 @@ public final class k implements com.google.android.exoplayer2.audio.f {
             audioTrack.flush();
             audioTrack.release();
             hVar.f();
-            synchronized (f12899i0) {
+            synchronized (f12900i0) {
                 try {
-                    int i10 = f12901k0 - 1;
-                    f12901k0 = i10;
+                    int i10 = f12902k0 - 1;
+                    f12902k0 = i10;
                     if (i10 == 0) {
-                        f12900j0.shutdown();
-                        f12900j0 = null;
+                        f12901j0.shutdown();
+                        f12901j0 = null;
                     }
                 } finally {
                 }
             }
         } catch (Throwable th2) {
             hVar.f();
-            synchronized (f12899i0) {
+            synchronized (f12900i0) {
                 try {
-                    int i11 = f12901k0 - 1;
-                    f12901k0 = i11;
+                    int i11 = f12902k0 - 1;
+                    f12902k0 = i11;
                     if (i11 == 0) {
-                        f12900j0.shutdown();
-                        f12900j0 = null;
+                        f12901j0.shutdown();
+                        f12901j0 = null;
                     }
                     throw th2;
                 } finally {
@@ -1325,15 +1325,15 @@ public final class k implements com.google.android.exoplayer2.audio.f {
 
     public void Y(com.google.android.exoplayer2.audio.a aVar) {
         boolean z10;
-        if (this.f12915g0 == Looper.myLooper()) {
+        if (this.f12916g0 == Looper.myLooper()) {
             z10 = true;
         } else {
             z10 = false;
         }
         oe.a.g(z10);
         if (!aVar.equals(M())) {
-            this.f12932x = aVar;
-            f.c cVar = this.f12927s;
+            this.f12933x = aVar;
+            f.c cVar = this.f12928s;
             if (cVar != null) {
                 cVar.e();
             }
@@ -1351,8 +1351,8 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     @Override // com.google.android.exoplayer2.audio.f
     public void b() {
         this.W = false;
-        if (V() && this.f12917i.o()) {
-            this.f12931w.pause();
+        if (V() && this.f12918i.o()) {
+            this.f12932w.pause();
         }
     }
 
@@ -1376,14 +1376,14 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     public void e() {
         this.W = true;
         if (V()) {
-            this.f12917i.t();
-            this.f12931w.play();
+            this.f12918i.t();
+            this.f12932w.play();
         }
     }
 
     @Override // com.google.android.exoplayer2.audio.f
     public void f(PlaybackParameters playbackParameters) {
-        this.C = new PlaybackParameters(w0.p(playbackParameters.f12553d, 0.1f, 8.0f), w0.p(playbackParameters.f12554e, 0.1f, 8.0f));
+        this.C = new PlaybackParameters(w0.p(playbackParameters.f12554d, 0.1f, 8.0f), w0.p(playbackParameters.f12555e, 0.1f, 8.0f));
         if (m0()) {
             f0();
         } else {
@@ -1395,31 +1395,31 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     public void flush() {
         if (V()) {
             d0();
-            if (this.f12917i.h()) {
-                this.f12931w.pause();
+            if (this.f12918i.h()) {
+                this.f12932w.pause();
             }
-            if (W(this.f12931w)) {
-                ((m) oe.a.e(this.f12921m)).b(this.f12931w);
+            if (W(this.f12932w)) {
+                ((m) oe.a.e(this.f12922m)).b(this.f12932w);
             }
-            if (w0.f39037a < 21 && !this.X) {
+            if (w0.f39038a < 21 && !this.X) {
                 this.Y = 0;
             }
-            g gVar = this.f12928t;
+            g gVar = this.f12929t;
             if (gVar != null) {
-                this.f12929u = gVar;
-                this.f12928t = null;
+                this.f12930u = gVar;
+                this.f12929t = null;
             }
-            this.f12917i.p();
-            c0(this.f12931w, this.f12916h);
-            this.f12931w = null;
+            this.f12918i.p();
+            c0(this.f12932w, this.f12917h);
+            this.f12932w = null;
         }
-        this.f12923o.a();
-        this.f12922n.a();
+        this.f12924o.a();
+        this.f12923n.a();
     }
 
     @Override // com.google.android.exoplayer2.audio.f
     public boolean g() {
-        if (V() && this.f12917i.g(S())) {
+        if (V() && this.f12918i.g(S())) {
             return true;
         }
         return false;
@@ -1442,22 +1442,22 @@ public final class k implements com.google.android.exoplayer2.audio.f {
 
     @Override // com.google.android.exoplayer2.audio.f
     public void i(t1 t1Var) {
-        this.f12926r = t1Var;
+        this.f12927r = t1Var;
     }
 
     @Override // com.google.android.exoplayer2.audio.f
     public void j() {
-        if (this.f12905b0) {
-            this.f12905b0 = false;
+        if (this.f12906b0) {
+            this.f12906b0 = false;
             flush();
         }
     }
 
     @Override // com.google.android.exoplayer2.audio.f
     public void k(AudioAttributes audioAttributes) {
-        if (!this.f12934z.equals(audioAttributes)) {
-            this.f12934z = audioAttributes;
-            if (this.f12905b0) {
+        if (!this.f12935z.equals(audioAttributes)) {
+            this.f12935z = audioAttributes;
+            if (this.f12906b0) {
                 return;
             }
             flush();
@@ -1469,15 +1469,15 @@ public final class k implements com.google.android.exoplayer2.audio.f {
         if (this.Z.equals(pVar)) {
             return;
         }
-        int i10 = pVar.f38815a;
-        float f10 = pVar.f38816b;
-        AudioTrack audioTrack = this.f12931w;
+        int i10 = pVar.f38816a;
+        float f10 = pVar.f38817b;
+        AudioTrack audioTrack = this.f12932w;
         if (audioTrack != null) {
-            if (this.Z.f38815a != i10) {
+            if (this.Z.f38816a != i10) {
                 audioTrack.attachAuxEffect(i10);
             }
             if (i10 != 0) {
-                this.f12931w.setAuxEffectSendLevel(f10);
+                this.f12932w.setAuxEffectSendLevel(f10);
             }
         }
         this.Z = pVar;
@@ -1494,27 +1494,27 @@ public final class k implements com.google.android.exoplayer2.audio.f {
             z10 = true;
         }
         oe.a.a(z10);
-        if (this.f12928t != null) {
+        if (this.f12929t != null) {
             if (!L()) {
                 return false;
             }
-            if (!this.f12928t.b(this.f12929u)) {
+            if (!this.f12929t.b(this.f12930u)) {
                 Z();
                 if (g()) {
                     return false;
                 }
                 flush();
             } else {
-                this.f12929u = this.f12928t;
-                this.f12928t = null;
-                if (W(this.f12931w) && this.f12920l != 3) {
-                    if (this.f12931w.getPlayState() == 3) {
-                        this.f12931w.setOffloadEndOfStream();
+                this.f12930u = this.f12929t;
+                this.f12929t = null;
+                if (W(this.f12932w) && this.f12921l != 3) {
+                    if (this.f12932w.getPlayState() == 3) {
+                        this.f12932w.setOffloadEndOfStream();
                     }
-                    AudioTrack audioTrack = this.f12931w;
-                    Format format = this.f12929u.f12945a;
+                    AudioTrack audioTrack = this.f12932w;
+                    Format format = this.f12930u.f12946a;
                     audioTrack.setOffloadDelayPadding(format.M, format.N);
-                    this.f12913f0 = true;
+                    this.f12914f0 = true;
                 }
             }
             G(j10);
@@ -1525,14 +1525,14 @@ public final class k implements com.google.android.exoplayer2.audio.f {
                     return false;
                 }
             } catch (f.b e10) {
-                if (!e10.f12845e) {
-                    this.f12922n.b(e10);
+                if (!e10.f12846e) {
+                    this.f12923n.b(e10);
                     return false;
                 }
                 throw e10;
             }
         }
-        this.f12922n.a();
+        this.f12923n.a();
         if (this.M) {
             this.N = Math.max(0L, j10);
             this.L = false;
@@ -1545,7 +1545,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
                 e();
             }
         }
-        if (!this.f12917i.j(S())) {
+        if (!this.f12918i.j(S())) {
             return false;
         }
         if (this.P == null) {
@@ -1558,9 +1558,9 @@ public final class k implements com.google.android.exoplayer2.audio.f {
             if (!byteBuffer.hasRemaining()) {
                 return true;
             }
-            g gVar = this.f12929u;
-            if (gVar.f12947c != 0 && this.K == 0) {
-                int P = P(gVar.f12951g, byteBuffer);
+            g gVar = this.f12930u;
+            if (gVar.f12948c != 0 && this.K == 0) {
+                int P = P(gVar.f12952g, byteBuffer);
                 this.K = P;
                 if (P == 0) {
                     return true;
@@ -1573,9 +1573,9 @@ public final class k implements com.google.android.exoplayer2.audio.f {
                 G(j10);
                 this.A = null;
             }
-            long k10 = this.N + this.f12929u.k(R() - this.f12910e.m());
+            long k10 = this.N + this.f12930u.k(R() - this.f12911e.m());
             if (!this.L && Math.abs(k10 - j10) > 200000) {
-                f.c cVar = this.f12927s;
+                f.c cVar = this.f12928s;
                 if (cVar != null) {
                     cVar.a(new f.d(j10, k10));
                 }
@@ -1589,12 +1589,12 @@ public final class k implements com.google.android.exoplayer2.audio.f {
                 this.N += j11;
                 this.L = false;
                 G(j10);
-                f.c cVar2 = this.f12927s;
+                f.c cVar2 = this.f12928s;
                 if (cVar2 != null && j11 != 0) {
                     cVar2.f();
                 }
             }
-            if (this.f12929u.f12947c == 0) {
+            if (this.f12930u.f12948c == 0) {
                 this.G += byteBuffer.remaining();
             } else {
                 this.H += this.K * i10;
@@ -1607,7 +1607,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
             this.P = null;
             this.Q = 0;
             return true;
-        } else if (!this.f12917i.i(S())) {
+        } else if (!this.f12918i.i(S())) {
             return false;
         } else {
             y.i("DefaultAudioSink", "Resetting stalled audio track");
@@ -1618,22 +1618,22 @@ public final class k implements com.google.android.exoplayer2.audio.f {
 
     @Override // com.google.android.exoplayer2.audio.f
     public void n(f.c cVar) {
-        this.f12927s = cVar;
+        this.f12928s = cVar;
     }
 
     @Override // com.google.android.exoplayer2.audio.f
     public int o(Format format) {
-        if ("audio/raw".equals(format.f12304w)) {
+        if ("audio/raw".equals(format.f12305w)) {
             if (!w0.E0(format.L)) {
                 y.i("DefaultAudioSink", "Invalid PCM encoding: " + format.L);
                 return 0;
             }
             int i10 = format.L;
-            if (i10 == 2 || (this.f12906c && i10 == 4)) {
+            if (i10 == 2 || (this.f12907c && i10 == 4)) {
                 return 2;
             }
             return 1;
-        } else if ((this.f12911e0 || !n0(format, this.f12934z)) && !M().i(format)) {
+        } else if ((this.f12912e0 || !n0(format, this.f12935z)) && !M().i(format)) {
             return 0;
         } else {
             return 2;
@@ -1643,30 +1643,30 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     @Override // com.google.android.exoplayer2.audio.f
     public void p() {
         boolean z10;
-        if (w0.f39037a < 25) {
+        if (w0.f39038a < 25) {
             flush();
             return;
         }
-        this.f12923o.a();
-        this.f12922n.a();
+        this.f12924o.a();
+        this.f12923n.a();
         if (!V()) {
             return;
         }
         d0();
-        if (this.f12917i.h()) {
-            this.f12931w.pause();
+        if (this.f12918i.h()) {
+            this.f12932w.pause();
         }
-        this.f12931w.flush();
-        this.f12917i.p();
-        com.google.android.exoplayer2.audio.h hVar = this.f12917i;
-        AudioTrack audioTrack = this.f12931w;
-        g gVar = this.f12929u;
-        if (gVar.f12947c == 2) {
+        this.f12932w.flush();
+        this.f12918i.p();
+        com.google.android.exoplayer2.audio.h hVar = this.f12918i;
+        AudioTrack audioTrack = this.f12932w;
+        g gVar = this.f12930u;
+        if (gVar.f12948c == 2) {
             z10 = true;
         } else {
             z10 = false;
         }
-        hVar.r(audioTrack, z10, gVar.f12951g, gVar.f12948d, gVar.f12952h);
+        hVar.r(audioTrack, z10, gVar.f12952g, gVar.f12949d, gVar.f12953h);
         this.M = true;
     }
 
@@ -1681,14 +1681,14 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     @Override // com.google.android.exoplayer2.audio.f
     public long r(boolean z10) {
         if (V() && !this.M) {
-            return I(H(Math.min(this.f12917i.c(z10), this.f12929u.h(S()))));
+            return I(H(Math.min(this.f12918i.c(z10), this.f12930u.h(S()))));
         }
         return Long.MIN_VALUE;
     }
 
     @Override // com.google.android.exoplayer2.audio.f
     public void release() {
-        com.google.android.exoplayer2.audio.b bVar = this.f12933y;
+        com.google.android.exoplayer2.audio.b bVar = this.f12934y;
         if (bVar != null) {
             bVar.e();
         }
@@ -1697,20 +1697,20 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     @Override // com.google.android.exoplayer2.audio.f
     public void reset() {
         flush();
-        t0 it = this.f12912f.iterator();
+        t0 it = this.f12913f.iterator();
         while (it.hasNext()) {
             ((com.google.android.exoplayer2.audio.d) it.next()).reset();
         }
-        t0 it2 = this.f12914g.iterator();
+        t0 it2 = this.f12915g.iterator();
         while (it2.hasNext()) {
             ((com.google.android.exoplayer2.audio.d) it2.next()).reset();
         }
-        com.google.android.exoplayer2.audio.c cVar = this.f12930v;
+        com.google.android.exoplayer2.audio.c cVar = this.f12931v;
         if (cVar != null) {
             cVar.j();
         }
         this.W = false;
-        this.f12911e0 = false;
+        this.f12912e0 = false;
     }
 
     @Override // com.google.android.exoplayer2.audio.f
@@ -1721,8 +1721,8 @@ public final class k implements com.google.android.exoplayer2.audio.f {
         } else {
             dVar = new d(audioDeviceInfo);
         }
-        this.f12903a0 = dVar;
-        AudioTrack audioTrack = this.f12931w;
+        this.f12904a0 = dVar;
+        AudioTrack audioTrack = this.f12932w;
         if (audioTrack != null) {
             b.a(audioTrack, dVar);
         }
@@ -1744,15 +1744,15 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     @Override // com.google.android.exoplayer2.audio.f
     public void v() {
         boolean z10;
-        if (w0.f39037a >= 21) {
+        if (w0.f39038a >= 21) {
             z10 = true;
         } else {
             z10 = false;
         }
         oe.a.g(z10);
         oe.a.g(this.X);
-        if (!this.f12905b0) {
-            this.f12905b0 = true;
+        if (!this.f12906b0) {
+            this.f12906b0 = true;
             flush();
         }
     }
@@ -1777,7 +1777,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
         PlaybackParameters playbackParameters;
         this.D = z10;
         if (m0()) {
-            playbackParameters = PlaybackParameters.f12549o;
+            playbackParameters = PlaybackParameters.f12550o;
         } else {
             playbackParameters = this.C;
         }
@@ -1786,42 +1786,42 @@ public final class k implements com.google.android.exoplayer2.audio.f {
 
     private k(f fVar) {
         com.google.android.exoplayer2.audio.a aVar;
-        Context context = fVar.f12937a;
-        this.f12902a = context;
+        Context context = fVar.f12938a;
+        this.f12903a = context;
         if (context == null) {
-            aVar = fVar.f12938b;
+            aVar = fVar.f12939b;
         } else {
             aVar = com.google.android.exoplayer2.audio.a.c(context);
         }
-        this.f12932x = aVar;
-        this.f12904b = fVar.f12939c;
-        int i10 = w0.f39037a;
+        this.f12933x = aVar;
+        this.f12905b = fVar.f12940c;
+        int i10 = w0.f39038a;
         boolean z10 = true;
-        this.f12906c = i10 >= 21 && fVar.f12940d;
-        this.f12919k = (i10 < 23 || !fVar.f12941e) ? false : z10;
-        this.f12920l = i10 >= 29 ? fVar.f12942f : 0;
-        this.f12924p = fVar.f12943g;
-        oe.h hVar = new oe.h(oe.e.f38930a);
-        this.f12916h = hVar;
+        this.f12907c = i10 >= 21 && fVar.f12941d;
+        this.f12920k = (i10 < 23 || !fVar.f12942e) ? false : z10;
+        this.f12921l = i10 >= 29 ? fVar.f12943f : 0;
+        this.f12925p = fVar.f12944g;
+        oe.h hVar = new oe.h(oe.e.f38931a);
+        this.f12917h = hVar;
         hVar.f();
-        this.f12917i = new com.google.android.exoplayer2.audio.h(new l());
+        this.f12918i = new com.google.android.exoplayer2.audio.h(new l());
         com.google.android.exoplayer2.audio.j jVar = new com.google.android.exoplayer2.audio.j();
-        this.f12908d = jVar;
+        this.f12909d = jVar;
         s sVar = new s();
-        this.f12910e = sVar;
-        this.f12912f = qi.s.w(new r(), jVar, sVar);
-        this.f12914g = qi.s.u(new q());
+        this.f12911e = sVar;
+        this.f12913f = qi.s.w(new r(), jVar, sVar);
+        this.f12915g = qi.s.u(new q());
         this.O = 1.0f;
-        this.f12934z = AudioAttributes.f12791r;
+        this.f12935z = AudioAttributes.f12792r;
         this.Y = 0;
         this.Z = new oc.p(0, 0.0f);
-        PlaybackParameters playbackParameters = PlaybackParameters.f12549o;
+        PlaybackParameters playbackParameters = PlaybackParameters.f12550o;
         this.B = new j(playbackParameters, 0L, 0L);
         this.C = playbackParameters;
         this.D = false;
-        this.f12918j = new ArrayDeque();
-        this.f12922n = new C0164k(100L);
-        this.f12923o = new C0164k(100L);
-        this.f12925q = fVar.f12944h;
+        this.f12919j = new ArrayDeque();
+        this.f12923n = new C0164k(100L);
+        this.f12924o = new C0164k(100L);
+        this.f12926q = fVar.f12945h;
     }
 }

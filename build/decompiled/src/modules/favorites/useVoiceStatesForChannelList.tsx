@@ -59,13 +59,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var5;
         var0 = function() { // Environment: var0
-            _fun102440: for (var _fun102440_ip = 0;;) switch (_fun102440_ip) {
+            _fun102425: for (var _fun102425_ip = 0;;) switch (_fun102425_ip) {
                 case 0:
                     var3 = _closure2_slot0;
                     var2 = _closure1_slot5;
                     if (!(var3 === var2)) {
-                        _fun102440_ip = 100;
-                        continue _fun102440
+                        _fun102425_ip = 100;
+                        continue _fun102425
                     }
                 case 18:
                     var3 = _closure1_slot4;
@@ -81,15 +81,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var9 = var11.getChannel;
                             var12 = var9.bind(var11)(var10);
                             if (var3 == var12) {
-                                _fun102440_ip = 47;
-                                continue _fun102440
+                                _fun102425_ip = 47;
+                                continue _fun102425
                             }
                             case 77: var11 = _closure1_slot3;
                             var9 = var11.getVoiceStatesForChannel;
                             var9 = var9.bind(var11)(var12);
                             var2[var10] = var9;
-                            _fun102440_ip = 47;
-                            continue _fun102440;
+                            _fun102425_ip = 47;
+                            continue _fun102425;
                         }
                 case 98:
                     return var2;

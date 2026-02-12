@@ -11,47 +11,47 @@ import kotlinx.coroutines.CoroutineScope;
 public final class p extends k implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KType f23003a;
+    private final KType f23004a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f23004b;
+    private final String f23005b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final s f23005c;
+    private final s f23006c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f23006d;
+        int f23007d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ o f23007e;
+        final /* synthetic */ o f23008e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ p f23008i;
+        final /* synthetic */ p f23009i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ k.a f23009o;
+        final /* synthetic */ k.a f23010o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(o oVar, p pVar, k.a aVar, Continuation continuation) {
             super(2, continuation);
-            this.f23007e = oVar;
-            this.f23008i = pVar;
-            this.f23009o = aVar;
+            this.f23008e = oVar;
+            this.f23009i = pVar;
+            this.f23010o = aVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new a(this.f23007e, this.f23008i, this.f23009o, continuation);
+            return new a(this.f23008e, this.f23009i, this.f23010o, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = gs.b.f();
-            int i10 = this.f23006d;
+            int i10 = this.f23007d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -60,39 +60,39 @@ public final class p extends k implements c {
                 }
             } else {
                 kotlin.c.b(obj);
-                o oVar = this.f23007e;
-                String str = this.f23008i.f23004b;
-                h c10 = this.f23009o.c();
-                this.f23006d = 1;
+                o oVar = this.f23008e;
+                String str = this.f23009i.f23005b;
+                h c10 = this.f23010o.c();
+                this.f23007d = 1;
                 if (w.k(oVar, str, c10, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
     public p(KType workerType, String key) {
         Intrinsics.checkNotNullParameter(workerType, "workerType");
         Intrinsics.checkNotNullParameter(key, "key");
-        this.f23003a = workerType;
-        this.f23004b = key;
-        this.f23005c = w.n(workerType);
+        this.f23004a = workerType;
+        this.f23005b = key;
+        this.f23006c = w.n(workerType);
     }
 
     @Override // en.c
     public String a() {
-        return Intrinsics.stringPlus("worker ", this.f23003a);
+        return Intrinsics.stringPlus("worker ", this.f23004a);
     }
 
     @Override // en.c
     public s c() {
-        return this.f23005c;
+        return this.f23006c;
     }
 
     @Override // en.k
@@ -103,7 +103,7 @@ public final class p extends k implements c {
     @Override // en.k
     public /* bridge */ /* synthetic */ Object f(Object obj, Object obj2, k.a aVar) {
         k((o) obj, ((Number) obj2).intValue(), aVar);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @Override // en.k

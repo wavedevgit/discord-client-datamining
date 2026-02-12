@@ -15,7 +15,7 @@ public class j extends p {
     @Override // s5.o
     /* renamed from: c */
     public o5.o a() {
-        return new o5.o(this.f47856a);
+        return new o5.o(this.f47857a);
     }
 
     @Override // s5.p, s5.o

@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var11 = metroImportDefault;
+    var12 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var11;
+    var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -29,41 +29,48 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var6 = var3.jsx;
-    var _closure1_slot4 = var6;
+    var7 = var3.jsx;
+    var _closure1_slot4 = var7;
     var3 = var3.jsxs;
     var _closure1_slot5 = var3;
     var3 = 3;
     var3 = var5[var3];
-    var7 = var4.bind(var0)(var3);
-    var6 = var7.createStyles;
+    var8 = var4.bind(var0)(var3);
+    var6 = var8.createStyles;
     var3 = {};
-    var9 = 'center';
-    var8 = {
+    var10 = 'center';
+    var9 = {
         'alignSelf': 'center',
         'justifySelf': 'center'
     };
-    var3.image = var8;
-    var8 = {};
-    var10 = 4;
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.colors;
-    var12 = var12.BACKGROUND_SURFACE_HIGH;
-    var8.backgroundColor = var12;
-    var10 = var5[var10];
-    var10 = var11.bind(var0)(var10);
-    var10 = var10.radii;
-    var10 = var10.lg;
-    var8.borderRadius = var10;
-    var10 = 'hidden';
-    var8.overflow = var10;
-    var3.tips = var8;
-    var8 = {};
-    var8.textAlign = var9;
-    var3.text = var8;
-    var3 = var6.bind(var7)(var3);
+    var3.image = var9;
+    var9 = {};
+    var11 = 4;
+    var13 = var5[var11];
+    var13 = var12.bind(var0)(var13);
+    var13 = var13.colors;
+    var13 = var13.BACKGROUND_SURFACE_HIGH;
+    var9.backgroundColor = var13;
+    var11 = var5[var11];
+    var11 = var12.bind(var0)(var11);
+    var11 = var11.radii;
+    var11 = var11.lg;
+    var9.borderRadius = var11;
+    var11 = 'hidden';
+    var9.overflow = var11;
+    var3.tips = var9;
+    var9 = {};
+    var9.textAlign = var10;
+    var3.text = var9;
+    var3 = var6.bind(var8)(var3);
     var _closure1_slot6 = var3;
+    var3 = 5;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.SafetyBookletSpotIllustration;
+    var3 = {};
+    var3 = var7.bind(var0)(var6, var3);
+    var _closure1_slot7 = var3;
     var3 = 10;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -71,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/self_mod/shared/native/SafetyTipsSection.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun73037: for (var _fun73037_ip = 0;;) switch (_fun73037_ip) {
+        _fun77138: for (var _fun77138_ip = 0;;) switch (_fun77138_ip) {
             case 0:
                 var0 = arg0;
                 var15 = var0.description;
@@ -84,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot5;
                 var11 = _closure1_slot0;
                 var12 = _closure1_slot2;
-                var6 = 5;
+                var6 = 6;
                 var0 = var12[var6];
                 var0 = var11.bind(var3)(var0);
                 var1 = var0.Stack;
@@ -96,12 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var16 = var9.image;
                 var4.style = var16;
-                var16 = 6;
-                var16 = var12[var16];
-                var16 = var11.bind(var3)(var16);
-                var17 = var16.SafetyBookletSpotIllustration;
-                var16 = {};
-                var16 = var14.bind(var3)(var17, var16);
+                var16 = _closure1_slot7;
                 var4.children = var16;
                 var13 = var14.bind(var3)(var13, var4);
                 var4 = new Array(3);
@@ -116,10 +118,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var20 = 8;
                 if (!var7) {
-                    _fun73037_ip = 283;
-                    continue _fun73037
+                    _fun77138_ip = 261;
+                    continue _fun77138
                 }
-            case 177:
+            case 155:
                 var14 = _closure1_slot4;
                 var19 = _closure1_slot0;
                 var16 = _closure1_slot2;
@@ -143,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var17.bind(var18)(var16);
                 var12.children = var16;
                 var7 = var14.bind(var3)(var13, var12);
-            case 283:
+            case 261:
                 var12 = new Array(2);
                 var12[0] = var7;
                 var7 = _closure1_slot4;
@@ -206,4 +208,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4086, 6023, 3938, 1234, 6508, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 6030, 4086, 3938, 1234, 6521, 2]);

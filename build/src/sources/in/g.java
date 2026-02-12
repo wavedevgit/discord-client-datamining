@@ -12,10 +12,10 @@ public final class g implements Parcelable {
     public static final a CREATOR = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f28019d;
+    private final String f28020d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final SparseArray f28020e;
+    private final SparseArray f28021e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -49,12 +49,12 @@ public final class g implements Parcelable {
     public g(String key, SparseArray viewState) {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(viewState, "viewState");
-        this.f28019d = key;
-        this.f28020e = viewState;
+        this.f28020d = key;
+        this.f28021e = viewState;
     }
 
     public final SparseArray a() {
-        return this.f28020e;
+        return this.f28021e;
     }
 
     @Override // android.os.Parcelable
@@ -70,24 +70,24 @@ public final class g implements Parcelable {
             return false;
         }
         g gVar = (g) obj;
-        if (Intrinsics.areEqual(this.f28019d, gVar.f28019d) && Intrinsics.areEqual(this.f28020e, gVar.f28020e)) {
+        if (Intrinsics.areEqual(this.f28020d, gVar.f28020d) && Intrinsics.areEqual(this.f28021e, gVar.f28021e)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f28019d.hashCode() * 31) + this.f28020e.hashCode();
+        return (this.f28020d.hashCode() * 31) + this.f28021e.hashCode();
     }
 
     public String toString() {
-        return "ViewStateFrame(key=" + this.f28019d + ", viewState=" + this.f28020e + ')';
+        return "ViewStateFrame(key=" + this.f28020d + ", viewState=" + this.f28021e + ')';
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
         Intrinsics.checkNotNullParameter(parcel, "parcel");
-        parcel.writeString(this.f28019d);
-        parcel.writeSparseArray(this.f28020e);
+        parcel.writeString(this.f28020d);
+        parcel.writeSparseArray(this.f28021e);
     }
 }

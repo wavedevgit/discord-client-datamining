@@ -5,7 +5,7 @@ import bj.c;
 final class e9 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final e9 f39189a = new e9();
+    static final e9 f39190a = new e9();
 
     static {
         c.b a10 = bj.c.a("totalStrokeCount");

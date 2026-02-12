@@ -38,7 +38,7 @@ public /* synthetic */ class ValueChangeEvent$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{n2.f50032a, p0.f50048a};
+        return new KSerializer[]{n2.f50033a, p0.f50049a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

@@ -7,17 +7,17 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Bitmap.CompressFormat f47743a;
+    private final Bitmap.CompressFormat f47744a;
 
     public f(Bitmap.CompressFormat format) {
         Intrinsics.checkParameterIsNotNull(format, "format");
-        this.f47743a = format;
+        this.f47744a = format;
     }
 
     @Override // rr.a
     public boolean isSatisfied(File imageFile) {
         Intrinsics.checkParameterIsNotNull(imageFile, "imageFile");
-        if (this.f47743a == qr.c.c(imageFile)) {
+        if (this.f47744a == qr.c.c(imageFile)) {
             return true;
         }
         return false;
@@ -26,6 +26,6 @@ public final class f implements a {
     @Override // rr.a
     public File satisfy(File imageFile) {
         Intrinsics.checkParameterIsNotNull(imageFile, "imageFile");
-        return qr.c.k(imageFile, qr.c.i(imageFile), this.f47743a, 0, 8, null);
+        return qr.c.k(imageFile, qr.c.i(imageFile), this.f47744a, 0, 8, null);
     }
 }

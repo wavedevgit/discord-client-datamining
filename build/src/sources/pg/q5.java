@@ -5,30 +5,30 @@ import bj.c;
 final class q5 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final q5 f42357a = new q5();
+    static final q5 f42358a = new q5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f42358b;
+    private static final bj.c f42359b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f42359c;
+    private static final bj.c f42360c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f42360d;
+    private static final bj.c f42361d;
 
     static {
         c.b a10 = bj.c.a("inferenceCommonLogEvent");
         f fVar = new f();
         fVar.a(1);
-        f42358b = a10.b(fVar.b()).a();
+        f42359b = a10.b(fVar.b()).a();
         c.b a11 = bj.c.a("imageInfo");
         f fVar2 = new f();
         fVar2.a(2);
-        f42359c = a11.b(fVar2.b()).a();
+        f42360c = a11.b(fVar2.b()).a();
         c.b a12 = bj.c.a("recognizerOptions");
         f fVar3 = new f();
         fVar3.a(3);
-        f42360d = a12.b(fVar3.b()).a();
+        f42361d = a12.b(fVar3.b()).a();
     }
 
     private q5() {

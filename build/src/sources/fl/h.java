@@ -14,14 +14,14 @@ public enum h {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int[] f23838d;
+    private final int[] f23839d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f23839e;
+    private final int f23840e;
 
     h(int[] iArr, int i10) {
-        this.f23838d = iArr;
-        this.f23839e = i10;
+        this.f23839d = iArr;
+        this.f23840e = i10;
     }
 
     public static h a(int i10) {
@@ -59,7 +59,7 @@ public enum h {
     }
 
     public int d() {
-        return this.f23839e;
+        return this.f23840e;
     }
 
     public int e(j jVar) {
@@ -72,6 +72,6 @@ public enum h {
         } else {
             c10 = 2;
         }
-        return this.f23838d[c10];
+        return this.f23839d[c10];
     }
 }

@@ -6,10 +6,10 @@ import lr.h;
 public final class d implements lr.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f38235a;
+    private final h f38236a;
 
     public d(h hVar) {
-        this.f38235a = hVar;
+        this.f38236a = hVar;
     }
 
     public static d a(h hVar) {
@@ -23,6 +23,6 @@ public final class d implements lr.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public b get() {
-        return c((Context) this.f38235a.get());
+        return c((Context) this.f38236a.get());
     }
 }

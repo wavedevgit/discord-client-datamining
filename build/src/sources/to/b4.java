@@ -28,75 +28,75 @@ public abstract class b4 {
     public /* synthetic */ class a {
 
         /* renamed from: a */
-        public static final /* synthetic */ int[] f48983a;
+        public static final /* synthetic */ int[] f48984a;
 
         /* renamed from: b */
-        public static final /* synthetic */ int[] f48984b;
+        public static final /* synthetic */ int[] f48985b;
 
         static {
             int[] iArr = new int[rp.g1.values().length];
             try {
-                iArr[rp.g1.f47600d.ordinal()] = 1;
+                iArr[rp.g1.f47601d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[rp.g1.f47602i.ordinal()] = 2;
+                iArr[rp.g1.f47603i.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[rp.g1.f47601e.ordinal()] = 3;
+                iArr[rp.g1.f47602e.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f48983a = iArr;
+            f48984a = iArr;
             int[] iArr2 = new int[c4.e.values().length];
             try {
-                iArr2[c4.e.f49013o.ordinal()] = 1;
+                iArr2[c4.e.f49014o.ordinal()] = 1;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                iArr2[c4.e.f49014p.ordinal()] = 2;
+                iArr2[c4.e.f49015p.ordinal()] = 2;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                iArr2[c4.e.f49015q.ordinal()] = 3;
+                iArr2[c4.e.f49016q.ordinal()] = 3;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                iArr2[c4.e.f49016r.ordinal()] = 4;
+                iArr2[c4.e.f49017r.ordinal()] = 4;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                iArr2[c4.e.f49017s.ordinal()] = 5;
+                iArr2[c4.e.f49018s.ordinal()] = 5;
             } catch (NoSuchFieldError unused8) {
             }
-            f48984b = iArr2;
+            f48985b = iArr2;
         }
     }
 
     public static final Unit A(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         action.d(new g3.b.c(new InternalErrorInfo.CameraErrorInfo("Unsupported device.")));
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final Unit B(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         ((n1) action.c()).d();
         action.e(new n1.j(null, null, null, null, 0, ((n1) action.c()).f(), null, null, 223, null));
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final Unit C(Throwable th2, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         String canonicalName = th2.getClass().getCanonicalName();
         action.d(new g3.b.c(new InternalErrorInfo.CameraErrorInfo("Unexpected camera error with type " + canonicalName)));
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final Unit D(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         action.d(new g3.b.c(new InternalErrorInfo.CameraErrorInfo("Unable to find a camera that satisfies the requirements for the selfie flow.")));
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final String E(g3.a.C0672a c0672a, c4.e side, String selectedId, String str) {
@@ -125,7 +125,7 @@ public abstract class b4 {
         String b10;
         Intrinsics.checkNotNullParameter(aVar, "<this>");
         Intrinsics.checkNotNullParameter(side, "side");
-        int i10 = a.f48984b[side.ordinal()];
+        int i10 = a.f48985b[side.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
@@ -185,13 +185,13 @@ public abstract class b4 {
     public static final f5.b.a I(g3.a renderProps, c4.e currentSide) {
         Intrinsics.checkNotNullParameter(renderProps, "renderProps");
         Intrinsics.checkNotNullParameter(currentSide, "currentSide");
-        if (currentSide == c4.e.f49017s) {
-            return f5.b.a.f49143e;
+        if (currentSide == c4.e.f49018s) {
+            return f5.b.a.f49144e;
         }
-        if (!Intrinsics.areEqual(renderProps.e(), "US") && currentSide == c4.e.f49014p) {
-            return f5.b.a.f49143e;
+        if (!Intrinsics.areEqual(renderProps.e(), "US") && currentSide == c4.e.f49015p) {
+            return f5.b.a.f49144e;
         }
-        return f5.b.a.f49144i;
+        return f5.b.a.f49145i;
     }
 
     public static final String J(g3.a.C0672a c0672a, c4.e side, String selectedId, String str, boolean z10) {
@@ -210,10 +210,10 @@ public abstract class b4 {
 
     public static final String K(g3.a.C0672a c0672a, zo.d dVar) {
         Intrinsics.checkNotNullParameter(c0672a, "<this>");
-        if (Intrinsics.areEqual(dVar, zo.e.f56556d)) {
+        if (Intrinsics.areEqual(dVar, zo.e.f56557d)) {
             return c0672a.x();
         }
-        if (Intrinsics.areEqual(dVar, zo.f.f56557d)) {
+        if (Intrinsics.areEqual(dVar, zo.f.f56558d)) {
             return c0672a.y();
         }
         if (dVar == null) {
@@ -245,15 +245,15 @@ public abstract class b4 {
         }
         if (e10 == null) {
             if (((g3.a) action.b()).c()) {
-                action.d(g3.b.a.f49277a);
+                action.d(g3.b.a.f49278a);
             } else {
-                action.d(g3.b.C0673b.f49278a);
+                action.d(g3.b.C0673b.f49279a);
             }
         } else {
             e10.o(true);
             action.e(e10);
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final void N(Context context, k.a renderContext, g3.a renderProps, boolean z10) {
@@ -261,9 +261,9 @@ public abstract class b4 {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(renderContext, "renderContext");
         Intrinsics.checkNotNullParameter(renderProps, "renderProps");
-        List r10 = CollectionsKt.r(rp.d0.f47574d);
+        List r10 = CollectionsKt.r(rp.d0.f47575d);
         if (z10 && bq.f.f(context)) {
-            r10.add(rp.d0.f47575e);
+            r10.add(rp.d0.f47576e);
         }
         final List a10 = rp.l1.a(context, r10);
         if (a10.isEmpty()) {
@@ -285,12 +285,12 @@ public abstract class b4 {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         n1 n1Var = (n1) action.c();
         if (n1Var instanceof n1.l) {
-            action.e(n1.l.s((n1.l) n1Var, null, null, null, null, null, 0, null, null, null, null, list.contains(rp.d0.f47574d), list.contains(rp.d0.f47575e), null, null, null, 29695, null));
+            action.e(n1.l.s((n1.l) n1Var, null, null, null, null, null, 0, null, null, null, null, list.contains(rp.d0.f47575d), list.contains(rp.d0.f47576e), null, null, null, 29695, null));
         } else {
             ((n1) action.c()).d();
             action.e(new n1.j(null, null, null, null, 0, n1Var.f(), null, null, 223, null));
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final void P(final n1 renderState, final k.a renderContext, final g3.a renderProps, final d0 d0Var, final c4 id2, final bp.k videoCaptureHelper, final fo.v cameraProperties, final boolean z10, final List parts, final int i10, final String str, final String str2) {
@@ -357,7 +357,7 @@ public abstract class b4 {
         bp.t tVar;
         Intrinsics.checkNotNullParameter(action, "$this$action");
         if (action.c().getClass() != n1Var.getClass()) {
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
         if (d0Var != null) {
             l10 = CollectionsKt.M0(((n1) action.c()).l(), d0Var);
@@ -395,9 +395,9 @@ public abstract class b4 {
                 }, 11776, null);
             }
         } else if (h4Var == null) {
-            if (aVar2 == lo.a.f35948d && !(action.c() instanceof n1.f) && !(action.c() instanceof n1.i)) {
+            if (aVar2 == lo.a.f35949d && !(action.c() instanceof n1.f) && !(action.c() instanceof n1.i)) {
                 kVar2 = new n1.f((h4) CollectionsKt.z0(list), list2, list, i11, v(action, z10), str, c4Var, vVar);
-            } else if (aVar2 == lo.a.f35949e && !(action.c() instanceof n1.e) && !(action.c() instanceof n1.i)) {
+            } else if (aVar2 == lo.a.f35950e && !(action.c() instanceof n1.e) && !(action.c() instanceof n1.i)) {
                 kVar2 = new n1.e(c4Var, list2, (h4) CollectionsKt.z0(list), list, i11, v(action, z10), str, new ap.c(list2, aVar.h(), aVar.i()), 0L, false, 768, null);
             } else {
                 kVar2 = new n1.k(c4Var, list2, null, list, i11, v(action, z10), str, new ap.c(list2, aVar.h(), aVar.i()), str2, vVar, 4, null);
@@ -407,7 +407,7 @@ public abstract class b4 {
             throw new as.p();
         }
         action.e(obj);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final Unit S(k.a aVar, final bp.k kVar) {
@@ -422,7 +422,7 @@ public abstract class b4 {
             }
         }, 1, null);
         c11.d(c10);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final Unit T(bp.k kVar, r.c action) {
@@ -444,7 +444,7 @@ public abstract class b4 {
             }
             action.e(n1.l.s(lVar2, null, null, null, null, null, 0, null, tVar, null, null, false, false, null, null, null, 32639, null));
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final void U(k.a context, final g3.b output, bp.k videoCaptureHelper) {
@@ -470,28 +470,28 @@ public abstract class b4 {
     public static final Unit V(g3.b bVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         action.d(bVar);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final d0.d W(c4.e eVar) {
         Intrinsics.checkNotNullParameter(eVar, "<this>");
-        int i10 = a.f48984b[eVar.ordinal()];
+        int i10 = a.f48985b[eVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
                     if (i10 != 4) {
                         if (i10 == 5) {
-                            return d0.d.f49038e;
+                            return d0.d.f49039e;
                         }
                         throw new as.p();
                     }
-                    return d0.d.f49038e;
+                    return d0.d.f49039e;
                 }
-                return d0.d.f49037d;
+                return d0.d.f49038d;
             }
-            return d0.d.f49038e;
+            return d0.d.f49039e;
         }
-        return d0.d.f49037d;
+        return d0.d.f49038d;
     }
 
     public static final op.c X(Object obj, Context context, final k.a renderContext, g3.a renderProps, boolean z10, rp.c1 permissionRequestWorkflow) {
@@ -500,7 +500,7 @@ public abstract class b4 {
         Intrinsics.checkNotNullParameter(renderContext, "renderContext");
         Intrinsics.checkNotNullParameter(renderProps, "renderProps");
         Intrinsics.checkNotNullParameter(permissionRequestWorkflow, "permissionRequestWorkflow");
-        rp.d0 d0Var = rp.d0.f47575e;
+        rp.d0 d0Var = rp.d0.f47576e;
         String S = renderProps.t().S();
         if (S == null) {
             S = "";
@@ -541,7 +541,7 @@ public abstract class b4 {
     public static final Unit Z(c1.a aVar, k.a aVar2, r.c action) {
         en.r c10;
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        int i10 = a.f48983a[aVar.a().a().ordinal()];
+        int i10 = a.f48984a[aVar.a().a().ordinal()];
         if (i10 != 1 && i10 != 2) {
             if (i10 == 3) {
                 L(aVar2, null);
@@ -560,7 +560,7 @@ public abstract class b4 {
             }, 1, null);
             c11.d(c10);
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final Unit a0(r.c action) {
@@ -569,7 +569,7 @@ public abstract class b4 {
         if (n1Var instanceof b) {
             action.e(((b) n1Var).a(false));
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final op.c b0(Object obj, Context context, final k.a renderContext, g3.a renderProps, boolean z10, rp.c1 permissionRequestWorkflow) {
@@ -578,7 +578,7 @@ public abstract class b4 {
         Intrinsics.checkNotNullParameter(renderContext, "renderContext");
         Intrinsics.checkNotNullParameter(renderProps, "renderProps");
         Intrinsics.checkNotNullParameter(permissionRequestWorkflow, "permissionRequestWorkflow");
-        rp.d0 d0Var = rp.d0.f47574d;
+        rp.d0 d0Var = rp.d0.f47575d;
         String k10 = renderProps.t().k();
         if (k10 == null) {
             k10 = "";
@@ -586,11 +586,11 @@ public abstract class b4 {
         String str = k10;
         String j10 = renderProps.t().j();
         if (j10 == null) {
-            j10 = context.getString(tp.e.f49795m);
+            j10 = context.getString(tp.e.f49796m);
             Intrinsics.checkNotNullExpressionValue(j10, "getString(...)");
         }
         String str2 = j10;
-        String string = context.getString(tp.e.f49794l, bq.f.b(context));
+        String string = context.getString(tp.e.f49795l, bq.f.b(context));
         Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
         return rp.l1.e(obj, renderContext, z10, d0Var, false, str, str2, string, renderProps.t().h(), renderProps.t().i(), null, null, null, permissionRequestWorkflow, renderProps.u(), null, new Function1() { // from class: to.x3
             @Override // kotlin.jvm.functions.Function1
@@ -619,7 +619,7 @@ public abstract class b4 {
     public static final Unit d0(c1.a aVar, k.a aVar2, r.c action) {
         en.r c10;
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        int i10 = a.f48983a[aVar.a().a().ordinal()];
+        int i10 = a.f48984a[aVar.a().a().ordinal()];
         if (i10 != 1 && i10 != 2) {
             if (i10 == 3) {
                 L(aVar2, null);
@@ -638,7 +638,7 @@ public abstract class b4 {
             }, 1, null);
             c11.d(c10);
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final Unit e0(r.c action) {
@@ -647,7 +647,7 @@ public abstract class b4 {
         if (n1Var instanceof d) {
             action.e(((d) n1Var).b(false));
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final void t(k.a aVar) {
@@ -667,8 +667,8 @@ public abstract class b4 {
 
     public static final Unit u(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        action.d(g3.b.C0673b.f49278a);
-        return Unit.f31987a;
+        action.d(g3.b.C0673b.f49279a);
+        return Unit.f31988a;
     }
 
     public static final n1 v(r.c cVar, boolean z10) {
@@ -716,7 +716,7 @@ public abstract class b4 {
                 }
             }, 1, null);
             c15.d(c14);
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
         fo.k kVar = (fo.k) cameraError;
         if (!(kVar instanceof fo.q0)) {
@@ -768,13 +768,13 @@ public abstract class b4 {
                 throw new as.p();
             }
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final Unit z(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         ((n1) action.c()).d();
         action.e(new n1.j(null, null, null, null, 0, ((n1) action.c()).f(), null, null, 223, null));
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 }

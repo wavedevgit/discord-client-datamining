@@ -7,21 +7,21 @@ import java.util.Map;
 final class e0 extends AbstractCollection {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ f0 f44377d;
+    final /* synthetic */ f0 f44378d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e0(f0 f0Var) {
-        this.f44377d = f0Var;
+        this.f44378d = f0Var;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public final void clear() {
-        this.f44377d.clear();
+        this.f44378d.clear();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable
     public final Iterator iterator() {
-        f0 f0Var = this.f44377d;
+        f0 f0Var = this.f44378d;
         Map n10 = f0Var.n();
         if (n10 != null) {
             return n10.values().iterator();
@@ -31,6 +31,6 @@ final class e0 extends AbstractCollection {
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public final int size() {
-        return this.f44377d.size();
+        return this.f44378d.size();
     }
 }

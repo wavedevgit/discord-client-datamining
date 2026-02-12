@@ -15,7 +15,7 @@ public abstract class e4 {
         final sq.t c10 = sq.t.c(uiComponentHelper.b());
         PrivacyPolicy.Attributes attributes = config.getAttributes();
         if (attributes != null) {
-            TextView textView = c10.f48287b;
+            TextView textView = c10.f48288b;
             Intrinsics.checkNotNullExpressionValue(textView, "textView");
             qq.f.d(textView, attributes.getText());
             uiComponentHelper.d(new Function0() { // from class: pq.d4
@@ -36,10 +36,10 @@ public abstract class e4 {
     public static final Unit c(PrivacyPolicy privacyPolicy, sq.t tVar) {
         TextBasedComponentStyle styles = privacyPolicy.getStyles();
         if (styles != null) {
-            TextView textView = tVar.f48287b;
+            TextView textView = tVar.f48288b;
             Intrinsics.checkNotNullExpressionValue(textView, "textView");
             uq.f0.n(textView, styles, null, 2, null);
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 }

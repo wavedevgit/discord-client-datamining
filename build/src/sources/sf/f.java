@@ -8,11 +8,11 @@ import zg.k;
 public final class f extends a.AbstractBinderC0652a {
 
     /* renamed from: c  reason: collision with root package name */
-    final /* synthetic */ k f48087c;
+    final /* synthetic */ k f48088c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(k kVar) {
-        this.f48087c = kVar;
+        this.f48088c = kVar;
     }
 
     @Override // sf.a
@@ -23,6 +23,6 @@ public final class f extends a.AbstractBinderC0652a {
         } else {
             num = null;
         }
-        r.a(status, num, this.f48087c);
+        r.a(status, num, this.f48088c);
     }
 }

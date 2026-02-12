@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class c2 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final d2 f51017d;
+    private final d2 f51018d;
 
     public c2(d2 d2Var) {
-        this.f51017d = d2Var;
+        this.f51018d = d2Var;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         Member W;
-        W = d2.W(this.f51017d);
+        W = d2.W(this.f51018d);
         return W;
     }
 }

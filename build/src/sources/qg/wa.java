@@ -3,19 +3,19 @@ package qg;
 public final class wa {
 
     /* renamed from: a  reason: collision with root package name */
-    private final v9 f45112a;
+    private final v9 f45113a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r9 f45113b;
+    private final r9 f45114b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final n9 f45114c;
+    private final n9 f45115c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Integer f45115d;
+    private final Integer f45116d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Integer f45116e;
+    private final Integer f45117e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ wa(ua uaVar, va vaVar) {
@@ -24,35 +24,35 @@ public final class wa {
         n9 n9Var;
         Integer num;
         Integer num2;
-        v9Var = uaVar.f45015a;
-        this.f45112a = v9Var;
-        r9Var = uaVar.f45016b;
-        this.f45113b = r9Var;
-        n9Var = uaVar.f45017c;
-        this.f45114c = n9Var;
-        num = uaVar.f45018d;
-        this.f45115d = num;
-        num2 = uaVar.f45019e;
-        this.f45116e = num2;
+        v9Var = uaVar.f45016a;
+        this.f45113a = v9Var;
+        r9Var = uaVar.f45017b;
+        this.f45114b = r9Var;
+        n9Var = uaVar.f45018c;
+        this.f45115c = n9Var;
+        num = uaVar.f45019d;
+        this.f45116d = num;
+        num2 = uaVar.f45020e;
+        this.f45117e = num2;
     }
 
     public final n9 a() {
-        return this.f45114c;
+        return this.f45115c;
     }
 
     public final r9 b() {
-        return this.f45113b;
+        return this.f45114b;
     }
 
     public final v9 c() {
-        return this.f45112a;
+        return this.f45113a;
     }
 
     public final Integer d() {
-        return this.f45115d;
+        return this.f45116d;
     }
 
     public final Integer e() {
-        return this.f45116e;
+        return this.f45117e;
     }
 }

@@ -11,8 +11,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         '__packager_asset': true,
         'httpServerLocation': '/assets/design/components/LottieIcon/native/generated/lotties',
         'scales': null,
-        'hash': '2c315f321285573a3e0f3421e17e59ea',
-        'name': 'NitroGem24',
+        'hash': '920aa462df28cb5a95d2c9dd66119f32',
+        'name': 'NitroGem3',
         'type': 'lottie'
     };
     var4 = [1];

@@ -11,10 +11,10 @@ import lu.j;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f40547a = new b(null);
+    public static final b f40548a = new b(null);
 
     /* renamed from: b  reason: collision with root package name */
-    public static final e f40548b = new a();
+    public static final e f40549b = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends e {

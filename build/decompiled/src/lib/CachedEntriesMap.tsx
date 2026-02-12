@@ -166,7 +166,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'set';
         var0.key = var5;
         var5 = function arg0, arg1() {
-            _fun30775: for (var _fun30775_ip = 0;;) switch (_fun30775_ip) {
+            _fun30797: for (var _fun30797_ip = 0;;) switch (_fun30797_ip) {
                 case 0:
                     var4 = arg0;
                     var3 = arg1;
@@ -175,8 +175,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var2.get;
                     var0 = var0.bind(var2)(var4);
                     if (!(var0 !== var3)) {
-                        _fun30775_ip = 59;
-                        continue _fun30775
+                        _fun30797_ip = 59;
+                        continue _fun30797
                     }
                 case 28:
                     var2 = var1.data;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'delete';
         var0.key = var5;
         var5 = function arg0() {
-            _fun30776: for (var _fun30776_ip = 0;;) switch (_fun30776_ip) {
+            _fun30798: for (var _fun30798_ip = 0;;) switch (_fun30798_ip) {
                 case 0:
                     var2 = this;
                     var3 = var2.data;
@@ -204,8 +204,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = arg0;
                     var0 = var1.bind(var3)(var0);
                     if (!var0) {
-                        _fun30776_ip = 39;
-                        continue _fun30776
+                        _fun30798_ip = 39;
+                        continue _fun30798
                     }
                 case 24:
                     var1 = var2.version;
@@ -221,15 +221,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'clear';
         var0.key = var5;
         var4 = function() {
-            _fun30777: for (var _fun30777_ip = 0;;) switch (_fun30777_ip) {
+            _fun30799: for (var _fun30799_ip = 0;;) switch (_fun30799_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.data;
                     var2 = var0.size;
                     var0 = 0;
                     if (!(var0 !== var2)) {
-                        _fun30777_ip = 49;
-                        continue _fun30777
+                        _fun30799_ip = 49;
+                        continue _fun30799
                     }
                 case 19:
                     var2 = var1.data;

@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class UpdateInquirySessionRequest_DataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20253a;
+    private final m.b f20254a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f20254b;
+    private final com.squareup.moshi.h f20255b;
 
     public UpdateInquirySessionRequest_DataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("attributes");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20253a = a10;
+        this.f20254a = a10;
         com.squareup.moshi.h f10 = moshi.f(UpdateInquirySessionRequest.Attributes.class, x0.d(), "attributes");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20254b = f10;
+        this.f20255b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -35,9 +35,9 @@ public final class UpdateInquirySessionRequest_DataJsonAdapter extends com.squar
         reader.u();
         UpdateInquirySessionRequest.Attributes attributes = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20253a);
+            int J = reader.J(this.f20254a);
             if (J != -1) {
-                if (J == 0 && (attributes = (UpdateInquirySessionRequest.Attributes) this.f20254b.fromJson(reader)) == null) {
+                if (J == 0 && (attributes = (UpdateInquirySessionRequest.Attributes) this.f20255b.fromJson(reader)) == null) {
                     throw dn.c.x("attributes", "attributes", reader);
                 }
             } else {
@@ -59,7 +59,7 @@ public final class UpdateInquirySessionRequest_DataJsonAdapter extends com.squar
         if (data != null) {
             writer.i();
             writer.J("attributes");
-            this.f20254b.toJson(writer, data.a());
+            this.f20255b.toJson(writer, data.a());
             writer.s();
             return;
         }

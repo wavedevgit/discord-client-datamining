@@ -7,18 +7,18 @@ import kotlinx.coroutines.Job;
 public final class a implements o {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Lifecycle f24762d;
+    private final Lifecycle f24763d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Job f24763e;
+    private final Job f24764e;
 
     public a(Lifecycle lifecycle, Job job) {
-        this.f24762d = lifecycle;
-        this.f24763e = job;
+        this.f24763d = lifecycle;
+        this.f24764e = job;
     }
 
     public void a() {
-        Job.a.a(this.f24763e, null, 1, null);
+        Job.a.a(this.f24764e, null, 1, null);
     }
 
     @Override // androidx.lifecycle.DefaultLifecycleObserver
@@ -28,11 +28,11 @@ public final class a implements o {
 
     @Override // g5.o
     public void p() {
-        this.f24762d.d(this);
+        this.f24763d.d(this);
     }
 
     @Override // g5.o
     public void start() {
-        this.f24762d.a(this);
+        this.f24763d.a(this);
     }
 }

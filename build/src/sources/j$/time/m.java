@@ -12,30 +12,30 @@ import java.util.Objects;
 public final class m implements j$.time.temporal.k, j$.time.chrono.g, Serializable {
 
     /* renamed from: a  reason: collision with root package name */
-    public final LocalDateTime f30602a;
+    public final LocalDateTime f30603a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ZoneOffset f30603b;
+    public final ZoneOffset f30604b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final j f30604c;
+    public final j f30605c;
 
     @Override // j$.time.temporal.k
     public final j$.time.temporal.k h(long j10, j$.time.temporal.b bVar) {
         if (bVar != null) {
             if (bVar.compareTo(j$.time.temporal.b.DAYS) >= 0 && bVar != j$.time.temporal.b.FOREVER) {
-                return t(this.f30602a.h(j10, bVar), this.f30604c, this.f30603b);
+                return t(this.f30603a.h(j10, bVar), this.f30605c, this.f30604b);
             }
-            LocalDateTime h10 = this.f30602a.h(j10, bVar);
-            ZoneOffset zoneOffset = this.f30603b;
-            j jVar = this.f30604c;
+            LocalDateTime h10 = this.f30603a.h(j10, bVar);
+            ZoneOffset zoneOffset = this.f30604b;
+            j jVar = this.f30605c;
             Objects.requireNonNull(h10, "localDateTime");
             Objects.requireNonNull(zoneOffset, "offset");
             Objects.requireNonNull(jVar, "zone");
             if (jVar.t().f(h10).contains(zoneOffset)) {
                 return new m(h10, jVar, zoneOffset);
             }
-            return r(h10.q(zoneOffset), h10.f30488b.f30494d, jVar);
+            return r(h10.q(zoneOffset), h10.f30489b.f30495d, jVar);
         }
         bVar.getClass();
         return (m) h(j10, bVar);
@@ -59,8 +59,8 @@ public final class m implements j$.time.temporal.k, j$.time.chrono.g, Serializab
         } else {
             Object e10 = t10.e(localDateTime);
             j$.time.zone.a aVar = e10 instanceof j$.time.zone.a ? (j$.time.zone.a) e10 : null;
-            localDateTime = localDateTime.E(localDateTime.f30487a, 0L, 0L, Duration.r(aVar.f30632c.getTotalSeconds() - aVar.f30631b.getTotalSeconds(), 0).f30477a, 0L);
-            zoneOffset = aVar.f30632c;
+            localDateTime = localDateTime.E(localDateTime.f30488a, 0L, 0L, Duration.r(aVar.f30633c.getTotalSeconds() - aVar.f30632b.getTotalSeconds(), 0).f30478a, 0L);
+            zoneOffset = aVar.f30633c;
         }
         return new m(localDateTime, jVar, zoneOffset);
     }
@@ -71,13 +71,13 @@ public final class m implements j$.time.temporal.k, j$.time.chrono.g, Serializab
     }
 
     public m(LocalDateTime localDateTime, j jVar, ZoneOffset zoneOffset) {
-        this.f30602a = localDateTime;
-        this.f30603b = zoneOffset;
-        this.f30604c = jVar;
+        this.f30603a = localDateTime;
+        this.f30604b = zoneOffset;
+        this.f30605c = jVar;
     }
 
     public final m w(ZoneOffset zoneOffset) {
-        return (zoneOffset.equals(this.f30603b) || !this.f30604c.t().f(this.f30602a).contains(zoneOffset)) ? this : new m(this.f30602a, this.f30604c, zoneOffset);
+        return (zoneOffset.equals(this.f30604b) || !this.f30605c.t().f(this.f30603a).contains(zoneOffset)) ? this : new m(this.f30603a, this.f30605c, zoneOffset);
     }
 
     @Override // j$.time.temporal.TemporalAccessor
@@ -92,9 +92,9 @@ public final class m implements j$.time.temporal.k, j$.time.chrono.g, Serializab
     public final r i(n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
             if (nVar == j$.time.temporal.a.INSTANT_SECONDS || nVar == j$.time.temporal.a.OFFSET_SECONDS) {
-                return ((j$.time.temporal.a) nVar).f30607b;
+                return ((j$.time.temporal.a) nVar).f30608b;
             }
-            return this.f30602a.i(nVar);
+            return this.f30603a.i(nVar);
         }
         return nVar.t(this);
     }
@@ -102,12 +102,12 @@ public final class m implements j$.time.temporal.k, j$.time.chrono.g, Serializab
     @Override // j$.time.temporal.TemporalAccessor
     public final int g(n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
-            int i10 = l.f30601a[((j$.time.temporal.a) nVar).ordinal()];
+            int i10 = l.f30602a[((j$.time.temporal.a) nVar).ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
-                    return this.f30603b.getTotalSeconds();
+                    return this.f30604b.getTotalSeconds();
                 }
-                return this.f30602a.g(nVar);
+                return this.f30603a.g(nVar);
             }
             throw new DateTimeException("Invalid field 'InstantSeconds' for get() method, use getLong() instead");
         }
@@ -117,12 +117,12 @@ public final class m implements j$.time.temporal.k, j$.time.chrono.g, Serializab
     @Override // j$.time.temporal.TemporalAccessor
     public final long m(n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
-            int i10 = l.f30601a[((j$.time.temporal.a) nVar).ordinal()];
+            int i10 = l.f30602a[((j$.time.temporal.a) nVar).ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
-                    return this.f30603b.getTotalSeconds();
+                    return this.f30604b.getTotalSeconds();
                 }
-                return this.f30602a.m(nVar);
+                return this.f30603a.m(nVar);
             }
             return D();
         }
@@ -131,47 +131,47 @@ public final class m implements j$.time.temporal.k, j$.time.chrono.g, Serializab
 
     @Override // j$.time.chrono.g
     public final ZoneOffset n() {
-        return this.f30603b;
+        return this.f30604b;
     }
 
     @Override // j$.time.chrono.g
     public final j y() {
-        return this.f30604c;
+        return this.f30605c;
     }
 
     @Override // j$.time.chrono.g
     public final j$.time.chrono.c s() {
-        return this.f30602a;
+        return this.f30603a;
     }
 
     @Override // j$.time.chrono.g
     public final ChronoLocalDate l() {
-        return this.f30602a.f30487a;
+        return this.f30603a.f30488a;
     }
 
     @Override // j$.time.chrono.g
     public final LocalTime e() {
-        return this.f30602a.f30488b;
+        return this.f30603a.f30489b;
     }
 
     @Override // j$.time.chrono.g
     /* renamed from: x */
     public final m k(j$.time.temporal.l lVar) {
         if (lVar instanceof LocalDate) {
-            return t(LocalDateTime.x((LocalDate) lVar, this.f30602a.f30488b), this.f30604c, this.f30603b);
+            return t(LocalDateTime.x((LocalDate) lVar, this.f30603a.f30489b), this.f30605c, this.f30604b);
         }
         if (lVar instanceof LocalTime) {
-            return t(LocalDateTime.x(this.f30602a.f30487a, (LocalTime) lVar), this.f30604c, this.f30603b);
+            return t(LocalDateTime.x(this.f30603a.f30488a, (LocalTime) lVar), this.f30605c, this.f30604b);
         }
         if (lVar instanceof LocalDateTime) {
-            return t((LocalDateTime) lVar, this.f30604c, this.f30603b);
+            return t((LocalDateTime) lVar, this.f30605c, this.f30604b);
         }
         if (lVar instanceof OffsetDateTime) {
             OffsetDateTime offsetDateTime = (OffsetDateTime) lVar;
-            return t(offsetDateTime.toLocalDateTime(), this.f30604c, offsetDateTime.f30498b);
+            return t(offsetDateTime.toLocalDateTime(), this.f30605c, offsetDateTime.f30499b);
         } else if (lVar instanceof Instant) {
             Instant instant = (Instant) lVar;
-            return r(instant.getEpochSecond(), instant.getNano(), this.f30604c);
+            return r(instant.getEpochSecond(), instant.getNano(), this.f30605c);
         } else if (lVar instanceof ZoneOffset) {
             return w((ZoneOffset) lVar);
         } else {
@@ -183,22 +183,22 @@ public final class m implements j$.time.temporal.k, j$.time.chrono.g, Serializab
     public final j$.time.temporal.k b(long j10, n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
             j$.time.temporal.a aVar = (j$.time.temporal.a) nVar;
-            int i10 = l.f30601a[aVar.ordinal()];
+            int i10 = l.f30602a[aVar.ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
-                    return t(this.f30602a.b(j10, nVar), this.f30604c, this.f30603b);
+                    return t(this.f30603a.b(j10, nVar), this.f30605c, this.f30604b);
                 }
-                return w(ZoneOffset.ofTotalSeconds(aVar.f30607b.a(j10, aVar)));
+                return w(ZoneOffset.ofTotalSeconds(aVar.f30608b.a(j10, aVar)));
             }
-            return r(j10, this.f30602a.f30488b.f30494d, this.f30604c);
+            return r(j10, this.f30603a.f30489b.f30495d, this.f30605c);
         }
         return (m) nVar.C(this, j10);
     }
 
     @Override // j$.time.temporal.TemporalAccessor
     public final Object a(TemporalQuery temporalQuery) {
-        if (temporalQuery == o.f30624f) {
-            return this.f30602a.f30487a;
+        if (temporalQuery == o.f30625f) {
+            return this.f30603a.f30488a;
         }
         return super.a(temporalQuery);
     }
@@ -209,7 +209,7 @@ public final class m implements j$.time.temporal.k, j$.time.chrono.g, Serializab
         }
         if (obj instanceof m) {
             m mVar = (m) obj;
-            if (this.f30602a.equals(mVar.f30602a) && this.f30603b.equals(mVar.f30603b) && this.f30604c.equals(mVar.f30604c)) {
+            if (this.f30603a.equals(mVar.f30603a) && this.f30604b.equals(mVar.f30604b) && this.f30605c.equals(mVar.f30605c)) {
                 return true;
             }
         }
@@ -217,13 +217,13 @@ public final class m implements j$.time.temporal.k, j$.time.chrono.g, Serializab
     }
 
     public final int hashCode() {
-        return (this.f30602a.hashCode() ^ this.f30603b.hashCode()) ^ Integer.rotateLeft(this.f30604c.hashCode(), 3);
+        return (this.f30603a.hashCode() ^ this.f30604b.hashCode()) ^ Integer.rotateLeft(this.f30605c.hashCode(), 3);
     }
 
     public final String toString() {
-        String str = this.f30602a.toString() + this.f30603b.toString();
-        if (this.f30603b != this.f30604c) {
-            return str + '[' + this.f30604c.toString() + ']';
+        String str = this.f30603a.toString() + this.f30604b.toString();
+        if (this.f30604b != this.f30605c) {
+            return str + '[' + this.f30605c.toString() + ']';
         }
         return str;
     }

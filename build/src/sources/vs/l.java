@@ -10,7 +10,7 @@ import vs.h;
 public final class l implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final l f51854a = new l();
+    public static final l f51855a = new l();
 
     private l() {
     }

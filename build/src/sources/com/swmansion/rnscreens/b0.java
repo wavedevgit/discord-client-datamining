@@ -28,28 +28,28 @@ import kotlin.jvm.internal.SourceDebugExtension;
 public class b0 extends Fragment implements ScreenFragmentWrapper {
 
     /* renamed from: s  reason: collision with root package name */
-    public static final a f19099s = new a(null);
+    public static final a f19100s = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    public Screen f19100d;
+    public Screen f19101d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f19101e;
+    private final List f19102e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f19102i;
+    private boolean f19103i;
 
     /* renamed from: o  reason: collision with root package name */
-    private float f19103o;
+    private float f19104o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f19104p;
+    private boolean f19105p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f19105q;
+    private boolean f19106q;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f19106r;
+    private boolean f19107r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -71,34 +71,34 @@ public class b0 extends Fragment implements ScreenFragmentWrapper {
     public static final class b {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f19107d = new b("DID_APPEAR", 0);
+        public static final b f19108d = new b("DID_APPEAR", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final b f19108e = new b("WILL_APPEAR", 1);
+        public static final b f19109e = new b("WILL_APPEAR", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final b f19109i = new b("DID_DISAPPEAR", 2);
+        public static final b f19110i = new b("DID_DISAPPEAR", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        public static final b f19110o = new b("WILL_DISAPPEAR", 3);
+        public static final b f19111o = new b("WILL_DISAPPEAR", 3);
 
         /* renamed from: p  reason: collision with root package name */
-        private static final /* synthetic */ b[] f19111p;
+        private static final /* synthetic */ b[] f19112p;
 
         /* renamed from: q  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f19112q;
+        private static final /* synthetic */ EnumEntries f19113q;
 
         static {
             b[] a10 = a();
-            f19111p = a10;
-            f19112q = hs.a.a(a10);
+            f19112p = a10;
+            f19113q = hs.a.a(a10);
         }
 
         private b(String str, int i10) {
         }
 
         private static final /* synthetic */ b[] a() {
-            return new b[]{f19107d, f19108e, f19109i, f19110o};
+            return new b[]{f19108d, f19109e, f19110i, f19111o};
         }
 
         public static b valueOf(String str) {
@@ -106,7 +106,7 @@ public class b0 extends Fragment implements ScreenFragmentWrapper {
         }
 
         public static b[] values() {
-            return (b[]) f19111p.clone();
+            return (b[]) f19112p.clone();
         }
     }
 
@@ -130,62 +130,62 @@ public class b0 extends Fragment implements ScreenFragmentWrapper {
     public /* synthetic */ class d {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f19113a;
+        public static final /* synthetic */ int[] f19114a;
 
         static {
             int[] iArr = new int[b.values().length];
             try {
-                iArr[b.f19108e.ordinal()] = 1;
+                iArr[b.f19109e.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[b.f19107d.ordinal()] = 2;
+                iArr[b.f19108d.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[b.f19110o.ordinal()] = 3;
+                iArr[b.f19111o.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr[b.f19109i.ordinal()] = 4;
+                iArr[b.f19110i.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
-            f19113a = iArr;
+            f19114a = iArr;
         }
     }
 
     public b0() {
-        this.f19101e = new ArrayList();
-        this.f19103o = -1.0f;
-        this.f19104p = true;
-        this.f19105q = true;
+        this.f19102e = new ArrayList();
+        this.f19104o = -1.0f;
+        this.f19105p = true;
+        this.f19106q = true;
         throw new IllegalStateException("Screen fragments should never be restored. Follow instructions from https://github.com/software-mansion/react-native-screens/issues/17#issuecomment-424704067 to properly configure your main activity.");
     }
 
     private final void B() {
-        A(b.f19107d, this);
+        A(b.f19108d, this);
         F(1.0f, false);
     }
 
     private final void C() {
-        A(b.f19109i, this);
+        A(b.f19110i, this);
         F(1.0f, true);
     }
 
     private final void D() {
-        A(b.f19108e, this);
+        A(b.f19109e, this);
         F(0.0f, false);
     }
 
     private final void E() {
-        A(b.f19110o, this);
+        A(b.f19111o, this);
         F(0.0f, true);
     }
 
     private final void G(final boolean z10) {
-        this.f19106r = !z10;
+        this.f19107r = !z10;
         Fragment parentFragment = getParentFragment();
-        if (parentFragment != null && (!(parentFragment instanceof b0) || ((b0) parentFragment).f19106r)) {
+        if (parentFragment != null && (!(parentFragment instanceof b0) || ((b0) parentFragment).f19107r)) {
             return;
         }
         if (isResumed()) {
@@ -214,9 +214,9 @@ public class b0 extends Fragment implements ScreenFragmentWrapper {
     private final void L() {
         FragmentActivity activity = getActivity();
         if (activity == null) {
-            this.f19102i = true;
+            this.f19103i = true;
         } else {
-            y0.f19411a.p(h(), activity, o());
+            y0.f19412a.p(h(), activity, o());
         }
     }
 
@@ -231,7 +231,7 @@ public class b0 extends Fragment implements ScreenFragmentWrapper {
                 Screen h10 = r0Var.h();
                 fragmentWrapper.e(event);
                 int surfaceId = UIManagerHelper.getSurfaceId(h10);
-                int i10 = d.f19113a[event.ordinal()];
+                int i10 = d.f19114a[event.ordinal()];
                 if (i10 != 1) {
                     if (i10 != 2) {
                         if (i10 != 3) {
@@ -262,12 +262,12 @@ public class b0 extends Fragment implements ScreenFragmentWrapper {
 
     public void F(float f10, boolean z10) {
         boolean z11;
-        if (!(this instanceof r0) || this.f19103o == f10) {
+        if (!(this instanceof r0) || this.f19104o == f10) {
             return;
         }
         float max = Math.max(0.0f, Math.min(1.0f, f10));
-        this.f19103o = max;
-        short a10 = f19099s.a(max);
+        this.f19104o = max;
+        short a10 = f19100s.a(max);
         r0 r0Var = (r0) this;
         ScreenContainer container = r0Var.h().getContainer();
         if (container instanceof ScreenStack) {
@@ -281,7 +281,7 @@ public class b0 extends Fragment implements ScreenFragmentWrapper {
         ReactContext reactContext = (ReactContext) context;
         EventDispatcher eventDispatcherForReactTag = UIManagerHelper.getEventDispatcherForReactTag(reactContext, r0Var.h().getId());
         if (eventDispatcherForReactTag != null) {
-            eventDispatcherForReactTag.dispatchEvent(new qn.j(UIManagerHelper.getSurfaceId(reactContext), r0Var.h().getId(), this.f19103o, z10, z12, a10));
+            eventDispatcherForReactTag.dispatchEvent(new qn.j(UIManagerHelper.getSurfaceId(reactContext), r0Var.h().getId(), this.f19104o, z10, z12, a10));
         }
     }
 
@@ -295,7 +295,7 @@ public class b0 extends Fragment implements ScreenFragmentWrapper {
 
     public void K(Screen screen) {
         Intrinsics.checkNotNullParameter(screen, "<set-?>");
-        this.f19100d = screen;
+        this.f19101d = screen;
     }
 
     @Override // com.swmansion.rnscreens.j
@@ -324,28 +324,28 @@ public class b0 extends Fragment implements ScreenFragmentWrapper {
     @Override // com.swmansion.rnscreens.z
     public void e(b event) {
         Intrinsics.checkNotNullParameter(event, "event");
-        int i10 = d.f19113a[event.ordinal()];
+        int i10 = d.f19114a[event.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
                     if (i10 == 4) {
-                        this.f19105q = true;
+                        this.f19106q = true;
                         return;
                     }
                     throw new as.p();
                 }
-                this.f19104p = true;
+                this.f19105p = true;
                 return;
             }
-            this.f19105q = false;
+            this.f19106q = false;
             return;
         }
-        this.f19104p = false;
+        this.f19105p = false;
     }
 
     @Override // com.swmansion.rnscreens.ScreenFragmentWrapper
     public Screen h() {
-        Screen screen = this.f19100d;
+        Screen screen = this.f19101d;
         if (screen != null) {
             return screen;
         }
@@ -383,7 +383,7 @@ public class b0 extends Fragment implements ScreenFragmentWrapper {
 
     @Override // com.swmansion.rnscreens.ScreenFragmentWrapper
     public List k() {
-        return this.f19101e;
+        return this.f19102e;
     }
 
     @Override // com.swmansion.rnscreens.ScreenFragmentWrapper
@@ -461,34 +461,34 @@ public class b0 extends Fragment implements ScreenFragmentWrapper {
     @Override // androidx.fragment.app.Fragment
     public void onResume() {
         super.onResume();
-        if (this.f19102i) {
-            this.f19102i = false;
-            y0.f19411a.p(h(), j(), o());
+        if (this.f19103i) {
+            this.f19103i = false;
+            y0.f19412a.p(h(), j(), o());
         }
     }
 
     public boolean y(b event) {
         Intrinsics.checkNotNullParameter(event, "event");
-        int i10 = d.f19113a[event.ordinal()];
+        int i10 = d.f19114a[event.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
                     if (i10 == 4) {
-                        if (!this.f19105q) {
+                        if (!this.f19106q) {
                             return true;
                         }
                         return false;
                     }
                     throw new as.p();
-                } else if (!this.f19104p) {
+                } else if (!this.f19105p) {
                     return true;
                 } else {
                     return false;
                 }
             }
-            return this.f19105q;
+            return this.f19106q;
         }
-        return this.f19104p;
+        return this.f19105p;
     }
 
     public void z() {
@@ -504,10 +504,10 @@ public class b0 extends Fragment implements ScreenFragmentWrapper {
 
     public b0(Screen screenView) {
         Intrinsics.checkNotNullParameter(screenView, "screenView");
-        this.f19101e = new ArrayList();
-        this.f19103o = -1.0f;
-        this.f19104p = true;
-        this.f19105q = true;
+        this.f19102e = new ArrayList();
+        this.f19104o = -1.0f;
+        this.f19105p = true;
+        this.f19106q = true;
         K(screenView);
     }
 }

@@ -1,287 +1,140 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = metroImportDefault;
-    var2 = exports;
-    var5 = dependencyMap;
-    var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var3);
-    var0 = 0;
-    var3 = var5[var0];
-    var0 = undefined;
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot0 = var3;
-    var3 = 1;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot1 = var3;
-    var1 = function() { // Environment: var1
-        var4 = function() {
-            var2 = this;
-            var3 = _closure1_slot0;
-            var1 = _closure2_slot0;
-            var0 = undefined;
-            var1 = var3.bind(var0)(var2, var1);
-            var1 = null;
-            var2.thresholds = var1;
-            return var0;
-        };
-        var _closure2_slot0 = var4;
-        var3 = _closure1_slot1;
-        var0 = {};
-        var2 = 'setAgeRangeThresholds';
-        var0.key = var2;
-        var2 = function arg0() {
-            _fun114724: for (var _fun114724_ip = 0;;) switch (_fun114724_ip) {
-                case 0:
-                    var3 = arg0;
-                    var2 = 0;
-                    var1 = var3[var2];
-                    var0 = undefined;
-                    if (!(var0 !== var1)) {
-                        _fun114724_ip = 318;
-                        continue _fun114724
-                    }
-                case 18:
-                    var4 = var3[var2];
-                    var1 = null;
-                    if (!(var1 !== var4)) {
-                        _fun114724_ip = 318;
-                        continue _fun114724
-                    }
-                case 31:
-                    var1 = var3[var2];
-                    var4 = 1;
-                    if (!(!(var1 < var4))) {
-                        _fun114724_ip = 282;
-                        continue _fun114724
-                    }
-                case 45:
-                    var5 = var3[var2];
-                    var1 = 18;
-                    if (!(!(var5 > var1))) {
-                        _fun114724_ip = 282;
-                        continue _fun114724
-                    }
-                case 59:
-                    var1 = var3.length;
-                    var1 = var4 < var1;
-                    var5 = var4;
-                    if (!var1) {
-                        _fun114724_ip = 113;
-                        continue _fun114724
-                    }
-                case 74:
-                    var6 = var3[var5];
-                    var1 = var5 - var4;
-                    var1 = var3[var1];
-                    if (!(var0 !== var6)) {
-                        _fun114724_ip = 101;
-                        continue _fun114724
-                    }
-                case 90:
-                    if (!(var0 !== var1)) {
-                        _fun114724_ip = 101;
-                        continue _fun114724
-                    }
-                case 94:
-                    if (!(!(var6 <= var1))) {
-                        _fun114724_ip = 246;
-                        continue _fun114724
-                    }
-                case 101:
-                    var5 = var5 + 1;
-                    var1 = var3.length;
-                    if (var5 < var1) {
-                        _fun114724_ip = 74;
-                        continue _fun114724
-                    }
-                case 113:
-                    var1 = var3.length;
-                    var5 = var4 < var1;
-                    var1 = 2;
-                    var6 = var4;
-                    if (!var5) {
-                        _fun114724_ip = 171;
-                        continue _fun114724
-                    }
-                case 131:
-                    var7 = var3[var6];
-                    var5 = var6 - var4;
-                    var5 = var3[var5];
-                    if (!(var0 !== var7)) {
-                        _fun114724_ip = 159;
-                        continue _fun114724
-                    }
-                case 147:
-                    if (!(var0 !== var5)) {
-                        _fun114724_ip = 159;
-                        continue _fun114724
-                    }
-                case 151:
-                    var5 = var7 - var5;
-                    if (!(!(var5 < var1))) {
-                        _fun114724_ip = 210;
-                        continue _fun114724
-                    }
-                case 159:
-                    var6 = var6 + 1;
-                    var5 = var3.length;
-                    if (var6 < var5) {
-                        _fun114724_ip = 131;
-                        continue _fun114724
-                    }
-                case 171:
-                    var5 = var3[var2];
-                    var2 = new Array(3);
-                    var2[0] = var5;
-                    var4 = var3[var4];
-                    var2[1] = var4;
-                    var1 = var3[var1];
-                    var2[2] = var1;
-                    var1 = this;
-                    var1.thresholds = var2;
-                    return var0;
-                case 210:
-                    var0 = global;
-                    var2 = var0.Error;
-                    var0 = var2.prototype;
-                    var1 = Object.create(var0, {
-                        constructor: {
-                            value: var2
-                        }
-                    });
-                    var9 = 'PlayAgeRangeDeclaration: Age range thresholds must be at least 2 years apart';
-                    var10 = var1;
-                    var0 = new var10[var2](var9, var8);
-                    var0 = var0 instanceof Object ? var0 : var1;
-                    throw var0;
-                case 246:
-                    var0 = global;
-                    var2 = var0.Error;
-                    var0 = var2.prototype;
-                    var1 = Object.create(var0, {
-                        constructor: {
-                            value: var2
-                        }
-                    });
-                    var9 = 'PlayAgeRangeDeclaration: Age range thresholds must be in ascending order';
-                    var10 = var1;
-                    var0 = new var10[var2](var9, var8);
-                    var0 = var0 instanceof Object ? var0 : var1;
-                    throw var0;
-                case 282:
-                    var0 = global;
-                    var2 = var0.Error;
-                    var0 = var2.prototype;
-                    var1 = Object.create(var0, {
-                        constructor: {
-                            value: var2
-                        }
-                    });
-                    var9 = 'PlayAgeRangeDeclaration: setAgeRangeThresholds: Age range thresholds must be between 1 and 18 (inclusive)';
-                    var10 = var1;
-                    var0 = new var10[var2](var9, var8);
-                    var0 = var0 instanceof Object ? var0 : var1;
-                    throw var0;
-                case 318:
-                    var0 = global;
-                    var2 = var0.Error;
-                    var0 = var2.prototype;
-                    var1 = Object.create(var0, {
-                        constructor: {
-                            value: var2
-                        }
-                    });
-                    var9 = 'PlayAgeRangeDeclaration: First threshold age is required';
-                    var10 = var1;
-                    var0 = new var10[var2](var9, var8);
-                    var0 = var0 instanceof Object ? var0 : var1;
-                    throw var0;
+    _fun114755: for (var _fun114755_ip = 0;;) switch (_fun114755_ip) {
+        case 0:
+            var11 = require;
+            var16 = exports;
+            var12 = dependencyMap;
+            var7 = global;
+            var1 = var11;
+            var6 = var16;
+            var0 = var12;
+            var3 = undefined;
+            var8 = undefined;
+            var9 = undefined;
+            var4 = undefined;
+            var5 = undefined;
+            var2 = global;
+            var15 = var2.Object;
+            var14 = var15.defineProperty;
+            var13 = {};
+            var10 = true;
+            var13.value = var10;
+            var10 = '__esModule';
+            var10 = var14.bind(var15)(var16, var10, var13);
+            var10 = 0;
+            var10 = var12[var10];
+            var10 = var11.bind(var3)(var10);
+            var9 = var10.TurboModuleRegistry;
+        case 80: // try_start_0
+            var11 = var9;
+            var10 = var11.getEnforcing;
+            var9 = 'NitroModules';
+            var8 = var10.bind(var11)(var9);
+        case 98: // try_end0
+            var9 = var8;
+            var8 = var9.install;
+            var9 = var8.bind(var9)();
+            var4 = var9;
+            var8 = null;
+            if (!(var8 == var9)) {
+                _fun114755_ip = 244;
+                continue _fun114755
             }
-        };
-        var0.value = var2;
-        var2 = new Array(2);
-        var2[0] = var0;
-        var0 = {};
-        var5 = 'getThresholds';
-        var0.key = var5;
-        var5 = function() {
-            _fun114725: for (var _fun114725_ip = 0;;) switch (_fun114725_ip) {
-                case 0:
-                    var0 = this;
-                    var2 = var0.thresholds;
-                    var1 = null;
-                    if (!(var1 !== var2)) {
-                        _fun114725_ip = 23;
-                        continue _fun114725
-                    }
-                case 15:
-                    var0 = var0.thresholds;
-                    return var0;
-                case 23:
-                    var0 = global;
-                    var2 = var0.Error;
-                    var0 = var2.prototype;
-                    var1 = Object.create(var0, {
-                        constructor: {
-                            value: var2
-                        }
-                    });
-                    var3 = 'PlayAgeRangeDeclaration: ageRangeThresholds not set';
-                    var4 = var1;
-                    var0 = new var4[var2](var3, var2);
-                    var0 = var0 instanceof Object ? var0 : var1;
-                    throw var0;
+        case 123:
+            var7 = var7.NitroModulesProxy;
+            var5 = var7;
+            if (!(var8 != var7)) {
+                _fun114755_ip = 163;
+                continue _fun114755
             }
-        };
-        var0.value = var5;
-        var2[1] = var0;
-        var0 = {};
-        var5 = 'getInstance';
-        var0.key = var5;
-        var1 = function() {
-            _fun114726: for (var _fun114726_ip = 0;;) switch (_fun114726_ip) {
-                case 0:
-                    var1 = _closure2_slot0;
-                    var1 = var1.instance;
-                    if (var1) {
-                        _fun114726_ip = 46;
-                        continue _fun114726
-                    }
-                case 16:
-                    var2 = _closure2_slot0;
-                    var1 = var2.prototype;
-                    var3 = Object.create(var1, {
-                        constructor: {
-                            value: var2
+        case 138:
+            var6.NitroModules = var5;
+            var5 = function() {
+                _fun114756: for (var _fun114756_ip = 0;;) switch (_fun114756_ip) {
+                    case 0:
+                        var1 = global;
+                        var0 = var1.globalThis;
+                        var0 = var0.__nitroJsiCache;
+                        var1 = var1.globalThis;
+                        var2 = var1.__nitroDispatcher;
+                        var1 = null;
+                        var0 = var1 != var0;
+                        if (!var0) {
+                            _fun114756_ip = 43;
+                            continue _fun114756
                         }
-                    });
-                    var4 = var3;
-                    var1 = new var4[var2](var3);
-                    var1 = var1 instanceof Object ? var1 : var3;
-                    var2.instance = var1;
-                case 46:
-                    var0 = _closure2_slot0;
-                    var0 = var0.instance;
-                    return var0;
-            }
-        };
-        var0.value = var1;
-        var1 = new Array(1);
-        var1[0] = var0;
-        var0 = undefined;
-        var0 = var3.bind(var0)(var4, var2, var1);
-        return var0;
-    };
-    var3 = var1.bind(var0)();
-    var1 = var3.getInstance;
-    var1 = var1.bind(var3)();
-    var2.ageRangeThresholdManager = var1;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7]);
+                    case 39:
+                        var0 = var1 != var2;
+                    case 43:
+                        return var0;
+                }
+            };
+            var6.isRuntimeAlive = var5;
+            return var3;
+        case 163:
+            var7 = var2.Error;
+            var5 = var7.prototype;
+            var6 = Object.create(var5, {
+                constructor: {
+                    value: var7
+                }
+            });
+            var19 = 'NitroModules was installed, but `global.NitroModulesProxy` was null!';
+            var20 = var6;
+            var5 = new var20[var7](var19, var18);
+            var7 = var5 instanceof Object ? var5 : var6;
+            var6 = var1;
+            var8 = var0;
+            var5 = 1;
+            var5 = var8[var5];
+            var5 = var6.bind(var3)(var5);
+            var5 = var5.ModuleNotFoundError;
+            var6 = var5.prototype;
+            var6 = Object.create(var6, {
+                constructor: {
+                    value: var5
+                }
+            });
+            var20 = var6;
+            var19 = var7;
+            var5 = new var20[var5](var19, var18);
+            var5 = var5 instanceof Object ? var5 : var6;
+            throw var5;
+        case 244:
+            var5 = var2.Error;
+            var6 = var4;
+            var2 = var2.HermesInternal;
+            var4 = var2.concat;
+            var2 = 'Failed to install Nitro: ';
+            var19 = var4.bind(var2)(var6);
+            var4 = var5.prototype;
+            var4 = Object.create(var4, {
+                constructor: {
+                    value: var5
+                }
+            });
+            var20 = var4;
+            var2 = new var20[var5](var19, var18);
+            var2 = var2 instanceof Object ? var2 : var4;
+            throw var2;
+        case 297: // catch_target0
+            CatchBlockStart(arg_register = 2);
+            var4 = var0;
+            var0 = 1;
+            var0 = var4[var0];
+            var0 = var1.bind(var3)(var0);
+            var0 = var0.ModuleNotFoundError;
+            var1 = var0.prototype;
+            var1 = Object.create(var1, {
+                constructor: {
+                    value: var0
+                }
+            });
+            var20 = var1;
+            var19 = var2;
+            var0 = new var20[var0](var19, var18);
+            var0 = var0 instanceof Object ? var0 : var1;
+            throw var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 14684]);

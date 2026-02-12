@@ -5,10 +5,10 @@ import rp.m;
 public final class o implements m.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final n f47674a;
+    private final n f47675a;
 
     o(n nVar) {
-        this.f47674a = nVar;
+        this.f47675a = nVar;
     }
 
     public static lr.h a(n nVar) {
@@ -17,6 +17,6 @@ public final class o implements m.a {
 
     @Override // rp.m.a
     public m create() {
-        return this.f47674a.b();
+        return this.f47675a.b();
     }
 }

@@ -7,7 +7,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private Function0 f47736a = new Function0() { // from class: rq.b
+    private Function0 f47737a = new Function0() { // from class: rq.b
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             Unit d10;
@@ -18,15 +18,15 @@ public final class c {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit d() {
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public final Function0 b() {
-        return this.f47736a;
+        return this.f47737a;
     }
 
     public final void c(Function0 function0) {
         Intrinsics.checkNotNullParameter(function0, "<set-?>");
-        this.f47736a = function0;
+        this.f47737a = function0;
     }
 }

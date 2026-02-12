@@ -12,42 +12,42 @@ public class h extends i {
     public static final Parcelable.Creator<h> CREATOR = new o1();
 
     /* renamed from: d  reason: collision with root package name */
-    private final m f54646d;
+    private final m f54647d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f54647e;
+    private final String f54648e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f54648i;
+    private final int f54649i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h(int i10, String str, int i11) {
         try {
-            this.f54646d = m.d(i10);
-            this.f54647e = str;
-            this.f54648i = i11;
+            this.f54647d = m.d(i10);
+            this.f54648e = str;
+            this.f54649i = i11;
         } catch (m.a e10) {
             throw new IllegalArgumentException(e10);
         }
     }
 
     public m b() {
-        return this.f54646d;
+        return this.f54647d;
     }
 
     public int c() {
-        return this.f54646d.a();
+        return this.f54647d.a();
     }
 
     public String d() {
-        return this.f54647e;
+        return this.f54648e;
     }
 
     public final JSONObject e() {
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("code", this.f54646d.a());
-            String str = this.f54647e;
+            jSONObject.put("code", this.f54647d.a());
+            String str = this.f54648e;
             if (str != null) {
                 jSONObject.put("message", str);
                 return jSONObject;
@@ -63,20 +63,20 @@ public class h extends i {
             return false;
         }
         h hVar = (h) obj;
-        if (!hf.o.a(this.f54646d, hVar.f54646d) || !hf.o.a(this.f54647e, hVar.f54647e) || !hf.o.a(Integer.valueOf(this.f54648i), Integer.valueOf(hVar.f54648i))) {
+        if (!hf.o.a(this.f54647d, hVar.f54647d) || !hf.o.a(this.f54648e, hVar.f54648e) || !hf.o.a(Integer.valueOf(this.f54649i), Integer.valueOf(hVar.f54649i))) {
             return false;
         }
         return true;
     }
 
     public int hashCode() {
-        return hf.o.b(this.f54646d, this.f54647e, Integer.valueOf(this.f54648i));
+        return hf.o.b(this.f54647d, this.f54648e, Integer.valueOf(this.f54649i));
     }
 
     public String toString() {
         com.google.android.gms.internal.fido.f0 a10 = com.google.android.gms.internal.fido.h0.a(this);
-        a10.a("errorCode", this.f54646d.a());
-        String str = this.f54647e;
+        a10.a("errorCode", this.f54647d.a());
+        String str = this.f54648e;
         if (str != null) {
             a10.b("errorMessage", str);
         }
@@ -88,7 +88,7 @@ public class h extends i {
         int a10 = jf.c.a(parcel);
         jf.c.l(parcel, 2, c());
         jf.c.s(parcel, 3, d(), false);
-        jf.c.l(parcel, 4, this.f54648i);
+        jf.c.l(parcel, 4, this.f54649i);
         jf.c.b(parcel, a10);
     }
 }

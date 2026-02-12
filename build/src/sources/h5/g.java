@@ -6,14 +6,14 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g implements l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final View f26194a;
+    private final View f26195a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f26195b;
+    private final boolean f26196b;
 
     public g(View view, boolean z10) {
-        this.f26194a = view;
-        this.f26195b = z10;
+        this.f26195a = view;
+        this.f26196b = z10;
     }
 
     public boolean equals(Object obj) {
@@ -32,12 +32,12 @@ public final class g implements l {
 
     @Override // h5.l
     public boolean f() {
-        return this.f26195b;
+        return this.f26196b;
     }
 
     @Override // h5.l
     public View getView() {
-        return this.f26194a;
+        return this.f26195a;
     }
 
     public int hashCode() {

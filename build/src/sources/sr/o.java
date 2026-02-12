@@ -3,10 +3,10 @@ package sr;
 public class o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f48336a;
+    private final String f48337a;
 
     o(String str) {
-        this.f48336a = str;
+        this.f48337a = str;
     }
 
     public static o b(String str) {
@@ -22,7 +22,7 @@ public class o {
         if (a10 != null) {
             return a10;
         }
-        throw new NullPointerException(this.f48336a);
+        throw new NullPointerException(this.f48337a);
     }
 
     public void d(q qVar, Object obj) {
@@ -34,16 +34,16 @@ public class o {
             return true;
         }
         if (obj != null && getClass() == obj.getClass()) {
-            return this.f48336a.equals(((o) obj).f48336a);
+            return this.f48337a.equals(((o) obj).f48337a);
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f48336a.hashCode();
+        return this.f48337a.hashCode();
     }
 
     public String toString() {
-        return "Prop{name='" + this.f48336a + "'}";
+        return "Prop{name='" + this.f48337a + "'}";
     }
 }

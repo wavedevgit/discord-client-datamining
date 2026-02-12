@@ -67,7 +67,7 @@ public final class ActivityInstanceEmbed {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new f(n2.f50032a);
+        return new f(n2.f50033a);
     }
 
     /* renamed from: copy-Nxq1Yvc$default  reason: not valid java name */
@@ -104,7 +104,7 @@ public final class ActivityInstanceEmbed {
         }
         compositeEncoder.k(serialDescriptor, 3, AppMessageEmbedImpl$$serializer.INSTANCE, activityInstanceEmbed.appMessageEmbedModel);
         if (compositeEncoder.z(serialDescriptor, 4) || activityInstanceEmbed.participantsDescription != null) {
-            compositeEncoder.o(serialDescriptor, 4, n2.f50032a, activityInstanceEmbed.participantsDescription);
+            compositeEncoder.o(serialDescriptor, 4, n2.f50033a, activityInstanceEmbed.participantsDescription);
         }
     }
 

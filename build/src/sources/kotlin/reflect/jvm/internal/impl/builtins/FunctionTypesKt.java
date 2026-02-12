@@ -46,7 +46,7 @@ public final class FunctionTypesKt {
     }
 
     private static final boolean b(KotlinType kotlinType) {
-        if (kotlinType.getAnnotations().mo1198findAnnotation(StandardNames.FqNames.extensionFunctionType) != null) {
+        if (kotlinType.getAnnotations().mo1197findAnnotation(StandardNames.FqNames.extensionFunctionType) != null) {
             return true;
         }
         return false;
@@ -54,11 +54,11 @@ public final class FunctionTypesKt {
 
     public static final int contextFunctionTypeParamsCount(@NotNull KotlinType kotlinType) {
         Intrinsics.checkNotNullParameter(kotlinType, "<this>");
-        AnnotationDescriptor mo1198findAnnotation = kotlinType.getAnnotations().mo1198findAnnotation(StandardNames.FqNames.contextFunctionTypeParams);
-        if (mo1198findAnnotation == null) {
+        AnnotationDescriptor mo1197findAnnotation = kotlinType.getAnnotations().mo1197findAnnotation(StandardNames.FqNames.contextFunctionTypeParams);
+        if (mo1197findAnnotation == null) {
             return 0;
         }
-        ConstantValue constantValue = (ConstantValue) o0.j(mo1198findAnnotation.getAllValueArguments(), StandardNames.CONTEXT_FUNCTION_TYPE_PARAMETER_COUNT_NAME);
+        ConstantValue constantValue = (ConstantValue) o0.j(mo1197findAnnotation.getAllValueArguments(), StandardNames.CONTEXT_FUNCTION_TYPE_PARAMETER_COUNT_NAME);
         Intrinsics.checkNotNull(constantValue, "null cannot be cast to non-null type org.jetbrains.kotlin.resolve.constants.IntValue");
         return ((IntValue) constantValue).getValue().intValue();
     }
@@ -102,11 +102,11 @@ public final class FunctionTypesKt {
         StringValue stringValue;
         String value;
         Intrinsics.checkNotNullParameter(kotlinType, "<this>");
-        AnnotationDescriptor mo1198findAnnotation = kotlinType.getAnnotations().mo1198findAnnotation(StandardNames.FqNames.parameterName);
-        if (mo1198findAnnotation == null) {
+        AnnotationDescriptor mo1197findAnnotation = kotlinType.getAnnotations().mo1197findAnnotation(StandardNames.FqNames.parameterName);
+        if (mo1197findAnnotation == null) {
             return null;
         }
-        Object R0 = CollectionsKt.R0(mo1198findAnnotation.getAllValueArguments().values());
+        Object R0 = CollectionsKt.R0(mo1197findAnnotation.getAllValueArguments().values());
         if (R0 instanceof StringValue) {
             stringValue = (StringValue) R0;
         } else {
@@ -208,9 +208,9 @@ public final class FunctionTypesKt {
 
     public static final FunctionTypeKind getFunctionTypeKind(@NotNull KotlinType kotlinType) {
         Intrinsics.checkNotNullParameter(kotlinType, "<this>");
-        ClassifierDescriptor mo1202getDeclarationDescriptor = kotlinType.getConstructor().mo1202getDeclarationDescriptor();
-        if (mo1202getDeclarationDescriptor != null) {
-            return getFunctionTypeKind(mo1202getDeclarationDescriptor);
+        ClassifierDescriptor mo1201getDeclarationDescriptor = kotlinType.getConstructor().mo1201getDeclarationDescriptor();
+        if (mo1201getDeclarationDescriptor != null) {
+            return getFunctionTypeKind(mo1201getDeclarationDescriptor);
         }
         return null;
     }
@@ -260,8 +260,8 @@ public final class FunctionTypesKt {
 
     public static final boolean isBuiltinFunctionalType(@NotNull KotlinType kotlinType) {
         Intrinsics.checkNotNullParameter(kotlinType, "<this>");
-        ClassifierDescriptor mo1202getDeclarationDescriptor = kotlinType.getConstructor().mo1202getDeclarationDescriptor();
-        if (mo1202getDeclarationDescriptor == null || !isBuiltinFunctionalClassDescriptor(mo1202getDeclarationDescriptor)) {
+        ClassifierDescriptor mo1201getDeclarationDescriptor = kotlinType.getConstructor().mo1201getDeclarationDescriptor();
+        if (mo1201getDeclarationDescriptor == null || !isBuiltinFunctionalClassDescriptor(mo1201getDeclarationDescriptor)) {
             return false;
         }
         return true;

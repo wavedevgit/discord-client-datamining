@@ -7,13 +7,13 @@ public enum YogaWrap {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f12182d;
+    private final int f12183d;
 
     YogaWrap(int i10) {
-        this.f12182d = i10;
+        this.f12183d = i10;
     }
 
     public int d() {
-        return this.f12182d;
+        return this.f12183d;
     }
 }

@@ -84,10 +84,10 @@ public final class RoleIcon {
 
     public static final /* synthetic */ void write$Self$chat_release(RoleIcon roleIcon, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         if (compositeEncoder.z(serialDescriptor, 0) || roleIcon.source != null) {
-            compositeEncoder.o(serialDescriptor, 0, n2.f50032a, roleIcon.source);
+            compositeEncoder.o(serialDescriptor, 0, n2.f50033a, roleIcon.source);
         }
         if (compositeEncoder.z(serialDescriptor, 1) || roleIcon.unicodeEmoji != null) {
-            compositeEncoder.o(serialDescriptor, 1, n2.f50032a, roleIcon.unicodeEmoji);
+            compositeEncoder.o(serialDescriptor, 1, n2.f50033a, roleIcon.unicodeEmoji);
         }
         compositeEncoder.y(serialDescriptor, 2, roleIcon.name);
         compositeEncoder.w(serialDescriptor, 3, roleIcon.size);

@@ -13,22 +13,22 @@ import org.jetbrains.annotations.NotNull;
 public final class JavaTypeAttributes extends ErasureTypeAttributes {
 
     /* renamed from: d  reason: collision with root package name */
-    private final TypeUsage f33001d;
+    private final TypeUsage f33002d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final JavaTypeFlexibility f33002e;
+    private final JavaTypeFlexibility f33003e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean f33003f;
+    private final boolean f33004f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f33004g;
+    private final boolean f33005g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Set f33005h;
+    private final Set f33006h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final SimpleType f33006i;
+    private final SimpleType f33007i;
 
     public /* synthetic */ JavaTypeAttributes(TypeUsage typeUsage, JavaTypeFlexibility javaTypeFlexibility, boolean z10, boolean z11, Set set, SimpleType simpleType, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(typeUsage, (i10 & 2) != 0 ? JavaTypeFlexibility.INFLEXIBLE : javaTypeFlexibility, (i10 & 4) != 0 ? false : z10, (i10 & 8) != 0 ? false : z11, (i10 & 16) != 0 ? null : set, (i10 & 32) != 0 ? null : simpleType);
@@ -36,23 +36,23 @@ public final class JavaTypeAttributes extends ErasureTypeAttributes {
 
     public static /* synthetic */ JavaTypeAttributes copy$default(JavaTypeAttributes javaTypeAttributes, TypeUsage typeUsage, JavaTypeFlexibility javaTypeFlexibility, boolean z10, boolean z11, Set set, SimpleType simpleType, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            typeUsage = javaTypeAttributes.f33001d;
+            typeUsage = javaTypeAttributes.f33002d;
         }
         if ((i10 & 2) != 0) {
-            javaTypeFlexibility = javaTypeAttributes.f33002e;
+            javaTypeFlexibility = javaTypeAttributes.f33003e;
         }
         if ((i10 & 4) != 0) {
-            z10 = javaTypeAttributes.f33003f;
+            z10 = javaTypeAttributes.f33004f;
         }
         if ((i10 & 8) != 0) {
-            z11 = javaTypeAttributes.f33004g;
+            z11 = javaTypeAttributes.f33005g;
         }
         Set set2 = set;
         if ((i10 & 16) != 0) {
-            set2 = javaTypeAttributes.f33005h;
+            set2 = javaTypeAttributes.f33006h;
         }
         if ((i10 & 32) != 0) {
-            simpleType = javaTypeAttributes.f33006i;
+            simpleType = javaTypeAttributes.f33007i;
         }
         Set set3 = set2;
         SimpleType simpleType2 = simpleType;
@@ -72,7 +72,7 @@ public final class JavaTypeAttributes extends ErasureTypeAttributes {
             return false;
         }
         JavaTypeAttributes javaTypeAttributes = (JavaTypeAttributes) obj;
-        if (!Intrinsics.areEqual(javaTypeAttributes.getDefaultType(), getDefaultType()) || javaTypeAttributes.getHowThisTypeIsUsed() != getHowThisTypeIsUsed() || javaTypeAttributes.f33002e != this.f33002e || javaTypeAttributes.f33003f != this.f33003f || javaTypeAttributes.f33004g != this.f33004g) {
+        if (!Intrinsics.areEqual(javaTypeAttributes.getDefaultType(), getDefaultType()) || javaTypeAttributes.getHowThisTypeIsUsed() != getHowThisTypeIsUsed() || javaTypeAttributes.f33003e != this.f33003e || javaTypeAttributes.f33004f != this.f33004f || javaTypeAttributes.f33005g != this.f33005g) {
             return false;
         }
         return true;
@@ -80,23 +80,23 @@ public final class JavaTypeAttributes extends ErasureTypeAttributes {
 
     @Override // kotlin.reflect.jvm.internal.impl.types.ErasureTypeAttributes
     public SimpleType getDefaultType() {
-        return this.f33006i;
+        return this.f33007i;
     }
 
     @NotNull
     public final JavaTypeFlexibility getFlexibility() {
-        return this.f33002e;
+        return this.f33003e;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.ErasureTypeAttributes
     @NotNull
     public TypeUsage getHowThisTypeIsUsed() {
-        return this.f33001d;
+        return this.f33002d;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.ErasureTypeAttributes
     public Set<TypeParameterDescriptor> getVisitedTypeParameters() {
-        return this.f33005h;
+        return this.f33006h;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.ErasureTypeAttributes
@@ -109,17 +109,17 @@ public final class JavaTypeAttributes extends ErasureTypeAttributes {
             i10 = 0;
         }
         int hashCode = i10 + (i10 * 31) + getHowThisTypeIsUsed().hashCode();
-        int hashCode2 = hashCode + (hashCode * 31) + this.f33002e.hashCode();
-        int i11 = hashCode2 + (hashCode2 * 31) + (this.f33003f ? 1 : 0);
-        return i11 + (i11 * 31) + (this.f33004g ? 1 : 0);
+        int hashCode2 = hashCode + (hashCode * 31) + this.f33003e.hashCode();
+        int i11 = hashCode2 + (hashCode2 * 31) + (this.f33004f ? 1 : 0);
+        return i11 + (i11 * 31) + (this.f33005g ? 1 : 0);
     }
 
     public final boolean isForAnnotationParameter() {
-        return this.f33004g;
+        return this.f33005g;
     }
 
     public final boolean isRaw() {
-        return this.f33003f;
+        return this.f33004f;
     }
 
     @NotNull
@@ -129,7 +129,7 @@ public final class JavaTypeAttributes extends ErasureTypeAttributes {
 
     @NotNull
     public String toString() {
-        return "JavaTypeAttributes(howThisTypeIsUsed=" + this.f33001d + ", flexibility=" + this.f33002e + ", isRaw=" + this.f33003f + ", isForAnnotationParameter=" + this.f33004g + ", visitedTypeParameters=" + this.f33005h + ", defaultType=" + this.f33006i + ')';
+        return "JavaTypeAttributes(howThisTypeIsUsed=" + this.f33002d + ", flexibility=" + this.f33003e + ", isRaw=" + this.f33004f + ", isForAnnotationParameter=" + this.f33005g + ", visitedTypeParameters=" + this.f33006h + ", defaultType=" + this.f33007i + ')';
     }
 
     @NotNull
@@ -155,11 +155,11 @@ public final class JavaTypeAttributes extends ErasureTypeAttributes {
         super(howThisTypeIsUsed, set, simpleType);
         Intrinsics.checkNotNullParameter(howThisTypeIsUsed, "howThisTypeIsUsed");
         Intrinsics.checkNotNullParameter(flexibility, "flexibility");
-        this.f33001d = howThisTypeIsUsed;
-        this.f33002e = flexibility;
-        this.f33003f = z10;
-        this.f33004g = z11;
-        this.f33005h = set;
-        this.f33006i = simpleType;
+        this.f33002d = howThisTypeIsUsed;
+        this.f33003e = flexibility;
+        this.f33004f = z10;
+        this.f33005g = z11;
+        this.f33006h = set;
+        this.f33007i = simpleType;
     }
 }

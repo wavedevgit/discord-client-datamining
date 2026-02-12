@@ -23,19 +23,19 @@ public final class u extends d {
     public static final class a extends d.c {
 
         /* renamed from: b  reason: collision with root package name */
-        private final Class f38126b = u.class;
+        private final Class f38127b = u.class;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f38127c = "PinchGestureHandler";
+        private final String f38128c = "PinchGestureHandler";
 
         @Override // nn.d.c
         public String d() {
-            return this.f38127c;
+            return this.f38128c;
         }
 
         @Override // nn.d.c
         public Class e() {
-            return this.f38126b;
+            return this.f38127b;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */

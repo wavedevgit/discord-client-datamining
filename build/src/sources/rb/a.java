@@ -7,7 +7,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f46202a = new a();
+    public static final a f46203a = new a();
 
     /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
     /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -16,35 +16,35 @@ public final class a {
     public static final class EnumC0630a {
 
         /* renamed from: e  reason: collision with root package name */
-        public static final EnumC0630a f46203e = new EnumC0630a("THREAD", 0, 't');
+        public static final EnumC0630a f46204e = new EnumC0630a("THREAD", 0, 't');
 
         /* renamed from: i  reason: collision with root package name */
-        public static final EnumC0630a f46204i = new EnumC0630a("PROCESS", 1, 'p');
+        public static final EnumC0630a f46205i = new EnumC0630a("PROCESS", 1, 'p');
 
         /* renamed from: o  reason: collision with root package name */
-        public static final EnumC0630a f46205o = new EnumC0630a("GLOBAL", 2, 'g');
+        public static final EnumC0630a f46206o = new EnumC0630a("GLOBAL", 2, 'g');
 
         /* renamed from: p  reason: collision with root package name */
-        private static final /* synthetic */ EnumC0630a[] f46206p;
+        private static final /* synthetic */ EnumC0630a[] f46207p;
 
         /* renamed from: q  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f46207q;
+        private static final /* synthetic */ EnumEntries f46208q;
 
         /* renamed from: d  reason: collision with root package name */
-        private final char f46208d;
+        private final char f46209d;
 
         static {
             EnumC0630a[] a10 = a();
-            f46206p = a10;
-            f46207q = hs.a.a(a10);
+            f46207p = a10;
+            f46208q = hs.a.a(a10);
         }
 
         private EnumC0630a(String str, int i10, char c10) {
-            this.f46208d = c10;
+            this.f46209d = c10;
         }
 
         private static final /* synthetic */ EnumC0630a[] a() {
-            return new EnumC0630a[]{f46203e, f46204i, f46205o};
+            return new EnumC0630a[]{f46204e, f46205i, f46206o};
         }
 
         public static EnumC0630a valueOf(String str) {
@@ -52,7 +52,7 @@ public final class a {
         }
 
         public static EnumC0630a[] values() {
-            return (EnumC0630a[]) f46206p.clone();
+            return (EnumC0630a[]) f46207p.clone();
         }
     }
 
@@ -77,7 +77,7 @@ public final class a {
     public static final void d(long j10, String sectionName, String[] args, int i10) {
         Intrinsics.checkNotNullParameter(sectionName, "sectionName");
         Intrinsics.checkNotNullParameter(args, "args");
-        String e10 = f46202a.e(args, i10);
+        String e10 = f46203a.e(args, i10);
         c4.a.c(sectionName + "|" + e10);
     }
 

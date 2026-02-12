@@ -5,23 +5,23 @@ import bj.c;
 final class c5 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final c5 f44200a = new c5();
+    static final c5 f44201a = new c5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f44201b;
+    private static final bj.c f44202b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f44202c;
+    private static final bj.c f44203c;
 
     static {
         c.b a10 = bj.c.a("type");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44201b = a10.b(s1Var.b()).a();
+        f44202b = a10.b(s1Var.b()).a();
         c.b a11 = bj.c.a("dims");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44202c = a11.b(s1Var2.b()).a();
+        f44203c = a11.b(s1Var2.b()).a();
     }
 
     private c5() {

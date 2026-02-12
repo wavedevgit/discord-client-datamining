@@ -28,7 +28,7 @@ public final class SectionComponent extends BaseLayoutComponent {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9251id;
+    private final String f9252id;
     private final int type;
     @NotNull
     public static final Companion Companion = new Companion(null);
@@ -65,7 +65,7 @@ public final class SectionComponent extends BaseLayoutComponent {
             v1.b(i10, 27, SectionComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f9251id = str;
+        this.f9252id = str;
         if ((i10 & 4) == 0) {
             this.errorText = null;
         } else {
@@ -85,7 +85,7 @@ public final class SectionComponent extends BaseLayoutComponent {
             i10 = sectionComponent.type;
         }
         if ((i11 & 2) != 0) {
-            str = sectionComponent.f9251id;
+            str = sectionComponent.f9252id;
         }
         if ((i11 & 4) != 0) {
             str2 = sectionComponent.errorText;
@@ -108,7 +108,7 @@ public final class SectionComponent extends BaseLayoutComponent {
         compositeEncoder.w(serialDescriptor, 0, sectionComponent.getType());
         compositeEncoder.y(serialDescriptor, 1, sectionComponent.getId());
         if (compositeEncoder.z(serialDescriptor, 2) || sectionComponent.getErrorText() != null) {
-            compositeEncoder.o(serialDescriptor, 2, n2.f50032a, sectionComponent.getErrorText());
+            compositeEncoder.o(serialDescriptor, 2, n2.f50033a, sectionComponent.getErrorText());
         }
         compositeEncoder.k(serialDescriptor, 3, (qt.o) lazyArr[3].getValue(), sectionComponent.components);
         compositeEncoder.k(serialDescriptor, 4, SectionAccessory.Serializer.INSTANCE, sectionComponent.accessory);
@@ -120,7 +120,7 @@ public final class SectionComponent extends BaseLayoutComponent {
 
     @NotNull
     public final String component2() {
-        return this.f9251id;
+        return this.f9252id;
     }
 
     public final String component3() {
@@ -151,7 +151,7 @@ public final class SectionComponent extends BaseLayoutComponent {
         }
         if (obj instanceof SectionComponent) {
             SectionComponent sectionComponent = (SectionComponent) obj;
-            return this.type == sectionComponent.type && Intrinsics.areEqual(this.f9251id, sectionComponent.f9251id) && Intrinsics.areEqual(this.errorText, sectionComponent.errorText) && Intrinsics.areEqual(this.components, sectionComponent.components) && Intrinsics.areEqual(this.accessory, sectionComponent.accessory);
+            return this.type == sectionComponent.type && Intrinsics.areEqual(this.f9252id, sectionComponent.f9252id) && Intrinsics.areEqual(this.errorText, sectionComponent.errorText) && Intrinsics.areEqual(this.components, sectionComponent.components) && Intrinsics.areEqual(this.accessory, sectionComponent.accessory);
         }
         return false;
     }
@@ -174,7 +174,7 @@ public final class SectionComponent extends BaseLayoutComponent {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f9251id;
+        return this.f9252id;
     }
 
     @Override // com.discord.chat.bridge.botuikit.Component
@@ -183,7 +183,7 @@ public final class SectionComponent extends BaseLayoutComponent {
     }
 
     public int hashCode() {
-        int hashCode = ((Integer.hashCode(this.type) * 31) + this.f9251id.hashCode()) * 31;
+        int hashCode = ((Integer.hashCode(this.type) * 31) + this.f9252id.hashCode()) * 31;
         String str = this.errorText;
         return ((((hashCode + (str == null ? 0 : str.hashCode())) * 31) + this.components.hashCode()) * 31) + this.accessory.hashCode();
     }
@@ -191,7 +191,7 @@ public final class SectionComponent extends BaseLayoutComponent {
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f9251id;
+        String str = this.f9252id;
         String str2 = this.errorText;
         List<SectionChildComponent<?>> list = this.components;
         SectionAccessory<?> sectionAccessory = this.accessory;
@@ -210,7 +210,7 @@ public final class SectionComponent extends BaseLayoutComponent {
         Intrinsics.checkNotNullParameter(components, "components");
         Intrinsics.checkNotNullParameter(accessory, "accessory");
         this.type = i10;
-        this.f9251id = id2;
+        this.f9252id = id2;
         this.errorText = str;
         this.components = components;
         this.accessory = accessory;

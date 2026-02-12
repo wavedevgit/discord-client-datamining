@@ -131,7 +131,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2.RN_GLOBAL_OBJ;
                 var2 = var2.Promise;
                 if (!(var3 === var2)) {
-                    _fun10377_ip = 186;
+                    _fun10377_ip = 185;
                     continue _fun10377
                 }
             case 141:
@@ -144,9 +144,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.log;
                 var2 = 'Unhandled promise rejections will be caught by Sentry.';
                 var2 = var3.bind(var4)(var2);
-                _fun10377_ip = 228;
+                _fun10377_ip = 227;
                 continue _fun10377;
-            case 186:
+            case 185:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
                 var1 = 1;
@@ -156,10 +156,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.warn;
                 var1 = 'Unhandled promise rejections will not be caught by Sentry. See https://docs.sentry.io/platforms/react-native/troubleshooting/ for more details.';
                 var1 = var2.bind(var3)(var1);
-            case 228: // try_end0
-                _fun10377_ip = 277;
+            case 227: // try_end0
+                _fun10377_ip = 276;
                 continue _fun10377;
-            case 230: // catch_target0
+            case 229: // catch_target0
                 CatchBlockStart(arg_register = 1);
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -170,7 +170,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.warn;
                 var1 = 'Unhandled promise rejections will not be caught by Sentry. See https://docs.sentry.io/platforms/react-native/troubleshooting/ for more details.';
                 var1 = var2.bind(var3)(var1);
-            case 277:
+            case 276:
                 return var0;
         }
     };

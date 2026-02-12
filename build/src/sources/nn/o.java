@@ -44,13 +44,13 @@ public final class o extends d {
     public static final class b extends d.c {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f38089d = new a(null);
+        public static final a f38090d = new a(null);
 
         /* renamed from: b  reason: collision with root package name */
-        private final Class f38090b = o.class;
+        private final Class f38091b = o.class;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f38091c = "LongPressGestureHandler";
+        private final String f38092c = "LongPressGestureHandler";
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a {
@@ -64,12 +64,12 @@ public final class o extends d {
 
         @Override // nn.d.c
         public String d() {
-            return this.f38091c;
+            return this.f38092c;
         }
 
         @Override // nn.d.c
         public Class e() {
-            return this.f38090b;
+            return this.f38091b;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */

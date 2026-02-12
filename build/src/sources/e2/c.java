@@ -9,7 +9,7 @@ import android.view.inputmethod.EditorInfo;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String[] f22224a = new String[0];
+    private static final String[] f22225a = new String[0];
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -26,11 +26,11 @@ public abstract class c {
             if (strArr != null) {
                 return strArr;
             }
-            return f22224a;
+            return f22225a;
         }
         Bundle bundle = editorInfo.extras;
         if (bundle == null) {
-            return f22224a;
+            return f22225a;
         }
         String[] stringArray = bundle.getStringArray("androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_MIME_TYPES");
         if (stringArray == null) {
@@ -39,7 +39,7 @@ public abstract class c {
         if (stringArray != null) {
             return stringArray;
         }
-        return f22224a;
+        return f22225a;
     }
 
     private static boolean b(CharSequence charSequence, int i10, int i11) {

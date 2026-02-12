@@ -177,7 +177,7 @@ public final class ReferralView extends CardView {
     public static final Unit bind$lambda$13$lambda$11(Function2 function2, ReferralMessageAccessory referralMessageAccessory, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
         function2.invoke(MessageId.m1084boximpl(referralMessageAccessory.mo537getMessageId3Eiw7ao()), node);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     private final boolean didResolve(long j10) {

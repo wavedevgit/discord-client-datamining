@@ -29,7 +29,7 @@ final class MediaEngineModule$getMLSSigningKeyB64$1 extends kotlin.coroutines.jv
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit invokeSuspend$lambda$0(Callback callback, String str, String str2) {
         callback.invoke(str, str2);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -66,11 +66,11 @@ final class MediaEngineModule$getMLSSigningKeyB64$1 extends kotlin.coroutines.jv
                 return invokeSuspend$lambda$0;
             }
         });
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$getMLSSigningKeyB64$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+        return ((MediaEngineModule$getMLSSigningKeyB64$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

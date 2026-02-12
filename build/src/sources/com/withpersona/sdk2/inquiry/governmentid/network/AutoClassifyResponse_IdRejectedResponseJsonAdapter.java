@@ -17,19 +17,19 @@ import org.jetbrains.annotations.NotNull;
 public final class AutoClassifyResponse_IdRejectedResponseJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19641a;
+    private final m.b f19642a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19642b;
+    private final h f19643b;
 
     public AutoClassifyResponse_IdRejectedResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("idClassesByCountries");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19641a = a10;
+        this.f19642a = a10;
         h f10 = moshi.f(a0.j(List.class, AutoClassifyResponse.IdClassesForCountry.class), x0.d(), "idClassesByCountries");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19642b = f10;
+        this.f19643b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -39,9 +39,9 @@ public final class AutoClassifyResponse_IdRejectedResponseJsonAdapter extends h 
         reader.u();
         List list = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19641a);
+            int J = reader.J(this.f19642a);
             if (J != -1) {
-                if (J == 0 && (list = (List) this.f19642b.fromJson(reader)) == null) {
+                if (J == 0 && (list = (List) this.f19643b.fromJson(reader)) == null) {
                     throw c.x("idClassesByCountries", "idClassesByCountries", reader);
                 }
             } else {
@@ -63,7 +63,7 @@ public final class AutoClassifyResponse_IdRejectedResponseJsonAdapter extends h 
         if (idRejectedResponse != null) {
             writer.i();
             writer.J("idClassesByCountries");
-            this.f19642b.toJson(writer, idRejectedResponse.a());
+            this.f19643b.toJson(writer, idRejectedResponse.a());
             writer.s();
             return;
         }

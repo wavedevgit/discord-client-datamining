@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class OneTimeLinkCodeForPersonasRequest_MetaJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20837a;
+    private final m.b f20838a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f20838b;
+    private final h f20839b;
 
     public OneTimeLinkCodeForPersonasRequest_MetaJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("transitionParams");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20837a = a10;
+        this.f20838a = a10;
         h f10 = moshi.f(OneTimeLinkCodeForPersonasRequest.TransitionParams.class, x0.d(), "transitionParams");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20838b = f10;
+        this.f20839b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -36,9 +36,9 @@ public final class OneTimeLinkCodeForPersonasRequest_MetaJsonAdapter extends h {
         reader.u();
         OneTimeLinkCodeForPersonasRequest.TransitionParams transitionParams = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20837a);
+            int J = reader.J(this.f20838a);
             if (J != -1) {
-                if (J == 0 && (transitionParams = (OneTimeLinkCodeForPersonasRequest.TransitionParams) this.f20838b.fromJson(reader)) == null) {
+                if (J == 0 && (transitionParams = (OneTimeLinkCodeForPersonasRequest.TransitionParams) this.f20839b.fromJson(reader)) == null) {
                     throw c.x("transitionParams", "transitionParams", reader);
                 }
             } else {
@@ -60,7 +60,7 @@ public final class OneTimeLinkCodeForPersonasRequest_MetaJsonAdapter extends h {
         if (meta != null) {
             writer.i();
             writer.J("transitionParams");
-            this.f20838b.toJson(writer, meta.a());
+            this.f20839b.toJson(writer, meta.a());
             writer.s();
             return;
         }

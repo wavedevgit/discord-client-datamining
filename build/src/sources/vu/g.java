@@ -16,13 +16,13 @@ import org.openjsse.net.ssl.OpenJSSE;
 public final class g extends h {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f52012e;
+    public static final a f52013e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final boolean f52013f;
+    private static final boolean f52014f;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Provider f52014d;
+    private final Provider f52015d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -38,7 +38,7 @@ public final class g extends h {
         }
 
         public final boolean b() {
-            return g.f52013f;
+            return g.f52014f;
         }
 
         private a() {
@@ -47,14 +47,14 @@ public final class g extends h {
 
     static {
         a aVar = new a(null);
-        f52012e = aVar;
+        f52013e = aVar;
         boolean z10 = false;
         try {
             Class.forName("org.openjsse.net.ssl.OpenJSSE", false, aVar.getClass().getClassLoader());
             z10 = true;
         } catch (ClassNotFoundException unused) {
         }
-        f52013f = z10;
+        f52014f = z10;
     }
 
     public /* synthetic */ g(DefaultConstructorMarker defaultConstructorMarker) {
@@ -76,14 +76,14 @@ public final class g extends h {
 
     @Override // vu.h
     public SSLContext n() {
-        SSLContext sSLContext = SSLContext.getInstance("TLSv1.3", this.f52014d);
+        SSLContext sSLContext = SSLContext.getInstance("TLSv1.3", this.f52015d);
         Intrinsics.checkNotNullExpressionValue(sSLContext, "getInstance(\"TLSv1.3\", provider)");
         return sSLContext;
     }
 
     @Override // vu.h
     public X509TrustManager p() {
-        TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm(), this.f52014d);
+        TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm(), this.f52015d);
         trustManagerFactory.init((KeyStore) null);
         TrustManager[] trustManagers = trustManagerFactory.getTrustManagers();
         Intrinsics.checkNotNull(trustManagers);
@@ -103,6 +103,6 @@ public final class g extends h {
     }
 
     private g() {
-        this.f52014d = new OpenJSSE();
+        this.f52015d = new OpenJSSE();
     }
 }

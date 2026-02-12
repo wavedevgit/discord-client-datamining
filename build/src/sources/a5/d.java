@@ -58,7 +58,7 @@ public final class d implements h {
         if (aVar == null) {
             return null;
         }
-        int i10 = aVar.f26185a;
+        int i10 = aVar.f26186a;
         h5.c c10 = this.f391b.o().c();
         if (c10 instanceof c.a) {
             aVar2 = (c.a) c10;
@@ -68,7 +68,7 @@ public final class d implements h {
         if (aVar2 == null) {
             return null;
         }
-        int i11 = aVar2.f26185a;
+        int i11 = aVar2.f26186a;
         Bundle bundle = new Bundle(1);
         bundle.putParcelable("android.content.extra.SIZE", new Point(i10, i11));
         return bundle;
@@ -100,7 +100,7 @@ public final class d implements h {
                 throw new IllegalStateException(("Unable to open '" + this.f390a + "'.").toString());
             }
         }
-        return new l(u.g(x.d(x.k(inputStream)), this.f391b.g(), new x4.g(this.f390a)), contentResolver.getType(this.f390a), x4.h.f54345i);
+        return new l(u.g(x.d(x.k(inputStream)), this.f391b.g(), new x4.g(this.f390a)), contentResolver.getType(this.f390a), x4.h.f54346i);
     }
 
     public final boolean b(Uri uri) {

@@ -8,7 +8,7 @@ public interface d extends CoroutineContext.Element {
     @NotNull
 
     /* renamed from: j  reason: collision with root package name */
-    public static final b f32059j = b.f32060d;
+    public static final b f32060j = b.f32061d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -21,7 +21,7 @@ public interface d extends CoroutineContext.Element {
                     return null;
                 }
                 return b10;
-            } else if (d.f32059j != key) {
+            } else if (d.f32060j != key) {
                 return null;
             } else {
                 Intrinsics.checkNotNull(dVar, "null cannot be cast to non-null type E of kotlin.coroutines.ContinuationInterceptor.get");
@@ -34,11 +34,11 @@ public interface d extends CoroutineContext.Element {
             if (key instanceof kotlin.coroutines.b) {
                 kotlin.coroutines.b bVar = (kotlin.coroutines.b) key;
                 if (bVar.a(dVar.getKey()) && bVar.b(dVar) != null) {
-                    return e.f32061d;
+                    return e.f32062d;
                 }
                 return dVar;
-            } else if (d.f32059j == key) {
-                return e.f32061d;
+            } else if (d.f32060j == key) {
+                return e.f32062d;
             } else {
                 return dVar;
             }
@@ -49,7 +49,7 @@ public interface d extends CoroutineContext.Element {
     public static final class b implements CoroutineContext.b {
 
         /* renamed from: d  reason: collision with root package name */
-        static final /* synthetic */ b f32060d = new b();
+        static final /* synthetic */ b f32061d = new b();
 
         private b() {
         }

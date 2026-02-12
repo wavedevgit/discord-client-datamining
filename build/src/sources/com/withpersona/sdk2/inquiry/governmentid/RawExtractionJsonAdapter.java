@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class RawExtractionJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19620a;
+    private final m.b f19621a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19621b;
+    private final h f19622b;
 
     public RawExtractionJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("type", "value");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19620a = a10;
+        this.f19621a = a10;
         h f10 = moshi.f(String.class, x0.d(), "type");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19621b = f10;
+        this.f19622b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,14 +37,14 @@ public final class RawExtractionJsonAdapter extends h {
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19620a);
+            int J = reader.J(this.f19621a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (str2 = (String) this.f19621b.fromJson(reader)) == null) {
+                    if (J == 1 && (str2 = (String) this.f19622b.fromJson(reader)) == null) {
                         throw c.x("value__", "value", reader);
                     }
                 } else {
-                    str = (String) this.f19621b.fromJson(reader);
+                    str = (String) this.f19622b.fromJson(reader);
                     if (str == null) {
                         throw c.x("type", "type", reader);
                     }
@@ -71,9 +71,9 @@ public final class RawExtractionJsonAdapter extends h {
         if (rawExtraction != null) {
             writer.i();
             writer.J("type");
-            this.f19621b.toJson(writer, rawExtraction.a());
+            this.f19622b.toJson(writer, rawExtraction.a());
             writer.J("value");
-            this.f19621b.toJson(writer, rawExtraction.b());
+            this.f19622b.toJson(writer, rawExtraction.b());
             writer.s();
             return;
         }

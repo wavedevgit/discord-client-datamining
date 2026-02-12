@@ -11,27 +11,27 @@ import java.util.concurrent.Callable;
 public final class p implements ServiceConnection {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object f8708d = new Object();
+    private final Object f8709d = new Object();
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f8709e = false;
+    private boolean f8710e = false;
 
     /* renamed from: i  reason: collision with root package name */
-    private b6.c f8710i;
+    private b6.c f8711i;
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ b f8711o;
+    final /* synthetic */ b f8712o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ p(b bVar, b6.c cVar, b6.q qVar) {
-        this.f8711o = bVar;
-        this.f8710i = cVar;
+        this.f8712o = bVar;
+        this.f8711i = cVar;
     }
 
     private final void d(BillingResult billingResult) {
-        synchronized (this.f8708d) {
+        synchronized (this.f8709d) {
             try {
-                b6.c cVar = this.f8710i;
+                b6.c cVar = this.f8711i;
                 if (cVar != null) {
                     cVar.onBillingSetupFinished(billingResult);
                 }
@@ -60,25 +60,25 @@ public final class p implements ServiceConnection {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ void b() {
-        b.q0(this.f8711o, 0);
-        b.A(this.f8711o, null);
-        BillingResult billingResult = u.f8732n;
-        b.O(this.f8711o, 24, 6, billingResult);
+        b.q0(this.f8712o, 0);
+        b.A(this.f8712o, null);
+        BillingResult billingResult = u.f8733n;
+        b.O(this.f8712o, 24, 6, billingResult);
         d(billingResult);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void c() {
-        synchronized (this.f8708d) {
-            this.f8710i = null;
-            this.f8709e = true;
+        synchronized (this.f8709d) {
+            this.f8711i = null;
+            this.f8710e = true;
         }
     }
 
     @Override // android.content.ServiceConnection
     public final void onServiceConnected(ComponentName componentName, IBinder iBinder) {
         com.google.android.gms.internal.play_billing.a0.h("BillingClient", "Billing service connected.");
-        b.A(this.f8711o, j6.f(iBinder));
+        b.A(this.f8712o, j6.f(iBinder));
         Callable callable = new Callable() { // from class: com.android.billingclient.api.n
             @Override // java.util.concurrent.Callable
             public final Object call() {
@@ -92,9 +92,9 @@ public final class p implements ServiceConnection {
                 p.this.b();
             }
         };
-        b bVar = this.f8711o;
+        b bVar = this.f8712o;
         if (b.p0(bVar, callable, 30000L, runnable, b.f0(bVar)) == null) {
-            b bVar2 = this.f8711o;
+            b bVar2 = this.f8712o;
             BillingResult j02 = b.j0(bVar2);
             b.O(bVar2, 25, 6, j02);
             d(j02);
@@ -104,12 +104,12 @@ public final class p implements ServiceConnection {
     @Override // android.content.ServiceConnection
     public final void onServiceDisconnected(ComponentName componentName) {
         com.google.android.gms.internal.play_billing.a0.i("BillingClient", "Billing service disconnected.");
-        b.i0(this.f8711o).c(c6.C());
-        b.A(this.f8711o, null);
-        b.q0(this.f8711o, 0);
-        synchronized (this.f8708d) {
+        b.i0(this.f8712o).c(c6.C());
+        b.A(this.f8712o, null);
+        b.q0(this.f8712o, 0);
+        synchronized (this.f8709d) {
             try {
-                b6.c cVar = this.f8710i;
+                b6.c cVar = this.f8711i;
                 if (cVar != null) {
                     cVar.onBillingServiceDisconnected();
                 }

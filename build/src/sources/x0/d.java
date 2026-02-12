@@ -3,28 +3,28 @@ package x0;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f54296a;
+    private final int f54297a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long[] f54297b;
+    private final long[] f54298b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Object[] f54298c;
+    private final Object[] f54299c;
 
     public d(int i10, long[] jArr, Object[] objArr) {
-        this.f54296a = i10;
-        this.f54297b = jArr;
-        this.f54298c = objArr;
+        this.f54297a = i10;
+        this.f54298b = jArr;
+        this.f54299c = objArr;
     }
 
     private final int a(long j10) {
-        int i10 = this.f54296a - 1;
+        int i10 = this.f54297a - 1;
         if (i10 != -1) {
             int i11 = 0;
             if (i10 != 0) {
                 while (i11 <= i10) {
                     int i12 = (i11 + i10) >>> 1;
-                    int i13 = ((this.f54297b[i12] - j10) > 0L ? 1 : ((this.f54297b[i12] - j10) == 0L ? 0 : -1));
+                    int i13 = ((this.f54298b[i12] - j10) > 0L ? 1 : ((this.f54298b[i12] - j10) == 0L ? 0 : -1));
                     if (i13 < 0) {
                         i11 = i12 + 1;
                     } else if (i13 > 0) {
@@ -35,7 +35,7 @@ public final class d {
                 }
                 return -(i11 + 1);
             }
-            long j11 = this.f54297b[0];
+            long j11 = this.f54298b[0];
             if (j11 == j10) {
                 return 0;
             }
@@ -49,7 +49,7 @@ public final class d {
     public final Object b(long j10) {
         int a10 = a(j10);
         if (a10 >= 0) {
-            return this.f54298c[a10];
+            return this.f54299c[a10];
         }
         return null;
     }

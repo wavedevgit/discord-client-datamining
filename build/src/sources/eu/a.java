@@ -9,7 +9,7 @@ import java.text.ParsePosition;
 public interface a extends t {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final bu.c f23267c = cu.a.e("COUNT_OF_PATTERN_SYMBOLS", Integer.class);
+    public static final bu.c f23268c = cu.a.e("COUNT_OF_PATTERN_SYMBOLS", Integer.class);
 
     Integer r(CharSequence charSequence, ParsePosition parsePosition, bu.d dVar, q qVar);
 

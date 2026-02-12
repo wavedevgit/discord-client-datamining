@@ -9,10 +9,10 @@ import android.widget.TextView;
 final class c extends InputConnectionWrapper {
 
     /* renamed from: a  reason: collision with root package name */
-    private final TextView f21434a;
+    private final TextView f21435a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a f21435b;
+    private final a f21436b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
@@ -33,12 +33,12 @@ final class c extends InputConnectionWrapper {
     }
 
     private Editable a() {
-        return this.f21434a.getEditableText();
+        return this.f21435a.getEditableText();
     }
 
     @Override // android.view.inputmethod.InputConnectionWrapper, android.view.inputmethod.InputConnection
     public boolean deleteSurroundingText(int i10, int i11) {
-        if (!this.f21435b.a(this, a(), i10, i11, false) && !super.deleteSurroundingText(i10, i11)) {
+        if (!this.f21436b.a(this, a(), i10, i11, false) && !super.deleteSurroundingText(i10, i11)) {
             return false;
         }
         return true;
@@ -46,7 +46,7 @@ final class c extends InputConnectionWrapper {
 
     @Override // android.view.inputmethod.InputConnectionWrapper, android.view.inputmethod.InputConnection
     public boolean deleteSurroundingTextInCodePoints(int i10, int i11) {
-        if (!this.f21435b.a(this, a(), i10, i11, true) && !super.deleteSurroundingTextInCodePoints(i10, i11)) {
+        if (!this.f21436b.a(this, a(), i10, i11, true) && !super.deleteSurroundingTextInCodePoints(i10, i11)) {
             return false;
         }
         return true;
@@ -54,8 +54,8 @@ final class c extends InputConnectionWrapper {
 
     c(TextView textView, InputConnection inputConnection, EditorInfo editorInfo, a aVar) {
         super(inputConnection, false);
-        this.f21434a = textView;
-        this.f21435b = aVar;
+        this.f21435a = textView;
+        this.f21436b = aVar;
         aVar.b(editorInfo);
     }
 }

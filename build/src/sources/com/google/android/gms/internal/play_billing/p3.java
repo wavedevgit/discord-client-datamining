@@ -7,39 +7,39 @@ import java.util.Map;
 final class p3 implements Iterator {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f15031d = -1;
+    private int f15032d = -1;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f15032e;
+    private boolean f15033e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Iterator f15033i;
+    private Iterator f15034i;
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ t3 f15034o;
+    final /* synthetic */ t3 f15035o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ p3(t3 t3Var, o3 o3Var) {
-        this.f15034o = t3Var;
+        this.f15035o = t3Var;
     }
 
     private final Iterator a() {
         Map map;
-        if (this.f15033i == null) {
-            map = this.f15034o.f15062i;
-            this.f15033i = map.entrySet().iterator();
+        if (this.f15034i == null) {
+            map = this.f15035o.f15063i;
+            this.f15034i = map.entrySet().iterator();
         }
-        return this.f15033i;
+        return this.f15034i;
     }
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
         List list;
         Map map;
-        int i10 = this.f15031d + 1;
-        list = this.f15034o.f15061e;
+        int i10 = this.f15032d + 1;
+        list = this.f15035o.f15062e;
         if (i10 >= list.size()) {
-            map = this.f15034o.f15062i;
+            map = this.f15035o.f15063i;
             if (!map.isEmpty() && a().hasNext()) {
                 return true;
             }
@@ -52,13 +52,13 @@ final class p3 implements Iterator {
     public final /* bridge */ /* synthetic */ Object next() {
         List list;
         List list2;
-        this.f15032e = true;
-        int i10 = this.f15031d + 1;
-        this.f15031d = i10;
-        list = this.f15034o.f15061e;
+        this.f15033e = true;
+        int i10 = this.f15032d + 1;
+        this.f15032d = i10;
+        list = this.f15035o.f15062e;
         if (i10 < list.size()) {
-            list2 = this.f15034o.f15061e;
-            return (Map.Entry) list2.get(this.f15031d);
+            list2 = this.f15035o.f15062e;
+            return (Map.Entry) list2.get(this.f15032d);
         }
         return (Map.Entry) a().next();
     }
@@ -66,15 +66,15 @@ final class p3 implements Iterator {
     @Override // java.util.Iterator
     public final void remove() {
         List list;
-        if (this.f15032e) {
-            this.f15032e = false;
-            this.f15034o.n();
-            int i10 = this.f15031d;
-            list = this.f15034o.f15061e;
+        if (this.f15033e) {
+            this.f15033e = false;
+            this.f15035o.n();
+            int i10 = this.f15032d;
+            list = this.f15035o.f15062e;
             if (i10 < list.size()) {
-                t3 t3Var = this.f15034o;
-                int i11 = this.f15031d;
-                this.f15031d = i11 - 1;
+                t3 t3Var = this.f15035o;
+                int i11 = this.f15032d;
+                this.f15032d = i11 - 1;
                 t3Var.l(i11);
                 return;
             }

@@ -49,7 +49,7 @@ public abstract class a {
     private static final long f7978m = b.b(0);
 
     /* renamed from: n  reason: collision with root package name */
-    private static final long f7979n = b.a(0.0f, 0.0f, 0.0f, 0.0f, g.f21331a.j());
+    private static final long f7979n = b.a(0.0f, 0.0f, 0.0f, 0.0f, g.f21332a.j());
 
     /* renamed from: c1.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -96,7 +96,7 @@ public abstract class a {
     }
 
     public static final d1.c f(long j10) {
-        return g.f21331a.e()[(int) b0.d(j10 & 63)];
+        return g.f21332a.e()[(int) b0.d(j10 & 63)];
     }
 
     public static final float g(long j10) {

@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/sidebar/details/ChannelDetailsLinkedLobby.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun107634: for (var _fun107634_ip = 0;;) switch (_fun107634_ip) {
+        _fun107701: for (var _fun107701_ip = 0;;) switch (_fun107701_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.channel;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var12 == var5;
                 var1 = undefined;
                 if (var8) {
-                    _fun107634_ip = 76;
-                    continue _fun107634
+                    _fun107701_ip = 76;
+                    continue _fun107701
                 }
             case 70:
                 var1 = var5.application_id;
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var12 == var0;
                 var0 = null;
                 if (var1) {
-                    _fun107634_ip = 503;
-                    continue _fun107634
+                    _fun107701_ip = 503;
+                    continue _fun107701
                 }
             case 99:
                 var3 = _closure1_slot6;
@@ -126,8 +126,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = _closure1_slot5;
                 var10 = {};
                 if (!(var12 == var17)) {
-                    _fun107634_ip = 243;
-                    continue _fun107634
+                    _fun107701_ip = 243;
+                    continue _fun107701
                 }
             case 184:
                 var15 = _closure1_slot0;
@@ -142,8 +142,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var12.t;
                 var12 = var12.yQqVss;
                 var13 = var13.bind(var14)(var12);
-                _fun107634_ip = 313;
-                continue _fun107634;
+                _fun107701_ip = 313;
+                continue _fun107701;
             case 243:
                 var14 = _closure1_slot0;
                 var18 = _closure1_slot2;
@@ -209,4 +209,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 6964, 5393, 1234, 1686, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 6979, 5384, 1234, 1686, 2]);

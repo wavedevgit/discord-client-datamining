@@ -26,7 +26,7 @@ public final class ButtonComponent extends BaseActionComponent {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9237id;
+    private final String f9238id;
     private final String label;
     private final String skuId;
     @NotNull
@@ -59,7 +59,7 @@ public final class ButtonComponent extends BaseActionComponent {
             v1.b(i10, 39, ButtonComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f9237id = str;
+        this.f9238id = str;
         this.state = actionComponentState;
         if ((i10 & 8) == 0) {
             this.customId = null;
@@ -99,7 +99,7 @@ public final class ButtonComponent extends BaseActionComponent {
             i10 = buttonComponent.type;
         }
         if ((i11 & 2) != 0) {
-            str = buttonComponent.f9237id;
+            str = buttonComponent.f9238id;
         }
         if ((i11 & 4) != 0) {
             actionComponentState = buttonComponent.state;
@@ -139,10 +139,10 @@ public final class ButtonComponent extends BaseActionComponent {
         compositeEncoder.y(serialDescriptor, 1, buttonComponent.getId());
         compositeEncoder.k(serialDescriptor, 2, ActionComponentState.Serializer.INSTANCE, buttonComponent.getState());
         if (compositeEncoder.z(serialDescriptor, 3) || buttonComponent.getCustomId() != null) {
-            compositeEncoder.o(serialDescriptor, 3, n2.f50032a, buttonComponent.getCustomId());
+            compositeEncoder.o(serialDescriptor, 3, n2.f50033a, buttonComponent.getCustomId());
         }
         if (compositeEncoder.z(serialDescriptor, 4) || buttonComponent.label != null) {
-            compositeEncoder.o(serialDescriptor, 4, n2.f50032a, buttonComponent.label);
+            compositeEncoder.o(serialDescriptor, 4, n2.f50033a, buttonComponent.label);
         }
         compositeEncoder.k(serialDescriptor, 5, ButtonStyle.Serializer.INSTANCE, buttonComponent.style);
         if (compositeEncoder.z(serialDescriptor, 6) || buttonComponent.disabled) {
@@ -152,10 +152,10 @@ public final class ButtonComponent extends BaseActionComponent {
             compositeEncoder.o(serialDescriptor, 7, ComponentEmoji$$serializer.INSTANCE, buttonComponent.emoji);
         }
         if (compositeEncoder.z(serialDescriptor, 8) || buttonComponent.url != null) {
-            compositeEncoder.o(serialDescriptor, 8, n2.f50032a, buttonComponent.url);
+            compositeEncoder.o(serialDescriptor, 8, n2.f50033a, buttonComponent.url);
         }
         if (compositeEncoder.z(serialDescriptor, 9) || buttonComponent.skuId != null) {
-            compositeEncoder.o(serialDescriptor, 9, n2.f50032a, buttonComponent.skuId);
+            compositeEncoder.o(serialDescriptor, 9, n2.f50033a, buttonComponent.skuId);
         }
     }
 
@@ -169,7 +169,7 @@ public final class ButtonComponent extends BaseActionComponent {
 
     @NotNull
     public final String component2() {
-        return this.f9237id;
+        return this.f9238id;
     }
 
     @NotNull
@@ -216,7 +216,7 @@ public final class ButtonComponent extends BaseActionComponent {
         }
         if (obj instanceof ButtonComponent) {
             ButtonComponent buttonComponent = (ButtonComponent) obj;
-            return this.type == buttonComponent.type && Intrinsics.areEqual(this.f9237id, buttonComponent.f9237id) && this.state == buttonComponent.state && Intrinsics.areEqual(this.customId, buttonComponent.customId) && Intrinsics.areEqual(this.label, buttonComponent.label) && this.style == buttonComponent.style && this.disabled == buttonComponent.disabled && Intrinsics.areEqual(this.emoji, buttonComponent.emoji) && Intrinsics.areEqual(this.url, buttonComponent.url) && Intrinsics.areEqual(this.skuId, buttonComponent.skuId);
+            return this.type == buttonComponent.type && Intrinsics.areEqual(this.f9238id, buttonComponent.f9238id) && this.state == buttonComponent.state && Intrinsics.areEqual(this.customId, buttonComponent.customId) && Intrinsics.areEqual(this.label, buttonComponent.label) && this.style == buttonComponent.style && this.disabled == buttonComponent.disabled && Intrinsics.areEqual(this.emoji, buttonComponent.emoji) && Intrinsics.areEqual(this.url, buttonComponent.url) && Intrinsics.areEqual(this.skuId, buttonComponent.skuId);
         }
         return false;
     }
@@ -237,7 +237,7 @@ public final class ButtonComponent extends BaseActionComponent {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f9237id;
+        return this.f9238id;
     }
 
     public final String getLabel() {
@@ -269,7 +269,7 @@ public final class ButtonComponent extends BaseActionComponent {
     }
 
     public int hashCode() {
-        int hashCode = ((((Integer.hashCode(this.type) * 31) + this.f9237id.hashCode()) * 31) + this.state.hashCode()) * 31;
+        int hashCode = ((((Integer.hashCode(this.type) * 31) + this.f9238id.hashCode()) * 31) + this.state.hashCode()) * 31;
         String str = this.customId;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
         String str2 = this.label;
@@ -285,7 +285,7 @@ public final class ButtonComponent extends BaseActionComponent {
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f9237id;
+        String str = this.f9238id;
         ActionComponentState actionComponentState = this.state;
         String str2 = this.customId;
         String str3 = this.label;
@@ -308,7 +308,7 @@ public final class ButtonComponent extends BaseActionComponent {
         Intrinsics.checkNotNullParameter(state, "state");
         Intrinsics.checkNotNullParameter(style, "style");
         this.type = i10;
-        this.f9237id = id2;
+        this.f9238id = id2;
         this.state = state;
         this.customId = str;
         this.label = str2;

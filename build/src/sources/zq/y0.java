@@ -17,25 +17,25 @@ import kotlinx.coroutines.flow.FlowCollector;
 public final class y0 implements en.o<b> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final br.b f57055b;
+    private final br.b f57056b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final no.a f57056c;
+    private final no.a f57057c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ActivityResultLauncher f57057d;
+    private final ActivityResultLauncher f57058d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f57058e;
+    private final String f57059e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f57059f;
+    private final String f57060f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f57060g;
+    private final String f57061g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f57061h;
+    private final String f57062h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -49,7 +49,7 @@ public final class y0 implements en.o<b> {
         public static final class a implements b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final a f57062a = new a();
+            public static final a f57063a = new a();
 
             private a() {
             }
@@ -75,33 +75,33 @@ public final class y0 implements en.o<b> {
         public static final class C0815b implements b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final InternalErrorInfo f57063a;
+            private final InternalErrorInfo f57064a;
 
             public C0815b(InternalErrorInfo errorInfo) {
                 Intrinsics.checkNotNullParameter(errorInfo, "errorInfo");
-                this.f57063a = errorInfo;
+                this.f57064a = errorInfo;
             }
 
             public final InternalErrorInfo a() {
-                return this.f57063a;
+                return this.f57064a;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                if ((obj instanceof C0815b) && Intrinsics.areEqual(this.f57063a, ((C0815b) obj).f57063a)) {
+                if ((obj instanceof C0815b) && Intrinsics.areEqual(this.f57064a, ((C0815b) obj).f57064a)) {
                     return true;
                 }
                 return false;
             }
 
             public int hashCode() {
-                return this.f57063a.hashCode();
+                return this.f57064a.hashCode();
             }
 
             public String toString() {
-                InternalErrorInfo internalErrorInfo = this.f57063a;
+                InternalErrorInfo internalErrorInfo = this.f57064a;
                 return "Error(errorInfo=" + internalErrorInfo + ")";
             }
         }
@@ -111,53 +111,53 @@ public final class y0 implements en.o<b> {
     static final class c extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f57064d;
+        int f57065d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f57065e;
+        private /* synthetic */ Object f57066e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f57067d;
+            int f57068d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ y0 f57068e;
+            final /* synthetic */ y0 f57069e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ String f57069i;
+            final /* synthetic */ String f57070i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(y0 y0Var, String str, Continuation continuation) {
                 super(2, continuation);
-                this.f57068e = y0Var;
-                this.f57069i = str;
+                this.f57069e = y0Var;
+                this.f57070i = str;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                return new a(this.f57068e, this.f57069i, continuation);
+                return new a(this.f57069e, this.f57070i, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 gs.b.f();
-                if (this.f57067d == 0) {
+                if (this.f57068d == 0) {
                     kotlin.c.b(obj);
-                    ActivityResultLauncher activityResultLauncher = this.f57068e.f57057d;
+                    ActivityResultLauncher activityResultLauncher = this.f57069e.f57058d;
                     androidx.browser.customtabs.b a10 = new b.d().a();
                     Intrinsics.checkNotNullExpressionValue(a10, "build(...)");
-                    activityResultLauncher.b(new mp.a(a10, h1.a(this.f57068e.f57060g, this.f57069i, this.f57068e.f57061h)));
-                    return Unit.f31987a;
+                    activityResultLauncher.b(new mp.a(a10, h1.a(this.f57069e.f57061g, this.f57070i, this.f57069e.f57062h)));
+                    return Unit.f31988a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
             }
         }
 
@@ -168,7 +168,7 @@ public final class y0 implements en.o<b> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             c cVar = new c(continuation);
-            cVar.f57065e = obj;
+            cVar.f57066e = obj;
             return cVar;
         }
 
@@ -213,7 +213,7 @@ public final class y0 implements en.o<b> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f31987a);
+            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -225,13 +225,13 @@ public final class y0 implements en.o<b> {
         Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
         Intrinsics.checkNotNullParameter(url, "url");
         Intrinsics.checkNotNullParameter(componentName, "componentName");
-        this.f57055b = uiService;
-        this.f57056c = deviceIdProvider;
-        this.f57057d = customTabsLauncher;
-        this.f57058e = sessionToken;
-        this.f57059f = inquiryId;
-        this.f57060g = url;
-        this.f57061h = componentName;
+        this.f57056b = uiService;
+        this.f57057c = deviceIdProvider;
+        this.f57058d = customTabsLauncher;
+        this.f57059e = sessionToken;
+        this.f57060f = inquiryId;
+        this.f57061g = url;
+        this.f57062h = componentName;
     }
 
     @Override // en.o

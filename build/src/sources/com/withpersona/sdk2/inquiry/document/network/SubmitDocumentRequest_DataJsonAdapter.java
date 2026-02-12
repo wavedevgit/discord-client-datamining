@@ -15,22 +15,22 @@ import org.jetbrains.annotations.NotNull;
 public final class SubmitDocumentRequest_DataJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19533a;
+    private final m.b f19534a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19534b;
+    private final h f19535b;
 
     /* renamed from: c  reason: collision with root package name */
-    private volatile Constructor f19535c;
+    private volatile Constructor f19536c;
 
     public SubmitDocumentRequest_DataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("type");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19533a = a10;
+        this.f19534a = a10;
         h f10 = moshi.f(String.class, x0.d(), "type");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19534b = f10;
+        this.f19535b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -41,10 +41,10 @@ public final class SubmitDocumentRequest_DataJsonAdapter extends h {
         String str = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19533a);
+            int J = reader.J(this.f19534a);
             if (J != -1) {
                 if (J == 0) {
-                    str = (String) this.f19534b.fromJson(reader);
+                    str = (String) this.f19535b.fromJson(reader);
                     if (str != null) {
                         i10 = -2;
                     } else {
@@ -63,10 +63,10 @@ public final class SubmitDocumentRequest_DataJsonAdapter extends h {
             Intrinsics.checkNotNull(str, "null cannot be cast to non-null type kotlin.String");
             return new SubmitDocumentRequest.Data(str);
         }
-        Constructor constructor = this.f19535c;
+        Constructor constructor = this.f19536c;
         if (constructor == null) {
-            constructor = SubmitDocumentRequest.Data.class.getDeclaredConstructor(String.class, Integer.TYPE, dn.c.f21827c);
-            this.f19535c = constructor;
+            constructor = SubmitDocumentRequest.Data.class.getDeclaredConstructor(String.class, Integer.TYPE, dn.c.f21828c);
+            this.f19536c = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
         Object newInstance = constructor.newInstance(str, Integer.valueOf(i10), null);
@@ -81,7 +81,7 @@ public final class SubmitDocumentRequest_DataJsonAdapter extends h {
         if (data != null) {
             writer.i();
             writer.J("type");
-            this.f19534b.toJson(writer, data.a());
+            this.f19535b.toJson(writer, data.a());
             writer.s();
             return;
         }

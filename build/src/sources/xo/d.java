@@ -18,54 +18,54 @@ import to.n4;
 public final class d implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CoordinatorLayout f54990a;
+    private final CoordinatorLayout f54991a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final TextView f54991b;
+    public final TextView f54992b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final MaterialButton f54992c;
+    public final MaterialButton f54993c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final ThemeableLottieAnimationView f54993d;
+    public final ThemeableLottieAnimationView f54994d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final View f54994e;
+    public final View f54995e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final ConstraintLayout f54995f;
+    public final ConstraintLayout f54996f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final CardView f54996g;
+    public final CardView f54997g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final Pi2NavigationBar f54997h;
+    public final Pi2NavigationBar f54998h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final TextView f54998i;
+    public final TextView f54999i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final Button f54999j;
+    public final Button f55000j;
 
     private d(CoordinatorLayout coordinatorLayout, TextView textView, MaterialButton materialButton, ThemeableLottieAnimationView themeableLottieAnimationView, View view, ConstraintLayout constraintLayout, CardView cardView, Pi2NavigationBar pi2NavigationBar, TextView textView2, Button button) {
-        this.f54990a = coordinatorLayout;
-        this.f54991b = textView;
-        this.f54992c = materialButton;
-        this.f54993d = themeableLottieAnimationView;
-        this.f54994e = view;
-        this.f54995f = constraintLayout;
-        this.f54996g = cardView;
-        this.f54997h = pi2NavigationBar;
-        this.f54998i = textView2;
-        this.f54999j = button;
+        this.f54991a = coordinatorLayout;
+        this.f54992b = textView;
+        this.f54993c = materialButton;
+        this.f54994d = themeableLottieAnimationView;
+        this.f54995e = view;
+        this.f54996f = constraintLayout;
+        this.f54997g = cardView;
+        this.f54998h = pi2NavigationBar;
+        this.f54999i = textView2;
+        this.f55000j = button;
     }
 
     public static d a(View view) {
         View a10;
-        int i10 = m4.f49372d;
+        int i10 = m4.f49373d;
         TextView textView = (TextView) e4.a.a(view, i10);
         if (textView != null) {
-            i10 = m4.f49384j;
+            i10 = m4.f49385j;
             MaterialButton materialButton = (MaterialButton) e4.a.a(view, i10);
             if (materialButton != null) {
                 i10 = m4.N;
@@ -99,7 +99,7 @@ public final class d implements ViewBinding {
     }
 
     public static d c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n4.f49539d, viewGroup, false);
+        View inflate = layoutInflater.inflate(n4.f49540d, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -109,6 +109,6 @@ public final class d implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public CoordinatorLayout getRoot() {
-        return this.f54990a;
+        return this.f54991a;
     }
 }

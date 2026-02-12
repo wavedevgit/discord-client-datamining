@@ -9,18 +9,18 @@ import kotlin.jvm.internal.Intrinsics;
 public final class j implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f38186a;
+    private final Context f38187a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Lazy f38187b;
+    private final Lazy f38188b;
 
     /* renamed from: c  reason: collision with root package name */
-    private String f38188c;
+    private String f38189c;
 
     public j(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f38186a = context;
-        this.f38187b = as.l.b(new Function0() { // from class: no.i
+        this.f38187a = context;
+        this.f38188b = as.l.b(new Function0() { // from class: no.i
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 SharedPreferences e10;
@@ -31,31 +31,31 @@ public final class j implements a {
     }
 
     private final SharedPreferences d() {
-        return (SharedPreferences) this.f38187b.getValue();
+        return (SharedPreferences) this.f38188b.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final SharedPreferences e(j jVar) {
-        return jVar.f38186a.getSharedPreferences("com.withpersona.sdk2.prefs", 0);
+        return jVar.f38187a.getSharedPreferences("com.withpersona.sdk2.prefs", 0);
     }
 
     @Override // no.a
     public void a(String str) {
         String str2;
-        if (!Intrinsics.areEqual(str, this.f38188c)) {
+        if (!Intrinsics.areEqual(str, this.f38189c)) {
             str2 = str;
         } else {
             str2 = null;
         }
         if (str2 != null) {
-            this.f38188c = str;
-            d().edit().putString("DEVICE_ID", this.f38188c).apply();
+            this.f38189c = str;
+            d().edit().putString("DEVICE_ID", this.f38189c).apply();
         }
     }
 
     @Override // no.a
     public String b() {
-        String str = this.f38188c;
+        String str = this.f38189c;
         if (str == null) {
             return d().getString("DEVICE_ID", null);
         }

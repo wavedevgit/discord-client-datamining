@@ -75,7 +75,7 @@ public final class InquiryField_DatetimeFieldJsonAdapter extends h {
         }
         Constructor<InquiryField.DatetimeField> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InquiryField.DatetimeField.class.getDeclaredConstructor(String.class, String.class, Integer.TYPE, dn.c.f21827c);
+            constructor = InquiryField.DatetimeField.class.getDeclaredConstructor(String.class, String.class, Integer.TYPE, dn.c.f21828c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

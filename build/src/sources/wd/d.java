@@ -17,20 +17,20 @@ import oe.s0;
 public final class d implements h {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final int[] f52544d = {8, 13, 11, 2, 0, 1, 7};
+    private static final int[] f52545d = {8, 13, 11, 2, 0, 1, 7};
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f52545b;
+    private final int f52546b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f52546c;
+    private final boolean f52547c;
 
     public d() {
         this(0, true);
     }
 
     private static void b(int i10, List list) {
-        if (si.e.h(f52544d, i10) != -1 && !list.contains(Integer.valueOf(i10))) {
+        if (si.e.h(f52545d, i10) != -1 && !list.contains(Integer.valueOf(i10))) {
             list.add(Integer.valueOf(i10));
         }
     }
@@ -45,9 +45,9 @@ public final class d implements h {
                                 if (i10 != 13) {
                                     return null;
                                 }
-                                return new t(format.f12295i, s0Var);
+                                return new t(format.f12296i, s0Var);
                             }
-                            return f(this.f52545b, this.f52546c, format, list, s0Var);
+                            return f(this.f52546b, this.f52547c, format, list, s0Var);
                         }
                         return e(s0Var, format, list);
                     }
@@ -82,7 +82,7 @@ public final class d implements h {
         } else {
             list = Collections.EMPTY_LIST;
         }
-        String str = format.f12301t;
+        String str = format.f12302t;
         if (!TextUtils.isEmpty(str)) {
             if (!c0.b(str, "audio/mp4a-latm")) {
                 i11 |= 2;
@@ -96,13 +96,13 @@ public final class d implements h {
 
     private static boolean g(Format format) {
         Metadata.b d10;
-        Metadata metadata = format.f12302u;
+        Metadata metadata = format.f12303u;
         if (metadata == null) {
             return false;
         }
         for (int i10 = 0; i10 < metadata.e(); i10++) {
             if (metadata.d(i10) instanceof q) {
-                return !((q) d10).f52656i.isEmpty();
+                return !((q) d10).f52657i.isEmpty();
             }
         }
         return false;
@@ -125,10 +125,10 @@ public final class d implements h {
     @Override // wd.h
     /* renamed from: c */
     public b a(Uri uri, Format format, List list, s0 s0Var, Map map, uc.l lVar, t1 t1Var) {
-        int a10 = oe.p.a(format.f12304w);
+        int a10 = oe.p.a(format.f12305w);
         int b10 = oe.p.b(map);
         int c10 = oe.p.c(uri);
-        int[] iArr = f52544d;
+        int[] iArr = f52545d;
         ArrayList arrayList = new ArrayList(iArr.length);
         b(a10, arrayList);
         b(b10, arrayList);
@@ -152,7 +152,7 @@ public final class d implements h {
     }
 
     public d(int i10, boolean z10) {
-        this.f52545b = i10;
-        this.f52546c = z10;
+        this.f52546b = i10;
+        this.f52547c = z10;
     }
 }

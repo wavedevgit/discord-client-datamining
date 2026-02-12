@@ -9,28 +9,28 @@ import java.util.List;
 public final class p {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final p f54135c = new a().b(0).a();
+    public static final p f54136c = new a().b(0).a();
 
     /* renamed from: d  reason: collision with root package name */
-    public static final p f54136d = new a().b(1).a();
+    public static final p f54137d = new a().b(1).a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final LinkedHashSet f54137a;
+    private final LinkedHashSet f54138a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f54138b;
+    private final String f54139b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final LinkedHashSet f54139a = new LinkedHashSet();
+        private final LinkedHashSet f54140a = new LinkedHashSet();
 
         /* renamed from: b  reason: collision with root package name */
-        private String f54140b;
+        private String f54141b;
 
         public p a() {
-            return new p(this.f54139a, this.f54140b);
+            return new p(this.f54140a, this.f54141b);
         }
 
         public a b(int i10) {
@@ -41,14 +41,14 @@ public final class p {
                 z10 = false;
             }
             b2.e.j(z10, "The specified lens facing is invalid.");
-            this.f54139a.add(new a0.l1(i10));
+            this.f54140a.add(new a0.l1(i10));
             return this;
         }
     }
 
     p(LinkedHashSet linkedHashSet, String str) {
-        this.f54137a = linkedHashSet;
-        this.f54138b = str;
+        this.f54138a = linkedHashSet;
+        this.f54139b = str;
     }
 
     public LinkedHashSet a(LinkedHashSet linkedHashSet) {
@@ -71,7 +71,7 @@ public final class p {
 
     public List b(List list) {
         List arrayList = new ArrayList(list);
-        Iterator it = this.f54137a.iterator();
+        Iterator it = this.f54138a.iterator();
         while (it.hasNext()) {
             arrayList = ((n) it.next()).b(Collections.unmodifiableList(arrayList));
         }
@@ -80,11 +80,11 @@ public final class p {
     }
 
     public LinkedHashSet c() {
-        return this.f54137a;
+        return this.f54138a;
     }
 
     public Integer d() {
-        Iterator it = this.f54137a.iterator();
+        Iterator it = this.f54138a.iterator();
         Integer num = null;
         while (it.hasNext()) {
             n nVar = (n) it.next();

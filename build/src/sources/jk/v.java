@@ -5,10 +5,10 @@ import java.io.IOException;
 public class v extends IOException {
 
     /* renamed from: d  reason: collision with root package name */
-    private i0 f31169d;
+    private i0 f31170d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f31170e;
+    private boolean f31171e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class a extends v {
@@ -19,7 +19,7 @@ public class v extends IOException {
 
     public v(String str) {
         super(str);
-        this.f31169d = null;
+        this.f31170d = null;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -74,21 +74,21 @@ public class v extends IOException {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean a() {
-        return this.f31170e;
+        return this.f31171e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void j() {
-        this.f31170e = true;
+        this.f31171e = true;
     }
 
     public v k(i0 i0Var) {
-        this.f31169d = i0Var;
+        this.f31170d = i0Var;
         return this;
     }
 
     public v(IOException iOException) {
         super(iOException.getMessage(), iOException);
-        this.f31169d = null;
+        this.f31170d = null;
     }
 }

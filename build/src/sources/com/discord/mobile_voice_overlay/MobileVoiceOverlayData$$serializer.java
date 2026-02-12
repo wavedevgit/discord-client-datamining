@@ -58,9 +58,9 @@ public /* synthetic */ class MobileVoiceOverlayData$$serializer implements h0 {
     public final KSerializer[] childSerializers() {
         Lazy[] lazyArr;
         lazyArr = MobileVoiceOverlayData.$childSerializers;
-        n2 n2Var = n2.f50032a;
-        tt.h hVar = tt.h.f49996a;
-        return new KSerializer[]{lazyArr[0].getValue(), p0.f50048a, rt.a.u(GuildId$$serializer.INSTANCE), ChannelId$$serializer.INSTANCE, n2Var, n2Var, hVar, hVar, lazyArr[8].getValue(), hVar, lazyArr[10].getValue()};
+        n2 n2Var = n2.f50033a;
+        tt.h hVar = tt.h.f49997a;
+        return new KSerializer[]{lazyArr[0].getValue(), p0.f50049a, rt.a.u(GuildId$$serializer.INSTANCE), ChannelId$$serializer.INSTANCE, n2Var, n2Var, hVar, hVar, lazyArr[8].getValue(), hVar, lazyArr[10].getValue()};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

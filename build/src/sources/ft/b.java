@@ -10,16 +10,16 @@ import kotlinx.coroutines.s;
 public final class b extends s implements Executor {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final b f24362o = new b();
+    public static final b f24363o = new b();
 
     /* renamed from: p  reason: collision with root package name */
-    private static final CoroutineDispatcher f24363p;
+    private static final CoroutineDispatcher f24364p;
 
     static {
         int e10;
-        k kVar = k.f24380i;
+        k kVar = k.f24381i;
         e10 = h0.e("kotlinx.coroutines.io.parallelism", kotlin.ranges.d.d(64, f0.a()), 0, 0, 12, null);
-        f24363p = CoroutineDispatcher.E1(kVar, e10, null, 2, null);
+        f24364p = CoroutineDispatcher.E1(kVar, e10, null, 2, null);
     }
 
     private b() {
@@ -27,12 +27,12 @@ public final class b extends s implements Executor {
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
     public CoroutineDispatcher B1(int i10, String str) {
-        return k.f24380i.B1(i10, str);
+        return k.f24381i.B1(i10, str);
     }
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
     public void b1(CoroutineContext coroutineContext, Runnable runnable) {
-        f24363p.b1(coroutineContext, runnable);
+        f24364p.b1(coroutineContext, runnable);
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
@@ -42,7 +42,7 @@ public final class b extends s implements Executor {
 
     @Override // java.util.concurrent.Executor
     public void execute(Runnable runnable) {
-        b1(kotlin.coroutines.e.f32061d, runnable);
+        b1(kotlin.coroutines.e.f32062d, runnable);
     }
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
@@ -52,7 +52,7 @@ public final class b extends s implements Executor {
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
     public void w1(CoroutineContext coroutineContext, Runnable runnable) {
-        f24363p.w1(coroutineContext, runnable);
+        f24364p.w1(coroutineContext, runnable);
     }
 
     @Override // kotlinx.coroutines.s

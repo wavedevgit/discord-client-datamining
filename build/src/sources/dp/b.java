@@ -13,10 +13,10 @@ public interface b extends Parcelable {
         public static final Parcelable.Creator<a> CREATOR = new C0295a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f21836d;
+        private final String f21837d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f21837e;
+        private final String f21838e;
 
         /* renamed from: dp.b$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -38,8 +38,8 @@ public interface b extends Parcelable {
         public a(String name, String path) {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(path, "path");
-            this.f21836d = name;
-            this.f21837e = path;
+            this.f21837d = name;
+            this.f21838e = path;
         }
 
         @Override // android.os.Parcelable
@@ -55,27 +55,27 @@ public interface b extends Parcelable {
                 return false;
             }
             a aVar = (a) obj;
-            if (Intrinsics.areEqual(this.f21836d, aVar.f21836d) && Intrinsics.areEqual(this.f21837e, aVar.f21837e)) {
+            if (Intrinsics.areEqual(this.f21837d, aVar.f21837d) && Intrinsics.areEqual(this.f21838e, aVar.f21838e)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return (this.f21836d.hashCode() * 31) + this.f21837e.hashCode();
+            return (this.f21837d.hashCode() * 31) + this.f21838e.hashCode();
         }
 
         public String toString() {
-            String str = this.f21836d;
-            String str2 = this.f21837e;
+            String str = this.f21837d;
+            String str2 = this.f21838e;
             return "PageChange(name=" + str + ", path=" + str2 + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f21836d);
-            dest.writeString(this.f21837e);
+            dest.writeString(this.f21837d);
+            dest.writeString(this.f21838e);
         }
     }
 
@@ -86,10 +86,10 @@ public interface b extends Parcelable {
         public static final Parcelable.Creator<C0296b> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f21838d;
+        private final String f21839d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f21839e;
+        private final String f21840e;
 
         /* renamed from: dp.b$b$a */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -111,8 +111,8 @@ public interface b extends Parcelable {
         public C0296b(String inquiryId, String sessionToken) {
             Intrinsics.checkNotNullParameter(inquiryId, "inquiryId");
             Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
-            this.f21838d = inquiryId;
-            this.f21839e = sessionToken;
+            this.f21839d = inquiryId;
+            this.f21840e = sessionToken;
         }
 
         @Override // android.os.Parcelable
@@ -128,27 +128,27 @@ public interface b extends Parcelable {
                 return false;
             }
             C0296b c0296b = (C0296b) obj;
-            if (Intrinsics.areEqual(this.f21838d, c0296b.f21838d) && Intrinsics.areEqual(this.f21839e, c0296b.f21839e)) {
+            if (Intrinsics.areEqual(this.f21839d, c0296b.f21839d) && Intrinsics.areEqual(this.f21840e, c0296b.f21840e)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return (this.f21838d.hashCode() * 31) + this.f21839e.hashCode();
+            return (this.f21839d.hashCode() * 31) + this.f21840e.hashCode();
         }
 
         public String toString() {
-            String str = this.f21838d;
-            String str2 = this.f21839e;
+            String str = this.f21839d;
+            String str2 = this.f21840e;
             return "StartEvent(inquiryId=" + str + ", sessionToken=" + str2 + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f21838d);
-            dest.writeString(this.f21839e);
+            dest.writeString(this.f21839d);
+            dest.writeString(this.f21840e);
         }
     }
 }

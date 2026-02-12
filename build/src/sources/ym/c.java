@@ -30,43 +30,43 @@ import rm.l;
 public final class c extends ReactViewGroup {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ThemedReactContext f55635d;
+    private final ThemedReactContext f55636d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f55636e;
+    private final int f55637e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f55637i;
+    private boolean f55638i;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f55638o;
+    private boolean f55639o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f55639p;
+    private boolean f55640p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f55640q;
+    private boolean f55641q;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f55641r;
+    private boolean f55642r;
 
     /* renamed from: s  reason: collision with root package name */
-    private ReactViewGroup f55642s;
+    private ReactViewGroup f55643s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f55643t;
+    private int f55644t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f55644u;
+    private boolean f55645u;
 
     /* renamed from: v  reason: collision with root package name */
-    private k f55645v;
+    private k f55646v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final l f55646w;
+    private final l f55647w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final um.b f55647x;
+    private final um.b f55648x;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     /* synthetic */ class a extends FunctionReferenceImpl implements Function0 {
@@ -86,13 +86,13 @@ public final class c extends ReactViewGroup {
         super(reactContext);
         String str;
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
-        this.f55635d = reactContext;
+        this.f55636d = reactContext;
         int identityHashCode = System.identityHashCode(this);
-        this.f55636e = identityHashCode;
-        l lVar = new l(WindowInsetsCompat.p.h(), WindowInsetsCompat.p.c(), 1, this.f55638o);
-        this.f55646w = lVar;
-        this.f55647x = new um.b(this, reactContext, lVar, new a(this));
-        sm.a aVar = sm.a.f48171a;
+        this.f55637e = identityHashCode;
+        l lVar = new l(WindowInsetsCompat.p.h(), WindowInsetsCompat.p.c(), 1, this.f55639o);
+        this.f55647w = lVar;
+        this.f55648x = new um.b(this, reactContext, lVar, new a(this));
+        sm.a aVar = sm.a.f48172a;
         String a10 = d.a();
         Activity currentActivity = reactContext.getCurrentActivity();
         if (currentActivity != null) {
@@ -101,28 +101,28 @@ public final class c extends ReactViewGroup {
             str = null;
         }
         sm.a.c(aVar, a10, "init: instanceId=" + identityHashCode + ", activity=" + str, null, 4, null);
-        e.f55649a.b(this);
+        e.f55650a.b(this);
     }
 
     private final void g() {
         q();
-        this.f55647x.c();
+        this.f55648x.c();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final k getKeyboardCallback() {
-        return this.f55645v;
+        return this.f55646v;
     }
 
     private final void h() {
         boolean z10;
-        ReactViewGroup reactViewGroup = this.f55642s;
-        k kVar = this.f55645v;
+        ReactViewGroup reactViewGroup = this.f55643s;
+        k kVar = this.f55646v;
         if (reactViewGroup != null && kVar != null) {
             ViewParent parent = reactViewGroup.getParent();
             int identityHashCode = System.identityHashCode(parent);
             boolean z11 = true;
-            if (identityHashCode != this.f55643t) {
+            if (identityHashCode != this.f55644t) {
                 z10 = true;
             } else {
                 z10 = false;
@@ -137,10 +137,10 @@ public final class c extends ReactViewGroup {
             if (parent != null && !z10 && isAttachedToWindow && !l10 && visibility == 0 && isShown && windowToken != null && isLaidOut) {
                 return;
             }
-            sm.a aVar = sm.a.f48171a;
+            sm.a aVar = sm.a.f48172a;
             String a10 = d.a();
-            int i10 = this.f55636e;
-            int i11 = this.f55643t;
+            int i10 = this.f55637e;
+            int i11 = this.f55644t;
             if (windowToken == null) {
                 z11 = false;
             }
@@ -150,7 +150,7 @@ public final class c extends ReactViewGroup {
 
     private final void i() {
         n();
-        this.f55647x.b();
+        this.f55648x.b();
     }
 
     private final void j() {
@@ -169,15 +169,15 @@ public final class c extends ReactViewGroup {
     }
 
     private final void n() {
-        sm.a aVar = sm.a.f48171a;
+        sm.a aVar = sm.a.f48172a;
         String a10 = d.a();
-        int i10 = this.f55636e;
+        int i10 = this.f55637e;
         sm.a.c(aVar, a10, "removeKeyboardCallbacks: instanceId=" + i10, null, 4, null);
-        k kVar = this.f55645v;
+        k kVar = this.f55646v;
         if (kVar != null) {
             kVar.e();
         }
-        final ReactViewGroup reactViewGroup = this.f55642s;
+        final ReactViewGroup reactViewGroup = this.f55643s;
         new Handler(Looper.getMainLooper()).post(new Runnable() { // from class: ym.b
             @Override // java.lang.Runnable
             public final void run() {
@@ -193,10 +193,10 @@ public final class c extends ReactViewGroup {
 
     private final void q() {
         String str;
-        Activity currentActivity = this.f55635d.getCurrentActivity();
-        sm.a aVar = sm.a.f48171a;
+        Activity currentActivity = this.f55636d.getCurrentActivity();
+        sm.a aVar = sm.a.f48172a;
         String a10 = d.a();
-        int i10 = this.f55636e;
+        int i10 = this.f55637e;
         if (currentActivity != null) {
             str = currentActivity.getClass().getSimpleName();
         } else {
@@ -207,30 +207,30 @@ public final class c extends ReactViewGroup {
             sm.a.f(aVar, d.a(), "setupKeyboardCallbacks: currentActivity is null", null, 4, null);
             return;
         }
-        this.f55642s = new ReactViewGroup(getContext());
-        ViewGroup a11 = om.f.a(this.f55635d);
+        this.f55643s = new ReactViewGroup(getContext());
+        ViewGroup a11 = om.f.a(this.f55636d);
         if (a11 == null) {
             sm.a.f(aVar, d.a(), "setupKeyboardCallbacks: content is null", null, 4, null);
             return;
         }
-        a11.addView(this.f55642s);
-        this.f55643t = System.identityHashCode(a11);
+        a11.addView(this.f55643s);
+        this.f55644t = System.identityHashCode(a11);
         String a12 = d.a();
-        int i11 = this.f55643t;
+        int i11 = this.f55644t;
         sm.a.c(aVar, a12, "setupKeyboardCallbacks: eventView added to root (rootId=" + i11 + ")", null, 4, null);
-        k kVar = new k(this, this, this.f55635d, this.f55646w);
-        this.f55645v = kVar;
-        ReactViewGroup reactViewGroup = this.f55642s;
+        k kVar = new k(this, this, this.f55636d, this.f55647w);
+        this.f55646v = kVar;
+        ReactViewGroup reactViewGroup = this.f55643s;
         if (reactViewGroup != null) {
             i0.E0(reactViewGroup, kVar);
-            i0.x0(reactViewGroup, this.f55645v);
+            i0.x0(reactViewGroup, this.f55646v);
             i.d(reactViewGroup);
         }
         sm.a.c(aVar, d.a(), "setupKeyboardCallbacks: completed", null, 4, null);
     }
 
     private final void r() {
-        View b10 = om.f.b(this.f55635d);
+        View b10 = om.f.b(this.f55636d);
         if (b10 != null) {
             i0.x0(b10, new w() { // from class: ym.a
                 @Override // androidx.core.view.w
@@ -250,17 +250,17 @@ public final class c extends ReactViewGroup {
         Intrinsics.checkNotNullParameter(v10, "v");
         Intrinsics.checkNotNullParameter(insets, "insets");
         cVar.h();
-        ViewGroup a10 = om.f.a(cVar.f55635d);
+        ViewGroup a10 = om.f.a(cVar.f55636d);
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-1, -1);
-        boolean z11 = cVar.f55641r;
+        boolean z11 = cVar.f55642r;
         boolean z12 = true;
         int i11 = 0;
-        if (z11 && !cVar.f55637i) {
+        if (z11 && !cVar.f55638i) {
             z10 = false;
         } else {
             z10 = true;
         }
-        if (z11 && !cVar.f55638o) {
+        if (z11 && !cVar.f55639o) {
             z12 = false;
         }
         Insets f10 = insets.f(WindowInsetsCompat.p.f());
@@ -281,25 +281,25 @@ public final class c extends ReactViewGroup {
         if (a10 != null) {
             a10.setLayoutParams(layoutParams);
         }
-        return i.c(v10, insets, cVar.f55637i, cVar.f55641r);
+        return i.c(v10, insets, cVar.f55638i, cVar.f55642r);
     }
 
     public final boolean getActive() {
-        return this.f55641r;
+        return this.f55642r;
     }
 
     public final k getCallback$react_native_keyboard_controller_release() {
-        return this.f55645v;
+        return this.f55646v;
     }
 
     @NotNull
     public final ThemedReactContext getReactContext() {
-        return this.f55635d;
+        return this.f55636d;
     }
 
     public final void l(boolean z10) {
-        if (this.f55641r && this.f55637i != z10) {
-            this.f55637i = z10;
+        if (this.f55642r && this.f55638i != z10) {
+            this.f55638i = z10;
             m();
         }
     }
@@ -308,13 +308,13 @@ public final class c extends ReactViewGroup {
     @Override // com.facebook.react.views.view.ReactViewGroup, android.view.ViewGroup, android.view.View
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        sm.a aVar = sm.a.f48171a;
+        sm.a aVar = sm.a.f48172a;
         String a10 = d.a();
-        int i10 = this.f55636e;
-        boolean z10 = this.f55644u;
+        int i10 = this.f55637e;
+        boolean z10 = this.f55645u;
         sm.a.c(aVar, a10, "onAttachedToWindow: instanceId=" + i10 + ", wasMounted=" + z10, null, 4, null);
-        if (!this.f55644u) {
-            this.f55644u = true;
+        if (!this.f55645u) {
+            this.f55645u = true;
         } else {
             g();
         }
@@ -328,9 +328,9 @@ public final class c extends ReactViewGroup {
     @Override // android.view.ViewGroup, android.view.View
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        sm.a aVar = sm.a.f48171a;
+        sm.a aVar = sm.a.f48172a;
         String a10 = d.a();
-        int i10 = this.f55636e;
+        int i10 = this.f55637e;
         sm.a.c(aVar, a10, "onDetachedFromWindow: instanceId=" + i10, null, 4, null);
         i();
     }
@@ -338,18 +338,18 @@ public final class c extends ReactViewGroup {
     public final void p() {
         boolean z10;
         Window window;
-        if (!this.f55641r && !this.f55639p) {
+        if (!this.f55642r && !this.f55640p) {
             z10 = false;
         } else {
             z10 = true;
         }
-        if (this.f55640q != z10) {
-            this.f55640q = z10;
-            Activity currentActivity = this.f55635d.getCurrentActivity();
+        if (this.f55641q != z10) {
+            this.f55641q = z10;
+            Activity currentActivity = this.f55636d.getCurrentActivity();
             if (currentActivity != null) {
-                x0.c(currentActivity.getWindow(), true ^ this.f55640q);
+                x0.c(currentActivity.getWindow(), true ^ this.f55641q);
             }
-            Activity currentActivity2 = this.f55635d.getCurrentActivity();
+            Activity currentActivity2 = this.f55636d.getCurrentActivity();
             if (currentActivity2 != null && (window = currentActivity2.getWindow()) != null) {
                 window.clearFlags(IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET);
             }
@@ -357,12 +357,12 @@ public final class c extends ReactViewGroup {
     }
 
     public final void setActive(boolean z10) {
-        sm.a aVar = sm.a.f48171a;
+        sm.a aVar = sm.a.f48172a;
         String a10 = d.a();
-        int i10 = this.f55636e;
-        boolean z11 = this.f55641r;
+        int i10 = this.f55637e;
+        boolean z11 = this.f55642r;
         sm.a.c(aVar, a10, "setActive: instanceId=" + i10 + ", active=" + z10 + " (was " + z11 + ")", null, 4, null);
-        this.f55641r = z10;
+        this.f55642r = z10;
         if (z10) {
             k();
         } else {
@@ -371,19 +371,19 @@ public final class c extends ReactViewGroup {
     }
 
     public final void setCallback$react_native_keyboard_controller_release(k kVar) {
-        this.f55645v = kVar;
+        this.f55646v = kVar;
     }
 
     public final void setNavigationBarTranslucent(boolean z10) {
-        this.f55638o = z10;
-        this.f55646w.e(z10);
+        this.f55639o = z10;
+        this.f55647w.e(z10);
     }
 
     public final void setPreserveEdgeToEdge(boolean z10) {
-        this.f55639p = z10;
+        this.f55640p = z10;
     }
 
     public final void setStatusBarTranslucent(boolean z10) {
-        this.f55637i = z10;
+        this.f55638i = z10;
     }
 }

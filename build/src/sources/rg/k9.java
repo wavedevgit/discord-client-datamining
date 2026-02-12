@@ -5,7 +5,7 @@ import bj.c;
 final class k9 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k9 f46934a = new k9();
+    static final k9 f46935a = new k9();
 
     static {
         c.b a10 = bj.c.a("inferenceCommonLogEvent");

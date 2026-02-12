@@ -16,10 +16,10 @@ import java.util.Calendar;
 public final class MaterialCalendarGridView extends GridView {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Calendar f15606d;
+    private final Calendar f15607d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f15607e;
+    private final boolean f15608e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends androidx.core.view.a {
@@ -98,7 +98,7 @@ public final class MaterialCalendarGridView extends GridView {
 
     @Override // android.widget.GridView, android.widget.AbsListView, android.view.View
     public void onMeasure(int i10, int i11) {
-        if (this.f15607e) {
+        if (this.f15608e) {
             super.onMeasure(i10, View.MeasureSpec.makeMeasureSpec(16777215, Integer.MIN_VALUE));
             getLayoutParams().height = getMeasuredHeight();
             return;
@@ -117,12 +117,12 @@ public final class MaterialCalendarGridView extends GridView {
 
     public MaterialCalendarGridView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
-        this.f15606d = t.i();
+        this.f15607d = t.i();
         if (k.J(getContext())) {
             setNextFocusLeftId(bh.f.f6837a);
             setNextFocusRightId(bh.f.f6843d);
         }
-        this.f15607e = k.L(getContext());
+        this.f15608e = k.L(getContext());
         i0.k0(this, new a());
     }
 

@@ -71,14 +71,14 @@ public final class AddReactionView extends LinearLayout {
     /* JADX WARN: Multi-variable type inference failed */
     /* JADX WARN: Type inference failed for: r13v5, types: [java.lang.CharSequence] */
     public final void configure(ReactionView.ReactionsTheme reactionsTheme, boolean z10, @NotNull ReactAsset imageAsset, boolean z11, String str) {
-        int backgroundSurfaceHigh;
+        int backgroundModStrong;
         Integer reactionBackgroundColor;
         int textMuted;
         Integer reactionTextColor;
         Intrinsics.checkNotNullParameter(imageAsset, "imageAsset");
-        int backgroundSurfaceHigh2 = ThemeManagerKt.getTheme().getBackgroundSurfaceHigh();
+        int backgroundModStrong2 = ThemeManagerKt.getTheme().getBackgroundModStrong();
         ReactionView.Companion companion = ReactionView.Companion;
-        ViewBackgroundUtilsKt.setBackgroundRectangle$default(this, backgroundSurfaceHigh2, companion.getCORNER_RADIUS(), null, 0, 12, null);
+        ViewBackgroundUtilsKt.setBackgroundRectangle$default(this, backgroundModStrong2, companion.getCORNER_RADIUS(), null, 0, 12, null);
         Integer num = null;
         if (z11) {
             TextView addReactionText = this.binding.addReactionText;
@@ -118,14 +118,14 @@ public final class AddReactionView extends LinearLayout {
         ColorUtilsKt.setTintColor(addReactionImage2, Integer.valueOf(ThemeManagerKt.getTheme().getInteractiveTextDefault()));
         this.binding.addReactionImage.setScaleType(ImageView.ScaleType.FIT_CENTER);
         if (reactionsTheme != null && (reactionBackgroundColor = reactionsTheme.getReactionBackgroundColor()) != null) {
-            backgroundSurfaceHigh = reactionBackgroundColor.intValue();
+            backgroundModStrong = reactionBackgroundColor.intValue();
         } else {
-            backgroundSurfaceHigh = ThemeManagerKt.getTheme().getBackgroundSurfaceHigh();
+            backgroundModStrong = ThemeManagerKt.getTheme().getBackgroundModStrong();
         }
         if (reactionsTheme != null) {
             num = reactionsTheme.getReactionBorderColor();
         }
-        ViewBackgroundUtilsKt.setBackgroundRectangle(this, backgroundSurfaceHigh, companion.getCORNER_RADIUS(), num, companion.getSTROKE_WIDTH());
+        ViewBackgroundUtilsKt.setBackgroundRectangle(this, backgroundModStrong, companion.getCORNER_RADIUS(), num, companion.getSTROKE_WIDTH());
     }
 
     @Override // android.widget.LinearLayout, android.view.ViewGroup, android.view.View

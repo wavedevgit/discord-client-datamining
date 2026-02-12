@@ -11,32 +11,32 @@ import java.io.Closeable;
 public final class AnrIntegration implements io.sentry.k1, Closeable {
 
     /* renamed from: p  reason: collision with root package name */
-    private static c f28084p;
+    private static c f28085p;
 
     /* renamed from: q  reason: collision with root package name */
-    protected static final io.sentry.util.a f28085q = new io.sentry.util.a();
+    protected static final io.sentry.util.a f28086q = new io.sentry.util.a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Context f28086d;
+    private final Context f28087d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f28087e = false;
+    private boolean f28088e = false;
 
     /* renamed from: i  reason: collision with root package name */
-    private final io.sentry.util.a f28088i = new io.sentry.util.a();
+    private final io.sentry.util.a f28089i = new io.sentry.util.a();
 
     /* renamed from: o  reason: collision with root package name */
-    private k7 f28089o;
+    private k7 f28090o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements io.sentry.hints.a, io.sentry.hints.q {
 
         /* renamed from: a  reason: collision with root package name */
-        private final boolean f28090a;
+        private final boolean f28091a;
 
         a(boolean z10) {
-            this.f28090a = z10;
+            this.f28091a = z10;
         }
 
         @Override // io.sentry.hints.a
@@ -51,7 +51,7 @@ public final class AnrIntegration implements io.sentry.k1, Closeable {
 
         @Override // io.sentry.hints.a
         public String h() {
-            if (this.f28090a) {
+            if (this.f28091a) {
                 return "anr_background";
             }
             return "anr_foreground";
@@ -59,13 +59,13 @@ public final class AnrIntegration implements io.sentry.k1, Closeable {
     }
 
     public AnrIntegration(Context context) {
-        this.f28086d = e1.g(context);
+        this.f28087d = e1.g(context);
     }
 
     public static /* synthetic */ void a(AnrIntegration anrIntegration, io.sentry.w0 w0Var, SentryAndroidOptions sentryAndroidOptions) {
-        io.sentry.a1 a10 = anrIntegration.f28088i.a();
+        io.sentry.a1 a10 = anrIntegration.f28089i.a();
         try {
-            if (!anrIntegration.f28087e) {
+            if (!anrIntegration.f28088e) {
                 anrIntegration.s(w0Var, sentryAndroidOptions);
             }
             if (a10 != null) {
@@ -112,9 +112,9 @@ public final class AnrIntegration implements io.sentry.k1, Closeable {
     }
 
     private void s(final io.sentry.w0 w0Var, final SentryAndroidOptions sentryAndroidOptions) {
-        io.sentry.a1 a10 = f28085q.a();
+        io.sentry.a1 a10 = f28086q.a();
         try {
-            if (f28084p == null) {
+            if (f28085p == null) {
                 ILogger logger = sentryAndroidOptions.getLogger();
                 SentryLevel sentryLevel = SentryLevel.DEBUG;
                 logger.c(sentryLevel, "ANR timeout in milliseconds: %d", Long.valueOf(sentryAndroidOptions.getAnrTimeoutIntervalMillis()));
@@ -123,8 +123,8 @@ public final class AnrIntegration implements io.sentry.k1, Closeable {
                     public final void a(ApplicationNotResponding applicationNotResponding) {
                         AnrIntegration.this.p(w0Var, sentryAndroidOptions, applicationNotResponding);
                     }
-                }, sentryAndroidOptions.getLogger(), this.f28086d);
-                f28084p = cVar;
+                }, sentryAndroidOptions.getLogger(), this.f28087d);
+                f28085p = cVar;
                 cVar.start();
                 sentryAndroidOptions.getLogger().c(sentryLevel, "AnrIntegration installed.", new Object[0]);
             }
@@ -145,19 +145,19 @@ public final class AnrIntegration implements io.sentry.k1, Closeable {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        io.sentry.a1 a10 = this.f28088i.a();
+        io.sentry.a1 a10 = this.f28089i.a();
         try {
-            this.f28087e = true;
+            this.f28088e = true;
             if (a10 != null) {
                 a10.close();
             }
-            a10 = f28085q.a();
+            a10 = f28086q.a();
             try {
-                c cVar = f28084p;
+                c cVar = f28085p;
                 if (cVar != null) {
                     cVar.interrupt();
-                    f28084p = null;
-                    k7 k7Var = this.f28089o;
+                    f28085p = null;
+                    k7 k7Var = this.f28090o;
                     if (k7Var != null) {
                         k7Var.getLogger().c(SentryLevel.DEBUG, "AnrIntegration removed.", new Object[0]);
                     }
@@ -173,7 +173,7 @@ public final class AnrIntegration implements io.sentry.k1, Closeable {
 
     @Override // io.sentry.k1
     public final void h(io.sentry.w0 w0Var, k7 k7Var) {
-        this.f28089o = (k7) io.sentry.util.y.c(k7Var, "SentryOptions is required");
+        this.f28090o = (k7) io.sentry.util.y.c(k7Var, "SentryOptions is required");
         n(w0Var, (SentryAndroidOptions) k7Var);
     }
 

@@ -44,7 +44,7 @@ public /* synthetic */ class MobileVoiceOverlaySelectorResult$$serializer implem
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50032a;
+        n2 n2Var = n2.f50033a;
         return new KSerializer[]{GuildId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, n2Var, n2Var, n2Var};
     }
 

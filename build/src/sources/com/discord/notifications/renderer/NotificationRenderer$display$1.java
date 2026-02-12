@@ -82,7 +82,7 @@ public final class NotificationRenderer$display$1 extends k implements Function2
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Bitmap> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -135,7 +135,7 @@ public final class NotificationRenderer$display$1 extends k implements Function2
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Bitmap> continuation) {
-            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -194,6 +194,6 @@ public final class NotificationRenderer$display$1 extends k implements Function2
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((NotificationRenderer$display$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+        return ((NotificationRenderer$display$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

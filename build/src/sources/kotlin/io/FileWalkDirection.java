@@ -10,28 +10,28 @@ import kotlin.enums.EnumEntries;
 public final class FileWalkDirection {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final FileWalkDirection f32069d = new FileWalkDirection("TOP_DOWN", 0);
+    public static final FileWalkDirection f32070d = new FileWalkDirection("TOP_DOWN", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final FileWalkDirection f32070e = new FileWalkDirection("BOTTOM_UP", 1);
+    public static final FileWalkDirection f32071e = new FileWalkDirection("BOTTOM_UP", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ FileWalkDirection[] f32071i;
+    private static final /* synthetic */ FileWalkDirection[] f32072i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f32072o;
+    private static final /* synthetic */ EnumEntries f32073o;
 
     static {
         FileWalkDirection[] a10 = a();
-        f32071i = a10;
-        f32072o = a.a(a10);
+        f32072i = a10;
+        f32073o = a.a(a10);
     }
 
     private FileWalkDirection(String str, int i10) {
     }
 
     private static final /* synthetic */ FileWalkDirection[] a() {
-        return new FileWalkDirection[]{f32069d, f32070e};
+        return new FileWalkDirection[]{f32070d, f32071e};
     }
 
     public static FileWalkDirection valueOf(String str) {
@@ -39,6 +39,6 @@ public final class FileWalkDirection {
     }
 
     public static FileWalkDirection[] values() {
-        return (FileWalkDirection[]) f32071i.clone();
+        return (FileWalkDirection[]) f32072i.clone();
     }
 }

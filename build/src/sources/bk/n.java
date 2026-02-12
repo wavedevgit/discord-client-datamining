@@ -69,7 +69,7 @@ public final class n implements l {
         if (b(this.f7245d)) {
             this.f7243b = true;
             try {
-                this.f7248g = d(DynamiteModule.f14541c, "com.google.mlkit.dynamite.barcode", "com.google.mlkit.vision.barcode.bundled.internal.ThickBarcodeScannerCreator");
+                this.f7248g = d(DynamiteModule.f14542c, "com.google.mlkit.dynamite.barcode", "com.google.mlkit.vision.barcode.bundled.internal.ThickBarcodeScannerCreator");
             } catch (RemoteException e10) {
                 throw new sj.a("Failed to create thick barcode scanner.", 13, e10);
             } catch (DynamiteModule.a e11) {
@@ -86,7 +86,7 @@ public final class n implements l {
                 throw new sj.a("Waiting for the barcode module to be downloaded. Please wait.", 14);
             }
             try {
-                this.f7248g = d(DynamiteModule.f14540b, "com.google.android.gms.vision.barcode", "com.google.android.gms.vision.barcode.mlkit.BarcodeScannerCreator");
+                this.f7248g = d(DynamiteModule.f14541b, "com.google.android.gms.vision.barcode", "com.google.android.gms.vision.barcode.mlkit.BarcodeScannerCreator");
             } catch (RemoteException | DynamiteModule.a e12) {
                 b.e(this.f7247f, xe.OPTIONAL_MODULE_INIT_ERROR);
                 throw new sj.a("Failed to create thin barcode scanner.", 13, e12);

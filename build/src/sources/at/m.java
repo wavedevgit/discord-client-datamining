@@ -36,7 +36,7 @@ public final class m extends b0 {
 
     public final void C(int i10, boolean z10) {
         if (z10) {
-            y().w1((this.f21870i * f.f6145b) + i10);
+            y().w1((this.f21871i * f.f6145b) + i10);
         }
         t();
     }

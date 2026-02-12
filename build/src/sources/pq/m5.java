@@ -10,33 +10,33 @@ import kotlin.jvm.internal.Intrinsics;
 public final class m5 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f43022a;
+    private final Context f43023a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final LayoutInflater f43023b;
+    private final LayoutInflater f43024b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final LinkedList f43024c;
+    private final LinkedList f43025c;
 
     public m5(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f43022a = context;
+        this.f43023a = context;
         LayoutInflater from = LayoutInflater.from(context);
         Intrinsics.checkNotNullExpressionValue(from, "from(...)");
-        this.f43023b = from;
-        this.f43024c = new LinkedList();
+        this.f43024b = from;
+        this.f43025c = new LinkedList();
     }
 
     public final Context a() {
-        return this.f43022a;
+        return this.f43023a;
     }
 
     public final LayoutInflater b() {
-        return this.f43023b;
+        return this.f43024b;
     }
 
     public final void c() {
-        Iterator it = this.f43024c.iterator();
+        Iterator it = this.f43025c.iterator();
         Intrinsics.checkNotNullExpressionValue(it, "iterator(...)");
         while (it.hasNext()) {
             Object next = it.next();
@@ -47,6 +47,6 @@ public final class m5 {
 
     public final void d(Function0 cb2) {
         Intrinsics.checkNotNullParameter(cb2, "cb");
-        this.f43024c.add(cb2);
+        this.f43025c.add(cb2);
     }
 }

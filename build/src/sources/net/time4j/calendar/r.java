@@ -11,26 +11,26 @@ public final class r extends net.time4j.calendar.service.f implements l {
     private static final long serialVersionUID = 4275169663905222176L;
 
     /* renamed from: s  reason: collision with root package name */
-    private final transient bu.p f37399s;
+    private final transient bu.p f37400s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final transient bu.p f37400t;
+    private final transient bu.p f37401t;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static class a implements c0 {
 
         /* renamed from: d  reason: collision with root package name */
-        private final r f37401d;
+        private final r f37402d;
 
         a(r rVar) {
-            this.f37401d = rVar;
+            this.f37402d = rVar;
         }
 
         private int e(bu.q qVar) {
-            int m10 = qVar.m(this.f37401d.f37399s);
+            int m10 = qVar.m(this.f37402d.f37400s);
             while (true) {
                 int i10 = m10 + 7;
-                if (i10 <= ((Integer) qVar.v(this.f37401d.f37399s)).intValue()) {
+                if (i10 <= ((Integer) qVar.v(this.f37402d.f37400s)).intValue()) {
                     m10 = i10;
                 } else {
                     return zt.c.a(m10 - 1, 7) + 1;
@@ -53,7 +53,7 @@ public final class r extends net.time4j.calendar.service.f implements l {
         @Override // bu.c0
         /* renamed from: d */
         public int u(bu.q qVar) {
-            return zt.c.a(qVar.m(this.f37401d.f37399s) - 1, 7) + 1;
+            return zt.c.a(qVar.m(this.f37402d.f37400s) - 1, 7) + 1;
         }
 
         @Override // bu.z
@@ -94,7 +94,7 @@ public final class r extends net.time4j.calendar.service.f implements l {
         /* renamed from: l */
         public bu.q n(bu.q qVar, int i10, boolean z10) {
             if (j(qVar, i10)) {
-                return qVar.F(this.f37401d.L(i10, (y0) qVar.k(this.f37401d.f37400t)));
+                return qVar.F(this.f37402d.L(i10, (y0) qVar.k(this.f37402d.f37401t)));
             }
             throw new IllegalArgumentException("Invalid value: " + i10);
         }
@@ -114,19 +114,19 @@ public final class r extends net.time4j.calendar.service.f implements l {
     public static class b implements v {
 
         /* renamed from: d  reason: collision with root package name */
-        private final r f37402d;
+        private final r f37403d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final long f37403e;
+        private final long f37404e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final y0 f37404i;
+        private final y0 f37405i;
 
         b(r rVar, int i10, y0 y0Var) {
             if (y0Var != null) {
-                this.f37402d = rVar;
-                this.f37403e = i10;
-                this.f37404i = y0Var;
+                this.f37403d = rVar;
+                this.f37404e = i10;
+                this.f37405i = y0Var;
                 return;
             }
             throw new NullPointerException("Missing value.");
@@ -137,21 +137,21 @@ public final class r extends net.time4j.calendar.service.f implements l {
         public bu.q apply(bu.q qVar) {
             int d10;
             long a10;
-            y0 y0Var = (y0) qVar.k(this.f37402d.f37400t);
-            int m10 = qVar.m(this.f37402d.f37399s);
-            if (this.f37403e == 2147483647L) {
-                int intValue = ((Integer) qVar.v(this.f37402d.f37399s)).intValue() - m10;
+            y0 y0Var = (y0) qVar.k(this.f37403d.f37401t);
+            int m10 = qVar.m(this.f37403d.f37400s);
+            if (this.f37404e == 2147483647L) {
+                int intValue = ((Integer) qVar.v(this.f37403d.f37400s)).intValue() - m10;
                 int d11 = y0Var.d() + (intValue % 7);
                 if (d11 > 7) {
                     d11 -= 7;
                 }
-                int d12 = this.f37404i.d() - d11;
+                int d12 = this.f37405i.d() - d11;
                 a10 = intValue + d12;
                 if (d12 > 0) {
                     a10 -= 7;
                 }
             } else {
-                a10 = ((this.f37403e - (zt.c.a((m10 + d10) - 1, 7) + 1)) * 7) + (this.f37404i.d() - y0Var.d());
+                a10 = ((this.f37404e - (zt.c.a((m10 + d10) - 1, 7) + 1)) * 7) + (this.f37405i.d() - y0Var.d());
             }
             return qVar.D(a0.UTC, ((bu.g) qVar).i() + a10);
         }
@@ -161,10 +161,10 @@ public final class r extends net.time4j.calendar.service.f implements l {
     private static class c implements v {
 
         /* renamed from: d  reason: collision with root package name */
-        private final boolean f37405d;
+        private final boolean f37406d;
 
         c(boolean z10) {
-            this.f37405d = z10;
+            this.f37406d = z10;
         }
 
         @Override // bu.v
@@ -173,7 +173,7 @@ public final class r extends net.time4j.calendar.service.f implements l {
             long j10;
             a0 a0Var = a0.UTC;
             long longValue = ((Long) qVar.k(a0Var)).longValue();
-            if (this.f37405d) {
+            if (this.f37406d) {
                 j10 = longValue - 7;
             } else {
                 j10 = longValue + 7;
@@ -185,8 +185,8 @@ public final class r extends net.time4j.calendar.service.f implements l {
     /* JADX INFO: Access modifiers changed from: package-private */
     public r(Class cls, bu.p pVar, bu.p pVar2) {
         super("WEEKDAY_IN_MONTH", cls, 1, ((Integer) pVar.f()).intValue() / 7, 'F', new c(true), new c(false));
-        this.f37399s = pVar;
-        this.f37400t = pVar2;
+        this.f37400s = pVar;
+        this.f37401t = pVar2;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

@@ -66,7 +66,7 @@ public final class PortalFromJsViewHost extends ReactViewGroup {
         Intrinsics.checkNotNull(str);
         childViewRemoved(str);
         this.childView = null;
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     private final void replaceChildViewWithNextAvailableChild() {

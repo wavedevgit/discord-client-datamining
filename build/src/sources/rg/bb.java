@@ -5,7 +5,7 @@ import bj.c;
 final class bb implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final bb f46581a = new bb();
+    static final bb f46582a = new bb();
 
     static {
         c.b a10 = bj.c.a("errorSpace");

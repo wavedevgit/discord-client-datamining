@@ -14,61 +14,61 @@ import x3.h;
 public class f {
 
     /* renamed from: a  reason: collision with root package name */
-    public final Context f45970a;
+    public final Context f45971a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final String f45971b;
+    public final String f45972b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final h.c f45972c;
+    public final h.c f45973c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final u.e f45973d;
+    public final u.e f45974d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final List f45974e;
+    public final List f45975e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final boolean f45975f;
+    public final boolean f45976f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final u.d f45976g;
+    public final u.d f45977g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final Executor f45977h;
+    public final Executor f45978h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final Executor f45978i;
+    public final Executor f45979i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final Intent f45979j;
+    public final Intent f45980j;
 
     /* renamed from: k  reason: collision with root package name */
-    public final boolean f45980k;
+    public final boolean f45981k;
 
     /* renamed from: l  reason: collision with root package name */
-    public final boolean f45981l;
+    public final boolean f45982l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final Set f45982m;
+    private final Set f45983m;
 
     /* renamed from: n  reason: collision with root package name */
-    public final String f45983n;
+    public final String f45984n;
 
     /* renamed from: o  reason: collision with root package name */
-    public final File f45984o;
+    public final File f45985o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final Callable f45985p;
+    public final Callable f45986p;
 
     /* renamed from: q  reason: collision with root package name */
-    public final List f45986q;
+    public final List f45987q;
 
     /* renamed from: r  reason: collision with root package name */
-    public final List f45987r;
+    public final List f45988r;
 
     /* renamed from: s  reason: collision with root package name */
-    public final boolean f45988s;
+    public final boolean f45989s;
 
     public f(Context context, String str, h.c sqliteOpenHelperFactory, u.e migrationContainer, List list, boolean z10, u.d journalMode, Executor queryExecutor, Executor transactionExecutor, Intent intent, boolean z11, boolean z12, Set set, String str2, File file, Callable callable, u.f fVar, List typeConverters, List autoMigrationSpecs) {
         boolean z13;
@@ -80,35 +80,35 @@ public class f {
         Intrinsics.checkNotNullParameter(transactionExecutor, "transactionExecutor");
         Intrinsics.checkNotNullParameter(typeConverters, "typeConverters");
         Intrinsics.checkNotNullParameter(autoMigrationSpecs, "autoMigrationSpecs");
-        this.f45970a = context;
-        this.f45971b = str;
-        this.f45972c = sqliteOpenHelperFactory;
-        this.f45973d = migrationContainer;
-        this.f45974e = list;
-        this.f45975f = z10;
-        this.f45976g = journalMode;
-        this.f45977h = queryExecutor;
-        this.f45978i = transactionExecutor;
-        this.f45979j = intent;
-        this.f45980k = z11;
-        this.f45981l = z12;
-        this.f45982m = set;
-        this.f45983n = str2;
-        this.f45984o = file;
-        this.f45985p = callable;
-        this.f45986q = typeConverters;
-        this.f45987r = autoMigrationSpecs;
+        this.f45971a = context;
+        this.f45972b = str;
+        this.f45973c = sqliteOpenHelperFactory;
+        this.f45974d = migrationContainer;
+        this.f45975e = list;
+        this.f45976f = z10;
+        this.f45977g = journalMode;
+        this.f45978h = queryExecutor;
+        this.f45979i = transactionExecutor;
+        this.f45980j = intent;
+        this.f45981k = z11;
+        this.f45982l = z12;
+        this.f45983m = set;
+        this.f45984n = str2;
+        this.f45985o = file;
+        this.f45986p = callable;
+        this.f45987q = typeConverters;
+        this.f45988r = autoMigrationSpecs;
         if (intent != null) {
             z13 = true;
         } else {
             z13 = false;
         }
-        this.f45988s = z13;
+        this.f45989s = z13;
     }
 
     public boolean a(int i10, int i11) {
         Set set;
-        if ((i10 > i11 && this.f45981l) || !this.f45980k || ((set = this.f45982m) != null && set.contains(Integer.valueOf(i10)))) {
+        if ((i10 > i11 && this.f45982l) || !this.f45981k || ((set = this.f45983m) != null && set.contains(Integer.valueOf(i10)))) {
             return false;
         }
         return true;

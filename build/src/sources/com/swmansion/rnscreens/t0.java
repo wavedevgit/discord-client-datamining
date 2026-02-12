@@ -7,11 +7,11 @@ import kotlin.jvm.internal.Intrinsics;
 public final class t0 extends LayoutShadowNode {
 
     /* renamed from: a  reason: collision with root package name */
-    private ReactContext f19367a;
+    private ReactContext f19368a;
 
     public t0(ReactContext context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f19367a = context;
+        this.f19368a = context;
     }
 
     @Override // com.facebook.react.uimanager.ReactShadowNodeImpl, com.facebook.react.uimanager.ReactShadowNode

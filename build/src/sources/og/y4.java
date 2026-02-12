@@ -5,7 +5,7 @@ import bj.c;
 final class y4 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final y4 f39850a = new y4();
+    static final y4 f39851a = new y4();
 
     static {
         c.b a10 = bj.c.a("logEventKey");

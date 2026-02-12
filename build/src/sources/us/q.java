@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class q implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final a0 f51127d;
+    private final a0 f51128d;
 
     public q(a0 a0Var) {
-        this.f51127d = a0Var;
+        this.f51128d = a0Var;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         List d10;
-        d10 = a0.d(this.f51127d);
+        d10 = a0.d(this.f51128d);
         return d10;
     }
 }

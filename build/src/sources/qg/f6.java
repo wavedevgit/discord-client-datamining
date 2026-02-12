@@ -5,37 +5,37 @@ import bj.c;
 final class f6 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final f6 f44439a = new f6();
+    static final f6 f44440a = new f6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f44440b;
+    private static final bj.c f44441b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f44441c;
+    private static final bj.c f44442c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f44442d;
+    private static final bj.c f44443d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final bj.c f44443e;
+    private static final bj.c f44444e;
 
     static {
         c.b a10 = bj.c.a("category");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44440b = a10.b(s1Var.b()).a();
+        f44441b = a10.b(s1Var.b()).a();
         c.b a11 = bj.c.a("classificationConfidence");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44441c = a11.b(s1Var2.b()).a();
+        f44442c = a11.b(s1Var2.b()).a();
         c.b a12 = bj.c.a("trackingId");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44442d = a12.b(s1Var3.b()).a();
+        f44443d = a12.b(s1Var3.b()).a();
         c.b a13 = bj.c.a("labelCount");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f44443e = a13.b(s1Var4.b()).a();
+        f44444e = a13.b(s1Var4.b()).a();
     }
 
     private f6() {

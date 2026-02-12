@@ -159,7 +159,7 @@ public final class f implements k {
     }
 
     private long i(long j10) {
-        return this.f6590m + ((j10 * 1000000) / this.f6581d.f38834d);
+        return this.f6590m + ((j10 * 1000000) / this.f6581d.f38835d);
     }
 
     private g k(l lVar, boolean z10) {
@@ -176,8 +176,8 @@ public final class f implements k {
                 Metadata.b d10 = metadata.d(i10);
                 if (d10 instanceof md.m) {
                     md.m mVar = (md.m) d10;
-                    if (mVar.f36314d.equals("TLEN")) {
-                        return w0.K0(Long.parseLong((String) mVar.f36327o.get(0)));
+                    if (mVar.f36315d.equals("TLEN")) {
+                        return w0.K0(Long.parseLong((String) mVar.f36328o.get(0)));
                     }
                 }
             }
@@ -226,15 +226,15 @@ public final class f implements k {
     }
 
     private g p(l lVar) {
-        h0 h0Var = new h0(this.f6581d.f38833c);
-        lVar.n(h0Var.e(), 0, this.f6581d.f38833c);
+        h0 h0Var = new h0(this.f6581d.f38834c);
+        lVar.n(h0Var.e(), 0, this.f6581d.f38834c);
         u.a aVar = this.f6581d;
         int i10 = 21;
-        if ((aVar.f38831a & 1) != 0) {
-            if (aVar.f38835e != 1) {
+        if ((aVar.f38832a & 1) != 0) {
+            if (aVar.f38836e != 1) {
                 i10 = 36;
             }
-        } else if (aVar.f38835e == 1) {
+        } else if (aVar.f38836e == 1) {
             i10 = 13;
         }
         int i11 = i10;
@@ -242,7 +242,7 @@ public final class f implements k {
         if (m10 != 1483304551 && m10 != 1231971951) {
             if (m10 == 1447187017) {
                 h a10 = h.a(lVar.getLength(), lVar.getPosition(), this.f6581d, h0Var);
-                lVar.k(this.f6581d.f38833c);
+                lVar.k(this.f6581d.f38834c);
                 return a10;
             }
             lVar.e();
@@ -256,7 +256,7 @@ public final class f implements k {
             this.f6580c.U(0);
             this.f6582e.d(this.f6580c.K());
         }
-        lVar.k(this.f6581d.f38833c);
+        lVar.k(this.f6581d.f38834c);
         if (a11 != null && !a11.g() && m10 == 1231971951) {
             return k(lVar, false);
         }
@@ -292,7 +292,7 @@ public final class f implements k {
             this.f6594q = g10;
             this.f6585h.j(g10);
             b0 b0Var = this.f6587j;
-            Format.b Q = new Format.b().g0(this.f6581d.f38832b).Y(RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT).J(this.f6581d.f38835e).h0(this.f6581d.f38834d).P(this.f6582e.f50707a).Q(this.f6582e.f50708b);
+            Format.b Q = new Format.b().g0(this.f6581d.f38833b).Y(RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT).J(this.f6581d.f38836e).h0(this.f6581d.f38835d).P(this.f6582e.f50708a).Q(this.f6582e.f50709b);
             if ((this.f6578a & 8) != 0) {
                 metadata = null;
             } else {
@@ -327,11 +327,11 @@ public final class f implements k {
                         this.f6590m += this.f6579b - this.f6594q.b(0L);
                     }
                 }
-                this.f6593p = this.f6581d.f38833c;
+                this.f6593p = this.f6581d.f38834c;
                 g gVar = this.f6594q;
                 if (gVar instanceof b) {
                     b bVar = (b) gVar;
-                    bVar.c(i(this.f6591n + aVar.f38837g), lVar.getPosition() + this.f6581d.f38833c);
+                    bVar.c(i(this.f6591n + aVar.f38838g), lVar.getPosition() + this.f6581d.f38834c);
                     if (this.f6596s && bVar.a(this.f6597t)) {
                         this.f6596s = false;
                         this.f6587j = this.f6586i;
@@ -352,8 +352,8 @@ public final class f implements k {
         if (i10 > 0) {
             return 0;
         }
-        this.f6587j.a(i(this.f6591n), 1, this.f6581d.f38833c, 0, null);
-        this.f6591n += this.f6581d.f38837g;
+        this.f6587j.a(i(this.f6591n), 1, this.f6581d.f38834c, 0, null);
+        this.f6591n += this.f6581d.f38838g;
         this.f6593p = 0;
         return 0;
     }

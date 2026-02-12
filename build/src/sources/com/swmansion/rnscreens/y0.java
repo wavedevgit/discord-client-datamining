@@ -16,49 +16,49 @@ import kotlin.jvm.internal.Intrinsics;
 public final class y0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private static boolean f19412b;
+    private static boolean f19413b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static boolean f19413c;
+    private static boolean f19414c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static boolean f19414d;
+    private static boolean f19415d;
 
     /* renamed from: a  reason: collision with root package name */
-    public static final y0 f19411a = new y0();
+    public static final y0 f19412a = new y0();
 
     /* renamed from: e  reason: collision with root package name */
-    private static b f19415e = new b();
+    private static b f19416e = new b();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f19416a;
+        public static final /* synthetic */ int[] f19417a;
 
         static {
             int[] iArr = new int[Screen.b.values().length];
             try {
-                iArr[Screen.b.f19059d.ordinal()] = 1;
+                iArr[Screen.b.f19060d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[Screen.b.f19060e.ordinal()] = 2;
+                iArr[Screen.b.f19061e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[Screen.b.f19061i.ordinal()] = 3;
+                iArr[Screen.b.f19062i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr[Screen.b.f19062o.ordinal()] = 4;
+                iArr[Screen.b.f19063o.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                iArr[Screen.b.f19063p.ordinal()] = 5;
+                iArr[Screen.b.f19064p.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
-            f19416a = iArr;
+            f19417a = iArr;
         }
     }
 
@@ -90,7 +90,7 @@ public final class y0 {
     }
 
     private final boolean f(Screen screen, Screen.b bVar) {
-        int i10 = a.f19416a[bVar.ordinal()];
+        int i10 = a.f19417a[bVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
@@ -129,7 +129,7 @@ public final class y0 {
         if (screen != null && (fragmentWrapper = screen.getFragmentWrapper()) != null) {
             for (ScreenContainer screenContainer : fragmentWrapper.k()) {
                 Screen topScreen = screenContainer.getTopScreen();
-                y0 y0Var = f19411a;
+                y0 y0Var = f19412a;
                 Screen g10 = y0Var.g(topScreen, bVar);
                 if (g10 != null) {
                     return g10;
@@ -183,15 +183,15 @@ public final class y0 {
     }
 
     public final void c() {
-        f19414d = true;
+        f19415d = true;
     }
 
     public final void d() {
-        f19412b = true;
+        f19413b = true;
     }
 
     public final void e() {
-        f19413c = true;
+        f19414c = true;
     }
 
     public final void k(Screen screen, Activity activity) {
@@ -201,7 +201,7 @@ public final class y0 {
         if (activity == null) {
             return;
         }
-        Screen i10 = i(screen, Screen.b.f19061i);
+        Screen i10 = i(screen, Screen.b.f19062i);
         if (i10 != null && (isStatusBarHidden = i10.isStatusBarHidden()) != null) {
             z10 = isStatusBarHidden.booleanValue();
         } else {
@@ -225,7 +225,7 @@ public final class y0 {
             return;
         }
         Window window = activity.getWindow();
-        Screen i10 = i(screen, Screen.b.f19063p);
+        Screen i10 = i(screen, Screen.b.f19064p);
         if (i10 != null && (isNavigationBarHidden = i10.isNavigationBarHidden()) != null) {
             z10 = isNavigationBarHidden.booleanValue();
         } else {
@@ -247,7 +247,7 @@ public final class y0 {
         if (activity == null) {
             return;
         }
-        Screen i11 = i(screen, Screen.b.f19059d);
+        Screen i11 = i(screen, Screen.b.f19060d);
         if (i11 != null && (screenOrientation = i11.getScreenOrientation()) != null) {
             i10 = screenOrientation.intValue();
         } else {
@@ -259,7 +259,7 @@ public final class y0 {
     public final void o(Screen screen, final Activity activity, ReactContext reactContext) {
         Intrinsics.checkNotNullParameter(screen, "screen");
         if (activity != null && reactContext != null) {
-            Screen i10 = i(screen, Screen.b.f19060e);
+            Screen i10 = i(screen, Screen.b.f19061e);
             final String str = (i10 == null || (str = i10.getStatusBarStyle()) == null) ? "light" : "light";
             UiThreadUtil.runOnUiThread(new Runnable() { // from class: com.swmansion.rnscreens.x0
                 @Override // java.lang.Runnable
@@ -272,14 +272,14 @@ public final class y0 {
 
     public final void p(Screen screen, Activity activity, ReactContext reactContext) {
         Intrinsics.checkNotNullParameter(screen, "screen");
-        if (f19412b) {
+        if (f19413b) {
             m(screen, activity);
         }
-        if (f19413c) {
+        if (f19414c) {
             o(screen, activity, reactContext);
             k(screen, activity);
         }
-        if (f19414d) {
+        if (f19415d) {
             l(screen, activity);
         }
     }

@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class DocumentFileUploadResponseJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19521a;
+    private final m.b f19522a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19522b;
+    private final h f19523b;
 
     public DocumentFileUploadResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("data");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19521a = a10;
+        this.f19522a = a10;
         h f10 = moshi.f(DocumentFileData.class, x0.d(), "data");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19522b = f10;
+        this.f19523b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -35,9 +35,9 @@ public final class DocumentFileUploadResponseJsonAdapter extends h {
         reader.u();
         DocumentFileData documentFileData = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19521a);
+            int J = reader.J(this.f19522a);
             if (J != -1) {
-                if (J == 0 && (documentFileData = (DocumentFileData) this.f19522b.fromJson(reader)) == null) {
+                if (J == 0 && (documentFileData = (DocumentFileData) this.f19523b.fromJson(reader)) == null) {
                     throw dn.c.x("data_", "data", reader);
                 }
             } else {
@@ -59,7 +59,7 @@ public final class DocumentFileUploadResponseJsonAdapter extends h {
         if (documentFileUploadResponse != null) {
             writer.i();
             writer.J("data");
-            this.f19522b.toJson(writer, documentFileUploadResponse.a());
+            this.f19523b.toJson(writer, documentFileUploadResponse.a());
             writer.s();
             return;
         }

@@ -6,17 +6,17 @@ import e0.f;
 final class a extends f.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f22171a;
+    private final String f22172a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final e1 f22172b;
+    private final e1 f22173b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(String str, e1 e1Var) {
         if (str != null) {
-            this.f22171a = str;
+            this.f22172a = str;
             if (e1Var != null) {
-                this.f22172b = e1Var;
+                this.f22173b = e1Var;
                 return;
             }
             throw new NullPointerException("Null cameraConfigId");
@@ -26,12 +26,12 @@ final class a extends f.b {
 
     @Override // e0.f.b
     public e1 b() {
-        return this.f22172b;
+        return this.f22173b;
     }
 
     @Override // e0.f.b
     public String c() {
-        return this.f22171a;
+        return this.f22172a;
     }
 
     public boolean equals(Object obj) {
@@ -40,7 +40,7 @@ final class a extends f.b {
         }
         if (obj instanceof f.b) {
             f.b bVar = (f.b) obj;
-            if (this.f22171a.equals(bVar.c()) && this.f22172b.equals(bVar.b())) {
+            if (this.f22172a.equals(bVar.c()) && this.f22173b.equals(bVar.b())) {
                 return true;
             }
         }
@@ -48,10 +48,10 @@ final class a extends f.b {
     }
 
     public int hashCode() {
-        return ((this.f22171a.hashCode() ^ 1000003) * 1000003) ^ this.f22172b.hashCode();
+        return ((this.f22172a.hashCode() ^ 1000003) * 1000003) ^ this.f22173b.hashCode();
     }
 
     public String toString() {
-        return "CameraId{cameraIdString=" + this.f22171a + ", cameraConfigId=" + this.f22172b + "}";
+        return "CameraId{cameraIdString=" + this.f22172a + ", cameraConfigId=" + this.f22173b + "}";
     }
 }

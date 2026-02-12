@@ -9,16 +9,16 @@ public final class JavaNullabilityAnnotationsStatus {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final JavaNullabilityAnnotationsStatus f32694d = new JavaNullabilityAnnotationsStatus(ReportLevel.STRICT, null, null, 6, null);
+    private static final JavaNullabilityAnnotationsStatus f32695d = new JavaNullabilityAnnotationsStatus(ReportLevel.STRICT, null, null, 6, null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final ReportLevel f32695a;
+    private final ReportLevel f32696a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final as.j f32696b;
+    private final as.j f32697b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ReportLevel f32697c;
+    private final ReportLevel f32698c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -28,7 +28,7 @@ public final class JavaNullabilityAnnotationsStatus {
 
         @NotNull
         public final JavaNullabilityAnnotationsStatus getDEFAULT() {
-            return JavaNullabilityAnnotationsStatus.f32694d;
+            return JavaNullabilityAnnotationsStatus.f32695d;
         }
 
         private Companion() {
@@ -38,9 +38,9 @@ public final class JavaNullabilityAnnotationsStatus {
     public JavaNullabilityAnnotationsStatus(@NotNull ReportLevel reportLevelBefore, as.j jVar, @NotNull ReportLevel reportLevelAfter) {
         Intrinsics.checkNotNullParameter(reportLevelBefore, "reportLevelBefore");
         Intrinsics.checkNotNullParameter(reportLevelAfter, "reportLevelAfter");
-        this.f32695a = reportLevelBefore;
-        this.f32696b = jVar;
-        this.f32697c = reportLevelAfter;
+        this.f32696a = reportLevelBefore;
+        this.f32697b = jVar;
+        this.f32698c = reportLevelAfter;
     }
 
     public boolean equals(Object obj) {
@@ -49,34 +49,34 @@ public final class JavaNullabilityAnnotationsStatus {
         }
         if (obj instanceof JavaNullabilityAnnotationsStatus) {
             JavaNullabilityAnnotationsStatus javaNullabilityAnnotationsStatus = (JavaNullabilityAnnotationsStatus) obj;
-            return this.f32695a == javaNullabilityAnnotationsStatus.f32695a && Intrinsics.areEqual(this.f32696b, javaNullabilityAnnotationsStatus.f32696b) && this.f32697c == javaNullabilityAnnotationsStatus.f32697c;
+            return this.f32696a == javaNullabilityAnnotationsStatus.f32696a && Intrinsics.areEqual(this.f32697b, javaNullabilityAnnotationsStatus.f32697b) && this.f32698c == javaNullabilityAnnotationsStatus.f32698c;
         }
         return false;
     }
 
     @NotNull
     public final ReportLevel getReportLevelAfter() {
-        return this.f32697c;
+        return this.f32698c;
     }
 
     @NotNull
     public final ReportLevel getReportLevelBefore() {
-        return this.f32695a;
+        return this.f32696a;
     }
 
     public final as.j getSinceVersion() {
-        return this.f32696b;
+        return this.f32697b;
     }
 
     public int hashCode() {
-        int hashCode = this.f32695a.hashCode() * 31;
-        as.j jVar = this.f32696b;
-        return ((hashCode + (jVar == null ? 0 : jVar.hashCode())) * 31) + this.f32697c.hashCode();
+        int hashCode = this.f32696a.hashCode() * 31;
+        as.j jVar = this.f32697b;
+        return ((hashCode + (jVar == null ? 0 : jVar.hashCode())) * 31) + this.f32698c.hashCode();
     }
 
     @NotNull
     public String toString() {
-        return "JavaNullabilityAnnotationsStatus(reportLevelBefore=" + this.f32695a + ", sinceVersion=" + this.f32696b + ", reportLevelAfter=" + this.f32697c + ')';
+        return "JavaNullabilityAnnotationsStatus(reportLevelBefore=" + this.f32696a + ", sinceVersion=" + this.f32697b + ", reportLevelAfter=" + this.f32698c + ')';
     }
 
     public /* synthetic */ JavaNullabilityAnnotationsStatus(ReportLevel reportLevel, as.j jVar, ReportLevel reportLevel2, int i10, DefaultConstructorMarker defaultConstructorMarker) {

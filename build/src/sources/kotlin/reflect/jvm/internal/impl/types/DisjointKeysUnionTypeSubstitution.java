@@ -10,10 +10,10 @@ public final class DisjointKeysUnionTypeSubstitution extends TypeSubstitution {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final TypeSubstitution f34541a;
+    private final TypeSubstitution f34542a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final TypeSubstitution f34542b;
+    private final TypeSubstitution f34543b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -49,7 +49,7 @@ public final class DisjointKeysUnionTypeSubstitution extends TypeSubstitution {
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeSubstitution
     public boolean approximateCapturedTypes() {
-        if (!this.f34541a.approximateCapturedTypes() && !this.f34542b.approximateCapturedTypes()) {
+        if (!this.f34542a.approximateCapturedTypes() && !this.f34543b.approximateCapturedTypes()) {
             return false;
         }
         return true;
@@ -57,7 +57,7 @@ public final class DisjointKeysUnionTypeSubstitution extends TypeSubstitution {
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeSubstitution
     public boolean approximateContravariantCapturedTypes() {
-        if (!this.f34541a.approximateContravariantCapturedTypes() && !this.f34542b.approximateContravariantCapturedTypes()) {
+        if (!this.f34542a.approximateContravariantCapturedTypes() && !this.f34543b.approximateContravariantCapturedTypes()) {
             return false;
         }
         return true;
@@ -67,18 +67,18 @@ public final class DisjointKeysUnionTypeSubstitution extends TypeSubstitution {
     @NotNull
     public Annotations filterAnnotations(@NotNull Annotations annotations) {
         Intrinsics.checkNotNullParameter(annotations, "annotations");
-        return this.f34542b.filterAnnotations(this.f34541a.filterAnnotations(annotations));
+        return this.f34543b.filterAnnotations(this.f34542a.filterAnnotations(annotations));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeSubstitution
     /* renamed from: get */
-    public TypeProjection mo1205get(@NotNull KotlinType key) {
+    public TypeProjection mo1204get(@NotNull KotlinType key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        TypeProjection mo1205get = this.f34541a.mo1205get(key);
-        if (mo1205get == null) {
-            return this.f34542b.mo1205get(key);
+        TypeProjection mo1204get = this.f34542a.mo1204get(key);
+        if (mo1204get == null) {
+            return this.f34543b.mo1204get(key);
         }
-        return mo1205get;
+        return mo1204get;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeSubstitution
@@ -91,11 +91,11 @@ public final class DisjointKeysUnionTypeSubstitution extends TypeSubstitution {
     public KotlinType prepareTopLevelType(@NotNull KotlinType topLevelType, @NotNull Variance position) {
         Intrinsics.checkNotNullParameter(topLevelType, "topLevelType");
         Intrinsics.checkNotNullParameter(position, "position");
-        return this.f34542b.prepareTopLevelType(this.f34541a.prepareTopLevelType(topLevelType, position), position);
+        return this.f34543b.prepareTopLevelType(this.f34542a.prepareTopLevelType(topLevelType, position), position);
     }
 
     private DisjointKeysUnionTypeSubstitution(TypeSubstitution typeSubstitution, TypeSubstitution typeSubstitution2) {
-        this.f34541a = typeSubstitution;
-        this.f34542b = typeSubstitution2;
+        this.f34542a = typeSubstitution;
+        this.f34543b = typeSubstitution2;
     }
 }

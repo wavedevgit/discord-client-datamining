@@ -10,7 +10,7 @@ import java.util.Arrays;
 abstract class y extends o1 {
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f14538c;
+    private final int f14539c;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public y(byte[] bArr) {
@@ -21,7 +21,7 @@ abstract class y extends o1 {
             z10 = false;
         }
         hf.q.a(z10);
-        this.f14538c = Arrays.hashCode(bArr);
+        this.f14539c = Arrays.hashCode(bArr);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -45,7 +45,7 @@ abstract class y extends o1 {
         }
         try {
             p1 p1Var = (p1) obj;
-            if (p1Var.h() != this.f14538c || (b10 = p1Var.b()) == null) {
+            if (p1Var.h() != this.f14539c || (b10 = p1Var.b()) == null) {
                 return false;
             }
             return Arrays.equals(f(), (byte[]) tf.b.i(b10));
@@ -59,10 +59,10 @@ abstract class y extends o1 {
 
     @Override // hf.p1
     public final int h() {
-        return this.f14538c;
+        return this.f14539c;
     }
 
     public final int hashCode() {
-        return this.f14538c;
+        return this.f14539c;
     }
 }

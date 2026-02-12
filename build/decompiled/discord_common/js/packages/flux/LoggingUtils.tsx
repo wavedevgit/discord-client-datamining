@@ -947,7 +947,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var6 < var5;
                 case 347:
                     if (var3) {
-                        _fun7219_ip = 538;
+                        _fun7219_ip = 535;
                         continue _fun7219
                     }
                 case 353:
@@ -957,12 +957,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var11 = var1 == var5;
                     var3 = undefined;
                     if (var11) {
-                        _fun7219_ip = 381;
+                        _fun7219_ip = 380;
                         continue _fun7219
                     }
-                case 376:
+                case 375:
                     var3 = var5.HermesInternal;
-                case 381:
+                case 380:
                     var5 = 'Using Hermes:';
                     var3 = var8 === var3;
                     var3 = !var3;
@@ -973,17 +973,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = '';
                     var7 = var8;
                     if (!var1) {
-                        _fun7219_ip = 455;
+                        _fun7219_ip = 453;
                         continue _fun7219
                     }
-                case 424:
+                case 422:
                     var1 = global;
                     var1 = var1.HermesInternal;
                     var11 = var1.concat;
                     var3 = '\n\n=== ';
                     var1 = ' ===';
                     var7 = var11.bind(var3)(var12, var1);
-                case 455:
+                case 453:
                     var1 = global;
                     var3 = var1.HermesInternal;
                     var3 = var3.concat;
@@ -1003,7 +1003,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = 'ms';
                     var1 = var5.bind(var4)(var6, var1);
                     var1 = var2.bind(var3)(var1);
-                case 538:
+                case 535:
                     return var0;
             }
         };
@@ -1250,7 +1250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var5 < var4;
                 case 291:
                     if (var3) {
-                        _fun7223_ip = 429;
+                        _fun7223_ip = 428;
                         continue _fun7223
                     }
                 case 297:
@@ -1261,12 +1261,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = var2 == var3;
                     var2 = undefined;
                     if (var7) {
-                        _fun7223_ip = 327;
+                        _fun7223_ip = 326;
                         continue _fun7223
                     }
-                case 322:
+                case 321:
                     var2 = var3.HermesInternal;
-                case 327:
+                case 326:
                     var3 = var1.HermesInternal;
                     var7 = var3.concat;
                     var3 = '\nUsing Hermes: ';
@@ -1286,7 +1286,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = 'ms\n\n';
                     var1 = var7.bind(var6)(var8, var1);
                     var1 = var4.bind(var5)(var3, var2, var1);
-                case 429:
+                case 428:
                     return var0;
             }
         };

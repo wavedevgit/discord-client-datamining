@@ -20,72 +20,72 @@ import wp.x0;
 public final class a implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f55067a;
+    private final ConstraintLayout f55068a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final Button f55068b;
+    public final Button f55069b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final Camera2PreviewView f55069c;
+    public final Camera2PreviewView f55070c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final View f55070d;
+    public final View f55071d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final TextView f55071e;
+    public final TextView f55072e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final TextView f55072f;
+    public final TextView f55073f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final ProgressBar f55073g;
+    public final ProgressBar f55074g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final Pi2NavigationBar f55074h;
+    public final Pi2NavigationBar f55075h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final Barrier f55075i;
+    public final Barrier f55076i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final FrameLayout f55076j;
+    public final FrameLayout f55077j;
 
     /* renamed from: k  reason: collision with root package name */
-    public final PreviewView f55077k;
+    public final PreviewView f55078k;
 
     /* renamed from: l  reason: collision with root package name */
-    public final OldSelfieOverlayView f55078l;
+    public final OldSelfieOverlayView f55079l;
 
     /* renamed from: m  reason: collision with root package name */
-    public final TextView f55079m;
+    public final TextView f55080m;
 
     private a(ConstraintLayout constraintLayout, Button button, Camera2PreviewView camera2PreviewView, View view, TextView textView, TextView textView2, ProgressBar progressBar, Pi2NavigationBar pi2NavigationBar, Barrier barrier, FrameLayout frameLayout, PreviewView previewView, OldSelfieOverlayView oldSelfieOverlayView, TextView textView3) {
-        this.f55067a = constraintLayout;
-        this.f55068b = button;
-        this.f55069c = camera2PreviewView;
-        this.f55070d = view;
-        this.f55071e = textView;
-        this.f55072f = textView2;
-        this.f55073g = progressBar;
-        this.f55074h = pi2NavigationBar;
-        this.f55075i = barrier;
-        this.f55076j = frameLayout;
-        this.f55077k = previewView;
-        this.f55078l = oldSelfieOverlayView;
-        this.f55079m = textView3;
+        this.f55068a = constraintLayout;
+        this.f55069b = button;
+        this.f55070c = camera2PreviewView;
+        this.f55071d = view;
+        this.f55072e = textView;
+        this.f55073f = textView2;
+        this.f55074g = progressBar;
+        this.f55075h = pi2NavigationBar;
+        this.f55076i = barrier;
+        this.f55077j = frameLayout;
+        this.f55078k = previewView;
+        this.f55079l = oldSelfieOverlayView;
+        this.f55080m = textView3;
     }
 
     public static a a(View view) {
         View a10;
-        int i10 = w0.f53480g;
+        int i10 = w0.f53481g;
         Button button = (Button) e4.a.a(view, i10);
         if (button != null) {
-            i10 = w0.f53481h;
+            i10 = w0.f53482h;
             Camera2PreviewView camera2PreviewView = (Camera2PreviewView) e4.a.a(view, i10);
-            if (camera2PreviewView != null && (a10 = e4.a.a(view, (i10 = w0.f53482i))) != null) {
-                i10 = w0.f53487n;
+            if (camera2PreviewView != null && (a10 = e4.a.a(view, (i10 = w0.f53483i))) != null) {
+                i10 = w0.f53488n;
                 TextView textView = (TextView) e4.a.a(view, i10);
                 if (textView != null) {
-                    i10 = w0.f53493t;
+                    i10 = w0.f53494t;
                     TextView textView2 = (TextView) e4.a.a(view, i10);
                     if (textView2 != null) {
                         i10 = w0.A;
@@ -129,7 +129,7 @@ public final class a implements ViewBinding {
     }
 
     public static a d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(x0.f53512a, viewGroup, false);
+        View inflate = layoutInflater.inflate(x0.f53513a, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -139,6 +139,6 @@ public final class a implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f55067a;
+        return this.f55068a;
     }
 }

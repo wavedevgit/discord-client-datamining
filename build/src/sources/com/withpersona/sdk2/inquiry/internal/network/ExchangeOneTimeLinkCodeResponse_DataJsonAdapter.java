@@ -15,19 +15,19 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeResponse_DataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20219a;
+    private final m.b f20220a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f20220b;
+    private final com.squareup.moshi.h f20221b;
 
     public ExchangeOneTimeLinkCodeResponse_DataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("relationships");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20219a = a10;
+        this.f20220a = a10;
         com.squareup.moshi.h f10 = moshi.f(a0.j(Map.class, String.class, ExchangeOneTimeLinkCodeResponse.Relationship.class), x0.d(), "relationships");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20220b = f10;
+        this.f20221b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,10 +37,10 @@ public final class ExchangeOneTimeLinkCodeResponse_DataJsonAdapter extends com.s
         reader.u();
         Map map = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20219a);
+            int J = reader.J(this.f20220a);
             if (J != -1) {
                 if (J == 0) {
-                    map = (Map) this.f20220b.fromJson(reader);
+                    map = (Map) this.f20221b.fromJson(reader);
                 }
             } else {
                 reader.z0();
@@ -58,7 +58,7 @@ public final class ExchangeOneTimeLinkCodeResponse_DataJsonAdapter extends com.s
         if (data != null) {
             writer.i();
             writer.J("relationships");
-            this.f20220b.toJson(writer, data.a());
+            this.f20221b.toJson(writer, data.a());
             writer.s();
             return;
         }

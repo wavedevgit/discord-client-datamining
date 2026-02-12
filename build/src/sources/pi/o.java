@@ -10,12 +10,12 @@ public abstract class o {
     private static class b implements n, Serializable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final List f42752d;
+        private final List f42753d;
 
         @Override // pi.n
         public boolean apply(Object obj) {
-            for (int i10 = 0; i10 < this.f42752d.size(); i10++) {
-                if (!((n) this.f42752d.get(i10)).apply(obj)) {
+            for (int i10 = 0; i10 < this.f42753d.size(); i10++) {
+                if (!((n) this.f42753d.get(i10)).apply(obj)) {
                     return false;
                 }
             }
@@ -24,21 +24,21 @@ public abstract class o {
 
         public boolean equals(Object obj) {
             if (obj instanceof b) {
-                return this.f42752d.equals(((b) obj).f42752d);
+                return this.f42753d.equals(((b) obj).f42753d);
             }
             return false;
         }
 
         public int hashCode() {
-            return this.f42752d.hashCode() + 306654252;
+            return this.f42753d.hashCode() + 306654252;
         }
 
         public String toString() {
-            return o.d("and", this.f42752d);
+            return o.d("and", this.f42753d);
         }
 
         private b(List list) {
-            this.f42752d = list;
+            this.f42753d = list;
         }
     }
 

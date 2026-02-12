@@ -46,15 +46,15 @@ public final class TypeReference implements KType {
         static {
             int[] iArr = new int[m.values().length];
             try {
-                iArr[m.f34826d.ordinal()] = 1;
+                iArr[m.f34827d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[m.f34827e.ordinal()] = 2;
+                iArr[m.f34828e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[m.f34828i.ordinal()] = 3;
+                iArr[m.f34829i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             $EnumSwitchMapping$0 = iArr;

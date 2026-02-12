@@ -22,22 +22,22 @@ public final class ESignatureComponent implements k5, pq.d, v, e0 {
     public static final Parcelable.Creator<ESignatureComponent> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f20593d;
+    private final String f20594d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final JsonLogicBoolean f20594e;
+    private final JsonLogicBoolean f20595e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f20595i;
+    private final JsonLogicBoolean f20596i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Bitmap f20596o;
+    private Bitmap f20597o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final List f20597p;
+    private final List f20598p;
 
     /* renamed from: q  reason: collision with root package name */
-    private qq.a f20598q;
+    private qq.a f20599q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -57,22 +57,22 @@ public final class ESignatureComponent implements k5, pq.d, v, e0 {
 
     public ESignatureComponent(String name, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2) {
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f20593d = name;
-        this.f20594e = jsonLogicBoolean;
-        this.f20595i = jsonLogicBoolean2;
-        this.f20597p = new ArrayList();
-        this.f20598q = new qq.a(null);
+        this.f20594d = name;
+        this.f20595e = jsonLogicBoolean;
+        this.f20596i = jsonLogicBoolean2;
+        this.f20598p = new ArrayList();
+        this.f20599q = new qq.a(null);
     }
 
     public static /* synthetic */ ESignatureComponent e(ESignatureComponent eSignatureComponent, String str, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = eSignatureComponent.f20593d;
+            str = eSignatureComponent.f20594d;
         }
         if ((i10 & 2) != 0) {
-            jsonLogicBoolean = eSignatureComponent.f20594e;
+            jsonLogicBoolean = eSignatureComponent.f20595e;
         }
         if ((i10 & 4) != 0) {
-            jsonLogicBoolean2 = eSignatureComponent.f20595i;
+            jsonLogicBoolean2 = eSignatureComponent.f20596i;
         }
         return eSignatureComponent.c(str, jsonLogicBoolean, jsonLogicBoolean2);
     }
@@ -83,7 +83,7 @@ public final class ESignatureComponent implements k5, pq.d, v, e0 {
 
     @Override // pq.d
     public qq.a a() {
-        return this.f20598q;
+        return this.f20599q;
     }
 
     public final ESignatureComponent c(String name, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2) {
@@ -93,7 +93,7 @@ public final class ESignatureComponent implements k5, pq.d, v, e0 {
 
     @Override // pq.e0
     public List d() {
-        return this.f20597p;
+        return this.f20598p;
     }
 
     @Override // android.os.Parcelable
@@ -107,61 +107,61 @@ public final class ESignatureComponent implements k5, pq.d, v, e0 {
         }
         if (obj instanceof ESignatureComponent) {
             ESignatureComponent eSignatureComponent = (ESignatureComponent) obj;
-            return Intrinsics.areEqual(this.f20593d, eSignatureComponent.f20593d) && Intrinsics.areEqual(this.f20594e, eSignatureComponent.f20594e) && Intrinsics.areEqual(this.f20595i, eSignatureComponent.f20595i);
+            return Intrinsics.areEqual(this.f20594d, eSignatureComponent.f20594d) && Intrinsics.areEqual(this.f20595e, eSignatureComponent.f20595e) && Intrinsics.areEqual(this.f20596i, eSignatureComponent.f20596i);
         }
         return false;
     }
 
     public void f(qq.a aVar) {
         Intrinsics.checkNotNullParameter(aVar, "<set-?>");
-        this.f20598q = aVar;
+        this.f20599q = aVar;
     }
 
     @Override // pq.d
     /* renamed from: g */
     public ESignatureComponent b(Bitmap bitmap) {
         ESignatureComponent e10 = e(this, null, null, null, 7, null);
-        e10.f20596o = bitmap;
+        e10.f20597o = bitmap;
         e10.f(a());
         return e10;
     }
 
     @Override // pq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f20595i;
+        return this.f20596i;
     }
 
     @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f20594e;
+        return this.f20595e;
     }
 
     @Override // pq.k5
     public String getName() {
-        return this.f20593d;
+        return this.f20594d;
     }
 
     public int hashCode() {
-        int hashCode = this.f20593d.hashCode() * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f20594e;
+        int hashCode = this.f20594d.hashCode() * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f20595e;
         int hashCode2 = (hashCode + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20595i;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20596i;
         return hashCode2 + (jsonLogicBoolean2 != null ? jsonLogicBoolean2.hashCode() : 0);
     }
 
     public String toString() {
-        String str = this.f20593d;
-        JsonLogicBoolean jsonLogicBoolean = this.f20594e;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20595i;
+        String str = this.f20594d;
+        JsonLogicBoolean jsonLogicBoolean = this.f20595e;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20596i;
         return "ESignatureComponent(name=" + str + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f20593d);
-        dest.writeParcelable(this.f20594e, i10);
-        dest.writeParcelable(this.f20595i, i10);
+        dest.writeString(this.f20594d);
+        dest.writeParcelable(this.f20595e, i10);
+        dest.writeParcelable(this.f20596i, i10);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

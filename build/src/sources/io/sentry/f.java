@@ -6,74 +6,74 @@ import java.util.Set;
 public final class f extends io.sentry.protocol.c {
 
     /* renamed from: i  reason: collision with root package name */
-    private final io.sentry.protocol.c f29308i;
+    private final io.sentry.protocol.c f29309i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final io.sentry.protocol.c f29309o;
+    private final io.sentry.protocol.c f29310o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final io.sentry.protocol.c f29310p;
+    private final io.sentry.protocol.c f29311p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final d4 f29311q;
+    private final d4 f29312q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f29312a;
+        static final /* synthetic */ int[] f29313a;
 
         static {
             int[] iArr = new int[d4.values().length];
-            f29312a = iArr;
+            f29313a = iArr;
             try {
                 iArr[d4.CURRENT.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f29312a[d4.ISOLATION.ordinal()] = 2;
+                f29313a[d4.ISOLATION.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f29312a[d4.GLOBAL.ordinal()] = 3;
+                f29313a[d4.GLOBAL.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
     }
 
     public f(io.sentry.protocol.c cVar, io.sentry.protocol.c cVar2, io.sentry.protocol.c cVar3, d4 d4Var) {
-        this.f29308i = cVar;
-        this.f29309o = cVar2;
-        this.f29310p = cVar3;
-        this.f29311q = d4Var;
+        this.f29309i = cVar;
+        this.f29310o = cVar2;
+        this.f29311p = cVar3;
+        this.f29312q = d4Var;
     }
 
     private io.sentry.protocol.c B() {
-        int i10 = a.f29312a[this.f29311q.ordinal()];
+        int i10 = a.f29313a[this.f29312q.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
-                    return this.f29310p;
+                    return this.f29311p;
                 }
-                return this.f29308i;
+                return this.f29309i;
             }
-            return this.f29309o;
+            return this.f29310o;
         }
-        return this.f29310p;
+        return this.f29311p;
     }
 
     private io.sentry.protocol.c C() {
         io.sentry.protocol.c cVar = new io.sentry.protocol.c();
-        cVar.m(this.f29308i);
-        cVar.m(this.f29309o);
-        cVar.m(this.f29310p);
+        cVar.m(this.f29309i);
+        cVar.m(this.f29310o);
+        cVar.m(this.f29311p);
         return cVar;
     }
 
     @Override // io.sentry.protocol.c
     public boolean a(Object obj) {
-        if (!this.f29308i.a(obj) && !this.f29309o.a(obj) && !this.f29310p.a(obj)) {
+        if (!this.f29309i.a(obj) && !this.f29310o.a(obj) && !this.f29311p.a(obj)) {
             return false;
         }
         return true;
@@ -86,93 +86,93 @@ public final class f extends io.sentry.protocol.c {
 
     @Override // io.sentry.protocol.c
     public Object c(Object obj) {
-        Object c10 = this.f29310p.c(obj);
+        Object c10 = this.f29311p.c(obj);
         if (c10 != null) {
             return c10;
         }
-        Object c11 = this.f29309o.c(obj);
+        Object c11 = this.f29310o.c(obj);
         if (c11 != null) {
             return c11;
         }
-        return this.f29308i.c(obj);
+        return this.f29309i.c(obj);
     }
 
     @Override // io.sentry.protocol.c
     public io.sentry.protocol.a d() {
-        io.sentry.protocol.a d10 = this.f29310p.d();
+        io.sentry.protocol.a d10 = this.f29311p.d();
         if (d10 != null) {
             return d10;
         }
-        io.sentry.protocol.a d11 = this.f29309o.d();
+        io.sentry.protocol.a d11 = this.f29310o.d();
         if (d11 != null) {
             return d11;
         }
-        return this.f29308i.d();
+        return this.f29309i.d();
     }
 
     @Override // io.sentry.protocol.c
     public io.sentry.protocol.e e() {
-        io.sentry.protocol.e e10 = this.f29310p.e();
+        io.sentry.protocol.e e10 = this.f29311p.e();
         if (e10 != null) {
             return e10;
         }
-        io.sentry.protocol.e e11 = this.f29309o.e();
+        io.sentry.protocol.e e11 = this.f29310o.e();
         if (e11 != null) {
             return e11;
         }
-        return this.f29308i.e();
+        return this.f29309i.e();
     }
 
     @Override // io.sentry.protocol.c
     public io.sentry.protocol.g f() {
-        io.sentry.protocol.g f10 = this.f29310p.f();
+        io.sentry.protocol.g f10 = this.f29311p.f();
         if (f10 != null) {
             return f10;
         }
-        io.sentry.protocol.g f11 = this.f29309o.f();
+        io.sentry.protocol.g f11 = this.f29310o.f();
         if (f11 != null) {
             return f11;
         }
-        return this.f29308i.f();
+        return this.f29309i.f();
     }
 
     @Override // io.sentry.protocol.c
     public io.sentry.protocol.n h() {
-        io.sentry.protocol.n h10 = this.f29310p.h();
+        io.sentry.protocol.n h10 = this.f29311p.h();
         if (h10 != null) {
             return h10;
         }
-        io.sentry.protocol.n h11 = this.f29309o.h();
+        io.sentry.protocol.n h11 = this.f29310o.h();
         if (h11 != null) {
             return h11;
         }
-        return this.f29308i.h();
+        return this.f29309i.h();
     }
 
     @Override // io.sentry.protocol.c
     public io.sentry.protocol.z i() {
-        io.sentry.protocol.z i10 = this.f29310p.i();
+        io.sentry.protocol.z i10 = this.f29311p.i();
         if (i10 != null) {
             return i10;
         }
-        io.sentry.protocol.z i11 = this.f29309o.i();
+        io.sentry.protocol.z i11 = this.f29310o.i();
         if (i11 != null) {
             return i11;
         }
-        return this.f29308i.i();
+        return this.f29309i.i();
     }
 
     @Override // io.sentry.protocol.c
     public e8 j() {
-        e8 j10 = this.f29310p.j();
+        e8 j10 = this.f29311p.j();
         if (j10 != null) {
             return j10;
         }
-        e8 j11 = this.f29309o.j();
+        e8 j11 = this.f29310o.j();
         if (j11 != null) {
             return j11;
         }
-        return this.f29308i.j();
+        return this.f29309i.j();
     }
 
     @Override // io.sentry.protocol.c

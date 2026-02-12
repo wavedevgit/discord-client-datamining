@@ -17,28 +17,28 @@ import rm.l;
 public final class b implements EventDispatcherListener {
 
     /* renamed from: h  reason: collision with root package name */
-    public static final a f50798h = new a(null);
+    public static final a f50799h = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final ReactViewGroup f50799a;
+    private final ReactViewGroup f50800a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ThemedReactContext f50800b;
+    private final ThemedReactContext f50801b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final l f50801c;
+    private final l f50802c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Function0 f50802d;
+    private Function0 f50803d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f50803e;
+    private final int f50804e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final UIManager f50804f;
+    private final UIManager f50805f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final EventDispatcher f50805g;
+    private final EventDispatcher f50806g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -55,13 +55,13 @@ public final class b implements EventDispatcherListener {
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
         Intrinsics.checkNotNullParameter(config, "config");
         Intrinsics.checkNotNullParameter(callback, "callback");
-        this.f50799a = view;
-        this.f50800b = reactContext;
-        this.f50801c = config;
-        this.f50802d = callback;
-        this.f50803e = 2;
-        this.f50804f = UIManagerHelper.getUIManager(reactContext.getReactApplicationContext(), 2);
-        this.f50805g = UIManagerHelper.getEventDispatcher(reactContext.getReactApplicationContext(), 2);
+        this.f50800a = view;
+        this.f50801b = reactContext;
+        this.f50802c = config;
+        this.f50803d = callback;
+        this.f50804e = 2;
+        this.f50805f = UIManagerHelper.getUIManager(reactContext.getReactApplicationContext(), 2);
+        this.f50806g = UIManagerHelper.getEventDispatcher(reactContext.getReactApplicationContext(), 2);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -69,21 +69,21 @@ public final class b implements EventDispatcherListener {
         k.q(kVar, null, null, 3, null);
         kVar.e();
         h.a(reactViewGroup);
-        k kVar2 = (k) bVar.f50802d.invoke();
+        k kVar2 = (k) bVar.f50803d.invoke();
         if (kVar2 != null) {
             kVar2.o(false);
         }
     }
 
     public final void b() {
-        EventDispatcher eventDispatcher = this.f50805g;
+        EventDispatcher eventDispatcher = this.f50806g;
         if (eventDispatcher != null) {
             eventDispatcher.removeListener(this);
         }
     }
 
     public final void c() {
-        EventDispatcher eventDispatcher = this.f50805g;
+        EventDispatcher eventDispatcher = this.f50806g;
         if (eventDispatcher != null) {
             eventDispatcher.addListener(this);
         }
@@ -108,7 +108,7 @@ public final class b implements EventDispatcherListener {
             goto Lbd
         L13:
             r0 = 0
-            com.facebook.react.bridge.UIManager r1 = r7.f50804f     // Catch: java.lang.Exception -> L21
+            com.facebook.react.bridge.UIManager r1 = r7.f50805f     // Catch: java.lang.Exception -> L21
             if (r1 == 0) goto L23
             int r2 = r8.getViewTag()     // Catch: java.lang.Exception -> L21
             android.view.View r1 = r1.resolveView(r2)     // Catch: java.lang.Exception -> L21
@@ -124,7 +124,7 @@ public final class b implements EventDispatcherListener {
             com.facebook.react.views.modal.ReactModalHostView r1 = (com.facebook.react.views.modal.ReactModalHostView) r1     // Catch: java.lang.Exception -> L21
             goto L4a
         L2b:
-            sm.a r2 = sm.a.f48171a
+            sm.a r2 = sm.a.f48172a
             java.lang.String r3 = um.c.b()
             int r8 = r8.getViewTag()
             java.lang.StringBuilder r4 = new java.lang.StringBuilder
@@ -155,21 +155,21 @@ public final class b implements EventDispatcherListener {
             android.view.ViewGroup r0 = (android.view.ViewGroup) r0
             if (r0 == 0) goto Lbd
             com.facebook.react.views.view.ReactViewGroup r2 = new com.facebook.react.views.view.ReactViewGroup
-            com.facebook.react.uimanager.ThemedReactContext r3 = r7.f50800b
+            com.facebook.react.uimanager.ThemedReactContext r3 = r7.f50801b
             r2.<init>(r3)
             android.view.ViewGroup$LayoutParams r3 = new android.view.ViewGroup$LayoutParams
             r4 = 0
             r3.<init>(r4, r4)
             r2.setLayoutParams(r3)
-            com.facebook.react.views.view.ReactViewGroup r3 = r7.f50799a
-            com.facebook.react.uimanager.ThemedReactContext r4 = r7.f50800b
-            rm.l r5 = r7.f50801c
+            com.facebook.react.views.view.ReactViewGroup r3 = r7.f50800a
+            com.facebook.react.uimanager.ThemedReactContext r4 = r7.f50801b
+            rm.l r5 = r7.f50802c
             rm.k r6 = new rm.k
             r6.<init>(r3, r0, r4, r5)
             r0.addView(r2)
             boolean r3 = um.c.a()
             if (r3 == 0) goto Lac
-            kotlin.jvm.functions.Function0 r3 = r7.f50802d
+            kotlin.jvm.functions.Function0 r3 = r7.f50803d
             java.lang.Object r3 = r3.invoke()
             rm.k r3 = (rm.k) r3
             if (r3 == 0) goto L9b

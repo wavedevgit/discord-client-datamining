@@ -2,14 +2,83 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var8 = metroImportDefault;
+    var9 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var8;
+    var _closure1_slot1 = var9;
     var _closure1_slot2 = var5;
-    var0 = function() {
-        _fun85306: for (var _fun85306_ip = 0;;) switch (_fun85306_ip) {
+    var3 = global;
+    var8 = var3.Object;
+    var7 = var8.defineProperty;
+    var6 = {};
+    var0 = true;
+    var6.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var2, var0, var6);
+    var0 = 0;
+    var7 = var5[var0];
+    var6 = metroImportAll;
+    var0 = undefined;
+    var6 = var6.bind(var0)(var7);
+    var _closure1_slot3 = var6;
+    var6 = 1;
+    var6 = var5[var6];
+    var6 = var4.bind(var0)(var6);
+    var7 = var6.View;
+    var _closure1_slot4 = var7;
+    var6 = var6.Image;
+    var _closure1_slot5 = var6;
+    var6 = 2;
+    var6 = var5[var6];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.MobileSetting;
+    var _closure1_slot6 = var6;
+    var6 = 3;
+    var6 = var5[var6];
+    var6 = var4.bind(var0)(var6);
+    var6 = var6.HelpdeskArticles;
+    var _closure1_slot7 = var6;
+    var7 = 4;
+    var7 = var5[var7];
+    var8 = var4.bind(var0)(var7);
+    var7 = var8.jsx;
+    var _closure1_slot8 = var7;
+    var8 = var8.jsxs;
+    var _closure1_slot9 = var8;
+    var8 = 5;
+    var8 = var5[var8];
+    var9 = var9.bind(var0)(var8);
+    var8 = var9.getArticleURL;
+    var6 = var6.VOICE_VIDEO_TROUBLESHOOTING;
+    var9 = var8.bind(var9)(var6);
+    var3 = var3.HermesInternal;
+    var8 = var3.concat;
+    var6 = '';
+    var3 = '?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm';
+    var3 = var8.bind(var6)(var9, var3);
+    var _closure1_slot10 = var3;
+    var3 = 6;
+    var3 = var5[var3];
+    var8 = var4.bind(var0)(var3);
+    var6 = var8.createStyles;
+    var3 = {};
+    var9 = {
+        'marginTop': 8,
+        'flexDirection': 'row',
+        'alignItems': 'center'
+    };
+    var3.krisp = var9;
+    var9 = {
+        'marginRight': 8,
+        'height': 30,
+        'width': 67
+    };
+    var3.logo = var9;
+    var3 = var6.bind(var8)(var3);
+    var _closure1_slot11 = var3;
+    var6 = function() {
+        _fun84091: for (var _fun84091_ip = 0;;) switch (_fun84091_ip) {
             case 0:
                 var0 = _closure1_slot11;
                 var3 = undefined;
@@ -29,15 +98,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot1;
                 var2 = _closure1_slot2;
                 if (var0) {
-                    _fun85306_ip = 89;
-                    continue _fun85306
+                    _fun84091_ip = 89;
+                    continue _fun84091
                 }
             case 75:
                 var0 = 10;
                 var0 = var2[var0];
                 var7 = var1.bind(var3)(var0);
-                _fun85306_ip = 101;
-                continue _fun85306;
+                _fun84091_ip = 101;
+                continue _fun84091;
             case 89:
                 var0 = 9;
                 var0 = var2[var0];
@@ -110,76 +179,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var _closure1_slot12 = var0;
-    var3 = global;
-    var9 = var3.Object;
-    var7 = var9.defineProperty;
-    var6 = {};
-    var0 = true;
-    var6.value = var0;
-    var0 = '__esModule';
-    var0 = var7.bind(var9)(var2, var0, var6);
-    var0 = 0;
-    var7 = var5[var0];
-    var6 = arg3;
-    var0 = undefined;
-    var6 = var6.bind(var0)(var7);
-    var _closure1_slot3 = var6;
-    var6 = 1;
-    var6 = var5[var6];
-    var6 = var4.bind(var0)(var6);
-    var7 = var6.View;
-    var _closure1_slot4 = var7;
-    var6 = var6.Image;
-    var _closure1_slot5 = var6;
-    var6 = 2;
-    var6 = var5[var6];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.MobileSetting;
-    var _closure1_slot6 = var6;
-    var6 = 3;
-    var6 = var5[var6];
-    var6 = var4.bind(var0)(var6);
-    var6 = var6.HelpdeskArticles;
-    var _closure1_slot7 = var6;
-    var7 = 4;
-    var7 = var5[var7];
-    var7 = var4.bind(var0)(var7);
-    var9 = var7.jsx;
-    var _closure1_slot8 = var9;
-    var7 = var7.jsxs;
-    var _closure1_slot9 = var7;
-    var7 = 5;
-    var7 = var5[var7];
-    var8 = var8.bind(var0)(var7);
-    var7 = var8.getArticleURL;
-    var6 = var6.VOICE_VIDEO_TROUBLESHOOTING;
-    var8 = var7.bind(var8)(var6);
-    var3 = var3.HermesInternal;
-    var7 = var3.concat;
-    var6 = '';
-    var3 = '?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm';
-    var3 = var7.bind(var6)(var8, var3);
-    var _closure1_slot10 = var3;
-    var3 = 6;
-    var3 = var5[var3];
-    var7 = var4.bind(var0)(var3);
-    var6 = var7.createStyles;
     var3 = {};
-    var8 = {
-        'marginTop': 8,
-        'flexDirection': 'row',
-        'alignItems': 'center'
-    };
-    var3.krisp = var8;
-    var8 = {
-        'marginRight': 8,
-        'height': 30,
-        'width': 67
-    };
-    var3.logo = var8;
-    var3 = var6.bind(var7)(var3);
-    var _closure1_slot11 = var3;
+    var3 = var7.bind(var0)(var6, var3);
+    var _closure1_slot12 = var3;
     var3 = 17;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -309,10 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var8 = new Array(1);
             var8[0] = var12;
             var4.settings = var8;
-            var12 = _closure1_slot8;
-            var8 = _closure1_slot12;
-            var7 = {};
-            var7 = var12.bind(var9)(var8, var7);
+            var7 = _closure1_slot12;
             var4.subLabel = var7;
             var3[4] = var4;
             var4 = {};
@@ -389,4 +388,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7088, 660, 33, 1686, 1297, 3247, 3207, 8539, 8540, 1234, 4971, 8538, 3938, 9056, 10218, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7103, 660, 33, 1686, 1297, 3247, 3207, 10699, 10700, 1234, 4937, 10701, 3938, 9818, 10121, 2]);

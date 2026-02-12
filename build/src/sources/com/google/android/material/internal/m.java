@@ -9,13 +9,13 @@ import androidx.appcompat.widget.v0;
 public abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int[] f15928a = {f.a.f23298w};
+    private static final int[] f15929a = {f.a.f23299w};
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int[] f15929b = {bh.b.f6745l};
+    private static final int[] f15930b = {bh.b.f6745l};
 
     public static void a(Context context) {
-        e(context, f15928a, "Theme.AppCompat");
+        e(context, f15929a, "Theme.AppCompat");
     }
 
     private static void b(Context context, AttributeSet attributeSet, int i10, int i11) {
@@ -32,7 +32,7 @@ public abstract class m {
     }
 
     public static void c(Context context) {
-        e(context, f15929b, "Theme.MaterialComponents");
+        e(context, f15930b, "Theme.MaterialComponents");
     }
 
     private static void d(Context context, AttributeSet attributeSet, int[] iArr, int i10, int i11, int... iArr2) {

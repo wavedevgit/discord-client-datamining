@@ -7,21 +7,21 @@ import java.util.Objects;
 public class t2 extends u2 {
 
     /* renamed from: b  reason: collision with root package name */
-    final q2 f14798b;
+    final q2 f14799b;
 
     /* renamed from: c  reason: collision with root package name */
-    final Character f14799c;
+    final Character f14800c;
 
     /* renamed from: d  reason: collision with root package name */
-    private volatile u2 f14800d;
+    private volatile u2 f14801d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public t2(q2 q2Var, Character ch2) {
-        this.f14798b = q2Var;
+        this.f14799b = q2Var;
         if (ch2 != null && q2Var.c('=')) {
             throw new IllegalArgumentException(m0.a("Padding character %s was already in alphabet", ch2));
         }
-        this.f14799c = ch2;
+        this.f14800c = ch2;
     }
 
     @Override // com.google.android.gms.internal.fido.u2
@@ -29,29 +29,29 @@ public class t2 extends u2 {
         int i12 = 0;
         k0.e(0, i11, bArr.length);
         while (i12 < i11) {
-            g(appendable, bArr, i12, Math.min(this.f14798b.f14775f, i11 - i12));
-            i12 += this.f14798b.f14775f;
+            g(appendable, bArr, i12, Math.min(this.f14799b.f14776f, i11 - i12));
+            i12 += this.f14799b.f14776f;
         }
     }
 
     @Override // com.google.android.gms.internal.fido.u2
     final int b(int i10) {
-        q2 q2Var = this.f14798b;
-        return q2Var.f14774e * w2.a(i10, q2Var.f14775f, RoundingMode.CEILING);
+        q2 q2Var = this.f14799b;
+        return q2Var.f14775e * w2.a(i10, q2Var.f14776f, RoundingMode.CEILING);
     }
 
     @Override // com.google.android.gms.internal.fido.u2
     public final u2 c() {
-        u2 u2Var = this.f14800d;
+        u2 u2Var = this.f14801d;
         if (u2Var == null) {
-            q2 q2Var = this.f14798b;
+            q2 q2Var = this.f14799b;
             q2 b10 = q2Var.b();
             if (b10 == q2Var) {
                 u2Var = this;
             } else {
-                u2Var = f(b10, this.f14799c);
+                u2Var = f(b10, this.f14800c);
             }
-            this.f14800d = u2Var;
+            this.f14801d = u2Var;
         }
         return u2Var;
     }
@@ -59,7 +59,7 @@ public class t2 extends u2 {
     public final boolean equals(Object obj) {
         if (obj instanceof t2) {
             t2 t2Var = (t2) obj;
-            if (this.f14798b.equals(t2Var.f14798b) && Objects.equals(this.f14799c, t2Var.f14799c)) {
+            if (this.f14799b.equals(t2Var.f14799b) && Objects.equals(this.f14800c, t2Var.f14800c)) {
                 return true;
             }
         }
@@ -75,7 +75,7 @@ public class t2 extends u2 {
         boolean z10;
         k0.e(i10, i10 + i11, bArr.length);
         int i12 = 0;
-        if (i11 <= this.f14798b.f14775f) {
+        if (i11 <= this.f14799b.f14776f) {
             z10 = true;
         } else {
             z10 = false;
@@ -86,36 +86,36 @@ public class t2 extends u2 {
             j10 = (j10 | (bArr[i10 + i13] & 255)) << 8;
         }
         int i14 = (i11 + 1) * 8;
-        q2 q2Var = this.f14798b;
+        q2 q2Var = this.f14799b;
         while (i12 < i11 * 8) {
-            long j11 = j10 >>> ((i14 - q2Var.f14773d) - i12);
-            q2 q2Var2 = this.f14798b;
-            appendable.append(q2Var2.a(((int) j11) & q2Var2.f14772c));
-            i12 += this.f14798b.f14773d;
+            long j11 = j10 >>> ((i14 - q2Var.f14774d) - i12);
+            q2 q2Var2 = this.f14799b;
+            appendable.append(q2Var2.a(((int) j11) & q2Var2.f14773c));
+            i12 += this.f14799b.f14774d;
         }
-        if (this.f14799c != null) {
-            while (i12 < this.f14798b.f14775f * 8) {
-                this.f14799c.getClass();
+        if (this.f14800c != null) {
+            while (i12 < this.f14799b.f14776f * 8) {
+                this.f14800c.getClass();
                 appendable.append('=');
-                i12 += this.f14798b.f14773d;
+                i12 += this.f14799b.f14774d;
             }
         }
     }
 
     public final int hashCode() {
-        Character ch2 = this.f14799c;
-        return Objects.hashCode(ch2) ^ this.f14798b.hashCode();
+        Character ch2 = this.f14800c;
+        return Objects.hashCode(ch2) ^ this.f14799b.hashCode();
     }
 
     public final String toString() {
         StringBuilder sb2 = new StringBuilder("BaseEncoding.");
-        sb2.append(this.f14798b);
-        if (8 % this.f14798b.f14773d != 0) {
-            if (this.f14799c == null) {
+        sb2.append(this.f14799b);
+        if (8 % this.f14799b.f14774d != 0) {
+            if (this.f14800c == null) {
                 sb2.append(".omitPadding()");
             } else {
                 sb2.append(".withPadChar('");
-                sb2.append(this.f14799c);
+                sb2.append(this.f14800c);
                 sb2.append("')");
             }
         }

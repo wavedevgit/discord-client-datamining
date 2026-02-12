@@ -10,14 +10,14 @@ public class e extends jf.a {
     public static final Parcelable.Creator<e> CREATOR = new i();
 
     /* renamed from: d  reason: collision with root package name */
-    private final PendingIntent f36445d;
+    private final PendingIntent f36446d;
 
     public e(PendingIntent pendingIntent) {
-        this.f36445d = pendingIntent;
+        this.f36446d = pendingIntent;
     }
 
     public PendingIntent b() {
-        return this.f36445d;
+        return this.f36446d;
     }
 
     @Override // android.os.Parcelable

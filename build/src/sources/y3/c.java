@@ -20,19 +20,19 @@ import x3.k;
 public final class c implements x3.g {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f55348i = new a(null);
+    public static final a f55349i = new a(null);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final String[] f55349o = {"", " OR ROLLBACK ", " OR ABORT ", " OR FAIL ", " OR IGNORE ", " OR REPLACE "};
+    private static final String[] f55350o = {"", " OR ROLLBACK ", " OR ABORT ", " OR FAIL ", " OR IGNORE ", " OR REPLACE "};
 
     /* renamed from: p  reason: collision with root package name */
-    private static final String[] f55350p = new String[0];
+    private static final String[] f55351p = new String[0];
 
     /* renamed from: d  reason: collision with root package name */
-    private final SQLiteDatabase f55351d;
+    private final SQLiteDatabase f55352d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f55352e;
+    private final List f55353e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -49,18 +49,18 @@ public final class c implements x3.g {
     public static final class b extends Lambda implements Function4 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ j f55353d;
+        final /* synthetic */ j f55354d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(j jVar) {
             super(4);
-            this.f55353d = jVar;
+            this.f55354d = jVar;
         }
 
         @Override // kotlin.jvm.functions.Function4
         /* renamed from: a */
         public final SQLiteCursor invoke(SQLiteDatabase sQLiteDatabase, SQLiteCursorDriver sQLiteCursorDriver, String str, SQLiteQuery sQLiteQuery) {
-            j jVar = this.f55353d;
+            j jVar = this.f55354d;
             Intrinsics.checkNotNull(sQLiteQuery);
             jVar.h(new g(sQLiteQuery));
             return new SQLiteCursor(sQLiteCursorDriver, str, sQLiteQuery);
@@ -69,8 +69,8 @@ public final class c implements x3.g {
 
     public c(SQLiteDatabase delegate) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
-        this.f55351d = delegate;
-        this.f55352e = delegate.getAttachedDbs();
+        this.f55352d = delegate;
+        this.f55353e = delegate.getAttachedDbs();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -89,7 +89,7 @@ public final class c implements x3.g {
 
     @Override // x3.g
     public void H() {
-        this.f55351d.beginTransaction();
+        this.f55352d.beginTransaction();
     }
 
     @Override // x3.g
@@ -100,15 +100,15 @@ public final class c implements x3.g {
 
     @Override // x3.g
     public List L() {
-        return this.f55352e;
+        return this.f55353e;
     }
 
     @Override // x3.g
     public Cursor O(final j query, CancellationSignal cancellationSignal) {
         Intrinsics.checkNotNullParameter(query, "query");
-        SQLiteDatabase sQLiteDatabase = this.f55351d;
+        SQLiteDatabase sQLiteDatabase = this.f55352d;
         String a10 = query.a();
-        String[] strArr = f55350p;
+        String[] strArr = f55351p;
         Intrinsics.checkNotNull(cancellationSignal);
         return x3.b.c(sQLiteDatabase, a10, strArr, null, cancellationSignal, new SQLiteDatabase.CursorFactory() { // from class: y3.a
             @Override // android.database.sqlite.SQLiteDatabase.CursorFactory
@@ -123,83 +123,83 @@ public final class c implements x3.g {
     @Override // x3.g
     public void P(String sql) {
         Intrinsics.checkNotNullParameter(sql, "sql");
-        this.f55351d.execSQL(sql);
+        this.f55352d.execSQL(sql);
     }
 
     @Override // x3.g
     public Cursor R0(j query) {
         Intrinsics.checkNotNullParameter(query, "query");
         final b bVar = new b(query);
-        Cursor rawQueryWithFactory = this.f55351d.rawQueryWithFactory(new SQLiteDatabase.CursorFactory() { // from class: y3.b
+        Cursor rawQueryWithFactory = this.f55352d.rawQueryWithFactory(new SQLiteDatabase.CursorFactory() { // from class: y3.b
             @Override // android.database.sqlite.SQLiteDatabase.CursorFactory
             public final Cursor newCursor(SQLiteDatabase sQLiteDatabase, SQLiteCursorDriver sQLiteCursorDriver, String str, SQLiteQuery sQLiteQuery) {
                 Cursor m10;
                 m10 = c.m(Function4.this, sQLiteDatabase, sQLiteCursorDriver, str, sQLiteQuery);
                 return m10;
             }
-        }, query.a(), f55350p, null);
+        }, query.a(), f55351p, null);
         Intrinsics.checkNotNullExpressionValue(rawQueryWithFactory, "delegate.rawQueryWithFac…EMPTY_STRING_ARRAY, null)");
         return rawQueryWithFactory;
     }
 
     @Override // x3.g
     public boolean W1() {
-        return this.f55351d.inTransaction();
+        return this.f55352d.inTransaction();
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f55351d.close();
+        this.f55352d.close();
     }
 
     public final boolean i(SQLiteDatabase sqLiteDatabase) {
         Intrinsics.checkNotNullParameter(sqLiteDatabase, "sqLiteDatabase");
-        return Intrinsics.areEqual(this.f55351d, sqLiteDatabase);
+        return Intrinsics.areEqual(this.f55352d, sqLiteDatabase);
     }
 
     @Override // x3.g
     public boolean i2() {
-        return x3.b.b(this.f55351d);
+        return x3.b.b(this.f55352d);
     }
 
     @Override // x3.g
     public boolean isOpen() {
-        return this.f55351d.isOpen();
+        return this.f55352d.isOpen();
     }
 
     @Override // x3.g
     public void k0() {
-        this.f55351d.setTransactionSuccessful();
+        this.f55352d.setTransactionSuccessful();
     }
 
     @Override // x3.g
     public void l0(String sql, Object[] bindArgs) {
         Intrinsics.checkNotNullParameter(sql, "sql");
         Intrinsics.checkNotNullParameter(bindArgs, "bindArgs");
-        this.f55351d.execSQL(sql, bindArgs);
+        this.f55352d.execSQL(sql, bindArgs);
     }
 
     @Override // x3.g
     public void m0() {
-        this.f55351d.beginTransactionNonExclusive();
+        this.f55352d.beginTransactionNonExclusive();
     }
 
     @Override // x3.g
     public k m1(String sql) {
         Intrinsics.checkNotNullParameter(sql, "sql");
-        SQLiteStatement compileStatement = this.f55351d.compileStatement(sql);
+        SQLiteStatement compileStatement = this.f55352d.compileStatement(sql);
         Intrinsics.checkNotNullExpressionValue(compileStatement, "delegate.compileStatement(sql)");
         return new h(compileStatement);
     }
 
     @Override // x3.g
     public String t() {
-        return this.f55351d.getPath();
+        return this.f55352d.getPath();
     }
 
     @Override // x3.g
     public void t0() {
-        this.f55351d.endTransaction();
+        this.f55352d.endTransaction();
     }
 
     @Override // x3.g
@@ -218,7 +218,7 @@ public final class c implements x3.g {
             Object[] objArr2 = new Object[length];
             StringBuilder sb2 = new StringBuilder();
             sb2.append("UPDATE ");
-            sb2.append(f55349o[i10]);
+            sb2.append(f55350o[i10]);
             sb2.append(table);
             sb2.append(" SET ");
             int i11 = 0;
@@ -246,7 +246,7 @@ public final class c implements x3.g {
             String sb3 = sb2.toString();
             Intrinsics.checkNotNullExpressionValue(sb3, "StringBuilder().apply(builderAction).toString()");
             k m12 = m1(sb3);
-            x3.a.f54306i.b(m12, objArr2);
+            x3.a.f54307i.b(m12, objArr2);
             return m12.V();
         }
         throw new IllegalArgumentException("Empty values");

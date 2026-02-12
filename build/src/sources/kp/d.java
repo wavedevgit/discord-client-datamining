@@ -8,71 +8,71 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f35130a;
+    private final String f35131a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f35131b;
+    private final String f35132b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f35132c;
+    private final String f35133c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f35133d;
+    private final String f35134d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ep.f f35134e;
+    private final ep.f f35135e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f35135f;
+    private final String f35136f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f35136g;
+    private final String f35137g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f35137h;
+    private final String f35138h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f35138i;
+    private final String f35139i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final Map f35139j;
+    private final Map f35140j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final String f35140k;
+    private final String f35141k;
 
     public d(String str, String str2, String str3, String str4, ep.f environment, String str5, String str6, String str7, String str8, Map map, String str9) {
         Intrinsics.checkNotNullParameter(environment, "environment");
-        this.f35130a = str;
-        this.f35131b = str2;
-        this.f35132c = str3;
-        this.f35133d = str4;
-        this.f35134e = environment;
-        this.f35135f = str5;
-        this.f35136g = str6;
-        this.f35137h = str7;
-        this.f35138i = str8;
-        this.f35139j = map;
-        this.f35140k = str9;
+        this.f35131a = str;
+        this.f35132b = str2;
+        this.f35133c = str3;
+        this.f35134d = str4;
+        this.f35135e = environment;
+        this.f35136f = str5;
+        this.f35137g = str6;
+        this.f35138h = str7;
+        this.f35139i = str8;
+        this.f35140j = map;
+        this.f35141k = str9;
     }
 
     public final String a() {
-        return this.f35136g;
+        return this.f35137g;
     }
 
     public final ep.f b() {
-        return this.f35134e;
+        return this.f35135e;
     }
 
     public final String c() {
-        return this.f35135f;
+        return this.f35136f;
     }
 
     public final Map d() {
-        return this.f35139j;
+        return this.f35140j;
     }
 
     public final String e() {
-        return this.f35132c;
+        return this.f35133c;
     }
 
     public boolean equals(Object obj) {
@@ -83,22 +83,22 @@ public final class d {
             return false;
         }
         d dVar = (d) obj;
-        if (Intrinsics.areEqual(this.f35130a, dVar.f35130a) && Intrinsics.areEqual(this.f35131b, dVar.f35131b) && Intrinsics.areEqual(this.f35132c, dVar.f35132c) && Intrinsics.areEqual(this.f35133d, dVar.f35133d) && this.f35134e == dVar.f35134e && Intrinsics.areEqual(this.f35135f, dVar.f35135f) && Intrinsics.areEqual(this.f35136g, dVar.f35136g) && Intrinsics.areEqual(this.f35137h, dVar.f35137h) && Intrinsics.areEqual(this.f35138i, dVar.f35138i) && Intrinsics.areEqual(this.f35139j, dVar.f35139j) && Intrinsics.areEqual(this.f35140k, dVar.f35140k)) {
+        if (Intrinsics.areEqual(this.f35131a, dVar.f35131a) && Intrinsics.areEqual(this.f35132b, dVar.f35132b) && Intrinsics.areEqual(this.f35133c, dVar.f35133c) && Intrinsics.areEqual(this.f35134d, dVar.f35134d) && this.f35135e == dVar.f35135e && Intrinsics.areEqual(this.f35136f, dVar.f35136f) && Intrinsics.areEqual(this.f35137g, dVar.f35137g) && Intrinsics.areEqual(this.f35138h, dVar.f35138h) && Intrinsics.areEqual(this.f35139i, dVar.f35139i) && Intrinsics.areEqual(this.f35140j, dVar.f35140j) && Intrinsics.areEqual(this.f35141k, dVar.f35141k)) {
             return true;
         }
         return false;
     }
 
     public final String f() {
-        return this.f35137h;
+        return this.f35138h;
     }
 
     public final String g() {
-        return this.f35133d;
+        return this.f35134d;
     }
 
     public final String h() {
-        return this.f35130a;
+        return this.f35131a;
     }
 
     public int hashCode() {
@@ -111,7 +111,7 @@ public final class d {
         int hashCode7;
         int hashCode8;
         int hashCode9;
-        String str = this.f35130a;
+        String str = this.f35131a;
         int i10 = 0;
         if (str == null) {
             hashCode = 0;
@@ -119,63 +119,63 @@ public final class d {
             hashCode = str.hashCode();
         }
         int i11 = hashCode * 31;
-        String str2 = this.f35131b;
+        String str2 = this.f35132b;
         if (str2 == null) {
             hashCode2 = 0;
         } else {
             hashCode2 = str2.hashCode();
         }
         int i12 = (i11 + hashCode2) * 31;
-        String str3 = this.f35132c;
+        String str3 = this.f35133c;
         if (str3 == null) {
             hashCode3 = 0;
         } else {
             hashCode3 = str3.hashCode();
         }
         int i13 = (i12 + hashCode3) * 31;
-        String str4 = this.f35133d;
+        String str4 = this.f35134d;
         if (str4 == null) {
             hashCode4 = 0;
         } else {
             hashCode4 = str4.hashCode();
         }
-        int hashCode10 = (((i13 + hashCode4) * 31) + this.f35134e.hashCode()) * 31;
-        String str5 = this.f35135f;
+        int hashCode10 = (((i13 + hashCode4) * 31) + this.f35135e.hashCode()) * 31;
+        String str5 = this.f35136f;
         if (str5 == null) {
             hashCode5 = 0;
         } else {
             hashCode5 = str5.hashCode();
         }
         int i14 = (hashCode10 + hashCode5) * 31;
-        String str6 = this.f35136g;
+        String str6 = this.f35137g;
         if (str6 == null) {
             hashCode6 = 0;
         } else {
             hashCode6 = str6.hashCode();
         }
         int i15 = (i14 + hashCode6) * 31;
-        String str7 = this.f35137h;
+        String str7 = this.f35138h;
         if (str7 == null) {
             hashCode7 = 0;
         } else {
             hashCode7 = str7.hashCode();
         }
         int i16 = (i15 + hashCode7) * 31;
-        String str8 = this.f35138i;
+        String str8 = this.f35139i;
         if (str8 == null) {
             hashCode8 = 0;
         } else {
             hashCode8 = str8.hashCode();
         }
         int i17 = (i16 + hashCode8) * 31;
-        Map map = this.f35139j;
+        Map map = this.f35140j;
         if (map == null) {
             hashCode9 = 0;
         } else {
             hashCode9 = map.hashCode();
         }
         int i18 = (i17 + hashCode9) * 31;
-        String str9 = this.f35140k;
+        String str9 = this.f35141k;
         if (str9 != null) {
             i10 = str9.hashCode();
         }
@@ -183,25 +183,25 @@ public final class d {
     }
 
     public final String i() {
-        return this.f35131b;
+        return this.f35132b;
     }
 
     public final String j() {
-        return this.f35140k;
+        return this.f35141k;
     }
 
     public String toString() {
-        String str = this.f35130a;
-        String str2 = this.f35131b;
-        String str3 = this.f35132c;
-        String str4 = this.f35133d;
-        ep.f fVar = this.f35134e;
-        String str5 = this.f35135f;
-        String str6 = this.f35136g;
-        String str7 = this.f35137h;
-        String str8 = this.f35138i;
-        Map map = this.f35139j;
-        String str9 = this.f35140k;
+        String str = this.f35131a;
+        String str2 = this.f35132b;
+        String str3 = this.f35133c;
+        String str4 = this.f35134d;
+        ep.f fVar = this.f35135e;
+        String str5 = this.f35136f;
+        String str6 = this.f35137g;
+        String str7 = this.f35138h;
+        String str8 = this.f35139i;
+        Map map = this.f35140j;
+        String str9 = this.f35141k;
         return "InquiryAttributes(templateId=" + str + ", templateVersion=" + str2 + ", inquiryId=" + str3 + ", sessionToken=" + str4 + ", environment=" + fVar + ", environmentId=" + str5 + ", accountId=" + str6 + ", referenceId=" + str7 + ", note=" + str8 + ", fields=" + map + ", themeSetId=" + str9 + ")";
     }
 

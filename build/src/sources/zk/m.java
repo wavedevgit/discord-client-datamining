@@ -3,10 +3,10 @@ package zk;
 final class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f56498a = 0;
+    private int f56499a = 0;
 
     /* renamed from: b  reason: collision with root package name */
-    private a f56499b = a.NUMERIC;
+    private a f56500b = a.NUMERIC;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private enum a {
@@ -17,17 +17,17 @@ final class m {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int a() {
-        return this.f56498a;
+        return this.f56499a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void b(int i10) {
-        this.f56498a += i10;
+        this.f56499a += i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean c() {
-        if (this.f56499b == a.ALPHA) {
+        if (this.f56500b == a.ALPHA) {
             return true;
         }
         return false;
@@ -35,7 +35,7 @@ final class m {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean d() {
-        if (this.f56499b == a.ISO_IEC_646) {
+        if (this.f56500b == a.ISO_IEC_646) {
             return true;
         }
         return false;
@@ -43,21 +43,21 @@ final class m {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void e() {
-        this.f56499b = a.ALPHA;
+        this.f56500b = a.ALPHA;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f() {
-        this.f56499b = a.ISO_IEC_646;
+        this.f56500b = a.ISO_IEC_646;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void g() {
-        this.f56499b = a.NUMERIC;
+        this.f56500b = a.NUMERIC;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void h(int i10) {
-        this.f56498a = i10;
+        this.f56499a = i10;
     }
 }

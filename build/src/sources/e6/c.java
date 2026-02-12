@@ -10,7 +10,7 @@ import java.util.List;
 public class c implements ReactPackage {
 
     /* renamed from: a  reason: collision with root package name */
-    private f f22339a;
+    private f f22340a;
 
     @Override // com.facebook.react.ReactPackage
     public List createNativeModules(ReactApplicationContext reactApplicationContext) {
@@ -19,9 +19,9 @@ public class c implements ReactPackage {
 
     @Override // com.facebook.react.ReactPackage
     public List createViewManagers(ReactApplicationContext reactApplicationContext) {
-        if (this.f22339a == null) {
-            this.f22339a = new com.brentvatne.exoplayer.c(reactApplicationContext);
+        if (this.f22340a == null) {
+            this.f22340a = new com.brentvatne.exoplayer.c(reactApplicationContext);
         }
-        return Collections.singletonList(new ReactExoplayerViewManager(this.f22339a));
+        return Collections.singletonList(new ReactExoplayerViewManager(this.f22340a));
     }
 }

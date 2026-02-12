@@ -41,9 +41,9 @@ public /* synthetic */ class LinkContextData$BindOpenUrl$$serializer implements 
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        KSerializer u10 = rt.a.u(tt.h.f49996a);
-        KSerializer u11 = rt.a.u(p0.f50048a);
-        n2 n2Var = n2.f50032a;
+        KSerializer u10 = rt.a.u(tt.h.f49997a);
+        KSerializer u11 = rt.a.u(p0.f50049a);
+        n2 n2Var = n2.f50033a;
         return new KSerializer[]{n2Var, u10, n2Var, u11};
     }
 
@@ -63,9 +63,9 @@ public /* synthetic */ class LinkContextData$BindOpenUrl$$serializer implements 
             String m10 = b10.m(serialDescriptor, 0);
             String m11 = b10.m(serialDescriptor, 2);
             str = m10;
-            num = (Integer) b10.n(serialDescriptor, 3, p0.f50048a, null);
+            num = (Integer) b10.n(serialDescriptor, 3, p0.f50049a, null);
             str2 = m11;
-            bool = (Boolean) b10.n(serialDescriptor, 1, tt.h.f49996a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 1, tt.h.f49997a, null);
             i10 = 15;
         } else {
             boolean z10 = true;
@@ -81,7 +81,7 @@ public /* synthetic */ class LinkContextData$BindOpenUrl$$serializer implements 
                     str3 = b10.m(serialDescriptor, 0);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    bool2 = (Boolean) b10.n(serialDescriptor, 1, tt.h.f49996a, bool2);
+                    bool2 = (Boolean) b10.n(serialDescriptor, 1, tt.h.f49997a, bool2);
                     i11 |= 2;
                 } else if (o10 == 2) {
                     str4 = b10.m(serialDescriptor, 2);
@@ -89,7 +89,7 @@ public /* synthetic */ class LinkContextData$BindOpenUrl$$serializer implements 
                 } else if (o10 != 3) {
                     throw new b0(o10);
                 } else {
-                    num2 = (Integer) b10.n(serialDescriptor, 3, p0.f50048a, num2);
+                    num2 = (Integer) b10.n(serialDescriptor, 3, p0.f50049a, num2);
                     i11 |= 8;
                 }
             }

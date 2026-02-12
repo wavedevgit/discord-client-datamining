@@ -85,7 +85,7 @@ public final class a implements ScaleGestureDetector.OnScaleGestureListener {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c.a) obj);
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
     }
 
@@ -116,7 +116,7 @@ public final class a implements ScaleGestureDetector.OnScaleGestureListener {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c.a) obj);
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
     }
 
@@ -141,7 +141,7 @@ public final class a implements ScaleGestureDetector.OnScaleGestureListener {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c.a) obj);
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
     }
 
@@ -176,7 +176,7 @@ public final class a implements ScaleGestureDetector.OnScaleGestureListener {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c.a) obj);
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
     }
 
@@ -210,14 +210,14 @@ public final class a implements ScaleGestureDetector.OnScaleGestureListener {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c.a) obj);
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
     }
 
     static {
         String TAG = a.class.getSimpleName();
         f8316i = TAG;
-        ZoomLogger.a aVar = ZoomLogger.f18182b;
+        ZoomLogger.a aVar = ZoomLogger.f18183b;
         Intrinsics.checkNotNullExpressionValue(TAG, "TAG");
         f8317j = aVar.a(TAG);
     }

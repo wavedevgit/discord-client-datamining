@@ -10,22 +10,22 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public abstract class g extends ViewGroup {
 
     /* renamed from: q  reason: collision with root package name */
-    public static final a f19165q = new a(null);
+    public static final a f19166q = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private StateWrapper f19166d;
+    private StateWrapper f19167d;
 
     /* renamed from: e  reason: collision with root package name */
-    private float f19167e;
+    private float f19168e;
 
     /* renamed from: i  reason: collision with root package name */
-    private float f19168i;
+    private float f19169i;
 
     /* renamed from: o  reason: collision with root package name */
-    private float f19169o;
+    private float f19170o;
 
     /* renamed from: p  reason: collision with root package name */
-    private float f19170p;
+    private float f19171p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -46,17 +46,17 @@ public abstract class g extends ViewGroup {
         float dIPFromPixel2 = PixelUtil.toDIPFromPixel(i11);
         float dIPFromPixel3 = PixelUtil.toDIPFromPixel(i12);
         float dIPFromPixel4 = PixelUtil.toDIPFromPixel(i13);
-        if (Math.abs(this.f19167e - dIPFromPixel) >= 0.9f || Math.abs(this.f19168i - dIPFromPixel2) >= 0.9f || Math.abs(this.f19169o - dIPFromPixel3) >= 0.9f || Math.abs(this.f19170p - dIPFromPixel4) >= 0.9f) {
-            this.f19167e = dIPFromPixel;
-            this.f19168i = dIPFromPixel2;
-            this.f19169o = dIPFromPixel3;
-            this.f19170p = dIPFromPixel4;
+        if (Math.abs(this.f19168e - dIPFromPixel) >= 0.9f || Math.abs(this.f19169i - dIPFromPixel2) >= 0.9f || Math.abs(this.f19170o - dIPFromPixel3) >= 0.9f || Math.abs(this.f19171p - dIPFromPixel4) >= 0.9f) {
+            this.f19168e = dIPFromPixel;
+            this.f19169i = dIPFromPixel2;
+            this.f19170o = dIPFromPixel3;
+            this.f19171p = dIPFromPixel4;
             WritableNativeMap writableNativeMap = new WritableNativeMap();
             writableNativeMap.putDouble("frameWidth", dIPFromPixel);
             writableNativeMap.putDouble("frameHeight", dIPFromPixel2);
             writableNativeMap.putDouble("contentOffsetX", dIPFromPixel3);
             writableNativeMap.putDouble("contentOffsetY", dIPFromPixel4);
-            StateWrapper stateWrapper = this.f19166d;
+            StateWrapper stateWrapper = this.f19167d;
             if (stateWrapper != null) {
                 stateWrapper.updateState(writableNativeMap);
             }
@@ -69,6 +69,6 @@ public abstract class g extends ViewGroup {
     }
 
     public final void setStateWrapper(StateWrapper stateWrapper) {
-        this.f19166d = stateWrapper;
+        this.f19167d = stateWrapper;
     }
 }

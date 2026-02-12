@@ -36,32 +36,32 @@ public enum a implements n {
     
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f30606a;
+    public final String f30607a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final r f30607b;
+    public final r f30608b;
 
     static {
         b bVar = b.NANOS;
     }
 
     a(String str, r rVar) {
-        this.f30606a = str;
-        this.f30607b = rVar;
+        this.f30607a = str;
+        this.f30608b = rVar;
     }
 
     a(String str, r rVar, int i10) {
-        this.f30606a = str;
-        this.f30607b = rVar;
+        this.f30607a = str;
+        this.f30608b = rVar;
     }
 
     public final void E(long j10) {
-        this.f30607b.b(j10, this);
+        this.f30608b.b(j10, this);
     }
 
     @Override // j$.time.temporal.n
     public final r x() {
-        return this.f30607b;
+        return this.f30608b;
     }
 
     @Override // j$.time.temporal.n
@@ -95,6 +95,6 @@ public enum a implements n {
 
     @Override // java.lang.Enum
     public final String toString() {
-        return this.f30606a;
+        return this.f30607a;
     }
 }

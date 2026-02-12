@@ -29,13 +29,13 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
     static final class a extends k implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f18127d;
+        Object f18128d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f18128e;
+        Object f18129e;
 
         /* renamed from: i  reason: collision with root package name */
-        int f18129i;
+        int f18130i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: com.margelo.nitro.playagerangedeclaration.PlayAgeRangeDeclaration$a$a  reason: collision with other inner class name */
@@ -43,10 +43,10 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
         public static final class C0207a implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ CancellableContinuation f18131d;
+            final /* synthetic */ CancellableContinuation f18132d;
 
             C0207a(CancellableContinuation cancellableContinuation) {
-                this.f18131d = cancellableContinuation;
+                this.f18132d = cancellableContinuation;
             }
 
             public final void a(e eVar) {
@@ -76,7 +76,7 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
                     z10 = true;
                 }
                 boolean z11 = !z10;
-                CancellableContinuation cancellableContinuation = this.f18131d;
+                CancellableContinuation cancellableContinuation = this.f18132d;
                 String d12 = eVar.d();
                 if (eVar.a() != null) {
                     d10 = Double.valueOf(a10.intValue());
@@ -92,7 +92,7 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 a((e) obj);
-                return Unit.f31987a;
+                return Unit.f31988a;
             }
         }
 
@@ -101,10 +101,10 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
         public static final class b implements f {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ CancellableContinuation f18132a;
+            final /* synthetic */ CancellableContinuation f18133a;
 
             b(CancellableContinuation cancellableContinuation) {
-                this.f18132a = cancellableContinuation;
+                this.f18133a = cancellableContinuation;
             }
 
             @Override // zg.f
@@ -115,8 +115,8 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
                     message = "Unknown error";
                 }
                 String str = message;
-                CancellableContinuation cancellableContinuation = this.f18132a;
-                Result.a aVar = Result.f31984e;
+                CancellableContinuation cancellableContinuation = this.f18133a;
+                Result.a aVar = Result.f31985e;
                 cancellableContinuation.resumeWith(Result.b(new PlayAgeRangeDeclarationResult(false, null, null, str, null, null, null)));
             }
         }
@@ -133,12 +133,12 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = gs.b.f();
-            int i10 = this.f18129i;
+            int i10 = this.f18130i;
             try {
                 if (i10 != 0) {
                     if (i10 == 1) {
-                        d dVar = (d) this.f18128e;
-                        xh.b bVar = (xh.b) this.f18127d;
+                        d dVar = (d) this.f18129e;
+                        xh.b bVar = (xh.b) this.f18128d;
                         kotlin.c.b(obj);
                     } else {
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
@@ -149,9 +149,9 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
                     Intrinsics.checkNotNullExpressionValue(a10, "create(...)");
                     d a11 = d.a().a();
                     Intrinsics.checkNotNullExpressionValue(a11, "build(...)");
-                    this.f18127d = a10;
-                    this.f18128e = a11;
-                    this.f18129i = 1;
+                    this.f18128d = a10;
+                    this.f18129e = a11;
+                    this.f18130i = 1;
                     kotlinx.coroutines.e eVar = new kotlinx.coroutines.e(gs.b.c(this), 1);
                     eVar.H();
                     a10.a(a11).g(new c(new C0207a(eVar))).e(new b(eVar));
@@ -173,7 +173,7 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
 
         @Override // kotlin.jvm.functions.Function1
         public final Object invoke(Continuation continuation) {
-            return ((a) create(continuation)).invokeSuspend(Unit.f31987a);
+            return ((a) create(continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -181,7 +181,7 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
     static final class b extends k implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f18133d;
+        int f18134d;
 
         b(Continuation continuation) {
             super(1, continuation);
@@ -195,7 +195,7 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             gs.b.f();
-            if (this.f18133d == 0) {
+            if (this.f18134d == 0) {
                 kotlin.c.b(obj);
                 return new DeclaredAgeRangeResult(false, null, null, null, null);
             }
@@ -204,7 +204,7 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
 
         @Override // kotlin.jvm.functions.Function1
         public final Object invoke(Continuation continuation) {
-            return ((b) create(continuation)).invokeSuspend(Unit.f31987a);
+            return ((b) create(continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -213,16 +213,16 @@ public final class PlayAgeRangeDeclaration extends HybridPlayAgeRangeDeclaration
     public static final class c implements zg.g {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ Function1 f18134a;
+        private final /* synthetic */ Function1 f18135a;
 
         c(Function1 function) {
             Intrinsics.checkNotNullParameter(function, "function");
-            this.f18134a = function;
+            this.f18135a = function;
         }
 
         @Override // zg.g
         public final /* synthetic */ void onSuccess(Object obj) {
-            this.f18134a.invoke(obj);
+            this.f18135a.invoke(obj);
         }
     }
 

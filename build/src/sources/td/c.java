@@ -8,21 +8,21 @@ import uc.b0;
 public final class c implements g.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int[] f48686a;
+    private final int[] f48687a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final l0[] f48687b;
+    private final l0[] f48688b;
 
     public c(int[] iArr, l0[] l0VarArr) {
-        this.f48686a = iArr;
-        this.f48687b = l0VarArr;
+        this.f48687a = iArr;
+        this.f48688b = l0VarArr;
     }
 
     public int[] a() {
-        int[] iArr = new int[this.f48687b.length];
+        int[] iArr = new int[this.f48688b.length];
         int i10 = 0;
         while (true) {
-            l0[] l0VarArr = this.f48687b;
+            l0[] l0VarArr = this.f48688b;
             if (i10 < l0VarArr.length) {
                 iArr[i10] = l0VarArr[i10].G();
                 i10++;
@@ -33,7 +33,7 @@ public final class c implements g.b {
     }
 
     public void b(long j10) {
-        for (l0 l0Var : this.f48687b) {
+        for (l0 l0Var : this.f48688b) {
             l0Var.Z(j10);
         }
     }
@@ -42,10 +42,10 @@ public final class c implements g.b {
     public b0 c(int i10, int i11) {
         int i12 = 0;
         while (true) {
-            int[] iArr = this.f48686a;
+            int[] iArr = this.f48687a;
             if (i12 < iArr.length) {
                 if (i11 == iArr[i12]) {
-                    return this.f48687b[i12];
+                    return this.f48688b[i12];
                 }
                 i12++;
             } else {

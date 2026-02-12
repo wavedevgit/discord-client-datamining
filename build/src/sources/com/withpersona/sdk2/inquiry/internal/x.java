@@ -22,25 +22,25 @@ import pq.k5;
 public final class x implements en.o<b> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f20392b;
+    private final String f20393b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f20393c;
+    private final String f20394c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final iq.g f20394d;
+    private final iq.g f20395d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final c f20395e;
+    private final c f20396e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final kp.r f20396f;
+    private final kp.r f20397f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final so.a f20397g;
+    private final so.a f20398g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final l2 f20398h;
+    private final l2 f20399h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -54,32 +54,32 @@ public final class x implements en.o<b> {
         public static final class a extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final InternalErrorInfo f20399a;
+            private final InternalErrorInfo f20400a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(InternalErrorInfo cause) {
                 super(null);
                 Intrinsics.checkNotNullParameter(cause, "cause");
-                this.f20399a = cause;
+                this.f20400a = cause;
             }
 
             public final InternalErrorInfo a() {
-                return this.f20399a;
+                return this.f20400a;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                return (obj instanceof a) && Intrinsics.areEqual(this.f20399a, ((a) obj).f20399a);
+                return (obj instanceof a) && Intrinsics.areEqual(this.f20400a, ((a) obj).f20400a);
             }
 
             public int hashCode() {
-                return this.f20399a.hashCode();
+                return this.f20400a.hashCode();
             }
 
             public String toString() {
-                InternalErrorInfo internalErrorInfo = this.f20399a;
+                InternalErrorInfo internalErrorInfo = this.f20400a;
                 return "Error(cause=" + internalErrorInfo + ")";
             }
         }
@@ -89,26 +89,26 @@ public final class x implements en.o<b> {
         public static final class C0263b extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final l f20400a;
+            private final l f20401a;
 
             public C0263b(l lVar) {
                 super(null);
-                this.f20400a = lVar;
+                this.f20401a = lVar;
             }
 
             public final l a() {
-                return this.f20400a;
+                return this.f20401a;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                return (obj instanceof C0263b) && Intrinsics.areEqual(this.f20400a, ((C0263b) obj).f20400a);
+                return (obj instanceof C0263b) && Intrinsics.areEqual(this.f20401a, ((C0263b) obj).f20401a);
             }
 
             public int hashCode() {
-                l lVar = this.f20400a;
+                l lVar = this.f20401a;
                 if (lVar == null) {
                     return 0;
                 }
@@ -116,7 +116,7 @@ public final class x implements en.o<b> {
             }
 
             public String toString() {
-                l lVar = this.f20400a;
+                l lVar = this.f20401a;
                 return "Success(nextState=" + lVar + ")";
             }
         }
@@ -135,13 +135,13 @@ public final class x implements en.o<b> {
         public static final Parcelable.Creator<c> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final k5 f20401d;
+        private final k5 f20402d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Map f20402e;
+        private final Map f20403e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final String f20403i;
+        private final String f20404i;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -169,21 +169,21 @@ public final class x implements en.o<b> {
             Intrinsics.checkNotNullParameter(fromComponent, "fromComponent");
             Intrinsics.checkNotNullParameter(componentParams, "componentParams");
             Intrinsics.checkNotNullParameter(fromStep, "fromStep");
-            this.f20401d = fromComponent;
-            this.f20402e = componentParams;
-            this.f20403i = fromStep;
+            this.f20402d = fromComponent;
+            this.f20403e = componentParams;
+            this.f20404i = fromStep;
         }
 
         public final Map a() {
-            return this.f20402e;
+            return this.f20403e;
         }
 
         public final k5 b() {
-            return this.f20401d;
+            return this.f20402d;
         }
 
         public final String c() {
-            return this.f20403i;
+            return this.f20404i;
         }
 
         @Override // android.os.Parcelable
@@ -197,33 +197,33 @@ public final class x implements en.o<b> {
             }
             if (obj instanceof c) {
                 c cVar = (c) obj;
-                return Intrinsics.areEqual(this.f20401d, cVar.f20401d) && Intrinsics.areEqual(this.f20402e, cVar.f20402e) && Intrinsics.areEqual(this.f20403i, cVar.f20403i);
+                return Intrinsics.areEqual(this.f20402d, cVar.f20402d) && Intrinsics.areEqual(this.f20403e, cVar.f20403e) && Intrinsics.areEqual(this.f20404i, cVar.f20404i);
             }
             return false;
         }
 
         public int hashCode() {
-            return (((this.f20401d.hashCode() * 31) + this.f20402e.hashCode()) * 31) + this.f20403i.hashCode();
+            return (((this.f20402d.hashCode() * 31) + this.f20403e.hashCode()) * 31) + this.f20404i.hashCode();
         }
 
         public String toString() {
-            k5 k5Var = this.f20401d;
-            Map map = this.f20402e;
-            String str = this.f20403i;
+            k5 k5Var = this.f20402d;
+            Map map = this.f20403e;
+            String str = this.f20404i;
             return "TransitionData(fromComponent=" + k5Var + ", componentParams=" + map + ", fromStep=" + str + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeParcelable(this.f20401d, i10);
-            Map map = this.f20402e;
+            dest.writeParcelable(this.f20402d, i10);
+            Map map = this.f20403e;
             dest.writeInt(map.size());
             for (Map.Entry entry : map.entrySet()) {
                 dest.writeString((String) entry.getKey());
                 dest.writeParcelable((Parcelable) entry.getValue(), i10);
             }
-            dest.writeString(this.f20403i);
+            dest.writeString(this.f20404i);
         }
     }
 
@@ -231,10 +231,10 @@ public final class x implements en.o<b> {
     static final class d extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f20404d;
+        int f20405d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f20405e;
+        private /* synthetic */ Object f20406e;
 
         d(Continuation continuation) {
             super(2, continuation);
@@ -243,7 +243,7 @@ public final class x implements en.o<b> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             d dVar = new d(continuation);
-            dVar.f20405e = obj;
+            dVar.f20406e = obj;
             return dVar;
         }
 
@@ -265,7 +265,7 @@ public final class x implements en.o<b> {
             /*
                 r4 = this;
                 java.lang.Object r0 = gs.b.f()
-                int r1 = r4.f20404d
+                int r1 = r4.f20405d
                 r2 = 2
                 r3 = 1
                 if (r1 == 0) goto L1b
@@ -282,7 +282,7 @@ public final class x implements en.o<b> {
                 goto L4c
             L1b:
                 kotlin.c.b(r5)
-                java.lang.Object r5 = r4.f20405e
+                java.lang.Object r5 = r4.f20406e
                 kotlinx.coroutines.flow.FlowCollector r5 = (kotlinx.coroutines.flow.FlowCollector) r5
                 com.withpersona.sdk2.inquiry.internal.x r1 = com.withpersona.sdk2.inquiry.internal.x.this
                 so.a r1 = com.withpersona.sdk2.inquiry.internal.x.b(r1)
@@ -290,20 +290,20 @@ public final class x implements en.o<b> {
                 if (r1 == 0) goto L3d
                 com.withpersona.sdk2.inquiry.internal.x r1 = com.withpersona.sdk2.inquiry.internal.x.this
                 kotlinx.coroutines.flow.Flow r1 = com.withpersona.sdk2.inquiry.internal.x.g(r1)
-                r4.f20404d = r3
+                r4.f20405d = r3
                 java.lang.Object r5 = bt.g.p(r5, r1, r4)
                 if (r5 != r0) goto L4c
                 goto L4b
             L3d:
                 com.withpersona.sdk2.inquiry.internal.x r1 = com.withpersona.sdk2.inquiry.internal.x.this
                 kotlinx.coroutines.flow.Flow r1 = com.withpersona.sdk2.inquiry.internal.x.h(r1)
-                r4.f20404d = r2
+                r4.f20405d = r2
                 java.lang.Object r5 = bt.g.p(r5, r1, r4)
                 if (r5 != r0) goto L4c
             L4b:
                 return r0
             L4c:
-                kotlin.Unit r5 = kotlin.Unit.f31987a
+                kotlin.Unit r5 = kotlin.Unit.f31988a
                 return r5
             */
             throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.internal.x.d.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -311,7 +311,7 @@ public final class x implements en.o<b> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f31987a);
+            return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -320,10 +320,10 @@ public final class x implements en.o<b> {
     public static final class e extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f20407d;
+        int f20408d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f20408e;
+        private /* synthetic */ Object f20409e;
 
         e(Continuation continuation) {
             super(2, continuation);
@@ -332,7 +332,7 @@ public final class x implements en.o<b> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             e eVar = new e(continuation);
-            eVar.f20408e = obj;
+            eVar.f20409e = obj;
             return eVar;
         }
 
@@ -357,7 +357,7 @@ public final class x implements en.o<b> {
             /*
                 r10 = this;
                 java.lang.Object r0 = gs.b.f()
-                int r1 = r10.f20407d
+                int r1 = r10.f20408d
                 r2 = 3
                 r3 = 2
                 r4 = 1
@@ -375,20 +375,20 @@ public final class x implements en.o<b> {
                 kotlin.c.b(r11)
                 goto L97
             L1f:
-                java.lang.Object r1 = r10.f20408e
+                java.lang.Object r1 = r10.f20409e
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 kotlin.c.b(r11)
                 goto L6a
             L27:
                 kotlin.c.b(r11)
-                java.lang.Object r11 = r10.f20408e
+                java.lang.Object r11 = r10.f20409e
                 r1 = r11
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 com.withpersona.sdk2.inquiry.internal.x r11 = com.withpersona.sdk2.inquiry.internal.x.this
                 so.a r11 = com.withpersona.sdk2.inquiry.internal.x.b(r11)
                 com.withpersona.sdk2.inquiry.internal.x r5 = com.withpersona.sdk2.inquiry.internal.x.this
                 java.lang.String r5 = r5.j()
-                com.withpersona.sdk2.inquiry.ui.network.TransitionInquiryRequest$a r6 = com.withpersona.sdk2.inquiry.ui.network.TransitionInquiryRequest.f20847c
+                com.withpersona.sdk2.inquiry.ui.network.TransitionInquiryRequest$a r6 = com.withpersona.sdk2.inquiry.ui.network.TransitionInquiryRequest.f20848c
                 com.withpersona.sdk2.inquiry.internal.x r7 = com.withpersona.sdk2.inquiry.internal.x.this
                 com.withpersona.sdk2.inquiry.internal.x$c r7 = com.withpersona.sdk2.inquiry.internal.x.e(r7)
                 pq.k5 r7 = r7.b()
@@ -399,8 +399,8 @@ public final class x implements en.o<b> {
                 com.withpersona.sdk2.inquiry.internal.x$c r9 = com.withpersona.sdk2.inquiry.internal.x.e(r9)
                 java.lang.String r9 = r9.c()
                 com.withpersona.sdk2.inquiry.ui.network.TransitionInquiryRequest r6 = r6.a(r7, r8, r9)
-                r10.f20408e = r1
-                r10.f20407d = r4
+                r10.f20409e = r1
+                r10.f20408d = r4
                 java.lang.Object r11 = r11.a(r5, r6, r10)
                 if (r11 != r0) goto L6a
                 goto L96
@@ -412,22 +412,22 @@ public final class x implements en.o<b> {
                 com.withpersona.sdk2.inquiry.internal.x$b$a r2 = new com.withpersona.sdk2.inquiry.internal.x$b$a
                 com.withpersona.sdk2.inquiry.network.core.InternalErrorInfo$NetworkErrorInfo r11 = com.withpersona.sdk2.inquiry.network.core.NetworkUtilsKt.toErrorInfo(r11)
                 r2.<init>(r11)
-                r10.f20408e = r5
-                r10.f20407d = r3
+                r10.f20409e = r5
+                r10.f20408d = r3
                 java.lang.Object r11 = r1.emit(r2, r10)
                 if (r11 != r0) goto L97
                 goto L96
             L87:
                 com.withpersona.sdk2.inquiry.internal.x$b$b r11 = new com.withpersona.sdk2.inquiry.internal.x$b$b
                 r11.<init>(r5)
-                r10.f20408e = r5
-                r10.f20407d = r2
+                r10.f20409e = r5
+                r10.f20408d = r2
                 java.lang.Object r11 = r1.emit(r11, r10)
                 if (r11 != r0) goto L97
             L96:
                 return r0
             L97:
-                kotlin.Unit r11 = kotlin.Unit.f31987a
+                kotlin.Unit r11 = kotlin.Unit.f31988a
                 return r11
             */
             throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.internal.x.e.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -435,7 +435,7 @@ public final class x implements en.o<b> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((e) create(flowCollector, continuation)).invokeSuspend(Unit.f31987a);
+            return ((e) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -444,13 +444,13 @@ public final class x implements en.o<b> {
     public static final class f extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f20410d;
+        Object f20411d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f20411e;
+        int f20412e;
 
         /* renamed from: i  reason: collision with root package name */
-        private /* synthetic */ Object f20412i;
+        private /* synthetic */ Object f20413i;
 
         f(Continuation continuation) {
             super(2, continuation);
@@ -459,7 +459,7 @@ public final class x implements en.o<b> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             f fVar = new f(continuation);
-            fVar.f20412i = obj;
+            fVar.f20413i = obj;
             return fVar;
         }
 
@@ -486,7 +486,7 @@ public final class x implements en.o<b> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((f) create(flowCollector, continuation)).invokeSuspend(Unit.f31987a);
+            return ((f) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -498,13 +498,13 @@ public final class x implements en.o<b> {
         Intrinsics.checkNotNullParameter(service, "service");
         Intrinsics.checkNotNullParameter(fallbackModeManager, "fallbackModeManager");
         Intrinsics.checkNotNullParameter(uiStepSavedStateHelper, "uiStepSavedStateHelper");
-        this.f20392b = sessionToken;
-        this.f20393c = inquiryId;
-        this.f20394d = inquirySessionConfig;
-        this.f20395e = transitionData;
-        this.f20396f = service;
-        this.f20397g = fallbackModeManager;
-        this.f20398h = uiStepSavedStateHelper;
+        this.f20393b = sessionToken;
+        this.f20394c = inquiryId;
+        this.f20395d = inquirySessionConfig;
+        this.f20396e = transitionData;
+        this.f20397f = service;
+        this.f20398g = fallbackModeManager;
+        this.f20399h = uiStepSavedStateHelper;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -523,11 +523,11 @@ public final class x implements en.o<b> {
     }
 
     public final String i() {
-        return this.f20393c;
+        return this.f20394c;
     }
 
     public final String j() {
-        return this.f20392b;
+        return this.f20393b;
     }
 
     @Override // en.o

@@ -19,13 +19,13 @@ public final class u4 extends o1 implements w2 {
 
     public final u4 l(s5 s5Var) {
         h();
-        v4.B((v4) this.f15023e, s5Var);
+        v4.B((v4) this.f15024e, s5Var);
         return this;
     }
 
     public final u4 m(int i10) {
         h();
-        v4.C((v4) this.f15023e, i10);
+        v4.C((v4) this.f15024e, i10);
         return this;
     }
 }

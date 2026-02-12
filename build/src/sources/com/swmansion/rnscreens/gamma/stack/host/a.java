@@ -7,16 +7,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a extends b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.swmansion.rnscreens.gamma.stack.screen.d f19175a;
+    private final com.swmansion.rnscreens.gamma.stack.screen.d f19176a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f19176b;
+    private final int f19177b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f19177c;
+    private final boolean f19178c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f19178d;
+    private final boolean f19179d;
 
     public /* synthetic */ a(com.swmansion.rnscreens.gamma.stack.screen.d dVar, int i10, boolean z10, boolean z11, int i11, DefaultConstructorMarker defaultConstructorMarker) {
         this(dVar, i10, z10, (i11 & 8) != 0 ? true : z11);
@@ -30,28 +30,28 @@ public final class a extends b {
     }
 
     public final boolean b() {
-        return this.f19177c;
+        return this.f19178c;
     }
 
     public final boolean c() {
-        return this.f19178d;
+        return this.f19179d;
     }
 
     public final int d() {
-        return this.f19176b;
+        return this.f19177b;
     }
 
     public final com.swmansion.rnscreens.gamma.stack.screen.d e() {
-        return this.f19175a;
+        return this.f19176a;
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public a(com.swmansion.rnscreens.gamma.stack.screen.d fragment, int i10, boolean z10, boolean z11) {
         super(null);
         Intrinsics.checkNotNullParameter(fragment, "fragment");
-        this.f19175a = fragment;
-        this.f19176b = i10;
-        this.f19177c = z10;
-        this.f19178d = z11;
+        this.f19176a = fragment;
+        this.f19177b = i10;
+        this.f19178c = z10;
+        this.f19179d = z11;
     }
 }

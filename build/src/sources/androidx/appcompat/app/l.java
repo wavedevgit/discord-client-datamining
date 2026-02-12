@@ -36,7 +36,7 @@ public class l extends ComponentDialog implements b {
     private static int g(Context context, int i10) {
         if (i10 == 0) {
             TypedValue typedValue = new TypedValue();
-            context.getTheme().resolveAttribute(f.a.f23300y, typedValue, true);
+            context.getTheme().resolveAttribute(f.a.f23301y, typedValue, true);
             return typedValue.resourceId;
         }
         return i10;

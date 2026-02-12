@@ -41,8 +41,8 @@ public /* synthetic */ class PingCallbackEvent$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        p0 p0Var = p0.f50048a;
-        return new KSerializer[]{p0Var, p0Var, n2.f50032a, p0Var, p0Var};
+        p0 p0Var = p0.f50049a;
+        return new KSerializer[]{p0Var, p0Var, n2.f50033a, p0Var, p0Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

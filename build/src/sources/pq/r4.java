@@ -28,7 +28,7 @@ public abstract class r4 {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f43089a;
+        public static final /* synthetic */ int[] f43090a;
 
         static {
             int[] iArr = new int[RemoteImage.ContentType.values().length];
@@ -44,7 +44,7 @@ public abstract class r4 {
                 iArr[RemoteImage.ContentType.SVG.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f43089a = iArr;
+            f43090a = iArr;
         }
     }
 
@@ -200,7 +200,7 @@ public abstract class r4 {
         final Context a10 = m5Var.a();
         if (str != null && contentType != null) {
             final Ref.BooleanRef booleanRef = new Ref.BooleanRef();
-            int[] iArr = a.f43089a;
+            int[] iArr = a.f43090a;
             int i10 = iArr[contentType.ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
@@ -261,7 +261,7 @@ public abstract class r4 {
                             return o10;
                         }
                     });
-                    c12.f21859b.setAnimation(intValue);
+                    c12.f21860b.setAnimation(intValue);
                     eVar = c12;
                 }
                 return eVar.getRoot();
@@ -272,33 +272,33 @@ public abstract class r4 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit o(dq.e eVar, RemoteImage remoteImage) {
-        ThemeableLottieAnimationView lottieView = eVar.f21859b;
+        ThemeableLottieAnimationView lottieView = eVar.f21860b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         uq.g.f(lottieView, remoteImage);
-        eVar.f21859b.setRepeatMode(1);
-        eVar.f21859b.setRepeatCount(-1);
-        eVar.f21859b.playAnimation();
-        return Unit.f31987a;
+        eVar.f21860b.setRepeatMode(1);
+        eVar.f21860b.setRepeatCount(-1);
+        eVar.f21860b.playAnimation();
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit p(dq.f fVar, RemoteImage remoteImage, int i10) {
-        ImageView imageView = fVar.f21861b;
+        ImageView imageView = fVar.f21862b;
         Intrinsics.checkNotNullExpressionValue(imageView, "imageView");
         uq.g.f(imageView, remoteImage);
-        fVar.f21861b.setImageResource(i10);
-        fVar.f21861b.setScaleType(ImageView.ScaleType.FIT_XY);
-        fVar.f21861b.setAdjustViewBounds(true);
-        return Unit.f31987a;
+        fVar.f21862b.setImageResource(i10);
+        fVar.f21862b.setScaleType(ImageView.ScaleType.FIT_XY);
+        fVar.f21862b.setAdjustViewBounds(true);
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit q(final dq.f fVar, final RemoteImage remoteImage, Ref.BooleanRef booleanRef, Context context, int i10) {
-        ImageView imageView = fVar.f21861b;
+        ImageView imageView = fVar.f21862b;
         Intrinsics.checkNotNullExpressionValue(imageView, "imageView");
         uq.g.f(imageView, remoteImage);
         if (booleanRef.element) {
-            Context context2 = fVar.f21861b.getContext();
+            Context context2 = fVar.f21862b.getContext();
             Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
             v4.h d10 = new h.a(context2).d();
             String resourcePackageName = context.getResources().getResourcePackageName(i10);
@@ -306,7 +306,7 @@ public abstract class r4 {
             Intrinsics.checkNotNullExpressionValue(lowerCase, "toLowerCase(...)");
             String resourceEntryName = context.getResources().getResourceEntryName(i10);
             Uri parse = Uri.parse("android.resource://" + resourcePackageName + "/" + lowerCase + "/" + resourceEntryName);
-            ImageView imageView2 = fVar.f21861b;
+            ImageView imageView2 = fVar.f21862b;
             Intrinsics.checkNotNullExpressionValue(imageView2, "imageView");
             h.a r10 = new h.a(imageView2.getContext()).d(parse).r(imageView2);
             r10.e(new k.a() { // from class: pq.q4
@@ -319,11 +319,11 @@ public abstract class r4 {
             });
             d10.a(r10.a());
         } else {
-            fVar.f21861b.setImageResource(i10);
+            fVar.f21862b.setImageResource(i10);
         }
-        fVar.f21861b.setScaleType(ImageView.ScaleType.FIT_XY);
-        fVar.f21861b.setAdjustViewBounds(true);
-        return Unit.f31987a;
+        fVar.f21862b.setScaleType(ImageView.ScaleType.FIT_XY);
+        fVar.f21862b.setAdjustViewBounds(true);
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -336,7 +336,7 @@ public abstract class r4 {
         byte[] bytes = i(new String(o12, charset), remoteImage.getStyles()).getBytes(charset);
         Intrinsics.checkNotNullExpressionValue(bytes, "getBytes(...)");
         Buffer write = new Buffer().write(bytes);
-        Context context = fVar.f21861b.getContext();
+        Context context = fVar.f21862b.getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
         return new x4.z(x4.u.f(write, context), options, false, 4, null);
     }
@@ -355,7 +355,7 @@ public abstract class r4 {
         if (contentType == null) {
             i10 = -1;
         } else {
-            i10 = a.f43089a[contentType.ordinal()];
+            i10 = a.f43090a[contentType.ordinal()];
         }
         if (i10 != 1) {
             if (i10 != 3) {
@@ -391,7 +391,7 @@ public abstract class r4 {
                     return u10;
                 }
             });
-            c12.f21859b.J(attributes.getUrl());
+            c12.f21860b.J(attributes.getUrl());
             eVar = c12;
         }
         View root = eVar.getRoot();
@@ -401,31 +401,31 @@ public abstract class r4 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit t(dq.f fVar, RemoteImage remoteImage, RemoteImage.Attributes attributes) {
-        ImageView imageView = fVar.f21861b;
+        ImageView imageView = fVar.f21862b;
         Intrinsics.checkNotNullExpressionValue(imageView, "imageView");
         uq.g.f(imageView, remoteImage);
         String url = attributes.getUrl();
-        ImageView imageView2 = fVar.f21861b;
+        ImageView imageView2 = fVar.f21862b;
         Intrinsics.checkNotNullExpressionValue(imageView2, "imageView");
         k(imageView2, url, remoteImage.getStyles());
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit u(dq.e eVar, RemoteImage remoteImage) {
-        ThemeableLottieAnimationView lottieView = eVar.f21859b;
+        ThemeableLottieAnimationView lottieView = eVar.f21860b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         uq.g.f(lottieView, remoteImage);
-        eVar.f21859b.setRepeatMode(1);
-        eVar.f21859b.setRepeatCount(-1);
-        eVar.f21859b.playAnimation();
-        return Unit.f31987a;
+        eVar.f21860b.setRepeatMode(1);
+        eVar.f21860b.setRepeatCount(-1);
+        eVar.f21860b.playAnimation();
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit v(dq.f fVar, RemoteImage remoteImage, RemoteImage.Attributes attributes) {
         String str;
-        ImageView imageView = fVar.f21861b;
+        ImageView imageView = fVar.f21862b;
         Intrinsics.checkNotNullExpressionValue(imageView, "imageView");
         uq.g.f(imageView, remoteImage);
         if (attributes != null) {
@@ -433,10 +433,10 @@ public abstract class r4 {
         } else {
             str = null;
         }
-        ImageView imageView2 = fVar.f21861b;
+        ImageView imageView2 = fVar.f21862b;
         Intrinsics.checkNotNullExpressionValue(imageView2, "imageView");
         j(imageView2, str);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     private static final String w(String str, String str2, String str3, String str4) {

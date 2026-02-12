@@ -5,7 +5,7 @@ import j8.a;
 public class f implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static f f30864a;
+    private static f f30865a;
 
     private f() {
     }
@@ -14,10 +14,10 @@ public class f implements a {
         f fVar;
         synchronized (f.class) {
             try {
-                if (f30864a == null) {
-                    f30864a = new f();
+                if (f30865a == null) {
+                    f30865a = new f();
                 }
-                fVar = f30864a;
+                fVar = f30865a;
             } catch (Throwable th2) {
                 throw th2;
             }

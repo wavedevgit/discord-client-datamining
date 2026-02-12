@@ -1,32 +1,42 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var4.bind(var5)(var1, var0, var3);
-    var3 = {};
-    var0 = 'function pnpm_noopTs1(){}';
-    var3.code = var0;
-    var0 = function() {
-        var0 = undefined;
-        return var0;
-    };
-    var4 = {};
-    var0.__closure = var4;
-    var4 = 16791771801238.0;
-    var0.__workletHash = var4;
-    var0.__initData = var3;
-    var2 = function() {
-        var0 = undefined;
-        return var0;
-    };
-    var1.noop = var2;
-    var1.workletNoop = var0;
-    var0 = undefined;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+    _fun44848: for (var _fun44848_ip = 0;;) switch (_fun44848_ip) {
+        case 0:
+            var2 = exports;
+            var0 = global;
+            var4 = var0.Object;
+            var3 = var4.defineProperty;
+            var1 = {};
+            var0 = true;
+            var1.value = var0;
+            var0 = '__esModule';
+            var0 = var3.bind(var4)(var2, var0, var1);
+            var1 = dependencyMap;
+            var0 = 0;
+            var3 = var1[var0];
+            var1 = require;
+            var0 = undefined;
+            var1 = var1.bind(var0)(var3);
+            var5 = var1.NativeModules;
+            var3 = var1.Platform;
+            var4 = null;
+            var6 = var4 == var5;
+            var1 = undefined;
+            if (var6) {
+                _fun44848_ip = 83;
+                continue _fun44848
+            }
+        case 77:
+            var1 = var5.PlatformConstants;
+        case 83:
+            if (!(var4 == var1)) {
+                _fun44848_ip = 93;
+                continue _fun44848
+            }
+        case 87:
+            var1 = var3.constants;
+        case 93:
+            var2.default = var1;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);

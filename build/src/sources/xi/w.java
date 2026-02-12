@@ -3,31 +3,31 @@ package xi;
 public class w implements ij.b {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Object f54862c = new Object();
+    private static final Object f54863c = new Object();
 
     /* renamed from: a  reason: collision with root package name */
-    private volatile Object f54863a = f54862c;
+    private volatile Object f54864a = f54863c;
 
     /* renamed from: b  reason: collision with root package name */
-    private volatile ij.b f54864b;
+    private volatile ij.b f54865b;
 
     public w(ij.b bVar) {
-        this.f54864b = bVar;
+        this.f54865b = bVar;
     }
 
     @Override // ij.b
     public Object get() {
         Object obj;
-        Object obj2 = this.f54863a;
-        Object obj3 = f54862c;
+        Object obj2 = this.f54864a;
+        Object obj3 = f54863c;
         if (obj2 == obj3) {
             synchronized (this) {
                 try {
-                    obj = this.f54863a;
+                    obj = this.f54864a;
                     if (obj == obj3) {
-                        obj = this.f54864b.get();
-                        this.f54863a = obj;
-                        this.f54864b = null;
+                        obj = this.f54865b.get();
+                        this.f54864a = obj;
+                        this.f54865b = null;
                     }
                 } catch (Throwable th2) {
                     throw th2;

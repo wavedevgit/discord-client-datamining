@@ -887,7 +887,7 @@ public class g implements uc.k {
                 this.A = f11 - 8;
                 lVar.k(8);
             }
-            if ("audio/ac4".equals(bVar.f8116d.f8202a.f8173f.f12304w)) {
+            if ("audio/ac4".equals(bVar.f8116d.f8202a.f8173f.f12305w)) {
                 this.B = bVar.i(this.A, 7);
                 oc.c.a(this.A, this.f8092i);
                 bVar.f8113a.e(this.f8092i, 7);
@@ -925,7 +925,7 @@ public class g implements uc.k {
                         this.f8088e.U(0);
                         b0Var.e(this.f8088e, i11);
                         b0Var.e(this.f8089f, i12);
-                        if (this.G.length > 0 && d0.g(oVar.f8173f.f12304w, e11[i11])) {
+                        if (this.G.length > 0 && d0.g(oVar.f8173f.f12305w, e11[i11])) {
                             z11 = i12;
                         } else {
                             z11 = 0;
@@ -944,7 +944,7 @@ public class g implements uc.k {
                         f10 = this.C;
                         int q11 = d0.q(this.f8090g.e(), this.f8090g.g());
                         i10 = i12;
-                        this.f8090g.U("video/hevc".equals(oVar.f8173f.f12304w) ? 1 : 0);
+                        this.f8090g.U("video/hevc".equals(oVar.f8173f.f12305w) ? 1 : 0);
                         this.f8090g.T(q11);
                         uc.b.a(e10, this.f8090g, this.G);
                     } else {
@@ -1576,7 +1576,7 @@ public class g implements uc.k {
         this.f8098o = b0Var;
         this.f8094k = new jd.c();
         this.f8095l = new h0(16);
-        this.f8088e = new h0(d0.f38890a);
+        this.f8088e = new h0(d0.f38891a);
         this.f8089f = new h0(5);
         this.f8090g = new h0();
         byte[] bArr = new byte[16];
@@ -1588,7 +1588,7 @@ public class g implements uc.k {
         this.f8107x = -9223372036854775807L;
         this.f8106w = -9223372036854775807L;
         this.f8108y = -9223372036854775807L;
-        this.E = uc.m.f50685l;
+        this.E = uc.m.f50686l;
         this.F = new b0[0];
         this.G = new b0[0];
     }

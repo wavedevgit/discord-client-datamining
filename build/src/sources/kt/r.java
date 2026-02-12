@@ -5,23 +5,23 @@ import kotlin.jvm.internal.Intrinsics;
 final class r extends mt.r {
 
     /* renamed from: d  reason: collision with root package name */
-    private final s f35294d;
+    private final s f35295d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public r(s names) {
-        super(i.f35204a.b(), names.b(), "dayOfWeekName");
+        super(i.f35205a.b(), names.b(), "dayOfWeekName");
         Intrinsics.checkNotNullParameter(names, "names");
-        this.f35294d = names;
+        this.f35295d = names;
     }
 
     public boolean equals(Object obj) {
-        if ((obj instanceof r) && Intrinsics.areEqual(this.f35294d.b(), ((r) obj).f35294d.b())) {
+        if ((obj instanceof r) && Intrinsics.areEqual(this.f35295d.b(), ((r) obj).f35295d.b())) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f35294d.b().hashCode();
+        return this.f35295d.b().hashCode();
     }
 }

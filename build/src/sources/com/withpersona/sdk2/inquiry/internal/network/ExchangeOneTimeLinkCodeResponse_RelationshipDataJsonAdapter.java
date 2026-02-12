@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeResponse_RelationshipDataJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20223a;
+    private final m.b f20224a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f20224b;
+    private final com.squareup.moshi.h f20225b;
 
     public ExchangeOneTimeLinkCodeResponse_RelationshipDataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("type", StackTraceHelper.ID_KEY);
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20223a = a10;
+        this.f20224a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "type");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20224b = f10;
+        this.f20225b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,14 +37,14 @@ public final class ExchangeOneTimeLinkCodeResponse_RelationshipDataJsonAdapter e
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20223a);
+            int J = reader.J(this.f20224a);
             if (J != -1) {
                 if (J != 0) {
                     if (J == 1) {
-                        str2 = (String) this.f20224b.fromJson(reader);
+                        str2 = (String) this.f20225b.fromJson(reader);
                     }
                 } else {
-                    str = (String) this.f20224b.fromJson(reader);
+                    str = (String) this.f20225b.fromJson(reader);
                 }
             } else {
                 reader.z0();
@@ -62,9 +62,9 @@ public final class ExchangeOneTimeLinkCodeResponse_RelationshipDataJsonAdapter e
         if (relationshipData != null) {
             writer.i();
             writer.J("type");
-            this.f20224b.toJson(writer, relationshipData.b());
+            this.f20225b.toJson(writer, relationshipData.b());
             writer.J(StackTraceHelper.ID_KEY);
-            this.f20224b.toJson(writer, relationshipData.a());
+            this.f20225b.toJson(writer, relationshipData.a());
             writer.s();
             return;
         }

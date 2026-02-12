@@ -12,25 +12,25 @@ import java.util.Map;
 class a {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final String f18068e = "a";
+    private static final String f18069e = "a";
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f18069a;
+    private final Map f18070a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ol.a f18070b;
+    private final ol.a f18071b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Bundle f18071c = new Bundle();
+    private final Bundle f18072c = new Bundle();
 
     /* renamed from: d  reason: collision with root package name */
-    private b f18072d;
+    private b f18073d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private static class b extends Handler {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ol.a f18073a;
+        private final ol.a f18074a;
 
         @Override // android.os.Handler
         public void handleMessage(Message message) {
@@ -50,23 +50,23 @@ class a {
                         if (i10 != 2) {
                             if (i10 != 3) {
                                 if (i10 != 4) {
-                                    String str = a.f18068e;
+                                    String str = a.f18069e;
                                     Log.e(str, "Unknown event received: " + message.what);
                                     return;
                                 }
-                                this.f18073a.onCancelled(string, list);
+                                this.f18074a.onCancelled(string, list);
                                 return;
                             }
-                            this.f18073a.onProgress(string, data.getFloat(ReactProgressBarViewManager.PROP_PROGRESS));
+                            this.f18074a.onProgress(string, data.getFloat(ReactProgressBarViewManager.PROP_PROGRESS));
                             return;
                         }
-                        this.f18073a.onError(string, (Throwable) data.getSerializable("throwable"), list);
+                        this.f18074a.onError(string, (Throwable) data.getSerializable("throwable"), list);
                         return;
                     }
-                    this.f18073a.onCompleted(string, list);
+                    this.f18074a.onCompleted(string, list);
                     return;
                 }
-                this.f18073a.onStarted(string);
+                this.f18074a.onStarted(string);
                 return;
             }
             throw new IllegalArgumentException("Handler message doesn't contain an id!");
@@ -74,91 +74,91 @@ class a {
 
         private b(Looper looper, ol.a aVar) {
             super(looper);
-            this.f18073a = aVar;
+            this.f18074a = aVar;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(Map map, ol.a aVar, Looper looper) {
-        this.f18069a = map;
-        this.f18070b = aVar;
+        this.f18070a = map;
+        this.f18071b = aVar;
         if (looper != null) {
-            this.f18072d = new b(looper, aVar);
+            this.f18073d = new b(looper, aVar);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void b(String str, List list) {
-        this.f18069a.remove(str);
-        b bVar = this.f18072d;
+        this.f18070a.remove(str);
+        b bVar = this.f18073d;
         if (bVar == null) {
-            this.f18070b.onCancelled(str, list);
+            this.f18071b.onCancelled(str, list);
             return;
         }
         Message obtain = Message.obtain(bVar, 4);
         obtain.obj = list;
-        this.f18071c.putString("jobId", str);
-        obtain.setData(this.f18071c);
+        this.f18072c.putString("jobId", str);
+        obtain.setData(this.f18072c);
         obtain.sendToTarget();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void c(String str, List list) {
-        this.f18069a.remove(str);
-        b bVar = this.f18072d;
+        this.f18070a.remove(str);
+        b bVar = this.f18073d;
         if (bVar == null) {
-            this.f18070b.onCompleted(str, list);
+            this.f18071b.onCompleted(str, list);
             return;
         }
         Message obtain = Message.obtain(bVar, 1);
         obtain.obj = list;
-        this.f18071c.putString("jobId", str);
-        obtain.setData(this.f18071c);
+        this.f18072c.putString("jobId", str);
+        obtain.setData(this.f18072c);
         obtain.sendToTarget();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void d(String str, Throwable th2, List list) {
-        this.f18069a.remove(str);
-        b bVar = this.f18072d;
+        this.f18070a.remove(str);
+        b bVar = this.f18073d;
         if (bVar == null) {
-            this.f18070b.onError(str, th2, list);
+            this.f18071b.onError(str, th2, list);
             return;
         }
         Message obtain = Message.obtain(bVar, 2);
         obtain.obj = list;
-        this.f18071c.putString("jobId", str);
-        this.f18071c.putSerializable("throwable", th2);
-        obtain.setData(this.f18071c);
+        this.f18072c.putString("jobId", str);
+        this.f18072c.putSerializable("throwable", th2);
+        obtain.setData(this.f18072c);
         obtain.sendToTarget();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void e(String str, float f10) {
-        b bVar = this.f18072d;
+        b bVar = this.f18073d;
         if (bVar == null) {
-            this.f18070b.onProgress(str, f10);
+            this.f18071b.onProgress(str, f10);
             return;
         }
         Message obtain = Message.obtain(bVar, 3);
         obtain.obj = null;
-        this.f18071c.putString("jobId", str);
-        this.f18071c.putFloat(ReactProgressBarViewManager.PROP_PROGRESS, f10);
-        obtain.setData(this.f18071c);
+        this.f18072c.putString("jobId", str);
+        this.f18072c.putFloat(ReactProgressBarViewManager.PROP_PROGRESS, f10);
+        obtain.setData(this.f18072c);
         obtain.sendToTarget();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f(String str) {
-        b bVar = this.f18072d;
+        b bVar = this.f18073d;
         if (bVar == null) {
-            this.f18070b.onStarted(str);
+            this.f18071b.onStarted(str);
             return;
         }
         Message obtain = Message.obtain(bVar, 0);
         obtain.obj = null;
-        this.f18071c.putString("jobId", str);
-        obtain.setData(this.f18071c);
+        this.f18072c.putString("jobId", str);
+        obtain.setData(this.f18072c);
         obtain.sendToTarget();
     }
 }

@@ -9,14 +9,14 @@ import androidx.viewbinding.ViewBinding;
 public final class x implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final TextView f48299a;
+    private final TextView f48300a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final TextView f48300b;
+    public final TextView f48301b;
 
     private x(TextView textView, TextView textView2) {
-        this.f48299a = textView;
-        this.f48300b = textView2;
+        this.f48300a = textView;
+        this.f48301b = textView2;
     }
 
     public static x a(View view) {
@@ -32,7 +32,7 @@ public final class x implements ViewBinding {
     }
 
     public static x d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(nq.f.f38324y, viewGroup, false);
+        View inflate = layoutInflater.inflate(nq.f.f38325y, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -42,6 +42,6 @@ public final class x implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public TextView getRoot() {
-        return this.f48299a;
+        return this.f48300a;
     }
 }

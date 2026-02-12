@@ -7,13 +7,13 @@ import androidx.recyclerview.widget.RecyclerView;
 public final class g extends c {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final int[] f15544d = {1};
+    private static final int[] f15545d = {1};
 
     /* renamed from: e  reason: collision with root package name */
-    private static final int[] f15545e = {1, 0};
+    private static final int[] f15546e = {1, 0};
 
     /* renamed from: c  reason: collision with root package name */
-    private int f15546c = 0;
+    private int f15547c = 0;
 
     @Override // com.google.android.material.carousel.c
     public e g(gh.a aVar, View view) {
@@ -35,12 +35,12 @@ public final class g extends c {
         float min = Math.min(measuredHeight + f10, f11);
         float a10 = u1.a.a((measuredHeight / 3.0f) + f10, d10 + f10, max + f10);
         float f12 = (min + a10) / 2.0f;
-        int[] iArr = f15544d;
+        int[] iArr = f15545d;
         float f13 = 2.0f * d10;
         if (f11 <= f13) {
             iArr = new int[]{0};
         }
-        int[] iArr2 = f15545e;
+        int[] iArr2 = f15546e;
         if (aVar.c() == 1) {
             iArr = c.a(iArr);
             iArr2 = c.a(iArr2);
@@ -55,25 +55,25 @@ public final class g extends c {
             iArr5[i10] = ceil - i10;
         }
         a c10 = a.c(f11, a10, d10, max, iArr4, f12, iArr3, min, iArr5);
-        this.f15546c = c10.e();
+        this.f15547c = c10.e();
         boolean i11 = i(c10, aVar.getItemCount());
-        int i12 = c10.f15500d;
-        if (i12 == 0 && c10.f15499c == 0 && f11 > f13) {
-            c10.f15499c = 1;
+        int i12 = c10.f15501d;
+        if (i12 == 0 && c10.f15500c == 0 && f11 > f13) {
+            c10.f15500c = 1;
             z10 = true;
         } else {
             z10 = i11;
         }
         if (z10) {
-            c10 = a.c(f11, a10, d10, max, new int[]{c10.f15499c}, f12, new int[]{i12}, min, new int[]{c10.f15503g});
+            c10 = a.c(f11, a10, d10, max, new int[]{c10.f15500c}, f12, new int[]{i12}, min, new int[]{c10.f15504g});
         }
         return d.d(view.getContext(), f14, b10, c10, aVar.c());
     }
 
     @Override // com.google.android.material.carousel.c
     public boolean h(gh.a aVar, int i10) {
-        if (i10 >= this.f15546c || aVar.getItemCount() < this.f15546c) {
-            if (i10 >= this.f15546c && aVar.getItemCount() < this.f15546c) {
+        if (i10 >= this.f15547c || aVar.getItemCount() < this.f15547c) {
+            if (i10 >= this.f15547c && aVar.getItemCount() < this.f15547c) {
                 return true;
             }
             return false;
@@ -84,19 +84,19 @@ public final class g extends c {
     boolean i(a aVar, int i10) {
         boolean z10;
         int e10 = aVar.e() - i10;
-        if (e10 > 0 && (aVar.f15499c > 0 || aVar.f15500d > 1)) {
+        if (e10 > 0 && (aVar.f15500c > 0 || aVar.f15501d > 1)) {
             z10 = true;
         } else {
             z10 = false;
         }
         while (e10 > 0) {
-            int i11 = aVar.f15499c;
+            int i11 = aVar.f15500c;
             if (i11 > 0) {
-                aVar.f15499c = i11 - 1;
+                aVar.f15500c = i11 - 1;
             } else {
-                int i12 = aVar.f15500d;
+                int i12 = aVar.f15501d;
                 if (i12 > 1) {
-                    aVar.f15500d = i12 - 1;
+                    aVar.f15501d = i12 - 1;
                 }
             }
             e10--;

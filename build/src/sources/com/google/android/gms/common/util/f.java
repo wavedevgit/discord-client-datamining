@@ -5,13 +5,13 @@ import android.os.SystemClock;
 public class f implements d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final f f14514a = new f();
+    private static final f f14515a = new f();
 
     private f() {
     }
 
     public static d c() {
-        return f14514a;
+        return f14515a;
     }
 
     @Override // com.google.android.gms.common.util.d

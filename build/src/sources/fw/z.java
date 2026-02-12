@@ -10,18 +10,18 @@ import okhttp3.ResponseBody;
 public final class z<T> {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Response f24600a;
+    private final Response f24601a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f24601b;
+    private final Object f24602b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ResponseBody f24602c;
+    private final ResponseBody f24603c;
 
     private z(Response response, Object obj, ResponseBody responseBody) {
-        this.f24600a = response;
-        this.f24601b = obj;
-        this.f24602c = responseBody;
+        this.f24601a = response;
+        this.f24602b = obj;
+        this.f24603c = responseBody;
     }
 
     public static z c(int i10, ResponseBody responseBody) {
@@ -54,30 +54,30 @@ public final class z<T> {
     }
 
     public Object a() {
-        return this.f24601b;
+        return this.f24602b;
     }
 
     public int b() {
-        return this.f24600a.z();
+        return this.f24601a.z();
     }
 
     public ResponseBody e() {
-        return this.f24602c;
+        return this.f24603c;
     }
 
     public Headers f() {
-        return this.f24600a.z0();
+        return this.f24601a.z0();
     }
 
     public boolean g() {
-        return this.f24600a.isSuccessful();
+        return this.f24601a.isSuccessful();
     }
 
     public String h() {
-        return this.f24600a.E0();
+        return this.f24601a.E0();
     }
 
     public String toString() {
-        return this.f24600a.toString();
+        return this.f24601a.toString();
     }
 }

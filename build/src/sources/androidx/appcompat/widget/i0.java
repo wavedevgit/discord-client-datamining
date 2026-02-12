@@ -666,26 +666,26 @@ public abstract class i0 extends ViewGroup {
         this.f1839e = -1;
         this.f1840i = 0;
         this.f1842p = 8388659;
-        v0 v10 = v0.v(context, attributeSet, f.j.f23418a1, i10, 0);
-        androidx.core.view.i0.i0(this, context, f.j.f23418a1, attributeSet, v10.r(), i10, 0);
-        int k10 = v10.k(f.j.f23428c1, -1);
+        v0 v10 = v0.v(context, attributeSet, f.j.f23419a1, i10, 0);
+        androidx.core.view.i0.i0(this, context, f.j.f23419a1, attributeSet, v10.r(), i10, 0);
+        int k10 = v10.k(f.j.f23429c1, -1);
         if (k10 >= 0) {
             setOrientation(k10);
         }
-        int k11 = v10.k(f.j.f23423b1, -1);
+        int k11 = v10.k(f.j.f23424b1, -1);
         if (k11 >= 0) {
             setGravity(k11);
         }
-        boolean a10 = v10.a(f.j.f23433d1, true);
+        boolean a10 = v10.a(f.j.f23434d1, true);
         if (!a10) {
             setBaselineAligned(a10);
         }
-        this.f1844r = v10.i(f.j.f23443f1, -1.0f);
-        this.f1839e = v10.k(f.j.f23438e1, -1);
-        this.f1845s = v10.a(f.j.f23458i1, false);
-        setDividerDrawable(v10.g(f.j.f23448g1));
-        this.f1851y = v10.k(f.j.f23463j1, 0);
-        this.f1852z = v10.f(f.j.f23453h1, 0);
+        this.f1844r = v10.i(f.j.f23444f1, -1.0f);
+        this.f1839e = v10.k(f.j.f23439e1, -1);
+        this.f1845s = v10.a(f.j.f23459i1, false);
+        setDividerDrawable(v10.g(f.j.f23449g1));
+        this.f1851y = v10.k(f.j.f23464j1, 0);
+        this.f1852z = v10.f(f.j.f23454h1, 0);
         v10.x();
     }
 }

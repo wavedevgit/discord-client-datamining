@@ -9,53 +9,53 @@ import kotlinx.serialization.json.Json;
 public final class x0 extends kotlinx.serialization.encoding.b implements ut.q {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m f51972a;
+    private final m f51973a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Json f51973b;
+    private final Json f51974b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final e1 f51974c;
+    private final e1 f51975c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ut.q[] f51975d;
+    private final ut.q[] f51976d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final wt.b f51976e;
+    private final wt.b f51977e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final ut.d f51977f;
+    private final ut.d f51978f;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f51978g;
+    private boolean f51979g;
 
     /* renamed from: h  reason: collision with root package name */
-    private String f51979h;
+    private String f51980h;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f51980i;
+    private String f51981i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f51981a;
+        public static final /* synthetic */ int[] f51982a;
 
         static {
             int[] iArr = new int[e1.values().length];
             try {
-                iArr[e1.f51889o.ordinal()] = 1;
+                iArr[e1.f51890o.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[e1.f51890p.ordinal()] = 2;
+                iArr[e1.f51891p.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[e1.f51891q.ordinal()] = 3;
+                iArr[e1.f51892q.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f51981a = iArr;
+            f51982a = iArr;
         }
     }
 
@@ -63,12 +63,12 @@ public final class x0 extends kotlinx.serialization.encoding.b implements ut.q {
         Intrinsics.checkNotNullParameter(composer, "composer");
         Intrinsics.checkNotNullParameter(json, "json");
         Intrinsics.checkNotNullParameter(mode, "mode");
-        this.f51972a = composer;
-        this.f51973b = json;
-        this.f51974c = mode;
-        this.f51975d = qVarArr;
-        this.f51976e = d().a();
-        this.f51977f = d().e();
+        this.f51973a = composer;
+        this.f51974b = json;
+        this.f51975c = mode;
+        this.f51976d = qVarArr;
+        this.f51977e = d().a();
+        this.f51978f = d().e();
         int ordinal = mode.ordinal();
         if (qVarArr != null) {
             ut.q qVar = qVarArr[ordinal];
@@ -80,27 +80,27 @@ public final class x0 extends kotlinx.serialization.encoding.b implements ut.q {
     }
 
     private final void I(String str, String str2) {
-        this.f51972a.c();
+        this.f51973a.c();
         F(str);
-        this.f51972a.f(':');
-        this.f51972a.p();
+        this.f51973a.f(':');
+        this.f51973a.p();
         F(str2);
     }
 
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.Encoder
     public void A(int i10) {
-        if (this.f51978g) {
+        if (this.f51979g) {
             F(String.valueOf(i10));
         } else {
-            this.f51972a.i(i10);
+            this.f51973a.i(i10);
         }
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:20:0x005f, code lost:
-        if (kotlin.jvm.internal.Intrinsics.areEqual(r1, st.l.d.f48382a) == false) goto L10;
+        if (kotlin.jvm.internal.Intrinsics.areEqual(r1, st.l.d.f48383a) == false) goto L10;
      */
     /* JADX WARN: Code restructure failed: missing block: B:9:0x0029, code lost:
-        if (d().e().f() != ut.a.f51223d) goto L24;
+        if (d().e().f() != ut.a.f51224d) goto L24;
      */
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.Encoder
     /*
@@ -124,14 +124,14 @@ public final class x0 extends kotlinx.serialization.encoding.b implements ut.q {
             kotlinx.serialization.json.Json r1 = r3.d()
             ut.d r1 = r1.e()
             ut.a r1 = r1.f()
-            ut.a r2 = ut.a.f51223d
+            ut.a r2 = ut.a.f51224d
             if (r1 == r2) goto L74
             goto L61
         L2c:
             kotlinx.serialization.json.Json r1 = r3.d()
             ut.d r1 = r1.e()
             ut.a r1 = r1.f()
-            int[] r2 = vt.r0.a.f51951a
+            int[] r2 = vt.r0.a.f51952a
             int r1 = r1.ordinal()
             r1 = r2[r1]
             r2 = 1
@@ -142,10 +142,10 @@ public final class x0 extends kotlinx.serialization.encoding.b implements ut.q {
             if (r1 != r2) goto L6e
             kotlinx.serialization.descriptors.SerialDescriptor r1 = r4.getDescriptor()
             st.k r1 = r1.getKind()
-            st.l$a r2 = st.l.a.f48379a
+            st.l$a r2 = st.l.a.f48380a
             boolean r2 = kotlin.jvm.internal.Intrinsics.areEqual(r1, r2)
             if (r2 != 0) goto L61
-            st.l$d r2 = st.l.d.f48382a
+            st.l$d r2 = st.l.d.f48383a
             boolean r1 = kotlin.jvm.internal.Intrinsics.areEqual(r1, r2)
             if (r1 == 0) goto L74
         L61:
@@ -193,8 +193,8 @@ public final class x0 extends kotlinx.serialization.encoding.b implements ut.q {
             if (r1 == 0) goto Lc9
             kotlinx.serialization.descriptors.SerialDescriptor r0 = r4.getDescriptor()
             java.lang.String r0 = r0.h()
-            r3.f51979h = r1
-            r3.f51980i = r0
+            r3.f51980h = r1
+            r3.f51981i = r0
         Lc9:
             r4.serialize(r3, r5)
             return
@@ -205,60 +205,60 @@ public final class x0 extends kotlinx.serialization.encoding.b implements ut.q {
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.Encoder
     public void F(String value) {
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f51972a.n(value);
+        this.f51973a.n(value);
     }
 
     @Override // kotlinx.serialization.encoding.b
     public boolean G(SerialDescriptor descriptor, int i10) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        int i11 = a.f51981a[this.f51974c.ordinal()];
+        int i11 = a.f51982a[this.f51975c.ordinal()];
         if (i11 != 1) {
             boolean z10 = false;
             if (i11 != 2) {
                 if (i11 != 3) {
-                    if (!this.f51972a.a()) {
-                        this.f51972a.f(',');
+                    if (!this.f51973a.a()) {
+                        this.f51973a.f(',');
                     }
-                    this.f51972a.c();
+                    this.f51973a.c();
                     F(i0.h(descriptor, d(), i10));
-                    this.f51972a.f(':');
-                    this.f51972a.p();
+                    this.f51973a.f(':');
+                    this.f51973a.p();
                 } else {
                     if (i10 == 0) {
-                        this.f51978g = true;
+                        this.f51979g = true;
                     }
                     if (i10 == 1) {
-                        this.f51972a.f(',');
-                        this.f51972a.p();
-                        this.f51978g = false;
+                        this.f51973a.f(',');
+                        this.f51973a.p();
+                        this.f51979g = false;
                     }
                 }
-            } else if (!this.f51972a.a()) {
+            } else if (!this.f51973a.a()) {
                 if (i10 % 2 == 0) {
-                    this.f51972a.f(',');
-                    this.f51972a.c();
+                    this.f51973a.f(',');
+                    this.f51973a.c();
                     z10 = true;
                 } else {
-                    this.f51972a.f(':');
-                    this.f51972a.p();
+                    this.f51973a.f(':');
+                    this.f51973a.p();
                 }
-                this.f51978g = z10;
+                this.f51979g = z10;
             } else {
-                this.f51978g = true;
-                this.f51972a.c();
+                this.f51979g = true;
+                this.f51973a.c();
             }
         } else {
-            if (!this.f51972a.a()) {
-                this.f51972a.f(',');
+            if (!this.f51973a.a()) {
+                this.f51973a.f(',');
             }
-            this.f51972a.c();
+            this.f51973a.c();
         }
         return true;
     }
 
     @Override // kotlinx.serialization.encoding.Encoder
     public wt.b a() {
-        return this.f51976e;
+        return this.f51977e;
     }
 
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.Encoder
@@ -266,67 +266,67 @@ public final class x0 extends kotlinx.serialization.encoding.b implements ut.q {
         ut.q qVar;
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         e1 b10 = f1.b(d(), descriptor);
-        char c10 = b10.f51894d;
+        char c10 = b10.f51895d;
         if (c10 != 0) {
-            this.f51972a.f(c10);
-            this.f51972a.b();
+            this.f51973a.f(c10);
+            this.f51973a.b();
         }
-        String str = this.f51979h;
+        String str = this.f51980h;
         if (str != null) {
-            String str2 = this.f51980i;
+            String str2 = this.f51981i;
             if (str2 == null) {
                 str2 = descriptor.h();
             }
             I(str, str2);
-            this.f51979h = null;
-            this.f51980i = null;
+            this.f51980h = null;
+            this.f51981i = null;
         }
-        if (this.f51974c == b10) {
+        if (this.f51975c == b10) {
             return this;
         }
-        ut.q[] qVarArr = this.f51975d;
+        ut.q[] qVarArr = this.f51976d;
         if (qVarArr != null && (qVar = qVarArr[b10.ordinal()]) != null) {
             return qVar;
         }
-        return new x0(this.f51972a, d(), b10, this.f51975d);
+        return new x0(this.f51973a, d(), b10, this.f51976d);
     }
 
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.CompositeEncoder
     public void c(SerialDescriptor descriptor) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        if (this.f51974c.f51895e != 0) {
-            this.f51972a.q();
-            this.f51972a.d();
-            this.f51972a.f(this.f51974c.f51895e);
+        if (this.f51975c.f51896e != 0) {
+            this.f51973a.q();
+            this.f51973a.d();
+            this.f51973a.f(this.f51975c.f51896e);
         }
     }
 
     @Override // ut.q
     public Json d() {
-        return this.f51973b;
+        return this.f51974b;
     }
 
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.Encoder
     public void f(double d10) {
-        if (this.f51978g) {
+        if (this.f51979g) {
             F(String.valueOf(d10));
         } else {
-            this.f51972a.g(d10);
+            this.f51973a.g(d10);
         }
-        if (!this.f51977f.b()) {
+        if (!this.f51978f.b()) {
             if (!Double.isInfinite(d10) && !Double.isNaN(d10)) {
                 return;
             }
-            throw g0.b(Double.valueOf(d10), this.f51972a.f51921a.toString());
+            throw g0.b(Double.valueOf(d10), this.f51973a.f51922a.toString());
         }
     }
 
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.Encoder
     public void g(byte b10) {
-        if (this.f51978g) {
+        if (this.f51979g) {
             F(String.valueOf((int) b10));
         } else {
-            this.f51972a.e(b10);
+            this.f51973a.e(b10);
         }
     }
 
@@ -340,19 +340,19 @@ public final class x0 extends kotlinx.serialization.encoding.b implements ut.q {
     public Encoder j(SerialDescriptor descriptor) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         if (y0.b(descriptor)) {
-            m mVar = this.f51972a;
+            m mVar = this.f51973a;
             if (!(mVar instanceof t)) {
-                mVar = new t(mVar.f51921a, this.f51978g);
+                mVar = new t(mVar.f51922a, this.f51979g);
             }
-            return new x0(mVar, d(), this.f51974c, (ut.q[]) null);
+            return new x0(mVar, d(), this.f51975c, (ut.q[]) null);
         } else if (y0.a(descriptor)) {
-            m mVar2 = this.f51972a;
+            m mVar2 = this.f51973a;
             if (!(mVar2 instanceof n)) {
-                mVar2 = new n(mVar2.f51921a, this.f51978g);
+                mVar2 = new n(mVar2.f51922a, this.f51979g);
             }
-            return new x0(mVar2, d(), this.f51974c, (ut.q[]) null);
-        } else if (this.f51979h != null) {
-            this.f51980i = descriptor.h();
+            return new x0(mVar2, d(), this.f51975c, (ut.q[]) null);
+        } else if (this.f51980h != null) {
+            this.f51981i = descriptor.h();
             return this;
         } else {
             return super.j(descriptor);
@@ -361,23 +361,23 @@ public final class x0 extends kotlinx.serialization.encoding.b implements ut.q {
 
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.Encoder
     public void l(long j10) {
-        if (this.f51978g) {
+        if (this.f51979g) {
             F(String.valueOf(j10));
         } else {
-            this.f51972a.j(j10);
+            this.f51973a.j(j10);
         }
     }
 
     @Override // kotlinx.serialization.encoding.Encoder
     public void n() {
-        this.f51972a.k("null");
+        this.f51973a.k("null");
     }
 
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.CompositeEncoder
     public void o(SerialDescriptor descriptor, int i10, qt.o serializer, Object obj) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         Intrinsics.checkNotNullParameter(serializer, "serializer");
-        if (obj == null && !this.f51977f.j()) {
+        if (obj == null && !this.f51978f.j()) {
             return;
         }
         super.o(descriptor, i10, serializer, obj);
@@ -385,34 +385,34 @@ public final class x0 extends kotlinx.serialization.encoding.b implements ut.q {
 
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.Encoder
     public void q(short s10) {
-        if (this.f51978g) {
+        if (this.f51979g) {
             F(String.valueOf((int) s10));
         } else {
-            this.f51972a.l(s10);
+            this.f51973a.l(s10);
         }
     }
 
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.Encoder
     public void r(boolean z10) {
-        if (this.f51978g) {
+        if (this.f51979g) {
             F(String.valueOf(z10));
         } else {
-            this.f51972a.m(z10);
+            this.f51973a.m(z10);
         }
     }
 
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.Encoder
     public void t(float f10) {
-        if (this.f51978g) {
+        if (this.f51979g) {
             F(String.valueOf(f10));
         } else {
-            this.f51972a.h(f10);
+            this.f51973a.h(f10);
         }
-        if (!this.f51977f.b()) {
+        if (!this.f51978f.b()) {
             if (!Float.isInfinite(f10) && !Float.isNaN(f10)) {
                 return;
             }
-            throw g0.b(Float.valueOf(f10), this.f51972a.f51921a.toString());
+            throw g0.b(Float.valueOf(f10), this.f51973a.f51922a.toString());
         }
     }
 
@@ -424,7 +424,7 @@ public final class x0 extends kotlinx.serialization.encoding.b implements ut.q {
     @Override // kotlinx.serialization.encoding.b, kotlinx.serialization.encoding.CompositeEncoder
     public boolean z(SerialDescriptor descriptor, int i10) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        return this.f51977f.i();
+        return this.f51978f.i();
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */

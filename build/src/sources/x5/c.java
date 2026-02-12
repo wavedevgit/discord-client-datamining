@@ -12,38 +12,38 @@ import okio.ByteString;
 public abstract class c implements Closeable {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final String[] f54393r = new String[IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT];
+    private static final String[] f54394r = new String[IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT];
 
     /* renamed from: d  reason: collision with root package name */
-    int f54394d;
+    int f54395d;
 
     /* renamed from: e  reason: collision with root package name */
-    int[] f54395e = new int[32];
+    int[] f54396e = new int[32];
 
     /* renamed from: i  reason: collision with root package name */
-    String[] f54396i = new String[32];
+    String[] f54397i = new String[32];
 
     /* renamed from: o  reason: collision with root package name */
-    int[] f54397o = new int[32];
+    int[] f54398o = new int[32];
 
     /* renamed from: p  reason: collision with root package name */
-    boolean f54398p;
+    boolean f54399p;
 
     /* renamed from: q  reason: collision with root package name */
-    boolean f54399q;
+    boolean f54400q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final String[] f54400a;
+        final String[] f54401a;
 
         /* renamed from: b  reason: collision with root package name */
-        final a0 f54401b;
+        final a0 f54402b;
 
         private a(String[] strArr, a0 a0Var) {
-            this.f54400a = strArr;
-            this.f54401b = a0Var;
+            this.f54401a = strArr;
+            this.f54402b = a0Var;
         }
 
         public static a a(String... strArr) {
@@ -78,9 +78,9 @@ public abstract class c implements Closeable {
 
     static {
         for (int i10 = 0; i10 <= 31; i10++) {
-            f54393r[i10] = String.format("\\u%04x", Integer.valueOf(i10));
+            f54394r[i10] = String.format("\\u%04x", Integer.valueOf(i10));
         }
-        String[] strArr = f54393r;
+        String[] strArr = f54394r;
         strArr[34] = "\\\"";
         strArr[92] = "\\\\";
         strArr[9] = "\\t";
@@ -102,7 +102,7 @@ public abstract class c implements Closeable {
     */
     public static void y(okio.BufferedSink r7, java.lang.String r8) {
         /*
-            java.lang.String[] r0 = x5.c.f54393r
+            java.lang.String[] r0 = x5.c.f54394r
             r1 = 34
             r7.writeByte(r1)
             int r2 = r8.length()
@@ -158,22 +158,22 @@ public abstract class c implements Closeable {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void n(int i10) {
-        int i11 = this.f54394d;
-        int[] iArr = this.f54395e;
+        int i11 = this.f54395d;
+        int[] iArr = this.f54396e;
         if (i11 == iArr.length) {
             if (i11 != 256) {
-                this.f54395e = Arrays.copyOf(iArr, iArr.length * 2);
-                String[] strArr = this.f54396i;
-                this.f54396i = (String[]) Arrays.copyOf(strArr, strArr.length * 2);
-                int[] iArr2 = this.f54397o;
-                this.f54397o = Arrays.copyOf(iArr2, iArr2.length * 2);
+                this.f54396e = Arrays.copyOf(iArr, iArr.length * 2);
+                String[] strArr = this.f54397i;
+                this.f54397i = (String[]) Arrays.copyOf(strArr, strArr.length * 2);
+                int[] iArr2 = this.f54398o;
+                this.f54398o = Arrays.copyOf(iArr2, iArr2.length * 2);
             } else {
                 throw new x5.a("Nesting too deep at " + t());
             }
         }
-        int[] iArr3 = this.f54395e;
-        int i12 = this.f54394d;
-        this.f54394d = i12 + 1;
+        int[] iArr3 = this.f54396e;
+        int i12 = this.f54395d;
+        this.f54395d = i12 + 1;
         iArr3[i12] = i10;
     }
 
@@ -188,7 +188,7 @@ public abstract class c implements Closeable {
     public abstract void s();
 
     public final String t() {
-        return d.a(this.f54394d, this.f54395e, this.f54396i, this.f54397o);
+        return d.a(this.f54395d, this.f54396e, this.f54397i, this.f54398o);
     }
 
     public abstract void u();

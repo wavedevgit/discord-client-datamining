@@ -51,14 +51,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var5;
         var0 = function() { // Environment: var0
-            _fun67658: for (var _fun67658_ip = 0;;) switch (_fun67658_ip) {
+            _fun90771: for (var _fun90771_ip = 0;;) switch (_fun90771_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var0 = null;
                     var0 = var0 != var2;
                     if (!var0) {
-                        _fun67658_ip = 49;
-                        continue _fun67658
+                        _fun90771_ip = 49;
+                        continue _fun90771
                     }
                 case 16:
                     var4 = _closure1_slot3;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useCanSendStageStartNotification = var3;
     var1 = function arg0() {
-        _fun67659: for (var _fun67659_ip = 0;;) switch (_fun67659_ip) {
+        _fun90772: for (var _fun90772_ip = 0;;) switch (_fun90772_ip) {
             case 0:
                 var0 = arg0;
                 var1 = null;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = undefined;
                 var7 = undefined;
                 if (var3) {
-                    _fun67659_ip = 23;
-                    continue _fun67659
+                    _fun90772_ip = 23;
+                    continue _fun90772
                 }
             case 18:
                 var7 = var0.guild_id;
@@ -112,14 +112,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var5.bind(var6)(var4, var2, var3);
                 var0 = var1 == var0;
                 if (var0) {
-                    _fun67659_ip = 116;
-                    continue _fun67659
+                    _fun90772_ip = 116;
+                    continue _fun90772
                 }
             case 96:
                 var1 = var1 == var3;
                 if (var1) {
-                    _fun67659_ip = 113;
-                    continue _fun67659
+                    _fun90772_ip = 113;
+                    continue _fun90772
                 }
             case 103:
                 var2 = 50000;

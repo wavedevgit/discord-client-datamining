@@ -38,132 +38,132 @@ public class CronetDataSource extends f implements h {
     private volatile long B;
 
     /* renamed from: e  reason: collision with root package name */
-    final UrlRequest.Callback f13105e;
+    final UrlRequest.Callback f13106e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final CronetEngine f13106f;
+    private final CronetEngine f13107f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Executor f13107g;
+    private final Executor f13108g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final int f13108h;
+    private final int f13109h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f13109i;
+    private final int f13110i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final int f13110j;
+    private final int f13111j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final boolean f13111k;
+    private final boolean f13112k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final boolean f13112l;
+    private final boolean f13113l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final String f13113m;
+    private final String f13114m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final h.g f13114n;
+    private final h.g f13115n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final h.g f13115o;
+    private final h.g f13116o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final oe.h f13116p;
+    private final oe.h f13117p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final e f13117q;
+    private final e f13118q;
 
     /* renamed from: r  reason: collision with root package name */
-    private n f13118r;
+    private n f13119r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final boolean f13119s;
+    private final boolean f13120s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f13120t;
+    private boolean f13121t;
 
     /* renamed from: u  reason: collision with root package name */
-    private long f13121u;
+    private long f13122u;
 
     /* renamed from: v  reason: collision with root package name */
-    private UrlRequest f13122v;
+    private UrlRequest f13123v;
 
     /* renamed from: w  reason: collision with root package name */
-    private com.google.android.exoplayer2.upstream.a f13123w;
+    private com.google.android.exoplayer2.upstream.a f13124w;
 
     /* renamed from: x  reason: collision with root package name */
-    private ByteBuffer f13124x;
+    private ByteBuffer f13125x;
 
     /* renamed from: y  reason: collision with root package name */
-    private UrlResponseInfo f13125y;
+    private UrlResponseInfo f13126y;
 
     /* renamed from: z  reason: collision with root package name */
-    private IOException f13126z;
+    private IOException f13127z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class Factory implements h.c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final CronetEngine f13127a;
+        private final CronetEngine f13128a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Executor f13128b;
+        private final Executor f13129b;
 
         /* renamed from: e  reason: collision with root package name */
-        private h.c f13131e;
+        private h.c f13132e;
 
         /* renamed from: f  reason: collision with root package name */
-        private n f13132f;
+        private n f13133f;
 
         /* renamed from: g  reason: collision with root package name */
-        private c0 f13133g;
+        private c0 f13134g;
 
         /* renamed from: h  reason: collision with root package name */
-        private String f13134h;
+        private String f13135h;
 
         /* renamed from: l  reason: collision with root package name */
-        private boolean f13138l;
+        private boolean f13139l;
 
         /* renamed from: m  reason: collision with root package name */
-        private boolean f13139m;
+        private boolean f13140m;
 
         /* renamed from: n  reason: collision with root package name */
-        private boolean f13140n;
+        private boolean f13141n;
 
         /* renamed from: c  reason: collision with root package name */
-        private final h.g f13129c = new h.g();
+        private final h.g f13130c = new h.g();
 
         /* renamed from: d  reason: collision with root package name */
-        private final d.b f13130d = null;
+        private final d.b f13131d = null;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f13135i = 3;
+        private int f13136i = 3;
 
         /* renamed from: j  reason: collision with root package name */
-        private int f13136j = 8000;
+        private int f13137j = 8000;
 
         /* renamed from: k  reason: collision with root package name */
-        private int f13137k = 8000;
+        private int f13138k = 8000;
 
         public Factory(CronetEngine cronetEngine, Executor executor) {
-            this.f13127a = (CronetEngine) oe.a.e(cronetEngine);
-            this.f13128b = executor;
+            this.f13128a = (CronetEngine) oe.a.e(cronetEngine);
+            this.f13129b = executor;
         }
 
         @Override // com.google.android.exoplayer2.upstream.DataSource.Factory
         public h createDataSource() {
-            if (this.f13127a == null) {
-                h.c cVar = this.f13131e;
+            if (this.f13128a == null) {
+                h.c cVar = this.f13132e;
                 if (cVar != null) {
                     return cVar.createDataSource();
                 }
-                return ((d.b) oe.a.e(this.f13130d)).createDataSource();
+                return ((d.b) oe.a.e(this.f13131d)).createDataSource();
             }
-            CronetDataSource cronetDataSource = new CronetDataSource(this.f13127a, this.f13128b, this.f13135i, this.f13136j, this.f13137k, this.f13138l, this.f13139m, this.f13134h, this.f13129c, this.f13132f, this.f13140n);
-            c0 c0Var = this.f13133g;
+            CronetDataSource cronetDataSource = new CronetDataSource(this.f13128a, this.f13129b, this.f13136i, this.f13137j, this.f13138k, this.f13139l, this.f13140m, this.f13135h, this.f13130c, this.f13133f, this.f13141n);
+            c0 c0Var = this.f13134g;
             if (c0Var != null) {
                 cronetDataSource.i(c0Var);
             }
@@ -176,20 +176,20 @@ public class CronetDataSource extends f implements h {
     public class a extends UrlRequest.StatusListener {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ int[] f13141a;
+        final /* synthetic */ int[] f13142a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ oe.h f13142b;
+        final /* synthetic */ oe.h f13143b;
 
         a(int[] iArr, oe.h hVar) {
-            this.f13141a = iArr;
-            this.f13142b = hVar;
+            this.f13142a = iArr;
+            this.f13143b = hVar;
         }
 
         @Override // org.chromium.net.UrlRequest.StatusListener
         public void onStatus(int i10) {
-            this.f13141a[0] = i10;
-            this.f13142b.f();
+            this.f13142a[0] = i10;
+            this.f13143b.f();
         }
     }
 
@@ -201,15 +201,15 @@ public class CronetDataSource extends f implements h {
         @Override // org.chromium.net.UrlRequest.Callback
         public synchronized void onFailed(UrlRequest urlRequest, UrlResponseInfo urlResponseInfo, CronetException cronetException) {
             try {
-                if (urlRequest != CronetDataSource.this.f13122v) {
+                if (urlRequest != CronetDataSource.this.f13123v) {
                     return;
                 }
                 if (!(cronetException instanceof NetworkException) || ((NetworkException) cronetException).getErrorCode() != 1) {
-                    CronetDataSource.this.f13126z = cronetException;
+                    CronetDataSource.this.f13127z = cronetException;
                 } else {
-                    CronetDataSource.this.f13126z = new UnknownHostException();
+                    CronetDataSource.this.f13127z = new UnknownHostException();
                 }
-                CronetDataSource.this.f13116p.f();
+                CronetDataSource.this.f13117p.f();
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -217,43 +217,43 @@ public class CronetDataSource extends f implements h {
 
         @Override // org.chromium.net.UrlRequest.Callback
         public synchronized void onReadCompleted(UrlRequest urlRequest, UrlResponseInfo urlResponseInfo, ByteBuffer byteBuffer) {
-            if (urlRequest != CronetDataSource.this.f13122v) {
+            if (urlRequest != CronetDataSource.this.f13123v) {
                 return;
             }
-            CronetDataSource.this.f13116p.f();
+            CronetDataSource.this.f13117p.f();
         }
 
         @Override // org.chromium.net.UrlRequest.Callback
         public synchronized void onRedirectReceived(UrlRequest urlRequest, UrlResponseInfo urlResponseInfo, String str) {
             boolean z10;
             com.google.android.exoplayer2.upstream.a g10;
-            if (urlRequest != CronetDataSource.this.f13122v) {
+            if (urlRequest != CronetDataSource.this.f13123v) {
                 return;
             }
-            UrlRequest urlRequest2 = (UrlRequest) oe.a.e(CronetDataSource.this.f13122v);
-            com.google.android.exoplayer2.upstream.a aVar = (com.google.android.exoplayer2.upstream.a) oe.a.e(CronetDataSource.this.f13123w);
+            UrlRequest urlRequest2 = (UrlRequest) oe.a.e(CronetDataSource.this.f13123v);
+            com.google.android.exoplayer2.upstream.a aVar = (com.google.android.exoplayer2.upstream.a) oe.a.e(CronetDataSource.this.f13124w);
             int httpStatusCode = urlResponseInfo.getHttpStatusCode();
-            if (aVar.f13984c == 2 && (httpStatusCode == 307 || httpStatusCode == 308)) {
-                CronetDataSource.this.f13126z = new h.f(httpStatusCode, urlResponseInfo.getHttpStatusText(), null, urlResponseInfo.getAllHeaders(), aVar, w0.f39042f);
-                CronetDataSource.this.f13116p.f();
+            if (aVar.f13985c == 2 && (httpStatusCode == 307 || httpStatusCode == 308)) {
+                CronetDataSource.this.f13127z = new h.f(httpStatusCode, urlResponseInfo.getHttpStatusText(), null, urlResponseInfo.getAllHeaders(), aVar, w0.f39043f);
+                CronetDataSource.this.f13117p.f();
                 return;
             }
-            if (CronetDataSource.this.f13111k) {
+            if (CronetDataSource.this.f13112k) {
                 CronetDataSource.this.P();
             }
-            if (CronetDataSource.this.f13119s && aVar.f13984c == 2 && httpStatusCode == 302) {
+            if (CronetDataSource.this.f13120s && aVar.f13985c == 2 && httpStatusCode == 302) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            if (z10 || CronetDataSource.this.f13112l) {
+            if (z10 || CronetDataSource.this.f13113l) {
                 String M = CronetDataSource.M(urlResponseInfo.getAllHeaders().get("Set-Cookie"));
                 if (!z10 && TextUtils.isEmpty(M)) {
                     urlRequest.followRedirect();
                     return;
                 }
                 urlRequest2.cancel();
-                if (!z10 && aVar.f13984c == 2) {
+                if (!z10 && aVar.f13985c == 2) {
                     g10 = aVar.a().j(str).d(1).c(null).a();
                 } else {
                     g10 = aVar.g(Uri.parse(str));
@@ -261,11 +261,11 @@ public class CronetDataSource extends f implements h {
                 try {
                     UrlRequest.Builder H = CronetDataSource.this.H(g10);
                     CronetDataSource.F(H, M);
-                    CronetDataSource.this.f13122v = H.build();
-                    CronetDataSource.this.f13122v.start();
+                    CronetDataSource.this.f13123v = H.build();
+                    CronetDataSource.this.f13123v.start();
                     return;
                 } catch (IOException e10) {
-                    CronetDataSource.this.f13126z = e10;
+                    CronetDataSource.this.f13127z = e10;
                     return;
                 }
             }
@@ -274,17 +274,17 @@ public class CronetDataSource extends f implements h {
 
         @Override // org.chromium.net.UrlRequest.Callback
         public synchronized void onResponseStarted(UrlRequest urlRequest, UrlResponseInfo urlResponseInfo) {
-            if (urlRequest == CronetDataSource.this.f13122v) {
-                CronetDataSource.this.f13125y = urlResponseInfo;
-                CronetDataSource.this.f13116p.f();
+            if (urlRequest == CronetDataSource.this.f13123v) {
+                CronetDataSource.this.f13126y = urlResponseInfo;
+                CronetDataSource.this.f13117p.f();
             }
         }
 
         @Override // org.chromium.net.UrlRequest.Callback
         public synchronized void onSucceeded(UrlRequest urlRequest, UrlResponseInfo urlResponseInfo) {
-            if (urlRequest == CronetDataSource.this.f13122v) {
+            if (urlRequest == CronetDataSource.this.f13123v) {
                 CronetDataSource.this.A = true;
-                CronetDataSource.this.f13116p.f();
+                CronetDataSource.this.f13117p.f();
             }
         }
 
@@ -299,21 +299,21 @@ public class CronetDataSource extends f implements h {
 
     protected CronetDataSource(CronetEngine cronetEngine, Executor executor, int i10, int i11, int i12, boolean z10, boolean z11, String str, h.g gVar, n nVar, boolean z12) {
         super(true);
-        this.f13106f = (CronetEngine) oe.a.e(cronetEngine);
-        this.f13107g = (Executor) oe.a.e(executor);
-        this.f13108h = i10;
-        this.f13109i = i11;
-        this.f13110j = i12;
-        this.f13111k = z10;
-        this.f13112l = z11;
-        this.f13113m = str;
-        this.f13114n = gVar;
-        this.f13118r = nVar;
-        this.f13119s = z12;
-        this.f13117q = e.f38930a;
-        this.f13105e = new c(this, null);
-        this.f13115o = new h.g();
-        this.f13116p = new oe.h();
+        this.f13107f = (CronetEngine) oe.a.e(cronetEngine);
+        this.f13108g = (Executor) oe.a.e(executor);
+        this.f13109h = i10;
+        this.f13110i = i11;
+        this.f13111j = i12;
+        this.f13112k = z10;
+        this.f13113l = z11;
+        this.f13114m = str;
+        this.f13115n = gVar;
+        this.f13119r = nVar;
+        this.f13120s = z12;
+        this.f13118q = e.f38931a;
+        this.f13106e = new c(this, null);
+        this.f13116o = new h.g();
+        this.f13117p = new oe.h();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -325,11 +325,11 @@ public class CronetDataSource extends f implements h {
     }
 
     private boolean G() {
-        long b10 = this.f13117q.b();
+        long b10 = this.f13118q.b();
         boolean z10 = false;
         while (!z10 && b10 < this.B) {
-            z10 = this.f13116p.b((this.B - b10) + 5);
-            b10 = this.f13117q.b();
+            z10 = this.f13117p.b((this.B - b10) + 5);
+            b10 = this.f13118q.b();
         }
         return z10;
     }
@@ -343,12 +343,12 @@ public class CronetDataSource extends f implements h {
     }
 
     private ByteBuffer J() {
-        if (this.f13124x == null) {
+        if (this.f13125x == null) {
             ByteBuffer allocateDirect = ByteBuffer.allocateDirect(PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS);
-            this.f13124x = allocateDirect;
+            this.f13125x = allocateDirect;
             allocateDirect.limit(0);
         }
-        return this.f13124x;
+        return this.f13125x;
     }
 
     private static int K(UrlRequest urlRequest) {
@@ -377,24 +377,24 @@ public class CronetDataSource extends f implements h {
     }
 
     private void N(ByteBuffer byteBuffer, com.google.android.exoplayer2.upstream.a aVar) {
-        ((UrlRequest) w0.j(this.f13122v)).read(byteBuffer);
+        ((UrlRequest) w0.j(this.f13123v)).read(byteBuffer);
         try {
         } catch (InterruptedException unused) {
-            if (byteBuffer == this.f13124x) {
-                this.f13124x = null;
+            if (byteBuffer == this.f13125x) {
+                this.f13125x = null;
             }
             Thread.currentThread().interrupt();
-            this.f13126z = new InterruptedIOException();
+            this.f13127z = new InterruptedIOException();
         } catch (SocketTimeoutException e10) {
-            if (byteBuffer == this.f13124x) {
-                this.f13124x = null;
+            if (byteBuffer == this.f13125x) {
+                this.f13125x = null;
             }
-            this.f13126z = new h.d(e10, aVar, 2002, 2);
+            this.f13127z = new h.d(e10, aVar, 2002, 2);
         }
-        if (!this.f13116p.b(this.f13110j)) {
+        if (!this.f13117p.b(this.f13111j)) {
             throw new SocketTimeoutException();
         }
-        IOException iOException = this.f13126z;
+        IOException iOException = this.f13127z;
         if (iOException != null) {
             if (iOException instanceof h.d) {
                 throw ((h.d) iOException);
@@ -404,12 +404,12 @@ public class CronetDataSource extends f implements h {
     }
 
     private byte[] O() {
-        byte[] bArr = w0.f39042f;
+        byte[] bArr = w0.f39043f;
         ByteBuffer J = J();
         while (!this.A) {
-            this.f13116p.d();
+            this.f13117p.d();
             J.clear();
-            N(J, (com.google.android.exoplayer2.upstream.a) w0.j(this.f13123w));
+            N(J, (com.google.android.exoplayer2.upstream.a) w0.j(this.f13124w));
             J.flip();
             if (J.remaining() > 0) {
                 int length = bArr.length;
@@ -422,7 +422,7 @@ public class CronetDataSource extends f implements h {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void P() {
-        this.B = this.f13117q.b() + this.f13109i;
+        this.B = this.f13118q.b() + this.f13110i;
     }
 
     private void Q(long j10, com.google.android.exoplayer2.upstream.a aVar) {
@@ -431,7 +431,7 @@ public class CronetDataSource extends f implements h {
             ByteBuffer J = J();
             while (j10 > 0) {
                 try {
-                    this.f13116p.d();
+                    this.f13117p.d();
                     J.clear();
                     N(J, aVar);
                     if (!Thread.currentThread().isInterrupted()) {
@@ -463,32 +463,32 @@ public class CronetDataSource extends f implements h {
     }
 
     protected UrlRequest.Builder H(com.google.android.exoplayer2.upstream.a aVar) {
-        UrlRequest.Builder allowDirectExecutor = this.f13106f.newUrlRequestBuilder(aVar.f13982a.toString(), this.f13105e, this.f13107g).setPriority(this.f13108h).allowDirectExecutor();
+        UrlRequest.Builder allowDirectExecutor = this.f13107f.newUrlRequestBuilder(aVar.f13983a.toString(), this.f13106e, this.f13108g).setPriority(this.f13109h).allowDirectExecutor();
         HashMap hashMap = new HashMap();
-        h.g gVar = this.f13114n;
+        h.g gVar = this.f13115n;
         if (gVar != null) {
             hashMap.putAll(gVar.b());
         }
-        hashMap.putAll(this.f13115o.b());
-        hashMap.putAll(aVar.f13986e);
+        hashMap.putAll(this.f13116o.b());
+        hashMap.putAll(aVar.f13987e);
         for (Map.Entry entry : hashMap.entrySet()) {
             allowDirectExecutor.addHeader((String) entry.getKey(), (String) entry.getValue());
         }
-        if (aVar.f13985d != null && !hashMap.containsKey("Content-Type")) {
+        if (aVar.f13986d != null && !hashMap.containsKey("Content-Type")) {
             throw new b("HTTP request with non-empty body must set Content-Type", aVar, 1004, 0);
         }
-        String a10 = t.a(aVar.f13988g, aVar.f13989h);
+        String a10 = t.a(aVar.f13989g, aVar.f13990h);
         if (a10 != null) {
             allowDirectExecutor.addHeader("Range", a10);
         }
-        String str = this.f13113m;
+        String str = this.f13114m;
         if (str != null) {
             allowDirectExecutor.addHeader("User-Agent", str);
         }
         allowDirectExecutor.setHttpMethod(aVar.b());
-        byte[] bArr = aVar.f13985d;
+        byte[] bArr = aVar.f13986d;
         if (bArr != null) {
-            allowDirectExecutor.setUploadDataProvider(new com.google.android.exoplayer2.ext.cronet.a(bArr), this.f13107g);
+            allowDirectExecutor.setUploadDataProvider(new com.google.android.exoplayer2.ext.cronet.a(bArr), this.f13108g);
         }
         return allowDirectExecutor;
     }
@@ -499,18 +499,18 @@ public class CronetDataSource extends f implements h {
         m mVar;
         String I;
         oe.a.e(aVar);
-        oe.a.g(!this.f13120t);
-        this.f13116p.d();
+        oe.a.g(!this.f13121t);
+        this.f13117p.d();
         P();
-        this.f13123w = aVar;
+        this.f13124w = aVar;
         try {
             UrlRequest build = H(aVar).build();
-            this.f13122v = build;
+            this.f13123v = build;
             build.start();
             q(aVar);
             try {
                 boolean G = G();
-                IOException iOException = this.f13126z;
+                IOException iOException = this.f13127z;
                 if (iOException != null) {
                     String message = iOException.getMessage();
                     if (message != null && pi.b.e(message).contains("err_cleartext_not_permitted")) {
@@ -518,46 +518,46 @@ public class CronetDataSource extends f implements h {
                     }
                     throw new b(iOException, aVar, 2001, K(build));
                 } else if (G) {
-                    UrlResponseInfo urlResponseInfo = (UrlResponseInfo) oe.a.e(this.f13125y);
+                    UrlResponseInfo urlResponseInfo = (UrlResponseInfo) oe.a.e(this.f13126y);
                     int httpStatusCode = urlResponseInfo.getHttpStatusCode();
                     Map<String, List<String>> allHeaders = urlResponseInfo.getAllHeaders();
                     long j10 = 0;
                     long j11 = -1;
                     if (httpStatusCode >= 200 && httpStatusCode <= 299) {
-                        n nVar = this.f13118r;
+                        n nVar = this.f13119r;
                         if (nVar != null && (I = I(allHeaders, "Content-Type")) != null && !nVar.apply(I)) {
                             throw new h.e(I, aVar);
                         }
                         if (httpStatusCode == 200) {
-                            long j12 = aVar.f13988g;
+                            long j12 = aVar.f13989g;
                             if (j12 != 0) {
                                 j10 = j12;
                             }
                         }
                         if (!L(urlResponseInfo)) {
-                            long j13 = aVar.f13989h;
+                            long j13 = aVar.f13990h;
                             if (j13 != -1) {
-                                this.f13121u = j13;
+                                this.f13122u = j13;
                             } else {
                                 long b10 = t.b(I(allHeaders, "Content-Length"), I(allHeaders, "Content-Range"));
                                 if (b10 != -1) {
                                     j11 = b10 - j10;
                                 }
-                                this.f13121u = j11;
+                                this.f13122u = j11;
                             }
                         } else {
-                            this.f13121u = aVar.f13989h;
+                            this.f13122u = aVar.f13990h;
                         }
-                        this.f13120t = true;
+                        this.f13121t = true;
                         r(aVar);
                         Q(j10, aVar);
-                        return this.f13121u;
+                        return this.f13122u;
                     }
                     if (httpStatusCode == 416) {
-                        if (aVar.f13988g == t.c(I(allHeaders, "Content-Range"))) {
-                            this.f13120t = true;
+                        if (aVar.f13989g == t.c(I(allHeaders, "Content-Range"))) {
+                            this.f13121t = true;
                             r(aVar);
-                            long j14 = aVar.f13989h;
+                            long j14 = aVar.f13990h;
                             if (j14 == -1) {
                                 return 0L;
                             }
@@ -567,7 +567,7 @@ public class CronetDataSource extends f implements h {
                     try {
                         bArr = O();
                     } catch (IOException unused) {
-                        bArr = w0.f39042f;
+                        bArr = w0.f39043f;
                     }
                     byte[] bArr2 = bArr;
                     if (httpStatusCode == 416) {
@@ -594,21 +594,21 @@ public class CronetDataSource extends f implements h {
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public synchronized void close() {
         try {
-            UrlRequest urlRequest = this.f13122v;
+            UrlRequest urlRequest = this.f13123v;
             if (urlRequest != null) {
                 urlRequest.cancel();
-                this.f13122v = null;
+                this.f13123v = null;
             }
-            ByteBuffer byteBuffer = this.f13124x;
+            ByteBuffer byteBuffer = this.f13125x;
             if (byteBuffer != null) {
                 byteBuffer.limit(0);
             }
-            this.f13123w = null;
-            this.f13125y = null;
-            this.f13126z = null;
+            this.f13124w = null;
+            this.f13126y = null;
+            this.f13127z = null;
             this.A = false;
-            if (this.f13120t) {
-                this.f13120t = false;
+            if (this.f13121t) {
+                this.f13121t = false;
                 p();
             }
         } catch (Throwable th2) {
@@ -618,7 +618,7 @@ public class CronetDataSource extends f implements h {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public Map d() {
-        UrlResponseInfo urlResponseInfo = this.f13125y;
+        UrlResponseInfo urlResponseInfo = this.f13126y;
         if (urlResponseInfo == null) {
             return Collections.EMPTY_MAP;
         }
@@ -627,7 +627,7 @@ public class CronetDataSource extends f implements h {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public Uri m() {
-        UrlResponseInfo urlResponseInfo = this.f13125y;
+        UrlResponseInfo urlResponseInfo = this.f13126y;
         if (urlResponseInfo == null) {
             return null;
         }
@@ -636,34 +636,34 @@ public class CronetDataSource extends f implements h {
 
     @Override // me.j
     public int read(byte[] bArr, int i10, int i11) {
-        oe.a.g(this.f13120t);
+        oe.a.g(this.f13121t);
         if (i11 == 0) {
             return 0;
         }
-        if (this.f13121u == 0) {
+        if (this.f13122u == 0) {
             return -1;
         }
         ByteBuffer J = J();
         if (!J.hasRemaining()) {
-            this.f13116p.d();
+            this.f13117p.d();
             J.clear();
-            N(J, (com.google.android.exoplayer2.upstream.a) w0.j(this.f13123w));
+            N(J, (com.google.android.exoplayer2.upstream.a) w0.j(this.f13124w));
             if (this.A) {
-                this.f13121u = 0L;
+                this.f13122u = 0L;
                 return -1;
             }
             J.flip();
             oe.a.g(J.hasRemaining());
         }
-        long j10 = this.f13121u;
+        long j10 = this.f13122u;
         if (j10 == -1) {
             j10 = LongCompanionObject.MAX_VALUE;
         }
         int d10 = (int) g.d(j10, J.remaining(), i11);
         J.get(bArr, i10, d10);
-        long j11 = this.f13121u;
+        long j11 = this.f13122u;
         if (j11 != -1) {
-            this.f13121u = j11 - d10;
+            this.f13122u = j11 - d10;
         }
         o(d10);
         return d10;
@@ -673,21 +673,21 @@ public class CronetDataSource extends f implements h {
     public static final class b extends h.d {
 
         /* renamed from: o  reason: collision with root package name */
-        public final int f13143o;
+        public final int f13144o;
 
         public b(IOException iOException, com.google.android.exoplayer2.upstream.a aVar, int i10, int i11) {
             super(iOException, aVar, i10, 1);
-            this.f13143o = i11;
+            this.f13144o = i11;
         }
 
         public b(String str, com.google.android.exoplayer2.upstream.a aVar, int i10, int i11) {
             super(str, aVar, i10, 1);
-            this.f13143o = i11;
+            this.f13144o = i11;
         }
 
         public b(com.google.android.exoplayer2.upstream.a aVar, int i10, int i11) {
             super(aVar, i10, 1);
-            this.f13143o = i11;
+            this.f13144o = i11;
         }
     }
 }

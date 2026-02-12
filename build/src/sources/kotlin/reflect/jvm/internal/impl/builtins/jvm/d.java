@@ -8,20 +8,20 @@ import kotlin.reflect.jvm.internal.impl.descriptors.ModuleDescriptor;
 public class d implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ModuleDescriptor f32263d;
+    private final ModuleDescriptor f32264d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f32264e;
+    private final boolean f32265e;
 
     public d(ModuleDescriptor moduleDescriptor, boolean z10) {
-        this.f32263d = moduleDescriptor;
-        this.f32264e = z10;
+        this.f32264d = moduleDescriptor;
+        this.f32265e = z10;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         JvmBuiltIns.Settings w10;
-        w10 = JvmBuiltIns.w(this.f32263d, this.f32264e);
+        w10 = JvmBuiltIns.w(this.f32264d, this.f32265e);
         return w10;
     }
 }

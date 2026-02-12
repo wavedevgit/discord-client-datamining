@@ -23,38 +23,38 @@ import java.util.Locale;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConnectivityManager f27992a;
+    private final ConnectivityManager f27993a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final WifiManager f27993b;
+    private final WifiManager f27994b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final TelephonyManager f27994c;
+    private final TelephonyManager f27995c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ReactApplicationContext f27995d;
+    private final ReactApplicationContext f27996d;
 
     /* renamed from: e  reason: collision with root package name */
-    public boolean f27996e = false;
+    public boolean f27997e = false;
 
     /* renamed from: f  reason: collision with root package name */
-    private jm.b f27997f = jm.b.UNKNOWN;
+    private jm.b f27998f = jm.b.UNKNOWN;
 
     /* renamed from: g  reason: collision with root package name */
-    private jm.a f27998g = null;
+    private jm.a f27999g = null;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f27999h = false;
+    private boolean f28000h = false;
 
     /* renamed from: i  reason: collision with root package name */
-    private Boolean f28000i;
+    private Boolean f28001i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(ReactApplicationContext reactApplicationContext) {
-        this.f27995d = reactApplicationContext;
-        this.f27992a = (ConnectivityManager) reactApplicationContext.getSystemService("connectivity");
-        this.f27993b = (WifiManager) reactApplicationContext.getApplicationContext().getSystemService("wifi");
-        this.f27994c = (TelephonyManager) reactApplicationContext.getSystemService("phone");
+        this.f27996d = reactApplicationContext;
+        this.f27993a = (ConnectivityManager) reactApplicationContext.getSystemService("connectivity");
+        this.f27994b = (WifiManager) reactApplicationContext.getApplicationContext().getSystemService("wifi");
+        this.f27995c = (TelephonyManager) reactApplicationContext.getSystemService("phone");
     }
 
     private WritableMap b(String str) {
@@ -105,18 +105,18 @@ public abstract class b {
                 }
                 break;
             case 1:
-                jm.a aVar = this.f27998g;
+                jm.a aVar = this.f27999g;
                 if (aVar != null) {
-                    createMap.putString("cellularGeneration", aVar.f31192d);
+                    createMap.putString("cellularGeneration", aVar.f31193d);
                 }
-                String networkOperatorName = this.f27994c.getNetworkOperatorName();
+                String networkOperatorName = this.f27995c.getNetworkOperatorName();
                 if (networkOperatorName != null) {
                     createMap.putString("carrier", networkOperatorName);
                     return createMap;
                 }
                 break;
             case 2:
-                if (d.b(e()) && (wifiManager = this.f27993b) != null && (connectionInfo = wifiManager.getConnectionInfo()) != null) {
+                if (d.b(e()) && (wifiManager = this.f27994b) != null && (connectionInfo = wifiManager.getConnectionInfo()) != null) {
                     try {
                         String ssid = connectionInfo.getSSID();
                         if (ssid != null && !ssid.contains("<unknown ssid>")) {
@@ -201,7 +201,7 @@ public abstract class b {
         WritableMap createMap = Arguments.createMap();
         boolean z12 = false;
         if (d.b(e())) {
-            WifiManager wifiManager = this.f27993b;
+            WifiManager wifiManager = this.f27994b;
             if (wifiManager != null) {
                 z11 = wifiManager.isWifiEnabled();
             } else {
@@ -212,22 +212,22 @@ public abstract class b {
         if (str != null) {
             str2 = str;
         } else {
-            str2 = this.f27997f.f31202d;
+            str2 = this.f27998f.f31203d;
         }
         createMap.putString("type", str2);
         boolean z13 = true;
-        if (!this.f27997f.equals(jm.b.NONE) && !this.f27997f.equals(jm.b.UNKNOWN)) {
+        if (!this.f27998f.equals(jm.b.NONE) && !this.f27998f.equals(jm.b.UNKNOWN)) {
             z10 = true;
         } else {
             z10 = false;
         }
         createMap.putBoolean("isConnected", z10);
-        if (this.f27999h && (str == null || str.equals(this.f27997f.f31202d))) {
+        if (this.f28000h && (str == null || str.equals(this.f27998f.f31203d))) {
             z12 = true;
         }
         createMap.putBoolean("isInternetReachable", z12);
         if (str == null) {
-            str = this.f27997f.f31202d;
+            str = this.f27998f.f31203d;
         }
         WritableMap b10 = b(str);
         if (z10) {
@@ -242,7 +242,7 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ConnectivityManager c() {
-        return this.f27992a;
+        return this.f27993a;
     }
 
     public void d(String str, Promise promise) {
@@ -250,7 +250,7 @@ public abstract class b {
     }
 
     ReactApplicationContext e() {
-        return this.f27995d;
+        return this.f27996d;
     }
 
     public abstract void g();
@@ -260,8 +260,8 @@ public abstract class b {
     }
 
     public void i(boolean z10) {
-        this.f28000i = Boolean.valueOf(z10);
-        k(this.f27997f, this.f27998g, this.f27999h);
+        this.f28001i = Boolean.valueOf(z10);
+        k(this.f27998f, this.f27999g, this.f28000h);
     }
 
     public abstract void j();
@@ -270,29 +270,29 @@ public abstract class b {
     public void k(jm.b bVar, jm.a aVar, boolean z10) {
         boolean z11;
         boolean z12;
-        Boolean bool = this.f28000i;
+        Boolean bool = this.f28001i;
         if (bool != null) {
             z10 = bool.booleanValue();
         }
         boolean z13 = false;
-        if (bVar != this.f27997f) {
+        if (bVar != this.f27998f) {
             z11 = true;
         } else {
             z11 = false;
         }
-        if (aVar != this.f27998g) {
+        if (aVar != this.f27999g) {
             z12 = true;
         } else {
             z12 = false;
         }
-        if (z10 != this.f27999h) {
+        if (z10 != this.f28000h) {
             z13 = true;
         }
         if (z11 || z12 || z13) {
-            this.f27997f = bVar;
-            this.f27998g = aVar;
-            this.f27999h = z10;
-            if (this.f27996e) {
+            this.f27998f = bVar;
+            this.f27999g = aVar;
+            this.f28000h = z10;
+            if (this.f27997e) {
                 h();
             }
         }

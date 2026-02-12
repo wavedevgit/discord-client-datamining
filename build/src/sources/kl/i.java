@@ -13,37 +13,37 @@ import java.util.List;
 public class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final n f31898a;
+    private final n f31899a;
 
     /* renamed from: b  reason: collision with root package name */
-    private ml.d f31899b;
+    private ml.d f31900b;
 
     /* renamed from: c  reason: collision with root package name */
-    private ml.c f31900c;
+    private ml.c f31901c;
 
     /* renamed from: d  reason: collision with root package name */
-    private ml.e f31901d;
+    private ml.e f31902d;
 
     /* renamed from: e  reason: collision with root package name */
-    private ml.a f31902e;
+    private ml.a f31903e;
 
     /* renamed from: f  reason: collision with root package name */
-    private ml.b f31903f;
+    private ml.b f31904f;
 
     /* renamed from: g  reason: collision with root package name */
-    private ml.f f31904g;
+    private ml.f f31905g;
 
     /* renamed from: h  reason: collision with root package name */
-    private ml.h f31905h;
+    private ml.h f31906h;
 
     /* renamed from: i  reason: collision with root package name */
-    private View f31906i;
+    private View f31907i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final kl.b f31907j;
+    private final kl.b f31908j;
 
     /* renamed from: k  reason: collision with root package name */
-    private HashMap f31908k = z();
+    private HashMap f31909k = z();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -53,11 +53,11 @@ public class i {
 
         @Override // com.henninghall.date_picker.pickers.a.b
         public void a(com.henninghall.date_picker.pickers.a aVar, int i10, int i11) {
-            if (i.this.f31898a.f17586o.g()) {
-                String m10 = i.this.f31899b.m(i10);
-                String m11 = i.this.f31899b.m(i11);
+            if (i.this.f31899a.f17587o.g()) {
+                String m10 = i.this.f31900b.m(i10);
+                String m11 = i.this.f31900b.m(i11);
                 if ((m10.equals("12") && m11.equals("11")) || (m10.equals("11") && m11.equals("12"))) {
-                    i.this.f31902e.f36547d.a((i.this.f31902e.f36547d.getValue() + 1) % 2, false);
+                    i.this.f31903e.f36548d.a((i.this.f31903e.f36548d.getValue() + 1) % 2, false);
                 }
             }
         }
@@ -67,52 +67,52 @@ public class i {
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public class b extends HashMap {
         b() {
-            put(il.c.DAY, i.this.f31900c);
-            put(il.c.YEAR, i.this.f31905h);
-            put(il.c.MONTH, i.this.f31904g);
-            put(il.c.DATE, i.this.f31903f);
-            put(il.c.HOUR, i.this.f31899b);
-            put(il.c.MINUTE, i.this.f31901d);
-            put(il.c.AM_PM, i.this.f31902e);
+            put(il.c.DAY, i.this.f31901c);
+            put(il.c.YEAR, i.this.f31906h);
+            put(il.c.MONTH, i.this.f31905g);
+            put(il.c.DATE, i.this.f31904f);
+            put(il.c.HOUR, i.this.f31900b);
+            put(il.c.MINUTE, i.this.f31902d);
+            put(il.c.AM_PM, i.this.f31903e);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i(n nVar, View view) {
-        this.f31898a = nVar;
-        this.f31906i = view;
-        this.f31907j = new kl.b(view);
-        this.f31905h = new ml.h(w(k.f17558i), nVar);
-        this.f31904g = new ml.f(w(k.f17555f), nVar);
-        this.f31903f = new ml.b(w(k.f17551b), nVar);
-        this.f31900c = new ml.c(w(k.f17552c), nVar);
-        this.f31901d = new ml.e(w(k.f17554e), nVar);
-        this.f31902e = new ml.a(w(k.f17550a), nVar);
-        this.f31899b = new ml.d(w(k.f17553d), nVar);
+        this.f31899a = nVar;
+        this.f31907i = view;
+        this.f31908j = new kl.b(view);
+        this.f31906h = new ml.h(w(k.f17559i), nVar);
+        this.f31905g = new ml.f(w(k.f17556f), nVar);
+        this.f31904f = new ml.b(w(k.f17552b), nVar);
+        this.f31901c = new ml.c(w(k.f17553c), nVar);
+        this.f31902d = new ml.e(w(k.f17555e), nVar);
+        this.f31903e = new ml.a(w(k.f17551a), nVar);
+        this.f31900b = new ml.d(w(k.f17554d), nVar);
         m();
     }
 
     private void i() {
-        Iterator it = this.f31898a.f17586o.b().iterator();
+        Iterator it = this.f31899a.f17587o.b().iterator();
         while (it.hasNext()) {
-            this.f31907j.a(y((il.c) it.next()).f36547d.getView());
+            this.f31908j.a(y((il.c) it.next()).f36548d.getView());
         }
     }
 
     private void m() {
-        this.f31899b.f36547d.setOnValueChangeListenerInScrolling(new a());
+        this.f31900b.f36548d.setOnValueChangeListenerInScrolling(new a());
     }
 
     private List n() {
-        return new ArrayList(Arrays.asList(this.f31905h, this.f31904g, this.f31903f, this.f31900c, this.f31899b, this.f31901d, this.f31902e));
+        return new ArrayList(Arrays.asList(this.f31906h, this.f31905g, this.f31904f, this.f31901c, this.f31900b, this.f31902d, this.f31903e));
     }
 
     private String o() {
         ArrayList v10 = v();
-        if (this.f31898a.z() == il.b.date) {
+        if (this.f31899a.z() == il.b.date) {
             return ((ml.g) v10.get(0)).e() + " " + ((ml.g) v10.get(1)).e() + " " + ((ml.g) v10.get(2)).e();
         }
-        return this.f31900c.e();
+        return this.f31901c.e();
     }
 
     private String p(int i10) {
@@ -133,15 +133,15 @@ public class i {
     }
 
     private String q(int i10) {
-        if (this.f31898a.z() == il.b.date) {
+        if (this.f31899a.z() == il.b.date) {
             return p(i10);
         }
-        return this.f31900c.l();
+        return this.f31901c.l();
     }
 
     private ArrayList v() {
         ArrayList arrayList = new ArrayList();
-        Iterator it = this.f31898a.f17586o.b().iterator();
+        Iterator it = this.f31899a.f17587o.b().iterator();
         while (it.hasNext()) {
             arrayList.add(y((il.c) it.next()));
         }
@@ -149,7 +149,7 @@ public class i {
     }
 
     private com.henninghall.date_picker.pickers.a w(int i10) {
-        return (com.henninghall.date_picker.pickers.a) this.f31906i.findViewById(i10);
+        return (com.henninghall.date_picker.pickers.a) this.f31907i.findViewById(i10);
     }
 
     private HashMap z() {
@@ -158,7 +158,7 @@ public class i {
 
     public boolean A() {
         for (ml.g gVar : n()) {
-            if (gVar.f36547d.c()) {
+            if (gVar.f36548d.c()) {
                 return true;
             }
         }
@@ -167,7 +167,7 @@ public class i {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void B() {
-        this.f31907j.b();
+        this.f31908j.b();
         i();
     }
 
@@ -217,14 +217,14 @@ public class i {
     }
 
     public String u() {
-        return o() + " " + this.f31899b.e() + " " + this.f31901d.e() + this.f31902e.e();
+        return o() + " " + this.f31900b.e() + " " + this.f31902d.e() + this.f31903e.e();
     }
 
     String x() {
-        return this.f31899b.l() + " " + this.f31901d.l() + this.f31902e.l();
+        return this.f31900b.l() + " " + this.f31902d.l() + this.f31903e.l();
     }
 
     ml.g y(il.c cVar) {
-        return (ml.g) this.f31908k.get(cVar);
+        return (ml.g) this.f31909k.get(cVar);
     }
 }

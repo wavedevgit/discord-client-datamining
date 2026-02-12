@@ -5,30 +5,30 @@ import bj.c;
 final class d7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final d7 f44267a = new d7();
+    static final d7 f44268a = new d7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f44268b;
+    private static final bj.c f44269b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f44269c;
+    private static final bj.c f44270c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f44270d;
+    private static final bj.c f44271d;
 
     static {
         c.b a10 = bj.c.a("detectorMode");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44268b = a10.b(s1Var.b()).a();
+        f44269b = a10.b(s1Var.b()).a();
         c.b a11 = bj.c.a("streamModeSmoothingRatio");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f44269c = a11.b(s1Var2.b()).a();
+        f44270c = a11.b(s1Var2.b()).a();
         c.b a12 = bj.c.a("rawSizeMaskEnabled");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f44270d = a12.b(s1Var3.b()).a();
+        f44271d = a12.b(s1Var3.b()).a();
     }
 
     private d7() {

@@ -219,7 +219,7 @@ public class c implements j, AdapterView.OnItemClickListener {
 
     public k l(ViewGroup viewGroup) {
         if (this.f1427o == null) {
-            this.f1427o = (ExpandedMenuView) this.f1425e.inflate(f.g.f23382g, viewGroup, false);
+            this.f1427o = (ExpandedMenuView) this.f1425e.inflate(f.g.f23383g, viewGroup, false);
             if (this.f1432t == null) {
                 this.f1432t = new a();
             }

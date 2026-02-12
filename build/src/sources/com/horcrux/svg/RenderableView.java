@@ -72,21 +72,21 @@ public abstract class RenderableView extends VirtualView implements ReactHitSlop
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f17601a;
+        static final /* synthetic */ int[] f17602a;
 
         static {
             int[] iArr = new int[p0.values().length];
-            f17601a = iArr;
+            f17602a = iArr;
             try {
                 iArr[p0.kStartMarker.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f17601a[p0.kMidMarker.ordinal()] = 2;
+                f17602a[p0.kMidMarker.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f17601a[p0.kEndMarker.ordinal()] = 3;
+                f17602a[p0.kEndMarker.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -411,20 +411,20 @@ public abstract class RenderableView extends VirtualView implements ReactHitSlop
                 canvas.saveLayer(null, paint);
             }
             if (h0Var.p() == a.b.USER_SPACE_ON_USE) {
-                float relativeOnWidth = (float) relativeOnWidth(h0Var.f17783q);
-                float relativeOnHeight = (float) relativeOnHeight(h0Var.f17784r);
-                rectF = new RectF(relativeOnWidth, relativeOnHeight, ((float) relativeOnWidth(h0Var.f17785s)) + relativeOnWidth, ((float) relativeOnHeight(h0Var.f17786t)) + relativeOnHeight);
+                float relativeOnWidth = (float) relativeOnWidth(h0Var.f17784q);
+                float relativeOnHeight = (float) relativeOnHeight(h0Var.f17785r);
+                rectF = new RectF(relativeOnWidth, relativeOnHeight, ((float) relativeOnWidth(h0Var.f17786s)) + relativeOnWidth, ((float) relativeOnHeight(h0Var.f17787t)) + relativeOnHeight);
             } else {
                 RectF clientRect2 = getClientRect();
                 if ((this instanceof d0) && clientRect2 == null) {
                     return;
                 }
                 this.mInvCTM.mapRect(clientRect2);
-                float relativeOnFraction = (float) relativeOnFraction(h0Var.f17783q, clientRect2.width());
-                float relativeOnFraction2 = (float) relativeOnFraction(h0Var.f17784r, clientRect2.height());
+                float relativeOnFraction = (float) relativeOnFraction(h0Var.f17784q, clientRect2.width());
+                float relativeOnFraction2 = (float) relativeOnFraction(h0Var.f17785r, clientRect2.height());
                 float f11 = clientRect2.left;
                 float f12 = clientRect2.top;
-                rectF = new RectF(f11 + relativeOnFraction, f12 + relativeOnFraction2, f11 + relativeOnFraction + ((float) relativeOnFraction(h0Var.f17785s, clientRect2.width())), f12 + relativeOnFraction2 + ((float) relativeOnFraction(h0Var.f17786t, clientRect2.height())));
+                rectF = new RectF(f11 + relativeOnFraction, f12 + relativeOnFraction2, f11 + relativeOnFraction + ((float) relativeOnFraction(h0Var.f17786s, clientRect2.width())), f12 + relativeOnFraction2 + ((float) relativeOnFraction(h0Var.f17787t, clientRect2.height())));
             }
             canvas.clipRect(rectF);
             h0Var.draw(canvas, paint, 1.0f);
@@ -461,7 +461,7 @@ public abstract class RenderableView extends VirtualView implements ReactHitSlop
                 Iterator it = h10.iterator();
                 while (it.hasNext()) {
                     o0 o0Var = (o0) it.next();
-                    int i10 = a.f17601a[o0Var.f17874a.ordinal()];
+                    int i10 = a.f17602a[o0Var.f17875a.ordinal()];
                     if (i10 != 1) {
                         if (i10 != 2) {
                             if (i10 != 3) {

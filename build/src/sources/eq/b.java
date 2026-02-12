@@ -7,10 +7,10 @@ import lr.g;
 public final class b implements d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f23264a;
+    private final a f23265a;
 
     public b(a aVar) {
-        this.f23264a = aVar;
+        this.f23265a = aVar;
     }
 
     public static b a(a aVar) {
@@ -24,6 +24,6 @@ public final class b implements d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public CoroutineDispatcher get() {
-        return c(this.f23264a);
+        return c(this.f23265a);
     }
 }

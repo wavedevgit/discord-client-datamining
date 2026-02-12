@@ -63,7 +63,7 @@ public final class LocalNotificationEvent implements ReactEvent {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        n2 n2Var = n2.f50032a;
+        n2 n2Var = n2.f50033a;
         return new u0(n2Var, a.u(n2Var));
     }
 

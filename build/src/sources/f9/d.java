@@ -9,13 +9,13 @@ import com.facebook.imagepipeline.core.ImagePipelineConfig;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Class f23617a = d.class;
+    private static final Class f23618a = d.class;
 
     /* renamed from: b  reason: collision with root package name */
-    private static e f23618b = null;
+    private static e f23619b = null;
 
     /* renamed from: c  reason: collision with root package name */
-    private static volatile boolean f23619c = false;
+    private static volatile boolean f23620c = false;
 
     public static ImagePipeline a() {
         return b().j();
@@ -62,15 +62,15 @@ public abstract class d {
             java.lang.String r0 = "Fresco#initialize"
             za.b.a(r0)
         Lb:
-            boolean r0 = f9.d.f23619c
+            boolean r0 = f9.d.f23620c
             if (r0 == 0) goto L17
-            java.lang.Class r0 = f9.d.f23617a
+            java.lang.Class r0 = f9.d.f23618a
             java.lang.String r1 = "Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!"
             q8.a.F(r0, r1)
             goto L1a
         L17:
             r0 = 1
-            f9.d.f23619c = r0
+            f9.d.f23620c = r0
         L1a:
             oa.u.b(r5)
             boolean r5 = ob.a.c()
@@ -152,7 +152,7 @@ public abstract class d {
             za.b.a("Fresco.initializeDrawee");
         }
         e eVar = new e(context, bVar);
-        f23618b = eVar;
+        f23619b = eVar;
         SimpleDraweeView.initialize(eVar);
         if (za.b.d()) {
             za.b.b();
@@ -160,6 +160,6 @@ public abstract class d {
     }
 
     public static PipelineDraweeControllerBuilder g() {
-        return f23618b.get();
+        return f23619b.get();
     }
 }

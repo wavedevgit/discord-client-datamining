@@ -26,40 +26,40 @@ import qq.k;
 public final class d implements k5, a4, c2, v, e0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f20742d;
+    private final String f20743d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final InputSelectComponentStyle f20743e;
+    private final InputSelectComponentStyle f20744e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final List f20744i;
+    private final List f20745i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final JsonLogicBoolean f20745o;
+    private final JsonLogicBoolean f20746o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final JsonLogicBoolean f20746p;
+    private final JsonLogicBoolean f20747p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final String f20747q;
+    private final String f20748q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final String f20748r;
+    private final String f20749r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final List f20749s;
+    private final List f20750s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final List f20750t;
+    private final List f20751t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final boolean f20751u;
+    private final boolean f20752u;
 
     /* renamed from: v  reason: collision with root package name */
-    private k f20752v;
+    private k f20753v;
 
     /* renamed from: w  reason: collision with root package name */
-    public static final a f20741w = new a(null);
+    public static final a f20742w = new a(null);
     @NotNull
     public static final Parcelable.Creator<d> CREATOR = new b();
 
@@ -184,43 +184,43 @@ public final class d implements k5, a4, c2, v, e0 {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(selectedOptions, "selectedOptions");
         Intrinsics.checkNotNullParameter(options, "options");
-        this.f20742d = name;
-        this.f20743e = inputSelectComponentStyle;
-        this.f20744i = selectedOptions;
-        this.f20745o = jsonLogicBoolean;
-        this.f20746p = jsonLogicBoolean2;
-        this.f20747q = str;
-        this.f20748r = str2;
-        this.f20749s = options;
-        this.f20750t = new ArrayList();
-        this.f20751u = true;
-        this.f20752v = new k(f());
+        this.f20743d = name;
+        this.f20744e = inputSelectComponentStyle;
+        this.f20745i = selectedOptions;
+        this.f20746o = jsonLogicBoolean;
+        this.f20747p = jsonLogicBoolean2;
+        this.f20748q = str;
+        this.f20749r = str2;
+        this.f20750s = options;
+        this.f20751t = new ArrayList();
+        this.f20752u = true;
+        this.f20753v = new k(f());
     }
 
     public static /* synthetic */ d i(d dVar, String str, InputSelectComponentStyle inputSelectComponentStyle, List list, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, String str2, String str3, List list2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = dVar.f20742d;
+            str = dVar.f20743d;
         }
         if ((i10 & 2) != 0) {
-            inputSelectComponentStyle = dVar.f20743e;
+            inputSelectComponentStyle = dVar.f20744e;
         }
         if ((i10 & 4) != 0) {
-            list = dVar.f20744i;
+            list = dVar.f20745i;
         }
         if ((i10 & 8) != 0) {
-            jsonLogicBoolean = dVar.f20745o;
+            jsonLogicBoolean = dVar.f20746o;
         }
         if ((i10 & 16) != 0) {
-            jsonLogicBoolean2 = dVar.f20746p;
+            jsonLogicBoolean2 = dVar.f20747p;
         }
         if ((i10 & 32) != 0) {
-            str2 = dVar.f20747q;
+            str2 = dVar.f20748q;
         }
         if ((i10 & 64) != 0) {
-            str3 = dVar.f20748r;
+            str3 = dVar.f20749r;
         }
         if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-            list2 = dVar.f20749s;
+            list2 = dVar.f20750s;
         }
         String str4 = str3;
         List list3 = list2;
@@ -231,22 +231,22 @@ public final class d implements k5, a4, c2, v, e0 {
 
     @Override // pq.a4
     public k a() {
-        return this.f20752v;
+        return this.f20753v;
     }
 
     @Override // pq.c2
     public List b() {
-        return this.f20749s;
+        return this.f20750s;
     }
 
     @Override // pq.c2
     public boolean c() {
-        return this.f20751u;
+        return this.f20752u;
     }
 
     @Override // pq.e0
     public List d() {
-        return this.f20750t;
+        return this.f20751t;
     }
 
     @Override // android.os.Parcelable
@@ -260,14 +260,14 @@ public final class d implements k5, a4, c2, v, e0 {
         }
         if (obj instanceof d) {
             d dVar = (d) obj;
-            return Intrinsics.areEqual(this.f20742d, dVar.f20742d) && Intrinsics.areEqual(this.f20743e, dVar.f20743e) && Intrinsics.areEqual(this.f20744i, dVar.f20744i) && Intrinsics.areEqual(this.f20745o, dVar.f20745o) && Intrinsics.areEqual(this.f20746p, dVar.f20746p) && Intrinsics.areEqual(this.f20747q, dVar.f20747q) && Intrinsics.areEqual(this.f20748r, dVar.f20748r) && Intrinsics.areEqual(this.f20749s, dVar.f20749s);
+            return Intrinsics.areEqual(this.f20743d, dVar.f20743d) && Intrinsics.areEqual(this.f20744e, dVar.f20744e) && Intrinsics.areEqual(this.f20745i, dVar.f20745i) && Intrinsics.areEqual(this.f20746o, dVar.f20746o) && Intrinsics.areEqual(this.f20747p, dVar.f20747p) && Intrinsics.areEqual(this.f20748q, dVar.f20748q) && Intrinsics.areEqual(this.f20749r, dVar.f20749r) && Intrinsics.areEqual(this.f20750s, dVar.f20750s);
         }
         return false;
     }
 
     @Override // pq.c2
     public List f() {
-        return this.f20744i;
+        return this.f20745i;
     }
 
     public final d g(String name, InputSelectComponentStyle inputSelectComponentStyle, List selectedOptions, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, String str, String str2, List options) {
@@ -279,47 +279,47 @@ public final class d implements k5, a4, c2, v, e0 {
 
     @Override // pq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f20746p;
+        return this.f20747p;
     }
 
     @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f20745o;
+        return this.f20746o;
     }
 
     @Override // pq.c2
     public String getLabel() {
-        return this.f20747q;
+        return this.f20748q;
     }
 
     @Override // pq.k5
     public String getName() {
-        return this.f20742d;
+        return this.f20743d;
     }
 
     public int hashCode() {
-        int hashCode = this.f20742d.hashCode() * 31;
-        InputSelectComponentStyle inputSelectComponentStyle = this.f20743e;
-        int hashCode2 = (((hashCode + (inputSelectComponentStyle == null ? 0 : inputSelectComponentStyle.hashCode())) * 31) + this.f20744i.hashCode()) * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f20745o;
+        int hashCode = this.f20743d.hashCode() * 31;
+        InputSelectComponentStyle inputSelectComponentStyle = this.f20744e;
+        int hashCode2 = (((hashCode + (inputSelectComponentStyle == null ? 0 : inputSelectComponentStyle.hashCode())) * 31) + this.f20745i.hashCode()) * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f20746o;
         int hashCode3 = (hashCode2 + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20746p;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20747p;
         int hashCode4 = (hashCode3 + (jsonLogicBoolean2 == null ? 0 : jsonLogicBoolean2.hashCode())) * 31;
-        String str = this.f20747q;
+        String str = this.f20748q;
         int hashCode5 = (hashCode4 + (str == null ? 0 : str.hashCode())) * 31;
-        String str2 = this.f20748r;
-        return ((hashCode5 + (str2 != null ? str2.hashCode() : 0)) * 31) + this.f20749s.hashCode();
+        String str2 = this.f20749r;
+        return ((hashCode5 + (str2 != null ? str2.hashCode() : 0)) * 31) + this.f20750s.hashCode();
     }
 
     @Override // pq.c2
     /* renamed from: j */
     public InputSelectComponentStyle getStyles() {
-        return this.f20743e;
+        return this.f20744e;
     }
 
     public void k(k kVar) {
         Intrinsics.checkNotNullParameter(kVar, "<set-?>");
-        this.f20752v = kVar;
+        this.f20753v = kVar;
     }
 
     @Override // pq.a4
@@ -332,32 +332,32 @@ public final class d implements k5, a4, c2, v, e0 {
     }
 
     public String toString() {
-        String str = this.f20742d;
-        InputSelectComponentStyle inputSelectComponentStyle = this.f20743e;
-        List list = this.f20744i;
-        JsonLogicBoolean jsonLogicBoolean = this.f20745o;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20746p;
-        String str2 = this.f20747q;
-        String str3 = this.f20748r;
-        List list2 = this.f20749s;
+        String str = this.f20743d;
+        InputSelectComponentStyle inputSelectComponentStyle = this.f20744e;
+        List list = this.f20745i;
+        JsonLogicBoolean jsonLogicBoolean = this.f20746o;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20747p;
+        String str2 = this.f20748q;
+        String str3 = this.f20749r;
+        List list2 = this.f20750s;
         return "InputMultiSelectComponent(name=" + str + ", styles=" + inputSelectComponentStyle + ", selectedOptions=" + list + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ", label=" + str2 + ", placeholder=" + str3 + ", options=" + list2 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f20742d);
-        dest.writeParcelable(this.f20743e, i10);
-        List<b4> list = this.f20744i;
+        dest.writeString(this.f20743d);
+        dest.writeParcelable(this.f20744e, i10);
+        List<b4> list = this.f20745i;
         dest.writeInt(list.size());
         for (b4 b4Var : list) {
             b4Var.writeToParcel(dest, i10);
         }
-        dest.writeParcelable(this.f20745o, i10);
-        dest.writeParcelable(this.f20746p, i10);
-        dest.writeString(this.f20747q);
-        dest.writeString(this.f20748r);
-        List<b4> list2 = this.f20749s;
+        dest.writeParcelable(this.f20746o, i10);
+        dest.writeParcelable(this.f20747p, i10);
+        dest.writeString(this.f20748q);
+        dest.writeString(this.f20749r);
+        List<b4> list2 = this.f20750s;
         dest.writeInt(list2.size());
         for (b4 b4Var2 : list2) {
             b4Var2.writeToParcel(dest, i10);

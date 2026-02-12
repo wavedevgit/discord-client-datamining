@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = '__esModule';
     var1 = var6.bind(var8)(var2, var1, var4);
     var1 = {};
-    var6 = 'RNSVGCircle';
+    var6 = 'RNSVGClipPath';
     var1.uiViewClassName = var6;
     var4 = {};
     var8 = {};
@@ -50,9 +50,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'vectorEffect': true,
         'propList': true,
         'filter': true,
-        'cx': true,
-        'cy': true,
-        'r': true
+        'fontSize': true,
+        'fontWeight': true,
+        'font': true
     };
     var4 = {};
     var0 = 0;

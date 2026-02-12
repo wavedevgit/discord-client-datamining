@@ -12,18 +12,18 @@ import ta.k;
 public class NativeJpegTranscoder implements ab.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f11258a;
+    private boolean f11259a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f11259b;
+    private int f11260b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f11260c;
+    private boolean f11261c;
 
     public NativeJpegTranscoder(boolean z10, int i10, boolean z11, boolean z12) {
-        this.f11258a = z10;
-        this.f11259b = i10;
-        this.f11260c = z11;
+        this.f11259a = z10;
+        this.f11260b = i10;
+        this.f11261c = z11;
         if (z12) {
             e.a();
         }
@@ -120,7 +120,7 @@ public class NativeJpegTranscoder implements ab.c {
 
     @Override // ab.c
     public boolean b(ga.c cVar) {
-        if (cVar == ga.b.f25382b) {
+        if (cVar == ga.b.f25383b) {
             return true;
         }
         return false;
@@ -134,11 +134,11 @@ public class NativeJpegTranscoder implements ab.c {
         if (rotationOptions == null) {
             rotationOptions = RotationOptions.d();
         }
-        int b10 = ab.a.b(rotationOptions, resizeOptions, kVar, this.f11259b);
+        int b10 = ab.a.b(rotationOptions, resizeOptions, kVar, this.f11260b);
         try {
-            int f10 = ab.e.f(rotationOptions, resizeOptions, kVar, this.f11258a);
+            int f10 = ab.e.f(rotationOptions, resizeOptions, kVar, this.f11259a);
             int a10 = ab.e.a(b10);
-            if (this.f11260c) {
+            if (this.f11261c) {
                 f10 = a10;
             }
             InputStream C = kVar.C();
@@ -164,7 +164,7 @@ public class NativeJpegTranscoder implements ab.c {
         if (rotationOptions == null) {
             rotationOptions = RotationOptions.d();
         }
-        if (ab.e.f(rotationOptions, resizeOptions, kVar, this.f11258a) < 8) {
+        if (ab.e.f(rotationOptions, resizeOptions, kVar, this.f11259a) < 8) {
             return true;
         }
         return false;

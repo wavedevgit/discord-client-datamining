@@ -3,22 +3,22 @@ package com.google.android.exoplayer2;
 final class i implements oe.a0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final oe.n0 f13219d;
+    private final oe.n0 f13220d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final a f13220e;
+    private final a f13221e;
 
     /* renamed from: i  reason: collision with root package name */
-    private v1 f13221i;
+    private v1 f13222i;
 
     /* renamed from: o  reason: collision with root package name */
-    private oe.a0 f13222o;
+    private oe.a0 f13223o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f13223p = true;
+    private boolean f13224p = true;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f13224q;
+    private boolean f13225q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface a {
@@ -26,15 +26,15 @@ final class i implements oe.a0 {
     }
 
     public i(a aVar, oe.e eVar) {
-        this.f13220e = aVar;
-        this.f13219d = new oe.n0(eVar);
+        this.f13221e = aVar;
+        this.f13220d = new oe.n0(eVar);
     }
 
     private boolean e(boolean z10) {
-        v1 v1Var = this.f13221i;
+        v1 v1Var = this.f13222i;
         if (v1Var != null && !v1Var.d()) {
-            if (!this.f13221i.isReady()) {
-                if (!z10 && !this.f13221i.h()) {
+            if (!this.f13222i.isReady()) {
+                if (!z10 && !this.f13222i.h()) {
                     return false;
                 }
                 return true;
@@ -46,49 +46,49 @@ final class i implements oe.a0 {
 
     private void j(boolean z10) {
         if (e(z10)) {
-            this.f13223p = true;
-            if (this.f13224q) {
-                this.f13219d.b();
+            this.f13224p = true;
+            if (this.f13225q) {
+                this.f13220d.b();
                 return;
             }
             return;
         }
-        oe.a0 a0Var = (oe.a0) oe.a.e(this.f13222o);
+        oe.a0 a0Var = (oe.a0) oe.a.e(this.f13223o);
         long v10 = a0Var.v();
-        if (this.f13223p) {
-            if (v10 < this.f13219d.v()) {
-                this.f13219d.d();
+        if (this.f13224p) {
+            if (v10 < this.f13220d.v()) {
+                this.f13220d.d();
                 return;
             }
-            this.f13223p = false;
-            if (this.f13224q) {
-                this.f13219d.b();
+            this.f13224p = false;
+            if (this.f13225q) {
+                this.f13220d.b();
             }
         }
-        this.f13219d.a(v10);
+        this.f13220d.a(v10);
         PlaybackParameters c10 = a0Var.c();
-        if (!c10.equals(this.f13219d.c())) {
-            this.f13219d.f(c10);
-            this.f13220e.onPlaybackParametersChanged(c10);
+        if (!c10.equals(this.f13220d.c())) {
+            this.f13220d.f(c10);
+            this.f13221e.onPlaybackParametersChanged(c10);
         }
     }
 
     public void a(v1 v1Var) {
-        if (v1Var == this.f13221i) {
-            this.f13222o = null;
-            this.f13221i = null;
-            this.f13223p = true;
+        if (v1Var == this.f13222i) {
+            this.f13223o = null;
+            this.f13222i = null;
+            this.f13224p = true;
         }
     }
 
     public void b(v1 v1Var) {
         oe.a0 a0Var;
         oe.a0 C = v1Var.C();
-        if (C != null && C != (a0Var = this.f13222o)) {
+        if (C != null && C != (a0Var = this.f13223o)) {
             if (a0Var == null) {
-                this.f13222o = C;
-                this.f13221i = v1Var;
-                C.f(this.f13219d.c());
+                this.f13223o = C;
+                this.f13222i = v1Var;
+                C.f(this.f13220d.c());
                 return;
             }
             throw j.h(new IllegalStateException("Multiple renderer media clocks enabled."));
@@ -97,35 +97,35 @@ final class i implements oe.a0 {
 
     @Override // oe.a0
     public PlaybackParameters c() {
-        oe.a0 a0Var = this.f13222o;
+        oe.a0 a0Var = this.f13223o;
         if (a0Var != null) {
             return a0Var.c();
         }
-        return this.f13219d.c();
+        return this.f13220d.c();
     }
 
     public void d(long j10) {
-        this.f13219d.a(j10);
+        this.f13220d.a(j10);
     }
 
     @Override // oe.a0
     public void f(PlaybackParameters playbackParameters) {
-        oe.a0 a0Var = this.f13222o;
+        oe.a0 a0Var = this.f13223o;
         if (a0Var != null) {
             a0Var.f(playbackParameters);
-            playbackParameters = this.f13222o.c();
+            playbackParameters = this.f13223o.c();
         }
-        this.f13219d.f(playbackParameters);
+        this.f13220d.f(playbackParameters);
     }
 
     public void g() {
-        this.f13224q = true;
-        this.f13219d.b();
+        this.f13225q = true;
+        this.f13220d.b();
     }
 
     public void h() {
-        this.f13224q = false;
-        this.f13219d.d();
+        this.f13225q = false;
+        this.f13220d.d();
     }
 
     public long i(boolean z10) {
@@ -135,9 +135,9 @@ final class i implements oe.a0 {
 
     @Override // oe.a0
     public long v() {
-        if (this.f13223p) {
-            return this.f13219d.v();
+        if (this.f13224p) {
+            return this.f13220d.v();
         }
-        return ((oe.a0) oe.a.e(this.f13222o)).v();
+        return ((oe.a0) oe.a.e(this.f13223o)).v();
     }
 }

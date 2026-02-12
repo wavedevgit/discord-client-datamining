@@ -40,7 +40,7 @@ public /* synthetic */ class EmbedAuthor$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50032a;
+        n2 n2Var = n2.f50033a;
         return new KSerializer[]{n2Var, rt.a.u(n2Var), rt.a.u(n2Var), rt.a.u(n2Var)};
     }
 
@@ -58,7 +58,7 @@ public /* synthetic */ class EmbedAuthor$$serializer implements h0 {
         String str5 = null;
         if (b10.p()) {
             String m10 = b10.m(serialDescriptor, 0);
-            n2 n2Var = n2.f50032a;
+            n2 n2Var = n2.f50033a;
             str = m10;
             str4 = (String) b10.n(serialDescriptor, 3, n2Var, null);
             str3 = (String) b10.n(serialDescriptor, 2, n2Var, null);
@@ -78,15 +78,15 @@ public /* synthetic */ class EmbedAuthor$$serializer implements h0 {
                     str5 = b10.m(serialDescriptor, 0);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    str6 = (String) b10.n(serialDescriptor, 1, n2.f50032a, str6);
+                    str6 = (String) b10.n(serialDescriptor, 1, n2.f50033a, str6);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    str7 = (String) b10.n(serialDescriptor, 2, n2.f50032a, str7);
+                    str7 = (String) b10.n(serialDescriptor, 2, n2.f50033a, str7);
                     i11 |= 4;
                 } else if (o10 != 3) {
                     throw new b0(o10);
                 } else {
-                    str8 = (String) b10.n(serialDescriptor, 3, n2.f50032a, str8);
+                    str8 = (String) b10.n(serialDescriptor, 3, n2.f50033a, str8);
                     i11 |= 8;
                 }
             }

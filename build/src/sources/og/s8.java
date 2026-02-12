@@ -6,7 +6,7 @@ import com.facebook.react.devsupport.StackTraceHelper;
 final class s8 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final s8 f39647a = new s8();
+    static final s8 f39648a = new s8();
 
     static {
         c.b a10 = bj.c.a(StackTraceHelper.NAME_KEY);

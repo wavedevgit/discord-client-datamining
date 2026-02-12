@@ -45,7 +45,7 @@ public final class ReactTextViewAccessibilityDelegate extends ReactAccessibility
             private int end;
 
             /* renamed from: id  reason: collision with root package name */
-            private int f11991id;
+            private int f11992id;
             private int start;
 
             public final String getDescription() {
@@ -57,7 +57,7 @@ public final class ReactTextViewAccessibilityDelegate extends ReactAccessibility
             }
 
             public final int getId() {
-                return this.f11991id;
+                return this.f11992id;
             }
 
             public final int getStart() {
@@ -73,7 +73,7 @@ public final class ReactTextViewAccessibilityDelegate extends ReactAccessibility
             }
 
             public final void setId(int i10) {
-                this.f11991id = i10;
+                this.f11992id = i10;
             }
 
             public final void setStart(int i10) {

@@ -42,7 +42,7 @@ public final class h extends CoordinatorLayout implements FragmentManager.o {
         this.M = new ArrayList();
         this.N = new ArrayList();
         this.O = new c();
-        setId(un.g.f50811a.a());
+        setId(un.g.f50812a.a());
     }
 
     private final List Z() {
@@ -177,7 +177,7 @@ public final class h extends CoordinatorLayout implements FragmentManager.o {
     }
 
     public final void i0() {
-        FragmentManager a10 = un.b.f50808a.a(this);
+        FragmentManager a10 = un.b.f50809a.a(this);
         if (a10 != null) {
             a10.n(this);
             this.K = a10;
@@ -188,7 +188,7 @@ public final class h extends CoordinatorLayout implements FragmentManager.o {
 
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout, android.view.ViewGroup, android.view.View
     public void onAttachedToWindow() {
-        co.e eVar = co.e.f8377a;
+        co.e eVar = co.e.f8378a;
         int id2 = getId();
         eVar.a("StackContainer", "StackContainer [" + id2 + "] attached to window");
         super.onAttachedToWindow();

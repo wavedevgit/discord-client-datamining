@@ -82,4 +82,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.MarvelRivalsPromotionalBannerBlockRecord = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4641, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4640, 2]);

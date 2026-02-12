@@ -5,14 +5,14 @@ import kotlin.jvm.internal.Intrinsics;
 public final class h implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final e f38371a;
+    private final e f38372a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f38372b;
+    private final int f38373b;
 
     public h(e formatter, int i10) {
         Intrinsics.checkNotNullParameter(formatter, "formatter");
-        this.f38371a = formatter;
-        this.f38372b = i10;
+        this.f38372a = formatter;
+        this.f38373b = i10;
     }
 }

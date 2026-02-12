@@ -3,8 +3,8 @@ package com.henninghall.date_picker;
 public abstract class l {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f17559a = 2131558584;
+    public static int f17560a = 2131558584;
 
     /* renamed from: b  reason: collision with root package name */
-    public static int f17560b = 2131558600;
+    public static int f17561b = 2131558600;
 }

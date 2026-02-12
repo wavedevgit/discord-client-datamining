@@ -913,7 +913,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
                 return null;
             }
             if (this.f1199k == null) {
-                androidx.appcompat.view.menu.c cVar = new androidx.appcompat.view.menu.c(this.f1200l, f.g.f23385j);
+                androidx.appcompat.view.menu.c cVar = new androidx.appcompat.view.menu.c(this.f1200l, f.g.f23386j);
                 this.f1199k = cVar;
                 cVar.c(aVar);
                 this.f1198j.b(this.f1199k);
@@ -949,7 +949,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             TypedValue typedValue = new TypedValue();
             Resources.Theme newTheme = context.getResources().newTheme();
             newTheme.setTo(context.getTheme());
-            newTheme.resolveAttribute(f.a.f23276a, typedValue, true);
+            newTheme.resolveAttribute(f.a.f23277a, typedValue, true);
             int i10 = typedValue.resourceId;
             if (i10 != 0) {
                 newTheme.applyStyle(i10, true);
@@ -959,12 +959,12 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             if (i11 != 0) {
                 newTheme.applyStyle(i11, true);
             } else {
-                newTheme.applyStyle(f.i.f23412c, true);
+                newTheme.applyStyle(f.i.f23413c, true);
             }
             ContextThemeWrapper contextThemeWrapper = new ContextThemeWrapper(context, 0);
             contextThemeWrapper.getTheme().setTo(newTheme);
             this.f1200l = contextThemeWrapper;
-            TypedArray obtainStyledAttributes = contextThemeWrapper.obtainStyledAttributes(f.j.f23537y0);
+            TypedArray obtainStyledAttributes = contextThemeWrapper.obtainStyledAttributes(f.j.f23538y0);
             this.f1190b = obtainStyledAttributes.getResourceId(f.j.B0, 0);
             this.f1194f = obtainStyledAttributes.getResourceId(f.j.A0, 0);
             obtainStyledAttributes.recycle();
@@ -1055,14 +1055,14 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         if ((i10 == 0 || i10 == 108) && this.C != null) {
             TypedValue typedValue = new TypedValue();
             Resources.Theme theme2 = context.getTheme();
-            theme2.resolveAttribute(f.a.f23279d, typedValue, true);
+            theme2.resolveAttribute(f.a.f23280d, typedValue, true);
             if (typedValue.resourceId != 0) {
                 theme = context.getResources().newTheme();
                 theme.setTo(theme2);
                 theme.applyStyle(typedValue.resourceId, true);
-                theme.resolveAttribute(f.a.f23280e, typedValue, true);
+                theme.resolveAttribute(f.a.f23281e, typedValue, true);
             } else {
-                theme2.resolveAttribute(f.a.f23280e, typedValue, true);
+                theme2.resolveAttribute(f.a.f23281e, typedValue, true);
                 theme = null;
             }
             if (typedValue.resourceId != 0) {
@@ -1354,7 +1354,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
         ContentFrameLayout contentFrameLayout = (ContentFrameLayout) this.M.findViewById(16908290);
         View decorView = this.f1161w.getDecorView();
         contentFrameLayout.a(decorView.getPaddingLeft(), decorView.getPaddingTop(), decorView.getPaddingRight(), decorView.getPaddingBottom());
-        TypedArray obtainStyledAttributes = this.f1160v.obtainStyledAttributes(f.j.f23537y0);
+        TypedArray obtainStyledAttributes = this.f1160v.obtainStyledAttributes(f.j.f23538y0);
         obtainStyledAttributes.getValue(f.j.K0, contentFrameLayout.getMinWidthMajor());
         obtainStyledAttributes.getValue(f.j.L0, contentFrameLayout.getMinWidthMinor());
         if (obtainStyledAttributes.hasValue(f.j.I0)) {
@@ -1639,7 +1639,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     private ViewGroup h0() {
         ViewGroup viewGroup;
         Context context;
-        TypedArray obtainStyledAttributes = this.f1160v.obtainStyledAttributes(f.j.f23537y0);
+        TypedArray obtainStyledAttributes = this.f1160v.obtainStyledAttributes(f.j.f23538y0);
         if (obtainStyledAttributes.hasValue(f.j.D0)) {
             if (obtainStyledAttributes.getBoolean(f.j.M0, false)) {
                 I(1);
@@ -1652,26 +1652,26 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             if (obtainStyledAttributes.getBoolean(f.j.F0, false)) {
                 I(10);
             }
-            this.U = obtainStyledAttributes.getBoolean(f.j.f23542z0, false);
+            this.U = obtainStyledAttributes.getBoolean(f.j.f23543z0, false);
             obtainStyledAttributes.recycle();
             o0();
             this.f1161w.getDecorView();
             LayoutInflater from = LayoutInflater.from(this.f1160v);
             if (!this.V) {
                 if (this.U) {
-                    viewGroup = (ViewGroup) from.inflate(f.g.f23381f, (ViewGroup) null);
+                    viewGroup = (ViewGroup) from.inflate(f.g.f23382f, (ViewGroup) null);
                     this.S = false;
                     this.R = false;
                 } else if (this.R) {
                     TypedValue typedValue = new TypedValue();
-                    this.f1160v.getTheme().resolveAttribute(f.a.f23279d, typedValue, true);
+                    this.f1160v.getTheme().resolveAttribute(f.a.f23280d, typedValue, true);
                     if (typedValue.resourceId != 0) {
                         context = new ContextThemeWrapper(this.f1160v, typedValue.resourceId);
                     } else {
                         context = this.f1160v;
                     }
-                    viewGroup = (ViewGroup) LayoutInflater.from(context).inflate(f.g.f23391p, (ViewGroup) null);
-                    y yVar = (y) viewGroup.findViewById(f.f.f23366q);
+                    viewGroup = (ViewGroup) LayoutInflater.from(context).inflate(f.g.f23392p, (ViewGroup) null);
+                    y yVar = (y) viewGroup.findViewById(f.f.f23367q);
                     this.C = yVar;
                     yVar.setWindowCallback(y0());
                     if (this.S) {
@@ -1687,7 +1687,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
                     viewGroup = null;
                 }
             } else {
-                viewGroup = this.T ? (ViewGroup) from.inflate(f.g.f23390o, (ViewGroup) null) : (ViewGroup) from.inflate(f.g.f23389n, (ViewGroup) null);
+                viewGroup = this.T ? (ViewGroup) from.inflate(f.g.f23391o, (ViewGroup) null) : (ViewGroup) from.inflate(f.g.f23390n, (ViewGroup) null);
             }
             if (viewGroup != null) {
                 i0.x0(viewGroup, new b());
@@ -1695,7 +1695,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
                     this.N = (TextView) viewGroup.findViewById(f.f.N);
                 }
                 g1.c(viewGroup);
-                ContentFrameLayout contentFrameLayout = (ContentFrameLayout) viewGroup.findViewById(f.f.f23351b);
+                ContentFrameLayout contentFrameLayout = (ContentFrameLayout) viewGroup.findViewById(f.f.f23352b);
                 ViewGroup viewGroup2 = (ViewGroup) this.f1161w.findViewById(16908290);
                 if (viewGroup2 != null) {
                     while (viewGroup2.getChildCount() > 0) {
@@ -1722,9 +1722,9 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     private void i1(View view) {
         int c10;
         if ((i0.K(view) & 8192) != 0) {
-            c10 = androidx.core.content.a.c(this.f1160v, f.c.f23304b);
+            c10 = androidx.core.content.a.c(this.f1160v, f.c.f23305b);
         } else {
-            c10 = androidx.core.content.a.c(this.f1160v, f.c.f23303a);
+            c10 = androidx.core.content.a.c(this.f1160v, f.c.f23304a);
         }
         view.setBackgroundColor(c10);
     }
@@ -2620,7 +2620,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
             configuration = null;
         }
         Configuration g02 = g0(context2, F0, Z, configuration, true);
-        ContextThemeWrapper contextThemeWrapper = new ContextThemeWrapper(context2, f.i.f23413d);
+        ContextThemeWrapper contextThemeWrapper = new ContextThemeWrapper(context2, f.i.f23414d);
         contextThemeWrapper.a(g02);
         try {
             if (context2.getTheme() != null) {
@@ -2634,7 +2634,7 @@ public class e extends AppCompatDelegate implements e.a, LayoutInflater.Factory2
     public View i0(View view, String str, Context context, AttributeSet attributeSet) {
         boolean z10;
         if (this.f1155q0 == null) {
-            TypedArray obtainStyledAttributes = this.f1160v.obtainStyledAttributes(f.j.f23537y0);
+            TypedArray obtainStyledAttributes = this.f1160v.obtainStyledAttributes(f.j.f23538y0);
             String string = obtainStyledAttributes.getString(f.j.C0);
             obtainStyledAttributes.recycle();
             if (string == null) {

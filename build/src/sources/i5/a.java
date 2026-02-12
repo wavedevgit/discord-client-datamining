@@ -8,7 +8,7 @@ import androidx.lifecycle.LifecycleOwner;
 public abstract class a implements d, j5.d, DefaultLifecycleObserver {
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f27790d;
+    private boolean f27791d;
 
     @Override // i5.c
     public void a(Drawable drawable) {
@@ -38,7 +38,7 @@ public abstract class a implements d, j5.d, DefaultLifecycleObserver {
         if (animatable == null) {
             return;
         }
-        if (this.f27790d) {
+        if (this.f27791d) {
             animatable.start();
         } else {
             animatable.stop();
@@ -65,13 +65,13 @@ public abstract class a implements d, j5.d, DefaultLifecycleObserver {
 
     @Override // androidx.lifecycle.DefaultLifecycleObserver
     public void onStart(LifecycleOwner lifecycleOwner) {
-        this.f27790d = true;
+        this.f27791d = true;
         f();
     }
 
     @Override // androidx.lifecycle.DefaultLifecycleObserver
     public void onStop(LifecycleOwner lifecycleOwner) {
-        this.f27790d = false;
+        this.f27791d = false;
         f();
     }
 }

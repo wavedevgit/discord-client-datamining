@@ -10,48 +10,48 @@ import java.util.Locale;
 public class u extends RecyclerView.Adapter {
 
     /* renamed from: a  reason: collision with root package name */
-    private final i f15729a;
+    private final i f15730a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class a extends RecyclerView.ViewHolder {
 
         /* renamed from: d  reason: collision with root package name */
-        final TextView f15730d;
+        final TextView f15731d;
 
         a(TextView textView) {
             super(textView);
-            this.f15730d = textView;
+            this.f15731d = textView;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public u(i iVar) {
-        this.f15729a = iVar;
+        this.f15730a = iVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int a(int i10) {
-        return i10 - this.f15729a.I().l().f15705i;
+        return i10 - this.f15730a.I().l().f15706i;
     }
 
     int b(int i10) {
-        return this.f15729a.I().l().f15705i + i10;
+        return this.f15730a.I().l().f15706i + i10;
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter
     /* renamed from: c */
     public void onBindViewHolder(a aVar, int i10) {
         int b10 = b(i10);
-        aVar.f15730d.setText(String.format(Locale.getDefault(), "%d", Integer.valueOf(b10)));
-        TextView textView = aVar.f15730d;
+        aVar.f15731d.setText(String.format(Locale.getDefault(), "%d", Integer.valueOf(b10)));
+        TextView textView = aVar.f15731d;
         textView.setContentDescription(e.e(textView.getContext(), b10));
-        c J = this.f15729a.J();
+        c J = this.f15730a.J();
         if (t.g().get(1) == b10) {
-            b bVar = J.f15634f;
+            b bVar = J.f15635f;
         } else {
-            b bVar2 = J.f15632d;
+            b bVar2 = J.f15633d;
         }
-        this.f15729a.L();
+        this.f15730a.L();
         throw null;
     }
 
@@ -63,6 +63,6 @@ public class u extends RecyclerView.Adapter {
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter
     public int getItemCount() {
-        return this.f15729a.I().o();
+        return this.f15730a.I().o();
     }
 }

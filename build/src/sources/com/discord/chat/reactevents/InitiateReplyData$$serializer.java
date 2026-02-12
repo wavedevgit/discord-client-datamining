@@ -43,7 +43,7 @@ public /* synthetic */ class InitiateReplyData$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, rt.a.u(h.f49996a), rt.a.u(n2.f50032a)};
+        return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, rt.a.u(h.f49997a), rt.a.u(n2.f50033a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -60,8 +60,8 @@ public /* synthetic */ class InitiateReplyData$$serializer implements h0 {
         if (b10.p()) {
             MessageId messageId = (MessageId) b10.y(serialDescriptor, 0, MessageId$$serializer.INSTANCE, null);
             str = messageId != null ? messageId.m1093unboximpl() : null;
-            str2 = (String) b10.n(serialDescriptor, 3, n2.f50032a, null);
-            bool = (Boolean) b10.n(serialDescriptor, 2, h.f49996a, null);
+            str2 = (String) b10.n(serialDescriptor, 3, n2.f50033a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 2, h.f49997a, null);
             channelId = (ChannelId) b10.y(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, null);
             i10 = 15;
         } else {
@@ -83,12 +83,12 @@ public /* synthetic */ class InitiateReplyData$$serializer implements h0 {
                     channelId2 = (ChannelId) b10.y(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, channelId2);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    bool2 = (Boolean) b10.n(serialDescriptor, 2, h.f49996a, bool2);
+                    bool2 = (Boolean) b10.n(serialDescriptor, 2, h.f49997a, bool2);
                     i11 |= 4;
                 } else if (o10 != 3) {
                     throw new b0(o10);
                 } else {
-                    str3 = (String) b10.n(serialDescriptor, 3, n2.f50032a, str3);
+                    str3 = (String) b10.n(serialDescriptor, 3, n2.f50033a, str3);
                     i11 |= 8;
                 }
             }

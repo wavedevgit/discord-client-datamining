@@ -96,7 +96,7 @@ public final class ChatScrollData {
             compositeEncoder.x(serialDescriptor, 3, chatScrollData.highlight);
         }
         if (compositeEncoder.z(serialDescriptor, 4) || chatScrollData.position != null) {
-            compositeEncoder.o(serialDescriptor, 4, p0.f50048a, chatScrollData.position);
+            compositeEncoder.o(serialDescriptor, 4, p0.f50049a, chatScrollData.position);
         }
     }
 

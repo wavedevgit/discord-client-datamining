@@ -12,19 +12,19 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c extends Event {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f18968d = new a(null);
+    public static final a f18969d = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Pools$SynchronizedPool f18969e = new Pools$SynchronizedPool(7);
+    private static final Pools$SynchronizedPool f18970e = new Pools$SynchronizedPool(7);
 
     /* renamed from: a  reason: collision with root package name */
-    private on.b f18970a;
+    private on.b f18971a;
 
     /* renamed from: b  reason: collision with root package name */
-    private short f18971b;
+    private short f18972b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f18972c;
+    private boolean f18973c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -50,7 +50,7 @@ public final class c extends Event {
         public final c b(nn.d handler, on.b dataBuilder, boolean z10) {
             Intrinsics.checkNotNullParameter(handler, "handler");
             Intrinsics.checkNotNullParameter(dataBuilder, "dataBuilder");
-            c cVar = (c) c.f18969e.acquire();
+            c cVar = (c) c.f18970e.acquire();
             if (cVar == null) {
                 cVar = new c(null);
             }
@@ -71,9 +71,9 @@ public final class c extends Event {
         View W = dVar.W();
         Intrinsics.checkNotNull(W);
         super.init(UIManagerHelper.getSurfaceId(W), W.getId());
-        this.f18970a = bVar;
-        this.f18972c = z10;
-        this.f18971b = dVar.I();
+        this.f18971a = bVar;
+        this.f18973c = z10;
+        this.f18972b = dVar.I();
     }
 
     @Override // com.facebook.react.uimanager.events.Event
@@ -83,20 +83,20 @@ public final class c extends Event {
 
     @Override // com.facebook.react.uimanager.events.Event
     public short getCoalescingKey() {
-        return this.f18971b;
+        return this.f18972b;
     }
 
     @Override // com.facebook.react.uimanager.events.Event
     protected WritableMap getEventData() {
-        a aVar = f18968d;
-        on.b bVar = this.f18970a;
+        a aVar = f18969d;
+        on.b bVar = this.f18971a;
         Intrinsics.checkNotNull(bVar);
         return aVar.a(bVar);
     }
 
     @Override // com.facebook.react.uimanager.events.Event
     public String getEventName() {
-        if (this.f18972c) {
+        if (this.f18973c) {
             return "topGestureHandlerEvent";
         }
         return "onGestureHandlerEvent";
@@ -104,8 +104,8 @@ public final class c extends Event {
 
     @Override // com.facebook.react.uimanager.events.Event
     public void onDispose() {
-        this.f18970a = null;
-        f18969e.release(this);
+        this.f18971a = null;
+        f18970e.release(this);
     }
 
     private c() {

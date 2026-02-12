@@ -5,22 +5,22 @@ import android.text.TextUtils;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f8783a;
+    private final String f8784a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f8784b;
+    private final String f8785b;
 
     public g(String str, String str2) {
-        this.f8783a = str;
-        this.f8784b = str2;
+        this.f8784a = str;
+        this.f8785b = str2;
     }
 
     public final String a() {
-        return this.f8783a;
+        return this.f8784a;
     }
 
     public final String b() {
-        return this.f8784b;
+        return this.f8785b;
     }
 
     public boolean equals(Object obj) {
@@ -29,7 +29,7 @@ public final class g {
         }
         if (obj != null && g.class == obj.getClass()) {
             g gVar = (g) obj;
-            if (TextUtils.equals(this.f8783a, gVar.f8783a) && TextUtils.equals(this.f8784b, gVar.f8784b)) {
+            if (TextUtils.equals(this.f8784a, gVar.f8784a) && TextUtils.equals(this.f8785b, gVar.f8785b)) {
                 return true;
             }
         }
@@ -37,10 +37,10 @@ public final class g {
     }
 
     public int hashCode() {
-        return (this.f8783a.hashCode() * 31) + this.f8784b.hashCode();
+        return (this.f8784a.hashCode() * 31) + this.f8785b.hashCode();
     }
 
     public String toString() {
-        return "Header[name=" + this.f8783a + ",value=" + this.f8784b + "]";
+        return "Header[name=" + this.f8784a + ",value=" + this.f8785b + "]";
     }
 }

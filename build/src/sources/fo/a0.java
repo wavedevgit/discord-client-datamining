@@ -5,14 +5,14 @@ import androidx.camera.view.PreviewView;
 public final class a0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final lr.h f23961a;
+    private final lr.h f23962a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final lr.h f23962b;
+    private final lr.h f23963b;
 
     public a0(lr.h hVar, lr.h hVar2) {
-        this.f23961a = hVar;
-        this.f23962b = hVar2;
+        this.f23962a = hVar;
+        this.f23963b = hVar2;
     }
 
     public static a0 a(lr.h hVar, lr.h hVar2) {
@@ -24,6 +24,6 @@ public final class a0 {
     }
 
     public z b(t tVar, PreviewView previewView, y yVar) {
-        return c((ko.a) this.f23961a.get(), (gq.c) this.f23962b.get(), tVar, previewView, yVar);
+        return c((ko.a) this.f23962a.get(), (gq.c) this.f23963b.get(), tVar, previewView, yVar);
     }
 }

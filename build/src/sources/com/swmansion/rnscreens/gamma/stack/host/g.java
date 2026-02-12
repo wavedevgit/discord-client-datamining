@@ -6,13 +6,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g extends b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.swmansion.rnscreens.gamma.stack.screen.d f19182a;
+    private final com.swmansion.rnscreens.gamma.stack.screen.d f19183a;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public g(com.swmansion.rnscreens.gamma.stack.screen.d fragment) {
         super(null);
         Intrinsics.checkNotNullParameter(fragment, "fragment");
-        this.f19182a = fragment;
+        this.f19183a = fragment;
     }
 
     @Override // com.swmansion.rnscreens.gamma.stack.host.b
@@ -23,6 +23,6 @@ public final class g extends b {
     }
 
     public final com.swmansion.rnscreens.gamma.stack.screen.d b() {
-        return this.f19182a;
+        return this.f19183a;
     }
 }

@@ -9,28 +9,28 @@ import java.util.List;
 final class w0 implements y0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f16943a;
+    private final String f16944a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Bundle f16944b;
+    private final Bundle f16945b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final b.a f16945c;
+    private final b.a f16946c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ w0(String str, Bundle bundle, b.a aVar, zh.b bVar) {
-        this.f16943a = str;
-        this.f16944b = bundle;
-        this.f16945c = aVar;
+        this.f16944a = str;
+        this.f16945b = bundle;
+        this.f16946c = aVar;
     }
 
     @Override // com.google.android.play.core.assetpacks.y0
     public final void a(String str) {
-        String string = this.f16944b.getString(str);
+        String string = this.f16945b.getString(str);
         if (string == null) {
             return;
         }
-        this.f16945c.h(this.f16943a.concat(str), string);
+        this.f16946c.h(this.f16944a.concat(str), string);
     }
 
     @Override // com.google.android.play.core.assetpacks.y0
@@ -41,7 +41,7 @@ final class w0 implements y0 {
     @Override // com.google.android.play.core.assetpacks.y0
     public final void c(String str) {
         String str2;
-        ArrayList parcelableArrayList = this.f16944b.getParcelableArrayList(str);
+        ArrayList parcelableArrayList = this.f16945b.getParcelableArrayList(str);
         if (parcelableArrayList == null) {
             return;
         }
@@ -55,32 +55,32 @@ final class w0 implements y0 {
             }
             strArr[i10] = str2;
         }
-        b.a aVar = this.f16945c;
-        String str3 = this.f16943a;
+        b.a aVar = this.f16946c;
+        String str3 = this.f16944a;
         aVar.i(str3 + str + ":intent_data", strArr);
     }
 
     @Override // com.google.android.play.core.assetpacks.y0
     public final void d(String str, long j10) {
-        Bundle bundle = this.f16944b;
-        this.f16945c.g(this.f16943a.concat(str), bundle.getLong(str, j10));
+        Bundle bundle = this.f16945b;
+        this.f16946c.g(this.f16944a.concat(str), bundle.getLong(str, j10));
     }
 
     @Override // com.google.android.play.core.assetpacks.y0
     public final void e(String str) {
-        Bundle bundle = this.f16944b;
-        this.f16945c.f(this.f16943a.concat(str), bundle.getInt(str));
+        Bundle bundle = this.f16945b;
+        this.f16946c.f(this.f16944a.concat(str), bundle.getInt(str));
     }
 
     @Override // com.google.android.play.core.assetpacks.y0
     public final void f(String str) {
-        Bundle bundle = this.f16944b;
-        this.f16945c.e(this.f16943a.concat("notification_intent_reconstruct_from_data"), bundle.getBoolean("notification_intent_reconstruct_from_data"));
+        Bundle bundle = this.f16945b;
+        this.f16946c.e(this.f16944a.concat("notification_intent_reconstruct_from_data"), bundle.getBoolean("notification_intent_reconstruct_from_data"));
     }
 
     @Override // com.google.android.play.core.assetpacks.y0
     public final List g(String str) {
-        ArrayList<String> stringArrayList = this.f16944b.getStringArrayList(str);
+        ArrayList<String> stringArrayList = this.f16945b.getStringArrayList(str);
         if (stringArrayList == null) {
             return new ArrayList();
         }
@@ -92,7 +92,7 @@ final class w0 implements y0 {
             }
             strArr[i10] = str2;
         }
-        this.f16945c.i(this.f16943a.concat(str), strArr);
+        this.f16946c.i(this.f16944a.concat(str), strArr);
         return stringArrayList;
     }
 }

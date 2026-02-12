@@ -3,5 +3,5 @@ package tt;
 public abstract class u2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Object f50075a = new Object();
+    private static final Object f50076a = new Object();
 }

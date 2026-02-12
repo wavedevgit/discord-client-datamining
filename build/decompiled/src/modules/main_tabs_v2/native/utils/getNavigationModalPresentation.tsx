@@ -1,7 +1,7 @@
 // modules/main_tabs_v2/native/utils/getNavigationModalPresentation.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun73375: for (var _fun73375_ip = 0;;) switch (_fun73375_ip) {
+    _fun70158: for (var _fun70158_ip = 0;;) switch (_fun70158_ip) {
         case 0:
             var4 = require;
             var2 = exports;
@@ -24,8 +24,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var8.isAndroid;
             var7 = var7.bind(var8)();
             if (var7) {
-                _fun73375_ip = 116;
-                continue _fun73375
+                _fun70158_ip = 116;
+                continue _fun70158
             }
         case 79:
             var7 = 2;
@@ -35,14 +35,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var8 = var7.bind(var8)();
             var7 = 'modal';
             if (!var8) {
-                _fun73375_ip = 114;
-                continue _fun73375
+                _fun70158_ip = 114;
+                continue _fun70158
             }
         case 108:
             var7 = 'fullScreenModal';
         case 114:
-            _fun73375_ip = 154;
-            continue _fun73375;
+            _fun70158_ip = 154;
+            continue _fun70158;
         case 116:
             var8 = 1;
             var8 = var5[var8];
@@ -51,8 +51,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var9 = var8.bind(var9)();
             var8 = 'modal';
             if (!var9) {
-                _fun73375_ip = 151;
-                continue _fun73375
+                _fun70158_ip = 151;
+                continue _fun70158
             }
         case 145:
             var8 = 'fullScreenModal';
@@ -74,21 +74,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = 'modules/main_tabs_v2/native/utils/getNavigationModalPresentation.tsx';
             var3 = var4.bind(var5)(var3);
             var1 = function() {
-                _fun73376: for (var _fun73376_ip = 0;;) switch (_fun73376_ip) {
+                _fun70159: for (var _fun70159_ip = 0;;) switch (_fun70159_ip) {
                     case 0:
                         var0 = arguments[0];
                         var5 = undefined;
                         if (!(var0 === var5)) {
-                            _fun73376_ip = 16;
-                            continue _fun73376
+                            _fun70159_ip = 16;
+                            continue _fun70159
                         }
                     case 9:
                         var0 = _closure1_slot2;
                     case 16:
                         var1 = var0.presentation;
                         if (!(var1 === var5)) {
-                            _fun73376_ip = 39;
-                            continue _fun73376
+                            _fun70159_ip = 39;
+                            continue _fun70159
                         }
                     case 26:
                         var2 = _closure1_slot2;
@@ -96,15 +96,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 39:
                         var2 = var0.lockOrientation;
                         if (!(var2 === var5)) {
-                            _fun73376_ip = 78;
-                            continue _fun73376
+                            _fun70159_ip = 78;
+                            continue _fun70159
                         }
                     case 49:
                         var0 = _closure1_slot2;
                         var0 = var0.lockOrientation;
                         if (!var0) {
-                            _fun73376_ip = 75;
-                            continue _fun73376
+                            _fun70159_ip = 75;
+                            continue _fun70159
                         }
                     case 65:
                         var3 = 'transparentModal';
@@ -116,8 +116,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0.presentation = var1;
                         var1 = undefined;
                         if (!var2) {
-                            _fun73376_ip = 161;
-                            continue _fun73376
+                            _fun70159_ip = 161;
+                            continue _fun70159
                         }
                     case 90:
                         var3 = _closure1_slot0;
@@ -133,8 +133,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var2.PORTRAIT;
                         var2 = 'landscape';
                         if (!(var4 === var3)) {
-                            _fun73376_ip = 158;
-                            continue _fun73376
+                            _fun70159_ip = 158;
+                            continue _fun70159
                         }
                     case 152:
                         var2 = 'portrait';
@@ -148,4 +148,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [478, 7741, 1309, 7873, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [478, 7259, 1309, 7616, 2]);

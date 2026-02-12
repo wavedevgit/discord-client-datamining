@@ -10,15 +10,15 @@ import org.jetbrains.annotations.NotNull;
 public final class TypeAttributeTranslators {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f34709a;
+    private final List f34710a;
 
     public TypeAttributeTranslators(@NotNull List<? extends TypeAttributeTranslator> translators) {
         Intrinsics.checkNotNullParameter(translators, "translators");
-        this.f34709a = translators;
+        this.f34710a = translators;
     }
 
     @NotNull
     public final List<TypeAttributeTranslator> getTranslators() {
-        return this.f34709a;
+        return this.f34710a;
     }
 }

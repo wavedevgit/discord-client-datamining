@@ -42,7 +42,7 @@ public abstract class h {
 
     private int a(RecyclerView recyclerView) {
         if (this.mCachedMaxScrollSpeed == -1) {
-            this.mCachedMaxScrollSpeed = recyclerView.getResources().getDimensionPixelSize(q3.b.f43896d);
+            this.mCachedMaxScrollSpeed = recyclerView.getResources().getDimensionPixelSize(q3.b.f43897d);
         }
         return this.mCachedMaxScrollSpeed;
     }

@@ -3,15 +3,15 @@ package j$.time.format;
 public final class c implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    public final char f30539a;
+    public final char f30540a;
 
     public c(char c10) {
-        this.f30539a = c10;
+        this.f30540a = c10;
     }
 
     @Override // j$.time.format.e
     public final boolean r(q qVar, StringBuilder sb2) {
-        sb2.append(this.f30539a);
+        sb2.append(this.f30540a);
         return true;
     }
 
@@ -21,12 +21,12 @@ public final class c implements e {
             return ~i10;
         }
         char charAt = charSequence.charAt(i10);
-        char c10 = this.f30539a;
-        return (charAt == c10 || (!oVar.f30571b && (Character.toUpperCase(charAt) == Character.toUpperCase(c10) || Character.toLowerCase(charAt) == Character.toLowerCase(c10)))) ? i10 + 1 : ~i10;
+        char c10 = this.f30540a;
+        return (charAt == c10 || (!oVar.f30572b && (Character.toUpperCase(charAt) == Character.toUpperCase(c10) || Character.toLowerCase(charAt) == Character.toLowerCase(c10)))) ? i10 + 1 : ~i10;
     }
 
     public final String toString() {
-        char c10 = this.f30539a;
+        char c10 = this.f30540a;
         if (c10 == '\'') {
             return "''";
         }

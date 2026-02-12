@@ -13,7 +13,7 @@ import p8.j;
 public class WebPImage implements c, ia.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private Bitmap.Config f10528a = null;
+    private Bitmap.Config f10529a = null;
     @d
     private long mNativeContext;
 
@@ -26,7 +26,7 @@ public class WebPImage implements c, ia.c {
         byteBuffer.rewind();
         WebPImage nativeCreateFromDirectByteBuffer = nativeCreateFromDirectByteBuffer(byteBuffer);
         if (imageDecodeOptions != null) {
-            nativeCreateFromDirectByteBuffer.f10528a = imageDecodeOptions.f11052i;
+            nativeCreateFromDirectByteBuffer.f10529a = imageDecodeOptions.f11053i;
         }
         return nativeCreateFromDirectByteBuffer;
     }
@@ -42,7 +42,7 @@ public class WebPImage implements c, ia.c {
         j.b(Boolean.valueOf(z10));
         WebPImage nativeCreateFromNativeMemory = nativeCreateFromNativeMemory(j10, i10);
         if (imageDecodeOptions != null) {
-            nativeCreateFromNativeMemory.f10528a = imageDecodeOptions.f11052i;
+            nativeCreateFromNativeMemory.f10529a = imageDecodeOptions.f11053i;
         }
         return nativeCreateFromNativeMemory;
     }
@@ -158,7 +158,7 @@ public class WebPImage implements c, ia.c {
 
     @Override // ha.c
     public Bitmap.Config y() {
-        return this.f10528a;
+        return this.f10529a;
     }
 
     @d

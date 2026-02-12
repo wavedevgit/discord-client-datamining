@@ -16,20 +16,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var5[var0];
     var0 = undefined;
     var1 = var4.bind(var0)(var1);
-    var1 = var1.View;
-    var _closure1_slot0 = var1;
+    var7 = var1.View;
     var1 = 1;
     var1 = var5[var1];
     var1 = var4.bind(var0)(var1);
-    var1 = var1.jsx;
-    var _closure1_slot1 = var1;
+    var6 = var1.jsx;
+    var1 = {};
+    var1 = var6.bind(var0)(var7, var1);
+    var _closure1_slot0 = var1;
     var1 = {};
     var3 = function() {
-        var3 = _closure1_slot1;
-        var2 = _closure1_slot0;
-        var1 = undefined;
-        var0 = {};
-        var0 = var3.bind(var1)(var2, var0);
+        var0 = _closure1_slot0;
         return var0;
     };
     var1.RunAllFlows = var3;

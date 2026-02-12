@@ -3,19 +3,19 @@ package kk;
 public abstract class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f31851a;
+    private final int f31852a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f31852b;
+    private final int f31853b;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public i(int i10, int i11) {
-        this.f31851a = i10;
-        this.f31852b = i11;
+        this.f31852a = i10;
+        this.f31853b = i11;
     }
 
     public final int a() {
-        return this.f31852b;
+        return this.f31853b;
     }
 
     public abstract byte[] b();
@@ -23,7 +23,7 @@ public abstract class i {
     public abstract byte[] c(int i10, byte[] bArr);
 
     public final int d() {
-        return this.f31851a;
+        return this.f31852a;
     }
 
     public i e() {
@@ -40,12 +40,12 @@ public abstract class i {
 
     public final String toString() {
         char c10;
-        int i10 = this.f31851a;
+        int i10 = this.f31852a;
         byte[] bArr = new byte[i10];
-        StringBuilder sb2 = new StringBuilder(this.f31852b * (i10 + 1));
-        for (int i11 = 0; i11 < this.f31852b; i11++) {
+        StringBuilder sb2 = new StringBuilder(this.f31853b * (i10 + 1));
+        for (int i11 = 0; i11 < this.f31853b; i11++) {
             bArr = c(i11, bArr);
-            for (int i12 = 0; i12 < this.f31851a; i12++) {
+            for (int i12 = 0; i12 < this.f31852a; i12++) {
                 int i13 = bArr[i12] & 255;
                 if (i13 < 64) {
                     c10 = '#';

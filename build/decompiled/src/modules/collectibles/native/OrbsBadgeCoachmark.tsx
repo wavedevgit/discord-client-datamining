@@ -8,7 +8,54 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = metroImportDefault;
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
-    var0 = function() {
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var6 = var5[var0];
+    var3 = metroImportAll;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var6);
+    var _closure1_slot3 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.View;
+    var _closure1_slot4 = var6;
+    var3 = var3.Image;
+    var _closure1_slot5 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var7 = var3.jsx;
+    var _closure1_slot6 = var7;
+    var3 = 3;
+    var3 = var5[var3];
+    var8 = var4.bind(var0)(var3);
+    var6 = var8.createStyles;
+    var3 = {};
+    var9 = {
+        'alignItems': 'center',
+        'justifyContent': 'center'
+    };
+    var3.coachmarkImageContainer = var9;
+    var9 = {
+        'width': 80,
+        'height': 80
+    };
+    var3.coachmarkImage = var9;
+    var9 = {};
+    var10 = -10;
+    var9.marginBottom = var10;
+    var3.coachmarkDescription = var9;
+    var3 = var6.bind(var8)(var3);
+    var _closure1_slot7 = var3;
+    var6 = function() {
         var0 = _closure1_slot7;
         var3 = undefined;
         var7 = var0.bind(var3)();
@@ -35,54 +82,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var _closure1_slot8 = var0;
-    var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
     var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var3);
-    var0 = 0;
-    var6 = var5[var0];
-    var3 = arg3;
-    var0 = undefined;
-    var3 = var3.bind(var0)(var6);
-    var _closure1_slot3 = var3;
-    var3 = 1;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.View;
-    var _closure1_slot4 = var6;
-    var3 = var3.Image;
-    var _closure1_slot5 = var3;
-    var3 = 2;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.jsx;
-    var _closure1_slot6 = var3;
-    var3 = 3;
-    var3 = var5[var3];
-    var7 = var4.bind(var0)(var3);
-    var6 = var7.createStyles;
-    var3 = {};
-    var8 = {
-        'alignItems': 'center',
-        'justifyContent': 'center'
-    };
-    var3.coachmarkImageContainer = var8;
-    var8 = {
-        'width': 80,
-        'height': 80
-    };
-    var3.coachmarkImage = var8;
-    var8 = {};
-    var9 = -10;
-    var8.marginBottom = var9;
-    var3.coachmarkDescription = var8;
-    var3 = var6.bind(var7)(var3);
-    var _closure1_slot7 = var3;
+    var3 = var7.bind(var0)(var6, var3);
+    var _closure1_slot8 = var3;
     var3 = 8;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -112,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function arg0() {
-        _fun60159: for (var _fun60159_ip = 0;;) switch (_fun60159_ip) {
+        _fun68353: for (var _fun68353_ip = 0;;) switch (_fun68353_ip) {
             case 0:
                 var1 = arg0;
                 var1 = var1.disabled;
@@ -157,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = !var2;
                     var0.visible = var2;
                     var2 = function() {
-                        _fun60161: for (var _fun60161_ip = 0;;) switch (_fun60161_ip) {
+                        _fun68355: for (var _fun68355_ip = 0;;) switch (_fun68355_ip) {
                             case 0:
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot2;
@@ -169,15 +171,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var1.bind(var2)();
                                 var1 = null;
                                 if (!(var1 != var3)) {
-                                    _fun60161_ip = 74;
-                                    continue _fun60161
+                                    _fun68355_ip = 74;
+                                    continue _fun68355
                                 }
                             case 41:
                                 var1 = var3.isReady;
                                 var1 = var1.bind(var3)();
                                 if (!var1) {
-                                    _fun60161_ip = 74;
-                                    continue _fun60161
+                                    _fun68355_ip = 74;
+                                    continue _fun68355
                                 }
                             case 54:
                                 var2 = var3.setParams;
@@ -192,11 +194,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     };
                     var0.onDismiss = var2;
                     var1 = function() {
-                        var3 = _closure1_slot6;
-                        var2 = _closure1_slot8;
-                        var1 = undefined;
-                        var0 = {};
-                        var0 = var3.bind(var1)(var2, var0);
+                        var0 = _closure1_slot8;
                         return var0;
                     };
                     var0.renderImgComponent = var1;
@@ -205,17 +203,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var4)(var0, var2);
                 var0 = null;
                 if (var1) {
-                    _fun60159_ip = 83;
-                    continue _fun60159
+                    _fun68353_ip = 85;
+                    continue _fun68353
                 }
-            case 74:
+            case 76:
                 var1 = {};
                 var1.props = var2;
                 var0 = var1;
-            case 83:
+            case 85:
                 return var0;
         }
     };
     var2.useOrbsBadgeCoachmark = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 7430, 1234, 3917, 7099, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 8385, 1234, 3917, 7114, 2]);

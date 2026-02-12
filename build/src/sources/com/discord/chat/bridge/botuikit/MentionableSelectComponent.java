@@ -29,7 +29,7 @@ public final class MentionableSelectComponent extends SearchableSelectComponent 
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9249id;
+    private final String f9250id;
     private final int maxValues;
     private final int minValues;
     private final String placeholder;
@@ -73,7 +73,7 @@ public final class MentionableSelectComponent extends SearchableSelectComponent 
             v1.b(i10, 719, MentionableSelectComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f9249id = str;
+        this.f9250id = str;
         this.state = actionComponentState;
         this.customId = str2;
         if ((i10 & 16) == 0) {
@@ -106,7 +106,7 @@ public final class MentionableSelectComponent extends SearchableSelectComponent 
             i10 = mentionableSelectComponent.type;
         }
         if ((i13 & 2) != 0) {
-            str = mentionableSelectComponent.f9249id;
+            str = mentionableSelectComponent.f9250id;
         }
         if ((i13 & 4) != 0) {
             actionComponentState = mentionableSelectComponent.state;
@@ -150,10 +150,10 @@ public final class MentionableSelectComponent extends SearchableSelectComponent 
         compositeEncoder.k(serialDescriptor, 2, ActionComponentState.Serializer.INSTANCE, mentionableSelectComponent.getState());
         compositeEncoder.y(serialDescriptor, 3, mentionableSelectComponent.getCustomId());
         if (compositeEncoder.z(serialDescriptor, 4) || mentionableSelectComponent.getPlaceholder() != null) {
-            compositeEncoder.o(serialDescriptor, 4, n2.f50032a, mentionableSelectComponent.getPlaceholder());
+            compositeEncoder.o(serialDescriptor, 4, n2.f50033a, mentionableSelectComponent.getPlaceholder());
         }
         if (compositeEncoder.z(serialDescriptor, 5) || mentionableSelectComponent.getAccessibilityLabel() != null) {
-            compositeEncoder.o(serialDescriptor, 5, n2.f50032a, mentionableSelectComponent.getAccessibilityLabel());
+            compositeEncoder.o(serialDescriptor, 5, n2.f50033a, mentionableSelectComponent.getAccessibilityLabel());
         }
         compositeEncoder.w(serialDescriptor, 6, mentionableSelectComponent.getMinValues());
         compositeEncoder.w(serialDescriptor, 7, mentionableSelectComponent.getMaxValues());
@@ -174,7 +174,7 @@ public final class MentionableSelectComponent extends SearchableSelectComponent 
 
     @NotNull
     public final String component2() {
-        return this.f9249id;
+        return this.f9250id;
     }
 
     @NotNull
@@ -222,7 +222,7 @@ public final class MentionableSelectComponent extends SearchableSelectComponent 
         }
         if (obj instanceof MentionableSelectComponent) {
             MentionableSelectComponent mentionableSelectComponent = (MentionableSelectComponent) obj;
-            return this.type == mentionableSelectComponent.type && Intrinsics.areEqual(this.f9249id, mentionableSelectComponent.f9249id) && this.state == mentionableSelectComponent.state && Intrinsics.areEqual(this.customId, mentionableSelectComponent.customId) && Intrinsics.areEqual(this.placeholder, mentionableSelectComponent.placeholder) && Intrinsics.areEqual(this.accessibilityLabel, mentionableSelectComponent.accessibilityLabel) && this.minValues == mentionableSelectComponent.minValues && this.maxValues == mentionableSelectComponent.maxValues && this.disabled == mentionableSelectComponent.disabled && Intrinsics.areEqual(this.selectedOptions, mentionableSelectComponent.selectedOptions);
+            return this.type == mentionableSelectComponent.type && Intrinsics.areEqual(this.f9250id, mentionableSelectComponent.f9250id) && this.state == mentionableSelectComponent.state && Intrinsics.areEqual(this.customId, mentionableSelectComponent.customId) && Intrinsics.areEqual(this.placeholder, mentionableSelectComponent.placeholder) && Intrinsics.areEqual(this.accessibilityLabel, mentionableSelectComponent.accessibilityLabel) && this.minValues == mentionableSelectComponent.minValues && this.maxValues == mentionableSelectComponent.maxValues && this.disabled == mentionableSelectComponent.disabled && Intrinsics.areEqual(this.selectedOptions, mentionableSelectComponent.selectedOptions);
         }
         return false;
     }
@@ -246,7 +246,7 @@ public final class MentionableSelectComponent extends SearchableSelectComponent 
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f9249id;
+        return this.f9250id;
     }
 
     @Override // com.discord.chat.bridge.botuikit.SelectComponent
@@ -282,7 +282,7 @@ public final class MentionableSelectComponent extends SearchableSelectComponent 
     }
 
     public int hashCode() {
-        int hashCode = ((((((Integer.hashCode(this.type) * 31) + this.f9249id.hashCode()) * 31) + this.state.hashCode()) * 31) + this.customId.hashCode()) * 31;
+        int hashCode = ((((((Integer.hashCode(this.type) * 31) + this.f9250id.hashCode()) * 31) + this.state.hashCode()) * 31) + this.customId.hashCode()) * 31;
         String str = this.placeholder;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
         String str2 = this.accessibilityLabel;
@@ -292,7 +292,7 @@ public final class MentionableSelectComponent extends SearchableSelectComponent 
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f9249id;
+        String str = this.f9250id;
         ActionComponentState actionComponentState = this.state;
         String str2 = this.customId;
         String str3 = this.placeholder;
@@ -316,7 +316,7 @@ public final class MentionableSelectComponent extends SearchableSelectComponent 
         Intrinsics.checkNotNullParameter(customId, "customId");
         Intrinsics.checkNotNullParameter(selectedOptions, "selectedOptions");
         this.type = i10;
-        this.f9249id = id2;
+        this.f9250id = id2;
         this.state = state;
         this.customId = customId;
         this.placeholder = str;

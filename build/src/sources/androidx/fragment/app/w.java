@@ -55,12 +55,12 @@ public class w implements LayoutInflater.Factory2 {
         }
         if ("fragment".equals(str)) {
             String attributeValue = attributeSet.getAttributeValue(null, "class");
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f3.c.f23556a);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f3.c.f23557a);
             if (attributeValue == null) {
-                attributeValue = obtainStyledAttributes.getString(f3.c.f23557b);
+                attributeValue = obtainStyledAttributes.getString(f3.c.f23558b);
             }
-            int resourceId = obtainStyledAttributes.getResourceId(f3.c.f23558c, -1);
-            String string = obtainStyledAttributes.getString(f3.c.f23559d);
+            int resourceId = obtainStyledAttributes.getResourceId(f3.c.f23559c, -1);
+            String string = obtainStyledAttributes.getString(f3.c.f23560d);
             obtainStyledAttributes.recycle();
             if (attributeValue == null || !u.b(context.getClassLoader(), attributeValue)) {
                 return null;

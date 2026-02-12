@@ -18,22 +18,22 @@ public abstract class g {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Uri f56040a;
+        private final Uri f56041a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f56041b;
+        private final int f56042b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f56042c;
+        private final int f56043c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final boolean f56043d;
+        private final boolean f56044d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f56044e;
+        private final String f56045e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final int f56045f;
+        private final int f56046f;
 
         public b(Uri uri, int i10, int i11, boolean z10, int i12) {
             this(uri, i10, i11, z10, null, i12);
@@ -45,56 +45,56 @@ public abstract class g {
         }
 
         public int b() {
-            return this.f56045f;
+            return this.f56046f;
         }
 
         public String c() {
             if (i()) {
-                return this.f56040a.getAuthority();
+                return this.f56041a.getAuthority();
             }
             return null;
         }
 
         public int d() {
-            return this.f56041b;
+            return this.f56042b;
         }
 
         public Uri e() {
-            return this.f56040a;
+            return this.f56041a;
         }
 
         public String f() {
-            return this.f56044e;
+            return this.f56045e;
         }
 
         public int g() {
-            return this.f56042c;
+            return this.f56043c;
         }
 
         public boolean h() {
-            return this.f56043d;
+            return this.f56044d;
         }
 
         public boolean i() {
-            return Objects.equals(this.f56040a.getScheme(), "systemfont");
+            return Objects.equals(this.f56041a.getScheme(), "systemfont");
         }
 
         public b(Uri uri, int i10, int i11, boolean z10, String str, int i12) {
-            this.f56040a = (Uri) b2.e.g(uri);
-            this.f56041b = i10;
-            this.f56042c = i11;
-            this.f56043d = z10;
-            this.f56044e = str;
-            this.f56045f = i12;
+            this.f56041a = (Uri) b2.e.g(uri);
+            this.f56042b = i10;
+            this.f56043c = i11;
+            this.f56044d = z10;
+            this.f56045e = str;
+            this.f56046f = i12;
         }
 
         public b(String str, String str2) {
-            this.f56040a = new Uri.Builder().scheme("systemfont").authority(str).build();
-            this.f56041b = 0;
-            this.f56042c = ReactFontManager.TypefaceStyle.NORMAL;
-            this.f56043d = false;
-            this.f56044e = str2;
-            this.f56045f = 0;
+            this.f56041a = new Uri.Builder().scheme("systemfont").authority(str).build();
+            this.f56042b = 0;
+            this.f56043c = ReactFontManager.TypefaceStyle.NORMAL;
+            this.f56044d = false;
+            this.f56045e = str2;
+            this.f56046f = 0;
         }
     }
 
@@ -130,14 +130,14 @@ public abstract class g {
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f56038a;
+        private final int f56039a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final List f56039b;
+        private final List f56040b;
 
         public a(int i10, b[] bVarArr) {
-            this.f56038a = i10;
-            this.f56039b = Collections.singletonList(bVarArr);
+            this.f56039a = i10;
+            this.f56040b = Collections.singletonList(bVarArr);
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
@@ -151,28 +151,28 @@ public abstract class g {
         }
 
         public b[] c() {
-            return (b[]) this.f56039b.get(0);
+            return (b[]) this.f56040b.get(0);
         }
 
         public List d() {
-            return this.f56039b;
+            return this.f56040b;
         }
 
         public int e() {
-            return this.f56038a;
+            return this.f56039a;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public boolean f() {
-            if (this.f56039b.size() > 1) {
+            if (this.f56040b.size() > 1) {
                 return true;
             }
             return false;
         }
 
         a(int i10, List list) {
-            this.f56038a = i10;
-            this.f56039b = list;
+            this.f56039a = i10;
+            this.f56040b = list;
         }
     }
 }

@@ -13,66 +13,66 @@ import java.util.Set;
 public class v extends t {
 
     /* renamed from: v  reason: collision with root package name */
-    private static final Set f22132v;
+    private static final Set f22133v;
 
     /* renamed from: d  reason: collision with root package name */
-    private Object[] f22133d;
+    private Object[] f22134d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Object[] f22134e;
+    private Object[] f22135e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f22135i;
+    private Map f22136i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int[] f22136o;
+    private int[] f22137o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f22137p;
+    private int f22138p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f22138q;
+    private int f22139q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f22139r;
+    private int f22140r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f22140s;
+    private int f22141s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f22141t = false;
+    private boolean f22142t = false;
 
     /* renamed from: u  reason: collision with root package name */
-    private int f22142u = -1;
+    private int f22143u = -1;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private class b implements Iterator {
 
         /* renamed from: d  reason: collision with root package name */
-        int f22143d;
+        int f22144d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f22144e;
+        int f22145e;
 
         private b() {
-            this.f22143d = v.this.f22137p;
-            this.f22144e = v.this.f22140s;
+            this.f22144d = v.this.f22138p;
+            this.f22145e = v.this.f22141s;
         }
 
         @Override // java.util.Iterator
         /* renamed from: a */
         public bu.p next() {
             Object obj;
-            if (this.f22144e > 0) {
-                Object[] objArr = v.this.f22133d;
+            if (this.f22145e > 0) {
+                Object[] objArr = v.this.f22134d;
                 do {
-                    int i10 = this.f22143d - 1;
-                    this.f22143d = i10;
+                    int i10 = this.f22144d - 1;
+                    this.f22144d = i10;
                     if (i10 >= 0) {
                         obj = objArr[i10];
                     }
                 } while (obj == null);
-                this.f22144e--;
+                this.f22145e--;
                 return (bu.p) bu.p.class.cast(obj);
             }
             throw new NoSuchElementException();
@@ -80,7 +80,7 @@ public class v extends t {
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (this.f22144e > 0) {
+            if (this.f22145e > 0) {
                 return true;
             }
             return false;
@@ -104,7 +104,7 @@ public class v extends t {
 
         @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
         public int size() {
-            return v.this.f22140s;
+            return v.this.f22141s;
         }
     }
 
@@ -117,34 +117,34 @@ public class v extends t {
         hashSet.add(net.time4j.g0.H);
         hashSet.add(net.time4j.g0.J);
         hashSet.add(net.time4j.g0.N);
-        f22132v = Collections.unmodifiableSet(hashSet);
+        f22133v = Collections.unmodifiableSet(hashSet);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public v(int i10, boolean z10) {
         if (z10) {
-            this.f22137p = Integer.MIN_VALUE;
-            this.f22138q = Integer.MIN_VALUE;
-            this.f22139r = Integer.MIN_VALUE;
-            this.f22140s = Integer.MIN_VALUE;
-            this.f22133d = null;
-            this.f22134e = null;
-            this.f22136o = new int[3];
+            this.f22138p = Integer.MIN_VALUE;
+            this.f22139q = Integer.MIN_VALUE;
+            this.f22140r = Integer.MIN_VALUE;
+            this.f22141s = Integer.MIN_VALUE;
+            this.f22134d = null;
+            this.f22135e = null;
+            this.f22137o = new int[3];
             for (int i11 = 0; i11 < 3; i11++) {
-                this.f22136o[i11] = Integer.MIN_VALUE;
+                this.f22137o[i11] = Integer.MIN_VALUE;
             }
         } else {
             int P = P(i10);
-            this.f22137p = P;
-            this.f22138q = P - 1;
-            this.f22139r = U(P);
-            int i12 = this.f22137p;
-            this.f22133d = new Object[i12];
-            this.f22134e = null;
-            this.f22136o = new int[i12];
-            this.f22140s = 0;
+            this.f22138p = P;
+            this.f22139q = P - 1;
+            this.f22140r = U(P);
+            int i12 = this.f22138p;
+            this.f22134d = new Object[i12];
+            this.f22135e = null;
+            this.f22137o = new int[i12];
+            this.f22141s = 0;
         }
-        this.f22135i = null;
+        this.f22136i = null;
     }
 
     private static int P(int i10) {
@@ -174,56 +174,56 @@ public class v extends t {
 
     private int R(bu.p pVar) {
         Object obj;
-        Object[] objArr = this.f22133d;
+        Object[] objArr = this.f22134d;
         if (objArr == null) {
             if (pVar == net.time4j.f0.A) {
-                return this.f22136o[0];
+                return this.f22137o[0];
             }
             if (pVar == net.time4j.f0.E) {
-                return this.f22136o[1];
+                return this.f22137o[1];
             }
             if (pVar == net.time4j.f0.F) {
-                return this.f22136o[2];
+                return this.f22137o[2];
             }
             if (pVar == net.time4j.g0.F) {
-                return this.f22137p;
+                return this.f22138p;
             }
             if (pVar == net.time4j.g0.H) {
-                return this.f22138q;
+                return this.f22139q;
             }
             if (pVar == net.time4j.g0.J) {
-                return this.f22139r;
+                return this.f22140r;
             }
             if (pVar == net.time4j.g0.N) {
-                return this.f22140s;
+                return this.f22141s;
             }
-            Map map = this.f22135i;
+            Map map = this.f22136i;
             if (map == null || !map.containsKey(pVar)) {
                 return Integer.MIN_VALUE;
             }
             return ((Integer) Integer.class.cast(map.get(pVar))).intValue();
         }
-        int V = V(pVar.hashCode()) & this.f22138q;
+        int V = V(pVar.hashCode()) & this.f22139q;
         Object obj2 = objArr[V];
         if (obj2 == null) {
             return Integer.MIN_VALUE;
         }
         if (pVar.equals(obj2)) {
-            return this.f22136o[V];
+            return this.f22137o[V];
         }
         do {
-            V = (V + 1) & this.f22138q;
+            V = (V + 1) & this.f22139q;
             obj = objArr[V];
             if (obj == null) {
                 return Integer.MIN_VALUE;
             }
         } while (!pVar.equals(obj));
-        return this.f22136o[V];
+        return this.f22137o[V];
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean T(bu.p pVar) {
-        return f22132v.contains(pVar);
+        return f22133v.contains(pVar);
     }
 
     private static int U(int i10) {
@@ -256,9 +256,9 @@ public class v extends t {
     private void Y(int r13) {
         /*
             r12 = this;
-            java.lang.Object[] r0 = r12.f22133d
-            java.lang.Object[] r1 = r12.f22134e
-            int[] r2 = r12.f22136o
+            java.lang.Object[] r0 = r12.f22134d
+            java.lang.Object[] r1 = r12.f22135e
+            int[] r2 = r12.f22137o
             int r3 = r13 + (-1)
             java.lang.Object[] r4 = new java.lang.Object[r13]
             if (r1 != 0) goto Le
@@ -268,8 +268,8 @@ public class v extends t {
             java.lang.Object[] r5 = new java.lang.Object[r13]
         L10:
             int[] r6 = new int[r13]
-            int r7 = r12.f22137p
-            int r8 = r12.f22140s
+            int r7 = r12.f22138p
+            int r8 = r12.f22141s
             r9 = 0
         L17:
             if (r9 >= r8) goto L46
@@ -302,13 +302,13 @@ public class v extends t {
             int r9 = r9 + 1
             goto L17
         L46:
-            r12.f22137p = r13
-            r12.f22138q = r3
+            r12.f22138p = r13
+            r12.f22139q = r3
             int r13 = U(r13)
-            r12.f22139r = r13
-            r12.f22133d = r4
-            r12.f22134e = r5
-            r12.f22136o = r6
+            r12.f22140r = r13
+            r12.f22134d = r4
+            r12.f22135e = r5
+            r12.f22137o = r6
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: du.v.Y(int):void");
@@ -316,31 +316,31 @@ public class v extends t {
 
     private void Z(Object obj) {
         Object obj2;
-        Object[] objArr = this.f22133d;
+        Object[] objArr = this.f22134d;
         if (objArr == null) {
             if (obj == net.time4j.f0.A) {
-                this.f22136o[0] = Integer.MIN_VALUE;
+                this.f22137o[0] = Integer.MIN_VALUE;
                 return;
             } else if (obj == net.time4j.f0.E) {
-                this.f22136o[1] = Integer.MIN_VALUE;
+                this.f22137o[1] = Integer.MIN_VALUE;
                 return;
             } else if (obj == net.time4j.f0.F) {
-                this.f22136o[2] = Integer.MIN_VALUE;
+                this.f22137o[2] = Integer.MIN_VALUE;
                 return;
             } else if (obj == net.time4j.g0.F) {
-                this.f22137p = Integer.MIN_VALUE;
+                this.f22138p = Integer.MIN_VALUE;
                 return;
             } else if (obj == net.time4j.g0.H) {
-                this.f22138q = Integer.MIN_VALUE;
+                this.f22139q = Integer.MIN_VALUE;
                 return;
             } else if (obj == net.time4j.g0.J) {
-                this.f22139r = Integer.MIN_VALUE;
+                this.f22140r = Integer.MIN_VALUE;
                 return;
             } else if (obj == net.time4j.g0.N) {
-                this.f22140s = Integer.MIN_VALUE;
+                this.f22141s = Integer.MIN_VALUE;
                 return;
             } else {
-                Map map = this.f22135i;
+                Map map = this.f22136i;
                 if (map != null) {
                     map.remove(obj);
                     return;
@@ -348,7 +348,7 @@ public class v extends t {
                 return;
             }
         }
-        int V = V(obj.hashCode()) & this.f22138q;
+        int V = V(obj.hashCode()) & this.f22139q;
         Object obj3 = objArr[V];
         if (obj3 != null) {
             if (obj.equals(obj3)) {
@@ -356,7 +356,7 @@ public class v extends t {
                 return;
             }
             do {
-                V = (V + 1) & this.f22138q;
+                V = (V + 1) & this.f22139q;
                 obj2 = objArr[V];
                 if (obj2 == null) {
                     return;
@@ -368,10 +368,10 @@ public class v extends t {
 
     private void a0(int i10) {
         Object obj;
-        this.f22140s--;
-        Object[] objArr = this.f22133d;
+        this.f22141s--;
+        Object[] objArr = this.f22134d;
         while (true) {
-            int i11 = (i10 + 1) & this.f22138q;
+            int i11 = (i10 + 1) & this.f22139q;
             while (true) {
                 obj = objArr[i11];
                 if (obj == null) {
@@ -379,7 +379,7 @@ public class v extends t {
                     return;
                 }
                 int V = V(obj.hashCode());
-                int i12 = this.f22138q;
+                int i12 = this.f22139q;
                 int i13 = V & i12;
                 if (i10 <= i11) {
                     if (i10 >= i13 || i13 > i11) {
@@ -394,11 +394,11 @@ public class v extends t {
                 }
             }
             objArr[i10] = obj;
-            Object[] objArr2 = this.f22134e;
+            Object[] objArr2 = this.f22135e;
             if (objArr2 != null) {
                 objArr2[i10] = objArr2[i11];
             }
-            int[] iArr = this.f22136o;
+            int[] iArr = this.f22137o;
             iArr[i10] = iArr[i11];
             i10 = i11;
         }
@@ -419,92 +419,92 @@ public class v extends t {
         int i15;
         int i16;
         int i17;
-        Object[] objArr = this.f22133d;
+        Object[] objArr = this.f22134d;
         if (objArr == null) {
             if (pVar == net.time4j.f0.A) {
-                if (!this.f22141t && (i17 = this.f22136o[0]) != Integer.MIN_VALUE && i17 != i10) {
+                if (!this.f22142t && (i17 = this.f22137o[0]) != Integer.MIN_VALUE && i17 != i10) {
                     throw new du.a(pVar);
                 }
-                this.f22136o[0] = i10;
+                this.f22137o[0] = i10;
                 return;
             } else if (pVar == net.time4j.f0.E) {
-                if (!this.f22141t && (i16 = this.f22136o[1]) != Integer.MIN_VALUE && i16 != i10) {
+                if (!this.f22142t && (i16 = this.f22137o[1]) != Integer.MIN_VALUE && i16 != i10) {
                     throw new du.a(pVar);
                 }
-                this.f22136o[1] = i10;
+                this.f22137o[1] = i10;
                 return;
             } else if (pVar == net.time4j.f0.F) {
-                if (!this.f22141t && (i15 = this.f22136o[2]) != Integer.MIN_VALUE && i15 != i10) {
+                if (!this.f22142t && (i15 = this.f22137o[2]) != Integer.MIN_VALUE && i15 != i10) {
                     throw new du.a(pVar);
                 }
-                this.f22136o[2] = i10;
+                this.f22137o[2] = i10;
                 return;
             } else if (pVar == net.time4j.g0.F) {
-                if (!this.f22141t && (i14 = this.f22137p) != Integer.MIN_VALUE && i14 != i10) {
+                if (!this.f22142t && (i14 = this.f22138p) != Integer.MIN_VALUE && i14 != i10) {
                     throw new du.a(pVar);
                 }
-                this.f22137p = i10;
+                this.f22138p = i10;
                 return;
             } else if (pVar == net.time4j.g0.H) {
-                if (!this.f22141t && (i13 = this.f22138q) != Integer.MIN_VALUE && i13 != i10) {
+                if (!this.f22142t && (i13 = this.f22139q) != Integer.MIN_VALUE && i13 != i10) {
                     throw new du.a(pVar);
                 }
-                this.f22138q = i10;
+                this.f22139q = i10;
                 return;
             } else if (pVar == net.time4j.g0.J) {
-                if (!this.f22141t && (i12 = this.f22139r) != Integer.MIN_VALUE && i12 != i10) {
+                if (!this.f22142t && (i12 = this.f22140r) != Integer.MIN_VALUE && i12 != i10) {
                     throw new du.a(pVar);
                 }
-                this.f22139r = i10;
+                this.f22140r = i10;
                 return;
             } else if (pVar == net.time4j.g0.N) {
-                if (!this.f22141t && (i11 = this.f22140s) != Integer.MIN_VALUE && i11 != i10) {
+                if (!this.f22142t && (i11 = this.f22141s) != Integer.MIN_VALUE && i11 != i10) {
                     throw new du.a(pVar);
                 }
-                this.f22140s = i10;
+                this.f22141s = i10;
                 return;
             } else {
-                Map map = this.f22135i;
+                Map map = this.f22136i;
                 if (map == null) {
                     map = new HashMap();
-                    this.f22135i = map;
+                    this.f22136i = map;
                 }
                 Integer valueOf = Integer.valueOf(i10);
-                if (!this.f22141t && map.containsKey(pVar) && !valueOf.equals(map.get(pVar))) {
+                if (!this.f22142t && map.containsKey(pVar) && !valueOf.equals(map.get(pVar))) {
                     throw new du.a(pVar);
                 }
                 map.put(pVar, valueOf);
                 return;
             }
         }
-        int V = V(pVar.hashCode()) & this.f22138q;
+        int V = V(pVar.hashCode()) & this.f22139q;
         Object obj2 = objArr[V];
         if (obj2 != null) {
             if (obj2.equals(pVar)) {
-                if (!this.f22141t && this.f22136o[V] != i10) {
+                if (!this.f22142t && this.f22137o[V] != i10) {
                     throw new du.a(pVar);
                 }
-                this.f22136o[V] = i10;
+                this.f22137o[V] = i10;
                 return;
             }
             do {
-                V = (V + 1) & this.f22138q;
+                V = (V + 1) & this.f22139q;
                 obj = objArr[V];
                 if (obj != null) {
                 }
             } while (!obj.equals(pVar));
-            if (!this.f22141t && this.f22136o[V] != i10) {
+            if (!this.f22142t && this.f22137o[V] != i10) {
                 throw new du.a(pVar);
             }
-            this.f22136o[V] = i10;
+            this.f22137o[V] = i10;
             return;
         }
         objArr[V] = pVar;
-        this.f22136o[V] = i10;
-        int i18 = this.f22140s;
+        this.f22137o[V] = i10;
+        int i18 = this.f22141s;
         int i19 = i18 + 1;
-        this.f22140s = i19;
-        if (i18 >= this.f22139r) {
+        this.f22141s = i19;
+        if (i18 >= this.f22140r) {
             Y(P(i19));
         }
     }
@@ -518,50 +518,50 @@ public class v extends t {
         } else if (pVar.getType() == Integer.class) {
             H(pVar, ((Integer) Integer.class.cast(obj)).intValue());
         } else {
-            Object[] objArr = this.f22133d;
+            Object[] objArr = this.f22134d;
             if (objArr == null) {
-                Map map = this.f22135i;
+                Map map = this.f22136i;
                 if (map == null) {
                     map = new HashMap();
-                    this.f22135i = map;
+                    this.f22136i = map;
                 }
-                if (!this.f22141t && map.containsKey(pVar) && !obj.equals(map.get(pVar))) {
+                if (!this.f22142t && map.containsKey(pVar) && !obj.equals(map.get(pVar))) {
                     throw new du.a(pVar);
                 }
                 map.put(pVar, obj);
                 return;
             }
-            if (this.f22134e == null) {
-                this.f22134e = new Object[this.f22137p];
+            if (this.f22135e == null) {
+                this.f22135e = new Object[this.f22138p];
             }
-            int V = V(pVar.hashCode()) & this.f22138q;
+            int V = V(pVar.hashCode()) & this.f22139q;
             Object obj3 = objArr[V];
             if (obj3 != null) {
                 if (obj3.equals(pVar)) {
-                    if (!this.f22141t && !obj.equals(this.f22134e[V])) {
+                    if (!this.f22142t && !obj.equals(this.f22135e[V])) {
                         throw new du.a(pVar);
                     }
-                    this.f22134e[V] = obj;
+                    this.f22135e[V] = obj;
                     return;
                 }
                 do {
-                    V = (V + 1) & this.f22138q;
+                    V = (V + 1) & this.f22139q;
                     obj2 = objArr[V];
                     if (obj2 != null) {
                     }
                 } while (!obj2.equals(pVar));
-                if (!this.f22141t && !obj.equals(this.f22134e[V])) {
+                if (!this.f22142t && !obj.equals(this.f22135e[V])) {
                     throw new du.a(pVar);
                 }
-                this.f22134e[V] = obj;
+                this.f22135e[V] = obj;
                 return;
             }
             objArr[V] = pVar;
-            this.f22134e[V] = obj;
-            int i10 = this.f22140s;
+            this.f22135e[V] = obj;
+            int i10 = this.f22141s;
             int i11 = i10 + 1;
-            this.f22140s = i11;
-            if (i10 >= this.f22139r) {
+            this.f22141s = i11;
+            if (i10 >= this.f22140r) {
                 Y(P(i11));
             }
         }
@@ -569,58 +569,58 @@ public class v extends t {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int S() {
-        return this.f22142u;
+        return this.f22143u;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void X(v vVar) {
         int i10 = 0;
-        if (this.f22133d == null) {
-            int i11 = vVar.f22137p;
+        if (this.f22134d == null) {
+            int i11 = vVar.f22138p;
             if (i11 != Integer.MIN_VALUE) {
-                int i12 = this.f22137p;
-                if (i12 != Integer.MIN_VALUE && !this.f22141t && i12 != i11) {
+                int i12 = this.f22138p;
+                if (i12 != Integer.MIN_VALUE && !this.f22142t && i12 != i11) {
                     throw new du.a(net.time4j.g0.F);
                 }
-                this.f22137p = i11;
+                this.f22138p = i11;
             }
-            int i13 = vVar.f22138q;
+            int i13 = vVar.f22139q;
             if (i13 != Integer.MIN_VALUE) {
-                int i14 = this.f22138q;
-                if (i14 != Integer.MIN_VALUE && !this.f22141t && i14 != i13) {
+                int i14 = this.f22139q;
+                if (i14 != Integer.MIN_VALUE && !this.f22142t && i14 != i13) {
                     throw new du.a(net.time4j.g0.H);
                 }
-                this.f22138q = i13;
+                this.f22139q = i13;
             }
-            int i15 = vVar.f22139r;
+            int i15 = vVar.f22140r;
             if (i15 != Integer.MIN_VALUE) {
-                int i16 = this.f22139r;
-                if (i16 != Integer.MIN_VALUE && !this.f22141t && i16 != i15) {
+                int i16 = this.f22140r;
+                if (i16 != Integer.MIN_VALUE && !this.f22142t && i16 != i15) {
                     throw new du.a(net.time4j.g0.J);
                 }
-                this.f22139r = i15;
+                this.f22140r = i15;
             }
-            int i17 = vVar.f22140s;
+            int i17 = vVar.f22141s;
             if (i17 != Integer.MIN_VALUE) {
-                int i18 = this.f22140s;
-                if (i18 != Integer.MIN_VALUE && !this.f22141t && i18 != i17) {
+                int i18 = this.f22141s;
+                if (i18 != Integer.MIN_VALUE && !this.f22142t && i18 != i17) {
                     throw new du.a(net.time4j.g0.N);
                 }
-                this.f22140s = i17;
+                this.f22141s = i17;
             }
             while (i10 < 3) {
-                int i19 = vVar.f22136o[i10];
+                int i19 = vVar.f22137o[i10];
                 if (i19 != Integer.MIN_VALUE) {
-                    int[] iArr = this.f22136o;
+                    int[] iArr = this.f22137o;
                     int i20 = iArr[i10];
-                    if (i20 != Integer.MIN_VALUE && !this.f22141t && i20 != i19) {
+                    if (i20 != Integer.MIN_VALUE && !this.f22142t && i20 != i19) {
                         throw new du.a(Q(i10));
                     }
                     iArr[i10] = i19;
                 }
                 i10++;
             }
-            Map map = vVar.f22135i;
+            Map map = vVar.f22136i;
             if (map != null) {
                 for (bu.p pVar : map.keySet()) {
                     I(pVar, map.get(pVar));
@@ -629,15 +629,15 @@ public class v extends t {
             }
             return;
         }
-        Object[] objArr = vVar.f22133d;
+        Object[] objArr = vVar.f22134d;
         while (i10 < objArr.length) {
             Object obj = objArr[i10];
             if (obj != null) {
                 bu.p pVar2 = (bu.p) bu.p.class.cast(obj);
                 if (pVar2.getType() == Integer.class) {
-                    H(pVar2, vVar.f22136o[i10]);
+                    H(pVar2, vVar.f22137o[i10]);
                 } else {
-                    I(pVar2, vVar.f22134e[i10]);
+                    I(pVar2, vVar.f22135e[i10]);
                 }
             }
             i10++;
@@ -646,30 +646,30 @@ public class v extends t {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void b0() {
-        Object[] objArr = this.f22133d;
+        Object[] objArr = this.f22134d;
         if (objArr == null) {
-            this.f22137p = Integer.MIN_VALUE;
-            this.f22138q = Integer.MIN_VALUE;
-            this.f22139r = Integer.MIN_VALUE;
-            this.f22140s = Integer.MIN_VALUE;
+            this.f22138p = Integer.MIN_VALUE;
+            this.f22139q = Integer.MIN_VALUE;
+            this.f22140r = Integer.MIN_VALUE;
+            this.f22141s = Integer.MIN_VALUE;
             for (int i10 = 0; i10 < 3; i10++) {
-                this.f22136o[i10] = Integer.MIN_VALUE;
+                this.f22137o[i10] = Integer.MIN_VALUE;
             }
-            this.f22135i = null;
+            this.f22136i = null;
         } else {
-            this.f22133d = new Object[objArr.length];
+            this.f22134d = new Object[objArr.length];
         }
-        this.f22140s = 0;
+        this.f22141s = 0;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void c0() {
-        this.f22141t = true;
+        this.f22142t = true;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void d0(int i10) {
-        this.f22142u = i10;
+        this.f22143u = i10;
     }
 
     @Override // bu.q, bu.o
@@ -685,25 +685,25 @@ public class v extends t {
             }
             throw new bu.r("No value found for: " + pVar.name());
         }
-        Object[] objArr = this.f22133d;
+        Object[] objArr = this.f22134d;
         if (objArr == null) {
-            Map map = this.f22135i;
+            Map map = this.f22136i;
             if (map != null && map.containsKey(pVar)) {
                 return pVar.getType().cast(map.get(pVar));
             }
             throw new bu.r("No value found for: " + pVar.name());
-        } else if (this.f22134e != null && (obj = objArr[(V = V(pVar.hashCode()) & this.f22138q)]) != null) {
+        } else if (this.f22135e != null && (obj = objArr[(V = V(pVar.hashCode()) & this.f22139q)]) != null) {
             if (pVar.equals(obj)) {
-                return type.cast(this.f22134e[V]);
+                return type.cast(this.f22135e[V]);
             }
             do {
-                V = (V + 1) & this.f22138q;
+                V = (V + 1) & this.f22139q;
                 obj2 = objArr[V];
                 if (obj2 == null) {
                     throw new bu.r("No value found for: " + pVar.name());
                 }
             } while (!pVar.equals(obj2));
-            return type.cast(this.f22134e[V]);
+            return type.cast(this.f22135e[V]);
         } else {
             throw new bu.r("No value found for: " + pVar.name());
         }
@@ -720,52 +720,52 @@ public class v extends t {
         if (pVar == null) {
             return false;
         }
-        Object[] objArr = this.f22133d;
+        Object[] objArr = this.f22134d;
         if (objArr == null) {
             if (pVar == net.time4j.f0.A) {
-                if (this.f22136o[0] == Integer.MIN_VALUE) {
+                if (this.f22137o[0] == Integer.MIN_VALUE) {
                     return false;
                 }
                 return true;
             } else if (pVar == net.time4j.f0.E) {
-                if (this.f22136o[1] == Integer.MIN_VALUE) {
+                if (this.f22137o[1] == Integer.MIN_VALUE) {
                     return false;
                 }
                 return true;
             } else if (pVar == net.time4j.f0.F) {
-                if (this.f22136o[2] == Integer.MIN_VALUE) {
+                if (this.f22137o[2] == Integer.MIN_VALUE) {
                     return false;
                 }
                 return true;
             } else if (pVar == net.time4j.g0.F) {
-                if (this.f22137p == Integer.MIN_VALUE) {
+                if (this.f22138p == Integer.MIN_VALUE) {
                     return false;
                 }
                 return true;
             } else if (pVar == net.time4j.g0.H) {
-                if (this.f22138q == Integer.MIN_VALUE) {
+                if (this.f22139q == Integer.MIN_VALUE) {
                     return false;
                 }
                 return true;
             } else if (pVar == net.time4j.g0.J) {
-                if (this.f22139r == Integer.MIN_VALUE) {
+                if (this.f22140r == Integer.MIN_VALUE) {
                     return false;
                 }
                 return true;
             } else if (pVar == net.time4j.g0.N) {
-                if (this.f22140s == Integer.MIN_VALUE) {
+                if (this.f22141s == Integer.MIN_VALUE) {
                     return false;
                 }
                 return true;
             } else {
-                Map map = this.f22135i;
+                Map map = this.f22136i;
                 if (map == null || !map.containsKey(pVar)) {
                     return false;
                 }
                 return true;
             }
         }
-        int V = V(pVar.hashCode()) & this.f22138q;
+        int V = V(pVar.hashCode()) & this.f22139q;
         Object obj2 = objArr[V];
         if (obj2 == null) {
             return false;
@@ -774,7 +774,7 @@ public class v extends t {
             return true;
         }
         do {
-            V = (V + 1) & this.f22138q;
+            V = (V + 1) & this.f22139q;
             obj = objArr[V];
             if (obj == null) {
                 return false;
@@ -785,30 +785,30 @@ public class v extends t {
 
     @Override // bu.q
     public Set y() {
-        if (this.f22133d == null) {
+        if (this.f22134d == null) {
             HashSet hashSet = new HashSet();
-            if (this.f22136o[0] != Integer.MIN_VALUE) {
+            if (this.f22137o[0] != Integer.MIN_VALUE) {
                 hashSet.add(net.time4j.f0.A);
             }
-            if (this.f22136o[1] != Integer.MIN_VALUE) {
+            if (this.f22137o[1] != Integer.MIN_VALUE) {
                 hashSet.add(net.time4j.f0.E);
             }
-            if (this.f22136o[2] != Integer.MIN_VALUE) {
+            if (this.f22137o[2] != Integer.MIN_VALUE) {
                 hashSet.add(net.time4j.f0.F);
             }
-            if (this.f22137p != Integer.MIN_VALUE) {
+            if (this.f22138p != Integer.MIN_VALUE) {
                 hashSet.add(net.time4j.g0.F);
             }
-            if (this.f22138q != Integer.MIN_VALUE) {
+            if (this.f22139q != Integer.MIN_VALUE) {
                 hashSet.add(net.time4j.g0.H);
             }
-            if (this.f22139r != Integer.MIN_VALUE) {
+            if (this.f22140r != Integer.MIN_VALUE) {
                 hashSet.add(net.time4j.g0.J);
             }
-            if (this.f22140s != Integer.MIN_VALUE) {
+            if (this.f22141s != Integer.MIN_VALUE) {
                 hashSet.add(net.time4j.g0.N);
             }
-            Map map = this.f22135i;
+            Map map = this.f22136i;
             if (map != null) {
                 hashSet.addAll(map.keySet());
             }

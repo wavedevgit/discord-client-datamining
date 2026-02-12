@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class UpdateInquirySessionRequest_AppdomeThreatEventJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20246a;
+    private final m.b f20247a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f20247b;
+    private final com.squareup.moshi.h f20248b;
 
     public UpdateInquirySessionRequest_AppdomeThreatEventJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a(StackTraceHelper.NAME_KEY, "timestamp", "reasonData");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20246a = a10;
+        this.f20247a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), StackTraceHelper.NAME_KEY);
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20247b = f10;
+        this.f20248b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -38,21 +38,21 @@ public final class UpdateInquirySessionRequest_AppdomeThreatEventJsonAdapter ext
         String str2 = null;
         String str3 = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20246a);
+            int J = reader.J(this.f20247a);
             if (J != -1) {
                 if (J != 0) {
                     if (J != 1) {
-                        if (J == 2 && (str3 = (String) this.f20247b.fromJson(reader)) == null) {
+                        if (J == 2 && (str3 = (String) this.f20248b.fromJson(reader)) == null) {
                             throw dn.c.x("reasonData", "reasonData", reader);
                         }
                     } else {
-                        str2 = (String) this.f20247b.fromJson(reader);
+                        str2 = (String) this.f20248b.fromJson(reader);
                         if (str2 == null) {
                             throw dn.c.x("timestamp", "timestamp", reader);
                         }
                     }
                 } else {
-                    str = (String) this.f20247b.fromJson(reader);
+                    str = (String) this.f20248b.fromJson(reader);
                     if (str == null) {
                         throw dn.c.x(StackTraceHelper.NAME_KEY, StackTraceHelper.NAME_KEY, reader);
                     }
@@ -82,11 +82,11 @@ public final class UpdateInquirySessionRequest_AppdomeThreatEventJsonAdapter ext
         if (appdomeThreatEvent != null) {
             writer.i();
             writer.J(StackTraceHelper.NAME_KEY);
-            this.f20247b.toJson(writer, appdomeThreatEvent.a());
+            this.f20248b.toJson(writer, appdomeThreatEvent.a());
             writer.J("timestamp");
-            this.f20247b.toJson(writer, appdomeThreatEvent.c());
+            this.f20248b.toJson(writer, appdomeThreatEvent.c());
             writer.J("reasonData");
-            this.f20247b.toJson(writer, appdomeThreatEvent.b());
+            this.f20248b.toJson(writer, appdomeThreatEvent.b());
             writer.s();
             return;
         }

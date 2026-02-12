@@ -25,25 +25,25 @@ public final class InputTextComponent implements k5, w4, v, e0 {
     public static final Parcelable.Creator<InputTextComponent> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f20702d;
+    private final String f20703d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f20703e;
+    private final String f20704e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f20704i;
+    private final JsonLogicBoolean f20705i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final JsonLogicBoolean f20705o;
+    private final JsonLogicBoolean f20706o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final TextBasedComponentStyle f20706p;
+    private final TextBasedComponentStyle f20707p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final List f20707q;
+    private final List f20708q;
 
     /* renamed from: r  reason: collision with root package name */
-    private t f20708r;
+    private t f20709r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -64,30 +64,30 @@ public final class InputTextComponent implements k5, w4, v, e0 {
     public InputTextComponent(String name, String value, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, TextBasedComponentStyle textBasedComponentStyle) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f20702d = name;
-        this.f20703e = value;
-        this.f20704i = jsonLogicBoolean;
-        this.f20705o = jsonLogicBoolean2;
-        this.f20706p = textBasedComponentStyle;
-        this.f20707q = new ArrayList();
-        this.f20708r = w.a(value);
+        this.f20703d = name;
+        this.f20704e = value;
+        this.f20705i = jsonLogicBoolean;
+        this.f20706o = jsonLogicBoolean2;
+        this.f20707p = textBasedComponentStyle;
+        this.f20708q = new ArrayList();
+        this.f20709r = w.a(value);
     }
 
     public static /* synthetic */ InputTextComponent e(InputTextComponent inputTextComponent, String str, String str2, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, TextBasedComponentStyle textBasedComponentStyle, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = inputTextComponent.f20702d;
+            str = inputTextComponent.f20703d;
         }
         if ((i10 & 2) != 0) {
-            str2 = inputTextComponent.f20703e;
+            str2 = inputTextComponent.f20704e;
         }
         if ((i10 & 4) != 0) {
-            jsonLogicBoolean = inputTextComponent.f20704i;
+            jsonLogicBoolean = inputTextComponent.f20705i;
         }
         if ((i10 & 8) != 0) {
-            jsonLogicBoolean2 = inputTextComponent.f20705o;
+            jsonLogicBoolean2 = inputTextComponent.f20706o;
         }
         if ((i10 & 16) != 0) {
-            textBasedComponentStyle = inputTextComponent.f20706p;
+            textBasedComponentStyle = inputTextComponent.f20707p;
         }
         TextBasedComponentStyle textBasedComponentStyle2 = textBasedComponentStyle;
         JsonLogicBoolean jsonLogicBoolean3 = jsonLogicBoolean;
@@ -100,7 +100,7 @@ public final class InputTextComponent implements k5, w4, v, e0 {
 
     @Override // pq.w4
     public t b() {
-        return this.f20708r;
+        return this.f20709r;
     }
 
     public final InputTextComponent c(String name, String value, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, TextBasedComponentStyle textBasedComponentStyle) {
@@ -111,7 +111,7 @@ public final class InputTextComponent implements k5, w4, v, e0 {
 
     @Override // pq.e0
     public List d() {
-        return this.f20707q;
+        return this.f20708q;
     }
 
     @Override // android.os.Parcelable
@@ -125,42 +125,42 @@ public final class InputTextComponent implements k5, w4, v, e0 {
         }
         if (obj instanceof InputTextComponent) {
             InputTextComponent inputTextComponent = (InputTextComponent) obj;
-            return Intrinsics.areEqual(this.f20702d, inputTextComponent.f20702d) && Intrinsics.areEqual(this.f20703e, inputTextComponent.f20703e) && Intrinsics.areEqual(this.f20704i, inputTextComponent.f20704i) && Intrinsics.areEqual(this.f20705o, inputTextComponent.f20705o) && Intrinsics.areEqual(this.f20706p, inputTextComponent.f20706p);
+            return Intrinsics.areEqual(this.f20703d, inputTextComponent.f20703d) && Intrinsics.areEqual(this.f20704e, inputTextComponent.f20704e) && Intrinsics.areEqual(this.f20705i, inputTextComponent.f20705i) && Intrinsics.areEqual(this.f20706o, inputTextComponent.f20706o) && Intrinsics.areEqual(this.f20707p, inputTextComponent.f20707p);
         }
         return false;
     }
 
     public final TextBasedComponentStyle f() {
-        return this.f20706p;
+        return this.f20707p;
     }
 
     public void g(t tVar) {
         Intrinsics.checkNotNullParameter(tVar, "<set-?>");
-        this.f20708r = tVar;
+        this.f20709r = tVar;
     }
 
     @Override // pq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f20705o;
+        return this.f20706o;
     }
 
     @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f20704i;
+        return this.f20705i;
     }
 
     @Override // pq.k5
     public String getName() {
-        return this.f20702d;
+        return this.f20703d;
     }
 
     public int hashCode() {
-        int hashCode = ((this.f20702d.hashCode() * 31) + this.f20703e.hashCode()) * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f20704i;
+        int hashCode = ((this.f20703d.hashCode() * 31) + this.f20704e.hashCode()) * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f20705i;
         int hashCode2 = (hashCode + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20705o;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20706o;
         int hashCode3 = (hashCode2 + (jsonLogicBoolean2 == null ? 0 : jsonLogicBoolean2.hashCode())) * 31;
-        TextBasedComponentStyle textBasedComponentStyle = this.f20706p;
+        TextBasedComponentStyle textBasedComponentStyle = this.f20707p;
         return hashCode3 + (textBasedComponentStyle != null ? textBasedComponentStyle.hashCode() : 0);
     }
 
@@ -174,22 +174,22 @@ public final class InputTextComponent implements k5, w4, v, e0 {
     }
 
     public String toString() {
-        String str = this.f20702d;
-        String str2 = this.f20703e;
-        JsonLogicBoolean jsonLogicBoolean = this.f20704i;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20705o;
-        TextBasedComponentStyle textBasedComponentStyle = this.f20706p;
+        String str = this.f20703d;
+        String str2 = this.f20704e;
+        JsonLogicBoolean jsonLogicBoolean = this.f20705i;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20706o;
+        TextBasedComponentStyle textBasedComponentStyle = this.f20707p;
         return "InputTextComponent(name=" + str + ", value=" + str2 + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ", errorTextStyle=" + textBasedComponentStyle + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f20702d);
-        dest.writeString(this.f20703e);
-        dest.writeParcelable(this.f20704i, i10);
-        dest.writeParcelable(this.f20705o, i10);
-        dest.writeParcelable(this.f20706p, i10);
+        dest.writeString(this.f20703d);
+        dest.writeString(this.f20704e);
+        dest.writeParcelable(this.f20705i, i10);
+        dest.writeParcelable(this.f20706o, i10);
+        dest.writeParcelable(this.f20707p, i10);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

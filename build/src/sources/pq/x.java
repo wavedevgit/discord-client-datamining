@@ -21,22 +21,22 @@ public abstract class x {
     public static final class a implements i5.c {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ sq.v f43133d;
+        final /* synthetic */ sq.v f43134d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ sq.v f43134e;
+        final /* synthetic */ sq.v f43135e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ ESignatureComponent f43135i;
+        final /* synthetic */ ESignatureComponent f43136i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ sq.v f43136o;
+        final /* synthetic */ sq.v f43137o;
 
         public a(sq.v vVar, sq.v vVar2, ESignatureComponent eSignatureComponent, sq.v vVar3) {
-            this.f43133d = vVar;
-            this.f43134e = vVar2;
-            this.f43135i = eSignatureComponent;
-            this.f43136o = vVar3;
+            this.f43134d = vVar;
+            this.f43135e = vVar2;
+            this.f43136i = eSignatureComponent;
+            this.f43137o = vVar3;
         }
 
         @Override // i5.c
@@ -49,46 +49,46 @@ public abstract class x {
                 bitmapDrawable = null;
             }
             if (bitmapDrawable != null && (bitmap = bitmapDrawable.getBitmap()) != null) {
-                this.f43135i.a().c(bitmap);
-                this.f43136o.f48296g.setVisibility(0);
-                this.f43136o.f48292c.setVisibility(0);
+                this.f43136i.a().c(bitmap);
+                this.f43137o.f48297g.setVisibility(0);
+                this.f43137o.f48293c.setVisibility(0);
             }
         }
 
         @Override // i5.c
         public void b(Drawable drawable) {
-            this.f43133d.f48291b.setVisibility(8);
-            this.f43133d.f48292c.setVisibility(8);
-            this.f43133d.f48296g.setVisibility(8);
+            this.f43134d.f48292b.setVisibility(8);
+            this.f43134d.f48293c.setVisibility(8);
+            this.f43134d.f48297g.setVisibility(8);
         }
 
         @Override // i5.c
         public void c(Drawable drawable) {
-            this.f43134e.f48291b.setVisibility(0);
+            this.f43135e.f48292b.setVisibility(0);
         }
     }
 
     private static final void b(sq.v vVar, ESignature.ESignatureComponentStyle eSignatureComponentStyle) {
         Drawable mutate;
-        TextView addSignatureLabel = vVar.f48291b;
+        TextView addSignatureLabel = vVar.f48292b;
         Intrinsics.checkNotNullExpressionValue(addSignatureLabel, "addSignatureLabel");
         uq.f0.n(addSignatureLabel, eSignatureComponentStyle.getInputTextStyle().getPlaceholderTextBasedStyle(), null, 2, null);
         Integer signaturePreviewBackgroundColor = eSignatureComponentStyle.getSignaturePreviewBackgroundColor();
         if (signaturePreviewBackgroundColor != null) {
-            vVar.f48295f.setCardBackgroundColor(signaturePreviewBackgroundColor.intValue());
+            vVar.f48296f.setCardBackgroundColor(signaturePreviewBackgroundColor.intValue());
         }
         Integer fillColorValue = eSignatureComponentStyle.getFillColorValue();
         if (fillColorValue != null) {
             int intValue = fillColorValue.intValue();
-            Drawable drawable = vVar.f48292c.getDrawable();
+            Drawable drawable = vVar.f48293c.getDrawable();
             if (drawable != null && (mutate = drawable.mutate()) != null) {
                 mutate.setTint(intValue);
             }
         }
-        TextView errorLabel = vVar.f48293d;
+        TextView errorLabel = vVar.f48294d;
         Intrinsics.checkNotNullExpressionValue(errorLabel, "errorLabel");
         uq.f0.n(errorLabel, eSignatureComponentStyle.getInputTextStyle().getErrorTextStyle(), null, 2, null);
-        TextView label = vVar.f48294e;
+        TextView label = vVar.f48295e;
         Intrinsics.checkNotNullExpressionValue(label, "label");
         uq.f0.n(label, eSignatureComponentStyle.getInputTextStyle().getLabelTextBasedStyle(), null, 2, null);
         StyleElements.SizeSet margins = eSignatureComponentStyle.getMargins();
@@ -99,15 +99,15 @@ public abstract class x {
         }
         Integer baseBorderColorValue = eSignatureComponentStyle.getInputTextStyle().getBaseBorderColorValue();
         if (baseBorderColorValue != null) {
-            vVar.f48295f.setStrokeColor(baseBorderColorValue.intValue());
+            vVar.f48296f.setStrokeColor(baseBorderColorValue.intValue());
         }
         Double borderWidthValue = eSignatureComponentStyle.getInputTextStyle().getBorderWidthValue();
         if (borderWidthValue != null) {
-            vVar.f48295f.setStrokeWidth((int) Math.ceil(bq.h.a(borderWidthValue.doubleValue())));
+            vVar.f48296f.setStrokeWidth((int) Math.ceil(bq.h.a(borderWidthValue.doubleValue())));
         }
         Double borderRadiusValue = eSignatureComponentStyle.getInputTextStyle().getBorderRadiusValue();
         if (borderRadiusValue != null) {
-            vVar.f48295f.setRadius((float) bq.h.a(borderRadiusValue.doubleValue()));
+            vVar.f48296f.setRadius((float) bq.h.a(borderRadiusValue.doubleValue()));
         }
     }
 
@@ -135,10 +135,10 @@ public abstract class x {
         String prefill;
         ESignature.Attributes attributes = eSignature.getAttributes();
         if (attributes != null && (prefill = attributes.getPrefill()) != null) {
-            Context context = vVar.f48296g.getContext();
+            Context context = vVar.f48297g.getContext();
             Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
             v4.h d10 = new h.a(context).j(true).i(100).d();
-            Context context2 = vVar.f48296g.getContext();
+            Context context2 = vVar.f48297g.getContext();
             Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
             d10.a(new h.a(context2).d(prefill).s(new a(vVar, vVar, eSignatureComponent, vVar)).a());
         }
@@ -147,6 +147,6 @@ public abstract class x {
             Intrinsics.checkNotNull(vVar);
             b(vVar, styles);
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 }

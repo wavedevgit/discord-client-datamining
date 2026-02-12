@@ -103,4 +103,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'automod-profile-quarantine-alert';
     var2.QUARANTINE_USER_ALERT_KEY = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [10163, 2, 10164, 10165]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [10065, 2, 10066, 10067]);

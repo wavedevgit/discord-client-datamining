@@ -3,7 +3,7 @@ package com.swmansion.rnscreens;
 public final class m extends n {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final m f19298a = new m();
+    public static final m f19299a = new m();
 
     private m() {
         super(null);

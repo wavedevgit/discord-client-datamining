@@ -18,7 +18,7 @@ import xi.n;
 public class n implements d, aj.a {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final ij.b f54835i = new ij.b() { // from class: xi.j
+    private static final ij.b f54836i = new ij.b() { // from class: xi.j
         @Override // ij.b
         public final Object get() {
             return Collections.EMPTY_SET;
@@ -26,46 +26,46 @@ public class n implements d, aj.a {
     };
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f54836a;
+    private final Map f54837a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f54837b;
+    private final Map f54838b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f54838c;
+    private final Map f54839c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f54839d;
+    private final List f54840d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Set f54840e;
+    private Set f54841e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final u f54841f;
+    private final u f54842f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final AtomicReference f54842g;
+    private final AtomicReference f54843g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final i f54843h;
+    private final i f54844h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Executor f54844a;
+        private final Executor f54845a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final List f54845b = new ArrayList();
+        private final List f54846b = new ArrayList();
 
         /* renamed from: c  reason: collision with root package name */
-        private final List f54846c = new ArrayList();
+        private final List f54847c = new ArrayList();
 
         /* renamed from: d  reason: collision with root package name */
-        private i f54847d = i.f54828a;
+        private i f54848d = i.f54829a;
 
         b(Executor executor) {
-            this.f54844a = executor;
+            this.f54845a = executor;
         }
 
         public static /* synthetic */ ComponentRegistrar a(ComponentRegistrar componentRegistrar) {
@@ -73,12 +73,12 @@ public class n implements d, aj.a {
         }
 
         public b b(c cVar) {
-            this.f54846c.add(cVar);
+            this.f54847c.add(cVar);
             return this;
         }
 
         public b c(final ComponentRegistrar componentRegistrar) {
-            this.f54845b.add(new ij.b() { // from class: xi.o
+            this.f54846b.add(new ij.b() { // from class: xi.o
                 @Override // ij.b
                 public final Object get() {
                     return n.b.a(ComponentRegistrar.this);
@@ -88,16 +88,16 @@ public class n implements d, aj.a {
         }
 
         public b d(Collection collection) {
-            this.f54845b.addAll(collection);
+            this.f54846b.addAll(collection);
             return this;
         }
 
         public n e() {
-            return new n(this.f54844a, this.f54845b, this.f54846c, this.f54847d);
+            return new n(this.f54845a, this.f54846b, this.f54847c, this.f54848d);
         }
 
         public b f(i iVar) {
-            this.f54847d = iVar;
+            this.f54848d = iVar;
             return this;
         }
     }
@@ -114,12 +114,12 @@ public class n implements d, aj.a {
     private void l(List list) {
         ArrayList<Runnable> arrayList = new ArrayList();
         synchronized (this) {
-            Iterator it = this.f54839d.iterator();
+            Iterator it = this.f54840d.iterator();
             while (it.hasNext()) {
                 try {
                     ComponentRegistrar componentRegistrar = (ComponentRegistrar) ((ij.b) it.next()).get();
                     if (componentRegistrar != null) {
-                        list.addAll(this.f54843h.a(componentRegistrar));
+                        list.addAll(this.f54844h.a(componentRegistrar));
                         it.remove();
                     }
                 } catch (v e10) {
@@ -136,27 +136,27 @@ public class n implements d, aj.a {
                     if (i10 < length) {
                         Object obj = array[i10];
                         if (obj.toString().contains("kotlinx.coroutines.CoroutineDispatcher")) {
-                            if (this.f54840e.contains(obj.toString())) {
+                            if (this.f54841e.contains(obj.toString())) {
                                 it2.remove();
                                 break;
                             }
-                            this.f54840e.add(obj.toString());
+                            this.f54841e.add(obj.toString());
                         }
                         i10++;
                     }
                 }
             }
-            if (this.f54836a.isEmpty()) {
+            if (this.f54837a.isEmpty()) {
                 p.a(list);
             } else {
-                ArrayList arrayList2 = new ArrayList(this.f54836a.keySet());
+                ArrayList arrayList2 = new ArrayList(this.f54837a.keySet());
                 arrayList2.addAll(list);
                 p.a(arrayList2);
             }
             Iterator it3 = list.iterator();
             while (it3.hasNext()) {
                 final c cVar = (c) it3.next();
-                this.f54836a.put(cVar, new w(new ij.b() { // from class: xi.k
+                this.f54837a.put(cVar, new w(new ij.b() { // from class: xi.k
                     @Override // ij.b
                     public final Object get() {
                         return n.h(n.this, cVar);
@@ -181,7 +181,7 @@ public class n implements d, aj.a {
                 bVar.get();
             }
         }
-        this.f54841f.c();
+        this.f54842f.c();
     }
 
     private static List o(Iterable iterable) {
@@ -193,22 +193,22 @@ public class n implements d, aj.a {
     }
 
     private void p() {
-        Boolean bool = (Boolean) this.f54842g.get();
+        Boolean bool = (Boolean) this.f54843g.get();
         if (bool != null) {
-            m(this.f54836a, bool.booleanValue());
+            m(this.f54837a, bool.booleanValue());
         }
     }
 
     private void q() {
-        for (c cVar : this.f54836a.keySet()) {
+        for (c cVar : this.f54837a.keySet()) {
             for (q qVar : cVar.g()) {
-                if (qVar.f() && !this.f54838c.containsKey(qVar.b())) {
-                    this.f54838c.put(qVar.b(), x.b(Collections.EMPTY_SET));
-                } else if (this.f54837b.containsKey(qVar.b())) {
+                if (qVar.f() && !this.f54839c.containsKey(qVar.b())) {
+                    this.f54839c.put(qVar.b(), x.b(Collections.EMPTY_SET));
+                } else if (this.f54838b.containsKey(qVar.b())) {
                     continue;
                 } else if (!qVar.e()) {
                     if (!qVar.f()) {
-                        this.f54837b.put(qVar.b(), b0.c());
+                        this.f54838b.put(qVar.b(), b0.c());
                     }
                 } else {
                     throw new y(String.format("Unsatisfied dependency for component %s: %s", cVar, qVar.b()));
@@ -223,12 +223,12 @@ public class n implements d, aj.a {
         while (it.hasNext()) {
             c cVar = (c) it.next();
             if (cVar.p()) {
-                final ij.b bVar = (ij.b) this.f54836a.get(cVar);
+                final ij.b bVar = (ij.b) this.f54837a.get(cVar);
                 for (d0 d0Var : cVar.j()) {
-                    if (!this.f54837b.containsKey(d0Var)) {
-                        this.f54837b.put(d0Var, bVar);
+                    if (!this.f54838b.containsKey(d0Var)) {
+                        this.f54838b.put(d0Var, bVar);
                     } else {
-                        final b0 b0Var = (b0) ((ij.b) this.f54837b.get(d0Var));
+                        final b0 b0Var = (b0) ((ij.b) this.f54838b.get(d0Var));
                         arrayList.add(new Runnable() { // from class: xi.l
                             @Override // java.lang.Runnable
                             public final void run() {
@@ -245,7 +245,7 @@ public class n implements d, aj.a {
     private List s() {
         ArrayList arrayList = new ArrayList();
         HashMap hashMap = new HashMap();
-        for (Map.Entry entry : this.f54836a.entrySet()) {
+        for (Map.Entry entry : this.f54837a.entrySet()) {
             c cVar = (c) entry.getKey();
             if (!cVar.p()) {
                 ij.b bVar = (ij.b) entry.getValue();
@@ -258,10 +258,10 @@ public class n implements d, aj.a {
             }
         }
         for (Map.Entry entry2 : hashMap.entrySet()) {
-            if (!this.f54838c.containsKey(entry2.getKey())) {
-                this.f54838c.put((d0) entry2.getKey(), x.b((Collection) entry2.getValue()));
+            if (!this.f54839c.containsKey(entry2.getKey())) {
+                this.f54839c.put((d0) entry2.getKey(), x.b((Collection) entry2.getValue()));
             } else {
-                final x xVar = (x) this.f54838c.get(entry2.getKey());
+                final x xVar = (x) this.f54839c.get(entry2.getKey());
                 for (final ij.b bVar2 : (Set) entry2.getValue()) {
                     arrayList.add(new Runnable() { // from class: xi.m
                         @Override // java.lang.Runnable
@@ -278,38 +278,38 @@ public class n implements d, aj.a {
     @Override // xi.d
     public synchronized ij.b c(d0 d0Var) {
         c0.c(d0Var, "Null interface requested.");
-        return (ij.b) this.f54837b.get(d0Var);
+        return (ij.b) this.f54838b.get(d0Var);
     }
 
     @Override // xi.d
     public synchronized ij.b d(d0 d0Var) {
-        x xVar = (x) this.f54838c.get(d0Var);
+        x xVar = (x) this.f54839c.get(d0Var);
         if (xVar != null) {
             return xVar;
         }
-        return f54835i;
+        return f54836i;
     }
 
     public void n(boolean z10) {
         HashMap hashMap;
-        if (!p0.d.a(this.f54842g, null, Boolean.valueOf(z10))) {
+        if (!p0.d.a(this.f54843g, null, Boolean.valueOf(z10))) {
             return;
         }
         synchronized (this) {
-            hashMap = new HashMap(this.f54836a);
+            hashMap = new HashMap(this.f54837a);
         }
         m(hashMap, z10);
     }
 
     private n(Executor executor, Iterable iterable, Collection collection, i iVar) {
-        this.f54836a = new HashMap();
-        this.f54837b = new HashMap();
-        this.f54838c = new HashMap();
-        this.f54840e = new HashSet();
-        this.f54842g = new AtomicReference();
+        this.f54837a = new HashMap();
+        this.f54838b = new HashMap();
+        this.f54839c = new HashMap();
+        this.f54841e = new HashSet();
+        this.f54843g = new AtomicReference();
         u uVar = new u(executor);
-        this.f54841f = uVar;
-        this.f54843h = iVar;
+        this.f54842f = uVar;
+        this.f54844h = iVar;
         ArrayList arrayList = new ArrayList();
         arrayList.add(c.q(uVar, u.class, fj.d.class, fj.c.class));
         arrayList.add(c.q(this, aj.a.class, new Class[0]));
@@ -320,7 +320,7 @@ public class n implements d, aj.a {
                 arrayList.add(cVar);
             }
         }
-        this.f54839d = o(iterable);
+        this.f54840d = o(iterable);
         l(arrayList);
     }
 }

@@ -7,7 +7,7 @@ import java.util.concurrent.ScheduledThreadPoolExecutor;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Method f21866a;
+    private static final Method f21867a;
 
     static {
         Method method;
@@ -16,7 +16,7 @@ public abstract class a {
         } catch (Throwable unused) {
             method = null;
         }
-        f21866a = method;
+        f21867a = method;
     }
 
     public static final boolean a(Executor executor) {
@@ -28,7 +28,7 @@ public abstract class a {
             } else {
                 scheduledThreadPoolExecutor = null;
             }
-            if (scheduledThreadPoolExecutor == null || (method = f21866a) == null) {
+            if (scheduledThreadPoolExecutor == null || (method = f21867a) == null) {
                 return false;
             }
             method.invoke(scheduledThreadPoolExecutor, Boolean.TRUE);

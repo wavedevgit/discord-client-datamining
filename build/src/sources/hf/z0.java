@@ -7,30 +7,30 @@ import android.util.Log;
 public final class z0 extends q1 {
 
     /* renamed from: c  reason: collision with root package name */
-    private c f27340c;
+    private c f27341c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f27341d;
+    private final int f27342d;
 
     public z0(c cVar, int i10) {
-        this.f27340c = cVar;
-        this.f27341d = i10;
+        this.f27341c = cVar;
+        this.f27342d = i10;
     }
 
     @Override // hf.k
     public final void H(int i10, IBinder iBinder, Bundle bundle) {
-        q.m(this.f27340c, "onPostInitComplete can be called only once per call to getRemoteService");
-        this.f27340c.M(i10, iBinder, bundle, this.f27341d);
-        this.f27340c = null;
+        q.m(this.f27341c, "onPostInitComplete can be called only once per call to getRemoteService");
+        this.f27341c.M(i10, iBinder, bundle, this.f27342d);
+        this.f27341c = null;
     }
 
     @Override // hf.k
     public final void b0(int i10, IBinder iBinder, d1 d1Var) {
-        c cVar = this.f27340c;
+        c cVar = this.f27341c;
         q.m(cVar, "onPostInitCompleteWithConnectionInfo can be called only once per call togetRemoteService");
         q.l(d1Var);
         cVar.T(d1Var);
-        H(i10, iBinder, d1Var.f27222d);
+        H(i10, iBinder, d1Var.f27223d);
     }
 
     @Override // hf.k

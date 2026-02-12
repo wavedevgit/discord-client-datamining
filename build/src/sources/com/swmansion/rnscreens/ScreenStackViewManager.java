@@ -69,7 +69,7 @@ public class ScreenStackViewManager extends ViewGroupManager<ScreenStack> implem
     @Override // com.facebook.react.bridge.BaseJavaModule, com.facebook.react.bridge.NativeModule, com.facebook.react.turbomodule.core.interfaces.TurboModule
     public void invalidate() {
         super.invalidate();
-        NativeProxy.f19030a.b();
+        NativeProxy.f19031a.b();
     }
 
     @Override // com.facebook.react.uimanager.ViewGroupManager, com.facebook.react.uimanager.IViewManagerWithChildren
@@ -102,7 +102,7 @@ public class ScreenStackViewManager extends ViewGroupManager<ScreenStack> implem
         Intrinsics.checkNotNullParameter(child, "child");
         if (child instanceof Screen) {
             Screen screen = (Screen) child;
-            NativeProxy.f19030a.a(screen.getId(), screen);
+            NativeProxy.f19031a.a(screen.getId(), screen);
             parent.addScreen(screen, i10);
             return;
         }
@@ -128,6 +128,6 @@ public class ScreenStackViewManager extends ViewGroupManager<ScreenStack> implem
         Screen screenAt = parent.getScreenAt(i10);
         prepareOutTransition(screenAt);
         parent.removeScreenAt(i10);
-        NativeProxy.f19030a.c(screenAt.getId());
+        NativeProxy.f19031a.c(screenAt.getId());
     }
 }

@@ -3,37 +3,37 @@ package t5;
 public class k implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f48551a;
+    private final String f48552a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a f48552b;
+    private final a f48553b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final s5.b f48553c;
+    private final s5.b f48554c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final s5.o f48554d;
+    private final s5.o f48555d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final s5.b f48555e;
+    private final s5.b f48556e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final s5.b f48556f;
+    private final s5.b f48557f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final s5.b f48557g;
+    private final s5.b f48558g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final s5.b f48558h;
+    private final s5.b f48559h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final s5.b f48559i;
+    private final s5.b f48560i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final boolean f48560j;
+    private final boolean f48561j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final boolean f48561k;
+    private final boolean f48562k;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public enum a {
@@ -42,16 +42,16 @@ public class k implements c {
         
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f48565d;
+        private final int f48566d;
 
         a(int i10) {
-            this.f48565d = i10;
+            this.f48566d = i10;
         }
 
         public static a d(int i10) {
             a[] values;
             for (a aVar : values()) {
-                if (aVar.f48565d == i10) {
+                if (aVar.f48566d == i10) {
                     return aVar;
                 }
             }
@@ -60,17 +60,17 @@ public class k implements c {
     }
 
     public k(String str, a aVar, s5.b bVar, s5.o oVar, s5.b bVar2, s5.b bVar3, s5.b bVar4, s5.b bVar5, s5.b bVar6, boolean z10, boolean z11) {
-        this.f48551a = str;
-        this.f48552b = aVar;
-        this.f48553c = bVar;
-        this.f48554d = oVar;
-        this.f48555e = bVar2;
-        this.f48556f = bVar3;
-        this.f48557g = bVar4;
-        this.f48558h = bVar5;
-        this.f48559i = bVar6;
-        this.f48560j = z10;
-        this.f48561k = z11;
+        this.f48552a = str;
+        this.f48553b = aVar;
+        this.f48554c = bVar;
+        this.f48555d = oVar;
+        this.f48556e = bVar2;
+        this.f48557f = bVar3;
+        this.f48558g = bVar4;
+        this.f48559h = bVar5;
+        this.f48560i = bVar6;
+        this.f48561j = z10;
+        this.f48562k = z11;
     }
 
     @Override // t5.c
@@ -79,46 +79,46 @@ public class k implements c {
     }
 
     public s5.b b() {
-        return this.f48556f;
+        return this.f48557f;
     }
 
     public s5.b c() {
-        return this.f48558h;
+        return this.f48559h;
     }
 
     public String d() {
-        return this.f48551a;
+        return this.f48552a;
     }
 
     public s5.b e() {
-        return this.f48557g;
+        return this.f48558g;
     }
 
     public s5.b f() {
-        return this.f48559i;
+        return this.f48560i;
     }
 
     public s5.b g() {
-        return this.f48553c;
+        return this.f48554c;
     }
 
     public s5.o h() {
-        return this.f48554d;
+        return this.f48555d;
     }
 
     public s5.b i() {
-        return this.f48555e;
+        return this.f48556e;
     }
 
     public a j() {
-        return this.f48552b;
+        return this.f48553b;
     }
 
     public boolean k() {
-        return this.f48560j;
+        return this.f48561j;
     }
 
     public boolean l() {
-        return this.f48561k;
+        return this.f48562k;
     }
 }

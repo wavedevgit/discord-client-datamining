@@ -22,10 +22,10 @@ public abstract class g implements Closeable, Parcelable {
         public static final Parcelable.Creator<a> CREATOR = new C0783a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f55759d;
+        private final String f55760d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final List f55760e;
+        private final List f55761e;
 
         /* renamed from: yq.g$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -55,18 +55,18 @@ public abstract class g implements Closeable, Parcelable {
             super(null);
             Intrinsics.checkNotNullParameter(stepName, "stepName");
             Intrinsics.checkNotNullParameter(documents, "documents");
-            this.f55759d = stepName;
-            this.f55760e = documents;
+            this.f55760d = stepName;
+            this.f55761e = documents;
         }
 
         @Override // yq.g
         public String a() {
-            return this.f55759d;
+            return this.f55760d;
         }
 
         @Override // yq.g, java.io.Closeable, java.lang.AutoCloseable
         public void close() {
-            for (yq.c cVar : this.f55760e) {
+            for (yq.c cVar : this.f55761e) {
                 cVar.a().delete();
             }
         }
@@ -84,31 +84,31 @@ public abstract class g implements Closeable, Parcelable {
                 return false;
             }
             a aVar = (a) obj;
-            if (Intrinsics.areEqual(this.f55759d, aVar.f55759d) && Intrinsics.areEqual(this.f55760e, aVar.f55760e)) {
+            if (Intrinsics.areEqual(this.f55760d, aVar.f55760d) && Intrinsics.areEqual(this.f55761e, aVar.f55761e)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return (this.f55759d.hashCode() * 31) + this.f55760e.hashCode();
+            return (this.f55760d.hashCode() * 31) + this.f55761e.hashCode();
         }
 
         public final List i() {
-            return this.f55760e;
+            return this.f55761e;
         }
 
         public String toString() {
-            String str = this.f55759d;
-            List list = this.f55760e;
+            String str = this.f55760d;
+            List list = this.f55761e;
             return "DocumentStepData(stepName=" + str + ", documents=" + list + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f55759d);
-            List<yq.c> list = this.f55760e;
+            dest.writeString(this.f55760d);
+            List<yq.c> list = this.f55761e;
             dest.writeInt(list.size());
             for (yq.c cVar : list) {
                 cVar.writeToParcel(dest, i10);
@@ -122,13 +122,13 @@ public abstract class g implements Closeable, Parcelable {
         public static final Parcelable.Creator<b> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f55761d;
+        private final String f55762d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final List f55762e;
+        private final List f55763e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final yq.b f55763i;
+        private final yq.b f55764i;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -158,19 +158,19 @@ public abstract class g implements Closeable, Parcelable {
             Intrinsics.checkNotNullParameter(stepName, "stepName");
             Intrinsics.checkNotNullParameter(captures, "captures");
             Intrinsics.checkNotNullParameter(idDetails, "idDetails");
-            this.f55761d = stepName;
-            this.f55762e = captures;
-            this.f55763i = idDetails;
+            this.f55762d = stepName;
+            this.f55763e = captures;
+            this.f55764i = idDetails;
         }
 
         @Override // yq.g
         public String a() {
-            return this.f55761d;
+            return this.f55762d;
         }
 
         @Override // yq.g, java.io.Closeable, java.lang.AutoCloseable
         public void close() {
-            for (e eVar : this.f55762e) {
+            for (e eVar : this.f55763e) {
                 for (e.c cVar : eVar.m2()) {
                     cVar.a().delete();
                 }
@@ -190,37 +190,37 @@ public abstract class g implements Closeable, Parcelable {
                 return false;
             }
             b bVar = (b) obj;
-            if (Intrinsics.areEqual(this.f55761d, bVar.f55761d) && Intrinsics.areEqual(this.f55762e, bVar.f55762e) && Intrinsics.areEqual(this.f55763i, bVar.f55763i)) {
+            if (Intrinsics.areEqual(this.f55762d, bVar.f55762d) && Intrinsics.areEqual(this.f55763e, bVar.f55763e) && Intrinsics.areEqual(this.f55764i, bVar.f55764i)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return (((this.f55761d.hashCode() * 31) + this.f55762e.hashCode()) * 31) + this.f55763i.hashCode();
+            return (((this.f55762d.hashCode() * 31) + this.f55763e.hashCode()) * 31) + this.f55764i.hashCode();
         }
 
         public final List i() {
-            return this.f55762e;
+            return this.f55763e;
         }
 
         public String toString() {
-            String str = this.f55761d;
-            List list = this.f55762e;
-            yq.b bVar = this.f55763i;
+            String str = this.f55762d;
+            List list = this.f55763e;
+            yq.b bVar = this.f55764i;
             return "GovernmentIdStepData(stepName=" + str + ", captures=" + list + ", idDetails=" + bVar + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f55761d);
-            List<e> list = this.f55762e;
+            dest.writeString(this.f55762d);
+            List<e> list = this.f55763e;
             dest.writeInt(list.size());
             for (e eVar : list) {
                 eVar.writeToParcel(dest, i10);
             }
-            this.f55763i.writeToParcel(dest, i10);
+            this.f55764i.writeToParcel(dest, i10);
         }
     }
 
@@ -230,16 +230,16 @@ public abstract class g implements Closeable, Parcelable {
         public static final Parcelable.Creator<c> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f55764d;
+        private final String f55765d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final f f55765e;
+        private final f f55766e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final f f55766i;
+        private final f f55767i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final f f55767o;
+        private final f f55768o;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -280,21 +280,21 @@ public abstract class g implements Closeable, Parcelable {
         public c(String stepName, f fVar, f fVar2, f fVar3) {
             super(null);
             Intrinsics.checkNotNullParameter(stepName, "stepName");
-            this.f55764d = stepName;
-            this.f55765e = fVar;
-            this.f55766i = fVar2;
-            this.f55767o = fVar3;
+            this.f55765d = stepName;
+            this.f55766e = fVar;
+            this.f55767i = fVar2;
+            this.f55768o = fVar3;
         }
 
         @Override // yq.g
         public String a() {
-            return this.f55764d;
+            return this.f55765d;
         }
 
         @Override // yq.g, java.io.Closeable, java.lang.AutoCloseable
         public void close() {
             File b10;
-            for (f fVar : CollectionsKt.o(this.f55765e, this.f55766i, this.f55767o)) {
+            for (f fVar : CollectionsKt.o(this.f55766e, this.f55767i, this.f55768o)) {
                 if (fVar != null && (b10 = fVar.b()) != null) {
                     b10.delete();
                 }
@@ -314,7 +314,7 @@ public abstract class g implements Closeable, Parcelable {
                 return false;
             }
             c cVar = (c) obj;
-            if (Intrinsics.areEqual(this.f55764d, cVar.f55764d) && Intrinsics.areEqual(this.f55765e, cVar.f55765e) && Intrinsics.areEqual(this.f55766i, cVar.f55766i) && Intrinsics.areEqual(this.f55767o, cVar.f55767o)) {
+            if (Intrinsics.areEqual(this.f55765d, cVar.f55765d) && Intrinsics.areEqual(this.f55766e, cVar.f55766e) && Intrinsics.areEqual(this.f55767i, cVar.f55767i) && Intrinsics.areEqual(this.f55768o, cVar.f55768o)) {
                 return true;
             }
             return false;
@@ -323,8 +323,8 @@ public abstract class g implements Closeable, Parcelable {
         public int hashCode() {
             int hashCode;
             int hashCode2;
-            int hashCode3 = this.f55764d.hashCode() * 31;
-            f fVar = this.f55765e;
+            int hashCode3 = this.f55765d.hashCode() * 31;
+            f fVar = this.f55766e;
             int i10 = 0;
             if (fVar == null) {
                 hashCode = 0;
@@ -332,14 +332,14 @@ public abstract class g implements Closeable, Parcelable {
                 hashCode = fVar.hashCode();
             }
             int i11 = (hashCode3 + hashCode) * 31;
-            f fVar2 = this.f55766i;
+            f fVar2 = this.f55767i;
             if (fVar2 == null) {
                 hashCode2 = 0;
             } else {
                 hashCode2 = fVar2.hashCode();
             }
             int i12 = (i11 + hashCode2) * 31;
-            f fVar3 = this.f55767o;
+            f fVar3 = this.f55768o;
             if (fVar3 != null) {
                 i10 = fVar3.hashCode();
             }
@@ -347,44 +347,44 @@ public abstract class g implements Closeable, Parcelable {
         }
 
         public final f i() {
-            return this.f55765e;
+            return this.f55766e;
         }
 
         public final f p() {
-            return this.f55766i;
+            return this.f55767i;
         }
 
         public final f s() {
-            return this.f55767o;
+            return this.f55768o;
         }
 
         public String toString() {
-            String str = this.f55764d;
-            f fVar = this.f55765e;
-            f fVar2 = this.f55766i;
-            f fVar3 = this.f55767o;
+            String str = this.f55765d;
+            f fVar = this.f55766e;
+            f fVar2 = this.f55767i;
+            f fVar3 = this.f55768o;
             return "SelfieStepData(stepName=" + str + ", centerCapture=" + fVar + ", leftCapture=" + fVar2 + ", rightCapture=" + fVar3 + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f55764d);
-            f fVar = this.f55765e;
+            dest.writeString(this.f55765d);
+            f fVar = this.f55766e;
             if (fVar == null) {
                 dest.writeInt(0);
             } else {
                 dest.writeInt(1);
                 fVar.writeToParcel(dest, i10);
             }
-            f fVar2 = this.f55766i;
+            f fVar2 = this.f55767i;
             if (fVar2 == null) {
                 dest.writeInt(0);
             } else {
                 dest.writeInt(1);
                 fVar2.writeToParcel(dest, i10);
             }
-            f fVar3 = this.f55767o;
+            f fVar3 = this.f55768o;
             if (fVar3 == null) {
                 dest.writeInt(0);
                 return;
@@ -400,10 +400,10 @@ public abstract class g implements Closeable, Parcelable {
         public static final Parcelable.Creator<d> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f55768d;
+        private final String f55769d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Map f55769e;
+        private final Map f55770e;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -432,13 +432,13 @@ public abstract class g implements Closeable, Parcelable {
             super(null);
             Intrinsics.checkNotNullParameter(stepName, "stepName");
             Intrinsics.checkNotNullParameter(componentParams, "componentParams");
-            this.f55768d = stepName;
-            this.f55769e = componentParams;
+            this.f55769d = stepName;
+            this.f55770e = componentParams;
         }
 
         @Override // yq.g
         public String a() {
-            return this.f55768d;
+            return this.f55769d;
         }
 
         @Override // android.os.Parcelable
@@ -454,31 +454,31 @@ public abstract class g implements Closeable, Parcelable {
                 return false;
             }
             d dVar = (d) obj;
-            if (Intrinsics.areEqual(this.f55768d, dVar.f55768d) && Intrinsics.areEqual(this.f55769e, dVar.f55769e)) {
+            if (Intrinsics.areEqual(this.f55769d, dVar.f55769d) && Intrinsics.areEqual(this.f55770e, dVar.f55770e)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return (this.f55768d.hashCode() * 31) + this.f55769e.hashCode();
+            return (this.f55769d.hashCode() * 31) + this.f55770e.hashCode();
         }
 
         public final Map i() {
-            return this.f55769e;
+            return this.f55770e;
         }
 
         public String toString() {
-            String str = this.f55768d;
-            Map map = this.f55769e;
+            String str = this.f55769d;
+            Map map = this.f55770e;
             return "UiStepData(stepName=" + str + ", componentParams=" + map + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f55768d);
-            Map map = this.f55769e;
+            dest.writeString(this.f55769d);
+            Map map = this.f55770e;
             dest.writeInt(map.size());
             for (Map.Entry entry : map.entrySet()) {
                 dest.writeString((String) entry.getKey());

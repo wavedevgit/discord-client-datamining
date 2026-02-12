@@ -247,7 +247,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = var3.isRunningInMetroDevServer;
                         var2 = var2.bind(var3)();
                         if (var2) {
-                            _fun12842_ip = 1415;
+                            _fun12842_ip = 1413;
                             continue _fun12842
                         }
                     case 46:
@@ -755,7 +755,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = var4.isExpoGo;
                         var2 = var2.bind(var4)();
                         if (!var2) {
-                            _fun12842_ip = 1415;
+                            _fun12842_ip = 1413;
                             continue _fun12842
                         }
                     case 1343:
@@ -773,7 +773,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = var3.log;
                         var1 = 'Use EAS Build / Native Release Build to test these features.';
                         var1 = var2.bind(var3)(var1);
-                    case 1415:
+                    case 1413:
                         return var0;
                 }
             };

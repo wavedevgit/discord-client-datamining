@@ -7,34 +7,34 @@ import okio.ByteString;
 public final class c {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f50126d = new a(null);
+    public static final a f50127d = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final ByteString f50127e;
+    public static final ByteString f50128e;
 
     /* renamed from: f  reason: collision with root package name */
-    public static final ByteString f50128f;
+    public static final ByteString f50129f;
 
     /* renamed from: g  reason: collision with root package name */
-    public static final ByteString f50129g;
+    public static final ByteString f50130g;
 
     /* renamed from: h  reason: collision with root package name */
-    public static final ByteString f50130h;
+    public static final ByteString f50131h;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final ByteString f50131i;
+    public static final ByteString f50132i;
 
     /* renamed from: j  reason: collision with root package name */
-    public static final ByteString f50132j;
+    public static final ByteString f50133j;
 
     /* renamed from: a  reason: collision with root package name */
-    public final ByteString f50133a;
+    public final ByteString f50134a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ByteString f50134b;
+    public final ByteString f50135b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f50135c;
+    public final int f50136c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -47,29 +47,29 @@ public final class c {
     }
 
     static {
-        ByteString.a aVar = ByteString.f40591o;
-        f50127e = aVar.g(":");
-        f50128f = aVar.g(":status");
-        f50129g = aVar.g(":method");
-        f50130h = aVar.g(":path");
-        f50131i = aVar.g(":scheme");
-        f50132j = aVar.g(":authority");
+        ByteString.a aVar = ByteString.f40592o;
+        f50128e = aVar.g(":");
+        f50129f = aVar.g(":status");
+        f50130g = aVar.g(":method");
+        f50131h = aVar.g(":path");
+        f50132i = aVar.g(":scheme");
+        f50133j = aVar.g(":authority");
     }
 
     public c(ByteString name, ByteString value) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f50133a = name;
-        this.f50134b = value;
-        this.f50135c = name.G() + 32 + value.G();
+        this.f50134a = name;
+        this.f50135b = value;
+        this.f50136c = name.G() + 32 + value.G();
     }
 
     public final ByteString a() {
-        return this.f50133a;
+        return this.f50134a;
     }
 
     public final ByteString b() {
-        return this.f50134b;
+        return this.f50135b;
     }
 
     public boolean equals(Object obj) {
@@ -80,18 +80,18 @@ public final class c {
             return false;
         }
         c cVar = (c) obj;
-        if (Intrinsics.areEqual(this.f50133a, cVar.f50133a) && Intrinsics.areEqual(this.f50134b, cVar.f50134b)) {
+        if (Intrinsics.areEqual(this.f50134a, cVar.f50134a) && Intrinsics.areEqual(this.f50135b, cVar.f50135b)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f50133a.hashCode() * 31) + this.f50134b.hashCode();
+        return (this.f50134a.hashCode() * 31) + this.f50135b.hashCode();
     }
 
     public String toString() {
-        return this.f50133a.M() + ": " + this.f50134b.M();
+        return this.f50134a.M() + ": " + this.f50135b.M();
     }
 
     /* JADX WARN: Illegal instructions before constructor call */
@@ -106,7 +106,7 @@ public final class c {
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r2, r0)
             java.lang.String r0 = "value"
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r3, r0)
-            okio.ByteString$a r0 = okio.ByteString.f40591o
+            okio.ByteString$a r0 = okio.ByteString.f40592o
             okio.ByteString r2 = r0.g(r2)
             okio.ByteString r3 = r0.g(r3)
             r1.<init>(r2, r3)
@@ -117,7 +117,7 @@ public final class c {
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public c(ByteString name, String value) {
-        this(name, ByteString.f40591o.g(value));
+        this(name, ByteString.f40592o.g(value));
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(value, "value");
     }

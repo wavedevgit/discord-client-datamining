@@ -35,54 +35,54 @@ public abstract class n0 {
         InputAddress.Attributes attributes = config.getAttributes();
         if (attributes != null) {
             gn.t g10 = inputAddressComponent.g();
-            EditText editText = c10.f48210d.getEditText();
+            EditText editText = c10.f48211d.getEditText();
             Intrinsics.checkNotNull(editText);
             gn.u.b(g10, editText);
             gn.t g11 = inputAddressComponent.g();
-            EditText editText2 = c10.f48212f.getEditText();
+            EditText editText2 = c10.f48213f.getEditText();
             Intrinsics.checkNotNull(editText2);
             gn.u.b(g11, editText2);
             gn.t i10 = inputAddressComponent.i();
-            EditText editText3 = c10.f48220n.getEditText();
+            EditText editText3 = c10.f48221n.getEditText();
             Intrinsics.checkNotNull(editText3);
             gn.u.b(i10, editText3);
             gn.t a10 = inputAddressComponent.a();
-            EditText editText4 = c10.f48208b.getEditText();
+            EditText editText4 = c10.f48209b.getEditText();
             Intrinsics.checkNotNull(editText4);
             gn.u.b(a10, editText4);
             gn.t c11 = inputAddressComponent.c();
-            EditText editText5 = c10.f48219m.getEditText();
+            EditText editText5 = c10.f48220m.getEditText();
             Intrinsics.checkNotNull(editText5);
             gn.u.b(c11, editText5);
             gn.t b10 = inputAddressComponent.b();
-            EditText editText6 = c10.f48218l.getEditText();
+            EditText editText6 = c10.f48219l.getEditText();
             Intrinsics.checkNotNull(editText6);
             gn.u.b(b10, editText6);
             String placeholderAutocomplete = attributes.getPlaceholderAutocomplete();
             if (placeholderAutocomplete != null) {
-                c10.f48210d.setHint(placeholderAutocomplete);
+                c10.f48211d.setHint(placeholderAutocomplete);
             }
             String placeholderAddressStreet1 = attributes.getPlaceholderAddressStreet1();
             if (placeholderAddressStreet1 != null) {
-                c10.f48212f.setHint(placeholderAddressStreet1);
+                c10.f48213f.setHint(placeholderAddressStreet1);
             }
             String placeholderAddressStreet2 = attributes.getPlaceholderAddressStreet2();
             if (placeholderAddressStreet2 != null) {
-                c10.f48220n.setHint(placeholderAddressStreet2);
+                c10.f48221n.setHint(placeholderAddressStreet2);
             }
             String placeholderAddressCity = attributes.getPlaceholderAddressCity();
             if (placeholderAddressCity != null) {
-                c10.f48208b.setHint(placeholderAddressCity);
+                c10.f48209b.setHint(placeholderAddressCity);
             }
             boolean areEqual = Intrinsics.areEqual(attributes.getSelectedCountryCode(), "US");
-            TextInputLayout textInputLayout = c10.f48219m;
+            TextInputLayout textInputLayout = c10.f48220m;
             if (areEqual) {
                 placeholderAddressSubdivision = attributes.getPlaceholderAddressSubdivisionUs();
             } else {
                 placeholderAddressSubdivision = attributes.getPlaceholderAddressSubdivision();
             }
             textInputLayout.setHint(placeholderAddressSubdivision);
-            TextInputLayout textInputLayout2 = c10.f48218l;
+            TextInputLayout textInputLayout2 = c10.f48219l;
             if (areEqual) {
                 placeholderAddressPostalCode = attributes.getPlaceholderAddressPostalCodeUs();
             } else {
@@ -91,11 +91,11 @@ public abstract class n0 {
             textInputLayout2.setHint(placeholderAddressPostalCode);
             String label = attributes.getLabel();
             if (label != null) {
-                c10.f48217k.setText(label);
+                c10.f48218k.setText(label);
             }
             String editAddressManuallyPrompt = attributes.getEditAddressManuallyPrompt();
             if (editAddressManuallyPrompt != null) {
-                c10.f48209c.setText(editAddressManuallyPrompt);
+                c10.f48210c.setText(editAddressManuallyPrompt);
             }
         }
         c10.getRoot().setTag(c10);
@@ -107,7 +107,7 @@ public abstract class n0 {
                 return g12;
             }
         });
-        c10.f48209c.setOnClickListener(new View.OnClickListener() { // from class: pq.m0
+        c10.f48210c.setOnClickListener(new View.OnClickListener() { // from class: pq.m0
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 n0.f(InputAddressComponent.this, view);
@@ -139,34 +139,34 @@ public abstract class n0 {
         TextBasedComponentStyle expandComponentsButtonStyle;
         InputAddress.AddressComponentStyle styles = inputAddress.getStyles();
         if (styles != null && (expandComponentsButtonStyle = styles.getExpandComponentsButtonStyle()) != null) {
-            TextView addressExpandComponentsButton = dVar.f48209c;
+            TextView addressExpandComponentsButton = dVar.f48210c;
             Intrinsics.checkNotNullExpressionValue(addressExpandComponentsButton, "addressExpandComponentsButton");
             uq.f0.n(addressExpandComponentsButton, expandComponentsButtonStyle, null, 2, null);
         }
         InputAddress.AddressComponentStyle styles2 = inputAddress.getStyles();
         if (styles2 != null && (inputTextStyle = styles2.getInputTextStyle()) != null) {
-            TextView addressLabel = dVar.f48217k;
+            TextView addressLabel = dVar.f48218k;
             Intrinsics.checkNotNullExpressionValue(addressLabel, "addressLabel");
             uq.f0.n(addressLabel, inputTextStyle.getLabelTextBasedStyle(), null, 2, null);
-            TextInputLayout addressFieldCollapsed = dVar.f48210d;
+            TextInputLayout addressFieldCollapsed = dVar.f48211d;
             Intrinsics.checkNotNullExpressionValue(addressFieldCollapsed, "addressFieldCollapsed");
             uq.a0.k(addressFieldCollapsed, inputTextStyle);
-            TextInputLayout addressFieldExpanded = dVar.f48212f;
+            TextInputLayout addressFieldExpanded = dVar.f48213f;
             Intrinsics.checkNotNullExpressionValue(addressFieldExpanded, "addressFieldExpanded");
             uq.a0.k(addressFieldExpanded, inputTextStyle);
-            TextInputLayout addressSuite = dVar.f48220n;
+            TextInputLayout addressSuite = dVar.f48221n;
             Intrinsics.checkNotNullExpressionValue(addressSuite, "addressSuite");
             uq.a0.k(addressSuite, inputTextStyle);
-            TextInputLayout addressCity = dVar.f48208b;
+            TextInputLayout addressCity = dVar.f48209b;
             Intrinsics.checkNotNullExpressionValue(addressCity, "addressCity");
             uq.a0.k(addressCity, inputTextStyle);
-            TextInputLayout addressSubdivision = dVar.f48219m;
+            TextInputLayout addressSubdivision = dVar.f48220m;
             Intrinsics.checkNotNullExpressionValue(addressSubdivision, "addressSubdivision");
             uq.a0.k(addressSubdivision, inputTextStyle);
-            TextInputLayout addressPostalCode = dVar.f48218l;
+            TextInputLayout addressPostalCode = dVar.f48219l;
             Intrinsics.checkNotNullExpressionValue(addressPostalCode, "addressPostalCode");
             uq.a0.k(addressPostalCode, inputTextStyle);
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 }

@@ -50,21 +50,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = function() { // Environment: var0
             var0 = {};
             var1 = function arg0() {
-                _fun66253: for (var _fun66253_ip = 0;;) switch (_fun66253_ip) {
+                _fun67678: for (var _fun67678_ip = 0;;) switch (_fun67678_ip) {
                     case 0:
                         var0 = arg0;
                         var0 = var0.nativeEvent;
                         var1 = var0.actionName;
                         var0 = 'activate';
                         if (!(var0 === var1)) {
-                            _fun66253_ip = 38;
-                            continue _fun66253
+                            _fun67678_ip = 39;
+                            continue _fun67678
                         }
-                    case 22:
+                    case 23:
                         var1 = _closure2_slot2;
                         var0 = var1.current;
                         var0 = var0.bind(var1)();
-                    case 38:
+                    case 39:
                         var0 = undefined;
                         return var0;
                 }

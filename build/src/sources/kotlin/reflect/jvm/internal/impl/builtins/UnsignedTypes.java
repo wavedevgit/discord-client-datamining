@@ -24,22 +24,22 @@ public final class UnsignedTypes {
     public static final UnsignedTypes INSTANCE = new UnsignedTypes();
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Set f32158a;
+    private static final Set f32159a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Set f32159b;
+    private static final Set f32160b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final HashMap f32160c;
+    private static final HashMap f32161c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final HashMap f32161d;
+    private static final HashMap f32162d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final HashMap f32162e;
+    private static final HashMap f32163e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Set f32163f;
+    private static final Set f32164f;
 
     static {
         UnsignedType[] values;
@@ -48,25 +48,25 @@ public final class UnsignedTypes {
         for (UnsignedType unsignedType : values2) {
             arrayList.add(unsignedType.getTypeName());
         }
-        f32158a = CollectionsKt.l1(arrayList);
+        f32159a = CollectionsKt.l1(arrayList);
         UnsignedArrayType[] values3 = UnsignedArrayType.values();
         ArrayList arrayList2 = new ArrayList(values3.length);
         for (UnsignedArrayType unsignedArrayType : values3) {
             arrayList2.add(unsignedArrayType.getTypeName());
         }
-        f32159b = CollectionsKt.l1(arrayList2);
-        f32160c = new HashMap();
-        f32161d = new HashMap();
-        f32162e = o0.k(v.a(UnsignedArrayType.UBYTEARRAY, Name.identifier("ubyteArrayOf")), v.a(UnsignedArrayType.USHORTARRAY, Name.identifier("ushortArrayOf")), v.a(UnsignedArrayType.UINTARRAY, Name.identifier("uintArrayOf")), v.a(UnsignedArrayType.ULONGARRAY, Name.identifier("ulongArrayOf")));
+        f32160b = CollectionsKt.l1(arrayList2);
+        f32161c = new HashMap();
+        f32162d = new HashMap();
+        f32163e = o0.k(v.a(UnsignedArrayType.UBYTEARRAY, Name.identifier("ubyteArrayOf")), v.a(UnsignedArrayType.USHORTARRAY, Name.identifier("ushortArrayOf")), v.a(UnsignedArrayType.UINTARRAY, Name.identifier("uintArrayOf")), v.a(UnsignedArrayType.ULONGARRAY, Name.identifier("ulongArrayOf")));
         UnsignedType[] values4 = UnsignedType.values();
         LinkedHashSet linkedHashSet = new LinkedHashSet();
         for (UnsignedType unsignedType2 : values4) {
             linkedHashSet.add(unsignedType2.getArrayClassId().getShortClassName());
         }
-        f32163f = linkedHashSet;
+        f32164f = linkedHashSet;
         for (UnsignedType unsignedType3 : UnsignedType.values()) {
-            f32160c.put(unsignedType3.getArrayClassId(), unsignedType3.getClassId());
-            f32161d.put(unsignedType3.getClassId(), unsignedType3.getArrayClassId());
+            f32161c.put(unsignedType3.getArrayClassId(), unsignedType3.getClassId());
+            f32162d.put(unsignedType3.getClassId(), unsignedType3.getArrayClassId());
         }
     }
 
@@ -74,28 +74,28 @@ public final class UnsignedTypes {
     }
 
     public static final boolean isUnsignedType(@NotNull KotlinType type) {
-        ClassifierDescriptor mo1202getDeclarationDescriptor;
+        ClassifierDescriptor mo1201getDeclarationDescriptor;
         Intrinsics.checkNotNullParameter(type, "type");
-        if (TypeUtils.noExpectedType(type) || (mo1202getDeclarationDescriptor = type.getConstructor().mo1202getDeclarationDescriptor()) == null) {
+        if (TypeUtils.noExpectedType(type) || (mo1201getDeclarationDescriptor = type.getConstructor().mo1201getDeclarationDescriptor()) == null) {
             return false;
         }
-        return INSTANCE.isUnsignedClass(mo1202getDeclarationDescriptor);
+        return INSTANCE.isUnsignedClass(mo1201getDeclarationDescriptor);
     }
 
     public final ClassId getUnsignedClassIdByArrayClassId(@NotNull ClassId arrayClassId) {
         Intrinsics.checkNotNullParameter(arrayClassId, "arrayClassId");
-        return (ClassId) f32160c.get(arrayClassId);
+        return (ClassId) f32161c.get(arrayClassId);
     }
 
     public final boolean isShortNameOfUnsignedArray(@NotNull Name name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        return f32163f.contains(name);
+        return f32164f.contains(name);
     }
 
     public final boolean isUnsignedClass(@NotNull DeclarationDescriptor descriptor) {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         DeclarationDescriptor containingDeclaration = descriptor.getContainingDeclaration();
-        if ((containingDeclaration instanceof PackageFragmentDescriptor) && Intrinsics.areEqual(((PackageFragmentDescriptor) containingDeclaration).getFqName(), StandardNames.BUILT_INS_PACKAGE_FQ_NAME) && f32158a.contains(descriptor.getName())) {
+        if ((containingDeclaration instanceof PackageFragmentDescriptor) && Intrinsics.areEqual(((PackageFragmentDescriptor) containingDeclaration).getFqName(), StandardNames.BUILT_INS_PACKAGE_FQ_NAME) && f32159a.contains(descriptor.getName())) {
             return true;
         }
         return false;

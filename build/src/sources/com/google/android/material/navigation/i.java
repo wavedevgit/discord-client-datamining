@@ -8,13 +8,13 @@ import androidx.appcompat.view.menu.m;
 public class i implements androidx.appcompat.view.menu.j {
 
     /* renamed from: d  reason: collision with root package name */
-    private h f16034d;
+    private h f16035d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f16035e = false;
+    private boolean f16036e = false;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f16036i;
+    private int f16037i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -22,10 +22,10 @@ public class i implements androidx.appcompat.view.menu.j {
         public static final Parcelable.Creator<a> CREATOR = new C0186a();
 
         /* renamed from: d  reason: collision with root package name */
-        int f16037d;
+        int f16038d;
 
         /* renamed from: e  reason: collision with root package name */
-        com.google.android.material.internal.g f16038e;
+        com.google.android.material.internal.g f16039e;
 
         /* renamed from: com.google.android.material.navigation.i$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -56,13 +56,13 @@ public class i implements androidx.appcompat.view.menu.j {
 
         @Override // android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
-            parcel.writeInt(this.f16037d);
-            parcel.writeParcelable(this.f16038e, 0);
+            parcel.writeInt(this.f16038d);
+            parcel.writeParcelable(this.f16039e, 0);
         }
 
         a(Parcel parcel) {
-            this.f16037d = parcel.readInt();
-            this.f16038e = (com.google.android.material.internal.g) parcel.readParcelable(getClass().getClassLoader());
+            this.f16038d = parcel.readInt();
+            this.f16039e = (com.google.android.material.internal.g) parcel.readParcelable(getClass().getClassLoader());
         }
     }
 
@@ -79,8 +79,8 @@ public class i implements androidx.appcompat.view.menu.j {
     public void d(Parcelable parcelable) {
         if (parcelable instanceof a) {
             a aVar = (a) parcelable;
-            this.f16034d.s(aVar.f16037d);
-            this.f16034d.q(dh.c.c(this.f16034d.getContext(), aVar.f16038e));
+            this.f16035d.s(aVar.f16038d);
+            this.f16035d.q(dh.c.c(this.f16035d.getContext(), aVar.f16039e));
         }
     }
 
@@ -92,26 +92,26 @@ public class i implements androidx.appcompat.view.menu.j {
     @Override // androidx.appcompat.view.menu.j
     public Parcelable f() {
         a aVar = new a();
-        aVar.f16037d = this.f16034d.getSelectedItemId();
-        aVar.f16038e = dh.c.d(this.f16034d.getBadgeDrawables());
+        aVar.f16038d = this.f16035d.getSelectedItemId();
+        aVar.f16039e = dh.c.d(this.f16035d.getBadgeDrawables());
         return aVar;
     }
 
     @Override // androidx.appcompat.view.menu.j
     public void g(boolean z10) {
-        if (this.f16035e) {
+        if (this.f16036e) {
             return;
         }
         if (z10) {
-            this.f16034d.d();
+            this.f16035d.d();
         } else {
-            this.f16034d.t();
+            this.f16035d.t();
         }
     }
 
     @Override // androidx.appcompat.view.menu.j
     public int getId() {
-        return this.f16036i;
+        return this.f16037i;
     }
 
     @Override // androidx.appcompat.view.menu.j
@@ -126,18 +126,18 @@ public class i implements androidx.appcompat.view.menu.j {
 
     @Override // androidx.appcompat.view.menu.j
     public void j(Context context, androidx.appcompat.view.menu.e eVar) {
-        this.f16034d.a(eVar);
+        this.f16035d.a(eVar);
     }
 
     public void k(int i10) {
-        this.f16036i = i10;
+        this.f16037i = i10;
     }
 
     public void l(h hVar) {
-        this.f16034d = hVar;
+        this.f16035d = hVar;
     }
 
     public void m(boolean z10) {
-        this.f16035e = z10;
+        this.f16036e = z10;
     }
 }

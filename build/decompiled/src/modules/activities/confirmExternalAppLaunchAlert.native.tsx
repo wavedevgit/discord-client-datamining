@@ -106,8 +106,79 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var _closure1_slot9 = var0;
-    var0 = function() {
+    var _closure1_slot10 = var0;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var6 = var5[var0];
+    var3 = arg3;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var6);
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.Image;
+    var _closure1_slot3 = var6;
+    var3 = var3.View;
+    var _closure1_slot4 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.PRIVATE_APPS_HELP_ARTICLE;
+    var _closure1_slot5 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var7 = var3.jsx;
+    var _closure1_slot6 = var7;
+    var3 = var3.jsxs;
+    var _closure1_slot7 = var3;
+    var3 = 4;
+    var3 = var5[var3];
+    var8 = var4.bind(var0)(var3);
+    var6 = var8.createStyles;
+    var3 = {};
+    var10 = 8;
+    var9 = {
+        'display': 'flex',
+        'alignItems': 'center',
+        'padding': 8
+    };
+    var3.alertContainer = var9;
+    var9 = {
+        'marginTop': 40,
+        'textAlign': 'center'
+    };
+    var3.alertEyebrowText = var9;
+    var9 = {
+        'marginTop': 16,
+        'textAlign': 'center'
+    };
+    var3.alertTitleText = var9;
+    var9 = {
+        'marginTop': 16,
+        'textAlign': 'center'
+    };
+    var3.alertSubtitleText = var9;
+    var9 = {
+        'width': 90,
+        'height': 100,
+        'position': 'absolute',
+        'top': 4294967230
+    };
+    var3.announcementBirb = var9;
+    var9 = {};
+    var9.marginTop = var10;
+    var3.link = var9;
+    var3 = var6.bind(var8)(var3);
+    var _closure1_slot8 = var3;
+    var6 = function() {
         var0 = _closure1_slot8;
         var3 = undefined;
         var7 = var0.bind(var3)();
@@ -163,78 +234,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var _closure1_slot10 = var0;
-    var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
     var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var3);
-    var0 = 0;
-    var6 = var5[var0];
-    var3 = arg3;
-    var0 = undefined;
-    var3 = var3.bind(var0)(var6);
-    var3 = 1;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.Image;
-    var _closure1_slot3 = var6;
-    var3 = var3.View;
-    var _closure1_slot4 = var3;
-    var3 = 2;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.PRIVATE_APPS_HELP_ARTICLE;
-    var _closure1_slot5 = var3;
-    var3 = 3;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var6 = var3.jsx;
-    var _closure1_slot6 = var6;
-    var3 = var3.jsxs;
-    var _closure1_slot7 = var3;
-    var3 = 4;
-    var3 = var5[var3];
-    var7 = var4.bind(var0)(var3);
-    var6 = var7.createStyles;
-    var3 = {};
-    var9 = 8;
-    var8 = {
-        'display': 'flex',
-        'alignItems': 'center',
-        'padding': 8
-    };
-    var3.alertContainer = var8;
-    var8 = {
-        'marginTop': 40,
-        'textAlign': 'center'
-    };
-    var3.alertEyebrowText = var8;
-    var8 = {
-        'marginTop': 16,
-        'textAlign': 'center'
-    };
-    var3.alertTitleText = var8;
-    var8 = {
-        'marginTop': 16,
-        'textAlign': 'center'
-    };
-    var3.alertSubtitleText = var8;
-    var8 = {
-        'width': 90,
-        'height': 100,
-        'position': 'absolute',
-        'top': 4294967230
-    };
-    var3.announcementBirb = var8;
-    var8 = {};
-    var8.marginTop = var9;
-    var3.link = var8;
-    var3 = var6.bind(var7)(var3);
-    var _closure1_slot8 = var3;
+    var3 = var7.bind(var0)(var6, var3);
+    var _closure1_slot9 = var3;
     var3 = 11;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -253,46 +255,43 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = _closure1_slot2;
         var0 = 10;
         var0 = var11[var0];
-        var8 = undefined;
-        var4 = var3.bind(var8)(var0);
+        var10 = undefined;
+        var4 = var3.bind(var10)(var0);
         var3 = var4.show;
         var0 = {};
-        var9 = '';
-        var0.title = var9;
+        var8 = '';
+        var0.title = var8;
         var12 = _closure1_slot6;
-        var10 = _closure1_slot9;
-        var9 = {};
-        var9.application = var13;
-        var9 = var12.bind(var8)(var10, var9);
-        var0.children = var9;
+        var9 = _closure1_slot10;
+        var8 = {};
+        var8.application = var13;
+        var8 = var12.bind(var10)(var9, var8);
+        var0.children = var8;
         var0.onConfirm = var6;
-        var10 = _closure1_slot0;
+        var9 = _closure1_slot0;
         var6 = 7;
-        var9 = var11[var6];
-        var9 = var10.bind(var8)(var9);
-        var13 = var9.intl;
+        var8 = var11[var6];
+        var8 = var9.bind(var10)(var8);
+        var13 = var8.intl;
         var12 = var13.string;
-        var9 = var11[var6];
-        var9 = var10.bind(var8)(var9);
-        var9 = var9.t;
-        var9 = var9["3PatSz"];
-        var9 = var12.bind(var13)(var9);
-        var0.confirmText = var9;
+        var8 = var11[var6];
+        var8 = var9.bind(var10)(var8);
+        var8 = var8.t;
+        var8 = var8["3PatSz"];
+        var8 = var12.bind(var13)(var8);
+        var0.confirmText = var8;
         var0.onCancel = var7;
         var7 = var11[var6];
-        var7 = var10.bind(var8)(var7);
-        var9 = var7.intl;
-        var7 = var9.string;
+        var7 = var9.bind(var10)(var7);
+        var8 = var7.intl;
+        var7 = var8.string;
         var6 = var11[var6];
-        var6 = var10.bind(var8)(var6);
+        var6 = var9.bind(var10)(var6);
         var6 = var6.t;
         var6 = var6["ETE/oC"];
-        var6 = var7.bind(var9)(var6);
+        var6 = var7.bind(var8)(var6);
         var0.cancelText = var6;
-        var7 = _closure1_slot6;
-        var6 = _closure1_slot10;
-        var5 = {};
-        var5 = var7.bind(var8)(var6, var5);
+        var5 = _closure1_slot9;
         var0.footer = var5;
         var0 = var3.bind(var4)(var0);
         var0 = var1.bind(var2)(var0);
@@ -300,4 +299,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.confirmExternalAppLaunchAlert = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3454, 33, 1297, 8031, 3938, 1234, 4883, 3146, 3998, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3454, 33, 1297, 8013, 3938, 1234, 4849, 3146, 3998, 2]);

@@ -9,75 +9,75 @@ public final class tk extends jf.a {
     public static final Parcelable.Creator<tk> CREATOR = new uk();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f47167d;
+    private final String f47168d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Rect f47168e;
+    private final Rect f47169e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final List f47169i;
+    private final List f47170i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f47170o;
+    private final String f47171o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final float f47171p;
+    private final float f47172p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final float f47172q;
+    private final float f47173q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final List f47173r;
+    private final List f47174r;
 
     public tk(String str, Rect rect, List list, String str2, float f10, float f11, List list2) {
-        this.f47167d = str;
-        this.f47168e = rect;
-        this.f47169i = list;
-        this.f47170o = str2;
-        this.f47171p = f10;
-        this.f47172q = f11;
-        this.f47173r = list2;
+        this.f47168d = str;
+        this.f47169e = rect;
+        this.f47170i = list;
+        this.f47171o = str2;
+        this.f47172p = f10;
+        this.f47173q = f11;
+        this.f47174r = list2;
     }
 
     public final float b() {
-        return this.f47172q;
+        return this.f47173q;
     }
 
     public final float c() {
-        return this.f47171p;
+        return this.f47172p;
     }
 
     public final Rect d() {
-        return this.f47168e;
+        return this.f47169e;
     }
 
     public final String e() {
-        return this.f47170o;
+        return this.f47171o;
     }
 
     public final String f() {
-        return this.f47167d;
+        return this.f47168d;
     }
 
     public final List g() {
-        return this.f47169i;
+        return this.f47170i;
     }
 
     public final List i() {
-        return this.f47173r;
+        return this.f47174r;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
-        String str = this.f47167d;
+        String str = this.f47168d;
         int a10 = jf.c.a(parcel);
         jf.c.s(parcel, 1, str, false);
-        jf.c.q(parcel, 2, this.f47168e, i10, false);
-        jf.c.w(parcel, 3, this.f47169i, false);
-        jf.c.s(parcel, 4, this.f47170o, false);
-        jf.c.j(parcel, 5, this.f47171p);
-        jf.c.j(parcel, 6, this.f47172q);
-        jf.c.w(parcel, 7, this.f47173r, false);
+        jf.c.q(parcel, 2, this.f47169e, i10, false);
+        jf.c.w(parcel, 3, this.f47170i, false);
+        jf.c.s(parcel, 4, this.f47171o, false);
+        jf.c.j(parcel, 5, this.f47172p);
+        jf.c.j(parcel, 6, this.f47173q);
+        jf.c.w(parcel, 7, this.f47174r, false);
         jf.c.b(parcel, a10);
     }
 }

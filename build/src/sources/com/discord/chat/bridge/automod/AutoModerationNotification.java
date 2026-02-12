@@ -116,29 +116,29 @@ public final class AutoModerationNotification {
         compositeEncoder.y(serialDescriptor, 2, autoModerationNotification.headerIconURL);
         compositeEncoder.w(serialDescriptor, 3, autoModerationNotification.headerIconColor);
         if (compositeEncoder.z(serialDescriptor, 4) || autoModerationNotification.subtitleLeft != null) {
-            compositeEncoder.o(serialDescriptor, 4, n2.f50032a, autoModerationNotification.subtitleLeft);
+            compositeEncoder.o(serialDescriptor, 4, n2.f50033a, autoModerationNotification.subtitleLeft);
         }
         if (compositeEncoder.z(serialDescriptor, 5) || autoModerationNotification.subtitleRight != null) {
-            compositeEncoder.o(serialDescriptor, 5, n2.f50032a, autoModerationNotification.subtitleRight);
+            compositeEncoder.o(serialDescriptor, 5, n2.f50033a, autoModerationNotification.subtitleRight);
         }
         if (compositeEncoder.z(serialDescriptor, 6) || autoModerationNotification.body != null) {
-            compositeEncoder.o(serialDescriptor, 6, n2.f50032a, autoModerationNotification.body);
+            compositeEncoder.o(serialDescriptor, 6, n2.f50033a, autoModerationNotification.body);
         }
         compositeEncoder.x(serialDescriptor, 7, autoModerationNotification.shouldShowActions);
         if (compositeEncoder.z(serialDescriptor, 8) || autoModerationNotification.enabledByUsername != null) {
-            compositeEncoder.o(serialDescriptor, 8, n2.f50032a, autoModerationNotification.enabledByUsername);
+            compositeEncoder.o(serialDescriptor, 8, n2.f50033a, autoModerationNotification.enabledByUsername);
         }
         if (compositeEncoder.z(serialDescriptor, 9) || autoModerationNotification.enabledByAvatarURL != null) {
-            compositeEncoder.o(serialDescriptor, 9, n2.f50032a, autoModerationNotification.enabledByAvatarURL);
+            compositeEncoder.o(serialDescriptor, 9, n2.f50033a, autoModerationNotification.enabledByAvatarURL);
         }
         if (compositeEncoder.z(serialDescriptor, 10) || autoModerationNotification.enabledByColor != null) {
-            compositeEncoder.o(serialDescriptor, 10, p0.f50048a, autoModerationNotification.enabledByColor);
+            compositeEncoder.o(serialDescriptor, 10, p0.f50049a, autoModerationNotification.enabledByColor);
         }
         if (compositeEncoder.z(serialDescriptor, 11) || autoModerationNotification.severity != null) {
-            compositeEncoder.o(serialDescriptor, 11, n2.f50032a, autoModerationNotification.severity);
+            compositeEncoder.o(serialDescriptor, 11, n2.f50033a, autoModerationNotification.severity);
         }
         if (compositeEncoder.z(serialDescriptor, 12) || autoModerationNotification.startTime != null) {
-            compositeEncoder.o(serialDescriptor, 12, n2.f50032a, autoModerationNotification.startTime);
+            compositeEncoder.o(serialDescriptor, 12, n2.f50033a, autoModerationNotification.startTime);
         }
     }
 

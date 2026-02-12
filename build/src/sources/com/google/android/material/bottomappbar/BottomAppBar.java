@@ -16,13 +16,13 @@ import java.lang.ref.WeakReference;
 public abstract class BottomAppBar extends Toolbar implements CoordinatorLayout.b {
 
     /* renamed from: i0  reason: collision with root package name */
-    private static final int f15286i0 = k.f6944s;
+    private static final int f15287i0 = k.f6944s;
 
     /* renamed from: j0  reason: collision with root package name */
-    private static final int f15287j0 = b.J;
+    private static final int f15288j0 = b.J;
 
     /* renamed from: k0  reason: collision with root package name */
-    private static final int f15288k0 = b.T;
+    private static final int f15289k0 = b.T;
 
     static /* synthetic */ void S(BottomAppBar bottomAppBar) {
         throw null;

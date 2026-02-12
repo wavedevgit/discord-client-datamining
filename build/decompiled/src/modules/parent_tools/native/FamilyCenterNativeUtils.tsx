@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/parent_tools/native/FamilyCenterNativeUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun82642: for (var _fun82642_ip = 0;;) switch (_fun82642_ip) {
+        _fun81478: for (var _fun81478_ip = 0;;) switch (_fun81478_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.match;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.bind(var2)(var0);
                 var0 = null;
                 if (!(var0 !== var2)) {
-                    _fun82642_ip = 183;
-                    continue _fun82642
+                    _fun81478_ip = 183;
+                    continue _fun81478
                 }
             case 30:
                 var1 = 1;
@@ -91,4 +91,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.handleFamilyCenterQRCodeScan = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4600, 660, 795, 4567, 10513, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4600, 660, 795, 4567, 10320, 1307, 2]);

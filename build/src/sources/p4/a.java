@@ -5,23 +5,23 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f41399a;
+    private final String f41400a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f41400b;
+    private final String f41401b;
 
     public a(String workSpecId, String prerequisiteId) {
         Intrinsics.checkNotNullParameter(workSpecId, "workSpecId");
         Intrinsics.checkNotNullParameter(prerequisiteId, "prerequisiteId");
-        this.f41399a = workSpecId;
-        this.f41400b = prerequisiteId;
+        this.f41400a = workSpecId;
+        this.f41401b = prerequisiteId;
     }
 
     public final String a() {
-        return this.f41400b;
+        return this.f41401b;
     }
 
     public final String b() {
-        return this.f41399a;
+        return this.f41400a;
     }
 }

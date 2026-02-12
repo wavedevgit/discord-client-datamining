@@ -14,7 +14,7 @@ import kotlin.ranges.IntRange;
 public final class j {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final j f21521a = new j();
+    public static final j f21522a = new j();
 
     private j() {
     }
@@ -39,7 +39,7 @@ public final class j {
 
     public static final int b(InputStream stream) {
         Intrinsics.checkNotNullParameter(stream, "stream");
-        j jVar = f21521a;
+        j jVar = f21522a;
         return (jVar.e(stream) << 8) | jVar.e(stream);
     }
 
@@ -71,7 +71,7 @@ public final class j {
         try {
             try {
                 stream.read(bArr);
-                jVar = f21521a;
+                jVar = f21522a;
             } catch (IOException e10) {
                 e10.printStackTrace();
             }

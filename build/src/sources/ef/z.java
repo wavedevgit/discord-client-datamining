@@ -11,40 +11,40 @@ import java.util.List;
 public final class z {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f22809a;
+    private final Context f22810a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f22810b;
+    private int f22811b;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f22811c = 0;
+    private int f22812c = 0;
 
     public z(Context context) {
-        this.f22809a = context;
+        this.f22810a = context;
     }
 
     public final synchronized int a() {
         PackageInfo packageInfo;
-        if (this.f22810b == 0) {
+        if (this.f22811b == 0) {
             try {
-                packageInfo = qf.c.a(this.f22809a).e("com.google.android.gms", 0);
+                packageInfo = qf.c.a(this.f22810a).e("com.google.android.gms", 0);
             } catch (PackageManager.NameNotFoundException e10) {
                 Log.w("Metadata", "Failed to find package ".concat(e10.toString()));
                 packageInfo = null;
             }
             if (packageInfo != null) {
-                this.f22810b = packageInfo.versionCode;
+                this.f22811b = packageInfo.versionCode;
             }
         }
-        return this.f22810b;
+        return this.f22811b;
     }
 
     public final synchronized int b() {
-        int i10 = this.f22811c;
+        int i10 = this.f22812c;
         if (i10 != 0) {
             return i10;
         }
-        Context context = this.f22809a;
+        Context context = this.f22810a;
         PackageManager packageManager = context.getPackageManager();
         if (qf.c.a(context).b("com.google.android.c2dm.permission.SEND", "com.google.android.gms") == -1) {
             Log.e("Metadata", "Google Play services missing or without correct permission.");
@@ -56,7 +56,7 @@ public final class z {
             intent.setPackage("com.google.android.gms");
             List<ResolveInfo> queryIntentServices = packageManager.queryIntentServices(intent, 0);
             if (queryIntentServices != null && !queryIntentServices.isEmpty()) {
-                this.f22811c = i11;
+                this.f22812c = i11;
                 return i11;
             }
         }
@@ -65,14 +65,14 @@ public final class z {
         List<ResolveInfo> queryBroadcastReceivers = packageManager.queryBroadcastReceivers(intent2, 0);
         if (queryBroadcastReceivers != null && !queryBroadcastReceivers.isEmpty()) {
             i11 = 2;
-            this.f22811c = i11;
+            this.f22812c = i11;
             return i11;
         }
         Log.w("Metadata", "Failed to resolve IID implementation package, falling back");
         if (true == com.google.android.gms.common.util.k.e()) {
             i11 = 2;
         }
-        this.f22811c = i11;
+        this.f22812c = i11;
         return i11;
     }
 }

@@ -11,36 +11,36 @@ import java.util.Map;
 public class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final e f15536a;
+    private final e f15537a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f15537b;
+    private final List f15538b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f15538c;
+    private final List f15539c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final float[] f15539d;
+    private final float[] f15540d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final float[] f15540e;
+    private final float[] f15541e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final float f15541f;
+    private final float f15542f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final float f15542g;
+    private final float f15543g;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f15543a;
+        static final /* synthetic */ int[] f15544a;
 
         static {
             int[] iArr = new int[c.a.values().length];
-            f15543a = iArr;
+            f15544a = iArr;
             try {
                 iArr[c.a.CONTAINED.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
@@ -49,15 +49,15 @@ public class f {
     }
 
     private f(e eVar, List list, List list2) {
-        this.f15536a = eVar;
-        this.f15537b = Collections.unmodifiableList(list);
-        this.f15538c = Collections.unmodifiableList(list2);
-        float f10 = ((e) list.get(list.size() - 1)).d().f15528a - eVar.d().f15528a;
-        this.f15541f = f10;
-        float f11 = eVar.k().f15528a - ((e) list2.get(list2.size() - 1)).k().f15528a;
-        this.f15542g = f11;
-        this.f15539d = m(f10, list, true);
-        this.f15540e = m(f11, list2, false);
+        this.f15537a = eVar;
+        this.f15538b = Collections.unmodifiableList(list);
+        this.f15539c = Collections.unmodifiableList(list2);
+        float f10 = ((e) list.get(list.size() - 1)).d().f15529a - eVar.d().f15529a;
+        this.f15542f = f10;
+        float f11 = eVar.k().f15529a - ((e) list2.get(list2.size() - 1)).k().f15529a;
+        this.f15543g = f11;
+        this.f15540d = m(f10, list, true);
+        this.f15541e = m(f11, list2, false);
     }
 
     private e a(List list, float f10, float[] fArr) {
@@ -70,7 +70,7 @@ public class f {
 
     private static int b(e eVar, float f10) {
         for (int j10 = eVar.j(); j10 < eVar.h().size(); j10++) {
-            if (f10 == ((e.c) eVar.h().get(j10)).f15530c) {
+            if (f10 == ((e.c) eVar.h().get(j10)).f15531c) {
                 return j10;
             }
         }
@@ -79,7 +79,7 @@ public class f {
 
     private static int c(e eVar) {
         for (int i10 = 0; i10 < eVar.h().size(); i10++) {
-            if (!((e.c) eVar.h().get(i10)).f15532e) {
+            if (!((e.c) eVar.h().get(i10)).f15533e) {
                 return i10;
             }
         }
@@ -88,7 +88,7 @@ public class f {
 
     private static int d(e eVar, float f10) {
         for (int c10 = eVar.c() - 1; c10 >= 0; c10--) {
-            if (f10 == ((e.c) eVar.h().get(c10)).f15530c) {
+            if (f10 == ((e.c) eVar.h().get(c10)).f15531c) {
                 return c10;
             }
         }
@@ -97,7 +97,7 @@ public class f {
 
     private static int e(e eVar) {
         for (int size = eVar.h().size() - 1; size >= 0; size--) {
-            if (!((e.c) eVar.h().get(size)).f15532e) {
+            if (!((e.c) eVar.h().get(size)).f15533e) {
                 return size;
             }
         }
@@ -119,9 +119,9 @@ public class f {
             e eVar = (e) list.get(i11);
             e eVar2 = (e) list.get(i10);
             if (z10) {
-                f11 = eVar2.d().f15528a - eVar.d().f15528a;
+                f11 = eVar2.d().f15529a - eVar.d().f15529a;
             } else {
-                f11 = eVar.k().f15528a - eVar2.k().f15528a;
+                f11 = eVar.k().f15529a - eVar2.k().f15529a;
             }
             float f13 = f11 / f10;
             if (i10 == size - 1) {
@@ -148,9 +148,9 @@ public class f {
         int i11 = b10;
         if (!r(aVar, eVar) && e10 != -1) {
             int j10 = e10 - eVar.j();
-            float f12 = eVar.d().f15529b - (eVar.d().f15531d / 2.0f);
-            if (j10 <= 0 && eVar.i().f15533f > 0.0f) {
-                arrayList.add(x(eVar, (f12 - eVar.i().f15533f) - f11, i11));
+            float f12 = eVar.d().f15530b - (eVar.d().f15532d / 2.0f);
+            if (j10 <= 0 && eVar.i().f15534f > 0.0f) {
+                arrayList.add(x(eVar, (f12 - eVar.i().f15534f) - f11, i11));
                 return arrayList;
             }
             float f13 = 0.0f;
@@ -158,10 +158,10 @@ public class f {
             while (i12 < j10) {
                 e eVar2 = (e) arrayList.get(arrayList.size() - 1);
                 int i13 = e10 - i12;
-                float f14 = f13 + ((e.c) eVar.h().get(i13)).f15533f;
+                float f14 = f13 + ((e.c) eVar.h().get(i13)).f15534f;
                 int i14 = i13 + 1;
                 if (i14 < eVar.h().size()) {
-                    i10 = d(eVar2, ((e.c) eVar.h().get(i14)).f15530c) + 1;
+                    i10 = d(eVar2, ((e.c) eVar.h().get(i14)).f15531c) + 1;
                 } else {
                     i10 = 0;
                 }
@@ -210,9 +210,9 @@ public class f {
         int i10 = b10;
         if (!q(eVar) && c10 != -1) {
             int c11 = eVar.c() - c10;
-            float f12 = eVar.d().f15529b - (eVar.d().f15531d / 2.0f);
-            if (c11 <= 0 && eVar.b().f15533f > 0.0f) {
-                arrayList.add(x(eVar, f12 + eVar.b().f15533f + f11, i10));
+            float f12 = eVar.d().f15530b - (eVar.d().f15532d / 2.0f);
+            if (c11 <= 0 && eVar.b().f15534f > 0.0f) {
+                arrayList.add(x(eVar, f12 + eVar.b().f15534f + f11, i10));
                 return arrayList;
             }
             float f13 = 0.0f;
@@ -220,10 +220,10 @@ public class f {
                 e eVar2 = (e) arrayList.get(arrayList.size() - 1);
                 int i12 = c10 + i11;
                 int size = eVar.h().size() - 1;
-                f13 += ((e.c) eVar.h().get(i12)).f15533f;
+                f13 += ((e.c) eVar.h().get(i12)).f15534f;
                 int i13 = i12 - 1;
                 if (i13 >= 0) {
-                    size = b(eVar2, ((e.c) eVar.h().get(i13)).f15530c) - 1;
+                    size = b(eVar2, ((e.c) eVar.h().get(i13)).f15531c) - 1;
                 }
                 int i14 = i10;
                 e t10 = t(eVar2, c10, size, f12 + f13, (eVar.c() - i11) - 1, (eVar.j() - i11) - 1, i14);
@@ -240,7 +240,7 @@ public class f {
     }
 
     private static boolean q(e eVar) {
-        if (eVar.b().f15529b - (eVar.b().f15531d / 2.0f) >= 0.0f && eVar.b() == eVar.e()) {
+        if (eVar.b().f15530b - (eVar.b().f15532d / 2.0f) >= 0.0f && eVar.b() == eVar.e()) {
             return true;
         }
         return false;
@@ -251,7 +251,7 @@ public class f {
         if (aVar.d()) {
             b10 = aVar.a();
         }
-        if (eVar.i().f15529b + (eVar.i().f15531d / 2.0f) <= b10 && eVar.i() == eVar.l()) {
+        if (eVar.i().f15530b + (eVar.i().f15532d / 2.0f) <= b10 && eVar.i() == eVar.l()) {
             return true;
         }
         return false;
@@ -269,21 +269,21 @@ public class f {
         e.b bVar = new e.b(eVar.g(), i14);
         for (int i15 = 0; i15 < arrayList.size(); i15++) {
             e.c cVar = (e.c) arrayList.get(i15);
-            float f11 = cVar.f15531d;
+            float f11 = cVar.f15532d;
             float f12 = f10 + (f11 / 2.0f);
             if (i15 >= i12 && i15 <= i13) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            bVar.e(f12, cVar.f15530c, f11, z10, cVar.f15532e, cVar.f15533f);
-            f10 += cVar.f15531d;
+            bVar.e(f12, cVar.f15531c, f11, z10, cVar.f15533e, cVar.f15534f);
+            f10 += cVar.f15532d;
         }
         return bVar.i();
     }
 
     private static e u(e eVar, float f10, int i10, boolean z10, float f11, c.a aVar) {
-        if (a.f15543a[aVar.ordinal()] != 1) {
+        if (a.f15544a[aVar.ordinal()] != 1) {
             return w(eVar, f10, i10, z10);
         }
         return v(eVar, f10, i10, z10, f11);
@@ -305,19 +305,19 @@ public class f {
         float f15 = f12;
         for (int i11 = 0; i11 < arrayList.size(); i11++) {
             e.c cVar = (e.c) arrayList.get(i11);
-            if (cVar.f15532e) {
-                bVar.e(cVar.f15529b, cVar.f15530c, cVar.f15531d, false, true, cVar.f15533f);
+            if (cVar.f15533e) {
+                bVar.e(cVar.f15530b, cVar.f15531c, cVar.f15532d, false, true, cVar.f15534f);
             } else {
                 if (i11 >= eVar.c() && i11 <= eVar.j()) {
                     z11 = true;
                 } else {
                     z11 = false;
                 }
-                float f16 = cVar.f15531d - m10;
+                float f16 = cVar.f15532d - m10;
                 float b10 = c.b(f16, eVar.g(), f11);
                 float f17 = (f16 / 2.0f) + f15;
-                float abs = Math.abs(f17 - cVar.f15529b);
-                float f18 = cVar.f15533f;
+                float abs = Math.abs(f17 - cVar.f15530b);
+                float f18 = cVar.f15534f;
                 if (z10) {
                     f13 = abs;
                 } else {
@@ -353,10 +353,10 @@ public class f {
         int i11 = 0;
         while (i11 < arrayList.size()) {
             e.c cVar = (e.c) arrayList.get(i11);
-            if (cVar.f15532e && i11 == size) {
-                bVar.e(cVar.f15529b, cVar.f15530c, cVar.f15531d, false, true, cVar.f15533f);
+            if (cVar.f15533e && i11 == size) {
+                bVar.e(cVar.f15530b, cVar.f15531c, cVar.f15532d, false, true, cVar.f15534f);
             } else {
-                float f14 = cVar.f15529b;
+                float f14 = cVar.f15530b;
                 if (z10) {
                     f11 = f14 + f10;
                 } else {
@@ -378,9 +378,9 @@ public class f {
                     z11 = false;
                 }
                 float f15 = f11;
-                float f16 = cVar.f15530c;
-                float f17 = cVar.f15531d;
-                boolean z13 = cVar.f15532e;
+                float f16 = cVar.f15531c;
+                float f17 = cVar.f15532d;
+                boolean z13 = cVar.f15533e;
                 if (z10) {
                     min = Math.max(0.0f, ((f17 / 2.0f) + f15) - i10);
                 } else {
@@ -400,12 +400,12 @@ public class f {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e g() {
-        return this.f15536a;
+        return this.f15537a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e h() {
-        List list = this.f15538c;
+        List list = this.f15539c;
         return (e) list.get(list.size() - 1);
     }
 
@@ -414,7 +414,7 @@ public class f {
         int i13;
         int i14;
         int i15;
-        float g10 = this.f15536a.g();
+        float g10 = this.f15537a.g();
         HashMap hashMap = new HashMap();
         int i16 = 0;
         int i17 = 0;
@@ -432,9 +432,9 @@ public class f {
             if (!z10) {
                 i18 = 1;
             }
-            if (f10 * i18 > i12 - this.f15542g || i16 >= i10 - this.f15538c.size()) {
+            if (f10 * i18 > i12 - this.f15543g || i16 >= i10 - this.f15539c.size()) {
                 Integer valueOf = Integer.valueOf(i15);
-                List list = this.f15538c;
+                List list = this.f15539c;
                 hashMap.put(valueOf, (e) list.get(u1.a.b(i17, 0, list.size() - 1)));
                 i17++;
             }
@@ -453,9 +453,9 @@ public class f {
             } else {
                 i14 = 1;
             }
-            if (f11 * i14 < i11 + this.f15541f || i20 < this.f15537b.size()) {
+            if (f11 * i14 < i11 + this.f15542f || i20 < this.f15538b.size()) {
                 Integer valueOf2 = Integer.valueOf(i13);
-                List list2 = this.f15537b;
+                List list2 = this.f15538b;
                 hashMap.put(valueOf2, (e) list2.get(u1.a.b(i19, 0, list2.size() - 1)));
                 i19++;
             }
@@ -471,26 +471,26 @@ public class f {
         float b10;
         List list;
         float[] fArr;
-        float f13 = this.f15541f + f11;
-        float f14 = f12 - this.f15542g;
-        float f15 = l().b().f15534g;
-        float f16 = h().b().f15535h;
-        if (this.f15541f == f15) {
+        float f13 = this.f15542f + f11;
+        float f14 = f12 - this.f15543g;
+        float f15 = l().b().f15535g;
+        float f16 = h().b().f15536h;
+        if (this.f15542f == f15) {
             f13 += f15;
         }
-        if (this.f15542g == f16) {
+        if (this.f15543g == f16) {
             f14 -= f16;
         }
         if (f10 < f13) {
             b10 = ch.a.b(1.0f, 0.0f, f11, f13, f10);
-            list = this.f15537b;
-            fArr = this.f15539d;
+            list = this.f15538b;
+            fArr = this.f15540d;
         } else if (f10 > f14) {
             b10 = ch.a.b(0.0f, 1.0f, f14, f12, f10);
-            list = this.f15538c;
-            fArr = this.f15540e;
+            list = this.f15539c;
+            fArr = this.f15541e;
         } else {
-            return this.f15536a;
+            return this.f15537a;
         }
         if (z10) {
             return a(list, b10, fArr);
@@ -500,7 +500,7 @@ public class f {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e l() {
-        List list = this.f15537b;
+        List list = this.f15538b;
         return (e) list.get(list.size() - 1);
     }
 }

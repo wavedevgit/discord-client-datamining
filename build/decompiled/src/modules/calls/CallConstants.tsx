@@ -113,15 +113,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.VoicePlatforms = var8;
     var2.CallMenuEntrypoint = var7;
     var7 = function arg0() {
-        _fun31276: for (var _fun31276_ip = 0;;) switch (_fun31276_ip) {
+        _fun31298: for (var _fun31298_ip = 0;;) switch (_fun31298_ip) {
             case 0:
                 var3 = arg0;
                 var4 = null;
                 var0 = var4 == var3;
                 var5 = undefined;
                 if (var0) {
-                    _fun31276_ip = 19;
-                    continue _fun31276
+                    _fun31298_ip = 19;
+                    continue _fun31298
                 }
             case 14:
                 var5 = var3.type;
@@ -130,15 +130,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.STREAM;
                 var0 = var5 === var0;
                 if (var0) {
-                    _fun31276_ip = 67;
-                    continue _fun31276
+                    _fun31298_ip = 67;
+                    continue _fun31298
                 }
             case 39:
                 var4 = var4 == var3;
                 var2 = undefined;
                 if (var4) {
-                    _fun31276_ip = 53;
-                    continue _fun31276
+                    _fun31298_ip = 53;
+                    continue _fun31298
                 }
             case 48:
                 var2 = var3.type;
@@ -152,15 +152,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isStreamParticipant = var7;
     var7 = function arg0() {
-        _fun31277: for (var _fun31277_ip = 0;;) switch (_fun31277_ip) {
+        _fun31299: for (var _fun31299_ip = 0;;) switch (_fun31299_ip) {
             case 0:
                 var0 = arg0;
                 var1 = null;
                 var2 = var1 == var0;
                 var1 = undefined;
                 if (var2) {
-                    _fun31277_ip = 19;
-                    continue _fun31277
+                    _fun31299_ip = 19;
+                    continue _fun31299
                 }
             case 14:
                 var1 = var0.type;
@@ -173,15 +173,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isUserParticipant = var7;
     var6 = function arg0() {
-        _fun31278: for (var _fun31278_ip = 0;;) switch (_fun31278_ip) {
+        _fun31300: for (var _fun31300_ip = 0;;) switch (_fun31300_ip) {
             case 0:
                 var0 = arg0;
                 var1 = null;
                 var2 = var1 == var0;
                 var1 = undefined;
                 if (var2) {
-                    _fun31278_ip = 19;
-                    continue _fun31278
+                    _fun31300_ip = 19;
+                    continue _fun31300
                 }
             case 14:
                 var1 = var0.type;

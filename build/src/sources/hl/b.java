@@ -6,55 +6,55 @@ import java.util.Arrays;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final byte[][] f27411a;
+    private final byte[][] f27412a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f27412b;
+    private final int f27413b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f27413c;
+    private final int f27414c;
 
     public b(int i10, int i11) {
-        this.f27411a = (byte[][]) Array.newInstance(Byte.TYPE, i11, i10);
-        this.f27412b = i10;
-        this.f27413c = i11;
+        this.f27412a = (byte[][]) Array.newInstance(Byte.TYPE, i11, i10);
+        this.f27413b = i10;
+        this.f27414c = i11;
     }
 
     public void a(byte b10) {
-        for (byte[] bArr : this.f27411a) {
+        for (byte[] bArr : this.f27412a) {
             Arrays.fill(bArr, b10);
         }
     }
 
     public byte b(int i10, int i11) {
-        return this.f27411a[i11][i10];
+        return this.f27412a[i11][i10];
     }
 
     public byte[][] c() {
-        return this.f27411a;
+        return this.f27412a;
     }
 
     public int d() {
-        return this.f27413c;
+        return this.f27414c;
     }
 
     public int e() {
-        return this.f27412b;
+        return this.f27413b;
     }
 
     public void f(int i10, int i11, int i12) {
-        this.f27411a[i11][i10] = (byte) i12;
+        this.f27412a[i11][i10] = (byte) i12;
     }
 
     public void g(int i10, int i11, boolean z10) {
-        this.f27411a[i11][i10] = z10 ? (byte) 1 : (byte) 0;
+        this.f27412a[i11][i10] = z10 ? (byte) 1 : (byte) 0;
     }
 
     public String toString() {
-        StringBuilder sb2 = new StringBuilder((this.f27412b * 2 * this.f27413c) + 2);
-        for (int i10 = 0; i10 < this.f27413c; i10++) {
-            byte[] bArr = this.f27411a[i10];
-            for (int i11 = 0; i11 < this.f27412b; i11++) {
+        StringBuilder sb2 = new StringBuilder((this.f27413b * 2 * this.f27414c) + 2);
+        for (int i10 = 0; i10 < this.f27414c; i10++) {
+            byte[] bArr = this.f27412a[i10];
+            for (int i11 = 0; i11 < this.f27413b; i11++) {
                 byte b10 = bArr[i11];
                 if (b10 != 0) {
                     if (b10 != 1) {

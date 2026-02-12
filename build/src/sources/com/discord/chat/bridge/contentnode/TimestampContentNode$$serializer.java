@@ -38,8 +38,8 @@ public /* synthetic */ class TimestampContentNode$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50032a;
-        return new KSerializer[]{z0.f50106a, n2Var, n2Var};
+        n2 n2Var = n2.f50033a;
+        return new KSerializer[]{z0.f50107a, n2Var, n2Var};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

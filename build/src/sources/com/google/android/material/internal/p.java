@@ -19,19 +19,19 @@ public abstract class p {
     class a implements w {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ c f15933d;
+        final /* synthetic */ c f15934d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ d f15934e;
+        final /* synthetic */ d f15935e;
 
         a(c cVar, d dVar) {
-            this.f15933d = cVar;
-            this.f15934e = dVar;
+            this.f15934d = cVar;
+            this.f15935e = dVar;
         }
 
         @Override // androidx.core.view.w
         public WindowInsetsCompat a(View view, WindowInsetsCompat windowInsetsCompat) {
-            return this.f15933d.a(view, windowInsetsCompat, new d(this.f15934e));
+            return this.f15934d.a(view, windowInsetsCompat, new d(this.f15935e));
         }
     }
 
@@ -162,33 +162,33 @@ public abstract class p {
     public static class d {
 
         /* renamed from: a  reason: collision with root package name */
-        public int f15935a;
+        public int f15936a;
 
         /* renamed from: b  reason: collision with root package name */
-        public int f15936b;
+        public int f15937b;
 
         /* renamed from: c  reason: collision with root package name */
-        public int f15937c;
+        public int f15938c;
 
         /* renamed from: d  reason: collision with root package name */
-        public int f15938d;
+        public int f15939d;
 
         public d(int i10, int i11, int i12, int i13) {
-            this.f15935a = i10;
-            this.f15936b = i11;
-            this.f15937c = i12;
-            this.f15938d = i13;
+            this.f15936a = i10;
+            this.f15937b = i11;
+            this.f15938c = i12;
+            this.f15939d = i13;
         }
 
         public void a(View view) {
-            view.setPaddingRelative(this.f15935a, this.f15936b, this.f15937c, this.f15938d);
+            view.setPaddingRelative(this.f15936a, this.f15937b, this.f15938c, this.f15939d);
         }
 
         public d(d dVar) {
-            this.f15935a = dVar.f15935a;
-            this.f15936b = dVar.f15936b;
-            this.f15937c = dVar.f15937c;
-            this.f15938d = dVar.f15938d;
+            this.f15936a = dVar.f15936a;
+            this.f15937b = dVar.f15937b;
+            this.f15938c = dVar.f15938c;
+            this.f15939d = dVar.f15939d;
         }
     }
 }

@@ -3,5 +3,5 @@ package com.google.android.gms.common;
 public abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f14504a = 2131951710;
+    public static int f14505a = 2131951710;
 }

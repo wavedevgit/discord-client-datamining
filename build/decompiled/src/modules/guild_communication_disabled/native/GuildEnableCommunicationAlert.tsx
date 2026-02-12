@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_communication_disabled/native/GuildEnableCommunicationAlert.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun79976: for (var _fun79976_ip = 0;;) switch (_fun79976_ip) {
+        _fun70161: for (var _fun70161_ip = 0;;) switch (_fun70161_ip) {
             case 0:
                 var3 = arg0;
                 var23 = var3.guildId;
@@ -156,13 +156,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = undefined;
                     var1 = function*() { // Environment: var0
                         var0 = function*() { // Original name: ?anon_0_, environment: var0
-                            _fun79980: for (var _fun79980_ip = 0;;) switch (_fun79980_ip) {
+                            _fun70165: for (var _fun70165_ip = 0;;) switch (_fun70165_ip) {
                                 case 0:
                                     StartGenerator();
                                     ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                     if (var1) {
-                                        _fun79980_ip = 190;
-                                        continue _fun79980
+                                        _fun70165_ip = 190;
+                                        continue _fun70165
                                     }
                                 case 10:
                                     var3 = _closure1_slot1;
@@ -181,8 +181,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 case 62:
                                     ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                                     if (var3) {
-                                        _fun79980_ip = 187;
-                                        continue _fun79980
+                                        _fun70165_ip = 187;
+                                        continue _fun70165
                                     }
                                 case 68:
                                     var7 = _closure1_slot1;
@@ -273,8 +273,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var19 == var4;
                 var7 = undefined;
                 if (var8) {
-                    _fun79976_ip = 340;
-                    continue _fun79976
+                    _fun70161_ip = 340;
+                    continue _fun70161
                 }
             case 334:
                 var7 = var4.onClose;
@@ -334,23 +334,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = var19 != var20;
                 var19 = '';
                 if (!var21) {
-                    _fun79976_ip = 588;
-                    continue _fun79976
+                    _fun70161_ip = 588;
+                    continue _fun70161
                 }
             case 585:
                 var19 = var20;
             case 588:
                 var10.username = var19;
                 var18 = function() {
-                    _fun79982: for (var _fun79982_ip = 0;;) switch (_fun79982_ip) {
+                    _fun70167: for (var _fun70167_ip = 0;;) switch (_fun70167_ip) {
                         case 0:
                             var1 = _closure2_slot3;
                             var0 = null;
                             var0 = var0 != var1;
                             var4 = 0;
                             if (!var0) {
-                                _fun79982_ip = 50;
-                                continue _fun79982
+                                _fun70167_ip = 50;
+                                continue _fun70167
                             }
                         case 18:
                             var0 = global;
@@ -430,4 +430,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 27, 1621, 1685, 660, 33, 1297, 6910, 4109, 795, 10140, 3150, 1234, 8003, 3934, 3938, 3956, 9194, 5393, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 27, 1621, 1685, 660, 33, 1297, 6926, 4109, 795, 8679, 3150, 1234, 7985, 3934, 3938, 3956, 8692, 5384, 2]);

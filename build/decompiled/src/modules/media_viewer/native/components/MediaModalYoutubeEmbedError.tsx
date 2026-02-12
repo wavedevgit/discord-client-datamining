@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var11 = metroImportDefault;
+    var12 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var11;
+    var _closure1_slot1 = var12;
     var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -29,48 +29,57 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var7 = var3.jsx;
-    var _closure1_slot4 = var7;
+    var8 = var3.jsx;
+    var _closure1_slot4 = var8;
     var3 = var3.jsxs;
     var _closure1_slot5 = var3;
     var3 = 3;
     var3 = var5[var3];
-    var8 = var4.bind(var0)(var3);
-    var7 = var8.createStyles;
+    var9 = var4.bind(var0)(var3);
+    var7 = var9.createStyles;
     var3 = {};
-    var9 = {
+    var10 = {
         'backgroundColor': null,
         'padding': null,
         'justifyContent': 'center',
         'alignItems': 'center',
         'flex': 1
     };
-    var10 = 4;
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.colors;
-    var12 = var12.VOICE_VIDEO_VIDEO_TILE_BACKGROUND;
-    var9.backgroundColor = var12;
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.spacing;
-    var12 = var12.PX_32;
-    var9.padding = var12;
-    var3.container = var9;
-    var9 = {};
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.spacing;
-    var12 = var12.PX_8;
-    var9.marginBottom = var12;
-    var10 = var5[var10];
-    var10 = var11.bind(var0)(var10);
-    var10 = var10.spacing;
-    var10 = var10.PX_16;
-    var9.marginTop = var10;
-    var3.text = var9;
-    var3 = var7.bind(var8)(var3);
+    var11 = 4;
+    var13 = var5[var11];
+    var13 = var12.bind(var0)(var13);
+    var13 = var13.colors;
+    var13 = var13.VOICE_VIDEO_VIDEO_TILE_BACKGROUND;
+    var10.backgroundColor = var13;
+    var13 = var5[var11];
+    var13 = var12.bind(var0)(var13);
+    var13 = var13.spacing;
+    var13 = var13.PX_32;
+    var10.padding = var13;
+    var3.container = var10;
+    var10 = {};
+    var13 = var5[var11];
+    var13 = var12.bind(var0)(var13);
+    var13 = var13.spacing;
+    var13 = var13.PX_8;
+    var10.marginBottom = var13;
+    var11 = var5[var11];
+    var11 = var12.bind(var0)(var11);
+    var11 = var11.spacing;
+    var11 = var11.PX_16;
+    var10.marginTop = var11;
+    var3.text = var10;
+    var3 = var7.bind(var9)(var3);
     var _closure1_slot6 = var3;
+    var3 = 5;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var7 = var3.StreamFailed;
+    var3 = {};
+    var9 = 'contain';
+    var3.resizeMode = var9;
+    var3 = var8.bind(var0)(var7, var3);
+    var _closure1_slot7 = var3;
     var3 = var6.memo;
     var1 = function arg0() {
         var0 = arg0;
@@ -82,21 +91,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = _closure1_slot5;
         var1 = _closure1_slot3;
         var0 = {};
-        var5 = var9.container;
-        var0.style = var5;
+        var4 = var9.container;
+        var0.style = var4;
+        var6 = _closure1_slot7;
+        var4 = new Array(3);
+        var4[0] = var6;
         var7 = _closure1_slot4;
         var12 = _closure1_slot0;
         var13 = _closure1_slot2;
-        var4 = 5;
-        var4 = var13[var4];
-        var4 = var12.bind(var3)(var4);
-        var5 = var4.StreamFailed;
-        var4 = {};
-        var6 = 'contain';
-        var4.resizeMode = var6;
-        var5 = var7.bind(var3)(var5, var4);
-        var4 = new Array(3);
-        var4[0] = var5;
         var5 = 6;
         var5 = var13[var5];
         var5 = var12.bind(var3)(var5);
@@ -174,4 +176,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 8066, 3938, 1234, 4090, 3146, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 8138, 3938, 1234, 4090, 3146, 2]);

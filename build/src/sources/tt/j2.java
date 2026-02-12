@@ -8,24 +8,24 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 public final class j2 implements SerialDescriptor, l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final SerialDescriptor f50011a;
+    private final SerialDescriptor f50012a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f50012b;
+    private final String f50013b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Set f50013c;
+    private final Set f50014c;
 
     public j2(SerialDescriptor original) {
         Intrinsics.checkNotNullParameter(original, "original");
-        this.f50011a = original;
-        this.f50012b = original.h() + '?';
-        this.f50013c = u1.a(original);
+        this.f50012a = original;
+        this.f50013b = original.h() + '?';
+        this.f50014c = u1.a(original);
     }
 
     @Override // tt.l
     public Set a() {
-        return this.f50013c;
+        return this.f50014c;
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
@@ -36,24 +36,24 @@ public final class j2 implements SerialDescriptor, l {
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public int c(String name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        return this.f50011a.c(name);
+        return this.f50012a.c(name);
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public int d() {
-        return this.f50011a.d();
+        return this.f50012a.d();
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public String e(int i10) {
-        return this.f50011a.e(i10);
+        return this.f50012a.e(i10);
     }
 
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof j2) && Intrinsics.areEqual(this.f50011a, ((j2) obj).f50011a)) {
+        if ((obj instanceof j2) && Intrinsics.areEqual(this.f50012a, ((j2) obj).f50012a)) {
             return true;
         }
         return false;
@@ -61,50 +61,50 @@ public final class j2 implements SerialDescriptor, l {
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public List f(int i10) {
-        return this.f50011a.f(i10);
+        return this.f50012a.f(i10);
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public SerialDescriptor g(int i10) {
-        return this.f50011a.g(i10);
+        return this.f50012a.g(i10);
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public List getAnnotations() {
-        return this.f50011a.getAnnotations();
+        return this.f50012a.getAnnotations();
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public st.k getKind() {
-        return this.f50011a.getKind();
+        return this.f50012a.getKind();
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public String h() {
-        return this.f50012b;
+        return this.f50013b;
     }
 
     public int hashCode() {
-        return this.f50011a.hashCode() * 31;
+        return this.f50012a.hashCode() * 31;
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public boolean i(int i10) {
-        return this.f50011a.i(i10);
+        return this.f50012a.i(i10);
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public boolean isInline() {
-        return this.f50011a.isInline();
+        return this.f50012a.isInline();
     }
 
     public final SerialDescriptor j() {
-        return this.f50011a;
+        return this.f50012a;
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder();
-        sb2.append(this.f50011a);
+        sb2.append(this.f50012a);
         sb2.append('?');
         return sb2.toString();
     }

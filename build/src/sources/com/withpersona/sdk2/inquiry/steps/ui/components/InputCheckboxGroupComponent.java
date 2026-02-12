@@ -25,22 +25,22 @@ public final class InputCheckboxGroupComponent implements k5, v, e0, b5 {
     public static final Parcelable.Creator<InputCheckboxGroupComponent> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f20635d;
+    private final String f20636d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Set f20636e;
+    private final Set f20637e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f20637i;
+    private final JsonLogicBoolean f20638i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final JsonLogicBoolean f20638o;
+    private final JsonLogicBoolean f20639o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final List f20639p;
+    private final List f20640p;
 
     /* renamed from: q  reason: collision with root package name */
-    private l f20640q;
+    private l f20641q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -67,26 +67,26 @@ public final class InputCheckboxGroupComponent implements k5, v, e0, b5 {
     public InputCheckboxGroupComponent(String name, Set value, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f20635d = name;
-        this.f20636e = value;
-        this.f20637i = jsonLogicBoolean;
-        this.f20638o = jsonLogicBoolean2;
-        this.f20639p = new ArrayList();
-        this.f20640q = new l(value);
+        this.f20636d = name;
+        this.f20637e = value;
+        this.f20638i = jsonLogicBoolean;
+        this.f20639o = jsonLogicBoolean2;
+        this.f20640p = new ArrayList();
+        this.f20641q = new l(value);
     }
 
     public static /* synthetic */ InputCheckboxGroupComponent e(InputCheckboxGroupComponent inputCheckboxGroupComponent, String str, Set set, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = inputCheckboxGroupComponent.f20635d;
+            str = inputCheckboxGroupComponent.f20636d;
         }
         if ((i10 & 2) != 0) {
-            set = inputCheckboxGroupComponent.f20636e;
+            set = inputCheckboxGroupComponent.f20637e;
         }
         if ((i10 & 4) != 0) {
-            jsonLogicBoolean = inputCheckboxGroupComponent.f20637i;
+            jsonLogicBoolean = inputCheckboxGroupComponent.f20638i;
         }
         if ((i10 & 8) != 0) {
-            jsonLogicBoolean2 = inputCheckboxGroupComponent.f20638o;
+            jsonLogicBoolean2 = inputCheckboxGroupComponent.f20639o;
         }
         return inputCheckboxGroupComponent.c(str, set, jsonLogicBoolean, jsonLogicBoolean2);
     }
@@ -97,7 +97,7 @@ public final class InputCheckboxGroupComponent implements k5, v, e0, b5 {
 
     @Override // pq.b5
     public l b() {
-        return this.f20640q;
+        return this.f20641q;
     }
 
     public final InputCheckboxGroupComponent c(String name, Set value, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2) {
@@ -108,7 +108,7 @@ public final class InputCheckboxGroupComponent implements k5, v, e0, b5 {
 
     @Override // pq.e0
     public List d() {
-        return this.f20639p;
+        return this.f20640p;
     }
 
     @Override // android.os.Parcelable
@@ -122,40 +122,40 @@ public final class InputCheckboxGroupComponent implements k5, v, e0, b5 {
         }
         if (obj instanceof InputCheckboxGroupComponent) {
             InputCheckboxGroupComponent inputCheckboxGroupComponent = (InputCheckboxGroupComponent) obj;
-            return Intrinsics.areEqual(this.f20635d, inputCheckboxGroupComponent.f20635d) && Intrinsics.areEqual(this.f20636e, inputCheckboxGroupComponent.f20636e) && Intrinsics.areEqual(this.f20637i, inputCheckboxGroupComponent.f20637i) && Intrinsics.areEqual(this.f20638o, inputCheckboxGroupComponent.f20638o);
+            return Intrinsics.areEqual(this.f20636d, inputCheckboxGroupComponent.f20636d) && Intrinsics.areEqual(this.f20637e, inputCheckboxGroupComponent.f20637e) && Intrinsics.areEqual(this.f20638i, inputCheckboxGroupComponent.f20638i) && Intrinsics.areEqual(this.f20639o, inputCheckboxGroupComponent.f20639o);
         }
         return false;
     }
 
     public final Set f() {
-        return this.f20636e;
+        return this.f20637e;
     }
 
     public void g(l lVar) {
         Intrinsics.checkNotNullParameter(lVar, "<set-?>");
-        this.f20640q = lVar;
+        this.f20641q = lVar;
     }
 
     @Override // pq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f20638o;
+        return this.f20639o;
     }
 
     @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f20637i;
+        return this.f20638i;
     }
 
     @Override // pq.k5
     public String getName() {
-        return this.f20635d;
+        return this.f20636d;
     }
 
     public int hashCode() {
-        int hashCode = ((this.f20635d.hashCode() * 31) + this.f20636e.hashCode()) * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f20637i;
+        int hashCode = ((this.f20636d.hashCode() * 31) + this.f20637e.hashCode()) * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f20638i;
         int hashCode2 = (hashCode + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20638o;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20639o;
         return hashCode2 + (jsonLogicBoolean2 != null ? jsonLogicBoolean2.hashCode() : 0);
     }
 
@@ -169,24 +169,24 @@ public final class InputCheckboxGroupComponent implements k5, v, e0, b5 {
     }
 
     public String toString() {
-        String str = this.f20635d;
-        Set set = this.f20636e;
-        JsonLogicBoolean jsonLogicBoolean = this.f20637i;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20638o;
+        String str = this.f20636d;
+        Set set = this.f20637e;
+        JsonLogicBoolean jsonLogicBoolean = this.f20638i;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20639o;
         return "InputCheckboxGroupComponent(name=" + str + ", value=" + set + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f20635d);
-        Set<String> set = this.f20636e;
+        dest.writeString(this.f20636d);
+        Set<String> set = this.f20637e;
         dest.writeInt(set.size());
         for (String str : set) {
             dest.writeString(str);
         }
-        dest.writeParcelable(this.f20637i, i10);
-        dest.writeParcelable(this.f20638o, i10);
+        dest.writeParcelable(this.f20638i, i10);
+        dest.writeParcelable(this.f20639o, i10);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

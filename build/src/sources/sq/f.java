@@ -13,52 +13,52 @@ import com.google.android.material.textfield.TextInputLayout;
 public final class f implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f48229a;
+    private final ConstraintLayout f48230a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final TextView f48230b;
+    public final TextView f48231b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final TextInputLayout f48231c;
+    public final TextInputLayout f48232c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final TextInputEditText f48232d;
+    public final TextInputEditText f48233d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final TextView f48233e;
+    public final TextView f48234e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final TextInputLayout f48234f;
+    public final TextInputLayout f48235f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final AutoCompleteTextView f48235g;
+    public final AutoCompleteTextView f48236g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final TextInputLayout f48236h;
+    public final TextInputLayout f48237h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final TextInputEditText f48237i;
+    public final TextInputEditText f48238i;
 
     private f(ConstraintLayout constraintLayout, TextView textView, TextInputLayout textInputLayout, TextInputEditText textInputEditText, TextView textView2, TextInputLayout textInputLayout2, AutoCompleteTextView autoCompleteTextView, TextInputLayout textInputLayout3, TextInputEditText textInputEditText2) {
-        this.f48229a = constraintLayout;
-        this.f48230b = textView;
-        this.f48231c = textInputLayout;
-        this.f48232d = textInputEditText;
-        this.f48233e = textView2;
-        this.f48234f = textInputLayout2;
-        this.f48235g = autoCompleteTextView;
-        this.f48236h = textInputLayout3;
-        this.f48237i = textInputEditText2;
+        this.f48230a = constraintLayout;
+        this.f48231b = textView;
+        this.f48232c = textInputLayout;
+        this.f48233d = textInputEditText;
+        this.f48234e = textView2;
+        this.f48235f = textInputLayout2;
+        this.f48236g = autoCompleteTextView;
+        this.f48237h = textInputLayout3;
+        this.f48238i = textInputEditText2;
     }
 
     public static f a(View view) {
-        int i10 = nq.e.f38290v;
+        int i10 = nq.e.f38291v;
         TextView textView = (TextView) e4.a.a(view, i10);
         if (textView != null) {
-            i10 = nq.e.f38292w;
+            i10 = nq.e.f38293w;
             TextInputLayout textInputLayout = (TextInputLayout) e4.a.a(view, i10);
             if (textInputLayout != null) {
-                i10 = nq.e.f38294x;
+                i10 = nq.e.f38295x;
                 TextInputEditText textInputEditText = (TextInputEditText) e4.a.a(view, i10);
                 if (textInputEditText != null) {
                     i10 = nq.e.E;
@@ -67,7 +67,7 @@ public final class f implements ViewBinding {
                         i10 = nq.e.Z;
                         TextInputLayout textInputLayout2 = (TextInputLayout) e4.a.a(view, i10);
                         if (textInputLayout2 != null) {
-                            i10 = nq.e.f38249a0;
+                            i10 = nq.e.f38250a0;
                             AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) e4.a.a(view, i10);
                             if (autoCompleteTextView != null) {
                                 i10 = nq.e.D0;
@@ -93,7 +93,7 @@ public final class f implements ViewBinding {
     }
 
     public static f d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(nq.f.f38305f, viewGroup, false);
+        View inflate = layoutInflater.inflate(nq.f.f38306f, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -103,6 +103,6 @@ public final class f implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f48229a;
+        return this.f48230a;
     }
 }

@@ -3,15 +3,15 @@ package j$.time.format;
 public final class m implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f30565a;
+    public final String f30566a;
 
     public m(String str) {
-        this.f30565a = str;
+        this.f30566a = str;
     }
 
     @Override // j$.time.format.e
     public final boolean r(q qVar, StringBuilder sb2) {
-        sb2.append(this.f30565a);
+        sb2.append(this.f30566a);
         return true;
     }
 
@@ -20,12 +20,12 @@ public final class m implements e {
         if (i10 > charSequence.length() || i10 < 0) {
             throw new IndexOutOfBoundsException();
         }
-        String str = this.f30565a;
+        String str = this.f30566a;
         return !oVar.g(charSequence, i10, str, 0, str.length()) ? ~i10 : str.length() + i10;
     }
 
     public final String toString() {
-        String replace = this.f30565a.replace("'", "''");
+        String replace = this.f30566a.replace("'", "''");
         return "'" + replace + "'";
     }
 }

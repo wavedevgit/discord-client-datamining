@@ -65,7 +65,7 @@ public class FileAttachmentView extends ConstraintLayout {
         Intrinsics.checkNotNullExpressionValue(uploadOverlayBackground, "uploadOverlayBackground");
         uploadOverlayBackground.setVisibility(8);
         fileAttachmentView.uploadFinished = true;
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public final void setContent(@NotNull final String attachmentName, @NotNull final String attachmentDescription, @NotNull final String url, @NotNull final Function2<? super String, ? super String, Unit> onClick, boolean z10, SpoilerConfig spoilerConfig, UploadItemProps uploadItemProps, Integer num) {

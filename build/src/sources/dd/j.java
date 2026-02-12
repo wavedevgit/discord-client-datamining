@@ -13,45 +13,45 @@ import uc.e0;
 final class j extends i {
 
     /* renamed from: n  reason: collision with root package name */
-    private a f21620n;
+    private a f21621n;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f21621o;
+    private int f21622o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f21622p;
+    private boolean f21623p;
 
     /* renamed from: q  reason: collision with root package name */
-    private e0.c f21623q;
+    private e0.c f21624q;
 
     /* renamed from: r  reason: collision with root package name */
-    private e0.a f21624r;
+    private e0.a f21625r;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final e0.c f21625a;
+        public final e0.c f21626a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final e0.a f21626b;
+        public final e0.a f21627b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final byte[] f21627c;
+        public final byte[] f21628c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final e0.b[] f21628d;
+        public final e0.b[] f21629d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final int f21629e;
+        public final int f21630e;
 
         public a(e0.c cVar, e0.a aVar, byte[] bArr, e0.b[] bVarArr, int i10) {
-            this.f21625a = cVar;
-            this.f21626b = aVar;
-            this.f21627c = bArr;
-            this.f21628d = bVarArr;
-            this.f21629e = i10;
+            this.f21626a = cVar;
+            this.f21627b = aVar;
+            this.f21628c = bArr;
+            this.f21629d = bVarArr;
+            this.f21630e = i10;
         }
     }
 
@@ -69,10 +69,10 @@ final class j extends i {
     }
 
     private static int o(byte b10, a aVar) {
-        if (!aVar.f21628d[p(b10, aVar.f21629e, 1)].f50651a) {
-            return aVar.f21625a.f50661g;
+        if (!aVar.f21629d[p(b10, aVar.f21630e, 1)].f50652a) {
+            return aVar.f21626a.f50662g;
         }
-        return aVar.f21625a.f50662h;
+        return aVar.f21626a.f50663h;
     }
 
     static int p(byte b10, int i10, int i11) {
@@ -98,12 +98,12 @@ final class j extends i {
         } else {
             z10 = false;
         }
-        this.f21622p = z10;
-        e0.c cVar = this.f21623q;
+        this.f21623p = z10;
+        e0.c cVar = this.f21624q;
         if (cVar != null) {
-            i10 = cVar.f50661g;
+            i10 = cVar.f50662g;
         }
-        this.f21621o = i10;
+        this.f21622o = i10;
     }
 
     @Override // dd.i
@@ -112,33 +112,33 @@ final class j extends i {
         if ((h0Var.e()[0] & 1) == 1) {
             return -1L;
         }
-        int o10 = o(h0Var.e()[0], (a) oe.a.i(this.f21620n));
-        if (this.f21622p) {
-            i10 = (this.f21621o + o10) / 4;
+        int o10 = o(h0Var.e()[0], (a) oe.a.i(this.f21621n));
+        if (this.f21623p) {
+            i10 = (this.f21622o + o10) / 4;
         }
         long j10 = i10;
         n(h0Var, j10);
-        this.f21622p = true;
-        this.f21621o = o10;
+        this.f21623p = true;
+        this.f21622o = o10;
         return j10;
     }
 
     @Override // dd.i
     protected boolean h(h0 h0Var, long j10, i.b bVar) {
-        if (this.f21620n != null) {
-            oe.a.e(bVar.f21618a);
+        if (this.f21621n != null) {
+            oe.a.e(bVar.f21619a);
             return false;
         }
         a q10 = q(h0Var);
-        this.f21620n = q10;
+        this.f21621n = q10;
         if (q10 == null) {
             return true;
         }
-        e0.c cVar = q10.f21625a;
+        e0.c cVar = q10.f21626a;
         ArrayList arrayList = new ArrayList();
-        arrayList.add(cVar.f50664j);
-        arrayList.add(q10.f21627c);
-        bVar.f21618a = new Format.b().g0("audio/vorbis").I(cVar.f50659e).b0(cVar.f50658d).J(cVar.f50656b).h0(cVar.f50657c).V(arrayList).Z(e0.c(s.p(q10.f21626b.f50649b))).G();
+        arrayList.add(cVar.f50665j);
+        arrayList.add(q10.f21628c);
+        bVar.f21619a = new Format.b().g0("audio/vorbis").I(cVar.f50660e).b0(cVar.f50659d).J(cVar.f50657b).h0(cVar.f50658c).V(arrayList).Z(e0.c(s.p(q10.f21627b.f50650b))).G();
         return true;
     }
 
@@ -147,28 +147,28 @@ final class j extends i {
     public void l(boolean z10) {
         super.l(z10);
         if (z10) {
-            this.f21620n = null;
-            this.f21623q = null;
-            this.f21624r = null;
+            this.f21621n = null;
+            this.f21624q = null;
+            this.f21625r = null;
         }
-        this.f21621o = 0;
-        this.f21622p = false;
+        this.f21622o = 0;
+        this.f21623p = false;
     }
 
     a q(h0 h0Var) {
-        e0.c cVar = this.f21623q;
+        e0.c cVar = this.f21624q;
         if (cVar == null) {
-            this.f21623q = e0.j(h0Var);
+            this.f21624q = e0.j(h0Var);
             return null;
         }
-        e0.a aVar = this.f21624r;
+        e0.a aVar = this.f21625r;
         if (aVar == null) {
-            this.f21624r = e0.h(h0Var);
+            this.f21625r = e0.h(h0Var);
             return null;
         }
         byte[] bArr = new byte[h0Var.g()];
         System.arraycopy(h0Var.e(), 0, bArr, 0, h0Var.g());
-        e0.b[] k10 = e0.k(h0Var, cVar.f50656b);
+        e0.b[] k10 = e0.k(h0Var, cVar.f50657b);
         return new a(cVar, aVar, bArr, k10, e0.a(k10.length - 1));
     }
 }

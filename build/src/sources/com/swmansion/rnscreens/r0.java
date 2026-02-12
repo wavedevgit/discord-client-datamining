@@ -48,47 +48,47 @@ public final class r0 extends b0 implements ScreenStackFragmentWrapper {
     private WindowInsetsCompat F;
 
     /* renamed from: t  reason: collision with root package name */
-    private com.swmansion.rnscreens.a f19335t;
+    private com.swmansion.rnscreens.a f19336t;
 
     /* renamed from: u  reason: collision with root package name */
-    private Toolbar f19336u;
+    private Toolbar f19337u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f19337v;
+    private boolean f19338v;
 
     /* renamed from: w  reason: collision with root package name */
-    private boolean f19338w;
+    private boolean f19339w;
 
     /* renamed from: x  reason: collision with root package name */
-    private pn.b f19339x;
+    private pn.b f19340x;
 
     /* renamed from: y  reason: collision with root package name */
-    private View f19340y;
+    private View f19341y;
 
     /* renamed from: z  reason: collision with root package name */
-    private d f19341z;
+    private d f19342z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends y0.b {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ pn.o f19342d;
+        final /* synthetic */ pn.o f19343d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ r0 f19343e;
+        final /* synthetic */ r0 f19344e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(pn.o oVar, r0 r0Var) {
             super(0);
-            this.f19342d = oVar;
-            this.f19343e = r0Var;
+            this.f19343d = oVar;
+            this.f19344e = r0Var;
         }
 
         @Override // androidx.core.view.y0.b
         public void onEnd(androidx.core.view.y0 animation) {
             Intrinsics.checkNotNullParameter(animation, "animation");
             super.onEnd(animation);
-            this.f19343e.h().onSheetYTranslationChanged$react_native_screens_release();
+            this.f19344e.h().onSheetYTranslationChanged$react_native_screens_release();
         }
 
         @Override // androidx.core.view.y0.b
@@ -96,7 +96,7 @@ public final class r0 extends b0 implements ScreenStackFragmentWrapper {
             Intrinsics.checkNotNullParameter(insets, "insets");
             Intrinsics.checkNotNullParameter(runningAnimations, "runningAnimations");
             if (Build.VERSION.SDK_INT >= 30) {
-                this.f19342d.K(insets);
+                this.f19343d.K(insets);
             }
             return insets;
         }
@@ -269,7 +269,7 @@ public final class r0 extends b0 implements ScreenStackFragmentWrapper {
             dVar3.layout(0, 0, container.getWidth(), container.getHeight());
         }
         h().onBottomSheetBehaviorDidLayout$react_native_screens_release(true);
-        pn.b bVar2 = this.f19339x;
+        pn.b bVar2 = this.f19340x;
         if (bVar2 == null) {
             Intrinsics.throwUninitializedPropertyAccessException("sheetTransitionCoordinator");
         } else {
@@ -374,7 +374,7 @@ public final class r0 extends b0 implements ScreenStackFragmentWrapper {
         }
         if (headerConfig != null && i10 > 0) {
             for (int i11 = 0; i11 < i10; i11++) {
-                if (headerConfig.g(i11).getType() == v0.a.f19398p) {
+                if (headerConfig.g(i11).getType() == v0.a.f19399p) {
                     return true;
                 }
             }
@@ -386,9 +386,9 @@ public final class r0 extends b0 implements ScreenStackFragmentWrapper {
         menu.clear();
         if (s0()) {
             Context context = getContext();
-            if (this.f19341z == null && context != null) {
+            if (this.f19342z == null && context != null) {
                 d dVar = new d(context, this);
-                this.f19341z = dVar;
+                this.f19342z = dVar;
                 Function1 function1 = this.A;
                 if (function1 != null) {
                     function1.invoke(dVar);
@@ -396,7 +396,7 @@ public final class r0 extends b0 implements ScreenStackFragmentWrapper {
             }
             MenuItem add = menu.add("");
             add.setShowAsAction(2);
-            add.setActionView(this.f19341z);
+            add.setActionView(this.f19342z);
         }
     }
 
@@ -438,7 +438,7 @@ public final class r0 extends b0 implements ScreenStackFragmentWrapper {
     }
 
     public final d d0() {
-        return this.f19341z;
+        return this.f19342z;
     }
 
     public final pn.o e0() {
@@ -452,11 +452,11 @@ public final class r0 extends b0 implements ScreenStackFragmentWrapper {
 
     public void i0() {
         Toolbar toolbar;
-        com.swmansion.rnscreens.a aVar = this.f19335t;
-        if (aVar != null && (toolbar = this.f19336u) != null && toolbar.getParent() == aVar) {
+        com.swmansion.rnscreens.a aVar = this.f19336t;
+        if (aVar != null && (toolbar = this.f19337u) != null && toolbar.getParent() == aVar) {
             aVar.removeView(toolbar);
         }
-        this.f19336u = null;
+        this.f19337u = null;
     }
 
     public final pn.c j0() {
@@ -524,7 +524,7 @@ public final class r0 extends b0 implements ScreenStackFragmentWrapper {
         CoordinatorLayout.f fVar = new CoordinatorLayout.f(-1, -1);
         if (pn.q.d(h())) {
             scrollingViewBehavior = W();
-        } else if (this.f19338w) {
+        } else if (this.f19339w) {
             scrollingViewBehavior = null;
         } else {
             scrollingViewBehavior = new AppBarLayout.ScrollingViewBehavior();
@@ -546,18 +546,18 @@ public final class r0 extends b0 implements ScreenStackFragmentWrapper {
             } else {
                 aVar = null;
             }
-            this.f19335t = aVar;
+            this.f19336t = aVar;
             ao.d dVar2 = this.B;
             if (dVar2 == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("coordinatorLayout");
                 dVar2 = null;
             }
-            dVar2.addView(this.f19335t);
-            if (this.f19337v && (aVar3 = this.f19335t) != null) {
+            dVar2.addView(this.f19336t);
+            if (this.f19338v && (aVar3 = this.f19336t) != null) {
                 aVar3.setTargetElevation(0.0f);
             }
-            Toolbar toolbar = this.f19336u;
-            if (toolbar != null && (aVar2 = this.f19335t) != null) {
+            Toolbar toolbar = this.f19337u;
+            if (toolbar != null && (aVar2 = this.f19336t) != null) {
                 aVar2.addView(rn.c.c(toolbar));
             }
             setHasOptionsMenu(true);
@@ -583,7 +583,7 @@ public final class r0 extends b0 implements ScreenStackFragmentWrapper {
             k02.g(h12, sheetBehavior2);
             if (!h().getSheetShouldOverflowTopInset()) {
                 pn.b bVar = new pn.b();
-                this.f19339x = bVar;
+                this.f19340x = bVar;
                 Q(bVar);
             }
             ScreenContainer container = h().getContainer();
@@ -634,7 +634,7 @@ public final class r0 extends b0 implements ScreenStackFragmentWrapper {
 
     @Override // androidx.fragment.app.Fragment
     public void onStart() {
-        View view = this.f19340y;
+        View view = this.f19341y;
         if (view != null) {
             view.requestFocus();
         }
@@ -644,7 +644,7 @@ public final class r0 extends b0 implements ScreenStackFragmentWrapper {
     @Override // androidx.fragment.app.Fragment
     public void onStop() {
         if (co.b.f8375a.a(getContext())) {
-            this.f19340y = b0();
+            this.f19341y = b0();
         }
         super.onStop();
     }
@@ -657,20 +657,20 @@ public final class r0 extends b0 implements ScreenStackFragmentWrapper {
 
     public void p0(Toolbar toolbar) {
         Intrinsics.checkNotNullParameter(toolbar, "toolbar");
-        com.swmansion.rnscreens.a aVar = this.f19335t;
+        com.swmansion.rnscreens.a aVar = this.f19336t;
         if (aVar != null) {
             aVar.addView(toolbar);
         }
         AppBarLayout.d dVar = new AppBarLayout.d(-1, -2);
         dVar.g(0);
         toolbar.setLayoutParams(dVar);
-        this.f19336u = toolbar;
+        this.f19337u = toolbar;
     }
 
     public void q0(boolean z10) {
         float pixelFromDIP;
-        if (this.f19337v != z10) {
-            com.swmansion.rnscreens.a aVar = this.f19335t;
+        if (this.f19338v != z10) {
+            com.swmansion.rnscreens.a aVar = this.f19336t;
             if (aVar != null) {
                 if (z10) {
                     pixelFromDIP = 0.0f;
@@ -679,17 +679,17 @@ public final class r0 extends b0 implements ScreenStackFragmentWrapper {
                 }
                 aVar.setElevation(pixelFromDIP);
             }
-            com.swmansion.rnscreens.a aVar2 = this.f19335t;
+            com.swmansion.rnscreens.a aVar2 = this.f19336t;
             if (aVar2 != null) {
                 aVar2.setStateListAnimator(null);
             }
-            this.f19337v = z10;
+            this.f19338v = z10;
         }
     }
 
     public void r0(boolean z10) {
         AppBarLayout.ScrollingViewBehavior scrollingViewBehavior;
-        if (this.f19338w != z10) {
+        if (this.f19339w != z10) {
             ViewGroup.LayoutParams layoutParams = h().getLayoutParams();
             Intrinsics.checkNotNull(layoutParams, "null cannot be cast to non-null type androidx.coordinatorlayout.widget.CoordinatorLayout.LayoutParams");
             CoordinatorLayout.f fVar = (CoordinatorLayout.f) layoutParams;
@@ -699,7 +699,7 @@ public final class r0 extends b0 implements ScreenStackFragmentWrapper {
                 scrollingViewBehavior = new AppBarLayout.ScrollingViewBehavior();
             }
             fVar.o(scrollingViewBehavior);
-            this.f19338w = z10;
+            this.f19339w = z10;
         }
     }
 

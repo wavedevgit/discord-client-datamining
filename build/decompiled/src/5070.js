@@ -1,6 +1,8 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var7 = require;
     var2 = exports;
+    var8 = dependencyMap;
     var0 = global;
     var4 = var0.Object;
     var3 = var4.defineProperty;
@@ -9,24 +11,34 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.value = var0;
     var0 = '__esModule';
     var0 = var3.bind(var4)(var2, var0, var1);
-    var1 = dependencyMap;
     var0 = 0;
-    var3 = var1[var0];
-    var1 = require;
+    var1 = var8[var0];
     var0 = undefined;
-    var1 = var1.bind(var0)(var3);
-    var4 = var1.StyleSheet;
-    var3 = var4.create;
-    var1 = {};
-    var5 = {
-        'flexDirection': 'column-reverse',
-        'position': 'absolute',
-        'top': 0,
-        'left': 0,
-        'right': 0
-    };
-    var1.container = var5;
-    var1 = var3.bind(var4)(var1);
-    var2.styles = var1;
+    var1 = var7.bind(var0)(var1);
+    var3 = var1.memo;
+    var1 = 1;
+    var1 = var8[var1];
+    var1 = var7.bind(var0)(var1);
+    var5 = var1.FlatList;
+    var1 = 2;
+    var4 = var8[var1];
+    var1 = metroImportDefault;
+    var4 = var1.bind(var0)(var4);
+    var1 = var4.createAnimatedComponent;
+    var6 = var1.bind(var4)(var5);
+    var1 = 3;
+    var1 = var8[var1];
+    var5 = var7.bind(var0)(var1);
+    var4 = var5.createBottomSheetScrollableComponent;
+    var1 = 4;
+    var1 = var8[var1];
+    var1 = var7.bind(var0)(var1);
+    var1 = var1.SCROLLABLE_TYPE;
+    var1 = var1.FLATLIST;
+    var1 = var4.bind(var5)(var1, var6);
+    var1 = var3.bind(var0)(var1);
+    var3 = 'BottomSheetFlatList';
+    var1.displayName = var3;
+    var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3718, 5062, 4910]);

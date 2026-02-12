@@ -6,11 +6,11 @@ import java.util.Locale;
 public class f extends k {
 
     /* renamed from: b  reason: collision with root package name */
-    private String f31185b;
+    private String f31186b;
 
     public f() {
         super(e());
-        this.f31185b = d();
+        this.f31186b = d();
     }
 
     private static String d() {
@@ -22,14 +22,14 @@ public class f extends k {
     }
 
     public String f() {
-        return this.f31185b;
+        return this.f31186b;
     }
 
     @Override // jl.k
     /* renamed from: g */
     public Locale c(Dynamic dynamic) {
         String replace = dynamic.asString().replace('-', '_');
-        this.f31185b = replace;
+        this.f31186b = replace;
         return com.henninghall.date_picker.h.f(replace);
     }
 }

@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/HeartIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun72983: for (var _fun72983_ip = 0;;) switch (_fun72983_ip) {
+        _fun59686: for (var _fun59686_ip = 0;;) switch (_fun59686_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun72983_ip = 53;
-                    continue _fun72983
+                    _fun59686_ip = 53;
+                    continue _fun59686
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.HeartIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3152, 9124, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3152, 7370, 2]);

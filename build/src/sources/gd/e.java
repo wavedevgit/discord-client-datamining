@@ -13,28 +13,28 @@ import oe.w0;
 class e {
 
     /* renamed from: g  reason: collision with root package name */
-    private static final ArrayDeque f25447g = new ArrayDeque();
+    private static final ArrayDeque f25448g = new ArrayDeque();
 
     /* renamed from: h  reason: collision with root package name */
-    private static final Object f25448h = new Object();
+    private static final Object f25449h = new Object();
 
     /* renamed from: a  reason: collision with root package name */
-    private final MediaCodec f25449a;
+    private final MediaCodec f25450a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final HandlerThread f25450b;
+    private final HandlerThread f25451b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Handler f25451c;
+    private Handler f25452c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final AtomicReference f25452d;
+    private final AtomicReference f25453d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final oe.h f25453e;
+    private final oe.h f25454e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f25454f;
+    private boolean f25455f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a extends Handler {
@@ -53,32 +53,32 @@ class e {
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public int f25456a;
+        public int f25457a;
 
         /* renamed from: b  reason: collision with root package name */
-        public int f25457b;
+        public int f25458b;
 
         /* renamed from: c  reason: collision with root package name */
-        public int f25458c;
+        public int f25459c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final MediaCodec.CryptoInfo f25459d = new MediaCodec.CryptoInfo();
+        public final MediaCodec.CryptoInfo f25460d = new MediaCodec.CryptoInfo();
 
         /* renamed from: e  reason: collision with root package name */
-        public long f25460e;
+        public long f25461e;
 
         /* renamed from: f  reason: collision with root package name */
-        public int f25461f;
+        public int f25462f;
 
         b() {
         }
 
         public void a(int i10, int i11, int i12, long j10, int i13) {
-            this.f25456a = i10;
-            this.f25457b = i11;
-            this.f25458c = i12;
-            this.f25460e = j10;
-            this.f25461f = i13;
+            this.f25457a = i10;
+            this.f25458b = i11;
+            this.f25459c = i12;
+            this.f25461e = j10;
+            this.f25462f = i13;
         }
     }
 
@@ -87,20 +87,20 @@ class e {
     }
 
     private void b() {
-        this.f25453e.d();
-        ((Handler) oe.a.e(this.f25451c)).obtainMessage(2).sendToTarget();
-        this.f25453e.a();
+        this.f25454e.d();
+        ((Handler) oe.a.e(this.f25452c)).obtainMessage(2).sendToTarget();
+        this.f25454e.a();
     }
 
     private static void c(rc.c cVar, MediaCodec.CryptoInfo cryptoInfo) {
-        cryptoInfo.numSubSamples = cVar.f46221f;
-        cryptoInfo.numBytesOfClearData = e(cVar.f46219d, cryptoInfo.numBytesOfClearData);
-        cryptoInfo.numBytesOfEncryptedData = e(cVar.f46220e, cryptoInfo.numBytesOfEncryptedData);
-        cryptoInfo.key = (byte[]) oe.a.e(d(cVar.f46217b, cryptoInfo.key));
-        cryptoInfo.iv = (byte[]) oe.a.e(d(cVar.f46216a, cryptoInfo.iv));
-        cryptoInfo.mode = cVar.f46218c;
-        if (w0.f39037a >= 24) {
-            cryptoInfo.setPattern(new MediaCodec.CryptoInfo.Pattern(cVar.f46222g, cVar.f46223h));
+        cryptoInfo.numSubSamples = cVar.f46222f;
+        cryptoInfo.numBytesOfClearData = e(cVar.f46220d, cryptoInfo.numBytesOfClearData);
+        cryptoInfo.numBytesOfEncryptedData = e(cVar.f46221e, cryptoInfo.numBytesOfEncryptedData);
+        cryptoInfo.key = (byte[]) oe.a.e(d(cVar.f46218b, cryptoInfo.key));
+        cryptoInfo.iv = (byte[]) oe.a.e(d(cVar.f46217a, cryptoInfo.iv));
+        cryptoInfo.mode = cVar.f46219c;
+        if (w0.f39038a >= 24) {
+            cryptoInfo.setPattern(new MediaCodec.CryptoInfo.Pattern(cVar.f46223g, cVar.f46224h));
         }
     }
 
@@ -143,7 +143,7 @@ class e {
             r3 = 2
             r4 = 0
             if (r2 == r3) goto L1c
-            java.util.concurrent.atomic.AtomicReference r2 = r8.f25452d
+            java.util.concurrent.atomic.AtomicReference r2 = r8.f25453d
             java.lang.IllegalStateException r3 = new java.lang.IllegalStateException
             int r1 = r9.what
             java.lang.String r1 = java.lang.String.valueOf(r1)
@@ -151,18 +151,18 @@ class e {
             p0.d.a(r2, r4, r3)
             goto L4b
         L1c:
-            oe.h r1 = r8.f25453e
+            oe.h r1 = r8.f25454e
             r1.f()
             goto L4b
         L22:
             java.lang.Object r1 = r9.obj
             r7 = r1
             gd.e$b r7 = (gd.e.b) r7
-            int r1 = r7.f25456a
-            int r2 = r7.f25457b
-            android.media.MediaCodec$CryptoInfo r3 = r7.f25459d
-            long r4 = r7.f25460e
-            int r6 = r7.f25461f
+            int r1 = r7.f25457a
+            int r2 = r7.f25458b
+            android.media.MediaCodec$CryptoInfo r3 = r7.f25460d
+            long r4 = r7.f25461e
+            int r6 = r7.f25462f
             r0 = r8
             r0.h(r1, r2, r3, r4, r6)
         L35:
@@ -172,11 +172,11 @@ class e {
             java.lang.Object r0 = r9.obj
             r7 = r0
             gd.e$b r7 = (gd.e.b) r7
-            int r1 = r7.f25456a
-            int r2 = r7.f25457b
-            int r3 = r7.f25458c
-            long r4 = r7.f25460e
-            int r6 = r7.f25461f
+            int r1 = r7.f25457a
+            int r2 = r7.f25458b
+            int r3 = r7.f25459c
+            long r4 = r7.f25461e
+            int r6 = r7.f25462f
             r0 = r8
             r0.g(r1, r2, r3, r4, r6)
             goto L35
@@ -191,29 +191,29 @@ class e {
 
     private void g(int i10, int i11, int i12, long j10, int i13) {
         try {
-            this.f25449a.queueInputBuffer(i10, i11, i12, j10, i13);
+            this.f25450a.queueInputBuffer(i10, i11, i12, j10, i13);
         } catch (RuntimeException e10) {
-            p0.d.a(this.f25452d, null, e10);
+            p0.d.a(this.f25453d, null, e10);
         }
     }
 
     private void h(int i10, int i11, MediaCodec.CryptoInfo cryptoInfo, long j10, int i12) {
         try {
-            synchronized (f25448h) {
-                this.f25449a.queueSecureInputBuffer(i10, i11, cryptoInfo, j10, i12);
+            synchronized (f25449h) {
+                this.f25450a.queueSecureInputBuffer(i10, i11, cryptoInfo, j10, i12);
             }
         } catch (RuntimeException e10) {
-            p0.d.a(this.f25452d, null, e10);
+            p0.d.a(this.f25453d, null, e10);
         }
     }
 
     private void j() {
-        ((Handler) oe.a.e(this.f25451c)).removeCallbacksAndMessages(null);
+        ((Handler) oe.a.e(this.f25452c)).removeCallbacksAndMessages(null);
         b();
     }
 
     private static b k() {
-        ArrayDeque arrayDeque = f25447g;
+        ArrayDeque arrayDeque = f25448g;
         synchronized (arrayDeque) {
             try {
                 if (arrayDeque.isEmpty()) {
@@ -227,14 +227,14 @@ class e {
     }
 
     private static void o(b bVar) {
-        ArrayDeque arrayDeque = f25447g;
+        ArrayDeque arrayDeque = f25448g;
         synchronized (arrayDeque) {
             arrayDeque.add(bVar);
         }
     }
 
     public void i() {
-        if (this.f25454f) {
+        if (this.f25455f) {
             try {
                 j();
             } catch (InterruptedException e10) {
@@ -245,7 +245,7 @@ class e {
     }
 
     public void l() {
-        RuntimeException runtimeException = (RuntimeException) this.f25452d.getAndSet(null);
+        RuntimeException runtimeException = (RuntimeException) this.f25453d.getAndSet(null);
         if (runtimeException == null) {
             return;
         }
@@ -256,30 +256,30 @@ class e {
         l();
         b k10 = k();
         k10.a(i10, i11, i12, j10, i13);
-        ((Handler) w0.j(this.f25451c)).obtainMessage(0, k10).sendToTarget();
+        ((Handler) w0.j(this.f25452c)).obtainMessage(0, k10).sendToTarget();
     }
 
     public void n(int i10, int i11, rc.c cVar, long j10, int i12) {
         l();
         b k10 = k();
         k10.a(i10, i11, 0, j10, i12);
-        c(cVar, k10.f25459d);
-        ((Handler) w0.j(this.f25451c)).obtainMessage(1, k10).sendToTarget();
+        c(cVar, k10.f25460d);
+        ((Handler) w0.j(this.f25452c)).obtainMessage(1, k10).sendToTarget();
     }
 
     public void p() {
-        if (this.f25454f) {
+        if (this.f25455f) {
             i();
-            this.f25450b.quit();
+            this.f25451b.quit();
         }
-        this.f25454f = false;
+        this.f25455f = false;
     }
 
     public void q() {
-        if (!this.f25454f) {
-            this.f25450b.start();
-            this.f25451c = new a(this.f25450b.getLooper());
-            this.f25454f = true;
+        if (!this.f25455f) {
+            this.f25451b.start();
+            this.f25452c = new a(this.f25451b.getLooper());
+            this.f25455f = true;
         }
     }
 
@@ -288,9 +288,9 @@ class e {
     }
 
     e(MediaCodec mediaCodec, HandlerThread handlerThread, oe.h hVar) {
-        this.f25449a = mediaCodec;
-        this.f25450b = handlerThread;
-        this.f25453e = hVar;
-        this.f25452d = new AtomicReference();
+        this.f25450a = mediaCodec;
+        this.f25451b = handlerThread;
+        this.f25454e = hVar;
+        this.f25453d = new AtomicReference();
     }
 }

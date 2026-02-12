@@ -1,30 +1,23 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
+    var2 = exports;
     var0 = global;
     var4 = var0.Object;
     var3 = var4.defineProperty;
-    var2 = {};
+    var1 = {};
     var0 = true;
-    var2.value = var0;
+    var1.value = var0;
     var0 = '__esModule';
-    var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = {
-        'multipleViewabilityThresholdTypesNotSupported': 'You can set exactly one of itemVisiblePercentThreshold or viewAreaCoveragePercentThreshold. Specifying both is not supported.',
-        'flashListV2OnlySupportsNewArchitecture': 'FlashList v2 is only supported on new architecture',
-        'layoutManagerNotInitializedLayoutInfo': 'LayoutManager is not initialized, layout info is unavailable',
-        'layoutManagerNotInitializedChildContainer': 'LayoutManager is not initialized, child container layout is unavailable',
-        'layoutManagerNotInitializedWindowSize': 'LayoutManager is not initialized, window size is unavailable',
-        'horizontalPropCannotBeToggled': 'Horizontal prop cannot be toggled, you can use a key on FlashList to recreate it.',
-        'layoutManagerNotInitializedVisibleIndices': 'LayoutManager is not initialized, visible indices are not unavailable',
-        'masonryAndHorizontalIncompatible': 'Masonry and horizontal props are incompatible',
-        'numColumnsAndHorizontalIncompatible': 'numColumns and horizontal props are incompatible',
-        'indexOutOfBounds': 'index out of bounds, not enough layouts',
-        'fpsMonitorAlreadyRunning': 'This FPS Monitor has already been run, please create a new instance',
-        'dataEmptyCannotRunBenchmark': 'Data is empty, cannot run benchmark',
-        'stickyHeadersNotSupportedForHorizontal': 'Sticky headers are not supported when list is horizontal'
-    };
-    var1.ErrorMessages = var0;
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var1 = dependencyMap;
+    var0 = 0;
+    var3 = var1[var0];
+    var1 = require;
     var0 = undefined;
+    var1 = var1.bind(var0)(var3);
+    var3 = var1.requireNativeComponent;
+    var1 = 'AutoLayoutView';
+    var1 = var3.bind(var0)(var1);
+    var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);

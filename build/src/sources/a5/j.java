@@ -260,7 +260,7 @@ public final class j implements h {
 
     private final boolean g(Request request, Response response) {
         if (this.f402b.i().e()) {
-            if (!this.f405e || f5.d.f23583c.c(request, response)) {
+            if (!this.f405e || f5.d.f23584c.c(request, response)) {
                 return true;
             }
             return false;
@@ -278,10 +278,10 @@ public final class j implements h {
         boolean d10 = this.f402b.i().d();
         boolean d11 = this.f402b.k().d();
         if (!d11 && d10) {
-            f10.c(CacheControl.f40218p);
+            f10.c(CacheControl.f40219p);
         } else if (d11 && !d10) {
             if (this.f402b.i().e()) {
-                f10.c(CacheControl.f40217o);
+                f10.c(CacheControl.f40218o);
             } else {
                 f10.c(f399g);
             }
@@ -322,9 +322,9 @@ public final class j implements h {
 
     private final x4.h k(Response response) {
         if (response.F0() != null) {
-            return x4.h.f54346o;
+            return x4.h.f54347o;
         }
-        return x4.h.f54345i;
+        return x4.h.f54346i;
     }
 
     private final r l(ResponseBody responseBody) {
@@ -361,11 +361,11 @@ public final class j implements h {
             }
             try {
                 if (response.z() == 304 && cVar2 != null) {
-                    Response c10 = response.G0().k(f5.d.f23583c.a(cVar2.h(), response.z0())).c();
+                    Response c10 = response.G0().k(f5.d.f23584c.a(cVar2.h(), response.z0())).c();
                     BufferedSink c11 = x.c(e().p(bVar.getMetadata(), false));
                     try {
                         new f5.c(c10).k(c11);
-                        Unit unit = Unit.f31987a;
+                        Unit unit = Unit.f31988a;
                         if (c11 != null) {
                             try {
                                 c11.close();
@@ -390,7 +390,7 @@ public final class j implements h {
                     BufferedSink c12 = x.c(e().p(bVar.getMetadata(), false));
                     try {
                         new f5.c(response).k(c12);
-                        Unit unit2 = Unit.f31987a;
+                        Unit unit2 = Unit.f31988a;
                         if (c12 != null) {
                             try {
                                 c12.close();

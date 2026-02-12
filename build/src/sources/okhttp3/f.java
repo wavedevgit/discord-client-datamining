@@ -12,28 +12,28 @@ import okio.BufferedSink;
 public final class f extends RequestBody {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final b f40549c = new b(null);
+    public static final b f40550c = new b(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final MediaType f40550d = MediaType.f40297e.b("application/x-www-form-urlencoded");
+    private static final MediaType f40551d = MediaType.f40298e.b("application/x-www-form-urlencoded");
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f40551a;
+    private final List f40552a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f40552b;
+    private final List f40553b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Charset f40553a;
+        private final Charset f40554a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final List f40554b;
+        private final List f40555b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final List f40555c;
+        private final List f40556c;
 
         public a() {
             this(null, 1, null);
@@ -42,29 +42,29 @@ public final class f extends RequestBody {
         public final a a(String name, String value) {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(value, "value");
-            HttpUrl.b bVar = HttpUrl.f40276k;
-            this.f40554b.add(HttpUrl.b.b(bVar, name, 0, 0, " \"':;<=>@[]^`{}|/\\?#&!$(),~", false, false, true, false, this.f40553a, 91, null));
-            this.f40555c.add(HttpUrl.b.b(bVar, value, 0, 0, " \"':;<=>@[]^`{}|/\\?#&!$(),~", false, false, true, false, this.f40553a, 91, null));
+            HttpUrl.b bVar = HttpUrl.f40277k;
+            this.f40555b.add(HttpUrl.b.b(bVar, name, 0, 0, " \"':;<=>@[]^`{}|/\\?#&!$(),~", false, false, true, false, this.f40554a, 91, null));
+            this.f40556c.add(HttpUrl.b.b(bVar, value, 0, 0, " \"':;<=>@[]^`{}|/\\?#&!$(),~", false, false, true, false, this.f40554a, 91, null));
             return this;
         }
 
         public final a b(String name, String value) {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(value, "value");
-            HttpUrl.b bVar = HttpUrl.f40276k;
-            this.f40554b.add(HttpUrl.b.b(bVar, name, 0, 0, " \"':;<=>@[]^`{}|/\\?#&!$(),~", true, false, true, false, this.f40553a, 83, null));
-            this.f40555c.add(HttpUrl.b.b(bVar, value, 0, 0, " \"':;<=>@[]^`{}|/\\?#&!$(),~", true, false, true, false, this.f40553a, 83, null));
+            HttpUrl.b bVar = HttpUrl.f40277k;
+            this.f40555b.add(HttpUrl.b.b(bVar, name, 0, 0, " \"':;<=>@[]^`{}|/\\?#&!$(),~", true, false, true, false, this.f40554a, 83, null));
+            this.f40556c.add(HttpUrl.b.b(bVar, value, 0, 0, " \"':;<=>@[]^`{}|/\\?#&!$(),~", true, false, true, false, this.f40554a, 83, null));
             return this;
         }
 
         public final f c() {
-            return new f(this.f40554b, this.f40555c);
+            return new f(this.f40555b, this.f40556c);
         }
 
         public a(Charset charset) {
-            this.f40553a = charset;
-            this.f40554b = new ArrayList();
-            this.f40555c = new ArrayList();
+            this.f40554a = charset;
+            this.f40555b = new ArrayList();
+            this.f40556c = new ArrayList();
         }
 
         public /* synthetic */ a(Charset charset, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -85,8 +85,8 @@ public final class f extends RequestBody {
     public f(List encodedNames, List encodedValues) {
         Intrinsics.checkNotNullParameter(encodedNames, "encodedNames");
         Intrinsics.checkNotNullParameter(encodedValues, "encodedValues");
-        this.f40551a = mu.e.V(encodedNames);
-        this.f40552b = mu.e.V(encodedValues);
+        this.f40552a = mu.e.V(encodedNames);
+        this.f40553b = mu.e.V(encodedValues);
     }
 
     private final long a(BufferedSink bufferedSink, boolean z10) {
@@ -97,14 +97,14 @@ public final class f extends RequestBody {
             Intrinsics.checkNotNull(bufferedSink);
             f10 = bufferedSink.f();
         }
-        int size = this.f40551a.size();
+        int size = this.f40552a.size();
         for (int i10 = 0; i10 < size; i10++) {
             if (i10 > 0) {
                 f10.writeByte(38);
             }
-            f10.q0((String) this.f40551a.get(i10));
+            f10.q0((String) this.f40552a.get(i10));
             f10.writeByte(61);
-            f10.q0((String) this.f40552b.get(i10));
+            f10.q0((String) this.f40553b.get(i10));
         }
         if (z10) {
             long size2 = f10.size();
@@ -121,7 +121,7 @@ public final class f extends RequestBody {
 
     @Override // okhttp3.RequestBody
     public MediaType contentType() {
-        return f40550d;
+        return f40551d;
     }
 
     @Override // okhttp3.RequestBody

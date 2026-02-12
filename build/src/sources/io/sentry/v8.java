@@ -3,45 +3,45 @@ package io.sentry;
 public final class v8 extends k8 {
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f30173g = false;
+    private boolean f30174g = false;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f30174h = false;
+    private boolean f30175h = false;
 
     /* renamed from: i  reason: collision with root package name */
-    private Long f30175i = null;
+    private Long f30176i = null;
 
     /* renamed from: j  reason: collision with root package name */
-    private Long f30176j = null;
+    private Long f30177j = null;
 
     /* renamed from: k  reason: collision with root package name */
-    private u8 f30177k = null;
+    private u8 f30178k = null;
 
     /* renamed from: l  reason: collision with root package name */
-    private d1 f30178l = null;
+    private d1 f30179l = null;
 
     public i j() {
         return null;
     }
 
     public Long k() {
-        return this.f30176j;
+        return this.f30177j;
     }
 
     public Long l() {
-        return this.f30175i;
+        return this.f30176i;
     }
 
     public d1 m() {
-        return this.f30178l;
+        return this.f30179l;
     }
 
     public u8 n() {
-        return this.f30177k;
+        return this.f30178k;
     }
 
     public boolean o() {
-        return this.f30173g;
+        return this.f30174g;
     }
 
     public boolean p() {
@@ -52,26 +52,26 @@ public final class v8 extends k8 {
     }
 
     public boolean q() {
-        return this.f30174h;
+        return this.f30175h;
     }
 
     public void r(boolean z10) {
-        this.f30173g = z10;
+        this.f30174g = z10;
     }
 
     public void s(Long l10) {
-        this.f30176j = l10;
+        this.f30177j = l10;
     }
 
     public void t(Long l10) {
-        this.f30175i = l10;
+        this.f30176i = l10;
     }
 
     public void u(u8 u8Var) {
-        this.f30177k = u8Var;
+        this.f30178k = u8Var;
     }
 
     public void v(boolean z10) {
-        this.f30174h = z10;
+        this.f30175h = z10;
     }
 }

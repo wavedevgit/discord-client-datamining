@@ -79,7 +79,7 @@ public final class Footer_AttributesJsonAdapter extends h {
         }
         Constructor<Footer.Attributes> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = Footer.Attributes.class.getDeclaredConstructor(List.class, Integer.class, Integer.TYPE, c.f21827c);
+            constructor = Footer.Attributes.class.getDeclaredConstructor(List.class, Integer.class, Integer.TYPE, c.f21828c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

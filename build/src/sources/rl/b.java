@@ -5,10 +5,10 @@ import android.net.Uri;
 public class b extends d {
 
     /* renamed from: e  reason: collision with root package name */
-    private final a f47429e;
+    private final a f47430e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Uri f47430i;
+    private final Uri f47431i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public enum a {
@@ -16,26 +16,26 @@ public class b extends d {
         
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f47433d;
+        private final String f47434d;
 
         a(String str) {
-            this.f47433d = str;
+            this.f47434d = str;
         }
     }
 
     public b(a aVar, Uri uri, Throwable th2) {
         super(th2);
-        this.f47429e = aVar;
-        this.f47430i = uri;
+        this.f47430e = aVar;
+        this.f47431i = uri;
     }
 
     @Override // java.lang.Throwable
     public String getMessage() {
-        return "Failed to create media source due to a " + this.f47429e.f47433d;
+        return "Failed to create media source due to a " + this.f47430e.f47434d;
     }
 
     @Override // rl.d, java.lang.Throwable
     public String toString() {
-        return super.toString() + "\nFailed to create media source due to a " + this.f47429e.f47433d + "\nUri: " + this.f47430i;
+        return super.toString() + "\nFailed to create media source due to a " + this.f47430e.f47434d + "\nUri: " + this.f47431i;
     }
 }

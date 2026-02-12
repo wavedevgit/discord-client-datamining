@@ -18,38 +18,38 @@ public abstract class f {
     public static final class a extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f12226d;
+        int f12227d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ long f12227e;
+        final /* synthetic */ long f12228e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Function2 f12228i;
+        final /* synthetic */ Function2 f12229i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ Ref.ObjectRef f12229o;
+        final /* synthetic */ Ref.ObjectRef f12230o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ Ref.ObjectRef f12230p;
+        final /* synthetic */ Ref.ObjectRef f12231p;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(long j10, Function2 function2, Ref.ObjectRef objectRef, Ref.ObjectRef objectRef2, Continuation continuation) {
             super(2, continuation);
-            this.f12227e = j10;
-            this.f12228i = function2;
-            this.f12229o = objectRef;
-            this.f12230p = objectRef2;
+            this.f12228e = j10;
+            this.f12229i = function2;
+            this.f12230o = objectRef;
+            this.f12231p = objectRef2;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new a(this.f12227e, this.f12228i, this.f12229o, this.f12230p, continuation);
+            return new a(this.f12228e, this.f12229i, this.f12230o, this.f12231p, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = gs.b.f();
-            int i10 = this.f12226d;
+            int i10 = this.f12227d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -58,19 +58,19 @@ public abstract class f {
                 }
             } else {
                 kotlin.c.b(obj);
-                long j10 = this.f12227e;
-                this.f12226d = 1;
+                long j10 = this.f12228e;
+                this.f12227d = 1;
                 if (i0.a(j10, this) == f10) {
                     return f10;
                 }
             }
-            this.f12228i.invoke(this.f12229o.element, this.f12230p.element);
-            return Unit.f31987a;
+            this.f12229i.invoke(this.f12230o.element, this.f12231p.element);
+            return Unit.f31988a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -102,6 +102,6 @@ public abstract class f {
             d10 = i.d(coroutineScope, null, null, new a(j10, function2, objectRef, objectRef2, null), 3, null);
             objectRef3.element = d10;
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 }

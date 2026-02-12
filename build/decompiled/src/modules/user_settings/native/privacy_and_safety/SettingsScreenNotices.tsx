@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13 = 200;
     var12.order = var13;
     var13 = function() {
-        _fun82095: for (var _fun82095_ip = 0;;) switch (_fun82095_ip) {
+        _fun81109: for (var _fun81109_ip = 0;;) switch (_fun81109_ip) {
             case 0:
                 var1 = _closure1_slot4;
                 var0 = var1.getCurrentUser;
@@ -90,8 +90,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1 == var0;
                 var1 = undefined;
                 if (var2) {
-                    _fun82095_ip = 33;
-                    continue _fun82095
+                    _fun81109_ip = 33;
+                    continue _fun81109
                 }
             case 27:
                 var1 = var0.nsfwAllowed;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var14 = 300;
     var12.order = var14;
     var14 = function() {
-        _fun82096: for (var _fun82096_ip = 0;;) switch (_fun82096_ip) {
+        _fun81110: for (var _fun81110_ip = 0;;) switch (_fun81110_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot1;
@@ -129,15 +129,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4.hasTeenDefaults;
                 var0 = var0.bind(var4)();
                 if (var0) {
-                    _fun82096_ip = 70;
-                    continue _fun82096
+                    _fun81110_ip = 70;
+                    continue _fun81110
                 }
             case 67:
                 var0 = var2;
             case 70:
                 if (!var0) {
-                    _fun82096_ip = 106;
-                    continue _fun82096
+                    _fun81110_ip = 106;
+                    continue _fun81110
                 }
             case 73:
                 var2 = _closure1_slot0;
@@ -191,7 +191,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/user_settings/native/privacy_and_safety/SettingsScreenNotices.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun82097: for (var _fun82097_ip = 0;;) switch (_fun82097_ip) {
+        _fun81111: for (var _fun81111_ip = 0;;) switch (_fun81111_ip) {
             case 0:
                 var1 = arg0;
                 var7 = var1.screen;
@@ -204,7 +204,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var7;
                 var0 = function() { // Environment: var0
-                    _fun82098: for (var _fun82098_ip = 0;;) switch (_fun82098_ip) {
+                    _fun81112: for (var _fun81112_ip = 0;;) switch (_fun81112_ip) {
                         case 0:
                             var2 = _closure1_slot7;
                             var1 = _closure2_slot0;
@@ -238,8 +238,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = 0;
                             var0 = null;
                             if (!(var1 !== var3)) {
-                                _fun82098_ip = 89;
-                                continue _fun82098
+                                _fun81112_ip = 89;
+                                continue _fun81112
                             }
                         case 85:
                             var0 = var2[var1];
@@ -251,8 +251,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var2 = var0 == var6;
                 if (var2) {
-                    _fun82097_ip = 106;
-                    continue _fun82097
+                    _fun81111_ip = 106;
+                    continue _fun81111
                 }
             case 67:
                 var3 = _closure1_slot5;
@@ -271,4 +271,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.SettingsScreen = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 33, 1297, 671, 4666, 10442, 10443, 4283, 4284, 4254, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 33, 1297, 671, 4665, 10270, 10271, 4283, 4284, 4254, 2]);

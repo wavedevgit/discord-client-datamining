@@ -414,28 +414,28 @@ public class w {
         float f11;
         float f12;
         int resourceId;
-        TypedArray obtainStyledAttributes = this.f1995j.obtainStyledAttributes(attributeSet, f.j.f23447g0, i10, 0);
+        TypedArray obtainStyledAttributes = this.f1995j.obtainStyledAttributes(attributeSet, f.j.f23448g0, i10, 0);
         TextView textView = this.f1994i;
-        androidx.core.view.i0.i0(textView, textView.getContext(), f.j.f23447g0, attributeSet, obtainStyledAttributes, i10, 0);
-        if (obtainStyledAttributes.hasValue(f.j.f23472l0)) {
-            this.f1986a = obtainStyledAttributes.getInt(f.j.f23472l0, 0);
+        androidx.core.view.i0.i0(textView, textView.getContext(), f.j.f23448g0, attributeSet, obtainStyledAttributes, i10, 0);
+        if (obtainStyledAttributes.hasValue(f.j.f23473l0)) {
+            this.f1986a = obtainStyledAttributes.getInt(f.j.f23473l0, 0);
         }
-        if (obtainStyledAttributes.hasValue(f.j.f23467k0)) {
-            f10 = obtainStyledAttributes.getDimension(f.j.f23467k0, -1.0f);
+        if (obtainStyledAttributes.hasValue(f.j.f23468k0)) {
+            f10 = obtainStyledAttributes.getDimension(f.j.f23468k0, -1.0f);
         } else {
             f10 = -1.0f;
         }
-        if (obtainStyledAttributes.hasValue(f.j.f23457i0)) {
-            f11 = obtainStyledAttributes.getDimension(f.j.f23457i0, -1.0f);
+        if (obtainStyledAttributes.hasValue(f.j.f23458i0)) {
+            f11 = obtainStyledAttributes.getDimension(f.j.f23458i0, -1.0f);
         } else {
             f11 = -1.0f;
         }
-        if (obtainStyledAttributes.hasValue(f.j.f23452h0)) {
-            f12 = obtainStyledAttributes.getDimension(f.j.f23452h0, -1.0f);
+        if (obtainStyledAttributes.hasValue(f.j.f23453h0)) {
+            f12 = obtainStyledAttributes.getDimension(f.j.f23453h0, -1.0f);
         } else {
             f12 = -1.0f;
         }
-        if (obtainStyledAttributes.hasValue(f.j.f23462j0) && (resourceId = obtainStyledAttributes.getResourceId(f.j.f23462j0, 0)) > 0) {
+        if (obtainStyledAttributes.hasValue(f.j.f23463j0) && (resourceId = obtainStyledAttributes.getResourceId(f.j.f23463j0, 0)) > 0) {
             TypedArray obtainTypedArray = obtainStyledAttributes.getResources().obtainTypedArray(resourceId);
             v(obtainTypedArray);
             obtainTypedArray.recycle();

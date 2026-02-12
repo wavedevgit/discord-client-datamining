@@ -7,23 +7,23 @@ import java.util.zip.ZipFile;
 public final class j implements l {
 
     /* renamed from: a  reason: collision with root package name */
-    final /* synthetic */ Set f31760a;
+    final /* synthetic */ Set f31761a;
 
     /* renamed from: b  reason: collision with root package name */
-    final /* synthetic */ u f31761b;
+    final /* synthetic */ u f31762b;
 
     /* renamed from: c  reason: collision with root package name */
-    final /* synthetic */ o f31762c;
+    final /* synthetic */ o f31763c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j(o oVar, Set set, u uVar) {
-        this.f31762c = oVar;
-        this.f31760a = set;
-        this.f31761b = uVar;
+        this.f31763c = oVar;
+        this.f31761a = set;
+        this.f31762b = uVar;
     }
 
     @Override // ki.l
     public final void a(ZipFile zipFile, Set set) {
-        this.f31760a.addAll(o.a(this.f31762c, set, this.f31761b, zipFile));
+        this.f31761a.addAll(o.a(this.f31763c, set, this.f31762b, zipFile));
     }
 }

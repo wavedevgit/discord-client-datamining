@@ -46,7 +46,7 @@ public /* synthetic */ class StaticChannelMentionContentNode$$serializer impleme
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{StaticChannelMentionType.Serializer.INSTANCE, rt.a.u(GuildId$$serializer.INSTANCE), rt.a.u(n2.f50032a), StaticChannelMentionContentNode.access$get$childSerializers$cp()[3].getValue()};
+        return new KSerializer[]{StaticChannelMentionType.Serializer.INSTANCE, rt.a.u(GuildId$$serializer.INSTANCE), rt.a.u(n2.f50033a), StaticChannelMentionContentNode.access$get$childSerializers$cp()[3].getValue()};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -65,7 +65,7 @@ public /* synthetic */ class StaticChannelMentionContentNode$$serializer impleme
         if (b10.p()) {
             list = (List) b10.y(serialDescriptor, 3, (DeserializationStrategy) access$get$childSerializers$cp[3].getValue(), null);
             staticChannelMentionType = (StaticChannelMentionType) b10.y(serialDescriptor, 0, StaticChannelMentionType.Serializer.INSTANCE, null);
-            str = (String) b10.n(serialDescriptor, 2, n2.f50032a, null);
+            str = (String) b10.n(serialDescriptor, 2, n2.f50033a, null);
             i10 = 15;
             guildId = (GuildId) b10.n(serialDescriptor, 1, GuildId$$serializer.INSTANCE, null);
         } else {
@@ -85,7 +85,7 @@ public /* synthetic */ class StaticChannelMentionContentNode$$serializer impleme
                     guildId2 = (GuildId) b10.n(serialDescriptor, 1, GuildId$$serializer.INSTANCE, guildId2);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    str2 = (String) b10.n(serialDescriptor, 2, n2.f50032a, str2);
+                    str2 = (String) b10.n(serialDescriptor, 2, n2.f50033a, str2);
                     i11 |= 4;
                 } else if (o10 != 3) {
                     throw new b0(o10);

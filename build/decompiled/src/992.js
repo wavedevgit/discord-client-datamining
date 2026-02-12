@@ -27,7 +27,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun10175_ip = 195;
+                            _fun10175_ip = 192;
                             continue _fun10175
                         }
                     case 10:
@@ -48,16 +48,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var6 = var6.bind(var4)(var3);
                         var3 = var6.flush;
                         var1 = var3.bind(var6)(var1);
-                        SaveGenerator(address = 88);
-                    case 86:
+                        SaveGenerator(address = 87);
+                    case 85:
                         return var1;
-                    case 88:
+                    case 87:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun10175_ip = 136;
+                            _fun10175_ip = 134;
                             continue _fun10175
                         }
-                    case 94:
+                    case 93:
                         var3 = _closure1_slot0;
                         var2 = _closure1_slot1;
                         var2 = var2[var5];
@@ -66,12 +66,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = var4.log;
                         var2 = 'Done flushing events';
                         var2 = var3.bind(var4)(var2);
-                    case 134: // try_end0
-                        _fun10175_ip = 190;
+                    case 132: // try_end0
+                        _fun10175_ip = 187;
                         continue _fun10175;
-                    case 136:
+                    case 134:
                         return var1;
-                    case 139: // catch_target0
+                    case 137: // catch_target0
                         CatchBlockStart(arg_register = 4);
                         var3 = _closure1_slot0;
                         var2 = _closure1_slot1;
@@ -83,10 +83,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = var3.log;
                         var1 = 'Error while flushing events:\n';
                         var1 = var2.bind(var3)(var1, var4);
-                    case 190:
+                    case 187:
                         var1 = undefined;
                         return var1;
-                    case 195:
+                    case 192:
                         return var0;
                 }
             };

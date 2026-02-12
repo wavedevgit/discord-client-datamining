@@ -5,10 +5,10 @@ import android.content.Intent;
 public class i extends o {
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f14495e;
+    private final int f14496e;
 
     public i(int i10, String str, Intent intent) {
         super(str, intent);
-        this.f14495e = i10;
+        this.f14496e = i10;
     }
 }

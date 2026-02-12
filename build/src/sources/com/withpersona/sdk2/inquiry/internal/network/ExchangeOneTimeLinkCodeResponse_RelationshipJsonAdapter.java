@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeResponse_RelationshipJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20225a;
+    private final m.b f20226a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f20226b;
+    private final com.squareup.moshi.h f20227b;
 
     public ExchangeOneTimeLinkCodeResponse_RelationshipJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("data");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20225a = a10;
+        this.f20226a = a10;
         com.squareup.moshi.h f10 = moshi.f(ExchangeOneTimeLinkCodeResponse.RelationshipData.class, x0.d(), "data");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20226b = f10;
+        this.f20227b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -35,10 +35,10 @@ public final class ExchangeOneTimeLinkCodeResponse_RelationshipJsonAdapter exten
         reader.u();
         ExchangeOneTimeLinkCodeResponse.RelationshipData relationshipData = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20225a);
+            int J = reader.J(this.f20226a);
             if (J != -1) {
                 if (J == 0) {
-                    relationshipData = (ExchangeOneTimeLinkCodeResponse.RelationshipData) this.f20226b.fromJson(reader);
+                    relationshipData = (ExchangeOneTimeLinkCodeResponse.RelationshipData) this.f20227b.fromJson(reader);
                 }
             } else {
                 reader.z0();
@@ -56,7 +56,7 @@ public final class ExchangeOneTimeLinkCodeResponse_RelationshipJsonAdapter exten
         if (relationship != null) {
             writer.i();
             writer.J("data");
-            this.f20226b.toJson(writer, relationship.a());
+            this.f20227b.toJson(writer, relationship.a());
             writer.s();
             return;
         }

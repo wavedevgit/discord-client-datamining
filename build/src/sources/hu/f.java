@@ -11,33 +11,33 @@ import java.util.Set;
 public final class f implements cu.i {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Locale[] f27717b = new Locale[0];
+    private static final Locale[] f27718b = new Locale[0];
 
     /* renamed from: c  reason: collision with root package name */
-    public static final Set f27718c;
+    public static final Set f27719c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final f f27719d;
+    public static final f f27720d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Map f27720e;
+    private static final Map f27721e;
 
     static {
         j[] values;
         String[] split = e.h("i18n/numbers/symbol", Locale.ROOT).f("locales").split(" ");
         HashSet hashSet = new HashSet();
         Collections.addAll(hashSet, split);
-        f27718c = Collections.unmodifiableSet(hashSet);
-        f27719d = new f();
+        f27719c = Collections.unmodifiableSet(hashSet);
+        f27720d = new f();
         HashMap hashMap = new HashMap();
         for (j jVar : j.values()) {
             hashMap.put(jVar.l(), jVar);
         }
-        f27720e = Collections.unmodifiableMap(hashMap);
+        f27721e = Collections.unmodifiableMap(hashMap);
     }
 
     private static e g(Locale locale) {
-        if (f27718c.contains(d.a(locale))) {
+        if (f27719c.contains(d.a(locale))) {
             return e.h("i18n/numbers/symbol", locale);
         }
         return null;
@@ -61,23 +61,23 @@ public final class f implements cu.i {
 
     @Override // cu.i
     public Locale[] a() {
-        return f27717b;
+        return f27718b;
     }
 
     @Override // cu.i
     public char b(Locale locale) {
-        return h(locale, "separator", cu.i.f21167a.b(locale));
+        return h(locale, "separator", cu.i.f21168a.b(locale));
     }
 
     @Override // cu.i
     public String c(Locale locale) {
-        return i(locale, "plus", cu.i.f21167a.c(locale));
+        return i(locale, "plus", cu.i.f21168a.c(locale));
     }
 
     @Override // cu.i
     public j d(Locale locale) {
-        String i10 = i(locale, "numsys", j.f21168d.l());
-        j jVar = (j) f27720e.get(i10);
+        String i10 = i(locale, "numsys", j.f21169d.l());
+        j jVar = (j) f27721e.get(i10);
         if (jVar != null) {
             return jVar;
         }
@@ -86,12 +86,12 @@ public final class f implements cu.i {
 
     @Override // cu.i
     public String e(Locale locale) {
-        return i(locale, "minus", cu.i.f21167a.e(locale));
+        return i(locale, "minus", cu.i.f21168a.e(locale));
     }
 
     @Override // cu.i
     public char f(Locale locale) {
-        return h(locale, "zero", cu.i.f21167a.f(locale));
+        return h(locale, "zero", cu.i.f21168a.f(locale));
     }
 
     public String toString() {

@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Modal/native/ModalActionButton.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun73590: for (var _fun73590_ip = 0;;) switch (_fun73590_ip) {
+        _fun87251: for (var _fun87251_ip = 0;;) switch (_fun87251_ip) {
             case 0:
                 var2 = arg0;
                 var9 = var2.variant;
@@ -72,8 +72,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = 'secondary';
                 var6 = var4 === var9;
                 if (!var6) {
-                    _fun73590_ip = 91;
-                    continue _fun73590
+                    _fun87251_ip = 91;
+                    continue _fun87251
                 }
             case 65:
                 var10 = _closure1_slot3;

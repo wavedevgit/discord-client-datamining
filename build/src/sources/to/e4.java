@@ -12,13 +12,13 @@ public final class e4 implements Parcelable {
     public static final Parcelable.Creator<e4> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f49074d;
+    private final String f49075d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f49075e;
+    private final String f49076e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final List f49076i;
+    private final List f49077i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -47,21 +47,21 @@ public final class e4 implements Parcelable {
         Intrinsics.checkNotNullParameter(countryName, "countryName");
         Intrinsics.checkNotNullParameter(countryCode, "countryCode");
         Intrinsics.checkNotNullParameter(ids, "ids");
-        this.f49074d = countryName;
-        this.f49075e = countryCode;
-        this.f49076i = ids;
+        this.f49075d = countryName;
+        this.f49076e = countryCode;
+        this.f49077i = ids;
     }
 
     public final String a() {
-        return this.f49075e;
+        return this.f49076e;
     }
 
     public final String b() {
-        return this.f49074d;
+        return this.f49075d;
     }
 
     public final List c() {
-        return this.f49076i;
+        return this.f49077i;
     }
 
     @Override // android.os.Parcelable
@@ -77,29 +77,29 @@ public final class e4 implements Parcelable {
             return false;
         }
         e4 e4Var = (e4) obj;
-        if (Intrinsics.areEqual(this.f49074d, e4Var.f49074d) && Intrinsics.areEqual(this.f49075e, e4Var.f49075e) && Intrinsics.areEqual(this.f49076i, e4Var.f49076i)) {
+        if (Intrinsics.areEqual(this.f49075d, e4Var.f49075d) && Intrinsics.areEqual(this.f49076e, e4Var.f49076e) && Intrinsics.areEqual(this.f49077i, e4Var.f49077i)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((this.f49074d.hashCode() * 31) + this.f49075e.hashCode()) * 31) + this.f49076i.hashCode();
+        return (((this.f49075d.hashCode() * 31) + this.f49076e.hashCode()) * 31) + this.f49077i.hashCode();
     }
 
     public String toString() {
-        String str = this.f49074d;
-        String str2 = this.f49075e;
-        List list = this.f49076i;
+        String str = this.f49075d;
+        String str2 = this.f49076e;
+        List list = this.f49077i;
         return "IdConfigForCountry(countryName=" + str + ", countryCode=" + str2 + ", ids=" + list + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f49074d);
-        dest.writeString(this.f49075e);
-        List<c4> list = this.f49076i;
+        dest.writeString(this.f49075d);
+        dest.writeString(this.f49076e);
+        List<c4> list = this.f49077i;
         dest.writeInt(list.size());
         for (c4 c4Var : list) {
             c4Var.writeToParcel(dest, i10);

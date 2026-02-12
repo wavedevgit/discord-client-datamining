@@ -24,31 +24,31 @@ import wp.z0;
 public final class Pi2ProgressArcView extends View {
 
     /* renamed from: t  reason: collision with root package name */
-    public static final a f20471t = new a(null);
+    public static final a f20472t = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final Paint f20472d;
+    private final Paint f20473d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final float f20473e;
+    private final float f20474e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final float f20474i;
+    private final float f20475i;
 
     /* renamed from: o  reason: collision with root package name */
-    private float f20475o;
+    private float f20476o;
 
     /* renamed from: p  reason: collision with root package name */
-    private ValueAnimator f20476p;
+    private ValueAnimator f20477p;
 
     /* renamed from: q  reason: collision with root package name */
-    private ValueAnimator f20477q;
+    private ValueAnimator f20478q;
 
     /* renamed from: r  reason: collision with root package name */
-    private ValueAnimator f20478r;
+    private ValueAnimator f20479r;
 
     /* renamed from: s  reason: collision with root package name */
-    private float f20479s;
+    private float f20480s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -64,35 +64,35 @@ public final class Pi2ProgressArcView extends View {
     public static final class b implements ValueAnimator.AnimatorUpdateListener {
 
         /* renamed from: a  reason: collision with root package name */
-        private float f20480a;
+        private float f20481a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ ValueAnimator f20481b;
+        final /* synthetic */ ValueAnimator f20482b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ Pi2ProgressArcView f20482c;
+        final /* synthetic */ Pi2ProgressArcView f20483c;
 
         b(ValueAnimator valueAnimator, Pi2ProgressArcView pi2ProgressArcView) {
-            this.f20481b = valueAnimator;
-            this.f20482c = pi2ProgressArcView;
+            this.f20482b = valueAnimator;
+            this.f20483c = pi2ProgressArcView;
         }
 
         @Override // android.animation.ValueAnimator.AnimatorUpdateListener
         public void onAnimationUpdate(ValueAnimator animator) {
             Intrinsics.checkNotNullParameter(animator, "animator");
-            Object animatedValue = this.f20481b.getAnimatedValue();
+            Object animatedValue = this.f20482b.getAnimatedValue();
             Intrinsics.checkNotNull(animatedValue, "null cannot be cast to non-null type kotlin.Float");
             float floatValue = ((Float) animatedValue).floatValue();
-            float abs = Math.abs(floatValue - this.f20480a);
-            float f10 = this.f20482c.f20479s;
-            Pi2ProgressArcView pi2ProgressArcView = this.f20482c;
-            pi2ProgressArcView.f20479s = (pi2ProgressArcView.f20479s + abs) % 360;
-            if (f10 > this.f20482c.f20479s) {
-                this.f20482c.f20479s = 0.0f;
+            float abs = Math.abs(floatValue - this.f20481a);
+            float f10 = this.f20483c.f20480s;
+            Pi2ProgressArcView pi2ProgressArcView = this.f20483c;
+            pi2ProgressArcView.f20480s = (pi2ProgressArcView.f20480s + abs) % 360;
+            if (f10 > this.f20483c.f20480s) {
+                this.f20483c.f20480s = 0.0f;
                 animator.cancel();
             }
-            this.f20480a = floatValue;
-            this.f20482c.invalidate();
+            this.f20481a = floatValue;
+            this.f20483c.invalidate();
         }
     }
 
@@ -100,16 +100,16 @@ public final class Pi2ProgressArcView extends View {
     static final class c implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final /* synthetic */ Function0 f20483d;
+        private final /* synthetic */ Function0 f20484d;
 
         c(Function0 function) {
             Intrinsics.checkNotNullParameter(function, "function");
-            this.f20483d = function;
+            this.f20484d = function;
         }
 
         @Override // java.lang.Runnable
         public final /* synthetic */ void run() {
-            this.f20483d.invoke();
+            this.f20484d.invoke();
         }
     }
 
@@ -117,30 +117,30 @@ public final class Pi2ProgressArcView extends View {
     public static final class d implements ValueAnimator.AnimatorUpdateListener {
 
         /* renamed from: a  reason: collision with root package name */
-        private float f20484a;
+        private float f20485a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ ValueAnimator f20485b;
+        final /* synthetic */ ValueAnimator f20486b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ Pi2ProgressArcView f20486c;
+        final /* synthetic */ Pi2ProgressArcView f20487c;
 
         d(ValueAnimator valueAnimator, Pi2ProgressArcView pi2ProgressArcView) {
-            this.f20485b = valueAnimator;
-            this.f20486c = pi2ProgressArcView;
+            this.f20486b = valueAnimator;
+            this.f20487c = pi2ProgressArcView;
         }
 
         @Override // android.animation.ValueAnimator.AnimatorUpdateListener
         public void onAnimationUpdate(ValueAnimator animator) {
             Intrinsics.checkNotNullParameter(animator, "animator");
-            Object animatedValue = this.f20485b.getAnimatedValue();
+            Object animatedValue = this.f20486b.getAnimatedValue();
             Intrinsics.checkNotNull(animatedValue, "null cannot be cast to non-null type kotlin.Float");
             float floatValue = ((Float) animatedValue).floatValue();
-            float abs = Math.abs(floatValue - this.f20484a);
-            Pi2ProgressArcView pi2ProgressArcView = this.f20486c;
-            pi2ProgressArcView.f20479s = (pi2ProgressArcView.f20479s + abs) % 360;
-            this.f20484a = floatValue;
-            this.f20486c.invalidate();
+            float abs = Math.abs(floatValue - this.f20485a);
+            Pi2ProgressArcView pi2ProgressArcView = this.f20487c;
+            pi2ProgressArcView.f20480s = (pi2ProgressArcView.f20480s + abs) % 360;
+            this.f20485a = floatValue;
+            this.f20487c.invalidate();
         }
     }
 
@@ -148,14 +148,14 @@ public final class Pi2ProgressArcView extends View {
     public static final class e implements Animator.AnimatorListener {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Function0 f20487a;
+        final /* synthetic */ Function0 f20488a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Pi2ProgressArcView f20488b;
+        final /* synthetic */ Pi2ProgressArcView f20489b;
 
         public e(Function0 function0, Pi2ProgressArcView pi2ProgressArcView) {
-            this.f20487a = function0;
-            this.f20488b = pi2ProgressArcView;
+            this.f20488a = function0;
+            this.f20489b = pi2ProgressArcView;
         }
 
         @Override // android.animation.Animator.AnimatorListener
@@ -164,9 +164,9 @@ public final class Pi2ProgressArcView extends View {
 
         @Override // android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
-            Function0 function0 = this.f20487a;
+            Function0 function0 = this.f20488a;
             if (function0 != null) {
-                this.f20488b.postDelayed(new c(function0), 100L);
+                this.f20489b.postDelayed(new c(function0), 100L);
             }
         }
 
@@ -186,7 +186,7 @@ public final class Pi2ProgressArcView extends View {
     }
 
     private final void d() {
-        if (this.f20479s == 0.0f) {
+        if (this.f20480s == 0.0f) {
             return;
         }
         ValueAnimator ofFloat = ValueAnimator.ofFloat(0.0f, 100.0f);
@@ -196,7 +196,7 @@ public final class Pi2ProgressArcView extends View {
         ofFloat.setRepeatCount(-1);
         ofFloat.setRepeatMode(2);
         ofFloat.start();
-        this.f20478r = ofFloat;
+        this.f20479r = ofFloat;
     }
 
     public static /* synthetic */ void g(Pi2ProgressArcView pi2ProgressArcView, float f10, Function0 function0, int i10, Object obj) {
@@ -207,18 +207,18 @@ public final class Pi2ProgressArcView extends View {
     }
 
     private final void h(float f10, Function0 function0) {
-        if (this.f20475o == f10) {
+        if (this.f20476o == f10) {
             if (function0 != null) {
                 function0.invoke();
                 return;
             }
             return;
         }
-        ValueAnimator valueAnimator = this.f20476p;
+        ValueAnimator valueAnimator = this.f20477p;
         if (valueAnimator != null) {
             valueAnimator.cancel();
         }
-        float f11 = this.f20475o;
+        float f11 = this.f20476o;
         final ValueAnimator ofFloat = ValueAnimator.ofFloat(f11, f10);
         ofFloat.setDuration(((float) 1000) * (Math.abs(f10 - f11) / 100.0f));
         ofFloat.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() { // from class: aq.o
@@ -230,7 +230,7 @@ public final class Pi2ProgressArcView extends View {
         Intrinsics.checkNotNull(ofFloat);
         ofFloat.addListener(new e(function0, this));
         ofFloat.start();
-        this.f20476p = ofFloat;
+        this.f20477p = ofFloat;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -238,16 +238,16 @@ public final class Pi2ProgressArcView extends View {
         Intrinsics.checkNotNullParameter(it, "it");
         Object animatedValue = valueAnimator.getAnimatedValue();
         Intrinsics.checkNotNull(animatedValue, "null cannot be cast to non-null type kotlin.Float");
-        pi2ProgressArcView.f20475o = ((Float) animatedValue).floatValue();
+        pi2ProgressArcView.f20476o = ((Float) animatedValue).floatValue();
         pi2ProgressArcView.invalidate();
     }
 
     public final void e() {
-        ValueAnimator valueAnimator = this.f20478r;
+        ValueAnimator valueAnimator = this.f20479r;
         if (valueAnimator != null) {
             valueAnimator.cancel();
         }
-        ValueAnimator valueAnimator2 = this.f20477q;
+        ValueAnimator valueAnimator2 = this.f20478q;
         if (valueAnimator2 != null) {
             valueAnimator2.cancel();
         }
@@ -259,11 +259,11 @@ public final class Pi2ProgressArcView extends View {
         ofFloat.setRepeatCount(-1);
         ofFloat.setRepeatMode(2);
         ofFloat.start();
-        this.f20477q = ofFloat;
+        this.f20478q = ofFloat;
     }
 
     public final void f(float f10, Function0 function0) {
-        ValueAnimator valueAnimator = this.f20477q;
+        ValueAnimator valueAnimator = this.f20478q;
         if (valueAnimator != null) {
             valueAnimator.cancel();
         }
@@ -274,18 +274,18 @@ public final class Pi2ProgressArcView extends View {
     @Override // android.view.View
     protected void onDraw(Canvas canvas) {
         Intrinsics.checkNotNullParameter(canvas, "canvas");
-        float min = (this.f20473e * Math.min(getWidth(), getHeight())) - (this.f20472d.getStrokeWidth() / 2);
+        float min = (this.f20474e * Math.min(getWidth(), getHeight())) - (this.f20473d.getStrokeWidth() / 2);
         float width = getWidth() / 2;
         float height = getHeight() / 2;
-        canvas.drawArc(width - min, height - min, width + min, height + min, this.f20474i + this.f20479s, (this.f20475o * 360) / 100.0f, false, this.f20472d);
+        canvas.drawArc(width - min, height - min, width + min, height + min, this.f20475i + this.f20480s, (this.f20476o * 360) / 100.0f, false, this.f20473d);
     }
 
     public final void setStrokeColor(int i10) {
-        this.f20472d.setColor(i10);
+        this.f20473d.setColor(i10);
     }
 
     public final void setStrokeWidth(float f10) {
-        this.f20472d.setStrokeWidth(f10);
+        this.f20473d.setStrokeWidth(f10);
     }
 
     public /* synthetic */ Pi2ProgressArcView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -297,15 +297,15 @@ public final class Pi2ProgressArcView extends View {
         super(context, attributeSet, i10);
         Intrinsics.checkNotNullParameter(context, "context");
         Paint paint = new Paint(1);
-        this.f20472d = paint;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, z0.f53940d, i10, 0);
+        this.f20473d = paint;
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, z0.f53941d, i10, 0);
         Intrinsics.checkNotNullExpressionValue(obtainStyledAttributes, "obtainStyledAttributes(...)");
         try {
-            this.f20473e = obtainStyledAttributes.getFloat(z0.f53941e, 0.4f);
-            this.f20474i = obtainStyledAttributes.getFloat(z0.f53943g, 270.0f);
-            this.f20475o = obtainStyledAttributes.getFloat(z0.f53942f, 0.0f);
-            paint.setColor(obtainStyledAttributes.getColor(z0.f53944h, -1));
-            paint.setStrokeWidth(obtainStyledAttributes.getDimensionPixelSize(z0.f53945i, 4));
+            this.f20474e = obtainStyledAttributes.getFloat(z0.f53942e, 0.4f);
+            this.f20475i = obtainStyledAttributes.getFloat(z0.f53944g, 270.0f);
+            this.f20476o = obtainStyledAttributes.getFloat(z0.f53943f, 0.0f);
+            paint.setColor(obtainStyledAttributes.getColor(z0.f53945h, -1));
+            paint.setStrokeWidth(obtainStyledAttributes.getDimensionPixelSize(z0.f53946i, 4));
             paint.setStyle(Paint.Style.STROKE);
             paint.setStrokeCap(Paint.Cap.BUTT);
             obtainStyledAttributes.recycle();

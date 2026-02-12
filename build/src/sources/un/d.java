@@ -3,7 +3,7 @@ package un;
 final class d implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f50809a = 3;
+    private int f50810a = 3;
 
     private final boolean b(int i10) {
         if (i10 % 10 == 1) {
@@ -13,16 +13,16 @@ final class d implements h {
     }
 
     private final void c() {
-        int i10 = this.f50809a + 2;
-        this.f50809a = i10;
+        int i10 = this.f50810a + 2;
+        this.f50810a = i10;
         if (b(i10)) {
-            this.f50809a += 2;
+            this.f50810a += 2;
         }
     }
 
     @Override // un.h
     public int a() {
-        int i10 = this.f50809a;
+        int i10 = this.f50810a;
         c();
         return i10;
     }

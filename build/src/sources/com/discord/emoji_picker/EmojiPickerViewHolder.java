@@ -216,7 +216,7 @@ public abstract class EmojiPickerViewHolder extends RecyclerView.ViewHolder {
             this.emojiLoadListener = new EmojiLoadListener(false);
             RippleUtilsKt.addCircleRipple(simpleDraweeView, true);
             ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).w(context.getResources().getInteger(com.discord.image.fresco.R.integer.image_fade_duration) / 3);
-            ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).t(ScalingUtils$ScaleType.f10635e);
+            ((GenericDraweeHierarchy) simpleDraweeView.getHierarchy()).t(ScalingUtils$ScaleType.f10636e);
             NestedScrollOnTouchUtilsKt.setOnClickListenerNested$default(simpleDraweeView, false, new View.OnClickListener() { // from class: com.discord.emoji_picker.d0
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view2) {

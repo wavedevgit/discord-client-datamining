@@ -16,39 +16,39 @@ import java.util.concurrent.TimeoutException;
 public class a1 {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final long f17298i = TimeUnit.HOURS.toSeconds(8);
+    private static final long f17299i = TimeUnit.HOURS.toSeconds(8);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f17299a;
+    private final Context f17300a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h0 f17300b;
+    private final h0 f17301b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final c0 f17301c;
+    private final c0 f17302c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final FirebaseMessaging f17302d;
+    private final FirebaseMessaging f17303d;
 
     /* renamed from: f  reason: collision with root package name */
-    private final ScheduledExecutorService f17304f;
+    private final ScheduledExecutorService f17305f;
 
     /* renamed from: h  reason: collision with root package name */
-    private final y0 f17306h;
+    private final y0 f17307h;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f17303e = new u0.a();
+    private final Map f17304e = new u0.a();
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f17305g = false;
+    private boolean f17306g = false;
 
     private a1(FirebaseMessaging firebaseMessaging, h0 h0Var, y0 y0Var, c0 c0Var, Context context, ScheduledExecutorService scheduledExecutorService) {
-        this.f17302d = firebaseMessaging;
-        this.f17300b = h0Var;
-        this.f17306h = y0Var;
-        this.f17301c = c0Var;
-        this.f17299a = context;
-        this.f17304f = scheduledExecutorService;
+        this.f17303d = firebaseMessaging;
+        this.f17301b = h0Var;
+        this.f17307h = y0Var;
+        this.f17302c = c0Var;
+        this.f17300a = context;
+        this.f17305f = scheduledExecutorService;
     }
 
     public static /* synthetic */ a1 a(Context context, ScheduledExecutorService scheduledExecutorService, FirebaseMessaging firebaseMessaging, h0 h0Var, c0 c0Var) {
@@ -73,11 +73,11 @@ public class a1 {
     }
 
     private void c(String str) {
-        b(this.f17301c.l(this.f17302d.k(), str));
+        b(this.f17302c.l(this.f17303d.k(), str));
     }
 
     private void d(String str) {
-        b(this.f17301c.m(this.f17302d.k(), str));
+        b(this.f17302c.m(this.f17303d.k(), str));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -98,19 +98,19 @@ public class a1 {
     }
 
     private void i(x0 x0Var) {
-        synchronized (this.f17303e) {
+        synchronized (this.f17304e) {
             try {
                 String e10 = x0Var.e();
-                if (!this.f17303e.containsKey(e10)) {
+                if (!this.f17304e.containsKey(e10)) {
                     return;
                 }
-                ArrayDeque arrayDeque = (ArrayDeque) this.f17303e.get(e10);
+                ArrayDeque arrayDeque = (ArrayDeque) this.f17304e.get(e10);
                 zg.k kVar = (zg.k) arrayDeque.poll();
                 if (kVar != null) {
                     kVar.c(null);
                 }
                 if (arrayDeque.isEmpty()) {
-                    this.f17303e.remove(e10);
+                    this.f17304e.remove(e10);
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -125,14 +125,14 @@ public class a1 {
     }
 
     boolean f() {
-        if (this.f17306h.b() != null) {
+        if (this.f17307h.b() != null) {
             return true;
         }
         return false;
     }
 
     synchronized boolean h() {
-        return this.f17305g;
+        return this.f17306g;
     }
 
     boolean j(x0 x0Var) {
@@ -176,12 +176,12 @@ public class a1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void k(Runnable runnable, long j10) {
-        this.f17304f.schedule(runnable, j10, TimeUnit.SECONDS);
+        this.f17305f.schedule(runnable, j10, TimeUnit.SECONDS);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public synchronized void l(boolean z10) {
-        this.f17305g = z10;
+        this.f17306g = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -210,7 +210,7 @@ public class a1 {
             r2 = this;
         L0:
             monitor-enter(r2)
-            com.google.firebase.messaging.y0 r0 = r2.f17306h     // Catch: java.lang.Throwable -> L17
+            com.google.firebase.messaging.y0 r0 = r2.f17307h     // Catch: java.lang.Throwable -> L17
             com.google.firebase.messaging.x0 r0 = r0.b()     // Catch: java.lang.Throwable -> L17
             if (r0 != 0) goto L1c
             boolean r0 = g()     // Catch: java.lang.Throwable -> L17
@@ -233,7 +233,7 @@ public class a1 {
             r0 = 0
             return r0
         L25:
-            com.google.firebase.messaging.y0 r1 = r2.f17306h
+            com.google.firebase.messaging.y0 r1 = r2.f17307h
             r1.d(r0)
             r2.i(r0)
             goto L0
@@ -246,7 +246,7 @@ public class a1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void p(long j10) {
-        k(new b1(this, this.f17299a, this.f17300b, Math.min(Math.max(30L, 2 * j10), f17298i)), j10);
+        k(new b1(this, this.f17300a, this.f17301b, Math.min(Math.max(30L, 2 * j10), f17299i)), j10);
         l(true);
     }
 }

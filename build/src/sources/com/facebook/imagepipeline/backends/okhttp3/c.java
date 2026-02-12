@@ -8,13 +8,13 @@ import okhttp3.Response;
 public final class c extends Exception {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f11030i = new a(null);
+    public static final a f11031i = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final Integer f11031d;
+    private final Integer f11032d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Headers f11032e;
+    private final Headers f11033e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -44,7 +44,7 @@ public final class c extends Exception {
     }
 
     public c(Integer num, Headers headers) {
-        this.f11031d = num;
-        this.f11032e = headers;
+        this.f11032d = num;
+        this.f11033e = headers;
     }
 }

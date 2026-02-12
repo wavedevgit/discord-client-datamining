@@ -3,10 +3,10 @@ package ni;
 public final class a0 implements z {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f37897a;
+    private final Object f37898a;
 
     private a0(Object obj) {
-        this.f37897a = obj;
+        this.f37898a = obj;
     }
 
     public static z b(Object obj) {
@@ -18,6 +18,6 @@ public final class a0 implements z {
 
     @Override // ni.e0
     public final Object a() {
-        return this.f37897a;
+        return this.f37898a;
     }
 }

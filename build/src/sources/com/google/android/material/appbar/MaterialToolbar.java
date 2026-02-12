@@ -18,25 +18,25 @@ import th.i;
 public class MaterialToolbar extends Toolbar {
 
     /* renamed from: n0  reason: collision with root package name */
-    private static final int f15196n0 = k.G;
+    private static final int f15197n0 = k.G;
 
     /* renamed from: o0  reason: collision with root package name */
-    private static final ImageView.ScaleType[] f15197o0 = {ImageView.ScaleType.MATRIX, ImageView.ScaleType.FIT_XY, ImageView.ScaleType.FIT_START, ImageView.ScaleType.FIT_CENTER, ImageView.ScaleType.FIT_END, ImageView.ScaleType.CENTER, ImageView.ScaleType.CENTER_CROP, ImageView.ScaleType.CENTER_INSIDE};
+    private static final ImageView.ScaleType[] f15198o0 = {ImageView.ScaleType.MATRIX, ImageView.ScaleType.FIT_XY, ImageView.ScaleType.FIT_START, ImageView.ScaleType.FIT_CENTER, ImageView.ScaleType.FIT_END, ImageView.ScaleType.CENTER, ImageView.ScaleType.CENTER_CROP, ImageView.ScaleType.CENTER_INSIDE};
 
     /* renamed from: i0  reason: collision with root package name */
-    private Integer f15198i0;
+    private Integer f15199i0;
 
     /* renamed from: j0  reason: collision with root package name */
-    private boolean f15199j0;
+    private boolean f15200j0;
 
     /* renamed from: k0  reason: collision with root package name */
-    private boolean f15200k0;
+    private boolean f15201k0;
 
     /* renamed from: l0  reason: collision with root package name */
-    private ImageView.ScaleType f15201l0;
+    private ImageView.ScaleType f15202l0;
 
     /* renamed from: m0  reason: collision with root package name */
-    private Boolean f15202m0;
+    private Boolean f15203m0;
 
     public MaterialToolbar(@NonNull Context context, AttributeSet attributeSet) {
         this(context, attributeSet, f.a.O);
@@ -93,15 +93,15 @@ public class MaterialToolbar extends Toolbar {
     }
 
     private void V() {
-        if (this.f15199j0 || this.f15200k0) {
+        if (this.f15200j0 || this.f15201k0) {
             TextView e10 = n.e(this);
             TextView c10 = n.c(this);
             if (e10 != null || c10 != null) {
                 Pair S = S(e10, c10);
-                if (this.f15199j0 && e10 != null) {
+                if (this.f15200j0 && e10 != null) {
                     U(e10, S);
                 }
-                if (this.f15200k0 && c10 != null) {
+                if (this.f15201k0 && c10 != null) {
                     U(c10, S);
                 }
             }
@@ -109,9 +109,9 @@ public class MaterialToolbar extends Toolbar {
     }
 
     private Drawable W(Drawable drawable) {
-        if (drawable != null && this.f15198i0 != null) {
+        if (drawable != null && this.f15199i0 != null) {
             Drawable r10 = s1.a.r(drawable.mutate());
-            r10.setTint(this.f15198i0.intValue());
+            r10.setTint(this.f15199i0.intValue());
             return r10;
         }
         return drawable;
@@ -120,11 +120,11 @@ public class MaterialToolbar extends Toolbar {
     private void X() {
         ImageView b10 = n.b(this);
         if (b10 != null) {
-            Boolean bool = this.f15202m0;
+            Boolean bool = this.f15203m0;
             if (bool != null) {
                 b10.setAdjustViewBounds(bool.booleanValue());
             }
-            ImageView.ScaleType scaleType = this.f15201l0;
+            ImageView.ScaleType scaleType = this.f15202l0;
             if (scaleType != null) {
                 b10.setScaleType(scaleType);
             }
@@ -132,11 +132,11 @@ public class MaterialToolbar extends Toolbar {
     }
 
     public ImageView.ScaleType getLogoScaleType() {
-        return this.f15201l0;
+        return this.f15202l0;
     }
 
     public Integer getNavigationIconTint() {
-        return this.f15198i0;
+        return this.f15199i0;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -161,17 +161,17 @@ public class MaterialToolbar extends Toolbar {
     }
 
     public void setLogoAdjustViewBounds(boolean z10) {
-        Boolean bool = this.f15202m0;
+        Boolean bool = this.f15203m0;
         if (bool != null && bool.booleanValue() == z10) {
             return;
         }
-        this.f15202m0 = Boolean.valueOf(z10);
+        this.f15203m0 = Boolean.valueOf(z10);
         requestLayout();
     }
 
     public void setLogoScaleType(@NonNull ImageView.ScaleType scaleType) {
-        if (this.f15201l0 != scaleType) {
-            this.f15201l0 = scaleType;
+        if (this.f15202l0 != scaleType) {
+            this.f15202l0 = scaleType;
             requestLayout();
         }
     }
@@ -182,7 +182,7 @@ public class MaterialToolbar extends Toolbar {
     }
 
     public void setNavigationIconTint(int i10) {
-        this.f15198i0 = Integer.valueOf(i10);
+        this.f15199i0 = Integer.valueOf(i10);
         Drawable navigationIcon = getNavigationIcon();
         if (navigationIcon != null) {
             setNavigationIcon(navigationIcon);
@@ -190,15 +190,15 @@ public class MaterialToolbar extends Toolbar {
     }
 
     public void setSubtitleCentered(boolean z10) {
-        if (this.f15200k0 != z10) {
-            this.f15200k0 = z10;
+        if (this.f15201k0 != z10) {
+            this.f15201k0 = z10;
             requestLayout();
         }
     }
 
     public void setTitleCentered(boolean z10) {
-        if (this.f15199j0 != z10) {
-            this.f15199j0 = z10;
+        if (this.f15200j0 != z10) {
+            this.f15200j0 = z10;
             requestLayout();
         }
     }
@@ -211,7 +211,7 @@ public class MaterialToolbar extends Toolbar {
     public MaterialToolbar(android.content.Context r7, android.util.AttributeSet r8, int r9) {
         /*
             r6 = this;
-            int r4 = com.google.android.material.appbar.MaterialToolbar.f15196n0
+            int r4 = com.google.android.material.appbar.MaterialToolbar.f15197n0
             android.content.Context r7 = wh.a.d(r7, r8, r9, r4)
             r6.<init>(r7, r8, r9)
             android.content.Context r0 = r6.getContext()
@@ -231,18 +231,18 @@ public class MaterialToolbar extends Toolbar {
         L2a:
             int r9 = bh.l.W4
             boolean r9 = r8.getBoolean(r9, r7)
-            r6.f15199j0 = r9
+            r6.f15200j0 = r9
             int r9 = bh.l.V4
             boolean r9 = r8.getBoolean(r9, r7)
-            r6.f15200k0 = r9
+            r6.f15201k0 = r9
             int r9 = bh.l.T4
             int r9 = r8.getInt(r9, r1)
             if (r9 < 0) goto L4b
-            android.widget.ImageView$ScaleType[] r1 = com.google.android.material.appbar.MaterialToolbar.f15197o0
+            android.widget.ImageView$ScaleType[] r1 = com.google.android.material.appbar.MaterialToolbar.f15198o0
             int r2 = r1.length
             if (r9 >= r2) goto L4b
             r9 = r1[r9]
-            r6.f15201l0 = r9
+            r6.f15202l0 = r9
         L4b:
             int r9 = bh.l.S4
             boolean r9 = r8.hasValue(r9)
@@ -250,7 +250,7 @@ public class MaterialToolbar extends Toolbar {
             int r9 = bh.l.S4
             boolean r7 = r8.getBoolean(r9, r7)
             java.lang.Boolean r7 = java.lang.Boolean.valueOf(r7)
-            r6.f15202m0 = r7
+            r6.f15203m0 = r7
         L5f:
             r8.recycle()
             r6.T(r0)

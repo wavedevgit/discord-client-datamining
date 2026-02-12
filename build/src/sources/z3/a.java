@@ -15,22 +15,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final C0790a f56072e = new C0790a(null);
+    public static final C0790a f56073e = new C0790a(null);
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Map f56073f = new HashMap();
+    private static final Map f56074f = new HashMap();
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f56074a;
+    private final boolean f56075a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final File f56075b;
+    private final File f56076b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Lock f56076c;
+    private final Lock f56077c;
 
     /* renamed from: d  reason: collision with root package name */
-    private FileChannel f56077d;
+    private FileChannel f56078d;
 
     /* renamed from: z3.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -42,9 +42,9 @@ public final class a {
         /* JADX INFO: Access modifiers changed from: private */
         public final Lock b(String str) {
             Lock lock;
-            synchronized (a.f56073f) {
+            synchronized (a.f56074f) {
                 try {
-                    Map map = a.f56073f;
+                    Map map = a.f56074f;
                     Object obj = map.get(str);
                     if (obj == null) {
                         obj = new ReentrantLock();
@@ -65,35 +65,35 @@ public final class a {
     public a(String name, File lockDir, boolean z10) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(lockDir, "lockDir");
-        this.f56074a = z10;
+        this.f56075a = z10;
         File file = new File(lockDir, name + ".lck");
-        this.f56075b = file;
-        C0790a c0790a = f56072e;
+        this.f56076b = file;
+        C0790a c0790a = f56073e;
         String absolutePath = file.getAbsolutePath();
         Intrinsics.checkNotNullExpressionValue(absolutePath, "lockFile.absolutePath");
-        this.f56076c = c0790a.b(absolutePath);
+        this.f56077c = c0790a.b(absolutePath);
     }
 
     public static /* synthetic */ void c(a aVar, boolean z10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            z10 = aVar.f56074a;
+            z10 = aVar.f56075a;
         }
         aVar.b(z10);
     }
 
     public final void b(boolean z10) {
-        this.f56076c.lock();
+        this.f56077c.lock();
         if (z10) {
             try {
-                File parentFile = this.f56075b.getParentFile();
+                File parentFile = this.f56076b.getParentFile();
                 if (parentFile != null) {
                     parentFile.mkdirs();
                 }
-                FileChannel channel = new FileOutputStream(this.f56075b).getChannel();
+                FileChannel channel = new FileOutputStream(this.f56076b).getChannel();
                 channel.lock();
-                this.f56077d = channel;
+                this.f56078d = channel;
             } catch (IOException e10) {
-                this.f56077d = null;
+                this.f56078d = null;
                 Log.w("SupportSQLiteLock", "Unable to grab file lock.", e10);
             }
         }
@@ -101,12 +101,12 @@ public final class a {
 
     public final void d() {
         try {
-            FileChannel fileChannel = this.f56077d;
+            FileChannel fileChannel = this.f56078d;
             if (fileChannel != null) {
                 fileChannel.close();
             }
         } catch (IOException unused) {
         }
-        this.f56076c.unlock();
+        this.f56077c.unlock();
     }
 }

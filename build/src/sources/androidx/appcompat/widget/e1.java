@@ -45,16 +45,16 @@ class e1 {
         this.f1780f = new int[2];
         this.f1781g = new int[2];
         this.f1775a = context;
-        View inflate = LayoutInflater.from(context).inflate(f.g.f23394s, (ViewGroup) null);
+        View inflate = LayoutInflater.from(context).inflate(f.g.f23395s, (ViewGroup) null);
         this.f1776b = inflate;
-        this.f1777c = (TextView) inflate.findViewById(f.f.f23369t);
+        this.f1777c = (TextView) inflate.findViewById(f.f.f23370t);
         layoutParams.setTitle(getClass().getSimpleName());
         layoutParams.packageName = context.getPackageName();
         layoutParams.type = RNCWebViewManager.COMMAND_CLEAR_HISTORY;
         layoutParams.width = -2;
         layoutParams.height = -2;
         layoutParams.format = -3;
-        layoutParams.windowAnimations = f.i.f23410a;
+        layoutParams.windowAnimations = f.i.f23411a;
         layoutParams.flags = 24;
     }
 
@@ -64,12 +64,12 @@ class e1 {
         int i13;
         int i14;
         layoutParams.token = view.getApplicationWindowToken();
-        int dimensionPixelOffset = this.f1775a.getResources().getDimensionPixelOffset(f.d.f23321k);
+        int dimensionPixelOffset = this.f1775a.getResources().getDimensionPixelOffset(f.d.f23322k);
         if (view.getWidth() < dimensionPixelOffset) {
             i10 = view.getWidth() / 2;
         }
         if (view.getHeight() >= dimensionPixelOffset) {
-            int dimensionPixelOffset2 = this.f1775a.getResources().getDimensionPixelOffset(f.d.f23320j);
+            int dimensionPixelOffset2 = this.f1775a.getResources().getDimensionPixelOffset(f.d.f23321j);
             height = i11 + dimensionPixelOffset2;
             i12 = i11 - dimensionPixelOffset2;
         } else {
@@ -79,9 +79,9 @@ class e1 {
         layoutParams.gravity = 49;
         Resources resources = this.f1775a.getResources();
         if (z10) {
-            i13 = f.d.f23323m;
+            i13 = f.d.f23324m;
         } else {
-            i13 = f.d.f23322l;
+            i13 = f.d.f23323l;
         }
         int dimensionPixelOffset3 = resources.getDimensionPixelOffset(i13);
         View b10 = b(view);

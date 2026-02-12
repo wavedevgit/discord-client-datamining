@@ -85,19 +85,19 @@ public class ListMenuItemView extends LinearLayout implements k.a, AbsListView.S
     }
 
     private void e() {
-        CheckBox checkBox = (CheckBox) getInflater().inflate(f.g.f23383h, (ViewGroup) this, false);
+        CheckBox checkBox = (CheckBox) getInflater().inflate(f.g.f23384h, (ViewGroup) this, false);
         this.f1379p = checkBox;
         a(checkBox);
     }
 
     private void f() {
-        ImageView imageView = (ImageView) getInflater().inflate(f.g.f23384i, (ViewGroup) this, false);
+        ImageView imageView = (ImageView) getInflater().inflate(f.g.f23385i, (ViewGroup) this, false);
         this.f1376e = imageView;
         b(imageView, 0);
     }
 
     private void g() {
-        RadioButton radioButton = (RadioButton) getInflater().inflate(f.g.f23386k, (ViewGroup) this, false);
+        RadioButton radioButton = (RadioButton) getInflater().inflate(f.g.f23387k, (ViewGroup) this, false);
         this.f1377i = radioButton;
         a(radioButton);
     }
@@ -191,8 +191,8 @@ public class ListMenuItemView extends LinearLayout implements k.a, AbsListView.S
         if (imageView != null) {
             imageView.setImageDrawable(this.f1388y);
         }
-        this.f1382s = (ImageView) findViewById(f.f.f23368s);
-        this.f1383t = (LinearLayout) findViewById(f.f.f23362m);
+        this.f1382s = (ImageView) findViewById(f.f.f23369s);
+        this.f1383t = (LinearLayout) findViewById(f.f.f23363m);
     }
 
     @Override // android.widget.LinearLayout, android.view.View
@@ -329,7 +329,7 @@ public class ListMenuItemView extends LinearLayout implements k.a, AbsListView.S
         this.f1387x = v10.a(f.j.W1, false);
         this.f1386w = context;
         this.f1388y = v10.g(f.j.X1);
-        TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(null, new int[]{16843049}, f.a.f23301z, 0);
+        TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(null, new int[]{16843049}, f.a.f23302z, 0);
         this.f1389z = obtainStyledAttributes.hasValue(0);
         v10.x();
         obtainStyledAttributes.recycle();

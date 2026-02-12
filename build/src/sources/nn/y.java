@@ -9,76 +9,76 @@ import android.view.ViewConfiguration;
 public class y {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f38148a;
+    private final Context f38149a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b f38149b;
+    private final b f38150b;
 
     /* renamed from: c  reason: collision with root package name */
-    private float f38150c;
+    private float f38151c;
 
     /* renamed from: d  reason: collision with root package name */
-    private float f38151d;
+    private float f38152d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f38152e;
+    private boolean f38153e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f38153f;
+    private boolean f38154f;
 
     /* renamed from: g  reason: collision with root package name */
-    private float f38154g;
+    private float f38155g;
 
     /* renamed from: h  reason: collision with root package name */
-    private float f38155h;
+    private float f38156h;
 
     /* renamed from: i  reason: collision with root package name */
-    private float f38156i;
+    private float f38157i;
 
     /* renamed from: j  reason: collision with root package name */
-    private float f38157j;
+    private float f38158j;
 
     /* renamed from: k  reason: collision with root package name */
-    private float f38158k;
+    private float f38159k;
 
     /* renamed from: l  reason: collision with root package name */
-    private float f38159l;
+    private float f38160l;
 
     /* renamed from: m  reason: collision with root package name */
-    private float f38160m;
+    private float f38161m;
 
     /* renamed from: n  reason: collision with root package name */
-    private long f38161n;
+    private long f38162n;
 
     /* renamed from: o  reason: collision with root package name */
-    private long f38162o;
+    private long f38163o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f38163p;
+    private boolean f38164p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f38164q;
+    private int f38165q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f38165r;
+    private int f38166r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final Handler f38166s;
+    private final Handler f38167s;
 
     /* renamed from: t  reason: collision with root package name */
-    private float f38167t;
+    private float f38168t;
 
     /* renamed from: u  reason: collision with root package name */
-    private float f38168u;
+    private float f38169u;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f38169v;
+    private int f38170v;
 
     /* renamed from: w  reason: collision with root package name */
-    private GestureDetector f38170w;
+    private GestureDetector f38171w;
 
     /* renamed from: x  reason: collision with root package name */
-    private boolean f38171x;
+    private boolean f38172x;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -88,9 +88,9 @@ public class y {
 
         @Override // android.view.GestureDetector.SimpleOnGestureListener, android.view.GestureDetector.OnDoubleTapListener
         public boolean onDoubleTap(MotionEvent motionEvent) {
-            y.this.f38167t = motionEvent.getX();
-            y.this.f38168u = motionEvent.getY();
-            y.this.f38169v = 1;
+            y.this.f38168t = motionEvent.getX();
+            y.this.f38169u = motionEvent.getY();
+            y.this.f38170v = 1;
             return true;
         }
     }
@@ -109,35 +109,35 @@ public class y {
     }
 
     private boolean j() {
-        if (this.f38169v != 0) {
+        if (this.f38170v != 0) {
             return true;
         }
         return false;
     }
 
     public float d() {
-        return this.f38154g;
+        return this.f38155g;
     }
 
     public float e() {
-        return this.f38150c;
+        return this.f38151c;
     }
 
     public float f() {
-        return this.f38151d;
+        return this.f38152d;
     }
 
     public float g() {
         boolean z10;
         if (j()) {
-            boolean z11 = this.f38171x;
-            if ((z11 && this.f38154g < this.f38155h) || (!z11 && this.f38154g > this.f38155h)) {
+            boolean z11 = this.f38172x;
+            if ((z11 && this.f38155g < this.f38156h) || (!z11 && this.f38155g > this.f38156h)) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            float abs = Math.abs(1.0f - (this.f38154g / this.f38155h)) * 0.5f;
-            if (this.f38155h <= this.f38164q) {
+            float abs = Math.abs(1.0f - (this.f38155g / this.f38156h)) * 0.5f;
+            if (this.f38156h <= this.f38165q) {
                 return 1.0f;
             }
             if (z10) {
@@ -145,15 +145,15 @@ public class y {
             }
             return 1.0f - abs;
         }
-        float f10 = this.f38155h;
+        float f10 = this.f38156h;
         if (f10 <= 0.0f) {
             return 1.0f;
         }
-        return this.f38154g / f10;
+        return this.f38155g / f10;
     }
 
     public long h() {
-        return this.f38161n - this.f38162o;
+        return this.f38162n - this.f38163o;
     }
 
     public double i() {
@@ -172,10 +172,10 @@ public class y {
         float hypot;
         int i11;
         boolean z15;
-        this.f38161n = motionEvent.getEventTime();
+        this.f38162n = motionEvent.getEventTime();
         int actionMasked = motionEvent.getActionMasked();
-        if (this.f38152e) {
-            this.f38170w.onTouchEvent(motionEvent);
+        if (this.f38153e) {
+            this.f38171w.onTouchEvent(motionEvent);
         }
         int pointerCount = motionEvent.getPointerCount();
         if ((motionEvent.getButtonState() & 32) != 0) {
@@ -183,7 +183,7 @@ public class y {
         } else {
             z10 = false;
         }
-        if (this.f38169v == 2 && !z10) {
+        if (this.f38170v == 2 && !z10) {
             z11 = true;
         } else {
             z11 = false;
@@ -195,25 +195,25 @@ public class y {
         }
         float f12 = 0.0f;
         if (actionMasked == 0 || z12) {
-            if (this.f38163p) {
-                this.f38149b.b(this);
-                this.f38163p = false;
-                this.f38156i = 0.0f;
-                this.f38169v = 0;
+            if (this.f38164p) {
+                this.f38150b.b(this);
+                this.f38164p = false;
+                this.f38157i = 0.0f;
+                this.f38170v = 0;
             } else if (j() && z12) {
-                this.f38163p = false;
-                this.f38156i = 0.0f;
-                this.f38169v = 0;
+                this.f38164p = false;
+                this.f38157i = 0.0f;
+                this.f38170v = 0;
             }
             if (z12) {
                 return true;
             }
         }
-        if (!this.f38163p && this.f38153f && !j() && !z12 && z10) {
-            this.f38167t = motionEvent.getX();
-            this.f38168u = motionEvent.getY();
-            this.f38169v = 2;
-            this.f38156i = 0.0f;
+        if (!this.f38164p && this.f38154f && !j() && !z12 && z10) {
+            this.f38168t = motionEvent.getX();
+            this.f38169u = motionEvent.getY();
+            this.f38170v = 2;
+            this.f38157i = 0.0f;
         }
         if (actionMasked != 0 && actionMasked != 6 && actionMasked != 5 && !z11) {
             z13 = false;
@@ -232,12 +232,12 @@ public class y {
         }
         int i12 = z14 ? pointerCount - 1 : pointerCount;
         if (j()) {
-            f11 = this.f38167t;
-            f10 = this.f38168u;
+            f11 = this.f38168t;
+            f10 = this.f38169u;
             if (motionEvent.getY() < f10) {
-                this.f38171x = true;
+                this.f38172x = true;
             } else {
-                this.f38171x = false;
+                this.f38172x = false;
             }
         } else {
             float f13 = 0.0f;
@@ -268,75 +268,75 @@ public class y {
         } else {
             hypot = (float) Math.hypot(f19, f20);
         }
-        boolean z16 = this.f38163p;
-        this.f38150c = f11;
-        this.f38151d = f10;
-        if (!j() && this.f38163p && (hypot < this.f38165r || z13)) {
-            this.f38149b.b(this);
-            this.f38163p = false;
-            this.f38156i = hypot;
+        boolean z16 = this.f38164p;
+        this.f38151c = f11;
+        this.f38152d = f10;
+        if (!j() && this.f38164p && (hypot < this.f38166r || z13)) {
+            this.f38150b.b(this);
+            this.f38164p = false;
+            this.f38157i = hypot;
         }
         if (z13) {
-            this.f38157j = f19;
-            this.f38159l = f19;
-            this.f38158k = f20;
-            this.f38160m = f20;
-            this.f38154g = hypot;
-            this.f38155h = hypot;
-            this.f38156i = hypot;
+            this.f38158j = f19;
+            this.f38160l = f19;
+            this.f38159k = f20;
+            this.f38161m = f20;
+            this.f38155g = hypot;
+            this.f38156h = hypot;
+            this.f38157i = hypot;
         }
         if (j()) {
-            i11 = this.f38164q;
+            i11 = this.f38165q;
         } else {
-            i11 = this.f38165r;
+            i11 = this.f38166r;
         }
-        if (!this.f38163p && hypot >= i11 && (z16 || Math.abs(hypot - this.f38156i) > this.f38164q)) {
-            this.f38157j = f19;
-            this.f38159l = f19;
-            this.f38158k = f20;
-            this.f38160m = f20;
-            this.f38154g = hypot;
-            this.f38155h = hypot;
-            this.f38162o = this.f38161n;
-            this.f38163p = this.f38149b.c(this);
+        if (!this.f38164p && hypot >= i11 && (z16 || Math.abs(hypot - this.f38157i) > this.f38165q)) {
+            this.f38158j = f19;
+            this.f38160l = f19;
+            this.f38159k = f20;
+            this.f38161m = f20;
+            this.f38155g = hypot;
+            this.f38156h = hypot;
+            this.f38163o = this.f38162n;
+            this.f38164p = this.f38150b.c(this);
         }
         if (actionMasked == 2) {
-            this.f38157j = f19;
-            this.f38158k = f20;
-            this.f38154g = hypot;
-            if (this.f38163p) {
-                z15 = this.f38149b.a(this);
+            this.f38158j = f19;
+            this.f38159k = f20;
+            this.f38155g = hypot;
+            if (this.f38164p) {
+                z15 = this.f38150b.a(this);
             } else {
                 z15 = true;
             }
             if (z15) {
-                this.f38159l = this.f38157j;
-                this.f38160m = this.f38158k;
-                this.f38155h = this.f38154g;
-                this.f38162o = this.f38161n;
+                this.f38160l = this.f38158j;
+                this.f38161m = this.f38159k;
+                this.f38156h = this.f38155g;
+                this.f38163o = this.f38162n;
             }
         }
         return true;
     }
 
     public void l(boolean z10) {
-        this.f38152e = z10;
-        if (z10 && this.f38170w == null) {
-            this.f38170w = new GestureDetector(this.f38148a, new a(), this.f38166s);
+        this.f38153e = z10;
+        if (z10 && this.f38171w == null) {
+            this.f38171w = new GestureDetector(this.f38149a, new a(), this.f38167s);
         }
     }
 
     public void m(boolean z10) {
-        this.f38153f = z10;
+        this.f38154f = z10;
     }
 
     public y(Context context, b bVar, Handler handler) {
-        this.f38169v = 0;
-        this.f38148a = context;
-        this.f38149b = bVar;
-        this.f38164q = ViewConfiguration.get(context).getScaledTouchSlop() * 2;
-        this.f38165r = 0;
-        this.f38166s = handler;
+        this.f38170v = 0;
+        this.f38149a = context;
+        this.f38150b = bVar;
+        this.f38165q = ViewConfiguration.get(context).getScaledTouchSlop() * 2;
+        this.f38166r = 0;
+        this.f38167s = handler;
         int i10 = context.getApplicationInfo().targetSdkVersion;
         if (i10 > 18) {
             l(true);

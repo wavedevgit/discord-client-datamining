@@ -9,11 +9,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
-    var0 = function arg0() {
-        var0 = arg0;
-        return var0;
+    var0 = {
+        'defaultDrawDistance': 250,
+        'supportsOffsetCorrection': true,
+        'trackAverageRenderTimeForOffsetProjection': true
     };
-    var1.useBottomSheetSpringConfigs = var0;
+    var1.PlatformConfig = var0;
     var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

@@ -23,58 +23,58 @@ import java.util.Set;
 public final class c implements du.e, du.d {
 
     /* renamed from: r  reason: collision with root package name */
-    public static final c f21955r = L();
+    public static final c f21956r = L();
 
     /* renamed from: a  reason: collision with root package name */
-    private final bu.x f21956a;
+    private final bu.x f21957a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final e f21957b;
+    private final e f21958b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final du.b f21958c;
+    private final du.b f21959c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f21959d;
+    private final List f21960d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f21960e;
+    private final Map f21961e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final j f21961f;
+    private final j f21962f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f21962g;
+    private final boolean f21963g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final boolean f21963h;
+    private final boolean f21964h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f21964i;
+    private final boolean f21965i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final int f21965j;
+    private final int f21966j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final cu.g f21966k;
+    private final cu.g f21967k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final boolean f21967l;
+    private final boolean f21968l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final boolean f21968m;
+    private final boolean f21969m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final boolean f21969n;
+    private final boolean f21970n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final bu.x f21970o;
+    private final bu.x f21971o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f21971p;
+    private final int f21972p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final boolean f21972q;
+    private final boolean f21973q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -94,10 +94,10 @@ public final class c implements du.e, du.d {
     public static class b implements du.d {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Map f21973a;
+        final /* synthetic */ Map f21974a;
 
         b(Map map) {
-            this.f21973a = map;
+            this.f21974a = map;
         }
 
         @Override // du.d
@@ -106,7 +106,7 @@ public final class c implements du.e, du.d {
             int f10 = sVar.f();
             int i10 = f10 + 3;
             if (i10 <= charSequence.length()) {
-                net.time4j.tz.k kVar = (net.time4j.tz.k) this.f21973a.get(charSequence.subSequence(f10, i10).toString());
+                net.time4j.tz.k kVar = (net.time4j.tz.k) this.f21974a.get(charSequence.subSequence(f10, i10).toString());
                 if (kVar != null) {
                     sVar.l(i10);
                     return kVar;
@@ -124,25 +124,25 @@ public final class c implements du.e, du.d {
     public static /* synthetic */ class C0297c {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f21974a;
+        static final /* synthetic */ int[] f21975a;
 
         static {
             int[] iArr = new int[w.values().length];
-            f21974a = iArr;
+            f21975a = iArr;
             try {
                 iArr[w.CLDR.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f21974a[w.CLDR_24.ordinal()] = 2;
+                f21975a[w.CLDR_24.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f21974a[w.CLDR_DATE.ordinal()] = 3;
+                f21975a[w.CLDR_DATE.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f21974a[w.SIMPLE_DATE_FORMAT.ordinal()] = 4;
+                f21975a[w.SIMPLE_DATE_FORMAT.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
         }
@@ -152,66 +152,66 @@ public final class c implements du.e, du.d {
     public static final class d {
 
         /* renamed from: n  reason: collision with root package name */
-        private static final bu.c f21975n = cu.a.e("CUSTOM_DAY_PERIOD", net.time4j.k.class);
+        private static final bu.c f21976n = cu.a.e("CUSTOM_DAY_PERIOD", net.time4j.k.class);
 
         /* renamed from: a  reason: collision with root package name */
-        private final bu.x f21976a;
+        private final bu.x f21977a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final bu.x f21977b;
+        private final bu.x f21978b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Locale f21978c;
+        private final Locale f21979c;
 
         /* renamed from: d  reason: collision with root package name */
-        private List f21979d;
+        private List f21980d;
 
         /* renamed from: e  reason: collision with root package name */
-        private LinkedList f21980e;
+        private LinkedList f21981e;
 
         /* renamed from: f  reason: collision with root package name */
-        private int f21981f;
+        private int f21982f;
 
         /* renamed from: g  reason: collision with root package name */
-        private int f21982g;
+        private int f21983g;
 
         /* renamed from: h  reason: collision with root package name */
-        private int f21983h;
+        private int f21984h;
 
         /* renamed from: i  reason: collision with root package name */
-        private String f21984i;
+        private String f21985i;
 
         /* renamed from: j  reason: collision with root package name */
-        private net.time4j.k f21985j;
+        private net.time4j.k f21986j;
 
         /* renamed from: k  reason: collision with root package name */
-        private Map f21986k;
+        private Map f21987k;
 
         /* renamed from: l  reason: collision with root package name */
-        private bu.x f21987l;
+        private bu.x f21988l;
 
         /* renamed from: m  reason: collision with root package name */
-        private int f21988m;
+        private int f21989m;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public class a implements bu.n {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ bu.n f21989d;
+            final /* synthetic */ bu.n f21990d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ bu.n f21990e;
+            final /* synthetic */ bu.n f21991e;
 
             a(bu.n nVar, bu.n nVar2) {
-                this.f21989d = nVar;
-                this.f21990e = nVar2;
+                this.f21990d = nVar;
+                this.f21991e = nVar2;
             }
 
             @Override // bu.n
             /* renamed from: a */
             public boolean test(bu.o oVar) {
-                if (this.f21989d.test(oVar) && this.f21990e.test(oVar)) {
+                if (this.f21990d.test(oVar) && this.f21991e.test(oVar)) {
                     return true;
                 }
                 return false;
@@ -225,10 +225,10 @@ public final class c implements du.e, du.d {
         private i H(bu.p pVar) {
             List list;
             i iVar;
-            if (this.f21979d.isEmpty()) {
+            if (this.f21980d.isEmpty()) {
                 iVar = null;
             } else {
-                iVar = (i) this.f21979d.get(list.size() - 1);
+                iVar = (i) this.f21980d.get(list.size() - 1);
             }
             if (iVar == null) {
                 return null;
@@ -247,24 +247,24 @@ public final class c implements du.e, du.d {
         }
 
         private void J(bu.p pVar) {
-            bu.x j10 = c.j(this.f21976a, this.f21977b, pVar);
-            int s10 = c.s(j10, this.f21976a, this.f21977b);
-            if (s10 >= this.f21988m) {
-                this.f21987l = j10;
-                this.f21988m = s10;
+            bu.x j10 = c.j(this.f21977a, this.f21978b, pVar);
+            int s10 = c.s(j10, this.f21977a, this.f21978b);
+            if (s10 >= this.f21989m) {
+                this.f21988l = j10;
+                this.f21989m = s10;
             }
         }
 
         private void K() {
-            if (R(this.f21976a)) {
+            if (R(this.f21977a)) {
                 return;
             }
             throw new IllegalStateException("Timezone names in specific non-location format can only be reliably combined with instant-like types, for example \"Moment\".");
         }
 
         private void M() {
-            for (int size = this.f21979d.size() - 1; size >= 0; size--) {
-                i iVar = (i) this.f21979d.get(size);
+            for (int size = this.f21980d.size() - 1; size >= 0; size--) {
+                i iVar = (i) this.f21980d.get(size);
                 if (!iVar.i()) {
                     if (iVar.g()) {
                         throw new IllegalArgumentException("Cannot define more than one element with decimal digits.");
@@ -277,7 +277,7 @@ public final class c implements du.e, du.d {
 
         private void N(boolean z10, boolean z11) {
             M();
-            if (!z10 && !z11 && this.f21982g != -1) {
+            if (!z10 && !z11 && this.f21983g != -1) {
                 throw new IllegalArgumentException("Cannot add fractional element with variable width after another numerical element with variable width.");
             }
         }
@@ -287,15 +287,15 @@ public final class c implements du.e, du.d {
             cu.a a10 = new a.b(P()).a();
             du.b bVar2 = a10;
             if (kVar != null) {
-                if (this.f21980e.isEmpty()) {
-                    bVar = new du.b(a10, this.f21978c);
+                if (this.f21981e.isEmpty()) {
+                    bVar = new du.b(a10, this.f21979c);
                 } else {
-                    bVar = (du.b) this.f21980e.getLast();
+                    bVar = (du.b) this.f21981e.getLast();
                 }
-                bVar2 = bVar.m(f21975n, kVar);
+                bVar2 = bVar.m(f21976n, kVar);
             }
             for (bu.s sVar : net.time4j.g0.i0().x()) {
-                for (bu.p pVar : sVar.a(this.f21978c, bVar2)) {
+                for (bu.p pVar : sVar.a(this.f21979c, bVar2)) {
                     if (z10 && pVar.d() == 'b' && S(pVar)) {
                         return (cu.t) c.h(pVar);
                     }
@@ -329,10 +329,10 @@ public final class c implements du.e, du.d {
             if (!pVar.name().endsWith("_DAY_PERIOD")) {
                 return false;
             }
-            if (this.f21977b != null || this.f21976a.F(pVar)) {
+            if (this.f21978b != null || this.f21977a.F(pVar)) {
                 return true;
             }
-            bu.x xVar = this.f21976a;
+            bu.x xVar = this.f21977a;
             do {
                 xVar = xVar.b();
                 if (xVar == null) {
@@ -353,7 +353,7 @@ public final class c implements du.e, du.d {
         }
 
         private void V() {
-            this.f21983h = 0;
+            this.f21984h = 0;
         }
 
         private void o(StringBuilder sb2) {
@@ -372,24 +372,24 @@ public final class c implements du.e, du.d {
             i H = H(pVar);
             r rVar = new r(pVar, z10, i10, i11, xVar, z11);
             if (z10) {
-                int i12 = this.f21982g;
+                int i12 = this.f21983g;
                 if (i12 == -1) {
                     w(rVar);
                     return this;
                 }
-                i iVar = (i) this.f21979d.get(i12);
+                i iVar = (i) this.f21980d.get(i12);
                 w(rVar);
-                List list = this.f21979d;
+                List list = this.f21980d;
                 if (iVar.f() == ((i) list.get(list.size() - 1)).f()) {
-                    this.f21982g = i12;
-                    this.f21979d.set(i12, iVar.t(i10));
+                    this.f21983g = i12;
+                    this.f21980d.set(i12, iVar.t(i10));
                 }
                 return this;
             } else if (H != null && H.j() && !H.i()) {
                 throw new IllegalStateException("Numerical element with variable width can't be inserted after another numerical element. Consider \"addFixedXXX()\" instead.");
             } else {
                 w(rVar);
-                this.f21982g = this.f21979d.size() - 1;
+                this.f21983g = this.f21980d.size() - 1;
                 return this;
             }
         }
@@ -399,9 +399,9 @@ public final class c implements du.e, du.d {
             du.b bVar;
             int i10;
             int i11;
-            this.f21982g = -1;
-            if (!this.f21980e.isEmpty()) {
-                bVar = (du.b) this.f21980e.getLast();
+            this.f21983g = -1;
+            if (!this.f21981e.isEmpty()) {
+                bVar = (du.b) this.f21981e.getLast();
                 i10 = bVar.g();
                 i11 = bVar.i();
             } else {
@@ -410,12 +410,12 @@ public final class c implements du.e, du.d {
                 i11 = 0;
             }
             i iVar = new i(hVar, i10, i11, bVar);
-            int i12 = this.f21983h;
+            int i12 = this.f21984h;
             if (i12 > 0) {
                 iVar = iVar.n(i12, 0);
-                this.f21983h = 0;
+                this.f21984h = 0;
             }
-            this.f21979d.add(iVar);
+            this.f21980d.add(iVar);
         }
 
         public d A(cu.t tVar) {
@@ -425,7 +425,7 @@ public final class c implements du.e, du.d {
         }
 
         public d B() {
-            if (R(this.f21976a)) {
+            if (R(this.f21977a)) {
                 w(c0.INSTANCE);
                 return this;
             }
@@ -441,20 +441,20 @@ public final class c implements du.e, du.d {
             J(pVar);
             H(pVar);
             f0 f0Var = new f0(pVar);
-            int i10 = this.f21982g;
+            int i10 = this.f21983g;
             if (i10 == -1) {
                 w(f0Var);
-                this.f21982g = this.f21979d.size() - 1;
+                this.f21983g = this.f21980d.size() - 1;
                 return this;
             }
-            i iVar = (i) this.f21979d.get(i10);
-            b0(cu.a.f21113f, cu.g.STRICT);
+            i iVar = (i) this.f21980d.get(i10);
+            b0(cu.a.f21114f, cu.g.STRICT);
             w(f0Var);
             L();
-            List list = this.f21979d;
+            List list = this.f21980d;
             if (iVar.f() == ((i) list.get(list.size() - 1)).f()) {
-                this.f21982g = i10;
-                this.f21979d.set(i10, iVar.t(2));
+                this.f21983g = i10;
+                this.f21980d.set(i10, iVar.t(2));
             }
             return this;
         }
@@ -462,10 +462,10 @@ public final class c implements du.e, du.d {
         /* JADX INFO: Access modifiers changed from: package-private */
         public d E(bu.p pVar, int i10, boolean z10) {
             i iVar;
-            if (this.f21979d.isEmpty()) {
+            if (this.f21980d.isEmpty()) {
                 iVar = null;
             } else {
-                List list = this.f21979d;
+                List list = this.f21980d;
                 iVar = (i) list.get(list.size() - 1);
             }
             if (iVar != null && !iVar.i() && iVar.j() && i10 == 4) {
@@ -481,16 +481,16 @@ public final class c implements du.e, du.d {
         public c G(cu.a aVar) {
             boolean z10;
             if (aVar != null) {
-                int size = this.f21979d.size();
+                int size = this.f21980d.size();
                 HashMap hashMap = null;
                 for (int i10 = 0; i10 < size; i10++) {
-                    i iVar = (i) this.f21979d.get(i10);
+                    i iVar = (i) this.f21980d.get(i10);
                     if (iVar.i()) {
                         int f10 = iVar.f();
                         int i11 = size - 1;
                         while (true) {
                             if (i11 > i10) {
-                                if (((i) this.f21979d.get(i11)).f() == f10) {
+                                if (((i) this.f21980d.get(i11)).f() == f10) {
                                     if (hashMap == null) {
                                         hashMap = new HashMap();
                                     }
@@ -511,22 +511,22 @@ public final class c implements du.e, du.d {
                 }
                 if (hashMap != null) {
                     for (Integer num : hashMap.keySet()) {
-                        this.f21979d.set(num.intValue(), hashMap.get(num));
+                        this.f21980d.set(num.intValue(), hashMap.get(num));
                     }
                 }
-                c cVar = new c(this.f21976a, this.f21977b, this.f21978c, this.f21979d, this.f21986k, aVar, this.f21987l, null);
-                String str = this.f21984i;
+                c cVar = new c(this.f21977a, this.f21978b, this.f21979c, this.f21980d, this.f21987k, aVar, this.f21988l, null);
+                String str = this.f21985i;
                 if (str == null) {
                     str = "";
                 }
-                if (this.f21985j != null || !str.isEmpty()) {
-                    du.b bVar = cVar.f21958c;
+                if (this.f21986j != null || !str.isEmpty()) {
+                    du.b bVar = cVar.f21959c;
                     if (!str.isEmpty()) {
-                        bVar = bVar.m(cu.a.f21131x, str);
+                        bVar = bVar.m(cu.a.f21132x, str);
                     }
-                    net.time4j.k kVar = this.f21985j;
+                    net.time4j.k kVar = this.f21986j;
                     if (kVar != null) {
-                        bVar = bVar.m(f21975n, kVar);
+                        bVar = bVar.m(f21976n, kVar);
                     }
                     return new c(cVar, bVar, (a) null);
                 }
@@ -536,15 +536,15 @@ public final class c implements du.e, du.d {
         }
 
         public d L() {
-            this.f21980e.removeLast();
+            this.f21981e.removeLast();
             V();
             return this;
         }
 
         public bu.x P() {
-            bu.x xVar = this.f21977b;
+            bu.x xVar = this.f21978b;
             if (xVar == null) {
-                return this.f21976a;
+                return this.f21977a;
             }
             return xVar;
         }
@@ -554,14 +554,14 @@ public final class c implements du.e, du.d {
             i iVar;
             int i11;
             int i12;
-            if (!this.f21980e.isEmpty()) {
-                i10 = ((du.b) this.f21980e.getLast()).i();
+            if (!this.f21981e.isEmpty()) {
+                i10 = ((du.b) this.f21981e.getLast()).i();
             } else {
                 i10 = 0;
             }
-            if (!this.f21979d.isEmpty()) {
-                i11 = this.f21979d.size() - 1;
-                iVar = (i) this.f21979d.get(i11);
+            if (!this.f21980d.isEmpty()) {
+                i11 = this.f21980d.size() - 1;
+                iVar = (i) this.f21980d.get(i11);
                 i12 = iVar.f();
             } else {
                 iVar = null;
@@ -569,9 +569,9 @@ public final class c implements du.e, du.d {
                 i12 = -1;
             }
             if (i10 == i12) {
-                this.f21979d.set(i11, iVar.v());
+                this.f21980d.set(i11, iVar.v());
                 V();
-                this.f21982g = -1;
+                this.f21983g = -1;
                 return this;
             }
             throw new IllegalStateException("Cannot start or-block without any previous step in current section.");
@@ -592,8 +592,8 @@ public final class c implements du.e, du.d {
             a aVar;
             V();
             a.b bVar2 = new a.b();
-            if (!this.f21980e.isEmpty()) {
-                bVar = (du.b) this.f21980e.getLast();
+            if (!this.f21981e.isEmpty()) {
+                bVar = (du.b) this.f21981e.getLast();
                 bVar2.f(bVar.e());
                 nVar2 = bVar.f();
             } else {
@@ -601,8 +601,8 @@ public final class c implements du.e, du.d {
                 nVar2 = null;
             }
             int Q = Q(bVar) + 1;
-            int i10 = this.f21981f + 1;
-            this.f21981f = i10;
+            int i10 = this.f21982f + 1;
+            this.f21982f = i10;
             if (nVar != null) {
                 if (nVar2 == null) {
                     aVar = nVar;
@@ -612,7 +612,7 @@ public final class c implements du.e, du.d {
             } else {
                 aVar = nVar2;
             }
-            this.f21980e.addLast(new du.b(bVar2.a(), this.f21978c, Q, i10, aVar));
+            this.f21981e.addLast(new du.b(bVar2.a(), this.f21979c, Q, i10, aVar));
             return this;
         }
 
@@ -620,16 +620,16 @@ public final class c implements du.e, du.d {
             du.b l10;
             I(cVar);
             V();
-            if (this.f21980e.isEmpty()) {
-                l10 = new du.b(new a.b().b(cVar, c10).a(), this.f21978c);
+            if (this.f21981e.isEmpty()) {
+                l10 = new du.b(new a.b().b(cVar, c10).a(), this.f21979c);
             } else {
-                du.b bVar = (du.b) this.f21980e.getLast();
+                du.b bVar = (du.b) this.f21981e.getLast();
                 a.b bVar2 = new a.b();
                 bVar2.f(bVar.e());
                 bVar2.b(cVar, c10);
                 l10 = bVar.l(bVar2.a());
             }
-            this.f21980e.addLast(l10);
+            this.f21981e.addLast(l10);
             return this;
         }
 
@@ -637,16 +637,16 @@ public final class c implements du.e, du.d {
             du.b l10;
             I(cVar);
             V();
-            if (this.f21980e.isEmpty()) {
-                l10 = new du.b(new a.b().c(cVar, i10).a(), this.f21978c);
+            if (this.f21981e.isEmpty()) {
+                l10 = new du.b(new a.b().c(cVar, i10).a(), this.f21979c);
             } else {
-                du.b bVar = (du.b) this.f21980e.getLast();
+                du.b bVar = (du.b) this.f21981e.getLast();
                 a.b bVar2 = new a.b();
                 bVar2.f(bVar.e());
                 bVar2.c(cVar, i10);
                 l10 = bVar.l(bVar2.a());
             }
-            this.f21980e.addLast(l10);
+            this.f21981e.addLast(l10);
             return this;
         }
 
@@ -654,16 +654,16 @@ public final class c implements du.e, du.d {
             du.b l10;
             I(cVar);
             V();
-            if (this.f21980e.isEmpty()) {
-                l10 = new du.b(new a.b().d(cVar, r52).a(), this.f21978c);
+            if (this.f21981e.isEmpty()) {
+                l10 = new du.b(new a.b().d(cVar, r52).a(), this.f21979c);
             } else {
-                du.b bVar = (du.b) this.f21980e.getLast();
+                du.b bVar = (du.b) this.f21981e.getLast();
                 a.b bVar2 = new a.b();
                 bVar2.f(bVar.e());
                 bVar2.d(cVar, r52);
                 l10 = bVar.l(bVar2.a());
             }
-            this.f21980e.addLast(l10);
+            this.f21981e.addLast(l10);
             return this;
         }
 
@@ -699,14 +699,14 @@ public final class c implements du.e, du.d {
             }
             N(z11, z10);
             j jVar = new j(pVar, i10, i11, z10);
-            int i12 = this.f21982g;
+            int i12 = this.f21983g;
             if (i12 != -1 && z11) {
-                i iVar = (i) this.f21979d.get(i12);
+                i iVar = (i) this.f21980d.get(i12);
                 w(jVar);
-                List list = this.f21979d;
+                List list = this.f21980d;
                 if (iVar.f() == ((i) list.get(list.size() - 1)).f()) {
-                    this.f21982g = i12;
-                    this.f21979d.set(i12, iVar.t(i10));
+                    this.f21983g = i12;
+                    this.f21980d.set(i12, iVar.t(i10));
                 }
                 return this;
             }
@@ -737,24 +737,24 @@ public final class c implements du.e, du.d {
             m mVar = new m(str);
             int c10 = mVar.c();
             if (c10 > 0) {
-                if (this.f21979d.isEmpty()) {
+                if (this.f21980d.isEmpty()) {
                     iVar = null;
                 } else {
-                    List list = this.f21979d;
+                    List list = this.f21980d;
                     iVar = (i) list.get(list.size() - 1);
                 }
                 if (iVar != null && iVar.g() && !iVar.i()) {
                     throw new IllegalStateException("Numerical literal can't be inserted after an element with decimal digits.");
                 }
             }
-            if (c10 != 0 && (i10 = this.f21982g) != -1) {
-                i iVar2 = (i) this.f21979d.get(i10);
+            if (c10 != 0 && (i10 = this.f21983g) != -1) {
+                i iVar2 = (i) this.f21980d.get(i10);
                 w(mVar);
                 int f10 = iVar2.f();
-                List list2 = this.f21979d;
+                List list2 = this.f21980d;
                 if (f10 == ((i) list2.get(list2.size() - 1)).f()) {
-                    this.f21982g = i10;
-                    this.f21979d.set(i10, iVar2.t(c10));
+                    this.f21983g = i10;
+                    this.f21980d.set(i10, iVar2.t(c10));
                 }
                 return this;
             }
@@ -785,10 +785,10 @@ public final class c implements du.e, du.d {
             if (wVar != null) {
                 Map map = Collections.EMPTY_MAP;
                 int length = str.length();
-                Locale locale = this.f21978c;
+                Locale locale = this.f21979c;
                 StringBuilder sb2 = new StringBuilder();
-                if (!this.f21980e.isEmpty()) {
-                    locale = ((du.b) this.f21980e.getLast()).h();
+                if (!this.f21981e.isEmpty()) {
+                    locale = ((du.b) this.f21981e.getLast()).h();
                 }
                 int i10 = 0;
                 while (i10 < length) {
@@ -856,19 +856,19 @@ public final class c implements du.e, du.d {
                 }
                 o(sb2);
                 if (!map.isEmpty()) {
-                    int size = this.f21979d.size();
+                    int size = this.f21980d.size();
                     for (int i15 = 0; i15 < size; i15++) {
-                        i iVar = (i) this.f21979d.get(i15);
+                        i iVar = (i) this.f21980d.get(i15);
                         bu.p element = iVar.d().getElement();
                         if (map.containsKey(element)) {
-                            this.f21979d.set(i15, iVar.x((bu.p) map.get(element)));
+                            this.f21980d.set(i15, iVar.x((bu.p) map.get(element)));
                         }
                     }
                 }
-                if (this.f21984i != null) {
+                if (this.f21985i != null) {
                     str = "";
                 }
-                this.f21984i = str;
+                this.f21985i = str;
                 return this;
             }
             throw new NullPointerException("Missing pattern type.");
@@ -909,19 +909,19 @@ public final class c implements du.e, du.d {
                 throw new NullPointerException("Missing chronology.");
             }
             if (locale != null) {
-                this.f21976a = xVar;
-                this.f21977b = xVar2;
-                this.f21978c = locale;
-                this.f21979d = new ArrayList();
-                this.f21980e = new LinkedList();
-                this.f21981f = 0;
-                this.f21982g = -1;
-                this.f21983h = 0;
-                this.f21984i = null;
-                this.f21985j = null;
-                this.f21986k = new HashMap();
-                this.f21987l = xVar;
-                this.f21988m = 0;
+                this.f21977a = xVar;
+                this.f21978b = xVar2;
+                this.f21979c = locale;
+                this.f21980d = new ArrayList();
+                this.f21981e = new LinkedList();
+                this.f21982f = 0;
+                this.f21983g = -1;
+                this.f21984h = 0;
+                this.f21985i = null;
+                this.f21986j = null;
+                this.f21987k = new HashMap();
+                this.f21988l = xVar;
+                this.f21989m = 0;
                 return;
             }
             throw new NullPointerException("Missing locale.");
@@ -933,17 +933,17 @@ public final class c implements du.e, du.d {
     public static class e implements bu.u {
 
         /* renamed from: d  reason: collision with root package name */
-        private final bu.x f21992d;
+        private final bu.x f21993d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final List f21993e;
+        private final List f21994e;
 
         private e(bu.x xVar) {
-            this.f21992d = xVar;
+            this.f21993d = xVar;
             ArrayList arrayList = new ArrayList();
             arrayList.addAll(xVar.x());
             arrayList.addAll(net.time4j.g0.i0().x());
-            this.f21993e = Collections.unmodifiableList(arrayList);
+            this.f21994e = Collections.unmodifiableList(arrayList);
         }
 
         static e g(bu.x xVar) {
@@ -955,7 +955,7 @@ public final class c implements du.e, du.d {
 
         @Override // bu.u
         public bu.f0 a() {
-            return this.f21992d.a();
+            return this.f21993d.a();
         }
 
         @Override // bu.u
@@ -965,13 +965,13 @@ public final class c implements du.e, du.d {
 
         @Override // bu.u
         public int c() {
-            return this.f21992d.c();
+            return this.f21993d.c();
         }
 
         @Override // bu.u
         /* renamed from: d */
         public net.time4j.r h(bu.q qVar, bu.d dVar, boolean z10, boolean z11) {
-            Object h10 = this.f21992d.h(qVar, dVar, z10, z11);
+            Object h10 = this.f21993d.h(qVar, dVar, z10, z11);
             net.time4j.g0 g0Var = (net.time4j.g0) net.time4j.g0.i0().h(qVar, dVar, z10, z11);
             if (h10 instanceof bu.m) {
                 return (net.time4j.r) c.h(net.time4j.r.b((bu.m) bu.m.class.cast(h10), g0Var));
@@ -980,7 +980,7 @@ public final class c implements du.e, du.d {
         }
 
         public bu.x e() {
-            return this.f21992d;
+            return this.f21993d;
         }
 
         public boolean equals(Object obj) {
@@ -988,17 +988,17 @@ public final class c implements du.e, du.d {
                 return true;
             }
             if (obj instanceof e) {
-                return this.f21992d.equals(((e) obj).f21992d);
+                return this.f21993d.equals(((e) obj).f21993d);
             }
             return false;
         }
 
         public List f() {
-            return this.f21993e;
+            return this.f21994e;
         }
 
         public int hashCode() {
-            return this.f21992d.hashCode();
+            return this.f21993d.hashCode();
         }
 
         @Override // bu.u
@@ -1013,7 +1013,7 @@ public final class c implements du.e, du.d {
         }
 
         public String toString() {
-            return this.f21992d.q().getName();
+            return this.f21993d.q().getName();
         }
     }
 
@@ -1022,13 +1022,13 @@ public final class c implements du.e, du.d {
     public static class f implements bu.o, zt.f {
 
         /* renamed from: d  reason: collision with root package name */
-        private final net.time4j.r f21994d;
+        private final net.time4j.r f21995d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f21995e;
+        private final String f21996e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final net.time4j.tz.k f21996i;
+        private final net.time4j.tz.k f21997i;
 
         /* synthetic */ f(net.time4j.r rVar, String str, net.time4j.tz.k kVar, a aVar) {
             this(rVar, str, kVar);
@@ -1037,11 +1037,11 @@ public final class c implements du.e, du.d {
         private zt.f b() {
             bu.f0 f0Var;
             try {
-                f0Var = bu.x.G(this.f21994d.c().getClass()).a();
+                f0Var = bu.x.G(this.f21995d.c().getClass()).a();
             } catch (RuntimeException unused) {
                 f0Var = bu.f0.f7804a;
             }
-            return this.f21994d.a(net.time4j.tz.l.N(this.f21996i), f0Var);
+            return this.f21995d.a(net.time4j.tz.l.N(this.f21997i), f0Var);
         }
 
         @Override // zt.f
@@ -1051,7 +1051,7 @@ public final class c implements du.e, du.d {
 
         @Override // bu.o
         public Object k(bu.p pVar) {
-            return this.f21994d.k(pVar);
+            return this.f21995d.k(pVar);
         }
 
         @Override // bu.o
@@ -1061,12 +1061,12 @@ public final class c implements du.e, du.d {
 
         @Override // bu.o
         public int m(bu.p pVar) {
-            return this.f21994d.m(pVar);
+            return this.f21995d.m(pVar);
         }
 
         @Override // bu.o
         public boolean n(bu.p pVar) {
-            return this.f21994d.n(pVar);
+            return this.f21995d.n(pVar);
         }
 
         @Override // zt.f
@@ -1076,23 +1076,23 @@ public final class c implements du.e, du.d {
 
         @Override // bu.o
         public net.time4j.tz.k r() {
-            return this.f21996i;
+            return this.f21997i;
         }
 
         @Override // bu.o
         public Object t(bu.p pVar) {
-            return this.f21994d.t(pVar);
+            return this.f21995d.t(pVar);
         }
 
         @Override // bu.o
         public Object v(bu.p pVar) {
-            return this.f21994d.v(pVar);
+            return this.f21995d.v(pVar);
         }
 
         private f(net.time4j.r rVar, String str, net.time4j.tz.k kVar) {
-            this.f21994d = rVar;
-            this.f21995e = str;
-            this.f21996i = kVar;
+            this.f21995d = rVar;
+            this.f21996e = str;
+            this.f21997i = kVar;
         }
     }
 
@@ -1185,7 +1185,7 @@ public final class c implements du.e, du.d {
         bu.x xVar3;
         Object E;
         bu.x b10 = xVar.b();
-        if (b10 != null && xVar != (xVar3 = cVar.f21970o)) {
+        if (b10 != null && xVar != (xVar3 = cVar.f21971o)) {
             if (b10 == xVar3) {
                 E = D(cVar, b10, b10.x(), charSequence, sVar, dVar, gVar, true, z10);
             } else {
@@ -1248,21 +1248,21 @@ public final class c implements du.e, du.d {
         v vVar2;
         int i11;
         bu.p element;
-        v vVar3 = new v(i10, this.f21967l);
+        v vVar3 = new v(i10, this.f21968l);
         vVar3.d0(sVar.f());
-        if (this.f21962g) {
+        if (this.f21963g) {
             LinkedList linkedList2 = new LinkedList();
             linkedList2.push(vVar3);
             linkedList = linkedList2;
         } else {
             linkedList = null;
         }
-        int size = this.f21959d.size();
+        int size = this.f21960d.size();
         int i12 = 0;
         int i13 = 0;
         int i14 = 0;
         while (i14 < size) {
-            i iVar = (i) this.f21959d.get(i14);
+            i iVar = (i) this.f21960d.get(i14);
             if (linkedList == null) {
                 vVar2 = vVar3;
                 vVar = vVar2;
@@ -1270,7 +1270,7 @@ public final class c implements du.e, du.d {
                 i12 = iVar.b();
                 int i15 = i12;
                 while (i15 > i13) {
-                    vVar3 = new v(i10 >>> 1, this.f21967l);
+                    vVar3 = new v(i10 >>> 1, this.f21968l);
                     vVar3.d0(sVar.f());
                     linkedList.push(vVar3);
                     i15--;
@@ -1286,8 +1286,8 @@ public final class c implements du.e, du.d {
             int i16 = i12;
             sVar.b();
             iVar.q(charSequence, sVar, dVar, vVar2, z10);
-            if (sVar.j() && (element = iVar.d().getElement()) != null && this.f21960e.containsKey(element)) {
-                vVar2.I(element, this.f21960e.get(element));
+            if (sVar.j() && (element = iVar.d().getElement()) != null && this.f21961e.containsKey(element)) {
+                vVar2.I(element, this.f21961e.get(element));
                 vVar2.E(n0.ERROR_MESSAGE, null);
                 sVar.a();
                 sVar.b();
@@ -1297,7 +1297,7 @@ public final class c implements du.e, du.d {
                 if (!iVar.i()) {
                     i11 = i14 + 1;
                     while (i11 < size) {
-                        i iVar2 = (i) this.f21959d.get(i11);
+                        i iVar2 = (i) this.f21960d.get(i11);
                         if (iVar2.i() && iVar2.f() == f10) {
                             break;
                         }
@@ -1315,14 +1315,14 @@ public final class c implements du.e, du.d {
                     }
                     int b10 = iVar.b();
                     int i17 = i11;
-                    for (int i18 = i14 + 1; i18 < size && ((i) this.f21959d.get(i18)).b() > b10; i18++) {
+                    for (int i18 = i14 + 1; i18 < size && ((i) this.f21960d.get(i18)).b() > b10; i18++) {
                         i17 = i18;
                     }
                     int i19 = size - 1;
                     while (true) {
                         if (i19 <= i17) {
                             break;
-                        } else if (((i) this.f21959d.get(i19)).f() == f10) {
+                        } else if (((i) this.f21960d.get(i19)).f() == f10) {
                             i17 = i19;
                             break;
                         } else {
@@ -1386,12 +1386,12 @@ public final class c implements du.e, du.d {
         hashMap.put("PST", net.time4j.tz.p.r(fVar, 8));
         hashMap.put("PDT", net.time4j.tz.p.r(fVar, 7));
         N.w(new du.f(b0.TIMEZONE_OFFSET, new a(), new b(hashMap)));
-        return N.F().V(net.time4j.tz.p.f37785v);
+        return N.F().V(net.time4j.tz.p.f37786v);
     }
 
     private static void M(d dVar) {
         d X = dVar.X();
-        bu.c cVar = cu.a.f21114g;
+        bu.c cVar = cu.a.f21115g;
         cu.v vVar = cu.v.ABBREVIATED;
         X.b0(cVar, vVar).z(net.time4j.f0.G).L().n(", ").L().j(net.time4j.f0.F, 1, 2).l(' ').b0(cVar, vVar).z(net.time4j.f0.D).L().l(' ').g(net.time4j.f0.A, 4).l(' ').g(net.time4j.g0.F, 2).l(':').g(net.time4j.g0.H, 2).X().l(':').g(net.time4j.g0.J, 2).L().l(' ');
     }
@@ -1443,7 +1443,7 @@ public final class c implements du.e, du.d {
                         if (i12 < length && str.charAt(i12) == '\'') {
                             i11 = i12;
                         } else {
-                            if (z10 && i11 == i10 + 2 && d.R(dVar.f21976a)) {
+                            if (z10 && i11 == i10 + 2 && d.R(dVar.f21977a)) {
                                 throw new IllegalArgumentException("Z-literal (=UTC+00) should not be escaped: " + str);
                             }
                             i10 = i11;
@@ -1458,7 +1458,7 @@ public final class c implements du.e, du.d {
             i10++;
         }
         String sb3 = sb2.toString();
-        int i13 = C0297c.f21974a[wVar.ordinal()];
+        int i13 = C0297c.f21975a[wVar.ordinal()];
         if (i13 == 1 || i13 == 2 || i13 == 3 || i13 == 4) {
             if ((sb3.contains("h") || sb3.contains("K")) && !sb3.contains("a") && !sb3.contains("b") && !sb3.contains("B")) {
                 throw new IllegalArgumentException("12-hour-clock requires am/pm-marker or dayperiod: " + str);
@@ -1511,22 +1511,22 @@ public final class c implements du.e, du.d {
 
     private bu.o k(Object obj, bu.d dVar) {
         net.time4j.r q02;
-        e eVar = this.f21957b;
+        e eVar = this.f21958b;
         if (eVar == null) {
-            return this.f21956a.m(obj, dVar);
+            return this.f21957a.m(obj, dVar);
         }
         try {
             Class q10 = eVar.e().q();
-            bu.f0 f0Var = (bu.f0) dVar.b(cu.a.f21128u, this.f21957b.a());
+            bu.f0 f0Var = (bu.f0) dVar.b(cu.a.f21129u, this.f21958b.a());
             net.time4j.a0 a0Var = (net.time4j.a0) net.time4j.a0.class.cast(obj);
-            net.time4j.tz.k kVar = (net.time4j.tz.k) dVar.c(cu.a.f21111d);
+            net.time4j.tz.k kVar = (net.time4j.tz.k) dVar.c(cu.a.f21112d);
             String str = "";
             if (bu.l.class.isAssignableFrom(q10)) {
-                android.support.v4.media.session.b.a(h(this.f21957b.e()));
-                str = (String) dVar.c(cu.a.f21127t);
+                android.support.v4.media.session.b.a(h(this.f21958b.e()));
+                str = (String) dVar.c(cu.a.f21128t);
                 q02 = a0Var.p0(null, str, kVar, f0Var);
             } else if (bu.m.class.isAssignableFrom(q10)) {
-                q02 = a0Var.q0(this.f21957b.e(), kVar, f0Var);
+                q02 = a0Var.q0(this.f21958b.e(), kVar, f0Var);
             } else {
                 throw new IllegalStateException("Unexpected calendar override: " + q10);
             }
@@ -1539,9 +1539,9 @@ public final class c implements du.e, du.d {
     }
 
     private String m(bu.o oVar) {
-        StringBuilder sb2 = new StringBuilder(this.f21959d.size() * 8);
+        StringBuilder sb2 = new StringBuilder(this.f21960d.size() * 8);
         try {
-            J(oVar, sb2, this.f21958c, false);
+            J(oVar, sb2, this.f21959c, false);
             return sb2.toString();
         } catch (IOException e10) {
             throw new IllegalStateException(e10);
@@ -1609,7 +1609,7 @@ public final class c implements du.e, du.d {
     private boolean w() {
         boolean z10 = z();
         if (z10) {
-            h d10 = ((i) this.f21959d.get(0)).d();
+            h d10 = ((i) this.f21960d.get(0)).d();
             if (d10 instanceof du.f) {
                 return ((du.f) du.f.class.cast(d10)).c();
             }
@@ -1621,7 +1621,7 @@ public final class c implements du.e, du.d {
     }
 
     private boolean x() {
-        if (this.f21956a.b() == null && this.f21957b == null) {
+        if (this.f21957a.b() == null && this.f21958b == null) {
             return true;
         }
         return false;
@@ -1642,7 +1642,7 @@ public final class c implements du.e, du.d {
         Object G = G(charSequence, sVar);
         if (G != null) {
             int f10 = sVar.f();
-            if (!this.f21968m && f10 < charSequence.length()) {
+            if (!this.f21969m && f10 < charSequence.length()) {
                 throw new ParseException("Unparsed trailing characters: " + P(f10, charSequence), f10);
             }
             return G;
@@ -1651,15 +1651,15 @@ public final class c implements du.e, du.d {
     }
 
     public Object G(CharSequence charSequence, s sVar) {
-        if (this.f21969n) {
-            bu.x xVar = this.f21956a;
-            return D(this, xVar, xVar.x(), charSequence, sVar, this.f21958c, this.f21966k, false, true);
+        if (this.f21970n) {
+            bu.x xVar = this.f21957a;
+            return D(this, xVar, xVar.x(), charSequence, sVar, this.f21959c, this.f21967k, false, true);
         }
-        return a(charSequence, sVar, this.f21958c);
+        return a(charSequence, sVar, this.f21959c);
     }
 
     public String I(Object obj) {
-        return m(k(obj, this.f21958c));
+        return m(k(obj, this.f21959c));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -1670,12 +1670,12 @@ public final class c implements du.e, du.d {
         int i11;
         Appendable appendable2 = appendable;
         if (appendable2 != null) {
-            int size = this.f21959d.size();
+            int size = this.f21960d.size();
             int i12 = 0;
             bu.d dVar2 = dVar;
-            boolean z11 = dVar2 == this.f21958c;
+            boolean z11 = dVar2 == this.f21959c;
             LinkedHashSet linkedHashSet = z10 ? new LinkedHashSet(size) : null;
-            if (this.f21963h) {
+            if (this.f21964h) {
                 LinkedList linkedList2 = new LinkedList();
                 linkedList2.push(new StringBuilder(size << 2));
                 if (z10) {
@@ -1687,7 +1687,7 @@ public final class c implements du.e, du.d {
                 }
                 int i13 = 0;
                 while (i13 < size) {
-                    i iVar = (i) this.f21959d.get(i13);
+                    i iVar = (i) this.f21960d.get(i13);
                     int b10 = iVar.b();
                     int i14 = b10;
                     while (i14 > i12) {
@@ -1729,7 +1729,7 @@ public final class c implements du.e, du.d {
                         if (!iVar.i()) {
                             i11 = i13 + 1;
                             while (i11 < size) {
-                                i iVar2 = (i) this.f21959d.get(i11);
+                                i iVar2 = (i) this.f21960d.get(i11);
                                 if (iVar2.i() && iVar2.f() == f10) {
                                     break;
                                 }
@@ -1775,7 +1775,7 @@ public final class c implements du.e, du.d {
                 int i15 = 0;
                 while (i15 < size) {
                     try {
-                        i iVar3 = (i) this.f21959d.get(i15);
+                        i iVar3 = (i) this.f21960d.get(i15);
                         iVar3.r(oVar, appendable2, dVar, linkedHashSet, z11);
                         if (iVar3.i()) {
                             i15 = iVar3.u();
@@ -1800,22 +1800,22 @@ public final class c implements du.e, du.d {
     }
 
     public c R(bu.c cVar, Enum r42) {
-        return new c(this, new a.b().f(this.f21958c.e()).d(cVar, r42).a());
+        return new c(this, new a.b().f(this.f21959c.e()).d(cVar, r42).a());
     }
 
     public c S(cu.g gVar) {
-        return R(cu.a.f21113f, gVar);
+        return R(cu.a.f21114f, gVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c T(Map map, du.b bVar) {
-        du.b k10 = du.b.k(bVar, this.f21958c);
-        return new c(new c(this, map), k10, (net.time4j.history.d) k10.b(gu.a.f26025a, null));
+        du.b k10 = du.b.k(bVar, this.f21959c);
+        return new c(new c(this, map), k10, (net.time4j.history.d) k10.b(gu.a.f26026a, null));
     }
 
     public c U(net.time4j.tz.l lVar) {
         if (lVar != null) {
-            return new c(this, this.f21958c.l(new a.b().f(this.f21958c.e()).i(lVar.z()).a()).m(cu.a.f21112e, lVar.E()));
+            return new c(this, this.f21959c.l(new a.b().f(this.f21959c.e()).i(lVar.z()).a()).m(cu.a.f21113e, lVar.E()));
         }
         throw new NullPointerException("Missing timezone id.");
     }
@@ -1832,23 +1832,23 @@ public final class c implements du.e, du.d {
         net.time4j.tz.k kVar;
         net.time4j.a0 a0Var;
         net.time4j.tz.g gVar2;
-        cu.g gVar3 = this.f21966k;
-        du.b bVar = this.f21958c;
+        cu.g gVar3 = this.f21967k;
+        du.b bVar = this.f21959c;
         if (dVar != bVar) {
             p pVar2 = new p(dVar, bVar);
             z10 = false;
             pVar = pVar2;
-            gVar = (cu.g) pVar2.b(cu.a.f21113f, cu.g.SMART);
+            gVar = (cu.g) pVar2.b(cu.a.f21114f, cu.g.SMART);
         } else {
             z10 = true;
             pVar = dVar;
             gVar = gVar3;
         }
         boolean z11 = z10;
-        e eVar = this.f21957b;
+        e eVar = this.f21958b;
         if (eVar != null) {
             List f10 = eVar.f();
-            e eVar2 = this.f21957b;
+            e eVar2 = this.f21958b;
             net.time4j.r rVar = (net.time4j.r) D(this, eVar2, f10, charSequence, sVar, pVar, gVar, true, z11);
             if (sVar.i()) {
                 return null;
@@ -1857,7 +1857,7 @@ public final class c implements du.e, du.d {
             if (h10.l()) {
                 kVar = h10.r();
             } else {
-                bu.c cVar = cu.a.f21111d;
+                bu.c cVar = cu.a.f21112d;
                 if (pVar.a(cVar)) {
                     kVar = (net.time4j.tz.k) pVar.c(cVar);
                 } else {
@@ -1865,11 +1865,11 @@ public final class c implements du.e, du.d {
                 }
             }
             if (kVar != null) {
-                bu.f0 f0Var = (bu.f0) dVar.b(cu.a.f21128u, eVar2.a());
+                bu.f0 f0Var = (bu.f0) dVar.b(cu.a.f21129u, eVar2.a());
                 bu.b0 b0Var = bu.b0.DAYLIGHT_SAVING;
                 if (h10.n(b0Var)) {
                     boolean booleanValue = ((Boolean) h10.k(b0Var)).booleanValue();
-                    net.time4j.tz.o oVar = (net.time4j.tz.o) pVar.b(cu.a.f21112e, net.time4j.tz.l.f37723o);
+                    net.time4j.tz.o oVar = (net.time4j.tz.o) pVar.b(cu.a.f21113e, net.time4j.tz.l.f37724o);
                     if (booleanValue) {
                         gVar2 = net.time4j.tz.g.EARLIER_OFFSET;
                     } else {
@@ -1877,7 +1877,7 @@ public final class c implements du.e, du.d {
                     }
                     a0Var = rVar.a(net.time4j.tz.l.N(kVar).Q(oVar.a(gVar2)), f0Var);
                 } else {
-                    bu.c cVar2 = cu.a.f21112e;
+                    bu.c cVar2 = cu.a.f21113e;
                     if (pVar.a(cVar2)) {
                         a0Var = rVar.a(net.time4j.tz.l.N(kVar).Q((net.time4j.tz.o) pVar.c(cVar2)), f0Var);
                     } else {
@@ -1898,7 +1898,7 @@ public final class c implements du.e, du.d {
             }
             return h11;
         }
-        return E(this, this.f21956a, 0, charSequence, sVar, pVar, gVar, z11);
+        return E(this, this.f21957a, 0, charSequence, sVar, pVar, gVar, z11);
     }
 
     @Override // du.e
@@ -1914,7 +1914,7 @@ public final class c implements du.e, du.d {
         }
         if (obj instanceof c) {
             c cVar = (c) obj;
-            if (this.f21956a.equals(cVar.f21956a) && y(this.f21957b, cVar.f21957b) && this.f21958c.equals(cVar.f21958c) && this.f21960e.equals(cVar.f21960e) && this.f21959d.equals(cVar.f21959d)) {
+            if (this.f21957a.equals(cVar.f21957a) && y(this.f21958b, cVar.f21958b) && this.f21959c.equals(cVar.f21959c) && this.f21961e.equals(cVar.f21961e) && this.f21960d.equals(cVar.f21960d)) {
                 return true;
             }
         }
@@ -1922,7 +1922,7 @@ public final class c implements du.e, du.d {
     }
 
     public int hashCode() {
-        return (this.f21956a.hashCode() * 7) + (this.f21958c.hashCode() * 31) + (this.f21959d.hashCode() * 37);
+        return (this.f21957a.hashCode() * 7) + (this.f21959c.hashCode() * 31) + (this.f21960d.hashCode() * 37);
     }
 
     public String l(Object obj) {
@@ -1930,38 +1930,38 @@ public final class c implements du.e, du.d {
     }
 
     public bu.d o() {
-        return this.f21958c;
+        return this.f21959c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public du.b p() {
-        return this.f21958c;
+        return this.f21959c;
     }
 
     public bu.x q() {
-        return this.f21956a;
+        return this.f21957a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Map r() {
-        return this.f21960e;
+        return this.f21961e;
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER);
         sb2.append("net.time4j.format.ChronoFormatter[chronology=");
-        sb2.append(this.f21956a.q().getName());
-        if (this.f21957b != null) {
+        sb2.append(this.f21957a.q().getName());
+        if (this.f21958b != null) {
             sb2.append(", override=");
-            sb2.append(this.f21957b);
+            sb2.append(this.f21958b);
         }
         sb2.append(", default-attributes=");
-        sb2.append(this.f21958c);
+        sb2.append(this.f21959c);
         sb2.append(", default-values=");
-        sb2.append(this.f21960e);
+        sb2.append(this.f21961e);
         sb2.append(", processors=");
         boolean z10 = true;
-        for (i iVar : this.f21959d) {
+        for (i iVar : this.f21960d) {
             if (z10) {
                 sb2.append('{');
                 z10 = false;
@@ -1975,12 +1975,12 @@ public final class c implements du.e, du.d {
     }
 
     public Locale u() {
-        return this.f21958c.h();
+        return this.f21959c.h();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean z() {
-        if (this.f21971p == 1 && !this.f21962g) {
+        if (this.f21972p == 1 && !this.f21963g) {
             return true;
         }
         return false;
@@ -1993,13 +1993,13 @@ public final class c implements du.e, du.d {
     private c(bu.x xVar, bu.x xVar2, Locale locale, List list, Map map, cu.a aVar, bu.x xVar3) {
         if (xVar != null) {
             if (!list.isEmpty()) {
-                this.f21956a = xVar;
-                this.f21957b = e.g(xVar2);
-                this.f21970o = xVar3;
+                this.f21957a = xVar;
+                this.f21958b = e.g(xVar2);
+                this.f21971o = xVar3;
                 du.b d10 = du.b.d(xVar2 == null ? xVar : xVar2, aVar, locale);
-                this.f21958c = d10;
-                this.f21966k = (cu.g) d10.b(cu.a.f21113f, cu.g.SMART);
-                this.f21960e = Collections.unmodifiableMap(map);
+                this.f21959c = d10;
+                this.f21967k = (cu.g) d10.b(cu.a.f21114f, cu.g.SMART);
+                this.f21961e = Collections.unmodifiableMap(map);
                 Iterator it = list.iterator();
                 j jVar = null;
                 boolean z10 = true;
@@ -2027,17 +2027,17 @@ public final class c implements du.e, du.d {
                         }
                     }
                 }
-                this.f21961f = jVar;
-                this.f21962g = z11;
-                this.f21963h = z12;
-                this.f21964i = z13;
-                this.f21965j = i10;
-                this.f21967l = z10;
-                this.f21968m = ((Boolean) this.f21958c.b(cu.a.f21125r, Boolean.FALSE)).booleanValue();
-                this.f21969n = x();
-                this.f21971p = list.size();
-                this.f21959d = n(list);
-                this.f21972q = w();
+                this.f21962f = jVar;
+                this.f21963g = z11;
+                this.f21964h = z12;
+                this.f21965i = z13;
+                this.f21966j = i10;
+                this.f21968l = z10;
+                this.f21969m = ((Boolean) this.f21959c.b(cu.a.f21126r, Boolean.FALSE)).booleanValue();
+                this.f21970n = x();
+                this.f21972p = list.size();
+                this.f21960d = n(list);
+                this.f21973q = w();
                 return;
             }
             throw new IllegalStateException("No format processors defined.");
@@ -2046,7 +2046,7 @@ public final class c implements du.e, du.d {
     }
 
     private c(c cVar, cu.a aVar) {
-        this(cVar, cVar.f21958c.l(aVar), (net.time4j.history.d) null);
+        this(cVar, cVar.f21959c.l(aVar), (net.time4j.history.d) null);
     }
 
     private c(c cVar, du.b bVar) {
@@ -2056,24 +2056,24 @@ public final class c implements du.e, du.d {
     private c(c cVar, du.b bVar, net.time4j.history.d dVar) {
         bu.p C;
         if (bVar != null) {
-            this.f21956a = cVar.f21956a;
-            this.f21957b = cVar.f21957b;
-            this.f21970o = cVar.f21970o;
-            this.f21958c = bVar;
-            this.f21966k = (cu.g) bVar.b(cu.a.f21113f, cu.g.SMART);
-            this.f21960e = Collections.unmodifiableMap(new q(cVar.f21960e));
-            this.f21961f = cVar.f21961f;
-            this.f21962g = cVar.f21962g;
-            this.f21963h = cVar.f21963h;
-            this.f21964i = cVar.f21964i || dVar != null;
-            this.f21965j = cVar.f21965j;
-            int size = cVar.f21959d.size();
-            ArrayList arrayList = new ArrayList(cVar.f21959d);
-            boolean z10 = cVar.f21967l;
+            this.f21957a = cVar.f21957a;
+            this.f21958b = cVar.f21958b;
+            this.f21971o = cVar.f21971o;
+            this.f21959c = bVar;
+            this.f21967k = (cu.g) bVar.b(cu.a.f21114f, cu.g.SMART);
+            this.f21961e = Collections.unmodifiableMap(new q(cVar.f21961e));
+            this.f21962f = cVar.f21962f;
+            this.f21963g = cVar.f21963g;
+            this.f21964h = cVar.f21964h;
+            this.f21965i = cVar.f21965i || dVar != null;
+            this.f21966j = cVar.f21966j;
+            int size = cVar.f21960d.size();
+            ArrayList arrayList = new ArrayList(cVar.f21960d);
+            boolean z10 = cVar.f21968l;
             for (int i10 = 0; i10 < size; i10++) {
                 i iVar = (i) arrayList.get(i10);
                 bu.p element = iVar.d().getElement();
-                bu.x xVar = this.f21956a;
+                bu.x xVar = this.f21957a;
                 xVar = xVar == net.time4j.a0.T() ? xVar.b() : xVar;
                 if (element != null && !xVar.E(element)) {
                     Iterator it = xVar.x().iterator();
@@ -2082,7 +2082,7 @@ public final class c implements du.e, du.d {
                             break;
                         }
                         bu.s sVar = (bu.s) it.next();
-                        if (sVar.a(cVar.u(), cVar.f21958c).contains(element)) {
+                        if (sVar.a(cVar.u(), cVar.f21959c).contains(element)) {
                             Iterator it2 = sVar.a(bVar.h(), bVar).iterator();
                             while (true) {
                                 if (!it2.hasNext()) {
@@ -2117,12 +2117,12 @@ public final class c implements du.e, du.d {
                     z10 = false;
                 }
             }
-            this.f21967l = z10;
-            this.f21968m = ((Boolean) this.f21958c.b(cu.a.f21125r, Boolean.FALSE)).booleanValue();
-            this.f21969n = x();
-            this.f21971p = arrayList.size();
-            this.f21959d = n(arrayList);
-            this.f21972q = w();
+            this.f21968l = z10;
+            this.f21969m = ((Boolean) this.f21959c.b(cu.a.f21126r, Boolean.FALSE)).booleanValue();
+            this.f21970n = x();
+            this.f21972p = arrayList.size();
+            this.f21960d = n(arrayList);
+            this.f21973q = w();
             return;
         }
         throw new NullPointerException("Missing global format attributes.");
@@ -2134,24 +2134,24 @@ public final class c implements du.e, du.d {
     }
 
     private c(c cVar, Map map) {
-        e eVar = cVar.f21957b;
+        e eVar = cVar.f21958b;
         bu.x e10 = eVar == null ? null : eVar.e();
         for (bu.p pVar : map.keySet()) {
-            j(cVar.f21956a, e10, pVar);
+            j(cVar.f21957a, e10, pVar);
         }
-        this.f21956a = cVar.f21956a;
-        this.f21957b = cVar.f21957b;
-        this.f21970o = cVar.f21970o;
-        this.f21958c = cVar.f21958c;
-        this.f21966k = cVar.f21966k;
-        this.f21961f = cVar.f21961f;
-        this.f21962g = cVar.f21962g;
-        this.f21963h = cVar.f21963h;
-        this.f21964i = cVar.f21964i;
-        this.f21965j = cVar.f21965j;
-        this.f21968m = cVar.f21968m;
-        HashMap hashMap = new HashMap(cVar.f21960e);
-        boolean z10 = cVar.f21967l;
+        this.f21957a = cVar.f21957a;
+        this.f21958b = cVar.f21958b;
+        this.f21971o = cVar.f21971o;
+        this.f21959c = cVar.f21959c;
+        this.f21967k = cVar.f21967k;
+        this.f21962f = cVar.f21962f;
+        this.f21963g = cVar.f21963g;
+        this.f21964h = cVar.f21964h;
+        this.f21965i = cVar.f21965i;
+        this.f21966j = cVar.f21966j;
+        this.f21969m = cVar.f21969m;
+        HashMap hashMap = new HashMap(cVar.f21961e);
+        boolean z10 = cVar.f21968l;
         for (bu.p pVar2 : map.keySet()) {
             Object obj = map.get(pVar2);
             if (obj == null) {
@@ -2161,11 +2161,11 @@ public final class c implements du.e, du.d {
                 z10 = z10 && v.T(pVar2);
             }
         }
-        this.f21960e = Collections.unmodifiableMap(hashMap);
-        this.f21967l = z10;
-        this.f21969n = x();
-        this.f21971p = cVar.f21971p;
-        this.f21959d = n(cVar.f21959d);
-        this.f21972q = w();
+        this.f21961e = Collections.unmodifiableMap(hashMap);
+        this.f21968l = z10;
+        this.f21970n = x();
+        this.f21972p = cVar.f21972p;
+        this.f21960d = n(cVar.f21960d);
+        this.f21973q = w();
     }
 }

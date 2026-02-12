@@ -45,15 +45,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/custom_status/experiments/CustomStatusClearAfterTimesExperiment.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun57898: for (var _fun57898_ip = 0;;) switch (_fun57898_ip) {
+        _fun57919: for (var _fun57919_ip = 0;;) switch (_fun57919_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.location;
                 var4 = var1.autoTrackExposure;
                 var1 = undefined;
                 if (!(var4 === var1)) {
-                    _fun57898_ip = 22;
-                    continue _fun57898
+                    _fun57919_ip = 22;
+                    continue _fun57919
                 }
             case 20:
                 var4 = true;

@@ -17,7 +17,7 @@ public class c implements s {
 
     @Override // bu.s
     public boolean b(p pVar) {
-        if (pVar == KoreanCalendar.f37285u) {
+        if (pVar == KoreanCalendar.f37286u) {
             return true;
         }
         return false;
@@ -25,7 +25,7 @@ public class c implements s {
 
     @Override // bu.s
     public q c(q qVar, Locale locale, bu.d dVar) {
-        p pVar = KoreanCalendar.f37285u;
+        p pVar = KoreanCalendar.f37286u;
         if (qVar.n(pVar)) {
             return qVar.C(f0.A, qVar.m(pVar) - 2333);
         }

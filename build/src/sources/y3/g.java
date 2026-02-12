@@ -7,42 +7,42 @@ import x3.i;
 public class g implements i {
 
     /* renamed from: d  reason: collision with root package name */
-    private final SQLiteProgram f55383d;
+    private final SQLiteProgram f55384d;
 
     public g(SQLiteProgram delegate) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
-        this.f55383d = delegate;
+        this.f55384d = delegate;
     }
 
     @Override // x3.i
     public void D1(int i10, byte[] value) {
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f55383d.bindBlob(i10, value);
+        this.f55384d.bindBlob(i10, value);
     }
 
     @Override // x3.i
     public void S1(int i10) {
-        this.f55383d.bindNull(i10);
+        this.f55384d.bindNull(i10);
     }
 
     @Override // x3.i
     public void X(int i10, double d10) {
-        this.f55383d.bindDouble(i10, d10);
+        this.f55384d.bindDouble(i10, d10);
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f55383d.close();
+        this.f55384d.close();
     }
 
     @Override // x3.i
     public void i1(int i10, String value) {
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f55383d.bindString(i10, value);
+        this.f55384d.bindString(i10, value);
     }
 
     @Override // x3.i
     public void v1(int i10, long j10) {
-        this.f55383d.bindLong(i10, j10);
+        this.f55384d.bindLong(i10, j10);
     }
 }

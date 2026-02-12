@@ -10,25 +10,25 @@ import androidx.viewbinding.ViewBinding;
 public final class e implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f48226a;
+    private final ConstraintLayout f48227a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final Guideline f48227b;
+    public final Guideline f48228b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final Guideline f48228c;
+    public final Guideline f48229c;
 
     private e(ConstraintLayout constraintLayout, Guideline guideline, Guideline guideline2) {
-        this.f48226a = constraintLayout;
-        this.f48227b = guideline;
-        this.f48228c = guideline2;
+        this.f48227a = constraintLayout;
+        this.f48228b = guideline;
+        this.f48229c = guideline2;
     }
 
     public static e a(View view) {
         int i10 = nq.e.W;
         Guideline guideline = (Guideline) e4.a.a(view, i10);
         if (guideline != null) {
-            i10 = nq.e.f38283r0;
+            i10 = nq.e.f38284r0;
             Guideline guideline2 = (Guideline) e4.a.a(view, i10);
             if (guideline2 != null) {
                 return new e((ConstraintLayout) view, guideline, guideline2);
@@ -42,7 +42,7 @@ public final class e implements ViewBinding {
     }
 
     public static e d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(nq.f.f38304e, viewGroup, false);
+        View inflate = layoutInflater.inflate(nq.f.f38305e, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -52,6 +52,6 @@ public final class e implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f48226a;
+        return this.f48227a;
     }
 }

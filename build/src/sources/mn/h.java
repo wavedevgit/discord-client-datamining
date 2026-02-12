@@ -9,16 +9,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private ReanimatedModule f36557a;
+    private ReanimatedModule f36558a;
 
     public final void a(Event event, ReactContext reactApplicationContext) {
         NodesManager nodesManager;
         Intrinsics.checkNotNullParameter(event, "event");
         Intrinsics.checkNotNullParameter(reactApplicationContext, "reactApplicationContext");
-        if (this.f36557a == null) {
-            this.f36557a = (ReanimatedModule) reactApplicationContext.getNativeModule(ReanimatedModule.class);
+        if (this.f36558a == null) {
+            this.f36558a = (ReanimatedModule) reactApplicationContext.getNativeModule(ReanimatedModule.class);
         }
-        ReanimatedModule reanimatedModule = this.f36557a;
+        ReanimatedModule reanimatedModule = this.f36558a;
         if (reanimatedModule != null && (nodesManager = reanimatedModule.getNodesManager()) != null) {
             nodesManager.onEventDispatch(event);
         }

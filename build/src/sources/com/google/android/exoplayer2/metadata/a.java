@@ -29,7 +29,7 @@ public final class a extends f implements Handler.Callback {
     private long K;
 
     public a(d dVar, Looper looper) {
-        this(dVar, looper, b.f27105a);
+        this(dVar, looper, b.f27106a);
     }
 
     private void a0(Metadata metadata, List list) {
@@ -40,7 +40,7 @@ public final class a extends f implements Handler.Callback {
                 byte[] bArr = (byte[]) oe.a.e(metadata.d(i10).o2());
                 this.D.h();
                 this.D.u(bArr.length);
-                ((ByteBuffer) w0.j(this.D.f46229i)).put(bArr);
+                ((ByteBuffer) w0.j(this.D.f46230i)).put(bArr);
                 this.D.v();
                 Metadata a10 = b10.a(this.D);
                 if (a10 != null) {
@@ -84,7 +84,7 @@ public final class a extends f implements Handler.Callback {
     private boolean e0(long j10) {
         boolean z10;
         Metadata metadata = this.J;
-        if (metadata != null && (this.E || metadata.f13339e <= b0(j10))) {
+        if (metadata != null && (this.E || metadata.f13340e <= b0(j10))) {
             c0(this.J);
             this.J = null;
             z10 = true;
@@ -108,18 +108,18 @@ public final class a extends f implements Handler.Callback {
                     return;
                 }
                 c cVar = this.D;
-                cVar.f27106t = this.I;
+                cVar.f27107t = this.I;
                 cVar.v();
                 Metadata a10 = ((hd.a) w0.j(this.F)).a(this.D);
                 if (a10 != null) {
                     ArrayList arrayList = new ArrayList(a10.e());
                     a0(a10, arrayList);
                     if (!arrayList.isEmpty()) {
-                        this.J = new Metadata(b0(this.D.f46231p), arrayList);
+                        this.J = new Metadata(b0(this.D.f46232p), arrayList);
                     }
                 }
             } else if (X == -5) {
-                this.I = ((Format) oe.a.e(J.f36282b)).A;
+                this.I = ((Format) oe.a.e(J.f36283b)).A;
             }
         }
     }
@@ -143,7 +143,7 @@ public final class a extends f implements Handler.Callback {
         this.F = this.A.b(formatArr[0]);
         Metadata metadata = this.J;
         if (metadata != null) {
-            this.J = metadata.c((metadata.f13339e + this.K) - j11);
+            this.J = metadata.c((metadata.f13340e + this.K) - j11);
         }
         this.K = j11;
     }

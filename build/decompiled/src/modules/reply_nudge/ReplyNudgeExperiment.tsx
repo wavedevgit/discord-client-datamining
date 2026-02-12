@@ -54,11 +54,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = {};
     var9 = {
         'enabled': true,
-        'displayNudges': true,
+        'displayNudges': false,
         'minUserDMAffinity': 4294967295,
         'maxNudgeCount': 2
     };
     var3 = 2;
+    var11 = var5[var10];
+    var11 = var12.bind(var0)(var11);
+    var11 = var11.Millis;
+    var11 = var11.DAY;
+    var11 = var13 * var11;
+    var9.maxNudgeAge = var11;
+    var11 = var5[var10];
+    var11 = var12.bind(var0)(var11);
+    var11 = var11.Millis;
+    var11 = var11.HOUR;
+    var11 = var15 * var11;
+    var9.minSinceReceiverMessageMs = var11;
+    var11 = var5[var10];
+    var11 = var12.bind(var0)(var11);
+    var11 = var11.Millis;
+    var11 = var11.HOUR;
+    var11 = var14 * var11;
+    var9.minLatestMessageAgeMs = var11;
+    var8[0] = var9;
+    var9 = {
+        'enabled': true,
+        'displayNudges': true,
+        'minUserDMAffinity': 4294967295,
+        'maxNudgeCount': 2
+    };
     var11 = var5[var10];
     var11 = var12.bind(var0)(var11);
     var11 = var11.Millis;

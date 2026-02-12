@@ -8,16 +8,16 @@ import kotlin.text.StringsKt;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public int f51870a;
+    public int f51871a;
 
     /* renamed from: c  reason: collision with root package name */
-    private String f51872c;
+    private String f51873c;
 
     /* renamed from: b  reason: collision with root package name */
-    public final j0 f51871b = new j0();
+    public final j0 f51872b = new j0();
 
     /* renamed from: d  reason: collision with root package name */
-    private StringBuilder f51873d = new StringBuilder();
+    private StringBuilder f51874d = new StringBuilder();
 
     private final int B(CharSequence charSequence, int i10) {
         char charAt = charSequence.charAt(i10);
@@ -35,9 +35,9 @@ public abstract class a {
     }
 
     private final String M() {
-        String str = this.f51872c;
+        String str = this.f51873c;
         Intrinsics.checkNotNull(str);
-        this.f51872c = null;
+        this.f51873c = null;
         return str;
     }
 
@@ -52,7 +52,7 @@ public abstract class a {
     }
 
     private final boolean R() {
-        if (D().charAt(this.f51870a - 1) != '\"') {
+        if (D().charAt(this.f51871a - 1) != '\"') {
             return true;
         }
         return false;
@@ -68,7 +68,7 @@ public abstract class a {
             }
             char b10 = b.b(charAt);
             if (b10 != 0) {
-                this.f51873d.append(b10);
+                this.f51874d.append(b10);
                 return i11;
             }
             x(this, "Invalid escaped char '" + charAt + '\'', 0, null, 6, null);
@@ -86,15 +86,15 @@ public abstract class a {
     private final int c(CharSequence charSequence, int i10) {
         int i11 = i10 + 4;
         if (i11 >= charSequence.length()) {
-            this.f51870a = i10;
+            this.f51871a = i10;
             u();
-            if (this.f51870a + 4 < charSequence.length()) {
-                return c(charSequence, this.f51870a);
+            if (this.f51871a + 4 < charSequence.length()) {
+                return c(charSequence, this.f51871a);
             }
             x(this, "Unexpected EOF during unicode escape", 0, null, 6, null);
             throw new as.h();
         }
-        this.f51873d.append((char) ((B(charSequence, i10) << 12) + (B(charSequence, i10 + 1) << 8) + (B(charSequence, i10 + 2) << 4) + B(charSequence, i10 + 3)));
+        this.f51874d.append((char) ((B(charSequence, i10) << 12) + (B(charSequence, i10 + 1) << 8) + (B(charSequence, i10 + 2) << 4) + B(charSequence, i10 + 3)));
         return i11;
     }
 
@@ -127,7 +127,7 @@ public abstract class a {
                     throw new as.h();
                 }
             }
-            this.f51870a = i10 + str.length();
+            this.f51871a = i10 + str.length();
             return;
         }
         x(this, "Unexpected end of boolean literal", 0, null, 6, null);
@@ -146,16 +146,16 @@ public abstract class a {
 
     private final String s(int i10, int i11) {
         d(i10, i11);
-        String sb2 = this.f51873d.toString();
+        String sb2 = this.f51874d.toString();
         Intrinsics.checkNotNullExpressionValue(sb2, "toString(...)");
-        this.f51873d.setLength(0);
+        this.f51874d.setLength(0);
         return sb2;
     }
 
     public static /* synthetic */ Void x(a aVar, String str, int i10, String str2, int i11, Object obj) {
         if (obj == null) {
             if ((i11 & 2) != 0) {
-                i10 = aVar.f51870a;
+                i10 = aVar.f51871a;
             }
             if ((i11 & 4) != 0) {
                 str2 = "";
@@ -177,14 +177,14 @@ public abstract class a {
 
     public final void A(String key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        int o02 = StringsKt.o0(L(0, this.f51870a), key, 0, false, 6, null);
+        int o02 = StringsKt.o0(L(0, this.f51871a), key, 0, false, 6, null);
         w("Encountered an unknown key '" + key + '\'', o02, "Use 'ignoreUnknownKeys = true' in 'Json {}' builder to ignore unknown keys.");
         throw new as.h();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final StringBuilder C() {
-        return this.f51873d;
+        return this.f51874d;
     }
 
     protected abstract CharSequence D();
@@ -201,18 +201,18 @@ public abstract class a {
 
     public byte G() {
         CharSequence D = D();
-        int i10 = this.f51870a;
+        int i10 = this.f51871a;
         while (true) {
             int I = I(i10);
             if (I != -1) {
                 char charAt = D.charAt(I);
                 if (charAt != '\t' && charAt != '\n' && charAt != '\r' && charAt != ' ') {
-                    this.f51870a = I;
+                    this.f51871a = I;
                     return b.a(charAt);
                 }
                 i10 = I + 1;
             } else {
-                this.f51870a = I;
+                this.f51871a = I;
                 return (byte) 10;
             }
         }
@@ -231,7 +231,7 @@ public abstract class a {
         } else {
             o10 = o();
         }
-        this.f51872c = o10;
+        this.f51873c = o10;
         return o10;
     }
 
@@ -258,15 +258,15 @@ public abstract class a {
                         if (((Number) CollectionsKt.z0(arrayList)).byteValue() == 8) {
                             CollectionsKt.L(arrayList);
                         } else {
-                            int i10 = this.f51870a;
-                            throw g0.e(i10, "found ] instead of } at path: " + this.f51871b, D());
+                            int i10 = this.f51871a;
+                            throw g0.e(i10, "found ] instead of } at path: " + this.f51872b, D());
                         }
                     } else if (G2 == 7) {
                         if (((Number) CollectionsKt.z0(arrayList)).byteValue() == 6) {
                             CollectionsKt.L(arrayList);
                         } else {
-                            int i11 = this.f51870a;
-                            throw g0.e(i11, "found } instead of ] at path: " + this.f51871b, D());
+                            int i11 = this.f51871a;
+                            throw g0.e(i11, "found } instead of ] at path: " + this.f51872b, D());
                         }
                     } else if (G2 == 10) {
                         x(this, "Unexpected end of input due to malformed JSON during ignoring unknown keys", 0, null, 6, null);
@@ -295,7 +295,7 @@ public abstract class a {
         if (K >= D.length() || K == -1 || D.charAt(K) != ',') {
             return false;
         }
-        this.f51870a++;
+        this.f51871a++;
         return true;
     }
 
@@ -314,7 +314,7 @@ public abstract class a {
             return false;
         }
         if (z10) {
-            this.f51870a = I + 4;
+            this.f51871a = I + 4;
             return true;
         }
         return true;
@@ -322,18 +322,18 @@ public abstract class a {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void Q(char c10) {
-        int i10 = this.f51870a;
+        int i10 = this.f51871a;
         if (i10 > 0 && c10 == '\"') {
             try {
-                this.f51870a = i10 - 1;
+                this.f51871a = i10 - 1;
                 String q10 = q();
-                this.f51870a = i10;
+                this.f51871a = i10;
                 if (Intrinsics.areEqual(q10, "null")) {
-                    w("Expected string literal but 'null' literal was found", this.f51870a - 1, "Use 'coerceInputValues = true' in 'Json {}' builder to coerce nulls if property has a default value.");
+                    w("Expected string literal but 'null' literal was found", this.f51871a - 1, "Use 'coerceInputValues = true' in 'Json {}' builder to coerce nulls if property has a default value.");
                     throw new as.h();
                 }
             } catch (Throwable th2) {
-                this.f51870a = i10;
+                this.f51871a = i10;
                 throw th2;
             }
         }
@@ -342,7 +342,7 @@ public abstract class a {
     }
 
     protected void d(int i10, int i11) {
-        this.f51873d.append(D(), i10, i11);
+        this.f51874d.append(D(), i10, i11);
     }
 
     public abstract boolean e();
@@ -359,9 +359,9 @@ public abstract class a {
             }
             boolean f10 = f(K);
             if (z10) {
-                if (this.f51870a != D().length()) {
-                    if (D().charAt(this.f51870a) == '\"') {
-                        this.f51870a++;
+                if (this.f51871a != D().length()) {
+                    if (D().charAt(this.f51871a) == '\"') {
+                        this.f51871a++;
                         return f10;
                     }
                     x(this, "Expected closing quotation mark", 0, null, 6, null);
@@ -446,7 +446,7 @@ public abstract class a {
         throw new as.h();
      */
     /* JADX WARN: Code restructure failed: missing block: B:79:0x0181, code lost:
-        r18.f51870a = r2;
+        r18.f51871a = r2;
      */
     /* JADX WARN: Code restructure failed: missing block: B:80:0x0183, code lost:
         if (r8 == false) goto L86;
@@ -509,7 +509,7 @@ public abstract class a {
     }
 
     public final String o() {
-        if (this.f51872c != null) {
+        if (this.f51873c != null) {
             return M();
         }
         return i();
@@ -556,13 +556,13 @@ public abstract class a {
         } else {
             s10 = s(i10, i11);
         }
-        this.f51870a = i11 + 1;
+        this.f51871a = i11 + 1;
         return s10;
     }
 
     public final String q() {
         String s10;
-        if (this.f51872c != null) {
+        if (this.f51873c != null) {
             return M();
         }
         int K = K();
@@ -576,10 +576,10 @@ public abstract class a {
                 while (b.a(D().charAt(K)) == 0) {
                     K++;
                     if (K >= D().length()) {
-                        d(this.f51870a, K);
+                        d(this.f51871a, K);
                         int I = I(K);
                         if (I == -1) {
-                            this.f51870a = K;
+                            this.f51871a = K;
                             return s(0, 0);
                         }
                         K = I;
@@ -587,11 +587,11 @@ public abstract class a {
                     }
                 }
                 if (!z10) {
-                    s10 = L(this.f51870a, K);
+                    s10 = L(this.f51871a, K);
                 } else {
-                    s10 = s(this.f51870a, K);
+                    s10 = s(this.f51871a, K);
                 }
-                this.f51870a = K;
+                this.f51871a = K;
                 return s10;
             }
             x(this, "Expected beginning of the string, but got " + D().charAt(K), 0, null, 6, null);
@@ -611,18 +611,18 @@ public abstract class a {
     }
 
     public final void t() {
-        this.f51872c = null;
+        this.f51873c = null;
     }
 
     public String toString() {
-        return "JsonReader(source='" + ((Object) D()) + "', currentPosition=" + this.f51870a + ')';
+        return "JsonReader(source='" + ((Object) D()) + "', currentPosition=" + this.f51871a + ')';
     }
 
     public final void v() {
         if (j() == 10) {
             return;
         }
-        x(this, "Expected EOF after parsing, but had " + D().charAt(this.f51870a - 1) + " instead", 0, null, 6, null);
+        x(this, "Expected EOF after parsing, but had " + D().charAt(this.f51871a - 1) + " instead", 0, null, 6, null);
         throw new as.h();
     }
 
@@ -635,7 +635,7 @@ public abstract class a {
         } else {
             str = '\n' + hint;
         }
-        throw g0.e(i10, message + " at path: " + this.f51871b.a() + str, D());
+        throw g0.e(i10, message + " at path: " + this.f51872b.a() + str, D());
     }
 
     public final Void y(byte b10, boolean z10) {
@@ -643,12 +643,12 @@ public abstract class a {
         String str;
         String c10 = b.c(b10);
         if (z10) {
-            i10 = this.f51870a - 1;
+            i10 = this.f51871a - 1;
         } else {
-            i10 = this.f51870a;
+            i10 = this.f51871a;
         }
         int i11 = i10;
-        if (this.f51870a != D().length() && i11 >= 0) {
+        if (this.f51871a != D().length() && i11 >= 0) {
             str = String.valueOf(D().charAt(i11));
         } else {
             str = "EOF";

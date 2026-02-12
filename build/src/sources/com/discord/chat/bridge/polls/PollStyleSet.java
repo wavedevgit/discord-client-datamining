@@ -154,34 +154,34 @@ public final class PollStyleSet implements IPollStyleSet {
 
     public static final /* synthetic */ void write$Self$chat_release(PollStyleSet pollStyleSet, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         if (compositeEncoder.z(serialDescriptor, 0) || pollStyleSet.border != null) {
-            compositeEncoder.o(serialDescriptor, 0, p0.f50048a, pollStyleSet.border);
+            compositeEncoder.o(serialDescriptor, 0, p0.f50049a, pollStyleSet.border);
         }
         if (compositeEncoder.z(serialDescriptor, 1) || pollStyleSet.borderWidth != 0) {
             compositeEncoder.w(serialDescriptor, 1, pollStyleSet.borderWidth);
         }
         if (compositeEncoder.z(serialDescriptor, 2) || pollStyleSet.fill != null) {
-            compositeEncoder.o(serialDescriptor, 2, p0.f50048a, pollStyleSet.fill);
+            compositeEncoder.o(serialDescriptor, 2, p0.f50049a, pollStyleSet.fill);
         }
         if (compositeEncoder.z(serialDescriptor, 3) || pollStyleSet.label != null) {
-            compositeEncoder.o(serialDescriptor, 3, p0.f50048a, pollStyleSet.label);
+            compositeEncoder.o(serialDescriptor, 3, p0.f50049a, pollStyleSet.label);
         }
         if (compositeEncoder.z(serialDescriptor, 4) || Float.compare(pollStyleSet.opacity, 1.0f) != 0) {
             compositeEncoder.s(serialDescriptor, 4, pollStyleSet.opacity);
         }
         if (compositeEncoder.z(serialDescriptor, 5) || pollStyleSet.answerBackground != null) {
-            compositeEncoder.o(serialDescriptor, 5, p0.f50048a, pollStyleSet.answerBackground);
+            compositeEncoder.o(serialDescriptor, 5, p0.f50049a, pollStyleSet.answerBackground);
         }
         if (compositeEncoder.z(serialDescriptor, 6) || pollStyleSet.answerFill != null) {
-            compositeEncoder.o(serialDescriptor, 6, p0.f50048a, pollStyleSet.answerFill);
+            compositeEncoder.o(serialDescriptor, 6, p0.f50049a, pollStyleSet.answerFill);
         }
         if (compositeEncoder.z(serialDescriptor, 7) || pollStyleSet.radioStyle != null) {
             compositeEncoder.o(serialDescriptor, 7, PollRadioStyle.Serializer.INSTANCE, pollStyleSet.radioStyle);
         }
         if (compositeEncoder.z(serialDescriptor, 8) || pollStyleSet.radioBackground != null) {
-            compositeEncoder.o(serialDescriptor, 8, p0.f50048a, pollStyleSet.radioBackground);
+            compositeEncoder.o(serialDescriptor, 8, p0.f50049a, pollStyleSet.radioBackground);
         }
         if (compositeEncoder.z(serialDescriptor, 9) || pollStyleSet.radioForeground != null) {
-            compositeEncoder.o(serialDescriptor, 9, p0.f50048a, pollStyleSet.radioForeground);
+            compositeEncoder.o(serialDescriptor, 9, p0.f50049a, pollStyleSet.radioForeground);
         }
     }
 

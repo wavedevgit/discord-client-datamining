@@ -45,8 +45,8 @@ public /* synthetic */ class MediaPlayerPlaybackSource$$serializer implements h0
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50032a;
-        return new KSerializer[]{a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(MessageId$$serializer.INSTANCE), a.u(p0.f50048a)};
+        n2 n2Var = n2.f50033a;
+        return new KSerializer[]{a.u(n2Var), a.u(n2Var), a.u(n2Var), a.u(MessageId$$serializer.INSTANCE), a.u(p0.f50049a)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -62,13 +62,13 @@ public /* synthetic */ class MediaPlayerPlaybackSource$$serializer implements h0
         SerialDescriptor serialDescriptor = descriptor;
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         if (b10.p()) {
-            n2 n2Var = n2.f50032a;
+            n2 n2Var = n2.f50033a;
             String str5 = (String) b10.n(serialDescriptor, 0, n2Var, null);
             String str6 = (String) b10.n(serialDescriptor, 1, n2Var, null);
             str = (String) b10.n(serialDescriptor, 2, n2Var, null);
             MessageId messageId = (MessageId) b10.n(serialDescriptor, 3, MessageId$$serializer.INSTANCE, null);
             str2 = messageId != null ? messageId.m1093unboximpl() : null;
-            num = (Integer) b10.n(serialDescriptor, 4, p0.f50048a, null);
+            num = (Integer) b10.n(serialDescriptor, 4, p0.f50049a, null);
             i10 = 31;
             str3 = str6;
             str4 = str5;
@@ -85,13 +85,13 @@ public /* synthetic */ class MediaPlayerPlaybackSource$$serializer implements h0
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    str9 = (String) b10.n(serialDescriptor, 0, n2.f50032a, str9);
+                    str9 = (String) b10.n(serialDescriptor, 0, n2.f50033a, str9);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    str8 = (String) b10.n(serialDescriptor, 1, n2.f50032a, str8);
+                    str8 = (String) b10.n(serialDescriptor, 1, n2.f50033a, str8);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    str = (String) b10.n(serialDescriptor, 2, n2.f50032a, str);
+                    str = (String) b10.n(serialDescriptor, 2, n2.f50033a, str);
                     i11 |= 4;
                 } else if (o10 == 3) {
                     MessageId messageId2 = (MessageId) b10.n(serialDescriptor, 3, MessageId$$serializer.INSTANCE, str7 != null ? MessageId.m1084boximpl(str7) : null);
@@ -100,7 +100,7 @@ public /* synthetic */ class MediaPlayerPlaybackSource$$serializer implements h0
                 } else if (o10 != 4) {
                     throw new b0(o10);
                 } else {
-                    num2 = (Integer) b10.n(serialDescriptor, 4, p0.f50048a, num2);
+                    num2 = (Integer) b10.n(serialDescriptor, 4, p0.f50049a, num2);
                     i11 |= 16;
                 }
             }

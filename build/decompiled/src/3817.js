@@ -56,7 +56,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = _closure2_slot0;
             var2 = var3.modify;
             var1 = function arg0() {
-                _fun34122: for (var _fun34122_ip = 0;;) switch (_fun34122_ip) {
+                _fun34144: for (var _fun34144_ip = 0;;) switch (_fun34144_ip) {
                     case 0:
                         var0 = arg0;
                         var2 = var0.findIndex;
@@ -71,15 +71,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = var2.bind(var0)(var1);
                         var1 = -1;
                         if (!(var1 === var2)) {
-                            _fun34122_ip = 50;
-                            continue _fun34122
+                            _fun34144_ip = 50;
+                            continue _fun34144
                         }
                     case 31:
                         var3 = var0.push;
                         var1 = _closure3_slot0;
                         var1 = var3.bind(var0)(var1);
-                        _fun34122_ip = 61;
-                        continue _fun34122;
+                        _fun34144_ip = 61;
+                        continue _fun34144;
                     case 50:
                         var1 = _closure3_slot0;
                         var0[var2] = var1;
@@ -109,7 +109,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = _closure2_slot0;
             var2 = var3.modify;
             var1 = function arg0() {
-                _fun34125: for (var _fun34125_ip = 0;;) switch (_fun34125_ip) {
+                _fun34147: for (var _fun34147_ip = 0;;) switch (_fun34147_ip) {
                     case 0:
                         var0 = arg0;
                         var2 = var0.findIndex;
@@ -123,8 +123,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = var2.bind(var0)(var1);
                         var1 = -1;
                         if (!(var1 !== var3)) {
-                            _fun34125_ip = 46;
-                            continue _fun34125
+                            _fun34147_ip = 46;
+                            continue _fun34147
                         }
                     case 31:
                         var2 = var0.splice;

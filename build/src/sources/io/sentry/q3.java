@@ -30,49 +30,49 @@ public final class q3 implements w1 {
     private Map N;
 
     /* renamed from: d  reason: collision with root package name */
-    private final File f29810d;
+    private final File f29811d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Callable f29811e;
+    private final Callable f29812e;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f29812i;
+    private int f29813i;
 
     /* renamed from: o  reason: collision with root package name */
-    private String f29813o;
+    private String f29814o;
 
     /* renamed from: p  reason: collision with root package name */
-    private String f29814p;
+    private String f29815p;
 
     /* renamed from: q  reason: collision with root package name */
-    private String f29815q;
+    private String f29816q;
 
     /* renamed from: r  reason: collision with root package name */
-    private String f29816r;
+    private String f29817r;
 
     /* renamed from: s  reason: collision with root package name */
-    private String f29817s;
+    private String f29818s;
 
     /* renamed from: t  reason: collision with root package name */
-    private String f29818t;
+    private String f29819t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f29819u;
+    private boolean f29820u;
 
     /* renamed from: v  reason: collision with root package name */
-    private String f29820v;
+    private String f29821v;
 
     /* renamed from: w  reason: collision with root package name */
-    private List f29821w;
+    private List f29822w;
 
     /* renamed from: x  reason: collision with root package name */
-    private String f29822x;
+    private String f29823x;
 
     /* renamed from: y  reason: collision with root package name */
-    private String f29823y;
+    private String f29824y;
 
     /* renamed from: z  reason: collision with root package name */
-    private String f29824z;
+    private String f29825z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class b implements m1 {
@@ -250,7 +250,7 @@ public final class q3 implements w1 {
                         if (r12 == null) {
                             break;
                         } else {
-                            q3Var.f29814p = r12;
+                            q3Var.f29815p = r12;
                             break;
                         }
                     case 1:
@@ -258,7 +258,7 @@ public final class q3 implements w1 {
                         if (l12 == null) {
                             break;
                         } else {
-                            q3Var.f29812i = l12.intValue();
+                            q3Var.f29813i = l12.intValue();
                             break;
                         }
                     case 2:
@@ -266,7 +266,7 @@ public final class q3 implements w1 {
                         if (r13 == null) {
                             break;
                         } else {
-                            q3Var.f29824z = r13;
+                            q3Var.f29825z = r13;
                             break;
                         }
                     case 3:
@@ -274,7 +274,7 @@ public final class q3 implements w1 {
                         if (r14 == null) {
                             break;
                         } else {
-                            q3Var.f29813o = r14;
+                            q3Var.f29814o = r14;
                             break;
                         }
                     case 4:
@@ -290,7 +290,7 @@ public final class q3 implements w1 {
                         if (r16 == null) {
                             break;
                         } else {
-                            q3Var.f29816r = r16;
+                            q3Var.f29817r = r16;
                             break;
                         }
                     case 6:
@@ -298,7 +298,7 @@ public final class q3 implements w1 {
                         if (r17 == null) {
                             break;
                         } else {
-                            q3Var.f29815q = r17;
+                            q3Var.f29816q = r17;
                             break;
                         }
                     case 7:
@@ -306,7 +306,7 @@ public final class q3 implements w1 {
                         if (w02 == null) {
                             break;
                         } else {
-                            q3Var.f29819u = w02.booleanValue();
+                            q3Var.f29820u = w02.booleanValue();
                             break;
                         }
                     case '\b':
@@ -330,7 +330,7 @@ public final class q3 implements w1 {
                         if (r19 == null) {
                             break;
                         } else {
-                            q3Var.f29822x = r19;
+                            q3Var.f29823x = r19;
                             break;
                         }
                     case 11:
@@ -338,7 +338,7 @@ public final class q3 implements w1 {
                         if (list == null) {
                             break;
                         } else {
-                            q3Var.f29821w = list;
+                            q3Var.f29822w = list;
                             break;
                         }
                     case '\f':
@@ -386,7 +386,7 @@ public final class q3 implements w1 {
                         if (r114 == null) {
                             break;
                         } else {
-                            q3Var.f29817s = r114;
+                            q3Var.f29818s = r114;
                             break;
                         }
                     case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
@@ -394,7 +394,7 @@ public final class q3 implements w1 {
                         if (r115 == null) {
                             break;
                         } else {
-                            q3Var.f29820v = r115;
+                            q3Var.f29821v = r115;
                             break;
                         }
                     case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
@@ -410,7 +410,7 @@ public final class q3 implements w1 {
                         if (r117 == null) {
                             break;
                         } else {
-                            q3Var.f29818t = r117;
+                            q3Var.f29819t = r117;
                             break;
                         }
                     case ChatViewRecyclerTypes.FLAGGED_MESSAGE_EMBED /* 21 */:
@@ -434,7 +434,7 @@ public final class q3 implements w1 {
                         if (r120 == null) {
                             break;
                         } else {
-                            q3Var.f29823y = r120;
+                            q3Var.f29824y = r120;
                             break;
                         }
                     case ChatViewRecyclerTypes.SURVEY_INDICATION /* 24 */:
@@ -483,12 +483,12 @@ public final class q3 implements w1 {
     }
 
     public File C() {
-        return this.f29810d;
+        return this.f29811d;
     }
 
     public void E() {
         try {
-            this.f29821w = (List) this.f29811e.call();
+            this.f29822w = (List) this.f29812e.call();
         } catch (Throwable unused) {
         }
     }
@@ -504,19 +504,19 @@ public final class q3 implements w1 {
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("android_api_level").j(iLogger, Integer.valueOf(this.f29812i));
-        f3Var.e("device_locale").j(iLogger, this.f29813o);
-        f3Var.e("device_manufacturer").f(this.f29814p);
-        f3Var.e("device_model").f(this.f29815q);
-        f3Var.e("device_os_build_number").f(this.f29816r);
-        f3Var.e("device_os_name").f(this.f29817s);
-        f3Var.e("device_os_version").f(this.f29818t);
-        f3Var.e("device_is_emulator").d(this.f29819u);
-        f3Var.e("architecture").j(iLogger, this.f29820v);
-        f3Var.e("device_cpu_frequencies").j(iLogger, this.f29821w);
-        f3Var.e("device_physical_memory_bytes").f(this.f29822x);
-        f3Var.e("platform").f(this.f29823y);
-        f3Var.e("build_id").f(this.f29824z);
+        f3Var.e("android_api_level").j(iLogger, Integer.valueOf(this.f29813i));
+        f3Var.e("device_locale").j(iLogger, this.f29814o);
+        f3Var.e("device_manufacturer").f(this.f29815p);
+        f3Var.e("device_model").f(this.f29816q);
+        f3Var.e("device_os_build_number").f(this.f29817r);
+        f3Var.e("device_os_name").f(this.f29818s);
+        f3Var.e("device_os_version").f(this.f29819t);
+        f3Var.e("device_is_emulator").d(this.f29820u);
+        f3Var.e("architecture").j(iLogger, this.f29821v);
+        f3Var.e("device_cpu_frequencies").j(iLogger, this.f29822w);
+        f3Var.e("device_physical_memory_bytes").f(this.f29823x);
+        f3Var.e("platform").f(this.f29824y);
+        f3Var.e("build_id").f(this.f29825z);
         f3Var.e("transaction_name").f(this.B);
         f3Var.e("duration_ns").f(this.C);
         f3Var.e("version_name").f(this.E);
@@ -562,23 +562,23 @@ public final class q3 implements w1 {
     }
 
     public q3(File file, Date date, List list, String str, String str2, String str3, String str4, int i10, String str5, Callable callable, String str6, String str7, String str8, Boolean bool, String str9, String str10, String str11, String str12, String str13, Map map) {
-        this.f29821w = new ArrayList();
+        this.f29822w = new ArrayList();
         this.M = null;
-        this.f29810d = file;
+        this.f29811d = file;
         this.K = date;
-        this.f29820v = str5;
-        this.f29811e = callable;
-        this.f29812i = i10;
-        this.f29813o = Locale.getDefault().toString();
-        this.f29814p = str6 == null ? "" : str6;
-        this.f29815q = str7 == null ? "" : str7;
-        this.f29818t = str8 == null ? "" : str8;
-        this.f29819u = bool != null ? bool.booleanValue() : false;
-        this.f29822x = str9 != null ? str9 : "0";
-        this.f29816r = "";
-        this.f29817s = "android";
-        this.f29823y = "android";
-        this.f29824z = str10 != null ? str10 : "";
+        this.f29821v = str5;
+        this.f29812e = callable;
+        this.f29813i = i10;
+        this.f29814o = Locale.getDefault().toString();
+        this.f29815p = str6 == null ? "" : str6;
+        this.f29816q = str7 == null ? "" : str7;
+        this.f29819t = str8 == null ? "" : str8;
+        this.f29820u = bool != null ? bool.booleanValue() : false;
+        this.f29823x = str9 != null ? str9 : "0";
+        this.f29817r = "";
+        this.f29818s = "android";
+        this.f29824y = "android";
+        this.f29825z = str10 != null ? str10 : "";
         this.A = list;
         this.B = str.isEmpty() ? "unknown" : str;
         this.C = str4;

@@ -5,30 +5,30 @@ import android.graphics.Path;
 public class p implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f48581a;
+    private final boolean f48582a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Path.FillType f48582b;
+    private final Path.FillType f48583b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f48583c;
+    private final String f48584c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final s5.a f48584d;
+    private final s5.a f48585d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final s5.d f48585e;
+    private final s5.d f48586e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean f48586f;
+    private final boolean f48587f;
 
     public p(String str, boolean z10, Path.FillType fillType, s5.a aVar, s5.d dVar, boolean z11) {
-        this.f48583c = str;
-        this.f48581a = z10;
-        this.f48582b = fillType;
-        this.f48584d = aVar;
-        this.f48585e = dVar;
-        this.f48586f = z11;
+        this.f48584c = str;
+        this.f48582a = z10;
+        this.f48583b = fillType;
+        this.f48585d = aVar;
+        this.f48586e = dVar;
+        this.f48587f = z11;
     }
 
     @Override // t5.c
@@ -37,26 +37,26 @@ public class p implements c {
     }
 
     public s5.a b() {
-        return this.f48584d;
+        return this.f48585d;
     }
 
     public Path.FillType c() {
-        return this.f48582b;
+        return this.f48583b;
     }
 
     public String d() {
-        return this.f48583c;
+        return this.f48584c;
     }
 
     public s5.d e() {
-        return this.f48585e;
+        return this.f48586e;
     }
 
     public boolean f() {
-        return this.f48586f;
+        return this.f48587f;
     }
 
     public String toString() {
-        return "ShapeFill{color=, fillEnabled=" + this.f48581a + '}';
+        return "ShapeFill{color=, fillEnabled=" + this.f48582a + '}';
     }
 }

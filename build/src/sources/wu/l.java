@@ -6,13 +6,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class l extends f {
 
     /* renamed from: j  reason: collision with root package name */
-    public static final a f54007j = new a(null);
+    public static final a f54008j = new a(null);
 
     /* renamed from: h  reason: collision with root package name */
-    private final Class f54008h;
+    private final Class f54009h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Class f54009i;
+    private final Class f54010i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -38,7 +38,7 @@ public final class l extends f {
                 Intrinsics.checkNotNullExpressionValue(paramsClass, "paramsClass");
                 return new l(cls, cls2, paramsClass);
             } catch (Exception e10) {
-                vu.h.f52015a.g().k("unable to load android socket classes", 5, e10);
+                vu.h.f52016a.g().k("unable to load android socket classes", 5, e10);
                 return null;
             }
         }
@@ -53,7 +53,7 @@ public final class l extends f {
         Intrinsics.checkNotNullParameter(sslSocketClass, "sslSocketClass");
         Intrinsics.checkNotNullParameter(sslSocketFactoryClass, "sslSocketFactoryClass");
         Intrinsics.checkNotNullParameter(paramClass, "paramClass");
-        this.f54008h = sslSocketFactoryClass;
-        this.f54009i = paramClass;
+        this.f54009h = sslSocketFactoryClass;
+        this.f54010i = paramClass;
     }
 }

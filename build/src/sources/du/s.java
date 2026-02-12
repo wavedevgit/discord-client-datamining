@@ -6,16 +6,16 @@ import java.text.ParsePosition;
 public class s {
 
     /* renamed from: a  reason: collision with root package name */
-    private ParsePosition f22126a;
+    private ParsePosition f22127a;
 
     /* renamed from: b  reason: collision with root package name */
-    private String f22127b;
+    private String f22128b;
 
     /* renamed from: c  reason: collision with root package name */
-    private bu.q f22128c;
+    private bu.q f22129c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f22129d;
+    private boolean f22130d;
 
     public s() {
         this(0);
@@ -23,46 +23,46 @@ public class s {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void a() {
-        this.f22126a.setErrorIndex(-1);
-        this.f22127b = "";
+        this.f22127a.setErrorIndex(-1);
+        this.f22128b = "";
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void b() {
-        this.f22129d = false;
+        this.f22130d = false;
     }
 
     public int c() {
-        return this.f22126a.getErrorIndex();
+        return this.f22127a.getErrorIndex();
     }
 
     public String d() {
-        return this.f22127b;
+        return this.f22128b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public ParsePosition e() {
-        return this.f22126a;
+        return this.f22127a;
     }
 
     public int f() {
-        return this.f22126a.getIndex();
+        return this.f22127a.getIndex();
     }
 
     public bu.q g() {
-        if (this.f22128c == null) {
-            this.f22128c = new v(0, false);
+        if (this.f22129c == null) {
+            this.f22129c = new v(0, false);
         }
-        return this.f22128c;
+        return this.f22129c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public bu.q h() {
-        return this.f22128c;
+        return this.f22129c;
     }
 
     public boolean i() {
-        if (this.f22126a.getErrorIndex() != -1) {
+        if (this.f22127a.getErrorIndex() != -1) {
             return true;
         }
         return false;
@@ -70,7 +70,7 @@ public class s {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean j() {
-        return this.f22129d;
+        return this.f22130d;
     }
 
     public void k(int i10, String str) {
@@ -78,8 +78,8 @@ public class s {
             if (str == null || str.isEmpty()) {
                 str = "Error occurred at position: " + i10;
             }
-            this.f22127b = str;
-            this.f22126a.setErrorIndex(i10);
+            this.f22128b = str;
+            this.f22127a.setErrorIndex(i10);
             return;
         }
         throw new IllegalArgumentException("Undefined error index: " + i10);
@@ -87,7 +87,7 @@ public class s {
 
     public void l(int i10) {
         if (i10 >= 0) {
-            this.f22126a.setIndex(i10);
+            this.f22127a.setIndex(i10);
             return;
         }
         throw new IllegalArgumentException("Undefined position: " + i10);
@@ -95,15 +95,15 @@ public class s {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void m(bu.q qVar) {
-        this.f22128c = qVar;
+        this.f22129c = qVar;
     }
 
     public void n() {
         if (!i()) {
-            this.f22127b = "Warning state active.";
-            this.f22126a.setErrorIndex(f());
+            this.f22128b = "Warning state active.";
+            this.f22127a.setErrorIndex(f());
         }
-        this.f22129d = true;
+        this.f22130d = true;
     }
 
     public String toString() {
@@ -113,14 +113,14 @@ public class s {
         sb2.append(", error-index=");
         sb2.append(c());
         sb2.append(", error-message=\"");
-        sb2.append(this.f22127b);
+        sb2.append(this.f22128b);
         sb2.append('\"');
-        if (this.f22129d) {
+        if (this.f22130d) {
             sb2.append(", warning-active");
         }
-        if (this.f22128c != null) {
+        if (this.f22129c != null) {
             sb2.append(", raw-values=");
-            sb2.append(this.f22128c);
+            sb2.append(this.f22129c);
         }
         sb2.append(']');
         return sb2.toString();
@@ -128,10 +128,10 @@ public class s {
 
     public s(int i10) {
         if (i10 >= 0) {
-            this.f22126a = new ParsePosition(i10);
-            this.f22127b = "";
-            this.f22128c = null;
-            this.f22129d = false;
+            this.f22127a = new ParsePosition(i10);
+            this.f22128b = "";
+            this.f22129c = null;
+            this.f22130d = false;
             return;
         }
         throw new IllegalArgumentException("Undefined: " + i10);

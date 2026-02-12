@@ -124,7 +124,7 @@ public final class k implements uc.k, z {
             this.f8151a = oVar;
             this.f8152b = rVar;
             this.f8153c = b0Var;
-            if ("audio/true-hd".equals(oVar.f8173f.f12304w)) {
+            if ("audio/true-hd".equals(oVar.f8173f.f12305w)) {
                 c0Var = new c0();
             } else {
                 c0Var = null;
@@ -193,7 +193,7 @@ public final class k implements uc.k, z {
                     }
                 }
             } else {
-                if ("audio/ac4".equals(oVar.f8173f.f12304w)) {
+                if ("audio/ac4".equals(oVar.f8173f.f12305w)) {
                     if (this.f8142p == 0) {
                         oc.c.a(i12, this.f8130d);
                         b0Var.e(this.f8130d, 7);
@@ -235,13 +235,13 @@ public final class k implements uc.k, z {
             this.f8143q = i10;
             return i10;
         }
-        yVar.f50714a = j10;
+        yVar.f50715a = j10;
         return 1;
     }
 
     private int B(uc.l lVar, y yVar) {
         int c10 = this.f8133g.c(lVar, yVar, this.f8134h);
-        if (c10 == 1 && yVar.f50714a == 0) {
+        if (c10 == 1 && yVar.f50715a == 0) {
             n();
         }
         return c10;
@@ -530,7 +530,7 @@ public final class k implements uc.k, z {
                 list = B;
                 i10 = size;
                 a aVar = new a(oVar, rVar, this.f8144r.c(i13, oVar.f8169b));
-                if ("audio/true-hd".equals(oVar.f8173f.f12304w)) {
+                if ("audio/true-hd".equals(oVar.f8173f.f12305w)) {
                     i11 = rVar.f8206e * 16;
                 } else {
                     i11 = rVar.f8206e + 30;
@@ -673,7 +673,7 @@ public final class k implements uc.k, z {
         } else if (j10 < 262144) {
             lVar.k((int) j10);
         } else {
-            yVar.f50714a = lVar.getPosition() + j10;
+            yVar.f50715a = lVar.getPosition() + j10;
             z10 = true;
             t(position);
             if (!z10 && this.f8135i != 2) {
@@ -785,7 +785,7 @@ public final class k implements uc.k, z {
             int r5 = r4.length
             if (r5 != 0) goto L13
             uc.z$a r1 = new uc.z$a
-            uc.a0 r2 = uc.a0.f50610c
+            uc.a0 r2 = uc.a0.f50611c
             r1.<init>(r2)
             return r1
         L13:
@@ -804,7 +804,7 @@ public final class k implements uc.k, z {
             int r6 = p(r4, r1)
             if (r6 != r5) goto L35
             uc.z$a r1 = new uc.z$a
-            uc.a0 r2 = uc.a0.f50610c
+            uc.a0 r2 = uc.a0.f50611c
             r1.<init>(r2)
             return r1
         L35:
@@ -876,11 +876,11 @@ public final class k implements uc.k, z {
         this.f8134h = new ArrayList();
         this.f8131e = new h0(16);
         this.f8132f = new ArrayDeque();
-        this.f8128b = new h0(d0.f38890a);
+        this.f8128b = new h0(d0.f38891a);
         this.f8129c = new h0(4);
         this.f8130d = new h0();
         this.f8140n = -1;
-        this.f8144r = uc.m.f50685l;
+        this.f8144r = uc.m.f50686l;
         this.f8145s = new a[0];
     }
 

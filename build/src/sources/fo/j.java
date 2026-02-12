@@ -15,13 +15,13 @@ public abstract class j {
     public static final class a extends kotlin.coroutines.jvm.internal.k implements Function3 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f24039d;
+        int f24040d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f24040e;
+        private /* synthetic */ Object f24041e;
 
         /* renamed from: i  reason: collision with root package name */
-        /* synthetic */ Object f24041i;
+        /* synthetic */ Object f24042i;
 
         a(Continuation continuation) {
             super(3, continuation);
@@ -31,20 +31,20 @@ public abstract class j {
         public final Object invokeSuspend(Object obj) {
             x xVar;
             Object f10 = gs.b.f();
-            int i10 = this.f24039d;
+            int i10 = this.f24040d;
             if (i10 != 0) {
                 if (i10 == 1) {
-                    xVar = (x) this.f24040e;
+                    xVar = (x) this.f24041e;
                     kotlin.c.b(obj);
                 } else {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
             } else {
                 kotlin.c.b(obj);
-                x xVar2 = (x) this.f24041i;
-                this.f24040e = xVar2;
-                this.f24039d = 1;
-                if (((FlowCollector) this.f24040e).emit(xVar2, this) == f10) {
+                x xVar2 = (x) this.f24042i;
+                this.f24041e = xVar2;
+                this.f24040d = 1;
+                if (((FlowCollector) this.f24041e).emit(xVar2, this) == f10) {
                     return f10;
                 }
                 xVar = xVar2;
@@ -56,9 +56,9 @@ public abstract class j {
         /* renamed from: j */
         public final Object invoke(FlowCollector flowCollector, x xVar, Continuation continuation) {
             a aVar = new a(continuation);
-            aVar.f24040e = flowCollector;
-            aVar.f24041i = xVar;
-            return aVar.invokeSuspend(Unit.f31987a);
+            aVar.f24041e = flowCollector;
+            aVar.f24042i = xVar;
+            return aVar.invokeSuspend(Unit.f31988a);
         }
     }
 

@@ -9,7 +9,7 @@ import lv.d;
 public final class e implements cv.b, lv.d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f30443a = new e();
+    public static final e f30444a = new e();
 
     private e() {
     }
@@ -33,7 +33,7 @@ public final class e implements cv.b, lv.d {
                             break;
                         }
                         Object next = it.next();
-                        if (f30443a.a(next)) {
+                        if (f30444a.a(next)) {
                             obj3 = next;
                             break;
                         }
@@ -51,7 +51,7 @@ public final class e implements cv.b, lv.d {
                 break;
             }
             Object next2 = it2.next();
-            if (f30443a.a(next2)) {
+            if (f30444a.a(next2)) {
                 obj3 = next2;
                 break;
             }

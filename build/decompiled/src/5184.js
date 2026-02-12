@@ -1,78 +1,22 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = module;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var1 = function arg0, arg1, arg2() {
-        _fun46262: for (var _fun46262_ip = 0;;) switch (_fun46262_ip) {
-            case 0:
-                var7 = arg0;
-                var2 = arg2;
-                var4 = undefined;
-                var0 = undefined;
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var1 = 0;
-                var1 = var6[var1];
-                var1 = var5.bind(var4)(var1);
-                var1 = var1.bind(var4)();
-                if (var1) {
-                    _fun46262_ip = 140;
-                    continue _fun46262
-                }
-            case 39:
-                var6 = [null];
-                var8 = var6.push;
-                var5 = var8.apply;
-                var1 = arg1;
-                var1 = var5.bind(var8)(var6, var1);
-                var5 = var7.bind;
-                var1 = var5.apply;
-                var1 = var1.bind(var5)(var7, var6);
-                var5 = var1.prototype;
-                var5 = Object.create(var5, {
-                    constructor: {
-                        value: var1
-                    }
-                });
-                var11 = var5;
-                var1 = new var11[var1](var10);
-                var1 = var1 instanceof Object ? var1 : var5;
-                if (!var2) {
-                    _fun46262_ip = 138;
-                    continue _fun46262
-                }
-            case 107:
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var3 = 1;
-                var3 = var6[var3];
-                var3 = var5.bind(var4)(var3);
-                var2 = var2.prototype;
-                var2 = var3.bind(var4)(var1, var2);
-            case 138:
-                return var1;
-            case 140:
-                var1 = global;
-                var1 = var1.Reflect;
-                var3 = var1.construct;
-                var2 = var3.apply;
-                var0 = arguments;
-                var1 = var0;
-                var0 = null;
-                var0 = var2.bind(var3)(var0, var1);
-                return var0;
-        }
-    };
-    var0.exports = var1;
-    var2 = var0.exports;
-    var1 = true;
-    var2.__esModule = var1;
-    var1 = var0.exports;
-    var0 = var0.exports;
-    var1.default = var0;
+    var2 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
     var0 = undefined;
+    var2.Messages = var0;
+    var1 = {
+        'ERROR_LISTVIEW_VALIDATION': 'missing datasource or layout provider, cannot proceed without it',
+        'WARN_SCROLL_TO_INDEX': 'scrollTo was called before RecyclerListView was measured, please wait for the mount to finish',
+        'VISIBLE_INDEXES_CHANGED_DEPRECATED': 'onVisibleIndexesChanged deprecated. Please use onVisibleIndicesChanged instead.',
+        'ANIMATION_ON_PAGINATION': "Looks like you're trying to use RecyclerListView's layout animation render while doing pagination. This operation will be ignored to avoid creation of too many items due to developer error."
+    };
+    var2.Messages = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5185, 3226]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

@@ -13,7 +13,7 @@ public final class s0 implements Parcelable {
     public static final Parcelable.Creator<s0> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f53337d;
+    private final Map f53338d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -38,14 +38,14 @@ public final class s0 implements Parcelable {
 
     public s0(Map poseConfigs) {
         Intrinsics.checkNotNullParameter(poseConfigs, "poseConfigs");
-        this.f53337d = poseConfigs;
+        this.f53338d = poseConfigs;
     }
 
     public final r0 a(a1.b pose) {
         Intrinsics.checkNotNullParameter(pose, "pose");
-        r0 r0Var = (r0) this.f53337d.get(pose);
+        r0 r0Var = (r0) this.f53338d.get(pose);
         if (r0Var == null) {
-            return r0.f53317p.a();
+            return r0.f53318p.a();
         }
         return r0Var;
     }
@@ -59,25 +59,25 @@ public final class s0 implements Parcelable {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof s0) && Intrinsics.areEqual(this.f53337d, ((s0) obj).f53337d)) {
+        if ((obj instanceof s0) && Intrinsics.areEqual(this.f53338d, ((s0) obj).f53338d)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f53337d.hashCode();
+        return this.f53338d.hashCode();
     }
 
     public String toString() {
-        Map map = this.f53337d;
+        Map map = this.f53338d;
         return "PoseConfigs(poseConfigs=" + map + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        Map map = this.f53337d;
+        Map map = this.f53338d;
         dest.writeInt(map.size());
         for (Map.Entry entry : map.entrySet()) {
             dest.writeString(((a1.b) entry.getKey()).name());

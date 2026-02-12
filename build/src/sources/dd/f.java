@@ -9,81 +9,81 @@ import uc.n;
 final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    public int f21591a;
+    public int f21592a;
 
     /* renamed from: b  reason: collision with root package name */
-    public int f21592b;
+    public int f21593b;
 
     /* renamed from: c  reason: collision with root package name */
-    public long f21593c;
+    public long f21594c;
 
     /* renamed from: d  reason: collision with root package name */
-    public long f21594d;
+    public long f21595d;
 
     /* renamed from: e  reason: collision with root package name */
-    public long f21595e;
+    public long f21596e;
 
     /* renamed from: f  reason: collision with root package name */
-    public long f21596f;
+    public long f21597f;
 
     /* renamed from: g  reason: collision with root package name */
-    public int f21597g;
+    public int f21598g;
 
     /* renamed from: h  reason: collision with root package name */
-    public int f21598h;
+    public int f21599h;
 
     /* renamed from: i  reason: collision with root package name */
-    public int f21599i;
+    public int f21600i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final int[] f21600j = new int[SetSpanOperation.SPAN_MAX_PRIORITY];
+    public final int[] f21601j = new int[SetSpanOperation.SPAN_MAX_PRIORITY];
 
     /* renamed from: k  reason: collision with root package name */
-    private final h0 f21601k = new h0((int) SetSpanOperation.SPAN_MAX_PRIORITY);
+    private final h0 f21602k = new h0((int) SetSpanOperation.SPAN_MAX_PRIORITY);
 
     public boolean a(l lVar, boolean z10) {
         b();
-        this.f21601k.Q(27);
-        if (!n.b(lVar, this.f21601k.e(), 0, 27, z10) || this.f21601k.J() != 1332176723) {
+        this.f21602k.Q(27);
+        if (!n.b(lVar, this.f21602k.e(), 0, 27, z10) || this.f21602k.J() != 1332176723) {
             return false;
         }
-        int H = this.f21601k.H();
-        this.f21591a = H;
+        int H = this.f21602k.H();
+        this.f21592a = H;
         if (H != 0) {
             if (z10) {
                 return false;
             }
             throw l0.d("unsupported bit stream revision");
         }
-        this.f21592b = this.f21601k.H();
-        this.f21593c = this.f21601k.v();
-        this.f21594d = this.f21601k.x();
-        this.f21595e = this.f21601k.x();
-        this.f21596f = this.f21601k.x();
-        int H2 = this.f21601k.H();
-        this.f21597g = H2;
-        this.f21598h = H2 + 27;
-        this.f21601k.Q(H2);
-        if (!n.b(lVar, this.f21601k.e(), 0, this.f21597g, z10)) {
+        this.f21593b = this.f21602k.H();
+        this.f21594c = this.f21602k.v();
+        this.f21595d = this.f21602k.x();
+        this.f21596e = this.f21602k.x();
+        this.f21597f = this.f21602k.x();
+        int H2 = this.f21602k.H();
+        this.f21598g = H2;
+        this.f21599h = H2 + 27;
+        this.f21602k.Q(H2);
+        if (!n.b(lVar, this.f21602k.e(), 0, this.f21598g, z10)) {
             return false;
         }
-        for (int i10 = 0; i10 < this.f21597g; i10++) {
-            this.f21600j[i10] = this.f21601k.H();
-            this.f21599i += this.f21600j[i10];
+        for (int i10 = 0; i10 < this.f21598g; i10++) {
+            this.f21601j[i10] = this.f21602k.H();
+            this.f21600i += this.f21601j[i10];
         }
         return true;
     }
 
     public void b() {
-        this.f21591a = 0;
-        this.f21592b = 0;
-        this.f21593c = 0L;
-        this.f21594d = 0L;
-        this.f21595e = 0L;
-        this.f21596f = 0L;
-        this.f21597g = 0;
-        this.f21598h = 0;
-        this.f21599i = 0;
+        this.f21592a = 0;
+        this.f21593b = 0;
+        this.f21594c = 0L;
+        this.f21595d = 0L;
+        this.f21596e = 0L;
+        this.f21597f = 0L;
+        this.f21598g = 0;
+        this.f21599h = 0;
+        this.f21600i = 0;
     }
 
     public boolean c(l lVar) {
@@ -99,12 +99,12 @@ final class f {
             z10 = false;
         }
         oe.a.a(z10);
-        this.f21601k.Q(4);
+        this.f21602k.Q(4);
         while (true) {
             i10 = (j10 > (-1L) ? 1 : (j10 == (-1L) ? 0 : -1));
-            if ((i10 == 0 || lVar.getPosition() + 4 < j10) && n.b(lVar, this.f21601k.e(), 0, 4, true)) {
-                this.f21601k.U(0);
-                if (this.f21601k.J() == 1332176723) {
+            if ((i10 == 0 || lVar.getPosition() + 4 < j10) && n.b(lVar, this.f21602k.e(), 0, 4, true)) {
+                this.f21602k.U(0);
+                if (this.f21602k.J() == 1332176723) {
                     lVar.e();
                     return true;
                 }

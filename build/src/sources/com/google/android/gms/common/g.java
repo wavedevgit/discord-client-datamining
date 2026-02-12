@@ -11,13 +11,13 @@ import com.facebook.react.devsupport.StackTraceHelper;
 public class g {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final int f14492a = k.f14497a;
+    public static final int f14493a = k.f14498a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final g f14493b = new g();
+    private static final g f14494b = new g();
 
     public static g f() {
-        return f14493b;
+        return f14494b;
     }
 
     public int a(Context context) {
@@ -40,7 +40,7 @@ public class g {
         } else {
             StringBuilder sb2 = new StringBuilder();
             sb2.append("gcore_");
-            sb2.append(f14492a);
+            sb2.append(f14493a);
             sb2.append("-");
             if (!TextUtils.isEmpty(str)) {
                 sb2.append(str);
@@ -86,7 +86,7 @@ public class g {
     }
 
     public int g(Context context) {
-        return h(context, f14492a);
+        return h(context, f14493a);
     }
 
     public int h(Context context, int i10) {

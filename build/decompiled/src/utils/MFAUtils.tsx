@@ -1,7 +1,7 @@
 // utils/MFAUtils.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun61194: for (var _fun61194_ip = 0;;) switch (_fun61194_ip) {
+    _fun63566: for (var _fun63566_ip = 0;;) switch (_fun63566_ip) {
         case 0:
             var7 = require;
             var2 = exports;
@@ -34,23 +34,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = undefined;
             var10 = undefined;
             if (var9) {
-                _fun61194_ip = 88;
-                continue _fun61194
+                _fun63566_ip = 88;
+                continue _fun63566
             }
         case 82:
             var10 = var5.crypto;
         case 88:
             if (!(var6 == var10)) {
-                _fun61194_ip = 116;
-                continue _fun61194
+                _fun63566_ip = 116;
+                continue _fun63566
             }
         case 92:
             var9 = var4.window;
             var11 = var6 == var9;
             var5 = undefined;
             if (var11) {
-                _fun61194_ip = 113;
-                continue _fun61194
+                _fun63566_ip = 113;
+                continue _fun63566
             }
         case 107:
             var5 = var9.msCrypto;
@@ -63,16 +63,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var4 in var5;
             var5 = var6 != var10;
             if (!var5) {
-                _fun61194_ip = 149;
-                continue _fun61194
+                _fun63566_ip = 149;
+                continue _fun63566
             }
         case 141:
             var9 = 'getRandomValues';
             var5 = var9 in var10;
         case 149:
             if (!var5) {
-                _fun61194_ip = 155;
-                continue _fun61194
+                _fun63566_ip = 155;
+                continue _fun63566
             }
         case 152:
             var5 = var4;
@@ -135,13 +135,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.generateTotpSecret = var4;
             var2.encodeTotpSecret = var3;
             var3 = function arg0, arg1() {
-                _fun61197: for (var _fun61197_ip = 0;;) switch (_fun61197_ip) {
+                _fun63569: for (var _fun63569_ip = 0;;) switch (_fun63569_ip) {
                     case 0:
                         var3 = arguments[2];
                         var2 = undefined;
                         if (!(var3 === var2)) {
-                            _fun61197_ip = 15;
-                            continue _fun61197
+                            _fun63569_ip = 15;
+                            continue _fun63569
                         }
                     case 9:
                         var3 = 'Discord';
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var2.encodeTotpSecretAsUrl = var3;
             var1 = function arg0, arg1() {
-                _fun61198: for (var _fun61198_ip = 0;;) switch (_fun61198_ip) {
+                _fun63570: for (var _fun63570_ip = 0;;) switch (_fun63570_ip) {
                     case 0:
                         var6 = arg1;
                         var2 = _closure1_slot0;
@@ -189,8 +189,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7 = var1 == var6;
                         var1 = undefined;
                         if (var7) {
-                            _fun61198_ip = 65;
-                            continue _fun61198
+                            _fun63570_ip = 65;
+                            continue _fun63570
                         }
                     case 59:
                         var1 = var6.tags;
@@ -211,4 +211,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.captureWebAuthnException = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 7553, 1207, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 7828, 1207, 2]);

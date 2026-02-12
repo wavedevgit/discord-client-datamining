@@ -56,13 +56,13 @@ public final class KeyboardModule extends NativeKeyboardModuleSpec {
     @Override // com.facebook.react.bridge.BaseJavaModule, com.facebook.react.bridge.NativeModule, com.facebook.react.turbomodule.core.interfaces.TurboModule
     public void initialize() {
         super.initialize();
-        a.f48171a.d(this.reactContext);
+        a.f48172a.d(this.reactContext);
     }
 
     @Override // com.facebook.react.bridge.BaseJavaModule, com.facebook.react.bridge.NativeModule, com.facebook.react.turbomodule.core.interfaces.TurboModule
     public void invalidate() {
         super.invalidate();
-        a.f48171a.d(null);
+        a.f48172a.d(null);
     }
 
     @Override // com.discord.codegen.NativeKeyboardModuleSpec

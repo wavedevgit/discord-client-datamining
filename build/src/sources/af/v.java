@@ -33,7 +33,7 @@ public final class v extends q {
         f();
         c b10 = c.b(this.f772c);
         GoogleSignInAccount c10 = b10.c();
-        GoogleSignInOptions googleSignInOptions = GoogleSignInOptions.f14382w;
+        GoogleSignInOptions googleSignInOptions = GoogleSignInOptions.f14383w;
         if (c10 != null) {
             googleSignInOptions = b10.d();
         }

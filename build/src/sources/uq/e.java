@@ -23,7 +23,7 @@ public abstract class e {
     public /* synthetic */ class a {
 
         /* renamed from: a */
-        public static final /* synthetic */ int[] f50927a;
+        public static final /* synthetic */ int[] f50928a;
 
         static {
             int[] iArr = new int[StyleElements.PositionType.values().length];
@@ -39,7 +39,7 @@ public abstract class e {
                 iArr[StyleElements.PositionType.END.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f50927a = iArr;
+            f50928a = iArr;
         }
     }
 
@@ -277,7 +277,7 @@ public abstract class e {
             StyleElements.PositionType justificationValue = baseButtonComponentStyle.getJustificationValue();
             if (justificationValue != null && (layoutParams instanceof ConstraintLayout.LayoutParams)) {
                 ConstraintLayout.LayoutParams layoutParams4 = (ConstraintLayout.LayoutParams) layoutParams;
-                int i16 = a.f50927a[justificationValue.ordinal()];
+                int i16 = a.f50928a[justificationValue.ordinal()];
                 if (i16 != 1) {
                     if (i16 != 2) {
                         if (i16 == 3) {
@@ -309,6 +309,6 @@ public abstract class e {
 
     public static final Unit g(BaseButtonComponentStyle baseButtonComponentStyle, Button button, boolean z10, boolean z11) {
         e(baseButtonComponentStyle, button, z10, z11);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 }

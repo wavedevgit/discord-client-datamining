@@ -9,7 +9,7 @@ import kotlinx.coroutines.CoroutineScope;
 public final class e implements t {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f22972a = new e();
+    public static final e f22973a = new e();
 
     private e() {
     }

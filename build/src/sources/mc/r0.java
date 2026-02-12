@@ -3,26 +3,26 @@ package mc;
 public final class r0 {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final r0 f36269b = new r0(false);
+    public static final r0 f36270b = new r0(false);
 
     /* renamed from: a  reason: collision with root package name */
-    public final boolean f36270a;
+    public final boolean f36271a;
 
     public r0(boolean z10) {
-        this.f36270a = z10;
+        this.f36271a = z10;
     }
 
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if (obj != null && r0.class == obj.getClass() && this.f36270a == ((r0) obj).f36270a) {
+        if (obj != null && r0.class == obj.getClass() && this.f36271a == ((r0) obj).f36271a) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return !this.f36270a ? 1 : 0;
+        return !this.f36271a ? 1 : 0;
     }
 }

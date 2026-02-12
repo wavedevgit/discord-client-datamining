@@ -51,7 +51,7 @@ public final class a {
     static {
         String TAG = a.class.getSimpleName();
         f7296d = TAG;
-        ZoomLogger.a aVar = ZoomLogger.f18182b;
+        ZoomLogger.a aVar = ZoomLogger.f18183b;
         Intrinsics.checkNotNullExpressionValue(TAG, "TAG");
         f7297e = aVar.a(TAG);
     }

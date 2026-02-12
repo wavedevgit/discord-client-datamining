@@ -5,14 +5,14 @@ import kotlin.jvm.internal.Intrinsics;
 public final class v {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f23031a;
+    private final Object f23032a;
 
     public v(Object obj) {
-        this.f23031a = obj;
+        this.f23032a = obj;
     }
 
     public final Object a() {
-        return this.f23031a;
+        return this.f23032a;
     }
 
     public boolean equals(Object obj) {
@@ -22,11 +22,11 @@ public final class v {
         if (!(obj instanceof v)) {
             return false;
         }
-        return Intrinsics.areEqual(this.f23031a, ((v) obj).f23031a);
+        return Intrinsics.areEqual(this.f23032a, ((v) obj).f23032a);
     }
 
     public int hashCode() {
-        Object obj = this.f23031a;
+        Object obj = this.f23032a;
         if (obj == null) {
             return 0;
         }
@@ -34,6 +34,6 @@ public final class v {
     }
 
     public String toString() {
-        return "WorkflowOutput(" + this.f23031a + ')';
+        return "WorkflowOutput(" + this.f23032a + ')';
     }
 }

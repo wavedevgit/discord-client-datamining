@@ -538,7 +538,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var4 = var6.warn;
                     var3 = '[TouchEvents] No root component found in touch path.';
                     var3 = var4.bind(var6)(var3);
-                    _fun12970_ip = 318;
+                    _fun12970_ip = 317;
                     continue _fun12970;
                 case 70:
                     if (var5) {
@@ -604,7 +604,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = '[TouchEvents] ';
                     var0 = var3.bind(var0)(var4);
                     var0 = var1.bind(var2)(var0);
-                case 318:
+                case 317:
                     var0 = undefined;
                     return var0;
             }

@@ -67,7 +67,7 @@ public final class d extends hf.g {
 
     @Override // hf.c
     public com.google.android.gms.common.d[] u() {
-        com.google.android.gms.common.d[] ALL_FEATURES = lg.d.f35821d;
+        com.google.android.gms.common.d[] ALL_FEATURES = lg.d.f35822d;
         Intrinsics.checkNotNullExpressionValue(ALL_FEATURES, "ALL_FEATURES");
         return ALL_FEATURES;
     }

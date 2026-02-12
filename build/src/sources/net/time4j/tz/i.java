@@ -3,14 +3,14 @@ package net.time4j.tz;
 class i implements zt.f {
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f37718d;
+    private final long f37719d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f37719e;
+    private final int f37720e;
 
     private i(long j10, int i10) {
-        this.f37718d = j10;
-        this.f37719e = i10;
+        this.f37719d = j10;
+        this.f37720e = i10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -29,11 +29,11 @@ class i implements zt.f {
 
     @Override // zt.f
     public int a() {
-        return this.f37719e;
+        return this.f37720e;
     }
 
     @Override // zt.f
     public long o() {
-        return this.f37718d;
+        return this.f37719d;
     }
 }

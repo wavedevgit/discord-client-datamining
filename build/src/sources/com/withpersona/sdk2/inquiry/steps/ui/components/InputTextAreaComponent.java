@@ -25,25 +25,25 @@ public final class InputTextAreaComponent implements k5, w4, v, e0 {
     public static final Parcelable.Creator<InputTextAreaComponent> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f20695d;
+    private final String f20696d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f20696e;
+    private final String f20697e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f20697i;
+    private final JsonLogicBoolean f20698i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final JsonLogicBoolean f20698o;
+    private final JsonLogicBoolean f20699o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final TextBasedComponentStyle f20699p;
+    private final TextBasedComponentStyle f20700p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final List f20700q;
+    private final List f20701q;
 
     /* renamed from: r  reason: collision with root package name */
-    private t f20701r;
+    private t f20702r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -64,30 +64,30 @@ public final class InputTextAreaComponent implements k5, w4, v, e0 {
     public InputTextAreaComponent(String name, String value, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, TextBasedComponentStyle textBasedComponentStyle) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f20695d = name;
-        this.f20696e = value;
-        this.f20697i = jsonLogicBoolean;
-        this.f20698o = jsonLogicBoolean2;
-        this.f20699p = textBasedComponentStyle;
-        this.f20700q = new ArrayList();
-        this.f20701r = w.a(value);
+        this.f20696d = name;
+        this.f20697e = value;
+        this.f20698i = jsonLogicBoolean;
+        this.f20699o = jsonLogicBoolean2;
+        this.f20700p = textBasedComponentStyle;
+        this.f20701q = new ArrayList();
+        this.f20702r = w.a(value);
     }
 
     public static /* synthetic */ InputTextAreaComponent e(InputTextAreaComponent inputTextAreaComponent, String str, String str2, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, TextBasedComponentStyle textBasedComponentStyle, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = inputTextAreaComponent.f20695d;
+            str = inputTextAreaComponent.f20696d;
         }
         if ((i10 & 2) != 0) {
-            str2 = inputTextAreaComponent.f20696e;
+            str2 = inputTextAreaComponent.f20697e;
         }
         if ((i10 & 4) != 0) {
-            jsonLogicBoolean = inputTextAreaComponent.f20697i;
+            jsonLogicBoolean = inputTextAreaComponent.f20698i;
         }
         if ((i10 & 8) != 0) {
-            jsonLogicBoolean2 = inputTextAreaComponent.f20698o;
+            jsonLogicBoolean2 = inputTextAreaComponent.f20699o;
         }
         if ((i10 & 16) != 0) {
-            textBasedComponentStyle = inputTextAreaComponent.f20699p;
+            textBasedComponentStyle = inputTextAreaComponent.f20700p;
         }
         TextBasedComponentStyle textBasedComponentStyle2 = textBasedComponentStyle;
         JsonLogicBoolean jsonLogicBoolean3 = jsonLogicBoolean;
@@ -100,7 +100,7 @@ public final class InputTextAreaComponent implements k5, w4, v, e0 {
 
     @Override // pq.w4
     public t b() {
-        return this.f20701r;
+        return this.f20702r;
     }
 
     public final InputTextAreaComponent c(String name, String value, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, TextBasedComponentStyle textBasedComponentStyle) {
@@ -111,7 +111,7 @@ public final class InputTextAreaComponent implements k5, w4, v, e0 {
 
     @Override // pq.e0
     public List d() {
-        return this.f20700q;
+        return this.f20701q;
     }
 
     @Override // android.os.Parcelable
@@ -125,42 +125,42 @@ public final class InputTextAreaComponent implements k5, w4, v, e0 {
         }
         if (obj instanceof InputTextAreaComponent) {
             InputTextAreaComponent inputTextAreaComponent = (InputTextAreaComponent) obj;
-            return Intrinsics.areEqual(this.f20695d, inputTextAreaComponent.f20695d) && Intrinsics.areEqual(this.f20696e, inputTextAreaComponent.f20696e) && Intrinsics.areEqual(this.f20697i, inputTextAreaComponent.f20697i) && Intrinsics.areEqual(this.f20698o, inputTextAreaComponent.f20698o) && Intrinsics.areEqual(this.f20699p, inputTextAreaComponent.f20699p);
+            return Intrinsics.areEqual(this.f20696d, inputTextAreaComponent.f20696d) && Intrinsics.areEqual(this.f20697e, inputTextAreaComponent.f20697e) && Intrinsics.areEqual(this.f20698i, inputTextAreaComponent.f20698i) && Intrinsics.areEqual(this.f20699o, inputTextAreaComponent.f20699o) && Intrinsics.areEqual(this.f20700p, inputTextAreaComponent.f20700p);
         }
         return false;
     }
 
     public final TextBasedComponentStyle f() {
-        return this.f20699p;
+        return this.f20700p;
     }
 
     public void g(t tVar) {
         Intrinsics.checkNotNullParameter(tVar, "<set-?>");
-        this.f20701r = tVar;
+        this.f20702r = tVar;
     }
 
     @Override // pq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f20698o;
+        return this.f20699o;
     }
 
     @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f20697i;
+        return this.f20698i;
     }
 
     @Override // pq.k5
     public String getName() {
-        return this.f20695d;
+        return this.f20696d;
     }
 
     public int hashCode() {
-        int hashCode = ((this.f20695d.hashCode() * 31) + this.f20696e.hashCode()) * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f20697i;
+        int hashCode = ((this.f20696d.hashCode() * 31) + this.f20697e.hashCode()) * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f20698i;
         int hashCode2 = (hashCode + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20698o;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20699o;
         int hashCode3 = (hashCode2 + (jsonLogicBoolean2 == null ? 0 : jsonLogicBoolean2.hashCode())) * 31;
-        TextBasedComponentStyle textBasedComponentStyle = this.f20699p;
+        TextBasedComponentStyle textBasedComponentStyle = this.f20700p;
         return hashCode3 + (textBasedComponentStyle != null ? textBasedComponentStyle.hashCode() : 0);
     }
 
@@ -174,22 +174,22 @@ public final class InputTextAreaComponent implements k5, w4, v, e0 {
     }
 
     public String toString() {
-        String str = this.f20695d;
-        String str2 = this.f20696e;
-        JsonLogicBoolean jsonLogicBoolean = this.f20697i;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20698o;
-        TextBasedComponentStyle textBasedComponentStyle = this.f20699p;
+        String str = this.f20696d;
+        String str2 = this.f20697e;
+        JsonLogicBoolean jsonLogicBoolean = this.f20698i;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20699o;
+        TextBasedComponentStyle textBasedComponentStyle = this.f20700p;
         return "InputTextAreaComponent(name=" + str + ", value=" + str2 + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ", errorTextStyle=" + textBasedComponentStyle + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f20695d);
-        dest.writeString(this.f20696e);
-        dest.writeParcelable(this.f20697i, i10);
-        dest.writeParcelable(this.f20698o, i10);
-        dest.writeParcelable(this.f20699p, i10);
+        dest.writeString(this.f20696d);
+        dest.writeString(this.f20697e);
+        dest.writeParcelable(this.f20698i, i10);
+        dest.writeParcelable(this.f20699o, i10);
+        dest.writeParcelable(this.f20700p, i10);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

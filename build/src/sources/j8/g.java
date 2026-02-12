@@ -3,7 +3,7 @@ package j8;
 public class g implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static g f30865a;
+    private static g f30866a;
 
     private g() {
     }
@@ -12,10 +12,10 @@ public class g implements c {
         g gVar;
         synchronized (g.class) {
             try {
-                if (f30865a == null) {
-                    f30865a = new g();
+                if (f30866a == null) {
+                    f30866a = new g();
                 }
-                gVar = f30865a;
+                gVar = f30866a;
             } catch (Throwable th2) {
                 throw th2;
             }

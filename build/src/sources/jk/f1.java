@@ -5,7 +5,7 @@ class f1 extends d1 {
     @Override // jk.d1
     /* renamed from: A */
     public void n(Object obj, e1 e1Var) {
-        ((s) obj).f31142i = e1Var;
+        ((s) obj).f31143i = e1Var;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -80,7 +80,7 @@ class f1 extends d1 {
     @Override // jk.d1
     /* renamed from: w */
     public e1 g(Object obj) {
-        return ((s) obj).f31142i;
+        return ((s) obj).f31143i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

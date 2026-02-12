@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var _closure1_slot11 = var0;
+    var _closure1_slot12 = var0;
     var0 = global;
     var8 = var0.Object;
     var7 = var8.defineProperty;
@@ -94,8 +94,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 7;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var3 = var3.jsx;
-    var _closure1_slot10 = var3;
+    var7 = var3.jsx;
+    var _closure1_slot10 = var7;
+    var3 = 8;
+    var3 = var5[var3];
+    var6 = var6.bind(var0)(var3);
+    var3 = {};
+    var3 = var7.bind(var0)(var6, var3);
+    var _closure1_slot11 = var3;
     var3 = 21;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -112,7 +118,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var12.useContext;
                 var1 = _closure1_slot1;
                 var11 = _closure1_slot2;
-                var0 = 8;
+                var0 = 9;
                 var0 = var11[var0];
                 var3 = undefined;
                 var0 = var1.bind(var3)(var0);
@@ -120,7 +126,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var0.channelId;
                 var _closure2_slot0 = var13;
                 var2 = _closure1_slot0;
-                var0 = 9;
+                var0 = 10;
                 var0 = var11[var0];
                 var7 = var2.bind(var3)(var0);
                 var0 = var7.useVoicePanelButtonStyles;
@@ -130,7 +136,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var0 = var7.bind(var12)(var0);
                 var _closure2_slot2 = var0;
-                var7 = 10;
+                var7 = 11;
                 var0 = var11[var7];
                 var14 = var2.bind(var3)(var0);
                 var9 = var14.useStateFromStores;
@@ -164,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 46:
                             var5 = _closure1_slot0;
                             var4 = _closure1_slot2;
-                            var3 = 11;
+                            var3 = 12;
                             var4 = var4[var3];
                             var3 = undefined;
                             var6 = var5.bind(var3)(var4);
@@ -207,31 +213,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 0:
                             var1 = _closure2_slot3;
                             if (var1) {
-                                _fun112235_ip = 94;
+                                _fun112235_ip = 73;
                                 continue _fun112235
                             }
                         case 15:
                             var7 = _closure1_slot0;
-                            var10 = _closure1_slot2;
-                            var1 = 12;
-                            var1 = var10[var1];
-                            var9 = undefined;
-                            var6 = var7.bind(var9)(var1);
-                            var5 = var6.openAlert;
+                            var8 = _closure1_slot2;
                             var1 = 13;
-                            var4 = var10[var1];
-                            var4 = var7.bind(var9)(var4);
-                            var4 = var4.VOICE_PANEL_NO_VIDEO_PERMS_KEY;
-                            var8 = _closure1_slot10;
-                            var7 = _closure1_slot1;
-                            var1 = var10[var1];
-                            var7 = var7.bind(var9)(var1);
-                            var1 = {};
-                            var1 = var8.bind(var9)(var7, var1);
+                            var1 = var8[var1];
+                            var4 = undefined;
+                            var6 = var7.bind(var4)(var1);
+                            var5 = var6.openAlert;
+                            var1 = 8;
+                            var1 = var8[var1];
+                            var1 = var7.bind(var4)(var1);
+                            var4 = var1.VOICE_PANEL_NO_VIDEO_PERMS_KEY;
+                            var1 = _closure1_slot11;
                             var1 = var5.bind(var6)(var4, var1);
-                            _fun112235_ip = 205;
+                            _fun112235_ip = 184;
                             continue _fun112235;
-                        case 94:
+                        case 73:
                             var5 = _closure1_slot6;
                             var4 = var5.getChannel;
                             var1 = _closure2_slot0;
@@ -239,10 +240,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var _closure3_slot0 = var4;
                             var1 = null;
                             if (!(var1 != var4)) {
-                                _fun112235_ip = 205;
+                                _fun112235_ip = 184;
                                 continue _fun112235
                             }
-                        case 122:
+                        case 101:
                             var1 = function() {
                                 _fun112236: for (var _fun112236_ip = 0;;) switch (_fun112236_ip) {
                                     case 0:
@@ -283,18 +284,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var _closure3_slot1 = var1;
                             var3 = _closure2_slot4;
                             if (var3) {
-                                _fun112235_ip = 199;
+                                _fun112235_ip = 178;
                                 continue _fun112235
                             }
-                        case 140:
+                        case 119:
                             var4 = _closure1_slot5;
                             var3 = var4.isReactingToThermalState;
                             var3 = var3.bind(var4)();
                             if (!var3) {
-                                _fun112235_ip = 199;
+                                _fun112235_ip = 178;
                                 continue _fun112235
                             }
-                        case 157:
+                        case 136:
                             var4 = _closure1_slot0;
                             var3 = _closure1_slot2;
                             var2 = 15;
@@ -309,12 +310,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 return var0;
                             };
                             var0 = var2.bind(var3)(var0);
-                            _fun112235_ip = 205;
+                            _fun112235_ip = 184;
                             continue _fun112235;
-                        case 199:
+                        case 178:
                             var0 = undefined;
                             var0 = var1.bind(var0)();
-                        case 205:
+                        case 184:
                             var0 = undefined;
                             return var0;
                     }
@@ -431,7 +432,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             _fun112238_ip = 180;
                             continue _fun112238;
                         case 122:
-                            var3 = _closure1_slot11;
+                            var3 = _closure1_slot12;
                             var2 = {};
                             var1 = _closure2_slot4;
                             var2.isVideoEnabled = var1;
@@ -464,4 +465,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7951, 1372, 1410, 3473, 3093, 33, 11870, 14398, 566, 5330, 4024, 14412, 8259, 8048, 8548, 14399, 1234, 8511, 3161, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7933, 1372, 1410, 3473, 3093, 33, 14419, 9718, 14405, 566, 5298, 4024, 8915, 8120, 11776, 14406, 1234, 11753, 3161, 2]);

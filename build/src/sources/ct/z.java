@@ -7,18 +7,18 @@ import kotlinx.coroutines.flow.FlowCollector;
 public final class z implements FlowCollector {
 
     /* renamed from: d  reason: collision with root package name */
-    private final at.w f21108d;
+    private final at.w f21109d;
 
     public z(at.w wVar) {
-        this.f21108d = wVar;
+        this.f21109d = wVar;
     }
 
     @Override // kotlinx.coroutines.flow.FlowCollector
     public Object emit(Object obj, Continuation continuation) {
-        Object x10 = this.f21108d.x(obj, continuation);
+        Object x10 = this.f21109d.x(obj, continuation);
         if (x10 == gs.b.f()) {
             return x10;
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 }

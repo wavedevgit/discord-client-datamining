@@ -52,10 +52,10 @@ public abstract class e2 {
     public static final Unit c(InputSelect inputSelect, sq.r rVar) {
         InputSelectComponentStyle styles = inputSelect.getStyles();
         if (styles != null) {
-            TextInputLayout listSelector = rVar.f48283b;
+            TextInputLayout listSelector = rVar.f48284b;
             Intrinsics.checkNotNullExpressionValue(listSelector, "listSelector");
             uq.o.i(listSelector, styles);
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 }

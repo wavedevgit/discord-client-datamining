@@ -7,7 +7,7 @@ import mw.d;
 public final class b implements cv.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f26041a = new b();
+    public static final b f26042a = new b();
 
     private b() {
     }
@@ -51,7 +51,7 @@ public final class b implements cv.b {
         if (list3 == null) {
             list3 = CollectionsKt.l();
         }
-        List f10 = a.f26040a.f(list3, obj2);
+        List f10 = a.f26041a.f(list3, obj2);
         if (list3.size() - f10.size() < j10) {
             list4 = f10;
         }

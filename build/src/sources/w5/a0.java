@@ -5,7 +5,7 @@ import android.graphics.PointF;
 public class a0 implements n0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a0 f52280a = new a0();
+    public static final a0 f52281a = new a0();
 
     private a0() {
     }

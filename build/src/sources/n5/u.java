@@ -8,36 +8,36 @@ import t5.t;
 public class u implements c, a.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f36971a;
+    private final String f36972a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f36972b;
+    private final boolean f36973b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f36973c = new ArrayList();
+    private final List f36974c = new ArrayList();
 
     /* renamed from: d  reason: collision with root package name */
-    private final t.a f36974d;
+    private final t.a f36975d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final o5.a f36975e;
+    private final o5.a f36976e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final o5.a f36976f;
+    private final o5.a f36977f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final o5.a f36977g;
+    private final o5.a f36978g;
 
     public u(u5.b bVar, t5.t tVar) {
-        this.f36971a = tVar.c();
-        this.f36972b = tVar.g();
-        this.f36974d = tVar.f();
+        this.f36972a = tVar.c();
+        this.f36973b = tVar.g();
+        this.f36975d = tVar.f();
         o5.d a10 = tVar.e().a();
-        this.f36975e = a10;
+        this.f36976e = a10;
         o5.d a11 = tVar.b().a();
-        this.f36976f = a11;
+        this.f36977f = a11;
         o5.d a12 = tVar.d().a();
-        this.f36977g = a12;
+        this.f36978g = a12;
         bVar.i(a10);
         bVar.i(a11);
         bVar.i(a12);
@@ -48,35 +48,35 @@ public class u implements c, a.b {
 
     @Override // o5.a.b
     public void a() {
-        for (int i10 = 0; i10 < this.f36973c.size(); i10++) {
-            ((a.b) this.f36973c.get(i10)).a();
+        for (int i10 = 0; i10 < this.f36974c.size(); i10++) {
+            ((a.b) this.f36974c.get(i10)).a();
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void d(a.b bVar) {
-        this.f36973c.add(bVar);
+        this.f36974c.add(bVar);
     }
 
     public o5.a e() {
-        return this.f36976f;
+        return this.f36977f;
     }
 
     public o5.a g() {
-        return this.f36977g;
+        return this.f36978g;
     }
 
     public o5.a i() {
-        return this.f36975e;
+        return this.f36976e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public t.a j() {
-        return this.f36974d;
+        return this.f36975d;
     }
 
     public boolean k() {
-        return this.f36972b;
+        return this.f36973b;
     }
 
     @Override // n5.c

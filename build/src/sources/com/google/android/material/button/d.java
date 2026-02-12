@@ -19,37 +19,37 @@ import th.r;
 public abstract class d extends LinearLayout {
 
     /* renamed from: v  reason: collision with root package name */
-    private static final int f15402v = k.f6941p;
+    private static final int f15403v = k.f6941p;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f15403d;
+    private final List f15404d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f15404e;
+    private final List f15405e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final b f15405i;
+    private final b f15406i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Comparator f15406o;
+    private final Comparator f15407o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Integer[] f15407p;
+    private Integer[] f15408p;
 
     /* renamed from: q  reason: collision with root package name */
-    p f15408q;
+    p f15409q;
 
     /* renamed from: r  reason: collision with root package name */
-    private q f15409r;
+    private q f15410r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f15410s;
+    private int f15411s;
 
     /* renamed from: t  reason: collision with root package name */
-    private r f15411t;
+    private r f15412t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f15412u;
+    private boolean f15413u;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -71,24 +71,24 @@ public abstract class d extends LinearLayout {
     public d(android.content.Context r8, android.util.AttributeSet r9, int r10) {
         /*
             r7 = this;
-            int r4 = com.google.android.material.button.d.f15402v
+            int r4 = com.google.android.material.button.d.f15403v
             android.content.Context r8 = wh.a.d(r8, r9, r10, r4)
             r7.<init>(r8, r9, r10)
             java.util.ArrayList r8 = new java.util.ArrayList
             r8.<init>()
-            r7.f15403d = r8
+            r7.f15404d = r8
             java.util.ArrayList r8 = new java.util.ArrayList
             r8.<init>()
-            r7.f15404e = r8
+            r7.f15405e = r8
             com.google.android.material.button.d$b r8 = new com.google.android.material.button.d$b
             r0 = 0
             r8.<init>()
-            r7.f15405i = r8
+            r7.f15406i = r8
             com.google.android.material.button.c r8 = new com.google.android.material.button.c
             r8.<init>()
-            r7.f15406o = r8
+            r7.f15407o = r8
             r8 = 1
-            r7.f15412u = r8
+            r7.f15413u = r8
             android.content.Context r0 = r7.getContext()
             int[] r2 = bh.l.f7016g3
             r6 = 0
@@ -101,14 +101,14 @@ public abstract class d extends LinearLayout {
             if (r10 == 0) goto L48
             int r10 = bh.l.f7046j3
             th.r r10 = th.r.b(r0, r9, r10)
-            r7.f15411t = r10
+            r7.f15412t = r10
         L48:
             int r10 = bh.l.f7066l3
             boolean r10 = r9.hasValue(r10)
             if (r10 == 0) goto L79
             int r10 = bh.l.f7066l3
             th.q r10 = th.q.b(r0, r9, r10)
-            r7.f15409r = r10
+            r7.f15410r = r10
             if (r10 != 0) goto L79
             th.q$b r10 = new th.q$b
             int r1 = bh.l.f7066l3
@@ -119,7 +119,7 @@ public abstract class d extends LinearLayout {
             th.l r1 = r1.m()
             r10.<init>(r1)
             th.q r10 = r10.j()
-            r7.f15409r = r10
+            r7.f15410r = r10
         L79:
             int r10 = bh.l.f7056k3
             boolean r10 = r9.hasValue(r10)
@@ -129,11 +129,11 @@ public abstract class d extends LinearLayout {
             r2 = 0
             r1.<init>(r2)
             th.p r10 = th.p.b(r0, r9, r10, r1)
-            r7.f15408q = r10
+            r7.f15409q = r10
         L8f:
             int r10 = bh.l.f7036i3
             int r10 = r9.getDimensionPixelSize(r10, r6)
-            r7.f15410s = r10
+            r7.f15411s = r10
             r7.setChildrenDrawingOrderEnabled(r8)
             int r10 = bh.l.f7026h3
             boolean r8 = r9.getBoolean(r10, r8)
@@ -166,7 +166,7 @@ public abstract class d extends LinearLayout {
         for (int i11 = firstVisibleChildIndex + 1; i11 < getChildCount(); i11++) {
             MaterialButton f10 = f(i11);
             MaterialButton f11 = f(i11 - 1);
-            if (this.f15410s <= 0) {
+            if (this.f15411s <= 0) {
                 i10 = Math.min(f10.getStrokeWidth(), f11.getStrokeWidth());
                 f10.setShouldDrawSurfaceColorStroke(true);
                 f11.setShouldDrawSurfaceColorStroke(true);
@@ -178,11 +178,11 @@ public abstract class d extends LinearLayout {
             LinearLayout.LayoutParams d10 = d(f10);
             if (getOrientation() == 0) {
                 d10.setMarginEnd(0);
-                d10.setMarginStart(this.f15410s - i10);
+                d10.setMarginStart(this.f15411s - i10);
                 d10.topMargin = 0;
             } else {
                 d10.bottomMargin = 0;
-                d10.topMargin = this.f15410s - i10;
+                d10.topMargin = this.f15411s - i10;
                 d10.setMarginStart(0);
             }
             f10.setLayoutParams(d10);
@@ -192,7 +192,7 @@ public abstract class d extends LinearLayout {
 
     private void c() {
         int i10;
-        if (this.f15411t != null && getChildCount() != 0) {
+        if (this.f15412t != null && getChildCount() != 0) {
             int firstVisibleChildIndex = getFirstVisibleChildIndex();
             int lastVisibleChildIndex = getLastVisibleChildIndex();
             int i11 = Integer.MAX_VALUE;
@@ -207,7 +207,7 @@ public abstract class d extends LinearLayout {
             }
             for (int i13 = firstVisibleChildIndex; i13 <= lastVisibleChildIndex; i13++) {
                 if (j(i13)) {
-                    f(i13).setSizeChange(this.f15411t);
+                    f(i13).setSizeChange(this.f15412t);
                     MaterialButton f10 = f(i13);
                     if (i13 != firstVisibleChildIndex && i13 != lastVisibleChildIndex) {
                         i10 = i11 * 2;
@@ -223,10 +223,10 @@ public abstract class d extends LinearLayout {
     private int e(int i10) {
         int allowedWidthDecrease;
         int i11 = 0;
-        if (!j(i10) || this.f15411t == null) {
+        if (!j(i10) || this.f15412t == null) {
             return 0;
         }
-        int max = Math.max(0, this.f15411t.c(f(i10).getWidth()));
+        int max = Math.max(0, this.f15412t.c(f(i10).getWidth()));
         MaterialButton i12 = i(i10);
         if (i12 == null) {
             allowedWidthDecrease = 0;
@@ -271,12 +271,12 @@ public abstract class d extends LinearLayout {
     }
 
     private q.b h(boolean z10, boolean z11, int i10) {
-        q qVar = this.f15409r;
+        q qVar = this.f15410r;
         if (qVar == null || (!z10 && !z11)) {
-            qVar = (q) this.f15404e.get(i10);
+            qVar = (q) this.f15405e.get(i10);
         }
         if (qVar == null) {
-            return new q.b((l) this.f15403d.get(i10));
+            return new q.b((l) this.f15404d.get(i10));
         }
         return qVar.i();
     }
@@ -319,12 +319,12 @@ public abstract class d extends LinearLayout {
     }
 
     private void n() {
-        TreeMap treeMap = new TreeMap(this.f15406o);
+        TreeMap treeMap = new TreeMap(this.f15407o);
         int childCount = getChildCount();
         for (int i10 = 0; i10 < childCount; i10++) {
             treeMap.put(f(i10), Integer.valueOf(i10));
         }
-        this.f15407p = (Integer[]) treeMap.values().toArray(new Integer[0]);
+        this.f15408p = (Integer[]) treeMap.values().toArray(new Integer[0]);
     }
 
     private void setGeneratedIdIfNeeded(@NonNull MaterialButton materialButton) {
@@ -340,13 +340,13 @@ public abstract class d extends LinearLayout {
             return;
         }
         l();
-        this.f15412u = true;
+        this.f15413u = true;
         super.addView(view, i10, layoutParams);
         MaterialButton materialButton = (MaterialButton) view;
         setGeneratedIdIfNeeded(materialButton);
-        materialButton.setOnPressedChangeListenerInternal(this.f15405i);
-        this.f15403d.add(materialButton.getShapeAppearanceModel());
-        this.f15404e.add(materialButton.getStateListShapeAppearanceModel());
+        materialButton.setOnPressedChangeListenerInternal(this.f15406i);
+        this.f15404d.add(materialButton.getShapeAppearanceModel());
+        this.f15405e.add(materialButton.getStateListShapeAppearanceModel());
         materialButton.setEnabled(isEnabled());
     }
 
@@ -370,12 +370,12 @@ public abstract class d extends LinearLayout {
     }
 
     public r getButtonSizeChange() {
-        return this.f15411t;
+        return this.f15412t;
     }
 
     @Override // android.view.ViewGroup
     protected int getChildDrawingOrder(int i10, int i11) {
-        Integer[] numArr = this.f15407p;
+        Integer[] numArr = this.f15408p;
         if (numArr != null && i11 < numArr.length) {
             return numArr[i11].intValue();
         }
@@ -385,16 +385,16 @@ public abstract class d extends LinearLayout {
 
     @NonNull
     public th.d getInnerCornerSize() {
-        return this.f15408q.e();
+        return this.f15409q.e();
     }
 
     @NonNull
     public p getInnerCornerSizeStateList() {
-        return this.f15408q;
+        return this.f15409q;
     }
 
     public l getShapeAppearance() {
-        q qVar = this.f15409r;
+        q qVar = this.f15410r;
         if (qVar == null) {
             return null;
         }
@@ -402,11 +402,11 @@ public abstract class d extends LinearLayout {
     }
 
     public int getSpacing() {
-        return this.f15410s;
+        return this.f15411s;
     }
 
     public q getStateListShapeAppearance() {
-        return this.f15409r;
+        return this.f15410r;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -435,8 +435,8 @@ public abstract class d extends LinearLayout {
         boolean z11;
         boolean z12;
         int i10;
-        if ((this.f15408q != null || this.f15409r != null) && this.f15412u) {
-            this.f15412u = false;
+        if ((this.f15409q != null || this.f15410r != null) && this.f15413u) {
+            this.f15413u = false;
             int childCount = getChildCount();
             int firstVisibleChildIndex = getFirstVisibleChildIndex();
             int lastVisibleChildIndex = getLastVisibleChildIndex();
@@ -482,7 +482,7 @@ public abstract class d extends LinearLayout {
                             i10 |= 12;
                         }
                     }
-                    q j10 = h10.n(this.f15408q, ~i10).j();
+                    q j10 = h10.n(this.f15409q, ~i10).j();
                     if (j10.f()) {
                         f10.setStateListShapeAppearanceModel(j10);
                     } else {
@@ -517,18 +517,18 @@ public abstract class d extends LinearLayout {
         }
         int indexOfChild = indexOfChild(view);
         if (indexOfChild >= 0) {
-            this.f15403d.remove(indexOfChild);
-            this.f15404e.remove(indexOfChild);
+            this.f15404d.remove(indexOfChild);
+            this.f15405e.remove(indexOfChild);
         }
-        this.f15412u = true;
+        this.f15413u = true;
         o();
         l();
         b();
     }
 
     public void setButtonSizeChange(@NonNull r rVar) {
-        if (this.f15411t != rVar) {
-            this.f15411t = rVar;
+        if (this.f15412t != rVar) {
+            this.f15412t = rVar;
             c();
             requestLayout();
             invalidate();
@@ -544,15 +544,15 @@ public abstract class d extends LinearLayout {
     }
 
     public void setInnerCornerSize(@NonNull th.d dVar) {
-        this.f15408q = p.c(dVar);
-        this.f15412u = true;
+        this.f15409q = p.c(dVar);
+        this.f15413u = true;
         o();
         invalidate();
     }
 
     public void setInnerCornerSizeStateList(@NonNull p pVar) {
-        this.f15408q = pVar;
-        this.f15412u = true;
+        this.f15409q = pVar;
+        this.f15413u = true;
         o();
         invalidate();
     }
@@ -560,27 +560,27 @@ public abstract class d extends LinearLayout {
     @Override // android.widget.LinearLayout
     public void setOrientation(int i10) {
         if (getOrientation() != i10) {
-            this.f15412u = true;
+            this.f15413u = true;
         }
         super.setOrientation(i10);
     }
 
     public void setShapeAppearance(l lVar) {
-        this.f15409r = new q.b(lVar).j();
-        this.f15412u = true;
+        this.f15410r = new q.b(lVar).j();
+        this.f15413u = true;
         o();
         invalidate();
     }
 
     public void setSpacing(int i10) {
-        this.f15410s = i10;
+        this.f15411s = i10;
         invalidate();
         requestLayout();
     }
 
     public void setStateListShapeAppearance(q qVar) {
-        this.f15409r = qVar;
-        this.f15412u = true;
+        this.f15410r = qVar;
+        this.f15413u = true;
         o();
         invalidate();
     }

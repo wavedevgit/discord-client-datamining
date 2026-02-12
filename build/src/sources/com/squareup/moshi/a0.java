@@ -57,12 +57,12 @@ public abstract class a0 {
             ParameterizedType parameterizedType = (ParameterizedType) type;
             ParameterizedType parameterizedType2 = (ParameterizedType) type2;
             if (parameterizedType instanceof c.b) {
-                actualTypeArguments = ((c.b) parameterizedType).f21833i;
+                actualTypeArguments = ((c.b) parameterizedType).f21834i;
             } else {
                 actualTypeArguments = parameterizedType.getActualTypeArguments();
             }
             if (parameterizedType2 instanceof c.b) {
-                actualTypeArguments2 = ((c.b) parameterizedType2).f21833i;
+                actualTypeArguments2 = ((c.b) parameterizedType2).f21834i;
             } else {
                 actualTypeArguments2 = parameterizedType2.getActualTypeArguments();
             }
@@ -165,7 +165,7 @@ public abstract class a0 {
         } else {
             typeArr = new Type[]{type};
         }
-        return new c.C0294c(typeArr, dn.c.f21826b);
+        return new c.C0294c(typeArr, dn.c.f21827b);
     }
 
     public static WildcardType l(Type type) {

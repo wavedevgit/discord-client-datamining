@@ -6,55 +6,55 @@ import java.util.List;
 public final class d1 extends e1 {
 
     /* renamed from: o  reason: collision with root package name */
-    final transient int f14654o;
+    final transient int f14655o;
 
     /* renamed from: p  reason: collision with root package name */
-    final transient int f14655p;
+    final transient int f14656p;
 
     /* renamed from: q  reason: collision with root package name */
-    final /* synthetic */ e1 f14656q;
+    final /* synthetic */ e1 f14657q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d1(e1 e1Var, int i10, int i11) {
-        this.f14656q = e1Var;
-        this.f14654o = i10;
-        this.f14655p = i11;
+        this.f14657q = e1Var;
+        this.f14655o = i10;
+        this.f14656p = i11;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.fido.z0
     public final int c() {
-        return this.f14656q.d() + this.f14654o + this.f14655p;
+        return this.f14657q.d() + this.f14655o + this.f14656p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.fido.z0
     public final int d() {
-        return this.f14656q.d() + this.f14654o;
+        return this.f14657q.d() + this.f14655o;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.fido.z0
     public final Object[] f() {
-        return this.f14656q.f();
+        return this.f14657q.f();
     }
 
     @Override // java.util.List
     public final Object get(int i10) {
-        k0.a(i10, this.f14655p, "index");
-        return this.f14656q.get(i10 + this.f14654o);
+        k0.a(i10, this.f14656p, "index");
+        return this.f14657q.get(i10 + this.f14655o);
     }
 
     @Override // com.google.android.gms.internal.fido.e1
     public final e1 i(int i10, int i11) {
-        k0.e(i10, i11, this.f14655p);
-        int i12 = this.f14654o;
-        return this.f14656q.subList(i10 + i12, i11 + i12);
+        k0.e(i10, i11, this.f14656p);
+        int i12 = this.f14655o;
+        return this.f14657q.subList(i10 + i12, i11 + i12);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public final int size() {
-        return this.f14655p;
+        return this.f14656p;
     }
 
     @Override // com.google.android.gms.internal.fido.e1, java.util.List

@@ -47,14 +47,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure2_slot0;
                 var1 = undefined;
                 var0 = function(arg0) { // Environment: var0
-                    _fun37561: for (var _fun37561_ip = 0;;) switch (_fun37561_ip) {
+                    _fun37583: for (var _fun37583_ip = 0;;) switch (_fun37583_ip) {
                         case 0:
                             var0 = arg0;
                             var3 = var0.screenReaderEnabled;
                             var1 = _closure3_slot0;
                             if (!(var3 !== var1)) {
-                                _fun37561_ip = 34;
-                                continue _fun37561
+                                _fun37583_ip = 34;
+                                continue _fun37583
                             }
                         case 20:
                             var1 = {};

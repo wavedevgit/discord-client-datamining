@@ -3,8 +3,8 @@ package fn;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private e f23853a = new e();
+    private e f23854a = new e();
 
     /* renamed from: b  reason: collision with root package name */
-    private e f23854b = new e();
+    private e f23855b = new e();
 }

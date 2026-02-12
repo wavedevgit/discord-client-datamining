@@ -10,34 +10,34 @@ import kotlin.jvm.internal.Intrinsics;
 public class h {
 
     /* renamed from: g  reason: collision with root package name */
-    public static final a f21355g;
+    public static final a f21356g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final h f21356h;
+    private static final h f21357h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final h f21357i;
+    private static final h f21358i;
 
     /* renamed from: j  reason: collision with root package name */
-    private static final h f21358j;
+    private static final h f21359j;
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f21359a;
+    private final c f21360a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final c f21360b;
+    private final c f21361b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final c f21361c;
+    private final c f21362c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final c f21362d;
+    private final c f21363d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f21363e;
+    private final int f21364e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final float[] f21364f;
+    private final float[] f21365f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -63,11 +63,11 @@ public class h {
         public final float[] b(c cVar, c cVar2, int i10) {
             float[] c10;
             float[] c11;
-            if (!m.e(i10, m.f21385a.a())) {
+            if (!m.e(i10, m.f21386a.a())) {
                 return null;
             }
             long e10 = cVar.e();
-            b.a aVar = d1.b.f21322a;
+            b.a aVar = d1.b.f21323a;
             boolean e11 = d1.b.e(e10, aVar.b());
             boolean e12 = d1.b.e(cVar2.e(), aVar.b());
             if (e11 && e12) {
@@ -84,31 +84,31 @@ public class h {
             if (e11) {
                 c10 = wVar.J().c();
             } else {
-                c10 = j.f21368a.c();
+                c10 = j.f21369a.c();
             }
             if (e12) {
                 c11 = wVar.J().c();
             } else {
-                c11 = j.f21368a.c();
+                c11 = j.f21369a.c();
             }
             return new float[]{c10[0] / c11[0], c10[1] / c11[1], c10[2] / c11[2]};
         }
 
         public final h c() {
-            return h.f21358j;
+            return h.f21359j;
         }
 
         public final h d() {
-            return h.f21356h;
+            return h.f21357h;
         }
 
         public final h e() {
-            return h.f21357i;
+            return h.f21358i;
         }
 
         public final h f(c source) {
             Intrinsics.checkNotNullParameter(source, "source");
-            return new C0286a(source, m.f21385a.c());
+            return new C0286a(source, m.f21386a.c());
         }
 
         private a() {
@@ -119,13 +119,13 @@ public class h {
     public static final class b extends h {
 
         /* renamed from: k  reason: collision with root package name */
-        private final w f21365k;
+        private final w f21366k;
 
         /* renamed from: l  reason: collision with root package name */
-        private final w f21366l;
+        private final w f21367l;
 
         /* renamed from: m  reason: collision with root package name */
-        private final float[] f21367m;
+        private final float[] f21368m;
 
         public /* synthetic */ b(w wVar, w wVar2, int i10, DefaultConstructorMarker defaultConstructorMarker) {
             this(wVar, wVar2, i10);
@@ -140,22 +140,22 @@ public class h {
             float[] c10 = wVar.J().c();
             float[] c11 = wVar2.J().c();
             y J = wVar.J();
-            j jVar = j.f21368a;
+            j jVar = j.f21369a;
             if (!d.f(J, jVar.b())) {
-                float[] b10 = d1.a.f21317b.a().b();
+                float[] b10 = d1.a.f21318b.a().b();
                 float[] c12 = jVar.c();
                 float[] copyOf = Arrays.copyOf(c12, c12.length);
                 Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(this, size)");
                 I = d.k(d.e(b10, c10, copyOf), wVar.I());
             }
             if (!d.f(wVar2.J(), jVar.b())) {
-                float[] b11 = d1.a.f21317b.a().b();
+                float[] b11 = d1.a.f21318b.a().b();
                 float[] c13 = jVar.c();
                 float[] copyOf2 = Arrays.copyOf(c13, c13.length);
                 Intrinsics.checkNotNullExpressionValue(copyOf2, "copyOf(this, size)");
                 F = d.j(d.k(d.e(b11, c11, copyOf2), wVar2.I()));
             }
-            if (m.e(i10, m.f21385a.a())) {
+            if (m.e(i10, m.f21386a.a())) {
                 I = d.l(new float[]{c10[0] / c11[0], c10[1] / c11[1], c10[2] / c11[2]}, I);
             }
             return d.k(F, I);
@@ -163,10 +163,10 @@ public class h {
 
         @Override // d1.h
         public long e(float f10, float f11, float f12, float f13) {
-            float a10 = (float) this.f21365k.D().a(f10);
-            float a11 = (float) this.f21365k.D().a(f11);
-            float a12 = (float) this.f21365k.D().a(f12);
-            return c1.b.a((float) this.f21366l.G().a(d.n(this.f21367m, a10, a11, a12)), (float) this.f21366l.G().a(d.o(this.f21367m, a10, a11, a12)), (float) this.f21366l.G().a(d.p(this.f21367m, a10, a11, a12)), f13, this.f21366l);
+            float a10 = (float) this.f21366k.D().a(f10);
+            float a11 = (float) this.f21366k.D().a(f11);
+            float a12 = (float) this.f21366k.D().a(f12);
+            return c1.b.a((float) this.f21367l.G().a(d.n(this.f21368m, a10, a11, a12)), (float) this.f21367l.G().a(d.o(this.f21368m, a10, a11, a12)), (float) this.f21367l.G().a(d.p(this.f21368m, a10, a11, a12)), f13, this.f21367l);
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -174,22 +174,22 @@ public class h {
             super(mSource, mDestination, mSource, mDestination, i10, null, null);
             Intrinsics.checkNotNullParameter(mSource, "mSource");
             Intrinsics.checkNotNullParameter(mDestination, "mDestination");
-            this.f21365k = mSource;
-            this.f21366l = mDestination;
-            this.f21367m = f(mSource, mDestination, i10);
+            this.f21366k = mSource;
+            this.f21367l = mDestination;
+            this.f21368m = f(mSource, mDestination, i10);
         }
     }
 
     static {
         a aVar = new a(null);
-        f21355g = aVar;
-        g gVar = g.f21331a;
-        f21356h = aVar.f(gVar.h());
+        f21356g = aVar;
+        g gVar = g.f21332a;
+        f21357h = aVar.f(gVar.h());
         w h10 = gVar.h();
         c g10 = gVar.g();
-        m.a aVar2 = m.f21385a;
-        f21357i = new h(h10, g10, aVar2.b(), null);
-        f21358j = new h(gVar.g(), gVar.h(), aVar2.b(), null);
+        m.a aVar2 = m.f21386a;
+        f21358i = new h(h10, g10, aVar2.b(), null);
+        f21359j = new h(gVar.g(), gVar.h(), aVar2.b(), null);
     }
 
     public /* synthetic */ h(c cVar, c cVar2, int i10, DefaultConstructorMarker defaultConstructorMarker) {
@@ -197,16 +197,16 @@ public class h {
     }
 
     public final c d() {
-        return this.f21360b;
+        return this.f21361b;
     }
 
     public long e(float f10, float f11, float f12, float f13) {
-        long h10 = this.f21361c.h(f10, f11, f12);
+        long h10 = this.f21362c.h(f10, f11, f12);
         FloatCompanionObject floatCompanionObject = FloatCompanionObject.INSTANCE;
         float intBitsToFloat = Float.intBitsToFloat((int) (h10 >> 32));
         float intBitsToFloat2 = Float.intBitsToFloat((int) (h10 & 4294967295L));
-        float i10 = this.f21361c.i(f10, f11, f12);
-        float[] fArr = this.f21364f;
+        float i10 = this.f21362c.i(f10, f11, f12);
+        float[] fArr = this.f21365f;
         if (fArr != null) {
             intBitsToFloat *= fArr[0];
             intBitsToFloat2 *= fArr[1];
@@ -214,7 +214,7 @@ public class h {
         }
         float f14 = intBitsToFloat2;
         float f15 = intBitsToFloat;
-        return this.f21362d.j(f15, f14, i10, f13, this.f21360b);
+        return this.f21363d.j(f15, f14, i10, f13, this.f21361b);
     }
 
     public /* synthetic */ h(c cVar, c cVar2, c cVar3, c cVar4, int i10, float[] fArr, DefaultConstructorMarker defaultConstructorMarker) {
@@ -226,12 +226,12 @@ public class h {
         Intrinsics.checkNotNullParameter(destination, "destination");
         Intrinsics.checkNotNullParameter(transformSource, "transformSource");
         Intrinsics.checkNotNullParameter(transformDestination, "transformDestination");
-        this.f21359a = source;
-        this.f21360b = destination;
-        this.f21361c = transformSource;
-        this.f21362d = transformDestination;
-        this.f21363e = i10;
-        this.f21364f = fArr;
+        this.f21360a = source;
+        this.f21361b = destination;
+        this.f21362c = transformSource;
+        this.f21363d = transformDestination;
+        this.f21364e = i10;
+        this.f21365f = fArr;
     }
 
     /* JADX WARN: Illegal instructions before constructor call */
@@ -247,13 +247,13 @@ public class h {
             java.lang.String r0 = "destination"
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r14, r0)
             long r0 = r13.e()
-            d1.b$a r2 = d1.b.f21322a
+            d1.b$a r2 = d1.b.f21323a
             long r3 = r2.b()
             boolean r0 = d1.b.e(r0, r3)
             r1 = 2
             r3 = 0
             if (r0 == 0) goto L28
-            d1.j r0 = d1.j.f21368a
+            d1.j r0 = d1.j.f21369a
             d1.y r0 = r0.b()
             d1.c r0 = d1.d.d(r13, r0, r3, r1, r3)
             r7 = r0
@@ -265,7 +265,7 @@ public class h {
             long r8 = r2.b()
             boolean r0 = d1.b.e(r4, r8)
             if (r0 == 0) goto L43
-            d1.j r0 = d1.j.f21368a
+            d1.j r0 = d1.j.f21369a
             d1.y r0 = r0.b()
             d1.c r0 = d1.d.d(r14, r0, r3, r1, r3)
             r8 = r0
@@ -273,7 +273,7 @@ public class h {
         L43:
             r8 = r14
         L44:
-            d1.h$a r0 = d1.h.f21355g
+            d1.h$a r0 = d1.h.f21356g
             float[] r10 = d1.h.a.a(r0, r13, r14, r15)
             r11 = 0
             r4 = r12

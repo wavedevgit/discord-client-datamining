@@ -8,34 +8,34 @@ import java.util.Set;
 public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f22038a;
+    private final h f22039a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f22039b;
+    private final int f22040b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f22040c;
+    private final int f22041c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final b f22041d;
+    private final b f22042d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final bu.d f22042e;
+    private final bu.d f22043e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f22043f;
+    private final int f22044f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f22044g;
+    private final int f22045g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final int f22045h;
+    private final int f22046h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f22046i;
+    private final boolean f22047i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final int f22047j;
+    private final int f22048j;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i(h hVar, int i10, int i11, b bVar) {
@@ -52,7 +52,7 @@ public final class i {
             sVar2 = sVar;
         }
         try {
-            this.f22038a.d(charSequence, sVar2, dVar, tVar, z10);
+            this.f22039a.d(charSequence, sVar2, dVar, tVar, z10);
         } catch (RuntimeException e11) {
             e = e11;
             sVar2.k(f10, e.getMessage());
@@ -60,11 +60,11 @@ public final class i {
     }
 
     private char c(bu.d dVar) {
-        return ((Character) dVar.b(cu.a.f21123p, ' ')).charValue();
+        return ((Character) dVar.b(cu.a.f21124p, ' ')).charValue();
     }
 
     private bu.d e(bu.d dVar) {
-        b bVar = this.f22041d;
+        b bVar = this.f22042d;
         if (bVar == null) {
             return dVar;
         }
@@ -83,7 +83,7 @@ public final class i {
 
     private boolean k(bu.o oVar) {
         bu.n f10;
-        b bVar = this.f22041d;
+        b bVar = this.f22042d;
         if (bVar == null || (f10 = bVar.f()) == null || f10.test(oVar)) {
             return true;
         }
@@ -91,15 +91,15 @@ public final class i {
     }
 
     private boolean l(bu.d dVar) {
-        return ((cu.g) dVar.b(cu.a.f21113f, cu.g.SMART)).e();
+        return ((cu.g) dVar.b(cu.a.f21114f, cu.g.SMART)).e();
     }
 
     private String o() {
-        return "Pad width exceeded: " + this.f22038a.getElement().name();
+        return "Pad width exceeded: " + this.f22039a.getElement().name();
     }
 
     private String p() {
-        return "Pad width mismatched: " + this.f22038a.getElement().name();
+        return "Pad width mismatched: " + this.f22039a.getElement().name();
     }
 
     private static h w(h hVar, bu.p pVar) {
@@ -114,12 +114,12 @@ public final class i {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int b() {
-        return this.f22039b;
+        return this.f22040b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h d() {
-        return this.f22038a;
+        return this.f22039a;
     }
 
     public boolean equals(Object obj) {
@@ -128,7 +128,7 @@ public final class i {
         }
         if (obj instanceof i) {
             i iVar = (i) obj;
-            if (this.f22038a.equals(iVar.f22038a) && this.f22039b == iVar.f22039b && this.f22040c == iVar.f22040c && h(this.f22041d, iVar.f22041d) && h(this.f22042e, iVar.f22042e) && this.f22043f == iVar.f22043f && this.f22044g == iVar.f22044g && this.f22045h == iVar.f22045h && this.f22046i == iVar.f22046i && this.f22047j == iVar.f22047j) {
+            if (this.f22039a.equals(iVar.f22039a) && this.f22040b == iVar.f22040b && this.f22041c == iVar.f22041c && h(this.f22042d, iVar.f22042d) && h(this.f22043e, iVar.f22043e) && this.f22044f == iVar.f22044f && this.f22045g == iVar.f22045g && this.f22046h == iVar.f22046h && this.f22047i == iVar.f22047i && this.f22048j == iVar.f22048j) {
                 return true;
             }
         }
@@ -137,12 +137,12 @@ public final class i {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int f() {
-        return this.f22040c;
+        return this.f22041c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean g() {
-        if (!(this.f22038a instanceof j)) {
+        if (!(this.f22039a instanceof j)) {
             return false;
         }
         return true;
@@ -150,8 +150,8 @@ public final class i {
 
     public int hashCode() {
         int hashCode;
-        int hashCode2 = this.f22038a.hashCode() * 7;
-        b bVar = this.f22041d;
+        int hashCode2 = this.f22039a.hashCode() * 7;
+        b bVar = this.f22042d;
         if (bVar == null) {
             hashCode = 0;
         } else {
@@ -162,30 +162,30 @@ public final class i {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean i() {
-        return this.f22046i;
+        return this.f22047i;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean j() {
-        return this.f22038a.f();
+        return this.f22039a.f();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i m(int i10) {
-        if (this.f22046i) {
-            return new i(this.f22038a, this.f22039b, this.f22040c, this.f22041d, this.f22042e, this.f22043f, this.f22044g, this.f22045h, true, i10);
+        if (this.f22047i) {
+            return new i(this.f22039a, this.f22040b, this.f22041c, this.f22042d, this.f22043e, this.f22044f, this.f22045g, this.f22046h, true, i10);
         }
         throw new IllegalStateException("This step is not starting an or-block.");
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i n(int i10, int i11) {
-        return new i(this.f22038a, this.f22039b, this.f22040c, this.f22041d, null, this.f22043f, this.f22044g + i10, this.f22045h + i11, this.f22046i, this.f22047j);
+        return new i(this.f22039a, this.f22040b, this.f22041c, this.f22042d, null, this.f22044f, this.f22045g + i10, this.f22046h + i11, this.f22047i, this.f22048j);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: Code restructure failed: missing block: B:43:0x008a, code lost:
-        r9 = r8.f22045h;
+        r9 = r8.f22046h;
      */
     /* JADX WARN: Code restructure failed: missing block: B:44:0x008c, code lost:
         if (r9 <= 0) goto L47;
@@ -207,7 +207,7 @@ public final class i {
         /*
             r8 = this;
             if (r13 == 0) goto L6
-            bu.d r11 = r8.f22042e
+            bu.d r11 = r8.f22043e
         L4:
             r3 = r11
             goto Lb
@@ -215,9 +215,9 @@ public final class i {
             bu.d r11 = r8.e(r11)
             goto L4
         Lb:
-            int r11 = r8.f22044g
+            int r11 = r8.f22045g
             if (r11 != 0) goto L1c
-            int r11 = r8.f22045h
+            int r11 = r8.f22046h
             if (r11 != 0) goto L1c
             r0 = r8
             r1 = r9
@@ -246,7 +246,7 @@ public final class i {
         L3d:
             int r6 = r13 - r11
             if (r9 == 0) goto L4d
-            int r7 = r0.f22044g
+            int r7 = r0.f22045g
             if (r6 <= r7) goto L4d
             java.lang.String r9 = r8.o()
             r2.k(r11, r9)
@@ -262,7 +262,7 @@ public final class i {
             int r3 = r13 - r11
             int r3 = r3 - r6
             if (r9 == 0) goto L72
-            int r4 = r0.f22044g
+            int r4 = r0.f22045g
             if (r4 <= 0) goto L72
             int r6 = r6 + r3
             if (r6 == r4) goto L72
@@ -275,7 +275,7 @@ public final class i {
             if (r13 >= r12) goto L88
             if (r9 == 0) goto L7d
             int r4 = r3 + r11
-            int r5 = r0.f22045h
+            int r5 = r0.f22046h
             if (r4 >= r5) goto L88
         L7d:
             char r4 = r1.charAt(r13)
@@ -285,7 +285,7 @@ public final class i {
             goto L73
         L88:
             if (r9 == 0) goto L9a
-            int r9 = r0.f22045h
+            int r9 = r0.f22046h
             if (r9 <= 0) goto L9a
             int r3 = r3 + r11
             if (r3 == r9) goto L9a
@@ -312,13 +312,13 @@ public final class i {
             return 0;
         }
         if (z10) {
-            e10 = this.f22042e;
+            e10 = this.f22043e;
         } else {
             e10 = e(dVar);
         }
         bu.d dVar2 = e10;
-        if (this.f22044g == 0 && this.f22045h == 0) {
-            return this.f22038a.g(oVar, appendable, dVar2, set, z10);
+        if (this.f22045g == 0 && this.f22046h == 0) {
+            return this.f22039a.g(oVar, appendable, dVar2, set, z10);
         }
         if (appendable instanceof StringBuilder) {
             sb2 = (StringBuilder) appendable;
@@ -330,7 +330,7 @@ public final class i {
         StringBuilder sb3 = sb2;
         if ((appendable instanceof CharSequence) && set != null) {
             if (sb3 == appendable) {
-                h hVar = this.f22038a;
+                h hVar = this.f22039a;
                 if ((hVar instanceof f) || (hVar instanceof z)) {
                     i11 = 0;
                     linkedHashSet = new LinkedHashSet();
@@ -346,15 +346,15 @@ public final class i {
         boolean l10 = l(dVar2);
         char c10 = c(dVar2);
         int length = sb3.length();
-        this.f22038a.g(oVar, sb3, dVar2, linkedHashSet2, z10);
+        this.f22039a.g(oVar, sb3, dVar2, linkedHashSet2, z10);
         int length2 = sb3.length() - length;
-        int i13 = this.f22044g;
+        int i13 = this.f22045g;
         if (i13 > 0) {
             if (l10 && length2 > i13) {
                 throw new IllegalArgumentException(o());
             }
             int i14 = length2;
-            while (i14 < this.f22044g) {
+            while (i14 < this.f22045g) {
                 if (i10 == -1) {
                     appendable.append(c10);
                 } else {
@@ -372,25 +372,25 @@ public final class i {
                     set.add(new g(gVar.a(), gVar.c() + i15, gVar.b() + i15));
                 }
             }
-            int i16 = this.f22045h;
+            int i16 = this.f22046h;
             if (i16 > 0) {
                 if (l10 && length2 > i16) {
                     throw new IllegalArgumentException(o());
                 }
-                while (length2 < this.f22045h) {
+                while (length2 < this.f22046h) {
                     appendable.append(c10);
                     length2++;
                     i14++;
                 }
             }
             return i14;
-        } else if (l10 && length2 > this.f22045h) {
+        } else if (l10 && length2 > this.f22046h) {
             throw new IllegalArgumentException(o());
         } else {
             if (i10 == -1) {
                 appendable.append(sb3);
             }
-            while (length2 < this.f22045h) {
+            while (length2 < this.f22046h) {
                 appendable.append(c10);
                 length2++;
             }
@@ -406,37 +406,37 @@ public final class i {
     /* JADX INFO: Access modifiers changed from: package-private */
     public i s(c cVar) {
         b p10 = cVar.p();
-        if (this.f22041d != null) {
-            p10 = p10.l(new a.b().f(p10.e()).f(this.f22041d.e()).a());
+        if (this.f22042d != null) {
+            p10 = p10.l(new a.b().f(p10.e()).f(this.f22042d.e()).a());
         }
         b bVar = p10;
-        return new i(this.f22038a.a(cVar, bVar, this.f22043f), this.f22039b, this.f22040c, this.f22041d, bVar, this.f22043f, this.f22044g, this.f22045h, this.f22046i, this.f22047j);
+        return new i(this.f22039a.a(cVar, bVar, this.f22044f), this.f22040b, this.f22041c, this.f22042d, bVar, this.f22044f, this.f22045g, this.f22046h, this.f22047i, this.f22048j);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i t(int i10) {
-        return new i(this.f22038a, this.f22039b, this.f22040c, this.f22041d, null, this.f22043f + i10, this.f22044g, this.f22045h, this.f22046i, this.f22047j);
+        return new i(this.f22039a, this.f22040b, this.f22041c, this.f22042d, null, this.f22044f + i10, this.f22045g, this.f22046h, this.f22047i, this.f22048j);
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder();
         sb2.append("[processor=");
-        sb2.append(this.f22038a);
+        sb2.append(this.f22039a);
         sb2.append(", level=");
-        sb2.append(this.f22039b);
+        sb2.append(this.f22040b);
         sb2.append(", section=");
-        sb2.append(this.f22040c);
-        if (this.f22041d != null) {
+        sb2.append(this.f22041c);
+        if (this.f22042d != null) {
             sb2.append(", attributes=");
-            sb2.append(this.f22041d);
+            sb2.append(this.f22042d);
         }
         sb2.append(", reserved=");
-        sb2.append(this.f22043f);
+        sb2.append(this.f22044f);
         sb2.append(", pad-left=");
-        sb2.append(this.f22044g);
+        sb2.append(this.f22045g);
         sb2.append(", pad-right=");
-        sb2.append(this.f22045h);
-        if (this.f22046i) {
+        sb2.append(this.f22046h);
+        if (this.f22047i) {
             sb2.append(", or-block-started");
         }
         sb2.append(']');
@@ -445,24 +445,24 @@ public final class i {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int u() {
-        return this.f22047j;
+        return this.f22048j;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i v() {
-        if (!this.f22046i) {
-            return new i(this.f22038a, this.f22039b, this.f22040c, this.f22041d, null, this.f22043f, this.f22044g, this.f22045h, true, -1);
+        if (!this.f22047i) {
+            return new i(this.f22039a, this.f22040b, this.f22041c, this.f22042d, null, this.f22044f, this.f22045g, this.f22046h, true, -1);
         }
         throw new IllegalStateException("Cannot start or-block twice.");
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i x(bu.p pVar) {
-        h w10 = w(this.f22038a, pVar);
-        if (this.f22038a == w10) {
+        h w10 = w(this.f22039a, pVar);
+        if (this.f22039a == w10) {
             return this;
         }
-        return new i(w10, this.f22039b, this.f22040c, this.f22041d, this.f22042e, this.f22043f, this.f22044g, this.f22045h, this.f22046i, this.f22047j);
+        return new i(w10, this.f22040b, this.f22041c, this.f22042d, this.f22043e, this.f22044f, this.f22045g, this.f22046h, this.f22047i, this.f22048j);
     }
 
     private i(h hVar, int i10, int i11, b bVar, bu.d dVar, int i12, int i13, int i14, boolean z10, int i15) {
@@ -480,16 +480,16 @@ public final class i {
         } else if (i14 < 0) {
             throw new IllegalArgumentException("Invalid pad-width: " + i14);
         } else {
-            this.f22038a = hVar;
-            this.f22039b = i10;
-            this.f22040c = i11;
-            this.f22041d = bVar;
-            this.f22042e = dVar;
-            this.f22043f = i12;
-            this.f22044g = i13;
-            this.f22045h = i14;
-            this.f22046i = z10;
-            this.f22047j = i15;
+            this.f22039a = hVar;
+            this.f22040b = i10;
+            this.f22041c = i11;
+            this.f22042d = bVar;
+            this.f22043e = dVar;
+            this.f22044f = i12;
+            this.f22045g = i13;
+            this.f22046h = i14;
+            this.f22047i = z10;
+            this.f22048j = i15;
         }
     }
 }

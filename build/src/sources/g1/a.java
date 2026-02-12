@@ -26,43 +26,43 @@ import ys.m0;
 public final class a extends CoroutineDispatcher {
 
     /* renamed from: i  reason: collision with root package name */
-    private final Choreographer f24610i;
+    private final Choreographer f24611i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Handler f24611o;
+    private final Handler f24612o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Object f24612p;
+    private final Object f24613p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final ArrayDeque f24613q;
+    private final ArrayDeque f24614q;
 
     /* renamed from: r  reason: collision with root package name */
-    private List f24614r;
+    private List f24615r;
 
     /* renamed from: s  reason: collision with root package name */
-    private List f24615s;
+    private List f24616s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f24616t;
+    private boolean f24617t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f24617u;
+    private boolean f24618u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final d f24618v;
+    private final d f24619v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final n f24619w;
+    private final n f24620w;
 
     /* renamed from: x  reason: collision with root package name */
-    public static final c f24607x = new c(null);
+    public static final c f24608x = new c(null);
 
     /* renamed from: y  reason: collision with root package name */
-    public static final int f24608y = 8;
+    public static final int f24609y = 8;
 
     /* renamed from: z  reason: collision with root package name */
-    private static final Lazy f24609z = l.b(C0335a.f24620d);
+    private static final Lazy f24610z = l.b(C0335a.f24621d);
     private static final ThreadLocal A = new b();
 
     /* renamed from: g1.a$a  reason: collision with other inner class name */
@@ -70,7 +70,7 @@ public final class a extends CoroutineDispatcher {
     static final class C0335a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final C0335a f24620d = new C0335a();
+        public static final C0335a f24621d = new C0335a();
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: g1.a$a$a  reason: collision with other inner class name */
@@ -78,7 +78,7 @@ public final class a extends CoroutineDispatcher {
         public static final class C0336a extends k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f24621d;
+            int f24622d;
 
             C0336a(Continuation continuation) {
                 super(2, continuation);
@@ -92,7 +92,7 @@ public final class a extends CoroutineDispatcher {
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 gs.b.f();
-                if (this.f24621d == 0) {
+                if (this.f24622d == 0) {
                     kotlin.c.b(obj);
                     return Choreographer.getInstance();
                 }
@@ -101,7 +101,7 @@ public final class a extends CoroutineDispatcher {
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((C0336a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+                return ((C0336a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
             }
         }
 
@@ -157,7 +157,7 @@ public final class a extends CoroutineDispatcher {
         }
 
         public final CoroutineContext a() {
-            return (CoroutineContext) a.f24609z.getValue();
+            return (CoroutineContext) a.f24610z.getValue();
         }
 
         private c() {
@@ -171,7 +171,7 @@ public final class a extends CoroutineDispatcher {
 
         @Override // android.view.Choreographer.FrameCallback
         public void doFrame(long j10) {
-            a.this.f24611o.removeCallbacks(this);
+            a.this.f24612o.removeCallbacks(this);
             a.this.v2();
             a.this.u2(j10);
         }
@@ -179,15 +179,15 @@ public final class a extends CoroutineDispatcher {
         @Override // java.lang.Runnable
         public void run() {
             a.this.v2();
-            Object obj = a.this.f24612p;
+            Object obj = a.this.f24613p;
             a aVar = a.this;
             synchronized (obj) {
                 try {
-                    if (aVar.f24614r.isEmpty()) {
+                    if (aVar.f24615r.isEmpty()) {
                         aVar.m2().removeFrameCallback(this);
-                        aVar.f24617u = false;
+                        aVar.f24618u = false;
                     }
-                    Unit unit = Unit.f31987a;
+                    Unit unit = Unit.f31988a;
                 } catch (Throwable th2) {
                     throw th2;
                 }
@@ -201,22 +201,22 @@ public final class a extends CoroutineDispatcher {
 
     private final Runnable t2() {
         Runnable runnable;
-        synchronized (this.f24612p) {
-            runnable = (Runnable) this.f24613q.p();
+        synchronized (this.f24613p) {
+            runnable = (Runnable) this.f24614q.p();
         }
         return runnable;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void u2(long j10) {
-        synchronized (this.f24612p) {
-            if (!this.f24617u) {
+        synchronized (this.f24613p) {
+            if (!this.f24618u) {
                 return;
             }
-            this.f24617u = false;
-            List list = this.f24614r;
-            this.f24614r = this.f24615s;
-            this.f24615s = list;
+            this.f24618u = false;
+            List list = this.f24615r;
+            this.f24615r = this.f24616s;
+            this.f24616s = list;
             int size = list.size();
             for (int i10 = 0; i10 < size; i10++) {
                 ((Choreographer.FrameCallback) list.get(i10)).doFrame(j10);
@@ -234,10 +234,10 @@ public final class a extends CoroutineDispatcher {
                 t22.run();
                 t22 = t2();
             }
-            synchronized (this.f24612p) {
-                if (this.f24613q.isEmpty()) {
+            synchronized (this.f24613p) {
+                if (this.f24614q.isEmpty()) {
                     z10 = false;
-                    this.f24616t = false;
+                    this.f24617t = false;
                 } else {
                     z10 = true;
                 }
@@ -249,18 +249,18 @@ public final class a extends CoroutineDispatcher {
     public void b1(CoroutineContext context, Runnable block) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(block, "block");
-        synchronized (this.f24612p) {
+        synchronized (this.f24613p) {
             try {
-                this.f24613q.addLast(block);
-                if (!this.f24616t) {
-                    this.f24616t = true;
-                    this.f24611o.post(this.f24618v);
-                    if (!this.f24617u) {
-                        this.f24617u = true;
-                        this.f24610i.postFrameCallback(this.f24618v);
+                this.f24614q.addLast(block);
+                if (!this.f24617t) {
+                    this.f24617t = true;
+                    this.f24612o.post(this.f24619v);
+                    if (!this.f24618u) {
+                        this.f24618u = true;
+                        this.f24611i.postFrameCallback(this.f24619v);
                     }
                 }
-                Unit unit = Unit.f31987a;
+                Unit unit = Unit.f31988a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -268,23 +268,23 @@ public final class a extends CoroutineDispatcher {
     }
 
     public final Choreographer m2() {
-        return this.f24610i;
+        return this.f24611i;
     }
 
     public final n o2() {
-        return this.f24619w;
+        return this.f24620w;
     }
 
     public final void w2(Choreographer.FrameCallback callback) {
         Intrinsics.checkNotNullParameter(callback, "callback");
-        synchronized (this.f24612p) {
+        synchronized (this.f24613p) {
             try {
-                this.f24614r.add(callback);
-                if (!this.f24617u) {
-                    this.f24617u = true;
-                    this.f24610i.postFrameCallback(this.f24618v);
+                this.f24615r.add(callback);
+                if (!this.f24618u) {
+                    this.f24618u = true;
+                    this.f24611i.postFrameCallback(this.f24619v);
                 }
-                Unit unit = Unit.f31987a;
+                Unit unit = Unit.f31988a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -293,19 +293,19 @@ public final class a extends CoroutineDispatcher {
 
     public final void x2(Choreographer.FrameCallback callback) {
         Intrinsics.checkNotNullParameter(callback, "callback");
-        synchronized (this.f24612p) {
-            this.f24614r.remove(callback);
+        synchronized (this.f24613p) {
+            this.f24615r.remove(callback);
         }
     }
 
     private a(Choreographer choreographer, Handler handler) {
-        this.f24610i = choreographer;
-        this.f24611o = handler;
-        this.f24612p = new Object();
-        this.f24613q = new ArrayDeque();
-        this.f24614r = new ArrayList();
-        this.f24615s = new ArrayList();
-        this.f24618v = new d();
-        this.f24619w = new g1.c(choreographer, this);
+        this.f24611i = choreographer;
+        this.f24612o = handler;
+        this.f24613p = new Object();
+        this.f24614q = new ArrayDeque();
+        this.f24615r = new ArrayList();
+        this.f24616s = new ArrayList();
+        this.f24619v = new d();
+        this.f24620w = new g1.c(choreographer, this);
     }
 }

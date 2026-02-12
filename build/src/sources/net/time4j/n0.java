@@ -8,11 +8,11 @@ public enum n0 implements bu.n, bu.v {
     
 
     /* renamed from: p  reason: collision with root package name */
-    private static final n0[] f37647p = values();
+    private static final n0[] f37648p = values();
 
     public static n0 f(int i10) {
         if (i10 >= 1 && i10 <= 4) {
-            return f37647p[i10 - 1];
+            return f37648p[i10 - 1];
         }
         throw new IllegalArgumentException("Out of range: " + i10);
     }

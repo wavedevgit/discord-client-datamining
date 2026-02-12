@@ -7,10 +7,10 @@ import android.graphics.drawable.StateListDrawable;
 public class i extends StateListDrawable {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f31317d;
+    private int f31318d;
 
     public i(Drawable drawable, int i10) {
-        this.f31317d = i10;
+        this.f31318d = i10;
         addState(new int[]{16842913}, drawable);
         addState(new int[0], drawable);
     }
@@ -29,7 +29,7 @@ public class i extends StateListDrawable {
             }
         }
         if (z10) {
-            super.setColorFilter(this.f31317d, PorterDuff.Mode.SRC_ATOP);
+            super.setColorFilter(this.f31318d, PorterDuff.Mode.SRC_ATOP);
         } else {
             super.clearColorFilter();
         }

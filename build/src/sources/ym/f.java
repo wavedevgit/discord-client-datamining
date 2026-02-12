@@ -20,46 +20,46 @@ import org.jetbrains.annotations.NotNull;
 public final class f extends ReactViewGroup {
 
     /* renamed from: y  reason: collision with root package name */
-    public static final a f55651y = new a(null);
+    public static final a f55652y = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final ThemedReactContext f55652d;
+    private final ThemedReactContext f55653d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f55653e;
+    private boolean f55654e;
 
     /* renamed from: i  reason: collision with root package name */
-    private float f55654i;
+    private float f55655i;
 
     /* renamed from: o  reason: collision with root package name */
-    private float f55655o;
+    private float f55656o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f55656p;
+    private int f55657p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f55657q;
+    private int f55658q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f55658r;
+    private int f55659r;
 
     /* renamed from: s  reason: collision with root package name */
-    private qm.a f55659s;
+    private qm.a f55660s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f55660t;
+    private boolean f55661t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f55661u;
+    private boolean f55662u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final Rect f55662v;
+    private final Rect f55663v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final pm.f f55663w;
+    private final pm.f f55664w;
 
     /* renamed from: x  reason: collision with root package name */
-    private VelocityTracker f55664x;
+    private VelocityTracker f55665x;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -75,95 +75,95 @@ public final class f extends ReactViewGroup {
     public f(ThemedReactContext reactContext) {
         super(reactContext);
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
-        this.f55652d = reactContext;
-        this.f55659s = new qm.c();
-        this.f55661u = true;
-        this.f55662v = new Rect();
-        this.f55663w = new pm.f();
+        this.f55653d = reactContext;
+        this.f55660s = new qm.c();
+        this.f55662u = true;
+        this.f55663v = new Rect();
+        this.f55664w = new pm.f();
     }
 
     private final void d() {
-        this.f55663w.n();
+        this.f55664w.n();
         h();
     }
 
     private final void e(MotionEvent motionEvent) {
-        VelocityTracker velocityTracker = this.f55664x;
+        VelocityTracker velocityTracker = this.f55665x;
         if (velocityTracker != null) {
             velocityTracker.addMovement(motionEvent);
         }
-        this.f55654i = motionEvent.getX();
-        this.f55655o = motionEvent.getY();
-        i.a(this, this.f55662v);
-        this.f55656p = this.f55662v.top;
+        this.f55655i = motionEvent.getX();
+        this.f55656o = motionEvent.getY();
+        i.a(this, this.f55663v);
+        this.f55657p = this.f55663v.top;
     }
 
     private final void f(MotionEvent motionEvent) {
         boolean z10;
-        i.a(this, this.f55662v);
-        int i10 = this.f55662v.top - this.f55656p;
+        i.a(this, this.f55663v);
+        int i10 = this.f55663v.top - this.f55657p;
         MotionEvent obtain = MotionEvent.obtain(motionEvent);
         obtain.offsetLocation(0.0f, i10);
-        VelocityTracker velocityTracker = this.f55664x;
+        VelocityTracker velocityTracker = this.f55665x;
         if (velocityTracker != null) {
             velocityTracker.addMovement(obtain);
         }
-        float x10 = obtain.getX() - this.f55654i;
-        float y10 = obtain.getY() - this.f55655o;
+        float x10 = obtain.getX() - this.f55655i;
+        float y10 = obtain.getY() - this.f55656o;
         boolean z11 = false;
-        if (!this.f55653e) {
+        if (!this.f55654e) {
             if (Math.abs(y10) > Math.abs(x10) && Math.abs(y10) >= ViewConfiguration.get(getContext()).getScaledTouchSlop()) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            this.f55653e = z10;
+            this.f55654e = z10;
         }
-        if (this.f55653e) {
-            if (this.f55663w.t()) {
-                if (this.f55657q == 0) {
-                    this.f55657q = this.f55663w.q();
+        if (this.f55654e) {
+            if (this.f55664w.t()) {
+                if (this.f55658q == 0) {
+                    this.f55658q = this.f55664w.q();
                 }
-                int a10 = this.f55659s.a(ps.a.c(y10), getWindowHeight() - ((int) motionEvent.getRawY()), this.f55663w.q(), this.f55658r);
+                int a10 = this.f55660s.a(ps.a.c(y10), getWindowHeight() - ((int) motionEvent.getRawY()), this.f55664w.q(), this.f55659r);
                 if (a10 != 0) {
-                    this.f55663w.r(a10);
+                    this.f55664w.r(a10);
                 }
-            } else if (!this.f55663w.u()) {
+            } else if (!this.f55664w.u()) {
                 WindowInsetsCompat F = i0.F(this);
                 if (F != null && F.u(WindowInsetsCompat.p.c())) {
                     z11 = true;
                 }
                 if (i(y10, z11)) {
-                    pm.f.y(this.f55663w, this, null, 2, null);
+                    pm.f.y(this.f55664w, this, null, 2, null);
                 }
             }
-            this.f55655o = motionEvent.getY();
-            this.f55654i = motionEvent.getX();
-            this.f55656p = this.f55662v.top;
+            this.f55656o = motionEvent.getY();
+            this.f55655i = motionEvent.getX();
+            this.f55657p = this.f55663v.top;
         }
     }
 
     private final void g(MotionEvent motionEvent) {
         Float f10;
-        VelocityTracker velocityTracker = this.f55664x;
+        VelocityTracker velocityTracker = this.f55665x;
         if (velocityTracker != null) {
             velocityTracker.addMovement(motionEvent);
         }
-        VelocityTracker velocityTracker2 = this.f55664x;
+        VelocityTracker velocityTracker2 = this.f55665x;
         if (velocityTracker2 != null) {
             velocityTracker2.computeCurrentVelocity(500);
         }
-        VelocityTracker velocityTracker3 = this.f55664x;
+        VelocityTracker velocityTracker3 = this.f55665x;
         Float f11 = null;
         if (velocityTracker3 != null) {
             f10 = Float.valueOf(velocityTracker3.getYVelocity());
         } else {
             f10 = null;
         }
-        if (!this.f55663w.t() || this.f55657q != this.f55663w.q()) {
+        if (!this.f55664w.t() || this.f55658q != this.f55664w.q()) {
             f11 = f10;
         }
-        this.f55663w.l(f11);
+        this.f55664w.l(f11);
         h();
     }
 
@@ -172,7 +172,7 @@ public final class f extends ReactViewGroup {
         Rect bounds;
         WindowManager windowManager;
         if (Build.VERSION.SDK_INT >= 30) {
-            Activity currentActivity = this.f55652d.getCurrentActivity();
+            Activity currentActivity = this.f55653d.getCurrentActivity();
             if (currentActivity != null && (windowManager = currentActivity.getWindowManager()) != null) {
                 windowMetrics = windowManager.getCurrentWindowMetrics();
             } else {
@@ -186,26 +186,26 @@ public final class f extends ReactViewGroup {
     }
 
     private final void h() {
-        this.f55653e = false;
-        this.f55654i = 0.0f;
-        this.f55655o = 0.0f;
-        this.f55656p = 0;
-        this.f55657q = 0;
-        this.f55662v.setEmpty();
-        VelocityTracker velocityTracker = this.f55664x;
+        this.f55654e = false;
+        this.f55655i = 0.0f;
+        this.f55656o = 0.0f;
+        this.f55657p = 0;
+        this.f55658q = 0;
+        this.f55663v.setEmpty();
+        VelocityTracker velocityTracker = this.f55665x;
         if (velocityTracker != null) {
             velocityTracker.recycle();
         }
-        this.f55664x = null;
+        this.f55665x = null;
     }
 
     private final boolean i(float f10, boolean z10) {
         if (f10 < 0.0f) {
-            if (!z10 && this.f55660t) {
+            if (!z10 && this.f55661t) {
                 return true;
             }
             return false;
-        } else if (f10 > 0.0f && z10 && this.f55661u) {
+        } else if (f10 > 0.0f && z10 && this.f55662u) {
             return true;
         } else {
             return false;
@@ -215,8 +215,8 @@ public final class f extends ReactViewGroup {
     @Override // android.view.ViewGroup, android.view.View
     public boolean dispatchTouchEvent(MotionEvent motionEvent) {
         Integer num;
-        if (this.f55664x == null) {
-            this.f55664x = VelocityTracker.obtain();
+        if (this.f55665x == null) {
+            this.f55665x = VelocityTracker.obtain();
         }
         if (motionEvent != null) {
             num = Integer.valueOf(motionEvent.getAction());
@@ -241,18 +241,18 @@ public final class f extends ReactViewGroup {
         if (aVar == null) {
             aVar = new qm.c();
         }
-        this.f55659s = aVar;
+        this.f55660s = aVar;
     }
 
     public final void setOffset(double d10) {
-        this.f55658r = (int) om.d.b((float) d10);
+        this.f55659r = (int) om.d.b((float) d10);
     }
 
     public final void setScrollKeyboardOffScreenWhenVisible(boolean z10) {
-        this.f55661u = z10;
+        this.f55662u = z10;
     }
 
     public final void setScrollKeyboardOnScreenWhenNotVisible(boolean z10) {
-        this.f55660t = z10;
+        this.f55661t = z10;
     }
 }

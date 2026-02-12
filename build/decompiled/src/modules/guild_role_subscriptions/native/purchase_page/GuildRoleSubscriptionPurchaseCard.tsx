@@ -2,26 +2,26 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var11 = metroImportDefault;
+    var7 = metroImportDefault;
     var6 = metroImportAll;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var11;
+    var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
     var _closure1_slot3 = var5;
     var0 = global;
-    var8 = var0.Object;
-    var7 = var8.defineProperty;
+    var9 = var0.Object;
+    var8 = var9.defineProperty;
     var3 = {};
     var0 = true;
     var3.value = var0;
     var0 = '__esModule';
-    var0 = var7.bind(var8)(var2, var0, var3);
+    var0 = var8.bind(var9)(var2, var0, var3);
     var0 = 0;
     var3 = var5[var0];
     var0 = undefined;
-    var3 = var11.bind(var0)(var3);
+    var3 = var7.bind(var0)(var3);
     var _closure1_slot4 = var3;
     var9 = 1;
     var3 = var5[var9];
@@ -34,71 +34,91 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 3;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var6 = var3.jsx;
-    var _closure1_slot6 = var6;
+    var8 = var3.jsx;
+    var _closure1_slot6 = var8;
     var3 = var3.jsxs;
     var _closure1_slot7 = var3;
     var3 = 4;
     var3 = var5[var3];
-    var8 = var4.bind(var0)(var3);
-    var7 = var8.createStyles;
+    var11 = var4.bind(var0)(var3);
+    var10 = var11.createStyles;
     var6 = {};
     var3 = {};
-    var10 = 5;
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
+    var13 = 5;
+    var12 = var5[var13];
+    var12 = var7.bind(var0)(var12);
     var12 = var12.colors;
     var12 = var12.BACKGROUND_SURFACE_HIGH;
     var3.backgroundColor = var12;
     var3.flex = var9;
     var6.container = var3;
     var3 = 16;
-    var9 = {
+    var9 = 24;
+    var12 = {
         'padding': 16,
         'paddingBottom': 24
     };
-    var6.header = var9;
-    var9 = {
+    var6.header = var12;
+    var12 = {
         'padding': 16,
         'paddingTop': 24
     };
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.colors;
-    var12 = var12.BACKGROUND_SURFACE_HIGH;
-    var9.backgroundColor = var12;
-    var6.content = var9;
-    var9 = {
+    var14 = var5[var13];
+    var14 = var7.bind(var0)(var14);
+    var14 = var14.colors;
+    var14 = var14.BACKGROUND_SURFACE_HIGH;
+    var12.backgroundColor = var14;
+    var6.content = var12;
+    var12 = {
         'flexDirection': 'row',
         'alignItems': 'center'
     };
-    var6.headerText = var9;
-    var9 = {
+    var6.headerText = var12;
+    var12 = {
         'width': 3,
         'height': 3,
         'borderRadius': 1.5,
         'backgroundColor': null,
         'marginHorizontal': 8
     };
-    var12 = var5[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.colors;
-    var12 = var12.INTERACTIVE_TEXT_DEFAULT;
-    var9.backgroundColor = var12;
-    var6.headerDot = var9;
-    var9 = {
+    var14 = var5[var13];
+    var14 = var7.bind(var0)(var14);
+    var14 = var14.colors;
+    var14 = var14.INTERACTIVE_TEXT_DEFAULT;
+    var12.backgroundColor = var14;
+    var6.headerDot = var12;
+    var12 = {
         'borderBottomWidth': 1,
         'marginLeft': 4294967280,
         'marginRight': 4294967280
     };
-    var10 = var5[var10];
-    var10 = var11.bind(var0)(var10);
-    var10 = var10.colors;
-    var10 = var10.INTERACTIVE_BACKGROUND_HOVER;
-    var9.borderColor = var10;
-    var6.seperator = var9;
-    var6 = var7.bind(var8)(var6);
+    var13 = var5[var13];
+    var13 = var7.bind(var0)(var13);
+    var13 = var13.colors;
+    var13 = var13.INTERACTIVE_BACKGROUND_HOVER;
+    var12.borderColor = var13;
+    var6.seperator = var12;
+    var6 = var10.bind(var11)(var6);
     var _closure1_slot8 = var6;
+    var6 = 6;
+    var10 = var5[var6];
+    var11 = var7.bind(var0)(var10);
+    var10 = {};
+    var10.size = var3;
+    var10 = var8.bind(var0)(var11, var10);
+    var _closure1_slot9 = var10;
+    var10 = var5[var6];
+    var11 = var7.bind(var0)(var10);
+    var10 = {};
+    var10.size = var9;
+    var10 = var8.bind(var0)(var11, var10);
+    var _closure1_slot10 = var10;
+    var6 = var5[var6];
+    var7 = var7.bind(var0)(var6);
+    var6 = {};
+    var6.size = var9;
+    var6 = var8.bind(var0)(var7, var6);
+    var _closure1_slot11 = var6;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -110,39 +130,39 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var13 = var0.guildId;
         var0 = _closure1_slot8;
         var3 = undefined;
-        var18 = var0.bind(var3)();
-        var16 = _closure1_slot1;
+        var16 = var0.bind(var3)();
+        var17 = _closure1_slot1;
         var15 = _closure1_slot3;
-        var0 = 6;
-        var0 = var15[var0];
-        var0 = var16.bind(var3)(var0);
-        var0 = var0.bind(var3)();
-        var20 = var0.bottom;
-        var6 = _closure1_slot2;
         var0 = 7;
+        var0 = var15[var0];
+        var0 = var17.bind(var3)(var0);
+        var0 = var0.bind(var3)();
+        var18 = var0.bottom;
+        var5 = _closure1_slot2;
+        var0 = 8;
         var1 = var15[var0];
-        var2 = var6.bind(var3)(var1);
+        var2 = var5.bind(var3)(var1);
         var1 = var2.useDescription;
         var1 = var1.bind(var2)(var14);
-        var5 = _closure1_slot4;
+        var4 = _closure1_slot4;
         var2 = 1;
-        var7 = var5.bind(var3)(var1, var2);
+        var6 = var4.bind(var3)(var1, var2);
         var1 = 0;
-        var21 = var7[var1];
+        var20 = var6[var1];
         var0 = var15[var0];
-        var6 = var6.bind(var3)(var0);
-        var0 = var6.useName;
-        var0 = var0.bind(var6)(var14);
-        var0 = var5.bind(var3)(var0, var2);
-        var19 = var0[var1];
+        var5 = var5.bind(var3)(var0);
+        var0 = var5.useName;
+        var0 = var0.bind(var5)(var14);
+        var0 = var4.bind(var3)(var0, var2);
+        var22 = var0[var1];
         var12 = _closure1_slot0;
-        var9 = 8;
+        var9 = 9;
         var0 = var15[var9];
         var1 = var12.bind(var3)(var0);
         var0 = var1.useFormattedSubscriptionPlan;
-        var22 = var0.bind(var1)(var14);
+        var23 = var0.bind(var1)(var14);
         var2 = _closure1_slot6;
-        var0 = 9;
+        var0 = 10;
         var0 = var15[var0];
         var0 = var12.bind(var3)(var0);
         var1 = var0.BottomSheet;
@@ -153,84 +173,73 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = _closure1_slot7;
         var5 = _closure1_slot5;
         var4 = {};
-        var7 = var18.container;
+        var7 = var16.container;
         var4.style = var7;
         var7 = {};
-        var8 = var18.header;
+        var8 = var16.header;
         var7.style = var8;
         var8 = {};
-        var10 = var18.headerText;
+        var10 = var16.headerText;
         var8.style = var10;
-        var10 = 10;
-        var11 = var15[var10];
-        var11 = var12.bind(var3)(var11);
-        var17 = var11.Text;
-        var11 = {
+        var10 = 11;
+        var19 = var15[var10];
+        var19 = var12.bind(var3)(var19);
+        var21 = var19.Text;
+        var19 = {
             'variant': 'heading-md/semibold',
             'color': 'mobile-text-heading-primary'
         };
-        var11.children = var19;
-        var17 = var2.bind(var3)(var17, var11);
-        var11 = new Array(3);
-        var11[0] = var17;
-        var17 = {};
-        var19 = var18.headerDot;
-        var17.style = var19;
-        var17 = var2.bind(var3)(var5, var17);
-        var11[1] = var17;
-        var17 = var15[var10];
-        var17 = var12.bind(var3)(var17);
-        var19 = var17.Text;
-        var17 = {
+        var19.children = var22;
+        var21 = var2.bind(var3)(var21, var19);
+        var19 = new Array(3);
+        var19[0] = var21;
+        var21 = {};
+        var22 = var16.headerDot;
+        var21.style = var22;
+        var21 = var2.bind(var3)(var5, var21);
+        var19[1] = var21;
+        var21 = var15[var10];
+        var21 = var12.bind(var3)(var21);
+        var22 = var21.Text;
+        var21 = {
             'variant': 'heading-md/semibold',
             'color': 'mobile-text-heading-primary'
         };
-        var17.children = var22;
-        var17 = var2.bind(var3)(var19, var17);
-        var11[2] = var17;
-        var8.children = var11;
-        var11 = var6.bind(var3)(var5, var8);
+        var21.children = var23;
+        var21 = var2.bind(var3)(var22, var21);
+        var19[2] = var21;
+        var8.children = var19;
+        var19 = var6.bind(var3)(var5, var8);
         var8 = new Array(5);
-        var8[0] = var11;
-        var11 = 11;
-        var17 = var15[var11];
-        var22 = var16.bind(var3)(var17);
-        var17 = {};
-        var19 = 16;
-        var17.size = var19;
-        var17 = var2.bind(var3)(var22, var17);
-        var8[1] = var17;
+        var8[0] = var19;
+        var19 = _closure1_slot9;
+        var8[1] = var19;
         var9 = var15[var9];
         var9 = var12.bind(var3)(var9);
-        var17 = var9.TruncatedText;
+        var19 = var9.TruncatedText;
         var9 = {
             'variant': 'text-sm/normal',
             'color': 'text-default',
             'lineClamp': 2
         };
-        var9.children = var21;
-        var9 = var2.bind(var3)(var17, var9);
+        var9.children = var20;
+        var9 = var2.bind(var3)(var19, var9);
         var8[2] = var9;
-        var9 = var15[var11];
-        var21 = var16.bind(var3)(var9);
-        var9 = {};
-        var17 = 24;
-        var9.size = var17;
-        var9 = var2.bind(var3)(var21, var9);
+        var9 = _closure1_slot10;
         var8[3] = var9;
         var9 = 12;
         var9 = var15[var9];
-        var21 = var16.bind(var3)(var9);
+        var17 = var17.bind(var3)(var9);
         var9 = {};
         var9.listingId = var14;
-        var9 = var2.bind(var3)(var21, var9);
+        var9 = var2.bind(var3)(var17, var9);
         var8[4] = var9;
         var7.children = var8;
         var8 = var6.bind(var3)(var5, var7);
         var7 = new Array(3);
         var7[0] = var8;
         var8 = {};
-        var9 = var18.seperator;
+        var9 = var16.seperator;
         var8.style = var9;
         var8 = var2.bind(var3)(var5, var8);
         var7[1] = var8;
@@ -239,44 +248,41 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = var12.bind(var3)(var8);
         var9 = var8.BottomSheetScrollView;
         var8 = {};
-        var21 = false;
-        var8.scrollsToTop = var21;
-        var18 = var18.content;
-        var8.style = var18;
-        var18 = {};
-        var19 = var19 + var20;
-        var18.paddingBottom = var19;
-        var8.contentContainerStyle = var18;
+        var17 = false;
+        var8.scrollsToTop = var17;
+        var16 = var16.content;
+        var8.style = var16;
+        var16 = {};
+        var17 = 16;
+        var17 = var17 + var18;
+        var16.paddingBottom = var17;
+        var8.contentContainerStyle = var16;
         var10 = var15[var10];
         var10 = var12.bind(var3)(var10);
-        var18 = var10.Text;
+        var16 = var10.Text;
         var10 = {
             'variant': 'text-sm/bold',
             'color': 'text-default'
         };
-        var19 = {};
-        var20 = 'uppercase';
-        var19.textTransform = var20;
-        var10.style = var19;
-        var19 = 14;
-        var20 = var15[var19];
-        var20 = var12.bind(var3)(var20);
-        var21 = var20.intl;
-        var20 = var21.string;
-        var19 = var15[var19];
-        var19 = var12.bind(var3)(var19);
-        var19 = var19.t;
-        var19 = var19.UdEvUi;
-        var19 = var20.bind(var21)(var19);
-        var10.children = var19;
-        var18 = var2.bind(var3)(var18, var10);
+        var17 = {};
+        var18 = 'uppercase';
+        var17.textTransform = var18;
+        var10.style = var17;
+        var17 = 14;
+        var18 = var15[var17];
+        var18 = var12.bind(var3)(var18);
+        var19 = var18.intl;
+        var18 = var19.string;
+        var17 = var15[var17];
+        var17 = var12.bind(var3)(var17);
+        var17 = var17.t;
+        var17 = var17.UdEvUi;
+        var17 = var18.bind(var19)(var17);
+        var10.children = var17;
+        var16 = var2.bind(var3)(var16, var10);
         var10 = new Array(3);
-        var10[0] = var18;
-        var11 = var15[var11];
-        var16 = var16.bind(var3)(var11);
-        var11 = {};
-        var11.size = var17;
-        var11 = var2.bind(var3)(var16, var11);
+        var10[0] = var16;
+        var11 = _closure1_slot11;
         var10[1] = var11;
         var11 = 15;
         var11 = var15[var11];
@@ -298,4 +304,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 1568, 10865, 13701, 4941, 3938, 9341, 13708, 4943, 1234, 10875, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 8880, 1568, 10678, 13713, 4907, 3938, 13720, 4909, 1234, 10688, 2]);

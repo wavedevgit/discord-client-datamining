@@ -15,51 +15,51 @@ import ys.m0;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final fq.e f31283a;
+    private final fq.e f31284a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final CoroutineScope f31284b;
+    private final CoroutineScope f31285b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final MutableStateFlow f31285c;
+    private final MutableStateFlow f31286c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f31286d;
+    private boolean f31287d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f31287e;
+    private boolean f31288e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f31288f;
+    private boolean f31289f;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f31289g;
+    private boolean f31290g;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f31290d;
+        int f31291d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ jq.a f31292i;
+        final /* synthetic */ jq.a f31293i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(jq.a aVar, Continuation continuation) {
             super(2, continuation);
-            this.f31292i = aVar;
+            this.f31293i = aVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new a(this.f31292i, continuation);
+            return new a(this.f31293i, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = gs.b.f();
-            int i10 = this.f31290d;
+            int i10 = this.f31291d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -68,28 +68,28 @@ public final class b {
                 }
             } else {
                 kotlin.c.b(obj);
-                MutableStateFlow b10 = b.this.f31283a.b();
-                dp.c cVar = new dp.c(this.f31292i.b(), this.f31292i.c(), this.f31292i.e());
-                this.f31290d = 1;
+                MutableStateFlow b10 = b.this.f31284a.b();
+                dp.c cVar = new dp.c(this.f31293i.b(), this.f31293i.c(), this.f31293i.e());
+                this.f31291d = 1;
                 if (b10.emit(cVar, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
     public b(fq.e externalInquiryController) {
         Intrinsics.checkNotNullParameter(externalInquiryController, "externalInquiryController");
-        this.f31283a = externalInquiryController;
-        this.f31284b = i.a(m0.a().O0(j1.b(null, 1, null)));
-        this.f31285c = l0.a(new jq.a(true, true, externalInquiryController.d(), true, true));
-        this.f31288f = true;
+        this.f31284a = externalInquiryController;
+        this.f31285b = i.a(m0.a().O0(j1.b(null, 1, null)));
+        this.f31286c = l0.a(new jq.a(true, true, externalInquiryController.d(), true, true));
+        this.f31289f = true;
     }
 
     public static /* synthetic */ void d(b bVar, boolean z10, boolean z11, boolean z12, int i10, Object obj) {
@@ -101,36 +101,36 @@ public final class b {
 
     private final void f() {
         boolean z10;
-        boolean z11 = this.f31286d;
-        boolean z12 = this.f31287e;
-        boolean d10 = this.f31283a.d();
-        boolean e10 = this.f31283a.e();
-        if (this.f31288f && !this.f31289g) {
+        boolean z11 = this.f31287d;
+        boolean z12 = this.f31288e;
+        boolean d10 = this.f31284a.d();
+        boolean e10 = this.f31284a.e();
+        if (this.f31289f && !this.f31290g) {
             z10 = true;
         } else {
             z10 = false;
         }
         jq.a aVar = new jq.a(z11, z12, d10, e10, z10);
-        if (Intrinsics.areEqual(this.f31285c.getValue(), aVar)) {
+        if (Intrinsics.areEqual(this.f31286c.getValue(), aVar)) {
             return;
         }
-        this.f31285c.setValue(aVar);
-        ys.i.d(this.f31284b, null, null, new a(aVar, null), 3, null);
+        this.f31286c.setValue(aVar);
+        ys.i.d(this.f31285b, null, null, new a(aVar, null), 3, null);
     }
 
     public final jq.a b() {
-        return (jq.a) this.f31285c.getValue();
+        return (jq.a) this.f31286c.getValue();
     }
 
     public final void c(boolean z10, boolean z11, boolean z12) {
-        this.f31286d = z10;
-        this.f31287e = z11;
-        this.f31288f = z12;
+        this.f31287d = z10;
+        this.f31288e = z11;
+        this.f31289f = z12;
         f();
     }
 
     public final void e(boolean z10) {
-        this.f31289g = z10;
+        this.f31290g = z10;
         f();
     }
 }

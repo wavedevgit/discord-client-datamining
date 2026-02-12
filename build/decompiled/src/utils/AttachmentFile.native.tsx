@@ -14,14 +14,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot3;
         var2 = function*(arg0, arg1) { // Environment: var2
             var0 = function*(arg0, arg1) { // Original name: ?anon_0_, environment: var0
-                _fun37103: for (var _fun37103_ip = 0;;) switch (_fun37103_ip) {
+                _fun37125: for (var _fun37125_ip = 0;;) switch (_fun37125_ip) {
                     case 0:
                         StartGenerator();
                         var2 = arg0;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun37103_ip = 345;
-                            continue _fun37103
+                            _fun37125_ip = 345;
+                            continue _fun37125
                         }
                     case 13:
                         var8 = var2;
@@ -63,8 +63,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 149:
                         ResumeGenerator(result_out_reg = 2, return_bool_out_reg = 11);
                         if (var11) {
-                            _fun37103_ip = 314;
-                            continue _fun37103
+                            _fun37125_ip = 314;
+                            continue _fun37125
                         }
                     case 158:
                         var7 = var2;
@@ -93,14 +93,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 245:
                         ResumeGenerator(result_out_reg = 3, return_bool_out_reg = 8);
                         if (var8) {
-                            _fun37103_ip = 256;
-                            continue _fun37103
+                            _fun37125_ip = 256;
+                            continue _fun37125
                         }
                     case 251:
                         var4 = var3;
                     case 254: // try_end0
-                        _fun37103_ip = 261;
-                        continue _fun37103;
+                        _fun37125_ip = 261;
+                        continue _fun37125;
                     case 256: // try_end1
                         return var3;
                     case 259: // try_start_2 // catch_target0
@@ -116,8 +116,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7 = var5 != var7;
                         var5 = '';
                         if (!var7) {
-                            _fun37103_ip = 302;
-                            continue _fun37103
+                            _fun37125_ip = 302;
+                            continue _fun37125
                         }
                     case 299:
                         var5 = var6;
@@ -158,13 +158,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot3;
         var2 = function*(arg0) { // Environment: var2
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun37106: for (var _fun37106_ip = 0;;) switch (_fun37106_ip) {
+                _fun37128: for (var _fun37128_ip = 0;;) switch (_fun37128_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun37106_ip = 62;
-                            continue _fun37106
+                            _fun37128_ip = 62;
+                            continue _fun37128
                         }
                     case 7:
                         var3 = _closure1_slot0;
@@ -182,8 +182,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 50:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun37106_ip = 59;
-                            continue _fun37106
+                            _fun37128_ip = 59;
+                            continue _fun37128
                         }
                     case 56:
                         return var2;
@@ -261,7 +261,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.cancelGetAttachmentFile = var3;
     var1 = function arg0() {
-        _fun37109: for (var _fun37109_ip = 0;;) switch (_fun37109_ip) {
+        _fun37131: for (var _fun37131_ip = 0;;) switch (_fun37131_ip) {
             case 0:
                 var3 = arg0;
                 var2 = var3;
@@ -281,8 +281,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var4 !== var3;
                 var0 = var3;
                 if (!var3) {
-                    _fun37109_ip = 121;
-                    continue _fun37109
+                    _fun37131_ip = 121;
+                    continue _fun37131
                 }
             case 80:
                 var3 = var2;

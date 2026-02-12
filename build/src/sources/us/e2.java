@@ -7,16 +7,16 @@ import us.g2;
 public class e2 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final g2 f51031d;
+    private final g2 f51032d;
 
     public e2(g2 g2Var) {
-        this.f51031d = g2Var;
+        this.f51032d = g2Var;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         g2.a T;
-        T = g2.T(this.f51031d);
+        T = g2.T(this.f51032d);
         return T;
     }
 }

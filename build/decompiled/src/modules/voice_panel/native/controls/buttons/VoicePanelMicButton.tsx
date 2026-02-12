@@ -952,6 +952,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = 'VoicePanelMicButton';
                 var12 = var4.bind(var11)(var2);
                 var _closure2_slot3 = var12;
+                var11 = _closure1_slot13;
+                var4 = _closure1_slot21;
+                var2 = {};
+                var2.buttonStyles = var6;
+                var2.isMuted = var5;
+                var2 = var11.bind(var3)(var4, var2);
+                var _closure2_slot4 = var2;
                 var11 = _closure1_slot4;
                 var4 = var11.useMemo;
                 var2 = new Array(4);
@@ -972,27 +979,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.DominantMuteState;
                             var0 = var0.SERVER_MUTE;
                             if (!(var2 !== var0)) {
-                                _fun112181_ip = 178;
+                                _fun112181_ip = 149;
                                 continue _fun112181
                             }
-                        case 51:
+                        case 48:
                             var0 = _closure2_slot3;
-                            var6 = _closure1_slot13;
                             if (var0) {
-                                _fun112181_ip = 94;
+                                _fun112181_ip = 61;
                                 continue _fun112181
                             }
-                        case 62:
-                            var2 = _closure1_slot21;
-                            var0 = {};
-                            var3 = _closure2_slot2;
-                            var0.buttonStyles = var3;
-                            var3 = _closure2_slot0;
-                            var0.isMuted = var3;
-                            var0 = var6.bind(var4)(var2, var0);
-                            _fun112181_ip = 176;
+                        case 55:
+                            var0 = _closure2_slot4;
+                            _fun112181_ip = 147;
                             continue _fun112181;
-                        case 94:
+                        case 61:
+                            var6 = _closure1_slot13;
                             var3 = _closure1_slot0;
                             var7 = _closure1_slot2;
                             var2 = 32;
@@ -1003,26 +1004,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = _closure2_slot0;
                             var8 = _closure2_slot2;
                             if (var7) {
-                                _fun112181_ip = 146;
+                                _fun112181_ip = 117;
                                 continue _fun112181
                             }
-                        case 133:
+                        case 104:
                             var7 = var8.iconFill;
                             var7 = var7.color;
-                            _fun112181_ip = 157;
+                            _fun112181_ip = 128;
                             continue _fun112181;
-                        case 146:
+                        case 117:
                             var8 = var8.iconFillRed;
                             var7 = var8.color;
-                        case 157:
+                        case 128:
                             var2.color = var7;
                             var7 = _closure2_slot0;
                             var2.muted = var7;
                             var0 = var6.bind(var4)(var3, var2);
-                        case 176:
-                            _fun112181_ip = 235;
+                        case 147:
+                            _fun112181_ip = 206;
                             continue _fun112181;
-                        case 178:
+                        case 149:
                             var3 = _closure1_slot13;
                             var2 = _closure1_slot0;
                             var6 = _closure1_slot2;
@@ -1036,7 +1037,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var5.color;
                             var1.color = var5;
                             var0 = var3.bind(var4)(var2, var1);
-                        case 235:
+                        case 206:
                             return var0;
                     }
                 };
@@ -1059,30 +1060,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8.bind(var3)(var7);
                 var8 = var7.t;
                 if (var5) {
-                    _fun112180_ip = 287;
+                    _fun112180_ip = 317;
                     continue _fun112180
                 }
-            case 274:
+            case 304:
                 var7 = var8.w4m945;
                 var7 = var9.bind(var10)(var7);
-                _fun112180_ip = 298;
+                _fun112180_ip = 328;
                 continue _fun112180;
-            case 287:
+            case 317:
                 var8 = var8.YqAjXy;
                 var7 = var9.bind(var10)(var8);
-            case 298:
+            case 328:
                 var0.accessibilityLabel = var7;
                 if (var5) {
-                    _fun112180_ip = 313;
+                    _fun112180_ip = 343;
                     continue _fun112180
                 }
-            case 305:
+            case 335:
                 var5 = var6.iconBg;
-                _fun112180_ip = 319;
+                _fun112180_ip = 349;
                 continue _fun112180;
-            case 313:
+            case 343:
                 var5 = var6.iconBgSelected;
-            case 319:
+            case 349:
                 var0.style = var5;
                 var0.children = var4;
                 var0 = var2.bind(var3)(var1, var0);
@@ -1091,4 +1092,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.MicButton = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 3516, 1675, 1216, 1372, 3473, 3093, 1621, 3518, 33, 3, 1297, 566, 5751, 8549, 8650, 11870, 3717, 14313, 3280, 8695, 4971, 14398, 14399, 1234, 10885, 3938, 4745, 8551, 8548, 8294, 8550, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 3516, 1675, 1216, 1372, 3473, 3093, 1621, 3518, 33, 3, 1297, 566, 5749, 11777, 11810, 9718, 3717, 14319, 3280, 9525, 4937, 14405, 14406, 1234, 8590, 3938, 4755, 11779, 11776, 8933, 11778, 2]);

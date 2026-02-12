@@ -14,7 +14,7 @@ public abstract class k implements Parcelable {
     public static final class a extends k {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f45552d = new a();
+        public static final a f45553d = new a();
         @NotNull
         public static final Parcelable.Creator<a> CREATOR = new C0616a();
 
@@ -26,7 +26,7 @@ public abstract class k implements Parcelable {
             public final a createFromParcel(Parcel parcel) {
                 Intrinsics.checkNotNullParameter(parcel, "parcel");
                 parcel.readInt();
-                return a.f45552d;
+                return a.f45553d;
             }
 
             @Override // android.os.Parcelable.Creator
@@ -73,10 +73,10 @@ public abstract class k implements Parcelable {
         public static final Parcelable.Creator<b> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f45553d;
+        private final String f45554d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final c f45554e;
+        private final c f45555e;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -98,8 +98,8 @@ public abstract class k implements Parcelable {
         public b(String str, c cause) {
             super(null);
             Intrinsics.checkNotNullParameter(cause, "cause");
-            this.f45553d = str;
-            this.f45554e = cause;
+            this.f45554d = str;
+            this.f45555e = cause;
         }
 
         @Override // android.os.Parcelable
@@ -110,8 +110,8 @@ public abstract class k implements Parcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f45553d);
-            dest.writeString(this.f45554e.name());
+            dest.writeString(this.f45554d);
+            dest.writeString(this.f45555e.name());
         }
     }
 
@@ -121,28 +121,28 @@ public abstract class k implements Parcelable {
     public static final class c {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final c f45555d = new c("AuthenticationError", 0);
+        public static final c f45556d = new c("AuthenticationError", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final c f45556e = new c("Unknown", 1);
+        public static final c f45557e = new c("Unknown", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        private static final /* synthetic */ c[] f45557i;
+        private static final /* synthetic */ c[] f45558i;
 
         /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f45558o;
+        private static final /* synthetic */ EnumEntries f45559o;
 
         static {
             c[] a10 = a();
-            f45557i = a10;
-            f45558o = hs.a.a(a10);
+            f45558i = a10;
+            f45559o = hs.a.a(a10);
         }
 
         private c(String str, int i10) {
         }
 
         private static final /* synthetic */ c[] a() {
-            return new c[]{f45555d, f45556e};
+            return new c[]{f45556d, f45557e};
         }
 
         public static c valueOf(String str) {
@@ -150,7 +150,7 @@ public abstract class k implements Parcelable {
         }
 
         public static c[] values() {
-            return (c[]) f45557i.clone();
+            return (c[]) f45558i.clone();
         }
     }
 
@@ -160,16 +160,16 @@ public abstract class k implements Parcelable {
         public static final Parcelable.Creator<d> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final Uri f45559d;
+        private final Uri f45560d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Uri f45560e;
+        private final Uri f45561e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final Uri f45561i;
+        private final Uri f45562i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final qp.a f45562o;
+        private final qp.a f45563o;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -194,26 +194,26 @@ public abstract class k implements Parcelable {
             Intrinsics.checkNotNullParameter(dg2Uri, "dg2Uri");
             Intrinsics.checkNotNullParameter(sodUri, "sodUri");
             Intrinsics.checkNotNullParameter(chipAuthenticationStatus, "chipAuthenticationStatus");
-            this.f45559d = dg1Uri;
-            this.f45560e = dg2Uri;
-            this.f45561i = sodUri;
-            this.f45562o = chipAuthenticationStatus;
+            this.f45560d = dg1Uri;
+            this.f45561e = dg2Uri;
+            this.f45562i = sodUri;
+            this.f45563o = chipAuthenticationStatus;
         }
 
         public final qp.a a() {
-            return this.f45562o;
+            return this.f45563o;
         }
 
         public final Uri b() {
-            return this.f45559d;
+            return this.f45560d;
         }
 
         public final Uri c() {
-            return this.f45560e;
+            return this.f45561e;
         }
 
         public final Uri d() {
-            return this.f45561i;
+            return this.f45562i;
         }
 
         @Override // android.os.Parcelable
@@ -224,10 +224,10 @@ public abstract class k implements Parcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeParcelable(this.f45559d, i10);
-            dest.writeParcelable(this.f45560e, i10);
-            dest.writeParcelable(this.f45561i, i10);
-            dest.writeString(this.f45562o.name());
+            dest.writeParcelable(this.f45560d, i10);
+            dest.writeParcelable(this.f45561e, i10);
+            dest.writeParcelable(this.f45562i, i10);
+            dest.writeString(this.f45563o.name());
         }
     }
 

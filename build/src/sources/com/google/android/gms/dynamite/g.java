@@ -9,11 +9,11 @@ final class g implements DynamiteModule.b {
         DynamiteModule.b.C0173b c0173b = new DynamiteModule.b.C0173b();
         int i10 = 0;
         int a10 = aVar.a(context, str, false);
-        c0173b.f14560b = a10;
+        c0173b.f14561b = a10;
         if (a10 != 0) {
             i10 = 1;
         }
-        c0173b.f14561c = i10;
+        c0173b.f14562c = i10;
         return c0173b;
     }
 }

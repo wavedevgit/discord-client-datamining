@@ -7,36 +7,36 @@ import io.sentry.SentryLevel;
 public final class z implements ILogger {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f28631a;
+    private final String f28632a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f28632a;
+        static final /* synthetic */ int[] f28633a;
 
         static {
             int[] iArr = new int[SentryLevel.values().length];
-            f28632a = iArr;
+            f28633a = iArr;
             try {
                 iArr[SentryLevel.INFO.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f28632a[SentryLevel.WARNING.ordinal()] = 2;
+                f28633a[SentryLevel.WARNING.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f28632a[SentryLevel.ERROR.ordinal()] = 3;
+                f28633a[SentryLevel.ERROR.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f28632a[SentryLevel.FATAL.ordinal()] = 4;
+                f28633a[SentryLevel.FATAL.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f28632a[SentryLevel.DEBUG.ordinal()] = 5;
+                f28633a[SentryLevel.DEBUG.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
         }
@@ -47,7 +47,7 @@ public final class z implements ILogger {
     }
 
     private int e(SentryLevel sentryLevel) {
-        int i10 = a.f28632a[sentryLevel.ordinal()];
+        int i10 = a.f28633a[sentryLevel.ordinal()];
         if (i10 == 1) {
             return 4;
         }
@@ -71,33 +71,33 @@ public final class z implements ILogger {
 
     @Override // io.sentry.ILogger
     public void b(SentryLevel sentryLevel, String str, Throwable th2) {
-        int i10 = a.f28632a[sentryLevel.ordinal()];
+        int i10 = a.f28633a[sentryLevel.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
                     if (i10 != 4) {
-                        Log.d(this.f28631a, str, th2);
+                        Log.d(this.f28632a, str, th2);
                         return;
                     } else {
-                        Log.wtf(this.f28631a, str, th2);
+                        Log.wtf(this.f28632a, str, th2);
                         return;
                     }
                 }
-                Log.e(this.f28631a, str, th2);
+                Log.e(this.f28632a, str, th2);
                 return;
             }
-            Log.w(this.f28631a, str, th2);
+            Log.w(this.f28632a, str, th2);
             return;
         }
-        Log.i(this.f28631a, str, th2);
+        Log.i(this.f28632a, str, th2);
     }
 
     @Override // io.sentry.ILogger
     public void c(SentryLevel sentryLevel, String str, Object... objArr) {
         if (objArr != null && objArr.length != 0) {
-            Log.println(e(sentryLevel), this.f28631a, String.format(str, objArr));
+            Log.println(e(sentryLevel), this.f28632a, String.format(str, objArr));
         } else {
-            Log.println(e(sentryLevel), this.f28631a, str);
+            Log.println(e(sentryLevel), this.f28632a, str);
         }
     }
 
@@ -107,6 +107,6 @@ public final class z implements ILogger {
     }
 
     public z(String str) {
-        this.f28631a = str;
+        this.f28632a = str;
     }
 }

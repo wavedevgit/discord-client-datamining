@@ -15,10 +15,10 @@ public interface y {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Handler f41734a;
+        private final Handler f41735a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final y f41735b;
+        private final y f41736b;
 
         public a(Handler handler, y yVar) {
             Handler handler2;
@@ -27,40 +27,40 @@ public interface y {
             } else {
                 handler2 = null;
             }
-            this.f41734a = handler2;
-            this.f41735b = yVar;
+            this.f41735a = handler2;
+            this.f41736b = yVar;
         }
 
         public static /* synthetic */ void c(a aVar, DecoderCounters decoderCounters) {
             aVar.getClass();
             decoderCounters.c();
-            ((y) w0.j(aVar.f41735b)).k(decoderCounters);
+            ((y) w0.j(aVar.f41736b)).k(decoderCounters);
         }
 
         public static /* synthetic */ void i(a aVar, Format format, DecoderReuseEvaluation decoderReuseEvaluation) {
-            ((y) w0.j(aVar.f41735b)).x(format);
-            ((y) w0.j(aVar.f41735b)).h(format, decoderReuseEvaluation);
+            ((y) w0.j(aVar.f41736b)).x(format);
+            ((y) w0.j(aVar.f41736b)).h(format, decoderReuseEvaluation);
         }
 
         public void k(final String str, final long j10, final long j11) {
-            Handler handler = this.f41734a;
+            Handler handler = this.f41735a;
             if (handler != null) {
                 handler.post(new Runnable() { // from class: pe.u
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((y) w0.j(y.a.this.f41735b)).d(str, j10, j11);
+                        ((y) w0.j(y.a.this.f41736b)).d(str, j10, j11);
                     }
                 });
             }
         }
 
         public void l(final String str) {
-            Handler handler = this.f41734a;
+            Handler handler = this.f41735a;
             if (handler != null) {
                 handler.post(new Runnable() { // from class: pe.r
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((y) w0.j(y.a.this.f41735b)).b(str);
+                        ((y) w0.j(y.a.this.f41736b)).b(str);
                     }
                 });
             }
@@ -68,7 +68,7 @@ public interface y {
 
         public void m(final DecoderCounters decoderCounters) {
             decoderCounters.c();
-            Handler handler = this.f41734a;
+            Handler handler = this.f41735a;
             if (handler != null) {
                 handler.post(new Runnable() { // from class: pe.s
                     @Override // java.lang.Runnable
@@ -80,31 +80,31 @@ public interface y {
         }
 
         public void n(final int i10, final long j10) {
-            Handler handler = this.f41734a;
+            Handler handler = this.f41735a;
             if (handler != null) {
                 handler.post(new Runnable() { // from class: pe.p
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((y) w0.j(y.a.this.f41735b)).m(i10, j10);
+                        ((y) w0.j(y.a.this.f41736b)).m(i10, j10);
                     }
                 });
             }
         }
 
         public void o(final DecoderCounters decoderCounters) {
-            Handler handler = this.f41734a;
+            Handler handler = this.f41735a;
             if (handler != null) {
                 handler.post(new Runnable() { // from class: pe.v
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((y) w0.j(y.a.this.f41735b)).p(decoderCounters);
+                        ((y) w0.j(y.a.this.f41736b)).p(decoderCounters);
                     }
                 });
             }
         }
 
         public void p(final Format format, final DecoderReuseEvaluation decoderReuseEvaluation) {
-            Handler handler = this.f41734a;
+            Handler handler = this.f41735a;
             if (handler != null) {
                 handler.post(new Runnable() { // from class: pe.w
                     @Override // java.lang.Runnable
@@ -116,48 +116,48 @@ public interface y {
         }
 
         public void q(final Object obj) {
-            if (this.f41734a != null) {
+            if (this.f41735a != null) {
                 final long elapsedRealtime = SystemClock.elapsedRealtime();
-                this.f41734a.post(new Runnable() { // from class: pe.q
+                this.f41735a.post(new Runnable() { // from class: pe.q
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((y) w0.j(y.a.this.f41735b)).o(obj, elapsedRealtime);
+                        ((y) w0.j(y.a.this.f41736b)).o(obj, elapsedRealtime);
                     }
                 });
             }
         }
 
         public void r(final long j10, final int i10) {
-            Handler handler = this.f41734a;
+            Handler handler = this.f41735a;
             if (handler != null) {
                 handler.post(new Runnable() { // from class: pe.x
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((y) w0.j(y.a.this.f41735b)).s(j10, i10);
+                        ((y) w0.j(y.a.this.f41736b)).s(j10, i10);
                     }
                 });
             }
         }
 
         public void s(final Exception exc) {
-            Handler handler = this.f41734a;
+            Handler handler = this.f41735a;
             if (handler != null) {
                 handler.post(new Runnable() { // from class: pe.t
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((y) w0.j(y.a.this.f41735b)).j(exc);
+                        ((y) w0.j(y.a.this.f41736b)).j(exc);
                     }
                 });
             }
         }
 
         public void t(final VideoSize videoSize) {
-            Handler handler = this.f41734a;
+            Handler handler = this.f41735a;
             if (handler != null) {
                 handler.post(new Runnable() { // from class: pe.o
                     @Override // java.lang.Runnable
                     public final void run() {
-                        ((y) w0.j(y.a.this.f41735b)).onVideoSizeChanged(videoSize);
+                        ((y) w0.j(y.a.this.f41736b)).onVideoSizeChanged(videoSize);
                     }
                 });
             }

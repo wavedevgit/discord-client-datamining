@@ -3,9 +3,9 @@ package com.google.firebase.messaging;
 public abstract class j0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ej.h f17371a = ej.h.a().d(a.f17276a).c();
+    private static final ej.h f17372a = ej.h.a().d(a.f17277a).c();
 
     public static byte[] a(Object obj) {
-        return f17371a.c(obj);
+        return f17372a.c(obj);
     }
 }

@@ -3,7 +3,7 @@ package xv;
 public class c extends cw.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final aw.b f55171a = new aw.b();
+    private final aw.b f55172a = new aw.b();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static class a extends cw.b {
@@ -25,7 +25,7 @@ public class c extends cw.a {
     /* JADX INFO: Access modifiers changed from: private */
     public static boolean k(cw.h hVar, int i10) {
         CharSequence line = hVar.getLine();
-        if (hVar.a() < zv.d.f57221a && i10 < line.length() && line.charAt(i10) == '>') {
+        if (hVar.a() < zv.d.f57222a && i10 < line.length() && line.charAt(i10) == '>') {
             return true;
         }
         return false;
@@ -58,6 +58,6 @@ public class c extends cw.a {
     @Override // cw.d
     /* renamed from: j */
     public aw.b d() {
-        return this.f55171a;
+        return this.f55172a;
     }
 }

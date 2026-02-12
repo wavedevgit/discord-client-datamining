@@ -10,13 +10,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c implements w {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f42801d = new ArrayList();
+    private final List f42802d = new ArrayList();
 
     @Override // androidx.core.view.w
     public WindowInsetsCompat a(View v10, WindowInsetsCompat insets) {
         Intrinsics.checkNotNullParameter(v10, "v");
         Intrinsics.checkNotNullParameter(insets, "insets");
-        for (w wVar : this.f42801d) {
+        for (w wVar : this.f42802d) {
             wVar.a(v10, insets);
         }
         return insets;
@@ -24,6 +24,6 @@ public final class c implements w {
 
     public final void b(w listener) {
         Intrinsics.checkNotNullParameter(listener, "listener");
-        this.f42801d.add(listener);
+        this.f42802d.add(listener);
     }
 }

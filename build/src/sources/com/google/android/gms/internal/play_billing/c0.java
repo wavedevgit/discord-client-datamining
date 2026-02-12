@@ -3,5 +3,5 @@ package com.google.android.gms.internal.play_billing;
 abstract class c0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ int f14875a = 0;
+    public static final /* synthetic */ int f14876a = 0;
 }

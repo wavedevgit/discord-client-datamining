@@ -7,13 +7,13 @@ import kotlin.jvm.internal.PropertyReference0Impl;
 public class p {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f21904d = AtomicReferenceFieldUpdater.newUpdater(p.class, Object.class, "_next$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f21905d = AtomicReferenceFieldUpdater.newUpdater(p.class, Object.class, "_next$volatile");
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f21905e = AtomicReferenceFieldUpdater.newUpdater(p.class, Object.class, "_prev$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f21906e = AtomicReferenceFieldUpdater.newUpdater(p.class, Object.class, "_prev$volatile");
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f21906i = AtomicReferenceFieldUpdater.newUpdater(p.class, Object.class, "_removedRef$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f21907i = AtomicReferenceFieldUpdater.newUpdater(p.class, Object.class, "_removedRef$volatile");
     private volatile /* synthetic */ Object _next$volatile = this;
     private volatile /* synthetic */ Object _prev$volatile = this;
     private volatile /* synthetic */ Object _removedRef$volatile;
@@ -22,7 +22,7 @@ public class p {
         return r2;
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x003f, code lost:
-        if (androidx.concurrent.futures.b.a(dt.p.f21904d, r3, r2, ((dt.y) r4).f21926a) != false) goto L20;
+        if (androidx.concurrent.futures.b.a(dt.p.f21905d, r3, r2, ((dt.y) r4).f21927a) != false) goto L20;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -62,7 +62,7 @@ public class p {
             if (r3 == 0) goto L44
             java.util.concurrent.atomic.AtomicReferenceFieldUpdater r5 = n()
             dt.y r4 = (dt.y) r4
-            dt.p r4 = r4.f21926a
+            dt.p r4 = r4.f21927a
             boolean r2 = androidx.concurrent.futures.b.a(r5, r3, r2, r4)
             if (r2 != 0) goto L42
             goto L0
@@ -89,30 +89,30 @@ public class p {
 
     private final p i(p pVar) {
         while (pVar.q()) {
-            pVar = (p) f21905e.get(pVar);
+            pVar = (p) f21906e.get(pVar);
         }
         return pVar;
     }
 
     private final void j(p pVar) {
         p pVar2;
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f21905e;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f21906e;
         do {
             pVar2 = (p) atomicReferenceFieldUpdater.get(pVar);
             if (k() != pVar) {
                 return;
             }
-        } while (!androidx.concurrent.futures.b.a(f21905e, pVar, pVar2, this));
+        } while (!androidx.concurrent.futures.b.a(f21906e, pVar, pVar2, this));
         if (q()) {
             pVar.h();
         }
     }
 
     private final y t() {
-        y yVar = (y) f21906i.get(this);
+        y yVar = (y) f21907i.get(this);
         if (yVar == null) {
             y yVar2 = new y(this);
-            f21906i.set(this, yVar2);
+            f21907i.set(this, yVar2);
             return yVar2;
         }
         return yVar;
@@ -123,7 +123,7 @@ public class p {
         do {
             m10 = m();
             if (m10 instanceof n) {
-                if ((((n) m10).f21901o & i10) == 0 && m10.c(pVar, i10)) {
+                if ((((n) m10).f21902o & i10) == 0 && m10.c(pVar, i10)) {
                     return true;
                 }
                 return false;
@@ -133,9 +133,9 @@ public class p {
     }
 
     public final boolean e(p pVar, p pVar2) {
-        f21905e.set(pVar, this);
-        f21904d.set(pVar, pVar2);
-        if (!androidx.concurrent.futures.b.a(f21904d, this, pVar2, pVar)) {
+        f21906e.set(pVar, this);
+        f21905d.set(pVar, pVar2);
+        if (!androidx.concurrent.futures.b.a(f21905d, this, pVar2, pVar)) {
             return false;
         }
         pVar.j(pVar2);
@@ -143,10 +143,10 @@ public class p {
     }
 
     public final boolean f(p pVar) {
-        f21905e.set(pVar, this);
-        f21904d.set(pVar, this);
+        f21906e.set(pVar, this);
+        f21905d.set(pVar, this);
         while (k() == this) {
-            if (androidx.concurrent.futures.b.a(f21904d, this, this, pVar)) {
+            if (androidx.concurrent.futures.b.a(f21905d, this, this, pVar)) {
                 pVar.j(this);
                 return true;
             }
@@ -159,7 +159,7 @@ public class p {
     }
 
     public final Object k() {
-        return f21904d.get(this);
+        return f21905d.get(this);
     }
 
     public final p l() {
@@ -171,7 +171,7 @@ public class p {
         } else {
             yVar = null;
         }
-        if (yVar != null && (pVar = yVar.f21926a) != null) {
+        if (yVar != null && (pVar = yVar.f21927a) != null) {
             return pVar;
         }
         Intrinsics.checkNotNull(k10, "null cannot be cast to non-null type kotlinx.coroutines.internal.LockFreeLinkedListNode");
@@ -181,7 +181,7 @@ public class p {
     public final p m() {
         p h10 = h();
         if (h10 == null) {
-            return i((p) f21905e.get(this));
+            return i((p) f21906e.get(this));
         }
         return h10;
     }
@@ -203,14 +203,14 @@ public class p {
         do {
             k10 = k();
             if (k10 instanceof y) {
-                return ((y) k10).f21926a;
+                return ((y) k10).f21927a;
             }
             if (k10 == this) {
                 return (p) k10;
             }
             Intrinsics.checkNotNull(k10, "null cannot be cast to non-null type kotlinx.coroutines.internal.LockFreeLinkedListNode");
             pVar = (p) k10;
-        } while (!androidx.concurrent.futures.b.a(f21904d, this, k10, pVar.t()));
+        } while (!androidx.concurrent.futures.b.a(f21905d, this, k10, pVar.t()));
         pVar.h();
         return null;
     }

@@ -10,22 +10,22 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class v implements ComponentCallbacks2, g.a {
 
     /* renamed from: q  reason: collision with root package name */
-    public static final a f31582q = new a(null);
+    public static final a f31583q = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final WeakReference f31583d;
+    private final WeakReference f31584d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Context f31584e;
+    private Context f31585e;
 
     /* renamed from: i  reason: collision with root package name */
-    private f5.g f31585i;
+    private f5.g f31586i;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f31586o;
+    private boolean f31587o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f31587p = true;
+    private boolean f31588p = true;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -38,15 +38,15 @@ public final class v implements ComponentCallbacks2, g.a {
     }
 
     public v(v4.j jVar) {
-        this.f31583d = new WeakReference(jVar);
+        this.f31584d = new WeakReference(jVar);
     }
 
     private final synchronized void d() {
         f5.g eVar;
         try {
-            v4.j jVar = (v4.j) this.f31583d.get();
+            v4.j jVar = (v4.j) this.f31584d.get();
             if (jVar != null) {
-                if (this.f31585i == null) {
+                if (this.f31586i == null) {
                     if (jVar.i().d()) {
                         Context f10 = jVar.f();
                         jVar.h();
@@ -54,8 +54,8 @@ public final class v implements ComponentCallbacks2, g.a {
                     } else {
                         eVar = new f5.e();
                     }
-                    this.f31585i = eVar;
-                    this.f31587p = eVar.a();
+                    this.f31586i = eVar;
+                    this.f31588p = eVar.a();
                 }
             } else {
                 e();
@@ -68,10 +68,10 @@ public final class v implements ComponentCallbacks2, g.a {
     @Override // f5.g.a
     public synchronized void a(boolean z10) {
         try {
-            v4.j jVar = (v4.j) this.f31583d.get();
+            v4.j jVar = (v4.j) this.f31584d.get();
             if (jVar != null) {
                 jVar.h();
-                this.f31587p = z10;
+                this.f31588p = z10;
             } else {
                 e();
             }
@@ -82,16 +82,16 @@ public final class v implements ComponentCallbacks2, g.a {
 
     public final synchronized boolean b() {
         d();
-        return this.f31587p;
+        return this.f31588p;
     }
 
     public final synchronized void c() {
         try {
-            v4.j jVar = (v4.j) this.f31583d.get();
+            v4.j jVar = (v4.j) this.f31584d.get();
             if (jVar != null) {
-                if (this.f31584e == null) {
+                if (this.f31585e == null) {
                     Context f10 = jVar.f();
-                    this.f31584e = f10;
+                    this.f31585e = f10;
                     f10.registerComponentCallbacks(this);
                 }
             } else {
@@ -104,19 +104,19 @@ public final class v implements ComponentCallbacks2, g.a {
 
     public final synchronized void e() {
         try {
-            if (this.f31586o) {
+            if (this.f31587o) {
                 return;
             }
-            this.f31586o = true;
-            Context context = this.f31584e;
+            this.f31587o = true;
+            Context context = this.f31585e;
             if (context != null) {
                 context.unregisterComponentCallbacks(this);
             }
-            f5.g gVar = this.f31585i;
+            f5.g gVar = this.f31586i;
             if (gVar != null) {
                 gVar.shutdown();
             }
-            this.f31583d.clear();
+            this.f31584d.clear();
         } catch (Throwable th2) {
             throw th2;
         }
@@ -124,7 +124,7 @@ public final class v implements ComponentCallbacks2, g.a {
 
     @Override // android.content.ComponentCallbacks
     public synchronized void onConfigurationChanged(Configuration configuration) {
-        if (((v4.j) this.f31583d.get()) == null) {
+        if (((v4.j) this.f31584d.get()) == null) {
             e();
         }
     }
@@ -137,7 +137,7 @@ public final class v implements ComponentCallbacks2, g.a {
     @Override // android.content.ComponentCallbacks2
     public synchronized void onTrimMemory(int i10) {
         try {
-            v4.j jVar = (v4.j) this.f31583d.get();
+            v4.j jVar = (v4.j) this.f31584d.get();
             if (jVar != null) {
                 jVar.h();
                 jVar.m(i10);

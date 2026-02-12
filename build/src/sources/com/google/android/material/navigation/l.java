@@ -17,19 +17,19 @@ import androidx.appcompat.view.menu.e;
 public abstract class l extends FrameLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    private final e f16044d;
+    private final e f16045d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final h f16045e;
+    private final h f16046e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final i f16046i;
+    private final i f16047i;
 
     /* renamed from: o  reason: collision with root package name */
-    private MenuInflater f16047o;
+    private MenuInflater f16048o;
 
     /* renamed from: p  reason: collision with root package name */
-    private c f16048p;
+    private c f16049p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements e.a {
@@ -39,7 +39,7 @@ public abstract class l extends FrameLayout {
         @Override // androidx.appcompat.view.menu.e.a
         public boolean a(androidx.appcompat.view.menu.e eVar, MenuItem menuItem) {
             l.a(l.this);
-            if (l.this.f16048p != null && !l.this.f16048p.a(menuItem)) {
+            if (l.this.f16049p != null && !l.this.f16049p.a(menuItem)) {
                 return true;
             }
             return false;
@@ -65,7 +65,7 @@ public abstract class l extends FrameLayout {
         public static final Parcelable.Creator<d> CREATOR = new a();
 
         /* renamed from: i  reason: collision with root package name */
-        Bundle f16050i;
+        Bundle f16051i;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         class a implements Parcelable.ClassLoaderCreator {
@@ -96,13 +96,13 @@ public abstract class l extends FrameLayout {
         }
 
         private void b(Parcel parcel, ClassLoader classLoader) {
-            this.f16050i = parcel.readBundle(classLoader);
+            this.f16051i = parcel.readBundle(classLoader);
         }
 
         @Override // u2.a, android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
             super.writeToParcel(parcel, i10);
-            parcel.writeBundle(this.f16050i);
+            parcel.writeBundle(this.f16051i);
         }
 
         public d(Parcel parcel, ClassLoader classLoader) {
@@ -132,31 +132,31 @@ public abstract class l extends FrameLayout {
     }
 
     private MenuInflater getMenuInflater() {
-        if (this.f16047o == null) {
-            this.f16047o = new androidx.appcompat.view.e(getContext());
+        if (this.f16048o == null) {
+            this.f16048o = new androidx.appcompat.view.e(getContext());
         }
-        return this.f16047o;
+        return this.f16048o;
     }
 
     private void setMeasureBottomPaddingFromLabelBaseline(boolean z10) {
-        this.f16045e.setMeasurePaddingFromLabelBaseline(z10);
+        this.f16046e.setMeasurePaddingFromLabelBaseline(z10);
     }
 
     protected abstract h c(Context context);
 
     public dh.a d(int i10) {
-        return this.f16045e.j(i10);
+        return this.f16046e.j(i10);
     }
 
     public dh.a e(int i10) {
-        return this.f16045e.k(i10);
+        return this.f16046e.k(i10);
     }
 
     public void f(int i10) {
-        this.f16046i.m(true);
-        getMenuInflater().inflate(i10, this.f16044d);
-        this.f16046i.m(false);
-        this.f16046i.g(true);
+        this.f16047i.m(true);
+        getMenuInflater().inflate(i10, this.f16045d);
+        this.f16047i.m(false);
+        this.f16047i.g(true);
     }
 
     protected boolean g() {
@@ -164,7 +164,7 @@ public abstract class l extends FrameLayout {
     }
 
     public int getActiveIndicatorLabelPadding() {
-        return this.f16045e.getActiveIndicatorLabelPadding();
+        return this.f16046e.getActiveIndicatorLabelPadding();
     }
 
     public int getCollapsedMaxItemCount() {
@@ -172,134 +172,134 @@ public abstract class l extends FrameLayout {
     }
 
     public int getHorizontalItemTextAppearanceActive() {
-        return this.f16045e.getHorizontalItemTextAppearanceActive();
+        return this.f16046e.getHorizontalItemTextAppearanceActive();
     }
 
     public int getHorizontalItemTextAppearanceInactive() {
-        return this.f16045e.getHorizontalItemTextAppearanceInactive();
+        return this.f16046e.getHorizontalItemTextAppearanceInactive();
     }
 
     public int getIconLabelHorizontalSpacing() {
-        return this.f16045e.getIconLabelHorizontalSpacing();
+        return this.f16046e.getIconLabelHorizontalSpacing();
     }
 
     public ColorStateList getItemActiveIndicatorColor() {
-        return this.f16045e.getItemActiveIndicatorColor();
+        return this.f16046e.getItemActiveIndicatorColor();
     }
 
     public int getItemActiveIndicatorExpandedHeight() {
-        return this.f16045e.getItemActiveIndicatorExpandedHeight();
+        return this.f16046e.getItemActiveIndicatorExpandedHeight();
     }
 
     public int getItemActiveIndicatorExpandedMarginHorizontal() {
-        return this.f16045e.getItemActiveIndicatorExpandedMarginHorizontal();
+        return this.f16046e.getItemActiveIndicatorExpandedMarginHorizontal();
     }
 
     public int getItemActiveIndicatorExpandedWidth() {
-        return this.f16045e.getItemActiveIndicatorExpandedWidth();
+        return this.f16046e.getItemActiveIndicatorExpandedWidth();
     }
 
     public int getItemActiveIndicatorHeight() {
-        return this.f16045e.getItemActiveIndicatorHeight();
+        return this.f16046e.getItemActiveIndicatorHeight();
     }
 
     public int getItemActiveIndicatorMarginHorizontal() {
-        return this.f16045e.getItemActiveIndicatorMarginHorizontal();
+        return this.f16046e.getItemActiveIndicatorMarginHorizontal();
     }
 
     public th.l getItemActiveIndicatorShapeAppearance() {
-        return this.f16045e.getItemActiveIndicatorShapeAppearance();
+        return this.f16046e.getItemActiveIndicatorShapeAppearance();
     }
 
     public int getItemActiveIndicatorWidth() {
-        return this.f16045e.getItemActiveIndicatorWidth();
+        return this.f16046e.getItemActiveIndicatorWidth();
     }
 
     public Drawable getItemBackground() {
-        return this.f16045e.getItemBackground();
+        return this.f16046e.getItemBackground();
     }
 
     @Deprecated
     public int getItemBackgroundResource() {
-        return this.f16045e.getItemBackgroundRes();
+        return this.f16046e.getItemBackgroundRes();
     }
 
     public int getItemGravity() {
-        return this.f16045e.getItemGravity();
+        return this.f16046e.getItemGravity();
     }
 
     public int getItemIconGravity() {
-        return this.f16045e.getItemIconGravity();
+        return this.f16046e.getItemIconGravity();
     }
 
     public int getItemIconSize() {
-        return this.f16045e.getItemIconSize();
+        return this.f16046e.getItemIconSize();
     }
 
     public ColorStateList getItemIconTintList() {
-        return this.f16045e.getIconTintList();
+        return this.f16046e.getIconTintList();
     }
 
     public int getItemPaddingBottom() {
-        return this.f16045e.getItemPaddingBottom();
+        return this.f16046e.getItemPaddingBottom();
     }
 
     public int getItemPaddingTop() {
-        return this.f16045e.getItemPaddingTop();
+        return this.f16046e.getItemPaddingTop();
     }
 
     public ColorStateList getItemRippleColor() {
-        return this.f16045e.getItemRippleColor();
+        return this.f16046e.getItemRippleColor();
     }
 
     public int getItemTextAppearanceActive() {
-        return this.f16045e.getItemTextAppearanceActive();
+        return this.f16046e.getItemTextAppearanceActive();
     }
 
     public int getItemTextAppearanceInactive() {
-        return this.f16045e.getItemTextAppearanceInactive();
+        return this.f16046e.getItemTextAppearanceInactive();
     }
 
     public ColorStateList getItemTextColor() {
-        return this.f16045e.getItemTextColor();
+        return this.f16046e.getItemTextColor();
     }
 
     public int getLabelVisibilityMode() {
-        return this.f16045e.getLabelVisibilityMode();
+        return this.f16046e.getLabelVisibilityMode();
     }
 
     public abstract int getMaxItemCount();
 
     @NonNull
     public Menu getMenu() {
-        return this.f16044d;
+        return this.f16045d;
     }
 
     @NonNull
     public androidx.appcompat.view.menu.k getMenuView() {
-        return this.f16045e;
+        return this.f16046e;
     }
 
     @NonNull
     public ViewGroup getMenuViewGroup() {
-        return this.f16045e;
+        return this.f16046e;
     }
 
     @NonNull
     public i getPresenter() {
-        return this.f16046i;
+        return this.f16047i;
     }
 
     public boolean getScaleLabelTextWithFont() {
-        return this.f16045e.getScaleLabelTextWithFont();
+        return this.f16046e.getScaleLabelTextWithFont();
     }
 
     public int getSelectedItemId() {
-        return this.f16045e.getSelectedItemId();
+        return this.f16046e.getSelectedItemId();
     }
 
     public void h(int i10, int i11, int i12, int i13) {
-        this.f16045e.r(i10, i11, i12, i13);
+        this.f16046e.r(i10, i11, i12, i13);
     }
 
     public boolean i() {
@@ -320,20 +320,20 @@ public abstract class l extends FrameLayout {
         }
         d dVar = (d) parcelable;
         super.onRestoreInstanceState(dVar.a());
-        this.f16044d.T(dVar.f16050i);
+        this.f16045d.T(dVar.f16051i);
     }
 
     @Override // android.view.View
     protected Parcelable onSaveInstanceState() {
         d dVar = new d(super.onSaveInstanceState());
         Bundle bundle = new Bundle();
-        dVar.f16050i = bundle;
-        this.f16044d.V(bundle);
+        dVar.f16051i = bundle;
+        this.f16045d.V(bundle);
         return dVar;
     }
 
     public void setActiveIndicatorLabelPadding(int i10) {
-        this.f16045e.setActiveIndicatorLabelPadding(i10);
+        this.f16046e.setActiveIndicatorLabelPadding(i10);
     }
 
     @Override // android.view.View
@@ -343,77 +343,77 @@ public abstract class l extends FrameLayout {
     }
 
     public void setHorizontalItemTextAppearanceActive(int i10) {
-        this.f16045e.setHorizontalItemTextAppearanceActive(i10);
+        this.f16046e.setHorizontalItemTextAppearanceActive(i10);
     }
 
     public void setHorizontalItemTextAppearanceInactive(int i10) {
-        this.f16045e.setHorizontalItemTextAppearanceInactive(i10);
+        this.f16046e.setHorizontalItemTextAppearanceInactive(i10);
     }
 
     public void setIconLabelHorizontalSpacing(int i10) {
-        this.f16045e.setIconLabelHorizontalSpacing(i10);
+        this.f16046e.setIconLabelHorizontalSpacing(i10);
     }
 
     public void setItemActiveIndicatorColor(ColorStateList colorStateList) {
-        this.f16045e.setItemActiveIndicatorColor(colorStateList);
+        this.f16046e.setItemActiveIndicatorColor(colorStateList);
     }
 
     public void setItemActiveIndicatorEnabled(boolean z10) {
-        this.f16045e.setItemActiveIndicatorEnabled(z10);
+        this.f16046e.setItemActiveIndicatorEnabled(z10);
     }
 
     public void setItemActiveIndicatorExpandedHeight(int i10) {
-        this.f16045e.setItemActiveIndicatorExpandedHeight(i10);
+        this.f16046e.setItemActiveIndicatorExpandedHeight(i10);
     }
 
     public void setItemActiveIndicatorExpandedMarginHorizontal(int i10) {
-        this.f16045e.setItemActiveIndicatorExpandedMarginHorizontal(i10);
+        this.f16046e.setItemActiveIndicatorExpandedMarginHorizontal(i10);
     }
 
     public void setItemActiveIndicatorExpandedWidth(int i10) {
-        this.f16045e.setItemActiveIndicatorExpandedWidth(i10);
+        this.f16046e.setItemActiveIndicatorExpandedWidth(i10);
     }
 
     public void setItemActiveIndicatorHeight(int i10) {
-        this.f16045e.setItemActiveIndicatorHeight(i10);
+        this.f16046e.setItemActiveIndicatorHeight(i10);
     }
 
     public void setItemActiveIndicatorMarginHorizontal(int i10) {
-        this.f16045e.setItemActiveIndicatorMarginHorizontal(i10);
+        this.f16046e.setItemActiveIndicatorMarginHorizontal(i10);
     }
 
     public void setItemActiveIndicatorShapeAppearance(th.l lVar) {
-        this.f16045e.setItemActiveIndicatorShapeAppearance(lVar);
+        this.f16046e.setItemActiveIndicatorShapeAppearance(lVar);
     }
 
     public void setItemActiveIndicatorWidth(int i10) {
-        this.f16045e.setItemActiveIndicatorWidth(i10);
+        this.f16046e.setItemActiveIndicatorWidth(i10);
     }
 
     public void setItemBackground(Drawable drawable) {
-        this.f16045e.setItemBackground(drawable);
+        this.f16046e.setItemBackground(drawable);
     }
 
     public void setItemBackgroundResource(int i10) {
-        this.f16045e.setItemBackgroundRes(i10);
+        this.f16046e.setItemBackgroundRes(i10);
     }
 
     public void setItemGravity(int i10) {
-        if (this.f16045e.getItemGravity() != i10) {
-            this.f16045e.setItemGravity(i10);
-            this.f16046i.g(false);
+        if (this.f16046e.getItemGravity() != i10) {
+            this.f16046e.setItemGravity(i10);
+            this.f16047i.g(false);
         }
     }
 
     public void setItemIconGravity(int i10) {
-        if (this.f16045e.getItemIconGravity() != i10) {
-            this.f16045e.setItemIconGravity(i10);
-            this.f16046i.g(false);
+        if (this.f16046e.getItemIconGravity() != i10) {
+            this.f16046e.setItemIconGravity(i10);
+            this.f16047i.g(false);
         }
     }
 
     public void setItemIconSize(int i10) {
-        this.f16045e.setItemIconSize(i10);
+        this.f16046e.setItemIconSize(i10);
     }
 
     public void setItemIconSizeRes(int i10) {
@@ -421,49 +421,49 @@ public abstract class l extends FrameLayout {
     }
 
     public void setItemIconTintList(ColorStateList colorStateList) {
-        this.f16045e.setIconTintList(colorStateList);
+        this.f16046e.setIconTintList(colorStateList);
     }
 
     public void setItemPaddingBottom(int i10) {
-        this.f16045e.setItemPaddingBottom(i10);
+        this.f16046e.setItemPaddingBottom(i10);
     }
 
     public void setItemPaddingTop(int i10) {
-        this.f16045e.setItemPaddingTop(i10);
+        this.f16046e.setItemPaddingTop(i10);
     }
 
     public void setItemRippleColor(ColorStateList colorStateList) {
-        this.f16045e.setItemRippleColor(colorStateList);
+        this.f16046e.setItemRippleColor(colorStateList);
     }
 
     public void setItemTextAppearanceActive(int i10) {
-        this.f16045e.setItemTextAppearanceActive(i10);
+        this.f16046e.setItemTextAppearanceActive(i10);
     }
 
     public void setItemTextAppearanceActiveBoldEnabled(boolean z10) {
-        this.f16045e.setItemTextAppearanceActiveBoldEnabled(z10);
+        this.f16046e.setItemTextAppearanceActiveBoldEnabled(z10);
     }
 
     public void setItemTextAppearanceInactive(int i10) {
-        this.f16045e.setItemTextAppearanceInactive(i10);
+        this.f16046e.setItemTextAppearanceInactive(i10);
     }
 
     public void setItemTextColor(ColorStateList colorStateList) {
-        this.f16045e.setItemTextColor(colorStateList);
+        this.f16046e.setItemTextColor(colorStateList);
     }
 
     public void setLabelFontScalingEnabled(boolean z10) {
-        this.f16045e.setLabelFontScalingEnabled(z10);
+        this.f16046e.setLabelFontScalingEnabled(z10);
     }
 
     public void setLabelMaxLines(int i10) {
-        this.f16045e.setLabelMaxLines(i10);
+        this.f16046e.setLabelMaxLines(i10);
     }
 
     public void setLabelVisibilityMode(int i10) {
-        if (this.f16045e.getLabelVisibilityMode() != i10) {
-            this.f16045e.setLabelVisibilityMode(i10);
-            this.f16046i.g(false);
+        if (this.f16046e.getLabelVisibilityMode() != i10) {
+            this.f16046e.setLabelVisibilityMode(i10);
+            this.f16047i.g(false);
         }
     }
 
@@ -471,16 +471,16 @@ public abstract class l extends FrameLayout {
     }
 
     public void setOnItemSelectedListener(c cVar) {
-        this.f16048p = cVar;
+        this.f16049p = cVar;
     }
 
     public void setSelectedItemId(int i10) {
-        MenuItem findItem = this.f16044d.findItem(i10);
+        MenuItem findItem = this.f16045d.findItem(i10);
         if (findItem != null) {
-            boolean P = this.f16044d.P(findItem, this.f16046i, 0);
+            boolean P = this.f16045d.P(findItem, this.f16047i, 0);
             if (findItem.isCheckable()) {
                 if (!P || findItem.isChecked()) {
-                    this.f16045e.setCheckedItem(findItem);
+                    this.f16046e.setCheckedItem(findItem);
                 }
             }
         }

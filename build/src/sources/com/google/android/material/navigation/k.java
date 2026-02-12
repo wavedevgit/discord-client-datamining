@@ -11,32 +11,32 @@ import android.widget.TextView;
 public class k extends FrameLayout implements g {
 
     /* renamed from: d  reason: collision with root package name */
-    private final TextView f16039d;
+    private final TextView f16040d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f16040e;
+    private boolean f16041e;
 
     /* renamed from: i  reason: collision with root package name */
-    boolean f16041i;
+    boolean f16042i;
 
     /* renamed from: o  reason: collision with root package name */
-    private androidx.appcompat.view.menu.g f16042o;
+    private androidx.appcompat.view.menu.g f16043o;
 
     /* renamed from: p  reason: collision with root package name */
-    private ColorStateList f16043p;
+    private ColorStateList f16044p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public k(Context context) {
         super(context);
         LayoutInflater.from(context).inflate(bh.h.f6881i, (ViewGroup) this, true);
-        this.f16039d = (TextView) findViewById(bh.f.R);
+        this.f16040d = (TextView) findViewById(bh.f.R);
     }
 
     private void a() {
         int i10;
-        androidx.appcompat.view.menu.g gVar = this.f16042o;
+        androidx.appcompat.view.menu.g gVar = this.f16043o;
         if (gVar != null) {
-            if (gVar.isVisible() && (this.f16040e || !this.f16041i)) {
+            if (gVar.isVisible() && (this.f16041e || !this.f16042i)) {
                 i10 = 0;
             } else {
                 i10 = 8;
@@ -47,9 +47,9 @@ public class k extends FrameLayout implements g {
 
     @Override // androidx.appcompat.view.menu.k.a
     public void c(androidx.appcompat.view.menu.g gVar, int i10) {
-        this.f16042o = gVar;
+        this.f16043o = gVar;
         gVar.setCheckable(false);
-        this.f16039d.setText(gVar.getTitle());
+        this.f16040d.setText(gVar.getTitle());
         a();
     }
 
@@ -60,7 +60,7 @@ public class k extends FrameLayout implements g {
 
     @Override // androidx.appcompat.view.menu.k.a
     public androidx.appcompat.view.menu.g getItemData() {
-        return this.f16042o;
+        return this.f16043o;
     }
 
     public void setCheckable(boolean z10) {
@@ -75,7 +75,7 @@ public class k extends FrameLayout implements g {
 
     @Override // com.google.android.material.navigation.g
     public void setExpanded(boolean z10) {
-        this.f16040e = z10;
+        this.f16041e = z10;
         a();
     }
 
@@ -84,22 +84,22 @@ public class k extends FrameLayout implements g {
 
     @Override // com.google.android.material.navigation.g
     public void setOnlyShowWhenExpanded(boolean z10) {
-        this.f16041i = z10;
+        this.f16042i = z10;
         a();
     }
 
     public void setTextAppearance(int i10) {
-        androidx.core.widget.j.q(this.f16039d, i10);
-        ColorStateList colorStateList = this.f16043p;
+        androidx.core.widget.j.q(this.f16040d, i10);
+        ColorStateList colorStateList = this.f16044p;
         if (colorStateList != null) {
-            this.f16039d.setTextColor(colorStateList);
+            this.f16040d.setTextColor(colorStateList);
         }
     }
 
     public void setTextColor(ColorStateList colorStateList) {
-        this.f16043p = colorStateList;
+        this.f16044p = colorStateList;
         if (colorStateList != null) {
-            this.f16039d.setTextColor(colorStateList);
+            this.f16040d.setTextColor(colorStateList);
         }
     }
 

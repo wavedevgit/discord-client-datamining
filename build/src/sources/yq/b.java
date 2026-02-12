@@ -11,10 +11,10 @@ public final class b implements Parcelable {
     public static final Parcelable.Creator<b> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Date f55720d;
+    private final Date f55721d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Date f55721e;
+    private final Date f55722e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -33,8 +33,8 @@ public final class b implements Parcelable {
     }
 
     public b(Date date, Date date2) {
-        this.f55720d = date;
-        this.f55721e = date2;
+        this.f55721d = date;
+        this.f55722e = date2;
     }
 
     @Override // android.os.Parcelable
@@ -50,7 +50,7 @@ public final class b implements Parcelable {
             return false;
         }
         b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f55720d, bVar.f55720d) && Intrinsics.areEqual(this.f55721e, bVar.f55721e)) {
+        if (Intrinsics.areEqual(this.f55721d, bVar.f55721d) && Intrinsics.areEqual(this.f55722e, bVar.f55722e)) {
             return true;
         }
         return false;
@@ -58,7 +58,7 @@ public final class b implements Parcelable {
 
     public int hashCode() {
         int hashCode;
-        Date date = this.f55720d;
+        Date date = this.f55721d;
         int i10 = 0;
         if (date == null) {
             hashCode = 0;
@@ -66,7 +66,7 @@ public final class b implements Parcelable {
             hashCode = date.hashCode();
         }
         int i11 = hashCode * 31;
-        Date date2 = this.f55721e;
+        Date date2 = this.f55722e;
         if (date2 != null) {
             i10 = date2.hashCode();
         }
@@ -74,15 +74,15 @@ public final class b implements Parcelable {
     }
 
     public String toString() {
-        Date date = this.f55720d;
-        Date date2 = this.f55721e;
+        Date date = this.f55721d;
+        Date date2 = this.f55722e;
         return "CollectedGovernmentIdDetails(dateOfBirth=" + date + ", expirationDate=" + date2 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeSerializable(this.f55720d);
-        dest.writeSerializable(this.f55721e);
+        dest.writeSerializable(this.f55721d);
+        dest.writeSerializable(this.f55722e);
     }
 }

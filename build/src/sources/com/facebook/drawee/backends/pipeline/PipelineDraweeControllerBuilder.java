@@ -21,34 +21,34 @@ import za.b;
 public class PipelineDraweeControllerBuilder extends AbstractDraweeControllerBuilder {
 
     /* renamed from: t  reason: collision with root package name */
-    private final ImagePipeline f10563t;
+    private final ImagePipeline f10564t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final f f10564u;
+    private final f f10565u;
 
     /* renamed from: v  reason: collision with root package name */
-    private e f10565v;
+    private e f10566v;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f10566a;
+        static final /* synthetic */ int[] f10567a;
 
         static {
             int[] iArr = new int[AbstractDraweeControllerBuilder.c.values().length];
-            f10566a = iArr;
+            f10567a = iArr;
             try {
                 iArr[AbstractDraweeControllerBuilder.c.FULL_FETCH.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f10566a[AbstractDraweeControllerBuilder.c.DISK_CACHE.ordinal()] = 2;
+                f10567a[AbstractDraweeControllerBuilder.c.DISK_CACHE.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f10566a[AbstractDraweeControllerBuilder.c.BITMAP_MEMORY_CACHE.ordinal()] = 3;
+                f10567a[AbstractDraweeControllerBuilder.c.BITMAP_MEMORY_CACHE.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -56,12 +56,12 @@ public class PipelineDraweeControllerBuilder extends AbstractDraweeControllerBui
 
     public PipelineDraweeControllerBuilder(Context context, f fVar, ImagePipeline imagePipeline, Set set, Set set2) {
         super(context, set, set2);
-        this.f10563t = imagePipeline;
-        this.f10564u = fVar;
+        this.f10564t = imagePipeline;
+        this.f10565u = fVar;
     }
 
     public static ImageRequest.RequestLevel I(AbstractDraweeControllerBuilder.c cVar) {
-        int i10 = a.f10566a[cVar.ordinal()];
+        int i10 = a.f10567a[cVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
@@ -76,7 +76,7 @@ public class PipelineDraweeControllerBuilder extends AbstractDraweeControllerBui
 
     private CacheKey J() {
         ImageRequest imageRequest = (ImageRequest) n();
-        k r10 = this.f10563t.r();
+        k r10 = this.f10564t.r();
         if (r10 != null && imageRequest != null) {
             if (imageRequest.getPostprocessor() != null) {
                 return r10.getPostprocessedBitmapCacheKey(imageRequest, f());
@@ -90,7 +90,7 @@ public class PipelineDraweeControllerBuilder extends AbstractDraweeControllerBui
     @Override // com.facebook.drawee.controller.AbstractDraweeControllerBuilder
     /* renamed from: K */
     public DataSource i(DraweeController draweeController, String str, ImageRequest imageRequest, Object obj, AbstractDraweeControllerBuilder.c cVar) {
-        return this.f10563t.m(imageRequest, obj, I(cVar), L(draweeController), str);
+        return this.f10564t.m(imageRequest, obj, I(cVar), L(draweeController), str);
     }
 
     protected RequestListener L(DraweeController draweeController) {
@@ -114,10 +114,10 @@ public class PipelineDraweeControllerBuilder extends AbstractDraweeControllerBui
             if (p10 instanceof com.facebook.drawee.backends.pipeline.a) {
                 c10 = (com.facebook.drawee.backends.pipeline.a) p10;
             } else {
-                c10 = this.f10564u.c();
+                c10 = this.f10565u.c();
             }
             com.facebook.drawee.backends.pipeline.a aVar = c10;
-            aVar.m0(y(aVar, e10), e10, J(), f(), this.f10565v);
+            aVar.m0(y(aVar, e10), e10, J(), f(), this.f10566v);
             aVar.n0(null, this);
             if (b.d()) {
                 b.b();

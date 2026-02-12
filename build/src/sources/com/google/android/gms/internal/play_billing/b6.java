@@ -3,7 +3,7 @@ package com.google.android.gms.internal.play_billing;
 final class b6 implements u1 {
 
     /* renamed from: a  reason: collision with root package name */
-    static final u1 f14874a = new b6();
+    static final u1 f14875a = new b6();
 
     private b6() {
     }

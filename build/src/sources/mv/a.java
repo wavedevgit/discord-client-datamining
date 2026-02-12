@@ -11,14 +11,14 @@ import ov.b;
 public final class a implements cv.b, c, ov.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f36665a = new a();
+    public static final a f36666a = new a();
 
     /* renamed from: mv.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class C0520a extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final C0520a f36666d = new C0520a();
+        public static final C0520a f36667d = new C0520a();
 
         C0520a() {
             super(1);
@@ -45,6 +45,6 @@ public final class a implements cv.b, c, ov.b {
 
     @Override // cv.b
     public Object f(Object obj, Object obj2) {
-        return a(b(obj), C0520a.f36666d);
+        return a(b(obj), C0520a.f36667d);
     }
 }

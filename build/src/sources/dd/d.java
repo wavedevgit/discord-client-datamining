@@ -12,7 +12,7 @@ import uc.y;
 public class d implements k {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final p f21582d = new p() { // from class: dd.c
+    public static final p f21583d = new p() { // from class: dd.c
         @Override // uc.p
         public final k[] b() {
             return d.b();
@@ -20,13 +20,13 @@ public class d implements k {
     };
 
     /* renamed from: a  reason: collision with root package name */
-    private m f21583a;
+    private m f21584a;
 
     /* renamed from: b  reason: collision with root package name */
-    private i f21584b;
+    private i f21585b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f21585c;
+    private boolean f21586c;
 
     public static /* synthetic */ k[] b() {
         return new k[]{new d()};
@@ -39,16 +39,16 @@ public class d implements k {
 
     private boolean f(l lVar) {
         f fVar = new f();
-        if (fVar.a(lVar, true) && (fVar.f21592b & 2) == 2) {
-            int min = Math.min(fVar.f21599i, 8);
+        if (fVar.a(lVar, true) && (fVar.f21593b & 2) == 2) {
+            int min = Math.min(fVar.f21600i, 8);
             h0 h0Var = new h0(min);
             lVar.n(h0Var.e(), 0, min);
             if (b.p(e(h0Var))) {
-                this.f21584b = new b();
+                this.f21585b = new b();
             } else if (j.r(e(h0Var))) {
-                this.f21584b = new j();
+                this.f21585b = new j();
             } else if (h.o(e(h0Var))) {
-                this.f21584b = new h();
+                this.f21585b = new h();
             }
             return true;
         }
@@ -57,7 +57,7 @@ public class d implements k {
 
     @Override // uc.k
     public void a(long j10, long j11) {
-        i iVar = this.f21584b;
+        i iVar = this.f21585b;
         if (iVar != null) {
             iVar.m(j10, j11);
         }
@@ -65,7 +65,7 @@ public class d implements k {
 
     @Override // uc.k
     public void c(m mVar) {
-        this.f21583a = mVar;
+        this.f21584a = mVar;
     }
 
     @Override // uc.k
@@ -79,21 +79,21 @@ public class d implements k {
 
     @Override // uc.k
     public int h(l lVar, y yVar) {
-        oe.a.i(this.f21583a);
-        if (this.f21584b == null) {
+        oe.a.i(this.f21584a);
+        if (this.f21585b == null) {
             if (f(lVar)) {
                 lVar.e();
             } else {
                 throw l0.a("Failed to determine bitstream type", null);
             }
         }
-        if (!this.f21585c) {
-            b0 c10 = this.f21583a.c(0, 1);
-            this.f21583a.q();
-            this.f21584b.d(this.f21583a, c10);
-            this.f21585c = true;
+        if (!this.f21586c) {
+            b0 c10 = this.f21584a.c(0, 1);
+            this.f21584a.q();
+            this.f21585b.d(this.f21584a, c10);
+            this.f21586c = true;
         }
-        return this.f21584b.g(lVar, yVar);
+        return this.f21585b.g(lVar, yVar);
     }
 
     @Override // uc.k

@@ -15,19 +15,19 @@ import org.jetbrains.annotations.NotNull;
 public final class OneTimeLinkCodeForPersonasRequest_TransitionParamsJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20842a;
+    private final m.b f20843a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f20843b;
+    private final h f20844b;
 
     public OneTimeLinkCodeForPersonasRequest_TransitionParamsJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("componentData");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20842a = a10;
+        this.f20843a = a10;
         h f10 = moshi.f(a0.j(List.class, OneTimeLinkCodeForPersonasRequest.NamedComponentParam.class), x0.d(), "componentData");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20843b = f10;
+        this.f20844b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,10 +37,10 @@ public final class OneTimeLinkCodeForPersonasRequest_TransitionParamsJsonAdapter
         reader.u();
         List list = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20842a);
+            int J = reader.J(this.f20843a);
             if (J != -1) {
                 if (J == 0) {
-                    list = (List) this.f20843b.fromJson(reader);
+                    list = (List) this.f20844b.fromJson(reader);
                 }
             } else {
                 reader.z0();
@@ -58,7 +58,7 @@ public final class OneTimeLinkCodeForPersonasRequest_TransitionParamsJsonAdapter
         if (transitionParams != null) {
             writer.i();
             writer.J("componentData");
-            this.f20843b.toJson(writer, transitionParams.a());
+            this.f20844b.toJson(writer, transitionParams.a());
             writer.s();
             return;
         }

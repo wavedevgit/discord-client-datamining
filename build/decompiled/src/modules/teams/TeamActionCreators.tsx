@@ -22,13 +22,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot2 = var1;
     var1 = {};
     var3 = function() {
-        _fun117260: for (var _fun117260_ip = 0;;) switch (_fun117260_ip) {
+        _fun115914: for (var _fun115914_ip = 0;;) switch (_fun115914_ip) {
             case 0:
                 var4 = arguments[0];
                 var2 = undefined;
                 if (!(var4 === var2)) {
-                    _fun117260_ip = 11;
-                    continue _fun117260
+                    _fun115914_ip = 11;
+                    continue _fun115914
                 }
             case 9:
                 var4 = false;

@@ -5,7 +5,7 @@ import bj.c;
 final class lc implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final lc f39446a = new lc();
+    static final lc f39447a = new lc();
 
     static {
         c.b a10 = bj.c.a("language");

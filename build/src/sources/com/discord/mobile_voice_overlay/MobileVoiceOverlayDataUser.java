@@ -65,7 +65,7 @@ public final class MobileVoiceOverlayDataUser {
 
     public static final /* synthetic */ void write$Self$mobile_voice_overlay_release(MobileVoiceOverlayDataUser mobileVoiceOverlayDataUser, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         compositeEncoder.k(serialDescriptor, 0, UserId$$serializer.INSTANCE, UserId.m1136boximpl(mobileVoiceOverlayDataUser.userId));
-        compositeEncoder.o(serialDescriptor, 1, n2.f50032a, mobileVoiceOverlayDataUser.avatar);
+        compositeEncoder.o(serialDescriptor, 1, n2.f50033a, mobileVoiceOverlayDataUser.avatar);
         compositeEncoder.x(serialDescriptor, 2, mobileVoiceOverlayDataUser.speaking);
         compositeEncoder.w(serialDescriptor, 3, mobileVoiceOverlayDataUser.discriminator);
     }

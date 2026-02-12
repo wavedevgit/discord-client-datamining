@@ -27,16 +27,16 @@ public class MaterialButtonToggleGroup extends d {
     private Set B;
 
     /* renamed from: w  reason: collision with root package name */
-    private final LinkedHashSet f15394w;
+    private final LinkedHashSet f15395w;
 
     /* renamed from: x  reason: collision with root package name */
-    private boolean f15395x;
+    private boolean f15396x;
 
     /* renamed from: y  reason: collision with root package name */
-    private boolean f15396y;
+    private boolean f15397y;
 
     /* renamed from: z  reason: collision with root package name */
-    private boolean f15397z;
+    private boolean f15398z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends androidx.core.view.a {
@@ -62,7 +62,7 @@ public class MaterialButtonToggleGroup extends d {
     @NonNull
     private String getChildrenA11yClassName() {
         Class cls;
-        if (this.f15396y) {
+        if (this.f15397y) {
             cls = RadioButton.class;
         } else {
             cls = ToggleButton.class;
@@ -94,12 +94,12 @@ public class MaterialButtonToggleGroup extends d {
         }
         HashSet hashSet = new HashSet(this.B);
         if (z10 && !hashSet.contains(Integer.valueOf(i10))) {
-            if (this.f15396y && !hashSet.isEmpty()) {
+            if (this.f15397y && !hashSet.isEmpty()) {
                 hashSet.clear();
             }
             hashSet.add(Integer.valueOf(i10));
         } else if (!z10 && hashSet.contains(Integer.valueOf(i10))) {
-            if (!this.f15397z || hashSet.size() > 1) {
+            if (!this.f15398z || hashSet.size() > 1) {
                 hashSet.remove(Integer.valueOf(i10));
             }
         } else {
@@ -116,7 +116,7 @@ public class MaterialButtonToggleGroup extends d {
     }
 
     private void t(int i10, boolean z10) {
-        Iterator it = this.f15394w.iterator();
+        Iterator it = this.f15395w.iterator();
         while (it.hasNext()) {
             ((b) it.next()).a(this, i10, z10);
         }
@@ -142,9 +142,9 @@ public class MaterialButtonToggleGroup extends d {
     private void x(int i10, boolean z10) {
         View findViewById = findViewById(i10);
         if (findViewById instanceof MaterialButton) {
-            this.f15395x = true;
+            this.f15396x = true;
             ((MaterialButton) findViewById).setChecked(z10);
-            this.f15395x = false;
+            this.f15396x = false;
         }
     }
 
@@ -182,7 +182,7 @@ public class MaterialButtonToggleGroup extends d {
     }
 
     public int getCheckedButtonId() {
-        if (this.f15396y && !this.B.isEmpty()) {
+        if (this.f15397y && !this.B.isEmpty()) {
             return ((Integer) this.B.iterator().next()).intValue();
         }
         return -1;
@@ -224,7 +224,7 @@ public class MaterialButtonToggleGroup extends d {
     }
 
     public void q(b bVar) {
-        this.f15394w.add(bVar);
+        this.f15395w.add(bVar);
     }
 
     public void s() {
@@ -232,24 +232,24 @@ public class MaterialButtonToggleGroup extends d {
     }
 
     public void setSelectionRequired(boolean z10) {
-        this.f15397z = z10;
+        this.f15398z = z10;
     }
 
     public void setSingleSelection(boolean z10) {
-        if (this.f15396y != z10) {
-            this.f15396y = z10;
+        if (this.f15397y != z10) {
+            this.f15397y = z10;
             s();
         }
         z();
     }
 
     public boolean v() {
-        return this.f15396y;
+        return this.f15397y;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void w(MaterialButton materialButton, boolean z10) {
-        if (this.f15395x) {
+        if (this.f15396x) {
             return;
         }
         r(materialButton.getId(), z10);
@@ -268,9 +268,9 @@ public class MaterialButtonToggleGroup extends d {
             r6.<init>(r7, r8, r9)
             java.util.LinkedHashSet r7 = new java.util.LinkedHashSet
             r7.<init>()
-            r6.f15394w = r7
+            r6.f15395w = r7
             r7 = 0
-            r6.f15395x = r7
+            r6.f15396x = r7
             java.util.HashSet r0 = new java.util.HashSet
             r0.<init>()
             r6.B = r0
@@ -289,14 +289,14 @@ public class MaterialButtonToggleGroup extends d {
             r6.A = r9
             int r9 = bh.l.f7115q3
             boolean r7 = r8.getBoolean(r9, r7)
-            r6.f15397z = r7
-            th.p r7 = r6.f15408q
+            r6.f15398z = r7
+            th.p r7 = r6.f15409q
             if (r7 != 0) goto L52
             th.a r7 = new th.a
             r9 = 0
             r7.<init>(r9)
             th.p r7 = th.p.c(r7)
-            r6.f15408q = r7
+            r6.f15409q = r7
         L52:
             int r7 = bh.l.f7096o3
             r9 = 1

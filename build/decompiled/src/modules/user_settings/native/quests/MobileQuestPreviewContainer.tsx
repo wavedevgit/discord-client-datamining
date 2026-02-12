@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/quests/MobileQuestPreviewContainer.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun84688: for (var _fun84688_ip = 0;;) switch (_fun84688_ip) {
+        _fun83487: for (var _fun83487_ip = 0;;) switch (_fun83487_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.children;
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = null;
                 var6 = var6 != var9;
                 if (!var6) {
-                    _fun84688_ip = 116;
-                    continue _fun84688
+                    _fun83487_ip = 116;
+                    continue _fun83487
                 }
             case 54:
                 var8 = _closure1_slot3;

@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class TransitionInquiryRequest_MetaJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20861a;
+    private final m.b f20862a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f20862b;
+    private final h f20863b;
 
     public TransitionInquiryRequest_MetaJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("fromComponent", "fromStep");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20861a = a10;
+        this.f20862a = a10;
         h f10 = moshi.f(String.class, x0.d(), "fromComponent");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20862b = f10;
+        this.f20863b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,14 +37,14 @@ public final class TransitionInquiryRequest_MetaJsonAdapter extends h {
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20861a);
+            int J = reader.J(this.f20862a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (str2 = (String) this.f20862b.fromJson(reader)) == null) {
+                    if (J == 1 && (str2 = (String) this.f20863b.fromJson(reader)) == null) {
                         throw c.x("fromStep", "fromStep", reader);
                     }
                 } else {
-                    str = (String) this.f20862b.fromJson(reader);
+                    str = (String) this.f20863b.fromJson(reader);
                     if (str == null) {
                         throw c.x("fromComponent", "fromComponent", reader);
                     }
@@ -71,9 +71,9 @@ public final class TransitionInquiryRequest_MetaJsonAdapter extends h {
         if (meta != null) {
             writer.i();
             writer.J("fromComponent");
-            this.f20862b.toJson(writer, meta.a());
+            this.f20863b.toJson(writer, meta.a());
             writer.J("fromStep");
-            this.f20862b.toJson(writer, meta.b());
+            this.f20863b.toJson(writer, meta.b());
             writer.s();
             return;
         }

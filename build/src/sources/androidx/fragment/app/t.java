@@ -33,8 +33,8 @@ abstract class t {
         int a10 = a(fragment, z10, z11);
         fragment.setAnimations(0, 0, 0, 0);
         ViewGroup viewGroup = fragment.mContainer;
-        if (viewGroup != null && viewGroup.getTag(f3.b.f23555c) != null) {
-            fragment.mContainer.setTag(f3.b.f23555c, null);
+        if (viewGroup != null && viewGroup.getTag(f3.b.f23556c) != null) {
+            fragment.mContainer.setTag(f3.b.f23556c, null);
         }
         ViewGroup viewGroup2 = fragment.mContainer;
         if (viewGroup2 != null && viewGroup2.getLayoutTransition() != null) {
@@ -103,9 +103,9 @@ abstract class t {
                         }
                         return c(context, 16842937);
                     } else if (z10) {
-                        return f3.a.f23549c;
+                        return f3.a.f23550c;
                     } else {
-                        return f3.a.f23550d;
+                        return f3.a.f23551d;
                     }
                 } else if (z10) {
                     return c(context, 16842938);
@@ -113,14 +113,14 @@ abstract class t {
                     return c(context, 16842939);
                 }
             } else if (z10) {
-                return f3.a.f23547a;
+                return f3.a.f23548a;
             } else {
-                return f3.a.f23548b;
+                return f3.a.f23549b;
             }
         } else if (z10) {
-            return f3.a.f23551e;
+            return f3.a.f23552e;
         } else {
-            return f3.a.f23552f;
+            return f3.a.f23553f;
         }
     }
 

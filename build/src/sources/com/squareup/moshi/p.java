@@ -7,22 +7,22 @@ import okio.BufferedSink;
 final class p extends t {
 
     /* renamed from: x  reason: collision with root package name */
-    private static final String[] f18828x = new String[IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT];
+    private static final String[] f18829x = new String[IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT];
 
     /* renamed from: u  reason: collision with root package name */
-    private final BufferedSink f18829u;
+    private final BufferedSink f18830u;
 
     /* renamed from: v  reason: collision with root package name */
-    private String f18830v = ":";
+    private String f18831v = ":";
 
     /* renamed from: w  reason: collision with root package name */
-    private String f18831w;
+    private String f18832w;
 
     static {
         for (int i10 = 0; i10 <= 31; i10++) {
-            f18828x[i10] = String.format("\\u%04x", Integer.valueOf(i10));
+            f18829x[i10] = String.format("\\u%04x", Integer.valueOf(i10));
         }
-        String[] strArr = f18828x;
+        String[] strArr = f18829x;
         strArr[34] = "\\\"";
         strArr[92] = "\\\\";
         strArr[9] = "\\t";
@@ -35,7 +35,7 @@ final class p extends t {
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(BufferedSink bufferedSink) {
         if (bufferedSink != null) {
-            this.f18829u = bufferedSink;
+            this.f18830u = bufferedSink;
             E0(6);
             return;
         }
@@ -43,17 +43,17 @@ final class p extends t {
     }
 
     private void B1() {
-        if (this.f18831w != null) {
+        if (this.f18832w != null) {
             a1();
-            z1(this.f18829u, this.f18831w);
-            this.f18831w = null;
+            z1(this.f18830u, this.f18832w);
+            this.f18832w = null;
         }
     }
 
     private void a1() {
         int z02 = z0();
         if (z02 == 5) {
-            this.f18829u.writeByte(44);
+            this.f18830u.writeByte(44);
         } else if (z02 != 3) {
             throw new IllegalStateException("Nesting problem.");
         }
@@ -71,7 +71,7 @@ final class p extends t {
                         i10 = 7;
                         if (z02 != 6) {
                             if (z02 == 7) {
-                                if (!this.f18857q) {
+                                if (!this.f18858q) {
                                     throw new IllegalStateException("JSON must have only one top-level value.");
                                 }
                             } else {
@@ -82,12 +82,12 @@ final class p extends t {
                         throw new IllegalStateException("Sink from valueSink() was not closed");
                     }
                 } else {
-                    this.f18829u.q0(this.f18830v);
+                    this.f18830u.q0(this.f18831v);
                     i10 = 5;
                 }
                 F0(i10);
             }
-            this.f18829u.writeByte(44);
+            this.f18830u.writeByte(44);
         }
         w1();
         F0(i10);
@@ -98,53 +98,53 @@ final class p extends t {
         if (z02 != i11 && z02 != i10) {
             throw new IllegalStateException("Nesting problem.");
         }
-        if (this.f18831w == null) {
-            int i12 = this.f18852d;
-            int i13 = this.f18860t;
+        if (this.f18832w == null) {
+            int i12 = this.f18853d;
+            int i13 = this.f18861t;
             if (i12 == (~i13)) {
-                this.f18860t = ~i13;
+                this.f18861t = ~i13;
                 return this;
             }
             int i14 = i12 - 1;
-            this.f18852d = i14;
-            this.f18854i[i14] = null;
-            int[] iArr = this.f18855o;
+            this.f18853d = i14;
+            this.f18855i[i14] = null;
+            int[] iArr = this.f18856o;
             int i15 = i12 - 2;
             iArr[i15] = iArr[i15] + 1;
             if (z02 == i11) {
                 w1();
             }
-            this.f18829u.writeByte(c10);
+            this.f18830u.writeByte(c10);
             return this;
         }
-        throw new IllegalStateException("Dangling name: " + this.f18831w);
+        throw new IllegalStateException("Dangling name: " + this.f18832w);
     }
 
     private void w1() {
-        if (this.f18856p != null) {
-            this.f18829u.writeByte(10);
-            int i10 = this.f18852d;
+        if (this.f18857p != null) {
+            this.f18830u.writeByte(10);
+            int i10 = this.f18853d;
             for (int i11 = 1; i11 < i10; i11++) {
-                this.f18829u.q0(this.f18856p);
+                this.f18830u.q0(this.f18857p);
             }
         }
     }
 
     private t x1(int i10, int i11, char c10) {
-        int i12 = this.f18852d;
-        int i13 = this.f18860t;
+        int i12 = this.f18853d;
+        int i13 = this.f18861t;
         if (i12 == i13) {
-            int[] iArr = this.f18853e;
+            int[] iArr = this.f18854e;
             if (iArr[i12 - 1] == i10 || iArr[i12 - 1] == i11) {
-                this.f18860t = ~i13;
+                this.f18861t = ~i13;
                 return this;
             }
         }
         b1();
         m();
         E0(i10);
-        this.f18855o[this.f18852d - 1] = 0;
-        this.f18829u.writeByte(c10);
+        this.f18856o[this.f18853d - 1] = 0;
+        this.f18830u.writeByte(c10);
         return this;
     }
 
@@ -156,7 +156,7 @@ final class p extends t {
     */
     public static void z1(okio.BufferedSink r7, java.lang.String r8) {
         /*
-            java.lang.String[] r0 = com.squareup.moshi.p.f18828x
+            java.lang.String[] r0 = com.squareup.moshi.p.f18829x
             r1 = 34
             r7.writeByte(r1)
             int r2 = r8.length()
@@ -207,17 +207,17 @@ final class p extends t {
         } else {
             str2 = ":";
         }
-        this.f18830v = str2;
+        this.f18831v = str2;
     }
 
     @Override // com.squareup.moshi.t
     public t J(String str) {
         if (str != null) {
-            if (this.f18852d != 0) {
+            if (this.f18853d != 0) {
                 int z02 = z0();
-                if ((z02 == 3 || z02 == 5) && this.f18831w == null && !this.f18859s) {
-                    this.f18831w = str;
-                    this.f18854i[this.f18852d - 1] = str;
+                if ((z02 == 3 || z02 == 5) && this.f18832w == null && !this.f18860s) {
+                    this.f18832w = str;
+                    this.f18855i[this.f18853d - 1] = str;
                     return this;
                 }
                 throw new IllegalStateException("Nesting problem.");
@@ -229,17 +229,17 @@ final class p extends t {
 
     @Override // com.squareup.moshi.t
     public t L0(double d10) {
-        if (!this.f18857q && (Double.isNaN(d10) || Double.isInfinite(d10))) {
+        if (!this.f18858q && (Double.isNaN(d10) || Double.isInfinite(d10))) {
             throw new IllegalArgumentException("Numeric values must be finite, but was " + d10);
-        } else if (this.f18859s) {
-            this.f18859s = false;
+        } else if (this.f18860s) {
+            this.f18860s = false;
             return J(Double.toString(d10));
         } else {
             B1();
             b1();
-            this.f18829u.q0(Double.toString(d10));
-            int[] iArr = this.f18855o;
-            int i10 = this.f18852d - 1;
+            this.f18830u.q0(Double.toString(d10));
+            int[] iArr = this.f18856o;
+            int i10 = this.f18853d - 1;
             iArr[i10] = iArr[i10] + 1;
             return this;
         }
@@ -247,15 +247,15 @@ final class p extends t {
 
     @Override // com.squareup.moshi.t
     public t N0(long j10) {
-        if (this.f18859s) {
-            this.f18859s = false;
+        if (this.f18860s) {
+            this.f18860s = false;
             return J(Long.toString(j10));
         }
         B1();
         b1();
-        this.f18829u.q0(Long.toString(j10));
-        int[] iArr = this.f18855o;
-        int i10 = this.f18852d - 1;
+        this.f18830u.q0(Long.toString(j10));
+        int[] iArr = this.f18856o;
+        int i10 = this.f18853d - 1;
         iArr[i10] = iArr[i10] + 1;
         return this;
     }
@@ -270,19 +270,19 @@ final class p extends t {
 
     @Override // com.squareup.moshi.t
     public t Q() {
-        if (!this.f18859s) {
-            if (this.f18831w != null) {
-                if (this.f18858r) {
+        if (!this.f18860s) {
+            if (this.f18832w != null) {
+                if (this.f18859r) {
                     B1();
                 } else {
-                    this.f18831w = null;
+                    this.f18832w = null;
                     return this;
                 }
             }
             b1();
-            this.f18829u.q0("null");
-            int[] iArr = this.f18855o;
-            int i10 = this.f18852d - 1;
+            this.f18830u.q0("null");
+            int[] iArr = this.f18856o;
+            int i10 = this.f18853d - 1;
             iArr[i10] = iArr[i10] + 1;
             return this;
         }
@@ -295,17 +295,17 @@ final class p extends t {
             return Q();
         }
         String obj = number.toString();
-        if (!this.f18857q && (obj.equals("-Infinity") || obj.equals("Infinity") || obj.equals("NaN"))) {
+        if (!this.f18858q && (obj.equals("-Infinity") || obj.equals("Infinity") || obj.equals("NaN"))) {
             throw new IllegalArgumentException("Numeric values must be finite, but was " + number);
-        } else if (this.f18859s) {
-            this.f18859s = false;
+        } else if (this.f18860s) {
+            this.f18860s = false;
             return J(obj);
         } else {
             B1();
             b1();
-            this.f18829u.q0(obj);
-            int[] iArr = this.f18855o;
-            int i10 = this.f18852d - 1;
+            this.f18830u.q0(obj);
+            int[] iArr = this.f18856o;
+            int i10 = this.f18853d - 1;
             iArr[i10] = iArr[i10] + 1;
             return this;
         }
@@ -316,15 +316,15 @@ final class p extends t {
         if (str == null) {
             return Q();
         }
-        if (this.f18859s) {
-            this.f18859s = false;
+        if (this.f18860s) {
+            this.f18860s = false;
             return J(str);
         }
         B1();
         b1();
-        z1(this.f18829u, str);
-        int[] iArr = this.f18855o;
-        int i10 = this.f18852d - 1;
+        z1(this.f18830u, str);
+        int[] iArr = this.f18856o;
+        int i10 = this.f18853d - 1;
         iArr[i10] = iArr[i10] + 1;
         return this;
     }
@@ -332,18 +332,18 @@ final class p extends t {
     @Override // com.squareup.moshi.t
     public t Z0(boolean z10) {
         String str;
-        if (!this.f18859s) {
+        if (!this.f18860s) {
             B1();
             b1();
-            BufferedSink bufferedSink = this.f18829u;
+            BufferedSink bufferedSink = this.f18830u;
             if (z10) {
                 str = "true";
             } else {
                 str = "false";
             }
             bufferedSink.q0(str);
-            int[] iArr = this.f18855o;
-            int i10 = this.f18852d - 1;
+            int[] iArr = this.f18856o;
+            int i10 = this.f18853d - 1;
             iArr[i10] = iArr[i10] + 1;
             return this;
         }
@@ -352,7 +352,7 @@ final class p extends t {
 
     @Override // com.squareup.moshi.t
     public t a() {
-        if (!this.f18859s) {
+        if (!this.f18860s) {
             B1();
             return x1(1, 2, '[');
         }
@@ -361,10 +361,10 @@ final class p extends t {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f18829u.close();
-        int i10 = this.f18852d;
-        if (i10 <= 1 && (i10 != 1 || this.f18853e[i10 - 1] == 7)) {
-            this.f18852d = 0;
+        this.f18830u.close();
+        int i10 = this.f18853d;
+        if (i10 <= 1 && (i10 != 1 || this.f18854e[i10 - 1] == 7)) {
+            this.f18853d = 0;
             return;
         }
         throw new IOException("Incomplete document");
@@ -372,8 +372,8 @@ final class p extends t {
 
     @Override // java.io.Flushable
     public void flush() {
-        if (this.f18852d != 0) {
-            this.f18829u.flush();
+        if (this.f18853d != 0) {
+            this.f18830u.flush();
             return;
         }
         throw new IllegalStateException("JsonWriter is closed.");
@@ -381,7 +381,7 @@ final class p extends t {
 
     @Override // com.squareup.moshi.t
     public t i() {
-        if (!this.f18859s) {
+        if (!this.f18860s) {
             B1();
             return x1(3, 5, '{');
         }
@@ -395,7 +395,7 @@ final class p extends t {
 
     @Override // com.squareup.moshi.t
     public t s() {
-        this.f18859s = false;
+        this.f18860s = false;
         return f1(3, 5, '}');
     }
 }

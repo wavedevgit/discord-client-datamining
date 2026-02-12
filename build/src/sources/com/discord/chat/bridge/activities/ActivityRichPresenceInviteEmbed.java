@@ -108,12 +108,12 @@ public final class ActivityRichPresenceInviteEmbed {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$0() {
-        return new f(n2.f50032a);
+        return new f(n2.f50033a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$1() {
-        return new f(n2.f50032a);
+        return new f(n2.f50033a);
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -151,55 +151,55 @@ public final class ActivityRichPresenceInviteEmbed {
     public static final /* synthetic */ void write$Self$chat_release(ActivityRichPresenceInviteEmbed activityRichPresenceInviteEmbed, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         Lazy[] lazyArr = $childSerializers;
         if (compositeEncoder.z(serialDescriptor, 0) || !Intrinsics.areEqual(activityRichPresenceInviteEmbed.ctaButtonEnabled, Boolean.FALSE)) {
-            compositeEncoder.o(serialDescriptor, 0, h.f49996a, activityRichPresenceInviteEmbed.ctaButtonEnabled);
+            compositeEncoder.o(serialDescriptor, 0, h.f49997a, activityRichPresenceInviteEmbed.ctaButtonEnabled);
         }
         if (compositeEncoder.z(serialDescriptor, 1) || activityRichPresenceInviteEmbed.ctaButtonText != null) {
-            compositeEncoder.o(serialDescriptor, 1, n2.f50032a, activityRichPresenceInviteEmbed.ctaButtonText);
+            compositeEncoder.o(serialDescriptor, 1, n2.f50033a, activityRichPresenceInviteEmbed.ctaButtonText);
         }
         if (compositeEncoder.z(serialDescriptor, 2) || !Intrinsics.areEqual(activityRichPresenceInviteEmbed.ctaButtonIsLoading, Boolean.FALSE)) {
-            compositeEncoder.o(serialDescriptor, 2, h.f49996a, activityRichPresenceInviteEmbed.ctaButtonIsLoading);
+            compositeEncoder.o(serialDescriptor, 2, h.f49997a, activityRichPresenceInviteEmbed.ctaButtonIsLoading);
         }
         if (compositeEncoder.z(serialDescriptor, 3) || activityRichPresenceInviteEmbed.footerLabel != null) {
-            compositeEncoder.o(serialDescriptor, 3, n2.f50032a, activityRichPresenceInviteEmbed.footerLabel);
+            compositeEncoder.o(serialDescriptor, 3, n2.f50033a, activityRichPresenceInviteEmbed.footerLabel);
         }
         if (compositeEncoder.z(serialDescriptor, 4) || activityRichPresenceInviteEmbed.gradientColors != null) {
             compositeEncoder.o(serialDescriptor, 4, (qt.o) lazyArr[4].getValue(), activityRichPresenceInviteEmbed.gradientColors);
         }
         if (compositeEncoder.z(serialDescriptor, 5) || activityRichPresenceInviteEmbed.headerText != null) {
-            compositeEncoder.o(serialDescriptor, 5, n2.f50032a, activityRichPresenceInviteEmbed.headerText);
+            compositeEncoder.o(serialDescriptor, 5, n2.f50033a, activityRichPresenceInviteEmbed.headerText);
         }
         if (compositeEncoder.z(serialDescriptor, 6) || activityRichPresenceInviteEmbed.iconSrc != null) {
-            compositeEncoder.o(serialDescriptor, 6, n2.f50032a, activityRichPresenceInviteEmbed.iconSrc);
+            compositeEncoder.o(serialDescriptor, 6, n2.f50033a, activityRichPresenceInviteEmbed.iconSrc);
         }
         if (compositeEncoder.z(serialDescriptor, 7) || activityRichPresenceInviteEmbed.isActive != null) {
-            compositeEncoder.o(serialDescriptor, 7, h.f49996a, activityRichPresenceInviteEmbed.isActive);
+            compositeEncoder.o(serialDescriptor, 7, h.f49997a, activityRichPresenceInviteEmbed.isActive);
         }
         if (compositeEncoder.z(serialDescriptor, 8) || !Intrinsics.areEqual(activityRichPresenceInviteEmbed.isPlatformSupported, Boolean.FALSE)) {
-            compositeEncoder.o(serialDescriptor, 8, h.f49996a, activityRichPresenceInviteEmbed.isPlatformSupported);
+            compositeEncoder.o(serialDescriptor, 8, h.f49997a, activityRichPresenceInviteEmbed.isPlatformSupported);
         }
         if (compositeEncoder.z(serialDescriptor, 9) || !Intrinsics.areEqual(activityRichPresenceInviteEmbed.isSpotifyParty, Boolean.FALSE)) {
-            compositeEncoder.o(serialDescriptor, 9, h.f49996a, activityRichPresenceInviteEmbed.isSpotifyParty);
+            compositeEncoder.o(serialDescriptor, 9, h.f49997a, activityRichPresenceInviteEmbed.isSpotifyParty);
         }
         if (compositeEncoder.z(serialDescriptor, 10) || activityRichPresenceInviteEmbed.maxPartySize != null) {
-            compositeEncoder.o(serialDescriptor, 10, p0.f50048a, activityRichPresenceInviteEmbed.maxPartySize);
+            compositeEncoder.o(serialDescriptor, 10, p0.f50049a, activityRichPresenceInviteEmbed.maxPartySize);
         }
         if (compositeEncoder.z(serialDescriptor, 11) || activityRichPresenceInviteEmbed.partyMemberAvatarURIs != null) {
             compositeEncoder.o(serialDescriptor, 11, (qt.o) lazyArr[11].getValue(), activityRichPresenceInviteEmbed.partyMemberAvatarURIs);
         }
         if (compositeEncoder.z(serialDescriptor, 12) || activityRichPresenceInviteEmbed.partySizeText != null) {
-            compositeEncoder.o(serialDescriptor, 12, n2.f50032a, activityRichPresenceInviteEmbed.partySizeText);
+            compositeEncoder.o(serialDescriptor, 12, n2.f50033a, activityRichPresenceInviteEmbed.partySizeText);
         }
         if (compositeEncoder.z(serialDescriptor, 13) || activityRichPresenceInviteEmbed.platformIconKeys != null) {
             compositeEncoder.o(serialDescriptor, 13, (qt.o) lazyArr[13].getValue(), activityRichPresenceInviteEmbed.platformIconKeys);
         }
         if (compositeEncoder.z(serialDescriptor, 14) || activityRichPresenceInviteEmbed.coverImageUrl != null) {
-            compositeEncoder.o(serialDescriptor, 14, n2.f50032a, activityRichPresenceInviteEmbed.coverImageUrl);
+            compositeEncoder.o(serialDescriptor, 14, n2.f50033a, activityRichPresenceInviteEmbed.coverImageUrl);
         }
         if (compositeEncoder.z(serialDescriptor, 15) || activityRichPresenceInviteEmbed.subtitle != null) {
-            compositeEncoder.o(serialDescriptor, 15, n2.f50032a, activityRichPresenceInviteEmbed.subtitle);
+            compositeEncoder.o(serialDescriptor, 15, n2.f50033a, activityRichPresenceInviteEmbed.subtitle);
         }
         if (compositeEncoder.z(serialDescriptor, 16) || activityRichPresenceInviteEmbed.title != null) {
-            compositeEncoder.o(serialDescriptor, 16, n2.f50032a, activityRichPresenceInviteEmbed.title);
+            compositeEncoder.o(serialDescriptor, 16, n2.f50033a, activityRichPresenceInviteEmbed.title);
         }
         if (compositeEncoder.z(serialDescriptor, 17) || activityRichPresenceInviteEmbed.hiddenEmbedMessageContent != null) {
             compositeEncoder.o(serialDescriptor, 17, StructurableTextSerializer.INSTANCE, activityRichPresenceInviteEmbed.hiddenEmbedMessageContent);

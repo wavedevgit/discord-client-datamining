@@ -80,7 +80,7 @@ public abstract class LinkContextData {
             @NotNull
 
             /* renamed from: id  reason: collision with root package name */
-            private final String f9262id;
+            private final String f9263id;
             private final String loggingName;
 
             @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindDismissMessage$DismissedMessage$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindDismissMessage$DismissedMessage;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
@@ -106,7 +106,7 @@ public abstract class LinkContextData {
             /* renamed from: copy-8a0ehIg$default  reason: not valid java name */
             public static /* synthetic */ DismissedMessage m301copy8a0ehIg$default(DismissedMessage dismissedMessage, String str, long j10, String str2, DismissedMessageAuthor dismissedMessageAuthor, int i10, Object obj) {
                 if ((i10 & 1) != 0) {
-                    str = dismissedMessage.f9262id;
+                    str = dismissedMessage.f9263id;
                 }
                 if ((i10 & 2) != 0) {
                     j10 = dismissedMessage.channelId;
@@ -125,10 +125,10 @@ public abstract class LinkContextData {
             }
 
             public static final /* synthetic */ void write$Self$chat_release(DismissedMessage dismissedMessage, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-                compositeEncoder.k(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1084boximpl(dismissedMessage.f9262id));
+                compositeEncoder.k(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1084boximpl(dismissedMessage.f9263id));
                 compositeEncoder.k(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1058boximpl(dismissedMessage.channelId));
                 if (compositeEncoder.z(serialDescriptor, 2) || dismissedMessage.loggingName != null) {
-                    compositeEncoder.o(serialDescriptor, 2, n2.f50032a, dismissedMessage.loggingName);
+                    compositeEncoder.o(serialDescriptor, 2, n2.f50033a, dismissedMessage.loggingName);
                 }
                 compositeEncoder.k(serialDescriptor, 3, LinkContextData$BindDismissMessage$DismissedMessageAuthor$$serializer.INSTANCE, dismissedMessage.author);
             }
@@ -136,7 +136,7 @@ public abstract class LinkContextData {
             @NotNull
             /* renamed from: component1-3Eiw7ao  reason: not valid java name */
             public final String m303component13Eiw7ao() {
-                return this.f9262id;
+                return this.f9263id;
             }
 
             /* renamed from: component2-o4g7jtM  reason: not valid java name */
@@ -167,7 +167,7 @@ public abstract class LinkContextData {
                 }
                 if (obj instanceof DismissedMessage) {
                     DismissedMessage dismissedMessage = (DismissedMessage) obj;
-                    return MessageId.m1088equalsimpl0(this.f9262id, dismissedMessage.f9262id) && ChannelId.m1062equalsimpl0(this.channelId, dismissedMessage.channelId) && Intrinsics.areEqual(this.loggingName, dismissedMessage.loggingName) && Intrinsics.areEqual(this.author, dismissedMessage.author);
+                    return MessageId.m1088equalsimpl0(this.f9263id, dismissedMessage.f9263id) && ChannelId.m1062equalsimpl0(this.channelId, dismissedMessage.channelId) && Intrinsics.areEqual(this.loggingName, dismissedMessage.loggingName) && Intrinsics.areEqual(this.author, dismissedMessage.author);
                 }
                 return false;
             }
@@ -185,7 +185,7 @@ public abstract class LinkContextData {
             @NotNull
             /* renamed from: getId-3Eiw7ao  reason: not valid java name */
             public final String m307getId3Eiw7ao() {
-                return this.f9262id;
+                return this.f9263id;
             }
 
             public final String getLoggingName() {
@@ -193,14 +193,14 @@ public abstract class LinkContextData {
             }
 
             public int hashCode() {
-                int m1089hashCodeimpl = ((MessageId.m1089hashCodeimpl(this.f9262id) * 31) + ChannelId.m1063hashCodeimpl(this.channelId)) * 31;
+                int m1089hashCodeimpl = ((MessageId.m1089hashCodeimpl(this.f9263id) * 31) + ChannelId.m1063hashCodeimpl(this.channelId)) * 31;
                 String str = this.loggingName;
                 return ((m1089hashCodeimpl + (str == null ? 0 : str.hashCode())) * 31) + this.author.hashCode();
             }
 
             @NotNull
             public String toString() {
-                String m1091toStringimpl = MessageId.m1091toStringimpl(this.f9262id);
+                String m1091toStringimpl = MessageId.m1091toStringimpl(this.f9263id);
                 String m1065toStringimpl = ChannelId.m1065toStringimpl(this.channelId);
                 String str = this.loggingName;
                 DismissedMessageAuthor dismissedMessageAuthor = this.author;
@@ -215,7 +215,7 @@ public abstract class LinkContextData {
                 if (11 != (i10 & 11)) {
                     v1.b(i10, 11, LinkContextData$BindDismissMessage$DismissedMessage$$serializer.INSTANCE.getDescriptor());
                 }
-                this.f9262id = str;
+                this.f9263id = str;
                 this.channelId = channelId.m1067unboximpl();
                 if ((i10 & 4) == 0) {
                     this.loggingName = null;
@@ -228,7 +228,7 @@ public abstract class LinkContextData {
             private DismissedMessage(String id2, long j10, String str, DismissedMessageAuthor author) {
                 Intrinsics.checkNotNullParameter(id2, "id");
                 Intrinsics.checkNotNullParameter(author, "author");
-                this.f9262id = id2;
+                this.f9263id = id2;
                 this.channelId = j10;
                 this.loggingName = str;
                 this.author = author;
@@ -710,7 +710,7 @@ public abstract class LinkContextData {
             LinkContext.write$Self(bindInsertText, compositeEncoder, serialDescriptor);
             compositeEncoder.y(serialDescriptor, 2, bindInsertText.text);
             if (compositeEncoder.z(serialDescriptor, 3) || bindInsertText.addSpace != null) {
-                compositeEncoder.o(serialDescriptor, 3, tt.h.f49996a, bindInsertText.addSpace);
+                compositeEncoder.o(serialDescriptor, 3, tt.h.f49997a, bindInsertText.addSpace);
             }
         }
 
@@ -849,7 +849,7 @@ public abstract class LinkContextData {
                 }
                 compositeEncoder.y(serialDescriptor, 3, applicationStream.streamType);
                 if (compositeEncoder.z(serialDescriptor, 4) || applicationStream.discoverable != null) {
-                    compositeEncoder.o(serialDescriptor, 4, tt.h.f49996a, applicationStream.discoverable);
+                    compositeEncoder.o(serialDescriptor, 4, tt.h.f49997a, applicationStream.discoverable);
                 }
             }
 
@@ -1218,7 +1218,7 @@ public abstract class LinkContextData {
             LinkContext.write$Self(bindOpenGdmCustomizeActionSheet, compositeEncoder, serialDescriptor);
             compositeEncoder.y(serialDescriptor, 2, bindOpenGdmCustomizeActionSheet.messageChannelId);
             if (compositeEncoder.z(serialDescriptor, 3) || bindOpenGdmCustomizeActionSheet.linkColor != null) {
-                compositeEncoder.o(serialDescriptor, 3, p0.f50048a, bindOpenGdmCustomizeActionSheet.linkColor);
+                compositeEncoder.o(serialDescriptor, 3, p0.f50049a, bindOpenGdmCustomizeActionSheet.linkColor);
             }
         }
 
@@ -1528,7 +1528,7 @@ public abstract class LinkContextData {
         public static final /* synthetic */ void write$Self$chat_release(BindOpenRoleSubscriptionOverview bindOpenRoleSubscriptionOverview, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             LinkContext.write$Self(bindOpenRoleSubscriptionOverview, compositeEncoder, serialDescriptor);
             compositeEncoder.y(serialDescriptor, 2, bindOpenRoleSubscriptionOverview.guildId);
-            n2 n2Var = n2.f50032a;
+            n2 n2Var = n2.f50033a;
             compositeEncoder.o(serialDescriptor, 3, n2Var, bindOpenRoleSubscriptionOverview.messageId);
             compositeEncoder.o(serialDescriptor, 4, n2Var, bindOpenRoleSubscriptionOverview.channelId);
             compositeEncoder.o(serialDescriptor, 5, n2Var, bindOpenRoleSubscriptionOverview.roleSubscriptionListingId);
@@ -1762,7 +1762,7 @@ public abstract class LinkContextData {
             LinkContext.write$Self(bindOpenUrl, compositeEncoder, serialDescriptor);
             compositeEncoder.y(serialDescriptor, 2, bindOpenUrl.url);
             if (compositeEncoder.z(serialDescriptor, 3) || bindOpenUrl.linkColor != null) {
-                compositeEncoder.o(serialDescriptor, 3, p0.f50048a, bindOpenUrl.linkColor);
+                compositeEncoder.o(serialDescriptor, 3, p0.f50049a, bindOpenUrl.linkColor);
             }
         }
 
@@ -2298,19 +2298,19 @@ public abstract class LinkContextData {
             LinkContext.write$Self(bindUserMenu, compositeEncoder, serialDescriptor);
             compositeEncoder.k(serialDescriptor, 2, UserId$$serializer.INSTANCE, UserId.m1136boximpl(bindUserMenu.userId));
             if (compositeEncoder.z(serialDescriptor, 3) || bindUserMenu.colorString != null) {
-                compositeEncoder.o(serialDescriptor, 3, p0.f50048a, bindUserMenu.colorString);
+                compositeEncoder.o(serialDescriptor, 3, p0.f50049a, bindUserMenu.colorString);
             }
             if (compositeEncoder.z(serialDescriptor, 4) || bindUserMenu.linkColor != null) {
-                compositeEncoder.o(serialDescriptor, 4, p0.f50048a, bindUserMenu.linkColor);
+                compositeEncoder.o(serialDescriptor, 4, p0.f50049a, bindUserMenu.linkColor);
             }
             if (compositeEncoder.z(serialDescriptor, 5) || bindUserMenu.roleColor != null) {
-                compositeEncoder.o(serialDescriptor, 5, p0.f50048a, bindUserMenu.roleColor);
+                compositeEncoder.o(serialDescriptor, 5, p0.f50049a, bindUserMenu.roleColor);
             }
             if (compositeEncoder.z(serialDescriptor, 6) || bindUserMenu.roleColors != null) {
                 compositeEncoder.o(serialDescriptor, 6, RoleColors$$serializer.INSTANCE, bindUserMenu.roleColors);
             }
             if (compositeEncoder.z(serialDescriptor, 7) || bindUserMenu.shouldShowRoleDot != null) {
-                compositeEncoder.o(serialDescriptor, 7, tt.h.f49996a, bindUserMenu.shouldShowRoleDot);
+                compositeEncoder.o(serialDescriptor, 7, tt.h.f49997a, bindUserMenu.shouldShowRoleDot);
             }
             if (compositeEncoder.z(serialDescriptor, 8) || bindUserMenu.messageChannelId != null) {
                 compositeEncoder.o(serialDescriptor, 8, ChannelId$$serializer.INSTANCE, bindUserMenu.messageChannelId);
@@ -2517,7 +2517,7 @@ public abstract class LinkContextData {
             @NotNull
 
             /* renamed from: id  reason: collision with root package name */
-            private final String f9263id;
+            private final String f9264id;
             private final String loggingName;
 
             @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, d2 = {"Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserSurvey$SurveyMessage$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/chat/bridge/contentnode/LinkContextData$BindUserSurvey$SurveyMessage;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
@@ -2543,7 +2543,7 @@ public abstract class LinkContextData {
             /* renamed from: copy-Eqy5D80$default  reason: not valid java name */
             public static /* synthetic */ SurveyMessage m364copyEqy5D80$default(SurveyMessage surveyMessage, String str, long j10, String str2, int i10, Object obj) {
                 if ((i10 & 1) != 0) {
-                    str = surveyMessage.f9263id;
+                    str = surveyMessage.f9264id;
                 }
                 if ((i10 & 2) != 0) {
                     j10 = surveyMessage.channelId;
@@ -2559,17 +2559,17 @@ public abstract class LinkContextData {
             }
 
             public static final /* synthetic */ void write$Self$chat_release(SurveyMessage surveyMessage, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-                compositeEncoder.k(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1084boximpl(surveyMessage.f9263id));
+                compositeEncoder.k(serialDescriptor, 0, MessageId$$serializer.INSTANCE, MessageId.m1084boximpl(surveyMessage.f9264id));
                 compositeEncoder.k(serialDescriptor, 1, ChannelId$$serializer.INSTANCE, ChannelId.m1058boximpl(surveyMessage.channelId));
                 if (compositeEncoder.z(serialDescriptor, 2) || surveyMessage.loggingName != null) {
-                    compositeEncoder.o(serialDescriptor, 2, n2.f50032a, surveyMessage.loggingName);
+                    compositeEncoder.o(serialDescriptor, 2, n2.f50033a, surveyMessage.loggingName);
                 }
             }
 
             @NotNull
             /* renamed from: component1-3Eiw7ao  reason: not valid java name */
             public final String m366component13Eiw7ao() {
-                return this.f9263id;
+                return this.f9264id;
             }
 
             /* renamed from: component2-o4g7jtM  reason: not valid java name */
@@ -2594,7 +2594,7 @@ public abstract class LinkContextData {
                 }
                 if (obj instanceof SurveyMessage) {
                     SurveyMessage surveyMessage = (SurveyMessage) obj;
-                    return MessageId.m1088equalsimpl0(this.f9263id, surveyMessage.f9263id) && ChannelId.m1062equalsimpl0(this.channelId, surveyMessage.channelId) && Intrinsics.areEqual(this.loggingName, surveyMessage.loggingName);
+                    return MessageId.m1088equalsimpl0(this.f9264id, surveyMessage.f9264id) && ChannelId.m1062equalsimpl0(this.channelId, surveyMessage.channelId) && Intrinsics.areEqual(this.loggingName, surveyMessage.loggingName);
                 }
                 return false;
             }
@@ -2607,7 +2607,7 @@ public abstract class LinkContextData {
             @NotNull
             /* renamed from: getId-3Eiw7ao  reason: not valid java name */
             public final String m370getId3Eiw7ao() {
-                return this.f9263id;
+                return this.f9264id;
             }
 
             public final String getLoggingName() {
@@ -2615,14 +2615,14 @@ public abstract class LinkContextData {
             }
 
             public int hashCode() {
-                int m1089hashCodeimpl = ((MessageId.m1089hashCodeimpl(this.f9263id) * 31) + ChannelId.m1063hashCodeimpl(this.channelId)) * 31;
+                int m1089hashCodeimpl = ((MessageId.m1089hashCodeimpl(this.f9264id) * 31) + ChannelId.m1063hashCodeimpl(this.channelId)) * 31;
                 String str = this.loggingName;
                 return m1089hashCodeimpl + (str == null ? 0 : str.hashCode());
             }
 
             @NotNull
             public String toString() {
-                String m1091toStringimpl = MessageId.m1091toStringimpl(this.f9263id);
+                String m1091toStringimpl = MessageId.m1091toStringimpl(this.f9264id);
                 String m1065toStringimpl = ChannelId.m1065toStringimpl(this.channelId);
                 String str = this.loggingName;
                 return "SurveyMessage(id=" + m1091toStringimpl + ", channelId=" + m1065toStringimpl + ", loggingName=" + str + ")";
@@ -2636,7 +2636,7 @@ public abstract class LinkContextData {
                 if (3 != (i10 & 3)) {
                     v1.b(i10, 3, LinkContextData$BindUserSurvey$SurveyMessage$$serializer.INSTANCE.getDescriptor());
                 }
-                this.f9263id = str;
+                this.f9264id = str;
                 this.channelId = channelId.m1067unboximpl();
                 if ((i10 & 4) == 0) {
                     this.loggingName = null;
@@ -2647,7 +2647,7 @@ public abstract class LinkContextData {
 
             private SurveyMessage(String id2, long j10, String str) {
                 Intrinsics.checkNotNullParameter(id2, "id");
-                this.f9263id = id2;
+                this.f9264id = id2;
                 this.channelId = j10;
                 this.loggingName = str;
             }
@@ -2685,7 +2685,7 @@ public abstract class LinkContextData {
             LinkContext.write$Self(bindUserSurvey, compositeEncoder, serialDescriptor);
             compositeEncoder.k(serialDescriptor, 2, LinkContextData$BindUserSurvey$SurveyMessage$$serializer.INSTANCE, bindUserSurvey.message);
             if (compositeEncoder.z(serialDescriptor, 3) || bindUserSurvey.notificationType != null) {
-                compositeEncoder.o(serialDescriptor, 3, n2.f50032a, bindUserSurvey.notificationType);
+                compositeEncoder.o(serialDescriptor, 3, n2.f50033a, bindUserSurvey.notificationType);
             }
         }
 
@@ -2818,7 +2818,7 @@ public abstract class LinkContextData {
         public static final /* synthetic */ void write$Self(LinkContext linkContext, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
             compositeEncoder.y(serialDescriptor, 0, linkContext.action);
             if (compositeEncoder.z(serialDescriptor, 1) || linkContext.medium != null) {
-                compositeEncoder.o(serialDescriptor, 1, tt.h.f49996a, linkContext.medium);
+                compositeEncoder.o(serialDescriptor, 1, tt.h.f49997a, linkContext.medium);
             }
         }
 
@@ -2889,7 +2889,7 @@ public abstract class LinkContextData {
             @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
             @NotNull
             public SerialDescriptor getDescriptor() {
-                return st.j.b("LinkUrl", e.i.f48368a);
+                return st.j.b("LinkUrl", e.i.f48369a);
             }
 
             @Override // kotlinx.serialization.DeserializationStrategy

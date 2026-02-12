@@ -19,82 +19,82 @@ public final class a {
     private static final Regex B;
 
     /* renamed from: o  reason: collision with root package name */
-    public static final C0322a f23935o;
+    public static final C0322a f23936o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Regex f23936p;
+    private static final Regex f23937p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final Regex f23937q;
+    private static final Regex f23938q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final Regex f23938r;
+    private static final Regex f23939r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Regex f23939s;
+    private static final Regex f23940s;
 
     /* renamed from: t  reason: collision with root package name */
-    private static final Regex f23940t;
+    private static final Regex f23941t;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final Regex f23941u;
+    private static final Regex f23942u;
 
     /* renamed from: v  reason: collision with root package name */
-    private static final Regex f23942v;
+    private static final Regex f23943v;
 
     /* renamed from: w  reason: collision with root package name */
-    private static final Regex f23943w;
+    private static final Regex f23944w;
 
     /* renamed from: x  reason: collision with root package name */
-    private static final Regex f23944x;
+    private static final Regex f23945x;
 
     /* renamed from: y  reason: collision with root package name */
-    private static final Regex f23945y;
+    private static final Regex f23946y;
 
     /* renamed from: z  reason: collision with root package name */
-    private static final Regex f23946z;
+    private static final Regex f23947z;
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f23947a;
+    private final String f23948a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f23948b;
+    private final String f23949b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f23949c;
+    private final String f23950c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f23950d;
+    private final String f23951d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f23951e;
+    private final String f23952e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f23952f;
+    private final String f23953f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f23953g;
+    private final String f23954g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f23954h;
+    private final String f23955h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f23955i;
+    private final String f23956i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final String f23956j;
+    private final String f23957j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final Date f23957k;
+    private final Date f23958k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final Date f23958l;
+    private final Date f23959l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final Date f23959m;
+    private final Date f23960m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final String f23960n;
+    private final String f23961n;
 
     /* renamed from: fo.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -129,7 +129,7 @@ public final class a {
         }
 
         private final boolean f(String str) {
-            if (new Regex("^@\n\\u001e\r(ANSI |AAMVA)\\d{10}.+", kotlin.text.m.f34975s).i(StringsKt.k1(str).toString()) && e(str, a.f23942v) != null && e(str, a.f23946z) != null) {
+            if (new Regex("^@\n\\u001e\r(ANSI |AAMVA)\\d{10}.+", kotlin.text.m.f34976s).i(StringsKt.k1(str).toString()) && e(str, a.f23943v) != null && e(str, a.f23947z) != null) {
                 return true;
             }
             return false;
@@ -139,7 +139,7 @@ public final class a {
             if (str == null || !f(str)) {
                 return null;
             }
-            return new a(null, e(str, a.f23942v), e(str, a.B), e(str, a.f23946z), e(str, a.f23943w), e(str, a.f23938r), e(str, a.f23936p), e(str, a.f23937q), e(str, a.f23939s), e(str, a.A), b(e(str, a.f23944x)), b(e(str, a.f23941u)), b(e(str, a.f23940t)), e(str, a.f23945y), 1, null);
+            return new a(null, e(str, a.f23943v), e(str, a.B), e(str, a.f23947z), e(str, a.f23944w), e(str, a.f23939r), e(str, a.f23937p), e(str, a.f23938q), e(str, a.f23940s), e(str, a.A), b(e(str, a.f23945x)), b(e(str, a.f23942u)), b(e(str, a.f23941t)), e(str, a.f23946y), 1, null);
         }
 
         private C0322a() {
@@ -148,37 +148,37 @@ public final class a {
 
     static {
         C0322a c0322a = new C0322a(null);
-        f23935o = c0322a;
-        f23936p = c0322a.c("DAI");
-        f23937q = c0322a.c("DAJ");
-        f23938r = c0322a.c("DAG");
-        f23939s = c0322a.c("DAK");
-        f23940t = c0322a.c("DBB");
-        f23941u = c0322a.c("DBA");
-        f23942v = c0322a.c("DAC");
-        f23943w = c0322a.c("DBC");
-        f23944x = c0322a.c("DBD");
-        f23945y = c0322a.c("DCG");
-        f23946z = c0322a.c("DCS");
+        f23936o = c0322a;
+        f23937p = c0322a.c("DAI");
+        f23938q = c0322a.c("DAJ");
+        f23939r = c0322a.c("DAG");
+        f23940s = c0322a.c("DAK");
+        f23941t = c0322a.c("DBB");
+        f23942u = c0322a.c("DBA");
+        f23943v = c0322a.c("DAC");
+        f23944w = c0322a.c("DBC");
+        f23945x = c0322a.c("DBD");
+        f23946y = c0322a.c("DCG");
+        f23947z = c0322a.c("DCS");
         A = c0322a.c("DAQ");
         B = c0322a.c("DAD");
     }
 
     public a(String str, String str2, String str3, String str4, String str5, String str6, String str7, String str8, String str9, String str10, Date date, Date date2, Date date3, String str11) {
-        this.f23947a = str;
-        this.f23948b = str2;
-        this.f23949c = str3;
-        this.f23950d = str4;
-        this.f23951e = str5;
-        this.f23952f = str6;
-        this.f23953g = str7;
-        this.f23954h = str8;
-        this.f23955i = str9;
-        this.f23956j = str10;
-        this.f23957k = date;
-        this.f23958l = date2;
-        this.f23959m = date3;
-        this.f23960n = str11;
+        this.f23948a = str;
+        this.f23949b = str2;
+        this.f23950c = str3;
+        this.f23951d = str4;
+        this.f23952e = str5;
+        this.f23953f = str6;
+        this.f23954g = str7;
+        this.f23955h = str8;
+        this.f23956i = str9;
+        this.f23957j = str10;
+        this.f23958k = date;
+        this.f23959l = date2;
+        this.f23960m = date3;
+        this.f23961n = str11;
     }
 
     public boolean equals(Object obj) {
@@ -189,7 +189,7 @@ public final class a {
             return false;
         }
         a aVar = (a) obj;
-        if (Intrinsics.areEqual(this.f23947a, aVar.f23947a) && Intrinsics.areEqual(this.f23948b, aVar.f23948b) && Intrinsics.areEqual(this.f23949c, aVar.f23949c) && Intrinsics.areEqual(this.f23950d, aVar.f23950d) && Intrinsics.areEqual(this.f23951e, aVar.f23951e) && Intrinsics.areEqual(this.f23952f, aVar.f23952f) && Intrinsics.areEqual(this.f23953g, aVar.f23953g) && Intrinsics.areEqual(this.f23954h, aVar.f23954h) && Intrinsics.areEqual(this.f23955i, aVar.f23955i) && Intrinsics.areEqual(this.f23956j, aVar.f23956j) && Intrinsics.areEqual(this.f23957k, aVar.f23957k) && Intrinsics.areEqual(this.f23958l, aVar.f23958l) && Intrinsics.areEqual(this.f23959m, aVar.f23959m) && Intrinsics.areEqual(this.f23960n, aVar.f23960n)) {
+        if (Intrinsics.areEqual(this.f23948a, aVar.f23948a) && Intrinsics.areEqual(this.f23949b, aVar.f23949b) && Intrinsics.areEqual(this.f23950c, aVar.f23950c) && Intrinsics.areEqual(this.f23951d, aVar.f23951d) && Intrinsics.areEqual(this.f23952e, aVar.f23952e) && Intrinsics.areEqual(this.f23953f, aVar.f23953f) && Intrinsics.areEqual(this.f23954g, aVar.f23954g) && Intrinsics.areEqual(this.f23955h, aVar.f23955h) && Intrinsics.areEqual(this.f23956i, aVar.f23956i) && Intrinsics.areEqual(this.f23957j, aVar.f23957j) && Intrinsics.areEqual(this.f23958k, aVar.f23958k) && Intrinsics.areEqual(this.f23959l, aVar.f23959l) && Intrinsics.areEqual(this.f23960m, aVar.f23960m) && Intrinsics.areEqual(this.f23961n, aVar.f23961n)) {
             return true;
         }
         return false;
@@ -209,7 +209,7 @@ public final class a {
         int hashCode11;
         int hashCode12;
         int hashCode13;
-        String str = this.f23947a;
+        String str = this.f23948a;
         int i10 = 0;
         if (str == null) {
             hashCode = 0;
@@ -217,91 +217,91 @@ public final class a {
             hashCode = str.hashCode();
         }
         int i11 = hashCode * 31;
-        String str2 = this.f23948b;
+        String str2 = this.f23949b;
         if (str2 == null) {
             hashCode2 = 0;
         } else {
             hashCode2 = str2.hashCode();
         }
         int i12 = (i11 + hashCode2) * 31;
-        String str3 = this.f23949c;
+        String str3 = this.f23950c;
         if (str3 == null) {
             hashCode3 = 0;
         } else {
             hashCode3 = str3.hashCode();
         }
         int i13 = (i12 + hashCode3) * 31;
-        String str4 = this.f23950d;
+        String str4 = this.f23951d;
         if (str4 == null) {
             hashCode4 = 0;
         } else {
             hashCode4 = str4.hashCode();
         }
         int i14 = (i13 + hashCode4) * 31;
-        String str5 = this.f23951e;
+        String str5 = this.f23952e;
         if (str5 == null) {
             hashCode5 = 0;
         } else {
             hashCode5 = str5.hashCode();
         }
         int i15 = (i14 + hashCode5) * 31;
-        String str6 = this.f23952f;
+        String str6 = this.f23953f;
         if (str6 == null) {
             hashCode6 = 0;
         } else {
             hashCode6 = str6.hashCode();
         }
         int i16 = (i15 + hashCode6) * 31;
-        String str7 = this.f23953g;
+        String str7 = this.f23954g;
         if (str7 == null) {
             hashCode7 = 0;
         } else {
             hashCode7 = str7.hashCode();
         }
         int i17 = (i16 + hashCode7) * 31;
-        String str8 = this.f23954h;
+        String str8 = this.f23955h;
         if (str8 == null) {
             hashCode8 = 0;
         } else {
             hashCode8 = str8.hashCode();
         }
         int i18 = (i17 + hashCode8) * 31;
-        String str9 = this.f23955i;
+        String str9 = this.f23956i;
         if (str9 == null) {
             hashCode9 = 0;
         } else {
             hashCode9 = str9.hashCode();
         }
         int i19 = (i18 + hashCode9) * 31;
-        String str10 = this.f23956j;
+        String str10 = this.f23957j;
         if (str10 == null) {
             hashCode10 = 0;
         } else {
             hashCode10 = str10.hashCode();
         }
         int i20 = (i19 + hashCode10) * 31;
-        Date date = this.f23957k;
+        Date date = this.f23958k;
         if (date == null) {
             hashCode11 = 0;
         } else {
             hashCode11 = date.hashCode();
         }
         int i21 = (i20 + hashCode11) * 31;
-        Date date2 = this.f23958l;
+        Date date2 = this.f23959l;
         if (date2 == null) {
             hashCode12 = 0;
         } else {
             hashCode12 = date2.hashCode();
         }
         int i22 = (i21 + hashCode12) * 31;
-        Date date3 = this.f23959m;
+        Date date3 = this.f23960m;
         if (date3 == null) {
             hashCode13 = 0;
         } else {
             hashCode13 = date3.hashCode();
         }
         int i23 = (i22 + hashCode13) * 31;
-        String str11 = this.f23960n;
+        String str11 = this.f23961n;
         if (str11 != null) {
             i10 = str11.hashCode();
         }
@@ -309,28 +309,28 @@ public final class a {
     }
 
     public final Date n() {
-        return this.f23959m;
+        return this.f23960m;
     }
 
     public final Date o() {
-        return this.f23958l;
+        return this.f23959l;
     }
 
     public String toString() {
-        String str = this.f23947a;
-        String str2 = this.f23948b;
-        String str3 = this.f23949c;
-        String str4 = this.f23950d;
-        String str5 = this.f23951e;
-        String str6 = this.f23952f;
-        String str7 = this.f23953g;
-        String str8 = this.f23954h;
-        String str9 = this.f23955i;
-        String str10 = this.f23956j;
-        Date date = this.f23957k;
-        Date date2 = this.f23958l;
-        Date date3 = this.f23959m;
-        String str11 = this.f23960n;
+        String str = this.f23948a;
+        String str2 = this.f23949b;
+        String str3 = this.f23950c;
+        String str4 = this.f23951d;
+        String str5 = this.f23952e;
+        String str6 = this.f23953f;
+        String str7 = this.f23954g;
+        String str8 = this.f23955h;
+        String str9 = this.f23956i;
+        String str10 = this.f23957j;
+        Date date = this.f23958k;
+        Date date2 = this.f23959l;
+        Date date3 = this.f23960m;
+        String str11 = this.f23961n;
         return "AamvaExtraction(idClass=" + str + ", nameFirst=" + str2 + ", nameMiddle=" + str3 + ", nameLast=" + str4 + ", sex=" + str5 + ", addressStreet1=" + str6 + ", addressCity=" + str7 + ", addressState=" + str8 + ", addressPostalCode=" + str9 + ", identificationNumber=" + str10 + ", issueDate=" + date + ", expirationDate=" + date2 + ", birthdate=" + date3 + ", issuingCountry=" + str11 + ")";
     }
 

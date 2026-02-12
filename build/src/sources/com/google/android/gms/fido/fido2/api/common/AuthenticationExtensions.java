@@ -27,166 +27,166 @@ public class AuthenticationExtensions extends jf.a {
     public static final Parcelable.Creator<AuthenticationExtensions> CREATOR = new g();
 
     /* renamed from: d  reason: collision with root package name */
-    private final n f14573d;
+    private final n f14574d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final r1 f14574e;
+    private final r1 f14575e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final a0 f14575i;
+    private final a0 f14576i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final x1 f14576o;
+    private final x1 f14577o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final g0 f14577p;
+    private final g0 f14578p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final i0 f14578q;
+    private final i0 f14579q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final t1 f14579r;
+    private final t1 f14580r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final l0 f14580s;
+    private final l0 f14581s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final o f14581t;
+    private final o f14582t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final q0 f14582u;
+    private final q0 f14583u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final c f14583v;
+    private final c f14584v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final n0 f14584w;
+    private final n0 f14585w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final p f14585x;
+    private final p f14586x;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private n f14586a;
+        private n f14587a;
 
         /* renamed from: b  reason: collision with root package name */
-        private a0 f14587b;
+        private a0 f14588b;
 
         /* renamed from: c  reason: collision with root package name */
-        private r1 f14588c;
+        private r1 f14589c;
 
         /* renamed from: d  reason: collision with root package name */
-        private x1 f14589d;
+        private x1 f14590d;
 
         /* renamed from: e  reason: collision with root package name */
-        private g0 f14590e;
+        private g0 f14591e;
 
         /* renamed from: f  reason: collision with root package name */
-        private i0 f14591f;
+        private i0 f14592f;
 
         /* renamed from: g  reason: collision with root package name */
-        private t1 f14592g;
+        private t1 f14593g;
 
         /* renamed from: h  reason: collision with root package name */
-        private l0 f14593h;
+        private l0 f14594h;
 
         /* renamed from: i  reason: collision with root package name */
-        private o f14594i;
+        private o f14595i;
 
         /* renamed from: j  reason: collision with root package name */
-        private p f14595j;
+        private p f14596j;
 
         /* renamed from: k  reason: collision with root package name */
-        private q0 f14596k;
+        private q0 f14597k;
 
         /* renamed from: l  reason: collision with root package name */
-        private c f14597l;
+        private c f14598l;
 
         /* renamed from: m  reason: collision with root package name */
-        private n0 f14598m;
+        private n0 f14599m;
 
         public AuthenticationExtensions a() {
-            return new AuthenticationExtensions(this.f14586a, this.f14588c, this.f14587b, this.f14589d, this.f14590e, this.f14591f, this.f14592g, this.f14593h, this.f14594i, this.f14596k, this.f14597l, this.f14598m, this.f14595j);
+            return new AuthenticationExtensions(this.f14587a, this.f14589c, this.f14588b, this.f14590d, this.f14591e, this.f14592f, this.f14593g, this.f14594h, this.f14595i, this.f14597k, this.f14598l, this.f14599m, this.f14596j);
         }
 
         public a b(n nVar) {
-            this.f14586a = nVar;
+            this.f14587a = nVar;
             return this;
         }
 
         public a c(o oVar) {
-            this.f14594i = oVar;
+            this.f14595i = oVar;
             return this;
         }
 
         public a d(p pVar) {
-            this.f14595j = pVar;
+            this.f14596j = pVar;
             return this;
         }
 
         public a e(a0 a0Var) {
-            this.f14587b = a0Var;
+            this.f14588b = a0Var;
             return this;
         }
 
         public final a f(r1 r1Var) {
-            this.f14588c = r1Var;
+            this.f14589c = r1Var;
             return this;
         }
 
         public final a g(t1 t1Var) {
-            this.f14592g = t1Var;
+            this.f14593g = t1Var;
             return this;
         }
 
         public final a h(x1 x1Var) {
-            this.f14589d = x1Var;
+            this.f14590d = x1Var;
             return this;
         }
 
         public final a i(g0 g0Var) {
-            this.f14590e = g0Var;
+            this.f14591e = g0Var;
             return this;
         }
 
         public final a j(i0 i0Var) {
-            this.f14591f = i0Var;
+            this.f14592f = i0Var;
             return this;
         }
 
         public final a k(l0 l0Var) {
-            this.f14593h = l0Var;
+            this.f14594h = l0Var;
             return this;
         }
 
         public final a l(q0 q0Var) {
-            this.f14596k = q0Var;
+            this.f14597k = q0Var;
             return this;
         }
 
         public final a m(c cVar) {
-            this.f14597l = cVar;
+            this.f14598l = cVar;
             return this;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public AuthenticationExtensions(n nVar, r1 r1Var, a0 a0Var, x1 x1Var, g0 g0Var, i0 i0Var, t1 t1Var, l0 l0Var, o oVar, q0 q0Var, c cVar, n0 n0Var, p pVar) {
-        this.f14573d = nVar;
-        this.f14575i = a0Var;
-        this.f14574e = r1Var;
-        this.f14576o = x1Var;
-        this.f14577p = g0Var;
-        this.f14578q = i0Var;
-        this.f14579r = t1Var;
-        this.f14580s = l0Var;
-        this.f14581t = oVar;
-        this.f14582u = q0Var;
-        this.f14583v = cVar;
-        this.f14584w = n0Var;
-        this.f14585x = pVar;
+        this.f14574d = nVar;
+        this.f14576i = a0Var;
+        this.f14575e = r1Var;
+        this.f14577o = x1Var;
+        this.f14578p = g0Var;
+        this.f14579q = i0Var;
+        this.f14580r = t1Var;
+        this.f14581s = l0Var;
+        this.f14582t = oVar;
+        this.f14583u = q0Var;
+        this.f14584v = cVar;
+        this.f14585w = n0Var;
+        this.f14586x = pVar;
     }
 
     public static AuthenticationExtensions d(JSONObject jSONObject) {
@@ -247,11 +247,11 @@ public class AuthenticationExtensions extends jf.a {
     }
 
     public n b() {
-        return this.f14573d;
+        return this.f14574d;
     }
 
     public a0 c() {
-        return this.f14575i;
+        return this.f14576i;
     }
 
     public boolean equals(Object obj) {
@@ -259,29 +259,29 @@ public class AuthenticationExtensions extends jf.a {
             return false;
         }
         AuthenticationExtensions authenticationExtensions = (AuthenticationExtensions) obj;
-        if (!hf.o.a(this.f14573d, authenticationExtensions.f14573d) || !hf.o.a(this.f14574e, authenticationExtensions.f14574e) || !hf.o.a(this.f14575i, authenticationExtensions.f14575i) || !hf.o.a(this.f14576o, authenticationExtensions.f14576o) || !hf.o.a(this.f14577p, authenticationExtensions.f14577p) || !hf.o.a(this.f14578q, authenticationExtensions.f14578q) || !hf.o.a(this.f14579r, authenticationExtensions.f14579r) || !hf.o.a(this.f14580s, authenticationExtensions.f14580s) || !hf.o.a(this.f14581t, authenticationExtensions.f14581t) || !hf.o.a(this.f14582u, authenticationExtensions.f14582u) || !hf.o.a(this.f14583v, authenticationExtensions.f14583v) || !hf.o.a(this.f14584w, authenticationExtensions.f14584w) || !hf.o.a(this.f14585x, authenticationExtensions.f14585x)) {
+        if (!hf.o.a(this.f14574d, authenticationExtensions.f14574d) || !hf.o.a(this.f14575e, authenticationExtensions.f14575e) || !hf.o.a(this.f14576i, authenticationExtensions.f14576i) || !hf.o.a(this.f14577o, authenticationExtensions.f14577o) || !hf.o.a(this.f14578p, authenticationExtensions.f14578p) || !hf.o.a(this.f14579q, authenticationExtensions.f14579q) || !hf.o.a(this.f14580r, authenticationExtensions.f14580r) || !hf.o.a(this.f14581s, authenticationExtensions.f14581s) || !hf.o.a(this.f14582t, authenticationExtensions.f14582t) || !hf.o.a(this.f14583u, authenticationExtensions.f14583u) || !hf.o.a(this.f14584v, authenticationExtensions.f14584v) || !hf.o.a(this.f14585w, authenticationExtensions.f14585w) || !hf.o.a(this.f14586x, authenticationExtensions.f14586x)) {
             return false;
         }
         return true;
     }
 
     public int hashCode() {
-        return hf.o.b(this.f14573d, this.f14574e, this.f14575i, this.f14576o, this.f14577p, this.f14578q, this.f14579r, this.f14580s, this.f14581t, this.f14582u, this.f14583v, this.f14584w, this.f14585x);
+        return hf.o.b(this.f14574d, this.f14575e, this.f14576i, this.f14577o, this.f14578p, this.f14579q, this.f14580r, this.f14581s, this.f14582t, this.f14583u, this.f14584v, this.f14585w, this.f14586x);
     }
 
     public final String toString() {
-        p pVar = this.f14585x;
-        c cVar = this.f14583v;
-        q0 q0Var = this.f14582u;
-        o oVar = this.f14581t;
-        l0 l0Var = this.f14580s;
-        t1 t1Var = this.f14579r;
-        i0 i0Var = this.f14578q;
-        g0 g0Var = this.f14577p;
-        x1 x1Var = this.f14576o;
-        a0 a0Var = this.f14575i;
-        r1 r1Var = this.f14574e;
-        String valueOf = String.valueOf(this.f14573d);
+        p pVar = this.f14586x;
+        c cVar = this.f14584v;
+        q0 q0Var = this.f14583u;
+        o oVar = this.f14582t;
+        l0 l0Var = this.f14581s;
+        t1 t1Var = this.f14580r;
+        i0 i0Var = this.f14579q;
+        g0 g0Var = this.f14578p;
+        x1 x1Var = this.f14577o;
+        a0 a0Var = this.f14576i;
+        r1 r1Var = this.f14575e;
+        String valueOf = String.valueOf(this.f14574d);
         String valueOf2 = String.valueOf(r1Var);
         String valueOf3 = String.valueOf(a0Var);
         String valueOf4 = String.valueOf(x1Var);
@@ -300,18 +300,18 @@ public class AuthenticationExtensions extends jf.a {
     public void writeToParcel(Parcel parcel, int i10) {
         int a10 = jf.c.a(parcel);
         jf.c.q(parcel, 2, b(), i10, false);
-        jf.c.q(parcel, 3, this.f14574e, i10, false);
+        jf.c.q(parcel, 3, this.f14575e, i10, false);
         jf.c.q(parcel, 4, c(), i10, false);
-        jf.c.q(parcel, 5, this.f14576o, i10, false);
-        jf.c.q(parcel, 6, this.f14577p, i10, false);
-        jf.c.q(parcel, 7, this.f14578q, i10, false);
-        jf.c.q(parcel, 8, this.f14579r, i10, false);
-        jf.c.q(parcel, 9, this.f14580s, i10, false);
-        jf.c.q(parcel, 10, this.f14581t, i10, false);
-        jf.c.q(parcel, 11, this.f14582u, i10, false);
-        jf.c.q(parcel, 12, this.f14583v, i10, false);
-        jf.c.q(parcel, 13, this.f14584w, i10, false);
-        jf.c.q(parcel, 14, this.f14585x, i10, false);
+        jf.c.q(parcel, 5, this.f14577o, i10, false);
+        jf.c.q(parcel, 6, this.f14578p, i10, false);
+        jf.c.q(parcel, 7, this.f14579q, i10, false);
+        jf.c.q(parcel, 8, this.f14580r, i10, false);
+        jf.c.q(parcel, 9, this.f14581s, i10, false);
+        jf.c.q(parcel, 10, this.f14582t, i10, false);
+        jf.c.q(parcel, 11, this.f14583u, i10, false);
+        jf.c.q(parcel, 12, this.f14584v, i10, false);
+        jf.c.q(parcel, 13, this.f14585w, i10, false);
+        jf.c.q(parcel, 14, this.f14586x, i10, false);
         jf.c.b(parcel, a10);
     }
 }

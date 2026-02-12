@@ -60,7 +60,7 @@ public final class CheckpointApplication {
     public static final /* synthetic */ void write$Self$chat_release(CheckpointApplication checkpointApplication, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         compositeEncoder.k(serialDescriptor, 0, ApplicationId$$serializer.INSTANCE, ApplicationId.m1045boximpl(checkpointApplication.applicationId));
         if (compositeEncoder.z(serialDescriptor, 1) || checkpointApplication.applicationImageId != null) {
-            compositeEncoder.o(serialDescriptor, 1, n2.f50032a, checkpointApplication.applicationImageId);
+            compositeEncoder.o(serialDescriptor, 1, n2.f50033a, checkpointApplication.applicationImageId);
         }
         compositeEncoder.y(serialDescriptor, 2, checkpointApplication.applicationName);
     }

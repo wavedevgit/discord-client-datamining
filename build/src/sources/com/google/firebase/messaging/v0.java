@@ -14,28 +14,28 @@ import org.json.JSONObject;
 public class v0 {
 
     /* renamed from: a  reason: collision with root package name */
-    final SharedPreferences f17407a;
+    final SharedPreferences f17408a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class a {
 
         /* renamed from: d  reason: collision with root package name */
-        private static final long f17408d = TimeUnit.DAYS.toMillis(7);
+        private static final long f17409d = TimeUnit.DAYS.toMillis(7);
 
         /* renamed from: a  reason: collision with root package name */
-        final String f17409a;
+        final String f17410a;
 
         /* renamed from: b  reason: collision with root package name */
-        final String f17410b;
+        final String f17411b;
 
         /* renamed from: c  reason: collision with root package name */
-        final long f17411c;
+        final long f17412c;
 
         private a(String str, String str2, long j10) {
-            this.f17409a = str;
-            this.f17410b = str2;
-            this.f17411c = j10;
+            this.f17410a = str;
+            this.f17411b = str2;
+            this.f17412c = j10;
         }
 
         static String a(String str, String str2, long j10) {
@@ -69,7 +69,7 @@ public class v0 {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public boolean b(String str) {
-            if (System.currentTimeMillis() <= this.f17411c + f17408d && str.equals(this.f17410b)) {
+            if (System.currentTimeMillis() <= this.f17412c + f17409d && str.equals(this.f17411b)) {
                 return false;
             }
             return true;
@@ -77,7 +77,7 @@ public class v0 {
     }
 
     public v0(Context context) {
-        this.f17407a = context.getSharedPreferences("com.google.android.gms.appid", 0);
+        this.f17408a = context.getSharedPreferences("com.google.android.gms.appid", 0);
         a(context, "com.google.android.gms.appid-no-backup");
     }
 
@@ -102,15 +102,15 @@ public class v0 {
     }
 
     public synchronized void c() {
-        this.f17407a.edit().clear().commit();
+        this.f17408a.edit().clear().commit();
     }
 
     public synchronized a d(String str, String str2) {
-        return a.c(this.f17407a.getString(b(str, str2), null));
+        return a.c(this.f17408a.getString(b(str, str2), null));
     }
 
     public synchronized boolean e() {
-        return this.f17407a.getAll().isEmpty();
+        return this.f17408a.getAll().isEmpty();
     }
 
     public synchronized void f(String str, String str2, String str3, String str4) {
@@ -118,7 +118,7 @@ public class v0 {
         if (a10 == null) {
             return;
         }
-        SharedPreferences.Editor edit = this.f17407a.edit();
+        SharedPreferences.Editor edit = this.f17408a.edit();
         edit.putString(b(str, str2), a10);
         edit.commit();
     }

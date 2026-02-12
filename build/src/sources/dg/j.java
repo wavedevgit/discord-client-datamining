@@ -6,15 +6,15 @@ import com.google.android.gms.common.api.Status;
 final class j extends x {
 
     /* renamed from: c  reason: collision with root package name */
-    final /* synthetic */ zg.k f21674c;
+    final /* synthetic */ zg.k f21675c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j(k kVar, zg.k kVar2) {
-        this.f21674c = kVar2;
+        this.f21675c = kVar2;
     }
 
     @Override // dg.y
     public final void I0(Status status, PendingIntent pendingIntent) {
-        gf.r.a(status, pendingIntent, this.f21674c);
+        gf.r.a(status, pendingIntent, this.f21675c);
     }
 }

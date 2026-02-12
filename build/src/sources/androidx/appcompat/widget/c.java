@@ -55,7 +55,7 @@ public class c extends androidx.appcompat.view.menu.a implements b.a {
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a extends androidx.appcompat.view.menu.i {
         public a(Context context, androidx.appcompat.view.menu.m mVar, View view) {
-            super(context, mVar, view, false, f.a.f23284i);
+            super(context, mVar, view, false, f.a.f23285i);
             if (!((androidx.appcompat.view.menu.g) mVar.getItem()).l()) {
                 View view2 = c.this.f1731v;
                 f(view2 == null ? (View) ((androidx.appcompat.view.menu.a) c.this).f1398t : view2);
@@ -155,7 +155,7 @@ public class c extends androidx.appcompat.view.menu.a implements b.a {
         }
 
         public d(Context context) {
-            super(context, null, f.a.f23283h);
+            super(context, null, f.a.f23284h);
             setClickable(true);
             setFocusable(true);
             setVisibility(0);
@@ -205,7 +205,7 @@ public class c extends androidx.appcompat.view.menu.a implements b.a {
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class e extends androidx.appcompat.view.menu.i {
         public e(Context context, androidx.appcompat.view.menu.e eVar, View view, boolean z10) {
-            super(context, eVar, view, z10, f.a.f23284i);
+            super(context, eVar, view, z10, f.a.f23285i);
             h(8388613);
             j(c.this.N);
         }
@@ -295,7 +295,7 @@ public class c extends androidx.appcompat.view.menu.a implements b.a {
     }
 
     public c(Context context) {
-        super(context, f.g.f23378c, f.g.f23377b);
+        super(context, f.g.f23379c, f.g.f23378b);
         this.I = new SparseBooleanArray();
         this.N = new f();
     }

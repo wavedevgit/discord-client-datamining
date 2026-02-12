@@ -422,7 +422,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                     var2 = var6.bind(var8)(var3);
                                                 case 256:
                                                     if (var2) {
-                                                        _fun10364_ip = 536;
+                                                        _fun10364_ip = 534;
                                                         continue _fun10364
                                                     }
                                                 case 262:
@@ -433,14 +433,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                     var2 = var3.isWeb;
                                                     var2 = var2.bind(var3)();
                                                     if (var2) {
-                                                        _fun10364_ip = 461;
+                                                        _fun10364_ip = 460;
                                                         continue _fun10364
                                                     }
                                                 case 295:
                                                     var2 = _closure1_slot0;
                                                     var3 = _closure1_slot1;
                                                     if (var1) {
-                                                        _fun10364_ip = 346;
+                                                        _fun10364_ip = 345;
                                                         continue _fun10364
                                                     }
                                                 case 306:
@@ -451,9 +451,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                     var5 = var6.log;
                                                     var1 = 'Unhandled promise rejections will not be caught by Sentry.';
                                                     var1 = var5.bind(var6)(var1);
-                                                    _fun10364_ip = 681;
+                                                    _fun10364_ip = 677;
                                                     continue _fun10364;
-                                                case 346:
+                                                case 345:
                                                     var1 = 4;
                                                     var5 = var3[var1];
                                                     var6 = var2.bind(var0)(var5);
@@ -478,9 +478,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                     var2 = var2.bind(var0)(var1);
                                                     var1 = var2.checkPromiseAndWarn;
                                                     var1 = var1.bind(var2)();
-                                                    _fun10364_ip = 681;
+                                                    _fun10364_ip = 677;
                                                     continue _fun10364;
-                                                case 461:
+                                                case 460:
                                                     var2 = _closure1_slot0;
                                                     var3 = _closure1_slot1;
                                                     var1 = 2;
@@ -535,9 +535,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                         }
                                                     };
                                                     var1 = var2.bind(var3)(var1);
-                                                    _fun10364_ip = 681;
+                                                    _fun10364_ip = 677;
                                                     continue _fun10364;
-                                                case 536:
+                                                case 534:
                                                     var2 = _closure1_slot0;
                                                     var3 = _closure1_slot1;
                                                     var1 = 2;
@@ -568,10 +568,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                     var2 = var3.log;
                                                     var1 = 'Unhandled promise rejections will be caught by Sentry.';
                                                     var1 = var2.bind(var3)(var1);
-                                                case 681: // try_end0
-                                                    _fun10364_ip = 730;
+                                                case 677: // try_end0
+                                                    _fun10364_ip = 726;
                                                     continue _fun10364;
-                                                case 683: // catch_target0
+                                                case 679: // catch_target0
                                                     CatchBlockStart(arg_register = 1);
                                                     var2 = _closure1_slot0;
                                                     var3 = _closure1_slot1;
@@ -582,7 +582,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                     var2 = var3.warn;
                                                     var1 = 'Failed to set up promise rejection tracking. Unhandled promise rejections will not be caught by Sentry.See https://docs.sentry.io/platforms/react-native/troubleshooting/ for more details.';
                                                     var1 = var2.bind(var3)(var1);
-                                                case 730:
+                                                case 726:
                                                     return var0;
                                             }
                                         };
@@ -660,7 +660,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                                         StartGenerator();
                                                                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                                                         if (var1) {
-                                                                            _fun10369_ip = 469;
+                                                                            _fun10369_ip = 468;
                                                                             continue _fun10369
                                                                         }
                                                                     case 12:
@@ -821,7 +821,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                                         var1 = var3.bind(var4)(var1, var2);
                                                                         var1 = undefined;
                                                                         return var1;
-                                                                    case 469:
+                                                                    case 468:
                                                                         return var0;
                                                                 }
                                                             };

@@ -8,18 +8,18 @@ import java.util.List;
 public final class p {
 
     /* renamed from: a  reason: collision with root package name */
-    private final lr.h f45600a;
+    private final lr.h f45601a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final lr.h f45601b;
+    private final lr.h f45602b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final lr.h f45602c;
+    private final lr.h f45603c;
 
     public p(lr.h hVar, lr.h hVar2, lr.h hVar3) {
-        this.f45600a = hVar;
-        this.f45601b = hVar2;
-        this.f45602c = hVar3;
+        this.f45601a = hVar;
+        this.f45602b = hVar2;
+        this.f45603c = hVar3;
     }
 
     public static p a(lr.h hVar, lr.h hVar2, lr.h hVar3) {
@@ -31,6 +31,6 @@ public final class p {
     }
 
     public o b(String str, b bVar, m mVar, List list, StepStyles.UiStepStyle uiStepStyle, Integer num) {
-        return c((ActivityResultLauncher) this.f45600a.get(), (Context) this.f45601b.get(), (up.c) this.f45602c.get(), str, bVar, mVar, list, uiStepStyle, num);
+        return c((ActivityResultLauncher) this.f45601a.get(), (Context) this.f45602b.get(), (up.c) this.f45603c.get(), str, bVar, mVar, list, uiStepStyle, num);
     }
 }

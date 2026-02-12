@@ -18,7 +18,7 @@ public final class TimerEvent implements ReactEvent {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: id  reason: collision with root package name */
-    private final int f10441id;
+    private final int f10442id;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, d2 = {"Lcom/discord/timers/reactevents/TimerEvent$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/timers/reactevents/TimerEvent;", "react_timers_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -40,18 +40,18 @@ public final class TimerEvent implements ReactEvent {
         if (1 != (i10 & 1)) {
             v1.b(i10, 1, TimerEvent$$serializer.INSTANCE.getDescriptor());
         }
-        this.f10441id = i11;
+        this.f10442id = i11;
     }
 
     public static /* synthetic */ TimerEvent copy$default(TimerEvent timerEvent, int i10, int i11, Object obj) {
         if ((i11 & 1) != 0) {
-            i10 = timerEvent.f10441id;
+            i10 = timerEvent.f10442id;
         }
         return timerEvent.copy(i10);
     }
 
     public final int component1() {
-        return this.f10441id;
+        return this.f10442id;
     }
 
     @NotNull
@@ -63,15 +63,15 @@ public final class TimerEvent implements ReactEvent {
         if (this == obj) {
             return true;
         }
-        return (obj instanceof TimerEvent) && this.f10441id == ((TimerEvent) obj).f10441id;
+        return (obj instanceof TimerEvent) && this.f10442id == ((TimerEvent) obj).f10442id;
     }
 
     public final int getId() {
-        return this.f10441id;
+        return this.f10442id;
     }
 
     public int hashCode() {
-        return Integer.hashCode(this.f10441id);
+        return Integer.hashCode(this.f10442id);
     }
 
     @Override // com.discord.reactevents.ReactEvent
@@ -82,11 +82,11 @@ public final class TimerEvent implements ReactEvent {
 
     @NotNull
     public String toString() {
-        int i10 = this.f10441id;
+        int i10 = this.f10442id;
         return "TimerEvent(id=" + i10 + ")";
     }
 
     public TimerEvent(int i10) {
-        this.f10441id = i10;
+        this.f10442id = i10;
     }
 }

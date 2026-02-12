@@ -13,49 +13,49 @@ import java.util.Set;
 public class e implements ProducerContext {
 
     /* renamed from: y  reason: collision with root package name */
-    public static final Set f11328y = p8.g.b(StackTraceHelper.ID_KEY, "uri_source");
+    public static final Set f11329y = p8.g.b(StackTraceHelper.ID_KEY, "uri_source");
 
     /* renamed from: z  reason: collision with root package name */
-    public static final Object f11329z = new Object();
+    public static final Object f11330z = new Object();
 
     /* renamed from: d  reason: collision with root package name */
-    private final ImageRequest f11330d;
+    private final ImageRequest f11331d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f11331e;
+    private final String f11332e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f11332i;
+    private final String f11333i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final y0 f11333o;
+    private final y0 f11334o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Object f11334p;
+    private final Object f11335p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final ImageRequest.RequestLevel f11335q;
+    private final ImageRequest.RequestLevel f11336q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final Map f11336r;
+    private final Map f11337r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f11337s;
+    private boolean f11338s;
 
     /* renamed from: t  reason: collision with root package name */
-    private Priority f11338t;
+    private Priority f11339t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f11339u;
+    private boolean f11340u;
 
     /* renamed from: v  reason: collision with root package name */
-    private boolean f11340v;
+    private boolean f11341v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final List f11341w;
+    private final List f11342w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final oa.r f11342x;
+    private final oa.r f11343x;
 
     public e(ImageRequest imageRequest, String str, y0 y0Var, Object obj, ImageRequest.RequestLevel requestLevel, boolean z10, boolean z11, Priority priority, oa.r rVar) {
         this(imageRequest, str, null, null, y0Var, obj, requestLevel, z10, z11, priority, rVar);
@@ -99,12 +99,12 @@ public class e implements ProducerContext {
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
     public synchronized Priority C() {
-        return this.f11338t;
+        return this.f11339t;
     }
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
     public ImageRequest I() {
-        return this.f11330d;
+        return this.f11331d;
     }
 
     @Override // z9.a
@@ -118,17 +118,17 @@ public class e implements ProducerContext {
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
     public synchronized boolean Q() {
-        return this.f11337s;
+        return this.f11338s;
     }
 
     @Override // z9.a
     public Object Z(String str) {
-        return this.f11336r.get(str);
+        return this.f11337r.get(str);
     }
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
     public Object a() {
-        return this.f11334p;
+        return this.f11335p;
     }
 
     public void f() {
@@ -136,29 +136,29 @@ public class e implements ProducerContext {
     }
 
     public synchronized List g() {
-        if (this.f11340v) {
+        if (this.f11341v) {
             return null;
         }
-        this.f11340v = true;
-        return new ArrayList(this.f11341w);
+        this.f11341v = true;
+        return new ArrayList(this.f11342w);
     }
 
     @Override // z9.a
     public Map getExtras() {
-        return this.f11336r;
+        return this.f11337r;
     }
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
     public String getId() {
-        return this.f11331e;
+        return this.f11332e;
     }
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
     public void h(x0 x0Var) {
         boolean z10;
         synchronized (this) {
-            this.f11341w.add(x0Var);
-            z10 = this.f11340v;
+            this.f11342w.add(x0Var);
+            z10 = this.f11341v;
         }
         if (z10) {
             x0Var.b();
@@ -167,50 +167,50 @@ public class e implements ProducerContext {
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
     public oa.r i() {
-        return this.f11342x;
+        return this.f11343x;
     }
 
     public synchronized List j(boolean z10) {
-        if (z10 == this.f11339u) {
+        if (z10 == this.f11340u) {
             return null;
         }
-        this.f11339u = z10;
-        return new ArrayList(this.f11341w);
+        this.f11340u = z10;
+        return new ArrayList(this.f11342w);
     }
 
     public synchronized List k(boolean z10) {
-        if (z10 == this.f11337s) {
+        if (z10 == this.f11338s) {
             return null;
         }
-        this.f11337s = z10;
-        return new ArrayList(this.f11341w);
+        this.f11338s = z10;
+        return new ArrayList(this.f11342w);
     }
 
     public synchronized List l(Priority priority) {
-        if (priority == this.f11338t) {
+        if (priority == this.f11339t) {
             return null;
         }
-        this.f11338t = priority;
-        return new ArrayList(this.f11341w);
+        this.f11339t = priority;
+        return new ArrayList(this.f11342w);
     }
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
     public void m(String str, String str2) {
-        this.f11336r.put("origin", str);
-        this.f11336r.put("origin_sub", str2);
+        this.f11337r.put("origin", str);
+        this.f11337r.put("origin_sub", str2);
     }
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
     public String n() {
-        return this.f11332i;
+        return this.f11333i;
     }
 
     @Override // z9.a
     public void p(String str, Object obj) {
-        if (f11328y.contains(str)) {
+        if (f11329y.contains(str)) {
             return;
         }
-        this.f11336r.put(str, obj);
+        this.f11337r.put(str, obj);
     }
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
@@ -220,36 +220,36 @@ public class e implements ProducerContext {
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
     public y0 y() {
-        return this.f11333o;
+        return this.f11334o;
     }
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
     public synchronized boolean z() {
-        return this.f11339u;
+        return this.f11340u;
     }
 
     @Override // com.facebook.imagepipeline.producers.ProducerContext
     public ImageRequest.RequestLevel z0() {
-        return this.f11335q;
+        return this.f11336q;
     }
 
     public e(ImageRequest imageRequest, String str, String str2, Map map, y0 y0Var, Object obj, ImageRequest.RequestLevel requestLevel, boolean z10, boolean z11, Priority priority, oa.r rVar) {
-        this.f11330d = imageRequest;
-        this.f11331e = str;
+        this.f11331d = imageRequest;
+        this.f11332e = str;
         HashMap hashMap = new HashMap();
-        this.f11336r = hashMap;
+        this.f11337r = hashMap;
         hashMap.put(StackTraceHelper.ID_KEY, str);
         hashMap.put("uri_source", imageRequest == null ? "null-request" : imageRequest.getSourceUri());
         J(map);
-        this.f11332i = str2;
-        this.f11333o = y0Var;
-        this.f11334p = obj == null ? f11329z : obj;
-        this.f11335q = requestLevel;
-        this.f11337s = z10;
-        this.f11338t = priority;
-        this.f11339u = z11;
-        this.f11340v = false;
-        this.f11341w = new ArrayList();
-        this.f11342x = rVar;
+        this.f11333i = str2;
+        this.f11334o = y0Var;
+        this.f11335p = obj == null ? f11330z : obj;
+        this.f11336q = requestLevel;
+        this.f11338s = z10;
+        this.f11339t = priority;
+        this.f11340u = z11;
+        this.f11341v = false;
+        this.f11342w = new ArrayList();
+        this.f11343x = rVar;
     }
 }

@@ -89,7 +89,7 @@ public final class ReadableMapBuffer extends HybridClassBase implements MapBuffe
 
         @Override // com.facebook.react.common.mapbuffer.MapBuffer.Entry
         public int getKey() {
-            return ReadableMapBuffer.this.m1160readUnsignedShortBwKQO78(this.bucketOffset) & 65535;
+            return ReadableMapBuffer.this.m1159readUnsignedShortBwKQO78(this.bucketOffset) & 65535;
         }
 
         @Override // com.facebook.react.common.mapbuffer.MapBuffer.Entry
@@ -116,9 +116,9 @@ public final class ReadableMapBuffer extends HybridClassBase implements MapBuffe
         @NotNull
         public MapBuffer.DataType getType() {
             if (ReactNativeFeatureFlags.enableAndroidTextMeasurementOptimizations()) {
-                return ReadableMapBuffer.DATA_TYPES[65535 & ReadableMapBuffer.this.m1160readUnsignedShortBwKQO78(this.bucketOffset + 2)];
+                return ReadableMapBuffer.DATA_TYPES[65535 & ReadableMapBuffer.this.m1159readUnsignedShortBwKQO78(this.bucketOffset + 2)];
             }
-            return MapBuffer.DataType.values()[65535 & ReadableMapBuffer.this.m1160readUnsignedShortBwKQO78(this.bucketOffset + 2)];
+            return MapBuffer.DataType.values()[65535 & ReadableMapBuffer.this.m1159readUnsignedShortBwKQO78(this.bucketOffset + 2)];
         }
     }
 
@@ -180,11 +180,11 @@ public final class ReadableMapBuffer extends HybridClassBase implements MapBuffe
             int i11 = 0;
             while (i11 <= count) {
                 int i12 = (i11 + count) >>> 1;
-                int m1160readUnsignedShortBwKQO78 = m1160readUnsignedShortBwKQO78(getKeyOffsetForBucketIndex(i12)) & 65535;
+                int m1159readUnsignedShortBwKQO78 = m1159readUnsignedShortBwKQO78(getKeyOffsetForBucketIndex(i12)) & 65535;
                 int i13 = 65535 & d11;
-                if (Intrinsics.compare(m1160readUnsignedShortBwKQO78, i13) < 0) {
+                if (Intrinsics.compare(m1159readUnsignedShortBwKQO78, i13) < 0) {
                     i11 = i12 + 1;
-                } else if (Intrinsics.compare(m1160readUnsignedShortBwKQO78, i13) > 0) {
+                } else if (Intrinsics.compare(m1159readUnsignedShortBwKQO78, i13) > 0) {
                     count = i12 - 1;
                 } else {
                     return i12;
@@ -224,11 +224,11 @@ public final class ReadableMapBuffer extends HybridClassBase implements MapBuffe
     }
 
     private final MapBuffer.DataType readDataType(int i10) {
-        int m1160readUnsignedShortBwKQO78 = m1160readUnsignedShortBwKQO78(getKeyOffsetForBucketIndex(i10) + 2) & 65535;
+        int m1159readUnsignedShortBwKQO78 = m1159readUnsignedShortBwKQO78(getKeyOffsetForBucketIndex(i10) + 2) & 65535;
         if (ReactNativeFeatureFlags.enableAndroidTextMeasurementOptimizations()) {
-            return DATA_TYPES[m1160readUnsignedShortBwKQO78];
+            return DATA_TYPES[m1159readUnsignedShortBwKQO78];
         }
-        return MapBuffer.DataType.values()[m1160readUnsignedShortBwKQO78];
+        return MapBuffer.DataType.values()[m1159readUnsignedShortBwKQO78];
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -240,7 +240,7 @@ public final class ReadableMapBuffer extends HybridClassBase implements MapBuffe
         if (this.buffer.getShort() != ALIGNMENT) {
             this.buffer.order(ByteOrder.LITTLE_ENDIAN);
         }
-        this.count = m1160readUnsignedShortBwKQO78(this.buffer.position()) & 65535;
+        this.count = m1159readUnsignedShortBwKQO78(this.buffer.position()) & 65535;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -285,7 +285,7 @@ public final class ReadableMapBuffer extends HybridClassBase implements MapBuffe
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: readUnsignedShort-BwKQO78  reason: not valid java name */
-    public final short m1160readUnsignedShortBwKQO78(int i10) {
+    public final short m1159readUnsignedShortBwKQO78(int i10) {
         return e0.d(this.buffer.getShort(i10));
     }
 

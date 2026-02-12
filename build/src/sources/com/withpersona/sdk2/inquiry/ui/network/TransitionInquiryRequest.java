@@ -11,13 +11,13 @@ import pq.k5;
 public final class TransitionInquiryRequest {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f20847c = new a(null);
+    public static final a f20848c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Data f20848a;
+    private final Data f20849a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Meta f20849b;
+    private final Meta f20850b;
 
     @i(generateAdapter = true)
     @kotlin.Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0002\b\u0007\b\u0007\u0018\u00002\u00020\u0001B\u001d\u0012\u0014\u0010\u0005\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u0002¢\u0006\u0004\b\u0006\u0010\u0007R%\u0010\u0005\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00028\u0006¢\u0006\f\n\u0004\b\b\u0010\t\u001a\u0004\b\b\u0010\n¨\u0006\u000b"}, d2 = {"Lcom/withpersona/sdk2/inquiry/ui/network/TransitionInquiryRequest$Attributes;", "", "", "", "Lcom/withpersona/sdk2/inquiry/ui/network/ComponentParam;", "componentParams", "<init>", "(Ljava/util/Map;)V", "a", "Ljava/util/Map;", "()Ljava/util/Map;", "ui_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -25,14 +25,14 @@ public final class TransitionInquiryRequest {
     public static final class Attributes {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Map f20850a;
+        private final Map f20851a;
 
         public Attributes(Map map) {
-            this.f20850a = map;
+            this.f20851a = map;
         }
 
         public final Map a() {
-            return this.f20850a;
+            return this.f20851a;
         }
     }
 
@@ -42,15 +42,15 @@ public final class TransitionInquiryRequest {
     public static final class Data {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Attributes f20851a;
+        private final Attributes f20852a;
 
         public Data(Attributes attributes) {
             Intrinsics.checkNotNullParameter(attributes, "attributes");
-            this.f20851a = attributes;
+            this.f20852a = attributes;
         }
 
         public final Attributes a() {
-            return this.f20851a;
+            return this.f20852a;
         }
     }
 
@@ -60,24 +60,24 @@ public final class TransitionInquiryRequest {
     public static final class Meta {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f20852a;
+        private final String f20853a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f20853b;
+        private final String f20854b;
 
         public Meta(String fromComponent, String fromStep) {
             Intrinsics.checkNotNullParameter(fromComponent, "fromComponent");
             Intrinsics.checkNotNullParameter(fromStep, "fromStep");
-            this.f20852a = fromComponent;
-            this.f20853b = fromStep;
+            this.f20853a = fromComponent;
+            this.f20854b = fromStep;
         }
 
         public final String a() {
-            return this.f20852a;
+            return this.f20853a;
         }
 
         public final String b() {
-            return this.f20853b;
+            return this.f20854b;
         }
     }
 
@@ -101,15 +101,15 @@ public final class TransitionInquiryRequest {
     public TransitionInquiryRequest(Data data, Meta meta) {
         Intrinsics.checkNotNullParameter(data, "data");
         Intrinsics.checkNotNullParameter(meta, "meta");
-        this.f20848a = data;
-        this.f20849b = meta;
+        this.f20849a = data;
+        this.f20850b = meta;
     }
 
     public final Data a() {
-        return this.f20848a;
+        return this.f20849a;
     }
 
     public final Meta b() {
-        return this.f20849b;
+        return this.f20850b;
     }
 }

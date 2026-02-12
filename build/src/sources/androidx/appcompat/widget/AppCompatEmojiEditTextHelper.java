@@ -42,11 +42,11 @@ class AppCompatEmojiEditTextHelper {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void d(AttributeSet attributeSet, int i10) {
-        TypedArray obtainStyledAttributes = this.f1581a.getContext().obtainStyledAttributes(attributeSet, f.j.f23447g0, i10, 0);
+        TypedArray obtainStyledAttributes = this.f1581a.getContext().obtainStyledAttributes(attributeSet, f.j.f23448g0, i10, 0);
         try {
             boolean z10 = true;
-            if (obtainStyledAttributes.hasValue(f.j.f23517u0)) {
-                z10 = obtainStyledAttributes.getBoolean(f.j.f23517u0, true);
+            if (obtainStyledAttributes.hasValue(f.j.f23518u0)) {
+                z10 = obtainStyledAttributes.getBoolean(f.j.f23518u0, true);
             }
             obtainStyledAttributes.recycle();
             f(z10);

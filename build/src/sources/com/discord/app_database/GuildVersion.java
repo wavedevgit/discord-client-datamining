@@ -20,7 +20,7 @@ public final class GuildVersion {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9147id;
+    private final String f9148id;
     private final long version;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, d2 = {"Lcom/discord/app_database/GuildVersion$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/app_database/GuildVersion;", "app_database_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
@@ -43,13 +43,13 @@ public final class GuildVersion {
         if (3 != (i10 & 3)) {
             v1.b(i10, 3, GuildVersion$$serializer.INSTANCE.getDescriptor());
         }
-        this.f9147id = str;
+        this.f9148id = str;
         this.version = j10;
     }
 
     public static /* synthetic */ GuildVersion copy$default(GuildVersion guildVersion, String str, long j10, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = guildVersion.f9147id;
+            str = guildVersion.f9148id;
         }
         if ((i10 & 2) != 0) {
             j10 = guildVersion.version;
@@ -58,13 +58,13 @@ public final class GuildVersion {
     }
 
     public static final /* synthetic */ void write$Self$app_database_release(GuildVersion guildVersion, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        compositeEncoder.y(serialDescriptor, 0, guildVersion.f9147id);
+        compositeEncoder.y(serialDescriptor, 0, guildVersion.f9148id);
         compositeEncoder.E(serialDescriptor, 1, guildVersion.version);
     }
 
     @NotNull
     public final String component1() {
-        return this.f9147id;
+        return this.f9148id;
     }
 
     public final long component2() {
@@ -83,14 +83,14 @@ public final class GuildVersion {
         }
         if (obj instanceof GuildVersion) {
             GuildVersion guildVersion = (GuildVersion) obj;
-            return Intrinsics.areEqual(this.f9147id, guildVersion.f9147id) && this.version == guildVersion.version;
+            return Intrinsics.areEqual(this.f9148id, guildVersion.f9148id) && this.version == guildVersion.version;
         }
         return false;
     }
 
     @NotNull
     public final String getId() {
-        return this.f9147id;
+        return this.f9148id;
     }
 
     public final long getVersion() {
@@ -98,19 +98,19 @@ public final class GuildVersion {
     }
 
     public int hashCode() {
-        return (this.f9147id.hashCode() * 31) + Long.hashCode(this.version);
+        return (this.f9148id.hashCode() * 31) + Long.hashCode(this.version);
     }
 
     @NotNull
     public String toString() {
-        String str = this.f9147id;
+        String str = this.f9148id;
         long j10 = this.version;
         return "GuildVersion(id=" + str + ", version=" + j10 + ")";
     }
 
     public GuildVersion(@NotNull String id2, long j10) {
         Intrinsics.checkNotNullParameter(id2, "id");
-        this.f9147id = id2;
+        this.f9148id = id2;
         this.version = j10;
     }
 }

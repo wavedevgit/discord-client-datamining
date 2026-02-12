@@ -15,55 +15,55 @@ import oe.w0;
 public final class n {
 
     /* renamed from: a  reason: collision with root package name */
-    private final pe.e f41682a = new pe.e();
+    private final pe.e f41683a = new pe.e();
 
     /* renamed from: b  reason: collision with root package name */
-    private final b f41683b;
+    private final b f41684b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final e f41684c;
+    private final e f41685c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f41685d;
+    private boolean f41686d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Surface f41686e;
+    private Surface f41687e;
 
     /* renamed from: f  reason: collision with root package name */
-    private float f41687f;
+    private float f41688f;
 
     /* renamed from: g  reason: collision with root package name */
-    private float f41688g;
+    private float f41689g;
 
     /* renamed from: h  reason: collision with root package name */
-    private float f41689h;
+    private float f41690h;
 
     /* renamed from: i  reason: collision with root package name */
-    private float f41690i;
+    private float f41691i;
 
     /* renamed from: j  reason: collision with root package name */
-    private int f41691j;
+    private int f41692j;
 
     /* renamed from: k  reason: collision with root package name */
-    private long f41692k;
+    private long f41693k;
 
     /* renamed from: l  reason: collision with root package name */
-    private long f41693l;
+    private long f41694l;
 
     /* renamed from: m  reason: collision with root package name */
-    private long f41694m;
+    private long f41695m;
 
     /* renamed from: n  reason: collision with root package name */
-    private long f41695n;
+    private long f41696n;
 
     /* renamed from: o  reason: collision with root package name */
-    private long f41696o;
+    private long f41697o;
 
     /* renamed from: p  reason: collision with root package name */
-    private long f41697p;
+    private long f41698p;
 
     /* renamed from: q  reason: collision with root package name */
-    private long f41698q;
+    private long f41699q;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -101,37 +101,37 @@ public final class n {
     private static final class e implements Choreographer.FrameCallback, Handler.Callback {
 
         /* renamed from: q  reason: collision with root package name */
-        private static final e f41702q = new e();
+        private static final e f41703q = new e();
 
         /* renamed from: d  reason: collision with root package name */
-        public volatile long f41703d = -9223372036854775807L;
+        public volatile long f41704d = -9223372036854775807L;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Handler f41704e;
+        private final Handler f41705e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final HandlerThread f41705i;
+        private final HandlerThread f41706i;
 
         /* renamed from: o  reason: collision with root package name */
-        private Choreographer f41706o;
+        private Choreographer f41707o;
 
         /* renamed from: p  reason: collision with root package name */
-        private int f41707p;
+        private int f41708p;
 
         private e() {
             HandlerThread handlerThread = new HandlerThread("ExoPlayer:FrameReleaseChoreographer");
-            this.f41705i = handlerThread;
+            this.f41706i = handlerThread;
             handlerThread.start();
             Handler v10 = w0.v(handlerThread.getLooper(), this);
-            this.f41704e = v10;
+            this.f41705e = v10;
             v10.sendEmptyMessage(0);
         }
 
         private void b() {
-            Choreographer choreographer = this.f41706o;
+            Choreographer choreographer = this.f41707o;
             if (choreographer != null) {
-                int i10 = this.f41707p + 1;
-                this.f41707p = i10;
+                int i10 = this.f41708p + 1;
+                this.f41708p = i10;
                 if (i10 == 1) {
                     choreographer.postFrameCallback(this);
                 }
@@ -140,40 +140,40 @@ public final class n {
 
         private void c() {
             try {
-                this.f41706o = Choreographer.getInstance();
+                this.f41707o = Choreographer.getInstance();
             } catch (RuntimeException e10) {
                 oe.y.j("VideoFrameReleaseHelper", "Vsync sampling disabled due to platform error", e10);
             }
         }
 
         public static e d() {
-            return f41702q;
+            return f41703q;
         }
 
         private void f() {
-            Choreographer choreographer = this.f41706o;
+            Choreographer choreographer = this.f41707o;
             if (choreographer != null) {
-                int i10 = this.f41707p - 1;
-                this.f41707p = i10;
+                int i10 = this.f41708p - 1;
+                this.f41708p = i10;
                 if (i10 == 0) {
                     choreographer.removeFrameCallback(this);
-                    this.f41703d = -9223372036854775807L;
+                    this.f41704d = -9223372036854775807L;
                 }
             }
         }
 
         public void a() {
-            this.f41704e.sendEmptyMessage(1);
+            this.f41705e.sendEmptyMessage(1);
         }
 
         @Override // android.view.Choreographer.FrameCallback
         public void doFrame(long j10) {
-            this.f41703d = j10;
-            ((Choreographer) oe.a.e(this.f41706o)).postFrameCallbackDelayed(this, 500L);
+            this.f41704d = j10;
+            ((Choreographer) oe.a.e(this.f41707o)).postFrameCallbackDelayed(this, 500L);
         }
 
         public void e() {
-            this.f41704e.sendEmptyMessage(2);
+            this.f41705e.sendEmptyMessage(2);
         }
 
         @Override // android.os.Handler.Callback
@@ -198,18 +198,18 @@ public final class n {
     public n(Context context) {
         e eVar;
         b f10 = f(context);
-        this.f41683b = f10;
+        this.f41684b = f10;
         if (f10 != null) {
             eVar = e.d();
         } else {
             eVar = null;
         }
-        this.f41684c = eVar;
-        this.f41692k = -9223372036854775807L;
-        this.f41693l = -9223372036854775807L;
-        this.f41687f = -1.0f;
-        this.f41690i = 1.0f;
-        this.f41691j = 0;
+        this.f41685c = eVar;
+        this.f41693k = -9223372036854775807L;
+        this.f41694l = -9223372036854775807L;
+        this.f41688f = -1.0f;
+        this.f41691i = 1.0f;
+        this.f41692j = 0;
     }
 
     private static boolean c(long j10, long j11) {
@@ -221,8 +221,8 @@ public final class n {
 
     private void d() {
         Surface surface;
-        if (w0.f39037a >= 30 && (surface = this.f41686e) != null && this.f41691j != Integer.MIN_VALUE && this.f41689h != 0.0f) {
-            this.f41689h = 0.0f;
+        if (w0.f39038a >= 30 && (surface = this.f41687e) != null && this.f41692j != Integer.MIN_VALUE && this.f41690h != 0.0f) {
+            this.f41690h = 0.0f;
             a.a(surface, 0.0f);
         }
     }
@@ -247,7 +247,7 @@ public final class n {
         b bVar = null;
         if (context != null) {
             Context applicationContext = context.getApplicationContext();
-            if (w0.f39037a >= 17) {
+            if (w0.f39038a >= 17) {
                 bVar = d.d(applicationContext);
             }
             if (bVar == null) {
@@ -258,49 +258,49 @@ public final class n {
     }
 
     private void n() {
-        this.f41694m = 0L;
-        this.f41697p = -1L;
-        this.f41695n = -1L;
+        this.f41695m = 0L;
+        this.f41698p = -1L;
+        this.f41696n = -1L;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void p(Display display) {
         if (display != null) {
             long refreshRate = (long) (1.0E9d / display.getRefreshRate());
-            this.f41692k = refreshRate;
-            this.f41693l = (refreshRate * 80) / 100;
+            this.f41693k = refreshRate;
+            this.f41694l = (refreshRate * 80) / 100;
             return;
         }
         oe.y.i("VideoFrameReleaseHelper", "Unable to query display refresh rate");
-        this.f41692k = -9223372036854775807L;
-        this.f41693l = -9223372036854775807L;
+        this.f41693k = -9223372036854775807L;
+        this.f41694l = -9223372036854775807L;
     }
 
     private void q() {
         float f10;
         float f11;
-        if (w0.f39037a >= 30 && this.f41686e != null) {
-            if (this.f41682a.e()) {
-                f10 = this.f41682a.b();
+        if (w0.f39038a >= 30 && this.f41687e != null) {
+            if (this.f41683a.e()) {
+                f10 = this.f41683a.b();
             } else {
-                f10 = this.f41687f;
+                f10 = this.f41688f;
             }
-            float f12 = this.f41688g;
+            float f12 = this.f41689g;
             if (f10 != f12) {
                 int i10 = (f10 > (-1.0f) ? 1 : (f10 == (-1.0f) ? 0 : -1));
                 if (i10 != 0 && f12 != -1.0f) {
-                    if (this.f41682a.e() && this.f41682a.d() >= 5000000000L) {
+                    if (this.f41683a.e() && this.f41683a.d() >= 5000000000L) {
                         f11 = 0.02f;
                     } else {
                         f11 = 1.0f;
                     }
-                    if (Math.abs(f10 - this.f41688g) < f11) {
+                    if (Math.abs(f10 - this.f41689g) < f11) {
                         return;
                     }
-                } else if (i10 == 0 && this.f41682a.c() < 30) {
+                } else if (i10 == 0 && this.f41683a.c() < 30) {
                     return;
                 }
-                this.f41688g = f10;
+                this.f41689g = f10;
                 r(false);
             }
         }
@@ -309,13 +309,13 @@ public final class n {
     private void r(boolean z10) {
         Surface surface;
         float f10;
-        if (w0.f39037a >= 30 && (surface = this.f41686e) != null && this.f41691j != Integer.MIN_VALUE) {
-            if (this.f41685d) {
-                float f11 = this.f41688g;
+        if (w0.f39038a >= 30 && (surface = this.f41687e) != null && this.f41692j != Integer.MIN_VALUE) {
+            if (this.f41686d) {
+                float f11 = this.f41689g;
                 if (f11 != -1.0f) {
-                    f10 = f11 * this.f41690i;
-                    if (!z10 || this.f41689h != f10) {
-                        this.f41689h = f10;
+                    f10 = f11 * this.f41691i;
+                    if (!z10 || this.f41690h != f10) {
+                        this.f41690h = f10;
                         a.a(surface, f10);
                     }
                     return;
@@ -324,7 +324,7 @@ public final class n {
             f10 = 0.0f;
             if (!z10) {
             }
-            this.f41689h = f10;
+            this.f41690h = f10;
             a.a(surface, f10);
         }
     }
@@ -337,22 +337,22 @@ public final class n {
     public long b(long r11) {
         /*
             r10 = this;
-            long r0 = r10.f41697p
+            long r0 = r10.f41698p
             r2 = -1
             int r0 = (r0 > r2 ? 1 : (r0 == r2 ? 0 : -1))
             if (r0 == 0) goto L2f
-            pe.e r0 = r10.f41682a
+            pe.e r0 = r10.f41683a
             boolean r0 = r0.e()
             if (r0 == 0) goto L2f
-            pe.e r0 = r10.f41682a
+            pe.e r0 = r10.f41683a
             long r0 = r0.a()
-            long r2 = r10.f41698q
-            long r4 = r10.f41694m
-            long r6 = r10.f41697p
+            long r2 = r10.f41699q
+            long r4 = r10.f41695m
+            long r6 = r10.f41698p
             long r4 = r4 - r6
             long r0 = r0 * r4
             float r0 = (float) r0
-            float r1 = r10.f41690i
+            float r1 = r10.f41691i
             float r0 = r0 / r1
             long r0 = (long) r0
             long r2 = r2 + r0
@@ -365,25 +365,25 @@ public final class n {
         L2f:
             r4 = r11
         L30:
-            long r11 = r10.f41694m
-            r10.f41695n = r11
-            r10.f41696o = r4
-            pe.n$e r11 = r10.f41684c
+            long r11 = r10.f41695m
+            r10.f41696n = r11
+            r10.f41697o = r4
+            pe.n$e r11 = r10.f41685c
             if (r11 == 0) goto L57
-            long r0 = r10.f41692k
+            long r0 = r10.f41693k
             r2 = -9223372036854775807(0x8000000000000001, double:-4.9E-324)
             int r12 = (r0 > r2 ? 1 : (r0 == r2 ? 0 : -1))
             if (r12 != 0) goto L46
             goto L57
         L46:
-            long r6 = r11.f41703d
+            long r6 = r11.f41704d
             int r11 = (r6 > r2 ? 1 : (r6 == r2 ? 0 : -1))
             if (r11 != 0) goto L4d
             goto L57
         L4d:
-            long r8 = r10.f41692k
+            long r8 = r10.f41693k
             long r11 = e(r4, r6, r8)
-            long r0 = r10.f41693l
+            long r0 = r10.f41694l
             long r11 = r11 - r0
             return r11
         L57:
@@ -393,24 +393,24 @@ public final class n {
     }
 
     public void g(float f10) {
-        this.f41687f = f10;
-        this.f41682a.g();
+        this.f41688f = f10;
+        this.f41683a.g();
         q();
     }
 
     public void h(long j10) {
-        long j11 = this.f41695n;
+        long j11 = this.f41696n;
         if (j11 != -1) {
-            this.f41697p = j11;
-            this.f41698q = this.f41696o;
+            this.f41698p = j11;
+            this.f41699q = this.f41697o;
         }
-        this.f41694m++;
-        this.f41682a.f(j10 * 1000);
+        this.f41695m++;
+        this.f41683a.f(j10 * 1000);
         q();
     }
 
     public void i(float f10) {
-        this.f41690i = f10;
+        this.f41691i = f10;
         n();
         r(false);
     }
@@ -420,11 +420,11 @@ public final class n {
     }
 
     public void k() {
-        this.f41685d = true;
+        this.f41686d = true;
         n();
-        if (this.f41683b != null) {
-            ((e) oe.a.e(this.f41684c)).a();
-            this.f41683b.b(new b.a() { // from class: pe.m
+        if (this.f41684b != null) {
+            ((e) oe.a.e(this.f41685c)).a();
+            this.f41684b.b(new b.a() { // from class: pe.m
                 @Override // pe.n.b.a
                 public final void a(Display display) {
                     n.this.p(display);
@@ -435,11 +435,11 @@ public final class n {
     }
 
     public void l() {
-        this.f41685d = false;
-        b bVar = this.f41683b;
+        this.f41686d = false;
+        b bVar = this.f41684b;
         if (bVar != null) {
             bVar.a();
-            ((e) oe.a.e(this.f41684c)).e();
+            ((e) oe.a.e(this.f41685c)).e();
         }
         d();
     }
@@ -448,19 +448,19 @@ public final class n {
         if (surface instanceof i) {
             surface = null;
         }
-        if (this.f41686e == surface) {
+        if (this.f41687e == surface) {
             return;
         }
         d();
-        this.f41686e = surface;
+        this.f41687e = surface;
         r(true);
     }
 
     public void o(int i10) {
-        if (this.f41691j == i10) {
+        if (this.f41692j == i10) {
             return;
         }
-        this.f41691j = i10;
+        this.f41692j = i10;
         r(true);
     }
 
@@ -469,10 +469,10 @@ public final class n {
     public static final class c implements b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final WindowManager f41699a;
+        private final WindowManager f41700a;
 
         private c(WindowManager windowManager) {
-            this.f41699a = windowManager;
+            this.f41700a = windowManager;
         }
 
         public static b c(Context context) {
@@ -485,7 +485,7 @@ public final class n {
 
         @Override // pe.n.b
         public void b(b.a aVar) {
-            aVar.a(this.f41699a.getDefaultDisplay());
+            aVar.a(this.f41700a.getDefaultDisplay());
         }
 
         @Override // pe.n.b
@@ -498,17 +498,17 @@ public final class n {
     public static final class d implements b, DisplayManager.DisplayListener {
 
         /* renamed from: a  reason: collision with root package name */
-        private final DisplayManager f41700a;
+        private final DisplayManager f41701a;
 
         /* renamed from: b  reason: collision with root package name */
-        private b.a f41701b;
+        private b.a f41702b;
 
         private d(DisplayManager displayManager) {
-            this.f41700a = displayManager;
+            this.f41701a = displayManager;
         }
 
         private Display c() {
-            return this.f41700a.getDisplay(0);
+            return this.f41701a.getDisplay(0);
         }
 
         public static b d(Context context) {
@@ -521,20 +521,20 @@ public final class n {
 
         @Override // pe.n.b
         public void a() {
-            this.f41700a.unregisterDisplayListener(this);
-            this.f41701b = null;
+            this.f41701a.unregisterDisplayListener(this);
+            this.f41702b = null;
         }
 
         @Override // pe.n.b
         public void b(b.a aVar) {
-            this.f41701b = aVar;
-            this.f41700a.registerDisplayListener(this, w0.w());
+            this.f41702b = aVar;
+            this.f41701a.registerDisplayListener(this, w0.w());
             aVar.a(c());
         }
 
         @Override // android.hardware.display.DisplayManager.DisplayListener
         public void onDisplayChanged(int i10) {
-            b.a aVar = this.f41701b;
+            b.a aVar = this.f41702b;
             if (aVar != null && i10 == 0) {
                 aVar.a(c());
             }

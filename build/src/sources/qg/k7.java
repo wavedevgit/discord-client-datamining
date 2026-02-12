@@ -5,16 +5,16 @@ import bj.c;
 final class k7 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k7 f44640a = new k7();
+    static final k7 f44641a = new k7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f44641b;
+    private static final bj.c f44642b;
 
     static {
         c.b a10 = bj.c.a("confidence");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f44641b = a10.b(s1Var.b()).a();
+        f44642b = a10.b(s1Var.b()).a();
     }
 
     private k7() {

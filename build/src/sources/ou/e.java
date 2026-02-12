@@ -10,57 +10,57 @@ import okio.Sink;
 public class e extends j {
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function1 f41314e;
+    private final Function1 f41315e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f41315i;
+    private boolean f41316i;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public e(Sink delegate, Function1 onException) {
         super(delegate);
         Intrinsics.checkNotNullParameter(delegate, "delegate");
         Intrinsics.checkNotNullParameter(onException, "onException");
-        this.f41314e = onException;
+        this.f41315e = onException;
     }
 
     @Override // av.j, okio.Sink, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        if (this.f41315i) {
+        if (this.f41316i) {
             return;
         }
         try {
             super.close();
         } catch (IOException e10) {
-            this.f41315i = true;
-            this.f41314e.invoke(e10);
+            this.f41316i = true;
+            this.f41315e.invoke(e10);
         }
     }
 
     @Override // av.j, okio.Sink, java.io.Flushable
     public void flush() {
-        if (this.f41315i) {
+        if (this.f41316i) {
             return;
         }
         try {
             super.flush();
         } catch (IOException e10) {
-            this.f41315i = true;
-            this.f41314e.invoke(e10);
+            this.f41316i = true;
+            this.f41315e.invoke(e10);
         }
     }
 
     @Override // av.j, okio.Sink
     public void u0(Buffer source, long j10) {
         Intrinsics.checkNotNullParameter(source, "source");
-        if (this.f41315i) {
+        if (this.f41316i) {
             source.skip(j10);
             return;
         }
         try {
             super.u0(source, j10);
         } catch (IOException e10) {
-            this.f41315i = true;
-            this.f41314e.invoke(e10);
+            this.f41316i = true;
+            this.f41315e.invoke(e10);
         }
     }
 }

@@ -25,7 +25,6 @@ import com.discord.react_asset_fetcher.ReactAssetUtilsKt;
 import com.discord.react_gesture_handler.nested_touch.NestedScrollOnTouchUtilsKt;
 import com.discord.react_strings.I18nMessage;
 import com.discord.react_strings.I18nUtilsKt;
-import com.discord.theme.R;
 import com.discord.theme.ThemeManagerKt;
 import com.discord.theme.utils.ColorUtilsKt;
 import com.facebook.drawee.view.SimpleDraweeView;
@@ -146,8 +145,8 @@ public final class CallSystemMessageView extends ChatListConstraintLayout {
     public CallSystemMessageView(@NotNull Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.greenIconColor = ColorUtilsKt.getColorCompat(this, R.color.green_360);
-        this.redIconColor = ColorUtilsKt.getColorCompat(this, R.color.red_400);
+        this.greenIconColor = ThemeManagerKt.getTheme().getIconVoiceConnected();
+        this.redIconColor = ThemeManagerKt.getTheme().getIconVoiceDisconnected();
         this.grayIconColor = ThemeManagerKt.getTheme().getInteractiveTextDefault();
         CallSystemMessageViewBinding inflate = CallSystemMessageViewBinding.inflate(LayoutInflater.from(context), this);
         Intrinsics.checkNotNullExpressionValue(inflate, "inflate(...)");

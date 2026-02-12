@@ -6,7 +6,7 @@ import x5.c;
 abstract class y {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f52345a = c.a.a("nm", "mm", "hd");
+    private static final c.a f52346a = c.a.a("nm", "mm", "hd");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static t5.j a(x5.c cVar) {
@@ -14,7 +14,7 @@ abstract class y {
         boolean z10 = false;
         j.a aVar = null;
         while (cVar.hasNext()) {
-            int p10 = cVar.p(f52345a);
+            int p10 = cVar.p(f52346a);
             if (p10 != 0) {
                 if (p10 != 1) {
                     if (p10 != 2) {

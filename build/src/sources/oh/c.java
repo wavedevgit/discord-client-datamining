@@ -13,20 +13,20 @@ import java.util.Objects;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final d f40085a = a();
+    private final d f40086a = a();
 
     /* renamed from: b  reason: collision with root package name */
-    private final oh.b f40086b;
+    private final oh.b f40087b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final View f40087c;
+    private final View f40088c;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class b implements d {
 
         /* renamed from: a  reason: collision with root package name */
-        private OnBackInvokedCallback f40088a;
+        private OnBackInvokedCallback f40089a;
 
         private b() {
         }
@@ -35,11 +35,11 @@ public final class c {
         public void a(@NonNull oh.b bVar, @NonNull View view, boolean z10) {
             OnBackInvokedDispatcher findOnBackInvokedDispatcher;
             int i10;
-            if (this.f40088a != null || (findOnBackInvokedDispatcher = view.findOnBackInvokedDispatcher()) == null) {
+            if (this.f40089a != null || (findOnBackInvokedDispatcher = view.findOnBackInvokedDispatcher()) == null) {
                 return;
             }
             OnBackInvokedCallback c10 = c(bVar);
-            this.f40088a = c10;
+            this.f40089a = c10;
             if (z10) {
                 i10 = 1000000;
             } else {
@@ -51,11 +51,11 @@ public final class c {
         @Override // oh.c.d
         public void b(@NonNull View view) {
             OnBackInvokedDispatcher findOnBackInvokedDispatcher;
-            if (this.f40088a == null || (findOnBackInvokedDispatcher = view.findOnBackInvokedDispatcher()) == null) {
+            if (this.f40089a == null || (findOnBackInvokedDispatcher = view.findOnBackInvokedDispatcher()) == null) {
                 return;
             }
-            findOnBackInvokedDispatcher.unregisterOnBackInvokedCallback(this.f40088a);
-            this.f40088a = null;
+            findOnBackInvokedDispatcher.unregisterOnBackInvokedCallback(this.f40089a);
+            this.f40089a = null;
         }
 
         OnBackInvokedCallback c(final oh.b bVar) {
@@ -68,7 +68,7 @@ public final class c {
         }
 
         boolean d() {
-            if (this.f40088a != null) {
+            if (this.f40089a != null) {
                 return true;
             }
             return false;
@@ -85,35 +85,35 @@ public final class c {
         class a implements OnBackAnimationCallback {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ oh.b f40089a;
+            final /* synthetic */ oh.b f40090a;
 
             a(oh.b bVar) {
-                this.f40089a = bVar;
+                this.f40090a = bVar;
             }
 
             public void onBackCancelled() {
                 if (!C0551c.this.d()) {
                     return;
                 }
-                this.f40089a.a();
+                this.f40090a.a();
             }
 
             public void onBackInvoked() {
-                this.f40089a.d();
+                this.f40090a.d();
             }
 
             public void onBackProgressed(BackEvent backEvent) {
                 if (!C0551c.this.d()) {
                     return;
                 }
-                this.f40089a.c(new BackEventCompat(backEvent));
+                this.f40090a.c(new BackEventCompat(backEvent));
             }
 
             public void onBackStarted(BackEvent backEvent) {
                 if (!C0551c.this.d()) {
                     return;
                 }
-                this.f40089a.b(new BackEventCompat(backEvent));
+                this.f40090a.b(new BackEventCompat(backEvent));
             }
         }
 
@@ -136,8 +136,8 @@ public final class c {
     }
 
     public c(oh.b bVar, View view) {
-        this.f40086b = bVar;
-        this.f40087c = view;
+        this.f40087b = bVar;
+        this.f40088c = view;
     }
 
     private static d a() {
@@ -152,9 +152,9 @@ public final class c {
     }
 
     private void c(boolean z10) {
-        d dVar = this.f40085a;
+        d dVar = this.f40086a;
         if (dVar != null) {
-            dVar.a(this.f40086b, this.f40087c, z10);
+            dVar.a(this.f40087b, this.f40088c, z10);
         }
     }
 
@@ -163,9 +163,9 @@ public final class c {
     }
 
     public void d() {
-        d dVar = this.f40085a;
+        d dVar = this.f40086a;
         if (dVar != null) {
-            dVar.b(this.f40087c);
+            dVar.b(this.f40088c);
         }
     }
 }

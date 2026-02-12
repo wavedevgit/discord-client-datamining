@@ -7,24 +7,24 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Function1 f38361a;
+    private final Function1 f38362a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f38362b;
+    private final int f38363b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f38363c;
+    private final int f38364c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f38364d;
+    private final List f38365d;
 
     public d(Function1 number, int i10, int i11, List zerosToAdd) {
         Intrinsics.checkNotNullParameter(number, "number");
         Intrinsics.checkNotNullParameter(zerosToAdd, "zerosToAdd");
-        this.f38361a = number;
-        this.f38362b = i10;
-        this.f38363c = i11;
-        this.f38364d = zerosToAdd;
+        this.f38362a = number;
+        this.f38363b = i10;
+        this.f38364c = i11;
+        this.f38365d = zerosToAdd;
         if (1 <= i10 && i10 < 10) {
             if (i10 <= i11 && i11 < 10) {
                 return;

@@ -11,10 +11,10 @@ public enum a {
     
 
     /* renamed from: d  reason: collision with root package name */
-    public static final C0382a f28006d = new C0382a(null);
+    public static final C0382a f28007d = new C0382a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final a f28007e;
+    private static final a f28008e;
 
     /* renamed from: in.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -26,7 +26,7 @@ public enum a {
         @Override // gn.b0
         /* renamed from: b */
         public a a() {
-            return a.f28007e;
+            return a.f28008e;
         }
 
         private C0382a() {
@@ -35,6 +35,6 @@ public enum a {
     }
 
     static {
-        f28007e = r0;
+        f28008e = r0;
     }
 }

@@ -103,7 +103,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.bind(var0)(var2);
                 var2 = var2.DEBUG_BUILD;
                 if (!var2) {
-                    _fun10998_ip = 97;
+                    _fun10998_ip = 96;
                     continue _fun10998
                 }
             case 34:
@@ -121,7 +121,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = arg0;
                 var1 = var5.bind(var4)(var1);
                 var1 = var2.bind(var3)(var1);
-            case 97:
+            case 96:
                 return var0;
         }
     };

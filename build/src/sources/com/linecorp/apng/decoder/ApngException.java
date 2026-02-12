@@ -14,7 +14,7 @@ import org.jetbrains.annotations.NotNull;
 public final class ApngException extends Exception {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ErrorCode f18059d;
+    private final ErrorCode f18060d;
 
     /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
     /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -25,13 +25,13 @@ public final class ApngException extends Exception {
         public static final Companion Companion;
 
         /* renamed from: e  reason: collision with root package name */
-        private static final /* synthetic */ ErrorCode[] f18060e;
+        private static final /* synthetic */ ErrorCode[] f18061e;
 
         /* renamed from: i  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f18061i;
+        private static final /* synthetic */ EnumEntries f18062i;
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f18062d;
+        private final int f18063d;
         public static final ErrorCode ERR_STREAM_READ_FAIL = new ErrorCode("ERR_STREAM_READ_FAIL", 0, -100);
         public static final ErrorCode ERR_UNEXPECTED_EOF = new ErrorCode("ERR_UNEXPECTED_EOF", 1, -101);
         public static final ErrorCode ERR_INVALID_FILE_FORMAT = new ErrorCode("ERR_INVALID_FILE_FORMAT", 2, -102);
@@ -67,13 +67,13 @@ public final class ApngException extends Exception {
 
         static {
             ErrorCode[] a10 = a();
-            f18060e = a10;
-            f18061i = a.a(a10);
+            f18061e = a10;
+            f18062i = a.a(a10);
             Companion = new Companion(null);
         }
 
         private ErrorCode(String str, int i10, int i11) {
-            this.f18062d = i11;
+            this.f18063d = i11;
         }
 
         private static final /* synthetic */ ErrorCode[] a() {
@@ -82,7 +82,7 @@ public final class ApngException extends Exception {
 
         @NotNull
         public static EnumEntries getEntries() {
-            return f18061i;
+            return f18062i;
         }
 
         public static ErrorCode valueOf(String str) {
@@ -90,11 +90,11 @@ public final class ApngException extends Exception {
         }
 
         public static ErrorCode[] values() {
-            return (ErrorCode[]) f18060e.clone();
+            return (ErrorCode[]) f18061e.clone();
         }
 
         public final int getErrorCode() {
-            return this.f18062d;
+            return this.f18063d;
         }
     }
 
@@ -151,13 +151,13 @@ public final class ApngException extends Exception {
 
     @NotNull
     public final ErrorCode getErrorCode() {
-        return this.f18059d;
+        return this.f18060d;
     }
 
     @Override // java.lang.Throwable
     public String getMessage() {
         String str;
-        switch (WhenMappings.$EnumSwitchMapping$0[this.f18059d.ordinal()]) {
+        switch (WhenMappings.$EnumSwitchMapping$0[this.f18060d.ordinal()]) {
             case 1:
                 return "Can't read the stream.";
             case 2:
@@ -191,7 +191,7 @@ public final class ApngException extends Exception {
     public ApngException(@NotNull ErrorCode errorCode, Throwable th2) {
         super(th2);
         Intrinsics.checkNotNullParameter(errorCode, "errorCode");
-        this.f18059d = errorCode;
+        this.f18060d = errorCode;
     }
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */

@@ -6,24 +6,24 @@ import android.content.Context;
 public final class b0 extends ni.u0 {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ Context f17009e;
+    final /* synthetic */ Context f17010e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ j0 f17010i;
+    final /* synthetic */ j0 f17011i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public b0(j0 j0Var, zg.k kVar, Context context) {
         super(kVar);
-        this.f17009e = context;
-        this.f17010i = j0Var;
+        this.f17010e = context;
+        this.f17011i = j0Var;
     }
 
     @Override // ni.u0
     protected final void b() {
         zg.k kVar;
-        Context context = this.f17009e;
-        kVar = this.f17010i.f17063c;
+        Context context = this.f17010e;
+        kVar = this.f17011i.f17064c;
         kVar.e(Integer.valueOf(ni.j.a(context)));
     }
 }

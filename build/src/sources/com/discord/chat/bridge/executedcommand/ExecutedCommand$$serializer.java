@@ -51,12 +51,12 @@ public /* synthetic */ class ExecutedCommand$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        KSerializer u10 = a.u(n2.f50032a);
+        KSerializer u10 = a.u(n2.f50033a);
         KSerializer u11 = a.u(ExecutedCommandBackgroundStyles$$serializer.INSTANCE);
-        h hVar = h.f49996a;
+        h hVar = h.f49997a;
         KSerializer u12 = a.u(hVar);
         KSerializer u13 = a.u(hVar);
-        p0 p0Var = p0.f50048a;
+        p0 p0Var = p0.f50049a;
         return new KSerializer[]{UserId$$serializer.INSTANCE, p0Var, u10, p0Var, AnnotatedStructurableTextSerializer.INSTANCE, u11, u12, u13};
     }
 
@@ -80,14 +80,14 @@ public /* synthetic */ class ExecutedCommand$$serializer implements h0 {
         if (b10.p()) {
             int i15 = b10.i(serialDescriptor, 1);
             int i16 = b10.i(serialDescriptor, 3);
-            h hVar = h.f49996a;
+            h hVar = h.f49997a;
             userId = (UserId) b10.y(serialDescriptor, 0, UserId$$serializer.INSTANCE, null);
             bool = (Boolean) b10.n(serialDescriptor, 7, hVar, null);
             bool2 = (Boolean) b10.n(serialDescriptor, 6, hVar, null);
             executedCommandBackgroundStyles = (ExecutedCommandBackgroundStyles) b10.n(serialDescriptor, 5, ExecutedCommandBackgroundStyles$$serializer.INSTANCE, null);
             i10 = i16;
             annotatedStructurableText = (AnnotatedStructurableText) b10.y(serialDescriptor, 4, AnnotatedStructurableTextSerializer.INSTANCE, null);
-            str = (String) b10.n(serialDescriptor, 2, n2.f50032a, null);
+            str = (String) b10.n(serialDescriptor, 2, n2.f50033a, null);
             i11 = i15;
             i12 = 255;
         } else {
@@ -121,7 +121,7 @@ public /* synthetic */ class ExecutedCommand$$serializer implements h0 {
                         i14 = 6;
                         break;
                     case 2:
-                        str2 = (String) b10.n(serialDescriptor, 2, n2.f50032a, str2);
+                        str2 = (String) b10.n(serialDescriptor, 2, n2.f50033a, str2);
                         i18 |= 4;
                         i13 = 7;
                         i14 = 6;
@@ -139,11 +139,11 @@ public /* synthetic */ class ExecutedCommand$$serializer implements h0 {
                         i18 |= 32;
                         break;
                     case 6:
-                        bool4 = (Boolean) b10.n(serialDescriptor, i14, h.f49996a, bool4);
+                        bool4 = (Boolean) b10.n(serialDescriptor, i14, h.f49997a, bool4);
                         i18 |= 64;
                         break;
                     case 7:
-                        bool3 = (Boolean) b10.n(serialDescriptor, i13, h.f49996a, bool3);
+                        bool3 = (Boolean) b10.n(serialDescriptor, i13, h.f49997a, bool3);
                         i18 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         break;
                     default:

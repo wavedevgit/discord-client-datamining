@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class OneTimeLinkCodeForPersonasRequestJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20835a;
+    private final m.b f20836a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f20836b;
+    private final h f20837b;
 
     public OneTimeLinkCodeForPersonasRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("meta");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20835a = a10;
+        this.f20836a = a10;
         h f10 = moshi.f(OneTimeLinkCodeForPersonasRequest.Meta.class, x0.d(), "meta");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20836b = f10;
+        this.f20837b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -36,9 +36,9 @@ public final class OneTimeLinkCodeForPersonasRequestJsonAdapter extends h {
         reader.u();
         OneTimeLinkCodeForPersonasRequest.Meta meta = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20835a);
+            int J = reader.J(this.f20836a);
             if (J != -1) {
-                if (J == 0 && (meta = (OneTimeLinkCodeForPersonasRequest.Meta) this.f20836b.fromJson(reader)) == null) {
+                if (J == 0 && (meta = (OneTimeLinkCodeForPersonasRequest.Meta) this.f20837b.fromJson(reader)) == null) {
                     throw c.x("meta", "meta", reader);
                 }
             } else {
@@ -60,7 +60,7 @@ public final class OneTimeLinkCodeForPersonasRequestJsonAdapter extends h {
         if (oneTimeLinkCodeForPersonasRequest != null) {
             writer.i();
             writer.J("meta");
-            this.f20836b.toJson(writer, oneTimeLinkCodeForPersonasRequest.a());
+            this.f20837b.toJson(writer, oneTimeLinkCodeForPersonasRequest.a());
             writer.s();
             return;
         }

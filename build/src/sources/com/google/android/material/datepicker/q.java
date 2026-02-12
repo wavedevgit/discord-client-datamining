@@ -7,15 +7,15 @@ import java.util.LinkedHashSet;
 public abstract class q extends Fragment {
 
     /* renamed from: d  reason: collision with root package name */
-    protected final LinkedHashSet f15723d = new LinkedHashSet();
+    protected final LinkedHashSet f15724d = new LinkedHashSet();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean x(p pVar) {
-        return this.f15723d.add(pVar);
+        return this.f15724d.add(pVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void y() {
-        this.f15723d.clear();
+        this.f15724d.clear();
     }
 }

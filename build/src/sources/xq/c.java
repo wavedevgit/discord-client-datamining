@@ -9,24 +9,24 @@ import kotlin.jvm.internal.Intrinsics;
 final class c extends MetricAffectingSpan {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Typeface f55147d;
+    private final Typeface f55148d;
 
     public c(Typeface typeface) {
         Intrinsics.checkNotNullParameter(typeface, "typeface");
-        this.f55147d = typeface;
+        this.f55148d = typeface;
     }
 
     @Override // android.text.style.CharacterStyle
     public void updateDrawState(TextPaint textPaint) {
         Intrinsics.checkNotNullParameter(textPaint, "textPaint");
-        textPaint.setTypeface(this.f55147d);
+        textPaint.setTypeface(this.f55148d);
         textPaint.setFlags(textPaint.getFlags() | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
     }
 
     @Override // android.text.style.MetricAffectingSpan
     public void updateMeasureState(TextPaint paint) {
         Intrinsics.checkNotNullParameter(paint, "paint");
-        paint.setTypeface(this.f55147d);
+        paint.setTypeface(this.f55148d);
         paint.setFlags(paint.getFlags() | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
     }
 }

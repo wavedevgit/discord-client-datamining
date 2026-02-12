@@ -10,17 +10,17 @@ import kotlinx.coroutines.CoroutineScope;
 public final class m {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final m f24047a = new m();
+    public static final m f24048a = new m();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        /* synthetic */ Object f24048d;
+        /* synthetic */ Object f24049d;
 
         /* renamed from: i  reason: collision with root package name */
-        int f24050i;
+        int f24051i;
 
         a(Continuation continuation) {
             super(continuation);
@@ -28,8 +28,8 @@ public final class m {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f24048d = obj;
-            this.f24050i |= Integer.MIN_VALUE;
+            this.f24049d = obj;
+            this.f24051i |= Integer.MIN_VALUE;
             return m.this.b(null, this);
         }
     }
@@ -39,39 +39,39 @@ public final class m {
     public static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f24051d;
+        int f24052d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ o0.g f24052e;
+        final /* synthetic */ o0.g f24053e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(o0.g gVar, Continuation continuation) {
             super(2, continuation);
-            this.f24052e = gVar;
+            this.f24053e = gVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new b(this.f24052e, continuation);
+            return new b(this.f24053e, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             gs.b.f();
-            if (this.f24051d == 0) {
+            if (this.f24052d == 0) {
                 kotlin.c.b(obj);
                 try {
-                    this.f24052e.y();
+                    this.f24053e.y();
                 } catch (x.o0 unused) {
                 }
-                return Unit.f31987a;
+                return Unit.f31988a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -80,35 +80,35 @@ public final class m {
     public static final class c extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f24053d;
+        int f24054d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Context f24054e;
+        final /* synthetic */ Context f24055e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(Context context, Continuation continuation) {
             super(2, continuation);
-            this.f24054e = context;
+            this.f24055e = context;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new c(this.f24054e, continuation);
+            return new c(this.f24055e, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             gs.b.f();
-            if (this.f24053d == 0) {
+            if (this.f24054d == 0) {
                 kotlin.c.b(obj);
-                return o0.g.f38405i.b(this.f24054e);
+                return o0.g.f38406i.b(this.f24055e);
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -145,20 +145,20 @@ public final class m {
             if (r0 == 0) goto L13
             r0 = r9
             fo.m$a r0 = (fo.m.a) r0
-            int r1 = r0.f24050i
+            int r1 = r0.f24051i
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f24050i = r1
+            r0.f24051i = r1
             goto L18
         L13:
             fo.m$a r0 = new fo.m$a
             r0.<init>(r9)
         L18:
-            java.lang.Object r9 = r0.f24048d
+            java.lang.Object r9 = r0.f24049d
             java.lang.Object r1 = gs.b.f()
-            int r2 = r0.f24050i
+            int r2 = r0.f24051i
             r3 = 0
             r4 = 3
             r5 = 2
@@ -185,7 +185,7 @@ public final class m {
             ys.c1 r9 = ys.m0.c()
             fo.m$c r2 = new fo.m$c
             r2.<init>(r8, r3)
-            r0.f24050i = r6
+            r0.f24051i = r6
             java.lang.Object r9 = ys.g.g(r9, r2, r0)
             if (r9 != r1) goto L55
             goto L7c
@@ -194,7 +194,7 @@ public final class m {
             kotlinx.coroutines.CoroutineDispatcher r8 = ys.m0.b()
             fo.l r2 = new fo.l
             r2.<init>()
-            r0.f24050i = r5
+            r0.f24051i = r5
             java.lang.Object r9 = ys.x0.b(r8, r2, r0)
             if (r9 != r1) goto L69
             goto L7c
@@ -203,13 +203,13 @@ public final class m {
             ys.c1 r8 = ys.m0.c()
             fo.m$b r2 = new fo.m$b
             r2.<init>(r9, r3)
-            r0.f24050i = r4
+            r0.f24051i = r4
             java.lang.Object r8 = ys.g.g(r8, r2, r0)
             if (r8 != r1) goto L7d
         L7c:
             return r1
         L7d:
-            kotlin.Unit r8 = kotlin.Unit.f31987a
+            kotlin.Unit r8 = kotlin.Unit.f31988a
             return r8
         */
         throw new UnsupportedOperationException("Method not decompiled: fo.m.b(android.content.Context, kotlin.coroutines.Continuation):java.lang.Object");

@@ -3,10 +3,10 @@ package kp;
 public final class n implements lr.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.withpersona.sdk2.inquiry.internal.network.f f35155a;
+    private final com.withpersona.sdk2.inquiry.internal.network.f f35156a;
 
     public n(com.withpersona.sdk2.inquiry.internal.network.f fVar) {
-        this.f35155a = fVar;
+        this.f35156a = fVar;
     }
 
     public static n a(com.withpersona.sdk2.inquiry.internal.network.f fVar) {
@@ -20,6 +20,6 @@ public final class n implements lr.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public String get() {
-        return c(this.f35155a);
+        return c(this.f35156a);
     }
 }

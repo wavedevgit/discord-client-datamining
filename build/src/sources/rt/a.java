@@ -56,57 +56,57 @@ import xs.a;
 public abstract class a {
     public static final KSerializer A(BooleanCompanionObject booleanCompanionObject) {
         Intrinsics.checkNotNullParameter(booleanCompanionObject, "<this>");
-        return h.f49996a;
+        return h.f49997a;
     }
 
     public static final KSerializer B(ByteCompanionObject byteCompanionObject) {
         Intrinsics.checkNotNullParameter(byteCompanionObject, "<this>");
-        return j.f50005a;
+        return j.f50006a;
     }
 
     public static final KSerializer C(CharCompanionObject charCompanionObject) {
         Intrinsics.checkNotNullParameter(charCompanionObject, "<this>");
-        return o.f50034a;
+        return o.f50035a;
     }
 
     public static final KSerializer D(DoubleCompanionObject doubleCompanionObject) {
         Intrinsics.checkNotNullParameter(doubleCompanionObject, "<this>");
-        return x.f50086a;
+        return x.f50087a;
     }
 
     public static final KSerializer E(FloatCompanionObject floatCompanionObject) {
         Intrinsics.checkNotNullParameter(floatCompanionObject, "<this>");
-        return g0.f49992a;
+        return g0.f49993a;
     }
 
     public static final KSerializer F(IntCompanionObject intCompanionObject) {
         Intrinsics.checkNotNullParameter(intCompanionObject, "<this>");
-        return p0.f50048a;
+        return p0.f50049a;
     }
 
     public static final KSerializer G(LongCompanionObject longCompanionObject) {
         Intrinsics.checkNotNullParameter(longCompanionObject, "<this>");
-        return z0.f50106a;
+        return z0.f50107a;
     }
 
     public static final KSerializer H(ShortCompanionObject shortCompanionObject) {
         Intrinsics.checkNotNullParameter(shortCompanionObject, "<this>");
-        return m2.f50026a;
+        return m2.f50027a;
     }
 
     public static final KSerializer I(StringCompanionObject stringCompanionObject) {
         Intrinsics.checkNotNullParameter(stringCompanionObject, "<this>");
-        return n2.f50032a;
+        return n2.f50033a;
     }
 
     public static final KSerializer J(Duration.a aVar) {
         Intrinsics.checkNotNullParameter(aVar, "<this>");
-        return y.f50093a;
+        return y.f50094a;
     }
 
     public static final KSerializer K(a.C0766a c0766a) {
         Intrinsics.checkNotNullParameter(c0766a, "<this>");
-        return e3.f49984a;
+        return e3.f49985a;
     }
 
     public static final KSerializer a(KClass kClass, KSerializer elementSerializer) {
@@ -116,27 +116,27 @@ public abstract class a {
     }
 
     public static final KSerializer b() {
-        return kotlinx.serialization.internal.a.f35087c;
+        return kotlinx.serialization.internal.a.f35088c;
     }
 
     public static final KSerializer c() {
-        return b.f35088c;
+        return b.f35089c;
     }
 
     public static final KSerializer d() {
-        return c.f35089c;
+        return c.f35090c;
     }
 
     public static final KSerializer e() {
-        return d.f35090c;
+        return d.f35091c;
     }
 
     public static final KSerializer f() {
-        return e.f35091c;
+        return e.f35092c;
     }
 
     public static final KSerializer g() {
-        return f.f35092c;
+        return f.f35093c;
     }
 
     public static final KSerializer h(KSerializer elementSerializer) {
@@ -145,7 +145,7 @@ public abstract class a {
     }
 
     public static final KSerializer i() {
-        return g.f35093c;
+        return g.f35094c;
     }
 
     public static final KSerializer j(KSerializer keySerializer, KSerializer valueSerializer) {
@@ -161,7 +161,7 @@ public abstract class a {
     }
 
     public static final KSerializer l() {
-        return k1.f50015a;
+        return k1.f50016a;
     }
 
     public static final KSerializer m(KSerializer keySerializer, KSerializer valueSerializer) {
@@ -176,7 +176,7 @@ public abstract class a {
     }
 
     public static final KSerializer o() {
-        return kotlinx.serialization.internal.h.f35094c;
+        return kotlinx.serialization.internal.h.f35095c;
     }
 
     public static final KSerializer p(KSerializer aSerializer, KSerializer bSerializer, KSerializer cSerializer) {
@@ -187,19 +187,19 @@ public abstract class a {
     }
 
     public static final KSerializer q() {
-        return i.f35095c;
+        return i.f35096c;
     }
 
     public static final KSerializer r() {
-        return kotlinx.serialization.internal.j.f35096c;
+        return kotlinx.serialization.internal.j.f35097c;
     }
 
     public static final KSerializer s() {
-        return k.f35097c;
+        return k.f35098c;
     }
 
     public static final KSerializer t() {
-        return l.f35098c;
+        return l.f35099c;
     }
 
     public static final KSerializer u(KSerializer kSerializer) {
@@ -212,26 +212,26 @@ public abstract class a {
 
     public static final KSerializer v(x.a aVar) {
         Intrinsics.checkNotNullParameter(aVar, "<this>");
-        return w2.f50084a;
+        return w2.f50085a;
     }
 
     public static final KSerializer w(z.a aVar) {
         Intrinsics.checkNotNullParameter(aVar, "<this>");
-        return y2.f50098a;
+        return y2.f50099a;
     }
 
     public static final KSerializer x(b0.a aVar) {
         Intrinsics.checkNotNullParameter(aVar, "<this>");
-        return a3.f49957a;
+        return a3.f49958a;
     }
 
     public static final KSerializer y(e0.a aVar) {
         Intrinsics.checkNotNullParameter(aVar, "<this>");
-        return c3.f49973a;
+        return c3.f49974a;
     }
 
     public static final KSerializer z(Unit unit) {
         Intrinsics.checkNotNullParameter(unit, "<this>");
-        return d3.f49980b;
+        return d3.f49981b;
     }
 }

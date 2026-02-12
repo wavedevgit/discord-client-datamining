@@ -114,7 +114,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = _closure2_slot0;
                     var0 = var1.push;
                     var0 = var0.bind(var1)(var2);
-                    _fun12590_ip = 87;
+                    _fun12590_ip = 86;
                     continue _fun12590;
                 case 39:
                     var2 = _closure1_slot0;
@@ -127,7 +127,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var2.log;
                     var0 = '[AppRegistryIntegration] Callback already registered.';
                     var0 = var1.bind(var2)(var0);
-                case 87:
+                case 86:
                     var0 = undefined;
                     return var0;
             }

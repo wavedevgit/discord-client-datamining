@@ -3,16 +3,16 @@ package rg;
 final class k0 extends gl {
 
     /* renamed from: i  reason: collision with root package name */
-    private final m0 f46925i;
+    private final m0 f46926i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public k0(m0 m0Var, int i10) {
         super(m0Var.size(), i10);
-        this.f46925i = m0Var;
+        this.f46926i = m0Var;
     }
 
     @Override // rg.gl
     protected final Object a(int i10) {
-        return this.f46925i.get(i10);
+        return this.f46926i.get(i10);
     }
 }

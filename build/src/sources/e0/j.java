@@ -9,19 +9,19 @@ import x.y0;
 public final class j implements n0.i {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f22198e = new a(null);
+    public static final a f22199e = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final n0.i f22199a;
+    private final n0.i f22200a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f22200b;
+    private final Object f22201b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f22201c;
+    private boolean f22202c;
 
     /* renamed from: d  reason: collision with root package name */
-    private n0.j f22202d;
+    private n0.j f22203d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -44,13 +44,13 @@ public final class j implements n0.i {
     /* JADX INFO: Access modifiers changed from: private */
     public static final void c(j this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
-        synchronized (this$0.f22200b) {
+        synchronized (this$0.f22201b) {
             try {
-                if (this$0.f22202d == null) {
+                if (this$0.f22203d == null) {
                     y0.l("ScreenFlashWrapper", "apply: pendingListener is null!");
                 }
                 this$0.e();
-                Unit unit = Unit.f31987a;
+                Unit unit = Unit.f31988a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -59,13 +59,13 @@ public final class j implements n0.i {
 
     private final void d() {
         Unit unit;
-        synchronized (this.f22200b) {
+        synchronized (this.f22201b) {
             try {
-                if (this.f22201c) {
-                    n0.i iVar = this.f22199a;
+                if (this.f22202c) {
+                    n0.i iVar = this.f22200a;
                     if (iVar != null) {
                         iVar.clear();
-                        unit = Unit.f31987a;
+                        unit = Unit.f31988a;
                     } else {
                         unit = null;
                     }
@@ -75,8 +75,8 @@ public final class j implements n0.i {
                 } else {
                     y0.l("ScreenFlashWrapper", "completePendingScreenFlashClear: none pending!");
                 }
-                this.f22201c = false;
-                Unit unit2 = Unit.f31987a;
+                this.f22202c = false;
+                Unit unit2 = Unit.f31988a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -84,14 +84,14 @@ public final class j implements n0.i {
     }
 
     private final void e() {
-        synchronized (this.f22200b) {
+        synchronized (this.f22201b) {
             try {
-                n0.j jVar = this.f22202d;
+                n0.j jVar = this.f22203d;
                 if (jVar != null) {
                     jVar.a();
                 }
-                this.f22202d = null;
-                Unit unit = Unit.f31987a;
+                this.f22203d = null;
+                Unit unit = Unit.f31988a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -99,19 +99,19 @@ public final class j implements n0.i {
     }
 
     public static final j g(n0.i iVar) {
-        return f22198e.a(iVar);
+        return f22199e.a(iVar);
     }
 
     @Override // x.n0.i
     public void a(long j10, n0.j screenFlashListener) {
         Unit unit;
         Intrinsics.checkNotNullParameter(screenFlashListener, "screenFlashListener");
-        synchronized (this.f22200b) {
-            this.f22201c = true;
-            this.f22202d = screenFlashListener;
-            Unit unit2 = Unit.f31987a;
+        synchronized (this.f22201b) {
+            this.f22202c = true;
+            this.f22203d = screenFlashListener;
+            Unit unit2 = Unit.f31988a;
         }
-        n0.i iVar = this.f22199a;
+        n0.i iVar = this.f22200a;
         if (iVar != null) {
             iVar.a(j10, new n0.j() { // from class: e0.i
                 @Override // x.n0.j
@@ -119,7 +119,7 @@ public final class j implements n0.i {
                     j.c(j.this);
                 }
             });
-            unit = Unit.f31987a;
+            unit = Unit.f31988a;
         } else {
             unit = null;
         }
@@ -140,11 +140,11 @@ public final class j implements n0.i {
     }
 
     public final n0.i h() {
-        return this.f22199a;
+        return this.f22200a;
     }
 
     private j(n0.i iVar) {
-        this.f22199a = iVar;
-        this.f22200b = new Object();
+        this.f22200a = iVar;
+        this.f22201b = new Object();
     }
 }

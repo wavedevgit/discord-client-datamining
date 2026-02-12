@@ -15,23 +15,23 @@ import java.util.TreeMap;
 final class q0 extends ai.o {
 
     /* renamed from: d  reason: collision with root package name */
-    private final File f16836d;
+    private final File f16837d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final File f16837e;
+    private final File f16838e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final NavigableMap f16838i = new TreeMap();
+    private final NavigableMap f16839i = new TreeMap();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q0(File file, File file2) {
-        this.f16836d = file;
-        this.f16837e = file2;
+        this.f16837d = file;
+        this.f16838e = file2;
         List<File> a10 = d4.a(file, file2);
         if (!a10.isEmpty()) {
             long j10 = 0;
             for (File file3 : a10) {
-                this.f16838i.put(Long.valueOf(j10), file3);
+                this.f16839i.put(Long.valueOf(j10), file3);
                 j10 += file3.length();
             }
             return;
@@ -40,7 +40,7 @@ final class q0 extends ai.o {
     }
 
     private final InputStream m(long j10, Long l10) {
-        FileInputStream fileInputStream = new FileInputStream((File) this.f16838i.get(l10));
+        FileInputStream fileInputStream = new FileInputStream((File) this.f16839i.get(l10));
         if (fileInputStream.skip(j10 - l10.longValue()) == j10 - l10.longValue()) {
             return fileInputStream;
         }
@@ -49,7 +49,7 @@ final class q0 extends ai.o {
 
     @Override // ai.o
     public final long a() {
-        Map.Entry lastEntry = this.f16838i.lastEntry();
+        Map.Entry lastEntry = this.f16839i.lastEntry();
         return ((Long) lastEntry.getKey()).longValue() + ((File) lastEntry.getValue()).length();
     }
 
@@ -63,18 +63,18 @@ final class q0 extends ai.o {
         if (j10 >= 0 && j11 >= 0) {
             long j12 = j10 + j11;
             if (j12 <= a()) {
-                Long l10 = (Long) this.f16838i.floorKey(Long.valueOf(j10));
-                Long l11 = (Long) this.f16838i.floorKey(Long.valueOf(j12));
+                Long l10 = (Long) this.f16839i.floorKey(Long.valueOf(j10));
+                Long l11 = (Long) this.f16839i.floorKey(Long.valueOf(j12));
                 if (l10.equals(l11)) {
                     return new p0(m(j10, l10), j11);
                 }
                 ArrayList arrayList = new ArrayList();
                 arrayList.add(m(j10, l10));
-                Collection values = this.f16838i.subMap(l10, false, l11, false).values();
+                Collection values = this.f16839i.subMap(l10, false, l11, false).values();
                 if (!values.isEmpty()) {
                     arrayList.add(new zh.d(Collections.enumeration(values)));
                 }
-                arrayList.add(new p0(new FileInputStream((File) this.f16838i.get(l11)), j11 - (l11.longValue() - j10)));
+                arrayList.add(new p0(new FileInputStream((File) this.f16839i.get(l11)), j11 - (l11.longValue() - j10)));
                 return new SequenceInputStream(Collections.enumeration(arrayList));
             }
             throw new w1(String.format("Trying to access archive out of bounds. Archive ends at: %s. Tried accessing: %s", Long.valueOf(a()), Long.valueOf(j12)));

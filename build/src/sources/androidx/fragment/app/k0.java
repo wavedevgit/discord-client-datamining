@@ -316,7 +316,7 @@ public class k0 {
             }
             this.f4449c.mView.setSaveFromParentEnabled(false);
             Fragment fragment4 = this.f4449c;
-            fragment4.mView.setTag(f3.b.f23553a, fragment4);
+            fragment4.mView.setTag(f3.b.f23554a, fragment4);
             if (viewGroup != null) {
                 b();
             }
@@ -465,7 +465,7 @@ public class k0 {
             if (view != null) {
                 view.setSaveFromParentEnabled(false);
                 Fragment fragment3 = this.f4449c;
-                fragment3.mView.setTag(f3.b.f23553a, fragment3);
+                fragment3.mView.setTag(f3.b.f23554a, fragment3);
                 Fragment fragment4 = this.f4449c;
                 if (fragment4.mHidden) {
                     fragment4.mView.setVisibility(8);

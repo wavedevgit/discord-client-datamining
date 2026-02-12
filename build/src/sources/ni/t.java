@@ -5,10 +5,10 @@ import java.util.Set;
 public abstract class t extends p implements Set {
 
     /* renamed from: e  reason: collision with root package name */
-    private transient s f37929e;
+    private transient s f37930e;
 
     public static t i() {
-        return v.f37935q;
+        return v.f37936q;
     }
 
     @Override // java.util.Collection, java.util.Set
@@ -41,10 +41,10 @@ public abstract class t extends p implements Set {
     }
 
     public final s f() {
-        s sVar = this.f37929e;
+        s sVar = this.f37930e;
         if (sVar == null) {
             s g10 = g();
-            this.f37929e = g10;
+            this.f37930e = g10;
             return g10;
         }
         return sVar;

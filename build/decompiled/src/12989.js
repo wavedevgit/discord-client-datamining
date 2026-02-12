@@ -13,204 +13,41 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
+    var2 = function arg0() {
+        var0 = arg0;
+        var0 = var0._sentrySpan;
+        return var0;
+    };
+    var1._getSpanForScope = var2;
     var0 = function arg0, arg1() {
-        _fun99844: for (var _fun99844_ip = 0;;) switch (_fun99844_ip) {
+        _fun99820: for (var _fun99820_ip = 0;;) switch (_fun99820_ip) {
             case 0:
-                var0 = arg0;
-                var5 = arg1;
-                var4 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var2 = 0;
-                var2 = var3[var2];
-                var3 = undefined;
-                var4 = var4.bind(var3)(var2);
-                var2 = var4.hasTracingEnabled;
-                var2 = var2.bind(var4)(var0);
-                if (var2) {
-                    _fun99844_ip = 56;
-                    continue _fun99844
+                var4 = arg0;
+                var3 = arg1;
+                if (var3) {
+                    _fun99820_ip = 16;
+                    continue _fun99820
                 }
-            case 44:
-                var2 = new Array(1);
-                var4 = false;
-                var2[0] = var4;
-                return var2;
-            case 56:
-                var2 = var0.tracesSampler;
-                var7 = 'function';
-                var2 = typeof var2;
-                if (!(var7 !== var2)) {
-                    _fun99844_ip = 112;
-                    continue _fun99844
-                }
-            case 73:
-                var2 = var5.parentSampled;
-                if (!(var3 === var2)) {
-                    _fun99844_ip = 104;
-                    continue _fun99844
-                }
-            case 83:
-                var4 = var0.tracesSampleRate;
-                var2 = 1;
-                if (!(var3 !== var4)) {
-                    _fun99844_ip = 102;
-                    continue _fun99844
-                }
-            case 96:
-                var2 = var0.tracesSampleRate;
-            case 102:
-                _fun99844_ip = 110;
-                continue _fun99844;
-            case 104:
-                var2 = var5.parentSampled;
-            case 110:
-                _fun99844_ip = 123;
-                continue _fun99844;
-            case 112:
-                var4 = var0.tracesSampler;
-                var2 = var4.bind(var0)(var5);
-            case 123:
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var4 = 1;
-                var4 = var6[var4];
-                var5 = var5.bind(var3)(var4);
-                var4 = var5.parseSampleRate;
-                var5 = var4.bind(var5)(var2);
-                var8 = var2;
-                if (!(var3 !== var5)) {
-                    _fun99844_ip = 451;
-                    continue _fun99844
-                }
-            case 164:
-                if (var5) {
-                    _fun99844_ip = 287;
-                    continue _fun99844
-                }
-            case 167:
-                var4 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var2 = 2;
-                var2 = var6[var2];
-                var2 = var4.bind(var3)(var2);
-                var2 = var2.DEBUG_BUILD;
-                if (!var2) {
-                    _fun99844_ip = 268;
-                    continue _fun99844
-                }
-            case 196:
-                var4 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var2 = 3;
-                var2 = var6[var2];
-                var2 = var4.bind(var3)(var2);
-                var4 = var2.logger;
-                var2 = var4.log;
-                var0 = var0.tracesSampler;
-                var6 = 'a negative sampling decision was inherited or tracesSampleRate is set to 0';
-                var0 = typeof var0;
-                if (!(var7 === var0)) {
-                    _fun99844_ip = 253;
-                    continue _fun99844
-                }
-            case 247:
-                var6 = 'tracesSampler returned 0 or false';
-            case 253:
-                var0 = '[Tracing] Discarding transaction because ';
-                var0 = var0 + var6;
-                var0 = var2.bind(var4)(var0);
-            case 268:
-                var0 = new Array(2);
-                var2 = false;
-                var0[0] = var2;
-                var0[1] = var5;
-                _fun99844_ip = 449;
-                continue _fun99844;
-            case 287:
-                var2 = global;
-                var6 = var2.Math;
-                var4 = var6.random;
-                var4 = var4.bind(var6)();
-                if (!(!(var4 < var5))) {
-                    _fun99844_ip = 429;
-                    continue _fun99844
-                }
-            case 309:
-                var6 = _closure1_slot0;
-                var7 = _closure1_slot1;
-                var4 = 2;
-                var4 = var7[var4];
-                var4 = var6.bind(var3)(var4);
-                var4 = var4.DEBUG_BUILD;
-                if (!var4) {
-                    _fun99844_ip = 413;
-                    continue _fun99844
-                }
-            case 338:
-                var6 = _closure1_slot0;
-                var7 = _closure1_slot1;
-                var4 = 3;
-                var4 = var7[var4];
-                var4 = var6.bind(var3)(var4);
-                var6 = var4.logger;
-                var4 = var6.log;
-                var7 = var2.Number;
-                var9 = var7.bind(var3)(var8);
-                var2 = var2.HermesInternal;
-                var8 = var2.concat;
-                var7 = "[Tracing] Discarding transaction because it's not included in the random sample (sampling rate = ";
-                var2 = ')';
-                var2 = var8.bind(var7)(var9, var2);
-                var2 = var4.bind(var6)(var2);
-            case 413:
-                var2 = new Array(2);
-                var4 = false;
-                var2[0] = var4;
-                var2[1] = var5;
-                _fun99844_ip = 446;
-                continue _fun99844;
-            case 429:
-                var4 = new Array(2);
-                var6 = true;
-                var4[0] = var6;
-                var4[1] = var5;
-                var2 = var4;
-            case 446:
-                var0 = var2;
-            case 449:
-                _fun99844_ip = 535;
-                continue _fun99844;
-            case 451:
-                var4 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var2 = 2;
-                var2 = var5[var2];
-                var2 = var4.bind(var3)(var2);
-                var2 = var2.DEBUG_BUILD;
-                if (!var2) {
-                    _fun99844_ip = 522;
-                    continue _fun99844
-                }
-            case 480:
+            case 9:
+                var0 = delete var4._sentrySpan;
+                _fun99820_ip = 57;
+                continue _fun99820;
+            case 16:
                 var2 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var1 = 3;
-                var1 = var4[var1];
-                var1 = var2.bind(var3)(var1);
-                var3 = var1.logger;
-                var2 = var3.warn;
-                var1 = '[Tracing] Discarding transaction because of invalid sample rate.';
-                var1 = var2.bind(var3)(var1);
-            case 522:
-                var1 = new Array(1);
-                var2 = false;
-                var1[0] = var2;
-                var0 = var1;
-            case 535:
+                var1 = _closure1_slot1;
+                var0 = 0;
+                var1 = var1[var0];
+                var0 = undefined;
+                var2 = var2.bind(var0)(var1);
+                var1 = var2.addNonEnumerableProperty;
+                var0 = '_sentrySpan';
+                var0 = var1.bind(var2)(var4, var0, var3);
+            case 57:
+                var0 = undefined;
                 return var0;
         }
     };
-    var1.sampleSpan = var0;
+    var1._setSpanForScope = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12982, 12990, 12978, 12912]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12927]);

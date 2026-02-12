@@ -17,32 +17,32 @@ import java.util.concurrent.Executor;
 public class h0 extends j0 implements m1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Class f11384d = h0.class;
+    private static final Class f11385d = h0.class;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final String[] f11385e = {"_id", "_data"};
+    private static final String[] f11386e = {"_id", "_data"};
 
     /* renamed from: f  reason: collision with root package name */
-    private static final String[] f11386f = {"_data"};
+    private static final String[] f11387f = {"_data"};
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Rect f11387g = new Rect(0, 0, IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, 384);
+    private static final Rect f11388g = new Rect(0, 0, IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, 384);
 
     /* renamed from: h  reason: collision with root package name */
-    private static final Rect f11388h = new Rect(0, 0, 96, 96);
+    private static final Rect f11389h = new Rect(0, 0, 96, 96);
 
     /* renamed from: c  reason: collision with root package name */
-    private final ContentResolver f11389c;
+    private final ContentResolver f11390c;
 
     public h0(Executor executor, s8.i iVar, ContentResolver contentResolver) {
         super(executor, iVar);
-        this.f11389c = contentResolver;
+        this.f11390c = contentResolver;
     }
 
     private ta.k g(Uri uri, ResizeOptions resizeOptions) {
         Cursor query;
         ta.k j10;
-        if (resizeOptions == null || (query = this.f11389c.query(uri, f11385e, null, null, null)) == null) {
+        if (resizeOptions == null || (query = this.f11390c.query(uri, f11386e, null, null, null)) == null) {
             return null;
         }
         try {
@@ -74,7 +74,7 @@ public class h0 extends j0 implements m1 {
             try {
                 return db.g.a(new ExifInterface(str).getAttributeInt("Orientation", 1));
             } catch (IOException e10) {
-                q8.a.l(f11384d, e10, "Unable to retrieve thumbnail rotation for %s", str);
+                q8.a.l(f11385d, e10, "Unable to retrieve thumbnail rotation for %s", str);
                 return 0;
             }
         }
@@ -85,7 +85,7 @@ public class h0 extends j0 implements m1 {
         Cursor queryMiniThumbnail;
         int columnIndex;
         int k10 = k(resizeOptions);
-        if (k10 == 0 || (queryMiniThumbnail = MediaStore.Images.Thumbnails.queryMiniThumbnail(this.f11389c, j10, k10, f11386f)) == null) {
+        if (k10 == 0 || (queryMiniThumbnail = MediaStore.Images.Thumbnails.queryMiniThumbnail(this.f11390c, j10, k10, f11387f)) == null) {
             return null;
         }
         try {
@@ -102,11 +102,11 @@ public class h0 extends j0 implements m1 {
     }
 
     private static int k(ResizeOptions resizeOptions) {
-        Rect rect = f11388h;
+        Rect rect = f11389h;
         if (n1.b(rect.width(), rect.height(), resizeOptions)) {
             return 3;
         }
-        Rect rect2 = f11387g;
+        Rect rect2 = f11388g;
         if (n1.b(rect2.width(), rect2.height(), resizeOptions)) {
             return 1;
         }
@@ -115,7 +115,7 @@ public class h0 extends j0 implements m1 {
 
     @Override // com.facebook.imagepipeline.producers.m1
     public boolean a(ResizeOptions resizeOptions) {
-        Rect rect = f11387g;
+        Rect rect = f11388g;
         return n1.b(rect.width(), rect.height(), resizeOptions);
     }
 

@@ -83,7 +83,7 @@ public abstract class f {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f20765a;
+        public static final /* synthetic */ int[] f20766a;
 
         static {
             int[] iArr = new int[Button.ButtonType.values().length];
@@ -95,7 +95,7 @@ public abstract class f {
                 iArr[Button.ButtonType.SECONDARY.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f20765a = iArr;
+            f20766a = iArr;
         }
     }
 
@@ -183,7 +183,7 @@ public abstract class f {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit e(MaterialButton materialButton, BaseButtonComponentStyle baseButtonComponentStyle) {
         uq.e.f(materialButton, baseButtonComponentStyle, false, false, 6, null);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final ButtonWithLoadingIndicator f(h hVar, m5 uiComponentHelper, Button config) {
@@ -218,7 +218,7 @@ public abstract class f {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit g(ButtonWithLoadingIndicator buttonWithLoadingIndicator, BaseButtonComponentStyle baseButtonComponentStyle) {
         uq.e.d(buttonWithLoadingIndicator, baseButtonComponentStyle);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     private static final int h(Button button) {
@@ -233,12 +233,12 @@ public abstract class f {
         if (buttonType == null) {
             i10 = -1;
         } else {
-            i10 = a.f20765a[buttonType.ordinal()];
+            i10 = a.f20766a[buttonType.ordinal()];
         }
         if (i10 != -1) {
             if (i10 != 1) {
                 if (i10 == 2) {
-                    return tp.a.f49752a;
+                    return tp.a.f49753a;
                 }
                 throw new p();
             }
@@ -352,19 +352,19 @@ public abstract class f {
                     return new InputMaskedTextComponent((InputMaskedText) uiComponentConfig);
                 }
                 if (uiComponentConfig instanceof InputMultiSelect) {
-                    return d.f20741w.a((InputMultiSelect) uiComponentConfig);
+                    return d.f20742w.a((InputMultiSelect) uiComponentConfig);
                 }
                 if (uiComponentConfig instanceof InputNumber) {
                     return new InputNumberComponent((InputNumber) uiComponentConfig);
                 }
                 if (uiComponentConfig instanceof InputPhoneNumber) {
-                    return InputPhoneNumberComponent.f20676w.a((InputPhoneNumber) uiComponentConfig);
+                    return InputPhoneNumberComponent.f20677w.a((InputPhoneNumber) uiComponentConfig);
                 }
                 if (uiComponentConfig instanceof InputRadioGroup) {
                     return new InputRadioGroupComponent((InputRadioGroup) uiComponentConfig);
                 }
                 if (uiComponentConfig instanceof InputSelect) {
-                    return e.f20753w.a((InputSelect) uiComponentConfig);
+                    return e.f20754w.a((InputSelect) uiComponentConfig);
                 }
                 if (uiComponentConfig instanceof InputText) {
                     return new InputTextComponent((InputText) uiComponentConfig);
@@ -394,7 +394,7 @@ public abstract class f {
                     return new h5((Title) uiComponentConfig);
                 }
                 if (uiComponentConfig instanceof CreatePersonaSheet) {
-                    return com.withpersona.sdk2.inquiry.steps.ui.components.a.f20709t.a((CreatePersonaSheet) uiComponentConfig);
+                    return com.withpersona.sdk2.inquiry.steps.ui.components.a.f20710t.a((CreatePersonaSheet) uiComponentConfig);
                 }
                 if (uiComponentConfig instanceof InputCurrency) {
                     return new InputCurrencyComponent((InputCurrency) uiComponentConfig);

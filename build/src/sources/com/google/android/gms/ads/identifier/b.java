@@ -7,35 +7,35 @@ import java.util.concurrent.TimeUnit;
 final class b extends Thread {
 
     /* renamed from: d  reason: collision with root package name */
-    private final WeakReference f14361d;
+    private final WeakReference f14362d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final long f14362e;
+    private final long f14363e;
 
     /* renamed from: i  reason: collision with root package name */
-    final CountDownLatch f14363i = new CountDownLatch(1);
+    final CountDownLatch f14364i = new CountDownLatch(1);
 
     /* renamed from: o  reason: collision with root package name */
-    boolean f14364o = false;
+    boolean f14365o = false;
 
     public b(AdvertisingIdClient advertisingIdClient, long j10) {
-        this.f14361d = new WeakReference(advertisingIdClient);
-        this.f14362e = j10;
+        this.f14362d = new WeakReference(advertisingIdClient);
+        this.f14363e = j10;
         start();
     }
 
     private final void a() {
-        AdvertisingIdClient advertisingIdClient = (AdvertisingIdClient) this.f14361d.get();
+        AdvertisingIdClient advertisingIdClient = (AdvertisingIdClient) this.f14362d.get();
         if (advertisingIdClient != null) {
             advertisingIdClient.b();
-            this.f14364o = true;
+            this.f14365o = true;
         }
     }
 
     @Override // java.lang.Thread, java.lang.Runnable
     public final void run() {
         try {
-            if (!this.f14363i.await(this.f14362e, TimeUnit.MILLISECONDS)) {
+            if (!this.f14364i.await(this.f14363e, TimeUnit.MILLISECONDS)) {
                 a();
             }
         } catch (InterruptedException unused) {

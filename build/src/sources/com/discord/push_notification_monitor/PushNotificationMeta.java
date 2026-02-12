@@ -92,7 +92,7 @@ public final class PushNotificationMeta {
         compositeEncoder.x(serialDescriptor, 1, pushNotificationMeta.silent);
         compositeEncoder.y(serialDescriptor, 2, pushNotificationMeta.type);
         compositeEncoder.y(serialDescriptor, 3, pushNotificationMeta.title);
-        n2 n2Var = n2.f50032a;
+        n2 n2Var = n2.f50033a;
         compositeEncoder.o(serialDescriptor, 4, n2Var, pushNotificationMeta.content);
         if (compositeEncoder.z(serialDescriptor, 5) || pushNotificationMeta.channelId != null) {
             compositeEncoder.o(serialDescriptor, 5, n2Var, pushNotificationMeta.channelId);

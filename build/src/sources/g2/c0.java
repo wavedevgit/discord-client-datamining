@@ -10,22 +10,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c0 {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f24651f = new a(null);
+    public static final a f24652f = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f24652a;
+    private final List f24653a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f24653b;
+    private final String f24654b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f24654c;
+    private final boolean f24655c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ComponentName f24655d;
+    private final ComponentName f24656d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f24656e;
+    private final boolean f24657e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -48,11 +48,11 @@ public final class c0 {
 
     public c0(List credentialOptions, String str, boolean z10, ComponentName componentName, boolean z11) {
         Intrinsics.checkNotNullParameter(credentialOptions, "credentialOptions");
-        this.f24652a = credentialOptions;
-        this.f24653b = str;
-        this.f24654c = z10;
-        this.f24655d = componentName;
-        this.f24656e = z11;
+        this.f24653a = credentialOptions;
+        this.f24654b = str;
+        this.f24655c = z10;
+        this.f24656d = componentName;
+        this.f24657e = z11;
         if (!credentialOptions.isEmpty()) {
             if (credentialOptions.size() > 1) {
                 List<l> list = credentialOptions;
@@ -60,7 +60,7 @@ public final class c0 {
                     for (l lVar : list) {
                     }
                 }
-                for (l lVar2 : this.f24652a) {
+                for (l lVar2 : this.f24653a) {
                 }
                 return;
             }
@@ -70,23 +70,23 @@ public final class c0 {
     }
 
     public final List a() {
-        return this.f24652a;
+        return this.f24653a;
     }
 
     public final String b() {
-        return this.f24653b;
+        return this.f24654b;
     }
 
     public final boolean c() {
-        return this.f24654c;
+        return this.f24655c;
     }
 
     public final ComponentName d() {
-        return this.f24655d;
+        return this.f24656d;
     }
 
     public final boolean e() {
-        return this.f24656e;
+        return this.f24657e;
     }
 
     public /* synthetic */ c0(List list, String str, boolean z10, ComponentName componentName, boolean z11, int i10, DefaultConstructorMarker defaultConstructorMarker) {

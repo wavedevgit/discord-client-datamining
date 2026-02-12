@@ -9,22 +9,22 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final C0215a f18451e;
+    public static final C0215a f18452e;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f18452i = new a("CACHES_DIRECTORY", 0, "cachesDirectory");
+    public static final a f18453i = new a("CACHES_DIRECTORY", 0, "cachesDirectory");
 
     /* renamed from: o  reason: collision with root package name */
-    public static final a f18453o = new a("DOCUMENT_DIRECTORY", 1, "documentDirectory");
+    public static final a f18454o = new a("DOCUMENT_DIRECTORY", 1, "documentDirectory");
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ a[] f18454p;
+    private static final /* synthetic */ a[] f18455p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f18455q;
+    private static final /* synthetic */ EnumEntries f18456q;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f18456d;
+    private final String f18457d;
 
     /* renamed from: com.reactnativedocumentpicker.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -52,7 +52,7 @@ public final class a {
                 }
             }
             if (aVar == null) {
-                return a.f18452i;
+                return a.f18453i;
             }
             return aVar;
         }
@@ -63,17 +63,17 @@ public final class a {
 
     static {
         a[] a10 = a();
-        f18454p = a10;
-        f18455q = hs.a.a(a10);
-        f18451e = new C0215a(null);
+        f18455p = a10;
+        f18456q = hs.a.a(a10);
+        f18452e = new C0215a(null);
     }
 
     private a(String str, int i10, String str2) {
-        this.f18456d = str2;
+        this.f18457d = str2;
     }
 
     private static final /* synthetic */ a[] a() {
-        return new a[]{f18452i, f18453o};
+        return new a[]{f18453i, f18454o};
     }
 
     public static a valueOf(String str) {
@@ -81,10 +81,10 @@ public final class a {
     }
 
     public static a[] values() {
-        return (a[]) f18454p.clone();
+        return (a[]) f18455p.clone();
     }
 
     public final String d() {
-        return this.f18456d;
+        return this.f18457d;
     }
 }

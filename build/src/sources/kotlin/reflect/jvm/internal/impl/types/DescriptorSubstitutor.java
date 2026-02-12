@@ -99,8 +99,8 @@ public class DescriptorSubstitutor {
         for (TypeParameterDescriptor typeParameterDescriptor2 : list) {
             TypeParameterDescriptorImpl typeParameterDescriptorImpl = (TypeParameterDescriptorImpl) hashMap2.get(typeParameterDescriptor2);
             for (KotlinType kotlinType : typeParameterDescriptor2.getUpperBounds()) {
-                ClassifierDescriptor mo1202getDeclarationDescriptor = kotlinType.getConstructor().mo1202getDeclarationDescriptor();
-                KotlinType substitute = (((mo1202getDeclarationDescriptor instanceof TypeParameterDescriptor) && TypeUtilsKt.hasTypeParameterRecursiveBounds((TypeParameterDescriptor) mo1202getDeclarationDescriptor)) ? createChainedSubstitutor : createChainedSubstitutor2).substitute(kotlinType, Variance.OUT_VARIANCE);
+                ClassifierDescriptor mo1201getDeclarationDescriptor = kotlinType.getConstructor().mo1201getDeclarationDescriptor();
+                KotlinType substitute = (((mo1201getDeclarationDescriptor instanceof TypeParameterDescriptor) && TypeUtilsKt.hasTypeParameterRecursiveBounds((TypeParameterDescriptor) mo1201getDeclarationDescriptor)) ? createChainedSubstitutor : createChainedSubstitutor2).substitute(kotlinType, Variance.OUT_VARIANCE);
                 if (substitute == null) {
                     return null;
                 }

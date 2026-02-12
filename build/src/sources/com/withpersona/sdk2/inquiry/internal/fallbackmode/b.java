@@ -5,18 +5,18 @@ import com.withpersona.sdk2.inquiry.internal.fallbackmode.f;
 public final class b implements lr.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f19852a;
+    private final a f19853a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final lr.h f19853b;
+    private final lr.h f19854b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final lr.h f19854c;
+    private final lr.h f19855c;
 
     public b(a aVar, lr.h hVar, lr.h hVar2) {
-        this.f19852a = aVar;
-        this.f19853b = hVar;
-        this.f19854c = hVar2;
+        this.f19853a = aVar;
+        this.f19854b = hVar;
+        this.f19855c = hVar2;
     }
 
     public static ip.a a(a aVar, d dVar, f.a aVar2) {
@@ -30,6 +30,6 @@ public final class b implements lr.d {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public ip.a get() {
-        return a(this.f19852a, (d) this.f19853b.get(), (f.a) this.f19854c.get());
+        return a(this.f19853a, (d) this.f19854b.get(), (f.a) this.f19855c.get());
     }
 }

@@ -121,7 +121,7 @@ public class Snackbar extends BaseTransientBottomBar {
     }
 
     private SnackbarContentLayout h0() {
-        return (SnackbarContentLayout) this.f16205i.getChildAt(0);
+        return (SnackbarContentLayout) this.f16206i.getChildAt(0);
     }
 
     private TextView i0() {

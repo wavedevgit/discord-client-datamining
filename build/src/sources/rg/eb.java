@@ -5,7 +5,7 @@ import bj.c;
 final class eb implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final eb f46646a = new eb();
+    static final eb f46647a = new eb();
 
     static {
         c.b a10 = bj.c.a("deviceInfo");

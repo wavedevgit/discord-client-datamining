@@ -13,25 +13,25 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateInquirySessionRequestJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20163a;
+    private final m.b f20164a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f20164b;
+    private final com.squareup.moshi.h f20165b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.squareup.moshi.h f20165c;
+    private final com.squareup.moshi.h f20166c;
 
     public CreateInquirySessionRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("data", "meta");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20163a = a10;
+        this.f20164a = a10;
         com.squareup.moshi.h f10 = moshi.f(CreateInquirySessionRequest.Data.class, x0.d(), "data");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20164b = f10;
+        this.f20165b = f10;
         com.squareup.moshi.h f11 = moshi.f(CreateInquirySessionRequest.Meta.class, x0.d(), "meta");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f20165c = f11;
+        this.f20166c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -42,14 +42,14 @@ public final class CreateInquirySessionRequestJsonAdapter extends com.squareup.m
         CreateInquirySessionRequest.Data data = null;
         CreateInquirySessionRequest.Meta meta = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20163a);
+            int J = reader.J(this.f20164a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (meta = (CreateInquirySessionRequest.Meta) this.f20165c.fromJson(reader)) == null) {
+                    if (J == 1 && (meta = (CreateInquirySessionRequest.Meta) this.f20166c.fromJson(reader)) == null) {
                         throw dn.c.x("meta", "meta", reader);
                     }
                 } else {
-                    data = (CreateInquirySessionRequest.Data) this.f20164b.fromJson(reader);
+                    data = (CreateInquirySessionRequest.Data) this.f20165b.fromJson(reader);
                     if (data == null) {
                         throw dn.c.x("data_", "data", reader);
                     }
@@ -76,9 +76,9 @@ public final class CreateInquirySessionRequestJsonAdapter extends com.squareup.m
         if (createInquirySessionRequest != null) {
             writer.i();
             writer.J("data");
-            this.f20164b.toJson(writer, createInquirySessionRequest.a());
+            this.f20165b.toJson(writer, createInquirySessionRequest.a());
             writer.J("meta");
-            this.f20165c.toJson(writer, createInquirySessionRequest.b());
+            this.f20166c.toJson(writer, createInquirySessionRequest.b());
             writer.s();
             return;
         }

@@ -32,22 +32,22 @@ import oo.d;
 public final class x extends RecyclerView.Adapter {
 
     /* renamed from: a  reason: collision with root package name */
-    private final v4.h f41024a;
+    private final v4.h f41025a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function0 f41025b;
+    private final Function0 f41026b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final StepStyles.DocumentStepStyle f41026c;
+    private final StepStyles.DocumentStepStyle f41027c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final LayoutInflater f41027d;
+    private final LayoutInflater f41028d;
 
     /* renamed from: e  reason: collision with root package name */
-    private List f41028e;
+    private List f41029e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Function1 f41029f;
+    private Function1 f41030f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static abstract class a {
@@ -68,32 +68,32 @@ public final class x extends RecyclerView.Adapter {
             public static final class C0574a extends b {
 
                 /* renamed from: a  reason: collision with root package name */
-                private final File f41030a;
+                private final File f41031a;
 
                 /* renamed from: b  reason: collision with root package name */
-                private final d.a f41031b;
+                private final d.a f41032b;
 
                 /* renamed from: c  reason: collision with root package name */
-                private final String f41032c;
+                private final String f41033c;
 
                 /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
                 public C0574a(File file, d.a document, String str) {
                     super(null);
                     Intrinsics.checkNotNullParameter(file, "file");
                     Intrinsics.checkNotNullParameter(document, "document");
-                    this.f41030a = file;
-                    this.f41031b = document;
-                    this.f41032c = str;
+                    this.f41031a = file;
+                    this.f41032b = document;
+                    this.f41033c = str;
                 }
 
                 @Override // oo.x.a.b
                 /* renamed from: b */
                 public d.a a() {
-                    return this.f41031b;
+                    return this.f41032b;
                 }
 
                 public final File c() {
-                    return this.f41030a;
+                    return this.f41031a;
                 }
 
                 public boolean equals(Object obj) {
@@ -104,7 +104,7 @@ public final class x extends RecyclerView.Adapter {
                         return false;
                     }
                     C0574a c0574a = (C0574a) obj;
-                    if (Intrinsics.areEqual(this.f41030a, c0574a.f41030a) && Intrinsics.areEqual(this.f41031b, c0574a.f41031b) && Intrinsics.areEqual(this.f41032c, c0574a.f41032c)) {
+                    if (Intrinsics.areEqual(this.f41031a, c0574a.f41031a) && Intrinsics.areEqual(this.f41032b, c0574a.f41032b) && Intrinsics.areEqual(this.f41033c, c0574a.f41033c)) {
                         return true;
                     }
                     return false;
@@ -112,8 +112,8 @@ public final class x extends RecyclerView.Adapter {
 
                 public int hashCode() {
                     int hashCode;
-                    int hashCode2 = ((this.f41030a.hashCode() * 31) + this.f41031b.hashCode()) * 31;
-                    String str = this.f41032c;
+                    int hashCode2 = ((this.f41031a.hashCode() * 31) + this.f41032b.hashCode()) * 31;
+                    String str = this.f41033c;
                     if (str == null) {
                         hashCode = 0;
                     } else {
@@ -123,9 +123,9 @@ public final class x extends RecyclerView.Adapter {
                 }
 
                 public String toString() {
-                    File file = this.f41030a;
-                    d.a aVar = this.f41031b;
-                    String str = this.f41032c;
+                    File file = this.f41031a;
+                    d.a aVar = this.f41032b;
+                    String str = this.f41033c;
                     return "Local(file=" + file + ", document=" + aVar + ", mimeType=" + str + ")";
                 }
             }
@@ -135,44 +135,44 @@ public final class x extends RecyclerView.Adapter {
             public static final class C0575b extends b {
 
                 /* renamed from: a  reason: collision with root package name */
-                private final String f41033a;
+                private final String f41034a;
 
                 /* renamed from: b  reason: collision with root package name */
-                private final String f41034b;
+                private final String f41035b;
 
                 /* renamed from: c  reason: collision with root package name */
-                private final d.b f41035c;
+                private final d.b f41036c;
 
                 /* renamed from: d  reason: collision with root package name */
-                private final String f41036d;
+                private final String f41037d;
 
                 /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
                 public C0575b(String remoteUrl, String str, d.b document, String str2) {
                     super(null);
                     Intrinsics.checkNotNullParameter(remoteUrl, "remoteUrl");
                     Intrinsics.checkNotNullParameter(document, "document");
-                    this.f41033a = remoteUrl;
-                    this.f41034b = str;
-                    this.f41035c = document;
-                    this.f41036d = str2;
+                    this.f41034a = remoteUrl;
+                    this.f41035b = str;
+                    this.f41036c = document;
+                    this.f41037d = str2;
                 }
 
                 @Override // oo.x.a.b
                 /* renamed from: b */
                 public d.b a() {
-                    return this.f41035c;
+                    return this.f41036c;
                 }
 
                 public final String c() {
-                    return this.f41034b;
+                    return this.f41035b;
                 }
 
                 public String d() {
-                    return this.f41036d;
+                    return this.f41037d;
                 }
 
                 public final String e() {
-                    return this.f41033a;
+                    return this.f41034a;
                 }
 
                 public boolean equals(Object obj) {
@@ -183,7 +183,7 @@ public final class x extends RecyclerView.Adapter {
                         return false;
                     }
                     C0575b c0575b = (C0575b) obj;
-                    if (Intrinsics.areEqual(this.f41033a, c0575b.f41033a) && Intrinsics.areEqual(this.f41034b, c0575b.f41034b) && Intrinsics.areEqual(this.f41035c, c0575b.f41035c) && Intrinsics.areEqual(this.f41036d, c0575b.f41036d)) {
+                    if (Intrinsics.areEqual(this.f41034a, c0575b.f41034a) && Intrinsics.areEqual(this.f41035b, c0575b.f41035b) && Intrinsics.areEqual(this.f41036c, c0575b.f41036c) && Intrinsics.areEqual(this.f41037d, c0575b.f41037d)) {
                         return true;
                     }
                     return false;
@@ -191,16 +191,16 @@ public final class x extends RecyclerView.Adapter {
 
                 public int hashCode() {
                     int hashCode;
-                    int hashCode2 = this.f41033a.hashCode() * 31;
-                    String str = this.f41034b;
+                    int hashCode2 = this.f41034a.hashCode() * 31;
+                    String str = this.f41035b;
                     int i10 = 0;
                     if (str == null) {
                         hashCode = 0;
                     } else {
                         hashCode = str.hashCode();
                     }
-                    int hashCode3 = (((hashCode2 + hashCode) * 31) + this.f41035c.hashCode()) * 31;
-                    String str2 = this.f41036d;
+                    int hashCode3 = (((hashCode2 + hashCode) * 31) + this.f41036c.hashCode()) * 31;
+                    String str2 = this.f41037d;
                     if (str2 != null) {
                         i10 = str2.hashCode();
                     }
@@ -208,10 +208,10 @@ public final class x extends RecyclerView.Adapter {
                 }
 
                 public String toString() {
-                    String str = this.f41033a;
-                    String str2 = this.f41034b;
-                    d.b bVar = this.f41035c;
-                    String str3 = this.f41036d;
+                    String str = this.f41034a;
+                    String str2 = this.f41035b;
+                    d.b bVar = this.f41036c;
+                    String str3 = this.f41037d;
                     return "Remote(remoteUrl=" + str + ", filename=" + str2 + ", document=" + bVar + ", mimeType=" + str3 + ")";
                 }
             }
@@ -239,21 +239,21 @@ public final class x extends RecyclerView.Adapter {
     public static final class b extends e.b {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ List f41037a;
+        final /* synthetic */ List f41038a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ List f41038b;
+        final /* synthetic */ List f41039b;
 
         b(List list, List list2) {
-            this.f41037a = list;
-            this.f41038b = list2;
+            this.f41038a = list;
+            this.f41039b = list2;
         }
 
         @Override // androidx.recyclerview.widget.e.b
         public boolean areContentsTheSame(int i10, int i11) {
             boolean z10;
-            a aVar = (a) this.f41037a.get(i10);
-            a aVar2 = (a) this.f41038b.get(i11);
+            a aVar = (a) this.f41038a.get(i10);
+            a aVar2 = (a) this.f41039b.get(i11);
             if (areItemsTheSame(i10, i11)) {
                 if (aVar instanceof a.C0573a) {
                     z10 = Intrinsics.areEqual(aVar, aVar2);
@@ -272,8 +272,8 @@ public final class x extends RecyclerView.Adapter {
 
         @Override // androidx.recyclerview.widget.e.b
         public boolean areItemsTheSame(int i10, int i11) {
-            a aVar = (a) this.f41037a.get(i10);
-            a aVar2 = (a) this.f41038b.get(i11);
+            a aVar = (a) this.f41038a.get(i10);
+            a aVar2 = (a) this.f41039b.get(i11);
             if (aVar.getClass() != aVar2.getClass()) {
                 return false;
             }
@@ -295,12 +295,12 @@ public final class x extends RecyclerView.Adapter {
 
         @Override // androidx.recyclerview.widget.e.b
         public int getNewListSize() {
-            return this.f41038b.size();
+            return this.f41039b.size();
         }
 
         @Override // androidx.recyclerview.widget.e.b
         public int getOldListSize() {
-            return this.f41037a.size();
+            return this.f41038a.size();
         }
     }
 
@@ -308,81 +308,81 @@ public final class x extends RecyclerView.Adapter {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(imageLoader, "imageLoader");
         Intrinsics.checkNotNullParameter(onClickAddButton, "onClickAddButton");
-        this.f41024a = imageLoader;
-        this.f41025b = onClickAddButton;
-        this.f41026c = documentStepStyle;
-        this.f41027d = LayoutInflater.from(context);
-        this.f41028e = CollectionsKt.l();
+        this.f41025a = imageLoader;
+        this.f41026b = onClickAddButton;
+        this.f41027c = documentStepStyle;
+        this.f41028d = LayoutInflater.from(context);
+        this.f41029e = CollectionsKt.l();
     }
 
     private final void c(po.b bVar) {
-        StepStyles.DocumentStepStyle documentStepStyle = this.f41026c;
+        StepStyles.DocumentStepStyle documentStepStyle = this.f41027c;
         if (documentStepStyle == null) {
             return;
         }
         Double imagePreviewBorderRadius = documentStepStyle.getImagePreviewBorderRadius();
         if (imagePreviewBorderRadius != null) {
-            bVar.f42853c.setRadius((float) bq.h.a(imagePreviewBorderRadius.doubleValue()));
+            bVar.f42854c.setRadius((float) bq.h.a(imagePreviewBorderRadius.doubleValue()));
         }
-        Double imagePreviewBorderWidth = this.f41026c.getImagePreviewBorderWidth();
+        Double imagePreviewBorderWidth = this.f41027c.getImagePreviewBorderWidth();
         if (imagePreviewBorderWidth != null) {
-            bVar.f42853c.setStrokeWidth((int) Math.ceil(bq.h.a(imagePreviewBorderWidth.doubleValue())));
+            bVar.f42854c.setStrokeWidth((int) Math.ceil(bq.h.a(imagePreviewBorderWidth.doubleValue())));
         }
-        Integer imagePreviewBorderColor = this.f41026c.getImagePreviewBorderColor();
+        Integer imagePreviewBorderColor = this.f41027c.getImagePreviewBorderColor();
         if (imagePreviewBorderColor != null) {
-            bVar.f42853c.setStrokeColor(imagePreviewBorderColor.intValue());
+            bVar.f42854c.setStrokeColor(imagePreviewBorderColor.intValue());
         }
-        Integer imagePreviewMainAreaFillColor = this.f41026c.getImagePreviewMainAreaFillColor();
+        Integer imagePreviewMainAreaFillColor = this.f41027c.getImagePreviewMainAreaFillColor();
         if (imagePreviewMainAreaFillColor != null) {
-            bVar.f42852b.setBackgroundColor(imagePreviewMainAreaFillColor.intValue());
+            bVar.f42853b.setBackgroundColor(imagePreviewMainAreaFillColor.intValue());
         }
-        ThemeableLottieAnimationView addButton = bVar.f42852b;
+        ThemeableLottieAnimationView addButton = bVar.f42853b;
         Intrinsics.checkNotNullExpressionValue(addButton, "addButton");
-        uq.g.g(addButton, this.f41026c.getImagePreviewPlusIconStrokeColor(), this.f41026c.getImagePreviewPlusIconFillColor(), null, new String[]{"#FFFFFF"}, new String[]{"#5B3FD3"}, new String[0]);
+        uq.g.g(addButton, this.f41027c.getImagePreviewPlusIconStrokeColor(), this.f41027c.getImagePreviewPlusIconFillColor(), null, new String[]{"#FFFFFF"}, new String[]{"#5B3FD3"}, new String[0]);
     }
 
     private final void d(po.d dVar) {
-        StepStyles.DocumentStepStyle documentStepStyle = this.f41026c;
+        StepStyles.DocumentStepStyle documentStepStyle = this.f41027c;
         if (documentStepStyle == null) {
             return;
         }
         Integer strokeColorValue = documentStepStyle.getStrokeColorValue();
         if (strokeColorValue != null) {
-            dVar.f42869f.setIndicatorColor(strokeColorValue.intValue());
+            dVar.f42870f.setIndicatorColor(strokeColorValue.intValue());
         }
-        Integer fillColorValue = this.f41026c.getFillColorValue();
+        Integer fillColorValue = this.f41027c.getFillColorValue();
         if (fillColorValue != null) {
-            dVar.f42869f.setTrackColor(fillColorValue.intValue());
+            dVar.f42870f.setTrackColor(fillColorValue.intValue());
         }
-        Integer imagePreviewCropAreaFillColor = this.f41026c.getImagePreviewCropAreaFillColor();
+        Integer imagePreviewCropAreaFillColor = this.f41027c.getImagePreviewCropAreaFillColor();
         if (imagePreviewCropAreaFillColor != null) {
-            dVar.f42867d.setBackgroundColor(imagePreviewCropAreaFillColor.intValue());
+            dVar.f42868d.setBackgroundColor(imagePreviewCropAreaFillColor.intValue());
         }
-        Double imagePreviewBorderRadius = this.f41026c.getImagePreviewBorderRadius();
+        Double imagePreviewBorderRadius = this.f41027c.getImagePreviewBorderRadius();
         if (imagePreviewBorderRadius != null) {
-            dVar.f42865b.setRadius((float) bq.h.a(imagePreviewBorderRadius.doubleValue()));
+            dVar.f42866b.setRadius((float) bq.h.a(imagePreviewBorderRadius.doubleValue()));
         }
-        Double imagePreviewBorderWidth = this.f41026c.getImagePreviewBorderWidth();
+        Double imagePreviewBorderWidth = this.f41027c.getImagePreviewBorderWidth();
         if (imagePreviewBorderWidth != null) {
-            dVar.f42865b.setStrokeWidth((int) Math.ceil(bq.h.a(imagePreviewBorderWidth.doubleValue())));
+            dVar.f42866b.setStrokeWidth((int) Math.ceil(bq.h.a(imagePreviewBorderWidth.doubleValue())));
         }
-        Integer imagePreviewBorderColor = this.f41026c.getImagePreviewBorderColor();
+        Integer imagePreviewBorderColor = this.f41027c.getImagePreviewBorderColor();
         if (imagePreviewBorderColor != null) {
-            dVar.f42865b.setStrokeColor(imagePreviewBorderColor.intValue());
+            dVar.f42866b.setStrokeColor(imagePreviewBorderColor.intValue());
         }
-        TextBasedComponentStyle imageNameStyleValue = this.f41026c.getImageNameStyleValue();
+        TextBasedComponentStyle imageNameStyleValue = this.f41027c.getImageNameStyleValue();
         if (imageNameStyleValue != null) {
-            TextView filenameView = dVar.f42866c;
+            TextView filenameView = dVar.f42867c;
             Intrinsics.checkNotNullExpressionValue(filenameView, "filenameView");
             uq.f0.n(filenameView, imageNameStyleValue, null, 2, null);
         }
-        Integer imagePreviewMainAreaFillColor = this.f41026c.getImagePreviewMainAreaFillColor();
+        Integer imagePreviewMainAreaFillColor = this.f41027c.getImagePreviewMainAreaFillColor();
         if (imagePreviewMainAreaFillColor != null) {
-            dVar.f42868e.setBackgroundColor(imagePreviewMainAreaFillColor.intValue());
+            dVar.f42869e.setBackgroundColor(imagePreviewMainAreaFillColor.intValue());
         }
-        ThemeableLottieAnimationView removeButton = dVar.f42870g;
+        ThemeableLottieAnimationView removeButton = dVar.f42871g;
         Intrinsics.checkNotNullExpressionValue(removeButton, "removeButton");
-        uq.g.g(removeButton, this.f41026c.getImagePreviewXIconStrokeColor(), this.f41026c.getImagePreviewXIconFillColor(), null, new String[]{"#6B6D82"}, new String[]{"#FFFFFF"}, new String[0]);
+        uq.g.g(removeButton, this.f41027c.getImagePreviewXIconStrokeColor(), this.f41027c.getImagePreviewXIconFillColor(), null, new String[]{"#6B6D82"}, new String[]{"#FFFFFF"}, new String[0]);
     }
 
     private final List e(boolean z10, List list) {
@@ -411,12 +411,12 @@ public final class x extends RecyclerView.Adapter {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void f(x xVar, View view) {
-        xVar.f41025b.invoke();
+        xVar.f41026b.invoke();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void g(x xVar, a aVar, View view) {
-        Function1 function1 = xVar.f41029f;
+        Function1 function1 = xVar.f41030f;
         if (function1 != null) {
             function1.invoke(((a.b) aVar).a());
         }
@@ -424,32 +424,32 @@ public final class x extends RecyclerView.Adapter {
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter
     public int getItemCount() {
-        return this.f41028e.size();
+        return this.f41029e.size();
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter
     public int getItemViewType(int i10) {
-        a aVar = (a) this.f41028e.get(i10);
+        a aVar = (a) this.f41029e.get(i10);
         if (aVar instanceof a.C0573a) {
-            return z2.f41074c;
+            return z2.f41075c;
         }
         if (aVar instanceof a.b) {
-            return z2.f41075d;
+            return z2.f41076d;
         }
         throw new as.p();
     }
 
     public final void h(Function1 function1) {
-        this.f41029f = function1;
+        this.f41030f = function1;
     }
 
     public final void i(boolean z10, List documents) {
         Intrinsics.checkNotNullParameter(documents, "documents");
         List e10 = e(z10, documents);
-        List list = this.f41028e;
+        List list = this.f41029e;
         e.C0064e b10 = androidx.recyclerview.widget.e.b(new b(list, e10));
         Intrinsics.checkNotNullExpressionValue(b10, "calculateDiff(...)");
-        this.f41028e = e10;
+        this.f41029e = e10;
         b10.c(this);
         List list2 = list;
         LinkedHashMap linkedHashMap = new LinkedHashMap(kotlin.ranges.d.d(kotlin.collections.o0.e(CollectionsKt.w(list2, 10)), 16));
@@ -466,7 +466,7 @@ public final class x extends RecyclerView.Adapter {
                     if (c0574a.a().e() == 100) {
                         notifyItemChanged(a10);
                     } else {
-                        notifyItemChanged(a10, Unit.f31987a);
+                        notifyItemChanged(a10, Unit.f31988a);
                     }
                 }
             }
@@ -477,9 +477,9 @@ public final class x extends RecyclerView.Adapter {
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int i10) {
         int i11;
         Intrinsics.checkNotNullParameter(holder, "holder");
-        final a aVar = (a) this.f41028e.get(i10);
+        final a aVar = (a) this.f41029e.get(i10);
         if (aVar instanceof a.C0573a) {
-            ((po.b) bq.c0.a(holder)).f42852b.setOnClickListener(new View.OnClickListener() { // from class: oo.v
+            ((po.b) bq.c0.a(holder)).f42853b.setOnClickListener(new View.OnClickListener() { // from class: oo.v
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     x.f(x.this, view);
@@ -487,20 +487,20 @@ public final class x extends RecyclerView.Adapter {
             });
         } else if (aVar instanceof a.b) {
             po.d dVar = (po.d) bq.c0.a(holder);
-            dVar.f42870g.setOnClickListener(new View.OnClickListener() { // from class: oo.w
+            dVar.f42871g.setOnClickListener(new View.OnClickListener() { // from class: oo.w
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view) {
                     x.g(x.this, aVar, view);
                 }
             });
-            ImageView imageView = dVar.f42867d;
+            ImageView imageView = dVar.f42868d;
             Intrinsics.checkNotNullExpressionValue(imageView, "imageView");
             k5.l.a(imageView);
-            dVar.f42867d.setImageDrawable(null);
+            dVar.f42868d.setImageDrawable(null);
             a.b bVar = (a.b) aVar;
             int i12 = 8;
             if (bVar instanceof a.b.C0574a) {
-                ImageView imageView2 = dVar.f42867d;
+                ImageView imageView2 = dVar.f42868d;
                 a.b.C0574a c0574a = (a.b.C0574a) aVar;
                 if (c0574a.a().e() < 100) {
                     i11 = 4;
@@ -508,39 +508,39 @@ public final class x extends RecyclerView.Adapter {
                     i11 = 0;
                 }
                 imageView2.setVisibility(i11);
-                dVar.f42870g.setVisibility(8);
-                dVar.f42866c.setText(c0574a.c().getName());
-                CircularProgressIndicator circularProgressIndicator = dVar.f42869f;
+                dVar.f42871g.setVisibility(8);
+                dVar.f42867c.setText(c0574a.c().getName());
+                CircularProgressIndicator circularProgressIndicator = dVar.f42870f;
                 if (c0574a.a().e() < 100) {
                     i12 = 0;
                 }
                 circularProgressIndicator.setVisibility(i12);
-                dVar.f42869f.setProgress(c0574a.a().e());
+                dVar.f42870f.setProgress(c0574a.a().e());
             } else if (bVar instanceof a.b.C0575b) {
-                dVar.f42867d.setVisibility(0);
+                dVar.f42868d.setVisibility(0);
                 a.b.C0575b c0575b = (a.b.C0575b) aVar;
                 if (Intrinsics.areEqual(c0575b.d(), "application/pdf")) {
-                    ImageView imageView3 = dVar.f42867d;
+                    ImageView imageView3 = dVar.f42868d;
                     Intrinsics.checkNotNullExpressionValue(imageView3, "imageView");
                     Integer valueOf = Integer.valueOf(bq.l.f7379l);
-                    v4.h hVar = this.f41024a;
+                    v4.h hVar = this.f41025a;
                     h.a r10 = new h.a(imageView3.getContext()).d(valueOf).r(imageView3);
                     r10.o(100, 100);
                     hVar.a(r10.a());
                 } else {
-                    ImageView imageView4 = dVar.f42867d;
+                    ImageView imageView4 = dVar.f42868d;
                     Intrinsics.checkNotNullExpressionValue(imageView4, "imageView");
                     String e10 = c0575b.e();
-                    v4.h hVar2 = this.f41024a;
+                    v4.h hVar2 = this.f41025a;
                     h.a r11 = new h.a(imageView4.getContext()).d(e10).r(imageView4);
                     r11.c(true);
                     r11.b(100);
                     r11.o(500, 500);
                     hVar2.a(r11.a());
                 }
-                dVar.f42869f.setVisibility(8);
-                dVar.f42870g.setVisibility(0);
-                dVar.f42866c.setText(c0575b.c());
+                dVar.f42870f.setVisibility(8);
+                dVar.f42871g.setVisibility(0);
+                dVar.f42867c.setText(c0575b.c());
             } else {
                 throw new as.p();
             }
@@ -554,26 +554,26 @@ public final class x extends RecyclerView.Adapter {
         l5.i iVar;
         l5.i iVar2;
         Intrinsics.checkNotNullParameter(parent, "parent");
-        View inflate = this.f41027d.inflate(i10, parent, false);
-        if (i10 == z2.f41074c) {
+        View inflate = this.f41028d.inflate(i10, parent, false);
+        if (i10 == z2.f41075c) {
             po.b a10 = po.b.a(inflate);
             Intrinsics.checkNotNullExpressionValue(a10, "bind(...)");
             bq.b0 b0Var = new bq.b0(a10);
-            l5.c0 y10 = l5.s.y(((po.b) b0Var.getBinding()).getRoot().getContext(), a3.f40679a);
+            l5.c0 y10 = l5.s.y(((po.b) b0Var.getBinding()).getRoot().getContext(), a3.f40680a);
             if (y10 != null && (iVar2 = (l5.i) y10.b()) != null) {
-                ((po.b) b0Var.getBinding()).f42852b.setComposition(iVar2);
+                ((po.b) b0Var.getBinding()).f42853b.setComposition(iVar2);
             }
             ViewBinding binding = b0Var.getBinding();
             Intrinsics.checkNotNullExpressionValue(binding, "<get-binding>(...)");
             c((po.b) binding);
             return b0Var;
-        } else if (i10 == z2.f41075d) {
+        } else if (i10 == z2.f41076d) {
             po.d a11 = po.d.a(inflate);
             Intrinsics.checkNotNullExpressionValue(a11, "bind(...)");
             bq.b0 b0Var2 = new bq.b0(a11);
-            l5.c0 y11 = l5.s.y(((po.d) b0Var2.getBinding()).getRoot().getContext(), a3.f40680b);
+            l5.c0 y11 = l5.s.y(((po.d) b0Var2.getBinding()).getRoot().getContext(), a3.f40681b);
             if (y11 != null && (iVar = (l5.i) y11.b()) != null) {
-                ((po.d) b0Var2.getBinding()).f42870g.setComposition(iVar);
+                ((po.d) b0Var2.getBinding()).f42871g.setComposition(iVar);
             }
             ViewBinding binding2 = b0Var2.getBinding();
             Intrinsics.checkNotNullExpressionValue(binding2, "<get-binding>(...)");

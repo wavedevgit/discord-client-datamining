@@ -5,30 +5,30 @@ import bj.c;
 final class r5 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final r5 f42375a = new r5();
+    static final r5 f42376a = new r5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f42376b;
+    private static final bj.c f42377b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f42377c;
+    private static final bj.c f42378c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f42378d;
+    private static final bj.c f42379d;
 
     static {
         c.b a10 = bj.c.a("languageOption");
         f fVar = new f();
         fVar.a(3);
-        f42376b = a10.b(fVar.b()).a();
+        f42377b = a10.b(fVar.b()).a();
         c.b a11 = bj.c.a("isUsingLegacyApi");
         f fVar2 = new f();
         fVar2.a(4);
-        f42377c = a11.b(fVar2.b()).a();
+        f42378c = a11.b(fVar2.b()).a();
         c.b a12 = bj.c.a("sdkVersion");
         f fVar3 = new f();
         fVar3.a(5);
-        f42378d = a12.b(fVar3.b()).a();
+        f42379d = a12.b(fVar3.b()).a();
     }
 
     private r5() {

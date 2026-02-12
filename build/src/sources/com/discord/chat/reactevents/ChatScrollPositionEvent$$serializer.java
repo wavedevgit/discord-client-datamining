@@ -50,11 +50,11 @@ public /* synthetic */ class ChatScrollPositionEvent$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        x xVar = x.f50086a;
+        x xVar = x.f50087a;
         KSerializer u10 = rt.a.u(xVar);
         KSerializer u11 = rt.a.u(xVar);
-        h hVar = h.f49996a;
-        p0 p0Var = p0.f50048a;
+        h hVar = h.f49997a;
+        p0 p0Var = p0.f50049a;
         return new KSerializer[]{hVar, hVar, hVar, hVar, hVar, hVar, hVar, p0Var, u10, p0Var, u11, p0Var};
     }
 
@@ -87,7 +87,7 @@ public /* synthetic */ class ChatScrollPositionEvent$$serializer implements h0 {
             boolean C5 = b10.C(serialDescriptor, 5);
             boolean C6 = b10.C(serialDescriptor, 6);
             int i15 = b10.i(serialDescriptor, 7);
-            x xVar = x.f50086a;
+            x xVar = x.f50087a;
             int i16 = b10.i(serialDescriptor, 9);
             i14 = 4095;
             i10 = b10.i(serialDescriptor, 11);
@@ -158,7 +158,7 @@ public /* synthetic */ class ChatScrollPositionEvent$$serializer implements h0 {
                         i14 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         break;
                     case 8:
-                        d13 = (Double) b10.n(serialDescriptor, 8, x.f50086a, d13);
+                        d13 = (Double) b10.n(serialDescriptor, 8, x.f50087a, d13);
                         i14 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                         break;
                     case 9:
@@ -166,7 +166,7 @@ public /* synthetic */ class ChatScrollPositionEvent$$serializer implements h0 {
                         i14 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
                         break;
                     case 10:
-                        d12 = (Double) b10.n(serialDescriptor, 10, x.f50086a, d12);
+                        d12 = (Double) b10.n(serialDescriptor, 10, x.f50087a, d12);
                         i14 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
                         break;
                     case 11:

@@ -59,12 +59,12 @@ public final class PortalFromNativeModule$ViewManager$setPortal$1 extends k impl
                     return f10;
                 }
             }
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -82,7 +82,7 @@ public final class PortalFromNativeModule$ViewManager$setPortal$1 extends k impl
         ReactEvents reactEvents;
         reactEvents = viewManager.reactEvents;
         reactEvents.emitEvent(portalHolderViewGroup, new PortalFromNativeModule.OnPortalViewLoadedEvent(d10));
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -121,11 +121,11 @@ public final class PortalFromNativeModule$ViewManager$setPortal$1 extends k impl
                 return invokeSuspend$lambda$0;
             }
         });
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((PortalFromNativeModule$ViewManager$setPortal$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+        return ((PortalFromNativeModule$ViewManager$setPortal$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

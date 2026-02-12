@@ -11,19 +11,19 @@ import kotlin.jvm.internal.Intrinsics;
 public class f extends Drawable implements Animatable, d9.a {
 
     /* renamed from: d  reason: collision with root package name */
-    private p9.a f52380d;
+    private p9.a f52381d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final c f52381e;
+    private final c f52382e;
 
     /* renamed from: i  reason: collision with root package name */
-    private d f52382i;
+    private d f52383i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final DrawableProperties f52383o;
+    private final DrawableProperties f52384o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final a f52384p;
+    private final a f52385p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a implements Runnable {
@@ -39,54 +39,54 @@ public class f extends Drawable implements Animatable, d9.a {
 
     public f(p9.a animationBackend) {
         Intrinsics.checkNotNullParameter(animationBackend, "animationBackend");
-        this.f52380d = animationBackend;
-        this.f52381e = new c(new y9.a(this.f52380d));
-        this.f52382i = new e();
+        this.f52381d = animationBackend;
+        this.f52382e = new c(new y9.a(this.f52381d));
+        this.f52383i = new e();
         DrawableProperties drawableProperties = new DrawableProperties();
         drawableProperties.a(this);
-        this.f52383o = drawableProperties;
-        this.f52384p = new a();
+        this.f52384o = drawableProperties;
+        this.f52385p = new a();
     }
 
     @Override // d9.a
     public void a() {
-        this.f52380d.clear();
+        this.f52381d.clear();
     }
 
     @Override // android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
         Intrinsics.checkNotNullParameter(canvas, "canvas");
-        int a10 = this.f52381e.a();
+        int a10 = this.f52382e.a();
         if (a10 == -1) {
-            a10 = this.f52380d.a() - 1;
-            this.f52381e.g(false);
-            this.f52382i.c(this);
-        } else if (a10 == 0 && this.f52381e.h()) {
-            this.f52382i.a(this);
+            a10 = this.f52381d.a() - 1;
+            this.f52382e.g(false);
+            this.f52383i.c(this);
+        } else if (a10 == 0 && this.f52382e.h()) {
+            this.f52383i.a(this);
         }
-        if (this.f52380d.h(this, canvas, a10)) {
-            this.f52382i.d(this, a10);
-            this.f52381e.f(a10);
+        if (this.f52381d.h(this, canvas, a10)) {
+            this.f52383i.d(this, a10);
+            this.f52382e.f(a10);
         } else {
-            this.f52381e.e();
+            this.f52382e.e();
         }
-        long c10 = this.f52381e.c();
+        long c10 = this.f52382e.c();
         if (c10 != -1) {
-            scheduleSelf(this.f52384p, c10);
+            scheduleSelf(this.f52385p, c10);
             return;
         }
-        this.f52382i.c(this);
-        this.f52381e.g(false);
+        this.f52383i.c(this);
+        this.f52382e.g(false);
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicHeight() {
-        return this.f52380d.c();
+        return this.f52381d.c();
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicWidth() {
-        return this.f52380d.e();
+        return this.f52381d.e();
     }
 
     @Override // android.graphics.drawable.Drawable
@@ -96,41 +96,41 @@ public class f extends Drawable implements Animatable, d9.a {
 
     @Override // android.graphics.drawable.Animatable
     public boolean isRunning() {
-        return this.f52381e.b();
+        return this.f52382e.b();
     }
 
     @Override // android.graphics.drawable.Drawable
     protected void onBoundsChange(Rect bounds) {
         Intrinsics.checkNotNullParameter(bounds, "bounds");
-        this.f52380d.d(bounds);
+        this.f52381d.d(bounds);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setAlpha(int i10) {
-        this.f52383o.b(i10);
-        this.f52380d.l(i10);
+        this.f52384o.b(i10);
+        this.f52381d.l(i10);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setColorFilter(ColorFilter colorFilter) {
-        this.f52383o.c(colorFilter);
-        this.f52380d.f(colorFilter);
+        this.f52384o.c(colorFilter);
+        this.f52381d.f(colorFilter);
     }
 
     @Override // android.graphics.drawable.Animatable
     public void start() {
-        if (this.f52380d.a() <= 0) {
+        if (this.f52381d.a() <= 0) {
             return;
         }
-        this.f52381e.i();
-        this.f52382i.b(this);
+        this.f52382e.i();
+        this.f52383i.b(this);
         invalidateSelf();
     }
 
     @Override // android.graphics.drawable.Animatable
     public void stop() {
-        this.f52381e.j();
-        this.f52382i.c(this);
-        unscheduleSelf(this.f52384p);
+        this.f52382e.j();
+        this.f52383i.c(this);
+        unscheduleSelf(this.f52385p);
     }
 }

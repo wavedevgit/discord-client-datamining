@@ -5,18 +5,18 @@ import java.io.UnsupportedEncodingException;
 public final class td implements ed {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ea f44992a;
+    private final ea f44993a;
 
     /* renamed from: b  reason: collision with root package name */
-    private fc f44993b = new fc();
+    private fc f44994b = new fc();
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f44994c;
+    private final int f44995c;
 
     private td(ea eaVar, int i10) {
-        this.f44992a = eaVar;
+        this.f44993a = eaVar;
         ce.a();
-        this.f44994c = i10;
+        this.f44995c = i10;
     }
 
     public static ed e(ea eaVar) {
@@ -30,23 +30,23 @@ public final class td implements ed {
     @Override // qg.ed
     public final byte[] a(int i10, boolean z10) {
         boolean z11;
-        fc fcVar = this.f44993b;
+        fc fcVar = this.f44994b;
         if (1 != (i10 ^ 1)) {
             z11 = false;
         } else {
             z11 = true;
         }
         fcVar.f(Boolean.valueOf(z11));
-        this.f44993b.e(Boolean.FALSE);
-        this.f44992a.i(this.f44993b.m());
+        this.f44994b.e(Boolean.FALSE);
+        this.f44993a.i(this.f44994b.m());
         try {
             ce.a();
             if (i10 == 0) {
-                return new dj.d().j(f8.f44448a).k(true).i().b(this.f44992a.j()).getBytes("utf-8");
+                return new dj.d().j(f8.f44449a).k(true).i().b(this.f44993a.j()).getBytes("utf-8");
             }
-            ga j10 = this.f44992a.j();
+            ga j10 = this.f44993a.j();
             a2 a2Var = new a2();
-            f8.f44448a.a(a2Var);
+            f8.f44449a.a(a2Var);
             return a2Var.b().a(j10);
         } catch (UnsupportedEncodingException e10) {
             throw new UnsupportedOperationException("Failed to covert logging to UTF-8 byte array", e10);
@@ -55,7 +55,7 @@ public final class td implements ed {
 
     @Override // qg.ed
     public final String b() {
-        hc f10 = this.f44992a.j().f();
+        hc f10 = this.f44993a.j().f();
         if (f10 != null && !d.b(f10.k())) {
             return (String) hf.q.l(f10.k());
         }
@@ -64,18 +64,18 @@ public final class td implements ed {
 
     @Override // qg.ed
     public final ed c(fc fcVar) {
-        this.f44993b = fcVar;
+        this.f44994b = fcVar;
         return this;
     }
 
     @Override // qg.ed
     public final ed d(da daVar) {
-        this.f44992a.f(daVar);
+        this.f44993a.f(daVar);
         return this;
     }
 
     @Override // qg.ed
     public final int zza() {
-        return this.f44994c;
+        return this.f44995c;
     }
 }

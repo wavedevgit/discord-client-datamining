@@ -6,35 +6,35 @@ import com.google.android.play.core.integrity.c;
 public final class r0 extends c.a.AbstractC0190a {
 
     /* renamed from: a  reason: collision with root package name */
-    private long f17097a;
+    private long f17098a;
 
     /* renamed from: b  reason: collision with root package name */
-    private byte f17098b;
+    private byte f17099b;
 
     @Override // com.google.android.play.core.integrity.c.a.AbstractC0190a
     public final c.a a() {
-        if (this.f17098b != 3) {
+        if (this.f17099b != 3) {
             StringBuilder sb2 = new StringBuilder();
-            if ((this.f17098b & 1) == 0) {
+            if ((this.f17099b & 1) == 0) {
                 sb2.append(" cloudProjectNumber");
             }
-            if ((this.f17098b & 2) == 0) {
+            if ((this.f17099b & 2) == 0) {
                 sb2.append(" webViewRequestMode");
             }
             throw new IllegalStateException("Missing required properties:".concat(sb2.toString()));
         }
-        return new s0(this.f17097a, 0, null);
+        return new s0(this.f17098a, 0, null);
     }
 
     @Override // com.google.android.play.core.integrity.c.a.AbstractC0190a
     public final c.a.AbstractC0190a b(long j10) {
-        this.f17097a = j10;
-        this.f17098b = (byte) (this.f17098b | 1);
+        this.f17098a = j10;
+        this.f17099b = (byte) (this.f17099b | 1);
         return this;
     }
 
     public final c.a.AbstractC0190a c(int i10) {
-        this.f17098b = (byte) (this.f17098b | 2);
+        this.f17099b = (byte) (this.f17099b | 2);
         return this;
     }
 }

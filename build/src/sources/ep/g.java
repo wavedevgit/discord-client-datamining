@@ -12,46 +12,46 @@ import kotlinx.coroutines.Job;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final kp.r f23102a;
+    private final kp.r f23103a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.w f23103b;
+    private final com.squareup.moshi.w f23104b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final np.b f23104c;
+    private final np.b f23105c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final CoroutineScope f23105d;
+    private final CoroutineScope f23106d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f23106d;
+        int f23107d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ String f23108i;
+        final /* synthetic */ String f23109i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ InternalErrorInfo f23109o;
+        final /* synthetic */ InternalErrorInfo f23110o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(String str, InternalErrorInfo internalErrorInfo, Continuation continuation) {
             super(2, continuation);
-            this.f23108i = str;
-            this.f23109o = internalErrorInfo;
+            this.f23109i = str;
+            this.f23110o = internalErrorInfo;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new a(this.f23108i, this.f23109o, continuation);
+            return new a(this.f23109i, this.f23110o, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = gs.b.f();
-            int i10 = this.f23106d;
+            int i10 = this.f23107d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -60,20 +60,20 @@ public final class g {
                 }
             } else {
                 kotlin.c.b(obj);
-                kp.r rVar = g.this.f23102a;
-                String str = this.f23108i;
-                ErrorRequest errorRequest = new ErrorRequest(com.withpersona.sdk2.inquiry.internal.network.c.a(this.f23109o), g.this.f23103b.c(InternalErrorInfo.class).toJsonValue(this.f23109o));
-                this.f23106d = 1;
+                kp.r rVar = g.this.f23103a;
+                String str = this.f23109i;
+                ErrorRequest errorRequest = new ErrorRequest(com.withpersona.sdk2.inquiry.internal.network.c.a(this.f23110o), g.this.f23104b.c(InternalErrorInfo.class).toJsonValue(this.f23110o));
+                this.f23107d = 1;
                 if (rVar.c(str, errorRequest, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -82,19 +82,19 @@ public final class g {
     public static final class b extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f23110d;
+        Object f23111d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f23111e;
+        Object f23112e;
 
         /* renamed from: i  reason: collision with root package name */
-        Object f23112i;
+        Object f23113i;
 
         /* renamed from: o  reason: collision with root package name */
-        /* synthetic */ Object f23113o;
+        /* synthetic */ Object f23114o;
 
         /* renamed from: q  reason: collision with root package name */
-        int f23115q;
+        int f23116q;
 
         b(Continuation continuation) {
             super(continuation);
@@ -102,8 +102,8 @@ public final class g {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f23113o = obj;
-            this.f23115q |= Integer.MIN_VALUE;
+            this.f23114o = obj;
+            this.f23116q |= Integer.MIN_VALUE;
             return g.this.e(null, null, null, null, this);
         }
     }
@@ -113,20 +113,20 @@ public final class g {
     public static final class c extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f23116d;
+        int f23117d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ String f23118i;
+        final /* synthetic */ String f23119i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(String str, Continuation continuation) {
             super(2, continuation);
-            this.f23118i = str;
+            this.f23119i = str;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new c(this.f23118i, continuation);
+            return new c(this.f23119i, continuation);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:15:0x0048, code lost:
@@ -153,7 +153,7 @@ public final class g {
             /*
                 r13 = this;
                 java.lang.Object r0 = gs.b.f()
-                int r1 = r13.f23116d
+                int r1 = r13.f23117d
                 r2 = 4
                 r3 = 3
                 r4 = 2
@@ -187,9 +187,9 @@ public final class g {
                 kotlin.c.b(r14)
                 r14 = r5
                 ep.g r5 = ep.g.this
-                java.lang.String r6 = r13.f23118i
+                java.lang.String r6 = r13.f23119i
                 com.withpersona.sdk2.inquiry.internal.network.ErrorRequest$a r8 = com.withpersona.sdk2.inquiry.internal.network.ErrorRequest.a.Nfc
-                r13.f23116d = r14
+                r13.f23117d = r14
                 java.lang.String r7 = "com.withpersona.sdk2.inquiry.nfc"
                 r9 = 0
                 r11 = 8
@@ -200,9 +200,9 @@ public final class g {
                 goto L83
             L4b:
                 ep.g r5 = ep.g.this
-                java.lang.String r6 = r10.f23118i
+                java.lang.String r6 = r10.f23119i
                 com.withpersona.sdk2.inquiry.internal.network.ErrorRequest$a r8 = com.withpersona.sdk2.inquiry.internal.network.ErrorRequest.a.Network
-                r10.f23116d = r4
+                r10.f23117d = r4
                 java.lang.String r7 = "com.withpersona.sdk2.inquiry.network"
                 r9 = 0
                 r11 = 8
@@ -212,9 +212,9 @@ public final class g {
                 goto L83
             L60:
                 ep.g r5 = ep.g.this
-                java.lang.String r6 = r10.f23118i
+                java.lang.String r6 = r10.f23119i
                 com.withpersona.sdk2.inquiry.internal.network.ErrorRequest$a r8 = com.withpersona.sdk2.inquiry.internal.network.ErrorRequest.a.Other
-                r10.f23116d = r3
+                r10.f23117d = r3
                 java.lang.String r7 = "com.withpersona.sdk2.inquiry.integrity"
                 r9 = 0
                 r11 = 8
@@ -225,13 +225,13 @@ public final class g {
             L75:
                 ep.g r14 = ep.g.this
                 np.b r14 = ep.g.b(r14)
-                r10.f23116d = r2
+                r10.f23117d = r2
                 java.lang.Object r14 = r14.e(r13)
                 if (r14 != r0) goto L84
             L83:
                 return r0
             L84:
-                kotlin.Unit r14 = kotlin.Unit.f31987a
+                kotlin.Unit r14 = kotlin.Unit.f31988a
                 return r14
             */
             throw new UnsupportedOperationException("Method not decompiled: ep.g.c.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -239,7 +239,7 @@ public final class g {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -248,26 +248,26 @@ public final class g {
     public static final class d extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f23119d;
+        int f23120d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ String f23121i;
+        final /* synthetic */ String f23122i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         d(String str, Continuation continuation) {
             super(2, continuation);
-            this.f23121i = str;
+            this.f23122i = str;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new d(this.f23121i, continuation);
+            return new d(this.f23122i, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = gs.b.f();
-            int i10 = this.f23119d;
+            int i10 = this.f23120d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -276,19 +276,19 @@ public final class g {
                 }
             } else {
                 kotlin.c.b(obj);
-                kp.r rVar = g.this.f23102a;
-                String str = this.f23121i;
-                this.f23119d = 1;
+                kp.r rVar = g.this.f23103a;
+                String str = this.f23122i;
+                this.f23120d = 1;
                 if (rVar.i(str, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -296,10 +296,10 @@ public final class g {
         Intrinsics.checkNotNullParameter(inquiryService, "inquiryService");
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         Intrinsics.checkNotNullParameter(logger, "logger");
-        this.f23102a = inquiryService;
-        this.f23103b = moshi;
-        this.f23104c = logger;
-        this.f23105d = kotlinx.coroutines.i.a(ys.m0.a().O0(ys.j1.b(null, 1, null)));
+        this.f23103a = inquiryService;
+        this.f23104b = moshi;
+        this.f23105c = logger;
+        this.f23106d = kotlinx.coroutines.i.a(ys.m0.a().O0(ys.j1.b(null, 1, null)));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -321,20 +321,20 @@ public final class g {
             if (r0 == 0) goto L13
             r0 = r10
             ep.g$b r0 = (ep.g.b) r0
-            int r1 = r0.f23115q
+            int r1 = r0.f23116q
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f23115q = r1
+            r0.f23116q = r1
             goto L18
         L13:
             ep.g$b r0 = new ep.g$b
             r0.<init>(r10)
         L18:
-            java.lang.Object r10 = r0.f23113o
+            java.lang.Object r10 = r0.f23114o
             java.lang.Object r1 = gs.b.f()
-            int r2 = r0.f23115q
+            int r2 = r0.f23116q
             r3 = 2
             r4 = 1
             if (r2 == 0) goto L45
@@ -348,22 +348,22 @@ public final class g {
             r6.<init>(r7)
             throw r6
         L34:
-            java.lang.Object r6 = r0.f23112i
+            java.lang.Object r6 = r0.f23113i
             r8 = r6
             com.withpersona.sdk2.inquiry.internal.network.ErrorRequest$a r8 = (com.withpersona.sdk2.inquiry.internal.network.ErrorRequest.a) r8
-            java.lang.Object r6 = r0.f23111e
+            java.lang.Object r6 = r0.f23112e
             java.lang.String r6 = (java.lang.String) r6
-            java.lang.Object r7 = r0.f23110d
+            java.lang.Object r7 = r0.f23111d
             ep.g r7 = (ep.g) r7
             kotlin.c.b(r10)
             goto L5a
         L45:
             kotlin.c.b(r10)
-            np.b r10 = r5.f23104c
-            r0.f23110d = r5
-            r0.f23111e = r6
-            r0.f23112i = r8
-            r0.f23115q = r4
+            np.b r10 = r5.f23105c
+            r0.f23111d = r5
+            r0.f23112e = r6
+            r0.f23113i = r8
+            r0.f23116q = r4
             java.lang.Object r10 = r10.g(r7, r9, r0)
             if (r10 != r1) goto L59
             goto L91
@@ -372,17 +372,17 @@ public final class g {
         L5a:
             java.lang.String r10 = (java.lang.String) r10
             if (r10 != 0) goto L61
-            kotlin.Unit r6 = kotlin.Unit.f31987a
+            kotlin.Unit r6 = kotlin.Unit.f31988a
             return r6
         L61:
             boolean r9 = kotlin.text.StringsKt.k0(r10)
             if (r9 == 0) goto L6a
-            kotlin.Unit r6 = kotlin.Unit.f31987a
+            kotlin.Unit r6 = kotlin.Unit.f31988a
             return r6
         L6a:
-            kp.r r9 = r7.f23102a
+            kp.r r9 = r7.f23103a
             com.withpersona.sdk2.inquiry.internal.network.ErrorRequest r2 = new com.withpersona.sdk2.inquiry.internal.network.ErrorRequest
-            com.squareup.moshi.w r7 = r7.f23103b
+            com.squareup.moshi.w r7 = r7.f23104b
             java.lang.Class<com.withpersona.sdk2.inquiry.internal.ErrorLog> r4 = com.withpersona.sdk2.inquiry.internal.ErrorLog.class
             com.squareup.moshi.h r7 = r7.c(r4)
             com.withpersona.sdk2.inquiry.internal.ErrorLog r4 = new com.withpersona.sdk2.inquiry.internal.ErrorLog
@@ -390,16 +390,16 @@ public final class g {
             java.lang.Object r7 = r7.toJsonValue(r4)
             r2.<init>(r8, r7)
             r7 = 0
-            r0.f23110d = r7
-            r0.f23111e = r7
-            r0.f23112i = r7
-            r0.f23115q = r3
+            r0.f23111d = r7
+            r0.f23112e = r7
+            r0.f23113i = r7
+            r0.f23116q = r3
             java.lang.Object r6 = r9.c(r6, r2, r0)
             if (r6 != r1) goto L92
         L91:
             return r1
         L92:
-            kotlin.Unit r6 = kotlin.Unit.f31987a
+            kotlin.Unit r6 = kotlin.Unit.f31988a
             return r6
         */
         throw new UnsupportedOperationException("Method not decompiled: ep.g.e(java.lang.String, java.lang.String, com.withpersona.sdk2.inquiry.internal.network.ErrorRequest$a, np.a, kotlin.coroutines.Continuation):java.lang.Object");
@@ -407,7 +407,7 @@ public final class g {
 
     static /* synthetic */ Object g(g gVar, String str, String str2, ErrorRequest.a aVar, np.a aVar2, Continuation continuation, int i10, Object obj) {
         if ((i10 & 8) != 0) {
-            aVar2 = np.a.f38208i;
+            aVar2 = np.a.f38209i;
         }
         return gVar.e(str, str2, aVar, aVar2, continuation);
     }
@@ -416,21 +416,21 @@ public final class g {
         Job d10;
         Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
         Intrinsics.checkNotNullParameter(errorInfo, "errorInfo");
-        d10 = ys.i.d(this.f23105d, ys.m0.b(), null, new a(sessionToken, errorInfo, null), 2, null);
+        d10 = ys.i.d(this.f23106d, ys.m0.b(), null, new a(sessionToken, errorInfo, null), 2, null);
         return d10;
     }
 
     public final Job h(String sessionToken) {
         Job d10;
         Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
-        d10 = ys.i.d(this.f23105d, ys.m0.b(), null, new c(sessionToken, null), 2, null);
+        d10 = ys.i.d(this.f23106d, ys.m0.b(), null, new c(sessionToken, null), 2, null);
         return d10;
     }
 
     public final Job i(String sessionToken) {
         Job d10;
         Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
-        d10 = ys.i.d(this.f23105d, ys.m0.b(), null, new d(sessionToken, null), 2, null);
+        d10 = ys.i.d(this.f23106d, ys.m0.b(), null, new d(sessionToken, null), 2, null);
         return d10;
     }
 }

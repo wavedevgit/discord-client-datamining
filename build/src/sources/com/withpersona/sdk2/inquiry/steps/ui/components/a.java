@@ -13,31 +13,31 @@ import pq.t4;
 public final class a implements t4 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f20710d;
+    private final String f20711d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CreatePersonaSheet.CardCtaPage f20711e;
+    private final CreatePersonaSheet.CardCtaPage f20712e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f20712i;
+    private final String f20713i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f20713o;
+    private final boolean f20714o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f20714p;
+    private boolean f20715p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f20715q;
+    private boolean f20716q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final boolean f20716r;
+    private final boolean f20717r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final g f20717s;
+    private final g f20718s;
 
     /* renamed from: t  reason: collision with root package name */
-    public static final C0266a f20709t = new C0266a(null);
+    public static final C0266a f20710t = new C0266a(null);
     @NotNull
     public static final Parcelable.Creator<a> CREATOR = new b();
 
@@ -123,40 +123,40 @@ public final class a implements t4 {
         Intrinsics.checkNotNullParameter(ctaCard, "ctaCard");
         Intrinsics.checkNotNullParameter(url, "url");
         Intrinsics.checkNotNullParameter(screen, "screen");
-        this.f20710d = name;
-        this.f20711e = ctaCard;
-        this.f20712i = url;
-        this.f20713o = z10;
-        this.f20714p = z11;
-        this.f20715q = z12;
-        this.f20716r = z13;
-        this.f20717s = screen;
+        this.f20711d = name;
+        this.f20712e = ctaCard;
+        this.f20713i = url;
+        this.f20714o = z10;
+        this.f20715p = z11;
+        this.f20716q = z12;
+        this.f20717r = z13;
+        this.f20718s = screen;
     }
 
     public static /* synthetic */ a b(a aVar, String str, CreatePersonaSheet.CardCtaPage cardCtaPage, String str2, boolean z10, boolean z11, boolean z12, boolean z13, g gVar, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = aVar.f20710d;
+            str = aVar.f20711d;
         }
         if ((i10 & 2) != 0) {
-            cardCtaPage = aVar.f20711e;
+            cardCtaPage = aVar.f20712e;
         }
         if ((i10 & 4) != 0) {
-            str2 = aVar.f20712i;
+            str2 = aVar.f20713i;
         }
         if ((i10 & 8) != 0) {
-            z10 = aVar.f20713o;
+            z10 = aVar.f20714o;
         }
         if ((i10 & 16) != 0) {
-            z11 = aVar.f20714p;
+            z11 = aVar.f20715p;
         }
         if ((i10 & 32) != 0) {
-            z12 = aVar.f20715q;
+            z12 = aVar.f20716q;
         }
         if ((i10 & 64) != 0) {
-            z13 = aVar.f20716r;
+            z13 = aVar.f20717r;
         }
         if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-            gVar = aVar.f20717s;
+            gVar = aVar.f20718s;
         }
         boolean z14 = z13;
         g gVar2 = gVar;
@@ -167,12 +167,12 @@ public final class a implements t4 {
 
     @Override // pq.t4
     public void L0(boolean z10) {
-        this.f20714p = z10;
+        this.f20715p = z10;
     }
 
     @Override // pq.t4
     public boolean N0() {
-        return this.f20716r;
+        return this.f20717r;
     }
 
     public final a a(String name, CreatePersonaSheet.CardCtaPage ctaCard, String url, boolean z10, boolean z11, boolean z12, boolean z13, g screen) {
@@ -185,20 +185,20 @@ public final class a implements t4 {
 
     @Override // pq.t4
     public boolean a1() {
-        return this.f20715q;
+        return this.f20716q;
     }
 
     @Override // pq.t4
     public boolean a2() {
-        return this.f20714p;
+        return this.f20715p;
     }
 
     public final boolean c() {
-        return this.f20713o;
+        return this.f20714o;
     }
 
     public final CreatePersonaSheet.CardCtaPage d() {
-        return this.f20711e;
+        return this.f20712e;
     }
 
     @Override // android.os.Parcelable
@@ -207,7 +207,7 @@ public final class a implements t4 {
     }
 
     public final String e() {
-        return this.f20712i;
+        return this.f20713i;
     }
 
     public boolean equals(Object obj) {
@@ -216,53 +216,53 @@ public final class a implements t4 {
         }
         if (obj instanceof a) {
             a aVar = (a) obj;
-            return Intrinsics.areEqual(this.f20710d, aVar.f20710d) && Intrinsics.areEqual(this.f20711e, aVar.f20711e) && Intrinsics.areEqual(this.f20712i, aVar.f20712i) && this.f20713o == aVar.f20713o && this.f20714p == aVar.f20714p && this.f20715q == aVar.f20715q && this.f20716r == aVar.f20716r && Intrinsics.areEqual(this.f20717s, aVar.f20717s);
+            return Intrinsics.areEqual(this.f20711d, aVar.f20711d) && Intrinsics.areEqual(this.f20712e, aVar.f20712e) && Intrinsics.areEqual(this.f20713i, aVar.f20713i) && this.f20714o == aVar.f20714o && this.f20715p == aVar.f20715p && this.f20716q == aVar.f20716q && this.f20717r == aVar.f20717r && Intrinsics.areEqual(this.f20718s, aVar.f20718s);
         }
         return false;
     }
 
     @Override // pq.k5
     public String getName() {
-        return this.f20710d;
+        return this.f20711d;
     }
 
     @Override // pq.t4
     public g h() {
-        return this.f20717s;
+        return this.f20718s;
     }
 
     public int hashCode() {
-        return (((((((((((((this.f20710d.hashCode() * 31) + this.f20711e.hashCode()) * 31) + this.f20712i.hashCode()) * 31) + Boolean.hashCode(this.f20713o)) * 31) + Boolean.hashCode(this.f20714p)) * 31) + Boolean.hashCode(this.f20715q)) * 31) + Boolean.hashCode(this.f20716r)) * 31) + this.f20717s.hashCode();
+        return (((((((((((((this.f20711d.hashCode() * 31) + this.f20712e.hashCode()) * 31) + this.f20713i.hashCode()) * 31) + Boolean.hashCode(this.f20714o)) * 31) + Boolean.hashCode(this.f20715p)) * 31) + Boolean.hashCode(this.f20716q)) * 31) + Boolean.hashCode(this.f20717r)) * 31) + this.f20718s.hashCode();
     }
 
     public String toString() {
-        String str = this.f20710d;
-        CreatePersonaSheet.CardCtaPage cardCtaPage = this.f20711e;
-        String str2 = this.f20712i;
-        boolean z10 = this.f20713o;
-        boolean z11 = this.f20714p;
-        boolean z12 = this.f20715q;
-        boolean z13 = this.f20716r;
-        g gVar = this.f20717s;
+        String str = this.f20711d;
+        CreatePersonaSheet.CardCtaPage cardCtaPage = this.f20712e;
+        String str2 = this.f20713i;
+        boolean z10 = this.f20714o;
+        boolean z11 = this.f20715p;
+        boolean z12 = this.f20716q;
+        boolean z13 = this.f20717r;
+        g gVar = this.f20718s;
         return "CreatePersonaSheetComponent(name=" + str + ", ctaCard=" + cardCtaPage + ", url=" + str2 + ", autoCompleteOnDismiss=" + z10 + ", shown=" + z11 + ", showing=" + z12 + ", hideWhenTappedOutside=" + z13 + ", screen=" + gVar + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f20710d);
-        dest.writeParcelable(this.f20711e, i10);
-        dest.writeString(this.f20712i);
-        dest.writeInt(this.f20713o ? 1 : 0);
-        dest.writeInt(this.f20714p ? 1 : 0);
-        dest.writeInt(this.f20715q ? 1 : 0);
-        dest.writeInt(this.f20716r ? 1 : 0);
-        this.f20717s.writeToParcel(dest, i10);
+        dest.writeString(this.f20711d);
+        dest.writeParcelable(this.f20712e, i10);
+        dest.writeString(this.f20713i);
+        dest.writeInt(this.f20714o ? 1 : 0);
+        dest.writeInt(this.f20715p ? 1 : 0);
+        dest.writeInt(this.f20716q ? 1 : 0);
+        dest.writeInt(this.f20717r ? 1 : 0);
+        this.f20718s.writeToParcel(dest, i10);
     }
 
     @Override // pq.t4
     public void x1(boolean z10) {
-        this.f20715q = z10;
+        this.f20716q = z10;
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

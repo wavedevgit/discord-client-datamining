@@ -113,4 +113,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.SubscriptionPlaceholderPattern = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 7335, 10671, 10672, 10673, 3207, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 7210, 12064, 12065, 12066, 3207, 2]);

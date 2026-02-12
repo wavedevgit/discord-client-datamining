@@ -52,9 +52,9 @@ public /* synthetic */ class DirectReplyMessage$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50032a;
+        n2 n2Var = n2.f50033a;
         KSerializer u10 = a.u(n2Var);
-        p0 p0Var = p0.f50048a;
+        p0 p0Var = p0.f50049a;
         return new KSerializer[]{MessageId$$serializer.INSTANCE, ChannelId$$serializer.INSTANCE, DirectReplyUser$$serializer.INSTANCE, u10, a.u(p0Var), a.u(p0Var), a.u(n2Var), a.u(n2Var)};
     }
 
@@ -80,8 +80,8 @@ public /* synthetic */ class DirectReplyMessage$$serializer implements h0 {
         if (b10.p()) {
             MessageId messageId = (MessageId) b10.y(serialDescriptor, 0, MessageId$$serializer.INSTANCE, null);
             str = messageId != null ? messageId.m1093unboximpl() : null;
-            n2 n2Var = n2.f50032a;
-            p0 p0Var = p0.f50048a;
+            n2 n2Var = n2.f50033a;
+            p0 p0Var = p0.f50049a;
             str2 = (String) b10.n(serialDescriptor, 7, n2Var, null);
             str3 = (String) b10.n(serialDescriptor, 6, n2Var, null);
             num2 = (Integer) b10.n(serialDescriptor, 5, p0Var, null);
@@ -130,23 +130,23 @@ public /* synthetic */ class DirectReplyMessage$$serializer implements h0 {
                         i11 = 7;
                         continue;
                     case 3:
-                        str7 = (String) b10.n(serialDescriptor, 3, n2.f50032a, str7);
+                        str7 = (String) b10.n(serialDescriptor, 3, n2.f50033a, str7);
                         i13 |= 8;
                         break;
                     case 4:
-                        num3 = (Integer) b10.n(serialDescriptor, 4, p0.f50048a, num3);
+                        num3 = (Integer) b10.n(serialDescriptor, 4, p0.f50049a, num3);
                         i13 |= 16;
                         break;
                     case 5:
-                        num4 = (Integer) b10.n(serialDescriptor, 5, p0.f50048a, num4);
+                        num4 = (Integer) b10.n(serialDescriptor, 5, p0.f50049a, num4);
                         i13 |= 32;
                         break;
                     case 6:
-                        str6 = (String) b10.n(serialDescriptor, i12, n2.f50032a, str6);
+                        str6 = (String) b10.n(serialDescriptor, i12, n2.f50033a, str6);
                         i13 |= 64;
                         break;
                     case 7:
-                        str5 = (String) b10.n(serialDescriptor, i11, n2.f50032a, str5);
+                        str5 = (String) b10.n(serialDescriptor, i11, n2.f50033a, str5);
                         i13 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         break;
                     default:

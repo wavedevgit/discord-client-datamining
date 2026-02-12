@@ -73,8 +73,8 @@ public class FlexboxLayout extends ViewGroup implements a {
         int size = this.mFlexLines.size();
         for (int i12 = 0; i12 < size; i12++) {
             FlexLine flexLine = this.mFlexLines.get(i12);
-            for (int i13 = 0; i13 < flexLine.f14251h; i13++) {
-                int i14 = flexLine.f14258o + i13;
+            for (int i13 = 0; i13 < flexLine.f14252h; i13++) {
+                int i14 = flexLine.f14259o + i13;
                 View reorderedChildAt = getReorderedChildAt(i14);
                 if (reorderedChildAt != null && reorderedChildAt.getVisibility() != 8) {
                     LayoutParams layoutParams = (LayoutParams) reorderedChildAt.getLayoutParams();
@@ -84,31 +84,31 @@ public class FlexboxLayout extends ViewGroup implements a {
                         } else {
                             left = (reorderedChildAt.getLeft() - ((ViewGroup.MarginLayoutParams) layoutParams).leftMargin) - this.mDividerVerticalWidth;
                         }
-                        f(canvas, left, flexLine.f14245b, flexLine.f14250g);
+                        f(canvas, left, flexLine.f14246b, flexLine.f14251g);
                     }
-                    if (i13 == flexLine.f14251h - 1 && (this.mShowDividerVertical & 4) > 0) {
+                    if (i13 == flexLine.f14252h - 1 && (this.mShowDividerVertical & 4) > 0) {
                         if (z10) {
                             right = (reorderedChildAt.getLeft() - ((ViewGroup.MarginLayoutParams) layoutParams).leftMargin) - this.mDividerVerticalWidth;
                         } else {
                             right = reorderedChildAt.getRight() + ((ViewGroup.MarginLayoutParams) layoutParams).rightMargin;
                         }
-                        f(canvas, right, flexLine.f14245b, flexLine.f14250g);
+                        f(canvas, right, flexLine.f14246b, flexLine.f14251g);
                     }
                 }
             }
             if (h(i12)) {
                 if (z11) {
-                    i11 = flexLine.f14247d;
+                    i11 = flexLine.f14248d;
                 } else {
-                    i11 = flexLine.f14245b - this.mDividerHorizontalHeight;
+                    i11 = flexLine.f14246b - this.mDividerHorizontalHeight;
                 }
                 e(canvas, paddingLeft, i11, max);
             }
             if (i(i12) && (this.mShowDividerHorizontal & 4) > 0) {
                 if (z11) {
-                    i10 = flexLine.f14245b - this.mDividerHorizontalHeight;
+                    i10 = flexLine.f14246b - this.mDividerHorizontalHeight;
                 } else {
-                    i10 = flexLine.f14247d;
+                    i10 = flexLine.f14248d;
                 }
                 e(canvas, paddingLeft, i10, max);
             }
@@ -125,8 +125,8 @@ public class FlexboxLayout extends ViewGroup implements a {
         int size = this.mFlexLines.size();
         for (int i12 = 0; i12 < size; i12++) {
             FlexLine flexLine = this.mFlexLines.get(i12);
-            for (int i13 = 0; i13 < flexLine.f14251h; i13++) {
-                int i14 = flexLine.f14258o + i13;
+            for (int i13 = 0; i13 < flexLine.f14252h; i13++) {
+                int i14 = flexLine.f14259o + i13;
                 View reorderedChildAt = getReorderedChildAt(i14);
                 if (reorderedChildAt != null && reorderedChildAt.getVisibility() != 8) {
                     LayoutParams layoutParams = (LayoutParams) reorderedChildAt.getLayoutParams();
@@ -136,31 +136,31 @@ public class FlexboxLayout extends ViewGroup implements a {
                         } else {
                             top = (reorderedChildAt.getTop() - ((ViewGroup.MarginLayoutParams) layoutParams).topMargin) - this.mDividerHorizontalHeight;
                         }
-                        e(canvas, flexLine.f14244a, top, flexLine.f14250g);
+                        e(canvas, flexLine.f14245a, top, flexLine.f14251g);
                     }
-                    if (i13 == flexLine.f14251h - 1 && (this.mShowDividerHorizontal & 4) > 0) {
+                    if (i13 == flexLine.f14252h - 1 && (this.mShowDividerHorizontal & 4) > 0) {
                         if (z11) {
                             bottom = (reorderedChildAt.getTop() - ((ViewGroup.MarginLayoutParams) layoutParams).topMargin) - this.mDividerHorizontalHeight;
                         } else {
                             bottom = reorderedChildAt.getBottom() + ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin;
                         }
-                        e(canvas, flexLine.f14244a, bottom, flexLine.f14250g);
+                        e(canvas, flexLine.f14245a, bottom, flexLine.f14251g);
                     }
                 }
             }
             if (h(i12)) {
                 if (z10) {
-                    i11 = flexLine.f14246c;
+                    i11 = flexLine.f14247c;
                 } else {
-                    i11 = flexLine.f14244a - this.mDividerVerticalWidth;
+                    i11 = flexLine.f14245a - this.mDividerVerticalWidth;
                 }
                 f(canvas, i11, paddingTop, max);
             }
             if (i(i12) && (this.mShowDividerVertical & 4) > 0) {
                 if (z10) {
-                    i10 = flexLine.f14244a - this.mDividerVerticalWidth;
+                    i10 = flexLine.f14245a - this.mDividerVerticalWidth;
                 } else {
-                    i10 = flexLine.f14246c;
+                    i10 = flexLine.f14247c;
                 }
                 f(canvas, i10, paddingTop, max);
             }
@@ -283,39 +283,39 @@ public class FlexboxLayout extends ViewGroup implements a {
         this.mFlexLines.clear();
         this.mFlexLinesResult.a();
         this.mFlexboxHelper.c(this.mFlexLinesResult, i10, i11);
-        this.mFlexLines = this.mFlexLinesResult.f14267a;
+        this.mFlexLines = this.mFlexLinesResult.f14268a;
         this.mFlexboxHelper.p(i10, i11);
         if (this.mAlignItems == 3) {
             for (FlexLine flexLine : this.mFlexLines) {
                 int i12 = Integer.MIN_VALUE;
-                for (int i13 = 0; i13 < flexLine.f14251h; i13++) {
-                    View reorderedChildAt = getReorderedChildAt(flexLine.f14258o + i13);
+                for (int i13 = 0; i13 < flexLine.f14252h; i13++) {
+                    View reorderedChildAt = getReorderedChildAt(flexLine.f14259o + i13);
                     if (reorderedChildAt != null && reorderedChildAt.getVisibility() != 8) {
                         LayoutParams layoutParams = (LayoutParams) reorderedChildAt.getLayoutParams();
                         if (this.mFlexWrap != 2) {
-                            i12 = Math.max(i12, reorderedChildAt.getMeasuredHeight() + Math.max(flexLine.f14255l - reorderedChildAt.getBaseline(), ((ViewGroup.MarginLayoutParams) layoutParams).topMargin) + ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin);
+                            i12 = Math.max(i12, reorderedChildAt.getMeasuredHeight() + Math.max(flexLine.f14256l - reorderedChildAt.getBaseline(), ((ViewGroup.MarginLayoutParams) layoutParams).topMargin) + ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin);
                         } else {
-                            i12 = Math.max(i12, reorderedChildAt.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) layoutParams).topMargin + Math.max((flexLine.f14255l - reorderedChildAt.getMeasuredHeight()) + reorderedChildAt.getBaseline(), ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin));
+                            i12 = Math.max(i12, reorderedChildAt.getMeasuredHeight() + ((ViewGroup.MarginLayoutParams) layoutParams).topMargin + Math.max((flexLine.f14256l - reorderedChildAt.getMeasuredHeight()) + reorderedChildAt.getBaseline(), ((ViewGroup.MarginLayoutParams) layoutParams).bottomMargin));
                         }
                     }
                 }
-                flexLine.f14250g = i12;
+                flexLine.f14251g = i12;
             }
         }
         this.mFlexboxHelper.o(i10, i11, getPaddingTop() + getPaddingBottom());
         this.mFlexboxHelper.X();
-        n(this.mFlexDirection, i10, i11, this.mFlexLinesResult.f14268b);
+        n(this.mFlexDirection, i10, i11, this.mFlexLinesResult.f14269b);
     }
 
     private void m(int i10, int i11) {
         this.mFlexLines.clear();
         this.mFlexLinesResult.a();
         this.mFlexboxHelper.f(this.mFlexLinesResult, i10, i11);
-        this.mFlexLines = this.mFlexLinesResult.f14267a;
+        this.mFlexLines = this.mFlexLinesResult.f14268a;
         this.mFlexboxHelper.p(i10, i11);
         this.mFlexboxHelper.o(i10, i11, getPaddingLeft() + getPaddingRight());
         this.mFlexboxHelper.X();
-        n(this.mFlexDirection, i10, i11, this.mFlexLinesResult.f14268b);
+        n(this.mFlexDirection, i10, i11, this.mFlexLinesResult.f14269b);
     }
 
     private void n(int i10, int i11, int i12, int i13) {
@@ -506,7 +506,7 @@ public class FlexboxLayout extends ViewGroup implements a {
     public int getLargestMainSize() {
         int i10 = Integer.MIN_VALUE;
         for (FlexLine flexLine : this.mFlexLines) {
-            i10 = Math.max(i10, flexLine.f14248e);
+            i10 = Math.max(i10, flexLine.f14249e);
         }
         return i10;
     }
@@ -564,7 +564,7 @@ public class FlexboxLayout extends ViewGroup implements a {
                 }
                 i12 += i10;
             }
-            i12 += flexLine.f14250g;
+            i12 += flexLine.f14251g;
         }
         return i12;
     }
@@ -736,16 +736,16 @@ public class FlexboxLayout extends ViewGroup implements a {
     public void onNewFlexItemAdded(View view, int i10, int i11, FlexLine flexLine) {
         if (g(i10, i11)) {
             if (isMainAxisDirectionHorizontal()) {
-                int i12 = flexLine.f14248e;
+                int i12 = flexLine.f14249e;
                 int i13 = this.mDividerVerticalWidth;
-                flexLine.f14248e = i12 + i13;
-                flexLine.f14249f += i13;
+                flexLine.f14249e = i12 + i13;
+                flexLine.f14250f += i13;
                 return;
             }
-            int i14 = flexLine.f14248e;
+            int i14 = flexLine.f14249e;
             int i15 = this.mDividerHorizontalHeight;
-            flexLine.f14248e = i14 + i15;
-            flexLine.f14249f += i15;
+            flexLine.f14249e = i14 + i15;
+            flexLine.f14250f += i15;
         }
     }
 
@@ -753,16 +753,16 @@ public class FlexboxLayout extends ViewGroup implements a {
     public void onNewFlexLineAdded(FlexLine flexLine) {
         if (isMainAxisDirectionHorizontal()) {
             if ((this.mShowDividerVertical & 4) > 0) {
-                int i10 = flexLine.f14248e;
+                int i10 = flexLine.f14249e;
                 int i11 = this.mDividerVerticalWidth;
-                flexLine.f14248e = i10 + i11;
-                flexLine.f14249f += i11;
+                flexLine.f14249e = i10 + i11;
+                flexLine.f14250f += i11;
             }
         } else if ((this.mShowDividerHorizontal & 4) > 0) {
-            int i12 = flexLine.f14248e;
+            int i12 = flexLine.f14249e;
             int i13 = this.mDividerHorizontalHeight;
-            flexLine.f14248e = i12 + i13;
-            flexLine.f14249f += i13;
+            flexLine.f14249e = i12 + i13;
+            flexLine.f14250f += i13;
         }
     }
 
@@ -884,36 +884,36 @@ public class FlexboxLayout extends ViewGroup implements a {
         this.mFlexboxHelper = new FlexboxHelper(this);
         this.mFlexLines = new ArrayList();
         this.mFlexLinesResult = new FlexboxHelper.FlexLinesResult();
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, c.f14326b, i10, 0);
-        this.mFlexDirection = obtainStyledAttributes.getInt(c.f14332h, 0);
-        this.mFlexWrap = obtainStyledAttributes.getInt(c.f14333i, 0);
-        this.mJustifyContent = obtainStyledAttributes.getInt(c.f14334j, 0);
-        this.mAlignItems = obtainStyledAttributes.getInt(c.f14328d, 0);
-        this.mAlignContent = obtainStyledAttributes.getInt(c.f14327c, 0);
-        this.mMaxLine = obtainStyledAttributes.getInt(c.f14335k, -1);
-        Drawable drawable = obtainStyledAttributes.getDrawable(c.f14329e);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, c.f14327b, i10, 0);
+        this.mFlexDirection = obtainStyledAttributes.getInt(c.f14333h, 0);
+        this.mFlexWrap = obtainStyledAttributes.getInt(c.f14334i, 0);
+        this.mJustifyContent = obtainStyledAttributes.getInt(c.f14335j, 0);
+        this.mAlignItems = obtainStyledAttributes.getInt(c.f14329d, 0);
+        this.mAlignContent = obtainStyledAttributes.getInt(c.f14328c, 0);
+        this.mMaxLine = obtainStyledAttributes.getInt(c.f14336k, -1);
+        Drawable drawable = obtainStyledAttributes.getDrawable(c.f14330e);
         if (drawable != null) {
             setDividerDrawableHorizontal(drawable);
             setDividerDrawableVertical(drawable);
         }
-        Drawable drawable2 = obtainStyledAttributes.getDrawable(c.f14330f);
+        Drawable drawable2 = obtainStyledAttributes.getDrawable(c.f14331f);
         if (drawable2 != null) {
             setDividerDrawableHorizontal(drawable2);
         }
-        Drawable drawable3 = obtainStyledAttributes.getDrawable(c.f14331g);
+        Drawable drawable3 = obtainStyledAttributes.getDrawable(c.f14332g);
         if (drawable3 != null) {
             setDividerDrawableVertical(drawable3);
         }
-        int i11 = obtainStyledAttributes.getInt(c.f14336l, 0);
+        int i11 = obtainStyledAttributes.getInt(c.f14337l, 0);
         if (i11 != 0) {
             this.mShowDividerVertical = i11;
             this.mShowDividerHorizontal = i11;
         }
-        int i12 = obtainStyledAttributes.getInt(c.f14338n, 0);
+        int i12 = obtainStyledAttributes.getInt(c.f14339n, 0);
         if (i12 != 0) {
             this.mShowDividerVertical = i12;
         }
-        int i13 = obtainStyledAttributes.getInt(c.f14337m, 0);
+        int i13 = obtainStyledAttributes.getInt(c.f14338m, 0);
         if (i13 != 0) {
             this.mShowDividerHorizontal = i13;
         }
@@ -936,34 +936,34 @@ public class FlexboxLayout extends ViewGroup implements a {
         public static final Parcelable.Creator<LayoutParams> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private int f14271d;
+        private int f14272d;
 
         /* renamed from: e  reason: collision with root package name */
-        private float f14272e;
+        private float f14273e;
 
         /* renamed from: i  reason: collision with root package name */
-        private float f14273i;
+        private float f14274i;
 
         /* renamed from: o  reason: collision with root package name */
-        private int f14274o;
+        private int f14275o;
 
         /* renamed from: p  reason: collision with root package name */
-        private float f14275p;
+        private float f14276p;
 
         /* renamed from: q  reason: collision with root package name */
-        private int f14276q;
+        private int f14277q;
 
         /* renamed from: r  reason: collision with root package name */
-        private int f14277r;
+        private int f14278r;
 
         /* renamed from: s  reason: collision with root package name */
-        private int f14278s;
+        private int f14279s;
 
         /* renamed from: t  reason: collision with root package name */
-        private int f14279t;
+        private int f14280t;
 
         /* renamed from: u  reason: collision with root package name */
-        private boolean f14280u;
+        private boolean f14281u;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
         class a implements Parcelable.Creator {
@@ -985,26 +985,26 @@ public class FlexboxLayout extends ViewGroup implements a {
 
         public LayoutParams(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
-            this.f14271d = 1;
-            this.f14272e = 0.0f;
-            this.f14273i = 1.0f;
-            this.f14274o = -1;
-            this.f14275p = -1.0f;
-            this.f14276q = -1;
-            this.f14277r = -1;
-            this.f14278s = 16777215;
-            this.f14279t = 16777215;
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, c.f14339o);
-            this.f14271d = obtainStyledAttributes.getInt(c.f14348x, 1);
-            this.f14272e = obtainStyledAttributes.getFloat(c.f14342r, 0.0f);
-            this.f14273i = obtainStyledAttributes.getFloat(c.f14343s, 1.0f);
-            this.f14274o = obtainStyledAttributes.getInt(c.f14340p, -1);
-            this.f14275p = obtainStyledAttributes.getFraction(c.f14341q, 1, 1, -1.0f);
-            this.f14276q = obtainStyledAttributes.getDimensionPixelSize(c.f14347w, -1);
-            this.f14277r = obtainStyledAttributes.getDimensionPixelSize(c.f14346v, -1);
-            this.f14278s = obtainStyledAttributes.getDimensionPixelSize(c.f14345u, 16777215);
-            this.f14279t = obtainStyledAttributes.getDimensionPixelSize(c.f14344t, 16777215);
-            this.f14280u = obtainStyledAttributes.getBoolean(c.f14349y, false);
+            this.f14272d = 1;
+            this.f14273e = 0.0f;
+            this.f14274i = 1.0f;
+            this.f14275o = -1;
+            this.f14276p = -1.0f;
+            this.f14277q = -1;
+            this.f14278r = -1;
+            this.f14279s = 16777215;
+            this.f14280t = 16777215;
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, c.f14340o);
+            this.f14272d = obtainStyledAttributes.getInt(c.f14349x, 1);
+            this.f14273e = obtainStyledAttributes.getFloat(c.f14343r, 0.0f);
+            this.f14274i = obtainStyledAttributes.getFloat(c.f14344s, 1.0f);
+            this.f14275o = obtainStyledAttributes.getInt(c.f14341p, -1);
+            this.f14276p = obtainStyledAttributes.getFraction(c.f14342q, 1, 1, -1.0f);
+            this.f14277q = obtainStyledAttributes.getDimensionPixelSize(c.f14348w, -1);
+            this.f14278r = obtainStyledAttributes.getDimensionPixelSize(c.f14347v, -1);
+            this.f14279s = obtainStyledAttributes.getDimensionPixelSize(c.f14346u, 16777215);
+            this.f14280t = obtainStyledAttributes.getDimensionPixelSize(c.f14345t, 16777215);
+            this.f14281u = obtainStyledAttributes.getBoolean(c.f14350y, false);
             obtainStyledAttributes.recycle();
         }
 
@@ -1015,7 +1015,7 @@ public class FlexboxLayout extends ViewGroup implements a {
 
         @Override // com.google.android.flexbox.b
         public float C0() {
-            return this.f14272e;
+            return this.f14273e;
         }
 
         @Override // com.google.android.flexbox.b
@@ -1025,17 +1025,17 @@ public class FlexboxLayout extends ViewGroup implements a {
 
         @Override // com.google.android.flexbox.b
         public float H0() {
-            return this.f14275p;
+            return this.f14276p;
         }
 
         @Override // com.google.android.flexbox.b
         public int J() {
-            return this.f14276q;
+            return this.f14277q;
         }
 
         @Override // com.google.android.flexbox.b
         public boolean O0() {
-            return this.f14280u;
+            return this.f14281u;
         }
 
         @Override // com.google.android.flexbox.b
@@ -1045,15 +1045,15 @@ public class FlexboxLayout extends ViewGroup implements a {
 
         @Override // com.google.android.flexbox.b
         public int Z0() {
-            return this.f14278s;
+            return this.f14279s;
         }
 
         public void a(float f10) {
-            this.f14272e = f10;
+            this.f14273e = f10;
         }
 
         public void b(float f10) {
-            this.f14273i = f10;
+            this.f14274i = f10;
         }
 
         @Override // com.google.android.flexbox.b
@@ -1068,7 +1068,7 @@ public class FlexboxLayout extends ViewGroup implements a {
 
         @Override // com.google.android.flexbox.b
         public int f2() {
-            return this.f14277r;
+            return this.f14278r;
         }
 
         @Override // com.google.android.flexbox.b
@@ -1078,7 +1078,7 @@ public class FlexboxLayout extends ViewGroup implements a {
 
         @Override // com.google.android.flexbox.b
         public int getOrder() {
-            return this.f14271d;
+            return this.f14272d;
         }
 
         @Override // com.google.android.flexbox.b
@@ -1088,21 +1088,21 @@ public class FlexboxLayout extends ViewGroup implements a {
 
         @Override // com.google.android.flexbox.b
         public int l2() {
-            return this.f14279t;
+            return this.f14280t;
         }
 
         @Override // android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
-            parcel.writeInt(this.f14271d);
-            parcel.writeFloat(this.f14272e);
-            parcel.writeFloat(this.f14273i);
-            parcel.writeInt(this.f14274o);
-            parcel.writeFloat(this.f14275p);
-            parcel.writeInt(this.f14276q);
-            parcel.writeInt(this.f14277r);
-            parcel.writeInt(this.f14278s);
-            parcel.writeInt(this.f14279t);
-            parcel.writeByte(this.f14280u ? (byte) 1 : (byte) 0);
+            parcel.writeInt(this.f14272d);
+            parcel.writeFloat(this.f14273e);
+            parcel.writeFloat(this.f14274i);
+            parcel.writeInt(this.f14275o);
+            parcel.writeFloat(this.f14276p);
+            parcel.writeInt(this.f14277q);
+            parcel.writeInt(this.f14278r);
+            parcel.writeInt(this.f14279s);
+            parcel.writeInt(this.f14280t);
+            parcel.writeByte(this.f14281u ? (byte) 1 : (byte) 0);
             parcel.writeInt(((ViewGroup.MarginLayoutParams) this).bottomMargin);
             parcel.writeInt(((ViewGroup.MarginLayoutParams) this).leftMargin);
             parcel.writeInt(((ViewGroup.MarginLayoutParams) this).rightMargin);
@@ -1113,107 +1113,107 @@ public class FlexboxLayout extends ViewGroup implements a {
 
         @Override // com.google.android.flexbox.b
         public int y() {
-            return this.f14274o;
+            return this.f14275o;
         }
 
         @Override // com.google.android.flexbox.b
         public float z() {
-            return this.f14273i;
+            return this.f14274i;
         }
 
         @Override // com.google.android.flexbox.b
         public void z0(int i10) {
-            this.f14277r = i10;
+            this.f14278r = i10;
         }
 
         @Override // com.google.android.flexbox.b
         public void z1(int i10) {
-            this.f14276q = i10;
+            this.f14277q = i10;
         }
 
         public LayoutParams(LayoutParams layoutParams) {
             super((ViewGroup.MarginLayoutParams) layoutParams);
-            this.f14271d = 1;
-            this.f14272e = 0.0f;
-            this.f14273i = 1.0f;
-            this.f14274o = -1;
-            this.f14275p = -1.0f;
-            this.f14276q = -1;
-            this.f14277r = -1;
-            this.f14278s = 16777215;
-            this.f14279t = 16777215;
-            this.f14271d = layoutParams.f14271d;
-            this.f14272e = layoutParams.f14272e;
-            this.f14273i = layoutParams.f14273i;
-            this.f14274o = layoutParams.f14274o;
-            this.f14275p = layoutParams.f14275p;
-            this.f14276q = layoutParams.f14276q;
-            this.f14277r = layoutParams.f14277r;
-            this.f14278s = layoutParams.f14278s;
-            this.f14279t = layoutParams.f14279t;
-            this.f14280u = layoutParams.f14280u;
+            this.f14272d = 1;
+            this.f14273e = 0.0f;
+            this.f14274i = 1.0f;
+            this.f14275o = -1;
+            this.f14276p = -1.0f;
+            this.f14277q = -1;
+            this.f14278r = -1;
+            this.f14279s = 16777215;
+            this.f14280t = 16777215;
+            this.f14272d = layoutParams.f14272d;
+            this.f14273e = layoutParams.f14273e;
+            this.f14274i = layoutParams.f14274i;
+            this.f14275o = layoutParams.f14275o;
+            this.f14276p = layoutParams.f14276p;
+            this.f14277q = layoutParams.f14277q;
+            this.f14278r = layoutParams.f14278r;
+            this.f14279s = layoutParams.f14279s;
+            this.f14280t = layoutParams.f14280t;
+            this.f14281u = layoutParams.f14281u;
         }
 
         public LayoutParams(ViewGroup.LayoutParams layoutParams) {
             super(layoutParams);
-            this.f14271d = 1;
-            this.f14272e = 0.0f;
-            this.f14273i = 1.0f;
-            this.f14274o = -1;
-            this.f14275p = -1.0f;
-            this.f14276q = -1;
-            this.f14277r = -1;
-            this.f14278s = 16777215;
-            this.f14279t = 16777215;
+            this.f14272d = 1;
+            this.f14273e = 0.0f;
+            this.f14274i = 1.0f;
+            this.f14275o = -1;
+            this.f14276p = -1.0f;
+            this.f14277q = -1;
+            this.f14278r = -1;
+            this.f14279s = 16777215;
+            this.f14280t = 16777215;
         }
 
         public LayoutParams(int i10, int i11) {
             super(new ViewGroup.LayoutParams(i10, i11));
-            this.f14271d = 1;
-            this.f14272e = 0.0f;
-            this.f14273i = 1.0f;
-            this.f14274o = -1;
-            this.f14275p = -1.0f;
-            this.f14276q = -1;
-            this.f14277r = -1;
-            this.f14278s = 16777215;
-            this.f14279t = 16777215;
+            this.f14272d = 1;
+            this.f14273e = 0.0f;
+            this.f14274i = 1.0f;
+            this.f14275o = -1;
+            this.f14276p = -1.0f;
+            this.f14277q = -1;
+            this.f14278r = -1;
+            this.f14279s = 16777215;
+            this.f14280t = 16777215;
         }
 
         public LayoutParams(ViewGroup.MarginLayoutParams marginLayoutParams) {
             super(marginLayoutParams);
-            this.f14271d = 1;
-            this.f14272e = 0.0f;
-            this.f14273i = 1.0f;
-            this.f14274o = -1;
-            this.f14275p = -1.0f;
-            this.f14276q = -1;
-            this.f14277r = -1;
-            this.f14278s = 16777215;
-            this.f14279t = 16777215;
+            this.f14272d = 1;
+            this.f14273e = 0.0f;
+            this.f14274i = 1.0f;
+            this.f14275o = -1;
+            this.f14276p = -1.0f;
+            this.f14277q = -1;
+            this.f14278r = -1;
+            this.f14279s = 16777215;
+            this.f14280t = 16777215;
         }
 
         protected LayoutParams(Parcel parcel) {
             super(0, 0);
-            this.f14271d = 1;
-            this.f14272e = 0.0f;
-            this.f14273i = 1.0f;
-            this.f14274o = -1;
-            this.f14275p = -1.0f;
-            this.f14276q = -1;
-            this.f14277r = -1;
-            this.f14278s = 16777215;
-            this.f14279t = 16777215;
-            this.f14271d = parcel.readInt();
-            this.f14272e = parcel.readFloat();
-            this.f14273i = parcel.readFloat();
-            this.f14274o = parcel.readInt();
-            this.f14275p = parcel.readFloat();
-            this.f14276q = parcel.readInt();
-            this.f14277r = parcel.readInt();
-            this.f14278s = parcel.readInt();
-            this.f14279t = parcel.readInt();
-            this.f14280u = parcel.readByte() != 0;
+            this.f14272d = 1;
+            this.f14273e = 0.0f;
+            this.f14274i = 1.0f;
+            this.f14275o = -1;
+            this.f14276p = -1.0f;
+            this.f14277q = -1;
+            this.f14278r = -1;
+            this.f14279s = 16777215;
+            this.f14280t = 16777215;
+            this.f14272d = parcel.readInt();
+            this.f14273e = parcel.readFloat();
+            this.f14274i = parcel.readFloat();
+            this.f14275o = parcel.readInt();
+            this.f14276p = parcel.readFloat();
+            this.f14277q = parcel.readInt();
+            this.f14278r = parcel.readInt();
+            this.f14279s = parcel.readInt();
+            this.f14280t = parcel.readInt();
+            this.f14281u = parcel.readByte() != 0;
             ((ViewGroup.MarginLayoutParams) this).bottomMargin = parcel.readInt();
             ((ViewGroup.MarginLayoutParams) this).leftMargin = parcel.readInt();
             ((ViewGroup.MarginLayoutParams) this).rightMargin = parcel.readInt();

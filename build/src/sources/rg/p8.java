@@ -5,7 +5,7 @@ import bj.c;
 final class p8 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final p8 f47058a = new p8();
+    static final p8 f47059a = new p8();
 
     static {
         c.b a10 = bj.c.a("useRecognition");

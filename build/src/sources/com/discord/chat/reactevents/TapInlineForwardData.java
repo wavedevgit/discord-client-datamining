@@ -66,9 +66,9 @@ public final class TapInlineForwardData implements ReactEvent {
         compositeEncoder.y(serialDescriptor, 0, tapInlineForwardData.channelId);
         compositeEncoder.y(serialDescriptor, 1, tapInlineForwardData.messageId);
         compositeEncoder.y(serialDescriptor, 2, tapInlineForwardData.targetKind);
-        compositeEncoder.o(serialDescriptor, 3, p0.f50048a, tapInlineForwardData.embedIndex);
-        compositeEncoder.o(serialDescriptor, 4, h.f49996a, tapInlineForwardData.triggerHaptic);
-        compositeEncoder.o(serialDescriptor, 5, n2.f50032a, tapInlineForwardData.location);
+        compositeEncoder.o(serialDescriptor, 3, p0.f50049a, tapInlineForwardData.embedIndex);
+        compositeEncoder.o(serialDescriptor, 4, h.f49997a, tapInlineForwardData.triggerHaptic);
+        compositeEncoder.o(serialDescriptor, 5, n2.f50033a, tapInlineForwardData.location);
     }
 
     @Override // com.discord.reactevents.ReactEvent

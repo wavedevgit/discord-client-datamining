@@ -57,40 +57,40 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
     private SpringAnimation P;
 
     /* renamed from: o  reason: collision with root package name */
-    private final e f15381o;
+    private final e f15382o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final LinkedHashSet f15382p;
+    private final LinkedHashSet f15383p;
 
     /* renamed from: q  reason: collision with root package name */
-    private b f15383q;
+    private b f15384q;
 
     /* renamed from: r  reason: collision with root package name */
-    private PorterDuff.Mode f15384r;
+    private PorterDuff.Mode f15385r;
 
     /* renamed from: s  reason: collision with root package name */
-    private ColorStateList f15385s;
+    private ColorStateList f15386s;
 
     /* renamed from: t  reason: collision with root package name */
-    private Drawable f15386t;
+    private Drawable f15387t;
 
     /* renamed from: u  reason: collision with root package name */
-    private String f15387u;
+    private String f15388u;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f15388v;
+    private int f15389v;
 
     /* renamed from: w  reason: collision with root package name */
-    private int f15389w;
+    private int f15390w;
 
     /* renamed from: x  reason: collision with root package name */
-    private int f15390x;
+    private int f15391x;
 
     /* renamed from: y  reason: collision with root package name */
-    private int f15391y;
+    private int f15392y;
 
     /* renamed from: z  reason: collision with root package name */
-    private boolean f15392z;
+    private boolean f15393z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends b3.d {
@@ -122,7 +122,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
         public static final Parcelable.Creator<c> CREATOR = new a();
 
         /* renamed from: i  reason: collision with root package name */
-        boolean f15393i;
+        boolean f15394i;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         class a implements Parcelable.ClassLoaderCreator {
@@ -157,13 +157,13 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
             if (parcel.readInt() != 1) {
                 z10 = false;
             }
-            this.f15393i = z10;
+            this.f15394i = z10;
         }
 
         @Override // u2.a, android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
             super.writeToParcel(parcel, i10);
-            parcel.writeInt(this.f15393i ? 1 : 0);
+            parcel.writeInt(this.f15394i ? 1 : 0);
         }
 
         public c(Parcel parcel, ClassLoader classLoader) {
@@ -236,7 +236,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
 
     private int getOpticalCenterShift() {
         h g10;
-        if (this.H && this.J && (g10 = this.f15381o.g()) != null) {
+        if (this.H && this.J && (g10 = this.f15382o.g()) != null) {
             return (int) (g10.B() * 0.11f);
         }
         return 0;
@@ -304,7 +304,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
     }
 
     private boolean m() {
-        e eVar = this.f15381o;
+        e eVar = this.f15382o;
         if (eVar != null && !eVar.q()) {
             return true;
         }
@@ -317,7 +317,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
                 f();
             }
             if (this.J) {
-                this.P.u(Math.min(this.M, this.L.e(getDrawableState()).f48929a.a(getWidth())));
+                this.P.u(Math.min(this.M, this.L.e(getDrawableState()).f48930a.a(getWidth())));
                 if (z10) {
                     this.P.A();
                 }
@@ -327,37 +327,37 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
 
     private void p() {
         if (i()) {
-            setCompoundDrawablesRelative(this.f15386t, null, null, null);
+            setCompoundDrawablesRelative(this.f15387t, null, null, null);
         } else if (h()) {
-            setCompoundDrawablesRelative(null, null, this.f15386t, null);
+            setCompoundDrawablesRelative(null, null, this.f15387t, null);
         } else if (j()) {
-            setCompoundDrawablesRelative(null, this.f15386t, null, null);
+            setCompoundDrawablesRelative(null, this.f15387t, null, null);
         }
     }
 
     private void q(boolean z10) {
-        Drawable drawable = this.f15386t;
+        Drawable drawable = this.f15387t;
         if (drawable != null) {
             Drawable mutate = s1.a.r(drawable).mutate();
-            this.f15386t = mutate;
-            mutate.setTintList(this.f15385s);
-            PorterDuff.Mode mode = this.f15384r;
+            this.f15387t = mutate;
+            mutate.setTintList(this.f15386s);
+            PorterDuff.Mode mode = this.f15385r;
             if (mode != null) {
-                this.f15386t.setTintMode(mode);
+                this.f15387t.setTintMode(mode);
             }
-            int i10 = this.f15388v;
+            int i10 = this.f15389v;
             if (i10 == 0) {
-                i10 = this.f15386t.getIntrinsicWidth();
+                i10 = this.f15387t.getIntrinsicWidth();
             }
-            int i11 = this.f15388v;
+            int i11 = this.f15389v;
             if (i11 == 0) {
-                i11 = this.f15386t.getIntrinsicHeight();
+                i11 = this.f15387t.getIntrinsicHeight();
             }
-            Drawable drawable2 = this.f15386t;
-            int i12 = this.f15389w;
-            int i13 = this.f15390x;
+            Drawable drawable2 = this.f15387t;
+            int i12 = this.f15390w;
+            int i13 = this.f15391x;
             drawable2.setBounds(i12, i13, i10 + i12, i11 + i13);
-            this.f15386t.setVisible(true, z10);
+            this.f15387t.setVisible(true, z10);
         }
         if (z10) {
             p();
@@ -367,28 +367,28 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
         Drawable drawable3 = compoundDrawablesRelative[0];
         Drawable drawable4 = compoundDrawablesRelative[1];
         Drawable drawable5 = compoundDrawablesRelative[2];
-        if ((i() && drawable3 != this.f15386t) || ((h() && drawable5 != this.f15386t) || (j() && drawable4 != this.f15386t))) {
+        if ((i() && drawable3 != this.f15387t) || ((h() && drawable5 != this.f15387t) || (j() && drawable4 != this.f15387t))) {
             p();
         }
     }
 
     private void r(int i10, int i11) {
-        if (this.f15386t != null && getLayout() != null) {
+        if (this.f15387t != null && getLayout() != null) {
             if (!i() && !h()) {
                 if (j()) {
-                    this.f15389w = 0;
+                    this.f15390w = 0;
                     if (this.B == 16) {
-                        this.f15390x = 0;
+                        this.f15391x = 0;
                         q(false);
                         return;
                     }
-                    int i12 = this.f15388v;
+                    int i12 = this.f15389v;
                     if (i12 == 0) {
-                        i12 = this.f15386t.getIntrinsicHeight();
+                        i12 = this.f15387t.getIntrinsicHeight();
                     }
-                    int max = Math.max(0, (((((i11 - getTextHeight()) - getPaddingTop()) - i12) - this.f15391y) - getPaddingBottom()) / 2);
-                    if (this.f15390x != max) {
-                        this.f15390x = max;
+                    int max = Math.max(0, (((((i11 - getTextHeight()) - getPaddingTop()) - i12) - this.f15392y) - getPaddingBottom()) / 2);
+                    if (this.f15391x != max) {
+                        this.f15391x = max;
                         q(false);
                         return;
                     }
@@ -396,16 +396,16 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
                 }
                 return;
             }
-            this.f15390x = 0;
+            this.f15391x = 0;
             Layout.Alignment actualTextAlignment = getActualTextAlignment();
             int i13 = this.B;
             boolean z10 = true;
             if (i13 != 1 && i13 != 3 && ((i13 != 2 || actualTextAlignment != Layout.Alignment.ALIGN_NORMAL) && (i13 != 4 || actualTextAlignment != Layout.Alignment.ALIGN_OPPOSITE))) {
-                int i14 = this.f15388v;
+                int i14 = this.f15389v;
                 if (i14 == 0) {
-                    i14 = this.f15386t.getIntrinsicWidth();
+                    i14 = this.f15387t.getIntrinsicWidth();
                 }
-                int textLayoutWidth = ((((i10 - getTextLayoutWidth()) - getPaddingEnd()) - i14) - this.f15391y) - getPaddingStart();
+                int textLayoutWidth = ((((i10 - getTextLayoutWidth()) - getPaddingEnd()) - i14) - this.f15392y) - getPaddingStart();
                 if (actualTextAlignment == Layout.Alignment.ALIGN_CENTER) {
                     textLayoutWidth /= 2;
                 }
@@ -416,14 +416,14 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
                 if (l10 != z10) {
                     textLayoutWidth = -textLayoutWidth;
                 }
-                if (this.f15389w != textLayoutWidth) {
-                    this.f15389w = textLayoutWidth;
+                if (this.f15390w != textLayoutWidth) {
+                    this.f15390w = textLayoutWidth;
                     q(false);
                     return;
                 }
                 return;
             }
-            this.f15389w = 0;
+            this.f15390w = 0;
             q(false);
         }
     }
@@ -436,15 +436,15 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
     }
 
     private void setCheckedInternal(boolean z10) {
-        if (g() && this.f15392z != z10) {
-            this.f15392z = z10;
+        if (g() && this.f15393z != z10) {
+            this.f15393z = z10;
             refreshDrawableState();
             if (getParent() instanceof MaterialButtonToggleGroup) {
-                ((MaterialButtonToggleGroup) getParent()).w(this, this.f15392z);
+                ((MaterialButtonToggleGroup) getParent()).w(this, this.f15393z);
             }
             if (!this.A) {
                 this.A = true;
-                Iterator it = this.f15382p.iterator();
+                Iterator it = this.f15383p.iterator();
                 if (!it.hasNext()) {
                     this.A = false;
                 } else {
@@ -468,7 +468,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
     }
 
     public boolean g() {
-        e eVar = this.f15381o;
+        e eVar = this.f15382o;
         if (eVar != null && eVar.r()) {
             return true;
         }
@@ -479,8 +479,8 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
     @SuppressLint({"KotlinPropertyAccess"})
     String getA11yClassName() {
         Class cls;
-        if (!TextUtils.isEmpty(this.f15387u)) {
-            return this.f15387u;
+        if (!TextUtils.isEmpty(this.f15388u)) {
+            return this.f15388u;
         }
         if (g()) {
             cls = CompoundButton.class;
@@ -507,17 +507,17 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
 
     public int getCornerRadius() {
         if (m()) {
-            return this.f15381o.b();
+            return this.f15382o.b();
         }
         return 0;
     }
 
     public androidx.dynamicanimation.animation.d getCornerSpringForce() {
-        return this.f15381o.c();
+        return this.f15382o.c();
     }
 
     public Drawable getIcon() {
-        return this.f15386t;
+        return this.f15387t;
     }
 
     public int getIconGravity() {
@@ -525,32 +525,32 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
     }
 
     public int getIconPadding() {
-        return this.f15391y;
+        return this.f15392y;
     }
 
     public int getIconSize() {
-        return this.f15388v;
+        return this.f15389v;
     }
 
     public ColorStateList getIconTint() {
-        return this.f15385s;
+        return this.f15386s;
     }
 
     public PorterDuff.Mode getIconTintMode() {
-        return this.f15384r;
+        return this.f15385r;
     }
 
     public int getInsetBottom() {
-        return this.f15381o.d();
+        return this.f15382o.d();
     }
 
     public int getInsetTop() {
-        return this.f15381o.e();
+        return this.f15382o.e();
     }
 
     public ColorStateList getRippleColor() {
         if (m()) {
-            return this.f15381o.i();
+            return this.f15382o.i();
         }
         return null;
     }
@@ -558,28 +558,28 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
     @NonNull
     public l getShapeAppearanceModel() {
         if (m()) {
-            return this.f15381o.j();
+            return this.f15382o.j();
         }
         throw new IllegalStateException("Attempted to get ShapeAppearanceModel from a MaterialButton which has an overwritten background.");
     }
 
     public q getStateListShapeAppearanceModel() {
         if (m()) {
-            return this.f15381o.k();
+            return this.f15382o.k();
         }
         throw new IllegalStateException("Attempted to get StateListShapeAppearanceModel from a MaterialButton which has an overwritten background.");
     }
 
     public ColorStateList getStrokeColor() {
         if (m()) {
-            return this.f15381o.l();
+            return this.f15382o.l();
         }
         return null;
     }
 
     public int getStrokeWidth() {
         if (m()) {
-            return this.f15381o.m();
+            return this.f15382o.m();
         }
         return 0;
     }
@@ -587,7 +587,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
     @Override // androidx.appcompat.widget.e
     public ColorStateList getSupportBackgroundTintList() {
         if (m()) {
-            return this.f15381o.n();
+            return this.f15382o.n();
         }
         return super.getSupportBackgroundTintList();
     }
@@ -595,14 +595,14 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
     @Override // androidx.appcompat.widget.e
     public PorterDuff.Mode getSupportBackgroundTintMode() {
         if (m()) {
-            return this.f15381o.o();
+            return this.f15382o.o();
         }
         return super.getSupportBackgroundTintMode();
     }
 
     @Override // android.widget.Checkable
     public boolean isChecked() {
-        return this.f15392z;
+        return this.f15393z;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -619,7 +619,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
         if (m()) {
-            i.f(this, this.f15381o.g());
+            i.f(this, this.f15382o.g());
         }
     }
 
@@ -672,13 +672,13 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
             }
         }
         if (this.K == -1) {
-            if (this.f15386t == null) {
+            if (this.f15387t == null) {
                 i14 = 0;
             } else {
                 int iconPadding = getIconPadding();
-                int i16 = this.f15388v;
+                int i16 = this.f15389v;
                 if (i16 == 0) {
-                    i16 = this.f15386t.getIntrinsicWidth();
+                    i16 = this.f15387t.getIntrinsicWidth();
                 }
                 i14 = iconPadding + i16;
             }
@@ -701,13 +701,13 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
         }
         c cVar = (c) parcelable;
         super.onRestoreInstanceState(cVar.a());
-        setChecked(cVar.f15393i);
+        setChecked(cVar.f15394i);
     }
 
     @Override // android.widget.TextView, android.view.View
     public Parcelable onSaveInstanceState() {
         c cVar = new c(super.onSaveInstanceState());
-        cVar.f15393i = this.f15392z;
+        cVar.f15394i = this.f15393z;
         return cVar;
     }
 
@@ -720,7 +720,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
 
     @Override // android.view.View
     public boolean performClick() {
-        if (isEnabled() && this.f15381o.s()) {
+        if (isEnabled() && this.f15382o.s()) {
             toggle();
         }
         return super.performClick();
@@ -729,15 +729,15 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
     @Override // android.view.View
     public void refreshDrawableState() {
         super.refreshDrawableState();
-        if (this.f15386t != null) {
-            if (this.f15386t.setState(getDrawableState())) {
+        if (this.f15387t != null) {
+            if (this.f15387t.setState(getDrawableState())) {
                 invalidate();
             }
         }
     }
 
     public void setA11yClassName(String str) {
-        this.f15387u = str;
+        this.f15388u = str;
     }
 
     @Override // android.view.View
@@ -748,7 +748,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
     @Override // android.view.View
     public void setBackgroundColor(int i10) {
         if (m()) {
-            this.f15381o.u(i10);
+            this.f15382o.u(i10);
         } else {
             super.setBackgroundColor(i10);
         }
@@ -759,7 +759,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
         if (m()) {
             if (drawable != getBackground()) {
                 Log.w("MaterialButton", "MaterialButton manages its own background to control elevation, shape, color and states. Consider using backgroundTint, shapeAppearance and other attributes where available. A custom background will ignore these attributes and you should consider handling interaction states such as pressed, focused and disabled");
-                this.f15381o.v();
+                this.f15382o.v();
                 super.setBackgroundDrawable(drawable);
                 return;
             }
@@ -792,7 +792,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
 
     public void setCheckable(boolean z10) {
         if (m()) {
-            this.f15381o.w(z10);
+            this.f15382o.w(z10);
         }
     }
 
@@ -803,7 +803,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
 
     public void setCornerRadius(int i10) {
         if (m()) {
-            this.f15381o.x(i10);
+            this.f15382o.x(i10);
         }
     }
 
@@ -814,7 +814,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
     }
 
     public void setCornerSpringForce(@NonNull androidx.dynamicanimation.animation.d dVar) {
-        this.f15381o.z(dVar);
+        this.f15382o.z(dVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -828,13 +828,13 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
     public void setElevation(float f10) {
         super.setElevation(f10);
         if (m()) {
-            this.f15381o.g().e0(f10);
+            this.f15382o.g().e0(f10);
         }
     }
 
     public void setIcon(Drawable drawable) {
-        if (this.f15386t != drawable) {
-            this.f15386t = drawable;
+        if (this.f15387t != drawable) {
+            this.f15387t = drawable;
             q(true);
             r(getMeasuredWidth(), getMeasuredHeight());
         }
@@ -848,8 +848,8 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
     }
 
     public void setIconPadding(int i10) {
-        if (this.f15391y != i10) {
-            this.f15391y = i10;
+        if (this.f15392y != i10) {
+            this.f15392y = i10;
             setCompoundDrawablePadding(i10);
         }
     }
@@ -866,8 +866,8 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
 
     public void setIconSize(int i10) {
         if (i10 >= 0) {
-            if (this.f15388v != i10) {
-                this.f15388v = i10;
+            if (this.f15389v != i10) {
+                this.f15389v = i10;
                 q(true);
                 return;
             }
@@ -877,15 +877,15 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
     }
 
     public void setIconTint(ColorStateList colorStateList) {
-        if (this.f15385s != colorStateList) {
-            this.f15385s = colorStateList;
+        if (this.f15386s != colorStateList) {
+            this.f15386s = colorStateList;
             q(false);
         }
     }
 
     public void setIconTintMode(PorterDuff.Mode mode) {
-        if (this.f15384r != mode) {
-            this.f15384r = mode;
+        if (this.f15385r != mode) {
+            this.f15385r = mode;
             q(false);
         }
     }
@@ -895,11 +895,11 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
     }
 
     public void setInsetBottom(int i10) {
-        this.f15381o.A(i10);
+        this.f15382o.A(i10);
     }
 
     public void setInsetTop(int i10) {
-        this.f15381o.B(i10);
+        this.f15382o.B(i10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -909,21 +909,21 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void setOnPressedChangeListenerInternal(b bVar) {
-        this.f15383q = bVar;
+        this.f15384q = bVar;
     }
 
     public void setOpticalCenterEnabled(boolean z10) {
         if (this.H != z10) {
             this.H = z10;
             if (z10) {
-                this.f15381o.y(new h.d() { // from class: com.google.android.material.button.a
+                this.f15382o.y(new h.d() { // from class: com.google.android.material.button.a
                     @Override // th.h.d
                     public final void a(float f10) {
                         MaterialButton.b(MaterialButton.this, f10);
                     }
                 });
             } else {
-                this.f15381o.y(null);
+                this.f15382o.y(null);
             }
             post(new Runnable() { // from class: com.google.android.material.button.b
                 @Override // java.lang.Runnable
@@ -936,7 +936,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
 
     @Override // android.view.View
     public void setPressed(boolean z10) {
-        b bVar = this.f15383q;
+        b bVar = this.f15384q;
         if (bVar != null) {
             bVar.a(this, z10);
         }
@@ -946,7 +946,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
 
     public void setRippleColor(ColorStateList colorStateList) {
         if (m()) {
-            this.f15381o.C(colorStateList);
+            this.f15382o.C(colorStateList);
         }
     }
 
@@ -959,7 +959,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
     @Override // th.o
     public void setShapeAppearanceModel(@NonNull l lVar) {
         if (m()) {
-            this.f15381o.D(lVar);
+            this.f15382o.D(lVar);
             return;
         }
         throw new IllegalStateException("Attempted to set ShapeAppearanceModel on a MaterialButton which has an overwritten background.");
@@ -968,7 +968,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
     /* JADX INFO: Access modifiers changed from: package-private */
     public void setShouldDrawSurfaceColorStroke(boolean z10) {
         if (m()) {
-            this.f15381o.E(z10);
+            this.f15382o.E(z10);
         }
     }
 
@@ -982,10 +982,10 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
 
     public void setStateListShapeAppearanceModel(@NonNull q qVar) {
         if (m()) {
-            if (this.f15381o.c() == null && qVar.f()) {
-                this.f15381o.z(e());
+            if (this.f15382o.c() == null && qVar.f()) {
+                this.f15382o.z(e());
             }
-            this.f15381o.F(qVar);
+            this.f15382o.F(qVar);
             return;
         }
         throw new IllegalStateException("Attempted to set StateListShapeAppearanceModel on a MaterialButton which has an overwritten background.");
@@ -993,7 +993,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
 
     public void setStrokeColor(ColorStateList colorStateList) {
         if (m()) {
-            this.f15381o.G(colorStateList);
+            this.f15382o.G(colorStateList);
         }
     }
 
@@ -1005,7 +1005,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
 
     public void setStrokeWidth(int i10) {
         if (m()) {
-            this.f15381o.H(i10);
+            this.f15382o.H(i10);
         }
     }
 
@@ -1018,7 +1018,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
     @Override // androidx.appcompat.widget.e
     public void setSupportBackgroundTintList(ColorStateList colorStateList) {
         if (m()) {
-            this.f15381o.I(colorStateList);
+            this.f15382o.I(colorStateList);
         } else {
             super.setSupportBackgroundTintList(colorStateList);
         }
@@ -1027,7 +1027,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
     @Override // androidx.appcompat.widget.e
     public void setSupportBackgroundTintMode(PorterDuff.Mode mode) {
         if (m()) {
-            this.f15381o.J(mode);
+            this.f15382o.J(mode);
         } else {
             super.setSupportBackgroundTintMode(mode);
         }
@@ -1040,7 +1040,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
     }
 
     public void setToggleCheckedStateOnClick(boolean z10) {
-        this.f15381o.K(z10);
+        this.f15382o.K(z10);
     }
 
     @Override // android.widget.TextView
@@ -1059,7 +1059,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
 
     @Override // android.widget.Checkable
     public void toggle() {
-        setChecked(!this.f15392z);
+        setChecked(!this.f15393z);
     }
 
     public MaterialButton(@NonNull Context context, AttributeSet attributeSet) {
@@ -1081,9 +1081,9 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
             r7.<init>(r8, r9, r10)
             java.util.LinkedHashSet r8 = new java.util.LinkedHashSet
             r8.<init>()
-            r7.f15382p = r8
+            r7.f15383p = r8
             r8 = 0
-            r7.f15392z = r8
+            r7.f15393z = r8
             r7.A = r8
             r6 = -1
             r7.C = r6
@@ -1100,27 +1100,27 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
             android.content.res.TypedArray r9 = com.google.android.material.internal.m.i(r0, r1, r2, r3, r4, r5)
             int r10 = bh.l.W2
             int r10 = r9.getDimensionPixelSize(r10, r8)
-            r7.f15391y = r10
+            r7.f15392y = r10
             int r10 = bh.l.Z2
             int r10 = r9.getInt(r10, r6)
             android.graphics.PorterDuff$Mode r2 = android.graphics.PorterDuff.Mode.SRC_IN
             android.graphics.PorterDuff$Mode r10 = com.google.android.material.internal.p.i(r10, r2)
-            r7.f15384r = r10
+            r7.f15385r = r10
             android.content.Context r10 = r7.getContext()
             int r2 = bh.l.Y2
             android.content.res.ColorStateList r10 = qh.c.a(r10, r9, r2)
-            r7.f15385s = r10
+            r7.f15386s = r10
             android.content.Context r10 = r7.getContext()
             int r2 = bh.l.U2
             android.graphics.drawable.Drawable r10 = qh.c.e(r10, r9, r2)
-            r7.f15386t = r10
+            r7.f15387t = r10
             int r10 = bh.l.V2
             r2 = 1
             int r10 = r9.getInteger(r10, r2)
             r7.B = r10
             int r10 = bh.l.X2
             int r10 = r9.getDimensionPixelSize(r10, r8)
-            r7.f15388v = r10
+            r7.f15389v = r10
             int r10 = bh.l.f6976c3
             th.q r10 = th.q.b(r0, r9, r10)
             if (r10 == 0) goto L82
@@ -1134,7 +1134,7 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
             boolean r1 = r9.getBoolean(r1, r8)
             com.google.android.material.button.e r3 = new com.google.android.material.button.e
             r3.<init>(r7, r0)
-            r7.f15381o = r3
+            r7.f15382o = r3
             r3.t(r9)
             int r0 = bh.l.K2
             boolean r0 = r9.getBoolean(r0, r8)
@@ -1146,9 +1146,9 @@ public class MaterialButton extends androidx.appcompat.widget.e implements Check
         Laf:
             r7.setOpticalCenterEnabled(r1)
             r9.recycle()
-            int r9 = r7.f15391y
+            int r9 = r7.f15392y
             r7.setCompoundDrawablePadding(r9)
-            android.graphics.drawable.Drawable r9 = r7.f15386t
+            android.graphics.drawable.Drawable r9 = r7.f15387t
             if (r9 == 0) goto Lbf
             r8 = r2
         Lbf:

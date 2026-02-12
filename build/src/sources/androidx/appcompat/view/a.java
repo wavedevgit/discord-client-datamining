@@ -56,7 +56,7 @@ public class a {
     }
 
     public boolean e() {
-        return this.f1301a.getResources().getBoolean(f.b.f23302a);
+        return this.f1301a.getResources().getBoolean(f.b.f23303a);
     }
 
     public boolean f() {

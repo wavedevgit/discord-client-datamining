@@ -8,18 +8,18 @@ import android.os.Bundle;
 public final class SessionStateBroadcastReceiver extends BroadcastReceiver {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ai.k0 f16534a = new ai.k0("SessionStateBroadcastReceiver");
+    private static final ai.k0 f16535a = new ai.k0("SessionStateBroadcastReceiver");
 
     @Override // android.content.BroadcastReceiver
     public final void onReceive(Context context, Intent intent) {
         Bundle bundleExtra = intent.getBundleExtra("com.google.android.play.core.FLAGS");
         if (bundleExtra == null) {
-            f16534a.b("Empty flags bundle received from broadcast.", new Object[0]);
+            f16535a.b("Empty flags bundle received from broadcast.", new Object[0]);
         } else if (!bundleExtra.getBoolean("enableWorkManager")) {
         } else {
             Bundle bundleExtra2 = intent.getBundleExtra("com.google.android.play.core.assetpacks.receiver.EXTRA_SESSION_STATE");
             if (bundleExtra2 == null) {
-                f16534a.b("Empty bundle received from broadcast.", new Object[0]);
+                f16535a.b("Empty bundle received from broadcast.", new Object[0]);
             } else {
                 x1.a(context).b().b(bundleExtra2, bundleExtra, intent.getBundleExtra("com.google.android.play.core.assetpacks.receiver.EXTRA_NOTIFICATION_OPTIONS"));
             }

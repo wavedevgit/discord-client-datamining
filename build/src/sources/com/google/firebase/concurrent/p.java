@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 class p extends androidx.concurrent.futures.a implements ScheduledFuture {
 
     /* renamed from: s  reason: collision with root package name */
-    private final ScheduledFuture f17210s;
+    private final ScheduledFuture f17211s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements b {
@@ -40,22 +40,22 @@ class p extends androidx.concurrent.futures.a implements ScheduledFuture {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(c cVar) {
-        this.f17210s = cVar.a(new a());
+        this.f17211s = cVar.a(new a());
     }
 
     @Override // androidx.concurrent.futures.a
     protected void e() {
-        this.f17210s.cancel(v());
+        this.f17211s.cancel(v());
     }
 
     @Override // java.util.concurrent.Delayed
     public long getDelay(TimeUnit timeUnit) {
-        return this.f17210s.getDelay(timeUnit);
+        return this.f17211s.getDelay(timeUnit);
     }
 
     @Override // java.lang.Comparable
     /* renamed from: y */
     public int compareTo(Delayed delayed) {
-        return this.f17210s.compareTo(delayed);
+        return this.f17211s.compareTo(delayed);
     }
 }

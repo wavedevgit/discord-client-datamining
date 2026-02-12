@@ -52,7 +52,7 @@ public final class NotificationChannels {
         @NotNull
 
         /* renamed from: id  reason: collision with root package name */
-        private final String f10248id;
+        private final String f10249id;
         private final int resource;
         public static final CallRingtone Halloween = new CallRingtone("Halloween", 0, "halloween", com.discord.sounds.R.raw.halloween_call_ringing);
         public static final CallRingtone Default = new CallRingtone("Default", 1, "default", com.discord.sounds.R.raw.call_ringing);
@@ -89,7 +89,7 @@ public final class NotificationChannels {
         }
 
         private CallRingtone(String str, int i10, String str2, int i11) {
-            this.f10248id = str2;
+            this.f10249id = str2;
             this.resource = i11;
         }
 
@@ -108,7 +108,7 @@ public final class NotificationChannels {
 
         @NotNull
         public final String getId() {
-            return this.f10248id;
+            return this.f10249id;
         }
 
         public final int getResource() {
@@ -131,7 +131,7 @@ public final class NotificationChannels {
         @NotNull
 
         /* renamed from: id  reason: collision with root package name */
-        private final String f10250id;
+        private final String f10251id;
         public static final ChannelGroup Realtime = new ChannelGroup("Realtime", 0, "realtime", "111_realtime");
         public static final ChannelGroup Social = new ChannelGroup("Social", 1, "social", "222_social");
         public static final ChannelGroup Server = new ChannelGroup("Server", 2, "server", "333_server");
@@ -182,7 +182,7 @@ public final class NotificationChannels {
         }
 
         private ChannelGroup(String str, int i10, String str2, String str3) {
-            this.f10250id = str2;
+            this.f10251id = str2;
             this.groupId = str3;
         }
 
@@ -206,7 +206,7 @@ public final class NotificationChannels {
 
         @NotNull
         public final String getId() {
-            return this.f10250id;
+            return this.f10251id;
         }
     }
 
@@ -357,7 +357,7 @@ public final class NotificationChannels {
         } else {
             configureCallChannel$default(INSTANCE, context, notificationChannelCompat, builder, null, 8, null);
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     private final NotificationChannelCompat migrateOrCreateNotificationChannel(Context context, Category category, int i10, Map<String, String> map, Function2<? super NotificationChannelCompat, ? super NotificationChannelCompat.Builder, Unit> function2) {
@@ -422,7 +422,7 @@ public final class NotificationChannels {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit migrateOrCreateNotificationChannel$lambda$8(NotificationChannelCompat notificationChannelCompat, NotificationChannelCompat.Builder builder) {
         Intrinsics.checkNotNullParameter(builder, "<unused var>");
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @NotNull
@@ -620,7 +620,7 @@ public final class NotificationChannels {
         @NotNull
 
         /* renamed from: id  reason: collision with root package name */
-        private final String f10249id;
+        private final String f10250id;
         private final int importance;
         private final String legacyId;
 
@@ -779,7 +779,7 @@ public final class NotificationChannels {
         }
 
         private Category(String str, int i10, String str2, int i11, ChannelGroup channelGroup, String str3) {
-            this.f10249id = str2;
+            this.f10250id = str2;
             this.importance = i11;
             this.group = channelGroup;
             this.legacyId = str3;
@@ -805,7 +805,7 @@ public final class NotificationChannels {
 
         @NotNull
         public final String getId() {
-            return this.f10249id;
+            return this.f10250id;
         }
 
         public final int getImportance() {

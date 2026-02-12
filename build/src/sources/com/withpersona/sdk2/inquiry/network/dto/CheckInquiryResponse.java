@@ -175,7 +175,7 @@ public final class CheckInquiryResponse {
         @NotNull
 
         /* renamed from: id  reason: collision with root package name */
-        private final String f20425id;
+        private final String f20426id;
         @NotNull
         private final String type;
 
@@ -183,7 +183,7 @@ public final class CheckInquiryResponse {
             Intrinsics.checkNotNullParameter(id2, "id");
             Intrinsics.checkNotNullParameter(type, "type");
             Intrinsics.checkNotNullParameter(attributes, "attributes");
-            this.f20425id = id2;
+            this.f20426id = id2;
             this.type = type;
             this.attributes = attributes;
         }
@@ -195,7 +195,7 @@ public final class CheckInquiryResponse {
 
         @NotNull
         public final String getId() {
-            return this.f20425id;
+            return this.f20426id;
         }
 
         @NotNull

@@ -3,9 +3,9 @@ package com.google.android.gms.common;
 public final class h extends Exception {
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f14494d;
+    public final int f14495d;
 
     public h(int i10) {
-        this.f14494d = i10;
+        this.f14495d = i10;
     }
 }

@@ -10,32 +10,32 @@ import hf.o;
 public final class b extends jf.a {
 
     /* renamed from: d  reason: collision with root package name */
-    final int f14465d;
+    final int f14466d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f14466e;
+    private final int f14467e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final PendingIntent f14467i;
+    private final PendingIntent f14468i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f14468o;
+    private final String f14469o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Integer f14469p;
+    private final Integer f14470p;
 
     /* renamed from: q  reason: collision with root package name */
-    public static final b f14464q = new b(0);
+    public static final b f14465q = new b(0);
     @NonNull
     public static final Parcelable.Creator<b> CREATOR = new q();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(int i10, int i11, PendingIntent pendingIntent, String str, Integer num) {
-        this.f14465d = i10;
-        this.f14466e = i11;
-        this.f14467i = pendingIntent;
-        this.f14468o = str;
-        this.f14469p = num;
+        this.f14466d = i10;
+        this.f14467e = i11;
+        this.f14468i = pendingIntent;
+        this.f14469o = str;
+        this.f14470p = num;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -112,19 +112,19 @@ public final class b extends jf.a {
     }
 
     public Integer b() {
-        return this.f14469p;
+        return this.f14470p;
     }
 
     public int c() {
-        return this.f14466e;
+        return this.f14467e;
     }
 
     public String d() {
-        return this.f14468o;
+        return this.f14469o;
     }
 
     public PendingIntent e() {
-        return this.f14467i;
+        return this.f14468i;
     }
 
     public boolean equals(Object obj) {
@@ -135,36 +135,36 @@ public final class b extends jf.a {
             return false;
         }
         b bVar = (b) obj;
-        if (this.f14466e == bVar.f14466e && hf.o.a(this.f14467i, bVar.f14467i) && hf.o.a(this.f14468o, bVar.f14468o) && hf.o.a(this.f14469p, bVar.f14469p)) {
+        if (this.f14467e == bVar.f14467e && hf.o.a(this.f14468i, bVar.f14468i) && hf.o.a(this.f14469o, bVar.f14469o) && hf.o.a(this.f14470p, bVar.f14470p)) {
             return true;
         }
         return false;
     }
 
     public boolean f() {
-        return (this.f14466e == 0 || this.f14467i == null) ? false : true;
+        return (this.f14467e == 0 || this.f14468i == null) ? false : true;
     }
 
     public boolean g() {
-        return this.f14466e == 0;
+        return this.f14467e == 0;
     }
 
     public int hashCode() {
-        return hf.o.b(Integer.valueOf(this.f14466e), this.f14467i, this.f14468o, this.f14469p);
+        return hf.o.b(Integer.valueOf(this.f14467e), this.f14468i, this.f14469o, this.f14470p);
     }
 
     public String toString() {
         o.a c10 = hf.o.c(this);
-        c10.a("statusCode", i(this.f14466e));
-        c10.a("resolution", this.f14467i);
-        c10.a("message", this.f14468o);
-        c10.a("clientMethodKey", this.f14469p);
+        c10.a("statusCode", i(this.f14467e));
+        c10.a("resolution", this.f14468i);
+        c10.a("message", this.f14469o);
+        c10.a("clientMethodKey", this.f14470p);
         return c10.toString();
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        int i11 = this.f14465d;
+        int i11 = this.f14466d;
         int a10 = jf.c.a(parcel);
         jf.c.l(parcel, 1, i11);
         jf.c.l(parcel, 2, c());

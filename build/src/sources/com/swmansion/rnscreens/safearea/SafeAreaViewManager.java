@@ -70,7 +70,7 @@ public final class SafeAreaViewManager extends ViewGroupManager<d> implements RN
     @ReactProp(name = "edges")
     public void setEdges(@NotNull d view, ReadableMap readableMap) {
         Intrinsics.checkNotNullParameter(view, "view");
-        yn.a a10 = yn.a.f55666e.a(readableMap);
+        yn.a a10 = yn.a.f55667e.a(readableMap);
         if (a10 != null) {
             view.setEdges(a10);
         }
@@ -101,7 +101,7 @@ public final class SafeAreaViewManager extends ViewGroupManager<d> implements RN
             java.lang.String r0 = "interface"
             boolean r0 = r4.equals(r0)
             if (r0 == 0) goto L39
-            com.swmansion.rnscreens.safearea.b r4 = com.swmansion.rnscreens.safearea.b.f19353i
+            com.swmansion.rnscreens.safearea.b r4 = com.swmansion.rnscreens.safearea.b.f19354i
             goto L52
         L25:
             java.lang.String r0 = "all"
@@ -112,7 +112,7 @@ public final class SafeAreaViewManager extends ViewGroupManager<d> implements RN
             java.lang.String r0 = "system"
             boolean r0 = r4.equals(r0)
             if (r0 == 0) goto L39
-            com.swmansion.rnscreens.safearea.b r4 = com.swmansion.rnscreens.safearea.b.f19352e
+            com.swmansion.rnscreens.safearea.b r4 = com.swmansion.rnscreens.safearea.b.f19353e
             goto L52
         L39:
             com.facebook.react.bridge.JSApplicationIllegalArgumentException r3 = new com.facebook.react.bridge.JSApplicationIllegalArgumentException
@@ -125,7 +125,7 @@ public final class SafeAreaViewManager extends ViewGroupManager<d> implements RN
             r3.<init>(r4)
             throw r3
         L50:
-            com.swmansion.rnscreens.safearea.b r4 = com.swmansion.rnscreens.safearea.b.f19351d
+            com.swmansion.rnscreens.safearea.b r4 = com.swmansion.rnscreens.safearea.b.f19352d
         L52:
             r3.setInsetType(r4)
             return

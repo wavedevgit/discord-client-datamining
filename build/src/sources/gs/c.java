@@ -17,37 +17,37 @@ public class c {
     public static final class a extends i {
 
         /* renamed from: d  reason: collision with root package name */
-        private int f25972d;
+        private int f25973d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Function2 f25973e;
+        final /* synthetic */ Function2 f25974e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Object f25974i;
+        final /* synthetic */ Object f25975i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public a(Continuation continuation, Function2 function2, Object obj) {
             super(continuation);
-            this.f25973e = function2;
-            this.f25974i = obj;
+            this.f25974e = function2;
+            this.f25975i = obj;
             Intrinsics.checkNotNull(continuation, "null cannot be cast to non-null type kotlin.coroutines.Continuation<kotlin.Any?>");
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         protected Object invokeSuspend(Object obj) {
-            int i10 = this.f25972d;
+            int i10 = this.f25973d;
             if (i10 != 0) {
                 if (i10 == 1) {
-                    this.f25972d = 2;
+                    this.f25973d = 2;
                     kotlin.c.b(obj);
                     return obj;
                 }
                 throw new IllegalStateException("This coroutine had already completed");
             }
-            this.f25972d = 1;
+            this.f25973d = 1;
             kotlin.c.b(obj);
-            Intrinsics.checkNotNull(this.f25973e, "null cannot be cast to non-null type kotlin.Function2<R of kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt.createCoroutineUnintercepted, kotlin.coroutines.Continuation<T of kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt.createCoroutineUnintercepted>, kotlin.Any?>");
-            return ((Function2) TypeIntrinsics.beforeCheckcastToFunctionOfArity(this.f25973e, 2)).invoke(this.f25974i, this);
+            Intrinsics.checkNotNull(this.f25974e, "null cannot be cast to non-null type kotlin.Function2<R of kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt.createCoroutineUnintercepted, kotlin.coroutines.Continuation<T of kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt.createCoroutineUnintercepted>, kotlin.Any?>");
+            return ((Function2) TypeIntrinsics.beforeCheckcastToFunctionOfArity(this.f25974e, 2)).invoke(this.f25975i, this);
         }
     }
 
@@ -55,37 +55,37 @@ public class c {
     public static final class b extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        private int f25975d;
+        private int f25976d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Function2 f25976e;
+        final /* synthetic */ Function2 f25977e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Object f25977i;
+        final /* synthetic */ Object f25978i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public b(Continuation continuation, CoroutineContext coroutineContext, Function2 function2, Object obj) {
             super(continuation, coroutineContext);
-            this.f25976e = function2;
-            this.f25977i = obj;
+            this.f25977e = function2;
+            this.f25978i = obj;
             Intrinsics.checkNotNull(continuation, "null cannot be cast to non-null type kotlin.coroutines.Continuation<kotlin.Any?>");
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         protected Object invokeSuspend(Object obj) {
-            int i10 = this.f25975d;
+            int i10 = this.f25976d;
             if (i10 != 0) {
                 if (i10 == 1) {
-                    this.f25975d = 2;
+                    this.f25976d = 2;
                     kotlin.c.b(obj);
                     return obj;
                 }
                 throw new IllegalStateException("This coroutine had already completed");
             }
-            this.f25975d = 1;
+            this.f25976d = 1;
             kotlin.c.b(obj);
-            Intrinsics.checkNotNull(this.f25976e, "null cannot be cast to non-null type kotlin.Function2<R of kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt.createCoroutineUnintercepted, kotlin.coroutines.Continuation<T of kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt.createCoroutineUnintercepted>, kotlin.Any?>");
-            return ((Function2) TypeIntrinsics.beforeCheckcastToFunctionOfArity(this.f25976e, 2)).invoke(this.f25977i, this);
+            Intrinsics.checkNotNull(this.f25977e, "null cannot be cast to non-null type kotlin.Function2<R of kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt.createCoroutineUnintercepted, kotlin.coroutines.Continuation<T of kotlin.coroutines.intrinsics.IntrinsicsKt__IntrinsicsJvmKt.createCoroutineUnintercepted>, kotlin.Any?>");
+            return ((Function2) TypeIntrinsics.beforeCheckcastToFunctionOfArity(this.f25977e, 2)).invoke(this.f25978i, this);
         }
     }
 
@@ -128,7 +128,7 @@ public class c {
             return ((kotlin.coroutines.jvm.internal.a) function2).create(obj, a10);
         }
         CoroutineContext context = a10.getContext();
-        if (context == e.f32061d) {
+        if (context == e.f32062d) {
             return new a(a10, function2, obj);
         }
         return new b(a10, context, function2, obj);
@@ -136,7 +136,7 @@ public class c {
 
     private static final Continuation b(Continuation continuation) {
         CoroutineContext context = continuation.getContext();
-        if (context == e.f32061d) {
+        if (context == e.f32062d) {
             return new C0357c(continuation);
         }
         return new d(continuation, context);

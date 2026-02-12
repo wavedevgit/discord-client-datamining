@@ -49,7 +49,7 @@ import rd.u0;
 public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
 
     /* renamed from: k  reason: collision with root package name */
-    private static final i0 f13657k = i0.a(new Comparator() { // from class: ke.c
+    private static final i0 f13658k = i0.a(new Comparator() { // from class: ke.c
         @Override // java.util.Comparator
         public final int compare(Object obj, Object obj2) {
             return DefaultTrackSelector.t((Integer) obj, (Integer) obj2);
@@ -57,7 +57,7 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
     });
 
     /* renamed from: l  reason: collision with root package name */
-    private static final i0 f13658l = i0.a(new Comparator() { // from class: ke.d
+    private static final i0 f13659l = i0.a(new Comparator() { // from class: ke.d
         @Override // java.util.Comparator
         public final int compare(Object obj, Object obj2) {
             return DefaultTrackSelector.s((Integer) obj, (Integer) obj2);
@@ -65,25 +65,25 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
     });
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object f13659d;
+    private final Object f13660d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Context f13660e;
+    public final Context f13661e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final g.b f13661f;
+    private final g.b f13662f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f13662g;
+    private final boolean f13663g;
 
     /* renamed from: h  reason: collision with root package name */
-    private d f13663h;
+    private d f13664h;
 
     /* renamed from: i  reason: collision with root package name */
-    private f f13664i;
+    private f f13665i;
 
     /* renamed from: j  reason: collision with root package name */
-    private AudioAttributes f13665j;
+    private AudioAttributes f13666j;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -97,37 +97,37 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
         private final boolean G;
 
         /* renamed from: p  reason: collision with root package name */
-        private final int f13666p;
+        private final int f13667p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final boolean f13667q;
+        private final boolean f13668q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final String f13668r;
+        private final String f13669r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final d f13669s;
+        private final d f13670s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final boolean f13670t;
+        private final boolean f13671t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final int f13671u;
+        private final int f13672u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final int f13672v;
+        private final int f13673v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final int f13673w;
+        private final int f13674w;
 
         /* renamed from: x  reason: collision with root package name */
-        private final boolean f13674x;
+        private final boolean f13675x;
 
         /* renamed from: y  reason: collision with root package name */
-        private final int f13675y;
+        private final int f13676y;
 
         /* renamed from: z  reason: collision with root package name */
-        private final int f13676z;
+        private final int f13677z;
 
         public b(int i10, u0 u0Var, int i11, d dVar, int i12, boolean z10, n nVar) {
             super(i10, u0Var, i11);
@@ -138,14 +138,14 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
             boolean z13;
             int i15;
             boolean z14;
-            this.f13669s = dVar;
-            this.f13668r = DefaultTrackSelector.S(this.f13717o.f12295i);
-            this.f13670t = DefaultTrackSelector.O(i12, false);
+            this.f13670s = dVar;
+            this.f13669r = DefaultTrackSelector.S(this.f13718o.f12296i);
+            this.f13671t = DefaultTrackSelector.O(i12, false);
             int i16 = 0;
             while (true) {
                 i13 = Integer.MAX_VALUE;
-                if (i16 < dVar.f13764y.size()) {
-                    i14 = DefaultTrackSelector.G(this.f13717o, (String) dVar.f13764y.get(i16), false);
+                if (i16 < dVar.f13765y.size()) {
+                    i14 = DefaultTrackSelector.G(this.f13718o, (String) dVar.f13765y.get(i16), false);
                     if (i14 > 0) {
                         break;
                     }
@@ -156,18 +156,18 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
                     break;
                 }
             }
-            this.f13672v = i16;
-            this.f13671u = i14;
-            this.f13673w = DefaultTrackSelector.K(this.f13717o.f12297p, dVar.f13765z);
-            Format format = this.f13717o;
-            int i17 = format.f12297p;
+            this.f13673v = i16;
+            this.f13672u = i14;
+            this.f13674w = DefaultTrackSelector.K(this.f13718o.f12298p, dVar.f13766z);
+            Format format = this.f13718o;
+            int i17 = format.f12298p;
             if (i17 != 0 && (i17 & 1) == 0) {
                 z11 = false;
             } else {
                 z11 = true;
             }
-            this.f13674x = z11;
-            if ((format.f12296o & 1) != 0) {
+            this.f13675x = z11;
+            if ((format.f12297o & 1) != 0) {
                 z12 = true;
             } else {
                 z12 = false;
@@ -176,19 +176,19 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
             int i18 = format.J;
             this.B = i18;
             this.C = format.K;
-            int i19 = format.f12300s;
+            int i19 = format.f12301s;
             this.D = i19;
             if ((i19 == -1 || i19 <= dVar.B) && ((i18 == -1 || i18 <= dVar.A) && nVar.apply(format))) {
                 z13 = true;
             } else {
                 z13 = false;
             }
-            this.f13667q = z13;
+            this.f13668q = z13;
             String[] m02 = w0.m0();
             int i20 = 0;
             while (true) {
                 if (i20 < m02.length) {
-                    i15 = DefaultTrackSelector.G(this.f13717o, m02[i20], false);
+                    i15 = DefaultTrackSelector.G(this.f13718o, m02[i20], false);
                     if (i15 > 0) {
                         break;
                     }
@@ -199,12 +199,12 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
                     break;
                 }
             }
-            this.f13675y = i20;
-            this.f13676z = i15;
+            this.f13676y = i20;
+            this.f13677z = i15;
             int i21 = 0;
             while (true) {
                 if (i21 < dVar.C.size()) {
-                    String str = this.f13717o.f12304w;
+                    String str = this.f13718o.f12305w;
                     if (str != null && str.equals(dVar.C.get(i21))) {
                         i13 = i21;
                         break;
@@ -222,7 +222,7 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
             }
             this.F = z14;
             this.G = w1.s(i12) == 64;
-            this.f13666p = h(i12, z10);
+            this.f13667p = h(i12, z10);
         }
 
         public static int e(List list, List list2) {
@@ -231,21 +231,21 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
 
         public static s g(int i10, u0 u0Var, d dVar, int[] iArr, boolean z10, n nVar) {
             s.a k10 = s.k();
-            for (int i11 = 0; i11 < u0Var.f46496d; i11++) {
+            for (int i11 = 0; i11 < u0Var.f46497d; i11++) {
                 k10.a(new b(i10, u0Var, i11, dVar, iArr[i11], z10, nVar));
             }
             return k10.k();
         }
 
         private int h(int i10, boolean z10) {
-            if (!DefaultTrackSelector.O(i10, this.f13669s.f13689y0)) {
+            if (!DefaultTrackSelector.O(i10, this.f13670s.f13690y0)) {
                 return 0;
             }
-            if (!this.f13667q && !this.f13669s.f13683s0) {
+            if (!this.f13668q && !this.f13670s.f13684s0) {
                 return 0;
             }
-            if (DefaultTrackSelector.O(i10, false) && this.f13667q && this.f13717o.f12300s != -1) {
-                d dVar = this.f13669s;
+            if (DefaultTrackSelector.O(i10, false) && this.f13668q && this.f13718o.f12301s != -1) {
+                d dVar = this.f13670s;
                 if (!dVar.I && !dVar.H) {
                     if (dVar.A0 || !z10) {
                         return 2;
@@ -259,7 +259,7 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
 
         @Override // com.google.android.exoplayer2.trackselection.DefaultTrackSelector.h
         public int a() {
-            return this.f13666p;
+            return this.f13667p;
         }
 
         @Override // java.lang.Comparable
@@ -267,24 +267,24 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
         public int compareTo(b bVar) {
             i0 h10;
             i0 i0Var;
-            if (this.f13667q && this.f13670t) {
-                h10 = DefaultTrackSelector.f13657k;
+            if (this.f13668q && this.f13671t) {
+                h10 = DefaultTrackSelector.f13658k;
             } else {
-                h10 = DefaultTrackSelector.f13657k.h();
+                h10 = DefaultTrackSelector.f13658k.h();
             }
-            m f10 = m.j().g(this.f13670t, bVar.f13670t).f(Integer.valueOf(this.f13672v), Integer.valueOf(bVar.f13672v), i0.b().h()).d(this.f13671u, bVar.f13671u).d(this.f13673w, bVar.f13673w).g(this.A, bVar.A).g(this.f13674x, bVar.f13674x).f(Integer.valueOf(this.f13675y), Integer.valueOf(bVar.f13675y), i0.b().h()).d(this.f13676z, bVar.f13676z).g(this.f13667q, bVar.f13667q).f(Integer.valueOf(this.E), Integer.valueOf(bVar.E), i0.b().h());
+            m f10 = m.j().g(this.f13671t, bVar.f13671t).f(Integer.valueOf(this.f13673v), Integer.valueOf(bVar.f13673v), i0.b().h()).d(this.f13672u, bVar.f13672u).d(this.f13674w, bVar.f13674w).g(this.A, bVar.A).g(this.f13675x, bVar.f13675x).f(Integer.valueOf(this.f13676y), Integer.valueOf(bVar.f13676y), i0.b().h()).d(this.f13677z, bVar.f13677z).g(this.f13668q, bVar.f13668q).f(Integer.valueOf(this.E), Integer.valueOf(bVar.E), i0.b().h());
             Integer valueOf = Integer.valueOf(this.D);
             Integer valueOf2 = Integer.valueOf(bVar.D);
-            if (!this.f13669s.H) {
-                i0Var = DefaultTrackSelector.f13658l;
+            if (!this.f13670s.H) {
+                i0Var = DefaultTrackSelector.f13659l;
             } else {
-                i0Var = DefaultTrackSelector.f13657k.h();
+                i0Var = DefaultTrackSelector.f13658k.h();
             }
             m f11 = f10.f(valueOf, valueOf2, i0Var).g(this.F, bVar.F).g(this.G, bVar.G).f(Integer.valueOf(this.B), Integer.valueOf(bVar.B), h10).f(Integer.valueOf(this.C), Integer.valueOf(bVar.C), h10);
             Integer valueOf3 = Integer.valueOf(this.D);
             Integer valueOf4 = Integer.valueOf(bVar.D);
-            if (!w0.c(this.f13668r, bVar.f13668r)) {
-                h10 = DefaultTrackSelector.f13658l;
+            if (!w0.c(this.f13669r, bVar.f13669r)) {
+                h10 = DefaultTrackSelector.f13659l;
             }
             return f11.f(valueOf3, valueOf4, h10).i();
         }
@@ -295,12 +295,12 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
             int i10;
             String str;
             int i11;
-            d dVar = this.f13669s;
-            if (dVar.f13686v0 || ((i11 = this.f13717o.J) != -1 && i11 == bVar.f13717o.J)) {
-                if (dVar.f13684t0 || ((str = this.f13717o.f12304w) != null && TextUtils.equals(str, bVar.f13717o.f12304w))) {
-                    d dVar2 = this.f13669s;
-                    if (dVar2.f13685u0 || ((i10 = this.f13717o.K) != -1 && i10 == bVar.f13717o.K)) {
-                        if (!dVar2.f13687w0) {
+            d dVar = this.f13670s;
+            if (dVar.f13687v0 || ((i11 = this.f13718o.J) != -1 && i11 == bVar.f13718o.J)) {
+                if (dVar.f13685t0 || ((str = this.f13718o.f12305w) != null && TextUtils.equals(str, bVar.f13718o.f12305w))) {
+                    d dVar2 = this.f13670s;
+                    if (dVar2.f13686u0 || ((i10 = this.f13718o.K) != -1 && i10 == bVar.f13718o.K)) {
+                        if (!dVar2.f13688w0) {
                             if (this.F != bVar.F || this.G != bVar.G) {
                                 return false;
                             }
@@ -321,20 +321,20 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
     public static final class c implements Comparable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final boolean f13677d;
+        private final boolean f13678d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final boolean f13678e;
+        private final boolean f13679e;
 
         public c(Format format, int i10) {
-            this.f13677d = (format.f12296o & 1) != 0;
-            this.f13678e = DefaultTrackSelector.O(i10, false);
+            this.f13678d = (format.f12297o & 1) != 0;
+            this.f13679e = DefaultTrackSelector.O(i10, false);
         }
 
         @Override // java.lang.Comparable
         /* renamed from: a */
         public int compareTo(c cVar) {
-            return m.j().g(this.f13678e, cVar.f13678e).g(this.f13677d, cVar.f13677d).i();
+            return m.j().g(this.f13679e, cVar.f13679e).g(this.f13678d, cVar.f13678d).i();
         }
     }
 
@@ -367,40 +367,40 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
         private final SparseBooleanArray D0;
 
         /* renamed from: o0  reason: collision with root package name */
-        public final boolean f13679o0;
+        public final boolean f13680o0;
 
         /* renamed from: p0  reason: collision with root package name */
-        public final boolean f13680p0;
+        public final boolean f13681p0;
 
         /* renamed from: q0  reason: collision with root package name */
-        public final boolean f13681q0;
+        public final boolean f13682q0;
 
         /* renamed from: r0  reason: collision with root package name */
-        public final boolean f13682r0;
+        public final boolean f13683r0;
 
         /* renamed from: s0  reason: collision with root package name */
-        public final boolean f13683s0;
+        public final boolean f13684s0;
 
         /* renamed from: t0  reason: collision with root package name */
-        public final boolean f13684t0;
+        public final boolean f13685t0;
 
         /* renamed from: u0  reason: collision with root package name */
-        public final boolean f13685u0;
+        public final boolean f13686u0;
 
         /* renamed from: v0  reason: collision with root package name */
-        public final boolean f13686v0;
+        public final boolean f13687v0;
 
         /* renamed from: w0  reason: collision with root package name */
-        public final boolean f13687w0;
+        public final boolean f13688w0;
 
         /* renamed from: x0  reason: collision with root package name */
-        public final boolean f13688x0;
+        public final boolean f13689x0;
 
         /* renamed from: y0  reason: collision with root package name */
-        public final boolean f13689y0;
+        public final boolean f13690y0;
 
         /* renamed from: z0  reason: collision with root package name */
-        public final boolean f13690z0;
+        public final boolean f13691z0;
 
         static {
             d A = new a().A();
@@ -533,7 +533,7 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
             }
             if (obj != null && d.class == obj.getClass()) {
                 d dVar = (d) obj;
-                if (super.equals(dVar) && this.f13679o0 == dVar.f13679o0 && this.f13680p0 == dVar.f13680p0 && this.f13681q0 == dVar.f13681q0 && this.f13682r0 == dVar.f13682r0 && this.f13683s0 == dVar.f13683s0 && this.f13684t0 == dVar.f13684t0 && this.f13685u0 == dVar.f13685u0 && this.f13686v0 == dVar.f13686v0 && this.f13687w0 == dVar.f13687w0 && this.f13688x0 == dVar.f13688x0 && this.f13689y0 == dVar.f13689y0 && this.f13690z0 == dVar.f13690z0 && this.A0 == dVar.A0 && this.B0 == dVar.B0 && E(this.D0, dVar.D0) && F(this.C0, dVar.C0)) {
+                if (super.equals(dVar) && this.f13680o0 == dVar.f13680o0 && this.f13681p0 == dVar.f13681p0 && this.f13682q0 == dVar.f13682q0 && this.f13683r0 == dVar.f13683r0 && this.f13684s0 == dVar.f13684s0 && this.f13685t0 == dVar.f13685t0 && this.f13686u0 == dVar.f13686u0 && this.f13687v0 == dVar.f13687v0 && this.f13688w0 == dVar.f13688w0 && this.f13689x0 == dVar.f13689x0 && this.f13690y0 == dVar.f13690y0 && this.f13691z0 == dVar.f13691z0 && this.A0 == dVar.A0 && this.B0 == dVar.B0 && E(this.D0, dVar.D0) && F(this.C0, dVar.C0)) {
                     return true;
                 }
             }
@@ -542,7 +542,7 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
 
         @Override // com.google.android.exoplayer2.trackselection.TrackSelectionParameters
         public int hashCode() {
-            return ((((((((((((((((((((((((((((super.hashCode() + 31) * 31) + (this.f13679o0 ? 1 : 0)) * 31) + (this.f13680p0 ? 1 : 0)) * 31) + (this.f13681q0 ? 1 : 0)) * 31) + (this.f13682r0 ? 1 : 0)) * 31) + (this.f13683s0 ? 1 : 0)) * 31) + (this.f13684t0 ? 1 : 0)) * 31) + (this.f13685u0 ? 1 : 0)) * 31) + (this.f13686v0 ? 1 : 0)) * 31) + (this.f13687w0 ? 1 : 0)) * 31) + (this.f13688x0 ? 1 : 0)) * 31) + (this.f13689y0 ? 1 : 0)) * 31) + (this.f13690z0 ? 1 : 0)) * 31) + (this.A0 ? 1 : 0)) * 31) + (this.B0 ? 1 : 0);
+            return ((((((((((((((((((((((((((((super.hashCode() + 31) * 31) + (this.f13680o0 ? 1 : 0)) * 31) + (this.f13681p0 ? 1 : 0)) * 31) + (this.f13682q0 ? 1 : 0)) * 31) + (this.f13683r0 ? 1 : 0)) * 31) + (this.f13684s0 ? 1 : 0)) * 31) + (this.f13685t0 ? 1 : 0)) * 31) + (this.f13686u0 ? 1 : 0)) * 31) + (this.f13687v0 ? 1 : 0)) * 31) + (this.f13688w0 ? 1 : 0)) * 31) + (this.f13689x0 ? 1 : 0)) * 31) + (this.f13690y0 ? 1 : 0)) * 31) + (this.f13691z0 ? 1 : 0)) * 31) + (this.A0 ? 1 : 0)) * 31) + (this.B0 ? 1 : 0);
         }
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -608,13 +608,13 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
                 if (parcelableArrayList == null) {
                     d10 = s.t();
                 } else {
-                    d10 = oe.d.d(rd.w0.f46511q, parcelableArrayList);
+                    d10 = oe.d.d(rd.w0.f46512q, parcelableArrayList);
                 }
                 SparseArray sparseParcelableArray = bundle.getSparseParcelableArray(d.S0);
                 if (sparseParcelableArray == null) {
                     e10 = new SparseArray();
                 } else {
-                    e10 = oe.d.e(e.f13694s, sparseParcelableArray);
+                    e10 = oe.d.e(e.f13695s, sparseParcelableArray);
                 }
                 if (intArray != null && intArray.length == d10.size()) {
                     for (int i10 = 0; i10 < intArray.length; i10++) {
@@ -775,18 +775,18 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
 
             private a(d dVar) {
                 super(dVar);
-                this.A = dVar.f13679o0;
-                this.B = dVar.f13680p0;
-                this.C = dVar.f13681q0;
-                this.D = dVar.f13682r0;
-                this.E = dVar.f13683s0;
-                this.F = dVar.f13684t0;
-                this.G = dVar.f13685u0;
-                this.H = dVar.f13686v0;
-                this.I = dVar.f13687w0;
-                this.J = dVar.f13688x0;
-                this.K = dVar.f13689y0;
-                this.L = dVar.f13690z0;
+                this.A = dVar.f13680o0;
+                this.B = dVar.f13681p0;
+                this.C = dVar.f13682q0;
+                this.D = dVar.f13683r0;
+                this.E = dVar.f13684s0;
+                this.F = dVar.f13685t0;
+                this.G = dVar.f13686u0;
+                this.H = dVar.f13687v0;
+                this.I = dVar.f13688w0;
+                this.J = dVar.f13689x0;
+                this.K = dVar.f13690y0;
+                this.L = dVar.f13691z0;
                 this.M = dVar.A0;
                 this.N = dVar.B0;
                 this.O = b0(dVar.C0);
@@ -797,18 +797,18 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
                 super(bundle);
                 c0();
                 d dVar = d.E0;
-                r0(bundle.getBoolean(d.G0, dVar.f13679o0));
-                m0(bundle.getBoolean(d.H0, dVar.f13680p0));
-                n0(bundle.getBoolean(d.I0, dVar.f13681q0));
-                l0(bundle.getBoolean(d.U0, dVar.f13682r0));
-                p0(bundle.getBoolean(d.J0, dVar.f13683s0));
-                h0(bundle.getBoolean(d.K0, dVar.f13684t0));
-                i0(bundle.getBoolean(d.L0, dVar.f13685u0));
-                f0(bundle.getBoolean(d.M0, dVar.f13686v0));
-                g0(bundle.getBoolean(d.V0, dVar.f13687w0));
-                o0(bundle.getBoolean(d.W0, dVar.f13688x0));
-                q0(bundle.getBoolean(d.N0, dVar.f13689y0));
-                y0(bundle.getBoolean(d.O0, dVar.f13690z0));
+                r0(bundle.getBoolean(d.G0, dVar.f13680o0));
+                m0(bundle.getBoolean(d.H0, dVar.f13681p0));
+                n0(bundle.getBoolean(d.I0, dVar.f13682q0));
+                l0(bundle.getBoolean(d.U0, dVar.f13683r0));
+                p0(bundle.getBoolean(d.J0, dVar.f13684s0));
+                h0(bundle.getBoolean(d.K0, dVar.f13685t0));
+                i0(bundle.getBoolean(d.L0, dVar.f13686u0));
+                f0(bundle.getBoolean(d.M0, dVar.f13687v0));
+                g0(bundle.getBoolean(d.V0, dVar.f13688w0));
+                o0(bundle.getBoolean(d.W0, dVar.f13689x0));
+                q0(bundle.getBoolean(d.N0, dVar.f13690y0));
+                y0(bundle.getBoolean(d.O0, dVar.f13691z0));
                 k0(bundle.getBoolean(d.P0, dVar.A0));
                 j0(bundle.getBoolean(d.X0, dVar.B0));
                 this.O = new SparseArray();
@@ -819,18 +819,18 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
 
         private d(a aVar) {
             super(aVar);
-            this.f13679o0 = aVar.A;
-            this.f13680p0 = aVar.B;
-            this.f13681q0 = aVar.C;
-            this.f13682r0 = aVar.D;
-            this.f13683s0 = aVar.E;
-            this.f13684t0 = aVar.F;
-            this.f13685u0 = aVar.G;
-            this.f13686v0 = aVar.H;
-            this.f13687w0 = aVar.I;
-            this.f13688x0 = aVar.J;
-            this.f13689y0 = aVar.K;
-            this.f13690z0 = aVar.L;
+            this.f13680o0 = aVar.A;
+            this.f13681p0 = aVar.B;
+            this.f13682q0 = aVar.C;
+            this.f13683r0 = aVar.D;
+            this.f13684s0 = aVar.E;
+            this.f13685t0 = aVar.F;
+            this.f13686u0 = aVar.G;
+            this.f13687v0 = aVar.H;
+            this.f13688w0 = aVar.I;
+            this.f13689x0 = aVar.J;
+            this.f13690y0 = aVar.K;
+            this.f13691z0 = aVar.L;
             this.A0 = aVar.M;
             this.B0 = aVar.N;
             this.C0 = aVar.O;
@@ -842,16 +842,16 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
     public static final class e implements com.google.android.exoplayer2.g {
 
         /* renamed from: p  reason: collision with root package name */
-        private static final String f13691p = w0.B0(0);
+        private static final String f13692p = w0.B0(0);
 
         /* renamed from: q  reason: collision with root package name */
-        private static final String f13692q = w0.B0(1);
+        private static final String f13693q = w0.B0(1);
 
         /* renamed from: r  reason: collision with root package name */
-        private static final String f13693r = w0.B0(2);
+        private static final String f13694r = w0.B0(2);
 
         /* renamed from: s  reason: collision with root package name */
-        public static final g.a f13694s = new g.a() { // from class: ke.j
+        public static final g.a f13695s = new g.a() { // from class: ke.j
             @Override // com.google.android.exoplayer2.g.a
             public final com.google.android.exoplayer2.g a(Bundle bundle) {
                 return DefaultTrackSelector.e.a(bundle);
@@ -859,16 +859,16 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
         };
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f13695d;
+        public final int f13696d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final int[] f13696e;
+        public final int[] f13697e;
 
         /* renamed from: i  reason: collision with root package name */
-        public final int f13697i;
+        public final int f13698i;
 
         /* renamed from: o  reason: collision with root package name */
-        public final int f13698o;
+        public final int f13699o;
 
         public e(int i10, int... iArr) {
             this(i10, iArr, 0);
@@ -876,9 +876,9 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
 
         public static /* synthetic */ e a(Bundle bundle) {
             boolean z10;
-            int i10 = bundle.getInt(f13691p, -1);
-            int[] intArray = bundle.getIntArray(f13692q);
-            int i11 = bundle.getInt(f13693r, -1);
+            int i10 = bundle.getInt(f13692p, -1);
+            int[] intArray = bundle.getIntArray(f13693q);
+            int i11 = bundle.getInt(f13694r, -1);
             if (i10 >= 0 && i11 >= 0) {
                 z10 = true;
             } else {
@@ -895,7 +895,7 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
             }
             if (obj != null && e.class == obj.getClass()) {
                 e eVar = (e) obj;
-                if (this.f13695d == eVar.f13695d && Arrays.equals(this.f13696e, eVar.f13696e) && this.f13698o == eVar.f13698o) {
+                if (this.f13696d == eVar.f13696d && Arrays.equals(this.f13697e, eVar.f13697e) && this.f13699o == eVar.f13699o) {
                     return true;
                 }
             }
@@ -903,15 +903,15 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
         }
 
         public int hashCode() {
-            return (((this.f13695d * 31) + Arrays.hashCode(this.f13696e)) * 31) + this.f13698o;
+            return (((this.f13696d * 31) + Arrays.hashCode(this.f13697e)) * 31) + this.f13699o;
         }
 
         public e(int i10, int[] iArr, int i11) {
-            this.f13695d = i10;
+            this.f13696d = i10;
             int[] copyOf = Arrays.copyOf(iArr, iArr.length);
-            this.f13696e = copyOf;
-            this.f13697i = iArr.length;
-            this.f13698o = i11;
+            this.f13697e = copyOf;
+            this.f13698i = iArr.length;
+            this.f13699o = i11;
             Arrays.sort(copyOf);
         }
     }
@@ -921,46 +921,46 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
     public static class f {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Spatializer f13699a;
+        private final Spatializer f13700a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final boolean f13700b;
+        private final boolean f13701b;
 
         /* renamed from: c  reason: collision with root package name */
-        private Handler f13701c;
+        private Handler f13702c;
 
         /* renamed from: d  reason: collision with root package name */
-        private Spatializer$OnSpatializerStateChangedListener f13702d;
+        private Spatializer$OnSpatializerStateChangedListener f13703d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
         public class a implements Spatializer$OnSpatializerStateChangedListener {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ DefaultTrackSelector f13703a;
+            final /* synthetic */ DefaultTrackSelector f13704a;
 
             a(DefaultTrackSelector defaultTrackSelector) {
-                this.f13703a = defaultTrackSelector;
+                this.f13704a = defaultTrackSelector;
             }
 
             public void onSpatializerAvailableChanged(Spatializer spatializer, boolean z10) {
-                this.f13703a.Q();
+                this.f13704a.Q();
             }
 
             public void onSpatializerEnabledChanged(Spatializer spatializer, boolean z10) {
-                this.f13703a.Q();
+                this.f13704a.Q();
             }
         }
 
         private f(Spatializer spatializer) {
             boolean z10;
-            this.f13699a = spatializer;
+            this.f13700a = spatializer;
             if (spatializer.getImmersiveAudioLevel() != 0) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            this.f13700b = z10;
+            this.f13701b = z10;
         }
 
         public static f g(Context context) {
@@ -973,7 +973,7 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
 
         public boolean a(AudioAttributes audioAttributes, Format format) {
             int i10;
-            if ("audio/eac3-joc".equals(format.f12304w) && format.J == 16) {
+            if ("audio/eac3-joc".equals(format.f12305w) && format.J == 16) {
                 i10 = 12;
             } else {
                 i10 = format.J;
@@ -983,39 +983,39 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
             if (i11 != -1) {
                 channelMask.setSampleRate(i11);
             }
-            return this.f13699a.canBeSpatialized(audioAttributes.b().f12804a, channelMask.build());
+            return this.f13700a.canBeSpatialized(audioAttributes.b().f12805a, channelMask.build());
         }
 
         public void b(DefaultTrackSelector defaultTrackSelector, Looper looper) {
-            if (this.f13702d == null && this.f13701c == null) {
-                this.f13702d = new a(defaultTrackSelector);
+            if (this.f13703d == null && this.f13702c == null) {
+                this.f13703d = new a(defaultTrackSelector);
                 Handler handler = new Handler(looper);
-                this.f13701c = handler;
-                Spatializer spatializer = this.f13699a;
+                this.f13702c = handler;
+                Spatializer spatializer = this.f13700a;
                 Objects.requireNonNull(handler);
-                spatializer.addOnSpatializerStateChangedListener(new oc.s(handler), this.f13702d);
+                spatializer.addOnSpatializerStateChangedListener(new oc.s(handler), this.f13703d);
             }
         }
 
         public boolean c() {
-            return this.f13699a.isAvailable();
+            return this.f13700a.isAvailable();
         }
 
         public boolean d() {
-            return this.f13699a.isEnabled();
+            return this.f13700a.isEnabled();
         }
 
         public boolean e() {
-            return this.f13700b;
+            return this.f13701b;
         }
 
         public void f() {
-            Spatializer$OnSpatializerStateChangedListener spatializer$OnSpatializerStateChangedListener = this.f13702d;
-            if (spatializer$OnSpatializerStateChangedListener != null && this.f13701c != null) {
-                this.f13699a.removeOnSpatializerStateChangedListener(spatializer$OnSpatializerStateChangedListener);
-                ((Handler) w0.j(this.f13701c)).removeCallbacksAndMessages(null);
-                this.f13701c = null;
-                this.f13702d = null;
+            Spatializer$OnSpatializerStateChangedListener spatializer$OnSpatializerStateChangedListener = this.f13703d;
+            if (spatializer$OnSpatializerStateChangedListener != null && this.f13702c != null) {
+                this.f13700a.removeOnSpatializerStateChangedListener(spatializer$OnSpatializerStateChangedListener);
+                ((Handler) w0.j(this.f13702c)).removeCallbacksAndMessages(null);
+                this.f13702c = null;
+                this.f13703d = null;
             }
         }
     }
@@ -1025,31 +1025,31 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
     public static final class g extends h implements Comparable {
 
         /* renamed from: p  reason: collision with root package name */
-        private final int f13705p;
+        private final int f13706p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final boolean f13706q;
+        private final boolean f13707q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final boolean f13707r;
+        private final boolean f13708r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final boolean f13708s;
+        private final boolean f13709s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final int f13709t;
+        private final int f13710t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final int f13710u;
+        private final int f13711u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final int f13711v;
+        private final int f13712v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final int f13712w;
+        private final int f13713w;
 
         /* renamed from: x  reason: collision with root package name */
-        private final boolean f13713x;
+        private final boolean f13714x;
 
         public g(int i10, u0 u0Var, int i11, d dVar, int i12, String str) {
             super(i10, u0Var, i11);
@@ -1061,20 +1061,20 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
             boolean z13;
             boolean z14;
             int i14 = 0;
-            this.f13706q = DefaultTrackSelector.O(i12, false);
-            int i15 = this.f13717o.f12296o & (~dVar.F);
+            this.f13707q = DefaultTrackSelector.O(i12, false);
+            int i15 = this.f13718o.f12297o & (~dVar.F);
             if ((i15 & 1) != 0) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            this.f13707r = z10;
+            this.f13708r = z10;
             if ((i15 & 2) != 0) {
                 z11 = true;
             } else {
                 z11 = false;
             }
-            this.f13708s = z11;
+            this.f13709s = z11;
             if (dVar.D.isEmpty()) {
                 sVar = s.u("");
             } else {
@@ -1083,7 +1083,7 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
             int i16 = 0;
             while (true) {
                 if (i16 < sVar.size()) {
-                    i13 = DefaultTrackSelector.G(this.f13717o, (String) sVar.get(i16), dVar.G);
+                    i13 = DefaultTrackSelector.G(this.f13718o, (String) sVar.get(i16), dVar.G);
                     if (i13 > 0) {
                         break;
                     }
@@ -1094,32 +1094,32 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
                     break;
                 }
             }
-            this.f13709t = i16;
-            this.f13710u = i13;
-            int K = DefaultTrackSelector.K(this.f13717o.f12297p, dVar.E);
-            this.f13711v = K;
-            if ((this.f13717o.f12297p & 1088) != 0) {
+            this.f13710t = i16;
+            this.f13711u = i13;
+            int K = DefaultTrackSelector.K(this.f13718o.f12298p, dVar.E);
+            this.f13712v = K;
+            if ((this.f13718o.f12298p & 1088) != 0) {
                 z12 = true;
             } else {
                 z12 = false;
             }
-            this.f13713x = z12;
+            this.f13714x = z12;
             if (DefaultTrackSelector.S(str) == null) {
                 z13 = true;
             } else {
                 z13 = false;
             }
-            int G = DefaultTrackSelector.G(this.f13717o, str, z13);
-            this.f13712w = G;
-            if (i13 <= 0 && ((!dVar.D.isEmpty() || K <= 0) && !this.f13707r && (!this.f13708s || G <= 0))) {
+            int G = DefaultTrackSelector.G(this.f13718o, str, z13);
+            this.f13713w = G;
+            if (i13 <= 0 && ((!dVar.D.isEmpty() || K <= 0) && !this.f13708r && (!this.f13709s || G <= 0))) {
                 z14 = false;
             } else {
                 z14 = true;
             }
-            if (DefaultTrackSelector.O(i12, dVar.f13689y0) && z14) {
+            if (DefaultTrackSelector.O(i12, dVar.f13690y0) && z14) {
                 i14 = 1;
             }
-            this.f13705p = i14;
+            this.f13706p = i14;
         }
 
         public static int e(List list, List list2) {
@@ -1128,7 +1128,7 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
 
         public static s g(int i10, u0 u0Var, d dVar, int[] iArr, String str) {
             s.a k10 = s.k();
-            for (int i11 = 0; i11 < u0Var.f46496d; i11++) {
+            for (int i11 = 0; i11 < u0Var.f46497d; i11++) {
                 k10.a(new g(i10, u0Var, i11, dVar, iArr[i11], str));
             }
             return k10.k();
@@ -1136,24 +1136,24 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
 
         @Override // com.google.android.exoplayer2.trackselection.DefaultTrackSelector.h
         public int a() {
-            return this.f13705p;
+            return this.f13706p;
         }
 
         @Override // java.lang.Comparable
         /* renamed from: f */
         public int compareTo(g gVar) {
             i0 h10;
-            m g10 = m.j().g(this.f13706q, gVar.f13706q).f(Integer.valueOf(this.f13709t), Integer.valueOf(gVar.f13709t), i0.b().h()).d(this.f13710u, gVar.f13710u).d(this.f13711v, gVar.f13711v).g(this.f13707r, gVar.f13707r);
-            Boolean valueOf = Boolean.valueOf(this.f13708s);
-            Boolean valueOf2 = Boolean.valueOf(gVar.f13708s);
-            if (this.f13710u == 0) {
+            m g10 = m.j().g(this.f13707q, gVar.f13707q).f(Integer.valueOf(this.f13710t), Integer.valueOf(gVar.f13710t), i0.b().h()).d(this.f13711u, gVar.f13711u).d(this.f13712v, gVar.f13712v).g(this.f13708r, gVar.f13708r);
+            Boolean valueOf = Boolean.valueOf(this.f13709s);
+            Boolean valueOf2 = Boolean.valueOf(gVar.f13709s);
+            if (this.f13711u == 0) {
                 h10 = i0.b();
             } else {
                 h10 = i0.b().h();
             }
-            m d10 = g10.f(valueOf, valueOf2, h10).d(this.f13712w, gVar.f13712w);
-            if (this.f13711v == 0) {
-                d10 = d10.h(this.f13713x, gVar.f13713x);
+            m d10 = g10.f(valueOf, valueOf2, h10).d(this.f13713w, gVar.f13713w);
+            if (this.f13712v == 0) {
+                d10 = d10.h(this.f13714x, gVar.f13714x);
             }
             return d10.i();
         }
@@ -1170,16 +1170,16 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
     public static abstract class h {
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f13714d;
+        public final int f13715d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final u0 f13715e;
+        public final u0 f13716e;
 
         /* renamed from: i  reason: collision with root package name */
-        public final int f13716i;
+        public final int f13717i;
 
         /* renamed from: o  reason: collision with root package name */
-        public final Format f13717o;
+        public final Format f13718o;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
         public interface a {
@@ -1187,10 +1187,10 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
         }
 
         public h(int i10, u0 u0Var, int i11) {
-            this.f13714d = i10;
-            this.f13715e = u0Var;
-            this.f13716i = i11;
-            this.f13717o = u0Var.c(i11);
+            this.f13715d = i10;
+            this.f13716e = u0Var;
+            this.f13717i = i11;
+            this.f13718o = u0Var.c(i11);
         }
 
         public abstract int a();
@@ -1206,37 +1206,37 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
         private final int C;
 
         /* renamed from: p  reason: collision with root package name */
-        private final boolean f13718p;
+        private final boolean f13719p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final d f13719q;
+        private final d f13720q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final boolean f13720r;
+        private final boolean f13721r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final boolean f13721s;
+        private final boolean f13722s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final int f13722t;
+        private final int f13723t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final int f13723u;
+        private final int f13724u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final int f13724v;
+        private final int f13725v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final int f13725w;
+        private final int f13726w;
 
         /* renamed from: x  reason: collision with root package name */
-        private final boolean f13726x;
+        private final boolean f13727x;
 
         /* renamed from: y  reason: collision with root package name */
-        private final boolean f13727y;
+        private final boolean f13728y;
 
         /* renamed from: z  reason: collision with root package name */
-        private final int f13728z;
+        private final int f13729z;
 
         /* JADX WARN: Removed duplicated region for block: B:54:0x00a0  */
         /* JADX WARN: Removed duplicated region for block: B:62:0x00b2  */
@@ -1258,7 +1258,7 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
 
         /* JADX INFO: Access modifiers changed from: private */
         public static int g(i iVar, i iVar2) {
-            m g10 = m.j().g(iVar.f13721s, iVar2.f13721s).d(iVar.f13725w, iVar2.f13725w).g(iVar.f13726x, iVar2.f13726x).g(iVar.f13718p, iVar2.f13718p).g(iVar.f13720r, iVar2.f13720r).f(Integer.valueOf(iVar.f13724v), Integer.valueOf(iVar2.f13724v), i0.b().h()).g(iVar.A, iVar2.A).g(iVar.B, iVar2.B);
+            m g10 = m.j().g(iVar.f13722s, iVar2.f13722s).d(iVar.f13726w, iVar2.f13726w).g(iVar.f13727x, iVar2.f13727x).g(iVar.f13719p, iVar2.f13719p).g(iVar.f13721r, iVar2.f13721r).f(Integer.valueOf(iVar.f13725v), Integer.valueOf(iVar2.f13725v), i0.b().h()).g(iVar.A, iVar2.A).g(iVar.B, iVar2.B);
             if (iVar.A && iVar.B) {
                 g10 = g10.d(iVar.C, iVar2.C);
             }
@@ -1269,20 +1269,20 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
         public static int h(i iVar, i iVar2) {
             i0 h10;
             i0 i0Var;
-            if (iVar.f13718p && iVar.f13721s) {
-                h10 = DefaultTrackSelector.f13657k;
+            if (iVar.f13719p && iVar.f13722s) {
+                h10 = DefaultTrackSelector.f13658k;
             } else {
-                h10 = DefaultTrackSelector.f13657k.h();
+                h10 = DefaultTrackSelector.f13658k.h();
             }
             m j10 = m.j();
-            Integer valueOf = Integer.valueOf(iVar.f13722t);
-            Integer valueOf2 = Integer.valueOf(iVar2.f13722t);
-            if (!iVar.f13719q.H) {
-                i0Var = DefaultTrackSelector.f13658l;
+            Integer valueOf = Integer.valueOf(iVar.f13723t);
+            Integer valueOf2 = Integer.valueOf(iVar2.f13723t);
+            if (!iVar.f13720q.H) {
+                i0Var = DefaultTrackSelector.f13659l;
             } else {
-                i0Var = DefaultTrackSelector.f13657k.h();
+                i0Var = DefaultTrackSelector.f13658k.h();
             }
-            return j10.f(valueOf, valueOf2, i0Var).f(Integer.valueOf(iVar.f13723u), Integer.valueOf(iVar2.f13723u), h10).f(Integer.valueOf(iVar.f13722t), Integer.valueOf(iVar2.f13722t), h10).i();
+            return j10.f(valueOf, valueOf2, i0Var).f(Integer.valueOf(iVar.f13724u), Integer.valueOf(iVar2.f13724u), h10).f(Integer.valueOf(iVar.f13723t), Integer.valueOf(iVar2.f13723t), h10).i();
         }
 
         public static int i(List list, List list2) {
@@ -1333,9 +1333,9 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
 
         public static s k(int i10, u0 u0Var, d dVar, int[] iArr, int i11) {
             boolean z10;
-            int H = DefaultTrackSelector.H(u0Var, dVar.f13759t, dVar.f13760u, dVar.f13761v);
+            int H = DefaultTrackSelector.H(u0Var, dVar.f13760t, dVar.f13761u, dVar.f13762v);
             s.a k10 = s.k();
-            for (int i12 = 0; i12 < u0Var.f46496d; i12++) {
+            for (int i12 = 0; i12 < u0Var.f46497d; i12++) {
                 int f10 = u0Var.c(i12).f();
                 if (H != Integer.MAX_VALUE && (f10 == -1 || f10 > H)) {
                     z10 = false;
@@ -1348,14 +1348,14 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
         }
 
         private int l(int i10, int i11) {
-            if ((this.f13717o.f12297p & 16384) != 0 || !DefaultTrackSelector.O(i10, this.f13719q.f13689y0)) {
+            if ((this.f13718o.f12298p & 16384) != 0 || !DefaultTrackSelector.O(i10, this.f13720q.f13690y0)) {
                 return 0;
             }
-            if (!this.f13718p && !this.f13719q.f13679o0) {
+            if (!this.f13719p && !this.f13720q.f13680o0) {
                 return 0;
             }
-            if (DefaultTrackSelector.O(i10, false) && this.f13720r && this.f13718p && this.f13717o.f12300s != -1) {
-                d dVar = this.f13719q;
+            if (DefaultTrackSelector.O(i10, false) && this.f13721r && this.f13719p && this.f13718o.f12301s != -1) {
+                d dVar = this.f13720q;
                 if (!dVar.I && !dVar.H && (i10 & i11) != 0) {
                     return 2;
                 }
@@ -1366,14 +1366,14 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
 
         @Override // com.google.android.exoplayer2.trackselection.DefaultTrackSelector.h
         public int a() {
-            return this.f13728z;
+            return this.f13729z;
         }
 
         @Override // com.google.android.exoplayer2.trackselection.DefaultTrackSelector.h
         /* renamed from: m */
         public boolean d(i iVar) {
-            if (this.f13727y || w0.c(this.f13717o.f12304w, iVar.f13717o.f12304w)) {
-                if (!this.f13719q.f13682r0) {
+            if (this.f13728y || w0.c(this.f13718o.f12305w, iVar.f13718o.f12305w)) {
+                if (!this.f13720q.f13683r0) {
                     if (this.A != iVar.A || this.B != iVar.B) {
                         return false;
                     }
@@ -1396,8 +1396,8 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
             rd.w0 f10 = mappedTrackInfo.f(i10);
             if (dVar.L(i10, f10)) {
                 e K = dVar.K(i10, f10);
-                if (K != null && K.f13696e.length != 0) {
-                    aVar = new g.a(f10.b(K.f13695d), K.f13696e, K.f13698o);
+                if (K != null && K.f13697e.length != 0) {
+                    aVar = new g.a(f10.b(K.f13696d), K.f13697e, K.f13699o);
                 } else {
                     aVar = null;
                 }
@@ -1417,8 +1417,8 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
         for (int i11 = 0; i11 < d10; i11++) {
             o oVar = (o) hashMap.get(Integer.valueOf(mappedTrackInfo.e(i11)));
             if (oVar != null) {
-                if (!oVar.f31719e.isEmpty() && mappedTrackInfo.f(i11).c(oVar.f31718d) != -1) {
-                    aVar = new g.a(oVar.f31718d, si.e.l(oVar.f31719e));
+                if (!oVar.f31720e.isEmpty() && mappedTrackInfo.f(i11).c(oVar.f31719d) != -1) {
+                    aVar = new g.a(oVar.f31719d, si.e.l(oVar.f31720e));
                 } else {
                     aVar = null;
                 }
@@ -1429,20 +1429,20 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
 
     private static void F(rd.w0 w0Var, TrackSelectionParameters trackSelectionParameters, Map map) {
         o oVar;
-        for (int i10 = 0; i10 < w0Var.f46512d; i10++) {
+        for (int i10 = 0; i10 < w0Var.f46513d; i10++) {
             o oVar2 = (o) trackSelectionParameters.J.get(w0Var.b(i10));
-            if (oVar2 != null && ((oVar = (o) map.get(Integer.valueOf(oVar2.b()))) == null || (oVar.f31719e.isEmpty() && !oVar2.f31719e.isEmpty()))) {
+            if (oVar2 != null && ((oVar = (o) map.get(Integer.valueOf(oVar2.b()))) == null || (oVar.f31720e.isEmpty() && !oVar2.f31720e.isEmpty()))) {
                 map.put(Integer.valueOf(oVar2.b()), oVar2);
             }
         }
     }
 
     protected static int G(Format format, String str, boolean z10) {
-        if (!TextUtils.isEmpty(str) && str.equals(format.f12295i)) {
+        if (!TextUtils.isEmpty(str) && str.equals(format.f12296i)) {
             return 4;
         }
         String S = S(str);
-        String S2 = S(format.f12295i);
+        String S2 = S(format.f12296i);
         if (S2 != null && S != null) {
             if (!S2.startsWith(S) && !S.startsWith(S2)) {
                 if (!w0.e1(S2, "-")[0].equals(w0.e1(S, "-")[0])) {
@@ -1463,7 +1463,7 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
         int i12;
         int i13 = Integer.MAX_VALUE;
         if (i10 != Integer.MAX_VALUE && i11 != Integer.MAX_VALUE) {
-            for (int i14 = 0; i14 < u0Var.f46496d; i14++) {
+            for (int i14 = 0; i14 < u0Var.f46497d; i14++) {
                 Format c10 = u0Var.c(i14);
                 int i15 = c10.B;
                 if (i15 > 0 && (i12 = c10.C) > 0) {
@@ -1591,16 +1591,16 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
         boolean z10;
         f fVar;
         f fVar2;
-        synchronized (this.f13659d) {
+        synchronized (this.f13660d) {
             try {
-                if (this.f13663h.f13688x0) {
-                    if (!this.f13662g) {
+                if (this.f13664h.f13689x0) {
+                    if (!this.f13663g) {
                         if (format.J > 2) {
                             if (N(format)) {
-                                if (w0.f39037a >= 32 && (fVar2 = this.f13664i) != null && fVar2.e()) {
+                                if (w0.f39038a >= 32 && (fVar2 = this.f13665i) != null && fVar2.e()) {
                                 }
                             }
-                            if (w0.f39037a < 32 || (fVar = this.f13664i) == null || !fVar.e() || !this.f13664i.c() || !this.f13664i.d() || !this.f13664i.a(this.f13665j, format)) {
+                            if (w0.f39038a < 32 || (fVar = this.f13665i) == null || !fVar.e() || !this.f13665i.c() || !this.f13665i.d() || !this.f13665i.a(this.f13666j, format)) {
                                 z10 = false;
                             }
                         }
@@ -1614,7 +1614,7 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
     }
 
     private static boolean N(Format format) {
-        String str = format.f12304w;
+        String str = format.f12305w;
         if (str == null) {
             return false;
         }
@@ -1706,9 +1706,9 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
     public void Q() {
         boolean z10;
         f fVar;
-        synchronized (this.f13659d) {
+        synchronized (this.f13660d) {
             try {
-                if (this.f13663h.f13688x0 && !this.f13662g && w0.f39037a >= 32 && (fVar = this.f13664i) != null && fVar.e()) {
+                if (this.f13664h.f13689x0 && !this.f13663g && w0.f39038a >= 32 && (fVar = this.f13665i) != null && fVar.e()) {
                     z10 = true;
                 } else {
                     z10 = false;
@@ -1724,8 +1724,8 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
 
     private void R(v1 v1Var) {
         boolean z10;
-        synchronized (this.f13659d) {
-            z10 = this.f13663h.B0;
+        synchronized (this.f13660d) {
+            z10 = this.f13664h.B0;
         }
         if (z10) {
             f(v1Var);
@@ -1762,12 +1762,12 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
         while (i12 < d10) {
             if (i10 == mappedTrackInfo2.e(i12)) {
                 rd.w0 f10 = mappedTrackInfo2.f(i12);
-                for (int i13 = 0; i13 < f10.f46512d; i13++) {
+                for (int i13 = 0; i13 < f10.f46513d; i13++) {
                     u0 b10 = f10.b(i13);
                     List a10 = aVar.a(i12, b10, iArr[i12][i13]);
-                    boolean[] zArr = new boolean[b10.f46496d];
+                    boolean[] zArr = new boolean[b10.f46497d];
                     int i14 = 0;
-                    while (i14 < b10.f46496d) {
+                    while (i14 < b10.f46497d) {
                         h hVar = (h) a10.get(i14);
                         int a11 = hVar.a();
                         if (zArr[i14] || a11 == 0) {
@@ -1779,7 +1779,7 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
                                 ArrayList arrayList2 = new ArrayList();
                                 arrayList2.add(hVar);
                                 int i15 = i14 + 1;
-                                while (i15 < b10.f46496d) {
+                                while (i15 < b10.f46497d) {
                                     h hVar2 = (h) a10.get(i15);
                                     int i16 = d10;
                                     if (hVar2.a() == 2 && hVar.d(hVar2)) {
@@ -1809,21 +1809,21 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
         List list = (List) Collections.max(arrayList, comparator);
         int[] iArr2 = new int[list.size()];
         for (int i17 = 0; i17 < list.size(); i17++) {
-            iArr2[i17] = ((h) list.get(i17)).f13716i;
+            iArr2[i17] = ((h) list.get(i17)).f13717i;
         }
         h hVar3 = (h) list.get(0);
-        return Pair.create(new g.a(hVar3.f13715e, iArr2), Integer.valueOf(hVar3.f13714d));
+        return Pair.create(new g.a(hVar3.f13716e, iArr2), Integer.valueOf(hVar3.f13715d));
     }
 
     private void c0(d dVar) {
         boolean equals;
         oe.a.e(dVar);
-        synchronized (this.f13659d) {
-            equals = this.f13663h.equals(dVar);
-            this.f13663h = dVar;
+        synchronized (this.f13660d) {
+            equals = this.f13664h.equals(dVar);
+            this.f13664h = dVar;
         }
         if (!equals) {
-            if (dVar.f13688x0 && this.f13660e == null) {
+            if (dVar.f13689x0 && this.f13661e == null) {
                 y.i("DefaultTrackSelector", "Audio channel count constraints cannot be applied without reference to Context. Build the track selector instance with one of the non-deprecated constructors that take a Context argument.");
             }
             e();
@@ -1865,8 +1865,8 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
 
     public d J() {
         d dVar;
-        synchronized (this.f13659d) {
-            dVar = this.f13663h;
+        synchronized (this.f13660d) {
+            dVar = this.f13664h;
         }
         return dVar;
     }
@@ -1887,7 +1887,7 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
             str = null;
         } else {
             Object obj = V.first;
-            str = ((g.a) obj).f13818a.c(((g.a) obj).f13819b[0]).f12295i;
+            str = ((g.a) obj).f13819a.c(((g.a) obj).f13820b[0]).f12296i;
         }
         Pair X = X(mappedTrackInfo, iArr, dVar, str);
         if (X != null) {
@@ -1907,7 +1907,7 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
         int i10 = 0;
         while (true) {
             if (i10 < mappedTrackInfo.d()) {
-                if (2 == mappedTrackInfo.e(i10) && mappedTrackInfo.f(i10).f46512d > 0) {
+                if (2 == mappedTrackInfo.e(i10) && mappedTrackInfo.f(i10).f46513d > 0) {
                     z10 = true;
                     break;
                 }
@@ -1933,11 +1933,11 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
         u0 u0Var = null;
         c cVar = null;
         int i11 = 0;
-        for (int i12 = 0; i12 < w0Var.f46512d; i12++) {
+        for (int i12 = 0; i12 < w0Var.f46513d; i12++) {
             u0 b10 = w0Var.b(i12);
             int[] iArr2 = iArr[i12];
-            for (int i13 = 0; i13 < b10.f46496d; i13++) {
-                if (O(iArr2[i13], dVar.f13689y0)) {
+            for (int i13 = 0; i13 < b10.f46497d; i13++) {
+                if (O(iArr2[i13], dVar.f13690y0)) {
                     c cVar2 = new c(b10.c(i13), iArr2[i13]);
                     if (cVar == null || cVar2.compareTo(cVar) > 0) {
                         u0Var = b10;
@@ -2014,9 +2014,9 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
     @Override // ke.q
     public void i() {
         f fVar;
-        synchronized (this.f13659d) {
+        synchronized (this.f13660d) {
             try {
-                if (w0.f39037a >= 32 && (fVar = this.f13664i) != null) {
+                if (w0.f39038a >= 32 && (fVar = this.f13665i) != null) {
                     fVar.f();
                 }
             } catch (Throwable th2) {
@@ -2029,9 +2029,9 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
     @Override // ke.q
     public void k(AudioAttributes audioAttributes) {
         boolean equals;
-        synchronized (this.f13659d) {
-            equals = this.f13665j.equals(audioAttributes);
-            this.f13665j = audioAttributes;
+        synchronized (this.f13660d) {
+            equals = this.f13666j.equals(audioAttributes);
+            this.f13666j = audioAttributes;
         }
         if (!equals) {
             Q();
@@ -2043,10 +2043,10 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
         d dVar;
         r0 r0Var;
         f fVar;
-        synchronized (this.f13659d) {
+        synchronized (this.f13660d) {
             try {
-                dVar = this.f13663h;
-                if (dVar.f13688x0 && w0.f39037a >= 32 && (fVar = this.f13664i) != null) {
+                dVar = this.f13664h;
+                if (dVar.f13689x0 && w0.f39038a >= 32 && (fVar = this.f13665i) != null) {
                     fVar.b(this, (Looper) oe.a.i(Looper.myLooper()));
                 }
             } catch (Throwable th2) {
@@ -2063,18 +2063,18 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
                 U[i10] = null;
             }
         }
-        com.google.android.exoplayer2.trackselection.g[] a10 = this.f13661f.a(U, b(), bVar, timeline);
+        com.google.android.exoplayer2.trackselection.g[] a10 = this.f13662f.a(U, b(), bVar, timeline);
         r0[] r0VarArr = new r0[d10];
         for (int i11 = 0; i11 < d10; i11++) {
             int e11 = mappedTrackInfo.e(i11);
             if (!dVar.J(i11) && !dVar.K.contains(Integer.valueOf(e11)) && (mappedTrackInfo.e(i11) == -2 || a10[i11] != null)) {
-                r0Var = r0.f36269b;
+                r0Var = r0.f36270b;
             } else {
                 r0Var = null;
             }
             r0VarArr[i11] = r0Var;
         }
-        if (dVar.f13690z0) {
+        if (dVar.f13691z0) {
             P(mappedTrackInfo, iArr, r0VarArr, a10);
         }
         return Pair.create(r0VarArr, a10);
@@ -2093,21 +2093,21 @@ public class DefaultTrackSelector extends MappingTrackSelector implements w1.a {
     }
 
     private DefaultTrackSelector(TrackSelectionParameters trackSelectionParameters, g.b bVar, Context context) {
-        this.f13659d = new Object();
-        this.f13660e = context != null ? context.getApplicationContext() : null;
-        this.f13661f = bVar;
+        this.f13660d = new Object();
+        this.f13661e = context != null ? context.getApplicationContext() : null;
+        this.f13662f = bVar;
         if (trackSelectionParameters instanceof d) {
-            this.f13663h = (d) trackSelectionParameters;
+            this.f13664h = (d) trackSelectionParameters;
         } else {
-            this.f13663h = (context == null ? d.E0 : d.I(context)).H().e0(trackSelectionParameters).A();
+            this.f13664h = (context == null ? d.E0 : d.I(context)).H().e0(trackSelectionParameters).A();
         }
-        this.f13665j = AudioAttributes.f12791r;
+        this.f13666j = AudioAttributes.f12792r;
         boolean z10 = context != null && w0.H0(context);
-        this.f13662g = z10;
-        if (!z10 && context != null && w0.f39037a >= 32) {
-            this.f13664i = f.g(context);
+        this.f13663g = z10;
+        if (!z10 && context != null && w0.f39038a >= 32) {
+            this.f13665i = f.g(context);
         }
-        if (this.f13663h.f13688x0 && context == null) {
+        if (this.f13664h.f13689x0 && context == null) {
             y.i("DefaultTrackSelector", "Audio channel count constraints cannot be applied without reference to Context. Build the track selector instance with one of the non-deprecated constructors that take a Context argument.");
         }
     }

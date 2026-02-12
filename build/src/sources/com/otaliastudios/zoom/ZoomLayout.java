@@ -57,7 +57,7 @@ public class ZoomLayout extends FrameLayout implements ViewTreeObserver.OnGlobal
     static {
         String TAG2 = ZoomLayout.class.getSimpleName();
         TAG = TAG2;
-        ZoomLogger.a aVar = ZoomLogger.f18182b;
+        ZoomLogger.a aVar = ZoomLogger.f18183b;
         Intrinsics.checkNotNullExpressionValue(TAG2, "TAG");
         LOG = aVar.a(TAG2);
     }
@@ -65,28 +65,28 @@ public class ZoomLayout extends FrameLayout implements ViewTreeObserver.OnGlobal
     private ZoomLayout(Context context, AttributeSet attributeSet, int i10, ZoomEngine zoomEngine) {
         super(context, attributeSet, i10);
         this.engine = zoomEngine;
-        TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, b.f18188a, i10, 0);
+        TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, b.f18189a, i10, 0);
         Intrinsics.checkNotNullExpressionValue(obtainStyledAttributes, "context.theme.obtainStyledAttributes(attrs, R.styleable.ZoomEngine, defStyleAttr, 0)");
-        boolean z10 = obtainStyledAttributes.getBoolean(b.f18201n, true);
-        boolean z11 = obtainStyledAttributes.getBoolean(b.f18202o, true);
-        boolean z12 = obtainStyledAttributes.getBoolean(b.f18194g, true);
-        boolean z13 = obtainStyledAttributes.getBoolean(b.f18208u, true);
-        boolean z14 = obtainStyledAttributes.getBoolean(b.f18200m, true);
-        boolean z15 = obtainStyledAttributes.getBoolean(b.f18209v, true);
-        boolean z16 = obtainStyledAttributes.getBoolean(b.f18192e, true);
-        boolean z17 = obtainStyledAttributes.getBoolean(b.f18203p, true);
-        boolean z18 = obtainStyledAttributes.getBoolean(b.f18199l, true);
-        boolean z19 = obtainStyledAttributes.getBoolean(b.f18207t, true);
-        boolean z20 = obtainStyledAttributes.getBoolean(b.f18204q, true);
-        boolean z21 = obtainStyledAttributes.getBoolean(b.f18190c, true);
-        boolean z22 = obtainStyledAttributes.getBoolean(b.f18193f, false);
-        float f10 = obtainStyledAttributes.getFloat(b.f18197j, 0.8f);
-        float f11 = obtainStyledAttributes.getFloat(b.f18195h, 2.5f);
-        int integer = obtainStyledAttributes.getInteger(b.f18198k, 0);
-        int integer2 = obtainStyledAttributes.getInteger(b.f18196i, 0);
-        int integer3 = obtainStyledAttributes.getInteger(b.f18205r, 0);
-        int i11 = obtainStyledAttributes.getInt(b.f18206s, 0);
-        int i12 = obtainStyledAttributes.getInt(b.f18189b, 51);
+        boolean z10 = obtainStyledAttributes.getBoolean(b.f18202n, true);
+        boolean z11 = obtainStyledAttributes.getBoolean(b.f18203o, true);
+        boolean z12 = obtainStyledAttributes.getBoolean(b.f18195g, true);
+        boolean z13 = obtainStyledAttributes.getBoolean(b.f18209u, true);
+        boolean z14 = obtainStyledAttributes.getBoolean(b.f18201m, true);
+        boolean z15 = obtainStyledAttributes.getBoolean(b.f18210v, true);
+        boolean z16 = obtainStyledAttributes.getBoolean(b.f18193e, true);
+        boolean z17 = obtainStyledAttributes.getBoolean(b.f18204p, true);
+        boolean z18 = obtainStyledAttributes.getBoolean(b.f18200l, true);
+        boolean z19 = obtainStyledAttributes.getBoolean(b.f18208t, true);
+        boolean z20 = obtainStyledAttributes.getBoolean(b.f18205q, true);
+        boolean z21 = obtainStyledAttributes.getBoolean(b.f18191c, true);
+        boolean z22 = obtainStyledAttributes.getBoolean(b.f18194f, false);
+        float f10 = obtainStyledAttributes.getFloat(b.f18198j, 0.8f);
+        float f11 = obtainStyledAttributes.getFloat(b.f18196h, 2.5f);
+        int integer = obtainStyledAttributes.getInteger(b.f18199k, 0);
+        int integer2 = obtainStyledAttributes.getInteger(b.f18197i, 0);
+        int integer3 = obtainStyledAttributes.getInteger(b.f18206r, 0);
+        int i11 = obtainStyledAttributes.getInt(b.f18207s, 0);
+        int i12 = obtainStyledAttributes.getInt(b.f18190b, 51);
         obtainStyledAttributes.recycle();
         zoomEngine.W(this);
         zoomEngine.l(new a());
@@ -104,7 +104,7 @@ public class ZoomLayout extends FrameLayout implements ViewTreeObserver.OnGlobal
         setTwoFingersScrollEnabled(z19);
         setThreeFingersScrollEnabled(z20);
         setAllowFlingInOverscroll(z21);
-        setAnimationDuration(obtainStyledAttributes.getInt(b.f18191d, 280));
+        setAnimationDuration(obtainStyledAttributes.getInt(b.f18192d, 280));
         setMinZoom(f10, integer);
         setMaxZoom(f11, integer2);
         setHasClickableChildren(z22);

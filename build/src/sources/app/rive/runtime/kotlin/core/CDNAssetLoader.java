@@ -68,7 +68,7 @@ public class CDNAssetLoader extends FileAssetLoader {
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 invoke((byte[]) obj);
-                return Unit.f31987a;
+                return Unit.f31988a;
             }
 
             public final void invoke(@NotNull byte[] bytes) {

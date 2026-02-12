@@ -7,7 +7,7 @@ import kotlin.jvm.internal.Lambda;
 public final class r implements o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f41226a;
+    private final String f41227a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a extends Lambda implements Function0 {
@@ -25,20 +25,20 @@ public final class r implements o {
     static final class b extends Lambda implements Function0 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ CharSequence f41229e;
+        final /* synthetic */ CharSequence f41230e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ int f41230i;
+        final /* synthetic */ int f41231i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ int f41231o;
+        final /* synthetic */ int f41232o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(CharSequence charSequence, int i10, int i11) {
             super(0);
-            this.f41229e = charSequence;
-            this.f41230i = i10;
-            this.f41231o = i11;
+            this.f41230e = charSequence;
+            this.f41231i = i10;
+            this.f41232o = i11;
         }
 
         @Override // kotlin.jvm.functions.Function0
@@ -47,16 +47,16 @@ public final class r implements o {
             sb2.append("Expected ");
             sb2.append(r.this.b());
             sb2.append(" but got ");
-            CharSequence charSequence = this.f41229e;
-            int i10 = this.f41230i;
-            sb2.append(charSequence.subSequence(i10, this.f41231o + i10 + 1).toString());
+            CharSequence charSequence = this.f41230e;
+            int i10 = this.f41231i;
+            sb2.append(charSequence.subSequence(i10, this.f41232o + i10 + 1).toString());
             return sb2.toString();
         }
     }
 
     public r(String string) {
         Intrinsics.checkNotNullParameter(string, "string");
-        this.f41226a = string;
+        this.f41227a = string;
         if (string.length() > 0) {
             if (!lt.d.b(string.charAt(0))) {
                 if (!lt.d.b(string.charAt(string.length() - 1))) {
@@ -72,23 +72,23 @@ public final class r implements o {
     @Override // ot.o
     public Object a(Object obj, CharSequence input, int i10) {
         Intrinsics.checkNotNullParameter(input, "input");
-        if (this.f41226a.length() + i10 > input.length()) {
-            return k.f41215a.a(i10, new a());
+        if (this.f41227a.length() + i10 > input.length()) {
+            return k.f41216a.a(i10, new a());
         }
-        int length = this.f41226a.length();
+        int length = this.f41227a.length();
         for (int i11 = 0; i11 < length; i11++) {
-            if (input.charAt(i10 + i11) != this.f41226a.charAt(i11)) {
-                return k.f41215a.a(i10, new b(input, i10, i11));
+            if (input.charAt(i10 + i11) != this.f41227a.charAt(i11)) {
+                return k.f41216a.a(i10, new b(input, i10, i11));
             }
         }
-        return k.f41215a.b(i10 + this.f41226a.length());
+        return k.f41216a.b(i10 + this.f41227a.length());
     }
 
     public final String b() {
-        return this.f41226a;
+        return this.f41227a;
     }
 
     public String toString() {
-        return '\'' + this.f41226a + '\'';
+        return '\'' + this.f41227a + '\'';
     }
 }

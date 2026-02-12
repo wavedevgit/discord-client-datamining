@@ -140,11 +140,11 @@ public final class f extends ReactViewGroup implements h {
                 c cVar = this.f866i;
                 if (cVar != null) {
                     cVar.f(event, eventDispatcher, true);
-                    Unit unit = Unit.f31987a;
+                    Unit unit = Unit.f31988a;
                 }
             } catch (RuntimeException e10) {
-                sm.a.f48171a.e(g.a(), "Can not handle touch event", e10);
-                Unit unit2 = Unit.f31987a;
+                sm.a.f48172a.e(g.a(), "Can not handle touch event", e10);
+                Unit unit2 = Unit.f31988a;
             }
         }
         return super.onInterceptTouchEvent(event);
@@ -167,11 +167,11 @@ public final class f extends ReactViewGroup implements h {
                 c cVar = this.f866i;
                 if (cVar != null) {
                     cVar.f(event, eventDispatcher, false);
-                    Unit unit = Unit.f31987a;
+                    Unit unit = Unit.f31988a;
                 }
             } catch (RuntimeException e10) {
-                sm.a.f48171a.e(g.a(), "Can not handle touch event", e10);
-                Unit unit2 = Unit.f31987a;
+                sm.a.f48172a.e(g.a(), "Can not handle touch event", e10);
+                Unit unit2 = Unit.f31988a;
             }
         }
         super.onTouchEvent(event);

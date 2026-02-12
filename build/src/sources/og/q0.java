@@ -3,17 +3,17 @@ package og;
 final class q0 extends u0 {
 
     /* renamed from: p  reason: collision with root package name */
-    final /* synthetic */ y0 f39588p;
+    final /* synthetic */ y0 f39589p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public q0(y0 y0Var) {
         super(y0Var, null);
-        this.f39588p = y0Var;
+        this.f39589p = y0Var;
     }
 
     @Override // og.u0
     final /* bridge */ /* synthetic */ Object a(int i10) {
-        return new w0(this.f39588p, i10);
+        return new w0(this.f39589p, i10);
     }
 }

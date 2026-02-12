@@ -11,30 +11,30 @@ import java.nio.charset.Charset;
 public abstract class r1 {
 
     /* renamed from: a  reason: collision with root package name */
-    static String f28556a;
+    static String f28557a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Charset f28557b = Charset.forName("UTF-8");
+    private static final Charset f28558b = Charset.forName("UTF-8");
 
     /* renamed from: c  reason: collision with root package name */
-    protected static final io.sentry.util.a f28558c = new io.sentry.util.a();
+    protected static final io.sentry.util.a f28559c = new io.sentry.util.a();
 
     public static String a(Context context) {
-        io.sentry.a1 a10 = f28558c.a();
+        io.sentry.a1 a10 = f28559c.a();
         try {
-            if (f28556a == null) {
+            if (f28557a == null) {
                 File file = new File(context.getFilesDir(), "INSTALLATION");
                 if (!file.exists()) {
                     String c10 = c(file);
-                    f28556a = c10;
+                    f28557a = c10;
                     if (a10 != null) {
                         a10.close();
                     }
                     return c10;
                 }
-                f28556a = b(file);
+                f28557a = b(file);
             }
-            String str = f28556a;
+            String str = f28557a;
             if (a10 != null) {
                 a10.close();
             }
@@ -56,7 +56,7 @@ public abstract class r1 {
         try {
             byte[] bArr = new byte[(int) randomAccessFile.length()];
             randomAccessFile.readFully(bArr);
-            String str = new String(bArr, f28557b);
+            String str = new String(bArr, f28558b);
             randomAccessFile.close();
             return str;
         } catch (Throwable th2) {
@@ -73,7 +73,7 @@ public abstract class r1 {
         FileOutputStream fileOutputStream = new FileOutputStream(file);
         try {
             String a10 = x7.a();
-            fileOutputStream.write(a10.getBytes(f28557b));
+            fileOutputStream.write(a10.getBytes(f28558b));
             fileOutputStream.flush();
             fileOutputStream.close();
             return a10;

@@ -1,103 +1,193 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = module;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var1 = function arg0, arg1() {
-        _fun45711: for (var _fun45711_ip = 0;;) switch (_fun45711_ip) {
-            case 0:
-                var0 = arg0;
-                var8 = arg1;
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var7 = 0;
-                var1 = var1[var7];
-                var6 = undefined;
-                var2 = var2.bind(var6)(var1);
-                var1 = var2.default;
-                var1 = var1.bind(var2)(var0);
-                var4 = 'object';
-                if (!(var4 == var1)) {
-                    _fun45711_ip = 193;
-                    continue _fun45711
-                }
-            case 51:
-                if (!var0) {
-                    _fun45711_ip = 193;
-                    continue _fun45711
-                }
-            case 57:
-                var2 = global;
-                var1 = var2.Symbol;
-                var1 = var1.toPrimitive;
-                var5 = var0[var1];
-                if (!(var6 === var5)) {
-                    _fun45711_ip = 108;
-                    continue _fun45711
-                }
-            case 79:
-                var1 = 'string';
-                if (!(var1 !== var8)) {
-                    _fun45711_ip = 95;
-                    continue _fun45711
-                }
-            case 87:
-                var1 = var2.Number;
-                _fun45711_ip = 101;
-                continue _fun45711;
-            case 95:
-                var1 = var2.String;
-            case 101:
-                var1 = var1.bind(var6)(var0);
-                return var1;
-            case 108:
-                var1 = var5.call;
-                if (var8) {
-                    _fun45711_ip = 120;
-                    continue _fun45711
-                }
-            case 116:
-                var8 = 'default';
-            case 120:
-                var1 = var1.bind(var5)(var0, var8);
-                var5 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var3 = var3[var7];
-                var5 = var5.bind(var6)(var3);
-                var3 = var5.default;
-                var3 = var3.bind(var5)(var1);
-                if (!(var4 == var3)) {
-                    _fun45711_ip = 191;
-                    continue _fun45711
-                }
-            case 157:
-                var4 = var2.TypeError;
-                var2 = var4.prototype;
-                var3 = Object.create(var2, {
-                    constructor: {
-                        value: var4
-                    }
-                });
-                var11 = '@@toPrimitive must return a primitive value.';
-                var12 = var3;
-                var2 = new var12[var4](var11, var10);
-                var2 = var2 instanceof Object ? var2 : var3;
-                throw var2;
-            case 191:
-                return var1;
-            case 193:
-                return var0;
-        }
-    };
-    var0.exports = var1;
-    var2 = var0.exports;
-    var1 = true;
-    var2.__esModule = var1;
-    var1 = var0.exports;
-    var0 = var0.exports;
-    var1.default = var0;
+    var2 = exports;
+    var4 = dependencyMap;
+    var0 = global;
+    var _closure1_slot0 = var0;
+    var0 = global;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var3);
+    var0 = 0;
+    var5 = var4[var0];
+    var3 = metroImportDefault;
     var0 = undefined;
+    var3 = var3.bind(var0)(var5);
+    var _closure1_slot1 = var3;
+    var3 = 1;
+    var4 = var4[var3];
+    var3 = require;
+    var3 = var3.bind(var0)(var4);
+    var4 = var3.useCallback;
+    var _closure1_slot2 = var4;
+    var4 = var3.useEffect;
+    var _closure1_slot3 = var4;
+    var3 = var3.useState;
+    var _closure1_slot4 = var3;
+    var3 = function() {
+        var3 = _closure1_slot4;
+        var4 = undefined;
+        var0 = function() { // Environment: var1
+            var0 = global;
+            var0 = var0.Set;
+            var1 = var0.prototype;
+            var1 = Object.create(var1, {
+                constructor: {
+                    value: var0
+                }
+            });
+            var2 = var1;
+            var0 = new var2[var0](var1);
+            var0 = var0 instanceof Object ? var0 : var1;
+            return var0;
+        };
+        var5 = var3.bind(var4)(var0);
+        var3 = _closure1_slot1;
+        var0 = 1;
+        var3 = var3.bind(var4)(var5, var0);
+        var0 = 0;
+        var5 = var3[var0];
+        var _closure2_slot0 = var5;
+        var6 = _closure1_slot3;
+        var3 = new Array(1);
+        var3[0] = var5;
+        var0 = function() { // Environment: var1
+            var0 = function() { // Environment: var0
+                var1 = _closure2_slot0;
+                var2 = var1.forEach;
+                var0 = function(arg0) { // Environment: var0
+                    var2 = _closure1_slot0;
+                    var1 = var2.clearTimeout;
+                    var0 = arg0;
+                    var0 = var1.bind(var2)(var0);
+                    return var0;
+                };
+                var0 = var2.bind(var1)(var0);
+                var0 = var1.clear;
+                var0 = var0.bind(var1)();
+                var0 = undefined;
+                return var0;
+            };
+            return var0;
+        };
+        var0 = var6.bind(var4)(var0, var3);
+        var0 = {};
+        var3 = _closure1_slot2;
+        var2 = new Array(1);
+        var2[0] = var5;
+        var1 = function(arg0, arg1) { // Environment: var1
+            var1 = arg0;
+            var _closure3_slot0 = var1;
+            var4 = _closure1_slot0;
+            var3 = var4.setTimeout;
+            var2 = function() { // Environment: var0
+                var3 = _closure2_slot0;
+                var2 = var3.delete;
+                var1 = _closure3_slot1;
+                var1 = var2.bind(var3)(var1);
+                var1 = _closure3_slot0;
+                var0 = undefined;
+                var1 = var1.bind(var0)();
+                return var0;
+            };
+            var1 = arg1;
+            var2 = var3.bind(var4)(var2, var1);
+            var _closure3_slot1 = var2;
+            var1 = _closure2_slot0;
+            var0 = var1.add;
+            var0 = var0.bind(var1)(var2);
+            var0 = undefined;
+            return var0;
+        };
+        var1 = var3.bind(var4)(var1, var2);
+        var0.setTimeout = var1;
+        return var0;
+    };
+    var2.useUnmountAwareTimeout = var3;
+    var1 = function() {
+        var3 = _closure1_slot4;
+        var4 = undefined;
+        var0 = function() { // Environment: var1
+            var0 = global;
+            var0 = var0.Set;
+            var1 = var0.prototype;
+            var1 = Object.create(var1, {
+                constructor: {
+                    value: var0
+                }
+            });
+            var2 = var1;
+            var0 = new var2[var0](var1);
+            var0 = var0 instanceof Object ? var0 : var1;
+            return var0;
+        };
+        var5 = var3.bind(var4)(var0);
+        var3 = _closure1_slot1;
+        var0 = 1;
+        var3 = var3.bind(var4)(var5, var0);
+        var0 = 0;
+        var5 = var3[var0];
+        var _closure2_slot0 = var5;
+        var6 = _closure1_slot3;
+        var3 = new Array(1);
+        var3[0] = var5;
+        var0 = function() { // Environment: var1
+            var0 = function() { // Environment: var0
+                var1 = _closure2_slot0;
+                var2 = var1.forEach;
+                var0 = function(arg0) { // Environment: var0
+                    var0 = global;
+                    var2 = var0.cancelAnimationFrame;
+                    var1 = undefined;
+                    var0 = arg0;
+                    var0 = var2.bind(var1)(var0);
+                    return var0;
+                };
+                var0 = var2.bind(var1)(var0);
+                var0 = var1.clear;
+                var0 = var0.bind(var1)();
+                var0 = undefined;
+                return var0;
+            };
+            return var0;
+        };
+        var0 = var6.bind(var4)(var0, var3);
+        var0 = {};
+        var3 = _closure1_slot2;
+        var2 = new Array(1);
+        var2[0] = var5;
+        var1 = function(arg0) { // Environment: var1
+            var1 = arg0;
+            var _closure3_slot0 = var1;
+            var3 = _closure1_slot0;
+            var2 = var3.requestAnimationFrame;
+            var1 = function(arg0) { // Environment: var0
+                var3 = _closure2_slot0;
+                var2 = var3.delete;
+                var1 = _closure3_slot1;
+                var1 = var2.bind(var3)(var1);
+                var2 = _closure3_slot0;
+                var0 = undefined;
+                var1 = arg0;
+                var1 = var2.bind(var0)(var1);
+                return var0;
+            };
+            var2 = var2.bind(var3)(var1);
+            var _closure3_slot1 = var2;
+            var1 = _closure2_slot0;
+            var0 = var1.add;
+            var0 = var0.bind(var1)(var2);
+            var0 = undefined;
+            return var0;
+        };
+        var1 = var3.bind(var4)(var1, var2);
+        var0.requestAnimationFrame = var1;
+        return var0;
+    };
+    var2.useUnmountAwareAnimationFrame = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5125]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5078, 31]);

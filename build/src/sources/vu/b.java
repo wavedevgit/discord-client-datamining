@@ -25,16 +25,16 @@ import wu.l;
 public final class b extends h {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f51988f = new a(null);
+    public static final a f51989f = new a(null);
 
     /* renamed from: g  reason: collision with root package name */
-    private static final boolean f51989g;
+    private static final boolean f51990g;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f51990d;
+    private final List f51991d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final wu.h f51991e;
+    private final wu.h f51992e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -50,7 +50,7 @@ public final class b extends h {
         }
 
         public final boolean b() {
-            return b.f51989g;
+            return b.f51990g;
         }
 
         private a() {
@@ -62,23 +62,23 @@ public final class b extends h {
     public static final class C0716b implements yu.e {
 
         /* renamed from: a  reason: collision with root package name */
-        private final X509TrustManager f51992a;
+        private final X509TrustManager f51993a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Method f51993b;
+        private final Method f51994b;
 
         public C0716b(X509TrustManager trustManager, Method findByIssuerAndSignatureMethod) {
             Intrinsics.checkNotNullParameter(trustManager, "trustManager");
             Intrinsics.checkNotNullParameter(findByIssuerAndSignatureMethod, "findByIssuerAndSignatureMethod");
-            this.f51992a = trustManager;
-            this.f51993b = findByIssuerAndSignatureMethod;
+            this.f51993a = trustManager;
+            this.f51994b = findByIssuerAndSignatureMethod;
         }
 
         @Override // yu.e
         public X509Certificate a(X509Certificate cert) {
             Intrinsics.checkNotNullParameter(cert, "cert");
             try {
-                Object invoke = this.f51993b.invoke(this.f51992a, cert);
+                Object invoke = this.f51994b.invoke(this.f51993a, cert);
                 Intrinsics.checkNotNull(invoke, "null cannot be cast to non-null type java.security.cert.TrustAnchor");
                 return ((TrustAnchor) invoke).getTrustedCert();
             } catch (IllegalAccessException e10) {
@@ -96,45 +96,45 @@ public final class b extends h {
                 return false;
             }
             C0716b c0716b = (C0716b) obj;
-            if (Intrinsics.areEqual(this.f51992a, c0716b.f51992a) && Intrinsics.areEqual(this.f51993b, c0716b.f51993b)) {
+            if (Intrinsics.areEqual(this.f51993a, c0716b.f51993a) && Intrinsics.areEqual(this.f51994b, c0716b.f51994b)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return (this.f51992a.hashCode() * 31) + this.f51993b.hashCode();
+            return (this.f51993a.hashCode() * 31) + this.f51994b.hashCode();
         }
 
         public String toString() {
-            return "CustomTrustRootIndex(trustManager=" + this.f51992a + ", findByIssuerAndSignatureMethod=" + this.f51993b + ')';
+            return "CustomTrustRootIndex(trustManager=" + this.f51993a + ", findByIssuerAndSignatureMethod=" + this.f51994b + ')';
         }
     }
 
     static {
         boolean z10 = false;
-        if (h.f52015a.h() && Build.VERSION.SDK_INT < 30) {
+        if (h.f52016a.h() && Build.VERSION.SDK_INT < 30) {
             z10 = true;
         }
-        f51989g = z10;
+        f51990g = z10;
     }
 
     public b() {
-        k[] kVarArr = {l.a.b(l.f54007j, null, 1, null), new j(wu.f.f53989f.d()), new j(i.f54003a.a()), new j(wu.g.f53997a.a())};
+        k[] kVarArr = {l.a.b(l.f54008j, null, 1, null), new j(wu.f.f53990f.d()), new j(i.f54004a.a()), new j(wu.g.f53998a.a())};
         ArrayList arrayList = new ArrayList();
         for (Object obj : CollectionsKt.q(kVarArr)) {
             if (((k) obj).a()) {
                 arrayList.add(obj);
             }
         }
-        this.f51990d = arrayList;
-        this.f51991e = wu.h.f53999d.a();
+        this.f51991d = arrayList;
+        this.f51992e = wu.h.f54000d.a();
     }
 
     @Override // vu.h
     public yu.c c(X509TrustManager trustManager) {
         Intrinsics.checkNotNullParameter(trustManager, "trustManager");
-        wu.b a10 = wu.b.f53982d.a(trustManager);
+        wu.b a10 = wu.b.f53983d.a(trustManager);
         if (a10 != null) {
             return a10;
         }
@@ -159,7 +159,7 @@ public final class b extends h {
         Object obj;
         Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
         Intrinsics.checkNotNullParameter(protocols, "protocols");
-        Iterator it = this.f51990d.iterator();
+        Iterator it = this.f51991d.iterator();
         while (true) {
             if (it.hasNext()) {
                 obj = it.next();
@@ -195,7 +195,7 @@ public final class b extends h {
     public String h(SSLSocket sslSocket) {
         Object obj;
         Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-        Iterator it = this.f51990d.iterator();
+        Iterator it = this.f51991d.iterator();
         while (true) {
             if (it.hasNext()) {
                 obj = it.next();
@@ -217,7 +217,7 @@ public final class b extends h {
     @Override // vu.h
     public Object i(String closer) {
         Intrinsics.checkNotNullParameter(closer, "closer");
-        return this.f51991e.a(closer);
+        return this.f51992e.a(closer);
     }
 
     @Override // vu.h
@@ -229,7 +229,7 @@ public final class b extends h {
     @Override // vu.h
     public void m(String message, Object obj) {
         Intrinsics.checkNotNullParameter(message, "message");
-        if (!this.f51991e.b(obj)) {
+        if (!this.f51992e.b(obj)) {
             h.l(this, message, 5, null, 4, null);
         }
     }

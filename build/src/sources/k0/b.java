@@ -7,22 +7,22 @@ import k0.r;
 final class b extends r.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final l0 f31427a;
+    private final l0 f31428a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final l0 f31428b;
+    private final l0 f31429b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f31429c;
+    private final List f31430c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(l0 l0Var, l0 l0Var2, List list) {
         if (l0Var != null) {
-            this.f31427a = l0Var;
+            this.f31428a = l0Var;
             if (l0Var2 != null) {
-                this.f31428b = l0Var2;
+                this.f31429b = l0Var2;
                 if (list != null) {
-                    this.f31429c = list;
+                    this.f31430c = list;
                     return;
                 }
                 throw new NullPointerException("Null outConfigs");
@@ -34,17 +34,17 @@ final class b extends r.b {
 
     @Override // k0.r.b
     public List a() {
-        return this.f31429c;
+        return this.f31430c;
     }
 
     @Override // k0.r.b
     public l0 b() {
-        return this.f31427a;
+        return this.f31428a;
     }
 
     @Override // k0.r.b
     public l0 c() {
-        return this.f31428b;
+        return this.f31429b;
     }
 
     public boolean equals(Object obj) {
@@ -53,7 +53,7 @@ final class b extends r.b {
         }
         if (obj instanceof r.b) {
             r.b bVar = (r.b) obj;
-            if (this.f31427a.equals(bVar.b()) && this.f31428b.equals(bVar.c()) && this.f31429c.equals(bVar.a())) {
+            if (this.f31428a.equals(bVar.b()) && this.f31429b.equals(bVar.c()) && this.f31430c.equals(bVar.a())) {
                 return true;
             }
         }
@@ -61,10 +61,10 @@ final class b extends r.b {
     }
 
     public int hashCode() {
-        return ((((this.f31427a.hashCode() ^ 1000003) * 1000003) ^ this.f31428b.hashCode()) * 1000003) ^ this.f31429c.hashCode();
+        return ((((this.f31428a.hashCode() ^ 1000003) * 1000003) ^ this.f31429b.hashCode()) * 1000003) ^ this.f31430c.hashCode();
     }
 
     public String toString() {
-        return "In{primarySurfaceEdge=" + this.f31427a + ", secondarySurfaceEdge=" + this.f31428b + ", outConfigs=" + this.f31429c + "}";
+        return "In{primarySurfaceEdge=" + this.f31428a + ", secondarySurfaceEdge=" + this.f31429b + ", outConfigs=" + this.f31430c + "}";
     }
 }

@@ -8,33 +8,33 @@ import java.util.List;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final qi.s f12829a;
+    private final qi.s f12830a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f12830b = new ArrayList();
+    private final List f12831b = new ArrayList();
 
     /* renamed from: c  reason: collision with root package name */
-    private ByteBuffer[] f12831c = new ByteBuffer[0];
+    private ByteBuffer[] f12832c = new ByteBuffer[0];
 
     /* renamed from: d  reason: collision with root package name */
-    private d.a f12832d;
+    private d.a f12833d;
 
     /* renamed from: e  reason: collision with root package name */
-    private d.a f12833e;
+    private d.a f12834e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f12834f;
+    private boolean f12835f;
 
     public c(qi.s sVar) {
-        this.f12829a = sVar;
-        d.a aVar = d.a.f12836e;
-        this.f12832d = aVar;
-        this.f12833e = aVar;
-        this.f12834f = false;
+        this.f12830a = sVar;
+        d.a aVar = d.a.f12837e;
+        this.f12833d = aVar;
+        this.f12834e = aVar;
+        this.f12835f = false;
     }
 
     private int c() {
-        return this.f12831c.length - 1;
+        return this.f12832c.length - 1;
     }
 
     private void g(ByteBuffer byteBuffer) {
@@ -44,23 +44,23 @@ public final class c {
         for (boolean z12 = true; z12; z12 = z10) {
             z10 = false;
             for (int i10 = 0; i10 <= c(); i10++) {
-                if (!this.f12831c[i10].hasRemaining()) {
-                    d dVar = (d) this.f12830b.get(i10);
+                if (!this.f12832c[i10].hasRemaining()) {
+                    d dVar = (d) this.f12831b.get(i10);
                     if (dVar.d()) {
-                        if (!this.f12831c[i10].hasRemaining() && i10 < c()) {
-                            ((d) this.f12830b.get(i10 + 1)).f();
+                        if (!this.f12832c[i10].hasRemaining() && i10 < c()) {
+                            ((d) this.f12831b.get(i10 + 1)).f();
                         }
                     } else {
                         if (i10 > 0) {
-                            byteBuffer2 = this.f12831c[i10 - 1];
+                            byteBuffer2 = this.f12832c[i10 - 1];
                         } else if (byteBuffer.hasRemaining()) {
                             byteBuffer2 = byteBuffer;
                         } else {
-                            byteBuffer2 = d.f12835a;
+                            byteBuffer2 = d.f12836a;
                         }
                         dVar.c(byteBuffer2);
-                        this.f12831c[i10] = dVar.b();
-                        if (byteBuffer2.remaining() - byteBuffer2.remaining() <= 0 && !this.f12831c[i10].hasRemaining()) {
+                        this.f12832c[i10] = dVar.b();
+                        if (byteBuffer2.remaining() - byteBuffer2.remaining() <= 0 && !this.f12832c[i10].hasRemaining()) {
                             z11 = false;
                         } else {
                             z11 = true;
@@ -73,51 +73,51 @@ public final class c {
     }
 
     public d.a a(d.a aVar) {
-        if (!aVar.equals(d.a.f12836e)) {
-            for (int i10 = 0; i10 < this.f12829a.size(); i10++) {
-                d dVar = (d) this.f12829a.get(i10);
+        if (!aVar.equals(d.a.f12837e)) {
+            for (int i10 = 0; i10 < this.f12830a.size(); i10++) {
+                d dVar = (d) this.f12830a.get(i10);
                 d.a e10 = dVar.e(aVar);
                 if (dVar.a()) {
-                    oe.a.g(!e10.equals(d.a.f12836e));
+                    oe.a.g(!e10.equals(d.a.f12837e));
                     aVar = e10;
                 }
             }
-            this.f12833e = aVar;
+            this.f12834e = aVar;
             return aVar;
         }
         throw new d.b(aVar);
     }
 
     public void b() {
-        this.f12830b.clear();
-        this.f12832d = this.f12833e;
-        this.f12834f = false;
-        for (int i10 = 0; i10 < this.f12829a.size(); i10++) {
-            d dVar = (d) this.f12829a.get(i10);
+        this.f12831b.clear();
+        this.f12833d = this.f12834e;
+        this.f12835f = false;
+        for (int i10 = 0; i10 < this.f12830a.size(); i10++) {
+            d dVar = (d) this.f12830a.get(i10);
             dVar.flush();
             if (dVar.a()) {
-                this.f12830b.add(dVar);
+                this.f12831b.add(dVar);
             }
         }
-        this.f12831c = new ByteBuffer[this.f12830b.size()];
+        this.f12832c = new ByteBuffer[this.f12831b.size()];
         for (int i11 = 0; i11 <= c(); i11++) {
-            this.f12831c[i11] = ((d) this.f12830b.get(i11)).b();
+            this.f12832c[i11] = ((d) this.f12831b.get(i11)).b();
         }
     }
 
     public ByteBuffer d() {
         if (!f()) {
-            return d.f12835a;
+            return d.f12836a;
         }
-        ByteBuffer byteBuffer = this.f12831c[c()];
+        ByteBuffer byteBuffer = this.f12832c[c()];
         if (!byteBuffer.hasRemaining()) {
-            g(d.f12835a);
+            g(d.f12836a);
         }
         return byteBuffer;
     }
 
     public boolean e() {
-        if (this.f12834f && ((d) this.f12830b.get(c())).d() && !this.f12831c[c()].hasRemaining()) {
+        if (this.f12835f && ((d) this.f12831b.get(c())).d() && !this.f12832c[c()].hasRemaining()) {
             return true;
         }
         return false;
@@ -131,11 +131,11 @@ public final class c {
             return false;
         }
         c cVar = (c) obj;
-        if (this.f12829a.size() != cVar.f12829a.size()) {
+        if (this.f12830a.size() != cVar.f12830a.size()) {
             return false;
         }
-        for (int i10 = 0; i10 < this.f12829a.size(); i10++) {
-            if (this.f12829a.get(i10) != cVar.f12829a.get(i10)) {
+        for (int i10 = 0; i10 < this.f12830a.size(); i10++) {
+            if (this.f12830a.get(i10) != cVar.f12830a.get(i10)) {
                 return false;
             }
         }
@@ -143,36 +143,36 @@ public final class c {
     }
 
     public boolean f() {
-        return !this.f12830b.isEmpty();
+        return !this.f12831b.isEmpty();
     }
 
     public void h() {
-        if (f() && !this.f12834f) {
-            this.f12834f = true;
-            ((d) this.f12830b.get(0)).f();
+        if (f() && !this.f12835f) {
+            this.f12835f = true;
+            ((d) this.f12831b.get(0)).f();
         }
     }
 
     public int hashCode() {
-        return this.f12829a.hashCode();
+        return this.f12830a.hashCode();
     }
 
     public void i(ByteBuffer byteBuffer) {
-        if (f() && !this.f12834f) {
+        if (f() && !this.f12835f) {
             g(byteBuffer);
         }
     }
 
     public void j() {
-        for (int i10 = 0; i10 < this.f12829a.size(); i10++) {
-            d dVar = (d) this.f12829a.get(i10);
+        for (int i10 = 0; i10 < this.f12830a.size(); i10++) {
+            d dVar = (d) this.f12830a.get(i10);
             dVar.flush();
             dVar.reset();
         }
-        this.f12831c = new ByteBuffer[0];
-        d.a aVar = d.a.f12836e;
-        this.f12832d = aVar;
-        this.f12833e = aVar;
-        this.f12834f = false;
+        this.f12832c = new ByteBuffer[0];
+        d.a aVar = d.a.f12837e;
+        this.f12833d = aVar;
+        this.f12834e = aVar;
+        this.f12835f = false;
     }
 }

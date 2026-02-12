@@ -5,37 +5,37 @@ import bj.c;
 final class y4 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final y4 f45184a = new y4();
+    static final y4 f45185a = new y4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f45185b;
+    private static final bj.c f45186b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final bj.c f45186c;
+    private static final bj.c f45187c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final bj.c f45187d;
+    private static final bj.c f45188d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final bj.c f45188e;
+    private static final bj.c f45189e;
 
     static {
         c.b a10 = bj.c.a("callingSource");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f45185b = a10.b(s1Var.b()).a();
+        f45186b = a10.b(s1Var.b()).a();
         c.b a11 = bj.c.a("supportedFormats");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f45186c = a11.b(s1Var2.b()).a();
+        f45187c = a11.b(s1Var2.b()).a();
         c.b a12 = bj.c.a("durationMs");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f45187d = a12.b(s1Var3.b()).a();
+        f45188d = a12.b(s1Var3.b()).a();
         c.b a13 = bj.c.a("errorCode");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f45188e = a13.b(s1Var4.b()).a();
+        f45189e = a13.b(s1Var4.b()).a();
     }
 
     private y4() {

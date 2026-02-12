@@ -1,180 +1,322 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun44748: for (var _fun44748_ip = 0;;) switch (_fun44748_ip) {
+    _fun44758: for (var _fun44758_ip = 0;;) switch (_fun44758_ip) {
         case 0:
-            var3 = require;
-            var6 = metroImportDefault;
+            var5 = require;
             var2 = exports;
-            var4 = dependencyMap;
+            var6 = dependencyMap;
+            var _closure1_slot0 = var5;
+            var _closure1_slot1 = var6;
             var0 = global;
-            var11 = var0.Object;
-            var5 = var11.defineProperty;
+            var7 = var0.Object;
+            var4 = var7.defineProperty;
             var1 = {};
             var0 = true;
             var1.value = var0;
             var0 = '__esModule';
-            var0 = var5.bind(var11)(var2, var0, var1);
-            var5 = 0;
-            var1 = var4[var5];
+            var0 = var4.bind(var7)(var2, var0, var1);
+            var0 = 0;
+            var1 = var6[var0];
             var0 = undefined;
-            var9 = var3.bind(var0)(var1);
-            for (var1 in var9)
-                case 65: {
-                    case 74: var12 = var1;
-                    var11 = var4[var5];
-                    var11 = var3.bind(var0)(var11);
-                    var11 = var11[var12];
-                    var2[var12] = var11;
-                    _fun44748_ip = 65;
-                    continue _fun44748;
-                }
-        case 96:
-            var1 = 1;
-            var1 = var4[var1];
-            var1 = var6.bind(var0)(var1);
-            var2.default = var1;
-            var1 = 2;
-            var1 = var4[var1];
-            var1 = var6.bind(var0)(var1);
-            var2.BottomSheetModal = var1;
-            var1 = 3;
-            var1 = var4[var1];
-            var1 = var6.bind(var0)(var1);
-            var2.BottomSheetModalProvider = var1;
-            var1 = 4;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.useBottomSheet;
-            var2.useBottomSheet = var1;
-            var1 = 5;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.useBottomSheetModal;
-            var2.useBottomSheetModal = var1;
-            var1 = 6;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.useBottomSheetSpringConfigs;
-            var2.useBottomSheetSpringConfigs = var1;
-            var1 = 7;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.useBottomSheetTimingConfigs;
-            var2.useBottomSheetTimingConfigs = var1;
-            var1 = 8;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.useBottomSheetInternal;
-            var2.useBottomSheetInternal = var1;
-            var1 = 9;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.useBottomSheetModalInternal;
-            var2.useBottomSheetModalInternal = var1;
-            var1 = 10;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.useScrollEventsHandlersDefault;
-            var2.useScrollEventsHandlersDefault = var1;
-            var1 = 11;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.useGestureEventsHandlersDefault;
-            var2.useGestureEventsHandlersDefault = var1;
-            var1 = 12;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.useBottomSheetGestureHandlers;
-            var2.useBottomSheetGestureHandlers = var1;
-            var1 = 13;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.useScrollHandler;
-            var2.useScrollHandler = var1;
-            var1 = 14;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.useScrollableSetter;
-            var2.useScrollableSetter = var1;
-            var1 = 15;
-            var5 = var4[var1];
-            var5 = var3.bind(var0)(var5);
-            var5 = var5.BottomSheetScrollView;
-            var2.BottomSheetScrollView = var5;
-            var5 = var4[var1];
-            var5 = var3.bind(var0)(var5);
-            var5 = var5.BottomSheetSectionList;
-            var2.BottomSheetSectionList = var5;
-            var5 = var4[var1];
-            var5 = var3.bind(var0)(var5);
-            var5 = var5.BottomSheetFlatList;
-            var2.BottomSheetFlatList = var5;
-            var5 = var4[var1];
-            var5 = var3.bind(var0)(var5);
-            var5 = var5.BottomSheetVirtualizedList;
-            var2.BottomSheetVirtualizedList = var5;
-            var5 = var4[var1];
-            var5 = var3.bind(var0)(var5);
-            var5 = var5.BottomSheetFlashList;
-            var2.BottomSheetFlashList = var5;
-            var5 = 16;
-            var5 = var4[var5];
-            var5 = var3.bind(var0)(var5);
-            var5 = var5.BottomSheetHandle;
-            var2.BottomSheetHandle = var5;
-            var5 = 17;
-            var5 = var4[var5];
-            var5 = var6.bind(var0)(var5);
-            var2.BottomSheetDraggableView = var5;
-            var5 = 18;
-            var5 = var4[var5];
-            var5 = var6.bind(var0)(var5);
-            var2.BottomSheetView = var5;
-            var5 = 19;
-            var5 = var4[var5];
-            var5 = var6.bind(var0)(var5);
-            var2.BottomSheetTextInput = var5;
-            var5 = 20;
-            var5 = var4[var5];
-            var5 = var3.bind(var0)(var5);
-            var5 = var5.BottomSheetBackdrop;
-            var2.BottomSheetBackdrop = var5;
-            var5 = 21;
-            var7 = var4[var5];
-            var7 = var3.bind(var0)(var7);
-            var7 = var7.BottomSheetFooter;
-            var2.BottomSheetFooter = var7;
-            var5 = var4[var5];
-            var5 = var3.bind(var0)(var5);
-            var5 = var5.BottomSheetFooterContainer;
-            var2.BottomSheetFooterContainer = var5;
-            var5 = 22;
-            var7 = var4[var5];
-            var7 = var6.bind(var0)(var7);
-            var7 = var7.TouchableHighlight;
-            var2.TouchableHighlight = var7;
-            var7 = var4[var5];
-            var7 = var6.bind(var0)(var7);
-            var7 = var7.TouchableOpacity;
-            var2.TouchableOpacity = var7;
-            var5 = var4[var5];
-            var5 = var6.bind(var0)(var5);
-            var5 = var5.TouchableWithoutFeedback;
-            var2.TouchableWithoutFeedback = var5;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.createBottomSheetScrollableComponent;
-            var2.createBottomSheetScrollableComponent = var1;
-            var1 = 23;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.getKeyboardAnimationConfigs;
-            var2.getKeyboardAnimationConfigs = var1;
-            var1 = 24;
-            var1 = var4[var1];
-            var1 = var3.bind(var0)(var1);
-            var1 = var1.enableLogging;
-            var2.enableLogging = var1;
+            var7 = var5.bind(var0)(var1);
+            var4 = var7.tagMessage;
+            var1 = 'react-native-reanimated is required in order to use synchronous state management';
+            var1 = var4.bind(var7)(var1);
+            var _closure1_slot2 = var1;
+            var4 = 1;
+            var1 = var6[var4];
+            var1 = var5.bind(var0)(var1);
+            var1 = var1.Reanimated;
+            var7 = null;
+            var8 = var7 == var1;
+            var1 = undefined;
+            if (var8) {
+                _fun44758_ip = 135;
+                continue _fun44758
+            }
+        case 114:
+            var8 = var6[var4];
+            var8 = var5.bind(var0)(var8);
+            var8 = var8.Reanimated;
+            var1 = var8.useSharedValue;
+        case 135:
+            var1 = var0 !== var1;
+            var _closure1_slot3 = var1;
+            var1 = var6[var4];
+            var1 = var5.bind(var0)(var1);
+            var1 = var1.Reanimated;
+            var7 = var7 == var1;
+            var1 = undefined;
+            if (var7) {
+                _fun44758_ip = 188;
+                continue _fun44758
+            }
+        case 167:
+            var4 = var6[var4];
+            var4 = var5.bind(var0)(var4);
+            var4 = var4.Reanimated;
+            var1 = var4.setGestureState;
+        case 188:
+            var _closure1_slot4 = var1;
+            var1 = {};
+            var4 = "function create_Pnpm_gestureStateManagerTs1(handlerTag){const{REANIMATED_AVAILABLE,setGestureState,State,warningMessage}=this.__closure;return{handlerTag:handlerTag,begin:function(){'worklet';if(REANIMATED_AVAILABLE){setGestureState(handlerTag,State.BEGAN);}else{console.warn(warningMessage);}},activate:function(){'worklet';if(REANIMATED_AVAILABLE){setGestureState(handlerTag,State.ACTIVE);}else{console.warn(warningMessage);}},fail:function(){'worklet';if(REANIMATED_AVAILABLE){setGestureState(handlerTag,State.FAILED);}else{console.warn(warningMessage);}},end:function(){'worklet';if(REANIMATED_AVAILABLE){setGestureState(handlerTag,State.END);}else{console.warn(warningMessage);}}};}";
+            var1.code = var4;
+            var _closure1_slot5 = var1;
+            var1 = {};
+            var4 = 'function pnpm_gestureStateManagerTs2(){const{REANIMATED_AVAILABLE,setGestureState,handlerTag,State,warningMessage}=this.__closure;if(REANIMATED_AVAILABLE){setGestureState(handlerTag,State.BEGAN);}else{console.warn(warningMessage);}}';
+            var1.code = var4;
+            var _closure1_slot6 = var1;
+            var1 = {};
+            var4 = 'function pnpm_gestureStateManagerTs3(){const{REANIMATED_AVAILABLE,setGestureState,handlerTag,State,warningMessage}=this.__closure;if(REANIMATED_AVAILABLE){setGestureState(handlerTag,State.ACTIVE);}else{console.warn(warningMessage);}}';
+            var1.code = var4;
+            var _closure1_slot7 = var1;
+            var1 = {};
+            var4 = 'function pnpm_gestureStateManagerTs4(){const{REANIMATED_AVAILABLE,setGestureState,handlerTag,State,warningMessage}=this.__closure;if(REANIMATED_AVAILABLE){setGestureState(handlerTag,State.FAILED);}else{console.warn(warningMessage);}}';
+            var1.code = var4;
+            var _closure1_slot8 = var1;
+            var1 = {};
+            var4 = 'function pnpm_gestureStateManagerTs5(){const{REANIMATED_AVAILABLE,setGestureState,handlerTag,State,warningMessage}=this.__closure;if(REANIMATED_AVAILABLE){setGestureState(handlerTag,State.END);}else{console.warn(warningMessage);}}';
+            var1.code = var4;
+            var _closure1_slot9 = var1;
+            var1 = {};
+            var3 = function() { // Environment: var3
+                var0 = function arg0() {
+                    var9 = arg0;
+                    var _closure3_slot0 = var9;
+                    var0 = {};
+                    var0.handlerTag = var9;
+                    var3 = function() {
+                        _fun44761: for (var _fun44761_ip = 0;;) switch (_fun44761_ip) {
+                            case 0:
+                                var1 = _closure1_slot3;
+                                if (var1) {
+                                    _fun44761_ip = 34;
+                                    continue _fun44761
+                                }
+                            case 10:
+                                var1 = global;
+                                var3 = var1.console;
+                                var2 = var3.warn;
+                                var1 = _closure1_slot2;
+                                var1 = var2.bind(var3)(var1);
+                                _fun44761_ip = 85;
+                                continue _fun44761;
+                            case 34:
+                                var3 = _closure1_slot4;
+                                var2 = _closure3_slot0;
+                                var4 = _closure1_slot0;
+                                var1 = _closure1_slot1;
+                                var0 = 2;
+                                var0 = var1[var0];
+                                var1 = undefined;
+                                var0 = var4.bind(var1)(var0);
+                                var0 = var0.State;
+                                var0 = var0.BEGAN;
+                                var0 = var3.bind(var1)(var2, var0);
+                            case 85:
+                                var0 = undefined;
+                                return var0;
+                        }
+                    };
+                    var10 = {};
+                    var4 = _closure1_slot3;
+                    var10.REANIMATED_AVAILABLE = var4;
+                    var4 = _closure1_slot4;
+                    var10.setGestureState = var4;
+                    var10.handlerTag = var9;
+                    var7 = _closure1_slot0;
+                    var8 = _closure1_slot1;
+                    var5 = 2;
+                    var4 = var8[var5];
+                    var6 = undefined;
+                    var4 = var7.bind(var6)(var4);
+                    var4 = var4.State;
+                    var10.State = var4;
+                    var4 = _closure1_slot2;
+                    var10.warningMessage = var4;
+                    var3.__closure = var10;
+                    var10 = 4799367197403.0;
+                    var3.__workletHash = var10;
+                    var10 = _closure1_slot6;
+                    var3.__initData = var10;
+                    var0.begin = var3;
+                    var3 = function() {
+                        _fun44762: for (var _fun44762_ip = 0;;) switch (_fun44762_ip) {
+                            case 0:
+                                var1 = _closure1_slot3;
+                                if (var1) {
+                                    _fun44762_ip = 34;
+                                    continue _fun44762
+                                }
+                            case 10:
+                                var1 = global;
+                                var3 = var1.console;
+                                var2 = var3.warn;
+                                var1 = _closure1_slot2;
+                                var1 = var2.bind(var3)(var1);
+                                _fun44762_ip = 85;
+                                continue _fun44762;
+                            case 34:
+                                var3 = _closure1_slot4;
+                                var2 = _closure3_slot0;
+                                var4 = _closure1_slot0;
+                                var1 = _closure1_slot1;
+                                var0 = 2;
+                                var0 = var1[var0];
+                                var1 = undefined;
+                                var0 = var4.bind(var1)(var0);
+                                var0 = var0.State;
+                                var0 = var0.ACTIVE;
+                                var0 = var3.bind(var1)(var2, var0);
+                            case 85:
+                                var0 = undefined;
+                                return var0;
+                        }
+                    };
+                    var10 = {};
+                    var11 = _closure1_slot3;
+                    var10.REANIMATED_AVAILABLE = var11;
+                    var11 = _closure1_slot4;
+                    var10.setGestureState = var11;
+                    var10.handlerTag = var9;
+                    var11 = var8[var5];
+                    var11 = var7.bind(var6)(var11);
+                    var11 = var11.State;
+                    var10.State = var11;
+                    var10.warningMessage = var4;
+                    var3.__closure = var10;
+                    var10 = 7932903515929.0;
+                    var3.__workletHash = var10;
+                    var10 = _closure1_slot7;
+                    var3.__initData = var10;
+                    var0.activate = var3;
+                    var3 = function() {
+                        _fun44763: for (var _fun44763_ip = 0;;) switch (_fun44763_ip) {
+                            case 0:
+                                var1 = _closure1_slot3;
+                                if (var1) {
+                                    _fun44763_ip = 34;
+                                    continue _fun44763
+                                }
+                            case 10:
+                                var1 = global;
+                                var3 = var1.console;
+                                var2 = var3.warn;
+                                var1 = _closure1_slot2;
+                                var1 = var2.bind(var3)(var1);
+                                _fun44763_ip = 85;
+                                continue _fun44763;
+                            case 34:
+                                var3 = _closure1_slot4;
+                                var2 = _closure3_slot0;
+                                var4 = _closure1_slot0;
+                                var1 = _closure1_slot1;
+                                var0 = 2;
+                                var0 = var1[var0];
+                                var1 = undefined;
+                                var0 = var4.bind(var1)(var0);
+                                var0 = var0.State;
+                                var0 = var0.FAILED;
+                                var0 = var3.bind(var1)(var2, var0);
+                            case 85:
+                                var0 = undefined;
+                                return var0;
+                        }
+                    };
+                    var10 = {};
+                    var11 = _closure1_slot3;
+                    var10.REANIMATED_AVAILABLE = var11;
+                    var11 = _closure1_slot4;
+                    var10.setGestureState = var11;
+                    var10.handlerTag = var9;
+                    var11 = var8[var5];
+                    var11 = var7.bind(var6)(var11);
+                    var11 = var11.State;
+                    var10.State = var11;
+                    var10.warningMessage = var4;
+                    var3.__closure = var10;
+                    var10 = 6492077607729.0;
+                    var3.__workletHash = var10;
+                    var10 = _closure1_slot8;
+                    var3.__initData = var10;
+                    var0.fail = var3;
+                    var1 = function() {
+                        _fun44764: for (var _fun44764_ip = 0;;) switch (_fun44764_ip) {
+                            case 0:
+                                var1 = _closure1_slot3;
+                                if (var1) {
+                                    _fun44764_ip = 34;
+                                    continue _fun44764
+                                }
+                            case 10:
+                                var1 = global;
+                                var3 = var1.console;
+                                var2 = var3.warn;
+                                var1 = _closure1_slot2;
+                                var1 = var2.bind(var3)(var1);
+                                _fun44764_ip = 85;
+                                continue _fun44764;
+                            case 34:
+                                var3 = _closure1_slot4;
+                                var2 = _closure3_slot0;
+                                var4 = _closure1_slot0;
+                                var1 = _closure1_slot1;
+                                var0 = 2;
+                                var0 = var1[var0];
+                                var1 = undefined;
+                                var0 = var4.bind(var1)(var0);
+                                var0 = var0.State;
+                                var0 = var0.END;
+                                var0 = var3.bind(var1)(var2, var0);
+                            case 85:
+                                var0 = undefined;
+                                return var0;
+                        }
+                    };
+                    var3 = {};
+                    var10 = _closure1_slot3;
+                    var3.REANIMATED_AVAILABLE = var10;
+                    var10 = _closure1_slot4;
+                    var3.setGestureState = var10;
+                    var3.handlerTag = var9;
+                    var5 = var8[var5];
+                    var5 = var7.bind(var6)(var5);
+                    var5 = var5.State;
+                    var3.State = var5;
+                    var3.warningMessage = var4;
+                    var1.__closure = var3;
+                    var3 = 2856860112444.0;
+                    var1.__workletHash = var3;
+                    var2 = _closure1_slot9;
+                    var1.__initData = var2;
+                    var0.end = var1;
+                    return var0;
+                };
+                var2 = {};
+                var3 = _closure1_slot3;
+                var2.REANIMATED_AVAILABLE = var3;
+                var3 = _closure1_slot4;
+                var2.setGestureState = var3;
+                var5 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var3 = 2;
+                var4 = var4[var3];
+                var3 = undefined;
+                var3 = var5.bind(var3)(var4);
+                var3 = var3.State;
+                var2.State = var3;
+                var3 = _closure1_slot2;
+                var2.warningMessage = var3;
+                var0.__closure = var2;
+                var2 = 11660087535665.0;
+                var0.__workletHash = var2;
+                var1 = _closure1_slot5;
+                var0.__initData = var1;
+                return var0;
+            };
+            var3 = var3.bind(var0)();
+            var1.create = var3;
+            var2.GestureStateManager = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4944, 4945, 5087, 5091, 4949, 4953, 5093, 5094, 4951, 4958, 4970, 5053, 5056, 4969, 4968, 5095, 5082, 5076, 5247, 5250, 5252, 5078, 5256, 4960, 4964]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4941, 4944, 4942]);

@@ -61,49 +61,49 @@ public final class RNGestureHandlerButtonViewManager extends ViewGroupManager<a>
         private boolean D;
 
         /* renamed from: d  reason: collision with root package name */
-        private Integer f18946d;
+        private Integer f18947d;
 
         /* renamed from: e  reason: collision with root package name */
-        private Integer f18947e;
+        private Integer f18948e;
 
         /* renamed from: i  reason: collision with root package name */
-        private boolean f18948i;
+        private boolean f18949i;
 
         /* renamed from: o  reason: collision with root package name */
-        private boolean f18949o;
+        private boolean f18950o;
 
         /* renamed from: p  reason: collision with root package name */
-        private float f18950p;
+        private float f18951p;
 
         /* renamed from: q  reason: collision with root package name */
-        private float f18951q;
+        private float f18952q;
 
         /* renamed from: r  reason: collision with root package name */
-        private float f18952r;
+        private float f18953r;
 
         /* renamed from: s  reason: collision with root package name */
-        private float f18953s;
+        private float f18954s;
 
         /* renamed from: t  reason: collision with root package name */
-        private float f18954t;
+        private float f18955t;
 
         /* renamed from: u  reason: collision with root package name */
-        private float f18955u;
+        private float f18956u;
 
         /* renamed from: v  reason: collision with root package name */
-        private Integer f18956v;
+        private Integer f18957v;
 
         /* renamed from: w  reason: collision with root package name */
-        private String f18957w;
+        private String f18958w;
 
         /* renamed from: x  reason: collision with root package name */
-        private boolean f18958x;
+        private boolean f18959x;
 
         /* renamed from: y  reason: collision with root package name */
-        private int f18959y;
+        private int f18960y;
 
         /* renamed from: z  reason: collision with root package name */
-        private boolean f18960z;
+        private boolean f18961z;
         public static final C0227a E = new C0227a(null);
         private static TypedValue F = new TypedValue();
         private static View.OnClickListener I = new View.OnClickListener() { // from class: com.swmansion.gesturehandler.react.b
@@ -126,35 +126,35 @@ public final class RNGestureHandlerButtonViewManager extends ViewGroupManager<a>
 
         public a(Context context) {
             super(context);
-            this.f18957w = "solid";
-            this.f18958x = true;
+            this.f18958w = "solid";
+            this.f18959x = true;
             this.A = -1L;
             this.B = -1;
             setOnClickListener(I);
             setClickable(true);
             setFocusable(true);
-            this.f18960z = true;
+            this.f18961z = true;
             setClipChildren(false);
         }
 
         private final boolean getHasBorderRadii() {
-            if (this.f18950p == 0.0f && this.f18951q == 0.0f && this.f18952r == 0.0f && this.f18953s == 0.0f && this.f18954t == 0.0f) {
+            if (this.f18951p == 0.0f && this.f18952q == 0.0f && this.f18953r == 0.0f && this.f18954s == 0.0f && this.f18955t == 0.0f) {
                 return false;
             }
             return true;
         }
 
         private final float[] j() {
-            float f10 = this.f18951q;
-            float f11 = this.f18952r;
-            float f12 = this.f18954t;
-            float f13 = this.f18953s;
+            float f10 = this.f18952q;
+            float f11 = this.f18953r;
+            float f12 = this.f18955t;
+            float f13 = this.f18954s;
             float[] fArr = {f10, f10, f11, f11, f12, f12, f13, f13};
             ArrayList arrayList = new ArrayList(8);
             for (int i10 = 0; i10 < 8; i10++) {
                 float f14 = fArr[i10];
                 if (f14 == 0.0f) {
-                    f14 = this.f18950p;
+                    f14 = this.f18951p;
                 }
                 arrayList.add(Float.valueOf(f14));
             }
@@ -162,12 +162,12 @@ public final class RNGestureHandlerButtonViewManager extends ViewGroupManager<a>
         }
 
         private final PathEffect k() {
-            String str = this.f18957w;
+            String str = this.f18958w;
             if (Intrinsics.areEqual(str, "dotted")) {
-                float f10 = this.f18955u;
+                float f10 = this.f18956u;
                 return new DashPathEffect(new float[]{f10, f10, f10, f10}, 0.0f);
             } else if (Intrinsics.areEqual(str, "dashed")) {
-                float f11 = this.f18955u;
+                float f11 = this.f18956u;
                 float f12 = 3;
                 return new DashPathEffect(new float[]{f11 * f12, f11 * f12, f11 * f12, f11 * f12}, 0.0f);
             } else {
@@ -181,11 +181,11 @@ public final class RNGestureHandlerButtonViewManager extends ViewGroupManager<a>
             if (getHasBorderRadii()) {
                 paintDrawable.setCornerRadii(j());
             }
-            if (this.f18955u > 0.0f) {
+            if (this.f18956u > 0.0f) {
                 Paint paint = paintDrawable.getPaint();
                 paint.setStyle(Paint.Style.STROKE);
-                paint.setStrokeWidth(this.f18955u);
-                Integer num = this.f18956v;
+                paint.setStrokeWidth(this.f18956u);
+                Integer num = this.f18957v;
                 if (num != null) {
                     i10 = num.intValue();
                 } else {
@@ -200,13 +200,13 @@ public final class RNGestureHandlerButtonViewManager extends ViewGroupManager<a>
         private final Drawable m() {
             ColorStateList colorStateList;
             ShapeDrawable shapeDrawable;
-            Integer num = this.f18946d;
+            Integer num = this.f18947d;
             if (num != null && num.intValue() == 0) {
                 return null;
             }
             int[][] iArr = {new int[]{16842910}};
-            Integer num2 = this.f18947e;
-            Integer num3 = this.f18946d;
+            Integer num2 = this.f18948e;
+            Integer num3 = this.f18947d;
             if (num3 != null) {
                 Intrinsics.checkNotNull(num3);
                 colorStateList = new ColorStateList(iArr, new int[]{num3.intValue()});
@@ -214,7 +214,7 @@ public final class RNGestureHandlerButtonViewManager extends ViewGroupManager<a>
                 getContext().getTheme().resolveAttribute(16843820, F, true);
                 colorStateList = new ColorStateList(iArr, new int[]{F.data});
             }
-            if (this.f18949o) {
+            if (this.f18950o) {
                 shapeDrawable = null;
             } else {
                 shapeDrawable = new ShapeDrawable(new RectShape());
@@ -280,14 +280,14 @@ public final class RNGestureHandlerButtonViewManager extends ViewGroupManager<a>
             if (aVar == null) {
                 G = this;
                 return true;
-            } else if (this.f18958x) {
+            } else if (this.f18959x) {
                 if (aVar == this) {
                     return true;
                 }
                 return false;
             } else {
                 if (aVar != null) {
-                    z10 = aVar.f18958x;
+                    z10 = aVar.f18959x;
                 } else {
                     z10 = false;
                 }
@@ -363,55 +363,55 @@ public final class RNGestureHandlerButtonViewManager extends ViewGroupManager<a>
         }
 
         public final float getBorderBottomLeftRadius() {
-            return this.f18953s;
+            return this.f18954s;
         }
 
         public final float getBorderBottomRightRadius() {
-            return this.f18954t;
+            return this.f18955t;
         }
 
         public final Integer getBorderColor() {
-            return this.f18956v;
+            return this.f18957v;
         }
 
         public final float getBorderRadius() {
-            return this.f18950p;
+            return this.f18951p;
         }
 
         public final String getBorderStyle() {
-            return this.f18957w;
+            return this.f18958w;
         }
 
         public final float getBorderTopLeftRadius() {
-            return this.f18951q;
+            return this.f18952q;
         }
 
         public final float getBorderTopRightRadius() {
-            return this.f18952r;
+            return this.f18953r;
         }
 
         public final float getBorderWidth() {
-            return this.f18955u;
+            return this.f18956u;
         }
 
         public final boolean getExclusive() {
-            return this.f18958x;
+            return this.f18959x;
         }
 
         public final Integer getRippleColor() {
-            return this.f18946d;
+            return this.f18947d;
         }
 
         public final Integer getRippleRadius() {
-            return this.f18947e;
+            return this.f18948e;
         }
 
         public final boolean getUseBorderlessDrawable() {
-            return this.f18949o;
+            return this.f18950o;
         }
 
         public final boolean getUseDrawableOnForeground() {
-            return this.f18948i;
+            return this.f18949i;
         }
 
         @Override // nn.q.e
@@ -459,7 +459,7 @@ public final class RNGestureHandlerButtonViewManager extends ViewGroupManager<a>
             a aVar = G;
             if (aVar != null && aVar != this) {
                 Intrinsics.checkNotNull(aVar);
-                if (aVar.f18958x) {
+                if (aVar.f18959x) {
                     if (isPressed()) {
                         setPressed(false);
                     }
@@ -507,59 +507,59 @@ public final class RNGestureHandlerButtonViewManager extends ViewGroupManager<a>
 
         @Override // android.view.View
         public void setBackgroundColor(int i10) {
-            this.f18959y = i10;
-            this.f18960z = true;
+            this.f18960y = i10;
+            this.f18961z = true;
         }
 
         public final void setBorderBottomLeftRadius(float f10) {
-            this.f18953s = f10 * getResources().getDisplayMetrics().density;
-            this.f18960z = true;
+            this.f18954s = f10 * getResources().getDisplayMetrics().density;
+            this.f18961z = true;
         }
 
         public final void setBorderBottomRightRadius(float f10) {
-            this.f18954t = f10 * getResources().getDisplayMetrics().density;
-            this.f18960z = true;
+            this.f18955t = f10 * getResources().getDisplayMetrics().density;
+            this.f18961z = true;
         }
 
         public final void setBorderColor(Integer num) {
-            this.f18956v = num;
-            this.f18960z = true;
+            this.f18957v = num;
+            this.f18961z = true;
         }
 
         public final void setBorderRadius(float f10) {
-            this.f18950p = f10 * getResources().getDisplayMetrics().density;
-            this.f18960z = true;
+            this.f18951p = f10 * getResources().getDisplayMetrics().density;
+            this.f18961z = true;
         }
 
         public final void setBorderStyle(String str) {
-            this.f18957w = str;
-            this.f18960z = true;
+            this.f18958w = str;
+            this.f18961z = true;
         }
 
         public final void setBorderTopLeftRadius(float f10) {
-            this.f18951q = f10 * getResources().getDisplayMetrics().density;
-            this.f18960z = true;
+            this.f18952q = f10 * getResources().getDisplayMetrics().density;
+            this.f18961z = true;
         }
 
         public final void setBorderTopRightRadius(float f10) {
-            this.f18952r = f10 * getResources().getDisplayMetrics().density;
-            this.f18960z = true;
+            this.f18953r = f10 * getResources().getDisplayMetrics().density;
+            this.f18961z = true;
         }
 
         public final void setBorderWidth(float f10) {
-            this.f18955u = f10 * getResources().getDisplayMetrics().density;
-            this.f18960z = true;
+            this.f18956u = f10 * getResources().getDisplayMetrics().density;
+            this.f18961z = true;
         }
 
         public final void setExclusive(boolean z10) {
-            this.f18958x = z10;
+            this.f18959x = z10;
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:10:0x0014, code lost:
             if (q(r3, null, 1, null) != false) goto L22;
          */
         /* JADX WARN: Code restructure failed: missing block: B:7:0x000c, code lost:
-            if (r0.f18958x == true) goto L22;
+            if (r0.f18959x == true) goto L22;
          */
         @Override // android.view.View
         /*
@@ -569,13 +569,13 @@ public final class RNGestureHandlerButtonViewManager extends ViewGroupManager<a>
         public void setPressed(boolean r4) {
             /*
                 r3 = this;
-                boolean r0 = r3.f18958x
+                boolean r0 = r3.f18959x
                 r1 = 0
                 if (r0 != 0) goto L17
                 com.swmansion.gesturehandler.react.RNGestureHandlerButtonViewManager$a r0 = com.swmansion.gesturehandler.react.RNGestureHandlerButtonViewManager.a.G
                 r2 = 1
                 if (r0 == 0) goto Lf
-                boolean r0 = r0.f18958x
+                boolean r0 = r0.f18959x
                 if (r0 != r2) goto Lf
                 goto L17
             Lf:
@@ -605,13 +605,13 @@ public final class RNGestureHandlerButtonViewManager extends ViewGroupManager<a>
         }
 
         public final void setRippleColor(Integer num) {
-            this.f18946d = num;
-            this.f18960z = true;
+            this.f18947d = num;
+            this.f18961z = true;
         }
 
         public final void setRippleRadius(Integer num) {
-            this.f18947e = num;
-            this.f18960z = true;
+            this.f18948e = num;
+            this.f18961z = true;
         }
 
         public final void setTouched(boolean z10) {
@@ -619,18 +619,18 @@ public final class RNGestureHandlerButtonViewManager extends ViewGroupManager<a>
         }
 
         public final void setUseBorderlessDrawable(boolean z10) {
-            this.f18949o = z10;
+            this.f18950o = z10;
         }
 
         public final void setUseDrawableOnForeground(boolean z10) {
-            this.f18948i = z10;
-            this.f18960z = true;
+            this.f18949i = z10;
+            this.f18961z = true;
         }
 
         public final void t() {
-            if (this.f18960z) {
-                this.f18960z = false;
-                if (this.f18959y == 0) {
+            if (this.f18961z) {
+                this.f18961z = false;
+                if (this.f18960y == 0) {
                     setBackground(null);
                 }
                 setForeground(null);
@@ -641,17 +641,17 @@ public final class RNGestureHandlerButtonViewManager extends ViewGroupManager<a>
                     paintDrawable.setCornerRadii(j());
                     ((RippleDrawable) m10).setDrawableByLayerId(16908334, paintDrawable);
                 }
-                if (this.f18948i) {
+                if (this.f18949i) {
                     setForeground(m10);
-                    int i10 = this.f18959y;
+                    int i10 = this.f18960y;
                     if (i10 != 0) {
                         u(i10, l10, null);
                         return;
                     }
                     return;
                 }
-                int i11 = this.f18959y;
-                if (i11 == 0 && this.f18946d == null) {
+                int i11 = this.f18960y;
+                if (i11 == 0 && this.f18947d == null) {
                     setBackground(new LayerDrawable(new Drawable[]{m10, l10}));
                 } else {
                     u(i11, l10, m10);

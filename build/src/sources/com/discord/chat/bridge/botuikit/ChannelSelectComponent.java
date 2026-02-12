@@ -35,7 +35,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9238id;
+    private final String f9239id;
     private final int maxValues;
     private final int minValues;
     private final String placeholder;
@@ -87,7 +87,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
             v1.b(i10, 719, ChannelSelectComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f9238id = str;
+        this.f9239id = str;
         this.state = actionComponentState;
         this.customId = str2;
         if ((i10 & 16) == 0) {
@@ -122,7 +122,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$0() {
-        return new tt.f(p0.f50048a);
+        return new tt.f(p0.f50049a);
     }
 
     public static /* synthetic */ ChannelSelectComponent copy$default(ChannelSelectComponent channelSelectComponent, int i10, String str, ActionComponentState actionComponentState, String str2, String str3, String str4, int i11, int i12, boolean z10, List list, List list2, int i13, Object obj) {
@@ -130,7 +130,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
             i10 = channelSelectComponent.type;
         }
         if ((i13 & 2) != 0) {
-            str = channelSelectComponent.f9238id;
+            str = channelSelectComponent.f9239id;
         }
         if ((i13 & 4) != 0) {
             actionComponentState = channelSelectComponent.state;
@@ -180,10 +180,10 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
         compositeEncoder.k(serialDescriptor, 2, ActionComponentState.Serializer.INSTANCE, channelSelectComponent.getState());
         compositeEncoder.y(serialDescriptor, 3, channelSelectComponent.getCustomId());
         if (compositeEncoder.z(serialDescriptor, 4) || channelSelectComponent.getPlaceholder() != null) {
-            compositeEncoder.o(serialDescriptor, 4, n2.f50032a, channelSelectComponent.getPlaceholder());
+            compositeEncoder.o(serialDescriptor, 4, n2.f50033a, channelSelectComponent.getPlaceholder());
         }
         if (compositeEncoder.z(serialDescriptor, 5) || channelSelectComponent.getAccessibilityLabel() != null) {
-            compositeEncoder.o(serialDescriptor, 5, n2.f50032a, channelSelectComponent.getAccessibilityLabel());
+            compositeEncoder.o(serialDescriptor, 5, n2.f50033a, channelSelectComponent.getAccessibilityLabel());
         }
         compositeEncoder.w(serialDescriptor, 6, channelSelectComponent.getMinValues());
         compositeEncoder.w(serialDescriptor, 7, channelSelectComponent.getMaxValues());
@@ -211,7 +211,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
 
     @NotNull
     public final String component2() {
-        return this.f9238id;
+        return this.f9239id;
     }
 
     @NotNull
@@ -259,7 +259,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
         }
         if (obj instanceof ChannelSelectComponent) {
             ChannelSelectComponent channelSelectComponent = (ChannelSelectComponent) obj;
-            return this.type == channelSelectComponent.type && Intrinsics.areEqual(this.f9238id, channelSelectComponent.f9238id) && this.state == channelSelectComponent.state && Intrinsics.areEqual(this.customId, channelSelectComponent.customId) && Intrinsics.areEqual(this.placeholder, channelSelectComponent.placeholder) && Intrinsics.areEqual(this.accessibilityLabel, channelSelectComponent.accessibilityLabel) && this.minValues == channelSelectComponent.minValues && this.maxValues == channelSelectComponent.maxValues && this.disabled == channelSelectComponent.disabled && Intrinsics.areEqual(this.selectedOptions, channelSelectComponent.selectedOptions) && Intrinsics.areEqual(this.channelTypes, channelSelectComponent.channelTypes);
+            return this.type == channelSelectComponent.type && Intrinsics.areEqual(this.f9239id, channelSelectComponent.f9239id) && this.state == channelSelectComponent.state && Intrinsics.areEqual(this.customId, channelSelectComponent.customId) && Intrinsics.areEqual(this.placeholder, channelSelectComponent.placeholder) && Intrinsics.areEqual(this.accessibilityLabel, channelSelectComponent.accessibilityLabel) && this.minValues == channelSelectComponent.minValues && this.maxValues == channelSelectComponent.maxValues && this.disabled == channelSelectComponent.disabled && Intrinsics.areEqual(this.selectedOptions, channelSelectComponent.selectedOptions) && Intrinsics.areEqual(this.channelTypes, channelSelectComponent.channelTypes);
         }
         return false;
     }
@@ -287,7 +287,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f9238id;
+        return this.f9239id;
     }
 
     @Override // com.discord.chat.bridge.botuikit.SelectComponent
@@ -323,7 +323,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
     }
 
     public int hashCode() {
-        int hashCode = ((((((Integer.hashCode(this.type) * 31) + this.f9238id.hashCode()) * 31) + this.state.hashCode()) * 31) + this.customId.hashCode()) * 31;
+        int hashCode = ((((((Integer.hashCode(this.type) * 31) + this.f9239id.hashCode()) * 31) + this.state.hashCode()) * 31) + this.customId.hashCode()) * 31;
         String str = this.placeholder;
         int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
         String str2 = this.accessibilityLabel;
@@ -335,7 +335,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f9238id;
+        String str = this.f9239id;
         ActionComponentState actionComponentState = this.state;
         String str2 = this.customId;
         String str3 = this.placeholder;
@@ -360,7 +360,7 @@ public final class ChannelSelectComponent extends SearchableSelectComponent {
         Intrinsics.checkNotNullParameter(customId, "customId");
         Intrinsics.checkNotNullParameter(selectedOptions, "selectedOptions");
         this.type = i10;
-        this.f9238id = id2;
+        this.f9239id = id2;
         this.state = state;
         this.customId = customId;
         this.placeholder = str;

@@ -5,7 +5,7 @@ import bj.c;
 final class na implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final na f47030a = new na();
+    static final na f47031a = new na();
 
     static {
         c.b a10 = bj.c.a("detectorMode");

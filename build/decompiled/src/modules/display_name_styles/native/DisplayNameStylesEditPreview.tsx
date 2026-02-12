@@ -263,7 +263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/display_name_styles/native/DisplayNameStylesEditPreview.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun85881: for (var _fun85881_ip = 0;;) switch (_fun85881_ip) {
+        _fun84702: for (var _fun84702_ip = 0;;) switch (_fun84702_ip) {
             case 0:
                 var1 = arg0;
                 var18 = var1.user;
@@ -292,8 +292,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var17 != var4;
                 var16 = undefined;
                 if (!var1) {
-                    _fun85881_ip = 155;
-                    continue _fun85881
+                    _fun84702_ip = 155;
+                    continue _fun84702
                 }
             case 124:
                 var2 = _closure1_slot0;
@@ -377,13 +377,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var17 == var14;
                 var14 = undefined;
                 if (!var18) {
-                    _fun85881_ip = 431;
-                    continue _fun85881
+                    _fun84702_ip = 431;
+                    continue _fun84702
                 }
             case 421:
                 if (!(var17 != var16)) {
-                    _fun85881_ip = 428;
-                    continue _fun85881
+                    _fun84702_ip = 428;
+                    continue _fun84702
                 }
             case 425:
                 var15 = var16;
@@ -405,4 +405,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 5646, 1641, 7042, 7002, 3134, 5514, 7003, 7004, 3938, 1234, 2182, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 5644, 1641, 7057, 7017, 3134, 5512, 7018, 7019, 3938, 1234, 2182, 2]);

@@ -5,17 +5,17 @@ import kotlin.jvm.functions.Function0;
 public final class c extends a {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ Function0 f43207e;
+    final /* synthetic */ Function0 f43208e;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public c(String str, boolean z10, Function0 function0) {
         super(str, z10);
-        this.f43207e = function0;
+        this.f43208e = function0;
     }
 
     @Override // pu.a
     public long f() {
-        this.f43207e.invoke();
+        this.f43208e.invoke();
         return -1L;
     }
 }

@@ -29,14 +29,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/isWatchTogetherApplication.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun64830: for (var _fun64830_ip = 0;;) switch (_fun64830_ip) {
+        _fun66205: for (var _fun66205_ip = 0;;) switch (_fun66205_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 var0 = var0 != var3;
                 if (!var0) {
-                    _fun64830_ip = 53;
-                    continue _fun64830
+                    _fun66205_ip = 53;
+                    continue _fun66205
                 }
             case 12:
                 var4 = _closure1_slot0;

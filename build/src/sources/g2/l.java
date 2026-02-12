@@ -8,28 +8,28 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class l {
 
     /* renamed from: h  reason: collision with root package name */
-    public static final a f24682h = new a(null);
+    public static final a f24683h = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f24683a;
+    private final String f24684a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Bundle f24684b;
+    private final Bundle f24685b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Bundle f24685c;
+    private final Bundle f24686c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f24686d;
+    private final boolean f24687d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f24687e;
+    private final boolean f24688e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Set f24688f;
+    private final Set f24689f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f24689g;
+    private final int f24690g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -46,13 +46,13 @@ public abstract class l {
         Intrinsics.checkNotNullParameter(requestData, "requestData");
         Intrinsics.checkNotNullParameter(candidateQueryData, "candidateQueryData");
         Intrinsics.checkNotNullParameter(allowedProviders, "allowedProviders");
-        this.f24683a = type;
-        this.f24684b = requestData;
-        this.f24685c = candidateQueryData;
-        this.f24686d = z10;
-        this.f24687e = z11;
-        this.f24688f = allowedProviders;
-        this.f24689g = i10;
+        this.f24684a = type;
+        this.f24685b = requestData;
+        this.f24686c = candidateQueryData;
+        this.f24687d = z10;
+        this.f24688e = z11;
+        this.f24689f = allowedProviders;
+        this.f24690g = i10;
         requestData.putBoolean("androidx.credentials.BUNDLE_KEY_IS_AUTO_SELECT_ALLOWED", z11);
         candidateQueryData.putBoolean("androidx.credentials.BUNDLE_KEY_IS_AUTO_SELECT_ALLOWED", z11);
         requestData.putInt("androidx.credentials.BUNDLE_KEY_TYPE_PRIORITY_VALUE", i10);
@@ -60,22 +60,22 @@ public abstract class l {
     }
 
     public final Set a() {
-        return this.f24688f;
+        return this.f24689f;
     }
 
     public final Bundle b() {
-        return this.f24685c;
+        return this.f24686c;
     }
 
     public final Bundle c() {
-        return this.f24684b;
+        return this.f24685b;
     }
 
     public final String d() {
-        return this.f24683a;
+        return this.f24684a;
     }
 
     public final boolean e() {
-        return this.f24686d;
+        return this.f24687d;
     }
 }

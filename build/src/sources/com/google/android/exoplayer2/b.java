@@ -9,39 +9,39 @@ import android.os.Handler;
 final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f13044a;
+    private final Context f13045a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a f13045b;
+    private final a f13046b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f13046c;
+    private boolean f13047c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private final class a extends BroadcastReceiver implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        private final InterfaceC0165b f13047d;
+        private final InterfaceC0165b f13048d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Handler f13048e;
+        private final Handler f13049e;
 
         public a(Handler handler, InterfaceC0165b interfaceC0165b) {
-            this.f13048e = handler;
-            this.f13047d = interfaceC0165b;
+            this.f13049e = handler;
+            this.f13048d = interfaceC0165b;
         }
 
         @Override // android.content.BroadcastReceiver
         public void onReceive(Context context, Intent intent) {
             if ("android.media.AUDIO_BECOMING_NOISY".equals(intent.getAction())) {
-                this.f13048e.post(this);
+                this.f13049e.post(this);
             }
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            if (b.this.f13046c) {
-                this.f13047d.g();
+            if (b.this.f13047c) {
+                this.f13048d.g();
             }
         }
     }
@@ -53,17 +53,17 @@ final class b {
     }
 
     public b(Context context, Handler handler, InterfaceC0165b interfaceC0165b) {
-        this.f13044a = context.getApplicationContext();
-        this.f13045b = new a(handler, interfaceC0165b);
+        this.f13045a = context.getApplicationContext();
+        this.f13046b = new a(handler, interfaceC0165b);
     }
 
     public void b(boolean z10) {
-        if (z10 && !this.f13046c) {
-            this.f13044a.registerReceiver(this.f13045b, new IntentFilter("android.media.AUDIO_BECOMING_NOISY"));
-            this.f13046c = true;
-        } else if (!z10 && this.f13046c) {
-            this.f13044a.unregisterReceiver(this.f13045b);
-            this.f13046c = false;
+        if (z10 && !this.f13047c) {
+            this.f13045a.registerReceiver(this.f13046b, new IntentFilter("android.media.AUDIO_BECOMING_NOISY"));
+            this.f13047c = true;
+        } else if (!z10 && this.f13047c) {
+            this.f13045a.unregisterReceiver(this.f13046b);
+            this.f13047c = false;
         }
     }
 }

@@ -59,9 +59,9 @@ public /* synthetic */ class MediaGalleryItem$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50032a;
+        n2 n2Var = n2.f50033a;
         KSerializer u10 = rt.a.u(n2Var);
-        tt.h hVar = tt.h.f49996a;
+        tt.h hVar = tt.h.f49997a;
         return new KSerializer[]{UnfurledMediaItem$$serializer.INSTANCE, MediaGalleryItemType.Serializer.INSTANCE, u10, hVar, rt.a.u(n2Var), hVar, hVar, rt.a.u(n2Var), hVar, hVar, rt.a.u(hVar), hVar, rt.a.u(n2Var), n2Var, n2Var, rt.a.u(n2Var), rt.a.u(n2Var), rt.a.u(n2Var)};
     }
 
@@ -94,7 +94,7 @@ public /* synthetic */ class MediaGalleryItem$$serializer implements h0 {
         char c10 = '\n';
         if (b10.p()) {
             UnfurledMediaItem unfurledMediaItem2 = (UnfurledMediaItem) b10.y(serialDescriptor, 0, UnfurledMediaItem$$serializer.INSTANCE, null);
-            n2 n2Var = n2.f50032a;
+            n2 n2Var = n2.f50033a;
             boolean C = b10.C(serialDescriptor, 3);
             boolean C2 = b10.C(serialDescriptor, 5);
             boolean C3 = b10.C(serialDescriptor, 6);
@@ -111,7 +111,7 @@ public /* synthetic */ class MediaGalleryItem$$serializer implements h0 {
             str = (String) b10.n(serialDescriptor, 2, n2Var, null);
             i10 = 262143;
             str8 = m10;
-            bool = (Boolean) b10.n(serialDescriptor, 10, tt.h.f49996a, null);
+            bool = (Boolean) b10.n(serialDescriptor, 10, tt.h.f49997a, null);
             z11 = C6;
             z12 = C5;
             str7 = (String) b10.n(serialDescriptor, 7, n2Var, null);
@@ -163,7 +163,7 @@ public /* synthetic */ class MediaGalleryItem$$serializer implements h0 {
                         c10 = '\n';
                         break;
                     case 2:
-                        str13 = (String) b10.n(serialDescriptor, 2, n2.f50032a, str13);
+                        str13 = (String) b10.n(serialDescriptor, 2, n2.f50033a, str13);
                         i12 |= 4;
                         c10 = '\n';
                         break;
@@ -173,7 +173,7 @@ public /* synthetic */ class MediaGalleryItem$$serializer implements h0 {
                         c10 = '\n';
                         break;
                     case 4:
-                        str15 = (String) b10.n(serialDescriptor, 4, n2.f50032a, str15);
+                        str15 = (String) b10.n(serialDescriptor, 4, n2.f50033a, str15);
                         i12 |= 16;
                         c10 = '\n';
                         break;
@@ -188,7 +188,7 @@ public /* synthetic */ class MediaGalleryItem$$serializer implements h0 {
                         c10 = '\n';
                         break;
                     case 7:
-                        str19 = (String) b10.n(serialDescriptor, 7, n2.f50032a, str19);
+                        str19 = (String) b10.n(serialDescriptor, 7, n2.f50033a, str19);
                         i12 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
                         c10 = '\n';
                         break;
@@ -204,7 +204,7 @@ public /* synthetic */ class MediaGalleryItem$$serializer implements h0 {
                         c10 = c10;
                         continue;
                     case 10:
-                        bool2 = (Boolean) b10.n(serialDescriptor, 10, tt.h.f49996a, bool2);
+                        bool2 = (Boolean) b10.n(serialDescriptor, 10, tt.h.f49997a, bool2);
                         i12 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
                         c10 = '\n';
                         break;
@@ -214,7 +214,7 @@ public /* synthetic */ class MediaGalleryItem$$serializer implements h0 {
                         c10 = '\n';
                         break;
                     case 12:
-                        str18 = (String) b10.n(serialDescriptor, 12, n2.f50032a, str18);
+                        str18 = (String) b10.n(serialDescriptor, 12, n2.f50033a, str18);
                         i12 |= RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                         c10 = '\n';
                         break;
@@ -229,19 +229,19 @@ public /* synthetic */ class MediaGalleryItem$$serializer implements h0 {
                         c10 = '\n';
                         break;
                     case 15:
-                        str17 = (String) b10.n(serialDescriptor, 15, n2.f50032a, str17);
+                        str17 = (String) b10.n(serialDescriptor, 15, n2.f50033a, str17);
                         i11 = PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS;
                         i12 |= i11;
                         c10 = '\n';
                         break;
                     case 16:
-                        str16 = (String) b10.n(serialDescriptor, 16, n2.f50032a, str16);
+                        str16 = (String) b10.n(serialDescriptor, 16, n2.f50033a, str16);
                         i11 = 65536;
                         i12 |= i11;
                         c10 = '\n';
                         break;
                     case 17:
-                        str14 = (String) b10.n(serialDescriptor, 17, n2.f50032a, str14);
+                        str14 = (String) b10.n(serialDescriptor, 17, n2.f50033a, str14);
                         i11 = 131072;
                         i12 |= i11;
                         c10 = '\n';

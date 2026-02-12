@@ -21,7 +21,7 @@ public final class MediaPlayerProgress implements ReactEvent {
     private final double duration;
 
     /* renamed from: id  reason: collision with root package name */
-    private final double f10184id;
+    private final double f10185id;
     private final double time;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, d2 = {"Lcom/discord/media_player/reactevents/MediaPlayerProgress$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/media_player/reactevents/MediaPlayerProgress;", "media_player_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
@@ -44,14 +44,14 @@ public final class MediaPlayerProgress implements ReactEvent {
         if (7 != (i10 & 7)) {
             v1.b(i10, 7, MediaPlayerProgress$$serializer.INSTANCE.getDescriptor());
         }
-        this.f10184id = d10;
+        this.f10185id = d10;
         this.time = d11;
         this.duration = d12;
     }
 
     public static /* synthetic */ MediaPlayerProgress copy$default(MediaPlayerProgress mediaPlayerProgress, double d10, double d11, double d12, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            d10 = mediaPlayerProgress.f10184id;
+            d10 = mediaPlayerProgress.f10185id;
         }
         double d13 = d10;
         if ((i10 & 2) != 0) {
@@ -65,13 +65,13 @@ public final class MediaPlayerProgress implements ReactEvent {
     }
 
     public static final /* synthetic */ void write$Self$media_player_release(MediaPlayerProgress mediaPlayerProgress, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        compositeEncoder.D(serialDescriptor, 0, mediaPlayerProgress.f10184id);
+        compositeEncoder.D(serialDescriptor, 0, mediaPlayerProgress.f10185id);
         compositeEncoder.D(serialDescriptor, 1, mediaPlayerProgress.time);
         compositeEncoder.D(serialDescriptor, 2, mediaPlayerProgress.duration);
     }
 
     public final double component1() {
-        return this.f10184id;
+        return this.f10185id;
     }
 
     public final double component2() {
@@ -93,7 +93,7 @@ public final class MediaPlayerProgress implements ReactEvent {
         }
         if (obj instanceof MediaPlayerProgress) {
             MediaPlayerProgress mediaPlayerProgress = (MediaPlayerProgress) obj;
-            return Double.compare(this.f10184id, mediaPlayerProgress.f10184id) == 0 && Double.compare(this.time, mediaPlayerProgress.time) == 0 && Double.compare(this.duration, mediaPlayerProgress.duration) == 0;
+            return Double.compare(this.f10185id, mediaPlayerProgress.f10185id) == 0 && Double.compare(this.time, mediaPlayerProgress.time) == 0 && Double.compare(this.duration, mediaPlayerProgress.duration) == 0;
         }
         return false;
     }
@@ -103,7 +103,7 @@ public final class MediaPlayerProgress implements ReactEvent {
     }
 
     public final double getId() {
-        return this.f10184id;
+        return this.f10185id;
     }
 
     public final double getTime() {
@@ -111,7 +111,7 @@ public final class MediaPlayerProgress implements ReactEvent {
     }
 
     public int hashCode() {
-        return (((Double.hashCode(this.f10184id) * 31) + Double.hashCode(this.time)) * 31) + Double.hashCode(this.duration);
+        return (((Double.hashCode(this.f10185id) * 31) + Double.hashCode(this.time)) * 31) + Double.hashCode(this.duration);
     }
 
     @Override // com.discord.reactevents.ReactEvent
@@ -122,14 +122,14 @@ public final class MediaPlayerProgress implements ReactEvent {
 
     @NotNull
     public String toString() {
-        double d10 = this.f10184id;
+        double d10 = this.f10185id;
         double d11 = this.time;
         double d12 = this.duration;
         return "MediaPlayerProgress(id=" + d10 + ", time=" + d11 + ", duration=" + d12 + ")";
     }
 
     public MediaPlayerProgress(double d10, double d11, double d12) {
-        this.f10184id = d10;
+        this.f10185id = d10;
         this.time = d11;
         this.duration = d12;
     }

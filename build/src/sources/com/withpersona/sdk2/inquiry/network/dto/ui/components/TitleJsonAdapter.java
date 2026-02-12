@@ -88,7 +88,7 @@ public final class TitleJsonAdapter extends h {
         }
         Constructor<Title> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = Title.class.getDeclaredConstructor(String.class, Title.Attributes.class, TextBasedComponentStyle.class, Integer.TYPE, c.f21827c);
+            constructor = Title.class.getDeclaredConstructor(String.class, Title.Attributes.class, TextBasedComponentStyle.class, Integer.TYPE, c.f21828c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

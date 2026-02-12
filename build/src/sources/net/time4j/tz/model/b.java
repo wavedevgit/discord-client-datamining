@@ -12,28 +12,28 @@ public final class b extends l {
     private static final long serialVersionUID = 1749643877954103721L;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient int f37744e;
+    private final transient int f37745e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient a f37745i;
+    private final transient a f37746i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient j f37746o;
+    private final transient j f37747o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient q f37747p;
+    private final transient q f37748p;
 
     /* renamed from: q  reason: collision with root package name */
-    private transient int f37748q = 0;
+    private transient int f37749q = 0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(int i10, List list, List list2, boolean z10, boolean z11) {
-        this.f37744e = i10;
+        this.f37745e = i10;
         a aVar = new a(list, z10, z11);
-        this.f37745i = aVar;
+        this.f37746i = aVar;
         q n10 = aVar.n();
-        this.f37747p = n10;
-        this.f37746o = new j(n10, list2, z10);
+        this.f37748p = n10;
+        this.f37747o = new j(n10, list2, z10);
     }
 
     private void readObject(ObjectInputStream objectInputStream) {
@@ -46,7 +46,7 @@ public final class b extends l {
 
     @Override // net.time4j.tz.m
     public boolean a() {
-        if (!this.f37746o.a() && !this.f37745i.a()) {
+        if (!this.f37747o.a() && !this.f37746i.a()) {
             return false;
         }
         return true;
@@ -54,29 +54,29 @@ public final class b extends l {
 
     @Override // net.time4j.tz.m
     public q b(zt.f fVar) {
-        if (fVar.o() < this.f37747p.g()) {
-            return this.f37745i.b(fVar);
+        if (fVar.o() < this.f37748p.g()) {
+            return this.f37746i.b(fVar);
         }
-        q b10 = this.f37746o.b(fVar);
+        q b10 = this.f37747o.b(fVar);
         if (b10 == null) {
-            return this.f37747p;
+            return this.f37748p;
         }
         return b10;
     }
 
     @Override // net.time4j.tz.m
     public p c() {
-        return this.f37745i.c();
+        return this.f37746i.c();
     }
 
     @Override // net.time4j.tz.m
     public q d(zt.a aVar, zt.g gVar) {
-        return this.f37745i.m(aVar, gVar, this.f37746o);
+        return this.f37746i.m(aVar, gVar, this.f37747o);
     }
 
     @Override // net.time4j.tz.m
     public List e(zt.a aVar, zt.g gVar) {
-        return this.f37745i.p(aVar, gVar, this.f37746o);
+        return this.f37746i.p(aVar, gVar, this.f37747o);
     }
 
     public boolean equals(Object obj) {
@@ -85,7 +85,7 @@ public final class b extends l {
         }
         if (obj instanceof b) {
             b bVar = (b) obj;
-            if (this.f37745i.l(bVar.f37745i, this.f37744e, bVar.f37744e) && this.f37746o.n().equals(bVar.f37746o.n())) {
+            if (this.f37746i.l(bVar.f37746i, this.f37745e, bVar.f37745e) && this.f37747o.n().equals(bVar.f37747o.n())) {
                 return true;
             }
         }
@@ -93,10 +93,10 @@ public final class b extends l {
     }
 
     public int hashCode() {
-        int i10 = this.f37748q;
+        int i10 = this.f37749q;
         if (i10 == 0) {
-            int q10 = this.f37745i.q(this.f37744e) + (this.f37746o.n().hashCode() * 37);
-            this.f37748q = q10;
+            int q10 = this.f37746i.q(this.f37745e) + (this.f37747o.n().hashCode() * 37);
+            this.f37749q = q10;
             return q10;
         }
         return i10;
@@ -104,23 +104,23 @@ public final class b extends l {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public List k() {
-        return this.f37746o.n();
+        return this.f37747o.n();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void l(ObjectOutput objectOutput) {
-        this.f37745i.t(this.f37744e, objectOutput);
+        this.f37746i.t(this.f37745e, objectOutput);
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder(32);
         sb2.append(b.class.getName());
         sb2.append("[transition-count=");
-        sb2.append(this.f37744e);
+        sb2.append(this.f37745e);
         sb2.append(",hash=");
         sb2.append(hashCode());
         sb2.append(",last-rules=");
-        sb2.append(this.f37746o.n());
+        sb2.append(this.f37747o.n());
         sb2.append(']');
         return sb2.toString();
     }

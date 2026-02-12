@@ -11,23 +11,23 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 public final class i2 extends s {
 
     /* renamed from: b  reason: collision with root package name */
-    private final KClass f50003b;
+    private final KClass f50004b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final SerialDescriptor f50004c;
+    private final SerialDescriptor f50005c;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public i2(KClass kClass, KSerializer eSerializer) {
         super(eSerializer, null);
         Intrinsics.checkNotNullParameter(kClass, "kClass");
         Intrinsics.checkNotNullParameter(eSerializer, "eSerializer");
-        this.f50003b = kClass;
-        this.f50004c = new d(eSerializer.getDescriptor());
+        this.f50004b = kClass;
+        this.f50005c = new d(eSerializer.getDescriptor());
     }
 
     @Override // tt.s, kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return this.f50004c;
+        return this.f50005c;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -90,6 +90,6 @@ public final class i2 extends s {
     /* renamed from: v */
     public Object[] l(ArrayList arrayList) {
         Intrinsics.checkNotNullParameter(arrayList, "<this>");
-        return t1.r(arrayList, this.f50003b);
+        return t1.r(arrayList, this.f50004b);
     }
 }

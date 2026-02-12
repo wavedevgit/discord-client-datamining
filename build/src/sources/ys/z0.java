@@ -5,7 +5,7 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class z0 extends dt.p implements n0, w0 {
 
     /* renamed from: o  reason: collision with root package name */
-    public kotlinx.coroutines.b0 f55837o;
+    public kotlinx.coroutines.b0 f55838o;
 
     @Override // ys.w0
     public boolean a() {
@@ -28,7 +28,7 @@ public abstract class z0 extends dt.p implements n0, w0 {
     }
 
     public final kotlinx.coroutines.b0 u() {
-        kotlinx.coroutines.b0 b0Var = this.f55837o;
+        kotlinx.coroutines.b0 b0Var = this.f55838o;
         if (b0Var != null) {
             return b0Var;
         }
@@ -41,6 +41,6 @@ public abstract class z0 extends dt.p implements n0, w0 {
     public abstract void w(Throwable th2);
 
     public final void x(kotlinx.coroutines.b0 b0Var) {
-        this.f55837o = b0Var;
+        this.f55838o = b0Var;
     }
 }

@@ -5,9 +5,9 @@ import ys.g0;
 public final class l implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final g0 f24860a;
+    private final g0 f24861a;
 
     public l(g0 g0Var) {
-        this.f24860a = g0Var;
+        this.f24861a = g0Var;
     }
 }

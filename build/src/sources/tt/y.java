@@ -11,17 +11,17 @@ import st.e;
 public final class y implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final y f50093a = new y();
+    public static final y f50094a = new y();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f50094b = new g2("kotlin.time.Duration", e.i.f48368a);
+    private static final SerialDescriptor f50095b = new g2("kotlin.time.Duration", e.i.f48369a);
 
     private y() {
     }
 
     public long a(Decoder decoder) {
         Intrinsics.checkNotNullParameter(decoder, "decoder");
-        return Duration.f34986e.d(decoder.z());
+        return Duration.f34987e.d(decoder.z());
     }
 
     public void b(Encoder encoder, long j10) {
@@ -36,7 +36,7 @@ public final class y implements KSerializer {
 
     @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return f50094b;
+        return f50095b;
     }
 
     @Override // qt.o

@@ -15,7 +15,7 @@ public abstract class f {
         Intrinsics.checkNotNullParameter(reactContext, "<this>");
         Activity currentActivity = reactContext.getCurrentActivity();
         if (currentActivity != null && (window = currentActivity.getWindow()) != null && (decorView = window.getDecorView()) != null && (rootView = decorView.getRootView()) != null) {
-            return (ViewGroup) rootView.findViewById(f.f.f23353d);
+            return (ViewGroup) rootView.findViewById(f.f.f23354d);
         }
         return null;
     }

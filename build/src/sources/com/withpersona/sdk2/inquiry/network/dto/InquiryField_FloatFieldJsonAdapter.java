@@ -75,7 +75,7 @@ public final class InquiryField_FloatFieldJsonAdapter extends h {
         }
         Constructor<InquiryField.FloatField> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InquiryField.FloatField.class.getDeclaredConstructor(Float.class, String.class, Integer.TYPE, dn.c.f21827c);
+            constructor = InquiryField.FloatField.class.getDeclaredConstructor(Float.class, String.class, Integer.TYPE, dn.c.f21828c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

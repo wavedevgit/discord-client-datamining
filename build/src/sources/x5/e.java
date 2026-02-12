@@ -11,28 +11,28 @@ import x5.c;
 public final class e extends c {
 
     /* renamed from: s  reason: collision with root package name */
-    private final BufferedSource f54415s;
+    private final BufferedSource f54416s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final Buffer f54416t;
+    private final Buffer f54417t;
 
     /* renamed from: u  reason: collision with root package name */
-    private int f54417u = 0;
+    private int f54418u = 0;
 
     /* renamed from: v  reason: collision with root package name */
-    private long f54418v;
+    private long f54419v;
 
     /* renamed from: w  reason: collision with root package name */
-    private int f54419w;
+    private int f54420w;
 
     /* renamed from: x  reason: collision with root package name */
-    private String f54420x;
+    private String f54421x;
 
     /* renamed from: y  reason: collision with root package name */
-    private static final ByteString f54413y = ByteString.h("'\\");
+    private static final ByteString f54414y = ByteString.h("'\\");
 
     /* renamed from: z  reason: collision with root package name */
-    private static final ByteString f54414z = ByteString.h("\"\\");
+    private static final ByteString f54415z = ByteString.h("\"\\");
     private static final ByteString A = ByteString.h("{}[]:, \n\t\r\f/\\;#=");
     private static final ByteString B = ByteString.h("\n\r");
     private static final ByteString C = ByteString.h("*/");
@@ -40,8 +40,8 @@ public final class e extends c {
     /* JADX INFO: Access modifiers changed from: package-private */
     public e(BufferedSource bufferedSource) {
         if (bufferedSource != null) {
-            this.f54415s = bufferedSource;
-            this.f54416t = bufferedSource.M();
+            this.f54416s = bufferedSource;
+            this.f54417t = bufferedSource.M();
             n(6);
             return;
         }
@@ -49,25 +49,25 @@ public final class e extends c {
     }
 
     private void C() {
-        if (this.f54398p) {
+        if (this.f54399p) {
             return;
         }
         throw z("Use JsonReader.setLenient(true) to accept malformed JSON");
     }
 
     private String C0() {
-        long g02 = this.f54415s.g0(A);
+        long g02 = this.f54416s.g0(A);
         if (g02 != -1) {
-            return this.f54416t.d1(g02);
+            return this.f54417t.d1(g02);
         }
-        return this.f54416t.X1();
+        return this.f54417t.X1();
     }
 
     private int E0() {
         String str;
         String str2;
         int i10;
-        byte Z = this.f54416t.Z(0L);
+        byte Z = this.f54417t.Z(0L);
         if (Z != 116 && Z != 84) {
             if (Z != 102 && Z != 70) {
                 if (Z != 110 && Z != 78) {
@@ -90,20 +90,20 @@ public final class e extends c {
         int i11 = 1;
         while (i11 < length) {
             int i12 = i11 + 1;
-            if (!this.f54415s.D0(i12)) {
+            if (!this.f54416s.D0(i12)) {
                 return 0;
             }
-            byte Z2 = this.f54416t.Z(i11);
+            byte Z2 = this.f54417t.Z(i11);
             if (Z2 != str.charAt(i11) && Z2 != str2.charAt(i11)) {
                 return 0;
             }
             i11 = i12;
         }
-        if (this.f54415s.D0(length + 1) && Q(this.f54416t.Z(length))) {
+        if (this.f54416s.D0(length + 1) && Q(this.f54417t.Z(length))) {
             return 0;
         }
-        this.f54416t.skip(length);
-        this.f54417u = i10;
+        this.f54417t.skip(length);
+        this.f54418u = i10;
         return i10;
     }
 
@@ -135,9 +135,9 @@ public final class e extends c {
         r8 = -r8;
      */
     /* JADX WARN: Code restructure failed: missing block: B:56:0x00a1, code lost:
-        r19.f54418v = r8;
-        r19.f54416t.skip(r5);
-        r19.f54417u = 16;
+        r19.f54419v = r8;
+        r19.f54417t.skip(r5);
+        r19.f54418u = 16;
      */
     /* JADX WARN: Code restructure failed: missing block: B:57:0x00ad, code lost:
         return 16;
@@ -155,8 +155,8 @@ public final class e extends c {
         return r18;
      */
     /* JADX WARN: Code restructure failed: missing block: B:64:0x00b7, code lost:
-        r19.f54419w = r5;
-        r19.f54417u = 17;
+        r19.f54420w = r5;
+        r19.f54418u = 17;
      */
     /* JADX WARN: Code restructure failed: missing block: B:65:0x00bd, code lost:
         return 17;
@@ -178,8 +178,8 @@ public final class e extends c {
 
     private char G0() {
         int i10;
-        if (this.f54415s.D0(1L)) {
-            byte readByte = this.f54416t.readByte();
+        if (this.f54416s.D0(1L)) {
+            byte readByte = this.f54417t.readByte();
             if (readByte != 10 && readByte != 34 && readByte != 39 && readByte != 47 && readByte != 92) {
                 if (readByte != 98) {
                     if (readByte != 102) {
@@ -189,27 +189,27 @@ public final class e extends c {
                         if (readByte != 114) {
                             if (readByte != 116) {
                                 if (readByte != 117) {
-                                    if (this.f54398p) {
+                                    if (this.f54399p) {
                                         return (char) readByte;
                                     }
                                     throw z("Invalid escape sequence: \\" + ((char) readByte));
-                                } else if (this.f54415s.D0(4L)) {
+                                } else if (this.f54416s.D0(4L)) {
                                     char c10 = 0;
                                     for (int i11 = 0; i11 < 4; i11++) {
-                                        byte Z = this.f54416t.Z(i11);
+                                        byte Z = this.f54417t.Z(i11);
                                         char c11 = (char) (c10 << 4);
                                         if (Z >= 48 && Z <= 57) {
                                             i10 = Z - 48;
                                         } else if (Z >= 97 && Z <= 102) {
                                             i10 = Z - 87;
                                         } else if (Z < 65 || Z > 70) {
-                                            throw z("\\u" + this.f54416t.d1(4L));
+                                            throw z("\\u" + this.f54417t.d1(4L));
                                         } else {
                                             i10 = Z - 55;
                                         }
                                         c10 = (char) (c11 + i10);
                                     }
-                                    this.f54416t.skip(4L);
+                                    this.f54417t.skip(4L);
                                     return c10;
                                 } else {
                                     throw new EOFException("Unterminated escape sequence at path " + t());
@@ -230,13 +230,13 @@ public final class e extends c {
 
     private void H0(ByteString byteString) {
         while (true) {
-            long g02 = this.f54415s.g0(byteString);
+            long g02 = this.f54416s.g0(byteString);
             if (g02 != -1) {
-                if (this.f54416t.Z(g02) == 92) {
-                    this.f54416t.skip(g02 + 1);
+                if (this.f54417t.Z(g02) == 92) {
+                    this.f54417t.skip(g02 + 1);
                     G0();
                 } else {
-                    this.f54416t.skip(g02 + 1);
+                    this.f54417t.skip(g02 + 1);
                     return;
                 }
             } else {
@@ -246,18 +246,18 @@ public final class e extends c {
     }
 
     private int I() {
-        int[] iArr = this.f54395e;
-        int i10 = this.f54394d;
+        int[] iArr = this.f54396e;
+        int i10 = this.f54395d;
         int i11 = iArr[i10 - 1];
         if (i11 == 1) {
             iArr[i10 - 1] = 2;
         } else if (i11 == 2) {
             int Z = Z(true);
-            this.f54416t.readByte();
+            this.f54417t.readByte();
             if (Z != 44) {
                 if (Z != 59) {
                     if (Z == 93) {
-                        this.f54417u = 4;
+                        this.f54418u = 4;
                         return 4;
                     }
                     throw z("Unterminated array");
@@ -268,12 +268,12 @@ public final class e extends c {
             if (i11 == 4) {
                 iArr[i10 - 1] = 5;
                 int Z2 = Z(true);
-                this.f54416t.readByte();
+                this.f54417t.readByte();
                 if (Z2 != 58) {
                     if (Z2 == 61) {
                         C();
-                        if (this.f54415s.D0(1L) && this.f54416t.Z(0L) == 62) {
-                            this.f54416t.readByte();
+                        if (this.f54416s.D0(1L) && this.f54417t.Z(0L) == 62) {
+                            this.f54417t.readByte();
                         }
                     } else {
                         throw z("Expected ':'");
@@ -283,7 +283,7 @@ public final class e extends c {
                 iArr[i10 - 1] = 7;
             } else if (i11 == 7) {
                 if (Z(false) == -1) {
-                    this.f54417u = 18;
+                    this.f54418u = 18;
                     return 18;
                 }
                 C();
@@ -294,11 +294,11 @@ public final class e extends c {
             iArr[i10 - 1] = 4;
             if (i11 == 5) {
                 int Z3 = Z(true);
-                this.f54416t.readByte();
+                this.f54417t.readByte();
                 if (Z3 != 44) {
                     if (Z3 != 59) {
                         if (Z3 == 125) {
-                            this.f54417u = 2;
+                            this.f54418u = 2;
                             return 2;
                         }
                         throw z("Unterminated object");
@@ -312,25 +312,25 @@ public final class e extends c {
                     if (Z4 != 125) {
                         C();
                         if (Q((char) Z4)) {
-                            this.f54417u = 14;
+                            this.f54418u = 14;
                             return 14;
                         }
                         throw z("Expected name");
                     } else if (i11 != 5) {
-                        this.f54416t.readByte();
-                        this.f54417u = 2;
+                        this.f54417t.readByte();
+                        this.f54418u = 2;
                         return 2;
                     } else {
                         throw z("Expected name");
                     }
                 }
-                this.f54416t.readByte();
+                this.f54417t.readByte();
                 C();
-                this.f54417u = 12;
+                this.f54418u = 12;
                 return 12;
             }
-            this.f54416t.readByte();
-            this.f54417u = 13;
+            this.f54417t.readByte();
+            this.f54418u = 13;
             return 13;
         }
         int Z5 = Z(true);
@@ -348,24 +348,24 @@ public final class e extends c {
                                 if (F0 != 0) {
                                     return F0;
                                 }
-                                if (Q(this.f54416t.Z(0L))) {
+                                if (Q(this.f54417t.Z(0L))) {
                                     C();
-                                    this.f54417u = 10;
+                                    this.f54418u = 10;
                                     return 10;
                                 }
                                 throw z("Expected value");
                             }
-                            this.f54416t.readByte();
-                            this.f54417u = 1;
+                            this.f54417t.readByte();
+                            this.f54418u = 1;
                             return 1;
                         } else if (i11 == 1) {
-                            this.f54416t.readByte();
-                            this.f54417u = 4;
+                            this.f54417t.readByte();
+                            this.f54418u = 4;
                             return 4;
                         }
                     } else {
-                        this.f54416t.readByte();
-                        this.f54417u = 3;
+                        this.f54417t.readByte();
+                        this.f54418u = 3;
                         return 3;
                     }
                 }
@@ -373,25 +373,25 @@ public final class e extends c {
                     throw z("Unexpected value");
                 }
                 C();
-                this.f54417u = 7;
+                this.f54418u = 7;
                 return 7;
             }
             C();
-            this.f54416t.readByte();
-            this.f54417u = 8;
+            this.f54417t.readByte();
+            this.f54418u = 8;
             return 8;
         }
-        this.f54416t.readByte();
-        this.f54417u = 9;
+        this.f54417t.readByte();
+        this.f54418u = 9;
         return 9;
     }
 
     private int J(String str, c.a aVar) {
-        int length = aVar.f54400a.length;
+        int length = aVar.f54401a.length;
         for (int i10 = 0; i10 < length; i10++) {
-            if (str.equals(aVar.f54400a[i10])) {
-                this.f54417u = 0;
-                this.f54396i[this.f54394d - 1] = str;
+            if (str.equals(aVar.f54401a[i10])) {
+                this.f54418u = 0;
+                this.f54397i[this.f54395d - 1] = str;
                 return i10;
             }
         }
@@ -401,7 +401,7 @@ public final class e extends c {
     private boolean L0() {
         boolean z10;
         long size;
-        BufferedSource bufferedSource = this.f54415s;
+        BufferedSource bufferedSource = this.f54416s;
         ByteString byteString = C;
         long Y = bufferedSource.Y(byteString);
         if (Y != -1) {
@@ -409,7 +409,7 @@ public final class e extends c {
         } else {
             z10 = false;
         }
-        Buffer buffer = this.f54416t;
+        Buffer buffer = this.f54417t;
         if (z10) {
             size = Y + byteString.G();
         } else {
@@ -421,8 +421,8 @@ public final class e extends c {
 
     private void N0() {
         long size;
-        long g02 = this.f54415s.g0(B);
-        Buffer buffer = this.f54416t;
+        long g02 = this.f54416s.g0(B);
+        Buffer buffer = this.f54417t;
         if (g02 != -1) {
             size = g02 + 1;
         } else {
@@ -432,8 +432,8 @@ public final class e extends c {
     }
 
     private void O0() {
-        long g02 = this.f54415s.g0(A);
-        Buffer buffer = this.f54416t;
+        long g02 = this.f54416s.g0(A);
+        Buffer buffer = this.f54417t;
         if (g02 == -1) {
             g02 = buffer.size();
         }
@@ -472,17 +472,17 @@ public final class e extends c {
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:15:0x0025, code lost:
-        r6.f54416t.skip(r1);
+        r6.f54417t.skip(r1);
      */
     /* JADX WARN: Code restructure failed: missing block: B:16:0x002d, code lost:
         if (r2 != 47) goto L16;
      */
     /* JADX WARN: Code restructure failed: missing block: B:18:0x0037, code lost:
-        if (r6.f54415s.D0(2) != false) goto L28;
+        if (r6.f54416s.D0(2) != false) goto L28;
      */
     /* JADX WARN: Code restructure failed: missing block: B:20:0x003a, code lost:
         C();
-        r3 = r6.f54416t.Z(1);
+        r3 = r6.f54417t.Z(1);
      */
     /* JADX WARN: Code restructure failed: missing block: B:21:0x0047, code lost:
         if (r3 == 42) goto L30;
@@ -491,13 +491,13 @@ public final class e extends c {
         if (r3 == 47) goto L39;
      */
     /* JADX WARN: Code restructure failed: missing block: B:24:0x004c, code lost:
-        r6.f54416t.readByte();
-        r6.f54416t.readByte();
+        r6.f54417t.readByte();
+        r6.f54417t.readByte();
         N0();
      */
     /* JADX WARN: Code restructure failed: missing block: B:25:0x005a, code lost:
-        r6.f54416t.readByte();
-        r6.f54416t.readByte();
+        r6.f54417t.readByte();
+        r6.f54417t.readByte();
      */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x0068, code lost:
         if (L0() == false) goto L33;
@@ -523,12 +523,12 @@ public final class e extends c {
         L1:
             r1 = r0
         L2:
-            okio.BufferedSource r2 = r6.f54415s
+            okio.BufferedSource r2 = r6.f54416s
             int r3 = r1 + 1
             long r4 = (long) r3
             boolean r2 = r2.D0(r4)
             if (r2 == 0) goto L80
-            okio.Buffer r2 = r6.f54416t
+            okio.Buffer r2 = r6.f54417t
             long r4 = (long) r1
             byte r2 = r2.Z(r4)
             r4 = 10
@@ -541,19 +541,19 @@ public final class e extends c {
             if (r2 != r4) goto L25
             goto L7e
         L25:
-            okio.Buffer r3 = r6.f54416t
+            okio.Buffer r3 = r6.f54417t
             long r4 = (long) r1
             r3.skip(r4)
             r1 = 47
             if (r2 != r1) goto L72
-            okio.BufferedSource r3 = r6.f54415s
+            okio.BufferedSource r3 = r6.f54416s
             r4 = 2
             boolean r3 = r3.D0(r4)
             if (r3 != 0) goto L3a
             goto L7d
         L3a:
             r6.C()
-            okio.Buffer r3 = r6.f54416t
+            okio.Buffer r3 = r6.f54417t
             r4 = 1
             byte r3 = r3.Z(r4)
             r4 = 42
@@ -561,16 +561,16 @@ public final class e extends c {
             if (r3 == r1) goto L4c
             goto L7d
         L4c:
-            okio.Buffer r1 = r6.f54416t
+            okio.Buffer r1 = r6.f54417t
             r1.readByte()
-            okio.Buffer r1 = r6.f54416t
+            okio.Buffer r1 = r6.f54417t
             r1.readByte()
             r6.N0()
             goto L1
         L5a:
-            okio.Buffer r1 = r6.f54416t
+            okio.Buffer r1 = r6.f54417t
             r1.readByte()
-            okio.Buffer r1 = r6.f54416t
+            okio.Buffer r1 = r6.f54417t
             r1.readByte()
             boolean r1 = r6.L0()
             if (r1 == 0) goto L6b
@@ -606,22 +606,22 @@ public final class e extends c {
     private String z0(ByteString byteString) {
         StringBuilder sb2 = null;
         while (true) {
-            long g02 = this.f54415s.g0(byteString);
+            long g02 = this.f54416s.g0(byteString);
             if (g02 != -1) {
-                if (this.f54416t.Z(g02) == 92) {
+                if (this.f54417t.Z(g02) == 92) {
                     if (sb2 == null) {
                         sb2 = new StringBuilder();
                     }
-                    sb2.append(this.f54416t.d1(g02));
-                    this.f54416t.readByte();
+                    sb2.append(this.f54417t.d1(g02));
+                    this.f54417t.readByte();
                     sb2.append(G0());
                 } else if (sb2 == null) {
-                    String d12 = this.f54416t.d1(g02);
-                    this.f54416t.readByte();
+                    String d12 = this.f54417t.d1(g02);
+                    this.f54417t.readByte();
                     return d12;
                 } else {
-                    sb2.append(this.f54416t.d1(g02));
-                    this.f54416t.readByte();
+                    sb2.append(this.f54417t.d1(g02));
+                    this.f54417t.readByte();
                     return sb2.toString();
                 }
             } else {
@@ -632,19 +632,19 @@ public final class e extends c {
 
     @Override // x5.c
     public void D() {
-        int i10 = this.f54417u;
+        int i10 = this.f54418u;
         if (i10 == 0) {
             i10 = I();
         }
         if (i10 == 2) {
-            int i11 = this.f54394d;
+            int i11 = this.f54395d;
             int i12 = i11 - 1;
-            this.f54394d = i12;
-            this.f54396i[i12] = null;
-            int[] iArr = this.f54397o;
+            this.f54395d = i12;
+            this.f54397i[i12] = null;
+            int[] iArr = this.f54398o;
             int i13 = i11 - 2;
             iArr[i13] = iArr[i13] + 1;
-            this.f54417u = 0;
+            this.f54418u = 0;
             return;
         }
         throw new a("Expected END_OBJECT but was " + m() + " at path " + t());
@@ -652,10 +652,10 @@ public final class e extends c {
 
     @Override // x5.c
     public void T() {
-        if (!this.f54399q) {
+        if (!this.f54400q) {
             int i10 = 0;
             do {
-                int i11 = this.f54417u;
+                int i11 = this.f54418u;
                 if (i11 == 0) {
                     i11 = I();
                 }
@@ -667,14 +667,14 @@ public final class e extends c {
                     if (i11 == 4) {
                         i10--;
                         if (i10 >= 0) {
-                            this.f54394d--;
+                            this.f54395d--;
                         } else {
                             throw new a("Expected a value but was " + m() + " at path " + t());
                         }
                     } else if (i11 == 2) {
                         i10--;
                         if (i10 >= 0) {
-                            this.f54394d--;
+                            this.f54395d--;
                         } else {
                             throw new a("Expected a value but was " + m() + " at path " + t());
                         }
@@ -682,29 +682,29 @@ public final class e extends c {
                         if (i11 != 9 && i11 != 13) {
                             if (i11 != 8 && i11 != 12) {
                                 if (i11 == 17) {
-                                    this.f54416t.skip(this.f54419w);
+                                    this.f54417t.skip(this.f54420w);
                                 } else if (i11 == 18) {
                                     throw new a("Expected a value but was " + m() + " at path " + t());
                                 }
                             } else {
-                                H0(f54413y);
+                                H0(f54414y);
                             }
                         } else {
-                            H0(f54414z);
+                            H0(f54415z);
                         }
                     } else {
                         O0();
                     }
-                    this.f54417u = 0;
+                    this.f54418u = 0;
                 }
                 i10++;
-                this.f54417u = 0;
+                this.f54418u = 0;
             } while (i10 != 0);
-            int[] iArr = this.f54397o;
-            int i12 = this.f54394d;
+            int[] iArr = this.f54398o;
+            int i12 = this.f54395d;
             int i13 = i12 - 1;
             iArr[i13] = iArr[i13] + 1;
-            this.f54396i[i12 - 1] = "null";
+            this.f54397i[i12 - 1] = "null";
             return;
         }
         throw new a("Cannot skip unexpected " + m() + " at " + t());
@@ -712,59 +712,59 @@ public final class e extends c {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f54417u = 0;
-        this.f54395e[0] = 8;
-        this.f54394d = 1;
-        this.f54416t.h();
-        this.f54415s.close();
+        this.f54418u = 0;
+        this.f54396e[0] = 8;
+        this.f54395d = 1;
+        this.f54417t.h();
+        this.f54416s.close();
     }
 
     @Override // x5.c
     public String g1() {
         String d12;
-        int i10 = this.f54417u;
+        int i10 = this.f54418u;
         if (i10 == 0) {
             i10 = I();
         }
         if (i10 == 10) {
             d12 = C0();
         } else if (i10 == 9) {
-            d12 = z0(f54414z);
+            d12 = z0(f54415z);
         } else if (i10 == 8) {
-            d12 = z0(f54413y);
+            d12 = z0(f54414y);
         } else if (i10 == 11) {
-            d12 = this.f54420x;
-            this.f54420x = null;
+            d12 = this.f54421x;
+            this.f54421x = null;
         } else if (i10 == 16) {
-            d12 = Long.toString(this.f54418v);
+            d12 = Long.toString(this.f54419v);
         } else if (i10 == 17) {
-            d12 = this.f54416t.d1(this.f54419w);
+            d12 = this.f54417t.d1(this.f54420w);
         } else {
             throw new a("Expected a string but was " + m() + " at path " + t());
         }
-        this.f54417u = 0;
-        int[] iArr = this.f54397o;
-        int i11 = this.f54394d - 1;
+        this.f54418u = 0;
+        int[] iArr = this.f54398o;
+        int i11 = this.f54395d - 1;
         iArr[i11] = iArr[i11] + 1;
         return d12;
     }
 
     @Override // x5.c
     public boolean h() {
-        int i10 = this.f54417u;
+        int i10 = this.f54418u;
         if (i10 == 0) {
             i10 = I();
         }
         if (i10 == 5) {
-            this.f54417u = 0;
-            int[] iArr = this.f54397o;
-            int i11 = this.f54394d - 1;
+            this.f54418u = 0;
+            int[] iArr = this.f54398o;
+            int i11 = this.f54395d - 1;
             iArr[i11] = iArr[i11] + 1;
             return true;
         } else if (i10 == 6) {
-            this.f54417u = 0;
-            int[] iArr2 = this.f54397o;
-            int i12 = this.f54394d - 1;
+            this.f54418u = 0;
+            int[] iArr2 = this.f54398o;
+            int i12 = this.f54395d - 1;
             iArr2[i12] = iArr2[i12] + 1;
             return false;
         } else {
@@ -774,7 +774,7 @@ public final class e extends c {
 
     @Override // x5.c
     public boolean hasNext() {
-        int i10 = this.f54417u;
+        int i10 = this.f54418u;
         if (i10 == 0) {
             i10 = I();
         }
@@ -786,7 +786,7 @@ public final class e extends c {
 
     @Override // x5.c
     public c.b m() {
-        int i10 = this.f54417u;
+        int i10 = this.f54418u;
         if (i10 == 0) {
             i10 = I();
         }
@@ -826,131 +826,131 @@ public final class e extends c {
 
     @Override // x5.c
     public double nextDouble() {
-        int i10 = this.f54417u;
+        int i10 = this.f54418u;
         if (i10 == 0) {
             i10 = I();
         }
         if (i10 == 16) {
-            this.f54417u = 0;
-            int[] iArr = this.f54397o;
-            int i11 = this.f54394d - 1;
+            this.f54418u = 0;
+            int[] iArr = this.f54398o;
+            int i11 = this.f54395d - 1;
             iArr[i11] = iArr[i11] + 1;
-            return this.f54418v;
+            return this.f54419v;
         }
         if (i10 == 17) {
-            this.f54420x = this.f54416t.d1(this.f54419w);
+            this.f54421x = this.f54417t.d1(this.f54420w);
         } else if (i10 == 9) {
-            this.f54420x = z0(f54414z);
+            this.f54421x = z0(f54415z);
         } else if (i10 == 8) {
-            this.f54420x = z0(f54413y);
+            this.f54421x = z0(f54414y);
         } else if (i10 == 10) {
-            this.f54420x = C0();
+            this.f54421x = C0();
         } else if (i10 != 11) {
             throw new a("Expected a double but was " + m() + " at path " + t());
         }
-        this.f54417u = 11;
+        this.f54418u = 11;
         try {
-            double parseDouble = Double.parseDouble(this.f54420x);
-            if (!this.f54398p && (Double.isNaN(parseDouble) || Double.isInfinite(parseDouble))) {
+            double parseDouble = Double.parseDouble(this.f54421x);
+            if (!this.f54399p && (Double.isNaN(parseDouble) || Double.isInfinite(parseDouble))) {
                 throw new b("JSON forbids NaN and infinities: " + parseDouble + " at path " + t());
             }
-            this.f54420x = null;
-            this.f54417u = 0;
-            int[] iArr2 = this.f54397o;
-            int i12 = this.f54394d - 1;
+            this.f54421x = null;
+            this.f54418u = 0;
+            int[] iArr2 = this.f54398o;
+            int i12 = this.f54395d - 1;
             iArr2[i12] = iArr2[i12] + 1;
             return parseDouble;
         } catch (NumberFormatException unused) {
-            throw new a("Expected a double but was " + this.f54420x + " at path " + t());
+            throw new a("Expected a double but was " + this.f54421x + " at path " + t());
         }
     }
 
     @Override // x5.c
     public int nextInt() {
         String z02;
-        int i10 = this.f54417u;
+        int i10 = this.f54418u;
         if (i10 == 0) {
             i10 = I();
         }
         if (i10 == 16) {
-            long j10 = this.f54418v;
+            long j10 = this.f54419v;
             int i11 = (int) j10;
             if (j10 == i11) {
-                this.f54417u = 0;
-                int[] iArr = this.f54397o;
-                int i12 = this.f54394d - 1;
+                this.f54418u = 0;
+                int[] iArr = this.f54398o;
+                int i12 = this.f54395d - 1;
                 iArr[i12] = iArr[i12] + 1;
                 return i11;
             }
-            throw new a("Expected an int but was " + this.f54418v + " at path " + t());
+            throw new a("Expected an int but was " + this.f54419v + " at path " + t());
         }
         if (i10 == 17) {
-            this.f54420x = this.f54416t.d1(this.f54419w);
+            this.f54421x = this.f54417t.d1(this.f54420w);
         } else if (i10 != 9 && i10 != 8) {
             if (i10 != 11) {
                 throw new a("Expected an int but was " + m() + " at path " + t());
             }
         } else {
             if (i10 == 9) {
-                z02 = z0(f54414z);
+                z02 = z0(f54415z);
             } else {
-                z02 = z0(f54413y);
+                z02 = z0(f54414y);
             }
-            this.f54420x = z02;
+            this.f54421x = z02;
             try {
                 int parseInt = Integer.parseInt(z02);
-                this.f54417u = 0;
-                int[] iArr2 = this.f54397o;
-                int i13 = this.f54394d - 1;
+                this.f54418u = 0;
+                int[] iArr2 = this.f54398o;
+                int i13 = this.f54395d - 1;
                 iArr2[i13] = iArr2[i13] + 1;
                 return parseInt;
             } catch (NumberFormatException unused) {
             }
         }
-        this.f54417u = 11;
+        this.f54418u = 11;
         try {
-            double parseDouble = Double.parseDouble(this.f54420x);
+            double parseDouble = Double.parseDouble(this.f54421x);
             int i14 = (int) parseDouble;
             if (i14 == parseDouble) {
-                this.f54420x = null;
-                this.f54417u = 0;
-                int[] iArr3 = this.f54397o;
-                int i15 = this.f54394d - 1;
+                this.f54421x = null;
+                this.f54418u = 0;
+                int[] iArr3 = this.f54398o;
+                int i15 = this.f54395d - 1;
                 iArr3[i15] = iArr3[i15] + 1;
                 return i14;
             }
-            throw new a("Expected an int but was " + this.f54420x + " at path " + t());
+            throw new a("Expected an int but was " + this.f54421x + " at path " + t());
         } catch (NumberFormatException unused2) {
-            throw new a("Expected an int but was " + this.f54420x + " at path " + t());
+            throw new a("Expected an int but was " + this.f54421x + " at path " + t());
         }
     }
 
     @Override // x5.c
     public String o0() {
         String str;
-        int i10 = this.f54417u;
+        int i10 = this.f54418u;
         if (i10 == 0) {
             i10 = I();
         }
         if (i10 == 14) {
             str = C0();
         } else if (i10 == 13) {
-            str = z0(f54414z);
+            str = z0(f54415z);
         } else if (i10 == 12) {
-            str = z0(f54413y);
+            str = z0(f54414y);
         } else if (i10 == 15) {
-            str = this.f54420x;
+            str = this.f54421x;
         } else {
             throw new a("Expected a name but was " + m() + " at path " + t());
         }
-        this.f54417u = 0;
-        this.f54396i[this.f54394d - 1] = str;
+        this.f54418u = 0;
+        this.f54397i[this.f54395d - 1] = str;
         return str;
     }
 
     @Override // x5.c
     public int p(c.a aVar) {
-        int i10 = this.f54417u;
+        int i10 = this.f54418u;
         if (i10 == 0) {
             i10 = I();
         }
@@ -958,61 +958,61 @@ public final class e extends c {
             return -1;
         }
         if (i10 == 15) {
-            return J(this.f54420x, aVar);
+            return J(this.f54421x, aVar);
         }
-        int T1 = this.f54415s.T1(aVar.f54401b);
+        int T1 = this.f54416s.T1(aVar.f54402b);
         if (T1 != -1) {
-            this.f54417u = 0;
-            this.f54396i[this.f54394d - 1] = aVar.f54400a[T1];
+            this.f54418u = 0;
+            this.f54397i[this.f54395d - 1] = aVar.f54401a[T1];
             return T1;
         }
-        String str = this.f54396i[this.f54394d - 1];
+        String str = this.f54397i[this.f54395d - 1];
         String o02 = o0();
         int J = J(o02, aVar);
         if (J == -1) {
-            this.f54417u = 15;
-            this.f54420x = o02;
-            this.f54396i[this.f54394d - 1] = str;
+            this.f54418u = 15;
+            this.f54421x = o02;
+            this.f54397i[this.f54395d - 1] = str;
         }
         return J;
     }
 
     @Override // x5.c
     public void s() {
-        if (!this.f54399q) {
-            int i10 = this.f54417u;
+        if (!this.f54400q) {
+            int i10 = this.f54418u;
             if (i10 == 0) {
                 i10 = I();
             }
             if (i10 == 14) {
                 O0();
             } else if (i10 == 13) {
-                H0(f54414z);
+                H0(f54415z);
             } else if (i10 == 12) {
-                H0(f54413y);
+                H0(f54414y);
             } else if (i10 != 15) {
                 throw new a("Expected a name but was " + m() + " at path " + t());
             }
-            this.f54417u = 0;
-            this.f54396i[this.f54394d - 1] = "null";
+            this.f54418u = 0;
+            this.f54397i[this.f54395d - 1] = "null";
             return;
         }
         throw new a("Cannot skip unexpected " + m() + " at " + t());
     }
 
     public String toString() {
-        return "JsonReader(" + this.f54415s + ")";
+        return "JsonReader(" + this.f54416s + ")";
     }
 
     @Override // x5.c
     public void u() {
-        int i10 = this.f54417u;
+        int i10 = this.f54418u;
         if (i10 == 0) {
             i10 = I();
         }
         if (i10 == 1) {
             n(3);
-            this.f54417u = 0;
+            this.f54418u = 0;
             return;
         }
         throw new a("Expected BEGIN_OBJECT but was " + m() + " at path " + t());
@@ -1020,17 +1020,17 @@ public final class e extends c {
 
     @Override // x5.c
     public void v() {
-        int i10 = this.f54417u;
+        int i10 = this.f54418u;
         if (i10 == 0) {
             i10 = I();
         }
         if (i10 == 4) {
-            int i11 = this.f54394d;
-            this.f54394d = i11 - 1;
-            int[] iArr = this.f54397o;
+            int i11 = this.f54395d;
+            this.f54395d = i11 - 1;
+            int[] iArr = this.f54398o;
             int i12 = i11 - 2;
             iArr[i12] = iArr[i12] + 1;
-            this.f54417u = 0;
+            this.f54418u = 0;
             return;
         }
         throw new a("Expected END_ARRAY but was " + m() + " at path " + t());
@@ -1038,14 +1038,14 @@ public final class e extends c {
 
     @Override // x5.c
     public void x() {
-        int i10 = this.f54417u;
+        int i10 = this.f54418u;
         if (i10 == 0) {
             i10 = I();
         }
         if (i10 == 3) {
             n(1);
-            this.f54397o[this.f54394d - 1] = 0;
-            this.f54417u = 0;
+            this.f54398o[this.f54395d - 1] = 0;
+            this.f54418u = 0;
             return;
         }
         throw new a("Expected BEGIN_ARRAY but was " + m() + " at path " + t());

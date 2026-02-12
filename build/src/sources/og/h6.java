@@ -5,7 +5,7 @@ import bj.c;
 final class h6 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final h6 f39254a = new h6();
+    static final h6 f39255a = new h6();
 
     static {
         c.b a10 = bj.c.a("remoteModelOptions");

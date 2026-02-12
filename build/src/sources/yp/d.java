@@ -9,30 +9,30 @@ import wp.d2;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f55712a;
+    private final h f55713a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f55713b;
+    private final h f55714b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f55714c;
+    private final h f55715c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final h f55715d;
+    private final h f55716d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final h f55716e;
+    private final h f55717e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final h f55717f;
+    private final h f55718f;
 
     public d(h hVar, h hVar2, h hVar3, h hVar4, h hVar5, h hVar6) {
-        this.f55712a = hVar;
-        this.f55713b = hVar2;
-        this.f55714c = hVar3;
-        this.f55715d = hVar4;
-        this.f55716e = hVar5;
-        this.f55717f = hVar6;
+        this.f55713a = hVar;
+        this.f55714b = hVar2;
+        this.f55715c = hVar3;
+        this.f55716d = hVar4;
+        this.f55717e = hVar5;
+        this.f55718f = hVar6;
     }
 
     public static d a(h hVar, h hVar2, h hVar3, h hVar4, h hVar5, h hVar6) {
@@ -44,6 +44,6 @@ public final class d {
     }
 
     public c b(String str, String str2, d2 d2Var, List list, String str3, String str4, String str5, String str6, v vVar, long j10) {
-        return c((Context) this.f55712a.get(), str, str2, d2Var, list, (a) this.f55713b.get(), str3, str4, str5, (cq.a) this.f55714c.get(), (so.a) this.f55715d.get(), (hq.a) this.f55716e.get(), str6, vVar, (ko.a) this.f55717f.get(), j10);
+        return c((Context) this.f55713a.get(), str, str2, d2Var, list, (a) this.f55714b.get(), str3, str4, str5, (cq.a) this.f55715c.get(), (so.a) this.f55716d.get(), (hq.a) this.f55717e.get(), str6, vVar, (ko.a) this.f55718f.get(), j10);
     }
 }

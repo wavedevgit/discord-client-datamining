@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.name.Name;
 class q implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaClassMemberScope f32986d;
+    private final LazyJavaClassMemberScope f32987d;
 
     public q(LazyJavaClassMemberScope lazyJavaClassMemberScope) {
-        this.f32986d = lazyJavaClassMemberScope;
+        this.f32987d = lazyJavaClassMemberScope;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         Collection o02;
-        o02 = LazyJavaClassMemberScope.o0(this.f32986d, (Name) obj);
+        o02 = LazyJavaClassMemberScope.o0(this.f32987d, (Name) obj);
         return o02;
     }
 }

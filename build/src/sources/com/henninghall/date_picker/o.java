@@ -21,7 +21,7 @@ public abstract class o {
     }
 
     public static boolean c() {
-        return !DateFormat.is24HourFormat(c.f17468a);
+        return !DateFormat.is24HourFormat(c.f17469a);
     }
 
     private static SimpleDateFormat d() {
@@ -96,7 +96,7 @@ public abstract class o {
     }
 
     public static int j(int i10) {
-        return (int) (i10 * c.f17468a.getResources().getDisplayMetrics().density);
+        return (int) (i10 * c.f17469a.getResources().getDisplayMetrics().density);
     }
 
     public static String k(int i10) {

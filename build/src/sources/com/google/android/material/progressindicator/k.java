@@ -18,7 +18,7 @@ public final class k extends h {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static k v(Context context, f fVar, c cVar) {
         j dVar;
-        if (fVar.f16126o == 1) {
+        if (fVar.f16127o == 1) {
             dVar = new e(context, fVar);
         } else {
             dVar = new d(fVar);
@@ -29,8 +29,8 @@ public final class k extends h {
     }
 
     private boolean y() {
-        ph.a aVar = this.f16133i;
-        if (aVar == null || aVar.a(this.f16131d.getContentResolver()) != 0.0f) {
+        ph.a aVar = this.f16134i;
+        if (aVar == null || aVar.a(this.f16132d.getContentResolver()) != 0.0f) {
             return false;
         }
         return true;

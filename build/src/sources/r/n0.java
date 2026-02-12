@@ -15,49 +15,49 @@ import r.n0;
 public final class n0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f45835a;
+    private final b f45836a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f45836b = new ArrayMap(4);
+    private final Map f45837b = new ArrayMap(4);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a extends CameraManager.AvailabilityCallback {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Executor f45837a;
+        private final Executor f45838a;
 
         /* renamed from: b  reason: collision with root package name */
-        final CameraManager.AvailabilityCallback f45838b;
+        final CameraManager.AvailabilityCallback f45839b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Object f45839c = new Object();
+        private final Object f45840c = new Object();
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f45840d = false;
+        private boolean f45841d = false;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public a(Executor executor, CameraManager.AvailabilityCallback availabilityCallback) {
-            this.f45837a = executor;
-            this.f45838b = availabilityCallback;
+            this.f45838a = executor;
+            this.f45839b = availabilityCallback;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public void d() {
-            synchronized (this.f45839c) {
-                this.f45840d = true;
+            synchronized (this.f45840c) {
+                this.f45841d = true;
             }
         }
 
         @Override // android.hardware.camera2.CameraManager.AvailabilityCallback
         public void onCameraAccessPrioritiesChanged() {
-            synchronized (this.f45839c) {
+            synchronized (this.f45840c) {
                 try {
-                    if (!this.f45840d) {
-                        this.f45837a.execute(new Runnable() { // from class: r.l0
+                    if (!this.f45841d) {
+                        this.f45838a.execute(new Runnable() { // from class: r.l0
                             @Override // java.lang.Runnable
                             public final void run() {
-                                e.a(n0.a.this.f45838b);
+                                e.a(n0.a.this.f45839b);
                             }
                         });
                     }
@@ -69,13 +69,13 @@ public final class n0 {
 
         @Override // android.hardware.camera2.CameraManager.AvailabilityCallback
         public void onCameraAvailable(final String str) {
-            synchronized (this.f45839c) {
+            synchronized (this.f45840c) {
                 try {
-                    if (!this.f45840d) {
-                        this.f45837a.execute(new Runnable() { // from class: r.k0
+                    if (!this.f45841d) {
+                        this.f45838a.execute(new Runnable() { // from class: r.k0
                             @Override // java.lang.Runnable
                             public final void run() {
-                                n0.a.this.f45838b.onCameraAvailable(str);
+                                n0.a.this.f45839b.onCameraAvailable(str);
                             }
                         });
                     }
@@ -87,13 +87,13 @@ public final class n0 {
 
         @Override // android.hardware.camera2.CameraManager.AvailabilityCallback
         public void onCameraUnavailable(final String str) {
-            synchronized (this.f45839c) {
+            synchronized (this.f45840c) {
                 try {
-                    if (!this.f45840d) {
-                        this.f45837a.execute(new Runnable() { // from class: r.m0
+                    if (!this.f45841d) {
+                        this.f45838a.execute(new Runnable() { // from class: r.m0
                             @Override // java.lang.Runnable
                             public final void run() {
-                                n0.a.this.f45838b.onCameraUnavailable(str);
+                                n0.a.this.f45839b.onCameraUnavailable(str);
                             }
                         });
                     }
@@ -134,7 +134,7 @@ public final class n0 {
     }
 
     private n0(b bVar) {
-        this.f45835a = bVar;
+        this.f45836a = bVar;
     }
 
     public static n0 a(Context context) {
@@ -147,12 +147,12 @@ public final class n0 {
 
     public a0 c(String str) {
         a0 a0Var;
-        synchronized (this.f45836b) {
-            a0Var = (a0) this.f45836b.get(str);
+        synchronized (this.f45837b) {
+            a0Var = (a0) this.f45837b.get(str);
             if (a0Var == null) {
                 try {
-                    a0Var = a0.e(this.f45835a.b(str), str);
-                    this.f45836b.put(str, a0Var);
+                    a0Var = a0.e(this.f45836a.b(str), str);
+                    this.f45837b.put(str, a0Var);
                 } catch (AssertionError e10) {
                     throw new f(10002, e10.getMessage(), e10);
                 }
@@ -162,22 +162,22 @@ public final class n0 {
     }
 
     public String[] d() {
-        return this.f45835a.e();
+        return this.f45836a.e();
     }
 
     public Set e() {
-        return this.f45835a.c();
+        return this.f45836a.c();
     }
 
     public void f(String str, Executor executor, CameraDevice.StateCallback stateCallback) {
-        this.f45835a.d(str, executor, stateCallback);
+        this.f45836a.d(str, executor, stateCallback);
     }
 
     public void g(Executor executor, CameraManager.AvailabilityCallback availabilityCallback) {
-        this.f45835a.a(executor, availabilityCallback);
+        this.f45836a.a(executor, availabilityCallback);
     }
 
     public void h(CameraManager.AvailabilityCallback availabilityCallback) {
-        this.f45835a.f(availabilityCallback);
+        this.f45836a.f(availabilityCallback);
     }
 }

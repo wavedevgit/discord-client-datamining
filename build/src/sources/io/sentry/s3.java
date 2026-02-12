@@ -3,35 +3,35 @@ package io.sentry;
 public final class s3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private io.sentry.protocol.x f30029a;
+    private io.sentry.protocol.x f30030a;
 
     /* renamed from: b  reason: collision with root package name */
-    private j8 f30030b;
+    private j8 f30031b;
 
     /* renamed from: c  reason: collision with root package name */
-    private j8 f30031c;
+    private j8 f30032c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Boolean f30032d;
+    private Boolean f30033d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final d f30033e;
+    private final d f30034e;
 
     public s3() {
         this(new io.sentry.protocol.x(), new j8(), null, null, null);
     }
 
     public d a() {
-        return this.f30033e;
+        return this.f30034e;
     }
 
     public j8 b() {
-        return this.f30031c;
+        return this.f30032c;
     }
 
     public Double c() {
         double doubleValue;
-        Double i10 = this.f30033e.i();
+        Double i10 = this.f30034e.i();
         if (i10 == null) {
             doubleValue = 0.0d;
         } else {
@@ -41,25 +41,25 @@ public final class s3 {
     }
 
     public j8 d() {
-        return this.f30030b;
+        return this.f30031b;
     }
 
     public io.sentry.protocol.x e() {
-        return this.f30029a;
+        return this.f30030a;
     }
 
     public Boolean f() {
-        return this.f30032d;
+        return this.f30033d;
     }
 
     public e8 g() {
-        e8 e8Var = new e8(this.f30029a, this.f30030b, "default", null, null);
+        e8 e8Var = new e8(this.f30030a, this.f30031b, "default", null, null);
         e8Var.t("auto");
         return e8Var;
     }
 
     public q8 h() {
-        return this.f30033e.J();
+        return this.f30034e.J();
     }
 
     public s3(s3 s3Var) {
@@ -67,10 +67,10 @@ public final class s3 {
     }
 
     public s3(io.sentry.protocol.x xVar, j8 j8Var, j8 j8Var2, d dVar, Boolean bool) {
-        this.f30029a = xVar;
-        this.f30030b = j8Var;
-        this.f30031c = j8Var2;
-        this.f30033e = io.sentry.util.j0.e(dVar, bool, null, null);
-        this.f30032d = bool;
+        this.f30030a = xVar;
+        this.f30031b = j8Var;
+        this.f30032c = j8Var2;
+        this.f30034e = io.sentry.util.j0.e(dVar, bool, null, null);
+        this.f30033d = bool;
     }
 }

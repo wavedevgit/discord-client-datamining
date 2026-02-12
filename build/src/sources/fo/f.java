@@ -14,7 +14,7 @@ public final class f implements Parcelable {
     public static final Parcelable.Creator<f> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f24003d;
+    private final List f24004d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -39,11 +39,11 @@ public final class f implements Parcelable {
 
     public f(List rules) {
         Intrinsics.checkNotNullParameter(rules, "rules");
-        this.f24003d = rules;
+        this.f24004d = rules;
     }
 
     public final List a() {
-        return this.f24003d;
+        return this.f24004d;
     }
 
     @Override // android.os.Parcelable
@@ -55,25 +55,25 @@ public final class f implements Parcelable {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof f) && Intrinsics.areEqual(this.f24003d, ((f) obj).f24003d)) {
+        if ((obj instanceof f) && Intrinsics.areEqual(this.f24004d, ((f) obj).f24004d)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f24003d.hashCode();
+        return this.f24004d.hashCode();
     }
 
     public String toString() {
-        List list = this.f24003d;
+        List list = this.f24004d;
         return "AutoCaptureRuleSet(rules=" + list + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        List<Parcelable> list = this.f24003d;
+        List<Parcelable> list = this.f24004d;
         dest.writeInt(list.size());
         for (Parcelable parcelable : list) {
             dest.writeParcelable(parcelable, i10);

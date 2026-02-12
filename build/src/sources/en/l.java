@@ -11,19 +11,19 @@ import kotlinx.coroutines.flow.FlowCollector;
 public final class l implements o {
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f22988b;
+    private final long f22989b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f22989c;
+    private final String f22990c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f22990d;
+        int f22991d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f22991e;
+        private /* synthetic */ Object f22992e;
 
         a(Continuation continuation) {
             super(2, continuation);
@@ -32,7 +32,7 @@ public final class l implements o {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             a aVar = new a(continuation);
-            aVar.f22991e = obj;
+            aVar.f22992e = obj;
             return aVar;
         }
 
@@ -54,7 +54,7 @@ public final class l implements o {
             /*
                 r6 = this;
                 java.lang.Object r0 = gs.b.f()
-                int r1 = r6.f22990d
+                int r1 = r6.f22991d
                 r2 = 2
                 r3 = 1
                 if (r1 == 0) goto L22
@@ -68,33 +68,33 @@ public final class l implements o {
                 r7.<init>(r0)
                 throw r7
             L1a:
-                java.lang.Object r1 = r6.f22991e
+                java.lang.Object r1 = r6.f22992e
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 kotlin.c.b(r7)
                 goto L3b
             L22:
                 kotlin.c.b(r7)
-                java.lang.Object r7 = r6.f22991e
+                java.lang.Object r7 = r6.f22992e
                 r1 = r7
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 en.l r7 = en.l.this
                 long r4 = en.l.b(r7)
-                r6.f22991e = r1
-                r6.f22990d = r3
+                r6.f22992e = r1
+                r6.f22991d = r3
                 java.lang.Object r7 = ys.i0.a(r4, r6)
                 if (r7 != r0) goto L3b
                 goto L48
             L3b:
-                kotlin.Unit r7 = kotlin.Unit.f31987a
+                kotlin.Unit r7 = kotlin.Unit.f31988a
                 r3 = 0
-                r6.f22991e = r3
-                r6.f22990d = r2
+                r6.f22992e = r3
+                r6.f22991d = r2
                 java.lang.Object r7 = r1.emit(r7, r6)
                 if (r7 != r0) goto L49
             L48:
                 return r0
             L49:
-                kotlin.Unit r7 = kotlin.Unit.f31987a
+                kotlin.Unit r7 = kotlin.Unit.f31988a
                 return r7
             */
             throw new UnsupportedOperationException("Method not decompiled: en.l.a.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -102,20 +102,20 @@ public final class l implements o {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((a) create(flowCollector, continuation)).invokeSuspend(Unit.f31987a);
+            return ((a) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
     public l(long j10, String key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        this.f22988b = j10;
-        this.f22989c = key;
+        this.f22989b = j10;
+        this.f22990c = key;
     }
 
     @Override // en.o
     public boolean a(o otherWorker) {
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
-        if ((otherWorker instanceof l) && Intrinsics.areEqual(((l) otherWorker).f22989c, this.f22989c)) {
+        if ((otherWorker instanceof l) && Intrinsics.areEqual(((l) otherWorker).f22990c, this.f22990c)) {
             return true;
         }
         return false;
@@ -129,14 +129,14 @@ public final class l implements o {
             return false;
         }
         l lVar = (l) obj;
-        if (this.f22988b == lVar.f22988b && Intrinsics.areEqual(this.f22989c, lVar.f22989c)) {
+        if (this.f22989b == lVar.f22989b && Intrinsics.areEqual(this.f22990c, lVar.f22990c)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (Long.hashCode(this.f22988b) * 31) + this.f22989c.hashCode();
+        return (Long.hashCode(this.f22989b) * 31) + this.f22990c.hashCode();
     }
 
     @Override // en.o
@@ -145,6 +145,6 @@ public final class l implements o {
     }
 
     public String toString() {
-        return "TimerWorker(delayMs=" + this.f22988b + ", key=" + this.f22989c + ')';
+        return "TimerWorker(delayMs=" + this.f22989b + ", key=" + this.f22990c + ')';
     }
 }

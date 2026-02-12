@@ -5,16 +5,16 @@ import bj.c;
 final class u6 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final u6 f45007a = new u6();
+    static final u6 f45008a = new u6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f45008b;
+    private static final bj.c f45009b;
 
     static {
         c.b a10 = bj.c.a("identifiedLanguage");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f45008b = a10.b(s1Var.b()).a();
+        f45009b = a10.b(s1Var.b()).a();
     }
 
     private u6() {

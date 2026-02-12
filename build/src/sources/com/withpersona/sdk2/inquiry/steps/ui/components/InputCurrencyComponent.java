@@ -24,25 +24,25 @@ public final class InputCurrencyComponent implements k5, v4, v, e0 {
     public static final Parcelable.Creator<InputCurrencyComponent> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f20648d;
+    private final String f20649d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Number f20649e;
+    private final Number f20650e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f20650i;
+    private final JsonLogicBoolean f20651i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final JsonLogicBoolean f20651o;
+    private final JsonLogicBoolean f20652o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final TextBasedComponentStyle f20652p;
+    private final TextBasedComponentStyle f20653p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final List f20653q;
+    private final List f20654q;
 
     /* renamed from: r  reason: collision with root package name */
-    private i f20654r;
+    private i f20655r;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -62,30 +62,30 @@ public final class InputCurrencyComponent implements k5, v4, v, e0 {
 
     public InputCurrencyComponent(String name, Number number, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, TextBasedComponentStyle textBasedComponentStyle) {
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f20648d = name;
-        this.f20649e = number;
-        this.f20650i = jsonLogicBoolean;
-        this.f20651o = jsonLogicBoolean2;
-        this.f20652p = textBasedComponentStyle;
-        this.f20653q = new ArrayList();
-        this.f20654r = new i(number);
+        this.f20649d = name;
+        this.f20650e = number;
+        this.f20651i = jsonLogicBoolean;
+        this.f20652o = jsonLogicBoolean2;
+        this.f20653p = textBasedComponentStyle;
+        this.f20654q = new ArrayList();
+        this.f20655r = new i(number);
     }
 
     public static /* synthetic */ InputCurrencyComponent e(InputCurrencyComponent inputCurrencyComponent, String str, Number number, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, TextBasedComponentStyle textBasedComponentStyle, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = inputCurrencyComponent.f20648d;
+            str = inputCurrencyComponent.f20649d;
         }
         if ((i10 & 2) != 0) {
-            number = inputCurrencyComponent.f20649e;
+            number = inputCurrencyComponent.f20650e;
         }
         if ((i10 & 4) != 0) {
-            jsonLogicBoolean = inputCurrencyComponent.f20650i;
+            jsonLogicBoolean = inputCurrencyComponent.f20651i;
         }
         if ((i10 & 8) != 0) {
-            jsonLogicBoolean2 = inputCurrencyComponent.f20651o;
+            jsonLogicBoolean2 = inputCurrencyComponent.f20652o;
         }
         if ((i10 & 16) != 0) {
-            textBasedComponentStyle = inputCurrencyComponent.f20652p;
+            textBasedComponentStyle = inputCurrencyComponent.f20653p;
         }
         TextBasedComponentStyle textBasedComponentStyle2 = textBasedComponentStyle;
         JsonLogicBoolean jsonLogicBoolean3 = jsonLogicBoolean;
@@ -98,7 +98,7 @@ public final class InputCurrencyComponent implements k5, v4, v, e0 {
 
     @Override // pq.v4
     public i b() {
-        return this.f20654r;
+        return this.f20655r;
     }
 
     public final InputCurrencyComponent c(String name, Number number, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, TextBasedComponentStyle textBasedComponentStyle) {
@@ -108,7 +108,7 @@ public final class InputCurrencyComponent implements k5, v4, v, e0 {
 
     @Override // pq.e0
     public List d() {
-        return this.f20653q;
+        return this.f20654q;
     }
 
     @Override // android.os.Parcelable
@@ -122,49 +122,49 @@ public final class InputCurrencyComponent implements k5, v4, v, e0 {
         }
         if (obj instanceof InputCurrencyComponent) {
             InputCurrencyComponent inputCurrencyComponent = (InputCurrencyComponent) obj;
-            return Intrinsics.areEqual(this.f20648d, inputCurrencyComponent.f20648d) && Intrinsics.areEqual(this.f20649e, inputCurrencyComponent.f20649e) && Intrinsics.areEqual(this.f20650i, inputCurrencyComponent.f20650i) && Intrinsics.areEqual(this.f20651o, inputCurrencyComponent.f20651o) && Intrinsics.areEqual(this.f20652p, inputCurrencyComponent.f20652p);
+            return Intrinsics.areEqual(this.f20649d, inputCurrencyComponent.f20649d) && Intrinsics.areEqual(this.f20650e, inputCurrencyComponent.f20650e) && Intrinsics.areEqual(this.f20651i, inputCurrencyComponent.f20651i) && Intrinsics.areEqual(this.f20652o, inputCurrencyComponent.f20652o) && Intrinsics.areEqual(this.f20653p, inputCurrencyComponent.f20653p);
         }
         return false;
     }
 
     public final TextBasedComponentStyle f() {
-        return this.f20652p;
+        return this.f20653p;
     }
 
     public final Number g() {
-        return this.f20649e;
+        return this.f20650e;
     }
 
     @Override // pq.v
     public JsonLogicBoolean getDisabled() {
-        return this.f20651o;
+        return this.f20652o;
     }
 
     @Override // pq.e0
     public JsonLogicBoolean getHidden() {
-        return this.f20650i;
+        return this.f20651i;
     }
 
     @Override // pq.k5
     public String getName() {
-        return this.f20648d;
+        return this.f20649d;
     }
 
     public int hashCode() {
-        int hashCode = this.f20648d.hashCode() * 31;
-        Number number = this.f20649e;
+        int hashCode = this.f20649d.hashCode() * 31;
+        Number number = this.f20650e;
         int hashCode2 = (hashCode + (number == null ? 0 : number.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f20650i;
+        JsonLogicBoolean jsonLogicBoolean = this.f20651i;
         int hashCode3 = (hashCode2 + (jsonLogicBoolean == null ? 0 : jsonLogicBoolean.hashCode())) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20651o;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20652o;
         int hashCode4 = (hashCode3 + (jsonLogicBoolean2 == null ? 0 : jsonLogicBoolean2.hashCode())) * 31;
-        TextBasedComponentStyle textBasedComponentStyle = this.f20652p;
+        TextBasedComponentStyle textBasedComponentStyle = this.f20653p;
         return hashCode4 + (textBasedComponentStyle != null ? textBasedComponentStyle.hashCode() : 0);
     }
 
     public void i(i iVar) {
         Intrinsics.checkNotNullParameter(iVar, "<set-?>");
-        this.f20654r = iVar;
+        this.f20655r = iVar;
     }
 
     @Override // pq.v4
@@ -176,22 +176,22 @@ public final class InputCurrencyComponent implements k5, v4, v, e0 {
     }
 
     public String toString() {
-        String str = this.f20648d;
-        Number number = this.f20649e;
-        JsonLogicBoolean jsonLogicBoolean = this.f20650i;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f20651o;
-        TextBasedComponentStyle textBasedComponentStyle = this.f20652p;
+        String str = this.f20649d;
+        Number number = this.f20650e;
+        JsonLogicBoolean jsonLogicBoolean = this.f20651i;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f20652o;
+        TextBasedComponentStyle textBasedComponentStyle = this.f20653p;
         return "InputCurrencyComponent(name=" + str + ", value=" + number + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ", errorTextStyle=" + textBasedComponentStyle + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f20648d);
-        dest.writeSerializable(this.f20649e);
-        dest.writeParcelable(this.f20650i, i10);
-        dest.writeParcelable(this.f20651o, i10);
-        dest.writeParcelable(this.f20652p, i10);
+        dest.writeString(this.f20649d);
+        dest.writeSerializable(this.f20650e);
+        dest.writeParcelable(this.f20651i, i10);
+        dest.writeParcelable(this.f20652o, i10);
+        dest.writeParcelable(this.f20653p, i10);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

@@ -5,7 +5,7 @@ import bj.c;
 final class ub implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ub f47188a = new ub();
+    static final ub f47189a = new ub();
 
     static {
         c.b a10 = bj.c.a("detectionType");

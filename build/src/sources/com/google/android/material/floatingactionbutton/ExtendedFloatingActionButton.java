@@ -22,13 +22,13 @@ public abstract class ExtendedFloatingActionButton extends MaterialButton implem
     static final Property W = new a(Float.class, "width");
 
     /* renamed from: a0  reason: collision with root package name */
-    static final Property f15737a0 = new b(Float.class, "height");
+    static final Property f15738a0 = new b(Float.class, "height");
 
     /* renamed from: b0  reason: collision with root package name */
-    static final Property f15738b0 = new c(Float.class, ViewProps.PADDING_START);
+    static final Property f15739b0 = new c(Float.class, ViewProps.PADDING_START);
 
     /* renamed from: c0  reason: collision with root package name */
-    static final Property f15739c0 = new d(Float.class, ViewProps.PADDING_END);
+    static final Property f15740c0 = new d(Float.class, ViewProps.PADDING_END);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a extends Property {
@@ -120,17 +120,17 @@ public abstract class ExtendedFloatingActionButton extends MaterialButton implem
     protected static class ExtendedFloatingActionButtonBehavior<T extends ExtendedFloatingActionButton> extends CoordinatorLayout.c {
 
         /* renamed from: d  reason: collision with root package name */
-        private Rect f15740d;
+        private Rect f15741d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f15741e;
+        private boolean f15742e;
 
         /* renamed from: i  reason: collision with root package name */
-        private boolean f15742i;
+        private boolean f15743i;
 
         public ExtendedFloatingActionButtonBehavior() {
-            this.f15741e = false;
-            this.f15742i = true;
+            this.f15742e = false;
+            this.f15743i = true;
         }
 
         private static boolean K(View view) {
@@ -149,10 +149,10 @@ public abstract class ExtendedFloatingActionButton extends MaterialButton implem
             if (!N(appBarLayout, extendedFloatingActionButton)) {
                 return false;
             }
-            if (this.f15740d == null) {
-                this.f15740d = new Rect();
+            if (this.f15741d == null) {
+                this.f15741d = new Rect();
             }
-            Rect rect = this.f15740d;
+            Rect rect = this.f15741d;
             com.google.android.material.internal.b.a(coordinatorLayout, appBarLayout, rect);
             if (rect.bottom <= appBarLayout.getMinimumHeightForVisibleOverlappingContent()) {
                 O(extendedFloatingActionButton);
@@ -171,7 +171,7 @@ public abstract class ExtendedFloatingActionButton extends MaterialButton implem
 
         protected void I(ExtendedFloatingActionButton extendedFloatingActionButton) {
             int i10;
-            if (this.f15742i) {
+            if (this.f15743i) {
                 i10 = 3;
             } else {
                 i10 = 0;
@@ -216,7 +216,7 @@ public abstract class ExtendedFloatingActionButton extends MaterialButton implem
 
         protected void O(ExtendedFloatingActionButton extendedFloatingActionButton) {
             int i10;
-            if (this.f15742i) {
+            if (this.f15743i) {
                 i10 = 2;
             } else {
                 i10 = 1;
@@ -252,8 +252,8 @@ public abstract class ExtendedFloatingActionButton extends MaterialButton implem
         public ExtendedFloatingActionButtonBehavior(@NonNull Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
             TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, l.U1);
-            this.f15741e = obtainStyledAttributes.getBoolean(l.V1, false);
-            this.f15742i = obtainStyledAttributes.getBoolean(l.W1, true);
+            this.f15742e = obtainStyledAttributes.getBoolean(l.V1, false);
+            this.f15743i = obtainStyledAttributes.getBoolean(l.W1, true);
             obtainStyledAttributes.recycle();
         }
     }

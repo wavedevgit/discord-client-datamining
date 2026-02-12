@@ -13,21 +13,21 @@ import org.jetbrains.annotations.NotNull;
 public final class ReflectJavaArrayType extends ReflectJavaType implements JavaArrayType {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Type f32616a;
+    private final Type f32617a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ReflectJavaType f32617b;
+    private final ReflectJavaType f32618b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Collection f32618c;
+    private final Collection f32619c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f32619d;
+    private final boolean f32620d;
 
     public ReflectJavaArrayType(@NotNull Type reflectType) {
         ReflectJavaType create;
         Intrinsics.checkNotNullParameter(reflectType, "reflectType");
-        this.f32616a = reflectType;
+        this.f32617a = reflectType;
         Type reflectType2 = getReflectType();
         if (reflectType2 instanceof GenericArrayType) {
             ReflectJavaType.Factory factory = ReflectJavaType.Factory;
@@ -46,29 +46,29 @@ public final class ReflectJavaArrayType extends ReflectJavaType implements JavaA
             }
             throw new IllegalArgumentException("Not an array type (" + getReflectType().getClass() + "): " + getReflectType());
         }
-        this.f32617b = create;
-        this.f32618c = CollectionsKt.l();
+        this.f32618b = create;
+        this.f32619c = CollectionsKt.l();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaAnnotationOwner
     @NotNull
     public Collection<JavaAnnotation> getAnnotations() {
-        return this.f32618c;
+        return this.f32619c;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.ReflectJavaType
     protected Type getReflectType() {
-        return this.f32616a;
+        return this.f32617a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaAnnotationOwner
     public boolean isDeprecatedInJavaDoc() {
-        return this.f32619d;
+        return this.f32620d;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaArrayType
     @NotNull
     public ReflectJavaType getComponentType() {
-        return this.f32617b;
+        return this.f32618b;
     }
 }

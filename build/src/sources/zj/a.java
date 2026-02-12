@@ -9,38 +9,38 @@ import hf.q;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ak.a f56489a;
+    private final ak.a f56490a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Rect f56490b;
+    private final Rect f56491b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Point[] f56491c;
+    private final Point[] f56492c;
 
     public a(ak.a aVar, Matrix matrix) {
-        this.f56489a = (ak.a) q.l(aVar);
+        this.f56490a = (ak.a) q.l(aVar);
         Rect a10 = aVar.a();
         if (a10 != null && matrix != null) {
             b.e(a10, matrix);
         }
-        this.f56490b = a10;
+        this.f56491b = a10;
         Point[] d10 = aVar.d();
         if (d10 != null && matrix != null) {
             b.b(d10, matrix);
         }
-        this.f56491c = d10;
+        this.f56492c = d10;
     }
 
     public Rect a() {
-        return this.f56490b;
+        return this.f56491b;
     }
 
     public Point[] b() {
-        return this.f56491c;
+        return this.f56492c;
     }
 
     public int c() {
-        int format = this.f56489a.getFormat();
+        int format = this.f56490a.getFormat();
         if (format > 4096 || format == 0) {
             return -1;
         }
@@ -48,10 +48,10 @@ public class a {
     }
 
     public String d() {
-        return this.f56489a.b();
+        return this.f56490a.b();
     }
 
     public int e() {
-        return this.f56489a.c();
+        return this.f56490a.c();
     }
 }

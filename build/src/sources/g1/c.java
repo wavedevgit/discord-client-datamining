@@ -18,35 +18,35 @@ import w0.n;
 public final class c implements n {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Choreographer f24623d;
+    private final Choreographer f24624d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final g1.a f24624e;
+    private final g1.a f24625e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static final class a extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ g1.a f24625d;
+        final /* synthetic */ g1.a f24626d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Choreographer.FrameCallback f24626e;
+        final /* synthetic */ Choreographer.FrameCallback f24627e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(g1.a aVar, Choreographer.FrameCallback frameCallback) {
             super(1);
-            this.f24625d = aVar;
-            this.f24626e = frameCallback;
+            this.f24626d = aVar;
+            this.f24627e = frameCallback;
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((Throwable) obj);
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
 
         public final void invoke(Throwable th2) {
-            this.f24625d.x2(this.f24626e);
+            this.f24626d.x2(this.f24627e);
         }
     }
 
@@ -54,22 +54,22 @@ public final class c implements n {
     static final class b extends Lambda implements Function1 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Choreographer.FrameCallback f24628e;
+        final /* synthetic */ Choreographer.FrameCallback f24629e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(Choreographer.FrameCallback frameCallback) {
             super(1);
-            this.f24628e = frameCallback;
+            this.f24629e = frameCallback;
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((Throwable) obj);
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
 
         public final void invoke(Throwable th2) {
-            c.this.b().removeFrameCallback(this.f24628e);
+            c.this.b().removeFrameCallback(this.f24629e);
         }
     }
 
@@ -78,30 +78,30 @@ public final class c implements n {
     static final class Choreographer$FrameCallbackC0337c implements Choreographer.FrameCallback {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ CancellableContinuation f24629d;
+        final /* synthetic */ CancellableContinuation f24630d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ c f24630e;
+        final /* synthetic */ c f24631e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Function1 f24631i;
+        final /* synthetic */ Function1 f24632i;
 
         Choreographer$FrameCallbackC0337c(CancellableContinuation cancellableContinuation, c cVar, Function1 function1) {
-            this.f24629d = cancellableContinuation;
-            this.f24630e = cVar;
-            this.f24631i = function1;
+            this.f24630d = cancellableContinuation;
+            this.f24631e = cVar;
+            this.f24632i = function1;
         }
 
         @Override // android.view.Choreographer.FrameCallback
         public final void doFrame(long j10) {
             Object b10;
-            CancellableContinuation cancellableContinuation = this.f24629d;
-            Function1 function1 = this.f24631i;
+            CancellableContinuation cancellableContinuation = this.f24630d;
+            Function1 function1 = this.f24632i;
             try {
-                Result.a aVar = Result.f31984e;
+                Result.a aVar = Result.f31985e;
                 b10 = Result.b(function1.invoke(Long.valueOf(j10)));
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f31984e;
+                Result.a aVar2 = Result.f31985e;
                 b10 = Result.b(kotlin.c.a(th2));
             }
             cancellableContinuation.resumeWith(b10);
@@ -110,8 +110,8 @@ public final class c implements n {
 
     public c(Choreographer choreographer, g1.a aVar) {
         Intrinsics.checkNotNullParameter(choreographer, "choreographer");
-        this.f24623d = choreographer;
-        this.f24624e = aVar;
+        this.f24624d = choreographer;
+        this.f24625e = aVar;
     }
 
     @Override // kotlin.coroutines.CoroutineContext
@@ -121,9 +121,9 @@ public final class c implements n {
 
     @Override // w0.n
     public Object Z(Function1 function1, Continuation continuation) {
-        g1.a aVar = this.f24624e;
+        g1.a aVar = this.f24625e;
         if (aVar == null) {
-            CoroutineContext.Element m10 = continuation.getContext().m(d.f32059j);
+            CoroutineContext.Element m10 = continuation.getContext().m(d.f32060j);
             if (m10 instanceof g1.a) {
                 aVar = (g1.a) m10;
             } else {
@@ -158,7 +158,7 @@ public final class c implements n {
     }
 
     public final Choreographer b() {
-        return this.f24623d;
+        return this.f24624d;
     }
 
     @Override // kotlin.coroutines.CoroutineContext.Element, kotlin.coroutines.CoroutineContext

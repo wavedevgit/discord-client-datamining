@@ -5,7 +5,7 @@ import bj.c;
 final class k8 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k8 f46933a = new k8();
+    static final k8 f46934a = new k8();
 
     static {
         c.b a10 = bj.c.a("status");

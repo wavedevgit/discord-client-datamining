@@ -15,10 +15,10 @@ import ui.l;
 public class FirebaseInitProvider extends ContentProvider {
 
     /* renamed from: d  reason: collision with root package name */
-    private static l f17438d = l.e();
+    private static l f17439d = l.e();
 
     /* renamed from: e  reason: collision with root package name */
-    private static AtomicBoolean f17439e = new AtomicBoolean(false);
+    private static AtomicBoolean f17440e = new AtomicBoolean(false);
 
     private static void a(ProviderInfo providerInfo) {
         q.m(providerInfo, "FirebaseInitProvider ProviderInfo cannot be null.");
@@ -29,11 +29,11 @@ public class FirebaseInitProvider extends ContentProvider {
     }
 
     public static l b() {
-        return f17438d;
+        return f17439d;
     }
 
     public static boolean c() {
-        return f17439e.get();
+        return f17440e.get();
     }
 
     @Override // android.content.ContentProvider
@@ -60,16 +60,16 @@ public class FirebaseInitProvider extends ContentProvider {
     @Override // android.content.ContentProvider
     public boolean onCreate() {
         try {
-            f17439e.set(true);
+            f17440e.set(true);
             if (e.p(getContext()) == null) {
                 Log.i("FirebaseInitProvider", "FirebaseApp initialization unsuccessful");
             } else {
                 Log.i("FirebaseInitProvider", "FirebaseApp initialization successful");
             }
-            f17439e.set(false);
+            f17440e.set(false);
             return false;
         } catch (Throwable th2) {
-            f17439e.set(false);
+            f17440e.set(false);
             throw th2;
         }
     }

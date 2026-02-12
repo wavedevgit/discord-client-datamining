@@ -20,7 +20,7 @@ import qg.xa;
 public abstract class k {
 
     /* renamed from: a  reason: collision with root package name */
-    static final AtomicReference f23789a = new AtomicReference();
+    static final AtomicReference f23790a = new AtomicReference();
 
     public static n9 a(ek.e eVar) {
         k9 k9Var;
@@ -108,7 +108,7 @@ public abstract class k {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean d() {
-        AtomicReference atomicReference = f23789a;
+        AtomicReference atomicReference = f23790a;
         if (atomicReference.get() != null) {
             return ((Boolean) atomicReference.get()).booleanValue();
         }

@@ -6,7 +6,7 @@ public interface h {
     public static final class a implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final a f24196a = new a();
+        public static final a f24197a = new a();
 
         private a() {
         }
@@ -31,7 +31,7 @@ public interface h {
     public static final class b implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f24197a = new b();
+        public static final b f24198a = new b();
 
         private b() {
         }
@@ -56,43 +56,9 @@ public interface h {
     public static final class c implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f24198a;
-
-        public c(int i10) {
-            this.f24198a = i10;
-        }
-
-        public final int a() {
-            return this.f24198a;
-        }
-
-        public boolean equals(Object obj) {
-            if (this == obj) {
-                return true;
-            }
-            if ((obj instanceof c) && this.f24198a == ((c) obj).f24198a) {
-                return true;
-            }
-            return false;
-        }
-
-        public int hashCode() {
-            return Integer.hashCode(this.f24198a);
-        }
-
-        public String toString() {
-            int i10 = this.f24198a;
-            return "Check(pageIndex=" + i10 + ")";
-        }
-    }
-
-    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
-    public static final class d implements h {
-
-        /* renamed from: a  reason: collision with root package name */
         private final int f24199a;
 
-        public d(int i10) {
+        public c(int i10) {
             this.f24199a = i10;
         }
 
@@ -104,7 +70,7 @@ public interface h {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof d) && this.f24199a == ((d) obj).f24199a) {
+            if ((obj instanceof c) && this.f24199a == ((c) obj).f24199a) {
                 return true;
             }
             return false;
@@ -116,6 +82,40 @@ public interface h {
 
         public String toString() {
             int i10 = this.f24199a;
+            return "Check(pageIndex=" + i10 + ")";
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class d implements h {
+
+        /* renamed from: a  reason: collision with root package name */
+        private final int f24200a;
+
+        public d(int i10) {
+            this.f24200a = i10;
+        }
+
+        public final int a() {
+            return this.f24200a;
+        }
+
+        public boolean equals(Object obj) {
+            if (this == obj) {
+                return true;
+            }
+            if ((obj instanceof d) && this.f24200a == ((d) obj).f24200a) {
+                return true;
+            }
+            return false;
+        }
+
+        public int hashCode() {
+            return Integer.hashCode(this.f24200a);
+        }
+
+        public String toString() {
+            int i10 = this.f24200a;
             return "CheckUpload(pageIndex=" + i10 + ")";
         }
     }
@@ -124,7 +124,7 @@ public interface h {
     public static final class e implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final e f24200a = new e();
+        public static final e f24201a = new e();
 
         private e() {
         }
@@ -149,32 +149,32 @@ public interface h {
     public static final class f implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f24201a;
+        private final int f24202a;
 
         public f(int i10) {
-            this.f24201a = i10;
+            this.f24202a = i10;
         }
 
         public final int a() {
-            return this.f24201a;
+            return this.f24202a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof f) && this.f24201a == ((f) obj).f24201a) {
+            if ((obj instanceof f) && this.f24202a == ((f) obj).f24202a) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return Integer.hashCode(this.f24201a);
+            return Integer.hashCode(this.f24202a);
         }
 
         public String toString() {
-            int i10 = this.f24201a;
+            int i10 = this.f24202a;
             return "Prompt(pageIndex=" + i10 + ")";
         }
     }
@@ -183,7 +183,7 @@ public interface h {
     public static final class g implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final g f24202a = new g();
+        public static final g f24203a = new g();
 
         private g() {
         }
@@ -209,32 +209,32 @@ public interface h {
     public static final class C0327h implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f24203a;
+        private final int f24204a;
 
         public C0327h(int i10) {
-            this.f24203a = i10;
+            this.f24204a = i10;
         }
 
         public final int a() {
-            return this.f24203a;
+            return this.f24204a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof C0327h) && this.f24203a == ((C0327h) obj).f24203a) {
+            if ((obj instanceof C0327h) && this.f24204a == ((C0327h) obj).f24204a) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return Integer.hashCode(this.f24203a);
+            return Integer.hashCode(this.f24204a);
         }
 
         public String toString() {
-            int i10 = this.f24203a;
+            int i10 = this.f24204a;
             return "TakePhoto(pageIndex=" + i10 + ")";
         }
     }

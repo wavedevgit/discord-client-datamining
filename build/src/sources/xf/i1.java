@@ -8,14 +8,14 @@ public final class i1 extends jf.a {
     public static final Parcelable.Creator<i1> CREATOR = new j1();
 
     /* renamed from: d  reason: collision with root package name */
-    private final v4 f54650d;
+    private final v4 f54651d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final v4 f54651e;
+    private final v4 f54652e;
 
     public i1(v4 v4Var, v4 v4Var2) {
-        this.f54650d = v4Var;
-        this.f54651e = v4Var2;
+        this.f54651d = v4Var;
+        this.f54652e = v4Var2;
     }
 
     public final boolean equals(Object obj) {
@@ -23,20 +23,20 @@ public final class i1 extends jf.a {
             return false;
         }
         i1 i1Var = (i1) obj;
-        if (!hf.o.a(this.f54650d, i1Var.f54650d) || !hf.o.a(this.f54651e, i1Var.f54651e)) {
+        if (!hf.o.a(this.f54651d, i1Var.f54651d) || !hf.o.a(this.f54652e, i1Var.f54652e)) {
             return false;
         }
         return true;
     }
 
     public final int hashCode() {
-        return hf.o.b(this.f54650d, this.f54651e);
+        return hf.o.b(this.f54651d, this.f54652e);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
         byte[] p10;
-        v4 v4Var = this.f54650d;
+        v4 v4Var = this.f54651d;
         int a10 = jf.c.a(parcel);
         byte[] bArr = null;
         if (v4Var == null) {
@@ -45,7 +45,7 @@ public final class i1 extends jf.a {
             p10 = v4Var.p();
         }
         jf.c.f(parcel, 1, p10, false);
-        v4 v4Var2 = this.f54651e;
+        v4 v4Var2 = this.f54652e;
         if (v4Var2 != null) {
             bArr = v4Var2.p();
         }

@@ -14,30 +14,30 @@ import org.xmlpull.v1.XmlPullParserException;
 public class p {
 
     /* renamed from: a  reason: collision with root package name */
-    int f48905a;
+    int f48906a;
 
     /* renamed from: b  reason: collision with root package name */
-    private d f48906b;
+    private d f48907b;
 
     /* renamed from: c  reason: collision with root package name */
-    int[][] f48907c = new int[10];
+    int[][] f48908c = new int[10];
 
     /* renamed from: d  reason: collision with root package name */
-    d[] f48908d = new d[10];
+    d[] f48909d = new d[10];
 
     private void a(int[] iArr, d dVar) {
-        int i10 = this.f48905a;
+        int i10 = this.f48906a;
         if (i10 == 0 || iArr.length == 0) {
-            this.f48906b = dVar;
+            this.f48907b = dVar;
         }
-        if (i10 >= this.f48907c.length) {
+        if (i10 >= this.f48908c.length) {
             f(i10, i10 + 10);
         }
-        int[][] iArr2 = this.f48907c;
-        int i11 = this.f48905a;
+        int[][] iArr2 = this.f48908c;
+        int i11 = this.f48906a;
         iArr2[i11] = iArr;
-        this.f48908d[i11] = dVar;
-        this.f48905a = i11 + 1;
+        this.f48909d[i11] = dVar;
+        this.f48906a = i11 + 1;
     }
 
     public static p b(Context context, TypedArray typedArray, int i10, d dVar) {
@@ -80,16 +80,16 @@ public class p {
 
     private void f(int i10, int i11) {
         int[][] iArr = new int[i11];
-        System.arraycopy(this.f48907c, 0, iArr, 0, i10);
-        this.f48907c = iArr;
+        System.arraycopy(this.f48908c, 0, iArr, 0, i10);
+        this.f48908c = iArr;
         d[] dVarArr = new d[i11];
-        System.arraycopy(this.f48908d, 0, dVarArr, 0, i10);
-        this.f48908d = dVarArr;
+        System.arraycopy(this.f48909d, 0, dVarArr, 0, i10);
+        this.f48909d = dVarArr;
     }
 
     private int g(int[] iArr) {
-        int[][] iArr2 = this.f48907c;
-        for (int i10 = 0; i10 < this.f48905a; i10++) {
+        int[][] iArr2 = this.f48908c;
+        for (int i10 = 0; i10 < this.f48906a; i10++) {
             if (StateSet.stateSetMatches(iArr2[i10], iArr)) {
                 return i10;
             }
@@ -145,17 +145,17 @@ public class p {
             g10 = g(StateSet.WILD_CARD);
         }
         if (g10 < 0) {
-            return this.f48906b;
+            return this.f48907b;
         }
-        return this.f48908d[g10];
+        return this.f48909d[g10];
     }
 
     public d e() {
-        return this.f48906b;
+        return this.f48907b;
     }
 
     public boolean h() {
-        if (this.f48905a > 1) {
+        if (this.f48906a > 1) {
             return true;
         }
         return false;

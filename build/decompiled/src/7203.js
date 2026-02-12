@@ -1,26 +1,75 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = dependencyMap;
-    var0 = 0;
-    var2 = var1[var0];
-    var1 = require;
-    var0 = undefined;
-    var3 = var1.bind(var0)(var2);
-    var2 = var3.registerAsset;
-    var1 = {
-        '__packager_asset': true,
-        'httpServerLocation': '/assets/images/native/premium/activated',
-        'width': 278.5,
-        'height': 48,
-        'scales': null,
-        'hash': 'fd5849efd39a217c9ef72fb828af8485',
-        'name': 'img_nitro_tier_0_activated_light',
-        'type': 'png'
-    };
-    var4 = [2, 3];
-    var1.scales = var4;
-    var2 = var2.bind(var3)(var1);
-    var1 = module;
-    var1.exports = var2;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);
+    _fun58595: for (var _fun58595_ip = 0;;) switch (_fun58595_ip) {
+        case 0:
+            var9 = require;
+            var8 = exports;
+            var7 = dependencyMap;
+            var0 = global;
+            var10 = var0.Object;
+            var2 = var10.defineProperty;
+            var1 = {};
+            var0 = true;
+            var1.value = var0;
+            var0 = '__esModule';
+            var0 = var2.bind(var10)(var8, var0, var1);
+            var2 = 0;
+            var1 = var7[var2];
+            var0 = undefined;
+            var5 = var9.bind(var0)(var1);
+            for (var1 in var5)
+                case 62: {
+                    case 71: var11 = var1;
+                    var10 = var7[var2];
+                    var10 = var9.bind(var0)(var10);
+                    var10 = var10[var11];
+                    var8[var11] = var10;
+                    _fun58595_ip = 62;
+                    continue _fun58595;
+                }
+        case 93:
+            var2 = 1;
+            var1 = var7[var2];
+            var5 = var9.bind(var0)(var1);
+            for (var1 in var5)
+                case 113: {
+                    case 122: var11 = var1;
+                    var10 = var7[var2];
+                    var10 = var9.bind(var0)(var10);
+                    var10 = var10[var11];
+                    var8[var11] = var10;
+                    _fun58595_ip = 113;
+                    continue _fun58595;
+                }
+        case 144:
+            var2 = 2;
+            var1 = var7[var2];
+            var5 = var9.bind(var0)(var1);
+            for (var1 in var5)
+                case 164: {
+                    case 173: var11 = var1;
+                    var10 = var7[var2];
+                    var10 = var9.bind(var0)(var10);
+                    var10 = var10[var11];
+                    var8[var11] = var10;
+                    _fun58595_ip = 164;
+                    continue _fun58595;
+                }
+        case 195:
+            var2 = 3;
+            var1 = var7[var2];
+            var5 = var9.bind(var0)(var1);
+            for (var1 in var5)
+                case 215: {
+                    case 224: var11 = var1;
+                    var10 = var7[var2];
+                    var10 = var9.bind(var0)(var10);
+                    var10 = var10[var11];
+                    var8[var11] = var10;
+                    _fun58595_ip = 215;
+                    continue _fun58595;
+                }
+        case 246:
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7195, 7196, 7197, 7204]);

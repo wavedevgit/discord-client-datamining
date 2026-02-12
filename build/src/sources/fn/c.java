@@ -9,7 +9,7 @@ public abstract class c {
     public static final t a(List list) {
         Intrinsics.checkNotNullParameter(list, "<this>");
         if (list.isEmpty()) {
-            return en.e.f22972a;
+            return en.e.f22973a;
         }
         if (list.size() == 1) {
             return (t) CollectionsKt.Q0(list);

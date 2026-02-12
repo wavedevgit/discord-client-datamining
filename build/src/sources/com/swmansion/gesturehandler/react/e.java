@@ -15,10 +15,10 @@ import nn.x;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f18975a = new e();
+    public static final e f18976a = new e();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final d.c[] f18976b = {new q.d(), new b0.b(), new o.b(), new t.b(), new u.a(), new x.b(), new b.C0536b(), new p.a(), new m.b()};
+    private static final d.c[] f18977b = {new q.d(), new b0.b(), new o.b(), new t.b(), new u.a(), new x.b(), new b.C0536b(), new p.a(), new m.b()};
 
     private e() {
     }
@@ -26,7 +26,7 @@ public final class e {
     public final d.c a(nn.d handler) {
         d.c[] cVarArr;
         Intrinsics.checkNotNullParameter(handler, "handler");
-        for (d.c cVar : f18976b) {
+        for (d.c cVar : f18977b) {
             if (Intrinsics.areEqual(cVar.e(), handler.getClass())) {
                 return cVar;
             }
@@ -37,7 +37,7 @@ public final class e {
     public final d.c b(String handlerName) {
         d.c[] cVarArr;
         Intrinsics.checkNotNullParameter(handlerName, "handlerName");
-        for (d.c cVar : f18976b) {
+        for (d.c cVar : f18977b) {
             if (Intrinsics.areEqual(cVar.d(), handlerName)) {
                 return cVar;
             }

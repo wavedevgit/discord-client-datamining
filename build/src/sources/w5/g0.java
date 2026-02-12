@@ -5,7 +5,7 @@ import x5.c;
 public class g0 implements n0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g0 f52295a = new g0();
+    public static final g0 f52296a = new g0();
 
     private g0() {
     }

@@ -14,25 +14,25 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateDocumentRequest_DataJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19495a;
+    private final m.b f19496a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19496b;
+    private final h f19497b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f19497c;
+    private final h f19498c;
 
     public CreateDocumentRequest_DataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("type", "attributes");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19495a = a10;
+        this.f19496a = a10;
         h f10 = moshi.f(String.class, x0.d(), "type");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19496b = f10;
+        this.f19497b = f10;
         h f11 = moshi.f(CreateDocumentRequest.Attributes.class, x0.d(), "attributes");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f19497c = f11;
+        this.f19498c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -43,14 +43,14 @@ public final class CreateDocumentRequest_DataJsonAdapter extends h {
         String str = null;
         CreateDocumentRequest.Attributes attributes = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19495a);
+            int J = reader.J(this.f19496a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (attributes = (CreateDocumentRequest.Attributes) this.f19497c.fromJson(reader)) == null) {
+                    if (J == 1 && (attributes = (CreateDocumentRequest.Attributes) this.f19498c.fromJson(reader)) == null) {
                         throw dn.c.x("attributes", "attributes", reader);
                     }
                 } else {
-                    str = (String) this.f19496b.fromJson(reader);
+                    str = (String) this.f19497b.fromJson(reader);
                     if (str == null) {
                         throw dn.c.x("type", "type", reader);
                     }
@@ -77,9 +77,9 @@ public final class CreateDocumentRequest_DataJsonAdapter extends h {
         if (data != null) {
             writer.i();
             writer.J("type");
-            this.f19496b.toJson(writer, data.b());
+            this.f19497b.toJson(writer, data.b());
             writer.J("attributes");
-            this.f19497c.toJson(writer, data.a());
+            this.f19498c.toJson(writer, data.a());
             writer.s();
             return;
         }

@@ -35,13 +35,13 @@ public abstract class a0 {
     public static abstract class b implements pi.f {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f45270d = new a("KEY", 0);
+        public static final b f45271d = new a("KEY", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final b f45271e = new C0605b("VALUE", 1);
+        public static final b f45272e = new C0605b("VALUE", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        private static final /* synthetic */ b[] f45272i = a();
+        private static final /* synthetic */ b[] f45273i = a();
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         enum a extends b {
@@ -74,7 +74,7 @@ public abstract class a0 {
         }
 
         private static /* synthetic */ b[] a() {
-            return new b[]{f45270d, f45271e};
+            return new b[]{f45271d, f45272e};
         }
 
         public static b valueOf(String str) {
@@ -82,7 +82,7 @@ public abstract class a0 {
         }
 
         public static b[] values() {
-            return (b[]) f45272i.clone();
+            return (b[]) f45273i.clone();
         }
 
         /* synthetic */ b(String str, int i10, z zVar) {
@@ -143,16 +143,16 @@ public abstract class a0 {
     public static class d extends q0.d {
 
         /* renamed from: d  reason: collision with root package name */
-        final Map f45273d;
+        final Map f45274d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public d(Map map) {
-            this.f45273d = (Map) pi.m.j(map);
+            this.f45274d = (Map) pi.m.j(map);
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public Map b() {
-            return this.f45273d;
+            return this.f45274d;
         }
 
         @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
@@ -176,14 +176,14 @@ public abstract class a0 {
     public static class e extends AbstractCollection {
 
         /* renamed from: d  reason: collision with root package name */
-        final Map f45274d;
+        final Map f45275d;
 
         e(Map map) {
-            this.f45274d = (Map) pi.m.j(map);
+            this.f45275d = (Map) pi.m.j(map);
         }
 
         final Map b() {
-            return this.f45274d;
+            return this.f45275d;
         }
 
         @Override // java.util.AbstractCollection, java.util.Collection
@@ -262,10 +262,10 @@ public abstract class a0 {
     public static abstract class f extends AbstractMap {
 
         /* renamed from: d  reason: collision with root package name */
-        private transient Set f45275d;
+        private transient Set f45276d;
 
         /* renamed from: e  reason: collision with root package name */
-        private transient Collection f45276e;
+        private transient Collection f45277e;
 
         abstract Set a();
 
@@ -275,10 +275,10 @@ public abstract class a0 {
 
         @Override // java.util.AbstractMap, java.util.Map
         public Set entrySet() {
-            Set set = this.f45275d;
+            Set set = this.f45276d;
             if (set == null) {
                 Set a10 = a();
-                this.f45275d = a10;
+                this.f45276d = a10;
                 return a10;
             }
             return set;
@@ -286,10 +286,10 @@ public abstract class a0 {
 
         @Override // java.util.AbstractMap, java.util.Map
         public Collection values() {
-            Collection collection = this.f45276e;
+            Collection collection = this.f45277e;
             if (collection == null) {
                 Collection b10 = b();
-                this.f45276e = b10;
+                this.f45277e = b10;
                 return b10;
             }
             return collection;
@@ -386,7 +386,7 @@ public abstract class a0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static pi.f k() {
-        return b.f45271e;
+        return b.f45272e;
     }
 
     static Iterator l(Iterator it) {

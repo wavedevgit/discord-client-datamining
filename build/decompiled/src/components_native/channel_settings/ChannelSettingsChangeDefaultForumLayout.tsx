@@ -2,14 +2,14 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var5 = require;
-    var11 = metroImportDefault;
+    var12 = metroImportDefault;
     var2 = exports;
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
-    var _closure1_slot1 = var11;
+    var _closure1_slot1 = var12;
     var _closure1_slot2 = var6;
     var1 = function arg0() {
-        _fun109958: for (var _fun109958_ip = 0;;) switch (_fun109958_ip) {
+        _fun109457: for (var _fun109457_ip = 0;;) switch (_fun109457_ip) {
             case 0:
                 var1 = arg0;
                 var1 = var1.channel;
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var2.bind(var0)(var5);
                     var3 = _closure1_slot1;
                     var4 = _closure1_slot2;
-                    var2 = 7;
+                    var2 = 9;
                     var6 = var4[var2];
                     var8 = var3.bind(var0)(var6);
                     var7 = var8.updateChannel;
@@ -67,12 +67,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = _closure1_slot8;
                 var15 = _closure1_slot0;
                 var8 = _closure1_slot2;
-                var4 = 8;
+                var4 = 10;
                 var4 = var8[var4];
                 var4 = var15.bind(var3)(var4);
                 var5 = var4.TableRadioGroup;
                 var4 = {};
-                var14 = 9;
+                var14 = 11;
                 var11 = var8[var14];
                 var11 = var15.bind(var3)(var11);
                 var12 = var11.intl;
@@ -86,13 +86,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = null;
                 var8 = var10;
                 if (!(var11 == var8)) {
-                    _fun109958_ip = 255;
-                    continue _fun109958
+                    _fun109457_ip = 255;
+                    continue _fun109457
                 }
             case 223:
                 var12 = _closure1_slot0;
                 var15 = _closure1_slot2;
-                var11 = 10;
+                var11 = 12;
                 var11 = var15[var11];
                 var11 = var12.bind(var3)(var11);
                 var11 = var11.ForumLayout;
@@ -103,18 +103,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = _closure1_slot7;
                 var11 = _closure1_slot0;
                 var12 = _closure1_slot2;
-                var15 = 11;
+                var15 = 13;
                 var7 = var12[var15];
                 var7 = var11.bind(var3)(var7);
                 var16 = var7.TableRadioRow;
                 var7 = {};
-                var19 = _closure1_slot7;
-                var8 = 12;
-                var8 = var12[var8];
-                var8 = var11.bind(var3)(var8);
-                var18 = var8.GridSquareIcon;
-                var8 = {};
-                var8 = var19.bind(var3)(var18, var8);
+                var8 = _closure1_slot10;
                 var7.icon = var8;
                 var8 = var12[var14];
                 var8 = var11.bind(var3)(var8);
@@ -126,7 +120,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8["U+rQfW"];
                 var8 = var18.bind(var19)(var8);
                 var7.label = var8;
-                var8 = 10;
+                var8 = 12;
                 var18 = var12[var8];
                 var18 = var11.bind(var3)(var18);
                 var18 = var18.ForumLayout;
@@ -140,13 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var11.bind(var3)(var15);
                 var16 = var15.TableRadioRow;
                 var15 = {};
-                var20 = _closure1_slot7;
-                var18 = 13;
-                var18 = var12[var18];
-                var18 = var11.bind(var3)(var18);
-                var19 = var18.ListViewIcon;
-                var18 = {};
-                var18 = var20.bind(var3)(var19, var18);
+                var18 = _closure1_slot11;
                 var15.icon = var18;
                 var18 = var12[var14];
                 var18 = var11.bind(var3)(var18);
@@ -224,24 +212,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8.ForumLayout;
                 var8 = var8.GRID;
                 if (!(var10 !== var8)) {
-                    _fun109958_ip = 850;
-                    continue _fun109958
+                    _fun109457_ip = 798;
+                    continue _fun109457
                 }
-            case 828:
+            case 776:
                 var10 = _closure1_slot1;
                 var11 = _closure1_slot2;
                 var8 = 18;
                 var8 = var11[var8];
                 var8 = var10.bind(var3)(var8);
-                _fun109958_ip = 870;
-                continue _fun109958;
-            case 850:
+                _fun109457_ip = 818;
+                continue _fun109457;
+            case 798:
                 var10 = _closure1_slot1;
                 var11 = _closure1_slot2;
                 var9 = 17;
                 var9 = var11[var9];
                 var8 = var10.bind(var3)(var9);
-            case 870:
+            case 818:
                 var5.source = var8;
                 var5 = var7.bind(var3)(var6, var5);
                 var4[3] = var5;
@@ -250,7 +238,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var _closure1_slot10 = var1;
+    var _closure1_slot12 = var1;
     var0 = global;
     var8 = var0.Object;
     var7 = var8.defineProperty;
@@ -262,10 +250,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = 0;
     var4 = var6[var0];
     var0 = undefined;
-    var4 = var11.bind(var0)(var4);
+    var4 = var12.bind(var0)(var4);
     var _closure1_slot3 = var4;
-    var10 = 1;
-    var7 = var6[var10];
+    var11 = 1;
+    var7 = var6[var11];
     var4 = arg3;
     var4 = var4.bind(var0)(var7);
     var _closure1_slot4 = var4;
@@ -276,57 +264,71 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var4;
     var4 = 3;
     var4 = var6[var4];
-    var4 = var11.bind(var0)(var4);
+    var4 = var12.bind(var0)(var4);
     var _closure1_slot6 = var4;
     var4 = 4;
     var4 = var6[var4];
     var4 = var5.bind(var0)(var4);
-    var7 = var4.jsx;
-    var _closure1_slot7 = var7;
+    var8 = var4.jsx;
+    var _closure1_slot7 = var8;
     var4 = var4.jsxs;
     var _closure1_slot8 = var4;
     var4 = 5;
     var4 = var6[var4];
-    var8 = var5.bind(var0)(var4);
-    var7 = var8.createStyles;
+    var9 = var5.bind(var0)(var4);
+    var7 = var9.createStyles;
     var4 = {};
-    var9 = {};
-    var9.flex = var10;
-    var10 = 6;
-    var12 = var6[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.colors;
-    var12 = var12.BACKGROUND_BASE_LOWER;
-    var9.backgroundColor = var12;
-    var12 = var6[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.spacing;
-    var12 = var12.PX_16;
-    var9.paddingHorizontal = var12;
-    var12 = var6[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.spacing;
-    var12 = var12.PX_16;
-    var9.paddingTop = var12;
-    var4.container = var9;
-    var9 = {};
-    var12 = var6[var10];
-    var12 = var11.bind(var0)(var12);
-    var12 = var12.spacing;
-    var12 = var12.PX_8;
-    var9.paddingTop = var12;
-    var10 = var6[var10];
-    var10 = var11.bind(var0)(var10);
-    var10 = var10.spacing;
-    var10 = var10.PX_16;
-    var9.paddingBottom = var10;
-    var4.description = var9;
-    var9 = {};
-    var10 = 'center';
-    var9.alignSelf = var10;
-    var4.thumbnailImagePortrait = var9;
-    var4 = var7.bind(var8)(var4);
+    var10 = {};
+    var10.flex = var11;
+    var11 = 6;
+    var13 = var6[var11];
+    var13 = var12.bind(var0)(var13);
+    var13 = var13.colors;
+    var13 = var13.BACKGROUND_BASE_LOWER;
+    var10.backgroundColor = var13;
+    var13 = var6[var11];
+    var13 = var12.bind(var0)(var13);
+    var13 = var13.spacing;
+    var13 = var13.PX_16;
+    var10.paddingHorizontal = var13;
+    var13 = var6[var11];
+    var13 = var12.bind(var0)(var13);
+    var13 = var13.spacing;
+    var13 = var13.PX_16;
+    var10.paddingTop = var13;
+    var4.container = var10;
+    var10 = {};
+    var13 = var6[var11];
+    var13 = var12.bind(var0)(var13);
+    var13 = var13.spacing;
+    var13 = var13.PX_8;
+    var10.paddingTop = var13;
+    var11 = var6[var11];
+    var11 = var12.bind(var0)(var11);
+    var11 = var11.spacing;
+    var11 = var11.PX_16;
+    var10.paddingBottom = var11;
+    var4.description = var10;
+    var10 = {};
+    var11 = 'center';
+    var10.alignSelf = var11;
+    var4.thumbnailImagePortrait = var10;
+    var4 = var7.bind(var9)(var4);
     var _closure1_slot9 = var4;
+    var4 = 7;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var7 = var4.GridSquareIcon;
+    var4 = {};
+    var4 = var8.bind(var0)(var7, var4);
+    var _closure1_slot10 = var4;
+    var4 = 8;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var7 = var4.ListViewIcon;
+    var4 = {};
+    var4 = var8.bind(var0)(var7, var4);
+    var _closure1_slot11 = var4;
     var4 = 20;
     var4 = var6[var4];
     var6 = var5.bind(var0)(var4);
@@ -334,7 +336,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'components_native/channel_settings/ChannelSettingsChangeDefaultForumLayout.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun109960: for (var _fun109960_ip = 0;;) switch (_fun109960_ip) {
+        _fun109459: for (var _fun109459_ip = 0;;) switch (_fun109459_ip) {
             case 0:
                 var1 = arg0;
                 var1 = var1.channelId;
@@ -360,12 +362,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var2 = var0 == var5;
                 if (var2) {
-                    _fun109960_ip = 98;
-                    continue _fun109960
+                    _fun109459_ip = 98;
+                    continue _fun109459
                 }
             case 78:
                 var3 = _closure1_slot7;
-                var2 = _closure1_slot10;
+                var2 = _closure1_slot12;
                 var1 = {};
                 var1.channel = var5;
                 var0 = var3.bind(var4)(var2, var1);
@@ -376,4 +378,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.ChannelSettingsChangeDefaultForumLayout = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1372, 33, 1297, 671, 6542, 5484, 1234, 1382, 5483, 14081, 7649, 3938, 5425, 4712, 14117, 14118, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1372, 33, 1297, 671, 14089, 7776, 6558, 5481, 1234, 1382, 5480, 3938, 5343, 5426, 14090, 14091, 566, 2]);

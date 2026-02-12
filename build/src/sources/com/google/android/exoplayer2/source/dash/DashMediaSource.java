@@ -74,58 +74,58 @@ public final class DashMediaSource extends rd.a {
     private long Z;
 
     /* renamed from: a0  reason: collision with root package name */
-    private int f13429a0;
+    private int f13430a0;
 
     /* renamed from: s  reason: collision with root package name */
-    private final MediaItem f13430s;
+    private final MediaItem f13431s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final boolean f13431t;
+    private final boolean f13432t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final DataSource.Factory f13432u;
+    private final DataSource.Factory f13433u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final a.InterfaceC0166a f13433v;
+    private final a.InterfaceC0166a f13434v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final rd.h f13434w;
+    private final rd.h f13435w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final v f13435x;
+    private final v f13436x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final i f13436y;
+    private final i f13437y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final ud.b f13437z;
+    private final ud.b f13438z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class Factory implements r.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final a.InterfaceC0166a f13438a;
+        private final a.InterfaceC0166a f13439a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final DataSource.Factory f13439b;
+        private final DataSource.Factory f13440b;
 
         /* renamed from: c  reason: collision with root package name */
-        private x f13440c;
+        private x f13441c;
 
         /* renamed from: d  reason: collision with root package name */
-        private rd.h f13441d;
+        private rd.h f13442d;
 
         /* renamed from: e  reason: collision with root package name */
-        private i f13442e;
+        private i f13443e;
 
         /* renamed from: f  reason: collision with root package name */
-        private long f13443f;
+        private long f13444f;
 
         /* renamed from: g  reason: collision with root package name */
-        private long f13444g;
+        private long f13445g;
 
         /* renamed from: h  reason: collision with root package name */
-        private k.a f13445h;
+        private k.a f13446h;
 
         public Factory(DataSource.Factory factory) {
             this(new c.a(factory), factory);
@@ -133,33 +133,33 @@ public final class DashMediaSource extends rd.a {
 
         public DashMediaSource a(MediaItem mediaItem) {
             qd.b bVar;
-            oe.a.e(mediaItem.f12342e);
-            k.a aVar = this.f13445h;
+            oe.a.e(mediaItem.f12343e);
+            k.a aVar = this.f13446h;
             if (aVar == null) {
                 aVar = new vd.d();
             }
-            List list = mediaItem.f12342e.f12436p;
+            List list = mediaItem.f12343e.f12437p;
             if (!list.isEmpty()) {
                 bVar = new qd.b(aVar, list);
             } else {
                 bVar = aVar;
             }
-            return new DashMediaSource(mediaItem, null, this.f13439b, bVar, this.f13438a, this.f13441d, null, this.f13440c.a(mediaItem), this.f13442e, this.f13443f, this.f13444g, null);
+            return new DashMediaSource(mediaItem, null, this.f13440b, bVar, this.f13439a, this.f13442d, null, this.f13441c.a(mediaItem), this.f13443e, this.f13444f, this.f13445g, null);
         }
 
         public Factory b(i iVar) {
-            this.f13442e = (i) oe.a.f(iVar, "MediaSource.Factory#setLoadErrorHandlingPolicy no longer handles null by instantiating a new DefaultLoadErrorHandlingPolicy. Explicitly construct and pass an instance in order to retain the old behavior.");
+            this.f13443e = (i) oe.a.f(iVar, "MediaSource.Factory#setLoadErrorHandlingPolicy no longer handles null by instantiating a new DefaultLoadErrorHandlingPolicy. Explicitly construct and pass an instance in order to retain the old behavior.");
             return this;
         }
 
         public Factory(a.InterfaceC0166a interfaceC0166a, DataSource.Factory factory) {
-            this.f13438a = (a.InterfaceC0166a) oe.a.e(interfaceC0166a);
-            this.f13439b = factory;
-            this.f13440c = new l();
-            this.f13442e = new com.google.android.exoplayer2.upstream.g();
-            this.f13443f = 30000L;
-            this.f13444g = 5000000L;
-            this.f13441d = new rd.i();
+            this.f13439a = (a.InterfaceC0166a) oe.a.e(interfaceC0166a);
+            this.f13440b = factory;
+            this.f13441c = new l();
+            this.f13443e = new com.google.android.exoplayer2.upstream.g();
+            this.f13444f = 30000L;
+            this.f13445g = 5000000L;
+            this.f13442d = new rd.i();
         }
     }
 
@@ -185,86 +185,86 @@ public final class DashMediaSource extends rd.a {
     public static final class b extends Timeline {
 
         /* renamed from: q  reason: collision with root package name */
-        private final long f13447q;
+        private final long f13448q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final long f13448r;
+        private final long f13449r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final long f13449s;
+        private final long f13450s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final int f13450t;
+        private final int f13451t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final long f13451u;
+        private final long f13452u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final long f13452v;
+        private final long f13453v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final long f13453w;
+        private final long f13454w;
 
         /* renamed from: x  reason: collision with root package name */
-        private final vd.c f13454x;
+        private final vd.c f13455x;
 
         /* renamed from: y  reason: collision with root package name */
-        private final MediaItem f13455y;
+        private final MediaItem f13456y;
 
         /* renamed from: z  reason: collision with root package name */
-        private final MediaItem.g f13456z;
+        private final MediaItem.g f13457z;
 
         public b(long j10, long j11, long j12, int i10, long j13, long j14, long j15, vd.c cVar, MediaItem mediaItem, MediaItem.g gVar) {
             boolean z10;
-            boolean z11 = cVar.f51470d;
+            boolean z11 = cVar.f51471d;
             if (gVar != null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             oe.a.g(z11 == z10);
-            this.f13447q = j10;
-            this.f13448r = j11;
-            this.f13449s = j12;
-            this.f13450t = i10;
-            this.f13451u = j13;
-            this.f13452v = j14;
-            this.f13453w = j15;
-            this.f13454x = cVar;
-            this.f13455y = mediaItem;
-            this.f13456z = gVar;
+            this.f13448q = j10;
+            this.f13449r = j11;
+            this.f13450s = j12;
+            this.f13451t = i10;
+            this.f13452u = j13;
+            this.f13453v = j14;
+            this.f13454w = j15;
+            this.f13455x = cVar;
+            this.f13456y = mediaItem;
+            this.f13457z = gVar;
         }
 
         private long w(long j10) {
             ud.f l10;
-            long j11 = this.f13453w;
-            if (!x(this.f13454x)) {
+            long j11 = this.f13454w;
+            if (!x(this.f13455x)) {
                 return j11;
             }
             if (j10 > 0) {
                 j11 += j10;
-                if (j11 > this.f13452v) {
+                if (j11 > this.f13453v) {
                     return -9223372036854775807L;
                 }
             }
-            long j12 = this.f13451u + j11;
-            long g10 = this.f13454x.g(0);
+            long j12 = this.f13452u + j11;
+            long g10 = this.f13455x.g(0);
             int i10 = 0;
-            while (i10 < this.f13454x.e() - 1 && j12 >= g10) {
+            while (i10 < this.f13455x.e() - 1 && j12 >= g10) {
                 j12 -= g10;
                 i10++;
-                g10 = this.f13454x.g(i10);
+                g10 = this.f13455x.g(i10);
             }
-            vd.g d10 = this.f13454x.d(i10);
+            vd.g d10 = this.f13455x.d(i10);
             int a10 = d10.a(2);
-            if (a10 != -1 && (l10 = ((vd.j) ((vd.a) d10.f51504c.get(a10)).f51459c.get(0)).l()) != null && l10.g(g10) != 0) {
+            if (a10 != -1 && (l10 = ((vd.j) ((vd.a) d10.f51505c.get(a10)).f51460c.get(0)).l()) != null && l10.g(g10) != 0) {
                 return (j11 + l10.b(l10.f(j12, g10))) - j12;
             }
             return j11;
         }
 
         private static boolean x(vd.c cVar) {
-            if (cVar.f51470d && cVar.f51471e != -9223372036854775807L && cVar.f51468b == -9223372036854775807L) {
+            if (cVar.f51471d && cVar.f51472e != -9223372036854775807L && cVar.f51469b == -9223372036854775807L) {
                 return true;
             }
             return false;
@@ -273,7 +273,7 @@ public final class DashMediaSource extends rd.a {
         @Override // com.google.android.exoplayer2.Timeline
         public int f(Object obj) {
             int intValue;
-            if (!(obj instanceof Integer) || (intValue = ((Integer) obj).intValue() - this.f13450t) < 0 || intValue >= m()) {
+            if (!(obj instanceof Integer) || (intValue = ((Integer) obj).intValue() - this.f13451t) < 0 || intValue >= m()) {
                 return -1;
             }
             return intValue;
@@ -285,25 +285,25 @@ public final class DashMediaSource extends rd.a {
             oe.a.c(i10, 0, m());
             Integer num = null;
             if (z10) {
-                str = this.f13454x.d(i10).f51502a;
+                str = this.f13455x.d(i10).f51503a;
             } else {
                 str = null;
             }
             if (z10) {
-                num = Integer.valueOf(this.f13450t + i10);
+                num = Integer.valueOf(this.f13451t + i10);
             }
-            return bVar.v(str, num, 0, this.f13454x.g(i10), w0.K0(this.f13454x.d(i10).f51503b - this.f13454x.d(0).f51503b) - this.f13451u);
+            return bVar.v(str, num, 0, this.f13455x.g(i10), w0.K0(this.f13455x.d(i10).f51504b - this.f13455x.d(0).f51504b) - this.f13452u);
         }
 
         @Override // com.google.android.exoplayer2.Timeline
         public int m() {
-            return this.f13454x.e();
+            return this.f13455x.e();
         }
 
         @Override // com.google.android.exoplayer2.Timeline
         public Object q(int i10) {
             oe.a.c(i10, 0, m());
-            return Integer.valueOf(this.f13450t + i10);
+            return Integer.valueOf(this.f13451t + i10);
         }
 
         @Override // com.google.android.exoplayer2.Timeline
@@ -311,9 +311,9 @@ public final class DashMediaSource extends rd.a {
             oe.a.c(i10, 0, 1);
             long w10 = w(j10);
             Object obj = Timeline.d.C;
-            MediaItem mediaItem = this.f13455y;
-            vd.c cVar = this.f13454x;
-            return dVar.h(obj, mediaItem, cVar, this.f13447q, this.f13448r, this.f13449s, true, x(cVar), this.f13456z, w10, this.f13452v, 0, m() - 1, this.f13451u);
+            MediaItem mediaItem = this.f13456y;
+            vd.c cVar = this.f13455x;
+            return dVar.h(obj, mediaItem, cVar, this.f13448q, this.f13449r, this.f13450s, true, x(cVar), this.f13457z, w10, this.f13453v, 0, m() - 1, this.f13452u);
         }
 
         @Override // com.google.android.exoplayer2.Timeline
@@ -347,7 +347,7 @@ public final class DashMediaSource extends rd.a {
     public static final class d implements k.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final Pattern f13458a = Pattern.compile("(.+?)(Z|((\\+|-|−)(\\d\\d)(:?(\\d\\d))?))");
+        private static final Pattern f13459a = Pattern.compile("(.+?)(Z|((\\+|-|−)(\\d\\d)(:?(\\d\\d))?))");
 
         d() {
         }
@@ -357,9 +357,9 @@ public final class DashMediaSource extends rd.a {
         public Long a(Uri uri, InputStream inputStream) {
             long j10;
             long parseLong;
-            String readLine = new BufferedReader(new InputStreamReader(inputStream, pi.d.f42737c)).readLine();
+            String readLine = new BufferedReader(new InputStreamReader(inputStream, pi.d.f42738c)).readLine();
             try {
-                Matcher matcher = f13458a.matcher(readLine);
+                Matcher matcher = f13459a.matcher(readLine);
                 if (matcher.matches()) {
                     String group = matcher.group(1);
                     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.US);
@@ -492,13 +492,13 @@ public final class DashMediaSource extends rd.a {
     }
 
     private static long K(vd.g gVar, long j10, long j11) {
-        long K0 = w0.K0(gVar.f51503b);
+        long K0 = w0.K0(gVar.f51504b);
         boolean O = O(gVar);
         long j12 = LongCompanionObject.MAX_VALUE;
-        for (int i10 = 0; i10 < gVar.f51504c.size(); i10++) {
-            vd.a aVar = (vd.a) gVar.f51504c.get(i10);
-            List list = aVar.f51459c;
-            int i11 = aVar.f51458b;
+        for (int i10 = 0; i10 < gVar.f51505c.size(); i10++) {
+            vd.a aVar = (vd.a) gVar.f51505c.get(i10);
+            List list = aVar.f51460c;
+            int i11 = aVar.f51459b;
             boolean z10 = true;
             z10 = (i11 == 1 || i11 == 2) ? false : false;
             if ((!O || !z10) && !list.isEmpty()) {
@@ -518,13 +518,13 @@ public final class DashMediaSource extends rd.a {
     }
 
     private static long L(vd.g gVar, long j10, long j11) {
-        long K0 = w0.K0(gVar.f51503b);
+        long K0 = w0.K0(gVar.f51504b);
         boolean O = O(gVar);
         long j12 = K0;
-        for (int i10 = 0; i10 < gVar.f51504c.size(); i10++) {
-            vd.a aVar = (vd.a) gVar.f51504c.get(i10);
-            List list = aVar.f51459c;
-            int i11 = aVar.f51458b;
+        for (int i10 = 0; i10 < gVar.f51505c.size(); i10++) {
+            vd.a aVar = (vd.a) gVar.f51505c.get(i10);
+            List list = aVar.f51460c;
+            int i11 = aVar.f51459b;
             boolean z10 = true;
             z10 = (i11 == 1 || i11 == 2) ? false : false;
             if ((!O || !z10) && !list.isEmpty()) {
@@ -542,13 +542,13 @@ public final class DashMediaSource extends rd.a {
         ud.f l10;
         int e10 = cVar.e() - 1;
         vd.g d10 = cVar.d(e10);
-        long K0 = w0.K0(d10.f51503b);
+        long K0 = w0.K0(d10.f51504b);
         long g10 = cVar.g(e10);
         long K02 = w0.K0(j10);
-        long K03 = w0.K0(cVar.f51467a);
+        long K03 = w0.K0(cVar.f51468a);
         long K04 = w0.K0(5000L);
-        for (int i10 = 0; i10 < d10.f51504c.size(); i10++) {
-            List list = ((vd.a) d10.f51504c.get(i10)).f51459c;
+        for (int i10 = 0; i10 < d10.f51505c.size(); i10++) {
+            List list = ((vd.a) d10.f51505c.get(i10)).f51460c;
             if (!list.isEmpty() && (l10 = ((vd.j) list.get(0)).l()) != null) {
                 long d11 = ((K03 + K0) + l10.d(g10, K02)) - K02;
                 if (d11 < K04 - 100000 || (d11 > K04 && d11 < K04 + 100000)) {
@@ -564,8 +564,8 @@ public final class DashMediaSource extends rd.a {
     }
 
     private static boolean O(vd.g gVar) {
-        for (int i10 = 0; i10 < gVar.f51504c.size(); i10++) {
-            int i11 = ((vd.a) gVar.f51504c.get(i10)).f51458b;
+        for (int i10 = 0; i10 < gVar.f51505c.size(); i10++) {
+            int i11 = ((vd.a) gVar.f51505c.get(i10)).f51459b;
             if (i11 == 1 || i11 == 2) {
                 return true;
             }
@@ -574,8 +574,8 @@ public final class DashMediaSource extends rd.a {
     }
 
     private static boolean P(vd.g gVar) {
-        for (int i10 = 0; i10 < gVar.f51504c.size(); i10++) {
-            ud.f l10 = ((vd.j) ((vd.a) gVar.f51504c.get(i10)).f51459c.get(0)).l();
+        for (int i10 = 0; i10 < gVar.f51505c.size(); i10++) {
+            ud.f l10 = ((vd.j) ((vd.a) gVar.f51505c.get(i10)).f51460c.get(0)).l();
             if (l10 == null || l10.h()) {
                 return true;
             }
@@ -609,8 +609,8 @@ public final class DashMediaSource extends rd.a {
         boolean z12 = false;
         for (int i10 = 0; i10 < this.G.size(); i10++) {
             int keyAt = this.G.keyAt(i10);
-            if (keyAt >= this.f13429a0) {
-                ((com.google.android.exoplayer2.source.dash.b) this.G.valueAt(i10)).M(this.T, keyAt - this.f13429a0);
+            if (keyAt >= this.f13430a0) {
+                ((com.google.android.exoplayer2.source.dash.b) this.G.valueAt(i10)).M(this.T, keyAt - this.f13430a0);
             }
         }
         vd.g d10 = this.T.d(0);
@@ -620,28 +620,28 @@ public final class DashMediaSource extends rd.a {
         long K0 = w0.K0(w0.f0(this.X));
         long L = L(d10, this.T.g(0), K0);
         long K = K(d11, g10, K0);
-        if (this.T.f51470d && !P(d11)) {
+        if (this.T.f51471d && !P(d11)) {
             z11 = true;
         } else {
             z11 = false;
         }
         if (z11) {
-            long j13 = this.T.f51472f;
+            long j13 = this.T.f51473f;
             if (j13 != -9223372036854775807L) {
                 L = Math.max(L, K - w0.K0(j13));
             }
         }
         long j14 = K - L;
         vd.c cVar = this.T;
-        if (cVar.f51470d) {
-            if (cVar.f51467a != -9223372036854775807L) {
+        if (cVar.f51471d) {
+            if (cVar.f51468a != -9223372036854775807L) {
                 z12 = true;
             }
             oe.a.g(z12);
-            long K02 = (K0 - w0.K0(this.T.f51467a)) - L;
+            long K02 = (K0 - w0.K0(this.T.f51468a)) - L;
             h0(K02, j14);
-            long p12 = this.T.f51467a + w0.p1(L);
-            long K03 = K02 - w0.K0(this.Q.f12416d);
+            long p12 = this.T.f51468a + w0.p1(L);
+            long K03 = K02 - w0.K0(this.Q.f12417d);
             j10 = 0;
             long min = Math.min(this.B, j14 / 2);
             j11 = p12;
@@ -655,19 +655,19 @@ public final class DashMediaSource extends rd.a {
             j11 = -9223372036854775807L;
             j12 = 0;
         }
-        long K04 = L - w0.K0(d10.f51503b);
+        long K04 = L - w0.K0(d10.f51504b);
         vd.c cVar2 = this.T;
-        long j15 = cVar2.f51467a;
+        long j15 = cVar2.f51468a;
         long j16 = this.X;
-        int i11 = this.f13429a0;
-        MediaItem mediaItem = this.f13430s;
-        if (cVar2.f51470d) {
+        int i11 = this.f13430a0;
+        MediaItem mediaItem = this.f13431s;
+        if (cVar2.f51471d) {
             gVar = this.Q;
         } else {
             gVar = null;
         }
         C(new b(j15, j11, j16, i11, K04, j14, j12, cVar2, mediaItem, gVar));
-        if (!this.f13431t) {
+        if (!this.f13432t) {
             this.P.removeCallbacks(this.I);
             if (z11) {
                 this.P.postDelayed(this.I, M(this.T, w0.f0(this.X)));
@@ -676,8 +676,8 @@ public final class DashMediaSource extends rd.a {
                 g0();
             } else if (z10) {
                 vd.c cVar3 = this.T;
-                if (cVar3.f51470d) {
-                    long j17 = cVar3.f51471e;
+                if (cVar3.f51471d) {
+                    long j17 = cVar3.f51472e;
                     if (j17 != -9223372036854775807L) {
                         if (j17 == j10) {
                             j17 = 5000;
@@ -690,7 +690,7 @@ public final class DashMediaSource extends rd.a {
     }
 
     private void b0(o oVar) {
-        String str = oVar.f51557a;
+        String str = oVar.f51558a;
         if (!w0.c(str, "urn:mpeg:dash:utc:direct:2014") && !w0.c(str, "urn:mpeg:dash:utc:direct:2012")) {
             if (!w0.c(str, "urn:mpeg:dash:utc:http-iso:2014") && !w0.c(str, "urn:mpeg:dash:utc:http-iso:2012")) {
                 if (!w0.c(str, "urn:mpeg:dash:utc:http-xsdate:2014") && !w0.c(str, "urn:mpeg:dash:utc:http-xsdate:2012")) {
@@ -713,14 +713,14 @@ public final class DashMediaSource extends rd.a {
 
     private void c0(o oVar) {
         try {
-            Z(w0.R0(oVar.f51558b) - this.W);
+            Z(w0.R0(oVar.f51559b) - this.W);
         } catch (l0 e10) {
             Y(e10);
         }
     }
 
     private void d0(o oVar, k.a aVar) {
-        f0(new k(this.L, Uri.parse(oVar.f51558b), 5, aVar), new g(this, null), 1);
+        f0(new k(this.L, Uri.parse(oVar.f51559b), 5, aVar), new g(this, null), 1);
     }
 
     private void e0(long j10) {
@@ -728,7 +728,7 @@ public final class DashMediaSource extends rd.a {
     }
 
     private void f0(k kVar, j.b bVar, int i10) {
-        this.C.s(new LoadEventInfo(kVar.f14163a, kVar.f14164b, this.M.n(kVar, bVar, i10)), kVar.f14165c);
+        this.C.s(new LoadEventInfo(kVar.f14164a, kVar.f14165b, this.M.n(kVar, bVar, i10)), kVar.f14166c);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -746,7 +746,7 @@ public final class DashMediaSource extends rd.a {
             uri = this.R;
         }
         this.U = false;
-        f0(new k(this.L, uri, 4, this.D), this.E, this.f13436y.b(4));
+        f0(new k(this.L, uri, 4, this.D), this.E, this.f13437y.b(4));
     }
 
     /* JADX WARN: Removed duplicated region for block: B:19:0x0046  */
@@ -774,13 +774,13 @@ public final class DashMediaSource extends rd.a {
     @Override // rd.a
     protected void B(c0 c0Var) {
         this.N = c0Var;
-        this.f13435x.e(Looper.myLooper(), z());
-        this.f13435x.d();
-        if (this.f13431t) {
+        this.f13436x.e(Looper.myLooper(), z());
+        this.f13436x.d();
+        if (this.f13432t) {
             a0(false);
             return;
         }
-        this.L = this.f13432u.createDataSource();
+        this.L = this.f13433u.createDataSource();
         this.M = new j("DashMediaSource");
         this.P = w0.w();
         g0();
@@ -798,7 +798,7 @@ public final class DashMediaSource extends rd.a {
         }
         this.V = 0L;
         this.W = 0L;
-        if (this.f13431t) {
+        if (this.f13432t) {
             cVar = this.T;
         } else {
             cVar = null;
@@ -815,8 +815,8 @@ public final class DashMediaSource extends rd.a {
         this.Y = 0;
         this.Z = -9223372036854775807L;
         this.G.clear();
-        this.f13437z.i();
-        this.f13435x.release();
+        this.f13438z.i();
+        this.f13436x.release();
     }
 
     void R(long j10) {
@@ -833,16 +833,16 @@ public final class DashMediaSource extends rd.a {
     }
 
     void T(k kVar, long j10, long j11) {
-        LoadEventInfo loadEventInfo = new LoadEventInfo(kVar.f14163a, kVar.f14164b, kVar.f(), kVar.d(), j10, j11, kVar.b());
-        this.f13436y.d(kVar.f14163a);
-        this.C.j(loadEventInfo, kVar.f14165c);
+        LoadEventInfo loadEventInfo = new LoadEventInfo(kVar.f14164a, kVar.f14165b, kVar.f(), kVar.d(), j10, j11, kVar.b());
+        this.f13437y.d(kVar.f14164a);
+        this.C.j(loadEventInfo, kVar.f14166c);
     }
 
     void U(k kVar, long j10, long j11) {
         int e10;
-        LoadEventInfo loadEventInfo = new LoadEventInfo(kVar.f14163a, kVar.f14164b, kVar.f(), kVar.d(), j10, j11, kVar.b());
-        this.f13436y.d(kVar.f14163a);
-        this.C.m(loadEventInfo, kVar.f14165c);
+        LoadEventInfo loadEventInfo = new LoadEventInfo(kVar.f14164a, kVar.f14165b, kVar.f(), kVar.d(), j10, j11, kVar.b());
+        this.f13437y.d(kVar.f14164a);
+        this.C.m(loadEventInfo, kVar.f14166c);
         vd.c cVar = (vd.c) kVar.e();
         vd.c cVar2 = this.T;
         if (cVar2 == null) {
@@ -850,25 +850,25 @@ public final class DashMediaSource extends rd.a {
         } else {
             e10 = cVar2.e();
         }
-        long j12 = cVar.d(0).f51503b;
+        long j12 = cVar.d(0).f51504b;
         int i10 = 0;
-        while (i10 < e10 && this.T.d(i10).f51503b < j12) {
+        while (i10 < e10 && this.T.d(i10).f51504b < j12) {
             i10++;
         }
-        if (cVar.f51470d) {
+        if (cVar.f51471d) {
             if (e10 - i10 > cVar.e()) {
                 oe.y.i("DashMediaSource", "Loaded out of sync manifest");
             } else {
                 long j13 = this.Z;
-                if (j13 != -9223372036854775807L && cVar.f51474h * 1000 <= j13) {
-                    oe.y.i("DashMediaSource", "Loaded stale dynamic manifest: " + cVar.f51474h + ", " + this.Z);
+                if (j13 != -9223372036854775807L && cVar.f51475h * 1000 <= j13) {
+                    oe.y.i("DashMediaSource", "Loaded stale dynamic manifest: " + cVar.f51475h + ", " + this.Z);
                 } else {
                     this.Y = 0;
                 }
             }
             int i11 = this.Y;
             this.Y = i11 + 1;
-            if (i11 < this.f13436y.b(kVar.f14165c)) {
+            if (i11 < this.f13437y.b(kVar.f14166c)) {
                 e0(N());
                 return;
             } else {
@@ -877,13 +877,13 @@ public final class DashMediaSource extends rd.a {
             }
         }
         this.T = cVar;
-        this.U = cVar.f51470d & this.U;
+        this.U = cVar.f51471d & this.U;
         this.V = j10 - j11;
         this.W = j10;
         synchronized (this.F) {
             try {
-                if (kVar.f14164b.f13982a == this.R) {
-                    Uri uri = this.T.f51477k;
+                if (kVar.f14165b.f13983a == this.R) {
+                    Uri uri = this.T.f51478k;
                     if (uri == null) {
                         uri = kVar.f();
                     }
@@ -895,8 +895,8 @@ public final class DashMediaSource extends rd.a {
         }
         if (e10 == 0) {
             vd.c cVar3 = this.T;
-            if (cVar3.f51470d) {
-                o oVar = cVar3.f51475i;
+            if (cVar3.f51471d) {
+                o oVar = cVar3.f51476i;
                 if (oVar != null) {
                     b0(oVar);
                     return;
@@ -908,59 +908,59 @@ public final class DashMediaSource extends rd.a {
             a0(true);
             return;
         }
-        this.f13429a0 += i10;
+        this.f13430a0 += i10;
         a0(true);
     }
 
     j.c V(k kVar, long j10, long j11, IOException iOException, int i10) {
         j.c h10;
-        LoadEventInfo loadEventInfo = new LoadEventInfo(kVar.f14163a, kVar.f14164b, kVar.f(), kVar.d(), j10, j11, kVar.b());
-        long a10 = this.f13436y.a(new i.c(loadEventInfo, new MediaLoadData(kVar.f14165c), iOException, i10));
+        LoadEventInfo loadEventInfo = new LoadEventInfo(kVar.f14164a, kVar.f14165b, kVar.f(), kVar.d(), j10, j11, kVar.b());
+        long a10 = this.f13437y.a(new i.c(loadEventInfo, new MediaLoadData(kVar.f14166c), iOException, i10));
         if (a10 == -9223372036854775807L) {
-            h10 = j.f14146g;
+            h10 = j.f14147g;
         } else {
             h10 = j.h(false, a10);
         }
         boolean c10 = h10.c();
-        this.C.q(loadEventInfo, kVar.f14165c, iOException, !c10);
+        this.C.q(loadEventInfo, kVar.f14166c, iOException, !c10);
         if (!c10) {
-            this.f13436y.d(kVar.f14163a);
+            this.f13437y.d(kVar.f14164a);
         }
         return h10;
     }
 
     void W(k kVar, long j10, long j11) {
-        LoadEventInfo loadEventInfo = new LoadEventInfo(kVar.f14163a, kVar.f14164b, kVar.f(), kVar.d(), j10, j11, kVar.b());
-        this.f13436y.d(kVar.f14163a);
-        this.C.m(loadEventInfo, kVar.f14165c);
+        LoadEventInfo loadEventInfo = new LoadEventInfo(kVar.f14164a, kVar.f14165b, kVar.f(), kVar.d(), j10, j11, kVar.b());
+        this.f13437y.d(kVar.f14164a);
+        this.C.m(loadEventInfo, kVar.f14166c);
         Z(((Long) kVar.e()).longValue() - j10);
     }
 
     j.c X(k kVar, long j10, long j11, IOException iOException) {
-        this.C.q(new LoadEventInfo(kVar.f14163a, kVar.f14164b, kVar.f(), kVar.d(), j10, j11, kVar.b()), kVar.f14165c, iOException, true);
-        this.f13436y.d(kVar.f14163a);
+        this.C.q(new LoadEventInfo(kVar.f14164a, kVar.f14165b, kVar.f(), kVar.d(), j10, j11, kVar.b()), kVar.f14166c, iOException, true);
+        this.f13437y.d(kVar.f14164a);
         Y(iOException);
-        return j.f14145f;
+        return j.f14146f;
     }
 
     @Override // rd.r
     public void a(p pVar) {
         com.google.android.exoplayer2.source.dash.b bVar = (com.google.android.exoplayer2.source.dash.b) pVar;
         bVar.I();
-        this.G.remove(bVar.f13462d);
+        this.G.remove(bVar.f13463d);
     }
 
     @Override // rd.r
     public MediaItem d() {
-        return this.f13430s;
+        return this.f13431s;
     }
 
     @Override // rd.r
     public p f(r.b bVar, me.b bVar2, long j10) {
-        int intValue = ((Integer) bVar.f46437a).intValue() - this.f13429a0;
+        int intValue = ((Integer) bVar.f46438a).intValue() - this.f13430a0;
         y.a w10 = w(bVar);
-        com.google.android.exoplayer2.source.dash.b bVar3 = new com.google.android.exoplayer2.source.dash.b(this.f13429a0 + intValue, this.T, this.f13437z, intValue, this.f13433v, this.N, null, this.f13435x, u(bVar), this.f13436y, w10, this.X, this.K, bVar2, this.f13434w, this.J, z());
-        this.G.put(bVar3.f13462d, bVar3);
+        com.google.android.exoplayer2.source.dash.b bVar3 = new com.google.android.exoplayer2.source.dash.b(this.f13430a0 + intValue, this.T, this.f13438z, intValue, this.f13434v, this.N, null, this.f13436x, u(bVar), this.f13437y, w10, this.X, this.K, bVar2, this.f13435w, this.J, z());
+        this.G.put(bVar3.f13463d, bVar3);
         return bVar3;
     }
 
@@ -970,22 +970,22 @@ public final class DashMediaSource extends rd.a {
     }
 
     private DashMediaSource(MediaItem mediaItem, vd.c cVar, DataSource.Factory factory, k.a aVar, a.InterfaceC0166a interfaceC0166a, rd.h hVar, me.g gVar, v vVar, i iVar, long j10, long j11) {
-        this.f13430s = mediaItem;
-        this.Q = mediaItem.f12344o;
-        this.R = ((MediaItem.h) oe.a.e(mediaItem.f12342e)).f12432d;
-        this.S = mediaItem.f12342e.f12432d;
+        this.f13431s = mediaItem;
+        this.Q = mediaItem.f12345o;
+        this.R = ((MediaItem.h) oe.a.e(mediaItem.f12343e)).f12433d;
+        this.S = mediaItem.f12343e.f12433d;
         this.T = cVar;
-        this.f13432u = factory;
+        this.f13433u = factory;
         this.D = aVar;
-        this.f13433v = interfaceC0166a;
-        this.f13435x = vVar;
-        this.f13436y = iVar;
+        this.f13434v = interfaceC0166a;
+        this.f13436x = vVar;
+        this.f13437y = iVar;
         this.A = j10;
         this.B = j11;
-        this.f13434w = hVar;
-        this.f13437z = new ud.b();
+        this.f13435w = hVar;
+        this.f13438z = new ud.b();
         boolean z10 = cVar != null;
-        this.f13431t = z10;
+        this.f13432t = z10;
         this.C = w(null);
         this.F = new Object();
         this.G = new SparseArray();
@@ -993,7 +993,7 @@ public final class DashMediaSource extends rd.a {
         this.Z = -9223372036854775807L;
         this.X = -9223372036854775807L;
         if (z10) {
-            oe.a.g(true ^ cVar.f51470d);
+            oe.a.g(true ^ cVar.f51471d);
             this.E = null;
             this.H = null;
             this.I = null;

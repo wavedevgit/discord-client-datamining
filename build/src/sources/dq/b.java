@@ -14,26 +14,26 @@ import com.withpersona.sdk2.inquiry.shared.ui.Pi2NavigationBar;
 public final class b implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f21848a;
+    private final ConstraintLayout f21849a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final FrameLayout f21849b;
+    public final FrameLayout f21850b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final NestedScrollView f21850c;
+    public final NestedScrollView f21851c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final FrameLayout f21851d;
+    public final FrameLayout f21852d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Pi2NavigationBar f21852e;
+    public final Pi2NavigationBar f21853e;
 
     private b(ConstraintLayout constraintLayout, FrameLayout frameLayout, NestedScrollView nestedScrollView, FrameLayout frameLayout2, Pi2NavigationBar pi2NavigationBar) {
-        this.f21848a = constraintLayout;
-        this.f21849b = frameLayout;
-        this.f21850c = nestedScrollView;
-        this.f21851d = frameLayout2;
-        this.f21852e = pi2NavigationBar;
+        this.f21849a = constraintLayout;
+        this.f21850b = frameLayout;
+        this.f21851c = nestedScrollView;
+        this.f21852d = frameLayout2;
+        this.f21853e = pi2NavigationBar;
     }
 
     public static b a(View view) {
@@ -68,6 +68,6 @@ public final class b implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f21848a;
+        return this.f21849a;
     }
 }

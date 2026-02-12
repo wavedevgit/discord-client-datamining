@@ -69,7 +69,7 @@ public final class SetOptionalImageUrlKt {
             }
             ImageRequestBuilder x10 = ImageRequestBuilder.x(buildUpon.build());
             if (num != null && num.intValue() > 0 && num2 != null && num2.intValue() > 0) {
-                x10.N(ResizeOptions.f11062e.a(num.intValue(), num2.intValue()));
+                x10.N(ResizeOptions.f11063e.a(num.intValue(), num2.intValue()));
             }
             simpleDraweeView.setController(simpleDraweeView.getControllerBuilder().A(z14).D(controllerListener).E(x10.a()).b(simpleDraweeView.getController()).build());
             simpleDraweeView.setVisibility(0);

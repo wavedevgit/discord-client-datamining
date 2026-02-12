@@ -5,7 +5,7 @@ import bj.c;
 final class la implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final la f46993a = new la();
+    static final la f46994a = new la();
 
     static {
         c.b a10 = bj.c.a("detectorMode");

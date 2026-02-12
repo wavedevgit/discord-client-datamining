@@ -163,7 +163,7 @@ public class a extends l implements DialogInterface {
             return i10;
         }
         TypedValue typedValue = new TypedValue();
-        context.getTheme().resolveAttribute(f.a.f23287l, typedValue, true);
+        context.getTheme().resolveAttribute(f.a.f23288l, typedValue, true);
         return typedValue.resourceId;
     }
 

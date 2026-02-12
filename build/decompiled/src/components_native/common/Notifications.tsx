@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'components_native/common/Notifications.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun70174: for (var _fun70174_ip = 0;;) switch (_fun70174_ip) {
+        _fun72617: for (var _fun72617_ip = 0;;) switch (_fun72617_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var3 = _closure1_slot2;
@@ -59,8 +59,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var3 = var0 == var1;
                 if (var3) {
-                    _fun70174_ip = 109;
-                    continue _fun70174
+                    _fun72617_ip = 109;
+                    continue _fun72617
                 }
             case 66:
                 var4 = _closure1_slot4;
@@ -79,4 +79,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8789, 33, 566, 8810, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 9090, 33, 566, 9110, 2]);

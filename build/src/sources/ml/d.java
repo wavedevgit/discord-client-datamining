@@ -8,16 +8,16 @@ import java.util.Calendar;
 public class d extends g {
 
     /* renamed from: f  reason: collision with root package name */
-    private final com.henninghall.date_picker.g f36543f;
+    private final com.henninghall.date_picker.g f36544f;
 
     public d(com.henninghall.date_picker.pickers.a aVar, n nVar) {
         super(aVar, nVar);
-        this.f36543f = new com.henninghall.date_picker.g(this.f36544a);
+        this.f36544f = new com.henninghall.date_picker.g(this.f36545a);
     }
 
     @Override // ml.g
     public String e() {
-        if (this.f36544a.f17586o.g()) {
+        if (this.f36545a.f17587o.g()) {
             return "h";
         }
         return "HH";
@@ -34,13 +34,13 @@ public class d extends g {
         Calendar calendar = Calendar.getInstance();
         calendar.set(2000, 0, 0, 0, 0, 0);
         ArrayList arrayList = new ArrayList();
-        if (this.f36544a.f17586o.g()) {
+        if (this.f36545a.f17587o.g()) {
             i10 = 12;
         } else {
             i10 = 24;
         }
         for (int i11 = 0; i11 < i10; i11++) {
-            arrayList.add(this.f36548e.format(calendar.getTime()));
+            arrayList.add(this.f36549e.format(calendar.getTime()));
             calendar.add(11, 1);
         }
         return arrayList;
@@ -48,12 +48,12 @@ public class d extends g {
 
     @Override // ml.g
     public String s(String str) {
-        return this.f36543f.b(str);
+        return this.f36544f.b(str);
     }
 
     @Override // ml.g
     public boolean u() {
-        if (this.f36544a.z() != il.b.date) {
+        if (this.f36545a.z() != il.b.date) {
             return true;
         }
         return false;

@@ -9,19 +9,19 @@ import zt.c;
 class a implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Class[] f37253a;
+    private static final Class[] f37254a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Object[] f37254b;
+    private static final Object[] f37255b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Method f37255c;
+    private static final Method f37256c;
 
     static {
         Class[] clsArr = new Class[0];
-        f37253a = clsArr;
+        f37254a = clsArr;
         Object[] objArr = new Object[0];
-        f37254b = objArr;
+        f37255b = objArr;
         Method method = null;
         try {
             Method method2 = SystemClock.class.getMethod("elapsedRealtimeNanos", clsArr);
@@ -29,15 +29,15 @@ class a implements e {
             method = method2;
         } catch (IllegalAccessException | NoSuchMethodException | RuntimeException | InvocationTargetException unused) {
         }
-        f37255c = method;
+        f37256c = method;
     }
 
     @Override // iu.e
     public long a() {
-        Method method = f37255c;
+        Method method = f37256c;
         if (method != null) {
             try {
-                return ((Long) method.invoke(null, f37254b)).longValue();
+                return ((Long) method.invoke(null, f37255b)).longValue();
             } catch (IllegalAccessException e10) {
                 e10.printStackTrace(System.err);
             } catch (InvocationTargetException e11) {

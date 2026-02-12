@@ -25,7 +25,7 @@ public final class StaticChannelMentionType {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9265id;
+    private final String f9266id;
     public static final StaticChannelMentionType Home = new StaticChannelMentionType("Home", 0, "home");
     public static final StaticChannelMentionType Guide = new StaticChannelMentionType("Guide", 1, "guide");
     public static final StaticChannelMentionType Customize = new StaticChannelMentionType("Customize", 2, "customize");
@@ -87,7 +87,7 @@ public final class StaticChannelMentionType {
         @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
         @NotNull
         public SerialDescriptor getDescriptor() {
-            return st.j.b("StaticChannelMentionType", e.i.f48368a);
+            return st.j.b("StaticChannelMentionType", e.i.f48369a);
         }
 
         @Override // kotlinx.serialization.DeserializationStrategy
@@ -117,7 +117,7 @@ public final class StaticChannelMentionType {
     }
 
     private StaticChannelMentionType(String str, int i10, String str2) {
-        this.f9265id = str2;
+        this.f9266id = str2;
     }
 
     @NotNull
@@ -135,6 +135,6 @@ public final class StaticChannelMentionType {
 
     @NotNull
     public final String getId() {
-        return this.f9265id;
+        return this.f9266id;
     }
 }

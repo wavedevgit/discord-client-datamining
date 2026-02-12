@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[0] = var5;
         var1[1] = var4;
         var0 = function() { // Environment: var0
-            _fun86318: for (var _fun86318_ip = 0;;) switch (_fun86318_ip) {
+            _fun85297: for (var _fun85297_ip = 0;;) switch (_fun85297_ip) {
                 case 0:
                     var4 = _closure2_slot0;
                     var5 = _closure1_slot0;
@@ -133,8 +133,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var3.DismissibleContent;
                     var3 = var3.CUSTOM_APP_ICONS_NEW_BADGE;
                     if (!(var4 === var3)) {
-                        _fun86318_ip = 67;
-                        continue _fun86318
+                        _fun85297_ip = 67;
+                        continue _fun85297
                     }
                 case 48:
                     var1 = _closure2_slot1;
@@ -186,4 +186,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 660, 1369, 33, 11102, 1358, 6018, 9056, 1234, 11103, 11104, 11107, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 660, 1369, 33, 10933, 1358, 6517, 9818, 1234, 10934, 10935, 10938, 2]);

@@ -11,16 +11,16 @@ import st.l;
 public abstract class c1 implements SerialDescriptor {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f49968a;
+    private final String f49969a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final SerialDescriptor f49969b;
+    private final SerialDescriptor f49970b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final SerialDescriptor f49970c;
+    private final SerialDescriptor f49971c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f49971d;
+    private final int f49972d;
 
     public /* synthetic */ c1(String str, SerialDescriptor serialDescriptor, SerialDescriptor serialDescriptor2, DefaultConstructorMarker defaultConstructorMarker) {
         this(str, serialDescriptor, serialDescriptor2);
@@ -43,7 +43,7 @@ public abstract class c1 implements SerialDescriptor {
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public int d() {
-        return this.f49971d;
+        return this.f49972d;
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
@@ -59,7 +59,7 @@ public abstract class c1 implements SerialDescriptor {
             return false;
         }
         c1 c1Var = (c1) obj;
-        if (Intrinsics.areEqual(h(), c1Var.h()) && Intrinsics.areEqual(this.f49969b, c1Var.f49969b) && Intrinsics.areEqual(this.f49970c, c1Var.f49970c)) {
+        if (Intrinsics.areEqual(h(), c1Var.h()) && Intrinsics.areEqual(this.f49970b, c1Var.f49970b) && Intrinsics.areEqual(this.f49971c, c1Var.f49971c)) {
             return true;
         }
         return false;
@@ -79,11 +79,11 @@ public abstract class c1 implements SerialDescriptor {
             int i11 = i10 % 2;
             if (i11 != 0) {
                 if (i11 == 1) {
-                    return this.f49970c;
+                    return this.f49971c;
                 }
                 throw new IllegalStateException("Unreached");
             }
-            return this.f49969b;
+            return this.f49970b;
         }
         throw new IllegalArgumentException(("Illegal index " + i10 + ", " + h() + " expects only non-negative indices").toString());
     }
@@ -95,16 +95,16 @@ public abstract class c1 implements SerialDescriptor {
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public st.k getKind() {
-        return l.c.f48381a;
+        return l.c.f48382a;
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public String h() {
-        return this.f49968a;
+        return this.f49969a;
     }
 
     public int hashCode() {
-        return (((h().hashCode() * 31) + this.f49969b.hashCode()) * 31) + this.f49970c.hashCode();
+        return (((h().hashCode() * 31) + this.f49970b.hashCode()) * 31) + this.f49971c.hashCode();
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
@@ -121,13 +121,13 @@ public abstract class c1 implements SerialDescriptor {
     }
 
     public String toString() {
-        return h() + '(' + this.f49969b + ", " + this.f49970c + ')';
+        return h() + '(' + this.f49970b + ", " + this.f49971c + ')';
     }
 
     private c1(String str, SerialDescriptor serialDescriptor, SerialDescriptor serialDescriptor2) {
-        this.f49968a = str;
-        this.f49969b = serialDescriptor;
-        this.f49970c = serialDescriptor2;
-        this.f49971d = 2;
+        this.f49969a = str;
+        this.f49970b = serialDescriptor;
+        this.f49971c = serialDescriptor2;
+        this.f49972d = 2;
     }
 }

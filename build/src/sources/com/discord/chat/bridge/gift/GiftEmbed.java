@@ -428,27 +428,27 @@ public interface GiftEmbed {
                 compositeEncoder.w(serialDescriptor, 2, valid.getBackgroundColor());
                 compositeEncoder.w(serialDescriptor, 3, valid.getThumbnailCornerRadius());
                 if (compositeEncoder.z(serialDescriptor, 4) || valid.getThumbnailUrl() != null) {
-                    compositeEncoder.o(serialDescriptor, 4, n2.f50032a, valid.getThumbnailUrl());
+                    compositeEncoder.o(serialDescriptor, 4, n2.f50033a, valid.getThumbnailUrl());
                 }
                 if (compositeEncoder.z(serialDescriptor, 5) || valid.getTitleText() != null) {
-                    compositeEncoder.o(serialDescriptor, 5, n2.f50032a, valid.getTitleText());
+                    compositeEncoder.o(serialDescriptor, 5, n2.f50033a, valid.getTitleText());
                 }
                 compositeEncoder.w(serialDescriptor, 6, valid.getTitleColor());
                 if (compositeEncoder.z(serialDescriptor, 7) || valid.getSubtitle() != null) {
-                    compositeEncoder.o(serialDescriptor, 7, n2.f50032a, valid.getSubtitle());
+                    compositeEncoder.o(serialDescriptor, 7, n2.f50033a, valid.getSubtitle());
                 }
                 compositeEncoder.w(serialDescriptor, 8, valid.getSubtitleColor());
                 if (compositeEncoder.z(serialDescriptor, 9) || valid.bodyText != null) {
-                    compositeEncoder.o(serialDescriptor, 9, n2.f50032a, valid.bodyText);
+                    compositeEncoder.o(serialDescriptor, 9, n2.f50033a, valid.bodyText);
                 }
                 compositeEncoder.w(serialDescriptor, 10, valid.bodyTextColor);
                 if (compositeEncoder.z(serialDescriptor, 11) || valid.acceptLabelText != null) {
-                    compositeEncoder.o(serialDescriptor, 11, n2.f50032a, valid.acceptLabelText);
+                    compositeEncoder.o(serialDescriptor, 11, n2.f50033a, valid.acceptLabelText);
                 }
                 compositeEncoder.w(serialDescriptor, 12, valid.acceptLabelColor);
                 compositeEncoder.w(serialDescriptor, 13, valid.acceptLabelBackgroundColor);
                 if (compositeEncoder.z(serialDescriptor, 14) || valid.splashUrl != null) {
-                    compositeEncoder.o(serialDescriptor, 14, n2.f50032a, valid.splashUrl);
+                    compositeEncoder.o(serialDescriptor, 14, n2.f50033a, valid.splashUrl);
                 }
                 compositeEncoder.s(serialDescriptor, 15, valid.splashOpacity);
                 compositeEncoder.x(serialDescriptor, 16, valid.canBeAccepted);

@@ -36,7 +36,7 @@ public /* synthetic */ class OnMeasurementEvent$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{x.f50086a};
+        return new KSerializer[]{x.f50087a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

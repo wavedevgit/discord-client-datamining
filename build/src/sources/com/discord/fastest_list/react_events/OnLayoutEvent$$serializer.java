@@ -39,7 +39,7 @@ public /* synthetic */ class OnLayoutEvent$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        g0 g0Var = g0.f49992a;
+        g0 g0Var = g0.f49993a;
         return new KSerializer[]{g0Var, g0Var, g0Var, g0Var};
     }
 

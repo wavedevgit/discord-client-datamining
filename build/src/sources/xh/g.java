@@ -5,15 +5,15 @@ import com.google.android.gms.tasks.Task;
 public final class g implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final l f54773a;
+    private final l f54774a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g(l lVar) {
-        this.f54773a = lVar;
+        this.f54774a = lVar;
     }
 
     @Override // xh.b
     public final Task a(d dVar) {
-        return this.f54773a.b(dVar);
+        return this.f54774a.b(dVar);
     }
 }

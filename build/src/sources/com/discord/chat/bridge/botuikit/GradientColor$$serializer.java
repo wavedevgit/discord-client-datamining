@@ -39,8 +39,8 @@ public /* synthetic */ class GradientColor$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        p0 p0Var = p0.f50048a;
-        return new KSerializer[]{p0Var, p0Var, p0Var, g0.f49992a};
+        p0 p0Var = p0.f50049a;
+        return new KSerializer[]{p0Var, p0Var, p0Var, g0.f49993a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

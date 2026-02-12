@@ -159,7 +159,7 @@ public final class Message extends MessageBase {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9233id;
+    private final String f9234id;
     private final InteractionStatus interactionStatus;
     private final boolean isAnnouncementChannel;
     private final Boolean isCallActive;
@@ -336,7 +336,7 @@ public final class Message extends MessageBase {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$7() {
-        return new f(n2.f50032a);
+        return new f(n2.f50033a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -371,7 +371,7 @@ public final class Message extends MessageBase {
     /* renamed from: copy-ldpaWgU$default  reason: not valid java name */
     public static /* synthetic */ Message m226copyldpaWgU$default(Message message, MessageType messageType, String str, String str2, long j10, GuildId guildId, MessageState messageState, UserId userId, long j11, String str3, Integer num, Float f10, Integer num2, Integer num3, String str4, Integer num4, String str5, Integer num5, Integer num6, RoleColors roleColors, boolean z10, boolean z11, Integer num7, String str6, String str7, List list, List list2, Float f11, StructurableText structurableText, List list3, List list4, ActivityInstanceEmbed activityInstanceEmbed, List list5, RoleIcon roleIcon, ConnectionsRoleTag connectionsRoleTag, ThreadEmbed threadEmbed, boolean z12, Boolean bool, Boolean bool2, Boolean bool3, ReferencedMessage referencedMessage, ExecutedCommand executedCommand, List list6, Boolean bool4, String str8, Boolean bool5, Integer num8, Integer num9, String str9, String str10, String str11, EphemeralIndication ephemeralIndication, SurveyIndication surveyIndication, InteractionStatus interactionStatus, Boolean bool6, Boolean bool7, Boolean bool8, String str12, Boolean bool9, String str13, String str14, List list7, Boolean bool10, Boolean bool11, Long l10, Sticker sticker, String str15, String str16, Boolean bool12, ActivityRichPresenceInviteEmbed activityRichPresenceInviteEmbed, boolean z13, ForumPostActions forumPostActions, AutoModerationContext autoModerationContext, ReferralEmbed referralEmbed, PremiumGroupInviteEmbed premiumGroupInviteEmbed, List list8, GiftEmbed giftEmbed, Integer num10, List list9, ChannelPromptData channelPromptData, SafetyPolicyNoticeEmbed safetyPolicyNoticeEmbed, SafetySystemNotificationEmbed safetySystemNotificationEmbed, PollData pollData, SharedCustomThemeData sharedCustomThemeData, CtaButton ctaButton, Integer num11, ForwardInfo forwardInfo, Boolean bool13, GuildId guildId2, String str17, String str18, String str19, boolean z14, DisplayNameStyles displayNameStyles, int i10, int i11, int i12, Object obj) {
         MessageType messageType2 = (i10 & 1) != 0 ? message.type : messageType;
-        return message.m233copyldpaWgU(messageType2, (i10 & 2) != 0 ? message.f9233id : str, (i10 & 4) != 0 ? message.nonce : str2, (i10 & 8) != 0 ? message.channelId : j10, (i10 & 16) != 0 ? message.guildId : guildId, (i10 & 32) != 0 ? message.state : messageState, (i10 & 64) != 0 ? message.authorId : userId, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? message.flags : j11, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? message.edited : str3, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? message.editedColor : num, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0 ? message._constrainedWidth : f10, (i10 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? message.textColor : num2, (i10 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? message.linkColor : num3, (i10 & 8192) != 0 ? message.timestamp : str4, (i10 & 16384) != 0 ? message.timestampColor : num4, (i10 & PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS) != 0 ? message.username : str5, (i10 & 65536) != 0 ? message.usernameColor : num5, (i10 & 131072) != 0 ? message.roleColor : num6, (i10 & 262144) != 0 ? message.roleColors : roleColors, (i10 & 524288) != 0 ? message.shouldShowRoleDot : z10, (i10 & 1048576) != 0 ? message.shouldShowRoleOnName : z11, (i10 & 2097152) != 0 ? message.colorString : num7, (i10 & 4194304) != 0 ? message.avatarURL : str6, (i10 & 8388608) != 0 ? message.avatarDecorationURL : str7, (i10 & PointerEventHelper.X_FLAG_SUPPORTS_HOVER) != 0 ? message.embeds : list, (i10 & 33554432) != 0 ? message.attachments : list2, (i10 & 67108864) != 0 ? message.attachmentsOpacity : f11, (i10 & 134217728) != 0 ? message.content : structurableText, (i10 & 268435456) != 0 ? message.reactions : list3, (i10 & 536870912) != 0 ? message.codedLinks : list4, (i10 & 1073741824) != 0 ? message.activityInstanceEmbed : activityInstanceEmbed, (i10 & Integer.MIN_VALUE) != 0 ? message.stickers : list5, (i11 & 1) != 0 ? message.roleIcon : roleIcon, (i11 & 2) != 0 ? message.connectionsRoleTag : connectionsRoleTag, (i11 & 4) != 0 ? message.threadEmbed : threadEmbed, (i11 & 8) != 0 ? message.mentioned : z12, (i11 & 16) != 0 ? message.gifAutoPlay : bool, (i11 & 32) != 0 ? message.animateEmoji : bool2, (i11 & 64) != 0 ? message.showLinkDecorations : bool3, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? message.referencedMessage : referencedMessage, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? message.executedCommand : executedCommand, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? message.components : list6, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0 ? message.communicationDisabled : bool4, (i11 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? message.tagText : str8, (i11 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? message.tagVerified : bool5, (i11 & 8192) != 0 ? message.tagTextColor : num8, (i11 & 16384) != 0 ? message.tagBackgroundColor : num9, (i11 & PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS) != 0 ? message.tagType : str9, (i11 & 65536) != 0 ? message.tagIconUrl : str10, (i11 & 131072) != 0 ? message.opTagText : str11, (i11 & 262144) != 0 ? message.ephemeralIndication : ephemeralIndication, (i11 & 524288) != 0 ? message.surveyIndication : surveyIndication, (i11 & 1048576) != 0 ? message.interactionStatus : interactionStatus, (i11 & 2097152) != 0 ? message.useAttachmentGridLayout : bool6, (i11 & 4194304) != 0 ? message.useAttachmentUploadPreview : bool7, (i11 & 8388608) != 0 ? message.isCurrentUserMessageAuthor : bool8, (i11 & PointerEventHelper.X_FLAG_SUPPORTS_HOVER) != 0 ? message.obscureLearnMoreLabel : str12, (i11 & 33554432) != 0 ? message.usingGradientTheme : bool9, (i11 & 67108864) != 0 ? message.title : str13, (i11 & 134217728) != 0 ? message.description : str14, (i11 & 268435456) != 0 ? message.avatarURLs : list7, (i11 & 536870912) != 0 ? message.isCallActive : bool10, (i11 & 1073741824) != 0 ? message.missed : bool11, (i11 & Integer.MIN_VALUE) != 0 ? message.rawMilliseconds : l10, (i12 & 1) != 0 ? message.sticker : sticker, (i12 & 2) != 0 ? message.stickerLabel : str15, (i12 & 4) != 0 ? message.buttonLabel : str16, (i12 & 8) != 0 ? message.showInviteToSpeakButton : bool12, (i12 & 16) != 0 ? message.activityRichPresenceInviteEmbed : activityRichPresenceInviteEmbed, (i12 & 32) != 0 ? message.isFirstForumPostMessage : z13, (i12 & 64) != 0 ? message.postActions : forumPostActions, (i12 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? message.autoModerationContext : autoModerationContext, (i12 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? message.referralTrialOfferInfo : referralEmbed, (i12 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? message.premiumGroupInviteInfo : premiumGroupInviteEmbed, (i12 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0 ? message.giftCodes : list8, (i12 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? message.referralTrialOffer : giftEmbed, (i12 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? message.totalMonthsSubscribed : num10, (i12 & 8192) != 0 ? message.postPreviewEmbeds : list9, (i12 & 16384) != 0 ? message.channelPromptData : channelPromptData, (i12 & PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS) != 0 ? message.safetyPolicyNoticeEmbed : safetyPolicyNoticeEmbed, (i12 & 65536) != 0 ? message.safetySystemNotificationEmbed : safetySystemNotificationEmbed, (i12 & 131072) != 0 ? message.pollData : pollData, (i12 & 262144) != 0 ? message.sharedClientTheme : sharedCustomThemeData, (i12 & 524288) != 0 ? message.ctaButton : ctaButton, (i12 & 1048576) != 0 ? message.audioAttachmentBackgroundColor : num11, (i12 & 2097152) != 0 ? message.forwardInfo : forwardInfo, (i12 & 4194304) != 0 ? message.showInlineForwardButton : bool13, (i12 & 8388608) != 0 ? message.clanTagGuildId : guildId2, (i12 & PointerEventHelper.X_FLAG_SUPPORTS_HOVER) != 0 ? message.clanTag : str17, (i12 & 33554432) != 0 ? message.clanBadgeUrl : str18, (i12 & 67108864) != 0 ? message.gameApplicationId : str19, (i12 & 134217728) != 0 ? message.isAnnouncementChannel : z14, (i12 & 268435456) != 0 ? message.displayNameStyles : displayNameStyles);
+        return message.m233copyldpaWgU(messageType2, (i10 & 2) != 0 ? message.f9234id : str, (i10 & 4) != 0 ? message.nonce : str2, (i10 & 8) != 0 ? message.channelId : j10, (i10 & 16) != 0 ? message.guildId : guildId, (i10 & 32) != 0 ? message.state : messageState, (i10 & 64) != 0 ? message.authorId : userId, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? message.flags : j11, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? message.edited : str3, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? message.editedColor : num, (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0 ? message._constrainedWidth : f10, (i10 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? message.textColor : num2, (i10 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? message.linkColor : num3, (i10 & 8192) != 0 ? message.timestamp : str4, (i10 & 16384) != 0 ? message.timestampColor : num4, (i10 & PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS) != 0 ? message.username : str5, (i10 & 65536) != 0 ? message.usernameColor : num5, (i10 & 131072) != 0 ? message.roleColor : num6, (i10 & 262144) != 0 ? message.roleColors : roleColors, (i10 & 524288) != 0 ? message.shouldShowRoleDot : z10, (i10 & 1048576) != 0 ? message.shouldShowRoleOnName : z11, (i10 & 2097152) != 0 ? message.colorString : num7, (i10 & 4194304) != 0 ? message.avatarURL : str6, (i10 & 8388608) != 0 ? message.avatarDecorationURL : str7, (i10 & PointerEventHelper.X_FLAG_SUPPORTS_HOVER) != 0 ? message.embeds : list, (i10 & 33554432) != 0 ? message.attachments : list2, (i10 & 67108864) != 0 ? message.attachmentsOpacity : f11, (i10 & 134217728) != 0 ? message.content : structurableText, (i10 & 268435456) != 0 ? message.reactions : list3, (i10 & 536870912) != 0 ? message.codedLinks : list4, (i10 & 1073741824) != 0 ? message.activityInstanceEmbed : activityInstanceEmbed, (i10 & Integer.MIN_VALUE) != 0 ? message.stickers : list5, (i11 & 1) != 0 ? message.roleIcon : roleIcon, (i11 & 2) != 0 ? message.connectionsRoleTag : connectionsRoleTag, (i11 & 4) != 0 ? message.threadEmbed : threadEmbed, (i11 & 8) != 0 ? message.mentioned : z12, (i11 & 16) != 0 ? message.gifAutoPlay : bool, (i11 & 32) != 0 ? message.animateEmoji : bool2, (i11 & 64) != 0 ? message.showLinkDecorations : bool3, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? message.referencedMessage : referencedMessage, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? message.executedCommand : executedCommand, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? message.components : list6, (i11 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0 ? message.communicationDisabled : bool4, (i11 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? message.tagText : str8, (i11 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? message.tagVerified : bool5, (i11 & 8192) != 0 ? message.tagTextColor : num8, (i11 & 16384) != 0 ? message.tagBackgroundColor : num9, (i11 & PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS) != 0 ? message.tagType : str9, (i11 & 65536) != 0 ? message.tagIconUrl : str10, (i11 & 131072) != 0 ? message.opTagText : str11, (i11 & 262144) != 0 ? message.ephemeralIndication : ephemeralIndication, (i11 & 524288) != 0 ? message.surveyIndication : surveyIndication, (i11 & 1048576) != 0 ? message.interactionStatus : interactionStatus, (i11 & 2097152) != 0 ? message.useAttachmentGridLayout : bool6, (i11 & 4194304) != 0 ? message.useAttachmentUploadPreview : bool7, (i11 & 8388608) != 0 ? message.isCurrentUserMessageAuthor : bool8, (i11 & PointerEventHelper.X_FLAG_SUPPORTS_HOVER) != 0 ? message.obscureLearnMoreLabel : str12, (i11 & 33554432) != 0 ? message.usingGradientTheme : bool9, (i11 & 67108864) != 0 ? message.title : str13, (i11 & 134217728) != 0 ? message.description : str14, (i11 & 268435456) != 0 ? message.avatarURLs : list7, (i11 & 536870912) != 0 ? message.isCallActive : bool10, (i11 & 1073741824) != 0 ? message.missed : bool11, (i11 & Integer.MIN_VALUE) != 0 ? message.rawMilliseconds : l10, (i12 & 1) != 0 ? message.sticker : sticker, (i12 & 2) != 0 ? message.stickerLabel : str15, (i12 & 4) != 0 ? message.buttonLabel : str16, (i12 & 8) != 0 ? message.showInviteToSpeakButton : bool12, (i12 & 16) != 0 ? message.activityRichPresenceInviteEmbed : activityRichPresenceInviteEmbed, (i12 & 32) != 0 ? message.isFirstForumPostMessage : z13, (i12 & 64) != 0 ? message.postActions : forumPostActions, (i12 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? message.autoModerationContext : autoModerationContext, (i12 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0 ? message.referralTrialOfferInfo : referralEmbed, (i12 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0 ? message.premiumGroupInviteInfo : premiumGroupInviteEmbed, (i12 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0 ? message.giftCodes : list8, (i12 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0 ? message.referralTrialOffer : giftEmbed, (i12 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0 ? message.totalMonthsSubscribed : num10, (i12 & 8192) != 0 ? message.postPreviewEmbeds : list9, (i12 & 16384) != 0 ? message.channelPromptData : channelPromptData, (i12 & PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS) != 0 ? message.safetyPolicyNoticeEmbed : safetyPolicyNoticeEmbed, (i12 & 65536) != 0 ? message.safetySystemNotificationEmbed : safetySystemNotificationEmbed, (i12 & 131072) != 0 ? message.pollData : pollData, (i12 & 262144) != 0 ? message.sharedClientTheme : sharedCustomThemeData, (i12 & 524288) != 0 ? message.ctaButton : ctaButton, (i12 & 1048576) != 0 ? message.audioAttachmentBackgroundColor : num11, (i12 & 2097152) != 0 ? message.forwardInfo : forwardInfo, (i12 & 4194304) != 0 ? message.showInlineForwardButton : bool13, (i12 & 8388608) != 0 ? message.clanTagGuildId : guildId2, (i12 & PointerEventHelper.X_FLAG_SUPPORTS_HOVER) != 0 ? message.clanTag : str17, (i12 & 33554432) != 0 ? message.clanBadgeUrl : str18, (i12 & 67108864) != 0 ? message.gameApplicationId : str19, (i12 & 134217728) != 0 ? message.isAnnouncementChannel : z14, (i12 & 268435456) != 0 ? message.displayNameStyles : displayNameStyles);
     }
 
     @c
@@ -390,7 +390,7 @@ public final class Message extends MessageBase {
         Lazy[] lazyArr = $childSerializers;
         compositeEncoder.k(serialDescriptor, 0, MessageType.Serializer.INSTANCE, message.type);
         MessageId$$serializer messageId$$serializer = MessageId$$serializer.INSTANCE;
-        compositeEncoder.k(serialDescriptor, 1, messageId$$serializer, MessageId.m1084boximpl(message.f9233id));
+        compositeEncoder.k(serialDescriptor, 1, messageId$$serializer, MessageId.m1084boximpl(message.f9234id));
         if (compositeEncoder.z(serialDescriptor, 2) || message.nonce != null) {
             String str = message.nonce;
             compositeEncoder.o(serialDescriptor, 2, messageId$$serializer, str != null ? MessageId.m1084boximpl(str) : null);
@@ -409,34 +409,34 @@ public final class Message extends MessageBase {
             compositeEncoder.E(serialDescriptor, 7, message.flags);
         }
         if (compositeEncoder.z(serialDescriptor, 8) || message.edited != null) {
-            compositeEncoder.o(serialDescriptor, 8, n2.f50032a, message.edited);
+            compositeEncoder.o(serialDescriptor, 8, n2.f50033a, message.edited);
         }
         if (compositeEncoder.z(serialDescriptor, 9) || message.editedColor != null) {
-            compositeEncoder.o(serialDescriptor, 9, p0.f50048a, message.editedColor);
+            compositeEncoder.o(serialDescriptor, 9, p0.f50049a, message.editedColor);
         }
         if (compositeEncoder.z(serialDescriptor, 10) || message._constrainedWidth != null) {
-            compositeEncoder.o(serialDescriptor, 10, g0.f49992a, message._constrainedWidth);
+            compositeEncoder.o(serialDescriptor, 10, g0.f49993a, message._constrainedWidth);
         }
         if (compositeEncoder.z(serialDescriptor, 11) || message.textColor != null) {
-            compositeEncoder.o(serialDescriptor, 11, p0.f50048a, message.textColor);
+            compositeEncoder.o(serialDescriptor, 11, p0.f50049a, message.textColor);
         }
         if (compositeEncoder.z(serialDescriptor, 12) || message.linkColor != null) {
-            compositeEncoder.o(serialDescriptor, 12, p0.f50048a, message.linkColor);
+            compositeEncoder.o(serialDescriptor, 12, p0.f50049a, message.linkColor);
         }
         if (compositeEncoder.z(serialDescriptor, 13) || message.timestamp != null) {
-            compositeEncoder.o(serialDescriptor, 13, n2.f50032a, message.timestamp);
+            compositeEncoder.o(serialDescriptor, 13, n2.f50033a, message.timestamp);
         }
         if (compositeEncoder.z(serialDescriptor, 14) || message.timestampColor != null) {
-            compositeEncoder.o(serialDescriptor, 14, p0.f50048a, message.timestampColor);
+            compositeEncoder.o(serialDescriptor, 14, p0.f50049a, message.timestampColor);
         }
         if (compositeEncoder.z(serialDescriptor, 15) || message.username != null) {
-            compositeEncoder.o(serialDescriptor, 15, n2.f50032a, message.username);
+            compositeEncoder.o(serialDescriptor, 15, n2.f50033a, message.username);
         }
         if (compositeEncoder.z(serialDescriptor, 16) || message.usernameColor != null) {
-            compositeEncoder.o(serialDescriptor, 16, p0.f50048a, message.usernameColor);
+            compositeEncoder.o(serialDescriptor, 16, p0.f50049a, message.usernameColor);
         }
         if (compositeEncoder.z(serialDescriptor, 17) || message.roleColor != null) {
-            compositeEncoder.o(serialDescriptor, 17, p0.f50048a, message.roleColor);
+            compositeEncoder.o(serialDescriptor, 17, p0.f50049a, message.roleColor);
         }
         if (compositeEncoder.z(serialDescriptor, 18) || message.roleColors != null) {
             compositeEncoder.o(serialDescriptor, 18, RoleColors$$serializer.INSTANCE, message.roleColors);
@@ -448,13 +448,13 @@ public final class Message extends MessageBase {
             compositeEncoder.x(serialDescriptor, 20, message.shouldShowRoleOnName);
         }
         if (compositeEncoder.z(serialDescriptor, 21) || message.colorString != null) {
-            compositeEncoder.o(serialDescriptor, 21, p0.f50048a, message.colorString);
+            compositeEncoder.o(serialDescriptor, 21, p0.f50049a, message.colorString);
         }
         if (compositeEncoder.z(serialDescriptor, 22) || message.avatarURL != null) {
-            compositeEncoder.o(serialDescriptor, 22, n2.f50032a, message.avatarURL);
+            compositeEncoder.o(serialDescriptor, 22, n2.f50033a, message.avatarURL);
         }
         if (compositeEncoder.z(serialDescriptor, 23) || message.avatarDecorationURL != null) {
-            compositeEncoder.o(serialDescriptor, 23, n2.f50032a, message.avatarDecorationURL);
+            compositeEncoder.o(serialDescriptor, 23, n2.f50033a, message.avatarDecorationURL);
         }
         if (compositeEncoder.z(serialDescriptor, 24) || message.embeds != null) {
             compositeEncoder.o(serialDescriptor, 24, (qt.o) lazyArr[24].getValue(), message.embeds);
@@ -463,7 +463,7 @@ public final class Message extends MessageBase {
             compositeEncoder.o(serialDescriptor, 25, (qt.o) lazyArr[25].getValue(), message.attachments);
         }
         if (compositeEncoder.z(serialDescriptor, 26) || message.attachmentsOpacity != null) {
-            compositeEncoder.o(serialDescriptor, 26, g0.f49992a, message.attachmentsOpacity);
+            compositeEncoder.o(serialDescriptor, 26, g0.f49993a, message.attachmentsOpacity);
         }
         if (compositeEncoder.z(serialDescriptor, 27) || message.content != null) {
             compositeEncoder.o(serialDescriptor, 27, StructurableTextSerializer.INSTANCE, message.content);
@@ -491,13 +491,13 @@ public final class Message extends MessageBase {
         }
         compositeEncoder.x(serialDescriptor, 35, message.mentioned);
         if (compositeEncoder.z(serialDescriptor, 36) || message.gifAutoPlay != null) {
-            compositeEncoder.o(serialDescriptor, 36, h.f49996a, message.gifAutoPlay);
+            compositeEncoder.o(serialDescriptor, 36, h.f49997a, message.gifAutoPlay);
         }
         if (compositeEncoder.z(serialDescriptor, 37) || message.animateEmoji != null) {
-            compositeEncoder.o(serialDescriptor, 37, h.f49996a, message.animateEmoji);
+            compositeEncoder.o(serialDescriptor, 37, h.f49997a, message.animateEmoji);
         }
         if (compositeEncoder.z(serialDescriptor, 38) || message.showLinkDecorations != null) {
-            compositeEncoder.o(serialDescriptor, 38, h.f49996a, message.showLinkDecorations);
+            compositeEncoder.o(serialDescriptor, 38, h.f49997a, message.showLinkDecorations);
         }
         if (compositeEncoder.z(serialDescriptor, 39) || message.referencedMessage != null) {
             compositeEncoder.o(serialDescriptor, 39, ReferencedMessageSerializer.INSTANCE, message.referencedMessage);
@@ -509,28 +509,28 @@ public final class Message extends MessageBase {
             compositeEncoder.o(serialDescriptor, 41, (qt.o) lazyArr[41].getValue(), message.components);
         }
         if (compositeEncoder.z(serialDescriptor, 42) || message.communicationDisabled != null) {
-            compositeEncoder.o(serialDescriptor, 42, h.f49996a, message.communicationDisabled);
+            compositeEncoder.o(serialDescriptor, 42, h.f49997a, message.communicationDisabled);
         }
         if (compositeEncoder.z(serialDescriptor, 43) || message.tagText != null) {
-            compositeEncoder.o(serialDescriptor, 43, n2.f50032a, message.tagText);
+            compositeEncoder.o(serialDescriptor, 43, n2.f50033a, message.tagText);
         }
         if (compositeEncoder.z(serialDescriptor, 44) || message.tagVerified != null) {
-            compositeEncoder.o(serialDescriptor, 44, h.f49996a, message.tagVerified);
+            compositeEncoder.o(serialDescriptor, 44, h.f49997a, message.tagVerified);
         }
         if (compositeEncoder.z(serialDescriptor, 45) || message.tagTextColor != null) {
-            compositeEncoder.o(serialDescriptor, 45, p0.f50048a, message.tagTextColor);
+            compositeEncoder.o(serialDescriptor, 45, p0.f50049a, message.tagTextColor);
         }
         if (compositeEncoder.z(serialDescriptor, 46) || message.tagBackgroundColor != null) {
-            compositeEncoder.o(serialDescriptor, 46, p0.f50048a, message.tagBackgroundColor);
+            compositeEncoder.o(serialDescriptor, 46, p0.f50049a, message.tagBackgroundColor);
         }
         if (compositeEncoder.z(serialDescriptor, 47) || message.tagType != null) {
-            compositeEncoder.o(serialDescriptor, 47, n2.f50032a, message.tagType);
+            compositeEncoder.o(serialDescriptor, 47, n2.f50033a, message.tagType);
         }
         if (compositeEncoder.z(serialDescriptor, 48) || message.tagIconUrl != null) {
-            compositeEncoder.o(serialDescriptor, 48, n2.f50032a, message.tagIconUrl);
+            compositeEncoder.o(serialDescriptor, 48, n2.f50033a, message.tagIconUrl);
         }
         if (compositeEncoder.z(serialDescriptor, 49) || message.opTagText != null) {
-            compositeEncoder.o(serialDescriptor, 49, n2.f50032a, message.opTagText);
+            compositeEncoder.o(serialDescriptor, 49, n2.f50033a, message.opTagText);
         }
         if (compositeEncoder.z(serialDescriptor, 50) || message.ephemeralIndication != null) {
             compositeEncoder.o(serialDescriptor, 50, EphemeralIndication$$serializer.INSTANCE, message.ephemeralIndication);
@@ -542,49 +542,49 @@ public final class Message extends MessageBase {
             compositeEncoder.o(serialDescriptor, 52, InteractionStatus$$serializer.INSTANCE, message.interactionStatus);
         }
         if (compositeEncoder.z(serialDescriptor, 53) || !Intrinsics.areEqual(message.useAttachmentGridLayout, Boolean.FALSE)) {
-            compositeEncoder.o(serialDescriptor, 53, h.f49996a, message.useAttachmentGridLayout);
+            compositeEncoder.o(serialDescriptor, 53, h.f49997a, message.useAttachmentGridLayout);
         }
         if (compositeEncoder.z(serialDescriptor, 54) || !Intrinsics.areEqual(message.useAttachmentUploadPreview, Boolean.FALSE)) {
-            compositeEncoder.o(serialDescriptor, 54, h.f49996a, message.useAttachmentUploadPreview);
+            compositeEncoder.o(serialDescriptor, 54, h.f49997a, message.useAttachmentUploadPreview);
         }
         if (compositeEncoder.z(serialDescriptor, 55) || !Intrinsics.areEqual(message.isCurrentUserMessageAuthor, Boolean.FALSE)) {
-            compositeEncoder.o(serialDescriptor, 55, h.f49996a, message.isCurrentUserMessageAuthor);
+            compositeEncoder.o(serialDescriptor, 55, h.f49997a, message.isCurrentUserMessageAuthor);
         }
         if (compositeEncoder.z(serialDescriptor, 56) || message.obscureLearnMoreLabel != null) {
-            compositeEncoder.o(serialDescriptor, 56, n2.f50032a, message.obscureLearnMoreLabel);
+            compositeEncoder.o(serialDescriptor, 56, n2.f50033a, message.obscureLearnMoreLabel);
         }
         if (compositeEncoder.z(serialDescriptor, 57) || !Intrinsics.areEqual(message.usingGradientTheme, Boolean.FALSE)) {
-            compositeEncoder.o(serialDescriptor, 57, h.f49996a, message.usingGradientTheme);
+            compositeEncoder.o(serialDescriptor, 57, h.f49997a, message.usingGradientTheme);
         }
         if (compositeEncoder.z(serialDescriptor, 58) || message.title != null) {
-            compositeEncoder.o(serialDescriptor, 58, n2.f50032a, message.title);
+            compositeEncoder.o(serialDescriptor, 58, n2.f50033a, message.title);
         }
         if (compositeEncoder.z(serialDescriptor, 59) || message.description != null) {
-            compositeEncoder.o(serialDescriptor, 59, n2.f50032a, message.description);
+            compositeEncoder.o(serialDescriptor, 59, n2.f50033a, message.description);
         }
         if (compositeEncoder.z(serialDescriptor, 60) || message.avatarURLs != null) {
             compositeEncoder.o(serialDescriptor, 60, (qt.o) lazyArr[60].getValue(), message.avatarURLs);
         }
         if (compositeEncoder.z(serialDescriptor, 61) || message.isCallActive != null) {
-            compositeEncoder.o(serialDescriptor, 61, h.f49996a, message.isCallActive);
+            compositeEncoder.o(serialDescriptor, 61, h.f49997a, message.isCallActive);
         }
         if (compositeEncoder.z(serialDescriptor, 62) || message.missed != null) {
-            compositeEncoder.o(serialDescriptor, 62, h.f49996a, message.missed);
+            compositeEncoder.o(serialDescriptor, 62, h.f49997a, message.missed);
         }
         if (compositeEncoder.z(serialDescriptor, 63) || message.rawMilliseconds != null) {
-            compositeEncoder.o(serialDescriptor, 63, z0.f50106a, message.rawMilliseconds);
+            compositeEncoder.o(serialDescriptor, 63, z0.f50107a, message.rawMilliseconds);
         }
         if (compositeEncoder.z(serialDescriptor, 64) || message.sticker != null) {
             compositeEncoder.o(serialDescriptor, 64, Sticker$$serializer.INSTANCE, message.sticker);
         }
         if (compositeEncoder.z(serialDescriptor, 65) || message.stickerLabel != null) {
-            compositeEncoder.o(serialDescriptor, 65, n2.f50032a, message.stickerLabel);
+            compositeEncoder.o(serialDescriptor, 65, n2.f50033a, message.stickerLabel);
         }
         if (compositeEncoder.z(serialDescriptor, 66) || message.buttonLabel != null) {
-            compositeEncoder.o(serialDescriptor, 66, n2.f50032a, message.buttonLabel);
+            compositeEncoder.o(serialDescriptor, 66, n2.f50033a, message.buttonLabel);
         }
         if (compositeEncoder.z(serialDescriptor, 67) || message.showInviteToSpeakButton != null) {
-            compositeEncoder.o(serialDescriptor, 67, h.f49996a, message.showInviteToSpeakButton);
+            compositeEncoder.o(serialDescriptor, 67, h.f49997a, message.showInviteToSpeakButton);
         }
         if (compositeEncoder.z(serialDescriptor, 68) || message.activityRichPresenceInviteEmbed != null) {
             compositeEncoder.o(serialDescriptor, 68, ActivityRichPresenceInviteEmbed$$serializer.INSTANCE, message.activityRichPresenceInviteEmbed);
@@ -611,7 +611,7 @@ public final class Message extends MessageBase {
             compositeEncoder.o(serialDescriptor, 75, GiftEmbedSerializer.INSTANCE, message.referralTrialOffer);
         }
         if (compositeEncoder.z(serialDescriptor, 76) || message.totalMonthsSubscribed != null) {
-            compositeEncoder.o(serialDescriptor, 76, p0.f50048a, message.totalMonthsSubscribed);
+            compositeEncoder.o(serialDescriptor, 76, p0.f50049a, message.totalMonthsSubscribed);
         }
         if (compositeEncoder.z(serialDescriptor, 77) || message.postPreviewEmbeds != null) {
             compositeEncoder.o(serialDescriptor, 77, (qt.o) lazyArr[77].getValue(), message.postPreviewEmbeds);
@@ -635,25 +635,25 @@ public final class Message extends MessageBase {
             compositeEncoder.o(serialDescriptor, 83, CtaButton$$serializer.INSTANCE, message.ctaButton);
         }
         if (compositeEncoder.z(serialDescriptor, 84) || message.audioAttachmentBackgroundColor != null) {
-            compositeEncoder.o(serialDescriptor, 84, p0.f50048a, message.audioAttachmentBackgroundColor);
+            compositeEncoder.o(serialDescriptor, 84, p0.f50049a, message.audioAttachmentBackgroundColor);
         }
         if (compositeEncoder.z(serialDescriptor, 85) || message.forwardInfo != null) {
             compositeEncoder.o(serialDescriptor, 85, ForwardInfo$$serializer.INSTANCE, message.forwardInfo);
         }
         if (compositeEncoder.z(serialDescriptor, 86) || message.showInlineForwardButton != null) {
-            compositeEncoder.o(serialDescriptor, 86, h.f49996a, message.showInlineForwardButton);
+            compositeEncoder.o(serialDescriptor, 86, h.f49997a, message.showInlineForwardButton);
         }
         if (compositeEncoder.z(serialDescriptor, 87) || message.clanTagGuildId != null) {
             compositeEncoder.o(serialDescriptor, 87, GuildId$$serializer.INSTANCE, message.clanTagGuildId);
         }
         if (compositeEncoder.z(serialDescriptor, 88) || message.clanTag != null) {
-            compositeEncoder.o(serialDescriptor, 88, n2.f50032a, message.clanTag);
+            compositeEncoder.o(serialDescriptor, 88, n2.f50033a, message.clanTag);
         }
         if (compositeEncoder.z(serialDescriptor, 89) || message.clanBadgeUrl != null) {
-            compositeEncoder.o(serialDescriptor, 89, n2.f50032a, message.clanBadgeUrl);
+            compositeEncoder.o(serialDescriptor, 89, n2.f50033a, message.clanBadgeUrl);
         }
         if (compositeEncoder.z(serialDescriptor, 90) || message.gameApplicationId != null) {
-            compositeEncoder.o(serialDescriptor, 90, n2.f50032a, message.gameApplicationId);
+            compositeEncoder.o(serialDescriptor, 90, n2.f50033a, message.gameApplicationId);
         }
         if (compositeEncoder.z(serialDescriptor, 91) || message.isAnnouncementChannel) {
             compositeEncoder.x(serialDescriptor, 91, message.isAnnouncementChannel);
@@ -712,7 +712,7 @@ public final class Message extends MessageBase {
     @NotNull
     /* renamed from: component2-3Eiw7ao  reason: not valid java name */
     public final String m227component23Eiw7ao() {
-        return this.f9233id;
+        return this.f9234id;
     }
 
     public final boolean component20() {
@@ -1059,7 +1059,7 @@ public final class Message extends MessageBase {
         }
         if (obj instanceof Message) {
             Message message = (Message) obj;
-            if (this.type == message.type && MessageId.m1088equalsimpl0(this.f9233id, message.f9233id)) {
+            if (this.type == message.type && MessageId.m1088equalsimpl0(this.f9234id, message.f9234id)) {
                 String str = this.nonce;
                 String str2 = message.nonce;
                 if (str == null) {
@@ -1239,7 +1239,7 @@ public final class Message extends MessageBase {
     @NotNull
     /* renamed from: getId-3Eiw7ao  reason: not valid java name */
     public final String m238getId3Eiw7ao() {
-        return this.f9233id;
+        return this.f9234id;
     }
 
     public final InteractionStatus getInteractionStatus() {
@@ -1473,7 +1473,7 @@ public final class Message extends MessageBase {
     }
 
     public int hashCode() {
-        int hashCode = ((this.type.hashCode() * 31) + MessageId.m1089hashCodeimpl(this.f9233id)) * 31;
+        int hashCode = ((this.type.hashCode() * 31) + MessageId.m1089hashCodeimpl(this.f9234id)) * 31;
         String str = this.nonce;
         int m1089hashCodeimpl = (((hashCode + (str == null ? 0 : MessageId.m1089hashCodeimpl(str))) * 31) + ChannelId.m1063hashCodeimpl(this.channelId)) * 31;
         GuildId guildId = this.guildId;
@@ -1678,7 +1678,7 @@ public final class Message extends MessageBase {
     @NotNull
     public String toString() {
         MessageType messageType = this.type;
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.f9233id);
+        String m1091toStringimpl = MessageId.m1091toStringimpl(this.f9234id);
         String str = this.nonce;
         String m1091toStringimpl2 = str == null ? "null" : MessageId.m1091toStringimpl(str);
         String m1065toStringimpl = ChannelId.m1065toStringimpl(this.channelId);
@@ -1785,7 +1785,7 @@ public final class Message extends MessageBase {
             v1.a(new int[]{i10, i11, i12}, new int[]{11, 8, 0}, Message$$serializer.INSTANCE.getDescriptor());
         }
         this.type = messageType;
-        this.f9233id = str;
+        this.f9234id = str;
         if ((i10 & 4) == 0) {
             this.nonce = null;
         } else {
@@ -2234,7 +2234,7 @@ public final class Message extends MessageBase {
         Intrinsics.checkNotNullParameter(type, "type");
         Intrinsics.checkNotNullParameter(id2, "id");
         this.type = type;
-        this.f9233id = id2;
+        this.f9234id = id2;
         this.nonce = str;
         this.channelId = j10;
         this.guildId = guildId;

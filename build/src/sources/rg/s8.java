@@ -5,7 +5,7 @@ import bj.c;
 final class s8 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final s8 f47132a = new s8();
+    static final s8 f47133a = new s8();
 
     static {
         c.b a10 = bj.c.a("handwritingRecognitionStrategy");

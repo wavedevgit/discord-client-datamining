@@ -22,7 +22,7 @@ import org.jetbrains.annotations.NotNull;
 public final class Pi2NavigationBar extends ConstraintLayout {
 
     /* renamed from: d  reason: collision with root package name */
-    private final dq.c f20569d;
+    private final dq.c f20570d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public Pi2NavigationBar(@NotNull Context context, AttributeSet attributeSet) {
@@ -30,7 +30,7 @@ public final class Pi2NavigationBar extends ConstraintLayout {
         Intrinsics.checkNotNullParameter(context, "context");
         dq.c b10 = dq.c.b(LayoutInflater.from(getContext()), this);
         Intrinsics.checkNotNullExpressionValue(b10, "inflate(...)");
-        this.f20569d = b10;
+        this.f20570d = b10;
         c(attributeSet, 0, 0);
     }
 
@@ -42,9 +42,9 @@ public final class Pi2NavigationBar extends ConstraintLayout {
             for (int i12 = 0; i12 < indexCount; i12++) {
                 int index = obtainStyledAttributes.getIndex(i12);
                 if (index == p.f7435b) {
-                    this.f20569d.f21854b.setImageResource(obtainStyledAttributes.getResourceId(index, l.f7386s));
+                    this.f20570d.f21855b.setImageResource(obtainStyledAttributes.getResourceId(index, l.f7386s));
                 } else if (index == p.f7436c) {
-                    this.f20569d.f21855c.setImageResource(obtainStyledAttributes.getResourceId(index, l.f7388u));
+                    this.f20570d.f21856c.setImageResource(obtainStyledAttributes.getResourceId(index, l.f7388u));
                 }
             }
             obtainStyledAttributes.recycle();
@@ -63,7 +63,7 @@ public final class Pi2NavigationBar extends ConstraintLayout {
 
     @NotNull
     public final View getBackButton() {
-        ImageView navBarBackButton = this.f20569d.f21854b;
+        ImageView navBarBackButton = this.f20570d.f21855b;
         Intrinsics.checkNotNullExpressionValue(navBarBackButton, "navBarBackButton");
         return navBarBackButton;
     }
@@ -74,11 +74,11 @@ public final class Pi2NavigationBar extends ConstraintLayout {
         Intrinsics.checkNotNullParameter(back, "back");
         Intrinsics.checkNotNullParameter(cancel, "cancel");
         if (!state.d()) {
-            this.f20569d.f21854b.setVisibility(8);
-            this.f20569d.f21855c.setVisibility(8);
+            this.f20570d.f21855b.setVisibility(8);
+            this.f20570d.f21856c.setVisibility(8);
             return;
         }
-        ImageView imageView = this.f20569d.f21854b;
+        ImageView imageView = this.f20570d.f21855b;
         int i11 = 4;
         if (state.b()) {
             i10 = 0;
@@ -86,25 +86,25 @@ public final class Pi2NavigationBar extends ConstraintLayout {
             i10 = 4;
         }
         imageView.setVisibility(i10);
-        this.f20569d.f21854b.setOnClickListener(new View.OnClickListener() { // from class: lq.h
+        this.f20570d.f21855b.setOnClickListener(new View.OnClickListener() { // from class: lq.h
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 Pi2NavigationBar.j(Function0.this, view);
             }
         });
-        ImageView imageView2 = this.f20569d.f21855c;
+        ImageView imageView2 = this.f20570d.f21856c;
         if (state.c()) {
             i11 = 0;
         }
         imageView2.setVisibility(i11);
-        this.f20569d.f21855c.setOnClickListener(new View.OnClickListener() { // from class: lq.i
+        this.f20570d.f21856c.setOnClickListener(new View.OnClickListener() { // from class: lq.i
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 Pi2NavigationBar.k(Function0.this, view);
             }
         });
-        this.f20569d.f21854b.setEnabled(state.e());
-        this.f20569d.f21855c.setEnabled(state.e());
+        this.f20570d.f21855b.setEnabled(state.e());
+        this.f20570d.f21856c.setEnabled(state.e());
     }
 
     @Override // android.view.View
@@ -115,7 +115,7 @@ public final class Pi2NavigationBar extends ConstraintLayout {
     }
 
     public final void setControlsColor(int i10) {
-        this.f20569d.f21854b.setColorFilter(i10);
-        this.f20569d.f21855c.setColorFilter(i10);
+        this.f20570d.f21855b.setColorFilter(i10);
+        this.f20570d.f21856c.setColorFilter(i10);
     }
 }

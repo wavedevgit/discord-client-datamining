@@ -9,10 +9,10 @@ import java.util.Map;
 public final class z6 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private List f30331d;
+    private List f30332d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Map f30332e;
+    private Map f30333e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -47,25 +47,25 @@ public final class z6 implements w1 {
     }
 
     public z6(List list) {
-        this.f30331d = list;
+        this.f30332d = list;
     }
 
     public List a() {
-        return this.f30331d;
+        return this.f30332d;
     }
 
     public void b(Map map) {
-        this.f30332e = map;
+        this.f30333e = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e(AlertFragment.ARG_ITEMS).j(iLogger, this.f30331d);
-        Map map = this.f30332e;
+        f3Var.e(AlertFragment.ARG_ITEMS).j(iLogger, this.f30332d);
+        Map map = this.f30333e;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f30332e.get(str));
+                f3Var.e(str).j(iLogger, this.f30333e.get(str));
             }
         }
         f3Var.D();

@@ -15,19 +15,19 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateDocumentResponse_DataJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19506a;
+    private final m.b f19507a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19507b;
+    private final h f19508b;
 
     public CreateDocumentResponse_DataJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a(StackTraceHelper.ID_KEY);
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19506a = a10;
+        this.f19507a = a10;
         h f10 = moshi.f(String.class, x0.d(), StackTraceHelper.ID_KEY);
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19507b = f10;
+        this.f19508b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,9 +37,9 @@ public final class CreateDocumentResponse_DataJsonAdapter extends h {
         reader.u();
         String str = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19506a);
+            int J = reader.J(this.f19507a);
             if (J != -1) {
-                if (J == 0 && (str = (String) this.f19507b.fromJson(reader)) == null) {
+                if (J == 0 && (str = (String) this.f19508b.fromJson(reader)) == null) {
                     throw dn.c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
                 }
             } else {
@@ -61,7 +61,7 @@ public final class CreateDocumentResponse_DataJsonAdapter extends h {
         if (data != null) {
             writer.i();
             writer.J(StackTraceHelper.ID_KEY);
-            this.f19507b.toJson(writer, data.a());
+            this.f19508b.toJson(writer, data.a());
             writer.s();
             return;
         }

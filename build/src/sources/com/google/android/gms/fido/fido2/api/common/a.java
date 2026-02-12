@@ -12,16 +12,16 @@ public class a extends jf.a {
     public static final Parcelable.Creator<a> CREATOR = new f();
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f14619i = new a(EnumC0174a.SUPPORTED.toString(), null);
+    public static final a f14620i = new a(EnumC0174a.SUPPORTED.toString(), null);
 
     /* renamed from: o  reason: collision with root package name */
-    public static final a f14620o = new a(EnumC0174a.NOT_SUPPORTED.toString(), null);
+    public static final a f14621o = new a(EnumC0174a.NOT_SUPPORTED.toString(), null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final EnumC0174a f14621d;
+    private final EnumC0174a f14622d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f14622e;
+    private final String f14623e;
 
     /* renamed from: com.google.android.gms.fido.fido2.api.common.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -34,16 +34,16 @@ public class a extends jf.a {
         public static final Parcelable.Creator<EnumC0174a> CREATOR = new e();
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f14627d;
+        private final String f14628d;
 
         EnumC0174a(String str) {
-            this.f14627d = str;
+            this.f14628d = str;
         }
 
         public static EnumC0174a a(String str) {
             EnumC0174a[] values;
             for (EnumC0174a enumC0174a : values()) {
-                if (str.equals(enumC0174a.f14627d)) {
+                if (str.equals(enumC0174a.f14628d)) {
                     return enumC0174a;
                 }
             }
@@ -57,12 +57,12 @@ public class a extends jf.a {
 
         @Override // java.lang.Enum
         public String toString() {
-            return this.f14627d;
+            return this.f14628d;
         }
 
         @Override // android.os.Parcelable
         public void writeToParcel(Parcel parcel, int i10) {
-            parcel.writeString(this.f14627d);
+            parcel.writeString(this.f14628d);
         }
     }
 
@@ -77,19 +77,19 @@ public class a extends jf.a {
     public a(String str, String str2) {
         q.l(str);
         try {
-            this.f14621d = EnumC0174a.a(str);
-            this.f14622e = str2;
+            this.f14622d = EnumC0174a.a(str);
+            this.f14623e = str2;
         } catch (b e10) {
             throw new IllegalArgumentException(e10);
         }
     }
 
     public String b() {
-        return this.f14622e;
+        return this.f14623e;
     }
 
     public String c() {
-        return this.f14621d.toString();
+        return this.f14622d.toString();
     }
 
     public boolean equals(Object obj) {
@@ -97,14 +97,14 @@ public class a extends jf.a {
             return false;
         }
         a aVar = (a) obj;
-        if (!i0.a(this.f14621d, aVar.f14621d) || !i0.a(this.f14622e, aVar.f14622e)) {
+        if (!i0.a(this.f14622d, aVar.f14622d) || !i0.a(this.f14623e, aVar.f14623e)) {
             return false;
         }
         return true;
     }
 
     public int hashCode() {
-        return Arrays.hashCode(new Object[]{this.f14621d, this.f14622e});
+        return Arrays.hashCode(new Object[]{this.f14622d, this.f14623e});
     }
 
     @Override // android.os.Parcelable

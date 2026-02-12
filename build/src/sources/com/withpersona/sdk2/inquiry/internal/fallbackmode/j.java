@@ -7,10 +7,10 @@ import java.util.List;
 public final class j implements i.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final k f19916a;
+    private final k f19917a;
 
     j(k kVar) {
-        this.f19916a = kVar;
+        this.f19917a = kVar;
     }
 
     public static lr.h b(k kVar) {
@@ -19,6 +19,6 @@ public final class j implements i.a {
 
     @Override // com.withpersona.sdk2.inquiry.internal.fallbackmode.i.a
     public i a(List list, String str) {
-        return this.f19916a.b(list, str);
+        return this.f19917a.b(list, str);
     }
 }

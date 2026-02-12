@@ -41,7 +41,7 @@ public /* synthetic */ class SeparatorDisplayComponent$$serializer implements h0
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{p0.f50048a, n2.f50032a, tt.h.f49996a, SeparatorSpacingSize.Serializer.INSTANCE};
+        return new KSerializer[]{p0.f50049a, n2.f50033a, tt.h.f49997a, SeparatorSpacingSize.Serializer.INSTANCE};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

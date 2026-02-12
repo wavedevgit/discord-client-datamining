@@ -6,16 +6,16 @@ import kotlin.jvm.internal.Intrinsics;
 public interface OverPanRangeProvider {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f18144a = b.f18147a;
+    public static final b f18145a = b.f18148a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final OverPanRangeProvider f18145b = new a();
+    public static final OverPanRangeProvider f18146b = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements OverPanRangeProvider {
 
         /* renamed from: c  reason: collision with root package name */
-        private final float f18146c = 0.1f;
+        private final float f18147c = 0.1f;
 
         a() {
         }
@@ -27,10 +27,10 @@ public interface OverPanRangeProvider {
             Intrinsics.checkNotNullParameter(engine, "engine");
             if (z10) {
                 u10 = engine.v();
-                f10 = this.f18146c;
+                f10 = this.f18147c;
             } else if (!z10) {
                 u10 = engine.u();
-                f10 = this.f18146c;
+                f10 = this.f18147c;
             } else {
                 throw new p();
             }
@@ -42,7 +42,7 @@ public interface OverPanRangeProvider {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ b f18147a = new b();
+        static final /* synthetic */ b f18148a = new b();
 
         private b() {
         }

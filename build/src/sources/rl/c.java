@@ -5,13 +5,13 @@ import android.net.Uri;
 public class c extends d {
 
     /* renamed from: e  reason: collision with root package name */
-    private final a f47434e;
+    private final a f47435e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f47435i;
+    private final String f47436i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f47436o;
+    private final String f47437o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public enum a {
@@ -22,10 +22,10 @@ public class c extends d {
         
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f47442d;
+        private final String f47443d;
 
         a(String str) {
-            this.f47442d = str;
+            this.f47443d = str;
         }
     }
 
@@ -35,7 +35,7 @@ public class c extends d {
 
     @Override // rl.d, java.lang.Throwable
     public String toString() {
-        return super.toString() + '\n' + this.f47434e.f47442d + "\nOutput file path or Uri encoded string: " + this.f47435i + "\nMediaMuxer output format: " + this.f47436o;
+        return super.toString() + '\n' + this.f47435e.f47443d + "\nOutput file path or Uri encoded string: " + this.f47436i + "\nMediaMuxer output format: " + this.f47437o;
     }
 
     public c(a aVar, String str, int i10, Throwable th2) {
@@ -44,8 +44,8 @@ public class c extends d {
 
     public c(a aVar, String str, String str2, Throwable th2) {
         super(th2);
-        this.f47434e = aVar;
-        this.f47435i = str;
-        this.f47436o = str2;
+        this.f47435e = aVar;
+        this.f47436i = str;
+        this.f47437o = str2;
     }
 }

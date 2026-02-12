@@ -13,22 +13,22 @@ public final class e implements Parcelable {
     public static final Parcelable.Creator<e> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f45544d;
+    private final String f45545d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final b f45545e;
+    private final b f45546e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final m f45546i;
+    private final m f45547i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final List f45547o;
+    private final List f45548o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Integer f45548p;
+    private final Integer f45549p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final StepStyles.UiStepStyle f45549q;
+    private final StepStyles.UiStepStyle f45550q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -65,12 +65,12 @@ public final class e implements Parcelable {
         Intrinsics.checkNotNullParameter(mrzKey, "mrzKey");
         Intrinsics.checkNotNullParameter(passportNfcStrings, "passportNfcStrings");
         Intrinsics.checkNotNullParameter(enabledDataGroups, "enabledDataGroups");
-        this.f45544d = cardAccessNumber;
-        this.f45545e = mrzKey;
-        this.f45546i = passportNfcStrings;
-        this.f45547o = enabledDataGroups;
-        this.f45548p = num;
-        this.f45549q = uiStepStyle;
+        this.f45545d = cardAccessNumber;
+        this.f45546e = mrzKey;
+        this.f45547i = passportNfcStrings;
+        this.f45548o = enabledDataGroups;
+        this.f45549p = num;
+        this.f45550q = uiStepStyle;
     }
 
     @Override // android.os.Parcelable
@@ -86,7 +86,7 @@ public final class e implements Parcelable {
             return false;
         }
         e eVar = (e) obj;
-        if (Intrinsics.areEqual(this.f45544d, eVar.f45544d) && Intrinsics.areEqual(this.f45545e, eVar.f45545e) && Intrinsics.areEqual(this.f45546i, eVar.f45546i) && Intrinsics.areEqual(this.f45547o, eVar.f45547o) && Intrinsics.areEqual(this.f45548p, eVar.f45548p) && Intrinsics.areEqual(this.f45549q, eVar.f45549q)) {
+        if (Intrinsics.areEqual(this.f45545d, eVar.f45545d) && Intrinsics.areEqual(this.f45546e, eVar.f45546e) && Intrinsics.areEqual(this.f45547i, eVar.f45547i) && Intrinsics.areEqual(this.f45548o, eVar.f45548o) && Intrinsics.areEqual(this.f45549p, eVar.f45549p) && Intrinsics.areEqual(this.f45550q, eVar.f45550q)) {
             return true;
         }
         return false;
@@ -94,8 +94,8 @@ public final class e implements Parcelable {
 
     public int hashCode() {
         int hashCode;
-        int hashCode2 = ((((((this.f45544d.hashCode() * 31) + this.f45545e.hashCode()) * 31) + this.f45546i.hashCode()) * 31) + this.f45547o.hashCode()) * 31;
-        Integer num = this.f45548p;
+        int hashCode2 = ((((((this.f45545d.hashCode() * 31) + this.f45546e.hashCode()) * 31) + this.f45547i.hashCode()) * 31) + this.f45548o.hashCode()) * 31;
+        Integer num = this.f45549p;
         int i10 = 0;
         if (num == null) {
             hashCode = 0;
@@ -103,7 +103,7 @@ public final class e implements Parcelable {
             hashCode = num.hashCode();
         }
         int i11 = (hashCode2 + hashCode) * 31;
-        StepStyles.UiStepStyle uiStepStyle = this.f45549q;
+        StepStyles.UiStepStyle uiStepStyle = this.f45550q;
         if (uiStepStyle != null) {
             i10 = uiStepStyle.hashCode();
         }
@@ -111,12 +111,12 @@ public final class e implements Parcelable {
     }
 
     public String toString() {
-        String str = this.f45544d;
-        b bVar = this.f45545e;
-        m mVar = this.f45546i;
-        List list = this.f45547o;
-        Integer num = this.f45548p;
-        StepStyles.UiStepStyle uiStepStyle = this.f45549q;
+        String str = this.f45545d;
+        b bVar = this.f45546e;
+        m mVar = this.f45547i;
+        List list = this.f45548o;
+        Integer num = this.f45549p;
+        StepStyles.UiStepStyle uiStepStyle = this.f45550q;
         return "PassportNfcReaderConfig(cardAccessNumber=" + str + ", mrzKey=" + bVar + ", passportNfcStrings=" + mVar + ", enabledDataGroups=" + list + ", theme=" + num + ", styles=" + uiStepStyle + ")";
     }
 
@@ -124,15 +124,15 @@ public final class e implements Parcelable {
     public final void writeToParcel(Parcel dest, int i10) {
         int intValue;
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f45544d);
-        this.f45545e.writeToParcel(dest, i10);
-        this.f45546i.writeToParcel(dest, i10);
-        List<c> list = this.f45547o;
+        dest.writeString(this.f45545d);
+        this.f45546e.writeToParcel(dest, i10);
+        this.f45547i.writeToParcel(dest, i10);
+        List<c> list = this.f45548o;
         dest.writeInt(list.size());
         for (c cVar : list) {
             dest.writeString(cVar.name());
         }
-        Integer num = this.f45548p;
+        Integer num = this.f45549p;
         if (num == null) {
             intValue = 0;
         } else {
@@ -140,6 +140,6 @@ public final class e implements Parcelable {
             intValue = num.intValue();
         }
         dest.writeInt(intValue);
-        dest.writeParcelable(this.f45549q, i10);
+        dest.writeParcelable(this.f45550q, i10);
     }
 }

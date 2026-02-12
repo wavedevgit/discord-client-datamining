@@ -20,29 +20,29 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var2.bind(var0)();
     var _closure1_slot2 = var2;
     var2 = function arg0() {
-        _fun29102: for (var _fun29102_ip = 0;;) switch (_fun29102_ip) {
+        _fun29118: for (var _fun29118_ip = 0;;) switch (_fun29118_ip) {
             case 0:
                 var4 = arg0;
                 var1 = 'object';
                 var0 = typeof var4;
                 var0 = var1 === var0;
                 if (!var0) {
-                    _fun29102_ip = 23;
-                    continue _fun29102
+                    _fun29118_ip = 23;
+                    continue _fun29118
                 }
             case 17:
                 var1 = null;
                 var0 = var1 !== var4;
             case 23:
                 if (!var0) {
-                    _fun29102_ip = 88;
-                    continue _fun29102
+                    _fun29118_ip = 88;
+                    continue _fun29118
                 }
             case 26:
                 var1 = _closure1_slot2;
                 if (var1) {
-                    _fun29102_ip = 57;
-                    continue _fun29102
+                    _fun29118_ip = 57;
+                    continue _fun29118
                 }
             case 36:
                 var2 = _closure1_slot1;
@@ -50,8 +50,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2.bind(var1)(var4);
                 var1 = '[object Date]';
                 var1 = var1 === var2;
-                _fun29102_ip = 85;
-                continue _fun29102;
+                _fun29118_ip = 85;
+                continue _fun29118;
             case 57:
                 var2 = var4;
             case 60: // try_start_0
@@ -61,8 +61,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var4.bind(var2)(var3);
             case 74: // try_end0
                 var2 = true;
-                _fun29102_ip = 82;
-                continue _fun29102;
+                _fun29118_ip = 82;
+                continue _fun29118;
             case 78: // catch_target0
                 CatchBlockStart(arg_register = 3);
                 var2 = false;

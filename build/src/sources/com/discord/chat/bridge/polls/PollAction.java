@@ -116,13 +116,13 @@ public final class PollAction {
         compositeEncoder.k(serialDescriptor, 1, (qt.o) lazyArr[1].getValue(), pollAction.presentation);
         compositeEncoder.x(serialDescriptor, 2, pollAction.enabled);
         if (compositeEncoder.z(serialDescriptor, 3) || pollAction.type != null) {
-            compositeEncoder.o(serialDescriptor, 3, n2.f50032a, pollAction.type);
+            compositeEncoder.o(serialDescriptor, 3, n2.f50033a, pollAction.type);
         }
         if (compositeEncoder.z(serialDescriptor, 4) || pollAction.secondaryLabel != null) {
-            compositeEncoder.o(serialDescriptor, 4, n2.f50032a, pollAction.secondaryLabel);
+            compositeEncoder.o(serialDescriptor, 4, n2.f50033a, pollAction.secondaryLabel);
         }
         if (compositeEncoder.z(serialDescriptor, 5) || pollAction.accessibilityHint != null) {
-            compositeEncoder.o(serialDescriptor, 5, n2.f50032a, pollAction.accessibilityHint);
+            compositeEncoder.o(serialDescriptor, 5, n2.f50033a, pollAction.accessibilityHint);
         }
     }
 

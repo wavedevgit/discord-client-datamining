@@ -9,7 +9,7 @@ import java.util.RandomAccess;
 public abstract class p0 extends k0 implements List, RandomAccess {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final o1 f44799e = new n0(e1.f44378p, 0);
+    private static final o1 f44800e = new n0(e1.f44379p, 0);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static p0 g(Object[] objArr) {
@@ -19,7 +19,7 @@ public abstract class p0 extends k0 implements List, RandomAccess {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static p0 i(Object[] objArr, int i10) {
         if (i10 == 0) {
-            return e1.f44378p;
+            return e1.f44379p;
         }
         return new e1(objArr, i10);
     }
@@ -135,7 +135,7 @@ public abstract class p0 extends k0 implements List, RandomAccess {
             return this;
         }
         if (i12 == 0) {
-            return e1.f44378p;
+            return e1.f44379p;
         }
         return new o0(this, i10, i12);
     }
@@ -174,7 +174,7 @@ public abstract class p0 extends k0 implements List, RandomAccess {
     public final o1 listIterator(int i10) {
         c.b(i10, size(), "index");
         if (isEmpty()) {
-            return f44799e;
+            return f44800e;
         }
         return new n0(this, i10);
     }

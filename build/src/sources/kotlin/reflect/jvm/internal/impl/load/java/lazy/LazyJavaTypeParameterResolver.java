@@ -14,37 +14,37 @@ import org.jetbrains.annotations.NotNull;
 public final class LazyJavaTypeParameterResolver implements TypeParameterResolver {
 
     /* renamed from: a  reason: collision with root package name */
-    private final LazyJavaResolverContext f32856a;
+    private final LazyJavaResolverContext f32857a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final DeclarationDescriptor f32857b;
+    private final DeclarationDescriptor f32858b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f32858c;
+    private final int f32859c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f32859d;
+    private final Map f32860d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final MemoizedFunctionToNullable f32860e;
+    private final MemoizedFunctionToNullable f32861e;
 
     public LazyJavaTypeParameterResolver(@NotNull LazyJavaResolverContext c10, @NotNull DeclarationDescriptor containingDeclaration, @NotNull JavaTypeParameterListOwner typeParameterOwner, int i10) {
         Intrinsics.checkNotNullParameter(c10, "c");
         Intrinsics.checkNotNullParameter(containingDeclaration, "containingDeclaration");
         Intrinsics.checkNotNullParameter(typeParameterOwner, "typeParameterOwner");
-        this.f32856a = c10;
-        this.f32857b = containingDeclaration;
-        this.f32858c = i10;
-        this.f32859d = CollectionsKt.mapToIndex(typeParameterOwner.getTypeParameters());
-        this.f32860e = c10.getStorageManager().createMemoizedFunctionWithNullableValues(new e(this));
+        this.f32857a = c10;
+        this.f32858b = containingDeclaration;
+        this.f32859c = i10;
+        this.f32860d = CollectionsKt.mapToIndex(typeParameterOwner.getTypeParameters());
+        this.f32861e = c10.getStorageManager().createMemoizedFunctionWithNullableValues(new e(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final LazyJavaTypeParameterDescriptor b(LazyJavaTypeParameterResolver lazyJavaTypeParameterResolver, JavaTypeParameter typeParameter) {
         Intrinsics.checkNotNullParameter(typeParameter, "typeParameter");
-        Integer num = (Integer) lazyJavaTypeParameterResolver.f32859d.get(typeParameter);
+        Integer num = (Integer) lazyJavaTypeParameterResolver.f32860d.get(typeParameter);
         if (num != null) {
-            return new LazyJavaTypeParameterDescriptor(ContextKt.copyWithNewDefaultTypeQualifiers(ContextKt.child(lazyJavaTypeParameterResolver.f32856a, lazyJavaTypeParameterResolver), lazyJavaTypeParameterResolver.f32857b.getAnnotations()), typeParameter, lazyJavaTypeParameterResolver.f32858c + num.intValue(), lazyJavaTypeParameterResolver.f32857b);
+            return new LazyJavaTypeParameterDescriptor(ContextKt.copyWithNewDefaultTypeQualifiers(ContextKt.child(lazyJavaTypeParameterResolver.f32857a, lazyJavaTypeParameterResolver), lazyJavaTypeParameterResolver.f32858b.getAnnotations()), typeParameter, lazyJavaTypeParameterResolver.f32859c + num.intValue(), lazyJavaTypeParameterResolver.f32858b);
         }
         return null;
     }
@@ -52,10 +52,10 @@ public final class LazyJavaTypeParameterResolver implements TypeParameterResolve
     @Override // kotlin.reflect.jvm.internal.impl.load.java.lazy.TypeParameterResolver
     public TypeParameterDescriptor resolveTypeParameter(@NotNull JavaTypeParameter javaTypeParameter) {
         Intrinsics.checkNotNullParameter(javaTypeParameter, "javaTypeParameter");
-        LazyJavaTypeParameterDescriptor lazyJavaTypeParameterDescriptor = (LazyJavaTypeParameterDescriptor) this.f32860e.invoke(javaTypeParameter);
+        LazyJavaTypeParameterDescriptor lazyJavaTypeParameterDescriptor = (LazyJavaTypeParameterDescriptor) this.f32861e.invoke(javaTypeParameter);
         if (lazyJavaTypeParameterDescriptor != null) {
             return lazyJavaTypeParameterDescriptor;
         }
-        return this.f32856a.getTypeParameterResolver().resolveTypeParameter(javaTypeParameter);
+        return this.f32857a.getTypeParameterResolver().resolveTypeParameter(javaTypeParameter);
     }
 }

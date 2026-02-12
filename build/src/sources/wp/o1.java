@@ -5,14 +5,14 @@ import java.util.Set;
 public final class o1 implements lr.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final lr.h f53266a;
+    private final lr.h f53267a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final lr.h f53267b;
+    private final lr.h f53268b;
 
     public o1(lr.h hVar, lr.h hVar2) {
-        this.f53266a = hVar;
-        this.f53267b = hVar2;
+        this.f53267a = hVar;
+        this.f53268b = hVar2;
     }
 
     public static o1 a(lr.h hVar, lr.h hVar2) {
@@ -26,6 +26,6 @@ public final class o1 implements lr.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public Set get() {
-        return c((o0) this.f53266a.get(), (f1) this.f53267b.get());
+        return c((o0) this.f53267a.get(), (f1) this.f53268b.get());
     }
 }

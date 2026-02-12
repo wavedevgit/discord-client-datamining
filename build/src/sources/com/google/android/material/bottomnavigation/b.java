@@ -12,34 +12,34 @@ import java.util.List;
 public class b extends h {
 
     /* renamed from: m0  reason: collision with root package name */
-    private final int f15290m0;
+    private final int f15291m0;
 
     /* renamed from: n0  reason: collision with root package name */
-    private final int f15291n0;
+    private final int f15292n0;
 
     /* renamed from: o0  reason: collision with root package name */
-    private final int f15292o0;
+    private final int f15293o0;
 
     /* renamed from: p0  reason: collision with root package name */
-    private final int f15293p0;
+    private final int f15294p0;
 
     /* renamed from: q0  reason: collision with root package name */
-    private boolean f15294q0;
+    private boolean f15295q0;
 
     /* renamed from: r0  reason: collision with root package name */
-    private final List f15295r0;
+    private final List f15296r0;
 
     public b(Context context) {
         super(context);
-        this.f15295r0 = new ArrayList();
+        this.f15296r0 = new ArrayList();
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-2, -2);
         layoutParams.gravity = 17;
         setLayoutParams(layoutParams);
         Resources resources = getResources();
-        this.f15290m0 = resources.getDimensionPixelSize(d.f6784f);
-        this.f15291n0 = resources.getDimensionPixelSize(d.f6786g);
-        this.f15292o0 = resources.getDimensionPixelSize(d.f6780d);
-        this.f15293p0 = resources.getDimensionPixelSize(d.f6782e);
+        this.f15291m0 = resources.getDimensionPixelSize(d.f6784f);
+        this.f15292n0 = resources.getDimensionPixelSize(d.f6786g);
+        this.f15293o0 = resources.getDimensionPixelSize(d.f6780d);
+        this.f15294p0 = resources.getDimensionPixelSize(d.f6782e);
     }
 
     @Override // com.google.android.material.navigation.h
@@ -77,16 +77,16 @@ public class b extends h {
         int size = View.MeasureSpec.getSize(i10);
         int currentVisibleContentItemCount = getCurrentVisibleContentItemCount();
         int childCount = getChildCount();
-        this.f15295r0.clear();
+        this.f15296r0.clear();
         int makeMeasureSpec = View.MeasureSpec.makeMeasureSpec(View.MeasureSpec.getSize(i11), Integer.MIN_VALUE);
         int i17 = 1;
         int i18 = 0;
         if (getItemIconGravity() == 0) {
             if (m(getLabelVisibilityMode(), currentVisibleContentItemCount) && v()) {
                 View childAt = getChildAt(getSelectedItemPosition());
-                int i19 = this.f15293p0;
+                int i19 = this.f15294p0;
                 if (childAt.getVisibility() != 8) {
-                    childAt.measure(View.MeasureSpec.makeMeasureSpec(this.f15292o0, Integer.MIN_VALUE), makeMeasureSpec);
+                    childAt.measure(View.MeasureSpec.makeMeasureSpec(this.f15293o0, Integer.MIN_VALUE), makeMeasureSpec);
                     i19 = Math.max(i19, childAt.getMeasuredWidth());
                 }
                 if (childAt.getVisibility() != 8) {
@@ -95,12 +95,12 @@ public class b extends h {
                     i15 = 0;
                 }
                 int i20 = currentVisibleContentItemCount - i15;
-                int min = Math.min(size - (this.f15291n0 * i20), Math.min(i19, this.f15292o0));
+                int min = Math.min(size - (this.f15292n0 * i20), Math.min(i19, this.f15293o0));
                 int i21 = size - min;
                 if (i20 != 0) {
                     i17 = i20;
                 }
-                int min2 = Math.min(i21 / i17, this.f15290m0);
+                int min2 = Math.min(i21 / i17, this.f15291m0);
                 int i22 = i21 - (i20 * min2);
                 for (int i23 = 0; i23 < childCount; i23++) {
                     if (getChildAt(i23).getVisibility() != 8) {
@@ -116,13 +116,13 @@ public class b extends h {
                     } else {
                         i16 = 0;
                     }
-                    this.f15295r0.add(Integer.valueOf(i16));
+                    this.f15296r0.add(Integer.valueOf(i16));
                 }
             } else {
                 if (currentVisibleContentItemCount != 0) {
                     i17 = currentVisibleContentItemCount;
                 }
-                int min3 = Math.min(size / i17, this.f15292o0);
+                int min3 = Math.min(size / i17, this.f15293o0);
                 int i24 = size - (currentVisibleContentItemCount * min3);
                 for (int i25 = 0; i25 < childCount; i25++) {
                     if (getChildAt(i25).getVisibility() != 8) {
@@ -135,7 +135,7 @@ public class b extends h {
                     } else {
                         i14 = 0;
                     }
-                    this.f15295r0.add(Integer.valueOf(i14));
+                    this.f15296r0.add(Integer.valueOf(i14));
                 }
             }
             i12 = 0;
@@ -143,7 +143,7 @@ public class b extends h {
             while (i18 < childCount) {
                 View childAt2 = getChildAt(i18);
                 if (childAt2.getVisibility() != 8) {
-                    childAt2.measure(View.MeasureSpec.makeMeasureSpec(((Integer) this.f15295r0.get(i18)).intValue(), 1073741824), makeMeasureSpec);
+                    childAt2.measure(View.MeasureSpec.makeMeasureSpec(((Integer) this.f15296r0.get(i18)).intValue(), 1073741824), makeMeasureSpec);
                     childAt2.getLayoutParams().width = childAt2.getMeasuredWidth();
                     i12 += childAt2.getMeasuredWidth();
                     i13 = Math.max(i13, childAt2.getMeasuredHeight());
@@ -179,10 +179,10 @@ public class b extends h {
     }
 
     public void setItemHorizontalTranslationEnabled(boolean z10) {
-        this.f15294q0 = z10;
+        this.f15295q0 = z10;
     }
 
     public boolean v() {
-        return this.f15294q0;
+        return this.f15295q0;
     }
 }

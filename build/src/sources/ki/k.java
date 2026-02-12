@@ -13,28 +13,28 @@ import java.util.zip.ZipFile;
 public final class k implements m {
 
     /* renamed from: a  reason: collision with root package name */
-    final /* synthetic */ Set f31763a;
+    final /* synthetic */ Set f31764a;
 
     /* renamed from: b  reason: collision with root package name */
-    final /* synthetic */ u f31764b;
+    final /* synthetic */ u f31765b;
 
     /* renamed from: c  reason: collision with root package name */
-    final /* synthetic */ ZipFile f31765c;
+    final /* synthetic */ ZipFile f31766c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public k(o oVar, Set set, u uVar, ZipFile zipFile) {
-        this.f31763a = set;
-        this.f31764b = uVar;
-        this.f31765c = zipFile;
+        this.f31764a = set;
+        this.f31765b = uVar;
+        this.f31766c = zipFile;
     }
 
     @Override // ki.m
     public final void a(n nVar, File file, boolean z10) {
-        this.f31763a.add(file);
+        this.f31764a.add(file);
         if (!z10) {
-            Log.i("SplitCompat", String.format("NativeLibraryExtractor: split '%s' has native library '%s' that does not exist; extracting from '%s!%s' to '%s'", this.f31764b.b(), nVar.f31766a, this.f31764b.a().getAbsolutePath(), nVar.f31767b.getName(), file.getAbsolutePath()));
-            ZipFile zipFile = this.f31765c;
-            ZipEntry zipEntry = nVar.f31767b;
+            Log.i("SplitCompat", String.format("NativeLibraryExtractor: split '%s' has native library '%s' that does not exist; extracting from '%s!%s' to '%s'", this.f31765b.b(), nVar.f31767a, this.f31765b.a().getAbsolutePath(), nVar.f31768b.getName(), file.getAbsolutePath()));
+            ZipFile zipFile = this.f31766c;
+            ZipEntry zipEntry = nVar.f31768b;
             byte[] bArr = new byte[RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT];
             if (file.exists()) {
                 file.delete();

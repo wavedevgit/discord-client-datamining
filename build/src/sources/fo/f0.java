@@ -25,47 +25,47 @@ import kotlinx.coroutines.flow.MutableSharedFlow;
 public final class f0 implements io.a, f.a, bt.a0, ho.b {
 
     /* renamed from: d  reason: collision with root package name */
-    private final MutableSharedFlow f24004d;
+    private final MutableSharedFlow f24005d;
 
     /* renamed from: e  reason: collision with root package name */
-    private t0.c f24005e;
+    private t0.c f24006e;
 
     /* renamed from: i  reason: collision with root package name */
-    private List f24006i;
+    private List f24007i;
 
     /* renamed from: o  reason: collision with root package name */
-    private List f24007o;
+    private List f24008o;
 
     /* renamed from: p  reason: collision with root package name */
-    private io.c f24008p;
+    private io.c f24009p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f24009d;
+        Object f24010d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f24010e;
+        Object f24011e;
 
         /* renamed from: i  reason: collision with root package name */
-        Object f24011i;
+        Object f24012i;
 
         /* renamed from: o  reason: collision with root package name */
-        Object f24012o;
+        Object f24013o;
 
         /* renamed from: p  reason: collision with root package name */
-        Object f24013p;
+        Object f24014p;
 
         /* renamed from: q  reason: collision with root package name */
-        Object f24014q;
+        Object f24015q;
 
         /* renamed from: r  reason: collision with root package name */
-        /* synthetic */ Object f24015r;
+        /* synthetic */ Object f24016r;
 
         /* renamed from: t  reason: collision with root package name */
-        int f24017t;
+        int f24018t;
 
         a(Continuation continuation) {
             super(continuation);
@@ -73,8 +73,8 @@ public final class f0 implements io.a, f.a, bt.a0, ho.b {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f24015r = obj;
-            this.f24017t |= Integer.MIN_VALUE;
+            this.f24016r = obj;
+            this.f24018t |= Integer.MIN_VALUE;
             Object l10 = f0.this.l(null, this);
             if (l10 == gs.b.f()) {
                 return l10;
@@ -87,27 +87,27 @@ public final class f0 implements io.a, f.a, bt.a0, ho.b {
     static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f24018d;
+        Object f24019d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f24019e;
+        int f24020e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ androidx.camera.core.n f24020i;
+        final /* synthetic */ androidx.camera.core.n f24021i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ f0 f24021o;
+        final /* synthetic */ f0 f24022o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(androidx.camera.core.n nVar, f0 f0Var, Continuation continuation) {
             super(2, continuation);
-            this.f24020i = nVar;
-            this.f24021o = f0Var;
+            this.f24021i = nVar;
+            this.f24022o = f0Var;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new b(this.f24020i, this.f24021o, continuation);
+            return new b(this.f24021i, this.f24022o, continuation);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:21:0x0046, code lost:
@@ -131,7 +131,7 @@ public final class f0 implements io.a, f.a, bt.a0, ho.b {
             /*
                 r6 = this;
                 java.lang.Object r0 = gs.b.f()
-                int r1 = r6.f24019e
+                int r1 = r6.f24020e
                 r2 = 2
                 r3 = 1
                 r4 = 0
@@ -146,7 +146,7 @@ public final class f0 implements io.a, f.a, bt.a0, ho.b {
                 r7.<init>(r0)
                 throw r7
             L1b:
-                java.lang.Object r1 = r6.f24018d
+                java.lang.Object r1 = r6.f24019d
                 java.lang.AutoCloseable r1 = (java.lang.AutoCloseable) r1
                 kotlin.c.b(r7)     // Catch: java.lang.Throwable -> L29
                 kotlin.Result r7 = (kotlin.Result) r7     // Catch: java.lang.Throwable -> L29
@@ -157,32 +157,32 @@ public final class f0 implements io.a, f.a, bt.a0, ho.b {
                 goto L64
             L2b:
                 kotlin.c.b(r7)
-                androidx.camera.core.n r1 = r6.f24020i
-                fo.f0 r7 = r6.f24021o
+                androidx.camera.core.n r1 = r6.f24021i
+                fo.f0 r7 = r6.f24022o
                 fo.j0 r5 = fo.m0.e(r1)     // Catch: java.lang.Throwable -> L29
                 if (r5 != 0) goto L3e
-                kotlin.Unit r7 = kotlin.Unit.f31987a     // Catch: java.lang.Throwable -> L29
+                kotlin.Unit r7 = kotlin.Unit.f31988a     // Catch: java.lang.Throwable -> L29
                 ms.a.a(r1, r4)
                 return r7
             L3e:
-                r6.f24018d = r1     // Catch: java.lang.Throwable -> L29
-                r6.f24019e = r3     // Catch: java.lang.Throwable -> L29
+                r6.f24019d = r1     // Catch: java.lang.Throwable -> L29
+                r6.f24020e = r3     // Catch: java.lang.Throwable -> L29
                 java.lang.Object r7 = fo.f0.j(r7, r5, r6)     // Catch: java.lang.Throwable -> L29
                 if (r7 != r0) goto L49
                 goto L60
             L49:
                 ms.a.a(r1, r4)
-                fo.f0 r1 = r6.f24021o
+                fo.f0 r1 = r6.f24022o
                 kotlinx.coroutines.flow.MutableSharedFlow r1 = fo.f0.k(r1)
                 kotlin.Result r7 = kotlin.Result.a(r7)
-                r6.f24018d = r4
-                r6.f24019e = r2
+                r6.f24019d = r4
+                r6.f24020e = r2
                 java.lang.Object r7 = r1.emit(r7, r6)
                 if (r7 != r0) goto L61
             L60:
                 return r0
             L61:
-                kotlin.Unit r7 = kotlin.Unit.f31987a
+                kotlin.Unit r7 = kotlin.Unit.f31988a
                 return r7
             L64:
                 throw r7     // Catch: java.lang.Throwable -> L65
@@ -196,7 +196,7 @@ public final class f0 implements io.a, f.a, bt.a0, ho.b {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -204,31 +204,31 @@ public final class f0 implements io.a, f.a, bt.a0, ho.b {
     static final class c extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f24022d;
+        Object f24023d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f24023e;
+        int f24024e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Image f24024i;
+        final /* synthetic */ Image f24025i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ f0 f24025o;
+        final /* synthetic */ f0 f24026o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ int f24026p;
+        final /* synthetic */ int f24027p;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(Image image, f0 f0Var, int i10, Continuation continuation) {
             super(2, continuation);
-            this.f24024i = image;
-            this.f24025o = f0Var;
-            this.f24026p = i10;
+            this.f24025i = image;
+            this.f24026o = f0Var;
+            this.f24027p = i10;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new c(this.f24024i, this.f24025o, this.f24026p, continuation);
+            return new c(this.f24025i, this.f24026o, this.f24027p, continuation);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:16:0x003f, code lost:
@@ -254,7 +254,7 @@ public final class f0 implements io.a, f.a, bt.a0, ho.b {
             /*
                 r5 = this;
                 java.lang.Object r0 = gs.b.f()
-                int r1 = r5.f24023e
+                int r1 = r5.f24024e
                 r2 = 2
                 r3 = 1
                 if (r1 == 0) goto L2a
@@ -268,7 +268,7 @@ public final class f0 implements io.a, f.a, bt.a0, ho.b {
                 r6.<init>(r0)
                 throw r6
             L1a:
-                java.lang.Object r1 = r5.f24022d
+                java.lang.Object r1 = r5.f24023d
                 java.lang.AutoCloseable r1 = (java.lang.AutoCloseable) r1
                 kotlin.c.b(r6)     // Catch: java.lang.Throwable -> L28
                 kotlin.Result r6 = (kotlin.Result) r6     // Catch: java.lang.Throwable -> L28
@@ -279,29 +279,29 @@ public final class f0 implements io.a, f.a, bt.a0, ho.b {
                 goto L5e
             L2a:
                 kotlin.c.b(r6)
-                android.media.Image r1 = r5.f24024i
-                fo.f0 r6 = r5.f24025o
-                int r4 = r5.f24026p
+                android.media.Image r1 = r5.f24025i
+                fo.f0 r6 = r5.f24026o
+                int r4 = r5.f24027p
                 fo.j0 r4 = fo.m0.d(r1, r4)     // Catch: java.lang.Throwable -> L28
-                r5.f24022d = r1     // Catch: java.lang.Throwable -> L28
-                r5.f24023e = r3     // Catch: java.lang.Throwable -> L28
+                r5.f24023d = r1     // Catch: java.lang.Throwable -> L28
+                r5.f24024e = r3     // Catch: java.lang.Throwable -> L28
                 java.lang.Object r6 = fo.f0.j(r6, r4, r5)     // Catch: java.lang.Throwable -> L28
                 if (r6 != r0) goto L42
                 goto L5a
             L42:
                 r3 = 0
                 ms.a.a(r1, r3)
-                fo.f0 r1 = r5.f24025o
+                fo.f0 r1 = r5.f24026o
                 kotlinx.coroutines.flow.MutableSharedFlow r1 = fo.f0.k(r1)
                 kotlin.Result r6 = kotlin.Result.a(r6)
-                r5.f24022d = r3
-                r5.f24023e = r2
+                r5.f24023d = r3
+                r5.f24024e = r2
                 java.lang.Object r6 = r1.emit(r6, r5)
                 if (r6 != r0) goto L5b
             L5a:
                 return r0
             L5b:
-                kotlin.Unit r6 = kotlin.Unit.f31987a
+                kotlin.Unit r6 = kotlin.Unit.f31988a
                 return r6
             L5e:
                 throw r6     // Catch: java.lang.Throwable -> L5f
@@ -315,15 +315,15 @@ public final class f0 implements io.a, f.a, bt.a0, ho.b {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
     public f0(MutableSharedFlow resultFlow) {
         Intrinsics.checkNotNullParameter(resultFlow, "resultFlow");
-        this.f24004d = resultFlow;
-        this.f24006i = CollectionsKt.l();
-        this.f24007o = CollectionsKt.l();
+        this.f24005d = resultFlow;
+        this.f24007i = CollectionsKt.l();
+        this.f24008o = CollectionsKt.l();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -353,7 +353,7 @@ public final class f0 implements io.a, f.a, bt.a0, ho.b {
     /* JADX WARN: Type inference failed for: r10v18, types: [fo.g, T] */
     /* JADX WARN: Type inference failed for: r10v7, types: [T, fo.i0] */
     private static final void o(Ref.BooleanRef booleanRef, Ref.ObjectRef objectRef, Ref.ObjectRef objectRef2, Ref.ObjectRef objectRef3, Ref.ObjectRef objectRef4, Ref.BooleanRef booleanRef2, Ref.ObjectRef objectRef5, go.a aVar, boolean z10) {
-        a.b bVar = a.b.f25918a;
+        a.b bVar = a.b.f25919a;
         if (!Intrinsics.areEqual(aVar, bVar) && z10) {
             booleanRef.element = true;
         }
@@ -382,12 +382,12 @@ public final class f0 implements io.a, f.a, bt.a0, ho.b {
     public void a(Rect rect, Rect previewRect) {
         Intrinsics.checkNotNullParameter(rect, "rect");
         Intrinsics.checkNotNullParameter(previewRect, "previewRect");
-        this.f24008p = new io.c(rect, previewRect);
+        this.f24009p = new io.c(rect, previewRect);
     }
 
     @Override // bt.a0, kotlinx.coroutines.flow.Flow
     public Object collect(FlowCollector flowCollector, Continuation continuation) {
-        return this.f24004d.collect(flowCollector, continuation);
+        return this.f24005d.collect(flowCollector, continuation);
     }
 
     @Override // ho.b
@@ -407,7 +407,7 @@ public final class f0 implements io.a, f.a, bt.a0, ho.b {
         Intrinsics.checkNotNullParameter(side, "side");
         Intrinsics.checkNotNullParameter(rules, "rules");
         Intrinsics.checkNotNullParameter(passiveAnalyzers, "passiveAnalyzers");
-        this.f24005e = side;
+        this.f24006e = side;
         List<e> list = rules;
         ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
         for (e eVar : list) {
@@ -426,8 +426,8 @@ public final class f0 implements io.a, f.a, bt.a0, ho.b {
             }
             arrayList.add(nVar);
         }
-        this.f24006i = arrayList;
-        this.f24007o = passiveAnalyzers;
+        this.f24007i = arrayList;
+        this.f24008o = passiveAnalyzers;
     }
 
     /* JADX WARN: Type inference failed for: r4v0, types: [fo.t0$c, T] */
@@ -436,13 +436,13 @@ public final class f0 implements io.a, f.a, bt.a0, ho.b {
         Intrinsics.checkNotNullParameter(imageToAnalyze, "imageToAnalyze");
         Intrinsics.checkNotNullParameter(analyzerResults, "analyzerResults");
         if (analyzerResults.isEmpty()) {
-            Result.a aVar = Result.f31984e;
+            Result.a aVar = Result.f31985e;
             return Result.b(kotlin.c.a(new b.c()));
         }
         Ref.BooleanRef booleanRef = new Ref.BooleanRef();
         Ref.BooleanRef booleanRef2 = new Ref.BooleanRef();
         Ref.ObjectRef objectRef = new Ref.ObjectRef();
-        objectRef.element = this.f24005e;
+        objectRef.element = this.f24006e;
         Ref.ObjectRef objectRef2 = new Ref.ObjectRef();
         Ref.ObjectRef objectRef3 = new Ref.ObjectRef();
         Ref.ObjectRef objectRef4 = new Ref.ObjectRef();
@@ -465,26 +465,26 @@ public final class f0 implements io.a, f.a, bt.a0, ho.b {
         }
         if (booleanRef2.element) {
             if (th2 != null) {
-                Result.a aVar2 = Result.f31984e;
+                Result.a aVar2 = Result.f31985e;
                 return Result.b(kotlin.c.a(th2));
             }
-            Result.a aVar3 = Result.f31984e;
+            Result.a aVar3 = Result.f31985e;
             return Result.b(new t0.a((i0) objectRef5.element));
         } else if (!booleanRef.element) {
-            Result.a aVar4 = Result.f31984e;
+            Result.a aVar4 = Result.f31985e;
             return Result.b(new t0.a((i0) objectRef5.element));
         } else {
             t0.c cVar = (t0.c) objectRef.element;
             if (cVar == null) {
-                Result.a aVar5 = Result.f31984e;
+                Result.a aVar5 = Result.f31985e;
                 return Result.b(new t0.a((i0) objectRef5.element));
             }
             Bitmap e10 = imageToAnalyze.e();
             if (e10 == null) {
-                Result.a aVar6 = Result.f31984e;
+                Result.a aVar6 = Result.f31985e;
                 return Result.b(new t0.a((i0) objectRef5.element));
             }
-            Result.a aVar7 = Result.f31984e;
+            Result.a aVar7 = Result.f31985e;
             return Result.b(new t0.b(cVar, e10, (h0) objectRef2.element, (g) objectRef3.element, (d0) objectRef4.element, (i0) objectRef5.element));
         }
     }

@@ -8,18 +8,18 @@ import kotlin.enums.EnumEntries;
 public final class DeprecationLevelValue {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ DeprecationLevelValue[] f34141d;
+    private static final /* synthetic */ DeprecationLevelValue[] f34142d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f34142e;
+    private static final /* synthetic */ EnumEntries f34143e;
     public static final DeprecationLevelValue WARNING = new DeprecationLevelValue("WARNING", 0);
     public static final DeprecationLevelValue ERROR = new DeprecationLevelValue("ERROR", 1);
     public static final DeprecationLevelValue HIDDEN = new DeprecationLevelValue("HIDDEN", 2);
 
     static {
         DeprecationLevelValue[] a10 = a();
-        f34141d = a10;
-        f34142e = a.a(a10);
+        f34142d = a10;
+        f34143e = a.a(a10);
     }
 
     private DeprecationLevelValue(String str, int i10) {
@@ -34,6 +34,6 @@ public final class DeprecationLevelValue {
     }
 
     public static DeprecationLevelValue[] values() {
-        return (DeprecationLevelValue[]) f34141d.clone();
+        return (DeprecationLevelValue[]) f34142d.clone();
     }
 }

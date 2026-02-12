@@ -113,4 +113,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.BansEmpty = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 7335, 14871, 14872, 14873, 3207, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 7210, 14989, 14990, 14991, 3207, 2]);

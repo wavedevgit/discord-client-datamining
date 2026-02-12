@@ -282,10 +282,10 @@ public abstract class t1 {
         c10.put(Reflection.getOrCreateKotlinClass(as.x.class), rt.a.v(as.x.f6097e));
         c10.put(Reflection.getOrCreateKotlinClass(Boolean.TYPE), rt.a.A(BooleanCompanionObject.INSTANCE));
         c10.put(Reflection.getOrCreateKotlinClass(boolean[].class), rt.a.b());
-        c10.put(Reflection.getOrCreateKotlinClass(Unit.class), rt.a.z(Unit.f31987a));
+        c10.put(Reflection.getOrCreateKotlinClass(Unit.class), rt.a.z(Unit.f31988a));
         c10.put(Reflection.getOrCreateKotlinClass(Void.class), rt.a.l());
         try {
-            c10.put(Reflection.getOrCreateKotlinClass(Duration.class), rt.a.J(Duration.f34986e));
+            c10.put(Reflection.getOrCreateKotlinClass(Duration.class), rt.a.J(Duration.f34987e));
         } catch (ClassNotFoundException | NoClassDefFoundError unused) {
         }
         try {
@@ -305,7 +305,7 @@ public abstract class t1 {
         } catch (ClassNotFoundException | NoClassDefFoundError unused5) {
         }
         try {
-            c10.put(Reflection.getOrCreateKotlinClass(xs.a.class), rt.a.K(xs.a.f55148i));
+            c10.put(Reflection.getOrCreateKotlinClass(xs.a.class), rt.a.K(xs.a.f55149i));
         } catch (ClassNotFoundException | NoClassDefFoundError unused6) {
         }
         return kotlin.collections.o0.b(c10);

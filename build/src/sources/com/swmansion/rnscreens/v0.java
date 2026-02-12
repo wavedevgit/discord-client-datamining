@@ -10,16 +10,16 @@ import org.jetbrains.annotations.NotNull;
 public final class v0 extends g {
 
     /* renamed from: r  reason: collision with root package name */
-    private int f19390r;
+    private int f19391r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f19391s;
+    private int f19392s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f19392t;
+    private boolean f19393t;
 
     /* renamed from: u  reason: collision with root package name */
-    private a f19393u;
+    private a f19394u;
 
     /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
     /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -27,37 +27,37 @@ public final class v0 extends g {
     public static final class a {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f19394d = new a("LEFT", 0);
+        public static final a f19395d = new a("LEFT", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final a f19395e = new a("CENTER", 1);
+        public static final a f19396e = new a("CENTER", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final a f19396i = new a("RIGHT", 2);
+        public static final a f19397i = new a("RIGHT", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        public static final a f19397o = new a("BACK", 3);
+        public static final a f19398o = new a("BACK", 3);
 
         /* renamed from: p  reason: collision with root package name */
-        public static final a f19398p = new a("SEARCH_BAR", 4);
+        public static final a f19399p = new a("SEARCH_BAR", 4);
 
         /* renamed from: q  reason: collision with root package name */
-        private static final /* synthetic */ a[] f19399q;
+        private static final /* synthetic */ a[] f19400q;
 
         /* renamed from: r  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f19400r;
+        private static final /* synthetic */ EnumEntries f19401r;
 
         static {
             a[] a10 = a();
-            f19399q = a10;
-            f19400r = hs.a.a(a10);
+            f19400q = a10;
+            f19401r = hs.a.a(a10);
         }
 
         private a(String str, int i10) {
         }
 
         private static final /* synthetic */ a[] a() {
-            return new a[]{f19394d, f19395e, f19396i, f19397o, f19398p};
+            return new a[]{f19395d, f19396e, f19397i, f19398o, f19399p};
         }
 
         public static a valueOf(String str) {
@@ -65,13 +65,13 @@ public final class v0 extends g {
         }
 
         public static a[] values() {
-            return (a[]) f19399q.clone();
+            return (a[]) f19400q.clone();
         }
     }
 
     public v0(ReactContext reactContext) {
         super(reactContext);
-        this.f19393u = a.f19394d;
+        this.f19394u = a.f19395d;
     }
 
     public final ScreenStackHeaderConfig getConfig() {
@@ -90,7 +90,7 @@ public final class v0 extends g {
 
     @NotNull
     public final a getType() {
-        return this.f19393u;
+        return this.f19394u;
     }
 
     @Override // android.view.ViewGroup, android.view.View
@@ -98,7 +98,7 @@ public final class v0 extends g {
         if (z10) {
             int i14 = i12 - i10;
             int i15 = i13 - i11;
-            if (this.f19392t) {
+            if (this.f19393t) {
                 b(i14, i15, i10, i11);
             }
         }
@@ -107,20 +107,20 @@ public final class v0 extends g {
     @Override // android.view.View
     protected void onMeasure(int i10, int i11) {
         if (View.MeasureSpec.getMode(i10) == 1073741824 && View.MeasureSpec.getMode(i11) == 1073741824) {
-            this.f19390r = View.MeasureSpec.getSize(i10);
-            this.f19391s = View.MeasureSpec.getSize(i11);
-            this.f19392t = true;
+            this.f19391r = View.MeasureSpec.getSize(i10);
+            this.f19392s = View.MeasureSpec.getSize(i11);
+            this.f19393t = true;
             ViewParent parent = getParent();
             if (parent != null) {
                 forceLayout();
                 ((View) parent).requestLayout();
             }
         }
-        setMeasuredDimension(this.f19390r, this.f19391s);
+        setMeasuredDimension(this.f19391r, this.f19392s);
     }
 
     public final void setType(@NotNull a aVar) {
         Intrinsics.checkNotNullParameter(aVar, "<set-?>");
-        this.f19393u = aVar;
+        this.f19394u = aVar;
     }
 }

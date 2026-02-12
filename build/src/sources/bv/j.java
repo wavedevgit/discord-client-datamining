@@ -105,7 +105,7 @@ public abstract class j {
             @Override // kotlin.jvm.functions.Function2
             public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
                 a(((Number) obj).intValue(), ((Number) obj2).longValue());
-                return Unit.f31987a;
+                return Unit.f31988a;
             }
         }
 
@@ -170,7 +170,7 @@ public abstract class j {
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a(((Number) obj).intValue(), ((Number) obj2).longValue());
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
     }
 
@@ -255,7 +255,7 @@ public abstract class j {
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a(((Number) obj).intValue(), ((Number) obj2).longValue());
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
     }
 

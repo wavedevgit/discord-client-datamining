@@ -46,7 +46,7 @@ public final class TextContentNode extends ContentNode {
 
     public static final /* synthetic */ void write$Self$chat_release(TextContentNode textContentNode, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         if (compositeEncoder.z(serialDescriptor, 0) || textContentNode.content != null) {
-            compositeEncoder.o(serialDescriptor, 0, n2.f50032a, textContentNode.content);
+            compositeEncoder.o(serialDescriptor, 0, n2.f50033a, textContentNode.content);
         }
     }
 

@@ -17,18 +17,18 @@ import org.jetbrains.annotations.NotNull;
 public final class IntegerValueTypeConstructor implements TypeConstructor {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f34128a;
+    private final long f34129a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ModuleDescriptor f34129b;
+    private final ModuleDescriptor f34130b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ArrayList f34130c;
+    private final ArrayList f34131c;
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
     @NotNull
     public KotlinBuiltIns getBuiltIns() {
-        return this.f34129b.getBuiltIns();
+        return this.f34130b.getBuiltIns();
     }
 
     public Void getDeclarationDescriptor() {
@@ -44,7 +44,7 @@ public final class IntegerValueTypeConstructor implements TypeConstructor {
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
     @NotNull
     public Collection<KotlinType> getSupertypes() {
-        return this.f34130c;
+        return this.f34131c;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
@@ -61,12 +61,12 @@ public final class IntegerValueTypeConstructor implements TypeConstructor {
 
     @NotNull
     public String toString() {
-        return "IntegerValueType(" + this.f34128a + ')';
+        return "IntegerValueType(" + this.f34129a + ')';
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
     /* renamed from: getDeclarationDescriptor */
-    public /* bridge */ /* synthetic */ ClassifierDescriptor mo1202getDeclarationDescriptor() {
+    public /* bridge */ /* synthetic */ ClassifierDescriptor mo1201getDeclarationDescriptor() {
         return (ClassifierDescriptor) getDeclarationDescriptor();
     }
 }

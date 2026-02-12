@@ -5,26 +5,26 @@ import kotlinx.coroutines.CoroutineDispatcher;
 public final class m0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final m0 f55802a = new m0();
+    public static final m0 f55803a = new m0();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final CoroutineDispatcher f55803b = ft.c.f24364t;
+    private static final CoroutineDispatcher f55804b = ft.c.f24365t;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final CoroutineDispatcher f55804c = kotlinx.coroutines.h0.f35042i;
+    private static final CoroutineDispatcher f55805c = kotlinx.coroutines.h0.f35043i;
 
     private m0() {
     }
 
     public static final CoroutineDispatcher a() {
-        return f55803b;
+        return f55804b;
     }
 
     public static final CoroutineDispatcher b() {
-        return ft.b.f24362o;
+        return ft.b.f24363o;
     }
 
     public static final c1 c() {
-        return dt.t.f21922b;
+        return dt.t.f21923b;
     }
 }

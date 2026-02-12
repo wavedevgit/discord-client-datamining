@@ -51,59 +51,59 @@ public class PlayerView extends FrameLayout {
     private int J;
 
     /* renamed from: d  reason: collision with root package name */
-    private final a f13886d;
+    private final a f13887d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final AspectRatioFrameLayout f13887e;
+    private final AspectRatioFrameLayout f13888e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final View f13888i;
+    private final View f13889i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final View f13889o;
+    private final View f13890o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final boolean f13890p;
+    private final boolean f13891p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final ImageView f13891q;
+    private final ImageView f13892q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final SubtitleView f13892r;
+    private final SubtitleView f13893r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final View f13893s;
+    private final View f13894s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final TextView f13894t;
+    private final TextView f13895t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final PlayerControlView f13895u;
+    private final PlayerControlView f13896u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final FrameLayout f13896v;
+    private final FrameLayout f13897v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final FrameLayout f13897w;
+    private final FrameLayout f13898w;
 
     /* renamed from: x  reason: collision with root package name */
-    private Player f13898x;
+    private Player f13899x;
 
     /* renamed from: y  reason: collision with root package name */
-    private boolean f13899y;
+    private boolean f13900y;
 
     /* renamed from: z  reason: collision with root package name */
-    private PlayerControlView.e f13900z;
+    private PlayerControlView.e f13901z;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public final class a implements Player.b, View.OnLayoutChangeListener, View.OnClickListener, PlayerControlView.e {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Timeline.b f13901d = new Timeline.b();
+        private final Timeline.b f13902d = new Timeline.b();
 
         /* renamed from: e  reason: collision with root package name */
-        private Object f13902e;
+        private Object f13903e;
 
         public a() {
         }
@@ -120,8 +120,8 @@ public class PlayerView extends FrameLayout {
 
         @Override // com.google.android.exoplayer2.Player.b, ae.m
         public void onCues(CueGroup cueGroup) {
-            if (PlayerView.this.f13892r != null) {
-                PlayerView.this.f13892r.setCues(cueGroup.f13655d);
+            if (PlayerView.this.f13893r != null) {
+                PlayerView.this.f13893r.setCues(cueGroup.f13656d);
             }
         }
 
@@ -152,29 +152,29 @@ public class PlayerView extends FrameLayout {
 
         @Override // com.google.android.exoplayer2.Player.b
         public void onRenderedFirstFrame() {
-            if (PlayerView.this.f13888i != null) {
-                PlayerView.this.f13888i.setVisibility(4);
+            if (PlayerView.this.f13889i != null) {
+                PlayerView.this.f13889i.setVisibility(4);
             }
         }
 
         @Override // com.google.android.exoplayer2.Player.b
         public void onTracksChanged(Tracks tracks) {
-            Player player = (Player) oe.a.e(PlayerView.this.f13898x);
+            Player player = (Player) oe.a.e(PlayerView.this.f13899x);
             Timeline v10 = player.v();
             if (v10.u()) {
-                this.f13902e = null;
+                this.f13903e = null;
             } else if (!player.o().c()) {
-                this.f13902e = v10.k(player.E(), this.f13901d, true).f12593e;
+                this.f13903e = v10.k(player.E(), this.f13902d, true).f12594e;
             } else {
-                Object obj = this.f13902e;
+                Object obj = this.f13903e;
                 if (obj != null) {
                     int f10 = v10.f(obj);
                     if (f10 != -1) {
-                        if (player.Q() == v10.j(f10, this.f13901d).f12594i) {
+                        if (player.Q() == v10.j(f10, this.f13902d).f12595i) {
                             return;
                         }
                     }
-                    this.f13902e = null;
+                    this.f13903e = null;
                 }
             }
             PlayerView.this.L(false);
@@ -195,9 +195,9 @@ public class PlayerView extends FrameLayout {
             int intrinsicWidth = drawable.getIntrinsicWidth();
             int intrinsicHeight = drawable.getIntrinsicHeight();
             if (intrinsicWidth > 0 && intrinsicHeight > 0) {
-                y(this.f13887e, intrinsicWidth / intrinsicHeight);
-                this.f13891q.setImageDrawable(drawable);
-                this.f13891q.setVisibility(0);
+                y(this.f13888e, intrinsicWidth / intrinsicHeight);
+                this.f13892q.setImageDrawable(drawable);
+                this.f13892q.setVisibility(0);
                 return true;
             }
         }
@@ -209,13 +209,13 @@ public class PlayerView extends FrameLayout {
     }
 
     private boolean C() {
-        Player player = this.f13898x;
+        Player player = this.f13899x;
         if (player == null) {
             return true;
         }
         int O = player.O();
         if (this.G) {
-            if (O == 1 || O == 4 || !this.f13898x.B()) {
+            if (O == 1 || O == 4 || !this.f13899x.B()) {
                 return true;
             }
             return false;
@@ -228,23 +228,23 @@ public class PlayerView extends FrameLayout {
         if (!N()) {
             return;
         }
-        PlayerControlView playerControlView = this.f13895u;
+        PlayerControlView playerControlView = this.f13896u;
         if (z10) {
             i10 = 0;
         } else {
             i10 = this.F;
         }
         playerControlView.setShowTimeoutMs(i10);
-        this.f13895u.J();
+        this.f13896u.J();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void F() {
-        if (N() && this.f13898x != null) {
-            if (!this.f13895u.D()) {
+        if (N() && this.f13899x != null) {
+            if (!this.f13896u.D()) {
                 x(true);
             } else if (this.I) {
-                this.f13895u.A();
+                this.f13896u.A();
             }
         }
     }
@@ -253,37 +253,37 @@ public class PlayerView extends FrameLayout {
     public void G() {
         VideoSize videoSize;
         float f10;
-        Player player = this.f13898x;
+        Player player = this.f13899x;
         if (player != null) {
             videoSize = player.G();
         } else {
-            videoSize = VideoSize.f14173p;
+            videoSize = VideoSize.f14174p;
         }
-        int i10 = videoSize.f14179d;
-        int i11 = videoSize.f14180e;
-        int i12 = videoSize.f14181i;
+        int i10 = videoSize.f14180d;
+        int i11 = videoSize.f14181e;
+        int i12 = videoSize.f14182i;
         float f11 = 0.0f;
         if (i11 != 0 && i10 != 0) {
-            f10 = (i10 * videoSize.f14182o) / i11;
+            f10 = (i10 * videoSize.f14183o) / i11;
         } else {
             f10 = 0.0f;
         }
-        View view = this.f13889o;
+        View view = this.f13890o;
         if (view instanceof TextureView) {
             if (f10 > 0.0f && (i12 == 90 || i12 == 270)) {
                 f10 = 1.0f / f10;
             }
             if (this.J != 0) {
-                view.removeOnLayoutChangeListener(this.f13886d);
+                view.removeOnLayoutChangeListener(this.f13887d);
             }
             this.J = i12;
             if (i12 != 0) {
-                this.f13889o.addOnLayoutChangeListener(this.f13886d);
+                this.f13890o.addOnLayoutChangeListener(this.f13887d);
             }
-            o((TextureView) this.f13889o, this.J);
+            o((TextureView) this.f13890o, this.J);
         }
-        AspectRatioFrameLayout aspectRatioFrameLayout = this.f13887e;
-        if (!this.f13890p) {
+        AspectRatioFrameLayout aspectRatioFrameLayout = this.f13888e;
+        if (!this.f13891p) {
             f11 = f10;
         }
         y(aspectRatioFrameLayout, f11);
@@ -291,7 +291,7 @@ public class PlayerView extends FrameLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Code restructure failed: missing block: B:12:0x001d, code lost:
-        if (r4.f13898x.B() == false) goto L18;
+        if (r4.f13899x.B() == false) goto L18;
      */
     /* JADX WARN: Removed duplicated region for block: B:18:0x0026  */
     /*
@@ -301,9 +301,9 @@ public class PlayerView extends FrameLayout {
     public void H() {
         /*
             r4 = this;
-            android.view.View r0 = r4.f13893s
+            android.view.View r0 = r4.f13894s
             if (r0 == 0) goto L2b
-            com.google.android.exoplayer2.Player r0 = r4.f13898x
+            com.google.android.exoplayer2.Player r0 = r4.f13899x
             r1 = 0
             if (r0 == 0) goto L20
             int r0 = r0.O()
@@ -313,14 +313,14 @@ public class PlayerView extends FrameLayout {
             r3 = 1
             if (r0 == r2) goto L21
             if (r0 != r3) goto L20
-            com.google.android.exoplayer2.Player r0 = r4.f13898x
+            com.google.android.exoplayer2.Player r0 = r4.f13899x
             boolean r0 = r0.B()
             if (r0 == 0) goto L20
             goto L21
         L20:
             r3 = r1
         L21:
-            android.view.View r0 = r4.f13893s
+            android.view.View r0 = r4.f13894s
             if (r3 == 0) goto L26
             goto L28
         L26:
@@ -335,17 +335,17 @@ public class PlayerView extends FrameLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void I() {
-        PlayerControlView playerControlView = this.f13895u;
+        PlayerControlView playerControlView = this.f13896u;
         String str = null;
-        if (playerControlView != null && this.f13899y) {
+        if (playerControlView != null && this.f13900y) {
             if (playerControlView.getVisibility() == 0) {
                 if (this.I) {
-                    str = getResources().getString(m.f35763a);
+                    str = getResources().getString(m.f35764a);
                 }
                 setContentDescription(str);
                 return;
             }
-            setContentDescription(getResources().getString(m.f35767e));
+            setContentDescription(getResources().getString(m.f35768e));
             return;
         }
         setContentDescription(null);
@@ -362,25 +362,25 @@ public class PlayerView extends FrameLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void K() {
-        TextView textView = this.f13894t;
+        TextView textView = this.f13895t;
         if (textView != null) {
             CharSequence charSequence = this.E;
             if (charSequence != null) {
                 textView.setText(charSequence);
-                this.f13894t.setVisibility(0);
+                this.f13895t.setVisibility(0);
                 return;
             }
-            Player player = this.f13898x;
+            Player player = this.f13899x;
             if (player != null) {
                 player.m();
             }
-            this.f13894t.setVisibility(8);
+            this.f13895t.setVisibility(8);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public void L(boolean z10) {
-        Player player = this.f13898x;
+        Player player = this.f13899x;
         if (player != null && player.s(30) && !player.o().c()) {
             if (z10 && !this.D) {
                 p();
@@ -401,15 +401,15 @@ public class PlayerView extends FrameLayout {
 
     private boolean M() {
         if (this.A) {
-            oe.a.i(this.f13891q);
+            oe.a.i(this.f13892q);
             return true;
         }
         return false;
     }
 
     private boolean N() {
-        if (this.f13899y) {
-            oe.a.i(this.f13895u);
+        if (this.f13900y) {
+            oe.a.i(this.f13896u);
             return true;
         }
         return false;
@@ -433,27 +433,27 @@ public class PlayerView extends FrameLayout {
     }
 
     private void p() {
-        View view = this.f13888i;
+        View view = this.f13889i;
         if (view != null) {
             view.setVisibility(0);
         }
     }
 
     private static void q(Context context, Resources resources, ImageView imageView) {
-        imageView.setImageDrawable(w0.W(context, resources, le.i.f35734f));
-        imageView.setBackgroundColor(resources.getColor(le.h.f35728a));
+        imageView.setImageDrawable(w0.W(context, resources, le.i.f35735f));
+        imageView.setBackgroundColor(resources.getColor(le.h.f35729a));
     }
 
     private static void r(Context context, Resources resources, ImageView imageView) {
-        imageView.setImageDrawable(w0.W(context, resources, le.i.f35734f));
-        imageView.setBackgroundColor(resources.getColor(le.h.f35728a, null));
+        imageView.setImageDrawable(w0.W(context, resources, le.i.f35735f));
+        imageView.setBackgroundColor(resources.getColor(le.h.f35729a, null));
     }
 
     private void t() {
-        ImageView imageView = this.f13891q;
+        ImageView imageView = this.f13892q;
         if (imageView != null) {
             imageView.setImageResource(17170445);
-            this.f13891q.setVisibility(4);
+            this.f13892q.setVisibility(4);
         }
     }
 
@@ -463,8 +463,8 @@ public class PlayerView extends FrameLayout {
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean w() {
-        Player player = this.f13898x;
-        if (player != null && player.f() && this.f13898x.B()) {
+        Player player = this.f13899x;
+        if (player != null && player.f() && this.f13899x.B()) {
             return true;
         }
         return false;
@@ -473,7 +473,7 @@ public class PlayerView extends FrameLayout {
     private void x(boolean z10) {
         boolean z11;
         if ((!w() || !this.H) && N()) {
-            if (this.f13895u.D() && this.f13895u.getShowTimeoutMs() <= 0) {
+            if (this.f13896u.D() && this.f13896u.getShowTimeoutMs() <= 0) {
                 z11 = true;
             } else {
                 z11 = false;
@@ -486,7 +486,7 @@ public class PlayerView extends FrameLayout {
     }
 
     private boolean z(MediaMetadata mediaMetadata) {
-        byte[] bArr = mediaMetadata.f12509u;
+        byte[] bArr = mediaMetadata.f12510u;
         if (bArr == null) {
             return false;
         }
@@ -499,12 +499,12 @@ public class PlayerView extends FrameLayout {
 
     @Override // android.view.ViewGroup, android.view.View
     public boolean dispatchKeyEvent(KeyEvent keyEvent) {
-        Player player = this.f13898x;
+        Player player = this.f13899x;
         if (player != null && player.f()) {
             return super.dispatchKeyEvent(keyEvent);
         }
         boolean v10 = v(keyEvent.getKeyCode());
-        if (v10 && N() && !this.f13895u.D()) {
+        if (v10 && N() && !this.f13896u.D()) {
             x(true);
             return true;
         } else if (!s(keyEvent) && !super.dispatchKeyEvent(keyEvent)) {
@@ -520,11 +520,11 @@ public class PlayerView extends FrameLayout {
 
     public List<le.a> getAdOverlayInfos() {
         ArrayList arrayList = new ArrayList();
-        FrameLayout frameLayout = this.f13897w;
+        FrameLayout frameLayout = this.f13898w;
         if (frameLayout != null) {
             arrayList.add(new le.a(frameLayout, 4, "Transparent overlay does not impact viewability"));
         }
-        PlayerControlView playerControlView = this.f13895u;
+        PlayerControlView playerControlView = this.f13896u;
         if (playerControlView != null) {
             arrayList.add(new le.a(playerControlView, 1));
         }
@@ -532,7 +532,7 @@ public class PlayerView extends FrameLayout {
     }
 
     public ViewGroup getAdViewGroup() {
-        return (ViewGroup) oe.a.j(this.f13896v, "exo_ad_overlay must be present for ad playback");
+        return (ViewGroup) oe.a.j(this.f13897v, "exo_ad_overlay must be present for ad playback");
     }
 
     public boolean getControllerAutoShow() {
@@ -552,20 +552,20 @@ public class PlayerView extends FrameLayout {
     }
 
     public FrameLayout getOverlayFrameLayout() {
-        return this.f13897w;
+        return this.f13898w;
     }
 
     public Player getPlayer() {
-        return this.f13898x;
+        return this.f13899x;
     }
 
     public int getResizeMode() {
-        oe.a.i(this.f13887e);
-        return this.f13887e.getResizeMode();
+        oe.a.i(this.f13888e);
+        return this.f13888e.getResizeMode();
     }
 
     public SubtitleView getSubtitleView() {
-        return this.f13892r;
+        return this.f13893r;
     }
 
     public boolean getUseArtwork() {
@@ -573,16 +573,16 @@ public class PlayerView extends FrameLayout {
     }
 
     public boolean getUseController() {
-        return this.f13899y;
+        return this.f13900y;
     }
 
     public View getVideoSurfaceView() {
-        return this.f13889o;
+        return this.f13890o;
     }
 
     @Override // android.view.View
     public boolean onTrackballEvent(MotionEvent motionEvent) {
-        if (N() && this.f13898x != null) {
+        if (N() && this.f13899x != null) {
             x(true);
             return true;
         }
@@ -596,15 +596,15 @@ public class PlayerView extends FrameLayout {
     }
 
     public boolean s(KeyEvent keyEvent) {
-        if (N() && this.f13895u.y(keyEvent)) {
+        if (N() && this.f13896u.y(keyEvent)) {
             return true;
         }
         return false;
     }
 
     public void setAspectRatioListener(AspectRatioFrameLayout.b bVar) {
-        oe.a.i(this.f13887e);
-        this.f13887e.setAspectRatioListener(bVar);
+        oe.a.i(this.f13888e);
+        this.f13888e.setAspectRatioListener(bVar);
     }
 
     public void setControllerAutoShow(boolean z10) {
@@ -616,36 +616,36 @@ public class PlayerView extends FrameLayout {
     }
 
     public void setControllerHideOnTouch(boolean z10) {
-        oe.a.i(this.f13895u);
+        oe.a.i(this.f13896u);
         this.I = z10;
         I();
     }
 
     public void setControllerShowTimeoutMs(int i10) {
-        oe.a.i(this.f13895u);
+        oe.a.i(this.f13896u);
         this.F = i10;
-        if (this.f13895u.D()) {
+        if (this.f13896u.D()) {
             D();
         }
     }
 
     public void setControllerVisibilityListener(PlayerControlView.e eVar) {
-        oe.a.i(this.f13895u);
-        PlayerControlView.e eVar2 = this.f13900z;
+        oe.a.i(this.f13896u);
+        PlayerControlView.e eVar2 = this.f13901z;
         if (eVar2 != eVar) {
             if (eVar2 != null) {
-                this.f13895u.E(eVar2);
+                this.f13896u.E(eVar2);
             }
-            this.f13900z = eVar;
+            this.f13901z = eVar;
             if (eVar != null) {
-                this.f13895u.w(eVar);
+                this.f13896u.w(eVar);
             }
         }
     }
 
     public void setCustomErrorMessage(CharSequence charSequence) {
         boolean z10;
-        if (this.f13894t != null) {
+        if (this.f13895t != null) {
             z10 = true;
         } else {
             z10 = false;
@@ -690,14 +690,14 @@ public class PlayerView extends FrameLayout {
             z11 = true;
         }
         oe.a.a(z11);
-        Player player2 = this.f13898x;
+        Player player2 = this.f13899x;
         if (player2 == player) {
             return;
         }
         if (player2 != null) {
-            player2.h(this.f13886d);
+            player2.h(this.f13887d);
             if (player2.s(27)) {
-                View view = this.f13889o;
+                View view = this.f13890o;
                 if (view instanceof TextureView) {
                     player2.F((TextureView) view);
                 } else if (view instanceof SurfaceView) {
@@ -705,20 +705,20 @@ public class PlayerView extends FrameLayout {
                 }
             }
         }
-        SubtitleView subtitleView = this.f13892r;
+        SubtitleView subtitleView = this.f13893r;
         if (subtitleView != null) {
             subtitleView.setCues(null);
         }
-        this.f13898x = player;
+        this.f13899x = player;
         if (N()) {
-            this.f13895u.setPlayer(player);
+            this.f13896u.setPlayer(player);
         }
         H();
         K();
         L(true);
         if (player != null) {
             if (player.s(27)) {
-                View view2 = this.f13889o;
+                View view2 = this.f13890o;
                 if (view2 instanceof TextureView) {
                     player.y((TextureView) view2);
                 } else if (view2 instanceof SurfaceView) {
@@ -726,10 +726,10 @@ public class PlayerView extends FrameLayout {
                 }
                 G();
             }
-            if (this.f13892r != null && player.s(28)) {
-                this.f13892r.setCues(player.q().f13655d);
+            if (this.f13893r != null && player.s(28)) {
+                this.f13893r.setCues(player.q().f13656d);
             }
-            player.L(this.f13886d);
+            player.L(this.f13887d);
             x(false);
             return;
         }
@@ -737,13 +737,13 @@ public class PlayerView extends FrameLayout {
     }
 
     public void setRepeatToggleModes(int i10) {
-        oe.a.i(this.f13895u);
-        this.f13895u.setRepeatToggleModes(i10);
+        oe.a.i(this.f13896u);
+        this.f13896u.setRepeatToggleModes(i10);
     }
 
     public void setResizeMode(int i10) {
-        oe.a.i(this.f13887e);
-        this.f13887e.setResizeMode(i10);
+        oe.a.i(this.f13888e);
+        this.f13888e.setResizeMode(i10);
     }
 
     public void setShowBuffering(int i10) {
@@ -754,37 +754,37 @@ public class PlayerView extends FrameLayout {
     }
 
     public void setShowFastForwardButton(boolean z10) {
-        oe.a.i(this.f13895u);
-        this.f13895u.setShowFastForwardButton(z10);
+        oe.a.i(this.f13896u);
+        this.f13896u.setShowFastForwardButton(z10);
     }
 
     public void setShowMultiWindowTimeBar(boolean z10) {
-        oe.a.i(this.f13895u);
-        this.f13895u.setShowMultiWindowTimeBar(z10);
+        oe.a.i(this.f13896u);
+        this.f13896u.setShowMultiWindowTimeBar(z10);
     }
 
     public void setShowNextButton(boolean z10) {
-        oe.a.i(this.f13895u);
-        this.f13895u.setShowNextButton(z10);
+        oe.a.i(this.f13896u);
+        this.f13896u.setShowNextButton(z10);
     }
 
     public void setShowPreviousButton(boolean z10) {
-        oe.a.i(this.f13895u);
-        this.f13895u.setShowPreviousButton(z10);
+        oe.a.i(this.f13896u);
+        this.f13896u.setShowPreviousButton(z10);
     }
 
     public void setShowRewindButton(boolean z10) {
-        oe.a.i(this.f13895u);
-        this.f13895u.setShowRewindButton(z10);
+        oe.a.i(this.f13896u);
+        this.f13896u.setShowRewindButton(z10);
     }
 
     public void setShowShuffleButton(boolean z10) {
-        oe.a.i(this.f13895u);
-        this.f13895u.setShowShuffleButton(z10);
+        oe.a.i(this.f13896u);
+        this.f13896u.setShowShuffleButton(z10);
     }
 
     public void setShutterBackgroundColor(int i10) {
-        View view = this.f13888i;
+        View view = this.f13889i;
         if (view != null) {
             view.setBackgroundColor(i10);
         }
@@ -792,7 +792,7 @@ public class PlayerView extends FrameLayout {
 
     public void setUseArtwork(boolean z10) {
         boolean z11;
-        if (z10 && this.f13891q == null) {
+        if (z10 && this.f13892q == null) {
             z11 = false;
         } else {
             z11 = true;
@@ -807,7 +807,7 @@ public class PlayerView extends FrameLayout {
     public void setUseController(boolean z10) {
         boolean z11;
         boolean z12 = true;
-        if (z10 && this.f13895u == null) {
+        if (z10 && this.f13896u == null) {
             z11 = false;
         } else {
             z11 = true;
@@ -817,17 +817,17 @@ public class PlayerView extends FrameLayout {
             z12 = false;
         }
         setClickable(z12);
-        if (this.f13899y == z10) {
+        if (this.f13900y == z10) {
             return;
         }
-        this.f13899y = z10;
+        this.f13900y = z10;
         if (N()) {
-            this.f13895u.setPlayer(this.f13898x);
+            this.f13896u.setPlayer(this.f13899x);
         } else {
-            PlayerControlView playerControlView = this.f13895u;
+            PlayerControlView playerControlView = this.f13896u;
             if (playerControlView != null) {
                 playerControlView.A();
-                this.f13895u.setPlayer(null);
+                this.f13896u.setPlayer(null);
             }
         }
         I();
@@ -836,14 +836,14 @@ public class PlayerView extends FrameLayout {
     @Override // android.view.View
     public void setVisibility(int i10) {
         super.setVisibility(i10);
-        View view = this.f13889o;
+        View view = this.f13890o;
         if (view instanceof SurfaceView) {
             view.setVisibility(i10);
         }
     }
 
     public void u() {
-        PlayerControlView playerControlView = this.f13895u;
+        PlayerControlView playerControlView = this.f13896u;
         if (playerControlView != null) {
             playerControlView.A();
         }
@@ -874,21 +874,21 @@ public class PlayerView extends FrameLayout {
         int i17;
         boolean z17;
         a aVar = new a();
-        this.f13886d = aVar;
+        this.f13887d = aVar;
         if (isInEditMode()) {
-            this.f13887e = null;
-            this.f13888i = null;
-            this.f13889o = null;
-            this.f13890p = false;
-            this.f13891q = null;
-            this.f13892r = null;
-            this.f13893s = null;
-            this.f13894t = null;
-            this.f13895u = null;
-            this.f13896v = null;
-            this.f13897w = null;
+            this.f13888e = null;
+            this.f13889i = null;
+            this.f13890o = null;
+            this.f13891p = false;
+            this.f13892q = null;
+            this.f13893r = null;
+            this.f13894s = null;
+            this.f13895t = null;
+            this.f13896u = null;
+            this.f13897v = null;
+            this.f13898w = null;
             ImageView imageView = new ImageView(context);
-            if (w0.f39037a >= 23) {
+            if (w0.f39038a >= 23) {
                 r(context, getResources(), imageView);
             } else {
                 q(context, getResources(), imageView);
@@ -896,7 +896,7 @@ public class PlayerView extends FrameLayout {
             addView(imageView);
             return;
         }
-        int i18 = l.f35762c;
+        int i18 = l.f35763c;
         if (attributeSet != null) {
             TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, n.H, i10, 0);
             try {
@@ -947,89 +947,89 @@ public class PlayerView extends FrameLayout {
         }
         LayoutInflater.from(context).inflate(i18, this);
         setDescendantFocusability(262144);
-        AspectRatioFrameLayout aspectRatioFrameLayout = (AspectRatioFrameLayout) findViewById(le.j.f35738d);
-        this.f13887e = aspectRatioFrameLayout;
+        AspectRatioFrameLayout aspectRatioFrameLayout = (AspectRatioFrameLayout) findViewById(le.j.f35739d);
+        this.f13888e = aspectRatioFrameLayout;
         if (aspectRatioFrameLayout != null) {
             B(aspectRatioFrameLayout, i12);
         }
-        View findViewById = findViewById(le.j.f35755u);
-        this.f13888i = findViewById;
+        View findViewById = findViewById(le.j.f35756u);
+        this.f13889i = findViewById;
         if (findViewById != null && z15) {
             findViewById.setBackgroundColor(i15);
         }
         if (aspectRatioFrameLayout != null && i14 != 0) {
             ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams(-1, -1);
             if (i14 == 2) {
-                this.f13889o = new TextureView(context);
+                this.f13890o = new TextureView(context);
             } else if (i14 == 3) {
                 try {
-                    int i22 = qe.l.f44087x;
-                    this.f13889o = (View) qe.l.class.getConstructor(Context.class).newInstance(context);
+                    int i22 = qe.l.f44088x;
+                    this.f13890o = (View) qe.l.class.getConstructor(Context.class).newInstance(context);
                     z17 = true;
-                    this.f13889o.setLayoutParams(layoutParams);
-                    this.f13889o.setOnClickListener(aVar);
-                    this.f13889o.setClickable(false);
-                    aspectRatioFrameLayout.addView(this.f13889o, 0);
+                    this.f13890o.setLayoutParams(layoutParams);
+                    this.f13890o.setOnClickListener(aVar);
+                    this.f13890o.setClickable(false);
+                    aspectRatioFrameLayout.addView(this.f13890o, 0);
                     z16 = z17;
                 } catch (Exception e10) {
                     throw new IllegalStateException("spherical_gl_surface_view requires an ExoPlayer dependency", e10);
                 }
             } else if (i14 != 4) {
-                this.f13889o = new SurfaceView(context);
+                this.f13890o = new SurfaceView(context);
             } else {
                 try {
-                    int i23 = pe.j.f41665e;
-                    this.f13889o = (View) pe.j.class.getConstructor(Context.class).newInstance(context);
+                    int i23 = pe.j.f41666e;
+                    this.f13890o = (View) pe.j.class.getConstructor(Context.class).newInstance(context);
                 } catch (Exception e11) {
                     throw new IllegalStateException("video_decoder_gl_surface_view requires an ExoPlayer dependency", e11);
                 }
             }
             z17 = false;
-            this.f13889o.setLayoutParams(layoutParams);
-            this.f13889o.setOnClickListener(aVar);
-            this.f13889o.setClickable(false);
-            aspectRatioFrameLayout.addView(this.f13889o, 0);
+            this.f13890o.setLayoutParams(layoutParams);
+            this.f13890o.setOnClickListener(aVar);
+            this.f13890o.setClickable(false);
+            aspectRatioFrameLayout.addView(this.f13890o, 0);
             z16 = z17;
         } else {
-            this.f13889o = null;
+            this.f13890o = null;
             z16 = false;
         }
-        this.f13890p = z16;
-        this.f13896v = (FrameLayout) findViewById(le.j.f35735a);
-        this.f13897w = (FrameLayout) findViewById(le.j.f35745k);
-        ImageView imageView2 = (ImageView) findViewById(le.j.f35736b);
-        this.f13891q = imageView2;
+        this.f13891p = z16;
+        this.f13897v = (FrameLayout) findViewById(le.j.f35736a);
+        this.f13898w = (FrameLayout) findViewById(le.j.f35746k);
+        ImageView imageView2 = (ImageView) findViewById(le.j.f35737b);
+        this.f13892q = imageView2;
         this.A = z13 && imageView2 != null;
         if (i16 != 0) {
             this.B = androidx.core.content.a.e(getContext(), i16);
         }
-        SubtitleView subtitleView = (SubtitleView) findViewById(le.j.f35756v);
-        this.f13892r = subtitleView;
+        SubtitleView subtitleView = (SubtitleView) findViewById(le.j.f35757v);
+        this.f13893r = subtitleView;
         if (subtitleView != null) {
             subtitleView.d();
             subtitleView.e();
         }
-        View findViewById2 = findViewById(le.j.f35737c);
-        this.f13893s = findViewById2;
+        View findViewById2 = findViewById(le.j.f35738c);
+        this.f13894s = findViewById2;
         if (findViewById2 != null) {
             findViewById2.setVisibility(8);
         }
         this.C = i13;
-        TextView textView = (TextView) findViewById(le.j.f35742h);
-        this.f13894t = textView;
+        TextView textView = (TextView) findViewById(le.j.f35743h);
+        this.f13895t = textView;
         if (textView != null) {
             textView.setVisibility(8);
         }
-        PlayerControlView playerControlView = (PlayerControlView) findViewById(le.j.f35739e);
-        View findViewById3 = findViewById(le.j.f35740f);
+        PlayerControlView playerControlView = (PlayerControlView) findViewById(le.j.f35740e);
+        View findViewById3 = findViewById(le.j.f35741f);
         if (playerControlView != null) {
-            this.f13895u = playerControlView;
+            this.f13896u = playerControlView;
             i17 = 0;
         } else if (findViewById3 != null) {
             i17 = 0;
             PlayerControlView playerControlView2 = new PlayerControlView(context, null, 0, attributeSet);
-            this.f13895u = playerControlView2;
-            playerControlView2.setId(le.j.f35739e);
+            this.f13896u = playerControlView2;
+            playerControlView2.setId(le.j.f35740e);
             playerControlView2.setLayoutParams(findViewById3.getLayoutParams());
             ViewGroup viewGroup = (ViewGroup) findViewById3.getParent();
             int indexOfChild = viewGroup.indexOfChild(findViewById3);
@@ -1037,17 +1037,17 @@ public class PlayerView extends FrameLayout {
             viewGroup.addView(playerControlView2, indexOfChild);
         } else {
             i17 = 0;
-            this.f13895u = null;
+            this.f13896u = null;
         }
-        PlayerControlView playerControlView3 = this.f13895u;
+        PlayerControlView playerControlView3 = this.f13896u;
         this.F = playerControlView3 != null ? i11 : i17;
         this.I = z12;
         this.G = z10;
         this.H = z11;
-        this.f13899y = (!z14 || playerControlView3 == null) ? i17 : 1;
+        this.f13900y = (!z14 || playerControlView3 == null) ? i17 : 1;
         if (playerControlView3 != null) {
             playerControlView3.A();
-            this.f13895u.w(aVar);
+            this.f13896u.w(aVar);
         }
         if (z14) {
             setClickable(true);

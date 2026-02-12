@@ -60,7 +60,7 @@ final class SamsungModule$finishSamsungAuthorization$1 extends k implements Func
                 SamsungModule samsungModule = this.this$0;
                 String str2 = this.$state;
                 String str3 = this.$authCode;
-                Result.a aVar = Result.f31984e;
+                Result.a aVar = Result.f31985e;
                 OkHttpClient c10 = new OkHttpClient.Builder().k(false).c();
                 CoroutineDispatcher b11 = m0.b();
                 SamsungModule$finishSamsungAuthorization$1$1$1 samsungModule$finishSamsungAuthorization$1$1$1 = new SamsungModule$finishSamsungAuthorization$1$1$1(str, samsungModule, c10, str2, str3, null);
@@ -69,9 +69,9 @@ final class SamsungModule$finishSamsungAuthorization$1 extends k implements Func
                     return f10;
                 }
             }
-            b10 = Result.b(Unit.f31987a);
+            b10 = Result.b(Unit.f31988a);
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f31984e;
+            Result.a aVar2 = Result.f31985e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         SamsungModule samsungModule2 = this.this$0;
@@ -83,11 +83,11 @@ final class SamsungModule$finishSamsungAuthorization$1 extends k implements Func
                 throw e10;
             }
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((SamsungModule$finishSamsungAuthorization$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+        return ((SamsungModule$finishSamsungAuthorization$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

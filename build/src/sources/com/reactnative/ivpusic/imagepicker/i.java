@@ -11,28 +11,28 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private Promise f18255a;
+    private Promise f18256a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f18256b;
+    private int f18257b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f18257c;
+    private boolean f18258c;
 
     /* renamed from: d  reason: collision with root package name */
-    private AtomicInteger f18258d;
+    private AtomicInteger f18259d;
 
     /* renamed from: e  reason: collision with root package name */
-    private WritableArray f18259e;
+    private WritableArray f18260e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f18260f;
+    private boolean f18261f;
 
     private synchronized boolean a() {
-        if (this.f18260f) {
+        if (this.f18261f) {
             Log.w("image-crop-picker", "Skipping result, already sent...");
             return false;
-        } else if (this.f18255a == null) {
+        } else if (this.f18256a == null) {
             Log.w("image-crop-picker", "Trying to notify success but promise is not set");
             return false;
         } else {
@@ -46,8 +46,8 @@ public class i {
             return;
         }
         Log.e("image-crop-picker", "Promise rejected. " + str2);
-        this.f18255a.reject(str, str2);
-        this.f18260f = true;
+        this.f18256a.reject(str, str2);
+        this.f18261f = true;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -56,8 +56,8 @@ public class i {
             return;
         }
         Log.e("image-crop-picker", "Promise rejected. " + th2.getMessage());
-        this.f18255a.reject(str, th2);
-        this.f18260f = true;
+        this.f18256a.reject(str, th2);
+        this.f18261f = true;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -66,15 +66,15 @@ public class i {
             if (!a()) {
                 return;
             }
-            if (this.f18257c) {
-                this.f18259e.pushMap(writableMap);
-                if (this.f18258d.addAndGet(1) == this.f18256b) {
-                    this.f18255a.resolve(this.f18259e);
-                    this.f18260f = true;
+            if (this.f18258c) {
+                this.f18260e.pushMap(writableMap);
+                if (this.f18259d.addAndGet(1) == this.f18257b) {
+                    this.f18256a.resolve(this.f18260e);
+                    this.f18261f = true;
                 }
             } else {
-                this.f18255a.resolve(writableMap);
-                this.f18260f = true;
+                this.f18256a.resolve(writableMap);
+                this.f18261f = true;
             }
         } catch (Throwable th2) {
             throw th2;
@@ -83,19 +83,19 @@ public class i {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public synchronized void e(int i10) {
-        this.f18256b = i10;
-        this.f18258d = new AtomicInteger(0);
+        this.f18257b = i10;
+        this.f18259d = new AtomicInteger(0);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public synchronized void f(Promise promise, boolean z10) {
-        this.f18255a = promise;
-        this.f18257c = z10;
-        this.f18260f = false;
-        this.f18256b = 0;
-        this.f18258d = new AtomicInteger(0);
+        this.f18256a = promise;
+        this.f18258c = z10;
+        this.f18261f = false;
+        this.f18257b = 0;
+        this.f18259d = new AtomicInteger(0);
         if (z10) {
-            this.f18259e = new WritableNativeArray();
+            this.f18260e = new WritableNativeArray();
         }
     }
 }

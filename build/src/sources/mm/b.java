@@ -3,15 +3,15 @@ package mm;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f36553a = new b();
+    public static final b f36554a = new b();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final long f36554b = (long) Math.floor(16.666666666666668d);
+    private static final long f36555b = (long) Math.floor(16.666666666666668d);
 
     private b() {
     }
 
     public final long a() {
-        return f36554b;
+        return f36555b;
     }
 }

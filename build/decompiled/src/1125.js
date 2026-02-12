@@ -440,7 +440,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             StartGenerator();
                                             ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                             if (var1) {
-                                                _fun12326_ip = 667;
+                                                _fun12326_ip = 664;
                                                 continue _fun12326
                                             }
                                         case 10:
@@ -486,7 +486,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var3 = _closure2_slot0;
                                             var3 = var3.beforeErrorSampling;
                                             if (!var3) {
-                                                _fun12326_ip = 313;
+                                                _fun12326_ip = 312;
                                                 continue _fun12326
                                             }
                                         case 111: // try_start_0
@@ -501,7 +501,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                                 continue _fun12326
                                             }
                                         case 141: // try_end0
-                                            _fun12326_ip = 313;
+                                            _fun12326_ip = 312;
                                             continue _fun12326;
                                         case 146: // try_start_1
                                             var4 = _closure1_slot0;
@@ -522,9 +522,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var19 = '.';
                                             var3 = var23[var9](var22, var21, var20, var19, var18);
                                             var3 = var4.bind(var5)(var3);
-                                        case 233: // try_end1
+                                        case 232: // try_end1
                                             return var1;
-                                        case 236: // catch_target0 // catch_target1
+                                        case 235: // catch_target0 // catch_target1
                                             CatchBlockStart(arg_register = 5);
                                             var4 = _closure1_slot0;
                                             var7 = _closure1_slot1;
@@ -541,7 +541,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var1 = ' beforeErrorSampling callback threw an error, proceeding with replay capture';
                                             var1 = var8.bind(var7)(var9, var1);
                                             var1 = var3.bind(var4)(var1, var5);
-                                        case 313:
+                                        case 312:
                                             var8 = _closure1_slot0;
                                             var9 = _closure1_slot1;
                                             var4 = 2;
@@ -556,23 +556,23 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var1 = _closure3_slot0;
                                             var1 = var8.bind(var9)(var1);
                                             var1 = var5.bind(var7)(var1);
-                                            SaveGenerator(address = 384);
-                                        case 382:
+                                            SaveGenerator(address = 383);
+                                        case 381:
                                             return var1;
-                                        case 384:
+                                        case 383:
                                             ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 5);
                                             if (var5) {
-                                                _fun12326_ip = 664;
+                                                _fun12326_ip = 661;
                                                 continue _fun12326
                                             }
-                                        case 393:
+                                        case 392:
                                             var5 = _closure1_slot0;
                                             var7 = _closure1_slot1;
                                             if (var1) {
-                                                _fun12326_ip = 572;
+                                                _fun12326_ip = 570;
                                                 continue _fun12326
                                             }
-                                        case 407:
+                                        case 406:
                                             var4 = var7[var4];
                                             var4 = var5.bind(var6)(var4);
                                             var8 = var4.NATIVE;
@@ -593,10 +593,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var13 = var4.concat;
                                             var12 = '[Sentry] ';
                                             if (var16) {
-                                                _fun12326_ip = 533;
+                                                _fun12326_ip = 531;
                                                 continue _fun12326
                                             }
-                                        case 500:
+                                        case 498:
                                             var21 = ' not sampled for event ';
                                             var19 = '.';
                                             var23 = var12;
@@ -604,9 +604,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var20 = var14;
                                             var4 = var23[var13](var22, var21, var20, var19, var18);
                                             var4 = var8.bind(var9)(var4);
-                                            _fun12326_ip = 657;
+                                            _fun12326_ip = 654;
                                             continue _fun12326;
-                                        case 533:
+                                        case 531:
                                             var21 = ' assign already recording replay ';
                                             var19 = ' for event ';
                                             var17 = '.';
@@ -616,9 +616,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var18 = var14;
                                             var4 = var23[var13](var22, var21, var20, var19, var18, var17, var16);
                                             var4 = var8.bind(var9)(var4);
-                                            _fun12326_ip = 657;
+                                            _fun12326_ip = 654;
                                             continue _fun12326;
-                                        case 572:
+                                        case 570:
                                             var4 = 1;
                                             var4 = var7[var4];
                                             var4 = var5.bind(var6)(var4);
@@ -637,12 +637,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                             var20 = var1;
                                             var3 = var23[var9](var22, var21, var20, var19, var18, var17, var16);
                                             var3 = var4.bind(var5)(var3);
-                                        case 657:
+                                        case 654:
                                             var2 = _closure3_slot0;
                                             return var2;
-                                        case 664:
+                                        case 661:
                                             return var1;
-                                        case 667:
+                                        case 664:
                                             return var0;
                                     }
                                 };

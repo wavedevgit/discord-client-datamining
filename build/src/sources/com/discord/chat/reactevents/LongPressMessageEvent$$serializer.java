@@ -41,8 +41,8 @@ public /* synthetic */ class LongPressMessageEvent$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50032a;
-        p0 p0Var = p0.f50048a;
+        n2 n2Var = n2.f50033a;
+        p0 p0Var = p0.f50049a;
         return new KSerializer[]{n2Var, n2Var, p0Var, n2Var, rt.a.u(n2Var), rt.a.u(p0Var)};
     }
 
@@ -65,9 +65,9 @@ public /* synthetic */ class LongPressMessageEvent$$serializer implements h0 {
             int i12 = b10.i(serialDescriptor, 2);
             String m12 = b10.m(serialDescriptor, 3);
             str = m10;
-            num = (Integer) b10.n(serialDescriptor, 5, p0.f50048a, null);
+            num = (Integer) b10.n(serialDescriptor, 5, p0.f50049a, null);
             str3 = m12;
-            str4 = (String) b10.n(serialDescriptor, 4, n2.f50032a, null);
+            str4 = (String) b10.n(serialDescriptor, 4, n2.f50033a, null);
             i10 = i12;
             str2 = m11;
             i11 = 63;
@@ -103,11 +103,11 @@ public /* synthetic */ class LongPressMessageEvent$$serializer implements h0 {
                         i14 |= 8;
                         break;
                     case 4:
-                        str8 = (String) b10.n(serialDescriptor, 4, n2.f50032a, str8);
+                        str8 = (String) b10.n(serialDescriptor, 4, n2.f50033a, str8);
                         i14 |= 16;
                         break;
                     case 5:
-                        num2 = (Integer) b10.n(serialDescriptor, 5, p0.f50048a, num2);
+                        num2 = (Integer) b10.n(serialDescriptor, 5, p0.f50049a, num2);
                         i14 |= 32;
                         break;
                     default:

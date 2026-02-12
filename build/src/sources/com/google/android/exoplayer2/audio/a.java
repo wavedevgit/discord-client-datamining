@@ -24,19 +24,19 @@ import qi.u;
 public final class a {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f12810c = new a(new int[]{2}, 10);
+    public static final a f12811c = new a(new int[]{2}, 10);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final qi.s f12811d = qi.s.w(2, 5, 6);
+    private static final qi.s f12812d = qi.s.w(2, 5, 6);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final t f12812e = new t.a().f(5, 6).f(17, 6).f(7, 6).f(30, 10).f(18, 6).f(6, 8).f(8, 8).f(14, 8).c();
+    private static final t f12813e = new t.a().f(5, 6).f(17, 6).f(7, 6).f(30, 10).f(18, 6).f(6, 8).f(8, 8).f(14, 8).c();
 
     /* renamed from: a  reason: collision with root package name */
-    private final int[] f12813a;
+    private final int[] f12814a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f12814b;
+    private final int f12815b;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: com.google.android.exoplayer2.audio.a$a  reason: collision with other inner class name */
@@ -44,7 +44,7 @@ public final class a {
     public static final class C0162a {
         private static final u a() {
             u.a i10 = new u.a().i(8, 7);
-            int i11 = w0.f39037a;
+            int i11 = w0.f39038a;
             if (i11 >= 31) {
                 i10.i(26, 27);
             }
@@ -71,16 +71,16 @@ public final class a {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final android.media.AudioAttributes f12815a = new AudioAttributes.Builder().setUsage(1).setContentType(3).setFlags(0).build();
+        private static final android.media.AudioAttributes f12816a = new AudioAttributes.Builder().setUsage(1).setContentType(3).setFlags(0).build();
 
         public static qi.s a() {
             s.a k10 = qi.s.k();
-            t0 s10 = a.f12812e.keySet().s();
+            t0 s10 = a.f12813e.keySet().s();
             while (s10.hasNext()) {
                 Integer num = (Integer) s10.next();
                 int intValue = num.intValue();
-                if (w0.f39037a >= 34 || intValue != 30) {
-                    if (AudioTrack.isDirectPlaybackSupported(new AudioFormat.Builder().setChannelMask(12).setEncoding(intValue).setSampleRate(48000).build(), f12815a)) {
+                if (w0.f39038a >= 34 || intValue != 30) {
+                    if (AudioTrack.isDirectPlaybackSupported(new AudioFormat.Builder().setChannelMask(12).setEncoding(intValue).setSampleRate(48000).build(), f12816a)) {
                         k10.a(num);
                     }
                 }
@@ -91,7 +91,7 @@ public final class a {
 
         public static int b(int i10, int i11) {
             for (int i12 = 10; i12 > 0; i12--) {
-                if (AudioTrack.isDirectPlaybackSupported(new AudioFormat.Builder().setEncoding(i10).setSampleRate(i11).setChannelMask(w0.H(i12)).build(), f12815a)) {
+                if (AudioTrack.isDirectPlaybackSupported(new AudioFormat.Builder().setEncoding(i10).setSampleRate(i11).setChannelMask(w0.H(i12)).build(), f12816a)) {
                     return i12;
                 }
             }
@@ -102,17 +102,17 @@ public final class a {
     public a(int[] iArr, int i10) {
         if (iArr != null) {
             int[] copyOf = Arrays.copyOf(iArr, iArr.length);
-            this.f12813a = copyOf;
+            this.f12814a = copyOf;
             Arrays.sort(copyOf);
         } else {
-            this.f12813a = new int[0];
+            this.f12814a = new int[0];
         }
-        this.f12814b = i10;
+        this.f12815b = i10;
     }
 
     private static boolean b() {
-        if (w0.f39037a >= 17) {
-            String str = w0.f39039c;
+        if (w0.f39038a >= 17) {
+            String str = w0.f39040c;
             if ("Amazon".equals(str) || "Xiaomi".equals(str)) {
                 return true;
             }
@@ -127,13 +127,13 @@ public final class a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static a d(Context context, Intent intent) {
-        int i10 = w0.f39037a;
+        int i10 = w0.f39038a;
         if (i10 >= 23 && C0162a.b(context)) {
-            return f12810c;
+            return f12811c;
         }
         u.a aVar = new u.a();
         if (b() && Settings.Global.getInt(context.getContentResolver(), "external_surround_sound_enabled", 0) == 1) {
-            aVar.j(f12811d);
+            aVar.j(f12812d);
         }
         if (i10 >= 29 && (w0.H0(context) || w0.C0(context))) {
             aVar.j(b.a());
@@ -149,12 +149,12 @@ public final class a {
             if (!l10.isEmpty()) {
                 return new a(si.e.l(l10), 10);
             }
-            return f12810c;
+            return f12811c;
         }
     }
 
     private static int e(int i10) {
-        int i11 = w0.f39037a;
+        int i11 = w0.f39038a;
         if (i11 <= 28) {
             if (i10 == 7) {
                 i10 = 8;
@@ -162,7 +162,7 @@ public final class a {
                 i10 = 6;
             }
         }
-        if (i11 <= 26 && "fugu".equals(w0.f39038b) && i10 == 1) {
+        if (i11 <= 26 && "fugu".equals(w0.f39039b) && i10 == 1) {
             i10 = 2;
         }
         return w0.H(i10);
@@ -177,10 +177,10 @@ public final class a {
     }
 
     private static int h(int i10, int i11) {
-        if (w0.f39037a >= 29) {
+        if (w0.f39038a >= 29) {
             return b.b(i10, i11);
         }
-        return ((Integer) oe.a.e((Integer) f12812e.getOrDefault(Integer.valueOf(i10), 0))).intValue();
+        return ((Integer) oe.a.e((Integer) f12813e.getOrDefault(Integer.valueOf(i10), 0))).intValue();
     }
 
     public boolean equals(Object obj) {
@@ -191,15 +191,15 @@ public final class a {
             return false;
         }
         a aVar = (a) obj;
-        if (Arrays.equals(this.f12813a, aVar.f12813a) && this.f12814b == aVar.f12814b) {
+        if (Arrays.equals(this.f12814a, aVar.f12814a) && this.f12815b == aVar.f12815b) {
             return true;
         }
         return false;
     }
 
     public Pair f(Format format) {
-        int f10 = c0.f((String) oe.a.e(format.f12304w), format.f12301t);
-        if (!f12812e.containsKey(Integer.valueOf(f10))) {
+        int f10 = c0.f((String) oe.a.e(format.f12305w), format.f12302t);
+        if (!f12813e.containsKey(Integer.valueOf(f10))) {
             return null;
         }
         if (f10 == 18 && !j(18)) {
@@ -212,11 +212,11 @@ public final class a {
         }
         int i10 = format.J;
         if (i10 != -1 && f10 != 18) {
-            if (format.f12304w.equals("audio/vnd.dts.uhd;profile=p2")) {
+            if (format.f12305w.equals("audio/vnd.dts.uhd;profile=p2")) {
                 if (i10 > 10) {
                     return null;
                 }
-            } else if (i10 > this.f12814b) {
+            } else if (i10 > this.f12815b) {
                 return null;
             }
         } else {
@@ -234,7 +234,7 @@ public final class a {
     }
 
     public int hashCode() {
-        return this.f12814b + (Arrays.hashCode(this.f12813a) * 31);
+        return this.f12815b + (Arrays.hashCode(this.f12814a) * 31);
     }
 
     public boolean i(Format format) {
@@ -245,13 +245,13 @@ public final class a {
     }
 
     public boolean j(int i10) {
-        if (Arrays.binarySearch(this.f12813a, i10) >= 0) {
+        if (Arrays.binarySearch(this.f12814a, i10) >= 0) {
             return true;
         }
         return false;
     }
 
     public String toString() {
-        return "AudioCapabilities[maxChannelCount=" + this.f12814b + ", supportedEncodings=" + Arrays.toString(this.f12813a) + "]";
+        return "AudioCapabilities[maxChannelCount=" + this.f12815b + ", supportedEncodings=" + Arrays.toString(this.f12814a) + "]";
     }
 }

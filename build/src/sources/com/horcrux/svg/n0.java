@@ -9,53 +9,53 @@ abstract class n0 {
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f17865a;
+        static final /* synthetic */ int[] f17866a;
 
         static {
             int[] iArr = new int[SVGLength.UnitType.values().length];
-            f17865a = iArr;
+            f17866a = iArr;
             try {
                 iArr[SVGLength.UnitType.NUMBER.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f17865a[SVGLength.UnitType.PX.ordinal()] = 2;
+                f17866a[SVGLength.UnitType.PX.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f17865a[SVGLength.UnitType.PERCENTAGE.ordinal()] = 3;
+                f17866a[SVGLength.UnitType.PERCENTAGE.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f17865a[SVGLength.UnitType.EMS.ordinal()] = 4;
+                f17866a[SVGLength.UnitType.EMS.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f17865a[SVGLength.UnitType.EXS.ordinal()] = 5;
+                f17866a[SVGLength.UnitType.EXS.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f17865a[SVGLength.UnitType.CM.ordinal()] = 6;
+                f17866a[SVGLength.UnitType.CM.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f17865a[SVGLength.UnitType.MM.ordinal()] = 7;
+                f17866a[SVGLength.UnitType.MM.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f17865a[SVGLength.UnitType.IN.ordinal()] = 8;
+                f17866a[SVGLength.UnitType.IN.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f17865a[SVGLength.UnitType.PT.ordinal()] = 9;
+                f17866a[SVGLength.UnitType.PT.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f17865a[SVGLength.UnitType.PC.ordinal()] = 10;
+                f17866a[SVGLength.UnitType.PC.ordinal()] = 10;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                f17865a[SVGLength.UnitType.UNKNOWN.ordinal()] = 11;
+                f17866a[SVGLength.UnitType.UNKNOWN.ordinal()] = 11;
             } catch (NoSuchFieldError unused11) {
             }
         }
@@ -68,9 +68,9 @@ abstract class n0 {
         if (sVGLength == null) {
             return d11;
         }
-        SVGLength.UnitType unitType = sVGLength.f17604b;
-        double d15 = sVGLength.f17603a;
-        switch (a.f17865a[unitType.ordinal()]) {
+        SVGLength.UnitType unitType = sVGLength.f17605b;
+        double d15 = sVGLength.f17604a;
+        switch (a.f17866a[unitType.ordinal()]) {
             case 1:
             case 2:
                 d13 = 1.0d;

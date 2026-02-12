@@ -20,39 +20,39 @@ public abstract class d {
         int i12;
         int i13;
         int i14;
-        float min = Math.min(f(context) + f10, aVar.f15502f);
+        float min = Math.min(f(context) + f10, aVar.f15503f);
         float f13 = min / 2.0f;
         float f14 = 0.0f - f13;
-        float b10 = b(0.0f, aVar.f15498b, aVar.f15499c);
-        float j10 = j(0.0f, a(b10, aVar.f15498b, (int) Math.floor(aVar.f15499c / 2.0f)), aVar.f15498b, aVar.f15499c);
-        float b11 = b(j10, aVar.f15501e, aVar.f15500d);
-        float j11 = j(j10, a(b11, aVar.f15501e, (int) Math.floor(aVar.f15500d / 2.0f)), aVar.f15501e, aVar.f15500d);
-        float b12 = b(j11, aVar.f15502f, aVar.f15503g);
-        float j12 = j(j11, a(b12, aVar.f15502f, aVar.f15503g), aVar.f15502f, aVar.f15503g);
-        float b13 = b(j12, aVar.f15501e, aVar.f15500d);
-        float b14 = b(j(j12, a(b13, aVar.f15501e, (int) Math.ceil(aVar.f15500d / 2.0f)), aVar.f15501e, aVar.f15500d), aVar.f15498b, aVar.f15499c);
+        float b10 = b(0.0f, aVar.f15499b, aVar.f15500c);
+        float j10 = j(0.0f, a(b10, aVar.f15499b, (int) Math.floor(aVar.f15500c / 2.0f)), aVar.f15499b, aVar.f15500c);
+        float b11 = b(j10, aVar.f15502e, aVar.f15501d);
+        float j11 = j(j10, a(b11, aVar.f15502e, (int) Math.floor(aVar.f15501d / 2.0f)), aVar.f15502e, aVar.f15501d);
+        float b12 = b(j11, aVar.f15503f, aVar.f15504g);
+        float j12 = j(j11, a(b12, aVar.f15503f, aVar.f15504g), aVar.f15503f, aVar.f15504g);
+        float b13 = b(j12, aVar.f15502e, aVar.f15501d);
+        float b14 = b(j(j12, a(b13, aVar.f15502e, (int) Math.ceil(aVar.f15501d / 2.0f)), aVar.f15502e, aVar.f15501d), aVar.f15499b, aVar.f15500c);
         float f15 = i10 + f13;
-        float b15 = c.b(min, aVar.f15502f, f10);
-        float b16 = c.b(aVar.f15498b, aVar.f15502f, f10);
-        float b17 = c.b(aVar.f15501e, aVar.f15502f, f10);
-        e.b a10 = new e.b(aVar.f15502f, i10).a(f14, b15, min);
-        if (aVar.f15499c > 0) {
+        float b15 = c.b(min, aVar.f15503f, f10);
+        float b16 = c.b(aVar.f15499b, aVar.f15503f, f10);
+        float b17 = c.b(aVar.f15502e, aVar.f15503f, f10);
+        e.b a10 = new e.b(aVar.f15503f, i10).a(f14, b15, min);
+        if (aVar.f15500c > 0) {
             f11 = 2.0f;
             f12 = b15;
-            a10.g(b10, b16, aVar.f15498b, (int) Math.floor(i11 / 2.0f));
+            a10.g(b10, b16, aVar.f15499b, (int) Math.floor(i11 / 2.0f));
         } else {
             f11 = 2.0f;
             f12 = b15;
         }
-        if (aVar.f15500d > 0) {
-            a10.g(b11, b17, aVar.f15501e, (int) Math.floor(i12 / f11));
+        if (aVar.f15501d > 0) {
+            a10.g(b11, b17, aVar.f15502e, (int) Math.floor(i12 / f11));
         }
-        a10.h(b12, 0.0f, aVar.f15502f, aVar.f15503g, true);
-        if (aVar.f15500d > 0) {
-            a10.g(b13, b17, aVar.f15501e, (int) Math.ceil(i13 / f11));
+        a10.h(b12, 0.0f, aVar.f15503f, aVar.f15504g, true);
+        if (aVar.f15501d > 0) {
+            a10.g(b13, b17, aVar.f15502e, (int) Math.ceil(i13 / f11));
         }
-        if (aVar.f15499c > 0) {
-            a10.g(b14, b16, aVar.f15498b, (int) Math.ceil(i14 / f11));
+        if (aVar.f15500c > 0) {
+            a10.g(b14, b16, aVar.f15499b, (int) Math.ceil(i14 / f11));
         }
         a10.a(f15, f12, min);
         return a10.i();
@@ -67,24 +67,24 @@ public abstract class d {
     }
 
     static e e(Context context, float f10, int i10, a aVar) {
-        float min = Math.min(f(context) + f10, aVar.f15502f);
+        float min = Math.min(f(context) + f10, aVar.f15503f);
         float f11 = min / 2.0f;
         float f12 = 0.0f - f11;
-        float b10 = b(0.0f, aVar.f15502f, aVar.f15503g);
-        float j10 = j(0.0f, a(b10, aVar.f15502f, aVar.f15503g), aVar.f15502f, aVar.f15503g);
-        float b11 = b(j10, aVar.f15501e, aVar.f15500d);
-        float b12 = b(j(j10, b11, aVar.f15501e, aVar.f15500d), aVar.f15498b, aVar.f15499c);
+        float b10 = b(0.0f, aVar.f15503f, aVar.f15504g);
+        float j10 = j(0.0f, a(b10, aVar.f15503f, aVar.f15504g), aVar.f15503f, aVar.f15504g);
+        float b11 = b(j10, aVar.f15502e, aVar.f15501d);
+        float b12 = b(j(j10, b11, aVar.f15502e, aVar.f15501d), aVar.f15499b, aVar.f15500c);
         float f13 = i10 + f11;
-        float b13 = c.b(min, aVar.f15502f, f10);
-        float b14 = c.b(aVar.f15498b, aVar.f15502f, f10);
-        float b15 = c.b(aVar.f15501e, aVar.f15502f, f10);
-        e.b h10 = new e.b(aVar.f15502f, i10).a(f12, b13, min).h(b10, 0.0f, aVar.f15502f, aVar.f15503g, true);
-        if (aVar.f15500d > 0) {
-            h10.b(b11, b15, aVar.f15501e);
+        float b13 = c.b(min, aVar.f15503f, f10);
+        float b14 = c.b(aVar.f15499b, aVar.f15503f, f10);
+        float b15 = c.b(aVar.f15502e, aVar.f15503f, f10);
+        e.b h10 = new e.b(aVar.f15503f, i10).a(f12, b13, min).h(b10, 0.0f, aVar.f15503f, aVar.f15504g, true);
+        if (aVar.f15501d > 0) {
+            h10.b(b11, b15, aVar.f15502e);
         }
-        int i11 = aVar.f15499c;
+        int i11 = aVar.f15500c;
         if (i11 > 0) {
-            h10.g(b12, b14, aVar.f15498b, i11);
+            h10.g(b12, b14, aVar.f15499b, i11);
         }
         h10.a(f13, b13, min);
         return h10.i();

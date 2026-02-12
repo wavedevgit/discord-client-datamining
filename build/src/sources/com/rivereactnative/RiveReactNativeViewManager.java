@@ -36,7 +36,7 @@ public final class RiveReactNativeViewManager extends SimpleViewManager<y> {
     public final void setAlignment(@NotNull y view, @NotNull String alignment) {
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(alignment, "alignment");
-        view.setAlignment(c.f18485e.a(alignment));
+        view.setAlignment(c.f18486e.a(alignment));
     }
 
     @ReactProp(name = "animationName")
@@ -69,7 +69,7 @@ public final class RiveReactNativeViewManager extends SimpleViewManager<y> {
     public final void setFit(@NotNull y view, @NotNull String fit) {
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(fit, "fit");
-        view.setFit(e.f18507e.a(fit));
+        view.setFit(e.f18508e.a(fit));
     }
 
     @ReactProp(name = "isUserHandlingErrors")
@@ -287,7 +287,7 @@ public final class RiveReactNativeViewManager extends SimpleViewManager<y> {
                     Intrinsics.checkNotNull(string25);
                     String string26 = readableArray.getString(2);
                     Intrinsics.checkNotNull(string26);
-                    view.g0(string24, f.f18520e.b(string25), d.f18499e.a(string26), readableArray.getBoolean(3));
+                    view.g0(string24, f.f18521e.b(string25), d.f18500e.a(string26), readableArray.getBoolean(3));
                     return;
                 }
                 return;

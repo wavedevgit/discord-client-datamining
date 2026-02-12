@@ -6,17 +6,17 @@ import com.google.android.gms.common.api.Status;
 public final class y0 extends b1 {
 
     /* renamed from: b  reason: collision with root package name */
-    protected final com.google.android.gms.common.api.internal.a f25687b;
+    protected final com.google.android.gms.common.api.internal.a f25688b;
 
     public y0(int i10, com.google.android.gms.common.api.internal.a aVar) {
         super(i10);
-        this.f25687b = (com.google.android.gms.common.api.internal.a) hf.q.m(aVar, "Null methods are not runnable.");
+        this.f25688b = (com.google.android.gms.common.api.internal.a) hf.q.m(aVar, "Null methods are not runnable.");
     }
 
     @Override // gf.b1
     public final void a(Status status) {
         try {
-            this.f25687b.h(status);
+            this.f25688b.h(status);
         } catch (IllegalStateException e10) {
             Log.w("ApiCallRunner", "Exception reporting failure", e10);
         }
@@ -27,7 +27,7 @@ public final class y0 extends b1 {
         String simpleName = exc.getClass().getSimpleName();
         String localizedMessage = exc.getLocalizedMessage();
         try {
-            this.f25687b.h(new Status(10, simpleName + ": " + localizedMessage));
+            this.f25688b.h(new Status(10, simpleName + ": " + localizedMessage));
         } catch (IllegalStateException e10) {
             Log.w("ApiCallRunner", "Exception reporting failure", e10);
         }
@@ -36,7 +36,7 @@ public final class y0 extends b1 {
     @Override // gf.b1
     public final void c(e0 e0Var) {
         try {
-            this.f25687b.f(e0Var.v());
+            this.f25688b.f(e0Var.v());
         } catch (RuntimeException e10) {
             b(e10);
         }
@@ -44,6 +44,6 @@ public final class y0 extends b1 {
 
     @Override // gf.b1
     public final void d(v vVar, boolean z10) {
-        vVar.c(this.f25687b, z10);
+        vVar.c(this.f25688b, z10);
     }
 }

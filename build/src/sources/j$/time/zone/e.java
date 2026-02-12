@@ -16,18 +16,18 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public final class e {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final CopyOnWriteArrayList f30646b;
+    public static final CopyOnWriteArrayList f30647b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final ConcurrentMap f30647c;
+    public static final ConcurrentMap f30648c;
 
     /* renamed from: a  reason: collision with root package name */
-    public final Set f30648a;
+    public final Set f30649a;
 
     static {
         CopyOnWriteArrayList copyOnWriteArrayList = new CopyOnWriteArrayList();
-        f30646b = copyOnWriteArrayList;
-        f30647c = new ConcurrentHashMap(IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, 0.75f, 2);
+        f30647b = copyOnWriteArrayList;
+        f30648c = new ConcurrentHashMap(IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, 0.75f, 2);
         ArrayList arrayList = new ArrayList();
         AccessController.doPrivileged(new d(arrayList));
         copyOnWriteArrayList.addAll(arrayList);
@@ -35,14 +35,14 @@ public final class e {
 
     public static c a(String str) {
         Objects.requireNonNull(str, "zoneId");
-        ConcurrentHashMap concurrentHashMap = (ConcurrentHashMap) f30647c;
+        ConcurrentHashMap concurrentHashMap = (ConcurrentHashMap) f30648c;
         e eVar = (e) concurrentHashMap.get(str);
         if (eVar == null) {
             if (concurrentHashMap.isEmpty()) {
                 throw new DateTimeException("No time-zone data files registered");
             }
             throw new DateTimeException("Unknown time-zone ID: ".concat(str));
-        } else if (eVar.f30648a.contains(str)) {
+        } else if (eVar.f30649a.contains(str)) {
             return new c(TimeZone.getTimeZone(str));
         } else {
             throw new DateTimeException("Not a built-in time zone: ".concat(str));
@@ -51,13 +51,13 @@ public final class e {
 
     public static void b(e eVar) {
         Objects.requireNonNull(eVar, "provider");
-        for (String str : eVar.f30648a) {
+        for (String str : eVar.f30649a) {
             Objects.requireNonNull(str, "zoneId");
-            if (((e) ((ConcurrentHashMap) f30647c).putIfAbsent(str, eVar)) != null) {
+            if (((e) ((ConcurrentHashMap) f30648c).putIfAbsent(str, eVar)) != null) {
                 throw new DateTimeException("Unable to register zone as one already registered with that ID: " + str + ", currently loading from provider: " + eVar);
             }
         }
-        f30646b.add(eVar);
+        f30647b.add(eVar);
     }
 
     public e() {
@@ -65,6 +65,6 @@ public final class e {
         for (String str : TimeZone.getAvailableIDs()) {
             linkedHashSet.add(str);
         }
-        this.f30648a = Collections.unmodifiableSet(linkedHashSet);
+        this.f30649a = Collections.unmodifiableSet(linkedHashSet);
     }
 }

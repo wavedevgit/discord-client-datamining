@@ -27,28 +27,28 @@ import uq.f0;
 public final class n extends RecyclerView.Adapter {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f49871a;
+    private final List f49872a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final InputSelectBoxComponentStyle f49872b;
+    private final InputSelectBoxComponentStyle f49873b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f49873c;
+    private final boolean f49874c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Function1 f49874d;
+    private final Function1 f49875d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f49875e;
+    private String f49876e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final LayoutInflater f49876f;
+    private final LayoutInflater f49877f;
 
     /* renamed from: g  reason: collision with root package name */
-    private Set f49877g;
+    private Set f49878g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final androidx.recyclerview.widget.c f49878h;
+    private final androidx.recyclerview.widget.c f49879h;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private static final class a extends e.f {
@@ -74,12 +74,12 @@ public final class n extends RecyclerView.Adapter {
         Intrinsics.checkNotNullParameter(options, "options");
         Intrinsics.checkNotNullParameter(initialSelectedOptions, "initialSelectedOptions");
         Intrinsics.checkNotNullParameter(onClick, "onClick");
-        this.f49871a = options;
-        this.f49872b = inputSelectBoxComponentStyle;
-        this.f49873c = z10;
-        this.f49874d = onClick;
-        this.f49876f = LayoutInflater.from(context);
-        this.f49878h = new androidx.recyclerview.widget.c(this, new a());
+        this.f49872a = options;
+        this.f49873b = inputSelectBoxComponentStyle;
+        this.f49874c = z10;
+        this.f49875d = onClick;
+        this.f49877f = LayoutInflater.from(context);
+        this.f49879h = new androidx.recyclerview.widget.c(this, new a());
         List<b4> list = options;
         ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
         for (b4 b4Var : list) {
@@ -92,7 +92,7 @@ public final class n extends RecyclerView.Adapter {
                 arrayList2.add(obj);
             }
         }
-        this.f49877g = CollectionsKt.k1(arrayList2);
+        this.f49878g = CollectionsKt.k1(arrayList2);
         h();
     }
 
@@ -107,78 +107,78 @@ public final class n extends RecyclerView.Adapter {
     }
 
     private final void f(int i10) {
-        if (!this.f49873c) {
-            this.f49877g.clear();
+        if (!this.f49874c) {
+            this.f49878g.clear();
         }
-        b4 b4Var = (b4) this.f49878h.a().get(i10);
-        if (this.f49877g.contains(b4Var)) {
-            this.f49877g.remove(b4Var);
+        b4 b4Var = (b4) this.f49879h.a().get(i10);
+        if (this.f49878g.contains(b4Var)) {
+            this.f49878g.remove(b4Var);
         } else {
-            Set set = this.f49877g;
+            Set set = this.f49878g;
             Intrinsics.checkNotNull(b4Var);
             set.add(b4Var);
         }
         notifyItemChanged(i10);
-        Function1 function1 = this.f49874d;
+        Function1 function1 = this.f49875d;
         Intrinsics.checkNotNull(b4Var);
         function1.invoke(b4Var);
     }
 
     public final List c() {
-        return CollectionsKt.h1(this.f49877g);
+        return CollectionsKt.h1(this.f49878g);
     }
 
     public final void g(String str) {
-        this.f49875e = str;
+        this.f49876e = str;
         h();
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter
     public int getItemCount() {
-        return this.f49878h.a().size();
+        return this.f49879h.a().size();
     }
 
     public final void h() {
         List list;
-        String str = this.f49875e;
+        String str = this.f49876e;
         if (str != null && !StringsKt.k0(str)) {
             list = new ArrayList();
-            for (Object obj : this.f49871a) {
+            for (Object obj : this.f49872a) {
                 if (StringsKt.T(((b4) obj).getText(), str, true)) {
                     list.add(obj);
                 }
             }
         } else {
-            list = this.f49871a;
+            list = this.f49872a;
         }
-        this.f49878h.d(list);
+        this.f49879h.d(list);
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter
     public void onBindViewHolder(final RecyclerView.ViewHolder holder, int i10) {
         Integer focusedBackgroundColorValue;
         Intrinsics.checkNotNullParameter(holder, "holder");
-        b4 b4Var = (b4) this.f49878h.a().get(i10);
+        b4 b4Var = (b4) this.f49879h.a().get(i10);
         q qVar = (q) c0.a(holder);
-        qVar.f48281c.setText(b4Var.getText());
+        qVar.f48282c.setText(b4Var.getText());
         qVar.getRoot().setOnClickListener(new View.OnClickListener() { // from class: tq.l
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 n.d(n.this, holder, view);
             }
         });
-        qVar.f48280b.setOnClickListener(new View.OnClickListener() { // from class: tq.m
+        qVar.f48281b.setOnClickListener(new View.OnClickListener() { // from class: tq.m
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 n.e(n.this, holder, view);
             }
         });
-        boolean contains = this.f49877g.contains(b4Var);
-        qVar.f48280b.setChecked(contains);
-        InputSelectBoxComponentStyle inputSelectBoxComponentStyle = this.f49872b;
+        boolean contains = this.f49878g.contains(b4Var);
+        qVar.f48281b.setChecked(contains);
+        InputSelectBoxComponentStyle inputSelectBoxComponentStyle = this.f49873b;
         if (inputSelectBoxComponentStyle != null && (focusedBackgroundColorValue = inputSelectBoxComponentStyle.getFocusedBackgroundColorValue()) != null) {
             int intValue = focusedBackgroundColorValue.intValue();
-            if (!this.f49873c) {
+            if (!this.f49874c) {
                 if (contains) {
                     qVar.getRoot().setBackgroundColor(intValue);
                     return;
@@ -193,24 +193,24 @@ public final class n extends RecyclerView.Adapter {
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int i10) {
         Intrinsics.checkNotNullParameter(parent, "parent");
-        q c10 = q.c(this.f49876f, parent, false);
+        q c10 = q.c(this.f49877f, parent, false);
         Intrinsics.checkNotNullExpressionValue(c10, "inflate(...)");
         b0 b0Var = new b0(c10);
         ViewBinding binding = b0Var.getBinding();
         Intrinsics.checkNotNullExpressionValue(binding, "<get-binding>(...)");
         q qVar = (q) binding;
-        InputSelectBoxComponentStyle inputSelectBoxComponentStyle = this.f49872b;
+        InputSelectBoxComponentStyle inputSelectBoxComponentStyle = this.f49873b;
         if (inputSelectBoxComponentStyle != null) {
-            TextView label = qVar.f48281c;
+            TextView label = qVar.f48282c;
             Intrinsics.checkNotNullExpressionValue(label, "label");
             f0.n(label, inputSelectBoxComponentStyle.getTextBasedStyle(), null, 2, null);
         }
-        if (this.f49873c) {
-            qVar.f48280b.setVisibility(0);
-            qVar.f48280b.setButtonTintList(ColorStateList.valueOf(qVar.f48281c.getCurrentTextColor()));
+        if (this.f49874c) {
+            qVar.f48281b.setVisibility(0);
+            qVar.f48281b.setButtonTintList(ColorStateList.valueOf(qVar.f48282c.getCurrentTextColor()));
             return b0Var;
         }
-        qVar.f48280b.setVisibility(8);
+        qVar.f48281b.setVisibility(8);
         return b0Var;
     }
 }

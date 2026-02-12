@@ -8,11 +8,11 @@ public final class h implements lr.d {
     private static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final h f50897a = new h();
+        static final h f50898a = new h();
     }
 
     public static h a() {
-        return a.f50897a;
+        return a.f50898a;
     }
 
     public static Set c() {

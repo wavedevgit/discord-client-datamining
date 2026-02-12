@@ -9,26 +9,26 @@ import java.util.concurrent.TimeUnit;
 public class a {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final i f21749c = new i("StreamingFormatChecker", "");
+    private static final i f21750c = new i("StreamingFormatChecker", "");
 
     /* renamed from: a  reason: collision with root package name */
-    private final LinkedList f21750a = new LinkedList();
+    private final LinkedList f21751a = new LinkedList();
 
     /* renamed from: b  reason: collision with root package name */
-    private long f21751b = -1;
+    private long f21752b = -1;
 
     public void a(ck.a aVar) {
         if (aVar.g() == -1) {
             long elapsedRealtime = SystemClock.elapsedRealtime();
-            this.f21750a.add(Long.valueOf(elapsedRealtime));
-            if (this.f21750a.size() > 5) {
-                this.f21750a.removeFirst();
+            this.f21751a.add(Long.valueOf(elapsedRealtime));
+            if (this.f21751a.size() > 5) {
+                this.f21751a.removeFirst();
             }
-            if (this.f21750a.size() == 5 && elapsedRealtime - ((Long) q.l((Long) this.f21750a.peekFirst())).longValue() < 5000) {
-                long j10 = this.f21751b;
+            if (this.f21751a.size() == 5 && elapsedRealtime - ((Long) q.l((Long) this.f21751a.peekFirst())).longValue() < 5000) {
+                long j10 = this.f21752b;
                 if (j10 == -1 || elapsedRealtime - j10 >= TimeUnit.SECONDS.toMillis(5L)) {
-                    this.f21751b = elapsedRealtime;
-                    f21749c.f("StreamingFormatChecker", "ML Kit has detected that you seem to pass camera frames to the detector as a Bitmap object. This is inefficient. Please use YUV_420_888 format for camera2 API or NV21 format for (legacy) camera API and directly pass down the byte array to ML Kit.");
+                    this.f21752b = elapsedRealtime;
+                    f21750c.f("StreamingFormatChecker", "ML Kit has detected that you seem to pass camera frames to the detector as a Bitmap object. This is inefficient. Please use YUV_420_888 format for camera2 API or NV21 format for (legacy) camera API and directly pass down the byte array to ML Kit.");
                 }
             }
         }

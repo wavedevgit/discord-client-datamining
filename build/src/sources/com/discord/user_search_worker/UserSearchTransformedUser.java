@@ -25,7 +25,7 @@ public final class UserSearchTransformedUser {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f10446id;
+    private final String f10447id;
     private final Boolean isBot;
     private final Boolean isFriend;
     @NotNull
@@ -62,7 +62,7 @@ public final class UserSearchTransformedUser {
         @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
         @NotNull
         public SerialDescriptor getDescriptor() {
-            return j.b("UserSearchTransformedUser", e.i.f48368a);
+            return j.b("UserSearchTransformedUser", e.i.f48369a);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:16:0x0071, code lost:
@@ -94,7 +94,7 @@ public final class UserSearchTransformedUser {
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(username, "username");
         Intrinsics.checkNotNullParameter(nicknames, "nicknames");
-        this.f10446id = id2;
+        this.f10447id = id2;
         this.username = username;
         this.isBot = bool;
         this.isFriend = bool2;
@@ -105,7 +105,7 @@ public final class UserSearchTransformedUser {
 
     public static /* synthetic */ UserSearchTransformedUser copy$default(UserSearchTransformedUser userSearchTransformedUser, String str, String str2, Boolean bool, Boolean bool2, String str3, String str4, Map map, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = userSearchTransformedUser.f10446id;
+            str = userSearchTransformedUser.f10447id;
         }
         if ((i10 & 2) != 0) {
             str2 = userSearchTransformedUser.username;
@@ -135,7 +135,7 @@ public final class UserSearchTransformedUser {
 
     @NotNull
     public final String component1() {
-        return this.f10446id;
+        return this.f10447id;
     }
 
     @NotNull
@@ -178,7 +178,7 @@ public final class UserSearchTransformedUser {
         }
         if (obj instanceof UserSearchTransformedUser) {
             UserSearchTransformedUser userSearchTransformedUser = (UserSearchTransformedUser) obj;
-            return Intrinsics.areEqual(this.f10446id, userSearchTransformedUser.f10446id) && Intrinsics.areEqual(this.username, userSearchTransformedUser.username) && Intrinsics.areEqual(this.isBot, userSearchTransformedUser.isBot) && Intrinsics.areEqual(this.isFriend, userSearchTransformedUser.isFriend) && Intrinsics.areEqual(this.friendNickname, userSearchTransformedUser.friendNickname) && Intrinsics.areEqual(this.globalName, userSearchTransformedUser.globalName) && Intrinsics.areEqual(this.nicknames, userSearchTransformedUser.nicknames);
+            return Intrinsics.areEqual(this.f10447id, userSearchTransformedUser.f10447id) && Intrinsics.areEqual(this.username, userSearchTransformedUser.username) && Intrinsics.areEqual(this.isBot, userSearchTransformedUser.isBot) && Intrinsics.areEqual(this.isFriend, userSearchTransformedUser.isFriend) && Intrinsics.areEqual(this.friendNickname, userSearchTransformedUser.friendNickname) && Intrinsics.areEqual(this.globalName, userSearchTransformedUser.globalName) && Intrinsics.areEqual(this.nicknames, userSearchTransformedUser.nicknames);
         }
         return false;
     }
@@ -193,7 +193,7 @@ public final class UserSearchTransformedUser {
 
     @NotNull
     public final String getId() {
-        return this.f10446id;
+        return this.f10447id;
     }
 
     @NotNull
@@ -207,7 +207,7 @@ public final class UserSearchTransformedUser {
     }
 
     public int hashCode() {
-        int hashCode = ((this.f10446id.hashCode() * 31) + this.username.hashCode()) * 31;
+        int hashCode = ((this.f10447id.hashCode() * 31) + this.username.hashCode()) * 31;
         Boolean bool = this.isBot;
         int hashCode2 = (hashCode + (bool == null ? 0 : bool.hashCode())) * 31;
         Boolean bool2 = this.isFriend;
@@ -228,7 +228,7 @@ public final class UserSearchTransformedUser {
 
     @NotNull
     public String toString() {
-        String str = this.f10446id;
+        String str = this.f10447id;
         String str2 = this.username;
         Boolean bool = this.isBot;
         Boolean bool2 = this.isFriend;

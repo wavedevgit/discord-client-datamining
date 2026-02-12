@@ -51,8 +51,8 @@ public /* synthetic */ class PollStyleSet$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        p0 p0Var = p0.f50048a;
-        return new KSerializer[]{a.u(p0Var), p0Var, a.u(p0Var), a.u(p0Var), g0.f49992a, a.u(p0Var), a.u(p0Var), a.u(PollRadioStyle.Serializer.INSTANCE), a.u(p0Var), a.u(p0Var)};
+        p0 p0Var = p0.f50049a;
+        return new KSerializer[]{a.u(p0Var), p0Var, a.u(p0Var), a.u(p0Var), g0.f49993a, a.u(p0Var), a.u(p0Var), a.u(PollRadioStyle.Serializer.INSTANCE), a.u(p0Var), a.u(p0Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -74,7 +74,7 @@ public /* synthetic */ class PollStyleSet$$serializer implements h0 {
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         int i12 = 9;
         if (b10.p()) {
-            p0 p0Var = p0.f50048a;
+            p0 p0Var = p0.f50049a;
             int i13 = b10.i(serialDescriptor, 1);
             float u10 = b10.u(serialDescriptor, 4);
             num = (Integer) b10.n(serialDescriptor, 9, p0Var, null);
@@ -108,7 +108,7 @@ public /* synthetic */ class PollStyleSet$$serializer implements h0 {
                         z10 = false;
                         break;
                     case 0:
-                        num13 = (Integer) b10.n(serialDescriptor, 0, p0.f50048a, num13);
+                        num13 = (Integer) b10.n(serialDescriptor, 0, p0.f50049a, num13);
                         i15 |= 1;
                         i12 = 9;
                         break;
@@ -118,12 +118,12 @@ public /* synthetic */ class PollStyleSet$$serializer implements h0 {
                         i12 = 9;
                         break;
                     case 2:
-                        num14 = (Integer) b10.n(serialDescriptor, 2, p0.f50048a, num14);
+                        num14 = (Integer) b10.n(serialDescriptor, 2, p0.f50049a, num14);
                         i15 |= 4;
                         i12 = 9;
                         break;
                     case 3:
-                        num12 = (Integer) b10.n(serialDescriptor, 3, p0.f50048a, num12);
+                        num12 = (Integer) b10.n(serialDescriptor, 3, p0.f50049a, num12);
                         i15 |= 8;
                         i12 = 9;
                         break;
@@ -133,12 +133,12 @@ public /* synthetic */ class PollStyleSet$$serializer implements h0 {
                         i12 = 9;
                         break;
                     case 5:
-                        num11 = (Integer) b10.n(serialDescriptor, 5, p0.f50048a, num11);
+                        num11 = (Integer) b10.n(serialDescriptor, 5, p0.f50049a, num11);
                         i15 |= 32;
                         i12 = 9;
                         break;
                     case 6:
-                        num10 = (Integer) b10.n(serialDescriptor, 6, p0.f50048a, num10);
+                        num10 = (Integer) b10.n(serialDescriptor, 6, p0.f50049a, num10);
                         i15 |= 64;
                         i12 = 9;
                         break;
@@ -148,11 +148,11 @@ public /* synthetic */ class PollStyleSet$$serializer implements h0 {
                         i12 = 9;
                         continue;
                     case 8:
-                        num9 = (Integer) b10.n(serialDescriptor, 8, p0.f50048a, num9);
+                        num9 = (Integer) b10.n(serialDescriptor, 8, p0.f50049a, num9);
                         i15 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
                         break;
                     case 9:
-                        num8 = (Integer) b10.n(serialDescriptor, i12, p0.f50048a, num8);
+                        num8 = (Integer) b10.n(serialDescriptor, i12, p0.f50049a, num8);
                         i15 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
                         break;
                     default:

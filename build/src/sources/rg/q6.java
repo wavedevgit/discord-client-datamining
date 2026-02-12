@@ -5,7 +5,7 @@ import bj.c;
 final class q6 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final q6 f47085a = new q6();
+    static final q6 f47086a = new q6();
 
     static {
         c.b a10 = bj.c.a("modelType");

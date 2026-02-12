@@ -10,19 +10,19 @@ import n8.i;
 public class e implements Supplier {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f23620a;
+    private final Context f23621a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ImagePipeline f23621b;
+    private final ImagePipeline f23622b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final f f23622c;
+    private final f f23623c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Set f23623d;
+    private final Set f23624d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Set f23624e;
+    private final Set f23625e;
 
     public e(Context context, b bVar) {
         this(context, com.facebook.imagepipeline.core.b.l(), bVar);
@@ -31,7 +31,7 @@ public class e implements Supplier {
     @Override // com.facebook.common.internal.Supplier
     /* renamed from: a */
     public PipelineDraweeControllerBuilder get() {
-        return new PipelineDraweeControllerBuilder(this.f23620a, this.f23622c, this.f23621b, this.f23623d, this.f23624e).N(null);
+        return new PipelineDraweeControllerBuilder(this.f23621a, this.f23623c, this.f23622b, this.f23624d, this.f23625e).N(null);
     }
 
     public e(Context context, com.facebook.imagepipeline.core.b bVar, b bVar2) {
@@ -39,17 +39,17 @@ public class e implements Supplier {
     }
 
     public e(Context context, com.facebook.imagepipeline.core.b bVar, Set set, Set set2, b bVar2) {
-        this.f23620a = context;
+        this.f23621a = context;
         ImagePipeline j10 = bVar.j();
-        this.f23621b = j10;
+        this.f23622b = j10;
         if (bVar2 != null && bVar2.d() != null) {
-            this.f23622c = bVar2.d();
+            this.f23623c = bVar2.d();
         } else {
-            this.f23622c = new f();
+            this.f23623c = new f();
         }
-        this.f23622c.a(context.getResources(), i9.a.b(), bVar.b(context), bVar.q(), i.y(), j10.q(), bVar2 != null ? bVar2.a() : null, bVar2 != null ? bVar2.b() : null);
-        this.f23623d = set;
-        this.f23624e = set2;
+        this.f23623c.a(context.getResources(), i9.a.b(), bVar.b(context), bVar.q(), i.y(), j10.q(), bVar2 != null ? bVar2.a() : null, bVar2 != null ? bVar2.b() : null);
+        this.f23624d = set;
+        this.f23625e = set2;
         if (bVar2 != null) {
             bVar2.c();
         }

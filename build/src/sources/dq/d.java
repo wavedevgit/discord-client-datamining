@@ -11,14 +11,14 @@ import bq.n;
 public final class d implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final View f21856a;
+    private final View f21857a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ProgressBar f21857b;
+    public final ProgressBar f21858b;
 
     private d(View view, ProgressBar progressBar) {
-        this.f21856a = view;
-        this.f21857b = progressBar;
+        this.f21857a = view;
+        this.f21858b = progressBar;
     }
 
     public static d a(View view) {
@@ -40,6 +40,6 @@ public final class d implements ViewBinding {
 
     @Override // androidx.viewbinding.ViewBinding
     public View getRoot() {
-        return this.f21856a;
+        return this.f21857a;
     }
 }

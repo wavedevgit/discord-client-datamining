@@ -16,54 +16,54 @@ import java.util.Set;
 public final class a implements h.e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f18742a;
+    private final List f18743a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f18743b;
+    private final List f18744b;
 
     /* renamed from: com.squareup.moshi.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class C0223a extends h {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ f f18744a;
+        final /* synthetic */ f f18745a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ h f18745b;
+        final /* synthetic */ h f18746b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ w f18746c;
+        final /* synthetic */ w f18747c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ f f18747d;
+        final /* synthetic */ f f18748d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Set f18748e;
+        final /* synthetic */ Set f18749e;
 
         /* renamed from: f  reason: collision with root package name */
-        final /* synthetic */ Type f18749f;
+        final /* synthetic */ Type f18750f;
 
         C0223a(f fVar, h hVar, w wVar, f fVar2, Set set, Type type) {
-            this.f18744a = fVar;
-            this.f18745b = hVar;
-            this.f18746c = wVar;
-            this.f18747d = fVar2;
-            this.f18748e = set;
-            this.f18749f = type;
+            this.f18745a = fVar;
+            this.f18746b = hVar;
+            this.f18747c = wVar;
+            this.f18748d = fVar2;
+            this.f18749e = set;
+            this.f18750f = type;
         }
 
         @Override // com.squareup.moshi.h
         public Object fromJson(m mVar) {
-            f fVar = this.f18747d;
+            f fVar = this.f18748d;
             if (fVar == null) {
-                return this.f18745b.fromJson(mVar);
+                return this.f18746b.fromJson(mVar);
             }
-            if (!fVar.f18767g && mVar.s() == m.c.NULL) {
+            if (!fVar.f18768g && mVar.s() == m.c.NULL) {
                 mVar.m();
                 return null;
             }
             try {
-                return this.f18747d.b(this.f18746c, mVar);
+                return this.f18748d.b(this.f18747c, mVar);
             } catch (InvocationTargetException e10) {
                 Throwable cause = e10.getCause();
                 if (cause instanceof IOException) {
@@ -75,14 +75,14 @@ public final class a implements h.e {
 
         @Override // com.squareup.moshi.h
         public void toJson(t tVar, Object obj) {
-            f fVar = this.f18744a;
+            f fVar = this.f18745a;
             if (fVar == null) {
-                this.f18745b.toJson(tVar, obj);
-            } else if (!fVar.f18767g && obj == null) {
+                this.f18746b.toJson(tVar, obj);
+            } else if (!fVar.f18768g && obj == null) {
                 tVar.Q();
             } else {
                 try {
-                    fVar.e(this.f18746c, tVar, obj);
+                    fVar.e(this.f18747c, tVar, obj);
                 } catch (InvocationTargetException e10) {
                     Throwable cause = e10.getCause();
                     if (cause instanceof IOException) {
@@ -94,7 +94,7 @@ public final class a implements h.e {
         }
 
         public String toString() {
-            return "JsonAdapter" + this.f18748e + "(" + this.f18749f + ")";
+            return "JsonAdapter" + this.f18749e + "(" + this.f18750f + ")";
         }
     }
 
@@ -116,44 +116,44 @@ public final class a implements h.e {
     public class c extends f {
 
         /* renamed from: h  reason: collision with root package name */
-        private h f18751h;
+        private h f18752h;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Type[] f18752i;
+        final /* synthetic */ Type[] f18753i;
 
         /* renamed from: j  reason: collision with root package name */
-        final /* synthetic */ Type f18753j;
+        final /* synthetic */ Type f18754j;
 
         /* renamed from: k  reason: collision with root package name */
-        final /* synthetic */ Set f18754k;
+        final /* synthetic */ Set f18755k;
 
         /* renamed from: l  reason: collision with root package name */
-        final /* synthetic */ Set f18755l;
+        final /* synthetic */ Set f18756l;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(Type type, Set set, Object obj, Method method, int i10, int i11, boolean z10, Type[] typeArr, Type type2, Set set2, Set set3) {
             super(type, set, obj, method, i10, i11, z10);
-            this.f18752i = typeArr;
-            this.f18753j = type2;
-            this.f18754k = set2;
-            this.f18755l = set3;
+            this.f18753i = typeArr;
+            this.f18754j = type2;
+            this.f18755k = set2;
+            this.f18756l = set3;
         }
 
         @Override // com.squareup.moshi.a.f
         public void a(w wVar, h.e eVar) {
             h e10;
             super.a(wVar, eVar);
-            if (a0.d(this.f18752i[0], this.f18753j) && this.f18754k.equals(this.f18755l)) {
-                e10 = wVar.i(eVar, this.f18753j, this.f18755l);
+            if (a0.d(this.f18753i[0], this.f18754j) && this.f18755k.equals(this.f18756l)) {
+                e10 = wVar.i(eVar, this.f18754j, this.f18756l);
             } else {
-                e10 = wVar.e(this.f18753j, this.f18755l);
+                e10 = wVar.e(this.f18754j, this.f18756l);
             }
-            this.f18751h = e10;
+            this.f18752h = e10;
         }
 
         @Override // com.squareup.moshi.a.f
         public void e(w wVar, t tVar, Object obj) {
-            this.f18751h.toJson(tVar, c(obj));
+            this.f18752h.toJson(tVar, c(obj));
         }
     }
 
@@ -175,44 +175,44 @@ public final class a implements h.e {
     public class e extends f {
 
         /* renamed from: h  reason: collision with root package name */
-        h f18756h;
+        h f18757h;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Type[] f18757i;
+        final /* synthetic */ Type[] f18758i;
 
         /* renamed from: j  reason: collision with root package name */
-        final /* synthetic */ Type f18758j;
+        final /* synthetic */ Type f18759j;
 
         /* renamed from: k  reason: collision with root package name */
-        final /* synthetic */ Set f18759k;
+        final /* synthetic */ Set f18760k;
 
         /* renamed from: l  reason: collision with root package name */
-        final /* synthetic */ Set f18760l;
+        final /* synthetic */ Set f18761l;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         e(Type type, Set set, Object obj, Method method, int i10, int i11, boolean z10, Type[] typeArr, Type type2, Set set2, Set set3) {
             super(type, set, obj, method, i10, i11, z10);
-            this.f18757i = typeArr;
-            this.f18758j = type2;
-            this.f18759k = set2;
-            this.f18760l = set3;
+            this.f18758i = typeArr;
+            this.f18759j = type2;
+            this.f18760k = set2;
+            this.f18761l = set3;
         }
 
         @Override // com.squareup.moshi.a.f
         public void a(w wVar, h.e eVar) {
             h e10;
             super.a(wVar, eVar);
-            if (a0.d(this.f18757i[0], this.f18758j) && this.f18759k.equals(this.f18760l)) {
-                e10 = wVar.i(eVar, this.f18757i[0], this.f18759k);
+            if (a0.d(this.f18758i[0], this.f18759j) && this.f18760k.equals(this.f18761l)) {
+                e10 = wVar.i(eVar, this.f18758i[0], this.f18760k);
             } else {
-                e10 = wVar.e(this.f18757i[0], this.f18759k);
+                e10 = wVar.e(this.f18758i[0], this.f18760k);
             }
-            this.f18756h = e10;
+            this.f18757h = e10;
         }
 
         @Override // com.squareup.moshi.a.f
         public Object b(w wVar, m mVar) {
-            return c(this.f18756h.fromJson(mVar));
+            return c(this.f18757h.fromJson(mVar));
         }
     }
 
@@ -221,48 +221,48 @@ public final class a implements h.e {
     public static abstract class f {
 
         /* renamed from: a  reason: collision with root package name */
-        final Type f18761a;
+        final Type f18762a;
 
         /* renamed from: b  reason: collision with root package name */
-        final Set f18762b;
+        final Set f18763b;
 
         /* renamed from: c  reason: collision with root package name */
-        final Object f18763c;
+        final Object f18764c;
 
         /* renamed from: d  reason: collision with root package name */
-        final Method f18764d;
+        final Method f18765d;
 
         /* renamed from: e  reason: collision with root package name */
-        final int f18765e;
+        final int f18766e;
 
         /* renamed from: f  reason: collision with root package name */
-        final h[] f18766f;
+        final h[] f18767f;
 
         /* renamed from: g  reason: collision with root package name */
-        final boolean f18767g;
+        final boolean f18768g;
 
         f(Type type, Set set, Object obj, Method method, int i10, int i11, boolean z10) {
-            this.f18761a = dn.c.a(type);
-            this.f18762b = set;
-            this.f18763c = obj;
-            this.f18764d = method;
-            this.f18765e = i11;
-            this.f18766f = new h[i10 - i11];
-            this.f18767g = z10;
+            this.f18762a = dn.c.a(type);
+            this.f18763b = set;
+            this.f18764c = obj;
+            this.f18765d = method;
+            this.f18766e = i11;
+            this.f18767f = new h[i10 - i11];
+            this.f18768g = z10;
         }
 
         public void a(w wVar, h.e eVar) {
             h e10;
-            if (this.f18766f.length > 0) {
-                Type[] genericParameterTypes = this.f18764d.getGenericParameterTypes();
-                Annotation[][] parameterAnnotations = this.f18764d.getParameterAnnotations();
+            if (this.f18767f.length > 0) {
+                Type[] genericParameterTypes = this.f18765d.getGenericParameterTypes();
+                Annotation[][] parameterAnnotations = this.f18765d.getParameterAnnotations();
                 int length = genericParameterTypes.length;
-                for (int i10 = this.f18765e; i10 < length; i10++) {
+                for (int i10 = this.f18766e; i10 < length; i10++) {
                     Type type = ((ParameterizedType) genericParameterTypes[i10]).getActualTypeArguments()[0];
                     Set l10 = dn.c.l(parameterAnnotations[i10]);
-                    h[] hVarArr = this.f18766f;
-                    int i11 = i10 - this.f18765e;
-                    if (a0.d(this.f18761a, type) && this.f18762b.equals(l10)) {
+                    h[] hVarArr = this.f18767f;
+                    int i11 = i10 - this.f18766e;
+                    if (a0.d(this.f18762a, type) && this.f18763b.equals(l10)) {
                         e10 = wVar.i(eVar, type, l10);
                     } else {
                         e10 = wVar.e(type, l10);
@@ -277,25 +277,25 @@ public final class a implements h.e {
         }
 
         protected Object c(Object obj) {
-            h[] hVarArr = this.f18766f;
+            h[] hVarArr = this.f18767f;
             Object[] objArr = new Object[hVarArr.length + 1];
             objArr[0] = obj;
             System.arraycopy(hVarArr, 0, objArr, 1, hVarArr.length);
             try {
-                return this.f18764d.invoke(this.f18763c, objArr);
+                return this.f18765d.invoke(this.f18764c, objArr);
             } catch (IllegalAccessException unused) {
                 throw new AssertionError();
             }
         }
 
         protected Object d(Object obj, Object obj2) {
-            h[] hVarArr = this.f18766f;
+            h[] hVarArr = this.f18767f;
             Object[] objArr = new Object[hVarArr.length + 2];
             objArr[0] = obj;
             objArr[1] = obj2;
             System.arraycopy(hVarArr, 0, objArr, 2, hVarArr.length);
             try {
-                return this.f18764d.invoke(this.f18763c, objArr);
+                return this.f18765d.invoke(this.f18764c, objArr);
             } catch (IllegalAccessException unused) {
                 throw new AssertionError();
             }
@@ -307,8 +307,8 @@ public final class a implements h.e {
     }
 
     a(List list, List list2) {
-        this.f18742a = list;
-        this.f18743b = list2;
+        this.f18743a = list;
+        this.f18744b = list2;
     }
 
     static f a(Object obj, Method method) {
@@ -333,7 +333,7 @@ public final class a implements h.e {
         int size = list.size();
         for (int i10 = 0; i10 < size; i10++) {
             f fVar = (f) list.get(i10);
-            if (a0.d(fVar.f18761a, type) && fVar.f18762b.equals(set)) {
+            if (a0.d(fVar.f18762a, type) && fVar.f18763b.equals(set)) {
                 return fVar;
             }
         }
@@ -350,18 +350,18 @@ public final class a implements h.e {
             for (Method method : cls.getDeclaredMethods()) {
                 if (method.isAnnotationPresent(z.class)) {
                     f e10 = e(obj, method);
-                    if (b(arrayList, e10.f18761a, e10.f18762b) == null) {
+                    if (b(arrayList, e10.f18762a, e10.f18763b) == null) {
                         arrayList.add(e10);
                     } else {
-                        throw new IllegalArgumentException("Conflicting @ToJson methods:\n    " + b11.f18764d + "\n    " + e10.f18764d);
+                        throw new IllegalArgumentException("Conflicting @ToJson methods:\n    " + b11.f18765d + "\n    " + e10.f18765d);
                     }
                 }
                 if (method.isAnnotationPresent(com.squareup.moshi.f.class)) {
                     f a10 = a(obj, method);
-                    if (b(arrayList2, a10.f18761a, a10.f18762b) == null) {
+                    if (b(arrayList2, a10.f18762a, a10.f18763b) == null) {
                         arrayList2.add(a10);
                     } else {
-                        throw new IllegalArgumentException("Conflicting @FromJson methods:\n    " + b10.f18764d + "\n    " + a10.f18764d);
+                        throw new IllegalArgumentException("Conflicting @FromJson methods:\n    " + b10.f18765d + "\n    " + a10.f18765d);
                     }
                 }
             }
@@ -405,8 +405,8 @@ public final class a implements h.e {
     @Override // com.squareup.moshi.h.e
     public h create(Type type, Set set, w wVar) {
         String str;
-        f b10 = b(this.f18742a, type, set);
-        f b11 = b(this.f18743b, type, set);
+        f b10 = b(this.f18743a, type, set);
+        f b11 = b(this.f18744b, type, set);
         h hVar = null;
         if (b10 == null && b11 == null) {
             return null;

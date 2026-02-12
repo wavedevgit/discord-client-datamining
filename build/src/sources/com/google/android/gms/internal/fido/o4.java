@@ -5,31 +5,31 @@ import java.util.NoSuchElementException;
 final class o4 extends p4 {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f14752d = 0;
+    private int f14753d = 0;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f14753e;
+    private final int f14754e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ v4 f14754i;
+    final /* synthetic */ v4 f14755i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o4(v4 v4Var) {
-        this.f14754i = v4Var;
-        this.f14753e = v4Var.d();
+        this.f14755i = v4Var;
+        this.f14754e = v4Var.d();
     }
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        return this.f14752d < this.f14753e;
+        return this.f14753d < this.f14754e;
     }
 
     @Override // com.google.android.gms.internal.fido.r4
     public final byte zza() {
-        int i10 = this.f14752d;
-        if (i10 < this.f14753e) {
-            this.f14752d = i10 + 1;
-            return this.f14754i.c(i10);
+        int i10 = this.f14753d;
+        if (i10 < this.f14754e) {
+            this.f14753d = i10 + 1;
+            return this.f14755i.c(i10);
         }
         throw new NoSuchElementException();
     }

@@ -21,43 +21,43 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class a0 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Double f29616d;
+    private final Double f29617d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Double f29617e;
+    private final Double f29618e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final x f29618i;
+    private final x f29619i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final j8 f29619o;
+    private final j8 f29620o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final j8 f29620p;
+    private final j8 f29621p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final String f29621q;
+    private final String f29622q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final String f29622r;
+    private final String f29623r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final l8 f29623s;
+    private final l8 f29624s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final String f29624t;
+    private final String f29625t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final Map f29625u;
+    private final Map f29626u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Map f29626v;
+    private Map f29627v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final Map f29627w;
+    private final Map f29628w;
 
     /* renamed from: x  reason: collision with root package name */
-    private Map f29628x;
+    private Map f29629x;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -323,72 +323,72 @@ public final class a0 implements w1 {
     }
 
     public Map b() {
-        return this.f29626v;
+        return this.f29627v;
     }
 
     public Map c() {
-        return this.f29627w;
+        return this.f29628w;
     }
 
     public String d() {
-        return this.f29621q;
+        return this.f29622q;
     }
 
     public j8 e() {
-        return this.f29619o;
+        return this.f29620o;
     }
 
     public Double f() {
-        return this.f29616d;
+        return this.f29617d;
     }
 
     public Double g() {
-        return this.f29617e;
+        return this.f29618e;
     }
 
     public void h(Map map) {
-        this.f29626v = map;
+        this.f29627v = map;
     }
 
     public void i(Map map) {
-        this.f29628x = map;
+        this.f29629x = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e("start_timestamp").j(iLogger, a(this.f29616d));
-        if (this.f29617e != null) {
-            f3Var.e("timestamp").j(iLogger, a(this.f29617e));
+        f3Var.e("start_timestamp").j(iLogger, a(this.f29617d));
+        if (this.f29618e != null) {
+            f3Var.e("timestamp").j(iLogger, a(this.f29618e));
         }
-        f3Var.e("trace_id").j(iLogger, this.f29618i);
-        f3Var.e("span_id").j(iLogger, this.f29619o);
-        if (this.f29620p != null) {
-            f3Var.e("parent_span_id").j(iLogger, this.f29620p);
+        f3Var.e("trace_id").j(iLogger, this.f29619i);
+        f3Var.e("span_id").j(iLogger, this.f29620o);
+        if (this.f29621p != null) {
+            f3Var.e("parent_span_id").j(iLogger, this.f29621p);
         }
-        f3Var.e("op").f(this.f29621q);
-        if (this.f29622r != null) {
-            f3Var.e("description").f(this.f29622r);
+        f3Var.e("op").f(this.f29622q);
+        if (this.f29623r != null) {
+            f3Var.e("description").f(this.f29623r);
         }
-        if (this.f29623s != null) {
-            f3Var.e("status").j(iLogger, this.f29623s);
+        if (this.f29624s != null) {
+            f3Var.e("status").j(iLogger, this.f29624s);
         }
-        if (this.f29624t != null) {
-            f3Var.e("origin").j(iLogger, this.f29624t);
+        if (this.f29625t != null) {
+            f3Var.e("origin").j(iLogger, this.f29625t);
         }
-        if (!this.f29625u.isEmpty()) {
-            f3Var.e("tags").j(iLogger, this.f29625u);
+        if (!this.f29626u.isEmpty()) {
+            f3Var.e("tags").j(iLogger, this.f29626u);
         }
-        if (this.f29626v != null) {
-            f3Var.e("data").j(iLogger, this.f29626v);
+        if (this.f29627v != null) {
+            f3Var.e("data").j(iLogger, this.f29627v);
         }
-        if (!this.f29627w.isEmpty()) {
-            f3Var.e("measurements").j(iLogger, this.f29627w);
+        if (!this.f29628w.isEmpty()) {
+            f3Var.e("measurements").j(iLogger, this.f29628w);
         }
-        Map map = this.f29628x;
+        Map map = this.f29629x;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29628x.get(str);
+                Object obj = this.f29629x.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -398,44 +398,44 @@ public final class a0 implements w1 {
 
     public a0(d8 d8Var, Map map) {
         io.sentry.util.y.c(d8Var, "span is required");
-        this.f29622r = d8Var.getDescription();
-        this.f29621q = d8Var.x();
-        this.f29619o = d8Var.C();
-        this.f29620p = d8Var.z();
-        this.f29618i = d8Var.E();
-        this.f29623s = d8Var.a();
-        this.f29624t = d8Var.q().g();
+        this.f29623r = d8Var.getDescription();
+        this.f29622q = d8Var.x();
+        this.f29620o = d8Var.C();
+        this.f29621p = d8Var.z();
+        this.f29619i = d8Var.E();
+        this.f29624s = d8Var.a();
+        this.f29625t = d8Var.q().g();
         Map b10 = io.sentry.util.c.b(d8Var.D());
-        this.f29625u = b10 == null ? new ConcurrentHashMap() : b10;
+        this.f29626u = b10 == null ? new ConcurrentHashMap() : b10;
         Map b11 = io.sentry.util.c.b(d8Var.w());
-        this.f29627w = b11 == null ? new ConcurrentHashMap() : b11;
-        this.f29617e = d8Var.r() == null ? null : Double.valueOf(io.sentry.k.m(d8Var.t().g(d8Var.r())));
-        this.f29616d = Double.valueOf(io.sentry.k.m(d8Var.t().h()));
-        this.f29626v = map;
+        this.f29628w = b11 == null ? new ConcurrentHashMap() : b11;
+        this.f29618e = d8Var.r() == null ? null : Double.valueOf(io.sentry.k.m(d8Var.t().g(d8Var.r())));
+        this.f29617d = Double.valueOf(io.sentry.k.m(d8Var.t().h()));
+        this.f29627v = map;
         g o10 = d8Var.q().d().o();
         if (o10 != null) {
-            if (this.f29626v == null) {
-                this.f29626v = new HashMap();
+            if (this.f29627v == null) {
+                this.f29627v = new HashMap();
             }
             for (f fVar : o10.a()) {
-                Map map2 = this.f29626v;
+                Map map2 = this.f29627v;
                 map2.put("flag.evaluation." + fVar.a(), fVar.b());
             }
         }
     }
 
     public a0(Double d10, Double d11, x xVar, j8 j8Var, j8 j8Var2, String str, String str2, l8 l8Var, String str3, Map map, Map map2, Map map3) {
-        this.f29616d = d10;
-        this.f29617e = d11;
-        this.f29618i = xVar;
-        this.f29619o = j8Var;
-        this.f29620p = j8Var2;
-        this.f29621q = str;
-        this.f29622r = str2;
-        this.f29623s = l8Var;
-        this.f29624t = str3;
-        this.f29625u = map;
-        this.f29627w = map2;
-        this.f29626v = map3;
+        this.f29617d = d10;
+        this.f29618e = d11;
+        this.f29619i = xVar;
+        this.f29620o = j8Var;
+        this.f29621p = j8Var2;
+        this.f29622q = str;
+        this.f29623r = str2;
+        this.f29624s = l8Var;
+        this.f29625t = str3;
+        this.f29626u = map;
+        this.f29628w = map2;
+        this.f29627v = map3;
     }
 }

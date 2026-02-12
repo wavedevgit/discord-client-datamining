@@ -23,24 +23,24 @@ public abstract class e {
     public static final class a extends z8.b {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Context f54943a;
+        final /* synthetic */ Context f54944a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Function1 f54944b;
+        final /* synthetic */ Function1 f54945b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ Uri f54945c;
+        final /* synthetic */ Uri f54946c;
 
         a(Context context, Function1 function1, Uri uri) {
-            this.f54943a = context;
-            this.f54944b = function1;
-            this.f54945c = uri;
+            this.f54944a = context;
+            this.f54945b = function1;
+            this.f54946c = uri;
         }
 
         @Override // z8.b
         protected void onFailureImpl(DataSource dataSource) {
             Intrinsics.checkNotNullParameter(dataSource, "dataSource");
-            Uri uri = this.f54945c;
+            Uri uri = this.f54946c;
             Log.e("[RNScreens]", "Error loading image: " + uri, dataSource.b());
         }
 
@@ -57,9 +57,9 @@ public abstract class e {
             if (eVar instanceof f) {
                 Bitmap Q1 = ((f) eVar).Q1();
                 Intrinsics.checkNotNullExpressionValue(Q1, "getUnderlyingBitmap(...)");
-                Resources resources = this.f54943a.getResources();
+                Resources resources = this.f54944a.getResources();
                 Intrinsics.checkNotNullExpressionValue(resources, "getResources(...)");
-                this.f54944b.invoke(new BitmapDrawable(resources, Q1));
+                this.f54945b.invoke(new BitmapDrawable(resources, Q1));
             }
             closeableReference.close();
         }
@@ -92,7 +92,7 @@ public abstract class e {
                 e.e(com.swmansion.rnscreens.gamma.tabs.a.this, drawable);
             }
         });
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

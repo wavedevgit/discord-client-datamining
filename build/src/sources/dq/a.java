@@ -14,26 +14,26 @@ import bq.n;
 public final class a implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CoordinatorLayout f21843a;
+    private final CoordinatorLayout f21844a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ConstraintLayout f21844b;
+    public final ConstraintLayout f21845b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final FrameLayout f21845c;
+    public final FrameLayout f21846c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final NestedScrollView f21846d;
+    public final NestedScrollView f21847d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final View f21847e;
+    public final View f21848e;
 
     private a(CoordinatorLayout coordinatorLayout, ConstraintLayout constraintLayout, FrameLayout frameLayout, NestedScrollView nestedScrollView, View view) {
-        this.f21843a = coordinatorLayout;
-        this.f21844b = constraintLayout;
-        this.f21845c = frameLayout;
-        this.f21846d = nestedScrollView;
-        this.f21847e = view;
+        this.f21844a = coordinatorLayout;
+        this.f21845b = constraintLayout;
+        this.f21846c = frameLayout;
+        this.f21847d = nestedScrollView;
+        this.f21848e = view;
     }
 
     public static a a(View view) {
@@ -65,6 +65,6 @@ public final class a implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public CoordinatorLayout getRoot() {
-        return this.f21843a;
+        return this.f21844a;
     }
 }

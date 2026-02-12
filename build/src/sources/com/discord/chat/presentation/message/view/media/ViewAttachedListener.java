@@ -56,7 +56,7 @@ public final class ViewAttachedListener implements View.OnAttachStateChangeListe
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit _init_$lambda$0(boolean z10) {
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     private final ViewScrollStateListener getScrollStateListener() {

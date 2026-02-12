@@ -7,25 +7,25 @@ import kotlin.enums.EnumEntries;
 public final class b0 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final b0 f50918d = new b0("LineHeight", 0);
+    public static final b0 f50919d = new b0("LineHeight", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ b0[] f50919e;
+    private static final /* synthetic */ b0[] f50920e;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f50920i;
+    private static final /* synthetic */ EnumEntries f50921i;
 
     static {
         b0[] a10 = a();
-        f50919e = a10;
-        f50920i = hs.a.a(a10);
+        f50920e = a10;
+        f50921i = hs.a.a(a10);
     }
 
     private b0(String str, int i10) {
     }
 
     private static final /* synthetic */ b0[] a() {
-        return new b0[]{f50918d};
+        return new b0[]{f50919d};
     }
 
     public static b0 valueOf(String str) {
@@ -33,6 +33,6 @@ public final class b0 {
     }
 
     public static b0[] values() {
-        return (b0[]) f50919e.clone();
+        return (b0[]) f50920e.clone();
     }
 }

@@ -42,40 +42,40 @@ import wp.y0;
 public final class OldSelfieOverlayView extends ConstraintLayout {
 
     /* renamed from: d */
-    private final xp.b f20437d;
+    private final xp.b f20438d;
 
     /* renamed from: e */
-    private final Lazy f20438e;
+    private final Lazy f20439e;
 
     /* renamed from: i */
-    private final Lazy f20439i;
+    private final Lazy f20440i;
 
     /* renamed from: o */
-    private final int f20440o;
+    private final int f20441o;
 
     /* renamed from: p */
-    private final int f20441p;
+    private final int f20442p;
 
     /* renamed from: q */
-    private RemoteImage f20442q;
+    private RemoteImage f20443q;
 
     /* renamed from: r */
-    private RemoteImage f20443r;
+    private RemoteImage f20444r;
 
     /* renamed from: s */
-    private View f20444s;
+    private View f20445s;
 
     /* renamed from: t */
-    private final List f20445t;
+    private final List f20446t;
 
     /* renamed from: u */
-    private final List f20446u;
+    private final List f20447u;
 
     /* renamed from: v */
-    private View f20447v;
+    private View f20448v;
 
     /* renamed from: w */
-    private b f20448w;
+    private b f20449w;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends AnimatorListenerAdapter {
@@ -86,8 +86,8 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
         @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animation) {
             Intrinsics.checkNotNullParameter(animation, "animation");
-            List<Function0> h12 = CollectionsKt.h1(OldSelfieOverlayView.this.f20446u);
-            OldSelfieOverlayView.this.f20446u.clear();
+            List<Function0> h12 = CollectionsKt.h1(OldSelfieOverlayView.this.f20447u);
+            OldSelfieOverlayView.this.f20447u.clear();
             for (Function0 function0 : h12) {
                 function0.invoke();
             }
@@ -98,51 +98,51 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
     public static final class b {
 
         /* renamed from: d */
-        public static final b f20450d = new b("CLEAR", 0);
+        public static final b f20451d = new b("CLEAR", 0);
 
         /* renamed from: e */
-        public static final b f20451e = new b("CENTER", 1);
+        public static final b f20452e = new b("CENTER", 1);
 
         /* renamed from: i */
-        public static final b f20452i = new b("CENTER_COMPLETE", 2);
+        public static final b f20453i = new b("CENTER_COMPLETE", 2);
 
         /* renamed from: o */
-        public static final b f20453o = new b("LOOK_LEFT_HINT", 3);
+        public static final b f20454o = new b("LOOK_LEFT_HINT", 3);
 
         /* renamed from: p */
-        public static final b f20454p = new b("LOOK_LEFT", 4);
+        public static final b f20455p = new b("LOOK_LEFT", 4);
 
         /* renamed from: q */
-        public static final b f20455q = new b("LOOK_LEFT_COMPLETE", 5);
+        public static final b f20456q = new b("LOOK_LEFT_COMPLETE", 5);
 
         /* renamed from: r */
-        public static final b f20456r = new b("LOOK_RIGHT_HINT", 6);
+        public static final b f20457r = new b("LOOK_RIGHT_HINT", 6);
 
         /* renamed from: s */
-        public static final b f20457s = new b("LOOK_RIGHT", 7);
+        public static final b f20458s = new b("LOOK_RIGHT", 7);
 
         /* renamed from: t */
-        public static final b f20458t = new b("LOOK_RIGHT_COMPLETE", 8);
+        public static final b f20459t = new b("LOOK_RIGHT_COMPLETE", 8);
 
         /* renamed from: u */
-        public static final b f20459u = new b("FINALIZING", 9);
+        public static final b f20460u = new b("FINALIZING", 9);
 
         /* renamed from: v */
-        public static final b f20460v = new b("COMPLETE_WITH_CAPTURE", 10);
+        public static final b f20461v = new b("COMPLETE_WITH_CAPTURE", 10);
 
         /* renamed from: w */
-        public static final b f20461w = new b("COMPLETE", 11);
+        public static final b f20462w = new b("COMPLETE", 11);
 
         /* renamed from: x */
-        private static final /* synthetic */ b[] f20462x;
+        private static final /* synthetic */ b[] f20463x;
 
         /* renamed from: y */
-        private static final /* synthetic */ EnumEntries f20463y;
+        private static final /* synthetic */ EnumEntries f20464y;
 
         static {
             b[] a10 = a();
-            f20462x = a10;
-            f20463y = hs.a.a(a10);
+            f20463x = a10;
+            f20464y = hs.a.a(a10);
         }
 
         private b(String str, int i10) {
@@ -150,7 +150,7 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
         }
 
         private static final /* synthetic */ b[] a() {
-            return new b[]{f20450d, f20451e, f20452i, f20453o, f20454p, f20455q, f20456r, f20457s, f20458t, f20459u, f20460v, f20461w};
+            return new b[]{f20451d, f20452e, f20453i, f20454o, f20455p, f20456q, f20457r, f20458s, f20459t, f20460u, f20461v, f20462w};
         }
 
         public static b valueOf(String str) {
@@ -158,7 +158,7 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
         }
 
         public static b[] values() {
-            return (b[]) f20462x.clone();
+            return (b[]) f20463x.clone();
         }
     }
 
@@ -166,59 +166,59 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
     public /* synthetic */ class c {
 
         /* renamed from: a */
-        public static final /* synthetic */ int[] f20464a;
+        public static final /* synthetic */ int[] f20465a;
 
         static {
             int[] iArr = new int[b.values().length];
             try {
-                iArr[b.f20450d.ordinal()] = 1;
+                iArr[b.f20451d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[b.f20451e.ordinal()] = 2;
+                iArr[b.f20452e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[b.f20452i.ordinal()] = 3;
+                iArr[b.f20453i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr[b.f20453o.ordinal()] = 4;
+                iArr[b.f20454o.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                iArr[b.f20454p.ordinal()] = 5;
+                iArr[b.f20455p.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                iArr[b.f20455q.ordinal()] = 6;
+                iArr[b.f20456q.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                iArr[b.f20456r.ordinal()] = 7;
+                iArr[b.f20457r.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                iArr[b.f20457s.ordinal()] = 8;
+                iArr[b.f20458s.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                iArr[b.f20458t.ordinal()] = 9;
+                iArr[b.f20459t.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                iArr[b.f20459u.ordinal()] = 10;
+                iArr[b.f20460u.ordinal()] = 10;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                iArr[b.f20460v.ordinal()] = 11;
+                iArr[b.f20461v.ordinal()] = 11;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                iArr[b.f20461w.ordinal()] = 12;
+                iArr[b.f20462w.ordinal()] = 12;
             } catch (NoSuchFieldError unused12) {
             }
-            f20464a = iArr;
+            f20465a = iArr;
         }
     }
 
@@ -229,23 +229,23 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
     }
 
     public static final Drawable C(Context context) {
-        Integer f10 = s.f(context, tp.a.f49768q, null, false, 6, null);
+        Integer f10 = s.f(context, tp.a.f49769q, null, false, 6, null);
         if (f10 != null) {
             return androidx.core.content.a.e(context, f10.intValue());
         }
-        return androidx.core.content.a.e(context, v0.f53390a);
+        return androidx.core.content.a.e(context, v0.f53391a);
     }
 
     public static final Drawable D(Context context) {
-        Integer f10 = s.f(context, tp.a.f49770s, null, false, 6, null);
+        Integer f10 = s.f(context, tp.a.f49771s, null, false, 6, null);
         if (f10 != null) {
             return androidx.core.content.a.e(context, f10.intValue());
         }
-        return androidx.core.content.a.e(context, v0.f53391b);
+        return androidx.core.content.a.e(context, v0.f53392b);
     }
 
     private final void F(final xp.b bVar, final Function0 function0) {
-        View blindsView = bVar.f55081b;
+        View blindsView = bVar.f55082b;
         Intrinsics.checkNotNullExpressionValue(blindsView, "blindsView");
         y(blindsView, 80L).withEndAction(new Runnable() { // from class: aq.k
             @Override // java.lang.Runnable
@@ -256,7 +256,7 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
     }
 
     public static final void G(OldSelfieOverlayView oldSelfieOverlayView, xp.b bVar, final Function0 function0) {
-        View blindsView = bVar.f55081b;
+        View blindsView = bVar.f55082b;
         Intrinsics.checkNotNullExpressionValue(blindsView, "blindsView");
         oldSelfieOverlayView.v(blindsView, 80L).withEndAction(new Runnable() { // from class: aq.b
             @Override // java.lang.Runnable
@@ -283,17 +283,17 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
     }
 
     public static final Unit K(OldSelfieOverlayView oldSelfieOverlayView, Function0 function0) {
-        oldSelfieOverlayView.M(oldSelfieOverlayView.f20437d, y0.f53925a, function0);
-        return Unit.f31987a;
+        oldSelfieOverlayView.M(oldSelfieOverlayView.f20438d, y0.f53926a, function0);
+        return Unit.f31988a;
     }
 
     public static final Unit L(OldSelfieOverlayView oldSelfieOverlayView, Function0 function0) {
-        oldSelfieOverlayView.M(oldSelfieOverlayView.f20437d, y0.f53925a, function0);
-        return Unit.f31987a;
+        oldSelfieOverlayView.M(oldSelfieOverlayView.f20438d, y0.f53926a, function0);
+        return Unit.f31988a;
     }
 
     private final void M(final xp.b bVar, int i10, final Function0 function0) {
-        this.f20445t.add(new Function0() { // from class: aq.i
+        this.f20446t.add(new Function0() { // from class: aq.i
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit N;
@@ -301,12 +301,12 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
                 return N;
             }
         });
-        bVar.f55083d.setAnimation(i10);
+        bVar.f55084d.setAnimation(i10);
     }
 
     public static final Unit N(final xp.b bVar, OldSelfieOverlayView oldSelfieOverlayView, final Function0 function0) {
-        bVar.f55083d.setFrame(0);
-        ThemeableLottieAnimationView hintAnimation = bVar.f55083d;
+        bVar.f55084d.setFrame(0);
+        ThemeableLottieAnimationView hintAnimation = bVar.f55084d;
         Intrinsics.checkNotNullExpressionValue(hintAnimation, "hintAnimation");
         z(oldSelfieOverlayView, hintAnimation, 0L, 1, null).withEndAction(new Runnable() { // from class: aq.l
             @Override // java.lang.Runnable
@@ -314,14 +314,14 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
                 OldSelfieOverlayView.O(OldSelfieOverlayView.this, bVar, function0);
             }
         });
-        View hintOverlayView = bVar.f55085f;
+        View hintOverlayView = bVar.f55086f;
         Intrinsics.checkNotNullExpressionValue(hintOverlayView, "hintOverlayView");
         z(oldSelfieOverlayView, hintOverlayView, 0L, 1, null);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final void O(OldSelfieOverlayView oldSelfieOverlayView, final xp.b bVar, final Function0 function0) {
-        oldSelfieOverlayView.f20446u.add(new Function0() { // from class: aq.c
+        oldSelfieOverlayView.f20447u.add(new Function0() { // from class: aq.c
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit P;
@@ -329,11 +329,11 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
                 return P;
             }
         });
-        bVar.f55083d.playAnimation();
+        bVar.f55084d.playAnimation();
     }
 
     public static final Unit P(OldSelfieOverlayView oldSelfieOverlayView, xp.b bVar, final Function0 function0) {
-        ThemeableLottieAnimationView hintAnimation = bVar.f55083d;
+        ThemeableLottieAnimationView hintAnimation = bVar.f55084d;
         Intrinsics.checkNotNullExpressionValue(hintAnimation, "hintAnimation");
         w(oldSelfieOverlayView, hintAnimation, 0L, 1, null).withEndAction(new Runnable() { // from class: aq.d
             @Override // java.lang.Runnable
@@ -341,10 +341,10 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
                 OldSelfieOverlayView.Q(Function0.this);
             }
         });
-        View hintOverlayView = bVar.f55085f;
+        View hintOverlayView = bVar.f55086f;
         Intrinsics.checkNotNullExpressionValue(hintOverlayView, "hintOverlayView");
         w(oldSelfieOverlayView, hintOverlayView, 0L, 1, null);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final void Q(Function0 function0) {
@@ -376,25 +376,25 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
     }
 
     private final boolean T(Context context) {
-        Integer f10 = s.f(context, tp.a.f49768q, null, false, 6, null);
-        Integer f11 = s.f(context, tp.a.f49770s, null, false, 6, null);
-        if ((f10 == null || f11 == null) && this.f20442q == null && this.f20443r == null) {
+        Integer f10 = s.f(context, tp.a.f49769q, null, false, 6, null);
+        Integer f11 = s.f(context, tp.a.f49771s, null, false, 6, null);
+        if ((f10 == null || f11 == null) && this.f20443q == null && this.f20444r == null) {
             return true;
         }
         return false;
     }
 
     private final Drawable getDrawableLeft() {
-        return (Drawable) this.f20438e.getValue();
+        return (Drawable) this.f20439e.getValue();
     }
 
     private final Drawable getDrawableRight() {
-        return (Drawable) this.f20439i.getValue();
+        return (Drawable) this.f20440i.getValue();
     }
 
     public static void k(OldSelfieOverlayView oldSelfieOverlayView, i iVar) {
-        List<Function0> h12 = CollectionsKt.h1(oldSelfieOverlayView.f20445t);
-        oldSelfieOverlayView.f20445t.clear();
+        List<Function0> h12 = CollectionsKt.h1(oldSelfieOverlayView.f20446t);
+        oldSelfieOverlayView.f20446t.clear();
         for (Function0 function0 : h12) {
             function0.invoke();
         }
@@ -443,72 +443,72 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
         Intrinsics.checkNotNullParameter(styles, "styles");
         Integer selfieCaptureFeedBoxBorderColorValue = styles.getSelfieCaptureFeedBoxBorderColorValue();
         if (selfieCaptureFeedBoxBorderColorValue != null) {
-            this.f20437d.f55087h.setStrokeColor(selfieCaptureFeedBoxBorderColorValue.intValue());
+            this.f20438d.f55088h.setStrokeColor(selfieCaptureFeedBoxBorderColorValue.intValue());
         }
         Double selfieCaptureFeedBoxBorderWidthValue = styles.getSelfieCaptureFeedBoxBorderWidthValue();
         if (selfieCaptureFeedBoxBorderWidthValue != null) {
-            this.f20437d.f55087h.setStrokeWidth((float) h.a(selfieCaptureFeedBoxBorderWidthValue.doubleValue()));
+            this.f20438d.f55088h.setStrokeWidth((float) h.a(selfieCaptureFeedBoxBorderWidthValue.doubleValue()));
         }
         Integer selfieCaptureIconStrokeColor = styles.getSelfieCaptureIconStrokeColor();
         if (selfieCaptureIconStrokeColor != null) {
             int intValue = selfieCaptureIconStrokeColor.intValue();
-            this.f20437d.f55083d.I(Color.parseColor("#022050"), intValue);
-            this.f20437d.f55083d.I(Color.parseColor("#280087"), intValue);
+            this.f20438d.f55084d.I(Color.parseColor("#022050"), intValue);
+            this.f20438d.f55084d.I(Color.parseColor("#280087"), intValue);
         }
         Integer selfieCaptureIconFillColor = styles.getSelfieCaptureIconFillColor();
         if (selfieCaptureIconFillColor != null) {
             int intValue2 = selfieCaptureIconFillColor.intValue();
-            this.f20437d.f55083d.I(Color.parseColor("#AA85FF"), intValue2);
-            this.f20437d.f55083d.I(Color.parseColor("#8552FF"), intValue2);
+            this.f20438d.f55084d.I(Color.parseColor("#AA85FF"), intValue2);
+            this.f20438d.f55084d.I(Color.parseColor("#8552FF"), intValue2);
         }
         Integer selfieCaptureIconBackgroundFillColor = styles.getSelfieCaptureIconBackgroundFillColor();
         if (selfieCaptureIconBackgroundFillColor != null) {
-            this.f20437d.f55083d.I(Color.parseColor("#DBCCFF"), selfieCaptureIconBackgroundFillColor.intValue());
+            this.f20438d.f55084d.I(Color.parseColor("#DBCCFF"), selfieCaptureIconBackgroundFillColor.intValue());
         }
     }
 
     public final void B(Function0 onComplete) {
         Intrinsics.checkNotNullParameter(onComplete, "onComplete");
-        Pi2CircleMaskView.e(this.f20437d.f55082c, false, onComplete, 1, null);
+        Pi2CircleMaskView.e(this.f20438d.f55083c, false, onComplete, 1, null);
     }
 
     public final boolean E() {
-        return this.f20437d.f55082c.g();
+        return this.f20438d.f55083c.g();
     }
 
     public final void I(b viewState, boolean z10, final Function0 function0) {
         Intrinsics.checkNotNullParameter(viewState, "viewState");
-        if (this.f20448w != viewState) {
-            this.f20448w = viewState;
-            removeView(this.f20447v);
+        if (this.f20449w != viewState) {
+            this.f20449w = viewState;
+            removeView(this.f20448v);
             Context context = getContext();
             Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
             boolean T = T(context);
-            xp.b bVar = this.f20437d;
+            xp.b bVar = this.f20438d;
             if (z10) {
-                bVar.f55087h.setVisibility(0);
+                bVar.f55088h.setVisibility(0);
             } else {
-                bVar.f55087h.setVisibility(8);
+                bVar.f55088h.setVisibility(8);
             }
-            switch (c.f20464a[viewState.ordinal()]) {
+            switch (c.f20465a[viewState.ordinal()]) {
                 case 1:
-                    bVar.f55082c.h();
-                    bVar.f55087h.f(0.0f, function0);
+                    bVar.f55083c.h();
+                    bVar.f55088h.f(0.0f, function0);
                     return;
                 case 2:
-                    Pi2CircleMaskView.e(bVar.f55082c, false, null, 3, null);
-                    bVar.f55087h.f(0.0f, function0);
+                    Pi2CircleMaskView.e(bVar.f55083c, false, null, 3, null);
+                    bVar.f55088h.f(0.0f, function0);
                     return;
                 case 3:
-                    Pi2CircleMaskView.e(bVar.f55082c, false, null, 3, null);
-                    Pi2ProgressArcView.g(bVar.f55087h, 0.0f, null, 2, null);
-                    F(this.f20437d, function0);
+                    Pi2CircleMaskView.e(bVar.f55083c, false, null, 3, null);
+                    Pi2ProgressArcView.g(bVar.f55088h, 0.0f, null, 2, null);
+                    F(this.f20438d, function0);
                     return;
                 case 4:
-                    Pi2CircleMaskView.e(bVar.f55082c, false, null, 3, null);
-                    Pi2ProgressArcView.g(bVar.f55087h, 0.0f, null, 2, null);
+                    Pi2CircleMaskView.e(bVar.f55083c, false, null, 3, null);
+                    Pi2ProgressArcView.g(bVar.f55088h, 0.0f, null, 2, null);
                     if (T) {
-                        M(this.f20437d, this.f20440o, function0);
+                        M(this.f20438d, this.f20441o, function0);
                         return;
                     } else if (function0 != null) {
                         function0.invoke();
@@ -517,31 +517,31 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
                         return;
                     }
                 case 5:
-                    Pi2CircleMaskView.e(bVar.f55082c, false, null, 3, null);
-                    bVar.f55087h.f(0.0f, function0);
+                    Pi2CircleMaskView.e(bVar.f55083c, false, null, 3, null);
+                    bVar.f55088h.f(0.0f, function0);
                     if (!T) {
-                        RemoteImage remoteImage = this.f20442q;
+                        RemoteImage remoteImage = this.f20443q;
                         if (remoteImage != null) {
-                            this.f20447v = wq.b.b(remoteImage, this, true);
+                            this.f20448v = wq.b.b(remoteImage, this, true);
                             return;
                         }
-                        bVar.f55086g.setVisibility(0);
-                        ImageView hintImage = bVar.f55084e;
+                        bVar.f55087g.setVisibility(0);
+                        ImageView hintImage = bVar.f55085e;
                         Intrinsics.checkNotNullExpressionValue(hintImage, "hintImage");
                         R(hintImage, getDrawableLeft());
                         return;
                     }
                     return;
                 case 6:
-                    Pi2CircleMaskView.e(bVar.f55082c, false, null, 3, null);
-                    Pi2ProgressArcView.g(bVar.f55087h, 50.0f, null, 2, null);
-                    F(this.f20437d, function0);
+                    Pi2CircleMaskView.e(bVar.f55083c, false, null, 3, null);
+                    Pi2ProgressArcView.g(bVar.f55088h, 50.0f, null, 2, null);
+                    F(this.f20438d, function0);
                     return;
                 case 7:
-                    Pi2CircleMaskView.e(bVar.f55082c, false, null, 3, null);
-                    Pi2ProgressArcView.g(bVar.f55087h, 50.0f, null, 2, null);
+                    Pi2CircleMaskView.e(bVar.f55083c, false, null, 3, null);
+                    Pi2ProgressArcView.g(bVar.f55088h, 50.0f, null, 2, null);
                     if (T) {
-                        M(this.f20437d, this.f20441p, function0);
+                        M(this.f20438d, this.f20442p, function0);
                         return;
                     } else if (function0 != null) {
                         function0.invoke();
@@ -550,34 +550,34 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
                         return;
                     }
                 case 8:
-                    Pi2CircleMaskView.e(bVar.f55082c, false, null, 3, null);
-                    bVar.f55087h.f(50.0f, function0);
+                    Pi2CircleMaskView.e(bVar.f55083c, false, null, 3, null);
+                    bVar.f55088h.f(50.0f, function0);
                     if (!T) {
-                        RemoteImage remoteImage2 = this.f20443r;
+                        RemoteImage remoteImage2 = this.f20444r;
                         if (remoteImage2 != null) {
-                            this.f20447v = wq.b.b(remoteImage2, this, true);
+                            this.f20448v = wq.b.b(remoteImage2, this, true);
                             return;
                         }
-                        bVar.f55086g.setVisibility(0);
-                        ImageView hintImage2 = bVar.f55084e;
+                        bVar.f55087g.setVisibility(0);
+                        ImageView hintImage2 = bVar.f55085e;
                         Intrinsics.checkNotNullExpressionValue(hintImage2, "hintImage");
                         R(hintImage2, getDrawableRight());
                         return;
                     }
                     return;
                 case 9:
-                    Pi2CircleMaskView.e(bVar.f55082c, false, null, 3, null);
-                    Pi2ProgressArcView.g(bVar.f55087h, 100.0f, null, 2, null);
-                    F(this.f20437d, function0);
+                    Pi2CircleMaskView.e(bVar.f55083c, false, null, 3, null);
+                    Pi2ProgressArcView.g(bVar.f55088h, 100.0f, null, 2, null);
+                    F(this.f20438d, function0);
                     return;
                 case 10:
-                    Pi2CircleMaskView.e(bVar.f55082c, false, null, 3, null);
-                    bVar.f55087h.e();
+                    Pi2CircleMaskView.e(bVar.f55083c, false, null, 3, null);
+                    bVar.f55088h.e();
                     return;
                 case 11:
-                    Pi2CircleMaskView.e(bVar.f55082c, false, null, 3, null);
-                    Pi2ProgressArcView.g(bVar.f55087h, 100.0f, null, 2, null);
-                    F(this.f20437d, new Function0() { // from class: aq.g
+                    Pi2CircleMaskView.e(bVar.f55083c, false, null, 3, null);
+                    Pi2ProgressArcView.g(bVar.f55088h, 100.0f, null, 2, null);
+                    F(this.f20438d, new Function0() { // from class: aq.g
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {
                             Unit K;
@@ -587,8 +587,8 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
                     });
                     return;
                 case 12:
-                    Pi2CircleMaskView.e(bVar.f55082c, false, null, 3, null);
-                    bVar.f55087h.f(100.0f, new Function0() { // from class: aq.h
+                    Pi2CircleMaskView.e(bVar.f55083c, false, null, 3, null);
+                    bVar.f55088h.f(100.0f, new Function0() { // from class: aq.h
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {
                             Unit L;
@@ -604,11 +604,11 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
     }
 
     public final RemoteImage getLeftPoseImage() {
-        return this.f20442q;
+        return this.f20443q;
     }
 
     public final RemoteImage getRightPoseImage() {
-        return this.f20443r;
+        return this.f20444r;
     }
 
     @Override // android.view.View
@@ -617,16 +617,16 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
     }
 
     public final void setLeftPoseImage(RemoteImage remoteImage) {
-        this.f20442q = remoteImage;
+        this.f20443q = remoteImage;
     }
 
     public final void setPreviewView(@NotNull View previewView) {
         Intrinsics.checkNotNullParameter(previewView, "previewView");
-        this.f20444s = previewView;
+        this.f20445s = previewView;
     }
 
     public final void setRightPoseImage(RemoteImage remoteImage) {
-        this.f20443r = remoteImage;
+        this.f20444r = remoteImage;
     }
 
     public /* synthetic */ OldSelfieOverlayView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -639,8 +639,8 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
         Intrinsics.checkNotNullParameter(context, "context");
         xp.b b10 = xp.b.b(LayoutInflater.from(context), this);
         Intrinsics.checkNotNullExpressionValue(b10, "inflate(...)");
-        this.f20437d = b10;
-        this.f20438e = l.b(new Function0() { // from class: aq.a
+        this.f20438d = b10;
+        this.f20439e = l.b(new Function0() { // from class: aq.a
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Drawable C;
@@ -648,7 +648,7 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
                 return C;
             }
         });
-        this.f20439i = l.b(new Function0() { // from class: aq.e
+        this.f20440i = l.b(new Function0() { // from class: aq.e
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Drawable D;
@@ -656,13 +656,13 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
                 return D;
             }
         });
-        Integer f10 = s.f(context, tp.a.f49769r, null, false, 6, null);
-        this.f20440o = f10 != null ? f10.intValue() : y0.f53926b;
-        Integer f11 = s.f(context, tp.a.f49769r, null, false, 6, null);
-        this.f20441p = f11 != null ? f11.intValue() : y0.f53927c;
-        this.f20445t = new ArrayList();
-        this.f20446u = new ArrayList();
-        ThemeableLottieAnimationView themeableLottieAnimationView = b10.f55083d;
+        Integer f10 = s.f(context, tp.a.f49770r, null, false, 6, null);
+        this.f20441o = f10 != null ? f10.intValue() : y0.f53927b;
+        Integer f11 = s.f(context, tp.a.f49770r, null, false, 6, null);
+        this.f20442p = f11 != null ? f11.intValue() : y0.f53928c;
+        this.f20446t = new ArrayList();
+        this.f20447u = new ArrayList();
+        ThemeableLottieAnimationView themeableLottieAnimationView = b10.f55084d;
         themeableLottieAnimationView.j(new a0() { // from class: aq.f
             @Override // l5.a0
             public final void a(l5.i iVar) {

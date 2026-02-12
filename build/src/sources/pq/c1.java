@@ -29,12 +29,12 @@ public abstract class c1 {
         if (attributes != null) {
             String label = attributes.getLabel();
             if (label != null) {
-                c10.f48256c.setHint(label);
+                c10.f48257c.setHint(label);
             }
             String placeholder = attributes.getPlaceholder();
             if (placeholder != null) {
-                c10.f48256c.setPlaceholderText(placeholder);
-                TextInputLayout inputLayout = c10.f48256c;
+                c10.f48257c.setPlaceholderText(placeholder);
+                TextInputLayout inputLayout = c10.f48257c;
                 Intrinsics.checkNotNullExpressionValue(inputLayout, "inputLayout");
                 lq.o.a(inputLayout);
             }
@@ -48,7 +48,7 @@ public abstract class c1 {
         currencyInstance.setCurrency(currency);
         NumberFormat numberFormat = NumberFormat.getInstance();
         Ref.ObjectRef objectRef = new Ref.ObjectRef();
-        Editable text = c10.f48255b.getText();
+        Editable text = c10.f48256b.getText();
         if (text != null) {
             t10 = text.toString();
         } else {
@@ -58,11 +58,11 @@ public abstract class c1 {
         a aVar = new a(objectRef, c10, currency, numberFormat, currencyInstance, inputCurrencyComponent);
         if (inputCurrencyComponent.g() != null) {
             try {
-                c10.f48255b.setText(currencyInstance.format(inputCurrencyComponent.g().doubleValue()));
+                c10.f48256b.setText(currencyInstance.format(inputCurrencyComponent.g().doubleValue()));
             } catch (Exception unused) {
             }
         }
-        c10.f48255b.addTextChangedListener(aVar);
+        c10.f48256b.addTextChangedListener(aVar);
         uiComponentHelper.d(new Function0() { // from class: pq.b1
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -80,50 +80,50 @@ public abstract class c1 {
     public static final Unit c(InputCurrency inputCurrency, sq.k kVar) {
         InputTextBasedComponentStyle styles = inputCurrency.getStyles();
         if (styles != null) {
-            TextInputLayout inputLayout = kVar.f48256c;
+            TextInputLayout inputLayout = kVar.f48257c;
             Intrinsics.checkNotNullExpressionValue(inputLayout, "inputLayout");
             uq.a0.k(inputLayout, styles);
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements TextWatcher {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Ref.ObjectRef f42895d;
+        final /* synthetic */ Ref.ObjectRef f42896d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ sq.k f42896e;
+        final /* synthetic */ sq.k f42897e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Currency f42897i;
+        final /* synthetic */ Currency f42898i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ NumberFormat f42898o;
+        final /* synthetic */ NumberFormat f42899o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ NumberFormat f42899p;
+        final /* synthetic */ NumberFormat f42900p;
 
         /* renamed from: q  reason: collision with root package name */
-        final /* synthetic */ InputCurrencyComponent f42900q;
+        final /* synthetic */ InputCurrencyComponent f42901q;
 
         a(Ref.ObjectRef objectRef, sq.k kVar, Currency currency, NumberFormat numberFormat, NumberFormat numberFormat2, InputCurrencyComponent inputCurrencyComponent) {
-            this.f42895d = objectRef;
-            this.f42896e = kVar;
-            this.f42897i = currency;
-            this.f42898o = numberFormat;
-            this.f42899p = numberFormat2;
-            this.f42900q = inputCurrencyComponent;
+            this.f42896d = objectRef;
+            this.f42897e = kVar;
+            this.f42898i = currency;
+            this.f42899o = numberFormat;
+            this.f42900p = numberFormat2;
+            this.f42901q = inputCurrencyComponent;
         }
 
         /* JADX WARN: Multi-variable type inference failed */
         /* JADX WARN: Type inference failed for: r6v5, types: [T, java.lang.CharSequence, java.lang.String] */
         @Override // android.text.TextWatcher
         public void afterTextChanged(Editable editable) {
-            if (!Intrinsics.areEqual(String.valueOf(editable), this.f42895d.element) && editable != null && !StringsKt.k0(editable)) {
-                this.f42896e.f48255b.removeTextChangedListener(this);
-                String quote = Pattern.quote(this.f42897i.getSymbol());
+            if (!Intrinsics.areEqual(String.valueOf(editable), this.f42896d.element) && editable != null && !StringsKt.k0(editable)) {
+                this.f42897e.f48256b.removeTextChangedListener(this);
+                String quote = Pattern.quote(this.f42898i.getSymbol());
                 Intrinsics.checkNotNullExpressionValue(quote, "quote(...)");
                 String replace = new Regex(quote).replace(editable, "");
                 StringBuilder sb2 = new StringBuilder();
@@ -134,15 +134,15 @@ public abstract class c1 {
                         sb2.append(charAt);
                     }
                 }
-                Number parse = this.f42898o.parse(sb2.toString());
+                Number parse = this.f42899o.parse(sb2.toString());
                 if (parse != null) {
                     double doubleValue = parse.doubleValue() / 100.0d;
-                    ?? format = this.f42899p.format(doubleValue);
-                    this.f42895d.element = format;
-                    this.f42896e.f48255b.setText((CharSequence) format);
-                    this.f42896e.f48255b.setSelection(format.length());
-                    this.f42896e.f48255b.addTextChangedListener(this);
-                    this.f42900q.b().c(Double.valueOf(doubleValue));
+                    ?? format = this.f42900p.format(doubleValue);
+                    this.f42896d.element = format;
+                    this.f42897e.f48256b.setText((CharSequence) format);
+                    this.f42897e.f48256b.setSelection(format.length());
+                    this.f42897e.f48256b.addTextChangedListener(this);
+                    this.f42901q.b().c(Double.valueOf(doubleValue));
                 }
             }
         }

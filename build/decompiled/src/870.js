@@ -50,7 +50,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = var9 === var3;
             case 105:
                 if (!var8) {
-                    _fun9198_ip = 186;
+                    _fun9198_ip = 185;
                     continue _fun9198
                 }
             case 108:
@@ -63,19 +63,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = var9.log;
                 var12 = var10.id;
                 if (var12) {
-                    _fun9198_ip = 152;
+                    _fun9198_ip = 151;
                     continue _fun9198
                 }
-            case 148:
+            case 147:
                 var12 = '?';
-            case 152:
+            case 151:
                 var2 = var2.HermesInternal;
                 var11 = var2.concat;
                 var10 = 'Event processor "';
                 var2 = '" dropped event';
                 var2 = var11.bind(var10)(var12, var2);
                 var2 = var8.bind(var9)(var2);
-            case 186:
+            case 185:
                 var8 = _closure1_slot0;
                 var9 = _closure1_slot1;
                 var2 = 0;
@@ -84,10 +84,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var8.isThenable;
                 var2 = var2.bind(var8)(var3);
                 if (var2) {
-                    _fun9198_ip = 247;
+                    _fun9198_ip = 246;
                     continue _fun9198
                 }
-            case 219:
+            case 218:
                 var2 = _closure1_slot2;
                 var0 = 1;
                 var13 = var7 + var0;
@@ -96,9 +96,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var15 = var6;
                 var14 = var5;
                 var0 = var17[var2](var16, var15, var14, var13, var12);
-                _fun9198_ip = 262;
+                _fun9198_ip = 261;
                 continue _fun9198;
-            case 247:
+            case 246:
                 var2 = var3.then;
                 var1 = function(arg0) { // Environment: var1
                     var5 = _closure1_slot2;
@@ -113,7 +113,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
                 };
                 var0 = var2.bind(var3)(var1);
-            case 262:
+            case 261:
                 return var0;
         }
     };

@@ -3,11 +3,11 @@ package com.reactnativekeyboardcontroller;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int[] f18469a = {2130968863, 2130970158};
+    public static int[] f18470a = {2130968863, 2130970158};
 
     /* renamed from: b  reason: collision with root package name */
-    public static int f18470b = 0;
+    public static int f18471b = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    public static int f18471c = 1;
+    public static int f18472c = 1;
 }

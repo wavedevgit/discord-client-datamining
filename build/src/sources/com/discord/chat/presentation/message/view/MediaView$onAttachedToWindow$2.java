@@ -58,7 +58,7 @@ final class MediaView$onAttachedToWindow$2 extends kotlin.coroutines.jvm.interna
                             MediaView.this.pauseId = str;
                             MediaView.this.pause();
                         }
-                        return Unit.f31987a;
+                        return Unit.f31988a;
                     }
                 };
                 this.label = 1;
@@ -67,11 +67,11 @@ final class MediaView$onAttachedToWindow$2 extends kotlin.coroutines.jvm.interna
                 }
             }
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaView$onAttachedToWindow$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+        return ((MediaView$onAttachedToWindow$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

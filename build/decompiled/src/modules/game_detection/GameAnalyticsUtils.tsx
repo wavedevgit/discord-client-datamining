@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var0 = function arg0() {
-        _fun33042: for (var _fun33042_ip = 0;;) switch (_fun33042_ip) {
+        _fun33064: for (var _fun33064_ip = 0;;) switch (_fun33064_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.toLowerCase;
@@ -17,8 +17,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)(var0);
                 var0 = var4;
                 if (!var1) {
-                    _fun33042_ip = 53;
-                    continue _fun33042
+                    _fun33064_ip = 53;
+                    continue _fun33064
                 }
             case 34:
                 var3 = var4.slice;
@@ -68,13 +68,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.removeExecutablePathPrefix = var3;
     var3 = function arg0() {
-        _fun33044: for (var _fun33044_ip = 0;;) switch (_fun33044_ip) {
+        _fun33066: for (var _fun33066_ip = 0;;) switch (_fun33066_ip) {
             case 0:
                 var5 = arg0;
                 var2 = null;
                 if (!(var2 != var5)) {
-                    _fun33044_ip = 250;
-                    continue _fun33044
+                    _fun33066_ip = 250;
+                    continue _fun33066
                 }
             case 12:
                 var4 = _closure1_slot2;
@@ -84,13 +84,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 'exePath';
                 var0 = var0 in var5;
                 if (var0) {
-                    _fun33044_ip = 54;
-                    continue _fun33044
+                    _fun33066_ip = 54;
+                    continue _fun33066
                 }
             case 46:
                 var1 = var5.exe;
-                _fun33044_ip = 60;
-                continue _fun33044;
+                _fun33066_ip = 60;
+                continue _fun33066;
             case 54:
                 var1 = var5.exePath;
             case 60:
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = undefined;
                 var4 = undefined;
                 if (!var9) {
-                    _fun33044_ip = 81;
-                    continue _fun33044
+                    _fun33066_ip = 81;
+                    continue _fun33066
                 }
             case 78:
                 var4 = var7;
@@ -109,15 +109,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.gameName = var4;
                 var7 = var5.id;
                 if (!(var2 == var7)) {
-                    _fun33044_ip = 112;
-                    continue _fun33044
+                    _fun33066_ip = 112;
+                    continue _fun33066
                 }
             case 95:
                 var9 = var2 == var8;
                 var4 = undefined;
                 if (var9) {
-                    _fun33044_ip = 109;
-                    continue _fun33044
+                    _fun33066_ip = 109;
+                    continue _fun33066
                 }
             case 104:
                 var4 = var8.id;
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var2 != var7;
                 var4 = undefined;
                 if (!var8) {
-                    _fun33044_ip = 124;
-                    continue _fun33044
+                    _fun33066_ip = 124;
+                    continue _fun33066
                 }
             case 121:
                 var4 = var7;
@@ -137,8 +137,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var2 != var1;
                 var4 = undefined;
                 if (!var7) {
-                    _fun33044_ip = 147;
-                    continue _fun33044
+                    _fun33066_ip = 147;
+                    continue _fun33066
                 }
             case 138:
                 var7 = _closure1_slot4;
@@ -149,8 +149,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var2 != var7;
                 var4 = undefined;
                 if (!var8) {
-                    _fun33044_ip = 170;
-                    continue _fun33044
+                    _fun33066_ip = 170;
+                    continue _fun33066
                 }
             case 167:
                 var4 = var7;
@@ -160,8 +160,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var2 != var7;
                 var4 = undefined;
                 if (!var8) {
-                    _fun33044_ip = 193;
-                    continue _fun33044
+                    _fun33066_ip = 193;
+                    continue _fun33066
                 }
             case 190:
                 var4 = var7;
@@ -170,8 +170,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 != var5;
                 var2 = undefined;
                 if (!var4) {
-                    _fun33044_ip = 238;
-                    continue _fun33044
+                    _fun33066_ip = 238;
+                    continue _fun33066
                 }
             case 207:
                 var4 = _closure1_slot0;
@@ -200,19 +200,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getRunningGameAnalytics = var3;
     var1 = function arg0, arg1() {
-        _fun33045: for (var _fun33045_ip = 0;;) switch (_fun33045_ip) {
+        _fun33067: for (var _fun33067_ip = 0;;) switch (_fun33067_ip) {
             case 0:
                 var5 = arg0;
                 var2 = arg1;
                 var1 = null;
                 if (!(var1 != var5)) {
-                    _fun33045_ip = 88;
-                    continue _fun33045
+                    _fun33067_ip = 88;
+                    continue _fun33067
                 }
             case 14:
                 if (!(var1 != var2)) {
-                    _fun33045_ip = 88;
-                    continue _fun33045
+                    _fun33067_ip = 88;
+                    continue _fun33067
                 }
             case 18:
                 var3 = _closure1_slot3;
@@ -229,15 +229,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var1;
                 var1 = var2.some;
                 var0 = function(arg0) { // Environment: var0
-                    _fun33046: for (var _fun33046_ip = 0;;) switch (_fun33046_ip) {
+                    _fun33068: for (var _fun33068_ip = 0;;) switch (_fun33068_ip) {
                         case 0:
                             var2 = arg0;
                             var1 = var2.os;
                             var0 = _closure2_slot1;
                             var0 = var1 === var0;
                             if (!var0) {
-                                _fun33046_ip = 61;
-                                continue _fun33046
+                                _fun33068_ip = 61;
+                                continue _fun33068
                             }
                         case 23:
                             var4 = _closure2_slot0;
@@ -245,8 +245,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var1 == var4;
                             var1 = undefined;
                             if (var4) {
-                                _fun33046_ip = 58;
-                                continue _fun33046
+                                _fun33068_ip = 58;
+                                continue _fun33068
                             }
                         case 38:
                             var4 = _closure2_slot0;

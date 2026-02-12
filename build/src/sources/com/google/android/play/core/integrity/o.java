@@ -3,18 +3,18 @@ package com.google.android.play.core.integrity;
 final class o extends IntegrityTokenRequest {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f17085a;
+    private final String f17086a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Long f17086b;
+    private final Long f17087b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Object f17087c = null;
+    private final Object f17088c = null;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ o(String str, Long l10, Object obj, di.c cVar) {
-        this.f17085a = str;
-        this.f17086b = l10;
+        this.f17086a = str;
+        this.f17087b = l10;
     }
 
     private static boolean c() {
@@ -23,12 +23,12 @@ final class o extends IntegrityTokenRequest {
 
     @Override // com.google.android.play.core.integrity.IntegrityTokenRequest
     public final Long a() {
-        return this.f17086b;
+        return this.f17087b;
     }
 
     @Override // com.google.android.play.core.integrity.IntegrityTokenRequest
     public final String b() {
-        return this.f17085a;
+        return this.f17086a;
     }
 
     public final boolean equals(Object obj) {
@@ -39,7 +39,7 @@ final class o extends IntegrityTokenRequest {
         }
         if (obj instanceof IntegrityTokenRequest) {
             IntegrityTokenRequest integrityTokenRequest = (IntegrityTokenRequest) obj;
-            if (this.f17085a.equals(integrityTokenRequest.b()) && ((l10 = this.f17086b) != null ? l10.equals(integrityTokenRequest.a()) : integrityTokenRequest.a() == null)) {
+            if (this.f17086a.equals(integrityTokenRequest.b()) && ((l10 = this.f17087b) != null ? l10.equals(integrityTokenRequest.a()) : integrityTokenRequest.a() == null)) {
                 z10 = true;
                 if (!(obj instanceof o) && c()) {
                     if (z10) {
@@ -58,8 +58,8 @@ final class o extends IntegrityTokenRequest {
 
     public final int hashCode() {
         int hashCode;
-        int hashCode2 = this.f17085a.hashCode() ^ 1000003;
-        Long l10 = this.f17086b;
+        int hashCode2 = this.f17086a.hashCode() ^ 1000003;
+        Long l10 = this.f17087b;
         if (l10 == null) {
             hashCode = 0;
         } else {
@@ -73,7 +73,7 @@ final class o extends IntegrityTokenRequest {
     }
 
     public final String toString() {
-        String str = "IntegrityTokenRequest{nonce=" + this.f17085a + ", cloudProjectNumber=" + this.f17086b;
+        String str = "IntegrityTokenRequest{nonce=" + this.f17086a + ", cloudProjectNumber=" + this.f17087b;
         if (c()) {
             str = str.concat(", network=null");
         }

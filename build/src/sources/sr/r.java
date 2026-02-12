@@ -6,19 +6,19 @@ import java.util.Map;
 class r implements q {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f48340a = new HashMap(3);
+    private final Map f48341a = new HashMap(3);
 
     @Override // sr.q
     public void a(o oVar, Object obj) {
         if (obj == null) {
-            this.f48340a.remove(oVar);
+            this.f48341a.remove(oVar);
         } else {
-            this.f48340a.put(oVar, obj);
+            this.f48341a.put(oVar, obj);
         }
     }
 
     @Override // sr.q
     public Object b(o oVar) {
-        return this.f48340a.get(oVar);
+        return this.f48341a.get(oVar);
     }
 }

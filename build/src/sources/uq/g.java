@@ -21,7 +21,7 @@ public abstract class g {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f50937a;
+        public static final /* synthetic */ int[] f50938a;
 
         static {
             int[] iArr = new int[StyleElements.PositionType.values().length];
@@ -37,7 +37,7 @@ public abstract class g {
                 iArr[StyleElements.PositionType.END.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f50937a = iArr;
+            f50938a = iArr;
         }
     }
 
@@ -66,7 +66,7 @@ public abstract class g {
         ViewGroup.LayoutParams layoutParams = imageView.getLayoutParams();
         if (combinedStepImagePreviewComponentStyle != null && (justify = combinedStepImagePreviewComponentStyle.getJustify()) != null && (base = justify.getBase()) != null && (base2 = base.getBase()) != null && (layoutParams instanceof ConstraintLayout.LayoutParams)) {
             ConstraintLayout.LayoutParams layoutParams2 = (ConstraintLayout.LayoutParams) layoutParams;
-            int i10 = a.f50937a[base2.ordinal()];
+            int i10 = a.f50938a[base2.ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 == 3) {
@@ -147,7 +147,7 @@ public abstract class g {
         ViewGroup.LayoutParams layoutParams = themeableLottieAnimationView.getLayoutParams();
         if (localImageComponentStyle != null && (justify = localImageComponentStyle.getJustify()) != null && (base = justify.getBase()) != null && (base2 = base.getBase()) != null && (layoutParams instanceof ConstraintLayout.LayoutParams)) {
             ConstraintLayout.LayoutParams layoutParams2 = (ConstraintLayout.LayoutParams) layoutParams;
-            int i10 = a.f50937a[base2.ordinal()];
+            int i10 = a.f50938a[base2.ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 == 3) {
@@ -169,7 +169,7 @@ public abstract class g {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit e(ThemeableLottieAnimationView themeableLottieAnimationView, LocalImageComponentStyle localImageComponentStyle, String[] strArr, String[] strArr2, String[] strArr3) {
         d(themeableLottieAnimationView, localImageComponentStyle, strArr, strArr2, strArr3);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final void f(ImageView imageView, RemoteImage component) {
@@ -187,7 +187,7 @@ public abstract class g {
         if (justification != null) {
             if (layoutParams instanceof ConstraintLayout.LayoutParams) {
                 ConstraintLayout.LayoutParams layoutParams2 = (ConstraintLayout.LayoutParams) layoutParams;
-                int i10 = a.f50937a[justification.ordinal()];
+                int i10 = a.f50938a[justification.ordinal()];
                 if (i10 != 1) {
                     if (i10 != 2) {
                         if (i10 == 3) {
@@ -205,7 +205,7 @@ public abstract class g {
             ConstraintLayout.LayoutParams layoutParams3 = (ConstraintLayout.LayoutParams) layoutParams;
             Context context = imageView.getContext();
             Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-            if (bq.s.b(context, tp.a.f49753b, null, false, false, 14, null)) {
+            if (bq.s.b(context, tp.a.f49754b, null, false, false, 14, null)) {
                 f10 = 0.5f;
             }
             layoutParams3.G = f10;

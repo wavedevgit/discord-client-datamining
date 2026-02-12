@@ -5,7 +5,7 @@ import bj.c;
 final class w8 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w8 f47316a = new w8();
+    static final w8 f47317a = new w8();
 
     static {
         c.b a10 = bj.c.a("options");

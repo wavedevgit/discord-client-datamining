@@ -139,11 +139,11 @@ public final class TiledDraweeController$load$1 extends k implements Function2<C
             genericDraweeHierarchy.e(bitmapDrawable, 1.0f, !z10);
         }
         dataSource.close();
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((TiledDraweeController$load$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+        return ((TiledDraweeController$load$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

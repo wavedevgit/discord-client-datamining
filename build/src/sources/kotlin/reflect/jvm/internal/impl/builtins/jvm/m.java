@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.descriptors.CallableMemberDescriptor;
 public class m implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final JvmBuiltInsCustomizer f32275d;
+    private final JvmBuiltInsCustomizer f32276d;
 
     public m(JvmBuiltInsCustomizer jvmBuiltInsCustomizer) {
-        this.f32275d = jvmBuiltInsCustomizer;
+        this.f32276d = jvmBuiltInsCustomizer;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         Boolean A;
-        A = JvmBuiltInsCustomizer.A(this.f32275d, (CallableMemberDescriptor) obj);
+        A = JvmBuiltInsCustomizer.A(this.f32276d, (CallableMemberDescriptor) obj);
         return A;
     }
 }

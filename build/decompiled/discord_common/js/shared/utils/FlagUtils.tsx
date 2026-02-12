@@ -72,21 +72,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.removeFlags = var3;
     var3 = function arg0, arg1, arg2() {
-        _fun16194: for (var _fun16194_ip = 0;;) switch (_fun16194_ip) {
+        _fun16203: for (var _fun16203_ip = 0;;) switch (_fun16203_ip) {
             case 0:
                 var4 = arg0;
                 var3 = arg1;
                 var0 = arg2;
                 if (var0) {
-                    _fun16194_ip = 29;
-                    continue _fun16194
+                    _fun16203_ip = 29;
+                    continue _fun16203
                 }
             case 15:
                 var2 = _closure1_slot2;
                 var0 = undefined;
                 var0 = var2.bind(var0)(var4, var3);
-                _fun16194_ip = 41;
-                continue _fun16194;
+                _fun16203_ip = 41;
+                continue _fun16203;
             case 29:
                 var2 = _closure1_slot1;
                 var1 = undefined;
@@ -97,7 +97,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setFlag = var3;
     var1 = function arg0, arg1() {
-        _fun16195: for (var _fun16195_ip = 0;;) switch (_fun16195_ip) {
+        _fun16204: for (var _fun16204_ip = 0;;) switch (_fun16204_ip) {
             case 0:
                 var4 = arg0;
                 var3 = arg1;
@@ -105,14 +105,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = undefined;
                 var0 = var0.bind(var2)(var4, var3);
                 if (var0) {
-                    _fun16195_ip = 36;
-                    continue _fun16195
+                    _fun16204_ip = 36;
+                    continue _fun16204
                 }
             case 24:
                 var0 = _closure1_slot1;
                 var0 = var0.bind(var2)(var4, var3);
-                _fun16195_ip = 46;
-                continue _fun16195;
+                _fun16204_ip = 46;
+                continue _fun16204;
             case 36:
                 var1 = _closure1_slot2;
                 var0 = var1.bind(var2)(var4, var3);

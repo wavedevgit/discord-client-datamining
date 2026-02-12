@@ -16,14 +16,14 @@ public final class o implements ak.a {
     @Override // ak.a
     public final Rect a() {
         zh zhVar = this.f7249a;
-        if (zhVar.f40063p != null) {
+        if (zhVar.f40064p != null) {
             int i10 = 0;
             int i11 = Integer.MIN_VALUE;
             int i12 = Integer.MAX_VALUE;
             int i13 = Integer.MAX_VALUE;
             int i14 = Integer.MIN_VALUE;
             while (true) {
-                Point[] pointArr = zhVar.f40063p;
+                Point[] pointArr = zhVar.f40064p;
                 if (i10 < pointArr.length) {
                     Point point = pointArr[i10];
                     i12 = Math.min(i12, point.x);
@@ -42,21 +42,21 @@ public final class o implements ak.a {
 
     @Override // ak.a
     public final String b() {
-        return this.f7249a.f40060e;
+        return this.f7249a.f40061e;
     }
 
     @Override // ak.a
     public final int c() {
-        return this.f7249a.f40062o;
+        return this.f7249a.f40063o;
     }
 
     @Override // ak.a
     public final Point[] d() {
-        return this.f7249a.f40063p;
+        return this.f7249a.f40064p;
     }
 
     @Override // ak.a
     public final int getFormat() {
-        return this.f7249a.f40059d;
+        return this.f7249a.f40060d;
     }
 }

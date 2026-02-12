@@ -15,19 +15,19 @@ import zg.k;
 public class a extends ff.d {
 
     /* renamed from: k  reason: collision with root package name */
-    private static final a.g f52745k;
+    private static final a.g f52746k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final ff.a f52746l;
+    private static final ff.a f52747l;
 
     static {
         a.g gVar = new a.g();
-        f52745k = gVar;
-        f52746l = new ff.a("Fido.FIDO2_API", new t5(), gVar);
+        f52746k = gVar;
+        f52747l = new ff.a("Fido.FIDO2_API", new t5(), gVar);
     }
 
     public a(Activity activity) {
-        super(activity, f52746l, a.d.f23723g, new gf.a());
+        super(activity, f52747l, a.d.f23724g, new gf.a());
     }
 
     public Task C(final r rVar) {

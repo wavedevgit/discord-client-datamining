@@ -13,22 +13,22 @@ import org.jetbrains.annotations.NotNull;
 public final class NewKotlinTypeCheckerImpl implements NewKotlinTypeChecker {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KotlinTypeRefiner f34651a;
+    private final KotlinTypeRefiner f34652a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final KotlinTypePreparator f34652b;
+    private final KotlinTypePreparator f34653b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final OverridingUtil f34653c;
+    private final OverridingUtil f34654c;
 
     public NewKotlinTypeCheckerImpl(@NotNull KotlinTypeRefiner kotlinTypeRefiner, @NotNull KotlinTypePreparator kotlinTypePreparator) {
         Intrinsics.checkNotNullParameter(kotlinTypeRefiner, "kotlinTypeRefiner");
         Intrinsics.checkNotNullParameter(kotlinTypePreparator, "kotlinTypePreparator");
-        this.f34651a = kotlinTypeRefiner;
-        this.f34652b = kotlinTypePreparator;
+        this.f34652a = kotlinTypeRefiner;
+        this.f34653b = kotlinTypePreparator;
         OverridingUtil createWithTypeRefiner = OverridingUtil.createWithTypeRefiner(getKotlinTypeRefiner());
         Intrinsics.checkNotNullExpressionValue(createWithTypeRefiner, "createWithTypeRefiner(...)");
-        this.f34653c = createWithTypeRefiner;
+        this.f34654c = createWithTypeRefiner;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.checker.KotlinTypeChecker
@@ -40,19 +40,19 @@ public final class NewKotlinTypeCheckerImpl implements NewKotlinTypeChecker {
 
     @NotNull
     public KotlinTypePreparator getKotlinTypePreparator() {
-        return this.f34652b;
+        return this.f34653b;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.checker.NewKotlinTypeChecker
     @NotNull
     public KotlinTypeRefiner getKotlinTypeRefiner() {
-        return this.f34651a;
+        return this.f34652a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.checker.NewKotlinTypeChecker
     @NotNull
     public OverridingUtil getOverridingUtil() {
-        return this.f34653c;
+        return this.f34654c;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.checker.KotlinTypeChecker

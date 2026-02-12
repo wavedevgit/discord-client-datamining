@@ -5,13 +5,13 @@ import java.util.Iterator;
 abstract class m3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Iterator f14986a = new k3();
+    private static final Iterator f14987a = new k3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Iterable f14987b = new l3();
+    private static final Iterable f14988b = new l3();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Iterable a() {
-        return f14987b;
+        return f14988b;
     }
 }

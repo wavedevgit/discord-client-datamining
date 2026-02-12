@@ -4,27 +4,27 @@ package qi;
 public final class r0 extends u {
 
     /* renamed from: i  reason: collision with root package name */
-    final transient Object f45398i;
+    final transient Object f45399i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public r0(Object obj) {
-        this.f45398i = pi.m.j(obj);
+        this.f45399i = pi.m.j(obj);
     }
 
     @Override // qi.u, qi.q
     public s b() {
-        return s.u(this.f45398i);
+        return s.u(this.f45399i);
     }
 
     @Override // qi.q
     int c(Object[] objArr, int i10) {
-        objArr[i10] = this.f45398i;
+        objArr[i10] = this.f45399i;
         return i10 + 1;
     }
 
     @Override // qi.q, java.util.AbstractCollection, java.util.Collection, java.util.Set
     public boolean contains(Object obj) {
-        return this.f45398i.equals(obj);
+        return this.f45399i.equals(obj);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -35,13 +35,13 @@ public final class r0 extends u {
 
     @Override // qi.u, java.util.Collection, java.util.Set
     public final int hashCode() {
-        return this.f45398i.hashCode();
+        return this.f45399i.hashCode();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     /* renamed from: s */
     public t0 iterator() {
-        return w.p(this.f45398i);
+        return w.p(this.f45399i);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
@@ -51,7 +51,7 @@ public final class r0 extends u {
 
     @Override // java.util.AbstractCollection
     public String toString() {
-        String obj = this.f45398i.toString();
+        String obj = this.f45399i.toString();
         StringBuilder sb2 = new StringBuilder(String.valueOf(obj).length() + 2);
         sb2.append('[');
         sb2.append(obj);

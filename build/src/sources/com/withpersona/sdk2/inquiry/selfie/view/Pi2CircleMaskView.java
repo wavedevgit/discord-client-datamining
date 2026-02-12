@@ -24,22 +24,22 @@ import wp.z0;
 public final class Pi2CircleMaskView extends View {
 
     /* renamed from: q  reason: collision with root package name */
-    public static final a f20465q = new a(null);
+    public static final a f20466q = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final float f20466d;
+    private final float f20467d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f20467e;
+    private final int f20468e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Bitmap f20468i;
+    private Bitmap f20469i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Paint f20469o;
+    private Paint f20470o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Paint f20470p;
+    private Paint f20471p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -62,7 +62,7 @@ public final class Pi2CircleMaskView extends View {
     }
 
     private final Bitmap c() {
-        Bitmap bitmap = this.f20468i;
+        Bitmap bitmap = this.f20469i;
         if (bitmap != null) {
             bitmap = (bitmap.getWidth() == getWidth() && bitmap.getHeight() == getHeight()) ? null : null;
             if (bitmap != null) {
@@ -72,9 +72,9 @@ public final class Pi2CircleMaskView extends View {
         Bitmap createBitmap = Bitmap.createBitmap(getWidth(), getHeight(), Bitmap.Config.ARGB_8888);
         Intrinsics.checkNotNullExpressionValue(createBitmap, "createBitmap(...)");
         Canvas canvas = new Canvas(createBitmap);
-        canvas.drawColor(this.f20467e);
-        canvas.drawCircle(canvas.getWidth() / 2.0f, canvas.getHeight() / 2.0f, this.f20466d * Math.min(canvas.getWidth(), canvas.getHeight()), this.f20470p);
-        this.f20468i = createBitmap;
+        canvas.drawColor(this.f20468e);
+        canvas.drawCircle(canvas.getWidth() / 2.0f, canvas.getHeight() / 2.0f, this.f20467d * Math.min(canvas.getWidth(), canvas.getHeight()), this.f20471p);
+        this.f20469i = createBitmap;
         return createBitmap;
     }
 
@@ -139,7 +139,7 @@ public final class Pi2CircleMaskView extends View {
     @Override // android.view.View
     protected void onDraw(Canvas canvas) {
         Intrinsics.checkNotNullParameter(canvas, "canvas");
-        canvas.drawBitmap(c(), 0.0f, 0.0f, this.f20469o);
+        canvas.drawBitmap(c(), 0.0f, 0.0f, this.f20470o);
     }
 
     public /* synthetic */ Pi2CircleMaskView(Context context, AttributeSet attributeSet, int i10, int i11, DefaultConstructorMarker defaultConstructorMarker) {
@@ -150,16 +150,16 @@ public final class Pi2CircleMaskView extends View {
     public Pi2CircleMaskView(Context context, AttributeSet attributeSet, int i10) {
         super(context, attributeSet, i10);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f20469o = new Paint(7);
+        this.f20470o = new Paint(7);
         Paint paint = new Paint(1);
         paint.setColor(0);
         paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
-        this.f20470p = paint;
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, z0.f53937a, i10, 0);
+        this.f20471p = paint;
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, z0.f53938a, i10, 0);
         Intrinsics.checkNotNullExpressionValue(obtainStyledAttributes, "obtainStyledAttributes(...)");
         try {
-            this.f20466d = obtainStyledAttributes.getFloat(z0.f53938b, 0.4f);
-            this.f20467e = obtainStyledAttributes.getColor(z0.f53939c, -16777216);
+            this.f20467d = obtainStyledAttributes.getFloat(z0.f53939b, 0.4f);
+            this.f20468e = obtainStyledAttributes.getColor(z0.f53940c, -16777216);
             obtainStyledAttributes.recycle();
             setWillNotDraw(false);
         } catch (Throwable th2) {

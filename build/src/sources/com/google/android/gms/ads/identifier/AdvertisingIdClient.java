@@ -19,51 +19,51 @@ import java.util.concurrent.TimeUnit;
 public class AdvertisingIdClient {
 
     /* renamed from: a  reason: collision with root package name */
-    com.google.android.gms.common.a f14351a;
+    com.google.android.gms.common.a f14352a;
 
     /* renamed from: b  reason: collision with root package name */
-    f f14352b;
+    f f14353b;
 
     /* renamed from: c  reason: collision with root package name */
-    boolean f14353c;
+    boolean f14354c;
 
     /* renamed from: d  reason: collision with root package name */
-    final Object f14354d = new Object();
+    final Object f14355d = new Object();
 
     /* renamed from: e  reason: collision with root package name */
-    b f14355e;
+    b f14356e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Context f14356f;
+    private final Context f14357f;
 
     /* renamed from: g  reason: collision with root package name */
-    final long f14357g;
+    final long f14358g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class Info {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f14358a;
+        private final String f14359a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final boolean f14359b;
+        private final boolean f14360b;
 
         public Info(String str, boolean z10) {
-            this.f14358a = str;
-            this.f14359b = z10;
+            this.f14359a = str;
+            this.f14360b = z10;
         }
 
         public String a() {
-            return this.f14358a;
+            return this.f14359a;
         }
 
         public boolean b() {
-            return this.f14359b;
+            return this.f14360b;
         }
 
         public String toString() {
-            String str = this.f14358a;
-            boolean z10 = this.f14359b;
+            String str = this.f14359a;
+            boolean z10 = this.f14360b;
             StringBuilder sb2 = new StringBuilder(String.valueOf(str).length() + 7);
             sb2.append("{");
             sb2.append(str);
@@ -79,9 +79,9 @@ public class AdvertisingIdClient {
         if (z10 && (applicationContext = context.getApplicationContext()) != null) {
             context = applicationContext;
         }
-        this.f14356f = context;
-        this.f14353c = false;
-        this.f14357g = j10;
+        this.f14357f = context;
+        this.f14354c = false;
+        this.f14358g = j10;
     }
 
     public static Info a(Context context) {
@@ -101,26 +101,26 @@ public class AdvertisingIdClient {
         q.k("Calling this from your main thread can lead to deadlock");
         synchronized (this) {
             try {
-                if (!this.f14353c) {
-                    synchronized (this.f14354d) {
-                        b bVar = this.f14355e;
-                        if (bVar == null || !bVar.f14364o) {
+                if (!this.f14354c) {
+                    synchronized (this.f14355d) {
+                        b bVar = this.f14356e;
+                        if (bVar == null || !bVar.f14365o) {
                             throw new IOException("AdvertisingIdClient is not connected.");
                         }
                     }
                     try {
                         c(false);
-                        if (!this.f14353c) {
+                        if (!this.f14354c) {
                             throw new IOException("AdvertisingIdClient cannot reconnect.");
                         }
                     } catch (Exception e10) {
                         throw new IOException("AdvertisingIdClient cannot reconnect.", e10);
                     }
                 }
-                q.l(this.f14351a);
-                q.l(this.f14352b);
+                q.l(this.f14352a);
+                q.l(this.f14353b);
                 try {
-                    info = new Info(this.f14352b.a(), this.f14352b.t(true));
+                    info = new Info(this.f14353b.a(), this.f14353b.t(true));
                 } catch (RemoteException e11) {
                     Log.i("AdvertisingIdClient", "GMS remote exception ", e11);
                     throw new IOException("Remote exception");
@@ -134,18 +134,18 @@ public class AdvertisingIdClient {
     }
 
     private final void f() {
-        synchronized (this.f14354d) {
-            b bVar = this.f14355e;
+        synchronized (this.f14355d) {
+            b bVar = this.f14356e;
             if (bVar != null) {
-                bVar.f14363i.countDown();
+                bVar.f14364i.countDown();
                 try {
-                    this.f14355e.join();
+                    this.f14356e.join();
                 } catch (InterruptedException unused) {
                 }
             }
-            long j10 = this.f14357g;
+            long j10 = this.f14358g;
             if (j10 > 0) {
-                this.f14355e = new b(this, j10);
+                this.f14356e = new b(this, j10);
             }
         }
     }
@@ -154,13 +154,13 @@ public class AdvertisingIdClient {
         q.k("Calling this from your main thread can lead to deadlock");
         synchronized (this) {
             try {
-                if (this.f14356f != null && this.f14351a != null) {
-                    if (this.f14353c) {
-                        of.a.b().c(this.f14356f, this.f14351a);
+                if (this.f14357f != null && this.f14352a != null) {
+                    if (this.f14354c) {
+                        of.a.b().c(this.f14357f, this.f14352a);
                     }
-                    this.f14353c = false;
-                    this.f14352b = null;
-                    this.f14351a = null;
+                    this.f14354c = false;
+                    this.f14353b = null;
+                    this.f14352a = null;
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -172,13 +172,13 @@ public class AdvertisingIdClient {
         q.k("Calling this from your main thread can lead to deadlock");
         synchronized (this) {
             try {
-                if (this.f14353c) {
+                if (this.f14354c) {
                     b();
                 }
-                Context context = this.f14356f;
+                Context context = this.f14357f;
                 try {
                     context.getPackageManager().getPackageInfo("com.android.vending", 0);
-                    int h10 = g.f().h(context, k.f14497a);
+                    int h10 = g.f().h(context, k.f14498a);
                     if (h10 != 0 && h10 != 2) {
                         throw new IOException("Google Play services not available");
                     }
@@ -186,10 +186,10 @@ public class AdvertisingIdClient {
                     Intent intent = new Intent("com.google.android.gms.ads.identifier.service.START");
                     intent.setPackage("com.google.android.gms");
                     if (of.a.b().a(context, intent, aVar, 1)) {
-                        this.f14351a = aVar;
+                        this.f14352a = aVar;
                         try {
-                            this.f14352b = e.e(aVar.a(10000L, TimeUnit.MILLISECONDS));
-                            this.f14353c = true;
+                            this.f14353b = e.e(aVar.a(10000L, TimeUnit.MILLISECONDS));
+                            this.f14354c = true;
                             if (z10) {
                                 f();
                             }

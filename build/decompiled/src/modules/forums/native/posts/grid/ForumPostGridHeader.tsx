@@ -2,27 +2,27 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
+    var6 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var0 = metroImportDefault;
-    var _closure1_slot1 = var0;
+    var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
     var3 = {};
     var0 = true;
     var3.value = var0;
     var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = var7.bind(var8)(var2, var0, var3);
     var0 = 0;
-    var6 = var5[var0];
+    var7 = var5[var0];
     var3 = metroImportAll;
     var0 = undefined;
-    var3 = var3.bind(var0)(var6);
-    var9 = 1;
-    var3 = var5[var9];
+    var3 = var3.bind(var0)(var7);
+    var11 = 1;
+    var3 = var5[var11];
     var3 = var4.bind(var0)(var3);
     var3 = var3.View;
     var _closure1_slot3 = var3;
@@ -39,36 +39,42 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 4;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var6 = var3.jsx;
-    var _closure1_slot6 = var6;
+    var7 = var3.jsx;
+    var _closure1_slot6 = var7;
     var3 = var3.jsxs;
     var _closure1_slot7 = var3;
     var3 = 5;
     var3 = var5[var3];
-    var7 = var4.bind(var0)(var3);
-    var6 = var7.createStyles;
+    var9 = var4.bind(var0)(var3);
+    var8 = var9.createStyles;
     var3 = {};
-    var8 = {};
-    var10 = 8;
-    var8.marginEnd = var10;
-    var3.pinIcon = var8;
-    var8 = {
+    var10 = {};
+    var12 = 8;
+    var10.marginEnd = var12;
+    var3.pinIcon = var10;
+    var10 = {
         'display': 'flex',
         'flexDirection': 'column',
         'marginBottom': 4
     };
-    var3.container = var8;
-    var8 = {
+    var3.container = var10;
+    var10 = {
         'flexDirection': 'row',
         'alignItems': 'center',
         'marginBottom': 4
     };
-    var3.details = var8;
-    var8 = {};
-    var8.flex = var9;
-    var3.timestampText = var8;
-    var3 = var6.bind(var7)(var3);
+    var3.details = var10;
+    var10 = {};
+    var10.flex = var11;
+    var3.timestampText = var10;
+    var3 = var8.bind(var9)(var3);
     var _closure1_slot8 = var3;
+    var3 = 6;
+    var3 = var5[var3];
+    var6 = var6.bind(var0)(var3);
+    var3 = {};
+    var3 = var7.bind(var0)(var6, var3);
+    var _closure1_slot9 = var3;
     var3 = 11;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -76,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/forums/native/posts/grid/ForumPostGridHeader.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun90069: for (var _fun90069_ip = 0;;) switch (_fun90069_ip) {
+        _fun88985: for (var _fun88985_ip = 0;;) switch (_fun88985_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.thread;
@@ -99,14 +105,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.style = var10;
                 var10 = var6;
                 if (!var10) {
-                    _fun90069_ip = 135;
-                    continue _fun90069
+                    _fun88985_ip = 135;
+                    continue _fun88985
                 }
             case 92:
                 var12 = _closure1_slot6;
                 var11 = _closure1_slot1;
                 var14 = _closure1_slot2;
-                var6 = 6;
+                var6 = 7;
                 var6 = var14[var6];
                 var11 = var11.bind(var3)(var6);
                 var6 = {};
@@ -119,7 +125,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = _closure1_slot6;
                 var11 = _closure1_slot0;
                 var14 = _closure1_slot2;
-                var10 = 7;
+                var10 = 8;
                 var10 = var14[var10];
                 var10 = var11.bind(var3)(var10);
                 var11 = var10.ForumPostAuthor;
@@ -129,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var12.bind(var3)(var11, var10);
                 var6[1] = var10;
                 var11 = _closure1_slot1;
-                var10 = 8;
+                var10 = 9;
                 var10 = var14[var10];
                 var11 = var11.bind(var3)(var10);
                 var10 = {};
@@ -143,19 +149,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var12.bind(var3)(var11, var10);
                 var6[2] = var10;
                 if (!var7) {
-                    _fun90069_ip = 293;
-                    continue _fun90069
+                    _fun88985_ip = 265;
+                    continue _fun88985
                 }
             case 261:
-                var12 = _closure1_slot6;
-                var11 = _closure1_slot1;
-                var13 = _closure1_slot2;
-                var10 = 9;
-                var10 = var13[var10];
-                var11 = var11.bind(var3)(var10);
-                var10 = {};
-                var7 = var12.bind(var3)(var11, var10);
-            case 293:
+                var7 = _closure1_slot9;
+            case 265:
                 var6[3] = var7;
                 var4.children = var6;
                 var6 = var2.bind(var3)(var1, var4);
@@ -180,4 +179,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 6555, 1379, 33, 1297, 11674, 11676, 11685, 11686, 11687, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 6571, 1379, 33, 1297, 11477, 11478, 11480, 11489, 11490, 2]);

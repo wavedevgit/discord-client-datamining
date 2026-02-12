@@ -152,7 +152,7 @@ public class ScreenContainer extends ViewGroup {
                 FragmentManager childFragmentManager = fragmentWrapper.a().getChildFragmentManager();
                 Intrinsics.checkNotNullExpressionValue(childFragmentManager, "getChildFragmentManager(...)");
                 setFragmentManager(childFragmentManager);
-                unit = Unit.f31987a;
+                unit = Unit.f31988a;
             } else {
                 unit = null;
             }
@@ -259,7 +259,7 @@ public class ScreenContainer extends ViewGroup {
         while (true) {
             if (it.hasNext()) {
                 obj = it.next();
-                if (e((ScreenFragmentWrapper) obj) == Screen.ActivityState.f19034i) {
+                if (e((ScreenFragmentWrapper) obj) == Screen.ActivityState.f19035i) {
                     break;
                 }
             } else {
@@ -386,7 +386,7 @@ public class ScreenContainer extends ViewGroup {
                 ScreenFragmentWrapper next = it.next();
                 Intrinsics.checkNotNullExpressionValue(next, "next(...)");
                 ScreenFragmentWrapper screenFragmentWrapper = next;
-                if (e(screenFragmentWrapper) == Screen.ActivityState.f19032d && screenFragmentWrapper.a().isAdded()) {
+                if (e(screenFragmentWrapper) == Screen.ActivityState.f19033d && screenFragmentWrapper.a().isAdded()) {
                     c(createTransaction, screenFragmentWrapper.a());
                 }
                 hashSet.remove(screenFragmentWrapper.a());
@@ -412,7 +412,7 @@ public class ScreenContainer extends ViewGroup {
                 Intrinsics.checkNotNullExpressionValue(next2, "next(...)");
                 ScreenFragmentWrapper screenFragmentWrapper2 = next2;
                 screenFragmentWrapper2.h().setTransitioning(z10);
-                if (e(screenFragmentWrapper2) != Screen.ActivityState.f19032d) {
+                if (e(screenFragmentWrapper2) != Screen.ActivityState.f19033d) {
                     if (screenFragmentWrapper2.a().isAdded()) {
                         if (z11) {
                             c(createTransaction, screenFragmentWrapper2.a());

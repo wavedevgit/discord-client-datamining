@@ -15,10 +15,10 @@ import p8.n;
 public final class e {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f25401e = new a(null);
+    public static final a f25402e = new a(null);
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Lazy f25402f = l.a(o.f6081d, new Function0() { // from class: ga.d
+    private static final Lazy f25403f = l.a(o.f6081d, new Function0() { // from class: ga.d
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             e f10;
@@ -28,16 +28,16 @@ public final class e {
     });
 
     /* renamed from: a  reason: collision with root package name */
-    private int f25403a;
+    private int f25404a;
 
     /* renamed from: b  reason: collision with root package name */
-    private List f25404b;
+    private List f25405b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ga.a f25405c = new ga.a();
+    private final ga.a f25406c = new ga.a();
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f25406d;
+    private boolean f25407d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -76,7 +76,7 @@ public final class e {
         }
 
         public final e d() {
-            return (e) e.f25402f.getValue();
+            return (e) e.f25403f.getValue();
         }
 
         private a() {
@@ -88,11 +88,11 @@ public final class e {
     }
 
     public static final c d(InputStream inputStream) {
-        return f25401e.c(inputStream);
+        return f25402e.c(inputStream);
     }
 
     public static final e e() {
-        return f25401e.d();
+        return f25402e.d();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -101,42 +101,42 @@ public final class e {
     }
 
     private final void h() {
-        this.f25403a = this.f25405c.b();
-        List<c.b> list = this.f25404b;
+        this.f25404a = this.f25406c.b();
+        List<c.b> list = this.f25405b;
         if (list != null) {
             Intrinsics.checkNotNull(list);
             for (c.b bVar : list) {
-                this.f25403a = Math.max(this.f25403a, bVar.b());
+                this.f25404a = Math.max(this.f25404a, bVar.b());
             }
         }
     }
 
     public final c c(InputStream is2) {
         Intrinsics.checkNotNullParameter(is2, "is");
-        int i10 = this.f25403a;
+        int i10 = this.f25404a;
         byte[] bArr = new byte[i10];
-        int e10 = f25401e.e(i10, is2, bArr);
-        c a10 = this.f25405c.a(bArr, e10);
-        if (Intrinsics.areEqual(a10, b.f25394n) && !this.f25406d) {
-            a10 = c.f25398d;
+        int e10 = f25402e.e(i10, is2, bArr);
+        c a10 = this.f25406c.a(bArr, e10);
+        if (Intrinsics.areEqual(a10, b.f25395n) && !this.f25407d) {
+            a10 = c.f25399d;
         }
-        if (a10 != c.f25398d) {
+        if (a10 != c.f25399d) {
             return a10;
         }
-        List<c.b> list = this.f25404b;
+        List<c.b> list = this.f25405b;
         if (list != null) {
             for (c.b bVar : list) {
                 c a11 = bVar.a(bArr, e10);
-                if (a11 != c.f25398d) {
+                if (a11 != c.f25399d) {
                     return a11;
                 }
             }
         }
-        return c.f25398d;
+        return c.f25399d;
     }
 
     public final e g(boolean z10) {
-        this.f25406d = z10;
+        this.f25407d = z10;
         return this;
     }
 }

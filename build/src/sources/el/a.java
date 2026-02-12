@@ -15,10 +15,10 @@ import ok.g;
 public class a implements m {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final p[] f22920b = new p[0];
+    private static final p[] f22921b = new p[0];
 
     /* renamed from: a  reason: collision with root package name */
-    private final e f22921a = new e();
+    private final e f22922a = new e();
 
     private static ok.b b(ok.b bVar) {
         int[] k10 = bVar.k();
@@ -106,11 +106,11 @@ public class a implements m {
         p[] b10;
         ok.e eVar;
         if (map != null && map.containsKey(kk.e.PURE_BARCODE)) {
-            eVar = this.f22921a.c(b(cVar.a()), map);
-            b10 = f22920b;
+            eVar = this.f22922a.c(b(cVar.a()), map);
+            b10 = f22921b;
         } else {
             g e10 = new gl.c(cVar.a()).e(map);
-            ok.e c10 = this.f22921a.c(e10.a(), map);
+            ok.e c10 = this.f22922a.c(e10.a(), map);
             b10 = e10.b();
             eVar = c10;
         }

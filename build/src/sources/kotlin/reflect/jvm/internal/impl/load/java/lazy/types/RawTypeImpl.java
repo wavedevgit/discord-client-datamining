@@ -74,9 +74,9 @@ public final class RawTypeImpl extends FlexibleType implements RawType {
     @NotNull
     public MemberScope getMemberScope() {
         ClassDescriptor classDescriptor;
-        ClassifierDescriptor mo1202getDeclarationDescriptor = getConstructor().mo1202getDeclarationDescriptor();
-        if (mo1202getDeclarationDescriptor instanceof ClassDescriptor) {
-            classDescriptor = (ClassDescriptor) mo1202getDeclarationDescriptor;
+        ClassifierDescriptor mo1201getDeclarationDescriptor = getConstructor().mo1201getDeclarationDescriptor();
+        if (mo1201getDeclarationDescriptor instanceof ClassDescriptor) {
+            classDescriptor = (ClassDescriptor) mo1201getDeclarationDescriptor;
         } else {
             classDescriptor = null;
         }
@@ -85,7 +85,7 @@ public final class RawTypeImpl extends FlexibleType implements RawType {
             Intrinsics.checkNotNullExpressionValue(memberScope, "getMemberScope(...)");
             return memberScope;
         }
-        throw new IllegalStateException(("Incorrect classifier: " + getConstructor().mo1202getDeclarationDescriptor()).toString());
+        throw new IllegalStateException(("Incorrect classifier: " + getConstructor().mo1201getDeclarationDescriptor()).toString());
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.FlexibleType
@@ -103,7 +103,7 @@ public final class RawTypeImpl extends FlexibleType implements RawType {
             List e10 = e(renderer, getLowerBound());
             List e11 = e(renderer, getUpperBound());
             List list = e10;
-            String x02 = CollectionsKt.x0(list, ", ", null, null, 0, null, c.f33027d, 30, null);
+            String x02 = CollectionsKt.x0(list, ", ", null, null, 0, null, c.f33028d, 30, null);
             List<Pair> p12 = CollectionsKt.p1(list, e11);
             if (!(p12 instanceof Collection) || !p12.isEmpty()) {
                 for (Pair pair : p12) {

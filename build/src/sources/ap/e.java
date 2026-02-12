@@ -287,55 +287,55 @@ public final class e {
     public final g4 e() {
         switch (b.f5957a[ordinal()]) {
             case 1:
-                return g4.f49297e;
+                return g4.f49298e;
             case 2:
-                return g4.f49298i;
+                return g4.f49299i;
             case 3:
-                return g4.f49297e;
+                return g4.f49298e;
             case 4:
-                return g4.f49297e;
+                return g4.f49298e;
             case 5:
-                return g4.f49297e;
+                return g4.f49298e;
             case 6:
-                return g4.f49297e;
+                return g4.f49298e;
             case 7:
-                return g4.f49297e;
+                return g4.f49298e;
             case 8:
-                return g4.f49296d;
+                return g4.f49297d;
             case 9:
-                return g4.f49299o;
+                return g4.f49300o;
             case 10:
-                return g4.f49299o;
+                return g4.f49300o;
             case 11:
-                return g4.f49297e;
+                return g4.f49298e;
             case 12:
-                return g4.f49297e;
+                return g4.f49298e;
             case 13:
-                return g4.f49297e;
+                return g4.f49298e;
             case 14:
-                return g4.f49297e;
+                return g4.f49298e;
             case 15:
-                return g4.f49296d;
+                return g4.f49297d;
             case 16:
-                return g4.f49297e;
+                return g4.f49298e;
             case 17:
-                return g4.f49296d;
+                return g4.f49297d;
             case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
-                return g4.f49297e;
+                return g4.f49298e;
             case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
-                return g4.f49297e;
+                return g4.f49298e;
             case 20:
-                return g4.f49297e;
+                return g4.f49298e;
             case ChatViewRecyclerTypes.FLAGGED_MESSAGE_EMBED /* 21 */:
-                return g4.f49297e;
+                return g4.f49298e;
             case ChatViewRecyclerTypes.FLAGGED_MESSAGE_ACTION_BAR /* 22 */:
-                return g4.f49297e;
+                return g4.f49298e;
             case 23:
-                return g4.f49297e;
+                return g4.f49298e;
             case ChatViewRecyclerTypes.SURVEY_INDICATION /* 24 */:
-                return g4.f49297e;
+                return g4.f49298e;
             case ChatViewRecyclerTypes.GUILD_INVITE_DISABLED /* 25 */:
-                return g4.f49297e;
+                return g4.f49298e;
             case ChatViewRecyclerTypes.MEDIA_MOSAIC_ATTACHMENT /* 26 */:
                 throw new RuntimeException("IdClass is 'UNKNOWN'.");
             default:

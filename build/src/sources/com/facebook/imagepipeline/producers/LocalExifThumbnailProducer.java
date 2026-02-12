@@ -18,13 +18,13 @@ import java.util.concurrent.Executor;
 public class LocalExifThumbnailProducer implements m1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Executor f11279a;
+    private final Executor f11280a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final s8.i f11280b;
+    private final s8.i f11281b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ContentResolver f11281c;
+    private final ContentResolver f11282c;
 
     /* JADX INFO: Access modifiers changed from: private */
     @com.facebook.soloader.g
@@ -42,12 +42,12 @@ public class LocalExifThumbnailProducer implements m1 {
     class a extends e1 {
 
         /* renamed from: q  reason: collision with root package name */
-        final /* synthetic */ ImageRequest f11283q;
+        final /* synthetic */ ImageRequest f11284q;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Consumer consumer, y0 y0Var, ProducerContext producerContext, String str, ImageRequest imageRequest) {
             super(consumer, y0Var, producerContext, str);
-            this.f11283q = imageRequest;
+            this.f11284q = imageRequest;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -74,9 +74,9 @@ public class LocalExifThumbnailProducer implements m1 {
         @Override // n8.h
         /* renamed from: l */
         public ta.k c() {
-            ExifInterface g10 = LocalExifThumbnailProducer.this.g(this.f11283q.getSourceUri());
+            ExifInterface g10 = LocalExifThumbnailProducer.this.g(this.f11284q.getSourceUri());
             if (g10 != null && g10.hasThumbnail()) {
-                return LocalExifThumbnailProducer.this.e(LocalExifThumbnailProducer.this.f11280b.d((byte[]) p8.j.g(g10.getThumbnail())), g10);
+                return LocalExifThumbnailProducer.this.e(LocalExifThumbnailProducer.this.f11281b.d((byte[]) p8.j.g(g10.getThumbnail())), g10);
             }
             return null;
         }
@@ -86,22 +86,22 @@ public class LocalExifThumbnailProducer implements m1 {
     class b extends f {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ e1 f11285a;
+        final /* synthetic */ e1 f11286a;
 
         b(e1 e1Var) {
-            this.f11285a = e1Var;
+            this.f11286a = e1Var;
         }
 
         @Override // com.facebook.imagepipeline.producers.x0
         public void b() {
-            this.f11285a.a();
+            this.f11286a.a();
         }
     }
 
     public LocalExifThumbnailProducer(Executor executor, s8.i iVar, ContentResolver contentResolver) {
-        this.f11279a = executor;
-        this.f11280b = iVar;
-        this.f11281c = contentResolver;
+        this.f11280a = executor;
+        this.f11281b = iVar;
+        this.f11282c = contentResolver;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -122,7 +122,7 @@ public class LocalExifThumbnailProducer implements m1 {
         try {
             ta.k kVar = new ta.k(E0);
             CloseableReference.z(E0);
-            kVar.b1(ga.b.f25382b);
+            kVar.b1(ga.b.f25383b);
             kVar.f1(h10);
             kVar.z1(i10);
             kVar.a1(i11);
@@ -149,7 +149,7 @@ public class LocalExifThumbnailProducer implements m1 {
         producerContext.m("local", "exif");
         a aVar = new a(consumer, y10, producerContext, "LocalExifThumbnailProducer", I);
         producerContext.h(new b(aVar));
-        this.f11279a.execute(aVar);
+        this.f11280a.execute(aVar);
     }
 
     boolean f(String str) {
@@ -164,7 +164,7 @@ public class LocalExifThumbnailProducer implements m1 {
     }
 
     ExifInterface g(Uri uri) {
-        String e10 = x8.f.e(this.f11281c, uri);
+        String e10 = x8.f.e(this.f11282c, uri);
         if (e10 == null) {
             return null;
         }
@@ -176,7 +176,7 @@ public class LocalExifThumbnailProducer implements m1 {
         if (f(e10)) {
             return new ExifInterface(e10);
         }
-        AssetFileDescriptor a10 = x8.f.a(this.f11281c, uri);
+        AssetFileDescriptor a10 = x8.f.a(this.f11282c, uri);
         if (a10 != null) {
             ExifInterface a11 = new Api24Utils().a(a10.getFileDescriptor());
             a10.close();

@@ -7,26 +7,26 @@ import java.util.Objects;
 public final class o {
 
     /* renamed from: a  reason: collision with root package name */
-    public final DateTimeFormatter f30570a;
+    public final DateTimeFormatter f30571a;
 
     /* renamed from: b  reason: collision with root package name */
-    public boolean f30571b = true;
+    public boolean f30572b = true;
 
     /* renamed from: c  reason: collision with root package name */
-    public boolean f30572c = true;
+    public boolean f30573c = true;
 
     /* renamed from: d  reason: collision with root package name */
-    public final ArrayList f30573d;
+    public final ArrayList f30574d;
 
     public o(DateTimeFormatter dateTimeFormatter) {
         ArrayList arrayList = new ArrayList();
-        this.f30573d = arrayList;
-        this.f30570a = dateTimeFormatter;
+        this.f30574d = arrayList;
+        this.f30571a = dateTimeFormatter;
         arrayList.add(new u());
     }
 
     public final boolean a(char c10, char c11) {
-        if (this.f30571b) {
+        if (this.f30572b) {
             return c10 == c11;
         }
         return b(c10, c11);
@@ -34,7 +34,7 @@ public final class o {
 
     public final boolean g(CharSequence charSequence, int i10, CharSequence charSequence2, int i11, int i12) {
         if (i10 + i12 <= charSequence.length() && i11 + i12 <= charSequence2.length()) {
-            if (this.f30571b) {
+            if (this.f30572b) {
                 for (int i13 = 0; i13 < i12; i13++) {
                     if (charSequence.charAt(i10 + i13) == charSequence2.charAt(i11 + i13)) {
                     }
@@ -57,23 +57,23 @@ public final class o {
     }
 
     public final u c() {
-        ArrayList arrayList = this.f30573d;
+        ArrayList arrayList = this.f30574d;
         return (u) arrayList.get(arrayList.size() - 1);
     }
 
     public final Long d(j$.time.temporal.a aVar) {
-        return (Long) ((HashMap) c().f30584a).get(aVar);
+        return (Long) ((HashMap) c().f30585a).get(aVar);
     }
 
     public final int f(j$.time.temporal.n nVar, long j10, int i10, int i11) {
         Objects.requireNonNull(nVar, "field");
-        Long l10 = (Long) ((HashMap) c().f30584a).put(nVar, Long.valueOf(j10));
+        Long l10 = (Long) ((HashMap) c().f30585a).put(nVar, Long.valueOf(j10));
         return (l10 == null || l10.longValue() == j10) ? i11 : ~i10;
     }
 
     public final void e(j$.time.j jVar) {
         Objects.requireNonNull(jVar, "zone");
-        c().f30585b = jVar;
+        c().f30586b = jVar;
     }
 
     public final String toString() {

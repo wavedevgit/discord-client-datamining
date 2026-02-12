@@ -9,9 +9,9 @@ public class o extends n {
     @Override // r1.n
     protected Typeface j(Object obj) {
         try {
-            Object newInstance = Array.newInstance(this.f45905g, 1);
+            Object newInstance = Array.newInstance(this.f45906g, 1);
             Array.set(newInstance, 0, obj);
-            return (Typeface) this.f45911m.invoke(null, newInstance, "sans-serif", -1, -1);
+            return (Typeface) this.f45912m.invoke(null, newInstance, "sans-serif", -1, -1);
         } catch (IllegalAccessException | InvocationTargetException e10) {
             throw new RuntimeException(e10);
         }

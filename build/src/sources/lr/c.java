@@ -3,25 +3,25 @@ package lr;
 public final class c implements h, kr.a {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Object f35997c = new Object();
+    private static final Object f35998c = new Object();
 
     /* renamed from: a  reason: collision with root package name */
-    private volatile h f35998a;
+    private volatile h f35999a;
 
     /* renamed from: b  reason: collision with root package name */
-    private volatile Object f35999b = f35997c;
+    private volatile Object f36000b = f35998c;
 
     private c(h hVar) {
-        this.f35998a = hVar;
+        this.f35999a = hVar;
     }
 
     private synchronized Object a() {
         Object obj;
-        obj = this.f35999b;
-        if (obj == f35997c) {
-            obj = this.f35998a.get();
-            this.f35999b = d(this.f35999b, obj);
-            this.f35998a = null;
+        obj = this.f36000b;
+        if (obj == f35998c) {
+            obj = this.f35999a.get();
+            this.f36000b = d(this.f36000b, obj);
+            this.f35999a = null;
         }
         return obj;
     }
@@ -42,7 +42,7 @@ public final class c implements h, kr.a {
     }
 
     private static Object d(Object obj, Object obj2) {
-        if (obj != f35997c) {
+        if (obj != f35998c) {
             if (obj == obj2) {
                 return obj2;
             }
@@ -53,8 +53,8 @@ public final class c implements h, kr.a {
 
     @Override // javax.inject.Provider
     public Object get() {
-        Object obj = this.f35999b;
-        if (obj == f35997c) {
+        Object obj = this.f36000b;
+        if (obj == f35998c) {
             return a();
         }
         return obj;

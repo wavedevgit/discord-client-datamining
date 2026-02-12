@@ -5,17 +5,17 @@ import java.util.Arrays;
 public final class l {
 
     /* renamed from: a  reason: collision with root package name */
-    Object[] f14976a = new Object[8];
+    Object[] f14977a = new Object[8];
 
     /* renamed from: b  reason: collision with root package name */
-    int f14977b = 0;
+    int f14978b = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    k f14978c;
+    k f14979c;
 
     public final l a(Object obj, Object obj2) {
-        int i10 = this.f14977b + 1;
-        Object[] objArr = this.f14976a;
+        int i10 = this.f14978b + 1;
+        Object[] objArr = this.f14977a;
         int length = objArr.length;
         int i11 = i10 + i10;
         if (i11 > length) {
@@ -27,23 +27,23 @@ public final class l {
             if (i12 < 0) {
                 i12 = Integer.MAX_VALUE;
             }
-            this.f14976a = Arrays.copyOf(objArr, i12);
+            this.f14977a = Arrays.copyOf(objArr, i12);
         }
         e.a(obj, obj2);
-        Object[] objArr2 = this.f14976a;
-        int i13 = this.f14977b;
+        Object[] objArr2 = this.f14977a;
+        int i13 = this.f14978b;
         int i14 = i13 + i13;
         objArr2[i14] = obj;
         objArr2[i14 + 1] = obj2;
-        this.f14977b = i13 + 1;
+        this.f14978b = i13 + 1;
         return this;
     }
 
     public final m b() {
-        k kVar = this.f14978c;
+        k kVar = this.f14979c;
         if (kVar == null) {
-            u g10 = u.g(this.f14977b, this.f14976a, this);
-            k kVar2 = this.f14978c;
+            u g10 = u.g(this.f14978b, this.f14977a, this);
+            k kVar2 = this.f14979c;
             if (kVar2 == null) {
                 return g10;
             }

@@ -8,36 +8,36 @@ public class g extends e {
     private static final long serialVersionUID = -84764920511581480L;
 
     /* renamed from: s  reason: collision with root package name */
-    private final transient a1 f37422s;
+    private final transient a1 f37423s;
 
     public g(Class cls, a1 a1Var) {
         super("DAY_OF_WEEK", cls, y0.class, 'E');
-        this.f37422s = a1Var;
+        this.f37423s = a1Var;
     }
 
     @Override // bu.p
     /* renamed from: R */
     public y0 f() {
-        return this.f37422s.f().f(6);
+        return this.f37423s.f().f(6);
     }
 
     @Override // bu.p
     /* renamed from: S */
     public y0 B() {
-        return this.f37422s.f();
+        return this.f37423s.f();
     }
 
     @Override // net.time4j.calendar.service.e
     /* renamed from: T */
     public int O(y0 y0Var) {
-        return y0Var.e(this.f37422s);
+        return y0Var.e(this.f37423s);
     }
 
     @Override // bu.e, java.util.Comparator
     /* renamed from: b */
     public int compare(o oVar, o oVar2) {
-        int e10 = ((y0) oVar.k(this)).e(this.f37422s);
-        int e11 = ((y0) oVar2.k(this)).e(this.f37422s);
+        int e10 = ((y0) oVar.k(this)).e(this.f37423s);
+        int e11 = ((y0) oVar2.k(this)).e(this.f37423s);
         if (e10 < e11) {
             return -1;
         }

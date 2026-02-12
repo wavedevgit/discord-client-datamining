@@ -3,7 +3,7 @@ package pg;
 final class hb extends jb {
 
     /* renamed from: t  reason: collision with root package name */
-    private static final hb f42068t = new hb("unusedTag");
+    private static final hb f42069t = new hb("unusedTag");
 
     private hb(String str) {
         super();

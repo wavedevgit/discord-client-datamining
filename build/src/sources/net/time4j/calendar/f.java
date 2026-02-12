@@ -8,42 +8,42 @@ import java.util.Locale;
 public abstract class f extends bu.m {
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient int f37319d;
+    private final transient int f37320d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient int f37320e;
+    private final transient int f37321e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient h f37321i;
+    private final transient h f37322i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient int f37322o;
+    private final transient int f37323o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient long f37323p;
+    private final transient long f37324p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient int f37324q;
+    private final transient int f37325q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static class b implements z {
 
         /* renamed from: d  reason: collision with root package name */
-        private final bu.p f37325d;
+        private final bu.p f37326d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final boolean f37326e;
+        private final boolean f37327e;
 
         @Override // bu.z
         /* renamed from: b */
         public bu.p a(f fVar) {
-            return this.f37325d;
+            return this.f37326d;
         }
 
         @Override // bu.z
         /* renamed from: c */
         public bu.p h(f fVar) {
-            return this.f37325d;
+            return this.f37326d;
         }
 
         @Override // bu.z
@@ -61,7 +61,7 @@ public abstract class f extends bu.m {
         @Override // bu.z
         /* renamed from: e */
         public net.time4j.calendar.c q(f fVar) {
-            if (this.f37326e) {
+            if (this.f37327e) {
                 if (fVar.V() == 75) {
                     return net.time4j.calendar.c.r(10);
                 }
@@ -114,8 +114,8 @@ public abstract class f extends bu.m {
         }
 
         private b(bu.p pVar, boolean z10) {
-            this.f37325d = pVar;
-            this.f37326e = z10;
+            this.f37326d = pVar;
+            this.f37327e = z10;
         }
     }
 
@@ -124,10 +124,10 @@ public abstract class f extends bu.m {
     public static class c implements m0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f37327a;
+        private final int f37328a;
 
         c(int i10) {
-            this.f37327a = i10;
+            this.f37328a = i10;
         }
 
         private static long e(f fVar, f fVar2, int i10) {
@@ -249,7 +249,7 @@ public abstract class f extends bu.m {
             int V = fVar.V();
             int number = fVar.f0().getNumber();
             h b02 = fVar.b0();
-            int i12 = this.f37327a;
+            int i12 = this.f37328a;
             int i13 = 1;
             if (i12 != 0) {
                 if (i12 != 1) {
@@ -337,7 +337,7 @@ public abstract class f extends bu.m {
         @Override // bu.m0
         /* renamed from: d */
         public long a(f fVar, f fVar2) {
-            return e(fVar, fVar2, this.f37327a);
+            return e(fVar, fVar2, this.f37328a);
         }
     }
 
@@ -345,34 +345,34 @@ public abstract class f extends bu.m {
     private static class d implements c0 {
 
         /* renamed from: d  reason: collision with root package name */
-        private final bu.p f37328d;
+        private final bu.p f37329d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final int f37329e;
+        private final int f37330e;
 
         @Override // bu.z
         /* renamed from: b */
         public bu.p a(f fVar) {
-            return this.f37328d;
+            return this.f37329d;
         }
 
         @Override // bu.z
         /* renamed from: c */
         public bu.p h(f fVar) {
-            return this.f37328d;
+            return this.f37329d;
         }
 
         @Override // bu.c0
         /* renamed from: d */
         public int u(f fVar) {
-            int i10 = this.f37329e;
+            int i10 = this.f37330e;
             if (i10 != 0) {
                 if (i10 != 1) {
                     if (i10 != 2) {
                         if (i10 == 3) {
                             return fVar.V();
                         }
-                        throw new UnsupportedOperationException("Unknown element index: " + this.f37329e);
+                        throw new UnsupportedOperationException("Unknown element index: " + this.f37330e);
                     }
                     int number = fVar.b0().getNumber();
                     int a02 = fVar.a0();
@@ -390,7 +390,7 @@ public abstract class f extends bu.m {
         /* renamed from: e */
         public Integer m(f fVar) {
             int lengthOfMonth;
-            int i10 = this.f37329e;
+            int i10 = this.f37330e;
             if (i10 != 0) {
                 if (i10 != 1) {
                     if (i10 != 2) {
@@ -398,7 +398,7 @@ public abstract class f extends bu.m {
                             net.time4j.calendar.d U = fVar.U();
                             lengthOfMonth = ((f) U.b(U.a())).V();
                         } else {
-                            throw new UnsupportedOperationException("Unknown element index: " + this.f37329e);
+                            throw new UnsupportedOperationException("Unknown element index: " + this.f37330e);
                         }
                     } else if (fVar.isLeapYear()) {
                         lengthOfMonth = 13;
@@ -417,7 +417,7 @@ public abstract class f extends bu.m {
         @Override // bu.z
         /* renamed from: f */
         public Integer q(f fVar) {
-            if (this.f37329e == 3) {
+            if (this.f37330e == 3) {
                 net.time4j.calendar.d U = fVar.U();
                 return Integer.valueOf(((f) U.b(U.d())).V());
             }
@@ -434,7 +434,7 @@ public abstract class f extends bu.m {
             if (i10 < 1) {
                 return false;
             }
-            int i11 = this.f37329e;
+            int i11 = this.f37330e;
             if (i11 == 0) {
                 if (i10 > 30) {
                     return false;
@@ -462,7 +462,7 @@ public abstract class f extends bu.m {
                 }
                 return true;
             } else {
-                throw new UnsupportedOperationException("Unknown element index: " + this.f37329e);
+                throw new UnsupportedOperationException("Unknown element index: " + this.f37330e);
             }
         }
 
@@ -478,7 +478,7 @@ public abstract class f extends bu.m {
         @Override // bu.c0
         /* renamed from: k */
         public f n(f fVar, int i10, boolean z10) {
-            int i11 = this.f37329e;
+            int i11 = this.f37330e;
             boolean z11 = true;
             if (i11 != 0) {
                 if (i11 != 1) {
@@ -490,7 +490,7 @@ public abstract class f extends bu.m {
                             }
                             throw new IllegalArgumentException("Sexagesimal cycle out of range: " + i10);
                         }
-                        throw new UnsupportedOperationException("Unknown element index: " + this.f37329e);
+                        throw new UnsupportedOperationException("Unknown element index: " + this.f37330e);
                     } else if (i(fVar, i10)) {
                         int a02 = fVar.a0();
                         if (a02 > 0 && a02 < i10) {
@@ -532,8 +532,8 @@ public abstract class f extends bu.m {
         }
 
         private d(int i10, bu.p pVar) {
-            this.f37329e = i10;
-            this.f37328d = pVar;
+            this.f37330e = i10;
+            this.f37329d = pVar;
         }
     }
 
@@ -542,7 +542,7 @@ public abstract class f extends bu.m {
     public static class e implements z {
 
         /* renamed from: d  reason: collision with root package name */
-        private final bu.p f37330d;
+        private final bu.p f37331d;
 
         static f i(f fVar, h hVar) {
             net.time4j.calendar.d U = fVar.U();
@@ -559,13 +559,13 @@ public abstract class f extends bu.m {
         @Override // bu.z
         /* renamed from: b */
         public bu.p a(f fVar) {
-            return this.f37330d;
+            return this.f37331d;
         }
 
         @Override // bu.z
         /* renamed from: c */
         public bu.p h(f fVar) {
-            return this.f37330d;
+            return this.f37331d;
         }
 
         @Override // bu.z
@@ -608,18 +608,18 @@ public abstract class f extends bu.m {
         }
 
         private e(bu.p pVar) {
-            this.f37330d = pVar;
+            this.f37331d = pVar;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(int i10, int i11, h hVar, int i12, long j10) {
-        this.f37319d = i10;
-        this.f37320e = i11;
-        this.f37321i = hVar;
-        this.f37322o = i12;
-        this.f37323p = j10;
-        this.f37324q = U().g(i10, i11);
+        this.f37320d = i10;
+        this.f37321e = i11;
+        this.f37322i = hVar;
+        this.f37323o = i12;
+        this.f37324p = j10;
+        this.f37325q = U().g(i10, i11);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -662,19 +662,19 @@ public abstract class f extends bu.m {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int V() {
-        return this.f37319d;
+        return this.f37320d;
     }
 
     public int Y() {
-        return (int) ((this.f37323p - U().q(this.f37319d, this.f37320e)) + 1);
+        return (int) ((this.f37324p - U().q(this.f37320d, this.f37321e)) + 1);
     }
 
     int a0() {
-        return this.f37324q;
+        return this.f37325q;
     }
 
     public h b0() {
-        return this.f37321i;
+        return this.f37322i;
     }
 
     @Override // bu.m
@@ -684,7 +684,7 @@ public abstract class f extends bu.m {
         }
         if (obj != null && getClass() == obj.getClass()) {
             f fVar = (f) obj;
-            if (this.f37319d == fVar.f37319d && this.f37320e == fVar.f37320e && this.f37322o == fVar.f37322o && this.f37321i.equals(fVar.f37321i) && this.f37323p == fVar.f37323p) {
+            if (this.f37320d == fVar.f37320d && this.f37321e == fVar.f37321e && this.f37323o == fVar.f37323o && this.f37322i.equals(fVar.f37322i) && this.f37324p == fVar.f37324p) {
                 return true;
             }
         }
@@ -692,45 +692,45 @@ public abstract class f extends bu.m {
     }
 
     public net.time4j.calendar.c f0() {
-        return net.time4j.calendar.c.r(this.f37320e);
+        return net.time4j.calendar.c.r(this.f37321e);
     }
 
     public int g() {
-        return this.f37322o;
+        return this.f37323o;
     }
 
     @Override // bu.m
     public int hashCode() {
-        long j10 = this.f37323p;
+        long j10 = this.f37324p;
         return (int) (j10 ^ (j10 >>> 32));
     }
 
     @Override // bu.m, bu.g
     public long i() {
-        return this.f37323p;
+        return this.f37324p;
     }
 
     public boolean isLeapYear() {
-        if (this.f37324q > 0) {
+        if (this.f37325q > 0) {
             return true;
         }
         return false;
     }
 
     public int lengthOfMonth() {
-        return (int) (((this.f37322o + U().p(this.f37323p + 1)) - this.f37323p) - 1);
+        return (int) (((this.f37323o + U().p(this.f37324p + 1)) - this.f37324p) - 1);
     }
 
     public int lengthOfYear() {
-        int i10 = this.f37319d;
+        int i10 = this.f37320d;
         int i11 = 1;
-        int i12 = this.f37320e + 1;
+        int i12 = this.f37321e + 1;
         if (i12 > 60) {
             i10++;
         } else {
             i11 = i12;
         }
-        return (int) (U().q(i10, i11) - U().q(this.f37319d, this.f37320e));
+        return (int) (U().q(i10, i11) - U().q(this.f37320d, this.f37321e));
     }
 
     public String toString() {
@@ -743,14 +743,14 @@ public abstract class f extends bu.m {
         sb2.append('[');
         sb2.append(f0().i(Locale.ROOT));
         sb2.append('(');
-        sb2.append(m(net.time4j.calendar.b.f37305a));
+        sb2.append(m(net.time4j.calendar.b.f37306a));
         sb2.append(")-");
-        sb2.append(this.f37321i.toString());
+        sb2.append(this.f37322i.toString());
         sb2.append('-');
-        if (this.f37322o < 10) {
+        if (this.f37323o < 10) {
             sb2.append('0');
         }
-        sb2.append(this.f37322o);
+        sb2.append(this.f37323o);
         sb2.append(']');
         return sb2.toString();
     }

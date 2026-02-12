@@ -12,33 +12,33 @@ import kotlin.jvm.internal.Intrinsics;
 public final class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final InputStream f51915a;
+    private final InputStream f51916a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Charset f51916b;
+    private final Charset f51917b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final CharsetDecoder f51917c;
+    private final CharsetDecoder f51918c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ByteBuffer f51918d;
+    private final ByteBuffer f51919d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f51919e;
+    private boolean f51920e;
 
     /* renamed from: f  reason: collision with root package name */
-    private char f51920f;
+    private char f51921f;
 
     public l(InputStream inputStream, Charset charset) {
         Intrinsics.checkNotNullParameter(inputStream, "inputStream");
         Intrinsics.checkNotNullParameter(charset, "charset");
-        this.f51915a = inputStream;
-        this.f51916b = charset;
+        this.f51916a = inputStream;
+        this.f51917b = charset;
         CharsetDecoder newDecoder = charset.newDecoder();
         CodingErrorAction codingErrorAction = CodingErrorAction.REPLACE;
-        this.f51917c = newDecoder.onMalformedInput(codingErrorAction).onUnmappableCharacter(codingErrorAction);
-        ByteBuffer wrap = ByteBuffer.wrap(f.f51896c.d());
-        this.f51918d = wrap;
+        this.f51918c = newDecoder.onMalformedInput(codingErrorAction).onUnmappableCharacter(codingErrorAction);
+        ByteBuffer wrap = ByteBuffer.wrap(f.f51897c.d());
+        this.f51919d = wrap;
         wrap.flip();
     }
 
@@ -49,16 +49,16 @@ public final class l {
         }
         boolean z10 = false;
         while (true) {
-            CoderResult decode = this.f51917c.decode(this.f51918d, wrap, z10);
+            CoderResult decode = this.f51918c.decode(this.f51919d, wrap, z10);
             if (decode.isUnderflow()) {
                 if (z10 || !wrap.hasRemaining()) {
                     break;
                 } else if (b() < 0) {
-                    if (wrap.position() == 0 && !this.f51918d.hasRemaining()) {
+                    if (wrap.position() == 0 && !this.f51919d.hasRemaining()) {
                         z10 = true;
                         break;
                     }
-                    this.f51917c.reset();
+                    this.f51918c.reset();
                     z10 = true;
                 } else {
                     continue;
@@ -71,7 +71,7 @@ public final class l {
             }
         }
         if (z10) {
-            this.f51917c.reset();
+            this.f51918c.reset();
         }
         if (wrap.position() == 0) {
             return -1;
@@ -81,33 +81,33 @@ public final class l {
 
     private final int b() {
         int i10;
-        this.f51918d.compact();
+        this.f51919d.compact();
         try {
-            int limit = this.f51918d.limit();
-            int position = this.f51918d.position();
+            int limit = this.f51919d.limit();
+            int position = this.f51919d.position();
             if (position <= limit) {
                 i10 = limit - position;
             } else {
                 i10 = 0;
             }
-            int read = this.f51915a.read(this.f51918d.array(), this.f51918d.arrayOffset() + position, i10);
+            int read = this.f51916a.read(this.f51919d.array(), this.f51919d.arrayOffset() + position, i10);
             if (read < 0) {
                 return read;
             }
-            ByteBuffer byteBuffer = this.f51918d;
+            ByteBuffer byteBuffer = this.f51919d;
             Intrinsics.checkNotNull(byteBuffer, "null cannot be cast to non-null type java.nio.Buffer");
             byteBuffer.position(position + read);
-            this.f51918d.flip();
-            return this.f51918d.remaining();
+            this.f51919d.flip();
+            return this.f51919d.remaining();
         } finally {
-            this.f51918d.flip();
+            this.f51919d.flip();
         }
     }
 
     private final int c() {
-        if (this.f51919e) {
-            this.f51919e = false;
-            return this.f51920f;
+        if (this.f51920e) {
+            this.f51920e = false;
+            return this.f51921f;
         }
         char[] cArr = new char[2];
         int d10 = d(cArr, 0, 2);
@@ -116,8 +116,8 @@ public final class l {
         }
         if (d10 != 1) {
             if (d10 == 2) {
-                this.f51920f = cArr[1];
-                this.f51919e = true;
+                this.f51921f = cArr[1];
+                this.f51920e = true;
                 return cArr[0];
             }
             throw new IllegalStateException(("Unreachable state: " + d10).toString());
@@ -132,11 +132,11 @@ public final class l {
             return 0;
         }
         if (i10 >= 0 && i10 < array.length && i11 >= 0 && i10 + i11 <= array.length) {
-            if (this.f51919e) {
-                array[i10] = this.f51920f;
+            if (this.f51920e) {
+                array[i10] = this.f51921f;
                 i10++;
                 i11--;
-                this.f51919e = false;
+                this.f51920e = false;
                 if (i11 == 0) {
                     return 1;
                 }
@@ -159,8 +159,8 @@ public final class l {
     }
 
     public final void e() {
-        f fVar = f.f51896c;
-        byte[] array = this.f51918d.array();
+        f fVar = f.f51897c;
+        byte[] array = this.f51919d.array();
         Intrinsics.checkNotNullExpressionValue(array, "array(...)");
         fVar.c(array);
     }

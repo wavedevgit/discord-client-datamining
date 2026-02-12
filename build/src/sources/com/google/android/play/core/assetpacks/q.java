@@ -12,6 +12,6 @@ final class q extends o {
     @Override // com.google.android.play.core.assetpacks.o, ai.d0
     public final void O0(Bundle bundle, Bundle bundle2) {
         super.O0(bundle, bundle2);
-        this.f16805c.e((ParcelFileDescriptor) bundle.getParcelable("chunk_file_descriptor"));
+        this.f16806c.e((ParcelFileDescriptor) bundle.getParcelable("chunk_file_descriptor"));
     }
 }

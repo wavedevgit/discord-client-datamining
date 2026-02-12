@@ -31,44 +31,44 @@ import ys.c0;
 public final class j implements CoroutineScope, f.b, t.c {
 
     /* renamed from: d  reason: collision with root package name */
-    private final k f23905d;
+    private final k f23906d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function1 f23906e;
+    private final Function1 f23907e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final t.c f23907i;
+    private final t.c f23908i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final t f23908o;
+    private final t f23909o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final CoroutineContext f23909p;
+    private final CoroutineContext f23910p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final long f23910q;
+    private final long f23911q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final h f23911r;
+    private final h f23912r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final fn.a f23912s;
+    private final fn.a f23913s;
 
     /* renamed from: t  reason: collision with root package name */
-    private Object f23913t;
+    private Object f23914t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final at.g f23914u;
+    private final at.g f23915u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Object f23915v;
+    private Object f23916v;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f23916d = new a();
+        public static final a f23917d = new a();
 
         a() {
             super(1);
@@ -85,18 +85,18 @@ public final class j implements CoroutineScope, f.b, t.c {
     static final class b extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Map f23917d;
+        final /* synthetic */ Map f23918d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(Map map) {
             super(0);
-            this.f23917d = map;
+            this.f23918d = map;
         }
 
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final Map invoke() {
-            return this.f23917d;
+            return this.f23918d;
         }
     }
 
@@ -118,10 +118,10 @@ public final class j implements CoroutineScope, f.b, t.c {
     static final class d extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f23918d;
+        int f23919d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f23919e;
+        /* synthetic */ Object f23920e;
 
         d(Continuation continuation) {
             super(2, continuation);
@@ -130,16 +130,16 @@ public final class j implements CoroutineScope, f.b, t.c {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             d dVar = new d(continuation);
-            dVar.f23919e = obj;
+            dVar.f23920e = obj;
             return dVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             gs.b.f();
-            if (this.f23918d == 0) {
+            if (this.f23919d == 0) {
                 kotlin.c.b(obj);
-                return j.this.c((r) this.f23919e);
+                return j.this.c((r) this.f23920e);
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -147,7 +147,7 @@ public final class j implements CoroutineScope, f.b, t.c {
         @Override // kotlin.jvm.functions.Function2
         /* renamed from: j */
         public final Object invoke(r rVar, Continuation continuation) {
-            return ((d) create(rVar, continuation)).invokeSuspend(Unit.f31987a);
+            return ((d) create(rVar, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -157,30 +157,30 @@ public final class j implements CoroutineScope, f.b, t.c {
         Intrinsics.checkNotNullParameter(baseContext, "baseContext");
         Intrinsics.checkNotNullParameter(emitOutputToParent, "emitOutputToParent");
         Intrinsics.checkNotNullParameter(interceptor, "interceptor");
-        this.f23905d = id2;
-        this.f23906e = emitOutputToParent;
-        this.f23907i = cVar;
-        this.f23908o = interceptor;
-        this.f23909p = baseContext.O0(z.a((Job) baseContext.m(Job.f34996k))).O0(new b0(id2.toString()));
-        this.f23910q = dVar == null ? 0L : dVar.a();
-        this.f23911r = new h(mVar == null ? null : mVar.a(), getCoroutineContext(), new c(this), this, interceptor, dVar);
-        this.f23912s = new fn.a();
-        this.f23913t = obj;
-        this.f23914u = at.j.b(Integer.MAX_VALUE, null, null, 6, null);
+        this.f23906d = id2;
+        this.f23907e = emitOutputToParent;
+        this.f23908i = cVar;
+        this.f23909o = interceptor;
+        this.f23910p = baseContext.O0(z.a((Job) baseContext.m(Job.f34997k))).O0(new b0(id2.toString()));
+        this.f23911q = dVar == null ? 0L : dVar.a();
+        this.f23912r = new h(mVar == null ? null : mVar.a(), getCoroutineContext(), new c(this), this, interceptor, dVar);
+        this.f23913s = new fn.a();
+        this.f23914t = obj;
+        this.f23915u = at.j.b(Integer.MAX_VALUE, null, null, 6, null);
         interceptor.d(this, this);
-        this.f23915v = u.a(interceptor, workflow, this).d(obj, mVar != null ? mVar.b() : null);
+        this.f23916v = u.a(interceptor, workflow, this).d(obj, mVar != null ? mVar.b() : null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final Object c(r rVar) {
-        Pair h10 = w.h(rVar, this.f23913t, this.f23915v);
+        Pair h10 = w.h(rVar, this.f23914t, this.f23916v);
         Object a10 = h10.a();
         v vVar = (v) h10.b();
-        this.f23915v = a10;
+        this.f23916v = a10;
         if (vVar == null) {
             return null;
         }
-        return this.f23906e.invoke(vVar.a());
+        return this.f23907e.invoke(vVar.a());
     }
 
     public static /* synthetic */ void e(j jVar, CancellationException cancellationException, int i10, Object obj) {
@@ -192,7 +192,7 @@ public final class j implements CoroutineScope, f.b, t.c {
 
     private final g f(String str, Function2 function2) {
         Job d10;
-        d10 = ys.i.d(kotlinx.coroutines.i.j(this, new b0("sideEffect[" + str + "] for " + this.f23905d)), null, c0.f55783e, function2, 1, null);
+        d10 = ys.i.d(kotlinx.coroutines.i.j(this, new b0("sideEffect[" + str + "] for " + this.f23906d)), null, c0.f55784e, function2, 1, null);
         return new g(str, d10);
     }
 
@@ -203,33 +203,33 @@ public final class j implements CoroutineScope, f.b, t.c {
         e eVar4;
         e eVar5;
         q(kVar, obj);
-        f fVar = new f(this.f23911r, this, this.f23914u);
-        Object f10 = u.a(this.f23908o, kVar, this).f(obj, this.f23915v, w.a(fVar, kVar));
+        f fVar = new f(this.f23912r, this, this.f23915u);
+        Object f10 = u.a(this.f23909o, kVar, this).f(obj, this.f23916v, w.a(fVar, kVar));
         fVar.f();
-        this.f23911r.c();
-        eVar = this.f23912s.f23854b;
+        this.f23912r.c();
+        eVar = this.f23913s.f23855b;
         for (e.a b10 = eVar.b(); b10 != null; b10 = b10.a()) {
             ((g) b10).c().start();
         }
-        fn.a aVar = this.f23912s;
-        eVar2 = aVar.f23853a;
+        fn.a aVar = this.f23913s;
+        eVar2 = aVar.f23854a;
         for (e.a b11 = eVar2.b(); b11 != null; b11 = b11.a()) {
             Job.a.a(((g) b11).c(), null, 1, null);
         }
-        eVar3 = aVar.f23853a;
-        eVar4 = aVar.f23854b;
-        aVar.f23853a = eVar4;
-        aVar.f23854b = eVar3;
-        eVar5 = aVar.f23854b;
+        eVar3 = aVar.f23854a;
+        eVar4 = aVar.f23855b;
+        aVar.f23854a = eVar4;
+        aVar.f23855b = eVar3;
+        eVar5 = aVar.f23855b;
         eVar5.a();
         return f10;
     }
 
     private final void q(en.k kVar, Object obj) {
-        if (!Intrinsics.areEqual(obj, this.f23913t)) {
-            this.f23915v = u.a(this.f23908o, kVar, this).e(this.f23913t, obj, this.f23915v);
+        if (!Intrinsics.areEqual(obj, this.f23914t)) {
+            this.f23916v = u.a(this.f23909o, kVar, this).e(this.f23914t, obj, this.f23916v);
         }
-        this.f23913t = obj;
+        this.f23914t = obj;
     }
 
     @Override // fn.f.b
@@ -239,14 +239,14 @@ public final class j implements CoroutineScope, f.b, t.c {
         e eVar3;
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(sideEffect, "sideEffect");
-        eVar = this.f23912s.f23854b;
+        eVar = this.f23913s.f23855b;
         for (e.a b10 = eVar.b(); b10 != null; b10 = b10.a()) {
             if (Intrinsics.areEqual(key, ((g) b10).d())) {
                 throw new IllegalArgumentException(("Expected side effect keys to be unique: \"" + key + '\"').toString());
             }
         }
-        fn.a aVar = this.f23912s;
-        eVar2 = aVar.f23853a;
+        fn.a aVar = this.f23913s;
+        eVar2 = aVar.f23854a;
         e.a b11 = eVar2.b();
         g gVar = null;
         e.a aVar2 = null;
@@ -272,7 +272,7 @@ public final class j implements CoroutineScope, f.b, t.c {
         if (gVar == null) {
             gVar = f(key, sideEffect);
         }
-        eVar3 = aVar.f23854b;
+        eVar3 = aVar.f23855b;
         eVar3.d(gVar);
     }
 
@@ -281,28 +281,28 @@ public final class j implements CoroutineScope, f.b, t.c {
     }
 
     public final k g() {
-        return this.f23905d;
+        return this.f23906d;
     }
 
     @Override // kotlinx.coroutines.CoroutineScope
     public CoroutineContext getCoroutineContext() {
-        return this.f23909p;
+        return this.f23910p;
     }
 
     public s i() {
-        return this.f23905d.a();
+        return this.f23906d.a();
     }
 
     public t.c j() {
-        return this.f23907i;
+        return this.f23908i;
     }
 
     public String k() {
-        return this.f23905d.b();
+        return this.f23906d.b();
     }
 
     public long l() {
-        return this.f23910q;
+        return this.f23911q;
     }
 
     public final Object m(en.k workflow, Object obj) {
@@ -312,13 +312,13 @@ public final class j implements CoroutineScope, f.b, t.c {
 
     public final en.m o(en.k workflow) {
         Intrinsics.checkNotNullParameter(workflow, "workflow");
-        return new en.m(u.a(this.f23908o, workflow, this).g(this.f23915v), new b(this.f23911r.f()));
+        return new en.m(u.a(this.f23909o, workflow, this).g(this.f23916v), new b(this.f23912r.f()));
     }
 
     public final void p(gt.d selector) {
         Intrinsics.checkNotNullParameter(selector, "selector");
-        this.f23911r.g(selector);
-        selector.a(this.f23914u.k(), new d(null));
+        this.f23912r.g(selector);
+        selector.a(this.f23915u.k(), new d(null));
     }
 
     public String toString() {
@@ -339,9 +339,9 @@ public final class j implements CoroutineScope, f.b, t.c {
         Object obj2;
         en.m mVar2;
         CoroutineContext coroutineContext2;
-        a aVar = (i10 & 32) != 0 ? a.f23916d : function1;
+        a aVar = (i10 & 32) != 0 ? a.f23917d : function1;
         t.c cVar2 = (i10 & 64) != 0 ? null : cVar;
-        en.e eVar = (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? en.e.f22972a : tVar;
+        en.e eVar = (i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0 ? en.e.f22973a : tVar;
         if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
             dVar2 = null;
             kVar3 = kVar;

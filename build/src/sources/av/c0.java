@@ -149,7 +149,7 @@ public final class c0 implements Comparable {
             return ByteString.J(d(), l10 + 1, 0, 2, null);
         }
         if (q() != null && d().G() == 2) {
-            return ByteString.f40592p;
+            return ByteString.f40593p;
         }
         return d();
     }

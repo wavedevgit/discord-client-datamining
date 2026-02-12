@@ -24,15 +24,15 @@ public final class a extends j {
     public static final class C0582a implements a0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final r1 f41316a = r1.Z();
+        private final r1 f41317a = r1.Z();
 
         @Override // x.a0
         public q1 a() {
-            return this.f41316a;
+            return this.f41317a;
         }
 
         public a c() {
-            return new a(w1.Y(this.f41316a));
+            return new a(w1.Y(this.f41317a));
         }
 
         public C0582a d(r0 r0Var) {
@@ -42,18 +42,18 @@ public final class a extends j {
 
         public C0582a e(r0 r0Var, r0.c cVar) {
             for (r0.a aVar : r0Var.b()) {
-                this.f41316a.K(aVar, cVar, r0Var.a(aVar));
+                this.f41317a.K(aVar, cVar, r0Var.a(aVar));
             }
             return this;
         }
 
         public C0582a f(CaptureRequest.Key key, Object obj) {
-            this.f41316a.V(a.W(key), obj);
+            this.f41317a.V(a.W(key), obj);
             return this;
         }
 
         public C0582a g(CaptureRequest.Key key, Object obj, r0.c cVar) {
-            this.f41316a.K(a.W(key), cVar, obj);
+            this.f41317a.K(a.W(key), cVar, obj);
             return this;
         }
     }

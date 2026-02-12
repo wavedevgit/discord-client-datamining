@@ -27,7 +27,7 @@ public class a3 extends ReflectionFactory {
         if (owner instanceof c1) {
             return (c1) owner;
         }
-        return k.f51082o;
+        return k.f51083o;
     }
 
     @Override // kotlin.jvm.internal.ReflectionFactory
@@ -141,7 +141,7 @@ public class a3 extends ReflectionFactory {
         h1 c10;
         KFunction a10 = ts.d.a(functionBase);
         if (a10 != null && (c10 = j3.c(a10)) != null) {
-            return d3.f51024a.h(c10.D());
+            return d3.f51025a.h(c10.D());
         }
         return super.renderLambdaToString(functionBase);
     }

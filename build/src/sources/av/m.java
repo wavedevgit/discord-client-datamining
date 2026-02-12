@@ -106,7 +106,7 @@ public final class m implements Source {
 
     private final void m(Buffer buffer, long j10, long j11) {
         int i10;
-        g0 g0Var = buffer.f40580d;
+        g0 g0Var = buffer.f40581d;
         Intrinsics.checkNotNull(g0Var);
         while (true) {
             int i11 = g0Var.f6264c;

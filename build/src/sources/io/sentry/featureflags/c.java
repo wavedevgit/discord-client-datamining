@@ -5,10 +5,10 @@ import io.sentry.protocol.g;
 public final class c implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c f29321a = new c();
+    private static final c f29322a = new c();
 
     public static c a() {
-        return f29321a;
+        return f29322a;
     }
 
     @Override // io.sentry.featureflags.b
@@ -18,7 +18,7 @@ public final class c implements b {
 
     @Override // io.sentry.featureflags.b
     /* renamed from: clone */
-    public b m1184clone() {
-        return f29321a;
+    public b m1183clone() {
+        return f29322a;
     }
 }

@@ -5,7 +5,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class j extends i {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final j f51906c = new j();
+    public static final j f51907c = new j();
 
     private j() {
     }

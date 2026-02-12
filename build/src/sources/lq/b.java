@@ -16,24 +16,24 @@ public abstract class b {
     public static final class a extends BottomSheetBehavior.g {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Function0 f35962a;
+        final /* synthetic */ Function0 f35963a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ View f35963b;
+        final /* synthetic */ View f35964b;
 
         a(Function0 function0, View view) {
-            this.f35962a = function0;
-            this.f35963b = view;
+            this.f35963a = function0;
+            this.f35964b = view;
         }
 
         @Override // com.google.android.material.bottomsheet.BottomSheetBehavior.g
         public void b(View bottomSheet, float f10) {
             View view;
             Intrinsics.checkNotNullParameter(bottomSheet, "bottomSheet");
-            if (f10 > 0.0f && (view = this.f35963b) != null) {
+            if (f10 > 0.0f && (view = this.f35964b) != null) {
                 view.setVisibility(0);
             }
-            View view2 = this.f35963b;
+            View view2 = this.f35964b;
             if (view2 != null) {
                 view2.setAlpha(kotlin.ranges.d.c(f10, 0.0f));
             }
@@ -43,8 +43,8 @@ public abstract class b {
         public void c(View bottomSheet, int i10) {
             Intrinsics.checkNotNullParameter(bottomSheet, "bottomSheet");
             if (i10 == 4 || i10 == 5) {
-                this.f35962a.invoke();
-                View view = this.f35963b;
+                this.f35963a.invoke();
+                View view = this.f35964b;
                 if (view != null) {
                     view.setVisibility(8);
                 }
@@ -84,7 +84,7 @@ public abstract class b {
             ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
             marginLayoutParams.topMargin = g10.f3305b;
             view.setLayoutParams(marginLayoutParams);
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams");
     }

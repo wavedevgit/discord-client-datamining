@@ -13,10 +13,10 @@ import vk.c;
 public final class a implements m {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final p[] f50776b = new p[0];
+    private static final p[] f50777b = new p[0];
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f50777a = new c();
+    private final c f50778a = new c();
 
     private static b b(b bVar) {
         int[] g10 = bVar.g();
@@ -41,8 +41,8 @@ public final class a implements m {
 
     @Override // kk.m
     public Result a(kk.c cVar, Map map) {
-        e b10 = this.f50777a.b(b(cVar.a()), map);
-        Result result = new Result(b10.k(), b10.g(), f50776b, kk.a.MAXICODE);
+        e b10 = this.f50778a.b(b(cVar.a()), map);
+        Result result = new Result(b10.k(), b10.g(), f50777b, kk.a.MAXICODE);
         result.h(o.ERRORS_CORRECTED, b10.d());
         String b11 = b10.b();
         if (b11 != null) {

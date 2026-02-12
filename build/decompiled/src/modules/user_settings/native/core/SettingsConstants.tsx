@@ -23,8 +23,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.ACCOUNT_PHONE = var0;
     var0 = 'AGE_GROUP_ADULT';
     var1.ACCOUNT_AGE_GROUP_ADULT = var0;
+    var0 = 'AGE_GROUP_ASSIGNED_ADULT';
+    var1.ACCOUNT_AGE_GROUP_ASSIGNED_ADULT = var0;
     var0 = 'AGE_GROUP_NON_ADULT';
     var1.ACCOUNT_AGE_GROUP_NON_ADULT = var0;
+    var0 = 'AGE_GROUP_CONFIRM';
+    var1.AGE_GROUP_CONFIRM = var0;
+    var0 = 'AGE_GROUP_RESET';
+    var1.AGE_GROUP_RESET = var0;
     var0 = 'ACCOUNT_CHANGE_PASSWORD';
     var1.ACCOUNT_CHANGE_PASSWORD = var0;
     var0 = 'ACCOUNT_CONFIRM_PASSWORD';
@@ -257,6 +263,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.FRIEND_ONLINE_NOTIFICATIONS = var0;
     var0 = 'REACTION_NOTIFICATIONS';
     var1.REACTION_NOTIFICATIONS = var0;
+    var0 = 'REACTION_NOTIFICATIONS_AUTHOR';
+    var1.REACTION_NOTIFICATIONS_AUTHOR = var0;
+    var0 = 'GDM_ALL_REACTION_NOTIFICATIONS';
+    var1.GDM_ALL_REACTION_NOTIFICATIONS = var0;
     var0 = 'ANDROID_MESSAGE_NOTIFICATIONS';
     var1.ANDROID_MESSAGE_NOTIFICATIONS = var0;
     var0 = 'ANDROID_NOTIFICATION_LIGHTS';

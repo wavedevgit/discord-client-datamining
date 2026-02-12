@@ -22,7 +22,7 @@ public final class ShareBroadcastReceiverAppClicked implements ReactEvent {
     @NotNull
 
     /* renamed from: app  reason: collision with root package name */
-    private final String f10414app;
+    private final String f10415app;
     private final String location;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, d2 = {"Lcom/discord/share/react/events/ShareBroadcastReceiverAppClicked$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/share/react/events/ShareBroadcastReceiverAppClicked;", "share_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
@@ -45,13 +45,13 @@ public final class ShareBroadcastReceiverAppClicked implements ReactEvent {
         if (3 != (i10 & 3)) {
             v1.b(i10, 3, ShareBroadcastReceiverAppClicked$$serializer.INSTANCE.getDescriptor());
         }
-        this.f10414app = str;
+        this.f10415app = str;
         this.location = str2;
     }
 
     public static /* synthetic */ ShareBroadcastReceiverAppClicked copy$default(ShareBroadcastReceiverAppClicked shareBroadcastReceiverAppClicked, String str, String str2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = shareBroadcastReceiverAppClicked.f10414app;
+            str = shareBroadcastReceiverAppClicked.f10415app;
         }
         if ((i10 & 2) != 0) {
             str2 = shareBroadcastReceiverAppClicked.location;
@@ -60,13 +60,13 @@ public final class ShareBroadcastReceiverAppClicked implements ReactEvent {
     }
 
     public static final /* synthetic */ void write$Self$share_release(ShareBroadcastReceiverAppClicked shareBroadcastReceiverAppClicked, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        compositeEncoder.y(serialDescriptor, 0, shareBroadcastReceiverAppClicked.f10414app);
-        compositeEncoder.o(serialDescriptor, 1, n2.f50032a, shareBroadcastReceiverAppClicked.location);
+        compositeEncoder.y(serialDescriptor, 0, shareBroadcastReceiverAppClicked.f10415app);
+        compositeEncoder.o(serialDescriptor, 1, n2.f50033a, shareBroadcastReceiverAppClicked.location);
     }
 
     @NotNull
     public final String component1() {
-        return this.f10414app;
+        return this.f10415app;
     }
 
     public final String component2() {
@@ -85,14 +85,14 @@ public final class ShareBroadcastReceiverAppClicked implements ReactEvent {
         }
         if (obj instanceof ShareBroadcastReceiverAppClicked) {
             ShareBroadcastReceiverAppClicked shareBroadcastReceiverAppClicked = (ShareBroadcastReceiverAppClicked) obj;
-            return Intrinsics.areEqual(this.f10414app, shareBroadcastReceiverAppClicked.f10414app) && Intrinsics.areEqual(this.location, shareBroadcastReceiverAppClicked.location);
+            return Intrinsics.areEqual(this.f10415app, shareBroadcastReceiverAppClicked.f10415app) && Intrinsics.areEqual(this.location, shareBroadcastReceiverAppClicked.location);
         }
         return false;
     }
 
     @NotNull
     public final String getApp() {
-        return this.f10414app;
+        return this.f10415app;
     }
 
     public final String getLocation() {
@@ -100,7 +100,7 @@ public final class ShareBroadcastReceiverAppClicked implements ReactEvent {
     }
 
     public int hashCode() {
-        int hashCode = this.f10414app.hashCode() * 31;
+        int hashCode = this.f10415app.hashCode() * 31;
         String str = this.location;
         return hashCode + (str == null ? 0 : str.hashCode());
     }
@@ -113,14 +113,14 @@ public final class ShareBroadcastReceiverAppClicked implements ReactEvent {
 
     @NotNull
     public String toString() {
-        String str = this.f10414app;
+        String str = this.f10415app;
         String str2 = this.location;
         return "ShareBroadcastReceiverAppClicked(app=" + str + ", location=" + str2 + ")";
     }
 
     public ShareBroadcastReceiverAppClicked(@NotNull String app2, String str) {
         Intrinsics.checkNotNullParameter(app2, "app");
-        this.f10414app = app2;
+        this.f10415app = app2;
         this.location = str;
     }
 }

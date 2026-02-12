@@ -17,39 +17,39 @@ import java.util.TreeMap;
 public final class k {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final SortedMap f37596d;
+    private static final SortedMap f37597d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static k f37597e;
+    private static k f37598e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final bu.c f37598f;
+    private static final bu.c f37599f;
 
     /* renamed from: a  reason: collision with root package name */
-    private final transient Locale f37599a;
+    private final transient Locale f37600a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final transient String f37600b;
+    private final transient String f37601b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final transient SortedMap f37601c;
+    private final transient SortedMap f37602c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f37602a;
+        static final /* synthetic */ int[] f37603a;
 
         static {
             int[] iArr = new int[cu.v.values().length];
-            f37602a = iArr;
+            f37603a = iArr;
             try {
                 iArr[cu.v.WIDE.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f37602a[cu.v.NARROW.ordinal()] = 2;
+                f37603a[cu.v.NARROW.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
         }
@@ -60,10 +60,10 @@ public final class k {
         private static final long serialVersionUID = 5589976208326940032L;
 
         /* renamed from: d  reason: collision with root package name */
-        private final transient boolean f37603d;
+        private final transient boolean f37604d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final transient k f37604e;
+        private final transient k f37605e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public b(boolean z10, Locale locale, String str) {
@@ -99,22 +99,22 @@ public final class k {
             ArrayList arrayList = new ArrayList();
             String str5 = "pm";
             String str6 = "am";
-            if (this.f37603d) {
+            if (this.f37604d) {
                 arrayList.add("am");
                 arrayList.add("pm");
                 arrayList.add("midnight");
                 arrayList.add("noon");
             } else {
-                arrayList.addAll(new LinkedHashSet(this.f37604e.f37601c.values()));
-                if (this.f37604e.p()) {
+                arrayList.addAll(new LinkedHashSet(this.f37605e.f37602c.values()));
+                if (this.f37605e.p()) {
                     arrayList.add("midnight");
                     arrayList.add("noon");
                 }
             }
-            Map q10 = this.f37604e.p() ? k.q(M(), G()) : null;
-            cu.v vVar = (cu.v) dVar.b(cu.a.f21114g, cu.v.WIDE);
-            boolean booleanValue = ((Boolean) dVar.b(cu.a.f21116i, Boolean.TRUE)).booleanValue();
-            boolean booleanValue2 = ((Boolean) dVar.b(cu.a.f21117j, Boolean.FALSE)).booleanValue();
+            Map q10 = this.f37605e.p() ? k.q(M(), G()) : null;
+            cu.v vVar = (cu.v) dVar.b(cu.a.f21115g, cu.v.WIDE);
+            boolean booleanValue = ((Boolean) dVar.b(cu.a.f21117i, Boolean.TRUE)).booleanValue();
+            boolean booleanValue2 = ((Boolean) dVar.b(cu.a.f21118j, Boolean.FALSE)).booleanValue();
             int index = parsePosition.getIndex();
             int length = charSequence.length();
             Iterator it = arrayList.iterator();
@@ -124,8 +124,8 @@ public final class k {
                 boolean z11 = booleanValue2;
                 String str8 = (String) it.next();
                 Iterator it2 = it;
-                if (this.f37604e.p()) {
-                    if (this.f37603d) {
+                if (this.f37605e.p()) {
+                    if (this.f37604d) {
                         k10 = k.k(q10, vVar, mVar2, str8);
                         if (!q10.containsKey(k10)) {
                             if (str8.equals("midnight")) {
@@ -177,7 +177,7 @@ public final class k {
                         length2 = i11 - index;
                         if (i10 >= length2) {
                             if (str7 != null && i10 == length2) {
-                                if (!this.f37603d) {
+                                if (!this.f37604d) {
                                     str7 = str7 + "|" + str8;
                                 }
                                 str7 = null;
@@ -187,7 +187,7 @@ public final class k {
                         i10 = length2;
                     } else if (z12) {
                         if (str7 != null) {
-                            if (this.f37603d) {
+                            if (this.f37604d) {
                                 i10 = length2;
                                 str7 = null;
                             } else {
@@ -238,7 +238,7 @@ public final class k {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public String G() {
-            return this.f37604e.f37600b;
+            return this.f37605e.f37601b;
         }
 
         @Override // bu.z
@@ -255,14 +255,14 @@ public final class k {
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public Object J() {
-            return this.f37604e.f37601c;
+            return this.f37605e.f37602c;
         }
 
         @Override // bu.p
         /* renamed from: K */
         public String f() {
-            if (!this.f37603d) {
-                return (String) this.f37604e.f37601c.get((g0) this.f37604e.f37601c.lastKey());
+            if (!this.f37604d) {
+                return (String) this.f37605e.f37602c.get((g0) this.f37605e.f37602c.lastKey());
             }
             return "pm";
         }
@@ -270,15 +270,15 @@ public final class k {
         @Override // bu.p
         /* renamed from: L */
         public String B() {
-            if (!this.f37603d) {
-                return (String) this.f37604e.f37601c.get((g0) this.f37604e.f37601c.firstKey());
+            if (!this.f37604d) {
+                return (String) this.f37605e.f37602c.get((g0) this.f37605e.f37602c.firstKey());
             }
             return "am";
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public Locale M() {
-            return this.f37604e.f37599a;
+            return this.f37605e.f37600a;
         }
 
         @Override // bu.z
@@ -298,10 +298,10 @@ public final class k {
         public String y(bu.q qVar) {
             String str;
             g0 g0Var = (g0) qVar.k(g0.A);
-            if (this.f37603d) {
+            if (this.f37604d) {
                 return k.n(g0Var);
             }
-            if (this.f37604e.p()) {
+            if (this.f37605e.p()) {
                 Map q10 = k.q(M(), G());
                 if (g0Var.B0()) {
                     str = "midnight";
@@ -314,12 +314,12 @@ public final class k {
                     return str;
                 }
             }
-            return (String) this.f37604e.f37601c.get(this.f37604e.o(g0Var));
+            return (String) this.f37605e.f37602c.get(this.f37605e.o(g0Var));
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public boolean Q() {
-            return this.f37603d;
+            return this.f37604d;
         }
 
         @Override // bu.z
@@ -332,11 +332,11 @@ public final class k {
         /* renamed from: S */
         public String l(CharSequence charSequence, ParsePosition parsePosition, bu.d dVar) {
             int index = parsePosition.getIndex();
-            bu.c cVar = cu.a.f21115h;
+            bu.c cVar = cu.a.f21116h;
             cu.m mVar = cu.m.FORMAT;
             cu.m mVar2 = (cu.m) dVar.b(cVar, mVar);
             String T = T(charSequence, parsePosition, dVar, mVar2);
-            if (T == null && ((Boolean) dVar.b(cu.a.f21118k, Boolean.TRUE)).booleanValue()) {
+            if (T == null && ((Boolean) dVar.b(cu.a.f21119k, Boolean.TRUE)).booleanValue()) {
                 parsePosition.setErrorIndex(-1);
                 parsePosition.setIndex(index);
                 if (mVar2 == mVar) {
@@ -364,7 +364,7 @@ public final class k {
 
         @Override // bu.e, bu.p
         public char d() {
-            if (this.f37603d) {
+            if (this.f37604d) {
                 return 'b';
             }
             return 'B';
@@ -377,7 +377,7 @@ public final class k {
 
         @Override // bu.e
         protected boolean j(bu.e eVar) {
-            return this.f37604e.equals(((b) eVar).f37604e);
+            return this.f37605e.equals(((b) eVar).f37605e);
         }
 
         @Override // bu.e
@@ -385,19 +385,19 @@ public final class k {
             StringBuilder sb2 = new StringBuilder(32);
             sb2.append(name());
             sb2.append('@');
-            sb2.append(this.f37604e);
+            sb2.append(this.f37605e);
             return sb2.toString();
         }
 
         @Override // cu.t
         public void w(bu.o oVar, Appendable appendable, bu.d dVar) {
             String str;
-            cu.v vVar = (cu.v) dVar.b(cu.a.f21114g, cu.v.WIDE);
-            cu.m mVar = (cu.m) dVar.b(cu.a.f21115h, cu.m.FORMAT);
-            if (this.f37603d) {
-                str = (String) this.f37604e.l(vVar, mVar).apply(oVar);
+            cu.v vVar = (cu.v) dVar.b(cu.a.f21115g, cu.v.WIDE);
+            cu.m mVar = (cu.m) dVar.b(cu.a.f21116h, cu.m.FORMAT);
+            if (this.f37604d) {
+                str = (String) this.f37605e.l(vVar, mVar).apply(oVar);
             } else {
-                str = (String) this.f37604e.j(vVar, mVar).apply(oVar);
+                str = (String) this.f37605e.j(vVar, mVar).apply(oVar);
             }
             appendable.append(str);
         }
@@ -405,8 +405,8 @@ public final class k {
         /* JADX INFO: Access modifiers changed from: package-private */
         public b(boolean z10, k kVar) {
             super(z10 ? "FIXED_DAY_PERIOD" : "APPROXIMATE_DAY_PERIOD");
-            this.f37603d = z10;
-            this.f37604e = kVar;
+            this.f37604d = z10;
+            this.f37605e = kVar;
         }
     }
 
@@ -414,10 +414,10 @@ public final class k {
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static class c implements bu.s {
         private static k e(Locale locale, bu.d dVar) {
-            if (dVar.a(k.f37598f)) {
-                return (k) dVar.c(k.f37598f);
+            if (dVar.a(k.f37599f)) {
+                return (k) dVar.c(k.f37599f);
             }
-            return k.r(locale, (String) dVar.b(cu.a.f21109b, "iso8601"));
+            return k.r(locale, (String) dVar.b(cu.a.f21110b, "iso8601"));
         }
 
         private static int f(bu.q qVar) {
@@ -441,7 +441,7 @@ public final class k {
             k e10 = e(locale, dVar);
             HashSet hashSet = new HashSet();
             hashSet.add(new b(false, e10));
-            if (!dVar.a(k.f37598f)) {
+            if (!dVar.a(k.f37599f)) {
                 hashSet.add(new b(true, e10));
             }
             return Collections.unmodifiableSet(hashSet);
@@ -480,20 +480,20 @@ public final class k {
     public class d implements bu.t {
 
         /* renamed from: a  reason: collision with root package name */
-        private final boolean f37605a;
+        private final boolean f37606a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final cu.v f37606b;
+        private final cu.v f37607b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final cu.m f37607c;
+        private final cu.m f37608c;
 
         d(boolean z10, cu.v vVar, cu.m mVar) {
             if (vVar != null) {
                 if (mVar != null) {
-                    this.f37605a = z10;
-                    this.f37606b = vVar;
-                    this.f37607c = mVar;
+                    this.f37606a = z10;
+                    this.f37607b = vVar;
+                    this.f37608c = mVar;
                     return;
                 }
                 throw new NullPointerException("Missing output context.");
@@ -506,17 +506,17 @@ public final class k {
         public String apply(bu.o oVar) {
             g0 g0Var = (g0) oVar.k(g0.A);
             k kVar = k.this;
-            Locale locale = kVar.f37599a;
-            if (this.f37605a) {
+            Locale locale = kVar.f37600a;
+            if (this.f37606a) {
                 String n10 = k.n(g0Var);
                 if (kVar.p()) {
-                    Map q10 = k.q(locale, kVar.f37600b);
-                    String k10 = k.k(q10, this.f37606b, this.f37607c, n10);
+                    Map q10 = k.q(locale, kVar.f37601b);
+                    String k10 = k.k(q10, this.f37607b, this.f37608c, n10);
                     if (!q10.containsKey(k10)) {
                         if (n10.equals("midnight")) {
-                            k10 = k.k(q10, this.f37606b, this.f37607c, "am");
+                            k10 = k.k(q10, this.f37607b, this.f37608c, "am");
                         } else if (n10.equals("noon")) {
-                            k10 = k.k(q10, this.f37606b, this.f37607c, "pm");
+                            k10 = k.k(q10, this.f37607b, this.f37608c, "pm");
                         }
                     }
                     if (q10.containsKey(k10)) {
@@ -526,24 +526,24 @@ public final class k {
                     return n10;
                 }
             } else if (kVar.p()) {
-                Map q11 = k.q(locale, kVar.f37600b);
+                Map q11 = k.q(locale, kVar.f37601b);
                 if (g0Var.B0()) {
-                    String k11 = k.k(q11, this.f37606b, this.f37607c, "midnight");
+                    String k11 = k.k(q11, this.f37607b, this.f37608c, "midnight");
                     if (q11.containsKey(k11)) {
                         return (String) q11.get(k11);
                     }
                 } else if (g0Var.C0(g0.G0(12))) {
-                    String k12 = k.k(q11, this.f37606b, this.f37607c, "noon");
+                    String k12 = k.k(q11, this.f37607b, this.f37608c, "noon");
                     if (q11.containsKey(k12)) {
                         return (String) q11.get(k12);
                     }
                 }
-                String k13 = k.k(q11, this.f37606b, this.f37607c, (String) kVar.f37601c.get(kVar.o(g0Var)));
+                String k13 = k.k(q11, this.f37607b, this.f37608c, (String) kVar.f37602c.get(kVar.o(g0Var)));
                 if (q11.containsKey(k13)) {
                     return (String) q11.get(k13);
                 }
             } else {
-                return (String) kVar.f37601c.get(kVar.o(g0Var));
+                return (String) kVar.f37602c.get(kVar.o(g0Var));
             }
             z zVar = (z) g0Var.k(g0.B);
             if (locale == null) {
@@ -558,15 +558,15 @@ public final class k {
         treeMap.put(g0.F0(), "am");
         treeMap.put(g0.G0(12), "pm");
         SortedMap unmodifiableSortedMap = Collections.unmodifiableSortedMap(treeMap);
-        f37596d = unmodifiableSortedMap;
-        f37597e = new k(Locale.ROOT, "iso8601", unmodifiableSortedMap);
-        f37598f = cu.a.e("CUSTOM_DAY_PERIOD", k.class);
+        f37597d = unmodifiableSortedMap;
+        f37598e = new k(Locale.ROOT, "iso8601", unmodifiableSortedMap);
+        f37599f = cu.a.e("CUSTOM_DAY_PERIOD", k.class);
     }
 
     private k(Locale locale, String str, SortedMap sortedMap) {
-        this.f37599a = locale;
-        this.f37600b = str;
-        this.f37601c = Collections.unmodifiableSortedMap(sortedMap);
+        this.f37600a = locale;
+        this.f37601b = str;
+        this.f37602c = Collections.unmodifiableSortedMap(sortedMap);
     }
 
     private static boolean a(String str) {
@@ -615,7 +615,7 @@ public final class k {
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean p() {
-        if (this.f37599a != null) {
+        if (this.f37600a != null) {
             return true;
         }
         return false;
@@ -647,7 +647,7 @@ public final class k {
                         throw new IllegalStateException("Invalid time key: " + str2);
                     }
                 } else if (parseInt >= 0 && parseInt < 24 && parseInt2 >= 0 && parseInt2 < 60) {
-                    F0 = (g0) F0.K((parseInt * 60) + parseInt2, g.f37466e);
+                    F0 = (g0) F0.K((parseInt * 60) + parseInt2, g.f37467e);
                 } else {
                     throw new IllegalStateException("Invalid time key: " + str2);
                 }
@@ -667,7 +667,7 @@ public final class k {
             }
             return new k(locale, str, treeMap);
         }
-        return f37597e;
+        return f37598e;
     }
 
     public static k s(Map map) {
@@ -688,7 +688,7 @@ public final class k {
 
     private static String t(cu.v vVar, cu.m mVar) {
         char c10;
-        int i10 = a.f37602a[vVar.ordinal()];
+        int i10 = a.f37603a[vVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 c10 = 'a';
@@ -710,15 +710,15 @@ public final class k {
         }
         if (obj instanceof k) {
             k kVar = (k) obj;
-            Locale locale = this.f37599a;
+            Locale locale = this.f37600a;
             if (locale == null) {
-                if (kVar.f37599a != null) {
+                if (kVar.f37600a != null) {
                     return false;
                 }
-            } else if (!locale.equals(kVar.f37599a)) {
+            } else if (!locale.equals(kVar.f37600a)) {
                 return false;
             }
-            if (this.f37601c.equals(kVar.f37601c) && this.f37600b.equals(kVar.f37600b)) {
+            if (this.f37602c.equals(kVar.f37602c) && this.f37601b.equals(kVar.f37601b)) {
                 return true;
             }
         }
@@ -726,7 +726,7 @@ public final class k {
     }
 
     public int hashCode() {
-        return this.f37601c.hashCode();
+        return this.f37602c.hashCode();
     }
 
     public bu.t j(cu.v vVar, cu.m mVar) {
@@ -741,20 +741,20 @@ public final class k {
         if (g0Var.h() == 24) {
             g0Var = g0.F0();
         }
-        for (g0 g0Var2 : this.f37601c.keySet()) {
+        for (g0 g0Var2 : this.f37602c.keySet()) {
             if (g0Var.y0(g0Var2)) {
                 return g0Var2;
             }
         }
-        return (g0) this.f37601c.firstKey();
+        return (g0) this.f37602c.firstKey();
     }
 
     public g0 o(g0 g0Var) {
         if (g0Var.h() == 24) {
             g0Var = g0.F0();
         }
-        g0 g0Var2 = (g0) this.f37601c.lastKey();
-        for (g0 g0Var3 : this.f37601c.keySet()) {
+        g0 g0Var2 = (g0) this.f37602c.lastKey();
+        for (g0 g0Var3 : this.f37602c.keySet()) {
             if (g0Var.C0(g0Var3)) {
                 return g0Var3;
             }
@@ -771,15 +771,15 @@ public final class k {
         sb2.append("DayPeriod[");
         if (p()) {
             sb2.append("locale=");
-            sb2.append(this.f37599a);
+            sb2.append(this.f37600a);
             sb2.append(',');
-            if (!this.f37600b.equals("iso8601")) {
+            if (!this.f37601b.equals("iso8601")) {
                 sb2.append(",calendar-type=");
-                sb2.append(this.f37600b);
+                sb2.append(this.f37601b);
                 sb2.append(',');
             }
         }
-        sb2.append(this.f37601c);
+        sb2.append(this.f37602c);
         sb2.append(']');
         return sb2.toString();
     }

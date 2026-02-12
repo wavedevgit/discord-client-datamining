@@ -5,7 +5,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class u0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private Integer f19371a;
+    private Integer f19372a;
 
     public final void a(ScreenStackHeaderConfig config, Screen screen) {
         int height;
@@ -15,9 +15,9 @@ public final class u0 {
         } else {
             height = config.getToolbar().getHeight();
         }
-        Integer num = this.f19371a;
+        Integer num = this.f19372a;
         if (num == null || height != num.intValue()) {
-            this.f19371a = Integer.valueOf(height);
+            this.f19372a = Integer.valueOf(height);
             if (screen != null) {
                 screen.notifyHeaderHeightChange$react_native_screens_release(height);
             }

@@ -613,10 +613,10 @@ public abstract class FragmentManager {
     private void C1(Fragment fragment) {
         ViewGroup z02 = z0(fragment);
         if (z02 != null && fragment.getEnterAnim() + fragment.getExitAnim() + fragment.getPopEnterAnim() + fragment.getPopExitAnim() > 0) {
-            if (z02.getTag(f3.b.f23555c) == null) {
-                z02.setTag(f3.b.f23555c, fragment);
+            if (z02.getTag(f3.b.f23556c) == null) {
+                z02.setTag(f3.b.f23556c, fragment);
             }
-            ((Fragment) z02.getTag(f3.b.f23555c)).setPopDirection(fragment.getPopDirection());
+            ((Fragment) z02.getTag(f3.b.f23556c)).setPopDirection(fragment.getPopDirection());
         }
     }
 
@@ -671,7 +671,7 @@ public abstract class FragmentManager {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Fragment J0(View view) {
-        Object tag = view.getTag(f3.b.f23553a);
+        Object tag = view.getTag(f3.b.f23554a);
         if (tag instanceof Fragment) {
             return (Fragment) tag;
         }

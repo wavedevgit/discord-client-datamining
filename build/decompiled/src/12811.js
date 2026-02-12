@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
+    var2 = exports;
     var0 = global;
     var5 = var0.Object;
     var4 = var5.defineProperty;
@@ -8,93 +8,334 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = true;
     var3.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var5)(var1, var0, var3);
-    var0 = function() {
-        _fun98278: for (var _fun98278_ip = 0;;) switch (_fun98278_ip) {
-            case 0:
-                var4 = {
-                    'osRelease': '',
-                    'model': '',
-                    'serverHost': '',
-                    'uiMode': '',
-                    'serial': '',
-                    'forceTouch': false,
-                    'interfaceIdiom': '',
-                    'systemName': ''
-                };
-                var1 = _closure1_slot0;
-                var1 = var1.Platform;
-                var2 = var1.OS;
-                var1 = 'android';
-                if (!(var1 !== var2)) {
-                    _fun98278_ip = 147;
-                    continue _fun98278
+    var0 = var4.bind(var5)(var2, var0, var3);
+    var0 = undefined;
+    var2.assertHasLoggerPlugin = var0;
+    var2.default = var0;
+    var2.hasLoggerPlugin = var0;
+    var3 = function() {
+        var0 = function(arg0) { // Environment: var0
+            var0 = arg0;
+            var _closure3_slot0 = var0;
+            var0 = {};
+            var1 = {};
+            var3 = function() {
+                _fun98253: for (var _fun98253_ip = 0;;) switch (_fun98253_ip) {
+                    case 0:
+                        var0 = undefined;
+                        var5 = undefined;
+                        var4 = arguments.length;
+                        var1 = global;
+                        var1 = var1.Array;
+                        var2 = var1.prototype;
+                        var2 = Object.create(var2, {
+                            constructor: {
+                                value: var1
+                            }
+                        });
+                        var10 = var2;
+                        var9 = var4;
+                        var1 = new var10[var1](var9, var8);
+                        var3 = var1 instanceof Object ? var1 : var2;
+                        var2 = 0;
+                        var6 = var2 < var4;
+                        var1 = 0;
+                        if (!var6) {
+                            _fun98253_ip = 64;
+                            continue _fun98253
+                        }
+                    case 49:
+                        var6 = arguments[var1];
+                        var3[var1] = var6;
+                        var1 = var1 + 1;
+                        if (var1 < var4) {
+                            _fun98253_ip = 49;
+                            continue _fun98253
+                        }
+                    case 64:
+                        var5 = var3.length;
+                        var4 = 1;
+                        var1 = var3;
+                        if (!(var4 === var5)) {
+                            _fun98253_ip = 83;
+                            continue _fun98253
+                        }
+                    case 79:
+                        var1 = var3[var2];
+                    case 83:
+                        var5 = _closure3_slot0;
+                        var4 = var5.send;
+                        var3 = {};
+                        var2 = 'debug';
+                        var3.level = var2;
+                        var3.message = var1;
+                        var2 = 'log';
+                        var1 = false;
+                        var1 = var4.bind(var5)(var2, var3, var1);
+                        return var0;
                 }
-            case 41:
-                var1 = _closure1_slot0;
-                var1 = var1.Platform;
-                var2 = var1.OS;
-                var1 = 'ios';
-                if (!(var1 !== var2)) {
-                    _fun98278_ip = 67;
-                    continue _fun98278
+            };
+            var1.log = var3;
+            var3 = function() {
+                _fun98254: for (var _fun98254_ip = 0;;) switch (_fun98254_ip) {
+                    case 0:
+                        var0 = undefined;
+                        var5 = undefined;
+                        var4 = arguments.length;
+                        var1 = global;
+                        var1 = var1.Array;
+                        var2 = var1.prototype;
+                        var2 = Object.create(var2, {
+                            constructor: {
+                                value: var1
+                            }
+                        });
+                        var10 = var2;
+                        var9 = var4;
+                        var1 = new var10[var1](var9, var8);
+                        var3 = var1 instanceof Object ? var1 : var2;
+                        var2 = 0;
+                        var6 = var2 < var4;
+                        var1 = 0;
+                        if (!var6) {
+                            _fun98254_ip = 64;
+                            continue _fun98254
+                        }
+                    case 49:
+                        var6 = arguments[var1];
+                        var3[var1] = var6;
+                        var1 = var1 + 1;
+                        if (var1 < var4) {
+                            _fun98254_ip = 49;
+                            continue _fun98254
+                        }
+                    case 64:
+                        var5 = var3.length;
+                        var4 = 1;
+                        var1 = var3;
+                        if (!(var4 === var5)) {
+                            _fun98254_ip = 83;
+                            continue _fun98254
+                        }
+                    case 79:
+                        var1 = var3[var2];
+                    case 83:
+                        var5 = _closure3_slot0;
+                        var4 = var5.send;
+                        var3 = {};
+                        var2 = 'debug';
+                        var3.level = var2;
+                        var3.message = var1;
+                        var2 = 'log';
+                        var1 = true;
+                        var1 = var4.bind(var5)(var2, var3, var1);
+                        return var0;
                 }
-            case 65:
-                return var4;
-            case 67:
-                var1 = _closure1_slot0;
-                var1 = var1.Platform;
-                var1 = var1.constants;
-                var2 = global;
-                var5 = var2.Object;
-                var3 = var5.assign;
+            };
+            var1.logImportant = var3;
+            var3 = function arg0() {
+                _fun98255: for (var _fun98255_ip = 0;;) switch (_fun98255_ip) {
+                    case 0:
+                        var4 = undefined;
+                        var2 = undefined;
+                        var0 = arguments.length;
+                        var1 = 1;
+                        var0 = var0 > var1;
+                        if (!var0) {
+                            _fun98255_ip = 25;
+                            continue _fun98255
+                        }
+                    case 17:
+                        var3 = arguments[var1];
+                        var0 = var4 !== var3;
+                    case 25:
+                        if (!var0) {
+                            _fun98255_ip = 32;
+                            continue _fun98255
+                        }
+                    case 28:
+                        var0 = arguments[var1];
+                    case 32:
+                        var4 = _closure3_slot0;
+                        var3 = var4.send;
+                        var2 = {};
+                        var1 = 'debug';
+                        var2.level = var1;
+                        var1 = arg0;
+                        var2.message = var1;
+                        var0 = !var0;
+                        var1 = 'log';
+                        var0 = !var0;
+                        var0 = var3.bind(var4)(var1, var2, var0);
+                        return var0;
+                }
+            };
+            var1.debug = var3;
+            var3 = function arg0() {
+                var4 = _closure3_slot0;
+                var3 = var4.send;
                 var2 = {};
-                var6 = var1.forceTouchAvailable;
-                if (var6) {
-                    _fun98278_ip = 109;
-                    continue _fun98278
+                var0 = 'warn';
+                var2.level = var0;
+                var0 = arg0;
+                var2.message = var0;
+                var1 = 'log';
+                var0 = true;
+                var0 = var3.bind(var4)(var1, var2, var0);
+                return var0;
+            };
+            var1.warn = var3;
+            var2 = function arg0, arg1() {
+                var4 = _closure3_slot0;
+                var3 = var4.send;
+                var2 = {};
+                var0 = 'error';
+                var2.level = var0;
+                var0 = arg0;
+                var2.message = var0;
+                var0 = arg1;
+                var2.stack = var0;
+                var1 = 'log';
+                var0 = true;
+                var0 = var3.bind(var4)(var1, var2, var0);
+                return var0;
+            };
+            var1.error = var2;
+            var0.features = var1;
+            return var0;
+        };
+        return var0;
+    };
+    var2.default = var3;
+    var3 = function arg0() {
+        _fun98258: for (var _fun98258_ip = 0;;) switch (_fun98258_ip) {
+            case 0:
+                var1 = arg0;
+                var0 = var1;
+                if (!var0) {
+                    _fun98258_ip = 17;
+                    continue _fun98258
                 }
-            case 107:
-                var6 = false;
+            case 9:
+                var2 = 'log';
+                var0 = var2 in var1;
+            case 17:
+                if (!var0) {
+                    _fun98258_ip = 36;
+                    continue _fun98258
+                }
+            case 20:
+                var2 = var1.log;
+                var3 = 'function';
+                var2 = typeof var2;
+                var0 = var3 === var2;
+            case 36:
+                if (!var0) {
+                    _fun98258_ip = 47;
+                    continue _fun98258
+                }
+            case 39:
+                var2 = 'logImportant';
+                var0 = var2 in var1;
+            case 47:
+                if (!var0) {
+                    _fun98258_ip = 67;
+                    continue _fun98258
+                }
+            case 50:
+                var2 = var1.logImportant;
+                var3 = 'function';
+                var2 = typeof var2;
+                var0 = var3 === var2;
+            case 67:
+                if (!var0) {
+                    _fun98258_ip = 78;
+                    continue _fun98258
+                }
+            case 70:
+                var2 = 'debug';
+                var0 = var2 in var1;
+            case 78:
+                if (!var0) {
+                    _fun98258_ip = 98;
+                    continue _fun98258
+                }
+            case 81:
+                var2 = var1.debug;
+                var3 = 'function';
+                var2 = typeof var2;
+                var0 = var3 === var2;
+            case 98:
+                if (!var0) {
+                    _fun98258_ip = 109;
+                    continue _fun98258
+                }
+            case 101:
+                var2 = 'warn';
+                var0 = var2 in var1;
             case 109:
-                var2.forceTouch = var6;
-                var6 = var1.interfaceIdiom;
-                var2.interfaceIdiom = var6;
-                var1 = var1.systemName;
-                var2.systemName = var1;
-                var1 = {};
-                var1 = var3.bind(var5)(var1, var4, var2);
-                return var1;
-            case 147:
-                var0 = _closure1_slot0;
-                var0 = var0.Platform;
-                var0 = var0.constants;
-                var1 = global;
-                var3 = var1.Object;
-                var2 = var3.assign;
-                var1 = {};
-                var5 = var0.Release;
-                var1.osRelease = var5;
-                var5 = var0.Model;
-                var1.model = var5;
-                var5 = var0.ServerHost;
-                var1.serverHost = var5;
-                var5 = var0.uiMode;
-                var1.uiMode = var5;
-                var0 = var0.Serial;
-                var1.serial = var0;
-                var0 = {};
-                var0 = var2.bind(var3)(var0, var4, var1);
+                if (!var0) {
+                    _fun98258_ip = 128;
+                    continue _fun98258
+                }
+            case 112:
+                var2 = var1.warn;
+                var3 = 'function';
+                var2 = typeof var2;
+                var0 = var3 === var2;
+            case 128:
+                if (!var0) {
+                    _fun98258_ip = 139;
+                    continue _fun98258
+                }
+            case 131:
+                var2 = 'error';
+                var0 = var2 in var1;
+            case 139:
+                if (!var0) {
+                    _fun98258_ip = 158;
+                    continue _fun98258
+                }
+            case 142:
+                var1 = var1.error;
+                var2 = 'function';
+                var1 = typeof var1;
+                var0 = var2 === var1;
+            case 158:
                 return var0;
         }
     };
-    var1.default = var0;
-    var1 = arg6;
-    var0 = 0;
-    var3 = var1[var0];
-    var1 = arg1;
-    var0 = undefined;
-    var1 = var1.bind(var0)(var3);
-    var _closure1_slot0 = var1;
+    var _closure1_slot0 = var3;
+    var2.hasLoggerPlugin = var3;
+    var1 = function arg0() {
+        _fun98259: for (var _fun98259_ip = 0;;) switch (_fun98259_ip) {
+            case 0:
+                var2 = _closure1_slot0;
+                var0 = undefined;
+                var1 = arg0;
+                var1 = var2.bind(var0)(var1);
+                if (var1) {
+                    _fun98259_ip = 56;
+                    continue _fun98259
+                }
+            case 20:
+                var1 = global;
+                var3 = var1.Error;
+                var1 = var3.prototype;
+                var2 = Object.create(var1, {
+                    constructor: {
+                        value: var3
+                    }
+                });
+                var4 = 'This Reactotron client has not had the logger plugin applied to it. Make sure that you add `use(logger())` before adding this plugin.';
+                var5 = var2;
+                var1 = new var5[var3](var4, var3);
+                var1 = var1 instanceof Object ? var1 : var2;
+                throw var1;
+            case 56:
+                return var0;
+        }
+    };
+    var2.assertHasLoggerPlugin = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

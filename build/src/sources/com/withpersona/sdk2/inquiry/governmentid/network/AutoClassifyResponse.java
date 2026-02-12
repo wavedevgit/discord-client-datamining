@@ -14,7 +14,7 @@ import org.jetbrains.annotations.NotNull;
 public interface AutoClassifyResponse extends Parcelable {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f19622b = a.f19631a;
+    public static final a f19623b = a.f19632a;
 
     @i(generateAdapter = true)
     @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\t\b\u0007\u0018\u00002\u00020\u0001B\u0015\u0012\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u0002¢\u0006\u0004\b\u0005\u0010\u0006J\u001d\u0010\f\u001a\u00020\u000b2\u0006\u0010\b\u001a\u00020\u00072\u0006\u0010\n\u001a\u00020\t¢\u0006\u0004\b\f\u0010\rJ\r\u0010\u000e\u001a\u00020\t¢\u0006\u0004\b\u000e\u0010\u000fR\u001d\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u00028\u0006¢\u0006\f\n\u0004\b\u0010\u0010\u0011\u001a\u0004\b\u0012\u0010\u0013¨\u0006\u0014"}, d2 = {"Lcom/withpersona/sdk2/inquiry/governmentid/network/AutoClassifyResponse$ClassificationFailedResponse;", "Lcom/withpersona/sdk2/inquiry/governmentid/network/AutoClassifyResponse;", "", "Lcom/withpersona/sdk2/inquiry/governmentid/network/AutoClassifyResponse$IdClassesForCountry;", "idClassesByCountries", "<init>", "(Ljava/util/List;)V", "Landroid/os/Parcel;", "dest", "", "flags", "", "writeToParcel", "(Landroid/os/Parcel;I)V", "describeContents", "()I", "d", "Ljava/util/List;", "a", "()Ljava/util/List;", "government-id_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
@@ -24,7 +24,7 @@ public interface AutoClassifyResponse extends Parcelable {
         public static final Parcelable.Creator<ClassificationFailedResponse> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final List f19623d;
+        private final List f19624d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -49,11 +49,11 @@ public interface AutoClassifyResponse extends Parcelable {
 
         public ClassificationFailedResponse(List idClassesByCountries) {
             Intrinsics.checkNotNullParameter(idClassesByCountries, "idClassesByCountries");
-            this.f19623d = idClassesByCountries;
+            this.f19624d = idClassesByCountries;
         }
 
         public final List a() {
-            return this.f19623d;
+            return this.f19624d;
         }
 
         @Override // android.os.Parcelable
@@ -64,7 +64,7 @@ public interface AutoClassifyResponse extends Parcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            List<IdClassesForCountry> list = this.f19623d;
+            List<IdClassesForCountry> list = this.f19624d;
             dest.writeInt(list.size());
             for (IdClassesForCountry idClassesForCountry : list) {
                 idClassesForCountry.writeToParcel(dest, i10);
@@ -80,13 +80,13 @@ public interface AutoClassifyResponse extends Parcelable {
         public static final Parcelable.Creator<IdAcceptedResponse> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f19624d;
+        private final String f19625d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f19625e;
+        private final String f19626e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final Id f19626i;
+        private final Id f19627i;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -108,21 +108,21 @@ public interface AutoClassifyResponse extends Parcelable {
             Intrinsics.checkNotNullParameter(countryCode, "countryCode");
             Intrinsics.checkNotNullParameter(idClass, "idClass");
             Intrinsics.checkNotNullParameter(idConfig, "idConfig");
-            this.f19624d = countryCode;
-            this.f19625e = idClass;
-            this.f19626i = idConfig;
+            this.f19625d = countryCode;
+            this.f19626e = idClass;
+            this.f19627i = idConfig;
         }
 
         public final String a() {
-            return this.f19624d;
+            return this.f19625d;
         }
 
         public final String b() {
-            return this.f19625e;
+            return this.f19626e;
         }
 
         public final Id c() {
-            return this.f19626i;
+            return this.f19627i;
         }
 
         @Override // android.os.Parcelable
@@ -133,9 +133,9 @@ public interface AutoClassifyResponse extends Parcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f19624d);
-            dest.writeString(this.f19625e);
-            dest.writeParcelable(this.f19626i, i10);
+            dest.writeString(this.f19625d);
+            dest.writeString(this.f19626e);
+            dest.writeParcelable(this.f19627i, i10);
         }
     }
 
@@ -147,13 +147,13 @@ public interface AutoClassifyResponse extends Parcelable {
         public static final Parcelable.Creator<IdClassesForCountry> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f19627d;
+        private final String f19628d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f19628e;
+        private final String f19629e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final List f19629i;
+        private final List f19630i;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -182,21 +182,21 @@ public interface AutoClassifyResponse extends Parcelable {
             Intrinsics.checkNotNullParameter(countryName, "countryName");
             Intrinsics.checkNotNullParameter(countryCode, "countryCode");
             Intrinsics.checkNotNullParameter(idConfigs, "idConfigs");
-            this.f19627d = countryName;
-            this.f19628e = countryCode;
-            this.f19629i = idConfigs;
+            this.f19628d = countryName;
+            this.f19629e = countryCode;
+            this.f19630i = idConfigs;
         }
 
         public final String a() {
-            return this.f19628e;
+            return this.f19629e;
         }
 
         public final String b() {
-            return this.f19627d;
+            return this.f19628d;
         }
 
         public final List c() {
-            return this.f19629i;
+            return this.f19630i;
         }
 
         @Override // android.os.Parcelable
@@ -207,9 +207,9 @@ public interface AutoClassifyResponse extends Parcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f19627d);
-            dest.writeString(this.f19628e);
-            List<Parcelable> list = this.f19629i;
+            dest.writeString(this.f19628d);
+            dest.writeString(this.f19629e);
+            List<Parcelable> list = this.f19630i;
             dest.writeInt(list.size());
             for (Parcelable parcelable : list) {
                 dest.writeParcelable(parcelable, i10);
@@ -225,7 +225,7 @@ public interface AutoClassifyResponse extends Parcelable {
         public static final Parcelable.Creator<IdRejectedResponse> CREATOR = new a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final List f19630d;
+        private final List f19631d;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements Parcelable.Creator {
@@ -250,11 +250,11 @@ public interface AutoClassifyResponse extends Parcelable {
 
         public IdRejectedResponse(List idClassesByCountries) {
             Intrinsics.checkNotNullParameter(idClassesByCountries, "idClassesByCountries");
-            this.f19630d = idClassesByCountries;
+            this.f19631d = idClassesByCountries;
         }
 
         public final List a() {
-            return this.f19630d;
+            return this.f19631d;
         }
 
         @Override // android.os.Parcelable
@@ -265,7 +265,7 @@ public interface AutoClassifyResponse extends Parcelable {
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            List<IdClassesForCountry> list = this.f19630d;
+            List<IdClassesForCountry> list = this.f19631d;
             dest.writeInt(list.size());
             for (IdClassesForCountry idClassesForCountry : list) {
                 idClassesForCountry.writeToParcel(dest, i10);
@@ -277,13 +277,13 @@ public interface AutoClassifyResponse extends Parcelable {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ a f19631a = new a();
+        static final /* synthetic */ a f19632a = new a();
 
         private a() {
         }
 
         public final h.e a() {
-            cn.b e10 = cn.b.b(AutoClassifyResponse.class, "responseType").c(b.f19632d).e(IdAcceptedResponse.class, "id_accepted").e(ClassificationFailedResponse.class, "classification_failed").e(IdRejectedResponse.class, "id_rejected");
+            cn.b e10 = cn.b.b(AutoClassifyResponse.class, "responseType").c(b.f19633d).e(IdAcceptedResponse.class, "id_accepted").e(ClassificationFailedResponse.class, "classification_failed").e(IdRejectedResponse.class, "id_rejected");
             Intrinsics.checkNotNullExpressionValue(e10, "withSubtype(...)");
             return e10;
         }
@@ -293,7 +293,7 @@ public interface AutoClassifyResponse extends Parcelable {
     public static final class b implements AutoClassifyResponse {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f19632d = new b();
+        public static final b f19633d = new b();
         @NotNull
         public static final Parcelable.Creator<b> CREATOR = new a();
 
@@ -304,7 +304,7 @@ public interface AutoClassifyResponse extends Parcelable {
             public final b createFromParcel(Parcel parcel) {
                 Intrinsics.checkNotNullParameter(parcel, "parcel");
                 parcel.readInt();
-                return b.f19632d;
+                return b.f19633d;
             }
 
             @Override // android.os.Parcelable.Creator

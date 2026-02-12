@@ -3,12 +3,12 @@ package com.google.android.play.core.integrity;
 final class i extends h1 {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ j f17055e;
+    final /* synthetic */ j f17056e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public i(j jVar, String str, long j10) {
         super(str, j10);
-        this.f17055e = jVar;
+        this.f17056e = jVar;
     }
 }

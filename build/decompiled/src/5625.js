@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = '__esModule';
     var1 = var6.bind(var8)(var2, var1, var4);
     var1 = {};
-    var6 = 'RNSVGTextPath';
+    var6 = 'RNSVGUse';
     var1.uiViewClassName = var6;
     var4 = {};
     var8 = {};
@@ -50,26 +50,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'vectorEffect': true,
         'propList': true,
         'filter': true,
-        'fontSize': true,
-        'fontWeight': true,
-        'font': true,
-        'dx': true,
-        'dy': true,
+        'href': true,
         'x': true,
         'y': true,
-        'rotate': true,
-        'inlineSize': true,
-        'textLength': true,
-        'baselineShift': true,
-        'lengthAdjust': true,
-        'alignmentBaseline': true,
-        'verticalAlign': true,
-        'href': true,
-        'side': true,
-        'method': true,
-        'midLine': true,
-        'spacing': true,
-        'startOffset': true
+        'height': true,
+        'width': true
     };
     var4 = {};
     var0 = 0;

@@ -18,46 +18,46 @@ import org.jetbrains.annotations.NotNull;
 public final class BuiltInAnnotationDescriptor implements AnnotationDescriptor {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KotlinBuiltIns f32335a;
+    private final KotlinBuiltIns f32336a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final FqName f32336b;
+    private final FqName f32337b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f32337c;
+    private final Map f32338c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f32338d;
+    private final boolean f32339d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Lazy f32339e;
+    private final Lazy f32340e;
 
     public BuiltInAnnotationDescriptor(@NotNull KotlinBuiltIns builtIns, @NotNull FqName fqName, @NotNull Map<Name, ? extends ConstantValue<?>> allValueArguments, boolean z10) {
         Intrinsics.checkNotNullParameter(builtIns, "builtIns");
         Intrinsics.checkNotNullParameter(fqName, "fqName");
         Intrinsics.checkNotNullParameter(allValueArguments, "allValueArguments");
-        this.f32335a = builtIns;
-        this.f32336b = fqName;
-        this.f32337c = allValueArguments;
-        this.f32338d = z10;
-        this.f32339e = l.a(o.f6082e, new b(this));
+        this.f32336a = builtIns;
+        this.f32337b = fqName;
+        this.f32338c = allValueArguments;
+        this.f32339d = z10;
+        this.f32340e = l.a(o.f6082e, new b(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final SimpleType b(BuiltInAnnotationDescriptor builtInAnnotationDescriptor) {
-        return builtInAnnotationDescriptor.f32335a.getBuiltInClassByFqName(builtInAnnotationDescriptor.getFqName()).getDefaultType();
+        return builtInAnnotationDescriptor.f32336a.getBuiltInClassByFqName(builtInAnnotationDescriptor.getFqName()).getDefaultType();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     @NotNull
     public Map<Name, ConstantValue<?>> getAllValueArguments() {
-        return this.f32337c;
+        return this.f32338c;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     @NotNull
     public FqName getFqName() {
-        return this.f32336b;
+        return this.f32337b;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
@@ -71,7 +71,7 @@ public final class BuiltInAnnotationDescriptor implements AnnotationDescriptor {
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     @NotNull
     public KotlinType getType() {
-        Object value = this.f32339e.getValue();
+        Object value = this.f32340e.getValue();
         Intrinsics.checkNotNullExpressionValue(value, "getValue(...)");
         return (KotlinType) value;
     }

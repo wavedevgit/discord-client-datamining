@@ -181,14 +181,14 @@ public class AppCompatTextHelper {
         this.f1601j = v0Var.k(f.j.V2, this.f1601j);
         int i11 = Build.VERSION.SDK_INT;
         if (i11 >= 28) {
-            int k10 = v0Var.k(f.j.f23440e3, -1);
+            int k10 = v0Var.k(f.j.f23441e3, -1);
             this.f1602k = k10;
             if (k10 != -1) {
                 this.f1601j &= 2;
             }
         }
         boolean z12 = true;
-        if (!v0Var.s(f.j.f23435d3) && !v0Var.s(f.j.f23445f3)) {
+        if (!v0Var.s(f.j.f23436d3) && !v0Var.s(f.j.f23446f3)) {
             if (v0Var.s(f.j.U2)) {
                 this.f1604m = false;
                 int k11 = v0Var.k(f.j.U2, 1);
@@ -209,10 +209,10 @@ public class AppCompatTextHelper {
             return;
         }
         this.f1603l = null;
-        if (v0Var.s(f.j.f23445f3)) {
-            i10 = f.j.f23445f3;
+        if (v0Var.s(f.j.f23446f3)) {
+            i10 = f.j.f23446f3;
         } else {
-            i10 = f.j.f23435d3;
+            i10 = f.j.f23436d3;
         }
         int i12 = this.f1602k;
         int i13 = this.f1601j;
@@ -432,30 +432,30 @@ public class AppCompatTextHelper {
         TextView textView = this.f1592a;
         androidx.core.view.i0.i0(textView, textView.getContext(), f.j.Y, attributeSet, v10.r(), i10, 0);
         int n10 = v10.n(f.j.Z, -1);
-        if (v10.s(f.j.f23427c0)) {
-            this.f1593b = d(context, b10, v10.n(f.j.f23427c0, 0));
+        if (v10.s(f.j.f23428c0)) {
+            this.f1593b = d(context, b10, v10.n(f.j.f23428c0, 0));
         }
-        if (v10.s(f.j.f23417a0)) {
-            this.f1594c = d(context, b10, v10.n(f.j.f23417a0, 0));
+        if (v10.s(f.j.f23418a0)) {
+            this.f1594c = d(context, b10, v10.n(f.j.f23418a0, 0));
         }
-        if (v10.s(f.j.f23432d0)) {
-            this.f1595d = d(context, b10, v10.n(f.j.f23432d0, 0));
+        if (v10.s(f.j.f23433d0)) {
+            this.f1595d = d(context, b10, v10.n(f.j.f23433d0, 0));
         }
-        if (v10.s(f.j.f23422b0)) {
-            this.f1596e = d(context, b10, v10.n(f.j.f23422b0, 0));
+        if (v10.s(f.j.f23423b0)) {
+            this.f1596e = d(context, b10, v10.n(f.j.f23423b0, 0));
         }
-        if (v10.s(f.j.f23437e0)) {
-            this.f1597f = d(context, b10, v10.n(f.j.f23437e0, 0));
+        if (v10.s(f.j.f23438e0)) {
+            this.f1597f = d(context, b10, v10.n(f.j.f23438e0, 0));
         }
-        if (v10.s(f.j.f23442f0)) {
-            this.f1598g = d(context, b10, v10.n(f.j.f23442f0, 0));
+        if (v10.s(f.j.f23443f0)) {
+            this.f1598g = d(context, b10, v10.n(f.j.f23443f0, 0));
         }
         v10.x();
         boolean z13 = this.f1592a.getTransformationMethod() instanceof PasswordTransformationMethod;
         if (n10 != -1) {
             v0 t10 = v0.t(context, n10, f.j.S2);
-            if (!z13 && t10.s(f.j.f23455h3)) {
-                z10 = t10.a(f.j.f23455h3, false);
+            if (!z13 && t10.s(f.j.f23456h3)) {
+                z10 = t10.a(f.j.f23456h3, false);
                 z11 = true;
             } else {
                 z10 = false;
@@ -463,13 +463,13 @@ public class AppCompatTextHelper {
             }
             C(context, t10);
             int i12 = Build.VERSION.SDK_INT;
-            if (t10.s(f.j.f23460i3)) {
-                str2 = t10.o(f.j.f23460i3);
+            if (t10.s(f.j.f23461i3)) {
+                str2 = t10.o(f.j.f23461i3);
             } else {
                 str2 = null;
             }
-            if (i12 >= 26 && t10.s(f.j.f23450g3)) {
-                str = t10.o(f.j.f23450g3);
+            if (i12 >= 26 && t10.s(f.j.f23451g3)) {
+                str = t10.o(f.j.f23451g3);
             } else {
                 str = null;
             }
@@ -481,18 +481,18 @@ public class AppCompatTextHelper {
             str2 = null;
         }
         v0 v11 = v0.v(context, attributeSet, f.j.S2, i10, 0);
-        if (!z13 && v11.s(f.j.f23455h3)) {
-            z10 = v11.a(f.j.f23455h3, false);
+        if (!z13 && v11.s(f.j.f23456h3)) {
+            z10 = v11.a(f.j.f23456h3, false);
             z12 = true;
         } else {
             z12 = z11;
         }
         int i13 = Build.VERSION.SDK_INT;
-        if (v11.s(f.j.f23460i3)) {
-            str2 = v11.o(f.j.f23460i3);
+        if (v11.s(f.j.f23461i3)) {
+            str2 = v11.o(f.j.f23461i3);
         }
-        if (i13 >= 26 && v11.s(f.j.f23450g3)) {
-            str = v11.o(f.j.f23450g3);
+        if (i13 >= 26 && v11.s(f.j.f23451g3)) {
+            str = v11.o(f.j.f23451g3);
         }
         if (i13 >= 28 && v11.s(f.j.T2) && v11.f(f.j.T2, -1) == 0) {
             this.f1592a.setTextSize(0, 0.0f);
@@ -527,59 +527,59 @@ public class AppCompatTextHelper {
                 }
             }
         }
-        v0 u10 = v0.u(context, attributeSet, f.j.f23447g0);
-        int n11 = u10.n(f.j.f23487o0, -1);
+        v0 u10 = v0.u(context, attributeSet, f.j.f23448g0);
+        int n11 = u10.n(f.j.f23488o0, -1);
         if (n11 != -1) {
             drawable = b10.c(context, n11);
         } else {
             drawable = null;
         }
-        int n12 = u10.n(f.j.f23512t0, -1);
+        int n12 = u10.n(f.j.f23513t0, -1);
         if (n12 != -1) {
             drawable2 = b10.c(context, n12);
         } else {
             drawable2 = null;
         }
-        int n13 = u10.n(f.j.f23492p0, -1);
+        int n13 = u10.n(f.j.f23493p0, -1);
         if (n13 != -1) {
             drawable3 = b10.c(context, n13);
         } else {
             drawable3 = null;
         }
-        int n14 = u10.n(f.j.f23477m0, -1);
+        int n14 = u10.n(f.j.f23478m0, -1);
         if (n14 != -1) {
             drawable4 = b10.c(context, n14);
         } else {
             drawable4 = null;
         }
-        int n15 = u10.n(f.j.f23497q0, -1);
+        int n15 = u10.n(f.j.f23498q0, -1);
         if (n15 != -1) {
             drawable5 = b10.c(context, n15);
         } else {
             drawable5 = null;
         }
-        int n16 = u10.n(f.j.f23482n0, -1);
+        int n16 = u10.n(f.j.f23483n0, -1);
         if (n16 != -1) {
             drawable6 = b10.c(context, n16);
         } else {
             drawable6 = null;
         }
         y(drawable, drawable2, drawable3, drawable4, drawable5, drawable6);
-        if (u10.s(f.j.f23502r0)) {
-            androidx.core.widget.j.j(this.f1592a, u10.c(f.j.f23502r0));
+        if (u10.s(f.j.f23503r0)) {
+            androidx.core.widget.j.j(this.f1592a, u10.c(f.j.f23503r0));
         }
-        if (u10.s(f.j.f23507s0)) {
-            androidx.core.widget.j.k(this.f1592a, e0.e(u10.k(f.j.f23507s0, -1), null));
+        if (u10.s(f.j.f23508s0)) {
+            androidx.core.widget.j.k(this.f1592a, e0.e(u10.k(f.j.f23508s0, -1), null));
         }
-        int f11 = u10.f(f.j.f23522v0, -1);
-        int f12 = u10.f(f.j.f23527w0, -1);
-        if (u10.s(f.j.f23532x0)) {
-            TypedValue w10 = u10.w(f.j.f23532x0);
+        int f11 = u10.f(f.j.f23523v0, -1);
+        int f12 = u10.f(f.j.f23528w0, -1);
+        if (u10.s(f.j.f23533x0)) {
+            TypedValue w10 = u10.w(f.j.f23533x0);
             if (w10 != null && w10.type == 5) {
                 i11 = b2.g.a(w10.data);
                 f10 = TypedValue.complexToFloat(w10.data);
             } else {
-                f10 = u10.f(f.j.f23532x0, -1);
+                f10 = u10.f(f.j.f23533x0, -1);
                 i11 = -1;
             }
         } else {
@@ -632,15 +632,15 @@ public class AppCompatTextHelper {
     public void q(Context context, int i10) {
         String o10;
         v0 t10 = v0.t(context, i10, f.j.S2);
-        if (t10.s(f.j.f23455h3)) {
-            s(t10.a(f.j.f23455h3, false));
+        if (t10.s(f.j.f23456h3)) {
+            s(t10.a(f.j.f23456h3, false));
         }
         int i11 = Build.VERSION.SDK_INT;
         if (t10.s(f.j.T2) && t10.f(f.j.T2, -1) == 0) {
             this.f1592a.setTextSize(0, 0.0f);
         }
         C(context, t10);
-        if (i11 >= 26 && t10.s(f.j.f23450g3) && (o10 = t10.o(f.j.f23450g3)) != null) {
+        if (i11 >= 26 && t10.s(f.j.f23451g3) && (o10 = t10.o(f.j.f23451g3)) != null) {
             d.d(this.f1592a, o10);
         }
         t10.x();

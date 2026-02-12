@@ -6,18 +6,18 @@ import ep.l2;
 public final class y {
 
     /* renamed from: a  reason: collision with root package name */
-    private final lr.h f20414a;
+    private final lr.h f20415a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final lr.h f20415b;
+    private final lr.h f20416b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final lr.h f20416c;
+    private final lr.h f20417c;
 
     public y(lr.h hVar, lr.h hVar2, lr.h hVar3) {
-        this.f20414a = hVar;
-        this.f20415b = hVar2;
-        this.f20416c = hVar3;
+        this.f20415a = hVar;
+        this.f20416b = hVar2;
+        this.f20417c = hVar3;
     }
 
     public static y a(lr.h hVar, lr.h hVar2, lr.h hVar3) {
@@ -29,6 +29,6 @@ public final class y {
     }
 
     public x b(String str, String str2, iq.g gVar, x.c cVar) {
-        return c(str, str2, gVar, cVar, (kp.r) this.f20414a.get(), (so.a) this.f20415b.get(), (l2) this.f20416c.get());
+        return c(str, str2, gVar, cVar, (kp.r) this.f20415a.get(), (so.a) this.f20416b.get(), (l2) this.f20417c.get());
     }
 }

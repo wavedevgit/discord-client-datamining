@@ -40,7 +40,7 @@ public /* synthetic */ class LoadingRow$$serializer implements h0 {
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        return new KSerializer[]{p0.f50048a, ChangeType.Serializer.INSTANCE, LoadMoreButton$$serializer.INSTANCE, h.f49996a};
+        return new KSerializer[]{p0.f50049a, ChangeType.Serializer.INSTANCE, LoadMoreButton$$serializer.INSTANCE, h.f49997a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

@@ -27,7 +27,7 @@ public final class StaticChannelMentionContentNode extends MentionContentNode {
     @NotNull
 
     /* renamed from: id */
-    private final StaticChannelMentionType f9264id;
+    private final StaticChannelMentionType f9265id;
     private final String itemId;
     @NotNull
     public static final Companion Companion = new Companion(null);
@@ -73,7 +73,7 @@ public final class StaticChannelMentionContentNode extends MentionContentNode {
     /* renamed from: copy-qphDXf8$default */
     public static /* synthetic */ StaticChannelMentionContentNode m377copyqphDXf8$default(StaticChannelMentionContentNode staticChannelMentionContentNode, StaticChannelMentionType staticChannelMentionType, GuildId guildId, String str, List list, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            staticChannelMentionType = staticChannelMentionContentNode.f9264id;
+            staticChannelMentionType = staticChannelMentionContentNode.f9265id;
         }
         if ((i10 & 2) != 0) {
             guildId = staticChannelMentionContentNode.guildId;
@@ -90,19 +90,19 @@ public final class StaticChannelMentionContentNode extends MentionContentNode {
     public static final /* synthetic */ void write$Self$chat_release(StaticChannelMentionContentNode staticChannelMentionContentNode, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         MentionContentNode.write$Self(staticChannelMentionContentNode, compositeEncoder, serialDescriptor);
         Lazy[] lazyArr = $childSerializers;
-        compositeEncoder.k(serialDescriptor, 0, StaticChannelMentionType.Serializer.INSTANCE, staticChannelMentionContentNode.f9264id);
+        compositeEncoder.k(serialDescriptor, 0, StaticChannelMentionType.Serializer.INSTANCE, staticChannelMentionContentNode.f9265id);
         if (compositeEncoder.z(serialDescriptor, 1) || staticChannelMentionContentNode.guildId != null) {
             compositeEncoder.o(serialDescriptor, 1, GuildId$$serializer.INSTANCE, staticChannelMentionContentNode.guildId);
         }
         if (compositeEncoder.z(serialDescriptor, 2) || staticChannelMentionContentNode.itemId != null) {
-            compositeEncoder.o(serialDescriptor, 2, n2.f50032a, staticChannelMentionContentNode.itemId);
+            compositeEncoder.o(serialDescriptor, 2, n2.f50033a, staticChannelMentionContentNode.itemId);
         }
         compositeEncoder.k(serialDescriptor, 3, (qt.o) lazyArr[3].getValue(), staticChannelMentionContentNode.getContent());
     }
 
     @NotNull
     public final StaticChannelMentionType component1() {
-        return this.f9264id;
+        return this.f9265id;
     }
 
     /* renamed from: component2-qOKuAAo */
@@ -133,7 +133,7 @@ public final class StaticChannelMentionContentNode extends MentionContentNode {
         }
         if (obj instanceof StaticChannelMentionContentNode) {
             StaticChannelMentionContentNode staticChannelMentionContentNode = (StaticChannelMentionContentNode) obj;
-            return this.f9264id == staticChannelMentionContentNode.f9264id && Intrinsics.areEqual(this.guildId, staticChannelMentionContentNode.guildId) && Intrinsics.areEqual(this.itemId, staticChannelMentionContentNode.itemId) && Intrinsics.areEqual(this.content, staticChannelMentionContentNode.content);
+            return this.f9265id == staticChannelMentionContentNode.f9265id && Intrinsics.areEqual(this.guildId, staticChannelMentionContentNode.guildId) && Intrinsics.areEqual(this.itemId, staticChannelMentionContentNode.itemId) && Intrinsics.areEqual(this.content, staticChannelMentionContentNode.content);
         }
         return false;
     }
@@ -151,7 +151,7 @@ public final class StaticChannelMentionContentNode extends MentionContentNode {
 
     @NotNull
     public final StaticChannelMentionType getId() {
-        return this.f9264id;
+        return this.f9265id;
     }
 
     public final String getItemId() {
@@ -159,7 +159,7 @@ public final class StaticChannelMentionContentNode extends MentionContentNode {
     }
 
     public int hashCode() {
-        int hashCode = this.f9264id.hashCode() * 31;
+        int hashCode = this.f9265id.hashCode() * 31;
         GuildId guildId = this.guildId;
         int m1076hashCodeimpl = (hashCode + (guildId == null ? 0 : GuildId.m1076hashCodeimpl(guildId.m1080unboximpl()))) * 31;
         String str = this.itemId;
@@ -168,7 +168,7 @@ public final class StaticChannelMentionContentNode extends MentionContentNode {
 
     @NotNull
     public String toString() {
-        StaticChannelMentionType staticChannelMentionType = this.f9264id;
+        StaticChannelMentionType staticChannelMentionType = this.f9265id;
         GuildId guildId = this.guildId;
         String str = this.itemId;
         List<ContentNode> list = this.content;
@@ -185,7 +185,7 @@ public final class StaticChannelMentionContentNode extends MentionContentNode {
         if (9 != (i10 & 9)) {
             v1.b(i10, 9, StaticChannelMentionContentNode$$serializer.INSTANCE.getDescriptor());
         }
-        this.f9264id = staticChannelMentionType;
+        this.f9265id = staticChannelMentionType;
         if ((i10 & 2) == 0) {
             this.guildId = null;
         } else {
@@ -209,7 +209,7 @@ public final class StaticChannelMentionContentNode extends MentionContentNode {
         super(null);
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(content, "content");
-        this.f9264id = id2;
+        this.f9265id = id2;
         this.guildId = guildId;
         this.itemId = str;
         this.content = content;

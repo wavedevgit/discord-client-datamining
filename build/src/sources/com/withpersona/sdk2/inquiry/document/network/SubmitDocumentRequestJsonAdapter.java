@@ -17,28 +17,28 @@ import org.jetbrains.annotations.NotNull;
 public final class SubmitDocumentRequestJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f19529a;
+    private final m.b f19530a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f19530b;
+    private final h f19531b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f19531c;
+    private final h f19532c;
 
     /* renamed from: d  reason: collision with root package name */
-    private volatile Constructor f19532d;
+    private volatile Constructor f19533d;
 
     public SubmitDocumentRequestJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("data", "meta");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f19529a = a10;
+        this.f19530a = a10;
         h f10 = moshi.f(SubmitDocumentRequest.Data.class, x0.d(), "data");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f19530b = f10;
+        this.f19531b = f10;
         h f11 = moshi.f(SubmitDocumentRequest.Meta.class, x0.d(), "meta");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f19531c = f11;
+        this.f19532c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -50,14 +50,14 @@ public final class SubmitDocumentRequestJsonAdapter extends h {
         SubmitDocumentRequest.Meta meta = null;
         int i10 = -1;
         while (reader.hasNext()) {
-            int J = reader.J(this.f19529a);
+            int J = reader.J(this.f19530a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (meta = (SubmitDocumentRequest.Meta) this.f19531c.fromJson(reader)) == null) {
+                    if (J == 1 && (meta = (SubmitDocumentRequest.Meta) this.f19532c.fromJson(reader)) == null) {
                         throw dn.c.x("meta", "meta", reader);
                     }
                 } else {
-                    data = (SubmitDocumentRequest.Data) this.f19530b.fromJson(reader);
+                    data = (SubmitDocumentRequest.Data) this.f19531b.fromJson(reader);
                     if (data != null) {
                         i10 = -2;
                     } else {
@@ -77,10 +77,10 @@ public final class SubmitDocumentRequestJsonAdapter extends h {
             }
             throw dn.c.o("meta", "meta", reader);
         }
-        Constructor constructor = this.f19532d;
+        Constructor constructor = this.f19533d;
         if (constructor == null) {
-            constructor = SubmitDocumentRequest.class.getDeclaredConstructor(SubmitDocumentRequest.Data.class, SubmitDocumentRequest.Meta.class, Integer.TYPE, dn.c.f21827c);
-            this.f19532d = constructor;
+            constructor = SubmitDocumentRequest.class.getDeclaredConstructor(SubmitDocumentRequest.Data.class, SubmitDocumentRequest.Meta.class, Integer.TYPE, dn.c.f21828c);
+            this.f19533d = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }
         if (meta != null) {
@@ -98,9 +98,9 @@ public final class SubmitDocumentRequestJsonAdapter extends h {
         if (submitDocumentRequest != null) {
             writer.i();
             writer.J("data");
-            this.f19530b.toJson(writer, submitDocumentRequest.a());
+            this.f19531b.toJson(writer, submitDocumentRequest.a());
             writer.J("meta");
-            this.f19531c.toJson(writer, submitDocumentRequest.b());
+            this.f19532c.toJson(writer, submitDocumentRequest.b());
             writer.s();
             return;
         }

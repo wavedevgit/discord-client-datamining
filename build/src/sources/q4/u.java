@@ -6,15 +6,15 @@ import java.util.WeakHashMap;
 public final class u {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final u f43945a = new u();
+    public static final u f43946a = new u();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final WeakHashMap f43946b = new WeakHashMap();
+    private static final WeakHashMap f43947b = new WeakHashMap();
 
     private u() {
     }
 
     public final WeakHashMap a() {
-        return f43946b;
+        return f43947b;
     }
 }

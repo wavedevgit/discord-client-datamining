@@ -99,7 +99,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var4.bind(var3)(var2);
                     var2 = var2.DEBUG_BUILD;
                     if (!var2) {
-                        _fun9103_ip = 175;
+                        _fun9103_ip = 174;
                         continue _fun9103
                     }
                 case 100:
@@ -118,7 +118,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = 'Starting a new trace with id ';
                     var1 = var5.bind(var1)(var6);
                     var1 = var2.bind(var4)(var1);
-                case 175:
+                case 174:
                     var2 = _closure1_slot5;
                     var1 = _closure2_slot0;
                     var0 = null;
@@ -666,7 +666,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3;
             case 542:
                 if (!var2) {
-                    _fun9107_ip = 637;
+                    _fun9107_ip = 636;
                     continue _fun9107
                 }
             case 545:
@@ -677,7 +677,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var5.bind(var4)(var2);
                 var2 = var2.DEBUG_BUILD;
                 if (!var2) {
-                    _fun9107_ip = 617;
+                    _fun9107_ip = 616;
                     continue _fun9107
                 }
             case 574:
@@ -690,21 +690,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var4.log;
                 var1 = '[Tracing] Discarding root span because its trace was not chosen to be sampled.';
                 var1 = var2.bind(var4)(var1);
-            case 617:
+            case 616:
                 var4 = var3.recordDroppedEvent;
                 var2 = 'sample_rate';
                 var1 = 'transaction';
                 var1 = var4.bind(var3)(var2, var1);
-            case 637:
+            case 636:
                 if (!var3) {
-                    _fun9107_ip = 658;
+                    _fun9107_ip = 657;
                     continue _fun9107
                 }
-            case 640:
+            case 639:
                 var2 = var3.emit;
                 var1 = 'spanStart';
                 var1 = var2.bind(var3)(var1, var0);
-            case 658:
+            case 657:
                 return var0;
         }
     };

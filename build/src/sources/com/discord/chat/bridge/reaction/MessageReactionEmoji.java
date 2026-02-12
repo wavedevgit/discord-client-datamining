@@ -26,7 +26,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
     private final String displayName;
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9273id;
+    private final String f9274id;
     private final String name;
     @NotNull
     private final String src;
@@ -59,9 +59,9 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
         this.src = str2;
         this.displayName = str3;
         if ((i10 & 8) == 0) {
-            this.f9273id = null;
+            this.f9274id = null;
         } else {
-            this.f9273id = str4;
+            this.f9274id = str4;
         }
         if ((i10 & 16) == 0) {
             this.animated = null;
@@ -81,7 +81,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
             str3 = messageReactionEmoji.displayName;
         }
         if ((i10 & 8) != 0) {
-            str4 = messageReactionEmoji.f9273id;
+            str4 = messageReactionEmoji.f9274id;
         }
         if ((i10 & 16) != 0) {
             bool = messageReactionEmoji.animated;
@@ -93,15 +93,15 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
 
     public static final /* synthetic */ void write$Self$chat_release(MessageReactionEmoji messageReactionEmoji, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         if (compositeEncoder.z(serialDescriptor, 0) || messageReactionEmoji.getName() != null) {
-            compositeEncoder.o(serialDescriptor, 0, n2.f50032a, messageReactionEmoji.getName());
+            compositeEncoder.o(serialDescriptor, 0, n2.f50033a, messageReactionEmoji.getName());
         }
         compositeEncoder.y(serialDescriptor, 1, messageReactionEmoji.getSrc());
         compositeEncoder.y(serialDescriptor, 2, messageReactionEmoji.getDisplayName());
         if (compositeEncoder.z(serialDescriptor, 3) || messageReactionEmoji.getId() != null) {
-            compositeEncoder.o(serialDescriptor, 3, n2.f50032a, messageReactionEmoji.getId());
+            compositeEncoder.o(serialDescriptor, 3, n2.f50033a, messageReactionEmoji.getId());
         }
         if (compositeEncoder.z(serialDescriptor, 4) || messageReactionEmoji.getAnimated() != null) {
-            compositeEncoder.o(serialDescriptor, 4, h.f49996a, messageReactionEmoji.getAnimated());
+            compositeEncoder.o(serialDescriptor, 4, h.f49997a, messageReactionEmoji.getAnimated());
         }
     }
 
@@ -120,7 +120,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
     }
 
     public final String component4() {
-        return this.f9273id;
+        return this.f9274id;
     }
 
     public final Boolean component5() {
@@ -140,7 +140,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
         }
         if (obj instanceof MessageReactionEmoji) {
             MessageReactionEmoji messageReactionEmoji = (MessageReactionEmoji) obj;
-            return Intrinsics.areEqual(this.name, messageReactionEmoji.name) && Intrinsics.areEqual(this.src, messageReactionEmoji.src) && Intrinsics.areEqual(this.displayName, messageReactionEmoji.displayName) && Intrinsics.areEqual(this.f9273id, messageReactionEmoji.f9273id) && Intrinsics.areEqual(this.animated, messageReactionEmoji.animated);
+            return Intrinsics.areEqual(this.name, messageReactionEmoji.name) && Intrinsics.areEqual(this.src, messageReactionEmoji.src) && Intrinsics.areEqual(this.displayName, messageReactionEmoji.displayName) && Intrinsics.areEqual(this.f9274id, messageReactionEmoji.f9274id) && Intrinsics.areEqual(this.animated, messageReactionEmoji.animated);
         }
         return false;
     }
@@ -163,7 +163,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
 
     @Override // com.discord.reactions.ReactionView.Emoji
     public String getId() {
-        return this.f9273id;
+        return this.f9274id;
     }
 
     @Override // com.discord.reactions.ReactionView.Emoji
@@ -185,7 +185,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
     public int hashCode() {
         String str = this.name;
         int hashCode = (((((str == null ? 0 : str.hashCode()) * 31) + this.src.hashCode()) * 31) + this.displayName.hashCode()) * 31;
-        String str2 = this.f9273id;
+        String str2 = this.f9274id;
         int hashCode2 = (hashCode + (str2 == null ? 0 : str2.hashCode())) * 31;
         Boolean bool = this.animated;
         return hashCode2 + (bool != null ? bool.hashCode() : 0);
@@ -202,7 +202,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
         String str = this.name;
         String str2 = this.src;
         String str3 = this.displayName;
-        String str4 = this.f9273id;
+        String str4 = this.f9274id;
         Boolean bool = this.animated;
         return "MessageReactionEmoji(name=" + str + ", src=" + str2 + ", displayName=" + str3 + ", id=" + str4 + ", animated=" + bool + ")";
     }
@@ -213,7 +213,7 @@ public final class MessageReactionEmoji implements ReactionView.Emoji {
         this.name = str;
         this.src = src;
         this.displayName = displayName;
-        this.f9273id = str2;
+        this.f9274id = str2;
         this.animated = bool;
     }
 

@@ -968,7 +968,7 @@ public final class c extends e {
     @Override // be.e
     protected void f(k kVar) {
         boolean z10;
-        ByteBuffer byteBuffer = (ByteBuffer) oe.a.e(kVar.f46229i);
+        ByteBuffer byteBuffer = (ByteBuffer) oe.a.e(kVar.f46230i);
         this.f6639g.S(byteBuffer.array(), byteBuffer.limit());
         while (this.f6639g.a() >= 3) {
             int H = this.f6639g.H();

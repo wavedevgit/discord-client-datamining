@@ -5,16 +5,16 @@ import bj.c;
 final class w8 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w8 f39763a = new w8();
+    static final w8 f39764a = new w8();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final bj.c f39764b;
+    private static final bj.c f39765b;
 
     static {
         c.b a10 = bj.c.a("errorCode");
         l2 l2Var = new l2();
         l2Var.a(1);
-        f39764b = a10.b(l2Var.b()).a();
+        f39765b = a10.b(l2Var.b()).a();
     }
 
     private w8() {
@@ -22,6 +22,6 @@ final class w8 implements bj.d {
 
     @Override // bj.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        ((bj.e) obj2).e(f39764b, ((rf) obj).a());
+        ((bj.e) obj2).e(f39765b, ((rf) obj).a());
     }
 }

@@ -9,7 +9,7 @@ import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface ClassDescriptor extends ClassOrPackageFragmentDescriptor, ClassifierDescriptorWithTypeParameters {
     /* renamed from: getCompanionObjectDescriptor */
-    ClassDescriptor mo1196getCompanionObjectDescriptor();
+    ClassDescriptor mo1195getCompanionObjectDescriptor();
 
     @NotNull
     Collection<ClassConstructorDescriptor> getConstructors();
@@ -57,7 +57,7 @@ public interface ClassDescriptor extends ClassOrPackageFragmentDescriptor, Class
     MemberScope getUnsubstitutedMemberScope();
 
     /* renamed from: getUnsubstitutedPrimaryConstructor */
-    ClassConstructorDescriptor mo1197getUnsubstitutedPrimaryConstructor();
+    ClassConstructorDescriptor mo1196getUnsubstitutedPrimaryConstructor();
 
     ValueClassRepresentation<SimpleType> getValueClassRepresentation();
 

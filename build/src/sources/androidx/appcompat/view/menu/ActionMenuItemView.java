@@ -306,8 +306,8 @@ public class ActionMenuItemView extends AppCompatTextView implements k.a, View.O
         super(context, attributeSet, i10);
         Resources resources = context.getResources();
         this.f1366r = g();
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.j.f23521v, i10, 0);
-        this.f1368t = obtainStyledAttributes.getDimensionPixelSize(f.j.f23526w, 0);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, f.j.f23522v, i10, 0);
+        this.f1368t = obtainStyledAttributes.getDimensionPixelSize(f.j.f23527w, 0);
         obtainStyledAttributes.recycle();
         this.f1370v = (int) ((resources.getDisplayMetrics().density * 32.0f) + 0.5f);
         setOnClickListener(this);

@@ -60,8 +60,8 @@ public /* synthetic */ class UserOrRoleMentionContentNode$$serializer implements
     @NotNull
     public final KSerializer[] childSerializers() {
         Lazy[] access$get$childSerializers$cp = UserOrRoleMentionContentNode.access$get$childSerializers$cp();
-        n2 n2Var = n2.f50032a;
-        return new KSerializer[]{rt.a.u(ChannelId$$serializer.INSTANCE), rt.a.u(UserId$$serializer.INSTANCE), rt.a.u(n2Var), rt.a.u(n2Var), p0.f50048a, rt.a.u(RoleColors$$serializer.INSTANCE), rt.a.u(GuildId$$serializer.INSTANCE), rt.a.u(RoleId$$serializer.INSTANCE), access$get$childSerializers$cp[8].getValue()};
+        n2 n2Var = n2.f50033a;
+        return new KSerializer[]{rt.a.u(ChannelId$$serializer.INSTANCE), rt.a.u(UserId$$serializer.INSTANCE), rt.a.u(n2Var), rt.a.u(n2Var), p0.f50049a, rt.a.u(RoleColors$$serializer.INSTANCE), rt.a.u(GuildId$$serializer.INSTANCE), rt.a.u(RoleId$$serializer.INSTANCE), access$get$childSerializers$cp[8].getValue()};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -83,7 +83,7 @@ public /* synthetic */ class UserOrRoleMentionContentNode$$serializer implements
         Lazy[] access$get$childSerializers$cp = UserOrRoleMentionContentNode.access$get$childSerializers$cp();
         int i12 = 7;
         if (b10.p()) {
-            n2 n2Var = n2.f50032a;
+            n2 n2Var = n2.f50033a;
             int i13 = b10.i(serialDescriptor, 4);
             list = (List) b10.y(serialDescriptor, 8, (DeserializationStrategy) access$get$childSerializers$cp[8].getValue(), null);
             channelId = (ChannelId) b10.n(serialDescriptor, 0, ChannelId$$serializer.INSTANCE, null);
@@ -124,12 +124,12 @@ public /* synthetic */ class UserOrRoleMentionContentNode$$serializer implements
                         i12 = 7;
                         break;
                     case 2:
-                        str4 = (String) b10.n(serialDescriptor, 2, n2.f50032a, str4);
+                        str4 = (String) b10.n(serialDescriptor, 2, n2.f50033a, str4);
                         i15 |= 4;
                         i12 = 7;
                         break;
                     case 3:
-                        str3 = (String) b10.n(serialDescriptor, 3, n2.f50032a, str3);
+                        str3 = (String) b10.n(serialDescriptor, 3, n2.f50033a, str3);
                         i15 |= 8;
                         i12 = 7;
                         break;

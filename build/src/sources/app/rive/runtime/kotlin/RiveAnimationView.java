@@ -791,7 +791,7 @@ public class RiveAnimationView extends RiveTextureView implements Observable<Riv
                 @Override // kotlin.jvm.functions.Function1
                 public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                     invoke((File) obj);
-                    return Unit.f31987a;
+                    return Unit.f31988a;
                 }
 
                 public final void invoke(@NotNull File it) {
@@ -1129,7 +1129,7 @@ public class RiveAnimationView extends RiveTextureView implements Observable<Riv
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 invoke((File) obj);
-                return Unit.f31987a;
+                return Unit.f31988a;
             }
 
             public final void invoke(@NotNull File it) {
@@ -1188,7 +1188,7 @@ public class RiveAnimationView extends RiveTextureView implements Observable<Riv
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 invoke((File) obj);
-                return Unit.f31987a;
+                return Unit.f31988a;
             }
 
             public final void invoke(@NotNull File it) {
@@ -1284,7 +1284,7 @@ public class RiveAnimationView extends RiveTextureView implements Observable<Riv
                     @Override // kotlin.jvm.functions.Function1
                     public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                         invoke((File) obj);
-                        return Unit.f31987a;
+                        return Unit.f31988a;
                     }
 
                     public final void invoke(@NotNull File it) {

@@ -3,7 +3,7 @@ package th;
 public class f extends e {
 
     /* renamed from: a  reason: collision with root package name */
-    float f48790a = -1.0f;
+    float f48791a = -1.0f;
 
     @Override // th.e
     public void a(n nVar, float f10, float f11, float f12) {

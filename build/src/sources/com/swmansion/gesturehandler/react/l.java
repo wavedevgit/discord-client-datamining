@@ -13,16 +13,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class l extends Event {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f18992c = new a(null);
+    public static final a f18993c = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Pools$SynchronizedPool f18993d = new Pools$SynchronizedPool(7);
+    private static final Pools$SynchronizedPool f18994d = new Pools$SynchronizedPool(7);
 
     /* renamed from: a  reason: collision with root package name */
-    private WritableMap f18994a;
+    private WritableMap f18995a;
 
     /* renamed from: b  reason: collision with root package name */
-    private short f18995b;
+    private short f18996b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -55,7 +55,7 @@ public final class l extends Event {
 
         public final l b(nn.d handler) {
             Intrinsics.checkNotNullParameter(handler, "handler");
-            l lVar = (l) l.f18993d.acquire();
+            l lVar = (l) l.f18994d.acquire();
             if (lVar == null) {
                 lVar = new l(null);
             }
@@ -76,8 +76,8 @@ public final class l extends Event {
         View W = dVar.W();
         Intrinsics.checkNotNull(W);
         super.init(UIManagerHelper.getSurfaceId(W), W.getId());
-        this.f18994a = f18992c.a(dVar);
-        this.f18995b = dVar.I();
+        this.f18995a = f18993c.a(dVar);
+        this.f18996b = dVar.I();
     }
 
     @Override // com.facebook.react.uimanager.events.Event
@@ -87,12 +87,12 @@ public final class l extends Event {
 
     @Override // com.facebook.react.uimanager.events.Event
     public short getCoalescingKey() {
-        return this.f18995b;
+        return this.f18996b;
     }
 
     @Override // com.facebook.react.uimanager.events.Event
     protected WritableMap getEventData() {
-        return this.f18994a;
+        return this.f18995a;
     }
 
     @Override // com.facebook.react.uimanager.events.Event
@@ -102,8 +102,8 @@ public final class l extends Event {
 
     @Override // com.facebook.react.uimanager.events.Event
     public void onDispose() {
-        this.f18994a = null;
-        f18993d.release(this);
+        this.f18995a = null;
+        f18994d.release(this);
     }
 
     private l() {

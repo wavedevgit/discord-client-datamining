@@ -8,49 +8,49 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = dependencyMap;
     var _closure1_slot2 = var0;
     var0 = function arg0() {
-        _fun38502: for (var _fun38502_ip = 0;;) switch (_fun38502_ip) {
+        _fun38524: for (var _fun38524_ip = 0;;) switch (_fun38524_ip) {
             case 0:
                 var7 = arg0;
                 var0 = 'Horizontal (normal)';
                 var1 = 0;
                 if (!(var1 !== var7)) {
-                    _fun38502_ip = 99;
-                    continue _fun38502
+                    _fun38524_ip = 99;
+                    continue _fun38524
                 }
             case 15:
                 var1 = 'Rotate 270 CW';
                 var2 = 1;
                 if (!(var2 !== var7)) {
-                    _fun38502_ip = 96;
-                    continue _fun38502
+                    _fun38524_ip = 96;
+                    continue _fun38524
                 }
             case 28:
                 var2 = 'Rotate 180';
                 var3 = 2;
                 if (!(var3 !== var7)) {
-                    _fun38502_ip = 93;
-                    continue _fun38502
+                    _fun38524_ip = 93;
+                    continue _fun38524
                 }
             case 41:
                 var3 = 'Rotate 90 CW';
                 var4 = 3;
                 if (!(var4 !== var7)) {
-                    _fun38502_ip = 90;
-                    continue _fun38502
+                    _fun38524_ip = 90;
+                    continue _fun38524
                 }
             case 54:
                 var4 = 'Upwards';
                 var5 = 4;
                 if (!(var5 !== var7)) {
-                    _fun38502_ip = 87;
-                    continue _fun38502
+                    _fun38524_ip = 87;
+                    continue _fun38524
                 }
             case 67:
                 var5 = 'Unknown';
                 var6 = 5;
                 if (!(var6 === var7)) {
-                    _fun38502_ip = 84;
-                    continue _fun38502
+                    _fun38524_ip = 84;
+                    continue _fun38524
                 }
             case 78:
                 var5 = 'Downwards';
@@ -105,7 +105,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot4 = var2;
     var0 = {};
     var4 = function arg0, arg1, arg2, arg3() {
-        _fun38505: for (var _fun38505_ip = 0;;) switch (_fun38505_ip) {
+        _fun38527: for (var _fun38527_ip = 0;;) switch (_fun38527_ip) {
             case 0:
                 var10 = arg0;
                 var1 = arg1;
@@ -142,8 +142,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var24[var5](var23, var22, var21, var20, var19, var18, var17, var16);
                 var1 = var5.PentaxModelID;
                 if (!var1) {
-                    _fun38505_ip = 162;
-                    continue _fun38505
+                    _fun38527_ip = 162;
+                    continue _fun38527
                 }
             case 137:
                 var0 = var5.PentaxModelID;
@@ -153,16 +153,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var3 === var0;
             case 162:
                 if (!var1) {
-                    _fun38505_ip = 171;
-                    continue _fun38505
+                    _fun38527_ip = 171;
+                    continue _fun38527
                 }
             case 165:
                 var1 = var5.LevelInfo;
             case 171:
                 var0 = var5;
                 if (!var1) {
-                    _fun38505_ip = 459;
-                    continue _fun38505
+                    _fun38527_ip = 459;
+                    continue _fun38527
                 }
             case 180:
                 var3 = _closure1_slot0;
@@ -179,8 +179,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var14 + var1;
                 var1 = var10.byteLength;
                 if (!(!(var7 > var1))) {
-                    _fun38505_ip = 442;
-                    continue _fun38505
+                    _fun38527_ip = 442;
+                    continue _fun38527
                 }
             case 244:
                 var9 = var10.getInt8;

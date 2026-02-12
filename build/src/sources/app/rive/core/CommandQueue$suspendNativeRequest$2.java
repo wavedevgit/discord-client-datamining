@@ -105,7 +105,7 @@ public final class CommandQueue$suspendNativeRequest$2<T> extends k implements F
         concurrentHashMap.put(valueOf, eVar);
         eVar.c(new CommandQueue$suspendNativeRequest$2$1$1(commandQueue, andIncrement));
         function1.invoke(Long.valueOf(andIncrement));
-        Unit unit = Unit.f31987a;
+        Unit unit = Unit.f31988a;
         Object B = eVar.B();
         if (B == b.f()) {
             g.c(this);
@@ -115,6 +115,6 @@ public final class CommandQueue$suspendNativeRequest$2<T> extends k implements F
     }
 
     public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super T> continuation) {
-        return ((CommandQueue$suspendNativeRequest$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+        return ((CommandQueue$suspendNativeRequest$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

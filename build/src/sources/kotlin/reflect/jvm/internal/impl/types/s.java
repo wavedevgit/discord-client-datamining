@@ -12,30 +12,30 @@ import kotlin.reflect.jvm.internal.impl.types.error.ThrowingScope;
 public final class s extends SimpleType {
 
     /* renamed from: e  reason: collision with root package name */
-    private final TypeConstructor f34735e;
+    private final TypeConstructor f34736e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final List f34736i;
+    private final List f34737i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f34737o;
+    private final boolean f34738o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final MemberScope f34738p;
+    private final MemberScope f34739p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final Function1 f34739q;
+    private final Function1 f34740q;
 
     public s(TypeConstructor constructor, List arguments, boolean z10, MemberScope memberScope, Function1 refinedTypeFactory) {
         Intrinsics.checkNotNullParameter(constructor, "constructor");
         Intrinsics.checkNotNullParameter(arguments, "arguments");
         Intrinsics.checkNotNullParameter(memberScope, "memberScope");
         Intrinsics.checkNotNullParameter(refinedTypeFactory, "refinedTypeFactory");
-        this.f34735e = constructor;
-        this.f34736i = arguments;
-        this.f34737o = z10;
-        this.f34738p = memberScope;
-        this.f34739q = refinedTypeFactory;
+        this.f34736e = constructor;
+        this.f34737i = arguments;
+        this.f34738o = z10;
+        this.f34739p = memberScope;
+        this.f34740q = refinedTypeFactory;
         if ((getMemberScope() instanceof ErrorScope) && !(getMemberScope() instanceof ThrowingScope)) {
             throw new IllegalStateException("SimpleTypeImpl should not be created for error type: " + getMemberScope() + '\n' + getConstructor());
         }
@@ -43,7 +43,7 @@ public final class s extends SimpleType {
 
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
     public List getArguments() {
-        return this.f34736i;
+        return this.f34737i;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
@@ -53,17 +53,17 @@ public final class s extends SimpleType {
 
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
     public TypeConstructor getConstructor() {
-        return this.f34735e;
+        return this.f34736e;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
     public MemberScope getMemberScope() {
-        return this.f34738p;
+        return this.f34739p;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
     public boolean isMarkedNullable() {
-        return this.f34737o;
+        return this.f34738o;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.UnwrappedType
@@ -86,7 +86,7 @@ public final class s extends SimpleType {
     @Override // kotlin.reflect.jvm.internal.impl.types.UnwrappedType, kotlin.reflect.jvm.internal.impl.types.KotlinType
     public SimpleType refine(KotlinTypeRefiner kotlinTypeRefiner) {
         Intrinsics.checkNotNullParameter(kotlinTypeRefiner, "kotlinTypeRefiner");
-        SimpleType simpleType = (SimpleType) this.f34739q.invoke(kotlinTypeRefiner);
+        SimpleType simpleType = (SimpleType) this.f34740q.invoke(kotlinTypeRefiner);
         return simpleType == null ? this : simpleType;
     }
 }

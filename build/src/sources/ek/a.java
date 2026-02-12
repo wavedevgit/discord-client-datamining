@@ -19,64 +19,64 @@ import qg.ye;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Rect f22892a;
+    private final Rect f22893a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f22893b;
+    private int f22894b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final float f22894c;
+    private final float f22895c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final float f22895d;
+    private final float f22896d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final float f22896e;
+    private final float f22897e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final float f22897f;
+    private final float f22898f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final float f22898g;
+    private final float f22899g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final float f22899h;
+    private final float f22900h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final SparseArray f22900i = new SparseArray();
+    private final SparseArray f22901i = new SparseArray();
 
     /* renamed from: j  reason: collision with root package name */
-    private final SparseArray f22901j = new SparseArray();
+    private final SparseArray f22902j = new SparseArray();
 
     public a(e4 e4Var, Matrix matrix) {
         mc[] mcVarArr;
         c2[] c2VarArr;
         int length;
-        float f10 = e4Var.f44383i;
-        float f11 = e4Var.f44385p / 2.0f;
-        float f12 = e4Var.f44384o;
-        float f13 = e4Var.f44386q / 2.0f;
+        float f10 = e4Var.f44384i;
+        float f11 = e4Var.f44386p / 2.0f;
+        float f12 = e4Var.f44385o;
+        float f13 = e4Var.f44387q / 2.0f;
         Rect rect = new Rect((int) (f10 - f11), (int) (f12 - f13), (int) (f10 + f11), (int) (f12 + f13));
-        this.f22892a = rect;
+        this.f22893a = rect;
         if (matrix != null) {
             dk.b.e(rect, matrix);
         }
-        this.f22893b = e4Var.f44382e;
-        for (mc mcVar : e4Var.f44390u) {
-            if (i(mcVar.f44719o)) {
-                PointF pointF = new PointF(mcVar.f44717e, mcVar.f44718i);
+        this.f22894b = e4Var.f44383e;
+        for (mc mcVar : e4Var.f44391u) {
+            if (i(mcVar.f44720o)) {
+                PointF pointF = new PointF(mcVar.f44718e, mcVar.f44719i);
                 if (matrix != null) {
                     dk.b.c(pointF, matrix);
                 }
-                SparseArray sparseArray = this.f22900i;
-                int i10 = mcVar.f44719o;
+                SparseArray sparseArray = this.f22901i;
+                int i10 = mcVar.f44720o;
                 sparseArray.put(i10, new f(i10, pointF));
             }
         }
-        for (c2 c2Var : e4Var.f44394y) {
-            int i11 = c2Var.f44195e;
+        for (c2 c2Var : e4Var.f44395y) {
+            int i11 = c2Var.f44196e;
             if (h(i11)) {
-                PointF[] pointFArr = c2Var.f44194d;
+                PointF[] pointFArr = c2Var.f44195d;
                 pointFArr.getClass();
                 long length2 = pointFArr.length + 5 + (length / 10);
                 ArrayList arrayList = new ArrayList(length2 > 2147483647L ? Integer.MAX_VALUE : (int) length2);
@@ -84,15 +84,15 @@ public class a {
                 if (matrix != null) {
                     dk.b.d(arrayList, matrix);
                 }
-                this.f22901j.put(i11, new b(i11, arrayList));
+                this.f22902j.put(i11, new b(i11, arrayList));
             }
         }
-        this.f22897f = e4Var.f44389t;
-        this.f22898g = e4Var.f44387r;
-        this.f22899h = e4Var.f44388s;
-        this.f22896e = e4Var.f44393x;
-        this.f22895d = e4Var.f44391v;
-        this.f22894c = e4Var.f44392w;
+        this.f22898f = e4Var.f44390t;
+        this.f22899g = e4Var.f44388r;
+        this.f22900h = e4Var.f44389s;
+        this.f22897e = e4Var.f44394x;
+        this.f22896d = e4Var.f44392v;
+        this.f22895c = e4Var.f44393w;
     }
 
     private static boolean h(int i10) {
@@ -110,46 +110,46 @@ public class a {
     }
 
     public Rect a() {
-        return this.f22892a;
+        return this.f22893a;
     }
 
     public b b(int i10) {
-        return (b) this.f22901j.get(i10);
+        return (b) this.f22902j.get(i10);
     }
 
     public float c() {
-        return this.f22898g;
+        return this.f22899g;
     }
 
     public f d(int i10) {
-        return (f) this.f22900i.get(i10);
+        return (f) this.f22901i.get(i10);
     }
 
     public final SparseArray e() {
-        return this.f22901j;
+        return this.f22902j;
     }
 
     public final void f(SparseArray sparseArray) {
-        this.f22901j.clear();
+        this.f22902j.clear();
         for (int i10 = 0; i10 < sparseArray.size(); i10++) {
-            this.f22901j.put(sparseArray.keyAt(i10), (b) sparseArray.valueAt(i10));
+            this.f22902j.put(sparseArray.keyAt(i10), (b) sparseArray.valueAt(i10));
         }
     }
 
     public final void g(int i10) {
-        this.f22893b = -1;
+        this.f22894b = -1;
     }
 
     public String toString() {
         xe a10 = ye.a("Face");
-        a10.c("boundingBox", this.f22892a);
-        a10.b("trackingId", this.f22893b);
-        a10.a("rightEyeOpenProbability", this.f22894c);
-        a10.a("leftEyeOpenProbability", this.f22895d);
-        a10.a("smileProbability", this.f22896e);
-        a10.a("eulerX", this.f22897f);
-        a10.a("eulerY", this.f22898g);
-        a10.a("eulerZ", this.f22899h);
+        a10.c("boundingBox", this.f22893a);
+        a10.b("trackingId", this.f22894b);
+        a10.a("rightEyeOpenProbability", this.f22895c);
+        a10.a("leftEyeOpenProbability", this.f22896d);
+        a10.a("smileProbability", this.f22897e);
+        a10.a("eulerX", this.f22898f);
+        a10.a("eulerY", this.f22899g);
+        a10.a("eulerZ", this.f22900h);
         xe a11 = ye.a("Landmarks");
         for (int i10 = 0; i10 <= 11; i10++) {
             if (i(i10)) {
@@ -167,18 +167,18 @@ public class a {
 
     public a(je jeVar, Matrix matrix) {
         Rect j10 = jeVar.j();
-        this.f22892a = j10;
+        this.f22893a = j10;
         if (matrix != null) {
             dk.b.e(j10, matrix);
         }
-        this.f22893b = jeVar.i();
+        this.f22894b = jeVar.i();
         for (qe qeVar : jeVar.l()) {
             if (i(qeVar.b())) {
                 PointF c10 = qeVar.c();
                 if (matrix != null) {
                     dk.b.c(c10, matrix);
                 }
-                this.f22900i.put(qeVar.b(), new f(qeVar.b(), c10));
+                this.f22901i.put(qeVar.b(), new f(qeVar.b(), c10));
             }
         }
         for (fe feVar : jeVar.k()) {
@@ -190,14 +190,14 @@ public class a {
                 if (matrix != null) {
                     dk.b.d(arrayList, matrix);
                 }
-                this.f22901j.put(b10, new b(b10, arrayList));
+                this.f22902j.put(b10, new b(b10, arrayList));
             }
         }
-        this.f22897f = jeVar.g();
-        this.f22898g = jeVar.c();
-        this.f22899h = -jeVar.e();
-        this.f22896e = jeVar.f();
-        this.f22895d = jeVar.b();
-        this.f22894c = jeVar.d();
+        this.f22898f = jeVar.g();
+        this.f22899g = jeVar.c();
+        this.f22900h = -jeVar.e();
+        this.f22897e = jeVar.f();
+        this.f22896d = jeVar.b();
+        this.f22895c = jeVar.d();
     }
 }

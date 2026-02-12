@@ -15,19 +15,19 @@ import org.jetbrains.annotations.NotNull;
 public final class SuggestionJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20775a;
+    private final m.b f20776a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f20776b;
+    private final h f20777b;
 
     public SuggestionJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a(StackTraceHelper.ID_KEY, "address");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20775a = a10;
+        this.f20776a = a10;
         h f10 = moshi.f(String.class, x0.d(), StackTraceHelper.ID_KEY);
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20776b = f10;
+        this.f20777b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -38,14 +38,14 @@ public final class SuggestionJsonAdapter extends h {
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20775a);
+            int J = reader.J(this.f20776a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (str2 = (String) this.f20776b.fromJson(reader)) == null) {
+                    if (J == 1 && (str2 = (String) this.f20777b.fromJson(reader)) == null) {
                         throw c.x("address", "address", reader);
                     }
                 } else {
-                    str = (String) this.f20776b.fromJson(reader);
+                    str = (String) this.f20777b.fromJson(reader);
                     if (str == null) {
                         throw c.x(StackTraceHelper.ID_KEY, StackTraceHelper.ID_KEY, reader);
                     }
@@ -72,9 +72,9 @@ public final class SuggestionJsonAdapter extends h {
         if (suggestion != null) {
             writer.i();
             writer.J(StackTraceHelper.ID_KEY);
-            this.f20776b.toJson(writer, suggestion.b());
+            this.f20777b.toJson(writer, suggestion.b());
             writer.J("address");
-            this.f20776b.toJson(writer, suggestion.a());
+            this.f20777b.toJson(writer, suggestion.a());
             writer.s();
             return;
         }

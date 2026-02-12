@@ -11,71 +11,71 @@ import java.util.Iterator;
 public class o {
 
     /* renamed from: g  reason: collision with root package name */
-    static int f35471g;
+    static int f35472g;
 
     /* renamed from: b  reason: collision with root package name */
-    int f35473b;
+    int f35474b;
 
     /* renamed from: d  reason: collision with root package name */
-    int f35475d;
+    int f35476d;
 
     /* renamed from: a  reason: collision with root package name */
-    ArrayList f35472a = new ArrayList();
+    ArrayList f35473a = new ArrayList();
 
     /* renamed from: c  reason: collision with root package name */
-    boolean f35474c = false;
+    boolean f35475c = false;
 
     /* renamed from: e  reason: collision with root package name */
-    ArrayList f35476e = null;
+    ArrayList f35477e = null;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f35477f = -1;
+    private int f35478f = -1;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        WeakReference f35478a;
+        WeakReference f35479a;
 
         /* renamed from: b  reason: collision with root package name */
-        int f35479b;
+        int f35480b;
 
         /* renamed from: c  reason: collision with root package name */
-        int f35480c;
+        int f35481c;
 
         /* renamed from: d  reason: collision with root package name */
-        int f35481d;
+        int f35482d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f35482e;
+        int f35483e;
 
         /* renamed from: f  reason: collision with root package name */
-        int f35483f;
+        int f35484f;
 
         /* renamed from: g  reason: collision with root package name */
-        int f35484g;
+        int f35485g;
 
         a(ConstraintWidget constraintWidget, h1.d dVar, int i10) {
-            this.f35478a = new WeakReference(constraintWidget);
-            this.f35479b = dVar.A(constraintWidget.O);
-            this.f35480c = dVar.A(constraintWidget.P);
-            this.f35481d = dVar.A(constraintWidget.Q);
-            this.f35482e = dVar.A(constraintWidget.R);
-            this.f35483f = dVar.A(constraintWidget.S);
-            this.f35484g = i10;
+            this.f35479a = new WeakReference(constraintWidget);
+            this.f35480b = dVar.A(constraintWidget.O);
+            this.f35481c = dVar.A(constraintWidget.P);
+            this.f35482d = dVar.A(constraintWidget.Q);
+            this.f35483e = dVar.A(constraintWidget.R);
+            this.f35484f = dVar.A(constraintWidget.S);
+            this.f35485g = i10;
         }
     }
 
     public o(int i10) {
-        int i11 = f35471g;
-        f35471g = i11 + 1;
-        this.f35473b = i11;
-        this.f35475d = i10;
+        int i11 = f35472g;
+        f35472g = i11 + 1;
+        this.f35474b = i11;
+        this.f35476d = i10;
     }
 
     private String e() {
-        int i10 = this.f35475d;
+        int i10 = this.f35476d;
         if (i10 == 0) {
             return "Horizontal";
         }
@@ -108,9 +108,9 @@ public class o {
         } catch (Exception e10) {
             System.err.println(e10.toString() + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE + Arrays.toString(e10.getStackTrace()).replace("[", "   at ").replace(",", "\n   at").replace("]", ""));
         }
-        this.f35476e = new ArrayList();
+        this.f35477e = new ArrayList();
         for (int i12 = 0; i12 < arrayList.size(); i12++) {
-            this.f35476e.add(new a((ConstraintWidget) arrayList.get(i12), dVar, i10));
+            this.f35477e.add(new a((ConstraintWidget) arrayList.get(i12), dVar, i10));
         }
         if (i10 == 0) {
             A = dVar.A(constraintWidgetContainer.O);
@@ -125,20 +125,20 @@ public class o {
     }
 
     public boolean a(ConstraintWidget constraintWidget) {
-        if (this.f35472a.contains(constraintWidget)) {
+        if (this.f35473a.contains(constraintWidget)) {
             return false;
         }
-        this.f35472a.add(constraintWidget);
+        this.f35473a.add(constraintWidget);
         return true;
     }
 
     public void b(ArrayList arrayList) {
-        int size = this.f35472a.size();
-        if (this.f35477f != -1 && size > 0) {
+        int size = this.f35473a.size();
+        if (this.f35478f != -1 && size > 0) {
             for (int i10 = 0; i10 < arrayList.size(); i10++) {
                 o oVar = (o) arrayList.get(i10);
-                if (this.f35477f == oVar.f35473b) {
-                    g(this.f35475d, oVar);
+                if (this.f35478f == oVar.f35474b) {
+                    g(this.f35476d, oVar);
                 }
             }
         }
@@ -148,22 +148,22 @@ public class o {
     }
 
     public int c() {
-        return this.f35473b;
+        return this.f35474b;
     }
 
     public int d() {
-        return this.f35475d;
+        return this.f35476d;
     }
 
     public int f(h1.d dVar, int i10) {
-        if (this.f35472a.size() == 0) {
+        if (this.f35473a.size() == 0) {
             return 0;
         }
-        return j(dVar, this.f35472a, i10);
+        return j(dVar, this.f35473a, i10);
     }
 
     public void g(int i10, o oVar) {
-        Iterator it = this.f35472a.iterator();
+        Iterator it = this.f35473a.iterator();
         while (it.hasNext()) {
             ConstraintWidget constraintWidget = (ConstraintWidget) it.next();
             oVar.a(constraintWidget);
@@ -173,21 +173,21 @@ public class o {
                 constraintWidget.J0 = oVar.c();
             }
         }
-        this.f35477f = oVar.f35473b;
+        this.f35478f = oVar.f35474b;
     }
 
     public void h(boolean z10) {
-        this.f35474c = z10;
+        this.f35475c = z10;
     }
 
     public void i(int i10) {
-        this.f35475d = i10;
+        this.f35476d = i10;
     }
 
     public String toString() {
         Iterator it;
-        String str = e() + " [" + this.f35473b + "] <";
-        while (this.f35472a.iterator().hasNext()) {
+        String str = e() + " [" + this.f35474b + "] <";
+        while (this.f35473a.iterator().hasNext()) {
             str = str + " " + ((ConstraintWidget) it.next()).t();
         }
         return str + " >";

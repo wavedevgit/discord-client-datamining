@@ -91,7 +91,7 @@ public final class ReactInstanceManagerBuilder {
     private final JavaScriptExecutorFactory getDefaultJSExecutorFactory(String str, String str2, Context context) {
         ReactInstanceManager.initializeSoLoaderIfNecessary(context);
         try {
-            HermesExecutor.f11018a.b();
+            HermesExecutor.f11019a.b();
             return new fa.a();
         } catch (UnsatisfiedLinkError unused) {
             q8.a.m(TAG, "Unable to load Hermes. Your application is not built correctly and will fail to execute");

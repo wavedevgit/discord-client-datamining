@@ -3,23 +3,23 @@ package com.google.android.play.core.assetpacks;
 final class e4 extends t2 {
 
     /* renamed from: c  reason: collision with root package name */
-    final int f16622c;
+    final int f16623c;
 
     /* renamed from: d  reason: collision with root package name */
-    final long f16623d;
+    final long f16624d;
 
     /* renamed from: e  reason: collision with root package name */
-    final String f16624e;
+    final String f16625e;
 
     /* renamed from: f  reason: collision with root package name */
-    final String f16625f;
+    final String f16626f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e4(int i10, String str, int i11, long j10, String str2, String str3, long j11) {
         super(i10, str);
-        this.f16622c = i11;
-        this.f16623d = j10;
-        this.f16624e = str2;
-        this.f16625f = str3;
+        this.f16623c = i11;
+        this.f16624d = j10;
+        this.f16625e = str2;
+        this.f16626f = str3;
     }
 }

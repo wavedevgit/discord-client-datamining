@@ -8,25 +8,25 @@ public enum f {
     
 
     /* renamed from: q  reason: collision with root package name */
-    private static final f[] f23821q;
+    private static final f[] f23822q;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f23823d;
+    private final int f23824d;
 
     static {
         f fVar = L;
         f fVar2 = M;
         f fVar3 = Q;
-        f23821q = new f[]{fVar2, fVar, H, fVar3};
+        f23822q = new f[]{fVar2, fVar, H, fVar3};
     }
 
     f(int i10) {
-        this.f23823d = i10;
+        this.f23824d = i10;
     }
 
     public static f a(int i10) {
         if (i10 >= 0) {
-            f[] fVarArr = f23821q;
+            f[] fVarArr = f23822q;
             if (i10 < fVarArr.length) {
                 return fVarArr[i10];
             }
@@ -35,6 +35,6 @@ public enum f {
     }
 
     public int d() {
-        return this.f23823d;
+        return this.f23824d;
     }
 }

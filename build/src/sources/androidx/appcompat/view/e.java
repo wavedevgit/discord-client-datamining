@@ -271,24 +271,24 @@ public class e extends MenuInflater {
         }
 
         public void f(AttributeSet attributeSet) {
-            TypedArray obtainStyledAttributes = e.this.f1319c.obtainStyledAttributes(attributeSet, j.f23488o1);
-            this.f1325b = obtainStyledAttributes.getResourceId(j.f23498q1, 0);
-            this.f1326c = obtainStyledAttributes.getInt(j.f23508s1, 0);
-            this.f1327d = obtainStyledAttributes.getInt(j.f23513t1, 0);
-            this.f1328e = obtainStyledAttributes.getInt(j.f23518u1, 0);
-            this.f1329f = obtainStyledAttributes.getBoolean(j.f23503r1, true);
-            this.f1330g = obtainStyledAttributes.getBoolean(j.f23493p1, true);
+            TypedArray obtainStyledAttributes = e.this.f1319c.obtainStyledAttributes(attributeSet, j.f23489o1);
+            this.f1325b = obtainStyledAttributes.getResourceId(j.f23499q1, 0);
+            this.f1326c = obtainStyledAttributes.getInt(j.f23509s1, 0);
+            this.f1327d = obtainStyledAttributes.getInt(j.f23514t1, 0);
+            this.f1328e = obtainStyledAttributes.getInt(j.f23519u1, 0);
+            this.f1329f = obtainStyledAttributes.getBoolean(j.f23504r1, true);
+            this.f1330g = obtainStyledAttributes.getBoolean(j.f23494p1, true);
             obtainStyledAttributes.recycle();
         }
 
         public void g(AttributeSet attributeSet) {
             boolean z10;
-            v0 u10 = v0.u(e.this.f1319c, attributeSet, j.f23523v1);
-            this.f1332i = u10.n(j.f23538y1, 0);
+            v0 u10 = v0.u(e.this.f1319c, attributeSet, j.f23524v1);
+            this.f1332i = u10.n(j.f23539y1, 0);
             this.f1333j = (u10.k(j.B1, this.f1326c) & (-65536)) | (u10.k(j.C1, this.f1327d) & 65535);
             this.f1334k = u10.p(j.D1);
             this.f1335l = u10.p(j.E1);
-            this.f1336m = u10.n(j.f23528w1, 0);
+            this.f1336m = u10.n(j.f23529w1, 0);
             this.f1337n = c(u10.o(j.F1));
             this.f1338o = u10.k(j.M1, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT);
             this.f1339p = c(u10.o(j.G1));
@@ -298,9 +298,9 @@ public class e extends MenuInflater {
             } else {
                 this.f1341r = this.f1328e;
             }
-            this.f1342s = u10.a(j.f23543z1, false);
+            this.f1342s = u10.a(j.f23544z1, false);
             this.f1343t = u10.a(j.A1, this.f1329f);
-            this.f1344u = u10.a(j.f23533x1, this.f1330g);
+            this.f1344u = u10.a(j.f23534x1, this.f1330g);
             this.f1345v = u10.k(j.R1, -1);
             this.f1349z = u10.o(j.I1);
             this.f1346w = u10.n(j.J1, 0);

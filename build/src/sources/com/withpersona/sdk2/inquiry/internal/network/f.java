@@ -34,16 +34,16 @@ import lq.n;
 public final class f {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f20336d = new a(null);
+    public static final a f20337d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f20337a;
+    private final String f20338a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f20338b;
+    private final String f20339b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f20339c;
+    private final String f20340c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -52,7 +52,7 @@ public final class f {
         }
 
         public final Set a() {
-            return x0.i(CreateInquiryRequest.Data.f20144c, CreateInquirySessionResponse.GpsCollectionRequirement.Companion, CreateInquirySessionResponse.GpsPrecisionRequirement.Companion, ComponentParam.Adapter.f20795a, InquiryFieldMap.f19698b, NextStep.GovernmentId.SelectPage.Companion, NextStep.GovernmentId.PassportNfcOption.Companion, NextStep.GovernmentId.CaptureFileType.Companion, NextStep.GovernmentId.VideoCaptureMethod.Companion, NextStep.Selfie.CaptureFileType.Companion, NextStep.Selfie.VideoCaptureMethod.Companion, Button.ButtonType.Companion, InputText.InputType.Companion, InputText.AutofillHint.Companion, RemoteImage.ContentType.Companion, GovernmentIdNfcScan.DataGroupTypes.Companion, UiComponentError.Companion, StyleElements.PositionType.Companion, StyleElements.DPSize.Companion, StyleElements.Size.Companion, StyleElements.FontName.Companion, StyleElements.FontWeight.Companion, StyleElements.Axis.Companion, JsonLogicBoolean.Companion, NumberAdapter.f20772a, RgbaHexColorAdapter.INSTANCE, PendingPageTextPosition.Companion);
+            return x0.i(CreateInquiryRequest.Data.f20145c, CreateInquirySessionResponse.GpsCollectionRequirement.Companion, CreateInquirySessionResponse.GpsPrecisionRequirement.Companion, ComponentParam.Adapter.f20796a, InquiryFieldMap.f19699b, NextStep.GovernmentId.SelectPage.Companion, NextStep.GovernmentId.PassportNfcOption.Companion, NextStep.GovernmentId.CaptureFileType.Companion, NextStep.GovernmentId.VideoCaptureMethod.Companion, NextStep.Selfie.CaptureFileType.Companion, NextStep.Selfie.VideoCaptureMethod.Companion, Button.ButtonType.Companion, InputText.InputType.Companion, InputText.AutofillHint.Companion, RemoteImage.ContentType.Companion, GovernmentIdNfcScan.DataGroupTypes.Companion, UiComponentError.Companion, StyleElements.PositionType.Companion, StyleElements.DPSize.Companion, StyleElements.Size.Companion, StyleElements.FontName.Companion, StyleElements.FontWeight.Companion, StyleElements.Axis.Companion, JsonLogicBoolean.Companion, NumberAdapter.f20773a, RgbaHexColorAdapter.INSTANCE, PendingPageTextPosition.Companion);
         }
 
         public final Set b() {
@@ -64,7 +64,7 @@ public final class f {
         }
 
         public final Set d() {
-            return x0.i(k.f19960f, com.withpersona.sdk2.inquiry.internal.i.f19920c, BackStackContainer.f18939i, lp.c.f35953i, n.f35987i);
+            return x0.i(k.f19961f, com.withpersona.sdk2.inquiry.internal.i.f19921c, BackStackContainer.f18940i, lp.c.f35954i, n.f35988i);
         }
 
         public final String e() {
@@ -85,29 +85,29 @@ public final class f {
         Intrinsics.checkNotNullParameter(serverEndpoint, "serverEndpoint");
         Intrinsics.checkNotNullParameter(webRtcServerEndpoint, "webRtcServerEndpoint");
         Intrinsics.checkNotNullParameter(fallbackModeServerEndpoint, "fallbackModeServerEndpoint");
-        this.f20337a = serverEndpoint;
-        this.f20338b = webRtcServerEndpoint;
-        this.f20339c = fallbackModeServerEndpoint;
+        this.f20338a = serverEndpoint;
+        this.f20339b = webRtcServerEndpoint;
+        this.f20340c = fallbackModeServerEndpoint;
     }
 
     public static final Set e() {
-        return f20336d.a();
+        return f20337d.a();
     }
 
     public static final Set f() {
-        return f20336d.b();
+        return f20337d.b();
     }
 
     public static final Set g() {
-        return f20336d.c();
+        return f20337d.c();
     }
 
     public static final Set h() {
-        return f20336d.d();
+        return f20337d.d();
     }
 
     public static final e0 l(Set set) {
-        return f20336d.f(set);
+        return f20337d.f(set);
     }
 
     public final qo.b a(a0 retrofit) {
@@ -119,7 +119,7 @@ public final class f {
 
     public final FallbackModeService b(a0 fallbackModeRetrofit) {
         Intrinsics.checkNotNullParameter(fallbackModeRetrofit, "fallbackModeRetrofit");
-        Object b10 = fallbackModeRetrofit.d().b(this.f20339c).d().b(FallbackModeService.class);
+        Object b10 = fallbackModeRetrofit.d().b(this.f20340c).d().b(FallbackModeService.class);
         Intrinsics.checkNotNullExpressionValue(b10, "create(...)");
         return (FallbackModeService) b10;
     }
@@ -146,7 +146,7 @@ public final class f {
     }
 
     public final String j() {
-        return this.f20337a;
+        return this.f20338a;
     }
 
     public final br.b k(a0 retrofit) {
@@ -158,7 +158,7 @@ public final class f {
 
     public final cr.a m(a0 webRtcRetrofit) {
         Intrinsics.checkNotNullParameter(webRtcRetrofit, "webRtcRetrofit");
-        Object b10 = webRtcRetrofit.d().b(this.f20338b).d().b(cr.a.class);
+        Object b10 = webRtcRetrofit.d().b(this.f20339b).d().b(cr.a.class);
         Intrinsics.checkNotNullExpressionValue(b10, "create(...)");
         return (cr.a) b10;
     }

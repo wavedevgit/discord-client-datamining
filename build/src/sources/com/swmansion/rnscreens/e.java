@@ -20,28 +20,28 @@ import org.jetbrains.annotations.NotNull;
 public class e extends Toolbar {
 
     /* renamed from: i0  reason: collision with root package name */
-    private final ScreenStackHeaderConfig f19122i0;
+    private final ScreenStackHeaderConfig f19123i0;
 
     /* renamed from: j0  reason: collision with root package name */
-    private final boolean f19123j0;
+    private final boolean f19124j0;
 
     /* renamed from: k0  reason: collision with root package name */
-    private final boolean f19124k0;
+    private final boolean f19125k0;
 
     /* renamed from: l0  reason: collision with root package name */
-    private boolean f19125l0;
+    private boolean f19126l0;
 
     /* renamed from: m0  reason: collision with root package name */
-    private Insets f19126m0;
+    private Insets f19127m0;
 
     /* renamed from: n0  reason: collision with root package name */
-    private boolean f19127n0;
+    private boolean f19128n0;
 
     /* renamed from: o0  reason: collision with root package name */
-    private boolean f19128o0;
+    private boolean f19129o0;
 
     /* renamed from: p0  reason: collision with root package name */
-    private final Choreographer.FrameCallback f19129p0;
+    private final Choreographer.FrameCallback f19130p0;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Choreographer.FrameCallback {
@@ -50,7 +50,7 @@ public class e extends Toolbar {
 
         @Override // android.view.Choreographer.FrameCallback
         public void doFrame(long j10) {
-            e.this.f19128o0 = false;
+            e.this.f19129o0 = false;
             e eVar = e.this;
             eVar.measure(View.MeasureSpec.makeMeasureSpec(eVar.getWidth(), Integer.MIN_VALUE), View.MeasureSpec.makeMeasureSpec(e.this.getHeight(), Integer.MIN_VALUE));
             e eVar2 = e.this;
@@ -63,34 +63,34 @@ public class e extends Toolbar {
         super(context);
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(config, "config");
-        this.f19122i0 = config;
-        this.f19123j0 = true;
-        this.f19124k0 = true;
+        this.f19123i0 = config;
+        this.f19124j0 = true;
+        this.f19125k0 = true;
         Insets NONE = Insets.f3303e;
         Intrinsics.checkNotNullExpressionValue(NONE, "NONE");
-        this.f19126m0 = NONE;
+        this.f19127m0 = NONE;
         getMenu();
-        this.f19129p0 = new a();
+        this.f19130p0 = new a();
     }
 
     private final void T(int i10, int i11, int i12, int i13) {
-        this.f19125l0 = true;
+        this.f19126l0 = true;
         U();
         setPadding(i10, i11, i12, i13);
     }
 
     private final void U() {
-        this.f19127n0 = this.f19123j0;
+        this.f19128n0 = this.f19124j0;
     }
 
     public final void V() {
-        setContentInsetStartWithNavigation(this.f19122i0.getPreferredContentInsetStartWithNavigation());
-        J(this.f19122i0.getPreferredContentInsetStart(), this.f19122i0.getPreferredContentInsetEnd());
+        setContentInsetStartWithNavigation(this.f19123i0.getPreferredContentInsetStartWithNavigation());
+        J(this.f19123i0.getPreferredContentInsetStart(), this.f19123i0.getPreferredContentInsetEnd());
     }
 
     @NotNull
     public final ScreenStackHeaderConfig getConfig() {
-        return this.f19122i0;
+        return this.f19123i0;
     }
 
     @Override // android.view.View
@@ -102,7 +102,7 @@ public class e extends Toolbar {
         Insets c10 = Insets.c(b10.f3304a + b11.f3304a, 0, b10.f3306c + b11.f3306c, 0);
         Intrinsics.checkNotNullExpressionValue(c10, "of(...)");
         int i11 = b10.f3305b;
-        if (this.f19124k0) {
+        if (this.f19125k0) {
             i10 = b11.f3305b;
         } else {
             i10 = 0;
@@ -111,8 +111,8 @@ public class e extends Toolbar {
         Intrinsics.checkNotNullExpressionValue(c11, "of(...)");
         Insets a10 = Insets.a(c10, c11);
         Intrinsics.checkNotNullExpressionValue(a10, "add(...)");
-        if (!Intrinsics.areEqual(this.f19126m0, a10)) {
-            this.f19126m0 = a10;
+        if (!Intrinsics.areEqual(this.f19127m0, a10)) {
+            this.f19127m0 = a10;
             T(a10.f3304a, a10.f3305b, a10.f3306c, a10.f3307d);
         }
         return onApplyWindowInsets;
@@ -123,14 +123,14 @@ public class e extends Toolbar {
     public void onLayout(boolean z10, int i10, int i11, int i12, int i13) {
         boolean z11;
         super.onLayout(z10, i10, i11, i12, i13);
-        ScreenStackHeaderConfig screenStackHeaderConfig = this.f19122i0;
-        if (!z10 && !this.f19127n0) {
+        ScreenStackHeaderConfig screenStackHeaderConfig = this.f19123i0;
+        if (!z10 && !this.f19128n0) {
             z11 = false;
         } else {
             z11 = true;
         }
         screenStackHeaderConfig.k(this, z11);
-        this.f19127n0 = false;
+        this.f19128n0 = false;
     }
 
     @Override // android.view.View, android.view.ViewParent
@@ -146,9 +146,9 @@ public class e extends Toolbar {
         } else {
             aVar = null;
         }
-        if (aVar != null && this.f19125l0 && !aVar.isInLayout()) {
+        if (aVar != null && this.f19126l0 && !aVar.isInLayout()) {
             aVar.H(getPaddingTop());
-            this.f19125l0 = false;
+            this.f19126l0 = false;
         }
         Context context = getContext();
         Intrinsics.checkNotNull(context, "null cannot be cast to non-null type com.facebook.react.uimanager.ThemedReactContext");
@@ -156,9 +156,9 @@ public class e extends Toolbar {
         if (currentActivity != null && (window = currentActivity.getWindow()) != null && (attributes = window.getAttributes()) != null) {
             num = Integer.valueOf(attributes.softInputMode);
         }
-        if (Build.VERSION.SDK_INT <= 29 && num != null && num.intValue() == 32 && !this.f19128o0 && this.f19129p0 != null) {
-            this.f19128o0 = true;
-            ReactChoreographer.Companion.getInstance().postFrameCallback(ReactChoreographer.CallbackType.NATIVE_ANIMATED_MODULE, this.f19129p0);
+        if (Build.VERSION.SDK_INT <= 29 && num != null && num.intValue() == 32 && !this.f19129o0 && this.f19130p0 != null) {
+            this.f19129o0 = true;
+            ReactChoreographer.Companion.getInstance().postFrameCallback(ReactChoreographer.CallbackType.NATIVE_ANIMATED_MODULE, this.f19130p0);
         }
     }
 }

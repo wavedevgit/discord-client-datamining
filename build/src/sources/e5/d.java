@@ -20,13 +20,13 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class d {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f22313c = new a(null);
+    public static final a f22314c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final v4.h f22314a;
+    private final v4.h f22315a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final p f22315b;
+    private final p f22316b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -39,8 +39,8 @@ public final class d {
     }
 
     public d(v4.h hVar, p pVar, t tVar) {
-        this.f22314a = hVar;
-        this.f22315b = pVar;
+        this.f22315a = hVar;
+        this.f22316b = pVar;
     }
 
     private final String b(c.C0302c c0302c) {
@@ -108,7 +108,7 @@ public final class d {
             r8 = 2147483647(0x7fffffff, float:NaN)
             if (r7 == 0) goto L4b
             h5.c$a r6 = (h5.c.a) r6
-            int r6 = r6.f26185a
+            int r6 = r6.f26186a
             goto L4c
         L4b:
             r6 = r8
@@ -117,7 +117,7 @@ public final class d {
             boolean r9 = r7 instanceof h5.c.a
             if (r9 == 0) goto L58
             h5.c$a r7 = (h5.c.a) r7
-            int r8 = r7.f26185a
+            int r8 = r7.f26186a
         L58:
             r7 = r22
             double r9 = x4.j.c(r3, r1, r6, r8, r7)
@@ -191,7 +191,7 @@ public final class d {
         if (!hVar.C().d()) {
             return null;
         }
-        c b10 = this.f22314a.b();
+        c b10 = this.f22315a.b();
         if (b10 != null) {
             c0302c = b10.b(bVar);
         } else {
@@ -204,7 +204,7 @@ public final class d {
     }
 
     public final boolean c(g5.h hVar, c.b bVar, c.C0302c c0302c, h5.i iVar, h5.h hVar2) {
-        if (!this.f22315b.c(hVar, k5.a.c(c0302c.a()))) {
+        if (!this.f22316b.c(hVar, k5.a.c(c0302c.a()))) {
             return false;
         }
         return e(hVar, bVar, c0302c, iVar, hVar2);
@@ -216,7 +216,7 @@ public final class d {
             return B;
         }
         cVar.f(hVar, obj);
-        String f10 = this.f22314a.getComponents().f(obj, mVar);
+        String f10 = this.f22315a.getComponents().f(obj, mVar);
         cVar.h(hVar, f10);
         if (f10 == null) {
             return null;
@@ -243,14 +243,14 @@ public final class d {
     }
 
     public final q g(b.a aVar, g5.h hVar, c.b bVar, c.C0302c c0302c) {
-        return new q(new BitmapDrawable(hVar.l().getResources(), c0302c.a()), hVar, x4.h.f54343d, bVar, b(c0302c), d(c0302c), k.t(aVar));
+        return new q(new BitmapDrawable(hVar.l().getResources(), c0302c.a()), hVar, x4.h.f54344d, bVar, b(c0302c), d(c0302c), k.t(aVar));
     }
 
     public final boolean h(c.b bVar, g5.h hVar, a.b bVar2) {
         c b10;
         BitmapDrawable bitmapDrawable;
         Bitmap bitmap;
-        if (hVar.C().e() && (b10 = this.f22314a.b()) != null && bVar != null) {
+        if (hVar.C().e() && (b10 = this.f22315a.b()) != null && bVar != null) {
             Drawable e10 = bVar2.e();
             if (e10 instanceof BitmapDrawable) {
                 bitmapDrawable = (BitmapDrawable) e10;

@@ -1,36 +1,48 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = module;
-    var1 = function arg0() {
-        _fun48843: for (var _fun48843_ip = 0;;) switch (_fun48843_ip) {
-            case 0:
-                var2 = arg0;
-                if (!var2) {
-                    _fun48843_ip = 18;
-                    continue _fun48843
-                }
-            case 6:
-                var1 = var2.__esModule;
-                var0 = var2;
-                if (var1) {
-                    _fun48843_ip = 27;
-                    continue _fun48843
-                }
-            case 18:
-                var1 = {};
-                var1.default = var2;
-                var0 = var1;
-            case 27:
-                return var0;
-        }
-    };
-    var0.exports = var1;
-    var2 = var0.exports;
-    var1 = true;
-    var2.__esModule = var1;
-    var1 = var0.exports;
-    var0 = var0.exports;
-    var1.default = var0;
-    var0 = undefined;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+    _fun48792: for (var _fun48792_ip = 0;;) switch (_fun48792_ip) {
+        case 0:
+            var2 = exports;
+            var4 = global;
+            var5 = var4.Object;
+            var3 = var5.defineProperty;
+            var1 = {};
+            var0 = true;
+            var1.value = var0;
+            var0 = '__esModule';
+            var0 = var3.bind(var5)(var2, var0, var1);
+            var0 = undefined;
+            var2.constants = var0;
+            var3 = dependencyMap;
+            var1 = 0;
+            var3 = var3[var1];
+            var1 = require;
+            var3 = var1.bind(var0)(var3);
+            var1 = {
+                'SLIDER_DEFAULT_INITIAL_VALUE': 0,
+                'MARGIN_HORIZONTAL_PADDING': 0.05,
+                'STEP_NUMBER_TEXT_FONT_SMALL': 8,
+                'STEP_NUMBER_TEXT_FONT_BIG': 12
+            };
+            var5 = var4.Number;
+            var5 = var5.MIN_SAFE_INTEGER;
+            var1.LIMIT_MIN_VALUE = var5;
+            var4 = var4.Number;
+            var4 = var4.MAX_SAFE_INTEGER;
+            var1.LIMIT_MAX_VALUE = var4;
+            var3 = var3.Platform;
+            var5 = var3.OS;
+            var3 = 1000;
+            var4 = 'android';
+            if (!(var4 === var5)) {
+                _fun48792_ip = 137;
+                continue _fun48792
+            }
+        case 134:
+            var3 = 128;
+        case 137:
+            var1.DEFAULT_STEP_RESOLUTION = var3;
+            var2.constants = var1;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);

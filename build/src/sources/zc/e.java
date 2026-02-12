@@ -14,13 +14,13 @@ import zc.b;
 abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String[] f56356a = {"Camera:MotionPhoto", "GCamera:MotionPhoto", "Camera:MicroVideo", "GCamera:MicroVideo"};
+    private static final String[] f56357a = {"Camera:MotionPhoto", "GCamera:MotionPhoto", "Camera:MicroVideo", "GCamera:MicroVideo"};
 
     /* renamed from: b  reason: collision with root package name */
-    private static final String[] f56357b = {"Camera:MotionPhotoPresentationTimestampUs", "GCamera:MotionPhotoPresentationTimestampUs", "Camera:MicroVideoPresentationTimestampUs", "GCamera:MicroVideoPresentationTimestampUs"};
+    private static final String[] f56358b = {"Camera:MotionPhotoPresentationTimestampUs", "GCamera:MotionPhotoPresentationTimestampUs", "Camera:MicroVideoPresentationTimestampUs", "GCamera:MicroVideoPresentationTimestampUs"};
 
     /* renamed from: c  reason: collision with root package name */
-    private static final String[] f56358c = {"Camera:MicroVideoOffset", "GCamera:MicroVideoOffset"};
+    private static final String[] f56359c = {"Camera:MicroVideoOffset", "GCamera:MicroVideoOffset"};
 
     public static b a(String str) {
         try {
@@ -61,7 +61,7 @@ abstract class e {
     }
 
     private static s c(XmlPullParser xmlPullParser) {
-        for (String str : f56358c) {
+        for (String str : f56359c) {
             String a10 = y0.a(xmlPullParser, str);
             if (a10 != null) {
                 return s.v(new b.a(ClipboardModule.MIMETYPE_JPEG, "Primary", 0L, 0L), new b.a("video/mp4", "MotionPhoto", Long.parseLong(a10), 0L));
@@ -71,7 +71,7 @@ abstract class e {
     }
 
     private static boolean d(XmlPullParser xmlPullParser) {
-        for (String str : f56356a) {
+        for (String str : f56357a) {
             String a10 = y0.a(xmlPullParser, str);
             if (a10 != null) {
                 if (Integer.parseInt(a10) != 1) {
@@ -84,7 +84,7 @@ abstract class e {
     }
 
     private static long e(XmlPullParser xmlPullParser) {
-        for (String str : f56357b) {
+        for (String str : f56358b) {
             String a10 = y0.a(xmlPullParser, str);
             if (a10 != null) {
                 long parseLong = Long.parseLong(a10);

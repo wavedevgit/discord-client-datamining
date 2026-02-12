@@ -7,31 +7,31 @@ import kotlin.enums.EnumEntries;
 public final class b {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final b f19351d = new b("ALL", 0);
+    public static final b f19352d = new b("ALL", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final b f19352e = new b("SYSTEM", 1);
+    public static final b f19353e = new b("SYSTEM", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final b f19353i = new b("INTERFACE", 2);
+    public static final b f19354i = new b("INTERFACE", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ b[] f19354o;
+    private static final /* synthetic */ b[] f19355o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f19355p;
+    private static final /* synthetic */ EnumEntries f19356p;
 
     static {
         b[] a10 = a();
-        f19354o = a10;
-        f19355p = hs.a.a(a10);
+        f19355o = a10;
+        f19356p = hs.a.a(a10);
     }
 
     private b(String str, int i10) {
     }
 
     private static final /* synthetic */ b[] a() {
-        return new b[]{f19351d, f19352e, f19353i};
+        return new b[]{f19352d, f19353e, f19354i};
     }
 
     public static b valueOf(String str) {
@@ -39,18 +39,18 @@ public final class b {
     }
 
     public static b[] values() {
-        return (b[]) f19354o.clone();
+        return (b[]) f19355o.clone();
     }
 
     public final boolean d() {
-        if (this != f19351d && this != f19353i) {
+        if (this != f19352d && this != f19354i) {
             return false;
         }
         return true;
     }
 
     public final boolean e() {
-        if (this != f19351d && this != f19352e) {
+        if (this != f19352d && this != f19353e) {
             return false;
         }
         return true;

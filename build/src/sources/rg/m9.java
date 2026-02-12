@@ -5,7 +5,7 @@ import bj.c;
 final class m9 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final m9 f47003a = new m9();
+    static final m9 f47004a = new m9();
 
     static {
         c.b a10 = bj.c.a("detectorOptions");

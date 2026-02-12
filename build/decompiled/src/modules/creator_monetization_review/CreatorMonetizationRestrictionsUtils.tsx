@@ -6,14 +6,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var7 = dependencyMap;
     var4 = function arg0() {
-        _fun24690: for (var _fun24690_ip = 0;;) switch (_fun24690_ip) {
+        _fun24706: for (var _fun24706_ip = 0;;) switch (_fun24706_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 var0 = var0 != var3;
                 if (!var0) {
-                    _fun24690_ip = 35;
-                    continue _fun24690
+                    _fun24706_ip = 35;
+                    continue _fun24706
                 }
             case 12:
                 var2 = var3.includes;
@@ -26,14 +26,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot5 = var4;
     var3 = function arg0() {
-        _fun24691: for (var _fun24691_ip = 0;;) switch (_fun24691_ip) {
+        _fun24707: for (var _fun24707_ip = 0;;) switch (_fun24707_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 var0 = var0 != var3;
                 if (!var0) {
-                    _fun24691_ip = 35;
-                    continue _fun24691
+                    _fun24707_ip = 35;
+                    continue _fun24707
                 }
             case 12:
                 var2 = var3.includes;
@@ -84,13 +84,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.isRestrictedFromShowingGuildPurchaseEntryPoints = var4;
     var4 = function arg0() {
-        _fun24692: for (var _fun24692_ip = 0;;) switch (_fun24692_ip) {
+        _fun24708: for (var _fun24708_ip = 0;;) switch (_fun24708_ip) {
             case 0:
                 var6 = arg0;
                 var0 = null;
                 if (!(var0 != var6)) {
-                    _fun24692_ip = 126;
-                    continue _fun24692
+                    _fun24708_ip = 126;
+                    continue _fun24708
                 }
             case 9:
                 var3 = _closure1_slot0;
@@ -104,15 +104,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot1;
                 var2 = var2.FETCHED;
                 if (!(var5 !== var2)) {
-                    _fun24692_ip = 113;
-                    continue _fun24692
+                    _fun24708_ip = 113;
+                    continue _fun24708
                 }
             case 66:
                 var5 = var0 == var4;
                 var2 = undefined;
                 if (var5) {
-                    _fun24692_ip = 101;
-                    continue _fun24692
+                    _fun24708_ip = 101;
+                    continue _fun24708
                 }
             case 75:
                 var6 = var4.features;
@@ -123,14 +123,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 101:
                 var0 = var0 == var2;
                 if (var0) {
-                    _fun24692_ip = 111;
-                    continue _fun24692
+                    _fun24708_ip = 111;
+                    continue _fun24708
                 }
             case 108:
                 var0 = var2;
             case 111:
-                _fun24692_ip = 124;
-                continue _fun24692;
+                _fun24708_ip = 124;
+                continue _fun24708;
             case 113:
                 var2 = _closure1_slot5;
                 var1 = undefined;
@@ -145,13 +145,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.shouldHideGuildPurchaseEntryPoints = var4;
     var2.isRestrictedFromUpdatingCreatorMonetizationSettings = var3;
     var3 = function arg0() {
-        _fun24693: for (var _fun24693_ip = 0;;) switch (_fun24693_ip) {
+        _fun24709: for (var _fun24709_ip = 0;;) switch (_fun24709_ip) {
             case 0:
                 var6 = arg0;
                 var0 = null;
                 if (!(var0 != var6)) {
-                    _fun24693_ip = 126;
-                    continue _fun24693
+                    _fun24709_ip = 126;
+                    continue _fun24709
                 }
             case 9:
                 var3 = _closure1_slot0;
@@ -165,15 +165,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot1;
                 var2 = var2.FETCHED;
                 if (!(var5 !== var2)) {
-                    _fun24693_ip = 113;
-                    continue _fun24693
+                    _fun24709_ip = 113;
+                    continue _fun24709
                 }
             case 66:
                 var5 = var0 == var4;
                 var2 = undefined;
                 if (var5) {
-                    _fun24693_ip = 101;
-                    continue _fun24693
+                    _fun24709_ip = 101;
+                    continue _fun24709
                 }
             case 75:
                 var6 = var4.features;
@@ -184,14 +184,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 101:
                 var0 = var0 == var2;
                 if (var0) {
-                    _fun24693_ip = 111;
-                    continue _fun24693
+                    _fun24709_ip = 111;
+                    continue _fun24709
                 }
             case 108:
                 var0 = var2;
             case 111:
-                _fun24693_ip = 124;
-                continue _fun24693;
+                _fun24709_ip = 124;
+                continue _fun24709;
             case 113:
                 var2 = _closure1_slot6;
                 var1 = undefined;
@@ -205,14 +205,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.shouldRestrictUpdatingCreatorMonetizationSettings = var3;
     var1 = function arg0() {
-        _fun24694: for (var _fun24694_ip = 0;;) switch (_fun24694_ip) {
+        _fun24710: for (var _fun24710_ip = 0;;) switch (_fun24710_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 var0 = var0 != var3;
                 if (!var0) {
-                    _fun24694_ip = 35;
-                    continue _fun24694
+                    _fun24710_ip = 35;
+                    continue _fun24710
                 }
             case 12:
                 var2 = var3.includes;

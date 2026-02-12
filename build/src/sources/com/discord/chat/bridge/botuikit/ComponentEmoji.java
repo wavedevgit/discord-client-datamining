@@ -20,7 +20,7 @@ public final class ComponentEmoji {
     private final boolean animated;
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9240id;
+    private final String f9241id;
     @NotNull
     private final String name;
     private final String src;
@@ -47,9 +47,9 @@ public final class ComponentEmoji {
             v1.b(i10, 2, ComponentEmoji$$serializer.INSTANCE.getDescriptor());
         }
         if ((i10 & 1) == 0) {
-            this.f9240id = null;
+            this.f9241id = null;
         } else {
-            this.f9240id = str;
+            this.f9241id = str;
         }
         this.name = str2;
         if ((i10 & 4) == 0) {
@@ -71,7 +71,7 @@ public final class ComponentEmoji {
 
     public static /* synthetic */ ComponentEmoji copy$default(ComponentEmoji componentEmoji, String str, String str2, String str3, boolean z10, String str4, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = componentEmoji.f9240id;
+            str = componentEmoji.f9241id;
         }
         if ((i10 & 2) != 0) {
             str2 = componentEmoji.name;
@@ -91,23 +91,23 @@ public final class ComponentEmoji {
     }
 
     public static final /* synthetic */ void write$Self$chat_release(ComponentEmoji componentEmoji, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        if (compositeEncoder.z(serialDescriptor, 0) || componentEmoji.f9240id != null) {
-            compositeEncoder.o(serialDescriptor, 0, n2.f50032a, componentEmoji.f9240id);
+        if (compositeEncoder.z(serialDescriptor, 0) || componentEmoji.f9241id != null) {
+            compositeEncoder.o(serialDescriptor, 0, n2.f50033a, componentEmoji.f9241id);
         }
         compositeEncoder.y(serialDescriptor, 1, componentEmoji.name);
         if (compositeEncoder.z(serialDescriptor, 2) || componentEmoji.src != null) {
-            compositeEncoder.o(serialDescriptor, 2, n2.f50032a, componentEmoji.src);
+            compositeEncoder.o(serialDescriptor, 2, n2.f50033a, componentEmoji.src);
         }
         if (compositeEncoder.z(serialDescriptor, 3) || componentEmoji.animated) {
             compositeEncoder.x(serialDescriptor, 3, componentEmoji.animated);
         }
         if (compositeEncoder.z(serialDescriptor, 4) || componentEmoji.surrogates != null) {
-            compositeEncoder.o(serialDescriptor, 4, n2.f50032a, componentEmoji.surrogates);
+            compositeEncoder.o(serialDescriptor, 4, n2.f50033a, componentEmoji.surrogates);
         }
     }
 
     public final String component1() {
-        return this.f9240id;
+        return this.f9241id;
     }
 
     @NotNull
@@ -139,7 +139,7 @@ public final class ComponentEmoji {
         }
         if (obj instanceof ComponentEmoji) {
             ComponentEmoji componentEmoji = (ComponentEmoji) obj;
-            return Intrinsics.areEqual(this.f9240id, componentEmoji.f9240id) && Intrinsics.areEqual(this.name, componentEmoji.name) && Intrinsics.areEqual(this.src, componentEmoji.src) && this.animated == componentEmoji.animated && Intrinsics.areEqual(this.surrogates, componentEmoji.surrogates);
+            return Intrinsics.areEqual(this.f9241id, componentEmoji.f9241id) && Intrinsics.areEqual(this.name, componentEmoji.name) && Intrinsics.areEqual(this.src, componentEmoji.src) && this.animated == componentEmoji.animated && Intrinsics.areEqual(this.surrogates, componentEmoji.surrogates);
         }
         return false;
     }
@@ -149,7 +149,7 @@ public final class ComponentEmoji {
     }
 
     public final String getId() {
-        return this.f9240id;
+        return this.f9241id;
     }
 
     @NotNull
@@ -166,7 +166,7 @@ public final class ComponentEmoji {
     }
 
     public int hashCode() {
-        String str = this.f9240id;
+        String str = this.f9241id;
         int hashCode = (((str == null ? 0 : str.hashCode()) * 31) + this.name.hashCode()) * 31;
         String str2 = this.src;
         int hashCode2 = (((hashCode + (str2 == null ? 0 : str2.hashCode())) * 31) + Boolean.hashCode(this.animated)) * 31;
@@ -176,7 +176,7 @@ public final class ComponentEmoji {
 
     @NotNull
     public String toString() {
-        String str = this.f9240id;
+        String str = this.f9241id;
         String str2 = this.name;
         String str3 = this.src;
         boolean z10 = this.animated;
@@ -186,7 +186,7 @@ public final class ComponentEmoji {
 
     public ComponentEmoji(String str, @NotNull String name, String str2, boolean z10, String str3) {
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f9240id = str;
+        this.f9241id = str;
         this.name = name;
         this.src = str2;
         this.animated = z10;

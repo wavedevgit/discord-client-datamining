@@ -48,6 +48,6 @@ public final class ImageSourceOverride {
                 return override$lambda$0;
             }
         });
-        com.airbnb.android.react.lottie.h.f8391t.a(new ImageSourceOverride$override$2(this));
+        com.airbnb.android.react.lottie.h.f8392t.a(new ImageSourceOverride$override$2(this));
     }
 }

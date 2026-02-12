@@ -25,7 +25,7 @@ public final class StickerPickerRow {
         @NotNull
 
         /* renamed from: id  reason: collision with root package name */
-        private final String f10424id;
+        private final String f10425id;
         @NotNull
         private final String name;
         private final boolean opaque;
@@ -78,7 +78,7 @@ public final class StickerPickerRow {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(type, "type");
             Intrinsics.checkNotNullParameter(url, "url");
-            this.f10424id = id2;
+            this.f10425id = id2;
             this.name = name;
             this.type = type;
             this.animated = z10;
@@ -89,7 +89,7 @@ public final class StickerPickerRow {
 
         public static /* synthetic */ Sticker copy$default(Sticker sticker, String str, String str2, Type type, boolean z10, String str3, boolean z11, boolean z12, int i10, Object obj) {
             if ((i10 & 1) != 0) {
-                str = sticker.f10424id;
+                str = sticker.f10425id;
             }
             if ((i10 & 2) != 0) {
                 str2 = sticker.name;
@@ -118,7 +118,7 @@ public final class StickerPickerRow {
 
         @NotNull
         public final String component1() {
-            return this.f10424id;
+            return this.f10425id;
         }
 
         @NotNull
@@ -163,7 +163,7 @@ public final class StickerPickerRow {
             }
             if (obj instanceof Sticker) {
                 Sticker sticker = (Sticker) obj;
-                return Intrinsics.areEqual(this.f10424id, sticker.f10424id) && Intrinsics.areEqual(this.name, sticker.name) && this.type == sticker.type && this.animated == sticker.animated && Intrinsics.areEqual(this.url, sticker.url) && this.disabled == sticker.disabled && this.opaque == sticker.opaque;
+                return Intrinsics.areEqual(this.f10425id, sticker.f10425id) && Intrinsics.areEqual(this.name, sticker.name) && this.type == sticker.type && this.animated == sticker.animated && Intrinsics.areEqual(this.url, sticker.url) && this.disabled == sticker.disabled && this.opaque == sticker.opaque;
             }
             return false;
         }
@@ -178,7 +178,7 @@ public final class StickerPickerRow {
 
         @NotNull
         public final String getId() {
-            return this.f10424id;
+            return this.f10425id;
         }
 
         @NotNull
@@ -201,12 +201,12 @@ public final class StickerPickerRow {
         }
 
         public int hashCode() {
-            return (((((((((((this.f10424id.hashCode() * 31) + this.name.hashCode()) * 31) + this.type.hashCode()) * 31) + Boolean.hashCode(this.animated)) * 31) + this.url.hashCode()) * 31) + Boolean.hashCode(this.disabled)) * 31) + Boolean.hashCode(this.opaque);
+            return (((((((((((this.f10425id.hashCode() * 31) + this.name.hashCode()) * 31) + this.type.hashCode()) * 31) + Boolean.hashCode(this.animated)) * 31) + this.url.hashCode()) * 31) + Boolean.hashCode(this.disabled)) * 31) + Boolean.hashCode(this.opaque);
         }
 
         @NotNull
         public String toString() {
-            String str = this.f10424id;
+            String str = this.f10425id;
             String str2 = this.name;
             Type type = this.type;
             boolean z10 = this.animated;

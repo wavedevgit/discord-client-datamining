@@ -5,44 +5,44 @@ import java.util.Iterator;
 final class z1 extends h1 {
 
     /* renamed from: i  reason: collision with root package name */
-    final transient Object f14831i;
+    final transient Object f14832i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public z1(Object obj) {
         obj.getClass();
-        this.f14831i = obj;
+        this.f14832i = obj;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.fido.z0
     public final int b(Object[] objArr, int i10) {
-        objArr[0] = this.f14831i;
+        objArr[0] = this.f14832i;
         return 1;
     }
 
     @Override // com.google.android.gms.internal.fido.z0, java.util.AbstractCollection, java.util.Collection, java.util.List
     public final boolean contains(Object obj) {
-        return this.f14831i.equals(obj);
+        return this.f14832i.equals(obj);
     }
 
     @Override // com.google.android.gms.internal.fido.h1, com.google.android.gms.internal.fido.z0
     public final c2 e() {
-        return new n1(this.f14831i);
+        return new n1(this.f14832i);
     }
 
     @Override // com.google.android.gms.internal.fido.h1, java.util.Collection, java.util.Set
     public final int hashCode() {
-        return this.f14831i.hashCode();
+        return this.f14832i.hashCode();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     public final /* synthetic */ Iterator iterator() {
-        return new n1(this.f14831i);
+        return new n1(this.f14832i);
     }
 
     @Override // com.google.android.gms.internal.fido.h1
     public final e1 k() {
-        return e1.l(this.f14831i);
+        return e1.l(this.f14832i);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
@@ -52,7 +52,7 @@ final class z1 extends h1 {
 
     @Override // java.util.AbstractCollection
     public final String toString() {
-        String obj = this.f14831i.toString();
+        String obj = this.f14832i.toString();
         return "[" + obj + "]";
     }
 }

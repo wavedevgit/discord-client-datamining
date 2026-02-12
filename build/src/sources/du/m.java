@@ -7,39 +7,39 @@ import java.util.Set;
 public final class m implements h {
 
     /* renamed from: d  reason: collision with root package name */
-    private final char f22081d;
+    private final char f22082d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final char f22082e;
+    private final char f22083e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f22083i;
+    private final String f22084i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final bu.c f22084o;
+    private final bu.c f22085o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final boolean f22085p;
+    private final boolean f22086p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final boolean f22086q;
+    private final boolean f22087q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final boolean f22087r;
+    private final boolean f22088r;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m(String str) {
         if (!str.isEmpty()) {
             char charAt = str.charAt(0);
-            this.f22081d = charAt;
-            this.f22082e = charAt;
-            this.f22084o = null;
-            this.f22083i = str;
+            this.f22082d = charAt;
+            this.f22083e = charAt;
+            this.f22085o = null;
+            this.f22084i = str;
             if (charAt >= ' ') {
                 boolean z10 = true;
-                this.f22085p = true;
-                this.f22086q = (str.length() == 1 && i(charAt)) ? z10 : false;
-                this.f22087r = false;
+                this.f22086p = true;
+                this.f22087q = (str.length() == 1 && i(charAt)) ? z10 : false;
+                this.f22088r = false;
                 return;
             }
             throw new IllegalArgumentException("Literal must not start with non-printable char.");
@@ -70,7 +70,7 @@ public final class m implements h {
 
     private void j(CharSequence charSequence, s sVar) {
         int f10 = sVar.f();
-        sVar.k(f10, "Cannot parse: \"" + charSequence + "\" (expected: [" + this.f22083i + "], found: [" + charSequence.subSequence(f10, Math.min(this.f22083i.length() + f10, charSequence.length())) + "])");
+        sVar.k(f10, "Cannot parse: \"" + charSequence + "\" (expected: [" + this.f22084i + "], found: [" + charSequence.subSequence(f10, Math.min(this.f22084i.length() + f10, charSequence.length())) + "])");
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:35:0x0088, code lost:
@@ -84,8 +84,8 @@ public final class m implements h {
         /*
             r8 = this;
             int r0 = r10.f()
-            char r1 = r8.f22081d
-            bu.c r2 = r8.f22084o
+            char r1 = r8.f22082d
+            bu.c r2 = r8.f22085o
             r3 = 0
             if (r2 == 0) goto L19
             java.lang.Character r1 = java.lang.Character.valueOf(r3)
@@ -102,17 +102,17 @@ public final class m implements h {
             goto L8d
         L2a:
             char r2 = r9.charAt(r0)
-            char r5 = r8.f22082e
-            bu.c r6 = r8.f22084o
+            char r5 = r8.f22083e
+            bu.c r6 = r8.f22085o
             if (r6 == 0) goto L60
-            bu.c r6 = cu.a.f21122o
+            bu.c r6 = cu.a.f21123o
             java.lang.String r6 = r6.name()
-            bu.c r7 = r8.f22084o
+            bu.c r7 = r8.f22085o
             java.lang.String r7 = r7.name()
             boolean r6 = r6.equals(r7)
             if (r6 == 0) goto L60
             java.util.Locale r6 = java.util.Locale.ROOT
-            bu.c r7 = cu.a.f21110c
+            bu.c r7 = cu.a.f21111c
             java.lang.Object r7 = r11.b(r7, r6)
             boolean r6 = r6.equals(r7)
             if (r6 == 0) goto L60
@@ -136,10 +136,10 @@ public final class m implements h {
         L67:
             if (r6 == 0) goto L8b
             if (r12 == 0) goto L6e
-            boolean r11 = r8.f22085p
+            boolean r11 = r8.f22086p
             goto L7c
         L6e:
-            bu.c r12 = cu.a.f21116i
+            bu.c r12 = cu.a.f21117i
             java.lang.Boolean r7 = java.lang.Boolean.TRUE
             java.lang.Object r11 = r11.b(r12, r7)
             java.lang.Boolean r11 = (java.lang.Boolean) r11
@@ -189,16 +189,16 @@ public final class m implements h {
         boolean q10;
         int f10 = sVar.f();
         if (z10) {
-            booleanValue = this.f22085p;
+            booleanValue = this.f22086p;
         } else {
-            booleanValue = ((Boolean) dVar.b(cu.a.f21116i, Boolean.TRUE)).booleanValue();
+            booleanValue = ((Boolean) dVar.b(cu.a.f21117i, Boolean.TRUE)).booleanValue();
         }
         if (z10) {
-            q10 = this.f22087r;
+            q10 = this.f22088r;
         } else {
-            q10 = cu.b.q((Locale) dVar.b(cu.a.f21110c, Locale.ROOT));
+            q10 = cu.b.q((Locale) dVar.b(cu.a.f21111c, Locale.ROOT));
         }
-        int m10 = m(charSequence, f10, this.f22083i, booleanValue, q10);
+        int m10 = m(charSequence, f10, this.f22084i, booleanValue, q10);
         if (m10 == -1) {
             j(charSequence, sVar);
         } else {
@@ -264,13 +264,13 @@ public final class m implements h {
     @Override // du.h
     public h a(c cVar, bu.d dVar, int i10) {
         boolean z10;
-        boolean q10 = cu.b.q((Locale) dVar.b(cu.a.f21110c, Locale.ROOT));
-        char c10 = this.f22081d;
-        char c11 = this.f22082e;
-        String str = this.f22083i;
-        bu.c cVar2 = this.f22084o;
-        boolean booleanValue = ((Boolean) dVar.b(cu.a.f21116i, Boolean.TRUE)).booleanValue();
-        if (this.f22086q && !q10) {
+        boolean q10 = cu.b.q((Locale) dVar.b(cu.a.f21111c, Locale.ROOT));
+        char c10 = this.f22082d;
+        char c11 = this.f22083e;
+        String str = this.f22084i;
+        bu.c cVar2 = this.f22085o;
+        boolean booleanValue = ((Boolean) dVar.b(cu.a.f21117i, Boolean.TRUE)).booleanValue();
+        if (this.f22087q && !q10) {
             z10 = true;
         } else {
             z10 = false;
@@ -280,13 +280,13 @@ public final class m implements h {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int c() {
-        String str = this.f22083i;
+        String str = this.f22084i;
         if (str == null) {
             return 0;
         }
         int length = str.length();
         int i10 = 0;
-        for (int i11 = 0; i11 < length && Character.isDigit(this.f22083i.charAt(i11)); i11++) {
+        for (int i11 = 0; i11 < length && Character.isDigit(this.f22084i.charAt(i11)); i11++) {
             i10++;
         }
         return i10;
@@ -294,15 +294,15 @@ public final class m implements h {
 
     @Override // du.h
     public void d(CharSequence charSequence, s sVar, bu.d dVar, t tVar, boolean z10) {
-        if (z10 && this.f22086q) {
+        if (z10 && this.f22087q) {
             int f10 = sVar.f();
-            if (f10 < charSequence.length() && charSequence.charAt(f10) == this.f22081d) {
+            if (f10 < charSequence.length() && charSequence.charAt(f10) == this.f22082d) {
                 sVar.l(f10 + 1);
-            } else if (this.f22081d == '.' && ((Boolean) dVar.b(cu.a.f21118k, Boolean.TRUE)).booleanValue()) {
+            } else if (this.f22082d == '.' && ((Boolean) dVar.b(cu.a.f21119k, Boolean.TRUE)).booleanValue()) {
             } else {
                 j(charSequence, sVar);
             }
-        } else if (this.f22083i == null) {
+        } else if (this.f22084i == null) {
             k(charSequence, sVar, dVar, z10);
         } else {
             l(charSequence, sVar, dVar, z10);
@@ -315,17 +315,17 @@ public final class m implements h {
         }
         if (obj instanceof m) {
             m mVar = (m) obj;
-            bu.c cVar = this.f22084o;
+            bu.c cVar = this.f22085o;
             if (cVar != null) {
-                return cVar.equals(mVar.f22084o);
+                return cVar.equals(mVar.f22085o);
             }
-            String str = this.f22083i;
+            String str = this.f22084i;
             if (str == null) {
-                if (mVar.f22083i == null && this.f22081d == mVar.f22081d && this.f22082e == mVar.f22082e) {
+                if (mVar.f22084i == null && this.f22082d == mVar.f22082d && this.f22083e == mVar.f22083e) {
                     return true;
                 }
                 return false;
-            } else if (str.equals(mVar.f22083i) && this.f22086q == mVar.f22086q) {
+            } else if (str.equals(mVar.f22084i) && this.f22087q == mVar.f22087q) {
                 return true;
             }
         }
@@ -334,7 +334,7 @@ public final class m implements h {
 
     @Override // du.h
     public boolean f() {
-        if (this.f22083i == null || c() != this.f22083i.length()) {
+        if (this.f22084i == null || c() != this.f22084i.length()) {
             return false;
         }
         return true;
@@ -342,18 +342,18 @@ public final class m implements h {
 
     @Override // du.h
     public int g(bu.o oVar, Appendable appendable, bu.d dVar, Set set, boolean z10) {
-        bu.c cVar = this.f22084o;
+        bu.c cVar = this.f22085o;
         if (cVar != null) {
             appendable.append(((Character) dVar.b(cVar, null)).charValue());
             return 1;
         }
-        String str = this.f22083i;
+        String str = this.f22084i;
         if (str == null) {
-            appendable.append(this.f22081d);
+            appendable.append(this.f22082d);
             return 1;
         }
         appendable.append(str);
-        return this.f22083i.length();
+        return this.f22084i.length();
     }
 
     @Override // du.h
@@ -363,33 +363,33 @@ public final class m implements h {
 
     public int hashCode() {
         String name;
-        bu.c cVar = this.f22084o;
+        bu.c cVar = this.f22085o;
         if (cVar == null) {
-            name = this.f22083i;
+            name = this.f22084i;
             if (name == null) {
                 name = "";
             }
         } else {
             name = cVar.name();
         }
-        return name.hashCode() ^ this.f22081d;
+        return name.hashCode() ^ this.f22082d;
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder();
         sb2.append(m.class.getName());
         sb2.append("[literal=");
-        if (this.f22084o != null) {
+        if (this.f22085o != null) {
             sb2.append('{');
-            sb2.append(this.f22084o);
+            sb2.append(this.f22085o);
             sb2.append('}');
         } else {
-            String str = this.f22083i;
+            String str = this.f22084i;
             if (str == null) {
-                sb2.append(this.f22081d);
-                if (this.f22082e != this.f22081d) {
+                sb2.append(this.f22082d);
+                if (this.f22083e != this.f22082d) {
                     sb2.append(", alternative=");
-                    sb2.append(this.f22082e);
+                    sb2.append(this.f22083e);
                 }
             } else {
                 sb2.append(str);
@@ -401,15 +401,15 @@ public final class m implements h {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m(char c10, char c11) {
-        this.f22081d = c10;
-        this.f22082e = c11;
-        this.f22084o = null;
-        this.f22083i = null;
+        this.f22082d = c10;
+        this.f22083e = c11;
+        this.f22085o = null;
+        this.f22084i = null;
         if (c10 >= ' ' && c11 >= ' ') {
             if (!Character.isDigit(c10) && !Character.isDigit(c11)) {
-                this.f22085p = true;
-                this.f22086q = false;
-                this.f22087r = false;
+                this.f22086p = true;
+                this.f22087q = false;
+                this.f22088r = false;
                 return;
             }
             throw new IllegalArgumentException("Literal must not be a decimal digit.");
@@ -420,26 +420,26 @@ public final class m implements h {
     /* JADX INFO: Access modifiers changed from: package-private */
     public m(bu.c cVar) {
         if (cVar != null) {
-            this.f22081d = (char) 0;
-            this.f22082e = (char) 0;
-            this.f22084o = cVar;
-            this.f22083i = null;
-            this.f22085p = true;
-            this.f22086q = false;
-            this.f22087r = false;
+            this.f22082d = (char) 0;
+            this.f22083e = (char) 0;
+            this.f22085o = cVar;
+            this.f22084i = null;
+            this.f22086p = true;
+            this.f22087q = false;
+            this.f22088r = false;
             return;
         }
         throw new NullPointerException("Missing format attribute.");
     }
 
     private m(char c10, char c11, String str, bu.c cVar, boolean z10, boolean z11, boolean z12) {
-        this.f22081d = c10;
-        this.f22082e = c11;
-        this.f22083i = str;
-        this.f22084o = cVar;
-        this.f22085p = z10;
-        this.f22086q = z11;
-        this.f22087r = z12;
+        this.f22082d = c10;
+        this.f22083e = c11;
+        this.f22084i = str;
+        this.f22085o = cVar;
+        this.f22086p = z10;
+        this.f22087q = z11;
+        this.f22088r = z12;
     }
 
     @Override // du.h

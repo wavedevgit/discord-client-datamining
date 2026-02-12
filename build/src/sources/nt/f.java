@@ -6,19 +6,19 @@ import kotlin.jvm.internal.Intrinsics;
 public final class f implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final e f38365a;
+    private final e f38366a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function1 f38366b;
+    private final Function1 f38367b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f38367c;
+    private final boolean f38368c;
 
     public f(e formatter, Function1 allSubFormatsNegative, boolean z10) {
         Intrinsics.checkNotNullParameter(formatter, "formatter");
         Intrinsics.checkNotNullParameter(allSubFormatsNegative, "allSubFormatsNegative");
-        this.f38365a = formatter;
-        this.f38366b = allSubFormatsNegative;
-        this.f38367c = z10;
+        this.f38366a = formatter;
+        this.f38367b = allSubFormatsNegative;
+        this.f38368c = z10;
     }
 }

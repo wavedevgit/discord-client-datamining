@@ -45,35 +45,35 @@ public final class MessageComponentsViewHolder extends MessagePartViewHolder {
         Intrinsics.checkNotNullParameter(url, "url");
         Intrinsics.checkNotNullParameter(title, "title");
         chatEventHandler.mo439onLinkClickedu7_MRrM(str, url, title);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$1(ChatEventHandler chatEventHandler, String str, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
         chatEventHandler.mo438onLinkClickedntcYbpo(str, node);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$2(ChatEventHandler chatEventHandler, String str, String componentId) {
         Intrinsics.checkNotNullParameter(componentId, "componentId");
         chatEventHandler.mo450onTapButtonActionComponentntcYbpo(str, componentId);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$3(ChatEventHandler chatEventHandler, String str, String url) {
         Intrinsics.checkNotNullParameter(url, "url");
         chatEventHandler.mo439onLinkClickedu7_MRrM(str, url, "");
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$4(ChatEventHandler chatEventHandler, String str, String componentId) {
         Intrinsics.checkNotNullParameter(componentId, "componentId");
         chatEventHandler.mo479onTapSelectActionComponentntcYbpo(str, componentId);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -81,13 +81,13 @@ public final class MessageComponentsViewHolder extends MessagePartViewHolder {
         Intrinsics.checkNotNullParameter(contentId, "contentId");
         Intrinsics.checkNotNullParameter(tappedElement, "tappedElement");
         chatEventHandler.mo455onTapContentInventoryEntryEmbedtsfjtEQ(str, userId.m1145unboximpl(), contentId, tappedElement);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$6(ChatEventHandler chatEventHandler, String str, UserId userId) {
         chatEventHandler.mo453onTapCheckpointCardx5gers8(str, userId.m1145unboximpl());
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public final void bind(@NotNull MessageComponentsAccessory componentsComponentsAccessory, ComponentProvider componentProvider, @NotNull Function4 onMediaItemClicked, Function2<? super String, ? super Integer, Unit> function2, @NotNull Function0<Unit> onTapSpoiler, @NotNull Function1<? super Boolean, Unit> onTapObscureToggle, @NotNull final ChatEventHandler eventHandler) {

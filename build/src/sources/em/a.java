@@ -6,15 +6,15 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Function0 f22922a;
+    private final Function0 f22923a;
 
     public a(Function0 controllerProvider) {
         Intrinsics.checkNotNullParameter(controllerProvider, "controllerProvider");
-        this.f22922a = controllerProvider;
+        this.f22923a = controllerProvider;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final dm.b a() {
-        return (dm.b) this.f22922a.invoke();
+        return (dm.b) this.f22923a.invoke();
     }
 }

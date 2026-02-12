@@ -1,61 +1,72 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var3 = metroImportDefault;
-    var5 = metroImportAll;
-    var2 = exports;
-    var4 = dependencyMap;
-    var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
-    var1 = {};
-    var0 = true;
-    var1.value = var0;
-    var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var1);
-    var0 = 0;
-    var1 = var4[var0];
-    var0 = undefined;
-    var1 = var3.bind(var0)(var1);
-    var2.createStackNavigator = var1;
-    var1 = 1;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.Header = var1;
-    var1 = 2;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.StackView = var1;
-    var1 = 3;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var2.CardStyleInterpolators = var1;
-    var1 = 4;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var2.HeaderStyleInterpolators = var1;
-    var1 = 5;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var2.TransitionPresets = var1;
-    var1 = 6;
-    var1 = var4[var1];
-    var1 = var5.bind(var0)(var1);
-    var2.TransitionSpecs = var1;
-    var1 = 7;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.CardAnimationContext = var1;
-    var1 = 8;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.GestureHandlerRefContext = var1;
-    var1 = 9;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.useCardAnimation = var1;
-    var1 = 10;
-    var1 = var4[var1];
-    var1 = var3.bind(var0)(var1);
-    var2.useGestureHandlerRef = var1;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5850, 5880, 5851, 5899, 5879, 5901, 5902, 5897, 5854, 5907, 5908]);
+    _fun51667: for (var _fun51667_ip = 0;;) switch (_fun51667_ip) {
+        case 0:
+            var4 = global;
+            var2 = exports;
+            var _closure1_slot0 = var4;
+            var5 = global;
+            var7 = var5.Object;
+            var6 = var7.defineProperty;
+            var3 = {};
+            var0 = true;
+            var3.value = var0;
+            var0 = '__esModule';
+            var0 = var6.bind(var7)(var2, var0, var3);
+            var3 = dependencyMap;
+            var0 = 0;
+            var6 = var3[var0];
+            var3 = metroImportAll;
+            var0 = undefined;
+            var3 = var3.bind(var0)(var6);
+            var _closure1_slot1 = var3;
+            var3 = var4.__react_navigation__elements_contexts;
+            var6 = null;
+            if (!(var6 == var3)) {
+                _fun51667_ip = 105;
+                continue _fun51667
+            }
+        case 79:
+            var5 = var5.Map;
+            var6 = var5.prototype;
+            var6 = Object.create(var6, {
+                constructor: {
+                    value: var5
+                }
+            });
+            var11 = var6;
+            var5 = new var11[var5](var10);
+            var3 = var5 instanceof Object ? var5 : var6;
+        case 105:
+            var4.__react_navigation__elements_contexts = var3;
+            var1 = function arg0, arg1() {
+                _fun51668: for (var _fun51668_ip = 0;;) switch (_fun51668_ip) {
+                    case 0:
+                        var4 = arg0;
+                        var0 = _closure1_slot0;
+                        var1 = var0.__react_navigation__elements_contexts;
+                        var0 = var1.get;
+                        var0 = var0.bind(var1)(var4);
+                        if (var0) {
+                            _fun51668_ip = 77;
+                            continue _fun51668
+                        }
+                    case 29:
+                        var5 = _closure1_slot1;
+                        var3 = var5.createContext;
+                        var1 = arg1;
+                        var1 = var3.bind(var5)(var1);
+                        var1.displayName = var4;
+                        var2 = _closure1_slot0;
+                        var3 = var2.__react_navigation__elements_contexts;
+                        var2 = var3.set;
+                        var2 = var2.bind(var3)(var4, var1);
+                        var0 = var1;
+                    case 77:
+                        return var0;
+                }
+            };
+            var2.default = var1;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31]);

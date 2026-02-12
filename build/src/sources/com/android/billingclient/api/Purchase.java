@@ -9,37 +9,37 @@ import org.json.JSONObject;
 public class Purchase {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f8597a;
+    private final String f8598a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f8598b;
+    private final String f8599b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final JSONObject f8599c;
+    private final JSONObject f8600c;
 
     public Purchase(String str, String str2) {
-        this.f8597a = str;
-        this.f8598b = str2;
-        this.f8599c = new JSONObject(str);
+        this.f8598a = str;
+        this.f8599b = str2;
+        this.f8600c = new JSONObject(str);
     }
 
     private final ArrayList m() {
         ArrayList arrayList = new ArrayList();
-        if (this.f8599c.has("productIds")) {
-            JSONArray optJSONArray = this.f8599c.optJSONArray("productIds");
+        if (this.f8600c.has("productIds")) {
+            JSONArray optJSONArray = this.f8600c.optJSONArray("productIds");
             if (optJSONArray != null) {
                 for (int i10 = 0; i10 < optJSONArray.length(); i10++) {
                     arrayList.add(optJSONArray.optString(i10));
                 }
             }
-        } else if (this.f8599c.has("productId")) {
-            arrayList.add(this.f8599c.optString("productId"));
+        } else if (this.f8600c.has("productId")) {
+            arrayList.add(this.f8600c.optString("productId"));
         }
         return arrayList;
     }
 
     public a a() {
-        JSONObject jSONObject = this.f8599c;
+        JSONObject jSONObject = this.f8600c;
         String optString = jSONObject.optString("obfuscatedAccountId");
         String optString2 = jSONObject.optString("obfuscatedProfileId");
         if (optString == null && optString2 == null) {
@@ -49,11 +49,11 @@ public class Purchase {
     }
 
     public String b() {
-        return this.f8599c.optString("developerPayload");
+        return this.f8600c.optString("developerPayload");
     }
 
     public String c() {
-        String optString = this.f8599c.optString("orderId");
+        String optString = this.f8600c.optString("orderId");
         if (TextUtils.isEmpty(optString)) {
             return null;
         }
@@ -61,11 +61,11 @@ public class Purchase {
     }
 
     public String d() {
-        return this.f8597a;
+        return this.f8598a;
     }
 
     public String e() {
-        return this.f8599c.optString("packageName");
+        return this.f8600c.optString("packageName");
     }
 
     public boolean equals(Object obj) {
@@ -76,7 +76,7 @@ public class Purchase {
             return false;
         }
         Purchase purchase = (Purchase) obj;
-        if (TextUtils.equals(this.f8597a, purchase.d()) && TextUtils.equals(this.f8598b, purchase.j())) {
+        if (TextUtils.equals(this.f8598a, purchase.d()) && TextUtils.equals(this.f8599b, purchase.j())) {
             return true;
         }
         return false;
@@ -87,38 +87,38 @@ public class Purchase {
     }
 
     public int g() {
-        if (this.f8599c.optInt("purchaseState", 1) != 4) {
+        if (this.f8600c.optInt("purchaseState", 1) != 4) {
             return 1;
         }
         return 2;
     }
 
     public long h() {
-        return this.f8599c.optLong("purchaseTime");
+        return this.f8600c.optLong("purchaseTime");
     }
 
     public int hashCode() {
-        return this.f8597a.hashCode();
+        return this.f8598a.hashCode();
     }
 
     public String i() {
-        JSONObject jSONObject = this.f8599c;
+        JSONObject jSONObject = this.f8600c;
         return jSONObject.optString("token", jSONObject.optString("purchaseToken"));
     }
 
     public String j() {
-        return this.f8598b;
+        return this.f8599b;
     }
 
     public boolean k() {
-        return this.f8599c.optBoolean("acknowledged", true);
+        return this.f8600c.optBoolean("acknowledged", true);
     }
 
     public boolean l() {
-        return this.f8599c.optBoolean("autoRenewing");
+        return this.f8600c.optBoolean("autoRenewing");
     }
 
     public String toString() {
-        return "Purchase. Json: ".concat(String.valueOf(this.f8597a));
+        return "Purchase. Json: ".concat(String.valueOf(this.f8598a));
     }
 }

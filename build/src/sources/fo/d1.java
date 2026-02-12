@@ -10,7 +10,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Lazy f23994a = as.l.b(new Function0() { // from class: fo.c1
+    private final Lazy f23995a = as.l.b(new Function0() { // from class: fo.c1
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             gk.c d10;
@@ -20,12 +20,12 @@ public final class d1 {
     });
 
     private final gk.c c() {
-        return (gk.c) this.f23994a.getValue();
+        return (gk.c) this.f23995a.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final gk.c d() {
-        gk.c a10 = gk.b.a(ik.a.f27972d);
+        gk.c a10 = gk.b.a(ik.a.f27973d);
         Intrinsics.checkNotNullExpressionValue(a10, "getClient(...)");
         return a10;
     }

@@ -7,57 +7,57 @@ import java.util.List;
 public class o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f48578a;
+    private final List f48579a;
 
     /* renamed from: b  reason: collision with root package name */
-    private PointF f48579b;
+    private PointF f48580b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f48580c;
+    private boolean f48581c;
 
     public o(PointF pointF, boolean z10, List list) {
-        this.f48579b = pointF;
-        this.f48580c = z10;
-        this.f48578a = new ArrayList(list);
+        this.f48580b = pointF;
+        this.f48581c = z10;
+        this.f48579a = new ArrayList(list);
     }
 
     public List a() {
-        return this.f48578a;
+        return this.f48579a;
     }
 
     public PointF b() {
-        return this.f48579b;
+        return this.f48580b;
     }
 
     public void c(o oVar, o oVar2, float f10) {
         boolean z10;
-        if (this.f48579b == null) {
-            this.f48579b = new PointF();
+        if (this.f48580b == null) {
+            this.f48580b = new PointF();
         }
         if (!oVar.d() && !oVar2.d()) {
             z10 = false;
         } else {
             z10 = true;
         }
-        this.f48580c = z10;
+        this.f48581c = z10;
         if (oVar.a().size() != oVar2.a().size()) {
             y5.d.c("Curves must have the same number of control points. Shape 1: " + oVar.a().size() + "\tShape 2: " + oVar2.a().size());
         }
         int min = Math.min(oVar.a().size(), oVar2.a().size());
-        if (this.f48578a.size() < min) {
-            for (int size = this.f48578a.size(); size < min; size++) {
-                this.f48578a.add(new r5.a());
+        if (this.f48579a.size() < min) {
+            for (int size = this.f48579a.size(); size < min; size++) {
+                this.f48579a.add(new r5.a());
             }
-        } else if (this.f48578a.size() > min) {
-            for (int size2 = this.f48578a.size() - 1; size2 >= min; size2--) {
-                List list = this.f48578a;
+        } else if (this.f48579a.size() > min) {
+            for (int size2 = this.f48579a.size() - 1; size2 >= min; size2--) {
+                List list = this.f48579a;
                 list.remove(list.size() - 1);
             }
         }
         PointF b10 = oVar.b();
         PointF b11 = oVar2.b();
         f(y5.i.i(b10.x, b11.x, f10), y5.i.i(b10.y, b11.y, f10));
-        for (int size3 = this.f48578a.size() - 1; size3 >= 0; size3--) {
+        for (int size3 = this.f48579a.size() - 1; size3 >= 0; size3--) {
             r5.a aVar = (r5.a) oVar.a().get(size3);
             r5.a aVar2 = (r5.a) oVar2.a().get(size3);
             PointF a10 = aVar.a();
@@ -66,32 +66,32 @@ public class o {
             PointF a11 = aVar2.a();
             PointF b13 = aVar2.b();
             PointF c11 = aVar2.c();
-            ((r5.a) this.f48578a.get(size3)).d(y5.i.i(a10.x, a11.x, f10), y5.i.i(a10.y, a11.y, f10));
-            ((r5.a) this.f48578a.get(size3)).e(y5.i.i(b12.x, b13.x, f10), y5.i.i(b12.y, b13.y, f10));
-            ((r5.a) this.f48578a.get(size3)).f(y5.i.i(c10.x, c11.x, f10), y5.i.i(c10.y, c11.y, f10));
+            ((r5.a) this.f48579a.get(size3)).d(y5.i.i(a10.x, a11.x, f10), y5.i.i(a10.y, a11.y, f10));
+            ((r5.a) this.f48579a.get(size3)).e(y5.i.i(b12.x, b13.x, f10), y5.i.i(b12.y, b13.y, f10));
+            ((r5.a) this.f48579a.get(size3)).f(y5.i.i(c10.x, c11.x, f10), y5.i.i(c10.y, c11.y, f10));
         }
     }
 
     public boolean d() {
-        return this.f48580c;
+        return this.f48581c;
     }
 
     public void e(boolean z10) {
-        this.f48580c = z10;
+        this.f48581c = z10;
     }
 
     public void f(float f10, float f11) {
-        if (this.f48579b == null) {
-            this.f48579b = new PointF();
+        if (this.f48580b == null) {
+            this.f48580b = new PointF();
         }
-        this.f48579b.set(f10, f11);
+        this.f48580b.set(f10, f11);
     }
 
     public String toString() {
-        return "ShapeData{numCurves=" + this.f48578a.size() + "closed=" + this.f48580c + '}';
+        return "ShapeData{numCurves=" + this.f48579a.size() + "closed=" + this.f48581c + '}';
     }
 
     public o() {
-        this.f48578a = new ArrayList();
+        this.f48579a = new ArrayList();
     }
 }

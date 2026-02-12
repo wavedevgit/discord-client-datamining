@@ -9,10 +9,10 @@ import x5.c;
 public class h0 implements n0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final h0 f52297a = new h0();
+    public static final h0 f52298a = new h0();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f52298b = c.a.a("c", "v", "i", "o");
+    private static final c.a f52299b = c.a.a("c", "v", "i", "o");
 
     private h0() {
     }
@@ -29,7 +29,7 @@ public class h0 implements n0 {
         List list3 = null;
         boolean z10 = false;
         while (cVar.hasNext()) {
-            int p10 = cVar.p(f52298b);
+            int p10 = cVar.p(f52299b);
             if (p10 != 0) {
                 if (p10 != 1) {
                     if (p10 != 2) {

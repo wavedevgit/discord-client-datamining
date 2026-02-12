@@ -20,48 +20,48 @@ import z1.g;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    static final LruCache f56022a = new LruCache(16);
+    static final LruCache f56023a = new LruCache(16);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ExecutorService f56023b = h.a("fonts-androidx", 10, 10000);
+    private static final ExecutorService f56024b = h.a("fonts-androidx", 10, 10000);
 
     /* renamed from: c  reason: collision with root package name */
-    static final Object f56024c = new Object();
+    static final Object f56025c = new Object();
 
     /* renamed from: d  reason: collision with root package name */
-    static final SimpleArrayMap f56025d = new SimpleArrayMap();
+    static final SimpleArrayMap f56026d = new SimpleArrayMap();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a implements Callable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ String f56026d;
+        final /* synthetic */ String f56027d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Context f56027e;
+        final /* synthetic */ Context f56028e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ z1.e f56028i;
+        final /* synthetic */ z1.e f56029i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ int f56029o;
+        final /* synthetic */ int f56030o;
 
         a(String str, Context context, z1.e eVar, int i10) {
-            this.f56026d = str;
-            this.f56027e = context;
-            this.f56028i = eVar;
-            this.f56029o = i10;
+            this.f56027d = str;
+            this.f56028e = context;
+            this.f56029i = eVar;
+            this.f56030o = i10;
         }
 
         @Override // java.util.concurrent.Callable
         /* renamed from: a */
         public e call() {
             List a10;
-            String str = this.f56026d;
-            Context context = this.f56027e;
-            a10 = d0.a(new Object[]{this.f56028i});
-            return f.c(str, context, a10, this.f56029o);
+            String str = this.f56027d;
+            Context context = this.f56028e;
+            a10 = d0.a(new Object[]{this.f56029i});
+            return f.c(str, context, a10, this.f56030o);
         }
     }
 
@@ -70,10 +70,10 @@ public abstract class f {
     public class b implements Consumer {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ z1.a f56030a;
+        final /* synthetic */ z1.a f56031a;
 
         b(z1.a aVar) {
-            this.f56030a = aVar;
+            this.f56031a = aVar;
         }
 
         @Override // androidx.core.util.Consumer
@@ -82,7 +82,7 @@ public abstract class f {
             if (eVar == null) {
                 eVar = new e(-3);
             }
-            this.f56030a.b(eVar);
+            this.f56031a.b(eVar);
         }
     }
 
@@ -91,29 +91,29 @@ public abstract class f {
     public class c implements Callable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ String f56031d;
+        final /* synthetic */ String f56032d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Context f56032e;
+        final /* synthetic */ Context f56033e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ List f56033i;
+        final /* synthetic */ List f56034i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ int f56034o;
+        final /* synthetic */ int f56035o;
 
         c(String str, Context context, List list, int i10) {
-            this.f56031d = str;
-            this.f56032e = context;
-            this.f56033i = list;
-            this.f56034o = i10;
+            this.f56032d = str;
+            this.f56033e = context;
+            this.f56034i = list;
+            this.f56035o = i10;
         }
 
         @Override // java.util.concurrent.Callable
         /* renamed from: a */
         public e call() {
             try {
-                return f.c(this.f56031d, this.f56032e, this.f56033i, this.f56034o);
+                return f.c(this.f56032d, this.f56033e, this.f56034i, this.f56035o);
             } catch (Throwable unused) {
                 return new e(-3);
             }
@@ -125,23 +125,23 @@ public abstract class f {
     public class d implements Consumer {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ String f56035a;
+        final /* synthetic */ String f56036a;
 
         d(String str) {
-            this.f56035a = str;
+            this.f56036a = str;
         }
 
         @Override // androidx.core.util.Consumer
         /* renamed from: a */
         public void accept(e eVar) {
-            synchronized (f.f56024c) {
+            synchronized (f.f56025c) {
                 try {
-                    SimpleArrayMap simpleArrayMap = f.f56025d;
-                    ArrayList arrayList = (ArrayList) simpleArrayMap.get(this.f56035a);
+                    SimpleArrayMap simpleArrayMap = f.f56026d;
+                    ArrayList arrayList = (ArrayList) simpleArrayMap.get(this.f56036a);
                     if (arrayList == null) {
                         return;
                     }
-                    simpleArrayMap.remove(this.f56035a);
+                    simpleArrayMap.remove(this.f56036a);
                     for (int i10 = 0; i10 < arrayList.size(); i10++) {
                         ((Consumer) arrayList.get(i10)).accept(eVar);
                     }
@@ -193,7 +193,7 @@ public abstract class f {
         Typeface b10;
         c4.a.c("getFontSync");
         try {
-            LruCache lruCache = f56022a;
+            LruCache lruCache = f56023a;
             Typeface typeface = (Typeface) lruCache.d(str);
             if (typeface != null) {
                 return new e(typeface);
@@ -223,15 +223,15 @@ public abstract class f {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Typeface d(Context context, List list, int i10, Executor executor, z1.a aVar) {
         String a10 = a(list, i10);
-        Typeface typeface = (Typeface) f56022a.d(a10);
+        Typeface typeface = (Typeface) f56023a.d(a10);
         if (typeface != null) {
             aVar.b(new e(typeface));
             return typeface;
         }
         b bVar = new b(aVar);
-        synchronized (f56024c) {
+        synchronized (f56025c) {
             try {
-                SimpleArrayMap simpleArrayMap = f56025d;
+                SimpleArrayMap simpleArrayMap = f56026d;
                 ArrayList arrayList = (ArrayList) simpleArrayMap.get(a10);
                 if (arrayList != null) {
                     arrayList.add(bVar);
@@ -242,7 +242,7 @@ public abstract class f {
                 simpleArrayMap.put(a10, arrayList2);
                 c cVar = new c(a10, context, list, i10);
                 if (executor == null) {
-                    executor = f56023b;
+                    executor = f56024b;
                 }
                 h.c(executor, cVar, new d(a10));
                 return null;
@@ -258,7 +258,7 @@ public abstract class f {
         List a11;
         a10 = d0.a(new Object[]{eVar});
         String a12 = a(a10, i10);
-        Typeface typeface = (Typeface) f56022a.d(a12);
+        Typeface typeface = (Typeface) f56023a.d(a12);
         if (typeface != null) {
             aVar.b(new e(typeface));
             return typeface;
@@ -266,12 +266,12 @@ public abstract class f {
             a11 = d0.a(new Object[]{eVar});
             e c10 = c(a12, context, a11, i10);
             aVar.b(c10);
-            return c10.f56036a;
+            return c10.f56037a;
         } else {
             try {
-                e eVar2 = (e) h.d(f56023b, new a(a12, context, eVar, i10), i11);
+                e eVar2 = (e) h.d(f56024b, new a(a12, context, eVar, i10), i11);
                 aVar.b(eVar2);
-                return eVar2.f56036a;
+                return eVar2.f56037a;
             } catch (InterruptedException unused) {
                 aVar.b(new e(-3));
                 return null;
@@ -284,27 +284,27 @@ public abstract class f {
     public static final class e {
 
         /* renamed from: a  reason: collision with root package name */
-        final Typeface f56036a;
+        final Typeface f56037a;
 
         /* renamed from: b  reason: collision with root package name */
-        final int f56037b;
+        final int f56038b;
 
         e(int i10) {
-            this.f56036a = null;
-            this.f56037b = i10;
+            this.f56037a = null;
+            this.f56038b = i10;
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public boolean a() {
-            if (this.f56037b == 0) {
+            if (this.f56038b == 0) {
                 return true;
             }
             return false;
         }
 
         e(Typeface typeface) {
-            this.f56036a = typeface;
-            this.f56037b = 0;
+            this.f56037a = typeface;
+            this.f56038b = 0;
         }
     }
 }

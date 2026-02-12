@@ -16,7 +16,7 @@ public final class BlockedGroupChatListItem extends ChatListItem {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9321id;
+    private final String f9322id;
     private final boolean isRevealed;
     @NotNull
     private final String text;
@@ -30,7 +30,7 @@ public final class BlockedGroupChatListItem extends ChatListItem {
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(content, "content");
         this.text = text;
-        this.f9321id = id2;
+        this.f9322id = id2;
         this.textColor = i10;
         this.backgroundColor = i11;
         this.borderColor = i12;
@@ -43,7 +43,7 @@ public final class BlockedGroupChatListItem extends ChatListItem {
             str = blockedGroupChatListItem.text;
         }
         if ((i13 & 2) != 0) {
-            str2 = blockedGroupChatListItem.f9321id;
+            str2 = blockedGroupChatListItem.f9322id;
         }
         if ((i13 & 4) != 0) {
             i10 = blockedGroupChatListItem.textColor;
@@ -75,7 +75,7 @@ public final class BlockedGroupChatListItem extends ChatListItem {
 
     @NotNull
     public final String component2() {
-        return this.f9321id;
+        return this.f9322id;
     }
 
     public final int component3() {
@@ -113,7 +113,7 @@ public final class BlockedGroupChatListItem extends ChatListItem {
         }
         if (obj instanceof BlockedGroupChatListItem) {
             BlockedGroupChatListItem blockedGroupChatListItem = (BlockedGroupChatListItem) obj;
-            return Intrinsics.areEqual(this.text, blockedGroupChatListItem.text) && Intrinsics.areEqual(this.f9321id, blockedGroupChatListItem.f9321id) && this.textColor == blockedGroupChatListItem.textColor && this.backgroundColor == blockedGroupChatListItem.backgroundColor && this.borderColor == blockedGroupChatListItem.borderColor && this.isRevealed == blockedGroupChatListItem.isRevealed && Intrinsics.areEqual(this.content, blockedGroupChatListItem.content);
+            return Intrinsics.areEqual(this.text, blockedGroupChatListItem.text) && Intrinsics.areEqual(this.f9322id, blockedGroupChatListItem.f9322id) && this.textColor == blockedGroupChatListItem.textColor && this.backgroundColor == blockedGroupChatListItem.backgroundColor && this.borderColor == blockedGroupChatListItem.borderColor && this.isRevealed == blockedGroupChatListItem.isRevealed && Intrinsics.areEqual(this.content, blockedGroupChatListItem.content);
         }
         return false;
     }
@@ -134,7 +134,7 @@ public final class BlockedGroupChatListItem extends ChatListItem {
     @Override // com.discord.chat.presentation.list.item.ChatListItem
     @NotNull
     public String getId() {
-        return this.f9321id;
+        return this.f9322id;
     }
 
     @NotNull
@@ -147,7 +147,7 @@ public final class BlockedGroupChatListItem extends ChatListItem {
     }
 
     public int hashCode() {
-        return (((((((((((this.text.hashCode() * 31) + this.f9321id.hashCode()) * 31) + Integer.hashCode(this.textColor)) * 31) + Integer.hashCode(this.backgroundColor)) * 31) + Integer.hashCode(this.borderColor)) * 31) + Boolean.hashCode(this.isRevealed)) * 31) + this.content.hashCode();
+        return (((((((((((this.text.hashCode() * 31) + this.f9322id.hashCode()) * 31) + Integer.hashCode(this.textColor)) * 31) + Integer.hashCode(this.backgroundColor)) * 31) + Integer.hashCode(this.borderColor)) * 31) + Boolean.hashCode(this.isRevealed)) * 31) + this.content.hashCode();
     }
 
     public final boolean isRevealed() {
@@ -157,7 +157,7 @@ public final class BlockedGroupChatListItem extends ChatListItem {
     @NotNull
     public String toString() {
         String str = this.text;
-        String str2 = this.f9321id;
+        String str2 = this.f9322id;
         int i10 = this.textColor;
         int i11 = this.backgroundColor;
         int i12 = this.borderColor;

@@ -3,25 +3,25 @@ package ha;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f27009a;
+    public final int f27010a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f27010b;
+    public final int f27011b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f27011c;
+    public final int f27012c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f27012d;
+    public final int f27013d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f27013e;
+    public final int f27014e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final a f27014f;
+    public final a f27015f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final EnumC0359b f27015g;
+    public final EnumC0359b f27016g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public enum a {
@@ -38,12 +38,12 @@ public class b {
     }
 
     public b(int i10, int i11, int i12, int i13, int i14, a aVar, EnumC0359b enumC0359b) {
-        this.f27009a = i10;
-        this.f27010b = i11;
-        this.f27011c = i12;
-        this.f27012d = i13;
-        this.f27013e = i14;
-        this.f27014f = aVar;
-        this.f27015g = enumC0359b;
+        this.f27010a = i10;
+        this.f27011b = i11;
+        this.f27012c = i12;
+        this.f27013d = i13;
+        this.f27014e = i14;
+        this.f27015f = aVar;
+        this.f27016g = enumC0359b;
     }
 }

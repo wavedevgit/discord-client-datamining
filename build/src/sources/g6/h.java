@@ -36,106 +36,106 @@ import java.util.Stack;
 public class h {
 
     /* renamed from: i  reason: collision with root package name */
-    private static HashSet f25212i;
+    private static HashSet f25213i;
 
     /* renamed from: a  reason: collision with root package name */
-    private Canvas f25213a;
+    private Canvas f25214a;
 
     /* renamed from: b  reason: collision with root package name */
-    private float f25214b;
+    private float f25215b;
 
     /* renamed from: c  reason: collision with root package name */
-    private g6.g f25215c;
+    private g6.g f25216c;
 
     /* renamed from: d  reason: collision with root package name */
-    private C0343h f25216d;
+    private C0343h f25217d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Stack f25217e;
+    private Stack f25218e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Stack f25218f;
+    private Stack f25219f;
 
     /* renamed from: g  reason: collision with root package name */
-    private Stack f25219g;
+    private Stack f25220g;
 
     /* renamed from: h  reason: collision with root package name */
-    private b.q f25220h = null;
+    private b.q f25221h = null;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f25221a;
+        static final /* synthetic */ int[] f25222a;
 
         /* renamed from: b  reason: collision with root package name */
-        static final /* synthetic */ int[] f25222b;
+        static final /* synthetic */ int[] f25223b;
 
         /* renamed from: c  reason: collision with root package name */
-        static final /* synthetic */ int[] f25223c;
+        static final /* synthetic */ int[] f25224c;
 
         static {
             int[] iArr = new int[g.e0.d.values().length];
-            f25223c = iArr;
+            f25224c = iArr;
             try {
                 iArr[g.e0.d.Miter.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f25223c[g.e0.d.Round.ordinal()] = 2;
+                f25224c[g.e0.d.Round.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f25223c[g.e0.d.Bevel.ordinal()] = 3;
+                f25224c[g.e0.d.Bevel.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             int[] iArr2 = new int[g.e0.c.values().length];
-            f25222b = iArr2;
+            f25223b = iArr2;
             try {
                 iArr2[g.e0.c.Butt.ordinal()] = 1;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f25222b[g.e0.c.Round.ordinal()] = 2;
+                f25223b[g.e0.c.Round.ordinal()] = 2;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f25222b[g.e0.c.Square.ordinal()] = 3;
+                f25223b[g.e0.c.Square.ordinal()] = 3;
             } catch (NoSuchFieldError unused6) {
             }
             int[] iArr3 = new int[e.a.values().length];
-            f25221a = iArr3;
+            f25222a = iArr3;
             try {
                 iArr3[e.a.xMidYMin.ordinal()] = 1;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f25221a[e.a.xMidYMid.ordinal()] = 2;
+                f25222a[e.a.xMidYMid.ordinal()] = 2;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f25221a[e.a.xMidYMax.ordinal()] = 3;
+                f25222a[e.a.xMidYMax.ordinal()] = 3;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f25221a[e.a.xMaxYMin.ordinal()] = 4;
+                f25222a[e.a.xMaxYMin.ordinal()] = 4;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                f25221a[e.a.xMaxYMid.ordinal()] = 5;
+                f25222a[e.a.xMaxYMid.ordinal()] = 5;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                f25221a[e.a.xMaxYMax.ordinal()] = 6;
+                f25222a[e.a.xMaxYMax.ordinal()] = 6;
             } catch (NoSuchFieldError unused12) {
             }
             try {
-                f25221a[e.a.xMinYMid.ordinal()] = 7;
+                f25222a[e.a.xMinYMid.ordinal()] = 7;
             } catch (NoSuchFieldError unused13) {
             }
             try {
-                f25221a[e.a.xMinYMax.ordinal()] = 8;
+                f25222a[e.a.xMinYMax.ordinal()] = 8;
             } catch (NoSuchFieldError unused14) {
             }
         }
@@ -146,109 +146,109 @@ public class h {
     public class b implements g.x {
 
         /* renamed from: b  reason: collision with root package name */
-        private float f25225b;
+        private float f25226b;
 
         /* renamed from: c  reason: collision with root package name */
-        private float f25226c;
+        private float f25227c;
 
         /* renamed from: h  reason: collision with root package name */
-        private boolean f25231h;
+        private boolean f25232h;
 
         /* renamed from: a  reason: collision with root package name */
-        private List f25224a = new ArrayList();
+        private List f25225a = new ArrayList();
 
         /* renamed from: d  reason: collision with root package name */
-        private c f25227d = null;
+        private c f25228d = null;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f25228e = false;
+        private boolean f25229e = false;
 
         /* renamed from: f  reason: collision with root package name */
-        private boolean f25229f = true;
+        private boolean f25230f = true;
 
         /* renamed from: g  reason: collision with root package name */
-        private int f25230g = -1;
+        private int f25231g = -1;
 
         b(g.w wVar) {
             if (wVar != null) {
                 wVar.h(this);
-                if (this.f25231h) {
-                    this.f25227d.b((c) this.f25224a.get(this.f25230g));
-                    this.f25224a.set(this.f25230g, this.f25227d);
-                    this.f25231h = false;
+                if (this.f25232h) {
+                    this.f25228d.b((c) this.f25225a.get(this.f25231g));
+                    this.f25225a.set(this.f25231g, this.f25228d);
+                    this.f25232h = false;
                 }
-                c cVar = this.f25227d;
+                c cVar = this.f25228d;
                 if (cVar != null) {
-                    this.f25224a.add(cVar);
+                    this.f25225a.add(cVar);
                 }
             }
         }
 
         @Override // g6.g.x
         public void a(float f10, float f11, float f12, float f13) {
-            this.f25227d.a(f10, f11);
-            this.f25224a.add(this.f25227d);
-            this.f25227d = new c(f12, f13, f12 - f10, f13 - f11);
-            this.f25231h = false;
+            this.f25228d.a(f10, f11);
+            this.f25225a.add(this.f25228d);
+            this.f25228d = new c(f12, f13, f12 - f10, f13 - f11);
+            this.f25232h = false;
         }
 
         @Override // g6.g.x
         public void b(float f10, float f11) {
-            if (this.f25231h) {
-                this.f25227d.b((c) this.f25224a.get(this.f25230g));
-                this.f25224a.set(this.f25230g, this.f25227d);
-                this.f25231h = false;
+            if (this.f25232h) {
+                this.f25228d.b((c) this.f25225a.get(this.f25231g));
+                this.f25225a.set(this.f25231g, this.f25228d);
+                this.f25232h = false;
             }
-            c cVar = this.f25227d;
+            c cVar = this.f25228d;
             if (cVar != null) {
-                this.f25224a.add(cVar);
+                this.f25225a.add(cVar);
             }
-            this.f25225b = f10;
-            this.f25226c = f11;
-            this.f25227d = new c(f10, f11, 0.0f, 0.0f);
-            this.f25230g = this.f25224a.size();
+            this.f25226b = f10;
+            this.f25227c = f11;
+            this.f25228d = new c(f10, f11, 0.0f, 0.0f);
+            this.f25231g = this.f25225a.size();
         }
 
         @Override // g6.g.x
         public void c(float f10, float f11, float f12, float f13, float f14, float f15) {
-            if (this.f25229f || this.f25228e) {
-                this.f25227d.a(f10, f11);
-                this.f25224a.add(this.f25227d);
-                this.f25228e = false;
+            if (this.f25230f || this.f25229e) {
+                this.f25228d.a(f10, f11);
+                this.f25225a.add(this.f25228d);
+                this.f25229e = false;
             }
-            this.f25227d = new c(f14, f15, f14 - f12, f15 - f13);
-            this.f25231h = false;
+            this.f25228d = new c(f14, f15, f14 - f12, f15 - f13);
+            this.f25232h = false;
         }
 
         @Override // g6.g.x
         public void close() {
-            this.f25224a.add(this.f25227d);
-            e(this.f25225b, this.f25226c);
-            this.f25231h = true;
+            this.f25225a.add(this.f25228d);
+            e(this.f25226b, this.f25227c);
+            this.f25232h = true;
         }
 
         @Override // g6.g.x
         public void d(float f10, float f11, float f12, boolean z10, boolean z11, float f13, float f14) {
-            this.f25228e = true;
-            this.f25229f = false;
-            c cVar = this.f25227d;
-            h.h(cVar.f25233a, cVar.f25234b, f10, f11, f12, z10, z11, f13, f14, this);
-            this.f25229f = true;
-            this.f25231h = false;
+            this.f25229e = true;
+            this.f25230f = false;
+            c cVar = this.f25228d;
+            h.h(cVar.f25234a, cVar.f25235b, f10, f11, f12, z10, z11, f13, f14, this);
+            this.f25230f = true;
+            this.f25232h = false;
         }
 
         @Override // g6.g.x
         public void e(float f10, float f11) {
-            this.f25227d.a(f10, f11);
-            this.f25224a.add(this.f25227d);
+            this.f25228d.a(f10, f11);
+            this.f25225a.add(this.f25228d);
             h hVar = h.this;
-            c cVar = this.f25227d;
-            this.f25227d = new c(f10, f11, f10 - cVar.f25233a, f11 - cVar.f25234b);
-            this.f25231h = false;
+            c cVar = this.f25228d;
+            this.f25228d = new c(f10, f11, f10 - cVar.f25234a, f11 - cVar.f25235b);
+            this.f25232h = false;
         }
 
         List f() {
-            return this.f25224a;
+            return this.f25225a;
         }
     }
 
@@ -257,69 +257,69 @@ public class h {
     public class c {
 
         /* renamed from: a  reason: collision with root package name */
-        float f25233a;
+        float f25234a;
 
         /* renamed from: b  reason: collision with root package name */
-        float f25234b;
+        float f25235b;
 
         /* renamed from: c  reason: collision with root package name */
-        float f25235c;
+        float f25236c;
 
         /* renamed from: d  reason: collision with root package name */
-        float f25236d;
+        float f25237d;
 
         /* renamed from: e  reason: collision with root package name */
-        boolean f25237e = false;
+        boolean f25238e = false;
 
         c(float f10, float f11, float f12, float f13) {
-            this.f25235c = 0.0f;
-            this.f25236d = 0.0f;
-            this.f25233a = f10;
-            this.f25234b = f11;
+            this.f25236c = 0.0f;
+            this.f25237d = 0.0f;
+            this.f25234a = f10;
+            this.f25235b = f11;
             double sqrt = Math.sqrt((f12 * f12) + (f13 * f13));
             if (sqrt != 0.0d) {
-                this.f25235c = (float) (f12 / sqrt);
-                this.f25236d = (float) (f13 / sqrt);
+                this.f25236c = (float) (f12 / sqrt);
+                this.f25237d = (float) (f13 / sqrt);
             }
         }
 
         void a(float f10, float f11) {
-            float f12 = f10 - this.f25233a;
-            float f13 = f11 - this.f25234b;
+            float f12 = f10 - this.f25234a;
+            float f13 = f11 - this.f25235b;
             double sqrt = Math.sqrt((f12 * f12) + (f13 * f13));
             if (sqrt != 0.0d) {
                 f12 = (float) (f12 / sqrt);
                 f13 = (float) (f13 / sqrt);
             }
-            float f14 = this.f25235c;
-            if (f12 == (-f14) && f13 == (-this.f25236d)) {
-                this.f25237e = true;
-                this.f25235c = -f13;
-                this.f25236d = f12;
+            float f14 = this.f25236c;
+            if (f12 == (-f14) && f13 == (-this.f25237d)) {
+                this.f25238e = true;
+                this.f25236c = -f13;
+                this.f25237d = f12;
                 return;
             }
-            this.f25235c = f14 + f12;
-            this.f25236d += f13;
+            this.f25236c = f14 + f12;
+            this.f25237d += f13;
         }
 
         void b(c cVar) {
-            float f10 = cVar.f25235c;
-            float f11 = this.f25235c;
+            float f10 = cVar.f25236c;
+            float f11 = this.f25236c;
             if (f10 == (-f11)) {
-                float f12 = cVar.f25236d;
-                if (f12 == (-this.f25236d)) {
-                    this.f25237e = true;
-                    this.f25235c = -f12;
-                    this.f25236d = cVar.f25235c;
+                float f12 = cVar.f25237d;
+                if (f12 == (-this.f25237d)) {
+                    this.f25238e = true;
+                    this.f25236c = -f12;
+                    this.f25237d = cVar.f25236c;
                     return;
                 }
             }
-            this.f25235c = f11 + f10;
-            this.f25236d += cVar.f25236d;
+            this.f25236c = f11 + f10;
+            this.f25237d += cVar.f25237d;
         }
 
         public String toString() {
-            return "(" + this.f25233a + "," + this.f25234b + " " + this.f25235c + "," + this.f25236d + ")";
+            return "(" + this.f25234a + "," + this.f25235b + " " + this.f25236c + "," + this.f25237d + ")";
         }
     }
 
@@ -328,13 +328,13 @@ public class h {
     public class d implements g.x {
 
         /* renamed from: a  reason: collision with root package name */
-        Path f25239a = new Path();
+        Path f25240a = new Path();
 
         /* renamed from: b  reason: collision with root package name */
-        float f25240b;
+        float f25241b;
 
         /* renamed from: c  reason: collision with root package name */
-        float f25241c;
+        float f25242c;
 
         d(g.w wVar) {
             if (wVar == null) {
@@ -345,46 +345,46 @@ public class h {
 
         @Override // g6.g.x
         public void a(float f10, float f11, float f12, float f13) {
-            this.f25239a.quadTo(f10, f11, f12, f13);
-            this.f25240b = f12;
-            this.f25241c = f13;
+            this.f25240a.quadTo(f10, f11, f12, f13);
+            this.f25241b = f12;
+            this.f25242c = f13;
         }
 
         @Override // g6.g.x
         public void b(float f10, float f11) {
-            this.f25239a.moveTo(f10, f11);
-            this.f25240b = f10;
-            this.f25241c = f11;
+            this.f25240a.moveTo(f10, f11);
+            this.f25241b = f10;
+            this.f25242c = f11;
         }
 
         @Override // g6.g.x
         public void c(float f10, float f11, float f12, float f13, float f14, float f15) {
-            this.f25239a.cubicTo(f10, f11, f12, f13, f14, f15);
-            this.f25240b = f14;
-            this.f25241c = f15;
+            this.f25240a.cubicTo(f10, f11, f12, f13, f14, f15);
+            this.f25241b = f14;
+            this.f25242c = f15;
         }
 
         @Override // g6.g.x
         public void close() {
-            this.f25239a.close();
+            this.f25240a.close();
         }
 
         @Override // g6.g.x
         public void d(float f10, float f11, float f12, boolean z10, boolean z11, float f13, float f14) {
-            h.h(this.f25240b, this.f25241c, f10, f11, f12, z10, z11, f13, f14, this);
-            this.f25240b = f13;
-            this.f25241c = f14;
+            h.h(this.f25241b, this.f25242c, f10, f11, f12, z10, z11, f13, f14, this);
+            this.f25241b = f13;
+            this.f25242c = f14;
         }
 
         @Override // g6.g.x
         public void e(float f10, float f11) {
-            this.f25239a.lineTo(f10, f11);
-            this.f25240b = f10;
-            this.f25241c = f11;
+            this.f25240a.lineTo(f10, f11);
+            this.f25241b = f10;
+            this.f25242c = f11;
         }
 
         Path f() {
-            return this.f25239a;
+            return this.f25240a;
         }
     }
 
@@ -393,30 +393,30 @@ public class h {
     public class e extends f {
 
         /* renamed from: e  reason: collision with root package name */
-        private Path f25243e;
+        private Path f25244e;
 
         e(Path path, float f10, float f11) {
             super(f10, f11);
-            this.f25243e = path;
+            this.f25244e = path;
         }
 
         @Override // g6.h.f, g6.h.j
         public void b(String str) {
             String str2;
             if (h.this.Y0()) {
-                if (h.this.f25216d.f25253b) {
+                if (h.this.f25217d.f25254b) {
                     str2 = str;
-                    h.this.f25213a.drawTextOnPath(str2, this.f25243e, this.f25245b, this.f25246c, h.this.f25216d.f25255d);
+                    h.this.f25214a.drawTextOnPath(str2, this.f25244e, this.f25246b, this.f25247c, h.this.f25217d.f25256d);
                 } else {
                     str2 = str;
                 }
-                if (h.this.f25216d.f25254c) {
-                    h.this.f25213a.drawTextOnPath(str2, this.f25243e, this.f25245b, this.f25246c, h.this.f25216d.f25256e);
+                if (h.this.f25217d.f25255c) {
+                    h.this.f25214a.drawTextOnPath(str2, this.f25244e, this.f25246b, this.f25247c, h.this.f25217d.f25257e);
                 }
             } else {
                 str2 = str;
             }
-            this.f25245b += h.this.f25216d.f25255d.measureText(str2);
+            this.f25246b += h.this.f25217d.f25256d.measureText(str2);
         }
     }
 
@@ -425,29 +425,29 @@ public class h {
     public class f extends j {
 
         /* renamed from: b  reason: collision with root package name */
-        float f25245b;
+        float f25246b;
 
         /* renamed from: c  reason: collision with root package name */
-        float f25246c;
+        float f25247c;
 
         f(float f10, float f11) {
             super(h.this, null);
-            this.f25245b = f10;
-            this.f25246c = f11;
+            this.f25246b = f10;
+            this.f25247c = f11;
         }
 
         @Override // g6.h.j
         public void b(String str) {
             h.y("TextSequence render", new Object[0]);
             if (h.this.Y0()) {
-                if (h.this.f25216d.f25253b) {
-                    h.this.f25213a.drawText(str, this.f25245b, this.f25246c, h.this.f25216d.f25255d);
+                if (h.this.f25217d.f25254b) {
+                    h.this.f25214a.drawText(str, this.f25246b, this.f25247c, h.this.f25217d.f25256d);
                 }
-                if (h.this.f25216d.f25254c) {
-                    h.this.f25213a.drawText(str, this.f25245b, this.f25246c, h.this.f25216d.f25256e);
+                if (h.this.f25217d.f25255c) {
+                    h.this.f25214a.drawText(str, this.f25246b, this.f25247c, h.this.f25217d.f25257e);
                 }
             }
-            this.f25245b += h.this.f25216d.f25255d.measureText(str);
+            this.f25246b += h.this.f25217d.f25256d.measureText(str);
         }
     }
 
@@ -456,19 +456,19 @@ public class h {
     public class g extends j {
 
         /* renamed from: b  reason: collision with root package name */
-        float f25248b;
+        float f25249b;
 
         /* renamed from: c  reason: collision with root package name */
-        float f25249c;
+        float f25250c;
 
         /* renamed from: d  reason: collision with root package name */
-        Path f25250d;
+        Path f25251d;
 
         g(float f10, float f11, Path path) {
             super(h.this, null);
-            this.f25248b = f10;
-            this.f25249c = f11;
-            this.f25250d = path;
+            this.f25249b = f10;
+            this.f25250c = f11;
+            this.f25251d = path;
         }
 
         @Override // g6.h.j
@@ -486,12 +486,12 @@ public class h {
             if (h.this.Y0()) {
                 Path path = new Path();
                 str2 = str;
-                h.this.f25216d.f25255d.getTextPath(str2, 0, str.length(), this.f25248b, this.f25249c, path);
-                this.f25250d.addPath(path);
+                h.this.f25217d.f25256d.getTextPath(str2, 0, str.length(), this.f25249b, this.f25250c, path);
+                this.f25251d.addPath(path);
             } else {
                 str2 = str;
             }
-            this.f25248b += h.this.f25216d.f25255d.measureText(str2);
+            this.f25249b += h.this.f25217d.f25256d.measureText(str2);
         }
     }
 
@@ -500,19 +500,19 @@ public class h {
     public class i extends j {
 
         /* renamed from: b  reason: collision with root package name */
-        float f25261b;
+        float f25262b;
 
         /* renamed from: c  reason: collision with root package name */
-        float f25262c;
+        float f25263c;
 
         /* renamed from: d  reason: collision with root package name */
-        RectF f25263d;
+        RectF f25264d;
 
         i(float f10, float f11) {
             super(h.this, null);
-            this.f25263d = new RectF();
-            this.f25261b = f10;
-            this.f25262c = f11;
+            this.f25264d = new RectF();
+            this.f25262b = f10;
+            this.f25263c = f11;
         }
 
         @Override // g6.h.j
@@ -521,20 +521,20 @@ public class h {
                 return true;
             }
             g.z0 z0Var = (g.z0) y0Var;
-            g.n0 p10 = y0Var.f25155a.p(z0Var.f25209o);
+            g.n0 p10 = y0Var.f25156a.p(z0Var.f25210o);
             if (p10 == null) {
-                h.F("TextPath path reference '%s' not found", z0Var.f25209o);
+                h.F("TextPath path reference '%s' not found", z0Var.f25210o);
                 return false;
             }
             g.v vVar = (g.v) p10;
-            Path f10 = new d(vVar.f25192o).f();
-            Matrix matrix = vVar.f25144n;
+            Path f10 = new d(vVar.f25193o).f();
+            Matrix matrix = vVar.f25145n;
             if (matrix != null) {
                 f10.transform(matrix);
             }
             RectF rectF = new RectF();
             f10.computeBounds(rectF, true);
-            this.f25263d.union(rectF);
+            this.f25264d.union(rectF);
             return false;
         }
 
@@ -542,12 +542,12 @@ public class h {
         public void b(String str) {
             if (h.this.Y0()) {
                 Rect rect = new Rect();
-                h.this.f25216d.f25255d.getTextBounds(str, 0, str.length(), rect);
+                h.this.f25217d.f25256d.getTextBounds(str, 0, str.length(), rect);
                 RectF rectF = new RectF(rect);
-                rectF.offset(this.f25261b, this.f25262c);
-                this.f25263d.union(rectF);
+                rectF.offset(this.f25262b, this.f25263c);
+                this.f25264d.union(rectF);
             }
-            this.f25261b += h.this.f25216d.f25255d.measureText(str);
+            this.f25262b += h.this.f25217d.f25256d.measureText(str);
         }
     }
 
@@ -570,12 +570,12 @@ public class h {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h(Canvas canvas, float f10) {
-        this.f25213a = canvas;
-        this.f25214b = f10;
+        this.f25214a = canvas;
+        this.f25215b = f10;
     }
 
     private boolean A() {
-        Boolean bool = this.f25216d.f25252a.L;
+        Boolean bool = this.f25217d.f25253a.L;
         if (bool != null) {
             return bool.booleanValue();
         }
@@ -619,26 +619,26 @@ public class h {
     }
 
     private void B(g.k0 k0Var, Path path) {
-        g.o0 o0Var = this.f25216d.f25252a.f25056e;
+        g.o0 o0Var = this.f25217d.f25253a.f25057e;
         if (o0Var instanceof g.u) {
-            g.n0 p10 = this.f25215c.p(((g.u) o0Var).f25188d);
+            g.n0 p10 = this.f25216c.p(((g.u) o0Var).f25189d);
             if (p10 instanceof g.y) {
                 L(k0Var, path, (g.y) p10);
                 return;
             }
         }
-        this.f25213a.drawPath(path, this.f25216d.f25255d);
+        this.f25214a.drawPath(path, this.f25217d.f25256d);
     }
 
     private void B0(g.s0 s0Var) {
         y("Switch render", new Object[0]);
-        W0(this.f25216d, s0Var);
+        W0(this.f25217d, s0Var);
         if (!A()) {
             return;
         }
-        Matrix matrix = s0Var.f25150o;
+        Matrix matrix = s0Var.f25151o;
         if (matrix != null) {
-            this.f25213a.concat(matrix);
+            this.f25214a.concat(matrix);
         }
         p(s0Var);
         boolean m02 = m0();
@@ -650,13 +650,13 @@ public class h {
     }
 
     private void C(Path path) {
-        C0343h c0343h = this.f25216d;
-        if (c0343h.f25252a.W == g.e0.i.NonScalingStroke) {
-            Matrix matrix = this.f25213a.getMatrix();
+        C0343h c0343h = this.f25217d;
+        if (c0343h.f25253a.W == g.e0.i.NonScalingStroke) {
+            Matrix matrix = this.f25214a.getMatrix();
             Path path2 = new Path();
             path.transform(matrix, path2);
-            this.f25213a.setMatrix(new Matrix());
-            Shader shader = this.f25216d.f25256e.getShader();
+            this.f25214a.setMatrix(new Matrix());
+            Shader shader = this.f25217d.f25257e.getShader();
             Matrix matrix2 = new Matrix();
             if (shader != null) {
                 shader.getLocalMatrix(matrix2);
@@ -664,39 +664,39 @@ public class h {
                 matrix3.postConcat(matrix);
                 shader.setLocalMatrix(matrix3);
             }
-            this.f25213a.drawPath(path2, this.f25216d.f25256e);
-            this.f25213a.setMatrix(matrix);
+            this.f25214a.drawPath(path2, this.f25217d.f25257e);
+            this.f25214a.setMatrix(matrix);
             if (shader != null) {
                 shader.setLocalMatrix(matrix2);
                 return;
             }
             return;
         }
-        this.f25213a.drawPath(path, c0343h.f25256e);
+        this.f25214a.drawPath(path, c0343h.f25257e);
     }
 
     private void C0(g.t0 t0Var, g.b bVar) {
         y("Symbol render", new Object[0]);
-        if (bVar.f25026c != 0.0f && bVar.f25027d != 0.0f) {
-            g6.e eVar = t0Var.f25165o;
+        if (bVar.f25027c != 0.0f && bVar.f25028d != 0.0f) {
+            g6.e eVar = t0Var.f25166o;
             if (eVar == null) {
-                eVar = g6.e.f24983e;
+                eVar = g6.e.f24984e;
             }
-            W0(this.f25216d, t0Var);
-            C0343h c0343h = this.f25216d;
-            c0343h.f25257f = bVar;
-            if (!c0343h.f25252a.G.booleanValue()) {
-                g.b bVar2 = this.f25216d.f25257f;
-                O0(bVar2.f25024a, bVar2.f25025b, bVar2.f25026c, bVar2.f25027d);
+            W0(this.f25217d, t0Var);
+            C0343h c0343h = this.f25217d;
+            c0343h.f25258f = bVar;
+            if (!c0343h.f25253a.G.booleanValue()) {
+                g.b bVar2 = this.f25217d.f25258f;
+                O0(bVar2.f25025a, bVar2.f25026b, bVar2.f25027c, bVar2.f25028d);
             }
-            g.b bVar3 = t0Var.f25181p;
+            g.b bVar3 = t0Var.f25182p;
             if (bVar3 != null) {
-                this.f25213a.concat(o(this.f25216d.f25257f, bVar3, eVar));
-                this.f25216d.f25258g = t0Var.f25181p;
+                this.f25214a.concat(o(this.f25217d.f25258f, bVar3, eVar));
+                this.f25217d.f25259g = t0Var.f25182p;
             } else {
-                Canvas canvas = this.f25213a;
-                g.b bVar4 = this.f25216d.f25257f;
-                canvas.translate(bVar4.f25024a, bVar4.f25025b);
+                Canvas canvas = this.f25214a;
+                g.b bVar4 = this.f25217d.f25258f;
+                canvas.translate(bVar4.f25025a, bVar4.f25026b);
             }
             boolean m02 = m0();
             F0(t0Var, true);
@@ -716,34 +716,34 @@ public class h {
         float f11;
         float f12;
         y("Text render", new Object[0]);
-        W0(this.f25216d, w0Var);
+        W0(this.f25217d, w0Var);
         if (A()) {
-            Matrix matrix = w0Var.f25199s;
+            Matrix matrix = w0Var.f25200s;
             if (matrix != null) {
-                this.f25213a.concat(matrix);
+                this.f25214a.concat(matrix);
             }
-            List list = w0Var.f25020o;
+            List list = w0Var.f25021o;
             float f13 = 0.0f;
             if (list != null && list.size() != 0) {
-                f10 = ((g.p) w0Var.f25020o.get(0)).e(this);
+                f10 = ((g.p) w0Var.f25021o.get(0)).e(this);
             } else {
                 f10 = 0.0f;
             }
-            List list2 = w0Var.f25021p;
+            List list2 = w0Var.f25022p;
             if (list2 != null && list2.size() != 0) {
-                f11 = ((g.p) w0Var.f25021p.get(0)).f(this);
+                f11 = ((g.p) w0Var.f25022p.get(0)).f(this);
             } else {
                 f11 = 0.0f;
             }
-            List list3 = w0Var.f25022q;
+            List list3 = w0Var.f25023q;
             if (list3 != null && list3.size() != 0) {
-                f12 = ((g.p) w0Var.f25022q.get(0)).e(this);
+                f12 = ((g.p) w0Var.f25023q.get(0)).e(this);
             } else {
                 f12 = 0.0f;
             }
-            List list4 = w0Var.f25023r;
+            List list4 = w0Var.f25024r;
             if (list4 != null && list4.size() != 0) {
-                f13 = ((g.p) w0Var.f25023r.get(0)).f(this);
+                f13 = ((g.p) w0Var.f25024r.get(0)).f(this);
             }
             g.e0.f O = O();
             if (O != g.e0.f.Start) {
@@ -753,11 +753,11 @@ public class h {
                 }
                 f10 -= n10;
             }
-            if (w0Var.f25143h == null) {
+            if (w0Var.f25144h == null) {
                 i iVar = new i(f10, f11);
                 E(w0Var, iVar);
-                RectF rectF = iVar.f25263d;
-                w0Var.f25143h = new g.b(rectF.left, rectF.top, rectF.width(), iVar.f25263d.height());
+                RectF rectF = iVar.f25264d;
+                w0Var.f25144h = new g.b(rectF.left, rectF.top, rectF.width(), iVar.f25264d.height());
             }
             U0(w0Var);
             r(w0Var);
@@ -772,12 +772,12 @@ public class h {
 
     private void E(g.y0 y0Var, j jVar) {
         if (A()) {
-            Iterator it = y0Var.f25119i.iterator();
+            Iterator it = y0Var.f25120i.iterator();
             boolean z10 = true;
             while (it.hasNext()) {
                 g.n0 n0Var = (g.n0) it.next();
                 if (n0Var instanceof g.c1) {
-                    jVar.b(T0(((g.c1) n0Var).f25038c, z10, !it.hasNext()));
+                    jVar.b(T0(((g.c1) n0Var).f25039c, z10, !it.hasNext()));
                 } else {
                     l0(n0Var, jVar);
                 }
@@ -789,49 +789,49 @@ public class h {
     private void E0(g.e1 e1Var) {
         float f10;
         y("Use render", new Object[0]);
-        g.p pVar = e1Var.f25108s;
+        g.p pVar = e1Var.f25109s;
         if (pVar == null || !pVar.h()) {
-            g.p pVar2 = e1Var.f25109t;
+            g.p pVar2 = e1Var.f25110t;
             if (pVar2 == null || !pVar2.h()) {
-                W0(this.f25216d, e1Var);
+                W0(this.f25217d, e1Var);
                 if (!A()) {
                     return;
                 }
-                g.n0 p10 = e1Var.f25155a.p(e1Var.f25105p);
+                g.n0 p10 = e1Var.f25156a.p(e1Var.f25106p);
                 if (p10 == null) {
-                    F("Use reference '%s' not found", e1Var.f25105p);
+                    F("Use reference '%s' not found", e1Var.f25106p);
                     return;
                 }
-                Matrix matrix = e1Var.f25150o;
+                Matrix matrix = e1Var.f25151o;
                 if (matrix != null) {
-                    this.f25213a.concat(matrix);
+                    this.f25214a.concat(matrix);
                 }
-                g.p pVar3 = e1Var.f25106q;
+                g.p pVar3 = e1Var.f25107q;
                 float f11 = 0.0f;
                 if (pVar3 != null) {
                     f10 = pVar3.e(this);
                 } else {
                     f10 = 0.0f;
                 }
-                g.p pVar4 = e1Var.f25107r;
+                g.p pVar4 = e1Var.f25108r;
                 if (pVar4 != null) {
                     f11 = pVar4.f(this);
                 }
-                this.f25213a.translate(f10, f11);
+                this.f25214a.translate(f10, f11);
                 p(e1Var);
                 boolean m02 = m0();
                 i0(e1Var);
                 if (p10 instanceof g.f0) {
-                    g.b f02 = f0(null, null, e1Var.f25108s, e1Var.f25109t);
+                    g.b f02 = f0(null, null, e1Var.f25109s, e1Var.f25110t);
                     S0();
                     y0((g.f0) p10, f02);
                     R0();
                 } else if (p10 instanceof g.t0) {
-                    g.p pVar5 = e1Var.f25108s;
+                    g.p pVar5 = e1Var.f25109s;
                     if (pVar5 == null) {
                         pVar5 = new g.p(100.0f, g.d1.percent);
                     }
-                    g.p pVar6 = e1Var.f25109t;
+                    g.p pVar6 = e1Var.f25110t;
                     if (pVar6 == null) {
                         pVar6 = new g.p(100.0f, g.d1.percent);
                     }
@@ -869,21 +869,21 @@ public class h {
     }
 
     private void G(g.y0 y0Var, StringBuilder sb2) {
-        Iterator it = y0Var.f25119i.iterator();
+        Iterator it = y0Var.f25120i.iterator();
         boolean z10 = true;
         while (it.hasNext()) {
             g.n0 n0Var = (g.n0) it.next();
             if (n0Var instanceof g.y0) {
                 G((g.y0) n0Var, sb2);
             } else if (n0Var instanceof g.c1) {
-                sb2.append(T0(((g.c1) n0Var).f25038c, z10, !it.hasNext()));
+                sb2.append(T0(((g.c1) n0Var).f25039c, z10, !it.hasNext()));
             }
             z10 = false;
         }
     }
 
     private void H(g.j jVar, String str) {
-        g.n0 p10 = jVar.f25155a.p(str);
+        g.n0 p10 = jVar.f25156a.p(str);
         if (p10 == null) {
             Z0("Gradient reference '%s' not found", str);
         } else if (!(p10 instanceof g.j)) {
@@ -892,17 +892,17 @@ public class h {
             F("Circular reference in gradient href attribute '%s'", str);
         } else {
             g.j jVar2 = (g.j) p10;
-            if (jVar.f25135i == null) {
-                jVar.f25135i = jVar2.f25135i;
+            if (jVar.f25136i == null) {
+                jVar.f25136i = jVar2.f25136i;
             }
-            if (jVar.f25136j == null) {
-                jVar.f25136j = jVar2.f25136j;
+            if (jVar.f25137j == null) {
+                jVar.f25137j = jVar2.f25137j;
             }
-            if (jVar.f25137k == null) {
-                jVar.f25137k = jVar2.f25137k;
+            if (jVar.f25138k == null) {
+                jVar.f25138k = jVar2.f25138k;
             }
-            if (jVar.f25134h.isEmpty()) {
-                jVar.f25134h = jVar2.f25134h;
+            if (jVar.f25135h.isEmpty()) {
+                jVar.f25135h = jVar2.f25135h;
             }
             try {
                 if (jVar instanceof g.m0) {
@@ -912,7 +912,7 @@ public class h {
                 }
             } catch (ClassCastException unused) {
             }
-            String str2 = jVar2.f25138l;
+            String str2 = jVar2.f25139l;
             if (str2 != null) {
                 H(jVar, str2);
             }
@@ -948,17 +948,17 @@ public class h {
     }
 
     private void I(g.m0 m0Var, g.m0 m0Var2) {
-        if (m0Var.f25151m == null) {
-            m0Var.f25151m = m0Var2.f25151m;
+        if (m0Var.f25152m == null) {
+            m0Var.f25152m = m0Var2.f25152m;
         }
-        if (m0Var.f25152n == null) {
-            m0Var.f25152n = m0Var2.f25152n;
+        if (m0Var.f25153n == null) {
+            m0Var.f25153n = m0Var2.f25153n;
         }
-        if (m0Var.f25153o == null) {
-            m0Var.f25153o = m0Var2.f25153o;
+        if (m0Var.f25154o == null) {
+            m0Var.f25154o = m0Var2.f25154o;
         }
-        if (m0Var.f25154p == null) {
-            m0Var.f25154p = m0Var2.f25154p;
+        if (m0Var.f25155p == null) {
+            m0Var.f25155p = m0Var2.f25155p;
         }
     }
 
@@ -985,20 +985,20 @@ public class h {
     }
 
     private void J(g.q0 q0Var, g.q0 q0Var2) {
-        if (q0Var.f25170m == null) {
-            q0Var.f25170m = q0Var2.f25170m;
+        if (q0Var.f25171m == null) {
+            q0Var.f25171m = q0Var2.f25171m;
         }
-        if (q0Var.f25171n == null) {
-            q0Var.f25171n = q0Var2.f25171n;
+        if (q0Var.f25172n == null) {
+            q0Var.f25172n = q0Var2.f25172n;
         }
-        if (q0Var.f25172o == null) {
-            q0Var.f25172o = q0Var2.f25172o;
+        if (q0Var.f25173o == null) {
+            q0Var.f25173o = q0Var2.f25173o;
         }
-        if (q0Var.f25173p == null) {
-            q0Var.f25173p = q0Var2.f25173p;
+        if (q0Var.f25174p == null) {
+            q0Var.f25174p = q0Var2.f25174p;
         }
-        if (q0Var.f25174q == null) {
-            q0Var.f25174q = q0Var2.f25174q;
+        if (q0Var.f25175q == null) {
+            q0Var.f25175q = q0Var2.f25175q;
         }
     }
 
@@ -1007,49 +1007,49 @@ public class h {
         float f11;
         float f12;
         y("Mask render", new Object[0]);
-        Boolean bool = sVar.f25182o;
+        Boolean bool = sVar.f25183o;
         if (bool != null && bool.booleanValue()) {
-            g.p pVar = sVar.f25186s;
+            g.p pVar = sVar.f25187s;
             if (pVar != null) {
                 f11 = pVar.e(this);
             } else {
-                f11 = bVar.f25026c;
+                f11 = bVar.f25027c;
             }
-            g.p pVar2 = sVar.f25187t;
+            g.p pVar2 = sVar.f25188t;
             if (pVar2 != null) {
                 f12 = pVar2.f(this);
             } else {
-                f12 = bVar.f25027d;
+                f12 = bVar.f25028d;
             }
         } else {
-            g.p pVar3 = sVar.f25186s;
+            g.p pVar3 = sVar.f25187s;
             float f13 = 1.2f;
             if (pVar3 != null) {
                 f10 = pVar3.d(this, 1.0f);
             } else {
                 f10 = 1.2f;
             }
-            g.p pVar4 = sVar.f25187t;
+            g.p pVar4 = sVar.f25188t;
             if (pVar4 != null) {
                 f13 = pVar4.d(this, 1.0f);
             }
-            f11 = f10 * bVar.f25026c;
-            f12 = f13 * bVar.f25027d;
+            f11 = f10 * bVar.f25027c;
+            f12 = f13 * bVar.f25028d;
         }
         if (f11 != 0.0f && f12 != 0.0f) {
             S0();
             C0343h M = M(sVar);
-            this.f25216d = M;
-            M.f25252a.f25067x = Float.valueOf(1.0f);
+            this.f25217d = M;
+            M.f25253a.f25068x = Float.valueOf(1.0f);
             boolean m02 = m0();
-            this.f25213a.save();
-            Boolean bool2 = sVar.f25183p;
+            this.f25214a.save();
+            Boolean bool2 = sVar.f25184p;
             if (bool2 != null && !bool2.booleanValue()) {
-                this.f25213a.translate(bVar.f25024a, bVar.f25025b);
-                this.f25213a.scale(bVar.f25026c, bVar.f25027d);
+                this.f25214a.translate(bVar.f25025a, bVar.f25026b);
+                this.f25214a.scale(bVar.f25027c, bVar.f25028d);
             }
             F0(sVar, false);
-            this.f25213a.restore();
+            this.f25214a.restore();
             if (m02) {
                 k0(k0Var, bVar);
             }
@@ -1058,7 +1058,7 @@ public class h {
     }
 
     private void K(g.y yVar, String str) {
-        g.n0 p10 = yVar.f25155a.p(str);
+        g.n0 p10 = yVar.f25156a.p(str);
         if (p10 == null) {
             Z0("Pattern reference '%s' not found", str);
         } else if (!(p10 instanceof g.y)) {
@@ -1067,37 +1067,37 @@ public class h {
             F("Circular reference in pattern href attribute '%s'", str);
         } else {
             g.y yVar2 = (g.y) p10;
-            if (yVar.f25200q == null) {
-                yVar.f25200q = yVar2.f25200q;
+            if (yVar.f25201q == null) {
+                yVar.f25201q = yVar2.f25201q;
             }
-            if (yVar.f25201r == null) {
-                yVar.f25201r = yVar2.f25201r;
+            if (yVar.f25202r == null) {
+                yVar.f25202r = yVar2.f25202r;
             }
-            if (yVar.f25202s == null) {
-                yVar.f25202s = yVar2.f25202s;
+            if (yVar.f25203s == null) {
+                yVar.f25203s = yVar2.f25203s;
             }
-            if (yVar.f25203t == null) {
-                yVar.f25203t = yVar2.f25203t;
+            if (yVar.f25204t == null) {
+                yVar.f25204t = yVar2.f25204t;
             }
-            if (yVar.f25204u == null) {
-                yVar.f25204u = yVar2.f25204u;
+            if (yVar.f25205u == null) {
+                yVar.f25205u = yVar2.f25205u;
             }
-            if (yVar.f25205v == null) {
-                yVar.f25205v = yVar2.f25205v;
+            if (yVar.f25206v == null) {
+                yVar.f25206v = yVar2.f25206v;
             }
-            if (yVar.f25206w == null) {
-                yVar.f25206w = yVar2.f25206w;
+            if (yVar.f25207w == null) {
+                yVar.f25207w = yVar2.f25207w;
             }
-            if (yVar.f25119i.isEmpty()) {
-                yVar.f25119i = yVar2.f25119i;
+            if (yVar.f25120i.isEmpty()) {
+                yVar.f25120i = yVar2.f25120i;
             }
-            if (yVar.f25181p == null) {
-                yVar.f25181p = yVar2.f25181p;
+            if (yVar.f25182p == null) {
+                yVar.f25182p = yVar2.f25182p;
             }
-            if (yVar.f25165o == null) {
-                yVar.f25165o = yVar2.f25165o;
+            if (yVar.f25166o == null) {
+                yVar.f25166o = yVar2.f25166o;
             }
-            String str2 = yVar2.f25207x;
+            String str2 = yVar2.f25208x;
             if (str2 != null) {
                 K(yVar, str2);
             }
@@ -1114,10 +1114,10 @@ public class h {
                 if (g0Var.b() == null && ((a10 = g0Var.a()) == null || (!a10.isEmpty() && a10.contains(language)))) {
                     Set f10 = g0Var.f();
                     if (f10 != null) {
-                        if (f25212i == null) {
+                        if (f25213i == null) {
                             V();
                         }
-                        if (!f10.isEmpty() && f25212i.containsAll(f10)) {
+                        if (!f10.isEmpty() && f25213i.containsAll(f10)) {
                         }
                     }
                     Set l10 = g0Var.l();
@@ -1154,21 +1154,21 @@ public class h {
     private void L0(g.z0 z0Var) {
         float f10;
         y("TextPath render", new Object[0]);
-        W0(this.f25216d, z0Var);
+        W0(this.f25217d, z0Var);
         if (A() && Y0()) {
-            g.n0 p10 = z0Var.f25155a.p(z0Var.f25209o);
+            g.n0 p10 = z0Var.f25156a.p(z0Var.f25210o);
             if (p10 == null) {
-                F("TextPath reference '%s' not found", z0Var.f25209o);
+                F("TextPath reference '%s' not found", z0Var.f25210o);
                 return;
             }
             g.v vVar = (g.v) p10;
-            Path f11 = new d(vVar.f25192o).f();
-            Matrix matrix = vVar.f25144n;
+            Path f11 = new d(vVar.f25193o).f();
+            Matrix matrix = vVar.f25145n;
             if (matrix != null) {
                 f11.transform(matrix);
             }
             PathMeasure pathMeasure = new PathMeasure(f11, false);
-            g.p pVar = z0Var.f25210p;
+            g.p pVar = z0Var.f25211p;
             if (pVar != null) {
                 f10 = pVar.d(this, pathMeasure.getLength());
             } else {
@@ -1198,7 +1198,7 @@ public class h {
     }
 
     private boolean M0() {
-        if (this.f25216d.f25252a.f25067x.floatValue() >= 1.0f && this.f25216d.f25252a.R == null) {
+        if (this.f25217d.f25253a.f25068x.floatValue() >= 1.0f && this.f25217d.f25253a.R == null) {
             return false;
         }
         return true;
@@ -1210,7 +1210,7 @@ public class h {
             if (n0Var instanceof g.l0) {
                 arrayList.add(0, (g.l0) n0Var);
             }
-            g.j0 j0Var = n0Var.f25156b;
+            g.j0 j0Var = n0Var.f25157b;
             if (j0Var == null) {
                 break;
             }
@@ -1219,27 +1219,27 @@ public class h {
         for (g.l0 l0Var : arrayList) {
             W0(c0343h, l0Var);
         }
-        C0343h c0343h2 = this.f25216d;
-        c0343h.f25258g = c0343h2.f25258g;
-        c0343h.f25257f = c0343h2.f25257f;
+        C0343h c0343h2 = this.f25217d;
+        c0343h.f25259g = c0343h2.f25259g;
+        c0343h.f25258f = c0343h2.f25258f;
         return c0343h;
     }
 
     private void N0() {
-        this.f25216d = new C0343h();
-        this.f25217e = new Stack();
-        V0(this.f25216d, g.e0.a());
-        C0343h c0343h = this.f25216d;
-        c0343h.f25257f = null;
-        c0343h.f25259h = false;
-        this.f25217e.push(new C0343h(c0343h));
-        this.f25219g = new Stack();
-        this.f25218f = new Stack();
+        this.f25217d = new C0343h();
+        this.f25218e = new Stack();
+        V0(this.f25217d, g.e0.a());
+        C0343h c0343h = this.f25217d;
+        c0343h.f25258f = null;
+        c0343h.f25260h = false;
+        this.f25218e.push(new C0343h(c0343h));
+        this.f25220g = new Stack();
+        this.f25219f = new Stack();
     }
 
     private g.e0.f O() {
         g.e0.f fVar;
-        g.e0 e0Var = this.f25216d.f25252a;
+        g.e0 e0Var = this.f25217d.f25253a;
         if (e0Var.E != g.e0.h.LTR && (fVar = e0Var.F) != g.e0.f.Middle) {
             g.e0.f fVar2 = g.e0.f.Start;
             if (fVar == fVar2) {
@@ -1253,18 +1253,18 @@ public class h {
     private void O0(float f10, float f11, float f12, float f13) {
         float f14 = f12 + f10;
         float f15 = f13 + f11;
-        g.c cVar = this.f25216d.f25252a.H;
+        g.c cVar = this.f25217d.f25253a.H;
         if (cVar != null) {
-            f10 += cVar.f25037d.e(this);
-            f11 += this.f25216d.f25252a.H.f25034a.f(this);
-            f14 -= this.f25216d.f25252a.H.f25035b.e(this);
-            f15 -= this.f25216d.f25252a.H.f25036c.f(this);
+            f10 += cVar.f25038d.e(this);
+            f11 += this.f25217d.f25253a.H.f25035a.f(this);
+            f14 -= this.f25217d.f25253a.H.f25036b.e(this);
+            f15 -= this.f25217d.f25253a.H.f25037c.f(this);
         }
-        this.f25213a.clipRect(f10, f11, f14, f15);
+        this.f25214a.clipRect(f10, f11, f14, f15);
     }
 
     private Path.FillType P() {
-        g.e0.a aVar = this.f25216d.f25252a.Q;
+        g.e0.a aVar = this.f25217d.f25253a.Q;
         if (aVar != null && aVar == g.e0.a.EvenOdd) {
             return Path.FillType.EVEN_ODD;
         }
@@ -1274,83 +1274,83 @@ public class h {
     private void P0(C0343h c0343h, boolean z10, g.o0 o0Var) {
         Float f10;
         int i10;
-        g.e0 e0Var = c0343h.f25252a;
+        g.e0 e0Var = c0343h.f25253a;
         if (z10) {
-            f10 = e0Var.f25058o;
+            f10 = e0Var.f25059o;
         } else {
-            f10 = e0Var.f25060q;
+            f10 = e0Var.f25061q;
         }
         float floatValue = f10.floatValue();
         if (o0Var instanceof g.f) {
-            i10 = ((g.f) o0Var).f25112d;
+            i10 = ((g.f) o0Var).f25113d;
         } else if (o0Var instanceof g.C0342g) {
-            i10 = c0343h.f25252a.f25068y.f25112d;
+            i10 = c0343h.f25253a.f25069y.f25113d;
         } else {
             return;
         }
         int x10 = x(i10, floatValue);
         if (z10) {
-            c0343h.f25255d.setColor(x10);
+            c0343h.f25256d.setColor(x10);
         } else {
-            c0343h.f25256e.setColor(x10);
+            c0343h.f25257e.setColor(x10);
         }
     }
 
     private void Q0(boolean z10, g.c0 c0Var) {
         boolean z11 = false;
         if (z10) {
-            if (W(c0Var.f25147e, 2147483648L)) {
-                C0343h c0343h = this.f25216d;
-                g.e0 e0Var = c0343h.f25252a;
-                g.o0 o0Var = c0Var.f25147e.S;
-                e0Var.f25056e = o0Var;
+            if (W(c0Var.f25148e, 2147483648L)) {
+                C0343h c0343h = this.f25217d;
+                g.e0 e0Var = c0343h.f25253a;
+                g.o0 o0Var = c0Var.f25148e.S;
+                e0Var.f25057e = o0Var;
                 if (o0Var != null) {
                     z11 = true;
                 }
-                c0343h.f25253b = z11;
+                c0343h.f25254b = z11;
             }
-            if (W(c0Var.f25147e, 4294967296L)) {
-                this.f25216d.f25252a.f25058o = c0Var.f25147e.T;
+            if (W(c0Var.f25148e, 4294967296L)) {
+                this.f25217d.f25253a.f25059o = c0Var.f25148e.T;
             }
-            if (W(c0Var.f25147e, 6442450944L)) {
-                C0343h c0343h2 = this.f25216d;
-                P0(c0343h2, z10, c0343h2.f25252a.f25056e);
+            if (W(c0Var.f25148e, 6442450944L)) {
+                C0343h c0343h2 = this.f25217d;
+                P0(c0343h2, z10, c0343h2.f25253a.f25057e);
                 return;
             }
             return;
         }
-        if (W(c0Var.f25147e, 2147483648L)) {
-            C0343h c0343h3 = this.f25216d;
-            g.e0 e0Var2 = c0343h3.f25252a;
-            g.o0 o0Var2 = c0Var.f25147e.S;
-            e0Var2.f25059p = o0Var2;
+        if (W(c0Var.f25148e, 2147483648L)) {
+            C0343h c0343h3 = this.f25217d;
+            g.e0 e0Var2 = c0343h3.f25253a;
+            g.o0 o0Var2 = c0Var.f25148e.S;
+            e0Var2.f25060p = o0Var2;
             if (o0Var2 != null) {
                 z11 = true;
             }
-            c0343h3.f25254c = z11;
+            c0343h3.f25255c = z11;
         }
-        if (W(c0Var.f25147e, 4294967296L)) {
-            this.f25216d.f25252a.f25060q = c0Var.f25147e.T;
+        if (W(c0Var.f25148e, 4294967296L)) {
+            this.f25217d.f25253a.f25061q = c0Var.f25148e.T;
         }
-        if (W(c0Var.f25147e, 6442450944L)) {
-            C0343h c0343h4 = this.f25216d;
-            P0(c0343h4, z10, c0343h4.f25252a.f25059p);
+        if (W(c0Var.f25148e, 6442450944L)) {
+            C0343h c0343h4 = this.f25217d;
+            P0(c0343h4, z10, c0343h4.f25253a.f25060p);
         }
     }
 
     private void R0() {
-        this.f25213a.restore();
-        this.f25216d = (C0343h) this.f25217e.pop();
+        this.f25214a.restore();
+        this.f25217d = (C0343h) this.f25218e.pop();
     }
 
     private void S0() {
-        this.f25213a.save();
-        this.f25217e.push(this.f25216d);
-        this.f25216d = new C0343h(this.f25216d);
+        this.f25214a.save();
+        this.f25218e.push(this.f25217d);
+        this.f25217d = new C0343h(this.f25217d);
     }
 
     private String T0(String str, boolean z10, boolean z11) {
-        if (this.f25216d.f25259h) {
+        if (this.f25217d.f25260h) {
             return str.replaceAll("[\\n\\t]", " ");
         }
         String replaceAll = str.replaceAll("\\n", "").replaceAll("\\t", " ");
@@ -1364,7 +1364,7 @@ public class h {
     }
 
     private Path.FillType U() {
-        g.e0.a aVar = this.f25216d.f25252a.f25057i;
+        g.e0.a aVar = this.f25217d.f25253a.f25058i;
         if (aVar != null && aVar == g.e0.a.EvenOdd) {
             return Path.FillType.EVEN_ODD;
         }
@@ -1372,20 +1372,20 @@ public class h {
     }
 
     private void U0(g.k0 k0Var) {
-        if (k0Var.f25156b != null && k0Var.f25143h != null) {
+        if (k0Var.f25157b != null && k0Var.f25144h != null) {
             Matrix matrix = new Matrix();
-            if (((Matrix) this.f25219g.peek()).invert(matrix)) {
-                g.b bVar = k0Var.f25143h;
-                float f10 = bVar.f25024a;
-                float f11 = bVar.f25025b;
+            if (((Matrix) this.f25220g.peek()).invert(matrix)) {
+                g.b bVar = k0Var.f25144h;
+                float f10 = bVar.f25025a;
+                float f11 = bVar.f25026b;
                 float b10 = bVar.b();
-                g.b bVar2 = k0Var.f25143h;
-                float f12 = bVar2.f25025b;
+                g.b bVar2 = k0Var.f25144h;
+                float f12 = bVar2.f25026b;
                 float b11 = bVar2.b();
-                float c10 = k0Var.f25143h.c();
-                g.b bVar3 = k0Var.f25143h;
-                float[] fArr = {f10, f11, b10, f12, b11, c10, bVar3.f25024a, bVar3.c()};
-                matrix.preConcat(this.f25213a.getMatrix());
+                float c10 = k0Var.f25144h.c();
+                g.b bVar3 = k0Var.f25144h;
+                float[] fArr = {f10, f11, b10, f12, b11, c10, bVar3.f25025a, bVar3.c()};
+                matrix.preConcat(this.f25214a.getMatrix());
                 matrix.mapPoints(fArr);
                 float f13 = fArr[0];
                 float f14 = fArr[1];
@@ -1406,10 +1406,10 @@ public class h {
                         rectF.bottom = f16;
                     }
                 }
-                g.k0 k0Var2 = (g.k0) this.f25218f.peek();
-                g.b bVar4 = k0Var2.f25143h;
+                g.k0 k0Var2 = (g.k0) this.f25219f.peek();
+                g.b bVar4 = k0Var2.f25144h;
                 if (bVar4 == null) {
-                    k0Var2.f25143h = g.b.a(rectF.left, rectF.top, rectF.right, rectF.bottom);
+                    k0Var2.f25144h = g.b.a(rectF.left, rectF.top, rectF.right, rectF.bottom);
                 } else {
                     bVar4.e(g.b.a(rectF.left, rectF.top, rectF.right, rectF.bottom));
                 }
@@ -1420,26 +1420,26 @@ public class h {
     private static synchronized void V() {
         synchronized (h.class) {
             HashSet hashSet = new HashSet();
-            f25212i = hashSet;
+            f25213i = hashSet;
             hashSet.add("Structure");
-            f25212i.add("BasicStructure");
-            f25212i.add("ConditionalProcessing");
-            f25212i.add("Image");
-            f25212i.add("Style");
-            f25212i.add("ViewportAttribute");
-            f25212i.add("Shape");
-            f25212i.add("BasicText");
-            f25212i.add("PaintAttribute");
-            f25212i.add("BasicPaintAttribute");
-            f25212i.add("OpacityAttribute");
-            f25212i.add("BasicGraphicsAttribute");
-            f25212i.add("Marker");
-            f25212i.add("Gradient");
-            f25212i.add("Pattern");
-            f25212i.add("Clip");
-            f25212i.add("BasicClip");
-            f25212i.add("Mask");
-            f25212i.add("View");
+            f25213i.add("BasicStructure");
+            f25213i.add("ConditionalProcessing");
+            f25213i.add("Image");
+            f25213i.add("Style");
+            f25213i.add("ViewportAttribute");
+            f25213i.add("Shape");
+            f25213i.add("BasicText");
+            f25213i.add("PaintAttribute");
+            f25213i.add("BasicPaintAttribute");
+            f25213i.add("OpacityAttribute");
+            f25213i.add("BasicGraphicsAttribute");
+            f25213i.add("Marker");
+            f25213i.add("Gradient");
+            f25213i.add("Pattern");
+            f25213i.add("Clip");
+            f25213i.add("BasicClip");
+            f25213i.add("Mask");
+            f25213i.add("View");
         }
     }
 
@@ -1451,101 +1451,101 @@ public class h {
         boolean z13;
         boolean z14;
         if (W(e0Var, 4096L)) {
-            c0343h.f25252a.f25068y = e0Var.f25068y;
+            c0343h.f25253a.f25069y = e0Var.f25069y;
         }
         if (W(e0Var, 2048L)) {
-            c0343h.f25252a.f25067x = e0Var.f25067x;
+            c0343h.f25253a.f25068x = e0Var.f25068x;
         }
         boolean z15 = false;
         if (W(e0Var, 1L)) {
-            c0343h.f25252a.f25056e = e0Var.f25056e;
-            g.o0 o0Var = e0Var.f25056e;
-            if (o0Var != null && o0Var != g.f.f25111i) {
+            c0343h.f25253a.f25057e = e0Var.f25057e;
+            g.o0 o0Var = e0Var.f25057e;
+            if (o0Var != null && o0Var != g.f.f25112i) {
                 z14 = true;
             } else {
                 z14 = false;
             }
-            c0343h.f25253b = z14;
+            c0343h.f25254b = z14;
         }
         if (W(e0Var, 4L)) {
-            c0343h.f25252a.f25058o = e0Var.f25058o;
+            c0343h.f25253a.f25059o = e0Var.f25059o;
         }
         if (W(e0Var, 6149L)) {
-            P0(c0343h, true, c0343h.f25252a.f25056e);
+            P0(c0343h, true, c0343h.f25253a.f25057e);
         }
         if (W(e0Var, 2L)) {
-            c0343h.f25252a.f25057i = e0Var.f25057i;
+            c0343h.f25253a.f25058i = e0Var.f25058i;
         }
         if (W(e0Var, 8L)) {
-            c0343h.f25252a.f25059p = e0Var.f25059p;
-            g.o0 o0Var2 = e0Var.f25059p;
-            if (o0Var2 != null && o0Var2 != g.f.f25111i) {
+            c0343h.f25253a.f25060p = e0Var.f25060p;
+            g.o0 o0Var2 = e0Var.f25060p;
+            if (o0Var2 != null && o0Var2 != g.f.f25112i) {
                 z13 = true;
             } else {
                 z13 = false;
             }
-            c0343h.f25254c = z13;
+            c0343h.f25255c = z13;
         }
         if (W(e0Var, 16L)) {
-            c0343h.f25252a.f25060q = e0Var.f25060q;
+            c0343h.f25253a.f25061q = e0Var.f25061q;
         }
         if (W(e0Var, 6168L)) {
-            P0(c0343h, false, c0343h.f25252a.f25059p);
+            P0(c0343h, false, c0343h.f25253a.f25060p);
         }
         if (W(e0Var, 34359738368L)) {
-            c0343h.f25252a.W = e0Var.W;
+            c0343h.f25253a.W = e0Var.W;
         }
         if (W(e0Var, 32L)) {
-            g.e0 e0Var2 = c0343h.f25252a;
-            g.p pVar = e0Var.f25061r;
-            e0Var2.f25061r = pVar;
-            c0343h.f25256e.setStrokeWidth(pVar.c(this));
+            g.e0 e0Var2 = c0343h.f25253a;
+            g.p pVar = e0Var.f25062r;
+            e0Var2.f25062r = pVar;
+            c0343h.f25257e.setStrokeWidth(pVar.c(this));
         }
         if (W(e0Var, 64L)) {
-            c0343h.f25252a.f25062s = e0Var.f25062s;
-            int i11 = a.f25222b[e0Var.f25062s.ordinal()];
+            c0343h.f25253a.f25063s = e0Var.f25063s;
+            int i11 = a.f25223b[e0Var.f25063s.ordinal()];
             if (i11 != 1) {
                 if (i11 != 2) {
                     if (i11 == 3) {
-                        c0343h.f25256e.setStrokeCap(Paint.Cap.SQUARE);
+                        c0343h.f25257e.setStrokeCap(Paint.Cap.SQUARE);
                     }
                 } else {
-                    c0343h.f25256e.setStrokeCap(Paint.Cap.ROUND);
+                    c0343h.f25257e.setStrokeCap(Paint.Cap.ROUND);
                 }
             } else {
-                c0343h.f25256e.setStrokeCap(Paint.Cap.BUTT);
+                c0343h.f25257e.setStrokeCap(Paint.Cap.BUTT);
             }
         }
         if (W(e0Var, 128L)) {
-            c0343h.f25252a.f25063t = e0Var.f25063t;
-            int i12 = a.f25223c[e0Var.f25063t.ordinal()];
+            c0343h.f25253a.f25064t = e0Var.f25064t;
+            int i12 = a.f25224c[e0Var.f25064t.ordinal()];
             if (i12 != 1) {
                 if (i12 != 2) {
                     if (i12 == 3) {
-                        c0343h.f25256e.setStrokeJoin(Paint.Join.BEVEL);
+                        c0343h.f25257e.setStrokeJoin(Paint.Join.BEVEL);
                     }
                 } else {
-                    c0343h.f25256e.setStrokeJoin(Paint.Join.ROUND);
+                    c0343h.f25257e.setStrokeJoin(Paint.Join.ROUND);
                 }
             } else {
-                c0343h.f25256e.setStrokeJoin(Paint.Join.MITER);
+                c0343h.f25257e.setStrokeJoin(Paint.Join.MITER);
             }
         }
         if (W(e0Var, 256L)) {
-            c0343h.f25252a.f25064u = e0Var.f25064u;
-            c0343h.f25256e.setStrokeMiter(e0Var.f25064u.floatValue());
+            c0343h.f25253a.f25065u = e0Var.f25065u;
+            c0343h.f25257e.setStrokeMiter(e0Var.f25065u.floatValue());
         }
         if (W(e0Var, 512L)) {
-            c0343h.f25252a.f25065v = e0Var.f25065v;
+            c0343h.f25253a.f25066v = e0Var.f25066v;
         }
         if (W(e0Var, 1024L)) {
-            c0343h.f25252a.f25066w = e0Var.f25066w;
+            c0343h.f25253a.f25067w = e0Var.f25067w;
         }
         Typeface typeface = null;
         if (W(e0Var, 1536L)) {
-            g.p[] pVarArr = c0343h.f25252a.f25065v;
+            g.p[] pVarArr = c0343h.f25253a.f25066v;
             if (pVarArr == null) {
-                c0343h.f25256e.setPathEffect(null);
+                c0343h.f25257e.setPathEffect(null);
             } else {
                 int length = pVarArr.length;
                 if (length % 2 == 0) {
@@ -1556,49 +1556,49 @@ public class h {
                 float[] fArr = new float[i10];
                 float f10 = 0.0f;
                 for (int i13 = 0; i13 < i10; i13++) {
-                    float c10 = c0343h.f25252a.f25065v[i13 % length].c(this);
+                    float c10 = c0343h.f25253a.f25066v[i13 % length].c(this);
                     fArr[i13] = c10;
                     f10 += c10;
                 }
                 if (f10 == 0.0f) {
-                    c0343h.f25256e.setPathEffect(null);
+                    c0343h.f25257e.setPathEffect(null);
                 } else {
-                    float c11 = c0343h.f25252a.f25066w.c(this);
+                    float c11 = c0343h.f25253a.f25067w.c(this);
                     if (c11 < 0.0f) {
                         c11 = (c11 % f10) + f10;
                     }
-                    c0343h.f25256e.setPathEffect(new DashPathEffect(fArr, c11));
+                    c0343h.f25257e.setPathEffect(new DashPathEffect(fArr, c11));
                 }
             }
         }
         if (W(e0Var, 16384L)) {
             float Q = Q();
-            c0343h.f25252a.A = e0Var.A;
-            c0343h.f25255d.setTextSize(e0Var.A.d(this, Q));
-            c0343h.f25256e.setTextSize(e0Var.A.d(this, Q));
+            c0343h.f25253a.A = e0Var.A;
+            c0343h.f25256d.setTextSize(e0Var.A.d(this, Q));
+            c0343h.f25257e.setTextSize(e0Var.A.d(this, Q));
         }
         if (W(e0Var, 8192L)) {
-            c0343h.f25252a.f25069z = e0Var.f25069z;
+            c0343h.f25253a.f25070z = e0Var.f25070z;
         }
         if (W(e0Var, 32768L)) {
-            if (e0Var.B.intValue() == -1 && c0343h.f25252a.B.intValue() > 100) {
-                g.e0 e0Var3 = c0343h.f25252a;
+            if (e0Var.B.intValue() == -1 && c0343h.f25253a.B.intValue() > 100) {
+                g.e0 e0Var3 = c0343h.f25253a;
                 e0Var3.B = Integer.valueOf(e0Var3.B.intValue() - 100);
-            } else if (e0Var.B.intValue() == 1 && c0343h.f25252a.B.intValue() < 900) {
-                g.e0 e0Var4 = c0343h.f25252a;
+            } else if (e0Var.B.intValue() == 1 && c0343h.f25253a.B.intValue() < 900) {
+                g.e0 e0Var4 = c0343h.f25253a;
                 e0Var4.B = Integer.valueOf(e0Var4.B.intValue() + 100);
             } else {
-                c0343h.f25252a.B = e0Var.B;
+                c0343h.f25253a.B = e0Var.B;
             }
         }
         if (W(e0Var, 65536L)) {
-            c0343h.f25252a.C = e0Var.C;
+            c0343h.f25253a.C = e0Var.C;
         }
         if (W(e0Var, 106496L)) {
-            if (c0343h.f25252a.f25069z != null && this.f25215c != null) {
+            if (c0343h.f25253a.f25070z != null && this.f25216c != null) {
                 g6.g.k();
-                for (String str : c0343h.f25252a.f25069z) {
-                    g.e0 e0Var5 = c0343h.f25252a;
+                for (String str : c0343h.f25253a.f25070z) {
+                    g.e0 e0Var5 = c0343h.f25253a;
                     typeface = t(str, e0Var5.B, e0Var5.C);
                     if (typeface != null) {
                         break;
@@ -1606,15 +1606,15 @@ public class h {
                 }
             }
             if (typeface == null) {
-                g.e0 e0Var6 = c0343h.f25252a;
+                g.e0 e0Var6 = c0343h.f25253a;
                 typeface = t("serif", e0Var6.B, e0Var6.C);
             }
-            c0343h.f25255d.setTypeface(typeface);
-            c0343h.f25256e.setTypeface(typeface);
+            c0343h.f25256d.setTypeface(typeface);
+            c0343h.f25257e.setTypeface(typeface);
         }
         if (W(e0Var, 131072L)) {
-            c0343h.f25252a.D = e0Var.D;
-            Paint paint = c0343h.f25255d;
+            c0343h.f25253a.D = e0Var.D;
+            Paint paint = c0343h.f25256d;
             g.e0.EnumC0341g enumC0341g = e0Var.D;
             g.e0.EnumC0341g enumC0341g2 = g.e0.EnumC0341g.LineThrough;
             if (enumC0341g == enumC0341g2) {
@@ -1623,7 +1623,7 @@ public class h {
                 z10 = false;
             }
             paint.setStrikeThruText(z10);
-            Paint paint2 = c0343h.f25255d;
+            Paint paint2 = c0343h.f25256d;
             g.e0.EnumC0341g enumC0341g3 = e0Var.D;
             g.e0.EnumC0341g enumC0341g4 = g.e0.EnumC0341g.Underline;
             if (enumC0341g3 == enumC0341g4) {
@@ -1632,74 +1632,74 @@ public class h {
                 z11 = false;
             }
             paint2.setUnderlineText(z11);
-            Paint paint3 = c0343h.f25256e;
+            Paint paint3 = c0343h.f25257e;
             if (e0Var.D == enumC0341g2) {
                 z12 = true;
             } else {
                 z12 = false;
             }
             paint3.setStrikeThruText(z12);
-            Paint paint4 = c0343h.f25256e;
+            Paint paint4 = c0343h.f25257e;
             if (e0Var.D == enumC0341g4) {
                 z15 = true;
             }
             paint4.setUnderlineText(z15);
         }
         if (W(e0Var, 68719476736L)) {
-            c0343h.f25252a.E = e0Var.E;
+            c0343h.f25253a.E = e0Var.E;
         }
         if (W(e0Var, 262144L)) {
-            c0343h.f25252a.F = e0Var.F;
+            c0343h.f25253a.F = e0Var.F;
         }
         if (W(e0Var, 524288L)) {
-            c0343h.f25252a.G = e0Var.G;
+            c0343h.f25253a.G = e0Var.G;
         }
         if (W(e0Var, 2097152L)) {
-            c0343h.f25252a.I = e0Var.I;
+            c0343h.f25253a.I = e0Var.I;
         }
         if (W(e0Var, 4194304L)) {
-            c0343h.f25252a.J = e0Var.J;
+            c0343h.f25253a.J = e0Var.J;
         }
         if (W(e0Var, 8388608L)) {
-            c0343h.f25252a.K = e0Var.K;
+            c0343h.f25253a.K = e0Var.K;
         }
         if (W(e0Var, 16777216L)) {
-            c0343h.f25252a.L = e0Var.L;
+            c0343h.f25253a.L = e0Var.L;
         }
         if (W(e0Var, 33554432L)) {
-            c0343h.f25252a.M = e0Var.M;
+            c0343h.f25253a.M = e0Var.M;
         }
         if (W(e0Var, 1048576L)) {
-            c0343h.f25252a.H = e0Var.H;
+            c0343h.f25253a.H = e0Var.H;
         }
         if (W(e0Var, 268435456L)) {
-            c0343h.f25252a.P = e0Var.P;
+            c0343h.f25253a.P = e0Var.P;
         }
         if (W(e0Var, 536870912L)) {
-            c0343h.f25252a.Q = e0Var.Q;
+            c0343h.f25253a.Q = e0Var.Q;
         }
         if (W(e0Var, 1073741824L)) {
-            c0343h.f25252a.R = e0Var.R;
+            c0343h.f25253a.R = e0Var.R;
         }
         if (W(e0Var, 67108864L)) {
-            c0343h.f25252a.N = e0Var.N;
+            c0343h.f25253a.N = e0Var.N;
         }
         if (W(e0Var, 134217728L)) {
-            c0343h.f25252a.O = e0Var.O;
+            c0343h.f25253a.O = e0Var.O;
         }
         if (W(e0Var, 8589934592L)) {
-            c0343h.f25252a.U = e0Var.U;
+            c0343h.f25253a.U = e0Var.U;
         }
         if (W(e0Var, 17179869184L)) {
-            c0343h.f25252a.V = e0Var.V;
+            c0343h.f25253a.V = e0Var.V;
         }
         if (W(e0Var, 137438953472L)) {
-            c0343h.f25252a.X = e0Var.X;
+            c0343h.f25253a.X = e0Var.X;
         }
     }
 
     private boolean W(g.e0 e0Var, long j10) {
-        if ((e0Var.f25055d & j10) != 0) {
+        if ((e0Var.f25056d & j10) != 0) {
             return true;
         }
         return false;
@@ -1707,24 +1707,24 @@ public class h {
 
     private void W0(C0343h c0343h, g.l0 l0Var) {
         boolean z10;
-        if (l0Var.f25156b == null) {
+        if (l0Var.f25157b == null) {
             z10 = true;
         } else {
             z10 = false;
         }
-        c0343h.f25252a.b(z10);
-        g.e0 e0Var = l0Var.f25147e;
+        c0343h.f25253a.b(z10);
+        g.e0 e0Var = l0Var.f25148e;
         if (e0Var != null) {
             V0(c0343h, e0Var);
         }
-        if (this.f25215c.n()) {
-            for (b.p pVar : this.f25215c.d()) {
-                if (g6.b.l(this.f25220h, pVar.f24962a, l0Var)) {
-                    V0(c0343h, pVar.f24963b);
+        if (this.f25216c.n()) {
+            for (b.p pVar : this.f25216c.d()) {
+                if (g6.b.l(this.f25221h, pVar.f24963a, l0Var)) {
+                    V0(c0343h, pVar.f24964b);
                 }
             }
         }
-        g.e0 e0Var2 = l0Var.f25148f;
+        g.e0 e0Var2 = l0Var.f25149f;
         if (e0Var2 != null) {
             V0(c0343h, e0Var2);
         }
@@ -1744,44 +1744,44 @@ public class h {
         float f18;
         float f19;
         float f20;
-        String str = m0Var.f25138l;
+        String str = m0Var.f25139l;
         if (str != null) {
             H(m0Var, str);
         }
-        Boolean bool = m0Var.f25135i;
+        Boolean bool = m0Var.f25136i;
         int i10 = 0;
         if (bool != null && bool.booleanValue()) {
             z11 = true;
         } else {
             z11 = false;
         }
-        C0343h c0343h = this.f25216d;
+        C0343h c0343h = this.f25217d;
         if (z10) {
-            paint = c0343h.f25255d;
+            paint = c0343h.f25256d;
         } else {
-            paint = c0343h.f25256e;
+            paint = c0343h.f25257e;
         }
         if (z11) {
             g.b S = S();
-            g.p pVar = m0Var.f25151m;
+            g.p pVar = m0Var.f25152m;
             if (pVar != null) {
                 f18 = pVar.e(this);
             } else {
                 f18 = 0.0f;
             }
-            g.p pVar2 = m0Var.f25152n;
+            g.p pVar2 = m0Var.f25153n;
             if (pVar2 != null) {
                 f11 = pVar2.f(this);
             } else {
                 f11 = 0.0f;
             }
-            g.p pVar3 = m0Var.f25153o;
+            g.p pVar3 = m0Var.f25154o;
             if (pVar3 != null) {
                 f19 = pVar3.e(this);
             } else {
-                f19 = S.f25026c;
+                f19 = S.f25027c;
             }
-            g.p pVar4 = m0Var.f25154p;
+            g.p pVar4 = m0Var.f25155p;
             if (pVar4 != null) {
                 f20 = pVar4.f(this);
             } else {
@@ -1791,25 +1791,25 @@ public class h {
             f14 = f18;
             f15 = f20;
         } else {
-            g.p pVar5 = m0Var.f25151m;
+            g.p pVar5 = m0Var.f25152m;
             if (pVar5 != null) {
                 f10 = pVar5.d(this, 1.0f);
             } else {
                 f10 = 0.0f;
             }
-            g.p pVar6 = m0Var.f25152n;
+            g.p pVar6 = m0Var.f25153n;
             if (pVar6 != null) {
                 f11 = pVar6.d(this, 1.0f);
             } else {
                 f11 = 0.0f;
             }
-            g.p pVar7 = m0Var.f25153o;
+            g.p pVar7 = m0Var.f25154o;
             if (pVar7 != null) {
                 f12 = pVar7.d(this, 1.0f);
             } else {
                 f12 = 1.0f;
             }
-            g.p pVar8 = m0Var.f25154p;
+            g.p pVar8 = m0Var.f25155p;
             if (pVar8 != null) {
                 f13 = pVar8.d(this, 1.0f);
             } else {
@@ -1821,33 +1821,33 @@ public class h {
         }
         float f21 = f11;
         S0();
-        this.f25216d = M(m0Var);
+        this.f25217d = M(m0Var);
         Matrix matrix = new Matrix();
         if (!z11) {
-            matrix.preTranslate(bVar.f25024a, bVar.f25025b);
-            matrix.preScale(bVar.f25026c, bVar.f25027d);
+            matrix.preTranslate(bVar.f25025a, bVar.f25026b);
+            matrix.preScale(bVar.f25027c, bVar.f25028d);
         }
-        Matrix matrix2 = m0Var.f25136j;
+        Matrix matrix2 = m0Var.f25137j;
         if (matrix2 != null) {
             matrix.preConcat(matrix2);
         }
-        int size = m0Var.f25134h.size();
+        int size = m0Var.f25135h.size();
         if (size == 0) {
             R0();
             if (z10) {
-                this.f25216d.f25253b = false;
+                this.f25217d.f25254b = false;
                 return;
             } else {
-                this.f25216d.f25254c = false;
+                this.f25217d.f25255c = false;
                 return;
             }
         }
         int[] iArr = new int[size];
         float[] fArr = new float[size];
         float f22 = -1.0f;
-        for (g.n0 n0Var : m0Var.f25134h) {
+        for (g.n0 n0Var : m0Var.f25135h) {
             g.d0 d0Var = (g.d0) n0Var;
-            Float f23 = d0Var.f25043h;
+            Float f23 = d0Var.f25044h;
             if (f23 != null) {
                 f17 = f23.floatValue();
             } else {
@@ -1860,13 +1860,13 @@ public class h {
                 f22 = f17;
             }
             S0();
-            W0(this.f25216d, d0Var);
-            g.e0 e0Var = this.f25216d.f25252a;
+            W0(this.f25217d, d0Var);
+            g.e0 e0Var = this.f25217d.f25253a;
             g.f fVar = (g.f) e0Var.N;
             if (fVar == null) {
-                fVar = g.f.f25110e;
+                fVar = g.f.f25111e;
             }
-            iArr[i10] = x(fVar.f25112d, e0Var.O.floatValue());
+            iArr[i10] = x(fVar.f25113d, e0Var.O.floatValue());
             i10++;
             R0();
         }
@@ -1876,7 +1876,7 @@ public class h {
             return;
         }
         Shader.TileMode tileMode = Shader.TileMode.CLAMP;
-        g.k kVar = m0Var.f25137k;
+        g.k kVar = m0Var.f25138k;
         if (kVar != null) {
             if (kVar == g.k.reflect) {
                 tileMode = Shader.TileMode.MIRROR;
@@ -1889,17 +1889,17 @@ public class h {
         LinearGradient linearGradient = new LinearGradient(f14, f21, f16, f15, iArr, fArr, tileMode2);
         linearGradient.setLocalMatrix(matrix);
         paint.setShader(linearGradient);
-        paint.setAlpha(w(this.f25216d.f25252a.f25058o.floatValue()));
+        paint.setAlpha(w(this.f25217d.f25253a.f25059o.floatValue()));
     }
 
     private void X0() {
         int i10;
-        g.e0 e0Var = this.f25216d.f25252a;
+        g.e0 e0Var = this.f25217d.f25253a;
         g.o0 o0Var = e0Var.U;
         if (o0Var instanceof g.f) {
-            i10 = ((g.f) o0Var).f25112d;
+            i10 = ((g.f) o0Var).f25113d;
         } else if (o0Var instanceof g.C0342g) {
-            i10 = e0Var.f25068y.f25112d;
+            i10 = e0Var.f25069y.f25113d;
         } else {
             return;
         }
@@ -1907,31 +1907,31 @@ public class h {
         if (f10 != null) {
             i10 = x(i10, f10.floatValue());
         }
-        this.f25213a.drawColor(i10);
+        this.f25214a.drawColor(i10);
     }
 
     private Path Y(g.d dVar) {
         float f10;
-        g.p pVar = dVar.f25040o;
+        g.p pVar = dVar.f25041o;
         float f11 = 0.0f;
         if (pVar != null) {
             f10 = pVar.e(this);
         } else {
             f10 = 0.0f;
         }
-        g.p pVar2 = dVar.f25041p;
+        g.p pVar2 = dVar.f25042p;
         if (pVar2 != null) {
             f11 = pVar2.f(this);
         }
         float f12 = f11;
-        float c10 = dVar.f25042q.c(this);
+        float c10 = dVar.f25043q.c(this);
         float f13 = f10 - c10;
         float f14 = f12 - c10;
         float f15 = f10 + c10;
         float f16 = f12 + c10;
-        if (dVar.f25143h == null) {
+        if (dVar.f25144h == null) {
             float f17 = 2.0f * c10;
-            dVar.f25143h = new g.b(f13, f14, f17, f17);
+            dVar.f25144h = new g.b(f13, f14, f17, f17);
         }
         float f18 = c10 * 0.5522848f;
         Path path = new Path();
@@ -1950,7 +1950,7 @@ public class h {
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean Y0() {
-        Boolean bool = this.f25216d.f25252a.M;
+        Boolean bool = this.f25217d.f25253a.M;
         if (bool != null) {
             return bool.booleanValue();
         }
@@ -1959,26 +1959,26 @@ public class h {
 
     private Path Z(g.i iVar) {
         float f10;
-        g.p pVar = iVar.f25125o;
+        g.p pVar = iVar.f25126o;
         float f11 = 0.0f;
         if (pVar != null) {
             f10 = pVar.e(this);
         } else {
             f10 = 0.0f;
         }
-        g.p pVar2 = iVar.f25126p;
+        g.p pVar2 = iVar.f25127p;
         if (pVar2 != null) {
             f11 = pVar2.f(this);
         }
         float f12 = f11;
-        float e10 = iVar.f25127q.e(this);
-        float f13 = iVar.f25128r.f(this);
+        float e10 = iVar.f25128q.e(this);
+        float f13 = iVar.f25129r.f(this);
         float f14 = f10 - e10;
         float f15 = f12 - f13;
         float f16 = f10 + e10;
         float f17 = f12 + f13;
-        if (iVar.f25143h == null) {
-            iVar.f25143h = new g.b(f14, f15, e10 * 2.0f, 2.0f * f13);
+        if (iVar.f25144h == null) {
+            iVar.f25144h = new g.b(f14, f15, e10 * 2.0f, 2.0f * f13);
         }
         float f18 = e10 * 0.5522848f;
         float f19 = f13 * 0.5522848f;
@@ -2005,31 +2005,31 @@ public class h {
         float e10;
         float f10;
         float e11;
-        g.p pVar = qVar.f25166o;
+        g.p pVar = qVar.f25167o;
         float f11 = 0.0f;
         if (pVar == null) {
             e10 = 0.0f;
         } else {
             e10 = pVar.e(this);
         }
-        g.p pVar2 = qVar.f25167p;
+        g.p pVar2 = qVar.f25168p;
         if (pVar2 == null) {
             f10 = 0.0f;
         } else {
             f10 = pVar2.f(this);
         }
-        g.p pVar3 = qVar.f25168q;
+        g.p pVar3 = qVar.f25169q;
         if (pVar3 == null) {
             e11 = 0.0f;
         } else {
             e11 = pVar3.e(this);
         }
-        g.p pVar4 = qVar.f25169r;
+        g.p pVar4 = qVar.f25170r;
         if (pVar4 != null) {
             f11 = pVar4.f(this);
         }
-        if (qVar.f25143h == null) {
-            qVar.f25143h = new g.b(Math.min(e10, e11), Math.min(f10, f11), Math.abs(e11 - e10), Math.abs(f11 - f10));
+        if (qVar.f25144h == null) {
+            qVar.f25144h = new g.b(Math.min(e10, e11), Math.min(f10, f11), Math.abs(e11 - e10), Math.abs(f11 - f10));
         }
         Path path = new Path();
         path.moveTo(e10, f10);
@@ -2039,11 +2039,11 @@ public class h {
 
     private Path b0(g.z zVar) {
         Path path = new Path();
-        float[] fArr = zVar.f25208o;
+        float[] fArr = zVar.f25209o;
         path.moveTo(fArr[0], fArr[1]);
         int i10 = 2;
         while (true) {
-            float[] fArr2 = zVar.f25208o;
+            float[] fArr2 = zVar.f25209o;
             if (i10 >= fArr2.length) {
                 break;
             }
@@ -2053,8 +2053,8 @@ public class h {
         if (zVar instanceof g.a0) {
             path.close();
         }
-        if (zVar.f25143h == null) {
-            zVar.f25143h = m(path);
+        if (zVar.f25144h == null) {
+            zVar.f25144h = m(path);
         }
         return path;
     }
@@ -2080,41 +2080,41 @@ public class h {
         float f10;
         float f11;
         float f12;
-        List list = w0Var.f25020o;
+        List list = w0Var.f25021o;
         float f13 = 0.0f;
         if (list != null && list.size() != 0) {
-            f10 = ((g.p) w0Var.f25020o.get(0)).e(this);
+            f10 = ((g.p) w0Var.f25021o.get(0)).e(this);
         } else {
             f10 = 0.0f;
         }
-        List list2 = w0Var.f25021p;
+        List list2 = w0Var.f25022p;
         if (list2 != null && list2.size() != 0) {
-            f11 = ((g.p) w0Var.f25021p.get(0)).f(this);
+            f11 = ((g.p) w0Var.f25022p.get(0)).f(this);
         } else {
             f11 = 0.0f;
         }
-        List list3 = w0Var.f25022q;
+        List list3 = w0Var.f25023q;
         if (list3 != null && list3.size() != 0) {
-            f12 = ((g.p) w0Var.f25022q.get(0)).e(this);
+            f12 = ((g.p) w0Var.f25023q.get(0)).e(this);
         } else {
             f12 = 0.0f;
         }
-        List list4 = w0Var.f25023r;
+        List list4 = w0Var.f25024r;
         if (list4 != null && list4.size() != 0) {
-            f13 = ((g.p) w0Var.f25023r.get(0)).f(this);
+            f13 = ((g.p) w0Var.f25024r.get(0)).f(this);
         }
-        if (this.f25216d.f25252a.F != g.e0.f.Start) {
+        if (this.f25217d.f25253a.F != g.e0.f.Start) {
             float n10 = n(w0Var);
-            if (this.f25216d.f25252a.F == g.e0.f.Middle) {
+            if (this.f25217d.f25253a.F == g.e0.f.Middle) {
                 n10 /= 2.0f;
             }
             f10 -= n10;
         }
-        if (w0Var.f25143h == null) {
+        if (w0Var.f25144h == null) {
             i iVar = new i(f10, f11);
             E(w0Var, iVar);
-            RectF rectF = iVar.f25263d;
-            w0Var.f25143h = new g.b(rectF.left, rectF.top, rectF.width(), iVar.f25263d.height());
+            RectF rectF = iVar.f25264d;
+            w0Var.f25144h = new g.b(rectF.left, rectF.top, rectF.width(), iVar.f25264d.height());
         }
         Path path = new Path();
         E(w0Var, new g(f10 + f12, f11 + f13, path));
@@ -2133,38 +2133,38 @@ public class h {
         float e10;
         float f16;
         float c10;
-        String str = q0Var.f25138l;
+        String str = q0Var.f25139l;
         if (str != null) {
             H(q0Var, str);
         }
-        Boolean bool = q0Var.f25135i;
+        Boolean bool = q0Var.f25136i;
         int i10 = 0;
         if (bool != null && bool.booleanValue()) {
             z11 = true;
         } else {
             z11 = false;
         }
-        C0343h c0343h = this.f25216d;
+        C0343h c0343h = this.f25217d;
         if (z10) {
-            paint = c0343h.f25255d;
+            paint = c0343h.f25256d;
         } else {
-            paint = c0343h.f25256e;
+            paint = c0343h.f25257e;
         }
         if (z11) {
             g.p pVar = new g.p(50.0f, g.d1.percent);
-            g.p pVar2 = q0Var.f25170m;
+            g.p pVar2 = q0Var.f25171m;
             if (pVar2 != null) {
                 e10 = pVar2.e(this);
             } else {
                 e10 = pVar.e(this);
             }
-            g.p pVar3 = q0Var.f25171n;
+            g.p pVar3 = q0Var.f25172n;
             if (pVar3 != null) {
                 f16 = pVar3.f(this);
             } else {
                 f16 = pVar.f(this);
             }
-            g.p pVar4 = q0Var.f25172o;
+            g.p pVar4 = q0Var.f25173o;
             if (pVar4 != null) {
                 c10 = pVar4.c(this);
             } else {
@@ -2174,20 +2174,20 @@ public class h {
             f12 = e10;
             f14 = f16;
         } else {
-            g.p pVar5 = q0Var.f25170m;
+            g.p pVar5 = q0Var.f25171m;
             float f17 = 0.5f;
             if (pVar5 != null) {
                 f10 = pVar5.d(this, 1.0f);
             } else {
                 f10 = 0.5f;
             }
-            g.p pVar6 = q0Var.f25171n;
+            g.p pVar6 = q0Var.f25172n;
             if (pVar6 != null) {
                 f11 = pVar6.d(this, 1.0f);
             } else {
                 f11 = 0.5f;
             }
-            g.p pVar7 = q0Var.f25172o;
+            g.p pVar7 = q0Var.f25173o;
             if (pVar7 != null) {
                 f17 = pVar7.d(this, 1.0f);
             }
@@ -2196,33 +2196,33 @@ public class h {
             f14 = f11;
         }
         S0();
-        this.f25216d = M(q0Var);
+        this.f25217d = M(q0Var);
         Matrix matrix = new Matrix();
         if (!z11) {
-            matrix.preTranslate(bVar.f25024a, bVar.f25025b);
-            matrix.preScale(bVar.f25026c, bVar.f25027d);
+            matrix.preTranslate(bVar.f25025a, bVar.f25026b);
+            matrix.preScale(bVar.f25027c, bVar.f25028d);
         }
-        Matrix matrix2 = q0Var.f25136j;
+        Matrix matrix2 = q0Var.f25137j;
         if (matrix2 != null) {
             matrix.preConcat(matrix2);
         }
-        int size = q0Var.f25134h.size();
+        int size = q0Var.f25135h.size();
         if (size == 0) {
             R0();
             if (z10) {
-                this.f25216d.f25253b = false;
+                this.f25217d.f25254b = false;
                 return;
             } else {
-                this.f25216d.f25254c = false;
+                this.f25217d.f25255c = false;
                 return;
             }
         }
         int[] iArr = new int[size];
         float[] fArr = new float[size];
         float f18 = -1.0f;
-        for (g.n0 n0Var : q0Var.f25134h) {
+        for (g.n0 n0Var : q0Var.f25135h) {
             g.d0 d0Var = (g.d0) n0Var;
-            Float f19 = d0Var.f25043h;
+            Float f19 = d0Var.f25044h;
             if (f19 != null) {
                 f15 = f19.floatValue();
             } else {
@@ -2235,19 +2235,19 @@ public class h {
                 f18 = f15;
             }
             S0();
-            W0(this.f25216d, d0Var);
-            g.e0 e0Var = this.f25216d.f25252a;
+            W0(this.f25217d, d0Var);
+            g.e0 e0Var = this.f25217d.f25253a;
             g.f fVar = (g.f) e0Var.N;
             if (fVar == null) {
-                fVar = g.f.f25110e;
+                fVar = g.f.f25111e;
             }
-            iArr[i10] = x(fVar.f25112d, e0Var.O.floatValue());
+            iArr[i10] = x(fVar.f25113d, e0Var.O.floatValue());
             i10++;
             R0();
         }
         if (f13 != 0.0f && size != 1) {
             Shader.TileMode tileMode = Shader.TileMode.CLAMP;
-            g.k kVar = q0Var.f25137k;
+            g.k kVar = q0Var.f25138k;
             if (kVar != null) {
                 if (kVar == g.k.reflect) {
                     tileMode = Shader.TileMode.MIRROR;
@@ -2260,7 +2260,7 @@ public class h {
             RadialGradient radialGradient = new RadialGradient(f12, f14, f13, iArr, fArr, tileMode2);
             radialGradient.setLocalMatrix(matrix);
             paint.setShader(radialGradient);
-            paint.setAlpha(w(this.f25216d.f25252a.f25058o.floatValue()));
+            paint.setAlpha(w(this.f25217d.f25253a.f25059o.floatValue()));
             return;
         }
         R0();
@@ -2284,12 +2284,12 @@ public class h {
         if (pVar3 != null) {
             f11 = pVar3.e(this);
         } else {
-            f11 = S.f25026c;
+            f11 = S.f25027c;
         }
         if (pVar4 != null) {
             f12 = pVar4.f(this);
         } else {
-            f12 = S.f25027d;
+            f12 = S.f25028d;
         }
         return new g.b(f10, f13, f11, f12);
     }
@@ -2297,9 +2297,9 @@ public class h {
     private Path g0(g.k0 k0Var, boolean z10) {
         Path d02;
         Path j10;
-        this.f25217e.push(this.f25216d);
-        C0343h c0343h = new C0343h(this.f25216d);
-        this.f25216d = c0343h;
+        this.f25218e.push(this.f25217d);
+        C0343h c0343h = new C0343h(this.f25217d);
+        this.f25217d = c0343h;
         W0(c0343h, k0Var);
         if (A() && Y0()) {
             if (k0Var instanceof g.e1) {
@@ -2307,23 +2307,23 @@ public class h {
                     F("<use> elements inside a <clipPath> cannot reference another <use>", new Object[0]);
                 }
                 g.e1 e1Var = (g.e1) k0Var;
-                g.n0 p10 = k0Var.f25155a.p(e1Var.f25105p);
+                g.n0 p10 = k0Var.f25156a.p(e1Var.f25106p);
                 if (p10 == null) {
-                    F("Use reference '%s' not found", e1Var.f25105p);
-                    this.f25216d = (C0343h) this.f25217e.pop();
+                    F("Use reference '%s' not found", e1Var.f25106p);
+                    this.f25217d = (C0343h) this.f25218e.pop();
                     return null;
                 } else if (!(p10 instanceof g.k0)) {
-                    this.f25216d = (C0343h) this.f25217e.pop();
+                    this.f25217d = (C0343h) this.f25218e.pop();
                     return null;
                 } else {
                     d02 = g0((g.k0) p10, false);
                     if (d02 == null) {
                         return null;
                     }
-                    if (e1Var.f25143h == null) {
-                        e1Var.f25143h = m(d02);
+                    if (e1Var.f25144h == null) {
+                        e1Var.f25144h = m(d02);
                     }
-                    Matrix matrix = e1Var.f25150o;
+                    Matrix matrix = e1Var.f25151o;
                     if (matrix != null) {
                         d02.transform(matrix);
                     }
@@ -2331,9 +2331,9 @@ public class h {
             } else if (k0Var instanceof g.l) {
                 g.l lVar = (g.l) k0Var;
                 if (k0Var instanceof g.v) {
-                    d02 = new d(((g.v) k0Var).f25192o).f();
-                    if (k0Var.f25143h == null) {
-                        k0Var.f25143h = m(d02);
+                    d02 = new d(((g.v) k0Var).f25193o).f();
+                    if (k0Var.f25144h == null) {
+                        k0Var.f25144h = m(d02);
                     }
                 } else {
                     d02 = k0Var instanceof g.b0 ? c0((g.b0) k0Var) : k0Var instanceof g.d ? Y((g.d) k0Var) : k0Var instanceof g.i ? Z((g.i) k0Var) : k0Var instanceof g.z ? b0((g.z) k0Var) : null;
@@ -2341,10 +2341,10 @@ public class h {
                 if (d02 == null) {
                     return null;
                 }
-                if (lVar.f25143h == null) {
-                    lVar.f25143h = m(d02);
+                if (lVar.f25144h == null) {
+                    lVar.f25144h = m(d02);
                 }
-                Matrix matrix2 = lVar.f25144n;
+                Matrix matrix2 = lVar.f25145n;
                 if (matrix2 != null) {
                     d02.transform(matrix2);
                 }
@@ -2355,7 +2355,7 @@ public class h {
                 if (d02 == null) {
                     return null;
                 }
-                Matrix matrix3 = w0Var.f25199s;
+                Matrix matrix3 = w0Var.f25200s;
                 if (matrix3 != null) {
                     d02.transform(matrix3);
                 }
@@ -2364,13 +2364,13 @@ public class h {
                 F("Invalid %s element found in clipPath definition", k0Var.n());
                 return null;
             }
-            if (this.f25216d.f25252a.P != null && (j10 = j(k0Var, k0Var.f25143h)) != null) {
+            if (this.f25217d.f25253a.P != null && (j10 = j(k0Var, k0Var.f25144h)) != null) {
                 d02.op(j10, Path.Op.INTERSECT);
             }
-            this.f25216d = (C0343h) this.f25217e.pop();
+            this.f25217d = (C0343h) this.f25218e.pop();
             return d02;
         }
-        this.f25216d = (C0343h) this.f25217e.pop();
+        this.f25217d = (C0343h) this.f25218e.pop();
         return null;
     }
 
@@ -2462,8 +2462,8 @@ public class h {
     }
 
     private void h0() {
-        this.f25218f.pop();
-        this.f25219g.pop();
+        this.f25219f.pop();
+        this.f25220g.pop();
     }
 
     private static float[] i(double d10, double d11) {
@@ -2498,22 +2498,22 @@ public class h {
     }
 
     private void i0(g.j0 j0Var) {
-        this.f25218f.push(j0Var);
-        this.f25219g.push(this.f25213a.getMatrix());
+        this.f25219f.push(j0Var);
+        this.f25220g.push(this.f25214a.getMatrix());
     }
 
     private Path j(g.k0 k0Var, g.b bVar) {
         boolean z10;
         Path g02;
-        g.n0 p10 = k0Var.f25155a.p(this.f25216d.f25252a.P);
+        g.n0 p10 = k0Var.f25156a.p(this.f25217d.f25253a.P);
         if (p10 == null) {
-            F("ClipPath reference '%s' not found", this.f25216d.f25252a.P);
+            F("ClipPath reference '%s' not found", this.f25217d.f25253a.P);
             return null;
         }
         g.e eVar = (g.e) p10;
-        this.f25217e.push(this.f25216d);
-        this.f25216d = M(eVar);
-        Boolean bool = eVar.f25054p;
+        this.f25218e.push(this.f25217d);
+        this.f25217d = M(eVar);
+        Boolean bool = eVar.f25055p;
         if (bool != null && !bool.booleanValue()) {
             z10 = false;
         } else {
@@ -2521,61 +2521,61 @@ public class h {
         }
         Matrix matrix = new Matrix();
         if (!z10) {
-            matrix.preTranslate(bVar.f25024a, bVar.f25025b);
-            matrix.preScale(bVar.f25026c, bVar.f25027d);
+            matrix.preTranslate(bVar.f25025a, bVar.f25026b);
+            matrix.preScale(bVar.f25027c, bVar.f25028d);
         }
-        Matrix matrix2 = eVar.f25150o;
+        Matrix matrix2 = eVar.f25151o;
         if (matrix2 != null) {
             matrix.preConcat(matrix2);
         }
         Path path = new Path();
-        for (g.n0 n0Var : eVar.f25119i) {
+        for (g.n0 n0Var : eVar.f25120i) {
             if ((n0Var instanceof g.k0) && (g02 = g0((g.k0) n0Var, true)) != null) {
                 path.op(g02, Path.Op.UNION);
             }
         }
-        if (this.f25216d.f25252a.P != null) {
-            if (eVar.f25143h == null) {
-                eVar.f25143h = m(path);
+        if (this.f25217d.f25253a.P != null) {
+            if (eVar.f25144h == null) {
+                eVar.f25144h = m(path);
             }
-            Path j10 = j(eVar, eVar.f25143h);
+            Path j10 = j(eVar, eVar.f25144h);
             if (j10 != null) {
                 path.op(j10, Path.Op.INTERSECT);
             }
         }
         path.transform(matrix);
-        this.f25216d = (C0343h) this.f25217e.pop();
+        this.f25217d = (C0343h) this.f25218e.pop();
         return path;
     }
 
     private void j0(g.k0 k0Var) {
-        k0(k0Var, k0Var.f25143h);
+        k0(k0Var, k0Var.f25144h);
     }
 
     private List k(g.q qVar) {
         float f10;
         float f11;
         float f12;
-        g.p pVar = qVar.f25166o;
+        g.p pVar = qVar.f25167o;
         float f13 = 0.0f;
         if (pVar != null) {
             f10 = pVar.e(this);
         } else {
             f10 = 0.0f;
         }
-        g.p pVar2 = qVar.f25167p;
+        g.p pVar2 = qVar.f25168p;
         if (pVar2 != null) {
             f11 = pVar2.f(this);
         } else {
             f11 = 0.0f;
         }
-        g.p pVar3 = qVar.f25168q;
+        g.p pVar3 = qVar.f25169q;
         if (pVar3 != null) {
             f12 = pVar3.e(this);
         } else {
             f12 = 0.0f;
         }
-        g.p pVar4 = qVar.f25169r;
+        g.p pVar4 = qVar.f25170r;
         if (pVar4 != null) {
             f13 = pVar4.f(this);
         }
@@ -2589,58 +2589,58 @@ public class h {
     }
 
     private void k0(g.k0 k0Var, g.b bVar) {
-        if (this.f25216d.f25252a.R != null) {
+        if (this.f25217d.f25253a.R != null) {
             Paint paint = new Paint();
             PorterDuff.Mode mode = PorterDuff.Mode.DST_IN;
             paint.setXfermode(new PorterDuffXfermode(mode));
-            this.f25213a.saveLayer(null, paint, 31);
+            this.f25214a.saveLayer(null, paint, 31);
             Paint paint2 = new Paint();
             paint2.setColorFilter(new ColorMatrixColorFilter(new ColorMatrix(new float[]{0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.2127f, 0.7151f, 0.0722f, 0.0f, 0.0f})));
-            this.f25213a.saveLayer(null, paint2, 31);
-            g.s sVar = (g.s) this.f25215c.p(this.f25216d.f25252a.R);
+            this.f25214a.saveLayer(null, paint2, 31);
+            g.s sVar = (g.s) this.f25216c.p(this.f25217d.f25253a.R);
             J0(sVar, k0Var, bVar);
-            this.f25213a.restore();
+            this.f25214a.restore();
             Paint paint3 = new Paint();
             paint3.setXfermode(new PorterDuffXfermode(mode));
-            this.f25213a.saveLayer(null, paint3, 31);
+            this.f25214a.saveLayer(null, paint3, 31);
             J0(sVar, k0Var, bVar);
-            this.f25213a.restore();
-            this.f25213a.restore();
+            this.f25214a.restore();
+            this.f25214a.restore();
         }
         R0();
     }
 
     private List l(g.z zVar) {
-        int length = zVar.f25208o.length;
+        int length = zVar.f25209o.length;
         int i10 = 2;
         if (length < 2) {
             return null;
         }
         ArrayList arrayList = new ArrayList();
-        float[] fArr = zVar.f25208o;
+        float[] fArr = zVar.f25209o;
         c cVar = new c(fArr[0], fArr[1], 0.0f, 0.0f);
         float f10 = 0.0f;
         float f11 = 0.0f;
         while (i10 < length) {
-            float[] fArr2 = zVar.f25208o;
+            float[] fArr2 = zVar.f25209o;
             float f12 = fArr2[i10];
             float f13 = fArr2[i10 + 1];
             cVar.a(f12, f13);
             arrayList.add(cVar);
             i10 += 2;
-            cVar = new c(f12, f13, f12 - cVar.f25233a, f13 - cVar.f25234b);
+            cVar = new c(f12, f13, f12 - cVar.f25234a, f13 - cVar.f25235b);
             f10 = f12;
             f11 = f13;
         }
         if (zVar instanceof g.a0) {
-            float[] fArr3 = zVar.f25208o;
+            float[] fArr3 = zVar.f25209o;
             float f14 = fArr3[0];
             if (f10 != f14) {
                 float f15 = fArr3[1];
                 if (f11 != f15) {
                     cVar.a(f14, f15);
                     arrayList.add(cVar);
-                    c cVar2 = new c(f14, f15, f14 - cVar.f25233a, f15 - cVar.f25234b);
+                    c cVar2 = new c(f14, f15, f14 - cVar.f25234a, f15 - cVar.f25235b);
                     cVar2.b((c) arrayList.get(0));
                     arrayList.add(cVar2);
                     arrayList.set(0, cVar2);
@@ -2668,9 +2668,9 @@ public class h {
                 y("TSpan render", new Object[0]);
                 S0();
                 g.v0 v0Var = (g.v0) n0Var;
-                W0(this.f25216d, v0Var);
+                W0(this.f25217d, v0Var);
                 if (A()) {
-                    List list = v0Var.f25020o;
+                    List list = v0Var.f25021o;
                     if (list != null && list.size() > 0) {
                         z10 = true;
                     } else {
@@ -2680,25 +2680,25 @@ public class h {
                     float f13 = 0.0f;
                     if (z11) {
                         if (!z10) {
-                            e10 = ((f) jVar).f25245b;
+                            e10 = ((f) jVar).f25246b;
                         } else {
-                            e10 = ((g.p) v0Var.f25020o.get(0)).e(this);
+                            e10 = ((g.p) v0Var.f25021o.get(0)).e(this);
                         }
-                        List list2 = v0Var.f25021p;
+                        List list2 = v0Var.f25022p;
                         if (list2 != null && list2.size() != 0) {
-                            f11 = ((g.p) v0Var.f25021p.get(0)).f(this);
+                            f11 = ((g.p) v0Var.f25022p.get(0)).f(this);
                         } else {
-                            f11 = ((f) jVar).f25246c;
+                            f11 = ((f) jVar).f25247c;
                         }
-                        List list3 = v0Var.f25022q;
+                        List list3 = v0Var.f25023q;
                         if (list3 != null && list3.size() != 0) {
-                            f12 = ((g.p) v0Var.f25022q.get(0)).e(this);
+                            f12 = ((g.p) v0Var.f25023q.get(0)).e(this);
                         } else {
                             f12 = 0.0f;
                         }
-                        List list4 = v0Var.f25023r;
+                        List list4 = v0Var.f25024r;
                         if (list4 != null && list4.size() != 0) {
-                            f13 = ((g.p) v0Var.f25023r.get(0)).f(this);
+                            f13 = ((g.p) v0Var.f25024r.get(0)).f(this);
                         }
                         f10 = f13;
                         f13 = e10;
@@ -2717,8 +2717,8 @@ public class h {
                     r((g.k0) v0Var.d());
                     if (z11) {
                         f fVar = (f) jVar;
-                        fVar.f25245b = f13 + f12;
-                        fVar.f25246c = f11 + f10;
+                        fVar.f25246b = f13 + f12;
+                        fVar.f25247c = f11 + f10;
                     }
                     boolean m02 = m0();
                     E(v0Var, jVar);
@@ -2730,10 +2730,10 @@ public class h {
             } else if (n0Var instanceof g.u0) {
                 S0();
                 g.u0 u0Var = (g.u0) n0Var;
-                W0(this.f25216d, u0Var);
+                W0(this.f25217d, u0Var);
                 if (A()) {
                     r((g.k0) u0Var.d());
-                    g.n0 p10 = n0Var.f25155a.p(u0Var.f25190o);
+                    g.n0 p10 = n0Var.f25156a.p(u0Var.f25191o);
                     if (p10 != null && (p10 instanceof g.y0)) {
                         StringBuilder sb2 = new StringBuilder();
                         G((g.y0) p10, sb2);
@@ -2741,7 +2741,7 @@ public class h {
                             jVar.b(sb2.toString());
                         }
                     } else {
-                        F("Tref reference '%s' not found", u0Var.f25190o);
+                        F("Tref reference '%s' not found", u0Var.f25191o);
                     }
                 }
                 R0();
@@ -2760,14 +2760,14 @@ public class h {
         if (!M0()) {
             return false;
         }
-        this.f25213a.saveLayerAlpha(null, w(this.f25216d.f25252a.f25067x.floatValue()), 31);
-        this.f25217e.push(this.f25216d);
-        C0343h c0343h = new C0343h(this.f25216d);
-        this.f25216d = c0343h;
-        String str = c0343h.f25252a.R;
-        if (str != null && ((p10 = this.f25215c.p(str)) == null || !(p10 instanceof g.s))) {
-            F("Mask reference '%s' not found", this.f25216d.f25252a.R);
-            this.f25216d.f25252a.R = null;
+        this.f25214a.saveLayerAlpha(null, w(this.f25217d.f25253a.f25068x.floatValue()), 31);
+        this.f25218e.push(this.f25217d);
+        C0343h c0343h = new C0343h(this.f25217d);
+        this.f25217d = c0343h;
+        String str = c0343h.f25253a.R;
+        if (str != null && ((p10 = this.f25216c.p(str)) == null || !(p10 instanceof g.s))) {
+            F("Mask reference '%s' not found", this.f25217d.f25253a.R);
+            this.f25217d.f25253a.R = null;
         }
         return true;
     }
@@ -2775,20 +2775,20 @@ public class h {
     private float n(g.y0 y0Var) {
         k kVar = new k(this, null);
         E(y0Var, kVar);
-        return kVar.f25266b;
+        return kVar.f25267b;
     }
 
     private c n0(c cVar, c cVar2, c cVar3) {
-        float D = D(cVar2.f25235c, cVar2.f25236d, cVar2.f25233a - cVar.f25233a, cVar2.f25234b - cVar.f25234b);
+        float D = D(cVar2.f25236c, cVar2.f25237d, cVar2.f25234a - cVar.f25234a, cVar2.f25235b - cVar.f25235b);
         if (D == 0.0f) {
-            D = D(cVar2.f25235c, cVar2.f25236d, cVar3.f25233a - cVar2.f25233a, cVar3.f25234b - cVar2.f25234b);
+            D = D(cVar2.f25236c, cVar2.f25237d, cVar3.f25234a - cVar2.f25234a, cVar3.f25235b - cVar2.f25235b);
         }
         int i10 = (D > 0.0f ? 1 : (D == 0.0f ? 0 : -1));
-        if (i10 > 0 || (i10 == 0 && (cVar2.f25235c > 0.0f || cVar2.f25236d >= 0.0f))) {
+        if (i10 > 0 || (i10 == 0 && (cVar2.f25236c > 0.0f || cVar2.f25237d >= 0.0f))) {
             return cVar2;
         }
-        cVar2.f25235c = -cVar2.f25235c;
-        cVar2.f25236d = -cVar2.f25236d;
+        cVar2.f25236c = -cVar2.f25236c;
+        cVar2.f25237d = -cVar2.f25237d;
         return cVar2;
     }
 
@@ -2810,21 +2810,21 @@ public class h {
             if (r1 != 0) goto Lf
             goto L9d
         Lf:
-            float r1 = r10.f25026c
-            float r2 = r11.f25026c
+            float r1 = r10.f25027c
+            float r2 = r11.f25027c
             float r1 = r1 / r2
-            float r2 = r10.f25027d
-            float r3 = r11.f25027d
+            float r2 = r10.f25028d
+            float r3 = r11.f25028d
             float r2 = r2 / r3
-            float r3 = r11.f25024a
+            float r3 = r11.f25025a
             float r3 = -r3
-            float r4 = r11.f25025b
+            float r4 = r11.f25026b
             float r4 = -r4
-            g6.e r5 = g6.e.f24982d
+            g6.e r5 = g6.e.f24983d
             boolean r5 = r12.equals(r5)
             if (r5 == 0) goto L35
-            float r11 = r10.f25024a
-            float r10 = r10.f25025b
+            float r11 = r10.f25025a
+            float r10 = r10.f25026b
             r0.preTranslate(r11, r10)
             r0.preScale(r1, r2)
             r0.preTranslate(r3, r4)
@@ -2838,11 +2838,11 @@ public class h {
         L42:
             float r1 = java.lang.Math.min(r1, r2)
         L46:
-            float r2 = r10.f25026c
+            float r2 = r10.f25027c
             float r2 = r2 / r1
-            float r5 = r10.f25027d
+            float r5 = r10.f25028d
             float r5 = r5 / r1
-            int[] r6 = g6.h.a.f25221a
+            int[] r6 = g6.h.a.f25222a
             g6.e$a r7 = r12.a()
             int r7 = r7.ordinal()
             r7 = r6[r7]
@@ -2859,13 +2859,13 @@ public class h {
         L5d:
             goto L68
         L5e:
-            float r7 = r11.f25026c
+            float r7 = r11.f25027c
             float r7 = r7 - r2
         L61:
             float r3 = r3 - r7
             goto L68
         L63:
-            float r7 = r11.f25026c
+            float r7 = r11.f25027c
             float r7 = r7 - r2
             float r7 = r7 / r8
             goto L61
@@ -2887,19 +2887,19 @@ public class h {
             if (r12 == r2) goto L86
             goto L90
         L86:
-            float r11 = r11.f25027d
+            float r11 = r11.f25028d
             float r11 = r11 - r5
         L89:
             float r4 = r4 - r11
             goto L90
         L8b:
-            float r11 = r11.f25027d
+            float r11 = r11.f25028d
             float r11 = r11 - r5
             float r11 = r11 / r8
             goto L89
         L90:
-            float r11 = r10.f25024a
-            float r10 = r10.f25025b
+            float r11 = r10.f25025a
+            float r10 = r10.f25026b
             r0.preTranslate(r11, r10)
             r0.preScale(r1, r1)
             r0.preTranslate(r3, r4)
@@ -2911,23 +2911,23 @@ public class h {
 
     private void o0(g.d dVar) {
         y("Circle render", new Object[0]);
-        g.p pVar = dVar.f25042q;
+        g.p pVar = dVar.f25043q;
         if (pVar != null && !pVar.h()) {
-            W0(this.f25216d, dVar);
+            W0(this.f25217d, dVar);
             if (A() && Y0()) {
-                Matrix matrix = dVar.f25144n;
+                Matrix matrix = dVar.f25145n;
                 if (matrix != null) {
-                    this.f25213a.concat(matrix);
+                    this.f25214a.concat(matrix);
                 }
                 Path Y = Y(dVar);
                 U0(dVar);
                 r(dVar);
                 p(dVar);
                 boolean m02 = m0();
-                if (this.f25216d.f25253b) {
+                if (this.f25217d.f25254b) {
                     B(dVar, Y);
                 }
-                if (this.f25216d.f25254c) {
+                if (this.f25217d.f25255c) {
                     C(Y);
                 }
                 if (m02) {
@@ -2938,28 +2938,28 @@ public class h {
     }
 
     private void p(g.k0 k0Var) {
-        q(k0Var, k0Var.f25143h);
+        q(k0Var, k0Var.f25144h);
     }
 
     private void p0(g.i iVar) {
         y("Ellipse render", new Object[0]);
-        g.p pVar = iVar.f25127q;
-        if (pVar != null && iVar.f25128r != null && !pVar.h() && !iVar.f25128r.h()) {
-            W0(this.f25216d, iVar);
+        g.p pVar = iVar.f25128q;
+        if (pVar != null && iVar.f25129r != null && !pVar.h() && !iVar.f25129r.h()) {
+            W0(this.f25217d, iVar);
             if (A() && Y0()) {
-                Matrix matrix = iVar.f25144n;
+                Matrix matrix = iVar.f25145n;
                 if (matrix != null) {
-                    this.f25213a.concat(matrix);
+                    this.f25214a.concat(matrix);
                 }
                 Path Z = Z(iVar);
                 U0(iVar);
                 r(iVar);
                 p(iVar);
                 boolean m02 = m0();
-                if (this.f25216d.f25253b) {
+                if (this.f25217d.f25254b) {
                     B(iVar, Z);
                 }
-                if (this.f25216d.f25254c) {
+                if (this.f25217d.f25255c) {
                     C(Z);
                 }
                 if (m02) {
@@ -2971,20 +2971,20 @@ public class h {
 
     private void q(g.k0 k0Var, g.b bVar) {
         Path j10;
-        if (this.f25216d.f25252a.P != null && (j10 = j(k0Var, bVar)) != null) {
-            this.f25213a.clipPath(j10);
+        if (this.f25217d.f25253a.P != null && (j10 = j(k0Var, bVar)) != null) {
+            this.f25214a.clipPath(j10);
         }
     }
 
     private void q0(g.m mVar) {
         y("Group render", new Object[0]);
-        W0(this.f25216d, mVar);
+        W0(this.f25217d, mVar);
         if (!A()) {
             return;
         }
-        Matrix matrix = mVar.f25150o;
+        Matrix matrix = mVar.f25151o;
         if (matrix != null) {
-            this.f25213a.concat(matrix);
+            this.f25214a.concat(matrix);
         }
         p(mVar);
         boolean m02 = m0();
@@ -2996,13 +2996,13 @@ public class h {
     }
 
     private void r(g.k0 k0Var) {
-        g.o0 o0Var = this.f25216d.f25252a.f25056e;
+        g.o0 o0Var = this.f25217d.f25253a.f25057e;
         if (o0Var instanceof g.u) {
-            z(true, k0Var.f25143h, (g.u) o0Var);
+            z(true, k0Var.f25144h, (g.u) o0Var);
         }
-        g.o0 o0Var2 = this.f25216d.f25252a.f25059p;
+        g.o0 o0Var2 = this.f25217d.f25253a.f25060p;
         if (o0Var2 instanceof g.u) {
-            z(false, k0Var.f25143h, (g.u) o0Var2);
+            z(false, k0Var.f25144h, (g.u) o0Var2);
         }
     }
 
@@ -3013,11 +3013,11 @@ public class h {
         float f11;
         int i10 = 0;
         y("Image render", new Object[0]);
-        g.p pVar2 = oVar.f25160s;
-        if (pVar2 != null && !pVar2.h() && (pVar = oVar.f25161t) != null && !pVar.h() && (str = oVar.f25157p) != null) {
-            g6.e eVar = oVar.f25165o;
+        g.p pVar2 = oVar.f25161s;
+        if (pVar2 != null && !pVar2.h() && (pVar = oVar.f25162t) != null && !pVar.h() && (str = oVar.f25158p) != null) {
+            g6.e eVar = oVar.f25166o;
             if (eVar == null) {
-                eVar = g6.e.f24983e;
+                eVar = g6.e.f24984e;
             }
             Bitmap s10 = s(str);
             if (s10 == null) {
@@ -3025,41 +3025,41 @@ public class h {
                 return;
             }
             g.b bVar = new g.b(0.0f, 0.0f, s10.getWidth(), s10.getHeight());
-            W0(this.f25216d, oVar);
+            W0(this.f25217d, oVar);
             if (A() && Y0()) {
-                Matrix matrix = oVar.f25162u;
+                Matrix matrix = oVar.f25163u;
                 if (matrix != null) {
-                    this.f25213a.concat(matrix);
+                    this.f25214a.concat(matrix);
                 }
-                g.p pVar3 = oVar.f25158q;
+                g.p pVar3 = oVar.f25159q;
                 if (pVar3 != null) {
                     f10 = pVar3.e(this);
                 } else {
                     f10 = 0.0f;
                 }
-                g.p pVar4 = oVar.f25159r;
+                g.p pVar4 = oVar.f25160r;
                 if (pVar4 != null) {
                     f11 = pVar4.f(this);
                 } else {
                     f11 = 0.0f;
                 }
-                this.f25216d.f25257f = new g.b(f10, f11, oVar.f25160s.e(this), oVar.f25161t.e(this));
-                if (!this.f25216d.f25252a.G.booleanValue()) {
-                    g.b bVar2 = this.f25216d.f25257f;
-                    O0(bVar2.f25024a, bVar2.f25025b, bVar2.f25026c, bVar2.f25027d);
+                this.f25217d.f25258f = new g.b(f10, f11, oVar.f25161s.e(this), oVar.f25162t.e(this));
+                if (!this.f25217d.f25253a.G.booleanValue()) {
+                    g.b bVar2 = this.f25217d.f25258f;
+                    O0(bVar2.f25025a, bVar2.f25026b, bVar2.f25027c, bVar2.f25028d);
                 }
-                oVar.f25143h = this.f25216d.f25257f;
+                oVar.f25144h = this.f25217d.f25258f;
                 U0(oVar);
                 p(oVar);
                 boolean m02 = m0();
                 X0();
-                this.f25213a.save();
-                this.f25213a.concat(o(this.f25216d.f25257f, bVar, eVar));
-                if (this.f25216d.f25252a.X != g.e0.e.optimizeSpeed) {
+                this.f25214a.save();
+                this.f25214a.concat(o(this.f25217d.f25258f, bVar, eVar));
+                if (this.f25217d.f25253a.X != g.e0.e.optimizeSpeed) {
                     i10 = 2;
                 }
-                this.f25213a.drawBitmap(s10, 0.0f, 0.0f, new Paint(i10));
-                this.f25213a.restore();
+                this.f25214a.drawBitmap(s10, 0.0f, 0.0f, new Paint(i10));
+                this.f25214a.restore();
                 if (m02) {
                     j0(oVar);
                 }
@@ -3083,11 +3083,11 @@ public class h {
 
     private void s0(g.q qVar) {
         y("Line render", new Object[0]);
-        W0(this.f25216d, qVar);
-        if (A() && Y0() && this.f25216d.f25254c) {
-            Matrix matrix = qVar.f25144n;
+        W0(this.f25217d, qVar);
+        if (A() && Y0() && this.f25217d.f25255c) {
+            Matrix matrix = qVar.f25145n;
             if (matrix != null) {
-                this.f25213a.concat(matrix);
+                this.f25214a.concat(matrix);
             }
             Path a02 = a0(qVar);
             U0(qVar);
@@ -3229,28 +3229,28 @@ public class h {
 
     private void t0(g.v vVar) {
         y("Path render", new Object[0]);
-        if (vVar.f25192o != null) {
-            W0(this.f25216d, vVar);
+        if (vVar.f25193o != null) {
+            W0(this.f25217d, vVar);
             if (A() && Y0()) {
-                C0343h c0343h = this.f25216d;
-                if (c0343h.f25254c || c0343h.f25253b) {
-                    Matrix matrix = vVar.f25144n;
+                C0343h c0343h = this.f25217d;
+                if (c0343h.f25255c || c0343h.f25254b) {
+                    Matrix matrix = vVar.f25145n;
                     if (matrix != null) {
-                        this.f25213a.concat(matrix);
+                        this.f25214a.concat(matrix);
                     }
-                    Path f10 = new d(vVar.f25192o).f();
-                    if (vVar.f25143h == null) {
-                        vVar.f25143h = m(f10);
+                    Path f10 = new d(vVar.f25193o).f();
+                    if (vVar.f25144h == null) {
+                        vVar.f25144h = m(f10);
                     }
                     U0(vVar);
                     r(vVar);
                     p(vVar);
                     boolean m02 = m0();
-                    if (this.f25216d.f25253b) {
+                    if (this.f25217d.f25254b) {
                         f10.setFillType(U());
                         B(vVar, f10);
                     }
-                    if (this.f25216d.f25254c) {
+                    if (this.f25217d.f25255c) {
                         C(f10);
                     }
                     I0(vVar);
@@ -3264,32 +3264,32 @@ public class h {
 
     private void u(g.n0 n0Var) {
         Boolean bool;
-        if ((n0Var instanceof g.l0) && (bool = ((g.l0) n0Var).f25146d) != null) {
-            this.f25216d.f25259h = bool.booleanValue();
+        if ((n0Var instanceof g.l0) && (bool = ((g.l0) n0Var).f25147d) != null) {
+            this.f25217d.f25260h = bool.booleanValue();
         }
     }
 
     private void u0(g.z zVar) {
         y("PolyLine render", new Object[0]);
-        W0(this.f25216d, zVar);
+        W0(this.f25217d, zVar);
         if (A() && Y0()) {
-            C0343h c0343h = this.f25216d;
-            if (c0343h.f25254c || c0343h.f25253b) {
-                Matrix matrix = zVar.f25144n;
+            C0343h c0343h = this.f25217d;
+            if (c0343h.f25255c || c0343h.f25254b) {
+                Matrix matrix = zVar.f25145n;
                 if (matrix != null) {
-                    this.f25213a.concat(matrix);
+                    this.f25214a.concat(matrix);
                 }
-                if (zVar.f25208o.length >= 2) {
+                if (zVar.f25209o.length >= 2) {
                     Path b02 = b0(zVar);
                     U0(zVar);
                     b02.setFillType(U());
                     r(zVar);
                     p(zVar);
                     boolean m02 = m0();
-                    if (this.f25216d.f25253b) {
+                    if (this.f25217d.f25254b) {
                         B(zVar, b02);
                     }
-                    if (this.f25216d.f25254c) {
+                    if (this.f25217d.f25255c) {
                         C(b02);
                     }
                     I0(zVar);
@@ -3313,24 +3313,24 @@ public class h {
 
     private void v0(g.a0 a0Var) {
         y("Polygon render", new Object[0]);
-        W0(this.f25216d, a0Var);
+        W0(this.f25217d, a0Var);
         if (A() && Y0()) {
-            C0343h c0343h = this.f25216d;
-            if (c0343h.f25254c || c0343h.f25253b) {
-                Matrix matrix = a0Var.f25144n;
+            C0343h c0343h = this.f25217d;
+            if (c0343h.f25255c || c0343h.f25254b) {
+                Matrix matrix = a0Var.f25145n;
                 if (matrix != null) {
-                    this.f25213a.concat(matrix);
+                    this.f25214a.concat(matrix);
                 }
-                if (a0Var.f25208o.length >= 2) {
+                if (a0Var.f25209o.length >= 2) {
                     Path b02 = b0(a0Var);
                     U0(a0Var);
                     r(a0Var);
                     p(a0Var);
                     boolean m02 = m0();
-                    if (this.f25216d.f25253b) {
+                    if (this.f25217d.f25254b) {
                         B(a0Var, b02);
                     }
-                    if (this.f25216d.f25254c) {
+                    if (this.f25217d.f25255c) {
                         C(b02);
                     }
                     I0(a0Var);
@@ -3355,23 +3355,23 @@ public class h {
 
     private void w0(g.b0 b0Var) {
         y("Rect render", new Object[0]);
-        g.p pVar = b0Var.f25030q;
-        if (pVar != null && b0Var.f25031r != null && !pVar.h() && !b0Var.f25031r.h()) {
-            W0(this.f25216d, b0Var);
+        g.p pVar = b0Var.f25031q;
+        if (pVar != null && b0Var.f25032r != null && !pVar.h() && !b0Var.f25032r.h()) {
+            W0(this.f25217d, b0Var);
             if (A() && Y0()) {
-                Matrix matrix = b0Var.f25144n;
+                Matrix matrix = b0Var.f25145n;
                 if (matrix != null) {
-                    this.f25213a.concat(matrix);
+                    this.f25214a.concat(matrix);
                 }
                 Path c02 = c0(b0Var);
                 U0(b0Var);
                 r(b0Var);
                 p(b0Var);
                 boolean m02 = m0();
-                if (this.f25216d.f25253b) {
+                if (this.f25217d.f25254b) {
                     B(b0Var, c02);
                 }
-                if (this.f25216d.f25254c) {
+                if (this.f25217d.f25255c) {
                     C(c02);
                 }
                 if (m02) {
@@ -3393,30 +3393,30 @@ public class h {
     }
 
     private void x0(g.f0 f0Var) {
-        z0(f0Var, f0(f0Var.f25113q, f0Var.f25114r, f0Var.f25115s, f0Var.f25116t), f0Var.f25181p, f0Var.f25165o);
+        z0(f0Var, f0(f0Var.f25114q, f0Var.f25115r, f0Var.f25116s, f0Var.f25117t), f0Var.f25182p, f0Var.f25166o);
     }
 
     private void y0(g.f0 f0Var, g.b bVar) {
-        z0(f0Var, bVar, f0Var.f25181p, f0Var.f25165o);
+        z0(f0Var, bVar, f0Var.f25182p, f0Var.f25166o);
     }
 
     private void z(boolean z10, g.b bVar, g.u uVar) {
         String str;
-        g.n0 p10 = this.f25215c.p(uVar.f25188d);
+        g.n0 p10 = this.f25216c.p(uVar.f25189d);
         if (p10 == null) {
             if (z10) {
                 str = "Fill";
             } else {
                 str = "Stroke";
             }
-            F("%s reference '%s' not found", str, uVar.f25188d);
-            g.o0 o0Var = uVar.f25189e;
+            F("%s reference '%s' not found", str, uVar.f25189d);
+            g.o0 o0Var = uVar.f25190e;
             if (o0Var != null) {
-                P0(this.f25216d, z10, o0Var);
+                P0(this.f25217d, z10, o0Var);
             } else if (z10) {
-                this.f25216d.f25253b = false;
+                this.f25217d.f25254b = false;
             } else {
-                this.f25216d.f25254c = false;
+                this.f25217d.f25255c = false;
             }
         } else if (p10 instanceof g.m0) {
             X(z10, bVar, (g.m0) p10);
@@ -3429,26 +3429,26 @@ public class h {
 
     private void z0(g.f0 f0Var, g.b bVar, g.b bVar2, g6.e eVar) {
         y("Svg render", new Object[0]);
-        if (bVar.f25026c != 0.0f && bVar.f25027d != 0.0f) {
-            if (eVar == null && (eVar = f0Var.f25165o) == null) {
-                eVar = g6.e.f24983e;
+        if (bVar.f25027c != 0.0f && bVar.f25028d != 0.0f) {
+            if (eVar == null && (eVar = f0Var.f25166o) == null) {
+                eVar = g6.e.f24984e;
             }
-            W0(this.f25216d, f0Var);
+            W0(this.f25217d, f0Var);
             if (A()) {
-                C0343h c0343h = this.f25216d;
-                c0343h.f25257f = bVar;
-                if (!c0343h.f25252a.G.booleanValue()) {
-                    g.b bVar3 = this.f25216d.f25257f;
-                    O0(bVar3.f25024a, bVar3.f25025b, bVar3.f25026c, bVar3.f25027d);
+                C0343h c0343h = this.f25217d;
+                c0343h.f25258f = bVar;
+                if (!c0343h.f25253a.G.booleanValue()) {
+                    g.b bVar3 = this.f25217d.f25258f;
+                    O0(bVar3.f25025a, bVar3.f25026b, bVar3.f25027c, bVar3.f25028d);
                 }
-                q(f0Var, this.f25216d.f25257f);
+                q(f0Var, this.f25217d.f25258f);
                 if (bVar2 != null) {
-                    this.f25213a.concat(o(this.f25216d.f25257f, bVar2, eVar));
-                    this.f25216d.f25258g = f0Var.f25181p;
+                    this.f25214a.concat(o(this.f25217d.f25258f, bVar2, eVar));
+                    this.f25217d.f25259g = f0Var.f25182p;
                 } else {
-                    Canvas canvas = this.f25213a;
-                    g.b bVar4 = this.f25216d.f25257f;
-                    canvas.translate(bVar4.f25024a, bVar4.f25025b);
+                    Canvas canvas = this.f25214a;
+                    g.b bVar4 = this.f25217d.f25258f;
+                    canvas.translate(bVar4.f25025a, bVar4.f25026b);
                 }
                 boolean m02 = m0();
                 X0();
@@ -3467,58 +3467,58 @@ public class h {
         g.b bVar2;
         g6.e eVar;
         if (fVar != null) {
-            this.f25215c = gVar;
+            this.f25216c = gVar;
             g.f0 m10 = gVar.m();
             if (m10 == null) {
                 Z0("Nothing to render. Document is empty.", new Object[0]);
                 return;
             }
             if (fVar.e()) {
-                g.l0 j10 = this.f25215c.j(fVar.f25010e);
+                g.l0 j10 = this.f25216c.j(fVar.f25011e);
                 if (j10 != null && (j10 instanceof g.f1)) {
                     g.f1 f1Var = (g.f1) j10;
-                    bVar2 = f1Var.f25181p;
+                    bVar2 = f1Var.f25182p;
                     if (bVar2 == null) {
-                        Log.w("SVGAndroidRenderer", String.format("View element with id \"%s\" is missing a viewBox attribute.", fVar.f25010e));
+                        Log.w("SVGAndroidRenderer", String.format("View element with id \"%s\" is missing a viewBox attribute.", fVar.f25011e));
                         return;
                     }
-                    eVar = f1Var.f25165o;
+                    eVar = f1Var.f25166o;
                 } else {
-                    Log.w("SVGAndroidRenderer", String.format("View element with id \"%s\" not found.", fVar.f25010e));
+                    Log.w("SVGAndroidRenderer", String.format("View element with id \"%s\" not found.", fVar.f25011e));
                     return;
                 }
             } else {
                 if (fVar.f()) {
-                    bVar = fVar.f25009d;
+                    bVar = fVar.f25010d;
                 } else {
-                    bVar = m10.f25181p;
+                    bVar = m10.f25182p;
                 }
                 bVar2 = bVar;
                 if (fVar.c()) {
-                    eVar = fVar.f25007b;
+                    eVar = fVar.f25008b;
                 } else {
-                    eVar = m10.f25165o;
+                    eVar = m10.f25166o;
                 }
             }
             if (fVar.b()) {
-                gVar.a(fVar.f25006a);
+                gVar.a(fVar.f25007a);
             }
             if (fVar.d()) {
                 b.q qVar = new b.q();
-                this.f25220h = qVar;
-                qVar.f24965a = gVar.j(fVar.f25008c);
+                this.f25221h = qVar;
+                qVar.f24966a = gVar.j(fVar.f25009c);
             }
             N0();
             u(m10);
             S0();
-            g.b bVar3 = new g.b(fVar.f25011f);
-            g.p pVar = m10.f25115s;
+            g.b bVar3 = new g.b(fVar.f25012f);
+            g.p pVar = m10.f25116s;
             if (pVar != null) {
-                bVar3.f25026c = pVar.d(this, bVar3.f25026c);
+                bVar3.f25027c = pVar.d(this, bVar3.f25027c);
             }
-            g.p pVar2 = m10.f25116t;
+            g.p pVar2 = m10.f25117t;
             if (pVar2 != null) {
-                bVar3.f25027d = pVar2.d(this, bVar3.f25027d);
+                bVar3.f25028d = pVar2.d(this, bVar3.f25028d);
             }
             z0(m10, bVar3, bVar2, eVar);
             R0();
@@ -3533,27 +3533,27 @@ public class h {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float Q() {
-        return this.f25216d.f25255d.getTextSize();
+        return this.f25217d.f25256d.getTextSize();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float R() {
-        return this.f25216d.f25255d.getTextSize() / 2.0f;
+        return this.f25217d.f25256d.getTextSize() / 2.0f;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g.b S() {
-        C0343h c0343h = this.f25216d;
-        g.b bVar = c0343h.f25258g;
+        C0343h c0343h = this.f25217d;
+        g.b bVar = c0343h.f25259g;
         if (bVar != null) {
             return bVar;
         }
-        return c0343h.f25257f;
+        return c0343h.f25258f;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public float T() {
-        return this.f25214b;
+        return this.f25215b;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -3561,16 +3561,16 @@ public class h {
     public class k extends j {
 
         /* renamed from: b  reason: collision with root package name */
-        float f25266b;
+        float f25267b;
 
         private k() {
             super(h.this, null);
-            this.f25266b = 0.0f;
+            this.f25267b = 0.0f;
         }
 
         @Override // g6.h.j
         public void b(String str) {
-            this.f25266b += h.this.f25216d.f25255d.measureText(str);
+            this.f25267b += h.this.f25217d.f25256d.measureText(str);
         }
 
         /* synthetic */ k(h hVar, a aVar) {
@@ -3584,66 +3584,66 @@ public class h {
     public class C0343h {
 
         /* renamed from: a  reason: collision with root package name */
-        g.e0 f25252a;
+        g.e0 f25253a;
 
         /* renamed from: b  reason: collision with root package name */
-        boolean f25253b;
+        boolean f25254b;
 
         /* renamed from: c  reason: collision with root package name */
-        boolean f25254c;
+        boolean f25255c;
 
         /* renamed from: d  reason: collision with root package name */
-        Paint f25255d;
+        Paint f25256d;
 
         /* renamed from: e  reason: collision with root package name */
-        Paint f25256e;
+        Paint f25257e;
 
         /* renamed from: f  reason: collision with root package name */
-        g.b f25257f;
+        g.b f25258f;
 
         /* renamed from: g  reason: collision with root package name */
-        g.b f25258g;
+        g.b f25259g;
 
         /* renamed from: h  reason: collision with root package name */
-        boolean f25259h;
+        boolean f25260h;
 
         C0343h() {
             Paint paint = new Paint();
-            this.f25255d = paint;
+            this.f25256d = paint;
             paint.setFlags(193);
-            this.f25255d.setHinting(0);
-            this.f25255d.setStyle(Paint.Style.FILL);
-            Paint paint2 = this.f25255d;
+            this.f25256d.setHinting(0);
+            this.f25256d.setStyle(Paint.Style.FILL);
+            Paint paint2 = this.f25256d;
             Typeface typeface = Typeface.DEFAULT;
             paint2.setTypeface(typeface);
             Paint paint3 = new Paint();
-            this.f25256e = paint3;
+            this.f25257e = paint3;
             paint3.setFlags(193);
-            this.f25256e.setHinting(0);
-            this.f25256e.setStyle(Paint.Style.STROKE);
-            this.f25256e.setTypeface(typeface);
-            this.f25252a = g.e0.a();
+            this.f25257e.setHinting(0);
+            this.f25257e.setStyle(Paint.Style.STROKE);
+            this.f25257e.setTypeface(typeface);
+            this.f25253a = g.e0.a();
         }
 
         C0343h(C0343h c0343h) {
-            this.f25253b = c0343h.f25253b;
-            this.f25254c = c0343h.f25254c;
-            this.f25255d = new Paint(c0343h.f25255d);
-            this.f25256e = new Paint(c0343h.f25256e);
-            g.b bVar = c0343h.f25257f;
+            this.f25254b = c0343h.f25254b;
+            this.f25255c = c0343h.f25255c;
+            this.f25256d = new Paint(c0343h.f25256d);
+            this.f25257e = new Paint(c0343h.f25257e);
+            g.b bVar = c0343h.f25258f;
             if (bVar != null) {
-                this.f25257f = new g.b(bVar);
+                this.f25258f = new g.b(bVar);
             }
-            g.b bVar2 = c0343h.f25258g;
+            g.b bVar2 = c0343h.f25259g;
             if (bVar2 != null) {
-                this.f25258g = new g.b(bVar2);
+                this.f25259g = new g.b(bVar2);
             }
-            this.f25259h = c0343h.f25259h;
+            this.f25260h = c0343h.f25260h;
             try {
-                this.f25252a = (g.e0) c0343h.f25252a.clone();
+                this.f25253a = (g.e0) c0343h.f25253a.clone();
             } catch (CloneNotSupportedException e10) {
                 Log.e("SVGAndroidRenderer", "Unexpected clone error", e10);
-                this.f25252a = g.e0.a();
+                this.f25253a = g.e0.a();
             }
         }
     }

@@ -16,17 +16,17 @@ import p4.u;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final o4.h f36809a;
+    private final o4.h f36810a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f36810d;
+        int f36811d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f36811e;
+        private /* synthetic */ Object f36812e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: n4.c$a$a  reason: collision with other inner class name */
@@ -34,27 +34,27 @@ public abstract class c {
         public static final class C0525a extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ c f36813d;
+            final /* synthetic */ c f36814d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ b f36814e;
+            final /* synthetic */ b f36815e;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             C0525a(c cVar, b bVar) {
                 super(0);
-                this.f36813d = cVar;
-                this.f36814e = bVar;
+                this.f36814d = cVar;
+                this.f36815e = bVar;
             }
 
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
-                m1215invoke();
-                return Unit.f31987a;
+                m1214invoke();
+                return Unit.f31988a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */
-            public final void m1215invoke() {
-                this.f36813d.f36809a.f(this.f36814e);
+            public final void m1214invoke() {
+                this.f36814d.f36810a.f(this.f36815e);
             }
         }
 
@@ -62,25 +62,25 @@ public abstract class c {
         public static final class b implements m4.a {
 
             /* renamed from: a  reason: collision with root package name */
-            final /* synthetic */ c f36815a;
+            final /* synthetic */ c f36816a;
 
             /* renamed from: b  reason: collision with root package name */
-            final /* synthetic */ ProducerScope f36816b;
+            final /* synthetic */ ProducerScope f36817b;
 
             b(c cVar, ProducerScope producerScope) {
-                this.f36815a = cVar;
-                this.f36816b = producerScope;
+                this.f36816a = cVar;
+                this.f36817b = producerScope;
             }
 
             @Override // m4.a
             public void a(Object obj) {
                 Object obj2;
-                if (this.f36815a.d(obj)) {
-                    obj2 = new b.C0511b(this.f36815a.b());
+                if (this.f36816a.d(obj)) {
+                    obj2 = new b.C0511b(this.f36816a.b());
                 } else {
-                    obj2 = b.a.f36129a;
+                    obj2 = b.a.f36130a;
                 }
-                this.f36816b.h().d(obj2);
+                this.f36817b.h().d(obj2);
             }
         }
 
@@ -91,14 +91,14 @@ public abstract class c {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             a aVar = new a(continuation);
-            aVar.f36811e = obj;
+            aVar.f36812e = obj;
             return aVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = gs.b.f();
-            int i10 = this.f36810d;
+            int i10 = this.f36811d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -107,27 +107,27 @@ public abstract class c {
                 }
             } else {
                 kotlin.c.b(obj);
-                ProducerScope producerScope = (ProducerScope) this.f36811e;
+                ProducerScope producerScope = (ProducerScope) this.f36812e;
                 b bVar = new b(c.this, producerScope);
-                c.this.f36809a.c(bVar);
+                c.this.f36810a.c(bVar);
                 C0525a c0525a = new C0525a(c.this, bVar);
-                this.f36810d = 1;
+                this.f36811d = 1;
                 if (s.a(producerScope, c0525a, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(ProducerScope producerScope, Continuation continuation) {
-            return ((a) create(producerScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((a) create(producerScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
     public c(o4.h tracker) {
         Intrinsics.checkNotNullParameter(tracker, "tracker");
-        this.f36809a = tracker;
+        this.f36810a = tracker;
     }
 
     public abstract int b();
@@ -138,7 +138,7 @@ public abstract class c {
 
     public final boolean e(u workSpec) {
         Intrinsics.checkNotNullParameter(workSpec, "workSpec");
-        if (c(workSpec) && d(this.f36809a.e())) {
+        if (c(workSpec) && d(this.f36810a.e())) {
             return true;
         }
         return false;

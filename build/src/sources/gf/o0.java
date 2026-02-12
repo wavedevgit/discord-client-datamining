@@ -3,22 +3,22 @@ package gf;
 final class o0 {
 
     /* renamed from: a  reason: collision with root package name */
-    final hf.n f25647a;
+    final hf.n f25648a;
 
     /* renamed from: b  reason: collision with root package name */
-    final int f25648b;
+    final int f25649b;
 
     /* renamed from: c  reason: collision with root package name */
-    final long f25649c;
+    final long f25650c;
 
     /* renamed from: d  reason: collision with root package name */
-    final int f25650d;
+    final int f25651d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o0(hf.n nVar, int i10, long j10, int i11) {
-        this.f25647a = nVar;
-        this.f25648b = i10;
-        this.f25649c = j10;
-        this.f25650d = i11;
+        this.f25648a = nVar;
+        this.f25649b = i10;
+        this.f25650c = j10;
+        this.f25651d = i11;
     }
 }

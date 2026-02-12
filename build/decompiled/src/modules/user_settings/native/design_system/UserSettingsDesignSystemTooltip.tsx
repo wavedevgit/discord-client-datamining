@@ -1,12 +1,12 @@
 // modules/user_settings/native/design_system/UserSettingsDesignSystemTooltip.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var6 = require;
+    var7 = require;
     var2 = exports;
-    var7 = dependencyMap;
-    var _closure1_slot0 = var6;
-    var _closure1_slot1 = var7;
-    var3 = function() {
+    var8 = dependencyMap;
+    var _closure1_slot0 = var7;
+    var _closure1_slot1 = var8;
+    var4 = function() {
         var4 = _closure1_slot3;
         var2 = var4.useState;
         var1 = false;
@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = _closure1_slot3;
         var5 = var6.useEffect;
         var4 = function() { // Environment: var0
-            _fun88838: for (var _fun88838_ip = 0;;) switch (_fun88838_ip) {
+            _fun87172: for (var _fun87172_ip = 0;;) switch (_fun87172_ip) {
                 case 0:
                     var1 = _closure2_slot0;
                     var3 = _closure1_slot0;
@@ -33,14 +33,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = undefined;
                     var3 = var3.bind(var0)(var2);
                     if (var1) {
-                        _fun88838_ip = 47;
-                        continue _fun88838
+                        _fun87172_ip = 47;
+                        continue _fun87172
                     }
                 case 35:
                     var1 = var3.lockOrientationForiOS;
                     var1 = var1.bind(var3)();
-                    _fun88838_ip = 67;
-                    continue _fun88838;
+                    _fun87172_ip = 67;
+                    continue _fun87172;
                 case 47:
                     var2 = var3.unlockOrientation;
                     var1 = {};
@@ -75,9 +75,103 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0[1] = var1;
         return var0;
     };
-    var _closure1_slot10 = var3;
-    var0 = function() {
-        _fun88841: for (var _fun88841_ip = 0;;) switch (_fun88841_ip) {
+    var _closure1_slot12 = var4;
+    var0 = global;
+    var6 = var0.Object;
+    var3 = var6.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var6)(var2, var0, var1);
+    var0 = 0;
+    var3 = var8[var0];
+    var1 = arg2;
+    var0 = undefined;
+    var1 = var1.bind(var0)(var3);
+    var _closure1_slot2 = var1;
+    var11 = 1;
+    var3 = var8[var11];
+    var1 = arg3;
+    var1 = var1.bind(var0)(var3);
+    var _closure1_slot3 = var1;
+    var1 = 2;
+    var1 = var8[var1];
+    var1 = var7.bind(var0)(var1);
+    var1 = var1.View;
+    var _closure1_slot4 = var1;
+    var1 = 3;
+    var1 = var8[var1];
+    var1 = var7.bind(var0)(var1);
+    var10 = var1.jsx;
+    var _closure1_slot5 = var10;
+    var3 = var1.Fragment;
+    var _closure1_slot6 = var3;
+    var1 = var1.jsxs;
+    var _closure1_slot7 = var1;
+    var1 = 4;
+    var1 = var8[var1];
+    var6 = var7.bind(var0)(var1);
+    var3 = var6.createStyles;
+    var1 = {};
+    var9 = {
+        'padding': 16,
+        'flex': 1,
+        'alignItems': 'center',
+        'justifyContent': 'center'
+    };
+    var1.container = var9;
+    var9 = {};
+    var9.flex = var11;
+    var1.flex = var9;
+    var1 = var3.bind(var6)(var1);
+    var _closure1_slot8 = var1;
+    var1 = 9;
+    var1 = var8[var1];
+    var1 = var7.bind(var0)(var1);
+    var3 = var1.Text;
+    var1 = {
+        'variant': 'text-sm/bold',
+        'children': ' <LayerScope/>'
+    };
+    var1 = var10.bind(var0)(var3, var1);
+    var _closure1_slot9 = var1;
+    var3 = function() {
+        var3 = _closure1_slot7;
+        var1 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 9;
+        var0 = var2[var0];
+        var2 = undefined;
+        var0 = var1.bind(var2)(var0);
+        var1 = var0.Text;
+        var0 = {};
+        var5 = 'text-sm/normal';
+        var0.variant = var5;
+        var5 = {
+            'padding': 16,
+            'paddingTop': 16
+        };
+        var0.style = var5;
+        var5 = _closure1_slot9;
+        var4 = ['Note: If your tooltip is not displaying or it is not in the right position/zIndex, consider adding or moving an existing'];
+        var4[1] = var5;
+        var5 = ' on the surface you expect to see the tooltip.';
+        var4[2] = var5;
+        var0.children = var4;
+        var0 = var3.bind(var2)(var1, var0);
+        return var0;
+    };
+    var1 = {};
+    var1 = var10.bind(var0)(var3, var1);
+    var _closure1_slot10 = var1;
+    var6 = 10;
+    var6 = var8[var6];
+    var6 = var7.bind(var0)(var6);
+    var9 = var6.LayerScope;
+    var6 = {};
+    var12 = function() {
+        _fun87175: for (var _fun87175_ip = 0;;) switch (_fun87175_ip) {
             case 0:
                 var0 = _closure1_slot8;
                 var3 = undefined;
@@ -95,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = 1;
                 var1 = var1[var2];
                 var _closure2_slot1 = var1;
-                var1 = _closure1_slot10;
+                var1 = _closure1_slot12;
                 var6 = var1.bind(var3)();
                 var1 = _closure1_slot2;
                 var1 = var1.bind(var3)(var6, var7);
@@ -111,8 +205,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var1[var2];
                 var17 = 'Show tooltip';
                 if (!var0) {
-                    _fun88841_ip = 142;
-                    continue _fun88841
+                    _fun87175_ip = 142;
+                    continue _fun87175
                 }
             case 136:
                 var17 = 'Hide tooltip';
@@ -127,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var10;
                 var1[1] = var0;
                 var0 = function() { // Environment: var18
-                    _fun88842: for (var _fun88842_ip = 0;;) switch (_fun88842_ip) {
+                    _fun87176: for (var _fun87176_ip = 0;;) switch (_fun87176_ip) {
                         case 0:
                             var0 = {};
                             var1 = 'NEW';
@@ -135,8 +229,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = _closure2_slot2;
                             var2 = 'top';
                             if (!var3) {
-                                _fun88842_ip = 28;
-                                continue _fun88842
+                                _fun87176_ip = 28;
+                                continue _fun87176
                             }
                         case 24:
                             var2 = 'bottom';
@@ -220,142 +314,48 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.onValueChange = var9;
                 var6 = var8.bind(var3)(var7, var6);
                 var4[2] = var6;
-                var7 = _closure1_slot5;
-                var6 = _closure1_slot9;
-                var5 = {};
-                var5 = var7.bind(var3)(var6, var5);
+                var5 = _closure1_slot10;
                 var4[3] = var5;
                 var0.children = var4;
                 var0 = var2.bind(var3)(var1, var0);
                 return var0;
         }
     };
-    var _closure1_slot11 = var0;
-    var0 = global;
-    var8 = var0.Object;
-    var5 = var8.defineProperty;
-    var1 = {};
-    var0 = true;
-    var1.value = var0;
-    var0 = '__esModule';
-    var0 = var5.bind(var8)(var2, var0, var1);
-    var0 = 0;
-    var5 = var7[var0];
-    var1 = arg2;
-    var0 = undefined;
-    var1 = var1.bind(var0)(var5);
-    var _closure1_slot2 = var1;
-    var10 = 1;
-    var5 = var7[var10];
-    var1 = arg3;
-    var1 = var1.bind(var0)(var5);
-    var _closure1_slot3 = var1;
-    var1 = 2;
-    var1 = var7[var1];
-    var1 = var6.bind(var0)(var1);
-    var1 = var1.View;
-    var _closure1_slot4 = var1;
-    var1 = 3;
-    var1 = var7[var1];
-    var1 = var6.bind(var0)(var1);
-    var5 = var1.jsx;
-    var _closure1_slot5 = var5;
-    var5 = var1.Fragment;
-    var _closure1_slot6 = var5;
-    var1 = var1.jsxs;
-    var _closure1_slot7 = var1;
-    var1 = 4;
-    var1 = var7[var1];
-    var8 = var6.bind(var0)(var1);
-    var5 = var8.createStyles;
-    var1 = {};
-    var9 = {
-        'padding': 16,
-        'flex': 1,
-        'alignItems': 'center',
-        'justifyContent': 'center'
-    };
-    var1.container = var9;
-    var9 = {};
-    var9.flex = var10;
-    var1.flex = var9;
-    var1 = var5.bind(var8)(var1);
-    var _closure1_slot8 = var1;
-    var1 = function() {
-        var3 = _closure1_slot7;
-        var5 = _closure1_slot0;
-        var7 = _closure1_slot1;
-        var4 = 9;
-        var0 = var7[var4];
-        var2 = undefined;
-        var0 = var5.bind(var2)(var0);
-        var1 = var0.Text;
-        var0 = {};
-        var8 = 'text-sm/normal';
-        var0.variant = var8;
-        var8 = {
-            'padding': 16,
-            'paddingTop': 16
-        };
-        var0.style = var8;
-        var6 = _closure1_slot5;
-        var4 = var7[var4];
-        var4 = var5.bind(var2)(var4);
-        var5 = var4.Text;
-        var4 = {
-            'variant': 'text-sm/bold',
-            'children': ' <LayerScope/>'
-        };
-        var5 = var6.bind(var2)(var5, var4);
-        var4 = ['Note: If your tooltip is not displaying or it is not in the right position/zIndex, consider adding or moving an existing'];
-        var4[1] = var5;
-        var5 = ' on the surface you expect to see the tooltip.';
-        var4[2] = var5;
-        var0.children = var4;
-        var0 = var3.bind(var2)(var1, var0);
-        return var0;
-    };
-    var _closure1_slot9 = var1;
-    var5 = 12;
-    var5 = var7[var5];
-    var7 = var6.bind(var0)(var5);
-    var6 = var7.fileFinishedImporting;
-    var5 = 'modules/user_settings/native/design_system/UserSettingsDesignSystemTooltip.tsx';
-    var5 = var6.bind(var7)(var5);
-    var4 = function() {
+    var11 = {};
+    var11 = var10.bind(var0)(var12, var11);
+    var6.children = var11;
+    var6 = var10.bind(var0)(var9, var6);
+    var _closure1_slot11 = var6;
+    var6 = 12;
+    var6 = var8[var6];
+    var8 = var7.bind(var0)(var6);
+    var7 = var8.fileFinishedImporting;
+    var6 = 'modules/user_settings/native/design_system/UserSettingsDesignSystemTooltip.tsx';
+    var6 = var7.bind(var8)(var6);
+    var5 = function() {
         var0 = _closure1_slot8;
         var3 = undefined;
-        var4 = var0.bind(var3)();
+        var5 = var0.bind(var3)();
         var2 = _closure1_slot5;
-        var5 = _closure1_slot0;
-        var8 = _closure1_slot1;
-        var0 = 10;
-        var0 = var8[var0];
-        var0 = var5.bind(var3)(var0);
+        var1 = _closure1_slot0;
+        var6 = _closure1_slot1;
+        var0 = 11;
+        var0 = var6[var0];
+        var0 = var1.bind(var3)(var0);
         var1 = var0.SafeAreaPaddingView;
         var0 = {};
-        var4 = var4.flex;
-        var0.style = var4;
-        var4 = true;
-        var0.bottom = var4;
-        var6 = _closure1_slot5;
-        var4 = 11;
-        var4 = var8[var4];
-        var4 = var5.bind(var3)(var4);
-        var5 = var4.LayerScope;
-        var4 = {};
-        var9 = _closure1_slot5;
-        var8 = _closure1_slot11;
-        var7 = {};
-        var7 = var9.bind(var3)(var8, var7);
-        var4.children = var7;
-        var4 = var6.bind(var3)(var5, var4);
+        var5 = var5.flex;
+        var0.style = var5;
+        var5 = true;
+        var0.bottom = var5;
+        var4 = _closure1_slot11;
         var0.children = var4;
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var2.default = var4;
-    var2.useCanRotate = var3;
-    var2.TooltipNote = var1;
+    var2.default = var5;
+    var2.useCanRotate = var4;
+    var2.TooltipNote = var3;
+    var2._ref = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 7873, 7100, 4090, 5478, 3938, 4744, 5263, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 7616, 7115, 4090, 5344, 3938, 5229, 4754, 2]);

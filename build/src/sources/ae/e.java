@@ -132,7 +132,7 @@ public final class e implements h {
                 lVar.g(4);
             } else {
                 k kVar = this.f739b;
-                lVar.u(this.f739b.f46231p, new b(kVar.f46231p, this.f738a.a(((ByteBuffer) oe.a.e(kVar.f46229i)).array())), 0L);
+                lVar.u(this.f739b.f46232p, new b(kVar.f46232p, this.f738a.a(((ByteBuffer) oe.a.e(kVar.f46230i)).array())), 0L);
             }
             this.f739b.h();
             this.f741d = 0;

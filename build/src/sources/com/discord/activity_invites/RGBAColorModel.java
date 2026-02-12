@@ -17,16 +17,16 @@ public final class RGBAColorModel {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f9137a;
+    private final float f9138a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final float f9138b;
+    private final float f9139b;
 
     /* renamed from: g  reason: collision with root package name */
-    private final float f9139g;
+    private final float f9140g;
 
     /* renamed from: r  reason: collision with root package name */
-    private final float f9140r;
+    private final float f9141r;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, d2 = {"Lcom/discord/activity_invites/RGBAColorModel$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/activity_invites/RGBAColorModel;", "activity_invites_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -48,49 +48,49 @@ public final class RGBAColorModel {
         if (15 != (i10 & 15)) {
             v1.b(i10, 15, RGBAColorModel$$serializer.INSTANCE.getDescriptor());
         }
-        this.f9140r = f10;
-        this.f9139g = f11;
-        this.f9138b = f12;
-        this.f9137a = f13;
+        this.f9141r = f10;
+        this.f9140g = f11;
+        this.f9139b = f12;
+        this.f9138a = f13;
     }
 
     public static /* synthetic */ RGBAColorModel copy$default(RGBAColorModel rGBAColorModel, float f10, float f11, float f12, float f13, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            f10 = rGBAColorModel.f9140r;
+            f10 = rGBAColorModel.f9141r;
         }
         if ((i10 & 2) != 0) {
-            f11 = rGBAColorModel.f9139g;
+            f11 = rGBAColorModel.f9140g;
         }
         if ((i10 & 4) != 0) {
-            f12 = rGBAColorModel.f9138b;
+            f12 = rGBAColorModel.f9139b;
         }
         if ((i10 & 8) != 0) {
-            f13 = rGBAColorModel.f9137a;
+            f13 = rGBAColorModel.f9138a;
         }
         return rGBAColorModel.copy(f10, f11, f12, f13);
     }
 
     public static final /* synthetic */ void write$Self$activity_invites_release(RGBAColorModel rGBAColorModel, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
-        compositeEncoder.s(serialDescriptor, 0, rGBAColorModel.f9140r);
-        compositeEncoder.s(serialDescriptor, 1, rGBAColorModel.f9139g);
-        compositeEncoder.s(serialDescriptor, 2, rGBAColorModel.f9138b);
-        compositeEncoder.s(serialDescriptor, 3, rGBAColorModel.f9137a);
+        compositeEncoder.s(serialDescriptor, 0, rGBAColorModel.f9141r);
+        compositeEncoder.s(serialDescriptor, 1, rGBAColorModel.f9140g);
+        compositeEncoder.s(serialDescriptor, 2, rGBAColorModel.f9139b);
+        compositeEncoder.s(serialDescriptor, 3, rGBAColorModel.f9138a);
     }
 
     public final float component1() {
-        return this.f9140r;
+        return this.f9141r;
     }
 
     public final float component2() {
-        return this.f9139g;
+        return this.f9140g;
     }
 
     public final float component3() {
-        return this.f9138b;
+        return this.f9139b;
     }
 
     public final float component4() {
-        return this.f9137a;
+        return this.f9138a;
     }
 
     @NotNull
@@ -104,44 +104,44 @@ public final class RGBAColorModel {
         }
         if (obj instanceof RGBAColorModel) {
             RGBAColorModel rGBAColorModel = (RGBAColorModel) obj;
-            return Float.compare(this.f9140r, rGBAColorModel.f9140r) == 0 && Float.compare(this.f9139g, rGBAColorModel.f9139g) == 0 && Float.compare(this.f9138b, rGBAColorModel.f9138b) == 0 && Float.compare(this.f9137a, rGBAColorModel.f9137a) == 0;
+            return Float.compare(this.f9141r, rGBAColorModel.f9141r) == 0 && Float.compare(this.f9140g, rGBAColorModel.f9140g) == 0 && Float.compare(this.f9139b, rGBAColorModel.f9139b) == 0 && Float.compare(this.f9138a, rGBAColorModel.f9138a) == 0;
         }
         return false;
     }
 
     public final float getA() {
-        return this.f9137a;
+        return this.f9138a;
     }
 
     public final float getB() {
-        return this.f9138b;
+        return this.f9139b;
     }
 
     public final float getG() {
-        return this.f9139g;
+        return this.f9140g;
     }
 
     public final float getR() {
-        return this.f9140r;
+        return this.f9141r;
     }
 
     public int hashCode() {
-        return (((((Float.hashCode(this.f9140r) * 31) + Float.hashCode(this.f9139g)) * 31) + Float.hashCode(this.f9138b)) * 31) + Float.hashCode(this.f9137a);
+        return (((((Float.hashCode(this.f9141r) * 31) + Float.hashCode(this.f9140g)) * 31) + Float.hashCode(this.f9139b)) * 31) + Float.hashCode(this.f9138a);
     }
 
     @NotNull
     public String toString() {
-        float f10 = this.f9140r;
-        float f11 = this.f9139g;
-        float f12 = this.f9138b;
-        float f13 = this.f9137a;
+        float f10 = this.f9141r;
+        float f11 = this.f9140g;
+        float f12 = this.f9139b;
+        float f13 = this.f9138a;
         return "RGBAColorModel(r=" + f10 + ", g=" + f11 + ", b=" + f12 + ", a=" + f13 + ")";
     }
 
     public RGBAColorModel(float f10, float f11, float f12, float f13) {
-        this.f9140r = f10;
-        this.f9139g = f11;
-        this.f9138b = f12;
-        this.f9137a = f13;
+        this.f9141r = f10;
+        this.f9140g = f11;
+        this.f9139b = f12;
+        this.f9138a = f13;
     }
 }

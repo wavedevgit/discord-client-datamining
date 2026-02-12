@@ -5,7 +5,7 @@ import java.util.Map;
 public final class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final qk.c f23816a = new qk.c(qk.a.f45438l);
+    private final qk.c f23817a = new qk.c(qk.a.f45439l);
 
     private int a(byte[] bArr, int i10) {
         int length = bArr.length;
@@ -14,7 +14,7 @@ public final class e {
             iArr[i11] = bArr[i11] & 255;
         }
         try {
-            int a10 = this.f23816a.a(iArr, bArr.length - i10);
+            int a10 = this.f23817a.a(iArr, bArr.length - i10);
             for (int i12 = 0; i12 < i10; i12++) {
                 bArr[i12] = (byte) iArr[i12];
             }

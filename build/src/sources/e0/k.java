@@ -21,32 +21,32 @@ import x.y0;
 public class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final d0 f22203a;
+    private final d0 f22204a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f22204b;
+    private final int f22205b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f22205c;
+    private final int f22206c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Rational f22206d;
+    private final Rational f22207d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final l f22207e;
+    private final l f22208e;
 
     public k(d0 d0Var, Size size) {
         Rational i10;
-        this.f22203a = d0Var;
-        this.f22204b = d0Var.a();
-        this.f22205c = d0Var.c();
+        this.f22204a = d0Var;
+        this.f22205b = d0Var.a();
+        this.f22206c = d0Var.c();
         if (size != null) {
             i10 = h(size);
         } else {
             i10 = i(d0Var);
         }
-        this.f22206d = i10;
-        this.f22207e = new l(d0Var, i10);
+        this.f22207d = i10;
+        this.f22208e = new l(d0Var, i10);
     }
 
     private static LinkedHashMap a(List list, m0.a aVar, Rational rational) {
@@ -82,7 +82,7 @@ public class k {
         if (cVar.a() == 1) {
             ArrayList arrayList = new ArrayList();
             arrayList.addAll(list);
-            arrayList.addAll(this.f22203a.d(i10));
+            arrayList.addAll(this.f22204a.d(i10));
             Collections.sort(arrayList, new b0.d(true));
             return arrayList;
         }
@@ -131,7 +131,7 @@ public class k {
     private static void g(List list, m0.d dVar) {
         if (!list.isEmpty()) {
             int b10 = dVar.b();
-            if (!dVar.equals(m0.d.f36102c)) {
+            if (!dVar.equals(m0.d.f36103c)) {
                 Size a10 = dVar.a();
                 if (b10 != 0) {
                     if (b10 != 1) {
@@ -173,7 +173,7 @@ public class k {
     private List j(List list, int i10) {
         List l10 = l(list, i10);
         if (l10 == null) {
-            l10 = this.f22203a.f(i10);
+            l10 = this.f22204a.f(i10);
         }
         ArrayList arrayList = new ArrayList(l10);
         Collections.sort(arrayList, new b0.d(true));
@@ -333,13 +333,13 @@ public class k {
         m0.c o10 = i1Var.o(null);
         List j10 = j(i1Var.l(null), x2Var.getInputFormat());
         if (o10 == null) {
-            return this.f22207e.f(j10, x2Var);
+            return this.f22208e.f(j10, x2Var);
         }
         Size i10 = ((i1) x2Var).i(null);
         int z10 = i1Var.z(0);
         if (!x2Var.P(false)) {
             j10 = c(j10, o10, x2Var.getInputFormat());
         }
-        return p(i1Var.m(), j10, i10, z10, this.f22206d, this.f22204b, this.f22205c);
+        return p(i1Var.m(), j10, i10, z10, this.f22207d, this.f22205b, this.f22206c);
     }
 }

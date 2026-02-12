@@ -27,35 +27,35 @@ import qg.wa;
 public final class i extends wj.f {
 
     /* renamed from: j  reason: collision with root package name */
-    static final AtomicBoolean f23779j = new AtomicBoolean(true);
+    static final AtomicBoolean f23780j = new AtomicBoolean(true);
 
     /* renamed from: k  reason: collision with root package name */
-    private static final dk.d f23780k = dk.d.b();
+    private static final dk.d f23781k = dk.d.b();
 
     /* renamed from: d  reason: collision with root package name */
-    private final ek.e f23781d;
+    private final ek.e f23782d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final qd f23782e;
+    private final qd f23783e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final sd f23783f;
+    private final sd f23784f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final c f23784g;
+    private final c f23785g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f23785h;
+    private boolean f23786h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final dk.a f23786i = new dk.a();
+    private final dk.a f23787i = new dk.a();
 
     public i(qd qdVar, ek.e eVar, c cVar) {
         q.m(eVar, "FaceDetectorOptions can not be null");
-        this.f23781d = eVar;
-        this.f23782e = qdVar;
-        this.f23784g = cVar;
-        this.f23783f = sd.a(wj.i.c().b());
+        this.f23782d = eVar;
+        this.f23783e = qdVar;
+        this.f23785g = cVar;
+        this.f23784f = sd.a(wj.i.c().b());
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -69,7 +69,7 @@ public final class i extends wj.f {
     private final synchronized void n(final ca caVar, long j10, final ck.a aVar, final int i10, final int i11) {
         int i12;
         final long elapsedRealtime = SystemClock.elapsedRealtime() - j10;
-        this.f23782e.f(new od() { // from class: fk.g
+        this.f23783e.f(new od() { // from class: fk.g
             @Override // qg.od
             public final ed zza() {
                 return i.this.j(elapsedRealtime, caVar, i10, i11, aVar);
@@ -77,37 +77,37 @@ public final class i extends wj.f {
         }, da.ON_DEVICE_FACE_DETECT);
         o2 o2Var = new o2();
         o2Var.c(caVar);
-        o2Var.d(Boolean.valueOf(f23779j.get()));
+        o2Var.d(Boolean.valueOf(f23780j.get()));
         o2Var.a(Integer.valueOf(i10));
         o2Var.e(Integer.valueOf(i11));
-        o2Var.b(k.a(this.f23781d));
+        o2Var.b(k.a(this.f23782d));
         final q2 f10 = o2Var.f();
         final h hVar = new h(this);
-        final qd qdVar = this.f23782e;
+        final qd qdVar = this.f23783e;
         final da daVar = da.AGGREGATED_ON_DEVICE_FACE_DETECTION;
         wj.g.d().execute(new Runnable(daVar, f10, elapsedRealtime, hVar, null) { // from class: qg.ld
 
             /* renamed from: e  reason: collision with root package name */
-            public final /* synthetic */ da f44678e;
+            public final /* synthetic */ da f44679e;
 
             /* renamed from: i  reason: collision with root package name */
-            public final /* synthetic */ Object f44679i;
+            public final /* synthetic */ Object f44680i;
 
             /* renamed from: o  reason: collision with root package name */
-            public final /* synthetic */ long f44680o;
+            public final /* synthetic */ long f44681o;
 
             /* renamed from: p  reason: collision with root package name */
-            public final /* synthetic */ fk.h f44681p;
+            public final /* synthetic */ fk.h f44682p;
 
             @Override // java.lang.Runnable
             public final void run() {
-                qd.this.h(this.f44678e, this.f44679i, this.f44680o, this.f44681p);
+                qd.this.h(this.f44679e, this.f44680i, this.f44681o, this.f44682p);
             }
         });
         long currentTimeMillis = System.currentTimeMillis();
-        boolean z10 = this.f23785h;
+        boolean z10 = this.f23786h;
         long j11 = currentTimeMillis - elapsedRealtime;
-        sd sdVar = this.f23783f;
+        sd sdVar = this.f23784f;
         if (true != z10) {
             i12 = 24303;
         } else {
@@ -118,18 +118,18 @@ public final class i extends wj.f {
 
     @Override // wj.k
     public final synchronized void b() {
-        this.f23785h = this.f23784g.b();
+        this.f23786h = this.f23785g.b();
     }
 
     @Override // wj.k
     public final synchronized void d() {
         ba baVar;
         try {
-            this.f23784g.zzb();
-            f23779j.set(true);
-            qd qdVar = this.f23782e;
+            this.f23785g.zzb();
+            f23780j.set(true);
+            qd qdVar = this.f23783e;
             ea eaVar = new ea();
-            if (this.f23785h) {
+            if (this.f23786h) {
                 baVar = ba.TYPE_THICK;
             } else {
                 baVar = ba.TYPE_THIN;
@@ -149,15 +149,15 @@ public final class i extends wj.f {
         t9 t9Var = new t9();
         t9Var.c(Long.valueOf(j10));
         t9Var.d(caVar);
-        t9Var.e(Boolean.valueOf(f23779j.get()));
+        t9Var.e(Boolean.valueOf(f23780j.get()));
         Boolean bool = Boolean.TRUE;
         t9Var.a(bool);
         t9Var.b(bool);
         uaVar.g(t9Var.f());
-        uaVar.e(k.a(this.f23781d));
+        uaVar.e(k.a(this.f23782d));
         uaVar.d(Integer.valueOf(i10));
         uaVar.h(Integer.valueOf(i11));
-        dk.d dVar = f23780k;
+        dk.d dVar = f23781k;
         int c10 = dVar.c(aVar);
         int d10 = dVar.d(aVar);
         o9 o9Var = new o9();
@@ -187,7 +187,7 @@ public final class i extends wj.f {
         uaVar.f(o9Var.d());
         wa i12 = uaVar.i();
         ea eaVar = new ea();
-        if (this.f23785h) {
+        if (this.f23786h) {
             baVar = ba.TYPE_THICK;
         } else {
             baVar = ba.TYPE_THIN;
@@ -201,7 +201,7 @@ public final class i extends wj.f {
     public final /* synthetic */ ed k(q2 q2Var, int i10, e9 e9Var) {
         ba baVar;
         ea eaVar = new ea();
-        if (this.f23785h) {
+        if (this.f23786h) {
             baVar = ba.TYPE_THICK;
         } else {
             baVar = ba.TYPE_THIN;

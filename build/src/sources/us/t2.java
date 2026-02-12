@@ -30,25 +30,25 @@ import us.z2;
 public final class t2 implements KTypeBase {
 
     /* renamed from: p  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f51149p = {Reflection.property1(new PropertyReference1Impl(t2.class, "classifier", "getClassifier()Lkotlin/reflect/KClassifier;", 0)), Reflection.property1(new PropertyReference1Impl(t2.class, "arguments", "getArguments()Ljava/util/List;", 0))};
+    static final /* synthetic */ KProperty[] f51150p = {Reflection.property1(new PropertyReference1Impl(t2.class, "classifier", "getClassifier()Lkotlin/reflect/KClassifier;", 0)), Reflection.property1(new PropertyReference1Impl(t2.class, "arguments", "getArguments()Ljava/util/List;", 0))};
 
     /* renamed from: d  reason: collision with root package name */
-    private final KotlinType f51150d;
+    private final KotlinType f51151d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final z2.a f51151e;
+    private final z2.a f51152e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final z2.a f51152i;
+    private final z2.a f51153i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final z2.a f51153o;
+    private final z2.a f51154o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f51154a;
+        public static final /* synthetic */ int[] f51155a;
 
         static {
             int[] iArr = new int[Variance.values().length];
@@ -64,13 +64,13 @@ public final class t2 implements KTypeBase {
                 iArr[Variance.OUT_VARIANCE.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f51154a = iArr;
+            f51155a = iArr;
         }
     }
 
     public t2(KotlinType type, Function0 function0) {
         Intrinsics.checkNotNullParameter(type, "type");
-        this.f51150d = type;
+        this.f51151d = type;
         z2.a aVar = null;
         z2.a aVar2 = function0 instanceof z2.a ? (z2.a) function0 : null;
         if (aVar2 != null) {
@@ -78,16 +78,16 @@ public final class t2 implements KTypeBase {
         } else if (function0 != null) {
             aVar = z2.c(function0);
         }
-        this.f51151e = aVar;
-        this.f51152i = z2.c(new p2(this));
-        this.f51153o = z2.c(new q2(this, function0));
+        this.f51152e = aVar;
+        this.f51153i = z2.c(new p2(this));
+        this.f51154o = z2.c(new q2(this, function0));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final List f(t2 t2Var, Function0 function0) {
         s2 s2Var;
         KTypeProjection d10;
-        List<TypeProjection> arguments = t2Var.f51150d.getArguments();
+        List<TypeProjection> arguments = t2Var.f51151d.getArguments();
         if (arguments.isEmpty()) {
             return CollectionsKt.l();
         }
@@ -102,7 +102,7 @@ public final class t2 implements KTypeBase {
             }
             TypeProjection typeProjection = (TypeProjection) obj;
             if (typeProjection.isStarProjection()) {
-                d10 = KTypeProjection.f32091c.c();
+                d10 = KTypeProjection.f32092c.c();
             } else {
                 KotlinType type = typeProjection.getType();
                 Intrinsics.checkNotNullExpressionValue(type, "getType(...)");
@@ -112,19 +112,19 @@ public final class t2 implements KTypeBase {
                     s2Var = new s2(t2Var, i10, a10);
                 }
                 t2 t2Var2 = new t2(type, s2Var);
-                int i12 = a.f51154a[typeProjection.getProjectionKind().ordinal()];
+                int i12 = a.f51155a[typeProjection.getProjectionKind().ordinal()];
                 if (i12 != 1) {
                     if (i12 != 2) {
                         if (i12 == 3) {
-                            d10 = KTypeProjection.f32091c.b(t2Var2);
+                            d10 = KTypeProjection.f32092c.b(t2Var2);
                         } else {
                             throw new as.p();
                         }
                     } else {
-                        d10 = KTypeProjection.f32091c.a(t2Var2);
+                        d10 = KTypeProjection.f32092c.a(t2Var2);
                     }
                 } else {
-                    d10 = KTypeProjection.f32091c.d(t2Var2);
+                    d10 = KTypeProjection.f32092c.d(t2Var2);
                 }
             }
             arrayList.add(d10);
@@ -187,14 +187,14 @@ public final class t2 implements KTypeBase {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final kotlin.reflect.d j(t2 t2Var) {
-        return t2Var.k(t2Var.f51150d);
+        return t2Var.k(t2Var.f51151d);
     }
 
     private final kotlin.reflect.d k(KotlinType kotlinType) {
         KotlinType type;
-        ClassifierDescriptor mo1202getDeclarationDescriptor = kotlinType.getConstructor().mo1202getDeclarationDescriptor();
-        if (mo1202getDeclarationDescriptor instanceof ClassDescriptor) {
-            Class<?> q10 = j3.q((ClassDescriptor) mo1202getDeclarationDescriptor);
+        ClassifierDescriptor mo1201getDeclarationDescriptor = kotlinType.getConstructor().mo1201getDeclarationDescriptor();
+        if (mo1201getDeclarationDescriptor instanceof ClassDescriptor) {
+            Class<?> q10 = j3.q((ClassDescriptor) mo1201getDeclarationDescriptor);
             if (q10 == null) {
                 return null;
             }
@@ -217,10 +217,10 @@ public final class t2 implements KTypeBase {
             } else {
                 return new w0(q10);
             }
-        } else if (mo1202getDeclarationDescriptor instanceof TypeParameterDescriptor) {
-            return new v2(null, (TypeParameterDescriptor) mo1202getDeclarationDescriptor);
+        } else if (mo1201getDeclarationDescriptor instanceof TypeParameterDescriptor) {
+            return new v2(null, (TypeParameterDescriptor) mo1201getDeclarationDescriptor);
         } else {
-            if (!(mo1202getDeclarationDescriptor instanceof TypeAliasDescriptor)) {
+            if (!(mo1201getDeclarationDescriptor instanceof TypeAliasDescriptor)) {
                 return null;
             }
             throw new as.q("An operation is not implemented: Type alias classifiers are not yet supported");
@@ -230,7 +230,7 @@ public final class t2 implements KTypeBase {
     public boolean equals(Object obj) {
         if (obj instanceof t2) {
             t2 t2Var = (t2) obj;
-            if (Intrinsics.areEqual(this.f51150d, t2Var.f51150d) && Intrinsics.areEqual(getClassifier(), t2Var.getClassifier()) && Intrinsics.areEqual(getArguments(), t2Var.getArguments())) {
+            if (Intrinsics.areEqual(this.f51151d, t2Var.f51151d) && Intrinsics.areEqual(getClassifier(), t2Var.getClassifier()) && Intrinsics.areEqual(getArguments(), t2Var.getArguments())) {
                 return true;
             }
             return false;
@@ -240,24 +240,24 @@ public final class t2 implements KTypeBase {
 
     @Override // kotlin.jvm.internal.KTypeBase, kotlin.reflect.b
     public List getAnnotations() {
-        return j3.e(this.f51150d);
+        return j3.e(this.f51151d);
     }
 
     @Override // kotlin.jvm.internal.KTypeBase, kotlin.reflect.KType
     public List getArguments() {
-        Object b10 = this.f51153o.b(this, f51149p[1]);
+        Object b10 = this.f51154o.b(this, f51150p[1]);
         Intrinsics.checkNotNullExpressionValue(b10, "getValue(...)");
         return (List) b10;
     }
 
     @Override // kotlin.jvm.internal.KTypeBase, kotlin.reflect.KType
     public kotlin.reflect.d getClassifier() {
-        return (kotlin.reflect.d) this.f51152i.b(this, f51149p[0]);
+        return (kotlin.reflect.d) this.f51153i.b(this, f51150p[0]);
     }
 
     @Override // kotlin.jvm.internal.KTypeBase
     public Type getJavaType() {
-        z2.a aVar = this.f51151e;
+        z2.a aVar = this.f51152e;
         if (aVar != null) {
             return (Type) aVar.invoke();
         }
@@ -266,7 +266,7 @@ public final class t2 implements KTypeBase {
 
     public int hashCode() {
         int i10;
-        int hashCode = this.f51150d.hashCode() * 31;
+        int hashCode = this.f51151d.hashCode() * 31;
         kotlin.reflect.d classifier = getClassifier();
         if (classifier != null) {
             i10 = classifier.hashCode();
@@ -278,15 +278,15 @@ public final class t2 implements KTypeBase {
 
     @Override // kotlin.jvm.internal.KTypeBase, kotlin.reflect.KType
     public boolean isMarkedNullable() {
-        return this.f51150d.isMarkedNullable();
+        return this.f51151d.isMarkedNullable();
     }
 
     public final KotlinType l() {
-        return this.f51150d;
+        return this.f51151d;
     }
 
     public String toString() {
-        return d3.f51024a.l(this.f51150d);
+        return d3.f51025a.l(this.f51151d);
     }
 
     public /* synthetic */ t2(KotlinType kotlinType, Function0 function0, int i10, DefaultConstructorMarker defaultConstructorMarker) {

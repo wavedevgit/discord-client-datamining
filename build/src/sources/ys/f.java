@@ -3,14 +3,14 @@ package ys;
 public final class f extends kotlinx.coroutines.q {
 
     /* renamed from: t  reason: collision with root package name */
-    private final Thread f55792t;
+    private final Thread f55793t;
 
     public f(Thread thread) {
-        this.f55792t = thread;
+        this.f55793t = thread;
     }
 
     @Override // kotlinx.coroutines.r
     protected Thread w2() {
-        return this.f55792t;
+        return this.f55793t;
     }
 }

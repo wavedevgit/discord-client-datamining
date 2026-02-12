@@ -3,19 +3,19 @@ package com.google.android.gms.internal.fido;
 public final class s5 implements r5 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final s f14793a;
+    public static final s f14794a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final s f14794b;
+    public static final s f14795b;
 
     static {
         w b10 = new w("com.google.android.gms.fido").c(h1.p("FIDO")).b();
-        f14793a = b10.a("Passkeys__json_for_parcelables", false);
-        f14794b = b10.a("Passkeys__use_result_receiver", true);
+        f14794a = b10.a("Passkeys__json_for_parcelables", false);
+        f14795b = b10.a("Passkeys__use_result_receiver", true);
     }
 
     @Override // com.google.android.gms.internal.fido.r5
     public final boolean zza() {
-        return ((Boolean) f14793a.zza()).booleanValue();
+        return ((Boolean) f14794a.zza()).booleanValue();
     }
 }

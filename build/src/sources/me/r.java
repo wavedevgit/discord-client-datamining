@@ -18,88 +18,88 @@ import oe.w0;
 public final class r implements e, c0 {
 
     /* renamed from: p  reason: collision with root package name */
-    public static final qi.s f36391p = qi.s.x(4400000L, 3200000L, 2300000L, 1600000L, 810000L);
+    public static final qi.s f36392p = qi.s.x(4400000L, 3200000L, 2300000L, 1600000L, 810000L);
 
     /* renamed from: q  reason: collision with root package name */
-    public static final qi.s f36392q = qi.s.x(1400000L, 990000L, 730000L, 510000L, 230000L);
+    public static final qi.s f36393q = qi.s.x(1400000L, 990000L, 730000L, 510000L, 230000L);
 
     /* renamed from: r  reason: collision with root package name */
-    public static final qi.s f36393r = qi.s.x(2100000L, 1400000L, 1000000L, 890000L, 640000L);
+    public static final qi.s f36394r = qi.s.x(2100000L, 1400000L, 1000000L, 890000L, 640000L);
 
     /* renamed from: s  reason: collision with root package name */
-    public static final qi.s f36394s = qi.s.x(2600000L, 1700000L, 1300000L, 1000000L, 700000L);
+    public static final qi.s f36395s = qi.s.x(2600000L, 1700000L, 1300000L, 1000000L, 700000L);
 
     /* renamed from: t  reason: collision with root package name */
-    public static final qi.s f36395t = qi.s.x(5700000L, 3700000L, 2300000L, 1700000L, 990000L);
+    public static final qi.s f36396t = qi.s.x(5700000L, 3700000L, 2300000L, 1700000L, 990000L);
 
     /* renamed from: u  reason: collision with root package name */
-    public static final qi.s f36396u = qi.s.x(2800000L, 1800000L, 1400000L, 1100000L, 870000L);
+    public static final qi.s f36397u = qi.s.x(2800000L, 1800000L, 1400000L, 1100000L, 870000L);
 
     /* renamed from: v  reason: collision with root package name */
-    private static r f36397v;
+    private static r f36398v;
 
     /* renamed from: a  reason: collision with root package name */
-    private final qi.t f36398a;
+    private final qi.t f36399a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final e.a.C0515a f36399b;
+    private final e.a.C0515a f36400b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final z f36400c;
+    private final z f36401c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final oe.e f36401d;
+    private final oe.e f36402d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f36402e;
+    private final boolean f36403e;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f36403f;
+    private int f36404f;
 
     /* renamed from: g  reason: collision with root package name */
-    private long f36404g;
+    private long f36405g;
 
     /* renamed from: h  reason: collision with root package name */
-    private long f36405h;
+    private long f36406h;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f36406i;
+    private int f36407i;
 
     /* renamed from: j  reason: collision with root package name */
-    private long f36407j;
+    private long f36408j;
 
     /* renamed from: k  reason: collision with root package name */
-    private long f36408k;
+    private long f36409k;
 
     /* renamed from: l  reason: collision with root package name */
-    private long f36409l;
+    private long f36410l;
 
     /* renamed from: m  reason: collision with root package name */
-    private long f36410m;
+    private long f36411m;
 
     /* renamed from: n  reason: collision with root package name */
-    private boolean f36411n;
+    private boolean f36412n;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f36412o;
+    private int f36413o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Context f36413a;
+        private final Context f36414a;
 
         /* renamed from: b  reason: collision with root package name */
-        private Map f36414b;
+        private Map f36415b;
 
         /* renamed from: c  reason: collision with root package name */
-        private int f36415c;
+        private int f36416c;
 
         /* renamed from: d  reason: collision with root package name */
-        private oe.e f36416d;
+        private oe.e f36417d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f36417e;
+        private boolean f36418e;
 
         public b(Context context) {
             Context applicationContext;
@@ -108,30 +108,30 @@ public final class r implements e, c0 {
             } else {
                 applicationContext = context.getApplicationContext();
             }
-            this.f36413a = applicationContext;
-            this.f36414b = b(w0.O(context));
-            this.f36415c = 2000;
-            this.f36416d = oe.e.f38930a;
-            this.f36417e = true;
+            this.f36414a = applicationContext;
+            this.f36415b = b(w0.O(context));
+            this.f36416c = 2000;
+            this.f36417d = oe.e.f38931a;
+            this.f36418e = true;
         }
 
         private static Map b(String str) {
             int[] l10 = r.l(str);
             HashMap hashMap = new HashMap(8);
             hashMap.put(0, 1000000L);
-            qi.s sVar = r.f36391p;
+            qi.s sVar = r.f36392p;
             hashMap.put(2, (Long) sVar.get(l10[0]));
-            hashMap.put(3, (Long) r.f36392q.get(l10[1]));
-            hashMap.put(4, (Long) r.f36393r.get(l10[2]));
-            hashMap.put(5, (Long) r.f36394s.get(l10[3]));
-            hashMap.put(10, (Long) r.f36395t.get(l10[4]));
-            hashMap.put(9, (Long) r.f36396u.get(l10[5]));
+            hashMap.put(3, (Long) r.f36393q.get(l10[1]));
+            hashMap.put(4, (Long) r.f36394r.get(l10[2]));
+            hashMap.put(5, (Long) r.f36395s.get(l10[3]));
+            hashMap.put(10, (Long) r.f36396t.get(l10[4]));
+            hashMap.put(9, (Long) r.f36397u.get(l10[5]));
             hashMap.put(7, (Long) sVar.get(l10[0]));
             return hashMap;
         }
 
         public r a() {
-            return new r(this.f36413a, this.f36414b, this.f36415c, this.f36416d, this.f36417e);
+            return new r(this.f36414a, this.f36415b, this.f36416c, this.f36417d, this.f36418e);
         }
     }
 
@@ -1980,9 +1980,9 @@ public final class r implements e, c0 {
     }
 
     private long m(int i10) {
-        Long l10 = (Long) this.f36398a.get(Integer.valueOf(i10));
+        Long l10 = (Long) this.f36399a.get(Integer.valueOf(i10));
         if (l10 == null) {
-            l10 = (Long) this.f36398a.get(0);
+            l10 = (Long) this.f36399a.get(0);
         }
         if (l10 == null) {
             l10 = 1000000L;
@@ -1994,10 +1994,10 @@ public final class r implements e, c0 {
         r rVar;
         synchronized (r.class) {
             try {
-                if (f36397v == null) {
-                    f36397v = new b(context).a();
+                if (f36398v == null) {
+                    f36398v = new b(context).a();
                 }
-                rVar = f36397v;
+                rVar = f36398v;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -2013,11 +2013,11 @@ public final class r implements e, c0 {
     }
 
     private void p(int i10, long j10, long j11) {
-        if (i10 == 0 && j10 == 0 && j11 == this.f36410m) {
+        if (i10 == 0 && j10 == 0 && j11 == this.f36411m) {
             return;
         }
-        this.f36410m = j11;
-        this.f36399b.c(i10, j10, j11);
+        this.f36411m = j11;
+        this.f36400b.c(i10, j10, j11);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -2026,10 +2026,10 @@ public final class r implements e, c0 {
         int i11;
         try {
             try {
-                int i12 = this.f36406i;
+                int i12 = this.f36407i;
                 if (i12 != 0) {
                     try {
-                        if (!this.f36402e) {
+                        if (!this.f36403e) {
                             return;
                         }
                     } catch (Throwable th3) {
@@ -2037,27 +2037,27 @@ public final class r implements e, c0 {
                         throw th2;
                     }
                 }
-                if (this.f36411n) {
-                    i10 = this.f36412o;
+                if (this.f36412n) {
+                    i10 = this.f36413o;
                 }
                 if (i12 == i10) {
                     return;
                 }
-                this.f36406i = i10;
+                this.f36407i = i10;
                 if (i10 != 1 && i10 != 0 && i10 != 8) {
-                    this.f36409l = m(i10);
-                    long b10 = this.f36401d.b();
-                    if (this.f36403f > 0) {
-                        i11 = (int) (b10 - this.f36404g);
+                    this.f36410l = m(i10);
+                    long b10 = this.f36402d.b();
+                    if (this.f36404f > 0) {
+                        i11 = (int) (b10 - this.f36405g);
                     } else {
                         i11 = 0;
                     }
-                    p(i11, this.f36405h, this.f36409l);
-                    this.f36404g = b10;
-                    this.f36405h = 0L;
-                    this.f36408k = 0L;
-                    this.f36407j = 0L;
-                    this.f36400c.g();
+                    p(i11, this.f36406h, this.f36410l);
+                    this.f36405g = b10;
+                    this.f36406h = 0L;
+                    this.f36409k = 0L;
+                    this.f36408j = 0L;
+                    this.f36401c.g();
                 }
             } catch (Throwable th4) {
                 th = th4;
@@ -2073,11 +2073,11 @@ public final class r implements e, c0 {
 
     @Override // me.e
     public void a(e.a aVar) {
-        this.f36399b.d(aVar);
+        this.f36400b.d(aVar);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:18:0x004e, code lost:
-        if (r10.f36408k >= 524288) goto L17;
+        if (r10.f36409k >= 524288) goto L17;
      */
     @Override // me.c0
     /*
@@ -2093,7 +2093,7 @@ public final class r implements e, c0 {
             monitor-exit(r10)
             return
         L9:
-            int r11 = r10.f36403f     // Catch: java.lang.Throwable -> L72
+            int r11 = r10.f36404f     // Catch: java.lang.Throwable -> L72
             r12 = 1
             if (r11 <= 0) goto L10
             r11 = r12
@@ -2102,35 +2102,35 @@ public final class r implements e, c0 {
             r11 = 0
         L11:
             oe.a.g(r11)     // Catch: java.lang.Throwable -> L72
-            oe.e r11 = r10.f36401d     // Catch: java.lang.Throwable -> L72
+            oe.e r11 = r10.f36402d     // Catch: java.lang.Throwable -> L72
             long r0 = r11.b()     // Catch: java.lang.Throwable -> L72
-            long r2 = r10.f36404g     // Catch: java.lang.Throwable -> L72
+            long r2 = r10.f36405g     // Catch: java.lang.Throwable -> L72
             long r2 = r0 - r2
             int r5 = (int) r2     // Catch: java.lang.Throwable -> L72
-            long r2 = r10.f36407j     // Catch: java.lang.Throwable -> L72
+            long r2 = r10.f36408j     // Catch: java.lang.Throwable -> L72
             long r6 = (long) r5     // Catch: java.lang.Throwable -> L72
             long r2 = r2 + r6
-            r10.f36407j = r2     // Catch: java.lang.Throwable -> L72
-            long r2 = r10.f36408k     // Catch: java.lang.Throwable -> L72
-            long r6 = r10.f36405h     // Catch: java.lang.Throwable -> L72
+            r10.f36408j = r2     // Catch: java.lang.Throwable -> L72
+            long r2 = r10.f36409k     // Catch: java.lang.Throwable -> L72
+            long r6 = r10.f36406h     // Catch: java.lang.Throwable -> L72
             long r2 = r2 + r6
-            r10.f36408k = r2     // Catch: java.lang.Throwable -> L72
+            r10.f36409k = r2     // Catch: java.lang.Throwable -> L72
             if (r5 <= 0) goto L75
             float r11 = (float) r6     // Catch: java.lang.Throwable -> L72
             r13 = 1174011904(0x45fa0000, float:8000.0)
             float r11 = r11 * r13
             float r13 = (float) r5     // Catch: java.lang.Throwable -> L72
             float r11 = r11 / r13
-            me.z r13 = r10.f36400c     // Catch: java.lang.Throwable -> L72
+            me.z r13 = r10.f36401c     // Catch: java.lang.Throwable -> L72
             double r2 = (double) r6     // Catch: java.lang.Throwable -> L72
             double r2 = java.lang.Math.sqrt(r2)     // Catch: java.lang.Throwable -> L72
             int r2 = (int) r2     // Catch: java.lang.Throwable -> L72
             r13.c(r2, r11)     // Catch: java.lang.Throwable -> L72
-            long r2 = r10.f36407j     // Catch: java.lang.Throwable -> L72
+            long r2 = r10.f36408j     // Catch: java.lang.Throwable -> L72
             r6 = 2000(0x7d0, double:9.88E-321)
             int r11 = (r2 > r6 ? 1 : (r2 == r6 ? 0 : -1))
             if (r11 >= 0) goto L55
-            long r2 = r10.f36408k     // Catch: java.lang.Throwable -> L51
+            long r2 = r10.f36409k     // Catch: java.lang.Throwable -> L51
             r6 = 524288(0x80000, double:2.590327E-318)
             int r11 = (r2 > r6 ? 1 : (r2 == r6 ? 0 : -1))
             if (r11 < 0) goto L60
@@ -2141,19 +2141,19 @@ public final class r implements e, c0 {
             r4 = r10
             goto L7d
         L55:
-            me.z r11 = r10.f36400c     // Catch: java.lang.Throwable -> L72
+            me.z r11 = r10.f36401c     // Catch: java.lang.Throwable -> L72
             r13 = 1056964608(0x3f000000, float:0.5)
             float r11 = r11.f(r13)     // Catch: java.lang.Throwable -> L72
             long r2 = (long) r11     // Catch: java.lang.Throwable -> L72
-            r10.f36409l = r2     // Catch: java.lang.Throwable -> L72
+            r10.f36410l = r2     // Catch: java.lang.Throwable -> L72
         L60:
-            long r6 = r10.f36405h     // Catch: java.lang.Throwable -> L72
-            long r8 = r10.f36409l     // Catch: java.lang.Throwable -> L72
+            long r6 = r10.f36406h     // Catch: java.lang.Throwable -> L72
+            long r8 = r10.f36410l     // Catch: java.lang.Throwable -> L72
             r4 = r10
             r4.p(r5, r6, r8)     // Catch: java.lang.Throwable -> L6f
-            r4.f36404g = r0     // Catch: java.lang.Throwable -> L6f
+            r4.f36405g = r0     // Catch: java.lang.Throwable -> L6f
             r0 = 0
-            r4.f36405h = r0     // Catch: java.lang.Throwable -> L6f
+            r4.f36406h = r0     // Catch: java.lang.Throwable -> L6f
             goto L76
         L6f:
             r0 = move-exception
@@ -2167,9 +2167,9 @@ public final class r implements e, c0 {
         L75:
             r4 = r10
         L76:
-            int r11 = r4.f36403f     // Catch: java.lang.Throwable -> L6f
+            int r11 = r4.f36404f     // Catch: java.lang.Throwable -> L6f
             int r11 = r11 - r12
-            r4.f36403f = r11     // Catch: java.lang.Throwable -> L6f
+            r4.f36404f = r11     // Catch: java.lang.Throwable -> L6f
             monitor-exit(r10)
             return
         L7d:
@@ -2183,12 +2183,12 @@ public final class r implements e, c0 {
     public void d(Handler handler, e.a aVar) {
         oe.a.e(handler);
         oe.a.e(aVar);
-        this.f36399b.b(handler, aVar);
+        this.f36400b.b(handler, aVar);
     }
 
     @Override // me.e
     public synchronized long f() {
-        return this.f36409l;
+        return this.f36410l;
     }
 
     @Override // me.c0
@@ -2196,7 +2196,7 @@ public final class r implements e, c0 {
         if (!o(aVar, z10)) {
             return;
         }
-        this.f36405h += i10;
+        this.f36406h += i10;
     }
 
     @Override // me.c0
@@ -2205,26 +2205,26 @@ public final class r implements e, c0 {
             if (!o(aVar, z10)) {
                 return;
             }
-            if (this.f36403f == 0) {
-                this.f36404g = this.f36401d.b();
+            if (this.f36404f == 0) {
+                this.f36405g = this.f36402d.b();
             }
-            this.f36403f++;
+            this.f36404f++;
         } catch (Throwable th2) {
             throw th2;
         }
     }
 
     private r(Context context, Map map, int i10, oe.e eVar, boolean z10) {
-        this.f36398a = qi.t.c(map);
-        this.f36399b = new e.a.C0515a();
-        this.f36400c = new z(i10);
-        this.f36401d = eVar;
-        this.f36402e = z10;
+        this.f36399a = qi.t.c(map);
+        this.f36400b = new e.a.C0515a();
+        this.f36401c = new z(i10);
+        this.f36402d = eVar;
+        this.f36403e = z10;
         if (context != null) {
             f0 d10 = f0.d(context);
             int f10 = d10.f();
-            this.f36406i = f10;
-            this.f36409l = m(f10);
+            this.f36407i = f10;
+            this.f36410l = m(f10);
             d10.h(new f0.c() { // from class: me.q
                 @Override // oe.f0.c
                 public final void a(int i11) {
@@ -2233,8 +2233,8 @@ public final class r implements e, c0 {
             });
             return;
         }
-        this.f36406i = 0;
-        this.f36409l = m(0);
+        this.f36407i = 0;
+        this.f36410l = m(0);
     }
 
     @Override // me.e

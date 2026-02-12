@@ -118,7 +118,7 @@ public class z0 implements z {
     }
 
     public z0(Toolbar toolbar, boolean z10) {
-        this(toolbar, z10, f.h.f23396a, f.e.f23337n);
+        this(toolbar, z10, f.h.f23397a, f.e.f23338n);
     }
 
     private void E(CharSequence charSequence) {
@@ -232,7 +232,7 @@ public class z0 implements z {
         if (this.f2016n == null) {
             c cVar = new c(this.f2003a.getContext());
             this.f2016n = cVar;
-            cVar.r(f.f.f23357h);
+            cVar.r(f.f.f23358h);
         }
         this.f2016n.c(aVar);
         this.f2003a.K((androidx.appcompat.view.menu.e) menu, this.f2016n);
@@ -450,56 +450,56 @@ public class z0 implements z {
         this.f2012j = toolbar.getSubtitle();
         this.f2010h = this.f2011i != null;
         this.f2009g = toolbar.getNavigationIcon();
-        v0 v10 = v0.v(toolbar.getContext(), null, f.j.f23416a, f.a.f23278c, 0);
-        this.f2019q = v10.g(f.j.f23471l);
+        v0 v10 = v0.v(toolbar.getContext(), null, f.j.f23417a, f.a.f23279c, 0);
+        this.f2019q = v10.g(f.j.f23472l);
         if (z10) {
-            CharSequence p10 = v10.p(f.j.f23501r);
+            CharSequence p10 = v10.p(f.j.f23502r);
             if (!TextUtils.isEmpty(p10)) {
                 setTitle(p10);
             }
-            CharSequence p11 = v10.p(f.j.f23491p);
+            CharSequence p11 = v10.p(f.j.f23492p);
             if (!TextUtils.isEmpty(p11)) {
                 D(p11);
             }
-            Drawable g10 = v10.g(f.j.f23481n);
+            Drawable g10 = v10.g(f.j.f23482n);
             if (g10 != null) {
                 A(g10);
             }
-            Drawable g11 = v10.g(f.j.f23476m);
+            Drawable g11 = v10.g(f.j.f23477m);
             if (g11 != null) {
                 setIcon(g11);
             }
             if (this.f2009g == null && (drawable = this.f2019q) != null) {
                 w(drawable);
             }
-            i(v10.k(f.j.f23451h, 0));
-            int n10 = v10.n(f.j.f23446g, 0);
+            i(v10.k(f.j.f23452h, 0));
+            int n10 = v10.n(f.j.f23447g, 0);
             if (n10 != 0) {
                 y(LayoutInflater.from(this.f2003a.getContext()).inflate(n10, (ViewGroup) this.f2003a, false));
                 i(this.f2004b | 16);
             }
-            int m10 = v10.m(f.j.f23461j, 0);
+            int m10 = v10.m(f.j.f23462j, 0);
             if (m10 > 0) {
                 ViewGroup.LayoutParams layoutParams = this.f2003a.getLayoutParams();
                 layoutParams.height = m10;
                 this.f2003a.setLayoutParams(layoutParams);
             }
-            int e10 = v10.e(f.j.f23441f, -1);
-            int e11 = v10.e(f.j.f23436e, -1);
+            int e10 = v10.e(f.j.f23442f, -1);
+            int e11 = v10.e(f.j.f23437e, -1);
             if (e10 >= 0 || e11 >= 0) {
                 this.f2003a.J(Math.max(e10, 0), Math.max(e11, 0));
             }
-            int n11 = v10.n(f.j.f23506s, 0);
+            int n11 = v10.n(f.j.f23507s, 0);
             if (n11 != 0) {
                 Toolbar toolbar2 = this.f2003a;
                 toolbar2.N(toolbar2.getContext(), n11);
             }
-            int n12 = v10.n(f.j.f23496q, 0);
+            int n12 = v10.n(f.j.f23497q, 0);
             if (n12 != 0) {
                 Toolbar toolbar3 = this.f2003a;
                 toolbar3.M(toolbar3.getContext(), n12);
             }
-            int n13 = v10.n(f.j.f23486o, 0);
+            int n13 = v10.n(f.j.f23487o, 0);
             if (n13 != 0) {
                 this.f2003a.setPopupTheme(n13);
             }

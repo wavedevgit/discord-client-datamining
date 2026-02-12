@@ -21,16 +21,16 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class a {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final C0507a f36106b = new C0507a(null);
+    public static final C0507a f36107b = new C0507a(null);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Set f36107c = x0.i(7, 20);
+    private static final Set f36108c = x0.i(7, 20);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final int f36108d = 1;
+    private static final int f36109d = 1;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f36109a;
+    private final Context f36110a;
 
     /* renamed from: m2.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -50,7 +50,7 @@ public abstract class a {
         }
 
         public final int b() {
-            return a.f36108d;
+            return a.f36109d;
         }
 
         public final m c(String str, String str2) {
@@ -72,7 +72,7 @@ public abstract class a {
         }
 
         public final Set d() {
-            return a.f36107c;
+            return a.f36108c;
         }
 
         public final void e(ResultReceiver resultReceiver, String errName, String errMsg) {
@@ -101,7 +101,7 @@ public abstract class a {
 
     public a(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f36109a = context;
+        this.f36110a = context;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -110,7 +110,7 @@ public abstract class a {
         Intrinsics.checkNotNullParameter(hiddenIntent, "hiddenIntent");
         Intrinsics.checkNotNullParameter(typeTag, "typeTag");
         hiddenIntent.putExtra("TYPE", typeTag);
-        hiddenIntent.putExtra("ACTIVITY_REQUEST_CODE", f36108d);
+        hiddenIntent.putExtra("ACTIVITY_REQUEST_CODE", f36109d);
         hiddenIntent.putExtra("RESULT_RECEIVER", d(resultReceiver));
         hiddenIntent.setFlags(65536);
     }

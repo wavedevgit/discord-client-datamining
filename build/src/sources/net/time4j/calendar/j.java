@@ -7,15 +7,15 @@ public abstract class j {
     public static class a extends j {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ int f37336a;
+        final /* synthetic */ int f37337a;
 
         a(int i10) {
-            this.f37336a = i10;
+            this.f37337a = i10;
         }
 
         @Override // net.time4j.calendar.j
         public int d() {
-            return zt.c.e(this.f37336a, 2636);
+            return zt.c.e(this.f37337a, 2636);
         }
     }
 

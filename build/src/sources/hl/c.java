@@ -11,35 +11,35 @@ import ok.n;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int[] f27414a = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 36, -1, -1, -1, 37, 38, -1, -1, -1, -1, 39, 40, -1, 41, 42, 43, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 44, -1, -1, -1, -1, -1, -1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, -1, -1, -1, -1, -1};
+    private static final int[] f27415a = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 36, -1, -1, -1, 37, 38, -1, -1, -1, -1, 39, 40, -1, 41, 42, 43, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 44, -1, -1, -1, -1, -1, -1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, -1, -1, -1, -1, -1};
 
     /* renamed from: b  reason: collision with root package name */
-    static final Charset f27415b = StandardCharsets.ISO_8859_1;
+    static final Charset f27416b = StandardCharsets.ISO_8859_1;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f27416a;
+        static final /* synthetic */ int[] f27417a;
 
         static {
             int[] iArr = new int[h.values().length];
-            f27416a = iArr;
+            f27417a = iArr;
             try {
                 iArr[h.NUMERIC.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f27416a[h.ALPHANUMERIC.ordinal()] = 2;
+                f27417a[h.ALPHANUMERIC.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f27416a[h.BYTE.ordinal()] = 3;
+                f27417a[h.BYTE.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f27416a[h.KANJI.ordinal()] = 4;
+                f27417a[h.KANJI.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
         }
@@ -78,7 +78,7 @@ public abstract class c {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void c(String str, h hVar, ok.a aVar, Charset charset) {
-        int i10 = a.f27416a[hVar.ordinal()];
+        int i10 = a.f27417a[hVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
@@ -110,7 +110,7 @@ public abstract class c {
     */
     static void e(java.lang.String r6, ok.a r7) {
         /*
-            java.nio.charset.Charset r0 = ok.n.f40212b
+            java.nio.charset.Charset r0 = ok.n.f40213b
             if (r0 == 0) goto L5e
             byte[] r6 = r6.getBytes(r0)
             int r0 = r6.length
@@ -234,7 +234,7 @@ public abstract class c {
     }
 
     private static h l(String str, Charset charset) {
-        Charset charset2 = n.f40212b;
+        Charset charset2 = n.f40213b;
         if (charset2 != null && charset2.equals(charset) && s(str)) {
             return h.KANJI;
         }
@@ -299,7 +299,7 @@ public abstract class c {
         for (int i11 = 0; i11 < length; i11++) {
             iArr[i11] = bArr[i11] & 255;
         }
-        new qk.d(qk.a.f45438l).b(iArr, i10);
+        new qk.d(qk.a.f45439l).b(iArr, i10);
         byte[] bArr2 = new byte[i10];
         for (int i12 = 0; i12 < i10; i12++) {
             bArr2[i12] = (byte) iArr[length + i12];
@@ -309,7 +309,7 @@ public abstract class c {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static int p(int i10) {
-        int[] iArr = f27414a;
+        int[] iArr = f27415a;
         if (i10 < iArr.length) {
             return iArr[i10];
         }
@@ -405,7 +405,7 @@ public abstract class c {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean s(String str) {
-        byte[] bytes = str.getBytes(n.f40212b);
+        byte[] bytes = str.getBytes(n.f40213b);
         int length = bytes.length;
         if (length % 2 != 0) {
             return false;

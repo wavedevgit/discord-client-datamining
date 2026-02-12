@@ -22,70 +22,70 @@ import xv.t;
 public class h implements cw.h {
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Set f55192p = new LinkedHashSet(Arrays.asList(aw.b.class, aw.i.class, aw.g.class, aw.j.class, x.class, aw.p.class, aw.m.class));
+    private static final Set f55193p = new LinkedHashSet(Arrays.asList(aw.b.class, aw.i.class, aw.g.class, aw.j.class, x.class, aw.p.class, aw.m.class));
 
     /* renamed from: q  reason: collision with root package name */
-    private static final Map f55193q;
+    private static final Map f55194q;
 
     /* renamed from: a  reason: collision with root package name */
-    private CharSequence f55194a;
+    private CharSequence f55195a;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f55197d;
+    private boolean f55198d;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f55201h;
+    private boolean f55202h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final List f55202i;
+    private final List f55203i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final bw.c f55203j;
+    private final bw.c f55204j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final List f55204k;
+    private final List f55205k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final g f55205l;
+    private final g f55206l;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f55195b = 0;
+    private int f55196b = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f55196c = 0;
+    private int f55197c = 0;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f55198e = 0;
+    private int f55199e = 0;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f55199f = 0;
+    private int f55200f = 0;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f55200g = 0;
+    private int f55201g = 0;
 
     /* renamed from: m  reason: collision with root package name */
-    private final Map f55206m = new LinkedHashMap();
+    private final Map f55207m = new LinkedHashMap();
 
     /* renamed from: n  reason: collision with root package name */
-    private List f55207n = new ArrayList();
+    private List f55208n = new ArrayList();
 
     /* renamed from: o  reason: collision with root package name */
-    private Set f55208o = new LinkedHashSet();
+    private Set f55209o = new LinkedHashSet();
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static class a implements cw.g {
 
         /* renamed from: a  reason: collision with root package name */
-        private final cw.d f55209a;
+        private final cw.d f55210a;
 
         public a(cw.d dVar) {
-            this.f55209a = dVar;
+            this.f55210a = dVar;
         }
 
         @Override // cw.g
         public CharSequence a() {
-            cw.d dVar = this.f55209a;
+            cw.d dVar = this.f55210a;
             if (!(dVar instanceof r)) {
                 return null;
             }
@@ -98,7 +98,7 @@ public class h implements cw.h {
 
         @Override // cw.g
         public cw.d b() {
-            return this.f55209a;
+            return this.f55210a;
         }
     }
 
@@ -111,21 +111,21 @@ public class h implements cw.h {
         hashMap.put(x.class, new t.a());
         hashMap.put(aw.p.class, new p.a());
         hashMap.put(aw.m.class, new l.a());
-        f55193q = Collections.unmodifiableMap(hashMap);
+        f55194q = Collections.unmodifiableMap(hashMap);
     }
 
     public h(List list, bw.c cVar, List list2) {
-        this.f55202i = list;
-        this.f55203j = cVar;
-        this.f55204k = list2;
+        this.f55203i = list;
+        this.f55204j = cVar;
+        this.f55205k = list2;
         g gVar = new g();
-        this.f55205l = gVar;
+        this.f55206l = gVar;
         e(gVar);
     }
 
     private void e(cw.d dVar) {
-        this.f55207n.add(dVar);
-        this.f55208o.add(dVar);
+        this.f55208n.add(dVar);
+        this.f55209o.add(dVar);
     }
 
     private cw.d f(cw.d dVar) {
@@ -141,18 +141,18 @@ public class h implements cw.h {
         for (aw.o oVar : rVar.j()) {
             rVar.d().i(oVar);
             String n10 = oVar.n();
-            if (!this.f55206m.containsKey(n10)) {
-                this.f55206m.put(n10, oVar);
+            if (!this.f55207m.containsKey(n10)) {
+                this.f55207m.put(n10, oVar);
             }
         }
     }
 
     private void h() {
         CharSequence subSequence;
-        if (this.f55197d) {
-            CharSequence charSequence = this.f55194a;
-            CharSequence subSequence2 = charSequence.subSequence(this.f55195b + 1, charSequence.length());
-            int a10 = zv.d.a(this.f55196c);
+        if (this.f55198d) {
+            CharSequence charSequence = this.f55195a;
+            CharSequence subSequence2 = charSequence.subSequence(this.f55196b + 1, charSequence.length());
+            int a10 = zv.d.a(this.f55197c);
             StringBuilder sb2 = new StringBuilder(subSequence2.length() + a10);
             for (int i10 = 0; i10 < a10; i10++) {
                 sb2.append(' ');
@@ -160,21 +160,21 @@ public class h implements cw.h {
             sb2.append(subSequence2);
             subSequence = sb2.toString();
         } else {
-            CharSequence charSequence2 = this.f55194a;
-            subSequence = charSequence2.subSequence(this.f55195b, charSequence2.length());
+            CharSequence charSequence2 = this.f55195a;
+            subSequence = charSequence2.subSequence(this.f55196b, charSequence2.length());
         }
         d().e(subSequence);
     }
 
     private void i() {
-        if (this.f55194a.charAt(this.f55195b) == '\t') {
-            this.f55195b++;
-            int i10 = this.f55196c;
-            this.f55196c = i10 + zv.d.a(i10);
+        if (this.f55195a.charAt(this.f55196b) == '\t') {
+            this.f55196b++;
+            int i10 = this.f55197c;
+            this.f55197c = i10 + zv.d.a(i10);
             return;
         }
-        this.f55195b++;
-        this.f55196c++;
+        this.f55196b++;
+        this.f55197c++;
     }
 
     public static List j(List list, Set set) {
@@ -182,13 +182,13 @@ public class h implements cw.h {
         arrayList.addAll(list);
         Iterator it = set.iterator();
         while (it.hasNext()) {
-            arrayList.add(f55193q.get((Class) it.next()));
+            arrayList.add(f55194q.get((Class) it.next()));
         }
         return arrayList;
     }
 
     private void k() {
-        List list = this.f55207n;
+        List list = this.f55208n;
         list.remove(list.size() - 1);
     }
 
@@ -203,9 +203,9 @@ public class h implements cw.h {
     }
 
     private aw.e m() {
-        n(this.f55207n);
+        n(this.f55208n);
         u();
-        return this.f55205l.d();
+        return this.f55206l.d();
     }
 
     private void n(List list) {
@@ -216,7 +216,7 @@ public class h implements cw.h {
 
     private d o(cw.d dVar) {
         a aVar = new a(dVar);
-        for (cw.e eVar : this.f55202i) {
+        for (cw.e eVar : this.f55203i) {
             cw.f a10 = eVar.a(this, aVar);
             if (a10 instanceof d) {
                 return (d) a10;
@@ -226,18 +226,18 @@ public class h implements cw.h {
     }
 
     private void p() {
-        int i10 = this.f55195b;
-        int i11 = this.f55196c;
-        this.f55201h = true;
-        int length = this.f55194a.length();
+        int i10 = this.f55196b;
+        int i11 = this.f55197c;
+        this.f55202h = true;
+        int length = this.f55195a.length();
         while (true) {
             if (i10 >= length) {
                 break;
             }
-            char charAt = this.f55194a.charAt(i10);
+            char charAt = this.f55195a.charAt(i10);
             if (charAt != '\t') {
                 if (charAt != ' ') {
-                    this.f55201h = false;
+                    this.f55202h = false;
                     break;
                 } else {
                     i10++;
@@ -248,17 +248,17 @@ public class h implements cw.h {
                 i11 += 4 - (i11 % 4);
             }
         }
-        this.f55198e = i10;
-        this.f55199f = i11;
-        this.f55200g = i11 - this.f55196c;
+        this.f55199e = i10;
+        this.f55200f = i11;
+        this.f55201g = i11 - this.f55197c;
     }
 
     public static Set q() {
-        return f55192p;
+        return f55193p;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:50:0x00f7, code lost:
-        w(r10.f55198e);
+        w(r10.f55199e);
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -275,7 +275,7 @@ public class h implements cw.h {
     private void t() {
         cw.d d10 = d();
         k();
-        this.f55208o.remove(d10);
+        this.f55209o.remove(d10);
         if (d10 instanceof r) {
             g((r) d10);
         }
@@ -283,87 +283,87 @@ public class h implements cw.h {
     }
 
     private void u() {
-        bw.a a10 = this.f55203j.a(new m(this.f55204k, this.f55206m));
-        for (cw.d dVar : this.f55208o) {
+        bw.a a10 = this.f55204j.a(new m(this.f55205k, this.f55207m));
+        for (cw.d dVar : this.f55209o) {
             dVar.h(a10);
         }
     }
 
     private void v(int i10) {
         int i11;
-        int i12 = this.f55199f;
+        int i12 = this.f55200f;
         if (i10 >= i12) {
-            this.f55195b = this.f55198e;
-            this.f55196c = i12;
+            this.f55196b = this.f55199e;
+            this.f55197c = i12;
         }
-        int length = this.f55194a.length();
+        int length = this.f55195a.length();
         while (true) {
-            i11 = this.f55196c;
-            if (i11 >= i10 || this.f55195b == length) {
+            i11 = this.f55197c;
+            if (i11 >= i10 || this.f55196b == length) {
                 break;
             }
             i();
         }
         if (i11 > i10) {
-            this.f55195b--;
-            this.f55196c = i10;
-            this.f55197d = true;
+            this.f55196b--;
+            this.f55197c = i10;
+            this.f55198d = true;
             return;
         }
-        this.f55197d = false;
+        this.f55198d = false;
     }
 
     private void w(int i10) {
-        int i11 = this.f55198e;
+        int i11 = this.f55199e;
         if (i10 >= i11) {
-            this.f55195b = i11;
-            this.f55196c = this.f55199f;
+            this.f55196b = i11;
+            this.f55197c = this.f55200f;
         }
-        int length = this.f55194a.length();
+        int length = this.f55195a.length();
         while (true) {
-            int i12 = this.f55195b;
+            int i12 = this.f55196b;
             if (i12 >= i10 || i12 == length) {
                 break;
             }
             i();
         }
-        this.f55197d = false;
+        this.f55198d = false;
     }
 
     @Override // cw.h
     public int a() {
-        return this.f55200g;
+        return this.f55201g;
     }
 
     @Override // cw.h
     public boolean b() {
-        return this.f55201h;
+        return this.f55202h;
     }
 
     @Override // cw.h
     public int c() {
-        return this.f55198e;
+        return this.f55199e;
     }
 
     @Override // cw.h
     public cw.d d() {
-        List list = this.f55207n;
+        List list = this.f55208n;
         return (cw.d) list.get(list.size() - 1);
     }
 
     @Override // cw.h
     public int getColumn() {
-        return this.f55196c;
+        return this.f55197c;
     }
 
     @Override // cw.h
     public int getIndex() {
-        return this.f55195b;
+        return this.f55196b;
     }
 
     @Override // cw.h
     public CharSequence getLine() {
-        return this.f55194a;
+        return this.f55195a;
     }
 
     public aw.e s(String str) {

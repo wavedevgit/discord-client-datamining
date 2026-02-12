@@ -21,15 +21,15 @@ public abstract class h extends th.h {
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // th.h
         public void w(Canvas canvas) {
-            if (this.U.f16350x.isEmpty()) {
+            if (this.U.f16351x.isEmpty()) {
                 super.w(canvas);
                 return;
             }
             canvas.save();
             if (Build.VERSION.SDK_INT >= 26) {
-                canvas.clipOutRect(this.U.f16350x);
+                canvas.clipOutRect(this.U.f16351x);
             } else {
-                canvas.clipRect(this.U.f16350x, Region.Op.DIFFERENCE);
+                canvas.clipRect(this.U.f16351x, Region.Op.DIFFERENCE);
             }
             super.w(canvas);
             canvas.restore();
@@ -51,7 +51,7 @@ public abstract class h extends th.h {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean A0() {
-        return !this.U.f16350x.isEmpty();
+        return !this.U.f16351x.isEmpty();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -60,10 +60,10 @@ public abstract class h extends th.h {
     }
 
     void C0(float f10, float f11, float f12, float f13) {
-        if (f10 == this.U.f16350x.left && f11 == this.U.f16350x.top && f12 == this.U.f16350x.right && f13 == this.U.f16350x.bottom) {
+        if (f10 == this.U.f16351x.left && f11 == this.U.f16351x.top && f12 == this.U.f16351x.right && f13 == this.U.f16351x.bottom) {
             return;
         }
-        this.U.f16350x.set(f10, f11, f12, f13);
+        this.U.f16351x.set(f10, f11, f12, f13);
         invalidateSelf();
     }
 
@@ -83,7 +83,7 @@ public abstract class h extends th.h {
     public static final class b extends h.c {
 
         /* renamed from: x  reason: collision with root package name */
-        private final RectF f16350x;
+        private final RectF f16351x;
 
         @Override // th.h.c, android.graphics.drawable.Drawable.ConstantState
         public Drawable newDrawable() {
@@ -94,12 +94,12 @@ public abstract class h extends th.h {
 
         private b(th.l lVar, RectF rectF) {
             super(lVar, null);
-            this.f16350x = rectF;
+            this.f16351x = rectF;
         }
 
         private b(b bVar) {
             super(bVar);
-            this.f16350x = bVar.f16350x;
+            this.f16351x = bVar.f16351x;
         }
     }
 

@@ -24,10 +24,10 @@ import zt.d;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final AtomicBoolean f55838a = new AtomicBoolean(false);
+    private static final AtomicBoolean f55839a = new AtomicBoolean(false);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final AtomicBoolean f55839b = new AtomicBoolean(false);
+    private static final AtomicBoolean f55840b = new AtomicBoolean(false);
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -89,14 +89,14 @@ public abstract class a {
     }
 
     public static void c(Context context, yt.b bVar) {
-        if (!f55838a.getAndSet(true)) {
+        if (!f55839a.getAndSet(true)) {
             System.setProperty("net.time4j.base.ResourceLoader", "net.time4j.android.spi.AndroidResourceLoader");
             ((AndroidResourceLoader) d.c()).j(context, bVar);
         }
     }
 
     public static void d(Context context) {
-        if (context != null && !f55839b.getAndSet(true)) {
+        if (context != null && !f55840b.getAndSet(true)) {
             System.setProperty("net.time4j.allow.system.tz.override", "true");
             context.registerReceiver(new c(), new IntentFilter("android.intent.action.TIMEZONE_CHANGED"));
         }

@@ -6,22 +6,22 @@ import java.util.concurrent.Executor;
 final class u implements h0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Executor f56472a;
+    private final Executor f56473a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final c f56473b;
+    private final c f56474b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final m0 f56474c;
+    private final m0 f56475c;
 
     public u(Executor executor, c cVar, m0 m0Var) {
-        this.f56472a = executor;
-        this.f56473b = cVar;
-        this.f56474c = m0Var;
+        this.f56473a = executor;
+        this.f56474b = cVar;
+        this.f56475c = m0Var;
     }
 
     @Override // zg.h0
     public final void b(Task task) {
-        this.f56472a.execute(new t(this, task));
+        this.f56473a.execute(new t(this, task));
     }
 }

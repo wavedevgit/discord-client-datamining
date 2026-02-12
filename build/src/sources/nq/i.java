@@ -6,14 +6,14 @@ import kotlin.jvm.internal.Intrinsics;
 public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f38331a;
+    private final Map f38332a;
 
     public i(Map componentNameToComponentView) {
         Intrinsics.checkNotNullParameter(componentNameToComponentView, "componentNameToComponentView");
-        this.f38331a = componentNameToComponentView;
+        this.f38332a = componentNameToComponentView;
     }
 
     public final Map a() {
-        return this.f38331a;
+        return this.f38332a;
     }
 }

@@ -24,7 +24,7 @@ public class f extends CheckBox implements androidx.core.widget.k {
     private AppCompatEmojiTextHelper f1785o;
 
     public f(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, f.a.f23290o);
+        this(context, attributeSet, f.a.f23291o);
     }
 
     @NonNull

@@ -43,13 +43,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/profile_customization/useOpenProfileSettings.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun60392: for (var _fun60392_ip = 0;;) switch (_fun60392_ip) {
+        _fun68485: for (var _fun68485_ip = 0;;) switch (_fun68485_ip) {
             case 0:
                 var1 = arguments[0];
                 var3 = undefined;
                 if (!(var1 === var3)) {
-                    _fun60392_ip = 13;
-                    continue _fun60392
+                    _fun68485_ip = 13;
+                    continue _fun68485
                 }
             case 11:
                 var1 = {};
@@ -69,13 +69,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[2] = var5;
                 var1[3] = var4;
                 var0 = function() { // Environment: var0
-                    _fun60393: for (var _fun60393_ip = 0;;) switch (_fun60393_ip) {
+                    _fun68486: for (var _fun68486_ip = 0;;) switch (_fun68486_ip) {
                         case 0:
                             var0 = _closure2_slot0;
                             var6 = null;
                             if (!(var6 != var0)) {
-                                _fun60393_ip = 58;
-                                continue _fun60393
+                                _fun68486_ip = 58;
+                                continue _fun68486
                             }
                         case 13:
                             var2 = _closure1_slot0;
@@ -102,14 +102,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.screen = var4;
                             var4 = _closure2_slot0;
                             if (!(var6 == var4)) {
-                                _fun60393_ip = 126;
-                                continue _fun60393
+                                _fun68486_ip = 126;
+                                continue _fun68486
                             }
                         case 114:
                             var4 = _closure1_slot4;
                             var4 = var4.USER_PROFILE;
-                            _fun60393_ip = 136;
-                            continue _fun60393;
+                            _fun68486_ip = 136;
+                            continue _fun68486;
                         case 126:
                             var5 = _closure1_slot4;
                             var4 = var5.GUILD;
@@ -131,4 +131,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 665, 5644, 5984, 5783, 5983, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 665, 5642, 6003, 5781, 6002, 2]);

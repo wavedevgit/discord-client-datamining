@@ -111,175 +111,6 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = 'getDateTimeFormatter';
         var0.key = var1;
         var1 = function() {
-            _fun13744: for (var _fun13744_ip = 0;;) switch (_fun13744_ip) {
-                case 0:
-                    var4 = this;
-                    var2 = undefined;
-                    var1 = arguments.length;
-                    var0 = global;
-                    var0 = var0.Array;
-                    var3 = var0.prototype;
-                    var3 = Object.create(var3, {
-                        constructor: {
-                            value: var0
-                        }
-                    });
-                    var9 = var3;
-                    var8 = var1;
-                    var0 = new var9[var0](var8, var7);
-                    var3 = var0 instanceof Object ? var0 : var3;
-                    var0 = 0;
-                    var5 = var0 < var1;
-                    if (!var5) {
-                        _fun13744_ip = 63;
-                        continue _fun13744
-                    }
-                case 48:
-                    var5 = arguments[var0];
-                    var3[var0] = var5;
-                    var0 = var0 + 1;
-                    if (var0 < var1) {
-                        _fun13744_ip = 48;
-                        continue _fun13744
-                    }
-                case 63:
-                    var2 = var4._getCached;
-                    var1 = var4.dateTime;
-                    var0 = function(arg0) { // Environment: var0
-                        var3 = _closure1_slot0;
-                        var1 = global;
-                        var1 = var1.Intl;
-                        var2 = var1.DateTimeFormat;
-                        var4 = _closure1_slot1;
-                        var1 = undefined;
-                        var0 = arg0;
-                        var0 = var4.bind(var1)(var0);
-                        var0 = var3.bind(var1)(var2, var0);
-                        return var0;
-                    };
-                    var0 = var2.bind(var4)(var1, var3, var0);
-                    return var0;
-            }
-        };
-        var0.value = var1;
-        var1 = new Array(8);
-        var1[0] = var0;
-        var0 = {};
-        var5 = 'getDurationFormatter';
-        var0.key = var5;
-        var5 = function() {
-            _fun13746: for (var _fun13746_ip = 0;;) switch (_fun13746_ip) {
-                case 0:
-                    var4 = this;
-                    var2 = undefined;
-                    var1 = arguments.length;
-                    var0 = global;
-                    var0 = var0.Array;
-                    var3 = var0.prototype;
-                    var3 = Object.create(var3, {
-                        constructor: {
-                            value: var0
-                        }
-                    });
-                    var9 = var3;
-                    var8 = var1;
-                    var0 = new var9[var0](var8, var7);
-                    var3 = var0 instanceof Object ? var0 : var3;
-                    var0 = 0;
-                    var5 = var0 < var1;
-                    if (!var5) {
-                        _fun13746_ip = 63;
-                        continue _fun13746
-                    }
-                case 48:
-                    var5 = arguments[var0];
-                    var3[var0] = var5;
-                    var0 = var0 + 1;
-                    if (var0 < var1) {
-                        _fun13746_ip = 48;
-                        continue _fun13746
-                    }
-                case 63:
-                    var2 = var4._getCached;
-                    var1 = var4.duration;
-                    var0 = function(arg0) { // Environment: var0
-                        var3 = _closure1_slot0;
-                        var1 = global;
-                        var1 = var1.Intl;
-                        var2 = var1.DurationFormat;
-                        var4 = _closure1_slot1;
-                        var1 = undefined;
-                        var0 = arg0;
-                        var0 = var4.bind(var1)(var0);
-                        var0 = var3.bind(var1)(var2, var0);
-                        return var0;
-                    };
-                    var0 = var2.bind(var4)(var1, var3, var0);
-                    return var0;
-            }
-        };
-        var0.value = var5;
-        var1[1] = var0;
-        var0 = {};
-        var5 = 'getListFormatter';
-        var0.key = var5;
-        var5 = function() {
-            _fun13748: for (var _fun13748_ip = 0;;) switch (_fun13748_ip) {
-                case 0:
-                    var4 = this;
-                    var2 = undefined;
-                    var1 = arguments.length;
-                    var0 = global;
-                    var0 = var0.Array;
-                    var3 = var0.prototype;
-                    var3 = Object.create(var3, {
-                        constructor: {
-                            value: var0
-                        }
-                    });
-                    var9 = var3;
-                    var8 = var1;
-                    var0 = new var9[var0](var8, var7);
-                    var3 = var0 instanceof Object ? var0 : var3;
-                    var0 = 0;
-                    var5 = var0 < var1;
-                    if (!var5) {
-                        _fun13748_ip = 63;
-                        continue _fun13748
-                    }
-                case 48:
-                    var5 = arguments[var0];
-                    var3[var0] = var5;
-                    var0 = var0 + 1;
-                    if (var0 < var1) {
-                        _fun13748_ip = 48;
-                        continue _fun13748
-                    }
-                case 63:
-                    var2 = var4._getCached;
-                    var1 = var4.list;
-                    var0 = function(arg0) { // Environment: var0
-                        var3 = _closure1_slot0;
-                        var1 = global;
-                        var1 = var1.Intl;
-                        var2 = var1.ListFormat;
-                        var4 = _closure1_slot1;
-                        var1 = undefined;
-                        var0 = arg0;
-                        var0 = var4.bind(var1)(var0);
-                        var0 = var3.bind(var1)(var2, var0);
-                        return var0;
-                    };
-                    var0 = var2.bind(var4)(var1, var3, var0);
-                    return var0;
-            }
-        };
-        var0.value = var5;
-        var1[2] = var0;
-        var0 = {};
-        var5 = 'getNumberFormatter';
-        var0.key = var5;
-        var5 = function() {
             _fun13750: for (var _fun13750_ip = 0;;) switch (_fun13750_ip) {
                 case 0:
                     var4 = this;
@@ -313,12 +144,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 case 63:
                     var2 = var4._getCached;
-                    var1 = var4.number;
+                    var1 = var4.dateTime;
                     var0 = function(arg0) { // Environment: var0
                         var3 = _closure1_slot0;
                         var1 = global;
                         var1 = var1.Intl;
-                        var2 = var1.NumberFormat;
+                        var2 = var1.DateTimeFormat;
                         var4 = _closure1_slot1;
                         var1 = undefined;
                         var0 = arg0;
@@ -330,10 +161,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     return var0;
             }
         };
-        var0.value = var5;
-        var1[3] = var0;
+        var0.value = var1;
+        var1 = new Array(8);
+        var1[0] = var0;
         var0 = {};
-        var5 = 'getPluralRules';
+        var5 = 'getDurationFormatter';
         var0.key = var5;
         var5 = function() {
             _fun13752: for (var _fun13752_ip = 0;;) switch (_fun13752_ip) {
@@ -369,12 +201,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 case 63:
                     var2 = var4._getCached;
-                    var1 = var4.pluralRules;
+                    var1 = var4.duration;
                     var0 = function(arg0) { // Environment: var0
                         var3 = _closure1_slot0;
                         var1 = global;
                         var1 = var1.Intl;
-                        var2 = var1.PluralRules;
+                        var2 = var1.DurationFormat;
                         var4 = _closure1_slot1;
                         var1 = undefined;
                         var0 = arg0;
@@ -387,9 +219,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             }
         };
         var0.value = var5;
-        var1[4] = var0;
+        var1[1] = var0;
         var0 = {};
-        var5 = 'getRelativeTimeFormatter';
+        var5 = 'getListFormatter';
         var0.key = var5;
         var5 = function() {
             _fun13754: for (var _fun13754_ip = 0;;) switch (_fun13754_ip) {
@@ -425,6 +257,174 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     }
                 case 63:
                     var2 = var4._getCached;
+                    var1 = var4.list;
+                    var0 = function(arg0) { // Environment: var0
+                        var3 = _closure1_slot0;
+                        var1 = global;
+                        var1 = var1.Intl;
+                        var2 = var1.ListFormat;
+                        var4 = _closure1_slot1;
+                        var1 = undefined;
+                        var0 = arg0;
+                        var0 = var4.bind(var1)(var0);
+                        var0 = var3.bind(var1)(var2, var0);
+                        return var0;
+                    };
+                    var0 = var2.bind(var4)(var1, var3, var0);
+                    return var0;
+            }
+        };
+        var0.value = var5;
+        var1[2] = var0;
+        var0 = {};
+        var5 = 'getNumberFormatter';
+        var0.key = var5;
+        var5 = function() {
+            _fun13756: for (var _fun13756_ip = 0;;) switch (_fun13756_ip) {
+                case 0:
+                    var4 = this;
+                    var2 = undefined;
+                    var1 = arguments.length;
+                    var0 = global;
+                    var0 = var0.Array;
+                    var3 = var0.prototype;
+                    var3 = Object.create(var3, {
+                        constructor: {
+                            value: var0
+                        }
+                    });
+                    var9 = var3;
+                    var8 = var1;
+                    var0 = new var9[var0](var8, var7);
+                    var3 = var0 instanceof Object ? var0 : var3;
+                    var0 = 0;
+                    var5 = var0 < var1;
+                    if (!var5) {
+                        _fun13756_ip = 63;
+                        continue _fun13756
+                    }
+                case 48:
+                    var5 = arguments[var0];
+                    var3[var0] = var5;
+                    var0 = var0 + 1;
+                    if (var0 < var1) {
+                        _fun13756_ip = 48;
+                        continue _fun13756
+                    }
+                case 63:
+                    var2 = var4._getCached;
+                    var1 = var4.number;
+                    var0 = function(arg0) { // Environment: var0
+                        var3 = _closure1_slot0;
+                        var1 = global;
+                        var1 = var1.Intl;
+                        var2 = var1.NumberFormat;
+                        var4 = _closure1_slot1;
+                        var1 = undefined;
+                        var0 = arg0;
+                        var0 = var4.bind(var1)(var0);
+                        var0 = var3.bind(var1)(var2, var0);
+                        return var0;
+                    };
+                    var0 = var2.bind(var4)(var1, var3, var0);
+                    return var0;
+            }
+        };
+        var0.value = var5;
+        var1[3] = var0;
+        var0 = {};
+        var5 = 'getPluralRules';
+        var0.key = var5;
+        var5 = function() {
+            _fun13758: for (var _fun13758_ip = 0;;) switch (_fun13758_ip) {
+                case 0:
+                    var4 = this;
+                    var2 = undefined;
+                    var1 = arguments.length;
+                    var0 = global;
+                    var0 = var0.Array;
+                    var3 = var0.prototype;
+                    var3 = Object.create(var3, {
+                        constructor: {
+                            value: var0
+                        }
+                    });
+                    var9 = var3;
+                    var8 = var1;
+                    var0 = new var9[var0](var8, var7);
+                    var3 = var0 instanceof Object ? var0 : var3;
+                    var0 = 0;
+                    var5 = var0 < var1;
+                    if (!var5) {
+                        _fun13758_ip = 63;
+                        continue _fun13758
+                    }
+                case 48:
+                    var5 = arguments[var0];
+                    var3[var0] = var5;
+                    var0 = var0 + 1;
+                    if (var0 < var1) {
+                        _fun13758_ip = 48;
+                        continue _fun13758
+                    }
+                case 63:
+                    var2 = var4._getCached;
+                    var1 = var4.pluralRules;
+                    var0 = function(arg0) { // Environment: var0
+                        var3 = _closure1_slot0;
+                        var1 = global;
+                        var1 = var1.Intl;
+                        var2 = var1.PluralRules;
+                        var4 = _closure1_slot1;
+                        var1 = undefined;
+                        var0 = arg0;
+                        var0 = var4.bind(var1)(var0);
+                        var0 = var3.bind(var1)(var2, var0);
+                        return var0;
+                    };
+                    var0 = var2.bind(var4)(var1, var3, var0);
+                    return var0;
+            }
+        };
+        var0.value = var5;
+        var1[4] = var0;
+        var0 = {};
+        var5 = 'getRelativeTimeFormatter';
+        var0.key = var5;
+        var5 = function() {
+            _fun13760: for (var _fun13760_ip = 0;;) switch (_fun13760_ip) {
+                case 0:
+                    var4 = this;
+                    var2 = undefined;
+                    var1 = arguments.length;
+                    var0 = global;
+                    var0 = var0.Array;
+                    var3 = var0.prototype;
+                    var3 = Object.create(var3, {
+                        constructor: {
+                            value: var0
+                        }
+                    });
+                    var9 = var3;
+                    var8 = var1;
+                    var0 = new var9[var0](var8, var7);
+                    var3 = var0 instanceof Object ? var0 : var3;
+                    var0 = 0;
+                    var5 = var0 < var1;
+                    if (!var5) {
+                        _fun13760_ip = 63;
+                        continue _fun13760
+                    }
+                case 48:
+                    var5 = arguments[var0];
+                    var3[var0] = var5;
+                    var0 = var0 + 1;
+                    if (var0 < var1) {
+                        _fun13760_ip = 48;
+                        continue _fun13760
+                    }
+                case 63:
+                    var2 = var4._getCached;
                     var1 = var4.relativeTime;
                     var0 = function(arg0) { // Environment: var0
                         var3 = _closure1_slot0;
@@ -448,7 +448,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = '_getCached';
         var0.key = var5;
         var5 = function arg0, arg1, arg2() {
-            _fun13756: for (var _fun13756_ip = 0;;) switch (_fun13756_ip) {
+            _fun13762: for (var _fun13762_ip = 0;;) switch (_fun13762_ip) {
                 case 0:
                     var4 = arg0;
                     var5 = arg1;
@@ -458,8 +458,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var4.get;
                     var0 = var0.bind(var4)(var3);
                     if (var0) {
-                        _fun13756_ip = 56;
-                        continue _fun13756
+                        _fun13762_ip = 56;
+                        continue _fun13762
                     }
                 case 33:
                     var2 = arg2;
@@ -478,7 +478,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = '_getKey';
         var0.key = var5;
         var4 = function() {
-            _fun13757: for (var _fun13757_ip = 0;;) switch (_fun13757_ip) {
+            _fun13763: for (var _fun13763_ip = 0;;) switch (_fun13763_ip) {
                 case 0:
                     var4 = undefined;
                     var3 = arguments.length;
@@ -497,16 +497,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = 0;
                     var5 = var1 < var3;
                     if (!var5) {
-                        _fun13757_ip = 60;
-                        continue _fun13757
+                        _fun13763_ip = 60;
+                        continue _fun13763
                     }
                 case 45:
                     var5 = arguments[var1];
                     var2[var1] = var5;
                     var1 = var1 + 1;
                     if (var1 < var3) {
-                        _fun13757_ip = 45;
-                        continue _fun13757
+                        _fun13763_ip = 45;
+                        continue _fun13763
                     }
                 case 60:
                     var1 = var0.JSON;

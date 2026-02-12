@@ -62,14 +62,14 @@ public enum xe implements n2 {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f39835d;
+    private final int f39836d;
 
     xe(int i10) {
-        this.f39835d = i10;
+        this.f39836d = i10;
     }
 
     @Override // og.n2
     public final int zza() {
-        return this.f39835d;
+        return this.f39836d;
     }
 }

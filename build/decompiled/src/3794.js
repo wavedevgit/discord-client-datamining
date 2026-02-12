@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun33910: for (var _fun33910_ip = 0;;) switch (_fun33910_ip) {
+    _fun33932: for (var _fun33932_ip = 0;;) switch (_fun33932_ip) {
         case 0:
             var2 = exports;
             var0 = global;
@@ -21,8 +21,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var4 = var3.bind(var4)();
             var3 = 1;
             if (!var4) {
-                _fun33910_ip = 82;
-                continue _fun33910
+                _fun33932_ip = 82;
+                continue _fun33932
             }
         case 72:
             var3 = 0.05;
@@ -33,15 +33,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var _closure1_slot0 = var4;
             var1 = function() { // Environment: var1
                 var0 = function arg0() {
-                    _fun33912: for (var _fun33912_ip = 0;;) switch (_fun33912_ip) {
+                    _fun33934: for (var _fun33934_ip = 0;;) switch (_fun33934_ip) {
                         case 0:
                             var1 = arg0;
                             var0 = var1.rubberBandEffect;
                             var2 = !var0;
                             var0 = !var2;
                             if (var2) {
-                                _fun33912_ip = 42;
-                                continue _fun33912
+                                _fun33934_ip = 42;
+                                continue _fun33934
                             }
                         case 18:
                             var2 = global;
@@ -51,8 +51,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0 = var3.bind(var4)(var2);
                         case 42:
                             if (!var0) {
-                                _fun33912_ip = 63;
-                                continue _fun33912
+                                _fun33934_ip = 63;
+                                continue _fun33934
                             }
                         case 45:
                             var1 = var1.clamp;

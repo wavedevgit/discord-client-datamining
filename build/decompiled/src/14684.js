@@ -1,202 +1,245 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var5 = metroImportDefault;
     var2 = exports;
-    var3 = dependencyMap;
-    var0 = require;
-    var _closure1_slot0 = var0;
-    var _closure1_slot1 = var3;
-    var0 = global;
-    var6 = var0.Object;
-    var5 = var6.defineProperty;
+    var6 = dependencyMap;
+    var0 = function arg0, arg1, arg2() {
+        _fun114758: for (var _fun114758_ip = 0;;) switch (_fun114758_ip) {
+            case 0:
+                var3 = arg0;
+                var5 = arg2;
+                var1 = _closure1_slot3;
+                var2 = undefined;
+                var0 = arg1;
+                var8 = var1.bind(var2)(var0);
+                var1 = _closure1_slot2;
+                var0 = _closure1_slot7;
+                var0 = var0.bind(var2)();
+                if (var0) {
+                    _fun114758_ip = 51;
+                    continue _fun114758
+                }
+            case 38:
+                var0 = var8.apply;
+                var0 = var0.bind(var8)(var3, var5);
+                _fun114758_ip = 92;
+                continue _fun114758;
+            case 51:
+                var6 = global;
+                var7 = var6.Reflect;
+                var6 = var7.construct;
+                if (var5) {
+                    _fun114758_ip = 71;
+                    continue _fun114758
+                }
+            case 67:
+                var5 = new Array(0);
+            case 71:
+                var4 = _closure1_slot3;
+                var4 = var4.bind(var2)(var3);
+                var4 = var4.constructor;
+                var0 = var6.bind(var7)(var8, var5, var4);
+            case 92:
+                var0 = var1.bind(var2)(var3, var0);
+                return var0;
+        }
+    };
+    var _closure1_slot6 = var0;
+    var0 = function() {
+        _fun114759: for (var _fun114759_ip = 0;;) switch (_fun114759_ip) {
+            case 0:
+            case 2: // try_start_0
+                var1 = global;
+                var2 = var1.Boolean;
+                var2 = var2.prototype;
+                var3 = var2.valueOf;
+                var2 = var3.call;
+                var7 = var1.Reflect;
+                var6 = var7.construct;
+                var5 = var1.Boolean;
+                var4 = new Array(0);
+                var1 = function() { // Environment: var0
+                    var0 = undefined;
+                    return var0;
+                };
+                var1 = var6.bind(var7)(var5, var4, var1);
+                var1 = var2.bind(var3)(var1);
+                var1 = !var1;
+                var _closure2_slot0 = var1;
+            case 72: // try_end0
+                _fun114759_ip = 76;
+                continue _fun114759;
+            case 74: // catch_target0
+                CatchBlockStart(arg_register = 1);
+            case 76:
+                var1 = function() {
+                    var0 = _closure2_slot0;
+                    var0 = !var0;
+                    var0 = !var0;
+                    return var0;
+                };
+                _closure1_slot7 = var1;
+                var0 = undefined;
+                var0 = var1.bind(var0)();
+                return var0;
+        }
+    };
+    var _closure1_slot7 = var0;
+    var3 = global;
+    var8 = var3.Object;
+    var7 = var8.defineProperty;
     var4 = {};
     var0 = true;
     var4.value = var0;
     var0 = '__esModule';
-    var0 = var5.bind(var6)(var2, var0, var4);
+    var0 = var7.bind(var8)(var2, var0, var4);
     var0 = 0;
-    var4 = var3[var0];
-    var3 = metroImportDefault;
+    var4 = var6[var0];
     var0 = undefined;
-    var3 = var3.bind(var0)(var4);
-    var _closure1_slot2 = var3;
-    var3 = function() { // Environment: var1
-        var3 = _closure1_slot2;
-        var2 = undefined;
-        var1 = function*(arg0, arg1) { // Environment: var0
-            var0 = function*(arg0, arg1) { // Original name: ?anon_0_, environment: var0
-                _fun114730: for (var _fun114730_ip = 0;;) switch (_fun114730_ip) {
-                    case 0:
-                        StartGenerator();
-                        var2 = arg0;
-                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
-                        if (var1) {
-                            _fun114730_ip = 62;
-                            continue _fun114730
-                        }
-                    case 10:
-                        var1 = var2.isEligible;
-                        var1 = !var1;
-                        if (var1) {
-                            _fun114730_ip = 59;
-                            continue _fun114730
-                        }
-                    case 22:
-                        var3 = global;
-                        var4 = var3.Boolean;
-                        var3 = var2.lowerBound;
-                        if (!var3) {
-                            _fun114730_ip = 52;
-                            continue _fun114730
-                        }
-                    case 39:
-                        var5 = var2.lowerBound;
-                        var2 = arg1;
-                        var3 = var5 >= var2;
-                    case 52:
-                        var2 = undefined;
-                        var1 = var4.bind(var2)(var3);
-                    case 59:
-                        return var1;
-                    case 62:
-                        return var0;
-                }
-            };
-            return var0;
+    var4 = var5.bind(var0)(var4);
+    var _closure1_slot0 = var4;
+    var4 = 1;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var _closure1_slot1 = var4;
+    var4 = 2;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var _closure1_slot2 = var4;
+    var4 = 3;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var _closure1_slot3 = var4;
+    var4 = 4;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var _closure1_slot4 = var4;
+    var4 = 5;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var5 = 6;
+    var6 = var6[var5];
+    var5 = arg1;
+    var5 = var5.bind(var0)(var6);
+    var6 = var5.NativeModules;
+    var _closure1_slot5 = var6;
+    var5 = var5.Platform;
+    var3 = var3.Error;
+    var3 = var4.bind(var0)(var3);
+    var1 = function(arg0) { // Environment: var1
+        var2 = function arg0() {
+            _fun114763: for (var _fun114763_ip = 0;;) switch (_fun114763_ip) {
+                case 0:
+                    var5 = this;
+                    var4 = _closure1_slot1;
+                    var3 = _closure2_slot0;
+                    var2 = undefined;
+                    var3 = var4.bind(var2)(var5, var3);
+                    var3 = _closure1_slot5;
+                    var6 = var3.NativeUnimoduleProxy;
+                    var4 = null;
+                    var7 = var4 == var6;
+                    var3 = undefined;
+                    if (var7) {
+                        _fun114763_ip = 71;
+                        continue _fun114763
+                    }
+                case 48:
+                    var6 = var6.modulesConstants;
+                    var7 = var4 == var6;
+                    var3 = undefined;
+                    if (var7) {
+                        _fun114763_ip = 71;
+                        continue _fun114763
+                    }
+                case 65:
+                    var3 = var6.ExponentConstants;
+                case 71:
+                    var6 = var4 != var3;
+                    var4 = 'react-native';
+                    if (!var6) {
+                        _fun114763_ip = 107;
+                        continue _fun114763
+                    }
+                case 82:
+                    var6 = var3.appOwnership;
+                    var3 = 'expo';
+                    if (!(var3 === var6)) {
+                        _fun114763_ip = 104;
+                        continue _fun114763
+                    }
+                case 98:
+                    var3 = 'expo-go';
+                case 104:
+                    var4 = var3;
+                case 107:
+                    var3 = 'expo-go';
+                    if (!(var3 !== var4)) {
+                        _fun114763_ip = 293;
+                        continue _fun114763
+                    }
+                case 120:
+                    var6 = new Array(0);
+                    var7 = var6.push;
+                    var3 = 'Make sure react-native-nitro-modules/NitroModules is correctly autolinked (run `npx react-native config` to verify)';
+                    var3 = var7.bind(var6)(var3);
+                    var7 = var6.push;
+                    var3 = 'Make sure you enabled the new architecture (TurboModules) and CodeGen properly generated the "NativeNitroModules"/NitroModules specs. See https://github.com/reactwg/react-native-new-architecture/blob/main/docs/enable-apps.md';
+                    var3 = var7.bind(var6)(var3);
+                    var7 = var6.push;
+                    var3 = 'Make sure you are using react-native 0.75.0 or higher.';
+                    var3 = var7.bind(var6)(var3);
+                    var7 = var6.push;
+                    var3 = 'Make sure you rebuilt the app.';
+                    var3 = var7.bind(var6)(var3);
+                    var3 = 'expo';
+                    if (!(var3 === var4)) {
+                        _fun114763_ip = 212;
+                        continue _fun114763
+                    }
+                case 196:
+                    var4 = var6.push;
+                    var3 = 'Make sure you ran `expo prebuild`.';
+                    var3 = var4.bind(var6)(var3);
+                case 212:
+                    var4 = var6.push;
+                    var3 = 'Make sure gradle is synced.';
+                    var3 = var4.bind(var6)(var3);
+                    var4 = var6.join;
+                    var3 = '\n* ';
+                    var4 = var4.bind(var6)(var3);
+                    var3 = 'Failed to get NitroModules: The native "NitroModules" Turbo/Native-Module could not be found.\n* ';
+                    var7 = var3 + var4;
+                    var6 = _closure1_slot6;
+                    var4 = _closure2_slot0;
+                    var3 = new Array(2);
+                    var3[0] = var7;
+                    var7 = {};
+                    var8 = arg0;
+                    var7.cause = var8;
+                    var3[1] = var7;
+                    var3 = var6.bind(var2)(var5, var4, var3);
+                    return var3;
+                case 293:
+                    var4 = _closure1_slot6;
+                    var3 = _closure2_slot0;
+                    var1 = ['NitroModules are not supported in Expo Go! Use EAS (`expo prebuild`) or eject to a bare workflow instead.'];
+                    var1 = var4.bind(var2)(var5, var3, var1);
+                    var0 = _closure1_slot2;
+                    var0 = var0.bind(var2)(var1);
+                    return var0;
+            }
         };
-        var1 = var3.bind(var2)(var1);
-        var _closure2_slot0 = var1;
-        var0 = function arg0, arg1() {
-            var0 = undefined;
-            var3 = _closure2_slot0;
-            var2 = var3.apply;
-            var0 = arguments;
-            var1 = var0;
-            var0 = this;
-            var0 = var2.bind(var3)(var0, var1);
-            return var0;
-        };
+        var _closure2_slot0 = var2;
+        var4 = _closure1_slot4;
+        var1 = undefined;
+        var3 = arg0;
+        var3 = var4.bind(var1)(var2, var3);
+        var0 = _closure1_slot0;
+        var0 = var0.bind(var1)(var2);
         return var0;
     };
-    var3 = var3.bind(var0)();
-    var1 = function() { // Environment: var1
-        var3 = _closure1_slot2;
-        var2 = undefined;
-        var1 = function*(arg0, arg1) { // Environment: var0
-            var0 = function*(arg0, arg1) { // Original name: ?anon_0_, environment: var0
-                _fun114734: for (var _fun114734_ip = 0;;) switch (_fun114734_ip) {
-                    case 0:
-                        StartGenerator();
-                        var4 = arg0;
-                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
-                        if (var1) {
-                            _fun114734_ip = 253;
-                            continue _fun114734
-                        }
-                    case 13:
-                        var1 = var4.isEligible;
-                        if (var1) {
-                            _fun114734_ip = 27;
-                            continue _fun114734
-                        }
-                    case 22:
-                        var1 = true;
-                        return var1;
-                    case 27:
-                        var6 = var4.userStatus;
-                        var7 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var5 = 1;
-                        var2 = var2[var5];
-                        var3 = undefined;
-                        var2 = var7.bind(var3)(var2);
-                        var2 = var2.PlayAgeRangeDeclarationUserStatus;
-                        var2 = var2.VERIFIED;
-                        if (!(var2 !== var6)) {
-                            _fun114734_ip = 248;
-                            continue _fun114734
-                        }
-                    case 77:
-                        var7 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var2 = var2[var5];
-                        var2 = var7.bind(var3)(var2);
-                        var2 = var2.PlayAgeRangeDeclarationUserStatus;
-                        var2 = var2.SUPERVISED;
-                        if (!(var2 !== var6)) {
-                            _fun114734_ip = 210;
-                            continue _fun114734
-                        }
-                    case 110:
-                        var7 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var2 = var2[var5];
-                        var2 = var7.bind(var3)(var2);
-                        var2 = var2.PlayAgeRangeDeclarationUserStatus;
-                        var2 = var2.SUPERVISED_APPROVAL_PENDING;
-                        if (!(var2 !== var6)) {
-                            _fun114734_ip = 210;
-                            continue _fun114734
-                        }
-                    case 143:
-                        var7 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var2 = var2[var5];
-                        var2 = var7.bind(var3)(var2);
-                        var2 = var2.PlayAgeRangeDeclarationUserStatus;
-                        var2 = var2.SUPERVISED_APPROVAL_DENIED;
-                        if (!(var2 !== var6)) {
-                            _fun114734_ip = 210;
-                            continue _fun114734
-                        }
-                    case 176:
-                        var2 = _closure1_slot0;
-                        var1 = _closure1_slot1;
-                        var1 = var1[var5];
-                        var1 = var2.bind(var3)(var1);
-                        var1 = var1.PlayAgeRangeDeclarationUserStatus;
-                        var1 = var1.UNKNOWN;
-                        var1 = false;
-                        return var1;
-                    case 210:
-                        var1 = global;
-                        var2 = var1.Boolean;
-                        var1 = var4.ageLower;
-                        if (!var1) {
-                            _fun114734_ip = 240;
-                            continue _fun114734
-                        }
-                    case 227:
-                        var5 = var4.ageLower;
-                        var4 = arg1;
-                        var1 = var5 >= var4;
-                    case 240:
-                        var1 = var2.bind(var3)(var1);
-                        return var1;
-                    case 248:
-                        var1 = true;
-                        return var1;
-                    case 253:
-                        return var0;
-                }
-            };
-            return var0;
-        };
-        var1 = var3.bind(var2)(var1);
-        var _closure2_slot0 = var1;
-        var0 = function arg0, arg1() {
-            var0 = undefined;
-            var3 = _closure2_slot0;
-            var2 = var3.apply;
-            var0 = arguments;
-            var1 = var0;
-            var0 = this;
-            var0 = var2.bind(var3)(var0, var1);
-            return var0;
-        };
-        return var0;
-    };
-    var1 = var1.bind(var0)();
-    var2.getIsConsideredOlderThaniOS = var3;
-    var2.getIsConsideredOlderThanAndroid = var1;
+    var1 = var1.bind(var0)(var3);
+    var2.ModuleNotFoundError = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 14685]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6, 15, 17, 18, 162, 27]);

@@ -13,25 +13,25 @@ import org.jetbrains.annotations.NotNull;
 public final class ExchangeOneTimeLinkCodeResponseJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20216a;
+    private final m.b f20217a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f20217b;
+    private final com.squareup.moshi.h f20218b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final com.squareup.moshi.h f20218c;
+    private final com.squareup.moshi.h f20219c;
 
     public ExchangeOneTimeLinkCodeResponseJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("data", "meta");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20216a = a10;
+        this.f20217a = a10;
         com.squareup.moshi.h f10 = moshi.f(ExchangeOneTimeLinkCodeResponse.Data.class, x0.d(), "data");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20217b = f10;
+        this.f20218b = f10;
         com.squareup.moshi.h f11 = moshi.f(ExchangeOneTimeLinkCodeResponse.Metadata.class, x0.d(), "meta");
         Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
-        this.f20218c = f11;
+        this.f20219c = f11;
     }
 
     @Override // com.squareup.moshi.h
@@ -42,14 +42,14 @@ public final class ExchangeOneTimeLinkCodeResponseJsonAdapter extends com.square
         ExchangeOneTimeLinkCodeResponse.Data data = null;
         ExchangeOneTimeLinkCodeResponse.Metadata metadata = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20216a);
+            int J = reader.J(this.f20217a);
             if (J != -1) {
                 if (J != 0) {
                     if (J == 1) {
-                        metadata = (ExchangeOneTimeLinkCodeResponse.Metadata) this.f20218c.fromJson(reader);
+                        metadata = (ExchangeOneTimeLinkCodeResponse.Metadata) this.f20219c.fromJson(reader);
                     }
                 } else {
-                    data = (ExchangeOneTimeLinkCodeResponse.Data) this.f20217b.fromJson(reader);
+                    data = (ExchangeOneTimeLinkCodeResponse.Data) this.f20218b.fromJson(reader);
                 }
             } else {
                 reader.z0();
@@ -67,9 +67,9 @@ public final class ExchangeOneTimeLinkCodeResponseJsonAdapter extends com.square
         if (exchangeOneTimeLinkCodeResponse != null) {
             writer.i();
             writer.J("data");
-            this.f20217b.toJson(writer, exchangeOneTimeLinkCodeResponse.a());
+            this.f20218b.toJson(writer, exchangeOneTimeLinkCodeResponse.a());
             writer.J("meta");
-            this.f20218c.toJson(writer, exchangeOneTimeLinkCodeResponse.b());
+            this.f20219c.toJson(writer, exchangeOneTimeLinkCodeResponse.b());
             writer.s();
             return;
         }

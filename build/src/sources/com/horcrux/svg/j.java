@@ -11,45 +11,45 @@ import java.util.HashMap;
 class j extends q {
 
     /* renamed from: i  reason: collision with root package name */
-    String f17801i;
+    String f17802i;
 
     /* renamed from: o  reason: collision with root package name */
-    String f17802o;
+    String f17803o;
 
     /* renamed from: p  reason: collision with root package name */
-    t f17803p;
+    t f17804p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f17804a;
+        static final /* synthetic */ int[] f17805a;
 
         static {
             int[] iArr = new int[t.values().length];
-            f17804a = iArr;
+            f17805a = iArr;
             try {
                 iArr[t.UNKNOWN.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f17804a[t.NORMAL.ordinal()] = 2;
+                f17805a[t.NORMAL.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f17804a[t.SCREEN.ordinal()] = 3;
+                f17805a[t.SCREEN.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f17804a[t.LIGHTEN.ordinal()] = 4;
+                f17805a[t.LIGHTEN.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f17804a[t.DARKEN.ordinal()] = 5;
+                f17805a[t.DARKEN.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f17804a[t.MULTIPLY.ordinal()] = 6;
+                f17805a[t.MULTIPLY.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
         }
@@ -57,10 +57,10 @@ class j extends q {
 
     public j(ReactContext reactContext) {
         super(reactContext);
-        this.f17887e.mX = new SVGLength(0.0d);
-        this.f17887e.mY = new SVGLength(0.0d);
-        this.f17887e.mW = new SVGLength("100%");
-        this.f17887e.mH = new SVGLength("100%");
+        this.f17888e.mX = new SVGLength(0.0d);
+        this.f17888e.mY = new SVGLength(0.0d);
+        this.f17888e.mW = new SVGLength("100%");
+        this.f17888e.mH = new SVGLength("100%");
     }
 
     public static /* synthetic */ float[] l(float[] fArr, float[] fArr2) {
@@ -79,9 +79,9 @@ class j extends q {
 
     @Override // com.horcrux.svg.q
     public Bitmap d(HashMap hashMap, Bitmap bitmap) {
-        Bitmap f10 = q.f(hashMap, bitmap, this.f17801i);
-        Bitmap f11 = q.f(hashMap, bitmap, this.f17802o);
-        if (this.f17803p == t.MULTIPLY) {
+        Bitmap f10 = q.f(hashMap, bitmap, this.f17802i);
+        Bitmap f11 = q.f(hashMap, bitmap, this.f17803o);
+        if (this.f17804p == t.MULTIPLY) {
             return CustomFilter.apply(f10, f11, new d() { // from class: com.horcrux.svg.i
                 @Override // com.horcrux.svg.d
                 public final float[] a(float[] fArr, float[] fArr2) {
@@ -93,7 +93,7 @@ class j extends q {
         Canvas canvas = new Canvas(createBitmap);
         Paint paint = new Paint(1);
         canvas.drawBitmap(f10, 0.0f, 0.0f, paint);
-        int i10 = a.f17804a[this.f17803p.ordinal()];
+        int i10 = a.f17805a[this.f17804p.ordinal()];
         if (i10 != 1 && i10 != 2) {
             if (i10 != 3) {
                 if (i10 != 4) {
@@ -114,17 +114,17 @@ class j extends q {
     }
 
     public void m(String str) {
-        this.f17801i = str;
+        this.f17802i = str;
         invalidate();
     }
 
     public void n(String str) {
-        this.f17802o = str;
+        this.f17803o = str;
         invalidate();
     }
 
     public void o(String str) {
-        this.f17803p = t.d(str);
+        this.f17804p = t.d(str);
         invalidate();
     }
 }

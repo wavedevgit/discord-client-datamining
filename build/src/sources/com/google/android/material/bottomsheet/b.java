@@ -9,7 +9,7 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior;
 public class b extends m {
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f15375d;
+    private boolean f15376d;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: com.google.android.material.bottomsheet.b$b  reason: collision with other inner class name */
@@ -32,7 +32,7 @@ public class b extends m {
 
     /* JADX INFO: Access modifiers changed from: private */
     public void A() {
-        if (this.f15375d) {
+        if (this.f15376d) {
             super.dismissAllowingStateLoss();
         } else {
             super.dismiss();
@@ -40,7 +40,7 @@ public class b extends m {
     }
 
     private void B(BottomSheetBehavior bottomSheetBehavior, boolean z10) {
-        this.f15375d = z10;
+        this.f15376d = z10;
         if (bottomSheetBehavior.x0() == 5) {
             A();
             return;

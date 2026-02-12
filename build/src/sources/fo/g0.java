@@ -5,10 +5,10 @@ import kotlinx.coroutines.flow.MutableSharedFlow;
 public final class g0 implements lr.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final lr.h f24032a;
+    private final lr.h f24033a;
 
     public g0(lr.h hVar) {
-        this.f24032a = hVar;
+        this.f24033a = hVar;
     }
 
     public static g0 a(lr.h hVar) {
@@ -22,6 +22,6 @@ public final class g0 implements lr.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public f0 get() {
-        return c((MutableSharedFlow) this.f24032a.get());
+        return c((MutableSharedFlow) this.f24033a.get());
     }
 }

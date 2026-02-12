@@ -9,67 +9,67 @@ import kk.p;
 public final class Result {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f17442a;
+    private final String f17443a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final byte[] f17443b;
+    private final byte[] f17444b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f17444c;
+    private final int f17445c;
 
     /* renamed from: d  reason: collision with root package name */
-    private p[] f17445d;
+    private p[] f17446d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final a f17446e;
+    private final a f17447e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Map f17447f;
+    private Map f17448f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final long f17448g;
+    private final long f17449g;
 
     public Result(String str, byte[] bArr, p[] pVarArr, a aVar) {
         this(str, bArr, pVarArr, aVar, System.currentTimeMillis());
     }
 
     public void a(p[] pVarArr) {
-        p[] pVarArr2 = this.f17445d;
+        p[] pVarArr2 = this.f17446d;
         if (pVarArr2 == null) {
-            this.f17445d = pVarArr;
+            this.f17446d = pVarArr;
         } else if (pVarArr != null && pVarArr.length > 0) {
             p[] pVarArr3 = new p[pVarArr2.length + pVarArr.length];
             System.arraycopy(pVarArr2, 0, pVarArr3, 0, pVarArr2.length);
             System.arraycopy(pVarArr, 0, pVarArr3, pVarArr2.length, pVarArr.length);
-            this.f17445d = pVarArr3;
+            this.f17446d = pVarArr3;
         }
     }
 
     public a b() {
-        return this.f17446e;
+        return this.f17447e;
     }
 
     public byte[] c() {
-        return this.f17443b;
+        return this.f17444b;
     }
 
     public Map d() {
-        return this.f17447f;
+        return this.f17448f;
     }
 
     public p[] e() {
-        return this.f17445d;
+        return this.f17446d;
     }
 
     public String f() {
-        return this.f17442a;
+        return this.f17443a;
     }
 
     public void g(Map map) {
         if (map != null) {
-            Map map2 = this.f17447f;
+            Map map2 = this.f17448f;
             if (map2 == null) {
-                this.f17447f = map;
+                this.f17448f = map;
             } else {
                 map2.putAll(map);
             }
@@ -77,14 +77,14 @@ public final class Result {
     }
 
     public void h(o oVar, Object obj) {
-        if (this.f17447f == null) {
-            this.f17447f = new EnumMap(o.class);
+        if (this.f17448f == null) {
+            this.f17448f = new EnumMap(o.class);
         }
-        this.f17447f.put(oVar, obj);
+        this.f17448f.put(oVar, obj);
     }
 
     public String toString() {
-        return this.f17442a;
+        return this.f17443a;
     }
 
     public Result(String str, byte[] bArr, p[] pVarArr, a aVar, long j10) {
@@ -92,12 +92,12 @@ public final class Result {
     }
 
     public Result(String str, byte[] bArr, int i10, p[] pVarArr, a aVar, long j10) {
-        this.f17442a = str;
-        this.f17443b = bArr;
-        this.f17444c = i10;
-        this.f17445d = pVarArr;
-        this.f17446e = aVar;
-        this.f17447f = null;
-        this.f17448g = j10;
+        this.f17443a = str;
+        this.f17444b = bArr;
+        this.f17445c = i10;
+        this.f17446d = pVarArr;
+        this.f17447e = aVar;
+        this.f17448f = null;
+        this.f17449g = j10;
     }
 }

@@ -60,13 +60,13 @@ public final class EmbedFooter {
 
     public static final /* synthetic */ void write$Self$chat_release(EmbedFooter embedFooter, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         if (compositeEncoder.z(serialDescriptor, 0) || embedFooter.iconURL != null) {
-            compositeEncoder.o(serialDescriptor, 0, n2.f50032a, embedFooter.iconURL);
+            compositeEncoder.o(serialDescriptor, 0, n2.f50033a, embedFooter.iconURL);
         }
         if (compositeEncoder.z(serialDescriptor, 1) || embedFooter.iconProxyURL != null) {
-            compositeEncoder.o(serialDescriptor, 1, n2.f50032a, embedFooter.iconProxyURL);
+            compositeEncoder.o(serialDescriptor, 1, n2.f50033a, embedFooter.iconProxyURL);
         }
         if (compositeEncoder.z(serialDescriptor, 2) || embedFooter.content != null) {
-            compositeEncoder.o(serialDescriptor, 2, n2.f50032a, embedFooter.content);
+            compositeEncoder.o(serialDescriptor, 2, n2.f50033a, embedFooter.content);
         }
     }
 

@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/StageSpeakerSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56497: for (var _fun56497_ip = 0;;) switch (_fun56497_ip) {
+        _fun56519: for (var _fun56519_ip = 0;;) switch (_fun56519_ip) {
             case 0:
                 var3 = arg0;
                 var9 = var3.message;
@@ -68,8 +68,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = 'username';
                 var13 = null;
                 if (!(var15 === var16)) {
-                    _fun56497_ip = 195;
-                    continue _fun56497
+                    _fun56519_ip = 195;
+                    continue _fun56519
                 }
             case 192:
                 var13 = var14;
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.linkColor = var13;
                 var10 = null;
                 if (!var12) {
-                    _fun56497_ip = 208;
-                    continue _fun56497
+                    _fun56519_ip = 208;
+                    continue _fun56519
                 }
             case 205:
                 var10 = var11;
@@ -104,4 +104,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createStageSpeakerSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6754, 6755, 1234, 6756, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6770, 6771, 1234, 6772, 2]);

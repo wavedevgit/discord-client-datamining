@@ -20,8 +20,8 @@ class o extends PopupWindow {
 
     private void a(Context context, AttributeSet attributeSet, int i10, int i11) {
         v0 v10 = v0.v(context, attributeSet, f.j.Y1, i10, i11);
-        if (v10.s(f.j.f23419a2)) {
-            b(v10.a(f.j.f23419a2, false));
+        if (v10.s(f.j.f23420a2)) {
+            b(v10.a(f.j.f23420a2, false));
         }
         setBackgroundDrawable(v10.g(f.j.Z1));
         v10.x();

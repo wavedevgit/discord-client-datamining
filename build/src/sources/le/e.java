@@ -10,10 +10,10 @@ import oe.w0;
 public class e implements o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Resources f35725a;
+    private final Resources f35726a;
 
     public e(Resources resources) {
-        this.f35725a = (Resources) oe.a.e(resources);
+        this.f35726a = (Resources) oe.a.e(resources);
     }
 
     private String b(Format format) {
@@ -23,32 +23,32 @@ public class e implements o {
                 if (i10 != 2) {
                     if (i10 != 6 && i10 != 7) {
                         if (i10 != 8) {
-                            return this.f35725a.getString(m.f35781s);
+                            return this.f35726a.getString(m.f35782s);
                         }
-                        return this.f35725a.getString(m.f35783u);
+                        return this.f35726a.getString(m.f35784u);
                     }
-                    return this.f35725a.getString(m.f35782t);
+                    return this.f35726a.getString(m.f35783t);
                 }
-                return this.f35725a.getString(m.f35780r);
+                return this.f35726a.getString(m.f35781r);
             }
-            return this.f35725a.getString(m.f35772j);
+            return this.f35726a.getString(m.f35773j);
         }
         return "";
     }
 
     private String c(Format format) {
-        int i10 = format.f12300s;
+        int i10 = format.f12301s;
         if (i10 == -1) {
             return "";
         }
-        return this.f35725a.getString(m.f35771i, Float.valueOf(i10 / 1000000.0f));
+        return this.f35726a.getString(m.f35772i, Float.valueOf(i10 / 1000000.0f));
     }
 
     private String d(Format format) {
-        if (TextUtils.isEmpty(format.f12294e)) {
+        if (TextUtils.isEmpty(format.f12295e)) {
             return "";
         }
-        return format.f12294e;
+        return format.f12295e;
     }
 
     private String e(Format format) {
@@ -61,11 +61,11 @@ public class e implements o {
 
     private String f(Format format) {
         Locale locale;
-        String str = format.f12295i;
+        String str = format.f12296i;
         if (TextUtils.isEmpty(str) || "und".equals(str)) {
             return "";
         }
-        if (w0.f39037a >= 21) {
+        if (w0.f39038a >= 21) {
             locale = Locale.forLanguageTag(str);
         } else {
             locale = new Locale(str);
@@ -87,39 +87,39 @@ public class e implements o {
         int i10 = format.B;
         int i11 = format.C;
         if (i10 != -1 && i11 != -1) {
-            return this.f35725a.getString(m.f35773k, Integer.valueOf(i10), Integer.valueOf(i11));
+            return this.f35726a.getString(m.f35774k, Integer.valueOf(i10), Integer.valueOf(i11));
         }
         return "";
     }
 
     private String h(Format format) {
         String str;
-        if ((format.f12297p & 2) != 0) {
-            str = this.f35725a.getString(m.f35774l);
+        if ((format.f12298p & 2) != 0) {
+            str = this.f35726a.getString(m.f35775l);
         } else {
             str = "";
         }
-        if ((format.f12297p & 4) != 0) {
-            str = j(str, this.f35725a.getString(m.f35777o));
+        if ((format.f12298p & 4) != 0) {
+            str = j(str, this.f35726a.getString(m.f35778o));
         }
-        if ((format.f12297p & 8) != 0) {
-            str = j(str, this.f35725a.getString(m.f35776n));
+        if ((format.f12298p & 8) != 0) {
+            str = j(str, this.f35726a.getString(m.f35777n));
         }
-        if ((format.f12297p & 1088) != 0) {
-            return j(str, this.f35725a.getString(m.f35775m));
+        if ((format.f12298p & 1088) != 0) {
+            return j(str, this.f35726a.getString(m.f35776m));
         }
         return str;
     }
 
     private static int i(Format format) {
-        int k10 = c0.k(format.f12304w);
+        int k10 = c0.k(format.f12305w);
         if (k10 != -1) {
             return k10;
         }
-        if (c0.n(format.f12301t) != null) {
+        if (c0.n(format.f12302t) != null) {
             return 2;
         }
-        if (c0.c(format.f12301t) != null) {
+        if (c0.c(format.f12302t) != null) {
             return 1;
         }
         if (format.B != -1 || format.C != -1) {
@@ -138,7 +138,7 @@ public class e implements o {
                 if (TextUtils.isEmpty(str)) {
                     str = str2;
                 } else {
-                    str = this.f35725a.getString(m.f35770h, str, str2);
+                    str = this.f35726a.getString(m.f35771h, str, str2);
                 }
             }
         }
@@ -157,7 +157,7 @@ public class e implements o {
             e10 = e(format);
         }
         if (e10.length() == 0) {
-            return this.f35725a.getString(m.f35784v);
+            return this.f35726a.getString(m.f35785v);
         }
         return e10;
     }

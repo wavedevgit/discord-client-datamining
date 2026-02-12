@@ -6,71 +6,71 @@ import java.util.List;
 public class s implements t5.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f48594a;
+    private final String f48595a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final s5.b f48595b;
+    private final s5.b f48596b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f48596c;
+    private final List f48597c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final s5.a f48597d;
+    private final s5.a f48598d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final s5.d f48598e;
+    private final s5.d f48599e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final s5.b f48599f;
+    private final s5.b f48600f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final b f48600g;
+    private final b f48601g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final c f48601h;
+    private final c f48602h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final float f48602i;
+    private final float f48603i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final boolean f48603j;
+    private final boolean f48604j;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f48604a;
+        static final /* synthetic */ int[] f48605a;
 
         /* renamed from: b  reason: collision with root package name */
-        static final /* synthetic */ int[] f48605b;
+        static final /* synthetic */ int[] f48606b;
 
         static {
             int[] iArr = new int[c.values().length];
-            f48605b = iArr;
+            f48606b = iArr;
             try {
                 iArr[c.BEVEL.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f48605b[c.MITER.ordinal()] = 2;
+                f48606b[c.MITER.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f48605b[c.ROUND.ordinal()] = 3;
+                f48606b[c.ROUND.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             int[] iArr2 = new int[b.values().length];
-            f48604a = iArr2;
+            f48605a = iArr2;
             try {
                 iArr2[b.BUTT.ordinal()] = 1;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f48604a[b.ROUND.ordinal()] = 2;
+                f48605a[b.ROUND.ordinal()] = 2;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f48604a[b.UNKNOWN.ordinal()] = 3;
+                f48605a[b.UNKNOWN.ordinal()] = 3;
             } catch (NoSuchFieldError unused6) {
             }
         }
@@ -83,7 +83,7 @@ public class s implements t5.c {
         UNKNOWN;
 
         public Paint.Cap d() {
-            int i10 = a.f48604a[ordinal()];
+            int i10 = a.f48605a[ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     return Paint.Cap.SQUARE;
@@ -101,7 +101,7 @@ public class s implements t5.c {
         BEVEL;
 
         public Paint.Join d() {
-            int i10 = a.f48605b[ordinal()];
+            int i10 = a.f48606b[ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 != 3) {
@@ -116,16 +116,16 @@ public class s implements t5.c {
     }
 
     public s(String str, s5.b bVar, List list, s5.a aVar, s5.d dVar, s5.b bVar2, b bVar3, c cVar, float f10, boolean z10) {
-        this.f48594a = str;
-        this.f48595b = bVar;
-        this.f48596c = list;
-        this.f48597d = aVar;
-        this.f48598e = dVar;
-        this.f48599f = bVar2;
-        this.f48600g = bVar3;
-        this.f48601h = cVar;
-        this.f48602i = f10;
-        this.f48603j = z10;
+        this.f48595a = str;
+        this.f48596b = bVar;
+        this.f48597c = list;
+        this.f48598d = aVar;
+        this.f48599e = dVar;
+        this.f48600f = bVar2;
+        this.f48601g = bVar3;
+        this.f48602h = cVar;
+        this.f48603i = f10;
+        this.f48604j = z10;
     }
 
     @Override // t5.c
@@ -134,42 +134,42 @@ public class s implements t5.c {
     }
 
     public b b() {
-        return this.f48600g;
+        return this.f48601g;
     }
 
     public s5.a c() {
-        return this.f48597d;
+        return this.f48598d;
     }
 
     public s5.b d() {
-        return this.f48595b;
+        return this.f48596b;
     }
 
     public c e() {
-        return this.f48601h;
+        return this.f48602h;
     }
 
     public List f() {
-        return this.f48596c;
+        return this.f48597c;
     }
 
     public float g() {
-        return this.f48602i;
+        return this.f48603i;
     }
 
     public String h() {
-        return this.f48594a;
+        return this.f48595a;
     }
 
     public s5.d i() {
-        return this.f48598e;
+        return this.f48599e;
     }
 
     public s5.b j() {
-        return this.f48599f;
+        return this.f48600f;
     }
 
     public boolean k() {
-        return this.f48603j;
+        return this.f48604j;
     }
 }

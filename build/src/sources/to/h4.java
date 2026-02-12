@@ -15,7 +15,7 @@ public abstract class h4 implements Parcelable {
         public static final Parcelable.Creator<a> CREATOR = new C0674a();
 
         /* renamed from: d  reason: collision with root package name */
-        private final c4.e f49308d;
+        private final c4.e f49309d;
 
         /* renamed from: to.h4$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -38,11 +38,11 @@ public abstract class h4 implements Parcelable {
         public a(c4.e side) {
             super(null);
             Intrinsics.checkNotNullParameter(side, "side");
-            this.f49308d = side;
+            this.f49309d = side;
         }
 
         public final c4.e a() {
-            return this.f49308d;
+            return this.f49309d;
         }
 
         @Override // android.os.Parcelable
@@ -54,25 +54,25 @@ public abstract class h4 implements Parcelable {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof a) && this.f49308d == ((a) obj).f49308d) {
+            if ((obj instanceof a) && this.f49309d == ((a) obj).f49309d) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return this.f49308d.hashCode();
+            return this.f49309d.hashCode();
         }
 
         public String toString() {
-            c4.e eVar = this.f49308d;
+            c4.e eVar = this.f49309d;
             return "SideIdPart(side=" + eVar + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            dest.writeString(this.f49308d.name());
+            dest.writeString(this.f49309d.name());
         }
     }
 

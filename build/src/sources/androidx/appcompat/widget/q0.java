@@ -75,7 +75,7 @@ class q0 extends s2.c implements View.OnClickListener {
             this.f1926b = (TextView) view.findViewById(16908309);
             this.f1927c = (ImageView) view.findViewById(16908295);
             this.f1928d = (ImageView) view.findViewById(16908296);
-            this.f1929e = (ImageView) view.findViewById(f.f.f23367r);
+            this.f1929e = (ImageView) view.findViewById(f.f.f23368r);
         }
     }
 
@@ -417,7 +417,7 @@ class q0 extends s2.c implements View.OnClickListener {
     public View g(Context context, Cursor cursor, ViewGroup viewGroup) {
         View g10 = super.g(context, cursor, viewGroup);
         g10.setTag(new a(g10));
-        ((ImageView) g10.findViewById(f.f.f23367r)).setImageResource(this.A);
+        ((ImageView) g10.findViewById(f.f.f23368r)).setImageResource(this.A);
         return g10;
     }
 

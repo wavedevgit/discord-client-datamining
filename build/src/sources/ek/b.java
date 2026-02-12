@@ -7,20 +7,20 @@ import qg.ye;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f22902a;
+    private final int f22903a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f22903b;
+    private final List f22904b;
 
     public b(int i10, List list) {
-        this.f22902a = i10;
-        this.f22903b = list;
+        this.f22903a = i10;
+        this.f22904b = list;
     }
 
     public String toString() {
         xe a10 = ye.a("FaceContour");
-        a10.b("type", this.f22902a);
-        a10.c("points", this.f22903b.toArray());
+        a10.b("type", this.f22903a);
+        a10.c("points", this.f22904b.toArray());
         return a10.toString();
     }
 }

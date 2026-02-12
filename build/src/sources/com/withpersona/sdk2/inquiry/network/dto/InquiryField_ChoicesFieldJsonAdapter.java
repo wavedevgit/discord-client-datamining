@@ -75,7 +75,7 @@ public final class InquiryField_ChoicesFieldJsonAdapter extends h {
         }
         Constructor<InquiryField.ChoicesField> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InquiryField.ChoicesField.class.getDeclaredConstructor(String.class, String.class, Integer.TYPE, dn.c.f21827c);
+            constructor = InquiryField.ChoicesField.class.getDeclaredConstructor(String.class, String.class, Integer.TYPE, dn.c.f21828c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

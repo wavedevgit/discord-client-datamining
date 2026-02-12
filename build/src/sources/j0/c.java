@@ -6,17 +6,17 @@ import java.util.List;
 final class c extends t0.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final l0 f30662a;
+    private final l0 f30663a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f30663b;
+    private final List f30664b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(l0 l0Var, List list) {
         if (l0Var != null) {
-            this.f30662a = l0Var;
+            this.f30663a = l0Var;
             if (list != null) {
-                this.f30663b = list;
+                this.f30664b = list;
                 return;
             }
             throw new NullPointerException("Null outConfigs");
@@ -26,12 +26,12 @@ final class c extends t0.b {
 
     @Override // j0.t0.b
     public List a() {
-        return this.f30663b;
+        return this.f30664b;
     }
 
     @Override // j0.t0.b
     public l0 b() {
-        return this.f30662a;
+        return this.f30663a;
     }
 
     public boolean equals(Object obj) {
@@ -40,7 +40,7 @@ final class c extends t0.b {
         }
         if (obj instanceof t0.b) {
             t0.b bVar = (t0.b) obj;
-            if (this.f30662a.equals(bVar.b()) && this.f30663b.equals(bVar.a())) {
+            if (this.f30663a.equals(bVar.b()) && this.f30664b.equals(bVar.a())) {
                 return true;
             }
         }
@@ -48,10 +48,10 @@ final class c extends t0.b {
     }
 
     public int hashCode() {
-        return ((this.f30662a.hashCode() ^ 1000003) * 1000003) ^ this.f30663b.hashCode();
+        return ((this.f30663a.hashCode() ^ 1000003) * 1000003) ^ this.f30664b.hashCode();
     }
 
     public String toString() {
-        return "In{surfaceEdge=" + this.f30662a + ", outConfigs=" + this.f30663b + "}";
+        return "In{surfaceEdge=" + this.f30663a + ", outConfigs=" + this.f30664b + "}";
     }
 }

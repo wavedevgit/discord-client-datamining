@@ -77,7 +77,7 @@ public final class CommandQueue$decodeAudioWLIIakE$$inlined$suspendNativeRequest
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj2) {
                 invoke((Throwable) obj2);
-                return Unit.f31987a;
+                return Unit.f31988a;
             }
 
             public final void invoke(Throwable th2) {
@@ -101,6 +101,6 @@ public final class CommandQueue$decodeAudioWLIIakE$$inlined$suspendNativeRequest
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super AudioHandle> continuation) {
-        return ((CommandQueue$decodeAudioWLIIakE$$inlined$suspendNativeRequest$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+        return ((CommandQueue$decodeAudioWLIIakE$$inlined$suspendNativeRequest$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

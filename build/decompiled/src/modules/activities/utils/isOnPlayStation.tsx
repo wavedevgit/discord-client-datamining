@@ -25,15 +25,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/isOnPlayStation.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun62897: for (var _fun62897_ip = 0;;) switch (_fun62897_ip) {
+        _fun68950: for (var _fun68950_ip = 0;;) switch (_fun68950_ip) {
             case 0:
                 var3 = arg0;
                 var4 = null;
                 var0 = var4 == var3;
                 var5 = undefined;
                 if (var0) {
-                    _fun62897_ip = 20;
-                    continue _fun62897
+                    _fun68950_ip = 20;
+                    continue _fun68950
                 }
             case 14:
                 var5 = var3.platform;
@@ -42,15 +42,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.PS4;
                 var0 = var5 === var0;
                 if (var0) {
-                    _fun62897_ip = 69;
-                    continue _fun62897
+                    _fun68950_ip = 69;
+                    continue _fun68950
                 }
             case 40:
                 var4 = var4 == var3;
                 var2 = undefined;
                 if (var4) {
-                    _fun62897_ip = 55;
-                    continue _fun62897
+                    _fun68950_ip = 55;
+                    continue _fun68950
                 }
             case 49:
                 var2 = var3.platform;

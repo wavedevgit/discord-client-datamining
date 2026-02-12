@@ -10,47 +10,47 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g extends f {
 
     /* renamed from: d  reason: collision with root package name */
-    public final Matrix f10664d;
+    public final Matrix f10665d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f10665e;
+    private final int f10666e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f10666i;
+    private final int f10667i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Matrix f10667o;
+    private final Matrix f10668o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final RectF f10668p;
+    private final RectF f10669p;
 
     public g(Drawable drawable, int i10, int i11) {
         super(drawable);
-        this.f10664d = new Matrix();
-        this.f10665e = i10 - (i10 % 90);
-        this.f10666i = (i11 < 0 || i11 > 8) ? 0 : 0;
-        this.f10667o = new Matrix();
-        this.f10668p = new RectF();
+        this.f10665d = new Matrix();
+        this.f10666e = i10 - (i10 % 90);
+        this.f10667i = (i11 < 0 || i11 > 8) ? 0 : 0;
+        this.f10668o = new Matrix();
+        this.f10669p = new RectF();
     }
 
     @Override // com.facebook.drawee.drawable.f, android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
         int i10;
         Intrinsics.checkNotNullParameter(canvas, "canvas");
-        if (this.f10665e <= 0 && ((i10 = this.f10666i) == 0 || i10 == 1)) {
+        if (this.f10666e <= 0 && ((i10 = this.f10667i) == 0 || i10 == 1)) {
             super.draw(canvas);
             return;
         }
         int save = canvas.save();
-        canvas.concat(this.f10664d);
+        canvas.concat(this.f10665d);
         super.draw(canvas);
         canvas.restoreToCount(save);
     }
 
     @Override // com.facebook.drawee.drawable.f, android.graphics.drawable.Drawable
     public int getIntrinsicHeight() {
-        int i10 = this.f10666i;
-        if (i10 != 5 && i10 != 7 && this.f10665e % 180 == 0) {
+        int i10 = this.f10667i;
+        if (i10 != 5 && i10 != 7 && this.f10666e % 180 == 0) {
             return super.getIntrinsicHeight();
         }
         return super.getIntrinsicWidth();
@@ -58,8 +58,8 @@ public final class g extends f {
 
     @Override // com.facebook.drawee.drawable.f, android.graphics.drawable.Drawable
     public int getIntrinsicWidth() {
-        int i10 = this.f10666i;
-        if (i10 != 5 && i10 != 7 && this.f10665e % 180 == 0) {
+        int i10 = this.f10667i;
+        if (i10 != 5 && i10 != 7 && this.f10666e % 180 == 0) {
             return super.getIntrinsicWidth();
         }
         return super.getIntrinsicHeight();
@@ -69,8 +69,8 @@ public final class g extends f {
     public void getTransform(Matrix transform) {
         Intrinsics.checkNotNullParameter(transform, "transform");
         getParentTransform(transform);
-        if (!this.f10664d.isIdentity()) {
-            transform.preConcat(this.f10664d);
+        if (!this.f10665d.isIdentity()) {
+            transform.preConcat(this.f10665d);
         }
     }
 
@@ -83,36 +83,36 @@ public final class g extends f {
         if (current == null) {
             return;
         }
-        int i11 = this.f10665e;
-        if (i11 <= 0 && ((i10 = this.f10666i) == 0 || i10 == 1)) {
+        int i11 = this.f10666e;
+        if (i11 <= 0 && ((i10 = this.f10667i) == 0 || i10 == 1)) {
             current.setBounds(bounds);
             return;
         }
-        int i12 = this.f10666i;
+        int i12 = this.f10667i;
         if (i12 != 2) {
             if (i12 != 7) {
                 if (i12 != 4) {
                     if (i12 != 5) {
-                        this.f10664d.setRotate(i11, bounds.centerX(), bounds.centerY());
+                        this.f10665d.setRotate(i11, bounds.centerX(), bounds.centerY());
                     } else {
-                        this.f10664d.setRotate(270.0f, bounds.centerX(), bounds.centerY());
-                        this.f10664d.postScale(1.0f, -1.0f);
+                        this.f10665d.setRotate(270.0f, bounds.centerX(), bounds.centerY());
+                        this.f10665d.postScale(1.0f, -1.0f);
                     }
                 } else {
-                    this.f10664d.setScale(1.0f, -1.0f);
+                    this.f10665d.setScale(1.0f, -1.0f);
                 }
             } else {
-                this.f10664d.setRotate(270.0f, bounds.centerX(), bounds.centerY());
-                this.f10664d.postScale(-1.0f, 1.0f);
+                this.f10665d.setRotate(270.0f, bounds.centerX(), bounds.centerY());
+                this.f10665d.postScale(-1.0f, 1.0f);
             }
         } else {
-            this.f10664d.setScale(-1.0f, 1.0f);
+            this.f10665d.setScale(-1.0f, 1.0f);
         }
-        this.f10667o.reset();
-        this.f10664d.invert(this.f10667o);
-        this.f10668p.set(bounds);
-        this.f10667o.mapRect(this.f10668p);
-        RectF rectF = this.f10668p;
+        this.f10668o.reset();
+        this.f10665d.invert(this.f10668o);
+        this.f10669p.set(bounds);
+        this.f10668o.mapRect(this.f10669p);
+        RectF rectF = this.f10669p;
         current.setBounds((int) rectF.left, (int) rectF.top, (int) rectF.right, (int) rectF.bottom);
     }
 }

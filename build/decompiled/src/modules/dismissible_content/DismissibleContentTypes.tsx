@@ -29,23 +29,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot8 = var10;
     var9 = function arg0() {
-        _fun15578: for (var _fun15578_ip = 0;;) switch (_fun15578_ip) {
+        _fun15587: for (var _fun15587_ip = 0;;) switch (_fun15587_ip) {
             case 0:
                 var3 = arg0;
                 var0 = _closure1_slot6;
                 var2 = undefined;
                 var0 = var0.bind(var2)(var3);
                 if (var0) {
-                    _fun15578_ip = 29;
-                    continue _fun15578
+                    _fun15587_ip = 29;
+                    continue _fun15587
                 }
             case 20:
                 var4 = _closure1_slot7;
                 var0 = var4.bind(var2)(var3);
             case 29:
                 if (var0) {
-                    _fun15578_ip = 41;
-                    continue _fun15578
+                    _fun15587_ip = 41;
+                    continue _fun15587
                 }
             case 32:
                 var1 = _closure1_slot8;
@@ -316,8 +316,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var13 = var20.bind(var0)(var13);
     var13 = var13.DismissibleContent;
     var19 = var13.BOOST_TO_UNLOCK_COACHMARK;
-    var13 = new Array(1);
+    var13 = new Array(2);
     var13[0] = var19;
+    var19 = var21[var1];
+    var19 = var20.bind(var0)(var19);
+    var19 = var19.DismissibleContent;
+    var19 = var19.EXPIRING_POWERUP_COACHMARK;
+    var13[1] = var19;
     var _closure1_slot5 = var13;
     var19 = var3.Object;
     var3 = var19.keys;
@@ -369,23 +374,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isTimeRecurringGuildDismissibleContent = var6;
     var2.isSnowflakeBoundGuildDismissibleContent = var5;
     var4 = function arg0() {
-        _fun15585: for (var _fun15585_ip = 0;;) switch (_fun15585_ip) {
+        _fun15594: for (var _fun15594_ip = 0;;) switch (_fun15594_ip) {
             case 0:
                 var3 = arg0;
                 var0 = _closure1_slot10;
                 var2 = undefined;
                 var0 = var0.bind(var2)(var3);
                 if (var0) {
-                    _fun15585_ip = 29;
-                    continue _fun15585
+                    _fun15594_ip = 29;
+                    continue _fun15594
                 }
             case 20:
                 var4 = _closure1_slot11;
                 var0 = var4.bind(var2)(var3);
             case 29:
                 if (var0) {
-                    _fun15585_ip = 41;
-                    continue _fun15585
+                    _fun15594_ip = 41;
+                    continue _fun15594
                 }
             case 32:
                 var1 = _closure1_slot12;

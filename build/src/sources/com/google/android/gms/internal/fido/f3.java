@@ -3,10 +3,10 @@ package com.google.android.gms.internal.fido;
 final class f3 {
 
     /* renamed from: b  reason: collision with root package name */
-    static final f3 f14681b = new f3(new a("Failure occurred while trying to finish a future."));
+    static final f3 f14682b = new f3(new a("Failure occurred while trying to finish a future."));
 
     /* renamed from: a  reason: collision with root package name */
-    final Throwable f14682a;
+    final Throwable f14683a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a extends Throwable {
@@ -23,6 +23,6 @@ final class f3 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public f3(Throwable th2) {
         th2.getClass();
-        this.f14682a = th2;
+        this.f14683a = th2;
     }
 }

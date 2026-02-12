@@ -11,17 +11,17 @@ import java.util.concurrent.Executor;
 class u implements fj.d, fj.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f54859a = new HashMap();
+    private final Map f54860a = new HashMap();
 
     /* renamed from: b  reason: collision with root package name */
-    private Queue f54860b = new ArrayDeque();
+    private Queue f54861b = new ArrayDeque();
 
     /* renamed from: c  reason: collision with root package name */
-    private final Executor f54861c;
+    private final Executor f54862c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public u(Executor executor) {
-        this.f54861c = executor;
+        this.f54862c = executor;
     }
 
     private synchronized Set d(fj.a aVar) {
@@ -30,7 +30,7 @@ class u implements fj.d, fj.c {
 
     @Override // fj.d
     public void a(Class cls, fj.b bVar) {
-        f(cls, this.f54861c, bVar);
+        f(cls, this.f54862c, bVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -38,9 +38,9 @@ class u implements fj.d, fj.c {
         Queue<Object> queue;
         synchronized (this) {
             try {
-                queue = this.f54860b;
+                queue = this.f54861b;
                 if (queue != null) {
-                    this.f54860b = null;
+                    this.f54861b = null;
                 } else {
                     queue = null;
                 }
@@ -60,7 +60,7 @@ class u implements fj.d, fj.c {
         c0.b(aVar);
         synchronized (this) {
             try {
-                Queue queue = this.f54860b;
+                Queue queue = this.f54861b;
                 if (queue != null) {
                     queue.add(aVar);
                     return;
@@ -69,11 +69,11 @@ class u implements fj.d, fj.c {
                     ((Executor) entry.getValue()).execute(new Runnable(entry, aVar) { // from class: xi.t
 
                         /* renamed from: d  reason: collision with root package name */
-                        public final /* synthetic */ Map.Entry f54858d;
+                        public final /* synthetic */ Map.Entry f54859d;
 
                         @Override // java.lang.Runnable
                         public final void run() {
-                            ((fj.b) this.f54858d.getKey()).a(null);
+                            ((fj.b) this.f54859d.getKey()).a(null);
                         }
                     });
                 }
@@ -88,10 +88,10 @@ class u implements fj.d, fj.c {
             c0.b(cls);
             c0.b(bVar);
             c0.b(executor);
-            if (!this.f54859a.containsKey(cls)) {
-                this.f54859a.put(cls, new ConcurrentHashMap());
+            if (!this.f54860a.containsKey(cls)) {
+                this.f54860a.put(cls, new ConcurrentHashMap());
             }
-            ((ConcurrentHashMap) this.f54859a.get(cls)).put(bVar, executor);
+            ((ConcurrentHashMap) this.f54860a.get(cls)).put(bVar, executor);
         } catch (Throwable th2) {
             throw th2;
         }

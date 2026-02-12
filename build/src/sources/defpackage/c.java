@@ -125,13 +125,13 @@ public final class c implements cv.b {
     }
 
     private final Object b(defpackage.d dVar, Function0 function0, Function0 function02) {
-        if (Intrinsics.areEqual(dVar, d.a.f21235a)) {
+        if (Intrinsics.areEqual(dVar, d.a.f21236a)) {
             return function0.invoke();
         }
-        if (Intrinsics.areEqual(dVar, d.b.f21239a)) {
+        if (Intrinsics.areEqual(dVar, d.b.f21240a)) {
             return function02.invoke();
         }
-        if (Intrinsics.areEqual(dVar, d.c.f21240a)) {
+        if (Intrinsics.areEqual(dVar, d.c.f21241a)) {
             return null;
         }
         throw new p();
@@ -139,12 +139,12 @@ public final class c implements cv.b {
 
     private final defpackage.d c(String str) {
         if (Intrinsics.areEqual(str, "first")) {
-            return d.a.f21235a;
+            return d.a.f21236a;
         }
         if (Intrinsics.areEqual(str, "last")) {
-            return d.b.f21239a;
+            return d.b.f21240a;
         }
-        return d.c.f21240a;
+        return d.c.f21241a;
     }
 
     @Override // cv.b

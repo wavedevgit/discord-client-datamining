@@ -5,7 +5,7 @@ import bj.c;
 final class jb implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final jb f46771a = new jb();
+    static final jb f46772a = new jb();
 
     static {
         c.b a10 = bj.c.a("xMin");

@@ -20,83 +20,83 @@ import ys.m0;
 public final class m extends FileAssetLoader {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ReadableMap f18566d;
+    private final ReadableMap f18567d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function2 f18567e;
+    private final Function2 f18568e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final CompletableJob f18568i;
+    private final CompletableJob f18569i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final CoroutineScope f18569o;
+    private final CoroutineScope f18570o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Map f18570p;
+    private Map f18571p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f18571d;
+        int f18572d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ ReadableMap f18573i;
+        final /* synthetic */ ReadableMap f18574i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ FileAsset f18574o;
+        final /* synthetic */ FileAsset f18575o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(ReadableMap readableMap, FileAsset fileAsset, Continuation continuation) {
             super(2, continuation);
-            this.f18573i = readableMap;
-            this.f18574o = fileAsset;
+            this.f18574i = readableMap;
+            this.f18575o = fileAsset;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new a(this.f18573i, this.f18574o, continuation);
+            return new a(this.f18574i, this.f18575o, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             gs.b.f();
-            if (this.f18571d == 0) {
+            if (this.f18572d == 0) {
                 kotlin.c.b(obj);
                 try {
-                    m.this.f18567e.invoke(this.f18573i, this.f18574o);
+                    m.this.f18568e.invoke(this.f18574i, this.f18575o);
                 } catch (Exception unused) {
                 }
-                return Unit.f31987a;
+                return Unit.f31988a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
     public m(ReadableMap referencedAssets, Function2 loadAssetHandler) {
         Intrinsics.checkNotNullParameter(referencedAssets, "referencedAssets");
         Intrinsics.checkNotNullParameter(loadAssetHandler, "loadAssetHandler");
-        this.f18566d = referencedAssets;
-        this.f18567e = loadAssetHandler;
+        this.f18567d = referencedAssets;
+        this.f18568e = loadAssetHandler;
         CompletableJob b10 = j1.b(null, 1, null);
-        this.f18568i = b10;
-        this.f18569o = kotlinx.coroutines.i.a(m0.b().O0(b10));
-        this.f18570p = new LinkedHashMap();
+        this.f18569i = b10;
+        this.f18570o = kotlinx.coroutines.i.a(m0.b().O0(b10));
+        this.f18571p = new LinkedHashMap();
     }
 
     public final Map b() {
-        return this.f18570p;
+        return this.f18571p;
     }
 
     public final void dispose() {
-        Job.a.a(this.f18568i, null, 1, null);
-        kotlinx.coroutines.i.f(this.f18569o, null, 1, null);
-        this.f18570p.clear();
+        Job.a.a(this.f18569i, null, 1, null);
+        kotlinx.coroutines.i.f(this.f18570o, null, 1, null);
+        this.f18571p.clear();
     }
 
     @Override // app.rive.runtime.kotlin.core.FileAssetLoader
@@ -105,14 +105,14 @@ public final class m extends FileAssetLoader {
         Intrinsics.checkNotNullParameter(asset, "asset");
         Intrinsics.checkNotNullParameter(inBandBytes, "inBandBytes");
         String i12 = StringsKt.i1(asset.getUniqueFilename(), ".", null, 2, null);
-        ReadableMap map2 = this.f18566d.getMap(i12);
+        ReadableMap map2 = this.f18567d.getMap(i12);
         if (map2 == null) {
             i12 = asset.getName();
-            map2 = this.f18566d.getMap(asset.getName());
+            map2 = this.f18567d.getMap(asset.getName());
         }
         if (map2 != null && (map = map2.getMap("source")) != null) {
-            ys.i.d(this.f18569o, null, null, new a(map, asset, null), 3, null);
-            this.f18570p.put(i12, asset);
+            ys.i.d(this.f18570o, null, null, new a(map, asset, null), 3, null);
+            this.f18571p.put(i12, asset);
             return true;
         }
         return false;

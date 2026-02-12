@@ -5,7 +5,7 @@ import bj.c;
 final class j6 implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final j6 f46767a = new j6();
+    static final j6 f46768a = new j6();
 
     static {
         c.b a10 = bj.c.a("callingSource");

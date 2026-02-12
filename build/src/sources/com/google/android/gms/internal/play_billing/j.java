@@ -9,15 +9,15 @@ import java.util.RandomAccess;
 public abstract class j extends g implements List, RandomAccess {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final x f14934e = new h(p.f15026q, 0);
+    private static final x f14935e = new h(p.f15027q, 0);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final /* synthetic */ int f14935i = 0;
+    public static final /* synthetic */ int f14936i = 0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static j j(Object[] objArr, int i10) {
         if (i10 == 0) {
-            return p.f15026q;
+            return p.f15027q;
         }
         return new p(objArr, i10);
     }
@@ -42,7 +42,7 @@ public abstract class j extends g implements List, RandomAccess {
     }
 
     public static j l() {
-        return p.f15026q;
+        return p.f15027q;
     }
 
     @Override // java.util.List
@@ -160,7 +160,7 @@ public abstract class j extends g implements List, RandomAccess {
             return this;
         }
         if (i12 == 0) {
-            return p.f15026q;
+            return p.f15027q;
         }
         return new i(this, i10, i12);
     }
@@ -207,7 +207,7 @@ public abstract class j extends g implements List, RandomAccess {
     public final x listIterator(int i10) {
         b.b(i10, size(), "index");
         if (isEmpty()) {
-            return f14934e;
+            return f14935e;
         }
         return new h(this, i10);
     }

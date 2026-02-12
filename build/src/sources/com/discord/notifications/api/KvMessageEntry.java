@@ -37,7 +37,7 @@ public final class KvMessageEntry {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f10246id;
+    private final String f10247id;
     @NotNull
     private final List<JsonObject> members;
     @NotNull
@@ -86,12 +86,12 @@ public final class KvMessageEntry {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_() {
-        return new f(y.f51261a);
+        return new f(y.f51262a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final /* synthetic */ KSerializer _childSerializers$_anonymous_$0() {
-        return new f(y.f51261a);
+        return new f(y.f51262a);
     }
 
     /* renamed from: copy-kA7ecXY$default  reason: not valid java name */
@@ -108,7 +108,7 @@ public final class KvMessageEntry {
             jsonObject = kvMessageEntry.message;
         }
         if ((i10 & 8) != 0) {
-            str = kvMessageEntry.f10246id;
+            str = kvMessageEntry.f10247id;
         }
         if ((i10 & 16) != 0) {
             j10 = kvMessageEntry.channelId;
@@ -138,8 +138,8 @@ public final class KvMessageEntry {
         Lazy[] lazyArr = $childSerializers;
         compositeEncoder.k(serialDescriptor, 0, (qt.o) lazyArr[0].getValue(), kvMessageEntry.members);
         compositeEncoder.k(serialDescriptor, 1, (qt.o) lazyArr[1].getValue(), kvMessageEntry.users);
-        compositeEncoder.k(serialDescriptor, 2, y.f51261a, kvMessageEntry.message);
-        compositeEncoder.k(serialDescriptor, 3, MessageId$$serializer.INSTANCE, MessageId.m1084boximpl(kvMessageEntry.f10246id));
+        compositeEncoder.k(serialDescriptor, 2, y.f51262a, kvMessageEntry.message);
+        compositeEncoder.k(serialDescriptor, 3, MessageId$$serializer.INSTANCE, MessageId.m1084boximpl(kvMessageEntry.f10247id));
         compositeEncoder.k(serialDescriptor, 4, ChannelId$$serializer.INSTANCE, ChannelId.m1058boximpl(kvMessageEntry.channelId));
     }
 
@@ -161,7 +161,7 @@ public final class KvMessageEntry {
     @NotNull
     /* renamed from: component4-3Eiw7ao  reason: not valid java name */
     public final String m999component43Eiw7ao() {
-        return this.f10246id;
+        return this.f10247id;
     }
 
     /* renamed from: component5-o4g7jtM  reason: not valid java name */
@@ -185,7 +185,7 @@ public final class KvMessageEntry {
         }
         if (obj instanceof KvMessageEntry) {
             KvMessageEntry kvMessageEntry = (KvMessageEntry) obj;
-            return Intrinsics.areEqual(this.members, kvMessageEntry.members) && Intrinsics.areEqual(this.users, kvMessageEntry.users) && Intrinsics.areEqual(this.message, kvMessageEntry.message) && MessageId.m1088equalsimpl0(this.f10246id, kvMessageEntry.f10246id) && ChannelId.m1062equalsimpl0(this.channelId, kvMessageEntry.channelId);
+            return Intrinsics.areEqual(this.members, kvMessageEntry.members) && Intrinsics.areEqual(this.users, kvMessageEntry.users) && Intrinsics.areEqual(this.message, kvMessageEntry.message) && MessageId.m1088equalsimpl0(this.f10247id, kvMessageEntry.f10247id) && ChannelId.m1062equalsimpl0(this.channelId, kvMessageEntry.channelId);
         }
         return false;
     }
@@ -198,7 +198,7 @@ public final class KvMessageEntry {
     @NotNull
     /* renamed from: getId-3Eiw7ao  reason: not valid java name */
     public final String m1003getId3Eiw7ao() {
-        return this.f10246id;
+        return this.f10247id;
     }
 
     @NotNull
@@ -217,7 +217,7 @@ public final class KvMessageEntry {
     }
 
     public int hashCode() {
-        return (((((((this.members.hashCode() * 31) + this.users.hashCode()) * 31) + this.message.hashCode()) * 31) + MessageId.m1089hashCodeimpl(this.f10246id)) * 31) + ChannelId.m1063hashCodeimpl(this.channelId);
+        return (((((((this.members.hashCode() * 31) + this.users.hashCode()) * 31) + this.message.hashCode()) * 31) + MessageId.m1089hashCodeimpl(this.f10247id)) * 31) + ChannelId.m1063hashCodeimpl(this.channelId);
     }
 
     @NotNull
@@ -225,7 +225,7 @@ public final class KvMessageEntry {
         List<JsonObject> list = this.members;
         List<JsonObject> list2 = this.users;
         JsonObject jsonObject = this.message;
-        String m1091toStringimpl = MessageId.m1091toStringimpl(this.f10246id);
+        String m1091toStringimpl = MessageId.m1091toStringimpl(this.f10247id);
         String m1065toStringimpl = ChannelId.m1065toStringimpl(this.channelId);
         return "KvMessageEntry(members=" + list + ", users=" + list2 + ", message=" + jsonObject + ", id=" + m1091toStringimpl + ", channelId=" + m1065toStringimpl + ")";
     }
@@ -245,7 +245,7 @@ public final class KvMessageEntry {
             this.users = list2;
         }
         this.message = jsonObject;
-        this.f10246id = str;
+        this.f10247id = str;
         this.channelId = channelId.m1067unboximpl();
     }
 
@@ -257,7 +257,7 @@ public final class KvMessageEntry {
         this.members = members;
         this.users = users;
         this.message = message;
-        this.f10246id = id2;
+        this.f10247id = id2;
         this.channelId = j10;
     }
 

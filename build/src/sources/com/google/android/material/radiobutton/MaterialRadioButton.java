@@ -13,47 +13,47 @@ import f.a;
 public class MaterialRadioButton extends q {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final int f16167r = k.f6950y;
+    private static final int f16168r = k.f6950y;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final int[][] f16168s = {new int[]{16842910, 16842912}, new int[]{16842910, -16842912}, new int[]{-16842910, 16842912}, new int[]{-16842910, -16842912}};
+    private static final int[][] f16169s = {new int[]{16842910, 16842912}, new int[]{16842910, -16842912}, new int[]{-16842910, 16842912}, new int[]{-16842910, -16842912}};
 
     /* renamed from: p  reason: collision with root package name */
-    private ColorStateList f16169p;
+    private ColorStateList f16170p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f16170q;
+    private boolean f16171q;
 
     public MaterialRadioButton(@NonNull Context context, AttributeSet attributeSet) {
         this(context, attributeSet, a.F);
     }
 
     private ColorStateList getMaterialThemeColorsTintList() {
-        if (this.f16169p == null) {
-            int d10 = jh.a.d(this, a.f23294s);
+        if (this.f16170p == null) {
+            int d10 = jh.a.d(this, a.f23295s);
             int d11 = jh.a.d(this, b.f6741j);
             int d12 = jh.a.d(this, b.f6751o);
-            int[][] iArr = f16168s;
+            int[][] iArr = f16169s;
             int[] iArr2 = new int[iArr.length];
             iArr2[0] = jh.a.j(d12, d10, 1.0f);
             iArr2[1] = jh.a.j(d12, d11, 0.54f);
             iArr2[2] = jh.a.j(d12, d11, 0.38f);
             iArr2[3] = jh.a.j(d12, d11, 0.38f);
-            this.f16169p = new ColorStateList(iArr, iArr2);
+            this.f16170p = new ColorStateList(iArr, iArr2);
         }
-        return this.f16169p;
+        return this.f16170p;
     }
 
     @Override // android.widget.TextView, android.view.View
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
-        if (this.f16170q && d.b(this) == null) {
+        if (this.f16171q && d.b(this) == null) {
             setUseMaterialThemeColors(true);
         }
     }
 
     public void setUseMaterialThemeColors(boolean z10) {
-        this.f16170q = z10;
+        this.f16171q = z10;
         if (z10) {
             d.d(this, getMaterialThemeColorsTintList());
         } else {
@@ -69,7 +69,7 @@ public class MaterialRadioButton extends q {
     public MaterialRadioButton(android.content.Context r7, android.util.AttributeSet r8, int r9) {
         /*
             r6 = this;
-            int r4 = com.google.android.material.radiobutton.MaterialRadioButton.f16167r
+            int r4 = com.google.android.material.radiobutton.MaterialRadioButton.f16168r
             android.content.Context r7 = wh.a.d(r7, r8, r9, r4)
             r6.<init>(r7, r8, r9)
             android.content.Context r0 = r6.getContext()
@@ -88,7 +88,7 @@ public class MaterialRadioButton extends q {
         L29:
             int r9 = bh.l.f7125r4
             boolean r7 = r8.getBoolean(r9, r7)
-            r6.f16170q = r7
+            r6.f16171q = r7
             r8.recycle()
             return
         */

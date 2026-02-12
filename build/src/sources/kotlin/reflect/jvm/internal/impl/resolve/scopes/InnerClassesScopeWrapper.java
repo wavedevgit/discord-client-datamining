@@ -20,36 +20,36 @@ import org.jetbrains.annotations.NotNull;
 public final class InnerClassesScopeWrapper extends MemberScopeImpl {
 
     /* renamed from: a  reason: collision with root package name */
-    private final MemberScope f34199a;
+    private final MemberScope f34200a;
 
     public InnerClassesScopeWrapper(@NotNull MemberScope workerScope) {
         Intrinsics.checkNotNullParameter(workerScope, "workerScope");
-        this.f34199a = workerScope;
+        this.f34200a = workerScope;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
     public Set<Name> getClassifierNames() {
-        return this.f34199a.getClassifierNames();
+        return this.f34200a.getClassifierNames();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
     /* renamed from: getContributedClassifier */
-    public ClassifierDescriptor mo1203getContributedClassifier(@NotNull Name name, @NotNull LookupLocation location) {
+    public ClassifierDescriptor mo1202getContributedClassifier(@NotNull Name name, @NotNull LookupLocation location) {
         ClassDescriptor classDescriptor;
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
-        ClassifierDescriptor mo1203getContributedClassifier = this.f34199a.mo1203getContributedClassifier(name, location);
-        if (mo1203getContributedClassifier != null) {
-            if (mo1203getContributedClassifier instanceof ClassDescriptor) {
-                classDescriptor = (ClassDescriptor) mo1203getContributedClassifier;
+        ClassifierDescriptor mo1202getContributedClassifier = this.f34200a.mo1202getContributedClassifier(name, location);
+        if (mo1202getContributedClassifier != null) {
+            if (mo1202getContributedClassifier instanceof ClassDescriptor) {
+                classDescriptor = (ClassDescriptor) mo1202getContributedClassifier;
             } else {
                 classDescriptor = null;
             }
             if (classDescriptor != null) {
                 return classDescriptor;
             }
-            if (mo1203getContributedClassifier instanceof TypeAliasDescriptor) {
-                return (TypeAliasDescriptor) mo1203getContributedClassifier;
+            if (mo1202getContributedClassifier instanceof TypeAliasDescriptor) {
+                return (TypeAliasDescriptor) mo1202getContributedClassifier;
             }
         }
         return null;
@@ -63,26 +63,26 @@ public final class InnerClassesScopeWrapper extends MemberScopeImpl {
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
     @NotNull
     public Set<Name> getFunctionNames() {
-        return this.f34199a.getFunctionNames();
+        return this.f34200a.getFunctionNames();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
     @NotNull
     public Set<Name> getVariableNames() {
-        return this.f34199a.getVariableNames();
+        return this.f34200a.getVariableNames();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
     /* renamed from: recordLookup */
-    public void mo1206recordLookup(@NotNull Name name, @NotNull LookupLocation location) {
+    public void mo1205recordLookup(@NotNull Name name, @NotNull LookupLocation location) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(location, "location");
-        this.f34199a.mo1206recordLookup(name, location);
+        this.f34200a.mo1205recordLookup(name, location);
     }
 
     @NotNull
     public String toString() {
-        return "Classes from " + this.f34199a;
+        return "Classes from " + this.f34200a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScopeImpl, kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope
@@ -95,7 +95,7 @@ public final class InnerClassesScopeWrapper extends MemberScopeImpl {
             return CollectionsKt.l();
         }
         ArrayList arrayList = new ArrayList();
-        for (Object obj : this.f34199a.getContributedDescriptors(restrictedToKindsOrNull, nameFilter)) {
+        for (Object obj : this.f34200a.getContributedDescriptors(restrictedToKindsOrNull, nameFilter)) {
             if (obj instanceof ClassifierDescriptorWithTypeParameters) {
                 arrayList.add(obj);
             }

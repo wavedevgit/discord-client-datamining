@@ -6,14 +6,14 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ActivityResultLauncher f36563a;
+    private final ActivityResultLauncher f36564a;
 
     public a0(ActivityResultLauncher resolvableApiLauncher) {
         Intrinsics.checkNotNullParameter(resolvableApiLauncher, "resolvableApiLauncher");
-        this.f36563a = resolvableApiLauncher;
+        this.f36564a = resolvableApiLauncher;
     }
 
     public final ActivityResultLauncher a() {
-        return this.f36563a;
+        return this.f36564a;
     }
 }

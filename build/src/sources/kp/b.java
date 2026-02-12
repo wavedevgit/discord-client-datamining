@@ -8,25 +8,25 @@ public abstract class b {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f35123a;
+        public static final /* synthetic */ int[] f35124a;
 
         static {
             int[] iArr = new int[ep.f.values().length];
             try {
-                iArr[ep.f.f23085d.ordinal()] = 1;
+                iArr[ep.f.f23086d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[ep.f.f23086e.ordinal()] = 2;
+                iArr[ep.f.f23087e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f35123a = iArr;
+            f35124a = iArr;
         }
     }
 
     public static final String a(ep.f fVar) {
         Intrinsics.checkNotNullParameter(fVar, "<this>");
-        int i10 = a.f35123a[fVar.ordinal()];
+        int i10 = a.f35124a[fVar.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
                 return "sandbox";

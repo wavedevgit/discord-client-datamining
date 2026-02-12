@@ -120,7 +120,7 @@ import sq.s;
 public final class m {
 
     /* renamed from: a */
-    public static final m f38354a = new m();
+    public static final m f38355a = new m();
 
     private m() {
     }
@@ -225,7 +225,7 @@ public final class m {
 
     public static final Unit i(m5 m5Var) {
         m5Var.c();
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     private final List k(List list, Map map, Context context, boolean z10, List list2, m5 m5Var) {
@@ -382,19 +382,19 @@ public final class m {
                 j10 = r5.a(q5Var, m5Var, (VerifyPersonaButton) obj28);
             } else if (k5Var instanceof ClickableStackComponent) {
                 ClickableStackComponent clickableStackComponent = (ClickableStackComponent) k5Var;
-                List k10 = f38354a.k(clickableStackComponent.getChildren(), map, context, z10, list2, m5Var);
+                List k10 = f38355a.k(clickableStackComponent.getChildren(), map, context, z10, list2, m5Var);
                 Object obj29 = map.get(clickableStackComponent.getName());
                 Intrinsics.checkNotNull(obj29, "null cannot be cast to non-null type com.withpersona.sdk2.inquiry.network.dto.ui.components.ClickableStack");
                 j10 = pq.l.b(clickableStackComponent, m5Var, list2, k10, (ClickableStack) obj29);
             } else if (k5Var instanceof f0) {
                 f0 f0Var = (f0) k5Var;
-                List k11 = f38354a.k(f0Var.getChildren(), map, context, z10, list2, m5Var);
+                List k11 = f38355a.k(f0Var.getChildren(), map, context, z10, list2, m5Var);
                 Object obj30 = map.get(f0Var.getName());
                 Intrinsics.checkNotNull(obj30, "null cannot be cast to non-null type com.withpersona.sdk2.inquiry.network.dto.ui.components.HorizontalStack");
                 j10 = h0.b(f0Var, m5Var, list2, k11, (HorizontalStack) obj30);
             } else if (k5Var instanceof y) {
                 y yVar = (y) k5Var;
-                List k12 = f38354a.k(yVar.getChildren(), map, context, z10, list2, m5Var);
+                List k12 = f38355a.k(yVar.getChildren(), map, context, z10, list2, m5Var);
                 Object obj31 = map.get(yVar.getName());
                 Intrinsics.checkNotNull(obj31, "null cannot be cast to non-null type com.withpersona.sdk2.inquiry.network.dto.ui.components.Footer");
                 j10 = z.a(yVar, m5Var, list2, k12, (Footer) obj31);
@@ -502,7 +502,7 @@ public final class m {
         Intrinsics.checkNotNull(context);
         h h10 = h(this, context, uiScreen, false, z10, false, 16, null);
         if (uiScreen.f() == StyleElements.PositionType.CENTER) {
-            binding.f21850c.setFillViewport(true);
+            binding.f21851c.setFillViewport(true);
             h10.a().setLayoutParams(new FrameLayout.LayoutParams(-1, -2));
             View a10 = h10.a();
             ViewGroup.LayoutParams layoutParams = a10.getLayoutParams();
@@ -514,12 +514,12 @@ public final class m {
                 throw new NullPointerException("null cannot be cast to non-null type android.widget.FrameLayout.LayoutParams");
             }
         }
-        binding.f21849b.addView(h10.a());
+        binding.f21850b.addView(h10.a());
         ConstraintLayout root = binding.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         lq.f.d(root, false, false, false, false, 13, null);
         if (h10.b() != null) {
-            binding.f21851d.addView(h10.b());
+            binding.f21852d.addView(h10.b());
             lq.f.d(h10.b(), false, false, false, false, 2, null);
         }
         if (function2 != null) {
@@ -527,7 +527,7 @@ public final class m {
         }
         Integer e10 = uiScreen.e();
         if (e10 != null) {
-            binding.f21852e.setControlsColor(e10.intValue());
+            binding.f21853e.setControlsColor(e10.intValue());
         }
         return h10;
     }

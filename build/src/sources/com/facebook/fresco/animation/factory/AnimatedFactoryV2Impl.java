@@ -21,40 +21,40 @@ import ta.o;
 public class AnimatedFactoryV2Impl implements ia.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final PlatformBitmapFactory f10796a;
+    private final PlatformBitmapFactory f10797a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final n f10797b;
+    private final n f10798b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ma.n f10798c;
+    private final ma.n f10799c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f10799d;
+    private final boolean f10800d;
 
     /* renamed from: e  reason: collision with root package name */
-    private ia.d f10800e;
+    private ia.d f10801e;
 
     /* renamed from: f  reason: collision with root package name */
-    private ja.b f10801f;
+    private ja.b f10802f;
 
     /* renamed from: g  reason: collision with root package name */
-    private ka.a f10802g;
+    private ka.a f10803g;
 
     /* renamed from: h  reason: collision with root package name */
-    private sa.a f10803h;
+    private sa.a f10804h;
 
     /* renamed from: i  reason: collision with root package name */
-    private g f10804i;
+    private g f10805i;
 
     /* renamed from: j  reason: collision with root package name */
-    private int f10805j;
+    private int f10806j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final boolean f10806k;
+    private final boolean f10807k;
 
     /* renamed from: l  reason: collision with root package name */
-    private int f10807l;
+    private int f10808l;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements ra.c {
@@ -63,7 +63,7 @@ public class AnimatedFactoryV2Impl implements ia.a {
 
         @Override // ra.c
         public e a(k kVar, int i10, o oVar, ImageDecodeOptions imageDecodeOptions) {
-            return AnimatedFactoryV2Impl.this.n().a(kVar, imageDecodeOptions, imageDecodeOptions.f11052i);
+            return AnimatedFactoryV2Impl.this.n().a(kVar, imageDecodeOptions, imageDecodeOptions.f11053i);
         }
     }
 
@@ -75,7 +75,7 @@ public class AnimatedFactoryV2Impl implements ia.a {
 
         @Override // ja.b
         public ha.a a(ha.e eVar, Rect rect) {
-            return new ja.a(AnimatedFactoryV2Impl.this.m(), eVar, rect, AnimatedFactoryV2Impl.this.f10799d);
+            return new ja.a(AnimatedFactoryV2Impl.this.m(), eVar, rect, AnimatedFactoryV2Impl.this.f10800d);
         }
     }
 
@@ -87,20 +87,20 @@ public class AnimatedFactoryV2Impl implements ia.a {
 
         @Override // ja.b
         public ha.a a(ha.e eVar, Rect rect) {
-            return new ja.a(AnimatedFactoryV2Impl.this.m(), eVar, rect, AnimatedFactoryV2Impl.this.f10799d);
+            return new ja.a(AnimatedFactoryV2Impl.this.m(), eVar, rect, AnimatedFactoryV2Impl.this.f10800d);
         }
     }
 
     @d
     public AnimatedFactoryV2Impl(PlatformBitmapFactory platformBitmapFactory, n nVar, ma.n nVar2, boolean z10, boolean z11, int i10, int i11, g gVar) {
-        this.f10796a = platformBitmapFactory;
-        this.f10797b = nVar;
-        this.f10798c = nVar2;
-        this.f10805j = i10;
-        this.f10806k = z11;
-        this.f10799d = z10;
-        this.f10804i = gVar;
-        this.f10807l = i11;
+        this.f10797a = platformBitmapFactory;
+        this.f10798b = nVar;
+        this.f10799c = nVar2;
+        this.f10806j = i10;
+        this.f10807k = z11;
+        this.f10800d = z10;
+        this.f10805i = gVar;
+        this.f10808l = i11;
     }
 
     public static /* synthetic */ Integer e() {
@@ -112,7 +112,7 @@ public class AnimatedFactoryV2Impl implements ia.a {
     }
 
     private ia.d j() {
-        return new ia.e(new c(), this.f10796a, this.f10806k);
+        return new ia.e(new c(), this.f10797a, this.f10807k);
     }
 
     private x9.d k() {
@@ -122,9 +122,9 @@ public class AnimatedFactoryV2Impl implements ia.a {
                 return AnimatedFactoryV2Impl.e();
             }
         };
-        ExecutorService executorService = this.f10804i;
+        ExecutorService executorService = this.f10805i;
         if (executorService == null) {
-            executorService = new n8.d(this.f10797b.d());
+            executorService = new n8.d(this.f10798b.d());
         }
         Supplier supplier2 = new Supplier() { // from class: x9.c
             @Override // com.facebook.common.internal.Supplier
@@ -132,39 +132,39 @@ public class AnimatedFactoryV2Impl implements ia.a {
                 return AnimatedFactoryV2Impl.f();
             }
         };
-        Supplier supplier3 = m.f41523b;
-        return new x9.d(l(), i.y(), executorService, RealtimeSinceBootClock.get(), this.f10796a, this.f10798c, supplier, supplier2, supplier3, m.a(Boolean.valueOf(this.f10806k)), m.a(Boolean.valueOf(this.f10799d)), m.a(Integer.valueOf(this.f10805j)), m.a(Integer.valueOf(this.f10807l)));
+        Supplier supplier3 = m.f41524b;
+        return new x9.d(l(), i.y(), executorService, RealtimeSinceBootClock.get(), this.f10797a, this.f10799c, supplier, supplier2, supplier3, m.a(Boolean.valueOf(this.f10807k)), m.a(Boolean.valueOf(this.f10800d)), m.a(Integer.valueOf(this.f10806j)), m.a(Integer.valueOf(this.f10808l)));
     }
 
     private ja.b l() {
-        if (this.f10801f == null) {
-            this.f10801f = new b();
+        if (this.f10802f == null) {
+            this.f10802f = new b();
         }
-        return this.f10801f;
+        return this.f10802f;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public ka.a m() {
-        if (this.f10802g == null) {
-            this.f10802g = new ka.a();
+        if (this.f10803g == null) {
+            this.f10803g = new ka.a();
         }
-        return this.f10802g;
+        return this.f10803g;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public ia.d n() {
-        if (this.f10800e == null) {
-            this.f10800e = j();
+        if (this.f10801e == null) {
+            this.f10801e = j();
         }
-        return this.f10800e;
+        return this.f10801e;
     }
 
     @Override // ia.a
     public sa.a a(Context context) {
-        if (this.f10803h == null) {
-            this.f10803h = k();
+        if (this.f10804h == null) {
+            this.f10804h = k();
         }
-        return this.f10803h;
+        return this.f10804h;
     }
 
     @Override // ia.a
@@ -173,7 +173,7 @@ public class AnimatedFactoryV2Impl implements ia.a {
             @Override // ra.c
             public final e a(k kVar, int i10, o oVar, ImageDecodeOptions imageDecodeOptions) {
                 e b10;
-                b10 = AnimatedFactoryV2Impl.this.n().b(kVar, imageDecodeOptions, imageDecodeOptions.f11052i);
+                b10 = AnimatedFactoryV2Impl.this.n().b(kVar, imageDecodeOptions, imageDecodeOptions.f11053i);
                 return b10;
             }
         };

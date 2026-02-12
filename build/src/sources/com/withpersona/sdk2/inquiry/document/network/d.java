@@ -19,48 +19,48 @@ import kotlinx.coroutines.flow.FlowCollector;
 public final class d implements o<b> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f19599b;
+    private final String f19600b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final qo.b f19600c;
+    private final qo.b f19601c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f19601d;
+    private final String f19602d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f19602e;
+    private final String f19603e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f19603f;
+    private final String f19604f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final so.a f19604g;
+    private final so.a f19605g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final cq.a f19605h;
+    private final cq.a f19606h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final List f19606i;
+    private final List f19607i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final qo.b f19607a;
+        private final qo.b f19608a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final so.a f19608b;
+        private final so.a f19609b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final cq.a f19609c;
+        private final cq.a f19610c;
 
         public a(qo.b service, so.a fallbackModeManager, cq.a dataCollector) {
             Intrinsics.checkNotNullParameter(service, "service");
             Intrinsics.checkNotNullParameter(fallbackModeManager, "fallbackModeManager");
             Intrinsics.checkNotNullParameter(dataCollector, "dataCollector");
-            this.f19607a = service;
-            this.f19608b = fallbackModeManager;
-            this.f19609c = dataCollector;
+            this.f19608a = service;
+            this.f19609b = fallbackModeManager;
+            this.f19610c = dataCollector;
         }
 
         public final d a(String sessionToken, String inquiryId, String fromStep, String fromComponent, List documents) {
@@ -69,7 +69,7 @@ public final class d implements o<b> {
             Intrinsics.checkNotNullParameter(fromStep, "fromStep");
             Intrinsics.checkNotNullParameter(fromComponent, "fromComponent");
             Intrinsics.checkNotNullParameter(documents, "documents");
-            return new d(sessionToken, this.f19607a, inquiryId, fromStep, fromComponent, this.f19608b, this.f19609c, documents, null);
+            return new d(sessionToken, this.f19608a, inquiryId, fromStep, fromComponent, this.f19609b, this.f19610c, documents, null);
         }
     }
 
@@ -80,32 +80,32 @@ public final class d implements o<b> {
         public static final class a extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final InternalErrorInfo f19610a;
+            private final InternalErrorInfo f19611a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public a(InternalErrorInfo cause) {
                 super(null);
                 Intrinsics.checkNotNullParameter(cause, "cause");
-                this.f19610a = cause;
+                this.f19611a = cause;
             }
 
             public final InternalErrorInfo a() {
-                return this.f19610a;
+                return this.f19611a;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                return (obj instanceof a) && Intrinsics.areEqual(this.f19610a, ((a) obj).f19610a);
+                return (obj instanceof a) && Intrinsics.areEqual(this.f19611a, ((a) obj).f19611a);
             }
 
             public int hashCode() {
-                return this.f19610a.hashCode();
+                return this.f19611a.hashCode();
             }
 
             public String toString() {
-                InternalErrorInfo internalErrorInfo = this.f19610a;
+                InternalErrorInfo internalErrorInfo = this.f19611a;
                 return "Error(cause=" + internalErrorInfo + ")";
             }
         }
@@ -115,7 +115,7 @@ public final class d implements o<b> {
         public static final class C0245b extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final C0245b f19611a = new C0245b();
+            public static final C0245b f19612a = new C0245b();
 
             private C0245b() {
                 super(null);
@@ -134,33 +134,33 @@ public final class d implements o<b> {
     static final class c extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f19612d;
+        Object f19613d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f19613e;
+        int f19614e;
 
         /* renamed from: i  reason: collision with root package name */
-        private /* synthetic */ Object f19614i;
+        private /* synthetic */ Object f19615i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a extends k implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f19616d;
+            int f19617d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ d f19617e;
+            final /* synthetic */ d f19618e;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(d dVar, Continuation continuation) {
                 super(1, continuation);
-                this.f19617e = dVar;
+                this.f19618e = dVar;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Continuation continuation) {
-                return new a(this.f19617e, continuation);
+                return new a(this.f19618e, continuation);
             }
 
             /* JADX WARN: Code restructure failed: missing block: B:13:0x0051, code lost:
@@ -178,7 +178,7 @@ public final class d implements o<b> {
                 /*
                     r7 = this;
                     java.lang.Object r0 = gs.b.f()
-                    int r1 = r7.f19616d
+                    int r1 = r7.f19617d
                     r2 = 2
                     r3 = 1
                     if (r1 == 0) goto L1e
@@ -196,21 +196,21 @@ public final class d implements o<b> {
                     goto L54
                 L1e:
                     kotlin.c.b(r8)
-                    com.withpersona.sdk2.inquiry.document.network.d r8 = r7.f19617e
+                    com.withpersona.sdk2.inquiry.document.network.d r8 = r7.f19618e
                     so.a r8 = com.withpersona.sdk2.inquiry.document.network.d.d(r8)
                     boolean r8 = r8.b()
                     if (r8 == 0) goto L57
-                    com.withpersona.sdk2.inquiry.document.network.d r8 = r7.f19617e
+                    com.withpersona.sdk2.inquiry.document.network.d r8 = r7.f19618e
                     so.a r8 = com.withpersona.sdk2.inquiry.document.network.d.d(r8)
-                    com.withpersona.sdk2.inquiry.document.network.d r1 = r7.f19617e
+                    com.withpersona.sdk2.inquiry.document.network.d r1 = r7.f19618e
                     java.lang.String r1 = com.withpersona.sdk2.inquiry.document.network.d.i(r1)
-                    com.withpersona.sdk2.inquiry.document.network.SubmitDocumentRequest$a r2 = com.withpersona.sdk2.inquiry.document.network.SubmitDocumentRequest.f19523c
-                    com.withpersona.sdk2.inquiry.document.network.d r4 = r7.f19617e
+                    com.withpersona.sdk2.inquiry.document.network.SubmitDocumentRequest$a r2 = com.withpersona.sdk2.inquiry.document.network.SubmitDocumentRequest.f19524c
+                    com.withpersona.sdk2.inquiry.document.network.d r4 = r7.f19618e
                     java.lang.String r4 = com.withpersona.sdk2.inquiry.document.network.d.f(r4)
-                    com.withpersona.sdk2.inquiry.document.network.d r5 = r7.f19617e
+                    com.withpersona.sdk2.inquiry.document.network.d r5 = r7.f19618e
                     java.lang.String r5 = com.withpersona.sdk2.inquiry.document.network.d.e(r5)
                     com.withpersona.sdk2.inquiry.document.network.SubmitDocumentRequest r2 = r2.a(r4, r5)
-                    r7.f19616d = r3
+                    r7.f19617d = r3
                     java.lang.Object r8 = r8.a(r1, r2, r7)
                     if (r8 != r0) goto L54
                     goto L83
@@ -218,19 +218,19 @@ public final class d implements o<b> {
                     fw.z r8 = (fw.z) r8
                     return r8
                 L57:
-                    com.withpersona.sdk2.inquiry.document.network.d r8 = r7.f19617e
+                    com.withpersona.sdk2.inquiry.document.network.d r8 = r7.f19618e
                     qo.b r8 = com.withpersona.sdk2.inquiry.document.network.d.h(r8)
-                    com.withpersona.sdk2.inquiry.document.network.d r1 = r7.f19617e
+                    com.withpersona.sdk2.inquiry.document.network.d r1 = r7.f19618e
                     java.lang.String r1 = com.withpersona.sdk2.inquiry.document.network.d.i(r1)
-                    com.withpersona.sdk2.inquiry.document.network.d r3 = r7.f19617e
+                    com.withpersona.sdk2.inquiry.document.network.d r3 = r7.f19618e
                     java.lang.String r3 = com.withpersona.sdk2.inquiry.document.network.d.g(r3)
-                    com.withpersona.sdk2.inquiry.document.network.SubmitDocumentRequest$a r4 = com.withpersona.sdk2.inquiry.document.network.SubmitDocumentRequest.f19523c
-                    com.withpersona.sdk2.inquiry.document.network.d r5 = r7.f19617e
+                    com.withpersona.sdk2.inquiry.document.network.SubmitDocumentRequest$a r4 = com.withpersona.sdk2.inquiry.document.network.SubmitDocumentRequest.f19524c
+                    com.withpersona.sdk2.inquiry.document.network.d r5 = r7.f19618e
                     java.lang.String r5 = com.withpersona.sdk2.inquiry.document.network.d.f(r5)
-                    com.withpersona.sdk2.inquiry.document.network.d r6 = r7.f19617e
+                    com.withpersona.sdk2.inquiry.document.network.d r6 = r7.f19618e
                     java.lang.String r6 = com.withpersona.sdk2.inquiry.document.network.d.e(r6)
                     com.withpersona.sdk2.inquiry.document.network.SubmitDocumentRequest r4 = r4.a(r5, r6)
-                    r7.f19616d = r2
+                    r7.f19617d = r2
                     java.lang.Object r8 = r8.e(r1, r3, r4, r7)
                     if (r8 != r0) goto L84
                 L83:
@@ -244,7 +244,7 @@ public final class d implements o<b> {
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Continuation continuation) {
-                return ((a) create(continuation)).invokeSuspend(Unit.f31987a);
+                return ((a) create(continuation)).invokeSuspend(Unit.f31988a);
             }
         }
 
@@ -255,7 +255,7 @@ public final class d implements o<b> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             c cVar = new c(continuation);
-            cVar.f19614i = obj;
+            cVar.f19615i = obj;
             return cVar;
         }
 
@@ -272,7 +272,7 @@ public final class d implements o<b> {
             /*
                 r10 = this;
                 java.lang.Object r0 = gs.b.f()
-                int r1 = r10.f19613e
+                int r1 = r10.f19614e
                 r2 = 0
                 r3 = 3
                 r4 = 2
@@ -281,7 +281,7 @@ public final class d implements o<b> {
                 if (r1 == r5) goto L2f
                 if (r1 == r4) goto L23
                 if (r1 != r3) goto L1b
-                java.lang.Object r0 = r10.f19614i
+                java.lang.Object r0 = r10.f19615i
                 com.withpersona.sdk2.inquiry.network.core.NetworkCallResult r0 = (com.withpersona.sdk2.inquiry.network.core.NetworkCallResult) r0
                 kotlin.c.b(r11)
                 goto La9
@@ -291,20 +291,20 @@ public final class d implements o<b> {
                 r11.<init>(r0)
                 throw r11
             L23:
-                java.lang.Object r1 = r10.f19612d
+                java.lang.Object r1 = r10.f19613d
                 com.withpersona.sdk2.inquiry.network.core.NetworkCallResult r1 = (com.withpersona.sdk2.inquiry.network.core.NetworkCallResult) r1
-                java.lang.Object r4 = r10.f19614i
+                java.lang.Object r4 = r10.f19615i
                 kotlinx.coroutines.flow.FlowCollector r4 = (kotlinx.coroutines.flow.FlowCollector) r4
                 kotlin.c.b(r11)
                 goto L8a
             L2f:
-                java.lang.Object r1 = r10.f19614i
+                java.lang.Object r1 = r10.f19615i
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 kotlin.c.b(r11)
                 goto L6d
             L37:
                 kotlin.c.b(r11)
-                java.lang.Object r11 = r10.f19614i
+                java.lang.Object r11 = r10.f19615i
                 kotlinx.coroutines.flow.FlowCollector r11 = (kotlinx.coroutines.flow.FlowCollector) r11
                 com.withpersona.sdk2.inquiry.document.network.d r1 = com.withpersona.sdk2.inquiry.document.network.d.this
                 cq.a r1 = com.withpersona.sdk2.inquiry.document.network.d.b(r1)
@@ -318,8 +318,8 @@ public final class d implements o<b> {
                 com.withpersona.sdk2.inquiry.document.network.d$c$a r1 = new com.withpersona.sdk2.inquiry.document.network.d$c$a
                 com.withpersona.sdk2.inquiry.document.network.d r6 = com.withpersona.sdk2.inquiry.document.network.d.this
                 r1.<init>(r6, r2)
-                r10.f19614i = r11
-                r10.f19613e = r5
+                r10.f19615i = r11
+                r10.f19614e = r5
                 java.lang.Object r1 = com.withpersona.sdk2.inquiry.network.core.NetworkUtilsKt.enqueueVerificationRequestWithRetry(r1, r10)
                 if (r1 != r0) goto L6a
                 goto La8
@@ -334,10 +334,10 @@ public final class d implements o<b> {
                 r5 = r11
                 com.withpersona.sdk2.inquiry.network.core.NetworkCallResult$Success r5 = (com.withpersona.sdk2.inquiry.network.core.NetworkCallResult.Success) r5
                 r5.getResponse()
-                com.withpersona.sdk2.inquiry.document.network.d$b$b r5 = com.withpersona.sdk2.inquiry.document.network.d.b.C0245b.f19611a
-                r10.f19614i = r1
-                r10.f19612d = r11
-                r10.f19613e = r4
+                com.withpersona.sdk2.inquiry.document.network.d$b$b r5 = com.withpersona.sdk2.inquiry.document.network.d.b.C0245b.f19612a
+                r10.f19615i = r1
+                r10.f19613d = r11
+                r10.f19614e = r4
                 java.lang.Object r4 = r1.emit(r5, r10)
                 if (r4 != r0) goto L88
                 goto La8
@@ -355,15 +355,15 @@ public final class d implements o<b> {
                 com.withpersona.sdk2.inquiry.network.core.InternalErrorInfo$NetworkErrorInfo r4 = r4.getNetworkErrorInfo()
                 com.withpersona.sdk2.inquiry.document.network.d$b$a r5 = new com.withpersona.sdk2.inquiry.document.network.d$b$a
                 r5.<init>(r4)
-                r10.f19614i = r11
-                r10.f19612d = r2
-                r10.f19613e = r3
+                r10.f19615i = r11
+                r10.f19613d = r2
+                r10.f19614e = r3
                 java.lang.Object r11 = r1.emit(r5, r10)
                 if (r11 != r0) goto La9
             La8:
                 return r0
             La9:
-                kotlin.Unit r11 = kotlin.Unit.f31987a
+                kotlin.Unit r11 = kotlin.Unit.f31988a
                 return r11
             */
             throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.document.network.d.c.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -371,7 +371,7 @@ public final class d implements o<b> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f31987a);
+            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -382,7 +382,7 @@ public final class d implements o<b> {
     @Override // en.o
     public boolean a(o otherWorker) {
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
-        if ((otherWorker instanceof d) && Intrinsics.areEqual(this.f19599b, ((d) otherWorker).f19599b)) {
+        if ((otherWorker instanceof d) && Intrinsics.areEqual(this.f19600b, ((d) otherWorker).f19600b)) {
             return true;
         }
         return false;
@@ -394,13 +394,13 @@ public final class d implements o<b> {
     }
 
     private d(String str, qo.b bVar, String str2, String str3, String str4, so.a aVar, cq.a aVar2, List list) {
-        this.f19599b = str;
-        this.f19600c = bVar;
-        this.f19601d = str2;
-        this.f19602e = str3;
-        this.f19603f = str4;
-        this.f19604g = aVar;
-        this.f19605h = aVar2;
-        this.f19606i = list;
+        this.f19600b = str;
+        this.f19601c = bVar;
+        this.f19602d = str2;
+        this.f19603e = str3;
+        this.f19604f = str4;
+        this.f19605g = aVar;
+        this.f19606h = aVar2;
+        this.f19607i = list;
     }
 }

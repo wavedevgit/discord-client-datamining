@@ -12,23 +12,23 @@ import java.util.List;
 public class h0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f17351a;
+    private final Context f17352a;
 
     /* renamed from: b  reason: collision with root package name */
-    private String f17352b;
+    private String f17353b;
 
     /* renamed from: c  reason: collision with root package name */
-    private String f17353c;
+    private String f17354c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f17354d;
+    private int f17355d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f17355e = 0;
+    private int f17356e = 0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h0(Context context) {
-        this.f17351a = context;
+        this.f17352a = context;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -54,7 +54,7 @@ public class h0 {
 
     private PackageInfo f(String str) {
         try {
-            return this.f17351a.getPackageManager().getPackageInfo(str, 0);
+            return this.f17352a.getPackageManager().getPackageInfo(str, 0);
         } catch (PackageManager.NameNotFoundException e10) {
             Log.w("FirebaseMessaging", "Failed to find package " + e10);
             return null;
@@ -62,56 +62,56 @@ public class h0 {
     }
 
     private synchronized void h() {
-        PackageInfo f10 = f(this.f17351a.getPackageName());
+        PackageInfo f10 = f(this.f17352a.getPackageName());
         if (f10 != null) {
-            this.f17352b = Integer.toString(f10.versionCode);
-            this.f17353c = f10.versionName;
+            this.f17353b = Integer.toString(f10.versionCode);
+            this.f17354c = f10.versionName;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public synchronized String a() {
         try {
-            if (this.f17352b == null) {
+            if (this.f17353b == null) {
                 h();
             }
         } catch (Throwable th2) {
             throw th2;
         }
-        return this.f17352b;
+        return this.f17353b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public synchronized String b() {
         try {
-            if (this.f17353c == null) {
+            if (this.f17354c == null) {
                 h();
             }
         } catch (Throwable th2) {
             throw th2;
         }
-        return this.f17353c;
+        return this.f17354c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public synchronized int d() {
         PackageInfo f10;
         try {
-            if (this.f17354d == 0 && (f10 = f("com.google.android.gms")) != null) {
-                this.f17354d = f10.versionCode;
+            if (this.f17355d == 0 && (f10 = f("com.google.android.gms")) != null) {
+                this.f17355d = f10.versionCode;
             }
         } catch (Throwable th2) {
             throw th2;
         }
-        return this.f17354d;
+        return this.f17355d;
     }
 
     synchronized int e() {
-        int i10 = this.f17355e;
+        int i10 = this.f17356e;
         if (i10 != 0) {
             return i10;
         }
-        PackageManager packageManager = this.f17351a.getPackageManager();
+        PackageManager packageManager = this.f17352a.getPackageManager();
         if (packageManager.checkPermission("com.google.android.c2dm.permission.SEND", "com.google.android.gms") == -1) {
             Log.e("FirebaseMessaging", "Google Play services missing or without correct permission.");
             return 0;
@@ -121,7 +121,7 @@ public class h0 {
             intent.setPackage("com.google.android.gms");
             List<ResolveInfo> queryIntentServices = packageManager.queryIntentServices(intent, 0);
             if (queryIntentServices != null && queryIntentServices.size() > 0) {
-                this.f17355e = 1;
+                this.f17356e = 1;
                 return 1;
             }
         }
@@ -129,16 +129,16 @@ public class h0 {
         intent2.setPackage("com.google.android.gms");
         List<ResolveInfo> queryBroadcastReceivers = packageManager.queryBroadcastReceivers(intent2, 0);
         if (queryBroadcastReceivers != null && queryBroadcastReceivers.size() > 0) {
-            this.f17355e = 2;
+            this.f17356e = 2;
             return 2;
         }
         Log.w("FirebaseMessaging", "Failed to resolve IID implementation package, falling back");
         if (com.google.android.gms.common.util.k.e()) {
-            this.f17355e = 2;
+            this.f17356e = 2;
         } else {
-            this.f17355e = 1;
+            this.f17356e = 1;
         }
-        return this.f17355e;
+        return this.f17356e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

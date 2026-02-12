@@ -37,78 +37,78 @@ public final class i extends td.n {
     private boolean M;
 
     /* renamed from: k  reason: collision with root package name */
-    public final int f52583k;
+    public final int f52584k;
 
     /* renamed from: l  reason: collision with root package name */
-    public final int f52584l;
+    public final int f52585l;
 
     /* renamed from: m  reason: collision with root package name */
-    public final Uri f52585m;
+    public final Uri f52586m;
 
     /* renamed from: n  reason: collision with root package name */
-    public final boolean f52586n;
+    public final boolean f52587n;
 
     /* renamed from: o  reason: collision with root package name */
-    public final int f52587o;
+    public final int f52588o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final DataSource f52588p;
+    private final DataSource f52589p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final com.google.android.exoplayer2.upstream.a f52589q;
+    private final com.google.android.exoplayer2.upstream.a f52590q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final j f52590r;
+    private final j f52591r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final boolean f52591s;
+    private final boolean f52592s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final boolean f52592t;
+    private final boolean f52593t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final s0 f52593u;
+    private final s0 f52594u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final h f52594v;
+    private final h f52595v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final List f52595w;
+    private final List f52596w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final sc.m f52596x;
+    private final sc.m f52597x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final md.h f52597y;
+    private final md.h f52598y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final h0 f52598z;
+    private final h0 f52599z;
 
     private i(h hVar, DataSource dataSource, com.google.android.exoplayer2.upstream.a aVar, Format format, boolean z10, DataSource dataSource2, com.google.android.exoplayer2.upstream.a aVar2, boolean z11, Uri uri, List list, int i10, Object obj, long j10, long j11, long j12, int i11, boolean z12, int i12, boolean z13, boolean z14, s0 s0Var, long j13, sc.m mVar, j jVar, md.h hVar2, h0 h0Var, boolean z15, t1 t1Var) {
         super(dataSource, aVar, format, i10, obj, j10, j11, j12);
         this.A = z10;
-        this.f52587o = i11;
+        this.f52588o = i11;
         this.M = z12;
-        this.f52584l = i12;
-        this.f52589q = aVar2;
-        this.f52588p = dataSource2;
+        this.f52585l = i12;
+        this.f52590q = aVar2;
+        this.f52589p = dataSource2;
         this.H = aVar2 != null;
         this.B = z11;
-        this.f52585m = uri;
-        this.f52591s = z14;
-        this.f52593u = s0Var;
+        this.f52586m = uri;
+        this.f52592s = z14;
+        this.f52594u = s0Var;
         this.D = j13;
-        this.f52592t = z13;
-        this.f52594v = hVar;
-        this.f52595w = list;
-        this.f52596x = mVar;
-        this.f52590r = jVar;
-        this.f52597y = hVar2;
-        this.f52598z = h0Var;
-        this.f52586n = z15;
+        this.f52593t = z13;
+        this.f52595v = hVar;
+        this.f52596w = list;
+        this.f52597x = mVar;
+        this.f52591r = jVar;
+        this.f52598y = hVar2;
+        this.f52599z = h0Var;
+        this.f52587n = z15;
         this.C = t1Var;
         this.K = qi.s.t();
-        this.f52583k = N.getAndIncrement();
+        this.f52584k = N.getAndIncrement();
     }
 
     private static DataSource i(DataSource dataSource, byte[] bArr, byte[] bArr2) {
@@ -128,16 +128,16 @@ public final class i extends td.n {
         md.h hVar3;
         h0 h0Var;
         j jVar;
-        f.e eVar2 = eVar.f52578a;
-        com.google.android.exoplayer2.upstream.a a10 = new a.b().i(u0.e(fVar.f54572a, eVar2.f54535d)).h(eVar2.f54543t).g(eVar2.f54544u).b(eVar.f52581d ? 8 : 0).e(qi.t.j()).a();
+        f.e eVar2 = eVar.f52579a;
+        com.google.android.exoplayer2.upstream.a a10 = new a.b().i(u0.e(fVar.f54573a, eVar2.f54536d)).h(eVar2.f54544t).g(eVar2.f54545u).b(eVar.f52582d ? 8 : 0).e(qi.t.j()).a();
         boolean z14 = bArr != null;
-        DataSource i11 = i(dataSource, bArr, z14 ? l((String) oe.a.e(eVar2.f54542s)) : null);
-        f.d dVar = eVar2.f54536e;
+        DataSource i11 = i(dataSource, bArr, z14 ? l((String) oe.a.e(eVar2.f54543s)) : null);
+        f.d dVar = eVar2.f54537e;
         if (dVar != null) {
             boolean z15 = bArr2 != null;
-            byte[] l10 = z15 ? l((String) oe.a.e(dVar.f54542s)) : null;
+            byte[] l10 = z15 ? l((String) oe.a.e(dVar.f54543s)) : null;
             z12 = true;
-            aVar = new a.b().i(u0.e(fVar.f54572a, dVar.f54535d)).h(dVar.f54543t).g(dVar.f54544u).e(qi.t.j()).a();
+            aVar = new a.b().i(u0.e(fVar.f54573a, dVar.f54536d)).h(dVar.f54544t).g(dVar.f54545u).e(qi.t.j()).a();
             z13 = z15;
             dataSource2 = i(dataSource, bArr2, l10);
         } else {
@@ -146,24 +146,24 @@ public final class i extends td.n {
             dataSource2 = null;
             z13 = false;
         }
-        long j12 = j10 + eVar2.f54539p;
-        long j13 = j12 + eVar2.f54537i;
-        int i12 = fVar.f54515j + eVar2.f54538o;
+        long j12 = j10 + eVar2.f54540p;
+        long j13 = j12 + eVar2.f54538i;
+        int i12 = fVar.f54516j + eVar2.f54539o;
         if (iVar != null) {
-            com.google.android.exoplayer2.upstream.a aVar2 = iVar.f52589q;
-            boolean z16 = (aVar == aVar2 || (aVar != null && aVar2 != null && aVar.f13982a.equals(aVar2.f13982a) && aVar.f13988g == iVar.f52589q.f13988g)) ? z12 : false;
+            com.google.android.exoplayer2.upstream.a aVar2 = iVar.f52590q;
+            boolean z16 = (aVar == aVar2 || (aVar != null && aVar2 != null && aVar.f13983a.equals(aVar2.f13983a) && aVar.f13989g == iVar.f52590q.f13989g)) ? z12 : false;
             uri2 = uri;
-            boolean z17 = (uri2.equals(iVar.f52585m) && iVar.J) ? z12 : false;
-            hVar3 = iVar.f52597y;
-            h0Var = iVar.f52598z;
-            jVar = (z16 && z17 && !iVar.L && iVar.f52584l == i12) ? iVar.E : null;
+            boolean z17 = (uri2.equals(iVar.f52586m) && iVar.J) ? z12 : false;
+            hVar3 = iVar.f52598y;
+            h0Var = iVar.f52599z;
+            jVar = (z16 && z17 && !iVar.L && iVar.f52585l == i12) ? iVar.E : null;
         } else {
             uri2 = uri;
             hVar3 = new md.h();
             h0Var = new h0(10);
             jVar = null;
         }
-        return new i(hVar, i11, a10, format, z14, dataSource2, aVar, z13, uri2, list, i10, obj, j12, j13, eVar.f52579b, eVar.f52580c, !eVar.f52581d, i12, eVar2.f54545v, z10, sVar.a(i12), j11, eVar2.f54540q, jVar, hVar3, h0Var, z11, t1Var);
+        return new i(hVar, i11, a10, format, z14, dataSource2, aVar, z13, uri2, list, i10, obj, j12, j13, eVar.f52580b, eVar.f52581c, !eVar.f52582d, i12, eVar2.f54546v, z10, sVar.a(i12), j11, eVar2.f54541q, jVar, hVar3, h0Var, z11, t1Var);
     }
 
     private void k(DataSource dataSource, com.google.android.exoplayer2.upstream.a aVar, boolean z10, boolean z11) {
@@ -189,7 +189,7 @@ public final class i extends td.n {
                         break;
                     }
                 } catch (EOFException e11) {
-                    if ((this.f48709d.f12297p & 16384) != 0) {
+                    if ((this.f48710d.f12298p & 16384) != 0) {
                         this.E.b();
                         position = u10.getPosition();
                     } else {
@@ -198,7 +198,7 @@ public final class i extends td.n {
                 }
             } while (this.E.a(u10));
             position = u10.getPosition();
-            this.G = (int) (position - aVar.f13988g);
+            this.G = (int) (position - aVar.f13989g);
         } finally {
             me.o.a(dataSource);
         }
@@ -221,30 +221,30 @@ public final class i extends td.n {
     }
 
     private static boolean p(f.e eVar, xd.f fVar) {
-        f.e eVar2 = eVar.f52578a;
+        f.e eVar2 = eVar.f52579a;
         if (eVar2 instanceof f.b) {
-            if (!((f.b) eVar2).f54528w) {
-                if (eVar.f52580c != 0 || !fVar.f54574c) {
+            if (!((f.b) eVar2).f54529w) {
+                if (eVar.f52581c != 0 || !fVar.f54575c) {
                     return false;
                 }
                 return true;
             }
             return true;
         }
-        return fVar.f54574c;
+        return fVar.f54575c;
     }
 
     private void r() {
-        k(this.f48714i, this.f48707b, this.A, true);
+        k(this.f48715i, this.f48708b, this.A, true);
     }
 
     private void s() {
         if (!this.H) {
             return;
         }
-        oe.a.e(this.f52588p);
-        oe.a.e(this.f52589q);
-        k(this.f52588p, this.f52589q, this.B, false);
+        oe.a.e(this.f52589p);
+        oe.a.e(this.f52590q);
+        k(this.f52589p, this.f52590q, this.B, false);
         this.G = 0;
         this.H = false;
     }
@@ -252,23 +252,23 @@ public final class i extends td.n {
     private long t(uc.l lVar) {
         lVar.e();
         try {
-            this.f52598z.Q(10);
-            lVar.n(this.f52598z.e(), 0, 10);
+            this.f52599z.Q(10);
+            lVar.n(this.f52599z.e(), 0, 10);
         } catch (EOFException unused) {
         }
-        if (this.f52598z.K() != 4801587) {
+        if (this.f52599z.K() != 4801587) {
             return -9223372036854775807L;
         }
-        this.f52598z.V(3);
-        int G = this.f52598z.G();
+        this.f52599z.V(3);
+        int G = this.f52599z.G();
         int i10 = G + 10;
-        if (i10 > this.f52598z.b()) {
-            byte[] e10 = this.f52598z.e();
-            this.f52598z.Q(i10);
-            System.arraycopy(e10, 0, this.f52598z.e(), 0, 10);
+        if (i10 > this.f52599z.b()) {
+            byte[] e10 = this.f52599z.e();
+            this.f52599z.Q(i10);
+            System.arraycopy(e10, 0, this.f52599z.e(), 0, 10);
         }
-        lVar.n(this.f52598z.e(), 10, G);
-        Metadata e11 = this.f52597y.e(this.f52598z.e(), G);
+        lVar.n(this.f52599z.e(), 10, G);
+        Metadata e11 = this.f52598y.e(this.f52599z.e(), G);
         if (e11 == null) {
             return -9223372036854775807L;
         }
@@ -277,11 +277,11 @@ public final class i extends td.n {
             Metadata.b d10 = e11.d(i11);
             if (d10 instanceof md.l) {
                 md.l lVar2 = (md.l) d10;
-                if ("com.apple.streaming.transportStreamTimestamp".equals(lVar2.f36323e)) {
-                    System.arraycopy(lVar2.f36324i, 0, this.f52598z.e(), 0, 8);
-                    this.f52598z.U(0);
-                    this.f52598z.T(8);
-                    return this.f52598z.A() & 8589934591L;
+                if ("com.apple.streaming.transportStreamTimestamp".equals(lVar2.f36324e)) {
+                    System.arraycopy(lVar2.f36325i, 0, this.f52599z.e(), 0, 8);
+                    this.f52599z.U(0);
+                    this.f52599z.T(8);
+                    return this.f52599z.A() & 8589934591L;
                 }
             }
         }
@@ -294,31 +294,31 @@ public final class i extends td.n {
         long b10 = dataSource.b(aVar);
         if (z10) {
             try {
-                this.f52593u.i(this.f52591s, this.f48712g, this.D);
+                this.f52594u.i(this.f52592s, this.f48713g, this.D);
             } catch (InterruptedException unused) {
                 throw new InterruptedIOException();
             } catch (TimeoutException e10) {
                 throw new IOException(e10);
             }
         }
-        uc.e eVar = new uc.e(dataSource, aVar.f13988g, b10);
+        uc.e eVar = new uc.e(dataSource, aVar.f13989g, b10);
         if (this.E == null) {
             long t10 = t(eVar);
             eVar.e();
-            j jVar = this.f52590r;
+            j jVar = this.f52591r;
             if (jVar != null) {
                 a10 = jVar.f();
             } else {
-                a10 = this.f52594v.a(aVar.f13982a, this.f48709d, this.f52595w, this.f52593u, dataSource.d(), eVar, this.C);
+                a10 = this.f52595v.a(aVar.f13983a, this.f48710d, this.f52596w, this.f52594u, dataSource.d(), eVar, this.C);
                 eVar = eVar;
             }
             this.E = a10;
             if (a10.e()) {
                 p pVar = this.F;
                 if (t10 != -9223372036854775807L) {
-                    j10 = this.f52593u.b(t10);
+                    j10 = this.f52594u.b(t10);
                 } else {
-                    j10 = this.f48712g;
+                    j10 = this.f48713g;
                 }
                 pVar.n0(j10);
             } else {
@@ -327,7 +327,7 @@ public final class i extends td.n {
             this.F.Z();
             this.E.c(this.F);
         }
-        this.F.k0(this.f52596x);
+        this.F.k0(this.f52597x);
         return eVar;
     }
 
@@ -335,11 +335,11 @@ public final class i extends td.n {
         if (iVar == null) {
             return false;
         }
-        if (uri.equals(iVar.f52585m) && iVar.J) {
+        if (uri.equals(iVar.f52586m) && iVar.J) {
             return false;
         }
-        long j11 = j10 + eVar.f52578a.f54539p;
-        if (p(eVar, fVar) && j11 >= iVar.f48713h) {
+        long j11 = j10 + eVar.f52579a.f54540p;
+        if (p(eVar, fVar) && j11 >= iVar.f48714h) {
             return false;
         }
         return true;
@@ -349,13 +349,13 @@ public final class i extends td.n {
     public void a() {
         j jVar;
         oe.a.e(this.F);
-        if (this.E == null && (jVar = this.f52590r) != null && jVar.d()) {
-            this.E = this.f52590r;
+        if (this.E == null && (jVar = this.f52591r) != null && jVar.d()) {
+            this.E = this.f52591r;
             this.H = false;
         }
         s();
         if (!this.I) {
-            if (!this.f52592t) {
+            if (!this.f52593t) {
                 r();
             }
             this.J = !this.I;
@@ -373,7 +373,7 @@ public final class i extends td.n {
     }
 
     public int m(int i10) {
-        oe.a.g(!this.f52586n);
+        oe.a.g(!this.f52587n);
         if (i10 >= this.K.size()) {
             return 0;
         }

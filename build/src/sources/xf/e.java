@@ -11,20 +11,20 @@ public class e extends jf.a {
     public static final Parcelable.Creator<e> CREATOR = new h1();
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f54635d;
+    private final boolean f54636d;
 
     public e(boolean z10) {
-        this.f54635d = z10;
+        this.f54636d = z10;
     }
 
     public boolean b() {
-        return this.f54635d;
+        return this.f54636d;
     }
 
     public final JSONObject c() {
         try {
             JSONObject jSONObject = new JSONObject();
-            jSONObject.put("rk", this.f54635d);
+            jSONObject.put("rk", this.f54636d);
             return jSONObject;
         } catch (JSONException e10) {
             throw new RuntimeException("Error encoding AuthenticationExtensionsCredPropsOutputs to JSON object", e10);
@@ -32,14 +32,14 @@ public class e extends jf.a {
     }
 
     public boolean equals(Object obj) {
-        if (!(obj instanceof e) || this.f54635d != ((e) obj).f54635d) {
+        if (!(obj instanceof e) || this.f54636d != ((e) obj).f54636d) {
             return false;
         }
         return true;
     }
 
     public int hashCode() {
-        return hf.o.b(Boolean.valueOf(this.f54635d));
+        return hf.o.b(Boolean.valueOf(this.f54636d));
     }
 
     @Override // android.os.Parcelable

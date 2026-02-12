@@ -21,28 +21,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var8 = var3.CommonTriggerPointConfiguration;
-    var3 = 2;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.ShopSKUsInGiftFlowExperiment;
-    var7 = new Array(1);
-    var7[0] = var3;
     var10 = var1.DM_GDM_LIST_RENDER;
-    var1 = {};
-    var3 = 'dm/gdm list rendered';
-    var1.location = var3;
-    var3 = var8.prototype;
-    var3 = Object.create(var3, {
+    var6 = {};
+    var1 = 'dm/gdm list rendered';
+    var6.location = var1;
+    var1 = var8.prototype;
+    var3 = Object.create(var1, {
         constructor: {
             value: var8
         }
     });
+    var11 = new Array(0);
     var12 = var3;
-    var11 = var7;
-    var9 = var1;
+    var9 = var6;
     var1 = new var12[var8](var11, var10, var9, var8);
     var1 = var1 instanceof Object ? var1 : var3;
-    var3 = 3;
+    var3 = 2;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -50,4 +44,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.DmGdmListRenderTriggerPoint = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1591, 7186, 4620, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1591, 7300, 2]);

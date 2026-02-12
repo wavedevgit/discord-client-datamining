@@ -7,31 +7,31 @@ import kotlin.enums.EnumEntries;
 public final class a {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f25967d = new a("COROUTINE_SUSPENDED", 0);
+    public static final a f25968d = new a("COROUTINE_SUSPENDED", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f25968e = new a("UNDECIDED", 1);
+    public static final a f25969e = new a("UNDECIDED", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f25969i = new a("RESUMED", 2);
+    public static final a f25970i = new a("RESUMED", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ a[] f25970o;
+    private static final /* synthetic */ a[] f25971o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f25971p;
+    private static final /* synthetic */ EnumEntries f25972p;
 
     static {
         a[] a10 = a();
-        f25970o = a10;
-        f25971p = hs.a.a(a10);
+        f25971o = a10;
+        f25972p = hs.a.a(a10);
     }
 
     private a(String str, int i10) {
     }
 
     private static final /* synthetic */ a[] a() {
-        return new a[]{f25967d, f25968e, f25969i};
+        return new a[]{f25968d, f25969e, f25970i};
     }
 
     public static a valueOf(String str) {
@@ -39,6 +39,6 @@ public final class a {
     }
 
     public static a[] values() {
-        return (a[]) f25970o.clone();
+        return (a[]) f25971o.clone();
     }
 }

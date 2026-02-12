@@ -12,19 +12,19 @@ import kotlinx.coroutines.flow.FlowCollector;
 public final class u implements en.o<com.withpersona.sdk2.inquiry.internal.network.h> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f20379b;
+    private final String f20380b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f20380c;
+    private final String f20381c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f20381d;
+    private final String f20382d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final iq.g f20382e;
+    private final iq.g f20383e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final com.withpersona.sdk2.inquiry.internal.network.e f20383f;
+    private final com.withpersona.sdk2.inquiry.internal.network.e f20384f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -35,10 +35,10 @@ public final class u implements en.o<com.withpersona.sdk2.inquiry.internal.netwo
     static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f20384d;
+        int f20385d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f20385e;
+        private /* synthetic */ Object f20386e;
 
         b(Continuation continuation) {
             super(2, continuation);
@@ -47,7 +47,7 @@ public final class u implements en.o<com.withpersona.sdk2.inquiry.internal.netwo
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             b bVar = new b(continuation);
-            bVar.f20385e = obj;
+            bVar.f20386e = obj;
             return bVar;
         }
 
@@ -69,7 +69,7 @@ public final class u implements en.o<com.withpersona.sdk2.inquiry.internal.netwo
             /*
                 r10 = this;
                 java.lang.Object r0 = gs.b.f()
-                int r1 = r10.f20384d
+                int r1 = r10.f20385d
                 r2 = 2
                 r3 = 1
                 if (r1 == 0) goto L24
@@ -84,14 +84,14 @@ public final class u implements en.o<com.withpersona.sdk2.inquiry.internal.netwo
                 r11.<init>(r0)
                 throw r11
             L1b:
-                java.lang.Object r1 = r10.f20385e
+                java.lang.Object r1 = r10.f20386e
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 kotlin.c.b(r11)
                 r9 = r10
                 goto L56
             L24:
                 kotlin.c.b(r11)
-                java.lang.Object r11 = r10.f20385e
+                java.lang.Object r11 = r10.f20386e
                 r1 = r11
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 com.withpersona.sdk2.inquiry.internal.u r11 = com.withpersona.sdk2.inquiry.internal.u.this
@@ -104,22 +104,22 @@ public final class u implements en.o<com.withpersona.sdk2.inquiry.internal.netwo
                 java.lang.String r7 = r11.b()
                 com.withpersona.sdk2.inquiry.internal.u r11 = com.withpersona.sdk2.inquiry.internal.u.this
                 iq.g r8 = r11.e()
-                r10.f20385e = r1
-                r10.f20384d = r3
+                r10.f20386e = r1
+                r10.f20385d = r3
                 r9 = r10
                 java.lang.Object r11 = r4.n(r5, r6, r7, r8, r9)
                 if (r11 != r0) goto L56
                 goto L61
             L56:
                 r3 = 0
-                r9.f20385e = r3
-                r9.f20384d = r2
+                r9.f20386e = r3
+                r9.f20385d = r2
                 java.lang.Object r11 = r1.emit(r11, r10)
                 if (r11 != r0) goto L62
             L61:
                 return r0
             L62:
-                kotlin.Unit r11 = kotlin.Unit.f31987a
+                kotlin.Unit r11 = kotlin.Unit.f31988a
                 return r11
             */
             throw new UnsupportedOperationException("Method not decompiled: com.withpersona.sdk2.inquiry.internal.u.b.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -127,7 +127,7 @@ public final class u implements en.o<com.withpersona.sdk2.inquiry.internal.netwo
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((b) create(flowCollector, continuation)).invokeSuspend(Unit.f31987a);
+            return ((b) create(flowCollector, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -137,11 +137,11 @@ public final class u implements en.o<com.withpersona.sdk2.inquiry.internal.netwo
         Intrinsics.checkNotNullParameter(fromStep, "fromStep");
         Intrinsics.checkNotNullParameter(inquirySessionConfig, "inquirySessionConfig");
         Intrinsics.checkNotNullParameter(inquiryApiHelper, "inquiryApiHelper");
-        this.f20379b = sessionToken;
-        this.f20380c = inquiryId;
-        this.f20381d = fromStep;
-        this.f20382e = inquirySessionConfig;
-        this.f20383f = inquiryApiHelper;
+        this.f20380b = sessionToken;
+        this.f20381c = inquiryId;
+        this.f20382d = fromStep;
+        this.f20383e = inquirySessionConfig;
+        this.f20384f = inquiryApiHelper;
     }
 
     @Override // en.o
@@ -149,7 +149,7 @@ public final class u implements en.o<com.withpersona.sdk2.inquiry.internal.netwo
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
         if (otherWorker instanceof u) {
             u uVar = (u) otherWorker;
-            if (Intrinsics.areEqual(this.f20379b, uVar.f20379b) && Intrinsics.areEqual(this.f20380c, uVar.f20380c)) {
+            if (Intrinsics.areEqual(this.f20380b, uVar.f20380b) && Intrinsics.areEqual(this.f20381c, uVar.f20381c)) {
                 return true;
             }
             return false;
@@ -158,23 +158,23 @@ public final class u implements en.o<com.withpersona.sdk2.inquiry.internal.netwo
     }
 
     public final String b() {
-        return this.f20381d;
+        return this.f20382d;
     }
 
     public final com.withpersona.sdk2.inquiry.internal.network.e c() {
-        return this.f20383f;
+        return this.f20384f;
     }
 
     public final String d() {
-        return this.f20380c;
+        return this.f20381c;
     }
 
     public final iq.g e() {
-        return this.f20382e;
+        return this.f20383e;
     }
 
     public final String f() {
-        return this.f20379b;
+        return this.f20380b;
     }
 
     @Override // en.o

@@ -9,7 +9,7 @@ import lv.d;
 public final class a implements cv.b, lv.d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f30439a = new a();
+    public static final a f30440a = new a();
 
     private a() {
     }
@@ -31,7 +31,7 @@ public final class a implements cv.b, lv.d {
                     while (true) {
                         if (it.hasNext()) {
                             obj3 = it.next();
-                            if (!f30439a.a(obj3)) {
+                            if (!f30440a.a(obj3)) {
                                 break;
                             }
                         } else {
@@ -53,7 +53,7 @@ public final class a implements cv.b, lv.d {
                 if (!it2.hasNext()) {
                     break;
                 }
-                if (!f30439a.a(it2.next())) {
+                if (!f30440a.a(it2.next())) {
                     z11 = false;
                     break;
                 }

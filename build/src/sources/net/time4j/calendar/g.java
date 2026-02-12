@@ -9,7 +9,7 @@ import net.time4j.b0;
 class g implements t, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    static final g f37331d = new g();
+    static final g f37332d = new g();
     private static final long serialVersionUID = -5874268477318061153L;
 
     g() {
@@ -80,20 +80,20 @@ class g implements t, Serializable {
     }
 
     protected Object readResolve() {
-        return f37331d;
+        return f37332d;
     }
 
     @Override // cu.t
     public void w(bu.o oVar, Appendable appendable, bu.d dVar) {
         cu.s l10;
-        Locale locale = (Locale) dVar.b(cu.a.f21110c, Locale.ROOT);
+        Locale locale = (Locale) dVar.b(cu.a.f21111c, Locale.ROOT);
         h hVar = (h) oVar.k(this);
-        if (dVar.a(eu.a.f23267c)) {
-            appendable.append(hVar.d(locale, (cu.j) dVar.b(cu.a.f21119l, cu.j.f21168d), dVar));
+        if (dVar.a(eu.a.f23268c)) {
+            appendable.append(hVar.d(locale, (cu.j) dVar.b(cu.a.f21120l, cu.j.f21169d), dVar));
             return;
         }
-        v vVar = (v) dVar.b(cu.a.f21114g, v.WIDE);
-        cu.m mVar = (cu.m) dVar.b(cu.a.f21115h, cu.m.FORMAT);
+        v vVar = (v) dVar.b(cu.a.f21115g, v.WIDE);
+        cu.m mVar = (cu.m) dVar.b(cu.a.f21116h, cu.m.FORMAT);
         if (hVar.e()) {
             l10 = cu.b.c("chinese", locale).g(vVar, mVar);
         } else {

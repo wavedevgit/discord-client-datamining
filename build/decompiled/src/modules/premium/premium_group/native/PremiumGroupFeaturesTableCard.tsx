@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var5 = require;
-    var11 = metroImportDefault;
+    var8 = metroImportDefault;
     var2 = exports;
     var6 = dependencyMap;
     var _closure1_slot0 = var5;
-    var _closure1_slot1 = var11;
+    var _closure1_slot1 = var8;
     var _closure1_slot2 = var6;
     var1 = function() {
         var0 = _closure1_slot7;
@@ -45,15 +45,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var _closure1_slot8 = var1;
     var0 = global;
-    var8 = var0.Object;
-    var7 = var8.defineProperty;
+    var9 = var0.Object;
+    var7 = var9.defineProperty;
     var4 = {};
     var0 = true;
     var4.value = var0;
     var0 = '__esModule';
-    var0 = var7.bind(var8)(var2, var0, var4);
+    var0 = var7.bind(var9)(var2, var0, var4);
     var0 = 0;
     var4 = var6[var0];
     var0 = undefined;
@@ -65,8 +64,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var0)(var4);
     var4 = var4.Gradients;
     var _closure1_slot4 = var4;
-    var14 = 2;
-    var4 = var6[var14];
+    var15 = 2;
+    var4 = var6[var15];
     var4 = var5.bind(var0)(var4);
     var7 = var4.jsx;
     var _closure1_slot5 = var7;
@@ -74,39 +73,39 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var4;
     var4 = 3;
     var4 = var6[var4];
-    var8 = var5.bind(var0)(var4);
-    var7 = var8.createStyles;
+    var10 = var5.bind(var0)(var4);
+    var9 = var10.createStyles;
     var4 = {};
-    var9 = {
+    var11 = {
         'padding': 16,
         'borderRadius': null,
         'backgroundColor': null,
         'display': 'flex',
         'alignItems': 'flex-start'
     };
-    var12 = 16;
-    var10 = 4;
-    var13 = var6[var10];
-    var13 = var11.bind(var0)(var13);
-    var13 = var13.radii;
-    var13 = var13.sm;
-    var13 = var13 - var14;
-    var9.borderRadius = var13;
-    var13 = var6[var10];
-    var13 = var11.bind(var0)(var13);
-    var13 = var13.colors;
-    var13 = var13.BACKGROUND_SURFACE_HIGH;
-    var9.backgroundColor = var13;
-    var4.premiumGroupCard = var9;
-    var9 = {
+    var13 = 16;
+    var12 = 4;
+    var14 = var6[var12];
+    var14 = var8.bind(var0)(var14);
+    var14 = var14.radii;
+    var14 = var14.sm;
+    var14 = var14 - var15;
+    var11.borderRadius = var14;
+    var14 = var6[var12];
+    var14 = var8.bind(var0)(var14);
+    var14 = var14.colors;
+    var14 = var14.BACKGROUND_SURFACE_HIGH;
+    var11.backgroundColor = var14;
+    var4.premiumGroupCard = var11;
+    var11 = {
         'display': 'flex',
         'flexDirection': 'row',
         'alignItems': 'center',
         'gap': 8,
         'marginBottom': 4
     };
-    var4.headerContainer = var9;
-    var9 = {
+    var4.headerContainer = var11;
+    var11 = {
         'backgroundColor': null,
         'borderRadius': null,
         'alignItems': 'center',
@@ -114,45 +113,57 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'paddingHorizontal': 8,
         'paddingBottom': 2
     };
-    var13 = var6[var10];
-    var13 = var11.bind(var0)(var13);
-    var13 = var13.colors;
-    var13 = var13.WHITE;
-    var9.backgroundColor = var13;
-    var13 = var6[var10];
-    var13 = var11.bind(var0)(var13);
-    var13 = var13.radii;
-    var13 = var13.round;
-    var9.borderRadius = var13;
-    var4.betaPill = var9;
-    var9 = {
+    var14 = var6[var12];
+    var14 = var8.bind(var0)(var14);
+    var14 = var14.colors;
+    var14 = var14.WHITE;
+    var11.backgroundColor = var14;
+    var14 = var6[var12];
+    var14 = var8.bind(var0)(var14);
+    var14 = var14.radii;
+    var14 = var14.round;
+    var11.borderRadius = var14;
+    var4.betaPill = var11;
+    var11 = {
         'color': null,
         'textAlign': 'center',
         'textTransform': 'uppercase'
     };
-    var13 = var6[var10];
-    var13 = var11.bind(var0)(var13);
-    var13 = var13.colors;
-    var13 = var13.BLACK;
-    var9.color = var13;
-    var4.betaText = var9;
-    var9 = {};
-    var13 = var6[var10];
-    var13 = var11.bind(var0)(var13);
-    var13 = var13.colors;
-    var13 = var13.TEXT_DEFAULT;
-    var9.color = var13;
-    var9.marginBottom = var12;
-    var4.title = var9;
-    var9 = {};
-    var10 = var6[var10];
-    var10 = var11.bind(var0)(var10);
-    var10 = var10.colors;
-    var10 = var10.TEXT_DEFAULT;
-    var9.color = var10;
-    var4.description = var9;
-    var4 = var7.bind(var8)(var4);
+    var14 = var6[var12];
+    var14 = var8.bind(var0)(var14);
+    var14 = var14.colors;
+    var14 = var14.BLACK;
+    var11.color = var14;
+    var4.betaText = var11;
+    var11 = {};
+    var14 = var6[var12];
+    var14 = var8.bind(var0)(var14);
+    var14 = var14.colors;
+    var14 = var14.TEXT_DEFAULT;
+    var11.color = var14;
+    var11.marginBottom = var13;
+    var4.title = var11;
+    var11 = {};
+    var12 = var6[var12];
+    var12 = var8.bind(var0)(var12);
+    var12 = var12.colors;
+    var12 = var12.TEXT_DEFAULT;
+    var11.color = var12;
+    var4.description = var11;
+    var4 = var9.bind(var10)(var4);
     var _closure1_slot7 = var4;
+    var4 = 7;
+    var4 = var6[var4];
+    var8 = var8.bind(var0)(var4);
+    var4 = {
+        'width': 181,
+        'height': 16
+    };
+    var4 = var7.bind(var0)(var8, var4);
+    var _closure1_slot8 = var4;
+    var4 = {};
+    var4 = var7.bind(var0)(var1, var4);
+    var _closure1_slot9 = var4;
     var4 = 12;
     var4 = var6[var4];
     var6 = var5.bind(var0)(var4);
@@ -160,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/premium/premium_group/native/PremiumGroupFeaturesTableCard.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function arg0() {
-        _fun83257: for (var _fun83257_ip = 0;;) switch (_fun83257_ip) {
+        _fun59443: for (var _fun59443_ip = 0;;) switch (_fun59443_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.style;
@@ -170,47 +181,47 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var0.bind(var4)();
                 var1 = _closure1_slot1;
                 var3 = _closure1_slot2;
-                var0 = 7;
+                var0 = 8;
                 var0 = var3[var0];
                 var1 = var1.bind(var4)(var0);
                 var0 = false;
                 var1 = var1.bind(var4)(var2, var0);
                 var0 = null;
                 if (!(var0 != var1)) {
-                    _fun83257_ip = 593;
-                    continue _fun83257
+                    _fun59443_ip = 549;
+                    continue _fun59443
                 }
             case 64:
                 var19 = var1.subheaderString;
                 var12 = var1.bodyString;
                 var3 = _closure1_slot5;
-                var16 = _closure1_slot1;
+                var6 = _closure1_slot1;
                 var15 = _closure1_slot2;
-                var6 = 8;
-                var1 = var15[var6];
-                var2 = var16.bind(var4)(var1);
+                var7 = 9;
+                var1 = var15[var7];
+                var2 = var6.bind(var4)(var1);
                 var1 = {};
-                var7 = 2;
-                var1.borderWidth = var7;
-                var6 = var15[var6];
-                var6 = var16.bind(var4)(var6);
-                var6 = var6.Direction;
-                var6 = var6.HORIZONTAL;
-                var1.direction = var6;
-                var6 = _closure1_slot4;
-                var6 = var6.PREMIUM_TIER_2;
-                var1.colors = var6;
-                var6 = 4;
-                var6 = var15[var6];
-                var6 = var16.bind(var4)(var6);
-                var6 = var6.radii;
-                var6 = var6.sm;
-                var1.borderRadius = var6;
+                var8 = 2;
+                var1.borderWidth = var8;
+                var7 = var15[var7];
+                var7 = var6.bind(var4)(var7);
+                var7 = var7.Direction;
+                var7 = var7.HORIZONTAL;
+                var1.direction = var7;
+                var7 = _closure1_slot4;
+                var7 = var7.PREMIUM_TIER_2;
+                var1.colors = var7;
+                var7 = 4;
+                var7 = var15[var7];
+                var7 = var6.bind(var4)(var7);
+                var7 = var7.radii;
+                var7 = var7.sm;
+                var1.borderRadius = var7;
                 var1.style = var5;
                 var7 = _closure1_slot6;
-                var5 = 9;
+                var5 = 10;
                 var5 = var15[var5];
-                var6 = var16.bind(var4)(var5);
+                var6 = var6.bind(var4)(var5);
                 var5 = {};
                 var8 = {
                     'x': 0,
@@ -223,26 +234,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var5.end = var8;
                 var10 = _closure1_slot0;
-                var9 = 10;
+                var9 = 11;
                 var8 = var15[var9];
-                var17 = var10.bind(var4)(var8);
-                var14 = var17.hexWithOpacity;
+                var16 = var10.bind(var4)(var8);
+                var14 = var16.hexWithOpacity;
                 var8 = '#8547C6';
-                var18 = 0.15;
-                var14 = var14.bind(var17)(var8, var18);
+                var17 = 0.15;
+                var14 = var14.bind(var16)(var8, var17);
                 var8 = new Array(3);
                 var8[0] = var14;
                 var14 = var15[var9];
-                var20 = var10.bind(var4)(var14);
-                var17 = var20.hexWithOpacity;
+                var18 = var10.bind(var4)(var14);
+                var16 = var18.hexWithOpacity;
                 var14 = '#B845C1';
-                var14 = var17.bind(var20)(var14, var18);
+                var14 = var16.bind(var18)(var14, var17);
                 var8[1] = var14;
                 var9 = var15[var9];
-                var17 = var10.bind(var4)(var9);
-                var14 = var17.hexWithOpacity;
+                var16 = var10.bind(var4)(var9);
+                var14 = var16.hexWithOpacity;
                 var9 = '#AB5D8A';
-                var9 = var14.bind(var17)(var9, var18);
+                var9 = var14.bind(var16)(var9, var17);
                 var8[2] = var9;
                 var5.colors = var8;
                 var8 = [0, 0.4996, 0.9593];
@@ -253,21 +264,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = {};
                 var14 = var13.headerContainer;
                 var8.style = var14;
-                var17 = _closure1_slot5;
-                var14 = 11;
-                var14 = var15[var14];
-                var16 = var16.bind(var4)(var14);
-                var14 = {
-                    'width': 181,
-                    'height': 16
-                };
-                var16 = var17.bind(var4)(var16, var14);
+                var16 = _closure1_slot8;
                 var14 = new Array(2);
                 var14[0] = var16;
-                var18 = _closure1_slot5;
-                var17 = _closure1_slot8;
-                var16 = {};
-                var16 = var18.bind(var4)(var17, var16);
+                var16 = _closure1_slot9;
                 var14[1] = var16;
                 var8.children = var14;
                 var9 = var7.bind(var4)(var9, var8);
@@ -302,11 +302,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.children = var5;
                 var1 = var3.bind(var4)(var2, var1);
                 return var1;
-            case 593:
+            case 549:
                 return var0;
         }
     };
     var2.default = var3;
     var2.BetaPill = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 660, 33, 1297, 671, 3938, 1234, 10648, 10270, 4104, 3241, 7737, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 660, 33, 1297, 671, 3938, 1234, 7245, 7341, 7348, 4104, 3241, 2]);

@@ -58,10 +58,10 @@ public /* synthetic */ class ThumbnailDisplayComponent$$serializer implements h0
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50032a;
+        n2 n2Var = n2.f50033a;
         KSerializer u10 = rt.a.u(n2Var);
-        tt.h hVar = tt.h.f49996a;
-        return new KSerializer[]{p0.f50048a, n2Var, UnfurledMediaItem$$serializer.INSTANCE, u10, hVar, rt.a.u(n2Var), hVar, hVar, hVar, hVar, rt.a.u(n2Var), rt.a.u(hVar), n2Var, n2Var, rt.a.u(n2Var), rt.a.u(n2Var)};
+        tt.h hVar = tt.h.f49997a;
+        return new KSerializer[]{p0.f50049a, n2Var, UnfurledMediaItem$$serializer.INSTANCE, u10, hVar, rt.a.u(n2Var), hVar, hVar, hVar, hVar, rt.a.u(n2Var), rt.a.u(hVar), n2Var, n2Var, rt.a.u(n2Var), rt.a.u(n2Var)};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -94,13 +94,13 @@ public /* synthetic */ class ThumbnailDisplayComponent$$serializer implements h0
         if (b10.p()) {
             int i16 = b10.i(serialDescriptor, 0);
             String m10 = b10.m(serialDescriptor, 1);
-            n2 n2Var = n2.f50032a;
+            n2 n2Var = n2.f50033a;
             boolean C = b10.C(serialDescriptor, 4);
             boolean C2 = b10.C(serialDescriptor, 6);
             boolean C3 = b10.C(serialDescriptor, 7);
             boolean C4 = b10.C(serialDescriptor, 8);
             boolean C5 = b10.C(serialDescriptor, 9);
-            Boolean bool2 = (Boolean) b10.n(serialDescriptor, 11, tt.h.f49996a, null);
+            Boolean bool2 = (Boolean) b10.n(serialDescriptor, 11, tt.h.f49997a, null);
             String m11 = b10.m(serialDescriptor, 12);
             String m12 = b10.m(serialDescriptor, 13);
             String str9 = (String) b10.n(serialDescriptor, 14, n2Var, null);
@@ -171,7 +171,7 @@ public /* synthetic */ class ThumbnailDisplayComponent$$serializer implements h0
                         break;
                     case 3:
                         i12 = i15;
-                        str11 = (String) b10.n(serialDescriptor, 3, n2.f50032a, str11);
+                        str11 = (String) b10.n(serialDescriptor, 3, n2.f50033a, str11);
                         i18 |= 8;
                         i15 = i12;
                         i13 = 11;
@@ -187,7 +187,7 @@ public /* synthetic */ class ThumbnailDisplayComponent$$serializer implements h0
                         break;
                     case 5:
                         i12 = i15;
-                        str10 = (String) b10.n(serialDescriptor, 5, n2.f50032a, str10);
+                        str10 = (String) b10.n(serialDescriptor, 5, n2.f50033a, str10);
                         i18 |= 32;
                         i15 = i12;
                         i13 = 11;
@@ -217,12 +217,12 @@ public /* synthetic */ class ThumbnailDisplayComponent$$serializer implements h0
                         i15 = 8;
                         break;
                     case 10:
-                        str14 = (String) b10.n(serialDescriptor, i14, n2.f50032a, str14);
+                        str14 = (String) b10.n(serialDescriptor, i14, n2.f50033a, str14);
                         i18 |= IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
                         i15 = 8;
                         break;
                     case 11:
-                        bool3 = (Boolean) b10.n(serialDescriptor, i13, tt.h.f49996a, bool3);
+                        bool3 = (Boolean) b10.n(serialDescriptor, i13, tt.h.f49997a, bool3);
                         i18 |= RecyclerView.ItemAnimator.FLAG_MOVED;
                         i15 = 8;
                         break;
@@ -237,12 +237,12 @@ public /* synthetic */ class ThumbnailDisplayComponent$$serializer implements h0
                         i15 = 8;
                         break;
                     case 14:
-                        str13 = (String) b10.n(serialDescriptor, 14, n2.f50032a, str13);
+                        str13 = (String) b10.n(serialDescriptor, 14, n2.f50033a, str13);
                         i18 |= 16384;
                         i15 = 8;
                         break;
                     case 15:
-                        str12 = (String) b10.n(serialDescriptor, 15, n2.f50032a, str12);
+                        str12 = (String) b10.n(serialDescriptor, 15, n2.f50033a, str12);
                         i18 |= PeerConnection.PORTALLOCATOR_ENABLE_ANY_ADDRESS_PORTS;
                         i15 = 8;
                         break;

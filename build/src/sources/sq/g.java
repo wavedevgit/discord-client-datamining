@@ -11,30 +11,30 @@ import androidx.viewbinding.ViewBinding;
 public final class g implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final LinearLayout f48238a;
+    private final LinearLayout f48239a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final Guideline f48239b;
+    public final Guideline f48240b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final LinearLayout f48240c;
+    public final LinearLayout f48241c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final ConstraintLayout f48241d;
+    public final ConstraintLayout f48242d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Guideline f48242e;
+    public final Guideline f48243e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final View f48243f;
+    public final View f48244f;
 
     private g(LinearLayout linearLayout, Guideline guideline, LinearLayout linearLayout2, ConstraintLayout constraintLayout, Guideline guideline2, View view) {
-        this.f48238a = linearLayout;
-        this.f48239b = guideline;
-        this.f48240c = linearLayout2;
-        this.f48241d = constraintLayout;
-        this.f48242e = guideline2;
-        this.f48243f = view;
+        this.f48239a = linearLayout;
+        this.f48240b = guideline;
+        this.f48241c = linearLayout2;
+        this.f48242d = constraintLayout;
+        this.f48243e = guideline2;
+        this.f48244f = view;
     }
 
     public static g a(View view) {
@@ -61,7 +61,7 @@ public final class g implements ViewBinding {
     }
 
     public static g d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(nq.f.f38307h, viewGroup, false);
+        View inflate = layoutInflater.inflate(nq.f.f38308h, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -71,6 +71,6 @@ public final class g implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public LinearLayout getRoot() {
-        return this.f48238a;
+        return this.f48239a;
     }
 }

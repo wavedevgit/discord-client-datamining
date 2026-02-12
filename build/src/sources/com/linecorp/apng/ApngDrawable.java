@@ -30,49 +30,49 @@ public final class ApngDrawable extends Drawable implements Animatable {
     private int C;
 
     /* renamed from: d  reason: collision with root package name */
-    private a f18030d;
+    private a f18031d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f18031e;
+    private final int f18032e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f18032i;
+    private final int f18033i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final List f18033o;
+    private final List f18034o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f18034p;
+    private final int f18035p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final long f18035q;
+    private final long f18036q;
 
     /* renamed from: r  reason: collision with root package name */
-    private int f18036r;
+    private int f18037r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final boolean f18037s;
+    private final boolean f18038s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final Paint f18038t;
+    private final Paint f18039t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final List f18039u;
+    private final List f18040u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final List f18040v;
+    private final List f18041v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final int[] f18041w;
+    private final int[] f18042w;
 
     /* renamed from: x  reason: collision with root package name */
-    private int f18042x;
+    private int f18043x;
 
     /* renamed from: y  reason: collision with root package name */
-    private int f18043y;
+    private int f18044y;
 
     /* renamed from: z  reason: collision with root package name */
-    private boolean f18044z;
+    private boolean f18045z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class b {
@@ -150,36 +150,36 @@ public final class ApngDrawable extends Drawable implements Animatable {
 
     public ApngDrawable(a apngState) {
         Intrinsics.checkNotNullParameter(apngState, "apngState");
-        this.f18030d = apngState;
-        this.f18031e = apngState.c().getDuration();
-        int frameCount = this.f18030d.c().getFrameCount();
-        this.f18032i = frameCount;
-        this.f18033o = i.P0(this.f18030d.c().getFrameDurations());
-        int byteCount = this.f18030d.c().getByteCount();
-        this.f18034p = byteCount;
-        this.f18035q = this.f18030d.c().getAllFrameByteCount() + byteCount;
-        this.f18036r = this.f18030d.c().getLoopCount();
-        this.f18037s = this.f18030d.c().isRecycled();
-        this.f18038t = new Paint(6);
-        this.f18039u = new ArrayList();
-        this.f18040v = new ArrayList();
-        this.f18041w = new int[frameCount];
-        this.f18042x = this.f18030d.f();
-        this.f18043y = this.f18030d.e();
+        this.f18031d = apngState;
+        this.f18032e = apngState.c().getDuration();
+        int frameCount = this.f18031d.c().getFrameCount();
+        this.f18033i = frameCount;
+        this.f18034o = i.P0(this.f18031d.c().getFrameDurations());
+        int byteCount = this.f18031d.c().getByteCount();
+        this.f18035p = byteCount;
+        this.f18036q = this.f18031d.c().getAllFrameByteCount() + byteCount;
+        this.f18037r = this.f18031d.c().getLoopCount();
+        this.f18038s = this.f18031d.c().isRecycled();
+        this.f18039t = new Paint(6);
+        this.f18040u = new ArrayList();
+        this.f18041v = new ArrayList();
+        this.f18042w = new int[frameCount];
+        this.f18043x = this.f18031d.f();
+        this.f18044y = this.f18031d.e();
         this.C = 160;
         for (int i10 = 1; i10 < frameCount; i10++) {
-            int[] iArr = this.f18041w;
+            int[] iArr = this.f18042w;
             int i11 = i10 - 1;
-            iArr[i10] = iArr[i11] + this.f18030d.c().getFrameDurations()[i11];
+            iArr[i10] = iArr[i11] + this.f18031d.c().getFrameDurations()[i11];
         }
-        getBounds().set(0, 0, this.f18030d.f(), this.f18030d.e());
+        getBounds().set(0, 0, this.f18031d.f(), this.f18031d.e());
     }
 
     private final int a(int i10, int i11, long j10) {
         int i12;
         while (true) {
             i12 = (i10 + i11) / 2;
-            int[] iArr = this.f18041w;
+            int[] iArr = this.f18042w;
             int i13 = i12 + 1;
             if (iArr.length > i13 && j10 >= iArr[i13]) {
                 i10 = i13;
@@ -193,14 +193,14 @@ public final class ApngDrawable extends Drawable implements Animatable {
     }
 
     private final boolean b() {
-        if (this.f18036r == 0 || d() <= this.f18036r - 1) {
+        if (this.f18037r == 0 || d() <= this.f18037r - 1) {
             return false;
         }
         return true;
     }
 
     private final int d() {
-        int i10 = this.f18031e;
+        int i10 = this.f18032e;
         if (i10 == 0) {
             return 0;
         }
@@ -208,7 +208,7 @@ public final class ApngDrawable extends Drawable implements Animatable {
     }
 
     private final boolean e() {
-        if (this.f18036r == 0 || d() < this.f18036r - 1) {
+        if (this.f18037r == 0 || d() < this.f18037r - 1) {
             return true;
         }
         return false;
@@ -229,7 +229,7 @@ public final class ApngDrawable extends Drawable implements Animatable {
     }
 
     private final boolean h() {
-        if (c() == this.f18032i - 1) {
+        if (c() == this.f18033i - 1) {
             return true;
         }
         return false;
@@ -239,7 +239,7 @@ public final class ApngDrawable extends Drawable implements Animatable {
         long longValue;
         boolean z10;
         int c10 = c();
-        long longValue2 = ((Number) this.f18030d.d().invoke()).longValue();
+        long longValue2 = ((Number) this.f18031d.d().invoke()).longValue();
         Long l10 = this.B;
         if (l10 == null) {
             longValue = this.A;
@@ -253,13 +253,13 @@ public final class ApngDrawable extends Drawable implements Animatable {
         } else {
             z10 = false;
         }
-        if (this.f18044z) {
+        if (this.f18045z) {
             if (f() && g() && l10 == null) {
-                for (androidx.vectordrawable.graphics.drawable.b bVar : CollectionsKt.h1(this.f18039u)) {
+                for (androidx.vectordrawable.graphics.drawable.b bVar : CollectionsKt.h1(this.f18040u)) {
                     bVar.c(this);
                 }
             } else if (h() && e() && z10) {
-                Iterator it = CollectionsKt.h1(this.f18040v).iterator();
+                Iterator it = CollectionsKt.h1(this.f18041v).iterator();
                 if (it.hasNext()) {
                     android.support.v4.media.session.b.a(it.next());
                     d();
@@ -268,8 +268,8 @@ public final class ApngDrawable extends Drawable implements Animatable {
             }
         }
         if (b()) {
-            this.f18044z = false;
-            for (androidx.vectordrawable.graphics.drawable.b bVar2 : CollectionsKt.h1(this.f18039u)) {
+            this.f18045z = false;
+            for (androidx.vectordrawable.graphics.drawable.b bVar2 : CollectionsKt.h1(this.f18040u)) {
                 bVar2.b(this);
             }
         }
@@ -278,49 +278,49 @@ public final class ApngDrawable extends Drawable implements Animatable {
     public final int c() {
         long j10;
         int i10;
-        int i11 = this.f18031e;
+        int i11 = this.f18032e;
         if (i11 == 0) {
             j10 = 0;
         } else {
             j10 = this.A % i11;
         }
         if (b()) {
-            i10 = this.f18031e;
+            i10 = this.f18032e;
         } else {
             i10 = 0;
         }
-        return a(0, this.f18032i - 1, j10 + i10);
+        return a(0, this.f18033i - 1, j10 + i10);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void draw(Canvas canvas) {
         Intrinsics.checkNotNullParameter(canvas, "canvas");
-        if (this.f18044z) {
+        if (this.f18045z) {
             i();
         }
-        Apng c10 = this.f18030d.c();
+        Apng c10 = this.f18031d.c();
         int c11 = c();
         Rect bounds = getBounds();
         Intrinsics.checkNotNullExpressionValue(bounds, "getBounds(...)");
-        c10.drawWithIndex(c11, canvas, null, bounds, this.f18038t);
-        if (this.f18044z) {
+        c10.drawWithIndex(c11, canvas, null, bounds, this.f18039t);
+        if (this.f18045z) {
             invalidateSelf();
         }
     }
 
     @Override // android.graphics.drawable.Drawable
     public Drawable.ConstantState getConstantState() {
-        return this.f18030d;
+        return this.f18031d;
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicHeight() {
-        return this.f18043y;
+        return this.f18044y;
     }
 
     @Override // android.graphics.drawable.Drawable
     public int getIntrinsicWidth() {
-        return this.f18042x;
+        return this.f18043x;
     }
 
     @Override // android.graphics.drawable.Drawable
@@ -330,11 +330,11 @@ public final class ApngDrawable extends Drawable implements Animatable {
 
     @Override // android.graphics.drawable.Animatable
     public boolean isRunning() {
-        return this.f18044z;
+        return this.f18045z;
     }
 
     public final void j() {
-        this.f18030d.c().recycle();
+        this.f18031d.c().recycle();
     }
 
     public final void k(long j10) {
@@ -349,30 +349,30 @@ public final class ApngDrawable extends Drawable implements Animatable {
 
     @Override // android.graphics.drawable.Drawable
     public Drawable mutate() {
-        this.f18030d = new a(this.f18030d);
+        this.f18031d = new a(this.f18031d);
         return this;
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setAlpha(int i10) {
-        this.f18038t.setAlpha(i10);
+        this.f18039t.setAlpha(i10);
     }
 
     @Override // android.graphics.drawable.Drawable
     public void setColorFilter(ColorFilter colorFilter) {
-        this.f18038t.setColorFilter(colorFilter);
+        this.f18039t.setColorFilter(colorFilter);
     }
 
     @Override // android.graphics.drawable.Animatable
     public void start() {
-        this.f18044z = true;
+        this.f18045z = true;
         this.B = null;
         invalidateSelf();
     }
 
     @Override // android.graphics.drawable.Animatable
     public void stop() {
-        this.f18044z = false;
+        this.f18045z = false;
         invalidateSelf();
     }
 
@@ -380,19 +380,19 @@ public final class ApngDrawable extends Drawable implements Animatable {
     public static final class a extends Drawable.ConstantState {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Apng f18045a;
+        private final Apng f18046a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f18046b;
+        private final int f18047b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f18047c;
+        private final int f18048c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f18048d;
+        private final int f18049d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Function0 f18049e;
+        private final Function0 f18050e;
 
         public /* synthetic */ a(Apng apng, int i10, int i11, int i12, Function0 function0, int i13, DefaultConstructorMarker defaultConstructorMarker) {
             this(apng, i10, i11, (i13 & 8) != 0 ? 0 : i12, (i13 & 16) != 0 ? new Function0() { // from class: nl.a
@@ -411,19 +411,19 @@ public final class ApngDrawable extends Drawable implements Animatable {
         }
 
         public final Apng c() {
-            return this.f18045a;
+            return this.f18046a;
         }
 
         public final Function0 d() {
-            return this.f18049e;
+            return this.f18050e;
         }
 
         public final int e() {
-            return this.f18047c;
+            return this.f18048c;
         }
 
         public final int f() {
-            return this.f18046b;
+            return this.f18047b;
         }
 
         @Override // android.graphics.drawable.Drawable.ConstantState
@@ -439,16 +439,16 @@ public final class ApngDrawable extends Drawable implements Animatable {
         public a(Apng apng, int i10, int i11, int i12, Function0 currentTimeProvider) {
             Intrinsics.checkNotNullParameter(apng, "apng");
             Intrinsics.checkNotNullParameter(currentTimeProvider, "currentTimeProvider");
-            this.f18045a = apng;
-            this.f18046b = i10;
-            this.f18047c = i11;
-            this.f18048d = i12;
-            this.f18049e = currentTimeProvider;
+            this.f18046a = apng;
+            this.f18047b = i10;
+            this.f18048c = i11;
+            this.f18049d = i12;
+            this.f18050e = currentTimeProvider;
         }
 
         /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
         public a(a apngState) {
-            this(apngState.f18045a.copy(), apngState.f18046b, apngState.f18047c, apngState.f18048d, apngState.f18049e);
+            this(apngState.f18046a.copy(), apngState.f18047b, apngState.f18048c, apngState.f18049d, apngState.f18050e);
             Intrinsics.checkNotNullParameter(apngState, "apngState");
         }
     }

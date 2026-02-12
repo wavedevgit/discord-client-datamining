@@ -1,61 +1,63 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = function(arg0, arg1, arg2, arg3) { // Environment: var0
-        _fun94947: for (var _fun94947_ip = 0;;) switch (_fun94947_ip) {
-            case 0:
-                var2 = arg1;
-                var3 = arg2;
-                var5 = this;
-                var4 = var5.stopCallback;
-                var1 = var2.target;
-                if (var1) {
-                    _fun94947_ip = 30;
-                    continue _fun94947
-                }
-            case 24:
-                var1 = var2.srcElement;
-            case 30:
-                var6 = arg3;
-                var10 = var5;
-                var9 = var2;
-                var8 = var1;
-                var7 = var3;
-                var0 = var10[var4](var9, var8, var7, var6, var5);
-                if (var0) {
-                    _fun94947_ip = 113;
-                    continue _fun94947
-                }
-            case 52:
-                var0 = arg0;
-                var1 = undefined;
-                var3 = var0.bind(var1)(var2, var3);
-                var0 = false;
-                if (!(var0 === var3)) {
-                    _fun94947_ip = 113;
-                    continue _fun94947
-                }
-            case 69:
-                var3 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var0 = 0;
-                var0 = var4[var0];
-                var0 = var3.bind(var1)(var0);
-                var0 = var0.bind(var1)(var2);
-                var0 = 1;
-                var0 = var4[var0];
-                var0 = var3.bind(var1)(var0);
-                var0 = var0.bind(var1)(var2);
-            case 113:
-                var0 = undefined;
-                return var0;
-        }
-    };
-    var0 = arg4;
-    var0.exports = var1;
-    var0 = undefined;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12430, 12431]);
+    _fun95003: for (var _fun95003_ip = 0;;) switch (_fun95003_ip) {
+        case 0:
+            var3 = module;
+            var0 = {
+                8: 'backspace',
+                9: 'tab',
+                13: 'enter',
+                16: 'shift',
+                17: 'ctrl',
+                18: 'alt',
+                20: 'capslock',
+                27: 'esc',
+                32: 'space',
+                33: 'pageup',
+                34: 'pagedown',
+                35: 'end',
+                36: 'home',
+                37: 'left',
+                38: 'up',
+                39: 'right',
+                40: 'down',
+                45: 'ins',
+                46: 'del',
+                91: 'meta',
+                93: 'meta',
+                187: 'plus',
+                189: 'minus',
+                224: 'meta'
+            };
+            var3.exports = var0;
+            var8 = 1;
+            var7 = 111;
+            var6 = 'f';
+            var2 = 96;
+            var1 = 9;
+            var4 = 20;
+        case 42:
+            var10 = var3.exports;
+            var9 = var7 + var8;
+            var0 = var6 + var8;
+            var10[var9] = var0;
+            var8 = var8 + 1;
+            var0 = 0;
+            if (var8 < var4) {
+                _fun95003_ip = 42;
+                continue _fun95003
+            }
+        case 68:
+            var5 = var3.exports;
+            var4 = var0 + var2;
+            var5[var4] = var0;
+            var0 = var0 + 1;
+            if (var0 <= var1) {
+                _fun95003_ip = 68;
+                continue _fun95003
+            }
+        case 88:
+            var0 = undefined;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

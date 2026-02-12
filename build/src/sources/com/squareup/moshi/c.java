@@ -13,23 +13,23 @@ abstract class c {
     class a extends c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Constructor f18771a;
+        final /* synthetic */ Constructor f18772a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Class f18772b;
+        final /* synthetic */ Class f18773b;
 
         a(Constructor constructor, Class cls) {
-            this.f18771a = constructor;
-            this.f18772b = cls;
+            this.f18772a = constructor;
+            this.f18773b = cls;
         }
 
         @Override // com.squareup.moshi.c
         public Object b() {
-            return this.f18771a.newInstance(null);
+            return this.f18772a.newInstance(null);
         }
 
         public String toString() {
-            return this.f18772b.getName();
+            return this.f18773b.getName();
         }
     }
 
@@ -37,27 +37,27 @@ abstract class c {
     class b extends c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Method f18773a;
+        final /* synthetic */ Method f18774a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Object f18774b;
+        final /* synthetic */ Object f18775b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ Class f18775c;
+        final /* synthetic */ Class f18776c;
 
         b(Method method, Object obj, Class cls) {
-            this.f18773a = method;
-            this.f18774b = obj;
-            this.f18775c = cls;
+            this.f18774a = method;
+            this.f18775b = obj;
+            this.f18776c = cls;
         }
 
         @Override // com.squareup.moshi.c
         public Object b() {
-            return this.f18773a.invoke(this.f18774b, this.f18775c);
+            return this.f18774a.invoke(this.f18775b, this.f18776c);
         }
 
         public String toString() {
-            return this.f18775c.getName();
+            return this.f18776c.getName();
         }
     }
 
@@ -66,27 +66,27 @@ abstract class c {
     class C0224c extends c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Method f18776a;
+        final /* synthetic */ Method f18777a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Class f18777b;
+        final /* synthetic */ Class f18778b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ int f18778c;
+        final /* synthetic */ int f18779c;
 
         C0224c(Method method, Class cls, int i10) {
-            this.f18776a = method;
-            this.f18777b = cls;
-            this.f18778c = i10;
+            this.f18777a = method;
+            this.f18778b = cls;
+            this.f18779c = i10;
         }
 
         @Override // com.squareup.moshi.c
         public Object b() {
-            return this.f18776a.invoke(null, this.f18777b, Integer.valueOf(this.f18778c));
+            return this.f18777a.invoke(null, this.f18778b, Integer.valueOf(this.f18779c));
         }
 
         public String toString() {
-            return this.f18777b.getName();
+            return this.f18778b.getName();
         }
     }
 
@@ -94,23 +94,23 @@ abstract class c {
     class d extends c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Method f18779a;
+        final /* synthetic */ Method f18780a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Class f18780b;
+        final /* synthetic */ Class f18781b;
 
         d(Method method, Class cls) {
-            this.f18779a = method;
-            this.f18780b = cls;
+            this.f18780a = method;
+            this.f18781b = cls;
         }
 
         @Override // com.squareup.moshi.c
         public Object b() {
-            return this.f18779a.invoke(null, this.f18780b, Object.class);
+            return this.f18780a.invoke(null, this.f18781b, Object.class);
         }
 
         public String toString() {
-            return this.f18780b.getName();
+            return this.f18781b.getName();
         }
     }
 

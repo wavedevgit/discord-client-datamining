@@ -9,12 +9,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
     var0 = function arg0, arg1() {
-        _fun78036: for (var _fun78036_ip = 0;;) switch (_fun78036_ip) {
+        _fun77862: for (var _fun77862_ip = 0;;) switch (_fun77862_ip) {
             case 0:
                 var0 = arg1;
                 if (var0) {
-                    _fun78036_ip = 44;
-                    continue _fun78036
+                    _fun77862_ip = 44;
+                    continue _fun77862
                 }
             case 9:
                 var0 = global;
@@ -25,8 +25,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 32;
                 var0 = var5 - var0;
                 var0 = var3.bind(var4)(var2, var0);
-                _fun78036_ip = 48;
-                continue _fun78036;
+                _fun77862_ip = 48;
+                continue _fun77862;
             case 44:
                 var0 = _closure1_slot3;
             case 48:
@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.DRAWER_LEFT_WIDTH_MIN = var3;
     var3 = function() {
-        _fun78037: for (var _fun78037_ip = 0;;) switch (_fun78037_ip) {
+        _fun77863: for (var _fun77863_ip = 0;;) switch (_fun77863_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var5 = _closure1_slot2;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5[var0];
                 var4 = undefined;
                 var3 = var2.bind(var4)(var0);
-                var0 = var3.getAppContainerDimensions;
+                var0 = var3.getBaseAppContainerDimensions;
                 var0 = var0.bind(var3)();
                 var3 = var0.width;
                 var0 = 2;
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.isChatLockedOpen;
                 var0 = var3;
                 if (!var5) {
-                    _fun78037_ip = 90;
-                    continue _fun78037
+                    _fun77863_ip = 90;
+                    continue _fun77863
                 }
             case 80:
                 var1 = _closure1_slot5;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getDrawerWidth = var3;
     var1 = function() {
-        _fun78038: for (var _fun78038_ip = 0;;) switch (_fun78038_ip) {
+        _fun77864: for (var _fun77864_ip = 0;;) switch (_fun77864_ip) {
             case 0:
                 var2 = _closure1_slot1;
                 var5 = _closure1_slot2;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.isChatLockedOpen;
                 var0 = var3;
                 if (!var5) {
-                    _fun78038_ip = 78;
-                    continue _fun78038
+                    _fun77864_ip = 78;
+                    continue _fun77864
                 }
             case 68:
                 var1 = _closure1_slot5;

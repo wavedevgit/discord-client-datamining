@@ -13,13 +13,13 @@ import uc.e0;
 final class h extends i {
 
     /* renamed from: o  reason: collision with root package name */
-    private static final byte[] f21602o = {79, 112, 117, 115, 72, 101, 97, 100};
+    private static final byte[] f21603o = {79, 112, 117, 115, 72, 101, 97, 100};
 
     /* renamed from: p  reason: collision with root package name */
-    private static final byte[] f21603p = {79, 112, 117, 115, 84, 97, 103, 115};
+    private static final byte[] f21604p = {79, 112, 117, 115, 84, 97, 103, 115};
 
     /* renamed from: n  reason: collision with root package name */
-    private boolean f21604n;
+    private boolean f21605n;
 
     private static boolean n(h0 h0Var, byte[] bArr) {
         if (h0Var.a() < bArr.length) {
@@ -33,7 +33,7 @@ final class h extends i {
     }
 
     public static boolean o(h0 h0Var) {
-        return n(h0Var, f21602o);
+        return n(h0Var, f21603o);
     }
 
     @Override // dd.i
@@ -43,32 +43,32 @@ final class h extends i {
 
     @Override // dd.i
     protected boolean h(h0 h0Var, long j10, i.b bVar) {
-        if (n(h0Var, f21602o)) {
+        if (n(h0Var, f21603o)) {
             byte[] copyOf = Arrays.copyOf(h0Var.e(), h0Var.g());
             int c10 = w.c(copyOf);
             List a10 = w.a(copyOf);
-            if (bVar.f21618a != null) {
+            if (bVar.f21619a != null) {
                 return true;
             }
-            bVar.f21618a = new Format.b().g0("audio/opus").J(c10).h0(48000).V(a10).G();
+            bVar.f21619a = new Format.b().g0("audio/opus").J(c10).h0(48000).V(a10).G();
             return true;
         }
-        byte[] bArr = f21603p;
+        byte[] bArr = f21604p;
         if (n(h0Var, bArr)) {
-            oe.a.i(bVar.f21618a);
-            if (this.f21604n) {
+            oe.a.i(bVar.f21619a);
+            if (this.f21605n) {
                 return true;
             }
-            this.f21604n = true;
+            this.f21605n = true;
             h0Var.V(bArr.length);
-            Metadata c11 = e0.c(s.p(e0.i(h0Var, false, false).f50649b));
+            Metadata c11 = e0.c(s.p(e0.i(h0Var, false, false).f50650b));
             if (c11 == null) {
                 return true;
             }
-            bVar.f21618a = bVar.f21618a.b().Z(c11.b(bVar.f21618a.f12302u)).G();
+            bVar.f21619a = bVar.f21619a.b().Z(c11.b(bVar.f21619a.f12303u)).G();
             return true;
         }
-        oe.a.i(bVar.f21618a);
+        oe.a.i(bVar.f21619a);
         return false;
     }
 
@@ -77,7 +77,7 @@ final class h extends i {
     public void l(boolean z10) {
         super.l(z10);
         if (z10) {
-            this.f21604n = false;
+            this.f21605n = false;
         }
     }
 }

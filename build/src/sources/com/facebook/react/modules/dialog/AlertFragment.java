@@ -133,7 +133,7 @@ public final class AlertFragment extends DialogFragment implements DialogInterfa
         }
 
         private final boolean isAppCompatTheme(Context context) {
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(j.f23537y0);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(j.f23538y0);
             Intrinsics.checkNotNullExpressionValue(obtainStyledAttributes, "obtainStyledAttributes(...)");
             boolean hasValue = obtainStyledAttributes.hasValue(j.D0);
             obtainStyledAttributes.recycle();

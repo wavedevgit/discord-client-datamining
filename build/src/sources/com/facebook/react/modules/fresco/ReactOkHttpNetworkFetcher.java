@@ -26,7 +26,7 @@ import org.jetbrains.annotations.NotNull;
 public final class ReactOkHttpNetworkFetcher extends OkHttpNetworkFetcher {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ int f11786a = 0;
+    public static final /* synthetic */ int f11787a = 0;
 
     @Metadata(k = 3, mv = {2, 1, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -82,7 +82,7 @@ public final class ReactOkHttpNetworkFetcher extends OkHttpNetworkFetcher {
         Map<String, String> map;
         Intrinsics.checkNotNullParameter(fetchState, "fetchState");
         Intrinsics.checkNotNullParameter(callback, "callback");
-        fetchState.f11020f = SystemClock.elapsedRealtime();
+        fetchState.f11021f = SystemClock.elapsedRealtime();
         Uri g10 = fetchState.g();
         Intrinsics.checkNotNullExpressionValue(g10, "getUri(...)");
         CacheControl.a aVar = new CacheControl.a();
@@ -107,7 +107,7 @@ public final class ReactOkHttpNetworkFetcher extends OkHttpNetworkFetcher {
             aVar.e();
             map = null;
         }
-        Headers.b bVar = Headers.f40273e;
+        Headers.b bVar = Headers.f40274e;
         if (map == null) {
             map = o0.i();
         }

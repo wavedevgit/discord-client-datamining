@@ -8,17 +8,17 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f56520a;
+    private final boolean f56521a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final LinkedBlockingQueue f56521b = new LinkedBlockingQueue();
+    private final LinkedBlockingQueue f56522b = new LinkedBlockingQueue();
 
     public a(boolean z10) {
-        this.f56520a = z10;
+        this.f56521a = z10;
     }
 
     private final ByteBuffer a(int i10) {
-        if (this.f56520a) {
+        if (this.f56521a) {
             ByteBuffer order = ByteBuffer.allocateDirect(i10).order(ByteOrder.LITTLE_ENDIAN);
             Intrinsics.checkNotNullExpressionValue(order, "{\n            ByteBuffer….LITTLE_ENDIAN)\n        }");
             return order;
@@ -29,11 +29,11 @@ public final class a {
     }
 
     public final void b() {
-        this.f56521b.clear();
+        this.f56522b.clear();
     }
 
     public final ByteBuffer c(int i10) {
-        ByteBuffer byteBuffer = (ByteBuffer) this.f56521b.poll();
+        ByteBuffer byteBuffer = (ByteBuffer) this.f56522b.poll();
         if (byteBuffer != null) {
             if (byteBuffer.capacity() < i10) {
                 byteBuffer = a(i10);
@@ -48,6 +48,6 @@ public final class a {
     public final void d(ByteBuffer byteBuffer) {
         Intrinsics.checkNotNullParameter(byteBuffer, "byteBuffer");
         byteBuffer.clear();
-        this.f56521b.put(byteBuffer);
+        this.f56522b.put(byteBuffer);
     }
 }

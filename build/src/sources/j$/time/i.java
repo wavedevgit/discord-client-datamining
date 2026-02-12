@@ -7,7 +7,7 @@ import java.io.Serializable;
 public abstract class i implements j$.time.temporal.k, j$.time.temporal.l, Comparable, Serializable {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ int f30598a = 0;
+    public static final /* synthetic */ int f30599a = 0;
 
     static {
         DateTimeFormatterBuilder dateTimeFormatterBuilder = new DateTimeFormatterBuilder();

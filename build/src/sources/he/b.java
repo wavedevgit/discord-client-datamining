@@ -8,33 +8,33 @@ import qi.u;
 final class b {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Pattern f27107d = Pattern.compile("\\s+");
+    private static final Pattern f27108d = Pattern.compile("\\s+");
 
     /* renamed from: e  reason: collision with root package name */
-    private static final u f27108e = u.v("auto", ViewProps.NONE);
+    private static final u f27109e = u.v("auto", ViewProps.NONE);
 
     /* renamed from: f  reason: collision with root package name */
-    private static final u f27109f = u.w("dot", "sesame", "circle");
+    private static final u f27110f = u.w("dot", "sesame", "circle");
 
     /* renamed from: g  reason: collision with root package name */
-    private static final u f27110g = u.v("filled", "open");
+    private static final u f27111g = u.v("filled", "open");
 
     /* renamed from: h  reason: collision with root package name */
-    private static final u f27111h = u.w("after", "before", "outside");
+    private static final u f27112h = u.w("after", "before", "outside");
 
     /* renamed from: a  reason: collision with root package name */
-    public final int f27112a;
+    public final int f27113a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f27113b;
+    public final int f27114b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f27114c;
+    public final int f27115c;
 
     private b(int i10, int i11, int i12) {
-        this.f27112a = i10;
-        this.f27113b = i11;
-        this.f27114c = i12;
+        this.f27113a = i10;
+        this.f27114b = i11;
+        this.f27115c = i12;
     }
 
     public static b a(String str) {
@@ -45,7 +45,7 @@ final class b {
         if (e10.isEmpty()) {
             return null;
         }
-        return b(u.p(TextUtils.split(e10, f27107d)));
+        return b(u.p(TextUtils.split(e10, f27108d)));
     }
 
     /* JADX WARN: Removed duplicated region for block: B:19:0x004b  */

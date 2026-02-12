@@ -72,7 +72,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'initializeSensor';
         var0.key = var5;
         var5 = function arg0, arg1() {
-            _fun33711: for (var _fun33711_ip = 0;;) switch (_fun33711_ip) {
+            _fun33733: for (var _fun33733_ip = 0;;) switch (_fun33733_ip) {
                 case 0:
                     var5 = arg0;
                     var4 = arg1;
@@ -83,8 +83,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var3.has;
                     var1 = var1.bind(var3)(var2);
                     if (var1) {
-                        _fun33711_ip = 108;
-                        continue _fun33711
+                        _fun33733_ip = 108;
+                        continue _fun33733
                     }
                 case 40:
                     var6 = _closure1_slot0;
@@ -122,7 +122,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'registerSensor';
         var0.key = var5;
         var5 = function arg0, arg1, arg2() {
-            _fun33712: for (var _fun33712_ip = 0;;) switch (_fun33712_ip) {
+            _fun33734: for (var _fun33734_ip = 0;;) switch (_fun33734_ip) {
                 case 0:
                     var0 = this;
                     var3 = var0.getSensorId;
@@ -134,8 +134,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var2.bind(var3)(var1);
                     var4 = -1;
                     if (var2) {
-                        _fun33712_ip = 48;
-                        continue _fun33712
+                        _fun33734_ip = 48;
+                        continue _fun33734
                     }
                 case 46:
                     return var4;
@@ -145,23 +145,23 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var0.bind(var2)(var1);
                     var0 = var4;
                     if (!var3) {
-                        _fun33712_ip = 137;
-                        continue _fun33712
+                        _fun33734_ip = 137;
+                        continue _fun33734
                     }
                 case 70:
                     var2 = var3.isAvailable;
                     var2 = var2.bind(var3)();
                     var0 = var4;
                     if (!var2) {
-                        _fun33712_ip = 137;
-                        continue _fun33712
+                        _fun33734_ip = 137;
+                        continue _fun33734
                     }
                 case 86:
                     var2 = var3.isRunning;
                     var2 = var2.bind(var3)();
                     if (var2) {
-                        _fun33712_ip = 119;
-                        continue _fun33712
+                        _fun33734_ip = 119;
+                        continue _fun33734
                     }
                 case 99:
                     var5 = var3.register;
@@ -169,8 +169,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var5.bind(var3)(var2);
                     var0 = var4;
                     if (!var2) {
-                        _fun33712_ip = 137;
-                        continue _fun33712
+                        _fun33734_ip = 137;
+                        continue _fun33734
                     }
                 case 119:
                     var2 = var3.listenersNumber;
@@ -187,7 +187,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'unregisterSensor';
         var0.key = var5;
         var4 = function arg0() {
-            _fun33713: for (var _fun33713_ip = 0;;) switch (_fun33713_ip) {
+            _fun33735: for (var _fun33735_ip = 0;;) switch (_fun33735_ip) {
                 case 0:
                     var2 = arg0;
                     var0 = this;
@@ -195,8 +195,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var3.has;
                     var1 = var1.bind(var3)(var2);
                     if (!var1) {
-                        _fun33713_ip = 97;
-                        continue _fun33713
+                        _fun33735_ip = 97;
+                        continue _fun33735
                     }
                 case 25:
                     var1 = var0.nativeSensors;
@@ -204,16 +204,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var0.bind(var1)(var2);
                     var0 = var1;
                     if (!var0) {
-                        _fun33713_ip = 57;
-                        continue _fun33713
+                        _fun33735_ip = 57;
+                        continue _fun33735
                     }
                 case 47:
                     var2 = var1.isRunning;
                     var0 = var2.bind(var1)();
                 case 57:
                     if (!var0) {
-                        _fun33713_ip = 97;
-                        continue _fun33713
+                        _fun33735_ip = 97;
+                        continue _fun33735
                     }
                 case 60:
                     var0 = var1.listenersNumber;
@@ -222,8 +222,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var1.listenersNumber;
                     var0 = 0;
                     if (!(var0 === var2)) {
-                        _fun33713_ip = 97;
-                        continue _fun33713
+                        _fun33735_ip = 97;
+                        continue _fun33735
                     }
                 case 87:
                     var0 = var1.unregister;

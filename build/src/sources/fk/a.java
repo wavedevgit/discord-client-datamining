@@ -6,10 +6,10 @@ import ek.e;
 public class a extends dk.e implements ek.d {
 
     /* renamed from: t  reason: collision with root package name */
-    static final ek.e f23759t = new e.a().a();
+    static final ek.e f23760t = new e.a().a();
 
     /* renamed from: s  reason: collision with root package name */
-    private final boolean f23760s;
+    private final boolean f23761s;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: Illegal instructions before constructor call */
@@ -26,7 +26,7 @@ public class a extends dk.e implements ek.d {
             qg.qd r4 = qg.be.b(r4)
             r0.<init>(r1, r2)
             boolean r1 = fk.k.d()
-            r0.f23760s = r1
+            r0.f23761s = r1
             qg.ea r2 = new qg.ea
             r2.<init>()
             if (r1 == 0) goto L23
@@ -53,7 +53,7 @@ public class a extends dk.e implements ek.d {
 
     @Override // ff.f
     public final com.google.android.gms.common.d[] a() {
-        return this.f23760s ? wj.l.f52797a : new com.google.android.gms.common.d[]{wj.l.f52800d};
+        return this.f23761s ? wj.l.f52798a : new com.google.android.gms.common.d[]{wj.l.f52801d};
     }
 
     @Override // ek.d

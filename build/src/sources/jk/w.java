@@ -10,19 +10,19 @@ import java.util.RandomAccess;
 public class w extends c implements x, RandomAccess {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final w f31175i;
+    private static final w f31176i;
 
     /* renamed from: o  reason: collision with root package name */
-    public static final x f31176o;
+    public static final x f31177o;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f31177e;
+    private final List f31178e;
 
     static {
         w wVar = new w();
-        f31175i = wVar;
+        f31176i = wVar;
         wVar.m();
-        f31176o = wVar;
+        f31177o = wVar;
     }
 
     public w() {
@@ -42,7 +42,7 @@ public class w extends c implements x, RandomAccess {
     @Override // jk.x
     public void E0(f fVar) {
         b();
-        this.f31177e.add(fVar);
+        this.f31178e.add(fVar);
         ((AbstractList) this).modCount++;
     }
 
@@ -55,21 +55,21 @@ public class w extends c implements x, RandomAccess {
     /* renamed from: c */
     public void add(int i10, String str) {
         b();
-        this.f31177e.add(i10, str);
+        this.f31178e.add(i10, str);
         ((AbstractList) this).modCount++;
     }
 
     @Override // jk.c, java.util.AbstractList, java.util.AbstractCollection, java.util.Collection, java.util.List
     public void clear() {
         b();
-        this.f31177e.clear();
+        this.f31178e.clear();
         ((AbstractList) this).modCount++;
     }
 
     @Override // java.util.AbstractList, java.util.List
     /* renamed from: e */
     public String get(int i10) {
-        Object obj = this.f31177e.get(i10);
+        Object obj = this.f31178e.get(i10);
         if (obj instanceof String) {
             return (String) obj;
         }
@@ -77,14 +77,14 @@ public class w extends c implements x, RandomAccess {
             f fVar = (f) obj;
             String u10 = fVar.u();
             if (fVar.k()) {
-                this.f31177e.set(i10, u10);
+                this.f31178e.set(i10, u10);
             }
             return u10;
         }
         byte[] bArr = (byte[]) obj;
         String i11 = u.i(bArr);
         if (u.g(bArr)) {
-            this.f31177e.set(i10, i11);
+            this.f31178e.set(i10, i11);
         }
         return i11;
     }
@@ -99,7 +99,7 @@ public class w extends c implements x, RandomAccess {
     public w z(int i10) {
         if (i10 >= size()) {
             ArrayList arrayList = new ArrayList(i10);
-            arrayList.addAll(this.f31177e);
+            arrayList.addAll(this.f31178e);
             return new w(arrayList);
         }
         throw new IllegalArgumentException();
@@ -109,14 +109,14 @@ public class w extends c implements x, RandomAccess {
     /* renamed from: g */
     public String remove(int i10) {
         b();
-        Object remove = this.f31177e.remove(i10);
+        Object remove = this.f31178e.remove(i10);
         ((AbstractList) this).modCount++;
         return d(remove);
     }
 
     @Override // jk.x
     public List getUnderlyingElements() {
-        return Collections.unmodifiableList(this.f31177e);
+        return Collections.unmodifiableList(this.f31178e);
     }
 
     @Override // jk.x
@@ -136,7 +136,7 @@ public class w extends c implements x, RandomAccess {
     /* renamed from: i */
     public String set(int i10, String str) {
         b();
-        return d(this.f31177e.set(i10, str));
+        return d(this.f31178e.set(i10, str));
     }
 
     @Override // jk.c, java.util.AbstractCollection, java.util.Collection, java.util.List
@@ -151,7 +151,7 @@ public class w extends c implements x, RandomAccess {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public int size() {
-        return this.f31177e.size();
+        return this.f31178e.size();
     }
 
     @Override // jk.c, jk.u.b
@@ -174,7 +174,7 @@ public class w extends c implements x, RandomAccess {
         if (collection instanceof x) {
             collection = ((x) collection).getUnderlyingElements();
         }
-        boolean addAll = this.f31177e.addAll(i10, collection);
+        boolean addAll = this.f31178e.addAll(i10, collection);
         ((AbstractList) this).modCount++;
         return addAll;
     }
@@ -185,6 +185,6 @@ public class w extends c implements x, RandomAccess {
     }
 
     private w(ArrayList arrayList) {
-        this.f31177e = arrayList;
+        this.f31178e = arrayList;
     }
 }

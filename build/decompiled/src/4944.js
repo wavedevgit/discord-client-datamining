@@ -1,215 +1,110 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
-    var2 = exports;
-    var19 = dependencyMap;
-    var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var1 = {};
-    var0 = true;
-    var1.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var4)(var2, var0, var1);
-    var20 = 0;
-    var3 = var19[var20];
-    var1 = metroImportDefault;
-    var0 = undefined;
-    var21 = var1.bind(var0)(var3);
-    var4 = 1;
-    var1 = var19[var4];
-    var1 = var5.bind(var0)(var1);
-    var6 = var1.Dimensions;
-    var1 = var1.Platform;
-    var3 = var6.get;
-    var1 = 'window';
-    var1 = var3.bind(var6)(var1);
-    var9 = var1.height;
-    var8 = var1.width;
-    var3 = var6.get;
-    var1 = 'screen';
-    var1 = var3.bind(var6)(var1);
-    var7 = var1.height;
-    var6 = var1.width;
-    var18 = {};
-    var18.UNDETERMINED = var20;
-    var3 = 'UNDETERMINED';
-    var18[var20] = var3;
-    var18.SCROLLABLE = var4;
-    var1 = 'SCROLLABLE';
-    var18[var4] = var1;
-    var1 = 2;
-    var18.HANDLE = var1;
-    var10 = 'HANDLE';
-    var18[var1] = var10;
-    var22 = 3;
-    var18.CONTENT = var22;
-    var10 = 'CONTENT';
-    var18[var22] = var10;
-    var17 = {};
-    var17.CLOSED = var20;
-    var10 = 'CLOSED';
-    var17[var20] = var10;
-    var17.OPENED = var4;
-    var10 = 'OPENED';
-    var17[var4] = var10;
-    var17.EXTENDED = var1;
-    var10 = 'EXTENDED';
-    var17[var1] = var10;
-    var17.OVER_EXTENDED = var22;
-    var10 = 'OVER_EXTENDED';
-    var17[var22] = var10;
-    var15 = 4;
-    var17.FILL_PARENT = var15;
-    var10 = 'FILL_PARENT';
-    var17[var15] = var10;
-    var12 = {};
-    var12.LOCKED = var20;
-    var10 = 'LOCKED';
-    var12[var20] = var10;
-    var12.UNLOCKED = var4;
-    var10 = 'UNLOCKED';
-    var12[var4] = var10;
-    var12.UNDETERMINED = var1;
-    var12[var1] = var3;
-    var13 = {};
-    var13.UNDETERMINED = var20;
-    var13[var20] = var3;
-    var13.VIEW = var4;
-    var10 = 'VIEW';
-    var13[var4] = var10;
-    var13.FLATLIST = var1;
-    var10 = 'FLATLIST';
-    var13[var1] = var10;
-    var13.SCROLLVIEW = var22;
-    var10 = 'SCROLLVIEW';
-    var13[var22] = var10;
-    var13.SECTIONLIST = var15;
-    var10 = 'SECTIONLIST';
-    var13[var15] = var10;
-    var11 = 5;
-    var13.VIRTUALIZEDLIST = var11;
-    var10 = 'VIRTUALIZEDLIST';
-    var13[var11] = var10;
-    var16 = {};
-    var16.UNDETERMINED = var20;
-    var16[var20] = var3;
-    var16.RUNNING = var4;
-    var10 = 'RUNNING';
-    var16[var4] = var10;
-    var16.STOPPED = var1;
-    var10 = 'STOPPED';
-    var16[var1] = var10;
-    var16.INTERRUPTED = var22;
-    var10 = 'INTERRUPTED';
-    var16[var22] = var10;
-    var14 = {};
-    var14.NONE = var20;
-    var10 = 'NONE';
-    var14[var20] = var10;
-    var14.MOUNT = var4;
-    var10 = 'MOUNT';
-    var14[var4] = var10;
-    var14.GESTURE = var1;
-    var10 = 'GESTURE';
-    var14[var1] = var10;
-    var14.USER = var22;
-    var10 = 'USER';
-    var14[var22] = var10;
-    var14.CONTAINER_RESIZE = var15;
-    var10 = 'CONTAINER_RESIZE';
-    var14[var15] = var10;
-    var14.SNAP_POINT_CHANGE = var11;
-    var10 = 'SNAP_POINT_CHANGE';
-    var14[var11] = var10;
-    var11 = 6;
-    var14.KEYBOARD = var11;
-    var10 = 'KEYBOARD';
-    var14[var11] = var10;
-    var15 = {};
-    var15.TIMING = var20;
-    var10 = 'TIMING';
-    var15[var20] = var10;
-    var15.SPRING = var4;
-    var10 = 'SPRING';
-    var15[var4] = var10;
-    var11 = {};
-    var11.UNDETERMINED = var20;
-    var11[var20] = var3;
-    var11.SHOWN = var4;
-    var3 = 'SHOWN';
-    var11[var4] = var3;
-    var11.HIDDEN = var1;
-    var3 = 'HIDDEN';
-    var11[var1] = var3;
-    var10 = {};
-    var10.PROVIDED = var20;
-    var3 = 'PROVIDED';
-    var10[var20] = var3;
-    var10.DYNAMIC = var4;
-    var3 = 'DYNAMIC';
-    var10[var4] = var3;
-    var3 = var19[var1];
-    var3 = var5.bind(var0)(var3);
-    var4 = var3.Easing;
-    var3 = var4.out;
-    var1 = var19[var1];
-    var1 = var5.bind(var0)(var1);
-    var1 = var1.Easing;
-    var1 = var1.exp;
-    var3 = var3.bind(var4)(var1);
-    var4 = {};
-    var1 = 250;
-    var4.duration = var1;
-    var4.easing = var3;
-    var19 = var12.UNDETERMINED;
-    var5 = {};
-    var19 = var21.bind(var0)(var5, var19, var20);
-    var5 = var12.LOCKED;
-    var20 = var21.bind(var0)(var19, var5, var20);
-    var19 = var12.UNLOCKED;
-    var5 = 0.985;
-    var5 = var21.bind(var0)(var20, var19, var5);
-    var2.GESTURE_SOURCE = var18;
-    var2.SHEET_STATE = var17;
-    var2.ANIMATION_STATE = var16;
-    var2.ANIMATION_METHOD = var15;
-    var2.ANIMATION_SOURCE = var14;
-    var2.SCROLLABLE_TYPE = var13;
-    var2.SCROLLABLE_STATE = var12;
-    var2.KEYBOARD_STATE = var11;
-    var2.SNAP_POINT_TYPE = var10;
-    var2.WINDOW_HEIGHT = var9;
-    var2.WINDOW_WIDTH = var8;
-    var2.SCREEN_HEIGHT = var7;
-    var2.SCREEN_WIDTH = var6;
-    var2.SCROLLABLE_DECELERATION_RATE_MAPPER = var5;
-    var5 = {
-        'replace': 'replace',
-        'push': 'push',
-        'switch': 'switch'
-    };
-    var2.MODAL_STACK_BEHAVIOR = var5;
-    var5 = {
-        'interactive': 'interactive',
-        'extend': 'extend',
-        'fillParent': 'fillParent'
-    };
-    var2.KEYBOARD_BEHAVIOR = var5;
-    var5 = {
-        'none': 'none',
-        'restore': 'restore'
-    };
-    var2.KEYBOARD_BLUR_BEHAVIOR = var5;
-    var5 = {
-        'adjustPan': 'adjustPan',
-        'adjustResize': 'adjustResize'
-    };
-    var2.KEYBOARD_INPUT_MODE = var5;
-    var5 = 12.5;
-    var2.KEYBOARD_DISMISS_THRESHOLD = var5;
-    var2.ANIMATION_CONFIGS = var4;
-    var2.ANIMATION_EASING = var3;
-    var2.ANIMATION_DURATION = var1;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [77, 27, 3718]);
+    _fun44765: for (var _fun44765_ip = 0;;) switch (_fun44765_ip) {
+        case 0:
+            var4 = require;
+            var12 = exports;
+            var0 = dependencyMap;
+            var8 = var4;
+            var _closure1_slot0 = var4;
+            var2 = var12;
+            var7 = var0;
+            var _closure1_slot1 = var0;
+            var0 = undefined;
+            var6 = undefined;
+            var1 = undefined;
+            var5 = undefined;
+            var4 = global;
+            var11 = var4.Object;
+            var10 = var11.defineProperty;
+            var9 = {};
+            var4 = true;
+            var9.value = var4;
+            var4 = '__esModule';
+            var4 = var10.bind(var11)(var12, var4, var9);
+        case 68: // try_start_0
+            var9 = var8;
+            var10 = var7;
+            var4 = 0;
+            var4 = var10[var4];
+            var1 = var9.bind(var0)(var4);
+        case 85: // try_end0
+            _fun44765_ip = 91;
+            continue _fun44765;
+        case 87: // catch_target0
+            CatchBlockStart(arg_register = 4);
+            var1 = undefined;
+        case 91:
+            var10 = var1;
+            var6 = var10;
+            var9 = null;
+            var9 = var9 != var10;
+            var4 = var9;
+            if (!var9) {
+                _fun44765_ip = 115;
+                continue _fun44765
+            }
+        case 109:
+            var4 = var6.useSharedValue;
+        case 115:
+            if (var4) {
+                _fun44765_ip = 120;
+                continue _fun44765
+            }
+        case 118:
+            var1 = undefined;
+        case 120:
+            var4 = {};
+            var6 = "function pnpm_reanimatedWrapperTs1(){const{tagMessage}=this.__closure;console.warn(tagMessage('Please use newer version of react-native-reanimated in order to control state of the gestures.'));}";
+            var4.code = var6;
+            var5 = var4;
+            var6 = var1;
+            var6 = var0 === var6;
+            var4 = var6;
+            if (var6) {
+                _fun44765_ip = 157;
+                continue _fun44765
+            }
+        case 148:
+            var6 = var1;
+            var4 = var6.setGestureState;
+        case 157:
+            if (var4) {
+                _fun44765_ip = 230;
+                continue _fun44765
+            }
+        case 160:
+            var4 = var1;
+            var3 = function() {
+                var0 = global;
+                var3 = var0.console;
+                var2 = var3.warn;
+                var4 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 1;
+                var1 = var1[var0];
+                var0 = undefined;
+                var5 = var4.bind(var0)(var1);
+                var4 = var5.tagMessage;
+                var1 = 'Please use newer version of react-native-reanimated in order to control state of the gestures.';
+                var1 = var4.bind(var5)(var1);
+                var1 = var2.bind(var3)(var1);
+                return var0;
+            };
+            var6 = {};
+            var9 = var7;
+            var7 = 1;
+            var7 = var9[var7];
+            var7 = var8.bind(var0)(var7);
+            var7 = var7.tagMessage;
+            var6.tagMessage = var7;
+            var3.__closure = var6;
+            var6 = 12835327155090.0;
+            var3.__workletHash = var6;
+            var3.__initData = var5;
+            var4.setGestureState = var3;
+        case 230:
+            var2.Reanimated = var1;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3718, 4941]);

@@ -3,20 +3,20 @@ package ws;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final boolean f53962a = false;
+    private static final boolean f53963a = false;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ThreadLocal[] f53963b;
+    private static final ThreadLocal[] f53964b;
 
     static {
         ThreadLocal[] threadLocalArr = new ThreadLocal[4];
         for (int i10 = 0; i10 < 4; i10++) {
             threadLocalArr[i10] = new ThreadLocal();
         }
-        f53963b = threadLocalArr;
+        f53964b = threadLocalArr;
     }
 
     public static final boolean a() {
-        return f53962a;
+        return f53963a;
     }
 }

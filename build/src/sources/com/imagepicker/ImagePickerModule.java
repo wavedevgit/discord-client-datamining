@@ -73,7 +73,7 @@ public class ImagePickerModule extends ReactContextBaseJavaModule implements Act
     public /* synthetic */ void lambda$initializeLaunchers$0(FragmentActivity fragmentActivity, d.a aVar) {
         int i10;
         g gVar = this.options;
-        if (gVar != null && gVar.f18018l.equals(h.f18024f)) {
+        if (gVar != null && gVar.f18019l.equals(h.f18025f)) {
             i10 = REQUEST_LAUNCH_VIDEO_CAPTURE;
         } else {
             i10 = REQUEST_LAUNCH_IMAGE_CAPTURE;
@@ -116,28 +116,28 @@ public class ImagePickerModule extends ReactContextBaseJavaModule implements Act
         File c10;
         int i10;
         if (!h.w(this.reactContext)) {
-            callback.invoke(h.j(h.f18020b, null));
+            callback.invoke(h.j(h.f18021b, null));
             return;
         }
         Activity currentActivity = getCurrentActivity();
         if (currentActivity == null) {
-            callback.invoke(h.j(h.f18022d, "Activity error"));
+            callback.invoke(h.j(h.f18023d, "Activity error"));
         } else if (!h.x(this.reactContext, currentActivity)) {
-            callback.invoke(h.j(h.f18022d, h.f18027i));
+            callback.invoke(h.j(h.f18023d, h.f18028i));
         } else {
             this.callback = callback;
             g gVar = new g(readableMap);
             this.options = gVar;
-            if (gVar.f18014h.booleanValue() && Build.VERSION.SDK_INT <= 28 && !h.v(currentActivity)) {
-                callback.invoke(h.j(h.f18021c, null));
+            if (gVar.f18015h.booleanValue() && Build.VERSION.SDK_INT <= 28 && !h.v(currentActivity)) {
+                callback.invoke(h.j(h.f18022c, null));
                 this.callback = null;
                 return;
             }
             this.identifier = UUID.randomUUID();
-            if (this.options.f18018l.equals(h.f18024f)) {
+            if (this.options.f18019l.equals(h.f18025f)) {
                 intent = new Intent("android.media.action.VIDEO_CAPTURE");
-                intent.putExtra("android.intent.extra.videoQuality", this.options.f18010d);
-                int i11 = this.options.f18015i;
+                intent.putExtra("android.intent.extra.videoQuality", this.options.f18011d);
+                int i11 = this.options.f18016i;
                 if (i11 > 0) {
                     intent.putExtra("android.intent.extra.durationLimit", i11);
                 }
@@ -150,7 +150,7 @@ public class ImagePickerModule extends ReactContextBaseJavaModule implements Act
                 this.cameraCaptureURI = h.d(c10, this.reactContext);
                 i10 = REQUEST_LAUNCH_IMAGE_CAPTURE;
             }
-            if (this.options.f18016j.booleanValue()) {
+            if (this.options.f18017j.booleanValue()) {
                 h.E(intent);
             }
             this.fileUri = Uri.fromFile(c10);
@@ -164,10 +164,10 @@ public class ImagePickerModule extends ReactContextBaseJavaModule implements Act
                     currentActivity.startActivityForResult(intent, i10);
                 }
             } catch (ActivityNotFoundException e10) {
-                callback.invoke(h.j(h.f18022d, e10.getMessage()));
+                callback.invoke(h.j(h.f18023d, e10.getMessage()));
                 this.callback = null;
             } catch (Exception e11) {
-                String str = h.f18022d;
+                String str = h.f18023d;
                 callback.invoke(h.j(str, "Failed to launch camera: " + e11.getMessage()));
                 this.callback = null;
             }
@@ -180,21 +180,21 @@ public class ImagePickerModule extends ReactContextBaseJavaModule implements Act
         Intent intent;
         Activity currentActivity = getCurrentActivity();
         if (currentActivity == null) {
-            callback.invoke(h.j(h.f18022d, "Activity error"));
+            callback.invoke(h.j(h.f18023d, "Activity error"));
             return;
         }
         this.callback = callback;
         g gVar = new g(readableMap);
         this.options = gVar;
-        if (gVar.f18007a == 1) {
+        if (gVar.f18008a == 1) {
             z10 = true;
         } else {
             z10 = false;
         }
-        boolean equals = gVar.f18018l.equals(h.f18023e);
-        boolean equals2 = this.options.f18018l.equals(h.f18024f);
-        boolean equals3 = this.options.f18018l.equals(h.f18025g);
-        if (z10 && ((equals || equals2) && !this.options.f18017k.booleanValue())) {
+        boolean equals = gVar.f18019l.equals(h.f18024e);
+        boolean equals2 = this.options.f18019l.equals(h.f18025f);
+        boolean equals3 = this.options.f18019l.equals(h.f18026g);
+        if (z10 && ((equals || equals2) && !this.options.f18018k.booleanValue())) {
             intent = new Intent("android.intent.action.PICK");
         } else {
             intent = new Intent("android.intent.action.GET_CONTENT");
@@ -222,10 +222,10 @@ public class ImagePickerModule extends ReactContextBaseJavaModule implements Act
                 currentActivity.startActivityForResult(createChooser, REQUEST_LAUNCH_LIBRARY);
             }
         } catch (ActivityNotFoundException e10) {
-            callback.invoke(h.j(h.f18022d, e10.getMessage()));
+            callback.invoke(h.j(h.f18023d, e10.getMessage()));
             this.callback = null;
         } catch (Exception e11) {
-            callback.invoke(h.j(h.f18022d, "Failed to launch library: " + e11.getMessage()));
+            callback.invoke(h.j(h.f18023d, "Failed to launch library: " + e11.getMessage()));
             this.callback = null;
         }
     }
@@ -243,13 +243,13 @@ public class ImagePickerModule extends ReactContextBaseJavaModule implements Act
             }
             switch (i10) {
                 case REQUEST_LAUNCH_IMAGE_CAPTURE /* 13001 */:
-                    if (this.options.f18014h.booleanValue()) {
+                    if (this.options.f18015h.booleanValue()) {
                         h.D(this.cameraCaptureURI, this.identifier, this.reactContext, "photo");
                     }
                     onAssetsObtained(Collections.singletonList(this.fileUri));
                     return;
                 case REQUEST_LAUNCH_VIDEO_CAPTURE /* 13002 */:
-                    if (this.options.f18014h.booleanValue()) {
+                    if (this.options.f18015h.booleanValue()) {
                         h.D(this.cameraCaptureURI, this.identifier, this.reactContext, MediaStreamTrack.VIDEO_TRACK_KIND);
                     }
                     onAssetsObtained(Collections.singletonList(this.fileUri));
@@ -267,7 +267,7 @@ public class ImagePickerModule extends ReactContextBaseJavaModule implements Act
         try {
             this.callback.invoke(h.t(list, this.identifier, this.options, this.reactContext));
         } catch (RuntimeException e10) {
-            this.callback.invoke(h.j(h.f18022d, e10.getMessage()));
+            this.callback.invoke(h.j(h.f18023d, e10.getMessage()));
         } finally {
             this.callback = null;
         }

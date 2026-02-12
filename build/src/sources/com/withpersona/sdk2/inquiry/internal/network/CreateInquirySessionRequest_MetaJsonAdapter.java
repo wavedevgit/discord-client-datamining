@@ -13,19 +13,19 @@ import org.jetbrains.annotations.NotNull;
 public final class CreateInquirySessionRequest_MetaJsonAdapter extends com.squareup.moshi.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20169a;
+    private final m.b f20170a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final com.squareup.moshi.h f20170b;
+    private final com.squareup.moshi.h f20171b;
 
     public CreateInquirySessionRequest_MetaJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("inquiryId");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20169a = a10;
+        this.f20170a = a10;
         com.squareup.moshi.h f10 = moshi.f(String.class, x0.d(), "inquiryId");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20170b = f10;
+        this.f20171b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -35,9 +35,9 @@ public final class CreateInquirySessionRequest_MetaJsonAdapter extends com.squar
         reader.u();
         String str = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20169a);
+            int J = reader.J(this.f20170a);
             if (J != -1) {
-                if (J == 0 && (str = (String) this.f20170b.fromJson(reader)) == null) {
+                if (J == 0 && (str = (String) this.f20171b.fromJson(reader)) == null) {
                     throw dn.c.x("inquiryId", "inquiryId", reader);
                 }
             } else {
@@ -59,7 +59,7 @@ public final class CreateInquirySessionRequest_MetaJsonAdapter extends com.squar
         if (meta != null) {
             writer.i();
             writer.J("inquiryId");
-            this.f20170b.toJson(writer, meta.a());
+            this.f20171b.toJson(writer, meta.a());
             writer.s();
             return;
         }

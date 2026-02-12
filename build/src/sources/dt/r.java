@@ -8,30 +8,30 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class r {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f21912e = new a(null);
+    public static final a f21913e = new a(null);
 
     /* renamed from: f  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f21913f = AtomicReferenceFieldUpdater.newUpdater(r.class, Object.class, "_next$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f21914f = AtomicReferenceFieldUpdater.newUpdater(r.class, Object.class, "_next$volatile");
 
     /* renamed from: g  reason: collision with root package name */
-    private static final /* synthetic */ AtomicLongFieldUpdater f21914g = AtomicLongFieldUpdater.newUpdater(r.class, "_state$volatile");
+    private static final /* synthetic */ AtomicLongFieldUpdater f21915g = AtomicLongFieldUpdater.newUpdater(r.class, "_state$volatile");
 
     /* renamed from: h  reason: collision with root package name */
-    public static final e0 f21915h = new e0("REMOVE_FROZEN");
+    public static final e0 f21916h = new e0("REMOVE_FROZEN");
     private volatile /* synthetic */ Object _next$volatile;
     private volatile /* synthetic */ long _state$volatile;
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f21916a;
+    private final int f21917a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f21917b;
+    private final boolean f21918b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f21918c;
+    private final int f21919c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final /* synthetic */ AtomicReferenceArray f21919d;
+    private final /* synthetic */ AtomicReferenceArray f21920d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -66,19 +66,19 @@ public final class r {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f21920a;
+        public final int f21921a;
 
         public b(int i10) {
-            this.f21920a = i10;
+            this.f21921a = i10;
         }
     }
 
     public r(int i10, boolean z10) {
-        this.f21916a = i10;
-        this.f21917b = z10;
+        this.f21917a = i10;
+        this.f21918b = z10;
         int i11 = i10 - 1;
-        this.f21918c = i11;
-        this.f21919d = new AtomicReferenceArray(i10);
+        this.f21919c = i11;
+        this.f21920d = new AtomicReferenceArray(i10);
         if (i11 <= 1073741823) {
             if ((i10 & i11) == 0) {
                 return;
@@ -89,53 +89,53 @@ public final class r {
     }
 
     private final r b(long j10) {
-        r rVar = new r(this.f21916a * 2, this.f21917b);
+        r rVar = new r(this.f21917a * 2, this.f21918b);
         int i10 = (int) (1073741823 & j10);
         int i11 = (int) ((1152921503533105152L & j10) >> 30);
         while (true) {
-            int i12 = this.f21918c;
+            int i12 = this.f21919c;
             if ((i10 & i12) != (i12 & i11)) {
-                Object obj = f().get(this.f21918c & i10);
+                Object obj = f().get(this.f21919c & i10);
                 if (obj == null) {
                     obj = new b(i10);
                 }
-                rVar.f().set(rVar.f21918c & i10, obj);
+                rVar.f().set(rVar.f21919c & i10, obj);
                 i10++;
             } else {
-                f21914g.set(rVar, f21912e.d(j10, 1152921504606846976L));
+                f21915g.set(rVar, f21913e.d(j10, 1152921504606846976L));
                 return rVar;
             }
         }
     }
 
     private final r c(long j10) {
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f21913f;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f21914f;
         while (true) {
             r rVar = (r) atomicReferenceFieldUpdater.get(this);
             if (rVar != null) {
                 return rVar;
             }
-            androidx.concurrent.futures.b.a(f21913f, this, null, b(j10));
+            androidx.concurrent.futures.b.a(f21914f, this, null, b(j10));
         }
     }
 
     private final r e(int i10, Object obj) {
-        Object obj2 = f().get(this.f21918c & i10);
-        if ((obj2 instanceof b) && ((b) obj2).f21920a == i10) {
-            f().set(i10 & this.f21918c, obj);
+        Object obj2 = f().get(this.f21919c & i10);
+        if ((obj2 instanceof b) && ((b) obj2).f21921a == i10) {
+            f().set(i10 & this.f21919c, obj);
             return this;
         }
         return null;
     }
 
     private final /* synthetic */ AtomicReferenceArray f() {
-        return this.f21919d;
+        return this.f21920d;
     }
 
     private final long k() {
         long j10;
         long j11;
-        AtomicLongFieldUpdater atomicLongFieldUpdater = f21914g;
+        AtomicLongFieldUpdater atomicLongFieldUpdater = f21915g;
         do {
             j10 = atomicLongFieldUpdater.get(this);
             if ((j10 & 1152921504606846976L) != 0) {
@@ -149,40 +149,40 @@ public final class r {
     private final r n(int i10, int i11) {
         long j10;
         int i12;
-        AtomicLongFieldUpdater atomicLongFieldUpdater = f21914g;
+        AtomicLongFieldUpdater atomicLongFieldUpdater = f21915g;
         do {
             j10 = atomicLongFieldUpdater.get(this);
             i12 = (int) (1073741823 & j10);
             if ((1152921504606846976L & j10) != 0) {
                 return l();
             }
-        } while (!f21914g.compareAndSet(this, j10, f21912e.b(j10, i11)));
-        f().set(this.f21918c & i12, null);
+        } while (!f21915g.compareAndSet(this, j10, f21913e.b(j10, i11)));
+        f().set(this.f21919c & i12, null);
         return null;
     }
 
     public final int a(Object obj) {
-        AtomicLongFieldUpdater atomicLongFieldUpdater = f21914g;
+        AtomicLongFieldUpdater atomicLongFieldUpdater = f21915g;
         while (true) {
             long j10 = atomicLongFieldUpdater.get(this);
             if ((3458764513820540928L & j10) != 0) {
-                return f21912e.a(j10);
+                return f21913e.a(j10);
             }
             int i10 = (int) (1073741823 & j10);
             int i11 = (int) ((1152921503533105152L & j10) >> 30);
-            int i12 = this.f21918c;
+            int i12 = this.f21919c;
             if (((i11 + 2) & i12) == (i10 & i12)) {
                 return 1;
             }
-            if (!this.f21917b && f().get(i11 & i12) != null) {
-                int i13 = this.f21916a;
+            if (!this.f21918b && f().get(i11 & i12) != null) {
+                int i13 = this.f21917a;
                 if (i13 < 1024 || ((i11 - i10) & 1073741823) > (i13 >> 1)) {
                     break;
                 }
-            } else if (f21914g.compareAndSet(this, j10, f21912e.c(j10, (i11 + 1) & 1073741823))) {
+            } else if (f21915g.compareAndSet(this, j10, f21913e.c(j10, (i11 + 1) & 1073741823))) {
                 f().set(i11 & i12, obj);
                 r rVar = this;
-                while ((f21914g.get(rVar) & 1152921504606846976L) != 0 && (rVar = rVar.l().e(i11, obj)) != null) {
+                while ((f21915g.get(rVar) & 1152921504606846976L) != 0 && (rVar = rVar.l().e(i11, obj)) != null) {
                 }
                 return 0;
             }
@@ -192,7 +192,7 @@ public final class r {
 
     public final boolean d() {
         long j10;
-        AtomicLongFieldUpdater atomicLongFieldUpdater = f21914g;
+        AtomicLongFieldUpdater atomicLongFieldUpdater = f21915g;
         do {
             j10 = atomicLongFieldUpdater.get(this);
             if ((j10 & 2305843009213693952L) != 0) {
@@ -206,12 +206,12 @@ public final class r {
     }
 
     public final int g() {
-        long j10 = f21914g.get(this);
+        long j10 = f21915g.get(this);
         return (((int) ((j10 & 1152921503533105152L) >> 30)) - ((int) (1073741823 & j10))) & 1073741823;
     }
 
     public final boolean j() {
-        long j10 = f21914g.get(this);
+        long j10 = f21915g.get(this);
         if (((int) (1073741823 & j10)) == ((int) ((j10 & 1152921503533105152L) >> 30))) {
             return true;
         }
@@ -223,30 +223,30 @@ public final class r {
     }
 
     public final Object m() {
-        AtomicLongFieldUpdater atomicLongFieldUpdater = f21914g;
+        AtomicLongFieldUpdater atomicLongFieldUpdater = f21915g;
         while (true) {
             long j10 = atomicLongFieldUpdater.get(this);
             if ((1152921504606846976L & j10) != 0) {
-                return f21915h;
+                return f21916h;
             }
             int i10 = (int) (1073741823 & j10);
-            int i11 = this.f21918c;
+            int i11 = this.f21919c;
             if ((((int) ((1152921503533105152L & j10) >> 30)) & i11) == (i11 & i10)) {
                 return null;
             }
-            Object obj = f().get(this.f21918c & i10);
+            Object obj = f().get(this.f21919c & i10);
             if (obj == null) {
-                if (this.f21917b) {
+                if (this.f21918b) {
                     return null;
                 }
             } else if (obj instanceof b) {
                 return null;
             } else {
                 int i12 = (i10 + 1) & 1073741823;
-                if (f21914g.compareAndSet(this, j10, f21912e.b(j10, i12))) {
-                    f().set(this.f21918c & i10, null);
+                if (f21915g.compareAndSet(this, j10, f21913e.b(j10, i12))) {
+                    f().set(this.f21919c & i10, null);
                     return obj;
-                } else if (this.f21917b) {
+                } else if (this.f21918b) {
                     r rVar = this;
                     do {
                         rVar = rVar.n(i10, i12);

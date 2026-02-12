@@ -10,13 +10,13 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class AndroidUIScheduler {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ReactApplicationContext f19418a;
+    private final ReactApplicationContext f19419a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final AtomicBoolean f19419b = new AtomicBoolean(true);
+    private final AtomicBoolean f19420b = new AtomicBoolean(true);
 
     /* renamed from: c  reason: collision with root package name */
-    private final Runnable f19420c = new Runnable() { // from class: com.swmansion.worklets.a
+    private final Runnable f19421c = new Runnable() { // from class: com.swmansion.worklets.a
         @Override // java.lang.Runnable
         public final void run() {
             AndroidUIScheduler.this.d();
@@ -33,19 +33,19 @@ public class AndroidUIScheduler {
 
         @Override // com.facebook.react.bridge.GuardedRunnable
         public void runGuarded() {
-            AndroidUIScheduler.this.f19420c.run();
+            AndroidUIScheduler.this.f19421c.run();
         }
     }
 
     public AndroidUIScheduler(ReactApplicationContext reactApplicationContext) {
-        this.f19418a = reactApplicationContext;
+        this.f19419a = reactApplicationContext;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void d() {
-        synchronized (this.f19419b) {
+        synchronized (this.f19420b) {
             try {
-                if (this.f19419b.get()) {
+                if (this.f19420b.get()) {
                     triggerUI();
                 }
             } catch (Throwable th2) {
@@ -58,12 +58,12 @@ public class AndroidUIScheduler {
 
     @gb.a
     private void scheduleTriggerOnUI() {
-        UiThreadUtil.runOnUiThread(new a(this.f19418a.getExceptionHandler()));
+        UiThreadUtil.runOnUiThread(new a(this.f19419a.getExceptionHandler()));
     }
 
     public void c() {
-        synchronized (this.f19419b) {
-            this.f19419b.set(false);
+        synchronized (this.f19420b) {
+            this.f19420b.set(false);
             invalidate();
         }
     }

@@ -264,7 +264,7 @@ public final class ReactionView extends LinearLayout {
             ViewBackgroundUtilsKt.setBackgroundRectangle(this, colorCompat, i10, Integer.valueOf(colorCompat2), STROKE_WIDTH);
             return;
         }
-        ViewBackgroundUtilsKt.setBackgroundRectangle(this, (reactionsTheme == null || (reactionBackgroundColor = reactionsTheme.getReactionBackgroundColor()) == null) ? ThemeManagerKt.getTheme().getBackgroundSurfaceHigh() : reactionBackgroundColor.intValue(), CORNER_RADIUS, reactionsTheme != null ? reactionsTheme.getReactionBorderColor() : null, STROKE_WIDTH);
+        ViewBackgroundUtilsKt.setBackgroundRectangle(this, (reactionsTheme == null || (reactionBackgroundColor = reactionsTheme.getReactionBackgroundColor()) == null) ? ThemeManagerKt.getTheme().getBackgroundModStrong() : reactionBackgroundColor.intValue(), CORNER_RADIUS, reactionsTheme != null ? reactionsTheme.getReactionBorderColor() : null, STROKE_WIDTH);
     }
 
     private final void configureCount(int i10, boolean z10, boolean z11) {
@@ -337,7 +337,7 @@ public final class ReactionView extends LinearLayout {
     public static final Unit configureLabels$lambda$0(RenderContext i18nFormat) {
         Intrinsics.checkNotNullParameter(i18nFormat, "$this$i18nFormat");
         i18nFormat.getArgs().put("emojiPreview", "{emojiPreview}");
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     private final void configureTextColor(BurstColorPalette burstColorPalette) {
@@ -466,7 +466,7 @@ public final class ReactionView extends LinearLayout {
     }
 
     private final void configureBackground(boolean z10, BurstColorPalette burstColorPalette) {
-        int backgroundSurfaceHigh;
+        int backgroundModStrong;
         int colorCompat;
         String accentColor;
         String backgroundColor;
@@ -478,13 +478,13 @@ public final class ReactionView extends LinearLayout {
         Integer valueOf = (burstColorPalette == null || (backgroundColor = burstColorPalette.getBackgroundColor()) == null) ? null : Integer.valueOf(r1.c.l(Color.parseColor(backgroundColor), i10));
         Integer valueOf2 = (burstColorPalette == null || (accentColor = burstColorPalette.getAccentColor()) == null) ? null : Integer.valueOf(Color.parseColor(accentColor));
         if (valueOf != null) {
-            backgroundSurfaceHigh = valueOf.intValue();
+            backgroundModStrong = valueOf.intValue();
         } else if (z10) {
             Context context = getContext();
             Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-            backgroundSurfaceHigh = ColorUtilsKt.getColorCompat(context, com.discord.theme.R.color.brand_new_500_alpha_20);
+            backgroundModStrong = ColorUtilsKt.getColorCompat(context, com.discord.theme.R.color.brand_new_500_alpha_20);
         } else {
-            backgroundSurfaceHigh = ThemeManagerKt.getTheme().getBackgroundSurfaceHigh();
+            backgroundModStrong = ThemeManagerKt.getTheme().getBackgroundModStrong();
         }
         if (z10) {
             if (valueOf2 == null) {
@@ -496,6 +496,6 @@ public final class ReactionView extends LinearLayout {
             }
             num = Integer.valueOf(colorCompat);
         }
-        ViewBackgroundUtilsKt.setBackgroundRectangle(this, backgroundSurfaceHigh, CORNER_RADIUS, num, STROKE_WIDTH);
+        ViewBackgroundUtilsKt.setBackgroundRectangle(this, backgroundModStrong, CORNER_RADIUS, num, STROKE_WIDTH);
     }
 }

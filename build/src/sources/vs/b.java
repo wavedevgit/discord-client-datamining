@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class b implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f51826d;
+    private final Map f51827d;
 
     public b(Map map) {
-        this.f51826d = map;
+        this.f51827d = map;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         int j10;
-        j10 = f.j(this.f51826d);
+        j10 = f.j(this.f51827d);
         return Integer.valueOf(j10);
     }
 }

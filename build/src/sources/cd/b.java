@@ -189,7 +189,7 @@ public abstract class b {
             this.f8061c = h0Var;
             h0Var.U(12);
             int L = h0Var.L();
-            if ("audio/raw".equals(format.f12304w)) {
+            if ("audio/raw".equals(format.f12305w)) {
                 int i02 = w0.i0(format.L, format.J);
                 if (L == 0 || L % i02 != 0) {
                     y.i("AtomParsers", "Audio sample size mismatch. stsd sample size: " + i02 + ", stsz sample size: " + L);
@@ -500,15 +500,15 @@ public abstract class b {
                 uc.n.a(z18, null);
                 h0Var.U(f13 + 8);
                 pe.a b10 = pe.a.b(h0Var);
-                list2 = b10.f41548a;
-                eVar2.f8057c = b10.f41549b;
+                list2 = b10.f41549a;
+                eVar2.f8057c = b10.f41550b;
                 if (!z19) {
-                    f12 = b10.f41555h;
+                    f12 = b10.f41556h;
                 }
-                str6 = b10.f41556i;
-                i20 = b10.f41552e;
-                i21 = b10.f41553f;
-                i22 = b10.f41554g;
+                str6 = b10.f41557i;
+                i20 = b10.f41553e;
+                i21 = b10.f41554f;
+                i22 = b10.f41555g;
                 str4 = "video/avc";
             } else if (q11 == 1752589123) {
                 if (str == null) {
@@ -519,15 +519,15 @@ public abstract class b {
                 uc.n.a(z17, null);
                 h0Var.U(f13 + 8);
                 pe.f a10 = pe.f.a(h0Var);
-                list2 = a10.f41590a;
-                eVar2.f8057c = a10.f41591b;
+                list2 = a10.f41591a;
+                eVar2.f8057c = a10.f41592b;
                 if (!z19) {
-                    f12 = a10.f41597h;
+                    f12 = a10.f41598h;
                 }
-                str6 = a10.f41598i;
-                i20 = a10.f41594e;
-                i21 = a10.f41595f;
-                i22 = a10.f41596g;
+                str6 = a10.f41599i;
+                i20 = a10.f41595e;
+                i21 = a10.f41596f;
+                i22 = a10.f41597g;
                 str4 = "video/hevc";
             } else {
                 if (q11 == 1685480259 || q11 == 1685485123) {
@@ -541,7 +541,7 @@ public abstract class b {
                     i19 = i29;
                     pe.d a11 = pe.d.a(h0Var);
                     if (a11 != null) {
-                        str6 = a11.f41575c;
+                        str6 = a11.f41576c;
                         str = "video/dolby-vision";
                     }
                 } else {
@@ -1370,7 +1370,7 @@ public abstract class b {
             i13 = 0;
         }
         int b10 = gVar.b();
-        String str2 = oVar.f8173f.f12304w;
+        String str2 = oVar.f8173f.f12305w;
         if (b10 != -1 && (("audio/raw".equals(str2) || "audio/g711-mlaw".equals(str2) || "audio/g711-alaw".equals(str2)) && L == 0 && i10 == 0 && i12 == 0)) {
             i14 = 1;
         } else {
@@ -1560,8 +1560,8 @@ public abstract class b {
                 long X03 = w0.X0(j18 - jArr[i13], oVar.f8173f.K, oVar.f8170c);
                 long X04 = w0.X0(j17 - X02, oVar.f8173f.K, oVar.f8170c);
                 if ((X03 != j10 || X04 != j10) && X03 <= 2147483647L && X04 <= 2147483647L) {
-                    vVar.f50707a = (int) X03;
-                    vVar.f50708b = (int) X04;
+                    vVar.f50708a = (int) X03;
+                    vVar.f50709b = (int) X04;
                     w0.Z0(jArr, 1000000L, oVar.f8170c);
                     return new r(oVar, jArr9, iArr13, i18, jArr, iArr2, w0.X0(oVar.f8175h[i13], 1000000L, oVar.f8171d));
                 }

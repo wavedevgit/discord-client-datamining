@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/self_mod/shared/native/ConfirmBlockUserAlert.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun73004: for (var _fun73004_ip = 0;;) switch (_fun73004_ip) {
+        _fun77198: for (var _fun77198_ip = 0;;) switch (_fun77198_ip) {
             case 0:
                 var1 = arg0;
                 var17 = var1.userId;
@@ -226,7 +226,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[2] = var0;
                 var2[3] = var12;
                 var0 = function() { // Environment: var4
-                    _fun73010: for (var _fun73010_ip = 0;;) switch (_fun73010_ip) {
+                    _fun77204: for (var _fun77204_ip = 0;;) switch (_fun77204_ip) {
                         case 0:
                             var2 = _closure2_slot3;
                             var0 = undefined;
@@ -244,8 +244,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = _closure2_slot4;
                             var2 = null;
                             if (!(var2 != var3)) {
-                                _fun73010_ip = 77;
-                                continue _fun73010
+                                _fun77204_ip = 77;
+                                continue _fun77204
                             }
                         case 69:
                             var1 = _closure2_slot4;
@@ -329,10 +329,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.variant = var9;
                 var9 = null;
                 if (!(var9 == var10)) {
-                    _fun73004_ip = 587;
-                    continue _fun73004
+                    _fun77198_ip = 585;
+                    continue _fun77198
                 }
-            case 526:
+            case 524:
                 var15 = _closure1_slot0;
                 var13 = _closure1_slot2;
                 var16 = var13[var17];
@@ -346,7 +346,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = {};
                 var13.name = var21;
                 var10 = var16.bind(var18)(var15, var13);
-            case 587:
+            case 585:
                 var5.children = var10;
                 var5 = var7.bind(var3)(var6, var5);
                 var4[1] = var5;
@@ -379,22 +379,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var9 != var19;
                 var18 = 'destructive';
                 if (!var20) {
-                    _fun73004_ip = 729;
-                    continue _fun73004
+                    _fun77198_ip = 727;
+                    continue _fun77198
                 }
-            case 726:
+            case 724:
                 var18 = var19;
-            case 729:
+            case 727:
                 var8.variant = var18;
                 var13 = var16.bind(var3)(var13, var8);
                 var8 = new Array(2);
                 var8[0] = var13;
                 var9 = var9 != var12;
                 if (!var9) {
-                    _fun73004_ip = 855;
-                    continue _fun73004
+                    _fun77198_ip = 853;
+                    continue _fun77198
                 }
-            case 754:
+            case 752:
                 var12 = _closure1_slot7;
                 var16 = _closure1_slot0;
                 var13 = _closure1_slot2;
@@ -417,7 +417,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = 'secondary';
                 var10.variant = var13;
                 var9 = var12.bind(var3)(var11, var10);
-            case 855:
+            case 853:
                 var8[1] = var9;
                 var5.children = var8;
                 var5 = var7.bind(var3)(var6, var5);
@@ -429,4 +429,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 9118, 33, 1297, 671, 566, 9120, 3237, 8076, 5985, 6570, 3934, 4090, 1234, 3938, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1621, 9740, 33, 1297, 671, 566, 9771, 3237, 8148, 6004, 6586, 3934, 4090, 1234, 3938, 2]);

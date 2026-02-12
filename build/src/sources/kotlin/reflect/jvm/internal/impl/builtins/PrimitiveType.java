@@ -29,22 +29,22 @@ public final class PrimitiveType {
     public static final PrimitiveType SHORT;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ PrimitiveType[] f32129p;
+    private static final /* synthetic */ PrimitiveType[] f32130p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f32130q;
+    private static final /* synthetic */ EnumEntries f32131q;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Name f32131d;
+    private final Name f32132d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Name f32132e;
+    private final Name f32133e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Lazy f32133i;
+    private final Lazy f32134i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Lazy f32134o;
+    private final Lazy f32135o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -72,8 +72,8 @@ public final class PrimitiveType {
         PrimitiveType primitiveType7 = new PrimitiveType("DOUBLE", 7, "Double");
         DOUBLE = primitiveType7;
         PrimitiveType[] a10 = a();
-        f32129p = a10;
-        f32130q = hs.a.a(a10);
+        f32130p = a10;
+        f32131q = hs.a.a(a10);
         Companion = new Companion(null);
         NUMBER_TYPES = x0.i(primitiveType, primitiveType2, primitiveType3, primitiveType4, primitiveType5, primitiveType6, primitiveType7);
     }
@@ -81,13 +81,13 @@ public final class PrimitiveType {
     private PrimitiveType(String str, int i10, String str2) {
         Name identifier = Name.identifier(str2);
         Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");
-        this.f32131d = identifier;
+        this.f32132d = identifier;
         Name identifier2 = Name.identifier(str2 + "Array");
         Intrinsics.checkNotNullExpressionValue(identifier2, "identifier(...)");
-        this.f32132e = identifier2;
+        this.f32133e = identifier2;
         o oVar = o.f6082e;
-        this.f32133i = l.a(oVar, new c(this));
-        this.f32134o = l.a(oVar, new d(this));
+        this.f32134i = l.a(oVar, new c(this));
+        this.f32135o = l.a(oVar, new d(this));
     }
 
     private static final /* synthetic */ PrimitiveType[] a() {
@@ -96,12 +96,12 @@ public final class PrimitiveType {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final FqName f(PrimitiveType primitiveType) {
-        return StandardNames.BUILT_INS_PACKAGE_FQ_NAME.child(primitiveType.f32132e);
+        return StandardNames.BUILT_INS_PACKAGE_FQ_NAME.child(primitiveType.f32133e);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final FqName g(PrimitiveType primitiveType) {
-        return StandardNames.BUILT_INS_PACKAGE_FQ_NAME.child(primitiveType.f32131d);
+        return StandardNames.BUILT_INS_PACKAGE_FQ_NAME.child(primitiveType.f32132d);
     }
 
     public static PrimitiveType valueOf(String str) {
@@ -109,26 +109,26 @@ public final class PrimitiveType {
     }
 
     public static PrimitiveType[] values() {
-        return (PrimitiveType[]) f32129p.clone();
+        return (PrimitiveType[]) f32130p.clone();
     }
 
     @NotNull
     public final FqName getArrayTypeFqName() {
-        return (FqName) this.f32134o.getValue();
+        return (FqName) this.f32135o.getValue();
     }
 
     @NotNull
     public final Name getArrayTypeName() {
-        return this.f32132e;
+        return this.f32133e;
     }
 
     @NotNull
     public final FqName getTypeFqName() {
-        return (FqName) this.f32133i.getValue();
+        return (FqName) this.f32134i.getValue();
     }
 
     @NotNull
     public final Name getTypeName() {
-        return this.f32131d;
+        return this.f32132d;
     }
 }

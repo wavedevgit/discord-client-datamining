@@ -3,7 +3,7 @@ package gi;
 public final /* synthetic */ class h {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ h f25708a = new h();
+    public static final /* synthetic */ h f25709a = new h();
 
     private /* synthetic */ h() {
     }

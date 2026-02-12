@@ -9,15 +9,15 @@ import java.util.Map;
 public final class i5 extends l5 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f14703d;
+    private final int f14704d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final l1 f14704e;
+    private final l1 f14705e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public i5(l1 l1Var) {
         l1Var.getClass();
-        this.f14704e = l1Var;
+        this.f14705e = l1Var;
         c2 e10 = l1Var.c().e();
         int i10 = 0;
         while (e10.hasNext()) {
@@ -30,7 +30,7 @@ public final class i5 extends l5 {
             }
         }
         int i11 = i10 + 1;
-        this.f14703d = i11;
+        this.f14704d = i11;
         if (i11 <= 8) {
             return;
         }
@@ -39,7 +39,7 @@ public final class i5 extends l5 {
 
     @Override // com.google.android.gms.internal.fido.l5
     protected final int a() {
-        return this.f14703d;
+        return this.f14704d;
     }
 
     @Override // java.lang.Comparable
@@ -53,12 +53,12 @@ public final class i5 extends l5 {
             size = l5.e((byte) -96);
         } else {
             i5 i5Var = (i5) l5Var;
-            if (this.f14704e.size() != i5Var.f14704e.size()) {
-                size = this.f14704e.size();
-                size2 = i5Var.f14704e.size();
+            if (this.f14705e.size() != i5Var.f14705e.size()) {
+                size = this.f14705e.size();
+                size2 = i5Var.f14705e.size();
             } else {
-                c2 e10 = this.f14704e.c().e();
-                c2 e11 = i5Var.f14704e.c().e();
+                c2 e10 = this.f14705e.c().e();
+                c2 e11 = i5Var.f14705e.c().e();
                 do {
                     if (!e10.hasNext() && !e11.hasNext()) {
                         return 0;
@@ -84,23 +84,23 @@ public final class i5 extends l5 {
         if (obj == null || i5.class != obj.getClass()) {
             return false;
         }
-        return this.f14704e.equals(((i5) obj).f14704e);
+        return this.f14705e.equals(((i5) obj).f14705e);
     }
 
     public final int hashCode() {
-        return Arrays.hashCode(new Object[]{Integer.valueOf(l5.e((byte) -96)), this.f14704e});
+        return Arrays.hashCode(new Object[]{Integer.valueOf(l5.e((byte) -96)), this.f14705e});
     }
 
     public final l1 n() {
-        return this.f14704e;
+        return this.f14705e;
     }
 
     public final String toString() {
-        if (this.f14704e.isEmpty()) {
+        if (this.f14705e.isEmpty()) {
             return "{}";
         }
         LinkedHashMap linkedHashMap = new LinkedHashMap();
-        c2 e10 = this.f14704e.c().e();
+        c2 e10 = this.f14705e.c().e();
         while (e10.hasNext()) {
             Map.Entry entry = (Map.Entry) e10.next();
             linkedHashMap.put(((l5) entry.getKey()).toString().replace(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, "\n  "), ((l5) entry.getValue()).toString().replace(ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE, "\n  "));

@@ -52,10 +52,10 @@ public final class BackgroundHighlight {
 
     public static final /* synthetic */ void write$Self$chat_release(BackgroundHighlight backgroundHighlight, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
         if (compositeEncoder.z(serialDescriptor, 0) || backgroundHighlight.backgroundColor != null) {
-            compositeEncoder.o(serialDescriptor, 0, p0.f50048a, backgroundHighlight.backgroundColor);
+            compositeEncoder.o(serialDescriptor, 0, p0.f50049a, backgroundHighlight.backgroundColor);
         }
         if (compositeEncoder.z(serialDescriptor, 1) || backgroundHighlight.gutterColor != null) {
-            compositeEncoder.o(serialDescriptor, 1, p0.f50048a, backgroundHighlight.gutterColor);
+            compositeEncoder.o(serialDescriptor, 1, p0.f50049a, backgroundHighlight.gutterColor);
         }
     }
 

@@ -5,92 +5,92 @@ import lj.d;
 final class a extends d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f35856a;
+    private final String f35857a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f35857b;
+    private final String f35858b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f35858c;
+    private final String f35859c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final f f35859d;
+    private final f f35860d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final d.b f35860e;
+    private final d.b f35861e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class b extends d.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private String f35861a;
+        private String f35862a;
 
         /* renamed from: b  reason: collision with root package name */
-        private String f35862b;
+        private String f35863b;
 
         /* renamed from: c  reason: collision with root package name */
-        private String f35863c;
+        private String f35864c;
 
         /* renamed from: d  reason: collision with root package name */
-        private f f35864d;
+        private f f35865d;
 
         /* renamed from: e  reason: collision with root package name */
-        private d.b f35865e;
+        private d.b f35866e;
 
         @Override // lj.d.a
         public d a() {
-            return new a(this.f35861a, this.f35862b, this.f35863c, this.f35864d, this.f35865e);
+            return new a(this.f35862a, this.f35863b, this.f35864c, this.f35865d, this.f35866e);
         }
 
         @Override // lj.d.a
         public d.a b(f fVar) {
-            this.f35864d = fVar;
+            this.f35865d = fVar;
             return this;
         }
 
         @Override // lj.d.a
         public d.a c(String str) {
-            this.f35862b = str;
+            this.f35863b = str;
             return this;
         }
 
         @Override // lj.d.a
         public d.a d(String str) {
-            this.f35863c = str;
+            this.f35864c = str;
             return this;
         }
 
         @Override // lj.d.a
         public d.a e(d.b bVar) {
-            this.f35865e = bVar;
+            this.f35866e = bVar;
             return this;
         }
 
         @Override // lj.d.a
         public d.a f(String str) {
-            this.f35861a = str;
+            this.f35862a = str;
             return this;
         }
     }
 
     @Override // lj.d
     public f b() {
-        return this.f35859d;
+        return this.f35860d;
     }
 
     @Override // lj.d
     public String c() {
-        return this.f35857b;
+        return this.f35858b;
     }
 
     @Override // lj.d
     public String d() {
-        return this.f35858c;
+        return this.f35859c;
     }
 
     @Override // lj.d
     public d.b e() {
-        return this.f35860e;
+        return this.f35861e;
     }
 
     public boolean equals(Object obj) {
@@ -99,15 +99,15 @@ final class a extends d {
         }
         if (obj instanceof d) {
             d dVar = (d) obj;
-            String str = this.f35856a;
+            String str = this.f35857a;
             if (str != null ? str.equals(dVar.f()) : dVar.f() == null) {
-                String str2 = this.f35857b;
+                String str2 = this.f35858b;
                 if (str2 != null ? str2.equals(dVar.c()) : dVar.c() == null) {
-                    String str3 = this.f35858c;
+                    String str3 = this.f35859c;
                     if (str3 != null ? str3.equals(dVar.d()) : dVar.d() == null) {
-                        f fVar = this.f35859d;
+                        f fVar = this.f35860d;
                         if (fVar != null ? fVar.equals(dVar.b()) : dVar.b() == null) {
-                            d.b bVar = this.f35860e;
+                            d.b bVar = this.f35861e;
                             if (bVar != null ? bVar.equals(dVar.e()) : dVar.e() == null) {
                                 return true;
                             }
@@ -121,7 +121,7 @@ final class a extends d {
 
     @Override // lj.d
     public String f() {
-        return this.f35856a;
+        return this.f35857a;
     }
 
     public int hashCode() {
@@ -129,7 +129,7 @@ final class a extends d {
         int hashCode2;
         int hashCode3;
         int hashCode4;
-        String str = this.f35856a;
+        String str = this.f35857a;
         int i10 = 0;
         if (str == null) {
             hashCode = 0;
@@ -137,28 +137,28 @@ final class a extends d {
             hashCode = str.hashCode();
         }
         int i11 = (hashCode ^ 1000003) * 1000003;
-        String str2 = this.f35857b;
+        String str2 = this.f35858b;
         if (str2 == null) {
             hashCode2 = 0;
         } else {
             hashCode2 = str2.hashCode();
         }
         int i12 = (i11 ^ hashCode2) * 1000003;
-        String str3 = this.f35858c;
+        String str3 = this.f35859c;
         if (str3 == null) {
             hashCode3 = 0;
         } else {
             hashCode3 = str3.hashCode();
         }
         int i13 = (i12 ^ hashCode3) * 1000003;
-        f fVar = this.f35859d;
+        f fVar = this.f35860d;
         if (fVar == null) {
             hashCode4 = 0;
         } else {
             hashCode4 = fVar.hashCode();
         }
         int i14 = (i13 ^ hashCode4) * 1000003;
-        d.b bVar = this.f35860e;
+        d.b bVar = this.f35861e;
         if (bVar != null) {
             i10 = bVar.hashCode();
         }
@@ -166,14 +166,14 @@ final class a extends d {
     }
 
     public String toString() {
-        return "InstallationResponse{uri=" + this.f35856a + ", fid=" + this.f35857b + ", refreshToken=" + this.f35858c + ", authToken=" + this.f35859d + ", responseCode=" + this.f35860e + "}";
+        return "InstallationResponse{uri=" + this.f35857a + ", fid=" + this.f35858b + ", refreshToken=" + this.f35859c + ", authToken=" + this.f35860d + ", responseCode=" + this.f35861e + "}";
     }
 
     private a(String str, String str2, String str3, f fVar, d.b bVar) {
-        this.f35856a = str;
-        this.f35857b = str2;
-        this.f35858c = str3;
-        this.f35859d = fVar;
-        this.f35860e = bVar;
+        this.f35857a = str;
+        this.f35858b = str2;
+        this.f35859c = str3;
+        this.f35860d = fVar;
+        this.f35861e = bVar;
     }
 }

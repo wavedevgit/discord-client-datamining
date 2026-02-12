@@ -6,10 +6,10 @@ import np.e;
 public final class g implements e.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final f f38239a;
+    private final f f38240a;
 
     g(f fVar) {
-        this.f38239a = fVar;
+        this.f38240a = fVar;
     }
 
     public static h b(f fVar) {
@@ -18,6 +18,6 @@ public final class g implements e.a {
 
     @Override // np.e.a
     public e a(String str) {
-        return this.f38239a.b(str);
+        return this.f38240a.b(str);
     }
 }

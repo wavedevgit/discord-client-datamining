@@ -54,7 +54,7 @@ public class NavigationMenuItemView extends d implements k.a {
 
     private StateListDrawable A() {
         TypedValue typedValue = new TypedValue();
-        if (getContext().getTheme().resolveAttribute(f.a.f23295t, typedValue, true)) {
+        if (getContext().getTheme().resolveAttribute(f.a.f23296t, typedValue, true)) {
             StateListDrawable stateListDrawable = new StateListDrawable();
             stateListDrawable.addState(R, new ColorDrawable(typedValue.data));
             stateListDrawable.addState(ViewGroup.EMPTY_STATE_SET, new ColorDrawable(0));

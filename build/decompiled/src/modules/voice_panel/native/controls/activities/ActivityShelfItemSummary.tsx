@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
-    var10 = metroImportDefault;
+    var11 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var _closure1_slot1 = var10;
+    var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
         var0 = arg0;
@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var _closure1_slot8 = var0;
+    var _closure1_slot9 = var0;
     var0 = global;
     var7 = var0.Object;
     var6 = var7.defineProperty;
@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = 0;
     var3 = var5[var0];
     var0 = undefined;
-    var3 = var10.bind(var0)(var3);
+    var3 = var11.bind(var0)(var3);
     var _closure1_slot3 = var3;
     var3 = 1;
     var6 = var5[var3];
@@ -72,16 +72,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 3;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var6 = var3.jsx;
-    var _closure1_slot5 = var6;
+    var7 = var3.jsx;
+    var _closure1_slot5 = var7;
     var3 = var3.jsxs;
     var _closure1_slot6 = var3;
     var3 = 4;
     var3 = var5[var3];
-    var7 = var4.bind(var0)(var3);
-    var6 = var7.createStyles;
+    var8 = var4.bind(var0)(var3);
+    var6 = var8.createStyles;
     var3 = {};
-    var8 = {
+    var9 = {
         'position': 'absolute',
         'width': '100%',
         'height': '100%',
@@ -89,44 +89,44 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'alignItems': 'center',
         'justifyContent': 'center'
     };
-    var3.ongoingActivityContainer = var8;
-    var8 = {
+    var3.ongoingActivityContainer = var9;
+    var9 = {
         'paddingHorizontal': 12,
         'paddingVertical': 4,
         'borderRadius': null,
         'backgroundColor': null,
         'marginBottom': 8
     };
-    var9 = 5;
-    var11 = var5[var9];
-    var11 = var10.bind(var0)(var11);
-    var11 = var11.radii;
-    var11 = var11.round;
-    var8.borderRadius = var11;
-    var11 = 6;
-    var11 = var5[var11];
-    var14 = var4.bind(var0)(var11);
-    var13 = var14.hexWithOpacity;
-    var11 = var5[var9];
-    var11 = var10.bind(var0)(var11);
-    var11 = var11.unsafe_rawColors;
-    var12 = var11.BLACK;
-    var11 = 0.64;
-    var11 = var13.bind(var14)(var12, var11);
-    var8.backgroundColor = var11;
-    var3.overlayActivityName = var8;
-    var8 = {};
-    var9 = var5[var9];
-    var9 = var10.bind(var0)(var9);
-    var9 = var9.colors;
-    var9 = var9.MOBILE_TEXT_HEADING_PRIMARY;
-    var8.color = var9;
-    var3.overlayActivityNameText = var8;
-    var8 = {};
-    var9 = 'transparent';
-    var8.color = var9;
-    var3.loadingTextColor = var8;
-    var8 = {
+    var10 = 5;
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
+    var12 = var12.radii;
+    var12 = var12.round;
+    var9.borderRadius = var12;
+    var12 = 6;
+    var12 = var5[var12];
+    var15 = var4.bind(var0)(var12);
+    var14 = var15.hexWithOpacity;
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
+    var12 = var12.unsafe_rawColors;
+    var13 = var12.BLACK;
+    var12 = 0.64;
+    var12 = var14.bind(var15)(var13, var12);
+    var9.backgroundColor = var12;
+    var3.overlayActivityName = var9;
+    var9 = {};
+    var10 = var5[var10];
+    var10 = var11.bind(var0)(var10);
+    var10 = var10.colors;
+    var10 = var10.MOBILE_TEXT_HEADING_PRIMARY;
+    var9.color = var10;
+    var3.overlayActivityNameText = var9;
+    var9 = {};
+    var10 = 'transparent';
+    var9.color = var10;
+    var3.loadingTextColor = var9;
+    var9 = {
         'flex': 1,
         'flexShrink': 1,
         'flexGrow': 0,
@@ -134,9 +134,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'alignItems': 'center',
         'top': 4294967284
     };
-    var3.ellipsis = var8;
-    var3 = var6.bind(var7)(var3);
+    var3.ellipsis = var9;
+    var3 = var6.bind(var8)(var3);
     var _closure1_slot7 = var3;
+    var3 = 10;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.Ellipsis;
+    var3 = {
+        'variant': 'active',
+        'size': 'md'
+    };
+    var3 = var7.bind(var0)(var6, var3);
+    var _closure1_slot8 = var3;
     var3 = 14;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -144,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_panel/native/controls/activities/ActivityShelfItemSummary.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun111969: for (var _fun111969_ip = 0;;) switch (_fun111969_ip) {
+        _fun111994: for (var _fun111994_ip = 0;;) switch (_fun111994_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.channelId;
@@ -153,8 +163,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var0.submitting;
                 var3 = undefined;
                 if (!(var12 === var3)) {
-                    _fun111969_ip = 33;
-                    continue _fun111969
+                    _fun111994_ip = 33;
+                    continue _fun111994
                 }
             case 31:
                 var12 = false;
@@ -163,7 +173,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var0.bind(var3)();
                 var7 = _closure1_slot0;
                 var15 = _closure1_slot2;
-                var0 = 10;
+                var0 = 11;
                 var0 = var15[var0];
                 var2 = var7.bind(var3)(var0);
                 var1 = var2.useLoadingStyles;
@@ -185,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var13.overlayActivityName;
                 var4.style = var6;
                 var10 = _closure1_slot5;
-                var6 = 11;
+                var6 = 12;
                 var6 = var15[var6];
                 var6 = var7.bind(var3)(var6);
                 var7 = var6.Text;
@@ -195,13 +205,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     'lineClamp': 2
                 };
                 if (var12) {
-                    _fun111969_ip = 184;
-                    continue _fun111969
+                    _fun111994_ip = 184;
+                    continue _fun111994
                 }
             case 176:
                 var15 = var13.overlayActivityNameText;
-                _fun111969_ip = 190;
-                continue _fun111969;
+                _fun111994_ip = 190;
+                continue _fun111994;
             case 184:
                 var15 = var13.loadingTextColor;
             case 190:
@@ -213,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = _closure1_slot5;
                 var10 = _closure1_slot1;
                 var15 = _closure1_slot2;
-                var7 = 12;
+                var7 = 13;
                 var7 = var15[var7];
                 var7 = var10.bind(var3)(var7);
                 var10 = var7.View;
@@ -224,23 +234,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13[1] = var14;
                 var7.style = var13;
                 if (!var12) {
-                    _fun111969_ip = 320;
-                    continue _fun111969
+                    _fun111994_ip = 274;
+                    continue _fun111994
                 }
             case 270:
-                var15 = _closure1_slot5;
-                var14 = _closure1_slot0;
-                var16 = _closure1_slot2;
-                var13 = 13;
-                var13 = var16[var13];
-                var13 = var14.bind(var3)(var13);
-                var14 = var13.Ellipsis;
-                var13 = {
-                    'variant': 'active',
-                    'size': 'md'
-                };
-                var12 = var15.bind(var3)(var14, var13);
-            case 320:
+                var12 = _closure1_slot8;
+            case 274:
                 var7.children = var12;
                 var7 = var11.bind(var3)(var10, var7);
                 var6[1] = var7;
@@ -249,7 +248,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(2);
                 var4[0] = var6;
                 var7 = _closure1_slot5;
-                var6 = _closure1_slot8;
+                var6 = _closure1_slot9;
                 var5 = {};
                 var5.channelId = var9;
                 var5.applicationId = var8;
@@ -262,4 +261,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 3241, 14374, 8734, 5516, 4101, 4886, 3717, 4108, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 3241, 14309, 9895, 5514, 4108, 4101, 4852, 3717, 2]);

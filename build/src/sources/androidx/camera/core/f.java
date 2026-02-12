@@ -114,7 +114,7 @@ public final class f extends x1 {
         }
 
         public c h(z zVar) {
-            if (Objects.equals(z.f54274d, zVar)) {
+            if (Objects.equals(z.f54275d, zVar)) {
                 a().V(h1.f77i, zVar);
                 return this;
             }
@@ -196,9 +196,9 @@ public final class f extends x1 {
         static {
             Size size = new Size(DiscordVideoMediaSource.DEFAULT_WIDTH, DiscordVideoMediaSource.DEFAULT_HEIGHT);
             f2110a = size;
-            z zVar = z.f54274d;
+            z zVar = z.f54275d;
             f2111b = zVar;
-            m0.c a10 = new c.a().d(m0.a.f36090c).f(new m0.d(i0.d.f27744c, 1)).a();
+            m0.c a10 = new c.a().d(m0.a.f36091c).f(new m0.d(i0.d.f27745c, 1)).a();
             f2112c = a10;
             f2113d = new c().g(size).k(1).l(0).j(a10).h(zVar).b();
         }

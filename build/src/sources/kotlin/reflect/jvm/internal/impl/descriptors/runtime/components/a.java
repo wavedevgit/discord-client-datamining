@@ -24,7 +24,7 @@ import kotlin.reflect.jvm.internal.impl.resolve.jvm.JvmPrimitiveType;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f32592a = new a();
+    public static final a f32593a = new a();
 
     private a() {
     }
@@ -61,7 +61,7 @@ public final class a {
         while (it.hasNext()) {
             Constructor constructor = (Constructor) it.next();
             Name name = SpecialNames.INIT;
-            b bVar = b.f32593a;
+            b bVar = b.f32594a;
             Intrinsics.checkNotNull(constructor);
             KotlinJvmBinaryClass.MethodAnnotationVisitor visitMethod = memberVisitor.visitMethod(name, bVar.a(constructor));
             if (visitMethod != null) {
@@ -90,7 +90,7 @@ public final class a {
                             Intrinsics.checkNotNull(annotation2);
                             KotlinJvmBinaryClass.AnnotationArgumentVisitor visitParameterAnnotation = visitMethod.visitParameterAnnotation(i10 + length, classId, new ReflectAnnotationSource(annotation2));
                             if (visitParameterAnnotation != null) {
-                                f32592a.h(visitParameterAnnotation, annotation2, b10);
+                                f32593a.h(visitParameterAnnotation, annotation2, b10);
                             }
                         }
                     }
@@ -106,7 +106,7 @@ public final class a {
             Field field = (Field) it.next();
             Name identifier = Name.identifier(field.getName());
             Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");
-            b bVar = b.f32593a;
+            b bVar = b.f32594a;
             Intrinsics.checkNotNull(field);
             KotlinJvmBinaryClass.AnnotationVisitor visitField = memberVisitor.visitField(identifier, bVar.b(field), null);
             if (visitField != null) {
@@ -127,7 +127,7 @@ public final class a {
             Method method = (Method) it.next();
             Name identifier = Name.identifier(method.getName());
             Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");
-            b bVar = b.f32593a;
+            b bVar = b.f32594a;
             Intrinsics.checkNotNull(method);
             KotlinJvmBinaryClass.MethodAnnotationVisitor visitMethod = memberVisitor.visitMethod(identifier, bVar.c(method));
             if (visitMethod != null) {
@@ -150,7 +150,7 @@ public final class a {
                         Intrinsics.checkNotNull(annotation2);
                         KotlinJvmBinaryClass.AnnotationArgumentVisitor visitParameterAnnotation = visitMethod.visitParameterAnnotation(i10, classId, new ReflectAnnotationSource(annotation2));
                         if (visitParameterAnnotation != null) {
-                            f32592a.h(visitParameterAnnotation, annotation2, b10);
+                            f32593a.h(visitParameterAnnotation, annotation2, b10);
                         }
                     }
                 }
@@ -163,7 +163,7 @@ public final class a {
         Class b10 = ns.a.b(ns.a.a(annotation));
         KotlinJvmBinaryClass.AnnotationArgumentVisitor visitAnnotation = annotationVisitor.visitAnnotation(ReflectClassUtilKt.getClassId(b10), new ReflectAnnotationSource(annotation));
         if (visitAnnotation != null) {
-            f32592a.h(visitAnnotation, annotation, b10);
+            f32593a.h(visitAnnotation, annotation, b10);
         }
     }
 
@@ -171,7 +171,7 @@ public final class a {
         Set set;
         Class<?> cls = obj.getClass();
         if (!Intrinsics.areEqual(cls, Class.class)) {
-            set = ReflectKotlinClassKt.f32588a;
+            set = ReflectKotlinClassKt.f32589a;
             if (set.contains(cls)) {
                 annotationArgumentVisitor.visit(name, obj);
                 return;

@@ -8,10 +8,10 @@ import tf.a;
 public final class b extends a.AbstractBinderC0660a {
 
     /* renamed from: c  reason: collision with root package name */
-    private final Object f48782c;
+    private final Object f48783c;
 
     private b(Object obj) {
-        this.f48782c = obj;
+        this.f48783c = obj;
     }
 
     public static a W0(Object obj) {
@@ -20,7 +20,7 @@ public final class b extends a.AbstractBinderC0660a {
 
     public static Object i(a aVar) {
         if (aVar instanceof b) {
-            return ((b) aVar).f48782c;
+            return ((b) aVar).f48783c;
         }
         IBinder asBinder = aVar.asBinder();
         Field[] declaredFields = asBinder.getClass().getDeclaredFields();

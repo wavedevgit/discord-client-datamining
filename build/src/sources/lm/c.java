@@ -41,25 +41,25 @@ import ys.g0;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f35910a;
+    private final Map f35911a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class a extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f35911d;
+        int f35912d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f35912e;
+        private /* synthetic */ Object f35913e;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ ReactContext f35914o;
+        final /* synthetic */ ReactContext f35915o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ com.reactnativedocumentpicker.a f35915p;
+        final /* synthetic */ com.reactnativedocumentpicker.a f35916p;
 
         /* renamed from: q  reason: collision with root package name */
-        final /* synthetic */ ReadableArray f35916q;
+        final /* synthetic */ ReadableArray f35917q;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: lm.c$a$a  reason: collision with other inner class name */
@@ -67,53 +67,53 @@ public final class c {
         public static final class C0495a extends k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f35917d;
+            int f35918d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ ReadableArray f35918e;
+            final /* synthetic */ ReadableArray f35919e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ int f35919i;
+            final /* synthetic */ int f35920i;
 
             /* renamed from: o  reason: collision with root package name */
-            final /* synthetic */ c f35920o;
+            final /* synthetic */ c f35921o;
 
             /* renamed from: p  reason: collision with root package name */
-            final /* synthetic */ ReactContext f35921p;
+            final /* synthetic */ ReactContext f35922p;
 
             /* renamed from: q  reason: collision with root package name */
-            final /* synthetic */ File f35922q;
+            final /* synthetic */ File f35923q;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             C0495a(ReadableArray readableArray, int i10, c cVar, ReactContext reactContext, File file, Continuation continuation) {
                 super(2, continuation);
-                this.f35918e = readableArray;
-                this.f35919i = i10;
-                this.f35920o = cVar;
-                this.f35921p = reactContext;
-                this.f35922q = file;
+                this.f35919e = readableArray;
+                this.f35920i = i10;
+                this.f35921o = cVar;
+                this.f35922p = reactContext;
+                this.f35923q = file;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                return new C0495a(this.f35918e, this.f35919i, this.f35920o, this.f35921p, this.f35922q, continuation);
+                return new C0495a(this.f35919e, this.f35920i, this.f35921o, this.f35922p, this.f35923q, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 String str;
                 gs.b.f();
-                if (this.f35917d == 0) {
+                if (this.f35918d == 0) {
                     kotlin.c.b(obj);
                     WritableMap createMap = Arguments.createMap();
                     Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
-                    ReadableMap map = this.f35918e.getMap(this.f35919i);
+                    ReadableMap map = this.f35919e.getMap(this.f35920i);
                     try {
                         if (map != null) {
-                            createMap.merge(this.f35920o.g(map, this.f35921p, this.f35922q));
+                            createMap.merge(this.f35921o.g(map, this.f35922p, this.f35923q));
                             return createMap;
                         }
-                        int i10 = this.f35919i;
+                        int i10 = this.f35920i;
                         throw new IllegalArgumentException("keepLocalCopy: The file argument is null at index " + i10);
                     } catch (Exception e10) {
                         String localizedMessage = e10.getLocalizedMessage();
@@ -136,22 +136,22 @@ public final class c {
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((C0495a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+                return ((C0495a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(ReactContext reactContext, com.reactnativedocumentpicker.a aVar, ReadableArray readableArray, Continuation continuation) {
             super(2, continuation);
-            this.f35914o = reactContext;
-            this.f35915p = aVar;
-            this.f35916q = readableArray;
+            this.f35915o = reactContext;
+            this.f35916p = aVar;
+            this.f35917q = readableArray;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            a aVar = new a(this.f35914o, this.f35915p, this.f35916q, continuation);
-            aVar.f35912e = obj;
+            a aVar = new a(this.f35915o, this.f35916p, this.f35917q, continuation);
+            aVar.f35913e = obj;
             return aVar;
         }
 
@@ -160,22 +160,22 @@ public final class c {
             WritableArray writableArray;
             g0 b10;
             Object f10 = gs.b.f();
-            int i10 = this.f35911d;
+            int i10 = this.f35912d;
             if (i10 != 0) {
                 if (i10 == 1) {
-                    writableArray = (WritableArray) this.f35912e;
+                    writableArray = (WritableArray) this.f35913e;
                     kotlin.c.b(obj);
                 } else {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
             } else {
                 kotlin.c.b(obj);
-                CoroutineScope coroutineScope = (CoroutineScope) this.f35912e;
-                File i11 = c.this.i(this.f35914o, this.f35915p);
-                IntRange u10 = kotlin.ranges.d.u(0, this.f35916q.size());
-                ReadableArray readableArray = this.f35916q;
+                CoroutineScope coroutineScope = (CoroutineScope) this.f35913e;
+                File i11 = c.this.i(this.f35915o, this.f35916p);
+                IntRange u10 = kotlin.ranges.d.u(0, this.f35917q.size());
+                ReadableArray readableArray = this.f35917q;
                 c cVar = c.this;
-                ReactContext reactContext = this.f35914o;
+                ReactContext reactContext = this.f35915o;
                 ArrayList arrayList = new ArrayList(CollectionsKt.w(u10, 10));
                 Iterator it = u10.iterator();
                 while (it.hasNext()) {
@@ -187,8 +187,8 @@ public final class c {
                 }
                 WritableArray createArray = Arguments.createArray();
                 Intrinsics.checkNotNullExpressionValue(createArray, "createArray(...)");
-                this.f35912e = createArray;
-                this.f35911d = 1;
+                this.f35913e = createArray;
+                this.f35912d = 1;
                 Object a10 = ys.d.a(arrayList, this);
                 if (a10 == f10) {
                     return f10;
@@ -204,13 +204,13 @@ public final class c {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
     public c(Map uriMap) {
         Intrinsics.checkNotNullParameter(uriMap, "uriMap");
-        this.f35910a = uriMap;
+        this.f35911a = uriMap;
     }
 
     private final File d(Context context, Uri uri, File file, String str, String str2) {
@@ -250,9 +250,9 @@ public final class c {
             FileChannel channel = new FileOutputStream(file).getChannel();
             try {
                 if (channel.transferFrom(Channels.newChannel(inputStream), 0L, LongCompanionObject.MAX_VALUE) != 0) {
-                    Unit unit = Unit.f31987a;
+                    Unit unit = Unit.f31988a;
                     ls.c.a(channel, null);
-                    return Unit.f31987a;
+                    return Unit.f31988a;
                 }
                 throw new IOException("No data was copied to the destination file");
             } finally {
@@ -269,7 +269,7 @@ public final class c {
             String string2 = readableMap.getString("fileName");
             if (string2 != null) {
                 String string3 = readableMap.getString("convertVirtualFileToType");
-                Uri uri = (Uri) this.f35910a.get(string);
+                Uri uri = (Uri) this.f35911a.get(string);
                 if (uri == null) {
                     RNLog.w(reactContext, "keepLocalCopy: You're trying to copy a file \"" + string2 + "\" that wasn't picked with this module. This can lead to permission errors because the file reference is transient to your activity's current lifecycle. See https://developer.android.com/guide/components/intents-common#GetFile . Please use the result from the picker directly.");
                 }
@@ -302,7 +302,7 @@ public final class c {
     /* JADX INFO: Access modifiers changed from: private */
     public final File i(Context context, com.reactnativedocumentpicker.a aVar) {
         File cacheDir;
-        if (aVar == com.reactnativedocumentpicker.a.f18453o) {
+        if (aVar == com.reactnativedocumentpicker.a.f18454o) {
             cacheDir = context.getFilesDir();
         } else {
             cacheDir = context.getCacheDir();
@@ -333,7 +333,7 @@ public final class c {
     public final lm.a k(Uri uri, String str, ReactApplicationContext context) {
         Intrinsics.checkNotNullParameter(context, "context");
         if (uri != null) {
-            Uri uri2 = (Uri) this.f35910a.get(str);
+            Uri uri2 = (Uri) this.f35911a.get(str);
             if (uri2 != null) {
                 lm.a aVar = new lm.a(uri2);
                 ContentResolver contentResolver = context.getContentResolver();
@@ -351,7 +351,7 @@ public final class c {
                                 aVar.g("No data was copied to the destination file");
                             }
                             openOutputStream.flush();
-                            Unit unit = Unit.f31987a;
+                            Unit unit = Unit.f31988a;
                         }
                         ls.c.a(openOutputStream, null);
                     }

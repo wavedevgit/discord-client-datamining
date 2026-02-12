@@ -6,12 +6,12 @@ import java.nio.ByteOrder;
 public class g extends d {
 
     /* renamed from: j  reason: collision with root package name */
-    private final i f51432j;
+    private final i f51433j;
 
     public g(boolean z10, i iVar) {
         ByteOrder byteOrder;
-        this.f51418a = z10;
-        this.f51432j = iVar;
+        this.f51419a = z10;
+        this.f51433j = iVar;
         ByteBuffer allocate = ByteBuffer.allocate(4);
         if (z10) {
             byteOrder = ByteOrder.BIG_ENDIAN;
@@ -19,28 +19,28 @@ public class g extends d {
             byteOrder = ByteOrder.LITTLE_ENDIAN;
         }
         allocate.order(byteOrder);
-        this.f51419b = iVar.p(allocate, 16L);
-        this.f51420c = iVar.z(allocate, 28L);
-        this.f51421d = iVar.z(allocate, 32L);
-        this.f51422e = iVar.p(allocate, 42L);
-        this.f51423f = iVar.p(allocate, 44L);
-        this.f51424g = iVar.p(allocate, 46L);
-        this.f51425h = iVar.p(allocate, 48L);
-        this.f51426i = iVar.p(allocate, 50L);
+        this.f51420b = iVar.p(allocate, 16L);
+        this.f51421c = iVar.z(allocate, 28L);
+        this.f51422d = iVar.z(allocate, 32L);
+        this.f51423e = iVar.p(allocate, 42L);
+        this.f51424f = iVar.p(allocate, 44L);
+        this.f51425g = iVar.p(allocate, 46L);
+        this.f51426h = iVar.p(allocate, 48L);
+        this.f51427i = iVar.p(allocate, 50L);
     }
 
     @Override // vb.d
     public c a(long j10, int i10) {
-        return new a(this.f51432j, this, j10, i10);
+        return new a(this.f51433j, this, j10, i10);
     }
 
     @Override // vb.d
     public e b(long j10) {
-        return new j(this.f51432j, this, j10);
+        return new j(this.f51433j, this, j10);
     }
 
     @Override // vb.d
     public f c(int i10) {
-        return new l(this.f51432j, this, i10);
+        return new l(this.f51433j, this, i10);
     }
 }

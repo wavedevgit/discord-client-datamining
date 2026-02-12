@@ -3,17 +3,17 @@ package com.facebook.soloader;
 public class o implements x {
 
     /* renamed from: a  reason: collision with root package name */
-    private final x f12078a;
+    private final x f12079a;
 
     public o(x xVar) {
-        this.f12078a = xVar;
+        this.f12079a = xVar;
     }
 
     @Override // com.facebook.soloader.x
     public void a(String str, int i10) {
-        pb.b.j(this.f12078a, "load", i10);
+        pb.b.j(this.f12079a, "load", i10);
         try {
-            this.f12078a.a(str, i10);
+            this.f12079a.a(str, i10);
             pb.b.i(null);
         } finally {
         }

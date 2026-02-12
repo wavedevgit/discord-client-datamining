@@ -13,20 +13,20 @@ import kotlin.text.StringsKt;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f29042a = new a();
+    public static final a f29043a = new a();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Lazy f29043b = l.b(C0397a.f29045d);
+    private static final Lazy f29044b = l.b(C0397a.f29046d);
 
     /* renamed from: c  reason: collision with root package name */
-    public static final int f29044c = 8;
+    public static final int f29045c = 8;
 
     /* renamed from: io.sentry.android.replay.viewhierarchy.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class C0397a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final C0397a f29045d = new C0397a();
+        public static final C0397a f29046d = new C0397a();
 
         C0397a() {
             super(0);

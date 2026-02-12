@@ -17,16 +17,16 @@ import oe.w0;
 public final class a extends f {
 
     /* renamed from: o  reason: collision with root package name */
-    private final h0 f21630o;
+    private final h0 f21631o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final h0 f21631p;
+    private final h0 f21632p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final C0291a f21632q;
+    private final C0291a f21633q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Inflater f21633r;
+    private Inflater f21634r;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* renamed from: de.a$a  reason: collision with other inner class name */
@@ -34,31 +34,31 @@ public final class a extends f {
     public static final class C0291a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final h0 f21634a = new h0();
+        private final h0 f21635a = new h0();
 
         /* renamed from: b  reason: collision with root package name */
-        private final int[] f21635b = new int[IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER];
+        private final int[] f21636b = new int[IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER];
 
         /* renamed from: c  reason: collision with root package name */
-        private boolean f21636c;
+        private boolean f21637c;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f21637d;
+        private int f21638d;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f21638e;
+        private int f21639e;
 
         /* renamed from: f  reason: collision with root package name */
-        private int f21639f;
+        private int f21640f;
 
         /* renamed from: g  reason: collision with root package name */
-        private int f21640g;
+        private int f21641g;
 
         /* renamed from: h  reason: collision with root package name */
-        private int f21641h;
+        private int f21642h;
 
         /* renamed from: i  reason: collision with root package name */
-        private int f21642i;
+        private int f21643i;
 
         /* JADX INFO: Access modifiers changed from: private */
         public void e(h0 h0Var, int i10) {
@@ -74,20 +74,20 @@ public final class a extends f {
                 int i11 = i10 - 4;
                 if (z10) {
                     if (i11 >= 7 && (K = h0Var.K()) >= 4) {
-                        this.f21641h = h0Var.N();
-                        this.f21642i = h0Var.N();
-                        this.f21634a.Q(K - 4);
+                        this.f21642h = h0Var.N();
+                        this.f21643i = h0Var.N();
+                        this.f21635a.Q(K - 4);
                         i11 = i10 - 11;
                     } else {
                         return;
                     }
                 }
-                int f10 = this.f21634a.f();
-                int g10 = this.f21634a.g();
+                int f10 = this.f21635a.f();
+                int g10 = this.f21635a.g();
                 if (f10 < g10 && i11 > 0) {
                     int min = Math.min(i11, g10 - f10);
-                    h0Var.l(this.f21634a.e(), f10, min);
-                    this.f21634a.U(f10 + min);
+                    h0Var.l(this.f21635a.e(), f10, min);
+                    this.f21635a.U(f10 + min);
                 }
             }
         }
@@ -97,11 +97,11 @@ public final class a extends f {
             if (i10 < 19) {
                 return;
             }
-            this.f21637d = h0Var.N();
-            this.f21638e = h0Var.N();
+            this.f21638d = h0Var.N();
+            this.f21639e = h0Var.N();
             h0Var.V(11);
-            this.f21639f = h0Var.N();
-            this.f21640g = h0Var.N();
+            this.f21640f = h0Var.N();
+            this.f21641g = h0Var.N();
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -110,7 +110,7 @@ public final class a extends f {
                 return;
             }
             h0Var.V(2);
-            Arrays.fill(this.f21635b, 0);
+            Arrays.fill(this.f21636b, 0);
             int i11 = i10 / 5;
             for (int i12 = 0; i12 < i11; i12++) {
                 int H = h0Var.H();
@@ -120,37 +120,37 @@ public final class a extends f {
                 double d10 = H2;
                 double d11 = H3 - 128;
                 double d12 = H4 - 128;
-                this.f21635b[H] = (w0.q((int) ((d10 - (0.34414d * d12)) - (d11 * 0.71414d)), 0, SetSpanOperation.SPAN_MAX_PRIORITY) << 8) | (h0Var.H() << 24) | (w0.q((int) ((1.402d * d11) + d10), 0, SetSpanOperation.SPAN_MAX_PRIORITY) << 16) | w0.q((int) (d10 + (d12 * 1.772d)), 0, SetSpanOperation.SPAN_MAX_PRIORITY);
+                this.f21636b[H] = (w0.q((int) ((d10 - (0.34414d * d12)) - (d11 * 0.71414d)), 0, SetSpanOperation.SPAN_MAX_PRIORITY) << 8) | (h0Var.H() << 24) | (w0.q((int) ((1.402d * d11) + d10), 0, SetSpanOperation.SPAN_MAX_PRIORITY) << 16) | w0.q((int) (d10 + (d12 * 1.772d)), 0, SetSpanOperation.SPAN_MAX_PRIORITY);
             }
-            this.f21636c = true;
+            this.f21637c = true;
         }
 
         public ae.b d() {
             int i10;
             int H;
             int i11;
-            if (this.f21637d != 0 && this.f21638e != 0 && this.f21641h != 0 && this.f21642i != 0 && this.f21634a.g() != 0 && this.f21634a.f() == this.f21634a.g() && this.f21636c) {
-                this.f21634a.U(0);
-                int i12 = this.f21641h * this.f21642i;
+            if (this.f21638d != 0 && this.f21639e != 0 && this.f21642h != 0 && this.f21643i != 0 && this.f21635a.g() != 0 && this.f21635a.f() == this.f21635a.g() && this.f21637c) {
+                this.f21635a.U(0);
+                int i12 = this.f21642h * this.f21643i;
                 int[] iArr = new int[i12];
                 int i13 = 0;
                 while (i13 < i12) {
-                    int H2 = this.f21634a.H();
+                    int H2 = this.f21635a.H();
                     if (H2 != 0) {
                         i10 = i13 + 1;
-                        iArr[i13] = this.f21635b[H2];
+                        iArr[i13] = this.f21636b[H2];
                     } else {
-                        int H3 = this.f21634a.H();
+                        int H3 = this.f21635a.H();
                         if (H3 != 0) {
                             if ((H3 & 64) == 0) {
                                 H = H3 & 63;
                             } else {
-                                H = ((H3 & 63) << 8) | this.f21634a.H();
+                                H = ((H3 & 63) << 8) | this.f21635a.H();
                             }
                             if ((H3 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) == 0) {
                                 i11 = 0;
                             } else {
-                                i11 = this.f21635b[this.f21634a.H()];
+                                i11 = this.f21636b[this.f21635a.H()];
                             }
                             i10 = H + i13;
                             Arrays.fill(iArr, i13, i10, i11);
@@ -158,37 +158,37 @@ public final class a extends f {
                     }
                     i13 = i10;
                 }
-                return new b.C0009b().f(Bitmap.createBitmap(iArr, this.f21641h, this.f21642i, Bitmap.Config.ARGB_8888)).k(this.f21639f / this.f21637d).l(0).h(this.f21640g / this.f21638e, 0).i(0).n(this.f21641h / this.f21637d).g(this.f21642i / this.f21638e).a();
+                return new b.C0009b().f(Bitmap.createBitmap(iArr, this.f21642h, this.f21643i, Bitmap.Config.ARGB_8888)).k(this.f21640f / this.f21638d).l(0).h(this.f21641g / this.f21639e, 0).i(0).n(this.f21642h / this.f21638d).g(this.f21643i / this.f21639e).a();
             }
             return null;
         }
 
         public void h() {
-            this.f21637d = 0;
-            this.f21638e = 0;
-            this.f21639f = 0;
-            this.f21640g = 0;
-            this.f21641h = 0;
-            this.f21642i = 0;
-            this.f21634a.Q(0);
-            this.f21636c = false;
+            this.f21638d = 0;
+            this.f21639e = 0;
+            this.f21640f = 0;
+            this.f21641g = 0;
+            this.f21642h = 0;
+            this.f21643i = 0;
+            this.f21635a.Q(0);
+            this.f21637c = false;
         }
     }
 
     public a() {
         super("PgsDecoder");
-        this.f21630o = new h0();
-        this.f21631p = new h0();
-        this.f21632q = new C0291a();
+        this.f21631o = new h0();
+        this.f21632p = new h0();
+        this.f21633q = new C0291a();
     }
 
     private void B(h0 h0Var) {
         if (h0Var.a() > 0 && h0Var.j() == 120) {
-            if (this.f21633r == null) {
-                this.f21633r = new Inflater();
+            if (this.f21634r == null) {
+                this.f21634r = new Inflater();
             }
-            if (w0.A0(h0Var, this.f21631p, this.f21633r)) {
-                h0Var.S(this.f21631p.e(), this.f21631p.g());
+            if (w0.A0(h0Var, this.f21632p, this.f21634r)) {
+                h0Var.S(this.f21632p.e(), this.f21632p.g());
             }
         }
     }
@@ -225,12 +225,12 @@ public final class a extends f {
 
     @Override // ae.f
     protected g z(byte[] bArr, int i10, boolean z10) {
-        this.f21630o.S(bArr, i10);
-        B(this.f21630o);
-        this.f21632q.h();
+        this.f21631o.S(bArr, i10);
+        B(this.f21631o);
+        this.f21633q.h();
         ArrayList arrayList = new ArrayList();
-        while (this.f21630o.a() >= 3) {
-            ae.b C = C(this.f21630o, this.f21632q);
+        while (this.f21631o.a() >= 3) {
+            ae.b C = C(this.f21631o, this.f21633q);
             if (C != null) {
                 arrayList.add(C);
             }

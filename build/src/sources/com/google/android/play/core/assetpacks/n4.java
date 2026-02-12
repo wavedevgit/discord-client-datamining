@@ -4,5 +4,5 @@ package com.google.android.play.core.assetpacks;
 public abstract class n4 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final zh.i f16804a = new zh.i();
+    private static final zh.i f16805a = new zh.i();
 }

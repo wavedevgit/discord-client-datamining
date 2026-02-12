@@ -13,25 +13,25 @@ import kotlinx.serialization.encoding.c;
 public final class t2 implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KSerializer f50067a;
+    private final KSerializer f50068a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final KSerializer f50068b;
+    private final KSerializer f50069b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final KSerializer f50069c;
+    private final KSerializer f50070c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final SerialDescriptor f50070d;
+    private final SerialDescriptor f50071d;
 
     public t2(KSerializer aSerializer, KSerializer bSerializer, KSerializer cSerializer) {
         Intrinsics.checkNotNullParameter(aSerializer, "aSerializer");
         Intrinsics.checkNotNullParameter(bSerializer, "bSerializer");
         Intrinsics.checkNotNullParameter(cSerializer, "cSerializer");
-        this.f50067a = aSerializer;
-        this.f50068b = bSerializer;
-        this.f50069c = cSerializer;
-        this.f50070d = st.j.c("kotlin.Triple", new SerialDescriptor[0], new Function1() { // from class: tt.s2
+        this.f50068a = aSerializer;
+        this.f50069b = bSerializer;
+        this.f50070c = cSerializer;
+        this.f50071d = st.j.c("kotlin.Triple", new SerialDescriptor[0], new Function1() { // from class: tt.s2
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit d10;
@@ -42,9 +42,9 @@ public final class t2 implements KSerializer {
     }
 
     private final as.u b(kotlinx.serialization.encoding.c cVar) {
-        Object c10 = c.a.c(cVar, getDescriptor(), 0, this.f50067a, null, 8, null);
-        Object c11 = c.a.c(cVar, getDescriptor(), 1, this.f50068b, null, 8, null);
-        Object c12 = c.a.c(cVar, getDescriptor(), 2, this.f50069c, null, 8, null);
+        Object c10 = c.a.c(cVar, getDescriptor(), 0, this.f50068a, null, 8, null);
+        Object c11 = c.a.c(cVar, getDescriptor(), 1, this.f50069b, null, 8, null);
+        Object c12 = c.a.c(cVar, getDescriptor(), 2, this.f50070c, null, 8, null);
         cVar.c(getDescriptor());
         return new as.u(c10, c11, c12);
     }
@@ -57,35 +57,35 @@ public final class t2 implements KSerializer {
         Object obj5;
         Object obj6;
         kotlinx.serialization.encoding.c cVar2;
-        obj = u2.f50075a;
-        obj2 = u2.f50075a;
-        obj3 = u2.f50075a;
+        obj = u2.f50076a;
+        obj2 = u2.f50076a;
+        obj3 = u2.f50076a;
         while (true) {
             int o10 = cVar.o(getDescriptor());
             if (o10 != -1) {
                 if (o10 != 0) {
                     if (o10 != 1) {
                         if (o10 == 2) {
-                            obj3 = c.a.c(cVar, getDescriptor(), 2, this.f50069c, null, 8, null);
+                            obj3 = c.a.c(cVar, getDescriptor(), 2, this.f50070c, null, 8, null);
                         } else {
                             throw new qt.n("Unexpected index " + o10);
                         }
                     } else {
                         cVar2 = cVar;
-                        obj2 = c.a.c(cVar2, getDescriptor(), 1, this.f50068b, null, 8, null);
+                        obj2 = c.a.c(cVar2, getDescriptor(), 1, this.f50069b, null, 8, null);
                     }
                 } else {
                     cVar2 = cVar;
-                    obj = c.a.c(cVar2, getDescriptor(), 0, this.f50067a, null, 8, null);
+                    obj = c.a.c(cVar2, getDescriptor(), 0, this.f50068a, null, 8, null);
                 }
                 cVar = cVar2;
             } else {
                 cVar.c(getDescriptor());
-                obj4 = u2.f50075a;
+                obj4 = u2.f50076a;
                 if (obj != obj4) {
-                    obj5 = u2.f50075a;
+                    obj5 = u2.f50076a;
                     if (obj2 != obj5) {
-                        obj6 = u2.f50075a;
+                        obj6 = u2.f50076a;
                         if (obj3 != obj6) {
                             return new as.u(obj, obj2, obj3);
                         }
@@ -101,10 +101,10 @@ public final class t2 implements KSerializer {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit d(t2 t2Var, st.a buildClassSerialDescriptor) {
         Intrinsics.checkNotNullParameter(buildClassSerialDescriptor, "$this$buildClassSerialDescriptor");
-        st.a.b(buildClassSerialDescriptor, "first", t2Var.f50067a.getDescriptor(), null, false, 12, null);
-        st.a.b(buildClassSerialDescriptor, "second", t2Var.f50068b.getDescriptor(), null, false, 12, null);
-        st.a.b(buildClassSerialDescriptor, "third", t2Var.f50069c.getDescriptor(), null, false, 12, null);
-        return Unit.f31987a;
+        st.a.b(buildClassSerialDescriptor, "first", t2Var.f50068a.getDescriptor(), null, false, 12, null);
+        st.a.b(buildClassSerialDescriptor, "second", t2Var.f50069b.getDescriptor(), null, false, 12, null);
+        st.a.b(buildClassSerialDescriptor, "third", t2Var.f50070c.getDescriptor(), null, false, 12, null);
+        return Unit.f31988a;
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -124,14 +124,14 @@ public final class t2 implements KSerializer {
         Intrinsics.checkNotNullParameter(encoder, "encoder");
         Intrinsics.checkNotNullParameter(value, "value");
         CompositeEncoder b10 = encoder.b(getDescriptor());
-        b10.k(getDescriptor(), 0, this.f50067a, value.d());
-        b10.k(getDescriptor(), 1, this.f50068b, value.e());
-        b10.k(getDescriptor(), 2, this.f50069c, value.f());
+        b10.k(getDescriptor(), 0, this.f50068a, value.d());
+        b10.k(getDescriptor(), 1, this.f50069b, value.e());
+        b10.k(getDescriptor(), 2, this.f50070c, value.f());
         b10.c(getDescriptor());
     }
 
     @Override // kotlinx.serialization.KSerializer, qt.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return this.f50070d;
+        return this.f50071d;
     }
 }

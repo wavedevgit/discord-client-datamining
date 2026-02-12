@@ -51,49 +51,49 @@ import to.o;
 public final class o implements gn.k {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final b f49547o = new b(null);
+    public static final b f49548o = new b(null);
 
     /* renamed from: p  reason: collision with root package name */
-    private static final int f49548p;
+    private static final int f49549p;
 
     /* renamed from: b  reason: collision with root package name */
-    private final xo.b f49549b;
+    private final xo.b f49550b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final fo.i f49550c;
+    private final fo.i f49551c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final fo.f0 f49551d;
+    private final fo.f0 f49552d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f49552e;
+    private int f49553e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Job f49553f;
+    private Job f49554f;
 
     /* renamed from: g  reason: collision with root package name */
-    private View f49554g;
+    private View f49555g;
 
     /* renamed from: h  reason: collision with root package name */
-    private Job f49555h;
+    private Job f49556h;
 
     /* renamed from: i  reason: collision with root package name */
-    private Function1 f49556i;
+    private Function1 f49557i;
 
     /* renamed from: j  reason: collision with root package name */
-    private Function0 f49557j;
+    private Function0 f49558j;
 
     /* renamed from: k  reason: collision with root package name */
-    private Job f49558k;
+    private Job f49559k;
 
     /* renamed from: l  reason: collision with root package name */
-    private Integer f49559l;
+    private Integer f49560l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final wo.g f49560m;
+    private final wo.g f49561m;
 
     /* renamed from: n  reason: collision with root package name */
-    private View f49561n;
+    private View f49562n;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements DefaultLifecycleObserver {
@@ -102,7 +102,7 @@ public final class o implements gn.k {
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final void b(o oVar) {
-            Function0 function0 = oVar.f49557j;
+            Function0 function0 = oVar.f49558j;
             if (function0 != null) {
                 function0.invoke();
             }
@@ -112,7 +112,7 @@ public final class o implements gn.k {
         @Override // androidx.lifecycle.DefaultLifecycleObserver
         public void onResume(LifecycleOwner owner) {
             Intrinsics.checkNotNullParameter(owner, "owner");
-            FrameLayout root = o.this.f49549b.getRoot();
+            FrameLayout root = o.this.f49550b.getRoot();
             final o oVar = o.this;
             root.post(new Runnable() { // from class: to.n
                 @Override // java.lang.Runnable
@@ -137,48 +137,48 @@ public final class o implements gn.k {
     public /* synthetic */ class c {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f49563a;
+        public static final /* synthetic */ int[] f49564a;
 
         /* renamed from: b  reason: collision with root package name */
-        public static final /* synthetic */ int[] f49564b;
+        public static final /* synthetic */ int[] f49565b;
 
         static {
             int[] iArr = new int[f5.b.a.values().length];
             try {
-                iArr[f5.b.a.f49142d.ordinal()] = 1;
+                iArr[f5.b.a.f49143d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[f5.b.a.f49143e.ordinal()] = 2;
+                iArr[f5.b.a.f49144e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[f5.b.a.f49144i.ordinal()] = 3;
+                iArr[f5.b.a.f49145i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f49563a = iArr;
+            f49564a = iArr;
             int[] iArr2 = new int[c4.e.values().length];
             try {
-                iArr2[c4.e.f49013o.ordinal()] = 1;
+                iArr2[c4.e.f49014o.ordinal()] = 1;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                iArr2[c4.e.f49015q.ordinal()] = 2;
+                iArr2[c4.e.f49016q.ordinal()] = 2;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                iArr2[c4.e.f49017s.ordinal()] = 3;
+                iArr2[c4.e.f49018s.ordinal()] = 3;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                iArr2[c4.e.f49014p.ordinal()] = 4;
+                iArr2[c4.e.f49015p.ordinal()] = 4;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                iArr2[c4.e.f49016r.ordinal()] = 5;
+                iArr2[c4.e.f49017r.ordinal()] = 5;
             } catch (NoSuchFieldError unused8) {
             }
-            f49564b = iArr2;
+            f49565b = iArr2;
         }
     }
 
@@ -187,32 +187,32 @@ public final class o implements gn.k {
     public static final class d extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f49565d;
+        int f49566d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ o f49567d;
+            final /* synthetic */ o f49568d;
 
             a(o oVar) {
-                this.f49567d = oVar;
+                this.f49568d = oVar;
             }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
             /* renamed from: a */
             public final Object emit(fo.x xVar, Continuation continuation) {
                 Function1 function1;
-                if (Intrinsics.areEqual(xVar, x.b.f24153a)) {
-                    Function1 function12 = this.f49567d.f49556i;
+                if (Intrinsics.areEqual(xVar, x.b.f24154a)) {
+                    Function1 function12 = this.f49568d.f49557i;
                     if (function12 != null) {
                         function12.invoke(new fo.e1());
                     }
-                } else if ((xVar instanceof x.a) && ((x.a) xVar).a() && (function1 = this.f49567d.f49556i) != null) {
+                } else if ((xVar instanceof x.a) && ((x.a) xVar).a() && (function1 = this.f49568d.f49557i) != null) {
                     function1.invoke(new fo.u0());
                 }
-                return Unit.f31987a;
+                return Unit.f31988a;
             }
         }
 
@@ -228,7 +228,7 @@ public final class o implements gn.k {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = gs.b.f();
-            int i10 = this.f49565d;
+            int i10 = this.f49566d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -237,19 +237,19 @@ public final class o implements gn.k {
                 }
             } else {
                 kotlin.c.b(obj);
-                Flow a10 = fo.j.a(o.this.f49550c.c());
+                Flow a10 = fo.j.a(o.this.f49551c.c());
                 a aVar = new a(o.this);
-                this.f49565d = 1;
+                this.f49566d = 1;
                 if (a10.collect(aVar, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -258,28 +258,28 @@ public final class o implements gn.k {
     public static final class e extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f49568d;
+        int f49569d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ long f49569e;
+        final /* synthetic */ long f49570e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ o f49570i;
+        final /* synthetic */ o f49571i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ f5.b f49571o;
+        final /* synthetic */ f5.b f49572o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         e(long j10, o oVar, f5.b bVar, Continuation continuation) {
             super(2, continuation);
-            this.f49569e = j10;
-            this.f49570i = oVar;
-            this.f49571o = bVar;
+            this.f49570e = j10;
+            this.f49571i = oVar;
+            this.f49572o = bVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new e(this.f49569e, this.f49570i, this.f49571o, continuation);
+            return new e(this.f49570e, this.f49571i, this.f49572o, continuation);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:11:0x002f, code lost:
@@ -301,7 +301,7 @@ public final class o implements gn.k {
             /*
                 r6 = this;
                 java.lang.Object r0 = gs.b.f()
-                int r1 = r6.f49568d
+                int r1 = r6.f49569d
                 r2 = 2
                 r3 = 1
                 if (r1 == 0) goto L24
@@ -321,28 +321,28 @@ public final class o implements gn.k {
                 goto L32
             L24:
                 kotlin.c.b(r7)
-                long r4 = r6.f49569e
-                r6.f49568d = r3
+                long r4 = r6.f49570e
+                r6.f49569d = r3
                 java.lang.Object r7 = ys.i0.a(r4, r6)
                 if (r7 != r0) goto L32
                 goto L5f
             L32:
-                to.o r7 = r6.f49570i
+                to.o r7 = r6.f49571i
                 fo.i r7 = to.o.l(r7)
                 bt.j0 r7 = r7.c()
                 java.lang.Object r7 = r7.getValue()
                 boolean r7 = r7 instanceof fo.x.a
                 if (r7 == 0) goto L47
-                kotlin.Unit r7 = kotlin.Unit.f31987a
+                kotlin.Unit r7 = kotlin.Unit.f31988a
                 return r7
             L47:
-                to.f5$b r7 = r6.f49571o
+                to.f5$b r7 = r6.f49572o
                 lo.a r7 = r7.G()
-                lo.a r1 = lo.a.f35949e
+                lo.a r1 = lo.a.f35950e
                 if (r7 != r1) goto L6b
-                to.o r7 = r6.f49570i
+                to.o r7 = r6.f49571i
                 fo.i r7 = to.o.l(r7)
-                r6.f49568d = r2
+                r6.f49569d = r2
                 java.lang.Object r7 = r7.i(r6)
                 if (r7 != r0) goto L60
             L5f:
@@ -353,14 +353,14 @@ public final class o implements gn.k {
                 java.io.File r7 = (java.io.File) r7
                 r7.delete()
             L6b:
-                to.o r7 = r6.f49570i
+                to.o r7 = r6.f49571i
                 kotlin.jvm.functions.Function1 r7 = to.o.m(r7)
                 if (r7 == 0) goto L7b
                 fo.v0 r0 = new fo.v0
                 r0.<init>()
                 r7.invoke(r0)
             L7b:
-                kotlin.Unit r7 = kotlin.Unit.f31987a
+                kotlin.Unit r7 = kotlin.Unit.f31988a
                 return r7
             */
             throw new UnsupportedOperationException("Method not decompiled: to.o.e.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -368,7 +368,7 @@ public final class o implements gn.k {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -377,27 +377,27 @@ public final class o implements gn.k {
     public static final class f extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f49572d;
+        int f49573d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ f5.b f49574i;
+        final /* synthetic */ f5.b f49575i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         f(f5.b bVar, Continuation continuation) {
             super(2, continuation);
-            this.f49574i = bVar;
+            this.f49575i = bVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new f(this.f49574i, continuation);
+            return new f(this.f49575i, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object i10;
             Object f10 = gs.b.f();
-            int i11 = this.f49572d;
+            int i11 = this.f49573d;
             if (i11 != 0) {
                 if (i11 == 1) {
                     kotlin.c.b(obj);
@@ -407,29 +407,29 @@ public final class o implements gn.k {
                 }
             } else {
                 kotlin.c.b(obj);
-                fo.i iVar = o.this.f49550c;
-                this.f49572d = 1;
+                fo.i iVar = o.this.f49551c;
+                this.f49573d = 1;
                 i10 = iVar.i(this);
                 if (i10 == f10) {
                     return f10;
                 }
             }
-            f5.b bVar = this.f49574i;
+            f5.b bVar = this.f49575i;
             o oVar = o.this;
             if (Result.h(i10)) {
-                bVar.z().invoke((File) i10, oVar.f49550c.b());
+                bVar.z().invoke((File) i10, oVar.f49551c.b());
             }
-            f5.b bVar2 = this.f49574i;
+            f5.b bVar2 = this.f49575i;
             Throwable e10 = Result.e(i10);
             if (e10 != null && !(e10 instanceof fo.q0)) {
                 bVar2.x().invoke(e10);
             }
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((f) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((f) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -438,42 +438,42 @@ public final class o implements gn.k {
     public static final class g extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f49575d;
+        int f49576d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f49576e;
+        int f49577e;
 
         /* renamed from: i  reason: collision with root package name */
-        Object f49577i;
+        Object f49578i;
 
         /* renamed from: o  reason: collision with root package name */
-        Object f49578o;
+        Object f49579o;
 
         /* renamed from: p  reason: collision with root package name */
-        Object f49579p;
+        Object f49580p;
 
         /* renamed from: q  reason: collision with root package name */
-        Object f49580q;
+        Object f49581q;
 
         /* renamed from: r  reason: collision with root package name */
-        int f49581r;
+        int f49582r;
 
         /* renamed from: s  reason: collision with root package name */
-        final /* synthetic */ f5.b f49582s;
+        final /* synthetic */ f5.b f49583s;
 
         /* renamed from: t  reason: collision with root package name */
-        final /* synthetic */ o f49583t;
+        final /* synthetic */ o f49584t;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         g(f5.b bVar, o oVar, Continuation continuation) {
             super(2, continuation);
-            this.f49582s = bVar;
-            this.f49583t = oVar;
+            this.f49583s = bVar;
+            this.f49584t = oVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new g(this.f49582s, this.f49583t, continuation);
+            return new g(this.f49583s, this.f49584t, continuation);
         }
 
         /* JADX WARN: Removed duplicated region for block: B:10:0x004a  */
@@ -490,19 +490,19 @@ public final class o implements gn.k {
             /*
                 r9 = this;
                 java.lang.Object r0 = gs.b.f()
-                int r1 = r9.f49581r
+                int r1 = r9.f49582r
                 r2 = 1
                 if (r1 == 0) goto L31
                 if (r1 != r2) goto L29
-                int r1 = r9.f49576e
-                int r3 = r9.f49575d
-                java.lang.Object r4 = r9.f49580q
+                int r1 = r9.f49577e
+                int r3 = r9.f49576d
+                java.lang.Object r4 = r9.f49581q
                 java.util.ArrayList r4 = (java.util.ArrayList) r4
-                java.lang.Object r5 = r9.f49579p
+                java.lang.Object r5 = r9.f49580p
                 java.util.ArrayList r5 = (java.util.ArrayList) r5
-                java.lang.Object r6 = r9.f49578o
+                java.lang.Object r6 = r9.f49579o
                 to.f5$b r6 = (to.f5.b) r6
-                java.lang.Object r7 = r9.f49577i
+                java.lang.Object r7 = r9.f49578i
                 to.o r7 = (to.o) r7
                 kotlin.c.b(r10)
                 kotlin.Result r10 = (kotlin.Result) r10
@@ -515,10 +515,10 @@ public final class o implements gn.k {
                 throw r10
             L31:
                 kotlin.c.b(r10)
-                to.f5$b r10 = r9.f49582s
+                to.f5$b r10 = r9.f49583s
                 int r10 = r10.B()
-                to.o r1 = r9.f49583t
-                to.f5$b r3 = r9.f49582s
+                to.o r1 = r9.f49584t
+                to.f5$b r3 = r9.f49583s
                 java.util.ArrayList r4 = new java.util.ArrayList
                 r4.<init>(r10)
                 r5 = 0
@@ -529,13 +529,13 @@ public final class o implements gn.k {
             L48:
                 if (r1 >= r3) goto L80
                 fo.i r10 = to.o.l(r7)
-                r9.f49577i = r7
-                r9.f49578o = r6
-                r9.f49579p = r4
-                r9.f49580q = r4
-                r9.f49575d = r3
-                r9.f49576e = r1
-                r9.f49581r = r2
+                r9.f49578i = r7
+                r9.f49579o = r6
+                r9.f49580p = r4
+                r9.f49581q = r4
+                r9.f49576d = r3
+                r9.f49577e = r1
+                r9.f49582r = r2
                 java.lang.Object r10 = r10.j(r9)
                 if (r10 != r0) goto L63
                 return r0
@@ -553,18 +553,18 @@ public final class o implements gn.k {
             L76:
                 kotlin.jvm.functions.Function1 r10 = r6.y()
                 r10.invoke(r8)
-                kotlin.Unit r10 = kotlin.Unit.f31987a
+                kotlin.Unit r10 = kotlin.Unit.f31988a
                 return r10
             L80:
-                to.o r10 = r9.f49583t
+                to.o r10 = r9.f49584t
                 to.o.o(r10)
-                to.f5$b r10 = r9.f49582s
+                to.f5$b r10 = r9.f49583s
                 kotlin.jvm.functions.Function2 r10 = r10.t()
-                to.o r0 = r9.f49583t
+                to.o r0 = r9.f49584t
                 fo.i r0 = to.o.l(r0)
                 fo.v r0 = r0.b()
                 r10.invoke(r4, r0)
-                kotlin.Unit r10 = kotlin.Unit.f31987a
+                kotlin.Unit r10 = kotlin.Unit.f31988a
                 return r10
             */
             throw new UnsupportedOperationException("Method not decompiled: to.o.g.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -572,7 +572,7 @@ public final class o implements gn.k {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((g) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((g) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -581,39 +581,39 @@ public final class o implements gn.k {
     public static final class h extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f49584d;
+        int f49585d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f49585e;
+        int f49586e;
 
         /* renamed from: i  reason: collision with root package name */
-        Object f49586i;
+        Object f49587i;
 
         /* renamed from: o  reason: collision with root package name */
-        Object f49587o;
+        Object f49588o;
 
         /* renamed from: p  reason: collision with root package name */
-        Object f49588p;
+        Object f49589p;
 
         /* renamed from: q  reason: collision with root package name */
-        int f49589q;
+        int f49590q;
 
         /* renamed from: r  reason: collision with root package name */
-        final /* synthetic */ f5.b f49590r;
+        final /* synthetic */ f5.b f49591r;
 
         /* renamed from: s  reason: collision with root package name */
-        final /* synthetic */ o f49591s;
+        final /* synthetic */ o f49592s;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         h(f5.b bVar, o oVar, Continuation continuation) {
             super(2, continuation);
-            this.f49590r = bVar;
-            this.f49591s = oVar;
+            this.f49591r = bVar;
+            this.f49592s = oVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new h(this.f49590r, this.f49591s, continuation);
+            return new h(this.f49591r, this.f49592s, continuation);
         }
 
         /* JADX WARN: Removed duplicated region for block: B:10:0x0044  */
@@ -630,17 +630,17 @@ public final class o implements gn.k {
             /*
                 r8 = this;
                 java.lang.Object r0 = gs.b.f()
-                int r1 = r8.f49589q
+                int r1 = r8.f49590q
                 r2 = 1
                 if (r1 == 0) goto L2d
                 if (r1 != r2) goto L25
-                int r1 = r8.f49585e
-                int r3 = r8.f49584d
-                java.lang.Object r4 = r8.f49588p
+                int r1 = r8.f49586e
+                int r3 = r8.f49585d
+                java.lang.Object r4 = r8.f49589p
                 java.util.ArrayList r4 = (java.util.ArrayList) r4
-                java.lang.Object r5 = r8.f49587o
+                java.lang.Object r5 = r8.f49588o
                 java.util.ArrayList r5 = (java.util.ArrayList) r5
-                java.lang.Object r6 = r8.f49586i
+                java.lang.Object r6 = r8.f49587i
                 to.o r6 = (to.o) r6
                 kotlin.c.b(r9)
                 kotlin.Result r9 = (kotlin.Result) r9
@@ -653,9 +653,9 @@ public final class o implements gn.k {
                 throw r9
             L2d:
                 kotlin.c.b(r9)
-                to.f5$b r9 = r8.f49590r
+                to.f5$b r9 = r8.f49591r
                 int r9 = r9.B()
-                to.o r1 = r8.f49591s
+                to.o r1 = r8.f49592s
                 java.util.ArrayList r3 = new java.util.ArrayList
                 r3.<init>(r9)
                 r4 = 0
@@ -666,12 +666,12 @@ public final class o implements gn.k {
             L42:
                 if (r1 >= r3) goto L70
                 fo.i r9 = to.o.l(r6)
-                r8.f49586i = r6
-                r8.f49587o = r4
-                r8.f49588p = r4
-                r8.f49584d = r3
-                r8.f49585e = r1
-                r8.f49589q = r2
+                r8.f49587i = r6
+                r8.f49588o = r4
+                r8.f49589p = r4
+                r8.f49585d = r3
+                r8.f49586e = r1
+                r8.f49590q = r2
                 java.lang.Object r9 = r9.j(r8)
                 if (r9 != r0) goto L5b
                 return r0
@@ -691,16 +691,16 @@ public final class o implements gn.k {
                 r4 = r5
                 goto L42
             L70:
-                to.o r9 = r8.f49591s
+                to.o r9 = r8.f49592s
                 to.o.o(r9)
-                to.f5$b r9 = r8.f49590r
+                to.f5$b r9 = r8.f49591r
                 kotlin.jvm.functions.Function2 r9 = r9.b()
                 java.util.List r0 = kotlin.collections.CollectionsKt.l0(r4)
-                to.o r1 = r8.f49591s
+                to.o r1 = r8.f49592s
                 fo.i r1 = to.o.l(r1)
                 fo.v r1 = r1.b()
                 r9.invoke(r0, r1)
-                kotlin.Unit r9 = kotlin.Unit.f31987a
+                kotlin.Unit r9 = kotlin.Unit.f31988a
                 return r9
             */
             throw new UnsupportedOperationException("Method not decompiled: to.o.h.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -708,7 +708,7 @@ public final class o implements gn.k {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((h) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((h) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -717,35 +717,35 @@ public final class o implements gn.k {
     public static final class i extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f49592d;
+        int f49593d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ f5.b f49594i;
+        final /* synthetic */ f5.b f49595i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ androidx.lifecycle.j f49595o;
+        final /* synthetic */ androidx.lifecycle.j f49596o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ long f49596p;
+        final /* synthetic */ long f49597p;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         i(f5.b bVar, androidx.lifecycle.j jVar, long j10, Continuation continuation) {
             super(2, continuation);
-            this.f49594i = bVar;
-            this.f49595o = jVar;
-            this.f49596p = j10;
+            this.f49595i = bVar;
+            this.f49596o = jVar;
+            this.f49597p = j10;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new i(this.f49594i, this.f49595o, this.f49596p, continuation);
+            return new i(this.f49595i, this.f49596o, this.f49597p, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object g10;
             Object f10 = gs.b.f();
-            int i10 = this.f49592d;
+            int i10 = this.f49593d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -755,8 +755,8 @@ public final class o implements gn.k {
                 }
             } else {
                 kotlin.c.b(obj);
-                fo.i iVar = o.this.f49550c;
-                this.f49592d = 1;
+                fo.i iVar = o.this.f49551c;
+                this.f49593d = 1;
                 g10 = iVar.g(this);
                 if (g10 == f10) {
                     return f10;
@@ -766,14 +766,14 @@ public final class o implements gn.k {
                 g10 = null;
             }
             if (Intrinsics.areEqual(g10, kotlin.coroutines.jvm.internal.b.a(true))) {
-                o.this.z(this.f49594i, this.f49595o, this.f49596p);
+                o.this.z(this.f49595i, this.f49596o, this.f49597p);
             }
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((i) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((i) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -784,25 +784,25 @@ public final class o implements gn.k {
         } else {
             i10 = 3;
         }
-        f49548p = i10;
+        f49549p = i10;
     }
 
     public o(xo.b binding, fo.i cameraController, fo.f0 governmentIdFeed) {
         Intrinsics.checkNotNullParameter(binding, "binding");
         Intrinsics.checkNotNullParameter(cameraController, "cameraController");
         Intrinsics.checkNotNullParameter(governmentIdFeed, "governmentIdFeed");
-        this.f49549b = binding;
-        this.f49550c = cameraController;
-        this.f49551d = governmentIdFeed;
+        this.f49550b = binding;
+        this.f49551c = cameraController;
+        this.f49552d = governmentIdFeed;
         FrameLayout root = binding.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
-        this.f49560m = new wo.g(root);
-        ThemeableLottieAnimationView themeableLottieAnimationView = binding.f54969r;
+        this.f49561m = new wo.g(root);
+        ThemeableLottieAnimationView themeableLottieAnimationView = binding.f54970r;
         int parseColor = Color.parseColor("#43957D");
         Context context = binding.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        themeableLottieAnimationView.I(parseColor, bq.s.d(context, f.a.f23298w, null, false, 6, null));
-        FrameLayout innerContentView = binding.f54964m;
+        themeableLottieAnimationView.I(parseColor, bq.s.d(context, f.a.f23299w, null, false, 6, null));
+        FrameLayout innerContentView = binding.f54965m;
         Intrinsics.checkNotNullExpressionValue(innerContentView, "innerContentView");
         lq.f.d(innerContentView, false, false, false, false, 15, null);
         Context context2 = binding.getRoot().getContext();
@@ -813,46 +813,46 @@ public final class o implements gn.k {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void B(o oVar, f5.b bVar, View view) {
-        oVar.f49560m.l(bVar.E(), bVar.k(), bVar.a());
+        oVar.f49561m.l(bVar.E(), bVar.k(), bVar.a());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit C(o oVar, m5 m5Var, xo.b bVar) {
-        View view = oVar.f49554g;
+        View view = oVar.f49555g;
         if (view != null) {
             ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
             if (layoutParams != null) {
                 ConstraintLayout.LayoutParams layoutParams2 = (ConstraintLayout.LayoutParams) layoutParams;
                 ((ViewGroup.MarginLayoutParams) layoutParams2).height = 0;
                 ((ViewGroup.MarginLayoutParams) layoutParams2).width = 0;
-                layoutParams2.f2576i = bVar.f54967p.getId();
-                layoutParams2.f2582l = bVar.f54967p.getId();
-                layoutParams2.f2598t = bVar.f54967p.getId();
-                layoutParams2.f2602v = bVar.f54967p.getId();
+                layoutParams2.f2576i = bVar.f54968p.getId();
+                layoutParams2.f2582l = bVar.f54968p.getId();
+                layoutParams2.f2598t = bVar.f54968p.getId();
+                layoutParams2.f2602v = bVar.f54968p.getId();
                 view.setLayoutParams(layoutParams2);
             } else {
                 throw new NullPointerException("null cannot be cast to non-null type androidx.constraintlayout.widget.ConstraintLayout.LayoutParams");
             }
         }
         m5Var.c();
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit D(f5.b bVar) {
         bVar.f().invoke();
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit E(f5.b bVar) {
         bVar.m().invoke();
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void F(o oVar, CompoundButton compoundButton, boolean z10) {
-        oVar.f49550c.a(z10);
+        oVar.f49551c.a(z10);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -862,28 +862,28 @@ public final class o implements gn.k {
             oVar.J(bVar, bVar.u());
             bVar.s().invoke();
             d10 = ys.i.d(jVar, ys.m0.c(), null, new g(bVar, oVar, null), 2, null);
-            oVar.f49553f = d10;
+            oVar.f49554f = d10;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void H(o oVar, View view) {
-        oVar.f49550c.f();
+        oVar.f49551c.f();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit I(o oVar) {
-        fo.f0 f0Var = oVar.f49551d;
-        fo.i iVar = oVar.f49550c;
-        View overlay = oVar.f49549b.f54966o;
+        fo.f0 f0Var = oVar.f49552d;
+        fo.i iVar = oVar.f49551c;
+        View overlay = oVar.f49550b.f54967o;
         Intrinsics.checkNotNullExpressionValue(overlay, "overlay");
         io.b.a(f0Var, iVar, overlay);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     private final void J(f5.b bVar, long j10) {
-        if (bVar.G() == lo.a.f35949e) {
-            Context context = this.f49549b.getRoot().getContext();
+        if (bVar.G() == lo.a.f35950e) {
+            Context context = this.f49550b.getRoot().getContext();
             Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
             androidx.lifecycle.j a10 = androidx.lifecycle.p.a(bq.f.i(context));
             ys.i.d(a10, ys.m0.c(), null, new i(bVar, a10, j10, null), 2, null);
@@ -927,15 +927,15 @@ public final class o implements gn.k {
         TextBasedComponentStyle base2;
         StepStyles.StepTextBasedComponentStyleContainer base3;
         TextBasedComponentStyle base4;
-        xo.b bVar = this.f49549b;
+        xo.b bVar = this.f49550b;
         float a10 = (float) bq.h.a(8.0d);
         int a11 = (int) bq.h.a(3.0d);
         TextBasedComponentStyle titleStyleValue = governmentIdStepStyle.getTitleStyleValue();
         if (titleStyleValue != null) {
-            TextView title = this.f49549b.D;
+            TextView title = this.f49550b.D;
             Intrinsics.checkNotNullExpressionValue(title, "title");
             uq.f0.n(title, titleStyleValue, null, 2, null);
-            this.f49549b.D.setTextColor(-1);
+            this.f49550b.D.setTextColor(-1);
         }
         Integer governmentIdCaptureFeedBoxBorderColorValue = governmentIdStepStyle.getGovernmentIdCaptureFeedBoxBorderColorValue();
         if (governmentIdCaptureFeedBoxBorderColorValue != null) {
@@ -948,18 +948,18 @@ public final class o implements gn.k {
         Double governmentIdCaptureFeedBoxBorderWidthValue = governmentIdStepStyle.getGovernmentIdCaptureFeedBoxBorderWidthValue();
         if (governmentIdCaptureFeedBoxBorderWidthValue != null) {
             a11 = (int) Math.ceil(bq.h.a(governmentIdCaptureFeedBoxBorderWidthValue.doubleValue()));
-            ImageView imageView = bVar.f54967p;
-            imageView.setPadding(imageView.getPaddingLeft(), ((int) bq.h.a(8.0d)) + a11, bVar.f54967p.getPaddingRight(), bVar.f54967p.getPaddingBottom());
+            ImageView imageView = bVar.f54968p;
+            imageView.setPadding(imageView.getPaddingLeft(), ((int) bq.h.a(8.0d)) + a11, bVar.f54968p.getPaddingRight(), bVar.f54968p.getPaddingBottom());
         }
         float f10 = a11;
         bVar.C.setRadius(a10 + f10);
         TextBasedComponentStyle governmentIdCaptureHintTextStyle = governmentIdStepStyle.getGovernmentIdCaptureHintTextStyle();
         if (governmentIdCaptureHintTextStyle != null) {
-            TextView overlayText = this.f49549b.f54971t;
+            TextView overlayText = this.f49550b.f54972t;
             Intrinsics.checkNotNullExpressionValue(overlayText, "overlayText");
-            uq.f0.m(overlayText, governmentIdCaptureHintTextStyle, kotlin.collections.x0.c(uq.b0.f50918d));
+            uq.f0.m(overlayText, governmentIdCaptureHintTextStyle, kotlin.collections.x0.c(uq.b0.f50919d));
         }
-        TextView disclaimer = this.f49549b.f54960i;
+        TextView disclaimer = this.f49550b.f54961i;
         Intrinsics.checkNotNullExpressionValue(disclaimer, "disclaimer");
         StepStyles.GovernmentIdStepTextBasedComponentStyle textStyle = governmentIdStepStyle.getTextStyle();
         if (textStyle != null && (base3 = textStyle.getBase()) != null && (base4 = base3.getBase()) != null) {
@@ -972,23 +972,23 @@ public final class o implements gn.k {
             fontWeight = StyleElements.FontWeight.NORMAL;
         }
         uq.f0.j(disclaimer, str, fontWeight, null, 4, null);
-        View view = bVar.f54966o;
+        View view = bVar.f54967o;
         GradientDrawable gradientDrawable = new GradientDrawable();
         gradientDrawable.setCornerRadius(a10);
         gradientDrawable.setStroke(a11, bVar.B.getBorderColor());
         view.setBackground(gradientDrawable);
-        ConstraintLayout constraintLayout = bVar.f54968q;
+        ConstraintLayout constraintLayout = bVar.f54969q;
         GradientDrawable gradientDrawable2 = new GradientDrawable();
         gradientDrawable2.setColor(-1);
         gradientDrawable2.setCornerRadii(new float[]{0.0f, 0.0f, 0.0f, 0.0f, a10, a10, a10, a10});
         constraintLayout.setBackground(new InsetDrawable((Drawable) gradientDrawable2, (int) bq.h.a(6.0d)));
         Integer captureHintIconStrokeColor = governmentIdStepStyle.getCaptureHintIconStrokeColor();
         if (captureHintIconStrokeColor != null) {
-            this.f49549b.f54969r.I(Color.parseColor("#000000"), captureHintIconStrokeColor.intValue());
+            this.f49550b.f54970r.I(Color.parseColor("#000000"), captureHintIconStrokeColor.intValue());
         }
         Integer captureHintIconFillColor = governmentIdStepStyle.getCaptureHintIconFillColor();
         if (captureHintIconFillColor != null) {
-            this.f49549b.f54969r.I(Color.parseColor("#43957D"), captureHintIconFillColor.intValue());
+            this.f49550b.f54970r.I(Color.parseColor("#43957D"), captureHintIconFillColor.intValue());
         }
         bVar.B.setStrokeWidth(f10);
         bVar.B.setCornerRadius(a10);
@@ -1000,12 +1000,12 @@ public final class o implements gn.k {
         if (capturePageHeaderIconColorValue == null) {
             return null;
         }
-        this.f49549b.f54965n.setControlsColor(capturePageHeaderIconColorValue.intValue());
-        return Unit.f31987a;
+        this.f49550b.f54966n.setControlsColor(capturePageHeaderIconColorValue.intValue());
+        return Unit.f31988a;
     }
 
     private final boolean u() {
-        Job job = this.f49553f;
+        Job job = this.f49554f;
         if (job != null && job.a()) {
             return true;
         }
@@ -1014,45 +1014,45 @@ public final class o implements gn.k {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void v() {
-        xo.b bVar = this.f49549b;
+        xo.b bVar = this.f49550b;
         bVar.getRoot().setHapticFeedbackEnabled(true);
-        bVar.getRoot().performHapticFeedback(f49548p, 2);
+        bVar.getRoot().performHapticFeedback(f49549p, 2);
     }
 
     private final void w(f5.b bVar) {
-        xo.b bVar2 = this.f49549b;
+        xo.b bVar2 = this.f49550b;
         if (bVar.C()) {
-            View previewDim = bVar2.f54974w;
+            View previewDim = bVar2.f54975w;
             Intrinsics.checkNotNullExpressionValue(previewDim, "previewDim");
             r(previewDim, 0.66f);
             LottieAnimationView scanningAnimation = bVar2.A;
             Intrinsics.checkNotNullExpressionValue(scanningAnimation, "scanningAnimation");
             r(scanningAnimation, 0.0f);
-            ImageView overlayGuide = bVar2.f54967p;
+            ImageView overlayGuide = bVar2.f54968p;
             Intrinsics.checkNotNullExpressionValue(overlayGuide, "overlayGuide");
             r(overlayGuide, 0.0f);
-            ConstraintLayout overlayHint = bVar2.f54968q;
+            ConstraintLayout overlayHint = bVar2.f54969q;
             Intrinsics.checkNotNullExpressionValue(overlayHint, "overlayHint");
             r(overlayHint, 0.0f);
-            ProgressBar progressBar = bVar2.f54977z;
+            ProgressBar progressBar = bVar2.f54978z;
             Intrinsics.checkNotNullExpressionValue(progressBar, "progressBar");
             r(progressBar, 1.0f);
             bVar2.B.setScanningAnimationEnabled(false);
             return;
         }
-        View previewDim2 = bVar2.f54974w;
+        View previewDim2 = bVar2.f54975w;
         Intrinsics.checkNotNullExpressionValue(previewDim2, "previewDim");
         r(previewDim2, 0.0f);
         LottieAnimationView scanningAnimation2 = bVar2.A;
         Intrinsics.checkNotNullExpressionValue(scanningAnimation2, "scanningAnimation");
         r(scanningAnimation2, 1.0f);
-        ImageView overlayGuide2 = bVar2.f54967p;
+        ImageView overlayGuide2 = bVar2.f54968p;
         Intrinsics.checkNotNullExpressionValue(overlayGuide2, "overlayGuide");
         r(overlayGuide2, 1.0f);
-        ImageView overlayGuide3 = bVar2.f54967p;
+        ImageView overlayGuide3 = bVar2.f54968p;
         Intrinsics.checkNotNullExpressionValue(overlayGuide3, "overlayGuide");
         r(overlayGuide3, 1.0f);
-        ProgressBar progressBar2 = bVar2.f54977z;
+        ProgressBar progressBar2 = bVar2.f54978z;
         Intrinsics.checkNotNullExpressionValue(progressBar2, "progressBar");
         r(progressBar2, 0.0f);
         bVar2.B.setScanningAnimationEnabled(true);
@@ -1061,14 +1061,14 @@ public final class o implements gn.k {
     /* JADX INFO: Access modifiers changed from: private */
     public final void x() {
         Job d10;
-        Job job = this.f49558k;
+        Job job = this.f49559k;
         if (job != null) {
             Job.a.a(job, null, 1, null);
         }
-        Context context = this.f49549b.getRoot().getContext();
+        Context context = this.f49550b.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
         d10 = ys.i.d(androidx.lifecycle.p.a(bq.f.i(context)), null, null, new d(null), 3, null);
-        this.f49558k = d10;
+        this.f49559k = d10;
     }
 
     private final void y(f5.b bVar, View view, TextView textView) {
@@ -1076,21 +1076,21 @@ public final class o implements gn.k {
         if (bVar.q() != null) {
             obtain.getText().add(bVar.q());
         } else {
-            int i10 = c.f49564b[bVar.j().ordinal()];
+            int i10 = c.f49565b[bVar.j().ordinal()];
             if (i10 != 1 && i10 != 2 && i10 != 3) {
                 if (i10 != 4) {
                     if (i10 == 5) {
-                        obtain.getText().add(textView.getContext().getString(tp.e.f49803u));
+                        obtain.getText().add(textView.getContext().getString(tp.e.f49804u));
                     } else {
                         throw new as.p();
                     }
                 } else {
-                    obtain.getText().add(textView.getContext().getString(tp.e.f49802t));
+                    obtain.getText().add(textView.getContext().getString(tp.e.f49803t));
                 }
             } else {
-                obtain.getText().add(textView.getContext().getString(tp.e.f49804v));
+                obtain.getText().add(textView.getContext().getString(tp.e.f49805v));
             }
-            obtain.getText().add(view.getContext().getString(tp.e.f49805w));
+            obtain.getText().add(view.getContext().getString(tp.e.f49806w));
         }
         textView.getParent().requestSendAccessibilityEvent(textView, obtain);
     }
@@ -1098,12 +1098,12 @@ public final class o implements gn.k {
     /* JADX INFO: Access modifiers changed from: private */
     public final void z(f5.b bVar, androidx.lifecycle.j jVar, long j10) {
         Job d10;
-        Job job = this.f49555h;
+        Job job = this.f49556h;
         if (job != null) {
             Job.a.a(job, null, 1, null);
         }
         d10 = ys.i.d(jVar, ys.m0.b(), null, new e(j10, this, bVar, null), 2, null);
-        this.f49555h = d10;
+        this.f49556h = d10;
     }
 
     @Override // gn.k
@@ -1119,39 +1119,39 @@ public final class o implements gn.k {
         Job d10;
         Intrinsics.checkNotNullParameter(rendering, "rendering");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-        final xo.b bVar = this.f49549b;
+        final xo.b bVar = this.f49550b;
         Context context = bVar.getRoot().getContext();
         Intrinsics.checkNotNull(context);
         final androidx.lifecycle.j a10 = androidx.lifecycle.p.a(bq.f.i(context));
-        this.f49550c.d();
-        if ((rendering.D() instanceof n1.l) && rendering.G() == lo.a.f35948d && ((n1.l) rendering.D()).E() != bp.t.f7333e) {
+        this.f49551c.d();
+        if ((rendering.D() instanceof n1.l) && rendering.G() == lo.a.f35949d && ((n1.l) rendering.D()).E() != bp.t.f7333e) {
             z10 = true;
         } else {
             z10 = false;
         }
         if (z10) {
-            bVar.f54956e.setVisibility(4);
-            bVar.f54955d.setVisibility(0);
+            bVar.f54957e.setVisibility(4);
+            bVar.f54956d.setVisibility(0);
             z(rendering, a10, rendering.u());
         } else {
-            bVar.f54956e.setVisibility(0);
-            bVar.f54955d.setVisibility(4);
-            this.f49550c.e().setVisibility(0);
+            bVar.f54957e.setVisibility(0);
+            bVar.f54956d.setVisibility(4);
+            this.f49551c.e().setVisibility(0);
         }
-        this.f49550c.h(rendering.o());
-        kq.c.a(viewEnvironment, androidx.core.content.a.c(this.f49549b.getRoot().getContext(), bq.j.f7365a));
-        Integer num = this.f49559l;
+        this.f49551c.h(rendering.o());
+        kq.c.a(viewEnvironment, androidx.core.content.a.c(this.f49550b.getRoot().getContext(), bq.j.f7365a));
+        Integer num = this.f49560l;
         int d11 = rendering.d();
         if (num == null || num.intValue() != d11) {
-            fo.f0 f0Var = this.f49551d;
+            fo.f0 f0Var = this.f49552d;
             b10 = p.b(rendering.j());
             f0Var.m(b10, rendering.c(), CollectionsKt.e(new go.j()));
-            this.f49559l = Integer.valueOf(rendering.d());
+            this.f49560l = Integer.valueOf(rendering.d());
         }
-        this.f49556i = rendering.x();
-        this.f49557j = rendering.l();
-        bVar.f54971t.setText(rendering.v());
-        bVar.f54960i.setText(rendering.n());
+        this.f49557i = rendering.x();
+        this.f49558j = rendering.l();
+        bVar.f54972t.setText(rendering.v());
+        bVar.f54961i.setText(rendering.n());
         bVar.D.setText(rendering.F());
         TextView textView = bVar.D;
         CharSequence text = textView.getText();
@@ -1163,46 +1163,46 @@ public final class o implements gn.k {
         }
         textView.setVisibility(i10);
         if (StringsKt.k0(rendering.n())) {
-            bVar.f54961j.setVisibility(8);
+            bVar.f54962j.setVisibility(8);
         } else {
-            bVar.f54961j.setVisibility(0);
+            bVar.f54962j.setVisibility(0);
         }
         if (rendering.q() != null && !z10) {
-            bVar.f54963l.setVisibility(0);
-            bVar.f54963l.setText(rendering.q());
+            bVar.f54964l.setVisibility(0);
+            bVar.f54964l.setText(rendering.q());
         } else {
-            bVar.f54963l.setVisibility(8);
+            bVar.f54964l.setVisibility(8);
         }
-        Context context2 = bVar.f54971t.getContext();
+        Context context2 = bVar.f54972t.getContext();
         Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
-        if (bq.f.g(context2) && bVar.f54971t.getParent() != null) {
-            View overlay = bVar.f54966o;
+        if (bq.f.g(context2) && bVar.f54972t.getParent() != null) {
+            View overlay = bVar.f54967o;
             Intrinsics.checkNotNullExpressionValue(overlay, "overlay");
-            TextView overlayText = bVar.f54971t;
+            TextView overlayText = bVar.f54972t;
             Intrinsics.checkNotNullExpressionValue(overlayText, "overlayText");
             y(rendering, overlay, overlayText);
         }
-        int i12 = c.f49563a[rendering.i().ordinal()];
+        int i12 = c.f49564a[rendering.i().ordinal()];
         if (i12 != 1) {
             if (i12 != 2) {
                 if (i12 == 3) {
-                    bVar.f54957f.setVisibility(4);
+                    bVar.f54958f.setVisibility(4);
                 } else {
                     throw new as.p();
                 }
             } else {
-                bVar.f54957f.setVisibility(0);
-                bVar.f54957f.setEnabled(true);
+                bVar.f54958f.setVisibility(0);
+                bVar.f54958f.setEnabled(true);
             }
         } else {
-            bVar.f54957f.setEnabled(false);
+            bVar.f54958f.setEnabled(false);
         }
         if (!rendering.J()) {
-            bVar.f54957f.setEnabled(false);
+            bVar.f54958f.setEnabled(false);
         }
-        if (bq.s.b(context, tp.a.f49759h, null, false, false, 14, null)) {
-            bVar.f54971t.setGravity(17);
-            TextView overlayText2 = bVar.f54971t;
+        if (bq.s.b(context, tp.a.f49760h, null, false, false, 14, null)) {
+            bVar.f54972t.setGravity(17);
+            TextView overlayText2 = bVar.f54972t;
             Intrinsics.checkNotNullExpressionValue(overlayText2, "overlayText");
             ViewGroup.LayoutParams layoutParams = overlayText2.getLayoutParams();
             if (layoutParams != null) {
@@ -1213,13 +1213,13 @@ public final class o implements gn.k {
                 throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams");
             }
         }
-        Integer f10 = bq.s.f(context, tp.a.f49767p, null, false, 6, null);
+        Integer f10 = bq.s.f(context, tp.a.f49768p, null, false, 6, null);
         if (f10 != null) {
             i11 = f10.intValue();
         } else {
-            i11 = l4.f49357l;
+            i11 = l4.f49358l;
         }
-        bVar.f54960i.setCompoundDrawablesRelativeWithIntrinsicBounds(i11, 0, 0, 0);
+        bVar.f54961i.setCompoundDrawablesRelativeWithIntrinsicBounds(i11, 0, 0, 0);
         i4 b11 = f4.b(context, rendering.A());
         NextStep.GovernmentId.AssetConfig.CapturePage a11 = rendering.a();
         if (a11 != null) {
@@ -1228,37 +1228,37 @@ public final class o implements gn.k {
             remoteImage = null;
         }
         if (remoteImage != null) {
-            if (this.f49561n == null) {
-                ConstraintLayout overlayIconContainer = bVar.f54970s;
+            if (this.f49562n == null) {
+                ConstraintLayout overlayIconContainer = bVar.f54971s;
                 Intrinsics.checkNotNullExpressionValue(overlayIconContainer, "overlayIconContainer");
-                this.f49561n = wq.b.c(remoteImage, overlayIconContainer, false, 2, null);
-                bVar.f54969r.setVisibility(8);
+                this.f49562n = wq.b.c(remoteImage, overlayIconContainer, false, 2, null);
+                bVar.f54970r.setVisibility(8);
             }
-        } else if (this.f49552e != b11.b()) {
-            this.f49552e = b11.b();
-            bVar.f54969r.setAnimation(b11.b());
-            bVar.f54969r.setVisibility(0);
+        } else if (this.f49553e != b11.b()) {
+            this.f49553e = b11.b();
+            bVar.f54970r.setAnimation(b11.b());
+            bVar.f54970r.setVisibility(0);
         }
-        bVar.f54967p.setImageResource(b11.a());
-        bVar.f54966o.setBackground(f4.a(context, tp.a.f49758g));
-        Integer f11 = bq.s.f(context, tp.a.f49763l, null, false, 6, null);
+        bVar.f54968p.setImageResource(b11.a());
+        bVar.f54967o.setBackground(f4.a(context, tp.a.f49759g));
+        Integer f11 = bq.s.f(context, tp.a.f49764l, null, false, 6, null);
         if (f11 != null) {
             bVar.A.setAnimation(f11.intValue());
-            bVar.f54966o.setVisibility(0);
+            bVar.f54967o.setVisibility(0);
             bVar.B.setVisibility(8);
         } else {
             bVar.A.setVisibility(4);
-            bVar.f54966o.setVisibility(4);
+            bVar.f54967o.setVisibility(4);
             bVar.B.setVisibility(0);
         }
-        if ((rendering.A() instanceof f5.d.c) && this.f49554g == null) {
+        if ((rendering.A() instanceof f5.d.c) && this.f49555g == null) {
             final m5 m5Var = new m5(context);
             View m10 = pq.r4.m(((f5.d.c) rendering.A()).b(), m5Var, ((f5.d.c) rendering.A()).a());
-            this.f49554g = m10;
-            bVar.f54956e.addView(m10);
+            this.f49555g = m10;
+            bVar.f54957e.addView(m10);
             bVar.A.setVisibility(4);
-            bVar.f54967p.setVisibility(4);
-            View view = this.f49554g;
+            bVar.f54968p.setVisibility(4);
+            View view = this.f49555g;
             if (view != null) {
                 lq.s.b(view, new Function0() { // from class: to.e
                     @Override // kotlin.jvm.functions.Function0
@@ -1291,24 +1291,24 @@ public final class o implements gn.k {
                 return E2;
             }
         };
-        Pi2NavigationBar navigationBar = bVar.f54965n;
+        Pi2NavigationBar navigationBar = bVar.f54966n;
         Intrinsics.checkNotNullExpressionValue(navigationBar, "navigationBar");
         FrameLayout root = bVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         jq.e.b(w10, function0, function02, navigationBar, root);
-        bVar.f54962k.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: to.h
+        bVar.f54963k.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() { // from class: to.h
             @Override // android.widget.CompoundButton.OnCheckedChangeListener
             public final void onCheckedChanged(CompoundButton compoundButton, boolean z11) {
                 o.F(o.this, compoundButton, z11);
             }
         });
-        bVar.f54957f.setOnClickListener(new View.OnClickListener() { // from class: to.i
+        bVar.f54958f.setOnClickListener(new View.OnClickListener() { // from class: to.i
             @Override // android.view.View.OnClickListener
             public final void onClick(View view2) {
                 o.G(o.this, rendering, a10, view2);
             }
         });
-        this.f49550c.e().setOnClickListener(new View.OnClickListener() { // from class: to.j
+        this.f49551c.e().setOnClickListener(new View.OnClickListener() { // from class: to.j
             @Override // android.view.View.OnClickListener
             public final void onClick(View view2) {
                 o.H(o.this, view2);
@@ -1318,11 +1318,11 @@ public final class o implements gn.k {
             J(rendering, rendering.u());
             jVar = a10;
             d10 = ys.i.d(jVar, ys.m0.c(), null, new h(rendering, this, null), 2, null);
-            this.f49553f = d10;
+            this.f49554f = d10;
         } else {
             jVar = a10;
         }
-        lq.s.b(this.f49550c.e(), new Function0() { // from class: to.k
+        lq.s.b(this.f49551c.e(), new Function0() { // from class: to.k
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit I;
@@ -1332,28 +1332,28 @@ public final class o implements gn.k {
         });
         w(rendering);
         if (rendering.k() != null && rendering.k().b().length() != 0) {
-            bVar.f54959h.setVisibility(0);
-            bVar.f54959h.setText(rendering.k().b());
-            bVar.f54959h.setOnClickListener(new View.OnClickListener() { // from class: to.l
+            bVar.f54960h.setVisibility(0);
+            bVar.f54960h.setText(rendering.k().b());
+            bVar.f54960h.setOnClickListener(new View.OnClickListener() { // from class: to.l
                 @Override // android.view.View.OnClickListener
                 public final void onClick(View view2) {
                     o.B(o.this, rendering, view2);
                 }
             });
         } else {
-            bVar.f54959h.setVisibility(4);
+            bVar.f54960h.setVisibility(4);
         }
-        this.f49560m.o();
-        if (((rendering.D() instanceof n1.f) || rendering.p()) && (job = this.f49555h) != null) {
+        this.f49561m.o();
+        if (((rendering.D() instanceof n1.f) || rendering.p()) && (job = this.f49556h) != null) {
             Job.a.a(job, null, 1, null);
         }
         if (rendering.p()) {
             ys.i.d(jVar, ys.m0.c(), null, new f(rendering, null), 2, null);
         }
         if (rendering.v().length() == 0) {
-            bVar.f54968q.setVisibility(8);
+            bVar.f54969q.setVisibility(8);
         } else {
-            bVar.f54968q.setVisibility(0);
+            bVar.f54969q.setVisibility(0);
         }
     }
 }

@@ -15,44 +15,44 @@ import rd.w0;
 public abstract class MappingTrackSelector extends q {
 
     /* renamed from: c  reason: collision with root package name */
-    private MappedTrackInfo f13729c;
+    private MappedTrackInfo f13730c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class MappedTrackInfo {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f13730a;
+        private final int f13731a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String[] f13731b;
+        private final String[] f13732b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int[] f13732c;
+        private final int[] f13733c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final w0[] f13733d;
+        private final w0[] f13734d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final int[] f13734e;
+        private final int[] f13735e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final int[][][] f13735f;
+        private final int[][][] f13736f;
 
         /* renamed from: g  reason: collision with root package name */
-        private final w0 f13736g;
+        private final w0 f13737g;
 
         MappedTrackInfo(String[] strArr, int[] iArr, w0[] w0VarArr, int[] iArr2, int[][][] iArr3, w0 w0Var) {
-            this.f13731b = strArr;
-            this.f13732c = iArr;
-            this.f13733d = w0VarArr;
-            this.f13735f = iArr3;
-            this.f13734e = iArr2;
-            this.f13736g = w0Var;
-            this.f13730a = iArr.length;
+            this.f13732b = strArr;
+            this.f13733c = iArr;
+            this.f13734d = w0VarArr;
+            this.f13736f = iArr3;
+            this.f13735e = iArr2;
+            this.f13737g = w0Var;
+            this.f13731a = iArr.length;
         }
 
         public int a(int i10, int i11, boolean z10) {
-            int i12 = this.f13733d[i10].b(i11).f46496d;
+            int i12 = this.f13734d[i10].b(i11).f46497d;
             int[] iArr = new int[i12];
             int i13 = 0;
             for (int i14 = 0; i14 < i12; i14++) {
@@ -72,37 +72,37 @@ public abstract class MappingTrackSelector extends q {
             boolean z10 = false;
             int i14 = 0;
             while (i12 < iArr.length) {
-                String str2 = this.f13733d[i10].b(i11).c(iArr[i12]).f12304w;
+                String str2 = this.f13734d[i10].b(i11).c(iArr[i12]).f12305w;
                 int i15 = i14 + 1;
                 if (i14 == 0) {
                     str = str2;
                 } else {
                     z10 |= !oe.w0.c(str, str2);
                 }
-                i13 = Math.min(i13, w1.n(this.f13735f[i10][i11][i12]));
+                i13 = Math.min(i13, w1.n(this.f13736f[i10][i11][i12]));
                 i12++;
                 i14 = i15;
             }
             if (z10) {
-                return Math.min(i13, this.f13734e[i10]);
+                return Math.min(i13, this.f13735e[i10]);
             }
             return i13;
         }
 
         public int c(int i10, int i11, int i12) {
-            return this.f13735f[i10][i11][i12];
+            return this.f13736f[i10][i11][i12];
         }
 
         public int d() {
-            return this.f13730a;
+            return this.f13731a;
         }
 
         public int e(int i10) {
-            return this.f13732c[i10];
+            return this.f13733c[i10];
         }
 
         public w0 f(int i10) {
-            return this.f13733d[i10];
+            return this.f13734d[i10];
         }
 
         public int g(int i10, int i11, int i12) {
@@ -110,7 +110,7 @@ public abstract class MappingTrackSelector extends q {
         }
 
         public w0 h() {
-            return this.f13736g;
+            return this.f13737g;
         }
     }
 
@@ -122,7 +122,7 @@ public abstract class MappingTrackSelector extends q {
         for (int i11 = 0; i11 < w1VarArr.length; i11++) {
             w1 w1Var = w1VarArr[i11];
             int i12 = 0;
-            for (int i13 = 0; i13 < u0Var.f46496d; i13++) {
+            for (int i13 = 0; i13 < u0Var.f46497d; i13++) {
                 i12 = Math.max(i12, w1.F(w1Var.a(u0Var.c(i13))));
             }
             if (iArr[i11] == 0) {
@@ -140,8 +140,8 @@ public abstract class MappingTrackSelector extends q {
     }
 
     private static int[] n(w1 w1Var, u0 u0Var) {
-        int[] iArr = new int[u0Var.f46496d];
-        for (int i10 = 0; i10 < u0Var.f46496d; i10++) {
+        int[] iArr = new int[u0Var.f46497d];
+        for (int i10 = 0; i10 < u0Var.f46497d; i10++) {
             iArr[i10] = w1Var.a(u0Var.c(i10));
         }
         return iArr;
@@ -158,7 +158,7 @@ public abstract class MappingTrackSelector extends q {
 
     @Override // ke.q
     public final void h(Object obj) {
-        this.f13729c = (MappedTrackInfo) obj;
+        this.f13730c = (MappedTrackInfo) obj;
     }
 
     @Override // ke.q
@@ -170,21 +170,21 @@ public abstract class MappingTrackSelector extends q {
         u0[][] u0VarArr = new u0[length];
         int[][][] iArr2 = new int[w1VarArr.length + 1][];
         for (int i10 = 0; i10 < length; i10++) {
-            int i11 = w0Var.f46512d;
+            int i11 = w0Var.f46513d;
             u0VarArr[i10] = new u0[i11];
             iArr2[i10] = new int[i11];
         }
         int[] o10 = o(w1VarArr);
-        for (int i12 = 0; i12 < w0Var.f46512d; i12++) {
+        for (int i12 = 0; i12 < w0Var.f46513d; i12++) {
             u0 b10 = w0Var.b(i12);
-            if (b10.f46498i == 5) {
+            if (b10.f46499i == 5) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             int l10 = l(w1VarArr, b10, iArr, z10);
             if (l10 == w1VarArr.length) {
-                n10 = new int[b10.f46496d];
+                n10 = new int[b10.f46497d];
             } else {
                 n10 = n(w1VarArr[l10], b10);
             }
@@ -209,7 +209,7 @@ public abstract class MappingTrackSelector extends q {
     }
 
     public final MappedTrackInfo m() {
-        return this.f13729c;
+        return this.f13730c;
     }
 
     protected abstract Pair p(MappedTrackInfo mappedTrackInfo, int[][][] iArr, int[] iArr2, r.b bVar, Timeline timeline);

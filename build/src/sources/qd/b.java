@@ -8,23 +8,23 @@ import java.util.List;
 public final class b implements k.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final k.a f44024a;
+    private final k.a f44025a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f44025b;
+    private final List f44026b;
 
     public b(k.a aVar, List list) {
-        this.f44024a = aVar;
-        this.f44025b = list;
+        this.f44025a = aVar;
+        this.f44026b = list;
     }
 
     @Override // com.google.android.exoplayer2.upstream.k.a
     /* renamed from: b */
     public a a(Uri uri, InputStream inputStream) {
-        a aVar = (a) this.f44024a.a(uri, inputStream);
-        List list = this.f44025b;
+        a aVar = (a) this.f44025a.a(uri, inputStream);
+        List list = this.f44026b;
         if (list != null && !list.isEmpty()) {
-            return (a) aVar.a(this.f44025b);
+            return (a) aVar.a(this.f44026b);
         }
         return aVar;
     }

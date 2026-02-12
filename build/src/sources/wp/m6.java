@@ -22,59 +22,59 @@ public abstract class m6 {
     public /* synthetic */ class a {
 
         /* renamed from: a */
-        public static final /* synthetic */ int[] f53241a;
+        public static final /* synthetic */ int[] f53242a;
 
         static {
             int[] iArr = new int[x5.d.c.EnumC0755c.values().length];
             try {
-                iArr[x5.d.c.EnumC0755c.f53860d.ordinal()] = 1;
+                iArr[x5.d.c.EnumC0755c.f53861d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[x5.d.c.EnumC0755c.f53861e.ordinal()] = 2;
+                iArr[x5.d.c.EnumC0755c.f53862e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[x5.d.c.EnumC0755c.f53862i.ordinal()] = 3;
+                iArr[x5.d.c.EnumC0755c.f53863i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr[x5.d.c.EnumC0755c.f53863o.ordinal()] = 4;
+                iArr[x5.d.c.EnumC0755c.f53864o.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                iArr[x5.d.c.EnumC0755c.f53864p.ordinal()] = 5;
+                iArr[x5.d.c.EnumC0755c.f53865p.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                iArr[x5.d.c.EnumC0755c.f53865q.ordinal()] = 6;
+                iArr[x5.d.c.EnumC0755c.f53866q.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                iArr[x5.d.c.EnumC0755c.f53866r.ordinal()] = 7;
+                iArr[x5.d.c.EnumC0755c.f53867r.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                iArr[x5.d.c.EnumC0755c.f53867s.ordinal()] = 8;
+                iArr[x5.d.c.EnumC0755c.f53868s.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                iArr[x5.d.c.EnumC0755c.f53868t.ordinal()] = 9;
+                iArr[x5.d.c.EnumC0755c.f53869t.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                iArr[x5.d.c.EnumC0755c.f53869u.ordinal()] = 10;
+                iArr[x5.d.c.EnumC0755c.f53870u.ordinal()] = 10;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                iArr[x5.d.c.EnumC0755c.f53870v.ordinal()] = 11;
+                iArr[x5.d.c.EnumC0755c.f53871v.ordinal()] = 11;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                iArr[x5.d.c.EnumC0755c.f53871w.ordinal()] = 12;
+                iArr[x5.d.c.EnumC0755c.f53872w.ordinal()] = 12;
             } catch (NoSuchFieldError unused12) {
             }
-            f53241a = iArr;
+            f53242a = iArr;
         }
     }
 
@@ -123,7 +123,7 @@ public abstract class m6 {
                 }
             }, 1, null);
             c15.d(c14);
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
         fo.k kVar = (fo.k) cameraError;
         if (!(kVar instanceof fo.q0)) {
@@ -175,40 +175,40 @@ public abstract class m6 {
                 throw new as.p();
             }
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final Unit m(Throwable th2, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         String canonicalName = th2.getClass().getCanonicalName();
         action.d(new x5.c.C0748c(new InternalErrorInfo.CameraErrorInfo("Unexpected camera error with type " + canonicalName)));
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final Unit n(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         action.d(new x5.c.C0748c(new InternalErrorInfo.CameraErrorInfo("Unable to find a camera that satisfies the requirements for the selfie flow.")));
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final Unit o(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         y1.a((x1) action.c());
         action.e(new x1.h(false, false, i(action, false), ((x1) action.c()).p(), 3, null));
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final Unit p(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         action.d(new x5.c.C0748c(new InternalErrorInfo.CameraErrorInfo("Unsupported device.")));
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final Unit q(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         y1.a((x1) action.c());
         action.e(new x1.h(false, false, i(action, false), ((x1) action.c()).p(), 3, null));
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final void r(k.a aVar, dr.a aVar2) {
@@ -234,15 +234,15 @@ public abstract class m6 {
         }
         if (o10 == null) {
             if (((x5.b) action.b()).b()) {
-                action.d(x5.c.a.f53737a);
+                action.d(x5.c.a.f53738a);
             } else {
-                action.d(x5.c.b.f53738a);
+                action.d(x5.c.b.f53739a);
             }
         } else {
             o10.r(true);
             action.e(o10);
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final void t(Context context, k.a renderContext, x5.b renderProps, boolean z10) {
@@ -250,9 +250,9 @@ public abstract class m6 {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(renderContext, "renderContext");
         Intrinsics.checkNotNullParameter(renderProps, "renderProps");
-        List r10 = CollectionsKt.r(rp.d0.f47574d);
+        List r10 = CollectionsKt.r(rp.d0.f47575d);
         if (z10 && bq.f.f(context) && renderProps.z().b()) {
-            r10.add(rp.d0.f47575e);
+            r10.add(rp.d0.f47576e);
         }
         final List a10 = rp.l1.a(context, r10);
         if (a10.isEmpty()) {
@@ -274,12 +274,12 @@ public abstract class m6 {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         x1 x1Var = (x1) action.c();
         if (x1Var instanceof x1.o) {
-            action.e(x1.o.t((x1.o) x1Var, !list.contains(rp.d0.f47574d), !list.contains(rp.d0.f47575e), null, null, null, false, null, false, 252, null));
+            action.e(x1.o.t((x1.o) x1Var, !list.contains(rp.d0.f47575d), !list.contains(rp.d0.f47576e), null, null, null, false, null, false, 252, null));
         } else {
             y1.a((x1) action.c());
             action.e(new x1.h(false, false, i(action, false), ((x1) action.c()).p(), 3, null));
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     public static final x5.d.c.a v(x5.b bVar) {
@@ -324,26 +324,26 @@ public abstract class m6 {
 
     public static final x5.d.a.b x(x5.d.c.EnumC0755c enumC0755c) {
         Intrinsics.checkNotNullParameter(enumC0755c, "<this>");
-        switch (a.f53241a[enumC0755c.ordinal()]) {
+        switch (a.f53242a[enumC0755c.ordinal()]) {
             case 1:
-                return x5.d.a.b.f53792d;
+                return x5.d.a.b.f53793d;
             case 2:
             case 3:
-                return x5.d.a.b.f53793e;
+                return x5.d.a.b.f53794e;
             case 4:
             case 5:
             case 6:
-                return x5.d.a.b.f53794i;
+                return x5.d.a.b.f53795i;
             case 7:
             case 8:
             case 9:
-                return x5.d.a.b.f53795o;
+                return x5.d.a.b.f53796o;
             case 10:
-                return x5.d.a.b.f53796p;
+                return x5.d.a.b.f53797p;
             case 11:
-                return x5.d.a.b.f53792d;
+                return x5.d.a.b.f53793d;
             case 12:
-                return x5.d.a.b.f53792d;
+                return x5.d.a.b.f53793d;
             default:
                 throw new as.p();
         }

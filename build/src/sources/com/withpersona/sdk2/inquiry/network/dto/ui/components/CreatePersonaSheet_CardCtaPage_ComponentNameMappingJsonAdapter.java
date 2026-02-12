@@ -66,7 +66,7 @@ public final class CreatePersonaSheet_CardCtaPage_ComponentNameMappingJsonAdapte
         }
         Constructor<CreatePersonaSheet.CardCtaPage.ComponentNameMapping> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = CreatePersonaSheet.CardCtaPage.ComponentNameMapping.class.getDeclaredConstructor(String.class, String.class, Integer.TYPE, c.f21827c);
+            constructor = CreatePersonaSheet.CardCtaPage.ComponentNameMapping.class.getDeclaredConstructor(String.class, String.class, Integer.TYPE, c.f21828c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

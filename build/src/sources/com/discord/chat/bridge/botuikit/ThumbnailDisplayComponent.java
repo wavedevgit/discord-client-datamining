@@ -29,7 +29,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9255id;
+    private final String f9256id;
     private final boolean isObscure;
     private final boolean isObscureAwaitingScan;
     private final boolean isSpoiler;
@@ -67,7 +67,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
             v1.b(i10, 16375, ThumbnailDisplayComponent$$serializer.INSTANCE.getDescriptor());
         }
         this.type = i11;
-        this.f9255id = str;
+        this.f9256id = str;
         this.media = unfurledMediaItem;
         if ((i10 & 8) == 0) {
             this.description = null;
@@ -127,14 +127,14 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
             java.lang.String r3 = r8.description
             if (r3 == 0) goto L2b
         L24:
-            tt.n2 r3 = tt.n2.f50032a
+            tt.n2 r3 = tt.n2.f50033a
             java.lang.String r4 = r8.description
             r9.o(r10, r0, r3, r4)
         L2b:
             r0 = 4
             boolean r3 = r8.isSpoiler
             r9.x(r10, r0, r3)
-            tt.n2 r0 = tt.n2.f50032a
+            tt.n2 r0 = tt.n2.f50033a
             java.lang.String r3 = r8.spoilerDescription
             r4 = 5
             r9.o(r10, r4, r0, r3)
@@ -153,7 +153,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
             r3 = 10
             java.lang.String r4 = r8.obscureDescription
             r9.o(r10, r3, r0, r4)
-            tt.h r3 = tt.h.f49996a
+            tt.h r3 = tt.h.f49997a
             java.lang.Boolean r4 = r8.verifyAge
             r5 = 11
             r9.o(r10, r5, r3, r4)
@@ -247,7 +247,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
 
     @NotNull
     public final String component2() {
-        return this.f9255id;
+        return this.f9256id;
     }
 
     @NotNull
@@ -294,7 +294,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
         }
         if (obj instanceof ThumbnailDisplayComponent) {
             ThumbnailDisplayComponent thumbnailDisplayComponent = (ThumbnailDisplayComponent) obj;
-            return this.type == thumbnailDisplayComponent.type && Intrinsics.areEqual(this.f9255id, thumbnailDisplayComponent.f9255id) && Intrinsics.areEqual(this.media, thumbnailDisplayComponent.media) && Intrinsics.areEqual(this.description, thumbnailDisplayComponent.description) && this.isSpoiler == thumbnailDisplayComponent.isSpoiler && Intrinsics.areEqual(this.spoilerDescription, thumbnailDisplayComponent.spoilerDescription) && this.isObscure == thumbnailDisplayComponent.isObscure && this.isObscureAwaitingScan == thumbnailDisplayComponent.isObscureAwaitingScan && this.obscureHideControls == thumbnailDisplayComponent.obscureHideControls && this.obscureIsOpaque == thumbnailDisplayComponent.obscureIsOpaque && Intrinsics.areEqual(this.obscureDescription, thumbnailDisplayComponent.obscureDescription) && Intrinsics.areEqual(this.verifyAge, thumbnailDisplayComponent.verifyAge) && Intrinsics.areEqual(this.descriptionHint, thumbnailDisplayComponent.descriptionHint) && Intrinsics.areEqual(this.accessibilityRole, thumbnailDisplayComponent.accessibilityRole);
+            return this.type == thumbnailDisplayComponent.type && Intrinsics.areEqual(this.f9256id, thumbnailDisplayComponent.f9256id) && Intrinsics.areEqual(this.media, thumbnailDisplayComponent.media) && Intrinsics.areEqual(this.description, thumbnailDisplayComponent.description) && this.isSpoiler == thumbnailDisplayComponent.isSpoiler && Intrinsics.areEqual(this.spoilerDescription, thumbnailDisplayComponent.spoilerDescription) && this.isObscure == thumbnailDisplayComponent.isObscure && this.isObscureAwaitingScan == thumbnailDisplayComponent.isObscureAwaitingScan && this.obscureHideControls == thumbnailDisplayComponent.obscureHideControls && this.obscureIsOpaque == thumbnailDisplayComponent.obscureIsOpaque && Intrinsics.areEqual(this.obscureDescription, thumbnailDisplayComponent.obscureDescription) && Intrinsics.areEqual(this.verifyAge, thumbnailDisplayComponent.verifyAge) && Intrinsics.areEqual(this.descriptionHint, thumbnailDisplayComponent.descriptionHint) && Intrinsics.areEqual(this.accessibilityRole, thumbnailDisplayComponent.accessibilityRole);
         }
         return false;
     }
@@ -316,7 +316,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
     @Override // com.discord.chat.bridge.botuikit.Component
     @NotNull
     public String getId() {
-        return this.f9255id;
+        return this.f9256id;
     }
 
     @NotNull
@@ -360,7 +360,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
     }
 
     public int hashCode() {
-        int hashCode = ((((Integer.hashCode(this.type) * 31) + this.f9255id.hashCode()) * 31) + this.media.hashCode()) * 31;
+        int hashCode = ((((Integer.hashCode(this.type) * 31) + this.f9256id.hashCode()) * 31) + this.media.hashCode()) * 31;
         String str = this.description;
         int hashCode2 = (((hashCode + (str == null ? 0 : str.hashCode())) * 31) + Boolean.hashCode(this.isSpoiler)) * 31;
         String str2 = this.spoilerDescription;
@@ -386,7 +386,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
     @NotNull
     public String toString() {
         int i10 = this.type;
-        String str = this.f9255id;
+        String str = this.f9256id;
         UnfurledMediaItem unfurledMediaItem = this.media;
         String str2 = this.description;
         boolean z10 = this.isSpoiler;
@@ -414,7 +414,7 @@ public final class ThumbnailDisplayComponent extends Component implements Spoile
         Intrinsics.checkNotNullParameter(descriptionHint, "descriptionHint");
         Intrinsics.checkNotNullParameter(accessibilityRole, "accessibilityRole");
         this.type = i10;
-        this.f9255id = id2;
+        this.f9256id = id2;
         this.media = media;
         this.description = str;
         this.isSpoiler = z10;

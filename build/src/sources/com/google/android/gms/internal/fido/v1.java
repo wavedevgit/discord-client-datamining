@@ -10,32 +10,32 @@ import java.util.NoSuchElementException;
 public final class v1 extends m1 {
 
     /* renamed from: q  reason: collision with root package name */
-    static final v1 f14813q;
+    static final v1 f14814q;
 
     /* renamed from: p  reason: collision with root package name */
-    final transient e1 f14814p;
+    final transient e1 f14815p;
 
     static {
-        int i10 = e1.f14667i;
-        f14813q = new v1(t1.f14795q, q1.f14769d);
+        int i10 = e1.f14668i;
+        f14814q = new v1(t1.f14796q, q1.f14770d);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public v1(e1 e1Var, Comparator comparator) {
         super(comparator);
-        this.f14814p = e1Var;
+        this.f14815p = e1Var;
     }
 
     @Override // java.util.NavigableSet
     /* renamed from: A */
     public final c2 descendingIterator() {
-        return this.f14814p.g().listIterator(0);
+        return this.f14815p.g().listIterator(0);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final int B(Object obj, boolean z10) {
         obj.getClass();
-        int binarySearch = Collections.binarySearch(this.f14814p, obj, this.f14737i);
+        int binarySearch = Collections.binarySearch(this.f14815p, obj, this.f14738i);
         if (binarySearch >= 0) {
             if (z10) {
                 return binarySearch + 1;
@@ -48,7 +48,7 @@ public final class v1 extends m1 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final int C(Object obj, boolean z10) {
         obj.getClass();
-        int binarySearch = Collections.binarySearch(this.f14814p, obj, this.f14737i);
+        int binarySearch = Collections.binarySearch(this.f14815p, obj, this.f14738i);
         if (binarySearch >= 0) {
             if (z10) {
                 return binarySearch;
@@ -61,46 +61,46 @@ public final class v1 extends m1 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public final v1 D(int i10, int i11) {
         if (i10 == 0) {
-            if (i11 != this.f14814p.size()) {
+            if (i11 != this.f14815p.size()) {
                 i10 = 0;
             } else {
                 return this;
             }
         }
         if (i10 < i11) {
-            e1 e1Var = this.f14814p;
-            return new v1(e1Var.subList(i10, i11), this.f14737i);
+            e1 e1Var = this.f14815p;
+            return new v1(e1Var.subList(i10, i11), this.f14738i);
         }
-        return m1.x(this.f14737i);
+        return m1.x(this.f14738i);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.fido.z0
     public final int b(Object[] objArr, int i10) {
-        return this.f14814p.b(objArr, 0);
+        return this.f14815p.b(objArr, 0);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.fido.z0
     public final int c() {
-        return this.f14814p.c();
+        return this.f14815p.c();
     }
 
     @Override // java.util.NavigableSet
     public final Object ceiling(Object obj) {
-        e1 e1Var = this.f14814p;
+        e1 e1Var = this.f14815p;
         int C = C(obj, true);
         if (C == e1Var.size()) {
             return null;
         }
-        return this.f14814p.get(C);
+        return this.f14815p.get(C);
     }
 
     @Override // com.google.android.gms.internal.fido.z0, java.util.AbstractCollection, java.util.Collection, java.util.List
     public final boolean contains(Object obj) {
         if (obj != null) {
             try {
-                if (Collections.binarySearch(this.f14814p, obj, this.f14737i) >= 0) {
+                if (Collections.binarySearch(this.f14815p, obj, this.f14738i) >= 0) {
                     return true;
                 }
             } catch (ClassCastException unused) {
@@ -115,8 +115,8 @@ public final class v1 extends m1 {
         if (collection instanceof p1) {
             collection = ((p1) collection).zza();
         }
-        if (b2.a(this.f14737i, collection) && collection.size() > 1) {
-            d2 listIterator = this.f14814p.listIterator(0);
+        if (b2.a(this.f14738i, collection) && collection.size() > 1) {
+            d2 listIterator = this.f14815p.listIterator(0);
             Iterator it = collection.iterator();
             if (!listIterator.hasNext()) {
                 return false;
@@ -125,7 +125,7 @@ public final class v1 extends m1 {
             E next2 = listIterator.next();
             while (true) {
                 try {
-                    int compare = this.f14737i.compare(next2, next);
+                    int compare = this.f14738i.compare(next2, next);
                     if (compare < 0) {
                         if (!listIterator.hasNext()) {
                             return false;
@@ -150,12 +150,12 @@ public final class v1 extends m1 {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.fido.z0
     public final int d() {
-        return this.f14814p.d();
+        return this.f14815p.d();
     }
 
     @Override // com.google.android.gms.internal.fido.h1, com.google.android.gms.internal.fido.z0
     public final c2 e() {
-        return this.f14814p.listIterator(0);
+        return this.f14815p.listIterator(0);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:20:0x0038 A[Catch: ClassCastException | NoSuchElementException -> 0x004c, TryCatch #0 {ClassCastException | NoSuchElementException -> 0x004c, blocks: (B:17:0x002c, B:18:0x0032, B:20:0x0038, B:22:0x0042), top: B:29:0x002c }] */
@@ -177,7 +177,7 @@ public final class v1 extends m1 {
             return r2
         La:
             java.util.Set r7 = (java.util.Set) r7
-            com.google.android.gms.internal.fido.e1 r1 = r6.f14814p
+            com.google.android.gms.internal.fido.e1 r1 = r6.f14815p
             int r1 = r1.size()
             int r3 = r7.size()
             if (r1 == r3) goto L19
@@ -187,11 +187,11 @@ public final class v1 extends m1 {
             if (r1 == 0) goto L20
             return r0
         L20:
-            java.util.Comparator r1 = r6.f14737i
+            java.util.Comparator r1 = r6.f14738i
             boolean r1 = com.google.android.gms.internal.fido.b2.a(r1, r7)
             if (r1 == 0) goto L4d
             java.util.Iterator r7 = r7.iterator()
-            com.google.android.gms.internal.fido.e1 r1 = r6.f14814p     // Catch: java.lang.Throwable -> L4c
+            com.google.android.gms.internal.fido.e1 r1 = r6.f14815p     // Catch: java.lang.Throwable -> L4c
             com.google.android.gms.internal.fido.d2 r1 = r1.listIterator(r2)     // Catch: java.lang.Throwable -> L4c
         L32:
             boolean r3 = r1.hasNext()     // Catch: java.lang.Throwable -> L4c
@@ -199,7 +199,7 @@ public final class v1 extends m1 {
             java.lang.Object r3 = r1.next()     // Catch: java.lang.Throwable -> L4c
             java.lang.Object r4 = r7.next()     // Catch: java.lang.Throwable -> L4c
             if (r4 == 0) goto L4a
-            java.util.Comparator r5 = r6.f14737i     // Catch: java.lang.Throwable -> L4c
+            java.util.Comparator r5 = r6.f14738i     // Catch: java.lang.Throwable -> L4c
             int r3 = r5.compare(r3, r4)     // Catch: java.lang.Throwable -> L4c
             if (r3 == 0) goto L32
         L4a:
@@ -218,13 +218,13 @@ public final class v1 extends m1 {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.gms.internal.fido.z0
     public final Object[] f() {
-        return this.f14814p.f();
+        return this.f14815p.f();
     }
 
     @Override // com.google.android.gms.internal.fido.m1, java.util.SortedSet
     public final Object first() {
         if (!isEmpty()) {
-            return this.f14814p.get(0);
+            return this.f14815p.get(0);
         }
         throw new NoSuchElementException();
     }
@@ -235,33 +235,33 @@ public final class v1 extends m1 {
         if (B == -1) {
             return null;
         }
-        return this.f14814p.get(B);
+        return this.f14815p.get(B);
     }
 
     @Override // java.util.NavigableSet
     public final Object higher(Object obj) {
-        e1 e1Var = this.f14814p;
+        e1 e1Var = this.f14815p;
         int C = C(obj, false);
         if (C == e1Var.size()) {
             return null;
         }
-        return this.f14814p.get(C);
+        return this.f14815p.get(C);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set, java.util.NavigableSet
     public final /* synthetic */ Iterator iterator() {
-        return this.f14814p.listIterator(0);
+        return this.f14815p.listIterator(0);
     }
 
     @Override // com.google.android.gms.internal.fido.h1
     public final e1 k() {
-        return this.f14814p;
+        return this.f14815p;
     }
 
     @Override // com.google.android.gms.internal.fido.m1, java.util.SortedSet
     public final Object last() {
         if (!isEmpty()) {
-            e1 e1Var = this.f14814p;
+            e1 e1Var = this.f14815p;
             return e1Var.get(e1Var.size() - 1);
         }
         throw new NoSuchElementException();
@@ -273,21 +273,21 @@ public final class v1 extends m1 {
         if (B == -1) {
             return null;
         }
-        return this.f14814p.get(B);
+        return this.f14815p.get(B);
     }
 
     @Override // com.google.android.gms.internal.fido.m1
     final m1 r() {
-        Comparator reverseOrder = Collections.reverseOrder(this.f14737i);
+        Comparator reverseOrder = Collections.reverseOrder(this.f14738i);
         if (isEmpty()) {
             return m1.x(reverseOrder);
         }
-        return new v1(this.f14814p.g(), reverseOrder);
+        return new v1(this.f14815p.g(), reverseOrder);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final int size() {
-        return this.f14814p.size();
+        return this.f14815p.size();
     }
 
     @Override // com.google.android.gms.internal.fido.m1
@@ -302,6 +302,6 @@ public final class v1 extends m1 {
 
     @Override // com.google.android.gms.internal.fido.m1
     final m1 w(Object obj, boolean z10) {
-        return D(C(obj, z10), this.f14814p.size());
+        return D(C(obj, z10), this.f14815p.size());
     }
 }

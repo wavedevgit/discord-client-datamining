@@ -3,14 +3,14 @@ package com.google.android.play.core.integrity;
 public final class q0 implements ni.z {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ni.e0 f17094a;
+    private final ni.e0 f17095a;
 
     public q0(ni.e0 e0Var) {
-        this.f17094a = e0Var;
+        this.f17095a = e0Var;
     }
 
     @Override // ni.e0
     public final /* bridge */ /* synthetic */ Object a() {
-        return new p0((j0) this.f17094a.a());
+        return new p0((j0) this.f17095a.a());
     }
 }

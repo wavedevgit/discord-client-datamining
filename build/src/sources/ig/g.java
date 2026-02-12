@@ -6,44 +6,44 @@ import java.util.List;
 public final class g extends i {
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient i f27951o;
+    private final transient i f27952o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g(i iVar) {
-        this.f27951o = iVar;
+        this.f27952o = iVar;
     }
 
     private final int q(int i10) {
-        return (this.f27951o.size() - 1) - i10;
+        return (this.f27952o.size() - 1) - i10;
     }
 
     @Override // ig.i, java.util.AbstractCollection, java.util.Collection, java.util.List
     public final boolean contains(Object obj) {
-        return this.f27951o.contains(obj);
+        return this.f27952o.contains(obj);
     }
 
     @Override // ig.i
     public final i f() {
-        return this.f27951o;
+        return this.f27952o;
     }
 
     @Override // ig.i
     public final i g(int i10, int i11) {
-        i iVar = this.f27951o;
+        i iVar = this.f27952o;
         z.d(i10, i11, iVar.size());
         return iVar.subList(iVar.size() - i11, iVar.size() - i10).f();
     }
 
     @Override // java.util.List
     public final Object get(int i10) {
-        i iVar = this.f27951o;
+        i iVar = this.f27952o;
         z.b(i10, iVar.size(), "index");
         return iVar.get(q(i10));
     }
 
     @Override // ig.i, java.util.List
     public final int indexOf(Object obj) {
-        int lastIndexOf = this.f27951o.lastIndexOf(obj);
+        int lastIndexOf = this.f27952o.lastIndexOf(obj);
         if (lastIndexOf >= 0) {
             return q(lastIndexOf);
         }
@@ -52,7 +52,7 @@ public final class g extends i {
 
     @Override // ig.i, java.util.List
     public final int lastIndexOf(Object obj) {
-        int indexOf = this.f27951o.indexOf(obj);
+        int indexOf = this.f27952o.indexOf(obj);
         if (indexOf >= 0) {
             return q(indexOf);
         }
@@ -61,7 +61,7 @@ public final class g extends i {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public final int size() {
-        return this.f27951o.size();
+        return this.f27952o.size();
     }
 
     @Override // ig.i, java.util.List

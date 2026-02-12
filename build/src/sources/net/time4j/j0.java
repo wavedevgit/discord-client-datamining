@@ -5,24 +5,24 @@ import java.util.concurrent.TimeUnit;
 class j0 implements bu.p {
 
     /* renamed from: o  reason: collision with root package name */
-    static final bu.p f37591o = new j0(g.class, g.f37465d, g.f37470q);
+    static final bu.p f37592o = new j0(g.class, g.f37466d, g.f37471q);
 
     /* renamed from: p  reason: collision with root package name */
-    static final bu.p f37592p = new j0(TimeUnit.class, TimeUnit.DAYS, TimeUnit.NANOSECONDS);
+    static final bu.p f37593p = new j0(TimeUnit.class, TimeUnit.DAYS, TimeUnit.NANOSECONDS);
 
     /* renamed from: d  reason: collision with root package name */
-    private final Class f37593d;
+    private final Class f37594d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient Comparable f37594e;
+    private final transient Comparable f37595e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient Comparable f37595i;
+    private final transient Comparable f37596i;
 
     private j0(Class cls, Comparable comparable, Comparable comparable2) {
-        this.f37593d = cls;
-        this.f37594e = comparable;
-        this.f37595i = comparable2;
+        this.f37594d = cls;
+        this.f37595e = comparable;
+        this.f37596i = comparable2;
     }
 
     @Override // bu.p
@@ -40,7 +40,7 @@ class j0 implements bu.p {
     public int compare(bu.o oVar, bu.o oVar2) {
         Comparable comparable = (Comparable) oVar.k(this);
         Comparable comparable2 = (Comparable) oVar2.k(this);
-        if (this.f37593d == g.class) {
+        if (this.f37594d == g.class) {
             return comparable.compareTo(comparable2);
         }
         return comparable2.compareTo(comparable);
@@ -49,13 +49,13 @@ class j0 implements bu.p {
     @Override // bu.p
     /* renamed from: b */
     public Comparable f() {
-        return this.f37595i;
+        return this.f37596i;
     }
 
     @Override // bu.p
     /* renamed from: c */
     public Comparable B() {
-        return this.f37594e;
+        return this.f37595e;
     }
 
     @Override // bu.p
@@ -65,7 +65,7 @@ class j0 implements bu.p {
 
     @Override // bu.p
     public Class getType() {
-        return this.f37593d;
+        return this.f37594d;
     }
 
     @Override // bu.p

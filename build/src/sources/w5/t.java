@@ -10,16 +10,16 @@ import x5.c;
 abstract class t {
 
     /* renamed from: b  reason: collision with root package name */
-    private static SparseArrayCompat f52333b;
+    private static SparseArrayCompat f52334b;
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Interpolator f52332a = new LinearInterpolator();
+    private static final Interpolator f52333a = new LinearInterpolator();
 
     /* renamed from: c  reason: collision with root package name */
-    static c.a f52334c = c.a.a("t", "s", "e", "o", "i", "h", "to", "ti");
+    static c.a f52335c = c.a.a("t", "s", "e", "o", "i", "h", "to", "ti");
 
     /* renamed from: d  reason: collision with root package name */
-    static c.a f52335d = c.a.a("x", "y");
+    static c.a f52336d = c.a.a("x", "y");
 
     private static WeakReference a(int i10) {
         WeakReference weakReference;
@@ -93,7 +93,7 @@ abstract class t {
         boolean z10 = false;
         PointF pointF4 = null;
         while (cVar.hasNext()) {
-            switch (cVar.p(f52334c)) {
+            switch (cVar.p(f52335c)) {
                 case 0:
                     f11 = (float) cVar.nextDouble();
                     break;
@@ -130,20 +130,20 @@ abstract class t {
         }
         cVar.D();
         if (z10) {
-            interpolator2 = f52332a;
+            interpolator2 = f52333a;
             obj = obj3;
         } else {
             if (pointF != null && pointF4 != null) {
                 interpolator = b(pointF, pointF4);
             } else {
-                interpolator = f52332a;
+                interpolator = f52333a;
             }
             interpolator2 = interpolator;
             obj = obj2;
         }
         z5.a aVar = new z5.a(iVar, obj3, obj, interpolator2, f11, null);
-        aVar.f56105o = pointF2;
-        aVar.f56106p = pointF3;
+        aVar.f56106o = pointF2;
+        aVar.f56107p = pointF3;
         return aVar;
     }
 
@@ -173,7 +173,7 @@ abstract class t {
         float f12 = 0.0f;
         Object obj3 = null;
         while (cVar.hasNext()) {
-            switch (cVar.p(f52334c)) {
+            switch (cVar.p(f52335c)) {
                 case 0:
                     f12 = (float) cVar.nextDouble();
                     break;
@@ -192,7 +192,7 @@ abstract class t {
                         float f15 = 0.0f;
                         float f16 = 0.0f;
                         while (cVar.hasNext()) {
-                            int p10 = cVar.p(f52335d);
+                            int p10 = cVar.p(f52336d);
                             if (p10 != 0) {
                                 if (p10 != 1) {
                                     cVar.T();
@@ -251,7 +251,7 @@ abstract class t {
                         float f19 = 0.0f;
                         float f20 = 0.0f;
                         while (cVar.hasNext()) {
-                            int p11 = cVar.p(f52335d);
+                            int p11 = cVar.p(f52336d);
                             if (p11 != 0) {
                                 z10 = z11;
                                 if (p11 != 1) {
@@ -335,7 +335,7 @@ abstract class t {
         PointF pointF16 = pointF8;
         cVar.D();
         if (z13) {
-            interpolator2 = f52332a;
+            interpolator2 = f52333a;
             obj = obj2;
         } else {
             if (pointF4 != null && pointF5 != null) {
@@ -354,11 +354,11 @@ abstract class t {
                     pointF2 = pointF11;
                     aVar = new z5.a(iVar, obj2, obj, interpolator2, f12, null);
                 }
-                aVar.f56105o = pointF;
-                aVar.f56106p = pointF2;
+                aVar.f56106o = pointF;
+                aVar.f56107p = pointF2;
                 return aVar;
             } else {
-                interpolator = f52332a;
+                interpolator = f52333a;
             }
             interpolator2 = interpolator;
             obj = obj3;
@@ -370,8 +370,8 @@ abstract class t {
         pointF = pointF10;
         pointF2 = pointF11;
         aVar = new z5.a(iVar, obj2, obj, interpolator2, f12, null);
-        aVar.f56105o = pointF;
-        aVar.f56106p = pointF2;
+        aVar.f56106o = pointF;
+        aVar.f56107p = pointF2;
         return aVar;
     }
 
@@ -380,15 +380,15 @@ abstract class t {
     }
 
     private static SparseArrayCompat g() {
-        if (f52333b == null) {
-            f52333b = new SparseArrayCompat();
+        if (f52334b == null) {
+            f52334b = new SparseArrayCompat();
         }
-        return f52333b;
+        return f52334b;
     }
 
     private static void h(int i10, WeakReference weakReference) {
         synchronized (t.class) {
-            f52333b.k(i10, weakReference);
+            f52334b.k(i10, weakReference);
         }
     }
 }

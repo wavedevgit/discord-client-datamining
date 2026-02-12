@@ -21,23 +21,23 @@ public abstract class j {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f27580a;
+        public static final /* synthetic */ int[] f27581a;
 
         static {
             int[] iArr = new int[n.values().length];
             try {
-                iArr[n.f27613d.ordinal()] = 1;
+                iArr[n.f27614d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[n.f27614e.ordinal()] = 2;
+                iArr[n.f27615e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[n.f27615i.ordinal()] = 3;
+                iArr[n.f27616i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f27580a = iArr;
+            f27581a = iArr;
         }
     }
 
@@ -80,11 +80,11 @@ public abstract class j {
                 i10 = i12;
             }
             if (num != null && num.intValue() == 0) {
-                bVar = v.b.f24135d;
+                bVar = v.b.f24136d;
             } else if (num != null && num.intValue() == 1) {
-                bVar = v.b.f24136e;
+                bVar = v.b.f24137e;
             } else {
-                bVar = v.b.f24137i;
+                bVar = v.b.f24138i;
             }
             v.b bVar2 = bVar;
             int[] iArr = (int[]) cameraCharacteristics.get(CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES);
@@ -207,16 +207,16 @@ public abstract class j {
     }
 
     private static final v.b d(n nVar) {
-        int i10 = a.f27580a[nVar.ordinal()];
+        int i10 = a.f27581a[nVar.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
-                    return v.b.f24137i;
+                    return v.b.f24138i;
                 }
                 throw new as.p();
             }
-            return v.b.f24136e;
+            return v.b.f24137e;
         }
-        return v.b.f24135d;
+        return v.b.f24136d;
     }
 }

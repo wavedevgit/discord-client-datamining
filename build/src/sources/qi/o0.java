@@ -5,16 +5,16 @@ import java.io.Serializable;
 final class o0 extends i0 implements Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    final i0 f45387d;
+    final i0 f45388d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o0(i0 i0Var) {
-        this.f45387d = (i0) pi.m.j(i0Var);
+        this.f45388d = (i0) pi.m.j(i0Var);
     }
 
     @Override // qi.i0, java.util.Comparator
     public int compare(Object obj, Object obj2) {
-        return this.f45387d.compare(obj2, obj);
+        return this.f45388d.compare(obj2, obj);
     }
 
     @Override // java.util.Comparator
@@ -23,22 +23,22 @@ final class o0 extends i0 implements Serializable {
             return true;
         }
         if (obj instanceof o0) {
-            return this.f45387d.equals(((o0) obj).f45387d);
+            return this.f45388d.equals(((o0) obj).f45388d);
         }
         return false;
     }
 
     @Override // qi.i0
     public i0 h() {
-        return this.f45387d;
+        return this.f45388d;
     }
 
     public int hashCode() {
-        return -this.f45387d.hashCode();
+        return -this.f45388d.hashCode();
     }
 
     public String toString() {
-        String valueOf = String.valueOf(this.f45387d);
+        String valueOf = String.valueOf(this.f45388d);
         StringBuilder sb2 = new StringBuilder(valueOf.length() + 10);
         sb2.append(valueOf);
         sb2.append(".reverse()");

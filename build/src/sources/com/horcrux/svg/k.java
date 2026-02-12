@@ -10,37 +10,37 @@ import java.util.HashMap;
 class k extends q {
 
     /* renamed from: i  reason: collision with root package name */
-    String f17828i;
+    String f17829i;
 
     /* renamed from: o  reason: collision with root package name */
-    u f17829o;
+    u f17830o;
 
     /* renamed from: p  reason: collision with root package name */
-    ReadableArray f17830p;
+    ReadableArray f17831p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f17831a;
+        static final /* synthetic */ int[] f17832a;
 
         static {
             int[] iArr = new int[u.values().length];
-            f17831a = iArr;
+            f17832a = iArr;
             try {
                 iArr[u.MATRIX.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f17831a[u.SATURATE.ordinal()] = 2;
+                f17832a[u.SATURATE.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f17831a[u.HUE_ROTATE.ordinal()] = 3;
+                f17832a[u.HUE_ROTATE.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f17831a[u.LUMINANCE_TO_ALPHA.ordinal()] = 4;
+                f17832a[u.LUMINANCE_TO_ALPHA.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
         }
@@ -53,9 +53,9 @@ class k extends q {
     @Override // com.horcrux.svg.q
     public Bitmap d(HashMap hashMap, Bitmap bitmap) {
         int i10;
-        Bitmap f10 = q.f(hashMap, bitmap, this.f17828i);
+        Bitmap f10 = q.f(hashMap, bitmap, this.f17829i);
         ColorMatrix colorMatrix = new ColorMatrix();
-        int i11 = a.f17831a[this.f17829o.ordinal()];
+        int i11 = a.f17832a[this.f17830o.ordinal()];
         if (i11 != 1) {
             if (i11 != 2) {
                 if (i11 != 3) {
@@ -63,8 +63,8 @@ class k extends q {
                         colorMatrix.set(new float[]{0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.2125f, 0.7154f, 0.0721f, 0.0f, 0.0f});
                     }
                 } else {
-                    if (this.f17830p.size() == 1) {
-                        double d10 = (((float) this.f17830p.getDouble(0)) * 3.141592653589793d) / 180.0d;
+                    if (this.f17831p.size() == 1) {
+                        double d10 = (((float) this.f17831p.getDouble(0)) * 3.141592653589793d) / 180.0d;
                         float cos = (float) Math.cos(d10);
                         float sin = (float) Math.sin(d10);
                         float f11 = 0.715f - (cos * 0.715f);
@@ -77,16 +77,16 @@ class k extends q {
                 }
                 return FilterUtils.getBitmapWithColorMatrix(colorMatrix, f10);
             }
-            if (this.f17830p.size() == 1) {
-                colorMatrix.setSaturation((float) this.f17830p.getDouble(0));
+            if (this.f17831p.size() == 1) {
+                colorMatrix.setSaturation((float) this.f17831p.getDouble(0));
                 return FilterUtils.getBitmapWithColorMatrix(colorMatrix, f10);
             }
             return f10;
         }
-        if (this.f17830p.size() >= 20) {
-            float[] fArr = new float[this.f17830p.size()];
-            for (int i12 = 0; i12 < this.f17830p.size(); i12++) {
-                float f15 = (float) this.f17830p.getDouble(i12);
+        if (this.f17831p.size() >= 20) {
+            float[] fArr = new float[this.f17831p.size()];
+            for (int i12 = 0; i12 < this.f17831p.size(); i12++) {
+                float f15 = (float) this.f17831p.getDouble(i12);
                 if (i12 % 5 == 4) {
                     i10 = SetSpanOperation.SPAN_MAX_PRIORITY;
                 } else {
@@ -101,17 +101,17 @@ class k extends q {
     }
 
     public void l(String str) {
-        this.f17828i = str;
+        this.f17829i = str;
         invalidate();
     }
 
     public void m(String str) {
-        this.f17829o = u.d(str);
+        this.f17830o = u.d(str);
         invalidate();
     }
 
     public void n(ReadableArray readableArray) {
-        this.f17830p = readableArray;
+        this.f17831p = readableArray;
         invalidate();
     }
 }

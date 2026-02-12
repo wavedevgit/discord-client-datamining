@@ -6,16 +6,16 @@ import java.util.Map;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f27970a;
+    private static final Map f27971a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Map f27971b;
+    private static final Map f27972b;
 
     static {
         HashMap hashMap = new HashMap();
-        f27970a = hashMap;
+        f27971a = hashMap;
         HashMap hashMap2 = new HashMap();
-        f27971b = hashMap2;
+        f27972b = hashMap2;
         hashMap.put(-1, "The Play Store app is either not installed or not the official version.");
         hashMap.put(-2, "Call first requestReviewFlow to get the ReviewInfo.");
         hashMap.put(-100, "Retry with an exponential backoff. Consider filing a bug if fails consistently.");
@@ -25,11 +25,11 @@ public abstract class a {
     }
 
     public static String a(int i10) {
-        Map map = f27970a;
+        Map map = f27971a;
         Integer valueOf = Integer.valueOf(i10);
         if (!map.containsKey(valueOf)) {
             return "";
         }
-        return ((String) map.get(valueOf)) + " (https://developer.android.com/reference/com/google/android/play/core/review/model/ReviewErrorCode.html#" + ((String) f27971b.get(valueOf)) + ")";
+        return ((String) map.get(valueOf)) + " (https://developer.android.com/reference/com/google/android/play/core/review/model/ReviewErrorCode.html#" + ((String) f27972b.get(valueOf)) + ")";
     }
 }

@@ -7,17 +7,17 @@ import android.os.Message;
 public final class c extends hg.f {
 
     /* renamed from: b  reason: collision with root package name */
-    final /* synthetic */ Rpc f14435b;
+    final /* synthetic */ Rpc f14436b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public c(Rpc rpc, Looper looper) {
         super(looper);
-        this.f14435b = rpc;
+        this.f14436b = rpc;
     }
 
     @Override // android.os.Handler
     public final void handleMessage(Message message) {
-        Rpc.g(this.f14435b, message);
+        Rpc.g(this.f14436b, message);
     }
 }

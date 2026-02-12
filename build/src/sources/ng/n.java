@@ -6,19 +6,19 @@ import java.util.Map;
 final class n extends j {
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient i f37870i;
+    private final transient i f37871i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient Object[] f37871o;
+    private final transient Object[] f37872o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient int f37872p;
+    private final transient int f37873p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n(i iVar, Object[] objArr, int i10, int i11) {
-        this.f37870i = iVar;
-        this.f37871o = objArr;
-        this.f37872p = i11;
+        this.f37871i = iVar;
+        this.f37872o = objArr;
+        this.f37873p = i11;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -33,7 +33,7 @@ final class n extends j {
             Map.Entry entry = (Map.Entry) obj;
             Object key = entry.getKey();
             Object value = entry.getValue();
-            if (value != null && value.equals(this.f37870i.get(key))) {
+            if (value != null && value.equals(this.f37871i.get(key))) {
                 return true;
             }
         }
@@ -52,6 +52,6 @@ final class n extends j {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final int size() {
-        return this.f37872p;
+        return this.f37873p;
     }
 }

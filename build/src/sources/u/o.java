@@ -6,25 +6,25 @@ import androidx.camera.camera2.internal.compat.quirk.AutoFlashUnderExposedQuirk;
 public class o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f50326a;
+    private final boolean f50327a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f50327b = false;
+    private boolean f50328b = false;
 
     public o(d2 d2Var) {
-        this.f50326a = d2Var.b(AutoFlashUnderExposedQuirk.class) != null;
+        this.f50327a = d2Var.b(AutoFlashUnderExposedQuirk.class) != null;
     }
 
     public void a() {
-        this.f50327b = false;
+        this.f50328b = false;
     }
 
     public void b() {
-        this.f50327b = true;
+        this.f50328b = true;
     }
 
     public boolean c(int i10) {
-        if (this.f50327b && i10 == 0 && this.f50326a) {
+        if (this.f50328b && i10 == 0 && this.f50327a) {
             return true;
         }
         return false;

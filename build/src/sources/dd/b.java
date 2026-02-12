@@ -15,62 +15,62 @@ import uc.z;
 final class b extends i {
 
     /* renamed from: n  reason: collision with root package name */
-    private t f21576n;
+    private t f21577n;
 
     /* renamed from: o  reason: collision with root package name */
-    private a f21577o;
+    private a f21578o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static final class a implements g {
 
         /* renamed from: a  reason: collision with root package name */
-        private t f21578a;
+        private t f21579a;
 
         /* renamed from: b  reason: collision with root package name */
-        private t.a f21579b;
+        private t.a f21580b;
 
         /* renamed from: c  reason: collision with root package name */
-        private long f21580c = -1;
+        private long f21581c = -1;
 
         /* renamed from: d  reason: collision with root package name */
-        private long f21581d = -1;
+        private long f21582d = -1;
 
         public a(t tVar, t.a aVar) {
-            this.f21578a = tVar;
-            this.f21579b = aVar;
+            this.f21579a = tVar;
+            this.f21580b = aVar;
         }
 
         @Override // dd.g
         public long a(l lVar) {
-            long j10 = this.f21581d;
+            long j10 = this.f21582d;
             if (j10 < 0) {
                 return -1L;
             }
             long j11 = -(j10 + 2);
-            this.f21581d = -1L;
+            this.f21582d = -1L;
             return j11;
         }
 
         @Override // dd.g
         public z b() {
             boolean z10;
-            if (this.f21580c != -1) {
+            if (this.f21581c != -1) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             oe.a.g(z10);
-            return new s(this.f21578a, this.f21580c);
+            return new s(this.f21579a, this.f21581c);
         }
 
         @Override // dd.g
         public void c(long j10) {
-            long[] jArr = this.f21579b.f50703a;
-            this.f21581d = jArr[w0.i(jArr, j10, true, true)];
+            long[] jArr = this.f21580b.f50704a;
+            this.f21582d = jArr[w0.i(jArr, j10, true, true)];
         }
 
         public void d(long j10) {
-            this.f21580c = j10;
+            this.f21581c = j10;
         }
     }
 
@@ -110,27 +110,27 @@ final class b extends i {
     @Override // dd.i
     protected boolean h(h0 h0Var, long j10, i.b bVar) {
         byte[] e10 = h0Var.e();
-        t tVar = this.f21576n;
+        t tVar = this.f21577n;
         if (tVar == null) {
             t tVar2 = new t(e10, 17);
-            this.f21576n = tVar2;
-            bVar.f21618a = tVar2.g(Arrays.copyOfRange(e10, 9, h0Var.g()), null);
+            this.f21577n = tVar2;
+            bVar.f21619a = tVar2.g(Arrays.copyOfRange(e10, 9, h0Var.g()), null);
             return true;
         } else if ((e10[0] & ByteCompanionObject.MAX_VALUE) == 3) {
             t.a f10 = r.f(h0Var);
             t b10 = tVar.b(f10);
-            this.f21576n = b10;
-            this.f21577o = new a(b10, f10);
+            this.f21577n = b10;
+            this.f21578o = new a(b10, f10);
             return true;
         } else if (!o(e10)) {
             return true;
         } else {
-            a aVar = this.f21577o;
+            a aVar = this.f21578o;
             if (aVar != null) {
                 aVar.d(j10);
-                bVar.f21619b = this.f21577o;
+                bVar.f21620b = this.f21578o;
             }
-            oe.a.e(bVar.f21618a);
+            oe.a.e(bVar.f21619a);
             return false;
         }
     }
@@ -140,8 +140,8 @@ final class b extends i {
     public void l(boolean z10) {
         super.l(z10);
         if (z10) {
-            this.f21576n = null;
-            this.f21577o = null;
+            this.f21577n = null;
+            this.f21578o = null;
         }
     }
 }

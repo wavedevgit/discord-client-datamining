@@ -9,32 +9,32 @@ public final class p extends a implements c0, cu.l, eu.e {
     private static final long serialVersionUID = 2055272540517425102L;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient Class f37654o;
+    private final transient Class f37655o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient Enum f37655p;
+    private final transient Enum f37656p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient Enum f37656q;
+    private final transient Enum f37657q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final transient int f37657r;
+    private final transient int f37658r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final transient char f37658s;
+    private final transient char f37659s;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(String str, Class cls, Enum r32, Enum r42, int i10, char c10) {
         super(str);
-        this.f37654o = cls;
-        this.f37655p = r32;
-        this.f37656q = r42;
-        this.f37657r = i10;
-        this.f37658s = c10;
+        this.f37655o = cls;
+        this.f37656p = r32;
+        this.f37657q = r42;
+        this.f37658r = i10;
+        this.f37659s = c10;
     }
 
     private cu.s G(Locale locale, cu.v vVar, cu.m mVar) {
-        switch (this.f37657r) {
+        switch (this.f37658r) {
             case 101:
                 return cu.b.d(locale).l(vVar, mVar);
             case 102:
@@ -72,18 +72,18 @@ public final class p extends a implements c0, cu.l, eu.e {
     @Override // bu.p
     /* renamed from: H */
     public Enum f() {
-        return this.f37656q;
+        return this.f37657q;
     }
 
     @Override // bu.p
     /* renamed from: I */
     public Enum B() {
-        return this.f37655p;
+        return this.f37656p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int J() {
-        return this.f37657r;
+        return this.f37658r;
     }
 
     public int K(Enum r12) {
@@ -94,13 +94,13 @@ public final class p extends a implements c0, cu.l, eu.e {
     /* renamed from: L */
     public Enum l(CharSequence charSequence, ParsePosition parsePosition, bu.d dVar) {
         int index = parsePosition.getIndex();
-        Locale locale = (Locale) dVar.b(cu.a.f21110c, Locale.ROOT);
-        cu.v vVar = (cu.v) dVar.b(cu.a.f21114g, cu.v.WIDE);
-        bu.c cVar = cu.a.f21115h;
+        Locale locale = (Locale) dVar.b(cu.a.f21111c, Locale.ROOT);
+        cu.v vVar = (cu.v) dVar.b(cu.a.f21115g, cu.v.WIDE);
+        bu.c cVar = cu.a.f21116h;
         cu.m mVar = cu.m.FORMAT;
         cu.m mVar2 = (cu.m) dVar.b(cVar, mVar);
         Enum c10 = G(locale, vVar, mVar2).c(charSequence, parsePosition, getType(), dVar);
-        if (c10 == null && ((Boolean) dVar.b(cu.a.f21118k, Boolean.TRUE)).booleanValue()) {
+        if (c10 == null && ((Boolean) dVar.b(cu.a.f21119k, Boolean.TRUE)).booleanValue()) {
             parsePosition.setErrorIndex(-1);
             parsePosition.setIndex(index);
             if (mVar2 == mVar) {
@@ -136,7 +136,7 @@ public final class p extends a implements c0, cu.l, eu.e {
 
     @Override // bu.e, bu.p
     public char d() {
-        return this.f37658s;
+        return this.f37659s;
     }
 
     @Override // eu.e
@@ -146,7 +146,7 @@ public final class p extends a implements c0, cu.l, eu.e {
 
     @Override // bu.p
     public Class getType() {
-        return this.f37654o;
+        return this.f37655o;
     }
 
     @Override // cu.l
@@ -163,6 +163,6 @@ public final class p extends a implements c0, cu.l, eu.e {
 
     @Override // cu.t
     public void w(bu.o oVar, Appendable appendable, bu.d dVar) {
-        appendable.append(G((Locale) dVar.b(cu.a.f21110c, Locale.ROOT), (cu.v) dVar.b(cu.a.f21114g, cu.v.WIDE), (cu.m) dVar.b(cu.a.f21115h, cu.m.FORMAT)).f((Enum) oVar.k(this)));
+        appendable.append(G((Locale) dVar.b(cu.a.f21111c, Locale.ROOT), (cu.v) dVar.b(cu.a.f21115g, cu.v.WIDE), (cu.m) dVar.b(cu.a.f21116h, cu.m.FORMAT)).f((Enum) oVar.k(this)));
     }
 }

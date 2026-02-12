@@ -8,12 +8,12 @@ import lr.a;
 public final class f extends lr.a {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final h f36002b = e.a(Collections.EMPTY_MAP);
+    private static final h f36003b = e.a(Collections.EMPTY_MAP);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class b extends a.AbstractC0498a {
         public f b() {
-            return new f(this.f35996a);
+            return new f(this.f35997a);
         }
 
         public b c(Object obj, h hVar) {

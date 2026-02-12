@@ -10,37 +10,37 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: k  reason: collision with root package name */
-    public static final C0599a f43791k = new C0599a(null);
+    public static final C0599a f43792k = new C0599a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f43792a;
+    private final Context f43793a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f43793b;
+    private final int f43794b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f43794c;
+    private final int f43795c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final b f43795d;
+    private final b f43796d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f43796e;
+    private boolean f43797e;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f43797f;
+    private boolean f43798f;
 
     /* renamed from: g  reason: collision with root package name */
-    private float f43798g;
+    private float f43799g;
 
     /* renamed from: h  reason: collision with root package name */
-    private float f43799h;
+    private float f43800h;
 
     /* renamed from: i  reason: collision with root package name */
-    private int f43800i;
+    private int f43801i;
 
     /* renamed from: j  reason: collision with root package name */
-    private GestureDetector f43801j;
+    private GestureDetector f43802j;
 
     /* renamed from: q0.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -65,9 +65,9 @@ public final class a {
         @Override // android.view.GestureDetector.SimpleOnGestureListener, android.view.GestureDetector.OnDoubleTapListener
         public boolean onDoubleTap(MotionEvent e10) {
             Intrinsics.checkNotNullParameter(e10, "e");
-            a.this.f43798g = e10.getX();
-            a.this.f43799h = e10.getY();
-            a.this.f43800i = 1;
+            a.this.f43799g = e10.getX();
+            a.this.f43800h = e10.getY();
+            a.this.f43801i = 1;
             return true;
         }
     }
@@ -82,13 +82,13 @@ public final class a {
     public a(Context context, int i10, int i11, b listener) {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(listener, "listener");
-        this.f43792a = context;
-        this.f43793b = i10;
-        this.f43794c = i11;
-        this.f43795d = listener;
-        this.f43796e = true;
-        this.f43797f = true;
-        this.f43801j = new GestureDetector(context, new c());
+        this.f43793a = context;
+        this.f43794b = i10;
+        this.f43795c = i11;
+        this.f43796d = listener;
+        this.f43797e = true;
+        this.f43798f = true;
+        this.f43802j = new GestureDetector(context, new c());
     }
 
     public /* synthetic */ a(Context context, int i10, int i11, b bVar, int i12, DefaultConstructorMarker defaultConstructorMarker) {

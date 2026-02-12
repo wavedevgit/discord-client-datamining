@@ -22,7 +22,7 @@ public final class AppMessageActionImpl implements AppMessageEmbedAction {
     @NotNull
 
     /* renamed from: id  reason: collision with root package name */
-    private final String f9258id;
+    private final String f9259id;
     @NotNull
     private final String label;
 
@@ -46,7 +46,7 @@ public final class AppMessageActionImpl implements AppMessageEmbedAction {
         if (3 != (i10 & 3)) {
             v1.b(i10, 3, AppMessageActionImpl$$serializer.INSTANCE.getDescriptor());
         }
-        this.f9258id = str;
+        this.f9259id = str;
         this.label = str2;
         if ((i10 & 4) == 0) {
             this.disabled = null;
@@ -57,7 +57,7 @@ public final class AppMessageActionImpl implements AppMessageEmbedAction {
 
     public static /* synthetic */ AppMessageActionImpl copy$default(AppMessageActionImpl appMessageActionImpl, String str, String str2, Boolean bool, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = appMessageActionImpl.f9258id;
+            str = appMessageActionImpl.f9259id;
         }
         if ((i10 & 2) != 0) {
             str2 = appMessageActionImpl.label;
@@ -72,13 +72,13 @@ public final class AppMessageActionImpl implements AppMessageEmbedAction {
         compositeEncoder.y(serialDescriptor, 0, appMessageActionImpl.getId());
         compositeEncoder.y(serialDescriptor, 1, appMessageActionImpl.getLabel());
         if (compositeEncoder.z(serialDescriptor, 2) || appMessageActionImpl.getDisabled() != null) {
-            compositeEncoder.o(serialDescriptor, 2, h.f49996a, appMessageActionImpl.getDisabled());
+            compositeEncoder.o(serialDescriptor, 2, h.f49997a, appMessageActionImpl.getDisabled());
         }
     }
 
     @NotNull
     public final String component1() {
-        return this.f9258id;
+        return this.f9259id;
     }
 
     @NotNull
@@ -103,7 +103,7 @@ public final class AppMessageActionImpl implements AppMessageEmbedAction {
         }
         if (obj instanceof AppMessageActionImpl) {
             AppMessageActionImpl appMessageActionImpl = (AppMessageActionImpl) obj;
-            return Intrinsics.areEqual(this.f9258id, appMessageActionImpl.f9258id) && Intrinsics.areEqual(this.label, appMessageActionImpl.label) && Intrinsics.areEqual(this.disabled, appMessageActionImpl.disabled);
+            return Intrinsics.areEqual(this.f9259id, appMessageActionImpl.f9259id) && Intrinsics.areEqual(this.label, appMessageActionImpl.label) && Intrinsics.areEqual(this.disabled, appMessageActionImpl.disabled);
         }
         return false;
     }
@@ -116,7 +116,7 @@ public final class AppMessageActionImpl implements AppMessageEmbedAction {
     @Override // com.discord.chat.bridge.codedlinks.AppMessageEmbedAction
     @NotNull
     public String getId() {
-        return this.f9258id;
+        return this.f9259id;
     }
 
     @Override // com.discord.chat.bridge.codedlinks.AppMessageEmbedAction
@@ -126,14 +126,14 @@ public final class AppMessageActionImpl implements AppMessageEmbedAction {
     }
 
     public int hashCode() {
-        int hashCode = ((this.f9258id.hashCode() * 31) + this.label.hashCode()) * 31;
+        int hashCode = ((this.f9259id.hashCode() * 31) + this.label.hashCode()) * 31;
         Boolean bool = this.disabled;
         return hashCode + (bool == null ? 0 : bool.hashCode());
     }
 
     @NotNull
     public String toString() {
-        String str = this.f9258id;
+        String str = this.f9259id;
         String str2 = this.label;
         Boolean bool = this.disabled;
         return "AppMessageActionImpl(id=" + str + ", label=" + str2 + ", disabled=" + bool + ")";
@@ -142,7 +142,7 @@ public final class AppMessageActionImpl implements AppMessageEmbedAction {
     public AppMessageActionImpl(@NotNull String id2, @NotNull String label, Boolean bool) {
         Intrinsics.checkNotNullParameter(id2, "id");
         Intrinsics.checkNotNullParameter(label, "label");
-        this.f9258id = id2;
+        this.f9259id = id2;
         this.label = label;
         this.disabled = bool;
     }

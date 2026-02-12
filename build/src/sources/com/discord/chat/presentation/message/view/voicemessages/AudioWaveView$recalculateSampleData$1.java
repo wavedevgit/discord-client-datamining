@@ -52,7 +52,7 @@ public final class AudioWaveView$recalculateSampleData$1 extends kotlin.coroutin
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super byte[]> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
         }
     }
 
@@ -98,11 +98,11 @@ public final class AudioWaveView$recalculateSampleData$1 extends kotlin.coroutin
         }
         audioWaveView.setDownSampleData((byte[]) obj);
         this.this$0.invalidate();
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioWaveView$recalculateSampleData$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31987a);
+        return ((AudioWaveView$recalculateSampleData$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f31988a);
     }
 }

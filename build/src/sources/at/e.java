@@ -143,7 +143,7 @@ public class e implements at.g {
                 long r7 = (long) r11     // Catch: java.lang.Throwable -> L20
                 long r7 = r3 % r7
                 int r11 = (int) r7     // Catch: java.lang.Throwable -> L20
-                long r7 = r10.f21870i     // Catch: java.lang.Throwable -> L20
+                long r7 = r10.f21871i     // Catch: java.lang.Throwable -> L20
                 int r7 = (r7 > r1 ? 1 : (r7 == r1 ? 0 : -1))
                 if (r7 == 0) goto L6c
                 at.m r1 = at.e.n(r0, r1, r10)     // Catch: java.lang.Throwable -> L20
@@ -233,11 +233,11 @@ public class e implements at.g {
             this.f6127d = at.f.z();
             Throwable i02 = e.this.i0();
             if (i02 == null) {
-                Result.a aVar = Result.f31984e;
+                Result.a aVar = Result.f31985e;
                 eVar.resumeWith(Result.b(Boolean.FALSE));
                 return;
             }
-            Result.a aVar2 = Result.f31984e;
+            Result.a aVar2 = Result.f31985e;
             eVar.resumeWith(Result.b(kotlin.c.a(i02)));
         }
 
@@ -259,7 +259,7 @@ public class e implements at.g {
                     int i10 = at.f.f6145b;
                     long j10 = andIncrement / i10;
                     int i11 = (int) (andIncrement % i10);
-                    if (mVar2.f21870i != j10) {
+                    if (mVar2.f21871i != j10) {
                         mVar = eVar.d0(j10, mVar2);
                         if (mVar == null) {
                             continue;
@@ -325,11 +325,11 @@ public class e implements at.g {
             this.f6127d = at.f.z();
             Throwable i02 = e.this.i0();
             if (i02 == null) {
-                Result.a aVar = Result.f31984e;
+                Result.a aVar = Result.f31985e;
                 eVar.resumeWith(Result.b(Boolean.FALSE));
                 return;
             }
-            Result.a aVar2 = Result.f31984e;
+            Result.a aVar2 = Result.f31985e;
             eVar.resumeWith(Result.b(kotlin.c.a(i02)));
         }
 
@@ -365,7 +365,7 @@ public class e implements at.g {
         @Override // kotlin.jvm.functions.Function3
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
             a((Throwable) obj, obj2, (CoroutineContext) obj3);
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
     }
 
@@ -383,7 +383,7 @@ public class e implements at.g {
         @Override // kotlin.jvm.functions.Function3
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
             a((Throwable) obj, ((k) obj2).k(), (CoroutineContext) obj3);
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
     }
 
@@ -404,7 +404,7 @@ public class e implements at.g {
         @Override // kotlin.jvm.functions.Function3
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
             a((e) obj, (gt.l) obj2, obj3);
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
     }
 
@@ -443,7 +443,7 @@ public class e implements at.g {
         @Override // kotlin.jvm.functions.Function3
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
             a((e) obj, (gt.l) obj2, obj3);
-            return Unit.f31987a;
+            return Unit.f31988a;
         }
     }
 
@@ -590,7 +590,7 @@ public class e implements at.g {
             while (true) {
                 i10--;
                 if (-1 < i10) {
-                    long j10 = (mVar.f21870i * at.f.f6145b) + i10;
+                    long j10 = (mVar.f21871i * at.f.f6145b) + i10;
                     if (j10 >= o0()) {
                         while (true) {
                             Object B = mVar.B(i10);
@@ -670,7 +670,7 @@ public class e implements at.g {
         /*
             r4 = this;
         L0:
-            long r0 = r7.f21870i
+            long r0 = r7.f21871i
             int r0 = (r0 > r5 ? 1 : (r0 == r5 ? 0 : -1))
             if (r0 >= 0) goto L11
             dt.c r0 = r7.f()
@@ -695,8 +695,8 @@ public class e implements at.g {
         L26:
             java.lang.Object r6 = r5.get(r4)
             dt.b0 r6 = (dt.b0) r6
-            long r0 = r6.f21870i
-            long r2 = r7.f21870i
+            long r0 = r6.f21871i
+            long r2 = r7.f21871i
             int r0 = (r0 > r2 ? 1 : (r0 == r2 ? 0 : -1))
             if (r0 < 0) goto L35
             return
@@ -739,13 +739,13 @@ public class e implements at.g {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void M0(CancellableContinuation cancellableContinuation) {
-        Result.a aVar = Result.f31984e;
+        Result.a aVar = Result.f31985e;
         cancellableContinuation.resumeWith(Result.b(k.b(k.f6168b.a(i0()))));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void N0(CancellableContinuation cancellableContinuation) {
-        Result.a aVar = Result.f31984e;
+        Result.a aVar = Result.f31985e;
         cancellableContinuation.resumeWith(Result.b(kotlin.c.a(l0())));
     }
 
@@ -777,11 +777,11 @@ public class e implements at.g {
         Function1 function1 = this.f6125e;
         if (function1 != null && (c10 = dt.x.c(function1, obj, null, 2, null)) != null) {
             as.e.a(c10, p0());
-            Result.a aVar = Result.f31984e;
+            Result.a aVar = Result.f31985e;
             eVar.resumeWith(Result.b(kotlin.c.a(c10)));
         } else {
             Throwable p02 = p0();
-            Result.a aVar2 = Result.f31984e;
+            Result.a aVar2 = Result.f31985e;
             eVar.resumeWith(Result.b(kotlin.c.a(p02)));
         }
         Object B = eVar.B();
@@ -791,13 +791,13 @@ public class e implements at.g {
         if (B == gs.b.f()) {
             return B;
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit Q(Function1 function1, Object obj, Throwable th2, Object obj2, CoroutineContext coroutineContext) {
         dt.x.a(function1, obj, coroutineContext);
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -807,7 +807,7 @@ public class e implements at.g {
             dt.x.a(function1, obj, cancellableContinuation.getContext());
         }
         Throwable p02 = p0();
-        Result.a aVar = Result.f31984e;
+        Result.a aVar = Result.f31985e;
         cancellableContinuation.resumeWith(Result.b(kotlin.c.a(p02)));
     }
 
@@ -840,7 +840,7 @@ public class e implements at.g {
         Object b10 = dt.k.b(null, 1, null);
         loop0: while (mVar != null) {
             for (int i10 = at.f.f6145b - 1; -1 < i10; i10--) {
-                if ((mVar.f21870i * at.f.f6145b) + i10 < j10) {
+                if ((mVar.f21871i * at.f.f6145b) + i10 < j10) {
                     break loop0;
                 }
                 while (true) {
@@ -889,17 +889,17 @@ public class e implements at.g {
         if (obj != at.f.z()) {
             dt.x.a(eVar.f6125e, obj, lVar.getContext());
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     private final m V() {
         m mVar = f6121u.get(this);
         m mVar2 = (m) f6119s.get(this);
-        if (mVar2.f21870i > ((m) mVar).f21870i) {
+        if (mVar2.f21871i > ((m) mVar).f21871i) {
             mVar = mVar2;
         }
         m mVar3 = (m) f6120t.get(this);
-        if (mVar3.f21870i > ((m) mVar).f21870i) {
+        if (mVar3.f21871i > ((m) mVar).f21871i) {
             mVar = mVar3;
         }
         return (m) dt.b.b((dt.c) mVar);
@@ -966,7 +966,7 @@ public class e implements at.g {
             int i10 = at.f.f6145b;
             long j10 = andIncrement / i10;
             int i11 = (int) (andIncrement % i10);
-            if (mVar2.f21870i != j10) {
+            if (mVar2.f21871i != j10) {
                 m d02 = eVar.d0(j10, mVar2);
                 if (d02 == null) {
                     continue;
@@ -1063,7 +1063,7 @@ public class e implements at.g {
             long r9 = (long) r1
             long r9 = r4 % r9
             int r3 = (int) r9
-            long r9 = r14.f21870i
+            long r9 = r14.f21871i
             int r1 = (r9 > r7 ? 1 : (r9 == r7 ? 0 : -1))
             if (r1 == 0) goto L77
             at.m r1 = n(r13, r7, r14)
@@ -1127,13 +1127,13 @@ public class e implements at.g {
             int i10 = at.f.f6145b;
             long j10 = andIncrement / i10;
             if (s0() <= andIncrement) {
-                if (mVar.f21870i < j10 && mVar.f() != null) {
+                if (mVar.f21871i < j10 && mVar.f() != null) {
                     I0(j10, mVar);
                 }
                 w0(this, 0L, 1, null);
                 return;
             }
-            if (mVar.f21870i != j10) {
+            if (mVar.f21871i != j10) {
                 m c02 = c0(j10, mVar, andIncrement);
                 if (c02 == null) {
                     continue;
@@ -1174,7 +1174,7 @@ public class e implements at.g {
                 b0 b10 = c0.b(c10);
                 while (true) {
                     b0 b0Var = (b0) atomicReferenceFieldUpdater.get(this);
-                    if (b0Var.f21870i >= b10.f21870i) {
+                    if (b0Var.f21871i >= b10.f21871i) {
                         break loop0;
                     } else if (!b10.u()) {
                         break;
@@ -1197,11 +1197,11 @@ public class e implements at.g {
             return null;
         }
         m mVar2 = (m) c0.b(c10);
-        if (mVar2.f21870i > j10) {
-            long j12 = mVar2.f21870i;
+        if (mVar2.f21871i > j10) {
+            long j12 = mVar2.f21871i;
             int i10 = at.f.f6145b;
             if (f6117q.compareAndSet(this, j11 + 1, j12 * i10)) {
-                v0((mVar2.f21870i * i10) - j11);
+                v0((mVar2.f21871i * i10) - j11);
             } else {
                 w0(this, 0L, 1, null);
             }
@@ -1242,7 +1242,7 @@ public class e implements at.g {
                         int i11 = at.f.f6145b;
                         long j11 = andIncrement / i11;
                         int i12 = (int) (andIncrement % i11);
-                        if (mVar3.f21870i != j11) {
+                        if (mVar3.f21871i != j11) {
                             m d02 = d0(j11, mVar3);
                             if (d02 != null) {
                                 mVar2 = d02;
@@ -1312,7 +1312,7 @@ public class e implements at.g {
                 b0 b10 = c0.b(c10);
                 while (true) {
                     b0 b0Var = (b0) atomicReferenceFieldUpdater.get(this);
-                    if (b0Var.f21870i >= b10.f21870i) {
+                    if (b0Var.f21871i >= b10.f21871i) {
                         break loop0;
                     } else if (!b10.u()) {
                         break;
@@ -1330,7 +1330,7 @@ public class e implements at.g {
         }
         if (c0.c(c10)) {
             Z();
-            if (mVar.f21870i * at.f.f6145b < s0()) {
+            if (mVar.f21871i * at.f.f6145b < s0()) {
                 mVar.b();
             }
             return null;
@@ -1340,7 +1340,7 @@ public class e implements at.g {
             AtomicReferenceFieldUpdater atomicReferenceFieldUpdater2 = f6121u;
             while (true) {
                 b0 b0Var2 = (b0) atomicReferenceFieldUpdater2.get(this);
-                if (b0Var2.f21870i >= mVar2.f21870i || !mVar2.u()) {
+                if (b0Var2.f21871i >= mVar2.f21871i || !mVar2.u()) {
                     break;
                 } else if (androidx.concurrent.futures.b.a(atomicReferenceFieldUpdater2, this, b0Var2, mVar2)) {
                     if (b0Var2.p()) {
@@ -1351,11 +1351,11 @@ public class e implements at.g {
                 }
             }
         }
-        long j11 = mVar2.f21870i;
+        long j11 = mVar2.f21871i;
         if (j11 > j10) {
             int i10 = at.f.f6145b;
             u1(j11 * i10);
-            if (mVar2.f21870i * i10 < s0()) {
+            if (mVar2.f21871i * i10 < s0()) {
                 mVar2.b();
             }
             return null;
@@ -1376,7 +1376,7 @@ public class e implements at.g {
             int i10 = at.f.f6145b;
             long j10 = andIncrement / i10;
             int i11 = (int) (andIncrement % i10);
-            if (mVar2.f21870i != j10) {
+            if (mVar2.f21871i != j10) {
                 m d02 = d0(j10, mVar2);
                 if (d02 == null) {
                     continue;
@@ -1432,7 +1432,7 @@ public class e implements at.g {
                 b0 b10 = c0.b(c10);
                 while (true) {
                     b0 b0Var = (b0) atomicReferenceFieldUpdater.get(this);
-                    if (b0Var.f21870i >= b10.f21870i) {
+                    if (b0Var.f21871i >= b10.f21871i) {
                         break loop0;
                     } else if (!b10.u()) {
                         break;
@@ -1450,17 +1450,17 @@ public class e implements at.g {
         }
         if (c0.c(c10)) {
             Z();
-            if (mVar.f21870i * at.f.f6145b < o0()) {
+            if (mVar.f21871i * at.f.f6145b < o0()) {
                 mVar.b();
             }
             return null;
         }
         m mVar2 = (m) c0.b(c10);
-        long j11 = mVar2.f21870i;
+        long j11 = mVar2.f21871i;
         if (j11 > j10) {
             int i10 = at.f.f6145b;
             v1(j11 * i10);
-            if (mVar2.f21870i * i10 < o0()) {
+            if (mVar2.f21871i * i10 < o0()) {
                 mVar2.b();
             }
             return null;
@@ -1488,7 +1488,7 @@ public class e implements at.g {
         Lb:
             r5 = -1
             if (r5 >= r4) goto Lb3
-            long r6 = r12.f21870i
+            long r6 = r12.f21871i
             int r8 = at.f.f6145b
             long r8 = (long) r8
             long r6 = r6 * r8
@@ -1616,7 +1616,7 @@ public class e implements at.g {
         Throwable p02;
         if (w1Var instanceof CancellableContinuation) {
             Continuation continuation = (Continuation) w1Var;
-            Result.a aVar = Result.f31984e;
+            Result.a aVar = Result.f31985e;
             if (z10) {
                 p02 = l0();
             } else {
@@ -1625,7 +1625,7 @@ public class e implements at.g {
             continuation.resumeWith(Result.b(kotlin.c.a(p02)));
         } else if (w1Var instanceof u) {
             kotlinx.coroutines.e eVar = ((u) w1Var).f6181d;
-            Result.a aVar2 = Result.f31984e;
+            Result.a aVar2 = Result.f31985e;
             eVar.resumeWith(Result.b(k.b(k.f6168b.a(i0()))));
         } else if (w1Var instanceof a) {
             ((a) w1Var).j();
@@ -1646,7 +1646,7 @@ public class e implements at.g {
             int i10 = at.f.f6145b;
             long j11 = j10 / i10;
             int i11 = (int) (j10 % i10);
-            if (mVar2.f21870i != j11) {
+            if (mVar2.f21871i != j11) {
                 m e02 = eVar.e0(j11, mVar2);
                 if (e02 == null) {
                     if (B0) {
@@ -1703,7 +1703,7 @@ public class e implements at.g {
                 break;
             }
         }
-        return Unit.f31987a;
+        return Unit.f31988a;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:62:0x00f4  */
@@ -1774,14 +1774,14 @@ public class e implements at.g {
     private final boolean m1(Object obj, m mVar, int i10) {
         if (obj instanceof CancellableContinuation) {
             Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlinx.coroutines.CancellableContinuation<kotlin.Unit>");
-            return at.f.C((CancellableContinuation) obj, Unit.f31987a, null, 2, null);
+            return at.f.C((CancellableContinuation) obj, Unit.f31988a, null, 2, null);
         } else if (obj instanceof gt.l) {
             Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlinx.coroutines.selects.SelectImplementation<*>");
-            gt.o x10 = ((gt.k) obj).x(this, Unit.f31987a);
-            if (x10 == gt.o.f26020e) {
+            gt.o x10 = ((gt.k) obj).x(this, Unit.f31988a);
+            if (x10 == gt.o.f26021e) {
                 mVar.w(i10);
             }
-            if (x10 == gt.o.f26019d) {
+            if (x10 == gt.o.f26020d) {
                 return true;
             }
             return false;
@@ -2287,7 +2287,7 @@ public class e implements at.g {
                 int i10 = at.f.f6145b;
                 long j12 = j11 / i10;
                 int i11 = (int) (j11 % i10);
-                if (mVar2.f21870i != j12) {
+                if (mVar2.f21871i != j12) {
                     mVar = d0(j12, mVar2);
                     if (mVar == null) {
                         continue;
@@ -2359,7 +2359,7 @@ public class e implements at.g {
                 int i11 = at.f.f6145b;
                 long j11 = j10 / i11;
                 int i12 = (int) (j10 % i11);
-                if (mVar2.f21870i != j11) {
+                if (mVar2.f21871i != j11) {
                     m e02 = e0(j11, mVar2);
                     if (e02 == null) {
                         if (B0) {
@@ -2413,11 +2413,11 @@ public class e implements at.g {
                             return k.f6168b.b();
                         }
                     } else {
-                        return k.f6168b.c(Unit.f31987a);
+                        return k.f6168b.c(Unit.f31988a);
                     }
                 } else {
                     mVar2.b();
-                    return k.f6168b.c(Unit.f31987a);
+                    return k.f6168b.c(Unit.f31988a);
                 }
             }
         } else {
@@ -2477,7 +2477,7 @@ public class e implements at.g {
             int i11 = at.f.f6145b;
             long j11 = j10 / i11;
             int i12 = (int) (j10 % i11);
-            if (mVar2.f21870i != j11) {
+            if (mVar2.f21871i != j11) {
                 mVar = e0(j11, mVar2);
                 if (mVar == null) {
                     if (B0) {
@@ -2525,15 +2525,15 @@ public class e implements at.g {
                         if (w1Var != null) {
                             W0(w1Var, mVar2, i10);
                         }
-                        a0((mVar2.f21870i * i11) + i10);
-                        return k.f6168b.c(Unit.f31987a);
+                        a0((mVar2.f21871i * i11) + i10);
+                        return k.f6168b.c(Unit.f31988a);
                     }
                 } else {
-                    return k.f6168b.c(Unit.f31987a);
+                    return k.f6168b.c(Unit.f31988a);
                 }
             } else {
                 mVar2.b();
-                return k.f6168b.c(Unit.f31987a);
+                return k.f6168b.c(Unit.f31988a);
             }
         }
     }
@@ -2559,7 +2559,7 @@ public class e implements at.g {
                 int i10 = at.f.f6145b;
                 long j12 = andIncrement / i10;
                 int i11 = (int) (andIncrement % i10);
-                if (mVar2.f21870i != j12) {
+                if (mVar2.f21871i != j12) {
                     mVar = d0(j12, mVar2);
                     if (mVar == null) {
                         continue;
@@ -2666,8 +2666,8 @@ public class e implements at.g {
             }
             int i10 = at.f.f6145b;
             long j10 = o02 / i10;
-            if (mVar.f21870i != j10 && (mVar = d0(j10, mVar)) == null) {
-                if (((m) f6120t.get(this)).f21870i < j10) {
+            if (mVar.f21871i != j10 && (mVar = d0(j10, mVar)) == null) {
+                if (((m) f6120t.get(this)).f21871i < j10) {
                     return false;
                 }
             } else {

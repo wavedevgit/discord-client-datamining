@@ -14,7 +14,7 @@ import org.jetbrains.annotations.NotNull;
 public abstract class ClassifierBasedTypeConstructor implements TypeConstructor {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f34536a;
+    private int f34537a;
 
     private final boolean b(ClassifierDescriptor classifierDescriptor) {
         if (!ErrorUtils.isError(classifierDescriptor) && !DescriptorUtils.isLocal(classifierDescriptor)) {
@@ -65,32 +65,32 @@ public abstract class ClassifierBasedTypeConstructor implements TypeConstructor 
         if (typeConstructor.getParameters().size() != getParameters().size()) {
             return false;
         }
-        ClassifierDescriptor mo1202getDeclarationDescriptor = mo1202getDeclarationDescriptor();
-        ClassifierDescriptor mo1202getDeclarationDescriptor2 = typeConstructor.mo1202getDeclarationDescriptor();
-        if (mo1202getDeclarationDescriptor2 == null || !b(mo1202getDeclarationDescriptor) || !b(mo1202getDeclarationDescriptor2)) {
+        ClassifierDescriptor mo1201getDeclarationDescriptor = mo1201getDeclarationDescriptor();
+        ClassifierDescriptor mo1201getDeclarationDescriptor2 = typeConstructor.mo1201getDeclarationDescriptor();
+        if (mo1201getDeclarationDescriptor2 == null || !b(mo1201getDeclarationDescriptor) || !b(mo1201getDeclarationDescriptor2)) {
             return false;
         }
-        return c(mo1202getDeclarationDescriptor2);
+        return c(mo1201getDeclarationDescriptor2);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
     @NotNull
     /* renamed from: getDeclarationDescriptor */
-    public abstract ClassifierDescriptor mo1202getDeclarationDescriptor();
+    public abstract ClassifierDescriptor mo1201getDeclarationDescriptor();
 
     public int hashCode() {
         int identityHashCode;
-        int i10 = this.f34536a;
+        int i10 = this.f34537a;
         if (i10 != 0) {
             return i10;
         }
-        ClassifierDescriptor mo1202getDeclarationDescriptor = mo1202getDeclarationDescriptor();
-        if (b(mo1202getDeclarationDescriptor)) {
-            identityHashCode = DescriptorUtils.getFqName(mo1202getDeclarationDescriptor).hashCode();
+        ClassifierDescriptor mo1201getDeclarationDescriptor = mo1201getDeclarationDescriptor();
+        if (b(mo1201getDeclarationDescriptor)) {
+            identityHashCode = DescriptorUtils.getFqName(mo1201getDeclarationDescriptor).hashCode();
         } else {
             identityHashCode = System.identityHashCode(this);
         }
-        this.f34536a = identityHashCode;
+        this.f34537a = identityHashCode;
         return identityHashCode;
     }
 }

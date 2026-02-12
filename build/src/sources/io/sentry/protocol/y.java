@@ -14,13 +14,13 @@ import java.util.Objects;
 public final class y implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f29800d;
+    private String f29801d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f29801e;
+    private String f29802e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f29802i;
+    private Map f29803i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -65,20 +65,20 @@ public final class y implements w1 {
     }
 
     public y(String str, String str2) {
-        this.f29800d = (String) io.sentry.util.y.c(str, "name is required.");
-        this.f29801e = (String) io.sentry.util.y.c(str2, "version is required.");
+        this.f29801d = (String) io.sentry.util.y.c(str, "name is required.");
+        this.f29802e = (String) io.sentry.util.y.c(str2, "version is required.");
     }
 
     public String a() {
-        return this.f29800d;
+        return this.f29801d;
     }
 
     public String b() {
-        return this.f29801e;
+        return this.f29802e;
     }
 
     public void c(Map map) {
-        this.f29802i = map;
+        this.f29803i = map;
     }
 
     public boolean equals(Object obj) {
@@ -87,7 +87,7 @@ public final class y implements w1 {
         }
         if (obj != null && y.class == obj.getClass()) {
             y yVar = (y) obj;
-            if (Objects.equals(this.f29800d, yVar.f29800d) && Objects.equals(this.f29801e, yVar.f29801e)) {
+            if (Objects.equals(this.f29801d, yVar.f29801d) && Objects.equals(this.f29802e, yVar.f29802e)) {
                 return true;
             }
         }
@@ -95,18 +95,18 @@ public final class y implements w1 {
     }
 
     public int hashCode() {
-        return Objects.hash(this.f29800d, this.f29801e);
+        return Objects.hash(this.f29801d, this.f29802e);
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.u();
-        f3Var.e(StackTraceHelper.NAME_KEY).f(this.f29800d);
-        f3Var.e("version").f(this.f29801e);
-        Map map = this.f29802i;
+        f3Var.e(StackTraceHelper.NAME_KEY).f(this.f29801d);
+        f3Var.e("version").f(this.f29802e);
+        Map map = this.f29803i;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f29802i.get(str));
+                f3Var.e(str).j(iLogger, this.f29803i.get(str));
             }
         }
         f3Var.D();

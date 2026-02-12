@@ -27,68 +27,68 @@ import ru.k;
 public final class b implements ru.d {
 
     /* renamed from: h  reason: collision with root package name */
-    public static final d f48386h = new d(null);
+    public static final d f48387h = new d(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final OkHttpClient f48387a;
+    private final OkHttpClient f48388a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final qu.f f48388b;
+    private final qu.f f48389b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final BufferedSource f48389c;
+    private final BufferedSource f48390c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final BufferedSink f48390d;
+    private final BufferedSink f48391d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f48391e;
+    private int f48392e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final su.a f48392f;
+    private final su.a f48393f;
 
     /* renamed from: g  reason: collision with root package name */
-    private Headers f48393g;
+    private Headers f48394g;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public abstract class a implements Source {
 
         /* renamed from: d  reason: collision with root package name */
-        private final l f48394d;
+        private final l f48395d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f48395e;
+        private boolean f48396e;
 
         public a() {
-            this.f48394d = new l(b.this.f48389c.timeout());
+            this.f48395d = new l(b.this.f48390c.timeout());
         }
 
         protected final boolean a() {
-            return this.f48395e;
+            return this.f48396e;
         }
 
         public final void h() {
-            if (b.this.f48391e == 6) {
+            if (b.this.f48392e == 6) {
                 return;
             }
-            if (b.this.f48391e == 5) {
-                b.this.r(this.f48394d);
-                b.this.f48391e = 6;
+            if (b.this.f48392e == 5) {
+                b.this.r(this.f48395d);
+                b.this.f48392e = 6;
                 return;
             }
-            throw new IllegalStateException("state: " + b.this.f48391e);
+            throw new IllegalStateException("state: " + b.this.f48392e);
         }
 
         protected final void i(boolean z10) {
-            this.f48395e = z10;
+            this.f48396e = z10;
         }
 
         @Override // okio.Source
         public long read(Buffer sink, long j10) {
             Intrinsics.checkNotNullParameter(sink, "sink");
             try {
-                return b.this.f48389c.read(sink, j10);
+                return b.this.f48390c.read(sink, j10);
             } catch (IOException e10) {
                 b.this.c().z();
                 h();
@@ -98,7 +98,7 @@ public final class b implements ru.d {
 
         @Override // okio.Source
         public Timeout timeout() {
-            return this.f48394d;
+            return this.f48395d;
         }
     }
 
@@ -108,50 +108,50 @@ public final class b implements ru.d {
     public final class C0656b implements Sink {
 
         /* renamed from: d  reason: collision with root package name */
-        private final l f48397d;
+        private final l f48398d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f48398e;
+        private boolean f48399e;
 
         public C0656b() {
-            this.f48397d = new l(b.this.f48390d.timeout());
+            this.f48398d = new l(b.this.f48391d.timeout());
         }
 
         @Override // okio.Sink, java.io.Closeable, java.lang.AutoCloseable
         public synchronized void close() {
-            if (this.f48398e) {
+            if (this.f48399e) {
                 return;
             }
-            this.f48398e = true;
-            b.this.f48390d.q0("0\r\n\r\n");
-            b.this.r(this.f48397d);
-            b.this.f48391e = 3;
+            this.f48399e = true;
+            b.this.f48391d.q0("0\r\n\r\n");
+            b.this.r(this.f48398d);
+            b.this.f48392e = 3;
         }
 
         @Override // okio.Sink, java.io.Flushable
         public synchronized void flush() {
-            if (this.f48398e) {
+            if (this.f48399e) {
                 return;
             }
-            b.this.f48390d.flush();
+            b.this.f48391d.flush();
         }
 
         @Override // okio.Sink
         public Timeout timeout() {
-            return this.f48397d;
+            return this.f48398d;
         }
 
         @Override // okio.Sink
         public void u0(Buffer source, long j10) {
             Intrinsics.checkNotNullParameter(source, "source");
-            if (!this.f48398e) {
+            if (!this.f48399e) {
                 if (j10 == 0) {
                     return;
                 }
-                b.this.f48390d.L1(j10);
-                b.this.f48390d.q0("\r\n");
-                b.this.f48390d.u0(source, j10);
-                b.this.f48390d.q0("\r\n");
+                b.this.f48391d.L1(j10);
+                b.this.f48391d.q0("\r\n");
+                b.this.f48391d.u0(source, j10);
+                b.this.f48391d.q0("\r\n");
                 return;
             }
             throw new IllegalStateException("closed");
@@ -163,44 +163,44 @@ public final class b implements ru.d {
     public final class c extends a {
 
         /* renamed from: o  reason: collision with root package name */
-        private final HttpUrl f48400o;
+        private final HttpUrl f48401o;
 
         /* renamed from: p  reason: collision with root package name */
-        private long f48401p;
+        private long f48402p;
 
         /* renamed from: q  reason: collision with root package name */
-        private boolean f48402q;
+        private boolean f48403q;
 
         /* renamed from: r  reason: collision with root package name */
-        final /* synthetic */ b f48403r;
+        final /* synthetic */ b f48404r;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         public c(b bVar, HttpUrl url) {
             super();
             Intrinsics.checkNotNullParameter(url, "url");
-            this.f48403r = bVar;
-            this.f48400o = url;
-            this.f48401p = -1L;
-            this.f48402q = true;
+            this.f48404r = bVar;
+            this.f48401o = url;
+            this.f48402p = -1L;
+            this.f48403q = true;
         }
 
         private final void m() {
-            if (this.f48401p != -1) {
-                this.f48403r.f48389c.J0();
+            if (this.f48402p != -1) {
+                this.f48404r.f48390c.J0();
             }
             try {
-                this.f48401p = this.f48403r.f48389c.r2();
-                String obj = StringsKt.k1(this.f48403r.f48389c.J0()).toString();
-                if (this.f48401p >= 0 && (obj.length() <= 0 || StringsKt.P(obj, ";", false, 2, null))) {
-                    if (this.f48401p == 0) {
-                        this.f48402q = false;
-                        b bVar = this.f48403r;
-                        bVar.f48393g = bVar.f48392f.a();
-                        OkHttpClient okHttpClient = this.f48403r.f48387a;
+                this.f48402p = this.f48404r.f48390c.r2();
+                String obj = StringsKt.k1(this.f48404r.f48390c.J0()).toString();
+                if (this.f48402p >= 0 && (obj.length() <= 0 || StringsKt.P(obj, ";", false, 2, null))) {
+                    if (this.f48402p == 0) {
+                        this.f48403q = false;
+                        b bVar = this.f48404r;
+                        bVar.f48394g = bVar.f48393f.a();
+                        OkHttpClient okHttpClient = this.f48404r.f48388a;
                         Intrinsics.checkNotNull(okHttpClient);
                         CookieJar r10 = okHttpClient.r();
-                        HttpUrl httpUrl = this.f48400o;
-                        Headers headers = this.f48403r.f48393g;
+                        HttpUrl httpUrl = this.f48401o;
+                        Headers headers = this.f48404r.f48394g;
                         Intrinsics.checkNotNull(headers);
                         ru.e.f(r10, httpUrl, headers);
                         h();
@@ -208,7 +208,7 @@ public final class b implements ru.d {
                     }
                     return;
                 }
-                throw new ProtocolException("expected chunk size and optional extensions but was \"" + this.f48401p + obj + '\"');
+                throw new ProtocolException("expected chunk size and optional extensions but was \"" + this.f48402p + obj + '\"');
             } catch (NumberFormatException e10) {
                 throw new ProtocolException(e10.getMessage());
             }
@@ -219,8 +219,8 @@ public final class b implements ru.d {
             if (a()) {
                 return;
             }
-            if (this.f48402q && !mu.e.s(this, 100, TimeUnit.MILLISECONDS)) {
-                this.f48403r.c().z();
+            if (this.f48403q && !mu.e.s(this, 100, TimeUnit.MILLISECONDS)) {
+                this.f48404r.c().z();
                 h();
             }
             i(true);
@@ -231,22 +231,22 @@ public final class b implements ru.d {
             Intrinsics.checkNotNullParameter(sink, "sink");
             if (j10 >= 0) {
                 if (!a()) {
-                    if (!this.f48402q) {
+                    if (!this.f48403q) {
                         return -1L;
                     }
-                    long j11 = this.f48401p;
+                    long j11 = this.f48402p;
                     if (j11 == 0 || j11 == -1) {
                         m();
-                        if (!this.f48402q) {
+                        if (!this.f48403q) {
                             return -1L;
                         }
                     }
-                    long read = super.read(sink, Math.min(j10, this.f48401p));
+                    long read = super.read(sink, Math.min(j10, this.f48402p));
                     if (read != -1) {
-                        this.f48401p -= read;
+                        this.f48402p -= read;
                         return read;
                     }
-                    this.f48403r.c().z();
+                    this.f48404r.c().z();
                     ProtocolException protocolException = new ProtocolException("unexpected end of stream");
                     h();
                     throw protocolException;
@@ -272,11 +272,11 @@ public final class b implements ru.d {
     public final class e extends a {
 
         /* renamed from: o  reason: collision with root package name */
-        private long f48404o;
+        private long f48405o;
 
         public e(long j10) {
             super();
-            this.f48404o = j10;
+            this.f48405o = j10;
             if (j10 == 0) {
                 h();
             }
@@ -287,7 +287,7 @@ public final class b implements ru.d {
             if (a()) {
                 return;
             }
-            if (this.f48404o != 0 && !mu.e.s(this, 100, TimeUnit.MILLISECONDS)) {
+            if (this.f48405o != 0 && !mu.e.s(this, 100, TimeUnit.MILLISECONDS)) {
                 b.this.c().z();
                 h();
             }
@@ -299,14 +299,14 @@ public final class b implements ru.d {
             Intrinsics.checkNotNullParameter(sink, "sink");
             if (j10 >= 0) {
                 if (!a()) {
-                    long j11 = this.f48404o;
+                    long j11 = this.f48405o;
                     if (j11 == 0) {
                         return -1L;
                     }
                     long read = super.read(sink, Math.min(j11, j10));
                     if (read != -1) {
-                        long j12 = this.f48404o - read;
-                        this.f48404o = j12;
+                        long j12 = this.f48405o - read;
+                        this.f48405o = j12;
                         if (j12 == 0) {
                             h();
                         }
@@ -328,44 +328,44 @@ public final class b implements ru.d {
     public final class f implements Sink {
 
         /* renamed from: d  reason: collision with root package name */
-        private final l f48406d;
+        private final l f48407d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f48407e;
+        private boolean f48408e;
 
         public f() {
-            this.f48406d = new l(b.this.f48390d.timeout());
+            this.f48407d = new l(b.this.f48391d.timeout());
         }
 
         @Override // okio.Sink, java.io.Closeable, java.lang.AutoCloseable
         public void close() {
-            if (this.f48407e) {
+            if (this.f48408e) {
                 return;
             }
-            this.f48407e = true;
-            b.this.r(this.f48406d);
-            b.this.f48391e = 3;
+            this.f48408e = true;
+            b.this.r(this.f48407d);
+            b.this.f48392e = 3;
         }
 
         @Override // okio.Sink, java.io.Flushable
         public void flush() {
-            if (this.f48407e) {
+            if (this.f48408e) {
                 return;
             }
-            b.this.f48390d.flush();
+            b.this.f48391d.flush();
         }
 
         @Override // okio.Sink
         public Timeout timeout() {
-            return this.f48406d;
+            return this.f48407d;
         }
 
         @Override // okio.Sink
         public void u0(Buffer source, long j10) {
             Intrinsics.checkNotNullParameter(source, "source");
-            if (!this.f48407e) {
+            if (!this.f48408e) {
                 mu.e.l(source.size(), 0L, j10);
-                b.this.f48390d.u0(source, j10);
+                b.this.f48391d.u0(source, j10);
                 return;
             }
             throw new IllegalStateException("closed");
@@ -377,7 +377,7 @@ public final class b implements ru.d {
     public final class g extends a {
 
         /* renamed from: o  reason: collision with root package name */
-        private boolean f48409o;
+        private boolean f48410o;
 
         public g() {
             super();
@@ -388,7 +388,7 @@ public final class b implements ru.d {
             if (a()) {
                 return;
             }
-            if (!this.f48409o) {
+            if (!this.f48410o) {
                 h();
             }
             i(true);
@@ -399,12 +399,12 @@ public final class b implements ru.d {
             Intrinsics.checkNotNullParameter(sink, "sink");
             if (j10 >= 0) {
                 if (!a()) {
-                    if (this.f48409o) {
+                    if (this.f48410o) {
                         return -1L;
                     }
                     long read = super.read(sink, j10);
                     if (read == -1) {
-                        this.f48409o = true;
+                        this.f48410o = true;
                         h();
                         return -1L;
                     }
@@ -420,17 +420,17 @@ public final class b implements ru.d {
         Intrinsics.checkNotNullParameter(connection, "connection");
         Intrinsics.checkNotNullParameter(source, "source");
         Intrinsics.checkNotNullParameter(sink, "sink");
-        this.f48387a = okHttpClient;
-        this.f48388b = connection;
-        this.f48389c = source;
-        this.f48390d = sink;
-        this.f48392f = new su.a(source);
+        this.f48388a = okHttpClient;
+        this.f48389b = connection;
+        this.f48390c = source;
+        this.f48391d = sink;
+        this.f48393f = new su.a(source);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void r(l lVar) {
         Timeout i10 = lVar.i();
-        lVar.j(Timeout.f40597e);
+        lVar.j(Timeout.f40598e);
         i10.a();
         i10.b();
     }
@@ -444,65 +444,65 @@ public final class b implements ru.d {
     }
 
     private final Sink u() {
-        if (this.f48391e == 1) {
-            this.f48391e = 2;
+        if (this.f48392e == 1) {
+            this.f48392e = 2;
             return new C0656b();
         }
-        throw new IllegalStateException(("state: " + this.f48391e).toString());
+        throw new IllegalStateException(("state: " + this.f48392e).toString());
     }
 
     private final Source v(HttpUrl httpUrl) {
-        if (this.f48391e == 4) {
-            this.f48391e = 5;
+        if (this.f48392e == 4) {
+            this.f48392e = 5;
             return new c(this, httpUrl);
         }
-        throw new IllegalStateException(("state: " + this.f48391e).toString());
+        throw new IllegalStateException(("state: " + this.f48392e).toString());
     }
 
     private final Source w(long j10) {
-        if (this.f48391e == 4) {
-            this.f48391e = 5;
+        if (this.f48392e == 4) {
+            this.f48392e = 5;
             return new e(j10);
         }
-        throw new IllegalStateException(("state: " + this.f48391e).toString());
+        throw new IllegalStateException(("state: " + this.f48392e).toString());
     }
 
     private final Sink x() {
-        if (this.f48391e == 1) {
-            this.f48391e = 2;
+        if (this.f48392e == 1) {
+            this.f48392e = 2;
             return new f();
         }
-        throw new IllegalStateException(("state: " + this.f48391e).toString());
+        throw new IllegalStateException(("state: " + this.f48392e).toString());
     }
 
     private final Source y() {
-        if (this.f48391e == 4) {
-            this.f48391e = 5;
+        if (this.f48392e == 4) {
+            this.f48392e = 5;
             c().z();
             return new g();
         }
-        throw new IllegalStateException(("state: " + this.f48391e).toString());
+        throw new IllegalStateException(("state: " + this.f48392e).toString());
     }
 
     public final void A(Headers headers, String requestLine) {
         Intrinsics.checkNotNullParameter(headers, "headers");
         Intrinsics.checkNotNullParameter(requestLine, "requestLine");
-        if (this.f48391e == 0) {
-            this.f48390d.q0(requestLine).q0("\r\n");
+        if (this.f48392e == 0) {
+            this.f48391d.q0(requestLine).q0("\r\n");
             int size = headers.size();
             for (int i10 = 0; i10 < size; i10++) {
-                this.f48390d.q0(headers.e(i10)).q0(": ").q0(headers.k(i10)).q0("\r\n");
+                this.f48391d.q0(headers.e(i10)).q0(": ").q0(headers.k(i10)).q0("\r\n");
             }
-            this.f48390d.q0("\r\n");
-            this.f48391e = 1;
+            this.f48391d.q0("\r\n");
+            this.f48392e = 1;
             return;
         }
-        throw new IllegalStateException(("state: " + this.f48391e).toString());
+        throw new IllegalStateException(("state: " + this.f48392e).toString());
     }
 
     @Override // ru.d
     public void a() {
-        this.f48390d.flush();
+        this.f48391d.flush();
     }
 
     @Override // ru.d
@@ -523,7 +523,7 @@ public final class b implements ru.d {
 
     @Override // ru.d
     public qu.f c() {
-        return this.f48388b;
+        return this.f48389b;
     }
 
     @Override // ru.d
@@ -561,7 +561,7 @@ public final class b implements ru.d {
     @Override // ru.d
     public void f(Request request) {
         Intrinsics.checkNotNullParameter(request, "request");
-        i iVar = i.f47772a;
+        i iVar = i.f47773a;
         Proxy.Type type = c().A().b().type();
         Intrinsics.checkNotNullExpressionValue(type, "connection.route().proxy.type()");
         A(request.h(), iVar.a(request, type));
@@ -569,25 +569,25 @@ public final class b implements ru.d {
 
     @Override // ru.d
     public Response.a g(boolean z10) {
-        int i10 = this.f48391e;
+        int i10 = this.f48392e;
         if (i10 != 1 && i10 != 2 && i10 != 3) {
-            throw new IllegalStateException(("state: " + this.f48391e).toString());
+            throw new IllegalStateException(("state: " + this.f48392e).toString());
         }
         try {
-            k a10 = k.f47775d.a(this.f48392f.b());
-            Response.a k10 = new Response.a().p(a10.f47776a).g(a10.f47777b).m(a10.f47778c).k(this.f48392f.a());
-            if (z10 && a10.f47777b == 100) {
+            k a10 = k.f47776d.a(this.f48393f.b());
+            Response.a k10 = new Response.a().p(a10.f47777a).g(a10.f47778b).m(a10.f47779c).k(this.f48393f.a());
+            if (z10 && a10.f47778b == 100) {
                 return null;
             }
-            int i11 = a10.f47777b;
+            int i11 = a10.f47778b;
             if (i11 == 100) {
-                this.f48391e = 3;
+                this.f48392e = 3;
                 return k10;
             } else if (102 <= i11 && i11 < 200) {
-                this.f48391e = 3;
+                this.f48392e = 3;
                 return k10;
             } else {
-                this.f48391e = 4;
+                this.f48392e = 4;
                 return k10;
             }
         } catch (EOFException e10) {
@@ -598,7 +598,7 @@ public final class b implements ru.d {
 
     @Override // ru.d
     public void h() {
-        this.f48390d.flush();
+        this.f48391d.flush();
     }
 
     public final void z(Response response) {

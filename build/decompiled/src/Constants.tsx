@@ -7869,6 +7869,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var40 = '/developers/teams';
             var40 = var41.bind(var166)(var42, var40);
             var22.DEVELOPER_PORTAL_TEAMS = var40;
+            var40 = var1.window;
+            var40 = var40.GLOBAL_ENV;
+            var42 = var40.DEVELOPERS_ENDPOINT;
+            var40 = var1.HermesInternal;
+            var41 = var40.concat;
+            var40 = '/developers/applications/select/game-identity';
+            var40 = var41.bind(var166)(var42, var40);
+            var22.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY = var40;
             var40 = function arg0() {
                 var0 = global;
                 var1 = var0.window;
@@ -9465,6 +9473,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var134.SETTINGS_DATA_AND_PRIVACY = var13;
             var13 = 'Account Standing';
             var134.SETTINGS_ACCOUNT_STANDING = var13;
+            var13 = 'Age Group';
+            var134.SETTINGS_AGE_GROUP = var13;
             var13 = 'Authorized Apps';
             var134.SETTINGS_AUTHORIZED_APPS = var13;
             var13 = 'Authorized App - Detail Page';
@@ -9552,6 +9562,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var134.SETTINGS_INVENTORY = var77;
             var77 = 'Swipe Right to Left Setting';
             var134.SETTINGS_SWIPE_RIGHT_TO_LEFT = var77;
+            var77 = 'Reaction Notifications';
+            var134.SETTINGS_REACTION_NOTIFICATIONS = var77;
             var77 = 'Text Component';
             var134.TEXT_COMPONENT = var77;
             var77 = 'Design System';
@@ -10586,6 +10598,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var83 = var134.HIGHLIGHT_NOTIFICATIONS;
             var82 = 'HIGHLIGHT_NOTIFICATIONS';
             var79[var82] = var83;
+            var83 = var134.SETTINGS_AGE_GROUP;
+            var82 = 'AGE_GROUP';
+            var79[var82] = var83;
             var83 = var134.QUESTS;
             var82 = 'QUESTS';
             var79[var82] = var83;
@@ -10600,6 +10615,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var79[var82] = var83;
             var83 = var134.SETTINGS_WARP;
             var82 = 'PRIVATE_BROWSING';
+            var79[var82] = var83;
+            var83 = var134.SETTINGS_REACTION_NOTIFICATIONS;
+            var82 = 'REACTION_NOTIFICATIONS';
             var79[var82] = var83;
             var129 = var80.bind(var81)(var79);
             var128 = {};
@@ -13210,6 +13228,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var91.CALL_MENU_ITEM_INTERACTED = var28;
             var28 = 'user_volume_setting_updated';
             var91.USER_VOLUME_SETTING_UPDATED = var28;
+            var28 = 'video_openh264_downloaded';
+            var91.VIDEO_OPENH264_DOWNLOADED = var28;
             var28 = 'clip_save_keybind_pressed';
             var91.CLIP_SAVE_KEYBIND_PRESSED = var28;
             var28 = 'clip_saved';
@@ -16763,28 +16783,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var233 = var222[var144];
             var236 = var221.bind(var0)(var233);
             for (var233 in var236)
-                case 62612: {
-                    case 62621: var239 = var233;
+                case 62724: {
+                    case 62733: var239 = var233;
                     var238 = var222[var144];
                     var238 = var221.bind(var0)(var238);
                     var238 = var238[var239];
                     var2[var239] = var238;
-                    _fun7396_ip = 62612;
+                    _fun7396_ip = 62724;
                     continue _fun7396;
                 }
-        case 62643:
+        case 62755:
             var232 = var222[var232];
             var237 = var221.bind(var0)(var232);
             var235 = var237;
             for (var232 in var235)
-                case 62663: {
-                    case 62672: var239 = var232;
+                case 62775: {
+                    case 62784: var239 = var232;
                     var238 = var237[var239];
                     var2[var239] = var238;
-                    _fun7396_ip = 62663;
+                    _fun7396_ip = 62775;
                     continue _fun7396;
                 }
-        case 62685:
+        case 62797:
             var2.Routes = var231;
             var2.ME = var230;
             var2.FAVORITES = var229;

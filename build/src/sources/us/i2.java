@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.descriptors.PropertyDescriptor;
 public class i2 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final j2 f51062d;
+    private final j2 f51063d;
 
     public i2(j2 j2Var) {
-        this.f51062d = j2Var;
+        this.f51063d = j2Var;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         PropertyDescriptor I;
-        I = j2.I(this.f51062d);
+        I = j2.I(this.f51063d);
         return I;
     }
 }

@@ -2,11 +2,11 @@
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var4 = require;
+    var9 = metroImportDefault;
     var2 = exports;
     var5 = dependencyMap;
     var _closure1_slot0 = var4;
-    var0 = metroImportDefault;
-    var _closure1_slot1 = var0;
+    var _closure1_slot1 = var9;
     var _closure1_slot2 = var5;
     var0 = global;
     var7 = var0.Object;
@@ -26,19 +26,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var0)(var3);
     var6 = var3.View;
     var _closure1_slot3 = var6;
-    var3 = var3.Image;
-    var _closure1_slot4 = var3;
+    var7 = var3.Image;
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
     var6 = var3.jsx;
-    var _closure1_slot5 = var6;
+    var _closure1_slot4 = var6;
     var3 = var3.jsxs;
-    var _closure1_slot6 = var3;
+    var _closure1_slot5 = var3;
     var3 = 3;
     var3 = var5[var3];
-    var7 = var4.bind(var0)(var3);
-    var6 = var7.createStyles;
+    var11 = var4.bind(var0)(var3);
+    var10 = var11.createStyles;
     var3 = {};
     var8 = {
         'alignItems': 'center',
@@ -52,22 +51,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         'marginBottom': 8
     };
     var3.title = var8;
-    var9 = 18;
+    var13 = 18;
     var8 = {
         'lineHeight': 18,
         'textAlign': 'center',
         'marginBottom': 24
     };
     var3.description = var8;
-    var8 = {
+    var8 = 4;
+    var12 = {
         'padding': 4,
         'marginTop': 8
     };
-    var3.skipContainer = var8;
-    var8 = {};
-    var8.lineHeight = var9;
-    var3.skip = var8;
-    var3 = var6.bind(var7)(var3);
+    var3.skipContainer = var12;
+    var12 = {};
+    var12.lineHeight = var13;
+    var3.skip = var12;
+    var3 = var10.bind(var11)(var3);
+    var _closure1_slot6 = var3;
+    var3 = {};
+    var8 = var5[var8];
+    var8 = var9.bind(var0)(var8);
+    var3.source = var8;
+    var3 = var6.bind(var0)(var7, var3);
     var _closure1_slot7 = var3;
     var3 = 10;
     var3 = var5[var3];
@@ -79,81 +85,75 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = arg0;
         var14 = var0.onScreensharePress;
         var11 = var0.onSkip;
-        var0 = _closure1_slot7;
+        var0 = _closure1_slot6;
         var3 = undefined;
         var13 = var0.bind(var3)();
-        var2 = _closure1_slot5;
+        var2 = _closure1_slot4;
         var15 = _closure1_slot0;
         var16 = _closure1_slot2;
-        var0 = 4;
+        var0 = 5;
         var0 = var16[var0];
         var0 = var15.bind(var3)(var0);
         var1 = var0.BottomSheet;
         var0 = {};
         var4 = true;
         var0.startExpanded = var4;
-        var6 = _closure1_slot6;
+        var6 = _closure1_slot5;
         var5 = _closure1_slot3;
         var4 = {};
         var7 = var13.container;
         var4.style = var7;
-        var8 = _closure1_slot4;
-        var7 = {};
-        var18 = _closure1_slot1;
-        var9 = 5;
-        var9 = var16[var9];
-        var9 = var18.bind(var3)(var9);
-        var7.source = var9;
-        var8 = var2.bind(var3)(var8, var7);
+        var9 = _closure1_slot7;
         var7 = new Array(5);
-        var7[0] = var8;
+        var7[0] = var9;
         var10 = 6;
-        var8 = var16[var10];
-        var8 = var15.bind(var3)(var8);
-        var9 = var8.Text;
-        var8 = {
+        var9 = var16[var10];
+        var9 = var15.bind(var3)(var9);
+        var17 = var9.Text;
+        var9 = {
             'style': null,
             'accessibilityRole': 'header',
             'variant': 'heading-xl/extrabold',
             'color': 'mobile-text-heading-primary'
         };
         var12 = var13.title;
-        var8.style = var12;
+        var9.style = var12;
         var12 = 7;
-        var17 = var16[var12];
-        var17 = var15.bind(var3)(var17);
-        var20 = var17.intl;
+        var18 = var16[var12];
+        var18 = var15.bind(var3)(var18);
+        var20 = var18.intl;
         var19 = var20.string;
-        var17 = var16[var12];
-        var17 = var15.bind(var3)(var17);
-        var17 = var17.t;
-        var17 = var17.hZdQXt;
-        var17 = var19.bind(var20)(var17);
-        var8.children = var17;
-        var8 = var2.bind(var3)(var9, var8);
-        var7[1] = var8;
-        var8 = var16[var10];
-        var8 = var15.bind(var3)(var8);
-        var9 = var8.Text;
-        var8 = {
+        var18 = var16[var12];
+        var18 = var15.bind(var3)(var18);
+        var18 = var18.t;
+        var18 = var18.hZdQXt;
+        var18 = var19.bind(var20)(var18);
+        var9.children = var18;
+        var9 = var2.bind(var3)(var17, var9);
+        var7[1] = var9;
+        var9 = var16[var10];
+        var9 = var15.bind(var3)(var9);
+        var17 = var9.Text;
+        var9 = {
             'style': null,
             'variant': 'text-sm/medium',
             'color': 'text-default'
         };
-        var17 = var13.description;
-        var8.style = var17;
-        var17 = var16[var12];
-        var17 = var15.bind(var3)(var17);
-        var20 = var17.intl;
+        var18 = var13.description;
+        var9.style = var18;
+        var18 = var16[var12];
+        var18 = var15.bind(var3)(var18);
+        var20 = var18.intl;
         var19 = var20.string;
-        var17 = var16[var12];
-        var17 = var15.bind(var3)(var17);
-        var17 = var17.t;
-        var17 = var17.PMitOE;
-        var17 = var19.bind(var20)(var17);
-        var8.children = var17;
-        var8 = var2.bind(var3)(var9, var8);
-        var7[2] = var8;
+        var18 = var16[var12];
+        var18 = var15.bind(var3)(var18);
+        var18 = var18.t;
+        var18 = var18.PMitOE;
+        var18 = var19.bind(var20)(var18);
+        var9.children = var18;
+        var9 = var2.bind(var3)(var17, var9);
+        var7[2] = var9;
+        var18 = _closure1_slot1;
         var17 = 8;
         var8 = var16[var17];
         var9 = var18.bind(var3)(var8);
@@ -233,4 +233,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4941, 8517, 3938, 1234, 4883, 4912, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 9993, 4907, 3938, 1234, 4849, 4880, 2]);

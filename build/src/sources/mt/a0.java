@@ -3,7 +3,7 @@ package mt;
 public final class a0 implements v {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a0 f36600a = new a0();
+    public static final a0 f36601a = new a0();
 
     private a0() {
     }

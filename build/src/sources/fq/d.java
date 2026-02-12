@@ -3,10 +3,10 @@ package fq;
 public final class d implements lr.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final lr.h f24193a;
+    private final lr.h f24194a;
 
     public d(lr.h hVar) {
-        this.f24193a = hVar;
+        this.f24194a = hVar;
     }
 
     public static d a(lr.h hVar) {
@@ -20,6 +20,6 @@ public final class d implements lr.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public c get() {
-        return c((e) this.f24193a.get());
+        return c((e) this.f24194a.get());
     }
 }

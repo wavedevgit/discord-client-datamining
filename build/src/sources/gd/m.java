@@ -5,10 +5,10 @@ import android.media.MediaCodec;
 public class m extends rc.e {
 
     /* renamed from: d  reason: collision with root package name */
-    public final q f25495d;
+    public final q f25496d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final String f25496e;
+    public final String f25497e;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -27,18 +27,18 @@ public class m extends rc.e {
             r2 = r1
             goto L11
         Lf:
-            java.lang.String r2 = r5.f25497a
+            java.lang.String r2 = r5.f25498a
         L11:
             r0.append(r2)
             java.lang.String r0 = r0.toString()
             r3.<init>(r0, r4)
-            r3.f25495d = r5
-            int r5 = oe.w0.f39037a
+            r3.f25496d = r5
+            int r5 = oe.w0.f39038a
             r0 = 21
             if (r5 < r0) goto L27
             java.lang.String r1 = a(r4)
         L27:
-            r3.f25496e = r1
+            r3.f25497e = r1
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: gd.m.<init>(java.lang.Throwable, gd.q):void");

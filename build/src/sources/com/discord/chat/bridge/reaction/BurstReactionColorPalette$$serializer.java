@@ -42,8 +42,8 @@ public /* synthetic */ class BurstReactionColorPalette$$serializer implements h0
     @Override // tt.h0
     @NotNull
     public final KSerializer[] childSerializers() {
-        n2 n2Var = n2.f50032a;
-        return new KSerializer[]{a.u(n2Var), a.u(n2Var), a.u(n2Var), g0.f49992a};
+        n2 n2Var = n2.f50033a;
+        return new KSerializer[]{a.u(n2Var), a.u(n2Var), a.u(n2Var), g0.f49993a};
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy
@@ -58,7 +58,7 @@ public /* synthetic */ class BurstReactionColorPalette$$serializer implements h0
         SerialDescriptor serialDescriptor = descriptor;
         kotlinx.serialization.encoding.c b10 = decoder.b(serialDescriptor);
         if (b10.p()) {
-            n2 n2Var = n2.f50032a;
+            n2 n2Var = n2.f50033a;
             str3 = (String) b10.n(serialDescriptor, 2, n2Var, null);
             f10 = b10.u(serialDescriptor, 3);
             i10 = 15;
@@ -76,13 +76,13 @@ public /* synthetic */ class BurstReactionColorPalette$$serializer implements h0
                 if (o10 == -1) {
                     z10 = false;
                 } else if (o10 == 0) {
-                    str4 = (String) b10.n(serialDescriptor, 0, n2.f50032a, str4);
+                    str4 = (String) b10.n(serialDescriptor, 0, n2.f50033a, str4);
                     i11 |= 1;
                 } else if (o10 == 1) {
-                    str5 = (String) b10.n(serialDescriptor, 1, n2.f50032a, str5);
+                    str5 = (String) b10.n(serialDescriptor, 1, n2.f50033a, str5);
                     i11 |= 2;
                 } else if (o10 == 2) {
-                    str6 = (String) b10.n(serialDescriptor, 2, n2.f50032a, str6);
+                    str6 = (String) b10.n(serialDescriptor, 2, n2.f50033a, str6);
                     i11 |= 4;
                 } else if (o10 != 3) {
                     throw new b0(o10);

@@ -8,23 +8,23 @@ import java.util.List;
 public final class p {
 
     /* renamed from: a  reason: collision with root package name */
-    private final pi.c f42753a;
+    private final pi.c f42754a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f42754b;
+    private final boolean f42755b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final c f42755c;
+    private final c f42756c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f42756d;
+    private final int f42757d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public class a implements c {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ pi.c f42757a;
+        final /* synthetic */ pi.c f42758a;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: pi.p$a$a  reason: collision with other inner class name */
@@ -41,12 +41,12 @@ public final class p {
 
             @Override // pi.p.b
             int f(int i10) {
-                return a.this.f42757a.c(this.f42759i, i10);
+                return a.this.f42758a.c(this.f42760i, i10);
             }
         }
 
         a(pi.c cVar) {
-            this.f42757a = cVar;
+            this.f42758a = cVar;
         }
 
         @Override // pi.p.c
@@ -60,25 +60,25 @@ public final class p {
     private static abstract class b extends pi.a {
 
         /* renamed from: i  reason: collision with root package name */
-        final CharSequence f42759i;
+        final CharSequence f42760i;
 
         /* renamed from: o  reason: collision with root package name */
-        final pi.c f42760o;
+        final pi.c f42761o;
 
         /* renamed from: p  reason: collision with root package name */
-        final boolean f42761p;
+        final boolean f42762p;
 
         /* renamed from: q  reason: collision with root package name */
-        int f42762q = 0;
+        int f42763q = 0;
 
         /* renamed from: r  reason: collision with root package name */
-        int f42763r;
+        int f42764r;
 
         protected b(p pVar, CharSequence charSequence) {
-            this.f42760o = pVar.f42753a;
-            this.f42761p = pVar.f42754b;
-            this.f42763r = pVar.f42756d;
-            this.f42759i = charSequence;
+            this.f42761o = pVar.f42754a;
+            this.f42762p = pVar.f42755b;
+            this.f42764r = pVar.f42757d;
+            this.f42760i = charSequence;
         }
 
         /* JADX INFO: Access modifiers changed from: protected */
@@ -86,51 +86,51 @@ public final class p {
         /* renamed from: d */
         public String a() {
             int f10;
-            int i10 = this.f42762q;
+            int i10 = this.f42763q;
             while (true) {
-                int i11 = this.f42762q;
+                int i11 = this.f42763q;
                 if (i11 != -1) {
                     f10 = f(i11);
                     if (f10 == -1) {
-                        f10 = this.f42759i.length();
-                        this.f42762q = -1;
+                        f10 = this.f42760i.length();
+                        this.f42763q = -1;
                     } else {
-                        this.f42762q = e(f10);
+                        this.f42763q = e(f10);
                     }
-                    int i12 = this.f42762q;
+                    int i12 = this.f42763q;
                     if (i12 == i10) {
                         int i13 = i12 + 1;
-                        this.f42762q = i13;
-                        if (i13 > this.f42759i.length()) {
-                            this.f42762q = -1;
+                        this.f42763q = i13;
+                        if (i13 > this.f42760i.length()) {
+                            this.f42763q = -1;
                         }
                     } else {
-                        while (i10 < f10 && this.f42760o.e(this.f42759i.charAt(i10))) {
+                        while (i10 < f10 && this.f42761o.e(this.f42760i.charAt(i10))) {
                             i10++;
                         }
-                        while (f10 > i10 && this.f42760o.e(this.f42759i.charAt(f10 - 1))) {
+                        while (f10 > i10 && this.f42761o.e(this.f42760i.charAt(f10 - 1))) {
                             f10--;
                         }
-                        if (!this.f42761p || i10 != f10) {
+                        if (!this.f42762p || i10 != f10) {
                             break;
                         }
-                        i10 = this.f42762q;
+                        i10 = this.f42763q;
                     }
                 } else {
                     return (String) b();
                 }
             }
-            int i14 = this.f42763r;
+            int i14 = this.f42764r;
             if (i14 == 1) {
-                f10 = this.f42759i.length();
-                this.f42762q = -1;
-                while (f10 > i10 && this.f42760o.e(this.f42759i.charAt(f10 - 1))) {
+                f10 = this.f42760i.length();
+                this.f42763q = -1;
+                while (f10 > i10 && this.f42761o.e(this.f42760i.charAt(f10 - 1))) {
                     f10--;
                 }
             } else {
-                this.f42763r = i14 - 1;
+                this.f42764r = i14 - 1;
             }
-            return this.f42759i.subSequence(i10, f10).toString();
+            return this.f42760i.subSequence(i10, f10).toString();
         }
 
         abstract int e(int i10);
@@ -158,7 +158,7 @@ public final class p {
     }
 
     private Iterator g(CharSequence charSequence) {
-        return this.f42755c.a(this, charSequence);
+        return this.f42756c.a(this, charSequence);
     }
 
     public List f(CharSequence charSequence) {
@@ -172,9 +172,9 @@ public final class p {
     }
 
     private p(c cVar, boolean z10, pi.c cVar2, int i10) {
-        this.f42755c = cVar;
-        this.f42754b = z10;
-        this.f42753a = cVar2;
-        this.f42756d = i10;
+        this.f42756c = cVar;
+        this.f42755b = z10;
+        this.f42754a = cVar2;
+        this.f42757d = i10;
     }
 }

@@ -11,18 +11,18 @@ import bq.n;
 public final class c implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final View f21853a;
+    private final View f21854a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ImageView f21854b;
+    public final ImageView f21855b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final ImageView f21855c;
+    public final ImageView f21856c;
 
     private c(View view, ImageView imageView, ImageView imageView2) {
-        this.f21853a = view;
-        this.f21854b = imageView;
-        this.f21855c = imageView2;
+        this.f21854a = view;
+        this.f21855b = imageView;
+        this.f21856c = imageView2;
     }
 
     public static c a(View view) {
@@ -48,6 +48,6 @@ public final class c implements ViewBinding {
 
     @Override // androidx.viewbinding.ViewBinding
     public View getRoot() {
-        return this.f21853a;
+        return this.f21854a;
     }
 }

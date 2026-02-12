@@ -20,46 +20,46 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class b {
 
     /* renamed from: m  reason: collision with root package name */
-    public static final a f29046m = new a(null);
+    public static final a f29047m = new a(null);
 
     /* renamed from: n  reason: collision with root package name */
-    public static final int f29047n = 8;
+    public static final int f29048n = 8;
 
     /* renamed from: a  reason: collision with root package name */
-    private final float f29048a;
+    private final float f29049a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final float f29049b;
+    private final float f29050b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f29050c;
+    private final int f29051c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f29051d;
+    private final int f29052d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final float f29052e;
+    private final float f29053e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f29053f;
+    private final int f29054f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final b f29054g;
+    private final b f29055g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final boolean f29055h;
+    private final boolean f29056h;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f29056i;
+    private boolean f29057i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final boolean f29057j;
+    private final boolean f29058j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final Rect f29058k;
+    private final Rect f29059k;
 
     /* renamed from: l  reason: collision with root package name */
-    private List f29059l;
+    private List f29060l;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -129,7 +129,7 @@ public abstract class b {
                 if (r0 != r4) goto L28
                 goto L36
             L28:
-                int r0 = io.sentry.android.replay.f.f28844a
+                int r0 = io.sentry.android.replay.f.f28845a
                 java.lang.Object r0 = r8.getTag(r0)
                 java.lang.String r6 = "unmask"
                 boolean r0 = kotlin.jvm.internal.Intrinsics.areEqual(r0, r6)
@@ -155,7 +155,7 @@ public abstract class b {
                 if (r0 != r4) goto L59
                 goto L67
             L59:
-                int r0 = io.sentry.android.replay.f.f28844a
+                int r0 = io.sentry.android.replay.f.f28845a
                 java.lang.Object r0 = r8.getTag(r0)
                 java.lang.String r1 = "mask"
                 boolean r0 = kotlin.jvm.internal.Intrinsics.areEqual(r0, r1)
@@ -291,39 +291,39 @@ public abstract class b {
     public static final class d extends b {
 
         /* renamed from: o  reason: collision with root package name */
-        private final m f29060o;
+        private final m f29061o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final Integer f29061p;
+        private final Integer f29062p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final int f29062q;
+        private final int f29063q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final int f29063r;
+        private final int f29064r;
 
         public d(m mVar, Integer num, int i10, int i11, float f10, float f11, int i12, int i13, float f12, int i14, b bVar, boolean z10, boolean z11, boolean z12, Rect rect) {
             super(f10, f11, i12, i13, f12, i14, bVar, z10, z11, z12, rect, null);
-            this.f29060o = mVar;
-            this.f29061p = num;
-            this.f29062q = i10;
-            this.f29063r = i11;
+            this.f29061o = mVar;
+            this.f29062p = num;
+            this.f29063q = i10;
+            this.f29064r = i11;
         }
 
         public final Integer i() {
-            return this.f29061p;
+            return this.f29062p;
         }
 
         public final m j() {
-            return this.f29060o;
+            return this.f29061o;
         }
 
         public final int k() {
-            return this.f29062q;
+            return this.f29063q;
         }
 
         public final int l() {
-            return this.f29063r;
+            return this.f29064r;
         }
     }
 
@@ -332,39 +332,39 @@ public abstract class b {
     }
 
     public final float a() {
-        return this.f29052e;
+        return this.f29053e;
     }
 
     public final int b() {
-        return this.f29051d;
+        return this.f29052d;
     }
 
     public final boolean c() {
-        return this.f29055h;
+        return this.f29056h;
     }
 
     public final Rect d() {
-        return this.f29058k;
+        return this.f29059k;
     }
 
     public final int e() {
-        return this.f29050c;
+        return this.f29051c;
     }
 
     public final void f(List list) {
-        this.f29059l = list;
+        this.f29060l = list;
     }
 
     public final void g(boolean z10) {
-        for (b bVar = this.f29054g; bVar != null; bVar = bVar.f29054g) {
-            bVar.f29056i = z10;
+        for (b bVar = this.f29055g; bVar != null; bVar = bVar.f29055g) {
+            bVar.f29057i = z10;
         }
     }
 
     public final void h(Function1 callback) {
         List<b> list;
         Intrinsics.checkNotNullParameter(callback, "callback");
-        if (((Boolean) callback.invoke(this)).booleanValue() && (list = this.f29059l) != null) {
+        if (((Boolean) callback.invoke(this)).booleanValue() && (list = this.f29060l) != null) {
             Intrinsics.checkNotNull(list);
             for (b bVar : list) {
                 bVar.h(callback);
@@ -373,16 +373,16 @@ public abstract class b {
     }
 
     private b(float f10, float f11, int i10, int i11, float f12, int i12, b bVar, boolean z10, boolean z11, boolean z12, Rect rect) {
-        this.f29048a = f10;
-        this.f29049b = f11;
-        this.f29050c = i10;
-        this.f29051d = i11;
-        this.f29052e = f12;
-        this.f29053f = i12;
-        this.f29054g = bVar;
-        this.f29055h = z10;
-        this.f29056i = z11;
-        this.f29057j = z12;
-        this.f29058k = rect;
+        this.f29049a = f10;
+        this.f29050b = f11;
+        this.f29051c = i10;
+        this.f29052d = i11;
+        this.f29053e = f12;
+        this.f29054f = i12;
+        this.f29055g = bVar;
+        this.f29056h = z10;
+        this.f29057i = z11;
+        this.f29058j = z12;
+        this.f29059k = rect;
     }
 }

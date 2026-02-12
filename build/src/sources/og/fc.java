@@ -5,7 +5,7 @@ import bj.c;
 final class fc implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final fc f39206a = new fc();
+    static final fc f39207a = new fc();
 
     static {
         c.b a10 = bj.c.a("isForegroundConfidenceMaskEnabled");

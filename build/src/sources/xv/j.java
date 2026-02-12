@@ -3,17 +3,17 @@ package xv;
 public class j extends cw.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final aw.i f55213a;
+    private final aw.i f55214a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f55214b;
+    private final String f55215b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static class a extends cw.b {
         @Override // cw.e
         public cw.f a(cw.h hVar, cw.g gVar) {
             CharSequence a10;
-            if (hVar.a() >= zv.d.f57221a) {
+            if (hVar.a() >= zv.d.f57222a) {
                 return cw.f.c();
             }
             CharSequence line = hVar.getLine();
@@ -32,9 +32,9 @@ public class j extends cw.a {
 
     public j(int i10, String str) {
         aw.i iVar = new aw.i();
-        this.f55213a = iVar;
+        this.f55214a = iVar;
         iVar.o(i10);
-        this.f55214b = str;
+        this.f55215b = str;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -87,7 +87,7 @@ public class j extends cw.a {
 
     @Override // cw.d
     public aw.a d() {
-        return this.f55213a;
+        return this.f55214a;
     }
 
     @Override // cw.d
@@ -97,6 +97,6 @@ public class j extends cw.a {
 
     @Override // cw.a, cw.d
     public void h(bw.a aVar) {
-        aVar.a(this.f55214b, this.f55213a);
+        aVar.a(this.f55215b, this.f55214a);
     }
 }

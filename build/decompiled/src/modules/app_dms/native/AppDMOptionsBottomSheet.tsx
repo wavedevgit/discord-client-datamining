@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = new Array(1);
         var8[0] = var4;
         var4 = function() { // Environment: var0
-            _fun72879: for (var _fun72879_ip = 0;;) switch (_fun72879_ip) {
+            _fun92297: for (var _fun92297_ip = 0;;) switch (_fun92297_ip) {
                 case 0:
                     var2 = _closure1_slot5;
                     var1 = var2.getNewestTokenForApplication;
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var0 == var4;
                     var0 = undefined;
                     if (var4) {
-                        _fun72879_ip = 40;
-                        continue _fun72879
+                        _fun92297_ip = 40;
+                        continue _fun92297
                     }
                 case 31:
                     var3 = _closure2_slot2;
@@ -146,22 +146,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[0] = var1;
         var2[1] = var13;
         var1 = function() { // Environment: var0
-            _fun72881: for (var _fun72881_ip = 0;;) switch (_fun72881_ip) {
+            _fun92299: for (var _fun92299_ip = 0;;) switch (_fun92299_ip) {
                 case 0:
                     var0 = _closure2_slot2;
                     var2 = null;
                     var0 = var2 != var0;
                     if (!var0) {
-                        _fun72881_ip = 24;
-                        continue _fun72881
+                        _fun92299_ip = 24;
+                        continue _fun92299
                     }
                 case 16:
                     var1 = _closure2_slot3;
                     var0 = var2 != var1;
                 case 24:
                     if (!var0) {
-                        _fun72881_ip = 122;
-                        continue _fun72881
+                        _fun92299_ip = 122;
+                        continue _fun92299
                     }
                 case 27:
                     var4 = _closure1_slot0;
@@ -276,4 +276,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4592, 660, 33, 1297, 671, 566, 7407, 3279, 5983, 5413, 4941, 5425, 4908, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4592, 660, 33, 1297, 671, 566, 8334, 3279, 6002, 5416, 4907, 5343, 4876, 1234, 2]);

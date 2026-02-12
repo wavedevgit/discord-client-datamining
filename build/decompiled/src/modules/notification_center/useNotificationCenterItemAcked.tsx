@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/notification_center/useNotificationCenterItemAcked.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun103970: for (var _fun103970_ip = 0;;) switch (_fun103970_ip) {
+        _fun103935: for (var _fun103935_ip = 0;;) switch (_fun103935_ip) {
             case 0:
                 var5 = arg0;
                 var _closure2_slot0 = var5;
@@ -52,13 +52,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5.forceUnacked;
                 var0 = !var0;
                 if (!var0) {
-                    _fun103970_ip = 117;
-                    continue _fun103970
+                    _fun103935_ip = 117;
+                    continue _fun103935
                 }
             case 76:
                 if (var1) {
-                    _fun103970_ip = 114;
-                    continue _fun103970
+                    _fun103935_ip = 114;
+                    continue _fun103935
                 }
             case 79:
                 var3 = _closure1_slot0;
@@ -77,4 +77,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useNotificationCenterItemAcked = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [13538, 566, 4228, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [13530, 566, 4228, 2]);

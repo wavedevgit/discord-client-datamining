@@ -7,14 +7,14 @@ import wj.i;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final i f50774a;
+    private final i f50775a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final i0 f50775b;
+    private final i0 f50776b;
 
     public a(i iVar) {
         i0 b10 = q0.b("common");
-        this.f50774a = iVar;
-        this.f50775b = b10;
+        this.f50775a = iVar;
+        this.f50776b = b10;
     }
 }

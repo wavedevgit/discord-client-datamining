@@ -13,22 +13,22 @@ import qu.e;
 public final class g {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f45750f = new a(null);
+    public static final a f45751f = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f45751a;
+    private final int f45752a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f45752b;
+    private final long f45753b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final pu.d f45753c;
+    private final pu.d f45754c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final b f45754d;
+    private final b f45755d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ConcurrentLinkedQueue f45755e;
+    private final ConcurrentLinkedQueue f45756e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -55,11 +55,11 @@ public final class g {
     public g(pu.e taskRunner, int i10, long j10, TimeUnit timeUnit) {
         Intrinsics.checkNotNullParameter(taskRunner, "taskRunner");
         Intrinsics.checkNotNullParameter(timeUnit, "timeUnit");
-        this.f45751a = i10;
-        this.f45752b = timeUnit.toNanos(j10);
-        this.f45753c = taskRunner.i();
-        this.f45754d = new b(mu.e.f36664i + " ConnectionPool");
-        this.f45755e = new ConcurrentLinkedQueue();
+        this.f45752a = i10;
+        this.f45753b = timeUnit.toNanos(j10);
+        this.f45754c = taskRunner.i();
+        this.f45755d = new b(mu.e.f36665i + " ConnectionPool");
+        this.f45756e = new ConcurrentLinkedQueue();
         if (j10 > 0) {
             return;
         }
@@ -67,7 +67,7 @@ public final class g {
     }
 
     private final int d(f fVar, long j10) {
-        if (mu.e.f36663h && !Thread.holdsLock(fVar)) {
+        if (mu.e.f36664h && !Thread.holdsLock(fVar)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + fVar);
         }
         List n10 = fVar.n();
@@ -78,11 +78,11 @@ public final class g {
                 i10++;
             } else {
                 Intrinsics.checkNotNull(reference, "null cannot be cast to non-null type okhttp3.internal.connection.RealCall.CallReference");
-                vu.h.f52015a.g().m("A connection to " + fVar.A().a().l() + " was leaked. Did you forget to close a response body?", ((e.b) reference).a());
+                vu.h.f52016a.g().m("A connection to " + fVar.A().a().l() + " was leaked. Did you forget to close a response body?", ((e.b) reference).a());
                 n10.remove(i10);
                 fVar.D(true);
                 if (n10.isEmpty()) {
-                    fVar.C(j10 - this.f45752b);
+                    fVar.C(j10 - this.f45753b);
                     return 0;
                 }
             }
@@ -93,7 +93,7 @@ public final class g {
     public final boolean a(okhttp3.a address, e call, List list, boolean z10) {
         Intrinsics.checkNotNullParameter(address, "address");
         Intrinsics.checkNotNullParameter(call, "call");
-        Iterator it = this.f45755e.iterator();
+        Iterator it = this.f45756e.iterator();
         while (it.hasNext()) {
             f connection = (f) it.next();
             Intrinsics.checkNotNullExpressionValue(connection, "connection");
@@ -102,7 +102,7 @@ public final class g {
                     try {
                         if (connection.v()) {
                         }
-                        Unit unit = Unit.f31987a;
+                        Unit unit = Unit.f31988a;
                     } catch (Throwable th2) {
                         throw th2;
                     }
@@ -111,14 +111,14 @@ public final class g {
                     call.c(connection);
                     return true;
                 }
-                Unit unit2 = Unit.f31987a;
+                Unit unit2 = Unit.f31988a;
             }
         }
         return false;
     }
 
     public final long b(long j10) {
-        Iterator it = this.f45755e.iterator();
+        Iterator it = this.f45756e.iterator();
         int i10 = 0;
         long j11 = Long.MIN_VALUE;
         f fVar = null;
@@ -136,12 +136,12 @@ public final class g {
                         fVar = connection;
                         j11 = o10;
                     }
-                    Unit unit = Unit.f31987a;
+                    Unit unit = Unit.f31988a;
                 }
             }
         }
-        long j12 = this.f45752b;
-        if (j11 < j12 && i10 <= this.f45751a) {
+        long j12 = this.f45753b;
+        if (j11 < j12 && i10 <= this.f45752a) {
             if (i10 > 0) {
                 return j12 - j11;
             }
@@ -159,10 +159,10 @@ public final class g {
                 return 0L;
             }
             fVar.D(true);
-            this.f45755e.remove(fVar);
+            this.f45756e.remove(fVar);
             mu.e.n(fVar.E());
-            if (this.f45755e.isEmpty()) {
-                this.f45753c.a();
+            if (this.f45756e.isEmpty()) {
+                this.f45754c.a();
             }
             return 0L;
         }
@@ -170,16 +170,16 @@ public final class g {
 
     public final boolean c(f connection) {
         Intrinsics.checkNotNullParameter(connection, "connection");
-        if (mu.e.f36663h && !Thread.holdsLock(connection)) {
+        if (mu.e.f36664h && !Thread.holdsLock(connection)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + connection);
-        } else if (!connection.p() && this.f45751a != 0) {
-            pu.d.j(this.f45753c, this.f45754d, 0L, 2, null);
+        } else if (!connection.p() && this.f45752a != 0) {
+            pu.d.j(this.f45754c, this.f45755d, 0L, 2, null);
             return false;
         } else {
             connection.D(true);
-            this.f45755e.remove(connection);
-            if (this.f45755e.isEmpty()) {
-                this.f45753c.a();
+            this.f45756e.remove(connection);
+            if (this.f45756e.isEmpty()) {
+                this.f45754c.a();
             }
             return true;
         }
@@ -187,10 +187,10 @@ public final class g {
 
     public final void e(f connection) {
         Intrinsics.checkNotNullParameter(connection, "connection");
-        if (mu.e.f36663h && !Thread.holdsLock(connection)) {
+        if (mu.e.f36664h && !Thread.holdsLock(connection)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST hold lock on " + connection);
         }
-        this.f45755e.add(connection);
-        pu.d.j(this.f45753c, this.f45754d, 0L, 2, null);
+        this.f45756e.add(connection);
+        pu.d.j(this.f45754c, this.f45755d, 0L, 2, null);
     }
 }

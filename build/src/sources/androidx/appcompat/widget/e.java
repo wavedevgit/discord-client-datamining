@@ -25,7 +25,7 @@ public class e extends Button implements androidx.core.widget.b {
     private AppCompatEmojiTextHelper f1765i;
 
     public e(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, f.a.f23289n);
+        this(context, attributeSet, f.a.f23290n);
     }
 
     @NonNull

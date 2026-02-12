@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'getMaxFileSize';
         var0.key = var5;
         var5 = function arg0() {
-            _fun37804: for (var _fun37804_ip = 0;;) switch (_fun37804_ip) {
+            _fun37826: for (var _fun37826_ip = 0;;) switch (_fun37826_ip) {
                 case 0:
                     var3 = _closure1_slot6;
                     var2 = var3.getBasicChannel;
@@ -94,8 +94,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = null;
                     var4 = var4 == var3;
                     if (var4) {
-                        _fun37804_ip = 63;
-                        continue _fun37804
+                        _fun37826_ip = 63;
+                        continue _fun37826
                     }
                 case 58:
                     var0 = var3.guild_id;
@@ -164,21 +164,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.UploadTargets = var3;
     var1 = function arg0() {
-        _fun37808: for (var _fun37808_ip = 0;;) switch (_fun37808_ip) {
+        _fun37830: for (var _fun37830_ip = 0;;) switch (_fun37830_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot10;
                 var1 = var1.GUILD_PRODUCT_ATTACHMENT;
                 if (!(var1 !== var2)) {
-                    _fun37808_ip = 114;
-                    continue _fun37808
+                    _fun37830_ip = 114;
+                    continue _fun37830
                 }
             case 20:
                 var1 = _closure1_slot10;
                 var1 = var1.GRAVITY_ATTACHMENT;
                 if (!(var1 !== var2)) {
-                    _fun37808_ip = 70;
-                    continue _fun37808
+                    _fun37830_ip = 70;
+                    continue _fun37830
                 }
             case 34:
                 var1 = _closure1_slot10;

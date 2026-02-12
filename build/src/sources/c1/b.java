@@ -42,6 +42,6 @@ public abstract class b {
     }
 
     public static final int d(long j10) {
-        return (int) b0.d(a.c(j10, g.f21331a.h()) >>> 32);
+        return (int) b0.d(a.c(j10, g.f21332a.h()) >>> 32);
     }
 }

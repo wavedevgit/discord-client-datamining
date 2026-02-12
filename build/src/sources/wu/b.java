@@ -12,13 +12,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b extends yu.c {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f53982d = new a(null);
+    public static final a f53983d = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final X509TrustManager f53983b;
+    private final X509TrustManager f53984b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final X509TrustManagerExtensions f53984c;
+    private final X509TrustManagerExtensions f53985c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -47,8 +47,8 @@ public final class b extends yu.c {
     public b(X509TrustManager trustManager, X509TrustManagerExtensions x509TrustManagerExtensions) {
         Intrinsics.checkNotNullParameter(trustManager, "trustManager");
         Intrinsics.checkNotNullParameter(x509TrustManagerExtensions, "x509TrustManagerExtensions");
-        this.f53983b = trustManager;
-        this.f53984c = x509TrustManagerExtensions;
+        this.f53984b = trustManager;
+        this.f53985c = x509TrustManagerExtensions;
     }
 
     @Override // yu.c
@@ -56,7 +56,7 @@ public final class b extends yu.c {
         Intrinsics.checkNotNullParameter(chain, "chain");
         Intrinsics.checkNotNullParameter(hostname, "hostname");
         try {
-            List<X509Certificate> checkServerTrusted = this.f53984c.checkServerTrusted((X509Certificate[]) chain.toArray(new X509Certificate[0]), "RSA", hostname);
+            List<X509Certificate> checkServerTrusted = this.f53985c.checkServerTrusted((X509Certificate[]) chain.toArray(new X509Certificate[0]), "RSA", hostname);
             Intrinsics.checkNotNullExpressionValue(checkServerTrusted, "x509TrustManagerExtensio…ficates, \"RSA\", hostname)");
             return checkServerTrusted;
         } catch (CertificateException e10) {
@@ -67,13 +67,13 @@ public final class b extends yu.c {
     }
 
     public boolean equals(Object obj) {
-        if ((obj instanceof b) && ((b) obj).f53983b == this.f53983b) {
+        if ((obj instanceof b) && ((b) obj).f53984b == this.f53984b) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return System.identityHashCode(this.f53983b);
+        return System.identityHashCode(this.f53984b);
     }
 }

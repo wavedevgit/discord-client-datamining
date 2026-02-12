@@ -6,16 +6,16 @@ import com.google.android.gms.common.api.internal.BasePendingResult;
 final class o extends BasePendingResult {
 
     /* renamed from: a  reason: collision with root package name */
-    private final k f23743a;
+    private final k f23744a;
 
     public o(e eVar, k kVar) {
         super(eVar);
-        this.f23743a = kVar;
+        this.f23744a = kVar;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // com.google.android.gms.common.api.internal.BasePendingResult
     public final k a(Status status) {
-        return this.f23743a;
+        return this.f23744a;
     }
 }

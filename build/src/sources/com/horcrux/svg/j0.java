@@ -7,60 +7,60 @@ import java.util.ArrayList;
 abstract class j0 {
 
     /* renamed from: a  reason: collision with root package name */
-    static float f17805a;
+    static float f17806a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static int f17806b;
+    private static int f17807b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static int f17807c;
+    private static int f17808c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static String f17808d;
+    private static String f17809d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static Path f17809e;
+    private static Path f17810e;
 
     /* renamed from: f  reason: collision with root package name */
-    static ArrayList f17810f;
+    static ArrayList f17811f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static float f17811g;
+    private static float f17812g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static float f17812h;
+    private static float f17813h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static float f17813i;
+    private static float f17814i;
 
     /* renamed from: j  reason: collision with root package name */
-    private static float f17814j;
+    private static float f17815j;
 
     /* renamed from: k  reason: collision with root package name */
-    private static float f17815k;
+    private static float f17816k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static float f17816l;
+    private static float f17817l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static boolean f17817m;
+    private static boolean f17818m;
 
     private static void A(float f10, float f11, float f12, float f13) {
-        f17813i = f10;
-        f17814j = f11;
-        e((f17811g * 2.0f) - f17813i, (f17812h * 2.0f) - f17814j, f10, f11, f12, f13);
+        f17814i = f10;
+        f17815j = f11;
+        e((f17812g * 2.0f) - f17814i, (f17813h * 2.0f) - f17815j, f10, f11, f12, f13);
     }
 
     private static void B(float f10, float f11) {
-        C(f10 + f17811g, f11 + f17812h);
+        C(f10 + f17812g, f11 + f17813h);
     }
 
     private static void C(float f10, float f11) {
-        u((f17811g * 2.0f) - f17813i, (f17812h * 2.0f) - f17814j, f10, f11);
+        u((f17812g * 2.0f) - f17814i, (f17813h * 2.0f) - f17815j, f10, f11);
     }
 
     private static void a(float f10, float f11, float f12, boolean z10, boolean z11, float f13, float f14) {
-        b(f10, f11, f12, z10, z11, f13 + f17811g, f14 + f17812h);
+        b(f10, f11, f12, z10, z11, f13 + f17812g, f14 + f17813h);
     }
 
     private static void b(float f10, float f11, float f12, boolean z10, boolean z11, float f13, float f14) {
@@ -73,8 +73,8 @@ abstract class j0 {
         float f21;
         float f22;
         float f23;
-        float f24 = f17811g;
-        float f25 = f17812h;
+        float f24 = f17812g;
+        float f25 = f17813h;
         if (f11 == 0.0f) {
             if (f10 == 0.0f) {
                 f15 = f14 - f25;
@@ -138,10 +138,10 @@ abstract class j0 {
             float f46 = f26 + f24;
             float f47 = f27 + f25;
             w();
-            f17813i = f46;
-            f17811g = f46;
-            f17814j = f47;
-            f17812h = f47;
+            f17814i = f46;
+            f17812g = f46;
+            f17815j = f47;
+            f17813h = f47;
             if (abs2 == f23 && radians == f20) {
                 float degrees = (float) Math.toDegrees(atan2);
                 float abs3 = Math.abs((degrees - ((float) Math.toDegrees(atan22))) % 360.0f);
@@ -151,9 +151,9 @@ abstract class j0 {
                 if (!z11) {
                     abs3 = -abs3;
                 }
-                float f48 = f17805a;
-                f17809e.arcTo(new RectF((f44 - abs2) * f48, (f45 - abs2) * f48, (f44 + abs2) * f48, (f45 + abs2) * f48), degrees, abs3);
-                f17810f.add(new i0(g.kCGPathElementAddCurveToPoint, new m0[]{new m0(f46, f47)}));
+                float f48 = f17806a;
+                f17810e.arcTo(new RectF((f44 - abs2) * f48, (f45 - abs2) * f48, (f44 + abs2) * f48, (f45 + abs2) * f48), degrees, abs3);
+                f17811f.add(new i0(g.kCGPathElementAddCurveToPoint, new m0[]{new m0(f46, f47)}));
                 return;
             }
             c(f44, f45, abs2, f23, atan2, atan22, z11, radians);
@@ -176,34 +176,34 @@ abstract class j0 {
     }
 
     private static void d() {
-        if (f17817m) {
-            f17811g = f17815k;
-            f17812h = f17816l;
-            f17817m = false;
-            f17809e.close();
-            f17810f.add(new i0(g.kCGPathElementCloseSubpath, new m0[]{new m0(f17811g, f17812h)}));
+        if (f17818m) {
+            f17812g = f17816k;
+            f17813h = f17817l;
+            f17818m = false;
+            f17810e.close();
+            f17811f.add(new i0(g.kCGPathElementCloseSubpath, new m0[]{new m0(f17812g, f17813h)}));
         }
     }
 
     private static void e(float f10, float f11, float f12, float f13, float f14, float f15) {
         w();
-        f17811g = f14;
-        f17812h = f15;
-        Path path = f17809e;
-        float f16 = f17805a;
+        f17812g = f14;
+        f17813h = f15;
+        Path path = f17810e;
+        float f16 = f17806a;
         path.cubicTo(f10 * f16, f11 * f16, f12 * f16, f13 * f16, f14 * f16, f16 * f15);
-        f17810f.add(new i0(g.kCGPathElementAddCurveToPoint, new m0[]{new m0(f10, f11), new m0(f12, f13), new m0(f14, f15)}));
+        f17811f.add(new i0(g.kCGPathElementAddCurveToPoint, new m0[]{new m0(f10, f11), new m0(f12, f13), new m0(f14, f15)}));
     }
 
     private static void f(float f10, float f11, float f12, float f13, float f14, float f15) {
-        float f16 = f17811g;
-        float f17 = f17812h;
+        float f16 = f17812g;
+        float f17 = f17813h;
         g(f10 + f16, f11 + f17, f12 + f16, f13 + f17, f14 + f16, f15 + f17);
     }
 
     private static void g(float f10, float f11, float f12, float f13, float f14, float f15) {
-        f17813i = f12;
-        f17814j = f13;
+        f17814i = f12;
+        f17815j = f13;
         e(f10, f11, f12, f13, f14, f15);
     }
 
@@ -244,74 +244,74 @@ abstract class j0 {
     }
 
     private static void k(float f10, float f11) {
-        l(f10 + f17811g, f11 + f17812h);
+        l(f10 + f17812g, f11 + f17813h);
     }
 
     private static void l(float f10, float f11) {
         w();
-        f17811g = f10;
-        f17813i = f10;
-        f17812h = f11;
-        f17814j = f11;
-        Path path = f17809e;
-        float f12 = f17805a;
+        f17812g = f10;
+        f17814i = f10;
+        f17813h = f11;
+        f17815j = f11;
+        Path path = f17810e;
+        float f12 = f17806a;
         path.lineTo(f10 * f12, f12 * f11);
-        f17810f.add(new i0(g.kCGPathElementAddLineToPoint, new m0[]{new m0(f10, f11)}));
+        f17811f.add(new i0(g.kCGPathElementAddLineToPoint, new m0[]{new m0(f10, f11)}));
     }
 
     private static void m(float f10, float f11) {
-        n(f10 + f17811g, f11 + f17812h);
+        n(f10 + f17812g, f11 + f17813h);
     }
 
     private static void n(float f10, float f11) {
-        f17811g = f10;
-        f17813i = f10;
-        f17815k = f10;
-        f17812h = f11;
-        f17814j = f11;
-        f17816l = f11;
-        Path path = f17809e;
-        float f12 = f17805a;
+        f17812g = f10;
+        f17814i = f10;
+        f17816k = f10;
+        f17813h = f11;
+        f17815j = f11;
+        f17817l = f11;
+        Path path = f17810e;
+        float f12 = f17806a;
         path.moveTo(f10 * f12, f12 * f11);
-        f17810f.add(new i0(g.kCGPathElementMoveToPoint, new m0[]{new m0(f10, f11)}));
+        f17811f.add(new i0(g.kCGPathElementMoveToPoint, new m0[]{new m0(f10, f11)}));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static Path o(String str) {
         boolean z10;
-        f17810f = new ArrayList();
+        f17811f = new ArrayList();
         Path path = new Path();
-        f17809e = path;
+        f17810e = path;
         if (str == null) {
             return path;
         }
-        f17807c = str.length();
-        f17808d = str;
-        f17806b = 0;
-        f17811g = 0.0f;
-        f17812h = 0.0f;
-        f17813i = 0.0f;
-        f17814j = 0.0f;
-        f17815k = 0.0f;
-        f17816l = 0.0f;
-        f17817m = false;
+        f17808c = str.length();
+        f17809d = str;
+        f17807b = 0;
+        f17812g = 0.0f;
+        f17813h = 0.0f;
+        f17814i = 0.0f;
+        f17815j = 0.0f;
+        f17816k = 0.0f;
+        f17817l = 0.0f;
+        f17818m = false;
         char c10 = ' ';
-        while (f17806b < f17807c) {
+        while (f17807b < f17808c) {
             y();
-            int i10 = f17806b;
-            if (i10 < f17807c) {
+            int i10 = f17807b;
+            if (i10 < f17808c) {
                 boolean z11 = true;
                 if (c10 != ' ') {
                     z10 = true;
                 } else {
                     z10 = false;
                 }
-                char charAt = f17808d.charAt(i10);
+                char charAt = f17809d.charAt(i10);
                 if (!z10 && charAt != 'M' && charAt != 'm') {
-                    throw new IllegalArgumentException(String.format("Unexpected character '%c' (i=%d, s=%s)", Character.valueOf(charAt), Integer.valueOf(f17806b), f17808d));
+                    throw new IllegalArgumentException(String.format("Unexpected character '%c' (i=%d, s=%s)", Character.valueOf(charAt), Integer.valueOf(f17807b), f17809d));
                 }
                 if (i(charAt)) {
-                    f17806b++;
+                    f17807b++;
                     z11 = false;
                     c10 = charAt;
                 } else if (j(charAt) && z10) {
@@ -324,10 +324,10 @@ abstract class j0 {
                             c10 = 'l';
                         }
                     } else {
-                        throw new IllegalArgumentException(String.format("Unexpected number after 'z' (s=%s)", f17808d));
+                        throw new IllegalArgumentException(String.format("Unexpected number after 'z' (s=%s)", f17809d));
                     }
                 } else {
-                    throw new IllegalArgumentException(String.format("Unexpected character '%c' (i=%d, s=%s)", Character.valueOf(charAt), Integer.valueOf(f17806b), f17808d));
+                    throw new IllegalArgumentException(String.format("Unexpected character '%c' (i=%d, s=%s)", Character.valueOf(charAt), Integer.valueOf(f17807b), f17809d));
                 }
                 boolean h10 = h(c10);
                 switch (c10) {
@@ -338,7 +338,7 @@ abstract class j0 {
                         g(q(), q(), q(), q(), q(), q());
                         break;
                     case 'H':
-                        l(q(), f17812h);
+                        l(q(), f17813h);
                         break;
                     case 'L':
                         l(q(), q());
@@ -356,7 +356,7 @@ abstract class j0 {
                         C(q(), q());
                         break;
                     case 'V':
-                        l(f17811g, q());
+                        l(f17812g, q());
                         break;
                     case 'Z':
                     case 'z':
@@ -390,7 +390,7 @@ abstract class j0 {
                         k(0.0f, q());
                         break;
                     default:
-                        throw new IllegalArgumentException(String.format("Unexpected comand '%c' (s=%s)", Character.valueOf(c10), f17808d));
+                        throw new IllegalArgumentException(String.format("Unexpected comand '%c' (s=%s)", Character.valueOf(c10), f17809d));
                 }
                 if (z11) {
                     if (h10) {
@@ -400,22 +400,22 @@ abstract class j0 {
                     }
                 }
             } else {
-                return f17809e;
+                return f17810e;
             }
         }
-        return f17809e;
+        return f17810e;
     }
 
     private static boolean p() {
         y();
-        char charAt = f17808d.charAt(f17806b);
+        char charAt = f17809d.charAt(f17807b);
         if (charAt != '0' && charAt != '1') {
-            throw new Error(String.format("Unexpected flag '%c' (i=%d, s=%s)", Character.valueOf(charAt), Integer.valueOf(f17806b), f17808d));
+            throw new Error(String.format("Unexpected flag '%c' (i=%d, s=%s)", Character.valueOf(charAt), Integer.valueOf(f17807b), f17809d));
         }
-        int i10 = f17806b + 1;
-        f17806b = i10;
-        if (i10 < f17807c && f17808d.charAt(i10) == ',') {
-            f17806b++;
+        int i10 = f17807b + 1;
+        f17807b = i10;
+        if (i10 < f17808c && f17809d.charAt(i10) == ',') {
+            f17807b++;
         }
         y();
         if (charAt == '1') {
@@ -425,91 +425,91 @@ abstract class j0 {
     }
 
     private static float q() {
-        if (f17806b != f17807c) {
+        if (f17807b != f17808c) {
             float s10 = s();
             y();
             r();
             return s10;
         }
-        throw new Error(String.format("Unexpected end (s=%s)", f17808d));
+        throw new Error(String.format("Unexpected end (s=%s)", f17809d));
     }
 
     private static void r() {
-        int i10 = f17806b;
-        if (i10 < f17807c && f17808d.charAt(i10) == ',') {
-            f17806b++;
+        int i10 = f17807b;
+        if (i10 < f17808c && f17809d.charAt(i10) == ',') {
+            f17807b++;
         }
     }
 
     private static float s() {
         char charAt;
         y();
-        int i10 = f17806b;
-        if (i10 != f17807c) {
-            char charAt2 = f17808d.charAt(i10);
+        int i10 = f17807b;
+        if (i10 != f17808c) {
+            char charAt2 = f17809d.charAt(i10);
             if (charAt2 == '-' || charAt2 == '+') {
-                int i11 = f17806b + 1;
-                f17806b = i11;
-                charAt2 = f17808d.charAt(i11);
+                int i11 = f17807b + 1;
+                f17807b = i11;
+                charAt2 = f17809d.charAt(i11);
             }
             if (charAt2 >= '0' && charAt2 <= '9') {
                 x();
-                int i12 = f17806b;
-                if (i12 < f17807c) {
-                    charAt2 = f17808d.charAt(i12);
+                int i12 = f17807b;
+                if (i12 < f17808c) {
+                    charAt2 = f17809d.charAt(i12);
                 }
             } else if (charAt2 != '.') {
-                throw new IllegalArgumentException(String.format("Invalid number formating character '%c' (i=%d, s=%s)", Character.valueOf(charAt2), Integer.valueOf(f17806b), f17808d));
+                throw new IllegalArgumentException(String.format("Invalid number formating character '%c' (i=%d, s=%s)", Character.valueOf(charAt2), Integer.valueOf(f17807b), f17809d));
             }
             if (charAt2 == '.') {
-                f17806b++;
+                f17807b++;
                 x();
-                int i13 = f17806b;
-                if (i13 < f17807c) {
-                    charAt2 = f17808d.charAt(i13);
+                int i13 = f17807b;
+                if (i13 < f17808c) {
+                    charAt2 = f17809d.charAt(i13);
                 }
             }
             if (charAt2 == 'e' || charAt2 == 'E') {
-                int i14 = f17806b;
-                if (i14 + 1 < f17807c && (charAt = f17808d.charAt(i14 + 1)) != 'm' && charAt != 'x') {
-                    int i15 = f17806b + 1;
-                    f17806b = i15;
-                    char charAt3 = f17808d.charAt(i15);
+                int i14 = f17807b;
+                if (i14 + 1 < f17808c && (charAt = f17809d.charAt(i14 + 1)) != 'm' && charAt != 'x') {
+                    int i15 = f17807b + 1;
+                    f17807b = i15;
+                    char charAt3 = f17809d.charAt(i15);
                     if (charAt3 != '+' && charAt3 != '-') {
                         if (charAt3 >= '0' && charAt3 <= '9') {
                             x();
                         } else {
-                            throw new IllegalArgumentException(String.format("Invalid number formating character '%c' (i=%d, s=%s)", Character.valueOf(charAt3), Integer.valueOf(f17806b), f17808d));
+                            throw new IllegalArgumentException(String.format("Invalid number formating character '%c' (i=%d, s=%s)", Character.valueOf(charAt3), Integer.valueOf(f17807b), f17809d));
                         }
                     } else {
-                        f17806b++;
+                        f17807b++;
                         x();
                     }
                 }
             }
-            String substring = f17808d.substring(i10, f17806b);
+            String substring = f17809d.substring(i10, f17807b);
             float parseFloat = Float.parseFloat(substring);
             if (!Float.isInfinite(parseFloat) && !Float.isNaN(parseFloat)) {
                 return parseFloat;
             }
-            throw new IllegalArgumentException(String.format("Invalid number '%s' (start=%d, i=%d, s=%s)", substring, Integer.valueOf(i10), Integer.valueOf(f17806b), f17808d));
+            throw new IllegalArgumentException(String.format("Invalid number '%s' (start=%d, i=%d, s=%s)", substring, Integer.valueOf(i10), Integer.valueOf(f17807b), f17809d));
         }
-        throw new Error(String.format("Unexpected end (s=%s)", f17808d));
+        throw new Error(String.format("Unexpected end (s=%s)", f17809d));
     }
 
     private static void t(float f10, float f11, float f12, float f13) {
-        float f14 = f17811g;
-        float f15 = f17812h;
+        float f14 = f17812g;
+        float f15 = f17813h;
         u(f10 + f14, f11 + f15, f12 + f14, f13 + f15);
     }
 
     private static void u(float f10, float f11, float f12, float f13) {
-        f17813i = f10;
-        f17814j = f11;
+        f17814i = f10;
+        f17815j = f11;
         float f14 = f10 * 2.0f;
         float f15 = f11 * 2.0f;
-        float f16 = (f17811g + f14) / 3.0f;
-        float f17 = (f17812h + f15) / 3.0f;
+        float f16 = (f17812g + f14) / 3.0f;
+        float f17 = (f17813h + f15) / 3.0f;
         e(f16, f17, (f12 + f14) / 3.0f, (f13 + f15) / 3.0f, f12, f13);
     }
 
@@ -519,18 +519,18 @@ abstract class j0 {
     }
 
     private static void w() {
-        if (!f17817m) {
-            f17815k = f17811g;
-            f17816l = f17812h;
-            f17817m = true;
+        if (!f17818m) {
+            f17816k = f17812g;
+            f17817l = f17813h;
+            f17818m = true;
         }
     }
 
     private static void x() {
         while (true) {
-            int i10 = f17806b;
-            if (i10 < f17807c && Character.isDigit(f17808d.charAt(i10))) {
-                f17806b++;
+            int i10 = f17807b;
+            if (i10 < f17808c && Character.isDigit(f17809d.charAt(i10))) {
+                f17807b++;
             } else {
                 return;
             }
@@ -539,9 +539,9 @@ abstract class j0 {
 
     private static void y() {
         while (true) {
-            int i10 = f17806b;
-            if (i10 < f17807c && Character.isWhitespace(f17808d.charAt(i10))) {
-                f17806b++;
+            int i10 = f17807b;
+            if (i10 < f17808c && Character.isWhitespace(f17809d.charAt(i10))) {
+                f17807b++;
             } else {
                 return;
             }
@@ -549,8 +549,8 @@ abstract class j0 {
     }
 
     private static void z(float f10, float f11, float f12, float f13) {
-        float f14 = f17811g;
-        float f15 = f17812h;
+        float f14 = f17812g;
+        float f15 = f17813h;
         A(f10 + f14, f11 + f15, f12 + f14, f13 + f15);
     }
 }

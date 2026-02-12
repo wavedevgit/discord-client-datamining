@@ -5,7 +5,7 @@ import bj.c;
 final class qb implements bj.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final qb f47090a = new qb();
+    static final qb f47091a = new qb();
 
     static {
         c.b a10 = bj.c.a("subjectSegmenterOptions");

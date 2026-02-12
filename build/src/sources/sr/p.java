@@ -10,46 +10,46 @@ import sr.i;
 public class p implements i.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f48337a;
+    private final List f48338a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f48338b;
+    private final List f48339b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Set f48339c = new HashSet(3);
+    private final Set f48340c = new HashSet(3);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(List list) {
-        this.f48337a = list;
-        this.f48338b = new ArrayList(list.size());
+        this.f48338a = list;
+        this.f48339b = new ArrayList(list.size());
     }
 
     private void a(i iVar) {
-        if (!this.f48338b.contains(iVar)) {
-            if (!this.f48339c.contains(iVar)) {
-                this.f48339c.add(iVar);
+        if (!this.f48339b.contains(iVar)) {
+            if (!this.f48340c.contains(iVar)) {
+                this.f48340c.add(iVar);
                 iVar.i(this);
-                this.f48339c.remove(iVar);
-                if (!this.f48338b.contains(iVar)) {
+                this.f48340c.remove(iVar);
+                if (!this.f48339b.contains(iVar)) {
                     if (tr.a.class.isAssignableFrom(iVar.getClass())) {
-                        this.f48338b.add(0, iVar);
+                        this.f48339b.add(0, iVar);
                         return;
                     } else {
-                        this.f48338b.add(iVar);
+                        this.f48339b.add(iVar);
                         return;
                     }
                 }
                 return;
             }
-            throw new IllegalStateException("Cyclic dependency chain found: " + this.f48339c);
+            throw new IllegalStateException("Cyclic dependency chain found: " + this.f48340c);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public List b() {
-        for (i iVar : this.f48337a) {
+        for (i iVar : this.f48338a) {
             a(iVar);
         }
-        return this.f48338b;
+        return this.f48339b;
     }
 }

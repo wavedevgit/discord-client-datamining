@@ -290,7 +290,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = var9 === var10;
                 case 397:
                     if (!var5) {
-                        _fun12803_ip = 451;
+                        _fun12803_ip = 450;
                         continue _fun12803
                     }
                 case 400:
@@ -305,7 +305,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = var9.bind(var10)(var5);
                     var5 = false;
                     var2.enableLogs = var5;
-                case 451:
+                case 450:
                     var5 = _closure2_slot0;
                     var12 = new Array(1);
                     var12[0] = var2;
@@ -315,22 +315,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = _closure1_slot8;
                     var0 = var0.bind(var7)();
                     if (var0) {
-                        _fun12803_ip = 500;
+                        _fun12803_ip = 499;
                         continue _fun12803
                     }
-                case 487:
+                case 486:
                     var0 = var11.apply;
                     var0 = var0.bind(var11)(var6, var12);
-                    _fun12803_ip = 532;
+                    _fun12803_ip = 531;
                     continue _fun12803;
-                case 500:
+                case 499:
                     var10 = var8.Reflect;
                     var9 = var10.construct;
                     var8 = _closure1_slot5;
                     var8 = var8.bind(var7)(var6);
                     var8 = var8.constructor;
                     var0 = var9.bind(var10)(var11, var12, var8);
-                case 532:
+                case 531:
                     var0 = var5.bind(var7)(var6, var0);
                     var _closure3_slot0 = var0;
                     var5 = new Array(0);
@@ -338,10 +338,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var6 = var2.sendDefaultPii;
                     var5 = true;
                     if (!(var5 === var6)) {
-                        _fun12803_ip = 608;
+                        _fun12803_ip = 607;
                         continue _fun12803
                     }
-                case 564:
+                case 563:
                     var6 = var0.on;
                     var5 = _closure1_slot0;
                     var8 = _closure1_slot1;
@@ -351,13 +351,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var5 = var4.addAutoIpAddressToSession;
                     var4 = 'beforeSendSession';
                     var4 = var6.bind(var0)(var4, var5);
-                case 608:
+                case 607:
                     var4 = var2.enableLogs;
                     if (!var4) {
-                        _fun12803_ip = 661;
+                        _fun12803_ip = 660;
                         continue _fun12803
                     }
-                case 617:
+                case 616:
                     var6 = var0.on;
                     var5 = 'flush';
                     var4 = function() { // Environment: var3
@@ -415,7 +415,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         }
                     };
                     var3 = var5.bind(var0)(var4, var3);
-                case 661:
+                case 660:
                     var2.enableLogs = var1;
                     return var0;
             }

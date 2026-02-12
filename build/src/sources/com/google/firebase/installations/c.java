@@ -22,59 +22,59 @@ import zg.m;
 public class c implements jj.e {
 
     /* renamed from: m  reason: collision with root package name */
-    private static final Object f17220m = new Object();
+    private static final Object f17221m = new Object();
 
     /* renamed from: n  reason: collision with root package name */
-    private static final ThreadFactory f17221n = new a();
+    private static final ThreadFactory f17222n = new a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final ui.e f17222a;
+    private final ui.e f17223a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final lj.c f17223b;
+    private final lj.c f17224b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final kj.c f17224c;
+    private final kj.c f17225c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final i f17225d;
+    private final i f17226d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final w f17226e;
+    private final w f17227e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final jj.g f17227f;
+    private final jj.g f17228f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Object f17228g;
+    private final Object f17229g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final ExecutorService f17229h;
+    private final ExecutorService f17230h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Executor f17230i;
+    private final Executor f17231i;
 
     /* renamed from: j  reason: collision with root package name */
-    private String f17231j;
+    private String f17232j;
 
     /* renamed from: k  reason: collision with root package name */
-    private Set f17232k;
+    private Set f17233k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final List f17233l;
+    private final List f17234l;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements ThreadFactory {
 
         /* renamed from: a  reason: collision with root package name */
-        private final AtomicInteger f17234a = new AtomicInteger(1);
+        private final AtomicInteger f17235a = new AtomicInteger(1);
 
         a() {
         }
 
         @Override // java.util.concurrent.ThreadFactory
         public Thread newThread(Runnable runnable) {
-            return new Thread(runnable, String.format("firebase-installations-executor-%d", Integer.valueOf(this.f17234a.getAndIncrement())));
+            return new Thread(runnable, String.format("firebase-installations-executor-%d", Integer.valueOf(this.f17235a.getAndIncrement())));
         }
     }
 
@@ -83,34 +83,34 @@ public class c implements jj.e {
     public static /* synthetic */ class b {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f17235a;
+        static final /* synthetic */ int[] f17236a;
 
         /* renamed from: b  reason: collision with root package name */
-        static final /* synthetic */ int[] f17236b;
+        static final /* synthetic */ int[] f17237b;
 
         static {
             int[] iArr = new int[f.b.values().length];
-            f17236b = iArr;
+            f17237b = iArr;
             try {
                 iArr[f.b.OK.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f17236b[f.b.BAD_CONFIG.ordinal()] = 2;
+                f17237b[f.b.BAD_CONFIG.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f17236b[f.b.AUTH_ERROR.ordinal()] = 3;
+                f17237b[f.b.AUTH_ERROR.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             int[] iArr2 = new int[d.b.values().length];
-            f17235a = iArr2;
+            f17236a = iArr2;
             try {
                 iArr2[d.b.OK.ordinal()] = 1;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f17235a[d.b.BAD_CONFIG.ordinal()] = 2;
+                f17236a[d.b.BAD_CONFIG.ordinal()] = 2;
             } catch (NoSuchFieldError unused5) {
             }
         }
@@ -127,8 +127,8 @@ public class c implements jj.e {
     }
 
     private synchronized void A(kj.d dVar, kj.d dVar2) {
-        if (this.f17232k.size() != 0 && !TextUtils.equals(dVar.d(), dVar2.d())) {
-            Iterator it = this.f17232k.iterator();
+        if (this.f17233k.size() != 0 && !TextUtils.equals(dVar.d(), dVar2.d())) {
+            Iterator it = this.f17233k.iterator();
             if (it.hasNext()) {
                 android.support.v4.media.session.b.a(it.next());
                 dVar2.d();
@@ -143,7 +143,7 @@ public class c implements jj.e {
 
     private Task f() {
         k kVar = new k();
-        h(new e(this.f17225d, kVar));
+        h(new e(this.f17226d, kVar));
         return kVar.a();
     }
 
@@ -154,8 +154,8 @@ public class c implements jj.e {
     }
 
     private void h(h hVar) {
-        synchronized (this.f17228g) {
-            this.f17233l.add(hVar);
+        synchronized (this.f17229g) {
+            this.f17234l.add(hVar);
         }
     }
 
@@ -178,7 +178,7 @@ public class c implements jj.e {
             goto L24
         L11:
             if (r3 != 0) goto L1f
-            com.google.firebase.installations.i r3 = r2.f17225d     // Catch: com.google.firebase.installations.d -> L1d
+            com.google.firebase.installations.i r3 = r2.f17226d     // Catch: com.google.firebase.installations.d -> L1d
             boolean r3 = r3.f(r0)     // Catch: com.google.firebase.installations.d -> L1d
             if (r3 == 0) goto L1c
             goto L1f
@@ -232,7 +232,7 @@ public class c implements jj.e {
             r10 = r10.p();
         }
         y(r10);
-        this.f17230i.execute(new Runnable() { // from class: jj.c
+        this.f17231i.execute(new Runnable() { // from class: jj.c
             @Override // java.lang.Runnable
             public final void run() {
                 com.google.firebase.installations.c.this.i(z10);
@@ -241,8 +241,8 @@ public class c implements jj.e {
     }
 
     private kj.d k(kj.d dVar) {
-        lj.f e10 = this.f17223b.e(l(), dVar.d(), s(), dVar.f());
-        int i10 = b.f17236b[e10.b().ordinal()];
+        lj.f e10 = this.f17224b.e(l(), dVar.d(), s(), dVar.f());
+        int i10 = b.f17237b[e10.b().ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
@@ -253,15 +253,15 @@ public class c implements jj.e {
             }
             return dVar.q("BAD CONFIG");
         }
-        return dVar.o(e10.c(), e10.d(), this.f17225d.b());
+        return dVar.o(e10.c(), e10.d(), this.f17226d.b());
     }
 
     private synchronized String n() {
-        return this.f17231j;
+        return this.f17232j;
     }
 
     private kj.b o() {
-        return (kj.b) this.f17226e.get();
+        return (kj.b) this.f17227e.get();
     }
 
     public static c p(ui.e eVar) {
@@ -277,10 +277,10 @@ public class c implements jj.e {
 
     private kj.d q() {
         kj.d d10;
-        synchronized (f17220m) {
+        synchronized (f17221m) {
             try {
-                com.google.firebase.installations.b a10 = com.google.firebase.installations.b.a(this.f17222a.j(), "generatefid.lock");
-                d10 = this.f17224c.d();
+                com.google.firebase.installations.b a10 = com.google.firebase.installations.b.a(this.f17223a.j(), "generatefid.lock");
+                d10 = this.f17225c.d();
                 if (a10 != null) {
                     a10.b();
                 }
@@ -293,12 +293,12 @@ public class c implements jj.e {
 
     private kj.d r() {
         kj.d d10;
-        synchronized (f17220m) {
+        synchronized (f17221m) {
             try {
-                com.google.firebase.installations.b a10 = com.google.firebase.installations.b.a(this.f17222a.j(), "generatefid.lock");
-                d10 = this.f17224c.d();
+                com.google.firebase.installations.b a10 = com.google.firebase.installations.b.a(this.f17223a.j(), "generatefid.lock");
+                d10 = this.f17225c.d();
                 if (d10.j()) {
-                    d10 = this.f17224c.b(d10.t(v(d10)));
+                    d10 = this.f17225c.b(d10.t(v(d10)));
                 }
                 if (a10 != null) {
                     a10.b();
@@ -311,10 +311,10 @@ public class c implements jj.e {
     }
 
     private void t(kj.d dVar) {
-        synchronized (f17220m) {
+        synchronized (f17221m) {
             try {
-                com.google.firebase.installations.b a10 = com.google.firebase.installations.b.a(this.f17222a.j(), "generatefid.lock");
-                this.f17224c.b(dVar);
+                com.google.firebase.installations.b a10 = com.google.firebase.installations.b.a(this.f17223a.j(), "generatefid.lock");
+                this.f17225c.b(dVar);
                 if (a10 != null) {
                     a10.b();
                 }
@@ -333,12 +333,12 @@ public class c implements jj.e {
     }
 
     private String v(kj.d dVar) {
-        if ((!this.f17222a.l().equals("CHIME_ANDROID_SDK") && !this.f17222a.t()) || !dVar.m()) {
-            return this.f17227f.a();
+        if ((!this.f17223a.l().equals("CHIME_ANDROID_SDK") && !this.f17223a.t()) || !dVar.m()) {
+            return this.f17228f.a();
         }
         String f10 = o().f();
         if (TextUtils.isEmpty(f10)) {
-            return this.f17227f.a();
+            return this.f17228f.a();
         }
         return f10;
     }
@@ -350,21 +350,21 @@ public class c implements jj.e {
         } else {
             str = null;
         }
-        lj.d d10 = this.f17223b.d(l(), dVar.d(), s(), m(), str);
-        int i10 = b.f17235a[d10.e().ordinal()];
+        lj.d d10 = this.f17224b.d(l(), dVar.d(), s(), m(), str);
+        int i10 = b.f17236a[d10.e().ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
                 return dVar.q("BAD CONFIG");
             }
             throw new d("Firebase Installations Service is unavailable. Please try again later.", d.a.UNAVAILABLE);
         }
-        return dVar.s(d10.c(), d10.d(), this.f17225d.b(), d10.b().c(), d10.b().d());
+        return dVar.s(d10.c(), d10.d(), this.f17226d.b(), d10.b().c(), d10.b().d());
     }
 
     private void x(Exception exc) {
-        synchronized (this.f17228g) {
+        synchronized (this.f17229g) {
             try {
-                Iterator it = this.f17233l.iterator();
+                Iterator it = this.f17234l.iterator();
                 while (it.hasNext()) {
                     if (((h) it.next()).b(exc)) {
                         it.remove();
@@ -377,9 +377,9 @@ public class c implements jj.e {
     }
 
     private void y(kj.d dVar) {
-        synchronized (this.f17228g) {
+        synchronized (this.f17229g) {
             try {
-                Iterator it = this.f17233l.iterator();
+                Iterator it = this.f17234l.iterator();
                 while (it.hasNext()) {
                     if (((h) it.next()).a(dVar)) {
                         it.remove();
@@ -392,14 +392,14 @@ public class c implements jj.e {
     }
 
     private synchronized void z(String str) {
-        this.f17231j = str;
+        this.f17232j = str;
     }
 
     @Override // jj.e
     public Task a(final boolean z10) {
         u();
         Task f10 = f();
-        this.f17229h.execute(new Runnable() { // from class: jj.d
+        this.f17230h.execute(new Runnable() { // from class: jj.d
             @Override // java.lang.Runnable
             public final void run() {
                 com.google.firebase.installations.c.this.j(z10);
@@ -416,7 +416,7 @@ public class c implements jj.e {
             return m.f(n10);
         }
         Task g10 = g();
-        this.f17229h.execute(new Runnable() { // from class: jj.b
+        this.f17230h.execute(new Runnable() { // from class: jj.b
             @Override // java.lang.Runnable
             public final void run() {
                 com.google.firebase.installations.c.this.j(false);
@@ -426,28 +426,28 @@ public class c implements jj.e {
     }
 
     String l() {
-        return this.f17222a.m().b();
+        return this.f17223a.m().b();
     }
 
     String m() {
-        return this.f17222a.m().c();
+        return this.f17223a.m().c();
     }
 
     String s() {
-        return this.f17222a.m().e();
+        return this.f17223a.m().e();
     }
 
     c(ExecutorService executorService, Executor executor, ui.e eVar, lj.c cVar, kj.c cVar2, i iVar, w wVar, jj.g gVar) {
-        this.f17228g = new Object();
-        this.f17232k = new HashSet();
-        this.f17233l = new ArrayList();
-        this.f17222a = eVar;
-        this.f17223b = cVar;
-        this.f17224c = cVar2;
-        this.f17225d = iVar;
-        this.f17226e = wVar;
-        this.f17227f = gVar;
-        this.f17229h = executorService;
-        this.f17230i = executor;
+        this.f17229g = new Object();
+        this.f17233k = new HashSet();
+        this.f17234l = new ArrayList();
+        this.f17223a = eVar;
+        this.f17224b = cVar;
+        this.f17225c = cVar2;
+        this.f17226d = iVar;
+        this.f17227e = wVar;
+        this.f17228f = gVar;
+        this.f17230h = executorService;
+        this.f17231i = executor;
     }
 }

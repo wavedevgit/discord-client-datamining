@@ -14,19 +14,19 @@ import org.jetbrains.annotations.NotNull;
 public final class AddressAutocompleteRequest_MetaJsonAdapter extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final m.b f20790a;
+    private final m.b f20791a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f20791b;
+    private final h f20792b;
 
     public AddressAutocompleteRequest_MetaJsonAdapter(@NotNull w moshi) {
         Intrinsics.checkNotNullParameter(moshi, "moshi");
         m.b a10 = m.b.a("fromComponent", "searchInput");
         Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
-        this.f20790a = a10;
+        this.f20791a = a10;
         h f10 = moshi.f(String.class, x0.d(), "fromComponent");
         Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
-        this.f20791b = f10;
+        this.f20792b = f10;
     }
 
     @Override // com.squareup.moshi.h
@@ -37,14 +37,14 @@ public final class AddressAutocompleteRequest_MetaJsonAdapter extends h {
         String str = null;
         String str2 = null;
         while (reader.hasNext()) {
-            int J = reader.J(this.f20790a);
+            int J = reader.J(this.f20791a);
             if (J != -1) {
                 if (J != 0) {
-                    if (J == 1 && (str2 = (String) this.f20791b.fromJson(reader)) == null) {
+                    if (J == 1 && (str2 = (String) this.f20792b.fromJson(reader)) == null) {
                         throw c.x("searchInput", "searchInput", reader);
                     }
                 } else {
-                    str = (String) this.f20791b.fromJson(reader);
+                    str = (String) this.f20792b.fromJson(reader);
                     if (str == null) {
                         throw c.x("fromComponent", "fromComponent", reader);
                     }
@@ -71,9 +71,9 @@ public final class AddressAutocompleteRequest_MetaJsonAdapter extends h {
         if (meta != null) {
             writer.i();
             writer.J("fromComponent");
-            this.f20791b.toJson(writer, meta.a());
+            this.f20792b.toJson(writer, meta.a());
             writer.J("searchInput");
-            this.f20791b.toJson(writer, meta.b());
+            this.f20792b.toJson(writer, meta.b());
             writer.s();
             return;
         }

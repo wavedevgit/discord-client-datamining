@@ -9,101 +9,94 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
-        _fun117030: for (var _fun117030_ip = 0;;) switch (_fun117030_ip) {
+        _fun115916: for (var _fun115916_ip = 0;;) switch (_fun115916_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.guild;
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
-                var0 = 5;
-                var0 = var3[var0];
-                var4 = undefined;
-                var2 = var2.bind(var4)(var0);
-                var0 = var2.useNavigation;
-                var6 = var0.bind(var2)();
-                var2 = _closure1_slot1;
                 var0 = 6;
                 var0 = var3[var0];
-                var3 = var2.bind(var4)(var0);
+                var6 = undefined;
+                var2 = var2.bind(var6)(var0);
+                var0 = var2.useNavigation;
+                var5 = var0.bind(var2)();
+                var2 = _closure1_slot1;
+                var0 = 7;
+                var0 = var3[var0];
+                var3 = var2.bind(var6)(var0);
                 var2 = var7.id;
                 var0 = _closure1_slot6;
                 var0 = var0.GUILD_ROLE_SUBSCRIPTIONS;
-                var0 = var3.bind(var4)(var2, var0);
+                var0 = var3.bind(var6)(var2, var0);
                 var3 = var0.application;
                 var0 = var0.loading;
                 if (var0) {
-                    _fun117030_ip = 247;
-                    continue _fun117030
+                    _fun115916_ip = 247;
+                    continue _fun115916
                 }
             case 97:
-                var5 = var7.features;
-                var2 = var5.has;
+                var4 = var7.features;
+                var2 = var4.has;
                 var0 = _closure1_slot4;
                 var0 = var0.CREATOR_MONETIZABLE;
-                var0 = var2.bind(var5)(var0);
+                var0 = var2.bind(var4)(var0);
                 if (var0) {
-                    _fun117030_ip = 193;
-                    continue _fun117030
+                    _fun115916_ip = 193;
+                    continue _fun115916
                 }
             case 126:
-                var5 = var7.features;
-                var2 = var5.has;
+                var4 = var7.features;
+                var2 = var4.has;
                 var0 = _closure1_slot4;
                 var0 = var0.CREATOR_MONETIZABLE_PROVISIONAL;
-                var0 = var2.bind(var5)(var0);
+                var0 = var2.bind(var4)(var0);
                 if (var0) {
-                    _fun117030_ip = 193;
-                    continue _fun117030
+                    _fun115916_ip = 193;
+                    continue _fun115916
                 }
             case 155:
-                var5 = _closure1_slot7;
+                var4 = _closure1_slot7;
                 var2 = _closure1_slot1;
                 var8 = _closure1_slot2;
                 var0 = 8;
                 var0 = var8[var0];
-                var2 = var2.bind(var4)(var0);
+                var2 = var2.bind(var6)(var0);
                 var0 = {};
                 var0.guild = var7;
-                var0 = var5.bind(var4)(var2, var0);
-                _fun117030_ip = 245;
-                continue _fun117030;
+                var0 = var4.bind(var6)(var2, var0);
+                _fun115916_ip = 245;
+                continue _fun115916;
             case 193:
                 var2 = null;
                 if (!(var2 != var3)) {
-                    _fun117030_ip = 223;
-                    continue _fun117030
+                    _fun115916_ip = 223;
+                    continue _fun115916
                 }
             case 199:
-                var5 = var6.replace;
+                var4 = var5.replace;
                 var3 = _closure1_slot5;
                 var3 = var3.ROLE_SUBSCRIPTIONS_TIERS;
-                var3 = var5.bind(var6)(var3);
+                var3 = var4.bind(var5)(var3);
                 var0 = null;
-                _fun117030_ip = 245;
-                continue _fun117030;
+                _fun115916_ip = 245;
+                continue _fun115916;
             case 223:
-                var5 = var6.replace;
+                var4 = var5.replace;
                 var3 = _closure1_slot5;
                 var3 = var3.ROLE_SUBSCRIPTIONS_ENABLE_MONETIZATION;
-                var3 = var5.bind(var6)(var3);
+                var3 = var4.bind(var5)(var3);
                 var0 = null;
             case 245:
-                _fun117030_ip = 279;
-                continue _fun117030;
+                _fun115916_ip = 251;
+                continue _fun115916;
             case 247:
-                var3 = _closure1_slot7;
-                var2 = _closure1_slot1;
-                var5 = _closure1_slot2;
-                var1 = 7;
-                var1 = var5[var1];
-                var2 = var2.bind(var4)(var1);
-                var1 = {};
-                var0 = var3.bind(var4)(var2, var1);
-            case 279:
+                var0 = _closure1_slot8;
+            case 251:
                 return var0;
         }
     };
-    var _closure1_slot8 = var0;
+    var _closure1_slot10 = var0;
     var0 = global;
     var8 = var0.Object;
     var7 = var8.defineProperty;
@@ -124,8 +117,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 2;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var6 = var3.GuildFeatures;
-    var _closure1_slot4 = var6;
+    var7 = var3.GuildFeatures;
+    var _closure1_slot4 = var7;
     var3 = var3.GuildSettingsSections;
     var _closure1_slot5 = var3;
     var3 = 3;
@@ -136,8 +129,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 4;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var3 = var3.jsx;
-    var _closure1_slot7 = var3;
+    var7 = var3.jsx;
+    var _closure1_slot7 = var7;
+    var3 = 5;
+    var8 = var5[var3];
+    var9 = var6.bind(var0)(var8);
+    var8 = {};
+    var8 = var7.bind(var0)(var9, var8);
+    var _closure1_slot8 = var8;
+    var3 = var5[var3];
+    var6 = var6.bind(var0)(var3);
+    var3 = {};
+    var3 = var7.bind(var0)(var6, var3);
+    var _closure1_slot9 = var3;
     var3 = 12;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
@@ -145,18 +149,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsEmpty.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun117031: for (var _fun117031_ip = 0;;) switch (_fun117031_ip) {
+        _fun115917: for (var _fun115917_ip = 0;;) switch (_fun115917_ip) {
             case 0:
                 var1 = arg0;
                 var1 = var1.guildId;
                 var _closure2_slot0 = var1;
-                var5 = _closure1_slot0;
+                var4 = _closure1_slot0;
                 var3 = _closure1_slot2;
                 var2 = 9;
                 var2 = var3[var2];
-                var4 = undefined;
-                var6 = var5.bind(var4)(var2);
-                var5 = var6.useStateFromStores;
+                var5 = undefined;
+                var6 = var4.bind(var5)(var2);
+                var4 = var6.useStateFromStores;
                 var7 = _closure1_slot3;
                 var2 = new Array(1);
                 var2[0] = var7;
@@ -167,57 +171,50 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1.bind(var2)(var0);
                     return var0;
                 };
-                var7 = var5.bind(var6)(var2, var0);
+                var7 = var4.bind(var6)(var2, var0);
                 var2 = _closure1_slot1;
                 var0 = 10;
                 var0 = var3[var0];
-                var0 = var2.bind(var4)(var0);
-                var6 = var0.bind(var4)(var7);
+                var0 = var2.bind(var5)(var0);
+                var6 = var0.bind(var5)(var7);
                 var0 = null;
                 if (!(var0 != var7)) {
-                    _fun117031_ip = 164;
-                    continue _fun117031
+                    _fun115917_ip = 164;
+                    continue _fun115917
                 }
             case 96:
                 if (!(var0 == var6)) {
-                    _fun117031_ip = 122;
-                    continue _fun117031
+                    _fun115917_ip = 122;
+                    continue _fun115917
                 }
             case 100:
                 var3 = _closure1_slot7;
-                var2 = _closure1_slot8;
+                var2 = _closure1_slot10;
                 var0 = {};
                 var0.guild = var7;
-                var0 = var3.bind(var4)(var2, var0);
-                _fun117031_ip = 162;
-                continue _fun117031;
+                var0 = var3.bind(var5)(var2, var0);
+                _fun115917_ip = 162;
+                continue _fun115917;
             case 122:
-                var5 = _closure1_slot7;
+                var4 = _closure1_slot7;
                 var3 = _closure1_slot1;
                 var8 = _closure1_slot2;
                 var2 = 11;
                 var2 = var8[var2];
-                var3 = var3.bind(var4)(var2);
+                var3 = var3.bind(var5)(var2);
                 var2 = {};
                 var2.guild = var7;
                 var2.config = var6;
-                var0 = var5.bind(var4)(var3, var2);
+                var0 = var4.bind(var5)(var3, var2);
             case 162:
-                _fun117031_ip = 196;
-                continue _fun117031;
+                _fun115917_ip = 168;
+                continue _fun115917;
             case 164:
-                var3 = _closure1_slot7;
-                var2 = _closure1_slot1;
-                var5 = _closure1_slot2;
-                var1 = 7;
-                var1 = var5[var1];
-                var2 = var2.bind(var4)(var1);
-                var1 = {};
-                var0 = var3.bind(var4)(var2, var1);
-            case 196:
+                var0 = _closure1_slot9;
+            case 168:
                 return var0;
         }
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1410, 660, 3482, 33, 1469, 14898, 14899, 14900, 566, 14937, 14938, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1410, 660, 3482, 33, 14778, 1469, 14779, 14840, 566, 14868, 14869, 2]);
