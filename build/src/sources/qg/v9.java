@@ -19,11 +19,21 @@ public final class v9 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ v9(t9 t9Var, u9 u9Var) {
-        this.f45040a = t9Var.f44987a;
-        this.f45041b = t9Var.f44988b;
-        this.f45042c = t9Var.f44989c;
-        this.f45043d = t9Var.f44990d;
-        this.f45044e = t9Var.f44991e;
+        Long l10;
+        ca caVar;
+        Boolean bool;
+        Boolean bool2;
+        Boolean bool3;
+        l10 = t9Var.f44987a;
+        this.f45040a = l10;
+        caVar = t9Var.f44988b;
+        this.f45041b = caVar;
+        bool = t9Var.f44989c;
+        this.f45042c = bool;
+        bool2 = t9Var.f44990d;
+        this.f45043d = bool2;
+        bool3 = t9Var.f44991e;
+        this.f45044e = bool3;
     }
 
     public final ca a() {
