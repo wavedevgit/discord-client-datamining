@@ -2,47 +2,23 @@ package rg;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class ke {
 
-    /* renamed from: a */
+    /* renamed from: a  reason: collision with root package name */
     private mi f46948a;
 
-    /* renamed from: b */
+    /* renamed from: b  reason: collision with root package name */
     private je f46949b;
 
-    /* renamed from: c */
+    /* renamed from: c  reason: collision with root package name */
     private he f46950c;
 
-    /* renamed from: d */
+    /* renamed from: d  reason: collision with root package name */
     private rh f46951d;
 
-    /* renamed from: e */
+    /* renamed from: e  reason: collision with root package name */
     private oh f46952e;
 
-    /* renamed from: f */
+    /* renamed from: f  reason: collision with root package name */
     private y3 f46953f;
-
-    public static /* bridge */ /* synthetic */ y3 a(ke keVar) {
-        return keVar.f46953f;
-    }
-
-    public static /* bridge */ /* synthetic */ he b(ke keVar) {
-        return keVar.f46950c;
-    }
-
-    public static /* bridge */ /* synthetic */ je c(ke keVar) {
-        return keVar.f46949b;
-    }
-
-    public static /* bridge */ /* synthetic */ oh k(ke keVar) {
-        return keVar.f46952e;
-    }
-
-    public static /* bridge */ /* synthetic */ rh l(ke keVar) {
-        return keVar.f46951d;
-    }
-
-    public static /* bridge */ /* synthetic */ mi m(ke keVar) {
-        return keVar.f46948a;
-    }
 
     public final ke d(y3 y3Var) {
         this.f46953f = y3Var;
