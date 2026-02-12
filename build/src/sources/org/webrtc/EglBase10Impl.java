@@ -14,9 +14,8 @@ import javax.microedition.khronos.egl.EGLSurface;
 import org.webrtc.EglBase;
 import org.webrtc.EglBase10;
 import org.webrtc.EglBase10Impl;
-/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
-public class EglBase10Impl implements EglBase10 {
+class EglBase10Impl implements EglBase10 {
     private static final int EGL_CONTEXT_CLIENT_VERSION = 12440;
     private static final EglConnection EGL_NO_CONNECTION = new EglConnection();
     private static final String TAG = "EglBase10Impl";
