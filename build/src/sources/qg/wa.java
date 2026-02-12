@@ -19,13 +19,11 @@ public final class wa {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ wa(ua uaVar, va vaVar) {
-        v9 v9Var;
         r9 r9Var;
         n9 n9Var;
         Integer num;
         Integer num2;
-        v9Var = uaVar.f45016a;
-        this.f45113a = v9Var;
+        this.f45113a = uaVar.f45016a;
         r9Var = uaVar.f45017b;
         this.f45114b = r9Var;
         n9Var = uaVar.f45018c;
