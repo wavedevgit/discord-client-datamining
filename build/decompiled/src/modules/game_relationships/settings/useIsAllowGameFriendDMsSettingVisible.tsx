@@ -50,4 +50,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsAllowGameFriendDMsSettingVisible = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [11387, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [11389, 566, 2]);

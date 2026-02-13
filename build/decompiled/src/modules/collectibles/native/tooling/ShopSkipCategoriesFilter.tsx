@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/native/tooling/ShopSkipCategoriesFilter.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Environment: var1
-        _fun88384: for (var _fun88384_ip = 0;;) switch (_fun88384_ip) {
+        _fun88386: for (var _fun88386_ip = 0;;) switch (_fun88386_ip) {
             case 0:
                 var0 = _closure1_slot7;
                 var3 = undefined;
@@ -171,8 +171,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11[0] = var12;
                 var12 = var10;
                 if (!var12) {
-                    _fun88384_ip = 229;
-                    continue _fun88384
+                    _fun88386_ip = 229;
+                    continue _fun88386
                 }
             case 223:
                 var12 = var19.stepperButtonDisabled;
@@ -180,13 +180,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11[1] = var12;
                 var9.style = var11;
                 var11 = function() {
-                    _fun88386: for (var _fun88386_ip = 0;;) switch (_fun88386_ip) {
+                    _fun88388: for (var _fun88388_ip = 0;;) switch (_fun88388_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var1 = 0;
                             if (!(var2 > var1)) {
-                                _fun88386_ip = 60;
-                                continue _fun88386
+                                _fun88388_ip = 60;
+                                continue _fun88388
                             }
                         case 13:
                             var3 = _closure1_slot0;
@@ -240,8 +240,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17[0] = var18;
                 var18 = var14;
                 if (!var18) {
-                    _fun88384_ip = 396;
-                    continue _fun88384
+                    _fun88386_ip = 396;
+                    continue _fun88386
                 }
             case 390:
                 var18 = var19.stepperButtonDisabled;
@@ -249,13 +249,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17[1] = var18;
                 var10.style = var17;
                 var15 = function() {
-                    _fun88387: for (var _fun88387_ip = 0;;) switch (_fun88387_ip) {
+                    _fun88389: for (var _fun88389_ip = 0;;) switch (_fun88389_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var1 = 100;
                             if (!(var2 < var1)) {
-                                _fun88387_ip = 61;
-                                continue _fun88387
+                                _fun88389_ip = 61;
+                                continue _fun88389
                             }
                         case 14:
                             var3 = _closure1_slot0;

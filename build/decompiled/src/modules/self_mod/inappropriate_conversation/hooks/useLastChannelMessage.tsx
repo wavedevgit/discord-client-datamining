@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var4;
         var0 = function() { // Environment: var0
-            _fun73015: for (var _fun73015_ip = 0;;) switch (_fun73015_ip) {
+            _fun73018: for (var _fun73018_ip = 0;;) switch (_fun73018_ip) {
                 case 0:
                     var4 = _closure1_slot2;
                     var3 = var4.getLastNonCurrentUserMessage;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var3.bind(var4)(var0);
                     var3 = null;
                     if (!(var3 == var0)) {
-                        _fun73015_ip = 52;
-                        continue _fun73015
+                        _fun73018_ip = 52;
+                        continue _fun73018
                     }
                 case 33:
                     var3 = _closure1_slot2;

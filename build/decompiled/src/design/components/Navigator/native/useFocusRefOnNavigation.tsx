@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Navigator/native/useFocusRefOnNavigation.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun101018: for (var _fun101018_ip = 0;;) switch (_fun101018_ip) {
+        _fun100928: for (var _fun100928_ip = 0;;) switch (_fun100928_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.inputRef;
@@ -35,8 +35,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.enabled;
                 var0 = undefined;
                 if (!(var7 === var0)) {
-                    _fun101018_ip = 28;
-                    continue _fun101018
+                    _fun100928_ip = 28;
+                    continue _fun100928
                 }
             case 26:
                 var7 = true;
@@ -66,27 +66,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var3.bind(var1)(var2);
                     var2 = var3.runAfterInteractions;
                     var1 = function() { // Environment: var0
-                        _fun101020: for (var _fun101020_ip = 0;;) switch (_fun101020_ip) {
+                        _fun100930: for (var _fun100930_ip = 0;;) switch (_fun100930_ip) {
                             case 0:
                                 var1 = _closure2_slot1;
                                 if (!var1) {
-                                    _fun101020_ip = 14;
-                                    continue _fun101020
+                                    _fun100930_ip = 14;
+                                    continue _fun100930
                                 }
                             case 10:
                                 var1 = _closure2_slot2;
                             case 14:
                                 if (!var1) {
-                                    _fun101020_ip = 42;
-                                    continue _fun101020
+                                    _fun100930_ip = 42;
+                                    continue _fun100930
                                 }
                             case 17:
                                 var0 = _closure2_slot0;
                                 var1 = var0.current;
                                 var0 = null;
                                 if (!(var0 != var1)) {
-                                    _fun101020_ip = 42;
-                                    continue _fun101020
+                                    _fun100930_ip = 42;
+                                    continue _fun100930
                                 }
                             case 32:
                                 var0 = var1.focus;

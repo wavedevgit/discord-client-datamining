@@ -263,7 +263,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/display_name_styles/native/DisplayNameStylesEditPreview.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun85788: for (var _fun85788_ip = 0;;) switch (_fun85788_ip) {
+        _fun85791: for (var _fun85791_ip = 0;;) switch (_fun85791_ip) {
             case 0:
                 var1 = arg0;
                 var17 = var1.user;
@@ -365,13 +365,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var17 == var14;
                 var14 = undefined;
                 if (!var18) {
-                    _fun85788_ip = 406;
-                    continue _fun85788
+                    _fun85791_ip = 406;
+                    continue _fun85791
                 }
             case 396:
                 if (!(var17 != var16)) {
-                    _fun85788_ip = 403;
-                    continue _fun85788
+                    _fun85791_ip = 403;
+                    continue _fun85791
                 }
             case 400:
                 var15 = var16;
@@ -393,4 +393,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 5644, 1641, 7044, 7004, 3137, 5512, 7005, 7006, 3938, 1235, 2185, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 5644, 1641, 7046, 7006, 3137, 5512, 7007, 7008, 3938, 1235, 2185, 2]);

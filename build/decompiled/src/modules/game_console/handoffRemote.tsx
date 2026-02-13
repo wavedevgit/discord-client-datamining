@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/game_console/handoffRemote.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun69309: for (var _fun69309_ip = 0;;) switch (_fun69309_ip) {
+        _fun69312: for (var _fun69312_ip = 0;;) switch (_fun69312_ip) {
             case 0:
                 var2 = arg0;
                 var4 = arg1;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3 != var0;
                 var5 = '';
                 if (!var1) {
-                    _fun69309_ip = 28;
-                    continue _fun69309
+                    _fun69312_ip = 28;
+                    continue _fun69312
                 }
             case 25:
                 var5 = var0;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.bind(var7)();
                 var6 = var5;
                 if (!(var3 == var4)) {
-                    _fun69309_ip = 95;
-                    continue _fun69309
+                    _fun69312_ip = 95;
+                    continue _fun69312
                 }
             case 90:
                 var4 = var2.channelId;
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var7.isSelfMute;
                 var3 = var3.bind(var7)();
                 if (!(var5 !== var3)) {
-                    _fun69309_ip = 185;
-                    continue _fun69309
+                    _fun69312_ip = 185;
+                    continue _fun69312
                 }
             case 155:
                 var5 = _closure1_slot1;
@@ -93,8 +93,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5.isSelfDeaf;
                 var2 = var2.bind(var5)();
                 if (!(var3 !== var2)) {
-                    _fun69309_ip = 239;
-                    continue _fun69309
+                    _fun69312_ip = 239;
+                    continue _fun69312
                 }
             case 209:
                 var3 = _closure1_slot1;
@@ -123,4 +123,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.handoffRemote = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3474, 8354, 44, 8268, 8360, 4237, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3474, 8356, 44, 8270, 8362, 4237, 2]);

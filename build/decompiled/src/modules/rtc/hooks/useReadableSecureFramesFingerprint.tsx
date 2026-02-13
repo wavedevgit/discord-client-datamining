@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/rtc/hooks/useReadableSecureFramesFingerprint.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun67438: for (var _fun67438_ip = 0;;) switch (_fun67438_ip) {
+        _fun67441: for (var _fun67441_ip = 0;;) switch (_fun67441_ip) {
             case 0:
                 var1 = arg0;
                 var3 = var1.fingerprintBase64;
@@ -45,20 +45,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[1] = var3;
                 var1[2] = var5;
                 var0 = function() { // Environment: var0
-                    _fun67439: for (var _fun67439_ip = 0;;) switch (_fun67439_ip) {
+                    _fun67442: for (var _fun67442_ip = 0;;) switch (_fun67442_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var0 = null;
                             if (!(var0 != var2)) {
-                                _fun67439_ip = 217;
-                                continue _fun67439
+                                _fun67442_ip = 217;
+                                continue _fun67442
                             }
                         case 16:
                             var3 = _closure2_slot0;
                             var2 = '';
                             if (!(var2 !== var3)) {
-                                _fun67439_ip = 217;
-                                continue _fun67439
+                                _fun67442_ip = 217;
+                                continue _fun67442
                             }
                         case 31:
                             var6 = _closure1_slot1;
@@ -79,8 +79,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure2_slot1;
                             var4 = var4.bind(var5)(var6, var3, var2);
                             if (!(var0 != var4)) {
-                                _fun67439_ip = 215;
-                                continue _fun67439
+                                _fun67442_ip = 215;
+                                continue _fun67442
                             }
                         case 112:
                             var2 = global;
@@ -106,8 +106,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var0 == var4;
                             var1 = null;
                             if (var3) {
-                                _fun67439_ip = 213;
-                                continue _fun67439
+                                _fun67442_ip = 213;
+                                continue _fun67442
                             }
                         case 197:
                             var3 = var2.Array;
@@ -124,19 +124,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var4)(var0, var1);
                 var1 = null;
                 if (!(var1 != var3)) {
-                    _fun67438_ip = 94;
-                    continue _fun67438
+                    _fun67441_ip = 94;
+                    continue _fun67441
                 }
             case 82:
                 var2 = '';
                 if (!(var2 !== var3)) {
-                    _fun67438_ip = 94;
-                    continue _fun67438
+                    _fun67441_ip = 94;
+                    continue _fun67441
                 }
             case 90:
                 if (!(var1 != var0)) {
-                    _fun67438_ip = 96;
-                    continue _fun67438
+                    _fun67441_ip = 96;
+                    continue _fun67441
                 }
             case 94:
                 return var0;
@@ -158,4 +158,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useReadableSecureFramesFingerprint = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 206, 8307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 206, 8309, 2]);

@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = global;
             var3 = var1.setTimeout;
             var2 = function() { // Environment: var1
-                _fun111143: for (var _fun111143_ip = 0;;) switch (_fun111143_ip) {
+                _fun111053: for (var _fun111053_ip = 0;;) switch (_fun111053_ip) {
                     case 0:
                         var2 = _closure1_slot1;
                         var1 = _closure1_slot2;
@@ -114,8 +114,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7 = var6 == var4;
                         var4 = undefined;
                         if (var7) {
-                            _fun111143_ip = 60;
-                            continue _fun111143
+                            _fun111053_ip = 60;
+                            continue _fun111053
                         }
                     case 51:
                         var7 = _closure2_slot0;
@@ -126,8 +126,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6 = var6 == var4;
                         var4 = undefined;
                         if (var6) {
-                            _fun111143_ip = 86;
-                            continue _fun111143
+                            _fun111053_ip = 86;
+                            continue _fun111053
                         }
                     case 77:
                         var5 = _closure2_slot0;
@@ -157,4 +157,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.BaseLeaveActivityButton = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7973, 33, 4090, 8478, 1235, 8002, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7975, 33, 4090, 8480, 1235, 8004, 2]);

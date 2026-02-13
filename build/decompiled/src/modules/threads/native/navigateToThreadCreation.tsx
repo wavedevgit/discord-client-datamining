@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/threads/native/navigateToThreadCreation.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun76149: for (var _fun76149_ip = 0;;) switch (_fun76149_ip) {
+        _fun76152: for (var _fun76152_ip = 0;;) switch (_fun76152_ip) {
             case 0:
                 var1 = arg0;
                 var4 = _closure1_slot1;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var1.id;
                 var3 = var5.bind(var6)(var4, var3);
                 if (var3) {
-                    _fun76149_ip = 120;
-                    continue _fun76149
+                    _fun76152_ip = 120;
+                    continue _fun76152
                 }
             case 84:
                 var3 = _closure1_slot0;

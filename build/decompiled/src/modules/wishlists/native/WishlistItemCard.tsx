@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/wishlists/native/WishlistItemCard.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun92670: for (var _fun92670_ip = 0;;) switch (_fun92670_ip) {
+        _fun92580: for (var _fun92580_ip = 0;;) switch (_fun92580_ip) {
             case 0:
                 var3 = arg0;
                 var6 = var3.item;
@@ -53,8 +53,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot2;
                 var2 = var2.COLLECTIBLES;
                 if (!(var3 === var2)) {
-                    _fun92670_ip = 102;
-                    continue _fun92670
+                    _fun92580_ip = 102;
+                    continue _fun92580
                 }
             case 54:
                 var4 = _closure1_slot3;
@@ -76,4 +76,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 12026, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 12024, 2]);

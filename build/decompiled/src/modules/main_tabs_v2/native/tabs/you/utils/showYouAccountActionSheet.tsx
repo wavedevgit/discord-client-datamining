@@ -29,21 +29,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/tabs/you/utils/showYouAccountActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun103706: for (var _fun103706_ip = 0;;) switch (_fun103706_ip) {
+        _fun103616: for (var _fun103616_ip = 0;;) switch (_fun103616_ip) {
             case 0:
                 var7 = arguments[0];
                 var6 = arguments[1];
                 var0 = undefined;
                 if (!(var7 === var0)) {
-                    _fun103706_ip = 14;
-                    continue _fun103706
+                    _fun103616_ip = 14;
+                    continue _fun103616
                 }
             case 12:
                 var7 = false;
             case 14:
                 if (!(var6 === var0)) {
-                    _fun103706_ip = 20;
-                    continue _fun103706
+                    _fun103616_ip = 20;
+                    continue _fun103616
                 }
             case 18:
                 var6 = true;
@@ -72,4 +72,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.showYouAccountActionSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [13502, 3282, 13519, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [13500, 3282, 13517, 1307, 2]);

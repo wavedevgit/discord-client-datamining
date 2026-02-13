@@ -35,13 +35,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var3.bind(var0)(var2);
             var2 = var3.awaitStorage;
             var1 = function() { // Environment: var1
-                _fun119068: for (var _fun119068_ip = 0;;) switch (_fun119068_ip) {
+                _fun118978: for (var _fun118978_ip = 0;;) switch (_fun118978_ip) {
                     case 0:
                         var0 = _closure2_slot0;
                         var0 = var0.isFullscreenCallUI;
                         if (!var0) {
-                            _fun119068_ip = 120;
-                            continue _fun119068
+                            _fun118978_ip = 120;
+                            continue _fun118978
                         }
                     case 18:
                         var2 = _closure1_slot1;
@@ -127,4 +127,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/headless_tasks/android/DismissCallAction.tsx';
     var1 = var2.bind(var3)(var1);
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 15171, 796, 4308, 5639, 8078, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 15169, 796, 4308, 5639, 8080, 2]);

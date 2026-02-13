@@ -38,7 +38,7 @@ public abstract class NativeTelecomModuleSpec extends ReactContextBaseJavaModule
 
     @ReactMethod
     @a
-    public abstract void setCallActive(String str);
+    public abstract void setCallActive(String str, boolean z10);
 
     @ReactMethod
     @a

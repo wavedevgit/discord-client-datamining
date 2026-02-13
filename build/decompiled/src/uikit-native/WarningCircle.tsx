@@ -31,30 +31,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/WarningCircle.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun59061: for (var _fun59061_ip = 0;;) switch (_fun59061_ip) {
+        _fun59064: for (var _fun59064_ip = 0;;) switch (_fun59064_ip) {
             case 0:
                 var2 = arg0;
                 var10 = var2.width;
                 var3 = undefined;
                 if (!(var10 === var3)) {
-                    _fun59061_ip = 17;
-                    continue _fun59061
+                    _fun59064_ip = 17;
+                    continue _fun59064
                 }
             case 14:
                 var10 = 20;
             case 17:
                 var9 = var2.height;
                 if (!(var9 === var3)) {
-                    _fun59061_ip = 29;
-                    continue _fun59061
+                    _fun59064_ip = 29;
+                    continue _fun59064
                 }
             case 26:
                 var9 = 20;
             case 29:
                 var6 = var2.color;
                 if (!(var6 === var3)) {
-                    _fun59061_ip = 44;
-                    continue _fun59061
+                    _fun59064_ip = 44;
+                    continue _fun59064
                 }
             case 38:
                 var6 = 'currentColor';

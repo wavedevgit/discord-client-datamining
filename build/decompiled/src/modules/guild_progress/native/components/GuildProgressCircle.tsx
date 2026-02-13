@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_progress/native/components/GuildProgressCircle.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun81058: for (var _fun81058_ip = 0;;) switch (_fun81058_ip) {
+        _fun81061: for (var _fun81061_ip = 0;;) switch (_fun81061_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.percent;
@@ -63,8 +63,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var0.size;
                 var3 = undefined;
                 if (!(var12 === var3)) {
-                    _fun81058_ip = 28;
-                    continue _fun81058
+                    _fun81061_ip = 28;
+                    continue _fun81061
                 }
             case 25:
                 var12 = 32;
@@ -137,4 +137,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 10289, 10279, 671, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 10291, 10281, 671, 2]);

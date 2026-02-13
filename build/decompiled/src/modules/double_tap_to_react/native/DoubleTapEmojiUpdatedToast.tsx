@@ -1,7 +1,7 @@
 // modules/double_tap_to_react/native/DoubleTapEmojiUpdatedToast.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun58124: for (var _fun58124_ip = 0;;) switch (_fun58124_ip) {
+    _fun58127: for (var _fun58127_ip = 0;;) switch (_fun58127_ip) {
         case 0:
             var5 = require;
             var11 = metroImportDefault;
@@ -11,7 +11,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot1 = var11;
             var _closure1_slot2 = var6;
             var3 = function arg0() {
-                _fun58125: for (var _fun58125_ip = 0;;) switch (_fun58125_ip) {
+                _fun58128: for (var _fun58128_ip = 0;;) switch (_fun58128_ip) {
                     case 0:
                         var0 = arg0;
                         var6 = var0.emoji;
@@ -41,20 +41,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2[0] = var6;
                         var2[1] = var9;
                         var1 = function() { // Environment: var1
-                            _fun58127: for (var _fun58127_ip = 0;;) switch (_fun58127_ip) {
+                            _fun58130: for (var _fun58130_ip = 0;;) switch (_fun58130_ip) {
                                 case 0:
                                     var0 = _closure2_slot0;
                                     var1 = var0.id;
                                     var0 = null;
                                     if (!(var0 == var1)) {
-                                        _fun58127_ip = 29;
-                                        continue _fun58127
+                                        _fun58130_ip = 29;
+                                        continue _fun58130
                                     }
                                 case 18:
                                     var0 = _closure2_slot0;
                                     var0 = var0.url;
-                                    _fun58127_ip = 113;
-                                    continue _fun58127;
+                                    _fun58130_ip = 113;
+                                    continue _fun58130;
                                 case 29:
                                     var3 = _closure1_slot1;
                                     var2 = _closure1_slot2;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var5 = _closure2_slot1;
                                     var5 = !var5;
                                     if (!var5) {
-                                        _fun58127_ip = 95;
-                                        continue _fun58127
+                                        _fun58130_ip = 95;
+                                        continue _fun58130
                                     }
                                 case 85:
                                     var6 = _closure2_slot0;
@@ -103,8 +103,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7 = var5 == var7;
                         var5 = '';
                         if (!var7) {
-                            _fun58125_ip = 189;
-                            continue _fun58125
+                            _fun58128_ip = 189;
+                            continue _fun58128
                         }
                     case 184:
                         var5 = var6.surrogates;
@@ -212,8 +212,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var15 = var13.bind(var15)();
             var13 = 16;
             if (!var15) {
-                _fun58124_ip = 289;
-                continue _fun58124
+                _fun58127_ip = 289;
+                continue _fun58127
             }
         case 286:
             var13 = var14;
@@ -225,8 +225,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var13 = var12.bind(var13)();
             var12 = undefined;
             if (!var13) {
-                _fun58124_ip = 321;
-                continue _fun58124
+                _fun58127_ip = 321;
+                continue _fun58127
             }
         case 318:
             var12 = 32;

@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/ApplicationCommandSourceSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56498: for (var _fun56498_ip = 0;;) switch (_fun56498_ip) {
+        _fun56500: for (var _fun56500_ip = 0;;) switch (_fun56500_ip) {
             case 0:
                 var4 = arg0;
                 var10 = var4.message;
@@ -53,20 +53,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0 == var1;
                 var9 = undefined;
                 if (var5) {
-                    _fun56498_ip = 76;
-                    continue _fun56498
+                    _fun56500_ip = 76;
+                    continue _fun56500
                 }
             case 71:
                 var9 = var1.name;
             case 76:
                 if (!(var0 != var11)) {
-                    _fun56498_ip = 456;
-                    continue _fun56498
+                    _fun56500_ip = 456;
+                    continue _fun56500
                 }
             case 83:
                 if (!(var0 != var9)) {
-                    _fun56498_ip = 456;
-                    continue _fun56498
+                    _fun56500_ip = 456;
+                    continue _fun56500
                 }
             case 90:
                 var6 = _closure1_slot0;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = 'username';
                 var13 = null;
                 if (!(var18 === var15)) {
-                    _fun56498_ip = 279;
-                    continue _fun56498
+                    _fun56500_ip = 279;
+                    continue _fun56500
                 }
             case 276:
                 var13 = var14;
@@ -119,8 +119,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12.roleColor = var14;
                 var13 = null;
                 if (!var17) {
-                    _fun56498_ip = 297;
-                    continue _fun56498
+                    _fun56500_ip = 297;
+                    continue _fun56500
                 }
             case 294:
                 var13 = var16;
@@ -129,8 +129,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = 'dot';
                 var13 = var13 === var15;
                 if (!var13) {
-                    _fun56498_ip = 317;
-                    continue _fun56498
+                    _fun56500_ip = 317;
+                    continue _fun56500
                 }
             case 313:
                 var13 = var0 != var14;
@@ -145,13 +145,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = _closure1_slot3;
                 var10 = var10.CHAT_INPUT_COMMAND;
                 if (!(var12 !== var10)) {
-                    _fun56498_ip = 370;
-                    continue _fun56498
+                    _fun56500_ip = 370;
+                    continue _fun56500
                 }
             case 363:
                 var10 = var11.name;
-                _fun56498_ip = 402;
-                continue _fun56498;
+                _fun56500_ip = 402;
+                continue _fun56500;
             case 370:
                 var14 = _closure1_slot4;
                 var13 = var11.name;
@@ -180,4 +180,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createApplicationCommandSourceSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 6800, 6801, 6752, 6753, 1235, 6754, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 6801, 6802, 6753, 6754, 1235, 6755, 2]);

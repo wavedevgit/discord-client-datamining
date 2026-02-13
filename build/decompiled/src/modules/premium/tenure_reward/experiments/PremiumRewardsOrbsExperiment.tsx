@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var4;
     var2.PremiumRewardsOrbsTreatment = var3;
     var3 = function arg0() {
-        _fun96462: for (var _fun96462_ip = 0;;) switch (_fun96462_ip) {
+        _fun96372: for (var _fun96372_ip = 0;;) switch (_fun96372_ip) {
             case 0:
                 var3 = _closure1_slot2;
                 var2 = var3.useConfig;
@@ -79,8 +79,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.treatment;
                 var0 = null;
                 if (!(var0 == var2)) {
-                    _fun96462_ip = 49;
-                    continue _fun96462
+                    _fun96372_ip = 49;
+                    continue _fun96372
                 }
             case 39:
                 var0 = _closure1_slot0;
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.usePremiumRewardsOrbsExperiment = var3;
     var1 = function arg0() {
-        _fun96463: for (var _fun96463_ip = 0;;) switch (_fun96463_ip) {
+        _fun96373: for (var _fun96373_ip = 0;;) switch (_fun96373_ip) {
             case 0:
                 var3 = _closure1_slot2;
                 var2 = var3.getConfig;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.treatment;
                 var0 = null;
                 if (!(var0 == var2)) {
-                    _fun96463_ip = 49;
-                    continue _fun96463
+                    _fun96373_ip = 49;
+                    continue _fun96373
                 }
             case 39:
                 var0 = _closure1_slot0;

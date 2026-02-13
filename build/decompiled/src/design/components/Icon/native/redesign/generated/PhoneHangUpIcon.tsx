@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/PhoneHangUpIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun70670: for (var _fun70670_ip = 0;;) switch (_fun70670_ip) {
+        _fun70673: for (var _fun70673_ip = 0;;) switch (_fun70673_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun70670_ip = 53;
-                    continue _fun70670
+                    _fun70673_ip = 53;
+                    continue _fun70673
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.PhoneHangUpIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3155, 8858, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3155, 8860, 2]);

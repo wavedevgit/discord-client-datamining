@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/quests/native/openQuestCollectibleRewardModal.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun79545: for (var _fun79545_ip = 0;;) switch (_fun79545_ip) {
+        _fun79548: for (var _fun79548_ip = 0;;) switch (_fun79548_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.quest;
@@ -142,15 +142,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var3.bind(var7)(var2);
                 var2 = null;
                 if (!(var2 == var6)) {
-                    _fun79545_ip = 103;
-                    continue _fun79545
+                    _fun79548_ip = 103;
+                    continue _fun79548
                 }
             case 85:
                 var3 = var7.warn;
                 var2 = 'Product is null';
                 var2 = var3.bind(var7)(var2);
-                _fun79545_ip = 158;
-                continue _fun79545;
+                _fun79548_ip = 158;
+                continue _fun79548;
             case 103:
                 var2 = _closure1_slot1;
                 var3 = _closure1_slot2;
@@ -179,4 +179,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openQuestCollectibleRewardModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5287, 33, 1297, 671, 5347, 5372, 4883, 1235, 5299, 9604, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5287, 33, 1297, 671, 5347, 5372, 4883, 1235, 5299, 9606, 2]);

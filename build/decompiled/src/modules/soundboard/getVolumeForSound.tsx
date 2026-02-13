@@ -27,13 +27,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/soundboard/getVolumeForSound.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun99206: for (var _fun99206_ip = 0;;) switch (_fun99206_ip) {
+        _fun99116: for (var _fun99116_ip = 0;;) switch (_fun99116_ip) {
             case 0:
                 var4 = arguments[1];
                 var5 = undefined;
                 if (!(var4 === var5)) {
-                    _fun99206_ip = 81;
-                    continue _fun99206
+                    _fun99116_ip = 81;
+                    continue _fun99116
                 }
             case 9:
                 var1 = _closure1_slot0;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0 == var2;
                 var1 = undefined;
                 if (var3) {
-                    _fun99206_ip = 65;
-                    continue _fun99206
+                    _fun99116_ip = 65;
+                    continue _fun99116
                 }
             case 59:
                 var1 = var2.volume;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 != var1;
                 var0 = 100;
                 if (!var2) {
-                    _fun99206_ip = 78;
-                    continue _fun99206
+                    _fun99116_ip = 78;
+                    continue _fun99116
                 }
             case 75:
                 var0 = var1;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function arg0() {
-        _fun99207: for (var _fun99207_ip = 0;;) switch (_fun99207_ip) {
+        _fun99117: for (var _fun99117_ip = 0;;) switch (_fun99117_ip) {
             case 0:
                 var4 = arg0;
                 var2 = _closure1_slot0;
@@ -108,8 +108,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 100;
                 var0 = var1;
                 if (!var5) {
-                    _fun99207_ip = 52;
-                    continue _fun99207
+                    _fun99117_ip = 52;
+                    continue _fun99117
                 }
             case 49:
                 var0 = var4;

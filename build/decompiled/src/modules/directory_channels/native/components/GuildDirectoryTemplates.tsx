@@ -400,4 +400,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.GuildTemplatesItem = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8991, 8996, 33, 1297, 9014, 4092, 9015, 1469, 1568, 8995, 3938, 1235, 5423, 5942, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8993, 8998, 33, 1297, 9016, 4092, 9017, 1469, 1568, 8997, 3938, 1235, 5423, 5942, 2]);

@@ -102,27 +102,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5.style = var9;
         var9 = var10.map;
         var8 = function(arg0, arg1) { // Environment: var8
-            _fun103156: for (var _fun103156_ip = 0;;) switch (_fun103156_ip) {
+            _fun103066: for (var _fun103066_ip = 0;;) switch (_fun103066_ip) {
                 case 0:
                     var0 = arg0;
                     var9 = arg1;
                     var2 = var0.type;
                     var1 = 'singlePerk';
                     if (!(var1 !== var2)) {
-                        _fun103156_ip = 211;
-                        continue _fun103156
+                        _fun103066_ip = 211;
+                        continue _fun103066
                     }
                 case 24:
                     var1 = 'multiPerk';
                     if (!(var1 !== var2)) {
-                        _fun103156_ip = 121;
-                        continue _fun103156
+                        _fun103066_ip = 121;
+                        continue _fun103066
                     }
                 case 34:
                     var1 = 'gameServer';
                     if (!(var1 !== var2)) {
-                        _fun103156_ip = 46;
-                        continue _fun103156
+                        _fun103066_ip = 46;
+                        continue _fun103066
                     }
                 case 42:
                     var1 = null;
@@ -195,4 +195,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 13432, 1235, 1895, 13434, 13436, 13443, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 13430, 1235, 1895, 13432, 13434, 13441, 2]);

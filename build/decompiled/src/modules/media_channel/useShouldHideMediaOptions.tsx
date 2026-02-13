@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/media_channel/useShouldHideMediaOptions.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun73734: for (var _fun73734_ip = 0;;) switch (_fun73734_ip) {
+        _fun73737: for (var _fun73737_ip = 0;;) switch (_fun73737_ip) {
             case 0:
                 var0 = arg0;
                 var _closure2_slot0 = var0;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = new Array(1);
                 var3[0] = var6;
                 var2 = function() { // Environment: var2
-                    _fun73735: for (var _fun73735_ip = 0;;) switch (_fun73735_ip) {
+                    _fun73738: for (var _fun73738_ip = 0;;) switch (_fun73738_ip) {
                         case 0:
                             var3 = _closure1_slot2;
                             var2 = var3.getChannel;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var5 == var4;
                             var0 = undefined;
                             if (var2) {
-                                _fun73735_ip = 41;
-                                continue _fun73735
+                                _fun73738_ip = 41;
+                                continue _fun73738
                             }
                         case 35:
                             var0 = var4.parent_id;
@@ -66,16 +66,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var5 != var0;
                             var0 = null;
                             if (!var2) {
-                                _fun73735_ip = 94;
-                                continue _fun73735
+                                _fun73738_ip = 94;
+                                continue _fun73738
                             }
                         case 50:
                             var2 = var4.isForumPost;
                             var2 = var2.bind(var4)();
                             var0 = null;
                             if (!var2) {
-                                _fun73735_ip = 94;
-                                continue _fun73735
+                                _fun73738_ip = 94;
+                                continue _fun73738
                             }
                         case 65:
                             var2 = _closure1_slot2;
@@ -83,8 +83,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var5 == var4;
                             var3 = undefined;
                             if (var5) {
-                                _fun73735_ip = 89;
-                                continue _fun73735
+                                _fun73738_ip = 89;
+                                continue _fun73738
                             }
                         case 83:
                             var3 = var4.parent_id;
@@ -98,8 +98,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var2 = var2 == var3;
                 if (var2) {
-                    _fun73734_ip = 94;
-                    continue _fun73734
+                    _fun73737_ip = 94;
+                    continue _fun73737
                 }
             case 73:
                 var2 = var3.hasFlag;

@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = _closure2_slot0;
             var2 = var3.forEach;
             var1 = function(arg0) { // Environment: var1
-                _fun104018: for (var _fun104018_ip = 0;;) switch (_fun104018_ip) {
+                _fun103928: for (var _fun103928_ip = 0;;) switch (_fun103928_ip) {
                     case 0:
                         var0 = arg0;
                         var2 = var0.applicationId;
@@ -95,15 +95,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = var1.has;
                         var0 = var0.bind(var1)(var3);
                         if (!var0) {
-                            _fun104018_ip = 93;
-                            continue _fun104018
+                            _fun103928_ip = 93;
+                            continue _fun103928
                         }
                     case 33:
                         var0 = null;
                         var0 = var0 == var2;
                         if (var0) {
-                            _fun104018_ip = 59;
-                            continue _fun104018
+                            _fun103928_ip = 59;
+                            continue _fun103928
                         }
                     case 42:
                         var3 = _closure3_slot0;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = var1.bind(var3)(var2);
                     case 59:
                         if (var0) {
-                            _fun104018_ip = 93;
-                            continue _fun104018
+                            _fun103928_ip = 93;
+                            continue _fun103928
                         }
                     case 62:
                         var3 = _closure3_slot0;
@@ -141,4 +141,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGetOrFetchNotificationCenterItemsApplications = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3966, 6962, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3966, 6963, 2]);

@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/roadblocks/native/views/PremiumEmojiFeatureUpsell.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun74696: for (var _fun74696_ip = 0;;) switch (_fun74696_ip) {
+        _fun74699: for (var _fun74699_ip = 0;;) switch (_fun74699_ip) {
             case 0:
                 var1 = arg0;
                 var8 = var1.bottomSheetIndex;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.bind(var4)(var2);
                 var2 = var3.useDerivedValue;
                 var0 = function() {
-                    _fun74697: for (var _fun74697_ip = 0;;) switch (_fun74697_ip) {
+                    _fun74700: for (var _fun74700_ip = 0;;) switch (_fun74700_ip) {
                         case 0:
                             var1 = _closure2_slot2;
                             var0 = var1.get;
@@ -112,8 +112,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = !var0;
                             var0 = !var1;
                             if (var1) {
-                                _fun74697_ip = 63;
-                                continue _fun74697
+                                _fun74700_ip = 63;
+                                continue _fun74700
                             }
                         case 25:
                             var1 = _closure2_slot1;
@@ -121,14 +121,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var3.get;
                             var3 = var2.bind(var3)();
                             if (var1) {
-                                _fun74697_ip = 53;
-                                continue _fun74697
+                                _fun74700_ip = 53;
+                                continue _fun74700
                             }
                         case 45:
                             var1 = 0;
                             var1 = var1 === var3;
-                            _fun74697_ip = 60;
-                            continue _fun74697;
+                            _fun74700_ip = 60;
+                            continue _fun74700;
                         case 53:
                             var2 = 1;
                             var1 = var2 === var3;
@@ -150,8 +150,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var2.bind(var3)(var0);
                 var0 = null;
                 if (var1) {
-                    _fun74696_ip = 299;
-                    continue _fun74696
+                    _fun74699_ip = 299;
+                    continue _fun74699
                 }
             case 204:
                 var3 = _closure1_slot4;
@@ -182,4 +182,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 1568, 5459, 670, 3717, 8646, 7680, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 1568, 5459, 670, 3717, 8648, 7682, 2]);

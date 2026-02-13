@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/contact_sync/native/components/ContactSyncError.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun81620: for (var _fun81620_ip = 0;;) switch (_fun81620_ip) {
+        _fun81623: for (var _fun81623_ip = 0;;) switch (_fun81623_ip) {
             case 0:
                 var0 = arg0;
                 var10 = var0.style;
@@ -65,8 +65,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var12 = var0 != var6;
                 if (!var12) {
-                    _fun81620_ip = 49;
-                    continue _fun81620
+                    _fun81623_ip = 49;
+                    continue _fun81623
                 }
             case 41:
                 var0 = '';
@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var5.bind(var3)(var4);
                 var4 = var9.useAnimatedStyle;
                 var2 = function() {
-                    _fun81621: for (var _fun81621_ip = 0;;) switch (_fun81621_ip) {
+                    _fun81624: for (var _fun81624_ip = 0;;) switch (_fun81624_ip) {
                         case 0:
                             var0 = {};
                             var3 = _closure1_slot0;
@@ -93,8 +93,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = _closure2_slot0;
                             var1 = 0;
                             if (!var4) {
-                                _fun81621_ip = 47;
-                                continue _fun81621
+                                _fun81624_ip = 47;
+                                continue _fun81624
                             }
                         case 44:
                             var1 = 44;

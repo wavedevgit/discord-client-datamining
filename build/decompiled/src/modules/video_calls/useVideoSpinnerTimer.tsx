@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/video_calls/useVideoSpinnerTimer.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun65135: for (var _fun65135_ip = 0;;) switch (_fun65135_ip) {
+        _fun65138: for (var _fun65138_ip = 0;;) switch (_fun65138_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.location;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.paused;
                 var0 = undefined;
                 if (!(var9 === var0)) {
-                    _fun65135_ip = 67;
-                    continue _fun65135
+                    _fun65138_ip = 67;
+                    continue _fun65138
                 }
             case 65:
                 var9 = false;
@@ -94,25 +94,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[4] = var6;
                 var2[5] = var5;
                 var1 = function() { // Environment: var1
-                    _fun65137: for (var _fun65137_ip = 0;;) switch (_fun65137_ip) {
+                    _fun65140: for (var _fun65140_ip = 0;;) switch (_fun65140_ip) {
                         case 0:
                             var1 = _closure2_slot5;
                             if (var1) {
-                                _fun65137_ip = 76;
-                                continue _fun65137
+                                _fun65140_ip = 76;
+                                continue _fun65140
                             }
                         case 10:
                             var1 = _closure2_slot4;
                             if (var1) {
-                                _fun65137_ip = 60;
-                                continue _fun65137
+                                _fun65140_ip = 60;
+                                continue _fun65140
                             }
                         case 17:
                             var2 = _closure2_slot3;
                             var1 = null;
                             if (!(var1 != var2)) {
-                                _fun65137_ip = 76;
-                                continue _fun65137
+                                _fun65140_ip = 76;
+                                continue _fun65140
                             }
                         case 27:
                             var5 = _closure2_slot6;
@@ -121,8 +121,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure2_slot2;
                             var1 = _closure2_slot3;
                             var1 = var4.bind(var5)(var3, var2, var1);
-                            _fun65137_ip = 76;
-                            continue _fun65137;
+                            _fun65140_ip = 76;
+                            continue _fun65140;
                         case 60:
                             var1 = _closure2_slot6;
                             var0 = var1.onSpinnerStarted;
@@ -138,4 +138,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 8090, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 8092, 2]);

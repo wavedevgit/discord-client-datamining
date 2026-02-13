@@ -33,4 +33,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.voiceSettingsEventHandlers = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12885, 7990, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12883, 7992, 2]);

@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/age_gate/native/components/AgeGateVerify.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun113318: for (var _fun113318_ip = 0;;) switch (_fun113318_ip) {
+        _fun113228: for (var _fun113228_ip = 0;;) switch (_fun113228_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.source;
@@ -138,8 +138,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = null;
                 var5 = var5 != var9;
                 if (!var5) {
-                    _fun113318_ip = 324;
-                    continue _fun113318
+                    _fun113228_ip = 324;
+                    continue _fun113228
                 }
             case 265:
                 var8 = _closure1_slot3;

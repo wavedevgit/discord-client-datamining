@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function arg0() {
-        _fun60437: for (var _fun60437_ip = 0;;) switch (_fun60437_ip) {
+        _fun60440: for (var _fun60440_ip = 0;;) switch (_fun60440_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.emoji;
@@ -18,16 +18,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0.bind(var4)();
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun60437_ip = 205;
-                    continue _fun60437
+                    _fun60440_ip = 205;
+                    continue _fun60440
                 }
             case 31:
                 var3 = var2.id;
                 var3 = var0 != var3;
                 var7 = undefined;
                 if (!var3) {
-                    _fun60437_ip = 105;
-                    continue _fun60437
+                    _fun60440_ip = 105;
+                    continue _fun60440
                 }
             case 45:
                 var6 = _closure1_slot1;
@@ -53,13 +53,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var6.isCustomEmoji;
                 var3 = var3.bind(var6)(var2);
                 if (var3) {
-                    _fun60437_ip = 146;
-                    continue _fun60437
+                    _fun60440_ip = 146;
+                    continue _fun60440
                 }
             case 139:
                 var6 = var2.surrogates;
-                _fun60437_ip = 151;
-                continue _fun60437;
+                _fun60440_ip = 151;
+                continue _fun60440;
             case 146:
                 var6 = var2.name;
             case 151:

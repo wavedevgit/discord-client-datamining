@@ -52,15 +52,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = undefined;
         var6 = var1.bind(var3)(var4);
         var4 = function() { // Environment: var2
-            _fun85329: for (var _fun85329_ip = 0;;) switch (_fun85329_ip) {
+            _fun85332: for (var _fun85332_ip = 0;;) switch (_fun85332_ip) {
                 case 0:
                     var3 = _closure1_slot4;
                     var2 = var3.shouldSync;
                     var1 = 'appearance';
                     var1 = var2.bind(var3)(var1);
                     if (!var1) {
-                        _fun85329_ip = 57;
-                        continue _fun85329
+                        _fun85332_ip = 57;
+                        continue _fun85332
                     }
                 case 25:
                     var2 = _closure1_slot0;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = var2.persistedIsClassicChatFontScaleEnabled;
             var3[4] = var2;
             var2 = function() { // Environment: var1
-                _fun85331: for (var _fun85331_ip = 0;;) switch (_fun85331_ip) {
+                _fun85334: for (var _fun85334_ip = 0;;) switch (_fun85334_ip) {
                     case 0:
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot2;
@@ -114,24 +114,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var2.isAndroid;
                         var1 = var1.bind(var2)();
                         if (!var1) {
-                            _fun85331_ip = 218;
-                            continue _fun85331
+                            _fun85334_ip = 218;
+                            continue _fun85334
                         }
                     case 41:
                         var2 = _closure3_slot0;
                         var3 = var2.persistedFontScale;
                         var2 = var2.fontScale;
                         if (!(var3 === var2)) {
-                            _fun85331_ip = 108;
-                            continue _fun85331
+                            _fun85334_ip = 108;
+                            continue _fun85334
                         }
                     case 64:
                         var2 = _closure3_slot0;
                         var3 = var2.persistedIsClassicChatFontScaleEnabled;
                         var2 = var2.isClassicChatFontScaleEnabled;
                         if (!(var3 === var2)) {
-                            _fun85331_ip = 108;
-                            continue _fun85331
+                            _fun85334_ip = 108;
+                            continue _fun85334
                         }
                     case 84:
                         var5 = _closure3_slot1;
@@ -139,8 +139,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = {};
                         var2.headerRight = var0;
                         var2 = var3.bind(var5)(var2);
-                        _fun85331_ip = 218;
-                        continue _fun85331;
+                        _fun85334_ip = 218;
+                        continue _fun85334;
                     case 108:
                         var3 = _closure3_slot1;
                         var2 = var3.setOptions;
@@ -328,4 +328,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1354, 4097, 7091, 33, 1469, 478, 8962, 1235, 4098, 803, 4109, 10888, 9057, 10219, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1354, 4097, 7093, 33, 1469, 478, 8964, 1235, 4098, 803, 4109, 10890, 9059, 10221, 2]);

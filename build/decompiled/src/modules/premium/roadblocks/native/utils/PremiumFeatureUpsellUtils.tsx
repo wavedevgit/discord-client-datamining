@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/roadblocks/native/utils/PremiumFeatureUpsellUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0, arg1() {
-        _fun62090: for (var _fun62090_ip = 0;;) switch (_fun62090_ip) {
+        _fun62093: for (var _fun62093_ip = 0;;) switch (_fun62093_ip) {
             case 0:
                 var1 = arg1;
                 var2 = var1.type;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.GUILD;
                 var0 = var2 === var0;
                 if (!var0) {
-                    _fun62090_ip = 68;
-                    continue _fun62090
+                    _fun62093_ip = 68;
+                    continue _fun62093
                 }
             case 51:
                 var1 = var1.guild;
@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isSoundboardSectionNitroLocked = var3;
     var1 = function arg0() {
-        _fun62091: for (var _fun62091_ip = 0;;) switch (_fun62091_ip) {
+        _fun62094: for (var _fun62094_ip = 0;;) switch (_fun62094_ip) {
             case 0:
                 var5 = arg0;
                 var3 = _closure1_slot0;
@@ -64,8 +64,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EntitlementFeatureNames;
                 var1 = var1.ANIMATED_EMOJIS;
                 if (!(var1 !== var5)) {
-                    _fun62091_ip = 518;
-                    continue _fun62091
+                    _fun62094_ip = 518;
+                    continue _fun62094
                 }
             case 47:
                 var3 = _closure1_slot0;
@@ -75,8 +75,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EntitlementFeatureNames;
                 var1 = var1.EMOJIS_EVERYWHERE;
                 if (!(var1 !== var5)) {
-                    _fun62091_ip = 484;
-                    continue _fun62091
+                    _fun62094_ip = 484;
+                    continue _fun62094
                 }
             case 83:
                 var3 = _closure1_slot0;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EntitlementFeatureNames;
                 var1 = var1.INCREASED_FILE_UPLOAD_SIZE;
                 if (!(var1 !== var5)) {
-                    _fun62091_ip = 450;
-                    continue _fun62091
+                    _fun62094_ip = 450;
+                    continue _fun62094
                 }
             case 119:
                 var3 = _closure1_slot0;
@@ -97,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EntitlementFeatureNames;
                 var1 = var1.SOUNDBOARD_EVERYWHERE;
                 if (!(var1 !== var5)) {
-                    _fun62091_ip = 416;
-                    continue _fun62091
+                    _fun62094_ip = 416;
+                    continue _fun62094
                 }
             case 155:
                 var3 = _closure1_slot0;
@@ -108,8 +108,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EntitlementFeatureNames;
                 var1 = var1.CLIENT_THEMES;
                 if (!(var1 !== var5)) {
-                    _fun62091_ip = 382;
-                    continue _fun62091
+                    _fun62094_ip = 382;
+                    continue _fun62094
                 }
             case 191:
                 var3 = _closure1_slot0;
@@ -119,8 +119,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EntitlementFeatureNames;
                 var1 = var1.APP_ICONS;
                 if (!(var1 !== var5)) {
-                    _fun62091_ip = 348;
-                    continue _fun62091
+                    _fun62094_ip = 348;
+                    continue _fun62094
                 }
             case 227:
                 var3 = _closure1_slot0;
@@ -130,8 +130,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EntitlementFeatureNames;
                 var1 = var1.SAVED_MESSAGES;
                 if (!(var1 !== var5)) {
-                    _fun62091_ip = 314;
-                    continue _fun62091
+                    _fun62094_ip = 314;
+                    continue _fun62094
                 }
             case 260:
                 var3 = _closure1_slot1;
@@ -214,4 +214,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getUpsellType = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4806, 7680, 670, 44, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4806, 7682, 670, 44, 2]);

@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.useTrailing = var7;
     var7 = function() {
-        _fun81676: for (var _fun81676_ip = 0;;) switch (_fun81676_ip) {
+        _fun81679: for (var _fun81679_ip = 0;;) switch (_fun81679_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
@@ -109,16 +109,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0 == var2;
                 var5 = undefined;
                 if (var3) {
-                    _fun81676_ip = 67;
-                    continue _fun81676
+                    _fun81679_ip = 67;
+                    continue _fun81679
                 }
             case 46:
                 var3 = var2.nick;
                 var2 = var0 == var3;
                 var5 = undefined;
                 if (var2) {
-                    _fun81676_ip = 67;
-                    continue _fun81676
+                    _fun81679_ip = 67;
+                    continue _fun81679
                 }
             case 61:
                 var2 = 0;
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 == var5;
                 var0 = null;
                 if (var2) {
-                    _fun81676_ip = 129;
-                    continue _fun81676
+                    _fun81679_ip = 129;
+                    continue _fun81679
                 }
             case 76:
                 var3 = _closure1_slot4;
@@ -173,4 +173,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1621, 7091, 660, 33, 566, 3240, 10170, 3938, 9057, 1235, 10363, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1621, 7093, 660, 33, 566, 3240, 10172, 3938, 9059, 1235, 10365, 2]);

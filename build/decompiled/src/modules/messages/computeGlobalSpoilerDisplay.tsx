@@ -7,21 +7,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var3 = function arg0, arg1() {
-        _fun78086: for (var _fun78086_ip = 0;;) switch (_fun78086_ip) {
+        _fun78089: for (var _fun78089_ip = 0;;) switch (_fun78089_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot4;
                 var1 = var1.ALWAYS;
                 if (!(var1 !== var2)) {
-                    _fun78086_ip = 53;
-                    continue _fun78086
+                    _fun78089_ip = 53;
+                    continue _fun78089
                 }
             case 20:
                 var1 = _closure1_slot4;
                 var1 = var1.IF_MODERATOR;
                 if (!(var1 !== var2)) {
-                    _fun78086_ip = 48;
-                    continue _fun78086
+                    _fun78089_ip = 48;
+                    continue _fun78089
                 }
             case 34:
                 var0 = _closure1_slot4;

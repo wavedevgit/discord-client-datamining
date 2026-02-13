@@ -486,7 +486,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'uikit-native/SparklingIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun78858: for (var _fun78858_ip = 0;;) switch (_fun78858_ip) {
+        _fun78861: for (var _fun78861_ip = 0;;) switch (_fun78861_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
@@ -506,13 +506,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4.bind(var5)(var2, var1);
                 var2 = _closure1_slot6;
                 if (var1) {
-                    _fun78858_ip = 70;
-                    continue _fun78858
+                    _fun78861_ip = 70;
+                    continue _fun78861
                 }
             case 64:
                 var1 = _closure1_slot11;
-                _fun78858_ip = 90;
-                continue _fun78858;
+                _fun78861_ip = 90;
+                continue _fun78861;
             case 70:
                 var4 = _closure1_slot1;
                 var5 = _closure1_slot2;
@@ -530,4 +530,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 33, 1297, 3717, 4103, 4092, 8569, 9970, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 33, 1297, 3717, 4103, 4092, 8571, 9972, 566, 2]);

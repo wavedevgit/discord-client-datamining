@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.onPress = var8;
     var8 = function() {
-        _fun82136: for (var _fun82136_ip = 0;;) switch (_fun82136_ip) {
+        _fun82139: for (var _fun82139_ip = 0;;) switch (_fun82139_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var4 = _closure1_slot1;
@@ -137,8 +137,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.useIsParentallyControlled;
                 var1 = var1.bind(var2)();
                 if (var0) {
-                    _fun82136_ip = 63;
-                    continue _fun82136
+                    _fun82139_ip = 63;
+                    continue _fun82139
                 }
             case 60:
                 var0 = var1;
@@ -195,4 +195,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7091, 6583, 10430, 10426, 4264, 4287, 10427, 1235, 1311, 9057, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7093, 6583, 10432, 10428, 4264, 4287, 10429, 1235, 1311, 9059, 2]);

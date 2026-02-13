@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/channel/native/openChannelPicker.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun77315: for (var _fun77315_ip = 0;;) switch (_fun77315_ip) {
+        _fun77318: for (var _fun77318_ip = 0;;) switch (_fun77318_ip) {
             case 0:
                 var4 = arg0;
                 var6 = var4.selectedChannel;
@@ -41,8 +41,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var4.filterFn;
                 var0 = undefined;
                 if (!(var10 === var0)) {
-                    _fun77315_ip = 41;
-                    continue _fun77315
+                    _fun77318_ip = 41;
+                    continue _fun77318
                 }
             case 34:
                 var10 = function() {
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.bind(var9)(var11);
                 var9 = var4[var5];
                 if (!(var3 == var9)) {
-                    _fun77315_ip = 128;
-                    continue _fun77315
+                    _fun77318_ip = 128;
+                    continue _fun77318
                 }
             case 124:
                 var9 = new Array(0);
@@ -131,4 +131,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1676, 1410, 3282, 9817, 1307, 1235, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1676, 1410, 3282, 9819, 1307, 1235, 2]);

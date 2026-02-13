@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var5;
     var1 = function arg0() {
-        _fun77570: for (var _fun77570_ip = 0;;) switch (_fun77570_ip) {
+        _fun77573: for (var _fun77573_ip = 0;;) switch (_fun77573_ip) {
             case 0:
                 var1 = arg0;
                 var12 = var1.channelId;
@@ -297,8 +297,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(1);
                 var4[0] = var8;
                 if (var5) {
-                    _fun77570_ip = 618;
-                    continue _fun77570
+                    _fun77573_ip = 618;
+                    continue _fun77573
                 }
             case 535:
                 var5 = {};
@@ -319,8 +319,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.onpress = var6;
                 var6 = new Array(1);
                 var6[0] = var5;
-                _fun77570_ip = 622;
-                continue _fun77570;
+                _fun77573_ip = 622;
+                continue _fun77573;
             case 618:
                 var6 = new Array(0);
             case 622:
@@ -370,4 +370,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var1;
     var2.InappropriateConversationWarningBanner = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3105, 9072, 33, 9116, 566, 9117, 3933, 9131, 1307, 9118, 9848, 1235, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3105, 9074, 33, 9118, 566, 9119, 3933, 9133, 1307, 9120, 9850, 1235, 2]);

@@ -89,25 +89,25 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     'removeClippedSubviews': true
                 };
                 if (!var8) {
-                    _fun43810_ip = 121;
+                    _fun43810_ip = 117;
                     continue _fun43810
                 }
-            case 117:
+            case 113:
                 var10 = 'auto';
-            case 121:
+            case 117:
                 var4.pointerEvents = var10;
                 var9 = _closure1_slot4;
                 if (var8) {
-                    _fun43810_ip = 141;
+                    _fun43810_ip = 137;
                     continue _fun43810
                 }
-            case 133:
+            case 129:
                 var8 = var9.detached;
-                _fun43810_ip = 147;
+                _fun43810_ip = 143;
                 continue _fun43810;
-            case 141:
+            case 137:
                 var8 = var9.attached;
-            case 147:
+            case 143:
                 var4.style = var8;
                 var4.children = var7;
                 var4 = var6.bind(var3)(var5, var4);

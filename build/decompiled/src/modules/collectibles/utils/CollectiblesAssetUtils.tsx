@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.CollectiblesItemAssetFormat = var3;
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun57588: for (var _fun57588_ip = 0;;) switch (_fun57588_ip) {
+        _fun57591: for (var _fun57591_ip = 0;;) switch (_fun57591_ip) {
             case 0:
                 var7 = arg0;
                 var6 = arg1;
@@ -46,15 +46,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = null;
                 var0 = null;
                 if (!var2) {
-                    _fun57588_ip = 179;
-                    continue _fun57588
+                    _fun57591_ip = 179;
+                    continue _fun57591
                 }
             case 55:
                 var2 = var4 != var7;
                 var0 = null;
                 if (!var2) {
-                    _fun57588_ip = 179;
-                    continue _fun57588
+                    _fun57591_ip = 179;
+                    continue _fun57591
                 }
             case 64:
                 var2 = _closure1_slot0;
@@ -68,8 +68,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.HermesInternal;
                 var5 = var2.concat;
                 if (var1) {
-                    _fun57588_ip = 144;
-                    continue _fun57588
+                    _fun57591_ip = 144;
+                    continue _fun57591
                 }
             case 110:
                 var13 = 'https://cdn.discordapp.com/';
@@ -80,8 +80,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var1;
                 var8 = var6;
                 var1 = var13[var5](var12, var11, var10, var9, var8, var7);
-                _fun57588_ip = 176;
-                continue _fun57588;
+                _fun57591_ip = 176;
+                continue _fun57591;
             case 144:
                 var13 = 'http://localhost:3000/_storage/';
                 var12 = 'media/v1/collectibles-shop';
@@ -99,4 +99,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getCollectiblesItemAssetUrl = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6998, 1304, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7000, 1304, 2]);

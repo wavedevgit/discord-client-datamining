@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.usePlaygroundAccessExperiment = var4;
     var2.getPlaygroundAccessExperiment = var3;
     var3 = function arg0() {
-        _fun73161: for (var _fun73161_ip = 0;;) switch (_fun73161_ip) {
+        _fun73164: for (var _fun73164_ip = 0;;) switch (_fun73164_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -94,8 +94,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 == var6;
                 var0 = undefined;
                 if (var4) {
-                    _fun73161_ip = 78;
-                    continue _fun73161
+                    _fun73164_ip = 78;
+                    continue _fun73164
                 }
             case 68:
                 var4 = var6.isStaff;
@@ -104,15 +104,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = true;
                 var0 = var4 === var0;
                 if (var0) {
-                    _fun73161_ip = 110;
-                    continue _fun73161
+                    _fun73164_ip = 110;
+                    continue _fun73164
                 }
             case 87:
                 var5 = var2 == var6;
                 var2 = undefined;
                 if (var5) {
-                    _fun73161_ip = 106;
-                    continue _fun73161
+                    _fun73164_ip = 106;
+                    continue _fun73164
                 }
             case 96:
                 var5 = var6.isStaffPersonal;
@@ -124,8 +124,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = arg0;
                 var1 = var2.bind(var3)(var1);
                 if (var0) {
-                    _fun73161_ip = 128;
-                    continue _fun73161
+                    _fun73164_ip = 128;
+                    continue _fun73164
                 }
             case 125:
                 var0 = var1;
@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useHasPlaygroundAccess = var3;
     var1 = function arg0() {
-        _fun73163: for (var _fun73163_ip = 0;;) switch (_fun73163_ip) {
+        _fun73166: for (var _fun73166_ip = 0;;) switch (_fun73166_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var0 = var2.getCurrentUser;
@@ -145,8 +145,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = undefined;
                 var0 = undefined;
                 if (var4) {
-                    _fun73163_ip = 39;
-                    continue _fun73163
+                    _fun73166_ip = 39;
+                    continue _fun73166
                 }
             case 29:
                 var4 = var6.isStaff;
@@ -155,15 +155,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = true;
                 var0 = var4 === var0;
                 if (var0) {
-                    _fun73163_ip = 71;
-                    continue _fun73163
+                    _fun73166_ip = 71;
+                    continue _fun73166
                 }
             case 48:
                 var5 = var2 == var6;
                 var2 = undefined;
                 if (var5) {
-                    _fun73163_ip = 67;
-                    continue _fun73163
+                    _fun73166_ip = 67;
+                    continue _fun73166
                 }
             case 57:
                 var5 = var6.isStaffPersonal;
@@ -172,8 +172,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4 === var2;
             case 71:
                 if (var0) {
-                    _fun73163_ip = 86;
-                    continue _fun73163
+                    _fun73166_ip = 86;
+                    continue _fun73166
                 }
             case 74:
                 var2 = _closure1_slot5;

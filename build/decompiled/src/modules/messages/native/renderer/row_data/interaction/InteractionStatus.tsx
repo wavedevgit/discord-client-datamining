@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/row_data/interaction/InteractionStatus.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0, arg1() {
-        _fun56814: for (var _fun56814_ip = 0;;) switch (_fun56814_ip) {
+        _fun56816: for (var _fun56816_ip = 0;;) switch (_fun56816_ip) {
             case 0:
                 var7 = arg0;
                 var3 = _closure1_slot0;
@@ -53,8 +53,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.InteractionStatusViewState;
                 var0 = var0.SENDING;
                 if (!(var0 !== var2)) {
-                    _fun56814_ip = 503;
-                    continue _fun56814
+                    _fun56816_ip = 503;
+                    continue _fun56816
                 }
             case 70:
                 var3 = _closure1_slot0;
@@ -64,8 +64,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.InteractionStatusViewState;
                 var0 = var0.CREATED;
                 if (!(var0 !== var2)) {
-                    _fun56814_ip = 404;
-                    continue _fun56814
+                    _fun56816_ip = 404;
+                    continue _fun56816
                 }
             case 106:
                 var3 = _closure1_slot0;
@@ -75,8 +75,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.InteractionStatusViewState;
                 var0 = var0.TIMED_OUT;
                 if (!(var0 !== var2)) {
-                    _fun56814_ip = 325;
-                    continue _fun56814
+                    _fun56816_ip = 325;
+                    continue _fun56816
                 }
             case 142:
                 var3 = _closure1_slot0;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.InteractionStatusViewState;
                 var0 = var0.FAILED;
                 if (!(var0 !== var2)) {
-                    _fun56814_ip = 236;
-                    continue _fun56814
+                    _fun56816_ip = 236;
+                    continue _fun56816
                 }
             case 175:
                 var3 = _closure1_slot0;
@@ -97,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.InteractionStatusViewState;
                 var0 = var0.EPHEMERAL_SUCCESS;
                 if (!(var0 !== var2)) {
-                    _fun56814_ip = 210;
-                    continue _fun56814
+                    _fun56816_ip = 210;
+                    continue _fun56816
                 }
             case 208:
                 return var6;
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var7.interactionError;
                 var3 = null;
                 if (!(var3 == var2)) {
-                    _fun56814_ip = 305;
-                    continue _fun56814
+                    _fun56816_ip = 305;
+                    continue _fun56816
                 }
             case 250:
                 var8 = _closure1_slot0;
@@ -202,4 +202,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createInteractionStatus = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6874, 1235, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6875, 1235, 2]);

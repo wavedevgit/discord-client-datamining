@@ -389,18 +389,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var4 = null;
                 if (!(var4 != var6)) {
-                    _fun51475_ip = 66;
+                    _fun51475_ip = 70;
                     continue _fun51475
                 }
-            case 44:
+            case 48:
                 var5 = var6.split;
                 var4 = ',';
                 var5 = var5.bind(var6)(var4);
                 var4 = 0;
                 var7 = var5[var4];
-                _fun51475_ip = 121;
+                _fun51475_ip = 125;
                 continue _fun51475;
-            case 66:
+            case 70:
                 var8 = _closure1_slot0;
                 var9 = _closure1_slot2;
                 var4 = 4;
@@ -413,7 +413,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.t;
                 var4 = var4.lqaIxI;
                 var7 = var5.bind(var6)(var4);
-            case 121:
+            case 125:
                 var4 = global;
                 var4 = var4.HermesInternal;
                 var6 = var4.concat;

@@ -47,13 +47,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var5;
         var0 = function() { // Environment: var0
-            _fun81651: for (var _fun81651_ip = 0;;) switch (_fun81651_ip) {
+            _fun81654: for (var _fun81654_ip = 0;;) switch (_fun81654_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun81651_ip = 142;
-                        continue _fun81651
+                        _fun81654_ip = 142;
+                        continue _fun81654
                     }
                 case 16:
                     var0 = {};
@@ -67,8 +67,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var3.CHANGE_NICKNAME;
                     var3 = var4.bind(var6)(var3, var5);
                     if (var3) {
-                        _fun81651_ip = 100;
-                        continue _fun81651
+                        _fun81654_ip = 100;
+                        continue _fun81654
                     }
                 case 70:
                     var7 = _closure1_slot2;
@@ -86,15 +86,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = _closure2_slot0;
                     var1 = var3.bind(var4)(var2, var1);
                     var0.canManageChannels = var1;
-                    _fun81651_ip = 152;
-                    continue _fun81651;
+                    _fun81654_ip = 156;
+                    continue _fun81654;
                 case 142:
                     var0 = {
                         'canAccessSettings': false,
                         'canEditNickname': false,
                         'canManageChannels': false
                     };
-                case 152:
+                case 156:
                     return var0;
             }
         };

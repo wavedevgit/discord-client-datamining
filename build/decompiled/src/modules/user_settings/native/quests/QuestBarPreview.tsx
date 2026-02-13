@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/quests/QuestBarPreview.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun84667: for (var _fun84667_ip = 0;;) switch (_fun84667_ip) {
+        _fun84670: for (var _fun84670_ip = 0;;) switch (_fun84670_ip) {
             case 0:
                 var0 = arg0;
                 var13 = var0.quest;
@@ -87,14 +87,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2 != var13;
                 var0 = null;
                 if (!var3) {
-                    _fun84667_ip = 223;
-                    continue _fun84667
+                    _fun84670_ip = 223;
+                    continue _fun84670
                 }
             case 42:
                 var0 = null;
                 if (!var1) {
-                    _fun84667_ip = 223;
-                    continue _fun84667
+                    _fun84670_ip = 223;
+                    continue _fun84670
                 }
             case 50:
                 var3 = _closure1_slot4;
@@ -144,4 +144,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.QuestBarPreview = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 5316, 10806, 10807, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 5316, 10808, 10809, 2]);

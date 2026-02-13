@@ -101,4 +101,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'voice-panel-no-join-perms';
     var2.VOICE_PANEL_NO_JOIN_PERMS_KEY = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 4022, 4022, 14407, 1235, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 4022, 4022, 14405, 1235, 2]);

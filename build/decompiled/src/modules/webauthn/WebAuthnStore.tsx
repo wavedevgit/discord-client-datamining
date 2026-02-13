@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() {
-        _fun61261: for (var _fun61261_ip = 0;;) switch (_fun61261_ip) {
+        _fun61264: for (var _fun61264_ip = 0;;) switch (_fun61264_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun61261_ip = 74;
-                continue _fun61261;
+                _fun61264_ip = 74;
+                continue _fun61264;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
         var3 = function() {
-            _fun61265: for (var _fun61265_ip = 0;;) switch (_fun61265_ip) {
+            _fun61268: for (var _fun61268_ip = 0;;) switch (_fun61268_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -101,16 +101,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot10;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun61265_ip = 69;
-                        continue _fun61265
+                        _fun61268_ip = 69;
+                        continue _fun61268
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun61265_ip = 105;
-                    continue _fun61265;
+                    _fun61268_ip = 105;
+                    continue _fun61268;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -192,15 +192,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.LOGOUT = var8;
     var8 = function arg0() {
-        _fun61271: for (var _fun61271_ip = 0;;) switch (_fun61271_ip) {
+        _fun61274: for (var _fun61274_ip = 0;;) switch (_fun61274_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.credentials;
                 var3 = _closure1_slot8;
                 var0 = false;
                 if (!(var3 !== var1)) {
-                    _fun61271_ip = 28;
-                    continue _fun61271
+                    _fun61274_ip = 28;
+                    continue _fun61274
                 }
             case 22:
                 _closure1_slot8 = var1;
@@ -208,8 +208,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 28:
                 var1 = _closure1_slot7;
                 if (var1) {
-                    _fun61271_ip = 43;
-                    continue _fun61271
+                    _fun61274_ip = 43;
+                    continue _fun61274
                 }
             case 35:
                 var1 = true;
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.MFA_WEBAUTHN_CREDENTIALS_LOADED = var8;
     var8 = function arg0() {
-        _fun61272: for (var _fun61272_ip = 0;;) switch (_fun61272_ip) {
+        _fun61275: for (var _fun61275_ip = 0;;) switch (_fun61275_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.credential;
@@ -236,8 +236,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.AuthenticatorType;
                 var4 = var4.WEBAUTHN;
                 if (!(var5 === var4)) {
-                    _fun61272_ip = 119;
-                    continue _fun61272
+                    _fun61275_ip = 119;
+                    continue _fun61275
                 }
             case 61:
                 var5 = _closure1_slot8;
@@ -252,8 +252,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1 = var4.bind(var5)(var1);
                 if (!(var0 === var1)) {
-                    _fun61272_ip = 119;
-                    continue _fun61272
+                    _fun61275_ip = 119;
+                    continue _fun61275
                 }
             case 84:
                 var8 = _closure1_slot8;
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.AUTHENTICATOR_CREATE = var8;
     var8 = function arg0() {
-        _fun61274: for (var _fun61274_ip = 0;;) switch (_fun61274_ip) {
+        _fun61277: for (var _fun61277_ip = 0;;) switch (_fun61277_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.credential;
@@ -288,22 +288,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.AuthenticatorType;
                 var3 = var3.WEBAUTHN;
                 if (!(var4 === var3)) {
-                    _fun61274_ip = 86;
-                    continue _fun61274
+                    _fun61277_ip = 86;
+                    continue _fun61277
                 }
             case 61:
                 var4 = _closure1_slot8;
                 var3 = var4.map;
                 var1 = function(arg0) { // Environment: var1
-                    _fun61275: for (var _fun61275_ip = 0;;) switch (_fun61275_ip) {
+                    _fun61278: for (var _fun61278_ip = 0;;) switch (_fun61278_ip) {
                         case 0:
                             var0 = arg0;
                             var3 = var0.id;
                             var2 = _closure2_slot0;
                             var2 = var2.id;
                             if (!(var3 === var2)) {
-                                _fun61275_ip = 28;
-                                continue _fun61275
+                                _fun61278_ip = 28;
+                                continue _fun61278
                             }
                         case 24:
                             var0 = _closure2_slot0;
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.AUTHENTICATOR_UPDATE = var8;
     var8 = function arg0() {
-        _fun61276: for (var _fun61276_ip = 0;;) switch (_fun61276_ip) {
+        _fun61279: for (var _fun61279_ip = 0;;) switch (_fun61279_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.credential;
@@ -336,8 +336,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.AuthenticatorType;
                 var3 = var3.WEBAUTHN;
                 if (!(var4 === var3)) {
-                    _fun61276_ip = 86;
-                    continue _fun61276
+                    _fun61279_ip = 86;
+                    continue _fun61279
                 }
             case 61:
                 var4 = _closure1_slot8;
@@ -360,12 +360,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.AUTHENTICATOR_DELETE = var8;
     var8 = function() {
-        _fun61278: for (var _fun61278_ip = 0;;) switch (_fun61278_ip) {
+        _fun61281: for (var _fun61281_ip = 0;;) switch (_fun61281_ip) {
             case 0:
                 var0 = _closure1_slot9;
                 if (var0) {
-                    _fun61278_ip = 20;
-                    continue _fun61278
+                    _fun61281_ip = 20;
+                    continue _fun61281
                 }
             case 10:
                 var0 = true;
@@ -379,13 +379,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.WEBAUTHN_TRIGGER_REGISTER = var8;
     var3 = function() {
-        _fun61279: for (var _fun61279_ip = 0;;) switch (_fun61279_ip) {
+        _fun61282: for (var _fun61282_ip = 0;;) switch (_fun61282_ip) {
             case 0:
                 var2 = _closure1_slot9;
                 var0 = false;
                 if (var2) {
-                    _fun61279_ip = 14;
-                    continue _fun61279
+                    _fun61282_ip = 14;
+                    continue _fun61282
                 }
             case 12:
                 return var0;

@@ -27,11 +27,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 1;
     var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var6 = var3.jsx;
+    var6 = var3.BUNDLE_PREVIEW_CONFIG;
     var _closure1_slot5 = var6;
-    var3 = var3.jsxs;
+    var3 = var3.PROFILE_SKELETON_ASPECT_RATIO;
     var _closure1_slot6 = var3;
     var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.jsx;
+    var _closure1_slot7 = var6;
+    var3 = var3.jsxs;
+    var _closure1_slot8 = var3;
+    var3 = 3;
     var3 = var5[var3];
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
@@ -41,11 +48,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8.width = var9;
     var3.profileSkeletonBackground = var8;
     var8 = {
-        'width': '100%',
-        'height': '100%',
+        'position': 'absolute',
+        'top': 0,
+        'left': 0,
         'resizeMode': 'cover'
     };
-    var9 = 3;
+    var9 = 4;
     var11 = var5[var9];
     var11 = var10.bind(var0)(var11);
     var11 = var11.radii;
@@ -77,92 +85,113 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8.opacity = var9;
     var3.purchasedProfileEffect = var8;
     var3 = var6.bind(var7)(var3);
-    var _closure1_slot7 = var3;
-    var3 = 10;
+    var _closure1_slot9 = var3;
+    var3 = 11;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/native/ProfileEffectSampleV2.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun57494: for (var _fun57494_ip = 0;;) switch (_fun57494_ip) {
+        _fun57497: for (var _fun57497_ip = 0;;) switch (_fun57497_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.item;
                 var7 = var0.isPurchased;
                 var10 = var0.isDarkTheme;
-                var12 = var0.bundle;
+                var4 = var0.bundleSize;
                 var6 = var0.showGradient;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun57494_ip = 40;
-                    continue _fun57494
+                    _fun57497_ip = 40;
+                    continue _fun57497
                 }
             case 38:
                 var6 = true;
             case 40:
-                var0 = _closure1_slot7;
+                var0 = _closure1_slot9;
                 var13 = var0.bind(var3)();
                 var1 = _closure1_slot0;
-                var9 = _closure1_slot2;
-                var0 = 4;
-                var0 = var9[var0];
+                var11 = _closure1_slot2;
+                var0 = 5;
+                var0 = var11[var0];
                 var2 = var1.bind(var3)(var0);
                 var1 = var2.useToken;
-                var4 = _closure1_slot1;
-                var0 = 3;
-                var0 = var9[var0];
-                var0 = var4.bind(var3)(var0);
+                var9 = _closure1_slot1;
+                var0 = 4;
+                var0 = var11[var0];
+                var0 = var9.bind(var3)(var0);
                 var0 = var0.colors;
                 var0 = var0.BACKGROUND_BASE_LOW;
                 var18 = var1.bind(var2)(var0);
+                var0 = null;
+                var1 = var0 != var4;
+                var2 = null;
+                if (!var1) {
+                    _fun57497_ip = 128;
+                    continue _fun57497
+                }
+            case 120:
+                var1 = _closure1_slot5;
+                var2 = var1[var4];
+            case 128:
+                var12 = var0 != var2;
+                if (var12) {
+                    _fun57497_ip = 143;
+                    continue _fun57497
+                }
+            case 135:
+                var11 = var13.profileSkeletonBackground;
+                _fun57497_ip = 194;
+                continue _fun57497;
+            case 143:
+                var1 = var13.profileSkeletonBackgroundBundle;
+                var0 = new Array(2);
+                var0[0] = var1;
+                var1 = {};
+                var4 = var2.pfxWidth;
+                var1.width = var4;
+                var4 = var2.pfxWidth;
                 var2 = _closure1_slot6;
+                var2 = var4 * var2;
+                var1.height = var2;
+                var0[1] = var1;
+                var11 = var0;
+            case 194:
+                var2 = _closure1_slot8;
                 var1 = _closure1_slot3;
                 var0 = {};
                 var9 = var13.profileEffectContainer;
                 var4 = new Array(2);
                 var4[0] = var9;
                 if (!var7) {
-                    _fun57494_ip = 142;
-                    continue _fun57494
+                    _fun57497_ip = 227;
+                    continue _fun57497
                 }
-            case 136:
+            case 221:
                 var7 = var13.purchasedProfileEffect;
-            case 142:
+            case 227:
                 var4[1] = var7;
                 var0.style = var4;
-                var9 = _closure1_slot5;
+                var9 = _closure1_slot7;
                 var7 = _closure1_slot4;
                 var4 = {};
-                if (var12) {
-                    _fun57494_ip = 171;
-                    continue _fun57494
-                }
-            case 163:
-                var14 = var13.profileSkeletonBackground;
-                _fun57494_ip = 177;
-                continue _fun57494;
-            case 171:
-                var14 = var13.profileSkeletonBackgroundBundle;
-            case 177:
-                var11 = new Array(1);
-                var11[0] = var14;
                 var4.style = var11;
                 var11 = _closure1_slot1;
                 var15 = _closure1_slot2;
                 if (var10) {
-                    _fun57494_ip = 209;
-                    continue _fun57494
+                    _fun57497_ip = 269;
+                    continue _fun57497
                 }
-            case 200:
-                var10 = 6;
+            case 260:
+                var10 = 7;
                 var10 = var15[var10];
-                _fun57494_ip = 216;
-                continue _fun57494;
-            case 209:
-                var14 = 5;
+                _fun57497_ip = 276;
+                continue _fun57497;
+            case 269:
+                var14 = 6;
                 var10 = var15[var14];
-            case 216:
+            case 276:
                 var10 = var11.bind(var3)(var10);
                 var4.source = var10;
                 var10 = false;
@@ -171,21 +200,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(3);
                 var4[0] = var7;
                 if (!var6) {
-                    _fun57494_ip = 569;
-                    continue _fun57494
+                    _fun57497_ip = 629;
+                    continue _fun57497
                 }
-            case 251:
-                var10 = _closure1_slot5;
+            case 311:
+                var10 = _closure1_slot7;
                 var9 = _closure1_slot1;
                 var11 = _closure1_slot2;
-                var7 = 7;
+                var7 = 8;
                 var7 = var11[var7];
                 var9 = var9.bind(var3)(var7);
                 var7 = {};
                 var13 = var13.gradientOverlay;
                 var7.style = var13;
                 var15 = _closure1_slot0;
-                var17 = 8;
+                var17 = 9;
                 var13 = var11[var17];
                 var14 = var15.bind(var3)(var13);
                 var13 = var14.hexToRgbaString;
@@ -206,20 +235,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var14.bind(var3)(var13);
                 var19 = var20.hexWithOpacity;
                 if (var12) {
-                    _fun57494_ip = 409;
-                    continue _fun57494
+                    _fun57497_ip = 469;
+                    continue _fun57497
                 }
-            case 386:
+            case 446:
                 var13 = 0.35;
                 var13 = var19.bind(var20)(var18, var13);
                 var13 = var15.bind(var16)(var13);
-                _fun57494_ip = 430;
-                continue _fun57494;
-            case 409:
+                _fun57497_ip = 490;
+                continue _fun57497;
+            case 469:
                 var14 = 0.75;
                 var14 = var19.bind(var20)(var18, var14);
                 var13 = var15.bind(var16)(var14);
-            case 430:
+            case 490:
                 var11[1] = var13;
                 var16 = _closure1_slot0;
                 var13 = _closure1_slot2;
@@ -230,20 +259,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = var16.bind(var3)(var13);
                 var16 = var17.hexWithOpacity;
                 if (var12) {
-                    _fun57494_ip = 498;
-                    continue _fun57494
+                    _fun57497_ip = 558;
+                    continue _fun57497
                 }
-            case 475:
+            case 535:
                 var12 = 0.7;
                 var12 = var16.bind(var17)(var18, var12);
                 var12 = var14.bind(var15)(var12);
-                _fun57494_ip = 512;
-                continue _fun57494;
-            case 498:
+                _fun57497_ip = 572;
+                continue _fun57497;
+            case 558:
                 var13 = 1;
                 var13 = var16.bind(var17)(var18, var13);
                 var12 = var14.bind(var15)(var13);
-            case 512:
+            case 572:
                 var11[2] = var12;
                 var7.colors = var11;
                 var11 = [0, 0.3, 0.6, 0.85, 1];
@@ -259,12 +288,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var7.end = var11;
                 var6 = var10.bind(var3)(var9, var7);
-            case 569:
+            case 629:
                 var4[1] = var6;
-                var7 = _closure1_slot5;
+                var7 = _closure1_slot7;
                 var6 = _closure1_slot1;
                 var9 = _closure1_slot2;
-                var5 = 9;
+                var5 = 10;
                 var5 = var9[var5];
                 var6 = var6.bind(var3)(var5);
                 var5 = {
@@ -283,4 +312,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 3156, 6982, 6983, 4104, 3244, 6984, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 6982, 33, 1297, 671, 3156, 6984, 6985, 4104, 3244, 6986, 2]);

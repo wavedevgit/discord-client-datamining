@@ -69,15 +69,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var4.useLayoutEffect;
         var2 = function() { // Environment: var1
             var3 = function() {
-                _fun110561: for (var _fun110561_ip = 0;;) switch (_fun110561_ip) {
+                _fun110471: for (var _fun110471_ip = 0;;) switch (_fun110471_ip) {
                     case 0:
                         var1 = _closure1_slot4;
                         var2 = var1.theme;
                         var3 = _closure2_slot1;
                         var3 = var3.current;
                         if (!(var2 !== var3)) {
-                            _fun110561_ip = 72;
-                            continue _fun110561
+                            _fun110471_ip = 72;
+                            continue _fun110471
                         }
                     case 29:
                         var1 = _closure2_slot1;
@@ -124,4 +124,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3201, 13062, 14198, 14199, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3201, 13060, 14196, 14197, 2]);

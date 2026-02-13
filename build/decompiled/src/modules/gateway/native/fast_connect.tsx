@@ -690,4 +690,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.identifyWebSocket = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [26, 27, 477, 3, 478, 480, 481, 659, 12489, 12262, 12470, 12459, 20, 14, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [26, 27, 477, 3, 478, 480, 481, 659, 12487, 12260, 12468, 12457, 20, 14, 2]);

@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/burst_reactions/BurstReactionAnimation.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun55263: for (var _fun55263_ip = 0;;) switch (_fun55263_ip) {
+        _fun55265: for (var _fun55265_ip = 0;;) switch (_fun55265_ip) {
             case 0:
                 var3 = arg0;
                 var13 = var3.channelId;
@@ -59,8 +59,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3.withFadeOut;
                 var4 = undefined;
                 if (!(var5 === var4)) {
-                    _fun55263_ip = 45;
-                    continue _fun55263
+                    _fun55265_ip = 45;
+                    continue _fun55265
                 }
             case 43:
                 var5 = true;
@@ -109,21 +109,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var9 = var9.bind(var11)(var3, var2);
                 if (!(var0 != var6)) {
-                    _fun55263_ip = 335;
-                    continue _fun55263
+                    _fun55265_ip = 335;
+                    continue _fun55265
                 }
             case 193:
                 var3 = _closure1_slot1;
                 var12 = _closure1_slot2;
                 if (var5) {
-                    _fun55263_ip = 213;
-                    continue _fun55263
+                    _fun55265_ip = 213;
+                    continue _fun55265
                 }
             case 204:
                 var2 = 7;
                 var2 = var12[var2];
-                _fun55263_ip = 220;
-                continue _fun55263;
+                _fun55265_ip = 220;
+                continue _fun55265;
             case 213:
                 var11 = 6;
                 var2 = var12[var11];
@@ -131,14 +131,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.bind(var4)(var2);
                 var2 = {};
                 if (var5) {
-                    _fun55263_ip = 240;
-                    continue _fun55263
+                    _fun55265_ip = 240;
+                    continue _fun55265
                 }
             case 230:
                 var2.onAnimationFinish = var10;
                 var5 = var2;
-                _fun55263_ip = 248;
-                continue _fun55263;
+                _fun55265_ip = 248;
+                continue _fun55265;
             case 240:
                 var2.onComplete = var10;
                 var5 = var2;
@@ -151,8 +151,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.loop = var8;
                 var8 = 1.2;
                 if (!var9) {
-                    _fun55263_ip = 293;
-                    continue _fun55263
+                    _fun55265_ip = 293;
+                    continue _fun55265
                 }
             case 283:
                 var8 = 0.5;
@@ -174,4 +174,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 33, 1297, 6631, 566, 6673, 6674, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 33, 1297, 6631, 566, 6674, 6675, 2]);

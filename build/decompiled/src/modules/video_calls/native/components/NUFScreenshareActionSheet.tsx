@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.skip = var8;
     var3 = var6.bind(var7)(var3);
     var _closure1_slot7 = var3;
-    var3 = 10;
+    var3 = 11;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
@@ -82,10 +82,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = _closure1_slot7;
         var3 = undefined;
         var13 = var0.bind(var3)();
-        var2 = _closure1_slot5;
         var15 = _closure1_slot0;
         var16 = _closure1_slot2;
         var0 = 4;
+        var0 = var16[var0];
+        var4 = var15.bind(var3)(var0);
+        var2 = var4.getDeviceSpecificString;
+        var1 = {};
+        var12 = 5;
+        var0 = var16[var12];
+        var0 = var15.bind(var3)(var0);
+        var0 = var0.t;
+        var0 = var0.xx5YdY;
+        var1.quest = var0;
+        var0 = var16[var12];
+        var0 = var15.bind(var3)(var0);
+        var0 = var0.t;
+        var0 = var0.hZdQXt;
+        var17 = var2.bind(var4)(var1, var0);
+        var2 = _closure1_slot5;
+        var0 = 6;
         var0 = var16[var0];
         var0 = var15.bind(var3)(var0);
         var1 = var0.BottomSheet;
@@ -100,14 +116,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8 = _closure1_slot4;
         var7 = {};
         var18 = _closure1_slot1;
-        var9 = 5;
+        var9 = 7;
         var9 = var16[var9];
         var9 = var18.bind(var3)(var9);
         var7.source = var9;
         var8 = var2.bind(var3)(var8, var7);
         var7 = new Array(5);
         var7[0] = var8;
-        var10 = 6;
+        var10 = 8;
         var8 = var16[var10];
         var8 = var15.bind(var3)(var8);
         var9 = var8.Text;
@@ -117,18 +133,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'variant': 'heading-xl/extrabold',
             'color': 'mobile-text-heading-primary'
         };
-        var12 = var13.title;
-        var8.style = var12;
-        var12 = 7;
-        var17 = var16[var12];
-        var17 = var15.bind(var3)(var17);
-        var20 = var17.intl;
-        var19 = var20.string;
-        var17 = var16[var12];
-        var17 = var15.bind(var3)(var17);
-        var17 = var17.t;
-        var17 = var17.hZdQXt;
-        var17 = var19.bind(var20)(var17);
+        var19 = var13.title;
+        var8.style = var19;
         var8.children = var17;
         var8 = var2.bind(var3)(var9, var8);
         var7[1] = var8;
@@ -154,7 +160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8.children = var17;
         var8 = var2.bind(var3)(var9, var8);
         var7[2] = var8;
-        var17 = 8;
+        var17 = 9;
         var8 = var16[var17];
         var9 = var18.bind(var3)(var8);
         var8 = {};
@@ -181,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var8.onPress = var14;
         var8 = var2.bind(var3)(var9, var8);
         var7[3] = var8;
-        var8 = 9;
+        var8 = 10;
         var8 = var16[var8];
         var8 = var15.bind(var3)(var8);
         var9 = var8.PressableOpacity;
@@ -233,4 +239,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4938, 8520, 3938, 1235, 4880, 4909, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 6671, 1235, 4938, 8522, 3938, 4880, 4909, 2]);

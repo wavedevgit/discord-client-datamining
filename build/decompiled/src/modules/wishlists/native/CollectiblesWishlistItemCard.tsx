@@ -38,7 +38,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot0 = var5;
         var8 = var3.onPress;
         var6 = var3.backgroundColor;
-        var _closure2_slot1 = var6;
         var2 = {
             'item': 0,
             'onPress': 0,
@@ -54,19 +53,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = _closure1_slot2;
         var3 = var7.useCallback;
         var9 = var5.sku;
-        var2 = new Array(2);
+        var2 = new Array(1);
         var2[0] = var9;
-        var2[1] = var6;
         var1 = function() { // Environment: var1
-            _fun92673: for (var _fun92673_ip = 0;;) switch (_fun92673_ip) {
+            _fun92583: for (var _fun92583_ip = 0;;) switch (_fun92583_ip) {
                 case 0:
                     var0 = _closure2_slot0;
                     var1 = var0.sku;
                     var0 = null;
                     var1 = var0 == var1;
                     if (var1) {
-                        _fun92673_ip = 82;
-                        continue _fun92673
+                        _fun92583_ip = 74;
+                        continue _fun92583
                     }
                 case 22:
                     var4 = _closure1_slot3;
@@ -77,13 +75,11 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = undefined;
                     var2 = var2.bind(var3)(var1);
                     var1 = {};
-                    var6 = _closure2_slot0;
-                    var6 = var6.sku;
-                    var1.sku = var6;
-                    var5 = _closure2_slot1;
-                    var1.backgroundColor = var5;
+                    var5 = _closure2_slot0;
+                    var5 = var5.sku;
+                    var1.sku = var5;
                     var0 = var4.bind(var3)(var2, var1);
-                case 82:
+                case 74:
                     return var0;
             }
         };
@@ -109,4 +105,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 11333, 11335, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 11335, 11337, 2]);

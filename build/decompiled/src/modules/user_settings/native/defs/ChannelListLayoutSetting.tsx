@@ -122,4 +122,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.useChannelListLayoutPredicate = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7091, 1348, 1235, 8863, 9057, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7093, 1348, 1235, 8865, 9059, 2]);

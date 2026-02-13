@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/themes/RootThemeContextProvider.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun100551: for (var _fun100551_ip = 0;;) switch (_fun100551_ip) {
+        _fun100461: for (var _fun100461_ip = 0;;) switch (_fun100461_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.children;
@@ -94,8 +94,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5.bind(var3)(var2);
                 var5 = undefined;
                 if (!var2) {
-                    _fun100551_ip = 148;
-                    continue _fun100551
+                    _fun100461_ip = 148;
+                    continue _fun100461
                 }
             case 144:
                 var5 = _closure1_slot7;
@@ -105,16 +105,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = 0;
                 var12 = 0;
                 if (!var2) {
-                    _fun100551_ip = 295;
-                    continue _fun100551
+                    _fun100461_ip = 295;
+                    continue _fun100461
                 }
             case 164:
                 var2 = var1.theme;
                 var1 = _closure1_slot5;
                 var1 = var1.LIGHT;
                 if (!(var2 !== var1)) {
-                    _fun100551_ip = 239;
-                    continue _fun100551
+                    _fun100461_ip = 239;
+                    continue _fun100461
                 }
             case 184:
                 var10 = _closure1_slot0;
@@ -128,8 +128,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.ThemeContextFlags;
                 var1 = var1.MOBILE_DARK_GRADIENT_THEME_ENABLED;
                 var1 = var2.bind(var8)(var11, var1);
-                _fun100551_ip = 292;
-                continue _fun100551;
+                _fun100461_ip = 292;
+                continue _fun100461;
             case 239:
                 var13 = _closure1_slot0;
                 var14 = _closure1_slot2;
@@ -148,8 +148,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 1;
                 var11 = var12;
                 if (!(var1 !== var7)) {
-                    _fun100551_ip = 358;
-                    continue _fun100551
+                    _fun100461_ip = 358;
+                    continue _fun100461
                 }
             case 305:
                 var13 = _closure1_slot0;
@@ -166,8 +166,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 358:
                 var8 = var11;
                 if (!(var1 !== var6)) {
-                    _fun100551_ip = 461;
-                    continue _fun100551
+                    _fun100461_ip = 461;
+                    continue _fun100461
                 }
             case 365:
                 var10 = _closure1_slot0;
@@ -177,8 +177,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var10.bind(var3)(var2);
                 var2 = var10.setThemeFlag;
                 if (!(!(var6 > var1))) {
-                    _fun100551_ip = 426;
-                    continue _fun100551
+                    _fun100461_ip = 426;
+                    continue _fun100461
                 }
             case 395:
                 var12 = _closure1_slot0;
@@ -187,8 +187,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var12.bind(var3)(var1);
                 var1 = var1.ThemeContextFlags;
                 var1 = var1.REDUCED_CONTRAST_ENABLED;
-                _fun100551_ip = 455;
-                continue _fun100551;
+                _fun100461_ip = 455;
+                continue _fun100461;
             case 426:
                 var13 = _closure1_slot0;
                 var12 = _closure1_slot2;
@@ -219,4 +219,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.RootThemeContextProvider = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 3201, 483, 33, 566, 3246, 13062, 3164, 4889, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 3201, 483, 33, 566, 3246, 13060, 3164, 4889, 2]);

@@ -2,18 +2,23 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
     var0 = global;
-    var6 = var0.Object;
-    var5 = var6.defineProperty;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
     var1 = {};
-    var4 = true;
-    var1.value = var4;
+    var0 = true;
+    var1.value = var0;
     var0 = '__esModule';
-    var0 = var5.bind(var6)(var2, var0, var1);
+    var0 = var4.bind(var5)(var2, var0, var1);
     var1 = {};
-    var6 = 'OverKeyboardView';
+    var6 = 'KeyboardGestureArea';
     var1.uiViewClassName = var6;
-    var0 = {};
-    var0.visible = var4;
+    var0 = {
+        'interpolator': true,
+        'showOnSwipeUp': true,
+        'enableSwipeToDismiss': true,
+        'offset': true,
+        'textInputNativeID': true
+    };
     var1.validAttributes = var0;
     var _closure1_slot0 = var1;
     var4 = dependencyMap;

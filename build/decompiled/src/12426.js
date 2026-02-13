@@ -1,32 +1,51 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun95028: for (var _fun95028_ip = 0;;) switch (_fun95028_ip) {
-        case 0:
-            var1 = {
-                'option': 'alt',
-                'command': 'meta',
-                'return': 'enter',
-                'escape': 'esc'
-            };
-            var2 = 'meta';
-            var4 = /Mac|iPod|iPhone|iPad/;
-            var3 = var4.test;
-            var0 = global;
-            var0 = var0.navigator;
-            var0 = var0.platform;
-            var3 = var3.bind(var4)(var0);
-            var0 = 'ctrl';
-            if (!var3) {
-                _fun95028_ip = 66;
-                continue _fun95028
-            }
-        case 63:
-            var0 = var2;
-        case 66:
-            var1.mod = var0;
-            var0 = module;
-            var0.exports = var1;
-            var0 = undefined;
-            return var0;
-    }
+    var1 = function(arg0, arg1, arg2) { // Environment: var0
+        _fun94941: for (var _fun94941_ip = 0;;) switch (_fun94941_ip) {
+            case 0:
+                var0 = arg2;
+                var2 = this;
+                if (var0) {
+                    _fun94941_ip = 40;
+                    continue _fun94941
+                }
+            case 9:
+                var1 = var2.getReverseMap;
+                var2 = var1.bind(var2)();
+                var1 = arg0;
+                var2 = var2[var1];
+                var1 = 'keypress';
+                if (!var2) {
+                    _fun94941_ip = 37;
+                    continue _fun94941
+                }
+            case 33:
+                var1 = 'keydown';
+            case 37:
+                var0 = var1;
+            case 40:
+                var1 = 'keypress';
+                var1 = var1 === var0;
+                if (!var1) {
+                    _fun94941_ip = 59;
+                    continue _fun94941
+                }
+            case 51:
+                var2 = arg1;
+                var1 = var2.length;
+            case 59:
+                if (!var1) {
+                    _fun94941_ip = 66;
+                    continue _fun94941
+                }
+            case 62:
+                var0 = 'keydown';
+            case 66:
+                return var0;
+        }
+    };
+    var0 = arg4;
+    var0.exports = var1;
+    var0 = undefined;
+    return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

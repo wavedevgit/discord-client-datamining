@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'renderConfirmRightIcon';
         var0[var5] = var6;
         var5 = function() {
-            _fun67632: for (var _fun67632_ip = 0;;) switch (_fun67632_ip) {
+            _fun67635: for (var _fun67635_ip = 0;;) switch (_fun67635_ip) {
                 case 0:
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -162,14 +162,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var3.bind(var0)(var2);
                     var2 = var3.openURL;
                     if (var4) {
-                        _fun67632_ip = 75;
-                        continue _fun67632
+                        _fun67635_ip = 75;
+                        continue _fun67635
                     }
                 case 64:
                     var4 = _closure1_slot4;
                     var4 = var2.bind(var3)(var4);
-                    _fun67632_ip = 84;
-                    continue _fun67632;
+                    _fun67635_ip = 84;
+                    continue _fun67635;
                 case 75:
                     var1 = _closure1_slot3;
                     var1 = var2.bind(var3)(var1);

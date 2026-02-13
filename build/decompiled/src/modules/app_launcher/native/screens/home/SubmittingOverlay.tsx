@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_launcher/native/screens/home/SubmittingOverlay.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun108024: for (var _fun108024_ip = 0;;) switch (_fun108024_ip) {
+        _fun107934: for (var _fun107934_ip = 0;;) switch (_fun107934_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.submitting;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var12.bind(var3)(var2);
                 var2 = var7.useAnimatedStyle;
                 var1 = function() {
-                    _fun108025: for (var _fun108025_ip = 0;;) switch (_fun108025_ip) {
+                    _fun107935: for (var _fun107935_ip = 0;;) switch (_fun107935_ip) {
                         case 0:
                             var0 = {};
                             var3 = _closure1_slot0;
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure2_slot0;
                             var3 = 0;
                             if (!var2) {
-                                _fun108025_ip = 47;
-                                continue _fun108025
+                                _fun107935_ip = 47;
+                                continue _fun107935
                             }
                         case 44:
                             var3 = 1;
@@ -130,8 +130,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6[2] = var7;
                 var0.style = var6;
                 if (!var4) {
-                    _fun108024_ip = 257;
-                    continue _fun108024
+                    _fun107934_ip = 257;
+                    continue _fun107934
                 }
             case 207:
                 var7 = _closure1_slot3;

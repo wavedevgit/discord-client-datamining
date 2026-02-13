@@ -235,4 +235,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useMainTabsWidth = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 660, 629, 3919, 3916, 803, 5283, 12211, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 660, 629, 3919, 3916, 803, 5283, 12209, 2]);

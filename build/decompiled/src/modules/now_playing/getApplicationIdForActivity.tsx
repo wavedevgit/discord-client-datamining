@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/now_playing/getApplicationIdForActivity.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun96671: for (var _fun96671_ip = 0;;) switch (_fun96671_ip) {
+        _fun96581: for (var _fun96581_ip = 0;;) switch (_fun96581_ip) {
             case 0:
                 var1 = arg0;
                 var4 = _closure1_slot0;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4.bind(var3)(var0);
                 var0 = var0.bind(var3)(var1);
                 if (var0) {
-                    _fun96671_ip = 182;
-                    continue _fun96671
+                    _fun96581_ip = 182;
+                    continue _fun96581
                 }
             case 39:
                 var4 = _closure1_slot0;
@@ -60,22 +60,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4.bind(var3)(var0);
                 var0 = var0.bind(var3)(var1);
                 if (!var0) {
-                    _fun96671_ip = 94;
-                    continue _fun96671
+                    _fun96581_ip = 94;
+                    continue _fun96581
                 }
             case 67:
                 var0 = var1.party;
                 var4 = null;
                 if (!(var4 != var0)) {
-                    _fun96671_ip = 94;
-                    continue _fun96671
+                    _fun96581_ip = 94;
+                    continue _fun96581
                 }
             case 79:
                 var0 = var1.party;
                 var0 = var0.id;
                 if (!(var4 == var0)) {
-                    _fun96671_ip = 171;
-                    continue _fun96671
+                    _fun96581_ip = 171;
+                    continue _fun96581
                 }
             case 94:
                 var4 = _closure1_slot0;
@@ -85,42 +85,42 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4.bind(var3)(var0);
                 var0 = var0.bind(var3)(var1);
                 if (!var0) {
-                    _fun96671_ip = 133;
-                    continue _fun96671
+                    _fun96581_ip = 133;
+                    continue _fun96581
                 }
             case 122:
                 var3 = var1.url;
                 var0 = null;
                 if (!(var0 == var3)) {
-                    _fun96671_ip = 156;
-                    continue _fun96671
+                    _fun96581_ip = 156;
+                    continue _fun96581
                 }
             case 133:
                 var3 = var1.application_id;
                 var0 = null;
                 var3 = var0 != var3;
                 if (!var3) {
-                    _fun96671_ip = 154;
-                    continue _fun96671
+                    _fun96581_ip = 154;
+                    continue _fun96581
                 }
             case 148:
                 var0 = var1.application_id;
             case 154:
-                _fun96671_ip = 169;
-                continue _fun96671;
+                _fun96581_ip = 169;
+                continue _fun96581;
             case 156:
                 var4 = _closure1_slot3;
                 var3 = var1.url;
                 var0 = var4 + var3;
             case 169:
-                _fun96671_ip = 180;
-                continue _fun96671;
+                _fun96581_ip = 180;
+                continue _fun96581;
             case 171:
                 var3 = _closure1_slot2;
                 var0 = var3.id;
             case 180:
-                _fun96671_ip = 195;
-                continue _fun96671;
+                _fun96581_ip = 195;
+                continue _fun96581;
             case 182:
                 var2 = _closure1_slot4;
                 var1 = var1.name;
@@ -131,4 +131,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12121, 12561, 12562, 7897, 5731, 5795, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12119, 12559, 12560, 7899, 5731, 5795, 2]);

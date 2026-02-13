@@ -354,20 +354,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var14 = var11 == var13;
                 var12 = undefined;
                 if (var14) {
-                    _fun37529_ip = 768;
+                    _fun37529_ip = 764;
                     continue _fun37529
                 }
-            case 762:
+            case 758:
                 var12 = var13.largeTitle;
-            case 768:
+            case 764:
                 var11 = var11 != var12;
                 if (!var11) {
-                    _fun37529_ip = 778;
+                    _fun37529_ip = 774;
                     continue _fun37529
                 }
-            case 775:
+            case 771:
                 var11 = var12;
-            case 778:
+            case 774:
                 var4.hasLargeHeader = var11;
                 var4.sheetAllowedDetents = var9;
                 var9 = new Array(2);

@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/GuildStreamSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56491: for (var _fun56491_ip = 0;;) switch (_fun56491_ip) {
+        _fun56493: for (var _fun56493_ip = 0;;) switch (_fun56493_ip) {
             case 0:
                 var3 = arg0;
                 var8 = var3.message;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var8.messageReference;
                 var13 = null;
                 if (!(var13 == var0)) {
-                    _fun56491_ip = 34;
-                    continue _fun56491
+                    _fun56493_ip = 34;
+                    continue _fun56493
                 }
             case 32:
                 var0 = {};
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = 'username';
                 var11 = null;
                 if (!(var17 === var14)) {
-                    _fun56491_ip = 204;
-                    continue _fun56491
+                    _fun56493_ip = 204;
+                    continue _fun56493
                 }
             case 201:
                 var11 = var12;
@@ -91,8 +91,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.roleColor = var12;
                 var11 = null;
                 if (!var16) {
-                    _fun56491_ip = 222;
-                    continue _fun56491
+                    _fun56493_ip = 222;
+                    continue _fun56493
                 }
             case 219:
                 var11 = var15;
@@ -101,8 +101,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = 'dot';
                 var11 = var11 === var14;
                 if (!var11) {
-                    _fun56491_ip = 242;
-                    continue _fun56491
+                    _fun56493_ip = 242;
+                    continue _fun56493
                 }
             case 238:
                 var11 = var13 != var12;
@@ -138,8 +138,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6.bind(var2)(var5);
                 var5 = var5.t;
                 if (var4) {
-                    _fun56491_ip = 415;
-                    continue _fun56491
+                    _fun56493_ip = 415;
+                    continue _fun56493
                 }
             case 376:
                 var6 = var5.dMmbGk;
@@ -150,8 +150,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = 'onJoinStream';
                 var4[var11] = var12;
                 var4 = var7.bind(var8)(var6, var4);
-                _fun56491_ip = 450;
-                continue _fun56491;
+                _fun56493_ip = 450;
+                continue _fun56493;
             case 415:
                 var6 = var5.FP7rUI;
                 var5 = {};
@@ -176,4 +176,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createGuildStreamSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3503, 6759, 6752, 6753, 1235, 6754, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3503, 6760, 6753, 6754, 1235, 6755, 2]);

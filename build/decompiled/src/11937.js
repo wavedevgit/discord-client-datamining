@@ -1,534 +1,274 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun92101: for (var _fun92101_ip = 0;;) switch (_fun92101_ip) {
-        case 0:
-            var3 = global;
-            var5 = require;
-            var6 = dependencyMap;
-            var7 = function arg0() {
-                _fun92102: for (var _fun92102_ip = 0;;) switch (_fun92102_ip) {
-                    case 0:
-                        var2 = arg0;
-                        if (!var2) {
-                            _fun92102_ip = 31;
-                            continue _fun92102
+    var5 = require;
+    var4 = metroImportDefault;
+    var2 = exports;
+    var6 = dependencyMap;
+    var _closure1_slot0 = var5;
+    var _closure1_slot1 = var6;
+    var0 = function() {
+        _fun92037: for (var _fun92037_ip = 0;;) switch (_fun92037_ip) {
+            case 0:
+            case 2: // try_start_0
+                var1 = global;
+                var2 = var1.Boolean;
+                var2 = var2.prototype;
+                var3 = var2.valueOf;
+                var2 = var3.call;
+                var7 = var1.Reflect;
+                var6 = var7.construct;
+                var5 = var1.Boolean;
+                var4 = new Array(0);
+                var1 = function() { // Environment: var0
+                    var0 = undefined;
+                    return var0;
+                };
+                var1 = var6.bind(var7)(var5, var4, var1);
+                var1 = var2.bind(var3)(var1);
+                var1 = !var1;
+                var _closure2_slot0 = var1;
+            case 72: // try_end0
+                _fun92037_ip = 76;
+                continue _fun92037;
+            case 74: // catch_target0
+                CatchBlockStart(arg_register = 1);
+            case 76:
+                var1 = function() {
+                    var0 = _closure2_slot0;
+                    var0 = !var0;
+                    var0 = !var0;
+                    return var0;
+                };
+                _closure1_slot9 = var1;
+                var0 = undefined;
+                var0 = var1.bind(var0)();
+                return var0;
+        }
+    };
+    var _closure1_slot9 = var0;
+    var0 = global;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var2, var0, var3);
+    var0 = 0;
+    var3 = var6[var0];
+    var0 = undefined;
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot2 = var3;
+    var3 = 1;
+    var3 = var6[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var3 = 2;
+    var3 = var6[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot4 = var3;
+    var3 = 3;
+    var3 = var6[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot5 = var3;
+    var3 = 4;
+    var3 = var6[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot6 = var3;
+    var3 = 5;
+    var3 = var6[var3];
+    var3 = var4.bind(var0)(var3);
+    var4 = 6;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var4 = var4.BackHandler;
+    var _closure1_slot7 = var4;
+    var4 = 7;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var4 = var4.jsx;
+    var _closure1_slot8 = var4;
+    var3 = var3.Component;
+    var1 = function(arg0) { // Environment: var1
+        var3 = function() {
+            _fun92041: for (var _fun92041_ip = 0;;) switch (_fun92041_ip) {
+                case 0:
+                    var4 = this;
+                    var3 = undefined;
+                    var9 = undefined;
+                    var6 = _closure1_slot2;
+                    var2 = _closure2_slot0;
+                    var2 = var6.bind(var3)(var4, var2);
+                    var6 = arguments.length;
+                    var7 = global;
+                    var2 = var7.Array;
+                    var8 = var2.prototype;
+                    var8 = Object.create(var8, {
+                        constructor: {
+                            value: var2
                         }
-                    case 6:
-                        var1 = 'object';
-                        var0 = typeof var2;
-                        if (!(var1 === var0)) {
-                            _fun92102_ip = 31;
-                            continue _fun92102
+                    });
+                    var14 = var8;
+                    var13 = var6;
+                    var2 = new var14[var2](var13, var12);
+                    var8 = var2 instanceof Object ? var2 : var8;
+                    var2 = 0;
+                    var10 = var2 < var6;
+                    if (!var10) {
+                        _fun92041_ip = 87;
+                        continue _fun92041
+                    }
+                case 72:
+                    var10 = arguments[var2];
+                    var8[var2] = var10;
+                    var2 = var2 + 1;
+                    if (var2 < var6) {
+                        _fun92041_ip = 72;
+                        continue _fun92041
+                    }
+                case 87:
+                    var2 = _closure2_slot0;
+                    var6 = new Array(0);
+                    var0 = var6.concat;
+                    var6 = var0.bind(var6)(var8);
+                    var0 = _closure1_slot5;
+                    var9 = var0.bind(var3)(var2);
+                    var2 = _closure1_slot4;
+                    var0 = _closure1_slot9;
+                    var0 = var0.bind(var3)();
+                    if (var0) {
+                        _fun92041_ip = 142;
+                        continue _fun92041
+                    }
+                case 129:
+                    var0 = var9.apply;
+                    var0 = var0.bind(var9)(var4, var6);
+                    _fun92041_ip = 181;
+                    continue _fun92041;
+                case 142:
+                    var8 = var7.Reflect;
+                    var7 = var8.construct;
+                    if (var6) {
+                        _fun92041_ip = 160;
+                        continue _fun92041
+                    }
+                case 156:
+                    var6 = new Array(0);
+                case 160:
+                    var5 = _closure1_slot5;
+                    var5 = var5.bind(var3)(var4);
+                    var5 = var5.constructor;
+                    var0 = var7.bind(var8)(var9, var6, var5);
+                case 181:
+                    var0 = var2.bind(var3)(var4, var0);
+                    var _closure3_slot0 = var0;
+                    var1 = function() { // Environment: var1
+                        _fun92042: for (var _fun92042_ip = 0;;) switch (_fun92042_ip) {
+                            case 0:
+                                var0 = _closure3_slot0;
+                                var0 = var0.history;
+                                var2 = var0.index;
+                                var0 = 0;
+                                var0 = var0 !== var2;
+                                if (!var0) {
+                                    _fun92042_ip = 49;
+                                    continue _fun92042
+                                }
+                            case 27:
+                                var1 = _closure3_slot0;
+                                var2 = var1.history;
+                                var1 = var2.goBack;
+                                var1 = var1.bind(var2)();
+                                var0 = true;
+                            case 49:
+                                return var0;
                         }
-                    case 17:
-                        var0 = 'default';
-                        var1 = var0 in var2;
-                        var0 = var2;
-                        if (var1) {
-                            _fun92102_ip = 40;
-                            continue _fun92102
-                        }
-                    case 31:
-                        var1 = {};
-                        var1.default = var2;
-                        var0 = var1;
-                    case 40:
-                        return var0;
-                }
-            };
-            var0 = 0;
-            var2 = var6[var0];
+                    };
+                    var0.handleBack = var1;
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var3;
+        var4 = _closure1_slot6;
+        var2 = undefined;
+        var1 = arg0;
+        var1 = var4.bind(var2)(var3, var1);
+        var1 = _closure1_slot3;
+        var4 = {};
+        var0 = 'componentDidMount';
+        var4.key = var0;
+        var0 = function() {
+            var3 = _closure1_slot7;
+            var2 = var3.addEventListener;
+            var0 = this;
+            var1 = var0.handleBack;
+            var0 = 'hardwareBackPress';
+            var0 = var2.bind(var3)(var0, var1);
             var0 = undefined;
-            var2 = var5.bind(var0)(var2);
-            var _closure1_slot0 = var2;
-            var4 = 1;
-            var4 = var6[var4];
-            var4 = var5.bind(var0)(var4);
-            var2 = var7.bind(var0)(var2);
-            var4 = var7.bind(var0)(var4);
-            var _closure1_slot1 = var4;
-            var4 = 2;
-            var4 = var6[var4];
-            var4 = var5.bind(var0)(var4);
-            var4 = var7.bind(var0)(var4);
-            var _closure1_slot2 = var4;
-            var4 = 3;
-            var4 = var6[var4];
-            var4 = var5.bind(var0)(var4);
-            var4 = global;
-            var5 = var4.globalThis;
-            var6 = 'undefined';
-            var5 = typeof var5;
-            if (!(var6 === var5)) {
-                _fun92101_ip = 141;
-                continue _fun92101
-            }
-        case 113:
-            var5 = var4.window;
-            var5 = typeof var5;
-            if (!(var6 === var5)) {
-                _fun92101_ip = 133;
-                continue _fun92101
-            }
-        case 125:
-            if (!(var0 === var3)) {
-                _fun92101_ip = 131;
-                continue _fun92101
-            }
-        case 129:
-            var3 = {};
-        case 131:
-            _fun92101_ip = 139;
-            continue _fun92101;
-        case 133:
-            var3 = var4.window;
-        case 139:
-            _fun92101_ip = 147;
-            continue _fun92101;
-        case 141:
-            var3 = var4.globalThis;
-        case 147:
-            var _closure1_slot3 = var3;
-            var2 = var2.default;
-            var2 = var2.createContext;
-            if (var2) {
-                _fun92101_ip = 172;
-                continue _fun92101
-            }
-        case 165:
-            var2 = function arg0, arg1() {
-                _fun92103: for (var _fun92103_ip = 0;;) switch (_fun92103_ip) {
+            return var0;
+        };
+        var4.value = var0;
+        var0 = new Array(3);
+        var0[0] = var4;
+        var4 = {};
+        var6 = 'componentWillUnmount';
+        var4.key = var6;
+        var6 = function() {
+            var3 = _closure1_slot7;
+            var2 = var3.removeEventListener;
+            var0 = this;
+            var1 = var0.handleBack;
+            var0 = 'hardwareBackPress';
+            var0 = var2.bind(var3)(var0, var1);
+            var0 = undefined;
+            return var0;
+        };
+        var4.value = var6;
+        var0[1] = var4;
+        var4 = {};
+        var6 = 'render';
+        var4.key = var6;
+        var5 = function() {
+            var0 = this;
+            var _closure3_slot0 = var0;
+            var3 = _closure1_slot8;
+            var1 = _closure1_slot0;
+            var2 = _closure1_slot1;
+            var0 = 8;
+            var0 = var2[var0];
+            var2 = undefined;
+            var0 = var1.bind(var2)(var0);
+            var0 = var0.__HistoryContext;
+            var1 = var0.Consumer;
+            var0 = {};
+            var4 = function arg0() {
+                _fun92046: for (var _fun92046_ip = 0;;) switch (_fun92046_ip) {
                     case 0:
+                        var0 = _closure3_slot0;
                         var1 = arg0;
-                        var _closure2_slot0 = var1;
-                        var1 = arg1;
-                        var _closure2_slot1 = var1;
-                        var1 = _closure1_slot3;
-                        var4 = var1.__global_unique_id__;
-                        if (var4) {
-                            _fun92103_ip = 34;
-                            continue _fun92103
+                        var0.history = var1;
+                        var0 = var0.props;
+                        var0 = var0.children;
+                        if (var0) {
+                            _fun92046_ip = 31;
+                            continue _fun92046
                         }
-                    case 32:
-                        var4 = 0;
-                    case 34:
-                        var2 = 1;
-                        var2 = var4 + var2;
-                        var1.__global_unique_id__ = var2;
-                        var1 = '__create-react-context-';
-                        var2 = var1 + var2;
-                        var1 = '__';
-                        var4 = var2 + var1;
-                        var _closure2_slot2 = var4;
-                        var1 = _closure1_slot0;
-                        var6 = var1.Component;
-                        var2 = function(arg0) { // Environment: var0
-                            var4 = arg0;
-                            var _closure3_slot0 = var4;
-                            var0 = function() {
-                                _fun92105: for (var _fun92105_ip = 0;;) switch (_fun92105_ip) {
-                                    case 0:
-                                        var1 = this;
-                                        var3 = undefined;
-                                        var0 = undefined;
-                                        var4 = _closure3_slot0;
-                                        var2 = var4.apply;
-                                        var0 = arguments;
-                                        var0 = var2.bind(var4)(var1, var0);
-                                        if (var0) {
-                                            _fun92105_ip = 33;
-                                            continue _fun92105
-                                        }
-                                    case 30:
-                                        var0 = var1;
-                                    case 33:
-                                        var1 = var0.props;
-                                        var2 = var1.value;
-                                        var1 = function arg0() {
-                                            var0 = arg0;
-                                            var _closure5_slot0 = var0;
-                                            var0 = new Array(0);
-                                            var _closure5_slot1 = var0;
-                                            var0 = {};
-                                            var2 = function arg0() {
-                                                var2 = _closure5_slot1;
-                                                var1 = var2.push;
-                                                var0 = arg0;
-                                                var0 = var1.bind(var2)(var0);
-                                                var0 = undefined;
-                                                return var0;
-                                            };
-                                            var0.on = var2;
-                                            var2 = function arg0() {
-                                                var1 = arg0;
-                                                var _closure6_slot0 = var1;
-                                                var3 = _closure5_slot1;
-                                                var2 = var3.filter;
-                                                var0 = function(arg0) { // Environment: var0
-                                                    var1 = _closure6_slot0;
-                                                    var0 = arg0;
-                                                    var0 = var0 !== var1;
-                                                    return var0;
-                                                };
-                                                var0 = var2.bind(var3)(var0);
-                                                _closure5_slot1 = var0;
-                                                var0 = undefined;
-                                                return var0;
-                                            };
-                                            var0.off = var2;
-                                            var2 = function() {
-                                                var0 = _closure5_slot0;
-                                                return var0;
-                                            };
-                                            var0.get = var2;
-                                            var1 = function arg0, arg1() {
-                                                var1 = arg1;
-                                                var _closure6_slot0 = var1;
-                                                var2 = arg0;
-                                                _closure5_slot0 = var2;
-                                                var2 = _closure5_slot1;
-                                                var1 = var2.forEach;
-                                                var0 = function(arg0) { // Environment: var0
-                                                    var3 = _closure5_slot0;
-                                                    var2 = _closure6_slot0;
-                                                    var1 = arg0;
-                                                    var0 = undefined;
-                                                    var0 = var1.bind(var0)(var3, var2);
-                                                    return var0;
-                                                };
-                                                var0 = var1.bind(var2)(var0);
-                                                var0 = undefined;
-                                                return var0;
-                                            };
-                                            var0.set = var1;
-                                            return var0;
-                                        };
-                                        var1 = var1.bind(var3)(var2);
-                                        var0.emitter = var1;
-                                        return var0;
-                                }
-                            };
-                            var3 = _closure1_slot1;
-                            var2 = var3.default;
-                            var2 = var2.bind(var3)(var0, var4);
-                            var2 = var0.prototype;
-                            var3 = function() {
-                                var0 = {};
-                                var2 = _closure2_slot2;
-                                var1 = this;
-                                var1 = var1.emitter;
-                                var0[var2] = var1;
-                                return var0;
-                            };
-                            var2.getChildContext = var3;
-                            var3 = function arg0() {
-                                _fun92114: for (var _fun92114_ip = 0;;) switch (_fun92114_ip) {
-                                    case 0:
-                                        var0 = arg0;
-                                        var1 = this;
-                                        var2 = var1.props;
-                                        var3 = var2.value;
-                                        var2 = var0.value;
-                                        if (!(var3 !== var2)) {
-                                            _fun92114_ip = 157;
-                                            continue _fun92114
-                                        }
-                                    case 28:
-                                        var2 = var1.props;
-                                        var6 = var2.value;
-                                        var5 = var0.value;
-                                        if (!(var6 !== var5)) {
-                                            _fun92114_ip = 60;
-                                            continue _fun92114
-                                        }
-                                    case 47:
-                                        var2 = var6 != var6;
-                                        if (!var2) {
-                                            _fun92114_ip = 58;
-                                            continue _fun92114
-                                        }
-                                    case 54:
-                                        var2 = var5 != var5;
-                                    case 58:
-                                        _fun92114_ip = 87;
-                                        continue _fun92114;
-                                    case 60:
-                                        var3 = 0;
-                                        var3 = var3 !== var6;
-                                        if (var3) {
-                                            _fun92114_ip = 84;
-                                            continue _fun92114
-                                        }
-                                    case 69:
-                                        var4 = 1;
-                                        var7 = var4 / var6;
-                                        var4 = var4 / var5;
-                                        var3 = var7 === var4;
-                                    case 84:
-                                        var2 = var3;
-                                    case 87:
-                                        if (var2) {
-                                            _fun92114_ip = 157;
-                                            continue _fun92114
-                                        }
-                                    case 90:
-                                        var4 = _closure2_slot1;
-                                        var2 = 1073741823;
-                                        var7 = 'function';
-                                        var4 = typeof var4;
-                                        if (!(var7 === var4)) {
-                                            _fun92114_ip = 126;
-                                            continue _fun92114
-                                        }
-                                    case 114:
-                                        var4 = _closure2_slot1;
-                                        var3 = undefined;
-                                        var2 = var4.bind(var3)(var6, var5);
-                                    case 126:
-                                        var3 = var2 | 0;
-                                        var2 = 0;
-                                        if (!(var2 !== var3)) {
-                                            _fun92114_ip = 157;
-                                            continue _fun92114
-                                        }
-                                    case 135:
-                                        var2 = var1.emitter;
-                                        var1 = var2.set;
-                                        var0 = var0.value;
-                                        var0 = var1.bind(var2)(var0, var3);
-                                    case 157:
-                                        var0 = undefined;
-                                        return var0;
-                                }
-                            };
-                            var2.componentWillReceiveProps = var3;
-                            var1 = function() {
-                                var0 = this;
-                                var0 = var0.props;
-                                var0 = var0.children;
-                                return var0;
-                            };
-                            var2.render = var1;
-                            return var0;
-                        };
-                        var5 = undefined;
-                        var2 = var2.bind(var5)(var6);
-                        var6 = {};
-                        var3 = _closure1_slot2;
-                        var7 = var3.default;
-                        var7 = var7.object;
-                        var7 = var7.isRequired;
-                        var6[var4] = var7;
-                        var2.childContextTypes = var6;
-                        var1 = var1.Component;
-                        var0 = function(arg0) { // Environment: var0
-                            var4 = arg0;
-                            var _closure3_slot0 = var4;
-                            var0 = function() {
-                                _fun92117: for (var _fun92117_ip = 0;;) switch (_fun92117_ip) {
-                                    case 0:
-                                        var2 = this;
-                                        var0 = undefined;
-                                        var4 = _closure3_slot0;
-                                        var3 = var4.apply;
-                                        var0 = arguments;
-                                        var0 = var3.bind(var4)(var2, var0);
-                                        if (var0) {
-                                            _fun92117_ip = 33;
-                                            continue _fun92117
-                                        }
-                                    case 30:
-                                        var0 = var2;
-                                    case 33:
-                                        var _closure4_slot0 = var0;
-                                        var2 = {};
-                                        var3 = var0.getValue;
-                                        var3 = var3.bind(var0)();
-                                        var2.value = var3;
-                                        var0.state = var2;
-                                        var1 = function(arg0, arg1) { // Environment: var1
-                                            _fun92118: for (var _fun92118_ip = 0;;) switch (_fun92118_ip) {
-                                                case 0:
-                                                    var0 = _closure4_slot0;
-                                                    var0 = var0.observedBits;
-                                                    var1 = var0 | 0;
-                                                    var0 = arg1;
-                                                    var0 = var1 & var0;
-                                                    if (!var0) {
-                                                        _fun92118_ip = 61;
-                                                        continue _fun92118
-                                                    }
-                                                case 26:
-                                                    var2 = _closure4_slot0;
-                                                    var1 = var2.setState;
-                                                    var0 = {};
-                                                    var4 = _closure4_slot0;
-                                                    var3 = var4.getValue;
-                                                    var3 = var3.bind(var4)();
-                                                    var0.value = var3;
-                                                    var0 = var1.bind(var2)(var0);
-                                                case 61:
-                                                    var0 = undefined;
-                                                    return var0;
-                                            }
-                                        };
-                                        var0.onUpdate = var1;
-                                        return var0;
-                                }
-                            };
-                            var3 = _closure1_slot1;
-                            var2 = var3.default;
-                            var2 = var2.bind(var3)(var0, var4);
-                            var2 = var0.prototype;
-                            var3 = function arg0() {
-                                _fun92119: for (var _fun92119_ip = 0;;) switch (_fun92119_ip) {
-                                    case 0:
-                                        var0 = arg0;
-                                        var1 = var0.observedBits;
-                                        var0 = null;
-                                        if (!(var0 == var1)) {
-                                            _fun92119_ip = 21;
-                                            continue _fun92119
-                                        }
-                                    case 15:
-                                        var1 = 1073741823;
-                                    case 21:
-                                        var0 = this;
-                                        var0.observedBits = var1;
-                                        var0 = undefined;
-                                        return var0;
-                                }
-                            };
-                            var2.componentWillReceiveProps = var3;
-                            var3 = function() {
-                                _fun92120: for (var _fun92120_ip = 0;;) switch (_fun92120_ip) {
-                                    case 0:
-                                        var1 = this;
-                                        var3 = var1.context;
-                                        var2 = _closure2_slot2;
-                                        var2 = var3[var2];
-                                        if (!var2) {
-                                            _fun92120_ip = 52;
-                                            continue _fun92120
-                                        }
-                                    case 22:
-                                        var2 = var1.context;
-                                        var0 = _closure2_slot2;
-                                        var3 = var2[var0];
-                                        var2 = var3.on;
-                                        var0 = var1.onUpdate;
-                                        var0 = var2.bind(var3)(var0);
-                                    case 52:
-                                        var0 = var1.props;
-                                        var0 = var0.observedBits;
-                                        var2 = null;
-                                        if (!(var2 == var0)) {
-                                            _fun92120_ip = 75;
-                                            continue _fun92120
-                                        }
-                                    case 69:
-                                        var0 = 1073741823;
-                                    case 75:
-                                        var1.observedBits = var0;
-                                        var0 = undefined;
-                                        return var0;
-                                }
-                            };
-                            var2.componentDidMount = var3;
-                            var3 = function() {
-                                _fun92121: for (var _fun92121_ip = 0;;) switch (_fun92121_ip) {
-                                    case 0:
-                                        var0 = this;
-                                        var3 = var0.context;
-                                        var2 = _closure2_slot2;
-                                        var2 = var3[var2];
-                                        if (!var2) {
-                                            _fun92121_ip = 52;
-                                            continue _fun92121
-                                        }
-                                    case 22:
-                                        var2 = var0.context;
-                                        var1 = _closure2_slot2;
-                                        var2 = var2[var1];
-                                        var1 = var2.off;
-                                        var0 = var0.onUpdate;
-                                        var0 = var1.bind(var2)(var0);
-                                    case 52:
-                                        var0 = undefined;
-                                        return var0;
-                                }
-                            };
-                            var2.componentWillUnmount = var3;
-                            var3 = function() {
-                                _fun92122: for (var _fun92122_ip = 0;;) switch (_fun92122_ip) {
-                                    case 0:
-                                        var2 = this;
-                                        var3 = var2.context;
-                                        var0 = _closure2_slot2;
-                                        var0 = var3[var0];
-                                        if (var0) {
-                                            _fun92122_ip = 28;
-                                            continue _fun92122
-                                        }
-                                    case 22:
-                                        var0 = _closure2_slot0;
-                                        _fun92122_ip = 50;
-                                        continue _fun92122;
-                                    case 28:
-                                        var2 = var2.context;
-                                        var1 = _closure2_slot2;
-                                        var2 = var2[var1];
-                                        var1 = var2.get;
-                                        var0 = var1.bind(var2)();
-                                    case 50:
-                                        return var0;
-                                }
-                            };
-                            var2.getValue = var3;
-                            var1 = function() {
-                                _fun92123: for (var _fun92123_ip = 0;;) switch (_fun92123_ip) {
-                                    case 0:
-                                        var0 = this;
-                                        var1 = var0.props;
-                                        var3 = var1.children;
-                                        var1 = global;
-                                        var2 = var1.Array;
-                                        var1 = var2.isArray;
-                                        var1 = var1.bind(var2)(var3);
-                                        var2 = var3;
-                                        if (!var1) {
-                                            _fun92123_ip = 43;
-                                            continue _fun92123
-                                        }
-                                    case 37:
-                                        var1 = 0;
-                                        var2 = var3[var1];
-                                    case 43:
-                                        var0 = var0.state;
-                                        var1 = var0.value;
-                                        var0 = undefined;
-                                        var0 = var2.bind(var0)(var1);
-                                        return var0;
-                                }
-                            };
-                            var2.render = var1;
-                            return var0;
-                        };
-                        var1 = var0.bind(var5)(var1);
-                        var0 = {};
-                        var3 = var3.default;
-                        var3 = var3.object;
-                        var0[var4] = var3;
-                        var1.contextTypes = var0;
-                        var0 = {};
-                        var0.Provider = var2;
-                        var0.Consumer = var1;
+                    case 29:
+                        var0 = null;
+                    case 31:
                         return var0;
                 }
             };
-        case 172:
-            var1 = arg4;
-            var1.exports = var2;
+            var0.children = var4;
+            var0 = var3.bind(var2)(var1, var0);
             return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 11938, 3225, 1228]);
+        };
+        var4.value = var5;
+        var0[2] = var4;
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var1 = var1.bind(var0)(var3);
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 27, 33, 3228]);

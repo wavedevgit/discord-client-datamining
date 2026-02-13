@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var1;
     var1 = {};
     var7 = function arg0() {
-        _fun71008: for (var _fun71008_ip = 0;;) switch (_fun71008_ip) {
+        _fun71011: for (var _fun71011_ip = 0;;) switch (_fun71011_ip) {
             case 0:
                 var6 = arg0;
                 var2 = _closure1_slot2;
@@ -121,8 +121,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var5 == var4;
                 var9 = undefined;
                 if (var10) {
-                    _fun71008_ip = 112;
-                    continue _fun71008
+                    _fun71011_ip = 112;
+                    continue _fun71011
                 }
             case 107:
                 var9 = var4.type;
@@ -131,8 +131,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var5 == var4;
                 var9 = undefined;
                 if (var10) {
-                    _fun71008_ip = 131;
-                    continue _fun71008
+                    _fun71011_ip = 131;
+                    continue _fun71011
                 }
             case 126:
                 var9 = var4.guild_id;
@@ -154,8 +154,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var5 == var4;
                 var7 = undefined;
                 if (var6) {
-                    _fun71008_ip = 202;
-                    continue _fun71008
+                    _fun71011_ip = 202;
+                    continue _fun71011
                 }
             case 197:
                 var7 = var4.type;
@@ -165,8 +165,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var5 == var4;
                 var5 = undefined;
                 if (var6) {
-                    _fun71008_ip = 225;
-                    continue _fun71008
+                    _fun71011_ip = 225;
+                    continue _fun71011
                 }
             case 220:
                 var5 = var4.guild_id;

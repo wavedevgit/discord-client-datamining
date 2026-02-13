@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var5;
     var1 = function arg0() {
-        _fun77506: for (var _fun77506_ip = 0;;) switch (_fun77506_ip) {
+        _fun77509: for (var _fun77509_ip = 0;;) switch (_fun77509_ip) {
             case 0:
                 var0 = arg0;
                 var12 = var0.channelId;
@@ -381,8 +381,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(1);
                 var4[0] = var8;
                 if (var5) {
-                    _fun77506_ip = 638;
-                    continue _fun77506
+                    _fun77509_ip = 638;
+                    continue _fun77509
                 }
             case 524:
                 var5 = {};
@@ -409,8 +409,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.onpress = var6;
                 var6 = new Array(1);
                 var6[0] = var5;
-                _fun77506_ip = 642;
-                continue _fun77506;
+                _fun77509_ip = 642;
+                continue _fun77509;
             case 638:
                 var6 = new Array(0);
             case 642:
@@ -494,4 +494,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var1;
     var2.StrangerDangerWarningBanner = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3105, 9072, 9119, 660, 9856, 33, 1297, 671, 566, 9116, 9117, 4567, 3282, 9857, 1307, 481, 9848, 1235, 9850, 3938, 9859, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3105, 9074, 9121, 660, 9858, 33, 1297, 671, 566, 9118, 9119, 4567, 3282, 9859, 1307, 481, 9850, 1235, 9852, 3938, 9861, 2]);

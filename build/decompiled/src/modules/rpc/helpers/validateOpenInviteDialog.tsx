@@ -41,15 +41,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/rpc/helpers/validateOpenInviteDialog.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun98710: for (var _fun98710_ip = 0;;) switch (_fun98710_ip) {
+        _fun98620: for (var _fun98620_ip = 0;;) switch (_fun98620_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var1 = var2.getConnectedFrame;
                 var1 = var1.bind(var2)();
                 var2 = null;
                 if (!(var2 == var1)) {
-                    _fun98710_ip = 402;
-                    continue _fun98710
+                    _fun98620_ip = 402;
+                    continue _fun98620
                 }
             case 26:
                 var5 = _closure1_slot1;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var5.bind(var4)(var3);
                 var3 = var3.bind(var4)();
                 if (!(var2 != var3)) {
-                    _fun98710_ip = 334;
-                    continue _fun98710
+                    _fun98620_ip = 334;
+                    continue _fun98620
                 }
             case 59:
                 var7 = _closure1_slot4;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.bind(var3)();
                 var5 = var6.bind(var7)(var5);
                 if (!(var2 != var5)) {
-                    _fun98710_ip = 238;
-                    continue _fun98710
+                    _fun98620_ip = 238;
+                    continue _fun98620
                 }
             case 90:
                 var6 = _closure1_slot0;
@@ -83,8 +83,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot5;
                 var2 = var6.bind(var7)(var2, var5, var3);
                 if (var2) {
-                    _fun98710_ip = 221;
-                    continue _fun98710
+                    _fun98620_ip = 221;
+                    continue _fun98620
                 }
             case 130:
                 var6 = _closure1_slot1;
@@ -180,4 +180,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.validateOpenInviteDialog = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7975, 1410, 3096, 660, 12836, 7986, 8226, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7977, 1410, 3096, 660, 12834, 7988, 8228, 2]);

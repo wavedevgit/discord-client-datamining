@@ -25,15 +25,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/isCrunchyrollActivity.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun62615: for (var _fun62615_ip = 0;;) switch (_fun62615_ip) {
+        _fun62618: for (var _fun62618_ip = 0;;) switch (_fun62618_ip) {
             case 0:
                 var0 = arg0;
                 var1 = null;
                 var2 = var1 == var0;
                 var1 = undefined;
                 if (var2) {
-                    _fun62615_ip = 20;
-                    continue _fun62615
+                    _fun62618_ip = 20;
+                    continue _fun62618
                 }
             case 14:
                 var1 = var0.application_id;

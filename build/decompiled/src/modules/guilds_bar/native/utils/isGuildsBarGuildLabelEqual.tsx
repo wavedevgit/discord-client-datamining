@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/guilds_bar/native/utils/isGuildsBarGuildLabelEqual.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function arg0, arg1() {
-        _fun101612: for (var _fun101612_ip = 0;;) switch (_fun101612_ip) {
+        _fun101522: for (var _fun101522_ip = 0;;) switch (_fun101522_ip) {
             case 0:
                 var3 = arg0;
                 var2 = arg1;
@@ -28,8 +28,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.count;
                 var0 = var1 === var0;
                 if (!var0) {
-                    _fun101612_ip = 93;
-                    continue _fun101612
+                    _fun101522_ip = 93;
+                    continue _fun101522
                 }
             case 25:
                 var1 = var3.names;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.length;
                 var1 = var4 === var1;
                 if (!var1) {
-                    _fun101612_ip = 90;
-                    continue _fun101612
+                    _fun101522_ip = 90;
+                    continue _fun101522
                 }
             case 52:
                 var4 = var3.names;

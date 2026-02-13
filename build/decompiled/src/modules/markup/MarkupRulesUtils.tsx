@@ -20,30 +20,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/markup/MarkupRulesUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0, arg1, arg2() {
-        _fun62443: for (var _fun62443_ip = 0;;) switch (_fun62443_ip) {
+        _fun62446: for (var _fun62446_ip = 0;;) switch (_fun62446_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.content;
                 var2 = 'string';
                 var0 = typeof var0;
                 if (!(var2 !== var0)) {
-                    _fun62443_ip = 49;
-                    continue _fun62443
+                    _fun62446_ip = 49;
+                    continue _fun62446
                 }
             case 19:
                 var0 = var1.content;
                 var4 = undefined;
                 if (!(var4 !== var0)) {
-                    _fun62443_ip = 49;
-                    continue _fun62443
+                    _fun62446_ip = 49;
+                    continue _fun62446
                 }
             case 30:
                 var3 = var1.content;
                 var2 = arg1;
                 var0 = arg2;
                 var0 = var2.bind(var4)(var3, var0);
-                _fun62443_ip = 54;
-                continue _fun62443;
+                _fun62446_ip = 54;
+                continue _fun62446;
             case 49:
                 var0 = var1.content;
             case 54:
@@ -52,38 +52,38 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.smartOutput = var3;
     var1 = function arg0() {
-        _fun62444: for (var _fun62444_ip = 0;;) switch (_fun62444_ip) {
+        _fun62447: for (var _fun62447_ip = 0;;) switch (_fun62447_ip) {
             case 0:
                 var2 = arg0;
                 var0 = 'home';
                 var0 = var0 === var2;
                 if (var0) {
-                    _fun62444_ip = 24;
-                    continue _fun62444
+                    _fun62447_ip = 24;
+                    continue _fun62447
                 }
             case 14:
                 var1 = 'browse';
                 var0 = var1 === var2;
             case 24:
                 if (var0) {
-                    _fun62444_ip = 37;
-                    continue _fun62444
+                    _fun62447_ip = 37;
+                    continue _fun62447
                 }
             case 27:
                 var1 = 'customize';
                 var0 = var1 === var2;
             case 37:
                 if (var0) {
-                    _fun62444_ip = 50;
-                    continue _fun62444
+                    _fun62447_ip = 50;
+                    continue _fun62447
                 }
             case 40:
                 var1 = 'guide';
                 var0 = var1 === var2;
             case 50:
                 if (var0) {
-                    _fun62444_ip = 63;
-                    continue _fun62444
+                    _fun62447_ip = 63;
+                    continue _fun62447
                 }
             case 53:
                 var1 = 'linked-roles';

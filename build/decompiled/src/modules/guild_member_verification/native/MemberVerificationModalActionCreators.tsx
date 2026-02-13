@@ -73,20 +73,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.openMemberVerificationModal = var6;
     var3 = function() {
-        _fun60951: for (var _fun60951_ip = 0;;) switch (_fun60951_ip) {
+        _fun60954: for (var _fun60954_ip = 0;;) switch (_fun60954_ip) {
             case 0:
                 var1 = arguments[0];
                 var0 = undefined;
                 if (!(var1 === var0)) {
-                    _fun60951_ip = 11;
-                    continue _fun60951
+                    _fun60954_ip = 11;
+                    continue _fun60954
                 }
             case 9:
                 var1 = false;
             case 11:
                 if (var1) {
-                    _fun60951_ip = 68;
-                    continue _fun60951
+                    _fun60954_ip = 68;
+                    continue _fun60954
                 }
             case 14:
                 var2 = _closure1_slot1;
@@ -122,4 +122,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4833, 660, 796, 7491, 4567, 7505, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4833, 660, 796, 7493, 4567, 7507, 1307, 2]);

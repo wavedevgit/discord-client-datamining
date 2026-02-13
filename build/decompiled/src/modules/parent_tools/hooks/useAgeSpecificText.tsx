@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/parent_tools/hooks/useAgeSpecificText.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun82590: for (var _fun82590_ip = 0;;) switch (_fun82590_ip) {
+        _fun82593: for (var _fun82593_ip = 0;;) switch (_fun82593_ip) {
             case 0:
                 var0 = arg0;
                 var1 = arg1;
@@ -35,8 +35,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4.bind(var3)(var2);
                 var2 = var2.bind(var3)();
                 if (!var2) {
-                    _fun82590_ip = 40;
-                    continue _fun82590
+                    _fun82593_ip = 40;
+                    continue _fun82593
                 }
             case 37:
                 var0 = var1;

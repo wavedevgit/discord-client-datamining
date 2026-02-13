@@ -7,13 +7,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var4;
     var3 = function arg0() {
-        _fun68887: for (var _fun68887_ip = 0;;) switch (_fun68887_ip) {
+        _fun68890: for (var _fun68890_ip = 0;;) switch (_fun68890_ip) {
             case 0:
                 var4 = arguments[1];
                 var3 = undefined;
                 if (!(var4 === var3)) {
-                    _fun68887_ip = 13;
-                    continue _fun68887
+                    _fun68890_ip = 13;
+                    continue _fun68890
                 }
             case 11:
                 var4 = true;
@@ -42,8 +42,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var5)(var0);
                 var0 = var2;
                 if (!var4) {
-                    _fun68887_ip = 65;
-                    continue _fun68887
+                    _fun68890_ip = 65;
+                    continue _fun68890
                 }
             case 53:
                 var1 = function arg0() {
@@ -54,35 +54,35 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = arraySpread(var5, var4, var3);
                     var1 = var2.sort;
                     var0 = function(arg0, arg1) { // Environment: var0
-                        _fun68890: for (var _fun68890_ip = 0;;) switch (_fun68890_ip) {
+                        _fun68893: for (var _fun68893_ip = 0;;) switch (_fun68893_ip) {
                             case 0:
                                 var1 = arg0;
                                 var2 = arg1;
                                 var0 = var1.available;
                                 if (!var0) {
-                                    _fun68890_ip = 30;
-                                    continue _fun68890
+                                    _fun68893_ip = 30;
+                                    continue _fun68893
                                 }
                             case 15:
                                 var3 = var2.available;
                                 var0 = -1;
                                 if (!var3) {
-                                    _fun68890_ip = 58;
-                                    continue _fun68890
+                                    _fun68893_ip = 58;
+                                    continue _fun68893
                                 }
                             case 30:
                                 var4 = var1.available;
                                 var1 = 0;
                                 if (var4) {
-                                    _fun68890_ip = 55;
-                                    continue _fun68890
+                                    _fun68893_ip = 55;
+                                    continue _fun68893
                                 }
                             case 41:
                                 var2 = var2.available;
                                 var1 = 0;
                                 if (!var2) {
-                                    _fun68890_ip = 55;
-                                    continue _fun68890
+                                    _fun68893_ip = 55;
+                                    continue _fun68893
                                 }
                             case 52:
                                 var1 = 1;

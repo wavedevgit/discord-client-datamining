@@ -26976,11 +26976,11 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var9 = var10 === var9;
     var8 = var9;
     if (var9) {
-        _fun11081_ip = 3726;
+        _fun11081_ip = 3728;
         continue _fun11081
     }
-    case 3720: var8 = var3.__SENTRY_DEBUG__;
-    case 3726: var _closure1_slot69 = var8;
+    case 3722: var8 = var3.__SENTRY_DEBUG__;
+    case 3728: var _closure1_slot69 = var8;
     var8 = ['log', 'warn', 'error'];
     var _closure1_slot70 = var8;
     var8 = '[Replay] ';

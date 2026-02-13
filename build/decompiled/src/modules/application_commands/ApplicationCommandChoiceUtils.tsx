@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var7 = dependencyMap;
     var4 = function arg0, arg1() {
-        _fun64832: for (var _fun64832_ip = 0;;) switch (_fun64832_ip) {
+        _fun64835: for (var _fun64835_ip = 0;;) switch (_fun64835_ip) {
             case 0:
                 var5 = arg0;
                 var0 = arg1;
@@ -15,8 +15,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = undefined;
                 var0 = undefined;
                 if (var4) {
-                    _fun64832_ip = 54;
-                    continue _fun64832
+                    _fun64835_ip = 54;
+                    continue _fun64835
                 }
             case 25:
                 var4 = var5.find;
@@ -31,8 +31,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3 == var2;
                 var0 = undefined;
                 if (var3) {
-                    _fun64832_ip = 54;
-                    continue _fun64832
+                    _fun64835_ip = 54;
+                    continue _fun64835
                 }
             case 49:
                 var0 = var2.value;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = 'string';
                 var2 = typeof var0;
                 if (!(var3 !== var2)) {
-                    _fun64832_ip = 67;
-                    continue _fun64832
+                    _fun64835_ip = 67;
+                    continue _fun64835
                 }
             case 65:
                 return var1;
@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot3 = var4;
     var3 = function arg0, arg1() {
-        _fun64834: for (var _fun64834_ip = 0;;) switch (_fun64834_ip) {
+        _fun64837: for (var _fun64837_ip = 0;;) switch (_fun64837_ip) {
             case 0:
                 var5 = arg0;
                 var0 = arg1;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = undefined;
                 var0 = undefined;
                 if (var4) {
-                    _fun64834_ip = 54;
-                    continue _fun64834
+                    _fun64837_ip = 54;
+                    continue _fun64837
                 }
             case 25:
                 var4 = var5.find;
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3 == var2;
                 var0 = undefined;
                 if (var3) {
-                    _fun64834_ip = 54;
-                    continue _fun64834
+                    _fun64837_ip = 54;
+                    continue _fun64837
                 }
             case 49:
                 var0 = var2.value;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = 'number';
                 var2 = typeof var0;
                 if (!(var3 !== var2)) {
-                    _fun64834_ip = 67;
-                    continue _fun64834
+                    _fun64837_ip = 67;
+                    continue _fun64837
                 }
             case 65:
                 return var1;
@@ -124,7 +124,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'modules/application_commands/ApplicationCommandChoiceUtils.tsx';
     var5 = var6.bind(var7)(var5);
     var5 = function arg0() {
-        _fun64836: for (var _fun64836_ip = 0;;) switch (_fun64836_ip) {
+        _fun64839: for (var _fun64839_ip = 0;;) switch (_fun64839_ip) {
             case 0:
                 var3 = arg0;
                 var0 = var3.toLowerCase;
@@ -139,13 +139,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.toLowerCase;
                 var1 = var1.bind(var3)();
                 if (var0) {
-                    _fun64836_ip = 69;
-                    continue _fun64836
+                    _fun64839_ip = 69;
+                    continue _fun64839
                 }
             case 61:
                 if (!(var2 !== var1)) {
-                    _fun64836_ip = 69;
-                    continue _fun64836
+                    _fun64839_ip = 69;
+                    continue _fun64839
                 }
             case 65:
                 var1 = undefined;

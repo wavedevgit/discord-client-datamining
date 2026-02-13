@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/wishlists/CollectiblesWishlistUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun87771: for (var _fun87771_ip = 0;;) switch (_fun87771_ip) {
+        _fun87774: for (var _fun87774_ip = 0;;) switch (_fun87774_ip) {
             case 0:
                 var2 = arg0;
                 var3 = _closure1_slot0;
@@ -35,8 +35,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var3)(var2);
                 var0 = !var0;
                 if (!var0) {
-                    _fun87771_ip = 85;
-                    continue _fun87771
+                    _fun87774_ip = 85;
+                    continue _fun87774
                 }
             case 44:
                 var2 = var2.type;

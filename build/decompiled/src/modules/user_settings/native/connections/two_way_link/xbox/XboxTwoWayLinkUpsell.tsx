@@ -136,4 +136,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.XboxTwoWayLinkUpsell = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1297, 1689, 10594, 1235, 4709, 10595, 1358, 5377, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1297, 1689, 10596, 1235, 4709, 10597, 1358, 5377, 2]);

@@ -12,14 +12,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot2;
         var2 = function*(arg0) { // Environment: var2
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun76783: for (var _fun76783_ip = 0;;) switch (_fun76783_ip) {
+                _fun76786: for (var _fun76786_ip = 0;;) switch (_fun76786_ip) {
                     case 0:
                         StartGenerator();
                         var1 = arg0;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun76783_ip = 199;
-                            continue _fun76783
+                            _fun76786_ip = 199;
+                            continue _fun76786
                         }
                     case 13:
                         var8 = var1.channelId;
@@ -32,8 +32,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 35:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun76783_ip = 196;
-                            continue _fun76783
+                            _fun76786_ip = 196;
+                            continue _fun76786
                         }
                     case 44: // try_start_0
                         var3 = _closure1_slot0;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 128:
                         ResumeGenerator(result_out_reg = 2, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun76783_ip = 137;
-                            continue _fun76783
+                            _fun76786_ip = 137;
+                            continue _fun76786
                         }
                     case 134: // try_end0
                         return var5;
@@ -112,14 +112,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = _closure1_slot2;
         var2 = function*(arg0) { // Environment: var2
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun76786: for (var _fun76786_ip = 0;;) switch (_fun76786_ip) {
+                _fun76789: for (var _fun76789_ip = 0;;) switch (_fun76789_ip) {
                     case 0:
                         StartGenerator();
                         var1 = arg0;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun76786_ip = 180;
-                            continue _fun76786
+                            _fun76789_ip = 180;
+                            continue _fun76789
                         }
                     case 13:
                         var7 = var1.channelId;
@@ -131,8 +131,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 29:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                         if (var2) {
-                            _fun76786_ip = 177;
-                            continue _fun76786
+                            _fun76789_ip = 177;
+                            continue _fun76789
                         }
                     case 38: // try_start_0
                         var3 = _closure1_slot0;
@@ -156,8 +156,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 109:
                         ResumeGenerator(result_out_reg = 2, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun76786_ip = 118;
-                            continue _fun76786
+                            _fun76789_ip = 118;
+                            continue _fun76789
                         }
                     case 115: // try_end0
                         return var5;

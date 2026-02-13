@@ -1,89 +1,106 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun69004: for (var _fun69004_ip = 0;;) switch (_fun69004_ip) {
-        case 0:
-            var9 = require;
-            var8 = exports;
-            var7 = dependencyMap;
-            var0 = global;
-            var10 = var0.Object;
-            var2 = var10.defineProperty;
-            var1 = {};
-            var0 = true;
-            var1.value = var0;
-            var0 = '__esModule';
-            var0 = var2.bind(var10)(var8, var0, var1);
-            var2 = 0;
-            var1 = var7[var2];
-            var0 = undefined;
-            var5 = var9.bind(var0)(var1);
-            for (var1 in var5)
-                case 62: {
-                    case 71: var11 = var1;
-                    var10 = var7[var2];
-                    var10 = var9.bind(var0)(var10);
-                    var10 = var10[var11];
-                    var8[var11] = var10;
-                    _fun69004_ip = 62;
-                    continue _fun69004;
-                }
-        case 93:
-            var2 = 1;
-            var1 = var7[var2];
-            var5 = var9.bind(var0)(var1);
-            for (var1 in var5)
-                case 113: {
-                    case 122: var11 = var1;
-                    var10 = var7[var2];
-                    var10 = var9.bind(var0)(var10);
-                    var10 = var10[var11];
-                    var8[var11] = var10;
-                    _fun69004_ip = 113;
-                    continue _fun69004;
-                }
-        case 144:
-            var2 = 2;
-            var1 = var7[var2];
-            var5 = var9.bind(var0)(var1);
-            for (var1 in var5)
-                case 164: {
-                    case 173: var11 = var1;
-                    var10 = var7[var2];
-                    var10 = var9.bind(var0)(var10);
-                    var10 = var10[var11];
-                    var8[var11] = var10;
-                    _fun69004_ip = 164;
-                    continue _fun69004;
-                }
-        case 195:
+    var4 = require;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var6 = var5[var0];
+    var3 = metroImportDefault;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var6);
+    var _closure1_slot2 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.useEffect;
+    var _closure1_slot3 = var6;
+    var3 = var3.useState;
+    var _closure1_slot4 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var7 = var3.Dimensions;
+    var6 = var7.get;
+    var3 = 'window';
+    var6 = var6.bind(var7)(var3);
+    var3 = {};
+    var7 = var6.width;
+    var3.width = var7;
+    var6 = var6.height;
+    var3.height = var6;
+    var _closure1_slot5 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.WindowDimensionsEvents;
+    var5 = var6.addListener;
+    var4 = 'windowDidResize';
+    var3 = function(arg0) { // Environment: var1
+        var0 = arg0;
+        _closure1_slot5 = var0;
+        var0 = undefined;
+        return var0;
+    };
+    var3 = var5.bind(var6)(var4, var3);
+    var1 = function() {
+        var3 = _closure1_slot4;
+        var0 = _closure1_slot5;
+        var4 = undefined;
+        var5 = var3.bind(var4)(var0);
+        var3 = _closure1_slot2;
+        var0 = 2;
+        var5 = var3.bind(var4)(var5, var0);
+        var0 = 0;
+        var0 = var5[var0];
+        var3 = 1;
+        var3 = var5[var3];
+        var _closure2_slot0 = var3;
+        var3 = _closure1_slot3;
+        var2 = function() { // Environment: var1
+            var4 = _closure1_slot0;
+            var3 = _closure1_slot1;
             var2 = 3;
-            var1 = var7[var2];
-            var5 = var9.bind(var0)(var1);
-            for (var1 in var5)
-                case 215: {
-                    case 224: var11 = var1;
-                    var10 = var7[var2];
-                    var10 = var9.bind(var0)(var10);
-                    var10 = var10[var11];
-                    var8[var11] = var10;
-                    _fun69004_ip = 215;
-                    continue _fun69004;
-                }
-        case 246:
-            var2 = 4;
-            var1 = var7[var2];
-            var5 = var9.bind(var0)(var1);
-            for (var1 in var5)
-                case 266: {
-                    case 275: var11 = var1;
-                    var10 = var7[var2];
-                    var10 = var9.bind(var0)(var10);
-                    var10 = var10[var11];
-                    var8[var11] = var10;
-                    _fun69004_ip = 266;
-                    continue _fun69004;
-                }
-        case 297:
+            var2 = var3[var2];
+            var3 = undefined;
+            var2 = var4.bind(var3)(var2);
+            var6 = var2.WindowDimensionsEvents;
+            var5 = var6.addListener;
+            var4 = 'windowDidResize';
+            var2 = function(arg0) { // Environment: var0
+                var2 = _closure2_slot0;
+                var0 = undefined;
+                var1 = arg0;
+                var1 = var2.bind(var0)(var1);
+                return var0;
+            };
+            var2 = var5.bind(var6)(var4, var2);
+            var _closure3_slot0 = var2;
+            var2 = _closure2_slot0;
+            var1 = _closure1_slot5;
+            var1 = var2.bind(var3)(var1);
+            var0 = function() { // Environment: var0
+                var1 = _closure3_slot0;
+                var0 = var1.remove;
+                var0 = var0.bind(var1)();
+                var0 = undefined;
+                return var0;
+            };
             return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8597, 8598, 8599, 8600, 8601]);
+        };
+        var1 = new Array(0);
+        var1 = var3.bind(var4)(var2, var1);
+        return var0;
+    };
+    var2.useWindowDimensions = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 8581]);

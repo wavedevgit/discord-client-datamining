@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/nameplates/native/NameplateUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun57584: for (var _fun57584_ip = 0;;) switch (_fun57584_ip) {
+        _fun57587: for (var _fun57587_ip = 0;;) switch (_fun57587_ip) {
             case 0:
                 var2 = arg0;
                 var3 = _closure1_slot0;
@@ -36,8 +36,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.bind(var4)(var0);
                 var0 = {};
                 if (var3) {
-                    _fun57584_ip = 179;
-                    continue _fun57584
+                    _fun57587_ip = 179;
+                    continue _fun57587
                 }
             case 50:
                 var5 = _closure1_slot0;
@@ -94,4 +94,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getNameplateAssets = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6998, 6999, 7000, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7000, 7001, 7002, 2]);

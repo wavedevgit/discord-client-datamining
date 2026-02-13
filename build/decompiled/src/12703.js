@@ -1,131 +1,59 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun97497: for (var _fun97497_ip = 0;;) switch (_fun97497_ip) {
+    _fun97411: for (var _fun97411_ip = 0;;) switch (_fun97411_ip) {
         case 0:
             var5 = require;
             var6 = dependencyMap;
-            var _closure1_slot0 = var5;
-            var _closure1_slot1 = var6;
             var0 = 0;
-            var2 = var6[var0];
+            var1 = var6[var0];
             var0 = undefined;
-            var3 = var5.bind(var0)(var2);
-            var2 = 'wks';
-            var2 = var3.bind(var0)(var2);
-            var _closure1_slot2 = var2;
-            var2 = 1;
-            var2 = var6[var2];
-            var2 = var5.bind(var0)(var2);
-            var4 = 2;
-            var3 = var6[var4];
-            var3 = var5.bind(var0)(var3);
-            var3 = var3.Symbol;
+            var1 = var5.bind(var0)(var1);
+            var2 = var1["__core-js_shared__"];
             if (var2) {
-                _fun97497_ip = 121;
-                continue _fun97497
+                _fun97411_ip = 52;
+                continue _fun97411
             }
-        case 76:
-            var2 = var3;
-            if (!var2) {
-                _fun97497_ip = 104;
-                continue _fun97497
-            }
-        case 82:
-            var7 = var6[var4];
-            var7 = var5.bind(var0)(var7);
-            var7 = var7.Symbol;
-            var2 = var7.withoutSetter;
-        case 104:
-            if (var2) {
-                _fun97497_ip = 119;
-                continue _fun97497
-            }
-        case 107:
-            var7 = 3;
-            var7 = var6[var7];
-            var2 = var5.bind(var0)(var7);
-        case 119:
-            _fun97497_ip = 147;
-            continue _fun97497;
-        case 121:
-            var3 = var3.for;
-            if (var3) {
-                _fun97497_ip = 144;
-                continue _fun97497
-            }
-        case 130:
-            var4 = var6[var4];
-            var4 = var5.bind(var0)(var4);
-            var3 = var4.Symbol;
-        case 144:
-            var2 = var3;
-        case 147:
-            var _closure1_slot3 = var2;
-            var2 = function(arg0) { // Environment: var1
-                _fun97498: for (var _fun97498_ip = 0;;) switch (_fun97498_ip) {
-                    case 0:
-                        var1 = arg0;
-                        var3 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var4 = 4;
-                        var2 = var2[var4];
-                        var6 = undefined;
-                        var3 = var3.bind(var6)(var2);
-                        var2 = _closure1_slot2;
-                        var2 = var3.bind(var6)(var2, var1);
-                        if (var2) {
-                            _fun97498_ip = 162;
-                            continue _fun97498
-                        }
-                    case 41:
-                        var3 = _closure1_slot2;
-                        var5 = _closure1_slot0;
-                        var7 = _closure1_slot1;
-                        var2 = 5;
-                        var2 = var7[var2];
-                        var2 = var5.bind(var6)(var2);
-                        if (!var2) {
-                            _fun97498_ip = 111;
-                            continue _fun97498
-                        }
-                    case 68:
-                        var5 = _closure1_slot0;
-                        var2 = _closure1_slot1;
-                        var4 = var2[var4];
-                        var4 = var5.bind(var6)(var4);
-                        var7 = 2;
-                        var2 = var2[var7];
-                        var2 = var5.bind(var6)(var2);
-                        var2 = var2.Symbol;
-                        var2 = var4.bind(var6)(var2, var1);
-                        if (var2) {
-                            _fun97498_ip = 132;
-                            continue _fun97498
-                        }
-                    case 111:
-                        var4 = _closure1_slot3;
-                        var2 = 'Symbol.';
-                        var2 = var2 + var1;
-                        var2 = var4.bind(var6)(var2);
-                        _fun97498_ip = 158;
-                        continue _fun97498;
-                    case 132:
-                        var5 = _closure1_slot0;
-                        var4 = _closure1_slot1;
-                        var4 = var4[var7];
-                        var4 = var5.bind(var6)(var4);
-                        var4 = var4.Symbol;
-                        var2 = var4[var1];
-                    case 158:
-                        var3[var1] = var2;
-                    case 162:
-                        var0 = _closure1_slot2;
-                        var0 = var0[var1];
-                        return var0;
-                }
-            };
-            var1 = arg4;
+        case 28:
+            var1 = 1;
+            var1 = var6[var1];
+            var4 = var5.bind(var0)(var1);
+            var3 = '__core-js_shared__';
+            var1 = {};
+            var2 = var4.bind(var0)(var3, var1);
+        case 52:
+            var1 = module;
             var1.exports = var2;
+            var3 = var2.versions;
+            if (var3) {
+                _fun97411_ip = 83;
+                continue _fun97411
+            }
+        case 70:
+            var1 = new Array(0);
+            var2.versions = var1;
+            var3 = var1;
+        case 83:
+            var2 = var3.push;
+            var1 = {
+                'version': '3.41.0',
+                'mode': null,
+                'copyright': '© 2014-2025 Denis Pushkarev (zloirock.ru)',
+                'license': 'https://github.com/zloirock/core-js/blob/v3.41.0/LICENSE',
+                'source': 'https://github.com/zloirock/core-js'
+            };
+            var4 = 2;
+            var4 = var6[var4];
+            var5 = var5.bind(var0)(var4);
+            var4 = 'global';
+            if (!var5) {
+                _fun97411_ip = 127;
+                continue _fun97411
+            }
+        case 121:
+            var4 = 'pure';
+        case 127:
+            var1.mode = var4;
+            var1 = var2.bind(var3)(var1);
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12704, 12707, 12689, 12711, 12712, 12708]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12687, 12688, 12704]);

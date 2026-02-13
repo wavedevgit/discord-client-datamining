@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var4.bind(var0)(var6);
     var7 = var9.experimental_createToken;
     var6 = function(arg0) { // Environment: var1
-        _fun56114: for (var _fun56114_ip = 0;;) switch (_fun56114_ip) {
+        _fun56116: for (var _fun56116_ip = 0;;) switch (_fun56116_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.theme;
@@ -41,13 +41,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var3)(var1);
                 var1 = var1.unsafe_rawColors;
                 if (var0) {
-                    _fun56114_ip = 81;
-                    continue _fun56114
+                    _fun56116_ip = 81;
+                    continue _fun56116
                 }
             case 73:
                 var0 = var1.PRIMARY_630;
-                _fun56114_ip = 87;
-                continue _fun56114;
+                _fun56116_ip = 87;
+                continue _fun56116;
             case 81:
                 var0 = var1.PRIMARY_300;
             case 87:
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var4.bind(var0)(var6);
     var7 = var9.experimental_createToken;
     var6 = function(arg0) { // Environment: var1
-        _fun56115: for (var _fun56115_ip = 0;;) switch (_fun56115_ip) {
+        _fun56117: for (var _fun56117_ip = 0;;) switch (_fun56117_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.theme;
@@ -78,13 +78,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var3)(var1);
                 var1 = var1.unsafe_rawColors;
                 if (var0) {
-                    _fun56115_ip = 81;
-                    continue _fun56115
+                    _fun56117_ip = 81;
+                    continue _fun56117
                 }
             case 73:
                 var0 = var1.BRAND_200;
-                _fun56115_ip = 87;
-                continue _fun56115;
+                _fun56117_ip = 87;
+                continue _fun56117;
             case 81:
                 var0 = var1.BRAND_260;
             case 87:
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var3);
     var6 = var7.createNativeStyleProperties;
     var3 = function(arg0) { // Environment: var1
-        _fun56116: for (var _fun56116_ip = 0;;) switch (_fun56116_ip) {
+        _fun56118: for (var _fun56118_ip = 0;;) switch (_fun56118_ip) {
             case 0:
                 var0 = {};
                 var4 = _closure1_slot1;
@@ -218,13 +218,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2.colors;
                 var2 = arg0;
                 if (var2) {
-                    _fun56116_ip = 46;
-                    continue _fun56116
+                    _fun56118_ip = 46;
+                    continue _fun56118
                 }
             case 38:
                 var2 = var3.EMBED_BACKGROUND;
-                _fun56116_ip = 52;
-                continue _fun56116;
+                _fun56118_ip = 52;
+                continue _fun56118;
             case 46:
                 var2 = var3.EMBED_BACKGROUND_ALTERNATE;
             case 52:
@@ -244,13 +244,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/resolveMessageContentColors.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56117: for (var _fun56117_ip = 0;;) switch (_fun56117_ip) {
+        _fun56119: for (var _fun56119_ip = 0;;) switch (_fun56119_ip) {
             case 0:
                 var3 = arguments[1];
                 var2 = undefined;
                 if (!(var3 === var2)) {
-                    _fun56117_ip = 11;
-                    continue _fun56117
+                    _fun56119_ip = 11;
+                    continue _fun56119
                 }
             case 9:
                 var3 = false;

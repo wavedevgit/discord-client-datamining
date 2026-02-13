@@ -143,4 +143,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useCanLaunchFrame = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 4677, 5405, 12254, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 4677, 5405, 12252, 2]);

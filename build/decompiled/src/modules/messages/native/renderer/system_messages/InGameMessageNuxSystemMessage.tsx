@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/InGameMessageNuxSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function arg0() {
-        _fun56596: for (var _fun56596_ip = 0;;) switch (_fun56596_ip) {
+        _fun56598: for (var _fun56598_ip = 0;;) switch (_fun56598_ip) {
             case 0:
                 var4 = arg0;
                 var2 = var4.message;
@@ -53,16 +53,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var0 != var9;
                 var1 = '';
                 if (!var10) {
-                    _fun56596_ip = 81;
-                    continue _fun56596
+                    _fun56598_ip = 81;
+                    continue _fun56598
                 }
             case 78:
                 var1 = var9;
             case 81:
                 var1 = var5.bind(var6)(var1);
                 if (!(var0 != var1)) {
-                    _fun56596_ip = 358;
-                    continue _fun56596
+                    _fun56598_ip = 358;
+                    continue _fun56598
                 }
             case 93:
                 var9 = {};
@@ -130,4 +130,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createInGameMessageNuxSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3454, 660, 6744, 6752, 1689, 1235, 6754, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3454, 660, 6745, 6753, 1689, 1235, 6755, 2]);

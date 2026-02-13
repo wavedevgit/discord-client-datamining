@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/stage_channels/StageChannelHeightHooks.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function arg0() {
-        _fun68776: for (var _fun68776_ip = 0;;) switch (_fun68776_ip) {
+        _fun68779: for (var _fun68779_ip = 0;;) switch (_fun68779_ip) {
             case 0:
                 var4 = arg0;
                 var5 = _closure1_slot0;
@@ -38,15 +38,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3.useStageIgnoredUsersCount;
                 var0 = var0.bind(var3)(var4);
                 if (!(!(var2 > var1))) {
-                    _fun68776_ip = 72;
-                    continue _fun68776
+                    _fun68779_ip = 72;
+                    continue _fun68779
                 }
             case 62:
                 var1 = var0 > var1;
                 var0 = 68;
                 if (!var1) {
-                    _fun68776_ip = 75;
-                    continue _fun68776
+                    _fun68779_ip = 75;
+                    continue _fun68779
                 }
             case 72:
                 var0 = 88;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGetStageRTCPanelHeight = var3;
     var1 = function arg0() {
-        _fun68777: for (var _fun68777_ip = 0;;) switch (_fun68777_ip) {
+        _fun68780: for (var _fun68780_ip = 0;;) switch (_fun68780_ip) {
             case 0:
                 var4 = arg0;
                 var5 = _closure1_slot0;
@@ -72,15 +72,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3.useStageIgnoredUsersCount;
                 var0 = var0.bind(var3)(var4);
                 if (!(!(var2 > var1))) {
-                    _fun68777_ip = 72;
-                    continue _fun68777
+                    _fun68780_ip = 72;
+                    continue _fun68780
                 }
             case 62:
                 var1 = var0 > var1;
                 var0 = 112;
                 if (!var1) {
-                    _fun68777_ip = 75;
-                    continue _fun68777
+                    _fun68780_ip = 75;
+                    continue _fun68780
                 }
             case 72:
                 var0 = 132;

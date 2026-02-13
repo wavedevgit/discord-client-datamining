@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/devtools/native/components/screens/DevToolsProfilingUseStateFromStores.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() {
-        _fun87146: for (var _fun87146_ip = 0;;) switch (_fun87146_ip) {
+        _fun87149: for (var _fun87149_ip = 0;;) switch (_fun87149_ip) {
             case 0:
                 var1 = _closure1_slot3;
                 var4 = var1.useState;
@@ -238,8 +238,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(2);
                 var4[0] = var8;
                 if (!var7) {
-                    _fun87146_ip = 1356;
-                    continue _fun87146
+                    _fun87149_ip = 1356;
+                    continue _fun87149
                 }
             case 553:
                 var8 = _closure1_slot6;
@@ -281,7 +281,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var25 = var25.bind(var27)();
                 var20.defaultValue = var25;
                 var25 = function arg0() {
-                    _fun87153: for (var _fun87153_ip = 0;;) switch (_fun87153_ip) {
+                    _fun87156: for (var _fun87156_ip = 0;;) switch (_fun87156_ip) {
                         case 0:
                             var1 = global;
                             var3 = var1.Number;
@@ -291,27 +291,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.isNaN;
                             var1 = var1.bind(var0)(var2);
                             if (var1) {
-                                _fun87153_ip = 56;
-                                continue _fun87153
+                                _fun87156_ip = 56;
+                                continue _fun87156
                             }
                         case 32:
                             var1 = 1000;
                             if (!(var2 > var1)) {
-                                _fun87153_ip = 56;
-                                continue _fun87153
+                                _fun87156_ip = 56;
+                                continue _fun87156
                             }
                         case 42:
                             var1 = _closure2_slot2;
                             var1 = var1.bind(var0)(var2);
-                            _fun87153_ip = 91;
-                            continue _fun87153;
+                            _fun87156_ip = 91;
+                            continue _fun87156;
                         case 56:
                             var1 = _closure2_slot9;
                             var3 = var1.current;
                             var1 = null;
                             if (!(var1 != var3)) {
-                                _fun87153_ip = 91;
-                                continue _fun87153
+                                _fun87156_ip = 91;
+                                continue _fun87156
                             }
                         case 74:
                             var2 = var3.setText;
@@ -509,4 +509,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.DevToolsProfilingUseStateFromStores = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 11248, 3938, 5423, 5476, 4905, 5462, 7911, 9431, 11249, 3273, 1235, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 11250, 3938, 5423, 5476, 4905, 5462, 7913, 9433, 11251, 3273, 1235, 2]);

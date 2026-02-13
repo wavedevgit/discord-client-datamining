@@ -1,7 +1,7 @@
 // modules/messages/native/emoji/MessageEmojiActionSheet.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun74700: for (var _fun74700_ip = 0;;) switch (_fun74700_ip) {
+    _fun74703: for (var _fun74703_ip = 0;;) switch (_fun74703_ip) {
         case 0:
             var4 = require;
             var2 = exports;
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var11 = var12.isAndroid;
             var11 = var11.bind(var12)();
             if (!var11) {
-                _fun74700_ip = 193;
-                continue _fun74700
+                _fun74703_ip = 193;
+                continue _fun74703
             }
         case 190:
             var9 = var10;
@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var _closure1_slot7 = var3;
             var3 = function arg0() {
-                _fun74703: for (var _fun74703_ip = 0;;) switch (_fun74703_ip) {
+                _fun74706: for (var _fun74706_ip = 0;;) switch (_fun74706_ip) {
                     case 0:
                         var0 = arg0;
                         var14 = var0.emojiNode;
@@ -146,8 +146,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var10 = var0.emoji;
                         var0 = var0.isFetching;
                         if (var0) {
-                            _fun74703_ip = 287;
-                            continue _fun74703
+                            _fun74706_ip = 287;
+                            continue _fun74706
                         }
                     case 113:
                         var1 = _closure1_slot0;
@@ -218,7 +218,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = 'modules/messages/native/emoji/MessageEmojiActionSheet.tsx';
             var3 = var4.bind(var5)(var3);
             var1 = function arg0() {
-                _fun74705: for (var _fun74705_ip = 0;;) switch (_fun74705_ip) {
+                _fun74708: for (var _fun74708_ip = 0;;) switch (_fun74708_ip) {
                     case 0:
                         var0 = arg0;
                         var1 = var0.emojiNode;
@@ -226,8 +226,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = var0 in var1;
                         var4 = _closure1_slot5;
                         if (var0) {
-                            _fun74705_ip = 48;
-                            continue _fun74705
+                            _fun74708_ip = 48;
+                            continue _fun74708
                         }
                     case 27:
                         var5 = _closure1_slot8;
@@ -235,8 +235,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3.emojiNode = var1;
                         var0 = undefined;
                         var0 = var4.bind(var0)(var5, var3);
-                        _fun74705_ip = 67;
-                        continue _fun74705;
+                        _fun74708_ip = 67;
+                        continue _fun74708;
                     case 48:
                         var3 = _closure1_slot7;
                         var2 = {};
@@ -250,4 +250,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 478, 491, 4938, 796, 9390, 9397, 9398, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 478, 491, 4938, 796, 9392, 9399, 9400, 2]);

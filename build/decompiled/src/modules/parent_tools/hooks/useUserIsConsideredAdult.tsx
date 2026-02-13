@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var0;
         var0 = function() { // Environment: var0
-            _fun80245: for (var _fun80245_ip = 0;;) switch (_fun80245_ip) {
+            _fun80248: for (var _fun80248_ip = 0;;) switch (_fun80248_ip) {
                 case 0:
                     var1 = _closure1_slot2;
                     var0 = var1.getCurrentUser;
@@ -47,8 +47,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var0 == var1;
                     var0 = undefined;
                     if (var2) {
-                        _fun80245_ip = 33;
-                        continue _fun80245
+                        _fun80248_ip = 33;
+                        continue _fun80248
                     }
                 case 27:
                     var0 = var1.nsfwAllowed;
