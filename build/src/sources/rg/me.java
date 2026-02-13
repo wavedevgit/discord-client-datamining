@@ -27,7 +27,7 @@ public final class me {
         this.f47577c = keVar.f47518c;
         this.f47578d = keVar.f47519d;
         this.f47579e = keVar.f47520e;
-        this.f47580f = ke.a(keVar);
+        this.f47580f = keVar.f47521f;
     }
 
     public final y3 a() {
