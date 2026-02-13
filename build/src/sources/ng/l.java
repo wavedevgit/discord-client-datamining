@@ -20,8 +20,9 @@ public final class l extends f {
         this.f38436p = i10;
     }
 
+    /* JADX INFO: Access modifiers changed from: package-private */
     @Override // ng.f, ng.c
-    final int b(Object[] objArr, int i10) {
+    public final int b(Object[] objArr, int i10) {
         System.arraycopy(this.f38435o, 0, objArr, 0, this.f38436p);
         return this.f38436p;
     }
