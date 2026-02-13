@@ -607,7 +607,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4.navigateToPremium = var9;
                             var4.style = var8;
                             var6 = var7.bind(var0)(var6, var4);
-                            var4 = new Array(10);
+                            var4 = new Array(9);
                             var4[0] = var6;
                             var6 = _closure2_slot16;
                             var6 = !var6;
@@ -686,16 +686,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var12.style = var8;
                             var12 = var15.bind(var0)(var14, var12);
                             var4[5] = var12;
-                            var15 = _closure1_slot10;
-                            var12 = var10[var7];
-                            var12 = var11.bind(var0)(var12);
-                            var14 = var12.UserProfileApplicationRoleConnectionsCard;
-                            var12 = {};
-                            var16 = var9.id;
-                            var12.userId = var16;
-                            var12.style = var8;
-                            var12 = var15.bind(var0)(var14, var12);
-                            var4[6] = var12;
                             var12 = _closure1_slot10;
                             var7 = var10[var7];
                             var7 = var11.bind(var0)(var7);
@@ -705,7 +695,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7.userId = var14;
                             var7.style = var8;
                             var7 = var12.bind(var0)(var11, var7);
-                            var4[7] = var7;
+                            var4[6] = var7;
                             var12 = _closure1_slot10;
                             var7 = 41;
                             var7 = var10[var7];
@@ -717,7 +707,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7.navigateToFriends = var13;
                             var7.style = var8;
                             var7 = var12.bind(var0)(var11, var7);
-                            var4[8] = var7;
+                            var4[7] = var7;
                             var7 = _closure1_slot10;
                             var5 = 42;
                             var5 = var10[var5];
@@ -727,7 +717,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5.userId = var9;
                             var5.style = var8;
                             var5 = var7.bind(var0)(var6, var5);
-                            var4[9] = var5;
+                            var4[8] = var5;
                             var1.children = var4;
                             var0 = var3.bind(var0)(var2, var1);
                             return var0;
