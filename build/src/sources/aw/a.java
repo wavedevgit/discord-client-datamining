@@ -1,8 +1,9 @@
 package aw;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public abstract class a extends r {
+    /* JADX INFO: Access modifiers changed from: protected */
     @Override // aw.r
-    protected void j(r rVar) {
+    public void j(r rVar) {
         if (rVar instanceof a) {
             super.j(rVar);
             return;
